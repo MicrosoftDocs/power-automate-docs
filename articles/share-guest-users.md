@@ -15,6 +15,9 @@ The Power Automate experience for guest users is the same as it is for nonguest 
 
 This article should help you understand the scenarios that are supported for guest users.
 
+> [!NOTE]
+> Guest users aren't currently supported in Process Mining.
+
 ## Prerequisites
 
 A guest user must meet the following criteria:
