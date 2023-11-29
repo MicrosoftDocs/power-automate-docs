@@ -17,6 +17,9 @@ search.audienceType:
 
 Enhance productivity, reusability, and extensibility with custom actions in Power Automate for desktop. This article discusses how [custom actions in Power Automate for desktop](../../../desktop-flows/custom-actions.md) can help makers create their own reusable actions that can be used across multiple flows. Makers create custom actions by composing a sequence of steps or functions into a new action. Custom actions are created using the Power Automate for desktop actions SDK, which provides a set of APIs that allow makers to create custom actions using .NET language C#. Custom actions can also be shared with other users through the custom actions section in Power Automate (make.powerautomate.com). In this article you'll find detailed walkthroughs of how to create, build, deploy, use, and update custom actions.
 
+> [!IMPORTANT]
+> While the essential features utilized in creating custom actions are supported, the provided solutions, assets, and sample scripts mentioned here serve as an example implementation of these features and don't include support.
+
 ## Overview
 
 Custom actions capability in Power Automate for desktop allows you to create your own reusable actions that can be used across multiple desktop flows. Custom actions save you time and effort by allowing you to reuse complex or frequently used actions without having to re-create them each time you build a new flow. Makers can apply their existing skills and knowledge to create custom actions that integrate with other systems and services. Additionally, pro-developers can wrap the existing functions or code libraries to make a new custom action that results in increased reusability of organizational assets.
@@ -62,7 +65,7 @@ Overall, custom actions in Power Automate for desktop provide a powerful way to 
    NuGet\Install-Package Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK
    ```
 
-1. Follow the steps in the documentation [Create custom actions](../../../desktop-flows/create-custom-actions.md) to create the Class file for your custom action.
+1. Follow the steps in [Create custom actions](../../../desktop-flows/create-custom-actions.md) to create the Class file for your custom action.
 
 ## Information you can use as reference for your action
 
@@ -117,149 +120,141 @@ namespace ModulesLogEvent
 ```
 
 **Resources**:
-The following table lists the descriptions and friendly names for parameters in a *Resources.resx* file.
+This table lists the descriptions and friendly names for parameters in a *Resources.resx* file.
 
-| **Name**                                 | **Value**                                               |**Comment**                |
-|------------------------------------------|-------------------------------------------------------------------------------------|
-| LogEventToFile_Description               | Custom Action to log message to the supplied file       | Action Description        |
-| LogEventToFile_FriendlyName              | LogEventToFile                                          | Action Name               |
-| LogEventToFile_LogFileName_Description   | Input parameter of text type                            | Action Input Description  |
-| LogEventToFile_LogFileName_FriendlyName  | LogFileName                                             | Action Input Name         |
-| LogEventToFile_LogMessage_Description    | Input parameter of text type                            | Action Input Description  |
-| LogEventToFile_LogMessage_FriendlyName   | LogMessage                                              | Action Input Name         |                  |
-| LogEventToFile_StatusCode_Description    | Output parameter of boolean type                        | Action Output Description |
-| LogEventToFile_StatusCode_FriendlyName   | LogMessage                                              | Action OutputName         |
-| ModulesLogEvent_Description              | Module to manage log events                             | Module Description        |
-| ModulesLogEvent_FriendlyName             | LogEvent                                                | Module Name               |
+| **Name**                     | **Value**                      |**Comment**                |
+|------------------------------------------|--------------------------------------------|-----------------------------------------|
+| LogEventToFile_Description               | Custom action to log message to the supplied file       | Action description        |
+| LogEventToFile_FriendlyName              | LogEventToFile                                          | Action name               |
+| LogEventToFile_LogFileName_Description   | Input parameter of text type                            | Action input description  |
+| LogEventToFile_LogFileName_FriendlyName  | LogFileName                                             | Action input name         |
+| LogEventToFile_LogMessage_Description    | Input parameter of text type                            | Action input description  |
+| LogEventToFile_LogMessage_FriendlyName   | LogMessage                                              | Action input Name         |                  |
+| LogEventToFile_StatusCode_Description    | Output parameter of boolean type                        | Action output description |
+| LogEventToFile_StatusCode_FriendlyName   | LogMessage                                              | Action outputName         |
+| ModulesLogEvent_Description              | Module to manage log events                             | Module description        |
+| ModulesLogEvent_FriendlyName             | LogEvent                                                | Module name               |
 
 ## Build the package and deploy your custom action
 
-Create the package and deploy it to Power Automate.
+Create the package and deploy to Power Automate.
 
-**Step 1**: Acquire the digital certificate so the custom action DLL file can be signed.
-   > [!NOTE]
-   > Self-signed certificates are only for TEST purposes and are not recommended for production use. For organizational deployment of custom actions in your environment, it is strongly recommended to use a trusted digital certificate as per your organizational > guidelines.
+1. Acquire the digital certificate so the custom action DLL file can be signed.
+   > [!IMPORTANT]
+   > Self-signed certificates are only for test purposes and aren't recommended for production use. For organizational deployment of custom actions in your environment, we recommend you use a trusted digital certificate that follows your organizational guidelines.
 
    > [!TIP]
    > To streamline the process of developing and using custom actions for Power Automate for desktop across your organization, you can bundle a trusted digital certificate with the Power Automate for desktop installer that is distributed through SCCM/Appstore. > This will enable the certificate to be installed automatically on both makers and unattended runtime machines that require Power Automate for desktop, without any need for additional actions.
 
    For this example a self-signed certificate is used.
 
-   a. Create a self-signed certificate.
+   1. Create a self-signed certificate using this  script.
 
-   Script to create the certificate
+      ```powershell
+      $certPFXFileName="C:\PADCustomAction\PADCustomActionCert.pfx";
+      $certCERFileName="C:\PADCustomAction\PADCustomActionCert.cer";
+      $certStoreLocation="Cert:\LocalMachine\AuthRoot";
+      $certname = "PADCustomActionSelfSignCert"
+      ##Create certificate
+      $cert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -Type CodeSigningCert  -Subject "CN=$certname" -KeyExportPolicy Exportable -KeySpec Signature -KeyLength 2048 -KeyAlgorithm RSA -HashAlgorithm SHA256
+      $mypwd = ConvertTo-SecureString -String <YOUR CERT PASSWORD GOES HERE> -Force -AsPlainText
+      ##Export certificate
+      $certPFXFile = Export-PfxCertificate -Cert $cert -FilePath $certPFXFileName -Password $mypwd
+      $certCERFile = Export-Certificate -Cert $cert -FilePath $certCERFileName -Type CERT -Verbose -Force
+      ```
 
-```powershell
-$certPFXFileName="C:\PADCustomAction\PADCustomActionCert.pfx";
-$certCERFileName="C:\PADCustomAction\PADCustomActionCert.cer";
-$certStoreLocation="Cert:\LocalMachine\AuthRoot";
-$certname = "PADCustomActionSelfSignCert"
-##Create certificate
-$cert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -Type CodeSigningCert  -Subject "CN=$certname" -KeyExportPolicy Exportable -KeySpec Signature -KeyLength 2048 -KeyAlgorithm RSA -HashAlgorithm SHA256
-$mypwd = ConvertTo-SecureString -String <YOUR CERT PASSWORD GOES HERE> -Force -AsPlainText
-##Export certificate
-$certPFXFile = Export-PfxCertificate -Cert $cert -FilePath $certPFXFileName -Password $mypwd
-$certCERFile = Export-Certificate -Cert $cert -FilePath $certCERFileName -Type CERT -Verbose -Force
-```
+   1. Import the certificate into certificate store using this command.
 
-   b. Import the certificate into Certificate store
+      ```powershell
+      ##Import certificate
+      Import-Certificate -CertStoreLocation $certStoreLocation -FilePath $certCERFile
+      ```
 
-   Script to import the certificate
+   1. Validate that the imported certificate appears under **Trusted Root Certification Authorities** > **Certificates** in Certificates Microsoft Manager Console (MMC) snap-in.
 
-```powershell
-##Import certificate
-Import-Certificate -CertStoreLocation $certStoreLocation -FilePath $certCERFile
-```
+      :::image type="content" source="media/padca-8-2-new.png" alt-text="Screenshot of validating certificate in Certificate Manager" lightbox="media/padca-8-2-new.png" border="true":::
 
-   c. Validate that the imported certificate appears under *Trusted Root Certification Authorities > Certificates* in CertManager tool.
+1. Finalize the custom module created by signing the DLL file using a trusted certificate. Use Visual Studio’s developer command prompt to use the Signtool for this activity.
 
-   :::image type="content" source="media/padca-8-2-new.png" alt-text="Screenshot of validating certificate in Certificate Manager" lightbox="media/padca-8-2-new.png" border="true":::
+   ```powershell
+   Signtool sign /f "C:/PADActions/PADCustomActionCert.pfx" /p <YOURCERTPASSWORD> /fd SHA256 "C:/PADActions/PADCustomActionEventLog/Modules.LogEvent.dll"
+   ```
 
-**Step 2**: Finalize the custom module created by signing the DLL file using a trusted certificate.
+1. To deploy the custom action, build the package the contents into a cabinet file (.cab) by using this PowerShell script.
 
-Use Visual Studio’s developer command prompt to use the Signtool for this activity.
+   ```powershell
+   .\BuildCAB.ps1 "C:/PADActions/PADCustomActionEventLog" "C:/PADActions/PADCustomActionEventLog" PADCustomActionEventLog.cab
+   ```
 
-```powershell
-Signtool sign /f "C:/PADActions/PADCustomActionCert.pfx" /p <YOURCERTPASSWORD> /fd SHA256 "C:/PADActions/PADCustomActionEventLog/Modules.LogEvent.dll"
-```
+   [Go to the sample script file BuildCAB.ps1](https://github.com/jpad5/pad-customaction-logevent/blob/main/BuildCAB.ps1)
 
-**Step 3**: To deploy the custom action, we need to build the package the contents into a cabinet file (.cab) by using a PowerShell script.
+1. Sign the generated cabinet file using Signtool.
 
-```powershell
-.\BuildCAB.ps1 "C:/PADActions/PADCustomActionEventLog" "C:/PADActions/PADCustomActionEventLog" PADCustomActionEventLog.cab
-```
+   ```powershell
+   Signtool sign /f "C:/PADActions/PADCustomActionCert.pfx" /p <YOURCERTPASSWORD> /fd SHA256 "C:/PADActions/PADCustomActionEventLog/PADCustomActionEventLog.cab"
+   ```
 
-Sample script file – [BuildCAB.ps1](https://github.com/jpad5/pad-customaction-logevent/blob/main/BuildCAB.ps1)
+1. Go to the Power Automate custom action section to upload the custom action that you created. Provide the name, description, and cabinet file and then select **Upload**.
 
-**Step 4**: Next, we sign the generated cabinet file using Signtool.
+   :::image type="content" source="media/padca-12-1-new.png" alt-text="Screenshot of importing custom action package (CAB file) in Power Automate portal" lightbox="media/padca-12-1-new.png" border="true":::
 
-```powershell
-Signtool sign /f "C:/PADActions/PADCustomActionCert.pfx" /p <YOURCERTPASSWORD> /fd SHA256 "C:/PADActions/PADCustomActionEventLog/PADCustomActionEventLog.cab"
-```
+   You receive a notification when the action is successfully uploaded.
 
-**Step 5**: Navigate to the Power Automate portal’s custom action section to upload the custom action that we created. Provide the name, description and cabinet file and select Upload.
+Following these steps, the custom action module is packaged into a cabinet file and signed with a trusted certificate. Additionally, the custom action cabinet file is uploaded to the custom action library in Power Automate.
 
-:::image type="content" source="media/padca-12-1-new.png" alt-text="Screenshot of importing custom action package (CAB file) in Power Automate portal" lightbox="media/padca-12-1-new.png" border="true":::
-
-You will receive a notification when the action is successfully uploaded.
-
-So far we packaged the custom action module into a cabinet file and signed it with a trusted certificate. Additionally, we uploaded the custom action cabinet file to the custom action library in the Power Automate portal.
-
-**Refer**: [Upload custom actions](../../../desktop-flows/upload-custom-actions.md)
+More information: [Upload custom actions](../../../desktop-flows/upload-custom-actions.md)
 
 ## Use your custom action activity in desktop flow using Power Automate for desktop
 
-**Step 1**: Create a new desktop flow and select the Asset library icon in the designer. (Alternatively, select *Tools> Asset Library*)
+1. Create a new desktop flow, and then select the **Assets Library** in the designer.
 
-:::image type="content" source="media/padca-14-new.png" alt-text="Screenshot of Navigate to Asset Library in Power Automate for desktop" lightbox="media/padca-14-new.png" border="true":::
+   :::image type="content" source="media/padca-14-new.png" alt-text="Screenshot of Navigate to Asset Library in Power Automate for desktop" lightbox="media/padca-14-new.png" border="true":::
 
-**Step 2**: Inspect the custom action available in the Assets Library. We should see the action that we have previously created and uploaded to the custom actions section of Power Automate portal.
+1. Inspect the custom action available in the assets library. Notice the action previously created and uploaded to the custom actions section of Power Automate.
 
-Select **Add** to add this custom action to the Actions section of the designer.
+   Select **Add** to add this custom action to the Actions section of the designer.
 
-:::image type="content" source="media/padca-15-new.png" alt-text="Screenshot of Add custom action from Asset Library" lightbox="media/padca-15-new.png" border="true":::
+   :::image type="content" source="media/padca-15-new.png" alt-text="Screenshot of Add custom action from Asset Library" lightbox="media/padca-15-new.png" border="true":::
 
-**Step 3**: Validate that custom action is added successfully, search for it in the Actions search bar in Power Automate for desktop's designer.
+1. Validate that the custom action is added successfully. Search for it on the **Actions** search bar in Power Automate for desktop's designer.
 
-:::image type="content" source="media/padca-16-1.png" alt-text="Screenshot of Search for custom action in Power Automate for desktop" lightbox="media/padca-16-1.png" border="true":::
+   :::image type="content" source="media/padca-16-1.png" alt-text="Screenshot of Search for custom action in Power Automate for desktop" lightbox="media/padca-16-1.png" border="true":::
 
-**Step 4**: Drag the custom action or double click it to add to the desktop flow.
+1. Drag the custom action or double-click it to add to the desktop flow.
 
-**Step 5**: Provide the input parameters and additional steps to test the custom action.
+1. Provide the input parameters and additional steps to test the custom action.
 
-:::image type="content" source="media/padca-19.png" alt-text="Screenshot of Input parameters for custom action" lightbox="media/padca-19.png" border="true":::
+   :::image type="content" source="media/padca-19.png" alt-text="Screenshot of Input parameters for custom action" lightbox="media/padca-19.png" border="true":::
 
-Sample desktop flow using the custom action –
+   Sample desktop flow using the custom action.
 
-:::image type="content" source="media/padca-18.png" alt-text="Screenshot of Using custom action in Desktop flow" lightbox="media/padca-18.png" border="true":::
+   :::image type="content" source="media/padca-18.png" alt-text="Screenshot of Using custom action in Desktop flow" lightbox="media/padca-18.png" border="true":::
 
-**Step 6**: Test the flow to see the custom action working in real time.
+1. Test the flow to see the custom action working in real time.
 
 ![Test custom action in Desktop flow](media/PADCustomActionDesktopflowDemo-gif.gif)
 
 > [!NOTE]
 > Import the certificate used to sign the Cabinet file to the machine used to build desktop flows with custom actions and to each of the runtime machines that will run the desktop flows.
 
-We successfully created a custom action, packaged the custom action module into a cabinet file, signed it with a trusted certificate, uploaded the custom action cabinet file to the custom action library in the Power Automate portal, created a desktop flow to use the custom action and tested it for a successful run.
+Following these steps, a custom action was created, the module packaged into a cabinet file, signed with a trusted certificate, uploaded to the custom action library in Power Automate, a desktop flow to use the custom action created and tested for a successful run.
 
-## Update and redeploy the custom action to reflect the updated capability
+## Update and redeploy the custom action
 
-In this part, we'll update the functionality of the custom action by following the previous steps in order.
+Update the functionality of the custom action  to reflect the updated capability by following these steps.
 
-**Step 1**: Update the class file in Visual Studio solution with new action functionality.
+1. Update the class file in Visual Studio solution with new action functionality.  More information: [Updated .NET Module solution](https://github.com/jpad5/pad-customaction-logevent/blob/main/ModulesLogEvent-v2-updated.zip)
 
-Refer the updated solution archive file for more details – [Updated .NET Module solution](https://github.com/jpad5/pad-customaction-logevent/blob/main/ModulesLogEvent-v2-updated.zip)
+   Modified the signature of the class file to take in a third input parameter as shown.
 
-Modified the signature of the class file to take in a third input parameter as shown.
+   ```csharp
+   using System;
+   using System.IO;
+   using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK;
+   using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK.Attributes;
 
-```csharp
-using System;
-using System.IO;
-using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK;
-using Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK.Attributes;
-
-namespace ModulesLogEvent
-{
+   namespace ModulesLogEvent
+   {
     [Action(Id = "LogEventToFile" , Order = 1, Category = "Logging")]
     [Throws("LogEventError")]
     public class LogEventToFile : ActionBase
@@ -291,39 +286,32 @@ namespace ModulesLogEvent
                 throw new ActionException("LogEventError", e.Message, e.InnerException);
             }
         }
-    }
-}
-```
+     }
+   }
+   ```
 
-**Step 2**: Sign the DLL file
+1. Sign the DLL file.
 
-**Step 3**: Create the Cabinet file
+1. Create the cabinet file.
 
-**Step 4**: Sign the Cabinet file
+1. Sign the cabinet file.
 
-**Step 5**: Upload the Cabinet file to custom actions section on Power Automate portal.
+1. Upload the cabinet file to custom actions section in Power Automate.
+   > [!NOTE]
+   > Before uploading the updated custom action cabinet file, make sure to analyze the impact of this change as desktop flows with this action will be updated with new capabilities.
 
-> [!NOTE]
-> Before uploading the updated custom action cabinet file, make sure to analyze the impact of this change as desktop flows with this action will be updated with new capabilities.
+   :::image type="content" source="media/padca-20-new.png" alt-text="Screenshot of updating the custom action in Power Automate Portal" lightbox="media/padca-20-new.png" border="true":::
 
-:::image type="content" source="media/padca-20-new.png" alt-text="Screenshot of updating the custom action in Power Automate Portal" lightbox="media/padca-20-new.png" border="true":::
+1. Update the desktop flow as required.
 
-**Step 6**: Update the desktop flow as required
+   To validate the update capability, we added a third input parameter to the custom action. Notice that custom action activity is marked as Error in the designer, and it needs to be updated with new input parameter.
 
-To validate the update capability, we added a third input parameter to the custom action. Notice that custom action activity is marked as Error in the designer, and it needs to be updated with new input parameter.
+   :::image type="content" source="media/padca-24.png" alt-text="Screenshot of refactoring the desktop flow" lightbox="media/padca-24.png" border="true":::
 
-:::image type="content" source="media/padca-24.png" alt-text="Screenshot of refactoring the desktop flow" lightbox="media/padca-24.png" border="true":::
+   :::image type="content" source="media/padca-25-new.png" alt-text="Screenshot of updated custom action with additional input parameters" lightbox="media/padca-25-new.png" border="true":::
 
-:::image type="content" source="media/padca-25-new.png" alt-text="Screenshot of updated custom action with additional input parameters" lightbox="media/padca-25-new.png" border="true":::
-
-**Step 7**: Test the flow to see the updated custom action working in real time.
+1. Test the flow to see the updated custom action working in real time.
 
 ![Retest the updated custom action in Desktop flow](media/padcustomaction-update-gif.gif)
 
 In this section, we have successfully updated the underlying functionality of the custom action, built the package, deployed to Power Automate portal, refactored the desktop flow, and validated the functionality by running the desktop flow with updated capabilities of the custom action in Power Automate for desktop.
-
-### Conclusion
-
-[Custom actions in Power Automate for desktop](../../../desktop-flows/custom-actions.md) provides a powerful mechanism for creating actions that meet the specific needs of your organization, while maximizing the reusability of existing assets. By doing so, they help streamline the process of building Power Automate solutions, ultimately improving the efficiency of your organization’s automation efforts.
-
-**Disclaimer**: While the essential features utilized in creating custom actions are supported, the provided solutions, assets and sample scripts serve as an example implementation of these features and doesn't include any support.
