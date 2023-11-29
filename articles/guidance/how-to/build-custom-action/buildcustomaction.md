@@ -122,7 +122,7 @@ namespace ModulesLogEvent
 **Resources**:
 This table lists the descriptions and friendly names for parameters in a *Resources.resx* file.
 
-| **Name**                     | **Value**                      |**Comment**                |
+| Name                     | Value                      |Comment                |
 |------------------------------------------|--------------------------------------------|-----------------------------------------|
 | LogEventToFile_Description               | Custom action to log message to the supplied file       | Action description        |
 | LogEventToFile_FriendlyName              | LogEventToFile                                          | Action name               |
