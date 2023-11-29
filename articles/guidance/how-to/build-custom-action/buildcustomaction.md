@@ -33,15 +33,15 @@ Overall, custom actions in Power Automate for desktop provide a powerful way to 
 ## Prerequisites
 
 - Latest version of Power Automate for desktop – [Install Power Automate](../../../desktop-flows/install.md#install-power-automate-using-the-msi-installer)
-- C# Authoring Tool such as [Visual Studio Community/Professional/Enterprise 2022](https://visualstudio.microsoft.com/vs/) with the .NET desktop development workload
-- Custom Actions SDK – [NuGet Gallery | Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK](https://www.nuget.org/packages/Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK/)
-- Digital certificate
+- C# authoring tool such as [Visual Studio Community/Professional/Enterprise 2022](https://visualstudio.microsoft.com/vs/) with the .NET desktop development workload
+- Custom actions SDK – [NuGet Gallery | Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK](https://www.nuget.org/packages/Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK/)
+- Digital certificate:
   - Generate a self-signed certificate – [Generate Self-Signed Certificates Overview – .NET](/dotnet/core/additional-tools/self-signed-certificates-guide#with-powershell)
   - Enterprise deployment – Your organization’s trusted certificate from certificate authority – [Digital signatures and certificates – Office Support](https://support.microsoft.com/office/digital-signatures-and-certificates-8186cd15-e7ac-4a16-8597-22bd163e8e96)
-- SignTool
-  - [Using SignTool to Sign a File – Win32 apps](/windows/win32/seccrypto/using-signtool-to-sign-a-file)
+- SignTool:
+  - [Using SignTool to sign a file – Win32 apps](/windows/win32/seccrypto/using-signtool-to-sign-a-file)
   - [SignTool](/windows-hardware/drivers/devtest/signtool)
-- Windows PowerShell Script (.ps1) – [Create custom actions – Power Automate | Microsoft Learn](../../../desktop-flows/create-custom-actions.md#packaging-everything-in-a-cabinet-file)
+- Windows PowerShell Script (.ps1) – [Create custom actions – Power Automate](../../../desktop-flows/create-custom-actions.md#packaging-everything-in-a-cabinet-file)
   
 ## Create your own custom action
 
