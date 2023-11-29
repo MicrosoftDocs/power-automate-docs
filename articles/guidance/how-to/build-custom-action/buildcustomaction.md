@@ -117,14 +117,26 @@ namespace ModulesLogEvent
 ```
 
 **Resources**:
-<!-- This needs to be, at least in part, in text as screenshots aren't accessible -->
-:::image type="content" source="media/padca-6.png" alt-text="Screenshot of Resources.resx file for a custom module" lightbox="media/padca-6.png" border="true":::
+The following table lists the descriptions and friendly names for parameters in a *Resources.resx* file.
+
+| **Name**                                 | **Value**                                               |**Comment**                |
+|------------------------------------------|-------------------------------------------------------------------------------------|
+| LogEventToFile_Description               | Custom Action to log message to the supplied file       | Action Description        |
+| LogEventToFile_FriendlyName              | LogEventToFile                                          | Action Name               |
+| LogEventToFile_LogFileName_Description   | Input parameter of text type                            | Action Input Description  |
+| LogEventToFile_LogFileName_FriendlyName  | LogFileName                                             | Action Input Name         |
+| LogEventToFile_LogMessage_Description    | Input parameter of text type                            | Action Input Description  |
+| LogEventToFile_LogMessage_FriendlyName   | LogMessage                                              | Action Input Name         |                  |
+| LogEventToFile_StatusCode_Description    | Output parameter of boolean type                        | Action Output Description |
+| LogEventToFile_StatusCode_FriendlyName   | LogMessage                                              | Action OutputName         |
+| ModulesLogEvent_Description              | Module to manage log events                             | Module Description        |
+| ModulesLogEvent_FriendlyName             | LogEvent                                                | Module Name               |
 
 ## Build the package and deploy your custom action
 
 Create the package and deploy it to Power Automate.
 
-1. Acquire the digital certificate so the custom action DLL file can be signed.
+**Step 1**: Acquire the digital certificate so the custom action DLL file can be signed.
    > [!NOTE]
    > Self-signed certificates are only for TEST purposes and are not recommended for production use. For organizational deployment of custom actions in your environment, it is strongly recommended to use a trusted digital certificate as per your organizational > guidelines.
 
@@ -133,19 +145,37 @@ Create the package and deploy it to Power Automate.
 
    For this example a self-signed certificate is used.
 
-   **Refer**: Sample reference script – [CreateAndImportCertToStore.ps1](https://github.com/jpad5/pad-customaction-logevent/blob/main/CreateAndImportCertToStore.ps1)
+   a. Create a self-signed certificate.
 
-   1. Create a self-signed certificate.
-<!-- All the screenshots that contain commands from here on need to be replaced with text and preferably with code tags (') surrounding the code. -->
-:::image type="content" source="media/padca-8.png" alt-text="Screenshot of Steps to create self-signed certificate" lightbox="media/padca-8.png" border="true":::
+   Script to create the certificate
 
-b. Import the certificate into Certificate store
+```powershell
+$certPFXFileName="C:\PADCustomAction\PADCustomActionCert.pfx";
+$certCERFileName="C:\PADCustomAction\PADCustomActionCert.cer";
+$certStoreLocation="Cert:\LocalMachine\AuthRoot";
+$certname = "PADCustomActionSelfSignCert"
+##Create certificate
+$cert = New-SelfSignedCertificate -CertStoreLocation Cert:\CurrentUser\My -Type CodeSigningCert  -Subject "CN=$certname" -KeyExportPolicy Exportable -KeySpec Signature -KeyLength 2048 -KeyAlgorithm RSA -HashAlgorithm SHA256
+$mypwd = ConvertTo-SecureString -String <YOUR CERT PASSWORD GOES HERE> -Force -AsPlainText
+##Export certificate
+$certPFXFile = Export-PfxCertificate -Cert $cert -FilePath $certPFXFileName -Password $mypwd
+$certCERFile = Export-Certificate -Cert $cert -FilePath $certCERFileName -Type CERT -Verbose -Force
+##Import certificate
+Import-Certificate -CertStoreLocation $certStoreLocation -FilePath $certCERFile
+```
 
-:::image type="content" source="media/padca-8-1.png" alt-text="Screenshot of importing self-signed certificate" lightbox="media/padca-8-1.png" border="true":::
+   b. Import the certificate into Certificate store
 
-c. Validate that the imported certificate appears under *Trusted Root Certification Authorities > Certificates* in CertManager tool.
+   Script to import the certificate
 
-:::image type="content" source="media/padca-8-2-new.png" alt-text="Screenshot of validating certificate in Certificate Manager" lightbox="media/padca-8-2-new.png" border="true":::
+```powershell
+##Import certificate
+Import-Certificate -CertStoreLocation $certStoreLocation -FilePath $certCERFile
+```
+
+   c. Validate that the imported certificate appears under *Trusted Root Certification Authorities > Certificates* in CertManager tool.
+
+   :::image type="content" source="media/padca-8-2-new.png" alt-text="Screenshot of validating certificate in Certificate Manager" lightbox="media/padca-8-2-new.png" border="true":::
 
 **Step 2**: Finalize the custom module created by signing the DLL file using a trusted certificate.
 
