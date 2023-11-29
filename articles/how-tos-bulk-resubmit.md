@@ -64,11 +64,15 @@ Follow these steps to cancel flow runs using a template:
 
 1. Obtain the **Environment Id** and **Flow Id**.
 
-    To find the environment Id, ask your administrator to go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home) Details section. To learn more, go to [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id).
+    1. To find the Environment Id, look at the URL in your browser's address bar. Everything between `environemts/` and `/home` is the Environment Id:
+    
+        :::image type="content" source="media/cancel-resubmit-how-to/find-environment-id.png" alt-text="Screenshot of a flow URL with the Flow Id highlighted.":::
 
-    To find the Flow Id, edit the flow and look at the URL in your browser's address bar. Everything between `flows/` and `/details` is the Flow Id:
+        If you can't locate the Environment ID, ask your administrator to go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home) Details section. To learn more, go to [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id).
 
-    :::image type="content" source="media/cancel-resubmit-how-to/find-flow-id.png" alt-text="Screenshot of a flow URL with the Flow Id highlighted.":::
+    1. To find the Flow Id, edit the flow and look at the URL in your browser's address bar. Everything between `flows/` and `/details` is the Flow Id:
+
+        :::image type="content" source="media/cancel-resubmit-how-to/find-flow-id.png" alt-text="Screenshot of a flow URL with the Flow Id highlighted.":::
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Access the [Cancel all my flow runs template](https://aka.ms/cancelAllMyRunsTemplate).
