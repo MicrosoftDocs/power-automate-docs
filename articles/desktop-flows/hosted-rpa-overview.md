@@ -24,6 +24,8 @@ Microsoft Power Automate supports two hosted RPA scenarios that provide develope
 
 2. [**Hosted machine groups**](hosted-machine-groups.md) can automatically scale workloads to optimize unattended automation in production, delivering improved business process continuity and governance at scale.
 
+:::image type="content" source="media/hosted-rpa-overview/hosted-rpa-features.png" alt-text="Hosted RPA feature for end to end RPA lifecycle.":::
+
 Using Microsoft hosted infrastructure running in Azure, Power Automate hosted RPA empowers you to run RPA quickly and at scale while freeing up resources and reducing costs.
 
 Setting up RPA infrastructure manually is time consuming. It can take days to get machines for automation—from the initial machine request and creation to installation and assignment. Power Automate delivers a consistent setup experience and license for both individual hosted machines and hosted machine groups, making it faster and easier to set up and manage RPA for your organization. Instead of doing all the heavy lifting yourself, anyone with just a few basic parameters can build, test, and run large-scale automation in minutes. Just give it a name, select the base image and account to be used, and you’re all set!
