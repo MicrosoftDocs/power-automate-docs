@@ -52,7 +52,7 @@ Hosted machine groups let you share resources among different automation scenari
 
 For example, you can have 10 bot capacity shared between two groups—let’s say one for sales and one for finance. If finance requires additional processing capacity while sales workloads are light, the majority of the 10 bot capacity will be assigned to finance. When finance’s processing is complete or returns to normal levels, the bot machines assigned to finance are available again for sales or other hosted machine groups to run their workloads.
 
-## Getting started
+## Get started with hosted machines and groups
 
 Learn more about [Hosted machines](hosted-machines.md) and [Hosted machine groups](hosted-machine-groups.md) and see [pricing for hosted RPA add-on licenses](https://powerautomate.microsoft.com/pricing/).
 
