@@ -21,5 +21,5 @@ search.audienceType:
 
 
 > [!NOTE]
-> Microsoft Power Automate Azure Virtual Desktop (AVD) Integration Starter Kit has been deprecated
-> In order scale your machine pool to run desktop flows, we recommend the [Power Automate hosted RPA](hosted-rpa-overview.md) solution that empowers you to run desktop flows rapidly and at scale with zero infrastructure
+> - Microsoft Power Automate Azure Virtual Desktop (AVD) Integration Starter Kit has been deprecated
+> - In order scale your machine pool to run desktop flows, we recommend the [Power Automate hosted RPA](hosted-rpa-overview.md) solution that empowers you to run desktop flows rapidly and at scale with zero infrastructure
