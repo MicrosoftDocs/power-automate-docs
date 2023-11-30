@@ -16,7 +16,7 @@ search.audienceType:
   - admin
 ---
 
-# Introduction to the Power Automate Hosted RPA
+# Introduction to the Power Automate hosted RPA
 
 Microsoft Power Automate supports two hosted RPA scenarios that provide developers and Center of Excellence admins a simple way to set up and scale automations:
 
