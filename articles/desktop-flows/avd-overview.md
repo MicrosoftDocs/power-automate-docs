@@ -7,9 +7,9 @@ editor: ''
 tags: ''
 ms.subservice: desktop-flow
 ms.topic: overview
-ms.date: 10/28/2021
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 11/30/2023
+ms.author: kenseongtan
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -18,11 +18,10 @@ search.audienceType:
   - flowmaker
   - admin
 ---
-
 # Power Automate Azure Virtual Desktop integration starter kit
 
-The Microsoft Power Automate Azure Virtual Desktop (AVD) Integration Starter Kit is a set of templates that are designed to help orchestrate and scale virtual machines used to run desktop flows. 
+The Microsoft Power Automate Azure Virtual Desktop (AVD) Integration Starter Kit is a set of templates that are designed to help orchestrate and scale virtual machines used to run desktop flows.
 
-> [!NOTE]
-> - Microsoft Power Automate Azure Virtual Desktop (AVD) Integration Starter Kit has been deprecated
-> - In order scale your machine pool to run desktop flows, we recommend the [Power Automate hosted RPA](hosted-rpa-overview.md) solution that empowers you to run desktop flows rapidly and at scale with zero infrastructure
+> [!IMPORTANT]
+> - Microsoft Power Automate Azure Virtual Desktop (AVD) Integration Starter Kit has been deprecated.
+> - In order scale your machine pool to run desktop flows, we recommend the [Power Automate hosted RPA](hosted-rpa-overview.md) solution that empowers you to run desktop flows rapidly and at scale with zero infrastructure.
