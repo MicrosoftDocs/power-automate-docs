@@ -1,14 +1,14 @@
 ﻿---
 title: Copilot in Process Mining process analytics (preview)
 description: Learn how to surface insights on your process and get recommended solutions with Copilot.
-ms.date: 08/25/2023
+ms.date: 11/28/2023
 ms.topic: conceptual
 author: janPidych
 contributors:
   - janPidych
   - v-aangie
 ms.custom: bap-template
-ms.author: janPidych
+ms.author: janpidych
 ms.reviewer: angieandrews
 ---
 
@@ -27,12 +27,12 @@ Copilot can perform the following actions:
 
 [!INCLUDE[cc_preview_features_definition_copilot_process_mining](./includes/cc-preview-features-definition-copilot-process-mining.md)]
 
-## Prerequisites
+## Prerequisite
 
-You need a Power Platform environment in the United States or Preview (United States) region for Copilot in Process Mining.
+You need a Power Platform environment for Copilot in Process Mining.
 
 > [!NOTE]
-> If your environment is in the United States or Preview (United States) region and you still don’t see the Copilot experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center.
+> If you still don’t see the Copilot experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center.
 
 ## Copilot in Process Mining analysis
 
@@ -120,15 +120,11 @@ Use this section to find answers to frequently asked questions.
 1. Go to Create a Power Platform environment.
 1. [Create a Power Platform environment](/power-platform/admin/create-environment#create-an-environment-without-a-database).
 
-    - When creating the environment, ensure that you choose the region as **Preview (United States)**.
-    - If you need help with creating a preview environment, ask your Power Platform admin.
-
-To learn more, go to [Regions overview](/power-platform/admin/regions-overview).
+    If you need help with creating a preview environment, ask your Power Platform admin.
 
 ### Why don't I see Copilot?
 
-- Check if the environment you're using is in the United States or Preview (United States) region.
-- Ask your admins if they turned off the Copilot feature in the Power Platform admin center for your environment.
+Ask your admin if they turned off the Copilot feature in the Power Platform admin center for your environment.
 
 ### How do I disable Copilot?
 
