@@ -397,10 +397,14 @@
       href: ./desktop-flows/desktop-flow-connections.md
     - name: Machine group certificate renewal
       href: ./desktop-flows/machine-group-certificates.md
-    - name: Hosted machines
-      href: ./desktop-flows/hosted-machines.md
-    - name: Hosted machine groups
-      href: ./desktop-flows/hosted-machine-groups.md
+    - name: RPA with zero infrastructure (Hosted RPA)
+      items:
+      - name: Hosted RPA overview
+        href: ./desktop-flows/hosted-rpa-overview.md
+      - name: Hosted machines
+        href: ./desktop-flows/hosted-machines.md
+      - name: Hosted machine groups
+        href: ./desktop-flows/hosted-machine-groups.md
     - name: Scale with AVD starter kit
       items:
       - name: Overview
