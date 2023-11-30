@@ -19,6 +19,7 @@ search.audienceType:
   - admin
 ---
 
+# Power Automate Azure Virtual Desktop integration starter kit
 
 > [!NOTE]
 > - Microsoft Power Automate Azure Virtual Desktop (AVD) Integration Starter Kit has been deprecated
