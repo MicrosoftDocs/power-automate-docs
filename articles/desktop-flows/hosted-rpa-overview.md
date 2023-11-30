@@ -32,7 +32,7 @@ If you need more advanced automation for specific desktop applications, you can 
 
 ## Hosted machines for attended and unattended automation
 
-[**Hosted machines**](hosted-machines.md) give developers a quick and simple way to build, test, and run desktop flows without providing or setting up any physical machines.
+[Hosted machines](hosted-machines.md) give developers a quick and simple way to build, test, and run desktop flows without providing or setting up any physical machines.
 
 When testing is complete, the desktop flow can be deployed on a single machine to support individual business users running in both attended and unattended mode. For unattended scenarios that are more robust, you can start by building the desktop flow on a hosted machine. Then, it can be assigned to a machine group that distributes and scales the automation workload based on demand.
 
@@ -41,7 +41,7 @@ When testing is complete, the desktop flow can be deployed on a single machine t
 ### Automatically react to spikes in demand with scalable infrastructure
 Planning for variability in RPA utilization is challenging and time-consuming, making it difficult to guarantee response times when speed is necessary. When additional capacity is needed, critical processes are slowed or put on hold waiting for support teams to set up and allocate more machines. In some cases, large pools of machines are allocated to support peak-load processes, resulting in low average machine utilization and higher costs.
 
-[**Hosted machine groups**](hosted-machine-groups.md) solve this problem by automatically provisioning hosted bots when needed. Bots are virtual machines running in Azure that run your automation flows unattended and can scale to run simultaneously on multiple Windows VMs. When a desktop flow waits in the queue and no bot is available, a new bot is created automatically up to the maximum number of bots determined by the admin. There is no need to set up or register those machines and they can be easily reassigned to different workloads whenever you need them.
+[Hosted machine groups](hosted-machine-groups.md) solve this problem by automatically provisioning hosted bots when needed. Bots are virtual machines running in Azure that run your automation flows unattended and can scale to run simultaneously on multiple Windows VMs. When a desktop flow waits in the queue and no bot is available, a new bot is created automatically up to the maximum number of bots determined by the admin. There is no need to set up or register those machines and they can be easily reassigned to different workloads whenever you need them.
 
 You don’t have to worry about whether you’ll have enough machines to run your automations when demand spikes, or whether you have underutilized machines adding cost without delivering value to your organization.
 
@@ -52,6 +52,6 @@ For example, you can have 10 bot capacity shared between two groups—let’s sa
 
 # Getting started
 
-You can learn more about [**Hosted machines**](hosted-machines.md) and [**Hosted machine groups**](hosted-machine-groups.md) and see [pricing for hosted RPA add-on licenses](https://powerautomate.microsoft.com/pricing/).
+You can learn more about [Hosted machines](hosted-machines.md) and [Hosted machine groups](hosted-machine-groups.md) and see [pricing for hosted RPA add-on licenses](https://powerautomate.microsoft.com/pricing/).
 
 
