@@ -399,7 +399,7 @@
       href: ./desktop-flows/machine-group-certificates.md
     - name: RPA with zero infrastructure (Hosted RPA)
       items:
-      - name: Hosted RPA overview
+      - name: Overview
         href: ./desktop-flows/hosted-rpa-overview.md
       - name: Hosted machines
         href: ./desktop-flows/hosted-machines.md
