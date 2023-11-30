@@ -81,11 +81,11 @@ Now that you've connected your Power BI workspace to the process mining capabili
 
 1. Select **Apply**.
 
-1. In the created workspace select **Manage access**.
+1. In the created workspace, select **Manage access**.
 
 2. Select **Add people or groups**.
 
-1. Select Search for and add **Process Insights Prod**.
+1. Select **Search for**, and then add **Process Insights Prod**.
 
 1. Assign it **admin access**.
 
