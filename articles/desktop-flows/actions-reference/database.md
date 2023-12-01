@@ -130,14 +130,14 @@ Send feedback by selecting the thumb up or thumb down icon underneath the AI-gen
 
 ### Disabling the user feedback functionality
 
-As a tenant admin you can prevent your users from sending feedback to Microsoft by disabling the `disableSurveyFeedback` tenant setting. Find more information about viewing and setting tenant settings:
+As a tenant admin you can prevent your users from sending feedback to Microsoft by disabling the `disableSurveyFeedback` tenant setting. Find more information about viewing and setting tenant settings here:
 
 - [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
 - [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
 
 ### Data subject rights requests on user feedback
 
-Organization administrators can view, export, and delete the feedback from their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), then go to **Health** > **Product feedback**.
+Organization administrators can view, export, and delete the feedback provided by their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), then go to **Health** > **Product feedback**.
 
 ### AI with Power Automate resources
 
