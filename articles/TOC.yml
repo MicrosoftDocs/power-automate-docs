@@ -397,18 +397,16 @@
       href: ./desktop-flows/desktop-flow-connections.md
     - name: Machine group certificate renewal
       href: ./desktop-flows/machine-group-certificates.md
-    - name: Hosted machines
-      href: ./desktop-flows/hosted-machines.md
-    - name: Hosted machine groups
-      href: ./desktop-flows/hosted-machine-groups.md
-    - name: Scale with AVD starter kit
+    - name: RPA with zero infrastructure (Hosted RPA)
       items:
       - name: Overview
-        href: ./desktop-flows/avd-overview.md
-      - name: Set up the AVD integration starter kit
-        href: ./desktop-flows/avd-setup.md
-      - name: Use the starter kit
-        href: ./desktop-flows/avd-use-starter-kit.md
+        href: ./desktop-flows/hosted-rpa-overview.md
+      - name: Hosted machines
+        href: ./desktop-flows/hosted-machines.md
+      - name: Hosted machine groups
+        href: ./desktop-flows/hosted-machine-groups.md
+    - name: Scale with AVD starter kit (deprecated)
+      href: ./desktop-flows/avd-overview.md
   - name: Use credentials in desktop flow connections (preview)
     href: ./desktop-flows/manage-credentials.md
   - name: Manage desktop flows
@@ -500,6 +498,8 @@
       href: ./desktop-flows/use-custom-actions.md
     - name: Actions SDK for .NET reference
       href: /dotnet/api/?view=pad-actions-sdk-latest&preserve-view=true
+    - name: Build custom actions in Power Automate for desktop
+      href: ./guidance/how-to/build-custom-action/buildcustomaction.md
   - name: Troubleshooter
     href: ./desktop-flows/troubleshooter.md
   - name: How to
