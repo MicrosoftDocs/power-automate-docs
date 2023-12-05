@@ -32,7 +32,8 @@ Copilot can perform the following actions:
 You need a Power Platform environment for Copilot in Process Mining.
 
 > [!NOTE]
-> If you still don’t see the Copilot experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center.
+> - If you still don’t see the Copilot experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center.
+> - In some geographic regions outside United States, Australia, and United Kingdom, an admin needs to turn on the cross geo calls to enable Copilot. More informatfion: [Copilot availability by region](get-started-with-copilot.md#availability-by-region).
 
 ## Copilot in Process Mining analysis
 
@@ -59,7 +60,7 @@ Follow these steps to analyze the process with Copilot. You can analyze your pro
 
     There are two ways to open the process:
 
-    - If you wait until the import operation finishes, the process open automatically after the import, OR
+    - If you wait until the import operation finishes, the process opens automatically after the import, OR
     - After steps 1 and 2, you see the Process Mining environment home page. Processes display as tiles. Select a process tile, or select the **All processes** link to list all processes. To open a process, select its name.
 
 ### Analyze your process in the Process Mining desktop app
