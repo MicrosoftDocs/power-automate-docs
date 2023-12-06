@@ -31,10 +31,6 @@ The cloud flows copilot can perform the following actions:
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
 > - More information: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md), [Responsible AI FAQ for Copilot in cloud flows](faqs-copilot.md), [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
-## Prerequisite
-
-You need a Power Platform environment for Copilot in Process Mining that isn't sovereign cloud (GCC, GCCH, or Mooncake).
-
 ## Availability by region
 
 You need a Power Platform environment in the following regions to use Copilot in Power Automate cloud flows.
@@ -105,6 +101,9 @@ This section describes some example scenarios of how you can interact with Copil
 |-----------|------------------------------------------------|
 | When an email arrives from contoso@gmail.com, post in Teams.  | </li><li>Ask Copilot to edit the flow: **I want to send the email subject to Teams channel.**<br/></li><li>Ask Copilot what your flow does: **What does my flow do?**  |
 | When an item is created in SharePoint, send me a mobile notification.  |  </li><li>Edit the flow with this prompt: **I want to send the item title to notification.**<br/></li><li>Edit the flow with this prompt: **I don’t want to receive mobile notification. Send me an email instead.**  |
+
+> [!TIP]
+> For more examples you can try out, go to the [Power Platform Prompt Library](https://pnp.github.io/powerplatform-prompts/?filters=power%20automate%20copilot).
 
 ## Edit a flow using the designer with copilot capabilities
 
