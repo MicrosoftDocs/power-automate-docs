@@ -110,7 +110,7 @@ For example, the below run URL invokes a desktop flow with text, numeric and boo
 
 > [!IMPORTANT]
 >
-> - To trigger the run URL through a web browser, *unescape* the `inputArguments` parameter's JSON string value and use URL encoding to convert the characters into a valid ASCII format.
+> - To trigger the run URL through a web browser, unescape the `inputArguments` parameter's JSON string value and use **URL encoding** to convert the characters into a valid ASCII format.
 > - To unescape the double quote characters, remove the backslashes. For example, *inputArguments={"NewInput": "Hello", "NewInput2": 123, "NewInput3": true}*
 
 ## Save logs for desktop flows run via URL
