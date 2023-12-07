@@ -1,12 +1,12 @@
 ---
 title: Database actions reference
 description: See all the available database actions.
-author: georgiostrantzas
+author: cochamos
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/20/2023
-ms.author: matp
-ms.reviewer: gtrantzas
+ms.date: 12/07/2023
+ms.author: cochamos
+ms.reviewer: matp
 contributors:
 - jpapadimitriou
 - Yiannismavridis
@@ -83,37 +83,37 @@ Connect to a database and execute a SQL statement.
 
 To execute an SQL query, use the **Execute SQL statement** action. Begin by providing a valid connection to the respective database. Select the desired option in the **Get connection by** property. You can either provide an **SQL connection variable** (you can create one by using the **Open SQL connection** action) or by providing the **Connection string**. Then input the SQL query you want to execute in the **SQL statement** property. You can also modify the timeout seconds of the action or leave the default option (30 seconds).
 
-
 ## Natural language to script powered by copilot (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Natural language to script is a new copilot capability added in Power Automate for desktop. It lets you quickly generate scripts used in the Execute SQL statement action by just providing a description in natural language.
+Natural language to script is a new copilot capability added in Power Automate for desktop. It lets you quickly generate scripts used in the execute SQL statement action by providing a description in natural language.
 
-[!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
+> [!IMPORTANT]
+> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 ### Availability by region
 
-Currently, Natural Language to script in Power Automate for desktop is only available in environments located in the United States.
+Currently, natural language to script in Power Automate for desktop is only available in environments located in the United States.
 
 ### Availability by account type
 
-Currently, Natural Language to script in Power Automate for desktop is only available for users with a work or school account.
+Currently, natural language to script in Power Automate for desktop is only available for users with a work or school account.
 
 > [!NOTE]
-> If your environment is in the region listed above and you still need to see the copilot in Power Automate for desktop experience, contact your tenant administrator. They might have turned off the copilot functionality.
+> If your environment is in the region where this feature is available and you still can't experience the copilot in Power Automate for desktop experience, contact your tenant administrator. They might have turned off the copilot functionality.
 
 ### How to generate scripts using copilot and natural language
 
-To generate SQL code in the Execute SQL statement press the  **Generate script with Copilot** button.
+To generate SQL code in the execute SQL statement select  **Generate script with Copilot**.
 
 :::image type="content" source="media\scripting\sql_action1.png" alt-text="Screenshot of the execute SQL statement action with the Generate script with Copilot button highlighted":::
 
-The create prompt screen opens where you can type your natural language prompt.
+The create prompt screen opens where you type your natural language prompt.
 
 :::image type="content" source="media\scripting\sql_action2.png" alt-text="Screenshot of the execute SQL statement action with the prompt dialog open":::
 
-To create a SQL script, write your prompt and press the **Generate** button. If you need to re-create it, you can change the prompt and select **Regenerate**. Otherwise, select **Use this script** to go back to the main action window, where you can modify it and add any necessary variables.
+To create a SQL script, write your prompt and select **Generate**. If you need to re-create it, you can change the prompt and select **Regenerate**. Otherwise, select **Use this script** to go back to the main action window, where you can modify your prompt and add any necessary variables.
 
 :::image type="content" source="media\scripting\sql_action3.png" alt-text="Screenshot of the Generate Script with Copilot dialog open, that shows a generated SQL statement":::
 
@@ -137,14 +137,13 @@ As a tenant admin you can prevent your users from sending feedback to Microsoft 
 
 ### Data subject rights requests on user feedback
 
-Organization administrators can view, export, and delete the feedback provided by their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), then go to **Health** > **Product feedback**.
+Power Platform administrators can view, export, and delete the feedback provided by their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), then go to **Health** > **Product feedback**.
 
 ### AI with Power Automate resources
 
 - [FAQ for Generating scripts with natural language](../../faqs-copilot-nl-to-code.md)
 - [Responsible AI FAQs for Power Automate](../../responsible-ai-overview.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
-
 
 ### Input parameters
 
