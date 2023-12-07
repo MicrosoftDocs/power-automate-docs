@@ -56,7 +56,7 @@ Currently, copilot in Power Automate for desktop is only available for users wit
 
 ### How to generate scripts using copilot and natural language
 
-To generate scripts in one of the supported scripting actions drag and drop the action in the designer and select **Generated script with Copilot**.
+To generate scripts in one of the supported scripting actions drag and drop the action in the designer and select **Generate script with Copilot**.
 
 :::image type="content" source="media\scripting\powershell_action.png" alt-text="Screenshot of the run PowerShell action with the Generate script with Copilot button highlighted":::
 
