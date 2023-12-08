@@ -137,7 +137,7 @@ As a tenant admin you can prevent your users from sending feedback to Microsoft 
 
 ### Data subject rights requests on user feedback
 
-Power Platform administrators can view, export, and delete the feedback provided by their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), then go to **Health** > **Product feedback**.
+Tenant administrators can view, export, and delete the feedback provided by their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), and then selecting **Health** > **Product feedback**.
 
 ### AI with Power Automate resources
 
