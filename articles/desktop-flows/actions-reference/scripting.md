@@ -5,8 +5,8 @@ author: cochamos
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/09/2023
-ms.author: iomavrid
-ms.reviewer: gtrantzas
+ms.author: cochamos
+ms.reviewer: angieandrews
 contributors:
 - jpapadimitriou
 - Yiannismavridis
@@ -88,7 +88,7 @@ As a tenant admin you can prevent your users from sending feedback to Microsoft 
 
 ### Data subject rights requests on user feedback
 
-Tenant administrators can view, export, and delete the feedback from their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), then go to **Health** > **Product feedback**.
+Tenant administrators can view, export, and delete the feedback from their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), and then selecting **Health** > **Product feedback**.
 
 ### AI with Power Automate resources
 

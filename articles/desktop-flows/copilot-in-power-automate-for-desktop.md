@@ -5,7 +5,7 @@ ms.date: 11/13/2023
 ms.topic: how-to
 author: cochamos
 ms.author: cochamos
-ms.reviewer: pending
+ms.reviewer: angieandrews
 ---
 # Copilot in Power Automate for desktop (preview)
 
@@ -71,7 +71,7 @@ As a Power Platform admin you can prevent users from sending feedback to Microso
 
 ## Data subject rights requests on user feedback
 
-Tenant administrators can view, export, and delete the feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage) and then go to **Health** > **Product feedback**.
+Tenant administrators can view, export, and delete the feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage), and then selecting **Health** > **Product feedback**.
 
 ## See also
 
