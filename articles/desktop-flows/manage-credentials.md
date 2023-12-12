@@ -4,7 +4,7 @@ description: Use credentials in desktop flow connections
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/09/2023
+ms.date: 12/12/2023
 ms.author: quseleba
 ms.reviewer: 
 contributors:
@@ -110,30 +110,25 @@ From Solutions page, you can retrieve all the dependencies of secret environment
     -	The connections using this environment variable.
 
 ## Share a credential
-You can share the credential(s) you own with other users in your organization and give those users specific permissions to access it.
-- Sign-in to [Power Automate](https://make.powerautomate.com).
--	Go to **Credentials (preview)**.
--	Select your credential from the list of credentials.
--	In the command bar, select **Share**.
--	Select **Add people** and enter the name of the person in your organization with whom you would like to share the credentials.
--	Select the role you want to grant to this user:
+You can share the credentials you own with other users in your organization and give those users specific permissions to access it.
+1. Sign-in to [Power Automate](https://make.powerautomate.com), and then go to **Credentials (preview)**.
+2. Select your credential from the list of credentials.
+3. On the command bar, select **Share**.
+4. Select **Add people**, enter the name of the person in your organization with whom you would like to share the credentials, and then select the role you want to grant to this user:
     - **Co-owner** (can edit). This access level gives full permission to that credential. Co-owners can use the credential, share it with others, edit its details, and delete it.
     - **User** (can view only). This access level only gives permission to use the credential. No edit, share, or delete permissions are possible with this access.
     - **User** (can view and share). Same as above, but it gives permission to share.
--	Select **Save**.
+5.	Select **Save**.
 
 >[!NOTE]
-> By sharing your credential, all the environment variables used in the credential are shared as well. Removing permissions on a credential don't remove permissions on the environment variables.
+> By sharing your credential, all the environment variables used in the credential are shared as well. Removing permissions on a credential doesn't remove permissions on the environment variables.
 
 ## Delete a credential
-1. Sign in to [Power Automate](https://make.powerautomate.com).
-2. Go to **Credentials (preview)**.
-3. From the list, select the credential you want to delete.
-4. Select Delete machine in the command bar.
+1. Sign in to [Power Automate](https://make.powerautomate.com), and then go to **Credentials (preview)**.
+2. From the list, select the credential you want to delete, and then select **Delete machine** on the command bar.
 
->[!Note]
-> Deleting a credential don't delete the associated environment variables
-
+>[!NOTE]
+> Deleting a credential doesn't delete the associated environment variables.
 
 ## Export a desktop flow connection using credential
 
