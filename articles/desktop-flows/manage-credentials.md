@@ -19,12 +19,6 @@ search.audienceType:
 [This article is prerelease documentation and is subject to change.]
 
 The new **Credentials** page (preview) in Power Automate allows you to create, edit, and share login credentials using Azure Key Vault and use them in desktop flow connections. The following table provides the feature availability information in various regions. 
-
-  |Regions|Feature availability (preview)|
-  |---|---|
-  |Preview, Canada|Available|
-  |All regions except Europe and US|November 2023|
-  |All regions|December 2023|
   
 > [!NOTE]
 > Currently, this feature isn't available for US Government Clouds.
@@ -59,32 +53,6 @@ To create your credential, you need to provide the following information:
 
 > [!NOTE]
 > Secret environment variables reference secrets stored in Azure Key Vault. 
-
-
-## Share a credential
-You can share the credential(s) you own with other users in your organization and give those users specific permissions to access it.
-- Sign-in to [Power Automate](https://make.powerautomate.com).
--	Go to **Credentials (preview)**.
--	Select your credential from the list of credentials.
--	In the command bar, select **Share**.
--	Select **Add people** and enter the name of the person in your organization with whom you would like to share the credentials.
--	Select the role you want to grant to this user:
-    - **Co-owner** (can edit). This access level gives full permission to that credential. Co-owners can use the credential, share it with others, edit its details, and delete it.
-    - **User** (can view only). This access level only gives permission to use the credential. No edit, share, or delete permissions are possible with this access.
-    - **User** (can view and share). Same as above, but it gives permission to share.
--	Select **Save**.
-
->[!NOTE]
-> By sharing your credential, all the environment variables used in the credential are shared as well. Removing permissions on a credential don't remove permissions on the environment variables.
-
-## Delete a credential
-1. Sign in to [Power Automate](https://make.powerautomate.com).
-2. Go to **Credentials (preview)**.
-3. From the list, select the credential you want to delete.
-4. Select Delete machine in the command bar.
-
->[!Note]
-> Deleting a credential don't delete the associated environment variables
 
 ## Create desktop flow connections using a credential
 Note: Credentials (preview) are only supported in the desktop flow connections for now.
@@ -141,6 +109,32 @@ From Solutions page, you can retrieve all the dependencies of secret environment
     -	The credentials using this environment variable.
     -	The connections using this environment variable.
 
+## Share a credential
+You can share the credential(s) you own with other users in your organization and give those users specific permissions to access it.
+- Sign-in to [Power Automate](https://make.powerautomate.com).
+-	Go to **Credentials (preview)**.
+-	Select your credential from the list of credentials.
+-	In the command bar, select **Share**.
+-	Select **Add people** and enter the name of the person in your organization with whom you would like to share the credentials.
+-	Select the role you want to grant to this user:
+    - **Co-owner** (can edit). This access level gives full permission to that credential. Co-owners can use the credential, share it with others, edit its details, and delete it.
+    - **User** (can view only). This access level only gives permission to use the credential. No edit, share, or delete permissions are possible with this access.
+    - **User** (can view and share). Same as above, but it gives permission to share.
+-	Select **Save**.
+
+>[!NOTE]
+> By sharing your credential, all the environment variables used in the credential are shared as well. Removing permissions on a credential don't remove permissions on the environment variables.
+
+## Delete a credential
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+2. Go to **Credentials (preview)**.
+3. From the list, select the credential you want to delete.
+4. Select Delete machine in the command bar.
+
+>[!Note]
+> Deleting a credential don't delete the associated environment variables
+
+
 ## Export a desktop flow connection using credential
 
 >[!NOTE]
@@ -153,5 +147,5 @@ You should import the solution containing the credential and the related environ
 -	Currently, this feature is available only for desktop flow connections. 
 -	Creating credentials in the new designer isn't available yet. 
 -	You can't edit the selected environment variables in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the AKV secret.
--	Update of connections using credentials is asynchronous but shouldn't exceed 1 minute. 
+-	Update of connections using credentials is asynchronous. It can take up to 1 minute for the desktop flow connection to use the new credentials after secret update. 
 
