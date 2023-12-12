@@ -142,5 +142,5 @@ You should import the solution containing the credential and the related environ
 -	Currently, this feature is available only for desktop flow connections. 
 -	Creating credentials in the new designer isn't available yet. 
 -	You can't edit the selected environment variables in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the AKV secret.
--	Update of connections using credentials is asynchronous. It can take up to 1 minute for the desktop flow connection to use the new credentials after secret update. 
+-	Update of connections using credentials is asynchronous. It can take up to one minute for the desktop flow connection to use the new credentials after the secret is updated. 
 
