@@ -5,8 +5,8 @@ author: cochamos
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/09/2023
-ms.author: iomavrid
-ms.reviewer: gtrantzas
+ms.author: cochamos
+ms.reviewer: angieandrews
 contributors:
 - jpapadimitriou
 - Yiannismavridis
@@ -56,7 +56,7 @@ Currently, copilot in Power Automate for desktop is only available for users wit
 
 ### How to generate scripts using copilot and natural language
 
-To generate scripts in one of the supported scripting actions drag and drop the action in the designer and select **Generated script with Copilot**.
+To generate scripts in one of the supported scripting actions drag and drop the action in the designer and select **Generate script with Copilot**.
 
 :::image type="content" source="media\scripting\powershell_action.png" alt-text="Screenshot of the run PowerShell action with the Generate script with Copilot button highlighted":::
 
@@ -88,7 +88,7 @@ As a tenant admin you can prevent your users from sending feedback to Microsoft 
 
 ### Data subject rights requests on user feedback
 
-Organization administrators can view, export, and delete the feedback from their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), then go to **Health** > **Product feedback**.
+Tenant administrators can view, export, and delete the feedback from their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), and then selecting **Health** > **Product feedback**.
 
 ### AI with Power Automate resources
 

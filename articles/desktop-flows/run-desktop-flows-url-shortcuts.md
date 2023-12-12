@@ -4,7 +4,7 @@ description: See how to run desktop flows via URL or desktop shortcuts.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/16/2023
+ms.date: 11/28/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -80,16 +80,49 @@ To find the ID of a desktop flow, launch the Power Automate console, select or r
 
 :::image type="content" source="media/console/desktop-flow-details-properties.png" alt-text="Screenshot of the details of a desktop flow.":::
 
+## Add flow input variables to a run URL
+
+Apart from the mandatory input parameters, you can add the `inputArguments` parameter to a run URL to configure the flow's inputs.
+
+If the `inputArguments` parameter contains all the input variables of the flow, then Power Automate console doesn't ask for user input during the flow run.
+
+A URL containing the `inputArguments` parameter should have the following structure. The parameter can be added to any of the previously mentioned URLs.
+
+> [!IMPORTANT]
+> All special characters in the JSON string must be escaped. For example, all double quotes must be backslash-escaped.
+
+```
+"ms-powerautomate:/console/flow/run?workflowId=[workflowId]&inputArguments={\"[External name 1]\": [Value 1],\"[External name 2]\": [Value 2]}"
+```
+
+For example, the below run URL invokes a desktop flow with text, numeric and boolean inputs:
+
+```
+"ms-powerautomate:/console/flow/run?&workflowid=dfd0c814-2c30-4cd8-849d-a4b2d2f4f33b&inputArguments={\"NewInput\": \"Hello\", \"NewInput2\": 123, \"NewInput3\": true}"
+```
+
+> [!NOTE]
+>
+> - Only Text, Numeric and Boolean data types are supported.
+> - The Boolean values are case sensitive, and the value can be either **true** or **false**.
+> - If there are additional flow inputs that aren't included in the `inputArguments` parameter, then during the flow run the Power Automate console asks for user input.
+> - The source that invokes the run URL may have a limit of maximum allowed characters, which will cause the flow to fail if that limit is exceeded.
+
+> [!IMPORTANT]
+>
+> - To trigger the run URL through a web browser, unescape the `inputArguments` parameter's JSON string value and use **URL encoding** to convert the characters into a valid ASCII format.
+> - To unescape the double quote characters, remove the backslashes. For example, *inputArguments={"NewInput": "Hello", "NewInput2": 123, "NewInput3": true}*
+
 ## Save logs for desktop flows run via URL
 
-Apart from the mandatory input parameters, you can add the **runId** parameter to a run URL to define a unique GUID for the desktop flow logs.
+Apart from the mandatory input parameters, you can add the `runId` parameter to a run URL to define a unique GUID for the desktop flow logs.
 
 Power Automate uses this GUID to create a folder and store the logs inside it. The logs are stored in: **C:\Users\\[Username]\AppData\Local\Microsoft\Power Automate Desktop\Console\Scripts\\[Flow ID]\Runs\\[Run ID]**
 
 > [!NOTE]
-> A GUID is a 128-bit value consisting of one group of 8 hexadecimal digits, three groups of 4 digits each, and one group of 12 digits, for example: **e6f82a20-47f7-4dd8-a97f-63df36797d0f**.
+> A GUID is a 128-bit value consisting of one group of 8 hexadecimal digits, three groups of 4 digits each, and one group of 12 digits, for example: *e6f82a20-47f7-4dd8-a97f-63df36797d0f*.
 
-A URL containing the **runId** input parameter should have the following structure. The parameter can be added to any of the previously mentioned URLs.
+A URL containing the `runId` input parameter should have the following structure. The parameter can be added to any of the previously mentioned URLs.
 
 ```
 "ms-powerautomate:/console/flow/run?workflowId=[workflowId]&runId=[GUID]"
