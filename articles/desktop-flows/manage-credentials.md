@@ -19,9 +19,12 @@ search.audienceType:
 [This article is prerelease documentation and is subject to change.]
 
 The new **Credentials** page (preview) in Power Automate allows you to create, edit, and share login credentials using Azure Key Vault and use them in desktop flow connections. The following table provides the feature availability information in various regions. 
-  
-> [!NOTE]
-> Currently, this feature isn't available for US Government Clouds.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality.
+> - These features are available before an official release so that customers can get early access and provide feedback.
+> - Currently, this feature isn't available for US Government Clouds.
 
 ## Prerequisites
 
@@ -73,7 +76,7 @@ Note: Credentials (preview) are only supported in the desktop flow connections f
 - Ensure Event Grid is registered as a Resource provider in Azure. [Learn more about resource providers](/azure/azure-resource-manager/management/resource-providers-and-types).
 - Ensure users who use Event Grid trigger in Power Automate have Event Grid Contributor permissions. [Learn more](/azure/event-grid/security-authorization)
 
-> [!Note]
+> [!NOTE]
 > This section requires specific permissions such as system admin of the organization otherwise only your own desktop flow connections will be updated. 
 
 ### Create a cloud flow using EventGrid trigger
