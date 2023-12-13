@@ -491,7 +491,7 @@
     - name: Power Fx and desktop flows overview
       href: ./desktop-flows/power-fx.md
     - name: Power Fx documentation
-      href: https://learn.microsoft.com/power-platform/power-fx/overview
+      href: /power-platform/power-fx/overview
   - name: Custom actions
     items:
     - name: Custom actions
