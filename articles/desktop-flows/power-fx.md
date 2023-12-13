@@ -65,6 +65,7 @@ If the input provided does not start with the equals sign, the following rules a
 - Abs
 - Acos
 - Acot
+- AddColumns
 - And
 - Asin
 - Atan
@@ -94,8 +95,10 @@ If the input provided does not start with the equals sign, the following rules a
 - Decimal
 - Distinct 
 - DropColumns
+- EDate
 - EncodeUrl
 - EndsWith 
+- EOMonth
 - Error 
 - Exp 
 - Filter 
