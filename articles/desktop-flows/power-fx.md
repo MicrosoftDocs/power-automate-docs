@@ -57,17 +57,149 @@ If the input provided does not start with the equals sign, the following rules a
 - Numeric values without spaces are interpreted as numeric values 
 - **True/ False** as input, regardless of case and without spaces are interpreted as boolean values 
 - All other inputs are considered of text type values 
+- **If** action now accepts a single conditional expression instead of multiple operands.
 
 
 ## Available Power Fx functions 
 
-("Abs","Acos","Acot","And","Asin","Atan","Atan2","Average","Blank","Boolean","Concat","Coalesce","Char","Concatenate","Cos","Cot","Count,"CountA","CountIf","CountRows","Date","DateAdd","DateDiff","DateTime","DateValue","DateTimeValue","Day","Degrees","Dec2Hex","Decimal","Distinct","DropColumns","EncodeUrl","EndsWith","Error","Exp","Filter","Find","First","FirstN","Float","ForAll","GUID","Hex2Dec","Hour","If","IfError","Int","Index","IsBlank","IsBlankOrError","IsEmpty","IsError","IsNumeric","IsToday","Language","Last","LastN","Left","Len","Ln","Log","LookUp","Lower","Max","Mid","Min","Minute","Mod","Month","Not","Now","Or","Proper","Pi","PlainText","Power","Radians","Rand","RandBetween","Replace","Right","Round","RoundUp","RoundDown","Second","Sequence","Shuffle","Scountin","Sort","Split","Sqrt","StartsWith","StdevP","Substitute","Sum","Switch","Table","Tan","Text","Time","TimeValue","TimeZoneOffset","Today","Trim","TrimEnds","Trunc","Upper","Value","VarP","Weekday","With","Year","ReadCell") 
+- Abs
+- Acos
+- Acot
+- And
+- Asin
+- Atan
+- Atan2
+- Average
+- Blank
+- Boolean
+- Concat
+- Coalesce
+- Char
+- Concatenate
+- Cos
+- Cot
+- Count
+- CountA
+- CountIf
+- CountRows
+- Date
+- DateAdd
+- DateDiff
+- DateTime
+- DateValue
+- DateTimeValue
+- Day
+- Degrees
+- Dec2Hex
+- Decimal
+- Distinct 
+- DropColumns
+- EncodeUrl
+- EndsWith 
+- Error 
+- Exp 
+- Filter 
+- Find 
+- First
+- FirstN 
+- Float 
+- ForAll 
+- GUID 
+- Hex2Dec 
+- Hour 
+- If 
+- IfError 
+- Int 
+- Index 
+- IsBlank 
+- IsBlankOrError 
+- IsEmpty 
+- IsError 
+- IsNumeric
+- IsToday 
+- Language 
+- Last 
+- LastN 
+- Left 
+- Len 
+- Ln 
+- Log
+- LookUp
+- Lower
+- Max
+- Mid
+- Min
+- Minute
+- ModMonth 
+- Not 
+- Now 
+- Or 
+- Proper 
+- Pi 
+- PlainText 
+- Power 
+- Radians 
+- Rand 
+- RandBetween 
+- Replace 
+- Right 
+- Round 
+- RoundUp 
+- RoundDown 
+- Second 
+- Sequence 
+- Shuffle 
+- Scountin 
+- Sort 
+- Split 
+- Sqrt 
+- StartsWith 
+- StdevP 
+- Substitute 
+- Sum 
+- Switch 
+- Table 
+- Tan 
+- Text 
+- Time 
+- TimeValue 
+- TimeZoneOffset 
+- Today 
+- Trim 
+- TrimEnds 
+- Trunc 
+- Upper 
+- Value 
+- VarP 
+- Weekday 
+- With 
+- Year 
+- ReadCell 
 
 
 ## Known issues & limitations 
 
 - Using variables in UI element/ web selectors is not currently supported. 
-- The following actions from the standard library of automation actions are not currently supported: Create list, Data table
+- The following actions from the standard library of automation actions are not currently supported: 
+  - Create list
+  - Shuffle list
+  - Remove item from list
+  - Sort list
+  - Merge lists
+  - Reverse list
+  - Remove duplicate items from list
+  - Find common list items
+  - Retrieve DataTable columns into list
+  - Add item to list
+  - Create new list
+  - Create new data table
+  - Insert tow into data table
+  - Update data table item
+  - Delete row from data table
+  - Switch
+  - Case
+  - Default case
+
 - **General value** type variables, are not permitted in lists, tables, or as a property for Record values.
 - Whenever a **General value** type variable is utilized, a warning message stating "Deferred type provided" is presented. These warnings arise due to Power Fx's strict requirement for strong-typed schemas (strictly defined types). 
 - Certain automation actions from the standard library of actions, such as **Read from Excel**, **Read from CSV**, **Extract data from a web**, **Extract data from window**, **Execute SQL statement** and **Convert JSON to a custom object** produce **General type** variables that cannot be evaluated yet during the authoring. For the time being, ignore warnings resulting from such cases. 
