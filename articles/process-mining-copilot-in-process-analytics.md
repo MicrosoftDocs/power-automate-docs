@@ -1,5 +1,5 @@
 ﻿---
-title: Copilot in Process Mining process analytics (preview)
+title: Copilot in Process Mining process analytics
 description: Learn how to surface insights on your process and get recommended solutions with Copilot.
 ms.date: 11/28/2023
 ms.topic: conceptual
@@ -12,9 +12,7 @@ ms.author: janpidych
 ms.reviewer: angieandrews
 ---
 
-# Copilot in Process Mining process analytics (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Copilot in Process Mining process analytics
 
 Copilot in Process Mining process analytics provides process insights through quick and easy natural language expression. Copilot can surface insights on your process and recommend solutions in power automate process mining.
 
@@ -25,7 +23,9 @@ Copilot can perform the following actions:
 - Answer your questions about your process data.
 - Answer your general questions about process mining.
 
-[!INCLUDE[cc_preview_features_definition_copilot_process_mining](./includes/cc-preview-features-definition-copilot-process-mining.md)]
+> [!NOTE]
+>- This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
+>- More information: [FAQ for Copilot data security and privacy in Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 ## Prerequisite
 
@@ -50,7 +50,13 @@ Make sure you've done the following:
 
 Follow these steps to analyze the process with Copilot. You can analyze your process in the [Power Automate Process Mining web page](process-mining-overview.md) or in the [Process Mining desktop app](minit/minit-desktop-application-overview.md).
 
-### Analyze your process in the Power Automate Process Mining web page
+### Analyze your process in the Power Automate Process Mining web page (preview)
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality.
+> - These features are available before an official release so that customers can get early access and provide feedback.
+>- For more information, go to our [preview terms](https://powerplatform.microsoft.com/legaldocs/supp-powerplatform-preview/).
 
 1. In Power Automate in the left navigation pane, select **Process mining**.
 2. In the **Environments** field in th titlebar, select your process mining environment with an imported process.
@@ -64,6 +70,9 @@ Follow these steps to analyze the process with Copilot. You can analyze your pro
     - After steps 1 and 2, you see the Process Mining environment home page. Processes display as tiles. Select a process tile, or select the **All processes** link to list all processes. To open a process, select its name.
 
 ### Analyze your process in the Process Mining desktop app
+
+> [!IMPORTANT]
+> This capability is being rolled out as general availability (GA) and might still be in preview in your region.
 
 1. Open the Process Mining desktop app:
    1. On the taskbar, select the  Windows **Start** icon.
