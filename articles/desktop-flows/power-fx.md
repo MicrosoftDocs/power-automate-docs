@@ -1,12 +1,12 @@
 ---
 title: Power Fx and desktop flows overview (preview)
 description: Learn about using Power Fx for creating expressions in desktop flows
-author: dipapa
+author: jpapadimitriou
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 11/24/2023
-ms.author: jpapadimitriou
+ms.author: dipapa
 ms.reviewer: 
 contributors: 
 search.audienceType: 
