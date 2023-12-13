@@ -152,6 +152,9 @@ To create a new empty **Custom object**, use the **Set variable** action and pop
 
 ![Screenshot of Set variable action that creates a new custom object.](media\variable-data-types\create-custom-object-variable.png)
 
+> [!IMPORTANT]
+> Reserved keywords cannot be used as custom object properties. For the full list of reserved keywords look [here](./reserved-keywords.md).
+
 To update the value of an existing property or add a new one, deploy a **Set variable** action, populate the property's name in the **Set** field, and enter its value in the **To** field.
 
 ![Screenshot of a Set variable action that adds a new property to a custom object.](media\variable-data-types\add-property-custom-object.png)

@@ -624,6 +624,8 @@
       href: ./desktop-flows/alm/alm-diff.md
     - name: Create a connection with a service principal
       href: ./desktop-flows/alm/alm-connection.md
+  - name: Reserved keywords
+    href: ./desktop-flows/reserved-keywords.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:

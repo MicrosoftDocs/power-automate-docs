@@ -9,6 +9,7 @@ ms.date: 07/25/2023
 ms.author: kenseongtan
 ms.reviewer: dipapa
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -25,6 +26,9 @@ search.audienceType:
 To manually create a variable in a desktop flow, deploy the **Set variable** action. This action requires you to provide a name and a value for the new variable.
 
 :::image type="content" source="media/variables/set-var-action-properties.png" alt-text="Screenshot of the Set variable action.":::
+
+> [!IMPORTANT]
+> Reserved keywords cannot be used as variable names. For the full list of reserved keywords look [here](../reserved-keywords.md).
 
 To increase or decrease the value of a numeric variable, use the **Increase variable** and **Decrease variable** actions, respectively.
 
