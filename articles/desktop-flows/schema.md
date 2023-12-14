@@ -85,3 +85,22 @@ With v2 schema, we change the data model stored in Dataverse. In addition to the
 
 The number of desktop flow binaries might vary depending on the size of the desktop flow.
 
+## Roles and permissions
+With v2 schema, we use the desktop flow binary entity. For desktop flow to work as expected, you need additional permission. If you are using default roles, `Environment Maker` and `Basic User` there are no change needed.
+
+If you use custom roles to manage the access to your Desktop Flow, you will need to add the following list of privileges:
+- prvCreatedesktopflowbinary
+- prvReaddesktopflowbinary
+- prvWritedesktopflowbinary
+- prvDeletedesktopflowbinary
+- prvSharedesktopflowbinary
+- prvAssigndesktopflowbinary
+- prvAppenddesktopflowbinary
+- prvAppendTodesktopflowbinary
+
+With the level Basic (User).
+
+:::image type="content" source="media/schema/desktopflowbinary-permissions.png" alt-text="Desktop flow in v2 schema with desktop flow binaries.":::
+
+
+
