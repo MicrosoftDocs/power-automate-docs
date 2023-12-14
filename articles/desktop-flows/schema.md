@@ -100,4 +100,4 @@ If you use custom roles to manage the access to your Desktop Flow, you will need
 
 With the level Basic (User).
 
-:::image type="content" source="media/schema/desktopflowbinary-permissions.png" alt-text="Desktop flow in v2 schema with desktop flow binaries.":::
+:::image type="content" source="media/schema/desktopflowbinary-permissions.png" alt-text="List of permissions required for desktop flow binaries":::
