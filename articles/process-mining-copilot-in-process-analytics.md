@@ -27,7 +27,6 @@ Copilot can perform the following actions:
 
 [!INCLUDE[cc_preview_features_definition_copilot_process_mining](./includes/cc-preview-features-definition-copilot-process-mining.md)]
 
-
 ## Prerequisite
 
 You need a Power Platform environment for Copilot in Process Mining.
