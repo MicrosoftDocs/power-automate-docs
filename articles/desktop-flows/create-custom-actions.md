@@ -20,7 +20,7 @@ search.audienceType:
 ## Creating custom actions
 
 > [!IMPORTANT]
-> Make sure to not use any of the reserved keywords listed [here](./reserved-keywords.md) as action names and/or action properties. Use of reserved keywords as action names and/or action properties will result in erroneous behavior.
+> Reserved keywords listed [here](./reserved-keywords.md) cannot be used as action names and/or action properties. Use of reserved keywords as action names and/or action properties will result in erroneous behavior.
 
 Begin by creating a new Class Library (.NET Framework) project. Select .NET framework version 4.7.2.
 
