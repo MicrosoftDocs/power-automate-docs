@@ -1,6 +1,6 @@
 ---
 title: Reserved keywords
-description: Special keywords that cannot be used as variable names in a flow
+description: Special keywords that can't be used as variable names in a flow
 author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -14,18 +14,18 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Reserved keywords in desktop flows
 
-Reserved keywords by Power Automate for desktop's engine cannot be used as 
-- variable names, 
-- custom object properties,
-- action names and property names in custom actions.
+Reserved keywords for the Power Automate for desktop's engine can't be used for the following items:
+
+- Variable names.
+- Custom object properties.
+- Action names and property names in custom actions.
 
 ## List of reserved keywords
 
 > [!IMPORTANT]
-> Keywords are case insensitive, e.g. **ACTION** is the same as **action**.
+> Keywords are case insensitive. For example, **ACTION** is the same as **action**.
 
 - ACTION
 - AND

@@ -2,10 +2,9 @@
 title: Variables actions reference
 description: See all the available variables actions.
 author: kenseongtan
-
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/25/2023
+ms.date: 12/15/2023
 ms.author: kenseongtan
 ms.reviewer: dipapa
 contributors:
@@ -28,7 +27,7 @@ To manually create a variable in a desktop flow, deploy the **Set variable** act
 :::image type="content" source="media/variables/set-var-action-properties.png" alt-text="Screenshot of the Set variable action.":::
 
 > [!IMPORTANT]
-> Reserved keywords cannot be used as variable names. For the full list of reserved keywords look [here](../reserved-keywords.md).
+> Reserved keywords can't be used as variable names. For the full list of reserved keywords go to [Reserved keywords in desktop flows](../reserved-keywords.md).
 
 To increase or decrease the value of a numeric variable, use the **Increase variable** and **Decrease variable** actions, respectively.
 
@@ -36,7 +35,7 @@ To increase or decrease the value of a numeric variable, use the **Increase vari
 
 Most actions output their result into a variable. For example, the **Create new list** action produces an empty list.
 
-Similarly, the **Generate random number** action produces a random numeric value. If you enable **Generate multiple numbers** in this action, you'll create a list variable containing multiple random numeric values.
+Similarly, the **Generate random number** action produces a random numeric value. If you enable **Generate multiple numbers** in this action, you create a list variable containing multiple random numeric values.
 
 :::image type="content" source="media/variables/generate-random-num-action-properties.png" alt-text="Screenshot of the Generate random number action.":::
 
@@ -94,7 +93,7 @@ This action doesn't produce any variables.
 |-----|-----|
 |Item index is out of range|Indicates that the provided item index is out of range|
 |Invalid input arguments|Indicates that there's an invalid input parameter|
-|Incompatible type error|Indicates that an input parameter of an incompatible type has been provided|
+|Incompatible type error|Indicates that an input parameter of an incompatible type is provided|
 
 ## <a name="findorreplaceindatatable"></a> Find or replace in data table
 
@@ -128,7 +127,7 @@ Finds and/or replaces data table values.
 |Provided regular expression is invalid|Indicates that the provided regular expression is invalid|
 |Column name doesn't exist|Indicates that the provided column name doesn't exist|
 |Column index is out of range|Indicates that the provided column index is out of range|
-|Incompatible type error|Indicates that an input parameter of an incompatible type has been provided|
+|Incompatible type error|Indicates that an input parameter of an incompatible type is provided|
 
 ## <a name="modifydatatableitem"></a> Update data table item
 
@@ -278,7 +277,7 @@ Sort the items of a list. Use items of the same type.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |List to sort|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The variable that holds the list to sort|
-|Sort by list item's properties|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|If the list items are objects (such are files, folders, etc.), enable this option to sort the item by a specific property. Leave this option disabled to sort the elements by their default property (e.g., file objects will be sorted by their full path)|
+|Sort by list item's properties|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|If the list items are objects (such are files, folders, etc.), enable this option to sort the item by a specific property. Leave this option disabled to sort the elements by their default property (for example, file objects are sorted by their full path)|
 |First property to sort by|Yes|[Text value](../variable-data-types.md#text-value)||The name of an item's property to sort the list by. Refer to the help file for the property names of each object|
 |Sort|N/A|Ascending, Descending|Ascending|Specifies whether to sort by the first property ascending or descending|
 |Second property to sort by|Yes|[Text value](../variable-data-types.md#text-value)||The name of a second property to sort the list by|
@@ -355,7 +354,7 @@ This action doesn't include any exceptions.
 
 ## <a name="removeduplicateitemsfromlist"></a> Remove duplicate items from list
 
-Remove the multiple occurrences of items in a list, so that in the resulting list each item will be unique.
+Remove the multiple occurrences of items in a list, so that in the resulting list each item is unique.
 
 ### Input parameters
 
