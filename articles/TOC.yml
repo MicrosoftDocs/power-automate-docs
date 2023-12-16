@@ -488,10 +488,10 @@
       href: ./desktop-flows/repair-selector.md  
   - name: Power Fx in desktop flows (preview)
     items:
-    - name: Power Fx and desktop flows overview
+    - name: Power Fx in desktop flows
       href: ./desktop-flows/power-fx.md
-    - name: Power Fx documentation
-      href: /power-platform/power-fx/overview
+    - name: Formula reference - desktop flows
+      href: /power-platform/power-fx/formula-reference-desktop-flows
   - name: Custom actions
     items:
     - name: Custom actions
