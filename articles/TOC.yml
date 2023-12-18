@@ -287,6 +287,8 @@
       href: ./dataverse/data-retention-flow.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md
+    - name: Manage cloud flow run metadata in Dataverse (preview)
+      href: ./dataverse/cloud-flow-run-metadata.md
   - name: Use solutions for ALM
     items:
     - name: Overview
@@ -624,6 +626,8 @@
       href: ./desktop-flows/alm/alm-diff.md
     - name: Create a connection with a service principal
       href: ./desktop-flows/alm/alm-connection.md
+  - name: Reserved keywords
+    href: ./desktop-flows/reserved-keywords.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
