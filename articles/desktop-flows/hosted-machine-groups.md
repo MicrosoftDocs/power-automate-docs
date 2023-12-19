@@ -94,6 +94,8 @@ To create a hosted machine group:
 
     - Determine if you want to reuse a Windows session in unattended mode.
 
+    - Define the committed number of bots you want to assign to this group.
+
     - Define the maximum number of bots you want to assign to this group.
 
     > [!NOTE]

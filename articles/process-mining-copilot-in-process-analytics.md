@@ -1,14 +1,14 @@
 ﻿---
 title: Copilot in Process Mining process analytics (preview)
 description: Learn how to surface insights on your process and get recommended solutions with Copilot.
-ms.date: 08/25/2023
+ms.date: 12/18/2023
 ms.topic: conceptual
 author: janPidych
 contributors:
   - janPidych
   - v-aangie
 ms.custom: bap-template
-ms.author: janPidych
+ms.author: janpidych
 ms.reviewer: angieandrews
 ---
 
@@ -27,12 +27,13 @@ Copilot can perform the following actions:
 
 [!INCLUDE[cc_preview_features_definition_copilot_process_mining](./includes/cc-preview-features-definition-copilot-process-mining.md)]
 
-## Prerequisites
+## Prerequisite
 
-You need a Power Platform environment in the United States or Preview (United States) region for Copilot in Process Mining.
+You need a Power Platform environment for Copilot in Process Mining.
 
 > [!NOTE]
-> If your environment is in the United States or Preview (United States) region and you still don’t see the Copilot experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center.
+> - If you still don’t see the Copilot experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center.
+> - In some geographic regions outside United States, Australia, and United Kingdom, an admin needs to turn on the cross geo calls to enable Copilot. More informatfion: [Copilot availability by region](get-started-with-copilot.md#availability-by-region).
 
 ## Copilot in Process Mining analysis
 
@@ -51,6 +52,8 @@ Follow these steps to analyze the process with Copilot. You can analyze your pro
 
 ### Analyze your process in the Power Automate Process Mining web page
 
+
+
 1. In Power Automate in the left navigation pane, select **Process mining**.
 2. In the **Environments** field in th titlebar, select your process mining environment with an imported process.
 3. Open the imported process.
@@ -59,10 +62,13 @@ Follow these steps to analyze the process with Copilot. You can analyze your pro
 
     There are two ways to open the process:
 
-    - If you wait until the import operation finishes, the process open automatically after the import, OR
+    - If you wait until the import operation finishes, the process opens automatically after the import, OR
     - After steps 1 and 2, you see the Process Mining environment home page. Processes display as tiles. Select a process tile, or select the **All processes** link to list all processes. To open a process, select its name.
 
 ### Analyze your process in the Process Mining desktop app
+
+> [!IMPORTANT]
+> This feature is generally available only in the United States region, and is in preview for all other regions.
 
 1. Open the Process Mining desktop app:
    1. On the taskbar, select the  Windows **Start** icon.
@@ -120,15 +126,11 @@ Use this section to find answers to frequently asked questions.
 1. Go to Create a Power Platform environment.
 1. [Create a Power Platform environment](/power-platform/admin/create-environment#create-an-environment-without-a-database).
 
-    - When creating the environment, ensure that you choose the region as **Preview (United States)**.
-    - If you need help with creating a preview environment, ask your Power Platform admin.
-
-To learn more, go to [Regions overview](/power-platform/admin/regions-overview).
+    If you need help with creating a preview environment, ask your Power Platform admin.
 
 ### Why don't I see Copilot?
 
-- Check if the environment you're using is in the United States or Preview (United States) region.
-- Ask your admins if they turned off the Copilot feature in the Power Platform admin center for your environment.
+Ask your admin if they turned off the Copilot feature in the Power Platform admin center for your environment.
 
 ### How do I disable Copilot?
 

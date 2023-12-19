@@ -6,6 +6,10 @@ ms.custom: bap-template
   - transparency-note
 ms.topic: conceptual
 author: kisubedi
+contributors:
+  - kisubedi
+  - janPidych
+  - v-aangie
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ---
@@ -34,13 +38,15 @@ You need a Power Platform environment in the following regions to use Copilot in
 | Region | Copilot availability |
 | ------------- | ------------- |
 | Preview region | Copilot is enabled by default at the beginning of October 2023, unless it's [turned off by an admin](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
-| Regions with copilot GPUs (US, Australia, UK)  | Copilot is enabled by default, unless it's [turned off by an admin](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
+| Regions with copilot GPUs (United States, Australia, United Kingdom)  | Copilot is enabled by default, unless it's [turned off by an admin](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
 | Europe region excluding France | Starting November, Copilot is enabled in the Europe region (using Sweden and Switzerland GPUs) by default, unless admins manually opt out of the cross-geo data sharing settings from the Power Platform admin center, or turned off by admin. More information: [Enable copilots and generative AI features outside United States and Switzerland](/power-platform/admin/geographical-availability-copilot) and [How do I disable Copilot in the cloud flows designer](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
 | All other regions, including France and Canada, with the exception of Sovereign clouds | Copilot can be enabled by admins from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by opting to allow cross-geo data sharing setting between the middle of October to the middle of November 2023, based on a rollout schedule for a different area. More information: [Enable copilots and generative AI features outside United States and Switzerland](/power-platform/admin/geographical-availability-copilot) | 
 | Sovereign clouds and personal Microsoft account (MSA) users | There's no access for MSA users or Sovereign cloud users to copilot features. You need to use an organization ID and in a non-Sovereign cloud region. |
 
 > [!NOTE]
-> If your environment is in the region previously listed and you still don’t see the Copilot in cloud flows experience, contact your admin. Ask if they've requested Microsoft Support to disable the cloud flows designer with Copilot.
+> If your environment is in the region previously listed and you still don’t see the Copilot in cloud flows experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center. In some geographic regions outside the United States, Australia, United Kingdom, an admin needs to turn the cross geo calls on to enable Copilot.
+>
+> More information: [Availability by region](#availability-by-region)
 
 ## Create a flow using the cloud flows designer with Copilot
 
@@ -96,6 +102,9 @@ This section describes some example scenarios of how you can interact with Copil
 | When an email arrives from contoso@gmail.com, post in Teams.  | </li><li>Ask Copilot to edit the flow: **I want to send the email subject to Teams channel.**<br/></li><li>Ask Copilot what your flow does: **What does my flow do?**  |
 | When an item is created in SharePoint, send me a mobile notification.  |  </li><li>Edit the flow with this prompt: **I want to send the item title to notification.**<br/></li><li>Edit the flow with this prompt: **I don’t want to receive mobile notification. Send me an email instead.**  |
 
+> [!TIP]
+> For more examples you can try out, go to the [Power Platform Prompt Library](https://pnp.github.io/powerplatform-prompts/?filters=power%20automate%20copilot).
+
 ## Edit a flow using the designer with copilot capabilities
 
 In addition to using Copilot to create a starting flow, you can also change or complete your existing flows.
@@ -113,7 +122,7 @@ In addition to using Copilot to create a starting flow, you can also change or c
    1. Delete action *X*
    1. I want to send an email at the end of the flow with subject equal to the SharePoint file name.
    1. Instead of email, I want to post message on Teams channel.
-   1. Check if each of the Sharepoint item being returned have title equals 'USB' if so, send an email.
+   1. Check if each of the Sharepoint items being returned has a title that equals 'USB', and if so, send an email.
 
 ## Frequently asked questions
 

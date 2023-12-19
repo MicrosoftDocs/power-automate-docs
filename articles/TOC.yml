@@ -287,6 +287,8 @@
       href: ./dataverse/data-retention-flow.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md
+    - name: Manage cloud flow run metadata in Dataverse (preview)
+      href: ./dataverse/cloud-flow-run-metadata.md
   - name: Use solutions for ALM
     items:
     - name: Overview
@@ -397,18 +399,16 @@
       href: ./desktop-flows/desktop-flow-connections.md
     - name: Machine group certificate renewal
       href: ./desktop-flows/machine-group-certificates.md
-    - name: Hosted machines
-      href: ./desktop-flows/hosted-machines.md
-    - name: Hosted machine groups
-      href: ./desktop-flows/hosted-machine-groups.md
-    - name: Scale with AVD starter kit
+    - name: RPA with zero infrastructure (Hosted RPA)
       items:
       - name: Overview
-        href: ./desktop-flows/avd-overview.md
-      - name: Set up the AVD integration starter kit
-        href: ./desktop-flows/avd-setup.md
-      - name: Use the starter kit
-        href: ./desktop-flows/avd-use-starter-kit.md
+        href: ./desktop-flows/hosted-rpa-overview.md
+      - name: Hosted machines
+        href: ./desktop-flows/hosted-machines.md
+      - name: Hosted machine groups
+        href: ./desktop-flows/hosted-machine-groups.md
+    - name: Scale with AVD starter kit (deprecated)
+      href: ./desktop-flows/avd-overview.md
   - name: Use credentials in desktop flow connections (preview)
     href: ./desktop-flows/manage-credentials.md
   - name: Manage desktop flows
@@ -488,6 +488,12 @@
       href: ./desktop-flows/test-selectors.md  
     - name: Repair a selector
       href: ./desktop-flows/repair-selector.md  
+  - name: Power Fx in desktop flows (preview)
+    items:
+    - name: Power Fx in desktop flows
+      href: ./desktop-flows/power-fx.md
+    - name: Formula reference - desktop flows
+      href: /power-platform/power-fx/formula-reference-desktop-flows
   - name: Custom actions
     items:
     - name: Custom actions
@@ -500,6 +506,8 @@
       href: ./desktop-flows/use-custom-actions.md
     - name: Actions SDK for .NET reference
       href: /dotnet/api/?view=pad-actions-sdk-latest&preserve-view=true
+    - name: Build custom actions in Power Automate for desktop
+      href: ./guidance/how-to/build-custom-action/buildcustomaction.md
   - name: Troubleshooter
     href: ./desktop-flows/troubleshooter.md
   - name: How to
@@ -624,6 +632,8 @@
       href: ./desktop-flows/alm/alm-diff.md
     - name: Create a connection with a service principal
       href: ./desktop-flows/alm/alm-connection.md
+  - name: Reserved keywords
+    href: ./desktop-flows/reserved-keywords.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
@@ -774,9 +784,9 @@
         href: process-mining-templates.md
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
-    - name: Copilot in Process Mining ingestion (preview)
+    - name: Copilot in Process Mining ingestion (preview) 
       href: process-mining-copilot-in-ingestion.md
-    - name: Copilot in Process Mining process analytics (preview)
+    - name: Copilot in Process Mining process analytics (preview) 
       href: process-mining-copilot-in-process-analytics.md   
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
