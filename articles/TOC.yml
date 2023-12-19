@@ -780,7 +780,7 @@
       href: process-mining-copilot-in-process-analytics.md   
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
-    - name: Use your own Azure Data Lake Storage Gen2 (preview)
+    - name: Use your own Azure Data Lake Storage Gen2
       href: process-mining-byo-azure-data-lake.md
     - name: Transform and map data
       href: process-mining-transform.md
