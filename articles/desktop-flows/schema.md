@@ -1,12 +1,12 @@
 ---
 title: Power Automate v2 schema
 description: Learn about the Power Automate v2 schema.
-author: georgiostrantzas
+author: nvigne
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/11/2023
-ms.author: dbekirop
-ms.reviewer: gtrantzas
+ms.date: 12/19/2023
+ms.author: nvigne
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker
@@ -76,6 +76,7 @@ Then, you can import the updated v2 schema version of the same process to the ma
 |**Can edit/save v2 desktop flows into v2 schema in environments with the v2 schema enabled?** |No (user notified of error)|Yes|
 
 ## Dataverse schema
+
 With v2 schema, we change the data model stored in Dataverse. In addition to the workflow entity, we use the desktop flow binary entity to store data related to the desktop flow including images and metadata.
 
 :::image type="content" source="media/schema/desktopflowbinaries-v2.png" alt-text="Desktop flow in v2 schema with desktop flow binaries.":::
@@ -85,19 +86,21 @@ With v2 schema, we change the data model stored in Dataverse. In addition to the
 
 The number of desktop flow binaries might vary depending on the size of the desktop flow.
 
-## Roles and permissions
-With v2 schema, we use the desktop flow binary entity. For desktop flow to work as expected, you need additional permissions. If you are using default roles, `Environment Maker` and `Basic User` there is no change needed.
+## Roles and privileges
 
-If you use custom roles to manage the access to your Desktop Flow, you will need to add the following list of privileges:
-- prvCreatedesktopflowbinary
-- prvReaddesktopflowbinary
-- prvWritedesktopflowbinary
-- prvDeletedesktopflowbinary
-- prvSharedesktopflowbinary
-- prvAssigndesktopflowbinary
-- prvAppenddesktopflowbinary
-- prvAppendTodesktopflowbinary
+With the v2 schema, the desktop flow binary table is used. For desktop flows to work as expected, you need additional privileges. If you're using the default security roles `Environment Maker` and `Basic User` there's no change needed.
 
-With the level Basic (User).
+If you use custom security roles to manage the access to your desktop flow, Power Platform admins need to add the following list of privileges to the role:
+
+- `prvCreatedesktopflowbinary`
+- `prvReaddesktopflowbinary`
+- `prvWritedesktopflowbinary`
+- `prvDeletedesktopflowbinary`
+- `prvSharedesktopflowbinary`
+- `prvAssigndesktopflowbinary`
+- `prvAppenddesktopflowbinary`
+- `prvAppendTodesktopflowbinary`
+
+With the access level of basic (user). More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
 
 :::image type="content" source="media/schema/desktopflowbinary-permissions.png" alt-text="List of permissions required for desktop flow binaries":::
