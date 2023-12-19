@@ -175,3 +175,23 @@ Assign a premium license to your workspace. To learn how to enable premium capac
 ### "The selected Power BI workspace needs premium capacity to work with this report. After the problem is fixed, try to reanalyze the report."
 
 This is the same as the previous issue, but the error occurred during process analysis. After ensuring that your workspace has premium capacity per [Premium capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings), reanalyze the report.
+
+## Issues with your own Azure Data Lake Storage Gen2 and incremental data refresh
+
+### If you encountered an error message “Couldn’t connect to container” 
+
+Please revisit prerequisites to make sure settings are correct. 
+:::image type="content" source="media/process-mining-troubleshoot/BYOLErrorConnect.png" alt-text="Screenshot of Could not connect error message.":::
+
+### How can I check if CORS issue exists or not.
+
+You can check the network logs in your browser via Developer tools while connecting data lake storage. Some HTTP requests failed with 403 and it could state “CORS not enabled, or no matching rule found for this request.”
+
+### Although you set CORS setting correctly, you still get the error and unable to access.
+
+The browser has cached CORS settings. Please retry after flushing out browser cache. As the client browser does cache the CORS setting, you need to remove the cache if you have trouble even after you have set the CORS properly.
+Plus, you can adjust the Max age of CORS settings.
+
+### Your header row is larger than 1MB
+
+Please check the event log file and rename the column headers, so that their aggregated length including separator (comma) is less than 1MB. 
