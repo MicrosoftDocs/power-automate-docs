@@ -488,6 +488,12 @@
       href: ./desktop-flows/test-selectors.md  
     - name: Repair a selector
       href: ./desktop-flows/repair-selector.md  
+  - name: Power Fx in desktop flows (preview)
+    items:
+    - name: Power Fx in desktop flows
+      href: ./desktop-flows/power-fx.md
+    - name: Formula reference - desktop flows
+      href: /power-platform/power-fx/formula-reference-desktop-flows
   - name: Custom actions
     items:
     - name: Custom actions
@@ -626,6 +632,8 @@
       href: ./desktop-flows/alm/alm-diff.md
     - name: Create a connection with a service principal
       href: ./desktop-flows/alm/alm-connection.md
+  - name: Reserved keywords
+    href: ./desktop-flows/reserved-keywords.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
@@ -776,9 +784,9 @@
         href: process-mining-templates.md
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
-    - name: Copilot in Process Mining ingestion (preview)
+    - name: Copilot in Process Mining ingestion (preview) 
       href: process-mining-copilot-in-ingestion.md
-    - name: Copilot in Process Mining process analytics (preview)
+    - name: Copilot in Process Mining process analytics (preview) 
       href: process-mining-copilot-in-process-analytics.md   
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
