@@ -181,6 +181,7 @@ This is the same as the previous issue, but the error occurred during process an
 ### If you encountered an error message “Couldn’t connect to container” 
 
 Please revisit prerequisites to make sure settings are correct. 
+
 :::image type="content" source="media/process-mining-troubleshoot/BYOLErrorConnect.png" alt-text="Screenshot of Could not connect error message.":::
 
 ### How can I check if CORS issue exists or not.
