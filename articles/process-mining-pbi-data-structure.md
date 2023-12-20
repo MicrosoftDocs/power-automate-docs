@@ -1,9 +1,29 @@
+---
+title: Use Optimized data structure in Power BI report
+description: Learn how to use the optimized data structure and leverage the attributes and custom metrics created in desktop app in Power BI report.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie 
+ms.subservice: process-advisor
+ms.topic: conceptual
+ms.date: 12/20/2023
+ms.author: michalrosik
+ms.reviewer: angieandrews
+search.audienceType: 
+  - flowmaker
+  - enduser
+---
+
 # Use Optimized data structure in Power BI report
 
 ## Why New Optimized Data Structure
 
 The new optimized data structure leads to faster and more memory efficient analysis of processes. By saving on memory, customers can analyze larger processes as well as save on costs by using smaller Power BI capacities to perform analysis. 
 As well as this, a more intuitive Power BI Model Data Structure has been utilized allowing customers to dig deeper into their insights with less time and effort. This new data model is described in more detail in the [Power Bi Data Model Structure](#power-bi-data-model-structure) section below. 
+
+   > [!IMPORTANT]
+   > New optimized data structure will replace the previous structure completely and the previous data structure will be deprecated. Visit process details page, where a warning banner will inform you of the date and necessary steps.
  
 ## Requirements 
 
@@ -37,7 +57,6 @@ By default, for all new processes that use a custom workspace, the optimized dat
 :::image type="content" source="media/process-mining-pbi-data-structure/Enable3.png" alt-text="Screenshot of the Settings panel.":::
  
 4. Save the changes by pressing the **Save** button if enabled. If the save button is not enabled that means the value of the **Use optimized data structure** field was already set to **On**, thus you can skip this step.
-
  
 ## Power Bi Data Model Structure
 By default, when a process is published to Power Bi, a default data source and a corresponding report is created. The structure of the dataset in the published data source in Power Bi looks as following:
