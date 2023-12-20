@@ -1,5 +1,5 @@
 ---
-title: Use Optimized data structure in Power BI report
+title: Use Optimized data structure in Power BI report (preview)
 description: Learn how to use the optimized data structure and leverage the attributes and custom metrics created in desktop app in Power BI report.
 author: rosikm
 contributors:
@@ -15,7 +15,9 @@ search.audienceType:
   - enduser
 ---
 
-# Use Optimized data structure in Power BI report
+# Use Optimized data structure in Power BI report (preview)
+
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
 ## Why New Optimized Data Structure
 
