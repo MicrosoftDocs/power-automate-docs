@@ -5,8 +5,8 @@ author: georgiostrantzas
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/24/2023
-ms.author: marleon
+ms.date: 12/20/2023
+ms.author: NikosMoutzourakis
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
@@ -89,6 +89,8 @@ On the other hand, the loaded webpages inside the browser (2) should be automate
 During recording, the recorder will automatically distinguish the browser application area from the webpages and generate the appropriate UI elements and actions.
 
 :::image type="content" source="media/ui-elements/browser-window.png" alt-text="Screenshot of a Microsoft Edge window with highlighted the browser application and webpage areas.":::
+
+Note that interactions with drag and drop web UI elements may not function as expected due to the inherent limitations of them. As a workaround, you can capture desktop UI elements in a web page by launching the UI element picker through an action of the UI automation group through clicking on the 'Add UI element' button of the 'UI element' parameter. The captured UI element will be of desktop type and could be used in the 'Drag and drop UI element in window' action. Keep in mind that desktop UI elements can be used only in actions of the UI automation action group of Power Automate for desktop. It is important to note that desktop UI elements in web pages are not as reliable as their web counterparts and are subject to browser application details such as the browser's version.
 
 ## UI elements properties
 
