@@ -4,7 +4,7 @@ description: See all the available UI automation actions.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/19/2023
+ms.date: 12/20/2023
 ms.author: nimoutzo
 ms.reviewer: gtrantzas
 contributors:
@@ -43,6 +43,10 @@ To develop more dynamic flows, replace the **Equals to** operators with other op
 
 :::image type="content" source="media/uiautomation/selector-operators.png" alt-text="Screenshot of the available operators in the selector builder.":::
 
+For many actions of UI automation, there are two modes for executing actions: physical and simulated. In physical mode, the tool takes control of the machine's mouse and keyboard to perform the action physically. In simulated mode, the action is performed programmatically without taking control of the mouse and keyboard and without requiring the UI element's screen to be brought to the foreground. It's important to note that the simulated option may not be applicable to every UI element. To perform an action by simulation, you can either enable the "Simulate action" parameter in some actions or disable the "Bring to front" parameter in other actions.
+
+:::image type="content" source="media/uiautomation/SimulateActions.png" alt-text="Screenshot of the parameters relaqted to simulate a UI automation action or execute it physically.":::
+
 >[!NOTE]
 > To find more information about developing UI automation flows and creating custom selectors, go to [Automate desktop flows](../desktop-automation.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
 
@@ -56,6 +60,7 @@ Gets a property of a window such as its title or its source text.
 |-----|-----|-----|-----|-----|
 |Window|No|[UI element](../ui-elements.md)||The window to get details from|
 |Window property|N/A|Get window title, Get window text, Get window location and size, Get process name|Get window title|Choose which property of the window to extract|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element should be brought to the front during execution. If this option is disabled, the action will be executed in the background. Note that not all UI elements may be compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option may not extract all elements.|
 
 ### Variables produced
 
@@ -79,6 +84,7 @@ Gets the value of a UI element's attribute in a window.
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The UI element to get details from|
 |Attribute name|Yes|[Text value](../variable-data-types.md#text-value)|Own Text|The attribute whose value will be retrieved|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element should be brought to the front during execution. If this option is disabled, the action will be executed in the background. Note that not all UI elements may be compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option may not extract all elements.|
 
 ### Variables produced
 
@@ -102,6 +108,7 @@ Retrieves the names of the selected checkboxes in a checkbox group or the state 
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The checkbox or checkbox group|
 |Operation|N/A|Get names of selected checkboxes in group, Get state of checkbox|Get names of selected checkboxes in group|Specify whether to retrieve the state of multiple selected checkboxes or just one|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element should be brought to the front during execution. If this option is disabled, the action will be executed in the background. Note that not all UI elements may be compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option may not extract all elements.|
 
 ### Variables produced
 
@@ -126,6 +133,7 @@ Retrieves the names of the selected radio button in a radio button group or the 
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The radio button or radio button group|
 |Operation|N/A|Get selected radio button name in group, Get state of radio button|Get selected radio button name in group|Specify whether to retrieve the name of the radio button that's selected inside a group of radio buttons or just the state of a single radio button|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element should be brought to the front during execution. If this option is disabled, the action will be executed in the background. Note that not all UI elements may be compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option may not extract all elements.|
 
 ### Variables produced
 
@@ -150,6 +158,7 @@ Extracts data from specific parts of a window in the form of single values, list
 |-----|-----|-----|-----|-----|
 |Window|No|[UI element](../ui-elements.md)||The window to extract data from|
 |Store extracted data in|N/A|an Excel spreadsheet, A variable|an Excel spreadsheet|Specify where to store the extracted data|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element should be brought to the front during execution. If this option is disabled, the action will be executed in the background. Note that not all UI elements may be compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option may not extract all elements.|
 
 ### Variables produced
 
