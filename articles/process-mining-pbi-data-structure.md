@@ -3,7 +3,7 @@
 ## Why New Optimized Data Structure
 
 The new optimized data structure leads to faster and more memory efficient analysis of processes. By saving on memory, customers can analyze larger processes as well as save on costs by using smaller Power BI capacities to perform analysis. 
-As well as this, a more intuitive Power BI Model Data Structure has been utilized allowing customers to dig deeper into their insights with less time and effort. This new data model is described in more detail in the Power Bi Data Model Structure section below. 
+As well as this, a more intuitive Power BI Model Data Structure has been utilized allowing customers to dig deeper into their insights with less time and effort. This new data model is described in more detail in the [Power Bi Data Model Structure](#power-bi-data-model-structure) section below. 
  
 ## Requirements 
 
@@ -18,7 +18,7 @@ To enable read-write for a *Premium capacity*
 2.	In the Admin portal, select **Capacity settings** > **Power BI Premium** > capacity name.
 3.	Expand **Workloads**. In the **XMLA Endpoint** setting, select **Read Write**. The XMLA Endpoint setting applies to *all workspaces and semantic models* assigned to the capacity.
 
-:::image type="content" source="media/process-mining-pbi-workspace/pbi-api-toggles.png" alt-text="Screenshot of the developer settings.":::
+:::image type="content" source="media/process-mining-pbi-data-structure/XMLAEndpoint.png" alt-text="Screenshot of the XMLA endpoint settings.":::
 
 To enable read-write for *Premium Per User*
 1.	Select **Settings** > **Admin portal**.
@@ -27,22 +27,22 @@ To enable read-write for *Premium Per User*
 
 ### Enable using Optimized Data Structure
 By default, for all new processes that use a custom workspace, the optimized data structure is set true. To enable it or confirm it is enabled, perform the following steps:
-1. Go to the process details page and click the Edit button (highlighted in red in the image below)
+1. Go to the process details page and click the **Edit** button (highlighted in red in the image below)
 
-:::image type="content" source="media/process-mining-pbi-workspace/pbi-api-toggles.png" alt-text="Screenshot of the developer settings."::: 
+:::image type="content" source="media/process-mining-pbi-data-structure/Enable1.png" alt-text="Screenshot of the Settings panel."::: 
 
-2. Select a custom workspace by clicking the dropdown under the Power Bi Workspace (optional) field if you have not done so already.
-3. Confirm that the Use optimized data structure field (highlighted in red in the image below) is enabled to On. If not, click the toggle to enable the Use optimized data structure field.
+2. Select a custom workspace by clicking the dropdown under the **Power Bi Workspace (optional)** field if you have not done so already.
+3. Confirm that the **Use optimized data structure** field (highlighted in red in the image below) is enabled to **On**. If not, click the toggle to enable the **Use optimized data structure** field.
 
-:::image type="content" source="media/process-mining-pbi-workspace/pbi-api-toggles.png" alt-text="Screenshot of the developer settings.":::
+:::image type="content" source="media/process-mining-pbi-data-structure/Enable3.png" alt-text="Screenshot of the Settings panel.":::
  
-4. Save the changes by pressing the Save button if enabled. If the save button is not enabled that means the value of the Use optimized data structure field was already set to On, thus you can skip this step.
+4. Save the changes by pressing the **Save** button if enabled. If the save button is not enabled that means the value of the **Use optimized data structure** field was already set to **On**, thus you can skip this step.
 
  
-## Power Bi Model Structure
+## Power Bi Data Model Structure
 By default, when a process is published to Power Bi, a default data source and a corresponding report is created. The structure of the dataset in the published data source in Power Bi looks as following:
 
-:::image type="content" source="media/process-mining-pbi-workspace/pbi-api-toggles.png" alt-text="Screenshot of the developer settings.":::
+:::image type="content" source="media/process-mining-pbi-data-structure/DataModel.png" alt-text="Diagram of Optimized data model.":::
  
 ### Relationships
 All relationships necessary for filtering and interconnectivity of visuals are pre-defined in the published data model. There is no need to manually create any additional relationships unless other data sources are connected – for this scenario, use the Power BI composite data model and build any relationships on top of that model.
@@ -113,4 +113,4 @@ In a scenario where:
 - Additional relationships are needed,
 - Custom DAX queries are needed.
 
-It is strongly recommended to use Power BI composite data model on top of the data model published by Power Automate Process Mining and create all necessary modifications there ([learn more about creating Power BI composite data models](/power-bi/transform-model/desktop-composite-models) 
+It is strongly recommended to use Power BI composite data model on top of the data model published by Power Automate Process Mining and create all necessary modifications there. ([learn more about creating Power BI composite data models](/power-bi/transform-model/desktop-composite-models))
