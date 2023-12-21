@@ -352,7 +352,6 @@ The hosted machine group will request to scale out when there aren't enough host
 > [!NOTE]
 > - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required and when resources are available.
 > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed  bots configuration when required.
-    
 
 To update the scaling configuration of your hosted machine group:
 
