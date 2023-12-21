@@ -94,14 +94,19 @@ To create a hosted machine group:
 
     - Determine if you want to reuse a Windows session in unattended mode.
 
-    - Define the committed number of bots you want to assign to this group..
-
     - Define the maximum number of bots you want to assign to this group.
-
+      
     > [!NOTE]
-    >
-    > - You can't go beyond the total number of bots assigned to your environment.
-    > - If multiple hosted machine groups are used in the same environment, bots will be automatically load balanced between the groups. To find more information about load balancing, go to [Load balance hosted machine groups](#load-balance-hosted-machine-group).
+    > - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required.
+    > - If multiple hosted machine groups are used in the same environment, bots will be automatically load balanced between the groups. 
+    > - You cannot exceed the total number of Hosted RPA capacity assigned to your environment.
+    > - To find more information about load balancing, go to [Load balance hosted machine groups](#load-balance-hosted-machine-group).
+
+    - Define the committed number of bots you want to assign to this group.
+  
+    > [!NOTE]
+    > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed  bots configuration when required.
+    > - You cannot exceed the total number of committed bots and hosted machines configured to your environment.
 
     - Select the VM image to use for your hosted machine group. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
