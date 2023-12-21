@@ -378,8 +378,7 @@ In this example, the customer has 10 Hosted RPA capacity assigned to the environ
 | New Sales Processing | 10 | 4 |
 | Refund Request Processing | 10 | 2 |
 
-
-    :::image type="content" source="media/hosted-machine-groups/hosted-machine-group-example.png" alt-text="Hosted machine group scaling example.":::
+:::image type="content" source="media/hosted-machine-groups/hosted-machine-group-example.png" alt-text="Hosted machine group scaling example.":::
 
 | Time | Event |
 | ----------| ---------------------|
