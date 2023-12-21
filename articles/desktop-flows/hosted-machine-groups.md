@@ -368,9 +368,9 @@ To update the scaling configuration of your hosted machine group:
     :::image type="content" source="media/hosted-machine-groups/edit-hosted-machine-group.png" alt-text="Screenshot of the Edit details of a hosted machine group.":::
 
 
-# Hosted machine group scaling & load balancing example
+### Hosted machine group scaling & load balancing example
 
-In this example, the customer has 10 Hosted RPA capacity assigned to the environment and have configured three hosted machine group with the following configuration:
+In this example, the customer has 10 Hosted RPA capacity assigned to the environment and have configured three hosted machine groups with the following configuration:
 
 | Hosted machine group name | Max Bots | Committed Bots | 
 | ----------| -------| -------|
