@@ -97,12 +97,12 @@ To create a hosted machine group:
     - Define the **maximum number of bots** you want to assign to this group.
       
     > [!NOTE]
-    > - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required.
+    > - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required and when resources are available.
     > - If multiple hosted machine groups are used in the same environment, bots will be automatically load balanced between the groups. 
     > - You cannot exceed the total number of Hosted RPA capacity assigned to your environment.
     > - To find more information about load balancing, go to [Load balance hosted machine groups](#load-balance-hosted-machine-group).
 
-    - Define the **committed number of bots** you want to assign to this group.
+    - Define the **committed number of bots (optional)** you want to assign to this group.
   
     > [!NOTE]
     > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed  bots configuration when required.
@@ -343,26 +343,18 @@ To monitor your hotsed bots:
 
 ## Load balance hosted machine group
 
+The key feature of hosted machine groups is the ability to automatically load balance hosted bots between different groups, hence optimizing your automation resources seamlessly between your different workloads.
+
 The number of hosted bots that can run in your environment is equal to the number of hosted RPA capacity you've assigned to your environment. This capacity is then load balanced across all the hosted machine groups you have in your environment. Each hosted machine group has a max bot and committed bot configuration that enables you to control the scaling capabilities of the hosted machine group.
 
-The hosted machine group will request to scale out when there aren't enough hosted bots to run desktop flows. It will take into consideration the max and committed bot configuration in the hosted machine group and the available capacity in the environment. The hosted machine group will scale-in when there are no desktop flows allocated to an available hosted bot. This capacity then becomes available to other hosted machine groups in the environment.
-
-One key feature of hosted machine groups is the ability to reassign them to different groups and hence be able to balance your automation resources seamlessly between your different workloads.
-
+The hosted machine group will request to scale out when there aren't enough hosted bots to run desktop flows. It will take into consideration the max and committed bot configuration in the hosted machine group and the available capacity in the environment. The hosted machine group will scale-in when the desktop flow queue is lesser than the number of available hosted bots. This capacity then becomes available to other hosted machine groups in the environment.
 
     > [!NOTE]
-    > - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required.
-    > - If multiple hosted machine groups are used in the same environment, bots will be automatically load balanced between the groups. 
-    > - You cannot exceed the total number of Hosted RPA capacity assigned to your environment.
-    > - To find more information about load balancing, go to [Load balance hosted machine groups](#load-balance-hosted-machine-group).
-
-    - Define the **committed number of bots** you want to assign to this group.
-  
-    > [!NOTE]
+    > - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required and when resources are available.
     > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed  bots configuration when required.
-    > - You cannot exceed the total number of committed bots and hosted machines configured to your environment.
+    
 
-For instance, you may have two groups of bots, one for your sales automations and one for finance, in the same environment with 10 bots assigned. You can add more to one of the groups at any time by editing the hosted machine group and using the max number of available bots.
+To update the scaling configuration of your hosted machine group:
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
