@@ -4,7 +4,7 @@ description: See how to create connections to trigger desktop flows from cloud f
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/21/2023
+ms.date: 12/21/2023
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -62,8 +62,8 @@ To use connection with sign-in, you need to meet the following pre-requisites:
 
 > [!NOTE]
 > Connect with sign-in for attended runs is available in most of the Power Platform regions.
-> For GCCH, DOD and China regions, the feature requires the December version of Power Automate desktop app.
-> GCC is not supported yet.
+> For GCCH, DOD, and China regions, the feature requires the December version of Power Automate for desktop app.
+> Currently, GCC isn't supported.
 
 
 ### Setup the connection with sign-in
