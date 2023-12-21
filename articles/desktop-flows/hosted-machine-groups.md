@@ -108,6 +108,8 @@ To create a hosted machine group:
     > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed  bots configuration when required.
     > - You cannot exceed the total number of committed bots and hosted machines configured to your environment.
 
+    :::image type="content" source="media/hosted-machine-groups/create-hmg-scaling.png" alt-text="Screenshot of the hosted machine group scaling configuration in creation wizard.":::
+
     - Select the VM image to use for your hosted machine group. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
     - Select how you would like to access your hosted machine group. You can use your [work or school account](#use-your-work-or-school-account) or use a local admin account you want to be created. This account will be used to run your automations by the bots.
