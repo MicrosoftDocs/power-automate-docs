@@ -29,7 +29,7 @@ Before using the **Run desktop flow** action in your cloud flow to trigger a des
 > [!NOTE]
 > Desktop flows connection cannot be shared with other users.
 
-There is two different methods to connect Power Automate with your machines (or groups).
+There's two different methods to connect Power Automate with your machines (or groups).
 
 ## Connect with username and password
 
@@ -51,13 +51,13 @@ With this option, you need to provide the machine (or on-premises data gateway) 
 
 With this option, you don't need to provide session credentials. This might be very helpful when your organization doesn't allow username and password for user sessions.
 
-### Pre-requisites
+### Prerequisites
 
-To use connection with sign-in, you need to meet the following pre-requisites:
+To use connection with sign-in, you need to meet the following prerequisites:
 
   - Microsoft Entra users must be in the same tenant as the selected environment in Power Automate portal.
-  - The target (machine / group) should be Microsoft Entra ID or AD joined. In case of a AD joined target, AD must be synchronized with Microsoft Entra ID (What is Microsoft Entra Connect and Connect Health. - Microsoft Entra | Microsoft Learn).
-  - The Microsoft Entra user account must be granted right to open a Windows session on the target machine(s) (interactive logon). At runtime, there should a Windows interaction session matching the connection user in order to process the run (as it is today for existing connections).
+  - The target (machine / group) should be Microsoft Entra ID or AD joined. In case of an Entra ID joined target, the machine or group must be synchronized with Microsoft Entra ID.
+  - The Microsoft Entra user account must be granted right to open a Windows session on the target machines (interactive sign in). At runtime, there should a Windows interaction session matching the connection user in order to process the run (as it's today for existing connections).
   - The tenant of the target Microsoft Entra account is configured to use modern authentication [Authentication with Microsoft Entra ID - Microsoft Azure Well-Architected Framework](/azure/well-architected/).
 
 > [!NOTE]
@@ -66,12 +66,12 @@ To use connection with sign-in, you need to meet the following pre-requisites:
 > Currently, GCC isn't supported.
 
 
-### Setup the connection with sign-in
+### Set up the connection with sign-in
 
 - Select **Connect with Sign-in** in the Connect dropdown
 - Select the target (machine or machine group)
 - Select **Sign in**
-- Pick or provide an **Microsoft Entra account** in the sign in pop up 
+- Pick or provide an **Microsoft Entra account** in the sign in pop-up 
 - The desktop flow connect is automatically created
 
 ### How it works
