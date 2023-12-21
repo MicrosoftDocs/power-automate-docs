@@ -47,7 +47,7 @@ With this option, you need to provide the machine (or on-premises data gateway) 
 
       :::image type="content" source="media/desktop-flows-setup/credentials-screen.png" alt-text="Screenshot that shows where to enter the credentials for the connection.":::
       
-## Connect with sign-in (preview) for attended runs
+## Connect with sign-in for attended runs
 
 With this option, you don't need to provide session credentials. This might be very helpful when your organization doesn't allow username and password for user sessions.
 
@@ -59,6 +59,11 @@ To use connection with sign-in, you need to meet the following pre-requisites:
   - The target (machine / group) should be Microsoft Entra ID or AD joined. In case of a AD joined target, AD must be synchronized with Microsoft Entra ID (What is Microsoft Entra Connect and Connect Health. - Microsoft Entra | Microsoft Learn).
   - The Microsoft Entra user account must be granted right to open a Windows session on the target machine(s) (interactive logon). At runtime, there should a Windows interaction session matching the connection user in order to process the run (as it is today for existing connections).
   - The tenant of the target Microsoft Entra account is configured to use modern authentication [Authentication with Microsoft Entra ID - Microsoft Azure Well-Architected Framework](/azure/well-architected/).
+
+> [!NOTE]
+> Connect with sign-in for attended runs is available in most of the Power Platform regions.
+> For GCCH, DOD and China regions, the feature requires the December version of Power Automate desktop app.
+> GCC is not supported yet.
 
 
 ### Setup the connection with sign-in
