@@ -123,10 +123,10 @@ To create a hosted machine group:
 
 ## Hosted machine groups availability
 
-Bots in a hosted machine group are created when needed. Whenever a desktop flow waits in the queue and no bot is available, a bot is created automatically. A bot is created as long as the maximum number of bots for this group isn't reached and you've enough unattended add-ons assigned to your environment. You can find more information about licensing requirements in [Licensing requirements](#licensing-requirements).
+HostedbBots in a hosted machine group are created when needed. Whenever a desktop flow waits in the queue and no bot is available, a bot is created automatically. A bot is created as long as the maximum number of bots for this group isn't reached and you've enough unattended add-ons assigned to your environment. You can find more information about licensing requirements in [Licensing requirements](#licensing-requirements).
 
 > [!NOTE]
-> If the hosted machine group has just been created or hasn't been used for more than 3 hours, bots will be created before a run gets addressed from the queue. The creation of a bot can take more than 10 minutes depending on its configuration.
+> If the hosted machine group has just been created or hasn't been used for more than 3 hours, hosted bots will be created before a run gets addressed from the queue. The creation of a bot can take more than 10 minutes depending on its configuration.
 
 ## Use custom VM images for your hosted machine groups
 
@@ -317,13 +317,13 @@ To find more information about triggering desktop flows from cloud flows, go to 
 
 ## Monitor your hosted machine groups
 
-You can't directly access or sign in to your hosted machine groups. They're not persisted unless they're running desktop flows. Bots in a group are created based on the current size of the queue, the configuration of the group, and the licenses assigned to the current environment.
+You can't directly access or sign in to your hosted machine groups. They're not persisted unless they're running desktop flows. Hosted bots in a group are created based on the current size of the queue, the configuration of the group, and the licenses assigned to the current environment.
 
-For instance, if the hosted machine group is newly created or it wasn't used for more than 3 hours, new bots may need to be provisioned before desktop flow runs. The creation of a bot takes at least 10 minutes, depending on the type of VM Image in use. It's expected that the queue would appear stuck for more than 10 minutes before desktop flows start running.
+For instance, if the hosted machine group is newly created or it wasn't used for more than 3 hours, new hosted bots may need to be provisioned before desktop flow runs. The creation of a bot takes at least 10 minutes, depending on the type of VM Image in use. It's expected that the queue would appear stuck for more than 10 minutes before desktop flows start running.
 
-After this process, new bots will spawn to run desktop flows in the queue as efficiently as possible.
+After this process, new hosted bots will provisioned to run desktop flows in the queue as efficiently as possible.
 
-To monitor your bots:
+To monitor your hotsed bots:
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
@@ -333,7 +333,7 @@ To monitor your bots:
 
 1. Select one of your hosted machine groups.
 
-    In the following example, two bots are available to pick up the first two desktop flows in the queue, and three other desktop flows are queued. The desktop flow runs are marked as **Running** or **Queued** to indicate their state.
+    In the following example, two hosted bots are available to pick up the first two desktop flows in the queue, and three other desktop flows are queued. The desktop flow runs are marked as **Running** or **Queued** to indicate their state.
 
     :::image type="content" source="media/hosted-machine-groups/hosted-machine-groups-monitoring.png" alt-text="Screenshot of some queued desktop flows.":::
 
@@ -343,11 +343,24 @@ To monitor your bots:
 
 ## Load balance hosted machine group
 
-The number of hosted bots that can run in your environment is equal to the number of hosted RPA add-on you've assigned to your environment. This capacity is then load balanced across all the hosted machine groups you have in your environment. Each hosted machine group has a max bot configuration that enables you to set the maximum number of hosted bots that can be allocated to the hosted machine group.
+The number of hosted bots that can run in your environment is equal to the number of hosted RPA capacity you've assigned to your environment. This capacity is then load balanced across all the hosted machine groups you have in your environment. Each hosted machine group has a max bot and committed bot configuration that enables you to control the scaling capabilities of the hosted machine group.
 
-The hosted machine group will request to scale out when there aren't enough hosted bots to run desktop flows. It will take into consideration the maximum bot configuration in the hosted machine group and the available capacity in the environment. The hosted machine group will scale-in when there are no desktop flows allocated to an available hosted bot. This capacity then becomes available to other hosted machine groups in the environment.
+The hosted machine group will request to scale out when there aren't enough hosted bots to run desktop flows. It will take into consideration the max and committed bot configuration in the hosted machine group and the available capacity in the environment. The hosted machine group will scale-in when there are no desktop flows allocated to an available hosted bot. This capacity then becomes available to other hosted machine groups in the environment.
 
 One key feature of hosted machine groups is the ability to reassign them to different groups and hence be able to balance your automation resources seamlessly between your different workloads.
+
+
+    > [!NOTE]
+    > - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required.
+    > - If multiple hosted machine groups are used in the same environment, bots will be automatically load balanced between the groups. 
+    > - You cannot exceed the total number of Hosted RPA capacity assigned to your environment.
+    > - To find more information about load balancing, go to [Load balance hosted machine groups](#load-balance-hosted-machine-group).
+
+    - Define the **committed number of bots** you want to assign to this group.
+  
+    > [!NOTE]
+    > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed  bots configuration when required.
+    > - You cannot exceed the total number of committed bots and hosted machines configured to your environment.
 
 For instance, you may have two groups of bots, one for your sales automations and one for finance, in the same environment with 10 bots assigned. You can add more to one of the groups at any time by editing the hosted machine group and using the max number of available bots.
 
@@ -380,7 +393,7 @@ You can update the VM image that is used by your hosted machine group. This is b
 1. From the drop  down list, select the updated VM image to be used by the hosted machine group.
 
 > [!NOTE]
-> Upon updating of VM image, all existing bots (if any) will complete their ongoing desktop flow runs prior to being reprovisioned with the new VM image.
+> Upon updating of VM image, all existing hosted bots (if any) will complete their ongoing desktop flow runs prior to being reprovisioned with the new VM image.
 
 
 :::image type="content" source="media/hosted-machine-groups/vm-image-update-select.png" alt-text="Screenshot of the VM image update action on the hosted machine group details page.":::
