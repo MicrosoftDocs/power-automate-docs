@@ -349,9 +349,9 @@ The number of hosted bots that can run in your environment is equal to the numbe
 
 The hosted machine group will request to scale out when there aren't enough hosted bots to run desktop flows. It will take into consideration the max and committed bot configuration in the hosted machine group and the available capacity in the environment. The hosted machine group will scale-in when the desktop flow queue is lesser than the number of available hosted bots. This capacity then becomes available to other hosted machine groups in the environment.
 
-    > [!NOTE]
-    > - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required and when resources are available.
-    > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed  bots configuration when required.
+> [!NOTE]
+> - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required and when resources are available.
+> - **Committed bots guarantee** your hosted machine group to automatically scale to the committed  bots configuration when required.
     
 
 To update the scaling configuration of your hosted machine group:
@@ -367,6 +367,27 @@ To update the scaling configuration of your hosted machine group:
 1. Select **Settings** at the top of the page.
 
     :::image type="content" source="media/hosted-machine-groups/edit-hosted-machine-group.png" alt-text="Screenshot of the Edit details of a hosted machine group.":::
+
+
+# Hosted machine group scaling & load balancing example
+
+In this example, the customer has 10 Hosted RPA capacity assigned to the environment and have configured three hosted machine group with the following configuration:
+
+| Hosted machine group name | Max Bots | Committed Bots | 
+| ----------| -------| -------|
+| Invoice Processing | 10 | 4 |
+| New Sales Processing | 10 | 4 |
+| Refund Request Processing | 10 | 2 |
+
+
+    :::image type="content" source="media/hosted-machine-groups/hosted-machine-group-example.png" alt-text="Hosted machine group scaling example.":::
+
+| Time | Event |
+| ----------| ---------------------|
+| 9AM - 11AM | The Invoice Processing group has a high volume of desktop flow jobs and auto-scales to 10 hosted bots (Max bots configuration) as no other groups have desktop flow jobs. |
+| 12PM - 3PM | In addition to the high volume of desktop flow jobs for the Invoice Processing group, the New Sales Processing group now also has a high volume of desktop flow jobs queued, and therefore consumes the committed capacity of 4 hosted bots.
+| 4PM - 6PM | In addition to the high volume of desktop flow jobs for the Invoice Processing and New Sales Processing groups, the Refund Request Processing group now also has a high volume of desktop flow jobs queued, and therefore consumes the committed capacity of 2 hosted bots. |
+
 
 ## Update VM Image used by the hosted machine group
 
