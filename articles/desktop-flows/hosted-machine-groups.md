@@ -90,11 +90,11 @@ To create a hosted machine group:
 
 1. In the hosted machine group creation wizard
 
-    - Enter a name for your hosted machine group, then optionally add a description.
+    - Enter a **name** for your hosted machine group, then optionally add a description.
 
-    - Determine if you want to reuse a Windows session in unattended mode.
+    - Determine if you want to **reuse a Windows session** in unattended mode.
 
-    - Define the maximum number of bots you want to assign to this group.
+    - Define the **maximum number of bots** you want to assign to this group.
       
     > [!NOTE]
     > - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required.
@@ -102,7 +102,7 @@ To create a hosted machine group:
     > - You cannot exceed the total number of Hosted RPA capacity assigned to your environment.
     > - To find more information about load balancing, go to [Load balance hosted machine groups](#load-balance-hosted-machine-group).
 
-    - Define the committed number of bots you want to assign to this group.
+    - Define the **committed number of bots** you want to assign to this group.
   
     > [!NOTE]
     > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed  bots configuration when required.
@@ -110,14 +110,14 @@ To create a hosted machine group:
 
     :::image type="content" source="media/hosted-machine-groups/create-hmg-scaling.png" alt-text="Screenshot of the hosted machine group scaling configuration in creation wizard.":::
 
-    - Select the VM image to use for your hosted machine group. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
+    - Select the **VM image** to use for your hosted machine group. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
-    - Select how you would like to access your hosted machine group. You can use your [work or school account](#use-your-work-or-school-account) or use a local admin account you want to be created. This account will be used to run your automations by the bots.
+    - Select how you would like to **access** your hosted machine group. You can use your [work or school account](#use-your-work-or-school-account) or use a local admin account you want to be created. This account will be used to run your automations by the bots.
 
      > [!NOTE]
      > If you select work or school account, enter your email address (and not domain\username) when creating a connection to the hosted machine group.
 
-    - Review and create your hosted machine group.
+    - **Review and create** your hosted machine group.
 
     :::image type="content" source="media/hosted-machine-groups/create-hosted-machine-group.png" alt-text="Screenshot of the hosted machine group creation wizard.":::
 
