@@ -173,7 +173,9 @@ Reads the text content from a document of a Word instance.
 |Retrieve|N/A|Whole document/Pages/Bookmark|Whole document|Whether to retrieve the content of the whole document, of a specific page or pages, or of a bookmark|
 |Page|No|Numeric value||The pages of the Word document to be read|A range of pages or a list can be provided as 2-5, which will retrieve content from page 2 to page 5 or 2,3,7, retrieve content from 2,3,7 pages|
 |Bookmark|No|Text value||The bookmark of the Word document to be read|
+
 ### Variables produced
+|Argument|Type|Description|
 |-----|-----|-----|
 |WordData|Text value|The value of the retrieved content|
 
