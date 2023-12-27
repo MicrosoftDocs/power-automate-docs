@@ -49,29 +49,8 @@ Launches a new Word instance or opens a Word document.
 |Failed to launch Word|Indicates a problem launching a Word instance|
 |The Word document was not found|Indicates that the specific Word document could not be found in the provided location|
 |Failed to open existing Word document|Indicates a problem opening the specified Word document|
-|Failed to launch Word application|Indicates that Word application could not be launched due to internal error|
+|Failed to launch Word application|Indicates that Word application could not be launched due to an internal error|
 |Word application is not installed|Indicates that Word application is not installed in the specific machine|
-
-## <a name="attach"></a> Attach to running Word
-
-Attaches to a Word document that's already open.
-
-### Input parameters
-
-|Argument|Optional|Accepts|Default Value|Description|
-|-----|-----|-----|-----|-----|
-|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
-|Macro|No|[Text value](../variable-data-types.md#text-value)||The macro to run. The text should consist of the name of the macro, followed by any arguments (optional), all separated by semicolons.|
-
-### Variables produced
-
-This action doesn't produce any variables.
-
-### <a name="attach_onerror"></a> Exceptions
-
-|Exception|Description|
-|-----|-----|
-|Failed to run macro|Indicates a problem running the specified macro|
 
 ## <a name="closeword"></a> Close Word
 
@@ -81,20 +60,52 @@ Closes a Word instance.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
+|Word instance|No|Word instance||The Word instance to close. This variable must have been previously specified in a Launch Word or Attach to running Word action.|
+|Before closing Word|N/A|Do not save document, Save document, Save document as|Don't save document|Specify whether and how to save the document of this instance before closing that instance.| 
+|Document format|N/A|All available formats from Word app|Default (From Extension)|The format of the document.|
+|Document path|No|File||The full path of the document. Insert the desired document file extension according to the selection in the Document format parameter.|
 
 ### Variables produced
 
-|Argument|Type|Description|
-|-----|-----|-----|
-|SheetName|[Text value](../variable-data-types.md#text-value)|The name of the active worksheet|
-|SheetIndex|[Numeric value](../variable-data-types.md#numeric-value)|The index of the active worksheet|
+This action doesn't produce any variables.
 
 ### <a name="closeword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
-|Failed to retrieve active worksheet|Indicates a problem retrieving the active worksheet|
+|Failed to close Word|Indicates a problem closing the Word doucument|
+|Failed to save Word|Indicates a problem saving the Word document|
+|The operation cannot be performed on a read-only document|Indicates that Word document cannot be saved as it has been opened as read-only|
+
+
+
+
+## <a name="attach"></a> Attach to running Word
+
+Attaches to a Word document that's already open.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Document name|No|File||The name or the path of the Word document to attach to|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|WordInstance|Word instance|The Word instance this action has attached to for use with later Word actions|
+
+
+
+### <a name="attach_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to attach to Word document|Indicates a problem attaching to the specified Word doucument|
+|Specified Word document not found|Indicates that the specific Word document could not be found in the provided location|
+|Failed to launch Word|Indicates that Word application could not be launched due to an internal error|
+
 
 ## <a name="saveword"></a> Save Word
 
@@ -104,19 +115,24 @@ Saves a previously launched Word instance.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance. This variable must have been previously specified in a Launch Excel action.|
+|Word instance|No|Word instance||The Word instance to save. This variable must have been previously specified in a Launch Word or Attach to running Word action.|
+|Save mode|N/A|Save document, Save document as|Save document|How to save the document of this instance.|
+|Document format|N/A|All available formats from Word app|Default (From Extension)|The format of the document.|
+|Document path|No|File||The full path of the document. Insert the desired document file extension according to the selection in the Document format parameter.|
 
 ### Variables produced
 
 |Argument|Type|Description|
-|-----|-----|-----|
-|SheetNames|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)|The names of all worksheets|
+This action doesn't produce any variables.
+
 
 ### <a name="saveword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
-|Failed to retrieve all worksheet names|Indicates a problem retrieving the names of the Excel worksheet|
+|Failed to save Word|Indicates a problem saving the Word doucument|
+|The Word instance or the Word document is not initialized|Indicates that Word instance or Word document specified in action is not initiliazed|
+|The operation cannot be performed on a read-only document|Indicates that Word document cannot be saved as it has been opened as read-only|
 
 ## <a name="findandreplaceword"></a> Find and replace words in Word document
 
@@ -126,10 +142,13 @@ Finds text and replaces it with another in the active worksheet of an Excel inst
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
-|Delete worksheet with|N/A|Index, Name|Name|Whether to find the worksheet by name or index|
-|Worksheet index|No|[Numeric value](../variable-data-types.md#numeric-value)||The Index number of the worksheet to delete. The numbering starts from 1, meaning that the index of the first worksheet is 1, the second is 2, and so on.|
-|Worksheet name|No|[Text value](../variable-data-types.md#text-value)||The name of the worksheet to delete|
+|Word instance|No|Word instance||The Word instance to work with|This variable must have been previously specified in a Launch Word or Attach to running Word action|
+|All matches|N/A|Boolean value|False|Whether to find/ and replace text in all the matching occurrences found or in the first matching occurrence only|
+|Text to find|No|Text value||The text to find in the worksheet|
+|Text to replace with|No|Text value||The text used to replace the matching cells|
+|Use wildcards|N/A|Boolean value|False|Whether to use wildcards for the text to find|
+|Match case|N/A|Boolean value|False|Whether to search for case-sensitive data|
+|Match whole words only|N/A|Boolean value|False|Whether to search for words that are the same as the specified text|
 
 ### Variables produced
 
@@ -139,8 +158,9 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Can't find worksheet|Indicates that a worksheet with the specified name couldn't be found|
-|Failed to delete worksheet|Indicates a problem deleting the specified worksheet|
+|Failed to replace text in Word document|Indicates a problem replacing the specified text with the provided input|
+|The Word instance or the Word document is not initialized|Indicates that Word instance or Word document specified in action is not initiliazed|
+|The operation cannot be performed on a read-only document|Indicates that Word document cannot be edited as it has been opened as read-only|
 
 ## <a name="readfromword"></a> Read from Word document
 
@@ -150,22 +170,20 @@ Reads the text content from a document of a Word instance.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance. This variable must have been previously specified in a Launch Excel action.|
-|Rename worksheet with|N/A|Index, Name|Name|Specify whether to find the worksheet by name or index|
-|Worksheet index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the worksheet to rename. The numbering starts from 1, meaning that the index of the first worksheet is 1, the second is 2, and so on.|
-|Worksheet name|No|[Text value](../variable-data-types.md#text-value)||The name of the worksheet to rename|
-|Worksheet new name|No|[Text value](../variable-data-types.md#text-value)||The new name of the worksheet|
-
+|Word instance|No|Word instance||The Word instance to work with|This variable must have been previously specified in a Launch Word or Attach to running Word action|
+|Retrieve|N/A|Whole document/Pages/Bookmark|Whole document|Whether to retrieve the content of the whole document, of a specific page or pages, or of a bookmark|
+|Page|No|Numeric value||The pages of the Word document to be read|A range of pages or a list can be provided as 2-5, which will retrieve content from page 2 to page 5 or 2,3,7, retrieve content from 2,3,7 pages|
+|Bookmark|No|Text value||The bookmark of the Word document to be read|
 ### Variables produced
-
-This action doesn't produce any variables.
+|-----|-----|-----|
+|WordData|Text value|The value of the retrieved content|
 
 ### <a name="readfromword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
-|Can't find worksheet|Indicates that a worksheet with the specified name couldn't be found|
-|Failed to rename worksheet|Indicates a problem renaming the specified worksheet|
+|Failed to read the content from a Word document|Indicates a problem retrieving the content from the specified Word document|
+|The Word instance or the Word document is not initialized|Indicates that Word instance or Word document specified in action is not initiliazed|
 
 ## <a name="writetoword"></a> Write to Word document
 
@@ -175,22 +193,23 @@ Write or append text to a Word file.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
-|Activate|N/A|Absolutely specified cell, Relatively specified cell|Absolutely specified cell|Select whether to specify the cell to activate absolutely, or relatively, by using an offset distance being the number of cells between the currently activated reference cell and the actual cell activate.|
-|Column|No|[Text value](../variable-data-types.md#text-value)||The numeric value or letter of the cell column.|
-|Direction|N/A|Left, Right, Above, Below|Left|Select offset direction. Select where to look for the cell to activate based on the position of the currently active cell.|
-|Offset from active cell|No|[Numeric value](../variable-data-types.md#numeric-value)||The distance in cells between the currently active cell and the desired cell. The numbering starts from 0.|
-|Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The numeric value of the cell row. The numbering starts from 1.|
+|Word instance|No|Word instance||The Word instance to work with|This variable must have been previously specified in a Launch Word or Attach to running Word action|
+|Text to write|Yes|General value||The text to write in the specified Word document|
+|Append new line|N/A|Boolean value|True|Specifies whether to append a new line at the start of the overall text to write to the document|
+|Write text to|No|Beginning of Word file/End of Word file/Before of Bookmark/After of Bookmark||Specifies the position of the Word document tha text will be appended|
+|Bookmark|Yes|Text value||The target bookmark in the Word document where the text will be appended|This action appends text before or after of the specified bookmark in the Word document|
 
 ### Variables produced
 
-
+This action doesn't produce any variables.
 
 ### <a name="writetoword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
-|Failed to activate cell|Indicates a problem activating an Excel cell|
+|The Word instance or the Word document is not initialized|Indicates that Word instance or Word document specified in action is not initiliazed|
+|The operation cannot be performed on a read-only document|Indicates that Word document cannot be edited as it has been opened as read-only|
+|The write operation on the Word document instance failed|Indicates a problem writing content in the specified Word document|
 
 ## <a name="insertimagetoword"></a> Insert image in Word document
 
