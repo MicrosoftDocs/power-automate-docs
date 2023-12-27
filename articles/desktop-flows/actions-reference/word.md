@@ -29,28 +29,28 @@ Launches a new Word instance or opens a Word document.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||Specify the Excel instance. This variable must have been previously specified in a Launch Excel action.|
-|Resize target|N/A|Column, Row|Column|Specify whether to resize columns or rows|
-|Selection range|N/A|Single, Range, All available|Single|Specify whether to select a single column/row, a range of columns/rows or all the available columns/rows in the active worksheet|
-|Column|No|[Text value](../variable-data-types.md#text-value)||The column's index number or letter. Column numbering starts from index 1.|
-|Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column. Column numbering starts from index 1.|
-|End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column. Column numbering starts from index 1.|
-|Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row's index number. The numbering starts from 1.|
-|Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The index or the first row. The numbering starts from 1.|
-|End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The index or the last row. The numbering starts from 1.|
-|Resize type|N/A|Autofit, Custom size|Autofit|Specify whether to autofit selected columns/rows or set a custom size|
-|Width|No|[Numeric value](../variable-data-types.md#numeric-value)||The width of the selected columns|
-|Height|No|[Numeric value](../variable-data-types.md#numeric-value)||The height of the selected rows|
+|Launch Word|N/A|With a blank document, and open the following document|With a blank document|Specify whether to open a New Word document, or an existing one|
+|Document path|No|File||The full path of the existing Word document to open|
+|Make instance visible|N/A|Boolean value|True|Specify whether to make the Word window visible or hide it|
+|Open as ReadOnly|N/A|Boolean value|False|Specify whether to open the stored document in read-only mode or not|
+|Read protection password|Yes|Direct encrypted input or Text value||The read protection password on the Word document, if it's password protected|
+|Write protection password|Yes|Direct encrypted input or Text value||The write protection password on the Word document, if it's password protected|
+
 
 ### Variables produced
-
-This action doesn't produce any variables.
+|Argument|Type|Description|
+|-----|-----|-----|
+|WordInstance|Word instance|The specific Word instance for use with later Word actions. This allows the user to specify which of possibly several Word spreadsheets to access|
 
 ### <a name="launchword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
-|Failed to resize columns/rows|Indicates a problem while resizing columns/rows|
+|Failed to launch Word|Indicates a problem launching a Word instance|
+|The Word document was not found|Indicates that the specific Word document could not be found in the provided location|
+|Failed to open existing Word document|Indicates a problem opening the specified Word document|
+|Failed to launch Word application|Indicates that Word application could not be launched due to internal error|
+|Word application is not installed|Indicates that Word application is not installed in the specific machine|
 
 ## <a name="attach"></a> Attach to running Word
 
@@ -184,7 +184,7 @@ Write or append text to a Word file.
 
 ### Variables produced
 
-This action doesn't produce any variables.
+
 
 ### <a name="writetoword_onerror"></a> Exceptions
 
