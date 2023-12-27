@@ -220,16 +220,12 @@ Insert an image to a Word file.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
-|Select|N/A|Absolutely specified cell, Relatively specified cell|Absolutely specified cell|Specify whether to select an explicitly specified range of cells or a range of cells relative to the currently active cell.|
-|X Axis Direction|N/A|Left, Right|Left|The X-axis offset direction. Where to look along the horizontal axis, based on currently activated cell's position.|
-|Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column.|
-|X Offset|No|[Numeric value](../variable-data-types.md#numeric-value)||The X-axis offset.|
-|Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The first row number. The numbering starts from 1.|
-|End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column.|
-|Y Axis Direction|N/A|Above, Below|Above|The Y-axis offset direction. Where to look along the vertical axis, based on the position of the currently active cell.|
-|End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number. The numbering starts from 1.|
-|Y Offset|No|[Numeric value](../variable-data-types.md#numeric-value)||The Y-axis offset.|
+|Word instance|No|Word instance||The Word instance to work with|This variable must have been previously specified in a Launch Word or Attach to running Word action|
+|Insert image to|No|Beginning of Word file/End of Word file/Before of Bookmark/After of Bookmark/Before specific text /After specific text||Specifies the position of the Word document that image will be appended|
+|Insert image from|No|File/Clipboard|File|The location of the image to be inserted in the specified Word document|
+|Image path|Yes|File||The full path of the image to be inserted|
+|Text to find|Yes|Text value||The text to find in the Word document for inserting image|Image will be appended before or after any occurrence of the specified text|
+|Bookmark|Yes|Text value||The target bookmark in the Word document where the image will be appended| 
 
 ### Variables produced
 
@@ -239,7 +235,9 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Failed to select cells|Indicates a problem selecting the specified cells|
+|The Word instance or the Word document is not initialized|Indicates that Word instance or Word document specified in action is not initiliazed|
+|The operation cannot be performed on a read-only document|Indicates that Word document cannot be edited as it has been opened as read-only|
+|Failed to insert image|Indicates a problem inserting the image in the specified Word document|
 
 
 ## Known limitations
