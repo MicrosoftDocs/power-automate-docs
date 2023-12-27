@@ -242,22 +242,22 @@ This action doesn't produce any variables.
 
 ## Known limitations
 
-### Using Excel files synchronized through OneDrive or SharePoint
+### Using Word files synchronized through OneDrive or SharePoint
 
-Interaction with Microsoft Excel files that are contained in folders synchronized in OneDrive or SharePoint might result in an erroneous flow. Power Automate for desktop utilizes COM objects for Excel interactions. OneDrive and SharePoint aren't fully compatible with Excel instances launched through COM.
+Interaction with Microsoft Word files that are contained in folders synchronized in OneDrive or SharePoint might result in an erroneous flow. Power Automate for desktop utilizes COM objects for Word interactions. OneDrive and SharePoint aren't fully compatible with Word instances launched through COM.
 
-For this reason, when you try to open an Excel file stored under a OneDrive or SharePoint directory, you might encounter a **file not found** error. To resolve this issue, use one of the following workarounds:
+For this reason, when you try to open an Word file stored under a OneDrive or SharePoint directory, you might encounter a **file not found** error. To resolve this issue, use one of the following workarounds:
 
 #### Workaround 1
 
-* Make a local copy of the respective Excel file.
-* Modify the local copy of the Excel file using Power Automate for desktop's Excel automation actions.
-* Override the Excel file copy synchronized through OneDrive/ Sharepoint with the local copy that includes the latest changes.
+* Make a local copy of the respective Word file.
+* Modify the local copy of the Word file using Power Automate for desktop's Word automation actions.
+* Override the Word file copy synchronized through OneDrive/ Sharepoint with the local copy that includes the latest changes.
 
 #### Workaround 2
 >[!NOTE]
-> This workaround can be used in general when the **Launch Excel** action fails to execute.
-* Open a new Excel instance using the **Run application** action. Make sure that you provide enough wait time between actions, allowing the Excel process to load completely, including any add-ins.
-* Use the action **Attach to Excel** to attach to the new process.
+> This workaround can be used in general when the **Launch Word** action fails to execute.
+* Open a new Word instance using the **Run application** action. Make sure that you provide enough wait time between actions, allowing the Word process to load completely, including any add-ins.
+* Use the action **Attach to running Word** to attach to the new process.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
