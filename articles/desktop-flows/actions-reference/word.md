@@ -122,7 +122,6 @@ Saves a previously launched Word instance.
 
 ### Variables produced
 
-|Argument|Type|Description|
 This action doesn't produce any variables.
 
 
