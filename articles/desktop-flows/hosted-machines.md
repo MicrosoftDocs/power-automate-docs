@@ -454,7 +454,6 @@ You can share your hosted machines with other users so they can run desktop flow
     **User** permission only allows the targeted user to run desktop flows on the selected hosted machine. A **Co-Owner** can also edit the hosted machine details.
 
 > [!NOTE]
-> 
 > - Sign-in access is only available to the creator of the hosted machine.
 > - When a user isn't part of an environment anymore, you may continue to see the user as deactivated. You'll be notified in the **Manage access** section of the hosted machine if it's shared with deactivated users. In this situation, remove access to them.
 
