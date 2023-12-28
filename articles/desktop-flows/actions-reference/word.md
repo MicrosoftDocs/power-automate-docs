@@ -19,7 +19,16 @@ search.audienceType:
 
 # Word actions
 
-++++++++++++++++++++++++++++
+Our Word automation feature enables you to seamlessly interact with Word files stored either locally or in the cloud. To begin, you'll need to create a Word instance using either the 'Launch Word' or 'Attach to running Word' action. This instance will serve as the input parameter for the rest of the actions in the group, allowing you to easily perform actions on the desired Word file.
+
+
+:::image type="content" source="media/word/readword.png" alt-text="Screenshot of action to read from a Word instance":::
+
+:::image type="content" source="media/word/writeword.png" alt-text="Screenshot of action to write in a Word instance":::
+
+:::image type="content" source="media/word/insertimageword.png" alt-text="Screenshot of action to insert an image in a Word instance":::
+
+:::image type="content" source="media/word/findandreplaceword.png" alt-text="Screenshot of action to find a text and replace it in a Word instance":::
 
 ## <a name="launchword"></a> Launch Word
 
