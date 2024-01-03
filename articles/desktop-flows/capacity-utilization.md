@@ -48,7 +48,7 @@ The overview page provides:
 
 <br/>
 
-![Screenshot of a selector's dialog.](media/capacity-utilization/capacity-utilization-MVP-overview.png)
+![Capacity Utilization overview page](media/capacity-utilization/capacity-utilization-MVP-overview.png)
 <br/><br/>
 
 The pie charts serve to underscore the crucial point that, within a given environment, capacity is a <b>limited resource that users may compete for<b/>, necessitating priorization and sometimes the implementation of governance.<br/><br/>
@@ -58,9 +58,15 @@ The pie charts serve to underscore the crucial point that, within a given enviro
 ## Hosted RPA capacity page
 
 #### Utilization breakdown 
-|Legend|Color|||
-|----|--------------------|----|----|
-|Allocated to my hosted machines|Blue|----|----|
+|Color|Legend|Description|
+|----|--------------------|----|
+|![Legend color - Allocated to my hosted machines](media/capacity-utilization/legend-allocated-to-my-hosted-machines.png)|Allocated to my hosted machines|Each hosted machine that you have access to will show here|
+|![Legend color - Committed to my hosted machine groups](media/capacity-utilization/legend-committed-to-my-hosted-machine-groups.png)|Committed to my hosted machine groups||
+|![Legend color - Utilized by other makers](media/capacity-utilization/legend-utilized-by-other-makers.png)|Utilized by othetr makers||
+|![Legend color - Available capacity](media/capacity-utilization/legend-available-capacity.png)|Available capacity||
+|![Legend color - My overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization||
+|![Legend color - Overage by other makers](media/capacity-utilization/legend-overage-by-other-makers.png)|Overage by other makers||
+
 
 
 
