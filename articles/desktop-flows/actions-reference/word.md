@@ -179,8 +179,8 @@ Write or append text to a Word file.
 |Word instance|No|Word instance||The Word instance to work with|This variable must have been previously specified in a Launch Word or Attach to running Word action|
 |Text to write|Yes|General value||The text to write in the specified Word document|
 |Append new line|N/A|Boolean value|True|Specifies whether to append a new line at the start of the overall text to write to the document|
-|Write text to|No|Beginning of Word file/End of Word file/Before of Bookmark/After of Bookmark||Specifies the position of the Word document tha text will be appended|
-|Bookmark|Yes|Text value||The target bookmark in the Word document where the text will be appended|This action appends text before or after of the specified bookmark in the Word document|
+|Write text to|N/A|Beginning of Word file/End of Word file/Before of Bookmark/After of Bookmark|Beginning of Word file|Specifies the position of the Word document tha text will be appended|
+|Bookmark|No|Text value||The target bookmark in the Word document where the text will be appended|This action appends text before or after of the specified bookmark in the Word document|
 
 ### Variables produced
 
