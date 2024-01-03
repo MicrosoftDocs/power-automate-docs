@@ -21,7 +21,7 @@ ms.reviewer:
 
 Within the Power Automate platform, a <b>‘Capacity’</b> is a purchased item (that can be a license or an add-on) assigned to an the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) that can be utilized by a specific Power Automate object allowing it to carry out premium operation. 
 <br/><br/>
-Currently, there are 3 types of capacity that can be utilized by Power Automate objects :
+Currently, there are 3 types of capacity that can be utilized by Power Automate objects : [TEST](a "aaaaaaaa")
 <br/><br/>
 
 |Capacity|Power Automate object|Consumption mode|Premium operation enabled|
@@ -40,6 +40,7 @@ Currently, there are 3 types of capacity that can be utilized by Power Automate 
 <br/>
 
 ## Overview page
+
 The capacity utilization page offers an overview of the environment capacity, detailing their usage and providing suggestions and insights for more efficient management of automations and the desktop infrastructure.
 
 The overview page provides:
