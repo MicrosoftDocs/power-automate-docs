@@ -11,12 +11,18 @@ ms.reviewer:
 # Capacity utilization within Power Automate
 
 > [!IMPORTANT]
-> This feature is in preview.
+> - This feature is in preview.
+> - In the January 2024 release, the capacity utilization page only details hosted RPA capacity utilization
+> - Later in Q1 2024, a detailed breakdown of the Process capacity / Unattended RPA capacity utilization will be added to the page
 
+<br/>
 
-## Introduction to capacity
+## Reminder on capacity within Power Automate
 
-Within the Power Automate platform, a <b>‘Capacity’</b> is a purchased item that can be utilized by a specific Power Automate object allowing it to carry out premium operation. Currently, there are 4 types of capacity that can be utilized by Power Automate objects :
+Within the Power Automate platform, a <b>‘Capacity’</b> is a purchased item (that can be a license or an add-on) assigned to an the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) that can be utilized by a specific Power Automate object allowing it to carry out premium operation. 
+<br/><br/>
+Currently, there are 3 types of capacity that can be utilized by Power Automate objects :
+<br/><br/>
 
 |Capacity|Power Automate object|Consumption mode|Premium operation enabled|
 |----|--------------------|----|----|
@@ -24,14 +30,38 @@ Within the Power Automate platform, a <b>‘Capacity’</b> is a purchased item 
 |Hosted RPA capacity|Hosted machine group|Manual commitment|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot when required.|
 |Process capacity / Unattended RPA capacity (legacy)|Machine|Manual allocation & auto-allocation|Every capacity allocated to a machine allows it to carry out an extra unattended desktop flow run concurrently.|
 |Process capacity / Unattended RPA capacity (legacy)|Cloud flow|Manual allocation & auto-allocation|Every capacity assigned to a cloud flow enables it, along with all its associated cloud flows, to use premium connectors and execute actions up to a daily limit of 250k Power Platform Requests (stackable limit).|
-|Per flow plan (legacy)|Cloud flow|Manual allocation|A Per flow plan allocated to a cloud flow enables it to use premium connectors and execute actions up to a daily limit of 250k Power Platform Requests.|
 
-> [!IMPORTANT]
-> The Process capacity and the Unattended RPA capacity (legacy) have been merged in a common pool.
 
-## Capacity utilization page
 
-The capacity utilization page offers an overview of the environment capacities, detailing their usage and providing suggestions and insights for more efficient management of automations and the desktop infrastructure.
+> [!NOTE]
+> - The Process capacity and the Unattended RPA capacity (legacy) have been combined in a single pool. They can seamlessly be utilized by machines or cloud flows.
+> - Although the Per Flow Plan is a capacity that can be allocated to a cloud flow, it is not incorporated into the capacity utilization page. It is indeed being phased out in favor of the Process capacity.
 
-> [!IMPORTANT]
-> The capacity utilization firt version released in January 2024 is centered on the hosted RPA capacity.
+<br/>
+
+## Overview page
+The capacity utilization page offers an overview of the environment capacity, detailing their usage and providing suggestions and insights for more efficient management of automations and the desktop infrastructure.
+
+The overview page provides:
+- A breakdown of each capacity utilization (my consumption / others' consumption / capacity available / capacity in overage)
+- Insights and recommendation if overage is detected
+
+<br/>
+
+![Screenshot of a selector's dialog.](media/capacity-utilization/capacity-utilization-MVP-overview.png)
+<br/><br/>
+
+The pie charts serve to underscore the crucial point that, within a given environment, capacity is a <b>limited resource that users may compete for<b/>, necessitating priorization and sometimes the implementation of governance.<br/><br/>
+
+<br/>
+
+## Hosted RPA capacity page
+
+#### Utilization breakdown 
+|Legend|Color|||
+|----|--------------------|----|----|
+|Allocated to my hosted machines|Blue|----|----|
+
+
+
+
