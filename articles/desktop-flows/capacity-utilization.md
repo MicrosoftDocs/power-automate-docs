@@ -21,15 +21,15 @@ ms.reviewer:
 
 Within the Power Automate platform, a <b>‘Capacity’</b> is a purchased item (that can be a license or an add-on) assigned to an the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) that can be utilized by a specific Power Automate object allowing it to carry out premium operation. 
 <br/><br/>
-Currently, there are 3 types of capacity that can be utilized by Power Automate objects : [TEST](a "aaaaaaaa")
+Currently, there are 3 types of capacity that can be utilized by Power Automate objects : 
 <br/><br/>
 
 |Capacity|Power Automate object|Consumption mode|Premium operation enabled|
 |----|--------------------|----|----|
-|Hosted RPA capacity|Hosted machine|Auto-allocation|To be created, each hosted machine requires an hosted RPA capacity allocated. It is auto-allocated at creation.|
+|Hosted RPA capacity|Hosted machine|[Auto-allocation](# "Hosted RPA capacity is auto-allocated at hosted machine creation.")|To be created, each hosted machine requires an hosted RPA capacity allocated.|
 |Hosted RPA capacity|Hosted machine group|Manual commitment|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot when required.|
-|Process capacity / Unattended RPA capacity (legacy)|Machine|Manual allocation & auto-allocation|Every capacity allocated to a machine allows it to carry out an extra unattended desktop flow run concurrently.|
-|Process capacity / Unattended RPA capacity (legacy)|Cloud flow|Manual allocation & auto-allocation|Every capacity assigned to a cloud flow enables it, along with all its associated cloud flows, to use premium connectors and execute actions up to a daily limit of 250k Power Platform Requests (stackable limit).|
+|Process capacity / Unattended RPA capacity (legacy)|Machine|Manual allocation & [auto-allocation](# "Capacity can be auto-allocated at unattended desktop flow run time.")|Every capacity allocated to a machine allows it to carry out an extra unattended desktop flow run concurrently.|
+|Process capacity / Unattended RPA capacity (legacy)|Cloud flow|Manual allocation & [auto-allocation](# "Capacity can be auto-allocated at cloud flow save time for service principal owned cloud flow")|Every capacity assigned to a cloud flow enables it, along with all its associated cloud flows, to use premium connectors and execute actions up to a daily limit of 250k Power Platform Requests (stackable limit).|
 
 
 
