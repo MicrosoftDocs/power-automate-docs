@@ -19,8 +19,6 @@ search.audienceType:
 
 # Use variables and the % notation
 
-
-
 Variables are used within flows to store data for further processing. Every variable name must be enclosed by percentage signs (**%**). The percentage sign is used as a special character to denote variables. Any expression between percentage signs should be evaluated.
 
 ![Screenshot of the percentage notation in a Change text case action's field.](media\variable-manipulation\percentage-notation.png)
@@ -36,6 +34,20 @@ Occasionally, the percentage sign should be used as a simple character, instead 
 To include a hardcoded text value inside a variable, use quotes. Every value between the quote characters will be treated as a text value and not as a variable name.
 
 ![Screenshot of the hardcoded values in a Set variable action's field.](media\variable-manipulation\hardcoded-values.png)
+
+## Using blank values
+
+Variables can receive null/ empty values. 
+Any variable, dynamic or not, including nested properties, can be populated with a **blank value**. To use blank as an input use the following syntax in an input field: 
+
+```
+%Blank()%
+```
+
+![Screenshot of the Blank value suntax in a Set variable action's field.](media\variable-manipulation\setting-a-variable-to-null.png)
+
+> [!NOTE]
+> Some action parameters can be assigned a blank value if the input argument is nullable. If the parameter cannot receive a blank value, an error will be thrown.
 
 ## Variable names
 

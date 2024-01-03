@@ -8,6 +8,7 @@ ms.date: 08/02/2023
 ms.author: dbekirop
 ms.reviewer: gtrantzas
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -79,7 +80,7 @@ To create an input variable:
     - **External name**: The external name is the name that appears in the cloud flow designer and the flow inputs dialog when calling the flow from the console.
     - **Description**: The description of the variable that appears in the cloud and desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](#sensitive-variables).
-    - **Mark as optional**: Defines whether populating this input variable is mandatory or not. By marking an input variable as optional, you allow it to receive it **Blank** values and ommit passing an actual value will not result in an error.
+    - **Mark as optional**: Defines whether populating this input variable is mandatory or not. By marking an input variable as optional, you allow it to receive it **Blank** values and ommit passing an actual value will not result in an error. You can find information regarding optional input variables in [Optional input variables](#optional-input-variables).
 
     > [!NOTE]
     > The **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
@@ -189,6 +190,18 @@ On the other hand, the default value isn't visible in the variables pane and the
 The eye icon to reveal the value isn't available unless you delete the default text value and provide a new one. New values are visible when populating other datatypes besides text.
 
 ![Screenshot of the flow inputs dialog with a sensitive variable.](media\sensitive-variables\flow-inputs-dialog-sensitive-variable.png)
+
+### Optional input variables
+
+When you create or edit an input or output variable, you can select **Mark as optional** in the respective dialog to make it optional. 
+
+![Screenshot of the dialog to add a new input variable.](media\optional-input-variables\create-optional-input-variable.png)
+
+By default, input variables are mandatory meaning that you must provide:
+- a default value when creating it so that it can be used during debugging (console initiated) runs in case you do not pass another value,
+- populate it with a value of the respective type to ensure proper execution. 
+
+If an input variable is marked as optional both of the above can be ommited as we allow it to receive **Blank** values.
 
 ## Edit variables while debugging a desktop flow
 
