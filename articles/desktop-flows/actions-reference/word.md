@@ -203,11 +203,11 @@ Insert an image to a Word file.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Word instance|No|Word instance||The Word instance to work with|This variable must have been previously specified in a Launch Word or Attach to running Word action|
-|Insert image to|No|Beginning of Word file/End of Word file/Before of Bookmark/After of Bookmark/Before specific text /After specific text||Specifies the position of the Word document that image will be appended|
-|Insert image from|No|File/Clipboard|File|The location of the image to be inserted in the specified Word document|
-|Image path|Yes|File||The full path of the image to be inserted|
-|Text to find|Yes|Text value||The text to find in the Word document for inserting image|Image will be appended before or after any occurrence of the specified text|
-|Bookmark|Yes|Text value||The target bookmark in the Word document where the image will be appended| 
+|Insert image to|N/A|Beginning of Word file/End of Word file/Before of Bookmark/After of Bookmark/Before specific text /After specific text|Beginning of Word file|Specifies the position of the Word document that image will be appended|
+|Insert image from|N/A|File/Clipboard|File|The location of the image to be inserted in the specified Word document|
+|Image path|No|File||The full path of the image to be inserted|
+|Text to find|No|Text value||The text to find in the Word document for inserting image|Image will be appended before or after any occurrence of the specified text|
+|Bookmark|No|Text value||The target bookmark in the Word document where the image will be appended| 
 
 ### Variables produced
 
