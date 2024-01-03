@@ -75,12 +75,8 @@ The hosted RPA capacity insights informs the user of operation health and gives 
 
 ||Badge|Description|
 |----|--------------------|----|
-|![Legend color - Allocated to my hosted machines](media/capacity-utilization/legend-allocated-to-my-hosted-machines.png)|Allocated to my hosted machines|Compliant capacity allocated to hosted machines that the user own or which are shared with him.|
-|![Legend color - Committed to my hosted machine groups](media/capacity-utilization/legend-committed-to-my-hosted-machine-groups.png)|Committed to my hosted machine groups|Compliant capacity committed to hosted machine groups that the user own or which are shared with him.|
-|![Legend color - Utilized by other makers](media/capacity-utilization/legend-utilized-by-other-makers.png)|Utilized by other makers|Compliant capacity allocated or committed to objects which the user do not own and were not shared with him.|
-|![Legend color - Available capacity](media/capacity-utilization/legend-available-capacity.png)|Available capacity|Available capacity for new hosted machines or new committed bots on hosted machine groups.|
-|![Legend color - My overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Sum of capacity over-allocated to hosted machines and over-committed to hosted machine groups which the user own or are shared with him|
-|![Legend color - Overage by other makers](media/capacity-utilization/legend-overage-by-other-makers.png)|Overage by other makers|Sum of capacity over-allocated and over-committed to objects which the user do not own and were not shared with him.|
+|![Legend color - Allocated to my hosted machines](media/capacity-utilization/badge-sufficient-capacity.png)|Allocated to my hosted machines|Compliant capacity allocated to hosted machines that the user own or which are shared with him.|
+
 
 
 
