@@ -79,6 +79,7 @@ To create an input variable:
     - **External name**: The external name is the name that appears in the cloud flow designer and the flow inputs dialog when calling the flow from the console.
     - **Description**: The description of the variable that appears in the cloud and desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](#sensitive-variables).
+    - **Mark as optional**: Defines whether populating this input variable is mandatory or not. By marking an input variable as optional, you allow it to receive it **Blank** values and ommit passing an actual value will not result in an error.
 
     > [!NOTE]
     > The **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
