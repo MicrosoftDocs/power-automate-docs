@@ -78,6 +78,8 @@ The hosted RPA capacity insights informs the user of operation health and gives 
 |![Badge - Sufficient capacity](media/capacity-utilization/badge-sufficient-capacity.png)|Available ||
 |![Badge - Fully utilized](media/capacity-utilization/badge-fully-utilized.png)|Allocated to my hosted machines||
 |![Badge - Capacity overage](media/capacity-utilization/badge-capacity-overage.png)|Allocated to my hosted machines||
+|![Badge - Sufficient pool](media/capacity-utilization/badge-sufficient-pool.png)|Allocated to my hosted machines||
+|![Badge - Empty pool](media/capacity-utilization/badge-empty-pool.png)|Allocated to my hosted machines||
 
 
 
