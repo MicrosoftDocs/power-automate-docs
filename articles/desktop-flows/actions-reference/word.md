@@ -66,34 +66,6 @@ Launches a new Word instance or opens a Word document.
 |Failed to launch Word application|Indicates that Word application could not be launched due to an internal error|
 |Word application is not installed|Indicates that Word application is not installed in the specific machine|
 
-## <a name="closeword"></a> Close Word
-
-Closes a Word instance.
-
-### Input parameters
-
-|Argument|Optional|Accepts|Default Value|Description|
-|-----|-----|-----|-----|-----|
-|Word instance|No|Word instance||The Word instance to close. This variable must have been previously specified in a Launch Word or Attach to running Word action.|
-|Before closing Word|N/A|Do not save document, Save document, Save document as|Don't save document|Specify whether and how to save the document of this instance before closing that instance.| 
-|Document format|N/A|All available formats from Word app|Default (From Extension)|The format of the document.|
-|Document path|No|File||The full path of the document. Insert the desired document file extension according to the selection in the Document format parameter.|
-
-### Variables produced
-
-This action doesn't produce any variables.
-
-### <a name="closeword_onerror"></a> Exceptions
-
-|Exception|Description|
-|-----|-----|
-|Failed to close Word|Indicates a problem closing the Word doucument|
-|Failed to save Word|Indicates a problem saving the Word document|
-|The operation cannot be performed on a read-only document|Indicates that Word document cannot be saved as it has been opened as read-only|
-
-
-
-
 ## <a name="attach"></a> Attach to running Word
 
 Attaches to a Word document that's already open.
@@ -119,7 +91,6 @@ Attaches to a Word document that's already open.
 |Failed to attach to Word document|Indicates a problem attaching to the specified Word doucument|
 |Specified Word document not found|Indicates that the specific Word document could not be found in the provided location|
 |Failed to launch Word|Indicates that Word application could not be launched due to an internal error|
-
 
 ## <a name="saveword"></a> Save Word
 
@@ -147,33 +118,30 @@ This action doesn't produce any variables.
 |The Word instance or the Word document is not initialized|Indicates that Word instance or Word document specified in action is not initiliazed|
 |The operation cannot be performed on a read-only document|Indicates that Word document cannot be saved as it has been opened as read-only|
 
-## <a name="findandreplaceword"></a> Find and replace words in Word document
+## <a name="closeword"></a> Close Word
 
-Finds text and replaces it with another in the active worksheet of an Excel instance.
+Closes a Word instance.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Word instance|No|Word instance||The Word instance to work with|This variable must have been previously specified in a Launch Word or Attach to running Word action|
-|All matches|N/A|Boolean value|False|Whether to find/ and replace text in all the matching occurrences found or in the first matching occurrence only|
-|Text to find|No|Text value||The text to find in the worksheet|
-|Text to replace with|No|Text value||The text used to replace the matching cells|
-|Use wildcards|N/A|Boolean value|False|Whether to use wildcards for the text to find|
-|Match case|N/A|Boolean value|False|Whether to search for case-sensitive data|
-|Match whole words only|N/A|Boolean value|False|Whether to search for words that are the same as the specified text|
+|Word instance|No|Word instance||The Word instance to close. This variable must have been previously specified in a Launch Word or Attach to running Word action.|
+|Before closing Word|N/A|Do not save document, Save document, Save document as|Don't save document|Specify whether and how to save the document of this instance before closing that instance.| 
+|Document format|N/A|All available formats from Word app|Default (From Extension)|The format of the document.|
+|Document path|No|File||The full path of the document. Insert the desired document file extension according to the selection in the Document format parameter.|
 
 ### Variables produced
 
 This action doesn't produce any variables.
 
-### <a name="findandreplaceword_onerror"></a> Exceptions
+### <a name="closeword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
-|Failed to replace text in Word document|Indicates a problem replacing the specified text with the provided input|
-|The Word instance or the Word document is not initialized|Indicates that Word instance or Word document specified in action is not initiliazed|
-|The operation cannot be performed on a read-only document|Indicates that Word document cannot be edited as it has been opened as read-only|
+|Failed to close Word|Indicates a problem closing the Word doucument|
+|Failed to save Word|Indicates a problem saving the Word document|
+|The operation cannot be performed on a read-only document|Indicates that Word document cannot be saved as it has been opened as read-only|
 
 ## <a name="readfromword"></a> Read from Word document
 
@@ -184,8 +152,8 @@ Reads the text content from a document of a Word instance.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Word instance|No|Word instance||The Word instance to work with|This variable must have been previously specified in a Launch Word or Attach to running Word action|
-|Retrieve|N/A|Whole document/Pages/Bookmark|Whole document|Whether to retrieve the content of the whole document, of a specific page or pages, or of a bookmark|
-|Page|No|Numeric value||The pages of the Word document to be read|A range of pages or a list can be provided as 2-5, which will retrieve content from page 2 to page 5 or 2,3,7, retrieve content from 2,3,7 pages|
+|Retrieve|N/A|Whole document/Pages/Bookmark|Whole document|Whether to retrieve the content of the whole document, of specific pages, or a bookmark|
+|Page|No|Numeric value|1|The pages of the Word document to be read. A range of pages or a list can be provided as 2-5, which will retrieve content from page 2 to page 5 or 2,3,7, retrieve content from 2,3,7 pages|
 |Bookmark|No|Text value||The bookmark of the Word document to be read|
 
 ### Variables produced
@@ -252,6 +220,34 @@ This action doesn't produce any variables.
 |The Word instance or the Word document is not initialized|Indicates that Word instance or Word document specified in action is not initiliazed|
 |The operation cannot be performed on a read-only document|Indicates that Word document cannot be edited as it has been opened as read-only|
 |Failed to insert image|Indicates a problem inserting the image in the specified Word document|
+
+## <a name="findandreplaceword"></a> Find and replace words in Word document
+
+Finds text and replaces it with another in the active worksheet of an Excel instance.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Word instance|No|Word instance||The Word instance to work with|This variable must have been previously specified in a Launch Word or Attach to running Word action|
+|All matches|N/A|Boolean value|False|Whether to find/ and replace text in all the matching occurrences found or in the first matching occurrence only|
+|Text to find|No|Text value||The text to find in the worksheet|
+|Text to replace with|No|Text value||The text used to replace the matching cells|
+|Use wildcards|N/A|Boolean value|False|Whether to use wildcards for the text to find|
+|Match case|N/A|Boolean value|False|Whether to search for case-sensitive data|
+|Match whole words only|N/A|Boolean value|False|Whether to search for words that are the same as the specified text|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="findandreplaceword_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to replace text in Word document|Indicates a problem replacing the specified text with the provided input|
+|The Word instance or the Word document is not initialized|Indicates that Word instance or Word document specified in action is not initiliazed|
+|The operation cannot be performed on a read-only document|Indicates that Word document cannot be edited as it has been opened as read-only|
 
 
 ## Known limitations
