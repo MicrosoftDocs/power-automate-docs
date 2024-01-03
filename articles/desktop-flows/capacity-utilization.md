@@ -73,11 +73,11 @@ The hosted RPA capacity overview pie chart helps the user understand what's his 
 
 The hosted RPA capacity insights informs the user of operation health and gives him recommendation in case of compliance issues:
 
-||Badge|Description|
+|Badge||Description|
 |----|--------------------|----|
-|![Legend color - Allocated to my hosted machines](media/capacity-utilization/badge-sufficient-capacity.png)|Allocated to my hosted machines||
-|![Legend color - Allocated to my hosted machines](media/capacity-utilization/badge-fully-utilized.png)|Allocated to my hosted machines||
-|![Legend color - Allocated to my hosted machines](media/capacity-utilization/badge-capacity-overage.png)|Allocated to my hosted machines||
+|![Badge - Sufficient capacity](media/capacity-utilization/badge-sufficient-capacity.png)|Available ||
+|![Badge - Fully utilized](media/capacity-utilization/badge-fully-utilized.png)|Allocated to my hosted machines||
+|![Badge - Capacity overage](media/capacity-utilization/badge-capacity-overage.png)|Allocated to my hosted machines||
 
 
 
