@@ -57,7 +57,7 @@ The 2 pie charts underscore the crucial point that, within a given environment, 
 
 ## Per-capacity details page
 
-### 1. [Hosted RPA Capacity utilization](capacity-utilization-hosted.md)
+### 1. [Hosted RPA capacity utilization](capacity-utilization-hosted.md)
 
 The Hosted RPA capacity allows to run desktop flows with zero infrastructure. It is allocated to hosted machine or committed to hosted machine groups. 
 
