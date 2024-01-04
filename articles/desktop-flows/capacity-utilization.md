@@ -1,6 +1,6 @@
 ---
 title: Capacity utilization within Power Automate
-description: apacity utilization within Power Automate
+description: Capacity utilization within Power Automate
 author: cvassallo
 ms.subservice: desktop-flow
 ms.date: 01/03/2024
@@ -11,7 +11,7 @@ ms.reviewer:
 # Capacity utilization within Power Automate
 
 > [!IMPORTANT]
-> - This feature is in preview.
+> - The capacity utilization page is in preview.
 > - In the January 2024 release, the capacity utilization page only details hosted RPA capacity utilization
 > - Later in Q1 2024, a detailed breakdown of the Process capacity / Unattended RPA capacity utilization will be added to the page
 
@@ -19,15 +19,15 @@ ms.reviewer:
 
 ## Reminder on capacity within Power Automate
 
-Within the Power Automate platform, a <b>‘Capacity’</b> is a purchased item (that can be a license or an add-on) assigned to an the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) that can be utilized by a specific Power Automate object allowing it to carry out premium operation. 
+Within the Power Automate platform, a **‘Capacity’** is a purchased item (that can be a license or an add-on) assigned to an the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) that can be utilized by a specific Power Automate object allowing it to carry out premium operation. 
 <br/><br/>
 Currently, there are 3 types of capacity that can be utilized by Power Automate objects : 
 <br/><br/>
 
 |Capacity|Power Automate object|Consumption mode|Premium operation enabled|
 |----|--------------------|----|----|
-|Hosted RPA capacity|Hosted machine|[Auto-allocation](# "Hosted RPA capacity is auto-allocated at hosted machine creation.")|To be created, each hosted machine requires an hosted RPA capacity allocated.|
-|Hosted RPA capacity|Hosted machine group|Manual commitment|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot when required.|
+|Hosted RPA capacity|Hosted machine|[Auto-allocation](# "Hosted RPA capacity is auto-allocated to hosted machine at its creation.")|To be created, each hosted machine requires an hosted RPA capacity allocated.|
+|Hosted RPA capacity|Hosted machine group|Manual commitment|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot during auto-scaling.|
 |Process capacity / Unattended RPA capacity (legacy)|Machine|Manual allocation & [auto-allocation](# "Capacity can be auto-allocated at unattended desktop flow run time.")|Every capacity allocated to a machine allows it to carry out an extra unattended desktop flow run concurrently.|
 |Process capacity / Unattended RPA capacity (legacy)|Cloud flow|Manual allocation & [auto-allocation](# "Capacity can be auto-allocated at cloud flow save time for service principal owned cloud flow")|Every capacity assigned to a cloud flow enables it, along with all its associated cloud flows, to use premium connectors and execute actions up to a daily limit of 250k Power Platform Requests (stackable limit).|
 
@@ -39,11 +39,11 @@ Currently, there are 3 types of capacity that can be utilized by Power Automate 
 
 <br/>
 
-## Overview page
+## Capacity overview page
 
-The capacity utilization page offers an overview of the environment capacity, detailing their usage and providing suggestions and insights for more efficient management of automations and the desktop infrastructure.
+The capacity utilization page offers an overview of each environment capacity, detailing their usage and providing suggestions and insights for more efficient management of automations and the desktop infrastructure.
 
-The overview page provides:
+The overview page provides for 1) **Hosted RPA capacity** and 2) **Process capacity / Unattended RPA capacity** : 
 - A breakdown of each capacity utilization (my consumption / others' consumption / capacity available / capacity in overage)
 - Insights and recommendation over compliance issues
 
@@ -55,42 +55,17 @@ The overview page provides:
 The 2 pie charts underscore the crucial point that, within a given environment, capacity is a <b>limited resource that users may compete for</b>, necessitating priorization of use cases.<br/><br/>
 
 
-## Hosted RPA capacity
+## Capacity utilization details page
 
-### Hosted RPA capacity overview
+### Hosted RPA capacity
 
-The hosted RPA capacity overview pie chart helps the user understand what's his share of hosted capacity consumption within the environment compared to the other makers, let him known if there is still capacity to scale-up in the future and alerts him when his objects are exceeding environment capacity (= overage): 
+The Hosted RPA capacity allows to run desktop flows with zero infrastructure. It is allocated to hosted machine or committed to hosted machine groups.
 
 ![Hosted capacity overview](media/capacity-utilization/hosted-capacity-overview.png)
 
-||Legend|Description|
-|----|--------------------|----|
-|![Legend color - Allocated to my hosted machines](media/capacity-utilization/legend-allocated-to-my-hosted-machines.png)|Allocated to my hosted machines|Compliant capacity allocated to hosted machines that the user own or which are shared with him.|
-|![Legend color - Committed to my hosted machine groups](media/capacity-utilization/legend-committed-to-my-hosted-machine-groups.png)|Committed to my hosted machine groups|Compliant capacity committed to hosted machine groups that the user own or which are shared with him.|
-|![Legend color - Utilized by other makers](media/capacity-utilization/legend-utilized-by-other-makers.png)|Utilized by other makers|Compliant capacity allocated or committed to objects which the user do not own and were not shared with him.|
-|![Legend color - Available capacity](media/capacity-utilization/legend-available-capacity.png)|Available capacity|Available capacity for new hosted machines or new committed bots on hosted machine groups.|
-|![Legend color - My overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Sum of capacity over-allocated to hosted machines and over-committed to hosted machine groups which the user own or are shared with him|
-|![Legend color - Overage by other makers](media/capacity-utilization/legend-overage-by-other-makers.png)|Overage by other makers|Sum of capacity over-allocated and over-committed to objects which the user do not own and were not shared with him.|
+### Process capacity / Unattended RPA capacity
 
-<br/><br/>
-### Hosted RPA capacity insights 
-
-The hosted RPA capacity insights informs the user of operation health and gives him recommendation in case of compliance issues:
-
-![Hosted capacity insight](media/capacity-utilization/hosted-capacity-insight.png)
-
-|Badge|Message|Insight|
-|----|--------------------|----|
-|![Badge - Sufficient capacity](media/capacity-utilization/badge-sufficient-capacity.png)|There is available capacity for new hosted machines or committed bots on hosted machine groups.|Scale-up possible in the future|
-|![Badge - Fully utilized](media/capacity-utilization/badge-fully-utilized.png)|There is no more capacity for new hosted machines or committed bots on hosted machine groups.|The capacity utilization rate is optimal at 100% but there is no room for scaling-up.|
-|![Badge - Capacity overage](media/capacity-utilization/badge-capacity-overage.png)|User has some over-allocated capacity to his hosted machines or/and over-committed bots to his hosted machine groups.|Uncompliant capacity usage exceeding environment capacity.|
-|![Badge - Sufficient pool](media/capacity-utilization/badge-sufficient-pool.png)|There is a non-empty pool of capacity shared by all hosted machine groups.|All hosted machine groups theoratically have access to at least 1 bot.|
-|![Badge - Empty pool](media/capacity-utilization/badge-empty-pool.png)|The capacity pool shared by all hosted machine groups is empty.|Hosted machine groups won’t be able to spin-up bots when needed. All automation based on them will fail.|
-
-> [!NOTE]
-> - All hosted machine groups share a pool of hosted capacity made of the available capacity and the compliant committed capacity within the environment (which value can be retrieved on the overview pie chart).
-> - For example 1 available capacity (non-allocated to a hosted machine and non-committed to an hosted machine group) will be pooled between all the hosted machine groups with a first arrive first served behavior.
-> - Having a non-empty pool is not always a guarantee of good health depending on the number of hosted machine groups relying on it and the intensity of runs they perform. 
+The Process capacity / Unattended RPA capacity (legacy) is needed to run desktop flows in unattended mode. Each machine performing unattended runs needs to be covered by one capacity.
 
 
 
