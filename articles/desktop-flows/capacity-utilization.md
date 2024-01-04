@@ -32,7 +32,7 @@ Currently, there are 3 types of capacity that can be utilized by Power Automate 
 
 > [!NOTE]
 > - The Unattended RPA capacity (legacy) and the Process capacity have been combined in a single pool. They can seamlessly be utilized by machines (and in Q2 2024 by cloud flow)
-> - The Process capacity allocated to cloud flow is not yet incorporated in the capacity utilization page, it will be in Q2 2024
+> - The Process capacity allocation to cloud flow is not yet incorporated in the capacity utilization page, it will be in Q2 2024
 > - Although the Per Flow Plan is a capacity that can be allocated to a cloud flow, it is not incorporated into the capacity utilization page. It is indeed being phased out in favor of the Process capacity.
 
 <br/>
