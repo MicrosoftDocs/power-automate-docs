@@ -55,7 +55,7 @@ The overview page provides for 1) **Hosted RPA capacity** and 2) **Process capac
 The 2 pie charts underscore the crucial point that, within a given environment, capacity is a <b>limited resource that users may compete for</b>, necessitating priorization of use cases.<br/><br/>
 
 
-## Capacity utilization details page
+## Per-capacity details page
 
 ### Hosted RPA capacity
 
