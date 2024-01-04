@@ -1,6 +1,6 @@
 ---
-title: Process capacity / Unattended RPA capacity utilization 
-description: Process capacity / Unattended RPA capacity utilization 
+title: Unattended RPA capacity utilization 
+description: Unattended RPA capacity utilization 
 author: cvassallo
 ms.subservice: desktop-flow
 ms.date: 01/03/2024
@@ -8,13 +8,14 @@ ms.author: cvassallo
 ms.reviewer: 
 ---
 
-# Process capacity / Unattended RPA capacity utilization 
+# Unattended RPA capacity utilization 
 
 > [!IMPORTANT]
 > - The capacity utilization page is in preview
-> - The Process capacity / Unattended RPA capacity will be 
+> - The Unattended RPA capacity (legacy) and the Process capacity have been combined in a single pool. They can seamlessly be utilized by machines (and in Q2 2024 by cloud flow)
+> - The details allocation of capacity to machine and cloud flow will be released in early 2024
+> - The Process capacity allocated to cloud flow is not yet incorporated in the capacity utilization page, it will be in Q2 2024
 
-<br/>
 
 ## Reminder on Hosted RPA capacity 
 
