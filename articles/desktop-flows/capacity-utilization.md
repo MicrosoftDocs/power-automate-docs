@@ -13,7 +13,7 @@ ms.reviewer:
 > [!IMPORTANT]
 > - The capacity utilization page is in preview.
 > - In the January 2024 release, the capacity utilization page only details hosted RPA capacity utilization
-> - Later in Q1 2024, a detailed breakdown of the Process capacity / Unattended RPA capacity utilization will be added to the page
+> - Later in early 2024, a detailed breakdown of the Process capacity / Unattended RPA capacity utilization will be added to the page
 
 <br/>
 
