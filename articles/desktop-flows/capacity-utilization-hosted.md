@@ -1,6 +1,6 @@
 ---
-title: Capacity utilization within Power Automate
-description: apacity utilization within Power Automate
+title: Hosted RPA Capacity utilization 
+description: Hosted RPA Capacity utilization 
 author: cvassallo
 ms.subservice: desktop-flow
 ms.date: 01/03/2024
@@ -17,7 +17,7 @@ ms.reviewer:
 
 ## Reminder on Hosted RPA capacity 
 
-Within the Power Automate platform, the <b>‘Hosted RPA capacity’</b> is a purchased item (an add-on) assigned to the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) which allows to run desktop flows with zero infrastructure. It is allocated to hosted machine or committed to hosted machine groups :
+Within the Power Automate platform, the **‘Hosted RPA capacity’** is a purchased item (an add-on) assigned to the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) which allows to run desktop flows with zero infrastructure. It is allocated to hosted machine or committed to hosted machine groups :
 <br/><br/>
 
 |Consumming object|Description|Consumption mode|
