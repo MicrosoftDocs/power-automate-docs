@@ -95,7 +95,13 @@ In this section the user can oversee and manage all hosted machines & hosted mac
 
 ## Hosted RPA overage
 
-<br/><br/>
+Overage situation happens when more capacity was consummed 
+
+![Hosted overage](media/capacity-utilization/overage-hosted.png)
+
+![Overage pin-point hosted machine](media/capacity-utilization/overage-pinpoint-HM.png)
+
+![Overage pin-point hosted machine group](media/capacity-utilization/overage-pinpoint-HMG.png)
 
 
 
