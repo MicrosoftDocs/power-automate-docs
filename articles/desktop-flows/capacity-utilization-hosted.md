@@ -8,7 +8,7 @@ ms.author: cvassallo
 ms.reviewer: 
 ---
 
-# Hosted RPA Capacity utilization
+# Hosted RPA capacity utilization
 
 > [!IMPORTANT]
 > - The capacity utilization page is in preview.
