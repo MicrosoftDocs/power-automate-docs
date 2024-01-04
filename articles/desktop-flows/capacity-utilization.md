@@ -57,9 +57,11 @@ The 2 pie charts underscore the crucial point that, within a given environment, 
 
 ## Hosted RPA capacity
 
-#### Hosted RPA capacity overview
+### Hosted RPA capacity overview
 
 The hosted RPA capacity overview pie chart helps the user understand what's his share of hosted capacity consumption within the environment compared to the other makers, let him known if there is still capacity to scale-up in the future and alerts him when his objects are exceeding environment capacity (= overage): 
+
+![Hosted capacity overview](media/capacity-utilization/hosted-capacity-overview.png)
 
 ||Legend|Description|
 |----|--------------------|----|
@@ -70,9 +72,12 @@ The hosted RPA capacity overview pie chart helps the user understand what's his 
 |![Legend color - My overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Sum of capacity over-allocated to hosted machines and over-committed to hosted machine groups which the user own or are shared with him|
 |![Legend color - Overage by other makers](media/capacity-utilization/legend-overage-by-other-makers.png)|Overage by other makers|Sum of capacity over-allocated and over-committed to objects which the user do not own and were not shared with him.|
 
-#### Hosted RPA capacity insights 
+<br/><br/>
+### Hosted RPA capacity insights 
 
 The hosted RPA capacity insights informs the user of operation health and gives him recommendation in case of compliance issues:
+
+![Hosted capacity insight](media/capacity-utilization/hosted-capacity-insight.png)
 
 |Badge|Message|Insight|
 |----|--------------------|----|
