@@ -136,5 +136,5 @@ The **Request capacity** action submits a request to the tenant administrator fo
 
 When the total capacity assigned to an environment is less than the combined capacity allocated to hosted machines and committed to hosted machine groups:
 
-- Firstly, the overage will be identified in the committed capacity of hosted machine groups, starting from the most recently modified committed bot setting to the oldest. 
+- Firstly, the overage will be identified in the committed capacity of hosted machine groups, starting from the most recently created committed bot setting to the oldest. 
 - Secondly, the overage will be identified in the allocated capacity of hosted machines, starting from the most recently created machine to the oldest.
