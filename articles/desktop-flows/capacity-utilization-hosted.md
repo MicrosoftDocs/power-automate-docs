@@ -26,8 +26,8 @@ Within the Power Automate platform, the **‘Hosted RPA capacity’** is a purch
 |Hosted machine group|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot during auto-scaling (= committed bot). This ensures that the necessary resources will always be available for processing your flows.|Manual commitment on hosted machine group.|
 
 > [!NOTE]
-> - A committed capacity to an hosted machine group is still part of the common pool available to all hosted machine group
-> - The hosted machine group with the committment just has the priority of usage over all concurrent hosted machine groups
+> - A committed capacity to an hosted machine group is still part of the common pool available to all hosted machine group.
+> - The hosted machine group with the committment just has the priority of usage over all concurrent hosted machine groups.
 
 <br/>
 
@@ -48,6 +48,7 @@ The hosted RPA capacity overview pie chart helps the user understand what's his 
 |![Legend color - Overage by other makers](media/capacity-utilization/legend-overage-by-other-makers.png)|Overage by other makers|Sum of capacity over-allocated and over-committed to objects which the user do not own and were not shared with him.|
 
 <br/><br/>
+
 ## Hosted RPA capacity insights 
 
 The hosted RPA capacity insights informs the user of operation health and gives him recommendation in case of compliance issues:
@@ -65,7 +66,37 @@ The hosted RPA capacity insights informs the user of operation health and gives 
 > [!NOTE]
 > - All hosted machine groups share a pool of hosted capacity made of the available capacity and the compliant committed capacity within the environment (which value can be retrieved on the overview pie chart).
 > - For example 1 available capacity (non-allocated to a hosted machine and non-committed to an hosted machine group) will be pooled between all the hosted machine groups with a first arrive first served behavior.
-> - Having a non-empty pool is not always a guarantee of good health depending on the number of hosted machine groups relying on it and the intensity of runs they perform. 
+> - Having a non-empty pool is not always a guarantee of good health depending on the number of hosted machine groups relying on it and the intensity of runs they perform.
+
+<br/><br/>
+
+## Hosted RPA utilization details
+
+In this section the user can oversee and manage all hosted machines & hosted machine groups he has access to (as owner or through sharing) : 
+
+### 1. Hosted Machines
+
+![Hosted machine details](media/capacity-utilization/hosted-details-hostedmachine.png)
+
+> [!NOTE]
+> - Every hosted machine gets auto-allocated 1 hosted capacity at creation except for hosted machine based on trial user licenses.
+> - Hosted machines can be, when necessary, prioritize based on attended and unattended runs.
+
+
+### 2. Hosted Machine Groups
+
+![Hosted machine group details](media/capacity-utilization/hosted-details-hostedmachinegroup.png)
+
+> [!NOTE]
+> - The 'Active bots' column refers to machines currently spin-up and consumming hosted capacity from the shared pool.
+> - Hosted machine groups can be, when necessary, prioritize based on unattended runs.
+
+<br/><br/>
+
+## Hosted RPA overage
+
+<br/><br/>
+
 
 
 
