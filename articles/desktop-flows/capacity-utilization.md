@@ -74,15 +74,18 @@ The hosted RPA capacity overview pie chart helps the user understand what's his 
 
 The hosted RPA capacity insights informs the user of operation health and gives him recommendation in case of compliance issues:
 
-|Badge||Description|
+|Badge|Message|Insight|
 |----|--------------------|----|
-|![Badge - Sufficient capacity](media/capacity-utilization/badge-sufficient-capacity.png)|Available ||
-|![Badge - Fully utilized](media/capacity-utilization/badge-fully-utilized.png)|Allocated to my hosted machines||
-|![Badge - Capacity overage](media/capacity-utilization/badge-capacity-overage.png)|Allocated to my hosted machines||
-|![Badge - Sufficient pool](media/capacity-utilization/badge-sufficient-pool.png)|Allocated to my hosted machines||
-|![Badge - Empty pool](media/capacity-utilization/badge-empty-pool.png)|Allocated to my hosted machines||
+|![Badge - Sufficient capacity](media/capacity-utilization/badge-sufficient-capacity.png)|There is available capacity for new hosted machines or committed bots on hosted machine groups.|Scale-up possible in the future|
+|![Badge - Fully utilized](media/capacity-utilization/badge-fully-utilized.png)|There is no more capacity for new hosted machines or committed bots on hosted machine groups.|The capacity utilization rate is optimal at 100% but there is no room for scaling-up.|
+|![Badge - Capacity overage](media/capacity-utilization/badge-capacity-overage.png)|User has some over-allocated capacity to his hosted machines or/and over-committed bots to his hosted machine groups.|Uncompliant capacity usage exceeding environment capacity.|
+|![Badge - Sufficient pool](media/capacity-utilization/badge-sufficient-pool.png)|There is a non-empty pool of capacity shared by all hosted machine groups.|All hosted machine groups theoratically have access to at least 1 bot.|
+|![Badge - Empty pool](media/capacity-utilization/badge-empty-pool.png)|The capacity pool shared by all hosted machine groups is empty.|Hosted machine groups won’t be able to spin-up bots when needed. All automation based on them will fail.|
 
-
+> [!NOTE]
+> - All hosted machine groups share a pool of hosted capacity made of the available capacity and the compliant committed capacity within the environment (which value can be retrieved on the overview pie chart).
+> - For example 1 available capacity (non-allocated to a hosted machine and non-committed to an hosted machine group) will be pooled between all the hosted machine groups with a first arrive first served behavior.
+> - Having a non-empty pool is not always a guarantee of good health depending on the number of hosted machine groups relying on it and the intensity of runs they perform. 
 
 
 
