@@ -63,7 +63,7 @@ By default, for all new processes that use a custom workspace, the optimized dat
 ## Power Bi Data Model Structure
 By default, when a process is published to Power Bi, a default data source and a corresponding report is created. The structure of the dataset in the published data source in Power Bi looks as following:
 
-:::image type="content" source="media/process-mining-pbi-data-structure/DataModel.png" alt-text="Diagram of Optimized data model.":::
+:::image type="content" source="media/process-mining-pbi-data-structure/DataModel2.png" alt-text="Diagram of Optimized data model.":::
  
 ### Relationships
 All relationships necessary for filtering and interconnectivity of visuals are pre-defined in the published data model. There is no need to manually create any additional relationships unless other data sources are connected – for this scenario, use the Power BI composite data model and build any relationships on top of that model.
