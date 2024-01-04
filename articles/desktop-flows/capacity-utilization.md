@@ -39,7 +39,7 @@ Currently, there are 3 types of capacity that can be utilized by Power Automate 
 
 <br/>
 
-## Capacity overview page
+## Capacity utilization overview page
 
 The capacity utilization page offers an overview of each environment capacity, detailing their usage and providing suggestions and insights for more efficient management of automations and the desktop infrastructure.
 
@@ -57,15 +57,18 @@ The 2 pie charts underscore the crucial point that, within a given environment, 
 
 ## Per-capacity details page
 
-### Hosted RPA capacity
+### 1. [Hosted RPA Capacity utilization](capacity-utilization-hosted.md)
 
-The Hosted RPA capacity allows to run desktop flows with zero infrastructure. It is allocated to hosted machine or committed to hosted machine groups.
+The Hosted RPA capacity allows to run desktop flows with zero infrastructure. It is allocated to hosted machine or committed to hosted machine groups. 
 
-![Hosted capacity overview](media/capacity-utilization/hosted-capacity-overview.png)
-
-### Process capacity / Unattended RPA capacity
+### 2. [Process capacity / Unattended RPA capacity utilization](capacity-utilization-process.md)
 
 The Process capacity / Unattended RPA capacity (legacy) is needed to run desktop flows in unattended mode. Each machine performing unattended runs needs to be covered by one capacity.
+
+<br/><br/>
+
+
+
 
 
 
