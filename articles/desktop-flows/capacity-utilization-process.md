@@ -12,9 +12,8 @@ ms.reviewer:
 
 > [!IMPORTANT]
 > - The capacity utilization page is in preview
-> - The Unattended RPA capacity (legacy) and the Process capacity have been combined in a single pool. They can seamlessly be utilized by machines (and in Q2 2024 by cloud flow)
-> - The details allocation of capacity to machine and cloud flow will be released in early 2024
-> - The Process capacity allocated to cloud flow is not yet incorporated in the capacity utilization page, it will be in Q2 2024
+> - The Unattended RPA capacity (legacy) and the Process capacity have been combined in a single pool. They can seamlessly be utilized by machines (and coming in Q2 2024, by cloud flows)
+> - The details allocation of those capacity to machines and cloud flows will be incorporated in the capacity utilization page in Q2 2024
 
 
 ## Reminder on Hosted RPA capacity 
