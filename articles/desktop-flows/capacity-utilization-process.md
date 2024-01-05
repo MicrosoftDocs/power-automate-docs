@@ -45,7 +45,8 @@ The '**Unattended RPA capacity overview**' pie chart helps the user understand w
 
 
 > [!NOTE]
-> - The chart displays an environment-wide report over unattended capacity consumption. 
+> - The current chart displays an environment-wide report over unattended capacity consumption (it does not distinguish the user's machines consumption from others' machines consumption)
+> - This distinction will be added with the manual allocation of Unattended RPA capacity to the machine in Q2 2024
 
 <br/><br/>
 
@@ -65,48 +66,29 @@ The '**Unattended capacity insights**' card informs the user of operation health
 
 <br/><br/>
 
-## Hosted RPA capacity overage
+## Unattended RPA capacity overage
 
-Capacity overage in an environment occurs when **the capacity utilized by hosted machines and hosted machine groups surpasses the assigned capacity of the environment**. In such instances, specific hosted machines and/or hosted machine groups may be identified as exceeding capacity. To prevent any disruption, it is crucial to promptly rectify the situation:
+Capacity overage in an environment occurs when **the capacity utilized by unattended machines surpasses the assigned capacity of the environment**. To prevent any disruption, it is crucial to promptly rectify the situation:
 
-![Hosted overage](media/capacity-utilization/overage-hosted.png)
-<br><br>
-### Hosted machine in overage:
-Hosted machines identified in overage risk being turned-off after a grace period:<br><br>
-![Overage pin-point hosted machine](media/capacity-utilization/overage-pinpoint-HM.png)
-<br><br>
-### Hosted machine group in overage:
-Hosted machine groups will not honour their over-committed bots expected behaviour:<br><br>
-![Overage pin-point hosted machine group](media/capacity-utilization/overage-pinpoint-HMG.png)
-> [!NOTE]
-> - An hosted machine group can have a sub-set of its committed bots identified as in overage (= over-committed), in that case, only the compliant committed bots will be honoured.
-
+![Unattended overage](media/capacity-utilization/overage-unattended.png)
 <br><br>
 
-### How to fix hosted capacity overage?
-When the user owns (or has been shared) some hosted machines or hosted machine groups in overage, the **Fix capacity button** appears in the Hosted Capacty Insight card, it provides corrective actions: 
+### How to fix unattended capacity overage?
+When some unattended machines are in overage, the **Fix capacity button** appears in the 'Unattended capacty insights' card, it provides corrective actions: 
 
 |Fix capacity - Corrective actions|
 |-|
-|![Hosted fix capacity](media/capacity-utilization/hosted-fix-capacity.png)|
+|![Unattended fix capacity](media/capacity-utilization/unattended-fix-capacity.png)|
 
 <br><br>
 The **Request capacity** action submits a request to the tenant administrator for the assignation of capacity to the environment:
 <br>
 |Fix capacity - Request capacity|
 |-|
-|![Hosted fix capacity](media/capacity-utilization/hosted-capacity-request.png)|
+|![Unattended fix capacity](media/capacity-utilization/unattended-capacity-request.png)|
 
 > [!NOTE]
-> - The pre-set value in the request capacity modal is equal to the total overage value in the environment (the user's overage and the other users' overage)
-> - This ensures that when the additional capacity is assigned to the environment, the user who made the request has its hosted machines or hosted machine groups returned to compliance
-> - If the user submits a smaller request, when the additional capacity is provisioned to the environment, there’s no guarantee that their own hosted machines or hosted machine groups will return to compliance. The extra capacity might be allocated to other overage objects owned by different users
+> - The pre-set value in the request capacity modal is equal to the total overage value in the environment 
 
 <br><br>
 
-### What are the rules governing which objects are identified as in overage ?
-
-When the total capacity assigned to an environment is less than the combined capacity allocated to hosted machines and committed to hosted machine groups:
-
-- Firstly, the overage will be identified in the committed capacity of hosted machine groups, starting from the most recently created committed bot setting to the oldest. 
-- Secondly, the overage will be identified in the allocated capacity of hosted machines, starting from the most recently created machine to the oldest.
