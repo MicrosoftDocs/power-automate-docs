@@ -12,7 +12,8 @@ ms.reviewer:
 
 > [!IMPORTANT]
 > - The capacity utilization page is in preview.
-> - In the January 2024 release, the capacity utilization page only details hosted RPA capacity utilization
+> - In its January 2024 release, the capacity utilization page details only hosted RPA capacity utilization.
+> - A second release in Q2 2024 will incoporate the Process license utilization by machines and cloud flows
 
 <br/>
 
