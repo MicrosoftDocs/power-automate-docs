@@ -17,7 +17,7 @@ ms.reviewer:
 
 ## Reminder on Hosted RPA capacity 
 
-Within the Power Automate platform, the **‘Hosted RPA capacity’** is a purchased item (an [add-on](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on)) assigned to the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) which allows to run desktop flows with zero infrastructure. It is allocated to hosted machines or committed to hosted machine groups :
+Within the Power Automate platform, the '**Hosted RPA capacity**' is a purchased item (an [add-on](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on)) assigned to the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) which allows to run desktop flows with zero infrastructure. It is allocated to hosted machines or committed to hosted machine groups :
 <br/><br/>
 
 |Consumming object|Description|Consumption mode|
@@ -34,7 +34,7 @@ Within the Power Automate platform, the **‘Hosted RPA capacity’** is a purch
 
 ## Hosted RPA capacity overview
 
-The **'Hosted capacity overview'** pie chart helps the user understand what's his share of hosted capacity consumption within the environment compared to the other makers, let him known if there is still capacity to scale-up in the future and alerts him when his objects are exceeding environment capacity (= overage): 
+The '**Hosted RPA capacity overview**' pie chart helps the user understand what's his share of hosted capacity consumption within the environment compared to the other makers, let him known if there is still capacity to scale-up in the future and alerts him when his objects are exceeding environment capacity (= overage): 
 
 ![Hosted capacity overview](media/capacity-utilization/hosted-capacity-overview.png)
 
