@@ -18,7 +18,7 @@ ms.reviewer:
 
 ## Reminder on Unattended RPA capacity 
 
-Within the Power Automate platform, the **‘Unattended RPA capacity’** is a purchased item (an [add-on](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on)) assigned to the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) which allows to run desktop flows with zero infrastructure. The Unattended RPA capacity (or Process capacity) is needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run concurrently.
+Within the Power Automate platform, the **‘Unattended RPA capacity’** is a purchased item (an [add-on](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on)) assigned to the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) which allows to run desktop flows autonomously without human interaction. The Unattended RPA capacity (or Process capacity) is needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run concurrently.
 <br/><br/>
 
 |Consumming object|Description|Consumption mode|
