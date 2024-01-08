@@ -409,6 +409,14 @@
         href: ./desktop-flows/hosted-machine-groups.md
     - name: Scale with AVD starter kit (deprecated)
       href: ./desktop-flows/avd-overview.md
+  - name: Manage your capacity utilization
+    items:
+    - name: Capacity utilization within Power Automate
+      href: ./desktop-flows/capacity-utilization.md
+    - name: Hosted RPA capacity utilization
+      href: ./desktop-flows/capacity-utilization-hosted.md
+    - name: Unattended RPA capacity utilization
+      href: ./desktop-flows/capacity-utilization-process.md
   - name: Use credentials in desktop flow connections (preview)
     href: ./desktop-flows/manage-credentials.md
   - name: Manage desktop flows
