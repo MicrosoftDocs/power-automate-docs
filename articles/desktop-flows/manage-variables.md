@@ -185,9 +185,9 @@ When you create or edit an input or output variable, you can select **Mark as se
 
 The default value of an input variable is visible in the creating or editing dialog when sensitivity is enabled. This value exists only for testing and debugging purposes, as you have to initialize each input in production runs through the portal or the console. The default values aren't protected in the action modals and the flow definition in Dataverse.
 
-On the other hand, the default value isn't visible in the variables pane and the **Flow input** dialog, which appears when you run a desktop flow with input variables through the console.
+On the other hand, the default value is not visible in the variables pane and the **Flow input** dialog, which appears when you run a desktop flow with input variables through the console.
 
-The eye icon to reveal the value isn't available unless you delete the default text value and provide a new one. New values are visible when populating other datatypes besides text.
+The eye icon to reveal the value is not available unless you delete the default text value and provide a new one. New values are visible when populating other datatypes besides text.
 
 ![Screenshot of the flow inputs dialog with a sensitive variable.](media\sensitive-variables\flow-inputs-dialog-sensitive-variable.png)
 
@@ -195,7 +195,7 @@ The eye icon to reveal the value isn't available unless you delete the default t
 
 When you create or edit an input or output variable, you can select **Mark as optional** in the respective dialog to make it optional. 
 
-![Screenshot of the dialog to add a new input variable.](media\optional-input-variables\create-optional-input-variable.png)
+![Screenshot of the mark as optional control.](media\optional-input-variables\create-optional-input-variable.png)
 
 By default, input variables are mandatory meaning that you must provide:
 - a default value when creating it so that it can be used during debugging (console initiated) runs in case you do not pass another value,

@@ -39,7 +39,7 @@ To include a hardcoded text value inside a variable, use quotes. Every value bet
 ## Using blank values
 
 Variables can receive null/ empty values. 
-Any variable, dynamic or not, including nested properties, can be populated with a **blank value**. To check whether a variable holds a blank value use the Is blank/ Is not blank options when configuring the respective [conditional actions](./actions-reference/conditionals.md/#conditional-actions).
+Any variable, dynamic or not, including nested properties, can be populated with a **blank value**. To check whether a variable holds a blank value use the Is blank/ Is not blank options when configuring the respective [conditional actions](./actions-reference/conditionals).
 
 > [!NOTE]
 > Some action parameters can be assigned a blank value if the input argument is nullable. If the parameter cannot receive a blank value, an error will be thrown.
