@@ -19,19 +19,19 @@ search.audienceType:
 
 ## Work with guest users
 
-If you assign a guest user to an approval, that user won't be able to view or act on the approval by default. The guest user must be assigned a valid Power Automate license (per user license or Microsoft 365-based user license) to view or respond to the approval.
+If you assign a guest user to an approval, that user can't view or act on the approval by default. The guest user must be assigned a valid Power Automate license (per user license or Microsoft 365-based user license) to view or respond to the approval.
   
 ## Adaptive cards mismatch in Microsoft Teams
 
 There are multiple ways in which you can notify an approver when a flow runs. By default, all flows that handle approvals send an email notification. You can also send an adaptive card with the approval to users in Microsoft Teams. If the approver responds through the email notification or through the approval action center, the card in Microsoft Teams won't auto-update. This can lead to situations where there's a mismatch between the status shown on the adaptive card and that of the flow.
 
-To avoid this, you can disable the default notification email that's sent to the user as part of approval creation.
+To avoid this, you can disable the default notification email sent to the user as part of approval creation.
 
 ![Disable default email notification.](./media/create-approval-response-options/disable-default-notification.png)
 
 ## Abandoned approvals in the approval action center
 
-As part of the flow, you can send an approval request to a user and wait for a response. Today, an approval flow can wait for 28 days. If the wait time exceeds 28 days, that flow will fail. This only impacts the flow itself, meaning that the approval continues to exist in the action center. This can lead to cases where there are abandoned approvals in the approval action center that have no flow waiting on them. The requestor or environment admin will need to manually delete these approvals from the action center.
+As part of the flow, you can send an approval request to a user and wait for a response. An approval flow can wait for 28 days. If the wait time exceeds 28 days, that flow fails. This only impacts the flow itself, meaning that the approval continues to exist in the action center. This can lead to cases where there are abandoned approvals in the approval action center that have no flow waiting on them. The requestor or environment admin then needs to manually delete these approvals from the action center.
 
 ## Anchors
 
@@ -43,7 +43,7 @@ Data templating isn't fully supported for adaptive cards in Power Automate. As a
 
 ## Approvals with custom responses set to Everyone must approve
 
-Approvals that rely on custom responses can fail if they're sent to many users with the type set to "Everyone must approve". This failure is due to data size limitations of the results field.
+Approvals that rely on custom responses can fail if they're sent to many users with the type set to **Everyone must approve**. This failure is due to data size limitations of the results field.
 
 ### PowerApps (V2) trigger doesn't support non-open API flows
 
@@ -61,16 +61,15 @@ It's possible to create flows with the approval connector where you use the *Cre
 
 ## Use approval outcomes in loops
 
-When you use approvals with *do until* loops, users need to account for all possible outcomes of a flow. If not, the flows could be stuck in infinite loops. For 'basic' and 'await all approvals', the final states can be *Approved*, *Rejected*, or *Canceled*. For custom approvals, it's based on what the user chooses to have as the options for the approval. Use a condition or switch statement with approval flow instead of *do until* loops.
+When you use approvals with *do until* loops, users need to account for all possible outcomes of a flow. If not, the flows could be stuck in infinite loops. For *basic* and *await all approvals*, the final states can be **Approved**, **Rejected**, or **Canceled**. Custom approvals are based on what the user chooses to have as the options for the approval. Use a condition or switch statement with approval flow instead of *do until* loops.
 
 ## View details of an approval
 
 To view details of an approval, select an individual approval to open it. Formerly, you would select the **Details** column on the **Received** tab of the Approvals list view, but this column is now removed.
 
-
 ## Issues with email notifications
 
-Here's an explanation of the process for sending an approval email notification, as well as a description of the possible email notification statuses and troubleshooting.
+Here's an explanation of the process for sending an approval email notification, and a description of the possible email notification statuses and troubleshooting.
 
 Sending approval email notifications is a two-step process:
 
