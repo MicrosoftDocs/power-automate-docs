@@ -187,17 +187,17 @@ You must have an app registered to interact with Dataverse table and Custom API.
 
 Follow these steps to perform the app registration.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/).
+1. Sign in to the <a target="_blank" ref="https://entra.microsoft.com/">Microsoft Entra admin center]</a>.
 
 1. Select **App Registration** from the Application section under **Identity**.
 
 1. Select New registration and provide a name, then select **Register**.
 
 1. Under **API permission**, select **Add a permission** and choose **Dynamic CRM**.
-    
+
     :::image type="content" source="media/app-registration-dynamics-crm.png" alt-text="A screenshot of the Request API permissions options within the Approvals kit App.":::
 
-1. Choose **Delegated permission** and select user_impersonation. 
+1. Choose **Delegated permission** and select user_impersonation.
 1. Select **Add Permissions**.
 
 :::image type="content" source="media/app-registration-dynamics-crm-delegated-permissions.png" alt-text="A screenshot of the Approvals kit App API permissions with the Request API permissions panel open.":::
@@ -215,11 +215,16 @@ Follow these steps to perform the app registration.
 
 Now you'll edit the **Approvals kit** custom connector present inside Business Approval solution.
 
+1. Under the **General** tab, modify the following:
+
+    - Specify that the **Host** is the host name of your dataverse instance. For example contoso.crm.dynamics.com
+
 1. Under the **Security** tab, modify the following:
 
     - Select Authentication type as **OAuth 2.0**.
-    - Enter the Client ID, Secret noted in previous section.
-    - Specify the environment URL under Resource URL section.
+    - Enter the Client ID
+    - Enter the Secret noted in previous section.
+    - Specify the environment URL under Resource URL section. This Resource url contains the link to your environment. This is in format https://yourenv.crm[x].dynamics.com where [x] is optional depending on your region
 
 1. Copy the Redirect URL
 
@@ -241,6 +246,12 @@ Now you'll edit the **Approvals kit** custom connector present inside Business A
     - Edit the **Custom connector** again and test the **GetPublishedWorkflow** operation.
 
 The operation should run successfully with status as 200.
+
+  > [!NOTES]:
+  >
+  > - Not sure on your region review https://learn.microsoft.com/power-platform/admin/new-datacenter-regions
+  > - You can obtain you environment url from https://aka.ms/ppac environments or the Power Apps Portal in the settings of the environment.
+  > - Issue [#144 [Business Approvals Kit - BUG] Approvals Kit Upgrade](https://github.com/microsoft/powercat-business-approvals-kit/issues/144) - Documents the need to update connector with OAuth Secret is tracking the need to update the custom connector after upgrade
 
 #### Activate the core cloud flows
 

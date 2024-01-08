@@ -92,6 +92,7 @@ The following tables are used for definition.
 |Business Approval Work Profile|Set up for each approver to define settings.|Out of office|
 |Business Approval Holiday Calendar|Define the company holidays.|Non work days and weekend such as Saturdays|
 |Business Approval Public Holidays|Define the holidays separate from the organization holiday.||
+|Business Approver OOF|Defines the user out of office settings.||
 
 #### Version tables
 

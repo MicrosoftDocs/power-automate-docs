@@ -233,7 +233,7 @@ Once you finish configuring workflows, you must publish the workflow to be able 
 
 1. Open process you want to publish.
 
-1. Select **Workflows**.
+1. Select **Process Designer**.
 
 1. Select **Publish**.
 
