@@ -115,14 +115,15 @@ Hosted machine groups will not honour their over-committed bots expected behavio
 When the user owns some hosted machines or hosted machine groups in overage, the **Fix capacity button** appears in the 'Hosted capacty insight' card, it provides a list of corrective actions: 
 
 |Fix capacity - Corrective actions|
-|-|
+|-------|
 |![Hosted fix capacity](media/capacity-utilization/hosted-fix-capacity.png)|
 
 <br><br>
 The **Request capacity** action submits a request to the tenant administrator for assignation of capacity to the environment:
 <br>
+
 |Fix capacity - Request capacity|
-|-|
+|---------|
 |![Hosted fix capacity](media/capacity-utilization/hosted-capacity-request.png)|
 
 > [!NOTE]
