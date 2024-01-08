@@ -29,7 +29,7 @@ Currently, there are 3 types of capacity that can be utilized by Power Automate 
 |Hosted RPA capacity|Hosted machine|[Auto-allocation](# "Hosted RPA capacity is auto-allocated to the hosted machine at its creation.")|To be created, each hosted machine requires an hosted RPA capacity allocated.|
 |Hosted RPA capacity|Hosted machine group|Manual commitment|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot during auto-scaling.|
 |Unattended RPA capacity (or Process capacity)|Machine|[Auto-allocation](# "Capacity is auto-allocated to the machine at unattended desktop flow run time.")|Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run concurrently.|
-|Process capacity|Cloud flow|Manual allocation|Every capacity assigned to a cloud flow enables it, along with all its associated cloud flows, to use premium connectors and execute actions up to a daily limit of 250k Power Platform Requests (stackable limit).|
+|Process capacity|Cloud flow|Manual allocation|Every capacity allocated to a cloud flow enables it, along with all its associated cloud flows, to use premium connectors and execute actions up to a daily limit of 250k Power Platform Requests (stackable limit).|
 
 > [!NOTE]
 > - The Unattended RPA capacity (legacy) and the Process capacity have been combined in a single pool. They can seamlessly be utilized by machines (and coming in Q2 2024, by cloud flows).
