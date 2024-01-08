@@ -203,6 +203,62 @@ By default, input variables are mandatory meaning that you must provide:
 
 If an input variable is marked as optional both of the above can be ommited as we allow it to receive **Blank** values.
 
+### Setting optional inputs' default value to Blank
+
+#### Text variables 
+
+To set a text  variable's default value to **blank**, 
+  * set the **Data type** property to **Text**
+  * Enable **Mark as optional** control
+  * make sure the **Default value** property is empty 
+
+![Screenshot of text variable input configuration to use blank as its default value.](media\variables-pane\pad-using-blank-in-text-input.png)
+
+#### Blank numeric input 
+
+To set a numeric variable's default value to **blank**, 
+  * set the **Data type** property to **Number**
+  * Enable **Mark as optional** control 
+  * make sure the **Default value** property is empty 
+
+![Screenshot of numeric variable input configuration to use blank as its default value.](media\variables-pane\pad-using-blank-in-numeric-input.png)
+
+#### Blank boolean input 
+
+To set a boolean variable's default value to **blank**, 
+  * Set the **Data type** property to **Boolean**
+  * Enable **Mark as optional** control 
+  * Make sure the **Default value** property is set to **< Blank >** 
+
+![Screenshot of boolean variable input configuration to use blank as its default value.](media\variables-pane\pad-using-blank-in-boolean-input.png)
+
+#### Blank custom object input 
+
+To set a custom object's default value to **blank**, 
+  * Set the **Data type** property to **Custom object**
+  * Enable **Mark as optional** control 
+  * Make sure the **Default value** property is set to **< Blank >**. To achieve this, click on the **Edit** button next to the property and in the **Edit custom object** window, enable the **JSON editor** control. There delete all the contents and click on **Save**.
+
+![Screenshot of custom object input configuration to use blank as its default value.](media\variables-pane\pad-using-blank-in-custom-object-input.png)
+
+#### Blank list input 
+
+To set a list's default value to **blank**, 
+  * Set the **Data type** property to **List**
+  * Enable **Mark as optional** control 
+  * Make sure the **Default value** property is set to **< Blank >**. To achieve this, click on the **Edit** button next to the property and in the **Edit list** window, enable the **JSON editor** control. There delete all the contents and click on **Save**.
+
+![Screenshot of list input configuration to use blank as its default value.](media\variables-pane\pad-using-blank-in-list-input.png)
+
+#### Blank datatable input
+
+To set a datatable's default value to **blank**, 
+  * Set the **Data type** property to **Datatable**
+  * Enable **Mark as optional** control 
+  * Make sure the **Default value** property is set to **< Blank >**. To achieve this, click on the **Edit** button next to the property and in the **Edit datatable** window, enable the **JSON editor** control. There delete all the contents and click on **Save**.
+
+![Screenshot of datatable input configuration to use blank as its default value.](media\variables-pane\pad-using-blank-in-datatable-input.png)
+
 ## Edit variables while debugging a desktop flow
 
 In the design console, Power Automate desktop supports editing common variable types while running the flow in the debugger. Currently, supported data types include, text, numeric, datetime, and boolean values.
