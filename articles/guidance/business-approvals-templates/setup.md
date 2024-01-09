@@ -249,7 +249,7 @@ The operation should run successfully with status as 200.
 
   > [!NOTES]:
   >
-  > - Not sure on your region? You can review https://learn.microsoft.com/power-platform/admin/new-datacenter-regions
+  > - Not sure on your region? You can review /power-platform/admin/new-datacenter-regions
   > - You can obtain you environment url from https://aka.ms/ppac environments or the Power Apps Portal in the settings of the environment.
   > - Issue [#144 [Business Approvals Kit - BUG] Approvals Kit Upgrade](https://github.com/microsoft/powercat-business-approvals-kit/issues/144) - Documents the need to update connector with OAuth Secret is tracking the need to update the custom connector after upgrade
 
