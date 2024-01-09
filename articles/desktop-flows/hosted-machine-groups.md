@@ -139,7 +139,7 @@ Custom VM images must meet the following requirements:
  - Generalized VM image
  - 127 GB limit on VM image size
  - Microsoft Edge version 80 or higher
- - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
+ - The image definition is recommended to have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
  
 Learn how to create a generalized VM image in Azure in [Upload a generalized Windows VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed).
@@ -166,6 +166,7 @@ Learn how to create a generalized VM image in Azure in [Upload a generalized Win
     - Korea: Korea Central
     - Norway: Norway East
     - South Africa - South Africa North
+    - Southeast Asia - Singapore
     - Switzerland: Switzerland North
     - United Arab Emirates: UAE North
     - United Kingdom: UK West
@@ -404,7 +405,9 @@ You can update the VM image that is used by your hosted machine group. This is b
 1. From the drop  down list, select the updated VM image to be used by the hosted machine group.
 
 > [!NOTE]
-> Upon updating of VM image, all existing hosted bots (if any) will complete their ongoing desktop flow runs prior to being reprovisioned with the new VM image.
+> 
+> - Upon updating of VM image, all existing hosted bots (if any) will complete their ongoing desktop flow runs prior to being reprovisioned with the new VM image.
+> - The current and updated VM image must have the same security type. For example, you cannot update from non-trusted launch enabled to trusted launch enabled, and vice versa.
 
 
 :::image type="content" source="media/hosted-machine-groups/vm-image-update-select.png" alt-text="Screenshot of the VM image update action on the hosted machine group details page.":::
@@ -498,6 +501,7 @@ The following list displays all the supported geographies in the public clouds:
 - Korea
 - Norway
 - South Africa
+- Southeast Asia
 - Switzerland
 - United Arab Emirates
 - United Kingdom
