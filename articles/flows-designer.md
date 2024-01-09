@@ -192,7 +192,7 @@ If you want to work with missing functionalities in the designer, select **Switc
 
 ## FAQ 
 
-### Why do I get this error when signing in? "O.split(...).at is not a function"
+### Why do I get this error "O.split(...).at is not a function"  when signing in? 
 
 Power Automate designer doesn't support browsers that are more than two (2) years old. You could see the aforementioned or similar errors in the designer if your browser version is old. It is generally a good idea to update your browser to latest version to avoid such issues. 
 
