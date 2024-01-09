@@ -187,7 +187,7 @@ You must have an app registered to interact with Dataverse table and Custom API.
 
 Follow these steps to perform the app registration.
 
-1. Sign in to the <a target="_blank" ref="https://entra.microsoft.com/">Microsoft Entra admin center]</a>.
+1. Open in to the [Microsoft Entra admin center](https://entra.microsoft.com/) in a new window.
 
 1. Select **App Registration** from the Application section under **Identity**.
 
@@ -249,7 +249,7 @@ The operation should run successfully with status as 200.
 
   > [!NOTES]:
   >
-  > - Not sure on your region review https://learn.microsoft.com/power-platform/admin/new-datacenter-regions
+  > - Not sure on your region? You can review https://learn.microsoft.com/power-platform/admin/new-datacenter-regions
   > - You can obtain you environment url from https://aka.ms/ppac environments or the Power Apps Portal in the settings of the environment.
   > - Issue [#144 [Business Approvals Kit - BUG] Approvals Kit Upgrade](https://github.com/microsoft/powercat-business-approvals-kit/issues/144) - Documents the need to update connector with OAuth Secret is tracking the need to update the custom connector after upgrade
 
@@ -257,7 +257,7 @@ The operation should run successfully with status as 200.
 
 The template includes multiple core components that are used to manage the approval experience. To use the template, you must turn on the cloud flows that came with the template.
 
-1. Go to [make.powerapps.com](https://make.powerapps.com/).
+1. Open [make.powerapps.com](https://make.powerapps.com/) in a new window.
 1. Select **Solutions**, and open the **Business Approvals Kit** solution to view the flows.
 1. Activate cloud flows using in the list to ensure no errors occur as there are dependencies across the flows. Some cloud flows can be enabled when importing the solution in the previous steps.
 
