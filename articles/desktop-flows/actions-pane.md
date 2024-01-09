@@ -33,6 +33,50 @@ After the deployment, the modal of the action opens and displays the available p
 
 :::image type="content" source="media/adding-actions/action-properties.png" alt-text="Screenshot of the modal of an action.":::
 
+### Adding actions from the suggested actions panel (preview)
+In addition to adding actions from the actions panel, you can also use the suggested actions panel.
+
+> [!IMPORTANT]
+>
+> - This feature is in preview. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - To understand the capabilities and limitations of this feature, go to [FAQ for suggested actions in Power Automate for desktop](../faqs-action-suggestions-power-automate-desktop.md)
+
+### Availability by region
+Currently, the suggested actions functionality in Power Automate for desktop is only available in environments located in the United States.
+### Availability by account type
+Currently, the suggested actions functionality in Power Automate for desktop is only available for users with a work or school account.
+
+### Using suggested actions in your flows
+The suggested actions functionality leverages AI to generate a list of actions that you could use as the next steps in your flow.
+
+To do so you can press on the add button that appears on mouse hover or when an action is selected. 
+:::image type="content" source="media/suggested-actions/next_best_action.png" alt-text="Screenshoot of the add actions via the suggested actions panel.":::
+
+Once the recommended actions panel appears, just double click on the action that you want to add to your flow.
+:::image type="content" source="media/suggested-actions/next_best_action2.png" alt-text="Screenshoot of the suggested actions panel.":::
+
+### Disabling the suggested actions functionality
+If you wish to disable the suggested actions functionality, please contact support.
+
+### Help us improve this feature
+You can send feedback by selecting the thumb up or thumb down icon underneath the AI-generated action suggestions. Once you do, a dialog box appears, which you can use to submit feedback to Microsoft.
+
+:::image type="content" source="media/pad_generative_answers/feedback_dialog1.png" alt-text="Image that shows where you can send your feedback about copilot in Power Automate for desktop.":::
+
+> [!NOTE]
+> If you can't see the dialog box, your Power Platform admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
+
+### Disabling the user feedback functionality
+As a Power Platform admin you can prevent users from sending feedback to Microsoft by disabling the **disableSurveyFeedback** tenant setting. More information:
+
+- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+
+### Data subject rights requests on user feedback
+
+Tenant administrators can view, export, and delete the feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage), and then selecting **Health** > **Product feedback**.
+
+
 ## Configure actions
 
 Power Automate actions contain three main elements:
