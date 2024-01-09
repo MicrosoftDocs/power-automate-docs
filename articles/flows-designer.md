@@ -192,9 +192,9 @@ If you want to work with missing functionalities in the designer, select **Switc
 
 ## FAQ 
 
-1. Connection creation in V3 designer fails due to unsupported Array.at() function
+### Why do I get this error? Connection creation in V3 designer fails due to unsupported Array.at() function
 
-Power Automate designer does not support browsers that are more than 2 years old. You could see aforementioned or similar errors in the designer if your browser version is old. It is generally a good idea to update your browser to latest version to avoid such issues. 
+Power Automate designer doesn't support browsers that are more than two (2) years old. You could see the aforementioned or similar errors in the designer if your browser version is old. It is generally a good idea to update your browser to latest version to avoid such issues. 
 
 > [!NOTE]
 > The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.
