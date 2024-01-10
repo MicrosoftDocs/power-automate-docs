@@ -211,7 +211,7 @@ Converts an integer to a string according to the formatting string (if an option
 
 - **[format*]** - formatting string
 
-  [Learn more about formatting strings  ](/dotnet/standard/base-types/formatting-types)
+  [Learn more about formatting strings](/dotnet/standard/base-types/formatting-types)
 
    Data type: STRING (only fixed string is allowed)
 
@@ -229,7 +229,7 @@ Converts a float to a string according to the formatting string (if an optional 
 
 - **[format*]** - formatting string
 
-  [Learn more about formatting strings  ](/dotnet/standard/base-types/formatting-types)
+  [Learn more about formatting strings](/dotnet/standard/base-types/formatting-types)
 
    Data type: STRING (only fixed string in allowed)
 

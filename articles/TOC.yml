@@ -798,7 +798,7 @@
       href: process-mining-visualize.md
     - name: Customize a report with your own Power BI workspace
       href: process-mining-pbi-workspace.md
-    - name: Use Optimized data structure in Power BI report
+    - name: Use optimized data structure in Power BI report
       href: process-mining-pbi-data-structure.md
     - name: Improve cloud flows with process insights (preview)
       href: process-mining-cloud-flow-process-insights.md

@@ -20,7 +20,7 @@ Power Automate Process Mining gives you the option to store and read event log d
 
 ## Prerequisites
 
-- The Data Lake Storage account must be Gen2. You can check this out from Azure Portal. Azure Data Lake Gen1 storage accounts aren't supported.
+- The Data Lake Storage account must be Gen2. You can check this out from the Azure portal. Azure Data Lake Gen1 storage accounts aren't supported.
 - The Data Lake Storage account must have [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
 - The **Owner** role must be attributed to the user performing the initial container setup for the environment for the following users in the same environment. These users are connecting to the same container and must have the **Storage Account Contributor** role assigned.
 
@@ -42,10 +42,10 @@ Power Automate Process Mining gives you the option to store and read event log d
     :::image type="content" source="media/process-mining-byo-azure-data-lake/csv.png" alt-text="Screenshot of the File format settings screen.":::
 
 - All data must be in final event log format and meet the requirements listed in [Data requirements](process-mining-processes-and-data.md#data-requirements). Data should be ready to be mapped to the process mining schema. No data transformation is available post ingestion.
-- The size (width) of the header row is currently limited to 1MB.
+- The size (width) of the header row is currently limited to 1 MB.
 
 > [!IMPORTANT]
-> Ensure that time stamp represented in your CSV file follows the ISO 8601 standard format (for example, `YYYY-MM-DD HH:MM:SS.sss` or `YYYY-MM-DDTHH:MM:SS.sss`.
+> Ensure that time stamp represented in your CSV file follows the ISO 8601 standard format (for example, `YYYY-MM-DD HH:MM:SS.sss` or `YYYY-MM-DDTHH:MM:SS.sss`).
 
 ## Connect to Azure Data Lake Storage
 
@@ -54,8 +54,7 @@ Power Automate Process Mining gives you the option to store and read event log d
 1. Under the **Data source** heading, select **Import data** > **Azure Data Lake** > **Continue**.
 :::image type="content" source="media/process-mining-byo-azure-data-lake/CreateProcess.png" alt-text="Screenshot of the Create process step.":::
 
-1. On the **Connection setup** screen, select your Subscription, Resource group, Storage account and Container from the dropdown menus.
-:::image type="content" source="media/process-mining-byo-azure-data-lake/ConnectionSetup.png" alt-text="Screenshot of the Connection setup step.":::
+1. On the **Connection setup** screen, select your **Subscription ID**, **Resource Group**, **Storage account**, and **Container** from the dropdown menus.
 
 1. Select the file or folder containing the event log data.
 
@@ -71,11 +70,9 @@ Power Automate Process Mining gives you the option to store and read event log d
 
 You can refresh a process ingested from Azure Data Lake on a schedule, either through a full or incremental refresh. Though there are no retention policies, you can ingest data incrementally using one of the following methods:
 
-If you selected a **single file** in the previous section:
-- Append more data to the selected file.
+If you selected a *single file* in the previous section, append more data to the selected file.
 
-If you selected a **folder** in the previous section:
-- Add incremental files to the selected folder.
+If you selected a *folder* in the previous section, add incremental files to the selected folder.
 
 > [!IMPORTANT]
 > When you add incremental files to a selected folder or subfolder, make sure you indicate the increment order by naming files with dates such as YYYMMDD.csv or YYYYMMDDHHMMSS.csv.
@@ -83,14 +80,11 @@ If you selected a **folder** in the previous section:
 To refresh a process:
 
 1. Go to the **Details** page of the process.
-
 1. Select **Refresh Settings**.
-
 1. On the **Schedule refresh** screen, complete the following steps:
 
     1. Turn on the **Keep data up to date** toggle switch.
     1. In the **Refresh data every** dropdown lists, select the frequency of the refresh.
     1. In the **Start at** fields, select the date and time of the refresh.
     1. Turn on the **Incremental refresh** toggle switch.
-  
-:::image type="content" source="media/process-mining-byo-azure-data-lake/IncrementalRefresh.png" alt-text="Screenshot of the Incremental data refresh settings.":::
+ 
