@@ -76,12 +76,12 @@ For all new processes that use a custom workspace, the optimized data structure 
 
 1. Go to the process details page and select **Edit**.
 
-    :::image type="content" source="media/process-mining-pbi-data-structure/Enable1.svg" alt-text="Screenshot of the Settings panel."::: 
+    :::image type="content" source="media/process-mining-pbi-data-structure/Enable1.svg" alt-text="Screenshot of the Settings panel with Edit button highlighted."::: 
 
 1. Select a custom workspace by selecting the dropdown menu under the **Power Bi Workspace (optional)** field.
 1. Confirm that the **Use optimized data structure** toggle is **On**. If it's off, select the toggle to enable it.
 
-    :::image type="content" source="media/process-mining-pbi-data-structure/Enable3.svg" alt-text="Screenshot of the Settings panel.":::
+    :::image type="content" source="media/process-mining-pbi-data-structure/Enable3.svg" alt-text="Screenshot of the Settings panel with toggle highlighted.":::
 
 1. To save the changes, select **Save** if the button is enabled.
 
