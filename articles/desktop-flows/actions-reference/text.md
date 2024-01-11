@@ -4,7 +4,7 @@ description: See all the available text actions.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/24/2023
+ms.date: 01/11/2024
 ms.author: matp
 ms.reviewer: gtrantzas
 contributors:
@@ -525,6 +525,24 @@ Recognizes entities in text, such as numbers, units, data/time and others expres
 |RecognizedEntities|[Datatable](../variable-data-types.md#datatable)|The recognized entities|
 
 ### <a name="recognizeentitiesintext_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
+
+## <a name="createhtmlcontentaction"></a> Create HTML content
+
+Generates rich HTML content and stores it in a variable.
+
+### Input parameters
+
+Input parameters are configured through the HTML editor.
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|HtmlContent|[Text value](../variable-data-types.md#text-value)|The HTML code|
+
+### <a name="createhtmlcontentaction_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
