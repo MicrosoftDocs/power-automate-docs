@@ -65,7 +65,8 @@ When you use approvals with *do until* loops, users need to account for all poss
 
 ## View details of an approval
 
-To view details of an approval, select an individual approval to open it. Formerly, you would select the **Details** column on the **Received** tab of the Approvals list view, but this column is now removed.
+To view details of an approval, select an individual approval to open it. Formerly, you could also view the details in the **Details** column on the **Received** tab of the Approvals list view, but this column is now removed.
+
 
 ## Issues with email notifications
 
