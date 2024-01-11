@@ -30,11 +30,17 @@ In addition, a more intuitive Power BI model data structure is used, which allow
 The new optimized data structure will replace the previous structure completely and the previous data structure will be deprecated. To find out the date and necessary steps, go to the banner in the process details page.
 
 <**MICHAL: I think this message is important enough to make the note its own section and expand on it.**
+**ANGIE: I thought the visual difference that the !IMPORTANT section makes will make it pop up more than just a new section. But I am ok with this one as well.
 
 - **Does it make sense to say when first paragraph will take place here, or is it necessary for users to go the Details page?**
+  ANGIE: yes
 - **If they must go to the Details page, let's give the steps on how to get there, or link to them if they already exist in the docs.**
+  ANGIE: I don't think this is really necessary - this is a special thing and people doing this know the Details page, we have the same approach in other parts of the documentation
 - **Please confirm: Deprecation hasn't happened yet, but users can use this structure now.**
-- **How can users tell the difference between the old structure and new structure?**>
+  ANGIE: correct
+- **How can users tell the difference between the old structure and new structure?**
+  ANGIE: it is happening on the background, so they will see it only in the resulting model as described below>
+  
 
 ## Enable XMLA read/write setting
 
@@ -47,7 +53,7 @@ By default, Premium capacity or Premium Per User semantic model workloads have t
 
 ### To enable read-write for a Premium capacity semantic model workload:
 
-1. **<MICHAL: Where is the starting point? Desktop? I want to test this but don't know where to begin.>**
+1. **<MICHAL: Where is the starting point? Desktop? I want to test this but don't know where to begin. ANGIE: the starting point is in the web.>**
 1. Select **Settings** > **Admin portal**.
 1. In the Admin portal, select **Capacity settings** > **Power BI Premium** > *capacity name*.
 1. Expand **Workloads**.
@@ -55,7 +61,7 @@ By default, Premium capacity or Premium Per User semantic model workloads have t
 
     The XMLA Endpoint setting applies to all workspaces and semantic models assigned to the capacity.
 
-    :::image type="content" source="media/process-mining-pbi-data-structure/XMLAEndpoint.png" alt-text="Screenshot of the XMLA endpoint settings.":::
+    :::image type="content" source="media/process-mining-pbi-data-structure/XMLAEndpoint.svg" alt-text="Screenshot of the XMLA endpoint settings.":::
 
 ### To enable read-write for a Premium Per User semantic model workload:
 
@@ -70,12 +76,12 @@ For all new processes that use a custom workspace, the optimized data structure 
 
 1. Go to the process details page and select **Edit**.
 
-    :::image type="content" source="media/process-mining-pbi-data-structure/Enable1.png" alt-text="Screenshot of the Settings panel."::: 
+    :::image type="content" source="media/process-mining-pbi-data-structure/Enable1.svg" alt-text="Screenshot of the Settings panel."::: 
 
 1. Select a custom workspace by selecting the dropdown menu under the **Power Bi Workspace (optional)** field.
 1. Confirm that the **Use optimized data structure** toggle is **On**. If it's off, select the toggle to enable it.
 
-    :::image type="content" source="media/process-mining-pbi-data-structure/Enable3.png" alt-text="Screenshot of the Settings panel.":::
+    :::image type="content" source="media/process-mining-pbi-data-structure/Enable3.svg" alt-text="Screenshot of the Settings panel.":::
 
 1. To save the changes, select **Save** if the button is enabled.
 
@@ -85,7 +91,7 @@ For all new processes that use a custom workspace, the optimized data structure 
 
 When a process is published to Power BI, a default data source and a corresponding report are created. The following screenshot is an example of the structure of the dataset in the published data source in Power BI.
 
-:::image type="content" source="media/process-mining-pbi-data-structure/DataModel2.png" alt-text="Diagram of Optimized data model.":::
+:::image type="content" source="media/process-mining-pbi-data-structure/DataModel2.svg" alt-text="Diagram of Optimized data model.":::
 
 ### Relationships
 
