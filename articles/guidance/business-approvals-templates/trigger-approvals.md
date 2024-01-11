@@ -74,9 +74,11 @@ To set up the trigger approvals, follow these steps:
 
 1. Select the Workflow Process you want to start
 
+1. Set the email address the relates to the person that is requesting this approval
+
 1. Set values for any application data (variables) required by the workflow
 
-1. Set the name of the flow where the title is **Untitled**
+1. Set the name of the flow where the title is **Untitled** and rename to summarize your cloud flow
 
 1. Select **Save**
 

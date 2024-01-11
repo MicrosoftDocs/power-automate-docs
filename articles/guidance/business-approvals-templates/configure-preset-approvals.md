@@ -127,7 +127,7 @@ Once you define your first stage, you optionally can add the first node.
     b.  None
 
 1. Select a **Delegation Rule**.
-        
+
     |Delegation rule |Description |
     |---------|---------|
     |None    |   No delegation settings set by the approver are applied to this workflow.      |
