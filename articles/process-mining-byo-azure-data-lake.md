@@ -31,7 +31,7 @@ Power Automate Process Mining gives you the option to store and read event log d
     - Exposed headers should be as flexible as possible. We recommend defining them as `*`.
     - The maximum age should be as flexible as possible. We recommend using `86400`.
 
-    :::image type="content" source="media/process-mining-byo-azure-data-lake/CORS.png" alt-text="Screenshot of the example of CORS setting screen.":::
+    :::image type="content" source="media/process-mining-byo-azure-data-lake/CORS.svg" alt-text="Screenshot of the example of CORS setting screen.":::
 
 -   Data in your Data Lake Storage should meet the following CSV file format requirements:
 
@@ -52,7 +52,7 @@ Power Automate Process Mining gives you the option to store and read event log d
 1. On the navigation pane to the left, select **Process mining** > **Start here**.
 1. In the **Process name** field, enter a name for your process.
 1. Under the **Data source** heading, select **Import data** > **Azure Data Lake** > **Continue**.
-:::image type="content" source="media/process-mining-byo-azure-data-lake/CreateProcess.png" alt-text="Screenshot of the Create process step.":::
+:::image type="content" source="media/process-mining-byo-azure-data-lake/CreateProcess.svg" alt-text="Screenshot of the Create process step.":::
 
 1. On the **Connection setup** screen, select your **Subscription ID**, **Resource Group**, **Storage account**, and **Container** from the dropdown menus.
 
