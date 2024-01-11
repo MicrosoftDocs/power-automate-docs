@@ -196,6 +196,10 @@ If you want to work with missing functionalities in the designer, select **Switc
 
 Power Automate designer doesn't support browsers that are more than two (2) years old. You could see the aforementioned or similar errors in the designer if your browser version is old. It is generally a good idea to update your browser to latest version to avoid such issues. 
 
+### Why do I get this error "The provided flow name contains invalid characters" when importing a flow in a new tenant?
+
+This is a temporary gap, which you can work around by adding a query parameter `_v3=false_` in your URL.
+
 > [!NOTE]
 > The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.
 
