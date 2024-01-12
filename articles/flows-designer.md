@@ -117,6 +117,13 @@ On the **Settings** tab, you can set the action time-out, network retry policy, 
 | Security | Use the **Secure inputs** and **Secure outputs** toggles to turn the operations, and references of output properties, on or off. |
 | Tracking | Set the key and value of tracked properties.
 
+### Configurable trigger polling setting 
+
+In select triggers such as _When an item is created-Sharepoint_, etc, you can manually configure the trigger polling setting meaning you can configure how often should the flow check for new items in Sharepoint, etc. This in turn will ensure how quickly your flow responds to any changes or trigger events. The default polling period is 3 minutes which means the flow checks every 3 minutes whether a new item has been created or not.
+
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/0122e540-e9df-4e33-a5ac-778a04bb7671)
+
+
 ### Code View
 
 To view the code behind any card in your flow, select the card on the canvas, and then select **Code View** in the action configuration pane. As you customize the code on the [Parameters](#parameters) tab, you can view the new code on the **Code View** tab.
@@ -198,7 +205,12 @@ Power Automate designer doesn't support browsers that are more than two (2) year
 
 ### Why do I get this error "The provided flow name contains invalid characters" when importing a flow in a new tenant?
 
-This is a temporary gap, which you can work around by adding a query parameter `_v3=false_` in your URL.
+This is a temporary gap, which you can work around by adding a query parameter `v3=false` in your URL.
+
+### Why do I not see dynamic content from triggers like 'When a response is submitted' or why is the flow automatically putting an unnecessary loop? 
+
+This might be because of a temporary issue where 'Split-on' setting of the trigger is off. Please enable the setting, and the issue should go away. 
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/d2a66cff-cf06-4977-bb06-fdab4a835b42)
 
 > [!NOTE]
 > The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.
