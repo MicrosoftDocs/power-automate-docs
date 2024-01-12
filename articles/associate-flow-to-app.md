@@ -92,7 +92,7 @@ A Power Apps per app license allows for a limited set of Power Automate capabili
 
 ### Why are my end-user's Power Automate flow connections not working in Power Apps?
 
-It might be that the connection for the current user has become un-authenticated. For instance, the user might have changed their password. The flow will continuously fail. Power Apps doesn't try to automatically repair these connections or re-prompt the end user for updated credentials. This is a known issue for Microsoft SharePoint Online and non-Entra based connections. Refreshing the session might work. Alternatively, you might need to wrap the flow in an `IfError()` and in the failure case, invoke all the dependent connections directly to trigger re-authentication and then re-run the flow.
+It might be that the connection for the current user has become unauthenticated. For instance, the user might have changed their password. The flow will continuously fail. Power Apps doesn't try to automatically repair these connections or re-prompt the end user for updated credentials. This is a known issue for Microsoft SharePoint Online and non-Entra based connections. Refreshing the session might work. Alternatively, you might need to wrap the flow in an `IfError()` and in the failure case, invoke all the dependent connections directly to trigger reauthentication and then rerun the flow.
 
 ### I'm an admin and want to associate flows and apps in bulk. Is there an admin command?
 
