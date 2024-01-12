@@ -42,6 +42,7 @@ Please note the following known limitations of this feature:
 
 - After a flow runs, it may take approximately 15 to 30 minutes for data to be added for analysis. However, historical runs up to 28 days are immediately available for analysis.
 - This feature is not currently supported for Dataverse for Microsoft Teams environments.
+- Cloud flow analytics for your older flows might not appear immediately in the Process Mining desktop application. To have the analytics appear, select **Improve your flow** on the details page of your flow.
 
 ## Terminology
 
