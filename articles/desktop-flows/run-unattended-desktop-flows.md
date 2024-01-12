@@ -33,6 +33,7 @@ When running desktop flows in unattended mode, keep in mind that:
 
 >[!IMPORTANT]
 >
+> - The user specified in the connection must have permissions to create a remote desktop session on the machine.
 > - Unattended desktop flows require an available machine with all users signed out.
 > - Locked Windows user sessions will prevent unattended desktop flows from running.
 > - Unattended desktop flows can't run with elevated privileges.
