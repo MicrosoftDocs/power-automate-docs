@@ -236,7 +236,7 @@ Now you'll edit the **Approvals kit** custom connector present inside Business A
 
 The operation should run successfully with status as 200.
 
-  > [!NOTE]:
+  > [!NOTE]
   >
   > - Not sure on your region? You can review /power-platform/admin/new-datacenter-regions
   > - You can obtain you environment url from https://aka.ms/ppac environments or the Power Apps Portal in the settings of the environment.
