@@ -82,17 +82,21 @@ The following tables are used for definition.
 |Business Approval Data|One record per data item used to define the input fields of that are used within the approval process|For example request amount, transportation method and department.
 |Business Approval Stage |One record per stage within the approval process.|Manager Approval or Line Manager Approval
 |Business Approval Condition|Define optional condition for a stage.|None, If, Switch
-|Business Approval Node|Defines each step of the approval including the type of approval of that step and the approver.|
+|Business Approval Node|Defines each step of the approval including the type of approval of that step and the approver.|n/a*|
+
+*n/a = not applicable.
 
 #### Reference tables
 
 |Name|Description|Example(s)|
 |----|----------|-------|
-|Business Approver|Defines for associated to approver(s) for each node within the approval process.||
+|Business Approver|Defines for associated to approver(s) for each node within the approval process.|n/a*|
 |Business Approval Work Profile|Set up for each approver to define settings.|Out of office|
 |Business Approval Holiday Calendar|Define the company holidays.|Non work days and weekend such as Saturdays|
-|Business Approval Public Holidays|Define the holidays separate from the organization holiday.||
-|Business Approver OOF|Defines the user out of office settings.||
+|Business Approval Public Holidays|Define the holidays separate from the organization holiday.|n/a*|
+|Business Approver OOF|Defines the user out of office settings.|n/a*|
+
+*n/a = not applicable.
 
 #### Version tables
 
@@ -114,9 +118,11 @@ For each approval request that is made, data is stored into runtime instance tab
 |Business Approval Runtime Data Instance|Is used to store the metadata of what is defined in approval data|For example, if you define "Request Amount" in Approval Data table, the Instance Data would store the actual request amount for the request
 |Business Approval Runtime Stage Instance|Creates a working copy of Business Approval Stage version. The record is used to hold each transactional stage of the approval|Any changes made during runtime are saved here
 |Business Approval Runtime Node Instance|creates a working copy of Nodes transactional reference to the approval request. Used to hold each transactional step of the approval including the type of approval of that step and the approver|Any changes made during runtime are saved here
-|Business Approval Instance|Stores a transactional reference of Approval for a specific node instance|
-|Business Approval Instance Log|Stores a transactional reference of Approval reference and outcome|
-|Business Approval Instance Override|Stores a transactional a new approver that overrides the original approval instance|
+|Business Approval Instance|Stores a transactional reference of Approval for a specific node instance| n/a*|
+|Business Approval Instance Log|Stores a transactional reference of Approval reference and outcome|n/a*|
+|Business Approval Instance Override|Stores a transactional a new approver that overrides the original approval instance|n/a*|
+
+*n/a = not applicable.
 
 #### Data model
 

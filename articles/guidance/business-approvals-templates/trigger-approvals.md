@@ -36,50 +36,28 @@ Review the table to compare relative advantages and disadvantages for each of da
 
 ### Trigger approvals from Microsoft Dataverse
 
-The Approvals Kit can be used with your existing Power Apps applications by
-setting up a Power Automate cloud flow that triggers from Microsoft
-Dataverse.
+The Approvals Kit can be used with your existing Power Apps applications by setting up a Power Automate cloud flow that triggers from Microsoft Dataverse.
 
 To set up the trigger approvals, follow these steps:
 
-1. Go to [Power Automate](https://flow.microsoft.com) website
-
-1. Select **Create**
-
-1. Select **Automated cloud flow**
-
-1. Enter a flow name
-
-1. In the **Choose your flow's trigger**, type "Dataverse" and select **When a row is added, modified or deleted**
-
-1. Select **Create**
-
-1. Set **Change type** to **Added**
-
-1. Set **Table name** to a table you want to trigger approvals with
-
-1. Set **Scope** to **Organization**
-
-1. Expand **Show advanced** **options**
-
-1. Set **Run** **as** to **Row owner**
-
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+1. Select **Create** > **Automated cloud flow**.
+1. Enter a flow name.
+1. In the **Choose your flow's trigger** seardch field, type **dataverse**, and then select **When a row is added, modified or deleted**.
+1. Select **Create**.
+1. In the **Change Type** field, select **Added**.
+1. In the **Table Name**, select a table you want to trigger approvals with.
+1. In the **Scope** field, select **Organization**.
+1. Expand **Show advanced options**.
+1. In the **Run as** field, seleect **Row owner**.
 1. Select **+New step**
-
-1. From list of connectors, select **Custom** then select **Approvals Kit**
-
-1. Select **Start business approval process**
-
-1. Sign in to create a connection
-
-1. Select the Workflow Process you want to start
-
-1. Set the email address the relates to the person that is requesting this approval
-
-1. Set values for any application data (variables) required by the workflow
-
-1. Set the name of the flow where the title is **Untitled** and rename to summarize your cloud flow
-
-1. Select **Save**
+1. From list of connectors, select **Custom**, and then select **Approvals Kit**.
+1. Select **Start business approval process**.
+1. Sign in to create a connection.
+1. Select the Workflow Process you want to start.
+1. Enter the email address that relates to the person who is requesting this approval.
+1. Enter values for application data (variables) required by the workflow.
+1. Enter the name of the flow where the title is **Untitled**, and rename it to summarize your cloud flow.
+1. Select **Save**.
 
 These steps should complete your setup of advanced approval flows triggering from Microsoft Dataverse.
