@@ -90,6 +90,10 @@ This is a known issue. If a flow has a Power Apps trigger, the apps that use tha
 
 A Power Apps per app license allows for a limited set of Power Automate capabilities. If the flow is supporting an app in Power Apps, associate the flow with the app. After the association is made, users who have a Power Apps per app license can use the flow.
 
+### Why are my end-user's Power Automate Flow connections not working in Power Apps?
+
+It may be that the connection for the current user has become un-authenticated. For instance the user may have changed their password. The flow will continuously fail. Power Apps will not try to automatically repair these connections or re-prompt the end user for updated credentials. This is a known issue for SharePoint Online and non-Entra based connections. Refreshing the session may work. Or, you may need to wrap the Flow in an IfError() and in the failure case invoke all the dependent connections directly to trigger re-authentication and then re-run the flow.
+
 ### I'm an admin and want to associate flows and apps in bulk. Is there an admin command?
 
 Use the PowerShell command in [How can I associate in context flows to Power Apps/Dynamics365 apps](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-power-appsdynamics365-apps) in the *Frequently asked questions about Power Automate licensing* article.
