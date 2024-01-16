@@ -4,7 +4,7 @@ description: See how to manage variables and the variables pane
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 08/02/2023
+ms.date: 01/16/2024
 ms.author: dbekirop
 ms.reviewer: gtrantzas
 contributors:
@@ -38,7 +38,7 @@ To examine the value of a variable in more detail, double-click on it. The varia
 
 ![Screenshot of the variable value viewer.](media\variables-pane\variable-viewer.png)
 
-Certain data types may contain nested elements. For example, a [custom object](variable-data-types.md#custom-object) may contain another custom object in its properties. To view the properties of the nested element, select **More**.
+Certain data types might contain nested elements. For example, a [custom object](variable-data-types.md#custom-object) might contain another custom object in its properties. To view the properties of the nested element, select **More**.
 
 ![Screenshot of a parent custom object in the variable value viewer.](media\variables-pane\custom-object-parent.png)
 
@@ -80,7 +80,7 @@ To create an input variable:
     - **External name**: The external name is the name that appears in the cloud flow designer and the flow inputs dialog when calling the flow from the console.
     - **Description**: The description of the variable that appears in the cloud and desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](#sensitive-variables).
-    - **Mark as optional**: Defines whether populating this input variable is mandatory or not. By marking an input variable as optional, you allow it to receive it **Blank** values and ommit passing an actual value will not result in an error. You can find information regarding optional input variables in [Optional input variables](#optional-input-variables).
+    - **Mark as optional**: Defines whether populating this input variable is mandatory or not. By marking an input variable as optional, you allow it to receive **Blank** values and omit passing an actual value, which doesn't result in an error. You can find information regarding optional input variables in [Optional input variables](#optional-input-variables).
 
     > [!NOTE]
     > The **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
@@ -150,14 +150,14 @@ Some automation scenarios handle confidential information and require special ha
 
 Additionally, if you've logged in with an organization premium account, the values of sensitive variables aren't stored in the Run history in the portal, when the desktop flows run through the console or cloud flows.
 
-Any variable can become sensitive, independently of its type. Sensitivity applies at the variable level, so lists, datarows, datatables, and custom objects, get sensitive as a whole. There's no way to mark a list item, a datatable column, or a variable property as sensitive in an otherwise non-sensitive variable.
+Any variable can become sensitive, independently of its type. Sensitivity applies at the variable level, so lists, datarows, datatables, and custom objects, get sensitive as a whole. There's no way to mark a list item, a datatable column, or a variable property as sensitive in an otherwise nonsensitive variable.
 
 You can use, manipulate and process sensitive variables in every action without any limitation, like every other variable. Additionally, you can combine them with other variables and include them in expressions. In this case, logs handle the whole expression as sensitive.
 
 The flow designer handles sensitivity as a mask that you can set on and off. Thus, you can unmask sensitive variables to see their values and mask them again to hide their values.
 
 > [!IMPORTANT]
-> Sensitive variables aren't meant to provide protection over hardcoded data. You shouldn't hardcode critical data in plain text, like passwords and PINs, in the properties of actions like **Set variable**, even if the said variables are marked as sensitive. The desktop flow logs will be protected, but the hardcoded values are visible in the modal and the flow definition in Dataverse.
+> Sensitive variables aren't meant to provide protection over hardcoded data. You shouldn't hardcode critical data in plain text, like passwords and PINs, in the properties of actions like **Set variable**, even if the said variables are marked as sensitive. The desktop flow logs will be protected, but the hardcoded values are visible in the modal and the flow definition in Microsoft Dataverse.
 >
 >To find more information regarding sensitive inputs in cloud flows, see [Manage sensitive input like passwords](../how-tos-use-sensitive-input.md).
 
@@ -185,77 +185,84 @@ When you create or edit an input or output variable, you can select **Mark as se
 
 The default value of an input variable is visible in the creating or editing dialog when sensitivity is enabled. This value exists only for testing and debugging purposes, as you have to initialize each input in production runs through the portal or the console. The default values aren't protected in the action modals and the flow definition in Dataverse.
 
-On the other hand, the default value is not visible in the variables pane and the **Flow input** dialog, which appears when you run a desktop flow with input variables through the console.
+On the other hand, the default value isn't visible in the variables pane and the **Flow input** dialog, which appears when you run a desktop flow with input variables through the console.
 
-The eye icon to reveal the value is not available unless you delete the default text value and provide a new one. New values are visible when populating other datatypes besides text.
+The eye icon to reveal the value isn't available unless you delete the default text value and provide a new one. New values are visible when populating other datatypes besides text.
 
 ![Screenshot of the flow inputs dialog with a sensitive variable.](media\sensitive-variables\flow-inputs-dialog-sensitive-variable.png)
 
 ### Optional input variables
 
-When you create or edit an input or output variable, you can select **Mark as optional** in the respective dialog to make it optional. 
+When you create or edit an input or output variable, you can select **Mark as optional** in the respective dialog to make it optional.
 
 ![Screenshot of the mark as optional control.](media\optional-input-variables\create-optional-input-variable.png)
 
 By default, input variables are mandatory meaning that you must provide:
-- a default value when creating it so that it can be used during debugging (console initiated) runs in case you do not pass another value,
-- populate it with a value of the respective type to ensure proper execution. 
 
-If an input variable is marked as optional both of the above can be ommited as we allow it to receive **Blank** values.
+- A default value when creating it so that it can be used during debugging (console initiated) runs in case you don't pass another value.
+- A value of the respective type to ensure proper execution.
+
+If an input variable is marked as optional both of the above can be omitted because it can receive **Blank** values.
 
 ### Setting optional inputs' default value to Blank
 
-#### Text variables 
+#### Text variables
 
-To set a text  variable's default value to **blank**, 
-  * set the **Data type** property to **Text**
-  * Enable **Mark as optional** control
-  * make sure the **Default value** property is empty 
+To set a text  variable's default value to **blank**:
+
+- Set the **Data type** property to **Text**.
+- Enable the **Mark as optional** control.
+- Make sure the **Default value** property is empty.
 
 ![Screenshot of text variable input configuration to use blank as its default value.](media\variables-pane\pad-using-blank-in-text-input.png)
 
-#### Blank numeric input 
+#### Blank numeric input
 
-To set a numeric variable's default value to **blank**, 
-  * set the **Data type** property to **Number**
-  * Enable **Mark as optional** control 
-  * make sure the **Default value** property is empty 
+To set a numeric variable's default value to **blank**:
+
+- Set the **Data type** property to **Number**.
+- Enable the **Mark as optional** control.
+- Make sure the **Default value** property is empty.
 
 ![Screenshot of numeric variable input configuration to use blank as its default value.](media\variables-pane\pad-using-blank-in-numeric-input.png)
 
-#### Blank boolean input 
+#### Blank boolean input
 
-To set a boolean variable's default value to **blank**, 
-  * Set the **Data type** property to **Boolean**
-  * Enable **Mark as optional** control 
-  * Make sure the **Default value** property is set to **< Blank >** 
+To set a boolean variable's default value to **blank**:
+
+- Set the **Data type** property to **Boolean**.
+- Enable the **Mark as optional** control.
+- Make sure the **Default value** property is set to **&lt;Blank&gt;**.
 
 ![Screenshot of boolean variable input configuration to use blank as its default value.](media\variables-pane\pad-using-blank-in-boolean-input.png)
 
-#### Blank custom object input 
+#### Blank custom object input
 
-To set a custom object's default value to **blank**, 
-  * Set the **Data type** property to **Custom object**
-  * Enable **Mark as optional** control 
-  * Make sure the **Default value** property is set to **< Blank >**. To achieve this, click on the **Edit** button next to the property and in the **Edit custom object** window, enable the **JSON editor** control. There delete all the contents and click on **Save**.
+To set a custom object's default value to **blank**:
+
+- Set the **Data type** property to **Custom object**.
+- Enable the **Mark as optional** control.
+- Make sure the **Default value** property is set to ****&lt;Blank**&gt;**. To achieve this, select **Edit** next to the property and in the **Edit custom object** window, enable the **JSON editor** control. Delete all the contents, and then select **Save**.
 
 ![Screenshot of custom object input configuration to use blank as its default value.](media\variables-pane\pad-using-blank-in-custom-object-input.png)
 
-#### Blank list input 
+#### Blank list input
 
-To set a list's default value to **blank**, 
-  * Set the **Data type** property to **List**
-  * Enable **Mark as optional** control 
-  * Make sure the **Default value** property is set to **< Blank >**. To achieve this, click on the **Edit** button next to the property and in the **Edit list** window, enable the **JSON editor** control. There delete all the contents and click on **Save**.
+To set a list's default value to **blank**:
+
+- Set the **Data type** property to **List**.
+- Enable the **Mark as optional** control.
+- Make sure the **Default value** property is set to ****&lt;Blank**&gt;**. To achieve this, select **Edit** next to the property and in the **Edit list** window, enable the **JSON editor** control. Delete all the contents, and then select **Save**.
 
 ![Screenshot of list input configuration to use blank as its default value.](media\variables-pane\pad-using-blank-in-list-input.png)
 
-#### Blank datatable input
+#### Blank data table input
 
-To set a datatable's default value to **blank**, 
-  * Set the **Data type** property to **Datatable**
-  * Enable **Mark as optional** control 
-  * Make sure the **Default value** property is set to **< Blank >**. To achieve this, click on the **Edit** button next to the property and in the **Edit datatable** window, enable the **JSON editor** control. There delete all the contents and click on **Save**.
+To set a data table's default value to **blank**:
+
+- Set the **Data type** property to **Datatable**.
+- Enable the **Mark as optional** control.
+- Make sure the **Default value** property is set to **&lt;Blank&gt;**. To achieve this, select **Edit** next to the property and in the **Edit datatable** window, enable the **JSON editor** control. Delete all the contents, and then select **Save**.
 
 ![Screenshot of datatable input configuration to use blank as its default value.](media\variables-pane\pad-using-blank-in-datatable-input.png)
 
