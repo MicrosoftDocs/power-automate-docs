@@ -2,10 +2,9 @@
 title: Variable manipulation and the % notation
 description: Variable manipulation and the % notation
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 09/22/2020
+ms.date: 01/16/2024
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -38,11 +37,10 @@ To include a hardcoded text value inside a variable, use quotes. Every value bet
 
 ## Using blank values
 
-Variables can receive null/ empty values. 
-Any variable, dynamic or not, including nested properties, can be populated with a **blank value**. To check whether a variable holds a blank value use the Is blank/ Is not blank options when configuring the respective [conditional actions](./actions-reference/conditionals).
+Variables can receive null/ empty values. Any variable, dynamic or not, including nested properties, can be populated with a **Blank** value. To check whether a variable holds a blank value use the **Is blank** or **Is not blank** options when configuring the respective [conditional actions](./actions-reference/conditionals.md).
 
 > [!NOTE]
-> Some action parameters can be assigned a blank value if the input argument is nullable. If the parameter cannot receive a blank value, an error will be thrown.
+> Some action parameters can be assigned a blank value if the input argument is nullable. If the parameter can't receive a blank value, an error occurs.
 
 ## Variable names
 

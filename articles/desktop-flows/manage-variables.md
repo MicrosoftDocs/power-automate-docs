@@ -208,7 +208,7 @@ If an input variable is marked as optional both of the above can be omitted beca
 
 #### Text variables
 
-To set a text  variable's default value to **blank**:
+To set a text  variable's default value to **Blank**:
 
 - Set the **Data type** property to **Text**.
 - Enable the **Mark as optional** control.
@@ -218,7 +218,7 @@ To set a text  variable's default value to **blank**:
 
 #### Blank numeric input
 
-To set a numeric variable's default value to **blank**:
+To set a numeric variable's default value to **Blank**:
 
 - Set the **Data type** property to **Number**.
 - Enable the **Mark as optional** control.
@@ -228,7 +228,7 @@ To set a numeric variable's default value to **blank**:
 
 #### Blank boolean input
 
-To set a boolean variable's default value to **blank**:
+To set a boolean variable's default value to **Blank**:
 
 - Set the **Data type** property to **Boolean**.
 - Enable the **Mark as optional** control.
@@ -238,7 +238,7 @@ To set a boolean variable's default value to **blank**:
 
 #### Blank custom object input
 
-To set a custom object's default value to **blank**:
+To set a custom object's default value to **Blank**:
 
 - Set the **Data type** property to **Custom object**.
 - Enable the **Mark as optional** control.
@@ -248,7 +248,7 @@ To set a custom object's default value to **blank**:
 
 #### Blank list input
 
-To set a list's default value to **blank**:
+To set a list's default value to **Blank**:
 
 - Set the **Data type** property to **List**.
 - Enable the **Mark as optional** control.
@@ -258,7 +258,7 @@ To set a list's default value to **blank**:
 
 #### Blank data table input
 
-To set a data table's default value to **blank**:
+To set a data table's default value to **Blank**:
 
 - Set the **Data type** property to **Datatable**.
 - Enable the **Mark as optional** control.
