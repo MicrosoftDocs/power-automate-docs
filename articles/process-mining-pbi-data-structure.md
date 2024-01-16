@@ -79,6 +79,8 @@ For new processes that use a custom workspace, the optimized data structure is s
 
 When a process is published to Power BI, a default data source and a corresponding report are created. The following screenshot is an example of the structure of the dataset in the published data source in Power BI.
 
+For an enlarged view of the screenshot, select the magnifying glass in the lower-right corner.
+
 [ ![Power BI data model structure.](media/process-mining-pbi-data-structure/DataModel2.png)](media/process-mining-pbi-data-structure/DataModel2.png#lightbox)
 
 ### Relationships
