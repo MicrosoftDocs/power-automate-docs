@@ -40,7 +40,7 @@ To use the optimized data structure, the XMLA endpoint property must be enabled 
 
 ### Enable read-write for a Premium capacity semantic model workload
 
-1. Sign in to [Power Automate](make.powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select **Settings** > **Admin Center**.
 1. In the Power Platform admin center, select select **Capacity settings** > **Power BI Premium** > *capacity name*.
 1. Expand **Workloads**.
@@ -52,7 +52,7 @@ To use the optimized data structure, the XMLA endpoint property must be enabled 
 
 ### Enable read-write for a Premium Per User semantic model workload
 
-1. Sign in to [Power Automate](make.powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select **Settings** > **Admin Center**.
 1. In the Power Platform admin center, select **Premium Per User**.
 1. Expand **Semantic model workload** settings.
@@ -79,7 +79,7 @@ For new processes that use a custom workspace, the optimized data structure is s
 
 When a process is published to Power BI, a default data source and a corresponding report are created. The following screenshot is an example of the structure of the dataset in the published data source in Power BI.
 
-[ :::image type="content" source="media/process-mining-pbi-data-structure/DataModel2.svg"  alt-text="Diagram of Optimized data model."::: ](media/process-mining-pbi-data-structure/DataModel2.svg-expanded.svg#lightbox)
+[ ![Power BI data model structure.](media/process-mining-pbi-data-structure/DataModel2.png)](media/process-mining-pbi-data-structure/DataModel2.png#lightbox)
 
 ### Relationships
 
