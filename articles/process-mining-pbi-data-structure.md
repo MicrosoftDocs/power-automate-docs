@@ -7,7 +7,7 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 01/09/2024
+ms.date: 01/17/2024
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -27,35 +27,22 @@ In addition, a more intuitive Power BI model data structure is used, which allow
 
 ## Previous optimized structure to deprecate soon
 
-The new optimized data structure will replace the previous structure completely and the previous data structure will be deprecated. To find out the date and necessary steps, go to the banner in the process details page.
+The new optimized data structure replaces the previous structure completely and the previous data structure will be deprecated. To find out the date and necessary steps, go to the banner in the process **Details** page.
 
-<**MICHAL: I think this message is important enough to make the note its own section and expand on it.**
-**ANGIE: I thought the visual difference that the !IMPORTANT section makes will make it pop up more than just a new section. But I am ok with this one as well.
-
-- **Does it make sense to say when first paragraph will take place here, or is it necessary for users to go the Details page?**
-  ANGIE: yes
-- **If they must go to the Details page, let's give the steps on how to get there, or link to them if they already exist in the docs.**
-  ANGIE: I don't think this is really necessary - this is a special thing and people doing this know the Details page, we have the same approach in other parts of the documentation
-- **Please confirm: Deprecation hasn't happened yet, but users can use this structure now.**
-  ANGIE: correct
-- **How can users tell the difference between the old structure and new structure?**
-  ANGIE: it is happening on the background, so they will see it only in the resulting model as described below>
+The new optimized data atructure takes place in the background, so you'll see it only in the resulting model as described in the following section.
   
-
 ## Enable XMLA read/write setting
 
-To use the optimized data structure, the XMLA endpoint property must be enabled for read-write. The write connection allows you to apply changes to the dataset, for example, adding calculation groups or object-level security to the Power BI dataset. **<MICHAL: Please confirm accuracy of my new sentence.>**
-
-By default, Premium capacity or Premium Per User semantic model workloads have the XMLA endpoint property setting enabled for read-only.
+To use the optimized data structure, the XMLA endpoint property must be enabled for read-write. By default, Premium capacity or Premium Per User semantic model workloads have the XMLA endpoint property setting enabled for read-only.
 
    > [!IMPORTANT]
    > Enabling XMLA can only be done by the capacity admin.
 
-### To enable read-write for a Premium capacity semantic model workload:
+### Enable read-write for a Premium capacity semantic model workload
 
-1. **<MICHAL: Where is the starting point? Desktop? I want to test this but don't know where to begin. ANGIE: the starting point is in the web.>**
-1. Select **Settings** > **Admin portal**.
-1. In the Admin portal, select **Capacity settings** > **Power BI Premium** > *capacity name*.
+1. Sign in to [Power Automate](make.powerautomate.com).
+1. Select **Settings** > **Admin Center**.
+1. In the Power Platform admin center, select select **Capacity settings** > **Power BI Premium** > *capacity name*.
 1. Expand **Workloads**.
 1. In the **XMLA Endpoint** setting, select **Read Write**.
 
@@ -63,16 +50,17 @@ By default, Premium capacity or Premium Per User semantic model workloads have t
 
     :::image type="content" source="media/process-mining-pbi-data-structure/XMLAEndpoint.svg" alt-text="Screenshot of the XMLA endpoint settings.":::
 
-### To enable read-write for a Premium Per User semantic model workload:
+### Enable read-write for a Premium Per User semantic model workload
 
-1. Select **Settings** > **Admin portal**.
-1. In the Admin portal, select **Premium Per User**.
+1. Sign in to [Power Automate](make.powerautomate.com).
+1. Select **Settings** > **Admin Center**.
+1. In the Power Platform admin center, select **Premium Per User**.
 1. Expand **Semantic model workload** settings.
 1. In the **XMLA Endpoint** setting, select **Read Write**.
 
 ### Enable using the optimized data structure
 
-For all new processes that use a custom workspace, the optimized data structure is set to **true** by default. To enable it or confirm it is enabled, perform the following steps:
+For new processes that use a custom workspace, the optimized data structure is set to **true** by default. To enable it or confirm it is enabled, perform the following steps.
 
 1. Go to the process details page and select **Edit**.
 
@@ -91,7 +79,7 @@ For all new processes that use a custom workspace, the optimized data structure 
 
 When a process is published to Power BI, a default data source and a corresponding report are created. The following screenshot is an example of the structure of the dataset in the published data source in Power BI.
 
-:::image type="content" source="media/process-mining-pbi-data-structure/DataModel2.svg" alt-text="Diagram of Optimized data model.":::
+[ :::image type="content" source="media/process-mining-pbi-data-structure/DataModel2.svg"  alt-text="Diagram of Optimized data model."::: ](media/process-mining-pbi-data-structure/DataModel2.svg-expanded.svg#lightbox)
 
 ### Relationships
 
@@ -99,12 +87,12 @@ Relationships necessary for filtering and interconnectivity of visuals are pre-d
 
 ### Data model summary
 
-From a logical perspective the data model consists of many entity subsets as depicted in the first paragraph of this section.
+From a logical perspective, the data model consists of many entity subsets as depicted in the first paragraph of this section.
 
-- **Process Data** – all process related data without filtering and calculated measures.
-- **View Data** – entities giving the process data into the context of the created process analytical view – applied filters, calculated measures, and custom metrics.
-- **Visuals data** – entities providing pre-calculated data necessary for process mining custom visuals to display.
-- **Helping entities** – other entities needed by Power BI.
+- **Process Data**: All process related data without filtering and calculated measures.
+- **View Data**: Entities giving the process data into the context of the created process analytical view&mdash;applied filters, calculated measures, and custom metrics.
+- **Visuals data**: Entities providing pre-calculated data necessary for process mining custom visuals to display.
+- **Helping entities**: Other entities needed by Power BI.
 
 Following is the brief description of the subsets and included entities.
 
@@ -124,7 +112,7 @@ Working with these entities allows you to access the raw process data not influe
 |AttributesMetadata|Entity holds the definition of all case/event-level attributes as defined in the import of event log data into process model. It includes its datatype, attribute type, and attribute level being either case or event.|
 |MiningAttributeLabels|Holds values of available mining attributes. A process view can be set up to look at the process from different perspective based on the selected mining attribute. If no other mining attribute is available, the entity holds the values of `Activity` attribute.|
 |CustomMetricsMetadata|Includes the definition of custom metrics created in the Process Mining desktop app. Based on the context in which the metric is available, many entries might exist for the same custom metric, having a different `Type`. It also includes the custom metric result data type that can be used for conversion or formatting of the values.|
-|Views|List of available (published) views created in the Power Automate desktop app. Only public process views are published to the data set. Entries can be used to filter report / report page / visual **(MICHAL: what do the slashes indicate?)** to visualize only data from the specific process view.|
+|Views|List of available (published) views created in the Power Automate desktop app. Only public process views are published to the data set. Entries can be used to filter report, report page, and visual to visualize only data from the specific process view.|
 
 #### View Data
 
@@ -145,7 +133,7 @@ View data entities allows you to access process data influenced by the applied f
 
 #### Visuals data
 
-Visuals data entities are recalculated only when there is a data refresh for the process model.
+Visuals data entities are recalculated only when there's a data refresh for the process model.
 
 |Entity|Description|
 |------|-----------|
