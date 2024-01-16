@@ -549,7 +549,7 @@ Enabling the **Text editor** option switches to the view where HTML language can
 
 ![Screenshot of the text editor in the Create HTML content action.](media/text/html-action-text-editor.png)
 
-The <head> and <body> elements aren't needed in the text editor for the HTML content to be rendered.
+The &lt;head&gt; and &lt;body&gt; elements aren't needed in the text editor for the HTML content to be rendered.
 
 ### Variables produced
 
