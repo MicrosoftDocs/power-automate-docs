@@ -30,7 +30,7 @@ When running desktop flows in unattended mode, keep in mind that:
 
 - On Windows Server, if you have a locked Windows user session open with the same user as the desktop flow connection, you receive an error.
 
-- The user specified in the connection must have permissions to create a remote desktop session on the machine. In most cases this means the user must be a part of the **Remote Desktop Users** group on the machine. On some Citrix configurations, the user must be in the **Direct Access Users** group.
+- The user specified in the connection must have permissions to create a remote desktop session on the machine. In most cases this means the user must be a member of the **Remote Desktop Users** group on the machine. On some Citrix configurations, the user must be in the **Direct Access Users** group.
 
 >[!IMPORTANT]
 >
