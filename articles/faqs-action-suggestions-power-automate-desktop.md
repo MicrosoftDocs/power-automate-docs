@@ -11,7 +11,7 @@ ms.reviewer: matp
 ---
 # FAQ for Power Automate for desktop suggested actions
 
-# What is the suggested actions functionality
+## What is the suggested actions functionality
 
 Suggested actions are a new AI capability that we added in Power Automate for desktop that allows you to quickly view suggestions on what your next action should be while designing your flow in the designer.
 
