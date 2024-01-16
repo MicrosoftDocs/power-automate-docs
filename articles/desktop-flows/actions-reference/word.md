@@ -4,7 +4,7 @@ description: See all the available Word actions.
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/27/2023
+ms.date: 01/19/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
