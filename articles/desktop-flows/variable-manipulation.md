@@ -5,7 +5,7 @@ author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 01/16/2024
-ms.author: marleon
+ms.author: dipapa
 ms.reviewer: gtrantzas
 contributors:
 - jpapadimitriou
@@ -37,7 +37,7 @@ To include a hardcoded text value inside a variable, use quotes. Every value bet
 
 ## Using blank values
 
-Variables can receive null/ empty values. Any variable, dynamic or not, including nested properties, can be populated with a **Blank** value. To check whether a variable holds a blank value use the **Is blank** or **Is not blank** options when configuring the respective [conditional actions](./actions-reference/conditionals.md).
+Variables can receive null (empty) values. Any variable, dynamic or not, including nested properties, can be populated with a **Blank** value. To check whether a variable holds a blank value use the **Is blank** or **Is not blank** options when configuring the respective [conditional actions](./actions-reference/conditionals.md).
 
 > [!NOTE]
 > Some action parameters can be assigned a blank value if the input argument is nullable. If the parameter can't receive a blank value, an error occurs.

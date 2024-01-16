@@ -2,11 +2,10 @@
 title: Conditional actions reference
 description: See all the available conditionals actions.
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/23/2022
-ms.author: marleon
+ms.author: dipapa
 ms.reviewer: gtrantzas
 contributors:
 - jpapadimitriou
