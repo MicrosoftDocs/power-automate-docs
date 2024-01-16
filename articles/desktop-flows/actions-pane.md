@@ -55,10 +55,10 @@ Currently, the suggested actions functionality in Power Automate for desktop is 
 ### Using suggested actions in your flows
 
 The suggested actions functionality leverages AI to generate a list of actions that you could use as the next steps in your flow. To do so, select the add button that appears on mouse hover or when an action is selected.
-:::image type="content" source="media/suggested-actions/next_best_action.png" alt-text="Screenshot of the add actions via the suggested actions panel.":::
+:::image type="content" source="media/suggested-actions/next_best_action.png" alt-text="Screenshot of the add actions via the suggested actions panel." lightbox="media/suggested-actions/next_best_action.png":::
 
 Once the **Suggested actions** panel appears, double-click the action that you want to add to your flow.
-:::image type="content" source="media/suggested-actions/next_best_action2.png" alt-text="Screenshot of the suggested actions panel.":::
+:::image type="content" source="media/suggested-actions/next_best_action2.png" alt-text="Screenshot of the suggested actions panel." lightbox="media/suggested-actions/next_best_action2.png":::
 
 ### Disabling the suggested actions functionality
 

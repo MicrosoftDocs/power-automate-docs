@@ -19,7 +19,7 @@ Suggested actions are a new AI capability that we added in Power Automate for de
 
 Suggested actions can help you discover the next step of your automation by analyzing your flow and suggesting action candidates that you can include by selecting them.
 
-## What is/are action suggestions’ intended use(s)?
+## What is/are action suggestions intended use(s)?
 
 The intended use of suggested actions is to allow users to quickly discover actions that can be used as the next building steps in their automations without searching the full list of actions in the designer.
 
@@ -27,7 +27,7 @@ The intended use of suggested actions is to allow users to quickly discover acti
 
 You can access the new functionality by signing in with your work or school account in Power Automate for desktop and either creating a new flow or editing an existing one. When hovering over an action, select the plus icon, and the suggested actions panel opens.
 
-## How was the Suggested actions evaluated? What metrics are used to measure performance?
+## How was suggested actions evaluated? What metrics are used to measure performance?
 
 We have a robust set of metrics we track to measure the performance of the model and resulting customer experience. We track the feature’s SLA to make sure it's always available to you. We track the telemetry of thumbs up and thumbs down gestures present in the UI experience for each AI output that you can submit feedback for.
 
