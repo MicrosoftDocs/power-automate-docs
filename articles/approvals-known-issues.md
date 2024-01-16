@@ -77,6 +77,10 @@ Sending approval email notifications is a two-step process:
 1. Power Automate places a request for the email to be sent.
 1. The email goes into a queue.
 
+### Reply to an approval email
+
+When you reply to an approval email notification, you must add your intended recipient(s) to the **To:** line. Previously, the person who sent you the approval request would be automatically added to the **To:** line when you selected **Reply**, but now it must be done manually.
+
 ### Email status definitions
 
 Status|Description
