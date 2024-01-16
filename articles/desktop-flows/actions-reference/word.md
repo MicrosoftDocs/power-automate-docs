@@ -83,8 +83,6 @@ Attaches to a Word document that's already open.
 |-----|-----|-----|
 |`WordInstance`|Word instance|The Word instance this action has attached to for use with later Word actions|
 
-
-
 ### <a name="attach_onerror"></a> Exceptions
 
 |Exception|Description|
@@ -151,7 +149,7 @@ Reads the text content from a document of a Word instance.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Word instance|No|Word instance||The Word instance to work with|This variable must have been previously specified in a **Launch Word** or **Attach to running Word** action|
+|Word instance|No|Word instance|The Word instance to work with|This variable must have been previously specified in a **Launch Word** or **Attach to running Word** action|
 |Retrieve|N/A|Whole document/Pages/Bookmark|Whole document|Whether to retrieve the content of the whole document, of specific pages, or a bookmark|
 |Page|No|Numeric value|1|The pages of the Word document to be read. A range of pages or a list can be provided as *2-5*, which will retrieve content from page 2 to page 5 or 2,3,7, retrieve content from 2,3,7 pages|
 |Bookmark|No|Text value||The bookmark of the Word document to be read|
@@ -177,11 +175,11 @@ Write or append text to a Word file.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Word instance|No|Word instance||The Word instance to work with|This variable must have been previously specified in a **Launch Word** or **Attach to running Word** action|
-|Text to write|Yes|General value||The text to write in the specified Word document|
+|Word instance|No|Word instance|The Word instance to work with|This variable must have been previously specified in a **Launch Word** or **Attach to running Word** action|
+|Text to write|Yes|General value|The text to write in the specified Word document|
 |Append new line|N/A|Boolean value|True|Specifies whether to append a new line at the start of the overall text to write to the document|
 |Write text to|N/A|Beginning of Word file/End of Word file/Before of Bookmark/After of Bookmark|Beginning of Word file|Specifies the position of the Word document where the text will be appended|
-|Bookmark|No|Text value||The target bookmark in the Word document where the text will be appended|This action appends text before or after of the specified bookmark in the Word document|
+|Bookmark|No|Text value|The target bookmark in the Word document where the text will be appended|This action appends text before or after of the specified bookmark in the Word document|
 
 ### Variables produced
 
@@ -203,12 +201,12 @@ Insert an image to a Word file.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Word instance|No|Word instance||The Word instance to work with|This variable must have been previously specified in a **Launch Word** or **Attach to running Word** action|
+|Word instance|No|Word instance|The Word instance to work with|This variable must have been previously specified in a **Launch Word** or **Attach to running Word** action|
 |Insert image to|N/A|Beginning of Word file/End of Word file/Before of Bookmark/After of Bookmark/Before specific text /After specific text|Beginning of Word file|Specifies the position of the Word document that image will be appended|
 |Insert image from|N/A|File/Clipboard|File|The location of the image to be inserted in the specified Word document|
 |Image path|No|File||The full path of the image to be inserted|
-|Text to find|No|Text value||The text to find in the Word document for inserting image|Image will be appended before or after any occurrence of the specified text|
-|Bookmark|No|Text value||The target bookmark in the Word document where the image will be appended|
+|Text to find|No|Text value|The text to find in the Word document for inserting image|Image will be appended before or after any occurrence of the specified text|
+|Bookmark|No|Text value|The target bookmark in the Word document where the image will be appended|
 
 ### Variables produced
 
@@ -230,9 +228,9 @@ Finds text and replaces it with another in the active worksheet of an Excel inst
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Word instance|No|Word instance||The Word instance to work with|This variable must have been previously specified in a **Launch Word** or **Attach to running Word** action|
+|Word instance|No|Word instance|The Word instance to work with|This variable must have been previously specified in a **Launch Word** or **Attach to running Word** action|
 |All matches|N/A|Boolean value|False|Whether to find/ and replace text in all the matching occurrences found or in the first matching occurrence only|
-|Text to find|No|Text value||The text to find in the worksheet|
+|Text to find|No|Text value|The text to find in the worksheet|
 |Text to replace with|No|Text value||The text used to replace the matching cells|
 |Use wildcards|N/A|Boolean value|False|Whether to use wildcards for the text to find|
 |Match case|N/A|Boolean value|False|Whether to search for case-sensitive data|
