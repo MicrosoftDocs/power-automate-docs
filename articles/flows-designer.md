@@ -81,7 +81,7 @@ Instructions appear and tell you what you must do to test your flow. The followi
 
 :::image type="content" source="media/flows-designer/test-prompt.png" alt-text="Screenshot of instructions that tell you how to test your flow.":::
 
-Follow the instructions to test your flow. In this example, you must send an email. The flow test then runs. When the test has finished running, a green check mark appears on each card, together with the number of seconds that it took to be processed.
+Follow the instructions to test your flow. In this example, you must send an email. The flow test then runs. When the test finishes running, a green check mark appears on each card, together with the number of seconds that it took to be processed.
 
 :::image type="content" source="media/flows-designer/test-result.png" alt-text="Screenshot of test results.":::
 
