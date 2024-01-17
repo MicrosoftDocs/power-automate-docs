@@ -81,7 +81,7 @@ Instructions appear and tell you what you must do to test your flow. The followi
 
 :::image type="content" source="media/flows-designer/test-prompt.png" alt-text="Screenshot of instructions that tell you how to test your flow.":::
 
-Follow the instructions to test your flow. In this example, you must send an email. The flow test then runs. When the test has finished running, a green check mark appears on each card, together with the number of seconds that it took to be processed.
+Follow the instructions to test your flow. In this example, you must send an email. The flow test then runs. When the test finishes running, a green check mark appears on each card, together with the number of seconds that it took to be processed.
 
 :::image type="content" source="media/flows-designer/test-result.png" alt-text="Screenshot of test results.":::
 
@@ -116,6 +116,15 @@ On the **Settings** tab, you can set the action time-out, network retry policy, 
 | Run After | In the **Run After** field, configure how an action should run after the execution of any of the preceding flow actions. For example, you can choose to run an action after the preceding action runs successfully, times out, skips, or fails. |
 | Security | Use the **Secure inputs** and **Secure outputs** toggles to turn the operations, and references of output properties, on or off. |
 | Tracking | Set the key and value of tracked properties.
+
+### Configurable trigger polling setting
+
+In select triggers such as _When an item is created-Sharepoint_, and more, you can manually configure the trigger polling setting. This means you can configure how often the flow should check for new items in Sharepoint and others. This in turn ensures how quickly your flow responds to any changes or trigger events. The default polling period is three (3) minutes, which means the flow checks every three (3) minutes if a new item was created.
+
+1. On the [action configuration pane](#action-configuration-pane), select the **Parameters** tab.
+1. Under the **How often do you want to check for items?** heading, enter the interval number and the frequency from the dropdown menu.
+
+    :::image type="content" source="media/flows-designer/trigger-polling.svg" alt-text="Screenshot of the trigger polling setting in the action configuration pane, Parameters tab.":::
 
 ### Code View
 
@@ -171,10 +180,10 @@ To quickly identify which designer version you're using, ask yourself the follow
 
 The cloud flows designer has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
 
-## Limitation
+## Limitations
 
 You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following:
-1. Non-Open API flows (Peek code on an action and if you see `_methods_` parameter, the flow is a non-open API flow),
+1. Non-Open API flows (Peek code on an action and if you see `_methods_` parameter, the flow is a non-open API flow)
 1. Some hybrid triggers:
    1. When a record is selected (Dataverse),
    1. When a flow is run from business process flow (Dataverse),
@@ -182,31 +191,38 @@ You might notice that some functionalities that were in the classic designer are
    1. TeamsOnComposeMessage (Teams),
    1. Teams card trigger,
    1. Microsoft 365 Compliance Connector
-1. A comment,
-1. Power Pages connector,
-1. Power Apps v1 trigger 
+1. A comment
+1. Power Pages connector
+1. Power Apps v1 trigger
 1. Perform a changeset request action (Dataverse)
 1. A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
 
 If you want to work with missing functionalities in the designer, select **Switch to classic designer** on the menu in the cloud flows designer.
 
-## FAQ 
-
-### Why do I get this error "O.split(...).at is not a function" when signing in? 
-
-Power Automate designer doesn't support browsers that are more than two (2) years old. You could see the aforementioned or similar errors in the designer if your browser version is old. It is generally a good idea to update your browser to latest version to avoid such issues. 
-
-### Why do I get this error "The provided flow name contains invalid characters" when importing a flow in a new tenant?
-
-This is a temporary gap, which you can work around by adding a query parameter `_v3=false_` in your URL.
+:::image type="content" source="media/flows-designer/classic-designer.png" alt-text="Screenshot of the 'Switch to classic designer' button below the menu.":::
 
 > [!NOTE]
 > The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.
 
-:::image type="content" source="media/flows-designer/classic-designer.png" alt-text="Screenshot of the 'Switch to classic designer' button below the menu.":::
+## FAQ
+
+### Why do I get this error "O.split(...).at is not a function" when signing in?
+
+Power Automate designer doesn't support browsers that are more than two (2) years old. You could see the aforementioned or similar errors in the designer if your browser version is old. It is generally a good idea to update your browser to latest version to avoid such issues.
+
+### Why do I get this error "The provided flow name contains invalid characters" when importing a flow in a new tenant?
+
+This is a temporary gap, which you can work around by adding a query parameter `v3=false` in your URL.
+
+### Why do I not see dynamic content from triggers like 'When a response is submitted' or why is the flow automatically putting an unnecessary loop?
+
+This might be because of a temporary issue where the **Split On** setting of the trigger is off. If you enable the setting, the issue should go away.
+
+1. On the [action configuration pane](#action-configuration-pane), select the **Settings** tab.
+1. Under the **Split On** heading, move the toggle to **On**,
 
 ### See also
 
-To learn more, go to [Get started with Copilot in cloud flows](get-started-with-copilot.md).
+[Get started with Copilot in cloud flows](get-started-with-copilot.md)
 
 
