@@ -303,7 +303,10 @@ The last step before using your image in Power Automate is to share the image wi
 
 ## Use custom VNet for your hosted machines
 
-You can connect to your own virtual network (vNET) with your hosted machines to securely communicate with each other, the Internet, and on-premises networks. Providing your own VNet from your Azure subscription will allow your hosted machines to be provisioned with your VNet automatically.
+You can connect to your own virtual network (VNet) with your hosted machines to securely communicate with each other, the Internet, and on-premises networks. Providing your own VNet from your Azure subscription will allow your hosted machines to be provisioned with your VNet automatically.
+
+> [!NOTE]
+> You can have up to 30 custom VNet configured per tenant
 
 ### General network requirement
 
