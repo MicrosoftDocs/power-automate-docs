@@ -16,7 +16,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Word actions
 
 The Word automation feature enables you to seamlessly interact with Word files stored either locally or in the cloud. To begin, you need to create a Word instance using either the 'Launch Word' or 'Attach to running Word' action. This instance serves as the input parameter for the rest of the actions in the group, allowing you to easily perform actions on the desired Word file.
@@ -36,9 +35,9 @@ Currently, the below actions are available:
 * **Insert image in Word document:** This action allows users to insert images in specific positions within a Word document. This can be done at the beginning or end of the file, before or after a specific bookmark, or before or after specific text. Note that no spaces or new lines are added. Users have the option to retrieve the image either as a file stored in their local machine or as content from the clipboard.
 :::image type="content" source="media/word/insertimageword.png" alt-text="Screenshot of action to insert an image in a Word instance":::
 
-## <a name="launchword"></a> Launch Word
+## Launch Word
 
-Launches a new Word instance or opens a Word document.
+Opens a new Word instance or opens a Word document.
 
 ### Input parameters
 
@@ -57,7 +56,7 @@ Launches a new Word instance or opens a Word document.
 |-----|-----|-----|
 |`WordInstance`|Word instance|The specific Word instance for use with later Word actions. This allows the user to specify which of possibly several Word documents to access|
 
-### <a name="launchword_onerror"></a> Exceptions
+### Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -67,7 +66,7 @@ Launches a new Word instance or opens a Word document.
 |Failed to launch Word application|Indicates that Word application could not be launched due to an internal error|
 |Word application is not installed|Indicates that Word application isn't installed on the specific machine|
 
-## <a name="attach"></a> Attach to running Word
+## Attach to running Word
 
 Attaches to a Word document that's already open.
 
@@ -83,7 +82,7 @@ Attaches to a Word document that's already open.
 |-----|-----|-----|
 |`WordInstance`|Word instance|The Word instance this action has attached to for use with later Word actions|
 
-### <a name="attach_onerror"></a> Exceptions
+### Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -91,7 +90,7 @@ Attaches to a Word document that's already open.
 |Specified Word document not found|Indicates that the specific Word document couldn't be found in the provided location|
 |Failed to launch Word|Indicates that Word application couldn't be launched due to an internal error|
 
-## <a name="saveword"></a> Save Word
+## Save Word
 
 Saves a previously launched Word instance.
 
@@ -108,7 +107,7 @@ Saves a previously launched Word instance.
 
 This action doesn't produce any variables.
 
-### <a name="saveword_onerror"></a> Exceptions
+### Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -116,7 +115,7 @@ This action doesn't produce any variables.
 |The Word instance or the Word document is not initialized|Indicates that Word instance or Word document specified in action isn't initialized|
 |The operation cannot be performed on a read-only document|Indicates that Word document can't be saved because it is opened as read-only|
 
-## <a name="closeword"></a> Close Word
+## Close Word
 
 Closes a Word instance.
 
@@ -133,7 +132,7 @@ Closes a Word instance.
 
 This action doesn't produce any variables.
 
-### <a name="closeword_onerror"></a> Exceptions
+### Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -141,7 +140,7 @@ This action doesn't produce any variables.
 |Failed to save Word|Indicates a problem saving the Word document|
 |The operation cannot be performed on a read-only document|Indicates that Word document can't be saved because it is opened as read-only|
 
-## <a name="readfromword"></a> Read from Word document
+## Read from Word document
 
 Reads the text content from a document of a Word instance.
 
@@ -160,14 +159,14 @@ Reads the text content from a document of a Word instance.
 |-----|-----|-----|
 |WordData|Text value|The value of the retrieved content|
 
-### <a name="readfromword_onerror"></a> Exceptions
+### Exceptions
 
 |Exception|Description|
 |-----|-----|
 |Failed to read the content from a Word document|Indicates a problem retrieving the content from the specified Word document|
 |The Word instance or the Word document is not initialized|Indicates that Word instance or Word document specified in action isn't initialized|
 
-## <a name="writetoword"></a> Write to Word document
+## Write to Word document
 
 Write or append text to a Word file.
 
@@ -185,7 +184,7 @@ Write or append text to a Word file.
 
 This action doesn't produce any variables.
 
-### <a name="writetoword_onerror"></a> Exceptions
+### Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -193,7 +192,7 @@ This action doesn't produce any variables.
 |The operation cannot be performed on a read-only document|Indicates that Word document can't be edited because it is opened as read-only|
 |The write operation on the Word document instance failed|Indicates a problem writing content in the specified Word document|
 
-## <a name="insertimagetoword"></a> Insert image in Word document
+## Insert image in Word document
 
 Insert an image to a Word file.
 
@@ -212,7 +211,7 @@ Insert an image to a Word file.
 
 This action doesn't produce any variables.
 
-### <a name="insertimagetoword_onerror"></a> Exceptions
+### Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -220,7 +219,7 @@ This action doesn't produce any variables.
 |The operation cannot be performed on a read-only document|Indicates that Word document can't be edited because it is opened as read-only|
 |Failed to insert image|Indicates a problem inserting the image in the specified Word document|
 
-## <a name="findandreplaceword"></a> Find and replace words in Word document
+## Find and replace words in Word document
 
 Finds text and replaces it with another in the active worksheet of an Excel instance.
 
@@ -240,7 +239,7 @@ Finds text and replaces it with another in the active worksheet of an Excel inst
 
 This action doesn't produce any variables.
 
-### <a name="findandreplaceword_onerror"></a> Exceptions
+### Exceptions
 
 |Exception|Description|
 |-----|-----|
