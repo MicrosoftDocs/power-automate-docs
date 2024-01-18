@@ -199,6 +199,30 @@ Follow these steps to perform the app registration.
 
 :::image type="content" source="media/app-registration-dynamics-crm-delegated-permissions.png" alt-text="A screenshot of the Approvals kit App API permissions with the Request API permissions panel open.":::
 
+##### App Registration Admin Consent
+
+For the API permissions you may need to grant tenant wide permissions for the created application. Follow the guidance in [Grant Admin Consent](/entra/identity/enterprise-apps/grant-admin-consent) to provide the required permissions.
+
+If administrator consent is not granted, when users attempt to create a connection with the custom connector they can receive an error similar to the following:
+
+> [!NOTE]
+>
+> user@contoso.com
+>
+> **Need admin approval**
+>
+> needs permission to access resources in your organization
+> that only an admin can grant. Please ask an admin to grant
+> permission to this app before you can use it.
+>
+> Have an admin account? Sign in with that account
+>
+> Return to the application without granting consent
+
+##### App Registration Secret
+
+For the created application add the application secret that will be used by the custom connector using the following steps:
+
 1. Create a secret by moving to **Certificates and Secrets** section and select **New client secret**.
 1. Add a description and select an appropriate expiry date. Select **Add**.
 
