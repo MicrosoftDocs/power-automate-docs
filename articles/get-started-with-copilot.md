@@ -172,7 +172,7 @@ The cloud flows Copilot supports English language only for models.
 
 ### There are some missing functionalities in the cloud flows designer with copilot capabilities. What do I do?
 
-If you want to work with missing functionalities in the designer, go to [Limitations](flows-designer.md#limitations) for details.
+If you want to work with missing functionalities in the designer, go to [Limitations](flows-designer.md#limitations-and-known-issues) for details.
 
 ### What licenses do I need to access Copilot in Power Automate cloud flows?
 
