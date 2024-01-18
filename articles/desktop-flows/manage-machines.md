@@ -64,6 +64,7 @@ Your machine is automatically registered on the currently selected environment i
 > - In the case of a virtual machine, don't clone the virtual machine after installing Power Automate machine runtime.
 > - Machines aren't affected by changes in the Power Automate for desktop organization.
 > - Although you can create and debug desktop flows in Teams environments, you can't register machines in them.
+> - If you reset your PC, your machine registration will be lost.
 
 ## Update running environment for your machine
 
