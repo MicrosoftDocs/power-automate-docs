@@ -180,7 +180,7 @@ To quickly identify which designer version you're using, ask yourself the follow
 
 The cloud flows designer has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
 
-## Limitations
+## Limitations and Known Issues
 
 You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following:
 1. Non-Open API flows (Peek code on an action and if you see `_methods_` parameter, the flow is a non-open API flow)
@@ -196,8 +196,18 @@ You might notice that some functionalities that were in the classic designer are
 1. Power Apps v1 trigger
 1. Perform a changeset request action (Dataverse)
 1. A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
+2. Email auto-complete suggestions in _Send Email/Post message_ in Teams actions
+3. HTML editor in Send Email action
+4. Copy/Paste supporting Scope, Condition, Do until cosntructs
+5. Ability to make manual triger fields optional
 
-If you want to work with missing functionalities in the designer, select **Switch to classic designer** on the menu in the cloud flows designer.
+## Some Known Issues
+
+1. Dynamic content friendly names is getting updated to internal code names upon Save.
+2. Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', etc.
+3. Newline in Approval action and Compose action are disappearing.
+
+If you want to work with missing functionalities in the designer, while the limitations and known issues are being fixed in the meantime, select **Switch to classic designer** on the menu in the cloud flows designer.
 
 :::image type="content" source="media/flows-designer/classic-designer.png" alt-text="Screenshot of the 'Switch to classic designer' button below the menu.":::
 
