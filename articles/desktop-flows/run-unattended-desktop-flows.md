@@ -4,7 +4,7 @@ description: See how to run unattended desktop flows on your device.
 author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/15/2023
+ms.date: 01/16/2024
 ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
@@ -12,7 +12,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Run unattended desktop flows
 
 [Triggering desktop flows from cloud flows](trigger-desktop-flows.md) enables you to run desktop flows in unattended mode. Unattended desktop flows are ideal for automating tasks that don't need human supervision.
@@ -30,6 +29,8 @@ When running desktop flows in unattended mode, keep in mind that:
 - Windows 10 and Windows 11 devices can't run unattended desktop flows if any active Windows user sessions are present (even a locked one).
 
 - On Windows Server, if you have a locked Windows user session open with the same user as the desktop flow connection, you receive an error.
+
+- The user specified in the connection must have permissions to create a remote desktop session on the machine. In most cases this means the user must be a member of the **Remote Desktop Users** group on the machine. On some Citrix configurations, the user must be in the **Direct Access Users** group.
 
 >[!IMPORTANT]
 >

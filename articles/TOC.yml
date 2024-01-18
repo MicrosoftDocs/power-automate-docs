@@ -792,7 +792,7 @@
       href: process-mining-copilot-in-process-analytics.md   
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
-    - name: Use your own Azure Data Lake Storage Gen2 (preview)
+    - name: Use your own Azure Data Lake Storage Gen2
       href: process-mining-byo-azure-data-lake.md
     - name: Transform and map data
       href: process-mining-transform.md
@@ -800,6 +800,8 @@
       href: process-mining-visualize.md
     - name: Customize a report with your own Power BI workspace
       href: process-mining-pbi-workspace.md
+    - name: Use optimized data structure in Power BI report (preview)
+      href: process-mining-pbi-data-structure.md
     - name: Improve cloud flows with process insights (preview)
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
