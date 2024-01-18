@@ -180,16 +180,16 @@ To quickly identify which designer version you're using, ask yourself the follow
 
 The cloud flows designer has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
 
-## Limitations and Known Issues
+## Limitations and known issues
 
 You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following:
 1. Non-Open API flows (Peek code on an action and if you see `_methods_` parameter, the flow is a non-open API flow)
 1. Some hybrid triggers:
-   1. When a record is selected (Dataverse),
-   1. When a flow is run from business process flow (Dataverse),
-   1. For a selected message (v2 Teams),
-   1. TeamsOnComposeMessage (Teams),
-   1. Teams card trigger,
+   1. When a record is selected (Dataverse)
+   1. When a flow is run from business process flow (Dataverse)
+   1. For a selected message (v2 Teams)
+   1. TeamsOnComposeMessage (Teams)
+   1. Teams card trigger
    1. Microsoft 365 Compliance Connector
 1. A comment
 1. Power Pages connector
@@ -199,13 +199,13 @@ You might notice that some functionalities that were in the classic designer are
 2. Email auto-complete suggestions in _Send Email/Post message_ in Teams actions
 3. HTML editor in Send Email action
 4. Copy/Paste supporting Scope, Condition, Do until cosntructs
-5. Ability to make manual triger fields optional
+5. Ability to make manual trigger fields optional
 
-## Some Known Issues
+## Some known issues
 
-1. Dynamic content friendly names is getting updated to internal code names upon Save.
-2. Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', etc.
-3. Newline in Approval action and Compose action are disappearing.
+1. Dynamic content friendly names is getting updated to internal code names upon save.
+1. Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', and others.
+1. Newline in Approval action and Compose action are disappearing.
 
 If you want to work with missing functionalities in the designer, while the limitations and known issues are being fixed in the meantime, select **Switch to classic designer** on the menu in the cloud flows designer.
 
