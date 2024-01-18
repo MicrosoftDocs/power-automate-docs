@@ -68,9 +68,12 @@ Mapping persons from the [User journey](./user-journey.md) to licenses
 | Persona                   | User Journey Reference | License |
 |---------------------------|------------------------|---------|
 | Approver                  | Rebecca | Microsoft Office 365 (For Office 365 or Microsoft Teams) or Power Platform standard user license (For Power Automate Maker Portal) |
-| Approval Administrator    | Charlotte | Microsoft Power Apps license |
+| Approval Administrator    | Charlotte | Microsoft Power Apps license (Per User, Per App or Pay as Go) |
 | Maker                     | Charlotte or Gibson | Power Automate Premium to author Cloud Flows |
-| Environment Administrator | Gibson | Assigned Power Automate Service to execute Cloud Flows |
+| Environment Administrator | Gibson | Assigned Power Automate license to execute Cloud Flows with premium connectors included. |
+
+  > [!NOTE]
+  > Refer to [Compare Power Automate Plans](/power-platform/admin/power-automate-licensing/types#compare-power-automate-plans) for plans that include the ability to include Premium connectors
 
 ## (Optional) Set up a new environment to install
 
