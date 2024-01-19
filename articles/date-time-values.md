@@ -1,5 +1,5 @@
 ---
-title: Restore deleted flows in Power Automate
+title: Customize or format date and time values in a flow
 description: Learn how to customize or format date and time values in a Power Automate flow.
 author: kisubedi
 contributors:
@@ -16,7 +16,7 @@ search.audienceType:
   - enduser
 ---
 
-# Customize or format date and sime values in a flow
+# Customize or format date and time values in a flow
 
 This article provides steps to customize or format date and time values in a Power Automate flow.
 
@@ -45,7 +45,7 @@ A standard format string uses a single character (for example, d, g, or G) 
 
     `formatDateTime('2009-06-15T13:45:30', 'g')` // Returns the format 6/15/2009 1:45 PM
 
--   The format string `D` corresponds to the Long date pattern:
+- The format string `D` corresponds to the Long date pattern:
 
     `formatDateTime('2009-06-15T13:45:30', 'D')` // Returns the format Monday, June 15, 2009
 
@@ -57,7 +57,7 @@ A custom format string is any string with more than one character (for example
 
 **Examples**
 
-- The format string `M/dd/yyyy h:mm tt` represents the same pattern as the standard format string `g` as described in [Standard format strings](standard-format-strings):
+- The format string `M/dd/yyyy h:mm tt` represents the same pattern as the standard format string `g` as described in [Standard format strings](#custom-format-strings):
 
     `formatDateTime('2009-06-15T13:45:30', 'M/dd/yyyy h:mm tt')` // Returns the format 6/15/2009 1:45 PM
 
@@ -103,7 +103,7 @@ To use a date and time value in a flow, follow these steps.
 
 7.  Select **OK**.
 
-### Example with dynamic content
+## Example with dynamic content
 
 Dynamic contents are variables produced by triggers and actions within a flow diagram. They enable users to select field references from previous steps and write expressions.
 
@@ -139,7 +139,7 @@ This example walks through a simple flow that demonstrates the use of the `forma
         The full expression looks like this:  
         `formatDateTime(triggerBody()?\['date'\], 'MM/dd/yyyy')`
 
-        :::image type="content" source="./media/date-time-values/format.png" alt-text="Screenshot of the date format in the Parameters tab.":::
+        :::image type="content" source="./media/date-time-values/format.png" alt-text="Screenshot of the formatDatTime function using dynamic content.":::
 
     1. Select **Add**.
 1. In the **Parameters** tab, insert an email in the **To** field, and a subject in the **Subject** field.
@@ -147,7 +147,7 @@ This example walks through a simple flow that demonstrates the use of the `forma
 
 1. After running the flow, the email received shows the date in the specified MM/dd/yyyy format.
 
-### Example with Convert time zone
+## Example with Convert time zone
 
 Power Automate uses Coordinated Universal Time (UTC) by default. To handle date and time values in other time zones, you can use `formatDateTime` in conjunction with the `convertTimeZone` function.
 
