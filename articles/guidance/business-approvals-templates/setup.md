@@ -67,13 +67,13 @@ Mapping persons from the [User journey](./user-journey.md) to licenses
 
 | Persona                   | User Journey Reference | License |
 |---------------------------|------------------------|---------|
-| Approver                  | Rebecca | Microsoft Office 365 (For Office 365 or Microsoft Teams) or Power Platform standard user license (For Power Automate Maker Portal) |
-| Approval Administrator    | Charlotte | Microsoft Power Apps license (Per User, Per App or Pay as Go) |
-| Maker                     | Charlotte or Gibson | Power Automate Premium to author Cloud Flows |
-| Environment Administrator | Gibson | Assigned Power Automate license to execute Cloud Flows with premium connectors included. |
+| Approver                  | Rebecca | Microsoft Office 365 (For Office 365 or Microsoft Teams) or Power Platform standard user license (For Power Automate maker portal). |
+| Approval administrator    | Charlotte | Microsoft Power Apps license (per user, per app, or pay-as-you-go). |
+| Maker                     | Charlotte or Gibson | Power Automate premium to author cloud flows. |
+| Environment administrator | Gibson | Assigned Power Automate license to execute cloud flows with premium connectors included. |
 
   > [!NOTE]
-  > Refer to [Compare Power Automate Plans](/power-platform/admin/power-automate-licensing/types#compare-power-automate-plans) for plans that include the ability to include Premium connectors
+  > Refer to [Compare Power Automate Plans](/power-platform/admin/power-automate-licensing/types#compare-power-automate-plans) for plans that include the ability to include premium connectors.
 
 ## (Optional) Set up a new environment to install
 
@@ -178,15 +178,15 @@ Once import is complete, you should see business approvals kit in the list of so
 > [!NOTE]
 > The import can take up to 10 minutes to complete.
 
-### After import steps
+## After import steps
 
-Once the approvals kit solution is imported to an environment successfully, you must update the  Approvals kit custom connector to point to the target tenant Identity provider and turn on cloud flows.
+Once the approvals kit solution is imported to an environment successfully, you must update the Approvals kit custom connector to point to the target tenant Identity provider and turn on cloud flows.
 
-#### Update custom connector
+### Update custom connector
 
 You must have an app registered to interact with Dataverse table and Custom API.
 
-##### App Registration
+### App Registration
 
 Follow these steps to perform the app registration.
 
@@ -202,11 +202,11 @@ Follow these steps to perform the app registration.
 
 :::image type="content" source="media/app-registration-dynamics-crm-delegated-permissions.png" alt-text="A screenshot of the Approvals kit App API permissions with the Request API permissions panel open.":::
 
-##### App Registration Admin Consent
+#### App registration admin consent
 
-For the API permissions you may need to grant tenant wide permissions for the created application. Follow the guidance in [Grant Admin Consent](/entra/identity/enterprise-apps/grant-admin-consent) to provide the required permissions.
+For the API permissions, you might need to grant tenant wide permissions for the created application. Follow the guidance in [Grant Admin Consent](/entra/identity/enterprise-apps/grant-admin-consent) to provide the required permissions.
 
-If administrator consent is not granted, when users attempt to create a connection with the custom connector they can receive an error similar to the following:
+If administrator consent isn't granted, when users attempt to create a connection with the custom connector they can receive an error similar to the following:
 
 > [!NOTE]
 >
@@ -214,25 +214,24 @@ If administrator consent is not granted, when users attempt to create a connecti
 >
 > **Need admin approval**
 >
-> needs permission to access resources in your organization
-> that only an admin can grant. Please ask an admin to grant
-> permission to this app before you can use it.
+> Needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.
 >
-> Have an admin account? Sign in with that account
+> Have an admin account? Sign in with that account.
 >
-> Return to the application without granting consent
+> Return to the application without granting consent.
 
-##### App Registration Secret
+##### App registration secret
 
 For the created application add the application secret that will be used by the custom connector using the following steps:
 
-1. Create a secret by moving to **Certificates and Secrets** section and select **New client secret**.
-1. Add a description and select an appropriate expiry date. Select **Add**.
+1. Create a secret by moving to **Certificates and Secrets** section and selecting **New client secret**.
+1. Add a description and select an appropriate expiry date.
+1. Select **Add**.
 
 > [!IMPORTANT]
 >
 > - Copy the secret value and save it. You'll use the copied value when configuring custom connector in the next section.
-> - You'll also need the Client ID from Overview section.
+> - You'll also need the Client ID from ths [Overview](#overview) section.
 
 #### Update the Approvals kit with a custom connector
 
