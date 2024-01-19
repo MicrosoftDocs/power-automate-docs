@@ -667,6 +667,8 @@
       href: ./desktop-flows/actions-reference/webautomation.md
     - name: Excel
       href: ./desktop-flows/actions-reference/excel.md
+    - name: Word
+      href: ./desktop-flows/actions-reference/word.md
     - name: AI Builder (preview)
       href: ./desktop-flows/actions-reference/aibuilder.md
     - name: Database
@@ -1174,3 +1176,5 @@
     href: faqs-copilot-generative-answers-power-automate-desktop.md
   - name: FAQ for generating code with natural language
     href: faqs-copilot-nl-to-code.md
+  - name: FAQ for suggested actions in Power Automate for desktop
+    href: faqs-action-suggestions-power-automate-desktop.md
