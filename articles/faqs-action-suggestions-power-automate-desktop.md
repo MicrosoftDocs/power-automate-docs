@@ -8,6 +8,7 @@ ms.topic: article
 author: Cochamos
 ms.author: cochamos
 ms.reviewer: matp
+ms.collection: bap-ai-copilot
 ---
 # FAQ for Power Automate for desktop suggested actions
 

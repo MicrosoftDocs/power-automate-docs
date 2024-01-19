@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.date: 01/16/2024
 ms.author: iomavrid
 ms.reviewer: gtrantzas
+ms.collection: bap-ai-copilot
 contributors:
 search.audienceType: 
   - flowmaker
