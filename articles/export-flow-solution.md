@@ -50,6 +50,12 @@ The downloaded solution zip file is available in the downloads folder for your w
 
 Find the flows within the **Workflows** folder in the solution zip file. Each exported workflow is represented as a JSON file. Flow definitions were traditionally a compact block of JSON in a single line, but in February 2022 the export format was changed to multi-line formatted JSON to make them easier to read and make them friendlier to revision tracking in source control.
 
+## Export a specific solution cloud flow
+
+[Solution cloud flows](/power-automate/overview-solution-flows) are exported and moved between environments in a [solution](/power-apps/maker/data-platform/solutions-overview). The solution should contain all the solution components that the flow uses, such as [connection references](/power-apps/maker/data-platform/create-connection-reference), [environment variables](/en-us/power-apps/maker/data-platform/environmentvariables), or [tables](/power-apps/maker/data-platform/entity-overview). Depending on the desired scenatio, the solution could also contain solution components that reference the flow, such as [apps](/power-apps/maker/canvas-apps/add-app-solution) and [bots](/microsoft-copilot-studio/advanced-flow). 
+
+The flow details page contains a *Solutions* card that lists all the solutions that reference a flow. If the flow is only in the default solution (the "all solution components" view) then, either [add the flow into an existing solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution) or [create a new solution](/power-automate/overview-solution-flows#create-a-solution).
+
 ## Tips
 
 - You can also find your solutions via the **Solutions** card in the flow details page of solution-aware cloud flows. Alternatively, select the solution in which your are interested from the **Solutions** card, select the **Overview** tab, and then use the **Export** button there.
