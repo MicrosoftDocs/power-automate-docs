@@ -11,7 +11,9 @@ ms.topic: conceptual
 ms.date: 09/08/2023
 ms.author: hamenon
 ms.reviewer: angieandrews
-ms.collection: get-started
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 search.audienceType: 
   - flowmaker
   - enduser
