@@ -32,10 +32,10 @@ Open the registry editor (Windows key + R, and type 'regedit'), and then set the
 
 | Hive | Key | Name | Type | Description |
 |---|---|---|---|---|
-| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Global\Screen | ScreenResolutionEnabled | DWORD | If set to '1', will enable the custom resolution settings. |
-| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Global\Screen | Width | DWORD | Set the screen resolution width. |
-| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Global\Screen | Height | DWORD | Set the screen resolution height. |
-| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Global\Screen | Scale | DWORD | Set the screen resolution scale. |
+| HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | ScreenResolutionEnabled | DWORD | If set to '1', will enable the custom resolution settings. |
+| HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | Width | DWORD | Set the screen resolution width. |
+| HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | Height | DWORD | Set the screen resolution height. |
+| HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | Scale | DWORD | Set the screen resolution scale. |
 
 ## With UIFlowService.exe.config file
 
