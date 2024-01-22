@@ -91,44 +91,51 @@ If you have permission to access the parent flow, you can use this action to vie
 ## Cancel parent flow run
 If you're the owner of the flow, or have the role System Administrator or Environment Admin, you can cancel the parent flow run instance. This will cancel the current desktop flow and all the other action that were used in the parent flow.
 
-## Machine-assignment logic of a run queue
+## Extended queue priorization 
+The extended queue priorization is a machine / machine group setting which optimizes the machine-assignment logic of a run queue.
 
-> [!NOTE]
-> - A run can only be processed by a machine if the user session it needs to open (the connexion credentials) is not already opened on the machine​.
-> - The setting ‘Extended queue priorization’ can only be enabled if the machine supports multi-session (for single machines) or if some machines in the machine group support multi-session​ (for machines groups)
 
 ### With disabled ‘extended queue priorization’ : 
-The machine-assignment algorithm will always wait for the first run in queue (Next to run status) to be assigned to a machine before considering the next one.
+**Principe:** The machine-assignment algorithm will always wait for the first run in queue ('Next to run' status) to be assigned to a machine before considering the next one.
 
-**Logic :** A run becomes ‘Next to run’, its connexion user is user Y :​
+**Logic for an attended run:** An attended run becomes ‘Next to run’, its connexion user is user Y :​
+1. ​Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
+2. Filter: The algorithm selects all machines which have an opened session of user Y 
+3. Allocation : the algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
+
+**Logic for an unattended run:** An unattended run becomes ‘Next to run’, its connexion user is user Y :​
 1. ​Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
 2. Filter: The algorithm selects all available machines (= machines which have at least one session available)
-3. Filter: the algorithm discards the machines which already have a session opened by user Y
-4. Allocation : The algorithm assignes the run at random to the remaining machines.
-
-If no machine is remaining after the last filter, the run waits until one becomes available.
+3. Filter: the algorithm discards the machines which already have a session opened by user Y**
+4. Allocation : the algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
+> [!NOTE]
+> ** An unattended run can only be processed by a machine if the user session targeted (recorded on the desktop flow connection) is not already in-use on the same machine​.
 
 > [!TIP]
-> - With disabled ‘Extended queue priorization’, the run queue can be blocked by the first run in queue unable to be assigned to a machine eventhough other queued runs could be processed immediately.
-> - Enabling 'Extended queue priorization' unblocks the run queue in that situation
+> - With disabled ‘Extended queue priorization’, if no machine is immediately available for the first run in queue, it is failed
+> - Enabling 'Extended queue priorization' allows the algorithm to reorder the queue when the first run in queue can not be processed (without failing it)
 
 ### With enabled ‘extended queue priorization’ :  
-The machine-assignment algorithm will be able to change the order of the run queue if the first run in the queue cannot be processed due to its targeted user session being already in use on all available machines.
+**Principe:** The machine-assignment algorithm will be able to change the order of the run queue if the first run in the queue cannot be processed because :
+- its targeted user session is currently not opened on any machine (for attended runs)
+- its targeted user session being already in use on all available machines (for an unattended run)
 
-**Logic :** A run becomes ‘Next to run’, its connexion user is user Y :​
+**Logic for an attended run:** A run becomes ‘Next to run’, its connexion user is user Y :​
+1. Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
+2. Filter: The algorithm selects all machines which have an opened session of user Y 
+   - if some machines remain : step 4
+   - if no machine remains : step 3
+3. The algorithm reorders the queue by considering the next run in queue (until a run is assignable to a machine)
+4. Allocation : the algorithm assigns the run to one of the remaining machines (randomly)
+
+**Logic for an unattended run:** A run becomes ‘Next to run’, its connexion user is user Y :​
 1. Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
 2. Filter: The algorithm selects all available machines (= machines which have at least one session available) 
 3. Filter: the algorithm discards the machines which already have a session opened by user Y :
    - if some machines remain : step 5
    - if no machine remains : step 4
-
-4. Look for next processable run : ​
-- The algorithm considers the next run in the queue
-- The algorithm reapply filter 1, 2 & 3 ​
-- If some assignable machines remain after filtering, go to step 5​
-- If no machine remains, restart step 4​
-
-​5. Allocation : When a run with assignable machines is found, the algorithm changes its status to “Next to run” & the run is assigned at random to one of the assignable machines.
+4. The algorithm reorders the queue by considering the next run in queue (until a run is assignable to a machine)
+5. Allocation : the algorithm assigns the run to one of the remaining machines (randomly)
 
 ## View list of run queues for gateways
 
