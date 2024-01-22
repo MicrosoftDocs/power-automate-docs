@@ -27,7 +27,7 @@ You can manage the following capacity within the capacity utilization page:
 |Capacity|Consuming Power Automate object|Consumption mode|Operation enabled|
 |----|--------------------|----|----|
 |Hosted RPA capacity|Hosted machine|[Auto-allocation](# "Hosted RPA capacity is auto-allocated to the hosted machine at its creation.")|To be created, each hosted machine requires an hosted RPA capacity allocated.|
-|Hosted RPA capacity|Hosted machine group|Manual allocation|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot during auto-scaling.|
+|Hosted RPA capacity|Hosted machine group|Manual allocation of committed bots|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot during auto-scaling.|
 |Process capacity (or legacy Unattended RPA capacity)|Machine|[Auto-allocation](# "Capacity is auto-allocated to the machine at unattended desktop flow run time.")|Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run concurrently.|
 |Process capacity|Cloud flow|Manual allocation|Every capacity allocated to a cloud flow enables it, along with all its associated cloud flows, to use premium connectors and execute actions up to a daily limit of 250k Power Platform Requests (stackable limit).|
 
