@@ -8,11 +8,11 @@ ms.author: cvassallo
 ms.reviewer: 
 ---
 
-# Unattended RPA capacity utilization 
+# Process capacity (or legacy Unattended RPA capacity) utilization 
 
 > [!IMPORTANT]
 > - The capacity utilization page is in preview.
-> - The Unattended RPA capacity (legacy) and the Process capacity have been combined in a single pool. They can seamlessly be utilized by machines (and coming in Q2 2024, by cloud flows).
+> - The Process capacity and the Unattended RPA capacity (legacy) have been combined in a single pool. They can seamlessly be utilized by machines (and coming in Q2 2024, by cloud flows).
 > - The details allocation of those capacity (to machines and cloud flows) will be incorporated in the capacity utilization page in Q2 2024.
 
 
