@@ -60,7 +60,6 @@ In order to see runs in this list, one of the following situations must be true:
 > [!TIP]
 > To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources in [Configure user security to resources in an environment](/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database).
 
-
 ## Queue Status
 A run in a queue can have the following status:
 - Running
@@ -91,6 +90,45 @@ If you have permission to access the parent flow, you can use this action to vie
 
 ## Cancel parent flow run
 If you're the owner of the flow, or have the role System Administrator or Environment Admin, you can cancel the parent flow run instance. This will cancel the current desktop flow and all the other action that were used in the parent flow.
+
+## Machine-assignation logic of a run queue
+
+> [!NOTE]
+> - A run can only be processed by a machine if the user session it needs to open (the connexion credentials) is not already opened on the machine​.
+> - The setting ‘Extended queue priorization’ can only be enabled if the machine supports multi-session (for single machines) or if some machines in the machine group support multi-session​ (for machines groups)
+
+### With disabled ‘extended queue priorization’ : 
+The machine-assignation algorithm will always wait for the first run in queue (Next to run status) to be assigned to a machine before considering the next one:
+
+A run becomes ‘Next to run’, its connexion user is user Y :​
+1. ​Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
+2. Filter: The algorithm selects all available machines (= machines which have at least one session available)
+3. Filter: the algorithm discards the machines which already have a session opened by user Y
+4. Allocation : The algorithm allocates the run at random to the remaining machines.
+
+If no machine is remaining after the last filter, the run waits until one becomes available.
+
+> [!TIP]
+> With disabled ‘Extended queue priorization’, the run queue can be blocked by the first run in queue unable to be assigned to a machine eventhough other queued runs could be processed immediately
+> Enabling 'Extended queue priorization' unblocks the run queue in that situation
+
+### With enabled ‘extended queue priorization’ :  
+The machine-assignation algorithm will be able to change the order of the run queue if the first run in the queue cannot be processed due to its targeted user session being already in use on all available machines.
+
+A run becomes ‘Next to run’, its connexion user is user Y :​
+1. Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
+2. Filter: The algorithm selects all available machines (= machines which have at least one session available) 
+3. Filter: the algorithm discards the machines which already have a session opened by user Y :
+   - if some machines remain : go to step 5
+   - if no machine remains :
+
+4. Look for next processable run : ​
+- The algorithm considers the next run in the queue
+- The algorithm reapply filter 1, 2 & 3 ​
+- If some assignable machines remain after filtering, go to step 5​
+- If no machine remains, restart step 4​
+
+​5. Allocation : When a run with assignable machines is found, the algorithm changes its status to “Next to run” & the run is assigned at random to one of the assignable machines ​
 
 ## View list of run queues for gateways
 
