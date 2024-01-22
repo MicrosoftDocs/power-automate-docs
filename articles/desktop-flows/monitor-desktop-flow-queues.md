@@ -98,12 +98,12 @@ The extended queue priorization is a machine / machine group setting which optim
 ### With disabled ‘extended queue priorization’ : 
 **Principe:** The machine-assignment algorithm will always wait for the first run in queue ('Next to run' status) to be assigned to a machine before considering the next one.
 
-**Logic for an attended run:** An attended run becomes ‘Next to run’, its connexion user is user Y :​
+**Logic for an attended run:** The first run in queue is an attended run, its connexion user is user Y :​
 1. ​Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
 2. Filter: The algorithm selects all machines which have an opened session of user Y 
 3. Allocation : the algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
 
-**Logic for an unattended run:** An unattended run becomes ‘Next to run’, its connexion user is user Y :​
+**Logic for an unattended run:** The first run in queue is an unattended run, its connexion user is user Y :​
 1. ​Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
 2. Filter: The algorithm selects all available machines (= machines which have at least one session available)
 3. Filter: the algorithm discards the machines which already have a session opened by user Y**
@@ -120,7 +120,7 @@ The extended queue priorization is a machine / machine group setting which optim
 - its targeted user session is currently not opened on any machine (for attended runs)
 - its targeted user session being already in use on all available machines (for an unattended run)
 
-**Logic for an attended run:** A run becomes ‘Next to run’, its connexion user is user Y :​
+**Logic for an attended run:** The first run in queue is an attended run, its connexion user is user Y :​
 1. Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
 2. Filter: The algorithm selects all machines which have an opened session of user Y 
    - if some machines remain : step 4
@@ -128,7 +128,7 @@ The extended queue priorization is a machine / machine group setting which optim
 3. The algorithm reorders the queue by considering the next run in queue (until a run is assignable to a machine)
 4. Allocation : the algorithm assigns the run to one of the remaining machines (randomly)
 
-**Logic for an unattended run:** A run becomes ‘Next to run’, its connexion user is user Y :​
+**Logic for an unattended run:** The first run in queue is an unattended run, its connexion user is user Y :​
 1. Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
 2. Filter: The algorithm selects all available machines (= machines which have at least one session available) 
 3. Filter: the algorithm discards the machines which already have a session opened by user Y :
