@@ -98,9 +98,9 @@ If you're the owner of the flow, or have the role System Administrator or Enviro
 > - The setting ‘Extended queue priorization’ can only be enabled if the machine supports multi-session (for single machines) or if some machines in the machine group support multi-session​ (for machines groups)
 
 ### With disabled ‘extended queue priorization’ : 
-The machine-assignation algorithm will always wait for the first run in queue (Next to run status) to be assigned to a machine before considering the next one:
+The machine-assignation algorithm will always wait for the first run in queue (Next to run status) to be assigned to a machine before considering the next one.
 
-A run becomes ‘Next to run’, its connexion user is user Y :​
+**Logic :** A run becomes ‘Next to run’, its connexion user is user Y :​
 1. ​Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
 2. Filter: The algorithm selects all available machines (= machines which have at least one session available)
 3. Filter: the algorithm discards the machines which already have a session opened by user Y
@@ -109,18 +109,18 @@ A run becomes ‘Next to run’, its connexion user is user Y :​
 If no machine is remaining after the last filter, the run waits until one becomes available.
 
 > [!TIP]
-> With disabled ‘Extended queue priorization’, the run queue can be blocked by the first run in queue unable to be assigned to a machine eventhough other queued runs could be processed immediately
-> Enabling 'Extended queue priorization' unblocks the run queue in that situation
+> - With disabled ‘Extended queue priorization’, the run queue can be blocked by the first run in queue unable to be assigned to a machine eventhough other queued runs could be processed immediately.
+> - Enabling 'Extended queue priorization' unblocks the run queue in that situation
 
 ### With enabled ‘extended queue priorization’ :  
 The machine-assignation algorithm will be able to change the order of the run queue if the first run in the queue cannot be processed due to its targeted user session being already in use on all available machines.
 
-A run becomes ‘Next to run’, its connexion user is user Y :​
+**Logic :** A run becomes ‘Next to run’, its connexion user is user Y :​
 1. Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
 2. Filter: The algorithm selects all available machines (= machines which have at least one session available) 
 3. Filter: the algorithm discards the machines which already have a session opened by user Y :
-   - if some machines remain : go to step 5
-   - if no machine remains :
+   - if some machines remain : step 5
+   - if no machine remains : step 4
 
 4. Look for next processable run : ​
 - The algorithm considers the next run in the queue
