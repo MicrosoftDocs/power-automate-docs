@@ -8,7 +8,7 @@ ms.author: cvassallo
 ms.reviewer: 
 ---
 
-# Process capacity (or legacy Unattended RPA capacity) utilization 
+# Process and Unattended RPA capacity utilization (preview)
 
 > [!IMPORTANT]
 > - The capacity utilization page is in preview.
@@ -16,9 +16,9 @@ ms.reviewer:
 > - The details allocation of those capacity (to machines and cloud flows) will be incorporated in the capacity utilization page in Q2 2024.
 
 
-## Reminder on Unattended RPA capacity 
+## Reminder on Process and Unattended RPA capacity 
 
-Within the Power Automate platform, the **‘Unattended RPA capacity’** is a purchased item (an [add-on](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on)) assigned to the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) which allows to run desktop flows autonomously without human interaction. The Unattended RPA capacity (or Process capacity) is needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run concurrently.
+Within the Power Automate platform, the **‘Process and Unattended RPA capacity'** are purchased items (a [license](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types#standalone-plans) and an [add-on](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on)) assigned to the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) which allows to run desktop flows autonomously without human interaction. The Process (or Unattended RPA) capacity is needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run concurrently.
 <br/><br/>
 
 |Consumming object|Description|Consumption mode|
@@ -31,11 +31,11 @@ Within the Power Automate platform, the **‘Unattended RPA capacity’** is a p
 <br/>
 
 
-## Unattended RPA capacity overview
+## Process and Unattended RPA capacity overview
 
-The '**Unattended RPA capacity overview**' pie chart helps the user understand what's the unattended RPA capacity consumption within the environment, let him known if there is still capacity to scale-up in the future and alerts him when the utilized capacity is exceeding environment capacity (= overage): 
+The '**Process and Unattended RPA capacity overview**' pie chart helps the user understand what's the capacity consumption within the environment, let him known if there is still capacity to scale-up in the future and alerts him when the utilized capacity is exceeding environment capacity (= overage): 
 
-![Unattended capacity overview](media/capacity-utilization/unattended-capacity-overview.png)
+![Process capacity overview](media/capacity-utilization/unattended-capacity-overview.png)
 
 ||Legend|Description|
 |----|--------------------|----|
@@ -45,14 +45,14 @@ The '**Unattended RPA capacity overview**' pie chart helps the user understand w
 
 
 > [!NOTE]
-> - The current chart displays an environment-wide report over unattended capacity consumption (it does not distinguish the user's machines consumption from others' machines consumption)
-> - This distinction will be added with the manual allocation of Unattended RPA capacity to the machine in Q2 2024
+> - The current chart displays an environment-wide report over capacity consumption (it does not distinguish the user's machines consumption from others' machines consumption)
+> - This distinction will be added with the manual allocation of capacity to the machine in Q2 2024
 
 <br/><br/>
 
-## Unattended RPA capacity insights 
+## Process and Unattended RPA capacity insights 
 
-The '**Unattended capacity insights**' card informs the user of operation health and gives him recommendation in case of compliance issues:
+The '**Process and unattended capacity insights**' card informs the user of operation health and gives him recommendation in case of compliance issues:
 
 ![Unattended capacity insight](media/capacity-utilization/unattended-capacity-insight.png)
 
@@ -66,26 +66,26 @@ The '**Unattended capacity insights**' card informs the user of operation health
 
 <br/><br/>
 
-## Unattended RPA capacity overage
+## Capacity overage
 
 Capacity overage in an environment occurs when **the capacity utilized by unattended machines surpasses the assigned capacity of the environment**. To prevent any disruption, it is crucial to promptly rectify the situation:
 
-![Unattended overage](media/capacity-utilization/overage-unattended.png)
+![Process overage](media/capacity-utilization/overage-unattended.png)
 <br><br>
 
-### How to fix unattended capacity overage?
-When some unattended machines are in overage, the **Fix capacity button** appears in the 'Unattended capacty insights' card, it provides corrective actions: 
+### How to fix process and unattended RPA capacity overage?
+When some unattended machines are in overage, the **Fix capacity button** appears in the 'Process and unattended capacty insights' card, it provides corrective actions: 
 
 |Fix capacity - Corrective actions|
 |-|
-|![Unattended fix capacity](media/capacity-utilization/unattended-fix-capacity.png)|
+|![Process fix capacity](media/capacity-utilization/unattended-fix-capacity.png)|
 
 <br><br>
 The **Request capacity** action submits a request to the tenant administrator for the assignation of capacity to the environment:
 <br>
 |Fix capacity - Request capacity|
 |-|
-|![Unattended fix capacity](media/capacity-utilization/unattended-capacity-request.png)|
+|![Process request capacity](media/capacity-utilization/unattended-capacity-request.png)|
 
 > [!NOTE]
 > - The pre-set value in the request capacity modal is equal to the total overage value in the environment 
