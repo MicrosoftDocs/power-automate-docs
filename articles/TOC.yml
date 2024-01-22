@@ -409,14 +409,6 @@
         href: ./desktop-flows/hosted-machine-groups.md
     - name: Scale with AVD starter kit (deprecated)
       href: ./desktop-flows/avd-overview.md
-  - name: Manage your capacity utilization (preview)
-    items:
-    - name: Capacity utilization within Power Automate
-      href: ./desktop-flows/capacity-utilization.md
-    - name: Hosted RPA capacity utilization
-      href: ./desktop-flows/capacity-utilization-hosted.md
-    - name: Process capacity legacy (unattended RPA capacity) utilization
-      href: ./desktop-flows/capacity-utilization-process.md
   - name: Use credentials in desktop flow connections (preview)
     href: ./desktop-flows/manage-credentials.md
   - name: Manage desktop flows
@@ -755,6 +747,16 @@
       href: ./desktop-flows/dynamics365-fin-rpa.md
     - name: Use RPA with Dynamics 365 Customer Service
       href: ./desktop-flows/dynamics365-cs-rpa.md
+- name: Manage your automations
+  items:
+  - name: Capacity utilization (preview)
+    items:
+    - name: Introduction to capacity utilization
+      href: ./desktop-flows/capacity-utilization.md
+    - name: Hosted RPA capacity utilization
+      href: ./desktop-flows/capacity-utilization-hosted.md
+    - name: Process capacity utilization
+      href: ./desktop-flows/capacity-utilization-process.md
 - name: Business process flows
   items:
   - name: Business process flows overview
