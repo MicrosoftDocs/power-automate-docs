@@ -33,7 +33,7 @@ Within the Power Automate platform, the **‘Process and Unattended RPA capacity
 
 ## Process and Unattended RPA capacity overview
 
-The '**Process and Unattended RPA capacity overview**' pie chart helps the user understand what's the capacity consumption within the environment, let him known if there is still capacity to scale-up in the future and alerts him when the utilized capacity is exceeding environment capacity (= overage): 
+The '**Process and Unattended RPA capacity overview**' pie chart helps the user understand what is the capacity consumption within the environment, let them known if there is still capacity to scale-up in the future and alerts them when the utilized capacity is exceeding environment capacity (= overage): 
 
 ![Process capacity overview](media/capacity-utilization/unattended-capacity-overview.png)
 
@@ -52,7 +52,7 @@ The '**Process and Unattended RPA capacity overview**' pie chart helps the user 
 
 ## Process and Unattended RPA capacity insights 
 
-The '**Process and unattended capacity insights**' card informs the user of operation health and gives him recommendation in case of compliance issues:
+The '**Process and unattended capacity insights**' card informs the user of operation health and gives them recommendation in case of compliance issues:
 
 ![Unattended capacity insight](media/capacity-utilization/unattended-capacity-insight.png)
 
@@ -68,7 +68,7 @@ The '**Process and unattended capacity insights**' card informs the user of oper
 
 ## Capacity overage
 
-Capacity overage in an environment occurs when **the capacity utilized by unattended machines surpasses the assigned capacity of the environment**. To prevent any disruption, it is crucial to promptly rectify the situation:
+Capacity overage in an environment occurs when **the capacity utilized by unattended machines surpasses the assigned capacity of the environment**. To return to compliance, it is importanat to promptly rectify the situation:
 
 ![Process overage](media/capacity-utilization/overage-unattended.png)
 <br><br>
