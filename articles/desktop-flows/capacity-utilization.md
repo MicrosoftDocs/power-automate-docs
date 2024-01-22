@@ -59,9 +59,9 @@ The 2 pie charts underscore the point that, within a given environment, capacity
 
 The Hosted RPA capacity allows to run desktop flows with zero infrastructure. It is allocated to hosted machines or committed to hosted machine groups. 
 
-### 2. [Process capacity (or legacy Unattended RPA capacity) utilization](capacity-utilization-process.md)
+### 2. [Process (or legacy Unattended RPA) capacity utilization](capacity-utilization-process.md)
 
-The Process (or legacy Unattended RPA) capacity is needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run concurrently.
+The Process capacity (or legacy Unattended RPA capacity) is needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run concurrently.
 
 <br/><br/>
 
