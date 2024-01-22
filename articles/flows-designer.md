@@ -207,9 +207,10 @@ You might notice that some functionalities that were in the classic designer are
 1. Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', and others.
 1. Newline in Approval action and Compose action are disappearing.
 
-If you want to work with missing functionalities in the designer, while the limitations and known issues are being fixed in the meantime, select **Switch to classic designer** on the menu in the cloud flows designer.
+If you want to work with missing functionalities in the designer, while the limitations and known issues are being fixed in the meantime, toggle out of **New designer** on the menu in the cloud flows designer.
 
-:::image type="content" source="media/flows-designer/classic-designer.png" alt-text="Screenshot of the 'Switch to classic designer' button below the menu.":::
+![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/cd04f241-908c-4b6d-ae63-2ba58024dbb0)
+
 
 > [!NOTE]
 > The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.
