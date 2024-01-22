@@ -202,7 +202,7 @@ You might notice that some functionalities that were in the classic designer are
 
 ## Some known issues
 
-1. Dynamic content friendly names is getting updated to internal code names upon save.
+1. Dynamic content friendly names are getting updated to internal code names upon save.
 1. Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', and others.
 1. Newline in Approval action and Compose action are disappearing.
 
