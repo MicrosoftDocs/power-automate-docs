@@ -91,20 +91,20 @@ If you have permission to access the parent flow, you can use this action to vie
 ## Cancel parent flow run
 If you're the owner of the flow, or have the role System Administrator or Environment Admin, you can cancel the parent flow run instance. This will cancel the current desktop flow and all the other action that were used in the parent flow.
 
-## Machine-assignation logic of a run queue
+## Machine-assignment logic of a run queue
 
 > [!NOTE]
 > - A run can only be processed by a machine if the user session it needs to open (the connexion credentials) is not already opened on the machine​.
 > - The setting ‘Extended queue priorization’ can only be enabled if the machine supports multi-session (for single machines) or if some machines in the machine group support multi-session​ (for machines groups)
 
 ### With disabled ‘extended queue priorization’ : 
-The machine-assignation algorithm will always wait for the first run in queue (Next to run status) to be assigned to a machine before considering the next one.
+The machine-assignment algorithm will always wait for the first run in queue (Next to run status) to be assigned to a machine before considering the next one.
 
 **Logic :** A run becomes ‘Next to run’, its connexion user is user Y :​
 1. ​Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
 2. Filter: The algorithm selects all available machines (= machines which have at least one session available)
 3. Filter: the algorithm discards the machines which already have a session opened by user Y
-4. Allocation : The algorithm allocates the run at random to the remaining machines.
+4. Allocation : The algorithm assignes the run at random to the remaining machines.
 
 If no machine is remaining after the last filter, the run waits until one becomes available.
 
@@ -113,7 +113,7 @@ If no machine is remaining after the last filter, the run waits until one become
 > - Enabling 'Extended queue priorization' unblocks the run queue in that situation
 
 ### With enabled ‘extended queue priorization’ :  
-The machine-assignation algorithm will be able to change the order of the run queue if the first run in the queue cannot be processed due to its targeted user session being already in use on all available machines.
+The machine-assignment algorithm will be able to change the order of the run queue if the first run in the queue cannot be processed due to its targeted user session being already in use on all available machines.
 
 **Logic :** A run becomes ‘Next to run’, its connexion user is user Y :​
 1. Filter: The algorithm selects all machines which are connected & usable (not in maintenance etc.)
@@ -128,7 +128,7 @@ The machine-assignation algorithm will be able to change the order of the run qu
 - If some assignable machines remain after filtering, go to step 5​
 - If no machine remains, restart step 4​
 
-​5. Allocation : When a run with assignable machines is found, the algorithm changes its status to “Next to run” & the run is assigned at random to one of the assignable machines ​
+​5. Allocation : When a run with assignable machines is found, the algorithm changes its status to “Next to run” & the run is assigned at random to one of the assignable machines.
 
 ## View list of run queues for gateways
 
