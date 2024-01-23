@@ -40,7 +40,7 @@ The '**Hosted RPA capacity overview**' pie chart helps the user understand what 
 
 ![Hosted capacity overview](media/capacity-utilization/hosted-capacity-overview.png)
 
-||Legend|Description|
+|-|Legend|Description|
 |----|--------------------|----|
 |![Legend color - Allocated to my hosted machines](media/capacity-utilization/legend-allocated-to-my-hosted-machines.png)|Allocated to my hosted machines|Compliant capacity allocated to hosted machines that the user owns or which are shared with them.|
 |![Legend color - Committed to my hosted machine groups](media/capacity-utilization/legend-committed-to-my-hosted-machine-groups.png)|Committed to my hosted machine groups|Compliant capacity committed to hosted machine groups that the user owns or which are shared with them.|
