@@ -160,7 +160,7 @@ For example, to display the current time in Eastern Standard time, you can use t
 
 ### See also
 
-For more information on the date and time funcion, select the following articles.
+For more information on the date and time function, select the following articles.
 
 - [Converting time zone in Power Automate](/troubleshoot/power-platform/power-automate/converting-time-zone-power-automate)
 - [formatDateTime function reference](/azure/logic-apps/workflow-definition-language-functions-reference#formatdatetime)
