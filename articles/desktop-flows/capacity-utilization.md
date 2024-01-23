@@ -20,7 +20,7 @@ ms.topic: conceptual
 
 ## Reminder on capacity within Power Automate
 
-Within the Power Automate platform, a **‘Capacity’** is a purchased item (that can be a license or an add-on) assigned to an the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) that can be utilized by a specific Power Automate object allowing it to carry out specific operations. 
+Within the Power Automate platform, a **‘Capacity’** is a purchased item (that can be a license or an add-on) assigned to an the environment [(see how to assign capacity to environments)](https://go.microsoft.com/fwlink/?linkid=2258569) that can be utilized by a specific Power Automate object allowing it to carry out specific operations. 
 <br/><br/>
 You can manage the following capacity within the capacity utilization page: 
 <br/><br/>
