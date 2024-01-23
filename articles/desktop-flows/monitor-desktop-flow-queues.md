@@ -7,7 +7,6 @@ documentationcenter: na
 author: georgiostrantzas
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
@@ -103,7 +102,7 @@ If you're the owner of the flow, or have the role System Administrator or Enviro
 
 The extended queue prioritization is a machine / machine group setting, which optimizes the machine-assignment logic of a run queue.
 
-Enabling this feature means that extended queue prioritization is applied on machines with multi-session support, such as Windows Server operating systems with RDS enabled. This optimizes the default run queue prioritization by extending the current first-in-first-out (FIFO) logic with user prioritization. This feature is enabled automatically when multi-session support is detected, but you can opt-out at any time by disabling it.
+Enabling this feature means that extended queue prioritization is applied on machines with multi-session support, such as Windows Server operating systems with RDS enabled. This optimizes the default run queue prioritization by extending the current first-in-first-out (FIFO) logic with user prioritization. This feature is enabled automatically when multi-session support is detected, but you can opt out at any time by disabling it.
 
 ### With disabled 'Extended queue prioritization'
 
@@ -124,8 +123,8 @@ The first run in queue is an attended run, its connection user is user **Y**:​
 The first run in queue is an unattended run, its connection user is user **Y**:​
 
 1. *​Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance etc.)
-2. *Filter*: The algorithm selects all available machines (i.e. machines which have at least one session available)
-3. *Filter*: the algorithm discards the machines which already have a session opened by user **Y**
+2. *Filter*: The algorithm selects all available machines (that is, machines which have at least one session available)
+3. *Filter*: the algorithm discards the machines, which already have a session opened by user **Y**
 4. *Allocation: the algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
 
 > [!NOTE]
