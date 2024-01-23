@@ -5,36 +5,35 @@ author: cvassallo
 ms.subservice: desktop-flow
 ms.date: 01/03/2024
 ms.author: cvassallo
-ms.reviewer: 
+ms.reviewer: matp
+ms.topic: conceptual
 ---
 
-# Hosted RPA capacity utilization
+# Hosted RPA capacity utilization (preview)
 
-> [!IMPORTANT]
-> - The capacity utilization page is in preview.
+[!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-<br/>
+<!--We don't begin Learn articles without an introductory sentence or two. I've restructured to add an introduction in an attempt to describe what the article and/or feature is about. -->
 
-## Reminder on Hosted RPA capacity 
+Hosted RPA provides you with insights into how your flows affect Power Platform capacity. Within the Power Automate platform, the Hosted RPA capacity is a purchased item. The [add-on](/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on) is assigned to the environment, which allows you to run desktop flows with zero infrastructure. More information: [(Allocate or change capacity in an environment)](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment)
 
-Within the Power Automate platform, the '**Hosted RPA capacity**' is a purchased item (an [add-on](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on)) assigned to the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) which allows to run desktop flows with zero infrastructure. It is allocated to hosted machines or committed to hosted machine groups :
-<br/><br/>
+
+[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+
+Hosted RPA capacity is allocated to hosted machines or committed to hosted machine groups.
 
 |Consumming object|Description|Consumption mode|
 |----|--------------------|----|
-|[Hosted machine](hosted-machines.md)|To be created, each hosted machine requires an hosted RPA capacity allocated.|Hosted RPA capacity is auto-allocated to hosted machine at its creation.|
-|[Hosted machine group](hosted-machine-groups.md)|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot during auto-scaling (= committed bot). This ensures that the necessary resources will always be available for processing the desktop flows.|Manual allocation of committed bots on hosted machine group.|
+|[Hosted machine](hosted-machines.md)|To be created, each hosted machine requires a hosted RPA capacity allocated.|Hosted RPA capacity is auto-allocated to hosted machine at its creation.|
+|[Hosted machine group](hosted-machine-groups.md)|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot during auto-scaling (= committed bot). This ensures that the necessary resources are always available for processing the desktop flows.|Manual allocation of committed bots on hosted machine group.|
 
 > [!NOTE]
-> - The hosted machine group with the committment has a priority of usage over all concurrent hosted machine groups.
-> - See [hosted machine group load balancing](hosted-machine-groups.md#load-balance-hosted-machine-group)
-
-<br/>
-
+>
+> The hosted machine group with the commitment has a priority of usage over all concurrent hosted machine groups. More information: [Load balance hosted machine groups](hosted-machine-groups.md#load-balance-hosted-machine-group)
 
 ## Hosted RPA capacity overview
 
-The '**Hosted RPA capacity overview**' pie chart helps the user understand what is their share of hosted capacity consumption within the environment compared to the other makers, let them known if there is still capacity to scale-up in the future and alerts them when their objects are exceeding environment capacity (= overage): 
+The '**Hosted RPA capacity overview**' pie chart helps you understand what's your share of the hosted capacity consumption within the environment compared to other makers. It lets your know if there's still capacity to scale-up in the future and alerts you when your objects are exceeding environment capacity.
 
 ![Hosted capacity overview](media/capacity-utilization/hosted-capacity-overview.png)
 
@@ -55,6 +54,8 @@ The '**Hosted capacity insights**' card informs the user of operation health and
 
 ![Hosted capacity insight](media/capacity-utilization/hosted-capacity-insight.png)
 
+<!-- Since the buttons have text there's no need to display them here as an image especially since they aren't easy to read or resize for the low vision audience. As such, they don't add value and don't comply with Learn content guidelines to limit the number of images in an article. Remove and replace with text only-->
+
 |Badge|Message|Insight|
 |----|--------------------|----|
 |![Badge - Sufficient capacity](media/capacity-utilization/badge-sufficient-capacity.png)|There is available capacity for new hosted machines or new committed bots on hosted machine groups.|Scale-up is possible in the future.|
@@ -64,17 +65,16 @@ The '**Hosted capacity insights**' card informs the user of operation health and
 |![Badge - Empty pool](media/capacity-utilization/badge-empty-pool.png)|The capacity pool shared by all hosted machine groups is empty.|Hosted machine groups won’t be able to spin-up bots when needed. All automation based on them will fail.|
 
 > [!NOTE]
+>
 > - All hosted machine groups share a pool of hosted capacity made of the available capacity and the compliant committed capacity within the environment (which value can be retrieved on the overview pie chart).
-> - For example, 1 available capacity (non-allocated to a hosted machine and non-committed to an hosted machine group) is pooled between all the hosted machine groups with a first arrived first served behavior.
-> - Having a non-empty pool is not always a guarantee of good health depending on the number of hosted machine groups relying on the pool, the intensity of runs they perform and their relative schedule.
-
-<br/><br/>
+> - For example, one available capacity (non-allocated to a hosted machine and non-committed to an hosted machine group) is pooled between all the hosted machine groups with a first arrived first served behavior.
+> - Having a non-empty pool isn't always a guarantee of good health depending on the number of hosted machine groups relying on the pool, the intensity of runs they perform, and their relative schedule.
 
 ## Hosted RPA utilization details
 
-In this section the user can oversee and manage all hosted machines & hosted machine groups they have access to (as owner or through sharing) : 
+In this section you learn how to oversee and manage all hosted machines and hosted machine groups you have access to (as owner or through sharing).
 
-### 1. Hosted Machines
+### 1. Hosted machines
 
 ![Hosted machine details](media/capacity-utilization/hosted-details-hostedmachine.png)
 
@@ -82,45 +82,46 @@ In this section the user can oversee and manage all hosted machines & hosted mac
 > - Every hosted machine gets auto-allocated 1 hosted capacity at creation except for hosted machine based on trial user licenses and hosted machine provisionned with an error
 > - Hosted machines can be, when necessary (in case of overage), prioritized based on their attended and unattended runs.
 
-
-### 2. Hosted Machine Groups
+### 2. Hosted machine groups
 
 ![Hosted machine group details](media/capacity-utilization/hosted-details-hostedmachinegroup.png)
 
 > [!NOTE]
-> - The 'Active bots' column refers to machines currently spin-up and consumming hosted capacity from the shared pool.
-> - Hosted machine groups can be, when necessary (in case of overage), prioritized based on their unattended runs.
-
-<br/><br/>
+>
+> - The **Active bots** column refers to machines currently spin-up and consuming hosted capacity from the shared pool.
+> - Hosted machine groups can be, when necessary in case of overage, prioritized based on their unattended runs.
 
 ## Hosted RPA capacity overage
 
-Capacity overage in an environment occurs when **the capacity utilized by hosted machines and hosted machine groups surpasses the assigned capacity of the environment**. In such instances, specific hosted machines and/or hosted machine groups may be identified as exceeding capacity. To prevent any disruption, it is crucial to promptly rectify the situation:
+Capacity overage in an environment occurs when the capacity utilized by hosted machines and hosted machine groups surpasses the assigned capacity of the environment. In such instances, specific hosted machines and/or hosted machine groups may be identified as exceeding capacity. To prevent any disruption, it is crucial to promptly rectify the situation:
 
 ![Hosted overage](media/capacity-utilization/overage-hosted.png)
-<br><br>
-### Hosted machine in overage:
-Hosted machines identified in overage risk being turned-off after a grace period:<br><br>
-![Overage pin-point hosted machine](media/capacity-utilization/overage-pinpoint-HM.png)
-<br><br>
-### Hosted machine group in overage:
-Hosted machine groups will not honour their over-committed bots expected behaviour:<br><br>
-![Overage pin-point hosted machine group](media/capacity-utilization/overage-pinpoint-HMG.png)
-> [!NOTE]
-> - An hosted machine group can have a sub-set of its committed bots identified as in overage (= over-committed), in that case, only the compliant committed bots will be honoured.
 
-<br><br>
+### Hosted machine in overage
+
+Hosted machines identified in overage risk being turned-off after a grace period:
+![Overage pin-point hosted machine](media/capacity-utilization/overage-pinpoint-HM.png)
+
+### Hosted machine group in overage
+
+Hosted machine groups will not honour their over-committed bots expected behavior:
+
+![Overage pin-point hosted machine group](media/capacity-utilization/overage-pinpoint-HMG.png)
+
+> [!NOTE]
+> A hosted machine group can have a subset of its committed bots identified as in overage (= over-committed), in that case, only the compliant committed bots are honoured.
 
 ### How to fix hosted capacity overage?
-When the user owns some hosted machines or hosted machine groups in overage, the **Fix capacity button** appears in the 'Hosted capacty insight' card, it provides a list of corrective actions: 
+
+When you own some hosted machines or hosted machine groups in overage, the **Fix capacity** button appears in the **Hosted capacity insight** card. It provides a list of corrective actions. <!-- The screenshot below doesn't include a fix capacity button. It displays Request capacity -->
+
+<!-- Stopping review here for above items to be reconciled before continuing -->
 
 |Fix capacity - Corrective actions|
 |-------|
 |![Hosted fix capacity](media/capacity-utilization/hosted-fix-capacity.png)|
 
-<br><br>
-The **Request capacity** action submits a request to the tenant administrator for assignation of capacity to the environment:
-<br>
+The **Request capacity** action submits a request to the tenant administrator for assignation of capacity to the environment.
 
 |Fix capacity - Request capacity|
 |---------|
