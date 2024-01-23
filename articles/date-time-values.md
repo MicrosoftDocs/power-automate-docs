@@ -133,7 +133,7 @@ This example walks through a simple flow that demonstrates the use of the `forma
     1. Provide the format string (surrounded by single quotes) based on the desired output format for the date. In this example, MM/dd/yyyy format is used.  
 
         The full expression looks like this:  
-        `formatDateTime(triggerBody()?\['date'\], 'MM/dd/yyyy')`
+        `formatDateTime(triggerBody()?['date'], 'MM/dd/yyyy')`
 
         :::image type="content" source="./media/date-time-values/format.png" alt-text="Screenshot of the formatDatTime function using dynamic content.":::
 
