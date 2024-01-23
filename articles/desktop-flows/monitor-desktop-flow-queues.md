@@ -166,7 +166,7 @@ The first run in queue is an unattended run, its connection user is user **Y**:â
 3. *Filter*: the algorithm discards the machines, which already have a session opened by user **Y**:
    - if some machines remain: step 5
    - if no machine remains: step 4
-4. The algorithm reorders the queue by considering the next run in queue (until a run is assignable to a machine)
+4. *Reprioritization*: The algorithm reprioritizes the queue by considering the next run in queue (until a run is assignable to a machine)
 5. *Allocation*: the algorithm assigns the run to one of the remaining machines (randomly)
 
 ## View list of run queues for gateways
