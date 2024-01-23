@@ -183,7 +183,7 @@ The cloud flows Copilot supports English language only for models.
 
 If you want to work with missing functionalities in the designer, while the limitations and known issues are being fixed in the meantime, turn off the New designer toggle on the menu in the cloud flows designer.
 
-:::image type="content" source="./media/get-started-with-copilot/designer-toggle.svg" alt-text="Screenshot that shows how to edit an existing flow.":::
+:::image type="content" source="./media/get-started-with-copilot/designer-toggle.svg" alt-text="Screenshot of the 'New designer' toggle.":::
 
 ### Why do I get this error "O.split(...).at is not a function" when signing in?
 
