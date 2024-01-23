@@ -38,7 +38,7 @@ The '**Process and Unattended RPA capacity overview**' pie chart helps the user 
 
 ![Process capacity overview](media/capacity-utilization/unattended-capacity-overview.png)
 
-||Legend|Description|
+|-|Legend|Description|
 |----|--------------------|----|
 |![Legend color - Used by unattended machines (last 30 days)](media/capacity-utilization/legend-used-by-unattended-machines.png)|Used by unattended machines (last 30 days)|Compliant capacity allocated to machines within the environment.|
 |![Legend color - Available capacity](media/capacity-utilization/legend-available-capacity.png)|Available capacity|Available capacity for new unattended machines.|
