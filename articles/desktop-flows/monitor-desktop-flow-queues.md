@@ -116,7 +116,7 @@ The first run in queue is an attended run, its connection user is user **Y**:​
 
 1. *​Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance etc.)
 2. *Filter*: The algorithm selects all machines, which have an opened session of user **Y**
-3. *Allocation: the algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
+3. *Allocation*: the algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
 
 **Logic for an unattended run:**
 
