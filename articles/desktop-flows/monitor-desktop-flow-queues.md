@@ -115,7 +115,7 @@ The machine-assignment algorithm will always wait for the first run in queue ('N
 The first run in queue is an attended run, its connection user is user **Y**:​
 
 1. *​Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance etc.)
-2. *Filter*: The algorithm selects all machines, which have an opened session of user
+2. *Filter*: The algorithm selects all machines, which have an opened session of user **Y**
 3. *Allocation: the algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
 
 **Logic for an unattended run:**
@@ -125,22 +125,23 @@ The first run in queue is an unattended run, its connection user is user **Y**:�
 1. *​Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance etc.)
 2. *Filter*: The algorithm selects all available machines (that is, machines which have at least one session available)
 3. *Filter*: the algorithm discards the machines, which already have a session opened by user **Y**
-4. *Allocation: the algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
+4. *Allocation*: the algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
 
 > [!NOTE]
 >
-> ** An unattended run can only be processed by a machine if the user session targeted (recorded on the desktop flow connection) is not already in-use on the same machine​.
+> - An unattended run can only be processed by a machine if the user session targeted (recorded on the desktop flow connection) is not already in-use on the same machine​.
+> - In both attended and unattended run scenarios, if no machines are left after the final filter, but there are some eligible machine(s) currently offline (which were discarded in step 1), the run will wait for the offline machine(s) to come back online before marking the run as failed.
 
 > [!TIP]
 >
-> - With disabled 'Extended queue prioritization', if no machine is immediately available for the first run in queue, it is failed
-> - Enabling 'Extended queue prioritization' allows the algorithm to reorder the queue when the first run in queue can not be processed (without failing it)
+> - With disabled 'Extended queue prioritization', if no machine is available to execute the first run in queue, it is either failed or it waits for an offline machine to get back online (blocking the run queue in the meantime)
+> - Enabling 'Extended queue prioritization' allows the algorithm to reprioritize the queue when the first run in queue can not be processed
 
 ### With enabled 'Extended queue prioritization'
 
 **Principle:**
 
-The machine-assignment algorithm is able to change the order of the run queue if the first run in the queue can't be processed because:
+The machine-assignment algorithm will able to consider the other runs in the queue if the first run in the queue can't be processed because:
 
 - its targeted user session is currently not active on any machine (for attended runs)
 - its targeted user session being already in use on all available machines (for an unattended run)
@@ -153,7 +154,7 @@ The first run in queue is an attended run, its connection user is user **Y**:​
 2. *Filter*: The algorithm selects all machines, which have an opened session of user **Y**:
    - if some machines remain: step 4
    - if no machine remains: step 3
-3. The algorithm reorders the queue by considering the next run in queue (until a run is assignable to a machine)
+3. *Reprioritization*: The algorithm reprioritizes the queue by considering the next run in queue (until a run is assignable to a machine)
 4. *Allocation*: the algorithm assigns the run to one of the remaining machines (randomly)
 
 **Logic for an unattended run:**
