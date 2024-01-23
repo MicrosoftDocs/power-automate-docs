@@ -7,6 +7,7 @@ ms.date: 01/03/2024
 ms.author: cvassallo
 ms.topic:
 ms.reviewer: 
+ms.topic: conceptual
 ---
 
 # Hosted RPA capacity utilization
