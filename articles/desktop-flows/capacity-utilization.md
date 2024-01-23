@@ -6,6 +6,7 @@ ms.subservice: desktop-flow
 ms.date: 01/03/2024
 ms.author: cvassallo
 ms.reviewer: 
+ms.topic: conceptual
 ---
 
 # Capacity utilization within Power Automate (preview)
