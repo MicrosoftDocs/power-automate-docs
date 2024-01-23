@@ -5,6 +5,7 @@ author: cvassallo
 ms.subservice: desktop-flow
 ms.date: 01/03/2024
 ms.author: cvassallo
+ms.topic:
 ms.reviewer: 
 ---
 
@@ -17,7 +18,7 @@ ms.reviewer:
 
 ## Reminder on Hosted RPA capacity 
 
-Within the Power Automate platform, the '**Hosted RPA capacity**' is a purchased item (an [add-on](https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on)) assigned to the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) which allows to run desktop flows with zero infrastructure. It is allocated to hosted machines or committed to hosted machine groups :
+Within the Power Automate platform, the '**Hosted RPA capacity**' is a purchased item (an [add-on](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on)) assigned to the environment [(see how to assign capacity to environments)](https://learn.microsoft.com/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) which allows to run desktop flows with zero infrastructure. It is allocated to hosted machines or committed to hosted machine groups :
 <br/><br/>
 
 |Consumming object|Description|Consumption mode|
@@ -124,7 +125,7 @@ The **Request capacity** action submits a request to the tenant administrator fo
 
 |Fix capacity - Request capacity|
 |---------|
-|![Hosted fix capacity](media/capacity-utilization/hosted-capacity-request.png)|
+|![Hosted request capacity](media/capacity-utilization/hosted-capacity-request.png)|
 
 > [!NOTE]
 > - The pre-set value in the request capacity modal is equal to the total overage value in the environment (the user's overage and the other users' overage).
