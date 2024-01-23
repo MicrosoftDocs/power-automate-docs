@@ -142,5 +142,6 @@ When the total capacity assigned to an environment is inferior to the combined c
 
 ## Permissions to view and edit capacity allocation
 
-To view and edit capacity a user needs a security role with privileges over the Flow Capacity Assignment entity:
+To view and edit capacity allocation, a user needs a security role with privileges over the Flow Capacity Assignment entity:
+
 ![Flow Capacity Assignment](media/capacity-utilization/flow-capacity-assignment.png)
