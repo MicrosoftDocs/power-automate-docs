@@ -6,6 +6,7 @@ contributors:
  - kisubedi
  - aartig13
  - v-aangie
+ ms.contributors: anaggar 
 ms.subservice: cloud-flow
 ms.date: 04/24/2023
 ms.topic: conceptual
@@ -95,9 +96,9 @@ To use a date and time value in a flow, follow these steps.
 
 1. Provide the format string, surrounded by single quotes.
 1. The full expression should look like the following examples:
-
-    - `formatDateTime('&lt;your-value&gt;', 'dd/MM/yyyy hh:mm tt')`
-    - `formatDateTime(&lt;dynamic-content&gt;, 'dd/MM/yyyy hh:mm tt')`
+ 
+    - `formatDateTime('<your-value>', 'dd/MM/yyyy hh:mm tt')`
+    - `formatDateTime('<dynamic-value>', 'dd/MM/yyyy hh:mm tt')`
 
     :::image type="content" source="./media/date-time-values/expression.svg" alt-text="Screenshot of the Add dynamic content link and the Expression tab.":::
 
