@@ -140,7 +140,7 @@ When the total capacity assigned to an environment is inferior to the combined c
 - Firstly, the overage will be identified on the committed capacity of hosted machine groups, starting from the most recently created committed bot setting to the oldest. 
 - Secondly, the overage will be identified on the allocated capacity of hosted machines, starting from the most recently created machine to the oldest.
 
-## Permissions to view and edit the committed bots
+## Permissions to view and edit capacity allocation
 
-To view and edit the committed bots of an hosted machine group a user needs a security role with privileges over the Flow Capacity Assignment entity:
+To view and edit capacity a user needs a security role with privileges over the Flow Capacity Assignment entity:
 ![Flow Capacity Assignment](media/capacity-utilization/flow-capacity-assignment.png)
