@@ -2,20 +2,20 @@
 title: Customize or format date and time values in a flow
 description: Learn how to customize or format date and time values in a Power Automate flow.
 author: kisubedi
-contributors:
-  - kisubedi
-  - aartig13
-  - v-aangie
- ms.contributors:
-  - anaggar 
 ms.subservice: cloud-flow
 ms.date: 04/24/2023
 ms.topic: conceptual
 ms.author: kisubedi
 ms.reviewer: angieandrews
+contributors:
+ - kisubedi
+ - aartig13
+ - v-aangie
+ ms.contributors:
+ - anaggar
 search.audienceType: 
-  - flowmaker
-  - enduser
+ - flowmaker
+ - enduser
 ---
 
 # Customize or format date and time values in a flow
