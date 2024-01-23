@@ -103,7 +103,7 @@ To use a date and time value in a flow, follow these steps.
 
     :::image type="content" source="./media/date-time-values/expression.svg" alt-text="Screenshot of the Add dynamic content link and the Expression tab.":::
 
-7.  Select **OK**.
+1. Select **OK**.
 
 ## Example with dynamic content
 
