@@ -163,3 +163,4 @@ For more information on the date and time funcion, select the following articles
 - [Converting time zone in Power Automate](/troubleshoot/power-platform/power-automate/converting-time-zone-power-automate)
 - [formatDateTime function reference](/azure/logic-apps/workflow-definition-language-functions-reference#formatdatetime)
 - [Format dates by examples](format-data-by-examples.md#format-dates-by-examples)
+
