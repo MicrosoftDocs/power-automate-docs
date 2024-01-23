@@ -160,11 +160,20 @@ You can’t edit flows in the cloud flows designer with the copilot experience i
     > If there's Peek code on an action and if you see the `methods` parameter, it's a non-Open API flow.
 
 - A flow with a comment.
-- A flow contains an unsupported hybrid trigger. Hybrid triggers don't require connections, and are triggered manually from outside of Power Automate. The hybrid triggers, which won't be supported are: When a record is selected (Dataverse), When a flow step is run from business process flows (Dataverse), For a selected message (v2 Teams), Teams On Compose Message (teams), Teams card trigger, and Microsoft 365 Compliance Connector.
+- A flow contains an unsupported hybrid trigger. Hybrid triggers don't require connections, and are triggered manually from outside of Power Automate. The hybrid triggers, which won't be supported are:
+  - When a flow step is run from business process flows (Dataverse)
+  - For a selected message (v2 Teams)
+  - Teams On Compose Message (teams)
+  - Teams card trigger
+  - Microsoft 365 Compliance Connector
 - A flow contains a Power Apps V1 trigger.
-- A flow contains Perform a Changeset Request (Dataverse)
+- A flow contains Perform a Changeset Request (Dataverse).
 - A flow contains a Power Pages component.
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use [connection reference](/power-apps/maker/data-platform/create-connection-reference#manually-add-a-connection-reference-to-a-solution-using-solution-explorer) instead.
+  - Email auto-complete suggestions in Send Email/Post message in Teams actions
+  - HTML editor in Send Email action
+  - Copy/Paste supporting Scope, Condition, Do until cosntructs
+  - Ability to make manual trigger fields optional
 
 You can’t use the cloud flows designer with Copilot if you’re using a personal Microsoft account. For example, you can’t use someone@live.com. Use a work or school account like someone@contoso.com instead.
 
@@ -172,12 +181,28 @@ The cloud flows Copilot supports English language only for models.
 
 ### There are some missing functionalities in the cloud flows designer with copilot capabilities. What do I do?
 
-If you want to work with missing functionalities in the designer, go to [Limitations](flows-designer.md#limitations-and-known-issues) for details.
+If you want to work with missing functionalities in the designer, while the limitations and known issues are being fixed in the meantime, turn off the **New designer** toggle on the menu in the cloud flows designer.
+
+:::image type="content" source="./media/get-started-with-copilot/designer-toggle.svg" alt-text="Screenshot of the 'New designer' toggle.":::
+
+### Why do I get this error "O.split(...).at is not a function" when signing in?
+
+Power Automate designer doesn't support browsers that are more than two (2) years old. You could see the aforementioned or similar errors in the designer if your browser version isn't current. It is generally a good idea to update your browser to latest version to avoid such issues.
+
+### Why do I get this error "The provided flow name contains invalid characters" when importing a flow in a new tenant?
+
+This is a temporary gap, which you can work around by adding a query parameter `v3=false` in your URL.
+
+### Why do I not see dynamic content from triggers like 'When a response is submitted' or why is the flow automatically putting an unnecessary loop?
+
+This might be because of a temporary issue where the **Split On** setting of the trigger is off. If you enable the setting, the issue should go away.
+
+1. On the action configuration pane, select the **Settings** tab.
+1. Under the **Split On** heading, move the toggle to **On**.
 
 ### What licenses do I need to access Copilot in Power Automate cloud flows?
 
 You need a standalone Power Automate license, or a seeded M365 license, or PowerApps/Dynamics license, to access and use Copilot. MSA users (@microsoft.com) without an org id won't be able to use the experience.
-
 
 ### See also
 
