@@ -133,8 +133,6 @@ The **Request capacity** action submits a request to the tenant administrator fo
 > - This pre-set value ensures that when the additional capacity is assigned to the environment, the user who made the request have their hosted machines or hosted machine groups returned back to compliance.
 > - If the user submits a smaller request, when the additional requested capacity is provisioned to the environment, there’s no guarantee that their own hosted machines or hosted machine groups will return to compliance. The extra capacity might be allocated to other in-overage hosted machines / hosted machine groups owned by different users.
 
-<br><br>
-
 ### What are the rules governing which objects are identified as in overage?
 
 When the total hosted RPA capacity assigned to an environment is inferior to the combined capacity allocated to hosted machines and committed to hosted machine groups:
@@ -144,6 +142,6 @@ When the total hosted RPA capacity assigned to an environment is inferior to the
 
 ## Permissions required to view and edit capacity allocation
 
-To view and edit capacity allocation, a user needs a security role with privileges over the Flow Capacity Assignment entity:
+To view and edit capacity allocation, a user needs a security role with **privileges over the Flow Capacity Assignment entity**. For example, the Environment Maker role can view and edit allocation of hosted capacity:
 
 ![Flow Capacity Assignment](media/capacity-utilization/flow-capacity-assignment.png)
