@@ -137,12 +137,12 @@ The **Request capacity** action submits a request to the tenant administrator fo
 
 ### What are the rules governing which objects are identified as in overage?
 
-When the total capacity assigned to an environment is inferior to the combined capacity allocated to hosted machines and committed to hosted machine groups:
+When the total hosted RPA capacity assigned to an environment is inferior to the combined capacity allocated to hosted machines and committed to hosted machine groups:
 
-- Firstly, the overage is identified on the committed capacity of hosted machine groups, starting from the most recently created committed bot setting to the oldest. 
-- Secondly, the overage is identified on the allocated capacity of hosted machines, starting from the most recently created machine to the oldest.
+- First: the overage is identified on the committed capacity of hosted machine groups, starting from the most recently created committed bot setting to the oldest. 
+- Second: the overage is identified on the allocated capacity of hosted machines, starting from the most recently created machine to the oldest.
 
-## Permissions to view and edit capacity allocation
+## Permissions required to view and edit capacity allocation
 
 To view and edit capacity allocation, a user needs a security role with privileges over the Flow Capacity Assignment entity:
 
