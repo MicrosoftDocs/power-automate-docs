@@ -142,6 +142,6 @@ When the total hosted RPA capacity assigned to an environment is inferior to the
 
 ## Permissions required to view and edit capacity allocation
 
-To view and edit capacity allocation, a user needs a security role with **privileges over the Flow Capacity Assignment entity**. For example, the Environment Maker role can view and edit allocation of hosted capacity:
+To view and edit capacity allocation, a user needs a security role with privileges over the **Flow Capacity Assignment** entity. For example, the Environment Maker role can view and edit allocation of hosted capacity:
 
 ![Flow Capacity Assignment](media/capacity-utilization/flow-capacity-assignment.png)
