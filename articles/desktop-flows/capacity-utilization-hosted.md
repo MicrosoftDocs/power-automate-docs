@@ -110,19 +110,17 @@ Hosted machine groups will not honour their over-committed bots expected behavio
 
 ### How to fix hosted capacity overage?
 
-When you own some hosted machines or hosted machine groups in overage, the **Fix capacity** button appears in the **Hosted capacity insight** card. It provides a list of corrective actions. <!-- The screenshot below doesn't include a fix capacity button. It displays Request capacity -->
+When you own some hosted machines or hosted machine groups in overage, the **Fix capacity** button appears in the **Hosted capacity insight** card. It provides a list of corrective actions:
 
-<!-- Stopping review here for above items to be reconciled before continuing -->
-
-|Fix capacity button|
+|Fix capacity - Button|
 |-------|
 |![Fix hosted capacity button](media/capacity-utilization/fix-hosted-capacity-button.png)|
 
 |Fix capacity - Corrective actions|
 |-------|
-|![Hosted fix capacity](media/capacity-utilization/hosted-fix-capacity.png)|
+|![Hosted fix capacity actions](media/capacity-utilization/hosted-fix-capacity.png)|
 
-The **Request capacity** action submits a request to the tenant administrator for assignation of capacity to the environment.
+The **Request capacity** action submits a request to the tenant administrator for assignation of capacity to the environment:
 
 |Fix capacity - Request capacity|
 |---------|
