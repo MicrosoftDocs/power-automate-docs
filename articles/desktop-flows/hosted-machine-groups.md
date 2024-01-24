@@ -106,7 +106,7 @@ To create a hosted machine group:
   
     > [!NOTE]
     > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed  bots configuration when required.
-    > - You cannot exceed the total number of committed bots and hosted machines configured to your environment.
+    > - The sum of hosted machines and committed bots configured in your environment can not exceed the Hosted RPA capacity assigned to the environment.
 
     :::image type="content" source="media/hosted-machine-groups/create-hmg-scaling.png" alt-text="Screenshot of the hosted machine group scaling configuration in creation wizard.":::
 
@@ -420,8 +420,9 @@ Hosted machine group permissions and roles are iterations on top of [Desktop Flo
 
 ### Environment Maker role
 
-By default, **Environment Maker** role can create hosted machine groups in their environment. The three entities that require privileges to use hosted machine groups are:
+By default, **Environment Maker** role can create hosted machine groups in their environment. The four entities that require privileges to use hosted machine groups are:
 
+- Flow Capacity Assignment
 - Flow Machine
 - Flow Machine Group
 - Flow Machine Image
