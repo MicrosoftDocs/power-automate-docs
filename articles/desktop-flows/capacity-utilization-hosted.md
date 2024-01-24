@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-The **Hosted RPA capacity utilization page** provides you with insights into how your hosted RPA capacity is being used within your environment. As a reminder, within the Power Automate platform each hosted RPA capacity is based on a purchased [hosted RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on) which is [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows you to [run desktop flows with zero infrastructure](hosted-rpa-overview.md).
+The **Hosted RPA capacity utilization page** provides you with insights into how your hosted RPA capacity is being used within your environment. As a reminder, within the Power Automate platform each hosted RPA capacity is based on a purchased [hosted RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on). It is [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows you to [run desktop flows with zero infrastructure](hosted-rpa-overview.md).
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
