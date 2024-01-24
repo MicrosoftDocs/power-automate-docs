@@ -21,8 +21,8 @@ A hosted RPA capacity can be allocated to a hosted machine or committed to a hos
 
 |Consuming object|Description|Consumption mode|
 |----|--------------------|----|
-|[Hosted machine](hosted-machines.md)|To be created, each hosted machine requires a hosted RPA capacity allocated.|Hosted RPA capacity is auto-allocated to hosted machine at its creation.|
-|[Hosted machine group](hosted-machine-groups.md)|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot during auto-scaling (= committed bot). The commitment ensures that the necessary resources are always available for processing the desktop flows.|Manual allocation of committed bots on hosted machine group.|
+|[Hosted machine](hosted-machines.md)|To be created, each hosted machine requires a hosted RPA capacity allocated.|Hosted RPA capacity is autoallocated to hosted machine at its creation.|
+|[Hosted machine group](hosted-machine-groups.md)|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot during autoscaling (= committed bot). The commitment ensures that the necessary resources are always available for processing the desktop flows.|Manual allocation of committed bots on hosted machine group.|
 
 > [!NOTE]
 >
@@ -43,43 +43,40 @@ The '**Hosted RPA capacity overview**' pie chart helps you understand what's you
 |![Legend color - My overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Sum of capacities over-allocated to hosted machines and over-committed to hosted machine groups, which the user owns or which are shared with them.|
 |![Legend color - Overage by other makers](media/capacity-utilization/legend-overage-by-other-makers.png)|Overage by other makers|Sum of capacities over-allocated and over-committed to objects, which the user doesn't own and which weren't shared with them.|
 
-<br/><br/>
+## Hosted RPA capacity insights
 
-## Hosted RPA capacity insights 
-
-The '**Hosted capacity insights**' card informs the user of operation health and provides them with recommendation if there are compliance issues:
+The '**Hosted capacity insights**' card informs you of operation health and provides you with recommendations if there are compliance issues.
 
 ![Hosted capacity insight](media/capacity-utilization/hosted-capacity-insight.png)
-
-<!-- Since the buttons have text there's no need to display them here as an image especially since they aren't easy to read or resize for the low vision audience. As such, they don't add value and don't comply with Learn content guidelines to limit the number of images in an article. Remove and replace with text only-->
 
 |Badge|Message|Insight|
 |----|--------------------|----|
 |**Sufficient capacity**|There's available capacity for new hosted machines or new committed bots on hosted machine groups.|Scale-up is possible in the future.|
 |**Fully utilized**|There's no more capacity for new hosted machines or new committed bots on hosted machine groups.|The capacity utilization rate is optimal at 100% but there's no room for scaling-up.|
 |**Capacity overage**|User has over-allocated capacity to their hosted machines or/and over-committed bots to their hosted machine groups.|Uncompliant capacity usage exceeding environment capacity.|
-|**Sufficient pool**|There's a non-empty pool of capacity shared by all hosted machine groups.|All hosted machine groups theoretically have access to at least one bot.|
+|**Sufficient pool**|There's a nonempty pool of capacity shared by all hosted machine groups.|All hosted machine groups theoretically have access to at least one bot.|
 |**Empty pool**|The capacity pool shared by all hosted machine groups is empty.|Hosted machine groups cannot spin-up bots when needed. All automations based on them are going to fail.|
 
 > [!NOTE]
 >
 > - All hosted machine groups share a pool of hosted capacity made of the available capacity and the compliant committed capacity within the environment (which value can be retrieved on the overview pie chart).
-> - For example, one available capacity (non-allocated to a hosted machine and non-committed to an hosted machine group) is pooled between all the hosted machine groups with a first arrived first served behavior.
+> - For example, one available capacity (non-allocated to a hosted machine and non-committed to a hosted machine group) is pooled between all the hosted machine groups with a first arrived first served behavior.
 > - Having a non-empty pool isn't always a guarantee of good health depending on the number of hosted machine groups relying on the pool, the intensity of runs they perform, and their relative schedule.
 
 ## Hosted RPA utilization details
 
 In this section, you learn how to oversee and manage all hosted machines and hosted machine groups you have access to (as owner or through sharing).
 
-### 1. Hosted machines
+### Hosted machines
 
 ![Hosted machine details](media/capacity-utilization/hosted-details-hostedmachine.png)
 
 > [!NOTE]
-> - Every hosted machine gets auto-allocated one hosted capacity at creation except for hosted machines based on trial user license and hosted machines provisionned with an error.
+>
+> - Every hosted machine gets auto-allocated one hosted capacity at creation except for hosted machines based on trial user license and hosted machines provisioned with an error.
 > - Hosted machines can be, when necessary (in case of overage), prioritized based on their attended and unattended runs.
 
-### 2. Hosted machine groups
+### Hosted machine groups
 
 ![Hosted machine group details](media/capacity-utilization/hosted-details-hostedmachinegroup.png)
 
@@ -90,23 +87,23 @@ In this section, you learn how to oversee and manage all hosted machines and hos
 
 ## Hosted RPA capacity overage
 
-Capacity overage in an environment occurs when the capacity utilized by hosted machines and hosted machine groups surpasses the assigned capacity of the environment. In such instances, specific hosted machines and/or hosted machine groups may be identified as exceeding capacity. To prevent any disruption, it's crucial to promptly rectify the situation:
+Capacity overage in an environment occurs when the capacity utilized by hosted machines and hosted machine groups surpasses the assigned capacity of the environment. In such instances, specific hosted machines and/or hosted machine groups might be identified as exceeding capacity. To prevent disruption, it's crucial to promptly rectify the situation.
 
 ![Hosted overage](media/capacity-utilization/overage-hosted.png)
 
 ### Hosted machine in overage
 
-Hosted machines identified in overage risk being turned-off after a grace period:
+Hosted machines identified in overage risk being turned-off after a grace period.
 ![Overage pin-point hosted machine](media/capacity-utilization/overage-pinpoint-HM.png)
 
 ### Hosted machine group in overage
 
-Hosted machine groups does not honour their over-committed bots expected behavior:
+Hosted machine groups don't honor their over-committed bots expected behavior.
 
 ![Overage pin-point hosted machine group](media/capacity-utilization/overage-pinpoint-HMG.png)
 
 > [!NOTE]
-> A hosted machine group can have a subset of its committed bots identified as in overage (= over-committed), in that case, only the compliant committed bots are honoured.
+> A hosted machine group can have a subset of its committed bots identified as in overage (= over-committed), in that case, only the compliant committed bots are honored.
 
 ### How to fix hosted capacity overage?
 
@@ -129,19 +126,24 @@ The **Request capacity** action submits a request to the tenant administrator fo
 |![Hosted request capacity](media/capacity-utilization/hosted-capacity-request.png)|
 
 > [!NOTE]
-> - The pre-set value in the request capacity modal is equal to the total overage value in the environment (the user's overage and the other users' overage).
-> - This pre-set value ensures that when the additional capacity is assigned to the environment, the user who made the request have their hosted machines or hosted machine groups returned back to compliance.
+>
+> - The preset value in the request capacity modal dialog is equal to the total overage value in the environment (the user's overage and the other users' overage).
+> - This preset value ensures that when the additional capacity is assigned to the environment, the user who made the request have their hosted machines or hosted machine groups returned back to compliance.
 > - If the user submits a smaller request, when the additional requested capacity is provisioned to the environment, there’s no guarantee that their own hosted machines or hosted machine groups will return to compliance. The extra capacity might be allocated to other in-overage hosted machines / hosted machine groups owned by different users.
 
 ### What are the rules governing which objects are identified as in overage?
 
 When the total hosted RPA capacity assigned to an environment is inferior to the combined capacity allocated to hosted machines and committed to hosted machine groups:
 
-- First: the overage is identified on the committed capacity of hosted machine groups, starting from the most recently created committed bot setting to the oldest. 
-- Second: the overage is identified on the allocated capacity of hosted machines, starting from the most recently created machine to the oldest.
+- First, the overage is identified on the committed capacity of hosted machine groups, starting from the most recently created committed bot setting to the oldest.
+- Second, the overage is identified on the allocated capacity of hosted machines, starting from the most recently created machine to the oldest.
 
 ## Permissions required to view and edit capacity allocation
 
-To view and edit capacity allocation, a user needs a security role with privileges over the **Flow Capacity Assignment** entity. For example, the Environment Maker role can view and edit allocation of hosted capacity:
+To view and edit capacity allocation, you need a security role with privileges to the **Flow Capacity Assignment** table. For example, the Environment Maker role can view and edit allocation of hosted capacity.
 
 ![Flow Capacity Assignment](media/capacity-utilization/flow-capacity-assignment.png)
+
+## See also
+
+[Capacity utilization within Power Automate](capacity-utilization.md)
