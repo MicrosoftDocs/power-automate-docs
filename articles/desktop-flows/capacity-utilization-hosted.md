@@ -3,7 +3,7 @@ title: Hosted RPA Capacity utilization
 description: Hosted RPA Capacity utilization 
 author: cvassallo
 ms.subservice: desktop-flow
-ms.date: 01/03/2024
+ms.date: 01/24/2024
 ms.author: cvassallo
 ms.reviewer: matp
 ms.topic: conceptual
@@ -13,14 +13,11 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-<!--We don't begin Learn articles without an introductory sentence or two. I've restructured to add an introduction in an attempt to describe what the article and/or feature is about. -->
-
-Hosted RPA provides you with insights into how your flows affect Power Platform capacity. Within the Power Automate platform, the Hosted RPA capacity is a purchased item. The [add-on](/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on) is assigned to the environment, which allows you to run desktop flows with zero infrastructure. More information: [(Allocate or change capacity in an environment)](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment)
-
+The **hosted RPA capacity utilization page** provides you with insights into how your hosted RPA capacity is being used within your environment. As a reminder within the Power Automate platform, each hosted RPA capacity is based on a purchased [hosted RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on) which is [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows you to [run desktop flows with zero infrastructure](hosted-rpa-overview.md).
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-Hosted RPA capacity is allocated to hosted machines or committed to hosted machine groups.
+A hosted RPA capacity can be allocated to a hosted machine or committed to a hosted machine group.
 
 |Consuming object|Description|Consumption mode|
 |----|--------------------|----|
@@ -29,11 +26,11 @@ Hosted RPA capacity is allocated to hosted machines or committed to hosted machi
 
 > [!NOTE]
 >
-> The hosted machine group with the commitment has a priority of usage over all concurrent hosted machine groups. More information: [Load balance hosted machine groups](hosted-machine-groups.md#load-balance-hosted-machine-group)
+> A hosted machine group with a commitment has a priority of usage on the committed bot(s) over all concurrent hosted machine groups. More information: [Load balance hosted machine groups](hosted-machine-groups.md#load-balance-hosted-machine-group)
 
 ## Hosted RPA capacity overview
 
-The '**Hosted RPA capacity overview**' pie chart helps you understand what's your share of the hosted capacity consumption within the environment compared to other makers. It lets your know if there's still capacity to scale-up in the future and alerts you when your objects are exceeding environment capacity.
+The '**Hosted RPA capacity overview**' pie chart helps you understand what's your share of the hosted capacity consumption within the environment compared to other makers. It lets you know if there's still capacity to scale-up in the future (with more hosted machines, more committed bots) and alerts you when your objects are exceeding environment capacity.
 
 ![Hosted capacity overview](media/capacity-utilization/hosted-capacity-overview.png)
 
