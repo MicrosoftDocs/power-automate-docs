@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-The **Capacity utilization page** provides you with insights into how your hosted RPA capacity and Process capacity (or legacy Unattended RPA capacity) is being used within your environment. As a reminder, within the Power Automate platform each capacity is based on a purchased add-on or license which is [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows specific Power Automate objects to carry out specific operations. 
+The **Capacity utilization page** provides you with insights into how your hosted RPA capacity and Process capacity (or legacy Unattended RPA capacity) is being used within your environment. As a reminder, within the Power Automate platform each capacity is based on a purchased add-on or license. It is [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows specific Power Automate objects to carry out specific operations. 
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
