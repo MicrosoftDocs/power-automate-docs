@@ -35,6 +35,9 @@ Currently, the below actions are available:
 * **Insert image in Word document:** This action allows users to insert images in specific positions within a Word document. This can be done at the beginning or end of the file, before or after a specific bookmark, or before or after specific text. Note that no spaces or new lines are added. Users have the option to retrieve the image either as a file stored in their local machine or as content from the clipboard.
 :::image type="content" source="media/word/insertimageword.png" alt-text="Screenshot of action to insert an image in a Word instance":::
 
+>[!NOTE]
+> Word actions in Power Automate for desktop are compatible with Microsoft Word 2013 or newer, ensuring seamless integration with any version of Microsoft Word from 2013 onwards.
+
 ## Launch Word
 
 Opens a new Word instance or opens a Word document.
