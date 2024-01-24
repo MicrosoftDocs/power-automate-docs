@@ -84,6 +84,7 @@ When some unattended machines are in overage, the **Fix capacity button** appear
 <br><br>
 The **Request capacity** action submits a request to the tenant administrator for the assignation of capacity to the environment:
 <br>
+
 |Fix capacity - Request capacity|
 |-|
 |![Process request capacity](media/capacity-utilization/unattended-capacity-request.png)|
