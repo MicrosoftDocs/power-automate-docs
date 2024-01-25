@@ -36,7 +36,7 @@ Currently, the below actions are available:
 :::image type="content" source="media/word/insertimageword.png" alt-text="Screenshot of action to insert an image in a Word instance":::
 
 >[!NOTE]
-> Word actions in Power Automate for desktop are compatible with Microsoft Word 2013 or newer, ensuring seamless integration with any version of Microsoft Word from 2013 onwards.
+> Word actions in Power Automate for desktop are compatible with Microsoft Word 2013 or later versions.
 
 ## Launch Word
 
