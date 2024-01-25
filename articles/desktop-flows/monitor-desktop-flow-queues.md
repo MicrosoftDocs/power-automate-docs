@@ -11,7 +11,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 04/24/2022
+ms.date: 01/25/2024
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
@@ -30,7 +30,7 @@ search.audienceType:
 > [!IMPORTANT]
 > Gateways for desktop flows are no longer supported. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
-As you scale the automations in your business, you may need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor, manage and visualize all your queued desktop flow runs in just one location. Desktop flow queues can be used whether your target device is a machine, machine group, or a gateway.
+As you scale the automations in your business, you might need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor, manage and visualize all your queued desktop flow runs in just one location. Desktop flow queues can be used whether your target device is a machine, machine group, or a gateway.
 > [!NOTE]
 > Everyone accessing the run queues for their gateways from the **Desktop flow queues** page should now navigate to the **Gateways** pivot in the **Machines** page to access them.
 
@@ -38,7 +38,7 @@ As you scale the automations in your business, you may need an easy way to ensur
 
 The desktop flows connector actions contains a new priority parameter under the Advanced options section.
 
-Available priorities are High and Normal (the default value). This value can also be passed dynamically using the custom value parameter. Every time the desktop flow is triggered, it will be executed with the priority that has been set.
+Available priorities are High and Normal (the default value). This value can also be passed dynamically using the custom value parameter. Every time the desktop flow is triggered, it's executed with the priority that has been set.
 
   ![Screenshot of a cloud flow using the Run a flow built with Power Automate Desktop action.](media\monitoring\monitor-desktop-flow-queues-1.png)
 
@@ -96,78 +96,66 @@ If you have permission to access the parent flow, you can use this action to vie
 
 ## Cancel parent flow run
 
-If you're the owner of the flow, or have the role System Administrator or Environment Admin, you can cancel the parent flow run instance. This cancels the current desktop flow and all the other action that were used in the parent flow.
+If you're the owner of the flow, or have the role System Administrator or Environment Admin, you can cancel the parent flow run instance. This cancels the current desktop flow and all the other actions that were used in the parent flow.
 
 ## Extended queue prioritization
 
-The extended queue prioritization is a machine / machine group setting, which optimizes the machine-assignment logic of a run queue.
+The extended queue prioritization is a machine and machine group setting, which optimizes the machine-assignment logic of a run queue.
 
 Enabling this feature means that extended queue prioritization is applied on machines with multi-session support, such as Windows Server operating systems with RDS enabled. This optimizes the default run queue prioritization by extending the current first-in-first-out (FIFO) logic with user prioritization. This feature is enabled automatically when multi-session support is detected, but you can opt out at any time by disabling it.
 
-### With disabled 'Extended queue prioritization'
+### With disabled extended queue prioritization
 
-**Principle:**
+Principle. The machine-assignment algorithm always waits for the first run in queue **Next to run** status to be assigned to a machine before considering the next one.
 
-The machine-assignment algorithm will always wait for the first run in queue ('Next to run' status) to be assigned to a machine before considering the next one.
+Logic for an attended run. The first run in queue is an attended run, its connection user is user **Y**:​
 
-**Logic for an attended run:**
+1. *​Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance, and so on).
+2. *Filter*: The algorithm selects all machines, which have an opened session of user **Y**.
+3. *Allocation*: The algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
 
-The first run in queue is an attended run, its connection user is user **Y**:​
+Logic for an unattended run. The first run in queue is an unattended run, its connection user is user **Y**:​
 
-1. *​Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance etc.)
-2. *Filter*: The algorithm selects all machines, which have an opened session of user **Y**
-3. *Allocation*: the algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
-
-**Logic for an unattended run:**
-
-The first run in queue is an unattended run, its connection user is user **Y**:​
-
-1. *​Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance etc.)
-2. *Filter*: The algorithm selects all available machines (that is, machines which have at least one session available)
-3. *Filter*: the algorithm discards the machines, which already have a session opened by user **Y**
-4. *Allocation*: the algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
+1. *​Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance, and so on).
+2. *Filter*: The algorithm selects all available machines (that is, machines that have at least one session available).
+3. *Filter*: The algorithm discards the machines, which already have a session opened by user **Y**.
+4. *Allocation*: The algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
 
 > [!NOTE]
 >
-> - An unattended run can only be processed by a machine if the user session targeted (recorded on the desktop flow connection) is not already in-use on the same machine​.
-> - In both attended and unattended run scenarios, if no machines are left after the final filter, but there are some eligible machine(s) currently offline (which were discarded in step 1), the run will wait for the offline machine(s) to come back online before marking the run as failed.
+> - An unattended run can only be processed by a machine if the user session targeted, which is recorded on the desktop flow connection, isn't already in-use on the same machine​.
+> - In both attended and unattended run scenarios, if no machines are left after the final filter, but there are some eligible machines currently offline (that were discarded in step 1), the run waits for the offline machines to come back online before marking the run as failed.
 
 > [!TIP]
 >
-> - With disabled 'Extended queue prioritization', if no machine is available to execute the first run in queue, it is either failed or it waits for an offline machine to get back online (blocking the run queue in the meantime)
-> - Enabling 'Extended queue prioritization' allows the algorithm to reprioritize the queue when the first run in queue can not be processed
+> - With disabled **Extended queue prioritization**, if no machine is available to execute the first run in queue, it is either failed or it waits for an offline machine to get back online, blocking the run queue in the meantime.
+> - Enabling **Extended queue prioritization** allows the algorithm to reprioritize the queue when the first run in queue can't be processed.
 
-### With enabled 'Extended queue prioritization'
+### With enabled extended queue prioritization
 
-**Principle:**
+Principle. The machine-assignment algorithm is able to consider the other runs in the queue if the first run in the queue can't be processed for the following reasons:
 
-The machine-assignment algorithm will able to consider the other runs in the queue if the first run in the queue can't be processed because:
+- Its targeted user session is currently not active on any machine (for attended runs).
+- Its targeted user session being already in use on all available machines (for an unattended run).
 
-- its targeted user session is currently not active on any machine (for attended runs)
-- its targeted user session being already in use on all available machines (for an unattended run)
+Logic for an attended run: The first run in queue is an attended run, its connection user is user **Y**:​
 
-**Logic for an attended run:**
-
-The first run in queue is an attended run, its connection user is user **Y**:​
-
-1. *Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance etc.)
+1. *Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance, and so on).
 2. *Filter*: The algorithm selects all machines, which have an opened session of user **Y**:
-   - if some machines remain: step 4
-   - if no machine remains: step 3
-3. *Reprioritization*: The algorithm reprioritizes the queue by considering the next run in queue (until a run is assignable to a machine)
-4. *Allocation*: the algorithm assigns the run to one of the remaining machines (randomly)
+   - If some machines remain: step 4. <!-- Can you be more specific what you mean by step 4? Is it Allocation mentioned below?-->
+   - If no machine remains: step 3. <!-- Same question as above. Without being more specific this can be confusing.-->
+3. *Reprioritization*: The algorithm reprioritizes the queue by considering the next run in queue until a run is assignable to a machine.
+4. *Allocation*: The algorithm assigns the run to one of the remaining machines (randomly).
 
-**Logic for an unattended run:**
+Logic for an unattended run. The first run in queue is an unattended run, its connection user is user **Y**:​
 
-The first run in queue is an unattended run, its connection user is user **Y**:​
-
-1. *Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance etc.)
-2. *Filter*: The algorithm selects all available machines (= machines, which have at least one session available)
-3. *Filter*: the algorithm discards the machines, which already have a session opened by user **Y**:
-   - if some machines remain: step 5
-   - if no machine remains: step 4
-4. *Reprioritization*: The algorithm reprioritizes the queue by considering the next run in queue (until a run is assignable to a machine)
-5. *Allocation*: the algorithm assigns the run to one of the remaining machines (randomly)
+1. *Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance, and so on).
+2. *Filter*: The algorithm selects all available machines (= machines, which have at least one session available).
+3. *Filter*: The algorithm discards the machines, which already have a session opened by user **Y**:
+   - If some machines remain: step 5 <!-- Same question as above about what step 5 means-->
+   - If no machine remains: step 4 <!-- Same question as above what step 4 means-->
+4. *Reprioritization*: The algorithm reprioritizes the queue by considering the next run in queue (until a run is assignable to a machine).
+5. *Allocation*: The algorithm assigns the run to one of the remaining machines (randomly)
 
 ## View list of run queues for gateways
 
@@ -179,9 +167,9 @@ From this page you can view all the gateways to which you have access. Each gate
 
 ## Using gateways with multiple environments
 
-It's recommended to use a gateway for desktop flows only by one environment. However, gateways can still be used across multiple environments if needed.
+We recommend using a gateway for desktop flows only by one environment. However, gateways can still be used across multiple environments if needed.
 
-With multiple environments, in some cases no flows may appear to be running even with a full list of queued runs, as the gateway may be running flows in another environment. Run queues are per environment and can't be prioritized one over the other. A message will be shown to indicate if the gateway is being used in another environment.
+With multiple environments, in some cases no flows might appear to be running even with a full list of queued runs, as the gateway might be running flows in another environment. Run queues are per environment and can't be prioritized one over the other. A message is shown to indicate if the gateway is being used in another environment.
 
 ## Known issues
 
