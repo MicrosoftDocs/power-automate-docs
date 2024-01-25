@@ -18,7 +18,7 @@ The **Capacity utilization page** provides you with insights into how your hoste
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 You manage the following capacity within the capacity utilization page.
-<!-- The links are invalid in the table below for Auto-allocation in the below two instances. Where are you trying to link to?-->
+
 |Capacity|Consuming Power Automate object|Consumption mode|Operation enabled|
 |----|--------------------|----|----|
 |Hosted RPA capacity|Hosted machine|[Autoallocation](# "Hosted RPA capacity is autoallocated to the hosted machine at its creation.")|To be created, each hosted machine requires a hosted RPA capacity allocated.|
