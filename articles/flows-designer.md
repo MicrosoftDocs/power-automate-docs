@@ -183,33 +183,32 @@ The cloud flows designer has smaller cards to facilitate easy navigation. It als
 ## Limitations and known issues
 
 You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following:
-1. Non-Open API flows (Peek code on an action and if you see `_methods_` parameter, the flow is a non-open API flow)
-1. Some hybrid triggers:
-   1. When a record is selected (Dataverse)
-   1. When a flow is run from business process flow (Dataverse)
-   1. For a selected message (v2 Teams)
-   1. TeamsOnComposeMessage (Teams)
-   1. Teams card trigger
-   1. Microsoft 365 Compliance Connector
-1. A comment
-1. Power Pages connector
-1. Power Apps v1 trigger
-1. Perform a changeset request action (Dataverse)
-1. A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
-2. Email auto-complete suggestions in _Send Email/Post message_ in Teams actions
-3. HTML editor in Send Email action
-4. Copy/Paste supporting Scope, Condition, Do until cosntructs
-5. Ability to make manual trigger fields optional
+- Non-Open API flows (Peek code on an action and if you see `_methods_` parameter, the flow is a non-open API flow)
+- Some hybrid triggers:
+   - When a flow is run from business process flow (Dataverse)
+   - For a selected message (v2 Teams)
+   - TeamsOnComposeMessage (Teams)
+   - Teams card trigger
+   - Microsoft 365 Compliance Connector
+- A comment
+- Power Pages connector
+- Power Apps v1 trigger
+- Perform a changeset request action (Dataverse)
+- A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
+- Email auto-complete suggestions in _Send Email/Post message_ in Teams actions
+- HTML editor in Send Email action
+- Copy/Paste supporting Scope, Condition, Do until cosntructs
+- Ability to make manual trigger fields optional
 
 ## Some known issues
 
-1. Dynamic content friendly names is getting updated to internal code names upon save.
-1. Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', and others.
-1. Newline in Approval action and Compose action are disappearing.
+- Dynamic content friendly names are getting updated to internal code names upon save.
+- Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', and others.
+- Newline in Approval action and Compose action are disappearing.
 
-If you want to work with missing functionalities in the designer, while the limitations and known issues are being fixed in the meantime, select **Switch to classic designer** on the menu in the cloud flows designer.
+If you want to work with missing functionalities in the designer, while the limitations and known issues are being fixed in the meantime, turn off the **New designer** toggle on the menu in the cloud flows designer.
 
-:::image type="content" source="media/flows-designer/classic-designer.png" alt-text="Screenshot of the 'Switch to classic designer' button below the menu.":::
+:::image type="content" source="media/flows-designer/designer-toggle.svg" alt-text="Screenshot of the 'New designer' toggle.":::
 
 > [!NOTE]
 > The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.

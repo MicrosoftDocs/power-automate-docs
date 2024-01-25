@@ -79,6 +79,8 @@
       href:  associate-flow-to-app.md
     - name: Use data operations
       href: data-operations.md
+    - name: Customize or format date and time values in a flow
+      href: date-time-values.md
     - name: Use expressions in conditions
       href: use-expressions-in-conditions.md
     - name: Store and manage values in variables
@@ -1018,6 +1020,16 @@
       href: ./developer/sample-work-business-process-flows.md
   - name: Custom Dataverse workflow activities
     href: ./developer/custom-cds-for-apps-workflow-activities.md
+- name: Manage automations
+  items:
+  - name: Capacity utilization (preview)
+    items:
+    - name: Introduction to capacity utilization
+      href: ./desktop-flows/capacity-utilization.md
+    - name: Hosted RPA capacity utilization
+      href: ./desktop-flows/capacity-utilization-hosted.md
+    - name: Process capacity utilization
+      href: ./desktop-flows/capacity-utilization-process.md
 - name: Administration
   items:
   - name: Power Automate sign-up FAQ
