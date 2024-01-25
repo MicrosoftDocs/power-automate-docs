@@ -25,12 +25,11 @@ A process capacity, or legacy unattended RPA capacity, can be allocated to a mac
 
 > [!NOTE]
 >
-> - Process capacity and unattended RPA capacity have been combined in a single capacity pool and have exactly the same role within the Power Automate platform.
-> - Manual allocation of the process capacity, or legacy Unattended RPA capacity, to the machine will be released in Q2 2024.
+> Process capacity and unattended RPA capacity have been combined in a single capacity pool and have exactly the same role within the Power Automate platform.
 
 ## Unattended RPA capacity overview
 
-The '**Unattended RPA capacity overview**' pie chart helps you understand the capacity consumption within the environment, lets you know if there's still capacity to scale-up in the future, and alerts you when the utilized capacity is exceeding environment capacity (= overage).
+The **Unattended RPA capacity overview** pie chart helps you understand the capacity consumption within the environment, lets you know if there's still capacity to scale-up in the future, and alerts you when the utilized capacity is exceeding environment capacity (= overage).
 
 ![Process capacity overview](media/capacity-utilization/unattended-capacity-overview.png)
 
@@ -46,7 +45,7 @@ The '**Unattended RPA capacity overview**' pie chart helps you understand the ca
 
 ## Process and Unattended RPA capacity insights
 
-The '**Unattended capacity insights**' card informs you of operation health and gives recommendations when there are compliance issues.
+The **Unattended capacity insights** card informs you of operation health and gives recommendations when there are compliance issues.
 
 ![Unattended capacity insight](media/capacity-utilization/unattended-capacity-insight.png)
 
@@ -58,7 +57,7 @@ The '**Unattended capacity insights**' card informs you of operation health and 
 
 ## Capacity overage
 
-Capacity overage in an environment occurs when **the capacity utilized by unattended machines surpasses the assigned capacity of the environment**. To return to compliance, it's important to promptly rectify the situation.
+Capacity overage in an environment occurs when the capacity utilized by unattended machines surpasses the assigned capacity of the environment. To return to compliance, it's important to promptly rectify the situation.
 
 ![Process overage](media/capacity-utilization/overage-unattended.png)
 

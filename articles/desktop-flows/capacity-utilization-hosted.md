@@ -26,11 +26,11 @@ A hosted RPA capacity can be allocated to a hosted machine or committed to a hos
 
 > [!NOTE]
 >
-> A hosted machine group with a commitment has a priority of usage on its committed bot(s) over all concurrent hosted machine groups. More information: [Load balance hosted machine groups](hosted-machine-groups.md#load-balance-hosted-machine-group).
+> A hosted machine group with a commitment has a priority of usage on its committed bots over all concurrent hosted machine groups. More information: [Load balance hosted machine groups](hosted-machine-groups.md#load-balance-hosted-machine-group).
 
 ## Hosted RPA capacity overview
 
-The '**Hosted RPA capacity overview**' pie chart helps you understand what's your share of the hosted capacity consumption within the environment compared to other makers. It lets you know if there's still capacity to scale-up in the future and alerts you when your objects are exceeding environment capacity.
+The **Hosted RPA capacity overview** pie chart helps you understand what's your share of the hosted capacity consumption within the environment compared to other makers. It lets you know if there's still capacity to scale-up in the future and alerts you when your objects are exceeding environment capacity.
 
 ![Hosted capacity overview](media/capacity-utilization/hosted-capacity-overview.png)
 
@@ -107,7 +107,7 @@ Hosted machine groups don't honor their over-committed bots expected behavior.
 
 ### How to fix hosted capacity overage?
 
-When you own some hosted machines or hosted machine groups in overage, or when the hosted pool is empty, the **Fix capacity** button appears in the 'Hosted capacity insights' card:
+When you own some hosted machines or hosted machine groups in overage, or when the hosted pool is empty, the **Fix capacity** button appears in the **Hosted capacity insights** card:
 
 |Fix capacity - Button|
 |-------|
