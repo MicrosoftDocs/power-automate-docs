@@ -751,16 +751,6 @@
       href: ./desktop-flows/dynamics365-fin-rpa.md
     - name: Use RPA with Dynamics 365 Customer Service
       href: ./desktop-flows/dynamics365-cs-rpa.md
-- name: Manage your automations
-  items:
-  - name: Capacity utilization (preview)
-    items:
-    - name: Introduction to capacity utilization
-      href: ./desktop-flows/capacity-utilization.md
-    - name: Hosted RPA capacity utilization
-      href: ./desktop-flows/capacity-utilization-hosted.md
-    - name: Process capacity utilization
-      href: ./desktop-flows/capacity-utilization-process.md
 - name: Business process flows
   items:
   - name: Business process flows overview
@@ -1030,6 +1020,16 @@
       href: ./developer/sample-work-business-process-flows.md
   - name: Custom Dataverse workflow activities
     href: ./developer/custom-cds-for-apps-workflow-activities.md
+- name: Manage automations
+  items:
+  - name: Capacity utilization (preview)
+    items:
+    - name: Introduction to capacity utilization
+      href: ./desktop-flows/capacity-utilization.md
+    - name: Hosted RPA capacity utilization
+      href: ./desktop-flows/capacity-utilization-hosted.md
+    - name: Process capacity utilization
+      href: ./desktop-flows/capacity-utilization-process.md
 - name: Administration
   items:
   - name: Power Automate sign-up FAQ
