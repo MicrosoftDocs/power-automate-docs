@@ -142,8 +142,8 @@ Step-by-step logic for an attended run: The first run in queue is an attended ru
 
 1. *Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance, and so on).
 2. *Filter*: The algorithm selects all machines, which have an opened session of user **Y**:
-   - If some machines remain: the algorithm moves to step 4 (allocation)
-   - If no machine remains: the algorithm moves to step 3 (reprioritization)
+   - If some machines remain, the algorithm moves to step 4 (allocation).
+   - If no machine remains, the algorithm moves to step 3 (reprioritization).
 3. *Reprioritization*: The algorithm reprioritizes the queue by considering the next run in queue until a run is assignable to a machine.
 4. *Allocation*: The algorithm assigns the run to one of the remaining machines (randomly).
 
@@ -152,8 +152,8 @@ Step-by-step logic for an unattended run. The first run in queue is an unattende
 1. *Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance, and so on).
 2. *Filter*: The algorithm selects all available machines (= machines, which have at least one session available).
 3. *Filter*: The algorithm discards the machines, which already have a session opened by user **Y**:
-   - If some machines remain: the algorithm moves to step 5 (allocation)
-   - If no machine remains: the algorithm moves to step 4 (reprioritization)
+   - If some machines remain, the algorithm moves to step 5 (allocation).
+   - If no machine remains, the algorithm moves to step 4 (reprioritization).
 4. *Reprioritization*: The algorithm reprioritizes the queue by considering the next run in queue (until a run is assignable to a machine).
 5. *Allocation*: The algorithm assigns the run to one of the remaining machines (randomly)
 
