@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.date: 09/21/2023
 ms.author: dipapa
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 contributors:
 - jpapadimitriou
 - Yiannismavridis

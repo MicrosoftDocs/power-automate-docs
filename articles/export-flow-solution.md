@@ -22,8 +22,8 @@ search.audienceType:
 
 Follow these steps to move your solution and its dependencies to a new environment.
 
->[!IMPORTANT]
->Before you export a solution, consider removing environment variable values in the solution.
+> [!IMPORTANT]
+> Before you export a solution, consider removing environment variable values in the solution.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 

@@ -1,14 +1,9 @@
 ---
 title: Use AI Builder in Power Automate | Microsoft Docs
 description: Use AI Builder in Power Automate.
-services: ''
 suite: flow
 documentationcenter: na
 author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -16,7 +11,9 @@ ms.workload: na
 ms.date: 10/15/2019
 ms.author: deonhe
 ms.reviewer: angieandrews
-ms.collection: get-started
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 search.audienceType: 
   - admin
 ---
@@ -33,8 +30,5 @@ You can build AI models by using the **AI Builder** option from the left navigat
 
 
 Use your AI Builder models in your flows to add intelligence to your organization. More information: [Use AI Builder in Power Automate](/ai-builder/use-in-flow-overview)
-
-
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
