@@ -12,6 +12,7 @@ contributors:
   - v-aangie
 ms.author: kisubedi
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot 
 ---
 
 # Get started with Copilot in cloud flows

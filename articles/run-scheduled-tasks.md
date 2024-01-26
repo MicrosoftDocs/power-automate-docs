@@ -14,6 +14,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 10/02/2023
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
   - enduser
