@@ -11,6 +11,7 @@ ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 search.audienceType:
 - flowmaker
 - enduser

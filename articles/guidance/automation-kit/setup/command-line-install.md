@@ -2,20 +2,16 @@
 title: Install the automation kit using the command line
 description: Learn how to install the automation kit using the command line.
 suite: flow
-documentationcenter: na
 author: Grant-Archibald-MS
 contributors:
   - Grant-Archibald-MS
   - v-aangie
-editor: ''
 ms.custom: guidance
-ms.devlang: na
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/21/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 ---
 
 # Install the automation kit using the command line

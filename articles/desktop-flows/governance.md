@@ -6,6 +6,7 @@ ms.topic: conceptual
 ms.date: 11/13/2023
 ms.author: iomavrid
 ms.reviewer: gtrantzas
+ms.collection: bap-ai-copilot
 contributors:
 - Yiannismavridis
 - PetrosFeleskouras

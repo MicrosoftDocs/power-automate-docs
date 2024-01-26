@@ -14,6 +14,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 ---
 
 # Understand the cloud flows designer
