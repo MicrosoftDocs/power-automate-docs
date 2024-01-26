@@ -17,6 +17,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 ---
 
 # Limits of automated, scheduled, and instant flows

@@ -7,6 +7,7 @@ ms.author: appapaio
 ms.reviewer: 
 contributors:
 author: rpapostolis
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - admin
   - coe

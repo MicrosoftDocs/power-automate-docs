@@ -11,7 +11,9 @@ ms.topic: conceptual
 ms.date: 10/02/2023
 ms.author: prkoduku
 ms.reviewer: angieandrews
-ms.collection: get-started
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ---
 
 # Get started with triggers

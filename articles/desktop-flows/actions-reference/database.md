@@ -7,6 +7,7 @@ ms.topic: reference
 ms.date: 12/07/2023
 ms.author: cochamos
 ms.reviewer: matp
+ms.collection: bap-ai-copilot
 contributors:
 - jpapadimitriou
 - Yiannismavridis
