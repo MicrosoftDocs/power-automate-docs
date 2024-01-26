@@ -108,13 +108,13 @@ Enabling this feature means that extended queue prioritization is applied on mac
 
 Principle. The machine-assignment algorithm always waits for the first run in queue **Next to run** status to be assigned to a machine before considering the next one.
 
-Logic for an attended run. The first run in queue is an attended run, its connection user is user **Y**:​
+Step-by-step logic for an attended run. The first run in queue is an attended run, its connection user is user **Y**:​
 
 1. *​Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance, and so on).
 2. *Filter*: The algorithm selects all machines, which have an opened session of user **Y**.
 3. *Allocation*: The algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
 
-Logic for an unattended run. The first run in queue is an unattended run, its connection user is user **Y**:​
+Step-by-step logic for an unattended run. The first run in queue is an unattended run, its connection user is user **Y**:​
 
 1. *​Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance, and so on).
 2. *Filter*: The algorithm selects all available machines (that is, machines that have at least one session available).
@@ -138,22 +138,22 @@ Principle. The machine-assignment algorithm is able to consider the other runs i
 - Its targeted user session is currently not active on any machine (for attended runs).
 - Its targeted user session being already in use on all available machines (for an unattended run).
 
-Logic for an attended run: The first run in queue is an attended run, its connection user is user **Y**:​
+Step-by-step logic for an attended run: The first run in queue is an attended run, its connection user is user **Y**:​
 
 1. *Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance, and so on).
 2. *Filter*: The algorithm selects all machines, which have an opened session of user **Y**:
-   - If some machines remain: step 4. <!-- Can you be more specific what you mean by step 4? Is it Allocation mentioned below?-->
-   - If no machine remains: step 3. <!-- Same question as above. Without being more specific this can be confusing.-->
+   - If some machines remain: the algorithm moves to step 4 (allocation)
+   - If no machine remains: the algorithm moves to step 3 (reprioritization)
 3. *Reprioritization*: The algorithm reprioritizes the queue by considering the next run in queue until a run is assignable to a machine.
 4. *Allocation*: The algorithm assigns the run to one of the remaining machines (randomly).
 
-Logic for an unattended run. The first run in queue is an unattended run, its connection user is user **Y**:​
+Step-by-step logic for an unattended run. The first run in queue is an unattended run, its connection user is user **Y**:​
 
 1. *Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance, and so on).
 2. *Filter*: The algorithm selects all available machines (= machines, which have at least one session available).
 3. *Filter*: The algorithm discards the machines, which already have a session opened by user **Y**:
-   - If some machines remain: step 5 <!-- Same question as above about what step 5 means-->
-   - If no machine remains: step 4 <!-- Same question as above what step 4 means-->
+   - If some machines remain: the algorithm moves to step 5 (allocation)
+   - If no machine remains: the algorithm moves to step 4 (reprioritization)
 4. *Reprioritization*: The algorithm reprioritizes the queue by considering the next run in queue (until a run is assignable to a machine).
 5. *Allocation*: The algorithm assigns the run to one of the remaining machines (randomly)
 
