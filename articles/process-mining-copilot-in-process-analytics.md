@@ -10,6 +10,7 @@ contributors:
 ms.custom: bap-template
 ms.author: janpidych
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 ---
 
 # Copilot in Process Mining process analytics (preview)
