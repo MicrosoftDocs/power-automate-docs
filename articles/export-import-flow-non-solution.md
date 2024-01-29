@@ -33,7 +33,7 @@ When you export a flow, the dependent resources for your flow are also exported 
 
 |Resource | Supported | Import options |
 |---------|-----------|----------------|
-| Flow | Yes | There are two options to import a flow into an environment:</li><li>**Create new**: The flow is created as a new flow into the environment where the package is imported.</li><li>**Update**: The flow already exists in the environment and is updated when this package is imported. |
+| Flow | Yes | There are two options to import a flow into an environment:</li><li>**Create as new**: The flow is created as a new flow into the environment where the package is imported.</li><li>**Update**: The flow already exists in the environment and is updated when this package is imported. |
 
 ## Permissions required to import and export a non-solution flow
 
@@ -47,9 +47,9 @@ Only the [owner or co-owner](/sharepoint/dev/business-apps/power-automate/gui
 1. On the next screen, enter a name and description for your package.
 1. *(Optional)* Configure the package.
     1. Under **Review Package Content** in the **ACTION** field, select **Configure** (the tool icon).
-    1. Select **Update** or **New**.  
+    1. Select **Update (default**) or **Create as new**.  
 
-        The default is **Update**. If selected, your app or flow already exists in the environment and is updated when the package is imported. If you select **Create as new**, the selected app or flow is new to the environment when the package is imported.
+        For a description of these options, go to the table in the [Resources included in the package](#resources-included-in-the-package) section in this article.
 
     1. Select **Save**.
 
@@ -63,7 +63,7 @@ Only the [owner or co-owner](/sharepoint/dev/business-apps/power-automate/gui
 
     Your package starts downloading shortly after. If your download doesn't start automatically, select **Download**.
 
-1. When you're ready to import a flow, downloaded .zip file.
+1. When you're ready to import a flow, you'll need the downloaded .zip file.
 
 ## Import a flow
 
