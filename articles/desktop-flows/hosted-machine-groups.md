@@ -138,7 +138,7 @@ Custom VM images must meet the following requirements:
 
 - Generation 2 images
 - Generalized VM image
-- 127 GB limit on VM image size
+- 127-GB limit on VM image size
 - Microsoft Edge version 80 or higher
 - The image definition is recommended to have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
@@ -320,7 +320,7 @@ To find more information about triggering desktop flows from cloud flows, go to 
 
 You can't directly access or sign in to your hosted machine groups. They're not persisted unless they're running desktop flows. Hosted bots in a group are created based on the current size of the queue, the configuration of the group, and the licenses assigned to the current environment.
 
-For instance, if the hosted machine group is newly created or it wasn't used for more than 3 hours, new hosted bots may need to be provisioned before desktop flow runs. The creation of a bot takes at least 10 minutes, depending on the type of VM Image in use. It's expected that the queue would appear stuck for more than 10 minutes before desktop flows start running.
+For instance, if the hosted machine group is newly created or it wasn't used for more than 3 hours, new hosted bots might need to be provisioned before desktop flow runs. The creation of a bot takes at least 10 minutes, depending on the type of VM Image in use. It's expected that the queue would appear stuck for more than 10 minutes before desktop flows start running.
 
 After this process, new hosted bots are provisioned to run desktop flows in the queue as efficiently as possible.
 
@@ -346,7 +346,7 @@ To monitor your hosted bots:
 
 The key feature of hosted machine groups is the ability to automatically load balance hosted bots between different groups, hence optimizing your automation resources seamlessly between your different workloads.
 
-The number of hosted bots that can run in your environment is equal to the number of hosted RPA capacity you've assigned to your environment excluding the number of hosted machines provisioned in the environment (Eg: If you have 10 Hosted RPA assigned to to your environment, and 2 hosted machines provisioned, then the number of hosted bots that can run in your environment would be 8). This capacity is then load balanced across all the hosted machine groups you have in your environment. Each hosted machine group has a max bot and committed bot configuration that enables you to control the scaling capabilities of the hosted machine group.
+The number of hosted bots that can run in your environment is equal to the number of hosted RPA capacity you've assigned to your environment excluding the number of hosted machines provisioned in the environment (for example, if you have 10 Hosted RPA assigned to your environment, and two hosted machines provisioned, then the number of hosted bots that can run in your environment will be eight). This capacity is then load balanced across all the hosted machine groups you have in your environment. Each hosted machine group has a max bot and committed bot configuration that enables you to control the scaling capabilities of the hosted machine group.
 
 The hosted machine group requests to scale out when there aren't enough hosted bots to run desktop flows. It takes into consideration the max and committed bot configuration in the hosted machine group and the available capacity in the environment. The hosted machine group scale-in when the desktop flow queue is lesser than the number of available hosted bots. This capacity then becomes available to other hosted machine groups in the environment. 
 
