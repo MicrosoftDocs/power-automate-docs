@@ -1,10 +1,10 @@
 ---
 title: Automate webpages | Microsoft Docs
 description: Learn how to launch browsers, automate webpages, and extract data from the Web.
-author: georgiostrantzas
+author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/22/2022
+ms.date: 01/29/2024
 ms.author: marleon
 ms.reviewer: gtrantzas
 contributors:
@@ -29,6 +29,9 @@ Apart from the built-in Automation browser, four web browsers are currently supp
 > Before automating webpages, you need to install the appropriate browser extension and configure the browser accordingly. To find more information regarding the supported browsers and the required extensions, go to [Install Power Automate browser extensions](install-browser-extensions.md).
 
 To automate a webpage, you must launch or attach to one of the supported browsers, and then deploy browser automation actions. Browser automation actions enable you to interact with webpages and emulate events, such as clicking, using JavaScript scripts. You can develop the flow manually or [using the recorder](recording-flow.md).
+
+> [!NOTE]
+> Web automation in Power Automate for desktop is subject to a limitation whereby it cannot launch with a different system user or attach to any browser that was launched with a different system user than the one used to launch Power Automate for desktop. This limitation has been implemented for security reasons and is not expected to be lifted.
 
 By default, browser automation actions don't move the mouse pointer on the screen. As a result, they can run even when the web browser is minimized, or the target tab isn't the focused tab. This functionality allows you to perform other activities on your machine while a browser automation flow is running.
 
