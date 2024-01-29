@@ -26,7 +26,7 @@ search.audienceType:
 Scripting actions enable you to run blocks of code and implement custom behavior in your desktop flows.
 
 > [!IMPORTANT]
-> As announced on [October 2023](https://learn.microsoft.com/windows/whats-new/deprecated-features), VBScript is deprecated from Windows. In future releases of Windows, VBScript will be available as a feature on demand before its removal from the operating system. [For more information, see Resources for deprecated features.](/windows/whats-new/deprecated-features-resources#vbscript)
+> As announced on [October 2023](/windows/whats-new/deprecated-features), VBScript is deprecated from Windows. In future releases of Windows, VBScript will be available as a feature on demand before its removal from the operating system. [For more information, see Resources for deprecated features.](/windows/whats-new/deprecated-features-resources#vbscript)
 
 All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, JavaScript and C#/VB.NET.
 
