@@ -106,7 +106,7 @@ To create a hosted machine group:
   
     > [!NOTE]
     > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed bots configuration when required.
-    > - The sum of hosted machines and committed bots configured in your environment can't exceed the hosted RPA capacity assigned to the environment.
+    > - The sum of hosted machines and committed bots configured in your environment can't exceed the hosted RPA capacity assigned to the environment. View usage of hosted RPA capacity in your environment in the [Hosted RPA capacity utilization dashboard](./capacity-utilization-hosted.md). 
 
     :::image type="content" source="media/hosted-machine-groups/create-hmg-scaling.png" alt-text="Screenshot of the hosted machine group scaling configuration in creation wizard.":::
 
@@ -138,7 +138,7 @@ Custom VM images must meet the following requirements:
 
 - Generation 2 images
 - Generalized VM image
-- 127 GB limit on VM image size
+- 127-GB limit on VM image size
 - Microsoft Edge version 80 or higher
 - The image definition is recommended to have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
@@ -320,7 +320,7 @@ To find more information about triggering desktop flows from cloud flows, go to 
 
 You can't directly access or sign in to your hosted machine groups. They're not persisted unless they're running desktop flows. Hosted bots in a group are created based on the current size of the queue, the configuration of the group, and the licenses assigned to the current environment.
 
-For instance, if the hosted machine group is newly created or it wasn't used for more than 3 hours, new hosted bots may need to be provisioned before desktop flow runs. The creation of a bot takes at least 10 minutes, depending on the type of VM Image in use. It's expected that the queue would appear stuck for more than 10 minutes before desktop flows start running.
+For instance, if the hosted machine group is newly created or it wasn't used for more than 3 hours, new hosted bots might need to be provisioned before desktop flow runs. The creation of a bot takes at least 10 minutes, depending on the type of VM Image in use. It's expected that the queue would appear stuck for more than 10 minutes before desktop flows start running.
 
 After this process, new hosted bots are provisioned to run desktop flows in the queue as efficiently as possible.
 
@@ -346,14 +346,15 @@ To monitor your hosted bots:
 
 The key feature of hosted machine groups is the ability to automatically load balance hosted bots between different groups, hence optimizing your automation resources seamlessly between your different workloads.
 
-The number of hosted bots that can run in your environment is equal to the number of hosted RPA capacity you've assigned to your environment. This capacity is then load balanced across all the hosted machine groups you have in your environment. Each hosted machine group has a max bot and committed bot configuration that enables you to control the scaling capabilities of the hosted machine group.
+The number of hosted bots that can run in your environment is equal to the number of hosted RPA capacity you've assigned to your environment excluding the number of hosted machines provisioned in the environment (for example, if you have 10 Hosted RPA assigned to your environment, and two hosted machines provisioned, then the number of hosted bots that can run in your environment will be eight). This capacity is then load balanced across all the hosted machine groups you have in your environment. Each hosted machine group has a max bot and committed bot configuration that enables you to control the scaling capabilities of the hosted machine group.
 
-The hosted machine group requests to scale out when there aren't enough hosted bots to run desktop flows. It takes into consideration the max and committed bot configuration in the hosted machine group and the available capacity in the environment. The hosted machine group scale-in when the desktop flow queue is lesser than the number of available hosted bots. This capacity then becomes available to other hosted machine groups in the environment.
+The hosted machine group requests to scale out when there aren't enough hosted bots to run desktop flows. It takes into consideration the max and committed bot configuration in the hosted machine group and the available capacity in the environment. The hosted machine group scale-in when the desktop flow queue is lesser than the number of available hosted bots. This capacity then becomes available to other hosted machine groups in the environment. 
 
 > [!NOTE]
 >
 > - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required and when resources are available.
 > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed  bots configuration when required.
+> -  View usage of hosted RPA capacity in your environment in the [Hosted RPA capacity utilization dashboard](./capacity-utilization-hosted.md). 
 
 To update the scaling configuration of your hosted machine group:
 
@@ -371,7 +372,7 @@ To update the scaling configuration of your hosted machine group:
 
 ### Hosted machine group scaling & load balancing example
 
-In this example, the customer has 10 hosted RPA capacity assigned to the environment and have configured three hosted machine groups with the following configuration.
+In this example, the customer has 10 hosted RPA capacity assigned to the environment and has configured three hosted machine groups with the following configuration.
 
 | Hosted machine group name | Max bots | Committed bots | 
 | ----------| -------| -------|
@@ -383,9 +384,9 @@ In this example, the customer has 10 hosted RPA capacity assigned to the environ
 
 | Time | Event |
 | ----------| ---------------------|
-| 9AM - 11AM | The Invoice Processing group has a high volume of desktop flow jobs and autoscales to 10 hosted bots (Max bots configuration) as no other groups have desktop flow jobs. |
-| 12PM - 3PM | In addition to the high volume of desktop flow jobs for the Invoice Processing group, the New Sales Processing group now also has a high volume of desktop flow jobs queued, and therefore consumes the committed capacity of four hosted bots.
-| 4PM - 6PM | In addition to the high volume of desktop flow jobs for the Invoice Processing and New Sales Processing groups, the Refund Request Processing group now also has a high volume of desktop flow jobs queued, and therefore consumes the committed capacity of two hosted bots. |
+| 9AM - 11:59 AM | The Invoice Processing group has a high volume of desktop flow jobs and autoscales to 10 hosted bots (Max bots configuration) as no other groups have desktop flow jobs. |
+| 12PM - 4:59 PM | In addition to the high volume of desktop flow jobs for the Invoice Processing group, the New Sales Processing group now also has a high volume of desktop flow jobs queued, and therefore consumes the committed capacity of four hosted bots.
+| 5PM - 6:59 PM | In addition to the high volume of desktop flow jobs for the Invoice Processing and New Sales Processing groups, the Refund Request Processing group now also has a high volume of desktop flow jobs queued, and therefore consumes the committed capacity of two hosted bots. |
 
 ## Update VM Image used by the hosted machine group
 
