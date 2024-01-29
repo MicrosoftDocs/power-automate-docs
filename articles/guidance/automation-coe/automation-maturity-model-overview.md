@@ -1,12 +1,13 @@
 ---
 title: Microsoft Power Platform automation maturity model overview
-description: Understand how organizations and their partners can use the automation maturity model to improve their automation capabilities and align them to business outcomes.
+description: Learm how organizations and their partners can use the automation maturity model to improve their automation capabilities and align them to business outcomes.
 author: ashVancouver
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 08/26/2022
 ms.author: ashwinrajuk
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - admin
 ---

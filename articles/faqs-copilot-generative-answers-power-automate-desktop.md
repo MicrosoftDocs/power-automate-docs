@@ -8,7 +8,10 @@ ms.topic: article
 author: Cochamos
 ms.author: cochamos
 ms.reviewer: matp
+ms.collection: 
+    - bap-ai-copilot
 ---
+
 # FAQ for copilot generative answers in Power Automate for desktop
 
 These frequently asked questions (FAQ) describe the AI impact of the copilot generative answers functionality in Power Automate for desktop.

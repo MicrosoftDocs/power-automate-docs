@@ -4,11 +4,14 @@ description: This FAQ discusses Power Automate for desktop natural language to c
 ms.date: 11/09/2023
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: conceptual
 author: Cochamos
 ms.author: cochamos
 ms.reviewer: matp
+ms.collection: 
+    - bap-ai-copilot
 ---
+
 # FAQ for Power Automate for desktop natural language to code in scripting actions
 
 ## What is natural language to code in scripting actions?

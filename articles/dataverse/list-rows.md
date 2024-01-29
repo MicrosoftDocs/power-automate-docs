@@ -6,6 +6,7 @@ ms.author: Matow
 ms.reviewer: angieandrews
 ms.topic: conceptual
 ms.date: 10/02/2023
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - maker
 ---
