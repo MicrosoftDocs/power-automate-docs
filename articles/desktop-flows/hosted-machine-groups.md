@@ -384,9 +384,9 @@ In this example, the customer has 10 hosted RPA capacity assigned to the environ
 
 | Time | Event |
 | ----------| ---------------------|
-| 9AM - 11AM | The Invoice Processing group has a high volume of desktop flow jobs and autoscales to 10 hosted bots (Max bots configuration) as no other groups have desktop flow jobs. |
-| 12PM - 3PM | In addition to the high volume of desktop flow jobs for the Invoice Processing group, the New Sales Processing group now also has a high volume of desktop flow jobs queued, and therefore consumes the committed capacity of four hosted bots.
-| 4PM - 6PM | In addition to the high volume of desktop flow jobs for the Invoice Processing and New Sales Processing groups, the Refund Request Processing group now also has a high volume of desktop flow jobs queued, and therefore consumes the committed capacity of two hosted bots. |
+| 9AM - 11:59 AM | The Invoice Processing group has a high volume of desktop flow jobs and autoscales to 10 hosted bots (Max bots configuration) as no other groups have desktop flow jobs. |
+| 12PM - 4:59 PM | In addition to the high volume of desktop flow jobs for the Invoice Processing group, the New Sales Processing group now also has a high volume of desktop flow jobs queued, and therefore consumes the committed capacity of four hosted bots.
+| 5PM - 6:59 PM | In addition to the high volume of desktop flow jobs for the Invoice Processing and New Sales Processing groups, the Refund Request Processing group now also has a high volume of desktop flow jobs queued, and therefore consumes the committed capacity of two hosted bots. |
 
 ## Update VM Image used by the hosted machine group
 
