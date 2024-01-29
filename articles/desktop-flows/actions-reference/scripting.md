@@ -185,15 +185,14 @@ You can use this action to include your own custom VBScript code in the desktop 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |VBScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The VBScript code to execute. Variables may be included within the script since they evaluate prior to the execution of the VBScript|
+|Fail after timeout|Yes|[Boolean value](../variable-data-types.md#boolean-value)|N/A|Specify whether the VBScript script will run indefinitely or fail after a set period of time|
+|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|10|The maximum number of seconds to wait for the script to complete (-1 for indefinitely)|
 
 ### Variables produced
-<!-- This table is malformed with one extra row for the bottom two rows-->
 |Argument|Type|Description|
 |-----|-----|-----|
 |VBScriptOutput|[Text value](../variable-data-types.md#text-value)|The script's output|
 |ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that may occur during the execution of the VBScript code|
-|Fail after timeout|Yes|[Boolean value](../variable-data-types.md#boolean-value)|Specify whether the VBScript script will run indefinitely or fail after a set period of time|
-|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|10|The maximum number of seconds to wait for the script to complete (-1 for indefinitely)|
 
 ### <a name="runvbscript_onerror"></a> Exceptions
 
