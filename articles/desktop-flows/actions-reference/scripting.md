@@ -4,7 +4,7 @@ description: See all the available scripting actions.
 author: cochamos
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/09/2023
+ms.date: 01/29/2024
 ms.author: cochamos
 ms.reviewer: angieandrews
 contributors:
@@ -25,7 +25,7 @@ search.audienceType:
 Scripting actions enable you to run blocks of code and implement custom behavior in your desktop flows.
 
 > [!IMPORTANT]
-> As announced on [October 2023](https://learn.microsoft.com/windows/whats-new/deprecated-features), VBScript is deprecated from Windows. In future releases of Windows, VBScript will be available as a feature on demand before its removal from the operating system. [For more information, see Resources for deprecated features.](https://learn.microsoft.com/windows/whats-new/deprecated-features-resources#vbscript)
+> As announced on [October 2023](https://learn.microsoft.com/windows/whats-new/deprecated-features), VBScript is deprecated from Windows. In future releases of Windows, VBScript will be available as a feature on demand before its removal from the operating system. [For more information, see Resources for deprecated features.](/windows/whats-new/deprecated-features-resources#vbscript)
 
 All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, JavaScript and C#/VB.NET.
 
@@ -186,12 +186,12 @@ You can use this action to include your own custom VBScript code in the desktop 
 |VBScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The VBScript code to execute. Variables may be included within the script since they evaluate prior to the execution of the VBScript|
 
 ### Variables produced
-
+<!-- This table is malformed with one extra row for the bottom two rows-->
 |Argument|Type|Description|
 |-----|-----|-----|
 |VBScriptOutput|[Text value](../variable-data-types.md#text-value)|The script's output|
 |ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that may occur during the execution of the VBScript code|
-|Fail after timeout|Yes|[Boolean value](../variable-data-types.md#boolean-value)||Specify whether the VBScript script will run indefinitely or fail after a set period of time|
+|Fail after timeout|Yes|[Boolean value](../variable-data-types.md#boolean-value)|Specify whether the VBScript script will run indefinitely or fail after a set period of time|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|10|The maximum number of seconds to wait for the script to complete (-1 for indefinitely)|
 
 ### <a name="runvbscript_onerror"></a> Exceptions
