@@ -106,7 +106,7 @@ To create a hosted machine group:
   
     > [!NOTE]
     > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed bots configuration when required.
-    > - The sum of hosted machines and committed bots configured in your environment can't exceed the hosted RPA capacity assigned to the environment.
+    > - The sum of hosted machines and committed bots configured in your environment can't exceed the hosted RPA capacity assigned to the environment. View usage of hosted RPA capacity in your environment in the [Hosted RPA capacity utilization dashboard](./capacity-utilization-hosted.md). 
 
     :::image type="content" source="media/hosted-machine-groups/create-hmg-scaling.png" alt-text="Screenshot of the hosted machine group scaling configuration in creation wizard.":::
 
@@ -348,12 +348,13 @@ The key feature of hosted machine groups is the ability to automatically load ba
 
 The number of hosted bots that can run in your environment is equal to the number of hosted RPA capacity you've assigned to your environment excluding the number of hosted machines provisioned in the environment (Eg: If you have 10 Hosted RPA assigned to to your environment, and 2 hosted machines provisioned, then the number of hosted bots that can run in your environment would be 8). This capacity is then load balanced across all the hosted machine groups you have in your environment. Each hosted machine group has a max bot and committed bot configuration that enables you to control the scaling capabilities of the hosted machine group.
 
-The hosted machine group requests to scale out when there aren't enough hosted bots to run desktop flows. It takes into consideration the max and committed bot configuration in the hosted machine group and the available capacity in the environment. The hosted machine group scale-in when the desktop flow queue is lesser than the number of available hosted bots. This capacity then becomes available to other hosted machine groups in the environment.
+The hosted machine group requests to scale out when there aren't enough hosted bots to run desktop flows. It takes into consideration the max and committed bot configuration in the hosted machine group and the available capacity in the environment. The hosted machine group scale-in when the desktop flow queue is lesser than the number of available hosted bots. This capacity then becomes available to other hosted machine groups in the environment. 
 
 > [!NOTE]
 >
 > - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required and when resources are available.
 > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed  bots configuration when required.
+> -  View usage of hosted RPA capacity in your environment in the [Hosted RPA capacity utilization dashboard](./capacity-utilization-hosted.md). 
 
 To update the scaling configuration of your hosted machine group:
 
@@ -371,7 +372,7 @@ To update the scaling configuration of your hosted machine group:
 
 ### Hosted machine group scaling & load balancing example
 
-In this example, the customer has 10 hosted RPA capacity assigned to the environment and have configured three hosted machine groups with the following configuration.
+In this example, the customer has 10 hosted RPA capacity assigned to the environment and has configured three hosted machine groups with the following configuration.
 
 | Hosted machine group name | Max bots | Committed bots | 
 | ----------| -------| -------|
