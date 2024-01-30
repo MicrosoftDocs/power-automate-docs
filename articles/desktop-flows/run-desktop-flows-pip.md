@@ -38,6 +38,8 @@ This attended run mode is called **Picture-in-Picture** and it is leveraging the
 - The user running flows in Picture-in-Picture should be part of the following Windows policies:
   - Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment\Allow Log On Locally
   - Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment\Access this computer from the network
+ 
+  - A device that runs Windows 10 (Pro, Enterprise), Windows 11 (Pro, Enterprise), Windows Server 2016, Windows Server 2019, or Windows Server 2022
 
 ## Enable Picture-in-Picture on the machine
 
