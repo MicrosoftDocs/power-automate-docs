@@ -1,11 +1,11 @@
 ---
 title: Run a desktop flow in Picture-in-Picture
 description: See how to run desktop flows in Picture-in-Picture mode.
-author: pefelesk
+author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 1/30/2024
-ms.author: PetrosFeleskouras
+ms.author: pefelesk
 ms.reviewer: 
 contributors:
 search.app: 
@@ -87,7 +87,7 @@ Two instances of a web browser (Chrome, Firefox, Edge) cannot open concurrently 
 
 If a web browser is already open on the desktop with a user data folder, then it should open in Picture-in-Picture with another user data folder. 
 
-This limitation is handled automatically with the **User data folder** parameter in the launch browser actions in the Power Automate designer. For example, [learn more about the Launch new Microsoft Edge action](../webautomation.md#-launch-new-microsoft-edge).
+This limitation is handled automatically with the **User data folder** parameter in the launch browser actions in the Power Automate designer. For example, [learn more about the Launch new Microsoft Edge action](../actions-reference/webautomation.md#-launch-new-microsoft-edge).
 
 The **User data folder** parameter has the following options:
 
