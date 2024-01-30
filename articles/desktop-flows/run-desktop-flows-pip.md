@@ -57,17 +57,19 @@ You can trigger a desktop flow in Picture-in-Picture mode through the **Power Au
 
 Select the target flow, open the **More actions** menu, and select **Run in Picture-in-Picture**.
 
-[Picture]
+:::image type="content" source="media/run-flow-pip/console-run-in-pip.png" alt-text="Run in Picture-in-Picture through the Power Automate console.":::
 
 Alternatively, enable the **Run in Picture-in-Picture** flow property so that the flow will always run in Picture-in-Picture mode when it is triggered locally.
 
-[Picture]
+:::image type="content" source="media/run-flow-pip/console-pip-property.png" alt-text="Enable the Picture-in-Picture flow property.":::
+
+:::image type="content" source="media/run-flow-pip/console-run-pip-property.png" alt-text="Run in Picture-in-Picture through the Power Automate console.":::
 
 Upon authenticating on the Picture-in-Picture session, the flow starts running within the Picture-in-Picture window. 
 
-Enable options **View only** to block user input, and **Always on top** to always keep the window on the foreground.
+:::image type="content" source="media/run-flow-pip/pip-window.png" alt-text="The flow is running in the Picture-in-Picture window.":::
 
-[Picture]
+Enable options **View only** to block user input, and **Always on top** to always keep the window on the foreground.
 
 ## Debug a desktop flow in Picture-in-Picture
 
@@ -75,7 +77,7 @@ You can debug a desktop flow in a Picture-in-Picture session directly through th
 
 To enable the Picture-in-Picture run mode in the designer, select **Debug** and **Enable Picture-in-Picture mode**. 
 
-[Picture]
+:::image type="content" source="media/run-flow-pip/designer-run-in-pip.png" alt-text="Enable the Picture-in-Picture mode in the Power Automate designer.":::
 
 ## Limitations of Browser automation in Picture-in-Picture
 
