@@ -39,7 +39,7 @@ Runs a desktop flow that can receive input variables and may produce output vari
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Desktop flow|No|Desktop flow||Select the desktop flow to run from within this flow|
+|Desktop flow|No|Desktop flow||Select the desktop flow to run from within this flow. The called flow always runs in the same Windows session as the parent flow.|
 
 ### Variables produced
 
