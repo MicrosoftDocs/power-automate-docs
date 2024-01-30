@@ -2,16 +2,14 @@
 title: Run desktop flow actions reference
 description: See how to use the Run desktop flow actions.
 author: georgiostrantzas
-
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/24/2022
-ms.author: marleon
+ms.date: 01/30/2024
+ms.author: PetrosFeleskouras
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
-- PetrosFeleskouras
 search.audienceType: 
   - flowmaker
   - enduser
@@ -33,7 +31,7 @@ To find more information about how to use the **Run desktop flow** action, go to
 
 ## <a name="runflow"></a> Run desktop flow
 
-Runs a desktop flow that can receive input variables and may produce output variables. The parent flow run will be paused until the called desktop flow completes.
+Runs a desktop flow that can receive input variables and might produce output variables. The parent flow run will be paused until the called desktop flow completes.
 
 ### Input parameters
 

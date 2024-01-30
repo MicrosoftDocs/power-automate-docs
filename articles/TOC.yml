@@ -389,7 +389,7 @@
         href: ./desktop-flows/run-desktop-flows-via-keyboard-shortcuts.md       
       - name: Runtime notifications
         href: ./desktop-flows/runtime-notifications.md
-    - name: Run desktop flows in Picture-in-Picture
+    - name: Run desktop flows in Picture-in-Picture (preview)
       href: ./desktop-flows/run-desktop-flows-pip.md
   - name: Manage machines and machine groups
     items:
