@@ -420,6 +420,8 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
+|User data folder|N/A|Picture-in-Picture default, Browser default, Custom|Picture-in-Picture default|Specify the user data folder the browser will use when the flow runs in Picture-in-Picture. If Browser default is selected, the browser cannot be launched on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip#limitations-of-browser-automation-in-picture-in-picture)|
+|User data folder path|No|[Folder](../variable-data-types#files-and-folders)||Specify the path of the user data folder the browser will use when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip#limitations-of-browser-automation-in-picture-in-picture)|
 
 ### Variables produced
 
@@ -455,6 +457,8 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
+|User data folder|N/A|Picture-in-Picture default, Browser default, Custom|Picture-in-Picture default|Specify the user data folder the browser will use when the flow runs in Picture-in-Picture. If Browser default is selected, the browser cannot be launched on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip#limitations-of-browser-automation-in-picture-in-picture)|
+|User data folder path|No|[Folder](../variable-data-types#files-and-folders)||Specify the path of the user data folder the browser will use when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip#limitations-of-browser-automation-in-picture-in-picture)|
 
 ### Variables produced
 
@@ -490,6 +494,8 @@ Launch a new instance or attach to a running instance of Microsoft Edge for auto
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
+|User data folder|N/A|Picture-in-Picture default, Browser default, Custom|Picture-in-Picture default|Specify the user data folder the browser will use when the flow runs in Picture-in-Picture. If Browser default is selected, the browser cannot be launched on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip#limitations-of-browser-automation-in-picture-in-picture)|
+|User data folder path|No|[Folder](../variable-data-types#files-and-folders)||Specify the path of the user data folder the browser will use when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip#limitations-of-browser-automation-in-picture-in-picture)|
 
 ### Variables produced
 
