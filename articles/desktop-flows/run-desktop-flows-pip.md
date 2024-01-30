@@ -4,8 +4,8 @@ description: See how to run desktop flows in Picture-in-Picture mode.
 author: pefelesk
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 30/01/2024
-ms.author: pefelesk
+ms.date: 1/30/2024
+ms.author: PetrosFeleskouras
 ms.reviewer: 
 contributors:
 search.app: 
@@ -43,7 +43,7 @@ This attended run mode is called **Picture-in-Picture** and it is leveraging the
 
 ## Enable Picture-in-Picture on the machine
 
-To enable the Picture-in-Picture run mode on the machine, you can use either the [MSI installer](../install#install-power-automate-using-the-msi-installer) or enable manually during the first run in Picture-in-Picture.
+To enable the Picture-in-Picture run mode on the machine, you can use either the [MSI installer](install.md#install-power-automate-using-the-msi-installer) or enable manually during the first run in Picture-in-Picture.
 
 > [!IMPORTANT]
 >
@@ -51,7 +51,7 @@ To enable the Picture-in-Picture run mode on the machine, you can use either the
 
 To enable through the MSI installer, make sure the **Enable Picture-in-Picture mode** option is selected during the installation process.
 
-If you install Power Automate for desktop with [silent installation](../install-silently), Picture-in-Picture will be enabled by default on the machine. To skip the enablement of Picture-in-Picture mode, add the **-SKIPENABLEPIPMODE** argument. 
+If you install Power Automate for desktop with [silent installation](install-silently.md), Picture-in-Picture will be enabled by default on the machine. To skip the enablement of Picture-in-Picture mode, add the **-SKIPENABLEPIPMODE** argument. 
 
 ## Run a desktop flow in Picture-in-Picture
 
@@ -87,7 +87,7 @@ Two instances of a web browser (Chrome, Firefox, Edge) cannot open concurrently 
 
 If a web browser is already open on the desktop with a user data folder, then it should open in Picture-in-Picture with another user data folder. 
 
-This limitation is handled automatically with the **User data folder** parameter in the launch browser actions in the Power Automate designer. For example, [learn more about the Launch new Microsoft Edge action](../actions-reference/webautomation#launchedgebase).
+This limitation is handled automatically with the **User data folder** parameter in the launch browser actions in the Power Automate designer. For example, [learn more about the Launch new Microsoft Edge action](../webautomation.md#-launch-new-microsoft-edge).
 
 The **User data folder** parameter has the following options:
 
