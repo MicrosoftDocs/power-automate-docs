@@ -81,7 +81,7 @@ Only the [owner or co-owner](/sharepoint/dev/business-apps/power-automate/gui
 1. Select **Save**.
 1. Under **Related Resources**, do the following steps:
     1. In the **IMPORT SETUP** column, select the contents of the field for each row.
-    1. In the **Import setup** dialog, select the item if it's required to setup the flow to place a checkmark at the end of the row.
+    1. In the **Import setup** dialog, select the item if it's required to set up the flow to place a checkmark at the end of the row.
 
     :::image type="content" source="media/export-import-flow-non-solution/import-setup.svg" alt-text="<alt text>":::
 
@@ -91,7 +91,7 @@ Only the [owner or co-owner](/sharepoint/dev/business-apps/power-automate/gui
 
 ### See also
 
-- [Export a solution](export-flow-solution.md)
+- [Export a solution](export-flow-solution.md#export-a-specific-solution-cloud-flow)
 - [Import a solution](/power-automate/import-flow-solution)
 - [Share a cloud flow](/power-automate/create-team-flows)
 - [Send a copy of a cloud flow](create-team-flows.md#send-a-copy-of-a-cloud-flow)
