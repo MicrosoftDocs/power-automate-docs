@@ -20,7 +20,7 @@ search.audienceType:
 
 You can export and import non-solution flows by using packages. This feature allows you to export a flow from one environment and import it to another. Export and import packages have the file format *.zip*.
 
-To export and import solution flows, go to [Export a solution](export-flow-solution.md#export-a-specific-solution-cloud-flow).
+More information: [Export a solution](export-flow-solution.md#export-a-specific-solution-cloud-flow) and [Import a solution](/power-automate/import-flow-solution)
 
 > [!IMPORTANT]
 > - You must have [third party cookies](/troubleshoot/power-platform/power-automate/widget-cookies-pop-up-error) enabled to export and import non-solution flows .
@@ -81,15 +81,13 @@ Only the [owner or co-owner](/sharepoint/dev/business-apps/power-automate/gui
 1. Select **Save**.
 1. Under **Related Resources**, do the following steps:
     1. In the **IMPORT SETUP** column, select the contents of the field for each row.
-    1. In the **Import setup** dialog, select the item if it's required to setup the flow.
+    1. In the **Import setup** dialog, select the item if it's required to setup the flow to place a checkmark at the end of the row.
 
     :::image type="content" source="media/export-import-flow-non-solution/import-setup.svg" alt-text="<alt text>":::
 
     c. Select **Save**.
 
 1. The **Import** button becomes active once you've successfully configured all the required settings. Select **Import**.
-
-1. Once your flow is imported, turn it on and run the flow.
 
 ### See also
 
