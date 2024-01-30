@@ -1,12 +1,12 @@
 ---
 title: Run a desktop flow in Picture-in-Picture
-description: See how to run desktop flows in Picture-in-Picture mode.
+description: Learn how to run desktop flows in Picture-in-Picture mode.
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 1/30/2024
 ms.author: pefelesk
-ms.reviewer: 
+ms.reviewer: matp
 contributors:
 search.app: 
   - Flow 
@@ -88,7 +88,7 @@ Two instances of a web browser (Chrome, Firefox, or Microsoft Edge) can't open c
 
 If a web browser is already open on the desktop with a user data folder, then it should open in Picture-in-Picture with another user data folder.
 
-This limitation is handled automatically with the **User data folder** parameter in the launch browser actions in the Power Automate designer. More information: [Learn more about the Launch new Microsoft Edge action](../actions-reference/webautomation.md#-launch-new-microsoft-edge).
+This limitation is handled automatically with the **User data folder** parameter in the launch browser actions in the Power Automate designer. More information: [Launch new Microsoft Edge](actions-reference/webautomation.md#launch-new-microsoft-edge)
 
 The **User data folder** parameter has the following options:
 
@@ -119,7 +119,7 @@ If it's set to **Browser default**, the browser within the Picture-in-Picture se
 - With Windows Server, if multiple users are connected concurrently to the server, only one Picture-in-Picture session can be opened at a time.
 - The default timeout to start a process in a Picture-in-Picture is 120 seconds. If the sign in takes longer than that, a timeout error is thrown.
 - Picture-in-Picture asks for credentials every time it starts in case the following Windows policy is set to *Disabled*:
-  - Local Group Policy\Computer Configuration\Administrative Templates\System\Credential Delegation\Allow delegating default credentials
+  - `Local Group Policy\Computer Configuration\Administrative Templates\System\Credential Delegation\Allow delegating default credentials`
 - If smartcard is used to sign in to Windows, the following policy shouldn't be set to *Enabled*:
   - `Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection\Do not allow smart card device redirection`
 

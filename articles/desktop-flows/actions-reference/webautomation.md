@@ -473,7 +473,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Failed to launch Chrome|Indicates a problem launching Chrome|
 |Invalid URL|Indicates that the provided URL was invalid|
 
-## <a name="launchedgebase"></a> Launch new Microsoft Edge
+## Launch new Microsoft Edge
 
 Launch a new instance or attach to a running instance of Microsoft Edge for automating websites and web applications.
 
