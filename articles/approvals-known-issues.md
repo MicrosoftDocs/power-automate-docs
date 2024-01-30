@@ -45,11 +45,7 @@ Data templating isn't fully supported for adaptive cards in Power Automate. As a
 
 Approvals that rely on custom responses can fail if they're sent to many users with the type set to **Everyone must approve**. This failure is due to data size limitations of the results field.
 
-### Power Apps (V2) trigger doesn't support non-open API flows
-
-If you update your Power Apps version 1 trigger to the Power Apps (V2) trigger, your flow receives a connection error. To work around this issue, update your flow to the Power Apps (V2) trigger, remove and re-add the flow, and then save the app.
-
-### Update a Power Apps (V2) trigger to invoker connection
+## Update a Power Apps (V2) trigger to invoker connection
 
 The Power Apps (V2) trigger supports both embedded and invoker connections. When you update the connections in your Power Apps (V2) trigger to invoker connections, you must refresh or remove and re-add the flow in the app and save the app.
 
