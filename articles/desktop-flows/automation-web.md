@@ -5,7 +5,7 @@ author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 01/29/2024
-ms.author: marleon
+ms.author: nimoutzo
 ms.reviewer: gtrantzas
 contributors:
 - NikosMoutzourakis
