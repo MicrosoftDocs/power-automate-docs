@@ -11,7 +11,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/25/2024
+ms.date: 01/29/2024
 ms.author: kenseongtan
 ms.reviewer: gtrantzas
 contributors:
@@ -103,6 +103,9 @@ If you're the owner of the flow, or have the role System Administrator or Enviro
 The extended queue prioritization is a machine and machine group setting, which optimizes the machine-assignment logic of a run queue.
 
 Enabling this feature means that extended queue prioritization is applied on machines with multi-session support, such as Windows Server operating systems with RDS enabled. This optimizes the default run queue prioritization by extending the current first-in-first-out (FIFO) logic with user prioritization. This feature is enabled automatically when multi-session support is detected, but you can opt out at any time by disabling it.
+
+> [!NOTE]
+> This feature is currently being gradually rolled-out and might not yet be available in your region.
 
 ### With disabled extended queue prioritization
 
