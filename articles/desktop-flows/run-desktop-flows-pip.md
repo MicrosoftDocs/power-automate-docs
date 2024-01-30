@@ -65,7 +65,7 @@ Alternatively, enable the **Run in Picture-in-Picture** flow property so that th
 
 :::image type="content" source="media/run-flow-pip/console-pip-property.png" alt-text="Enable the Picture-in-Picture flow property.":::
 
-:::image type="content" source="media/run-flow-pip/console-run-pip-property.png" alt-text="Run in Picture-in-Picture through the Power Automate console.":::
+:::image type="content" source="media/run-flow-pip/console-run-pip-property.png" alt-text="Set flow property and run in Picture-in-Picture through the Power Automate console.":::
 
 Upon authenticating on the Picture-in-Picture session, the flow starts running within the Picture-in-Picture window. 
 
