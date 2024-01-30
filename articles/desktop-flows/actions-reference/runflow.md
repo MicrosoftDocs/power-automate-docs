@@ -5,7 +5,7 @@ author: georgiostrantzas
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 01/30/2024
-ms.author: PetrosFeleskouras
+ms.author: pefelesk
 ms.reviewer: gtrantzas
 contributors:
 - Yiannismavridis
