@@ -8,10 +8,11 @@ contributors:
  - ChrisGarty
  - kisubedi
  - v-aangie
+ - venessaf
 
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 07/14/2023
+ms.date: 01/31/2024
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -49,7 +50,7 @@ Follow these steps to change the owner of a flow.
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. On the menu to the left, either select **My flows**, or select **Solutions** and locate a solution the flow is referenced by.
-non-
+
 1. Select the flow for which you're changing the owner.
 
 1. In the **Details** section, select **Edit**.
