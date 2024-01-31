@@ -3,7 +3,7 @@ title: Customize or format date and time values in a flow
 description: Learn how to customize or format date and time values in a Power Automate flow.
 author: kisubedi
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.date: 04/24/2023
 ms.author: kisubedi
 ms.reviewer: v-aangie
@@ -120,9 +120,9 @@ This example walks through a simple flow that demonstrates the use of the `forma
     1. Select the **Manually trigger a flow** card.
     1. On the **Paramaters** tab, select **+ Add an input** > **Date**.
     1. In the field to the right, enter **2023-10-22**.
-    
+
         :::image type="content" source="./media/date-time-values/date.svg" alt-text="Screenshot of the date format in the Parameters tab.":::
-    
+
 1. Add the **Send an email (v2)** action.
     1. Below the **Manually trigger a flow** card, select the plus sign (**+**) > **Add an action**.
     1. In the **Search** field, start typing **Send an email (v2)** and select it from the list when you see it.
@@ -162,7 +162,7 @@ For example, to display the current time in Eastern Standard time, you can use t
 
 For more information on the date and time function, select the following articles.
 
-- [Converting time zone in Power Automate](/troubleshoot/power-platform/power-automate/converting-time-zone-power-automate)
+- [Convert a time zone](convert-time-zone.md)
 - [formatDateTime function reference](/azure/logic-apps/workflow-definition-language-functions-reference#formatdatetime)
 - [Format dates by examples](format-data-by-examples.md#format-dates-by-examples)
 
