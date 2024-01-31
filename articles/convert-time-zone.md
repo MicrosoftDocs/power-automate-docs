@@ -119,5 +119,5 @@ There might be limitations in some connectors for how the time zone displays. To
 
 ### See also
 
-- [Customize or format date and time values in a flow](date-time-values)
+- [Customize or format date and time values in a flow](date-time-values.md)
 - [Reference guide to workflow expression functions in Azure Logic Apps and Power Automate](/azure/logic-apps/workflow-definition-language-functions-reference)
