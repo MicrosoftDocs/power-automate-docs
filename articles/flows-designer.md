@@ -184,7 +184,7 @@ The cloud flows designer has smaller cards to facilitate easy navigation. It als
 ## Limitations and known issues
 
 You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following:
-- Non-Open API flows (Peek code on an action and if you see `_methods_` parameter, the flow is a non-open API flow)
+- Non-Open API flows ( If there's Peek code on an action and if you see the APIConnection value instead of OpenAPIConnection in Kind field , it's a non-Open API flow.)
 - Some hybrid triggers:
    - When a flow is run from business process flow (Dataverse)
    - For a selected message (v2 Teams)
