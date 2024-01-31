@@ -1,21 +1,23 @@
 ---
-title: Overview of the cloud flows(contains video) | Microsoft Docs
+title: Overview of the cloud flows(contains video)
 description: Get an overview of cloud flows.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-ms.reviewer: angieandres
+author: jamiemwork
+contributors:
+  - jamiemwork
+  - v-aangie
+ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 06/05/2023
-ms.author: deonhe
+ms.author: jamiller
 search.audienceType: 
   - flowmaker
   - enduser
 ---
+
 # Overview of cloud flows
 
 Create a cloud flow when you want your automation to be triggered either automatically, instantly, or via a schedule.
@@ -32,13 +34,26 @@ This video gives an overview of cloud flows.
 
 ## Find your flows easily
 
-You might have a need to find a flow within a large number of flows. Finding your flows is easy&mdash;just use the search box on the **My flows**, **Team flows**, **Connections**, or **Solutions** screen to display only flows that match the search terms you enter.
+You might have a need to find a flow within a large number of flows. Finding your flows is easy&mdash;just use the search box on the **Cloud flows**, **Desktop flows**, or **Shared with me** tab to display only flows that match the search terms you enter.
 
-![Filter or search flows.](media/overview-cloud/filter-search-box.png)
- 
+:::image type="content" source="media/overview-cloud/filter-search-box.svg" alt-text="Screenshot of the 'Search' field on the 'Flows' page.":::
+
+lkajf ;likzj ;likj ;alikjfd la;sijkf.
+
 > [!NOTE]
-> The search filter only finds flows that have been loaded into the page. If you don't find your flow, try selecting **Load more** at the bottom of the page.
-If you're ready to start your Power Automate project, go to [Introduction: Planning a Power Automate project](./guidance/planning/introduction.md) to get up and running quickly.
+> - The search filter finds only flows that have been loaded into the page. If you don't find your flow, try selecting **Load more** at the bottom of the page.
+> - If you're ready to start your Power Automate project, go to [Introduction: Planning a Power Automate project](./guidance/planning/introduction.md) to get up and running quickly.
+
+## Scenarios for why you want to find a flow
+
+If you can't find your flow, try one of the options in the following table.
+
+|Scenario  |Solution  |
+|---------|---------|
+|The flow might be in a different environment.      | To change environments, go to [Environment information and settings](getting-started#3--environment-information-and-settings).      |
+|If the flow was shared, check the **Shared with me** tab in **My Flows**.     | Go to [Find your flows easily](#find-your-flows-easily).        |
+| You might have been removed as an owner of the flow.    |  Contact the flow owner to be re-added. To find out if you’re an owner of the flow, go to [Remove an owner](create-team-flows#remove-an-owner).       |
+| The flow might have been deleted.     | To restore the flow, go to [Restore deleted flows](how-tos-restore-deleted-flow.md).        |
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
