@@ -38,20 +38,17 @@ You might have a need to find a flow within a large number of flows. Finding you
 
 :::image type="content" source="media/overview-cloud/filter-search-box.svg" alt-text="Screenshot of the 'Search' field on the 'Flows' page.":::
 
-lkajf ;likzj ;likj ;alikjfd la;sijkf.
-
 > [!NOTE]
-> - The search filter finds only flows that have been loaded into the page. If you don't find your flow, try selecting **Load more** at the bottom of the page.
-> - If you're ready to start your Power Automate project, go to [Introduction: Planning a Power Automate project](./guidance/planning/introduction.md) to get up and running quickly.
+> The search filter finds only flows that have been loaded into the page. If you don't find your flow, try selecting **Load more** at the bottom of the page.
 
-## Scenarios for why you want to find a flow
+## More options to find your flow
 
 If you can't find your flow, try one of the options in the following table.
 
 |Scenario  |Solution  |
 |---------|---------|
 |The flow might be in a different environment.      | To change environments, go to [Environment information and settings](getting-started.md#3--environment-information-and-settings).      |
-|If the flow was shared, check the **Shared with me** tab in **My Flows**.     | Go to [Find your flows easily](#find-your-flows-easily).        |
+|The flow was shared.   | Check the **Shared with me** tab in **My Flows** menu option. (For an example, refer to the screenshot in [Find your flows easily](#find-your-flows-easily) in this article.)       |
 | You might have been removed as an owner of the flow.    |  Contact the flow owner to be re-added. To find out if you’re an owner of the flow, go to [Remove an owner](create-team-flows.md#remove-an-owner).       |
 | The flow might have been deleted.     | To restore the flow, go to [Restore deleted flows](how-tos-restore-deleted-flow.md).        |
 
