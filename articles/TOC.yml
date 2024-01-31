@@ -81,6 +81,8 @@
       href: data-operations.md
     - name: Customize or format date and time values in a flow
       href: date-time-values.md
+    - name: Convert a time zone
+      href: convert-time-zone.md
     - name: Use expressions in conditions
       href: use-expressions-in-conditions.md
     - name: Store and manage values in variables
