@@ -52,7 +52,7 @@ If you can't find your flow, try one of the options in the following table.
 |---------|---------|
 |The flow might be in a different environment.      | To change environments, go to [Environment information and settings](getting-started.md#3--environment-information-and-settings).      |
 |If the flow was shared, check the **Shared with me** tab in **My Flows**.     | Go to [Find your flows easily](#find-your-flows-easily).        |
-| You might have been removed as an owner of the flow.    |  Contact the flow owner to be re-added. To find out if you’re an owner of the flow, go to [Remove an owner](create-team-flows#remove-an-owner.md).       |
+| You might have been removed as an owner of the flow.    |  Contact the flow owner to be re-added. To find out if you’re an owner of the flow, go to [Remove an owner](create-team-flows.md#remove-an-owner).       |
 | The flow might have been deleted.     | To restore the flow, go to [Restore deleted flows](how-tos-restore-deleted-flow.md).        |
 
 
