@@ -102,8 +102,6 @@ The following terms are commonly used in Power Automate.
 
 **Robotic Process Automation (RPA):** Automation using a software application that replicates the actions of a human being interacting with the user interface of a computer system.
 
- [Use Softomotive's WinAutomation with UI flows](desktop-flows/create-processes.md)
-
 ## S
 
 **Scheduled flows:** Scheduled flows run on a schedule defined by the maker. Scheduled flows can repeat on the following cadences: every second, minute, hour, day, week, and/or month. For example, users can schedule an automation such as daily data upload to SharePoint or a database.

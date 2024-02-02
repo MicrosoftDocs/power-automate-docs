@@ -22,8 +22,6 @@ search.audienceType:
 > [!IMPORTANT]
 > - Effective November 3 2023, the Process migrator for Softomotive products (preview) will be deprecated. “Deprecated” means we intend to remove the feature or capability from a future release. The feature or capability will continue to work until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan, migrate and update your code before the feature or capability is removed.
 > - You may migrate your flows to Power Automate until the deprecation date of the Process migrator for Softomotive products. 
-> - Effective January 1 2022, WinAutomation and ProcessRobot are no longer supported. [Learn more](/previous-versions/troubleshoot/winautomation/softomotive-useful-information/softomotive-products-end-of-support-announcement)
-
 
 Process migrator for Softomotive products (preview) enables users to convert automations into desktop flows for use in Power Automate.
 
@@ -37,14 +35,6 @@ Some actions have been deprecated because they don't fit into the Power Platform
 ## Prerequisites
 
 For Process migrator for Softomotive products (preview) to be able to install and function as expected, the following Prerequisites are needed: 
-
-WinAutomation users: 
-
- - The latest publicly available version of Power Automate for desktop installed
- - WinAutomation installed (v6 and later) 
- - Access to a Power Automate environment 
-
-ProcessRobot users: 
 
  - The latest publicly available version of Power Automate for desktop installed 
  - Access to a Power Automate environment. Follow the get started documentation if you haven't already provisioned an environment 
@@ -86,27 +76,6 @@ Now, you can run the Process migrator for Softomotive products (preview).
 1. Select the Softomotive product from which you want to migrate processes. 
 
     ![Screenshot of the product selection dialog.](media/migrator/Login_App_Selection_Screen_PR.png)
-
-### Migrating WinAutomation processes to Power Automate
-
-1. If you use a WinAutomation version later than 9, you'll be prompted to enter your WinAutomation master key. This key is required for the migration of passwords inside encrypted processes. 
-    
-    If you omit to enter your WinAutomation master key, the migration of the processes will proceed, but the password values won’t be migrated.
-
-   ![Screenshot of the master key field.](media/migrator/Login_App_Selection_Screen.png)
-
-1. After entering your master key, the application will retrieve all the processes located on your machine. 
-
-    > [!NOTE]
-    > Some delay might be expected after this step, but the application is successfully operating in the background. 
-
-    When the process retrieving is completed, choose the processes to migrate and the Power Automate environment that will store them. The default environment is pre-selected. 
- 
-    ![Screenshot of the available processes.](media/migrator/migrator_7.png)   
-
-1. If you choose to migrate a password-protected process, you'll be prompted to enter the password you used to encrypt it. If you choose to skip entering the requisite password, the migration of the respective process will be omitted.
-
-    ![Screenshot of the password field to migrate a password-protected process.](media/migrator/migrator_7a.png)    
 
 ### Migrating PorcessRobot processes to Power Automate
 
@@ -152,10 +121,6 @@ Now, you can run the Process migrator for Softomotive products (preview).
 
     > [!TIP]
     > Running the Process migrator for Softomotive products (preview) will be paused once an encrypted process has been encountered, waiting for the password to be inserted by the user. It's advised to group processes based on whether they are encrypted or not. This way, unencrypted processes will be migrated without supervision and the encrypted ones will have the required user attendance.  
-
-    > [!NOTE]
-    > - Migrated WinAutomation or ProcessRobot processes will have the following format when uploaded as desktop flows (ProcessRobot users can substitute use of WA and WinAutomation to PR and ProcessRobot respectively): WA_{Name of WinAutomation}, ,  process (folder path inside WinAutomation). For example, if you migrate the 05 - Copy File WinAutomation process that resides under the path “MyProcesses/Examples/01 - Beginner”, the resulting desktop flow will be named WA_05 Copy File (Examples/01 - Beginner). 
-    > - If you try to migrate a process and the resulting desktop flow name duplicates the name of an already existing desktop flow in the environment you chose, the later desktop flow will be saved with a name following the format WA_{Name of WinAutomation} (X) process (folder path inside WinAutomation), where X is an increasing number. For example, if you migrate the 05 - Copy File WinAutomation process that resides under the path “MyProcesses/Examples/01 - Beginner” and there happens to be a desktop flow in your environment of choice, having the same name, the resulting desktop flow will be named WA_05 Copy File (1) (Examples/01 - Beginner). 
 
 ## Reconfiguring ProcessRobot console features in Power Automate 
 
@@ -230,7 +195,7 @@ Not supported.  Not on roadmap.
 
 ### Non-migratable actions 
 
-The following WinAutomation and ProcessRobot actions won't be migrated from the processes to the respective UI Flows.  
+The following ProcessRobot actions won't be migrated from the processes to the respective UI Flows.  
 
 - All Ancora actions 
 - All CaptureFast actions 
@@ -242,7 +207,6 @@ The following WinAutomation and ProcessRobot actions won't be migrated from the 
 - Message Boxes > Display Custom Dialog 
 - PDF Actions > Extract Text From PDF With OCR 
 - All Synchronization Actions (group of actions) 
-- All WinAutomation Actions (group of actions) 
 
 ### Partially migratable actions 
 
