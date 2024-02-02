@@ -62,6 +62,9 @@ UI elements captured on the physical device are located under the **Computer** p
 
 :::image type="content" source="media\virtual-desktops\ui-elements-rdp.png" alt-text="Screenshot of some UI elements captured on an RDP virtual desktop.":::
 
+> [!NOTE]
+> When you capture a UI element in a virtual desktop, virtual app or RemoteApp, it is linked to the details(IP, Name, etc.) of the machine at the time of capture. If you want to interact with the same UI element on a different machine, you will need to capture it again on that machine.
+
 ## Known issues and limitations
 
 - **Issue:** Virtual desktop automation is available only in Windows RDP, RemoteApp, Citrix Desktop, and Citrix Virtual Apps. Other virtual desktop platforms aren't supported.
