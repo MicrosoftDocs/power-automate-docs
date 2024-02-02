@@ -18,7 +18,6 @@ search.audienceType:
 # Process migrator for Softomotive products (preview)
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-<!-- ProcessRobot users are now able to export .prp files into folders and --> 
 > [!IMPORTANT]
 > - Effective November 3 2023, the Process migrator for Softomotive products (preview) will be deprecated. “Deprecated” means we intend to remove the feature or capability from a future release. The feature or capability will continue to work until it is officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan, migrate and update your code before the feature or capability is removed.
 > - You may migrate your flows to Power Automate until the deprecation date of the Process migrator for Softomotive products. 
@@ -38,7 +37,6 @@ For Process migrator for Softomotive products (preview) to be able to install an
 
  - The latest publicly available version of Power Automate for desktop installed 
  - Access to a Power Automate environment. Follow the get started documentation if you haven't already provisioned an environment 
- - Exported ProcessRobot process files (.prp) into a folder on the same machine as the migration utility and Power Automate for desktop 
 
 
 ## Installing Process migrator for Softomotive products (preview) 
@@ -77,23 +75,6 @@ Now, you can run the Process migrator for Softomotive products (preview).
 
     ![Screenshot of the product selection dialog.](media/migrator/Login_App_Selection_Screen_PR.png)
 
-### Migrating PorcessRobot processes to Power Automate
-
-1. If you choose to migrate ProcessRobot processes, you'll be prompted to select the folder containing the exported .prp (ProcessRobot Process) files. 
-
-    ![Screenshot of the dialog to select the folder containing the exported process file.](media/migrator/Browse_To_Folder.png)
-
-1. After selecting the folder, you'll be able to select the processes you want to convert.  
-
-    ![Screenshot of the available processes to select.](media/migrator/PRP_Selection.png)
-
-1. If you've exported the .prp files from the **History** tab in Process Designer and have chosen **Selected versions only**, the migrator will convert one version of the process. 
-
-    Exporting the .prp files without limiting to a single version will result in all previous versions being migrated.
-
-    ![Screenshot of the Selected version only option in the History tab.](media/migrator/ExportSelectVersion.png)
-
-
 ### Completing migration and accessing the migrated processes
 
 1. During the migration, a dialog will display information about the current state of the migration and a progress bar.
@@ -122,133 +103,4 @@ Now, you can run the Process migrator for Softomotive products (preview).
     > [!TIP]
     > Running the Process migrator for Softomotive products (preview) will be paused once an encrypted process has been encountered, waiting for the password to be inserted by the user. It's advised to group processes based on whether they are encrypted or not. This way, unencrypted processes will be migrated without supervision and the encrypted ones will have the required user attendance.  
 
-## Reconfiguring ProcessRobot console features in Power Automate 
-
-### ProcessRobot Control Desk – Redeploying in Power Automate 
-
-Power Automate and ProcessRobot behave differently at their core, so there will be a requirement to reconfigure administrative and orchestration features.  Some of your converted desktop flows may also require modification depending on the actions used within the processes.  The [Power Automate Learning Resources Blog](https://make.powerautomate.com/blog/power-automate-learning-resources/) is a repository of useful links for a good overview as well as detailed explanations on how to use the Power Platform for your needs. 
-
-The Power Platform Admin Center (PPAC) by default contains information related to your RPA environment that admins are accustomed to seeing in Control Desk, including cloud flow activity, desktop flow run activity, desktop flow queue monitoring and more.  PPAC also enables users to create cloud flows that can incorporate schedules, triggers, run desktop flows and reach all other Power Automate components you have access to. 
-
-If you are new to the Power Platform, it is recommended that administrators complete the [Admin In A Day](https://github.com/microsoft/powerapps-tools/tree/master/Administration/AdminInADay) workshop to better understand PPAC in addition to the [ALM hands on lab](/power-platform/alm/devops-build-tools#frequently-asked-questions-faqs) since this is the current recommended approach to manage desktop flow versions and application lifecycle management.  Citizen Devs are encouraged to participate in the [RPA In a Day](https://make.powerautomate.com/blog/announcing-microsoft-rpa-in-a-day-version-2/) tutorials that help build a solid foundation across the entire stack. 
-
-Apart from the extensive set of features preconfigured into PPAC – the [CoE Power BI Dashboard](/power-platform/guidance/coe/power-bi) far exceeds the capability of ProcessRobot Dashboards and the [core components of the CoE](/power-platform/guidance/coe/setup-core-components) are available for all Power Automate users. The CoE starter kit provides a solid foundation to build insightful dashboards that can be modified to your organizations needs throughout their RPA journey.  
-
-### Workarounds for unsupported ProcessRobot Process Studio features 
-
-
-#### User Libraries: 
-
-User Libraries are not supported in Power Automate desktop flows.  If your process contains a call to a user library, it is recommended the associated user library actions are copied into your desktop flow otherwise they will not be migrated using the Process Migrator for Softomotive Products.  The ‘Start Process’ action from ProcessRobot is on the roadmap to be reintroduced as ‘Run Flow’ in a future release.  This will simplify management of former User Libraries since the parent flow can call the child, wait for the child to complete its task, and send back supported variable types to the parent flow. 
-
-
-#### Process Robot Actions: 
-
-**Start Process**
-
-Not supported but is currently on the roadmap to be modified and reintroduced. In some instances, for the meanwhile you may be able to work around this limitation by setting up a Cloud Flow to execute process B once process A has stopped running and pass input variables to process B from process A. 
-
-**Get Process Path** 
-
-Not supported, not on the roadmap. 
-
-**Log Message** 
-
-Not supported by the migration tool but is currently on the roadmap to be modified and reintroduced. 
-
-**Update KPI** 
-
-Not supported by the migration tool.  Administrators can apply a workaround in the CoE to calculate KPIs 
-
-**Get Global Variable / Set Global Variable** 
-
-Not supported by the migration tool.  Possible workarounds include the ability to [create and manage tables in Dataverse](/training/modules/create-manage-entities/) create a cloud flow that calls for a global variable (Get Global Variable), passes it to a desktop flow for consumption, then have an output variable from the desktop flow passed back to the Dataverse table if needed (Set Global Variable). 
-
-**Enter Locked Region** 
-
-Not supported by the migration tool.  
-
-**Exit Locked Region** 
-
-Not supported by the migration tool. 
-
-**Add Queue Item in Queue** 
-
-Not supported by migration tool. Review [Monitor desktop flow queues](monitor-desktop-flow-queues.md) for information on queue functionality in Power Automate.  Other possible workarounds include the ability to [create and manage tables in Dataverse](/training/modules/create-manage-entities/) where cloud flow monitors, schedules, or triggers can be used to load data. 
-
-**Get Queue Item in Queue** 
-
-Not supported in migration. Possible workarounds include creating a Cloud Flow to trigger an event [when a row is added, modified, or deleted](/connectors/commondataserviceforapps/#when-a-row-is-added%2c-modified-or-deleted)  in a Dataverse table. 
-
-**Get Credential** 
-
-Not supported in migration.  Workarounds include [using sensitive text in power automate desktop with Azure Key Vault](https://powerusers.microsoft.com/t5/Webinars-and-Video-Gallery/Using-Sensitive-Text-In-Power-Automate-Desktop-Azure-Key-Vault/td-p/790556). 
-
-**Update Credential** 
-
-Not supported in migration.  Workarounds include [updating a secret using an API](/rest/api/keyvault/secrets/update-secret/update-secret). 
-
-**Display Notification** 
-
-Not supported.  Not on roadmap. 
-
-
-### Non-migratable actions 
-
-The following ProcessRobot actions won't be migrated from the processes to the respective UI Flows.  
-
-- All Ancora actions 
-- All CaptureFast actions 
-- Cognitive > Google > Vision > Face Detection 
-- Cognitive > IBM > Visual Recognition > Detect Faces 
-- Cognitive > Microsoft > Face > Detect Face 
-- Cognitive > Microsoft > Face > Find Similar Face 
-- Message Boxes > Display Notification 
-- Message Boxes > Display Custom Dialog 
-- PDF Actions > Extract Text From PDF With OCR 
-- All Synchronization Actions (group of actions) 
-
-### Partially migratable actions 
-
-The following actions will be migrated from the processes to the respective desktop flows. However, one or more of their parameters won't be transferred at all or with the same value. Some cases might be handled by applying manual rework in the designer. 
-
-- Azure: Create Azure Session 
-    - Non-migratable Properties: Username, Password (for option Authentication Type: With Service Principal) 
-    - Missing properties: Client Secret (for option Authentication Type: With User) 
-- Azure: Create Azure Managed Disk 
-    - Missing properties: Storage Account Name 
-- Compression: Unzip Files 
-    - Non-migratable Properties: Include Mask, Exclude Mask, Include Subfolders 
-- Cognitive: Classify Image IBM 
-    - Missing properties: Location, Instance ID 
-- Cognitive: Analyze Tone IBM 
-    - Non-migratable Properties: Username, Password 
-    - Missing properties: API key, Location, Instance ID 
-- Cognitive: Translate IBM 
-    - Non-migratable Properties: Username, Password 
-    - Missing properties: API key, Location, Instance ID, Version Date 
-- Cognitive: Identify Language IBM
-    - Non-migratable Properties: Username, Password 
-    - Missing properties: API key, Location, Instance ID, Version Date 
-- Cognitive: Detect Language Microsoft 
-    - Non-migratable Properties: Number Of Languages To Detect 
-- Cryptography: Encrypt Text  
-    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
-- Cryptography: Decrypt Text  
-    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
-- Cryptography: Encrypt From File  
-    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
-- Cryptography: Decrypt To File  
-    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
-- Cryptography: Hash Text  
-    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
-- Cryptography: Hash From File  
-    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
-- Cryptography: Hash Text With Key  
-    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
-- Cryptography: Hash From File  With Key 
-    - Non-migratable if Encryption Algorithm is NOT EQUAL to AES & Cipher Mode is NOT EQUAL to CBC 
-- Mouse and Keyboard: Move Mouse 
-    - Non-migratable for option 'Move mouse to recorded positions' 
---->
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
