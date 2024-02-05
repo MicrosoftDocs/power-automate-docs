@@ -1,5 +1,6 @@
 ---
 title: "Overview of classic Dataverse background workflows | MicrosoftDocs"
+description: "Learn about how to run classic Dataverse background workflows."
 ms.custom: ""
 ms.date: 07/27/2020
 ms.reviewer: "angieandrews"
