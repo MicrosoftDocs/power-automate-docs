@@ -1,8 +1,7 @@
 # Lines starting with '#' are comments.
 # Each line is a file pattern followed by one or more owners.
 
-/articles                             @tapanm-MSFT
-/articles/*                           @v-aangie
+/articles/*                           @tapanm-MSFT @v-aangie
 /articles/dataverse                   @tapanm-MSFT @v-aangie
 /articles/desktop-flows               @tapanm-MSFT @mattp123
 /articles/developer                   @tapanm-MSFT @v-aangie
