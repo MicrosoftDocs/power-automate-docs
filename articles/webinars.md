@@ -6,8 +6,8 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.custom: 
 ms.date: 04/28/2022
-ms.author: kvivek
-ms.reviewer: kvivek
+ms.author: angieandrews
+ms.reviewer: angieandrews
 ---
 # Power Automate webinars
 

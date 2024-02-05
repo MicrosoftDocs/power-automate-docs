@@ -1,12 +1,12 @@
 ---
 title: Browser automation actions reference
 description: See all the available browser automation actions.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 01/30/2024
 ms.author: nimoutzo
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

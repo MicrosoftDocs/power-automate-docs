@@ -4,7 +4,7 @@ description: Learn how to create an approval from the approvals app in Teams.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 contributors:
   - kewaiss
   - v-aangie

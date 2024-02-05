@@ -1,10 +1,10 @@
 ---
 title: Administrators learning catalog
 description: Find all the training options for Power Automate.
-author: msftman
+author: v-aangie
 ms.topic: article
 ms.date: 03/21/2020
-ms.author: deonhe
+ms.author: angieandrews
 
 ---
 

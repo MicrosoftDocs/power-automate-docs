@@ -4,17 +4,16 @@ description: Create an adaptive card that collects acronyms and stores them in D
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
-ms.reviewer: gtrantzas
-ms.devlang: na
+ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/04/2020
-ms.author: deonhe
+ms.author: angieandrews
 ---
 
 # Acronyms form sample
