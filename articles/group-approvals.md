@@ -14,7 +14,6 @@ ms.author: napienko
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
-ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na

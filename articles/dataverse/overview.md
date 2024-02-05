@@ -10,7 +10,6 @@ ms.reviewer: angieandrews
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na

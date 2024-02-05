@@ -7,7 +7,6 @@ documentationcenter: na
 author: v-aangie
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: teams
 ms.topic: conceptual
 ms.tgt_pltfrm: na

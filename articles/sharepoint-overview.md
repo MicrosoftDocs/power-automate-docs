@@ -7,7 +7,6 @@ documentationcenter: na
 author: v-aangie
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na

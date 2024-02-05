@@ -8,7 +8,6 @@ author: v-aangie
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na

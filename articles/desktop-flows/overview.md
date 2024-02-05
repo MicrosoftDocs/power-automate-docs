@@ -8,7 +8,6 @@ author: v-aangie
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
