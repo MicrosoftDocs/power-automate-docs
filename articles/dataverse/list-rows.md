@@ -1,7 +1,7 @@
 ---
 title: Use lists of rows in flows
 description: Learn how to use flows to work with lists of rows from Microsoft Dataverse.
-author: MSFTMAN
+author: v-aangie
 ms.author: Matow
 ms.reviewer: angieandrews
 ms.topic: conceptual

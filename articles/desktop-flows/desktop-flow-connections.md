@@ -1,12 +1,12 @@
 ---
 title: Create desktop flow connections
 description: See how to create connections to trigger desktop flows from cloud flows.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 12/21/2023
 ms.author: pefelesk
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker

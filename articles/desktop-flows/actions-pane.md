@@ -1,12 +1,12 @@
 ---
 title: Configure actions and the actions pane
 description: This section shows how to use the actions pane to deploy actions in the flow designer.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 01/16/2024
 ms.author: iomavrid
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 ms.collection: bap-ai-copilot
 contributors:
 search.audienceType: 
