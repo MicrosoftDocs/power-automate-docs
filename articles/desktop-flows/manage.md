@@ -4,7 +4,7 @@ description: Learn how to manage desktop flows in the Power Automate portal.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/20/2023
+ms.date: 02/05/2024
 ms.author: appapaio
 ms.reviewer: matp
 contributor:
@@ -73,6 +73,7 @@ Follow these steps to share a desktop flow:
 >
 > Once a desktop flow has been shared, owners and co-owners can change the access of each user by selecting **Manage access** on the desktop flow details page.
 > If someone shares a desktop flow with you, select the refresh button to see it in the **Shared with me** flows list.
+> After you share a desktop flow with new co-owners, the co-owners see all the desktop runs that happen in the future. However those co-owners don't see the desktop flows already completed before sharing.
 
 ## Reassign desktop flows
 
