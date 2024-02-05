@@ -1,12 +1,12 @@
 ---
 title: Run desktop flows sequentially
 description: See how to run multiple desktop flows on the same machine sequentially.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 02/15/2023
 ms.author: pefelesk
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker

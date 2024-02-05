@@ -4,7 +4,7 @@ description: Monitor desktop flow queues
 services: ''
 suite: flow
 documentationcenter: na
-author: georgiostrantzas
+author: mattp123
 editor: ''
 tags: ''
 ms.subservice: desktop-flow
@@ -13,7 +13,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/29/2024
 ms.author: kenseongtan
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

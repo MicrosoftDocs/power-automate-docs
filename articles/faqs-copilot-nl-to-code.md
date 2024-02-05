@@ -7,7 +7,7 @@ ms.custom:
 ms.topic: conceptual
 author: Cochamos
 ms.author: cochamos
-ms.reviewer: matp
+ms.reviewer: angieandrews
 ms.collection: 
     - bap-ai-copilot
 ---

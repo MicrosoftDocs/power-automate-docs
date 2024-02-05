@@ -4,7 +4,7 @@ description: Learn how to create flows using the Workflows app in Microsoft Team
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 contributors:
   - kewaiss
   - v-aangie
