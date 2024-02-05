@@ -44,15 +44,18 @@ This attended run mode is called Picture-in-Picture and uses the [Child Sessions
 
 ## Enable Picture-in-Picture on the machine
 
-To enable the Picture-in-Picture run mode on the machine, use either the [MSI installer](install.md#install-power-automate-using-the-msi-installer) or enable manually during the first run in Picture-in-Picture.
+To enable the Picture-in-Picture run mode on the machine, follow one of the methods as described below.
 
 > [!IMPORTANT]
 >
-> Administrator rights on the local machine are required to manually enable Picture-in-Picture on the first desktop flow run.
+> Administrator rights on the local machine are required for all methods.
 
-To enable through the MSI installer, make sure the **Enable Picture-in-Picture mode** option is selected during the installation process.
-
-If you install Power Automate for desktop with [silent installation](install-silently.md), Picture-in-Picture is enabled by default on the machine. To skip the enablement of Picture-in-Picture mode, add the **-SKIPENABLEPIPMODE** argument. More information: [Command line arguments](install-silently.md#command-line-arguments)
+|Method|Description|
+|----|----|
+| Manually | Run a desktop flow in Picture-in-Picture mode on the machine. You will be asked to enable the feature. |
+| MSI installer | Install Power Automate with the [MSI installer](install.md#install-power-automate-using-the-msi-installer) and select the **Enable Picture-in-Picture mode** option during the installation process. |
+| Silent installation | Install Power Automate with [silent installation](install-silently.md). During silent installation, Picture-in-Picture is enabled by default on the machine. To skip the enablement add the **-SKIPENABLEPIPMODE** argument. More information: [Command line arguments](install-silently.md#command-line-arguments) |
+| Command | Update an existing installation and enable or disable the Picture-in-Picture run mode on the machine with a command. Open the **Start** menu, search for **Command Prompt**, and then run it as administrator. Navigate to the installation directory of Power Automate, by default ```cd C:\Program Files (x86)\Power Automate Desktop``` and run the command ```PAD.ChildSession.Installer.Host.exe``` to enable Picture-in-Picture or ```PAD.ChildSession.Installer.Host.exe -d``` to disable it.
 
 ## Run a desktop flow in Picture-in-Picture
 
@@ -86,7 +89,7 @@ To enable the Picture-in-Picture run mode in the designer, select **Debug** > **
 
 Two instances of a web browser (Chrome, Firefox, or Microsoft Edge) can't open concurrently with the same user data folder in both main and Picture-in-Picture sessions.
 
-If a web browser is already open on the desktop with a user data folder, then it should open in Picture-in-Picture with another user data folder.
+If a web browser is already open on the desktop with a user data folder, then it should open in Picture-in-Picture with another user data folder, and vice versa.
 
 This limitation is handled automatically with the **User data folder** parameter in the launch browser actions in the Power Automate designer. More information: [Launch new Microsoft Edge](actions-reference/webautomation.md#launch-new-microsoft-edge)
 
@@ -120,7 +123,7 @@ If it's set to **Browser default**, the browser within the Picture-in-Picture se
 - The default timeout to start a process in a Picture-in-Picture is 120 seconds. If the sign in takes longer than that, a timeout error is thrown.
 - Picture-in-Picture asks for credentials every time it starts in case the following Windows policy is set to *Disabled*:
   - `Local Group Policy\Computer Configuration\Administrative Templates\System\Credential Delegation\Allow delegating default credentials`
-- If smartcard is used to sign in to Windows, the following policy shouldn't be set to *Enabled*:
+- If smartcard is used to sign in to Windows, the following policy should be set to *Not Configured* or *Disabled*:
   - `Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection\Do not allow smart card device redirection`
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
