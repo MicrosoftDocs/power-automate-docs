@@ -4,7 +4,7 @@ description: Learn how to trigger flows when a Dataverse action is executed.
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
+author: v-aangie
 ms.author: Matow
 ms.reviewer: angieandrews
 editor: ''

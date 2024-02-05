@@ -4,7 +4,7 @@ description: Use Dataverse-based flows in Power Apps.
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMan
+author: v-aangie
 ms.reviewer: angieandrews
 editor: ''
 tags: ''

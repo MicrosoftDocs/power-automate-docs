@@ -14,7 +14,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/25/2021
 ms.author: kathyos
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 ---
 
 # Conclusion of RPA Playbook for SAP GUI automation tutorial with Power Automate 

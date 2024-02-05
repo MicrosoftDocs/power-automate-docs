@@ -4,7 +4,7 @@ description: Expand a cloud flow to include an advanced option, such as how to a
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
 ms.devlang: na
@@ -13,7 +13,7 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/14/2022
-ms.author: deonhe
+ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

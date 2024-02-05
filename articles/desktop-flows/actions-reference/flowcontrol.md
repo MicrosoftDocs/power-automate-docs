@@ -1,12 +1,12 @@
 ---
 title: Flow control actions reference
 description: Learn about the available flow control actions in desktop flows.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 02/08/2023
 ms.author: marleon
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 search.audienceType: 

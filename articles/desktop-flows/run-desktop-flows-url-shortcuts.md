@@ -1,12 +1,12 @@
 ---
 title: Run desktop flows via URL or desktop shortcuts
 description: See how to run desktop flows via URL or desktop shortcuts.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 11/28/2023
 ms.author: pefelesk
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker

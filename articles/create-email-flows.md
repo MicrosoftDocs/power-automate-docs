@@ -4,7 +4,7 @@ description: Create flows to manage email.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
 ms.devlang: na
@@ -13,8 +13,8 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/24/2022
-ms.author: deonhe
-ms.reviewer: gtrantzas
+ms.author: angieandrews
+ms.reviewer: matp
 search.audienceType: 
   - flowmaker
   - enduser

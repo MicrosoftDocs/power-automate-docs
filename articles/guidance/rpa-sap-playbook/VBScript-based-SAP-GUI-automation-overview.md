@@ -13,7 +13,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/01/2021
 ms.author: kathyos
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 ---
 
 # Pro-code RPA with SAP GUI in Power Automate Desktop 

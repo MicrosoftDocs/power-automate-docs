@@ -4,7 +4,7 @@ description: "Learn how to use flows to add relationships and remove relationshi
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
+author: v-aangie
 ms.author: Matow
 ms.reviewer: angieandrews
 editor: ''

@@ -1,12 +1,12 @@
 ---
 title: Desktop flow activity 
 description: Learn to use the Desktop flow activity in the Power Automate portal.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 08/29/2023
 ms.author: quseleba
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 search.audienceType: 
   - flowmaker
   - enduser

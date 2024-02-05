@@ -3,7 +3,7 @@ title: Manage sequential approvals with Power Automate
 description: Learn how to create a modern approval workflow with multiple approvers.
 services: ''
 suite: flow
-author: MSFTMan
+author: v-aangie
 contributors:
   - hamenon-MS
 ms.subservice: cloud-flow

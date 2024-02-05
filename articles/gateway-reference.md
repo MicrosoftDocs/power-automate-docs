@@ -4,7 +4,7 @@ description: This article is an overview of the on-premises data gateway for Pow
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMan
+author: v-aangie
 editor: ''
 tags: ''
 
@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/16/2019
-ms.author: deonhe
+ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

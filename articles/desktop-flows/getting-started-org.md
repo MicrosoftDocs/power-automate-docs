@@ -1,13 +1,13 @@
 ---
 title: Get started with an organization premium account
 description: Get started with Power Automate desktop flows using an organization premium account.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 02/17/2023
 ms.collection: get-started
 ms.author: marleon
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

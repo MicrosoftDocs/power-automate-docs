@@ -4,7 +4,7 @@ description: Use a mobile device to approve requests created in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
 
@@ -14,8 +14,8 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/20/2017
-ms.author: deonhe
-ms.reviewer: gtrantzas
+ms.author: angieandrews
+ms.reviewer: matp
 search.audienceType: 
   - flowmaker
   - enduser

@@ -4,7 +4,7 @@ description: Create a parallel modern approval workflow
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMan
+author: v-aangie
 editor: ''
 tags: ''
 
@@ -14,8 +14,8 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/07/2020
-ms.author: deonhe
-ms.reviewer: gtrantzas
+ms.author: angieandrews
+ms.reviewer: matp
 search.audienceType: 
   - flowmaker
   - enduser

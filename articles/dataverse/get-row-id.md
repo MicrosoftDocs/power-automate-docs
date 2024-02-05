@@ -4,7 +4,7 @@ description: "Learn how to get a row from Microsoft Dataverse when the row ID is
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
+author: v-aangie
 ms.author: Matow
 ms.reviewer: angieandrews
 editor: ''

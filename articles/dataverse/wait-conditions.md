@@ -4,7 +4,7 @@ description: Use wait conditions to delay your flows until specific conditions a
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMan
+author: v-aangie
 editor: ''
 tags: ''
 

@@ -4,7 +4,7 @@ description: Learn about the resources available in Power Automate to help you m
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
+author: v-aangie
 ms.author: angieandrews
 ms.reviewer: angieandrews
 editor: ''

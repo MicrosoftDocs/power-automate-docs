@@ -1,12 +1,12 @@
 ---
 title: Text actions reference
 description: See all the available text actions.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 01/11/2024
 ms.author: matp
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - jpapadimitriou
 - Yiannismavridis

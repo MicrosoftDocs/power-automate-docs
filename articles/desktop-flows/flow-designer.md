@@ -1,13 +1,13 @@
 ---
 title: Flow designer
 description: Introduction to Power Automate flow designer
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 09/22/2020
 ms.author: marleon
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

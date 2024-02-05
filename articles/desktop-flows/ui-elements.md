@@ -1,12 +1,12 @@
 ---
 title: Automate using UI elements
 description: Learn how to capture UI elements in your desktop flows.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 12/20/2023
 ms.author: nimoutzo
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

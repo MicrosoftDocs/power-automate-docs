@@ -4,7 +4,7 @@ description: An Adaptive Card input form that's designed for submitting polls to
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
 
@@ -14,11 +14,11 @@ ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/01/2020
-ms.author: deonhe
+ms.author: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 ---
 # Create a poll sample
 

@@ -1,13 +1,13 @@
 ---
 title: Exchange Server actions reference
 description: See all the available Exchange Server actions.
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 10/24/2023
 ms.author: marleon
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

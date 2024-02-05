@@ -4,7 +4,7 @@ description:  Migrate from Windows recorder (V1) to Power Automate for desktop.
 services: ''
 suite: flow
 documentationcenter: na
-author: georgiostrantzas
+author: mattp123
 editor: ''
 tags: ''
 
@@ -15,7 +15,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/24/2023
 ms.author: marleon
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

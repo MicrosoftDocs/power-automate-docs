@@ -1,12 +1,12 @@
 ---
 title: UI automation actions reference
 description: See all the available UI automation actions.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/20/2023
 ms.author: nimoutzo
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
