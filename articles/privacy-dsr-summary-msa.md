@@ -5,7 +5,6 @@ services: ''
 suite: flow
 documentationcenter: na
 author: v-aangie
-manager: KVIVEK
 ms.author: angieandrews
 ms.reviewer: angieandrews
 editor: ''

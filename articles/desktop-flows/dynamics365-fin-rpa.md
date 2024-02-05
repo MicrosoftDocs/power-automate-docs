@@ -4,7 +4,7 @@ description: Automate end-of-cycle reporting on Dynamics 365 Finance with Roboti
 author: mattp123
 ms.topic: conceptual
 ms.date: 11/16/2022
-ms.author: marleon
+ms.author: matp
 ms.reviewer: matp
 contributors:
 search.audienceType: 

@@ -4,7 +4,7 @@ description: Automate quality order creation on Dynamics 365 Supply Chain Manage
 author: mattp123
 ms.topic: conceptual
 ms.date: 11/15/2022
-ms.author: marleon
+ms.author: matp
 ms.reviewer: matp
 contributors:
 search.audienceType: 

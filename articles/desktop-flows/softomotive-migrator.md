@@ -5,7 +5,7 @@ author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 12/16/2020
-ms.author: marleon
+ms.author: matp
 ms.reviewer: matp
 contributors:
 - Yiannismavridis

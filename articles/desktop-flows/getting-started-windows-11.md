@@ -7,7 +7,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual 
 ms.date: 12/01/2022
 ms.collection: get-started
-ms.author: marleon
+ms.author: matp
 ms.reviewer: matp
 contributors:
 - Yiannismavridis

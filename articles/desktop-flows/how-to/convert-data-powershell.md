@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 02/17/2022
-ms.author: marleon
+ms.author: matp
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
