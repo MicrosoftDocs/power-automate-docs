@@ -1,5 +1,6 @@
 ---
 title: "Create a mobile task flow with Power Apps | MicrosoftDocs"
+description: "Learn about how to create a mobile task flow with Power Apps."
 ms.custom: ""
 ms.date: 06/11/2018
 ms.suite: ""
