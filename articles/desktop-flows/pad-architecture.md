@@ -6,7 +6,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 02/24/2023
 ms.author: matp
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

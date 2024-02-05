@@ -7,7 +7,7 @@ ms.custom:
 ms.topic: article
 author: rpapostolis
 ms.author: appapaio
-ms.reviewer: matp
+ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
 ---
 

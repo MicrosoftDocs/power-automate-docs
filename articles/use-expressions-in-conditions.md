@@ -2,7 +2,7 @@
 title: Use expressions in conditions in Power Automate
 description: Use advanced expressions such as "and", "or", "empty", "less", and "greater" in Power Automate Conditions.
 suite: flow
-author: msftman
+author: v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 10/02/2023
