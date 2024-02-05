@@ -73,4 +73,4 @@ Following this example, it's possible to imagine a wide range of scenarios where
 
 - Find the list of actions in the [Actions reference](actions-reference.md).
 
-- Learn how to [apply unattended RPA licenses to your flows](../organization-q-and-a.md#power-automate-rpa-license).
+- Learn how to [apply unattended RPA licenses to your flows](../organization-q-and-a.md).
