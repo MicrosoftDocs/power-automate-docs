@@ -18,7 +18,7 @@ ms.author: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
-ms.reviewer: matp
+ms.reviewer: angieandrews
 ---
 # Create a poll sample
 

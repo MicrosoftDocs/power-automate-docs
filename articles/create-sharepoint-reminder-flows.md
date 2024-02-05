@@ -14,7 +14,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/28/2022
 ms.author: angieandrews
-ms.reviewer: matp
+ms.reviewer: angieandrews
 ---
 
 # SharePoint remind me

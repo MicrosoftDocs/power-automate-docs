@@ -6,7 +6,7 @@ ms.topic: article
 ms.subservice: developer
 ms.date: 01/29/2018
 ms.author: angieandrews
-ms.reviewer: matp
+ms.reviewer: angieandrews
 search.audienceType: 
   - developer
 ---
