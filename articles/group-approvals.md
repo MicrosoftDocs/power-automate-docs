@@ -10,7 +10,7 @@ contributors:
   - kartikraop
   - hamenon-ms
   - v-aangie
-ms.author: napienko
+ms.author: jamiller
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
