@@ -18,8 +18,7 @@ With the Power Automate agent for virtual desktops, you can automate processes o
 
 The Power Automate agent for virtual desktops must be running both while you're designing a flow and when the flow runs. The agent starts automatically when a user logs in to the virtual desktop. If it isn't running on your virtual desktop, launch the agent manually. To launch the Power Automate agent for virtual desktops manually, double-click the shortcut on your desktop, or search for *Power Automate agent for virtual desktops* on the **Start** menu and then select the respective result, or go to the installation directory of the Power Automate agent for virtual desktops (by default, it is `C:\Program Files (x86)\Power Automate agent for virtual desktops`) and double-click **PAD.RDP.ControlAgent.exe.**
 
-It's important to install Power Automate for desktop on the machine where you'll be developing and executing your desktop flows, and Power Automate agent for virtual desktops on the machine where the flow just interacts with for UI automation actions. This second machine can be a Citrix Desktop, a host machine for a Citrix Virtual App, a remote desktop with Windows RDP communication, or a machine that hosts a RemoteApp. <!-- Isn't RemoteApp long since deprecated? Do you mean Remote Desktop app? https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/clients/windows-->
-
+It's important to install Power Automate for desktop on the machine where you'll be developing and executing your desktop flows, and Power Automate agent for virtual desktops on the machine where the flow just interacts with for UI automation actions. This second machine can be a Citrix Desktop, a host machine for a Citrix Virtual App, a remote desktop with Windows RDP communication, or a machine that hosts a Remote Desktop app.
 
 ## Prerequisites
 
