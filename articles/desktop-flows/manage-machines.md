@@ -1,12 +1,12 @@
 ---
 title: Manage machines
 description: Manage machines
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 03/21/2023
 ms.author: kenseongtan
-ms.reviewer: marleon
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

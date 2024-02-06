@@ -1,11 +1,12 @@
 ---
 title: Automate on virtual desktops
 description: Learn how to build automated workflows on Citrix and RDP virtual desktops.
-author: nikosmoutzourakis
+author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 02/02/2024
 ms.author: quseleba
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker
