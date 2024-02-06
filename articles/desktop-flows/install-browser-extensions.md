@@ -1,11 +1,11 @@
 ---
 title: Install Power Automate browser extensions
 description: Learn how to install Power Automate for desktop browser extensions.
-author: georgiostrantzas
+author: mattp123
 ms.topic: how-to
 ms.date: 02/02/2023
 ms.author: pefelesk
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - NikosMoutzourakis
 search.audienceType: 

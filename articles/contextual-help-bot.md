@@ -4,18 +4,17 @@ description: Get help building flows from the Power Virtual Agents bot.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/27/2021
-ms.author: DeonHe
-ms.reviewer: gtrantzas
+ms.author: angieandrews
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser

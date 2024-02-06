@@ -1,12 +1,12 @@
 ---
 title: Handle errors in desktop flows
 description: See how to handle errors and warnings in your desktop flows
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 04/13/2023
 ms.author: iomavrid
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker

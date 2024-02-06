@@ -158,7 +158,7 @@ You can’t edit flows in the cloud flows designer with the copilot experience i
 - A non-Open API flow (older connection format).
 
     > [!TIP]
-    > If there's Peek code on an action and if you see the `methods` parameter, it's a non-Open API flow.
+    > If there's Peek code on an action and if you see the _APIConnection_ value instead of _OpenAPIConnection_ in Kind field , it's a non-Open API flow. 
 
 - A flow with a comment.
 - A flow contains an unsupported hybrid trigger. Hybrid triggers don't require connections, and are triggered manually from outside of Power Automate. The hybrid triggers, which won't be supported are:

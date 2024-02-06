@@ -26,14 +26,14 @@
     href: oauth-authentication.md
   - name: Get help from the Power Virtual Agents bot
     href: contextual-help-bot.md
-  - name: Find it with unified search
-    href: /power-apps/maker/search
   - name: Share a flow
     href: create-team-flows.md
   - name: Support for guest users
     href: share-guest-users.md
   - name: Support for service principal owned flows
     href: service-principal-support.md
+  - name: Export and import a non-solution flow
+    href: export-import-flow-non-solution.md    
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
@@ -81,6 +81,8 @@
       href: data-operations.md
     - name: Customize or format date and time values in a flow
       href: date-time-values.md
+    - name: Convert a time zone
+      href: convert-time-zone.md
     - name: Use expressions in conditions
       href: use-expressions-in-conditions.md
     - name: Store and manage values in variables
@@ -389,6 +391,8 @@
         href: ./desktop-flows/run-desktop-flows-via-keyboard-shortcuts.md       
       - name: Runtime notifications
         href: ./desktop-flows/runtime-notifications.md
+    - name: Run desktop flows in Picture-in-Picture (preview)
+      href: ./desktop-flows/run-desktop-flows-pip.md
   - name: Manage machines and machine groups
     items:
     - name: Manage machines

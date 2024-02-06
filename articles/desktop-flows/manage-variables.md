@@ -1,12 +1,12 @@
 ---
 title: Manage variables and the variables pane
 description: See how to manage variables and the variables pane
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 01/16/2024
 ms.author: dbekirop
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - jpapadimitriou
 - Yiannismavridis
