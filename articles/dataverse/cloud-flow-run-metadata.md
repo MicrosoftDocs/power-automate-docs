@@ -55,7 +55,10 @@ The details can be viewed and updated through standard Dataverse APIs, a Dataver
 
 Since this feature is built on elastic tables, we store the cloud run metadata in specific logical partitions for optimized performance. The run data is partitioned based on users. This means each user within an organization has a dedicated partition to store the flow run metadata.
 
-By default, flow run metadata is stored for 28 days (2,419,200 seconds). If you want to modify the duration of how long the executions can be stored, you can update the **Time to live** (in seconds) for the flow run in the **Organization** table within environment backed with Dataverse. Depending on your environment’s storage capacity, you can adjust the length of storage for these run records.
+By default, flow run metadata is stored for 28 days (2,419,200 seconds). If you want to modify the duration of how long the executions can be stored, you can update the **Time to live (in seconds) for the flow run** in the **Organization** table within environment backed with Dataverse. Depending on your environment’s storage capacity, you can adjust the length of storage for these run records.
+
+If the environment is running short on storage, then customers can choose to clean up database space by performing bulk delete operation. To learn more about how to proceed with bulk deletion, go to [Remove a large amount of specific, targeted data with bulk deletion](/power-platform/admin/delete-bulk-records).
+
 
 ## Known limitations
 
