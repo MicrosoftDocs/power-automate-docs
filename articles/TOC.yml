@@ -32,6 +32,8 @@
     href: share-guest-users.md
   - name: Support for service principal owned flows
     href: service-principal-support.md
+  - name: Export and import a non-solution flow
+    href: export-import-flow-non-solution.md    
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
@@ -308,8 +310,6 @@
       href: edit-solution-aware-flow.md
     - name: Remove a solution-aware flow
       href: remove-solution-aware-flow.md
-    - name: Export and import a non-solution flow
-      href: export-import-flow-non-solution.md
   - name: Troubleshoot
     items:
     - name: Troubleshoot common issues with triggers

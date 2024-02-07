@@ -1,13 +1,13 @@
 ---
 title: Convert a text value to datetime
 description: Convert a text value to datetime
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 02/01/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
