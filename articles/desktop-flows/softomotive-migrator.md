@@ -27,9 +27,6 @@ Process migrator for Softomotive products (preview) enables users to convert aut
 This migration utility redefines automations to their equivalent Power Automate desktop flow action definitions where such parity exists. 
 
 Some actions have been deprecated because they don't fit into the Power Platform ecosystem. However, workarounds should be applicable to overcome what appears to be missing functionality. 
-
-> [!NOTE]
-> You can find the full list of migration coverage regarding action groups in the release notes [here](#non-migratable-actions).
  
 ## Prerequisites
 
