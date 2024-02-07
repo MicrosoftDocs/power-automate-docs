@@ -1,4 +1,4 @@
-﻿---
+---
 title: Export and import a non-solution flow
 description: Learn how export a flow from one environment and import it to another.
 suite: flow
@@ -11,7 +11,7 @@ ms.topic: conceptual
 ms.date: 01/29/2024
 ms.author: jamiller
 ms.reviewer: angieandrews
-search.audienceType: 
+search.audienceType:
   - flowmaker
   - enduser
 ---
