@@ -205,9 +205,9 @@ You might notice that some functionalities that were in the classic designer are
 - Dynamic content friendly names are getting updated to internal code names upon save.
 - Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', and others.
 
-As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer will not be supported indefinitely, the new designer is gradually becoming the primary interface.
+As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer won't be supported indefinitely, the new designer is gradually becoming the primary interface.
 
-If you prefer to access features not yet available in the new designer or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply toggle off the 'New Designer' option in the menu within the cloud flows designer.
+If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply turn off the **New designer** toggle on the menu in the cloud flows designer.
 
 :::image type="content" source="media/flows-designer/designer-toggle.svg" alt-text="Screenshot of the 'New designer' toggle.":::
 
