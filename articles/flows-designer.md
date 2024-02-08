@@ -197,7 +197,6 @@ You might notice that some functionalities that were in the classic designer are
 - Perform a changeset request action (Dataverse)
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
 - Email auto-complete suggestions in _Send Email/Post message_ in Teams actions
-- HTML editor in Send Email action
 - Copy/Paste supporting Scope, Condition, Do until cosntructs
 - Ability to make manual trigger fields optional
 
@@ -205,9 +204,10 @@ You might notice that some functionalities that were in the classic designer are
 
 - Dynamic content friendly names are getting updated to internal code names upon save.
 - Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', and others.
-- Newline in Approval action and Compose action are disappearing.
 
-If you want to work with missing functionalities in the designer, while the limitations and known issues are being fixed in the meantime, turn off the **New designer** toggle on the menu in the cloud flows designer.
+As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer won't be supported indefinitely, the new designer is gradually becoming the primary interface.
+
+If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply turn off the **New designer** toggle on the menu in the cloud flows designer.
 
 :::image type="content" source="media/flows-designer/designer-toggle.svg" alt-text="Screenshot of the 'New designer' toggle.":::
 
