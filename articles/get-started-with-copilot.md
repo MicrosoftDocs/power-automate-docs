@@ -184,7 +184,7 @@ The cloud flows Copilot supports English language only for models.
 
 As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer won't be supported indefinitely, the new designer is gradually becoming the primary interface.
 
-If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply turn off the **New Designer** toggle on the menu in the cloud flows designer.
+If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply turn off the **New designer** toggle on the menu in the cloud flows designer.
 
 :::image type="content" source="./media/get-started-with-copilot/designer-toggle.svg" alt-text="Screenshot of the 'New designer' toggle.":::
 
