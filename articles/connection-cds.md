@@ -26,7 +26,7 @@ search.audienceType:
 # Create a cloud flow with Microsoft Dataverse (legacy)
 
 > [!IMPORTANT]
-> Flows that are created with the Dataverse (legacy) connector will no longer work as of summer 2023. Use the migration tool in Power Automate to automatically migrate from the Dataverse (legacy) connector to the Microsoft Dataverse connector. 
+> Flows that are created with the Dataverse (legacy) connector will no longer work after a date which will be announced during 2024. Use the migration tool in Power Automate to automatically migrate from the Dataverse (legacy) connector to the Microsoft Dataverse connector. 
 
 With the Microsoft Dataverse connector, you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on rows within Dataverse.
 
