@@ -1,7 +1,7 @@
 ---
 title: Get started with Copilot in cloud flows
 description: Learn how to access and use Copilot in cloud flows.
-ms.date: 10/02/2023
+ms.date: 02/07/2024
 ms.custom: bap-template
   - transparency-note
 ms.topic: conceptual
@@ -182,7 +182,9 @@ The cloud flows Copilot supports English language only for models.
 
 ### There are some missing functionalities in the cloud flows designer with copilot capabilities. What do I do?
 
-If you want to work with missing functionalities in the designer, while the limitations and known issues are being fixed in the meantime, turn off the **New designer** toggle on the menu in the cloud flows designer.
+As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer won't be supported indefinitely, the new designer is gradually becoming the primary interface.
+
+If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply turn off the **New designer** toggle on the menu in the cloud flows designer.
 
 :::image type="content" source="./media/get-started-with-copilot/designer-toggle.svg" alt-text="Screenshot of the 'New designer' toggle.":::
 
@@ -210,3 +212,5 @@ You need a standalone Power Automate license, or a seeded M365 license, or Power
 - [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
+- [Language availability for Power Platform](https://dynamics.microsoft.com/availability-reports/languagereport/)
+- [Geographical availability for Power Platform](https://dynamics.microsoft.com/availability-reports/georeport/)
