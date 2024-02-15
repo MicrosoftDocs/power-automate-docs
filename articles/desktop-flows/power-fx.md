@@ -54,14 +54,9 @@ Examples:
 - To access the value from a List you should use the function **Index(var, number)**, where var is the name of the List and number is the position of the value to be retrieved  
 - To access a data table cell using a column index, use the **ReadCell()** function. 
 **ReadCell(DataTableVar, 1, 1)** retrieves the value from the cell in row 1, column 1
-**ReadCell(DataRowVar, 1)** retrieves the value from the cell in row 1  
-
-
-If the input provided doesn't start with the equals sign, the following rules apply:
-- Numeric values without spaces are interpreted as numeric values 
-- **True/ False** as input, regardless of case and without spaces are interpreted as boolean values 
-- All other inputs are considered of text type values 
-- **If** action now accepts a single conditional expression instead of multiple operands.
+**ReadCell(DataRowVar, 1)** retrieves the value from the cell in row 1 
+- To include an interpolated value in an input use the following syntax: Lorem ipsum **${variable/ expression}** lorem ipsum
+  - Example: The total number is **${Sum(10, 20)}** 
 
 ## Available Power Fx functions 
 
@@ -98,8 +93,20 @@ For the complete list of all available functions in Power Automate for desktop f
 ## What's new
 
 ###  2.41
-- Inputs now support interpolated strings. To include an interpolated value in an input use the following syntax: Lorem ipsum **${variable name/ expression}** lorem ipsum
+In February's release:
+- Inputs that don't begin with the equals sign (**=**) are considered as text type values. Numeric and boolean inputs must always begin with the equals sign.
+- Inputs now support interpolated strings. To include an interpolated value in an input use the following syntax: Lorem ipsum **${variable/ expression}** lorem ipsum
+  - Example: The total number is **${Sum(10, 20)}**
+> [!NOTE]
+> To use interpolated string syntax, make sure you ommit the equals sign at the beginning of the input.
 
+### 2.39
+In December's release: 
+If the input provided doesn't start with the equals sign, the following rules apply:
+- Numeric values without spaces are interpreted as numeric values 
+- **True/ False** as input, regardless of case and without spaces are interpreted as boolean values 
+- All other inputs are considered of text type values 
+- **If** action now accepts a single conditional expression instead of multiple operands.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
