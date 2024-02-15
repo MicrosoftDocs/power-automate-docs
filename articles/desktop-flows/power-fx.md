@@ -43,6 +43,8 @@ In the same fashion as Excel formulas, desktop flows that utilize Power Fx as th
 Variable names are case-sensitive in desktop flows with Power Fx. For example, **NewVar** is different than **newVar**. 
 
 When Power Fx is enabled in a desktop flow, variable hoisting isn't supported, requiring users to initialize a variable before its use. Trying to utilize an uninitialized variable in Power Fx expressions results in an error. 
+
+**If** action now accepts a single conditional expression instead of multiple operands.
  
 Examples: 
 
@@ -94,7 +96,7 @@ For the complete list of all available functions in Power Automate for desktop f
 
 ###  2.41
 In February's release:
-- Inputs that don't begin with the equals sign (**=**) are considered as text type values. Numeric and boolean inputs must always begin with the equals sign.
+- From now on inputs that don't begin with the equals sign (**=**) are considered as text type values. Numeric and boolean inputs must always begin with the equals sign.
 - Inputs now support interpolated strings. To include an interpolated value in an input use the following syntax: Lorem ipsum **${variable/ expression}** lorem ipsum
   - Example: The total number is **${Sum(10, 20)}**
 > [!NOTE]
@@ -102,11 +104,10 @@ In February's release:
 
 ### 2.39
 In December's release: 
-If the input provided doesn't start with the equals sign, the following rules apply:
-- Numeric values without spaces are interpreted as numeric values 
-- **True/ False** as input, regardless of case and without spaces are interpreted as boolean values 
-- All other inputs are considered of text type values 
-- **If** action now accepts a single conditional expression instead of multiple operands.
+- If the input provided doesn't start with the equals sign, the following rules apply:
+  - Numeric values without spaces are interpreted as numeric values 
+  - **True/ False** as input, regardless of case and without spaces are interpreted as boolean values 
+  - All other inputs are considered of text type values 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
