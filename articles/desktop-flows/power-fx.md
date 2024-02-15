@@ -95,6 +95,11 @@ For the complete list of all available functions in Power Automate for desktop f
 - Certain automation actions from the standard library of actions, such as **Read from Excel**, **Read from CSV**, **Extract data from a web**, **Extract data from window**, **Execute SQL statement** and **Convert JSON to a custom object** produce **General type** variables that can't be evaluated yet during the authoring. For the time being, ignore warnings resulting from such cases. 
 - The General type variables that are produced from the above actions are currently incompatible with the following functions: Filter(), LookUp(), Search(), CountIf(), With(). 
 
+## What's new
+
+###  2.41
+- Inputs now support interpolated strings. To include an interpolated value in an input use the following syntax: Lorem ipsum **${variable name/ expression}** lorem ipsum
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
