@@ -231,6 +231,10 @@ This might be because of a temporary issue where the **Split On** setting of the
 1. On the [action configuration pane](#action-configuration-pane), select the **Settings** tab.
 1. Under the **Split On** heading, move the toggle to **On**,
 
+### Why do I not see new or updated SharePoint or Excel column values in my flow ?
+
+Power Automate designer requires a flow action to be readded in order to pickup new entities of the underlying action. For e.g. if you have a SharePoint _Get item_ action in your flow and Sharepoint item has 4 columns, the flow will allow you to access all 4 column values of the SharePoint item. Now, if you navigate to SharePoint and add 5th column, and come back to the flow, you can't access the 5th column unless you delete the _Get item_ action and readd it again to force the designer to pick up the latest changes. Same behavior applies in Excel columns, Dataverse, Onedrive folder/files, etc.   
+
 ### See also
 
 [Get started with Copilot in cloud flows](get-started-with-copilot.md)
