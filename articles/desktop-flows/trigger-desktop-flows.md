@@ -81,4 +81,8 @@ To trigger a desktop flow from a cloud flow:
 
     :::image type="content" source="media/trigger-desktop-flows/run-desktop-flow-v2-action-properties-2.png" alt-text="Screenshot of the input variables in the Run a flow built with Power Automate for desktop action.":::
 
+## Known limitations
+
+- We currently support up to 70 desktop flows runs per minute for every connection.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
