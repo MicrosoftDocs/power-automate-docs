@@ -342,4 +342,8 @@ HTTP/1.1 403 Forbidden
 }
 ```
 
+## Known limitations
+
+- We currently support up to 70 desktop flows runs per minute for every connection.
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
