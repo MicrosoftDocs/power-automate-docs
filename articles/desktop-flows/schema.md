@@ -82,7 +82,7 @@ With v2 schema, we change the data model stored in Dataverse. In addition to the
 :::image type="content" source="media/schema/desktopflowbinaries-v2.png" alt-text="Desktop flow in v2 schema with desktop flow binaries.":::
 
 > [!IMPORTANT]
-> The desktop flow binaries objects are required components of the desktop flow as they store required data for the desktop flow to be able to open or run. 
+> The desktop flow binaries objects are required components of the desktop flow as they store required data for the desktop flow to be able to open or run. Deleting these binaries will result in permanent data loss, which will make the respective flow non-editable, so it should be avoided.
 
 The number of desktop flow binaries might vary depending on the size of the desktop flow.
 
