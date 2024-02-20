@@ -58,7 +58,7 @@ Follow these steps to share a desktop flow:
 
    > [!NOTE]
    >
-   > You can also enter a Microsoft Dataverse team name instead of the name of the person. More information: [Microsoft Dataverse teams management](/power-platform/admin/manage-teams)
+   > You can also enter a Microsoft Dataverse team name instead of the name of the person. If you want to share with a Microsoft Entra group, you'll first need to create a Microsoft Entra Group Team in Dataverse based on the Microsoft Entra Group. More information: [Microsoft Dataverse teams management](/power-platform/admin/manage-teams)
    
 5. Select the user and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
 
