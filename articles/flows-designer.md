@@ -237,7 +237,7 @@ Power Automate designer requires a flow action to be re-added in order to pick u
 
 ### Will the new cloud flows designer eventually fully replace the classic designer?
 
-Yes, once the issues noted here have been resolved and the new cloud flows designer can cover all the required scenarios, then the classic designer will be fully replaced.
+Yes, once the issues noted here have been resolved and the new cloud flows designer can cover most if not all of the classic designer scenarios, then the classic designer will be fully replaced.
 
 ### See also
 
