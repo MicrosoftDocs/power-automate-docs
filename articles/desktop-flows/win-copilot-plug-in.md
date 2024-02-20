@@ -21,7 +21,7 @@ With the Power Automate plug-in for Windows Copilot, you can use automations to 
 
 ## Prerequisites
 
-- To use the plug-in, log in to Power Automate for desktop in Windows Copilot with your personal Microsoft Account.
+- To use the plug-in, sign in to Power Automate for desktop in Windows Copilot with your personal Microsoft Account.
 
     Support for work and school accounts isn't currently available.
 
@@ -35,7 +35,7 @@ To use the Power Automate plug-in in Windows Copilot, you need to enable it in t
 
 ## Excel actions
 
-You can create a new Excel file and write data to it from Windows Copilot. Here's an example prompt you can try once you have enabled the plug-in:
+You can create a new Excel file and write data to it from Windows Copilot. Here's an example prompt you can try once you enable the plug-in:
 
 **Write to an Excel file the names and heights of the five highest mountains in the world in both meters and feet**
 
@@ -71,7 +71,7 @@ The automation actions operate on your Windows machine locally. Power Automate d
 
 To learn more about how Copilot in Windows uses your data to assist you, go to [Copilot in Windows: Your data and privacy](https://support.microsoft.com/windows/copilot-in-windows-your-data-and-privacy-3e265e82-fc76-4d0a-afc0-4a0de528b73a).
 
-## Feedback
+## Send us your input
 
 If you want to share your thoughts on the plug-in, contact us at [powerautomate-ai@microsoft.com](mailto:powerautomate-ai@microsoft.com).
 
