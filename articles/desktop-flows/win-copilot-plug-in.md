@@ -1,5 +1,5 @@
 ---
-title: Use the Power Automate plug-in for Windows Copilot
+title: Use the Power Automate plug-in for Windows Copilot (preview)
 description: Learn how to use the Power Automate plug-in for Windows Copilot.
 author: JoeFernandezMS
 contributors:
@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 02/20/2024
+ms.date: 02/21/2024
 ms.author: jofernan
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -15,9 +15,13 @@ search.audienceType:
   - enduser
 ---
 
-# Use the Power Automate plug-in for Windows Copilot
+# Use the Power Automate plug-in for Windows Copilot (preview)
+
+[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 With the Power Automate plug-in for Windows Copilot, you can use automations to work with Excel, PDF, and other files directly in Windows Copilot.
+
+> [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## Prerequisites
 
@@ -68,6 +72,10 @@ Power Automate shows you a folder selection dialog when you use these actions. T
 ## Control and privacy
 
 The automation actions operate on your Windows machine locally. Power Automate doesn't receive user data.
+
+### Disable the Power Automate plug-in for Windows Copilot with Registry Editor
+
+If you want to disable the Power Automate plug-in for Windows Copilot from running on a machine, use the Registry Editor. Proceed to the Registry Editor path **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Power Automate Desktop**. At this location, create a new DWORD value named **DisableWindowsCopilotFlowRuns** and set its value to **1**.
 
 To learn more about how Copilot in Windows uses your data to assist you, go to [Copilot in Windows: Your data and privacy](https://support.microsoft.com/windows/copilot-in-windows-your-data-and-privacy-3e265e82-fc76-4d0a-afc0-4a0de528b73a).
 
