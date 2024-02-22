@@ -81,6 +81,14 @@ For example, you might create a security role that allows users to create, read,
 
 Overall, privileges are a key component of the security model in Dataverse, and are used to control access to resources in a granular and flexible way.
 
+   > [!NOTE]
+   >
+   > In order to be able to run a desktop flow, the user needs at least the following permissions:
+   > - "Append", "AppendTo", "Create" and "Write" on the flowsession table
+   > - "Append", "AppendTo", "Create" and "Write" on the workflowbinary table.
+   > - "Read" permissions on the workflow table.
+   > - "Read" on the desktopflowbinary table.
+
 ## Power Automate specific security roles
 
 Following security roles are available out-of-the-box with Power Automate.
@@ -89,10 +97,6 @@ Following security roles are available out-of-the-box with Power Automate.
 
 The environment maker role in Dataverse is a built-in security role that lets users create and manage their resources associated with an environment. This includes apps, connections, custom APIs, gateways, cloud flows, and desktop flows, as long as the user has the appropriate license for the intended product area.
 :::image type="content" source="media/desktop-flows-security-roles/environment-maker.png" alt-text="Screenshot of the permissions for the Environment Maker role." lightbox="media/desktop-flows-security-roles/environment-maker.png":::
-
-   > [!NOTE]
-   >
-   > In order to be able to run a desktop flow, the user needs at least the "Append", "AppendTo", "Create", "Read" and "Write" permissions on the flowsession table and "Read", "Append" and "AppendTo" permissions on the process table. 
 
 ### Desktop flows machine configuration admin
 
