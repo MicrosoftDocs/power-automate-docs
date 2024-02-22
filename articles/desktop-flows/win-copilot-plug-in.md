@@ -21,7 +21,7 @@ search.audienceType:
 
 With the Power Automate plug-in for Windows Copilot, you can use automations to work with Excel, PDF, and other files directly in Windows Copilot.
 
-> [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## Prerequisites
 
