@@ -83,11 +83,11 @@ Overall, privileges are a key component of the security model in Dataverse, and 
 
    > [!NOTE]
    >
-   > In order to be able to run a desktop flow, the user needs at least the following permissions:
-   > - "Append", "AppendTo", "Create" and "Write" on the flowsession table
-   > - "Append", "AppendTo", "Create" and "Write" on the workflowbinary table.
-   > - "Read" permissions on the workflow table.
-   > - "Read" on the desktopflowbinary table.
+   > In order to be able to run a desktop flow, the user needs at least the following privileges:
+   > - Basic Append, AppendTo, Create and Write privileges on the flowsession table
+   > - Basic Append, AppendTo, Create and Write privileges on the workflowbinary table.
+   > - Basic Read privilege on the workflow table.
+   > - Basic Read privilege on the desktopflowbinary table.
 
 ## Power Automate specific security roles
 
