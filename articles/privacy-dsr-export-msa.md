@@ -6,7 +6,7 @@ suite: flow
 documentationcenter: na
 author: v-aangie
 ms.subservice: cloud-flow
-ms.topic: onceptual
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/18/2023
