@@ -328,7 +328,9 @@
   - name: Get started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md
   - name: Use copilot to analyze desktop flow activity (preview)
-    href: ./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md 
+    href: ./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md
+  - name: Use the Power Automate plug-in for Windows Copilot (preview)
+    href: ./desktop-flows/win-copilot-plug-in.md  
   - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Premium RPA features
