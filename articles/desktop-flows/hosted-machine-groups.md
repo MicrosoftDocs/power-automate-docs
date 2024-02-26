@@ -4,7 +4,7 @@ description: Learn how to create and use hosted machine groups to distribute you
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/24/2024
+ms.date: 02/26/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
