@@ -3,7 +3,7 @@ title: Install Power Automate
 description: Learn how to install Power Automate for desktop on your device.
 author: johndund
 ms.topic: how-to
-ms.date: 12/20/2023
+ms.date: 02/26/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -21,7 +21,7 @@ Before you install Power Automate on your device, make sure that it meets the [s
 Download and install Power Automate [using an MSI installer](#install-power-automate-using-the-msi-installer) or [from Microsoft Store](#install-power-automate-from-microsoft-store). The Microsoft Store installation doesn't require you to have admin rights on your device and is updated automatically regularly. The MSI installer requires admin rights and requires manual updates. However it also includes an option to install the machine runtime application, which allows you to [manage machines from the Power Automate portal](manage-machines.md). You can use the Power Automate for desktop store installation in conjunction with the runtime application, which you can install from the MSI.
 
 > [!NOTE]
-> Having both versions of Power Automate on your machine is not supported, you must choose between Power Automate MSI installer and Microsoft Store (MSIX).
+> Having both versions of Power Automate on your machine isn't supported. You must choose between Power Automate MSI installer or Microsoft Store (MSIX).
 
 By default, Power Automate for desktop honors the proxy settings specified in Windows. To learn how to override this configuration for the Power Automate console, go to [Power Automate for desktop using a proxy server](governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server). To learn how to configure proxy settings for the machine runtime, go to [override them after install](https://support.microsoft.com/topic/power-automate-for-desktop-proxy-setup-8a79d690-1c02-416f-8af1-f057df5fe9b7).
 
