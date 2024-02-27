@@ -81,6 +81,14 @@ For example, you might create a security role that allows users to create, read,
 
 Overall, privileges are a key component of the security model in Dataverse, and are used to control access to resources in a granular and flexible way.
 
+   > [!NOTE]
+   >
+   > In order to be able to run a desktop flow, the user needs at least the following privileges:
+   > - Basic Append, AppendTo, Create and Write privileges on the flowsession table
+   > - Basic Append, AppendTo, Create and Write privileges on the workflowbinary table.
+   > - Basic Read privilege on the workflow table.
+   > - Basic Read privilege on the desktopflowbinary table.
+
 ## Power Automate specific security roles
 
 Following security roles are available out-of-the-box with Power Automate.
