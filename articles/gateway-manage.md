@@ -30,7 +30,6 @@ With a gateway, you can connect to on-premises data over the following connectio
 * BizTalk Server
 * Custom connectors that you create
 * DB2
-* Desktop flows
 * File System
 * Http with Microsoft Entra ID
 * Informix
