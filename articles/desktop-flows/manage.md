@@ -4,7 +4,7 @@ description: Learn how to manage desktop flows in the Power Automate portal.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/05/2024
+ms.date: 02/27/2024
 ms.author: appapaio
 ms.reviewer: matp
 contributor:
@@ -58,7 +58,7 @@ Follow these steps to share a desktop flow:
 
    > [!NOTE]
    >
-   > You can also enter a Microsoft Dataverse team name instead of the name of the person. If you want to share with a Microsoft Entra group, you'll first need to create a Microsoft Entra Group Team in Dataverse based on the Microsoft Entra Group. More information: [Microsoft Dataverse teams management](/power-platform/admin/manage-teams)
+   > You can also enter a Microsoft Dataverse team name instead of the name of the person. If you want to share with a Microsoft Entra group, you first need to create a Microsoft Entra Group team in Dataverse based on the Microsoft Entra Group. More information: [Microsoft Dataverse teams management](/power-platform/admin/manage-teams)
    
 5. Select the user and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
 
