@@ -4,7 +4,7 @@ description: Group multiple machines together to help distribute your automation
 author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/08/2023
+ms.date: 02/27/2024
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -173,7 +173,7 @@ You can share a machine group with other users in your organization and give tho
 
 Access for machine groups is managed at the group level. All machines in the group will use the same permissions and connections.
 
-If the permissions of a machine and its group fall out of sync, certain actions for that machine may no longer be available, and your machine and machine group may not behave as expected. For example, this issue may appear if you modify the permissions of the group directly in Microsoft Dataverse. Ensure the permissions between the machine and machine group are consistent to avoid any such issues.
+If the permissions of a machine and its group fall out of sync, certain actions for that machine might no longer be available, and your machine and machine group might not behave as expected. For example, this issue might appear if you modify the permissions of the group directly in Microsoft Dataverse. Ensure the permissions between the machine and machine group are consistent to avoid any such issues.
 
 ## Change the machine group of a machine
 
@@ -217,9 +217,9 @@ Environment admins can also restrict machine registration to a specific set of u
 |---|---|
 |Maximum number of machines in a group |50|
 |Maximum amount of time a desktop flow can run |24 hours|
-|Maximum amount of time a desktop flow can be queued |Three hours|
+|Maximum amount of time a desktop flow can be queued |Six hours|
 
 ## Other known limitations
 
 - Machine groups aren't available in the Government Community Cloud (GCC), Government Community Cloud - High (GCC High), Department of Defense (DoD), or China regions. You can still run desktop flows using machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
-- When you trigger multiple desktop flows in parallel on a machine group, machine selection may take up to 50 seconds before assigning the desktop flow to an available machine. In these rare cases, desktop flow runs might seem to be running sequentially, if they have short run durations.
+- When you trigger multiple desktop flows in parallel on a machine group, machine selection might take up to 50 seconds before assigning the desktop flow to an available machine. In these rare cases, desktop flow runs might seem to be running sequentially, if they have short run durations.
