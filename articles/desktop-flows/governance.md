@@ -8,6 +8,7 @@ ms.author: iomavrid
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - PetrosFeleskouras
 search.audienceType: 
@@ -244,9 +245,9 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 - **1**: Power Automate for desktop won't take a screenshot for the action logs when an error occurs during a flow run.
 
-## Prevent Power Automate for desktop from uploading action logs after a desktop flow runs through the console
+## Prevent Power Automate for desktop from uploading action logs after a desktop flow execution
 
-You can use the following registry entry to prevent Power Automate for desktop from uploading detailed logs per action for the respective run of the flow's run history, after a desktop flow run takes places through the console.
+You can use the following registry entry to prevent Power Automate for desktop from uploading detailed logs per action for the respective run of the flow's run history, after a desktop flow execution.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
