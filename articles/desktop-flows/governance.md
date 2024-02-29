@@ -82,11 +82,14 @@ You can use the following registry entry to keep users from logging into Power A
 
 To restrict access to Power Automate for desktop on a workstation with Windows 10 or Windows 11, use [App locker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
 
-## Allow users to sign in to Power Automate for desktop using Web Account Manager (WAM)
+## Configure Power Automate for desktop to use the Web Account Manager (WAM) as a fallback sign in method
 
-You can use the following registry entry to allow users to sign in to Power Automate for desktop using Windows Web Account Manager (WAM).
+By default, Power Automate for desktop uses the Web Account Manager (WAM) for user authentication. If any sign in errors occur, it uses an Internet Explorer client as a fallback method.
 
-WAM enables certain features that aren't available through the default sign in process, such as single sign-on (SSO).
+You can use the following registry entry to set Power Automate for desktop to sign in with the Windows Web Account Manager (WAM) as a fallback sign in method.
+
+> [!NOTE]
+> For older versions of Power Automate for desktop prior to version 2.41, this registry entry configures Power Automate for desktop to sign in with the Web Account Manager (WAM) as the primary sign in method.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -94,7 +97,7 @@ WAM enables certain features that aren't available through the default sign in p
 
 ***Values***
 
-- **1**: Power Automate for desktop authenticates users using the WAM functionality.
+- **1**: Power Automate for desktop authenticates users using the WAM functionality as a fallback sign in method.
 
 ## Configure Power Automate for desktop to check for revoked certificates
 
