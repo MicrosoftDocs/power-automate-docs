@@ -29,6 +29,7 @@ This article lists the premium robotic process automation (RPA) features and ben
 |Automatic triggering/scheduling and integration with cloud flows|Trigger/schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger desktop flows from cloud flows](trigger-desktop-flows.md)|
 |Flow triggering via desktop shortcut|Trigger local attended desktop flows through their desktop shortcuts.|[Learn how to trigger a desktop flow via shortcut](run-desktop-flows-url-shortcuts.md)|
 |Flow triggering via URL|Trigger local attended desktop flows through their run URLs from anywhere on your machine.|[Learn how to trigger a desktop flow via URL](run-desktop-flows-url-shortcuts.md)|
+|Flow triggering in Picture-in-Picture|Trigger attended desktop flows within a virtual window.|[Learn how to trigger a desktop in Picture-in-Picture](run-desktop-flows-pip.md)|
 |Access to premium and custom connectors|Access all premium cloud connectors and create custom connectors.|[Learn about premium connectors](/connectors/connector-reference/connector-reference-premium-connectors)<br>[Learn about custom connectors](/connectors/custom-connectors)|
 |AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder.|[Learn about AI Builder](/ai-builder)|
 |Access to process mining |Visualize and analyze your business processes with process mining.|[Learn about process mining](/power-automate/process-advisor-overview)|
