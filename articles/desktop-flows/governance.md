@@ -136,9 +136,12 @@ You can use the following registry entry to allow users to select the organizati
 > [!NOTE]
 > The "isEnabled" values aren't related to the **organizationList** and **selectOrganizationFromListIsEnabled** values. The **isEnabled** values define whether the **Switch organization** option is available to signed-in users, whereas the **organizationList** and **selectOrganizationFromListIsEnabled** values define the organizations that Power Automate for desktop tries to connect to automatically during sign-in.
 
-## Allow users of Power Automate for desktop to connect to a region
+## Configure Power Automate for desktop to connect to a region
 
-You can use the following registry entry to allow users to select the region they want to connect to.
+You can use the following registry entry to set the region where users will connect to by default during sign-in.
+
+> [!NOTE]
+> Values **0** and **1** apply to older versions of Power Automate for desktop, prior to version 2.41.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
