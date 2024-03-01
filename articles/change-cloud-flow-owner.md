@@ -70,7 +70,10 @@ If the flow is a **manual** flow, the flow runs under the license of the user wh
 
 ## Change the owner of a non-solution cloud flow
 
-To change the ownership of a non-solution-aware cloud flow, you must create a new flow with export/import, **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows isn't available because the owner is part of the flow identity.
+In-place ownership change for non-solution-aware cloud flows isn't available because the owner is part of the flow identity.
+
+- If your environment has Dataverse, then the ideal way to change the ownership is to [add the flow into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution) so ownership can be changed.   
+- If your environment does not have Dataverse, then you must create a new non-solution cloud flow with export/import, **Save as**, or **Send a copy**. 
 
 ## Ownership and licensing
 
