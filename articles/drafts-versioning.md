@@ -1,6 +1,6 @@
 ---
 title: Drafts and versioning for cloud flows
-description: Learn about drafts and versioning for cloud flows.
+description: Learn about drafts and versioning feature set for cloud flows.
 services: ''
 suite: flow
 author: ChrisGarty
@@ -23,9 +23,9 @@ When authoring a solution cloud flow, drafts can be saved in Microsoft Dataverse
 
 ## Availability
 
-Drafts and versioning is only available for [solution cloud flows](/power-automate/create-flow-solution). Solution cloud flows can be [created directly in a solution](/power-automate/create-flow-solution#create-a-solution-aware-cloud-flow), [added into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution), or created by default if the [Create in Dataverse solutions environment setting](/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature) is enabled.
+The flow drafts and versioning feature set is only available for [solution cloud flows](/power-automate/create-flow-solution). Solution cloud flows can be [created directly in a solution](/power-automate/create-flow-solution#create-a-solution-aware-cloud-flow), [added into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution), or created by default if the [Create in Dataverse solutions environment setting](/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature) is enabled.
 
-Drafts and versioning is being released slowly across specific environments region-by-region. When drafts and versioning capabilities show up in an environment in your region, please allow two weeks for full release in that region.
+The flow drafts and versioning feature set is being released slowly across specific environments region-by-region. When drafts and versioning capabilities show up in an environment in your region, please allow two weeks for full release in that region.
 
 ## Save drafts
 
@@ -79,9 +79,9 @@ When you view a flow's version history list, you can select a previous version f
 
 ## FAQ
 
-### Why is drafts and versioning only available for solution cloud flows?
+### Why is the drafts and versioning feature set only available for solution cloud flows?
 
-Dataverse is the storage used for drafts that aren't published and. It's also the storage used for version history. Solution cloud flows are defined in Dataverse, so they can have drafts and a version history.
+Dataverse is the storage used for drafts that aren't published. It's also the storage used for version history. Solution cloud flows are defined in Dataverse, so they can have drafts and a version history.
 
 ### How do I change a non-solution cloud flow into a solution cloud flow?
 
