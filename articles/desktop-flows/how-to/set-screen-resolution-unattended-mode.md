@@ -17,7 +17,10 @@ search.audienceType:
 ---
 # Set screen resolution on unattended mode
 
-In some scenarios, Power Automate might run unattended flows in a lower resolution than the one used to develop the flows. As a result, some UI elements could be hidden from the screen and cause flows to fail.
+In some scenarios, Power Automate might run unattended flows in a lower resolution than the one used to develop the flows. As a result, some UI elements could be hidden from the screen and cause flows to fail. In such cases, you can follow one of the two approaches below, to adjust the screen resolution used for unattended flows accordingly.
+
+> [!NOTE]
+> The screen resolution can be adjusted per target machine, not per flow. If you need one of your unattended flows to run in another resolution, a different target machine needs to be used.
 
 ## With Windows registry
 
