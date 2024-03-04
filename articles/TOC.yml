@@ -33,7 +33,9 @@
   - name: Support for service principal owned flows
     href: service-principal-support.md
   - name: Export and import a non-solution flow
-    href: export-import-flow-non-solution.md    
+    href: export-import-flow-non-solution.md
+  - name: Drafts and versioning for cloud flows
+    href: drafts-versioning.md
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
@@ -300,8 +302,6 @@
       displayName: Use solutions for ALM of flows
     - name: Create a cloud flow in a solution
       href: create-flow-solution.md
-    - name: Drafts and versioning for cloud flows
-      href: drafts-versioning.md
     - name: Create child flows
       href: create-child-flows.md
     - name: Export solution
