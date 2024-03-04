@@ -22,7 +22,7 @@ ms.collection:
 
 You can run Power Automate flows as plugins from Copilot for Microsoft 365. This feature is currently limited to two specific copilot-enabled templates currently. The ability for users to bring any flow they create with the **Run from Copilot** trigger in Copilot for Microsoft 365 isn't available yet.
 
-> [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Prerequisites
 
