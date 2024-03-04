@@ -18,7 +18,7 @@ search.audienceType:
 [Triggering desktop flows from cloud flows](trigger-desktop-flows.md) enables you to run desktop flows in unattended mode. Unattended desktop flows are ideal for automating tasks that don't need human supervision.
 
 > [!TIP]
-> For unattended desktop automation, you will need the [Power Automate Process](https://powerautomate.microsoft.com/pricing/) plan. You can find [here](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/buy-licenses#assign-process-license) instructions on how to allocate and assign the Process license.
+> For unattended desktop automation, you need the [Power Automate Process](https://powerautomate.microsoft.com/pricing/) plan. More information: [Allocate and assign the Process license](/power-platform/admin/power-automate-licensing/buy-licenses#assign-process-license)
 
 Power Automate uses the selected [desktop flow connection](desktop-flow-connections.md) to automatically sign in to your machine and run the unattended desktop flow. When the flow is complete, it signs out from the device and reports its activity.
 
@@ -36,7 +36,7 @@ When running desktop flows in unattended mode, keep in mind that:
 
 - The user specified in the connection must have permissions to create a remote desktop session on the machine. In most cases this means the user must be a member of the **Remote Desktop Users** group on the machine. On some Citrix configurations, the user must be in the **Direct Access Users** group.
 
-- The default screen resolution of the remote desktop session might be different than the one used during flow authoring. This might create different conditions (i.e. smaller screen size, less visible elements in target app etc.) for the flows that run in unattended mode, which might result in errors if a target element is not found, or even in interacting with the wrong element if keyboard or mouse actions are used. To prevent this, you can [set the proper screen resolution on unattended mode](how-to/set-screen-resolution-unattended-mode.md).
+- The default screen resolution of the remote desktop session might be different than the one used during flow authoring. This might create different conditions, such as smaller screen size, less visible elements in target app, and so on, for the flows that run in unattended mode. This can result in errors if a target element isn't found, or even in interacting with the wrong element if keyboard or mouse actions are used. To prevent this behavior, [set the proper screen resolution on unattended mode](how-to/set-screen-resolution-unattended-mode.md).
 
 >[!IMPORTANT]
 >
