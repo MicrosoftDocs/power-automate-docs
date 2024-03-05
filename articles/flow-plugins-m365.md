@@ -52,7 +52,7 @@ To sign in and create flows based on these templates, select the above templates
 
 You can use the flow based plugins shipped by Microsoft in your Copilot for Microsoft 365 app in Microsoft Teams.
 
-1. Login to [Microsoft Teams](https://teams.microsoft.com).
+1. Log in to [Microsoft Teams](https://teams.microsoft.com).
 1. Open the **M365 Chat** app.
 
     If the Copilot app isn't on your menu, search for it in the Teams app store. A plugins icon (four squares) shows on the text prompt.
