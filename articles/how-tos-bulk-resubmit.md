@@ -118,11 +118,16 @@ Canceling a large number of flow runs changes the run status to **Canceling**,
 
     A message opens asking you to confirm the cancellation of all runs.
 
-1. (Optional) In the message, select **Turn my flow off to prevent additional runs**, and then confirm you want to cancel all flow runs by selecting **Yes**.
+1. (Optional) In the message, select **Turn my flow off to prevent additional runs**.
+
+    If you don't do this optional step, go to step 7.
+
+1. Confirm you want to cancel all flow runs by selecting **Yes**.
 
     The run **Status** column might take up to three (3) minutes to show **Canceling**, and runs are effectively canceled once they show the **Canceling** status. It's still possible that in the first three minutes, some runs might continue to execute. Beyond the three-minute window, nothing runs.
 
     You can refresh the page to see the current status. In rare instances, if you don't see the **Canceling** status after the first three minutes, you can cancel all runs again. You can now make changes to the flow and start the flow again.
 
+1. To verify the cancelation, you can view runs with a **Canceling** status in **All Runs**. To view the canceled runs, you can select **Bulk-Canceled Runs** from the filters menu at the top of the page. Only runs that were canceled using this feature will show with this filter selected. To view other canceled runs, select **Canceled runs**.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
