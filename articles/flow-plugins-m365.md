@@ -64,7 +64,7 @@ You can use the flow based plugins shipped by Microsoft in your Copilot for Micr
 
     :::image type="content" source="media/flow-plugins-m365/copilot-plugin-flyout-automate.png" alt-text="A screenshot of the Power Automate plugin.":::
 
-1. Enter a natural languate prompt like **Get my pending approvals**, or **Show me my pending tasks from Microsoft Planner and To Do**, to get the results.
+1. Enter a natural language prompt like **Get my pending approvals**, or **Show me my pending tasks from Microsoft Planner and To Do**, to get the results.
 
 ## Environment support
 
