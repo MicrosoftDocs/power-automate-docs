@@ -64,7 +64,7 @@ Generate a flow description for flows by the press of a button. Copilot then ana
 
 ### Use Copilot to generate the description
 
-To generate a flow description, go to the details of the flow where you want to generate the description, and then select **Edit**. Under the Description text area, select **Let Copilot create a description**. Copilot analyzes your flow and populates the description with a summary of your flow.
+To generate a flow description, go to the details of the flow where you want to generate the description, and then select **Edit**. Under the **Description** text area, select **Let Copilot create a description**. Copilot analyzes your flow and populates the description with a summary of your flow.
 
 ### Help us improve this feature
 

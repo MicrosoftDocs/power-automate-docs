@@ -107,7 +107,7 @@ Generate a flow description for flows that you own or are a co-owner by the pres
 
 To generate a flow description, navigate to the properties of the flow where you want to generate the description. Under the **Description** text area, select **Let Copilot create a description**. Copilot then analyzes your flow and populates the description with a summary of your flow.
 
-:::image type="content" source="media/console/console_generate_description_with_ai.png" alt-text="Screenshot of the general properties of a desktop flow showing the generated flow description with Copilot.":::
+:::image type="content" source="media/console/console_generate_description_with_ai.png" alt-text="Screenshot of the general properties of a desktop flow showing the generated flow description with Copilot." lightbox="media/console/console_generate_description_with_ai.png":::
 
 ### Help us improve this feature
 
