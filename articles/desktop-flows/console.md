@@ -104,10 +104,6 @@ Currently, the generate flow description using Copilot functionality, is only av
 
 Currently, the generate flow description using Copilot functionality, is only available for users with a work or school account.
 
-### Prevent your users from using Copilot to generate a flow description
-
-To prevent users from using Copilot to generate flow descriptions, Power Platform administrators can turn off the **Copilot help assistance in Power Automate via Bing** setting in the Power Platform admin center.
-
 ### Help us improve this feature
 
 You can send feedback by selecting the thumb up or thumb down icon underneath the AI-generated content. Once you do, a dialog box appears, which you can use to submit feedback to Microsoft.
