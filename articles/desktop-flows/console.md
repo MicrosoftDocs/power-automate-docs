@@ -94,6 +94,16 @@ You can now generate a flow description for flows that you own or are a co-owner
 
 :::image type="content" source="media/console/console_generate_description_with_AI.png" alt-text="Screenshot of the general properties of a desktop flow showing the generate flow description with Copilot button .":::
 
+## Prerequisites
+
+### Availability by region
+
+Currently, the generate flow description using Copilot functionality, is only available in environments located in the United States.
+
+### Availability by account type
+
+Currently, the generate flow description using Copilot functionality, is only available for users with a work or school account.
+
 ### Prevent your users from using Copilot to generate a flow description
 
 To prevent users from using Copilot to generate flow descriptions, Power Platform administrators can turn off the **Copilot help assistance in Power Automate via Bing** setting in the Power Platform admin center.
