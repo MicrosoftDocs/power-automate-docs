@@ -7,7 +7,7 @@ documentationcenter: na
 author: natalie-pienkowska
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 11/22/2023
+ms.date: 03/05/2024
 ms.author: jamiller
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -101,5 +101,28 @@ Follow these steps to cancel flow runs using a template:
 
     For an example of the **Run history** page, go to the [Cancel up to 20 flow runs](#cancel-up-to-20-flow-runs) section in this article.
 
- 
+### Cancel flows runs in bulk
+
+This feature cancels a large number of flow runs.
+
+Canceling a large number of flow runs changes the run status to **Canceling**, typically within three (3) minutes. Then, the final status changes to **Canceled** after some time. Runs are effectively canceled once they show the **Canceling** status.
+
+> [!NOTE]
+> If you have a smaller number of flow runs, we recommend you cancel runs in batches of 20. To learn how to do this, go to [Cancel up to 20 flow runs](#cancel-up-to-20-flow-runs) in this article.
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. On the left panel, select **My flows**.
+1. On the right panel, select the cloud flow in which you would like to cancel flow runs.
+1. Select **All runs**.
+1. At the top of the page, select **Cancel all flow runs**.
+
+    A message opens asking you to confirm the cancellation of all runs.
+
+1. (Optional) In the message, select **Turn my flow off to prevent additional runs**, and then confirm you want to cancel all flow runs by selecting **Yes**.
+
+    The run **Status** column might take up to three (3) minutes to show **Canceling**, and runs are effectively canceled once they show the **Canceling** status. It's still possible that in the first three minutes, some runs might continue to execute. Beyond the three-minute window, nothing runs.
+
+    You can refresh the page to see the current status. In rare instances, if you don't see the **Canceling** status after the first three minutes, you can cancel all runs again. You can now make changes to the flow and start the flow again.
+
+
 [!INCLUDE[footer-include](includes/footer-banner.md)]
