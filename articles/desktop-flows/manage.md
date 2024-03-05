@@ -54,11 +54,11 @@ You can now generate a flow description for flows by editing the details of the 
 
 ### Availability by region
 
-Currently, copilot in Power Automate for desktop is only available in environments located in the United States.
+Currently, the generate flow description using Copilot functionality, is only available in environments located in the United States.
 
 ### Availability by account type
 
-Currently, copilot in Power Automate for desktop is only available for users with a work or school account.
+Currently, the generate flow description using Copilot functionality, is only available for users with a work or school account.
 
 ### Prevent your users from using Copilot to generate a flow description
 
