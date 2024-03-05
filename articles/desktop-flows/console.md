@@ -94,7 +94,7 @@ You can now generate a flow description for flows that you own or are a co-owner
 
 :::image type="content" source="media/console/console_generate_description_with_AI.png" alt-text="Screenshot of the general properties of a desktop flow showing the generate flow description with Copilot button .":::
 
-## Prerequisites
+### Prerequisites
 
 ### Availability by region
 
