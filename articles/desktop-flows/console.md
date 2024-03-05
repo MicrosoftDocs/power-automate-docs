@@ -87,7 +87,7 @@ Additionally, there's the **Run URL** that you can use to run the flow through m
 
 :::image type="content" source="media/console/desktop-flow-details-properties.png" alt-text="Screenshot of the details of a desktop flow.":::
 
-### Generate flow description using Copilot
+### Generate flow description using Copilot (Preview)
 
 You can now generate a flow description for flows that you own or are a co-owner by pressing on the "Let Copilot create a description" button. Copilot will then analyze the flow and generate a description for it.
 
