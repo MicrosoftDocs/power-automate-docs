@@ -28,7 +28,7 @@ You can run Power Automate flows as plugins from Copilot for Microsoft 365. This
 
 To use flows as plugins in Copilot for Microsoft 365, you need a license and the ability to enable plugins. To learn more, go to [Licenses for Copilot for Microsoft 365](/microsoft-365-copilot/extensibility/overview-business-applications#get-copilot-for-microsoft-365-licenses-and-enable-plugins).
 
-## Deploy the App
+## Deploy the app
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage) with your admin account.
 1. On the navigation pane, expand **Settings**, and then select **Integrated apps**.
@@ -39,7 +39,7 @@ To use flows as plugins in Copilot for Microsoft 365, you need a license and the
 
     It might take up to 12 hours for the deployed app's plugin to show in Copilot for Microsoft 365.
 
-## Enable Flow plugins templates
+## Enable flow plugins templates
 
 There are currently two templates that use the **Run from Copilot** trigger that can be used as plugins from Power Automate:
 
@@ -69,3 +69,7 @@ You can use the flow based plugins shipped by Microsoft in your Copilot for Micr
 ## Environment support
 
 Currently, the flows that are created and run need to be in the tenant's default environment. A setup experience for the plugin that allows users to choose nondefault environments to associate the plugin with isn't available yet.
+
+## See also
+
+[Build plugins using Microsoft business applications](/microsoft-365-copilot/extensibility/overview-business-applications)
