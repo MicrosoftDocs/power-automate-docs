@@ -97,8 +97,8 @@ More info: [Manage desktop flows](manage.md)
 > - This feature is in preview. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - To understand the capabilities and limitations of this feature, go to [FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md).
 
-### Generating a flow description using Copilot
-To generate a flow description, navigate to the flow properties. Under the description text area press on the "Let Copilot create a description" button. Copilot will then analyze your flow and populate the flow description with a summary of your flow.
+### Using Copilot to generate the description of a flow
+To generate a flow description, navigate to the properties of the flow that you want to generate the description for. Under the description text area press on the "Let Copilot create a description" button. Copilot will then analyze your flow and populate the flow description with a summary of your flow.
 
 :::image type="content" source="media/console/console_generate_description_with_AI.png" alt-text="Screenshot of the general properties of a desktop flow showing the generate flow description with Copilot button .":::
 
