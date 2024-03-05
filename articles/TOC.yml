@@ -302,8 +302,6 @@
       displayName: Use solutions for ALM of flows
     - name: Create a cloud flow in a solution
       href: create-flow-solution.md
-    - name: Drafts and versioning for cloud flows
-      href: drafts-versioning.md
     - name: Create child flows
       href: create-child-flows.md
     - name: Export solution
