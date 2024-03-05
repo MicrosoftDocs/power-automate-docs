@@ -34,6 +34,8 @@
     href: service-principal-support.md
   - name: Export and import a non-solution flow
     href: export-import-flow-non-solution.md
+  - name: Drafts and versioning for cloud flows
+    href: drafts-versioning.md
   - name: Use Power Automate flows as plugins in Copilot for Microsoft 365 (preview)
     href: flow-plugins-m365.md          
   - name: Automated flows
