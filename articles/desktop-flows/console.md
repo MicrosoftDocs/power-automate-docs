@@ -89,8 +89,16 @@ Additionally, there's the **Run URL** that you can use to run the flow through m
 
 ### Generate flow description using Copilot (Preview)
 
-You can now generate a flow description for flows that you own or are a co-owner by pressing on the "Let Copilot create a description" button. Copilot will then analyze the flow and generate a description for it. This feature is also available from the flow properties in the portal. More info:
-[Manage desktop flows](manage.md)
+You can now generate a flow description for flows that you own or are a co-owner by the press of a button. Copilot will then analyze the flow and generate a description for it. This feature is also available from the flow details in the portal. 
+More info: [Manage desktop flows](manage.md)
+
+> [!IMPORTANT]
+>
+> - This feature is in preview. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - To understand the capabilities and limitations of this feature, go to [FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md).
+
+### Generating a flow description using Copilot
+To generate a flow description, navigate to the flow properties. Under the description text area press on the "Let Copilot create a description" button. Copilot will then analyze your flow and populate the flow description with a summary of your flow.
 
 :::image type="content" source="media/console/console_generate_description_with_AI.png" alt-text="Screenshot of the general properties of a desktop flow showing the generate flow description with Copilot button .":::
 
@@ -112,6 +120,10 @@ You can send feedback by selecting the thumb up or thumb down icon underneath th
 
 > [!NOTE]
 > If you can't see the dialog box, your Power Platform admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
+
+### Disabling the generate flow description using Copilot functionality
+
+To disable the generate flow description using Copilot functionality, Power Platform admins can contact Microsoft support. More information: [Get Help + Support](/power-platform/admin/get-help-support)
 
 ### Disabling the user feedback functionality
 
