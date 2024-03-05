@@ -89,7 +89,8 @@ Additionally, there's the **Run URL** that you can use to run the flow through m
 
 ### Generate flow description using Copilot (Preview)
 
-You can now generate a flow description for flows that you own or are a co-owner by pressing on the "Let Copilot create a description" button. Copilot will then analyze the flow and generate a description for it.
+You can now generate a flow description for flows that you own or are a co-owner by pressing on the "Let Copilot create a description" button. Copilot will then analyze the flow and generate a description for it. This feature is also available from the flow properties in the portal. More info:
+[Manage desktop flows](manage.md)
 
 :::image type="content" source="media/console/console_generate_description_with_AI.png" alt-text="Screenshot of the general properties of a desktop flow showing the generate flow description with Copilot button .":::
 
