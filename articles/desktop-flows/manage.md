@@ -47,8 +47,16 @@ Follow these steps to see the details for a desktop flow:
 
 ### Generate flow description using Copilot (Preview)
 
-You can now generate a flow description for flows by editing the details of the flow and pressing on the "Let Copilot create a description" button. Copilot will then analyze the flow and generate a description for it. This functionality is also available from Power Automate for desktop console. More information:
-[Power Automate for desktop Console](console.md)
+You can now generate a flow description for flows by the press of a button. Copilot will then analyze the flow and generate a description for it. This feature is also available from the flow properties in the Power Autonate for desktop console. 
+More info: [Power Automate for desktop console](console.md)
+
+> [!IMPORTANT]
+>
+> - This feature is in preview. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - To understand the capabilities and limitations of this feature, go to [FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md).
+
+### Using Copilot to generate the description of a flow
+To generate a flow description, navigate to the details of the flow that you want to generate the description for and press the edit button. Under the description text area press on the "Let Copilot create a description" button. Copilot will then analyze your flow and populate the flow description with a summary of your flow.
 
 ### Prerequisites
 
@@ -60,10 +68,6 @@ Currently, the generate flow description using Copilot functionality, is only av
 
 Currently, the generate flow description using Copilot functionality, is only available for users with a work or school account.
 
-### Prevent your users from using Copilot to generate a flow description
-
-To prevent users from using Copilot to generate flow descriptions, Power Platform administrators can turn off the **Copilot help assistance in Power Automate via Bing** setting in the Power Platform admin center.
-
 ### Help us improve this feature
 
 You can send feedback by selecting the thumb up or thumb down icon underneath the AI-generated content. Once you do, a dialog box appears, which you can use to submit feedback to Microsoft.
@@ -72,6 +76,10 @@ You can send feedback by selecting the thumb up or thumb down icon underneath th
 
 > [!NOTE]
 > If you can't see the dialog box, your Power Platform admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
+
+### Disabling the generate flow description using Copilot functionality
+
+To disable the generate flow description using Copilot functionality, Power Platform admins can contact Microsoft support. More information: [Get Help + Support](/power-platform/admin/get-help-support)
 
 ### Disabling the user feedback functionality
 
