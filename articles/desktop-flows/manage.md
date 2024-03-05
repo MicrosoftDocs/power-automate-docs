@@ -45,6 +45,49 @@ Follow these steps to see the details for a desktop flow:
 
 :::image type="content" source="media/manage-desktop-flows/view-details.png" alt-text="Screenshot of the details of a desktop flow.":::
 
+### Generate flow description using Copilot (Preview)
+
+You can now generate a flow description for flows by editing the details of the flow and pressing on the "Let Copilot create a description" button. Copilot will then analyze the flow and generate a description for it. This functionality is also available from Power Automate for desktop console. More information:
+[Power Automate for desktop Console](console.md)
+
+### Prerequisites
+
+### Availability by region
+
+Currently, copilot in Power Automate for desktop is only available in environments located in the United States.
+
+### Availability by account type
+
+Currently, copilot in Power Automate for desktop is only available for users with a work or school account.
+
+### Prevent your users from using Copilot to generate a flow description
+
+To prevent users from using Copilot to generate flow descriptions, Power Platform administrators can turn off the **Copilot help assistance in Power Automate via Bing** setting in the Power Platform admin center.
+
+### Help us improve this feature
+
+You can send feedback by selecting the thumb up or thumb down icon underneath the AI-generated content. Once you do, a dialog box appears, which you can use to submit feedback to Microsoft.
+
+:::image type="content" source="media/pad_generative_answers/feedback_dialog1.png" alt-text="Image that shows where you can send your feedback about copilot in Power Automate for desktop.":::
+
+> [!NOTE]
+> If you can't see the dialog box, your Power Platform admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
+
+### Disabling the user feedback functionality
+
+As a Power Platform admin you can prevent users from sending feedback to Microsoft by disabling the **disableSurveyFeedback** tenant setting. More information:
+
+- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+
+### Data subject rights requests on user feedback
+
+Tenant administrators can view, export, and delete the feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage), and then selecting **Health** > **Product feedback**.
+
+### See also
+
+- [FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md)
+
 ## Share desktop flows
 
 You can share a desktop flow with other users in your organization, giving those users specific permissions to access your flows.
