@@ -119,7 +119,7 @@ Tenant administrators can view, export, and delete the feedback from users by si
 
 ### See also
 
-- [FAQ for generating description using Copilot](../faqs-copilot-generate-description.md)
+- [FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md)
 
 ## Update Power Automate for desktop
 
