@@ -14,7 +14,9 @@ ms.date: 10/02/2023
 search.audienceType: 
   - flowmaker
   - enduser
+ms.collection: bap-ai-copilot
 ---
+
 # Trigger a cloud flow based on email properties
 
 Use the **When a new email arrives (V3)** trigger to create a cloud flow that runs when one or more of the following email properties match criteria that you provide.

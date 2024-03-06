@@ -1,13 +1,13 @@
 ---
 title: The flow designer workspace
 description: The flow designer workspace
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 09/27/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

@@ -12,13 +12,11 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
-
 # Use credentials in desktop flow connections (preview)
 
 [This article is prerelease documentation and is subject to change.]
 
-The new **Credentials** page (preview) in Power Automate allows you to create, edit, and share login credentials using Azure Key Vault and use them in desktop flow connections. The following table provides the feature availability information in various regions. 
+The new **Credentials** page (preview) in Power Automate allows you to create, edit, and share login credentials using Azure Key Vault and use them in desktop flow connections.
 
 > [!IMPORTANT]
 > - This is a preview feature.
