@@ -7,7 +7,7 @@ documentationcenter: na
 author: natalie-pienkowska
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/05/2024
+ms.date: 11/22/2023
 ms.author: jamiller
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -52,33 +52,51 @@ To cancel flow runs that are in progress, follow the steps outlined previously i
 
 :::image type="content" source="./media/cancel-resubmit-how-to/cancel-runs.png" alt-text="Screenshot that displays the Cancel flow run(s) button.":::
 
-### Cancel flow runs in bulk
+### Cancel more than 20 flow runs
 
-This feature cancels a large number of flow runs.
-
-Canceling a large number of flow runs changes the run status to **Canceling**, typically within three (3) minutes. Then, the final status changes to **Canceled** after some time. Runs are effectively canceled after the three-minute window.
+The template cancels runs at approximately five (5) runs per minute. You might be subject to throttling if you change the delay period in the template flow.
 
 > [!NOTE]
-> If you have a smaller number of flow runs, we recommend you cancel runs in batches of 20. To learn how to do this, go to [Cancel up to 20 flow runs](#cancel-up-to-20-flow-runs) in this article.
+> - You can use the template only of you have a license that includes premium connectors. To learn more, go to [Types of Power Automate licenses&mdash;Premium connectors.](/power-platform/admin/power-automate-licensing/types#premium-connectors)
+> - This template isn't available for sovereign cloud customers.
+
+Follow these steps to cancel flow runs using a template:
+
+1. Obtain the **Environment Id** and **Flow Id**.
+    1. To find the Environment Id, select **Home** in the left navigation pane and look at the URL in your browser's address bar. Everything between `environments/` and `/home` is the Environment Id:
+
+        :::image type="content" source="media/cancel-resubmit-how-to/find-environment-id.png" alt-text="Screenshot of a flow URL with the Environment Id highlighted.":::
+
+        If you can't locate the Environment ID, ask your administrator to go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home) Details section. To learn more, go to [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id).
+
+    1. To find the Flow Id, select **My flows** in the left navigation pane and select your flow. When the Details page opens, look at the URL in your browser's address bar. Everything between `flows/` and `/details` is the Flow Id:
+        :::image type="content" source="media/cancel-resubmit-how-to/find-flow-id.png" alt-text="Screenshot of a flow URL with the Flow Id highlighted.":::
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. On the left panel, select **My flows**.
-1. On the right panel, select the cloud flow in which you would like to cancel flow runs.
-1. Select **All runs**.
-1. At the top of the page, select **Cancel all flow runs**.
+1. Access the [Cancel all my flow runs template](https://aka.ms/cancelAllMyRunsTemplate).
+1. Sign in to **HTTP with Microsoft Entra ID (preauthorized)**.
+1. Enter the following parameters, and then select **Sign in**:
+    1. Leave the **Gateways** box unchecked.
+    1. In the **Base Resource URL** field, enter `https://api.flow.microsoft.com`.
+    1. In the **Azure AD Resource URI (Application ID URI)** field, enter `https://service.flow.microsoft.com`.
 
-    A message opens asking you to confirm the cancellation of all runs.
+    :::image type="content" source="./media/cancel-resubmit-how-to/http-with-microsoft.png" alt-text="Screenshot that displays parameters for your flow.":::
 
-1. (Optional) In the message, select **Turn my flow off to prevent additional runs**.
+1. Sign in to **Power Automate Management**.
+1. In the **Authentication Type** field, select **First Party** from the dropdown menu.
+1. Select **Sign in**. The designer opens.
 
-    If you don't do this optional step, go to step 7.
+    :::image type="content" source="./media/cancel-resubmit-how-to/first-party.png" alt-text="Screenshot that displays the First Party option in the Authentication Type field.":::
 
-1. Confirm you want to cancel all flow runs by selecting **Yes**.
+1. In the designer, select **Save** to save the flow.
+1. To run your flow, select **Run** > **Continue**.
+1. In the **Environment Id** and **Flow Id** fields, enter the Environment Id and Flow Id you obtained in step 1.
+1. Select **Run Flow**. All flow runs are canceled.
+ 
+    :::image type="content" source="./media/cancel-resubmit-how-to/run-flow.png" alt-text="Screenshot of the Rob flow screen that displays the Environment Id and Flow Id.":::
 
-    The run **Status** column might take up to three (3) minutes to show **Canceling**. Within the three-minute window, the runs might show up as running or cancelling, but might still continue to execute. Beyond the three-minute window, nothing runs.
+1. To verify the cancellation, view the **Run history** page.
 
-    You can refresh the page to see the current status. In rare instances, if you don't see the **Canceling** status after the first three minutes, you can cancel all runs again. You can now make changes to the flow and start the flow again.
-
-1. To verify the cancelation, you can view runs with a **Canceling** status in **All Runs**. To view the canceled runs, you can select **Bulk-Canceled Runs** from the filters menu at the top of the page. Only runs that were canceled using this feature will show with this filter selected. To view other canceled runs, select **Canceled runs**.
+    For an example of the **Run history** page, go to the [Cancel up to 20 flow runs](#cancel-up-to-20-flow-runs) section in this article.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
