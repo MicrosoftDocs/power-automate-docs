@@ -4,7 +4,7 @@ description: Set screen resolution on unattended mode
 author: fredgGitHub
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 08/04/2023
+ms.date: 03/04/2024
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
@@ -17,7 +17,10 @@ search.audienceType:
 ---
 # Set screen resolution on unattended mode
 
-In some scenarios, Power Automate might run unattended flows in a lower resolution than the one used to develop the flows. As a result, some UI elements could be hidden from the screen and cause flows to fail.
+In some scenarios, Power Automate might run unattended flows in a lower resolution than the one used to develop the flows. As a result, some UI elements could be hidden from the screen, while any images captured might not be identified at runtime under a different resolution. This might cause flows to fail. In such cases, you can follow one of the two approaches explained in this article to adjust the screen resolution used for unattended flows accordingly.
+
+> [!NOTE]
+> The screen resolution can be adjusted per target machine, not per flow. If you need one of your unattended flows to run in another resolution, a different target machine needs to be used.
 
 ## With Windows registry
 
@@ -32,10 +35,10 @@ Open the registry editor (Windows key + R, and type 'regedit'), and then set the
 
 | Hive | Key | Name | Type | Description |
 |---|---|---|---|---|
-| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Screen | ScreenResolutionEnabled | DWORD | If set to '1', will enable the custom resolution settings. |
-| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Screen | Width | DWORD | Set the screen resolution width. |
-| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Screen | Height | DWORD | Set the screen resolution height. |
-| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Screen | Scale | DWORD | Set the screen resolution scale. |
+| HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | ScreenResolutionEnabled | DWORD | If set to '1', will enable the custom resolution settings. |
+| HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | Width | DWORD | Set the screen resolution width. |
+| HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | Height | DWORD | Set the screen resolution height. |
+| HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | Scale | DWORD | Set the screen resolution scale. |
 
 ## With UIFlowService.exe.config file
 
@@ -49,7 +52,7 @@ To change the resolution in which unattended flows are run by editing the UIFlow
     <add key="Microsoft.Flow.RPA.UIFlowService.ScreenDefaultResolutionEnabled" value="true" />
     ```
 
-1. Change the values of the following elements to the proper screen resolution width, height, and scale, respectively. The following code sets the default resolution to 1920 x 1080 pixels.
+1. Change the values of the following elements to the proper screen resolution width, height, and scale, respectively. The following code sets the default resolution to 1920 x 1,080 pixels.
 
     ``` XML
     <add key="Microsoft.Flow.RPA.UIFlowService.ScreenDefaultResolutionWidth" value="1920" />

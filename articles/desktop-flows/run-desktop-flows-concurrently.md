@@ -1,12 +1,12 @@
 ---
 title: Run desktop flows concurrently
 description: See how to run desktop flows concurrently on machines running Windows Server.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/15/2023
+ms.date: 10/09/2023
 ms.author: pefelesk
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker
@@ -29,7 +29,7 @@ Replicate the following steps to run multiple desktop flows concurrently on a si
 
 1. Use two or more user accounts to create desktop flow connections targeting this device. To find more information about desktop flow connections, go to [Create desktop flow connections](desktop-flow-connections.md).
 
-Power Automate automatically scales the number of concurrent desktop flow runs to the supported maximum. If the machine's capacity is exceeded, the remaining runs wait as described in [Run desktop flows sequentially](run-desktop-flows-sequentially.md).
+Power Automate automatically scales the number of concurrent desktop flow runs to the supported maximum. The machine run queue follows a first-in, first-out approach, which means the first run received is the next one executed. If all available machines have reached their maximum concurrent sessions and can't execute the next run in the queue, the queue is blocked until a machine becomes available to run the next run in the queue. If the machine's capacity is exceeded, the remaining runs wait as described in [Run desktop flows sequentially](run-desktop-flows-sequentially.md).
 
 > [!IMPORTANT]
 > If you want to use more than two parallel user sessions on Windows Server, you must turn on Remote Desktop Services (RDS). To learn more about RDS, go to [License your RDS deployment with client access licenses](/windows-server/remote/remote-desktop-services/rds-client-access-license).

@@ -8,9 +8,7 @@ ms.reviewer:
 contributors:
 author: rpapostolis
 ---
-# Trigger work queues processing (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Trigger work queues processing
 
 Power Automate provides a [**variety of triggers**](../triggers-introduction.md) that can be used to initiate work queue processing. These triggers can be categorized into different types based on their functionality.
 

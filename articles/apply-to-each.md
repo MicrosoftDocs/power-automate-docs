@@ -1,28 +1,25 @@
 ---
-title: Use the apply to each action in Power Automate to loop through an array of items. (contains video) | Microsoft Docs 
+title: Use the Apply to each action to process a list of items periodically (contains video)
 description: Use Power Automate to loop through an array of items to check multiple conditions and take actions based on those conditions.
-services: ''
 suite: flow
 documentationcenter: na
 author: natalie-pienkowska
 contributors:
-  - natalie-pienkowska
+  - kisubedi
   - kartikraop
   - v-aangie
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 01/12/2023
-ms.author: napienko
+ms.date: 09/08/2023
+ms.author: kisubedi
 ms.reviewer: angieandrews
+ms.custom: bap-template
 search.audienceType: 
   - flowmaker
   - enduser
+ms.collection: bap-ai-copilot
 ---
+
 # Use the Apply to each action to process a list of items periodically
 
 Many triggers can immediately start a cloud flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a cloud flow that queries a data source on a predefined schedule, taking certain actions based on the properties of the items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to process a list of items. For example, you could use **Apply to each** to update records from a database or list of items from Microsoft SharePoint.
@@ -43,21 +40,24 @@ In this tutorial, we'll create a cloud flow that runs every 15 minutes and does 
 
 This diagram shows the details of the flow we'll create.
 
->[!div class="mx-imgBorder"]
->![Screenshot of an overview of the flow being built.](./media/apply-to-each/foreach-flow-visio.png "Overview of the flow being built")
+:::image type="content" source="./media/apply-to-each/foreach-flow-visio.png" alt-text="Screenshot of an overview of the flow being built.":::
 
 ## Prerequisites
 
 Here are the requirements for successfully performing the steps in this tutorial.
 
-* An account that's registered to use [Power Automate](https://make.powerautomate.com).
-* A Microsoft 365 Outlook account.
-* The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
-* Connections to Microsoft 365 Outlook and the push notification service.
+- An account that's registered to use [Power Automate](https://make.powerautomate.com).
+- A Microsoft 365 Outlook account.
+- The Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+- Connections to Microsoft 365 Outlook and the push notification service.
 
-[!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
+For detailed information about using SharePoint with Power Automate, go to the [SharePoint documentation](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers).
+
+[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
 ## Create a cloud flow
+
+# [Classic designer](#tab/classic-designer)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
@@ -83,11 +83,32 @@ Here are the requirements for successfully performing the steps in this tutorial
 
    Don't include attachments because they won't be used in the flow.
 
-    >[!div class="mx-imgBorder"]  
-    >![Screenshot of a configured email card.](./media/apply-to-each/foreach-5.png "Configured email card")
+    :::image type="content" source="./media/apply-to-each/foreach-5.png" alt-text="Screenshot of a configured email card.":::
 
-    > [!NOTE]
-    > So far, you've created a simple flow that gets some emails from your inbox. These emails will be returned in an array. The **Apply to each** action requires an array, so this is exactly what's needed.
+So far, you've created a simple flow that gets some emails from your inbox. These emails will be returned in an array. The **Apply to each** action requires an array, so this is exactly what's needed.
+
+# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+1. Try asking Copilot to create a flow by typing this prompt: 
+
+    **Every 15 minutes, Get top 10 unread emails and get my manager. If the email is from my manager OR the email is Important and subject contains 'meet now', send me a push notification to my phone.**
+
+    Copilot suggests a flow based on your prompt:
+
+    :::image type="content" source="./media/apply-to-each/copilot-apply-to-each-prompt.png" alt-text="Screenshot of a flow suggestion from Copilot.":::
+
+1. Select **Next** and review the connections.
+1. Select **Next** and your flow appears on the designer.
+
+    The flow is preconfigured with all the required fields in the designer.
+
+    :::image type="content" source="./media/apply-to-each/copilot-configured-flow.png" alt-text="Screenshot of a flow created by Copilot based on your prompt.":::
+
+1. Save the flow and it's ready to use.
+
+---
 
 ## Add actions and conditions
 
@@ -116,8 +137,7 @@ Here are the requirements for successfully performing the steps in this tutorial
 
 1. On the **Send me a mobile notification** card in the **Text** field, enter the details for the push notification that will be sent if the subject of an email contains "meet now" and the **Importance** is **high**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of a notification for a mobile configuration.](./media/apply-to-each/foreach-11.png "Notification for a mobile configuration")
+    :::image type="content" source="./media/apply-to-each/foreach-11.png" alt-text="Screenshot of a notification for a mobile configuration.":::
 
 1. Select the **If no** branch to select the recipients.
     * Select **Add an action**, and then type **get manager** in the search field.
@@ -153,8 +173,7 @@ Next, you'll define what should happen if the search condition (the email was se
 
 1. In the **Dynamic content** list, select **Is Read**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of mark as read action.](./media/apply-to-each/foreach-mark-as-read2.png "Mark as read selections")
+    :::image type="content" source="./media/apply-to-each/foreach-mark-as-read2.png" alt-text="Screenshot of mark as read action.":::
 
 1. On the toolbar at the top, select **Save** to save your flow.
 
@@ -172,16 +191,13 @@ Next, you'll define what should happen if the search condition (the email was se
 
 1. Select the **Run** icon to the right of the flow name.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of run now.](./media/apply-to-each/run-flow.png "Run your flow")
+    :::image type="content" source="./media/apply-to-each/run-flow.png" alt-text="Screenshot of run now.":::
 
 1. On the panel to the right, select **Run flow**.
 
 1. When the run flow has successfully started, select **Done**.
 
 1. Select the flow run in which you're interested to view the results.
-
-
 
 ## View results of the run
 

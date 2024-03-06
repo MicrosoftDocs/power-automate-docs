@@ -14,5 +14,4 @@
 
 1. Select the folder that you'd like the flow to monitor for incoming emails, and then select **Show advanced options**.
 
-     >[!NOTE]
-     > To display all your email folders, select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives (V3)** card.
+    To display all your email folders, select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives (V3)** card.

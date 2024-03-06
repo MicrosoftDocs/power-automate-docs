@@ -1,22 +1,16 @@
 ---
-title: Trigger flows when a row is added, modified, or deleted | Microsoft Docs
-description: "Learn how to trigger flows by using the When a row is added, modified, or deleted trigger."
-services: ''
+title: Trigger flows when a row is added, modified, or deleted
+description: Learn how to trigger flows by using the When a row is added, modified, or deleted trigger.
 suite: flow
-documentationcenter: na
 author: radioblazer
 contributors:
   - radioblazer
   - v-aangie
 ms.author: matow
 ms.reviewer: angieandrews
-editor: ''
-tags: ''
-ms.devlang: na
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 12/20/2022
+ms.date: 10/02/2023
+ms.collection: bap-ai-copilot
 search.app: 
   - Flow
   - Powerplatform
@@ -34,41 +28,45 @@ The **When a row is added, modified or deleted** trigger runs a flow whenever a 
 
 - Additionally, depending on the scopes defined in the flow, you might need at least that level of read on the same table. You can get more information about [Environment security](/power-platform/admin/database-security).
 
-   ![Dataverse triggers.](../media/create-update-delete-trigger/triggers.png "Dataverse triggers")
-
 The following information is required to use the **When a row is added, modified or deleted** trigger.
 
 - Trigger condition
-
 - Table name
-
 - Scope
 
-### Trigger condition
+[!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
+
+# [Classic designer](#tab/classic-designer)
+
+Set the parameters directly on the card for the **When a row is added, modified or deleted** trigger.
+
+:::image type="content" source="../media/create-update-delete-trigger/trigger-current.png" alt-text="Screenshot of ":::
+
+# [Edit with Copilot](#tab/edit-with-copilot)
+
+In your flow, select the card for the **When a row is added, modified or deleted** trigger. A pane opens on the left with the **Parameters** tab selected.
+
+:::image type="content" source="../media/create-update-delete-trigger/trigger-ai.png" alt-text="Screenshot of ":::
+
+---
+
+## Trigger condition
 
 The trigger condition, **Change type**, precisely defines which combination of changes to a row would run the flow.
 
-   ![Trigger conditions.](../media/create-update-delete-trigger/2.png "Trigger conditions")
-
 When the flow is triggered by the creation, update, or deletion of a row, the value of `triggerOutputs()['body/SdkMessage']` will be `Create`, `Update`, or `Delete`, respectively.
 
->[!NOTE]
-> If there are multiple updates to a single row in a table, Power Automate evaluates the trigger for each update, even if the values that are being updated on the row are the same as the previous value. These updates could lead to multiple flow runs. 
+If there are multiple updates to a single row in a table, Power Automate evaluates the trigger for each update, even if the values that are being updated on the row are the same as the previous value. These updates could lead to multiple flow runs.
 
-### Table name
+## Table name
 
 The **Table name** list filters the rows to indicate precisely which kind of rows should change before the flow triggers. See [Tables in Dataverse](/powerapps/maker/common-data-service/entity-overview).
 
-   ![Select a table name.](../media/create-update-delete-trigger/created-modified-deleted.png "Select a table name")
+The **When a row is added, modified or deleted** trigger doesn't support triggering flows on relationships of type 1:N or N:N.
 
->[!NOTE]
-> The **When a row is added, modified or deleted** trigger doesn't support triggering flows on relationships of type 1:N or N:N.
-
-### Scope
+## Scope
 
 The **Scope** list indicates those rows should be monitored to determine if the flow should be run.
-
-   ![Select scope for triggering flow.](../media/create-update-delete-trigger/scope.png "Select scope for triggering flow")
 
 Here’s what each scope means:
 
@@ -79,39 +77,53 @@ Here’s what each scope means:
 | Parent: Child business unit | Actions are taken on rows that are owned by anyone in your [business unit or a child business unit](/power-platform/admin/wp-security-cds#business-units). |
 | User                        | Actions are taken on rows owned by you. |
 
-### Advanced options
+## Advanced options
 
 You can set additional properties to define more granularly when the flow runs and the user profile under which it runs.
+
+# [Classic designer](#tab/classic-designer)
+
+To access the advanced options, select **Show advanced options**.
+
+:::image type="content" source="../media/create-update-delete-trigger/advanced-current.png" alt-text="Screenshot of the advanced options.":::
+
+# [Edit with Copilot](#tab/edit-with-copilot)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+1. To access the advanced options, select the **List rows** card.
+1. In the **Parameters** tab, select **Add new parameters** from the dropdown menu.
+
+    :::image type="content" source="../media/create-update-delete-trigger/advanced-ai.png" alt-text="Screenshot of the advanced options in the Add new parameters field.":::
+
+---
 
 ## Filter conditions
 
 Use filter conditions to set conditions for when to trigger flows.
 
-:::image type="content" source="../media/create-update-delete-trigger/filter-conditions.png" alt-text="Screenshot of filter conditions.":::
-
-## Filtering columns
+### Filter columns
 
 Use the **Select columns** box to define the specific columns of the row that should cause the flow to run when changed, as a comma-separated list of unique column names.
 
-:::image type="content" source="../media/create-update-delete-trigger/filter-columns.png" alt-text="Screenshot of filtering columns by firstname.lastname.":::
+This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
 
->[!NOTE]
->This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
->This property in not supported on virtual tables.
+This property isn't supported on virtual tables.
 
 ### Filter expression
 
-The filter expression provides a way for you to define an OData style filter expression to help you to define the trigger conditions even more precisely. The flow runs only when the expression evaluates to *true* after the change is saved in Dataverse. In the following example, the flow triggers when `firstname` is updated to "John".
+The filter expression provides a way for you to define an OData style filter expression to help you to define the trigger conditions even more precisely. The flow runs only when the expression evaluates to *true* after the change is saved in Dataverse. In the following examples, the flow triggers when `firstname` is updated to "John".
 
-See the following examples, [standard filter operators](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators),
-and [query functions](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-query-functions) to learn how to construct these filter expressions.
+Examples for **Filter rows**:
 
->[!NOTE]
->Unlike the examples in the reference links, your expression must not contain the string **$filter=**. This string applies only when you use the APIs directly.
+`firstname eq 'John'`
 
-   ![Row filter equal.](../media/create-update-delete-trigger/row-filter.png)
+`contains(firstname,'John')`
 
-   ![Row filter contains.](../media/create-update-delete-trigger/row-filter-contains.png)
+To learn how to construct these filter expressions, go to the examples in [standard filter operators](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators)
+and [query functions](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-query-functions).
+
+Unlike the examples in the reference links, your expression must not contain the string **$filter=**. This string applies only when you use the APIs directly.
 
 ### Wait condition using delay until
 
@@ -119,26 +131,30 @@ Use an OData-style time stamp in the **Delay until** property to delay the flow 
 
 The key benefit of using the Dataverse **Delay until** property instead of the standard **Delay until** *action* is the Dataverse **Delay until** property never expires, allowing the flow run to wait for long periods of time.
 
-:::image type="content" source="../media/create-update-delete-trigger/run-as-invoke.png" alt-text="Screenshot of the 'Delay until' field.":::
-
 ### User impersonation using Run As
 
->[!IMPORTANT]
->The flow owner must have the Microsoft Dataverse privilege **Act on Behalf of Another User** (prvActOnBehalfOfAnotherUser). The **Delegate** security role includes this privilege by default. You can enable it on any security role. For more details, go to [Impersonate another user](/powerapps/developer/common-data-service/impersonate-another-user).
+The flow owner must have the Microsoft Dataverse privilege **Act on Behalf of Another User** (prvActOnBehalfOfAnotherUser). The **Delegate** security role includes this privilege by default. You can enable it on any security role. For more details, go to [Impersonate another user](/powerapps/developer/common-data-service/impersonate-another-user).
 
 When you create flows with the **When a row is added, modified or deleted** trigger, you can set each Microsoft Dataverse action in the flow to be performed using the context of a user, other than the flow owner.
 
-Follow these steps to impersonate a user:
+Follow these steps to impersonate a user.
 
-1. In the Power Automate flow definition, select **Show advanced options** in the **When a row is added, modified or deleted** trigger.
+# [Classic designer](#tab/classic-designer)
 
-1. Select a value for **Run as** to tell Microsoft Dataverse which user’s context you intend to use for subsequent Dataverse actions.
+1. In the designer, select a value for **Run as** to tell Microsoft Dataverse which user’s context you intend to use for subsequent Dataverse actions.
+1. For each Dataverse action that you want to run as a different user, select the ellipses (**...**) in the upper-right corner and then select the **Use invoker’s connection** setting.
 
-1. For each Dataverse action that you want to run as a different user, select the menu in the upper-right corner (...), as shown in the following image, and select the **Use invoker’s connection** setting. For the steps in which it is not selected, the default user is assumed. This would call the underlying APIs as per the selected user, and not as the flow owner.
+For the steps in which it isn't selected, the default user is assumed. This calls the underlying APIs as per the selected user, and not as the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
 
-    :::image type="content" source="../media/create-update-delete-trigger/run-as-invoke.png" alt-text="Screenshot of the option to run as the modifying user.":::
+# [Edit with Copilot](#tab/edit-with-copilot)
 
-If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author. Here are the other options:
+For each Dataverse action that you want to run as a different user, select an option in the **Run as** dropdown menu.
+
+For the steps in which it isn't selected, the default user is assumed. This calls the underlying APIs as per the selected user, and not as the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
+
+---
+
+Here are the other options:
 
 - **Flow owner**: The user who created the flow.
 
@@ -146,9 +162,7 @@ If nothing is specified, it defaults to the flow owner who created the flow&mdas
 
 - **Modifying user**: The user that took the action on the Microsoft Dataverse row, causing the flow to get triggered or modified.
 
-    :::image type="content" source="../media/create-update-delete-trigger/11.png" alt-text="Screenshot of 'run as' options.":::
-
-Additionally, instant flows allow running the steps of any other [connector](/connectors/) (such as [Microsoft Teams](/connectors/teams/), [Microsoft 365 Outlook](/connectors/office365/), or [SharePoint](/connectors/sharepointonline/) in the same flow using the invoker’s connection. To do so, follow these steps:
+Additionally, instant flows allow running the steps of any other [connector](/connectors/) such as [Microsoft Teams](/connectors/teams/), [Microsoft 365 Outlook](/connectors/office365/), or [SharePoint](/connectors/sharepointonline/) in the same flow using the invoker’s connection. To do so, follow these steps:
 
 1. Go to the flow overview page.
 

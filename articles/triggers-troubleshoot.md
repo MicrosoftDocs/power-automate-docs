@@ -4,11 +4,16 @@ description: Learn how to find and fix issues when your flows won't run.
 suite: flow
 documentationcenter: na
 author: kenseongtan
+contributors:
+  - kisubedi
+  - kenseongtan
+  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 08/26/2022
+ms.date: 10/02/2023
 ms.author: kenseongtan
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowadmin
 ---
@@ -29,15 +34,14 @@ Sometimes, you might need to [Identify specific flow runs](./fix-flow-failures.m
 
    If your flow violates a DLP policy, it's suspended, causing the trigger to not fire. To know if your flow is suspended, try to edit the flow and save it. The flow checker will report it if the flow violates a DLP policy. Your admin can change the DLP policy.
 
-1. The trigger may be failing.
-
+1. The trigger may be failing. 
    Follow these steps to confirm:
 
    1. Sign in to [Power Automate](https://make.powerautomate.com).
    1. Go to **My flows**, and then select your flow.
    1. Do you see the following error in the **Details**?
 
-      ![Screenshot of an error message about the flow's trigger.](./media/triggers-introduction/fix-trigger.png)
+       :::image type="content" source="./media/triggers-introduction/fix-trigger.png" alt-text="Screenshot of an error message about the flow's trigger.":::
 
    This error means that Power Automate tried multiple times to establish a connection to register the trigger and failed. Your flow won't trigger until this problem is resolved.
 
@@ -51,7 +55,7 @@ After the problem is resolved, modify the flow and then save it. You can then ch
 
 ### Verify connections
 
-With the default settings, users only need to sign in to a connection once. They can then use that connection until it's revoked by an admin. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s authentication token to expire after a specific amount of time. Token lifetime policies are configured on Azure Active Directory. For more information, review this [Azure article](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) or this [support article](https://support.microsoft.com/help/4467879/conditional-access-and-multi-factor-authentication-in-flow).
+With the default settings, users only need to sign in to a connection once. They can then use that connection until it's revoked by an admin. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s authentication token to expire after a specific amount of time. Token lifetime policies are configured on Microsoft Entra ID. For more information, review this [Azure article](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) or this [support article](https://support.microsoft.com/help/4467879/conditional-access-and-multi-factor-authentication-in-flow).
 
 Follow these steps to verify if your connections are broken:
 
@@ -67,7 +71,7 @@ Follow these steps to verify if your connections are broken:
 1. Edit your flow to find the connector name for the trigger.
 1. Go to the [list of connectors](https://make.powerautomate.com/connectors) and then search for that connector. If the connector is a premium connector, **PREMIUM** displays below the name of the connector.
 
-   ![A screenshot of a premium connector.](./media/triggers-introduction/premium-connector.png)
+    :::image type="content" source="./media/triggers-introduction/premium-connector.png" alt-text="Screenshot of a premium connector.":::
 
 A standalone Power Apps or Power Automate license is required to access all premium, on-premises, and custom connectors. You can [purchase licenses](https://make.powerautomate.com/pricing) at any time.
 
@@ -86,7 +90,7 @@ You just completed an event. For example, you added a new list item or sent an e
 
 Go to **My flows** in the left pane, and then select the flow. In the **28-day run history**, select **All runs**.
 
-![A screenshot showing all runs.](./media/triggers-introduction/all-runs.png)
+:::image type="content" source="./media/triggers-introduction/all-runs.png" alt-text="Screenshot showing all runs.":::
 
 If you expect the flow to run but it didn’t run, see if it shows the trigger check was skipped at that time. If the trigger check was skipped, it means that the trigger condition wasn’t met for the flow to trigger. Verify the flow the inputs and trigger conditions to confirm if you are using the latest configuration to trigger the flow.
 
@@ -94,24 +98,40 @@ If you expect the flow to run but it didn’t run, see if it shows the trigger c
 
 Sometimes, the inputs and trigger conditions may cause failures. Follow these steps to verify your inputs and conditions.
 
+[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
+
+# [Classic designer](#tab/classic-designer)
+
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Edit the flow.
 1. Expand the first card to see what folders, sites, mailboxes, etc. are used in the trigger.
-1. Select the ellipses (…) on the card.
+1. On the card, select the ellipses (**…**) > **Settings**.
+1. Find **Trigger conditions**.
 
-   ![A screenshot that shows how to access the settings.](./media/triggers-introduction/settings.png)
+   If the field is empty, it means that there are no additional customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
+
+   If there are additional customizations in **Trigger Conditions**, confirm that you're using the expected or correct inputs to trigger the flow.
+
+    :::image type="content" source="./media/triggers-introduction/trigger-conditions.png" alt-text="Screenshot that shows trigger conditions.":::
+
+# [Edit with Copilot](#tab/edit-with-copilot)
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. Edit the flow.
+1. Expand the first card to see what folders, sites, mailboxes, and others are used in the trigger.
+
+    :::image type="content" source="./media/triggers-introduction/copilot-triggers.png" alt-text="Screenshot that shows trigger site in Copilot.":::
 
 1. Select **Settings**.
-
-   ![A screenshot that shows settings.](./media/triggers-introduction/display-settings.png)
-
 1. Find **Trigger conditions**.
 
    If the field is empty, it means that there are no additional customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
 
    If there are additional customizations in **Trigger Conditions**, confirm that you are using the expected or correct inputs to trigger the flow.
 
-   ![A screenshot that shows trigger conditions.](./media/triggers-introduction/trigger-conditions.png)
+    :::image type="content" source="./media/triggers-introduction/copilot-trigger-conditions.png" alt-text="Screenshot that shows trigger conditions in Copilot.":::
+
+---
 
 ### Check permissions
 
@@ -152,20 +172,31 @@ See the following table to understand how your flow responds when it's turned ba
 
 | Trigger type|Description|
 |---|---|
-| Polling, such as the **recurrence** trigger | When the flow is turned on again, all unprocessed or pending events are processed. Delete, and then recreate your flow if you don't want to process pending items when you turn your flow back on. |
-| Webhook                                 | When the flow is turned on again, it processes new events that are generated after the flow is turned on.                               |
+| Polling, such as the `recurrence` trigger | When the flow is turned on again, all unprocessed or pending events are processed. If you don't want to process pending items when you turn your flow back on, delete and then recreate your flow. |
+| Webhook  | When the flow is turned on again, it processes new events that are generated after the flow is turned on. |
 
 Follow these steps to determine the type of trigger that your flow uses.
 
-1. Select the … (ellipsis) for your flow, and then select **Peek code**.
+# [Classic designer](#tab/classic-designer)
 
-   ![A screenshot of peekcode.](./media/triggers-introduction/peek-code.png)
+1. On the title bar, select the ellipsis (**...**) > **Peek code**.
 
-1. Find the recurrence section with an interval frequency element. If this section is available, the trigger is a polling trigger.
+    :::image type="content" source="./media/triggers-introduction/peek-code.png" alt-text="Screenshot of peek code.":::
 
-   ![A screenshot of the recurrence section.](./media/triggers-introduction/frequency.png)
+1. Find the `recurrence` section with an interval `frequency` element. If this section is available, the trigger is a *polling* trigger.
 
-## My flow is triggered multiple times or some of my actions run multiple times 
+    :::image type="content" source="./media/triggers-introduction/frequency.png" alt-text="Screenshot of the recurrence section.":::
+
+# [Edit with Copilot](#tab/edit-with-copilot)
+
+1. In the action configfuration pane to the left, select **Code View**.
+1. Find the `recurrence` section with an interval `frequency` element. If this section is available, the trigger is a *polling* trigger.
+
+    :::image type="content" source="./media/triggers-introduction/copilot-recurrence.png" alt-text="Screenshot of the recurrence section in Copilot.":::
+
+---
+
+## My flow is triggered multiple times or some of my actions run multiple times
 
 You may encounter a scenario where a single flow run has some (or all) of its actions duplicated. While the UI doesn't show this problem, you might see the results of the flow being duplicated. For example, duplicate emails sent, or duplicate list items created.
 
@@ -189,22 +220,33 @@ For example, your flows may run every 15 minutes if you’re on the **Free** lic
 
 And, if your license is the **Flow for Office 365** plan (from your Enterprise license E3, E5, etc.) or the **Flow for Dynamics 365** plan, your flow won't run again until five minutes have elapsed. So, it may be a few minutes between the time the triggering event occurs and the time the flow begins.
 
-Follow these steps to check the trigger wake-up frequency:
+Follow these steps to check the trigger wake up frequency.
 
-1. Go to your flow trigger, and then select the … (ellipsis).
-1. Select **Peek code**.
+# [Classic designer](#tab/classic-designer)
 
-   ![A screenshot of the peek code setting.](./media/triggers-introduction/peek-code.png)
+1. Go to your flow trigger, and then select the ellipsis (**...**) > **Peek code**.
+
+    :::image type="content" source="./media/triggers-introduction/peek-code.png" alt-text="Screenshot of the peek code setting.":::
 
 1. Find the interval frequency.
 
-   ![A screenshot of the frequency element.](./media/triggers-introduction/frequency.png)
+    :::image type="content" source="./media/triggers-introduction/frequency.png" alt-text="Screenshot of the frequency element.":::
+
+# [Edit with Copilot](#tab/edit-with-copilot)
+
+1. On your flow, select your flow trigger.
+1. Select **Code View**.
+1. Find the interval frequency.
+
+    :::image type="content" source="./media/triggers-introduction/copilot-recurrence.png" alt-text="[Screenshot of the frequency element in Copilot.":::
+
+---
 
 If it's taking much longer than expected for your flow to trigger, here are the two likeliest reasons:
 
-1. There have been too many calls to the connector or flow, causing it to be throttled. To verify if your flow is being throttled, manually test the flow to see if it triggers immediately. If it triggers immediately, it is not throttled.
+1. There's been too many calls to the connector or flow, causing it to be throttled. To verify if your flow is being throttled, manually test the flow to see if it triggers immediately. If it triggers immediately, it is not throttled.
 
-   Further, you can check the [Power Automate analytics](./admin-analytics-report.md) to learn more about your flows.
+   You can check the [Power Automate analytics](./admin-analytics-report.md) to learn more about your flows.
 
    If your flow is frequently throttled, redesign your flow to use fewer actions. Learn more about [plan limits and tips to optimize flows to use fewer actions](https://support.microsoft.com/help/4531688/troubleshooting-slow-running-flows).
 

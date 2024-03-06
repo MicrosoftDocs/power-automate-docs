@@ -4,7 +4,7 @@ description: See how to troubleshoot common issues of Power Automate desktop flo
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 06/20/2023
+ms.date: 09/21/2023
 ms.author: pefelesk
 ms.reviewer: tapanm
 contributors:
@@ -26,34 +26,21 @@ To open the Power Automate troubleshoot tool:
 >[!NOTE]
 >You need to have admin privileges to open the troubleshoot tool from Power Automate machine runtime.  
 
-## Resolve sign in and sign out issues
-
-Power Automate uses a file named **msalcache.bin3** to acquire tokens and authenticate users.
-
-If you encounter errors while signing in or signing out, try to erase all the stored tokens by deleting this file. To delete the file, navigate to **C:\Users\Username\AppData\Local\Microsoft\Power Automate Desktop\Cache**.
-
-> [!NOTE]
-> If the **AppData** folder isn't visible in your user folder, try to [display hidden files](https://support.microsoft.com/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2).
-
-If you have Power Automate installed in another drive, replace **C** with the letter of the respective drive. Also, replace **Username** with the name of your user folder.
-
-After deleting the **msalcache.bin3** file, restart the Power Automate service and sign in to your account.
-
-:::image type="content" source="media/troubleshoot/msal-file.png" alt-text="Screenshot of the msalcache.bin3 file in the file explorer.":::
-
-### Sign in using Web Account Manager (WAM)
-
-By default, Power Automate for desktop uses an Internet Explorer client to facilitate user authentication. If you encounter errors while signing in, try setting it to authenticate users through Web Account Manager (WAM).
-
-WAM allows signing in using accounts already registered to Windows without requiring passwords. It enables single sign-on (SSO) and can resolve sign-in issues related to Active Directory Federation Services (ADFS). Learn more about WAM in [Interactive with WAM](/azure/active-directory/develop/scenario-desktop-acquire-token-wam).
-
-To enable the WAM functionality in Power Automate for desktop, modify the [appropriate registry entry](governance.md#allow-users-to-sign-in-to-power-automate-for-desktop-using-web-account-manager-wam).
-
 ## Resolve failed connection between Power Automate components
 
-In some cases, Power Automate may display an error indicating that the connection between its components couldn't be established.
+On startup, Power Automate shows the following error message:
 
-The cause of this error can be another process running a named pipes server in the same machine. This process probably runs with elevated rights using the localhost endpoint. As a result, it blocks other applications from using the endpoint.
+**Connection error: The connection between Power Automate components couldn't be established. A required named pipe is in use by another application. Contact your IT administrator.**
+
+This issue could occur because there are two (2) Power Automate for desktop applications installed on the machine (one installed from Microsoft Store and one from the MSI installer), and each one is on a different version. This is not a supported scenario due to conflicts between the installations.
+
+If your version of Power Automate for desktop is **2.34.176.23181 or higher** (Microsoft Store version **10.0.7118.0 or higher**), then follow the steps below to uninstall either one of the two apps and resolve the issue:
+
+1. Go to Windows Start Menu > Settings > Apps > Installed apps
+1. Search for **Power Automate**
+1. Uninstall either one of the two – either Power Automate (Microsoft Store installation) or Power Automate for desktop (MSI installation)
+
+If your version of Power Automate for desktop is **less than 2.34.176.23181** (Microsoft Store version **less than 10.0.7118.0**), then this error may occur because another process is running a named pipes server in the same machine. This process probably runs with elevated rights using the localhost endpoint. As a result, it blocks other applications from using the endpoint.
 
 To identify whether another process is indeed the issue:
 
@@ -173,7 +160,7 @@ If the agent for virtual desktops can't communicate with Power Automate for desk
     ```
 
     ``` PowerShell
-    regsvr32  .\Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin.dll"
+    regsvr32  .\Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin.dll
     ```
 
 ## Troubleshoot missing on-premises data gateway
@@ -199,14 +186,6 @@ Hosted machine provisioning errors:
 
 | Error code | Short Summary | Description | Learn more |
 | ----------| --------------|-------------|------------|
-| joinDomainFailed | Check and update Active Directory domain credentials for your on-premises network connection, then retry. | Joining the (%AdDomainName%) domain failed. During %brandName% provisioning, an Active Directory domain join is triggered for the %AdDomainName% domain. This action has failed. Possible causes for this issue may include: Incorrect domain join credentials, insufficient access to the domain/domain controller using the defined vNet, or internal DNS related issues. Ensure the AD domain join will be successful and retry provisioning. | [Troubleshoot errors when joining computers to a domain](/troubleshoot/windows-server/identity/troubleshoot-errors-join-computer-to-domain) |
-| domainJoin_AccountQuotaExceeded | This domain account has exceeded the maximum number of computer accounts allowed to create in this domain. | The domain join account maximum exceeded. The user %DomainJoinUser% has exceeded the maximum number of computer accounts allowed to join this domain. Raise the limit, or provide a different domain join user account and retry provisioning. | [Default limit to workstation number](/troubleshoot/windows-server/identity/default-workstation-numbers-join-domain) |
-| domainJoin_AccountLockedOut | This domain account is currently locked out and can't be used to join the domain. | The domain join account is locked. The user %DomainJoinUser% is currently locked out. Ensure the user isn't locked out and retry provisioning. | [Set the account lockout threshold to the recommended value](/services-hub/health/remediation-steps-ad/set-the-account-lockout-threshold-to-the-recommended-value) |
-| domainJoin_AccountNameOrPasswordIncorrect | This domain account name or password is incorrect. | Domain join account incorrect password. The provided password for %DomainJoinUser% is incorrect. Update the password in the associated on-premises network connection and retry provisioning. | [Edit Azure network connection](/windows-365/enterprise/edit-azure-network-connection)                |
-| domainJoin_DomainNotExistOrCouldNotBeContacted | The specified domain either doesn't exist or couldn't be contacted. | The specified domain doesn't exist or couldn't be contacted. The %domainName% domain couldn't be contacted during domain join. Ensure the domain name provided is correct and available for domain join on the vNet supplied on your on-premises network connection. |               |
-| domainJoin_AlreadyCloudDomainJoined | The provided custom image is already domain joined. | The provided custom image is already domain joined. The custom image provided may not have been sysprepped correctly, as it appears to be a member of a domain already. Ensure the custom image is removed from the domain and sysprepped successfully before uploading to Windows 365. | [Sysprep (System Preparation) overview](/windows-hardware/manufacture/desktop/sysprep--system-preparation--overview)                |
-| domainJoin_AccountDisabled | This domain account is currently disabled and can't be used to join the domain | The domain join account is disabled. The user account %DomainJoinUser% is disabled. Enable the account in Active Directory and retry provisioning.| |
-| domainJoin_NetworkConnectivityIssue | The domain network location can't be reached.| The domain network location you're trying can't be reached. Ensure your Cloud PCs can use your on-premises DNS servers to resolve Azure or Hybrid Azure AD domain join types and that your connectivity isn't restricted to these domain join types.| [Network requirements](/windows-365/enterprise/requirements-network?tabs=enterprise%2Cent)                |
 | intuneEnrollFailed | We can’t complete MEM enrollment of this Cloud PC. Check MEM policy settings and retry. If that doesn’t work, contact Customer support. | Intune MDM enrollment has failed. During %brandName% provisioning, an Intune MDM enrollment occurs. This action has failed. Possible causes for this issue include: Windows enrollment is blocked in Intune, the Intune endpoints can’t be reached on your vNet, or your Intune tenant isn’t in a healthy state. Ensure the Intune MDM enrollment will be successful and retry provisioning. | [Troubleshooting Windows enrollment errors](/troubleshoot/mem/intune/device-enrollment/troubleshoot-windows-enrollment-errors) |
 | intuneEnroll_BlockedByEnrollmentRestriction | An Intune enrollment restriction exists for this user/tenant, causing MDM enrollment to fail. Ensure Windows enrollment is allowed in your Intune tenant. | Intune enrollment restriction blocking enrollment. An Intune enrollment restriction exists for this user/tenant, causing MDM enrollment to fail. Ensure Windows enrollment is allowed in your Intune tenant. | [Intune enrollment failed](/windows-365/enterprise/provisioning-errors#intune-enrollment-failed) |
 | intuneEnroll_BlockedByGroupPolicyOrConfigMgr | A group policy or ConfigMgr is blocking Intune enrollment. This issue could be caused by the ConfigMgr client installing on the Cloud PC before provisioning is complete. Ensure the device can successfully perform an MDM enrollment into Intune by delaying the ConfigMgr client installation until provisioning completes. | Intune enrollment has been blocked. A group policy or ConfigMgr is blocking Intune enrollment. This issue could be caused by the ConfigMgr client installing on the %brandName% before provisioning is complete. Ensure the device can successfully perform an MDM enrollment into Intune by delaying the ConfigMgr client installation until provisioning completes. | [Configure automatic MDM enrollment](/mem/intune/enrollment/windows-enroll#configure-automatic-mdm-enrollment) |
@@ -216,13 +195,13 @@ Hosted machine provisioning errors:
 | intuneEnroll_DelayedEffectivenessOfIntuneLicense | Intune license isn't available | Intune enrollment failed as the license isn't available. A valid Intune license is required for MDM enrollment. Ensure the license is assigned correctly and available for Intune enrollment and retry provisioning. | [Assign licenses to users so they can enroll devices in Intune](/mem/intune/fundamentals/licenses-assign) |
 | intuneEnroll_TenantUnderAccountMove | Intune tenant maintenance | Intune tenant maintenance. Your Intune tenant is being moved between scale units. Provisioning can't occur until the maintenance is complete. Contact support for more information. | |
 | noEnoughIpAddress | The specified Subnet doesn’t have adequate IP addresses available. Update or adjust the network settings and retry. | The specified subnet doesn’t have adequate IP addresses available. An IP address couldn’t be allocated during %brandName% provisioning. Ensure the selected subnet has sufficient available IP addresses and retry provisioning. | [Add, change, or delete a virtual network subnet](/azure/virtual-network/virtual-network-manage-subnet) |
-| userNotFound | The user doesn’t exist. We can’t provision this cloud PC. | The user %userName% doesn’t exist. The user account %userName% didn’t exist at the time of provisioning. This issue was likely caused by deleting the user. Ensure the user exists and is assigned a valid provisioning policy, then retry. | [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)|
-| licenseNotFound | The user no longer has the required license for Deschutes. Contact your licensing Administrator and retry after a license has been assigned. | The user %userName% doesn’t have a valid license. Ensure the user has a valid %brandName% license assigned and retry provisioning. | [Assign or remove licenses in the Azure Active Directory portal](/azure/active-directory/fundamentals/license-users-groups) |
+| userNotFound | The user doesn’t exist. We can’t provision this cloud PC. | The user %userName% doesn’t exist. The user account %userName% didn’t exist at the time of provisioning. This issue was likely caused by deleting the user. Ensure the user exists and is assigned a valid provisioning policy, then retry. | [Add or delete users using Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory)|
+| licenseNotFound | The user no longer has the required license for Deschutes. Contact your licensing Administrator and retry after a license has been assigned. | The user %userName% doesn’t have a valid license. Ensure the user has a valid %brandName% license assigned and retry provisioning. | [Assign or remove licenses in the Microsoft Entra portal](/azure/active-directory/fundamentals/license-users-groups) |
 | requestDisallowedByPolicy | Workspace creation wasn't allowed by a policy. | Azure policy has blocked provisioning. An Azure policy has blocked %brandName% from provisioning into your Azure subscription. Ensure that there's no Azure policy blocking %brandName% from creating resources in the subscription/resource group defined. | [What is Azure Policy?](/azure/governance/policy/overview) |
 | canaryCheckUnpass | Canary check didn’t pass. Check the canary validation status, and ensure all settings match provision criteria. | The on-premises network connection isn't healthy. The on-premises network connection associated with the provisioning policy isn’t healthy. Browse to the on-premises network connection tab, resolve the failed check, and retry provisioning. | [Troubleshoot provisioning errors](/windows-365/enterprise/provisioning-errors) |
 | imageDiskSizeOverMatch | The selected image size is larger than the cloud PC disk size being provisioned. | The selected image size is larger than the %brandName% disk being provisioned. The provided custom image must be the same size or smaller than the disk size being provisioned. Users may have more than one size %brandName% assigned, so be sure the uploaded custom image is small enough to be used for all %brandName%'s being provisioned using this provisioning policy. | [Device images overview](/windows-365/enterprise/device-images) |
 | internalError | We encountered a service error. Contact Customer support for a resolution. | An unknown error occurred. We encountered a service error. Retry provisioning, and contact support if the problem persists. | [Access Help and support](/mem/get-support#access-help-and-support) |
-| userNotAvailableInLocalAD | The user doesn't exist in the on-premises Active Directory. We can't provision this Cloud PC. | Cloud PC assigned user doesn't exist in the on-premises Active Directory. Ensure the user is assigned to the cloud PC, has an on-premises Active Directory and cloud Azure AD user account, and the UPN matches. | [Azure AD Connect sync: Understanding Users, Groups, and Contacts](/azure/active-directory/hybrid/concept-azure-ad-connect-sync-user-and-contacts) |
+| userNotAvailableInLocalAD | The user doesn't exist in the on-premises Active Directory. We can't provision this Cloud PC. | Cloud PC assigned user doesn't exist in the on-premises Active Directory. Ensure the user is assigned to the cloud PC, has an on-premises Active Directory and cloud Microsoft Entra user account, and the UPN matches. | [Microsoft Entra Connect sync: Understanding Users, Groups, and Contacts](/azure/active-directory/hybrid/concept-azure-ad-connect-sync-user-and-contacts) |
 | CpuOrRamNotFitImageOS | Cloud PC hardware specification doesn't meet the minimum Windows 11 requirements. | The selected Cloud PC hardware specification doesn't meet the minimum requirements for Windows 11. Assign a license with hardware that meets the Windows 11 requirements, or update the provisioning policy with a supported Windows 10 image. | 
 | imageNotSupportTPM | The selected image isn't ready to be used on UEFI-enabled Cloud PCs. | Custom images must be configured as Gen 2 images that are configured to support UEFI. Update your custom image and retry provisioning. | 
 | imageNotSupportedWarning | The selected image is out of Windows support lifecycle and may not receive updates. | Windows image out of support. The selected Windows image is out of the Windows support lifecycle. This issue may result in no Windows updates being provided. Provisioning for this image will be complete, but in the future will be blocked. Update your provisioning policy with a Windows image within its supported lifecycle. | |
@@ -231,7 +210,7 @@ Hosted machine provisioning errors:
 | scriptDownloadFailed | During provisioning, a required URL(s) couldn't be contacted. | A required URL/s couldn't be contacted during provisioning. Ensure all of the required URLs are allowed through your firewalls and proxies. For a definitive list of required URLs, refer to the appropriate documentation.| [Network requirements](/windows-365/enterprise/requirements-network) |
 | cmdAgentMSIDownloadFailed | During provisioning, a required URL(s) couldn't be contacted. | A required URL/s couldn't be contacted during provisioning. Ensure all of the required URLs are allowed through your firewalls and proxies. For a definitive list of required URLs, refer to the appropriate documentation. | [Network requirements](/windows-365/enterprise/requirements-network) |
 | rdAgentPackageDownloadFailed | During provisioning, a required WVD URL(s) couldn't be contacted. | A required WVD URL/s couldn't be contacted during provisioning. Ensure all of the required URLs are allowed through your firewalls and proxies. For a definitive list of required URLs, refer to the appropriate documentation. | [Network requirements](/windows-365/enterprise/requirements-network) |
-| AzureADUser_ResourceNotFound | Azure Active Directory D user account not found. | The user %userName% doesn’t exist in Azure AD. The user account %userName% didn’t exist at the time of provisioning. This issue was likely caused by deleting the user. Ensure the user exists and is assigned a valid provisioning policy and retry. | [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory) |
+| AzureADUser_ResourceNotFound | Microsoft Entra D user account not found. | The user %userName% doesn’t exist in Microsoft Entra ID. The user account %userName% didn’t exist at the time of provisioning. This issue was likely caused by deleting the user. Ensure the user exists and is assigned a valid provisioning policy and retry. | [Add or delete users using Microsoft Entra ID](/azure/active-directory/fundamentals/add-users-azure-active-directory) |
 | CreateNic_ReadOnlyDisabledSubscription | The Azure subscription provided is disabled. | The provided Azure subscription is disabled. Ensure the Azure subscription is enabled and available for provisioning. | [Reactivate a disabled Azure subscription](/azure/cost-management-billing/manage/subscription-disabled) |
 | CreateNic_ResourceGroupNotFound | The selected Azure resource group is invalid or not found. | The selected Azure resource group is invalid or not found. Ensure the selected Azure resource group is available to provision resources. Alternatively, update the Azure network connection with another resource group. | [Tutorial: Grant a user access to Azure resources using the Azure portal](/azure/role-based-access-control/quickstart-assign-role-user-portal) |
 | CreateNic_ArmAuthorizationFailed | Windows 365 doesn't have sufficient Azure permissions. | Windows 365 doesn't have sufficient Azure permissions. The Windows 365 service isn't authorized to perform actions on the Azure subscription. | [Assign a user as an administrator of an Azure subscription](/azure/role-based-access-control/role-assignments-portal-subscription-admin) |
@@ -242,7 +221,7 @@ Hosted machine provisioning errors:
 
     Network Level Authentication (NLA) must be disabled for unattended runs. You may see the following error details if an unattended flow run is triggered against a machine with NLA enabled:
 
-    **Could not create unattended session with these credentials. Please make sure you have Network Level Authentication (NLA) disabled in your remote settings if you’re using AAD credentials.**
+    **Could not create unattended session with these credentials. Please make sure you have Network Level Authentication (NLA) disabled in your remote settings if you’re using Microsoft Entra credentials.**
 
 - Active session exists
 

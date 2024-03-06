@@ -1,12 +1,12 @@
 ---
 title: Power Automate for enterprise developers, ISVs, and partners
 description: An introduction to developing solutions for Power Automate.
-author: MSFTMan
+author: v-aangie
 ms.subservice: developer
-ms.topic: article
+ms.topic: conceptual
 ms.date: 09/10/2021
-ms.author: Deonhe
-ms.reviewer: gtrantzas
+ms.author: angieandrews
+ms.reviewer: angieandrews
 search.audienceType: 
   - developer
 ---
@@ -34,7 +34,7 @@ As a Microsoft partner or Independent Software Vendor (ISV), accelerate customer
 | Phase | Step | When needed? |
 | --- | --- | --- |
 | Development | 1. Build a custom connector to your data | If you want to expose your own ISV data to Power Apps or Power Automate |
-| Development | 2. Add support for your application to authenticate users with Azure Active Directory (Azure AD) | If you want to embed the Power Automate UI, integrate with desktop flows or list in Microsoft AppSource |
+| Development | 2. Add support for your application to authenticate users with Microsoft Entra ID | If you want to embed the Power Automate UI, integrate with desktop flows or list in Microsoft AppSource |
 | Development | 3. Embed the Power Automate UI into your application using our web-based IFrame | If you want to include flow creation or management in your application |
 | Development | 4. Integrate with desktop flow APIs | If you want to include desktop flow (RPA) capabilities programmatically within your applications |
 | Development | 5. Create and publish flow templates | If you want to pre-build flows for your customers |
@@ -53,7 +53,7 @@ Once created, there are two ways to make the connector available to your custome
 
 ### 2. Authentication
 
-To call REST APIs and embed authenticated UI, your application needs to use Azure AD federated single sign-on to authenticate end users and customers. Go to [Microsoft identity platform](https://identity.microsoft.com/) for information on how to enable Azure AD federated SSO. We don't have support for unauthenticated access, or access with identity providers other than Azure AD.
+To call REST APIs and embed authenticated UI, your application needs to use Microsoft Entra federated single sign-on to authenticate end users and customers. Go to [Microsoft identity platform](https://identity.microsoft.com/) for information on how to enable Microsoft Entra federated SSO. We don't have support for unauthenticated access, or access with identity providers other tha Microsoft Entra.
 
 ### 3. Embedding UI components
 
@@ -69,11 +69,11 @@ Once you have a connector, you should publish templates that demonstrate how to 
 
 ### 6. Deployment
 
-To give end users access to flows that they can use automatically, deploy them into the Azure AD tenant of the user. Use a deployment package that you deploy using our REST APIs or PowerShell. [Learn more](/powerapps/administrator/export-import-packages)
+To give end users access to flows that they can use automatically, deploy them into the Microsoft Entra tenant of the user. Use a deployment package that you deploy using our REST APIs or PowerShell. [Learn more](/powerapps/administrator/export-import-packages)
 
 ### 7. Licensing
 
-If your customers already have either Office 365 or Dynamics 365, and these licenses are associated with the identities that users sign in with Azure AD, there are no other licensing requirements for them to use standard connectors. Your users will need one of the [Power Automate licenses](https://make.powerautomate.com/pricing/) to use premium and custom connectors. If your customers don't use Office 365 or Dynamics 365, then you must acquire use rights on their behalf for Power Automate, so that they're licensed to use those embedded components in your application.
+If your customers already have either Office 365 or Dynamics 365, and these licenses are associated with the identities that users sign in with Microsoft Entra ID, there are no other licensing requirements for them to use standard connectors. Your users will need one of the [Power Automate licenses](https://make.powerautomate.com/pricing/) to use premium and custom connectors. If your customers don't use Office 365 or Dynamics 365, then you must acquire use rights on their behalf for Power Automate, so that they're licensed to use those embedded components in your application.
 
 We offer the [Microsoft Cloud Solution Provider](https://partner.microsoft.com/cloud-solution-provider) program to acquire licenses on behalf of your customers. There are different [pricing plans](https://make.powerautomate.com/pricing/) available for Power Automate, which you should check for plan and feature details.
 

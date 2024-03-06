@@ -1,13 +1,13 @@
 ---
 title: Azure actions reference
 description: See all the available Azure actions.
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/23/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -24,7 +24,7 @@ search.audienceType:
 
 Power Automate allows you to manage Azure virtual machines through the Azure group of actions. To implement Azure functionality in your desktop flows, create a new Azure session using the **Create session** action.
 
-This action requires you to enter the **Client ID**, an authentication key for the specific application, and the respective password. Additionally, enter the **Tenant ID** that is the Azure Active Directory in which you've created the application.
+This action requires you to enter the **Client ID**, an authentication key for the specific application, and the respective password. Additionally, enter the **Tenant ID** that is the Microsoft Entra in which you've created the application.
 
 Lastly, populate the appropriate **Subscription ID**. The subscription ID is a GUID that uniquely identifies your subscription to Azure services.
 
@@ -485,7 +485,7 @@ Creates an Azure session.
 |-----|-----|-----|-----|-----|
 |Client ID |No|[Text value](../variable-data-types.md#text-value)||The client ID of the application, also known as application ID, which identifies the application that is using the token|
 |Client secret|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The secret for the client ID|
-|Tenant ID|No|[Text value](../variable-data-types.md#text-value)||The directory ID of the Azure Active Directory|
+|Tenant ID|No|[Text value](../variable-data-types.md#text-value)||The directory ID of the Microsoft Entra|
 |Subscription ID|Yes|[Text value](../variable-data-types.md#text-value)||The Azure subscription ID. If not provided, the default subscription will be used|
 
 ### Variables produced

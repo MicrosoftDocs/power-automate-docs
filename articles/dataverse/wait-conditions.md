@@ -4,11 +4,10 @@ description: Use wait conditions to delay your flows until specific conditions a
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMan
+author: v-aangie
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na

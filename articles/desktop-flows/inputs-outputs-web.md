@@ -4,18 +4,17 @@ description: Use inputs and outputs in Selenium IDE flows.
 services: ''
 suite: flow
 documentationcenter: na
-author: georgiostrantzas
+author: mattp123
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/30/2020
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

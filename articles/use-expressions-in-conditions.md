@@ -1,18 +1,14 @@
 ---
-title: Use expressions in conditions in Power Automate | Microsoft Docs
+title: Use expressions in conditions in Power Automate
 description: Use advanced expressions such as "and", "or", "empty", "less", and "greater" in Power Automate Conditions.
-services: ''
 suite: flow
-documentationcenter: na
-author: msftman
-ms.devlang: na
+author: v-aangie
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 05/13/2022
-ms.author: deonhe
+ms.topic: conceptual
+ms.date: 10/02/2023
+ms.author: kisubedi
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
   - enduser
@@ -57,8 +53,7 @@ Sometimes your workflow needs to take an action if the value of an item is value
 
 Here's an example of what the spreadsheet might look like:
 
->[!div class="mx-imgBorder"]
->![Screenshot of a sample spreadsheet with a Status column.](./media/use-expressions-in-conditions/spreadsheet-table.png "Sample spreadsheet")
+:::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table.png" alt-text="Screenshot of a sample spreadsheet with a Status column.":::
 
 Given the preceding spreadsheet, you want to use Power Automate to remove all rows with a **Status** column that's set to **completed** or **unnecessary**.
 
@@ -70,13 +65,7 @@ Let's create the flow.
 
 1. On the left pane, select **My flows**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the menu with the My flows option.](includes/media/modern-approvals/select-my-flows.png "My flows option")
-
 1. Select **New flow** > **Scheduled cloud flow**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of creating a scheduled cloud flow.](includes/media/modern-approvals/blank-template.png "Create a scheduled cloud flow")
 
 ### Add a trigger to your flow
 
@@ -86,51 +75,66 @@ Let's create the flow.
 
 1. Select the **Create** button to go to the next step.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of setting a schedule.](includes/media/modern-approvals/once-daily-schedule.png "Set schedule")
+[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-### Select the spreadsheet and get all rows
+## Select the spreadsheet and get all rows
+
+# [Classic designer](#tab/classic-designer)
 
 1. Select **New step**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the New step button.](includes/media/new-step/action.png "New step")
-
 1. Search for **rows**, and then select **Excel Online (Business)**.
 
-    >[!NOTE]
-    >Select the "get a row" action that corresponds to the spreadsheet that you're using. For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
+    Select the *get a row* action that corresponds to the spreadsheet that you're using. For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
 
 1. Select the **List rows present in a table** action.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of getting a rows in a spreadsheet.](includes/media/new-step/get-excel-rows.png "List rows present in a table")
+    :::image type="content" source="includes/media/new-step/get-excel-rows.png" alt-text="Screenshot of listing rows in a table.":::
 
 1. Select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of Location, Document Library, File, and Table fields in the List rows present in a table card.](includes/media/new-step/select-table-to-search.png "List rows present in a table card")
+    :::image type="content" source="includes/media/new-step/select-table-to-search.png" alt-text="Screenshot of Location, Document Library, File, and Table fields in the List rows present in a table card.":::
 
-### Check the status column of each row
+# [Edit with Copilot](#tab/edit-with-copilot)
+
+1. Ask Copilot to create a flow for you. Please type the following prompt in Copilot:
+
+    **Every week, list rows in a Excel table and if the Status column equals Succeded or claim maangers email is jake@contoso.com, delete Excel row**
+
+1. Select **Submit** ![Screenshot of the Submit button](./media/use-expressions-in-conditions/submit.png).
+
+    :::image type="content" source="./media/use-expressions-in-conditions/copilot-prompt.png" alt-text="Screenshot of a prompt in Copilot.":::
+
+Alternatively, you can follow the below steps to create the same flow manually:
+
+1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
+1. Search for **rows**, select **Excel Online (Business)**, and then select the **Get a row** action that corresponds to the spreadsheet that you're using.
+
+    For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
+
+1. Select the **List rows present in a table** action.
+
+    :::image type="content" source="./media/use-expressions-in-conditions/add-an-action.png" alt-text="Screenshot of listing rows in a table in Copilot.":::
+
+1. Select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
+
+    :::image type="content" source="./media/use-expressions-in-conditions/table-parameters.png" alt-text="Screenshot of the parameters for list rows present in a table in Copilot.":::
+
+---
+
+## Check the status column of each row
+
+# [Classic designer](#tab/classic-designer)
 
 1. Select **New step**.
 
 1. Search for **apply to each**, and then select the **Apply to each - Control**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of adding the Apply to each - Control.](includes/media/new-step/apply-to-each.png "Apply to each - Control")
-
 1. Add the **value** token to the **Select an output from previous steps** box.
 
    This **value** token represents the spreadsheet table and all of its data.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of adding a value to the Apply to each card.](includes/media/apply-to-each/add-value-token.png "Add a value to the Apply to each card")
-
 1. Select **Add an action** on the **Apply to each** card.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the Add an action button.](includes/media/apply-to-each/add-action.png "Add an action")
 
 1. Search for **condition**, and then select the **Condition** control.
 
@@ -138,19 +142,43 @@ Let's create the flow.
 
     Here's an example of a **Condition** card.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of an 'or' expression.](./media/use-expressions-in-conditions/or-expression.png "'Or' expression")
+    :::image type="content" source="./media/use-expressions-in-conditions/or-expression.png" alt-text="Screenshot of an 'or' expression.":::
 
-### Delete matching rows from the spreadsheet
+# [Edit with Copilot](#tab/edit-with-copilot)
+
+1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
+
+1. On the **Add an action** screen, search for **apply to each**, and then select the **Apply to each** under **Control**.
+
+1. Add the **value** token to the **Select an output from previous steps** box by selecting the ligtening rod icon.
+
+    :::image type="content" source="./media/use-expressions-in-conditions/lightning-rod.png" alt-text="Screenshot selecting the value from the previous step.":::
+
+   This **value** token represents the spreadsheet table and all of its data.
+
+1. On the **Apply to each** card, add a new step by selecting the plus sign (**+**) > **Add an action**.
+
+1. Search for **condition**, and then select the **Condition** control.
+
+1. Add the following **OR** expression. This **OR** expression checks the value of each row in the table.
+
+    If the value of the **Status** column is *completed* **Or** *unnecessary*, the **OR** expression evaluates to **true**.
+
+    Here's an example of a **Condition** card.
+
+    :::image type="content" source="./media/use-expressions-in-conditions/condition-card.png" alt-text="Screenshot of selecting the value from the previous step.":::
+
+---
+
+## Delete matching rows from the spreadsheet
+
+# [Classic designer](#tab/classic-designer)
 
 1. Select **Add an action** on the **If yes** branch of the condition.
 
-    The **If yes** branch runs if the **Or** condition evaluates to **true**.
+    The **If yes** branch runs if the **OR** condition evaluates to **true**.
 
 1. Search for **Delete a row**, select **Excel Online (Business)**, and then select **Delete a row**.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of deleting a row.](includes/media/new-step/select-delete-excel-row.png "Delete a row")
 
 1. On the **Delete a row** card, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
 
@@ -158,17 +186,33 @@ Let's create the flow.
 
 1. In the **Key Value** field, insert the **\_PowerAppsId_** dynamic value.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the Key Column and Key Value fields in the Delete a row card.](includes/media/new-step/delete-excel-row.png "Delete a row card fields")
+1. Save your flow.
+
+# [Edit with Copilot](#tab/edit-with-copilot)
+
+1. Select **Add an action** on the **If yes** branch of the condition.
+
+    The **If yes** branch runs if the **Or** condition evaluates to **true**.
+
+1. Search for **Delete a row**, select **Excel Online (Business)**, and then select **Delete a row**.
+
+    :::image type="content" source="./media/use-expressions-in-conditions/delete-a-row.png" alt-text="Screenshot of deleting a row.":::
+
+1. On the **Delete a row** card, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
+
+1. In the **Key Column** dropdown list, select **\_PowerAppsId_**.
+
+1. In the **Key Value** field, insert the **\_PowerAppsId_** dynamic value.
 
 1. Save your flow.
 
-### Run the flow with the 'or' expression
+---
+
+## Run the flow with the 'or' expression
 
 The flow runs after you save it. If you created the spreadsheet shown earlier in this tutorial, here's what it looks like after the run completes.
 
->[!div class="mx-imgBorder"]
->![Screenshot of the spreadsheet when the 'Or'expression completes.](./media/use-expressions-in-conditions/spreadsheet-table-after-or-expression-runs.png "Spreadsheet after the 'or' expression completes")
+:::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-after-or-expression-runs.png" alt-text="Screenshot of the spreadsheet when the 'OR'expression completes.":::
 
 Notice all data from rows that had **completed** or **unnecessary** in the **Status** column were deleted.
 
@@ -180,20 +224,17 @@ Assume you have a spreadsheet table with two columns. The column names are **Sta
 
 Here's an example of a **Condition** card.
 
->[!div class="mx-imgBorder"]
->![Screenshot of the 'and' expression.](./media/use-expressions-in-conditions/and-expression.png "'and' expression")
+:::image type="content" source="./media/use-expressions-in-conditions/and-expression.png" alt-text="Screenshot of the 'and' expression.":::
 
-### Run the flow with the 'and' expression
+## Run the flow with the 'and' expression
 
 If you've followed the steps in this tutorial, your spreadsheet should look similar to the following screenshot.
 
->[!div class="mx-imgBorder"]
->![Screenshot of the spreadsheet before your flow runs.](./media/use-expressions-in-conditions/spreadsheet-table-before-and-expression-runs.png "Spreadsheet before the flow runs")
+:::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-before-and-expression-runs.png" alt-text="Screenshot of the spreadsheet before your flow runs.":::
 
 After your flow runs, your spreadsheet should look similar to the following screenshot.
 
->[!div class="mx-imgBorder"]
->![Screenshot of the spreadsheet after your flow runs.](./media/use-expressions-in-conditions/spreadsheet-table-after-and-expression-runs.png "Spreadsheet after the flow runs")
+:::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-after-and-expression-runs.png" alt-text="Screenshot of the spreadsheet after your flow runs.":::
 
 ## Use the 'empty' expression
 
@@ -205,13 +246,11 @@ To accomplish this task, follow all steps listed in the [Use the 'and' expressio
 
 Your **Condition** card should look similar to the following screenshot.
 
->[!div class="mx-imgBorder"]
->![Screenshot of the 'empty' expression.](./media/use-expressions-in-conditions/empty-expression.png "'empty' expression")
+:::image type="content" source="./media/use-expressions-in-conditions/empty-expression.png" alt-text="Screenshot of the 'empty' expression.":::
 
 After your flow runs, the spreadsheet should look similar to the following screenshot.
 
->[!div class="mx-imgBorder"]
->![Screenshot of the spreadsheet after 'empty' runs.](./media/use-expressions-in-conditions/spreadsheet-table-after-empty-expression-runs.png "Spreadsheet after 'empty' runs")
+:::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-after-empty-expression-runs.png" alt-text="SScreenshot of the spreadsheet after 'empty' runs.":::
 
 Notice extra lines are removed from the table.
 
@@ -223,8 +262,7 @@ Use the **greater** expression to identify the employees who haven't paid the fu
 
 Here's a view of the spreadsheet.
 
->[!div class="mx-imgBorder"]
->![Screenshot of the spreadsheet of those who haven't paid in full.](./media/use-expressions-in-conditions/tickets-spreadsheet-table.png "Spreadsheet of those who haven't paid in full")
+:::image type="content" source="./media/use-expressions-in-conditions/tickets-spreadsheet-table.png" alt-text="Screenshot of the spreadsheet of those who haven't paid in full.":::
 
 Here's the implementation of the **greater** expression that identifies all persons who have paid less than the amount due from them.
 
@@ -235,7 +273,6 @@ Here's the implementation of the **greater** expression that identifies all pers
 Imagine you've bought baseball tickets for your coworkers, and you're using a spreadsheet to ensure you're reimbursed by each person by the date to which everyone agreed. You can create a cloud flow that sends a reminder email to each person who hasn't paid the full amount if the current date is less than one day before the due date.
 
 Use the **and** expression with the **less** expression since there are two conditions being validated.
-
 
 |          Condition to validate          | Expression to use |                    Example                     |
 |-----------------------------------------|-------------------|------------------------------------------------|
@@ -248,8 +285,7 @@ Use the **greater** expression to identify the employees who have paid less than
 
 Here's a view of the spreadsheet table.
 
->[!div class="mx-imgBorder"]
->![Screenshot of the spreadsheet table.](./media/use-expressions-in-conditions/spreadsheet-table-due-date.png "Spreadsheet table")
+:::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-due-date.png" alt-text="Screenshot of the spreadsheet table.":::
 
 Here's the implementation of the **and** expression that identifies all employees who have paid less than the amount due from them and the due date is less than one day away from the current date.
 

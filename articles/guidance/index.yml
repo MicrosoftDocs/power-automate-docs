@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Power Automate guidance documentation
-summary: Power Automate guidance documentation provides best practice information from the team that works with our enterprise customers. We'll regularly add and update the guidance content. 
+summary: Power Automate guidance documentation provides best practice information from the team that works with our enterprise customers. We regularly add and update the guidance content. 
 
 metadata:
   title: Power Automate guidance documentation
@@ -85,6 +85,8 @@ landingContent:
             url: ./automation-kit/overview/introduction.md
           - text: Manage Power Automate for desktop on Windows
             url: ./automation-coe/manage-pad-on-windows.md  
+          - text: Building custom action for Power Automate for desktop
+            url: ./how-to/build-custom-action/buildcustomaction.md
 
 
   # Card
@@ -93,7 +95,7 @@ landingContent:
        - linkListType: overview
          links:          
           - text: Create your first flow
-            url: ../getting-started.md#create-your-first-flow
+            url: ../getting-started.md
           - text: What is desktop flow?
             url: ../desktop-flows/overview.md
           - text: Power Platform Center of Excellence (CoE) kit

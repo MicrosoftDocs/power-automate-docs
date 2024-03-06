@@ -1,12 +1,12 @@
 ---
 title: Silent registration for machines
 description: This article describes how to use a mass deployment tool that allows you to easily install Power Automate on multiple machines.
-author: georgiostrantzas
+author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 08/03/2023
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 09/07/2023
+ms.author: quseleba
+ms.reviewer: quseleba
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -24,7 +24,7 @@ This article describes how to use our mass deployment tool that allows you to ea
 
 To silently register your machines, you need to download and install Power Automate for desktop on the targeted devices. Visit this page to understand how to [install Power Automate silently](install-silently.md).
 
-To silently register your machine and join a group, we recommend that you use a service principal account. You can also use your Azure Active Directory account.
+To silently register your machine and join a group, we recommend that you use a service principal account. You can also use your Microsoft Entra account.
 
 ## Using a service principal account
 
@@ -101,13 +101,18 @@ Machine registration arguments:
    1. Machine name (optional): The name of the registered machine.
 
    1. Machine description (optional): The description of the registered machine.
+     
+   1. `force` (optional): The force flag used to override an existing registration. Overriding a registration will break existing connections to the machine.
 
-        ```CMD
-        .\PAD.MachineRegistration.Silent.exe -register -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid 
-        ```
+      >[!NOTE]
+      > "force" argument can be really useful in case your existing machine is in a bad state with no other available environment to unregister/re-register your machine.
+
+      ```CMD
+      .\PAD.MachineRegistration.Silent.exe -register -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid 
+      ```
 
 >[!NOTE]
->If you decide to use an Azure AD account, you can specify the username: -username [UPN] instead of service principal account arguments
+>If you decide to use an Microsoft Entra account, you can specify the username: -username [UPN] instead of service principal account arguments
 
 ## Silently join a machine group
 
@@ -126,7 +131,7 @@ To join a group silently with the service principal account, use the join group 
 .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid
 ```
 > [!NOTE]
-> To use an Azure Active Directory account, specify the username: -username [UPN] instead of service principal account arguments.
+> To use an Microsoft Entra account, specify the username: -username [UPN] instead of service principal account arguments.
 
 ## Secure input
 

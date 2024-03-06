@@ -1,14 +1,14 @@
 ---
 title: CyberArk actions reference
 description: See all the available CyberArk actions.
-author: georgiostrantzas
-
+author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 09/15/2023
+ms.author: dipapa
+ms.reviewer: matp
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -70,5 +70,8 @@ Retrieves a password for a specific application from CyberArk.
 |Failed to send web request|Indicates a problem sending the web request|
 |Timeout expired|Indicates that the request timed out|
 |Error response from web request|Indicates that the web request returned an error response|
+
+### Known issues
+- NTLM Authentication is currently not supported for web requests in Power Automate for desktop.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

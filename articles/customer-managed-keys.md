@@ -8,7 +8,6 @@ contributors:
   - v-aangie
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
@@ -33,7 +32,7 @@ All customer data stored in Power Platform is encrypted at rest using Microsoft-
 >
 > - *Before applying the enterprise policy, ensure that the environment doesn't have any flows.*
 > - If you apply enterprise policy on an environment with flows, the customer key wouldn't be applied to encrypt data, and the workflows and their data would continue to be encrypted with Microsoft-managed keys.
-> - Currently, customer-managed keys aren't leveraged to encrypt non-OAuth connections. Such non-AAD based connections will continue to be encrypted at rest using Microsoft-managed keys.
+> - Currently, customer-managed keys aren't leveraged to encrypt non-OAuth connections. Such non-Microsoft Entra based connections will continue to be encrypted at rest using Microsoft-managed keys.
 
 Applying an encryption key is a gesture performed by Power Platform admins and is totally invisible to users. Users can create, save, and execute Power Automate workflows exactly the same way they would if the data was encrypted by Microsoft-managed keys.
 

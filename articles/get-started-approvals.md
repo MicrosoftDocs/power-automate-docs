@@ -3,14 +3,14 @@ title: Get started with Power Automate approvals | Microsoft Docs
 description: Learn about the permissions and general details about Power Automate approvals.
 services: ''
 suite: flow
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 06/17/2022
-ms.author: deonhe
-ms.reviewer: gtrantzas
+ms.author: angieandrews
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -100,13 +100,13 @@ Use one of the following options to get started creating approval flows.
 
 ## Assign approvals to any user in your tenant
 
-You can assign approvals to users&mdash;including guest users and Microsoft 365 groups&mdash;in your current Dataverse environment or your Azure Active Directory (Azure AD) tenant.
+You can assign approvals to users&mdash;including guest users and Microsoft 365 groups&mdash;in your current Dataverse environment or your Microsoft Entra tenant.
 
 When you assign an approval to users who aren't in your environment, they're automatically given the *Approvals User* Dataverse security role. Users need this role for their responses to be processed and persisted in their approvals history.
 
 The following tenant configurations don't allow this:
 
-- When the AllowAdHocSubscriptions setting in Azure AD is disabled. In this case, you can request your tenant administrator to enable it. You can find more information about this in the self-service signup.
+- When the AllowAdHocSubscriptions setting in Microsoft Entra is disabled. In this case, you can request your tenant administrator to enable it. You can find more information about this in the self-service signup.
 - If a security group has been used to control which users have access to the Dataverse environment.
 - Power Automate [US Government plans](./us-govt.md).
 
