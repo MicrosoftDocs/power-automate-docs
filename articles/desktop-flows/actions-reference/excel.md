@@ -1,17 +1,18 @@
 ---
 title: Excel actions reference
 description: See all the available Excel actions.
-author: georgiostrantzas
-
+author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 10/20/2023
+ms.author: dipapa
+ms.reviewer: matp
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
+- AntoniosDanas 
 search.audienceType: 
   - flowmaker
   - enduser
@@ -213,6 +214,15 @@ This action doesn't produce any variables.
 ## <a name="selectcellsfromexcel"></a> Select cells in Excel worksheet
 
 Selects a range of cells in the active worksheet of an Excel instance.
+
+You have three options when it comes to retrieving a range of cells through Excel with the **Select cells in Excel worksheet** action.
+To begin you need a valid **Excel instance**, which you can create by using the **Launch Excel** action and providing the respective inputs.
+
+- To select a **range of cells** by explicitly providing the coordinates of the range, select the option **Range of cells** in the **Select** property and then provide a range by inputting the number or letter of the cells defining its start and end in the following properties: **Start column**, **Start row**, **End column**, **End row**.
+
+- To select a **range of cells**, relative to the currently active cell, first select the option **Range of cells relative to active cell** in the **Select** property. Then define the direction in the X and Y axis based on the position of the currently active cell, as well as the offset from the active cell in the two axes by modifying the properties **X-axis direction**, **X-axis offset**, **Y-axis direction** and **Y-axis offset**.
+
+- To select a **range of cells** using the range's name, select the option **Names cells** in the property **Select**.
 
 ### Input parameters
 
@@ -595,7 +605,7 @@ Saves a previously launched Excel instance.
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to save. This variable must have been previously specified in a Launch Excel action.|
 |Save mode|N/A|Save document, Save document as|Save document|How to save the document of this instance|
-|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel Add-In (.xlam), Excel 97-2003 Add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods), XML Data (.xml), Excel Binary Workbook (.xlsb)|Default (From Extension)|The format to save the document as|
+|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel add-in (.xlam), Excel 97-2003 add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods), XML Data (.xml), Excel Binary Workbook (.xlsb)|Default (From Extension)|The format to save the document as|
 |Document path|No|[File](../variable-data-types.md#files-and-folders)||The full path to save the document as|
 
 ### Variables produced
@@ -641,7 +651,7 @@ Closes an Excel instance.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to close. This variable must have been previously specified in a Launch Excel action.|
-|Before closing Excel|N/A|Do not save document, Save document, Save document as|Do not save document|Whether and how to save the document of this instance before closing that instance|
+|Before closing Excel|N/A|Do not save document, Save document, Save document as|Don't save document|Whether and how to save the document of this instance before closing that instance|
 |Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel Add-In (.xlam), Excel 97-2003 Add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods), XML Data (.xml), Excel Binary Workbook (.xlsb)|Default (From Extension)|The format of the document|
 |Document path|No|[File](../variable-data-types.md#files-and-folders)||The full path of the document|
 
@@ -745,5 +755,25 @@ Gets the name of the column.
 #### <a name="getcolumnname_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
+
+## Known limitations
+
+### Using Excel files synchronized through OneDrive or SharePoint
+
+Interaction with Microsoft Excel files that are contained in folders synchronized in OneDrive or SharePoint might result in an erroneous flow. Power Automate for desktop utilizes COM objects for Excel interactions. OneDrive and SharePoint aren't fully compatible with Excel instances launched through COM.
+
+For this reason, when you try to open an Excel file stored under a OneDrive or SharePoint directory, you might encounter a **file not found** error. To resolve this issue, use one of the following workarounds:
+
+#### Workaround 1
+
+* Make a local copy of the respective Excel file.
+* Modify the local copy of the Excel file using Power Automate for desktop's Excel automation actions.
+* Override the Excel file copy synchronized through OneDrive/ Sharepoint with the local copy that includes the latest changes.
+
+#### Workaround 2
+>[!NOTE]
+> This workaround can be used in general when the **Launch Excel** action fails to execute.
+* Open a new Excel instance using the **Run application** action. Make sure that you provide enough wait time between actions, allowing the Excel process to load completely, including any add-ins.
+* Use the action **Attach to Excel** to attach to the new process.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

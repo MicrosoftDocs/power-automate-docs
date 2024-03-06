@@ -1,13 +1,15 @@
 ---
-title: Call Child Flows
+title: Create child Flows
 description: Flows can now call other flows and pass parameters to them.
-author: MSFTMAN
+author: v-aangie
+conttributors:
+  - ChrisGarty
+  - v-aangie
 ms.date: 04/08/2022
 ms.assetid: 6e6d3c34-b209-ea11-a811-000d3a4f1cdd
 ms.subservice: cloud-flow
-ms.topic: article
-
-ms.author: deonhe
+ms.topic: conceptual
+ms.author: cgarty
 ms.reviewer: angieandrews
 dynamics365pdf: True
 ---
@@ -32,9 +34,6 @@ You will need a solution with two flows.
 
 1. Select **New** > **Automation** > **Cloud flow** > **Instant**.
 
-   <!-- >[!TIP]
-   >You can also use the **Power Apps** or the **When an HTTP request is received** triggers for child flows. -->
-
    The **Build an instant cloud flow** screen appears.
 
 1. Give your flow a name so that you can easily identify it later.
@@ -42,13 +41,10 @@ You will need a solution with two flows.
 1. Select **Create**.
 
 1. Select **Add an input**.
-   The input you define here will be passed to the child flow from the parent flow.
 
-    ![The input that will come from parent flows.](./media/call-child-flow/add-trigger-input.png "The input that will come from parent flows")
+    The input you define here will be passed to the child flow from the parent flow.
 
 1. For this walkthrough, the child flow creates a contact, so it needs input fields for the **Contact name** and **Contact email**. Add a **ContactName** and a **ContactEmail** input to the **Manually trigger a flow** card.
-
-   ![Input for child flow.](./media/call-child-flow/input-definition.png "Input for child flow")
 
 1. Build the logic that you want the child flow to run. This logic can contain as many steps as you need.
 
@@ -58,9 +54,10 @@ You will need a solution with two flows.
 
    ii. **Response** (on the premium HTTP request/response connector).
 
-1. As with the trigger, you can define as many outputs as you want the child flow to return to the parent flow. In the following image, the child flow responds with the ID of the contact.
+1. As with the trigger, you can define as many outputs as you want the child flow to return to the parent flow. In the following screenshot, the child flow responds with the ID of the contact.
 
-   ![Child flow response.](./media/call-child-flow/response-output.png "Child flow response")
+    :::image type="content" source="./media/call-child-flow/response-output.png" alt-text="Screenshot of a child flow response.":::
+
 
    You need to then test your child flow. You can manually trigger instant flows, so you can test it right inside of the designer. Try it out with a couple different inputs, and verify that the outputs are what you expect.
 
@@ -70,8 +67,8 @@ You will need a solution with two flows.
 
 1. Select **Save**.
 
-   >[!NOTE]
-   >At this time, you cannot pass connections from the parent flow to the child flow. If you do not do this, you will receive an error that states that the name cannot be used as a child workflow because child workflows only support embedded connections.
+   > [!NOTE]
+   > At this time, you can't pass connections from the parent flow to the child flow. If you don't do this, you receive an error that states that the name cannot be used as a child workflow because child workflows only support embedded connections.
 
 ## Create the parent flow in a solution
 
@@ -83,12 +80,12 @@ You will need a solution with two flows.
 
 1. Pick the child flow that you created earlier.
 
-   >[!NOTE]
-   >You will only see the flows to which you have access and are located in a solution. Child flows must also have one of the three triggers mentioned earlier.
+   > [!NOTE]
+   > You only see the flows to which you have access and are located in a solution. Child flows must also have one of the three triggers mentioned previously.
 
    ![Select the child flow to run.](./media/call-child-flow/select-child-flow.png "Select the child flow to run")
 
-1. After you select your child flow, you will see the _inputs_ that you defined in the child flow. After the child flow action, you will be able to use any of the _outputs_ from that child flow.
+1. After you select your child flow, you see the _inputs_ that you defined in the child flow. After the child flow action, you're able to use any of the _outputs_ from that child flow.
 
    ![Inputs.](./media/call-child-flow/view-child-flow-input.png "Inputs")
 
@@ -96,15 +93,13 @@ You will need a solution with two flows.
 
 1. Save and test this flow.
 
-   >[!TIP]
-   >When you export the solution that contains these two flows and import it into another environment, the new parent and child flows will be automatically linked, so there's no need to update URLs.
+   > [!TIP]
+   > When you export the solution that contains these two flows and import it into another environment, the new parent and child flows are automatically linked, so there's no need to update URLs.
 
-## Known issues
+## Known issue
 
-We are working to address the following known issues and limitations.
+We are working to address the following known issue and limitation.
 
-1. If you block the HTTP Request connector via data loss prevention (DLP), child flows are also blocked because child flows are implemented using the HTTP connector. Work is underway to separate DLP enforcement for child flows so that they are treated like other cloud flows.
-
-1. You must create the parent flow and all child flows **directly** in the same solution. If you import a flow into a solution, you will get unexpected results.
+You should create the parent flow and all child flows *directly* in the same solution. If you import a flow into a solution, you might get unexpected results.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

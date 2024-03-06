@@ -1,91 +1,76 @@
 ---
-title: Overview of Adaptive Cards for Teams | Microsoft Docs
-description: Learn to use Adaptive Cards with Microsoft Teams.
-services: ''
+title: Overview of adaptive cards for Teams
+description: Learn to use adaptive cards with Microsoft Teams.
 suite: flow
-documentationcenter: na
-author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
+author: v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 01/01/2020
-ms.author: deonhe
+ms.date: 09/08/2023
+ms.author: hamenon
 search.audienceType: 
   - flowmaker
   - enduser
-ms.reviewer: gtrantzas
+ms.reviewer: angieandrews
+ms.custom: bap-template
 ---
-# Overview of Adaptive Cards for Microsoft Teams
 
-Adaptive Cards are a platform-agnostic method of sharing and displaying blocks of information without the complexity of customizing CSS or HTML to render them. You author Adaptive Cards in JSON format, with integrations that cloud apps and services can openly exchange. When delivered to a specific host, such as Microsoft Teams, the JSON is transformed into native UI that automatically adapts to its host. Therefore, process designers can now offer consistent UI patterns whenever they need to display information as part of a business process/automation.
- 
-Since Adaptive Cards adapt to their host, they are perfect vehicles for sharing information between Microsoft Teams and other services.
+# Overview of adaptive cards for Microsoft Teams
 
-  ![A screenshot of Adaptive Cards.](media/adaptive-cards/multi-adaptive-cards.png)
- 
+Adaptive cards are a platform-agnostic method of sharing and displaying blocks of information without the complexity of customizing CSS or HTML to render them. You author adaptive cards in JSON format, with integrations that cloud apps and services can openly exchange. When delivered to a specific host, such as Microsoft Teams, the JSON file is transformed into native UI that automatically adapts to its host. Therefore, process designers can now offer consistent UI patterns whenever they need to show information as part of a business process/automation.
+
+Since adaptive cards adapt to their host, they're perfect vehicles for sharing information between Microsoft Teams and other services.
+
+:::image type="content" source="media/adaptive-cards/multi-adaptive-cards.png" alt-text="Screenshot of adaptive cards.":::
+
 ## Currently available actions for flows
- 
-The following actions enable makers to create Adaptive Cards for Microsoft Teams. As integration scenarios evolve, other hosts will also be supported by Power Automate, which will extend your opportunities to leverage Adaptive Cards throughout Microsoft cloud subscriptions.
+
+The following actions enable makers to create adaptive cards for Microsoft Teams. As integration scenarios evolve, other hosts will also be supported by Power Automate, which will extend your opportunities to leverage adaptive cards throughout Microsoft cloud subscriptions.
 
 > [!NOTE]
-> Adaptive Cards aren't available within the DoD environment.
- 
-## Directing content to **Teams members or AAD users**
- 
-- **Post your own adaptive card as the Flow bot to a user**  
-  This action posts an adaptive card as a Flow bot to a specific user. In this case, you will need to provide a recipient email address, and the card will show up in the recipient's chat and/or activity feeds during the flow run. There is no requirement for the user to be part of a Teams instance to receive these types of Adaptive Cards. In this case, only the URL buttons function by redirecting to the URL that's configured within the flow.
+> Adaptive cards aren't available within the DoD (Department of Defense) environment.
 
-    ![Samples of adaptive cards.](media/adaptive-cards/top.png)
- 
-- **Post an adaptive card as the Flow bot to a Teams user, and wait for a response**  
-  This action posts an adaptive card as a Flow bot to a specific user, like the case presented earlier in this article. However, in this case the flow run will not continue after the post until the recipient responds to inputs that are required within the card. The flow continues after the recipient responds. The flow returns dynamic content for one (1) response per recipient and per card.
- 
-## Directing content to **Teams channels**
- 
-- **Post your own adaptive card as the Flow bot to a channel**  
-  This action posts an adaptive card as a Flow bot to a specific Teams channel. In this case, you will be prompted for Teams instance, and a channel where the card will be posted. The flow-maker will have to have access to the Teams instance in order to post an adaptive card there. In this case, only URL buttons function by redirecting to the URL configured within the flow.
- 
-- **Post an adaptive card as the Flow bot to a Teams channel, and wait for a response**  
-  This action posts an adaptive card as a Flow bot to a specific Teams channel as in the case above. However, in this case the flow will not continue until someone on the channel has responded to any inputs required within the card. The flow will continue once the anyone in the Teams channel responds but will only return dynamic content for one (1) response per responder and per card.
- 
-     ![Post an adaptive card as the Flow bot to a Teams channel, and wait for a response.](media/adaptive-cards/bottom.png)
+## Directing content to Teams members or Microsoft Entra users
 
-     >[!TIP]
-     >When you use this card, the flow waits for a response from any Teams member.
- 
- 
+### Post your own adaptive card as the Flow bot to a user
+
+This action posts an adaptive card as a flow bot to a specific user. In this case, you need to provide a recipient email address. Then, the card shows up in that recipient's chat and/or activity feeds during the flow run. There's no requirement for the user to be part of a Teams instance to receive these types of adaptive cards. In this case, only the URL buttons function by redirecting to the URL that's configured within the flow.
+
+### Post an adaptive card as the Flow bot to a Teams user, and wait for a response
+
+This action posts an adaptive card as a Flow bot to a specific user, like the case presented earlier in this article. However, in this case the flow run will not continue after the post until the recipient responds to inputs that are required within the card. The flow continues after the recipient responds. The flow returns dynamic content for one (1) response per recipient and per card.
+
+## Directing content to Teams channels
+
+- **Post your own adaptive card as the flow bot to a channel**  
+  This action posts an adaptive card as a flow bot to a specific Teams channel. In this case, you're prompted for Teams instance, and a channel where the card is posted. The flow maker has to have access to the Teams instance in order to post an adaptive card there. In this case, only URL buttons function by redirecting to the URL configured within the flow.
+
+- **Post an adaptive card as the flow bot to a Teams channel, and wait for a response**  
+  This action posts an adaptive card as a flow bot to a specific Teams channel as in the case above. In this case, the flow doesn't continue until someone on the channel responds to inputs required within the card. The flow continues once anyone in the Teams channel responds but only returns dynamic content for one (1) response per responder and per card. When you use this card, the flow waits for a response from any Teams member.
+
 ## Known issues
- 
-- It is not possible to collect data from Adaptive Cards unless they are created using one of the "wait for a response" actions. Adaptive Cards that don't wait return an error for all button actions except OpenURL. Learn more on [OpenURL buttons](https://adaptivecards.io/explorer/Action.OpenUrl.html). 
 
-- Selecting Action.Submit buttons on a card which doesn't include the "wait for a response" suffix, will throw an error.
- 
-- Adaptive Cards created using the "wait for response" actions can only be submitted once per card. The flow run will continue after the first response, and any further submissions are ignored.
- 
-- Only the information within the ‘Update message’ input box (see image 3) will be shown on the replacement card after consumers submit the card.
+- It isn't possible to collect data from adaptive cards unless they're created using one of the *wait for a response* actions. Adaptive cards that don't wait return an error for all button actions except **OpenURL**. [Learn more about OpenURL buttons](https://adaptivecards.io/explorer/Action.OpenUrl.html).
 
-  Additional details, such as the user id of the person submitting the card, will be available within the dynamic content in actions following the ‘wait for a response’ action. However, it may be necessary to include the Office 365 Users connector in order to complete desired profile information for the user who submitted the card.
- 
-- Once the "wait for a response" Adaptive Cards are submitted, the card resets and then appears exactly the same, unless the replacement/update message area is configured. Update messages are a best practice, and are recommended in order to update others, but also to prevent consumers from attempting to submit the card more than once.
- 
-   ![Update message.](media/adaptive-cards/update-message.png) 
- 
->[!TIP]
->The **Update Message** and the **Should update card** inputs must be configured if a replacement card is desired.
- 
-- Power Automate uses Microsoft Adaptive Cards' unique features and services to handle the cards within any host. This article is intended to clarify any specifics related to flow actions. You can also use the full documentation for [building Adaptive Cards](/adaptive-cards/).
- 
-## Learn more 
- 
-- Create your [first adaptive card](./create-adaptive-cards.md)
-- Full documentation for the [Microsoft Teams connector](/connectors/teams/)
-- Full documentation on [Adaptive Cards IO](/adaptive-cards) 
+- Selecting **Action.Submit** buttons on a card that doesn't include the *wait for a response* suffix show an error.
 
+- Adaptive cards created using the *wait for response* actions can only be submitted once per card. The flow run  continues after the first response, and any further submissions are ignored.
 
+- Only the information within the **Update message** input box show on the replacement card after consumers submit the card.
+
+  Additional details, such as the user id of the person submitting the card, are available within the dynamic content in actions following the *wait for a response* action. However, it might be necessary to include the Office 365 Users connector in order to complete desired profile information for the user who submitted the card.
+
+- Once the *wait for a response* adaptive cards are submitted, the card resets and then appears exactly the same, unless the replacement/update message area is configured. Update messages are a best practice. They're recommended in order to update others and prevent consumers from attempting to submit the card more than once.
+
+    :::image type="content" source="media/adaptive-cards/update-message.png" alt-text="Screenshot of an update message.":::
+
+The **Update Message** and the **Should update card** inputs must be configured if a replacement card is desired.
+
+- Power Automate uses Microsoft adaptive cards' unique features and services to handle the cards within any host. This article is intended to clarify any specifics related to flow actions. You can also use the full documentation for [building adaptive cards](/adaptive-cards/).
+
+### See also
+
+- [Create your first adaptive card](./create-adaptive-cards.md)
+- [Microsoft Teams connector](/connectors/teams/)
+- [Adaptive cards IO](/adaptive-cards)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -4,9 +4,10 @@ description: Premium robotic process automation (RPA) features
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/02/2022
+ms.date: 09/21/2023
 ms.author: dipapa
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 contributors:
 - jpapadimitriou
 - Yiannismavridis
@@ -28,6 +29,7 @@ This article lists the premium robotic process automation (RPA) features and ben
 |Automatic triggering/scheduling and integration with cloud flows|Trigger/schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger desktop flows from cloud flows](trigger-desktop-flows.md)|
 |Flow triggering via desktop shortcut|Trigger local attended desktop flows through their desktop shortcuts.|[Learn how to trigger a desktop flow via shortcut](run-desktop-flows-url-shortcuts.md)|
 |Flow triggering via URL|Trigger local attended desktop flows through their run URLs from anywhere on your machine.|[Learn how to trigger a desktop flow via URL](run-desktop-flows-url-shortcuts.md)|
+|Flow triggering in Picture-in-Picture|Trigger attended desktop flows within a virtual window.|[Learn how to trigger a desktop in Picture-in-Picture](run-desktop-flows-pip.md)|
 |Access to premium and custom connectors|Access all premium cloud connectors and create custom connectors.|[Learn about premium connectors](/connectors/connector-reference/connector-reference-premium-connectors)<br>[Learn about custom connectors](/connectors/custom-connectors)|
 |AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder.|[Learn about AI Builder](/ai-builder)|
 |Access to process mining |Visualize and analyze your business processes with process mining.|[Learn about process mining](/power-automate/process-advisor-overview)|
@@ -45,7 +47,7 @@ This article lists the premium robotic process automation (RPA) features and ben
 
 > [!IMPORTANT]
 >
-> - Unattended desktop flow executions require the **Power Automate Process** plan (previously Power Automate per flow), which can be applied against a qualifying base license.
+> - Unattended desktop flow executions require the Power Automate Process plan (previously named Power Automate per flow).
 > - AI Builder is licensed as an add-on for existing subscription plans. A certain number of AI Builder credits are included in the Power Automate Premium plan (previously Power Automate per user with attended RPA).
 
 ## Plans that provide entitlements for the premium RPA features

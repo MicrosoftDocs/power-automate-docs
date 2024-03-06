@@ -1,17 +1,15 @@
 ---
-title: Respond to personal data discovery requests (Azure AD)
-description: Learn about the resources available in Power Automate to help you meet your obligations to discover customers' personal data under various privacy laws and regulations for users who authenticate using Azure AD.
+title: Respond to personal data discovery requests (Microsoft Entra ID)
+description: Learn about the resources available in Power Automate to help you meet your obligations to discover customers' personal data under various privacy laws and regulations for users who authenticate using Microsoft Entra ID.
 suite: flow
 documentationcenter: na
-author: MSFTMAN
-manager: KVIVEK
-ms.author: Deonhe
-ms.reviewer: gtrantzas
+author: v-aangie
+ms.author: angieandrews
+ms.reviewer: angieandrews
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/18/2023
@@ -22,11 +20,11 @@ search.audienceType:
   - admin
 ---
 
-# Respond to personal data discovery requests (Azure AD)
+# Respond to personal data discovery requests (Microsoft Entra ID)
 
 The first step in responding to personal data requests is to find personal data that's subject to the request. This step helps you to determine whether a request meets your organization's requirements for honoring or declining the request.
 
-The following table summarizes the Power Automate resources that may contain the personal data of a user who authenticates using Azure Active Directory (Azure AD).
+The following table summarizes the Power Automate resources that may contain the personal data of a user who authenticates using Microsoft Entra ID.
 
 | **Resource** | **Purpose** |
 | ----- | ----- |

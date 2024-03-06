@@ -1,19 +1,15 @@
 ---
-title: Use data operations in Power Automate (contains video) | Microsoft Docs
+title: Use data operations in Power Automate (contains video)
 description: Learn to perform operations such as create HTML tables, create CSV tables, compose, join, select, and filter arrays with Power Automate.
-services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMan
-editor: ''
-tags: ''
-ms.devlang: na
+author: v-aangie
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 07/14/2022
-ms.author: deonhe
+ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -41,13 +37,13 @@ Use the **Data Operation - Compose** action to save yourself from having to ente
 
 1. Search for **compose**, and then select the **Compose - Data Operation** action.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of searching for and selecting the Compose action.](./media/data-operations/search-select-compose-2.png "Compose - Data Operation action")
+> [!div class="mx-imgBorder"]
+> ![Screenshot of searching for and selecting the Compose action.](./media/data-operations/search-select-compose-2.png "Compose - Data Operation action")
 
-2. In the **Inputs** box, enter the array that you want to reference later.
+1. In the **Inputs** box, enter the array that you want to reference later.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of configuring the compose action.](./media/data-operations/add-array-compose-2.png "Configure the Compose action")
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of configuring the compose action.](./media/data-operations/add-array-compose-2.png "Configure the Compose action")
 
 > [!TIP]
 > To make the **Compose** card easier to find later, rename it by selecting the text **Compose** on the title bar of the card and entering a name that's easy to remember.
@@ -141,8 +137,6 @@ In this example, you use the filter array action on this array:
 
 to create a new array that contains only objects in which `first` is set to `Eugenia`.
 
-Let's do this:
-
 1. Find, and then add, the **Filter array** action to your flow.
 2. Configure the filter array action as shown in the following screenshot.
 
@@ -169,7 +163,7 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of Configuring the Create CSV table action. From is set to Body, and Columns is set to Automatic.](./media/data-operations/create-csv-table-2.png "Configure the CSV table action")
-   
+
     The **Body** token in this image comes from a **When a HTTP request is received** action; however, you can get the input for the **Create CSV table** action from the output of any previous action in your flow, or you can enter it directly in the **From** box.
 2. Save, and then run, your flow.
 
@@ -182,7 +176,7 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
 
 Use the **Create HTML table - Data Operation** action to change a JSON array input into an HTML table. You can keep the headers visible in the HTML output.
 
-To do this, follow the steps in previous section for creating a CSV table, but use the **Create HTML table - Data Operation** action instead of **Create CSV table**.
+To do this, follow the steps in the previous **Use the create CSV table action** section for creating a CSV table. Use the **Create HTML table - Data Operation** action instead of **Create CSV table**.
 
 > [!TIP]
 > If you plan to send the HTML table via email, remember to select **IsHtml** in the email action.

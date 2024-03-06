@@ -7,7 +7,6 @@ documentationcenter: na
 author: quseleba
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na

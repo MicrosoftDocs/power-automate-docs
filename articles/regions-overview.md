@@ -4,11 +4,10 @@ description: Overview with question and answer about regions in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMan
+author: v-aangie
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na

@@ -40,8 +40,8 @@ In this sample scenario, imagine that there's a Microsoft list with products tha
 1. Select the item that you want to transform.
 1. Provide an example of the original data for the item that you've selected in the previous step.
 
-   >[!TIP]
-   >You can go to the original data source or review a previous flow run to copy an example value for the previous step.
+   > [!TIP]
+   > You can go to the original data source or review a previous flow run to copy an example value for the previous step.
 
 1. Provide a sample of how you’d like the flow to transform the example.  
 
@@ -49,8 +49,8 @@ In this sample scenario, imagine that there's a Microsoft list with products tha
 
    Power Automate displays the expression that it recommends that you use to get the output you want. You can test it with another value to confirm that the expression does what you expect.
 
-   >[!TIP]
-   >If the expression that Power Automate recommends isn't what you expect, you can add more examples to refine the expression that it recommends.
+   > [!TIP]
+   > If the expression that Power Automate recommends isn't what you expect, you can add more examples to refine the expression that it recommends.
 
     :::image type="content" source="media/format-data-by-examples/expression-test.png" alt-text="Screenshot of the suggested expression and how to test it.":::
 
@@ -62,13 +62,17 @@ Congratulations! You’ve built an expression by providing an example.
 
 ## Format numbers by examples
 
-In this example, imagine you have a number that comes from a Microsoft Forms survey as 5958. You want to format the number as a currency value before you store it in an Excel file, like this $5,958. To direct your flow to format the number as a currency value, provide an example of how Microsoft Forms returns the number and an example of how you want your flow to format the number. Power Automate uses the information you provide and then it suggests the expression that does the transformation, as shown in the following screenshot.
+In this example, imagine you have a number that comes from a Microsoft Forms survey as 5958. You want to format the number as a currency value before you store it in an Excel file, like this $5,958. To direct your flow to format the number as a currency value, provide an example of how Microsoft Forms returns the number and an example of how you want your flow to format the number. 
+
+Power Automate uses the information you provide and then it suggests the expression that does the transformation, as shown in the following screenshot.
 
 :::image type="content" source="media/format-data-by-examples/example-number.png" alt-text="Screenshot of how to format a number into a currency by providing an example. Power Automate suggests the expression to achieve this transformation.":::
 
 ## Format text by examples
 
-In the following scenario, imagine you have a registration form in which participants provide their full name and you want to send a registration confirmation email with just the first name. Instead of greeting the person by their full name, for example Casey Jensen, we just want to say Casey. Just provide an example and Power Automate suggests the right expression to achieve this transformation, as the following screenshot displays.
+In the following scenario, imagine you have a registration form in which participants provide their full name and you want to send a registration confirmation email with just the first name. Instead of greeting the person by their full name, for example Casey Jensen, we just want to say Casey.
+
+Just provide an example and Power Automate suggests the right expression to achieve this transformation, as the following screenshot displays.
 
 :::image type="content" source="media/format-data-by-examples/example-text.png" alt-text="Screenshot of how to format text from a person’s full name to only their first name. Power Automate suggests the expression to achieve this transformation.":::
 

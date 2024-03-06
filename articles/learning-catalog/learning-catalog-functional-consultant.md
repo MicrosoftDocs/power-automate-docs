@@ -1,10 +1,10 @@
 ---
 title: Functional Application Consultant learning catalog
 description: Find training options for implementation experts in Power Automate.
-author: msftman
+author: v-aangie
 ms.topic: conceptual
 ms.date: 03/21/2020
-ms.author: deonhe
+ms.author: angieandrews
 ms.reviewer: angieandrews
 
 ---

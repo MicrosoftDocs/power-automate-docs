@@ -4,15 +4,15 @@ description: Get an overview of the Microsoft Power Automate mobile app, includi
 services: ''
 suite: flow
 documentationcenter: na
-author: natalie-pienkowska
+author: jamiemwork
 contributors:
-  - natalie-pienkowska
+  - jamiemwork
   - kartikraop
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.date: 06/05/2023
-ms.author: napienko
+ms.author: jamiller
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -50,7 +50,7 @@ If you haven't tried Power Automate yet, [sign up for free](../sign-up-sign-in.m
 
 You might have different environments to work in depending on the purpose of your work (for example, testing, projects, and customers). You can easily change your environment to access your flows, approvals, notifications, and more when you're working on your mobile device.
 
-1. Open the Power Automate mobile app and sign in with either Azure Active Directory or your Microsoft account.
+1. Open the Power Automate mobile app and sign in with either Microsoft Entra ID or your Microsoft account.
 
 1. Select the environment icon, and then select the environment you want to access. A check mark appears next to the selected environment.
 
@@ -58,13 +58,6 @@ You might have different environments to work in depending on the purpose of you
 
 ## Limitations
 
-The Power Automate mobile app  has a few limitations:
-
-- Geofencing, or using location-based triggers, isn't supported in the mobile app.
-
-- There's no camera option to upload files with the mobile app.
+Power Automate mobile app doesn't support geofencing (using location-based triggers).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
-
-
-
