@@ -4,7 +4,7 @@ description: Learn about how to create custom actions in Power Automate for desk
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/19/2023
+ms.date: 12/15/2023
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors: 
@@ -14,10 +14,14 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Create Power Automate for desktop actions using the Actions SDK
 
+This article describes how to create custom actions in Power Automate for desktop.
+
 ## Creating custom actions
+
+> [!IMPORTANT]
+> Reserved keywords can't be used as action names and/or action properties. Use of reserved keywords as action names and/or action properties result in erroneous behavior. More information: [Reserved keywords in desktop flows](reserved-keywords.md)
 
 Begin by creating a new Class Library (.NET Framework) project. Select .NET framework version 4.7.2.
 
@@ -87,7 +91,7 @@ The format of the descriptions for Modules and Actions should be as follows:
 
 "Module_Description" or "Action_Description" and "Module_FriendlyName" or "Action_FriendlyName" respectively in the name field. The description in the value field.
 
-It's also recommended to provide descriptions and friendly names for parameters. Their format should be as follows: "Action_Parameter_Description", "Action_Parameter_FriendlyName".
+We also recommend that you provide descriptions and friendly names for parameters. Their format should be as follows: "Action_Parameter_Description", "Action_Parameter_FriendlyName".
 
 :::image type="content" source="media/custom-actions/create-custom-actions/resources-siimple-actions.png" alt-text="Screenshot of Resources for a simple action" border="true":::
 
@@ -458,7 +462,6 @@ To set the assembly name of your module, modify the **Assembly name** property u
 > [!WARNING]
 > Including modules with the same ID in a flow will result in conflicts
 
-
 ## Custom module name conventions
 
 For the custom modules to be readable through Power Automate for desktop, the AssemblyName must have a filename that follows the below pattern:
@@ -472,8 +475,8 @@ For example, **Modules**.ContosoActions.dll
 
 The AssemblyTitle in the project settings specifies the module ID. It can only have alphanumeric characters and underscores and must begin with a letter.
 
-
 ## Signing a custom module
+
 > [!IMPORTANT]
 > It is mandatory to have all of the .dll files tha comprise a custom module (generated assembly and all its dependencies) signed with a trusted certificate
 

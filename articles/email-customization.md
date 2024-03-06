@@ -12,6 +12,7 @@ ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Customize email in flows
