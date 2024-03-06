@@ -4,18 +4,17 @@ description: Learn to automate Web apps with Selenium IDE flows.
 services: ''
 suite: flow
 documentationcenter: na
-author: georgiostrantzas
+author: mattp123
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/24/2023
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

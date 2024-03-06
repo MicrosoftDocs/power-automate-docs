@@ -1,10 +1,10 @@
 ---
-title: Troubleshooter (preview)
+title: Troubleshooter
 description: Troubleshooter application for Power Automate for desktop.
 author: YiannisMavridis
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 07/12/2023
+ms.date: 11/14/2023
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
@@ -14,18 +14,13 @@ search.audienceType:
   - enduser
 ---
 
-# Troubleshooter (preview)
+# Troubleshooter
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
 The troubleshooter in Power Automate for desktop is a component that allows you to diagnose, and in certain cases, troubleshoot, potential issues that you might face in the desktop application of Power Automate.
 
-:::image type="content" source="media/troubleshooter/troubleshooter-window.png" alt-text="Troubleshooter main screen" border="false":::
-
-> [!IMPORTANT]
-> This is a preview feature.
-> 
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+:::image type="content" source="media/troubleshooter/Troubleshooter window GA.png" alt-text="Troubleshooter main screen" border="false":::
 
 The troubleshooter includes two categories of diagnostics, for connectivity and UI/Web automation issues, while it also hosts the functionality that puts Power Automate in an improved diagnostics state for troubleshooting purposes.
 
@@ -46,7 +41,7 @@ On a high level, there are three steps that are checked one after the other:
 * Proxy server
 * Required services
 
-:::image type="content" source="media/troubleshooter/steps-of-connectivity-issues-diagnostic.png" alt-text="All steps of diagnostic with no issues detected" border="false":::
+:::image type="content" source="media/troubleshooter/Steps of connectivity issues diagnostic GA.png" alt-text="All steps of diagnostic with no issues detected" border="false":::
 
 For the **internet connection**, the troubleshooter checks in sequence:
 
@@ -59,7 +54,7 @@ For the **proxy server**, the troubleshooter checks if there's any proxy related
 
 If one step fails with an error, the following steps aren't checked at all, as the success of one check on connectivity issues is a requirement to proceed to the following step.
 
-:::image type="content" source="media/troubleshooter/connectivity-error-detected.png" alt-text="Connectivity error detected during step" border="false":::
+:::image type="content" source="media/troubleshooter/Connectivity error detected GA.png" alt-text="Connectivity error detected during step" border="false":::
 
 > [!NOTE]
 > In case of one or more errors, the respective details are displayed in the troubleshooter screen, after expanding the corresponding error.
