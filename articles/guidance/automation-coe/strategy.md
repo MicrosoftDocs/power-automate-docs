@@ -2,13 +2,14 @@
 title: "Automation CoE Strategy | Microsoft Docs"
 description: Your Automation CoE helps ensure that your system is managed and governed according to your organization’s strategic priorities.
 author: kathyos
-
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 09/26/2022
 ms.subservice: guidance
 ms.author: kathyos
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
+
 search.audienceType: 
   - admin
 ---

@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 09/21/2023
+ms.date: 01/24/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -14,7 +14,7 @@ contributors:
 
 Hosted machines allow you to build, test, and run attended and unattended desktop flows without providing or setting up any physical machines.
 
-You can create hosted machines directly through the Power Automate portal. Power Automate will automatically provision a Windows machine based on your configuration and register it to your environment. Access your hosted machines in the Power Automate portal and start building your desktop flows within minutes. Hosted machines use [Windows 365](https://www.microsoft.com/windows-365) for provisioning and access.
+You can create hosted machines directly through the Power Automate portal. Power Automate automatically provisions a Windows machine based on your configuration and registers it to your environment. Access your hosted machines in the Power Automate portal and start building your desktop flows within minutes. Hosted machines use [Windows 365](https://www.microsoft.com/windows-365) for provisioning and access.
 
 Here are some of the highlights of what you can do with hosted machines:
 
@@ -49,7 +49,7 @@ You'll also need the following prerequisite licenses: Windows, Intune, Microsoft
 
 To evaluate hosted machines, you need one of the following trial licensing options:
 
-- Use the **Power Automate Premium** plan (previously Power Automate per user plan with attended RPA ) and the **Power Automate hosted RPA add-on trials**.
+- Use the **Power Automate Premium** plan (previously Power Automate per user plan with attended RPA) and the **Power Automate hosted RPA add-on trials**.
 
     The Power Automate hosted RPA add-on have trial versions that last 30 days and can be extended once to a total of 60 day. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those Power Automate Premium (previously Power Automate per user plan with attended RPA) trials to 25 individual makers, and assign the hosted RPA add-ons to the targeted environment.
 
@@ -154,7 +154,7 @@ To create a hosted machine:
 
         Alternatively, you can select a [custom VM image](#use-custom-vm-images-for-your-hosted-machine) that has been shared with your account.
 
-    1. Optionally, select the [custom network connection](#use-custom-vnet-for-your-hosted-machines) you want your hosted machine to be provisioned with Microsoft Entra ID. Otherwise, you'll automatically connect to the Microsoft Hosted Network.
+    1. Optionally, select the [custom network connection](#use-a-custom-virtual-network-for-your-hosted-machines) you want your hosted machine to be provisioned with Microsoft Entra ID. Otherwise, you'll automatically connect to the Microsoft Hosted Network.
 
     1. Review and create your hosted machine.
 
@@ -209,7 +209,7 @@ You can personalize your hosted machines by providing your own Windows image dir
 - Canada: Canada Central
 - Europe: North Europe
 - France: France Central
-- Germany: Germany West Central (Restricted, please send your request to hostedrpa@microsoft.com) 
+- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com) 
 - India: Central India
 - Japan: Japan East
 - Korea: Korea Central
@@ -230,12 +230,12 @@ Custom VM images must meet the following requirements:
 - Generalized VM image
 - Single Session VM images (multi-session isn’t supported)
 - No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition)
-- Default 64-GB OS disk size. The OS disk size will be automatically adjusted to 256-GB
+- Default 64-GB OS disk size. The OS disk size will be automatically adjusted to 256 GB
 - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
 ### Share the reader permission on Azure subscription with Windows 365 service principal
 
-To use your VM image for hosted machines, you'll need to grant Windows 365 service principal with the following permissions:
+To use your VM image for hosted machines, you need to grant Windows 365 service principal with the following permissions:
 
 - Reader permission on the Azure subscription.
 
@@ -301,19 +301,22 @@ The last step before using your image in Power Automate is to share the image wi
 > [!NOTE]
 > When a user isn't part of an environment anymore, you can continue to see the user as deactivated. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
 
-## Use custom VNet for your hosted machines
+## Use a custom virtual network for your hosted machines
 
-You can connect to your own virtual network (vNET) with your hosted machines to securely communicate with each other, the Internet, and on-premises networks. Providing your own VNet from your Azure subscription will allow your hosted machines to be provisioned with your VNet automatically.
+You can connect to your own virtual network with your hosted machines to securely communicate with each other, the Internet, and on-premises networks. Providing your own virtual network from your Azure subscription allows your hosted machines to be provisioned with your virtual network automatically.
+
+> [!NOTE]
+> You can have up to 30 custom virtual networks configured per tenant.
 
 ### General network requirement
 
 To use your own network and provision Microsoft Entra joined hosted machines, you must meet the following requirements:
 
-- You must have a virtual network (vNET) in your Azure subscription in the same region where you've created the hosted machines.
+- You must have a virtual network in your Azure subscription in the same region where you've created the hosted machines.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
 - A subnet within the virtual network and available IP address space.
 
-The VNet needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
+The virtual network needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
 
 - Australia: Australia East
 - Asia: East Asia
@@ -454,7 +457,8 @@ You can share your hosted machines with other users so they can run desktop flow
     **User** permission only allows the targeted user to run desktop flows on the selected hosted machine. A **Co-Owner** can also edit the hosted machine details.
 
 > [!NOTE]
-> When a user isn't part of an environment anymore, you may continue to see the user as deactivated. You'll be notified in the **Manage access** section of the hosted machine if it's shared with deactivated users. In this situation, remove access to them.
+> - Sign-in access is only available to the creator of the hosted machine.
+> - When a user isn't part of an environment anymore, you may continue to see the user as deactivated. You'll be notified in the **Manage access** section of the hosted machine if it's shared with deactivated users. In this situation, remove access to them.
 
 ## Run desktop flows on hosted machines
 
@@ -501,11 +505,11 @@ By default, the **Environment Maker** role can create hosted machines in their e
 - Flow Machine
 - Flow Machine Group
 - Flow Machine Image
-- Flow Machine Network (if using custom VNet for your hosted machine)
+- Flow Machine Network (if using custom virtual network for your hosted machine)
 
 The Environment Maker role can [create and share custom VM images](#use-custom-vm-images-for-your-hosted-machine), as these actions require create and append privileges on the **Flow Machine Image**.
 
-The Environment Maker role can [create and share custom VNet](#use-custom-vnet-for-your-hosted-machines), as these actions require create and append privileges on the **Flow Machine Network**.
+The Environment Maker role can [create and share custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machines), as these actions require create and append privileges on the **Flow Machine Network**.
 
 Admins can also use the roles provided as part of Desktop Flows. You can find more information about desktop flow security roles in [Manage Machines](manage-machines.md#update-permissions-based-on-security-role).
 
@@ -513,13 +517,13 @@ Admins can also use the roles provided as part of Desktop Flows. You can find mo
 
 #### Desktop Flows Machine Owner role
 
-By default, the **Desktop Flows Machine owner** can create hosted machines, but can't create custom VM images or custom VNet. They can only use previously shared [custom VM images](#use-custom-vm-images-for-your-hosted-machine) or [custom VNets](#use-custom-vnet-for-your-hosted-machines) in their own hosted machine.
+By default, the **Desktop Flows Machine owner** can create hosted machines, but can't create custom VM images or custom virtual network. They can only use previously shared [custom VM images](#use-custom-vm-images-for-your-hosted-machine) or [custom virtual networks](#use-a-custom-virtual-network-for-your-hosted-machines) in their own hosted machine.
 
 :::image type="content" source="media/hosted-machines/desktop-flows-machine-owner-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Owner role.":::
 
 #### Desktop Flows Machine Configuration Admin role
 
-The **Desktop Flows Machine Configuration Admin role** role only brings full privileges on the **Flow Machine Image** and **Flow Machine Network** entities. In particular, it allows users with this role to share/unshare VM images and VNets to be used for created hosted machines in their environment. You can find more information about sharing pre-provisioned VM images and VNets in [Create hosted machines](#create-a-hosted-machine).
+The **Desktop Flows Machine Configuration Admin role** role only brings full privileges on the **Flow Machine Image** and **Flow Machine Network** entities. In particular, it allows users with this role to share/unshare VM images and virtual network to be used for created hosted machines in their environment. You can find more information about sharing pre-provisioned VM images and virtual network in [Create hosted machines](#create-a-hosted-machine).
 
 :::image type="content" source="media/hosted-machines/desktop-flow-machine-configuration-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Configuration Admin role.":::
 

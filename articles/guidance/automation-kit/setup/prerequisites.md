@@ -8,7 +8,6 @@ contributors:
   - Grant-Archibald-MS
   - v-aangie
 ms.custom: guidance
-ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na

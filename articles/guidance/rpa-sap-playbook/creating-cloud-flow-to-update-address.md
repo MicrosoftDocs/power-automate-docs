@@ -7,13 +7,12 @@ author: kathyos
 editor: ''
 ms.custom: guidance
 
-ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2022
 ms.author: kathyos
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 ---
 
 # Create the cloud flow to update an address with Power Automate 

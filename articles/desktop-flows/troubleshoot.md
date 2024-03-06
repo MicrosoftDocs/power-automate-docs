@@ -26,29 +26,6 @@ To open the Power Automate troubleshoot tool:
 >[!NOTE]
 >You need to have admin privileges to open the troubleshoot tool from Power Automate machine runtime.  
 
-## Resolve sign in and sign out issues
-
-Power Automate uses a file named **msalcache.bin3** to acquire tokens and authenticate users.
-
-If you encounter errors while signing in or signing out, try to erase all the stored tokens by deleting this file. To delete the file, navigate to **C:\Users\Username\AppData\Local\Microsoft\Power Automate Desktop\Cache**.
-
-> [!NOTE]
-> If the **AppData** folder isn't visible in your user folder, try to [display hidden files](https://support.microsoft.com/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2).
-
-If you have Power Automate installed in another drive, replace **C** with the letter of the respective drive. Also, replace **Username** with the name of your user folder.
-
-After deleting the **msalcache.bin3** file, restart the Power Automate service and sign in to your account.
-
-:::image type="content" source="media/troubleshoot/msal-file.png" alt-text="Screenshot of the msalcache.bin3 file in the file explorer.":::
-
-### Sign in using Web Account Manager (WAM)
-
-By default, Power Automate for desktop uses an Internet Explorer client to facilitate user authentication. If you encounter errors while signing in, try setting it to authenticate users through Web Account Manager (WAM).
-
-WAM allows signing in using accounts already registered to Windows without requiring passwords. It enables single sign-on (SSO) and can resolve sign-in issues related to Active Directory Federation Services (ADFS). Learn more about WAM in [Interactive with WAM](/azure/active-directory/develop/scenario-desktop-acquire-token-wam).
-
-To enable the WAM functionality in Power Automate for desktop, modify the [appropriate registry entry](governance.md#allow-users-to-sign-in-to-power-automate-for-desktop-using-web-account-manager-wam).
-
 ## Resolve failed connection between Power Automate components
 
 On startup, Power Automate shows the following error message:
