@@ -12,8 +12,9 @@ ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/02/2023
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
   - enduser
@@ -73,9 +74,7 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 
 1. Add the action or actions that you want the flow to take, as described in [Create a cloud flow from scratch](get-started-logic-flow.md).
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 The steps to configure an action in the cloud flows designer with Copilot are identical to the classic cloud flows designer. However, if you have access to Copilot, you can simply ask Copilot to create a scheduled flow. For example, you can ask by typing the following prompt:
 

@@ -60,10 +60,10 @@ additionalContent:
           url: ./desktop-flows/create-flow.md
     - title: AI copilot capabilities
       links:
-        - text: Get started with Copilot in cloud flows (preview)
+        - text: Get started with Copilot in cloud flows
           url: ./get-started-with-copilot.md
-        - text: Edit a flow using Edit with Copilot (preview)
-          url: ./get-started-with-copilot.md#edit-a-flow-using-edit-with-copilot-preview
+        - text: Edit a flow using the designer with copilot capabilities
+          url: ./get-started-with-copilot.md#edit-a-flow-using-the-designer-with-copilot-capabilities
     - title: Plan with the process mining capability
       links:
         - text: Understand your processes and identify opportunities with process mining
@@ -167,10 +167,6 @@ additionalContent:
         - title: Power Pages
           summary: Design, host, and administer secure, modern, and low-code business websites.
           url: /power-pages
-        # Card
-        - title: Power Virtual Agents
-          summary: Create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
-          url: /power-virtual-agents
         # Card
         - title: Dynamics 365
           summary: Empower your organization with the next generation of CRM and ERP applications.

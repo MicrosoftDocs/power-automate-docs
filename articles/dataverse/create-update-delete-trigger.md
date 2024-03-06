@@ -9,7 +9,8 @@ contributors:
 ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/02/2023
+ms.collection: bap-ai-copilot
 search.app: 
   - Flow
   - Powerplatform
@@ -41,9 +42,7 @@ Set the parameters directly on the card for the **When a row is added, modified 
 
 :::image type="content" source="../media/create-update-delete-trigger/trigger-current.png" alt-text="Screenshot of ":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 In your flow, select the card for the **When a row is added, modified or deleted** trigger. A pane opens on the left with the **Parameters** tab selected.
 
@@ -88,7 +87,7 @@ To access the advanced options, select **Show advanced options**.
 
 :::image type="content" source="../media/create-update-delete-trigger/advanced-current.png" alt-text="Screenshot of the advanced options.":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -147,9 +146,7 @@ Follow these steps to impersonate a user.
 
 For the steps in which it isn't selected, the default user is assumed. This calls the underlying APIs as per the selected user, and not as the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 For each Dataverse action that you want to run as a different user, select an option in the **Run as** dropdown menu.
 

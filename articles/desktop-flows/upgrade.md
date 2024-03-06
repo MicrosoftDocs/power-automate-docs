@@ -4,19 +4,18 @@ description:  Update UI flows app and connections from previous releases.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/03/2020
-ms.author: DeonHe
+ms.author: angieandrews
 contributors:
-- georgiostrantzas
+- mattp123
 search.audienceType: 
   - flowmaker
   - enduser

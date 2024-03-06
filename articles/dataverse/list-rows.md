@@ -1,11 +1,12 @@
 ---
 title: Use lists of rows in flows
 description: Learn how to use flows to work with lists of rows from Microsoft Dataverse.
-author: MSFTMAN
+author: v-aangie
 ms.author: Matow
 ms.reviewer: angieandrews
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/02/2023
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - maker
 ---
@@ -29,9 +30,7 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 1. Select the **Accounts** table from the **Table name** list.
 1. Save and run your flow to confirm that no more than 5,000 rows are returned.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. Select the plus sign (**+**) > **Add an action**.
 1. On the **Add an action** sceen, enter **list rows** in the **Search** field.
@@ -58,9 +57,7 @@ When pagination is set and the amount of rows exceeds that number of the thresho
 
     Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. Select the **List rows** card.
 1. On the pane to the left, select the **Settings** tab > **Networking**.
@@ -81,9 +78,7 @@ You can set advanced options directly on the **List rows** card. To see the opti
 
 :::image type="content" source="../media/list-rows/advanced-list-rows.png" alt-text="Screenshot of advanced options in the List rows card.":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 You can set options inthe action configuration pane.
 
@@ -104,6 +99,8 @@ Use to define an OData-style filter expression to narrow down the set of rows th
 
 Learn how to use [standard filter operators](/powerapps/developer/data-platform/webapi/query-data-web-api#standard-filter-operators) and [query functions](/powerapps/developer/data-platform/webapi/query-data-web-api#standard-query-functions)
 to construct **Filter Query** expressions.
+
+Certain characters, such as **&**, **#**, and **+** need to be replaced with their URL-encoded equivalent. More information: [URL encode special characters](/powerapps/developer/data-platform/webapi/query-data-web-api#url-encode-special-characters)
 
 > [!IMPORTANT]
 > Filter expressions can't contain this string, **\$filter=**, because it only applies when you use the APIs directly.
@@ -145,9 +142,7 @@ Type the following in the **Fetch Xml Query** field.
 As the distinct operator isn't currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](../data-operations.md#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](../create-variable-store-values.md#initialize-a-variable) with the expression *union(body(‘Select’),body(‘Select’))* to get an array with distinct rows.
 
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML.
 

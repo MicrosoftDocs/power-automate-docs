@@ -5,10 +5,11 @@ suite: flow
 author: kisubedi
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/02/2023
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 ---
 
 # Store and manage values in variables
@@ -74,9 +75,7 @@ You can create a variable and declare its data type and initial value all within
 > [!NOTE]
 > Although the **Initialize variable** action has a `variable` section structured as an array, the action can create only one variable at a time. Each new variable requires an individual **Initialize variable** action.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot)](#tab/edit-with-copilot)
 
 You can create a variable and declare its data type and initial value all within one action in your flow. You can only declare variables at the global level, not within scopes, conditions, and loops.
 
@@ -182,9 +181,7 @@ This action works only with integer and float variables.
 
 1. When you're done, on the designer toolbar, select **Save**.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 This action works only with integer and float variables.
 
@@ -257,9 +254,7 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 1. On the designer toolbar, select **Save**.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. In Power Automate, create a cloud flow and add a trigger that checks for new email and any attachments.
 

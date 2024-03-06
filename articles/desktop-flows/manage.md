@@ -1,12 +1,12 @@
 ---
 title: Manage desktop flows
 description: Learn how to manage desktop flows in the Power Automate portal.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/17/2023
+ms.date: 02/27/2024
 ms.author: appapaio
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributor:
 search.audienceType: 
   - flowmaker
@@ -55,12 +55,17 @@ Follow these steps to share a desktop flow:
 1. Go to **My flows** > **Desktop flows**.
 1. Select the desktop flow you want to share, and then **Share**.
 1. Select **Add people**, and then enter the name of the person in your organization with whom you'd like to share the desktop flow.
-1. Select the user and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
+
+   > [!NOTE]
+   >
+   > You can also enter a Microsoft Dataverse team name instead of the name of the person. If you want to share with a Microsoft Entra group, you first need to create a Microsoft Entra Group team in Dataverse based on the Microsoft Entra Group. More information: [Microsoft Dataverse teams management](/power-platform/admin/manage-teams)
+   
+5. Select the user and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
 
     - **Co-owner**: This access level gives the co-owner full permissions to the desktop flow. They can edit, share, and delete the desktop flow.
     - **User**: This access level gives permission to only use that desktop flow in a cloud flow and run it locally with Power Automate for desktop. No edit, rename, delete or share permissions are possible with this access. Alternatively, those users can create a copy of the desktop flow using the **Save as** option, and work independently.
 
-1. Select **Save**.
+6. Select **Save**.
 
    :::image type="content" source="media/manage-desktop-flows/sharing-ux.png" alt-text="Screenshot of the Share button.":::
 
@@ -68,6 +73,7 @@ Follow these steps to share a desktop flow:
 >
 > Once a desktop flow has been shared, owners and co-owners can change the access of each user by selecting **Manage access** on the desktop flow details page.
 > If someone shares a desktop flow with you, select the refresh button to see it in the **Shared with me** flows list.
+> After you share a desktop flow with new co-owners, the co-owners see all the desktop runs that happen in the future. However those co-owners don't see the desktop flows already completed before sharing.
 
 ## Reassign desktop flows
 
@@ -116,7 +122,9 @@ In this page, you can:
 
 > [!NOTE]
 >
-> > - When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
+> - Users of an environment with a Dataverse security role that grants them **Read** access to **all records** in the **Process** table (where different types of flows are stored), will be listed as **Co-owners** of **any desktop flows** created in that environment. They can't be removed as co-owners unless you change privileges and access level in the underlying security role.
+> An example of a security role with environment wide **Read** privileges for desktop flows is the **System Customizer** role, which has **Process** table **Read** permission set to **Organization**, which essentially allows users with this role to view all desktop flows in the environment and be marked as co-owner. We therefore highly recommended reviewing each security role before assigning them to users to ensure that the privilege set and access level is appropriate for the intended use case.
+> - When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You're notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
 
 ## Learn more
 

@@ -6,12 +6,13 @@ documentationcenter: na
 author: kisubedi
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/02/2023
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
+ms.collection: bap-ai-copilot
 ---
 
 # Customize email in flows
@@ -59,7 +60,7 @@ Alternatively, if you don't know&mdash;or don't feel like playing with&mdash;HTM
 1. Select **Save** at the bottom of the flow steps to save your flow.
 1. Be sure to test your flow to confirm that it works as intended.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview) 
+# [Edit with Copilot](#tab/edit-with-copilot) 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -91,8 +92,8 @@ The **Send an email** action can send messages to an email-enabled security grou
 
 Alternatively, follow these steps if you want users to receive the email in their mailbox.
 
-1. Add the [Get group members](/connectors/azuread/#get-group-members) action from the [Azure AD](/connectors/azuread/) connector, and then select the distribution list.
-1. Under the action **Azure AD-Get group members**, add an **Apply to each** action.
+1. Add the [Get group members](/connectors/azuread/#get-group-members) action from the [Microsoft Entra ID](/connectors/azuread/) connector, and then select the distribution list.
+1. Under the action **Microsoft Entra ID-Get group members**, add an **Apply to each** action.
 1. Inside the **Apply to each** action, add the **Send an email** action, and then add the group members from the **Get group members** action as dynamic content in the **To** field.
 
     :::image type="content" source="./media/email/group-members-flow.png" alt-text="Screenshot of a cloud flow that gets all group members and then sends email to each member.":::

@@ -1,18 +1,14 @@
 ---
 title: Use expressions in conditions in Power Automate
 description: Use advanced expressions such as "and", "or", "empty", "less", and "greater" in Power Automate Conditions.
-services: ''
 suite: flow
-documentationcenter: na
-author: msftman
-ms.devlang: na
+author: v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 09/08/2023
+ms.date: 10/02/2023
 ms.author: kisubedi
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
   - enduser
@@ -99,9 +95,7 @@ Let's create the flow.
 
     :::image type="content" source="includes/media/new-step/select-table-to-search.png" alt-text="Screenshot of Location, Document Library, File, and Table fields in the List rows present in a table card.":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. Ask Copilot to create a flow for you. Please type the following prompt in Copilot:
 
@@ -150,7 +144,7 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
     :::image type="content" source="./media/use-expressions-in-conditions/or-expression.png" alt-text="Screenshot of an 'or' expression.":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
 
@@ -194,9 +188,7 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
 1. Save your flow.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. Select **Add an action** on the **If yes** branch of the condition.
 

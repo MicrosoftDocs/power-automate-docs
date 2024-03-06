@@ -10,7 +10,6 @@ contributors:
   - v-aangie
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
@@ -138,6 +137,10 @@ The **Objects** tab of a solution shows all the solution objects in the solution
     Some non-solution cloud flows can't be added into a solution. To learn more, go to [known limitations](/power-apps/maker/data-platform/solutions-overview#known-limitations).
 
 1. Select **Add**.
+
+## Add many flows into Dataverse solutions using PowerShell
+
+Administrators can use PowerShell to quickly add many or all non-solution cloud flows into Dataverse solutions using the [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution) cmdlet. To learn more, go to [Add flows into Dataverse solutions via PowerShell](/power-platform/admin/powerapps-powershell#Add-flows-into-Dataverse-solutions).
 
 ### See also
 

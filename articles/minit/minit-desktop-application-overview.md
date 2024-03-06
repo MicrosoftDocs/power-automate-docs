@@ -11,6 +11,7 @@ ms.date: 07/18/2023
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 search.audienceType:
 - flowmaker
 - enduser
@@ -34,6 +35,10 @@ The Process Mining desktop app helps businesses to:
 ## Business example
 
 Power Automate Process Mining analyzes data from processes that you create using the process mining capability in Power Automate. For example, you can get deep insights into how your processes run, uncover the root cause of problems, and build useful outputs for the rest of your organization.
+
+## Use Copilot in Process Mining process analytics (preview)
+
+Copilot in Process Mining process analytics provides process insights through quick and easy natural language expression. Copilot can surface insights on your process and recommend solutions in power automate process mining. To learn more, go to [Copilot in Process Mining process analytics (preview)](../process-mining-copilot-in-process-analytics.md).
 
 ## Components
 

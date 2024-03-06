@@ -1,13 +1,13 @@
 ---
 title: Terminal emulation actions reference
 description: See all the available terminal emulation actions.
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 06/02/2023
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - jpapadimitriou
 - Yiannismavridis
@@ -39,6 +39,9 @@ Depending on the provider you're using, select the appropriate HLLAPI DLL file l
 - IBM Personal Communications: **EHLAPI32.dll**
 - MicroFocus Rumba: **System/ehlapi32.Dll**
 - Cybelesoft zScope: **zHllap32.dll**
+
+> [!NOTE]
+> The Windows HLLAPI DLL (WinHLLAPI) is not currently supported.
 
 :::image type="content" source="media/terminalemulation/open-terminal-session-action-hllapi.png" alt-text="Screenshot of the Open terminal session action with the HLLAPI option selected.":::
 

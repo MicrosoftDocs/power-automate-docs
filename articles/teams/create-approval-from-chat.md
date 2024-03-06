@@ -4,18 +4,15 @@ description: Learn how to create an approval from a chat or channel.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
+author: v-aangie
+contributors:
+ - kewaiss
+ - v-aangie
 ms.subservice: teams
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
 ms.date: 11/30/2020
-ms.author: hamenon
-ms.reviewer: gtrantzas
+ms.author: kewaiss
+ms.reviewer: angieandrews
 ---
 
 # Create an approval from a chat or channel
@@ -27,28 +24,25 @@ With the new approvals experience in Teams, you can create an approval from any 
 Follow these steps to create an approval in a chat or channel in Teams.
 
 1. Sign into [Microsoft Teams](https://teams.microsoft.com).
-
-2. Navigate to the chat or channel in which you want to send the approval.
-
-3. Select the approvals icon under the compose box.
+1. Navigate to the chat or channel in which you want to send the approval.
+1. Select the approvals icon under the compose box.
    
    ![Start an approval in chat.](../media/native-approvals-in-teams/approvals-compose-box.png)
 
-4. When you select the icon, a modal dialog appears for you to enter the details of the approval.
+1. When you select the icon, a modal dialog appears for you to enter the details of the approval.
 
    ![Approvals form.](../media/native-approvals-in-teams/approvals-dialog-box.png)
 
-5. Enter the details of the approval you want to send, along with who you need the approval from.
+1. Enter the details of the approval you want to send, along with who you need the approval from.
 
->[!TIP]
->By default, the approvers' input is restricted to the roster of the team or chat in which you are sending the approval.
+> [!TIP]
+> By default, the approvers' input is restricted to the roster of the team or chat in which you are sending the approval.
 
-6. **Optional**: You can also include a file with your approval. To do so, select *Add attachment* in the Approval form. Any files you upload are automatically stored in your OneDrive/SharePoint folder, just like other files shared on Teams.
+1. **Optional**: You can also include a file with your approval. To do so, select *Add attachment* in the Approval form. Any files you upload are automatically stored in your OneDrive/SharePoint folder, just like other files shared on Teams.
 
    ![Add attachment to approvals.](../media/native-approvals-in-teams/approval-attach.png)
 
-
-7. Select **Send**. 
+1. Select **Send**. 
 
    A card is created and sent in the chat or channel.
 
@@ -60,11 +54,10 @@ If you want to customize the actions for an approval, use the **Custom responses
 
    ![Custom responses.](../media/native-approvals-in-teams/custom-responses.png)
 
->[!TIP]
->If you want to add more than two custom responses, you will need to use a cloud flow to send the approval. [Learn more about custom responses in approvals](../create-approval-response-options.md).
+> [!TIP]
+> If you want to add more than two custom responses, you will need to use a cloud flow to send the approval. [Learn more about custom responses in approvals](../create-approval-response-options.md).
 
-
-## Known issues
+## Known issue
 
 Currently, all the approvals created using this native Teams experience are created in your organization's default environment.
 

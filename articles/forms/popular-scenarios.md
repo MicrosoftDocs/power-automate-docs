@@ -4,9 +4,10 @@ description: Learn some of the most popular ways to use a form in an automated f
 suite: flow
 author: Dean-Haas
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/02/2023
 ms.author: kisubedi
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
   - enduser
@@ -49,9 +50,7 @@ We start with a prebuilt template and customize it to help our managers plan for
 1. Select the flow name at the top of the Power Automate canvas and change it as you like.
 1. Save and test your flow.
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. Ask Copilot to create your flow by typing the following prompt:
 
@@ -79,9 +78,7 @@ Follow the steps to [send an email when there's a new form response](#send-an-em
 
 :::image type="content" source="../media/forms/responder-email-flow.png" alt-text="Screenshot of an Outlook send email action in a flow under construction, with the responder's email address highlighted.":::
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. Ask Copilot to create your flow by typing the following prompt:
 
@@ -138,7 +135,7 @@ In this example, we'll start with another prebuilt template and customize it to 
 
 For more examples of approval flows, go to [Manage sequential approvals](../sequential-modern-approvals.md).
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -199,9 +196,7 @@ In this example, you create a flow from blank. Continuing with the scenario from
 
 You can use a template to [add an approval step before a form response is added to the Excel table](https://make.powerautomate.com/galleries/public/templates/66f56b919fd64aeabec37245ed927c47/approve-a-microsoft-forms-response-to-add-a-row-to-an-excel-spreadsheet/).
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 1. Create an Excel sheet if it doesn't already exist.
 1. From within the designer, simply ask copilot to create your flow by typing the the following prompt:
