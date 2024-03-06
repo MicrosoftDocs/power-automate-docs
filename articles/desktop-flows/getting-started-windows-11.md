@@ -1,14 +1,14 @@
 ---
 title: Get started with Power Automate in Windows 11 (contains video)
 description: Get started with Power Automate in Windows 11
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: conceptual 
 ms.date: 12/01/2022
 ms.collection: get-started
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

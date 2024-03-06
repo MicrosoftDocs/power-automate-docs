@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.date: 04/19/2023
 ms.author: ashwinrajuk
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - admin
 ---
