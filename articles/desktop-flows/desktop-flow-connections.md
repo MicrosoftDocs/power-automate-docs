@@ -1,12 +1,12 @@
 ---
 title: Create desktop flow connections
 description: See how to create connections to trigger desktop flows from cloud flows.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/21/2023
+ms.date: 12/21/2023
 ms.author: pefelesk
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker
@@ -26,7 +26,10 @@ Before using the **Run desktop flow** action in your cloud flow to trigger a des
 
 1. Search for **Desktop flows**, and then select the appropriate result.
 
-There is two different methods to connect Power Automate with your machines (or groups).
+> [!NOTE]
+> Desktop flows connection cannot be shared with other users.
+
+There's two different methods to connect Power Automate with your machines (or groups).
 
 ## Connect with username and password
 
@@ -44,30 +47,35 @@ With this option, you need to provide the machine (or on-premises data gateway) 
 
       :::image type="content" source="media/desktop-flows-setup/credentials-screen.png" alt-text="Screenshot that shows where to enter the credentials for the connection.":::
       
-## Connect with sign-in (preview) for attended runs
+## Connect with sign-in for attended runs
 
 With this option, you don't need to provide session credentials. This might be very helpful when your organization doesn't allow username and password for user sessions.
 
-### Pre-requisites
+### Prerequisites
 
-To use connection with sign-in, you need to meet the following pre-requisites:
+To use connection with sign-in, you need to meet the following prerequisites:
 
-  - Azure AD users must be in the same tenant as the selected environment in Power Automate portal.
-  - The target (machine / group) should be Azure AD or AD joined. In case of a AD joined target, AD must be synchronized with Azure AD (What is Azure AD Connect and Connect Health. - Microsoft Entra | Microsoft Learn).
-  - The Azure AD user account must be granted right to open a Windows session on the target machine(s) (interactive logon). At runtime, there should a Windows interaction session matching the connection user in order to process the run (as it is today for existing connections).
-  - The tenant of the target Azure AD account is configured to use modern authentication [Authentication with Azure AD - Microsoft Azure Well-Architected Framework](/azure/well-architected/).
+  - Microsoft Entra users must be in the same tenant as the selected environment in Power Automate portal.
+  - The target (machine / group) should be Microsoft Entra ID or AD joined. In case of an Entra ID joined target, the machine or group must be synchronized with Microsoft Entra ID.
+  - The Microsoft Entra user account must be granted right to open a Windows session on the target machines (interactive sign in). At runtime, there should a Windows interaction session matching the connection user in order to process the run (as it's today for existing connections).
+  - The tenant of the target Microsoft Entra account is configured to use modern authentication [Authentication with Microsoft Entra ID - Microsoft Azure Well-Architected Framework](/azure/well-architected/).
+
+> [!NOTE]
+> Connect with sign-in for attended runs is available in most of the Power Platform regions.
+> For GCCH, DOD, and China regions, the feature requires the December version of Power Automate for desktop app.
+> Currently, GCC isn't supported.
 
 
-### Setup the connection with sign-in
+### Set up the connection with sign-in
 
 - Select **Connect with Sign-in** in the Connect dropdown
 - Select the target (machine or machine group)
 - Select **Sign in**
-- Pick or provide an **Azure AD account** in the sign in pop up 
+- Pick or provide an **Microsoft Entra account** in the sign in pop-up 
 - The desktop flow connect is automatically created
 
 ### How it works
-- An access / refresh token is created during the Azure AD authentication.
+- An access / refresh token is created during the Microsoft Entra authentication.
 - The token scope is limited to executing a desktop flow.
 - The Power Platform services manage the refreshment of those tokens.
 

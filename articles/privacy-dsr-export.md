@@ -1,6 +1,6 @@
 ---
-title: Respond to personal data export requests (Azure AD)
-description: Learn about the resources available in Power Automate to help you meet your obligations to export customers' personal data under various privacy laws and regulations for users who authenticate using Azure AD.
+title: Respond to personal data export requests (Microsoft Entra ID)
+description: Learn about the resources available in Power Automate to help you meet your obligations to export customers' personal data under various privacy laws and regulations for users who authenticate using Microsoft Entra ID.
 author: hamenon-ms
 contributors:
   - hamenon-ms
@@ -11,7 +11,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 04/18/2023
 ---
-# Respond to personal data export requests (Azure AD)
+# Respond to personal data export requests (Microsoft Entra ID)
 
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
@@ -19,7 +19,7 @@ ms.date: 04/18/2023
 
 The right of data portability allows data subjects to request a copy of their personal data in an electronic format that can be transmitted to another data controller.
 
-The following table summarizes where to find and export the personal data of a user who authenticates by using Azure Active Directory (Azure AD) in Power Automate.
+The following table summarizes where to find and export the personal data of a user who authenticates by using Microsoft Entra in Power Automate.
 
 - **Website access:** Sign in to the [Power Apps admin center](https://admin.powerapps.com/) or [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 - **PowerShell access:** Use [Power Apps Admin PowerShell cmdlets](/power-platform/admin/powerapps-powershell).

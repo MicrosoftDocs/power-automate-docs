@@ -1,12 +1,12 @@
 ---
 title: Manage machines
 description: Manage machines
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 03/21/2023
 ms.author: kenseongtan
-ms.reviewer: marleon
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -64,6 +64,7 @@ Your machine is automatically registered on the currently selected environment i
 > - In the case of a virtual machine, don't clone the virtual machine after installing Power Automate machine runtime.
 > - Machines aren't affected by changes in the Power Automate for desktop organization.
 > - Although you can create and debug desktop flows in Teams environments, you can't register machines in them.
+> - If you reset your PC, your machine registration will be lost.
 
 ## Update running environment for your machine
 
@@ -192,7 +193,7 @@ Although you can't delete a machine from the Power Automate machine runtime, you
 ## Switch from gateways to direct connectivity
 
 > [!IMPORTANT]
-> Gateways for desktop flows are now deprecated. This feature is no longer supported from June 30th, 2023, and for China regions from September 30th, 2023. Switch to our machine-management capabilities.
+> Gateways for desktop flows are no longer supported. Switch to our machine-management capabilities.
 
 > [!NOTE]
 > To determine which desktop flow connections that are still using a gateway:

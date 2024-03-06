@@ -15,6 +15,9 @@ The Power Automate experience for guest users is the same as it is for nonguest 
 
 This article should help you understand the scenarios that are supported for guest users.
 
+> [!NOTE]
+> Guest users aren't currently supported in Process Mining.
+
 ## Prerequisites
 
 A guest user must meet the following criteria:
@@ -26,7 +29,7 @@ A guest user must meet the following criteria:
 
 A user can become a guest user if both these criteria are met:
 
-- They're invited to a tenant through the Azure Active Directory (Azure AD) admin portal.
+- They're invited to a tenant through the Microsoft Entra admin portal.
 - An Office 365 plan, or any plan with a Power Automate license is assigned to the guest user.
 
 ## Supported capabilities
@@ -59,5 +62,5 @@ To set up B2B collaboration between tenants in different clouds, both guest user
 
 ### See also
 
-- [Azure AD B2B in government and national clouds](/azure/active-directory/external-identities/b2b-government-national-clouds)
+- [Microsoft Entra B2B in government and national clouds](/azure/active-directory/external-identities/b2b-government-national-clouds)
 - [Assign Azure roles to external guest users using the Azure portal](/azure/role-based-access-control/role-assignments-external-users)

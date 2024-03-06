@@ -102,7 +102,7 @@ In this section, you'll learn about how to restore deleted flows using PowerShel
 
 1. Sign in to your Power Apps environment.
 
-   Use this command to authenticate to an environment. This command opens a separate window that prompts for your Azure Active Directory (Azure AD) authentication details.
+   Use this command to authenticate to an environment. This command opens a separate window that prompts for your Microsoft Entra authentication details.
 
     ``` PowerShell
     Add-PowerAppsAccount
