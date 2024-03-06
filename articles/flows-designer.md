@@ -1,6 +1,6 @@
 ---
-title: Understand the cloud flows designer with copilot capabilities
-description: Learn about the components in the cloud flows designer with copilot capabilities.
+title: Understand the cloud flows designer
+description: Learn about the components in the cloud flows designer.
 suite: flow
 author: kisubedi
 contributors:
@@ -8,24 +8,25 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 10/02/2023
+ms.date: 11/14/2023
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
   - enduser
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 ---
 
-# Understand the cloud flows designer with copilot capabilities
+# Understand the cloud flows designer
 
-You can create, configure, and customize your cloud flows with the classic designer or the cloud flows designer with copilot capabilities. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
+You can create, configure, and customize your cloud flows with the classic designer or the cloud flows designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
 
 > [!NOTE]
-> Here are some visual queues that tell you that you're using the cloud flows designer with copilot capabilities:
+> Here are some visual queues that tell you that you're using the cloud flows designer (not the classic designer):
 > - The cards in the flow are small.
 > - The standalone action configuration pane appears on the left when you select a card.
 >
-> More information: [Identify differences between the classic cloud flows designer and the designer with copilot capabilities](#identify-differences-between-the-classic-cloud-flows-designer-and-the-designer-with-copilot-capabilities)
+> More information: [Identify differences between the classic designer and the cloud flows designer](#identify-differences-between-the-classic-designer-and-the-cloud-flows-designer)
 
 The following screenshot shows the features of the AI-powered cloud flows designer.
 
@@ -53,7 +54,7 @@ We want to hear from you to help us measure and improve our impact. To provide y
 
 ## More commands
 
-Select the **More commands** (**&hellip;**) button to add a note to the selected card in your flow, or to delete the card. Select **Add a note** to describe the purpose of the card in your flow. After you add a note, a note symbol appears in the lower right of the card. Hover over this symbol to view the note.
+Select the **More commands** (**&hellip;**) button to add a note to the selected card in your flow, or to delete the card. Select **Add a note** to describe the purpose of the card in your flow. After you add a note, a note symbol appears in the lower right of the card. To view the note, hover over this symbol.
 
 :::image type="content" source="media/flows-designer/designer-note.png" alt-text="Screenshot that shows a note being added.":::
 
@@ -81,7 +82,7 @@ Instructions appear and tell you what you must do to test your flow. The followi
 
 :::image type="content" source="media/flows-designer/test-prompt.png" alt-text="Screenshot of instructions that tell you how to test your flow.":::
 
-Follow the instructions to test your flow. In this example, you must send an email. The flow test then runs. When the test has finished running, a green check mark appears on each card, together with the number of seconds that it took to be processed.
+To test your flow, follow the instructions. In this example, you must send an email. The flow test then runs. When the test finishes running, a green check mark appears on each card, together with the number of seconds that it took to be processed.
 
 :::image type="content" source="media/flows-designer/test-result.png" alt-text="Screenshot of test results.":::
 
@@ -117,7 +118,16 @@ On the **Settings** tab, you can set the action time-out, network retry policy, 
 | Security | Use the **Secure inputs** and **Secure outputs** toggles to turn the operations, and references of output properties, on or off. |
 | Tracking | Set the key and value of tracked properties.
 
-### Code
+### Configurable trigger polling setting
+
+In select triggers such as _When an item is created-Sharepoint_, and more, you can manually configure the trigger polling setting. This means you can configure how often the flow should check for new items in Sharepoint and others. This in turn ensures how quickly your flow responds to any changes or trigger events. The default polling period is three (3) minutes, which means the flow checks every three (3) minutes if a new item was created.
+
+1. On the [action configuration pane](#action-configuration-pane), select the **Parameters** tab.
+1. Under the **How often do you want to check for items?** heading, enter the interval number and the frequency from the dropdown menu.
+
+    :::image type="content" source="media/flows-designer/trigger-polling.svg" alt-text="Screenshot of the trigger polling setting in the action configuration pane, Parameters tab.":::
+
+### Code View
 
 To view the code behind any card in your flow, select the card on the canvas, and then select **Code View** in the action configuration pane. As you customize the code on the [Parameters](#parameters) tab, you can view the new code on the **Code View** tab.
 
@@ -131,7 +141,7 @@ For easy navigation, you can drag your flow on the canvas. You configure the act
 
 ### Drop zones
 
-The canvas contains AI-powered designer drop zones to help you easily drag cloud flow actions. The drop zones are indicated by blue dashed lines.
+The canvas contains AI-powered designer drop zones to help you easily drag cloud flow actions. The drop zones are represented by blue dashed lines.
 
 :::image type="content" source="media/flows-designer/drop-zone.png" alt-text="Screenshot of an action card and a drop-zone.":::
 
@@ -143,25 +153,94 @@ The bottom button is for the minimap. Use it to focus on a specific section of a
 
 :::image type="content" source="media/flows-designer/zoom-controls.png" alt-text="Screenshot of the four zoom buttons.":::
 
-## Identify differences between the classic cloud flows designer and the designer with copilot capabilities
+### Expression editor and token picker
+
+The expression editor in the designer is multi-line, which allows you to easily create and edit long, complex expressions. A *gripper* allows you to temporarily expand the box by one or two (1-2) lines, as needed. If that's not enough, you can expand the popup to a full page view. A search box allows you to search for tokens and functions, both in the Dynamic content view and Function view.
+
+:::image type="content" source="media/flows-designer/expression-editor.png" alt-text="Screenshot of the expression editor.":::
+
+> [!TIP]
+> You can use a forward slash ( / ) keyboard shortcut to invoke the token picker/expression editor popup when you're on an action field.
+
+### Disable an action or enable static results on an action
+
+On the designer, if you want to disable an action rather than remove it entirely, go to the **Testing** tab of the action and enable static outputs by turning on the **Enable Static Result** toggle. When the flow runs, this essentially treats the action as successful, without actually running the action.
+
+Similarly, if you want to see how your flow reacts if a certain action fails with a code or succeeds with a code, you can use the same capability of static outputs available on the action to mock the action execution to your needs.
+
+When static outputs are disabled, the toggle label is **Enable Static Result**. When static outputs are enabled, the toggle label is **Disable Static Result**.
+
+:::image type="content" source="media/flows-designer/static-result.png" alt-text="Screenshot of the 'Enable or Disable Static Result' toggle in the Testing tab.":::
+
+## Identify differences between the classic designer and the cloud flows designer
 
 To quickly identify which designer version you're using, ask yourself the following questions:
 
-- Are the action cards on the flow  small or large?
+- Are the action cards on the flow small or large?
 - Is the action configuration pane inline or in a separate pane?
 
-The cloud flow designer with copilot capabilities has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
+The cloud flows designer has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
 
-## Limitation
+## Limitations and known issues
 
-You might notice that some functionalities that were in the classic designer aren't availabile in the cloud flows designer with copilot capabilities. For example, the designer doesn't support constructs such as SAP connector, hybrid triggers (for a selected *X*), a comment, Power Pages, or a Power Apps v1 trigger in your flow.
+You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following:
+- Non-Open API flows (If there's Peek code on an action and if you see the APIConnection value instead of OpenAPIConnection in Kind field, it's a non-Open API flow.)
+- Some hybrid triggers:
+   - When a flow is run from business process flow (Dataverse)
+   - For a selected message (v2 Teams)
+   - TeamsOnComposeMessage (Teams)
+   - Teams card trigger
+   - Microsoft 365 Compliance Connector
+- A comment
+- Power Pages connector
+- Power Apps v1 trigger
+- Perform a changeset request action (Dataverse)
+- A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
+- Email auto-complete suggestions in _Send Email/Post message_ in Teams actions
+- Copy/Paste supporting Scope, Condition, Do until cosntructs
+- Ability to make manual trigger fields optional
 
-If you want to work with missing functionalities in the designer, select **Switch to classic designer** on the menu in the designer with copilot capabilities.
+## Some known issues
 
-:::image type="content" source="media/flows-designer/classic-designer.png" alt-text="Screenshot of the 'Switch to classic designer' button below the menu.":::
+- Dynamic content friendly names are getting updated to internal code names upon save.
+- Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', and others.
+
+As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is gradually becoming the primary interface.
+
+If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply turn off the **New designer** toggle on the menu in the cloud flows designer.
+
+:::image type="content" source="media/flows-designer/designer-toggle.svg" alt-text="Screenshot of the 'New designer' toggle.":::
+
+> [!NOTE]
+> The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.
+
+## FAQ
+
+### Why do I get this error "O.split(...).at is not a function" when signing in?
+
+Power Automate designer doesn't support browsers that are more than two (2) years old. You could see the aforementioned or similar errors in the designer if your browser version is old. It is generally a good idea to update your browser to latest version to avoid such issues.
+
+### Why do I get this error "The provided flow name contains invalid characters" when importing a flow in a new tenant?
+
+This is a temporary gap, which you can work around by adding a query parameter `v3=false` in your URL.
+
+### Why do I not see dynamic content from triggers like 'When a response is submitted' or why is the flow automatically putting an unnecessary loop?
+
+This might be because of a temporary issue where the **Split On** setting of the trigger is off. If you enable the setting, the issue should go away.
+
+1. On the [action configuration pane](#action-configuration-pane), select the **Settings** tab.
+1. Under the **Split On** heading, move the toggle to **On**,
+
+### Why don't I see new or updated SharePoint or Excel column values in my flow?
+
+Power Automate designer requires a flow action to be re-added in order to pick up new entities of the underlying action. For example, if you have a SharePoint _Get item_ action in your flow and Sharepoint item has four (4) columns, the flow allows you to access all four column values of the SharePoint item. Now, if you navigate to SharePoint, add a fifth column, and come back to the flow, you can't access the fifth column unless you delete the _Get item_ action and re-add it again to force the designer to pick up the latest changes. The same behavior applies in Excel columns, Dataverse, Onedrive folder/files, and others.
+
+### Will the new cloud flows designer eventually fully replace the classic designer?
+
+Yes, once the issues noted here are resolved and the new cloud flows designer can cover most, if not all, of the classic designer scenarios. At this time, the classic designer will be fully replaced.
 
 ### See also
 
-To learn more, go to [Get started with Copilot in cloud flows](get-started-with-copilot.md).
+[Get started with Copilot in cloud flows](get-started-with-copilot.md)
 
 

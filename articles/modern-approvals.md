@@ -13,7 +13,6 @@ ms.author: kisubedi
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
@@ -171,7 +170,7 @@ Sometimes you might want to cancel an approval request that you've sent. Possibl
 
 ## Request approvals from guest users
 
-You can send approvals requests to persons outside your organization. To do this, use Azure Active Directory (Azure AD) guest users by [inviting users from other tenants as guests](/azure/active-directory/b2b/add-user-without-invite).
+You can send approvals requests to persons outside your organization. To do this, use Microsoft Entra guest users by [inviting users from other tenants as guests](/azure/active-directory/b2b/add-user-without-invite).
 
 When you assign a role to a guest, this gives the guest the permission required to participate in the approval process.
 

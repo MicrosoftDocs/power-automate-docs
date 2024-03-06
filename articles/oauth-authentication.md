@@ -11,6 +11,7 @@ ms.date: 10/02/2023
 ms.author: rakrish
 ms.reviewer: angieandrews
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
 ---
@@ -70,8 +71,6 @@ The parameter shows on the card.
 :::image type="content" source="./media/oauth-authentication/classic-oauth-parameter.png" alt-text="Screenshot of who can trigger the cloud flow in the classic designer.":::
 
 # [Edit with Copilot](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 The parameter shows on the configuration panel to the left.
 

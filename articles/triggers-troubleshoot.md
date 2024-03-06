@@ -13,6 +13,7 @@ ms.topic: conceptual
 ms.date: 10/02/2023
 ms.author: kenseongtan
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowadmin
 ---
@@ -54,7 +55,7 @@ After the problem is resolved, modify the flow and then save it. You can then ch
 
 ### Verify connections
 
-With the default settings, users only need to sign in to a connection once. They can then use that connection until it's revoked by an admin. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s authentication token to expire after a specific amount of time. Token lifetime policies are configured on Azure Active Directory. For more information, review this [Azure article](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) or this [support article](https://support.microsoft.com/help/4467879/conditional-access-and-multi-factor-authentication-in-flow).
+With the default settings, users only need to sign in to a connection once. They can then use that connection until it's revoked by an admin. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s authentication token to expire after a specific amount of time. Token lifetime policies are configured on Microsoft Entra ID. For more information, review this [Azure article](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) or this [support article](https://support.microsoft.com/help/4467879/conditional-access-and-multi-factor-authentication-in-flow).
 
 Follow these steps to verify if your connections are broken:
 

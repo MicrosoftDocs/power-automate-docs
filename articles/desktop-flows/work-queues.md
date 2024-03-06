@@ -11,14 +11,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Work queues overview (preview)
-
-[This article is prerelease documentation and is subject to change.]
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../../articles/includes/cc-preview-features-definition.md)]
+# Work queues overview
 
 Work queues in Power Automate can be used to store process-relevant data and provide a way to decouple complex processes and automations, allowing them to communicate asynchronously.
 
@@ -79,4 +72,4 @@ In cases where the automation is unable to process a particular transaction with
 - [Trigger work queues](work-queues-trigger.md)
 - [Process work queues](work-queues-process.md)
 - [Known issues and limitations](work-queues-known-limitations.md)
-- [Work queues actions (preview)](actions-reference/workqueues.md)
+- [Work queues actions](actions-reference/workqueues.md)
