@@ -1,7 +1,7 @@
 ---
 title: Use flows in teams created from templates | Microsoft Docs
 description: Use Power Automate flows in teams created from templates.
-author: msftman
+author: v-aangie
 contributors:
   - kewaiss
   - v-aangie

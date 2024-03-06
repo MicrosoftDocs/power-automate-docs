@@ -6,7 +6,9 @@ ms.topic: how-to
 author: cochamos
 ms.author: cochamos
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 ---
+
 # Copilot in Power Automate for desktop (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]

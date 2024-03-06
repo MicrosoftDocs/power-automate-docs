@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.date: 12/9/2021
 ms.subservice: guidance
 ms.author: kathyos
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 search.audienceType: 
   - admin
 

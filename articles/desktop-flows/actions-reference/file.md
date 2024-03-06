@@ -1,13 +1,13 @@
 ---
 title: File actions reference
 description: See all the available file actions.
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 10/24/2023
 ms.author: iomavrid
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

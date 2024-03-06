@@ -1,17 +1,18 @@
 ---
 title: Text actions reference
 description: See all the available text actions.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/24/2023
+ms.date: 01/11/2024
 ms.author: matp
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
+- lomavrid
 search.audienceType: 
   - flowmaker
   - enduser
@@ -525,6 +526,38 @@ Recognizes entities in text, such as numbers, units, data/time and others expres
 |RecognizedEntities|[Datatable](../variable-data-types.md#datatable)|The recognized entities|
 
 ### <a name="recognizeentitiesintext_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
+
+## <a name="createhtmlcontentaction"></a> Create HTML content
+
+Generates rich HTML content and stores it in a variable.
+
+This action allows users to create HTML content in a formatted and intuitive way, which is stored in a text variable. This variable can then be used in following actions, where HTML format is needed.
+
+This functionality primarily serves the email sending actions ‘Send email’, ‘Send Exchange email message’, and ‘Send email message through Outlook’ regarding their ‘Body’ input parameter. Specifically, the produced variable can be used as is in the ‘Body’ parameter of an email sending action that follows later in the flow, while the **Body is HTML** option is enabled.
+
+### Input parameters
+
+Input parameters are configured through the embedded HTML editor.
+
+The initial view of the HTML editor allows out-of-the-box editing on the rendered HTML content, providing a set of formatting options through a toolbar found at the top, including the ability to insert links, images (via local paths or URLs) and tables, and even variables for dynamic content.
+
+![Screenshot of the create HTML content action.](media/text/html-action-editor.png)
+
+Enabling the **Text editor** option switches to the view where HTML language can be used including the corresponding element tags.
+
+![Screenshot of the text editor in the Create HTML content action.](media/text/html-action-text-editor.png)
+
+The &lt;head&gt; and &lt;body&gt; elements aren't needed in the text editor for the HTML content to be rendered.
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|`HtmlContent`|[Text value](../variable-data-types.md#text-value)|The HTML code|
+
+### <a name="createhtmlcontentaction_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
