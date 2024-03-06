@@ -26,14 +26,18 @@
     href: oauth-authentication.md
   - name: Get help from the Power Virtual Agents bot
     href: contextual-help-bot.md
-  - name: Find it with unified search
-    href: /power-apps/maker/search
   - name: Share a flow
     href: create-team-flows.md
   - name: Support for guest users
     href: share-guest-users.md
   - name: Support for service principal owned flows
     href: service-principal-support.md
+  - name: Export and import a non-solution flow
+    href: export-import-flow-non-solution.md
+  - name: Drafts and versioning for cloud flows
+    href: drafts-versioning.md
+  - name: Use Power Automate flows as plugins in Copilot for Microsoft 365 (preview)
+    href: flow-plugins-m365.md          
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
@@ -81,6 +85,8 @@
       href: data-operations.md
     - name: Customize or format date and time values in a flow
       href: date-time-values.md
+    - name: Convert a time zone
+      href: convert-time-zone.md
     - name: Use expressions in conditions
       href: use-expressions-in-conditions.md
     - name: Store and manage values in variables
@@ -326,7 +332,9 @@
   - name: Get started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md
   - name: Use copilot to analyze desktop flow activity (preview)
-    href: ./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md 
+    href: ./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md
+  - name: Use the Power Automate plug-in for Windows Copilot (preview)
+    href: ./desktop-flows/win-copilot-plug-in.md  
   - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Premium RPA features
@@ -389,6 +397,8 @@
         href: ./desktop-flows/run-desktop-flows-via-keyboard-shortcuts.md       
       - name: Runtime notifications
         href: ./desktop-flows/runtime-notifications.md
+    - name: Run desktop flows in Picture-in-Picture (preview)
+      href: ./desktop-flows/run-desktop-flows-pip.md
   - name: Manage machines and machine groups
     items:
     - name: Manage machines
@@ -1020,6 +1030,16 @@
       href: ./developer/sample-work-business-process-flows.md
   - name: Custom Dataverse workflow activities
     href: ./developer/custom-cds-for-apps-workflow-activities.md
+- name: Manage automations
+  items:
+  - name: Capacity utilization (preview)
+    items:
+    - name: Introduction to capacity utilization
+      href: ./desktop-flows/capacity-utilization.md
+    - name: Hosted RPA capacity utilization
+      href: ./desktop-flows/capacity-utilization-hosted.md
+    - name: Process capacity utilization
+      href: ./desktop-flows/capacity-utilization-process.md
 - name: Administration
   items:
   - name: Power Automate sign-up FAQ
@@ -1130,8 +1150,6 @@
       items:
       - name: Use Input Method Editors (IMEs) in desktop flows with Windows recorder (V1)
         href: ./desktop-flows/use-ime.md
-      - name: Use WinAutomation with desktop flows
-        href: ./desktop-flows/create-processes.md
     - name: Create and test Selenium IDE flows
       href: ./desktop-flows/create-web.md
     - name: Edit desktop flows with Selenium IDE

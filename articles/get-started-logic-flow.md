@@ -14,7 +14,9 @@ ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
-ms.collection: get-started
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ---
 
 # Create a cloud flow in Power Automate

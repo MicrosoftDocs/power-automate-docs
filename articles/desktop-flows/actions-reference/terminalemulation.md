@@ -1,13 +1,13 @@
 ---
 title: Terminal emulation actions reference
 description: See all the available terminal emulation actions.
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 06/02/2023
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - jpapadimitriou
 - Yiannismavridis
