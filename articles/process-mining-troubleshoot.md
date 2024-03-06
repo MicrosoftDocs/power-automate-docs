@@ -4,6 +4,7 @@ description: Learn how to troubleshoot issues in the process mining capability i
 author: donums
 contributors:
   - donums
+  - rosikm
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
@@ -73,6 +74,22 @@ Once you're done with setup, select **Analyze**. You'll be able to view the Anal
 > If you don't visit the Analytics page for 14 days, you need to re-analyze the process to access the Analytics page again.
 
 For more information and a short video of analytics, go to [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
+
+### "The process can't be analyzed because there are too many processes in this environment. To fix this, delete some of the processes or use a different environment."
+
+At present, Dataverse-managed Power BI workspaces allow only 1,000 reports for each environment. This means you need to delete a few processes from the current environment, or create a new environment to analyze the process in. To learn more about limitations, go to [Workspaces in Power BI&mdash;Considerations and limitations](/power-bi/collaborate-share/service-new-workspaces#considerations-and-limitations).
+
+To delete a process follow these steps:
+
+1. Select **Processes** from the breadcrumbs on the analytics or details page, or select **All procesess** from the **Process mining** home page.
+
+    :::image type="content" source="media/process-mining-troubleshoot/processes-breadcrumbs.png" alt-text="Screenshot of 'processes' in the breadcrumbs.":::
+
+1. Select the vertical ellipses (**&vellip;**) for the process you want to delete, and then select **Delete process** from the dropdown menu.
+
+    :::image type="content" source="media/process-mining-troubleshoot/delete-process.png" alt-text="Screenshot of deleting a process from the dropdown menu.":::
+
+1. To delete the process, select **Confirm**.
 
 ### "You must have one case with at least two activities to analyze your process. Please change your data."
 
@@ -159,3 +176,21 @@ Assign a premium license to your workspace. To learn how to enable premium capac
 ### "The selected Power BI workspace needs premium capacity to work with this report. After the problem is fixed, try to reanalyze the report."
 
 This is the same as the previous issue, but the error occurred during process analysis. After ensuring that your workspace has premium capacity per [Premium capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings), reanalyze the report.
+
+## Issues with your own Azure Data Lake Storage Gen2 and incremental data refresh
+
+### If you encountered an error message, "Couldn’t connect to container"
+
+Revisit the prerequisites to make sure settings are correct.
+
+### How can I check if a CORS issue exists or not?
+
+You can check the network logs in your browser with developer tools while connecting data lake storage. Some HTTP requests failed with a 403 error and it could state "CORS not enabled, or no matching rule found for this request."
+
+### Although I set CORS setting correctly, why do I still get the error and am unable to access?
+
+The browser has cached CORS settings. Retry after flushing out browser cache. As the client browser does cache the CORS setting, you need to remove the cache if you have trouble even after you have set the CORS properly. You can also adjust the max age of CORS settings.
+
+### Your header row is larger than 1 MB
+
+Check the event log file and rename the column headers so that their aggregated length including separator (comma) is less than 1 MB.

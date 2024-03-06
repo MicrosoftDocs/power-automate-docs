@@ -9,13 +9,12 @@ contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-ms.author: napienko
+ms.author: kapolepa
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/26/2023
@@ -88,7 +87,7 @@ You can navigate to the edit mode or to Power Automate to view the run history o
 
 ### Share the flow in run only mode
 
-For other viewers of your Power BI report to run the flow, you must explicitly share the flow with those users/Azure Active Directory groups. You can do so from the details page of your flow.
+For other viewers of your Power BI report to run the flow, you must explicitly share the flow with those users/Microsoft Entra groups. You can do so from the details page of your flow.
 
 To share, select edit next to the **Run only users** tile and then specify the users or groups that you want to have access.
 
@@ -103,7 +102,7 @@ Optionally, if you want to change the button text, font color, font size, or fil
 
 ## Known limitations 
 
-- The user running the flow within the Power BI report needs to have permissions to run the flow. Grant these permissions through direct sharing by the user or by sharing to an Azure Active Directory group.
+- The user running the flow within the Power BI report needs to have permissions to run the flow. Grant these permissions through direct sharing by the user or by sharing to a Microsoft Entra group.
 
 - The Power BI visual only functions with flows in a tenant's default environment. Any flow created with the visual is created in the users default environment.
 
@@ -118,4 +117,3 @@ Optionally, if you want to change the button text, font color, font size, or fil
 - The Power Automate visual will not work for published reports because the users are unauthenticated.
 
 - The Power Automate visual is limited to process a maximum of 1000 records.
-

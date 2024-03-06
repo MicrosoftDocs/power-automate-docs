@@ -32,7 +32,7 @@ Before starting, you must prepare your environment with adequate licenses and so
 - The Contoso CRM app from Microsoft. This app showcases how RPA works. You can use it as an example to build your own RPA action.
 
 >[!IMPORTANT]
->Ensure you [get the appropriate security roles](https://go.microsoft.com/fwlink/p/?linkid=2127645) for the account that runs your automation. This account can be a dedicated one created by your admin in Azure Active Directory or an employee's account.
+>Ensure you [get the appropriate security roles](https://go.microsoft.com/fwlink/p/?linkid=2127645) for the account that runs your automation. This account can be a dedicated one created by your admin in Microsoft Entra or an employee's account.
 
 Use the following recommended security roles:
 

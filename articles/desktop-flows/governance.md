@@ -1,25 +1,29 @@
 ---
 title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
-author: georgiostrantzas
+author: mattp123
 ms.topic: conceptual
-ms.date: 07/12/2023
+ms.date: 11/13/2023
 ms.author: iomavrid
-ms.reviewer: gtrantzas
+ms.reviewer: matp
+ms.collection: bap-ai-copilot
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - PetrosFeleskouras
 search.audienceType: 
   - flowmaker
   - enduser
 ---
-
 # Governance in Power Automate for desktop
 
 You can use the Windows registry to control who can do what with Power Automate for desktop.
 
 > [!CAUTION]
 > Modifying Windows registry settings incorrectly can cause serious problems that may prevent your computer from booting properly. Microsoft cannot guarantee that any problems resulting from the configuring of registry settings can be solved. Modification of these settings is at your own risk. We strongly recommend that you [back up your Windows registry](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692) before proceeding.
+
+> [!NOTE]
+> If a registry key doesn't exist in the Windows registry, first create the key and then add the registry value.
 
 ## Prevent users manually updating Power Automate for desktop
 
@@ -78,11 +82,14 @@ You can use the following registry entry to keep users from logging into Power A
 
 To restrict access to Power Automate for desktop on a workstation with Windows 10 or Windows 11, use [App locker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
 
-## Allow users to sign in to Power Automate for desktop using Web Account Manager (WAM)
+## Configure Power Automate for desktop to use the Web Account Manager (WAM) as a fallback sign in method
 
-You can use the following registry entry to allow users to sign in to Power Automate for desktop using Windows Web Account Manager (WAM).
+By default, Power Automate for desktop uses the Web Account Manager (WAM) for user authentication. If any sign in errors occur, it uses an Internet Explorer client as a fallback method.
 
-WAM enables certain features that aren't available through the default sign in process, such as single sign-on (SSO).
+You can use the following registry entry to set Power Automate for desktop to sign in with the Windows Web Account Manager (WAM) as a fallback sign in method.
+
+> [!NOTE]
+> For older versions of Power Automate for desktop prior to version 2.41, this registry entry configures Power Automate for desktop to sign in with the Web Account Manager (WAM) as the primary sign in method.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -90,7 +97,7 @@ WAM enables certain features that aren't available through the default sign in p
 
 ***Values***
 
-- **1**: Power Automate for desktop authenticates users using the WAM functionality.
+- **1**: Power Automate for desktop authenticates users using the WAM functionality as a fallback sign in method.
 
 ## Configure Power Automate for desktop to check for revoked certificates
 
@@ -132,9 +139,12 @@ You can use the following registry entry to allow users to select the organizati
 > [!NOTE]
 > The "isEnabled" values aren't related to the **organizationList** and **selectOrganizationFromListIsEnabled** values. The **isEnabled** values define whether the **Switch organization** option is available to signed-in users, whereas the **organizationList** and **selectOrganizationFromListIsEnabled** values define the organizations that Power Automate for desktop tries to connect to automatically during sign-in.
 
-## Allow users of Power Automate for desktop to connect to a region
+## Configure Power Automate for desktop to connect to a region
 
-You can use the following registry entry to allow users to select the region they want to connect to.
+You can use the following registry entry to set the region where users will connect to by default during sign-in.
+
+> [!NOTE]
+> Values **0** and **1** apply to older versions of Power Automate for desktop, prior to version 2.41.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -152,7 +162,7 @@ You can use the following registry entry to allow users to select the region the
 
 ## Configure Power Automate for desktop to interact with a corporate proxy server
 
-IT administrators may set the following registry key to configure how Power Automate interacts with a corporate proxy server.
+IT administrators can set the following registry key to configure how Power Automate interacts with a corporate proxy server.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -164,7 +174,7 @@ IT administrators may set the following registry key to configure how Power Auto
 
 ## Configure Power Automate for desktop to bypass a corporate proxy server
 
-IT administrators may set the following registry key to configure the Power Automate's bypassing of a corporate proxy server.
+IT administrators can set the following registry key to configure the Power Automate's bypassing of a corporate proxy server.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -176,7 +186,7 @@ IT administrators may set the following registry key to configure the Power Auto
 
 ## Configure Power Automate for desktop to authenticate to a corporate proxy server using the current user's credentials
 
-IT administrators may set the following registry key to configure how Power Automate authenticates with a corporate proxy server.
+IT administrators can set the following registry key to configure how Power Automate authenticates with a corporate proxy server.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -188,7 +198,7 @@ IT administrators may set the following registry key to configure how Power Auto
 
 ## Configure Power Automate for desktop to authenticate to a corporate proxy server using Windows credentials
 
-IT administrators may set the following registry key to configure Power Automate to use a generic credential from Windows’ Credential Manager to authenticate to a corporate proxy server. 
+IT administrators can set the following registry key to configure Power Automate to use a generic credential from Windows’ Credential Manager to authenticate to a corporate proxy server. 
 
 > [!NOTE]
 > To use this registry key, it’s a prerequisite to first configure the proxy server’s address and port through the **ProxyServer** registry key. 
@@ -203,7 +213,7 @@ IT administrators may set the following registry key to configure Power Automate
 
 ## Configure Power Automate for desktop to bypass a set of addresses while interacting with a corporate proxy server
 
-IT administrators may set the following registry key to configure a list of IP addresses that are bypassed while Power Automate interacts with a corporate proxy server. 
+IT administrators can set the following registry key to configure a list of IP addresses that are bypassed while Power Automate interacts with a corporate proxy server. 
 
 > [!NOTE]
 > To use this registry key, it’s a prerequisite to first configure the proxy server’s address and port through the **ProxyServer** registry key.
@@ -241,9 +251,9 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 - **1**: Power Automate for desktop won't take a screenshot for the action logs when an error occurs during a flow run.
 
-## Prevent Power Automate for desktop from uploading action logs after a desktop flow runs through the console
+## Prevent Power Automate for desktop from uploading action logs after a desktop flow execution
 
-You can use the following registry entry to prevent Power Automate for desktop from uploading detailed logs per action for the respective run of the flow's run history, after a desktop flow run takes places through the console.
+You can use the following registry entry to prevent Power Automate for desktop from uploading detailed logs per action for the respective run of the flow's run history, after a desktop flow execution.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|
@@ -357,7 +367,7 @@ You can use the following registry entry to turn on the verbose logging state fo
 > [!NOTE]
 > This registry entry applies to Power Automate desktop version 2.24 and later.
 
-You can use the following registry entry to allow machine registrations to tenants that are different from the machine joined Azure Active Directory tenant.
+You can use the following registry entry to allow machine registrations to tenants that are different from the machine joined Microsoft Entra tenant.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -396,6 +406,21 @@ You can use the following registry entry to allow switching machine registration
 ***Value***
 
 - **1**: Machine registration can switch to another tenant.
+
+## Prevent users from using the copilot's generative answers capability
+
+To prevent your users from using the copilot’s generative answers capability, Power Platform administrators turn off the **Copilot help assistance in Power Automate via Bing** setting in the Power Platform admin center.
+
+## Prevent users from sending copilot related feedback
+
+As a Power Platform admin you can prevent users from sending feedback to Microsoft by disabling the **disableSurveyFeedback** tenant setting. Find more information about viewing and setting tenant settings here:
+
+- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+
+## Prevent your users from using any copilot capability
+
+To prevent your users from using any copilot capability contact Microsoft Customer Support to disable all copilot functionality in your tenant. More information: [Get Help + Support](/power-platform/admin/get-help-support)
 
 ### See also
 

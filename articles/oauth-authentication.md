@@ -11,6 +11,7 @@ ms.date: 10/02/2023
 ms.author: rakrish
 ms.reviewer: angieandrews
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
 ---

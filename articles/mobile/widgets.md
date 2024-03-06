@@ -11,11 +11,10 @@ contributors:
   - v-aangie
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 06/05/2023
-ms.author: napienko
+ms.author: jamiller
 ms.reviewer: angieandrews
 ---
 

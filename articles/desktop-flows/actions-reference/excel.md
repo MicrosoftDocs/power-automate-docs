@@ -4,10 +4,11 @@ description: See all the available Excel actions.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 09/15/2023
+ms.date: 10/20/2023
 ms.author: dipapa
 ms.reviewer: matp
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -213,6 +214,15 @@ This action doesn't produce any variables.
 ## <a name="selectcellsfromexcel"></a> Select cells in Excel worksheet
 
 Selects a range of cells in the active worksheet of an Excel instance.
+
+You have three options when it comes to retrieving a range of cells through Excel with the **Select cells in Excel worksheet** action.
+To begin you need a valid **Excel instance**, which you can create by using the **Launch Excel** action and providing the respective inputs.
+
+- To select a **range of cells** by explicitly providing the coordinates of the range, select the option **Range of cells** in the **Select** property and then provide a range by inputting the number or letter of the cells defining its start and end in the following properties: **Start column**, **Start row**, **End column**, **End row**.
+
+- To select a **range of cells**, relative to the currently active cell, first select the option **Range of cells relative to active cell** in the **Select** property. Then define the direction in the X and Y axis based on the position of the currently active cell, as well as the offset from the active cell in the two axes by modifying the properties **X-axis direction**, **X-axis offset**, **Y-axis direction** and **Y-axis offset**.
+
+- To select a **range of cells** using the range's name, select the option **Names cells** in the property **Select**.
 
 ### Input parameters
 
@@ -595,7 +605,7 @@ Saves a previously launched Excel instance.
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to save. This variable must have been previously specified in a Launch Excel action.|
 |Save mode|N/A|Save document, Save document as|Save document|How to save the document of this instance|
-|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel Add-In (.xlam), Excel 97-2003 Add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods), XML Data (.xml), Excel Binary Workbook (.xlsb)|Default (From Extension)|The format to save the document as|
+|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel add-in (.xlam), Excel 97-2003 add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods), XML Data (.xml), Excel Binary Workbook (.xlsb)|Default (From Extension)|The format to save the document as|
 |Document path|No|[File](../variable-data-types.md#files-and-folders)||The full path to save the document as|
 
 ### Variables produced

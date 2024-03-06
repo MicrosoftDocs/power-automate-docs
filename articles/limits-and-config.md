@@ -6,7 +6,7 @@ ms.author: CGarty
 ms.reviewer: angieandrews
 Contributors:
   - ChrisGarty
-  - PriyaKodukula
+  - Radioblazer
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
@@ -17,6 +17,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 ---
 
 # Limits of automated, scheduled, and instant flows
@@ -27,7 +28,7 @@ This article contains information about the limits that apply to automated, sche
 
 A flow's *performance profile* determines its Power Platform request limits. The following table describes the plans that are associated with each of the four performance profiles.
 
- To learn more about how Power Automate consumes Power Platform requests, go to [Types of Power Automate licences - Power Platform requests](/power-platform/admin/power-automate-licensing/types#power-platform-requests).
+ To learn more about how Power Automate consumes Power Platform requests, go to [Types of Power Automate licenses - Power Platform requests](/power-platform/admin/power-automate-licensing/types#power-platform-requests).
 
 | Performance profile | Plans |
 |---------------------|-------|
@@ -92,10 +93,7 @@ The following table describes the limits on how long flows remain turned on befo
 | Flows with errors    | 14 days |  A cloud flow that has a trigger or actions that fail continuously will be turned off. Fix your trigger or actions and turn on the  flow. These flows will have FlowSuspensionReason=AlwaysFailingDetected. |
 | Not triggered (dormant) flows | 90 days for Free, Trial, Community and Microsoft 365 Plans. No expiration limit for all others. | A cloud flow that has no successful triggers will expire and be turned off. After 90 days of inactivity, the flow creator and co-owners will receive an email. If no action is taken in next 30 days, the flow will be systematically turned off, and the creator and co-owners will be notified in an email. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed on [Power Automate pricing](https://make.powerautomate.com/pricing) to ensure your flow isn’t turned off due to inactivity. You can turn your cloud flows back on anytime. These flows will have FlowSuspensionReason=NeverTriggeringDetected. |
 | Consistently throttled flows | 14 days |A cloud flow that's consistently throttled for 14 days will be turned off. The flow creator and co-creators will get an email when the flow starts throttling and when the flow is turned off. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed on [Power Automate pricing](https://make.powerautomate.com/pricing) to get higher action limits. You can turn your cloud flows back on anytime.|
-|Premium flows without premium licenses| 14 days | Flows that were created with premium features (premium connectors, custom connectors, HTTP connectors, on premises gateway, and business process flows) but don't have a premium Power Automate license will be turned off after 14 days. This situation happens if the original owner leaves the organization, or if they have an expired trial or premium license. The flow owner and co-owners will get an email when the trial or premium license expires, or when the owner isn't found in Azure Active Directory (AAD). The flow will continue to work for 14 days. If a premium license isn't assigned to the flow within 14 days, the flow is automatically turned off, and the owner and co-owners are notified through email. Newly created or edited premium flows without a premium license are saved but turned off. Once a premium Power Automate license is assigned to the owner or flow, you can turn on the flow. Admins can [find these flows](/power-platform/admin/power-automate-licensing/faqs#how-can-i-identify-flows-that-need-premium-licenses-to-avoid-interruptions). Assign a Power Automate Process license or a per user license to the owner to keep the flow running.|
-|Power Apps out of context flows| 90 days|Power Apps licenses include a limited set of Power Automate capabilities that allow for in context flows. To learn more, go to [Power Apps license questions](/power-platform/admin/power-automate-licensing/faqs#what-power-automate-capabilities-are-included-in-power-apps-licenses). Premium automated or scheduled flows not linked to an app require a Power Automate license, and the owner has 90 days to get a license before the flows turn off. Admins can [find these flows](/power-platform/admin/power-automate-licensing/faqs#how-can-i-identify-flows-that-need-premium-licenses-to-avoid-interruptions) and assign a Power Automate Process license or a Power Automate Premium license to the owner to keep the flow running. Alternatively, if the flow is supporting a Power App, [associate the flow to the app](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-apps). Flows triggered by Power Apps are excluded from this enforcement. More information: [Enforcement dates](/power-platform/admin/power-automate-licensing/faqs#enforcement) |
-|Dynamics out of context flows| 90 days|Dynamics licenses include a limited set of Power Automate capabilities that allow users to run flows that allow for in context flows. To learn more, go to [Power Automate use rights included with Dynamics licenses](/power-platform/admin/power-automate-licensing/faqs#what-power-automate-capabilities-are-included-in-dynamics-365-licenses). Premium automated or scheduled flows not linked to an app require a Power Automate license, and the owner has 90 days to get a license before the flows turn off. Admins can [find these flows](/power-platform/admin/power-automate-licensing/faqs#how-can-i-identify-flows-that-need-premium-licenses-to-avoid-interruptions) and assign a Power Automate Process license to the flow or a Power Automate Premium license to the owner to keep the flow running. Alternatively, if the flow is supporting a D365 app, [associate the flow to the app](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-apps). More information: [Enforcement dates](/power-platform/admin/power-automate-licensing/faqs#enforcement)|
-|Service Principal flows missing Power Automate Process license (previously Power Automate per flow) | 90 days | Premium flows whose owner is a service principal will either need to have a Power Automate Process license/ Power Automate per flow or the flow must be in context of Dynamics app.See Turning on these flows requires a premium Power Automate Process license/Per- flow license or [association with the corresponding Dynamics app](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-apps). Flows using first party Dynamics apps or talking to Dynamics entities in Dataverse are exempt from this enforcement. Enforcement is planned for early 2024. |
+|Premium flows without premium licenses| 14 days | Flows that were created with premium features (premium connectors, custom connectors, HTTP connectors, on premises gateway, and business process flows) but don't have a premium Power Automate license will be turned off after 14 days. This situation happens if the original owner leaves the organization, or if they have an expired trial or premium license. The flow owner and co-owners will get an email when the trial or premium license expires, or when the owner isn't found in Microsoft Entra ID (Microsoft Entra ID). The flow will continue to work for 14 days. If a premium license isn't assigned to the flow within 14 days, the flow is automatically turned off, and the owner and co-owners are notified through email. Newly created or edited premium flows without a premium license are saved but turned off. Once a premium Power Automate license is assigned to the owner or flow, you can turn on the flow. Admins can [find these flows](/power-platform/admin/power-automate-licensing/faqs#how-can-i-identify-flows-that-need-premium-licenses-to-avoid-interruptions). Assign a Power Automate Process license or a per user license to the owner to keep the flow running.|
 
 ## Concurrency, looping, and debatching limits
 
@@ -104,8 +102,8 @@ The following table describes the concurrency, looping, and debatching limits fo
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
 | Concurrent runs | - Unlimited for flows with Concurrency Control turned off<br />- 1 to 100 when Concurrency Control is turned on (defaults to 25) | This is the limit for how many runs a flow can have at the same time. <br />**Note**: Concurrency Control is set in the flow's trigger settings and is off by default. Turning on Concurrency Control can't be undone without deleting and re-adding the trigger.
-| Waiting runs | - Not applicable when Concurrency Control is off  <br /> - 10 plus the degree of parallelism (1-100) when Concurrency Control is on| This limit describes the highest number of flow runs that can be queued when the flow is at its maximum number of concurrent runs. <br />**Note**: Additional triggers that arrive while the waiting runs limit is met might be re-tried by the connector. However, the retry attempts might not succeed if the maximum waiting limit continues to be met for an extended period of time. To ensure all triggers result in flow runs, leave the Concurrency Control setting off in in the flow's trigger.
-| Apply to each array items | 5,000 for Low, 100,000 for all others | This limit describes the highest number of array items that an "apply to each" loop can process. <br />To filter larger arrays, you can use the query action. |
+| Waiting runs | - Not applicable when Concurrency Control is off  <br /> - 10 plus the degree of parallelism (1-100) when Concurrency Control is on| This limit describes the highest number of flow runs that can be queued when the flow is at its maximum number of concurrent runs. <br />**Note**: Additional triggers that arrive while the waiting runs limit is met might be re-tried by the connector. However, the retry attempts might not succeed if the maximum waiting limit continues to be met for an extended period of time. To ensure all triggers result in flow runs, leave the Concurrency Control setting off in the flow's trigger.
+| Apply to each array item | 5,000 for Low, 100,000 for all others | This limit describes the highest number of array items that an "apply to each" loop can process. <br />To filter larger arrays, you can use the query action. |
 | Apply to each concurrency | 1 is the default limit. You can change the default to a value between 1 and 50 inclusively. | This limit is highest number of "apply to each" loop iterations that can run at the same time, or in parallel. |
 | Split on items | - 5,000 for Low without trigger concurrency  <br />- 100,000 for all others without trigger concurrency <br />- 100 with trigger concurrency | For triggers that return an array, you can specify an expression that uses a 'SplitOn' property that splits or debatches array items into multiple workflow instances for processing, rather than use a "Foreach" loop. This expression references the array to use for creating and running a workflow instance for each array item. <br />**Note**: When concurrency is turned on, the Split on limit is reduced to 100 items. |
 | Until iterations | - Default: 60 <br />- Maximum: 5,000 | |
@@ -157,14 +155,14 @@ The following table describes the content throughput limits, which refer to the 
 
 | Name | Limit | Notes |
 | ---- | ----- | ----- |
-| Content throughput per 5 minutes | 600 MB for Low; 6 GB for all others | You can distribute workload across more than one flow as necessary. |
-| Content throughput per 24 hours | 1 GB for Low; 10 GB for Medium; 50 GB for High | You can distribute workload across more than one flow as necessary. |
+| Content throughput per 5 minutes | 120 MB for Low; 1.2 GB for all others | You can distribute workload across more than one flow as necessary. |
+| Content throughput per 24 hours | 200 MB for Low; 2 GB for Medium; 10 GB for High | You can distribute workload across more than one flow as necessary. |
 
 ## Gateway limits
 
 Power Automate supports write operations, including inserts and updates, through the gateway. However, these operations have [limits on their payload size](/data-integration/gateway/service-gateway-onprem#considerations).
 
-## HTTP limits
+## Request limits
 
 The following sections describe the limits for a single outgoing or incoming HTTP call.
 
@@ -178,7 +176,7 @@ The following table describes the timeout limits.
 |------|-------|-------|
 | Outbound synchronous request | 120 seconds (2 minutes) | Examples of outbound requests include calls made by HTTP triggers.<br/>**Tip**: For longer-running operations, use an asynchronous polling pattern or an "Until" loop. To work around timeout limits when you call another flow that has a callable endpoint, use the built-in action instead, which you can find in the connector picker under **Built-in**. |
 | Outbound asynchronous request | Configurable up to 30 days |  |
-| Inbound request | 120 seconds (2 minutes) | Examples of inbound requests include calls received by request triggers and webhook triggers.<br/>**Note**: For the original caller to get the response, all steps in the response must finish within the limit unless you call another flow as a child flow. |
+| Inbound request | 120 seconds (2 minutes) | Examples of inbound requests include requests to trigger instant flows and flows with the **HTTP Request** trigger.<br/>Flows that contain a response action including **Respond to Copilot**, **HTTP Response**, and **Respond to a PowerApp or flow** will always return a response within this limit.<br/>Child flows that are started before the response action will continue running separately, and actions after the response action will continue running beyond this limit, enabling a flow to respond and continue running other operations. |
 
 If you test a cloud flow that runs for longer than 10 minutes, you may get a timeout message in Power Automate, even though the flow continues to run in the background. If this happens, reopen the view to receive the current status.
 
@@ -252,7 +250,7 @@ There are [limitations](/connectors/sharepointonline/#limits) on how you can use
 
 ## IP addresses
 
-Requests from Power Automate use IP addresses that are associated with the region of the [environment](./environments-overview-maker.md) in which your flow exists.
+Requests from Power Automate use IP addresses that are associated with the [region of the environment](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center) in which your flow exists.
 
 Calls made from connectors in cloud flows come from [these IP addresses](/connectors/common/outbound-ip-addresses#power-platform). Add them to your network's allowlist to facilitate communications from Power Automate.
 

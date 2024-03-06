@@ -9,6 +9,7 @@ ms.date: 10/02/2023
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 ---
 
 # Store and manage values in variables

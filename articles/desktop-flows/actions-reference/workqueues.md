@@ -1,5 +1,5 @@
 ---
-title: Work queues actions (preview)
+title: Work queues actions
 description: Use work queue actions in Power Automate desktop flows.
 ms.topic: conceptual
 ms.date: 08/23/2023
@@ -8,26 +8,24 @@ ms.reviewer:
 contributors:
  - DBEKI
  - tapanm-msft
+ - rpapostolis
 author: DBEKI
 ---
-# Work queues actions (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Work queues actions
 
 [Work Queues](../work-queues.md) in Power Automate can be used to store process-relevant data and provide a way to decouple complex processes and automations, allowing them to communicate asynchronously. 
 
 Work queues can play a crucial role in improving the efficiency, scalability, and resiliency of automations and help prioritize work. Work queues allow you to complete highest-priority items first, regardless of whether they're processed by digital workers, human workers, or through integrations.
 
-> [!IMPORTANT]
+> [!NOTE]
 >
-> - This is a preview feature.
-> - [!INCLUDE[cc_preview_features_definition](../../../articles/includes/cc-preview-features-definition.md)]
+> - Production-level support for the first set of work queue-related actions requires Power Automate desktop version **2.37** or later.
 > - Work queue actions in Power Automate for desktop is a premium feature, which requires a [Power Automate subscription](https://powerautomate.microsoft.com/pricing/).
-> - Work queue actions in Power Automate for desktop can be classified in data loss prevention (DLP) policies. Note that cloud flow-based usage of work queues can't be restricted by DLP policies.
+> - Currently only *Process work queue items* and *Update work queue item* actions can be classified and allowed or restricted through data loss prevention (DLP) policies, with other actions following soon. Note that cloud flow-based usage of work queues can't be restricted by DLP policies.
 
-## Process work queue items (preview)
+## Process work queue items
 
-The **Process work queue items (Preview)** action indicates to the queue orchestrator that the machine is ready to process one or more work queue items. The user context requesting a new item needs to have sufficient privileges on the work queue and work queue items table in order to process work queues. 
+The **Process work queue items** action indicates to the queue orchestrator that the machine is ready to process one or more work queue items. The user context requesting a new item needs to have sufficient privileges on the work queue and work queue items table in order to process work queues. 
 
 :::image type="content" source="media\workqueues\ProcessWorkQueueItems.png" alt-text="Screenshot of the Process Work Queue Item action." lightbox="media\workqueues\ProcessWorkQueueItems.png":::
 
@@ -56,9 +54,9 @@ The **Process work queue item action** action requires the following arguments.
   | **Work queue not found** |The value entered into the work queue parameter is invalid|
 |**Failed to process work queue**| Bad request - error in query syntax |
 
-## Update work queue item (preview)
+## Update work queue item
 
-The **Update work queue item (Preview)** action allows users to change the status and processing results of the selected work queue item.
+The **Update work queue item** action allows users to change the status and processing results of the selected work queue item.
 
 :::image type="content" source="media\workqueues\UpdateWorkQueueItem.png" alt-text="Screenshot of the Update Work Queue Item action." lightbox="media\workqueues\UpdateWorkQueueItem.png":::
 
@@ -70,7 +68,7 @@ The **Update work queue item action** action requires the following arguments.
   |----------      |----------|---------|---------------|-----------------|
   | **Work queue item** |No    |Text |               |Work queue item variable that has been previously returned by the queue orchestrator|
 | **Status** |No    |Processed, Generic Exception| Processed |Update the work queue item being processed using a status from the list of options.|
-| **Processing result** | Yes | Text| | Custom processing notes or value to set append  to the queue item being processed |
+| **Processing result** | Yes | Text| | Custom processing result or value to set append  to the queue item being processed |
 
 #### Exceptions
 
@@ -80,9 +78,9 @@ The **Update work queue item action** action requires the following arguments.
 | **Work queue item on hold** | The work queue item being processed contains a status of `on hold` in the queue orchestrator and can no longer be updated.
 | **Failed to update work queue item** | The work queue item being updated has encountered an unexpected error, check the error message for more details.
 
-## Add work queue item (preview)
+## Add work queue item
 
-The **Add work queue item (preview)** action allows users to populate work queue items into a work queue, which has been set up in the flow portal.
+The **Add work queue item** action allows users to populate work queue items into a work queue, which has been set up in the flow portal.
 
 :::image type="content" source="media\workqueues\AddWorkQueueItem.png" alt-text="Screenshot of the add work queue item action." lightbox="media\workqueues\AddWorkQueueItem.png":::
 
@@ -114,25 +112,24 @@ The **Add work queue item** action requires the following arguments.
 | **Work queue not found** | The value entered into the work queue parameter is invalid|
 | **Failed to add item into work queue** | The work queue item couldn't be added into the work queue.  Bad request - error in query syntax |
 
-## Requeue item and add delay (preview)
+## Requeue item with delay
 
-The **Requeue item and add delay (preview)** action allows users to to re-add a queue item being processed in the desktop flow, back into it's originating queue.  In addition, the queued item can be held and released until a defined time.
+The **Requeue item with delay** action allows users to to re-add a queue item being processed in the desktop flow, back into it's originating queue.  In addition, the queued item can be held and released until a defined time.
 
-:::image type="content" source="media\workqueues\Requeueworkqueueitem.png" alt-text="Screenshot of the requeue work queue item action." lightbox="media\workqueues\Requeueworkqueueitem.png":::
+:::image type="content" source="media\workqueues\RequeueWorkQueueItemWithDelay.png" alt-text="Screenshot of the requeue work queue item action." lightbox="media\workqueues\RequeueWorkQueueItemWithDelay.png":::
 
 ### requeueworkqueueitemaction
 
-The **Requeue item and add delay** action requires the following arguments.
+The **Requeue item with delay** action requires the following arguments.
 
 #### Input Parameters
 
 | Argument       | Optional | Accepts | Default Value | Description     |
   |----------      |----------|---------|---------------|-----------------|
   | **Work queue item** |No    |Work queue item |               |The work queue item to add the item into|
-| **Delay until** |No    |Datetime value| Normal |The dateetime value applied to delay the queue item until|
+| **Delay until** |No    |Datetime value| Normal |The datetime value applied to delay the queue item until|
 | **Expires** | Yes | Datetime value| | Custom expiration time for the item being requeued|
-
-| **Processing notes** | Yes | Text value, Numeric value| | Custom processing notes to be added to the new queue item|
+| **Processing result** | Yes | Text value, Numeric value| | Custom processing result to be added to the new queue item|
 
 #### Exceptions
 

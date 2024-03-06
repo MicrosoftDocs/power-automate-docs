@@ -1,13 +1,13 @@
 ---
 title: Exchange Server actions reference
 description: See all the available Exchange Server actions.
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 10/24/2023
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -106,6 +106,8 @@ Retrieve email messages from the specified Exchange server.
 ## <a name="sendmessage"></a> Send Exchange email message
 
 Create and send a new email message.
+
+The **Send Exchange email message** action creates and sends a new email message upon connecting to an Exchange server. Before adding this action, add the **Connect to Exchange server** action to set up a connection to your Exchange server first. The output of this action is the %ExchangeConnection% variable that should be used as input to the **Send Exchange email message** action.
 
 ### Input parameters
 

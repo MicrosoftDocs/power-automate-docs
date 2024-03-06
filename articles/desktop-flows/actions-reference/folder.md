@@ -1,14 +1,14 @@
 ---
 title: Folder actions reference
 description: See all the available folder actions.
-author: georgiostrantzas
-
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 10/20/2023
+ms.author: matp
+ms.reviewer: matp
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -60,6 +60,8 @@ This action doesn't include any exceptions.
 ## <a name="getfiles"></a> Get files in folder
 
 Retrieve the list of files in a folder.
+
+To retrieve all files in a specific folder, use the action **Get files in folder**. Specify the folder path in the **Folder** property and then use the * character in the **File filter** property (included by default). In case you want to also include all files included in the subfolder inside the specified folder, enable the **Include subfolders** toggle. The retrieved filepaths are then stored in the output of the action.
 
 ### Input parameters
 

@@ -2,7 +2,7 @@
 title: Overview of adaptive cards for Teams
 description: Learn to use adaptive cards with Microsoft Teams.
 suite: flow
-author: msftman
+author: v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.date: 09/08/2023
@@ -29,7 +29,7 @@ The following actions enable makers to create adaptive cards for Microsoft Teams
 > [!NOTE]
 > Adaptive cards aren't available within the DoD (Department of Defense) environment.
 
-## Directing content to Teams members or AAD users
+## Directing content to Teams members or Microsoft Entra users
 
 ### Post your own adaptive card as the Flow bot to a user
 
