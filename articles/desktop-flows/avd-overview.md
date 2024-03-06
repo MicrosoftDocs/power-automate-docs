@@ -2,7 +2,7 @@
 title: Introduction to the Power Automate Azure Virtual Desktop integration starter kit
 description: Overview of the Power Automate Azure Virtual Desktop integration starter kit
 services: ''
-author: georgiostrantzas
+author: mattp123
 editor: ''
 tags: ''
 ms.subservice: desktop-flow

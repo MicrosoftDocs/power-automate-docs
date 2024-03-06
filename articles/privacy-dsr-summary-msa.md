@@ -4,14 +4,12 @@ description: Learn about the resources available in Power Automate to help you m
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
-manager: KVIVEK
+author: v-aangie
 ms.author: angieandrews
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
