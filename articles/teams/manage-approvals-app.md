@@ -4,7 +4,7 @@ description: Learn how to manage your approvals from the approvals app in Teams.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 ms.subservice: teams
 ms.topic: conceptual
 ms.tgt_pltfrm: na

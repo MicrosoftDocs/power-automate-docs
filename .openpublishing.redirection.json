@@ -256,6 +256,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/desktop-flows/create-processes.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/ui-flows/edit-web.md",
       "redirect_url": "/power-automate/desktop-flows/edit-web",
       "redirect_document_id": false
@@ -728,6 +733,16 @@
     {
       "source_path": "articles/minit/process-mining-copilot-in-process-analytics.md",
       "redirect_url": "/power-automate/process-mining-copilot-in-process-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/avd-setup.md",
+      "redirect_url": "/power-automate/desktop-flows/avd-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/avd-use-starter-kit.md",
+      "redirect_url": "/power-automate/desktop-flows/avd-overview",
       "redirect_document_id": false
     }
   ]

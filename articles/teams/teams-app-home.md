@@ -2,7 +2,7 @@
 title: Manage flows in Microsoft Teams
 description: Learn how to manage flows using the Workflows app in Microsoft Teams
 suite: flow
-author: msftman
+author: v-aangie
 contributors:
   - kewaiss
   - v-aangie

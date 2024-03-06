@@ -10,11 +10,10 @@ contributors:
   - kartikraop
   - radioblazer
   - v-aangie
-ms.author: napienko
+ms.author: jamiller
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na

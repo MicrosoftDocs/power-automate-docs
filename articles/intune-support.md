@@ -4,11 +4,10 @@ description: Power Automate mobile app now supports Microsoft Intune's Mobile Ap
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na

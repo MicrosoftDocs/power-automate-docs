@@ -1,12 +1,12 @@
 ---
 title: Application lifecycle management for Power Automate v2 schema
 description: Learn how to update a v2 desktop flow and export the solution.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 02/20/2023
 ms.author: dbekirop
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker

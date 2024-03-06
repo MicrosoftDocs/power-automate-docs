@@ -1,12 +1,11 @@
 ---
-title: Use the apply to each action in Power Automate to loop through an array of items. (contains video)
+title: Use the Apply to each action to process a list of items periodically (contains video)
 description: Use Power Automate to loop through an array of items to check multiple conditions and take actions based on those conditions.
 suite: flow
 documentationcenter: na
 author: natalie-pienkowska
 contributors:
   - kisubedi
-  - natalie-pienkowska
   - kartikraop
   - v-aangie
 ms.subservice: cloud-flow
@@ -18,7 +17,9 @@ ms.custom: bap-template
 search.audienceType: 
   - flowmaker
   - enduser
+ms.collection: bap-ai-copilot
 ---
+
 # Use the Apply to each action to process a list of items periodically
 
 Many triggers can immediately start a cloud flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a cloud flow that queries a data source on a predefined schedule, taking certain actions based on the properties of the items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to process a list of items. For example, you could use **Apply to each** to update records from a database or list of items from Microsoft SharePoint.

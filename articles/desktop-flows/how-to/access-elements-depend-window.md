@@ -1,13 +1,13 @@
 ---
 title: Access elements that depend on how the window appears on the screen
 description: Access elements that depend on how the window appears on the screen	
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/24/2021
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

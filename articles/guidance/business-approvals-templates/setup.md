@@ -67,10 +67,13 @@ Mapping persons from the [User journey](./user-journey.md) to licenses
 
 | Persona                   | User Journey Reference | License |
 |---------------------------|------------------------|---------|
-| Approver                  | Rebecca | Microsoft Office 365 (For Office 365 or Microsoft Teams) or Power Platform standard user license (For Power Automate Maker Portal) |
-| Approval Administrator    | Charlotte | Microsoft Power Apps license |
-| Maker                     | Charlotte or Gibson | Power Automate Premium to author Cloud Flows |
-| Environment Administrator | Gibson | Assigned Power Automate Service to execute Cloud Flows |
+| Approver                  | Rebecca | Microsoft Office 365 (For Office 365 or Microsoft Teams) or Power Platform standard user license (For Power Automate maker portal). |
+| Approval administrator    | Charlotte | Microsoft Power Apps license (per user, per app, or pay-as-you-go). |
+| Maker                     | Charlotte or Gibson | Power Automate premium to author cloud flows. |
+| Environment administrator | Gibson | Assigned Power Automate license to execute cloud flows with premium connectors included. |
+
+  > [!NOTE]
+  > Refer to [Compare Power Automate Plans](/power-platform/admin/power-automate-licensing/types#compare-power-automate-plans) for plans that include the ability to include premium connectors.
 
 ## (Optional) Set up a new environment to install
 
@@ -175,66 +178,83 @@ Once import is complete, you should see business approvals kit in the list of so
 > [!NOTE]
 > The import can take up to 10 minutes to complete.
 
-### After import steps
+## After import steps
 
-Once the approvals kit solution is imported to an environment successfully, you must update the  Approvals kit custom connector to point to the target tenant Identity provider and turn on cloud flows.
+Once the approvals kit solution is imported to an environment successfully, you must update the Approvals kit custom connector to point to the target tenant Identity provider and turn on cloud flows.
 
-#### Update custom connector
+### Update custom connector
 
 You must have an app registered to interact with Dataverse table and Custom API.
 
-##### App Registration
+### App Registration
 
 Follow these steps to perform the app registration.
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/).
-
+1. Open the [Microsoft Entra admin center](https://entra.microsoft.com/) in a new window.
 1. Select **App Registration** from the Application section under **Identity**.
-
 1. Select New registration and provide a name, then select **Register**.
-
 1. Under **API permission**, select **Add a permission** and choose **Dynamic CRM**.
-    
+
     :::image type="content" source="media/app-registration-dynamics-crm.png" alt-text="A screenshot of the Request API permissions options within the Approvals kit App.":::
 
-1. Choose **Delegated permission** and select user_impersonation. 
+1. Choose **Delegated permission** and select user_impersonation.
 1. Select **Add Permissions**.
 
 :::image type="content" source="media/app-registration-dynamics-crm-delegated-permissions.png" alt-text="A screenshot of the Approvals kit App API permissions with the Request API permissions panel open.":::
 
-1. Create a secret by moving to **Certificates and Secrets** section and select **New client secret**.
+#### App registration admin consent
 
-1. Add a description and select an appropriate expiry date. Select **Add**.
+For the API permissions, you might need to grant tenant wide permissions for the created application. Follow the guidance in [Grant Admin Consent](/entra/identity/enterprise-apps/grant-admin-consent) to provide the required permissions.
+
+If administrator consent isn't granted, when users attempt to create a connection with the custom connector they can receive an error similar to the following:
+
+> [!NOTE]
+>
+> user@contoso.com
+>
+> **Need admin approval**
+>
+> Needs permission to access resources in your organization that only an admin can grant. Please ask an admin to grant permission to this app before you can use it.
+>
+> Have an admin account? Sign in with that account.
+>
+> Return to the application without granting consent.
+
+##### App registration secret
+
+For the created application add the application secret that will be used by the custom connector using the following steps:
+
+1. Create a secret by moving to **Certificates and Secrets** section and selecting **New client secret**.
+1. Add a description and select an appropriate expiry date.
+1. Select **Add**.
 
 > [!IMPORTANT]
 >
 > - Copy the secret value and save it. You'll use the copied value when configuring custom connector in the next section.
-> - You'll also need the Client ID from Overview section.
+> - You'll also need the Client ID from ths [Overview](#overview) section.
 
 #### Update the Approvals kit with a custom connector
 
 Now you'll edit the **Approvals kit** custom connector present inside Business Approval solution.
 
+1. Under the **General** tab, modify the following:
+
+    - Specify that the **Host** is the host name of your dataverse instance. For example, contoso.crm.dynamics.com
+
 1. Under the **Security** tab, modify the following:
 
     - Select Authentication type as **OAuth 2.0**.
-    - Enter the Client ID, Secret noted in previous section.
-    - Specify the environment URL under Resource URL section.
+    - Enter the Client ID
+    - Enter the Secret noted in previous section.
+    - Specify the environment URL under Resource URL section. This Resource url contains the link to your environment. This is in format https://yourenv.crm[x].dynamics.com where [x] is optional depending on your region
 
-1. Copy the Redirect URL
-
-1. Open the created Entra App Registration
-
-1. Select **Authentication**
-
-1. In the Web Redirect URIs add the Redirect URL
-
-1. Select **Save** to update the App Registration
-
+1. Copy the Redirect URL.
+1. Open the created Entra App Registration.
+1. Select **Authentication**.
+1. In the Web Redirect URIs, add the Redirect URL.
+1. Select **Save** to update the App Registration.
 1. Switch back to the custom connector.
-
 1. Select **Update connector**.
-
 1. Under the **Test** tab, create a **New connection**.
 
     - Specify the account details for the connection and allow access if prompted.
@@ -242,50 +262,37 @@ Now you'll edit the **Approvals kit** custom connector present inside Business A
 
 The operation should run successfully with status as 200.
 
+  > [!NOTE]
+  > - Not sure on your region? You can review /power-platform/admin/new-datacenter-regions
+  > - You can obtain you environment url from https://aka.ms/ppac environments or the Power Apps Portal in the settings of the environment.
+  > - Issue [#144 [Business Approvals Kit - BUG] Approvals Kit Upgrade](https://github.com/microsoft/powercat-business-approvals-kit/issues/144) - Documents the need to update connector with OAuth Secret is tracking the need to update the custom connector after upgrade
+
 #### Activate the core cloud flows
 
 The template includes multiple core components that are used to manage the approval experience. To use the template, you must turn on the cloud flows that came with the template.
 
-1. Go to [make.powerapps.com](https://make.powerapps.com/).
+1. Open [make.powerapps.com](https://make.powerapps.com/) in a new window.
 1. Select **Solutions**, and open the **Business Approvals Kit** solution to view the flows.
 1. Activate cloud flows using in the list to ensure no errors occur as there are dependencies across the flows. Some cloud flows can be enabled when importing the solution in the previous steps.
 
-    a.  Turn on: BACore \| Approval Time-out
-
-    b.  Turn on: BACore \| Approver OOF
-
-    c.  Turn on: BACore \| Cascade Process Status
-
-    d.  Turn on: BACore \| Cascade Publishing Activation
-
-    e.  Turn on: BACore \| Child \| Get Dynamic Approver
-
-    f.  Turn on: BACore \| Child \| Get Dynamic Data Instance
-
-    g.  Turn on: BACore \| Child \| Get Default Settings
-
-    h.  Turn on: BACore \| Child \| Log Runs
-
-    i.  Turn on: BACore \| Child \| Evaluate Rule
-
-    j.  Turn on: BACore \| Daily \| Calculate Approval Timeouts
-
-    k.  Turn on: BACore \| Publish Process
-
-    l.  Turn on: BACore \| Runtime \-\- Start Approval
-
-    m.  Turn on: BACore \| Runtime \-\- Start Node
-
-    n.  Turn on: BACore \| Runtime \-\- Start Stage
-
-    o.  Turn on: BACore \| Runtime \-\- Start Workflow
-
-    p.  Turn on: BACore \| Runtime \-\- Update Approval
-
-    q.  Turn on: BACore \| Runtime \-\- Update Node Instance
-
-    r.  Turn on: BACore \| Runtime \-\- Update Stage Instance
-
-    s.  Turn on: BACore \| Sync Approver OOF
+    1. Turn on: BACore \| Approval Time-out
+    1. Turn on: BACore \| Approver OOF
+    1. Turn on: BACore \| Cascade Process Status
+    1. Turn on: BACore \| Cascade Publishing Activation
+    1. Turn on: BACore \| Child \| Get Dynamic Approver
+    1. Turn on: BACore \| Child \| Get Dynamic Data Instance
+    1. Turn on: BACore \| Child \| Get Default Settings
+    1. Turn on: BACore \| Child \| Log Runs
+    1. Turn on: BACore \| Child \| Evaluate Rule
+    1. Turn on: BACore \| Daily \| Calculate Approval Timeouts
+    1. Turn on: BACore \| Publish Process
+    1. Turn on: BACore \| Runtime \-\- Start Approval
+    1. Turn on: BACore \| Runtime \-\- Start Node
+    1. Turn on: BACore \| Runtime \-\- Start Stage
+    1. Turn on: BACore \| Runtime \-\- Start Workflow
+    1. Turn on: BACore \| Runtime \-\- Update Approval
+    1. Turn on: BACore \| Runtime \-\- Update Node Instance
+    1. Turn on: BACore \| Runtime \-\- Update Stage Instance
+    1. Turn on: BACore \| Sync Approver OOF
 
 Once installation is complete for the core components, your next step is to set up the approval processes in How to use Approvals Kit section.

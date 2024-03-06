@@ -1,12 +1,12 @@
 ---
 title: Browser automation actions reference
 description: See all the available browser automation actions.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/23/2023
+ms.date: 01/30/2024
 ms.author: nimoutzo
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -420,6 +420,8 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
+|User data folder|N/A|Picture-in-Picture default, Browser default, Custom|Picture-in-Picture default|Specify the user data folder the browser uses when the flow runs in Picture-in-Picture. If Browser default is selected, the browser can't be opened on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip.md#limitations-of-browser-automation-in-picture-in-picture)|
+|User data folder path|No|[Folder](../variable-data-types.md#files-and-folders)||Specify the path of the user data folder the browser uses when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip.md#limitations-of-browser-automation-in-picture-in-picture)|
 
 ### Variables produced
 
@@ -454,7 +456,9 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
-|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
+|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be opened before the action fails|
+|User data folder|N/A|Picture-in-Picture default, Browser default, Custom|Picture-in-Picture default|Specify the user data folder the browser uses when the flow runs in Picture-in-Picture. If Browser default is selected, the browser can't be opened on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip.md#limitations-of-browser-automation-in-picture-in-picture)|
+|User data folder path|No|[Folder](../variable-data-types.md#files-and-folders)||Specify the path of the user data folder the browser will use when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip.md#limitations-of-browser-automation-in-picture-in-picture)|
 
 ### Variables produced
 
@@ -469,7 +473,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Failed to launch Chrome|Indicates a problem launching Chrome|
 |Invalid URL|Indicates that the provided URL was invalid|
 
-## <a name="launchedgebase"></a> Launch new Microsoft Edge
+## Launch new Microsoft Edge
 
 Launch a new instance or attach to a running instance of Microsoft Edge for automating websites and web applications.
 
@@ -478,7 +482,7 @@ Launch a new instance or attach to a running instance of Microsoft Edge for auto
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Launch mode|N/A|Launch new Instance, Attach to running instance|Launch new Instance|Specify whether to launch a new instance of Microsoft Edge or attach to an existing one|
-|Attach to Microsoft Edge tab|N/A|By title, By URL, Use foreground window|By title|Specify whether to attach to an Microsoft Edge tab by its title, URL, or attach to the active tab of Microsoft Edge running as the foreground window|
+|Attach to Microsoft Edge tab|N/A|By title, By URL, Use foreground window|By title|Specify whether to attach to a Microsoft Edge tab by its title, URL, or attach to the active tab of Microsoft Edge running as the foreground window|
 |Initial URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL of the web site to visit when the web browser is launched|
 |Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Microsoft Edge tab to attach to|
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Microsoft Edge tab to attach to|
@@ -490,6 +494,8 @@ Launch a new instance or attach to a running instance of Microsoft Edge for auto
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
+|User data folder|N/A|Picture-in-Picture default, Browser default, Custom|Picture-in-Picture default|Specify the user data folder the browser uses when the flow runs in Picture-in-Picture. If Browser default is selected, the browser can't be opened on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip.md#limitations-of-browser-automation-in-picture-in-picture)|
+|User data folder path|No|[Folder](../variable-data-types.md#files-and-folders)||Specify the path of the user data folder the browser uses when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip.md#limitations-of-browser-automation-in-picture-in-picture)|
 
 ### Variables produced
 
