@@ -8,6 +8,7 @@ ms.topic: article
 author: kisubedi
 ms.author: kisubedi
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 ---
 
 # Responsible AI FAQs for Power Automate

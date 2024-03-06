@@ -7,7 +7,6 @@ documentationcenter: na
 author: donums
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
@@ -101,8 +100,6 @@ The following terms are commonly used in Power Automate.
 ## R
 
 **Robotic Process Automation (RPA):** Automation using a software application that replicates the actions of a human being interacting with the user interface of a computer system.
-
- [Use Softomotive's WinAutomation with UI flows](desktop-flows/create-processes.md)
 
 ## S
 

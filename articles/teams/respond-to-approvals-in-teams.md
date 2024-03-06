@@ -4,7 +4,7 @@ description: Learn how to respond to an approval in a chat or channel in Microso
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 contributors:
   - kewaiss
   - v-aangie
