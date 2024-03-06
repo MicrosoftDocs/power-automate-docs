@@ -1,12 +1,12 @@
 ---
 title: Manage desktop flows
 description: Learn how to manage desktop flows in the Power Automate portal.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/20/2023
+ms.date: 02/27/2024
 ms.author: appapaio
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributor:
 search.audienceType: 
   - flowmaker
@@ -58,7 +58,7 @@ Follow these steps to share a desktop flow:
 
    > [!NOTE]
    >
-   > You can also enter a Microsoft Dataverse team name instead of the name of the person. More information: [Microsoft Dataverse teams management](/power-platform/admin/manage-teams)
+   > You can also enter a Microsoft Dataverse team name instead of the name of the person. If you want to share with a Microsoft Entra group, you first need to create a Microsoft Entra Group team in Dataverse based on the Microsoft Entra Group. More information: [Microsoft Dataverse teams management](/power-platform/admin/manage-teams)
    
 5. Select the user and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
 
@@ -73,6 +73,7 @@ Follow these steps to share a desktop flow:
 >
 > Once a desktop flow has been shared, owners and co-owners can change the access of each user by selecting **Manage access** on the desktop flow details page.
 > If someone shares a desktop flow with you, select the refresh button to see it in the **Shared with me** flows list.
+> After you share a desktop flow with new co-owners, the co-owners see all the desktop runs that happen in the future. However those co-owners don't see the desktop flows already completed before sharing.
 
 ## Reassign desktop flows
 

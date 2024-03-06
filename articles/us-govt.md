@@ -4,7 +4,6 @@ description: Learn about Power Automate US Government service description, plans
 services: ''
 suite: flow
 author: kenseongtan
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 08/03/2023

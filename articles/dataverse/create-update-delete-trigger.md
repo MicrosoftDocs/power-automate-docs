@@ -10,6 +10,7 @@ ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: conceptual
 ms.date: 10/02/2023
+ms.collection: bap-ai-copilot
 search.app: 
   - Flow
   - Powerplatform

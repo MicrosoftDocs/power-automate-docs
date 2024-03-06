@@ -3,12 +3,11 @@ title: Respond to personal data discovery requests (Microsoft Entra ID)
 description: Learn about the resources available in Power Automate to help you meet your obligations to discover customers' personal data under various privacy laws and regulations for users who authenticate using Microsoft Entra ID.
 suite: flow
 documentationcenter: na
-author: MSFTMAN
+author: v-aangie
 ms.author: angieandrews
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na

@@ -3,26 +3,21 @@ title: Create a cloud flow from a description (preview)
 description: Learn to create a cloud flow from a written description of the scenario.
 services: ''
 suite: flow
-documentationcenter: na
 author: natalie-pienkowska
 contributors:
-  - natalie-pienkowska
   - kartikraop
   - JoeFernandezMS
   - v-aangie
-ms.author: napienko
+ms.author: kapolepa
 ms.reviewer: angieandrews
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 03/10/2023
 search.audienceType: 
   - flowmaker
   - enduser
+  - ms.collection: 
+    - bap-ai-copilot
 ---
 
 # Create a cloud flow from a description (preview)
@@ -31,18 +26,15 @@ search.audienceType:
 
 When you build automation with Power Automate, it might take valuable time to learn which actions and triggers you need, especially if you’re new to the Power Automate. If you want to jump right in and get started, you can now just write a description of what you want to automate in everyday language. Supporting most of the connectors, Power Automate then uses OpenAI Codex to translate your description into code, and then provides a corresponding flow that you can create instantly.
 
-> [!IMPORTANT]
->
-> - This is a preview feature.
 > - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Prerequisites
 
 - A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in Europe or the United States.
   
-  >[!NOTE]
-  >- You can't create cloud flows from a description if you're logged in with a Microsoft account.
-  >- If you don’t have access to an environment that's based Europe or the United States, you can [create a new environment and select Europe or United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as the region.
+  > [!NOTE]
+  > - You can't create cloud flows from a description if you're logged in with a Microsoft account.
+  > - If you don’t have access to an environment that's based Europe or the United States, you can [create a new environment and select Europe or United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as the region.
 
 - Check current [limitations](#limitations) for more information.
 
@@ -66,9 +58,8 @@ In the following example, we'll build an automated cloud flow that sends a notif
 
     Power Automate returns a suggested flow that corresponds to what you've entered.
 
-    >[!NOTE]
-    >
-    >If the suggestion doesn't correspond to what you’re looking to automate, select **This isn't what I'm looking for**. You'll get guidance on what you can do next. This helps Microsoft to improve the AI behind this feature.
+    > [!NOTE]
+    > If the suggestion doesn't correspond to what you’re looking to automate, select **This isn't what I'm looking for**. You'll get guidance on what you can do next. This helps Microsoft to improve the AI behind this feature.
 
       :::image type="content" source="media/easy-flow/describe-flow.png" alt-text="Screenshot that displays a suggested flow after providing a description of what to automate.":::
 

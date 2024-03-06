@@ -1,12 +1,12 @@
 ---
 title: Migration to Manifest V3 
 description: Learn about the deprecation of Manifest V2 and migration to Manifest V3.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 02/09/2023
 ms.author: nimoutzo
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker

@@ -1,26 +1,23 @@
 ---
 title: Create an approval from the approvals app | Microsoft Docs
-description: Learn how to create an approval from a chat or channel.
+description: Learn how to create an approval from the approvals app in Teams.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-editor: ''
-tags: ''
-
-ms.devlang: na
+author: v-aangie
+contributors:
+  - kewaiss
+  - v-aangie
 ms.subservice: teams
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/30/2020
-ms.author: hamenon
-ms.reviewer: gtrantzas
+ms.author: kewaiss
+ms.reviewer: angieandrews
 ---
 
 # Create an approval from the approvals app
-
-[!INCLUDE[teams-rebranding](../includes/teams-rebranding.md)]
 
 You can trigger an approval at any time from the approvals app in Teams.
 

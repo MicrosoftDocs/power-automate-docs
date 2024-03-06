@@ -1,13 +1,18 @@
 ---
 title: Get started with Copilot in cloud flows
 description: Learn how to access and use Copilot in cloud flows.
-ms.date: 10/02/2023
+ms.date: 02/07/2024
 ms.custom: bap-template
   - transparency-note
 ms.topic: conceptual
 author: kisubedi
+contributors:
+  - kisubedi
+  - janPidych
+  - v-aangie
 ms.author: kisubedi
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot 
 ---
 
 # Get started with Copilot in cloud flows
@@ -34,13 +39,15 @@ You need a Power Platform environment in the following regions to use Copilot in
 | Region | Copilot availability |
 | ------------- | ------------- |
 | Preview region | Copilot is enabled by default at the beginning of October 2023, unless it's [turned off by an admin](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
-| Regions with copilot GPUs (US)  | Copilot is enabled by default as of October 18, 2023, unless it's [turned off by an admin](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
-| Europe region excluding France | **Stage 1**: Between the end of October and in November, Copilot is enabled from the Home page entry point and create path, but won't be on for the editing experience from within the designer. The editing experience can be enabled by an admin from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by opting to allow the cross-geo data sharing setting. More information: [Enable copilots and generative AI features outside United States and Switzerland](/power-platform/admin/geographical-availability-copilot)<br/><br/>**Stage 2**: After November, the Europe region can use Copilot from all entry points by default, unless admins manually opt out of the cross-geo data sharing settings from the Power Platform admin center, or turned off by admin. More information: [Enable copilots and generative AI features outside United States and Switzerland](/power-platform/admin/geographical-availability-copilot) and [How do I disable Copilot in the cloud flows designer](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
+| Regions with copilot GPUs (United States, Australia, United Kingdom)  | Copilot is enabled by default, unless it's [turned off by an admin](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
+| Europe region excluding France | Starting November, Copilot is enabled in the Europe region (using Sweden and Switzerland GPUs) by default, unless admins manually opt out of the cross-geo data sharing settings from the Power Platform admin center, or turned off by admin. More information: [Enable copilots and generative AI features outside United States and Switzerland](/power-platform/admin/geographical-availability-copilot) and [How do I disable Copilot in the cloud flows designer](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
 | All other regions, including France and Canada, with the exception of Sovereign clouds | Copilot can be enabled by admins from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) by opting to allow cross-geo data sharing setting between the middle of October to the middle of November 2023, based on a rollout schedule for a different area. More information: [Enable copilots and generative AI features outside United States and Switzerland](/power-platform/admin/geographical-availability-copilot) | 
 | Sovereign clouds and personal Microsoft account (MSA) users | There's no access for MSA users or Sovereign cloud users to copilot features. You need to use an organization ID and in a non-Sovereign cloud region. |
 
 > [!NOTE]
-> If your environment is in the region listed above and you still don’t see the Copilot in cloud flows experience, contact your admin. Ask if they've requested Microsoft Support to disable the cloud flows designer with Copilot.
+> If your environment is in the region previously listed and you still don’t see the Copilot in cloud flows experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center. In some geographic regions outside the United States, Australia, United Kingdom, an admin needs to turn the cross geo calls on to enable Copilot.
+>
+> More information: [Availability by region](#availability-by-region)
 
 ## Create a flow using the cloud flows designer with Copilot
 
@@ -96,6 +103,9 @@ This section describes some example scenarios of how you can interact with Copil
 | When an email arrives from contoso@gmail.com, post in Teams.  | </li><li>Ask Copilot to edit the flow: **I want to send the email subject to Teams channel.**<br/></li><li>Ask Copilot what your flow does: **What does my flow do?**  |
 | When an item is created in SharePoint, send me a mobile notification.  |  </li><li>Edit the flow with this prompt: **I want to send the item title to notification.**<br/></li><li>Edit the flow with this prompt: **I don’t want to receive mobile notification. Send me an email instead.**  |
 
+> [!TIP]
+> For more examples you can try out, go to the [Power Platform Prompt Library](https://pnp.github.io/powerplatform-prompts/?filters=power%20automate%20copilot).
+
 ## Edit a flow using the designer with copilot capabilities
 
 In addition to using Copilot to create a starting flow, you can also change or complete your existing flows.
@@ -113,7 +123,7 @@ In addition to using Copilot to create a starting flow, you can also change or c
    1. Delete action *X*
    1. I want to send an email at the end of the flow with subject equal to the SharePoint file name.
    1. Instead of email, I want to post message on Teams channel.
-   1. Check if each of the Sharepoint item being returned have title equals 'USB' if so, send an email.
+   1. Check if each of the Sharepoint items being returned has a title that equals 'USB', and if so, send an email.
 
 ## Frequently asked questions
 
@@ -131,7 +141,7 @@ If you're not in the region (listed in the previous [Availability table](#availa
 
 ### How do I disable Copilot in the cloud flows designer?
 
-You can disable Copilot for your tenant by contacting Microsoft Support.
+Please refer to the [table in Availability by region](#availability-by-region) - If you aren't in the region with GPUs (infrastructure to support Copilot), you can simply toggle off the cross-geo data sharing settings from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). However, If you're in the region with native GPUs with Copilot on by default, you can disable Copilot for your tenant by contacting Microsoft Support. You can disable and re-enable at tenant level easily using a PowerShell script.
 
 ### How is Copilot in cloud flows different from the text generation model in AI Builder?
 
@@ -148,13 +158,23 @@ You can’t edit flows in the cloud flows designer with the copilot experience i
 - A non-Open API flow (older connection format).
 
     > [!TIP]
-    > If there's Peek code on an action and if you see the `methods` parameter, it's a non-Open API flow.
+    > If there's Peek code on an action and if you see the _APIConnection_ value instead of _OpenAPIConnection_ in Kind field , it's a non-Open API flow. 
 
 - A flow with a comment.
-- A flow contains an unsupported hybrid trigger. Hybrid triggers don't require connections, and are triggered manually from outside of Power Automate. The hybrid triggers which won't be supported are: For a selected message (v2 Teams), Teams On Compose Message (teams), Teams card trigger, and Microsoft 365 Compliance Connector.
+- A flow contains an unsupported hybrid trigger. Hybrid triggers don't require connections, and are triggered manually from outside of Power Automate. The hybrid triggers, which won't be supported are:
+  - When a flow step is run from business process flows (Dataverse)
+  - For a selected message (v2 Teams)
+  - Teams On Compose Message (teams)
+  - Teams card trigger
+  - Microsoft 365 Compliance Connector
 - A flow contains a Power Apps V1 trigger.
+- A flow contains Perform a Changeset Request (Dataverse).
 - A flow contains a Power Pages component.
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use [connection reference](/power-apps/maker/data-platform/create-connection-reference#manually-add-a-connection-reference-to-a-solution-using-solution-explorer) instead.
+  - Email auto-complete suggestions in Send Email/Post message in Teams actions
+  - HTML editor in Send Email action
+  - Copy/Paste supporting Scope, Condition, Do until cosntructs
+  - Ability to make manual trigger fields optional
 
 You can’t use the cloud flows designer with Copilot if you’re using a personal Microsoft account. For example, you can’t use someone@live.com. Use a work or school account like someone@contoso.com instead.
 
@@ -162,11 +182,35 @@ The cloud flows Copilot supports English language only for models.
 
 ### There are some missing functionalities in the cloud flows designer with copilot capabilities. What do I do?
 
-If you want to work with missing functionalities in the designer, go to [Limitation](flows-designer.md#limitation) for details.
+As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer won't be supported indefinitely, the new designer is gradually becoming the primary interface.
 
+If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply turn off the **New designer** toggle on the menu in the cloud flows designer.
+
+:::image type="content" source="./media/get-started-with-copilot/designer-toggle.svg" alt-text="Screenshot of the 'New designer' toggle.":::
+
+### Why do I get this error "O.split(...).at is not a function" when signing in?
+
+Power Automate designer doesn't support browsers that are more than two (2) years old. You could see the aforementioned or similar errors in the designer if your browser version isn't current. It is generally a good idea to update your browser to latest version to avoid such issues.
+
+### Why do I get this error "The provided flow name contains invalid characters" when importing a flow in a new tenant?
+
+This is a temporary gap, which you can work around by adding a query parameter `v3=false` in your URL.
+
+### Why do I not see dynamic content from triggers like 'When a response is submitted' or why is the flow automatically putting an unnecessary loop?
+
+This might be because of a temporary issue where the **Split On** setting of the trigger is off. If you enable the setting, the issue should go away.
+
+1. On the action configuration pane, select the **Settings** tab.
+1. Under the **Split On** heading, move the toggle to **On**.
+
+### What licenses do I need to access Copilot in Power Automate cloud flows?
+
+You need a standalone Power Automate license, or a seeded M365 license, or PowerApps/Dynamics license, to access and use Copilot. MSA users (@microsoft.com) without an org id won't be able to use the experience.
 
 ### See also
 
 - [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
+- [Language availability for Power Platform](https://dynamics.microsoft.com/availability-reports/languagereport/)
+- [Geographical availability for Power Platform](https://dynamics.microsoft.com/availability-reports/georeport/)

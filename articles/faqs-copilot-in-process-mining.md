@@ -4,10 +4,12 @@ description: This FAQ discusses Copilot in Process Mining and the key considerat
 ms.date: 08/25/2023
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: conceptual
 author: HeatherOrt
 ms.author: heortaol
 ms.reviewer: angieandrews
+ms.collection: 
+    - bap-ai-copilot
 ---
 
 # FAQ for Copilot in Power Automate Process Mining

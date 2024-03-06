@@ -7,6 +7,7 @@ ms.topic: conceptual
 ms.date: 10/02/2023
 ms.author: kisubedi
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
   - enduser

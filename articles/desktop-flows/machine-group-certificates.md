@@ -1,12 +1,12 @@
 ---
 title: Machine group certificate renewal
 description: Learn how machine group certificate renewal works in Power Automate.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 12/16/2022
 ms.author: gachasta
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker

@@ -133,7 +133,7 @@ Before you start using the process mining capability, make sure you have the fol
 
   - To learn how to add a database to an environment, go to [Add a Microsoft Dataverse database](/power-platform/admin/create-database).  
 
-- Adequate roles are assigned for users who want to use the process mining capability. Typically an Environment Maker security role is recommended. Go to [Security and privacy](process-advisor-security.md) to learn more.
+- Adequate roles are assigned for users who want to use the process mining capability. The **Environment Maker** is required to create, share, and contribute to processes. Go to [Security and privacy](process-advisor-security.md) to learn more.
 
 Additional considerations for specific capabilities:
 
