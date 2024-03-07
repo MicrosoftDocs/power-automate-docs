@@ -475,7 +475,7 @@ For example, **Modules**.ContosoActions.dll
 
 The AssemblyTitle in the project settings specifies the module ID. It can only have alphanumeric characters and underscores and must begin with a letter.
 
-## Signing a custom module
+## Sign all DLLs inside the custom module
 
 > [!IMPORTANT]
 > It is mandatory to have all of the .dll files tha comprise a custom module (generated assembly and all its dependencies) signed with a trusted certificate
@@ -484,11 +484,18 @@ To finalize the creation of the custom module, all generated .dll files, which c
 
 Sign all the .dll files using a trusted certificate by running the following command (for each .dll file) in a Developer Command Prompt for Visual Studio:
 
+Sign the .dlls files using a trusted certificate by running the following command (for each dll) in a Developer Command Prompt for Visual Studio:
 ```
 Signtool sign /f {your certificate name}.pfx /p {your password for exporting the certificate} /fd 
 SHA256 {path to the .dll you want to sign}.dll
 ```
-
+or by running the following command (by creating a Windows PowerShell Script .ps1) that iterates through all .dll files and sign each one with the provided certificate:
+```PowerShell
+Get-ChildItem {the folder where dll files of custom module exist} -Filter *.dll | 
+Foreach-Object {
+	Signtool sign /f {your certificate name}.pfx /p {your password for exporting the certificate} /fd SHA256 $_.FullName
+}
+```
 > [!NOTE]
 > The digital certificate must have an exportable private key and code sign capabilities
 
