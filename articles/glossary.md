@@ -92,7 +92,7 @@ The following terms are commonly used in Power Automate.
  [What is Microsoft Dataverse?](/powerapps/maker/common-data-service/data-platform-intro)
 
 
-**Microsoft Dataverse for Teams**: A common cloud data platform for Microsoft Teams. Microsoft Dataverse for Teams enables everyone to quickly build and deploy apps and intelligent chatbots in Teams with Microsoft Power Apps and Microsoft Power Virtual Agents.
+**Microsoft Dataverse for Teams**: A common cloud data platform for Microsoft Teams. Microsoft Dataverse for Teams enables everyone to quickly build and deploy apps and intelligent chatbots in Teams with Microsoft Power Apps and Microsoft Copilot Studio.
 
 
 **Multistep flows:** A multistep flow uses more than one action to accomplish a task.

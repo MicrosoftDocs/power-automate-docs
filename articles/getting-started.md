@@ -211,4 +211,4 @@ Here's the list of the main categories:
 
 ## 6 - Ask a chatbot
 
-Get contextual help while building your flow using the Power Platform virtual agent. To learn more, go to [Get contextual help with flows from the Power Virtual Agents bot](contextual-help-bot.md).
+Get contextual help while building your flow using the Power Platform virtual agent. To learn more, go to [Get contextual help with flows from the Microsoft Copilot Studio bot](contextual-help-bot.md).
