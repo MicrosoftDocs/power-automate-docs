@@ -6,7 +6,7 @@ ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 10/27/2023
 ms.author: nimoutzo
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

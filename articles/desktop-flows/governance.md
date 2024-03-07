@@ -1,13 +1,14 @@
 ---
 title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
-author: georgiostrantzas
+author: mattp123
 ms.topic: conceptual
 ms.date: 11/13/2023
 ms.author: iomavrid
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 ms.collection: bap-ai-copilot
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - PetrosFeleskouras
 search.audienceType: 
@@ -81,11 +82,14 @@ You can use the following registry entry to keep users from logging into Power A
 
 To restrict access to Power Automate for desktop on a workstation with Windows 10 or Windows 11, use [App locker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
 
-## Allow users to sign in to Power Automate for desktop using Web Account Manager (WAM)
+## Configure Power Automate for desktop to use the Web Account Manager (WAM) as a fallback sign in method
 
-You can use the following registry entry to allow users to sign in to Power Automate for desktop using Windows Web Account Manager (WAM).
+By default, Power Automate for desktop uses the Web Account Manager (WAM) for user authentication. If any sign in errors occur, it uses an Internet Explorer client as a fallback method.
 
-WAM enables certain features that aren't available through the default sign in process, such as single sign-on (SSO).
+You can use the following registry entry to set Power Automate for desktop to sign in with the Windows Web Account Manager (WAM) as a fallback sign in method.
+
+> [!NOTE]
+> For older versions of Power Automate for desktop prior to version 2.41, this registry entry configures Power Automate for desktop to sign in with the Web Account Manager (WAM) as the primary sign in method.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -93,7 +97,7 @@ WAM enables certain features that aren't available through the default sign in p
 
 ***Values***
 
-- **1**: Power Automate for desktop authenticates users using the WAM functionality.
+- **1**: Power Automate for desktop authenticates users using the WAM functionality as a fallback sign in method.
 
 ## Configure Power Automate for desktop to check for revoked certificates
 
@@ -135,9 +139,12 @@ You can use the following registry entry to allow users to select the organizati
 > [!NOTE]
 > The "isEnabled" values aren't related to the **organizationList** and **selectOrganizationFromListIsEnabled** values. The **isEnabled** values define whether the **Switch organization** option is available to signed-in users, whereas the **organizationList** and **selectOrganizationFromListIsEnabled** values define the organizations that Power Automate for desktop tries to connect to automatically during sign-in.
 
-## Allow users of Power Automate for desktop to connect to a region
+## Configure Power Automate for desktop to connect to a region
 
-You can use the following registry entry to allow users to select the region they want to connect to.
+You can use the following registry entry to set the region where users will connect to by default during sign-in.
+
+> [!NOTE]
+> Values **0** and **1** apply to older versions of Power Automate for desktop, prior to version 2.41.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -244,9 +251,9 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 - **1**: Power Automate for desktop won't take a screenshot for the action logs when an error occurs during a flow run.
 
-## Prevent Power Automate for desktop from uploading action logs after a desktop flow runs through the console
+## Prevent Power Automate for desktop from uploading action logs after a desktop flow execution
 
-You can use the following registry entry to prevent Power Automate for desktop from uploading detailed logs per action for the respective run of the flow's run history, after a desktop flow run takes places through the console.
+You can use the following registry entry to prevent Power Automate for desktop from uploading detailed logs per action for the respective run of the flow's run history, after a desktop flow execution.
 
 |Hive|Key|Name|Type|
 |---|---|---|---|

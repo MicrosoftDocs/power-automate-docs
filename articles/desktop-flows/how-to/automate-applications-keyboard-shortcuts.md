@@ -1,13 +1,13 @@
 ---
 title: Automate applications using keyboard shortcuts
 description: Automate applications using keyboard shortcuts
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/09/2021
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

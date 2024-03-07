@@ -6,7 +6,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 01/29/2024
 ms.author: nimoutzo
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - NikosMoutzourakis
 search.audienceType: 

@@ -4,7 +4,7 @@ description: Learn about the Power Automate v2 schema.
 author: nvigne
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/19/2023
+ms.date: 02/26/2024
 ms.author: nvigne
 ms.reviewer: matp
 contributors:
@@ -82,7 +82,7 @@ With v2 schema, we change the data model stored in Dataverse. In addition to the
 :::image type="content" source="media/schema/desktopflowbinaries-v2.png" alt-text="Desktop flow in v2 schema with desktop flow binaries.":::
 
 > [!IMPORTANT]
-> The desktop flow binaries objects are required components of the desktop flow as they store required data for the desktop flow to be able to open or run. 
+> The desktop flow binary objects are required components of the desktop flow as they store required data for the desktop flow to be able to open or run. Don't delete these binary objects. Deleting them results in permanent data loss for the desktop flow, which makes the respective flow non-editable.
 
 The number of desktop flow binaries might vary depending on the size of the desktop flow.
 
