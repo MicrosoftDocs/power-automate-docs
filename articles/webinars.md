@@ -61,14 +61,13 @@ by Debraj Ghosh, Stefan Buffner, and Shivani Agarwal<br/>
 by John Anastasopoulos and Stephanie Whitaker<br/>
 [Register and watch now](https://info.microsoft.com/ww-landing-How-to-use-Power-Automate-in-Windows-11.html?lcid=en-us)
 
-**Automation Through Conversation with Power Automate and Power Virtual Agents**  
+**Automation Through Conversation with Power Automate and Microsoft Copilot Studio** (formerly, Power Virtual Agents)  
 by Jack Rowbotham and Kent Weare<br/>
 [Register and watch now](https://info.microsoft.com/ww-landing-automateconversevirtualagents.html?lcid=en-us)
 
 **Increase Business Impact & Scale with an Automation Center of Excellence**  
 by Pranav Rastogi and Apostolis Papaioannou<br/>
 [Register and watch now](https://info.microsoft.com/ww-landing-businesscenterexcellencerpa.html?lcid=en-us)
-
 
 ### See also
 
