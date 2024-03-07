@@ -4,18 +4,17 @@ description:  Migrate from Windows recorder (V1) to Power Automate for desktop.
 services: ''
 suite: flow
 documentationcenter: na
-author: georgiostrantzas
+author: mattp123
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/24/2023
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -64,7 +63,7 @@ replace the UI automation action. You need to use the **Run a desktop flow built
 
 ## Known issues and limitations
 
-- Windows recorder (V1) flows that contain the **Run a WinAutomation** or **Remote Desktop Protocol (RDP)** actions are not supported for migration.
+- Windows recorder (V1) flows that contain the **Remote Desktop Protocol (RDP)** action is not supported for migration.
 
 - Flows with array inputs are not supported.
 

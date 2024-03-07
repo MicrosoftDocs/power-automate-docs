@@ -4,18 +4,17 @@ description: Create a parallel modern approval workflow
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMan
+author: v-aangie
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/07/2020
-ms.author: deonhe
-ms.reviewer: gtrantzas
+ms.author: angieandrews
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -132,7 +131,7 @@ Let's continue:
 1. Enter **Approve** (this text is case-sensitive) into the last box.
 1. Your condition card should now resemble this example:
 
-    ![flow with parallel branches condition.](includes/media/parallel-modern-approvals/condition-card.png)
+    ![Conditional card illustration.](includes/media/parallel-modern-approvals/condition-card.png)
 
    > [!NOTE]
    > This condition checks the response from the **Start an approval** action that goes to the employee's manager.
@@ -170,7 +169,7 @@ Repeat the preceding steps on the **Start an approval 2** and **Start an approva
 1. Select **+New step**
 1. Use the steps provided previously to send an email that summarizes the results of each approval. Send this email to the employee who requested vacation. Your card may resemble this example:
 
-    ![update item configuration.](./media/parallel-modern-approvals/final-email-card.png)
+    ![A screenshot of the filled out flow details.](./media/parallel-modern-approvals/final-email-card.png)
 
 ## Learn more about modern approvals
 

@@ -54,7 +54,7 @@ We want to hear from you to help us measure and improve our impact. To provide y
 
 ## More commands
 
-Select the **More commands** (**&hellip;**) button to add a note to the selected card in your flow, or to delete the card. Select **Add a note** to describe the purpose of the card in your flow. After you add a note, a note symbol appears in the lower right of the card. Hover over this symbol to view the note.
+Select the **More commands** (**&hellip;**) button to add a note to the selected card in your flow, or to delete the card. Select **Add a note** to describe the purpose of the card in your flow. After you add a note, a note symbol appears in the lower right of the card. To view the note, hover over this symbol.
 
 :::image type="content" source="media/flows-designer/designer-note.png" alt-text="Screenshot that shows a note being added.":::
 
@@ -82,7 +82,7 @@ Instructions appear and tell you what you must do to test your flow. The followi
 
 :::image type="content" source="media/flows-designer/test-prompt.png" alt-text="Screenshot of instructions that tell you how to test your flow.":::
 
-Follow the instructions to test your flow. In this example, you must send an email. The flow test then runs. When the test finishes running, a green check mark appears on each card, together with the number of seconds that it took to be processed.
+To test your flow, follow the instructions. In this example, you must send an email. The flow test then runs. When the test finishes running, a green check mark appears on each card, together with the number of seconds that it took to be processed.
 
 :::image type="content" source="media/flows-designer/test-result.png" alt-text="Screenshot of test results.":::
 
@@ -141,7 +141,7 @@ For easy navigation, you can drag your flow on the canvas. You configure the act
 
 ### Drop zones
 
-The canvas contains AI-powered designer drop zones to help you easily drag cloud flow actions. The drop zones are indicated by blue dashed lines.
+The canvas contains AI-powered designer drop zones to help you easily drag cloud flow actions. The drop zones are represented by blue dashed lines.
 
 :::image type="content" source="media/flows-designer/drop-zone.png" alt-text="Screenshot of an action card and a drop-zone.":::
 
@@ -184,7 +184,7 @@ The cloud flows designer has smaller cards to facilitate easy navigation. It als
 ## Limitations and known issues
 
 You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following:
-- Non-Open API flows (Peek code on an action and if you see `_methods_` parameter, the flow is a non-open API flow)
+- Non-Open API flows (If there's Peek code on an action and if you see the APIConnection value instead of OpenAPIConnection in Kind field, it's a non-Open API flow.)
 - Some hybrid triggers:
    - When a flow is run from business process flow (Dataverse)
    - For a selected message (v2 Teams)
@@ -197,7 +197,6 @@ You might notice that some functionalities that were in the classic designer are
 - Perform a changeset request action (Dataverse)
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
 - Email auto-complete suggestions in _Send Email/Post message_ in Teams actions
-- HTML editor in Send Email action
 - Copy/Paste supporting Scope, Condition, Do until cosntructs
 - Ability to make manual trigger fields optional
 
@@ -205,9 +204,10 @@ You might notice that some functionalities that were in the classic designer are
 
 - Dynamic content friendly names are getting updated to internal code names upon save.
 - Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', and others.
-- Newline in Approval action and Compose action are disappearing.
 
-If you want to work with missing functionalities in the designer, while the limitations and known issues are being fixed in the meantime, turn off the **New designer** toggle on the menu in the cloud flows designer.
+As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is gradually becoming the primary interface.
+
+If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply turn off the **New designer** toggle on the menu in the cloud flows designer.
 
 :::image type="content" source="media/flows-designer/designer-toggle.svg" alt-text="Screenshot of the 'New designer' toggle.":::
 
@@ -230,6 +230,14 @@ This might be because of a temporary issue where the **Split On** setting of the
 
 1. On the [action configuration pane](#action-configuration-pane), select the **Settings** tab.
 1. Under the **Split On** heading, move the toggle to **On**,
+
+### Why don't I see new or updated SharePoint or Excel column values in my flow?
+
+Power Automate designer requires a flow action to be re-added in order to pick up new entities of the underlying action. For example, if you have a SharePoint _Get item_ action in your flow and Sharepoint item has four (4) columns, the flow allows you to access all four column values of the SharePoint item. Now, if you navigate to SharePoint, add a fifth column, and come back to the flow, you can't access the fifth column unless you delete the _Get item_ action and re-add it again to force the designer to pick up the latest changes. The same behavior applies in Excel columns, Dataverse, Onedrive folder/files, and others.
+
+### Will the new cloud flows designer eventually fully replace the classic designer?
+
+Yes, once the issues noted here are resolved and the new cloud flows designer can cover most, if not all, of the classic designer scenarios. At this time, the classic designer will be fully replaced.
 
 ### See also
 

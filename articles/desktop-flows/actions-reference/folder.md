@@ -1,12 +1,12 @@
 ---
 title: Folder actions reference
 description: See all the available folder actions.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 10/20/2023
 ms.author: matp
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - jpapadimitriou
 - Yiannismavridis

@@ -1,12 +1,12 @@
 ---
 title: Run desktop flow actions reference
 description: See how to use the Run desktop flow actions.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 01/30/2024
 ms.author: pefelesk
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

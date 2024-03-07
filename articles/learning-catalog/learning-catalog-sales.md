@@ -1,10 +1,10 @@
 ---
 title: Partner Sales and Marketing learning catalog
 description: Find training options to help your customers buy the right Power Platform solution.
-author: msftman
+author: v-aangie
 ms.topic: conceptual
 ms.date: 03/21/2020
-ms.author: deonhe
+ms.author: angieandrews
 ms.reviewer: angieandrews
 
 ---

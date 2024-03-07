@@ -1,10 +1,10 @@
 ---
 title: Learning catalog for Power Automate
 description: Find the training options for Power Automate.
-author: msftman
+author: v-aangie
 ms.topic: conceptual
 ms.date: 03/17/2020
-ms.author: deonhe
+ms.author: angieandrews
 ms.reviewer: angieandrews
 
 ---

@@ -1,12 +1,12 @@
 ---
 title: Variable manipulation and the % notation
 description: Variable manipulation and the % notation
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 01/16/2024
 ms.author: dipapa
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - jpapadimitriou
 - Yiannismavridis
