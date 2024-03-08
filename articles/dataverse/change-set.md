@@ -59,6 +59,6 @@ Follow these steps to get started with change sets.
    ![Executes a changeset scope.](../media/dataverse-how-tos/change-set-3.png "Executes a changeset scope")
 
 
-# Limitations
+## Limitations
 - The only supported actions within a changeset scope are **Add a new row**, **Delete a row** and **Update a row**. So for example, **Apply to each** action is not supported inside a changeset.
 - You cannot reference an output of a previous action inside the changeset scope.
