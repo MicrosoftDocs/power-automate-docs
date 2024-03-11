@@ -269,6 +269,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality.
 > - This feature is not available yet for local attended runs from Power Automate desktop.
+> - This feature is currently being gradually rolled-out and might not yet be available in your region.
 > - These features are available before an official release so that customers can get early access and provide feedback.
 
 You can now configure how verbose your desktop flow action logs should be or even completely disabling them via environment settings in [Power Platform admin center](https://admin.powerplatform.microsoft.com).
