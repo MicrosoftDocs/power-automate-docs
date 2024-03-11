@@ -7,7 +7,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 07/18/2023
+ms.date: 03/11/2024
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -81,4 +81,4 @@ Adding a co-owner to the process allows the owner to include other people who ca
 >
 >- Removing all process roles from a user (such as viewer) doesn't remove that process from the user's process list view. They can't perform any actions on the process.
 >- Process mining currently does not support sharing for AAD groups.
->- Co-owners do not have access to the power query editor and cannot modify a Dataflow.
+>- Co-owners don't have access to the power query editor and cannot modify a dataflow.
