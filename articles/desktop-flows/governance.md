@@ -284,7 +284,7 @@ You can configure when desktop flow run action logs should be captured or turn t
 | **Disabled** | This option effectively **disables** desktop flow run action logs **completely**. |
 
 > [!CAUTION]
-> Changing these settings can have a significant impact on various aspects such as your ability to troubleshoot, audit, data retention, and so on. Ensure that you fully understand the implications of changing these settings before proceeding. <!-- Checking with PM to change "various aspects" to something more specific.-->
+> Changing these settings can have a significant impact on your ability to troubleshoot, audit, and more. Ensure that you fully understand the implications of changing these settings before proceeding.
 
 ## Configure Power Automate for desktop notification settings
 
