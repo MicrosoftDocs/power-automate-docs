@@ -91,7 +91,7 @@ For the complete list of all available functions in Power Automate for desktop f
 - Whenever a **General value** type variable is utilized, a warning message stating "Deferred type provided" is presented. These warnings arise due to Power Fx's strict requirement for strong-typed schemas (strictly defined types). 
 - Certain automation actions from the standard library of actions, such as **Read from Excel**, **Read from CSV**, **Extract data from a web**, **Extract data from window**, **Execute SQL statement**, and **Convert JSON to a custom object** produce **General type** variables that can't be evaluated yet during the authoring. For the time being, ignore warnings resulting from such cases. 
 - The General type variables that are produced from the above actions are currently incompatible with the following functions: Filter(), LookUp(), Search(), CountIf(), With(). 
-- Some Power Fx functions presented through IntelliSense are not currently supported in desktop flows. Those funtions will throw the following design time error when used: **Parameter 'Value': PowerFx type 'OptionSetValueType' is not supported.**
+- Some Power Fx functions presented through IntelliSense aren't currently supported in desktop flows. Those functions display the following design time error when used: **Parameter 'Value': PowerFx type 'OptionSetValueType' is not supported.**
 
 ## What's new
 
@@ -99,16 +99,18 @@ This section lists what's changed in each update.
 
 ### 2.42
 
-In March's release: 
+In March's release:
+
 - IntelliSense capabilities are now available for Power Fx enabled desktop flows.
   - Syntax colorization
   - Autocomplete functionality during typing with real time suggestions
   - Signature helpers for Power Fx functions
+
 > [!NOTE]
-> IntelliSense capabilities are available for expressions. To input an expression use the **equals sign (=** your expression **)** at the beginning of the respective input or the **string interpolation notation ( ${** your expression **} )** 
+> IntelliSense capabilities are available for expressions. To input an expression use the **equals sign (=** your expression **)** at the beginning of the respective input or the **string interpolation notation ( ${** your expression **} )**.
+
 - Function picker
   - You can access the function picker using the fx button in the skittle when interacting with the respective inputs. All Power Fx functions currently supported for desktop flows are available there.
-
 
 ### 2.41
 

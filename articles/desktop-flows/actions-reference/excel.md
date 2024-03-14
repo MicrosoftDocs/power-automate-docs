@@ -4,7 +4,7 @@ description: See all the available Excel actions.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/20/2023
+ms.date: 03/14/2024
 ms.author: dipapa
 ms.reviewer: matp
 contributors:
@@ -346,7 +346,7 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Failed to delete cell(s)|Indicates a problem deleting the specified cell(s)|
+|Failed to delete cells|Indicates a problem deleting the specified cells|
 
 ## <a name="insertrow"></a> Insert row to Excel worksheet
 
@@ -556,7 +556,7 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 |Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The cell row (single cell's Value) or first row number|
 |End column|No|[Text value](../variable-data-types.md#text-value)||The last column as a numeric value or a letter|
 |End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number|
-|Get cell contents as text|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to retrieve the content of the cell(s) purely as text or as the closest matching type such as Date Time for dates, Numeric for numbers, and so on|
+|Get cell contents as text|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to retrieve the content of the cells purely as text or as the closest matching type such as Date Time for dates, Numeric for numbers, and so on|
 |First line of range contains column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to consider the first row as column names. In this case, the names won't be read as data into the table and later actions can search the data by column names.|
 
 ### Variables produced
@@ -570,7 +570,7 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 
 |Exception|Description|
 |-----|-----|
-|Failed to read cell value(s)|Indicates a problem reading the value(s) of the specified Excel cell(s)|
+|Failed to read cell values|Indicates a problem reading the value(s) of the specified Excel cells|
 
 ## <a name="getactivecell"></a> Get active cell on Excel worksheet
 
@@ -627,7 +627,7 @@ Writes a value into a cell or a range of cells of an Excel instance.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
-|Value to write|No|[General value](../variable-data-types.md#general-value)||Enter the text, number or variable to insert. If the variable contains a table, it will fill in cells to the right and below, writing over other cell data if need be and a list will fill in cells below.|
+|Value to write|No|[General value](../variable-data-types.md#general-value)||Enter the text, number, or variable to insert. If the variable contains a table, it will fill in cells to the right and below, writing over other cell data if need be and a list will fill in cells below.|
 |Write mode|N/A|On specified cell, On currently active cell|On specified cell|Whether to write into a specified cell or the currently active cell|
 |Column|No|[Text value](../variable-data-types.md#text-value)||The column number or letter for the cell to write to|
 |Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row of the cell to write to. The numbering starts from 1, meaning that the index of the first worksheet is 1, the second is 2, and so on.|
@@ -652,7 +652,7 @@ Closes an Excel instance.
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to close. This variable must have been previously specified in a Launch Excel action.|
 |Before closing Excel|N/A|Do not save document, Save document, Save document as|Don't save document|Whether and how to save the document of this instance before closing that instance|
-|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel Add-In (.xlam), Excel 97-2003 Add-In (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods), XML Data (.xml), Excel Binary Workbook (.xlsb)|Default (From Extension)|The format of the document|
+|Document format|N/A|Default (From Extension), Excel Workbook (.xlsx), Excel Workbook Macro Enabled (.xlsm), Excel 97-2003 Workbook (.xls), Web Page (.htm, .html), Excel Template (.xltx), Excel Template Macro Enabled (.xltm), Excel 97-2003 Template (.xlt), Text (.txt), Unicode Text (.txt), Text Macintosh (.txt), Text DOS (.txt), XML Spreadsheet (.xml), Excel 95 (.xls), CSV (.csv), DIF (.dif), SYLK (.slk), Excel add-in (.xlam), Excel 97-2003 add-in (.xla), Strict Open XML Workbook (.xlsx), OpenDocument Spreadsheet (.ods), XML Data (.xml), Excel Binary Workbook (.xlsb)|Default (From Extension)|The format of the document|
 |Document path|No|[File](../variable-data-types.md#files-and-folders)||The full path of the document|
 
 ### Variables produced
@@ -764,8 +764,8 @@ Clears a range of cells or a named cell in the active worksheet of an Excel inst
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
-|Clear|N/A|Range of cells, Range of cells relative to active cell, Named cells, Single cell|Range of cells|Specify whether to select an explicitly specified range of cells, a range of cells relative to the currently active cell, named cells or a single cell.|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a **Launch Excel** action.|
+|Clear|N/A|Range of cells, Range of cells relative to active cell, Named cells, Single cell|Range of cells|Specify whether to select an explicitly specified range of cells, a range of cells relative to the currently active cell, named cells, or a single cell.|
 |X Axis Direction|N/A|Left, Right|Left|The X-axis offset direction. Where to look along the horizontal axis, based on currently activated cell's position.|
 |Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column.|
 |X Offset|No|[Numeric value](../variable-data-types.md#numeric-value)||The X-axis offset.|
@@ -786,7 +786,7 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Failed to clear cells|Indicates a problem occured while trying to clear the specified cells in the Excel instance|
+|Failed to clear cells|Indicates a problem occurred while trying to clear the specified cells in the Excel instance.|
 
 ## Known limitations
 
