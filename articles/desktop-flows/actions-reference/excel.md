@@ -756,6 +756,38 @@ Gets the name of the column.
 
 This action doesn't include any exceptions.
 
+## <a name="getcolumnname"></a> Clear cells in Excel worksheet
+
+Clears a range of cells or a named cell in the active worksheet of an Excel instance.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
+|Clear|N/A|Range of cells, Range of cells relative to active cell, Named cells, Single cell|Range of cells|Specify whether to select an explicitly specified range of cells, a range of cells relative to the currently active cell, named cells or a single cell.|
+|X Axis Direction|N/A|Left, Right|Left|The X-axis offset direction. Where to look along the horizontal axis, based on currently activated cell's position.|
+|Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column.|
+|X Offset|No|[Numeric value](../variable-data-types.md#numeric-value)||The X-axis offset.|
+|Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The first row number. The numbering starts from 1.|
+|End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column.|
+|Y Axis Direction|N/A|Above, Below|Above|The Y-axis offset direction. Where to look along the vertical axis, based on the position of the currently active cell.|
+|End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number. The numbering starts from 1.|
+|Y Offset|No|[Numeric value](../variable-data-types.md#numeric-value)||The Y-axis offset.|
+|Name|No|[Text value](../variable-data-types.md#text-value)||The name of cells.|
+|Column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the column.|
+|Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row number. Enumeration starts from 1.|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+#### <a name="getcolumnname_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to clear cells|Indicates a problem occured while trying to clear the specified cells in the Excel instance|
+
 ## Known limitations
 
 ### Using Excel files synchronized through OneDrive or SharePoint

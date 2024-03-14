@@ -23,7 +23,7 @@ To find more information about how to use the **Run desktop flow** action, go to
 
 >[!NOTE]
 >
-> - A flow's dependencies can't be more than 30 other flows.
+> - A flow's dependencies can't be more than 150 other flows.
 > - Two flows can't directly or indirectly call one-another as this causes a recursion.
 > - In org tenants, the flows must be under the same environment.
 
