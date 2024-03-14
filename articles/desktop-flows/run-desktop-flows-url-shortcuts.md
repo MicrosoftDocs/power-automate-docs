@@ -32,7 +32,7 @@ By default, Power Automate always prompts you to confirm the triggering of a des
 
 - Power Automate for desktop needs to be installed on the machine.
 - The user must be signed in.
-- The user needs a trial or paid organization subscription or a pay-as-you-go environment.
+- The user needs a Power Automate Premium plan or access to a pay-as-you-go environment.
 
 ## Create a desktop shortcut
 

@@ -4,7 +4,7 @@ description: Learn how to create and use hosted machine groups to distribute you
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/24/2024
+ms.date: 02/26/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -506,9 +506,9 @@ The following list displays all the supported geographies in the public clouds:
 - United States
 
 The following list displays all supported sovereign clouds:
-- Government Community Cloud (GCC)
-- Government Community Cloud High (GCC High)
-- Department of Defense (DoD)
+- Government Community Cloud (GCC): US Gov Virginia	
+- Government Community Cloud High (GCC High): US Gov Virginia	
+- Department of Defense (DoD) : US DoD East
 
 Hosted machine groups aren't yet available in the following sovereign cloud:
 - China
