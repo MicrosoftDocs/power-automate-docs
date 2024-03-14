@@ -1,9 +1,9 @@
 ---
-title: Unattended RPA capacity utilization 
-description: Unattended RPA capacity utilization 
+title: Process capacity utilization 
+description: Process capacity utilization 
 author: cvassallo
 ms.subservice: desktop-flow
-ms.date: 01/03/2024
+ms.date: 15/03/2024
 ms.author: cvassallo
 ms.reviewer: matp
 ms.topic: conceptual
@@ -13,11 +13,11 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-The **Process and Unattended RPA capacity utilization page** provides you with insights into how your process capacity (or legacy unattended RPA capacity) is being used within your environment. As a reminder, within the Power Automate platform each process capacity is based on a purchased [Process license](/power-platform/admin/power-automate-licensing/types) and each legacy unattended RPA capacity is based on an [Unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on). It's [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows your machines to run desktop flows autonomously without human interaction in unattended mode. Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run simultaneously.
+The **Process and Unattended RPA capacity utilization page** provides you with insights into how your Process capacity (or legacy Unattended RPA capacity) is being used within your environment. As a reminder, within the Power Automate portal each Process capacity is based on a purchased [Process license](/power-platform/admin/power-automate-licensing/types) and each legacy Unattended RPA capacity is based on an [Unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on). Those capacities are [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and they allow your machines to run desktop flows autonomously without human interaction in unattended mode.
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-A process capacity, or legacy unattended RPA capacity, can be allocated to a machine.
+A Process capacity, or legacy Unattended RPA capacity, can be allocated to a machine, it then becomes an unattended bot. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs multiple unattended bots to handle the runs.
 
 |Consuming object|Description|Consumption mode|
 |----|--------------------|----|
