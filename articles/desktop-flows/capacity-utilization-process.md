@@ -39,22 +39,28 @@ The **Process & Unattended RPA capacity overview** pie chart helps you understan
 |![Legend color - Allocated as unattended bots to my machines](media/capacity-utilization/legend-used-by-unattended-machines.png)|Allocated as unattended bots to my machines|Compliant capacity allocated to machines, which the user owns or which are shared with them.|
 |![Legend color - Allocated to my cloud flows](media/capacity-utilization/legend-allocated-to-my-cloud-flows.png)|Allocated to my cloud flows|Compliant capacity allocated to cloud flows, which the user owns or which are shared with them.|
 |![Legend color - Utilized by other makers](media/capacity-utilization/legend-process-utilized-by-other-makers.png)|Utilized by other makers|Compliant capacity allocated to objects, which the user doesn't own and which weren't shared with them.|
-|![Legend color - Available capacity](media/capacity-utilization/legend-available-capacity.png)|Available capacity|Available capacity for new unattended bots on machines or new process plan on cloud flows.|
-|![Legend color - My overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Sum of capacities over-allocated to machines and to cloud flows, which the user owns or which are shared with them.|
+|![Legend color - Available capacity](media/capacity-utilization/legend-available-capacity.png)|Available capacity|Available capacity for new unattended bots on machines and new process plan on cloud flows.|
+|![Legend color - My overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Sum of capacities over-allocated to machines or/and to cloud flows, which the user owns or which are shared with them.|
 |![Legend color - Overage by other makers](media/capacity-utilization/legend-overage-by-other-makers.png)|Overage by other makers|Sum of capacities over-allocated to objects, which the user doesn't own and which weren't shared with them.|
 
 
 ## Process and Unattended RPA capacity insights
 
-The **Unattended capacity insights** card informs you of operation health and gives recommendations when there are compliance issues.
+The **Process and Unattended RPA capacity insights** card informs you of operation health and gives recommendations when there are compliance issues.
 
 ![Unattended capacity insight](media/capacity-utilization/unattended-capacity-insight-2.png)
 
 |Badge|Message|Insight|
 |----|--------------------|----|
-|**Sufficient capacity**|There's available capacity for new unattended machines.|Scale-up possible in the future.|
-|**Fully utilized**|There's no more capacity for new unattended machines.|The capacity utilization rate is optimal at 100% but there's no room for scaling-up.|
-|**Capacity overage**|There's some over-allocated capacity to unattended machines in the environment.|Uncompliant capacity usage exceeding environment capacity.|
+|**Sufficient capacity**|There's available capacity for new unattended machines or for new process plans on cloud flows.|Scale-up possible in the future.|
+|**Fully utilized**|There's no more capacity for new unattended bots or for new process plans on cloud flows.|The capacity utilization rate is optimal at 100% but there's no room for scaling-up.|
+|**Capacity overage**|User has over-allocated capacity to their machines or/and to their cloud flows.	|Uncompliant capacity usage exceeding environment capacity.|
+
+## Process and Unattended RPA utilization details
+
+In this section, you learn how to oversee and manage all machines you have access to (as owner or through sharing).
+
+
 
 ## Capacity overage
 
