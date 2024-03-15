@@ -13,23 +13,24 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-The **Process and Unattended RPA capacity utilization page** provides you with insights into how your Process capacity (or legacy Unattended RPA capacity) is being used within your environment. As a reminder, within the Power Automate portal each Process capacity is based on a purchased [Process license](/power-platform/admin/power-automate-licensing/types) and each legacy Unattended RPA capacity is based on an [Unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on). Those capacities are [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and they allow your machines to run desktop flows autonomously without human interaction in unattended mode.
+The **Process and Unattended RPA capacity utilization page** provides you with insights into how your Process capacity (or legacy Unattended RPA capacity) is being used within your environment. As a reminder, within the Power Automate portal each Process capacity is based on a purchased [Process license](/power-platform/admin/power-automate-licensing/types) and each legacy Unattended RPA capacity is based on an [Unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on). Those capacities are [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and they allow your machines to run desktop flows in unattended mode (autonomously without human interaction).
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-A Process capacity, or legacy Unattended RPA capacity, can be allocated to a machine, it then becomes an unattended bot. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs multiple unattended bots to handle the runs.
+A Process capacity, or legacy Unattended RPA capacity, can be **allocated to a machine or to a cloud flow**. When allocated to a machine, it becomes an **unattended bot**. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform. When allocated to a cloud flow, it becomes a **Process plan** based on which the cloud flow is licensed to run premium actions independantly from the user license. 
 
-|Consuming object|Description|Consumption mode|
-|----|--------------------|----|
-|[Machine](manage-machines.md)|Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run simultaneously.|Capacity is autoallocated to the machine at unattended desktop flow runtime.|
+|Before allocation|Allocation object|After allocation|Description|Allocation mode|
+|----|--------------------|----|----|----|
+|Process capacity|[Machine](manage-machines.md)|Unattended bot|Every unattended bot on a machine allows it to carry out an additional unattended desktop flow run simultaneously.|Capacity is auto-allocated to the machine at unattended desktop flow runtime or can be manually allocated by the user.|
+|Process capacity|Cloud flow|Process plan|Every Process plan allocated to a cloud flow allows it to run premium actions independantly from the user license.|Capacity is manually allocated to the cloud flow by the user.|
 
 > [!NOTE]
 >
-> Process capacity and unattended RPA capacity have been combined in a single capacity pool and have exactly the same role within the Power Automate platform.
+> Process capacity and Unattended RPA capacity have been combined in a single capacity pool and can be used interchangeably within the Power Automate platform. They have exactly the same value and role.
 
-## Unattended RPA capacity overview
+## Process & Unattended RPA capacity overview
 
-The **Unattended RPA capacity overview** pie chart helps you understand the capacity consumption within the environment, lets you know if there's still capacity to scale-up in the future, and alerts you when the utilized capacity is exceeding environment capacity (= overage).
+The **Process & Unattended RPA capacity overview** pie chart helps you understand the capacity consumption within the environment, lets you know if there's still capacity to scale-up in the future, and alerts you when the utilized capacity is exceeding environment capacity (= overage).
 
 ![Process capacity overview](media/capacity-utilization/unattended-capacity-overview.png)
 
