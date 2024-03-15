@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-The **Capacity utilization page** provides you with insights into how your hosted RPA capacity and process capacity (or legacy unattended RPA capacity) are being used within your environment. As a reminder, within the Power Automate platform each capacity is based on a purchased add-on or license. It's [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows specific Power Automate objects to carry out specific operations.
+The **Capacity utilization page** provides you with insights into how your Hosted RPA capacity and Process capacity (or legacy Unattended RPA capacity) are being used within your environment. As a reminder, within the Power Automate platform each capacity is based on a purchased add-on or license. It's [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows specific Power Automate objects to carry out specific operations.
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
@@ -28,7 +28,7 @@ You manage the following capacity within the capacity utilization page.
 
 > [!NOTE]
 >
-> The Process capacity and the unattended RPA capacity (legacy) have been combined in a single pool. They can seamlessly be utilized by machines.
+> The Process capacity and the Unattended RPA capacity (legacy) have been combined in a single pool. They can seamlessly be utilized by machines.
 
 ## Capacity utilization overview page
 
@@ -47,11 +47,11 @@ The two pie charts underscore the point that, within a given environment, capaci
 
 ### Hosted RPA capacity utilization
 
-The hosted RPA capacity allows you to run desktop flows with zero infrastructure. It's allocated to hosted machines or committed to hosted machine groups. More information: [Hosted RPA capacity utilization](capacity-utilization-hosted.md)
+The Hosted RPA capacity allows you to run desktop flows with zero infrastructure. It's allocated to hosted machines or committed to hosted machine groups. More information: [Hosted RPA capacity utilization](capacity-utilization-hosted.md)
 
 ### Process (or legacy Unattended RPA) capacity utilization
 
-The process capacity (or legacy unattended RPA capacity) is needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run simultaneously. More information: [Process (or legacy Unattended RPA) capacity utilization](capacity-utilization-process.md)
+The Process capacity (or legacy Unattended RPA capacity) is needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run simultaneously. It can also be allocated to a cloud flow to license it independantly from user license. More information: [Process (or legacy Unattended RPA) capacity utilization](capacity-utilization-process.md)
 
 ## See also
 
