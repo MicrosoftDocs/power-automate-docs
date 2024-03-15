@@ -86,23 +86,23 @@ Machines identified in overage are not compliant :
 
 ### How to fix Process and Unattended RPA capacity overage?
 
-When some unattended machines are in overage, the **Fix capacity button** appears in the **Unattended capacity insights** card.
+When some unattended machines are in overage, the **Fix capacity button** appears in the **Process & Unattended RPA capacity insights** card.
 
 |Fix capacity - Button|
 |-------|
-|![Fix process capacity button](media/capacity-utilization/fix-process-capacity-button.png)|
+|![Fix process capacity button](media/capacity-utilization/fix-process-capacity-button-2.png)|
 
 It provides corrective actions.
 
 |Fix capacity - Corrective actions|
 |-|
-|![Process fix capacity actions](media/capacity-utilization/unattended-fix-capacity.png)|
+|![Process fix capacity actions](media/capacity-utilization/unattended-fix-capacity-2.png)|
 
 The **Request capacity** action submits a request to the tenant administrator for the consideration of assigning capacity to the environment.
 
 |Fix capacity - Request capacity|
 |-|
-|![Process request capacity](media/capacity-utilization/unattended-capacity-request.png)|
+|![Process request capacity](media/capacity-utilization/unattended-capacity-request-2.png)|
 
 > [!NOTE]
 > 
