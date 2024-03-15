@@ -60,7 +60,7 @@ The **Process and Unattended RPA capacity insights** card informs you of operati
 
 In this section, you learn how to oversee and manage all machines you have access to (as owner or through sharing).
 
-
+![Process utilization details - Machine list](media/capacity-utilization/process-details-machines.png)
 
 ## Capacity overage
 
