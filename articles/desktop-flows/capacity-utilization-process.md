@@ -76,11 +76,15 @@ Capacity overage in an environment occurs when the capacity utilized by the unat
 
 ### Machine in overage
 
-Machines identified in overage are not compliant.
+Machines identified in overage are not compliant :
 
 ![Machine overage](media/capacity-utilization/machine-overage.png)
 
-### How to fix process and unattended RPA capacity overage?
+> [!NOTE]
+>
+> A machine can have a subset of its unattended bots identified as in overage (= uncompliant)
+
+### How to fix Process and Unattended RPA capacity overage?
 
 When some unattended machines are in overage, the **Fix capacity button** appears in the **Unattended capacity insights** card.
 
