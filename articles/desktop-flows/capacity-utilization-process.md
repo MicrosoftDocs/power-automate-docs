@@ -48,7 +48,7 @@ The **Process & Unattended RPA capacity overview** pie chart helps you understan
 
 The **Unattended capacity insights** card informs you of operation health and gives recommendations when there are compliance issues.
 
-![Unattended capacity insight](media/capacity-utilization/unattended-capacity-insight.png)
+![Unattended capacity insight](media/capacity-utilization/unattended-capacity-insight-2.png)
 
 |Badge|Message|Insight|
 |----|--------------------|----|
