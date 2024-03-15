@@ -36,8 +36,9 @@ The **Process & Unattended RPA capacity overview** pie chart helps you understan
 
 |-|Legend|Description|
 |----|--------------------|----|
-|![Legend color - Used by unattended machines (last 30 days)](media/capacity-utilization/legend-used-by-unattended-machines.png)|Used by unattended machines (last 30 days)|Compliant capacity allocated to machines within the environment.|
-|![Legend color - Available capacity](media/capacity-utilization/legend-available-capacity.png)|Available capacity|Available capacity for new unattended machines.|
+|![Legend color - Allocated as unattended bots to my machines](media/capacity-utilization/legend-used-by-unattended-machines.png)|Allocated as unattended bots to my machines|Compliant capacity allocated to standard machines, which the user owns or which are shared with them.|
+|![Legend color - Allocated to my cloud flows](media/capacity-utilization/legend-used-by-unattended-machines.png)|Allocated to my cloud flows|Compliant capacity allocated to cloud flows, which the user owns or which are shared with them.|
+|![Legend color - Available capacity](media/capacity-utilization/legend-available-capacity.png)|Available capacity|Available capacity for new unattended bots on machines or new process plan on cloud flows.|
 |![Legend color - Overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Capacity over-allocated to unattended machines within the environment.|
 
 > [!NOTE]
