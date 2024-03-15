@@ -39,7 +39,7 @@ The overview page provides insights for **Hosted RPA capacity** and **Process ca
 - A breakdown of each capacity utilization (user's consumption / others' consumption / capacity available / capacity in overage).
 - Insights and recommendation on compliance issues.
 
-![Capacity Utilization overview page](media/capacity-utilization/capacity-utilization-MVP-overview.png)
+![Capacity Utilization overview page](media/capacity-utilization/capacity-utilization-overview.png)
 
 The two pie charts underscore the point that, within a given environment, capacity is a limited resource that users are sharing, necessitating prioritization of use cases.
 
