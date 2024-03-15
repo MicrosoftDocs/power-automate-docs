@@ -72,7 +72,13 @@ In this section, you learn how to oversee and manage all machines you have acces
 
 Capacity overage in an environment occurs when the capacity utilized by the unattended bots on machines and the process plans on cloud flows surpasses the assigned capacity of the environment. In such instances, specific machines and/or cloud flows might be identified as exceeding capacity. To return to compliance, it's important to promptly rectify the situation.
 
-![Process overage](media/capacity-utilization/overage-unattended.png)
+![Process overage](media/capacity-utilization/overage-unattended-2.png)
+
+### Machine in overage
+
+Machines identified in overage are not compliant.
+
+![Machine overage](media/capacity-utilization/machine-overage.png)
 
 ### How to fix process and unattended RPA capacity overage?
 
