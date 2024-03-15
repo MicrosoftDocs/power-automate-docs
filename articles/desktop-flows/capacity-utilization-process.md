@@ -36,11 +36,11 @@ The **Process & Unattended RPA capacity overview** pie chart helps you understan
 
 |-|Legend|Description|
 |----|--------------------|----|
-|![Legend color - Allocated as unattended bots to my machines](media/capacity-utilization/legend-used-by-unattended-machines.png)|Allocated as unattended bots to my machines|Compliant capacity allocated to standard machines, which the user owns or which are shared with them.|
-|![Legend color - Allocated to my cloud flows](media/capacity-utilization/legend-process-utilized-by-other-makers.png)|Allocated to my cloud flows|Compliant capacity allocated to cloud flows, which the user owns or which are shared with them.|
-|![Legend color - Utilized by other makers](media/capacity-utilization/legend-process-utilized-by-other-makers.png)|Allocated to my cloud flows|Compliant capacity allocated to cloud flows, which the user owns or which are shared with them.|
+|![Legend color - Allocated as unattended bots to my machines](media/capacity-utilization/legend-used-by-unattended-machines.png)|Allocated as unattended bots to my machines|Compliant capacity allocated to machines, which the user owns or which are shared with them.|
+|![Legend color - Allocated to my cloud flows](media/capacity-utilization/legend-allocated-to-my-cloud-flows.png)|Allocated to my cloud flows|Compliant capacity allocated to cloud flows, which the user owns or which are shared with them.|
+|![Legend color - Utilized by other makers](media/capacity-utilization/legend-process-utilized-by-other-makers.png)|Utilized by other makers|Compliant capacity allocated or committed to objects, which the user doesn't own and which weren't shared with them.|
 |![Legend color - Available capacity](media/capacity-utilization/legend-available-capacity.png)|Available capacity|Available capacity for new unattended bots on machines or new process plan on cloud flows.|
-|![Legend color - Overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Capacity over-allocated to unattended machines within the environment.|
+|![Legend color - My overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Sum of capacities over-allocated to machines and to cloud flows, which the user owns or which are shared with them.|
 
 > [!NOTE]
 >
