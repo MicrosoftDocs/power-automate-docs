@@ -62,9 +62,15 @@ In this section, you learn how to oversee and manage all machines you have acces
 
 ![Process utilization details - Machine list](media/capacity-utilization/process-details-machines-2.png)
 
+> [!NOTE]
+>
+> By clicking on a machine, you can edit its unattended bots setting and its auto-allocation setting.
+> Machines can be, when necessary (in case of overage), prioritized based on their unattended runs.
+
+
 ## Capacity overage
 
-Capacity overage in an environment occurs when the capacity utilized by unattended machines surpasses the assigned capacity of the environment. To return to compliance, it's important to promptly rectify the situation.
+Capacity overage in an environment occurs when the capacity utilized by the unattended bots on machines and the process plans on cloud flows surpasses the assigned capacity of the environment. In such instances, specific machines and/or cloud flows might be identified as exceeding capacity. To return to compliance, it's important to promptly rectify the situation.
 
 ![Process overage](media/capacity-utilization/overage-unattended.png)
 
