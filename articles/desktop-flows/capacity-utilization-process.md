@@ -66,6 +66,7 @@ In this section, you learn how to oversee and manage all machines you have acces
 >
 > By clicking on a machine, you can edit its unattended bots setting and its auto-allocation setting.
 > Machines can be, when necessary (in case of overage), prioritized based on their unattended runs.
+> Cloud flow using process capacity will be added to the page in a future release
 
 
 ## Capacity overage
@@ -110,7 +111,15 @@ The **Request capacity** action submits a request to the tenant administrator fo
 > This preset value ensures that when the additional capacity is assigned to the environment, the user who made the request have their machines or returned back to compliance.
 > If the user submits a smaller request, when the additional requested capacity is provisioned to the environment, there’s no guarantee that their own machines will return to compliance. The extra capacity might be allocated to other in-overage machines owned by different users.
 
-### How to fix Process and Unattended RPA capacity overage?
+### What are the rules governing which objects are identified as in overage?
+
+When the total Process capacity assigned to an environment is inferior to the combined capacity allocated to machines and cloud flows: the overage is identified, on machines and cloud flows indistinctively, starting from the most recently created allocation to the oldest.
+
+## Permissions required to view and edit capacity allocation
+
+To view and edit capacity allocation, you need a security role with privileges to the **Flow Capacity Assignment** table. For example, the Environment Maker role can view and edit allocation of hosted capacity.
+
+![Flow Capacity Assignment](media/capacity-utilization/flow-capacity-assignment.png)
 
 
 ## See also
