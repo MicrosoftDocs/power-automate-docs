@@ -261,7 +261,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 ***Value***
 
-- **1**: Power Automate for desktop won't upload detailed action logs for the respective run of the flow's run history, after a desktop flow runs through the console.
+- **1**: Power Automate for desktop won't upload detailed action logs for the respective run of the flow's run history.
 
 ## Configure or disable desktop flow action logs per environment (preview)
 
