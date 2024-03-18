@@ -21,10 +21,36 @@ As a reminder, within the Power Automate portal :
 
 A Process capacity, or legacy Unattended RPA capacity, can be **allocated to a machine or to a cloud flow**. When allocated to a cloud flow, it becomes a **Process plan** based on which the cloud flow is licensed to run premium actions independantly from the user license. 
 
-## Using Process capacity for Unattended RPA
+## Allocating Process capacity to a machine
 
 When a Process capacity is allocated to a machine, it becomes an **unattended bot**. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform. 
 
+To allocated a Process capacity to a machine, go to the machine details page, click on Settings :
+
+![Unattended capacity insight](media/capacity-utilization/machine-page-0-bot.png)
+
+Check how many bots your machine can support and if you have available Process capacity :
+
+![Unattended capacity insight](media/capacity-utilization/machine-page-setting-0-bot.png)
+
+> [!NOTE]
+>
+> The "Machine max bot bot supported" parameter depends on your machine and its OS. The maximum value this parameter can reach is 10 (for some Windows Servers)
+> The "Available capacity in the environment" inform you about how many unattended bots can still be created. Keep in mind that the Process capacity is a shared resources between all users within an environment and so use only what you need
+> For a global overview on how the Process capacity is used within the environment, use the "Manage capacity utilization" link (it will also provide the option to request more capacity)
+> The "Enable auto-allocation" parameter, when turned on, allows unattended bots to automatically be allocated to a machine when an unattended run requires it (multiple unattended bots can be auto-allocated in case on simulateneous unattended runs)
+
+![Unattended capacity insight](media/capacity-utilization/machine-page-setting-1-bot.png)
+
+You now have a machine that can perform unattended RPA :
+
+![Unattended capacity insight](media/capacity-utilization/machine-page-1-bot.png)
+
+## Allocating Process capacity to a cloud flow
+
+When a Process capacity is allocated to a cloud flow, it becomes a **Process plan** based on which the cloud flow is licensed to run premium actions independantly from the user license. 
+
+To allocated a Process capacity to a cloud flow, go to the cloud flow details page, click on Settings :
 
 
 |Before allocation|Consuming object|After allocation|Description|Allocation mode|
@@ -41,15 +67,6 @@ When a Process capacity is allocated to a machine, it becomes an **unattended bo
 The **Process & Unattended RPA capacity overview** pie chart helps you understand the capacity consumption within the environment, lets you know if there's still capacity to scale-up in the future, and alerts you when the utilized capacity is exceeding environment capacity (= overage).
 
 ![Process capacity overview](media/capacity-utilization/unattended-capacity-overview.png)
-
-|-|Legend|Description|
-|----|--------------------|----|
-|![Legend color - Allocated as unattended bots to my machines](media/capacity-utilization/legend-used-by-unattended-machines.png)|Allocated as unattended bots to my machines|Compliant capacity allocated to machines, which the user owns or which are shared with them.|
-|![Legend color - Allocated to my cloud flows](media/capacity-utilization/legend-allocated-to-my-cloud-flows.png)|Allocated to my cloud flows|Compliant capacity allocated to cloud flows, which the user owns or which are shared with them.|
-|![Legend color - Utilized by other makers](media/capacity-utilization/legend-process-utilized-by-other-makers.png)|Utilized by other makers|Compliant capacity allocated to objects, which the user doesn't own and which weren't shared with them.|
-|![Legend color - Available capacity](media/capacity-utilization/legend-available-capacity.png)|Available capacity|Available capacity for new unattended bots on machines and new process plan on cloud flows.|
-|![Legend color - My overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Sum of capacities over-allocated to machines or/and to cloud flows, which the user owns or which are shared with them.|
-|![Legend color - Overage by other makers](media/capacity-utilization/legend-overage-by-other-makers.png)|Overage by other makers|Sum of capacities over-allocated to objects, which the user doesn't own and which weren't shared with them.|
 
 
 ## Process and Unattended RPA capacity insights
