@@ -64,7 +64,7 @@ Change the plan used by the flow to the Process plan and save :
 
 The cloud flow is now independant from the user license :
 
-![Cloud flow page - Settings - Process plan](media/capacity-utilization/cloud-flow-flow-plan.png)
+![Cloud flow page - Process plan](media/capacity-utilization/cloud-flow-flow-plan.png)
 
 > [!NOTE]
 >
