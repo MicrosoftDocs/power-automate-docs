@@ -26,52 +26,6 @@ To open the Power Automate troubleshoot tool:
 >[!NOTE]
 >You need to have admin privileges to open the troubleshoot tool from Power Automate machine runtime.  
 
-## Resolve failed connection between Power Automate components
-
-On startup, Power Automate shows the following error message:
-
-**Connection error: The connection between Power Automate components couldn't be established. A required named pipe is in use by another application. Contact your IT administrator.**
-
-This issue could occur because there are two (2) Power Automate for desktop applications installed on the machine (one installed from Microsoft Store and one from the MSI installer), and each one is on a different version. This is not a supported scenario due to conflicts between the installations.
-
-If your version of Power Automate for desktop is **2.34.176.23181 or higher** (Microsoft Store version **10.0.7118.0 or higher**), then follow the steps below to uninstall either one of the two apps and resolve the issue:
-
-1. Go to Windows Start Menu > Settings > Apps > Installed apps
-1. Search for **Power Automate**
-1. Uninstall either one of the two – either Power Automate (Microsoft Store installation) or Power Automate for desktop (MSI installation)
-
-If your version of Power Automate for desktop is **less than 2.34.176.23181** (Microsoft Store version **less than 10.0.7118.0**), then this error may occur because another process is running a named pipes server in the same machine. This process probably runs with elevated rights using the localhost endpoint. As a result, it blocks other applications from using the endpoint.
-
-To identify whether another process is indeed the issue:
-
-- Close Power Automate and use Windows Task Manager to ensure that its process isn't still running.
-
-- Download the [Sysinternals Suite](/sysinternals/downloads/sysinternals-suite).
-
-- Extract the zip file to a folder on your desktop.
-
-- Run a command prompt session as administrator.
-
-- Navigate to the folder in which you've extracted Sysinternals.
-
-- Run the following command:
-
-  ``` CMD
-  handle net.pipe
-  ```
-
-  Running this command should display a list of processes that use named pipes and the address they listen to.
-
-  :::image type="content" source="media/troubleshoot/command-prompt.png" alt-text="Screenshot of the results of the handle net.pipe command.":::
-
-- Identify whether a process displaying the string **EbmV0LnBpcGU6Ly8rLw==** exists.
-
-- If such a process exists, stop the process identified in the previous step, and try again to launch Power Automate.
-
-As a permanent fix, you can stop the process causing the issue from running. Alternatively,  if it's an internal process, you can change it to use a more specific endpoint, such as **net.pipe://localhost/something**.
-
-If none of the above is possible, specify Power Automate executables to run as administrator. However, this solution may not solve the issue in all cases, and it will cause a UAC prompt to appear each time.
-
 ## Change the on-premises Service account
 
 The Power Automate service (**UIFlowService**) communicates with Power Automate cloud services for machine registration and running desktop flows.
