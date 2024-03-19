@@ -15,21 +15,21 @@ ms.topic: conceptual
 >
 > Process capacity and Unattended RPA capacity have been combined in a single capacity pool and can be used interchangeably within the Power Automate platform. They have exactly the same value and role.
 
-As a reminder, within the Power Automate portal :
-- each Process capacity is based on a purchased [Process license](/power-platform/admin/power-automate-licensing/types)
+As a reminder, within the Power Automate portal:
+- each Process capacity is based on a purchased [Process license](/power-platform/admin/power-automate-licensing/types).
 - each legacy Unattended RPA capacity is based on an [Unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on).
 
-A Process capacity, or legacy Unattended RPA capacity, can be **allocated to a machine or to a cloud flow**. When allocated to a cloud flow, it becomes a **Process plan** based on which the cloud flow is licensed to run premium actions independantly from the user license. 
+A Process capacity, or legacy Unattended RPA capacity, can be **allocated to a machine or to a cloud flow**. When allocated to a cloud flow, it becomes a **Process plan** based on which the cloud flow is licensed to run premium actions independently from the user license. 
 
 ## Allocating Process capacity to a machine
 
 When a Process capacity is allocated to a machine, it becomes an **unattended bot**. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform. 
 
-To allocated a Process capacity to a machine, go to the machine details page, click on Settings :
+To allocate a Process capacity to a machine, go to the machine details page, click on Settings:
 
 ![Machine page - No unattended bot](media/capacity-utilization/machine-page-0-bot.png)
 
-Check how many bots your machine can support and if you have available Process capacity :
+Check how many bots your machine can support and if you have available Process capacity:
 
 ![Machine page - Settings - No unattended bot](media/capacity-utilization/machine-page-setting-0-bot.png)
 
@@ -42,15 +42,15 @@ Check how many bots your machine can support and if you have available Process c
 
 ![Machine page - Settings - One unattended bot](media/capacity-utilization/machine-page-setting-1-bot.png)
 
-You now have a machine that can perform unattended RPA :
+You now have a machine that can perform unattended RPA:
 
 ![Machine page - One unattended bot](media/capacity-utilization/machine-page-1-bot.png)
 
 ## Allocating Process capacity to a cloud flow
 
-When a Process capacity is allocated to a cloud flow, it becomes a **Process plan** based on which the cloud flow is licensed to run premium actions independantly from the user license. 
+When a Process capacity is allocated to a cloud flow, it becomes a **Process plan** based on which the cloud flow is licensed to run premium actions independently from the user license. 
 
-To allocated a Process capacity to a cloud flow, go to the cloud flow details page, click on Edit :
+To allocate a Process capacity to a cloud flow, go to the cloud flow details page, click on Edit:
 
 ![Cloud flow page - User plan](media/capacity-utilization/cloud-flow-user-plan.png)
 
@@ -58,11 +58,11 @@ The cloud flow is by default based the user plan:
 
 ![Cloud flow page - Settings - User plan](media/capacity-utilization/cloud-flow-setting-user-plan.png)
 
-Change the plan used by the flow to the Process plan and save : 
+Change the plan used by the flow to the Process plan and save: 
 
 ![Cloud flow page - Settings - Process plan](media/capacity-utilization/cloud-flow-setting-flow-plan.png)
 
-The cloud flow is now independant from the user license :
+The cloud flow is now independent from the user license:
 
 ![Cloud flow page - Process plan](media/capacity-utilization/cloud-flow-flow-plan.png)
 
