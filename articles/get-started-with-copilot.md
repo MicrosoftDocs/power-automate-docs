@@ -104,7 +104,7 @@ This section describes some example scenarios of how you can interact with Copil
 | When an item is created in SharePoint, send me a mobile notification.  |  </li><li>Edit the flow with this prompt: **I want to send the item title to notification.**<br/></li><li>Edit the flow with this prompt: **I don’t want to receive mobile notification. Send me an email instead.**  |
 
 > [!TIP]
-> For more examples you can try out, go to the [Power Platform Prompt Library](https://pnp.github.io/powerplatform-prompts/?filters=power%20automate%20copilot).
+> For more examples you can try out, go to the [Power Platform Prompt Library](https://aka.ms/prompts/powerautomate-copilot).
 
 ## Edit a flow using the designer with copilot capabilities
 
