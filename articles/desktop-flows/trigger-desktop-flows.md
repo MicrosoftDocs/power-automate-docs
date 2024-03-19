@@ -84,5 +84,6 @@ To trigger a desktop flow from a cloud flow:
 ## Known limitations
 
 - We currently support up to 70 desktop flows runs per minute for every connection.
+- Disabling the **Asynchronous Pattern** under settings of a 'Run a flow built with Power Automate for desktop' action in cloud flow is not supported.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
