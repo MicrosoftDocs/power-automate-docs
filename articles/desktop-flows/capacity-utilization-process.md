@@ -17,12 +17,12 @@ The **Process and Unattended RPA capacity utilization page** provides you with i
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-A Process capacity, or legacy Unattended RPA capacity, can be **allocated to a machine or to a cloud flow**. When allocated to a machine, it becomes an **unattended bot**. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform. When allocated to a cloud flow, it becomes a **Process plan** based on which the cloud flow is licensed to run premium actions independantly from the user license. 
+A Process capacity, or legacy Unattended RPA capacity, can be **allocated to a machine or to a cloud flow**. When allocated to a machine, it becomes an **unattended bot**. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform. When allocated to a cloud flow, it becomes a **Process plan** based on which the cloud flow is licensed to run premium actions independently from the user license. 
 
 |Before allocation|Consuming object|After allocation|Description|Allocation mode|
 |----|--------------------|----|----|----|
 |Process capacity|[Machine](manage-machines.md)|Unattended bot|Every unattended bot on a machine allows it to carry out an additional unattended desktop flow run simultaneously.|Capacity is auto-allocated to the machine at unattended desktop flow runtime or can be manually allocated by the user.|
-|Process capacity|Cloud flow|Process plan|Every Process plan allocated to a cloud flow allows it to run premium actions independantly from the user license.|Capacity is manually allocated to the cloud flow by the user.|
+|Process capacity|Cloud flow|Process plan|Every Process plan allocated to a cloud flow allows it to run premium actions independently from the user license.|Capacity is manually allocated to the cloud flow by the user.|
 
 > [!NOTE]
 >
@@ -77,7 +77,7 @@ Capacity overage in an environment occurs when the capacity utilized by the unat
 
 ### Machine in overage
 
-Machines identified in overage are not compliant :
+Machines identified in overage aren't compliant:
 
 ![Machine overage](media/capacity-utilization/machine-overage.png)
 
