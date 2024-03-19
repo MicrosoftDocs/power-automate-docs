@@ -51,7 +51,7 @@ The Hosted RPA capacity allows you to run desktop flows with zero infrastructure
 
 ### Process (or legacy Unattended RPA) capacity utilization
 
-The Process capacity (or legacy Unattended RPA capacity) is needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run simultaneously. It can also be allocated to a cloud flow to license it independantly from user license. More information: [Process (or legacy Unattended RPA) capacity utilization](capacity-utilization-process.md)
+The Process capacity (or legacy Unattended RPA capacity) is needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run simultaneously. It can also be allocated to a cloud flow to license it independently from user license. More information: [Process (or legacy Unattended RPA) capacity utilization](capacity-utilization-process.md)
 
 ## See also
 
