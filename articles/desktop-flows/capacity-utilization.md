@@ -21,10 +21,10 @@ You manage the following capacity within the capacity utilization page:
 
 |Capacity|Consuming Power Automate object|Consumption mode|Operation enabled|
 |----|--------------------|----|----|
-|Hosted RPA capacity|hosted machine|[Autoallocation](# "Hosted RPA capacity is autoallocated to the hosted machine at its creation.")|To be created, each hosted machine requires a hosted RPA capacity allocated.|
-|Hosted RPA capacity|hosted machine group|Manual allocation of committed bots|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot during autoscaling.|
-|Process capacity (or legacy unattended RPA capacity)|machine|[Autoallocation](# "Capacity is autoallocated to the machine at unattended desktop flow run time.")|Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run simultaneously.|
-|Process capacity|cloud flow|Manual allocation|Every capacity allocated to a cloud flow enables it, along with all its associated cloud flows, to use premium connectors and execute actions up to a daily limit of 250k Power Platform Requests (stackable limit).|
+|Hosted RPA capacity|Hosted machine|[Autoallocation](# "Hosted RPA capacity is autoallocated to the hosted machine at its creation.")|To be created, each hosted machine requires a hosted RPA capacity allocated.|
+|Hosted RPA capacity|Hosted machine group|Manual allocation of committed bots|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot during autoscaling.|
+|Process capacity (or legacy unattended RPA capacity)|Machine|[Autoallocation](# "Capacity is autoallocated to the machine at unattended desktop flow run time.")|Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run simultaneously.|
+|Process capacity|Cloud flow|Manual allocation|Every capacity allocated to a cloud flow enables it, along with all its associated cloud flows, to use premium connectors and execute actions up to a daily limit of 250k Power Platform Requests (stackable limit).|
 
 > [!NOTE]
 >

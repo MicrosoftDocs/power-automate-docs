@@ -97,7 +97,7 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 
 To trigger desktop flows in unattended mode on your machine, you need some unattended bots on the machine. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform.
 
-To create unattended bots, allocate process capacity or unattended RPA capacity to your machine. Learn how to [allocate a Process capacity as an unattended bot](capacity-process.md)  on a machine.
+To create unattended bots, allocate process capacity or unattended RPA capacity to your machine. Learn how to [allocate process capacity as an unattended bot](capacity-process.md) on a machine.
 
 ## Maintenance mode for machines
 

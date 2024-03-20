@@ -13,7 +13,7 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-The Process and Unattended RPA capacity utilization page provides you with insights into how your process capacity (or legacy unattended RPA capacity) is being used within your environment. As a reminder, within the Power Automate portal each Process capacity is based on a purchased [process license](/power-platform/admin/power-automate-licensing/types) and each legacy Unattended RPA capacity is based on an [unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on). Those capacities are [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) by the admin.
+The Process and Unattended RPA capacity utilization page provides you with insights into how your process capacity or legacy unattended RPA capacity is being used within your environment. As a reminder, within the Power Automate portal each Process capacity is based on a purchased [process license](/power-platform/admin/power-automate-licensing/types) and each legacy Unattended RPA capacity is based on an [unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on). Those capacities are [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) by the admin.
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
@@ -42,7 +42,6 @@ The **Process & Unattended RPA capacity overview** pie chart helps you understan
 |![Legend color - Available capacity](media/capacity-utilization/legend-available-capacity.png)|Available capacity|Available capacity for new unattended bots on machines and new process plan on cloud flows.|
 |![Legend color - My overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Sum of capacities over-allocated to machines or/and to cloud flows, which the user owns or which are shared with them.|
 |![Legend color - Overage by other makers](media/capacity-utilization/legend-overage-by-other-makers.png)|Overage by other makers|Sum of capacities over-allocated to objects, which the user doesn't own and which weren't shared with them.|
-
 
 ## Process and Unattended RPA capacity insights
 
