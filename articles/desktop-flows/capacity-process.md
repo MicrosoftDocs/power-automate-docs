@@ -19,7 +19,7 @@ As a reminder, within the Power Automate portal:
 - each Process capacity is based on a purchased [Process license](/power-platform/admin/power-automate-licensing/types).
 - each legacy Unattended RPA capacity is based on an [Unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on).
 
-A Process capacity, or legacy Unattended RPA capacity, can be **allocated to a machine or to a cloud flow**. When allocated to a cloud flow, it becomes a **Process plan** based on which the cloud flow is licensed to run premium actions independently from the user license. 
+A Process capacity, or legacy Unattended RPA capacity, can be **allocated to a machine or to a cloud flow**.
 
 ## Allocating Process capacity to a machine
 
