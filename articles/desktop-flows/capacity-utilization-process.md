@@ -105,7 +105,7 @@ The **Request capacity** action submits a request to the tenant administrator fo
 |![Process request capacity](media/capacity-utilization/unattended-capacity-request-2.png)|
 
 > [!NOTE]
-> 
+>
 > - The preset value in the request capacity modal dialog is equal to the total overage value in the environment (the user's overage and the other users' overage).
 > - This preset value ensures that when the additional capacity is assigned to the environment, the user who made the request have their machines or returned back to compliance.
 > - If the user submits a smaller request, when the additional requested capacity is provisioned to the environment, there’s no guarantee that their own machines will return to compliance. The extra capacity might be allocated to other in-overage machines owned by different users.
