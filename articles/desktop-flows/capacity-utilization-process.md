@@ -53,7 +53,7 @@ The **Process and Unattended RPA capacity insights** card informs you of operati
 |----|--------------------|----|
 |**Sufficient capacity**|There's available capacity for new unattended machines or for new process plans on cloud flows.|Scale-up possible in the future.|
 |**Fully utilized**|There's no more capacity for new unattended bots or for new process plans on cloud flows.|The capacity utilization rate is optimal at 100% but there's no room for scaling-up.|
-|**Capacity overage**|User has over-allocated capacity to their machines or/and to their cloud flows.	|Uncompliant capacity usage exceeding environment capacity.|
+|**Capacity overage**|User has over-allocated capacity to their machines or/and to their cloud flows.|Uncompliant capacity usage exceeding environment capacity.|
 
 ## Process and Unattended RPA utilization details
 
@@ -75,7 +75,7 @@ Capacity overage in an environment occurs when the capacity utilized by the unat
 
 ### Machine in overage
 
-Machines identified in overage aren't compliant:
+Machines identified in overage aren't compliant.
 
 ![Machine overage](media/capacity-utilization/machine-overage.png)
 
@@ -83,25 +83,19 @@ Machines identified in overage aren't compliant:
 >
 > A machine can have a subset of its unattended bots identified as in overage (= uncompliant)
 
-### How to fix Process and Unattended RPA capacity overage?
+### How to fix Process and Unattended RPA capacity overage
 
-When some unattended machines are in overage, the **Fix capacity button** appears in the **Process & Unattended RPA capacity insights** card.
+When some unattended machines are in overage, the **Fix capacity** button appears in the **Process & Unattended RPA capacity insights** card.
 
-|Fix capacity - Button|
-|-------|
-|![Fix process capacity button](media/capacity-utilization/fix-process-capacity-button-2.png)|
+![Fix process capacity button](media/capacity-utilization/fix-process-capacity-button-2.png)
 
-It provides corrective actions.
+The card provides potential corrective actions.
 
-|Fix capacity - Corrective actions|
-|-|
-|![Process fix capacity actions](media/capacity-utilization/unattended-fix-capacity-2.png)|
+![Process fix capacity actions](media/capacity-utilization/unattended-fix-capacity-2.png)
 
 The **Request capacity** action submits a request to the tenant administrator for the consideration of assigning capacity to the environment.
 
-|Fix capacity - Request capacity|
-|-|
-|![Process request capacity](media/capacity-utilization/unattended-capacity-request-2.png)|
+![Process request capacity](media/capacity-utilization/unattended-capacity-request-2.png)
 
 > [!NOTE]
 >
