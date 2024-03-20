@@ -64,9 +64,9 @@ In this section, you learn how to oversee and manage all machines you have acces
 
 > [!NOTE]
 >
-> By clicking on a machine, you can edit its unattended bots setting and its auto-allocation setting.
-> Machines can be, when necessary (in case of overage), prioritized based on their unattended runs.
-> Cloud flow using process capacity will be added to the page in a future release
+> - By clicking on a machine, you can edit its unattended bots setting and its auto-allocation setting.
+> - Machines can be, when necessary (in case of overage), prioritized based on their unattended runs.
+> - Cloud flow using process capacity will be added to the page in a future release
 
 
 ## Capacity overage
@@ -107,9 +107,9 @@ The **Request capacity** action submits a request to the tenant administrator fo
 
 > [!NOTE]
 > 
-> The preset value in the request capacity modal dialog is equal to the total overage value in the environment (the user's overage and the other users' overage).
-> This preset value ensures that when the additional capacity is assigned to the environment, the user who made the request have their machines or returned back to compliance.
-> If the user submits a smaller request, when the additional requested capacity is provisioned to the environment, there’s no guarantee that their own machines will return to compliance. The extra capacity might be allocated to other in-overage machines owned by different users.
+> - The preset value in the request capacity modal dialog is equal to the total overage value in the environment (the user's overage and the other users' overage).
+> - This preset value ensures that when the additional capacity is assigned to the environment, the user who made the request have their machines or returned back to compliance.
+> - If the user submits a smaller request, when the additional requested capacity is provisioned to the environment, there’s no guarantee that their own machines will return to compliance. The extra capacity might be allocated to other in-overage machines owned by different users.
 
 ### What are the rules governing which objects are identified as in overage?
 
