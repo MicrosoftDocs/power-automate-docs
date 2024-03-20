@@ -9,15 +9,15 @@ ms.reviewer: matp
 ms.topic: conceptual
 ---
 
-# Process and Unattended RPA capacity utilization (preview)
+# Process and unattended RPA capacity utilization (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-The **Process and Unattended RPA capacity utilization page** provides you with insights into how your Process capacity (or legacy Unattended RPA capacity) is being used within your environment. As a reminder, within the Power Automate portal each Process capacity is based on a purchased [Process license](/power-platform/admin/power-automate-licensing/types) and each legacy Unattended RPA capacity is based on an [Unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on). Those capacities are [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) by the admin.
+The Process and Unattended RPA capacity utilization page provides you with insights into how your process capacity (or legacy unattended RPA capacity) is being used within your environment. As a reminder, within the Power Automate portal each Process capacity is based on a purchased [process license](/power-platform/admin/power-automate-licensing/types) and each legacy Unattended RPA capacity is based on an [unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on). Those capacities are [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) by the admin.
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-A Process capacity, or legacy Unattended RPA capacity, can be **allocated to a machine or to a cloud flow**. When allocated to a machine, it becomes an **unattended bot**. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform. When allocated to a cloud flow, it becomes a **Process plan** based on which the cloud flow is licensed to run premium actions independently from the user license. 
+Process capacity or legacy unattended RPA capacity can be allocated to a machine or to a cloud flow. When allocated to a machine, it becomes an unattended bot. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform. When allocated to a cloud flow, it becomes a Process plan based on which the cloud flow is licensed to run premium actions independently from the user license.
 
 |Before allocation|Consuming object|After allocation|Description|Allocation mode|
 |----|--------------------|----|----|----|
@@ -64,10 +64,9 @@ In this section, you learn how to oversee and manage all machines you have acces
 
 > [!NOTE]
 >
-> By clicking on a machine, you can edit its unattended bots setting and its auto-allocation setting.
+> By selecting a machine, you can edit its unattended bots setting and its auto-allocation setting.
 > Machines can be, when necessary (in case of overage), prioritized based on their unattended runs.
 > Cloud flow using process capacity will be added to the page in a future release
-
 
 ## Capacity overage
 
@@ -120,7 +119,6 @@ When the total Process capacity assigned to an environment is inferior to the co
 To view and edit capacity allocation, you need a security role with privileges to the **Flow Capacity Assignment** table. For example, the Environment Maker role can view and edit allocation of hosted capacity.
 
 ![Flow Capacity Assignment](media/capacity-utilization/flow-capacity-assignment.png)
-
 
 ## See also
 
