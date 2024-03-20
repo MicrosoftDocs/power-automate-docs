@@ -6,6 +6,8 @@ ms.subservice: desktop-flow
 ms.date: 03/20/2024
 ms.author: cvassallo
 ms.reviewer: matp
+contributors:
+- DanaMartens
 ms.topic: conceptual
 ---
 
@@ -13,7 +15,7 @@ ms.topic: conceptual
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-The capacity utilization page provides you with insights into how your hosted robotic process automation (RPA) capacity, process capacity, or legacy unattended RPA capacity are being used within your environment. Within the Power Automate platform each capacity is based on a purchased add-on or license. It's [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows specific Power Automate objects to carry out specific operations.
+The capacity utilization page provides you with insights into how your hosted robotic process automation (RPA) capacity, process capacity, or legacy unattended RPA capacity are being used within your environment. Within the Power Automate platform, each capacity is based on a purchased add-on or license. It's [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows specific Power Automate objects to carry out specific operations.
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
@@ -23,7 +25,7 @@ You manage the following capacity within the capacity utilization page:
 |----|--------------------|----|----|
 |Hosted RPA capacity|Hosted machine|[Autoallocation](# "Hosted RPA capacity is autoallocated to the hosted machine at its creation.")|To be created, each hosted machine requires a hosted RPA capacity allocated.|
 |Hosted RPA capacity|Hosted machine group|Manual allocation of committed bots|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot during autoscaling.|
-|Process capacity (or legacy unattended RPA capacity)|Machine|[Autoallocation](# "Capacity is autoallocated to the machine at unattended desktop flow run time.")|Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run simultaneously.|
+|Process capacity (or legacy unattended RPA capacity)|Machine|[Autoallocation](# "Capacity is autoallocated to the machine at unattended desktop flow run time.")|Every capacity allocated to a machine allows it to carry out another unattended desktop flow run simultaneously.|
 |Process capacity|Cloud flow|Manual allocation|Every capacity allocated to a cloud flow enables it, along with all its associated cloud flows, to use premium connectors and execute actions up to a daily limit of 250k Power Platform Requests (stackable limit).|
 
 > [!NOTE]
@@ -51,7 +53,7 @@ The two pie charts underscore the point that, within a given environment, capaci
 
 ### Process (or legacy unattended RPA) capacity utilization
 
-[Process capacity or legacy unattended RPA capacity](capacity-utilization-process.md) are needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out an additional unattended desktop flow run simultaneously. It can also be allocated to a cloud flow to license it independently from user license.
+[Process capacity or legacy unattended RPA capacity](capacity-utilization-process.md) are needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out another unattended desktop flow run simultaneously. It can also be allocated to a cloud flow to license it independently from user license.
 
 ## See also
 
