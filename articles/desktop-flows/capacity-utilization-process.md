@@ -38,7 +38,7 @@ The **Process & Unattended RPA capacity overview** pie chart helps you understan
 |----|--------------------|----|
 |![Legend color - Allocated as unattended bots to my machines](media/capacity-utilization/legend-used-by-unattended-machines.png)|Allocated as unattended bots to my machines|Compliant capacity allocated to machines, which the user owns or which are shared with them.|
 |![Legend color - Allocated to my cloud flows](media/capacity-utilization/legend-allocated-to-my-cloud-flows.png)|Allocated to my cloud flows|Compliant capacity allocated to cloud flows, which the user owns or which are shared with them.|
-|![Legend color - Utilized by other makers](media/capacity-utilization/legend-process-utilized-by-other-makers.png)|Utilized by other makers|Compliant capacity allocated to objects, which the user doesn't own and which weren't shared with them.|
+|![Legend color - Utilized by other makers](media/capacity-utilization/legend-utilized-by-other-makers.png)|Utilized by other makers|Compliant capacity allocated to objects, which the user doesn't own and which weren't shared with them.|
 |![Legend color - Available capacity](media/capacity-utilization/legend-available-capacity.png)|Available capacity|Available capacity for new unattended bots on machines and new process plan on cloud flows.|
 |![Legend color - My overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Sum of capacities over-allocated to machines or/and to cloud flows, which the user owns or which are shared with them.|
 |![Legend color - Overage by other makers](media/capacity-utilization/legend-overage-by-other-makers.png)|Overage by other makers|Sum of capacities over-allocated to objects, which the user doesn't own and which weren't shared with them.|
@@ -66,7 +66,7 @@ In this section, you learn how to oversee and manage all machines you have acces
 >
 > By selecting a machine, you can edit its unattended bots setting and its auto-allocation setting.
 > Machines can be, when necessary (in case of overage), prioritized based on their unattended runs.
-> Cloud flow using process capacity will be added to the page in a future release
+> Cloud flows using process capacity will be added to the page in a future release
 
 ## Capacity overage
 
@@ -106,9 +106,9 @@ The **Request capacity** action submits a request to the tenant administrator fo
 
 > [!NOTE]
 > 
-> The preset value in the request capacity modal dialog is equal to the total overage value in the environment (the user's overage and the other users' overage).
-> This preset value ensures that when the additional capacity is assigned to the environment, the user who made the request have their machines or returned back to compliance.
-> If the user submits a smaller request, when the additional requested capacity is provisioned to the environment, there’s no guarantee that their own machines will return to compliance. The extra capacity might be allocated to other in-overage machines owned by different users.
+> - The preset value in the request capacity modal dialog is equal to the total overage value in the environment (the user's overage and the other users' overage).
+> - This preset value ensures that when the additional capacity is assigned to the environment, the user who made the request have their machines or returned back to compliance.
+> - If the user submits a smaller request, when the additional requested capacity is provisioned to the environment, there’s no guarantee that their own machines will return to compliance. The extra capacity might be allocated to other in-overage machines owned by different users.
 
 ### What are the rules governing which objects are identified as in overage?
 

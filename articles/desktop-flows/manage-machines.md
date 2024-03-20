@@ -93,6 +93,13 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 > - When you create a desktop flow connection, you allow Power Automate to create a Windows session on your machine to run your desktop flows. Make sure you trust co-owners of your flows before using your connection in a flow.
 > - If you consistently encounter issues when creating a connection on a new machine, first try to remove it, and then [register it](/power-automate/desktop-flows/manage-machines#register-a-new-machine) again.
 
+## Enable your machine for unattended mode
+
+To trigger desktop flows in unattended mode on your machine, you need some unattended bots on the machine. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform. 
+
+Unattended bots can be created by allocating a Process capacity (or an Unattended RPA capacity) to your machine. Learn how to [allocate a Process capacity as an unattended bot](capacity-process.md)  on a machine.
+
+
 ## Maintenance mode for machines
 
 The maintenance mode enables you to stop all the desktop flow runs on machines or machine groups. This feature is useful when you need to do installations or deployments on machines and avoid run failures.

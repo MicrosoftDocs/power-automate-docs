@@ -20,7 +20,7 @@ Within the Power Automate portal:
 - Process capacity is based on a purchased [process license](/power-platform/admin/power-automate-licensing/types).
 - Legacy unattended RPA capacity is based on an [unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on).
 
-Process capacity or legacy unattended RPA capacity can be allocated to a machine or to a cloud flow. When allocated to a cloud flow, it becomes a *process plan* based on which the cloud flow is licensed to run premium actions independently from the user license.
+A Process capacity, or legacy Unattended RPA capacity, can be **allocated to a machine or to a cloud flow**. When allocated to a cloud flow, it becomes a **Process plan** based on which the cloud flow is licensed to run premium actions independently from the user license. 
 
 ## Allocate process capacity to a machine
 
@@ -35,16 +35,16 @@ To allocate process capacity to a machine, follow these steps:
 
 ![Machine page - No unattended bot](media/capacity-utilization/machine-page-0-bot.png)
 
-Check how many bots your machine can support and if you have available process capacity:
+Check how many bots your machine can support and if you have available Process capacity:
 
-![Machine page - Settings - No unattended bot](media/capacity-utilization/machine-page-setting-0-bot.png)
+You now have a machine that can perform unattended RPA.
 
 > [!NOTE]
 >
-> **Machine max bot bot supported** depends on your machine and its OS. The maximum value this parameter can reach is 10 (for some Windows Servers)
-> **Available capacity in the environment** indicates how many unattended bots can still be created. Keep in mind that the process capacity is a shared resources between all users within an environment and so use only what you need.
-> For an overview on how the process capacity is used within the environment, use the **Manage capacity utilization** link. This link also provides the option to request more capacity.
-> **Enable auto-allocation** allows unattended bots to automatically be allocated to a machine when an unattended run requires it. Multiple unattended bots can be auto-allocated in case of simultaneous unattended runs.
+> The "Machine max bot bot supported" parameter depends on your machine and its OS. The maximum value this parameter can reach is 10 (for some Windows Servers)
+> The "Available capacity in the environment" inform you about how many unattended bots can still be created. Keep in mind that the Process capacity is a shared resources between all users within an environment and so use only what you need
+> For a global overview on how the Process capacity is used within the environment, use the "Manage capacity utilization" link (it will also provide the option to request more capacity)
+> The "Enable auto-allocation" parameter, when turned on, allows unattended bots to automatically be allocated to a machine when an unattended run requires it (multiple unattended bots can be auto-allocated in case on simulateneous unattended runs)
 
 ![Machine page - Settings - One unattended bot](media/capacity-utilization/machine-page-setting-1-bot.png)
 
@@ -56,13 +56,19 @@ You now have a machine that can perform unattended RPA:
 
 When process capacity is allocated to a cloud flow, it becomes a *process plan* based on which the cloud flow is licensed to run premium actions independently from the user license.
 
-To allocate process capacity to a cloud flow, go to the cloud flow details page and select **Edit**.
+To allocate a Process capacity to a cloud flow, go to the cloud flow details page, click on Edit:
+
+![Cloud flow page - User plan](media/capacity-utilization/cloud-flow-user-plan.png)
+
+The cloud flow is by default based the user plan:
+
+![Cloud flow page - Settings - User plan](media/capacity-utilization/cloud-flow-setting-user-plan.png)
 
 Change the plan used by the flow to the **Per-flow/Process** and save.
 
 ![Cloud flow page - Settings - Process plan](media/capacity-utilization/cloud-flow-setting-flow-plan.png)
 
-The cloud flow is now independent from the user license.
+The cloud flow is now independent from the user license:
 
 ![Cloud flow page - Process plan](media/capacity-utilization/cloud-flow-flow-plan.png)
 
