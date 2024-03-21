@@ -22,7 +22,7 @@ ms.collection: bap-ai-copilot
 You can create, configure, and customize your cloud flows with the classic designer or the cloud flows designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
 
 > [!NOTE]
-> Here are some visual queues that tell you that you're using the cloud flows designer (not the classic designer):
+> Here are some visual cues that tell you that you're using the cloud flows designer (not the classic designer):
 > - The cards in the flow are small.
 > - The standalone action configuration pane appears on the left when you select a card.
 >
