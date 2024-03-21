@@ -4,12 +4,13 @@ description: See how to troubleshoot common issues of Power Automate desktop flo
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 09/21/2023
+ms.date: 03/21/2024
 ms.author: pefelesk
 ms.reviewer: tapanm
 contributors:
 - PetrosFeleskouras
 - johndund
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -24,7 +25,10 @@ To open the Power Automate troubleshoot tool:
 1. Select **Launch Troubleshoot tool**  
 
 >[!NOTE]
->You need to have admin privileges to open the troubleshoot tool from Power Automate machine runtime.  
+>You need to have admin privileges to open the troubleshoot tool from Power Automate machine runtime.
+
+## Resolve failed connection between Power Automate components
+See ["Communication error" and the connection between Power Automate components fails](/troubleshoot/power-platform/power-automate/desktop-flows/failed-connection-between-power-automate-components)
 
 ## Change the on-premises Service account
 
@@ -212,3 +216,6 @@ If you need help, use our self-help options, or ask for help from support.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+### See also
+[Power Automate Troubleshooting](/troubleshoot/power-platform/power-automate/welcome-power-automate)
