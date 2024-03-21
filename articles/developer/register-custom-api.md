@@ -12,7 +12,7 @@ search.audienceType:
 ---
 # Build and certify custom connectors
 
-Without writing any code, you can build workflows and apps with [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps), [Power Automate](https://make.powerautomate.com), and [Power Apps](https://powerapps.microsoft.com). To help you integrate your data and business processes, these services offer [180+ connectors](/connectors/) - for Microsoft services and products, as well as other services, like GitHub, Salesforce, Twitter, and more. 
+Without writing any code, you can build workflows and apps with [Azure Logic Apps](https://azure.microsoft.com/services/logic-apps), [Power Automate](https://make.powerautomate.com), and [Power Apps](https://powerapps.microsoft.com). To help you integrate your data and business processes, these services offer [1000+ connectors](/connectors/) - for Microsoft services and products, as well as other services, like GitHub, Salesforce, Twitter, and more. 
 
 Sometimes though, you might want to call APIs, services, and systems that aren't available as prebuilt connectors. To support more tailored scenarios, you can build *custom connectors* with their own triggers and actions. We have a complete set of basic and advanced tutorials for custom connectors on the Connectors documentation site. We recommend that you start with the [custom connector overview](/connectors/custom-connectors/), but you can also go straight to the following topics for details on a specific area:
 
