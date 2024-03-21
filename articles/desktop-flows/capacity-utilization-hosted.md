@@ -144,9 +144,9 @@ To view and edit capacity allocation, you need a security role with privileges t
 
 ![Flow Capacity Assignment](media/capacity-utilization/flow-capacity-assignment.png)
 
-## Using hosted RPA capacity as Process capacity 
+## Using hosted RPA capacity as process capacity
 
-The hosted RPA capacity can be used as a Process capacity to enable standard machines to run desktop flows in unattended mode. In an environment with hosted RPA capacity, this hosted RPA capability enables the creation of overage Process capacity allocation to machines and/or cloud flows. These in-overage machine or cloud flows operate just as efficiently as any other process, without any performance issues. This mechanism is temporary and will be replaced by a more explicit behaviour.
+The hosted RPA capacity can be used as process capacity to enable standard machines to run desktop flows in unattended mode. In an environment with hosted RPA capacity, this hosted RPA capability enables the creation of overage process capacity allocation to machines and/or cloud flows. These in-overage machine or cloud flows operate just as efficiently as any other process, without any performance issues. This mechanism is temporary and will be replaced by a more explicit behaviour.
 
 ## See also
 

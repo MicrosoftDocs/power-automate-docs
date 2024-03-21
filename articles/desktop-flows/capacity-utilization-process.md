@@ -77,8 +77,8 @@ Capacity overage in an environment occurs when the capacity utilized by the unat
 
 > [!NOTE]
 >
-> - Process capacity overage is only possible in an environment where some Process capacity or Unattended RPA capacity has been allocated
-> - Process capacity overage is also possible in an environment where some Hosted RPA capacity has been allocated
+> - Process capacity overage is only possible in an environment where some process capacity or unattended RPA capacity has been allocated
+> - Process capacity overage is also possible in an environment where some hosted RPA capacity has been allocated
 
 ### Machine in overage
 

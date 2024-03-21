@@ -1032,13 +1032,13 @@
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Manage automations
   items:
-  - name: Capacity utilization (preview)
+  - name: Capacity utilization
     items:
-    - name: Introduction to capacity utilization
+    - name: Introduction to capacity utilization (preview)
       href: ./desktop-flows/capacity-utilization.md
-    - name: Hosted RPA capacity utilization
+    - name: Hosted RPA capacity utilization (preview)
       href: ./desktop-flows/capacity-utilization-hosted.md
-    - name: Process capacity utilization
+    - name: Process capacity utilization (preview)
       href: ./desktop-flows/capacity-utilization-process.md
     - name: How to use process capacity
       href: ./desktop-flows/capacity-process.md
