@@ -34,7 +34,7 @@ To allocate process capacity to a machine, go to the machine details page and se
 
 Use the **Unattended bots** slider to allocate some process capacity to the machine and save.
 
-![Machine page - Settings - One unattended bot](media/capacity-utilization/machine-page-setting-1-bot-2.png)
+![Machine page - Settings - Add one unattended bot](media/capacity-utilization/machine-page-setting-1-bot-2.png)
 
 You now have a machine that can perform unattended RPA.
 
@@ -45,7 +45,7 @@ You now have a machine that can perform unattended RPA.
 > - **Enable auto-allocation** allows unattended bots to automatically be allocated to a machine when an unattended run requires it. Multiple unattended bots can be auto-allocated in case of simultaneous unattended runs.
 > - For a global overview on how process capacity is used within the environment, use the **Manage capacity utilization** link. It also provides the option to request more capacity.
 
-![Machine page - Settings - One unattended bot](media/capacity-utilization/machine-page-setting-1-bot.png)
+![Machine page - Settings - Save one unattended bot](media/capacity-utilization/machine-page-setting-1-bot.png)
 
 You now have a machine that can perform unattended RPA.
 
