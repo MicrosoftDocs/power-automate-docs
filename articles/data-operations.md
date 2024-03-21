@@ -2,25 +2,23 @@
 title: Use data operations in Power Automate (contains video)
 description: Learn to perform operations such as create HTML tables, create CSV tables, compose, join, select, and filter arrays with Power Automate.
 suite: flow
-documentationcenter: na
-author: v-aangie
+author: kisubedi
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 07/14/2022
+ms.topic: conceptual
+ms.date: 003/21/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
+
 # Use data operations
 
-In this article, you'll learn about some common data operations in Power Automate, such as compose, join, select, filter arrays, create tables, and parse JSON. These are available to manipulate data when you create flows.
+In this article, you learn about some common data operations in Power Automate, such as compose, join, select, filter arrays, create tables, and parse JSON. Use these operations to manipulate data when you create flows.
 
 >[!NOTE]
->The different sections in this article aren't related and are not dependent upon each other. The different sections use different examples.
+>The different sections in this article aren't related and aren't dependent upon each other. The different sections use different examples.
 
 Here's a quick video about data operations.
 
@@ -28,8 +26,8 @@ Here's a quick video about data operations.
 
 ## Prerequisites
 
-* Access to Power Automate.
-* A tool such as [PostMan](https://www.getpostman.com/postman) to send HTTP POST requests with a JSON array to your flow.
+- Access to [Power Automate](https://make.powerautomate.com).
+- A tool to send HTTP POST requests with a JSON array to your flow.
 
 ## Use the compose action
 
@@ -138,18 +136,11 @@ In this example, you use the filter array action on this array:
 to create a new array that contains only objects in which `first` is set to `Eugenia`.
 
 1. Find, and then add, the **Filter array** action to your flow.
-2. Configure the filter array action as shown in the following screenshot.
+1. Configure the filter array action as shown in the following screenshot.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of in the From section, the first line is set to Body. In the second line, first is set equal to Eugenia.](./media/data-operations/add-configure-filter-array-2.png "Configure the Filter array")
-3. Save, and then run your flow.
-
-    You can use [PostMan](https://www.getpostman.com/postman) to generate a web request that sends a JSON array to your flow.
-4. When your flow runs, the output looks like the following array. Notice that only objects in which `first` is set to `Eugenia` are included in the output of the action.
-
-    ``` JSON
-    [ { "first": "Eugenia", "last": "Lopez" }]
-    ```
+1. Save, and then run your flow.
 
 ## Use the create CSV table action
 
