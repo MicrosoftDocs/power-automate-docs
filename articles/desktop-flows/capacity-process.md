@@ -22,7 +22,7 @@ Within the Power Automate portal:
 - Process capacity is based on a purchased [process license](/power-platform/admin/power-automate-licensing/types).
 - Legacy unattended RPA capacity is based on an [unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on).
 
-Process capacity or legacy unattended RPA capacity can be allocated to a machine or to a cloud flow. When allocated to a cloud flow, it becomes a *process plan* based on which the cloud flow is licensed to run premium actions independently from the user license.
+Process capacity or legacy unattended RPA capacity can be allocated to a machine or to a cloud flow.
 
 ## Allocate process capacity to a machine
 
@@ -45,12 +45,6 @@ You now have a machine that can perform unattended RPA.
 > - **Enable auto-allocation** allows unattended bots to automatically be allocated to a machine when an unattended run requires it. Multiple unattended bots can be auto-allocated in case of simultaneous unattended runs.
 > - For a global overview on how process capacity is used within the environment, use the **Manage capacity utilization** link. It also provides the option to request more capacity.
 
-![Machine page - Settings - Save one unattended bot](media/capacity-utilization/machine-page-setting-1-bot.png)
-
-You now have a machine that can perform unattended RPA.
-
-![Machine page - One unattended bot](media/capacity-utilization/machine-page-1-bot.png)
-
 ## Allocate process capacity to a cloud flow
 
 When process capacity is allocated to a cloud flow, it becomes a *process plan* based on which the cloud flow is licensed to run premium actions independently from the user license.
@@ -59,17 +53,15 @@ To allocate a Process capacity to a cloud flow, go to the cloud flow details pag
 
 ![Cloud flow page - User plan](media/capacity-utilization/cloud-flow-user-plan.png)
 
-A cloud flow is by default based on the user plan.
-
-![Cloud flow page - Settings - User plan](media/capacity-utilization/cloud-flow-setting-user-plan.png)
+> [!NOTE]
+>
+> At creation, a cloud flow is by default based on the user plan.
 
 Change the plan used by the flow to **Per-flow/Process** and save.
 
 ![Cloud flow page - Settings - Process plan](media/capacity-utilization/cloud-flow-setting-flow-plan.png)
 
 The cloud flow is now independent from the user license.
-
-![Cloud flow page - Process plan](media/capacity-utilization/cloud-flow-flow-plan.png)
 
 > [!NOTE]
 >
