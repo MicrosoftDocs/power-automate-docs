@@ -5,7 +5,7 @@ suite: flow
 author: kisubedi
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 003/21/2024
+ms.date: 03/21/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -61,7 +61,7 @@ When you need to access the contents of the compose action, do so by following t
 
 ## Use the join action
 
-Use the **Data Operation - Join** action to delimit an array with the separator of your choice. For example, your flow receives a web request that includes the following array of email addresses: `["d@example.com", "k@example.com", "dal@example.com"]`. However, your email program requires addresses to be formatted in a single string, separated with semicolons. You'll use the **Data Operation - Join** action to change the comma delimiter (,) to a semicolon (;) by following these steps:
+Use the **Data Operation - Join** action to delimit an array with the separator of your choice. For example, your flow receives a web request that includes the following array of email addresses: `["d@example.com", "k@example.com", "dal@example.com"]`. However, your email program requires addresses to be formatted in a single string, separated with semicolons. You use the **Data Operation - Join** action to change the comma delimiter (,) to a semicolon (;) by following these steps:
 
 1. Add a new action, search for **Join**, and then select **Data Operation - Join**.
 
@@ -102,15 +102,13 @@ You want to reshape the incoming data by renaming `first` to `FirstName` and `la
 To do this:
 
 1. Add the **When an HTTP request is received** trigger to your flow.
-
-2. Select **Use sample payload to generate schema**.
+1. Select **Use sample payload to generate schema**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of selecting the sample payload.](./media/data-operations/request-trigger.png "Use sample payload to generate schema")
 
-3. In the box that appears, paste a sample of your source data array, and then select **Done**.
-
-4. Add the **Data Operation – Select** action, and then configure it as shown in the following screenshot.
+1. In the box that appears, paste a sample of your source data array, and then select **Done**.
+1. Add the **Data Operation – Select** action, and then configure it as shown in the following screenshot.
 
    :::image type="complex" source="./media/data-operations/select-card-2.png" alt-text="Configure the select action.":::
    Screenshot showing the select action. From is set to Body. In the Map section, FirstName is set to first, FamilyName is set to last, and FullName is set to first and last, separated by a space.:::image-end:::
@@ -133,7 +131,7 @@ In this example, you use the filter array action on this array:
 [ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]
 ```
 
-to create a new array that contains only objects in which `first` is set to `Eugenia`.
+This example creates a new array that contains only objects in which `first` is set to `Eugenia`.
 
 1. Find, and then add, the **Filter array** action to your flow.
 1. Configure the filter array action as shown in the following screenshot.
@@ -156,7 +154,7 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
     >![Screenshot of Configuring the Create CSV table action. From is set to Body, and Columns is set to Automatic.](./media/data-operations/create-csv-table-2.png "Configure the CSV table action")
 
     The **Body** token in this image comes from a **When a HTTP request is received** action; however, you can get the input for the **Create CSV table** action from the output of any previous action in your flow, or you can enter it directly in the **From** box.
-2. Save, and then run, your flow.
+1. Save, and then run your flow.
 
     When your flow runs, the **Create CSV table** action displays the output shown in the following screenshot.
 
