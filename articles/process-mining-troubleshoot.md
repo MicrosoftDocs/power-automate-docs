@@ -177,6 +177,10 @@ Assign a premium license to your workspace. To learn how to enable premium capac
 
 This is the same as the previous issue, but the error occurred during process analysis. After ensuring that your workspace has premium capacity per [Premium capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings), reanalyze the report.
 
+### "Unable to open PowerAutomateProcessMining.appinstaller file for MSIX installation package"
+
+Microsoft is an applications which enables launching appinstaller files responsible for proceeding with installation of MSIX package. It this app installer is missing at your local Windows setup please proceed with installing it from Microsoft Store by searching for "App Installer" or by downloading it from following link [Microsoft App Installer](https://apps.microsoft.com/detail/9NBLGGH4NNS1).
+
 ## Issues with your own Azure Data Lake Storage Gen2 and incremental data refresh
 
 ### If you encountered an error message, "Couldn’t connect to container"
