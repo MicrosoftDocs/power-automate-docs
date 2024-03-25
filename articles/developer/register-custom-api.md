@@ -4,7 +4,7 @@ description: Learn about creating custom connectors using different options, get
 author: v-aangie
 ms.topic: article
 ms.subservice: developer
-ms.date: 01/29/2018
+ms.date: 03/25/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 

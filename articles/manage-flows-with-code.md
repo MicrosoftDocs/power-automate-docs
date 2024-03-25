@@ -7,12 +7,10 @@ contributors:
   - v-aangie
   - JimDaly
 ms.reviewer: angieandrews
-ms.date: 06/06/2023
+ms.date: 03/25/2024
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.author: cgarty
-ms.prod: 
-ms.technology: 
 audience: Power user
 ---
 
