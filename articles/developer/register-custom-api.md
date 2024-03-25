@@ -18,8 +18,6 @@ Sometimes though, you might want to call APIs, services, and systems that aren't
 
 * [Create a custom connector from an OpenAPI definition](/connectors/custom-connectors/define-openapi-definition)
 
-* [Create a custom connector from a Postman collection](/connectors/custom-connectors/define-postman-collection)
-
 * [Create a custom connector from scratch](/connectors/custom-connectors/define-blank)
 
 * [Use a custom connector from a cloud flow](/connectors/custom-connectors/use-custom-connector-flow)

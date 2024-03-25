@@ -38,7 +38,7 @@ More information: [Use the Organization service](/power-apps/developer/data-plat
 
 #### [Web API](#tab/webapi)
 
-You can use any programming language or technology that supports sending HTTP requests, including .NET. You can use familiar tools like [Postman](https://www.postman.com/) to send requests.
+You can use any programming language or technology that supports sending HTTP requests, including .NET.
 
 More information: [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
@@ -69,7 +69,6 @@ Your base URL should look something like this:
 
 More information:
 
-- [Set up a Postman environment](/power-apps/developer/data-platform/webapi/setup-postman-environment)
 - [Quick Start: Web API sample (C#)](/power-apps/developer/data-platform/webapi/quick-start-console-app-csharp)
 - [Compose HTTP requests and handle errors](/power-apps/developer/data-platform/webapi/compose-http-requests-handle-errors)
 - [Use OAuth authentication with Microsoft Dataverse](/power-apps/developer/data-platform/authenticate-oauth)
