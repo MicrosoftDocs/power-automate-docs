@@ -20,7 +20,7 @@ search.audienceType:
 > [!IMPORTANT]
 > - This feature requires Power Automate for desktop v2.32 or later.
 
-Assets library allows you to include more functionality in desktop flows. For example, you can upload custom actions to the assets library when required.
+Assets library allows you to include more functionality in desktop flows. For example, you can upload custom actions to the assets library when required, or you can search for available UI elements collections.
 
 To access the assets library, select the Assets library button at the top-right of the designer.
 
@@ -38,7 +38,14 @@ Alternatively, use the **Tools** bar.
 > You can only see custom actions shared with you.
 
 :::image type="content" source="media/assets-library/assets-library-custom-actions.png" alt-text="Screenshot of the Custom actions tab in the Assets library" border="false":::
- 
+
+## UI elements collections tab
+
+The UI elements collections tab shows you the UI elements collections that are published in the environment you've selected.
+
+> [!NOTE]
+> You can only see UI elements collections that you have created or are shared with you.
+
 ### See also
 
 - [Custom actions](custom-actions.md)
