@@ -119,6 +119,10 @@ Versions can be compared by viewing them in succession, or by opening up another
 
 Not at this time.
 
+### Which version is exported?
+
+The last published version of a solution cloud flow is exported in a solution. Draft versions and version history are not exported.
+
 ### See also
 
 - [Manage and edit a cloud flow](/power-automate/get-started-logic-flow#manage-a-cloud-flow)
