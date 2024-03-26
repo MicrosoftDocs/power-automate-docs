@@ -1,14 +1,15 @@
 ---
-title: Manage cloud flow run metadata in Dataverse (preview)
+title: Manage cloud flow run history metadata in Dataverse (preview)
 description: Learn how to leverage the extensibility of Dataverse to track the results of your cloud flow executions at scale.
-author: rakrish84
+author: chrisgarty
 contributors:
   - rakrish84
+  - chrisgarty
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 12/15/2023
-ms.author: rakrish
+ms.author: chrisgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.audienceType: 
@@ -16,13 +17,13 @@ search.audienceType:
   - enduser
 ---
 
-# Manage cloud flow run metadata in Dataverse (preview)
+# Manage cloud flow run history in Dataverse (preview)
 
 [!INCLUDE[cc-preview-features-definition](../includes/cc-preview-features-top-note.md)]
 
-With cloud flow run metadata in Dataverse, you can leverage the extensibility of dataverse to track the results of your cloud flow executions at scale. With this feature, you can leverage the power of Dataverse’s common data architecture, including enterprise grade security and compliance, including Role-Based Access Control (RBAC) to manage the flow run metadata. Only cloud flows backed in dataverse solution flows have their run metadata stored in Dataverse.
+With cloud flow run history in Dataverse, you can leverage the extensibility of [Dataverse](/power-apps/maker/data-platform/) to track the results of your cloud flow executions at scale. With this feature, you can leverage the power of Dataverse’s common data architecture, including enterprise grade security and compliance, including Role-Based Access Control (RBAC) to manage the **[FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun)** data. Only cloud flows backed in Dataverse solution flows can have their run history stored in Dataverse.
 
-As part of this feature, every cloud flow execution has an entry in the table, **Flow Run**. We are leveraging Dataverse’s non-relational database, [elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables), to store the cloud flow run metadata.
+As part of this feature, every cloud flow execution has an entry in the table, **[FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun)**. We are leveraging Dataverse’s non-relational database, [elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables), to store the cloud flow run history.
 
 > [!IMPORTANT]
 >- This is a preview feature.
@@ -31,7 +32,7 @@ As part of this feature, every cloud flow execution has an entry in the table, *
 
 ## Cloud flow run elements
 
-This table contains key elements of a cloud flow run, including the following:
+The **[FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun)** table contains key elements of a cloud flow run, including the following:
 
 |Element  |Description  |
 |---------|---------|
@@ -51,14 +52,33 @@ This table contains key elements of a cloud flow run, including the following:
 |Partition Id | Partition id of this user in the elastic table instance. |
 |Time to live | Time in seconds of when this run record will be automatically deleted. |
 
-The details can be viewed and updated through standard Dataverse APIs, a Dataverse connector, or directly from the **Tables** view in the maker portal.
+The details can be viewed and updated through [standard Dataverse APIs](/power-apps/developer/data-platform/webapi/query-data-web-api), the [Dataverse connector](/connectors/commondataserviceforapps/), or directly from the **Tables** view in the maker portal.
 
-Since this feature is built on elastic tables, we store the cloud run metadata in specific logical partitions for optimized performance. The run data is partitioned based on users. This means each user within an organization has a dedicated partition to store the flow run metadata.
+Since this feature is built on elastic tables, we store the cloud run history data in specific logical partitions for optimized performance. The run history data is partitioned based on users. This means each user within an organization has a dedicated partition.
+
+## Storage use for FlowRun records
+
+By default, flow run data is stored for 28 days (2,419,200 seconds). If you want to modify the duration of how long the executions can be stored, you can update the **Time to live (in seconds) for the flow run** in the **Organization** table within environment backed with Dataverse. Depending on your environment’s storage capacity, you can adjust the length of storage for these run records.
+
+## Reduce about of FlowRun records over time
 
 By default, flow run metadata is stored for 28 days (2,419,200 seconds). If you want to modify the duration of how long the executions can be stored, you can update the **Time to live (in seconds) for the flow run** in the **Organization** table within environment backed with Dataverse. Depending on your environment’s storage capacity, you can adjust the length of storage for these run records.
 
-If the environment is running short on storage, then customers can choose to clean up database space by performing bulk delete operation. To learn more about how to proceed with bulk deletion, go to [Remove a large amount of specific, targeted data with bulk deletion](/power-platform/admin/delete-bulk-records).
+## Reduce about of FlowRun records immediately 
 
+If the environment is running short on storage, then customers can choose to clean up database space by setting the . To learn more about how to proceed with bulk deletion, go to [Remove a large amount of specific, targeted data with bulk deletion](/power-platform/admin/delete-bulk-records).
+
+## Time to live calculations
+
+Time to live (TTL) values for [Organization.FlowRunTimeToLiveInSeconds](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) and [FlowRun.TTLInSeconds](/power-apps/developer/data-platform/reference/entities/flowrun#BKMK_TTLInSeconds) are specified in seconds. Below is a table with common values that can be used in the Organization and FlowRun tables.
+
+|Days  |Seconds  |
+|---------|---------|
+|1 day |86,400 seconds|
+|3 days |259,200 seconds|
+|7 day |604,800 seconds|
+|14 days |1,209,600 seconds|
+|28 days |2,419,200 seconds|
 
 ## Known limitations
 
