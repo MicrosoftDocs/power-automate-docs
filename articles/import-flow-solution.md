@@ -44,6 +44,12 @@ After you've exported your solution, you can import it into any environment that
 
 When you import a solution containing flows, the import process attempts to restore them to the state they were in when exported. If the flows were on when exported and any connection references get connections, then the flows should be turned on as part of the import process.
 
+If the flow already exists in the target environment, then the import of an update to that flow will not affect the flow state. For example, if the flow is turned off in the target environment and then an update is imported, the flow will remain turned off. 
+
+### If the importing user does not have permissions to all the connections in the flow, will the flow be turned on?
+
+If the importing user does not have permissions to all the connections in the flow, then the [connections need to be shared](/power-apps/maker/data-platform/create-connection-reference#share-connections-with-another-user-so-flows-can-be-enabled) with the importing user so that they can turn the flow on.
+
 ### See also
 
 - [Create a solution](./overview-solution-flows.md)
@@ -51,5 +57,7 @@ When you import a solution containing flows, the import process attempts to rest
 - [Export a solution](./export-flow-solution.md)
 - [Edit a solution-aware flow](./edit-solution-aware-flow.md)
 - [Remove a solution-aware flow](.//remove-solution-aware-flow.md)
+- [Use connection references](/power-apps/maker/data-platform/create-connection-reference)
+- [Manage connections in Power Automate](/power-automate/add-manage-connections)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
