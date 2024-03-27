@@ -4,7 +4,7 @@ description: Learn how to import a solution.
 author: ChrisGarty
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 04/07/2022
+ms.date: 03/26/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -15,7 +15,7 @@ search.audienceType:
 
 # Import a solution
 
-After you've exported your solution, you can import it into any environment that meets the prerequisites. Follow these steps to import a solution.
+After you exported your solution, you can import it into any environment that meets the prerequisites. Follow these steps to import a solution.
 
 > [!TIP]
 > If you want to have your flows start automatically after you import a solution, use the Microsoft Dataverse connector in your flow when you create it.
@@ -44,11 +44,11 @@ After you've exported your solution, you can import it into any environment that
 
 When you import a solution containing flows, the import process attempts to restore them to the state they were in when exported. If the flows were on when exported and any connection references get connections, then the flows should be turned on as part of the import process.
 
-If the flow already exists in the target environment, then the import of an update to that flow will not affect the flow state. For example, if the flow is turned off in the target environment and then an update is imported, the flow will remain turned off. 
+If the flow already exists in the target environment, then the import of an update to that flow won't affect the flow state. For example, if the flow is turned off in the target environment and then an update is imported, the flow remains turned off.
 
-### If the importing user does not have permissions to all the connections in the flow, will the flow be turned on?
+### If the importing user doesn't have permissions to all the connections in the flow, will the flow be turned on?
 
-If the importing user does not have permissions to all the connections in the flow, then the [connections need to be shared](/power-apps/maker/data-platform/create-connection-reference#share-connections-with-another-user-so-flows-can-be-enabled) with the importing user so that they can turn the flow on.
+If the importing user doesn't have permissions to all the connections in the flow, then the [connections need to be shared](/power-apps/maker/data-platform/create-connection-reference#share-connections-with-another-user-so-flows-can-be-enabled) with the importing user so that they can turn the flow on.
 
 ### See also
 
