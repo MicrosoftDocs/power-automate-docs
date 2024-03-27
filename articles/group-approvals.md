@@ -114,7 +114,7 @@ You can choose to send an approval to multiple groups, or even a combination of 
 
 1. The group must allow email from external senders to receive email notifications.
 
-1. When you create an approval for a newly created Microsoft 365 group, there maay be a small time period where Outlook actionable emails can present an error.
+1. When you create an approval for a newly created Microsoft 365 group, there may be a small time period where Outlook actionable emails can present an error.
 
 ## Add a condition to an approval flow
 
