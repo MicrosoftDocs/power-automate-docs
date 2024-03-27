@@ -87,6 +87,10 @@ Dataverse is the storage used for drafts that aren't published. It's also the st
 
 When you [add your non-solution cloud flow into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution), it adds the definition into Dataverse so it can have versions.
 
+### Can co-owners see a full version history or only their own changes?
+
+Co-owners can see a full version history of changes from any user who made a change to the flow.
+
 ### Can notes or titles be added to versions?
 
 Notes and titles can't be added to the version at this time.
