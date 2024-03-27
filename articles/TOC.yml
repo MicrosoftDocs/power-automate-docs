@@ -524,7 +524,7 @@
     items:
     - name: UI elements collections
       href: ./desktop-flows/ui-elements-collections.md
-    - name: Create UI elements collections
+    - name: Create and publish UI elements collections
       href: ./desktop-flows/create-ui-elements-collections.md
   - name: Troubleshooter
     href: ./desktop-flows/troubleshooter.md
