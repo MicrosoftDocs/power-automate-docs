@@ -1,11 +1,11 @@
 ---
-title: Build and certify custom connectors | Microsoft Docs
-description: Learn about creating custom connectors using different options, get them certified, and publish.
-author: v-aangie
-ms.topic: article
+title: Build and certify custom connectors
+description: Learn how to create custom connectors using different options, get them certified, and publish.
+author: ChrisGarty
+ms.topic: conceptual
 ms.subservice: developer
 ms.date: 03/25/2024
-ms.author: angieandrews
+ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 
   - developer
