@@ -34,12 +34,12 @@ UI elements collections
 
 ## Next steps
 
-[Create custom actions](create-custom-actions.md)
+[Manage UI elements collections](manage-ui-elements-collections.md)
 
 ### See also
 
 - [Assets library](assets-library.md)
-- [Upload custom actions](upload-custom-actions.md)
-- [Use custom actions](use-custom-actions.md)
+- [Use and update UI elements collections](use-update-ui-elements-collections.md)
+- [UI elements collections](ui-elements-collections.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
