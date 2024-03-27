@@ -526,6 +526,10 @@
       href: ./desktop-flows/ui-elements-collections.md
     - name: Create and publish UI elements collections
       href: ./desktop-flows/create-ui-elements-collections.md
+    - name: Manage UI elements collections
+      href: ./desktop-flows/manage-ui-elements-collections.md
+    - name: Use and update UI elements collections
+      href: ./desktop flows/use-update-ui-elements-collections.md
   - name: Troubleshooter
     href: ./desktop-flows/troubleshooter.md
   - name: How to
