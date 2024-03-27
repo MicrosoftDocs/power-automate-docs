@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/04/2024
+ms.date: 03/27/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -121,7 +121,7 @@ Not at this time.
 
 ### Which version is exported?
 
-The last published version of a solution cloud flow is exported in a solution. Draft versions and version history are not exported.
+The last published version of a solution cloud flow is exported in a solution. Draft versions and version history aren't exported.
 
 ### See also
 
