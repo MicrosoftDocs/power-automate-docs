@@ -17,20 +17,22 @@ search.audienceType:
 
 # Create UI elements collections in desktop flows
 
-UI elements collections 
+Creating and publishing a UI elements collection is possible through the flow designer of a desktop flow. In the UI elements pane, there are now two different tabs available, **Flow repository** and **Collections**.
 
-> [!IMPORTANT]
-> - This feature requires Power Automate for desktop v2.43 or later.
+<screenshot>
+
+The Flow repository tab contains all the UI elements that are available only to that particular desktop flow. Older desktop flows that have been created with version 2.42 or previous than that, which contain UI elements, will now display those elements under the Flow repository tab.
+
+
+
+> [!NOTE]
+> - Any new UI element that is captured via the button **Add UI element** will be automatically added under the Flow repository tab. You can't add a UI element directly into a collection.
 
 
 
 ## Known limitations
 
-- Custom actions groups can't exceed 30 MB upon upload.
-- Specific endpoints must be included in the allowlist for desktop flows containing custom actions to work properly. More information: [Desktop flow services required for runtime](../ip-address-configuration.md#desktop-flows-services-required-for-runtime)
-- Application lifecycle management (ALM) isn't fully supported for desktop flows with dependencies on custom actions.
-- Upload date might differ in the portal than what is shown in the Assets library inside Power Automate for desktop.
-- The Assets library can't display more than 5000 custom actions groups.
+
 
 ## Next steps
 
