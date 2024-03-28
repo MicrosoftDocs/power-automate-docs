@@ -27,6 +27,7 @@ Previously, UI elements were only available separately to each desktop flow. Thi
 
 > [!IMPORTANT]
 > - This feature requires Power Automate for desktop v2.43 or later.
+> - This feature requires environments where the v2 schema is enabled. In v1 schema environments, UI elements collections are not available.
 
 UI elements collections exist at the environment level. As a best practice, use a "dev&mdash;test&mdash;prod" model when deploying UI elements collections.
 
