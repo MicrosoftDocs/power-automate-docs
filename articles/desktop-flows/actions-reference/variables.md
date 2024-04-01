@@ -558,6 +558,26 @@ This action doesn't produce any variables.
 
 This action doesn't include any exceptions.
 
+## <a name="runpowerfx"></a> Run Power Fx expression
+
+Runs the provided Power Fx expression. 
+>[!NOTE]
+>This action is only available for Power Fx enabled desktop flows (preview). 
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Expression|No|*||The Power Fx expression to run|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+##### <a name="runpowerfx_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
+
 ## <a name="assign"></a> Set variable
 
 Set the value of a new or existing variable, create a new variable or overwrite a previously created variable.

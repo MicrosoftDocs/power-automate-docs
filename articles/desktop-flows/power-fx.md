@@ -97,6 +97,11 @@ For the complete list of all available functions in Power Automate for desktop f
 
 This section lists what's changed in each update.
 
+### 2.43
+
+In April's release: 
+- [Run Power Fx expression](./actions-reference/variables.md/#run-power-fx-expression) action is now available under the [Variables](./actions-reference/variables.md) group of actions. Run Power Fx expression allows you to execute expressions directly on data sources. 
+
 ### 2.42
 
 In March's release:
