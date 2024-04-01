@@ -19,11 +19,11 @@ search.audienceType:
 
 UI elements collections developed by organization users and published to the respective environments can be included in desktop flows. 
 
-In Power Automate for desktop, UI elements are elements that are grabbed and captured from the various user interfaces (either desktop applications or web pages). These elements can be text fields, buttons, links, anything that the user can interact with.
+In Power Automate for desktop, UI elements are elements that are grabbed and captured from the various user interfaces (either desktop applications or web pages). These elements can be text fields, buttons, links, or anything else that you can interact with in the target applications.
 
 After these elements are captured, they can be associated with the respective UI or web automation actions, so that the corresponding interaction with the said elements can be automated in the context of desktop flows.
 
-Previously, UI elements were only available separately to each desktop flow. This means that they needed to be captured individually in the context of each desktop flow built, even if the elements happened to be exactly the same. To avoid this, UI elements collections now offer makers and admins the ability to have control and central management over 'groups' of UI elements, which can be shared across multiple users and imported in multiple desktop flows as reusable components. In this way, in case of an application update for instance, the UI elements collection only needs to be updated once from a single point - all desktop flows referencing this collection in the same environment should be updated automatically.
+Previously, UI elements were only available separately to each desktop flow. This means that they needed to be captured individually in the context of each desktop flow built, even if the elements happened to be exactly the same among multiple desktop flows. To avoid this, UI elements collections now offer makers and admins the ability to have control and central management over 'groups' of UI elements, which can be shared across multiple users and imported in multiple desktop flows as reusable components. In this way, in case of an application update for instance, the UI elements collection only needs to be updated once from a single point - all desktop flows referencing this collection in the same environment should be updated automatically.
 
 > [!IMPORTANT]
 > - This feature requires Power Automate for desktop v2.43 or later.
