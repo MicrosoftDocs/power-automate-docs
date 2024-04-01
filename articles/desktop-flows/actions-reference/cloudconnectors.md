@@ -33,7 +33,7 @@ search.audienceType:
 
 Through connection reference embedding you can provide access to other co-owners to your connection references and their underlying resources, only in the scope of the respective shared desktop flow.
 
-- [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
+[!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 To embed a connection reference to a flow, you have access to as a co-owner:
 
