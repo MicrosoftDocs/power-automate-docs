@@ -818,6 +818,16 @@ This action doesn't produce any variables.
 
 ## <a name="filtercellsfromexcel"></a> Filter cells in Excel worksheet
 
+**Filter cells in Excel worksheet** allows makers to create and apply a filter in the active sheet, table or range on the values of a specified column. To filter multiple columns in an active sheet/table/range, multiple **Filter cells in Excel worksheet** actions must be used, each one applying the respective filter.
+>[!IMPORTANT]
+>To apply multiple filters in a specific active sheet/table/range, make sure that all **Filter cells in Excel worksheet** actions used target the same source (active sheet/table/range).
+
+When using the **Filter cells in Excel worksheet** in an active sheet/range with already existing/applied filters:
+- If the targeted range is the same as the one the previous filters have been applied on, all filters will be applied.
+- If the targeted range is not the same as the one previous filters have been applied on, previous filters will be cleared and only the latest one will be applied: 
+- If the targeted range is a table, all filters will be applied.
+
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
