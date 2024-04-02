@@ -744,6 +744,11 @@
       "source_path": "articles/desktop-flows/avd-use-starter-kit.md",
       "redirect_url": "/power-automate/desktop-flows/avd-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/custom-controls-business-process-flows.md",
+      "redirect_url": "/power-automate/business-process-flows-overview",
+      "redirect_document_id": false
     }
   ]
 }
