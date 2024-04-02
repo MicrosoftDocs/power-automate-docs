@@ -31,7 +31,9 @@ To create a new collection of UI elements, the said UI elements need to be captu
 > [!NOTE]
 > - Any new UI element that is captured via the button **Add UI element** will be automatically added under the Flow repository tab. You can't add a UI element directly into a collection.
 
-Every item in this tree structure comes with a checkbox, which is checked when that item is selected. Selecting a desktop also checks all its contained screens/web pages, and similarly, selecting a screen or web page also checks all its children UI elements.
+Every item in this tree structure comes with a checkbox, which is checked when that item is selected. Selecting a desktop (i.e. Local computer) also checks all its contained screens/web pages, and similarly, selecting a screen or web page also checks all its related UI elements.
+
+There can only be one selected (highlighted) item at a time, even if more items are checked (either automatically when these items are related in the elements structure. In the context menu of a selected item, the options 'Edit', 'Rename', 'Find usages' and 'Delete' are individual and apply on the said item, even if other items also happen to be checked.
 
 ## Known limitations
 
