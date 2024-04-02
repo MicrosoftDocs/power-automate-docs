@@ -59,6 +59,7 @@ Examples:
 **ReadCell(DataRowVar, 1)** retrieves the value from the cell in row 1 
 - To include an interpolated value in an input use the following syntax: Lorem ipsum **${variable/ expression}** lorem ipsum
   - Example: The total number is **${Sum(10, 20)}** 
+- Variable names in Power Fx enabled desktop flows are **case sensitive**. Example: **NewVar** is a different variable than **newVar**
 
 ## Available Power Fx functions 
 
@@ -100,7 +101,9 @@ This section lists what's changed in each update.
 ### 2.43
 
 In April's release: 
+- **case sensitive**. Example: **NewVar** is a different variable than **newVar**
 - [Run Power Fx expression](./actions-reference/variables.md/#run-power-fx-expression) action is now available under the [Variables](./actions-reference/variables.md) group of actions. Run Power Fx expression allows you to execute expressions directly on data sources. 
+- [Collect, Clear, ClearCollect](/power-platform/power-fx/reference/function-clear-collect-clearcollect) and [Patch](/power-platform/power-fx/reference/function-patch) Power Fx functions are now supported in desktop flows.
 
 ### 2.42
 
