@@ -4,11 +4,11 @@ description: Learn how to use change set requests to update rows in Microsoft Da
 services: ''
 suite: flow
 documentationcenter: na
-author: v-aangie
+author: Radioblazer
 ms.author: Matow
 ms.reviewer: angieandrews
 ms.topic: conceptual
-ms.date: 03/26/2024
+ms.date: 04/03/2024
 search.audienceType: 
   - maker
 ---
@@ -53,3 +53,4 @@ Follow these steps to get started with change sets.
 
 - The only supported actions in a change set scope are **Add a new row**, **Delete a row**, and **Update a row**. For example, the **Apply to each** action isn't supported in a change set.
 - You can't reference an output of a previous action in the change set scope.
+- Perform a changeset request action (Dataverse) isn't supported yet in the [AI-powered cloud flows designer](../flows-designer.md#limitations-and-known-issues).
