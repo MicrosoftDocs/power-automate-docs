@@ -4,7 +4,7 @@ description: Learn how to manage desktop flows in the Power Automate portal.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/05/2024
+ms.date: 034/03/2024
 ms.author: appapaio
 ms.reviewer: matp
 contributor:
@@ -49,6 +49,8 @@ Follow these steps to see the details for a desktop flow:
 
 ## Generate flow description using Copilot (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
 Generate a flow description for flows by the press of a button. Copilot then analyzes the flow and generates a description for it. This feature is also available from the flow properties in the Power Automate for desktop console. More information: [Power Automate for desktop console](console.md)
 
 > [!IMPORTANT]
@@ -88,7 +90,7 @@ As a Power Platform admin you can prevent users from sending feedback to Microso
 
 ### Data subject rights requests on user feedback
 
-Tenant administrators can view, export, and delete the feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage), and then selecting **Health** > **Product feedback**.
+Tenant administrators can view, export, and delete the feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage), and then select **Health** > **Product feedback**.
 
 ### See also
 

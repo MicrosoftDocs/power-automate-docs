@@ -4,7 +4,7 @@ description: See the main functionality of the Power Automate console.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/05/2024
+ms.date: 04/03/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -60,14 +60,14 @@ To configure Power Automate for desktop to your liking, select the **Settings** 
 
 Under the **Application** category, select whether Power Automate should launch automatically and whether closing the console also closes the application. You can also set a hotkey combination to stop running flows instantly.
 
-Using the **Monitoring/Notifications** dropdown list, you can choose whether Power Automate displays integrated Windows notifications, a custom monitoring window, or no notifications at all. To find more information regarding Power Automate notifications, refer to [Runtime notifications](runtime-notifications.md).
+Using the **Monitoring/Notifications** dropdown list, you can choose whether Power Automate displays integrated Windows notifications, a custom monitoring window, or no notifications at all. To find more information regarding Power Automate notifications, go to [Runtime notifications](runtime-notifications.md).
 
 By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. The **Display confirmation dialog when invoking flows externally** option allows you to disable this functionality. You can find more information about external links in [Run desktop flows via URL or desktop shortcuts](run-desktop-flows-url-shortcuts.md).  
 
 To decide whether Microsoft should collect diagnostic data to improve user experience, navigate to the **Data collection** settings tab.
 
->[!IMPORTANT]
->Only admins can change data collection settings.
+> [!IMPORTANT]
+> Only admins can change data collection settings.
 
 ## Desktop flow properties
 
@@ -90,6 +90,8 @@ Additionally, there's the **Run URL** that you can use to run the flow through m
 
 ## Generate flow description using Copilot (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
 Generate a flow description for flows that you own or are a co-owner by the press of a button. Copilot then analyzes the flow and generates a description for it. This feature is also available from the flow details in make.powerautomate.com. More information: [Manage desktop flows](manage.md)
 
 > [!IMPORTANT]
@@ -105,7 +107,7 @@ Generate a flow description for flows that you own or are a co-owner by the pres
 
 ### Use Copilot to generate the description
 
-To generate a flow description, navigate to the properties of the flow where you want to generate the description. Under the **Description** text area, select **Let Copilot create a description**. Copilot then analyzes your flow and populates the description with a summary of your flow.
+To generate a flow description, navigate to the properties of the flow where you want to generate the description. Under the **Description** text area, select **Let Copilot create a description**. Copilot analyzes your flow and populates the description with a summary of your flow.
 
 :::image type="content" source="media/console/console_generate_description_with_ai.png" alt-text="Screenshot of the general properties of a desktop flow showing the generated flow description with Copilot." lightbox="media/console/console_generate_description_with_ai.png":::
 
@@ -135,7 +137,7 @@ Tenant administrators can view, export, and delete the feedback from users by si
 
 ### See also
 
-- [FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md)
+[FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md)
 
 ## Update Power Automate for desktop
 

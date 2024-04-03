@@ -1,7 +1,7 @@
 ---
 title: FAQ for generating a flow description using Copilot
 description: This FAQ discusses the generating a flow description using Copilot feature in Power Automate for desktop and the key considerations for making use of this technology responsibly.
-ms.date: 03/05/2024
+ms.date: 04/03/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
