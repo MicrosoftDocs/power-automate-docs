@@ -87,6 +87,25 @@ Time to live (TTL) values for [Organization.FlowRunTimeToLiveInSeconds](/power-a
 |28 days |2,419,200 seconds|
 |60 days |5,184,000 seconds|
 
+## Using FlowEvent data to get visibility into FlowRun data completeness
+
+[FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records may be incomplete for a number of reasons. The [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) table is used to provide signals that runs were skipped and the data set is incomplete.
+
+The following is a list of [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) EventCode values that may be used to signal that [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is not complete:
+
+|EventCode |Reason |
+|---------|---------|
+|isFlowRunIngestionECSDisabled|Cloud flow run history is not being saved in Dataverse due to service configuration, so no cloud flow data can be shown.|
+|ElasticTableStorageCapacityReached|You have reached your Dataverse storage capacity limit, causing a pause in cloud flow run data synchronization.|
+|ElasticTablePartitionLimitReached|You have reached your Dataverse storage partition limit, causing a pause in cloud flow run data synchronization.|
+|IngestionRateDataLoss|Some of the run history for cloud flows may be missing due to high volume of runs in this environment during the preview.|
+|isFlowRunIngestionECSDisabled|Cloud flow run history is not being saved in Dataverse due to service configuration, so no cloud flow data can be shown.|
+|IngestionDisabledByOrgSettings|Cloud flow run history is not being saved in Dataverse due to environments settings, so some of the run history for cloud flows may be missing.|
+|FlowRunsEventLoadingFailed|Unable to load the events for cloud flow runs in your current environment. As a result, some historical cloud flow run data may not be available.|
+|FlowRunsTTlSettingFailedMessage|Unable to retrieve your environment's TTL (time-to-live) setting for cloud flow runs. As a result, some historical cloud flow run data may not be available.|
+|TtlSettingEqual0|Your current environment's TTL (time-to-live) configuration for cloud flow runs is set to not retain data. As a result, some cloud flow run history may be missing for the selected date range.|
+|ElasticTableNoRoleForUser|A user that owns one or more flows does not have Dataverse permissions to the FlowRun table, so some cloud flow run history is not being saved in Dataverse.|
+
 ## Known limitations
 
 - We currently don't support shared flows. All run records are written under the owner context to the **Flow Run** table.
