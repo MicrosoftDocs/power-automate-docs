@@ -22,10 +22,10 @@ Power Automate has the ability for service principal application users to own an
 
 ## When to use service principal application user
 
-It's recommended for the flow to be run under the service principal in the cases listed in this section.
+We recommend that the flow runs under the service principal in the cases listed in this section.
 
 - The ownership of a flow needs to be changed to a different user in these scenarios:
-    - If the flow is owned by a human user
+    - If a human user owns the flow
     - When the owners of flows change roles
     - When the owners of flows leave the organization entirely
 
