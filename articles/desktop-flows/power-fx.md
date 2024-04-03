@@ -104,7 +104,7 @@ This section lists what's changed in each update.
 
 In April's release: 
 - **case sensitive**. Example: **NewVar** is a different variable than **newVar**
-- [Run Power Fx expression](./actions-reference/variables.md/#run-power-fx-expression) action is now available under the [Variables](./actions-reference/variables.md) group of actions. Run Power Fx expression allows you to execute expressions directly on data sources. 
+- [Run Power Fx expression](./actions-reference/variables.md/#run-power-fx-expression) action is now available under the [Variables](./actions-reference/variables.md/#variables-actions) group of actions. Run Power Fx expression allows you to execute expressions directly on data sources. 
 - [Collect, Clear, ClearCollect](/power-platform/power-fx/reference/function-clear-collect-clearcollect) Power Fx functions are now supported in desktop flows.  
 - [Patch](/power-platform/power-fx/reference/function-patch) Power Fx functions are now supported in desktop flows.
 >[!NOTE]
