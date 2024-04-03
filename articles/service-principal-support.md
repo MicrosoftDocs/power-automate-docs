@@ -24,17 +24,15 @@ Power Automate has the ability for service principal application users to own an
 
 We recommend that the flow runs under the service principal in the cases listed in this section.
 
-- The ownership of a flow needs to be changed to a different user in these scenarios:
-    - If a human user owns the flow
-    - When the owners of flows change roles
-    - When the owners of flows leave the organization entirely
-
-    If the owner of the flow is a service principal application user, then that ownership isn't tied to a user who could leave the organization.
+- Mission critical flows that service departmental or enterprise-wide scenarios. This will insulate the flow ownership from the lifecycle of the owner and prevent issues when
+    - Owner of the flow leaves the organization or their role changes
+    - Premium license of the flow owner were to be unassigned and their flow utilizes premium capabilities      
 
 - If the organization uses DevOps pipelines to deploy the flow across Dev, Test, and Production environments.
-- If the flow is critical and needs high volume of Power Platform requests and can't be slowed down or throttled.
 
-The flow [connections need to be shared](/power-apps/maker/canvas-apps/share-app-resources#connections) with the service principal application user in order for them to successfully run the flow. Since a service principal application user is a [non-interactive user](/power-platform/admin/create-users#create-a-non-interactive-user-account) without a user license, it's subject to [non-licensed user limits](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits) and has special [licensing and request limit implications](/power-platform/admin/power-automate-licensing/types#can-i-use-service-principal-in-flows-and-does-it-count-against-my-request-limits).
+Since a service principal application user is a [non-interactive user](/power-platform/admin/create-users#create-a-non-interactive-user-account) without a user license, it's subject to [non-licensed user limits](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits) and has special [licensing and request limit implications](/power-platform/admin/power-automate-licensing/types#can-i-use-service-principal-in-flows-and-does-it-count-against-my-request-limits).
+
+The flow [connections need to be shared](/power-apps/maker/canvas-apps/share-app-resources#connections) with the service principal application user in order for them to successfully run the flow. 
 
 ## Prerequisites
 
