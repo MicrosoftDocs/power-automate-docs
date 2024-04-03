@@ -486,6 +486,13 @@ This section presents all the limitation of hosted machine groups.
 
 ### Geographical availabilities/restrictions
 
+> [!IMPORTANT]
+>
+> Starting May 2nd, 2024, we will be updating the region mapping for environments in the United States and United Kingdom to ensure our services are deployed in regions with Azure Availability Zones support. This change will enhance the resiliency and availability of our services. The updated region mapping is as follows:
+> - United States: West US -> East US 
+> - United Kingdom: UK West -> UK South
+> After the transition date, all new hosted machine groups will be provisioned in the updated region. If you have an existing hosted machine group that was provisioned before the transition, you will have the option to reprovision your hosted machine group via the Power Automate portal. If you’re using a custom VM image, please ensure that the VM image version has been replicated to the updated region before reprovisioning your hosted machine group. Please ensure that there are no desktop flow runs queued on the hosted machine group before running the reprovisioning process.
+
 The following list displays all the supported geographies in the public clouds:
 - Asia
 - Australia
