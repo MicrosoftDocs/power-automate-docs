@@ -67,7 +67,6 @@ For the complete list of all available functions in Power Automate for desktop f
 
 ## Known issues and limitations 
 
-- Using variables in UI element/ web selectors isn't currently supported. 
 - The following actions from the standard library of automation actions aren't currently supported: 
   - Create list
   - Shuffle list
@@ -104,6 +103,7 @@ In April's release:
 - **case sensitive**. Example: **NewVar** is a different variable than **newVar**
 - [Run Power Fx expression](./actions-reference/variables.md/#run-power-fx-expression) action is now available under the [Variables](./actions-reference/variables.md) group of actions. Run Power Fx expression allows you to execute expressions directly on data sources. 
 - [Collect, Clear, ClearCollect](/power-platform/power-fx/reference/function-clear-collect-clearcollect) and [Patch](/power-platform/power-fx/reference/function-patch) Power Fx functions are now supported in desktop flows.
+- Variables and Power Fx expressions can now be used in UI element/ web selectors' syntax.
 
 ### 2.42
 
