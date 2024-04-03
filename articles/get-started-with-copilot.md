@@ -1,12 +1,13 @@
 ---
 title: Get started with Copilot in cloud flows
 description: Learn how to access and use Copilot in cloud flows.
-ms.date: 02/07/2024
+ms.date: 03/19/2024
 ms.custom: bap-template
   - transparency-note
 ms.topic: conceptual
 author: kisubedi
 contributors:
+  - jamiework
   - kisubedi
   - janPidych
   - v-aangie
@@ -104,7 +105,7 @@ This section describes some example scenarios of how you can interact with Copil
 | When an item is created in SharePoint, send me a mobile notification.  |  </li><li>Edit the flow with this prompt: **I want to send the item title to notification.**<br/></li><li>Edit the flow with this prompt: **I don’t want to receive mobile notification. Send me an email instead.**  |
 
 > [!TIP]
-> For more examples you can try out, go to the [Power Platform Prompt Library](https://pnp.github.io/powerplatform-prompts/?filters=power%20automate%20copilot).
+> For more examples you can try out, go to the prompt library in the [Sample Solutions Gallery](https://aka.ms/prompts/powerautomate-copilot).
 
 ## Edit a flow using the designer with copilot capabilities
 
