@@ -1,14 +1,14 @@
 ﻿---
 title: Support for service principal owned flows
 description: Learn about support for service principal owned flows and best practices.
-author: PriyaKodukula
+author: samathur
 contributors:
-  - PriyaKodukula
+  - samathur
   - v-aangie
-ms.author: prkoduku
+ms.author: samathur
 ms.reviewer: angieandrews
 ms.topic: conceptual
-ms.date: 10/30/2023
+ms.date: 04/03/2024
 ms.custom:
 ---
 
@@ -22,10 +22,16 @@ Power Automate has the ability for service principal application users to own an
 
 ## When to use service principal application user
 
-It's recommended for the flow to be run under the service principal in the following cases:
+It's recommended for the flow to be run under the service principal in the cases listed in this section.
 
-- If the flow is owned by a human user, when the owners of flows change roles, or leave the organization entirely, the ownership of a flow needs to be changed to a different user. If the owner of the flow is a service principal application user, then that ownership isn't tied to a user that could leave the organization.
-- If the organization uses the DevOps pipeline to deploy flows into different environments like Dev, Test, or Prod, the flows must run under service principal.
+- The ownership of a flow needs to be changed to a different user in these scenarios:
+    - If the flow is owned by a human user
+    - When the owners of flows change roles
+    - When the owners of flows leave the organization entirely
+
+    If the owner of the flow is a service principal application user, then that ownership isn't tied to a user who could leave the organization.
+
+- If the organization uses DevOps pipelines to deploy the flow across Dev, Test, and Production environments.
 - If the flow is critical and needs high volume of Power Platform requests and can't be slowed down or throttled.
 
 The flow [connections need to be shared](/power-apps/maker/canvas-apps/share-app-resources#connections) with the service principal application user in order for them to successfully run the flow. Since a service principal application user is a [non-interactive user](/power-platform/admin/create-users#create-a-non-interactive-user-account) without a user license, it's subject to [non-licensed user limits](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits) and has special [licensing and request limit implications](/power-platform/admin/power-automate-licensing/types#can-i-use-service-principal-in-flows-and-does-it-count-against-my-request-limits).
