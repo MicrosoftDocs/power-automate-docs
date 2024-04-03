@@ -1,6 +1,6 @@
 ---
-title: Use a flow to perform a change set request in Dataverse
-description: Learn how to use change set requests to update rows in Microsoft Dataverse with flows.  
+title: Use a flow to perform a changeset request in Dataverse
+description: Learn how to use changeset requests to update rows in Microsoft Dataverse with flows.  
 services: ''
 suite: flow
 documentationcenter: na
@@ -13,9 +13,9 @@ search.audienceType:
   - maker
 ---
 
-# Use a flow to perform a change set request in Dataverse
+# Use a flow to perform a changeset request in Dataverse
 
-*Change sets* provide a way to bundle several operations that either succeed or fail as a group. When multiple operations are contained in a change set, all the operations are considered *atomic*, which means that if any one of the operations fails, any completed operations are rolled back.
+*Change sets* provide a way to bundle several operations that either succeed or fail as a group. When multiple operations are contained in a changeset, all the operations are considered *atomic*, which means that if any one of the operations fails, any completed operations are rolled back.
 
 Follow these steps to get started with change sets.
 
@@ -27,7 +27,7 @@ Follow these steps to get started with change sets.
 
 1. Select the **Perform a changeset request** to add its scope to your flow.
 
-   ![Change set request action.](../media/dataverse-how-tos/change-set-1.png "Change set request action")
+   ![Changeset request action.](../media/dataverse-how-tos/change-set-1.png "Changeset request action")
 
 1. Select **Add an action**.
 
@@ -45,12 +45,12 @@ Follow these steps to get started with change sets.
 
     ![The three actions available for Perform a changeset request.](../media/dataverse-how-tos/change-set-3.png "The three actions available for Perform a changeset request")
 
-    You can't have additional built-in actions in of a change set scope because all actions are evaluated together in Dataverse. You'll see that there are no arrows between each of the actions, indicating that there aren't dependencies between these actions (they all run at once).
+    You can't have additional built-in actions in a changeset scope because all actions are evaluated together in Dataverse. You see that there are no arrows between each of the actions, indicating that there aren't dependencies between these actions (they all run at once).
 
 1. Add all of the actions that you want to perform.
 
 ## Limitations
 
-- The only supported actions in a change set scope are **Add a new row**, **Delete a row**, and **Update a row**. For example, the **Apply to each** action isn't supported in a change set.
-- You can't reference an output of a previous action in the change set scope.
+- The only supported actions in a changeset scope are **Add a new row**, **Delete a row**, and **Update a row**. For example, the **Apply to each** action isn't supported in a changeset.
+- You can't reference an output of a previous action in the changeset scope.
 - Perform a changeset request action (Dataverse) isn't supported yet in the [AI-powered cloud flows designer](../flows-designer.md#limitations-and-known-issues).
