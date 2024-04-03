@@ -21,7 +21,7 @@ search.audienceType:
 
 [!INCLUDE[cc-preview-features-definition](../includes/cc-preview-features-top-note.md)]
 
-With cloud flow run history in Dataverse, you can leverage the extensibility of [Dataverse](/power-apps/maker/data-platform/) to track the results of your cloud flow executions at scale. With this feature, you can leverage the power of Dataverse’s common data architecture, including enterprise grade security and compliance, including Role-Based Access Control (RBAC) to manage the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data. Only solution cloud flows, with their definitions in Dataverse, can have their run history stored in Dataverse.
+With cloud flow run history in Dataverse, you can leverage the extensibility of [Dataverse](/power-apps/maker/data-platform/) to track the results of your cloud flow executions at scale. With this feature, you can leverage the power of Dataverse’s common data architecture, including  Role-Based Access Control (RBAC), to manage the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data. Only solution cloud flows, with their definitions in Dataverse, can have their run history stored in Dataverse.
 
 As part of this feature, each cloud flow execution has an entry in the table [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun). This is leveraging Dataverse’s non-relational database, [elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables), to store the cloud flow run history.
 
