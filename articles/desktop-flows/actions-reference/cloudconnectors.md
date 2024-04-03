@@ -21,21 +21,21 @@ search.audienceType:
 
 - You need an Attended RPA license.
 - Specific endpoints must be included in the allowlist for desktop flows containing cloud connector actions to work properly. More information: [Desktop flow services required for runtime](../../ip-address-configuration.md#desktop-flows-services-required-for-runtime)
-- For **Office 365 Outlook** actions, if you're using an EWS application access policy, ensure that the allowed user-agents for successful desktop flow execution: PowerAutomateLocal/*, PowerAutomateCloud/.* More information: [Common errors](/connectors/office365/#common-errors)
-- Dynamic output schema isn't fully supported for cloud connector actions in desktop flows. Refrain from using variables in the respective dropdown fields (Site address/ List name/ Select file etc.) while configuring a cloud connector action.
+- For **Office 365 Outlook** actions, if you're using an Exchange Online application access policy, ensure that the allowed user-agents for successful desktop flow execution: PowerAutomateLocal/*, PowerAutomateCloud/.* More information: [Common errors](/connectors/office365/#common-errors)
+- Dynamic output schema isn't fully supported for cloud connector actions in desktop flows. Don't use variables in the respective dropdown fields, such as site address, list name, select file, and so on while configuring a cloud connector action.
 - To enable attended or unattended runs (cloud-initiated runs), make sure that your desktop flow uses the Power Automate v2 schema and all connection references are marked as embedded.
-- Connection reference embedding is only available for co-owners. Users (run-only) can execute flows shared with them only via Power Automate for desktop's console by using their own connections.
-- Desktop flows with embedded connection references don't currently support ALM capabilities.
+- Connection reference embedding is only available for co-owners. Users (run-only) can execute flows shared with them only via Power Automate for desktop's console using their own connections.
+- Desktop flows with embedded connection references don't currently support application lifecycle management (ALM) capabilities.
 
 ## Embedding connection references on a desktop flow (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Through connection reference embedding you can provide access to other co-owners to your connection references and their underlying resources, only in the scope of the respective shared desktop flow.
+With connection reference embedding, you can provide other co-owners access to your connection references and their underlying resources. You do this only in the scope of the respective shared desktop flow.
 
 [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
-To embed a connection reference to a flow, you have access to as a co-owner:
+To embed a connection reference to a flow you have access to as a co-owner:
 
 - Select the respective desktop flow in the portal to go to its details.
 - In the **Connection references** section, select **Manage.**
@@ -52,7 +52,7 @@ To embed a connection reference to a flow, you have access to as a co-owner:
 > [!NOTE]
 > You can only embed or remove connection references that you own. Connection references added by other co-owners can only be managed by them.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > To enable attended or unattended runs (cloud-initiated runs), make sure that your desktop flow uses the Power Automate v2 schema and all connection references are marked as embedded.
 
 ## Bring your own connection
