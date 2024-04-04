@@ -105,11 +105,11 @@ The following is a list of [FlowEvent.EventCode](/power-apps/developer/data-plat
 |IngestionRateDataLoss|Some of the run history for cloud flows may be missing due to high volume of runs in this environment during the preview.|
 |FlowRunsEventLoadingFailed|Unable to load the events for cloud flow runs in your current environment. As a result, some historical cloud flow run data may not be available.|
 |FlowRunsTTlSettingFailedMessage|Unable to retrieve your environment's TTL (time-to-live) setting for cloud flow runs. As a result, some historical cloud flow run data may not be available.|
-|ElasticTableNoRoleForUser|A user that owns one or more flows does not have Dataverse permissions to the FlowRun table, so some cloud flow run history is not being saved in Dataverse.|
+|ElasticTableNoRoleForUser|A user that owns one or more flows does not have read permissions to the FlowRun table in Dataverse, so some cloud flow run history is not being saved in Dataverse because that user can't be set as the owner.|
 
 ## Known limitations
 
-- We currently don't support shared flows. All run records are written under the owner context to the **Flow Run** table.
+- [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records are assigned to a specific owner when they are written into the table, so the concept of shared [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records for shared flows is currently not supported. 
 - Flow owners need at least read access to the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) table to store their run records in Dataverse.
 - Currently, there's a limit of 20 GB per partition within elastic tables. Further run record insertions, only for that specific user, would fail once the limit is reached.
 - [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records may be throttled and skipped if a user has a lot of flows with high run rates. When throttling occurs, an entry is created in the [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) table to signal that runs were skipped and the data set is incomplete.
