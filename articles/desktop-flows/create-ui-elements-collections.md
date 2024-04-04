@@ -67,6 +67,7 @@ When the collection is succesfully published in this way, the corresponding succ
 > [!IMPORTANT]
 > - A collection can only include screens/web pages and their UI elements, not the desktop in which they were captured. This is to accommodate using the same collection for a target application, independently of whether it's installed in the local computer for some makers, or in a remote desktop for others. The collection would be imported under the proper desktop in each party's separate flow.
 
+<tree structure in Collections tab>
 
 ## Next steps
 
