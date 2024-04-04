@@ -46,7 +46,7 @@ In order to see runs in this list, one of the following must be true:
 > To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources. 
 
 > [!IMPORTANT]
-> Each desktop flow run has a maximum action log capacity of 32MB, which corresponds to approximately 50000 to 80000 action log entries. Once this limit is reached, subsequent actions won't be captured in the log. If you’re running into this limit, consider splitting your flow into smaller, separate flows.
+> For each desktop flow run, there’s a maximum action log capacity of 32 MB. This capacity translates to roughly 50,000 to 80,000 action log entries. Once this limit is reached, any subsequent actions aren't recorded in the log. If you encounter this limitation, you can split your flow into smaller, separate flows.
 
 ## Desktop flow run information 
 
