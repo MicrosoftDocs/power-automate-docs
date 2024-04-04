@@ -9,6 +9,10 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
+ms.date: 01/31/2024
+ms.author: kisubedi
+ms.subservice: cloud-flow
+ms.topic: conceptual
 ms.date: 03/01/2024
 ms.author: cgarty
 search.audienceType: 
@@ -46,7 +50,7 @@ Follow these steps to change the owner of a flow.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the menu to the left, either select **My flows**, or select **Solutions** and locate a solution the flow is referenced by.
-non-
+
 1. Select the flow for which you're changing the owner.
 1. In the **Details** section, select **Edit**.
 
@@ -121,3 +125,4 @@ To have a Service Principal own and run a flow, follow these steps.
 
 - [(Video) Microsoft Power Automate Tutorial - Export Import](https://www.youtube.com/watch?v=K7_xWJvEPUc)
 - [The owner of a flow left the organization. How can we ensure it works without interruptions?](/power-platform/admin/power-automate-licensing/faqs#the-owner-of-a-flow-left-the-organization-how-can-we-ensure-it-works-without-interruptions)
+
