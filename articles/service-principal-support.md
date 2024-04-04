@@ -8,7 +8,7 @@ contributors:
 ms.author: samathur
 ms.reviewer: angieandrews
 ms.topic: conceptual
-ms.date: 04/03/2024
+ms.date: 04/04/2024
 ms.custom:
 ---
 
@@ -24,10 +24,9 @@ Power Automate has the ability for service principal application users to own an
 
 We recommend that the flow runs under the service principal in the cases listed in this section.
 
-- Mission critical flows that service departmental or enterprise-wide scenarios. This will insulate the flow ownership from the lifecycle of the owner and prevent issues when
-    - Owner of the flow leaves the organization or their role changes
-    - Premium license of the flow owner were to be unassigned and their flow utilizes premium capabilities      
-
+- Mission critical flows that service departmental or enterprise-wide scenarios. This insulates the flow ownership from the lifecycle of the owner and prevents issues when:
+    - The owner of the flow leaves the organization or their role changes.
+    - Premium license of the flow owner were to be unassigned and their flow utilizes premium capabilities.
 - If the organization uses DevOps pipelines to deploy the flow across Dev, Test, and Production environments.
 
 Since a service principal application user is a [non-interactive user](/power-platform/admin/create-users#create-a-non-interactive-user-account) without a user license, it's subject to [non-licensed user limits](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits) and has special [licensing and request limit implications](/power-platform/admin/power-automate-licensing/types#can-i-use-service-principal-in-flows-and-does-it-count-against-my-request-limits).
