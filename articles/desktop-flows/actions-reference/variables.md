@@ -561,6 +561,7 @@ This action doesn't include any exceptions.
 ## Run Power Fx expression
 
 Runs the provided Power Fx expression.
+
 >[!NOTE]
 >This action is only available for Power Fx enabled desktop flows (preview).
 
