@@ -15,6 +15,7 @@ ms.date: 03/07/2021
 ms.author: kenseongtan
 ms.reviewer: matp
 contributors:
+- rpapostolis
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -23,7 +24,6 @@ search.audienceType:
   - enduser
 ---
 # Monitor desktop flow runs
-
 
 As you scale the automations in your business, you may need an easy way to ensure all your desktop flows are running as expected. Monitor all your desktop flow runs in just one location to keep your automations running smoothly. 
 
@@ -45,10 +45,8 @@ In order to see runs in this list, one of the following must be true:
 > [!TIP]
 > To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources. 
 
-> [!NOTE]
-> There is a limit of 10,000 actions in the actions log for a desktop flow. If there are more than 10,000 actions in your desktop flow, divide it into multiple flows if you want to see all actions in the logs.
-
- 
+> [!IMPORTANT]
+> Each desktop flow run has a maximum action log capacity of 32MB, which corresponds to approximately 50000 to 80000 action log entries. Once this limit is hit, subsequent action won't be captured in the log and hence are lost. If you’re running into this limit, consider splitting your flow into smaller, separate flows.
 
 ## Desktop flow run information 
 
