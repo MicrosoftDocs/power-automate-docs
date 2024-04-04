@@ -4,10 +4,11 @@ description: Learn about using Power Fx for creating expressions in desktop flow
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/15/2024
+ms.date: 04/04/2024
 ms.author: dipapa
 ms.reviewer: 
 contributors: 
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
