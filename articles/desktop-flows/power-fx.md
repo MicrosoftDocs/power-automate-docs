@@ -102,14 +102,17 @@ This section lists what's changed in each update.
 
 ### 2.43
 
-In April's release: 
-- **case sensitive**. Example: **NewVar** is a different variable than **newVar**
-- [Run Power Fx expression](./actions-reference/variables.md/#run-power-fx-expression) action is now available under the [Variables](./actions-reference/variables.md/#variables-actions) group of actions. Run Power Fx expression allows you to execute expressions directly on data sources. 
-- [Collect, Clear, ClearCollect](/power-platform/power-fx/reference/function-clear-collect-clearcollect) Power Fx functions are now supported in desktop flows.  
-- [Patch](/power-platform/power-fx/reference/function-patch) Power Fx functions are now supported in desktop flows.
+In April's release:
+
+* Case sensitivity. For example, *NewVar* is a different variable than *newVar*.
+* [Run Power Fx expression](./actions-reference/variables.md#run-power-fx-expression) action is available under the [Variables](./actions-reference/variables.md#variables-actions) group of actions. Run Power Fx expression allows you to execute expressions directly on data sources.
+* [Collect, Clear, ClearCollect](/power-platform/power-fx/reference/function-clear-collect-clearcollect) Power Fx functions are supported in desktop flows.  
+* [Patch](/power-platform/power-fx/reference/function-patch) Power Fx functions are supported in desktop flows.
+
 >[!NOTE]
->By combining **Run Power Fx expression** action with expressions using [Collect, Clear, ClearCollect](/power-platform/power-fx/reference/function-clear-collect-clearcollect) and [Patch](/power-platform/power-fx/reference/function-patch) functions you can emulate behavior found in the actions **Add item to list** and **Insert row into data table** which are currently not available for Power Fx enabled desktop flows.
-- Variables and Power Fx expressions can now be used in UI element/ web selectors' syntax.
+>By combining **Run Power Fx expression** action with expressions using [Collect, Clear, ClearCollect](/power-platform/power-fx/reference/function-clear-collect-clearcollect), and [Patch](/power-platform/power-fx/reference/function-patch) functions you can emulate behavior found in the actions **Add item to list** and **Insert row into data table** which are currently not available for Power Fx enabled desktop flows.
+
+* Variables and Power Fx expressions can be used in UI element or web selector syntax.
 
 ### 2.42
 
