@@ -39,6 +39,8 @@ There can only be one selected (highlighted) item at a time, even if more items 
 
 <screenshot with disabled options>
 
+## Publish a new UI elements collection
+
 After marking as checked the UI elements you need to include in a new collection, you can select the option **Publish as new collection**, either via the main context menu at the top right of the UI elements pane, or through the context menu of the currently selected (highlighted) element that should be included in the checked ones.
 
 <screenshot with option publish as new collection>
