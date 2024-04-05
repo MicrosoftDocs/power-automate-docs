@@ -51,13 +51,13 @@ After marking as checked the UI elements you need to include in a new collection
 > [!IMPORTANT]
 > - In case you check screens/web pages and UI elements that belong to different desktops at the same time, the option **Publish as new collection** becomes disabled. To create a new collection, all its UI elements need to be captured in the same desktop (Local computer, RDP or Citrix). 
 
-Selecting this option brings up a confirmation dialog, where you can provide a name for the new collection. Furthermore, in case you have already associated any or all of the selected UI elements with UI or web automation actions in your desktop flow, you can also check the 'Auto-update' option below the collection name field. Doing so will automatically update the aforementioned actions for you, so that they no longer reference the UI elements that are only 'locally' available in this flow, but rather their new equivalents that will now be part of the new collection.
+Selecting this option brings up a confirmation dialog, where you can provide a name for the new collection. Furthermore, in case you have already associated any or all of the selected UI elements with UI or web automation actions in your desktop flow, you can also check the 'Auto-update' option below the collection name field. Doing so will automatically update the aforementioned actions for you, so that they no longer reference the UI elements that are only 'locally' available in this flow, but rather their newly created equivalents that will now be part of the new collection.
 
 <screenshot with Publish confirmation dialog>
 
 Upon selecting **Publish**, the flow will enter a *Publishing* state, during which the collection is saved and uploaded in Dataverse, to become available in the specific environment. For as long as publishing takes place, the UI of the flow designer remains disabled.
 
-When the collection is succesfully published in this way, the corresponding success banner appears in the UI elements pane to inform you accordingly. In addition, if you look at the Collections tab, that collection is now automatically imported into this flow from which it was created. More precisely, it is imported by default into the same desktop (for instance Local computer or Remote desktop) where the collection's UI elements were originally captured. This is done automatically for you, to avoid manually importing each new collection you create into the same flow it's generated from.
+When the collection is succesfully published in this way, the corresponding success banner appears in the UI elements pane to inform you accordingly. In addition, if you look at the Collections tab, that collection is now automatically imported into this flow from which it was created. More precisely, it is imported by default into the same desktop (for instance Local computer or Remote desktop) in which the collection's UI elements were originally captured. This is done automatically for you, to avoid manually importing each new collection you create into the same flow it's generated from.
 
 <screenshot with success banner and new collection>
 
@@ -65,9 +65,18 @@ When the collection is succesfully published in this way, the corresponding succ
 > - Picking some UI elements to create a new collection effectively **copies** (rather than moving) those elements from the context of a single flow to the collection entity, which can then be shared and reused in other flows. While the new collection now appears in the Collections tab, the flow's original UI elements are also still available in the Flow repository tab. If the latter are no longer needed and used in the current flow, you can always use the option **Remove unused UI elements** in the UI elements pane's main context menu.
 
 > [!IMPORTANT]
-> - A collection can only include screens/web pages and their UI elements, not the desktop in which they were captured. This is to accommodate using the same collection for a target application, independently of whether it's installed in the local computer for some makers, or in a remote desktop for others. The collection would be imported under the proper desktop in each party's separate flow.
+> - A collection can only include screens/web pages and their UI elements, not the desktop in which they were captured. This accommodates using the same collection for a target application, independently of whether it's installed in the local computer for some makers, or in a remote desktop for others. The collection would be imported under the proper desktop in each party's separate flow.
 
-<tree structure in Collections tab>
+In the Collections tab, as per the above screenshot, the tree structure of the items therein now consists of four levels:
+* The desktop in which the collection has been imported
+* The imported collection
+* The screens/web pages included in the collection
+* The UI elements included in the collection
+
+> [!NOTE]
+> - If needed, you can check multiple UI elements of one or more collections in the Collections tab, to create and publish yet another, new collection, following the same steps that were explained above. In this scenario, auto-updating will still adjust any affected actions, so that they reference the UI elements of the new collection instead of the existing one(s).
+
+After publishing a new collection, the desktop flow needs to be saved to confirm the import of that collection, as this is considered an unsaved change for the flow. However, even if the flow is not saved, the collection still remains published and available in the environment, so that it can be used in other flows.
 
 ## Next steps
 
