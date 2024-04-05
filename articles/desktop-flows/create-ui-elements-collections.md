@@ -33,7 +33,7 @@ To create a new collection of UI elements, the said UI elements need to be captu
 
 ## Marking multiple UI elements as checked
 
-Every item in this tree structure comes with a checkbox, which is checked when that item is selected. Selecting a desktop (i.e. Local computer) also checks all its contained screens/web pages and UI elements, and similarly, selecting a screen or web page also checks all its related UI elements. This works in the opposite way as well - checking all UI elements under a screen/web page will also check the latter, and the same thing applies to screens/web pages and their desktop respectively.
+Every item in this tree structure comes with a checkbox, which is checked when that item is selected. Selecting a desktop (i.e. Local computer) also checks all its contained screens/web pages and UI elements, and similarly, selecting a screen or web page also checks all its related UI elements. This works in the opposite way as well - checking all the UI elements under a screen/web page will also check the latter, and the same thing applies to screens/web pages and their desktop respectively.
 
 There can only be one selected (highlighted) item at a time, even if more items are checked (either automatically when these items are related to the selected one in the elements structure, or manually when multiple items are checked directly via their checkbox). In the context menu of a selected item, the options 'Edit', 'Rename', 'Find usages' and 'Delete' are individual and apply only to the said item. However, these options become disabled, if other unrelated items also happen to be checked, to avoid any potential confusion around the item they target.
 
