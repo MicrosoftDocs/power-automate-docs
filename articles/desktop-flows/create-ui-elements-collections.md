@@ -1,6 +1,6 @@
 ---
 title: Create UI elements collections 
-description: Learn how to create UI elements collections in Power Automate desktop flows.
+description: Learn how to create and publish UI elements collections in Power Automate desktop flows.
 author: iomavrid
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create UI elements collections in desktop flows
+# Create and publish UI elements collections in desktop flows
 
 Creating and publishing a UI elements collection is possible through the flow designer of any desktop flow, old or new. In the UI elements pane, there are now two different tabs available, **Flow repository** and **Collections (preview)**.
 
