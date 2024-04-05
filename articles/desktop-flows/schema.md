@@ -41,7 +41,22 @@ Starting January 2024, v2 schema will be automatically enabled for all environme
 
 :::image type="content" source="media/schema/schema-v2-off.png" alt-text="The option in the Power Platform Admin Center to opt-out of schema v2 enabled by default.":::
 
-Later in 2024, v2 schema will be turned on for all environments without the option to disable the feature. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
+Later in 2024, v2 schema will be turned on for all environments without the option to disable the feature and the option will not be visible in Power Platform admin center. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
+
+As of April 1st 2024, the v2 schema has been enabled by default in the following geography:
+- Canada
+- South Africa
+- Switzerland
+- Norway
+- Korea
+- South America
+- Australia
+- Singapore
+- United-Kingdom
+- India
+- France
+- Germany
+- UAE
 
 ## Manage desktop flows in environments with the v2 schema enabled
 
