@@ -52,5 +52,9 @@ The UI elements collections tab shows you the UI elements collections that are p
 - [Create custom actions](create-custom-actions.md)
 - [Upload custom actions](upload-custom-actions.md)
 - [Use custom actions](use-custom-actions.md)
+- [UI elements collections](ui-elements-collections.md)
+- [Create and publish UI elements collections](create-ui-elements-collections.md)
+- [Manage UI elements collections](manage-ui-elements-collections.md)
+- [Use and update UI elements collections](use-update-ui-elements-collections.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
