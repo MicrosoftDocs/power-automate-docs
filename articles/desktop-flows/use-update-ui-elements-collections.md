@@ -32,15 +32,28 @@ Alternatively, use the **Tools** bar.
 > [!IMPORTANT]
 > This feature requires Power Automate for desktop v2.43 or later.
 
-## UI elements collections (preview) tab
+## Import collections through the UI elements collections (preview) tab
 
 The [UI elements collections](ui-elements-collections.md) tab shows you the collections that are published in the environment you've selected.
 
 > [!NOTE]
-> You can only see UI elements collections tha you own or are shared with you.
+> You can only see UI elements collections that you have created or are shared with you.
 
 <screenshot with collections tab in assets library>
 
+After selecting the collection you want to add to your flow, you also need to select a specific desktop under which the collection will be imported. This will determine in which desktop will the collection's UI elements be searched for, when the flow runs.
+
+<screenshot with confirmation dialog to select a machine>
+
+> [!NOTE]
+> The list of available desktops includes the local computer, the RDP and/or Citrix desktops that may have already been added in the Flow repository tab, as well as any currently active RDP an/or Citrix connections in your machine.
+
+> [!NOTE]
+> Each collection can only be imported in one target desktop per flow.
+
+After you complete the collection inclusion and close the assets library, the collection will now appear in the Collections (preview) tab of the UI elements pane, under the desktop that was previously selected.
+
+<screenshot with collections tab and imported collection>
 
 ### See also
 
