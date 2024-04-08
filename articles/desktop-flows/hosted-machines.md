@@ -154,7 +154,7 @@ To create a hosted machine:
 
         Alternatively, you can select a [custom VM image](#use-custom-vm-images-for-your-hosted-machine) that has been shared with your account.
 
-    1. Optionally, select the [custom network connection](#use-a-custom-virtual-network-for-your-hosted-machines) you want your hosted machine to be provisioned with Microsoft Entra ID. Otherwise, you'll automatically connect to the Microsoft Hosted Network.
+    1. Optionally, select the [custom network connection](#use-a-custom-virtual-network-for-your-hosted-machines) you want your hosted machine to be provisioned with. Otherwise, you'll automatically connect to the Microsoft Hosted Network.
 
     1. Review and create your hosted machine.
 
@@ -399,9 +399,18 @@ The last step before being able to reference your virtual network from Power Aut
     - **Network connection name:** A unique name to identify the network connection.
     - **Description:** An optional description for the network connection.
 
-1. Select one of the virtual networks available in Azure that meets the network requirement.
+1. Select one of the **Azure virtual network** available in Azure that meets the network requirement.
 
-1. Select the subnet that the hosted machine will use.
+1. Select the **Subnet** that the hosted machine will use.
+
+1. Select the **Domain join type** that the machine will use
+
+1. If the 'Microsoft Entra hybrid join (preview)' is selected, the following information is required:
+   - **DNS domain name** : The DNS name of the Active Directory domain that you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
+   - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain, which can hold users, groups, and computers. Make sure that this OU is enabled to sync with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
+   - **Username UPN** : The username, in user principal name (UPN) format, that you want to use for connecting the hosted machines to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
+   - **Domain password** : The password for the user.
+
 
 :::image type="content" source="media/hosted-machines/create-network-connection.png" alt-text="Screenshot of the New network connection dialog.":::
 
