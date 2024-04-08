@@ -65,6 +65,7 @@ This section presents all the prerequisites to create and use hosted machines.
 
 - A valid and working Intune and Microsoft Entra tenant.
 - Ensure that Intune device type enrollment restrictions are set to **Allow Windows (MDM) platform for corporate enrollment**.
+- Infrastructure configuration: If your organization has an on-premises Active Directory implementation and you want your machines to be joined to it, you must configure your infrastructure to automatically Microsoft Entra hybrid join any devices that domain join to the on-premises Active Directory. This [configuration lets them be recognized and managed in the cloud](/azure/active-directory/devices/overview).
 
 To find more information about the Microsoft Entra and Intune requirements, go to [Windows 365 requirements](/windows-365/enterprise/requirements?tabs=enterprise%2Cent#azure-active-directory-and-intune-requirements).
 
