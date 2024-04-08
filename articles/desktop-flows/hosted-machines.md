@@ -65,7 +65,6 @@ This section presents all the prerequisites to create and use hosted machines.
 
 - A valid and working Intune and Microsoft Entra tenant.
 - Ensure that Intune device type enrollment restrictions are set to **Allow Windows (MDM) platform for corporate enrollment**.
-- Infrastructure configuration: If your organization has an on-premises Active Directory implementation and you want your machines to be joined to it, you must configure your infrastructure to automatically Microsoft Entra hybrid join any devices that domain join to the on-premises Active Directory. This [configuration lets them be recognized and managed in the cloud](/azure/active-directory/devices/overview).
 
 To find more information about the Microsoft Entra and Intune requirements, go to [Windows 365 requirements](/windows-365/enterprise/requirements?tabs=enterprise%2Cent#azure-active-directory-and-intune-requirements).
 
@@ -335,6 +334,31 @@ The virtual network needs to be created in the same location with your hosted ma
 - United Kingdom: UK South
 - United States: East US
 
+### Additional requirement for Microsoft Entra hybrid joined hosted machines (preview)
+
+If your organization has an on-premises Active Directory implementation and you want your hosted machines to be joined to it, you can accomplish this by doing Microsoft Entra hybrid join. 
+
+To use your own network and provision Microsoft Entra hybrid joined machines, you must meet the following requirements:
+
+#### Domain requirements
+
+ - You must configure your infrastructure to automatically Microsoft Entra hybrid join any devices that domain join to the on-premises Active Directory. This [configuration lets them be recognized and managed in the cloud](/azure/active-directory/devices/overview).
+ - Microsoft Entra hybrid joined hosted machines require network line of sight to your on-premises domain controllers periodically. Without this connection, devices become unusable. For more information, see [Plan your Microsoft Entra hybrid join deployment](/azure/active-directory/devices/hybrid-join-plan).
+ - If an organizational unit is specified, ensure it exists and is valid.
+ - An Active Directory user account with sufficient permissions to join the computer into the specified organizational unit within the Active Directory domain. If you don't specify an organizational unit, the user account must have sufficient permissions to join the computer to the Active Directory domain.
+ - User accounts that are creators of hosted machines must have a synced identity available in both Active Directory and Microsoft Entra ID.
+
+#### Role and identity requirements
+
+Hosted machines users must be configured with [hybrid identities](/azure/active-directory/hybrid/whatis-hybrid-identity) so that they can authenticate with resources both on-premises and in the cloud.
+
+#### DNS requirements
+
+As part of the Microsoft Entra hybrid join requirements, your hosted machines must be able to join on-premises Active Directory. That requires that the hosted machines be able to resolve DNS records for your on-premises AD environment.
+Configure your Azure Virtual Network where the hosted machines are provisioned as follows:
+1.	Make sure that your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
+2.	From the Azure Virtual Network's Settings, select DNS Servers and then choose Custom.
+3.	Enter the IP address of DNS servers that environment that can resolve your AD DS domain.
 
 ### Share the virtual network with Windows 365 service principal
 
