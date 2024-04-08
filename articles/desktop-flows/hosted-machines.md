@@ -411,7 +411,7 @@ The last step before being able to reference your virtual network from Power Aut
    - **Username UPN** : The username, in user principal name (UPN) format, that you want to use for connecting the hosted machines to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
    - **Domain password** : The password for the user.
     > [!NOTE]
-    > It takes  10-15 minutes to provision a new network connection with Microsoft Entra hybrid join (preview) domain join type.
+    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join (preview) domain join type.
 
 :::image type="content" source="media/hosted-machines/create-network-connection.png" alt-text="Screenshot of the New network connection dialog.":::
 
