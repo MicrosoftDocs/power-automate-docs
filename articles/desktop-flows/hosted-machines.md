@@ -334,7 +334,7 @@ The virtual network needs to be created in the same location with your hosted ma
 - United Kingdom: UK South
 - United States: East US
 
-### Additional requirement for Microsoft Entra hybrid joined hosted machines (preview)
+### Additional requirements for Microsoft Entra hybrid joined hosted machines (preview)
 
 If your organization has an on-premises Active Directory implementation and you want your hosted machines to be joined to it, you can accomplish this by doing Microsoft Entra hybrid join. 
 
@@ -405,7 +405,7 @@ The last step before being able to reference your virtual network from Power Aut
 
 1. Select the **Domain join type** that the machine will use
 
-1. If the 'Microsoft Entra hybrid join (preview)' is selected, the following information is required:
+1. If the **'Microsoft Entra hybrid join (preview)'** is selected, the following information is required:
    - **DNS domain name** : The DNS name of the Active Directory domain that you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
    - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain, which can hold users, groups, and computers. Make sure that this OU is enabled to sync with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
    - **Username UPN** : The username, in user principal name (UPN) format, that you want to use for connecting the hosted machines to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
