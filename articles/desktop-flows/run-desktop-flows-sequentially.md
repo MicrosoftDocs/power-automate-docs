@@ -8,6 +8,7 @@ ms.date: 02/15/2023
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
+  - iomavrid
 search.audienceType: 
   - flowmaker
   - enduser
@@ -27,7 +28,7 @@ You can [view the state of the queues in real time](monitor-desktop-flow-queues.
 
 > [!IMPORTANT]
 >
-> - A time-out occurs when desktop flows don’t run within three hours after being requested.
+> - A time-out occurs when desktop flows don’t run within six hours after being requested.
 > - The presented orchestration rules apply to desktop flow runs scheduled by any user on the same device.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
