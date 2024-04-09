@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/24/2024
+ms.date: 04/09/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -334,19 +334,25 @@ The virtual network needs to be created in the same location with your hosted ma
 - United Kingdom: UK South
 - United States: East US
 
-### Additional requirements for Microsoft Entra hybrid joined hosted machines (preview)
+### More requirements for Microsoft Entra hybrid joined hosted machines (preview)
 
-If your organization has an on-premises Active Directory implementation and you want your hosted machines to be joined to it, you can accomplish this by doing Microsoft Entra hybrid join. 
+[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
+
+If your organization has an on-premises Active Directory implementation and you want your hosted machines to be joined to it, you can accomplish this task with Microsoft Entra hybrid join.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - [!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
 
 To use your own network and provision Microsoft Entra hybrid joined machines, you must meet the following requirements:
 
 #### Domain requirements
 
- - You must configure your infrastructure to automatically Microsoft Entra hybrid join any devices that domain join to the on-premises Active Directory. This [configuration lets them be recognized and managed in the cloud](/azure/active-directory/devices/overview).
- - Microsoft Entra hybrid joined hosted machines require network line of sight to your on-premises domain controllers periodically. Without this connection, devices become unusable. For more information, see [Plan your Microsoft Entra hybrid join deployment](/azure/active-directory/devices/hybrid-join-plan).
- - If an organizational unit is specified, ensure it exists and is valid.
- - An Active Directory user account with sufficient permissions to join the computer into the specified organizational unit within the Active Directory domain. If you don't specify an organizational unit, the user account must have sufficient permissions to join the computer to the Active Directory domain.
- - User accounts that are creators of hosted machines must have a synced identity available in both Active Directory and Microsoft Entra ID.
+- You must configure your infrastructure to automatically Microsoft Entra hybrid join any devices that domain joins to the on-premises Active Directory. This [configuration lets them be recognized and managed in the cloud](/azure/active-directory/devices/overview).
+- Microsoft Entra hybrid joined hosted machines require network line of sight to your on-premises domain controllers periodically. Without this connection, devices become unusable. For more information, see [Plan your Microsoft Entra hybrid join deployment](/azure/active-directory/devices/hybrid-join-plan).
+- If an organizational unit is specified, ensure it exists and is valid.
+- An Active Directory user account with sufficient permissions to join the computer into the specified organizational unit within the Active Directory domain. If you don't specify an organizational unit, the user account must have sufficient permissions to join the computer to the Active Directory domain.
+- User accounts that are creators of hosted machines must have a synced identity available in both Active Directory and Microsoft Entra ID.
 
 #### Role and identity requirements
 
@@ -356,9 +362,10 @@ Hosted machines users must be configured with [hybrid identities](/azure/active-
 
 As part of the Microsoft Entra hybrid join requirements, your hosted machines must be able to join on-premises Active Directory. That requires that the hosted machines be able to resolve DNS records for your on-premises AD environment.
 Configure your Azure Virtual Network where the hosted machines are provisioned as follows:
-1.	Make sure that your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
-2.	From the Azure Virtual Network's Settings, select DNS Servers and then choose Custom.
-3.	Enter the IP address of DNS servers that environment that can resolve your AD DS domain.
+
+1. Make sure your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
+1. From the Azure Virtual Network's Settings, select DNS Servers and then choose Custom.
+1. Enter the IP address of DNS servers that environment that can resolve your AD DS domain.
 
 ### Share the virtual network with Windows 365 service principal
 
@@ -401,14 +408,14 @@ The last step before being able to reference your virtual network from Power Aut
 
 1. Select one of the **Azure virtual network** available in Azure that meets the network requirement.
 
-1. Select the **Subnet** that the hosted machine will use.
+1. Select the **Subnet** the hosted machine will use.
 
-1. Select the **Domain join type** that the machine will use
+1. Select the **Domain join type** the machine will use.
 
 1. If the **'Microsoft Entra hybrid join (preview)'** is selected, the following information is required:
-   - **DNS domain name** : The DNS name of the Active Directory domain that you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
+   - **DNS domain name** : The DNS name of the Active Directory domain you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
    - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain, which can hold users, groups, and computers. Make sure that this OU is enabled to sync with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
-   - **Username UPN** : The username, in user principal name (UPN) format, that you want to use for connecting the hosted machines to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
+   - **Username UPN** : The username, in user principal name (UPN) format, you want to use for connecting the hosted machines to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
    - **Domain password** : The password for the user.
     > [!NOTE]
     > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join (preview) domain join type.
