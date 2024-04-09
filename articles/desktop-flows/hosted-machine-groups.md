@@ -174,7 +174,7 @@ Learn how to create a generalized VM image in Azure in [Upload a generalized Win
 
 > [!IMPORTANT]
 >
-> Starting May 2nd, 2024, we will be updating the region mapping for environments in the United States and United Kingdom to ensure our services are deployed in regions with Azure Availability Zones support. For more information, see the [geographic availability and restrictions](#geographic_availability_and_restrictions).
+> Starting May 2nd, 2024, we will be updating the region mapping for environments in the United States and United Kingdom to ensure our services are deployed in regions with Azure Availability Zones support. For more information, see the [geographic availability and restrictions](#geographic-availability-and-restrictions).
 
 ### Share the Azure compute gallery with Power Automate Hosted Machine Groups service principal
 
