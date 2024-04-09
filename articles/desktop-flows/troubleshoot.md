@@ -69,8 +69,7 @@ The tool also provides other functionality such as getting the name of the accou
 
 ## Troubleshoot desktop flow runs
 
-When your desktop flows fails, go to [Errors when running attended or unattended desktop flows](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-errors-running-attended-or-unattended-desktop-flows) documentation that provides the mitigation steps for the error codes.
-
+If your desktop flow run fails, go to [Errors when running attended or unattended desktop flows](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-errors-running-attended-or-unattended-desktop-flows) and find mitigation steps for different error codes.
 
 ## Collect machine logs
 
