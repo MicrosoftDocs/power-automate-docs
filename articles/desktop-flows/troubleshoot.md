@@ -4,7 +4,7 @@ description: See how to troubleshoot common issues of Power Automate desktop flo
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 03/26/2024
+ms.date: 04/09/2024
 ms.author: pefelesk
 ms.reviewer: tapanm
 contributors:
@@ -69,22 +69,7 @@ The tool also provides other functionality such as getting the name of the accou
 
 ## Troubleshoot desktop flow runs
 
-> [!IMPORTANT]
-> Gateways for desktop flows are now deprecated except for the China region. Switch to our machine-management capabilities. [Learn more about the switch from gateways to direct connectivity.](manage-machines.md#switch-from-gateways-to-direct-connectivity)
-
-- If your unattended desktop flow fails with the **cannot create new session** message, perform the following steps to resolve the issue:
-
-    1. On Windows 10 or Windows 11, confirm that you don't have an active user session locked or unlocked on your target machine.
-
-    2. On Windows Server (2016, 2019, or 2022), confirm that you have yet to reach the maximum number of active user sessions configured for your device. Desktop flows can only run if they can create new sessions.
-
-- If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. To find more information regarding gateway troubleshooting, go to [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
-
-- If the **gateway status** is **online**, try the following actions:
-
-   1. Confirm that the Power Automate for desktop app and services are running on your device.
-
-   1. Restart the service on your device.
+If your desktop flow run fails, go to [Errors when running attended or unattended desktop flows](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-errors-running-attended-or-unattended-desktop-flows) and find mitigation steps for different error codes.
 
 ## Collect machine logs
 
@@ -121,16 +106,6 @@ If the agent for virtual desktops can't communicate with Power Automate for desk
     ``` PowerShell
     regsvr32  .\Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin.dll
     ```
-
-## Troubleshoot missing on-premises data gateway
-
-> [!IMPORTANT]
-> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. To learn more, go to [Switch from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
-
-The following reasons might cause you to not find your on-premises data gateway in the displayed list on the Power Automate portal.
-
-- The gateway may be installed in a different region than your Power Automate region. To resolve this issue, uninstall the gateway from the device, and then reinstall it, selecting [the correct Power Automate region](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
-- The gateway has been deleted by its owner.
 
 ## Troubleshoot hosted machines
 
