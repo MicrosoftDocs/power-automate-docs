@@ -11,19 +11,20 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/07/2021
+ms.date: 04/04/2024
 ms.author: kenseongtan
 ms.reviewer: matp
 contributors:
+- rpapostolis
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 # Monitor desktop flow runs
-
 
 As you scale the automations in your business, you may need an easy way to ensure all your desktop flows are running as expected. Monitor all your desktop flow runs in just one location to keep your automations running smoothly. 
 
@@ -45,10 +46,9 @@ In order to see runs in this list, one of the following must be true:
 > [!TIP]
 > To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources. 
 
-> [!NOTE]
-> There is a limit of 10,000 actions in the actions log for a desktop flow. If there are more than 10,000 actions in your desktop flow, divide it into multiple flows if you want to see all actions in the logs.
-
- 
+> [!IMPORTANT]
+> - For each desktop flow run initiated by a cloud flow, there’s a maximum action log capacity of 32 MB. This capacity translates to roughly 50,000 to 80,000 action log entries. However, if you start a local attended desktop flow from the Power Automate desktop console, it will only store the first 10,000 log entries. Once this limit is reached, any subsequent actions aren't recorded in the log. If you encounter this limitation, you can split your flow into smaller, separate flows.
+> - For desktop flows that are launched within the Power Automate desktop designer itself, no action logs are collected.
 
 ## Desktop flow run information 
 
