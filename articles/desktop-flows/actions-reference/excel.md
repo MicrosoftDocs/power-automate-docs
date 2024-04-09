@@ -795,16 +795,16 @@ This action doesn't produce any variables.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
-|Sort column in|N/A|Active sheet, Table, Range|Active sheet|Specify whether the column to be sorted is part of a table, a specified range, either by name or absolute coordinates or if it is part of the general active worksheet|
+|Sort column in|N/A|Active sheet, Table, Range|Active sheet|Specify whether the column to be sorted is part of a table, a specified range, either by name or absolute coordinates or if it's part of the general active worksheet.|
 |Table name|No|[Text value](../variable-data-types.md#text-value)||The name of the table.|
-|Range|N/A|Named cells, Specific range|Named cells|Specify the range to be sorted, either using named cell or absolute column/row index|
-|Cells name|No|[Text value](../variable-data-types.md#text-value)||Name representing the range|
+|Range|N/A|Named cells, Specific range|Named cells|Specify the range to be sorted, either using named cell or absolute column and row index.|
+|Cells name|No|[Text value](../variable-data-types.md#text-value)||Name representing the range.|
 |Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column.|
 |Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The first row number. The numbering starts from 1.|
 |End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column.|
 |End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number. The numbering starts from 1.|
-|Sort by|Yes|Sorting rules as defined by the user|N/A|Sorting rules to apply|
-|First row is header|Yes|[Boolean value](../variable-data-types.md#boolean-value)||Indicates that the first row of the worksheet is a header|
+|Sort by|Yes|Sorting rules as defined by the user|N/A|Sorting rules to apply.|
+|First row is header|Yes|[Boolean value](../variable-data-types.md#boolean-value)||Indicates that the first row of the worksheet is a header.|
 
 ### Variables produced
 
@@ -814,26 +814,27 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Failed to sort cells in worksheet|Indicates a problem sorting cells in the worksheet|
+|Failed to sort cells in worksheet|Indicates a problem sorting cells in the worksheet.|
 
 ## <a name="filtercellsfromexcel"></a> Filter cells in Excel worksheet
 
-**Filter cells in Excel worksheet** allows makers to create and apply a filter in the active sheet, table or range on the values of a specified column. To filter multiple columns in an active sheet/table/range, multiple **Filter cells in Excel worksheet** actions must be used, each one applying the respective filter.
+**Filter cells in Excel worksheet** allows makers to create and apply a filter in the active sheet, table, or range on the values of a specified column. To filter multiple columns in an active sheet/table/range, multiple **Filter cells in Excel worksheet** actions must be used, each one applying the respective filter.
+
 >[!IMPORTANT]
 >To apply multiple filters in a specific active sheet/table/range, make sure that all **Filter cells in Excel worksheet** actions used target the same source (active sheet/table/range).
 
 When using the **Filter cells in Excel worksheet** in an active sheet/range with already existing/applied filters:
-- If the targeted range is the same as the one the previous filters have been applied on, all filters will be applied.
-- If the targeted range is not the same as the one previous filters have been applied on, previous filters will be cleared and only the latest one will be applied: 
-- If the targeted range is a table, all filters will be applied.
 
+* If the targeted range is the same as the one the previous filters were applied on, all filters are applied.
+* If the targeted range isn't the same as the range previous filters were applied on, previous filters are cleared, and only the latest one is applied.
+* If the targeted range is a table, all filters are applied.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
-|Filter column in|N/A|Active sheet, Table, Range|Active sheet|Specify whether the column to be filtered is part of a table, a specified range, either by name or absolute coordinates or if it is part of the general active worksheet|
+|Filter column in|N/A|Active sheet, Table, Range|Active sheet|Specify whether the column to be filtered is part of a table, a specified range, either by name or absolute coordinates or if it's part of the general active worksheet|
 |Table name|No|[Text value](../variable-data-types.md#text-value)||The name of the table.|
 |Range|N/A|Named cells, Specific range|Named cells|Specify the range to be filtered, either using named cell or absolute column/row index|
 |Cells name|No|[Text value](../variable-data-types.md#text-value)||Name representing the range|
@@ -844,7 +845,6 @@ When using the **Filter cells in Excel worksheet** in an active sheet/range with
 |Column to filter|No|[Text value](../variable-data-types.md#text-value)||Name or index of the column to be filtered. If the column is part of a table use the header name.|
 |Filters to apply|Yes|Filtering rules as defined by the user|N/A|Filtering rules applied to the defined column|
 
-
 ### Variables produced
 
 This action doesn't produce any variables.
@@ -853,7 +853,7 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Failed to apply filter on cells in worksheet|Indicates a problem applying the scecified filter on cells in the worksheet|
+|Failed to apply filter on cells in worksheet|Indicates a problem applying the specified filter on cells in the worksheet|
 
 ## <a name="clearfilterfromexcel"></a> Clear filters in Excel worksheet
 
@@ -864,7 +864,7 @@ This action doesn't produce any variables.
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
 |Clear filters in|N/A|Active sheet, Table|Active sheet|Specify whether to clear filters from the entire active worksheet or from a specific table.|
 |Table name|No|[Text value](../variable-data-types.md#text-value)||The name of the table.|
-|Clear filters from specific column|Yes|[Boolean value](../variable-data-types.md#boolean-value)||Clear filters from specific column|
+|Clear filters from specific column|Yes|[Boolean value](../variable-data-types.md#boolean-value)||Clear filters from specific column.|
 |Clear filter in column|No|[Text value](../variable-data-types.md#text-value)||The column name to clear applied filter.|
 
 
@@ -876,7 +876,7 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Failed to clear filter on cells in worksheet|Indicates a problem applying the scecified filter on cells in the worksheet|
+|Failed to clear filter on cells in worksheet|Indicates a problem applying the specified filter on cells in the worksheet|
 
 ## <a name="getemptycellfromexcel"></a> Get empty cell
 
@@ -885,12 +885,12 @@ This action doesn't produce any variables.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
-|Operation|N/A|First empty cell, First empty cell in column, First empty cell in row, All empty cells|First empty cell|Specify whether to search for the first empty cell, the first empty cell on column, the first empty cell on row or all empty cells inside a specific range.|
-|Search direction|N/A|By row, By column|By row|Specify whether to seach by rows or columns to find the first empty cell inside a specific range.|
+|Operation|N/A|First empty cell, First empty cell in column, First empty cell in row, All empty cells|First empty cell|Specify whether to search for the first empty cell, the first empty cell on column, the first empty cell on row, or all empty cells inside a specific range.|
+|Search direction|N/A|By row, By column|By row|Specify whether to search by rows or columns to find the first empty cell inside a specific range.|
 |Search in|N/A|Named cells, Specific range|Named cells|Search for empty cell in a named cell or a range defined by start column/row and end column/row.|
-|Cells name|No|[Text value](../variable-data-types.md#text-value)||Name representing the range|
-|Column|No|[Text value](../variable-data-types.md#text-value)||Column|
-|Row|No|[Numeric value](../variable-data-types.md#numeric-value)||Row|
+|Cells name|No|[Text value](../variable-data-types.md#text-value)||Name representing the range.|
+|Column|No|[Text value](../variable-data-types.md#text-value)||Column.|
+|Row|No|[Numeric value](../variable-data-types.md#numeric-value)||Row.|
 |Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column.|
 |Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The first row number. The numbering starts from 1.|
 |End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column.|
@@ -900,15 +900,15 @@ This action doesn't produce any variables.
 
 |Argument|Type|Description|
 |-----|-----|-----|
-|EmptyCellColumnIndex|[Numeric value](../variable-data-types.md#numeric-value)|The index of the column the first empty cell is found|
-|EmptyCellRowIndex|[Numeric value](../variable-data-types.md#numeric-value)|The index of the row the first empty cell is found|
-|EmptyCells|[Datatable](../variable-data-types.md#datatable)|The list of empty cells found|
+|EmptyCellColumnIndex|[Numeric value](../variable-data-types.md#numeric-value)|The index of the column the first empty cell is found.|
+|EmptyCellRowIndex|[Numeric value](../variable-data-types.md#numeric-value)|The index of the row the first empty cell is found.|
+|EmptyCells|[Datatable](../variable-data-types.md#datatable)|The list of empty cells found.|
 
 ### <a name="getemptycellfromexcel_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
-|Get empty cells failed|Indicates a problem retrieving the empty cells from the worksheet|
+|Get empty cells failed|Indicates a problem retrieving the empty cells from the worksheet.|
 
 ## Known limitations
 
