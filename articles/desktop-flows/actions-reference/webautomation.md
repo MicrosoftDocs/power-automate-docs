@@ -4,7 +4,7 @@ description: See all the available browser automation actions.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 03/06/2024
+ms.date: 04/09/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -655,7 +655,7 @@ Hover the mouse over an element of a web page.
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to hover|
-|Move mouse to hover|No|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to physically move the mouse cursor over the element in order to hover the UI element. A physical hover is required for cases where emulated hover doesn't perform the intentional action on the element. As this option requires the browser window to be focused, it will automatically bring it to the foreground.|
+|Move mouse to hover|No|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to physically move the mouse cursor over the element in order to hover the UI element. A physical hover is required for cases where emulated hover doesn't perform the intentional action on the element. As this option requires the browser window to be focused, it automatically brings it to the foreground.|
 
 ### Variables produced
 
