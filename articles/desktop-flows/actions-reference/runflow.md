@@ -4,10 +4,11 @@ description: See how to use the Run desktop flow actions.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 01/30/2024
+ms.date: 03/14/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 search.audienceType: 
@@ -23,7 +24,7 @@ To find more information about how to use the **Run desktop flow** action, go to
 
 >[!NOTE]
 >
-> - A flow's dependencies can't be more than 30 other flows.
+> - A flow's dependencies can't be more than 150 other flows.
 > - Two flows can't directly or indirectly call one-another as this causes a recursion.
 > - In org tenants, the flows must be under the same environment.
 
