@@ -4,7 +4,7 @@ description: See all the available scripting actions.
 author: cochamos
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 01/29/2024
+ms.date: 04/04/2024
 ms.author: cochamos
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
@@ -13,6 +13,7 @@ contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
