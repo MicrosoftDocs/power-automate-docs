@@ -340,9 +340,7 @@ The virtual network needs to be created in the same location with your hosted ma
 
 If your organization has an on-premises Active Directory implementation and you want your hosted machines to be joined to it, you can accomplish this task with Microsoft Entra hybrid join.
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - [!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
 
 To use your own network and provision Microsoft Entra hybrid joined machines, you must meet the following requirements:
 
