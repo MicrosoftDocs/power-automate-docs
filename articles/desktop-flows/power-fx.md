@@ -61,6 +61,7 @@ Examples:
 - To include an interpolated value in an input use the following syntax: Lorem ipsum **${variable/ expression}** lorem ipsum
   - Example: The total number is **${Sum(10, 20)}** 
 - Variable names in Power Fx enabled desktop flows are **case sensitive**. Example: **NewVar** is a different variable than **newVar**
+- To include an interpolated value in the syntax of a UI/Web element selector, follow this syntax: **$${** Power Fx expression **}**
 
 ## Available Power Fx functions 
 
@@ -105,15 +106,17 @@ This section lists what's changed in each update.
 
 In April's release:
 
-* Case sensitivity. For example, *NewVar* is a different variable than *newVar*.
-* [Run Power Fx expression](./actions-reference/variables.md#run-power-fx-expression) action is available under the [Variables](./actions-reference/variables.md#variables-actions) group of actions. Run Power Fx expression allows you to execute expressions directly on data sources.
-* [Collect, Clear, ClearCollect](/power-platform/power-fx/reference/function-clear-collect-clearcollect) Power Fx functions are supported in desktop flows.  
-* [Patch](/power-platform/power-fx/reference/function-patch) Power Fx functions are supported in desktop flows.
+- Case sensitivity. For example, *NewVar* is a different variable than *newVar*.
+- [Run Power Fx expression](./actions-reference/variables.md#run-power-fx-expression) action is available under the [Variables](./actions-reference/variables.md#variables-actions) group of actions. Run Power Fx expression allows you to execute expressions directly on data sources.
+- [Collect, Clear, ClearCollect](/power-platform/power-fx/reference/function-clear-collect-clearcollect) Power Fx functions are supported in desktop flows.  
+- [Patch](/power-platform/power-fx/reference/function-patch) Power Fx functions are supported in desktop flows.
+- Variables and Power Fx expressions can be used in UI element or web selector syntax.
 
->[!NOTE]
->By combining **Run Power Fx expression** action with expressions using [Collect, Clear, ClearCollect](/power-platform/power-fx/reference/function-clear-collect-clearcollect), and [Patch](/power-platform/power-fx/reference/function-patch) functions you can emulate behavior found in the actions **Add item to list** and **Insert row into data table** which are currently not available for Power Fx enabled desktop flows.
-
-* Variables and Power Fx expressions can be used in UI element or web selector syntax.
+> [!IMPORTANT]
+> In version 2.43 of Power Automate for desktop, there have been updates for Power Fx enabled desktop flows that could impact the execution of Power Fx enabled desktop flows created with previous versions.
+Specifically: 
+> - **Case-sensitive variable names**: Variable names within Power Fx enabled desktop flows are from now case-sensitive. This means that if you previously referenced a variable using multiple case-insensitive sequences within a desktop flow, it may now generate different variables depending on the case-insensitive sequences used. This change may result in both desing and runtime errors. It is strongly advised to review and verify the expected produced variables by opening the Power Fx desktop flows created with **Power Automate for desktop version 2.42 and earlier**. 
+> - **Power Fx Expressions in Controls**: You can now incorporate Power Fx expressions directly into controls using the **string interpolation notation ( ${** Power Fx expression **} )**. Due to this update, if a control or selector generated with a previous version of Power Automate for desktop contains the string interpolation notation, it will result in a validation error during the compilation of the control. It's recommended to review UI element selectors generated with Power Automate for desktop **version 2.42 and earlier** and modify the string interpolation notation to **begin with a double dollar sign ($${** Power Fx expression **})**. 
 
 ### 2.42
 
