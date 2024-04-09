@@ -4,7 +4,7 @@ description: Learn how to create and use hosted machine groups to distribute you
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/26/2024
+ms.date: 04/09/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -174,7 +174,7 @@ Learn how to create a generalized VM image in Azure in [Upload a generalized Win
 
 > [!IMPORTANT]
 >
-> Starting May 2nd, 2024, we will be updating the region mapping for environments in the United States and United Kingdom to ensure our services are deployed in regions with Azure Availability Zones support. Refer to the [geographical availabilities and restriction](#geographical-availabilitiesrestrictions) section for more information.
+> Starting May 2nd, 2024, we will be updating the region mapping for environments in the United States and United Kingdom to ensure our services are deployed in regions with Azure Availability Zones support. For more information, see the [geographic availability and restrictions](#geographic_availability_and_restrictions).
 
 ### Share the Azure compute gallery with Power Automate Hosted Machine Groups service principal
 
@@ -488,7 +488,7 @@ To prevent users from creating hosted machine groups with work or school account
 
 This section presents all the limitation of hosted machine groups.
 
-### Geographical availabilities/restrictions
+### Geographic availability and restrictions
 
 > [!IMPORTANT]
 >
@@ -496,7 +496,7 @@ This section presents all the limitation of hosted machine groups.
 > - United States: West US -> East US 
 > - United Kingdom: UK West -> UK South
 >   
-> After the transition date, all new hosted machine groups will be provisioned in the updated region. If you have an existing hosted machine group that was provisioned before the transition, you will have the option to reprovision your hosted machine group via the Power Automate portal. If you’re using a custom VM image, please ensure that the VM image version has been replicated to the updated region before reprovisioning your hosted machine group. Please ensure that there are no desktop flow runs queued on the hosted machine group before running the reprovisioning process.
+> After the transition date, all new hosted machine groups will be provisioned in the updated region. If you have an existing hosted machine group that was provisioned before the transition, you will have the option to reprovision your hosted machine group via the Power Automate portal. If you’re using a custom VM image, please ensure that the VM image version has been replicated to the updated region before you reprovision your hosted machine group. Please ensure there are no desktop flow runs queued on the hosted machine group before you run the reprovision process.
 
 The following list displays all the supported geographies in the public clouds:
 - Asia
