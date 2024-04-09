@@ -4,7 +4,7 @@ description: Learn about the available SAP GUI actions in Power Automate for des
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/06/2023
+ms.date: 04/09/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -15,11 +15,13 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# SAP GUI actions
+# SAP automation actions
 
-Our group of actions for SAP GUI automation provides a set of tools to help streamline and automate your SAP workflows. With these actions, you can easily launch the SAP GUI app, create new sessions, select menu items, start and end transactions, and more.
+Our group of actions for SAP automation provides a set of tools to help streamline and automate your SAP workflows. With these actions, you can easily launch the SAP GUI app, create new sessions, select menu items, start and end transactions, and more.
 
-Additionally, these actions can be seamlessly integrated with the other actions available in Power Automate for desktop, including the UI automation group of actions. This group of actions enables you to interact with all SAP GUI UI elements, such as clicking, inserting text, and extracting data. By combining our SAP GUI automation actions with the UI automation group of actions, you create powerful RPA workflows that automate even the most complex SAP processes.
+With the actions of the SAP automation group, you can easily interact with SAP UI elements by clicking on them, filling in text fields, and extracting their data. To do this, simply enter the SAP UI element ID attribute value. If you don't know the ID value, you can use the Power Automate for desktop UI element picker to capture the required SAP element and retrieve its ID value. When you capture a SAP UI element in this way, only the element's ID value will be recovered, and no UI element will be added to the desktop flow's UI element repository.
+
+Our SAP automation actions can also be integrated seamlessly with other actions available in Power Automate for desktop, including the UI automation group of actions. This group of actions allows you to capture all SAP GUI UI elements and add them to the desktop flow's UI element repository. By combining our SAP GUI automation actions with the UI automation group of actions, you can create powerful RPA workflows that automate even the most complex SAP processes.
 
 > [!NOTE]
 > Power Automate for desktop supports automation with SAP GUI version 750 or later.
@@ -176,5 +178,79 @@ This action doesn't produce any variables.
 |Exception|Description|
 |-----|-----|
 |End SAP transaction action fails |Indicates a problem ending a SAP transaction.|
+
+<a name="click"></a> Click SAP UI element
+
+Interacts through click action on any UI element of a SAP window.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should have been defined in a previous SAP login action.|
+|Element type|No|Basic SAP element, Checkbox, Label, Drop-down list|Basic SAP element|Select the SAP element type that you need to interact with. The ‘Click SAP element’ option performs a click action on any SAP element as buttons, radio buttons, tabs, text fields, trees.|
+|SAP element ID|No|Numeric||The SAP element’s ID. This parameter determines the UI element in SAP that action will interact with. You may use the below button for indication the SAP UI element in the SAP screen or insert the value manually.|
+|Set SAP checkbox stsate to|Yes|Checked, Unchecked|Checked|Specify whether the checkbox will become checked or unchecked.|
+|SAP element ID|No|Numeric||The SAP element’s ID. This parameter determines the UI element in SAP that action will interact with. You may use the below button for indication the SAP UI element in the SAP screen or insert the value manually.|
+|SAP label operation|Yes|Expand, Collapse, Choose|Expand|Specify whether to expand or collapse the SAP label.|
+|Drop-down option value|Yes|[Text value](../variable-data-types.md#text-value)||Specify the drop-down option will be selected.|
+
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="click_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Click Sap GUI Element error|Indicates that the click failed| 
+
+## <a name="getelementsapdetails"></a> Get details of SAP UI element
+
+Gets the value of a SAP UI element's attribute in a SAP window.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should have been defined in a previous SAP login action.|
+|SAP element ID|No|Numeric||The SAP element’s ID. This parameter determines the UI element in SAP that action will interact with. You may use the below button for indication the SAP UI element in the SAP screen or insert the value manually.|
+|Attribute name|No|[Text value](../variable-data-types.md#text-value)|Own text|The attribute whose value will be retrieved.|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|AttributeValue|[Text value](../variable-data-types.md#text-value)|The value of the SAP UI element's attribute.|
+
+### <a name="getelementsapdetails_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Get SAP element detail error|Indicates a problem retrieving the UI element's attribute|
+
+## <a name="populatesaptextfield"></a> Populate text field in window
+
+Fills a text box in a window with the specified text.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should have been defined in a previous SAP login action.|
+|SAP element ID|No|Numeric||The SAP element’s ID. This parameter determines the UI element in SAP that action will interact with. You may use the below button for indication the SAP UI element in the SAP screen or insert the value manually.|
+|Text to fill in|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The text to fill in the SAP text field|
+|If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="populatesaptextfield_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Populate Sap Text Field Value error|Indicates a problem populating the specified text field|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
