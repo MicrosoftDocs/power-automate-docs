@@ -28,12 +28,12 @@ Our SAP automation actions can also be integrated seamlessly with other actions 
 
 ## <a name="saplogin"></a> Launch SAP
 
-Open the SAP GUI application and connect to a SAP system.
+Open the SAP GUI application and connect to an SAP system.
 
 For connection mode:
 
-- The server description option allows you to connect with a SAP system through the SAP name or IP address. To do this, you need the necessary login credentials and access permissions. The server description is a human-readable name or description of the SAP system.
-- The server connection string option allows you to connect with a SAP system through a connection string. The server connection string typically includes the server ‘s name or IP address, the instance number, and the system ID. The server connection string is a specific format for identifying and connecting to a SAP system.
+- The server description option allows you to connect with an SAP system through the SAP name or IP address. To do this, you need the necessary login credentials and access permissions. The server description is a human-readable name or description of the SAP system.
+- The server connection string option allows you to connect with an SAP system through a connection string. The server connection string typically includes the server ‘s name or IP address, the instance number, and the system ID. The server connection string is a specific format for identifying and connecting to an SAP system.
 
 For multiple logon options:
 
@@ -42,7 +42,7 @@ For multiple logon options:
 - Continue this logon without ending any other logons in the system option creates a new SAP session.
 
 > [!NOTE]
-> SAP GUI doesn't allow more than six active connections (sessions) to a SAP system.
+> SAP GUI doesn't allow more than six active connections (sessions) to an SAP system.
 
 ### Input parameters
 
@@ -70,14 +70,14 @@ For multiple logon options:
 
 |Exception|Description|
 |-----|-----|
-|SAP GUI login action fails|Indicates a problem logging in to a SAP GUI system.|
+|SAP GUI login action fails|Indicates a problem logging in to an SAP GUI system.|
 
 ## <a name="createnewsession"></a> Create new SAP session
 
 Creates a new SAP session based on the same SAP instance.
 
 > [!NOTE]
-> SAP GUI doesn't allow more than six active connections (sessions) to a SAP system.
+> SAP GUI doesn't allow more than six active connections (sessions) to an SAP system.
 
 ### Input parameters
 
@@ -99,7 +99,7 @@ Creates a new SAP session based on the same SAP instance.
 
 ## <a name="sapselectmenuitem"></a> Select SAP menu item
 
-Select a SAP menu item in the window tool bar. Enter the name of the item in the respective input parameter manually, in the same language as the SAP GUI screen is being displayed.
+Select an SAP menu item in the window tool bar. Enter the name of the item in the respective input parameter manually, in the same language as the SAP GUI screen is being displayed.
 
 ### Input parameters
 
@@ -136,7 +136,7 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Close SAP session action fails|Indicates a problem closing a SAP session.|
+|Close SAP session action fails|Indicates a problem closing an SAP session.|
 
 ## <a name="starttransaction"></a> Start SAP transaction
 
@@ -157,11 +157,11 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Start SAP transaction action fails |Indicates a problem starting a SAP transaction.|
+|Start SAP transaction action fails |Indicates a problem starting an SAP transaction.|
 
 ## <a name="endtransaction"></a> End SAP transaction 
 
-Closes the SAP transaction in a specific SAP instance and returns to the SAP easy access menu. A SAP transaction must be started before for the specific SAP session.
+Closes the SAP transaction in a specific SAP instance and returns to the SAP easy access menu. An SAP transaction must be started before for the specific SAP session.
 
 ### Input parameters
 
@@ -177,7 +177,7 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|End SAP transaction action fails |Indicates a problem ending a SAP transaction.|
+|End SAP transaction action fails |Indicates a problem ending an SAP transaction.|
 
 ## <a name="click"></a> Click SAP UI element
 
