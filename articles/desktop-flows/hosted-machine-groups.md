@@ -26,19 +26,15 @@ Here are some of the key features of hosted machine group:
 
 ## Licensing requirements
 
-To use hosted machine group, you need the following licensing option:
-
-Use your existing **Power Automate Premium** plan (formerly, Power Automate per user plan with attended RPA), or **Power Automate Process** plan (formerly, Power Automate per flow plan) and the **Power Automate hosted RPA add-on**.
-
-You need to assign to your environment as many add-ons as the number of hosted bots you want to run in parallel in your environment.
+To use hosted machine group, you need the **Power Automate Hosted Process** license (previously Power Automate hosted RPA add-on). AAssign to your environment as many capacity as the number of hosted bots you want to run in parallel in your environment.
 
 ### Trial licenses for evaluation
 
 To evaluate the hosted machine group, you need one of the following trial licensing options:
 
-- Use the **Power Automate Premium** plan (previously Power Automate per user with attended RPA) and the **Power Automate hosted RPA add-on trials**.
+- Use the **Power Automate Hosted Process** license
 
-    The Power Automate hosted RPA add-ons have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), and assign the hosted RPA add-ons to the targeted environment.
+    The Power Automate Hosted Process license have trial versions that last 30 days and can be extended once to a total of 60 day. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign the Power Automate Hosted Process capacity to the targeted environment.
 
 - Use the 90-days self-assisted premium trial.
 
@@ -99,14 +95,14 @@ To create a hosted machine group:
     > [!NOTE]
     > - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required and when resources are available.
     > - If multiple hosted machine groups are used in the same environment, bots are automatically load balanced between the groups.
-    > - You can't exceed the total number of hosted RPA capacity assigned to your environment.
+    > - You can't exceed the total number of Hosted Process capacity assigned to your environment.
     > - To find more information about load balancing, go to [Load balance hosted machine groups](#load-balance-hosted-machine-group).
 
     - Define the **committed number of bots (optional)** you want to assign to this group.
   
     > [!NOTE]
     > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed bots configuration when required.
-    > - The sum of hosted machines and committed bots configured in your environment can't exceed the hosted RPA capacity assigned to the environment. View usage of hosted RPA capacity in your environment in the [Hosted RPA capacity utilization dashboard](./capacity-utilization-hosted.md). 
+    > - The sum of hosted machines and committed bots configured in your environment can't exceed the Hosted Process capacity assigned to the environment. View usage of Hosted Process capacity in your environment in the [Hosted Process capacity utilization dashboard](./capacity-utilization-hosted.md). 
 
     :::image type="content" source="media/hosted-machine-groups/create-hmg-scaling.png" alt-text="Screenshot of the hosted machine group scaling configuration in creation wizard.":::
 
@@ -350,7 +346,7 @@ To monitor your hosted bots:
 
 The key feature of hosted machine groups is the ability to automatically load balance hosted bots between different groups, hence optimizing your automation resources seamlessly between your different workloads.
 
-The number of hosted bots that can run in your environment is equal to the number of hosted RPA capacity you've assigned to your environment excluding the number of hosted machines provisioned in the environment (for example, if you have 10 Hosted RPA assigned to your environment, and two hosted machines provisioned, then the number of hosted bots that can run in your environment will be eight). This capacity is then load balanced across all the hosted machine groups you have in your environment. Each hosted machine group has a max bot and committed bot configuration that enables you to control the scaling capabilities of the hosted machine group.
+The number of hosted bots that can run in your environment is equal to the number of Hosted Process capacity you've assigned to your environment excluding the number of hosted machines provisioned in the environment (for example, if you have 10 Hosted Process assigned to your environment, and two hosted machines provisioned, then the number of hosted bots that can run in your environment will be eight). This capacity is then load balanced across all the hosted machine groups you have in your environment. Each hosted machine group has a max bot and committed bot configuration that enables you to control the scaling capabilities of the hosted machine group.
 
 The hosted machine group requests to scale out when there aren't enough hosted bots to run desktop flows. It takes into consideration the max and committed bot configuration in the hosted machine group and the available capacity in the environment. The hosted machine group scale-in when the desktop flow queue is lesser than the number of available hosted bots. This capacity then becomes available to other hosted machine groups in the environment. 
 
@@ -358,7 +354,7 @@ The hosted machine group requests to scale out when there aren't enough hosted b
 >
 > - **Max bots allow** your hosted machine group to automatically scale to the max bots configuration when required and when resources are available.
 > - **Committed bots guarantee** your hosted machine group to automatically scale to the committed  bots configuration when required.
-> -  View usage of hosted RPA capacity in your environment in the [Hosted RPA capacity utilization dashboard](./capacity-utilization-hosted.md). 
+> -  View usage of Hosted Process capacity in your environment in the [Hosted Process capacity utilization dashboard](./capacity-utilization-hosted.md). 
 
 To update the scaling configuration of your hosted machine group:
 
@@ -376,7 +372,7 @@ To update the scaling configuration of your hosted machine group:
 
 ### Hosted machine group scaling & load balancing example
 
-In this example, the customer has 10 hosted RPA capacity assigned to the environment and has configured three hosted machine groups with the following configuration.
+In this example, the customer has 10 Hosted Process capacity assigned to the environment and has configured three hosted machine groups with the following configuration.
 
 | Hosted machine group name | Max bots | Committed bots | 
 | ----------| -------| -------|
