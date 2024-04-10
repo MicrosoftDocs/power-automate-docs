@@ -54,5 +54,5 @@ For example, you can have 10 bot capacity shared between two groups—let’s sa
 
 ## Get started with hosted machines and groups
 
-Learn more about [Hosted machines](hosted-machines.md) and [Hosted machine groups](hosted-machine-groups.md) and see [pricing for hosted RPA add-on licenses](https://powerautomate.microsoft.com/pricing/).
+Learn more about [Hosted machines](hosted-machines.md) and [Hosted machine groups](hosted-machine-groups.md) and see [pricing for Hosted Process licenses](https://powerautomate.microsoft.com/pricing/).
 
