@@ -23,8 +23,8 @@ You manage the following capacity within the capacity utilization page:
 
 |Capacity|Consuming Power Automate object|Consumption mode|Operation enabled|
 |----|--------------------|----|----|
-|Hosted RPA capacity|Hosted machine|[Autoallocation](# "Hosted RPA capacity is autoallocated to the hosted machine at its creation.")|To be created, each hosted machine requires a hosted RPA capacity allocated.|
-|Hosted RPA capacity|Hosted machine group|Manual allocation of committed bots|Every hosted RPA capacity committed to a hosted machine group guarantees the availability of a bot during autoscaling.|
+|Hosted Process capacity|Hosted machine|[Autoallocation](# "Hosted Process capacity is autoallocated to the hosted machine at its creation.")|To be created, each hosted machine requires a Hosted Process capacity allocated.|
+|Hosted Process capacity|Hosted machine group|Manual allocation of committed bots|Every Hosted Process capacity committed to a hosted machine group guarantees the availability of a bot during autoscaling.|
 |Process capacity (or legacy unattended RPA capacity)|Machine|[Autoallocation](# "Capacity is autoallocated to the machine at unattended desktop flow run time.")|Every capacity allocated to a machine allows it to carry out another unattended desktop flow run simultaneously.|
 |Process capacity|Cloud flow|Manual allocation|Every capacity allocated to a cloud flow enables it, along with all its associated cloud flows, to use premium connectors and execute actions up to a daily limit of 250k Power Platform Requests (stackable limit).|
 
@@ -36,7 +36,7 @@ You manage the following capacity within the capacity utilization page:
 
 The capacity utilization page offers an overview of the environment-assigned capacities. It details their usage and provides suggestions and insights for more efficient management of automation and the desktop infrastructure.
 
-The overview page provides insights for hosted RPA capacity, process capacity, or legacy unattended RPA capacity including:
+The overview page provides insights for Hosted Process capacity, process capacity, or legacy unattended RPA capacity including:
 
 - A breakdown of each capacity utilization (user's consumption / others' consumption / capacity available / capacity in overage).
 - Insights and recommendation on compliance issues.
@@ -47,9 +47,9 @@ The two pie charts underscore the point that, within a given environment, capaci
 
 ## Per-capacity details pages
 
-### Hosted RPA capacity utilization
+### Hosted Process capacity utilization
 
-[Hosted RPA capacity](capacity-utilization-hosted.md) allows you to run desktop flows with zero infrastructure. It's allocated to hosted machines or committed to hosted machine groups.
+[Hosted Process capacity](capacity-utilization-hosted.md) allows you to run desktop flows with zero infrastructure. It's allocated to hosted machines or committed to hosted machine groups.
 
 ### Process (or legacy unattended RPA) capacity utilization
 
@@ -59,4 +59,4 @@ The two pie charts underscore the point that, within a given environment, capaci
 
 [Process and unattended RPA capacity utilization (preview)](capacity-utilization-process.md)
 
-[Hosted RPA capacity utilization (preview)](capacity-utilization-hosted.md)
+[Hosted Process capacity utilization (preview)](capacity-utilization-hosted.md)
