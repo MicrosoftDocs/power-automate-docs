@@ -36,14 +36,9 @@ Key capabilities:
 
 ## Licensing requirements
 
-To use hosted machines, you need the following licensing option:
-
-- Use your existing **Power Automate Premium plan** (previously Power Automate per user plan with attended RPA) and the **Power Automate hosted RPA add-on**.
-
-   Assign to your environment as many add-ons as the number of hosted machines you want to run in your environment.
+To use hosted machines, you need the **Power Automate Hosted Process** license (previously Power Automate hosted RPA add-on). Assign to your environment as many add-ons as the number of hosted machines you want to run in your environment.
 
 You'll also need the following prerequisite licenses: Windows, Intune, Microsoft Entra ID.
-
 
 ### Trial licenses for evaluation
 
