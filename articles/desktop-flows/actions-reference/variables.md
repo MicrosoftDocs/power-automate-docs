@@ -4,7 +4,7 @@ description: See all the available variables actions.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 04/04/2024
+ms.date: 04/11/2024
 ms.author: kenseongtan
 ms.reviewer: dipapa
 contributors:
