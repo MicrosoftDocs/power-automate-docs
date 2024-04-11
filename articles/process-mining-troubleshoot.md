@@ -91,6 +91,9 @@ To delete a process follow these steps:
 
 1. To delete the process, select **Confirm**.
 
+Another option is to use the Bring Your Own Worspace to store the generated reports (more info: [Create your own custom Power BI workspace](process-mining-pbi-workspace.md)). This option surpasses the limit of the Dataverse-managed Power BI workspace.
+ 
+
 ### "You must have one case with at least two activities to analyze your process. Please change your data."
 
 Process mining isn't normally helpful when there's only one activity name in the data. This is because the process map visualizes the flow of the process from one activity to the next. In this case, you should do the following:
@@ -176,10 +179,6 @@ Assign a premium license to your workspace. To learn how to enable premium capac
 ### "The selected Power BI workspace needs premium capacity to work with this report. After the problem is fixed, try to reanalyze the report."
 
 This is the same as the previous issue, but the error occurred during process analysis. After ensuring that your workspace has premium capacity per [Premium capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings), reanalyze the report.
-
-### "The process can't be analyzed because there are too many processes in this environment. To fix this, delete some of the processes or use a different environment."
-
-Your environment is using a shared workspace to store the generated process reports and the limit for the number of processes in such as environment has been reached. You can either delete some of the unused processes in the environment, or you can use the Bring Your Own Worspace option to store the generated reports (more info: [Create your own custom Power BI workspace](process-mining-pbi-workspace.md)). This option surpasses the limit of the shared workspace.
 
 ### Optimized data model is not created
 
