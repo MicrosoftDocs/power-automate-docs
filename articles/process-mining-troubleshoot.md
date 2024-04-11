@@ -177,6 +177,10 @@ Assign a premium license to your workspace. To learn how to enable premium capac
 
 This is the same as the previous issue, but the error occurred during process analysis. After ensuring that your workspace has premium capacity per [Premium capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings), reanalyze the report.
 
+### Optimized data model is not created
+
+Please confirm the *Allow XMLA endpoints and Analyze in Excel with on-premises semantic mode* setting is enabled *(this setting is enabled by default)*. You can find this setting in Power BI Admin Portal > Tenant-level settings > Integration Settings. If an admin does not want to enable this setting for all users, it is necessary to add the **Process Insights service principal** to a security group where the setting is enabled.
+
 ## Issues with your own Azure Data Lake Storage Gen2 and incremental data refresh
 
 ### If you encountered an error message, "Couldn’t connect to container"

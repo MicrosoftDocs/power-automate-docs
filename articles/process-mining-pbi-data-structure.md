@@ -40,10 +40,10 @@ To use the optimized data structure, the XMLA endpoint property must be enabled 
 
 ### Enable read-write for a Premium capacity semantic model workload
 
-1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. Select **Settings** > **Admin Center**.
-1. In the Power Platform admin center, select select **Capacity settings** > **Power BI Premium** > *capacity name*.
-1. Expand **Workloads**.
+1. Sign in to [Power BI](https://msit.powerbi.com/).
+1. Select **Settings** > **Admin Portal**.
+1. In the Power BI Admin Portal, select **Capacity settings** > **Power BI Premium** > *capacity name*.
+1. Expand **Power BI Workloads**.
 1. In the **XMLA Endpoint** setting, select **Read Write**.
 
     The XMLA Endpoint setting applies to all workspaces and semantic models assigned to the capacity.
@@ -52,9 +52,9 @@ To use the optimized data structure, the XMLA endpoint property must be enabled 
 
 ### Enable read-write for a Premium Per User semantic model workload
 
-1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. Select **Settings** > **Admin Center**.
-1. In the Power Platform admin center, select **Premium Per User**.
+1. Sign in to [Power BI](https://msit.powerbi.com/).
+1. Select **Settings** > **Admin Portal**.
+1. In the Power BI Admin Portal, select **Premium Per User**.
 1. Expand **Semantic model workload** settings.
 1. In the **XMLA Endpoint** setting, select **Read Write**.
 
