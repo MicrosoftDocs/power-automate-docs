@@ -4,7 +4,7 @@ description: Learn about using Power Fx for creating expressions in desktop flow
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/04/2024
+ms.date: 04/11/2024
 ms.author: dipapa
 ms.reviewer: 
 contributors: 
@@ -117,7 +117,7 @@ In April's release:
 > [!IMPORTANT]
 > In version 2.43 of Power Automate for desktop, there have been updates for Power Fx enabled desktop flows that could impact the execution of Power Fx enabled desktop flows created with previous versions.
 Specifically: 
-> - **Case-sensitive variable names**: Variable names within Power Fx enabled desktop flows created with **Power Automate for desktop version 2.43 and later** are case-sensitive. Power Fx desktop flows created with **Power Automate for desktop version 2.42 and earlier** allowed for case-insensitive variable names. For example, **NewVar** and **newVAR** referenced the same variable. For Power Fx enabled desktop flows created with **Power Automate for desktop version 2.42 and earlier**, make sure to review and verify that the produced variables are as expected.
+> - **Case-sensitive variable names**: Variable names within Power Fx enabled desktop flows created with **Power Automate for desktop version 2.43 and later** are case-sensitive. Power Fx desktop flows created with **Power Automate for desktop version 2.42 and earlier** allowed for case-insensitive variable names. For example, *NewVar* and *newVAR* reference the same variable. For Power Fx enabled desktop flows created with **Power Automate for desktop version 2.42 and earlier**, make sure to review and verify that the produced variables are as expected.
 
 ### 2.42
 
