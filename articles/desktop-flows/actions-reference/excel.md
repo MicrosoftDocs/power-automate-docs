@@ -4,7 +4,7 @@ description: See all the available Excel actions.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 04/09/2024
+ms.date: 04/11/2024
 ms.author: dipapa
 ms.reviewer: matp
 contributors:
