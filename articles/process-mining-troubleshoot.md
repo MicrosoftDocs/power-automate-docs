@@ -177,6 +177,10 @@ Assign a premium license to your workspace. To learn how to enable premium capac
 
 This is the same as the previous issue, but the error occurred during process analysis. After ensuring that your workspace has premium capacity per [Premium capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings), reanalyze the report.
 
+### "The process can't be analyzed because there are too many processes in this environment. To fix this, delete some of the processes or use a different environment."
+
+Your environment is using a shared workspace to store the generated process reports and the limit for the number of processes in such as environment has been reached. You can either delete some of the unused processes in the environment, or you can use the Bring Your Own Worspace option to store the generated reports (more info: [Create your own custom Power BI workspace](process-mining-pbi-workspace.md)). This option surpasses the limit of the shared workspace.
+
 ### Optimized data model is not created
 
 Please confirm the *Allow XMLA endpoints and Analyze in Excel with on-premises semantic mode* setting is enabled *(this setting is enabled by default)*. You can find this setting in Power BI Admin Portal > Tenant-level settings > Integration Settings. If an admin does not want to enable this setting for all users, it is necessary to add the **Process Insights service principal** to a security group where the setting is enabled.
