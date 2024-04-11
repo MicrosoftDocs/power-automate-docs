@@ -62,7 +62,6 @@ Examples:
   - Example: The total number is **${Sum(10, 20)}** 
 > [!NOTE]
 > If you want to use the dollar sign ($) followed by a opening curly brace sign (**{**)  within a Power Fx expression or in the syntax of a UI/Web element selector and have Power Automate for desktop not treat it as the string interpolation syntax, make sure to follow this syntax: **$${** (the first dollar sign will act as an escape character)
-- Variable names in Power Fx enabled desktop flows are **case sensitive**. Example: **NewVar** is a different variable than **newVar**
 
 
 ## Available Power Fx functions 

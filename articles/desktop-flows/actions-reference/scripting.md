@@ -256,7 +256,7 @@ You can use this action to include your own custom PowerShell code in the deskto
 
 ## <a name="runpythonscript"></a> Run Python script
 
-Executes Python 2 script code and retrieves its output.
+Executes Python script code and retrieves its output.
 
 ### Input parameters
 
