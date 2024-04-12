@@ -22,7 +22,7 @@ Power Automate Process Mining gives you the option to store and read event log d
 
 - The Data Lake Storage account must be Gen2. You can check this out from the Azure portal. Azure Data Lake Gen1 storage accounts aren't supported.
 - The Data Lake Storage account must have [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
-- The **Owner** role must be attributed to the user performing the initial container setup for the environment for the following users in the same environment. These users are connecting to the same container and must have the **Storage Account Contributor** role assigned.
+- The **Owner** role must be attributed to the user performing the initial container setup for the environment for the following users in the same environment. These users are connecting to the same container and must have the **Storage Blob Data Reader** role assigned.
 
 - **Resource Sharing (CORS)** rule to your storage account should be established to share with Power Automate Process Mining.
     - Allowed origins must be set to `https://make.powerapps.com`.

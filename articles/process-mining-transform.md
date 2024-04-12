@@ -83,30 +83,9 @@ You can use **Ctrl** + **click** to select multiple columns that you want to com
 
 ## Map data
 
-Mapping tells the process mining capability what columns represent case ID, activity name, or timestamp.
+Mapping tells the process mining capability what column is mapped to which attribute type (e.g. case ID, activity name, or timestamp).
 
-1. In the toolbar, select **Map to entity**.
+1. Click **Next** to navigate to Mapping screen.
 
-1. In the left column, if your data only has one timestamp, select the **Event log** entity. If your data has both a start and an end timestamp, select the **Activity log** entity.
+1. 
 
-    :::image type="content" source="media/process-mining-transform/map-cdm.png" alt-text="Screenshot of mapping options.":::
-
-1. Select each of the dropdown lists under the **Query output column** heading, and select the corresponding column in your data that maps to:
-    1. Activity name (activityName)
-    1. Case ID (caseId)
-    1. Start timestamp (startTimestamp)
-    1. End timestamp (endTimestamp) only if you select **Activity log** in step 2.
-
-1. After everything is mapped, select **OK** to close the map to entity screen.
-
-### Select additional columns
-
-When performing process mining, having additional information about a process is especially useful. If your data contains only five or fewer columns outside of the required columns that you've mapped in the previous procedure, nothing else needs to be done. You can select **Save** and all the columns will be analyzed. You'll also be able to filter on these columns in the Analytics page.
-
-If you have more than five columns:
-
-1. Select **Choose columns** in the toolbar.
-
-1. Deselect any column you don't want to include in the analysis.
-
-    Ensure that the mapped columns (**activityName**, **caseId**, **startTimestamp**, **endTimestamp**) from the previous procedure are selected. The five additional columns are on top of the mapped columns.

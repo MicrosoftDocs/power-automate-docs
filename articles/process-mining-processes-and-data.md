@@ -31,17 +31,47 @@ Here's a short video on how to upload data for use with the process mining capab
 
 Event logs and activity logs are tables stored in your system of record that document when an event or activity occurs. For example, activities you perform in your customer relationship management (CRM) app are saved as an event log in your CRM app. For process mining to analyze the event log, the following fields are necessary:
 
-- **Case ID (caseId when mapping)**
+- **Case ID**
 
   Case ID should represent an instance of your process and is often the object that the process acts on. It can be a "patient ID" for an inpatient check-in process, an "order ID" for an order submission process, or a "request ID" for an approval process. This ID must be present for all activities in the log.
 
-- **Activity Name (activityName when mapping)**
+- **Activity Name**
 
   Activities are the steps of your process, and activity names describe each step. In a typical approval process, the activity names may be "submit request," "request approved," "request rejected," and "revise request."
 
-- **Start Timestamp (startTimestamp) and End Timestamp (endTimestamp)**
+- **Start Timestamp and End Timestamp**
 
   Timestamps indicate the exact time that an event or activity took place. Event logs have only one timestamp. This indicates the time that an event or activity occurred in the system. Activity logs have two timestamps: a start timestamp and an end timestamp. These indicate the start and end of each event or activity.
+
+You can also extend your analysis by ingesting optional attribute types:
+
+- **Resource**
+
+  Case ID should
+
+- **Event Level Attribute**
+
+  Case ID should
+
+- **Case Level Attribute (first event)**
+
+  Case ID should
+
+- **Case Level Attribute (last event)**
+
+  Case ID should
+
+- **Financial per Event**
+
+  Case ID should
+
+- **Financial Per Case (first event)**
+
+  Case ID should
+
+- **Financial Per Case (last event)**
+
+  Case ID should
 
 ## Where to get log data from your application
 

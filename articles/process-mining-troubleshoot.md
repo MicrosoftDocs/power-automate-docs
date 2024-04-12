@@ -75,7 +75,7 @@ Once you're done with setup, select **Analyze**. You'll be able to view the Anal
 
 For more information and a short video of analytics, go to [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
 
-### "The process can't be analyzed because there are too many processes in this environment. To fix this, delete some of the processes or use a different environment."
+### "The process can't be analyzed because there are too many processes in this environment. To fix this, delete some of the processes, use a different environment or use your own Power BI workspace."
 
 At present, Dataverse-managed Power BI workspaces allow only 1,000 reports for each environment. This means you need to delete a few processes from the current environment, or create a new environment to analyze the process in. To learn more about limitations, go to [Workspaces in Power BI&mdash;Considerations and limitations](/power-bi/collaborate-share/service-new-workspaces#considerations-and-limitations).
 
@@ -91,7 +91,7 @@ To delete a process follow these steps:
 
 1. To delete the process, select **Confirm**.
 
-Another option is to use the Bring Your Own Worspace to store the generated reports (more info: [Create your own custom Power BI workspace](process-mining-pbi-workspace.md)). This option surpasses the limit of the Dataverse-managed Power BI workspace.
+Another option is to use your own Power BI workspace to store the generated reports (more info: [Create your own custom Power BI workspace](process-mining-pbi-workspace.md)). This option surpasses the limit of the Dataverse-managed Power BI workspace.
  
 
 ### "You must have one case with at least two activities to analyze your process. Please change your data."
