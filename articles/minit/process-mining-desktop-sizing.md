@@ -25,10 +25,10 @@ The following table summarizes the recommended hardware specifications for runni
 
 |Event log size (CSV) |Process Model file size |Minimal requirements |Optimal requirements | 
 |---------|---------|---------|---------|
-|0 - 10 GB |0 - 3 GB |<li>RAM: 8 GB<br\></li><li>Disk: HDD (50 GB free)<br\></li><li>CPU: 2 cores</li>|<li>RAM: 16 GB<br\></li><li>Disk: SSD (100 GB free)<br\></li><li>CPU: 4 cores</li>|
-|10 - 50 GB |3 - 15 GB |RAM: 16 GB, Disk: SSD (100 GB free), CPU: 4 cores |RAM: 32 GB, Disk: NVMe SSD (200 GB free), CPU: 8 cores |
-|50 - 100 GB |15 - 30 GB |RAM: 32 GB, Disk: SSD (200 GB free), CPU: 8 cores |RAM: 48 GB, Disk: NVMe SSD (400 GB free) , CPU: 16 cores |
-|100 - 150 GB |30 - 45 GB |RAM: 48 GB, Disk: NVMe SSD (400 GB free), CPU: 8 cores |RAM: 64 GB, Disk: NVMe SSD (600 GB free), CPU: 16 cores |
+|0 - 10 GB |0 - 3 GB |<li>RAM: 8 GB</li><li>Disk: HDD (50 GB free)</li><li>CPU: 2 cores</li>|<li>RAM: 16 GB</li><li>Disk: SSD (100 GB free)</li><li>CPU: 4 cores</li>|
+|10 - 50 GB |3 - 15 GB |<li>RAM: 16 GB</li><li>Disk: SSD (100 GB free)</li><li>CPU: 4 cores</li>|<li>RAM: 32 GB</li><li>Disk: NVMe SSD (200 GB free)</li><li>CPU: 8 cores</li>|
+|50 - 100 GB |15 - 30 GB |<li>RAM: 32 GB</li><li>Disk: SSD (200 GB free)</li><li>CPU: 8 cores</li>|<li>RAM: 48 GB</li><li>Disk: NVMe SSD (400 GB free)</li><li>CPU: 16 cores</li>|
+|100 - 150 GB |30 - 45 GB |<li>RAM: 48 GB</li><li>Disk: NVMe SSD (400 GB free)</li><li>CPU: 8 cores</li>|<li>RAM: 64 GB</li><li>Disk: NVMe SSD (600 GB free)</li><li>CPU: 16 cores</li>|
 
 > [!NOTE]
 >
