@@ -47,31 +47,35 @@ You can also extend your analysis by ingesting optional attribute types:
 
 - **Resource**
 
-  Case ID should
+  A human or technical resource executing a specific event.
 
 - **Event Level Attribute**
 
-  Case ID should
+  Additional analytical attribute, which has different value per event, e.g. Department performing the activity
 
 - **Case Level Attribute (first event)**
 
-  Case ID should
+  Case Level Attribute is an additional attribute, that from the analytical point of view is considered to have a single value per case (e.g. Amount of Invoice in USD). However, the event log to be ingested does not necessarilly have to comply to consistency by having the same value for the specific attribute for all events in the event log (it might even not be possible to ensure that, e.g. when incremental data refresh is used). Power Automate Process Mining ingests the data as is, storing all values provided in the event log, but uses a so called *case level attribute interpretation* mechanism to work with the attributes on case level.
+
+  In other words, whenever the attribute is used for specific function which requires event level values (e.g. event level filtering) the product uses the event level values. Whenever a case level value is needed (e.g. case level filter, root cause analysis) it uses the interpreted value - which is taken from the chronologically first event in the case.
 
 - **Case Level Attribute (last event)**
 
-  Case ID should
+  The same as Case Level Attribute (first event) but the when interpreted on case level, the value is taken from the chronologically last event in the case.
 
 - **Financial per Event**
 
-  Case ID should
+  Fixed cost/revenue/numeric value that changes per activity performed, e.g. courier service costs. Financial value is calculated as a sum (mean, minimum, maximum) of the financial values per each event.
 
 - **Financial Per Case (first event)**
 
-  Case ID should
+  Financial per Case attribute is an additional numeric attribute, that from the analytical point of view is considered to have a single value per case (e.g. Amount of Invoice in USD). However, the event log to be ingested does not necessarilly have to comply to consistency by having the same value for the specific attribute for all events in the event log (it might even not be possible to ensure that, e.g. when incremental data refresh is used). Power Automate Process Mining ingests the data as is, storing all values provided in the event log, but uses a so called *case level attribute interpretation* mechanism to work with the attributes on case level.
+
+  In other words, whenever the attribute is used for specific function which requires event level values (e.g. event level filtering) the product uses the event level values. Whenever a case level value is needed (e.g. case level filter, root cause analysis) it uses the interpreted value - which is taken from the chronologically first event in the case.
 
 - **Financial Per Case (last event)**
 
-  Case ID should
+  The same as Financial Per Case (first event) but the when interpreted on case level, the value is taken from the chronologically last event in the case.
 
 ## Where to get log data from your application
 

@@ -87,5 +87,11 @@ Mapping tells the process mining capability what column is mapped to which attri
 
 1. Click **Next** to navigate to Mapping screen.
 
-1. 
+1. Use the dropdowns next to the respective columns to select their attribute type. Follow the [description of the attribute types](process-mining-processes-and-data.md#data-requirements) for more information.
+
+1. When the data is ingested from Azure Data Lake Gen2 using a CSV file format, you can use dropdowns in the **Data type** column to change the data types for the import. For columns having numeric values, please consider their analytical usage - whether the attribute is a continuous value (e.g. invoice amount - set to *Number*) or a categorical value (e.g. material code - set to *Text*).
+
+1. Case ID, Activity and Start timestamp are mandatory attributes to continue with the analysis.
+
+1. Click **Save and analyze** to start the analysis of your process.
 
