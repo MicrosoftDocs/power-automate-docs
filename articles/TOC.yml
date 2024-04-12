@@ -1202,3 +1202,5 @@
     href: faqs-copilot-nl-to-code.md
   - name: FAQ for suggested actions in Power Automate for desktop
     href: faqs-action-suggestions-power-automate-desktop.md
+  - name: FAQ for generating flow descriptions using Copilot in desktop flows
+    href: faqs-copilot-generate-description-from-flow-properties.md

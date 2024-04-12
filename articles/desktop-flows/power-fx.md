@@ -4,10 +4,11 @@ description: Learn about using Power Fx for creating expressions in desktop flow
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/15/2024
+ms.date: 04/11/2024
 ms.author: dipapa
 ms.reviewer: 
 contributors: 
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -57,8 +58,11 @@ Examples:
 - To access a data table cell using a column index, use the **ReadCell()** function.
 **ReadCell(DataTableVar, 1, 1)** retrieves the value from the cell in row 1, column 1
 **ReadCell(DataRowVar, 1)** retrieves the value from the cell in row 1 
-- To include an interpolated value in an input use the following syntax: Lorem ipsum **${variable/ expression}** lorem ipsum
+- To include an interpolated value in an input or a UI/web element selector, use the following syntax: Lorem ipsum **${variable/ expression}** lorem ipsum
   - Example: The total number is **${Sum(10, 20)}** 
+> [!NOTE]
+> If you want to use the dollar sign ($) followed by a opening curly brace sign (**{**)  within a Power Fx expression or in the syntax of a UI/Web element selector and have Power Automate for desktop not treat it as the string interpolation syntax, make sure to follow this syntax: **$${** (the first dollar sign will act as an escape character)
+
 
 ## Available Power Fx functions 
 
@@ -66,7 +70,6 @@ For the complete list of all available functions in Power Automate for desktop f
 
 ## Known issues and limitations 
 
-- Using variables in UI element/ web selectors isn't currently supported. 
 - The following actions from the standard library of automation actions aren't currently supported: 
   - Create list
   - Shuffle list
@@ -80,12 +83,15 @@ For the complete list of all available functions in Power Automate for desktop f
   - Add item to list
   - Create new list
   - Create new data table
-  - Insert tow into data table
+  - Insert row into data table
   - Update data table item
   - Delete row from data table
   - Switch
   - Case
   - Default case
+
+>[!NOTE]
+>By combining **Run Power Fx expression** action with expressions using [Collect, Clear, ClearCollect](/power-platform/power-fx/reference/function-clear-collect-clearcollect) and [Patch](/power-platform/power-fx/reference/function-patch) functions you can emulate behavior found in the actions **Add item to list** and **Insert row into data table** which are currently not available for Power Fx enabled desktop flows.
 
 - **General value** type variables aren't permitted in lists, tables, or as a property for Record values.
 - Whenever a **General value** type variable is utilized, a warning message stating "Deferred type provided" is presented. These warnings arise due to Power Fx's strict requirement for strong-typed schemas (strictly defined types). 
@@ -96,6 +102,22 @@ For the complete list of all available functions in Power Automate for desktop f
 ## What's new
 
 This section lists what's changed in each update.
+
+### 2.43
+
+In April's release:
+
+- Case sensitivity. For example, *NewVar* is a different variable than *newVar*.
+- [Run Power Fx expression](./actions-reference/variables.md#run-power-fx-expression) action is available under the [Variables](./actions-reference/variables.md#variables-actions) group of actions. Run Power Fx expression allows you to execute expressions directly on data sources.
+- [Collect, Clear, ClearCollect](/power-platform/power-fx/reference/function-clear-collect-clearcollect) Power Fx functions are supported in desktop flows.  
+- [Patch](/power-platform/power-fx/reference/function-patch) Power Fx functions are supported in desktop flows.
+- Variables and Power Fx expressions can be used in UI element or web selector syntax.
+- Interpolated values can now be included in the syntax of a UI/web element selector. For interpolated strings, you can use this syntax: **${** Power Fx expression **}**.
+
+> [!IMPORTANT]
+> In version 2.43 of Power Automate for desktop, there have been updates for Power Fx enabled desktop flows that could impact the execution of Power Fx enabled desktop flows created with previous versions.
+Specifically: 
+> - **Case-sensitive variable names**: Variable names within Power Fx enabled desktop flows created with **Power Automate for desktop version 2.43 and later** are case-sensitive. Power Fx desktop flows created with **Power Automate for desktop version 2.42 and earlier** allowed for case-insensitive variable names. For example, *NewVar* and *newVAR* reference the same variable. For Power Fx enabled desktop flows created with **Power Automate for desktop version 2.42 and earlier**, make sure to review and verify that the produced variables are as expected.
 
 ### 2.42
 
