@@ -25,14 +25,14 @@ The following table summarizes the recommended hardware specifications for runni
 
 |Event log size (CSV) |Process Model file size |Minimal requirements |Optimal requirements | 
 |---------|---------|---------|---------|
-|0 - 10 GB |0 - 3 GB |RAM: 8 GB,\s\s Disk: HDD (50 GB free),\s\s CPU: 2 cores| RAM: 16 GB, Disk: SSD (100 GB free), CPU: 4 cores |
+|0 - 10 GB |0 - 3 GB |<li>RAM: 8 GB<br\></li><li>Disk: HDD (50 GB free)<br\></li><li>CPU: 2 cores</li>|<li>RAM: 16 GB<br\></li><li>Disk: SSD (100 GB free)<br\></li><li>CPU: 4 cores</li>|
 |10 - 50 GB |3 - 15 GB |RAM: 16 GB, Disk: SSD (100 GB free), CPU: 4 cores |RAM: 32 GB, Disk: NVMe SSD (200 GB free), CPU: 8 cores |
 |50 - 100 GB |15 - 30 GB |RAM: 32 GB, Disk: SSD (200 GB free), CPU: 8 cores |RAM: 48 GB, Disk: NVMe SSD (400 GB free) , CPU: 16 cores |
 |100 - 150 GB |30 - 45 GB |RAM: 48 GB, Disk: NVMe SSD (400 GB free), CPU: 8 cores |RAM: 64 GB, Disk: NVMe SSD (600 GB free), CPU: 16 cores |
 
 > [!NOTE]
 >
-> The table above shows the minimal and optimal hardware configuration for running PAPM Desktop App. The minimal configuration is the lowest configuration that can run PAPM without crashing but user might experience delays in the upper volume boundaries. The optimal configuration is the configuration that can run PAPM Desktop App smoothly and efficiently. For the boundary values of the process model size, we suggest choosing a stronger hardware configuration.  
+> The table above shows the minimal and optimal hardware configuration for running PAPM desktop app. The minimal configuration is the lowest configuration that can run PAPM without crashing but user might experience delays in the upper volume boundaries. The optimal configuration is the configuration that can run PAPM Desktop App smoothly and efficiently. For the boundary values of the process model size, we suggest choosing a stronger hardware configuration.  
 
 ## Performance Factors 
 
@@ -42,7 +42,7 @@ The performance of PAPM depends on several factors, such as the size and complex
 
 The size and complexity of the event log data have a direct impact on the performance of PAPM. The larger and more complex the data, the more hardware resources are needed to process and analyze them. The size of the data is determined by the number of events, the number of attributes, and the cardinality of the attribute values. The complexity of the data is determined by the number of variants, the number of activities, and the degree of concurrency and loops in the process. The following are some general guidelines to reduce the size and complexity of the data: 
 
-- Filter out irrelevant or redundant events and attributes before transforming the CSV file into SQLite file. 
+- Filter out irrelevant or redundant events and attributes before data ingestion. 
 - Reduce the number of unique values of the attributes by grouping or aggregating them into meaningful categories. 
 - Use a suitable mining attribute that captures the main behavior of the process and avoids creating too many variants. 
 - Use a suitable time granularity that reflects the temporal dynamics of the process and avoids creating too many events. 

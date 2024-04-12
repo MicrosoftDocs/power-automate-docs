@@ -34,7 +34,7 @@ Here are the specific set of steps needed from a completely new state:
 1.	From the root of the folder, carefully go through the set of steps below. Note that there is some modification necessary to the scripts.
 1.	Take the following PowerShell script and use it to create a new .ps1 file in the root of the “Common” directory. Give it any name of your choosing.
 
-```azurepowershell-interactive
+```powershell
 # PowerShell script
 # To have ready beforehand $subscriptionId, $resourceGroupName, $enterprisePolicyLocation, $environmentId
 # Note: The $enterprisePolicyLocation must be set to the same location as the environment. And the environments with spaces should have the spaces removed i.e. “South Africa” -> “southafrica”
