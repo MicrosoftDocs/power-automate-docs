@@ -63,7 +63,7 @@ $enterprisePolicyLocation
     1.	The $enterprisePolicyLocation must be set to the same location as the environment. And the environments with spaces should have the spaces removed.
     1.	i.e. “South Africa” -> “southafrica”
 1.	Run the newly created .ps1 file using Windows PowerShell
-    :::image type="content" source="media/process-mining-byo-azure-data-lake/Prompt.svg" alt-text="Screenshot of powershell prompt with run ps1 script command.":::
+    :::image type="content" source="media/process-mining-byo-azure-data-lake/PromptPS.svg" alt-text="Screenshot of powershell prompt with run ps1 script command.":::
 1.	Walk through the series of steps until the script outputs a successful 202 response.
 
 > [!NOTE]
@@ -81,7 +81,7 @@ $enterprisePolicyLocation
 1.	In the **Select** dropdown locate the identity you created. It will be named what you named the **NewEnterprisePolicyName** in the PowerShell script
 1.	Click **Select** and then **Review + assign**
 
-# Troubleshooting
+## Troubleshooting
 
 If presented with the following error message in the [Connection Setup screen](process-mining-byo-azure-data-lake.md), you’ll need to have the owner of the storage account and the person who initially established the connection share the **datalakefolder** record with you in the respective org within Dataverse.  
 
