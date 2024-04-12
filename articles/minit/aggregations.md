@@ -328,7 +328,7 @@ Returns the first [value], grouped according to the [context].
 
 **Output data type**: FLOAT, TIME
 
-## FIRSTIF([context],[condition],[value])
+## FIRSTIF([context],[condition],[value],[default])
 
 Returns the first [value] that meets the [condition], grouped according to the [context].
 
@@ -340,9 +340,13 @@ Returns the first [value] that meets the [condition], grouped according to the [
 
 - **[value]**: An attribute name, nested operation, or expression
 
-   Data type: INT, FLOAT, TIME
+   Data type: INT, FLOAT, TIME, STRING
 
-**Output data type**: FLOAT, TIME
+- **[default]**: Value to be returned, when condition is not met
+
+   Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
+
+**Output data type**: BOOL, INT, FLOAT, STRING, DATE, TIME
 
 ## LAST([context],[value])
 
@@ -356,7 +360,7 @@ Returns the last [value], grouped according to the [context].
 
 **Output data type**: FLOAT, TIME
 
-## LASTIF([context],[condition],[value])
+## LASTIF([context],[condition],[value],[default])
 
 Returns the last value that meets the [condition], grouped according to the [context].
 
@@ -370,7 +374,11 @@ Returns the last value that meets the [condition], grouped according to the [con
 
    Data type: INT, FLOAT, TIME
 
-**Output data type**: FLOAT, TIME
+- **[default]**: Value to be returned, when condition is not met
+
+   Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
+
+**Output data type**: BOOL, INT, FLOAT, STRING, DATE, TIME
 
 ## SELFLOOP([context],[attributeName])
 

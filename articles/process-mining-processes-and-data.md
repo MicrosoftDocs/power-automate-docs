@@ -31,17 +31,51 @@ Here's a short video on how to upload data for use with the process mining capab
 
 Event logs and activity logs are tables stored in your system of record that document when an event or activity occurs. For example, activities you perform in your customer relationship management (CRM) app are saved as an event log in your CRM app. For process mining to analyze the event log, the following fields are necessary:
 
-- **Case ID (caseId when mapping)**
+- **Case ID**
 
   Case ID should represent an instance of your process and is often the object that the process acts on. It can be a "patient ID" for an inpatient check-in process, an "order ID" for an order submission process, or a "request ID" for an approval process. This ID must be present for all activities in the log.
 
-- **Activity Name (activityName when mapping)**
+- **Activity Name**
 
   Activities are the steps of your process, and activity names describe each step. In a typical approval process, the activity names may be "submit request," "request approved," "request rejected," and "revise request."
 
-- **Start Timestamp (startTimestamp) and End Timestamp (endTimestamp)**
+- **Start Timestamp and End Timestamp**
 
   Timestamps indicate the exact time that an event or activity took place. Event logs have only one timestamp. This indicates the time that an event or activity occurred in the system. Activity logs have two timestamps: a start timestamp and an end timestamp. These indicate the start and end of each event or activity.
+
+You can also extend your analysis by ingesting optional attribute types:
+
+- **Resource**
+
+  A human or technical resource executing a specific event.
+
+- **Event Level Attribute**
+
+  Additional analytical attribute, which has different value per event, e.g. Department performing the activity
+
+- **Case Level Attribute (first event)**
+
+  Case Level Attribute is an additional attribute, that from the analytical point of view is considered to have a single value per case (e.g. Amount of Invoice in USD). However, the event log to be ingested does not necessarilly have to comply to consistency by having the same value for the specific attribute for all events in the event log (it might even not be possible to ensure that, e.g. when incremental data refresh is used). Power Automate Process Mining ingests the data as is, storing all values provided in the event log, but uses a so called *case level attribute interpretation* mechanism to work with the attributes on case level.
+
+  In other words, whenever the attribute is used for specific function which requires event level values (e.g. event level filtering) the product uses the event level values. Whenever a case level value is needed (e.g. case level filter, root cause analysis) it uses the interpreted value - which is taken from the chronologically first event in the case.
+
+- **Case Level Attribute (last event)**
+
+  The same as Case Level Attribute (first event) but the when interpreted on case level, the value is taken from the chronologically last event in the case.
+
+- **Financial per Event**
+
+  Fixed cost/revenue/numeric value that changes per activity performed, e.g. courier service costs. Financial value is calculated as a sum (mean, minimum, maximum) of the financial values per each event.
+
+- **Financial Per Case (first event)**
+
+  Financial per Case attribute is an additional numeric attribute, that from the analytical point of view is considered to have a single value per case (e.g. Amount of Invoice in USD). However, the event log to be ingested does not necessarilly have to comply to consistency by having the same value for the specific attribute for all events in the event log (it might even not be possible to ensure that, e.g. when incremental data refresh is used). Power Automate Process Mining ingests the data as is, storing all values provided in the event log, but uses a so called *case level attribute interpretation* mechanism to work with the attributes on case level.
+
+  In other words, whenever the attribute is used for specific function which requires event level values (e.g. event level filtering) the product uses the event level values. Whenever a case level value is needed (e.g. case level filter, root cause analysis) it uses the interpreted value - which is taken from the chronologically first event in the case.
+
+- **Financial Per Case (last event)**
+
+  The same as Financial Per Case (first event) but the when interpreted on case level, the value is taken from the chronologically last event in the case.
 
 ## Where to get log data from your application
 
