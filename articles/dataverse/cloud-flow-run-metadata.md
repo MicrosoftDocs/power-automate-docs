@@ -70,6 +70,8 @@ If the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/
 
 Setting the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) to zero stops all ingestion of new [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records.
 
+In the future, an experience will be added in the [PPAC Environments experience](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center) to facilitate setting the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds).
+
 ## Reduce amount of FlowRun records immediately
 
 If the environment is running short on storage, then customers can choose to clean up database space by setting the [TTLInSeconds](/power-apps/developer/data-platform/reference/entities/flowrun#BKMK_TTLInSeconds) value for a set of [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records. The records are then automatically cleaned up and permanently deleted within a minute or two. Ensure that the records are no longer needed, because they can't be recovered once deleted.
@@ -124,3 +126,7 @@ The following is a list of [FlowEvent.EventCode](/power-apps/developer/data-plat
 If all of your environments have a [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) of zero, then it could be one of these situations:
 1. If [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data has never been available, then your environments might not have been automatically enabled for [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) ingestion because there wasn't enough [Dataverse database storage capacity](/power-platform/admin/capacity-storage#dataverse-tab) available.
 2. If [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data was previously available, then an administrator might have turned off ingestion of new records.
+
+### When will this be generally available (GA)?
+
+It is uncertain when this capability will change from a public preview to being generally available (GA). The ingestion of flow run history has architural limitations and performance limitations which require throttling, so the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is often going to have some gaps. In talking with customers, there is an expectation that the data will be complete when we make this capability GA, so we want to get to that point before we change from public preview to GA.
