@@ -73,6 +73,8 @@ You can roll back a desktop flow converted to the v2 schema by resaving the desk
 
 For most scenarios, there's no need to downgrade your version of Power Automate for desktop. However, desktop flows that use v2-related features that aren't supported by the v1 schema can't roll back.
 
+Please note that doing a rollback from v2 to v1 can lead to some screenshots associated with UI Elements to not be resaved. Those screenshots are not necessary for the desktop flow to run. If you want to keep those screenshots, before resaving into v1, go to the UI Elements right panel, and go through each of the UI Elements in the list, this will ensure to be resaved when rollback to v1.
+
 ## Limitations of v2 schema desktop flows
 
 Desktop flows stored in the v2 schema only function in environments with the v2 schema feature enabled.
