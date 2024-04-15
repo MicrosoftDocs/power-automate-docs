@@ -4,7 +4,7 @@ description: Learn about the available SAP GUI actions in Power Automate for des
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 04/09/2024
+ms.date: 04/15/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -179,7 +179,7 @@ This action doesn't produce any variables.
 |-----|-----|
 |End SAP transaction action fails |Indicates a problem ending an SAP transaction.|
 
-## <a name="click"></a> Click SAP UI element
+## <a name="clicksapguielement"></a> Click SAP UI element
 
 Interacts through click action on any UI element of an SAP window.
 
@@ -200,13 +200,13 @@ Interacts through click action on any UI element of an SAP window.
 
 This action doesn't produce any variables.
 
-### <a name="click_onerror"></a> Exceptions
+### <a name="clicksapguielement_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
 |Click Sap GUI Element error|Indicates that the click failed| 
 
-## <a name="getelementsapdetails"></a> Get details of SAP UI element
+## <a name="getsapelementdetail"></a> Get details of SAP UI element
 
 Gets the value of an SAP UI element's attribute in an SAP window.
 
@@ -224,13 +224,13 @@ Gets the value of an SAP UI element's attribute in an SAP window.
 |-----|-----|-----|
 |AttributeValue|[Text value](../variable-data-types.md#text-value)|The value of the SAP UI element's attribute.|
 
-### <a name="getelementsapdetails_onerror"></a> Exceptions
+### <a name="getsapelementdetail_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
 |Get SAP element detail error|Indicates a problem retrieving the UI element's attribute|
 
-## <a name="populatesaptextfield"></a> Populate text field in window
+## <a name="populatetextfield"></a> Populate text field in window
 
 Fills a text box in a window with the specified text.
 
@@ -247,7 +247,7 @@ Fills a text box in a window with the specified text.
 
 This action doesn't produce any variables.
 
-### <a name="populatesaptextfield_onerror"></a> Exceptions
+### <a name="populatetextfield_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
