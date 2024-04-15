@@ -105,12 +105,12 @@ The following table contains a list of [FlowEvent.EventCode](/power-apps/develop
 |isFlowRunIngestionECSDisabled|Cloud flow run history isn't being saved in Dataverse due to service configuration, so no cloud flow data can be shown. The ECS service configuration is set automatically and there's no way for an admin to change the ingestion behavior in this state.|
 |TtlSettingEqual0|Your current environment's TTL (time-to-live) configuration for cloud flow runs is set to not retain data. As a result, some cloud flow run history might be missing. This occurs when [Organization.FlowRunTimeToLiveInSeconds](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) is set to zero currently.|
 |IngestionDisabledByOrgSettings|Cloud flow run history isn't being saved in Dataverse due to environments settings, so some of the run history for cloud flows might be missing. This occurrence happens when [Organization.FlowRunTimeToLiveInSeconds](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) was set to zero in the past.|
-|ElasticTableStorageCapacityReached|You've reached your Dataverse storage capacity limit, causing a pause in cloud flow run data synchronization.|
-|ElasticTablePartitionLimitReached|You've reached your Dataverse storage partition limit, causing a pause in cloud flow run data synchronization.|
+|ElasticTableStorageCapacityReached|You reached your Dataverse storage capacity limit, causing a pause in cloud flow run data synchronization.|
+|ElasticTablePartitionLimitReached|You reached your Dataverse storage partition limit, causing a pause in cloud flow run data synchronization.|
 |IngestionRateDataLoss|Some of the run history for cloud flows might be missing due to high volume of runs in this environment during the preview.|
 |FlowRunsEventLoadingFailed|Unable to load the events for cloud flow runs in your current environment. As a result, some historical cloud flow run data might not be available.|
 |FlowRunsTTlSettingFailedMessage|Unable to retrieve your environment's TTL (time-to-live) setting for cloud flow runs. As a result, some historical cloud flow run data might not be available.|
-|ElasticTableNoRoleForUser|A user who owns one or more flows doesn't have read permissions to the FlowRun table in Dataverse, so some cloud flow run history isn't being saved in Dataverse. The reason is because that user can't be set as the owner.|
+|ElasticTableNoRoleForUser|A user who owns one or more flows doesn't have read permissions to the FlowRun table in Dataverse, so some cloud flow run history isn't saved in Dataverse. The reason is because that user can't be set as the owner.|
 
 ## Known limitations
 
