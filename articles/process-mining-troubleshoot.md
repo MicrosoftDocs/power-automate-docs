@@ -129,7 +129,7 @@ Where the format is **dd/mm/yyyy hh:mm:ss**, setting the locale to **English (Ca
 
 ### "More than 50% of your data has invalid format. Please check your data and try again."
 
-To fix this issue, go to [Following column(s) do not have the right data types: [x]. Please check your data and try again.](#following-columns-do-not-have-the-right-data-types-x-please-check-your-data-and-try-again)
+To fix this issue, go to [Following column(s) do not have the right data types: [x]. Please check your data and try again.](#following-columns-dont-have-the-right-data-types-x-please-check-your-data-and-try-again)
 
 ### "Following column(s) are missing from your dataflow: [x]. Please check your data and try again."
 

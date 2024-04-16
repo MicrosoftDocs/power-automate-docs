@@ -15,7 +15,7 @@ ms.reviewer: angieandrews
 
 # Use your own network isolated Azure Data Lake Storage Gen2
 
-Onboarding your Azure Data Lake can be found in [Use your own Azure Data Lake Storage Gen2](../process-mining-byo-azure-data-lake.md), but relates to storage accounts that are open to the public internet. To use Process Mining against network isolated Azure Data Lakes, follow the steps in this article.
+Onboarding your Azure Data Lake can be found in [Use your own Azure Data Lake Storage Gen2](process-mining-byo-azure-data-lake.md), but relates to storage accounts that are open to the public internet. To use Process Mining against network isolated Azure Data Lakes, follow the steps in this article.
 
 ## Prerequisites
 
@@ -101,6 +101,6 @@ To find **[your_org_url]**:
 1. Go to **[your_org_url]/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder** and replace **[your_org_url]** with the real value.
 
     Example:<br/>
-    https://org0a00aab.crm10.dynamics.com/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder
+    `https://org0a00aab.crm10.dynamics.com/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder`
 
 
