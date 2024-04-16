@@ -23,7 +23,7 @@ search.audienceType:
 
 With cloud flow run history in Dataverse, you can apply the extensibility of [Dataverse](/power-apps/maker/data-platform/) to track the results of your cloud flow executions at scale. With this feature, you can use the power of Dataverse’s common data architecture, including [Role-Based Access Control (RBAC)](/power-platform/admin/wp-security-cds#role-based-security), to manage the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data. Only solution cloud flows, with their definitions in Dataverse, can have their run history stored in Dataverse.
 
-As part of this feature, each cloud flow execution has an entry in the table [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun). This is using Dataverse’s nonrelational database, [elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables), to store the cloud flow run history.
+As part of this feature, each cloud flow execution has an entry in the table [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun). This feature is using Dataverse’s nonrelational database, [elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables), to store the cloud flow run history.
 
 > [!IMPORTANT]
 >- This is a preview feature.
@@ -54,7 +54,7 @@ The [**FlowRun**](/power-apps/developer/data-platform/reference/entities/flowrun
 
 You can view and update the details through [standard Dataverse APIs](/power-apps/developer/data-platform/webapi/query-data-web-api), the [Dataverse connector](/connectors/commondataserviceforapps/), or directly from the **Tables** view in the maker portal.
 
-Since this feature is built on elastic tables, we store the cloud run history data in specific logical partitions for optimized performance. The run history data is partitioned based on users. This means each user in an organization has a dedicated partition.
+Since this feature is built on elastic tables, we store the cloud run history data in specific logical partitions for optimized performance. The run history data is partitioned based on users, so each each user in an organization has a dedicated partition.
 
 [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data uses [Dataverse database storage capacity](/power-platform/admin/capacity-storage#dataverse-tab). Storage use across environments [can be monitored in the Power Platform admin center](/power-platform/admin/capacity-storage#verifying-your-new-storage-model).
 
@@ -66,11 +66,11 @@ The [FlowRunTimeToLiveInSeconds value on the Organization table](/power-apps/dev
 
 ## Reduce number of FlowRun records over time
 
-If the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) is changed, then the lifetime of any new **[FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun)** records is retained for that length of time. This can be used to reduce the number of [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records, and storage used, over time.
+If the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) is changed, then the lifetime of any new **[FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun)** records is retained for that length of time. Lowering the value can reduce the number of [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records, and storage used, over time.
 
 Setting the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) to zero stops all ingestion of new [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records.
 
-We're adding an experience in the [PPAC environments experience](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center) to facilitate setting the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds).
+We're adding an experience in the [PPAC (Power Platform Admin Center) environments experience](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center) to facilitate setting the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds).
 
 > [!NOTE]
 > This feature is being rolled out and might not be available in your region yet.
@@ -103,7 +103,7 @@ The following table contains a list of [FlowEvent.EventCode](/power-apps/develop
 |EventCode |Reason |
 |---------|---------|
 |isFlowRunIngestionECSDisabled|Cloud flow run history isn't being saved in Dataverse due to service configuration, so no cloud flow data can be shown. The ECS service configuration is set automatically and there's no way for an admin to change the ingestion behavior in this state.|
-|TtlSettingEqual0|Your current environment's TTL (time-to-live) configuration for cloud flow runs is set to not retain data. As a result, some cloud flow run history might be missing. This occurs when [Organization.FlowRunTimeToLiveInSeconds](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) is set to zero currently.|
+|TtlSettingEqual0|Your current environment's TTL (time-to-live) configuration for cloud flow runs is set to not retain data. As a result, some cloud flow run history might be missing. This state occurs when [Organization.FlowRunTimeToLiveInSeconds](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) is set to zero.|
 |IngestionDisabledByOrgSettings|Cloud flow run history isn't being saved in Dataverse due to environments settings, so some of the run history for cloud flows might be missing. This occurrence happens when [Organization.FlowRunTimeToLiveInSeconds](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) was set to zero in the past.|
 |ElasticTableStorageCapacityReached|You reached your Dataverse storage capacity limit, causing a pause in cloud flow run data synchronization.|
 |ElasticTablePartitionLimitReached|You reached your Dataverse storage partition limit, causing a pause in cloud flow run data synchronization.|
@@ -115,7 +115,7 @@ The following table contains a list of [FlowEvent.EventCode](/power-apps/develop
 ## Known limitations
 
 - [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records are assigned to a specific owner when they're written into the table, so the concept of shared [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records for shared flows currently isn't supported.
-- Flow owners need at least read access to the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) table to store their run records in Dataverse. The [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records are written into the table by the system, but ownership is assigned to the primary owner of the flow. If the primary owner of the flow does not have read permission to the FlowRun table then the FlowRun record will not be stored and a [FlowEvent.EventCode](/power-apps/developer/data-platform/reference/entities/flowevent#BKMK_eventcode) of *ElasticTableNoRoleForUser* will be seen in the [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) table. To fix this situation, ensure that flow owners have FlowRun table read permission.
+- Flow owners need at least read access to the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) table to store their run records in Dataverse. The system writes [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records into the table and then ownership is assigned to the primary owner of the flow. If the primary owner of the flow does not have read permission to the FlowRun table then the FlowRun record will not be stored and a [FlowEvent.EventCode](/power-apps/developer/data-platform/reference/entities/flowevent#BKMK_eventcode) of *ElasticTableNoRoleForUser* will be seen in the [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) table. To fix this situation, ensure that flow owners have FlowRun table read permission.
 - Currently, there's a limit of 20 GB per partition within elastic tables. Further run record insertions, only for that specific user, would fail once the limit is reached.
 - [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records might be throttled and skipped if a user has many flows with high run rates. When throttling occurs, an entry is created in the [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) table to signal that runs were skipped and the data set is incomplete.
 
@@ -127,7 +127,7 @@ The following table contains a list of [FlowEvent.EventCode](/power-apps/develop
 ### Why do all of my environments have a FlowRunTimeToLiveInSeconds value of zero?
 
 If all of your environments have a [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) of zero, then it could be one of these situations:
-1. If [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data has never been available, then your environments might not have been automatically enabled for [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) ingestion because there wasn't enough [Dataverse database storage capacity](/power-platform/admin/capacity-storage#dataverse-tab) available.
+1. If [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is not available, then your environments might not have been automatically enabled for [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) ingestion because there wasn't enough [Dataverse database storage capacity](/power-platform/admin/capacity-storage#dataverse-tab) available.
 2. If [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data was previously available, then an administrator might have turned off ingestion of new records.
 
 ### When is this going to be generally available (GA)?
