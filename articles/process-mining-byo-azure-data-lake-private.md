@@ -87,20 +87,25 @@ Once the managed identity is successfully created, add it through Access Control
 
 ## Troubleshooting
 
-If you get with the error message, **Couldn't connect to container** in the [Connection Setup screen](process-mining-byo-azure-data-lake.md), you need to have the owner of the storage account and the person who initially established the connection share the **datalakefolder** record with you in the respective org in Dataverse.  
+If you get the error message, **Couldn't connect to container** in the [Connection Setup screen](process-mining-byo-azure-data-lake.md), you need to have the owner of the storage account and the person who initially established the connection share the **datalakefolder** record with you in the respective org in Dataverse.  
 
 :::image type="content" source="media/process-mining-byo-azure-data-lake-private/error.png" alt-text="Screenshot of the error message when connecting to the container.":::
 
-To fix this error, go to **[your_org_url]/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder** and replace **[your_org_url]** with the real value.
+To fix this error, go to **[your_org_url]/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder** by replacing **[your_org_url]** with the real value.
 
-To find **[your_org_url]**:
+> [!NOTE]
+> To find **[your_org_url]**:
+> 
+> 1. in the Power Automate environments, go to the Process Mining homepage.
+> 1. Select **Ctrl** + **Alt** + **A**.
+> 1. Find [your_org_url] in the **Instance url** entry.
+> 1. Go to **[your_org_url]/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder** and replace **[your_org_url]** with the real value.
+> 
+>     Example:<br/>
+>     `https://org0a00aab.crm10.dynamics.com/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder`
 
-1. in the Power Automate environments, go to the Process Mining homepage.
-1. Select **Ctrl** + **Alt** + **A**.
-1. Find [your_org_url] in the **Instance url** entry.
-1. Go to **[your_org_url]/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder** and replace **[your_org_url]** with the real value.
-
-    Example:<br/>
-    `https://org0a00aab.crm10.dynamics.com/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder`
-
-
+On the loaded page:
+1. Select the appropriate **data lake folder** record from the table.
+1. Select **Share** at the top.
+1. Select **Add User/Team** to search for the user you wish to add.
+1. Select **Share** button.
