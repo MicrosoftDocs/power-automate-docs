@@ -65,7 +65,7 @@ When the collection is succesfully published in this way, the corresponding succ
 > - Picking some UI elements to create a new collection effectively **copies** (rather than moving) those elements from the context of a single flow to the collection entity, which can then be shared and reused in other flows. While the new collection now appears in the Collections tab, the flow's original UI elements are also still available in the Flow repository tab. If the latter are no longer needed and used in the current flow, you can always use the option **Remove unused UI elements** in the UI elements pane's main context menu.
 
 > [!IMPORTANT]
-> - A collection can only include screens/web pages and their UI elements, not the desktop in which they were captured. This accommodates using the same collection for a target application, independently of whether it's installed in the local computer for some makers, or in a remote desktop for others. The collection would be imported under the proper desktop in each party's separate flow.
+> - A collection can only include screens/web pages and their UI elements, not the desktop in which they were captured. This accommodates using the same collection for a target application, independently of whether it's installed in the local computer for some makers, or in a remote desktop for others. The collection would be imported under the proper desktop in each maker's separate flow.
 
 In the Collections tab, as per the above screenshot, the tree structure of the items therein now consists of four levels:
 * The desktop in which the collection has been imported
