@@ -3,11 +3,12 @@ title: List of aggregations
 description: Learn about the aggregations you can use in custom metrics in Power Automate Process Mining.
 author: rosikm
 contributors:
+  - janPidych
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 07/18/2023
+ms.date: 04/18/2024
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -54,7 +55,7 @@ Calculates the average of values that meet the [condition], grouped according to
 
 **Example**: `AVGIF(ViewEvents, userName == "Laura", eventCost)`
 
-Custom metric can be used anywhere in application. Returns the average event cost for events associated with the user "Laura"
+Custom metric can be used anywhere in the application. Returns the average event cost for events associated with the user "Laura".
 
 ## COUNT([context])
 
@@ -162,7 +163,7 @@ Selects item with maximum value from [value1] and returns its calculated value d
 
 **Example**: `MAXVAL(EventsPerAttribute, Duration(), userName)`
 
-Can be used on the process map Returns the username of a user who worked on the longest event per activity
+Can be used on the process map Returns the username of a user who worked on the longest event per activity.
 
 ## MAXVALIF([context],[condition],[value1],[value2],[default])
 
