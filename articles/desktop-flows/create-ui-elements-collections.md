@@ -55,7 +55,7 @@ Selecting this option brings up a confirmation dialog, where you can provide a n
 
 <screenshot with Publish confirmation dialog>
 
-Upon selecting **Publish**, the flow will enter a *Publishing* state, during which the collection is saved and uploaded in Dataverse, to become available in the specific environment. For as long as publishing takes place, the UI of the flow designer remains disabled.
+Upon selecting **Publish**, the flow will enter a *Publishing* state, during which the collection is saved and uploaded in Dataverse, to become available in the specific environment. While publishing takes place, the UI of the flow designer remains disabled.
 
 When the collection is succesfully published in this way, the corresponding success banner appears in the UI elements pane to inform you accordingly. In addition, if you look at the Collections tab, that collection is now automatically imported into this flow from which it was created. More precisely, it is imported by default into the same desktop (for instance Local computer or Remote desktop) in which the collection's UI elements were originally captured. This is done automatically for you, to avoid manually importing each new collection you create into the same flow it's generated from.
 
