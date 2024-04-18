@@ -25,7 +25,7 @@ search.audienceType:
 - Dynamic output schema isn't fully supported for cloud connector actions in desktop flows. Refrain from using variables in the respective dropdown fields (Site address/ List name/ Select file etc.) while configuring a cloud connector action.
 - Sharing desktop flows with cloud connector actions isn't currently supported. Co-owners aren't able to run such desktop flows unless they overwrite the connection references with their own. **Users** with read access are unable to run such flows.
 - [Microsoft Dataverse (preview)](/connectors/commondataserviceforapps) has the following limitations:
-  - The connector is currently available for desktop flows **only in publicly accessible clouds**.
+  - The connector is currently available only for desktop flows under **public cloud**.
   - The following actions are currently supported in desktop flows
     - [Add a new row to selected environment](/connectors/commondataserviceforapps/#add-a-new-row-to-selected-environment)
     - [Delete a row from selected environment](/connectors/commondataserviceforapps/#delete-a-row-from-selected-environment)
