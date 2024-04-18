@@ -17,7 +17,7 @@ search.audienceType:
 
 # Create and publish UI elements collections in desktop flows
 
-Creating and publishing a UI elements collection is possible through the flow designer of any desktop flow, old or new. In the UI elements pane, there are now two different tabs available, **Flow repository** and **Collections (preview)**.
+Creating and publishing a UI elements collection is possible through the flow designer of any desktop flow, existing or new. In the UI elements pane, there are now two different tabs available, **Flow repository** and **Collections (preview)**.
 
 <screenshot with two tabs>
 
