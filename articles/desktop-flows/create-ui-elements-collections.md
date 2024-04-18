@@ -21,7 +21,7 @@ Creating and publishing a UI elements collection is possible through the flow de
 
 <screenshot with two tabs>
 
-The **Flow repository** tab contains all the UI elements that are available only to that particular desktop flow. Older desktop flows that have been created with version 2.42 or previous than that, which contain UI elements, now display those elements under the Flow repository tab (so long as these desktop flows belong to a schema v2 environment).
+The **Flow repository** tab contains all the UI elements that are available only to that particular desktop flow. Older desktop flows that have been created with version 2.42 or previous than that, which contain UI elements, now display those elements under the Flow repository tab, if the version  is updated to version 2.43 or later (so long as these desktop flows belong to a schema v2 environment).
 
 > [!NOTE]
 > - The UI elements collections is a [premium feature](premium-features.md), available only to organization premium or trial users. Users with a work or school account, or a free Microsoft account, do not have access to UI elements collections.
