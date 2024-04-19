@@ -47,13 +47,13 @@ You can edit a UI elements collection, modifying its name and/or description.
 
 ## Share a UI elements collection
 
-You can share UI elements collections to determine who has access to those collections and view the given type of access.
+You can share UI elements collections to provide access to those collections and determine the given type of access.
 
 There are three types of access a maker can have regarding UI elements collections.
 
 - **User** – can only use the respective collection in desktop flows.
 -	**User + Share** – can use, but also share the collection.
-- **Co-owner** – can use, update and/or delete the collection.
+- **Co-owner** – can use, share, update and/or delete the collection.
 
 <screenshot>
 
