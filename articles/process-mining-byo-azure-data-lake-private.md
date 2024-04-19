@@ -21,7 +21,12 @@ Onboarding your Azure Data Lake can be found in [Use your own Azure Data Lake St
 
 ### Perform and verify your Azure Storage account is network isolated
 
-In the [Azure portal](https://portal.azure.com), go to the **Networking** tab for the storage account and proceed to set the following values. The red items are expected to be permanently set; the green items can be set temporarily.
+In the [Azure portal](https://portal.azure.com), go to the **Networking** tab for the storage account and proceed to set the following values. The items:
+- Enable from selected virtual networks and IP addresses
+- Allow Azure services on the trusted services list to access this storage account 
+are expected to be permanently set; the item:
+- Add your client IP Address
+can be set temporarily.
 
 :::image type="content" source="media/process-mining-byo-azure-data-lake-private/azure-portal-settings.svg" alt-text="Screenshot of the storage account settings.":::
 
