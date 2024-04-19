@@ -17,7 +17,7 @@ search.audienceType:
 
 # Manage UI elements collections in desktop flows
 
-After publishing a UI elements collection through the flow designer of a desktop flow, that collection is uploaded in Dataverse, and specifically in the same environment that is also used by the flow.
+After publishing a UI elements collection through the flow designer of a desktop flow, that collection is uploaded in Dataverse, and specifically in the same environment where the flow exists.
 
 ## Portal page of UI elements collections
 
