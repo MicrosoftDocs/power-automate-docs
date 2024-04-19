@@ -33,7 +33,7 @@ To inspect this collection, as well as the list of any other collections that ar
 
 <screenshot>
 
-This is the page containing all the collections that are accessible to you. By selecting one of the available UI elements collections, you can go into its details page.
+This is the page containing all the collections that are accessible to you. You can hit on the Refresh button at the top, to quickly retrieve any recent changes and update your collections list. By selecting one of the available UI elements collections, you can go into its details page.
 
 <screenshot>
 
