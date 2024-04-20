@@ -3,11 +3,12 @@ title: List of aggregations
 description: Learn about the aggregations you can use in custom metrics in Power Automate Process Mining.
 author: rosikm
 contributors:
+  - janPidych
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/16/2024
+ms.date: 04/22/2024
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -32,7 +33,7 @@ Calculates the average of values grouped according to the [context].
 
 **Output data type**: FLOAT, DATE, TIME
 
-## AVGIF([context],[condition],[value])
+## AVGIF([context],[condition],[value],[default])
 
 Calculates the average of values that meet the [condition], grouped according to the [context].
 
@@ -45,12 +46,16 @@ Calculates the average of values that meet the [condition], grouped according to
 - **[value]**: An attribute name, nested operation, or expression
 
    Data type: INT, FLOAT, DATE, TIME
+  
+- **[default]**: Default value returned by operator when no element in defined [context] meets the [condition]
+
+   Data type: INT, FLOAT, DATE, TIME
 
 **Output data type**: INT, FLOAT, DATE, TIME
 
 **Example**: `AVGIF(ViewEvents, userName == "Laura", eventCost)`
 
-Can be used anywhere a custom metric can be used Returns the average event cost for events associated with the user "Laura"
+Custom metric can be used anywhere in the application. Returns the average event cost for events associated with the user "Laura".
 
 ## COUNT([context])
 
@@ -60,7 +65,7 @@ Counts the number of values grouped according to the [context].
 
 **Output data type**: INT
 
-## COUNTIF([context],[condition])
+## COUNTIF([context],[condition],[default])
 
 Counts the number of values fulfilling the [condition], grouped according to the [context].
 
@@ -69,6 +74,10 @@ Counts the number of values fulfilling the [condition], grouped according to the
 - **[condition]**: The condition under which the [value] is included in the calculation
 
    Data type: BOOL
+  
+- **[default]**: Default value returned by operator when no element in defined [context] meets the [condition]
+
+   Data type: INT
 
 **Output data type**: INT
 
@@ -84,7 +93,7 @@ Counts the number of unique values, grouped according to the [context].
 
 **Output data type**: INT
 
-## COUNTUNIQUEIF([context],[condition],[value])
+## COUNTUNIQUEIF([context],[condition],[value],[default])
 
 Counts the number of unique [value] that meet the [condition], grouped according to the [context].
 
@@ -97,6 +106,10 @@ Counts the number of unique [value] that meet the [condition], grouped according
 - **[value]**: An attribute name, nested operation, or expression
 
    Data type: INT, FLOAT, TIME
+  
+- **[default]**: Default value returned by operator when no element in defined [context] meets the [condition]
+
+   Data type: INT
 
 **Output data type**: FLOAT, TIME
 
@@ -112,7 +125,7 @@ Returns the maximum of [value], grouped according to the [context].
 
 **Output data type**: INT, FLOAT, DATE, TIME
 
-## MAXIF([context],[condition],[value])
+## MAXIF([context],[condition],[value],[default])
 
 Returns the maximum of [values] that meet the [condition], grouped according to the [context].
 
@@ -125,6 +138,10 @@ Returns the maximum of [values] that meet the [condition], grouped according to 
 - **[value]**: An attribute name, nested operation, or expression
 
    Data type: INT, FLOAT, TIME
+  
+- **[default]**: Default value returned by operator when no element in defined [context] meets the [condition]
+
+   Data type: INT, FLOAT, DATE, TIME
 
 **Output data type**: FLOAT, TIME
 
@@ -146,9 +163,9 @@ Selects item with maximum value from [value1] and returns its calculated value d
 
 **Example**: `MAXVAL(EventsPerAttribute, Duration(), userName)`
 
-Can be used on the process map Returns the username of a user who worked on the longest event per activity
+Can be used on the process map Returns the username of a user who worked on the longest event per activity.
 
-## MAXVALIF([context],[condition],[value1],[value2])
+## MAXVALIF([context],[condition],[value1],[value2],[default])
 
 Selects item with the maximum value defined by [value1] that meets the [condition] and returns its calculated value defined by [value2], grouped according to the [context].
 
@@ -165,6 +182,10 @@ Selects item with the maximum value defined by [value1] that meets the [conditio
 - **[value2]**: An attribute name, nested operation, or expression
 
    Data type: INT, FLOAT, STRING, TIME, DATE
+  
+- **[default]**: Default value returned by operator when no element in defined [context] meets the [condition]
+
+   Data type: INT, FLOAT, DATE, TIME
 
 **Output data type**: INT, FLOAT, STRING, TIME, DATE
 
@@ -180,7 +201,7 @@ Returns the minimum of [value], grouped according to the [context].
 
 **Output data type**: INT, FLOAT, DATE, TIME
 
-## MINIF([context],[condition],[value])
+## MINIF([context],[condition],[value],[default])
 
 Returns the minimum of [value] that meets the [condition], grouped according to the [context].
 
@@ -193,6 +214,10 @@ Returns the minimum of [value] that meets the [condition], grouped according to 
 - **[value]**: An attribute name, nested operation, or expression
 
    Data type: INT, FLOAT, TIME
+  
+- **[default]**: Default value returned by operator when no element in defined [context] meets the [condition]
+
+   Data type: INT, FLOAT, DATE, TIME
 
 **Output data type**: FLOAT, TIME
 
@@ -212,7 +237,7 @@ Selects item with the minimum value defined by [value1] and returns its calculat
 
 **Output data type**: INT, FLOAT, STRING, TIME, DATE
 
-## MINVALIF([context],[condition],[value1],[value2])
+## MINVALIF([context],[condition],[value1],[value2],[default])
 
 Selects item with the minimum value defined by [value1] that meets the [condition] and returns its calculated value defined by [value2], grouped according to the [context].
 
@@ -230,6 +255,10 @@ Selects item with the minimum value defined by [value1] that meets the [conditio
 
    Data type: INT, FLOAT, STRING, TIME, DATE
 
+- **[default]**: Default value returned by operator when no element in defined [context] meets the [condition]
+
+   Data type: INT, FLOAT, DATE, TIME
+
 **Output data type**: INT, FLOAT, STRING, TIME, DATE
 
 ## RANGE([context],[value])
@@ -244,7 +273,7 @@ Returns the range (maximum-minimum) of [value], grouped according to the [contex
 
 **Output data type**: INT, FLOAT, TIME
 
-## RANGEIF([context],[condition],[value])
+## RANGEIF([context],[condition],[value],[default])
 
 Returns the range (maximum-minimum) of [value] that meets the [condition], grouped according to the [context].
 
@@ -254,9 +283,13 @@ Returns the range (maximum-minimum) of [value] that meets the [condition], group
 
    Data type: BOOL
 
-- [value] - An attribute name, nested operation, or expression
+- **[value]** - An attribute name, nested operation, or expression
 
    Data type: INT, FLOAT, TIME
+  
+- **[default]**: Default value returned by operator when no element in defined [context] meets the [condition]
+
+   Data type: INT, FLOAT, DATE, TIME
 
 **Output data type**: FLOAT, TIME
 
@@ -286,6 +319,10 @@ Calculates the standard deviation of [value] that meets the [condition], grouped
 
    Data type: INT, FLOAT, TIME
 
+- **[default]**: Default value returned by operator when no element in defined [context] meets the [condition]
+
+   Data type: INT, FLOAT, DATE, TIME
+
 **Output data type**: FLOAT, TIME
 
 ## SUM([context],[value])
@@ -300,7 +337,7 @@ Calculates the sum of [value], grouped according to the [context].
 
 **Output data type**: FLOAT, TIME
 
-## SUMIF([context],[condition],[value])
+## SUMIF([context],[condition],[value],[default])
 
 Calculates the sum of [value] that meets the [condition], grouped according to the [context].
 
@@ -313,6 +350,10 @@ Calculates the sum of [value] that meets the [condition], grouped according to t
 - **[value]**: An attribute name, nested operation, or expression
 
    Data type: INT, FLOAT, TIME
+
+- **[default]**: Default value returned by operator when no element in defined [context] meets the [condition]
+
+   Data type: INT, FLOAT, DATE, TIME
 
 **Output data type**: FLOAT, TIME
 
@@ -464,7 +505,7 @@ Returns the most common [value] from [context].
 
 **Output data type**: STRING, INT, FLOAT, DATE, TIME, BOOL
 
-## MODEIF([context],[condition],[value])
+## MODEIF([context],[condition],[value],[default])
 
 Returns the most common [value] from data elements that meet the [condition] in the [context].
 
@@ -475,6 +516,10 @@ Returns the most common [value] from data elements that meet the [condition] in 
 - **[value]**: An attribute name, nested operation, or expression
 
    Data type: STRING, INT, FLOAT, DATE, TIME, BOOL
+
+- **[default]**: Default value returned by operator when no element in defined [context] meets the [condition]
+
+   Data type: INT, FLOAT, DATE, TIME
 
 **Output data type**: STRING, INT, FLOAT, DATE, TIME, BOOL
 
