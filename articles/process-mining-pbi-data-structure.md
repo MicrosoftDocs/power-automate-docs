@@ -7,7 +7,7 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 01/17/2024
+ms.date: 04/16/2024
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -29,7 +29,7 @@ In addition, a more intuitive Power BI model data structure is used, which allow
 
 The new optimized data structure replaces the previous structure completely and the previous data structure will be deprecated. To find out the date and necessary steps, go to the banner in the process **Details** page.
 
-The new optimized data atructure takes place in the background, so you'll see it only in the resulting model as described in the following section.
+The new optimized data structure takes place in the background, so you'll see it only in the resulting model as described in the following section.
   
 ## Enable XMLA read/write setting
 
@@ -40,21 +40,21 @@ To use the optimized data structure, the XMLA endpoint property must be enabled 
 
 ### Enable read-write for a Premium capacity semantic model workload
 
-1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. Select **Settings** > **Admin Center**.
-1. In the Power Platform admin center, select select **Capacity settings** > **Power BI Premium** > *capacity name*.
-1. Expand **Workloads**.
+1. Sign in to [Power BI](https://msit.powerbi.com/).
+1. Select **Settings** > **Admin portal**.
+1. In the Power BI **Admin portal**, select **Capacity settings** > **Power BI Premium** > *capacity name*.
+1. Expand **Power BI Workloads**.
 1. In the **XMLA Endpoint** setting, select **Read Write**.
 
-    The XMLA Endpoint setting applies to all workspaces and semantic models assigned to the capacity.
+    The **XMLA Endpoint** setting applies to all workspaces and semantic models assigned to the capacity.
 
     :::image type="content" source="media/process-mining-pbi-data-structure/XMLAEndpoint.svg" alt-text="Screenshot of the XMLA endpoint settings.":::
 
 ### Enable read-write for a Premium Per User semantic model workload
 
-1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. Select **Settings** > **Admin Center**.
-1. In the Power Platform admin center, select **Premium Per User**.
+1. Sign in to [Power BI](https://msit.powerbi.com/).
+1. Select **Settings** > **Admin portal**.
+1. In the Power BI **Admin portal**, select **Premium Per User**.
 1. Expand **Semantic model workload** settings.
 1. In the **XMLA Endpoint** setting, select **Read Write**.
 
@@ -85,7 +85,7 @@ For an enlarged view of the screenshot, select the magnifying glass in the lower
 
 ### Relationships
 
-Relationships necessary for filtering and interconnectivity of visuals are pre-defined in the published data model. There isn't a need to manually create additional relationships unless other data sources are connected. For this scenario, use the Power BI composite data model and build relationships on top of that model.
+Relationships necessary for filtering and interconnectivity of visuals are predefined in the published data model. There isn't a need to manually create more relationships unless other data sources are connected. For this scenario, use the Power BI composite data model and build relationships on top of that model.
 
 ### Data model summary
 
@@ -93,7 +93,7 @@ From a logical perspective, the data model consists of many entity subsets as de
 
 - **Process Data**: All process related data without filtering and calculated measures.
 - **View Data**: Entities giving the process data into the context of the created process analytical view&mdash;applied filters, calculated measures, and custom metrics.
-- **Visuals data**: Entities providing pre-calculated data necessary for process mining custom visuals to display.
+- **Visuals data**: Entities providing precalculated data necessary for process mining custom visuals to display.
 - **Helping entities**: Other entities needed by Power BI.
 
 Following is the brief description of the subsets and included entities.
@@ -127,9 +127,9 @@ View data entities allows you to access process data influenced by the applied f
 
 |Entity|Description|
 |------|-----------|
-|ViewCases|Entity holds information on which cases are included in which view. In addition, it includes the information for which variant the case is following and pre-calculated measures for the case. If a case is included in several views, the entity holds a record for each case-view combination. This is important, as some of the values of calculated case measures depend on the filtering criteria set in the view. It also holds any pre-calculated custom metric values (if defined in process context and valid on case level). The case record is uniquely identified by the **Index** column.|
-|ViewEvents|Entity holds information on which events are included in which view and which case they are connected to (event level process view filters might modify the events included in the case). In addition, it includes pre-calculated measures for the event. If an event is included in several views, the entity holds a record for each event-view combination. This is important, as some of the values of calculated event measures depend on the filtering criteria set in the view. It also holds any pre-calculated custom metric values (if defined in process context and valid on event level). The event record is uniquely identified by the **Index** column.|
-|ViewTransitions|Entity holds information on which transitions are included in which view. In addition, it includes pre-calculated measures for the transition. If a transition is included in several views, the entity holds a record for each transition-view combination. This is important, as some of the values of calculated transition measures depend on the filtering criteria set in the view. It also holds any pre-calculated custom metric values (if defined in process context and valid on transition / edge level). The transition record is uniquely identified by the **Index** column. |
+|ViewCases|Entity holds information on which cases are included in which view. In addition, it includes the information for which variant the case is following and precalculated measures for the case. If a case is included in several views, the entity holds a record for each case-view combination. This is important, as some of the values of calculated case measures depend on the filtering criteria set in the view. It also holds any precalculated custom metric values (if defined in process context and valid on case level). The case record is uniquely identified by the **Index** column.|
+|ViewEvents|Entity holds information on which events are included in which view and which case they are connected to (event level process view filters might modify the events included in the case). In addition, it includes precalculated measures for the event. If an event is included in several views, the entity holds a record for each event-view combination. This is important, as some of the values of calculated event measures depend on the filtering criteria set in the view. It also holds any precalculated custom metric values (if defined in process context and valid on event level). The event record is uniquely identified by the **Index** column.|
+|ViewTransitions|Entity holds information on which transitions are included in which view. In addition, it includes precalculated measures for the transition. If a transition is included in several views, the entity holds a record for each transition-view combination. This is important, as some of the values of calculated transition measures depend on the filtering criteria set in the view. It also holds any precalculated custom metric values (if defined in process context and valid on transition / edge level). The transition record is uniquely identified by the **Index** column. |
 |ViewParallelTransitions|Entity holds a record for a combination of transition and case, when that transition is considered parallel in that case in a particular view.|
 |Variants|Entity holds the relations between variants and process views. A record is included if a particular variant is included in a view after the filtering criteria are taken into account.|
 
@@ -148,16 +148,16 @@ Visuals data entities are recalculated only when there's a data refresh for the 
 |------|-----------|
 |LocalizationTable|Internal table used for localization purpose.|
 |LocalizationMeasures|Internal measures used for localization purpose.|
-|ReportMeasures|Pre-created and pre-formatted most frequent measures that can be used for summary KPIs in the process report. Their evaluation might be subject to filtering and interactive selection in Power BI report.|
+|ReportMeasures|Precreated and preformatted most frequent measures that can be used for summary KPIs in the process report. Their evaluation might be subject to filtering and interactive selection in Power BI report.|
 
 ## Power BI composite data model
 
 We recommend that you use the Power BI composite data model on top of the data model published by Power Automate Process Mining and create necessary modifications there for the following scenarios.
 
-- When additional data sources are needed.
-- When additional entities should be created.
-- When additional relationships are needed.
-- When custom DAX queries are needed.
+- When more data sources are needed
+- When more entities should be created
+- When more relationships are needed
+- When custom DAX queries are needed
 
 To learn more about creating Power BI composite data models, go to [Use composite models in Power BI Desktop](/power-bi/transform-model/desktop-composite-models).
 
