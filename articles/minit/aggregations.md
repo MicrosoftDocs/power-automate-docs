@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/18/2024
+ms.date: 04/22/2024
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -381,13 +381,13 @@ Returns the first [value] that meets the [condition], grouped according to the [
 
 - **[value]**: An attribute name, nested operation, or expression
 
-   Data type: INT, FLOAT, TIME
-  
-- **[default]**: Default value returned by operator when no element in defined [context] meets the [condition]
+   Data type: INT, FLOAT, TIME, STRING
 
-   Data type: INT, FLOAT, DATE, TIME
+- **[default]**: Value to be returned, when condition is not met
 
-**Output data type**: FLOAT, TIME
+   Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
+
+**Output data type**: BOOL, INT, FLOAT, STRING, DATE, TIME
 
 ## LAST([context],[value])
 
@@ -415,11 +415,11 @@ Returns the last value that meets the [condition], grouped according to the [con
 
    Data type: INT, FLOAT, TIME
 
-- **[default]**: Default value returned by operator when no element in defined [context] meets the [condition]
+- **[default]**: Value to be returned, when condition is not met
 
-   Data type: INT, FLOAT, DATE, TIME
+   Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
-**Output data type**: FLOAT, TIME
+**Output data type**: BOOL, INT, FLOAT, STRING, DATE, TIME
 
 ## SELFLOOP([context],[attributeName])
 
