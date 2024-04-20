@@ -804,7 +804,7 @@
       href: process-mining-sap-erp.md    
     - name: Storage Gen2
       items:
-      - name: Use your own Azure Data Lake Storage Gen2
+      - name: Bring your own Azure Data Lake Storage Gen2
         href: process-mining-byo-azure-data-lake.md
       - name: Use your own network isolated Azure Data Lake Storage Gen2
         href: process-mining-byo-azure-data-lake-private.md

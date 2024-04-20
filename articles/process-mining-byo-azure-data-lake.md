@@ -1,5 +1,5 @@
 ---
-title: Use your own Azure Data Lake Storage Gen2
+title: Bring your own Azure Data Lake Storage Gen2
 description: Learn how to store and read event log data directly from Azure Data Lake Storage Gen2.
 author: HeatherOrt
 contributors:
@@ -8,13 +8,13 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/16/2024
+ms.date: 04/22/2024
 ms.custom: bap-template
 ms.author: heortaol
 ms.reviewer: angieandrews
 ---
 
-# Use your own Azure Data Lake Storage Gen2
+# Bring your own Azure Data Lake Storage Gen2
 
 Power Automate Process Mining gives you the option to store and read event log data directly from [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction). This feature simplifies extract, transform, load (ETL) management by connecting directly to your storage account.
 

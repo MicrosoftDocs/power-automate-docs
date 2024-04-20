@@ -7,7 +7,7 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/16/2024
+ms.date: 04/22/2024
 ms.custom: bap-template
 ms.author: michalrosik
 ms.reviewer: angieandrews
@@ -19,18 +19,20 @@ Onboarding your Azure Data Lake can be found in [Use your own Azure Data Lake St
 
 ## Prerequisites
 
-### Perform and verify your Azure Storage account is network isolated
+Perform and verify your Azure Storage account is network isolated.
 
-In the [Azure portal](https://portal.azure.com), go to the **Networking** tab for the storage account and proceed to set the following values. The items:
-- Enable from selected virtual networks and IP addresses
-- Allow Azure services on the trusted services list to access this storage account 
+In the [Azure portal](https://portal.azure.com), go to the **Networking** tab for the storage account and proceed to set the following values.
 
-are expected to be permanently set; the item:
-- Add your client IP Address
+These fields are expected to be permanently set:
+- **Enabled from selected virtual networks and IP addresses**
+- **Allow Azure services on the trusted services list to access this storage account** 
 
-can be set temporarily.
+ This field can be temporarily set:
+- **Add your client IP address** 
 
-:::image type="content" source="media/process-mining-byo-azure-data-lake-private/azure-portal-settings.svg" alt-text="Screenshot of the storage account settings.":::
+The following screenshot shows the permanent and temporary fields.
+
+:::image type="content" source="media/process-mining-byo-azure-data-lake-private/azure-portal-settings.png" alt-text="Screenshot of the storage account settings.":::
 
 ## Create a managed identity
 
@@ -98,21 +100,19 @@ If you get the error message, **Couldn't connect to container** in the [Connecti
 
 :::image type="content" source="media/process-mining-byo-azure-data-lake-private/error.png" alt-text="Screenshot of the error message when connecting to the container.":::
 
-To fix this error, go to **[your_org_url]/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder** by replacing **[your_org_url]** with the real value.
+To fix this error, go to ***[your_org_url]*****/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder** and replace ***[your_org_url]*** with the real value.
 
-> [!NOTE]
-> To find **[your_org_url]**:
-> 
-> 1. in the Power Automate environments, go to the Process Mining homepage.
-> 1. Select **Ctrl** + **Alt** + **A**.
-> 1. Find [your_org_url] in the **Instance url** entry.
-> 1. Go to **[your_org_url]/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder** and replace **[your_org_url]** with the real value.
-> 
->     Example:<br/>
->     `https://org0a00aab.crm10.dynamics.com/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder`
+1. Find ***[your_org_url]*** by doing the following steps:
+    1. In the Power Automate environments, go to the Process Mining homepage.
+    1. Select **Ctrl** + **Alt** + **A**.
+    1. In **Instance url**, find ***[your_org_url]***.
+    1. Go to ***[your_org_url]*****/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder** and replace ***[your_org_url]*** with the real value.
 
-On the loaded page:
-1. Select the appropriate **data lake folder** record from the table.
-1. Select **Share** at the top.
-1. Select **Add User/Team** to search for the user you wish to add.
-1. Select **Share** button.
+        Example:<br/>
+        `https://org0a00aab.crm10.dynamics.com/main.aspx?app=d365default&forceUCI=1&pagetype=entitylist&etn=datalakefolder`
+
+1. On the loaded page, do the following steps:
+    1. From the table, select the appropriate **data lake folder** record.
+    1. At the top of the screen, select **Share**.
+    1. To search for the user to add, select **Add User/Team**.
+    1. Select **Share**.
