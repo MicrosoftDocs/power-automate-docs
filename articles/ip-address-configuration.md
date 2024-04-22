@@ -54,7 +54,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 |login.partner.microsoftonline.cn|https|Access to the Power Automate for desktop cloud discovery|
 |s2s.config.skype.com<br>use.config.skype.com|https|Access to preview features managed through flighting and configuration endpoints.|
 |s2s.config.ecs.infra.gov.teams.microsoft.us|https|Access to preview features managed through flighting and configuration endpoints for US government cloud.|
-| *.api.powerplatform.com | https | Access to several Power Platform APIs. |
+| *.api.powerplatform.com <br> *.api.powerplatformusercontent.com | https | Access to several Power Platform APIs. |
 | *.api.gov.powerplatform.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
 | *.api.high.powerplatform.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
 | *.api.appsplatform.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
