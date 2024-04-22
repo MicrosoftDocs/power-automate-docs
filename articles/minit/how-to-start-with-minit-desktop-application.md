@@ -3,6 +3,7 @@ title: Download Power Automate Process Mining desktop app
 description: Learn how to install Power Automate Process Mining.
 author: rosikm
 contributors:
+  - janPidych
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
@@ -27,6 +28,9 @@ Before you can start using Power Automate Process Mining, you need to download i
 1. At the top of the process mining screen, select **Download app**.
   
     :::image type="content" source="media/minit-install-a1.png" alt-text="Screenshot of the'Download app' option in Power Automate Process Mining.":::
+
+    > [!NOTE]
+    > Power Automate Process Mining desktop app is supported on Windows 10 and above. Windows Server systems aren't supported.
 
 1. After the installer file downloads, select **Install** when prompted to run the installer.
 
