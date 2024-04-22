@@ -55,6 +55,18 @@ After you complete the collection inclusion and close the assets library, the co
 
 <screenshot with collections tab and imported collection>
 
+## Use UI elements collections in flow actions
+
+## Edit a UI elements collection
+
+### Add additional UI elements to an imported collection
+
+### Edit the UI elements of a collection
+
+### Delete UI elements from a collection
+
+## Update a UI elements collection
+
 ### See also
 
 - [Assets library](assets-library.md)
