@@ -34,10 +34,10 @@ Alternatively, use the **Tools** bar.
 
 ## Import collections through the UI elements collections (preview) tab
 
-The [UI elements collections](ui-elements-collections.md) tab shows you the collections that are published in the environment you've selected.
+The [UI elements collections](ui-elements-collections.md) tab shows you the collections that are published in the environment you've selected and are accessible to you.
 
 > [!NOTE]
-> You can only see UI elements collections that you have created or are shared with you.
+> You can only see UI elements collections that you have created or are shared with you. The list of collections in the respective Assets library tab is identical to the list available in the portal page for each maker.
 
 <screenshot with collections tab in assets library>
 
@@ -51,7 +51,7 @@ After selecting the collection you want to add to your flow, you also need to se
 > [!NOTE]
 > Each collection can only be imported in one target desktop per flow.
 
-After you complete the collection inclusion and close the assets library, the collection will now appear in the Collections (preview) tab of the UI elements pane, under the desktop that was previously selected.
+After you complete the collection inclusion and close the assets library, the collection will now appear in the Collections (preview) tab of the UI elements pane, imported under the desktop that was previously selected.
 
 <screenshot with collections tab and imported collection>
 
