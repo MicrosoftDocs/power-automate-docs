@@ -65,9 +65,9 @@ After being added to a flow, a collection can similarly be removed through the A
 > [!NOTE]
 > If a collection is removed from a flow while any of its UI elements are already used in the flow's actions, those actions will throw an error and will need fixing.
 
-## Use UI elements collections in flow actions
+## Use UI elements collections in the actions of a flow
 
-After a collection is imported and becomes available in a desktop flow, the UI elements it contains can be used in the UI and web automation actions of that flow. In the corresponding action modals, in the field where the action's associated UI element is specified, you can now find the the same two tabs of the UI elements pane, Flow repository and Collections (preview). Under the Collections (preview) tab, you can use any UI element you need that belongs to an imported collection.
+After a collection is imported and becomes available in a desktop flow, the UI elements it contains can be used in the UI and web automation actions of that flow. In the corresponding action modals, in the field where the action's associated UI element is specified, you can now find the same two tabs of the UI elements pane, Flow repository and Collections (preview). Under the Collections (preview) tab, you can use any UI element you need that belongs to an imported collection.
 
 <Screenshot of Click UI element action with two tabs open>
 
