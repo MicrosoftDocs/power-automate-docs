@@ -38,6 +38,10 @@ After you exported your solution, you can import it into any environment that me
 > [!NOTE]
 > You can't import a solution into an environment in which the solution already exists.
 
+## Solution component ownership after import
+
+When the solution is imported, all components in that solution will be owned by the user performing the import, including cloud flows, connection references, apps, and any other components in the solution.
+
 ## FAQ
 
 ### What will the flow state be after import?
