@@ -1,5 +1,5 @@
 ---
-title: Use your own network isolated Azure Data Lake Storage Gen2
+title: Bring your own network isolated Azure Data Lake Storage Gen2
 description: Learn how to store and read event log data directly from network isolated Azure Data Lake Storage Gen2.
 author: rosikm
 contributors:
@@ -13,7 +13,7 @@ ms.author: michalrosik
 ms.reviewer: angieandrews
 ---
 
-# Use your own network isolated Azure Data Lake Storage Gen2
+# Bring your own network isolated Azure Data Lake Storage Gen2
 
 Onboarding your Azure Data Lake can be found in [Use your own Azure Data Lake Storage Gen2](process-mining-byo-azure-data-lake.md), but relates to storage accounts that are open to the public internet. To use Process Mining against network isolated Azure Data Lakes, follow the steps in this article.
 
