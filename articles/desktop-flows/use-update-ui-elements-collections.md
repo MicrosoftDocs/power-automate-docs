@@ -32,7 +32,7 @@ Alternatively, use the **Tools** bar.
 > [!IMPORTANT]
 > This feature requires Power Automate for desktop v2.43 or later.
 
-## Import collections through the UI elements collections (preview) tab
+## Import collections through the UI elements collections (preview) tab of the Assets library
 
 The [UI elements collections](ui-elements-collections.md) tab shows you the collections that are published in the environment you've selected and are accessible to you.
 
@@ -55,7 +55,21 @@ After you complete the collection inclusion and close the assets library, the co
 
 <screenshot with collections tab and imported collection>
 
+## Remove collections through the UI elements collections (preview) tab of the Assets library
+
+After being added to a flow, a collection can similarly be removed through the Assets library. All added collections are tagged accordingly, so you can select the option **Remove** that is available for those collections, to remove them from the flow. In this way, the UI elements they contain will no longer be available in that flow. 
+
+> [!IMPORTANT]
+> Removing a collection from a flow doesn't delete the collection from the environment. Permanently deleting a collection is only available through the UI elements collections' dedicated portal page.
+
+> [!NOTE]
+> If a collection is removed from a flow while any of its UI elements are already used in the flow's actions, those actions will throw an error and will need fixing.
+
 ## Use UI elements collections in flow actions
+
+After a collection is imported and becomes available in a desktop flow, the UI elements it contains can be used in the UI and web automation actions of that flow. In the corresponding action modals, in the field where the action's associated UI element is specified, you can now find the the same two tabs of the UI elements pane, Flow repository and Collections (preview). Under the Collections (preview) tab, you can use any UI element you need that belongs to an imported collection.
+
+<Screenshot of Click UI element action with two tabs open>
 
 ## Edit a UI elements collection
 
