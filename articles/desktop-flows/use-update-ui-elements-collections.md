@@ -73,13 +73,20 @@ After a collection is imported and becomes available in a desktop flow, the UI e
 
 ## Edit a UI elements collection
 
+After creating and publishing a collection, it can be shared with other users so that it's imported and used in multiple flows. However, the application that the collection targets may eventually undergo an update, which could lead to the need to update the CSS/UI selectors of the UI elements that belong to the said collection. Similarly, you may need to add more UI elements to an existing collection, or remove some obsolete, no longer needed ones from it. 
+
+To make any required adjustments to a collection, that collection needs to be imported to a desktop flow, so that you can access the collection's contents in the flow designer. You can find below all the different ways to edit and update a collection.
+
 ### Add additional UI elements to an imported collection
+
+> [!NOTE]
+> To add more UI elements to a collection, that collection needs to be imported first to a desktop flow. You can't add UI elements to an existing collection that is not imported in the flow you are working on.
 
 ### Edit the UI elements of a collection
 
 ### Delete UI elements from a collection
 
-## Update a UI elements collection
+### Update a UI elements collection
 
 ### See also
 
