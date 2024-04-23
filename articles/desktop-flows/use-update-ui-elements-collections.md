@@ -21,13 +21,17 @@ search.audienceType:
 
 You can include UI elements collections in desktop flows through the [Assets library](assets-library.md) using Power Automate for desktop's designer.
 
-To use Assets library, select **Assets library** in the designer.
+To open the Assets library, select **Assets library** in the designer.
 
 :::image type="content" source="media/custom-actions/use-custom-actions/assets-library-button.png" alt-text="Screenshot of the Assets library button" border="false":::
 
 Alternatively, use the **Tools** bar.
 
 :::image type="content" source="media/custom-actions/use-custom-actions/assets-library-tools.png" alt-text="Screenshot of the Assets library button under tools" border="false":::
+
+You can also use the option **Import collection**, found in the context menu at the top right of the UI elements pane.
+
+<screenshot with Import collection in context menu>
 
 > [!IMPORTANT]
 > This feature requires Power Automate for desktop v2.43 or later.
@@ -78,6 +82,8 @@ After creating and publishing a collection, it can be shared with other users so
 To make any required adjustments to a collection, that collection needs to be imported to a desktop flow, so that you can access the collection's contents in the flow designer. You can find below all the different ways to edit and update a collection.
 
 ### Add additional UI elements to an imported collection
+
+When you want to add new UI elements to a collection, you need to mark those elements as checked through their checkbox in the tree structure, then select the option **Add to imported collection**, either via the main context menu at the top right of the UI elements pane, or through the context menu of the currently selected (highlighted) element that should be included in the checked ones.
 
 > [!NOTE]
 > To add more UI elements to a collection, that collection needs to be imported first to a desktop flow. You can't add UI elements to an existing collection that is not imported in the flow you are working on.
