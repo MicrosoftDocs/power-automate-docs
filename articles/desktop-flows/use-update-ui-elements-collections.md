@@ -161,6 +161,7 @@ In case you have made changes in multiple collections at the same time, you can 
 ## Known limitations
 
 - When a collection is included in a Dataverse solution via the Power Automate portal, and that collection is updated, the solution is not updated automatically with the new binaries. The option **Advanced > Add required objects** needs to be selected manually, in the context menu of the collection component in that solution.
+- When selected to be added to an imported collection, individual screens and web pages will always carry over their child UI elements with them, as the latter are automatically checked.
 
 ### See also
 
