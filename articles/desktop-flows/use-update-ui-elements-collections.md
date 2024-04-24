@@ -118,6 +118,13 @@ Editing or renaming UI elements in a collection does not automatically update th
 
 ### Delete UI elements from a collection
 
+Deleting a UI element that belongs to a collection is identical to deleting any other UI element found in the Flow repository tab. In the Collections (preview) tab, select and highlight the UI element you want to delete, then hit the key 'Del' or select the option **Delete** in its context menu. This will bring up the respective confirmation dialog to permanently delete that UI element.
+
+> [!NOTE]
+> In the context menu of a selected (highlighted) item, the option 'Delete' is individual and applies only to the said item. However, this option becomes disabled, if other unrelated items also happen to be checked, to avoid any potential confusion around the item it targets.
+
+Deleting UI elements from a collection does not automatically update that collection with the new changes. See more in the section **Update a UI elements collection** below.
+
 ### Update a UI elements collection
 
 ### See also
