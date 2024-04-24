@@ -136,7 +136,19 @@ Renaming a collection does not automatically update that collection with the new
 
 ### Update a UI elements collection
 
-After making any of the changes explained above, the collection is only updated locally within the context of the desktop flow. This is to ensure that you can go through the necessary testing and debugging in the flow designer, and confirm that your changes in the collection have the expected behavior.
+After making any of the changes described above, a collection is only updated locally within the context of the desktop flow. This is to ensure that you can safely go through the necessary testing and debugging in the flow designer, to confirm that your changes in the collection have the expected behavior, before affecting any other flows that may reference the same collection.
+
+As soon as you are certain that the collection changes are the proper ones, you can publish your changes by updating the collection. To do this, in the Collections (preview) tab, select the collection that has undergone changes, and then select the option **Update collection** in its context menu. As a shortcut, you can also select the Update icon, between the collection's name and its context icon.
+
+<screenshot with update collection option>
+
+Upon selecting **Publish** in the confirmation dialog that pops up, the flow will enter a Publishing state, during which the collection is saved and uploaded in Dataverse, so that its changes become available in the specific environment. While publishing takes place, the UI of the flow designer remains disabled.
+
+When the collection is succesfully updated in this way, the corresponding success banner appears in the UI elements pane to inform you accordingly. At this point, the collection's new state has overwritten the previous one, and the desktop flows that reference this collection in the current environment will be affected accordingly in their following runs, without requiring any manual update themselves.
+
+option disabled
+
+save flow before updating collection
 
 ### See also
 
