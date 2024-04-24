@@ -160,11 +160,7 @@ In case you have made changes in multiple collections at the same time, you can 
 
 ## Known limitations
 
-- Custom actions groups can't exceed 30 MB upon upload.
-- Specific endpoints must be included in the allowlist for desktop flows containing custom actions to work properly. More information: [Desktop flow services required for runtime](../ip-address-configuration.md#desktop-flows-services-required-for-runtime)
-- Application lifecycle management (ALM) isn't fully supported for desktop flows with dependencies on custom actions.
-- Upload date might differ in the portal than what is shown in the Assets library inside Power Automate for desktop.
-- The Assets library can't display more than 5000 custom actions groups.
+- When a collection is included in a Dataverse solution via the Power Automate portal, and that collection is updated, the solution is not updated automatically with the new binaries. The option **Advanced > Add required objects** needs to be selected manually, in the context menu of the collection component in that solution.
 
 ### See also
 
