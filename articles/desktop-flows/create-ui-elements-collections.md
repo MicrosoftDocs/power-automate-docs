@@ -78,6 +78,10 @@ In the Collections tab, as per the above screenshot, the tree structure of the i
 
 After publishing a new collection, the desktop flow needs to be saved to confirm the import of that collection, as this is considered an unsaved change for the flow. However, even if the flow is not saved, the collection still remains published and available in the environment, so that it can be used in other flows.
 
+## Known limitations
+
+- When a name that is used for a new collection already exists, the collection is not published and the checked UI elements are reset.
+
 ## Next steps
 
 [Manage UI elements collections](manage-ui-elements-collections.md)
