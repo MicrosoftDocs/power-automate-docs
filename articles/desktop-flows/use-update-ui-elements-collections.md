@@ -144,11 +144,27 @@ As soon as you are certain that the collection changes are the proper ones, you 
 
 Upon selecting **Publish** in the confirmation dialog that pops up, the flow will enter a Publishing state, during which the collection is saved and uploaded in Dataverse, so that its changes become available in the specific environment. While publishing takes place, the UI of the flow designer remains disabled.
 
+<screenshot with update confirmation dialog>
+
 When the collection is succesfully updated in this way, the corresponding success banner appears in the UI elements pane to inform you accordingly. At this point, the collection's new state has overwritten the previous one, and the desktop flows that reference this collection in the current environment will be affected accordingly in their following runs, without requiring any manual update themselves.
 
-option disabled
+<screenshot with update success banner>
 
-save flow before updating collection
+> [!NOTE]
+> If the collection is up-to-date, the option **Update collection** is disabled.
+
+In case you have made changes in multiple collections at the same time, you can always use the option **Update unsaved collections** in the main context menu at the top right of the UI elements pane, to update all of them at once.
+
+> [!IMPORTANT]
+> When your imported collections have unpublished changes, trying to save your flow first will prompt you to also update the collections. If you don't confirm publishing the updated state of the collections, your flow won't be saved.
+
+## Known limitations
+
+- Custom actions groups can't exceed 30 MB upon upload.
+- Specific endpoints must be included in the allowlist for desktop flows containing custom actions to work properly. More information: [Desktop flow services required for runtime](../ip-address-configuration.md#desktop-flows-services-required-for-runtime)
+- Application lifecycle management (ALM) isn't fully supported for desktop flows with dependencies on custom actions.
+- Upload date might differ in the portal than what is shown in the Assets library inside Power Automate for desktop.
+- The Assets library can't display more than 5000 custom actions groups.
 
 ### See also
 
