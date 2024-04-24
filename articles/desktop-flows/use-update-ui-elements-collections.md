@@ -83,10 +83,23 @@ To make any required adjustments to a collection, that collection needs to be im
 
 ### Add additional UI elements to an imported collection
 
-When you want to add new UI elements to a collection, you need to mark those elements as checked through their checkbox in the tree structure, then select the option **Add to imported collection**, either via the main context menu at the top right of the UI elements pane, or through the context menu of the currently selected (highlighted) element that should be included in the checked ones.
+When you want to add new UI elements to a collection, you have to normally capture them first, if they are not already available in the flow via the UI elements pane. You then need to mark those elements as checked through their checkbox in the tree structure, and then select the option **Add to imported collection**, either via the main context menu at the top right of the UI elements pane, or through the context menu of the currently selected (highlighted) element that should be included in the checked ones.
+
+<Screenshot of Add to imported collection option>
+
+Selecting this option brings up a confirmation dialog, where you need to choose the target collection to which the elements should be added. The respective dropdown field lists all the eligible collections for this action, based on the following criteria:
+* The target collection is already imported into this flow
+* All the checked UI elements, as well as the target collection, belong to the same desktop in the tree structure.
+
+Furthermore, in case you have already associated any or all of the selected UI elements with UI or web automation actions in your desktop flow, you can also check the 'Auto-update' option below the dropdown field. Doing so will automatically update the aforementioned actions for you, so that they no longer reference the UI elements that are only 'locally' available in this flow, but rather their newly added equivalents that will now be part of the target collection.
+
+<Screenshot with add confirmation dialog>
+
+> [!IMPORTANT]
+> To add more UI elements to a collection, that collection needs to be imported first to a desktop flow. You can't add UI elements to an existing collection that is not imported in the flow you are working on. If no collection is imported or meets the required criteria mentioned above for a certain selection of UI elements, the option **Add to imported collection** is disabled.
 
 > [!NOTE]
-> To add more UI elements to a collection, that collection needs to be imported first to a desktop flow. You can't add UI elements to an existing collection that is not imported in the flow you are working on.
+> You can add UI elements to an imported collection by making a selection either from the Flow repository tab, or the Collections (preview) tab.
 
 ### Edit the UI elements of a collection
 
