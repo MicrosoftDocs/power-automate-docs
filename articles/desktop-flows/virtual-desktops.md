@@ -65,6 +65,17 @@ UI elements captured on the physical device are located under the **Computer** p
 > [!NOTE]
 > When you capture a UI element in a virtual desktop, virtual app or RemoteApp, it is linked to the details(IP, Name, etc.) of the machine at the time of capture. If you want to interact with the same UI element on a different machine, you will need to capture it again on that machine.
 
+## Communication between Power Automate for desktop and Power Automate agent for virtual desktops in case of syncing
+- Basic information:
+   - An automation agent is a specialized agent that is sent to the remote desktop after the initial communication with the control agent is complete. It is designed to provide specific functionality for UI automation for the version of Power Automate Desktop that requests it.
+   - The Automation Agent Storage Directory refers to the default path where automation agents are stored. By default, this path is '%LOCALAPPDATA%\Microsoft\Power Automate Desktop\RDP Automation Agents\'. However, if the 'PAD_RDP_STORAGE_DIRECTORY' property is defined on the machine, then the path becomes '%PAD_RDP_STORAGE_DIRECTORY%\Microsoft\Power Automate Desktop\RDP Automation Agents\'.
+   - Initial handshake: It refers to the first communication between Power Automate for desktop and the Power Automate agent for virtual desktops. The versions of Power Automate for desktop and Power Automate agent for virtual desktops are not the same.
+   - Syncing phase: It occurs when the user chooses to sync the versions of Power Automate for desktop and Power Automate agent for virtual desktops.
+   - Retrying handshake: After the syncing process is complete, the handshake between Power Automate for desktop and the Power Automate agent for virtual desktops is retried.
+   - Automation phase: It refers to the runtime of UI automation actions being performed on the remote machine through the Power Automate agent for virtual desktops.
+
+:::image type="content" source="media\virtual-desktops\Agent_Sync.png" alt-text="Screenshot of communication between Power Automate for desktop and Power Automate agent for virtual desktops":::
+
 ## Known issues and limitations
 
 - **Issue:** Virtual desktop automation is available only in Windows RDP, RemoteApp, Citrix Desktop, and Citrix Virtual Apps. Other virtual desktop platforms aren't supported.
