@@ -79,7 +79,9 @@ After a collection is imported and becomes available in a desktop flow, the UI e
 
 After creating and publishing a collection, it can be shared with other users so that it's imported and used in multiple flows. However, the application that the collection targets may eventually undergo an update, which could lead to the need to update the CSS/UI selectors of the UI elements that belong to the said collection. Similarly, you may need to add more UI elements to an existing collection, or remove some obsolete, no longer needed ones from it. 
 
-To make any required adjustments to a collection, that collection needs to be imported to a desktop flow, so that you can access the collection's contents in the flow designer. You can find below all the different ways to edit and update a collection.
+To make any required adjustments to a collection, that collection needs to be imported to a desktop flow, so that you can access the collection's contents in the flow designer. In addition, you need to be an **Owner** or have at least **Co-owner** rights on that collection, to be able to proceed to changes.
+
+You can find below all the different ways to edit and update a collection.
 
 ### Add additional UI elements to an imported collection
 
@@ -89,17 +91,19 @@ When you want to add new UI elements to a collection, you have to normally captu
 
 Selecting this option brings up a confirmation dialog, where you need to choose the target collection to which the elements should be added. The respective dropdown field lists all the eligible collections for this action, based on the following criteria:
 * The target collection is already imported into this flow
-* All the checked UI elements, as well as the target collection, belong to the same desktop in the tree structure.
+* All the checked UI elements, as well as the target collection, belong to the same desktop in the tree structure of the UI elements pane.
 
 Furthermore, in case you have already associated any or all of the selected UI elements with UI or web automation actions in your desktop flow, you can also check the 'Auto-update' option below the dropdown field. Doing so will automatically update the aforementioned actions for you, so that they no longer reference the UI elements that are only 'locally' available in this flow, but rather their newly added equivalents that will now be part of the target collection.
 
 <Screenshot with add confirmation dialog>
 
 > [!IMPORTANT]
-> To add more UI elements to a collection, that collection needs to be imported first to a desktop flow. You can't add UI elements to an existing collection that is not imported in the flow you are working on. If no collection is imported or meets the required criteria mentioned above for a certain selection of UI elements, the option **Add to imported collection** is disabled.
+> You can't add UI elements to an existing collection that is not imported in the flow you are working on. If no collection is imported or meets the required criteria mentioned above for a certain selection of UI elements, the option **Add to imported collection** is disabled.
 
 > [!NOTE]
-> You can add UI elements to an imported collection by making a selection either from the Flow repository tab, or the Collections (preview) tab.
+> You can add UI elements to an imported collection by making a selection either from the Flow repository tab, or even the Collections (preview) tab. In the second scenario, you can add UI elements from one collection to another, or even add duplicates to the same collection if needed.
+
+Adding some UI elements to a collection does not automatically update that collection with the new changes. See more in the section **Update a UI elements collection** below.
 
 ### Edit the UI elements of a collection
 
