@@ -112,7 +112,7 @@ Editing a UI element that belongs to a collection is identical to editing any ot
 Similarly, you can rename a UI element belonging to a collection, by hitting 'F2' or selecting the option **Rename** in its context menu.
 
 > [!NOTE]
-> In the context menu of a selected item, the options 'Edit' and 'Rename' are individual and apply only to the said item. However, these options become disabled, if other unrelated items also happen to be checked, to avoid any potential confusion around the item they target.
+> In the context menu of a selected (highlighted) item, the options 'Edit' and 'Rename' are individual and apply only to the said item. However, these options become disabled, if other unrelated items also happen to be checked, to avoid any potential confusion around the item they target.
 
 Editing or renaming UI elements in a collection does not automatically update that collection with the new changes. See more in the section **Update a UI elements collection** below.
 
