@@ -81,6 +81,7 @@ After publishing a new collection, the desktop flow needs to be saved to confirm
 ## Known limitations
 
 - When a name that is used for a new collection already exists, the collection is not published and the checked UI elements are reset.
+- When selected to create a new collection, individual screens and web pages will always carry over their child UI elements with them, as the latter are automatically checked.
 
 ## Next steps
 
