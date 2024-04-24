@@ -1,6 +1,6 @@
 ---
-title: Get contextual help with flows from the Power Virtual Agents bot | Microsoft Docs
-description: Get help building flows from the Power Virtual Agents bot.
+title: Get contextual help with flows from the Microsoft Copilot Studio bot
+description: Get help building flows from the Microsoft Copilot Studio bot.
 services: ''
 suite: flow
 documentationcenter: na
@@ -21,7 +21,7 @@ search.audienceType:
 ---
 
 
-# Get contextual help with flows from the Power Virtual Agents bot
+# Get contextual help with flows from the Microsoft Copilot Studio bot
 
 Real-time, in-product help is available from the [documentation](./index.yml) and the Power Virtual Agent bot to solve the most common workflow scenarios. While building your flows, you can access content from the documentation, community, blogs, and templates.
 

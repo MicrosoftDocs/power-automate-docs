@@ -4,7 +4,7 @@ description: Manage machines
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/21/2023
+ms.date: 03/20/2024
 ms.author: kenseongtan
 ms.reviewer: matp
 contributors:
@@ -92,6 +92,12 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 > - To apply this functionality, you need a [premium per-user plan with attended RPA](https://make.powerautomate.com/pricing/).
 > - When you create a desktop flow connection, you allow Power Automate to create a Windows session on your machine to run your desktop flows. Make sure you trust co-owners of your flows before using your connection in a flow.
 > - If you consistently encounter issues when creating a connection on a new machine, first try to remove it, and then [register it](/power-automate/desktop-flows/manage-machines#register-a-new-machine) again.
+
+## Enable your machine for unattended mode
+
+To trigger desktop flows in unattended mode on your machine, you need some unattended bots on the machine. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform.
+
+To create unattended bots, allocate process capacity or unattended RPA capacity to your machine. Learn how to [allocate process capacity as an unattended bot](capacity-process.md) on a machine.
 
 ## Maintenance mode for machines
 
@@ -246,4 +252,4 @@ Environment admins can also restrict machine registration to a specific set of u
 |---|---|
 |Maximum number of machines in a group |50|
 |Maximum amount of time a desktop flow can run |24 hours|
-|Maximum amount of time a desktop flow can be queued |Three hours|
+|Maximum amount of time a desktop flow can be queued |Six hours|

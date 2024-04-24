@@ -24,7 +24,7 @@
     href: triggers-introduction.md
   - name: Add OAuth authentication for HTTP request triggers
     href: oauth-authentication.md
-  - name: Get help from the Power Virtual Agents bot
+  - name: Get help from the Microsoft Copilot Studio bot
     href: contextual-help-bot.md
   - name: Share a flow
     href: create-team-flows.md
@@ -33,7 +33,11 @@
   - name: Support for service principal owned flows
     href: service-principal-support.md
   - name: Export and import a non-solution flow
-    href: export-import-flow-non-solution.md    
+    href: export-import-flow-non-solution.md
+  - name: Drafts and versioning for cloud flows
+    href: drafts-versioning.md
+  - name: Use Power Automate flows as plugins in Copilot for Microsoft 365 (preview)
+    href: flow-plugins-m365.md          
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
@@ -291,7 +295,7 @@
       href: ./dataverse/data-retention-flow.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md
-    - name: Manage cloud flow run metadata in Dataverse (preview)
+    - name: Manage cloud flow run history in Dataverse (preview)
       href: ./dataverse/cloud-flow-run-metadata.md
   - name: Use solutions for ALM
     items:
@@ -328,7 +332,9 @@
   - name: Get started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md
   - name: Use copilot to analyze desktop flow activity (preview)
-    href: ./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md 
+    href: ./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md
+  - name: Use the Power Automate plug-in for Windows Copilot (preview)
+    href: ./desktop-flows/win-copilot-plug-in.md  
   - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Premium RPA features
@@ -765,8 +771,6 @@
     href: create-instant-flows.md
   - name: Enhance business process flows with branching
     href: enhance-business-process-flows-branching.md
-  - name: Add custom controls to business process flows
-    href: custom-controls-business-process-flows.md
   - name: Add on-demand workflows to business process Flows
     href: bpf-add-on-demand-workflow.md
   - name: Best practices for business process flow columns
@@ -798,8 +802,12 @@
       href: process-mining-copilot-in-process-analytics.md   
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
-    - name: Use your own Azure Data Lake Storage Gen2
-      href: process-mining-byo-azure-data-lake.md
+    - name: Azure Data Lake Storage Gen2
+      items:
+      - name: Bring your own Azure Data Lake Storage Gen2
+        href: process-mining-byo-azure-data-lake.md
+      - name: Bring your own network isolated Azure Data Lake Storage Gen2
+        href: process-mining-byo-azure-data-lake-private.md
     - name: Transform and map data
       href: process-mining-transform.md
     - name: Visualize and gain insights from processes
@@ -1026,14 +1034,16 @@
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Manage automations
   items:
-  - name: Capacity utilization (preview)
+  - name: Capacity utilization
     items:
-    - name: Introduction to capacity utilization
+    - name: Introduction to capacity utilization (preview)
       href: ./desktop-flows/capacity-utilization.md
-    - name: Hosted RPA capacity utilization
+    - name: Hosted RPA capacity utilization (preview)
       href: ./desktop-flows/capacity-utilization-hosted.md
-    - name: Process capacity utilization
+    - name: Process capacity utilization (preview)
       href: ./desktop-flows/capacity-utilization-process.md
+    - name: How to use process capacity
+      href: ./desktop-flows/capacity-process.md
 - name: Administration
   items:
   - name: Power Automate sign-up FAQ
@@ -1192,3 +1202,5 @@
     href: faqs-copilot-nl-to-code.md
   - name: FAQ for suggested actions in Power Automate for desktop
     href: faqs-action-suggestions-power-automate-desktop.md
+  - name: FAQ for generating flow descriptions using Copilot in desktop flows
+    href: faqs-copilot-generate-description-from-flow-properties.md

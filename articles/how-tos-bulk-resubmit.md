@@ -7,8 +7,8 @@ documentationcenter: na
 author: natalie-pienkowska
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 11/22/2023
-ms.author: jamiller
+ms.date: 04/24/2024
+ms.author: vimuthuk
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -63,7 +63,6 @@ The template cancels runs at approximately five (5) runs per minute. You might b
 Follow these steps to cancel flow runs using a template:
 
 1. Obtain the **Environment Id** and **Flow Id**.
-
     1. To find the Environment Id, select **Home** in the left navigation pane and look at the URL in your browser's address bar. Everything between `environments/` and `/home` is the Environment Id:
 
         :::image type="content" source="media/cancel-resubmit-how-to/find-environment-id.png" alt-text="Screenshot of a flow URL with the Environment Id highlighted.":::
@@ -71,7 +70,6 @@ Follow these steps to cancel flow runs using a template:
         If you can't locate the Environment ID, ask your administrator to go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home) Details section. To learn more, go to [Find your environment and organization ID](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id).
 
     1. To find the Flow Id, select **My flows** in the left navigation pane and select your flow. When the Details page opens, look at the URL in your browser's address bar. Everything between `flows/` and `/details` is the Flow Id:
-
         :::image type="content" source="media/cancel-resubmit-how-to/find-flow-id.png" alt-text="Screenshot of a flow URL with the Flow Id highlighted.":::
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
@@ -93,13 +91,13 @@ Follow these steps to cancel flow runs using a template:
 1. In the designer, select **Save** to save the flow.
 1. To run your flow, select **Run** > **Continue**.
 1. In the **Environment Id** and **Flow Id** fields, enter the Environment Id and Flow Id you obtained in step 1.
-1. Select **Run Flow**. All flow runs are canceled.  
-
+1. Select **Run Flow**. All flow runs are canceled.
+ 
     :::image type="content" source="./media/cancel-resubmit-how-to/run-flow.png" alt-text="Screenshot of the Rob flow screen that displays the Environment Id and Flow Id.":::
 
 1. To verify the cancellation, view the **Run history** page.
 
     For an example of the **Run history** page, go to the [Cancel up to 20 flow runs](#cancel-up-to-20-flow-runs) section in this article.
 
- 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
+

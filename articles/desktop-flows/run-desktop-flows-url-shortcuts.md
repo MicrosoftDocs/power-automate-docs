@@ -32,7 +32,7 @@ By default, Power Automate always prompts you to confirm the triggering of a des
 
 - Power Automate for desktop needs to be installed on the machine.
 - The user must be signed in.
-- The user needs a trial or paid organization subscription or a pay-as-you-go environment.
+- The user needs a Power Automate Premium plan or access to a pay-as-you-go environment.
 
 ## Create a desktop shortcut
 
@@ -80,9 +80,13 @@ To find the ID of a desktop flow, launch the Power Automate console, select or r
 
 :::image type="content" source="media/console/desktop-flow-details-properties.png" alt-text="Screenshot of the details of a desktop flow.":::
 
-## Add flow input variables to a run URL
+## Add optional parameters to a run URL
 
-Apart from the mandatory input parameters, you can add the `inputArguments` parameter to a run URL to configure the flow's inputs.
+Apart from the mandatory input parameters, you can add optional parameters to a run URL.
+
+### Add flow input variables to a run URL
+
+Add the `inputArguments` parameter to a run URL to configure the flow's inputs.
 
 If the `inputArguments` parameter contains all the input variables of the flow, then Power Automate console doesn't ask for user input during the flow run.
 
@@ -113,9 +117,25 @@ For example, the below run URL invokes a desktop flow with text, numeric and boo
 > - To trigger the run URL through a web browser, unescape the `inputArguments` parameter's JSON string value and use **URL encoding** to convert the characters into a valid ASCII format.
 > - To unescape the double quote characters, remove the backslashes. For example, *inputArguments={"NewInput": "Hello", "NewInput2": 123, "NewInput3": true}*
 
-## Save logs for desktop flows run via URL
+### Sign in silently with the current Windows account
 
-Apart from the mandatory input parameters, you can add the `runId` parameter to a run URL to define a unique GUID for the desktop flow logs.
+Add the `autologin` parameter to a run URL to sign in to Power Automate without any user interaction, with the current Windows logged in user.
+
+As prerequisites, the user must be signed out and Power Automate must not be running on the machine.
+
+> [!IMPORTANT]
+>
+> If the user has explicitly signed out of Power Automate through the UI, then Power Automate respects user’s preferences and does not perform auto-login.
+
+A URL containing the `autologin` parameter should have the following structure. The parameter can be added to any of the previously mentioned URLs.
+
+```
+"ms-powerautomate:/console/flow/run?workflowId=[workflowId]&autologin=true"
+```
+
+### Save logs for desktop flows run via URL
+
+Add the `runId` parameter to a run URL to define a unique GUID for the desktop flow logs.
 
 Power Automate uses this GUID to create a folder and store the logs inside it. The logs are stored in: **C:\Users\\[Username]\AppData\Local\Microsoft\Power Automate Desktop\Console\Scripts\\[Flow ID]\Runs\\[Run ID]**
 

@@ -4,7 +4,7 @@ description: Learn about the Power Automate v2 schema.
 author: nvigne
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/19/2023
+ms.date: 04/15/2024
 ms.author: nvigne
 ms.reviewer: matp
 contributors:
@@ -37,11 +37,27 @@ Convert desktop flows stored in the v1 schema to the v2 schema by end of 2024, a
 
 ## Schema v2 enabled by default
 
-Starting January 2024, v2 schema will be automatically enabled for all environments. Although not recommended, the option to opt-out of the autoenablement is available in the Power Platform admin center. By turning the opt-out on, we'll delay the enablement of v2 schema on this particular environment.
+Starting January 2024, v2 schema is automatically enabled for all environments. Although not recommended, the option to opt-out of the autoenablement is available in the Power Platform admin center. Turning on the opt-out delays the enablement of v2 schema on this particular environment.
 
 :::image type="content" source="media/schema/schema-v2-off.png" alt-text="The option in the Power Platform Admin Center to opt-out of schema v2 enabled by default.":::
 
-Later in 2024, v2 schema will be turned on for all environments without the option to disable the feature. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
+Later in 2024, v2 schema will be turned on for all environments without the option to disable the feature and the option won't be visible in Power Platform admin center. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
+
+As of April 1, 2024, the v2 schema is enabled by default in the following geographies:
+
+- Canada
+- South Africa
+- Switzerland
+- Norway
+- Korea
+- South America
+- Australia
+- Singapore
+- United-Kingdom
+- India
+- France
+- Germany
+- UAE
 
 ## Manage desktop flows in environments with the v2 schema enabled
 
@@ -53,9 +69,16 @@ If a desktop flow belongs to a solution in a v2-enabled environment, follow [the
 
 Power Automate for desktop version 2.29 or later allows organizations that moved ahead with the v2 schema to roll back until the v1 schema becomes deprecated.
 
-You can roll back a desktop flow converted to the v2 schema by resaving the desktop flow to an environment where the PPAC administrator has the feature disabled.
+You can roll back a desktop flow converted to the v2 schema by resaving the desktop flow to an environment where the Power Platform administrator has the feature disabled.
 
 For most scenarios, there's no need to downgrade your version of Power Automate for desktop. However, desktop flows that use v2-related features that aren't supported by the v1 schema can't roll back.
+
+A rollback from v2 to v1 can result in some screenshots associated with UI elements not being saved. Although those screenshots aren't necessary for the desktop flow to run, you can save them:
+
+1. Go to the **UI Elements** right panel in Power Automate desktop.
+1. Select each UI element in the list.
+
+This ensures that the screenshots are saved when you rollback to v1.
 
 ## Limitations of v2 schema desktop flows
 
@@ -82,7 +105,7 @@ With v2 schema, we change the data model stored in Dataverse. In addition to the
 :::image type="content" source="media/schema/desktopflowbinaries-v2.png" alt-text="Desktop flow in v2 schema with desktop flow binaries.":::
 
 > [!IMPORTANT]
-> The desktop flow binaries objects are required components of the desktop flow as they store required data for the desktop flow to be able to open or run. 
+> The desktop flow binary objects are required components of the desktop flow as they store required data for the desktop flow to be able to open or run. Don't delete these binary objects. Deleting them results in permanent data loss for the desktop flow, which makes the respective flow non-editable.
 
 The number of desktop flow binaries might vary depending on the size of the desktop flow.
 
