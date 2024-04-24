@@ -125,6 +125,12 @@ Deleting a UI element that belongs to a collection is identical to deleting any 
 
 Deleting UI elements from a collection does not automatically update that collection with the new changes. See more in the section **Update a UI elements collection** below.
 
+### Rename a UI elements collection
+
+Apart from the their portal page, collections can also be renamed via the flow designer, after being imported to a flow. In the Collections (preview) tab, select (highlight) the collection whose name you want to change, and hit 'F2' or select the option **Rename** in its context menu.
+
+Renaming a collection does not automatically update that collection with the new change. See more in the section **Update a UI elements collection** below.
+
 ### Update a UI elements collection
 
 ### See also
