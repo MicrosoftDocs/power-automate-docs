@@ -105,7 +105,16 @@ Furthermore, in case you have already associated any or all of the selected UI e
 
 Adding some UI elements to a collection does not automatically update that collection with the new changes. See more in the section **Update a UI elements collection** below.
 
-### Edit the UI elements of a collection
+### Edit or rename the UI elements of a collection
+
+Editing a UI element that belongs to a collection is identical to editing any other UI element found in the Flow repository tab. In the Collections (preview) tab, select and highlight the UI element whose CSS/UI selector you want to edit, then double click on it, hit 'Enter' or select the option **Edit** in its context menu. This will bring up the selectors screen for that UI element, where you can proceed to the necessary changes to the selectors, and even Repair or Test them through the corresponding actions.
+
+Similarly, you can rename a UI element belonging to a collection, by hitting 'F2' or selecting the option **Rename** in its context menu.
+
+> [!NOTE]
+> In the context menu of a selected item, the options 'Edit' and 'Rename' are individual and apply only to the said item. However, these options become disabled, if other unrelated items also happen to be checked, to avoid any potential confusion around the item they target.
+
+Editing or renaming UI elements in a collection does not automatically update that collection with the new changes. See more in the section **Update a UI elements collection** below.
 
 ### Delete UI elements from a collection
 
