@@ -71,7 +71,7 @@ Depending on your license, you might be subject to temporary throttling if the f
 
     A message opens asking you to confirm the cancellation of all runs.
 
-    1. (Optional) In the message, select **Turn my flow off to prevent additional runs**.
+1. (Optional) In the message, select **Turn my flow off to prevent additional runs**.
 
     If you don't do this optional step, go to step 7.
 
