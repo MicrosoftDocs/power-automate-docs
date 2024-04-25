@@ -5,7 +5,7 @@ author: iomavrid
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/27/2024
+ms.date: 04/25/2024
 ms.author: iomavrid
 ms.reviewer: tapanm-msft
 contributors:
@@ -27,15 +27,15 @@ To inspect this collection, as well as the list of any other collections that ar
 
 2. Select **More** in the navigation list on the left, then hit the button **Discover all**.
 
-<screenshot>
+:::image type="content" source="media/ui-elements-collections/portal-more-discover-all.png" alt-text="Discover all option in portal" border="false":::
 
 3. Select **UI elements collections (preview)** under **Data**. You can optionally pin this option, so that it remains visible in the left navigation pane.
 
-<screenshot>
+:::image type="content" source="media/ui-elements-collections/portal-data-ui-elements-collections-option.png" alt-text="UI elements collections (preview) option under Data pane in portal" border="false":::
 
 This is the page containing all the collections that are accessible to you. You can hit on the Refresh button at the top, to quickly retrieve any recent changes and update your collections list. By selecting one of the available UI elements collections, you can go into its details page.
 
-<screenshot>
+:::image type="content" source="media/ui-elements-collections/portal-ui-elements-collections-page.png" alt-text="UI elements collections (preview) main page in portal" border="false":::
 
 For each collection, you can perform the following actions.
 
@@ -43,7 +43,7 @@ For each collection, you can perform the following actions.
 
 You can edit a UI elements collection, modifying its name and/or description.
 
-<screenshot>
+:::image type="content" source="media/ui-elements-collections/portal-edit-collection.png" alt-text="Edit a UI elements collection in portal" border="false":::
 
 ## Share a UI elements collection
 
@@ -55,13 +55,13 @@ There are three types of access a maker can have regarding UI elements collectio
 -	**User + Share** – can use, but also share the collection.
 - **Co-owner** – can use, share, update and/or delete the collection.
 
-<screenshot>
+:::image type="content" source="media/ui-elements-collections/portal-share-collection.png" alt-text="Share a UI elements collection in portal" border="false":::
 
 ## Delete a UI elements collection
 
 Only owners and co-owners can delete collections. Deleting a collection is not possible, if that collection is already imported and used in one or more desktop flows. It needs to be removed first from those flows, before you can delete it.
 
-<screenshot>
+:::image type="content" source="media/ui-elements-collections/portal-delete-collection.png" alt-text="Delete a UI elements collection in portal" border="false":::
 
 ## Next steps
 
