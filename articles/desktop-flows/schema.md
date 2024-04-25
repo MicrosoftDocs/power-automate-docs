@@ -101,7 +101,7 @@ Then, you can import the updated v2 schema version of the same process to the ma
 |**Can edit/save v2 desktop flows into v2 schema in environments with the v2 schema enabled?** |No (user notified of error)|Yes|
 
 ## Exceeded size limit
-When saving a desktop flow in v2 schema, you might it the following error "Error during flow save"
+When saving a desktop flow in v2 schema, you might hit the following error "Error during flow save"
 
 :::image type="content" source="media/schema/desktopflow-v2-limit.png" alt-text="Error during flow save error message indicating limit on the flow size.":::
 
