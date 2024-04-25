@@ -5,7 +5,7 @@ author: iomavrid
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/27/2024
+ms.date: 04/25/2024
 ms.author: iomavrid
 ms.reviewer: tapanm-msft
 contributors:
@@ -19,7 +19,7 @@ search.audienceType:
 
 Creating and publishing a UI elements collection is possible through the flow designer of any desktop flow, existing or new. In the UI elements pane, there are now two different tabs available, **Flow repository** and **Collections (preview)**.
 
-<screenshot with two tabs>
+:::image type="content" source="media/ui-elements-collections/Two-tabs-in-ui-elements-pane.png" alt-text="Screenshot of the Flow repository and Collections (preview) tabs in the UI elements pane" border="false":::
 
 The **Flow repository** tab contains all the UI elements that are available only to that particular desktop flow. Older desktop flows that have been created with version 2.42 or previous than that, which contain UI elements, now display those elements under the Flow repository tab, if the version  is updated to version 2.43 or later (so long as these desktop flows belong to a schema v2 environment).
 
@@ -37,13 +37,13 @@ Every item in this tree structure comes with a checkbox, which is checked when t
 
 There can only be one selected (highlighted) item at a time, even if more items are checked (either automatically when these items are related to the selected one in the elements structure, or manually when multiple items are checked directly via their checkbox). In the context menu of a selected item, the options 'Edit', 'Rename', 'Find usages' and 'Delete' are individual and apply only to the said item. However, these options become disabled, if other unrelated items also happen to be checked, to avoid any potential confusion around the item they target.
 
-<screenshot with disabled options>
+:::image type="content" source="media/ui-elements-collections/disabled-individual-options-in-context-menu.png" alt-text="Disabled individual options in UI element's context menu" border="false":::
 
 ## Publish a new UI elements collection
 
 After marking as checked the UI elements you need to include in a new collection, you can select the option **Publish as new collection**, either via the main context menu at the top right of the UI elements pane, or through the context menu of the currently selected (highlighted) element that should be included in the checked ones.
 
-<screenshot with option publish as new collection>
+:::image type="content" source="media/ui-elements-collections/publish-as-new-collection.png" alt-text="Publish as new collection option" border="false":::
 
 > [!NOTE]
 > - The collection related options in the items' context menus apply to all **checked** UI elements and screens/web pages.
@@ -53,13 +53,13 @@ After marking as checked the UI elements you need to include in a new collection
 
 Selecting this option brings up a confirmation dialog, where you can provide a name for the new collection. Furthermore, in case you have already associated any or all of the selected UI elements with UI or web automation actions in your desktop flow, you can also check the 'Auto-update' option below the collection name field. Doing so will automatically update the aforementioned actions for you, so that they no longer reference the UI elements that are only 'locally' available in this flow, but rather their newly created equivalents that will now be part of the new collection.
 
-<screenshot with Publish confirmation dialog>
+:::image type="content" source="media/ui-elements-collections/publish-confirmation-dialog.png" alt-text="Confirmation dialog when publishing a new collection" border="false":::
 
 Upon selecting **Publish**, the flow will enter a *Publishing* state, during which the collection is saved and uploaded in Dataverse, to become available in the specific environment. While publishing takes place, the UI of the flow designer remains disabled.
 
 When the collection is succesfully published in this way, the corresponding success banner appears in the UI elements pane to inform you accordingly. In addition, if you look at the Collections (preview) tab, that collection is now automatically imported into this flow from which it was created. More precisely, it is imported by default into the same desktop (for instance Local computer or Remote desktop) in which the collection's UI elements were originally captured. This is done automatically for you, to avoid manually importing each new collection you create into the same flow it's generated from.
 
-<screenshot with success banner and new collection>
+:::image type="content" source="media/ui-elements-collections/New-collection-published-successfully.png" alt-text="New UI elements collection published successfully" border="false":::
 
 > [!NOTE]
 > - Picking some UI elements to create a new collection effectively **copies** (rather than moving) those elements from the context of a single flow to the collection entity, which can then be shared and reused in other flows. While the new collection now appears in the Collections tab, the flow's original UI elements are also still available in the Flow repository tab. If the latter are no longer needed and used in the current flow, you can always use the option **Remove unused UI elements** in the UI elements pane's main context menu.
