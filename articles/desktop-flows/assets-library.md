@@ -4,12 +4,13 @@ description: Learn about Assets library in Power Automate for desktop.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/19/2023
+ms.date: 04/25/2024
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors:
   - jpapadimitriou
   - tapanm-msft
+  - yiannismavridis
 search.audienceType: 
   - flowmaker
   - enduser
@@ -39,12 +40,14 @@ Alternatively, use the **Tools** bar.
 
 :::image type="content" source="media/assets-library/assets-library-custom-actions.png" alt-text="Screenshot of the Custom actions tab in the Assets library" border="false":::
 
-## UI elements collections tab
+## UI elements collections (preview) tab
 
-The UI elements collections tab shows you the UI elements collections that are published in the environment you've selected.
+The UI elements collections (preview) tab shows you the UI elements collections that are published in the environment you've selected.
 
 > [!NOTE]
 > You can only see UI elements collections that you have created or are shared with you.
+
+:::image type="content" source="media/ui-elements-collections/two-tabs-in-assets-library.png" alt-text="Screenshot of the UI elements collections (preview) tab in the Assets library" border="false":::
 
 ### See also
 
