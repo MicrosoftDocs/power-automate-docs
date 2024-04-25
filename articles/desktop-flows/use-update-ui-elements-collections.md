@@ -4,7 +4,7 @@ description: Learn how to use and update UI elements collections in desktop flow
 author: yiannismavridis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/08/2024
+ms.date: 04/25/2024
 ms.author: iomavrid
 ms.reviewer: tapanm-msft
 contributors:
@@ -31,7 +31,7 @@ Alternatively, use the **Tools** bar.
 
 You can also use the option **Import collection**, found in the context menu at the top right of the UI elements pane.
 
-<screenshot with Import collection in context menu>
+:::image type="content" source="media/ui-elements-collections/import-collection-context-menu.png" alt-text="Import collection option in UI elements pane" border="false":::
 
 > [!IMPORTANT]
 > This feature requires Power Automate for desktop v2.43 or later.
@@ -43,11 +43,11 @@ The [UI elements collections](ui-elements-collections.md) tab shows you the coll
 > [!NOTE]
 > You can only see UI elements collections that you have created or are shared with you. The list of collections in the respective Assets library tab is identical to the list available in the portal page for each maker.
 
-<screenshot with collections tab in assets library>
+:::image type="content" source="media/ui-elements-collections/two-tabs-in-assets-library.png" alt-text="UI elements collections (preview) tab in Assets library" border="false":::
 
 After selecting the collection you want to add to your flow, you also need to select a specific desktop under which the collection will be imported. This will determine in which desktop will the collection's UI elements be searched for, when the flow runs.
 
-<screenshot with confirmation dialog to select a machine>
+:::image type="content" source="media/ui-elements-collections/Import-confirmation-select-machine.png" alt-text="Selecting the target desktop when importing a collection" border="false":::
 
 > [!NOTE]
 > The list of available desktops includes the local computer, the RDP and/or Citrix desktops that may have already been added in the Flow repository tab, as well as any currently active RDP an/or Citrix connections in your machine.
@@ -57,7 +57,7 @@ After selecting the collection you want to add to your flow, you also need to se
 
 After you complete the collection inclusion and close the assets library, the collection will now appear in the Collections (preview) tab of the UI elements pane, imported under the desktop that was previously selected.
 
-<screenshot with collections tab and imported collection>
+:::image type="content" source="media/ui-elements-collections/collection-imported.png" alt-text="Imported collection in Collections (preview) tab" border="false":::
 
 ## Remove collections through the UI elements collections (preview) tab of the Assets library
 
@@ -73,7 +73,7 @@ After being added to a flow, a collection can similarly be removed through the A
 
 After a collection is imported and becomes available in a desktop flow, the UI elements it contains can be used in the UI and web automation actions of that flow. In the corresponding action modals, in the field where the action's associated UI element is specified, you can now find the same two tabs of the UI elements pane, Flow repository and Collections (preview). Under the Collections (preview) tab, you can use any UI element you need that belongs to an imported collection.
 
-<Screenshot of Click UI element action with two tabs open>
+:::image type="content" source="media/ui-elements-collections/action-modal-collections.png" alt-text="Collections (preview) tab in UI and web automation actions" border="false":::
 
 ## Edit a UI elements collection
 
@@ -87,7 +87,7 @@ You can find below all the different ways to edit and update a collection.
 
 When you want to add new UI elements to a collection, you have to normally capture them first, if they are not already available in the flow via the UI elements pane. You then need to mark those elements as checked through their checkbox in the tree structure, and then select the option **Add to imported collection**, either via the main context menu at the top right of the UI elements pane, or through the context menu of the currently selected (highlighted) element that should be included in the checked ones.
 
-<Screenshot of Add to imported collection option>
+:::image type="content" source="media/ui-elements-collections/add-to-imported-collection.png" alt-text="Add UI elements to an imported collection" border="false":::
 
 Selecting this option brings up a confirmation dialog, where you need to choose the target collection to which the elements should be added. The respective dropdown field lists all the eligible collections for this action, based on the following criteria:
 * The target collection is already imported into this flow
@@ -95,7 +95,7 @@ Selecting this option brings up a confirmation dialog, where you need to choose 
 
 Furthermore, in case you have already associated any or all of the selected UI elements with UI or web automation actions in your desktop flow, you can also check the 'Auto-update' option below the dropdown field. Doing so will automatically update the aforementioned actions for you, so that they no longer reference the UI elements that are only 'locally' available in this flow, but rather their newly added equivalents that will now be part of the target collection.
 
-<Screenshot with add confirmation dialog>
+:::image type="content" source="media/ui-elements-collections/add-confirmation-select-machine.png" alt-text="Dialog to select an imported collection to add UI elements" border="false":::
 
 > [!IMPORTANT]
 > You can't add UI elements to an existing collection that is not imported in the flow you are working on. If no collection is imported or meets the required criteria mentioned above for a certain selection of UI elements, the option **Add to imported collection** is disabled.
@@ -140,15 +140,15 @@ After making any of the changes described above, a collection is only updated lo
 
 As soon as you are certain that the collection changes are the proper ones, you can publish your changes by updating the collection. To do this, in the Collections (preview) tab, select the collection that has undergone changes, and then select the option **Update collection** in its context menu. As a shortcut, you can also select the Update icon, between the collection's name and its context icon.
 
-<screenshot with update collection option>
+:::image type="content" source="media/ui-elements-collections/update-collection.png" alt-text="Update collection option in context menu" border="false":::
 
 Upon selecting **Publish** in the confirmation dialog that pops up, the flow will enter a Publishing state, during which the collection is saved and uploaded in Dataverse, so that its changes become available in the specific environment. While publishing takes place, the UI of the flow designer remains disabled.
 
-<screenshot with update confirmation dialog>
+:::image type="content" source="media/ui-elements-collections/update-collection-confirmation-dialog.png" alt-text="Confirmation dialog to update a collection" border="false":::
 
 When the collection is succesfully updated in this way, the corresponding success banner appears in the UI elements pane to inform you accordingly. At this point, the collection's new state has overwritten the previous one, and the desktop flows that reference this collection in the current environment will be affected accordingly in their following runs, without requiring any manual update themselves.
 
-<screenshot with update success banner>
+:::image type="content" source="media/ui-elements-collections/collection-updated-successfully.png" alt-text="Collection updated successfully" border="false":::
 
 > [!NOTE]
 > If the collection is up-to-date, the option **Update collection** is disabled.
