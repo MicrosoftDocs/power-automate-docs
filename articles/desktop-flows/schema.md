@@ -43,7 +43,7 @@ Starting January 2024, v2 schema is automatically enabled for all environments. 
 
 Later in 2024, v2 schema will be turned on for all environments without the option to disable the feature and the option won't be visible in Power Platform admin center. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
 
-As of April 1, 2024, the v2 schema is enabled by default in the following geographies:
+As of April 25th, 2024, the v2 schema is enabled by default in the following geographies:
 
 - Canada
 - South Africa
@@ -58,6 +58,8 @@ As of April 1, 2024, the v2 schema is enabled by default in the following geogra
 - France
 - Germany
 - UAE
+- Asia
+- Japan
 
 ## Manage desktop flows in environments with the v2 schema enabled
 
@@ -97,6 +99,15 @@ Then, you can import the updated v2 schema version of the same process to the ma
 |**Can edit/save v1 desktop flows into v1 schema in environments with the v2 schema enabled?** |Yes|No (flows are upconverted and saved in the v2 schema)|
 |**Can edit/save v2 desktop flows into z1 schema in environments with the v2 schema disabled?** |No (user notified of error)|Yes (flows are downgraded to and saved in the v1 schema)|
 |**Can edit/save v2 desktop flows into v2 schema in environments with the v2 schema enabled?** |No (user notified of error)|Yes|
+
+## Exceeded size limit
+When saving a desktop flow in v2 schema, you might it the following error "Error during flow save"
+
+:::image type="content" source="media/schema/desktopflow-v2-limit.png" alt-text="Error during flow save error message indicating limit on the flow size.":::
+
+The limit applies to the definition of the desktop flow saved in Dataverse, which cannot exceed 10 Mb. The issue can happen when you have large desktop flow, this is usually due to actions having large value in their properties or variables having large default value. One example could be an image saved as base64 and put into the default variable value.
+
+We recommend to not store large payload in the action properties or in the variable default value and instead retrieve the value from other actions or pass the value as an input variable. You can also split your desktop flow into multiple child desktop flows.
 
 ## Dataverse schema
 
