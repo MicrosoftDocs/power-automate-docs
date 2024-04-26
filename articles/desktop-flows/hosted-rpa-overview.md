@@ -8,8 +8,10 @@ editor: ''
 tags: ''
 ms.subservice: desktop-flow
 ms.topic: overview
-ms.date: 11/30/2023
+ms.date: 05/01/2024
 ms.reviewer: matp
+contributors:
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - admin
@@ -54,5 +56,4 @@ For example, you can have 10 bot capacity shared between two groups—let’s sa
 
 ## Get started with hosted machines and groups
 
-Learn more about [Hosted machines](hosted-machines.md) and [Hosted machine groups](hosted-machine-groups.md) and see [pricing for Hosted Process licenses](https://powerautomate.microsoft.com/pricing/).
-
+Learn more about [Hosted machines](hosted-machines.md) and [Hosted machine groups](hosted-machine-groups.md) and see [pricing for hosted process licenses](https://powerautomate.microsoft.com/pricing/).
