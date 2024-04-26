@@ -4,13 +4,14 @@ description: Learn about the available SAP GUI actions in Power Automate for des
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 04/15/2024
+ms.date: 04/26/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
 - jpapadimitriou
 - Yiannismavridis
 - PetrosFeleskouras
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
