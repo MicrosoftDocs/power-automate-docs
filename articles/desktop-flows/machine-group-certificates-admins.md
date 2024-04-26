@@ -129,7 +129,7 @@ Power Automate enables you to customize the certificate lifetime and how early t
 |Flow Machine Group |Group Key Validity Period |Duration in minutes after which the next certificate issued will be expired. |Minimum: Three months (129,600 minutes) </br> Maximum: Five years (2,628,000 minutes). |
 |Flow Machine Group |Group Key Expiry Grace Period |Duration in minutes before the machine group certificate’s expiration date where machines will renew their certificates. |Minimum: 45 days (64,800 minutes) </br> Maximum: half of the Group Key Validity Period. |
 
-The current certificate remains valid until its expiry date is reached. Changes to the validity period will only apply to the next certificate.
+The current certificate remains valid until its expiration date. Changes to the validity period will only apply to the next certificate.
 
 Some special considerations must be kept in mind when changing the validity period and the grace period:
 
