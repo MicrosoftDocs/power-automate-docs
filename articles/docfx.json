@@ -46,8 +46,7 @@
       ],
       "breadcrumb_path": "breadcrumb/toc.yml",
       "titleSuffix": "Power Automate",
-      "feedback_system": "Standard",
-      
+      "feedback_system": "Standard",  
       "feedback_product_url": "https://ideas.powerautomate.com/",
       "search.app": [
         "Flow",
