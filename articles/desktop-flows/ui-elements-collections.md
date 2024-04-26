@@ -1,15 +1,15 @@
 ---
 title: UI elements collections (preview)
 description: Learn about UI elements collections in Power Automate desktop flows.
-author: iomavrid
+author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/25/2024
+ms.date: 04/26/2024
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
-  - iomavrid
+  - yiannismavridis
   - DanaMartens
 search.audienceType: 
   - flowmaker

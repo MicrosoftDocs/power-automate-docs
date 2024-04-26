@@ -2,6 +2,7 @@
 title: Use and update UI elements collections (preview)
 description: Learn how to use and update UI elements collections in desktop flows.
 author: yiannismavridis
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 04/26/2024
