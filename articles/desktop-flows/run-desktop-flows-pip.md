@@ -81,13 +81,17 @@ Enable options **View only** to block user input, and **Always on top** to alway
 
 You can trigger a desktop flow in Picture-in-Picture mode from a cloud flow. 
 
-[Triggering desktop flows from cloud flows](trigger-desktop-flows.md) enables you to run desktop flows in attended or unattended mode. Running flows in picture-in-picture is available only for attended runs. 
+[Triggering desktop flows from cloud flows](trigger-desktop-flows.md) enables you to run desktop flows in attended or unattended mode.
 
-To trigger a desktop flow, open the configuration pane of the **Run a flow built with Power Automate for desktop** cloud action. Set the **Run Mode** field to **Attended**, and in the Advanced parameters section, set the **Attended Mode** field to **Picture-in-picture**. 
+> [!IMPORTANT]
+>
+> - Running flows in Picture-in-Picture is available only for attended runs. 
+
+To trigger a desktop flow in Picture-in-Picture, open the action configuration pane of the **Run a flow built with Power Automate for desktop** cloud action. Set the **Run Mode** field to **Attended**, and in the Advanced parameters section, set the **Attended Mode** field to **Picture-in-picture**. 
 
 :::image type="content" source="media/run-flow-pip/cloud-pip-parameter.png" alt-text="Set Attended Mode parameter in Run a flow built with Power Automate for desktop cloud action.":::
 
-Upon triggering the desktop flow, the flow starts running within the picture-in-picture window like when you [trigger a desktop flow from Power Automate console in picture-in-picture](run-desktop-flows-pip.md##trigger-a-desktop-flow-from-power-automate-console-in-picture-in-picture).  
+Upon triggering the desktop flow, the Picture-in-Picture window pops up prompting for authentication, and then the flow starts running like when you [trigger a desktop flow from Power Automate console in picture-in-picture](run-desktop-flows-pip.md##trigger-a-desktop-flow-from-power-automate-console-in-picture-in-picture).  
 
 ## Debug a desktop flow in Picture-in-Picture
 
