@@ -22,7 +22,7 @@ search.audienceType:
 
 After you publish a UI elements collection through the flow designer of a desktop flow, that collection is uploaded in Dataverse in the same environment where the flow exists.
 
-> - [!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
 
 ## Portal page of UI elements collections
 

@@ -21,7 +21,7 @@ search.audienceType:
 
 You can include UI elements collections in desktop flows through the [Assets library](assets-library.md) using Power Automate for desktop's designer.
 
-> - [!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
 > - This feature requires Power Automate for desktop v2.43 or later.
 > - An Attended RPA license is required to include and use UI elements collections in desktop flows, given that access to the flow designer of Power Automate for desktop is needed.
 

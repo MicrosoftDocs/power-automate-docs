@@ -28,7 +28,7 @@ After these elements are captured, they can be associated with the respective UI
 
 Previously, UI elements were only available separately to each desktop flow. This means that they needed to be captured individually in the context of each desktop flow built, even if the elements happened to be exactly the same among multiple desktop flows. To avoid this, UI elements collections now offer makers and admins the ability to have control and central management over 'groups' of UI elements, which can be shared across multiple users and imported in multiple desktop flows as reusable components. In this way, in case of an application update for instance, the UI elements collection only needs a one-time adjustment - all desktop flows referencing this collection in the same environment should then reflect that change automatically.
 
-> - [!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
 > - This feature requires Power Automate for desktop v2.43 or later.
 > - This feature requires environments where the v2 schema is enabled. In v1 schema environments, UI elements collections are not available.
 
