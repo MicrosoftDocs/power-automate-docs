@@ -24,9 +24,7 @@ Creating and publishing a UI elements collection is possible through the flow de
 
 :::image type="content" source="media/ui-elements-collections/Two-tabs-in-ui-elements-pane.png" alt-text="Screenshot of the Flow repository and Collections (preview) tabs in the UI elements pane" border="false":::
 
-> [!IMPORTANT]
-
-> - [!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
 
 The **Flow repository** tab contains all the UI elements that are available only to that particular desktop flow. Desktop flows created using version 2.42 or earlier, which include UI elements, show these elements within the Flow repository tab after upgrading to version 2.43 or higher, if these flows are part of a schema v2 environment.
 
