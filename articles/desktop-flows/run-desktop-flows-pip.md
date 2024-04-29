@@ -50,7 +50,7 @@ To enable the Picture-in-Picture run mode on the machine, follow one of the meth
 > [!IMPORTANT]
 >
 > Administrator rights on the local machine are required for all methods.
-> For [Microsoft Store](#install-power-automate-from-microsoft-store) installations, only the manual method is available.
+> For [Microsoft Store](install.md#install-power-automate-from-microsoft-store) installations, only the manual method is available.
 
 |Method|Description|
 |----|----|
@@ -93,7 +93,7 @@ To trigger a desktop flow in Picture-in-Picture, open the action configuration p
 
 :::image type="content" source="media/run-flow-pip/cloud-pip-parameter.png" alt-text="Set Attended Mode parameter in Run a flow built with Power Automate for desktop cloud action.":::
 
-Upon triggering the desktop flow, the Picture-in-Picture window pops up prompting for authentication, and then the flow starts running like when you [trigger a desktop flow from Power Automate console in picture-in-picture](run-desktop-flows-pip.md##trigger-a-desktop-flow-from-power-automate-console-in-picture-in-picture).  
+Upon triggering the desktop flow, the Picture-in-Picture window pops up prompting for authentication, and then the flow starts running like when you [trigger a desktop flow from Power Automate console in picture-in-picture](run-desktop-flows-pip.md#trigger-a-desktop-flow-from-power-automate-console-in-picture-in-picture).  
 
 ## Debug a desktop flow in Picture-in-Picture
 
