@@ -37,7 +37,7 @@ You can also use the option **Import collection**, found in the context menu at 
 
 ## Import collections
 
-The [UI elements collections](ui-elements-collections.md) tab shows you the collections that are published in the environment you've selected and are accessible to you.
+The [UI elements collections](ui-elements-collections.md) tab shows you the collections that are published in the environment you select and are accessible to you.
 
 > [!NOTE]
 > You can only see UI elements collections that you have created or are shared with you. The list of collections in the respective Assets library tab is identical to the list available in the portal page for each maker.
