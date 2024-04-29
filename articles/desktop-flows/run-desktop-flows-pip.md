@@ -28,6 +28,7 @@ This attended run mode is called Picture-in-Picture and uses the [Child Sessions
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality.
 > - These features are available before an official release so that customers can get early access and provide feedback.
+> - Triggering desktop flows from cloud flows in picture-in-picture requires Power Automate for desktop v2.43 or later.
 
 ## Prerequisites
 
@@ -49,6 +50,7 @@ To enable the Picture-in-Picture run mode on the machine, follow one of the meth
 > [!IMPORTANT]
 >
 > Administrator rights on the local machine are required for all methods.
+> For [Microsoft Store](#install-power-automate-from-microsoft-store) installations, only the manual method is available.
 
 |Method|Description|
 |----|----|
