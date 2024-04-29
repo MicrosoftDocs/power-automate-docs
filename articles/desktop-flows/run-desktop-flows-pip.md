@@ -57,7 +57,7 @@ To enable the Picture-in-Picture run mode on the machine, follow one of the meth
 | Silent installation | Install Power Automate with [silent installation](install-silently.md). During silent installation, Picture-in-Picture is enabled by default on the machine. To skip the enablement, add the **-SKIPENABLEPIPMODE** argument. More information: [Command line arguments](install-silently.md#command-line-arguments) |
 | Command | Update an existing installation and enable or disable the Picture-in-Picture run mode on the machine with a command. Open the **Start** menu, search for **Command Prompt**, right-click it, and then select **Run as administrator**. Go to the installation directory of Power Automate, by default ```cd C:\Program Files (x86)\Power Automate Desktop``` and run the command ```PAD.ChildSession.Installer.Host.exe``` to enable Picture-in-Picture or ```PAD.ChildSession.Installer.Host.exe -d``` to disable it. |
 
-## Run a desktop flow in Picture-in-Picture
+## Trigger a desktop flow from Power Automate console in Picture-in-Picture
 
 You can trigger a desktop flow in Picture-in-Picture mode through the **Power Automate console**.
 
@@ -76,6 +76,18 @@ When you authenticate on the Picture-in-Picture session, the flow starts running
 :::image type="content" source="media/run-flow-pip/pip-window.png" alt-text="The flow is running in the Picture-in-Picture window.":::
 
 Enable options **View only** to block user input, and **Always on top** to always keep the window on the foreground.
+
+## Trigger a desktop flow from a cloud flow in Picture-in-Picture
+
+You can trigger a desktop flow in Picture-in-Picture mode from a cloud flow. 
+
+[Triggering desktop flows from cloud flows](trigger-desktop-flows.md) enables you to run desktop flows in attended or unattended mode. Running flows in picture-in-picture is available only for attended runs. 
+
+To trigger a desktop flow, open the configuration pane of the **Run a flow built with Power Automate for desktop** cloud action. Set the **Run Mode** field to **Attended**, and in the Advanced parameters section, set the **Attended Mode** field to **Picture-in-picture**. 
+
+:::image type="content" source="media/run-flow-pip/cloud-pip-parameter.png" alt-text="Set Attended Mode parameter in Run a flow built with Power Automate for desktop cloud action.":::
+
+Upon triggering the desktop flow, the flow starts running within the picture-in-picture window like when you [trigger a desktop flow from Power Automate console in picture-in-picture](run-desktop-flows-pip.md##trigger-a-desktop-flow-from-power-automate-console-in-picture-in-picture).  
 
 ## Debug a desktop flow in Picture-in-Picture
 
