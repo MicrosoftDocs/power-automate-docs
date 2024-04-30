@@ -25,7 +25,7 @@ search.audienceType:
 All customer data stored in Power Platform is encrypted at rest using Microsoft-managed keys by default. With customer-managed keys (CMKs), customers can bring their own encryption keys to protect Power Automate data. This allows customers to have an extra protective layer to manage their Power Platform assets. With this feature, you can rotate or swap encryption keys on demand. It also prevents Microsoft’s access to your customer data, if you choose to revoke key access to Microsoft services at any time.
 
 > [!IMPORTANT]
-> - *Before applying the enterprise policy, ensure that the environment doesn't have any flows.*
+> - *Before applying the enterprise policy, ensure no flows were created in this environment.*
 > - If you apply enterprise policy on an environment with existing flows, those flows and their data would continue to be encrypted with Microsoft-managed keys.
 > - Currently, customer-managed keys aren't leveraged to encrypt non-OAuth connections. Such non-Microsoft Entra based connections will continue to be encrypted at rest using Microsoft-managed keys.
 
