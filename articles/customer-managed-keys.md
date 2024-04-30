@@ -20,18 +20,13 @@ search.audienceType:
   - enduser
 ---
 
-# Support for customer-managed keys (preview)
+# Support for customer-managed keys
 
-[This article is pre-release documentation and is subject to change.]
-
-All customer data stored in Power Platform is encrypted at rest using Microsoft-managed keys by default. With customer-managed keys (CMKs), customers can bring their own encryption keys to encrypt Power Automate data. This allows customers to have an extra protective layer to manage their Power Platform assets. With this feature, you can rotate or swap encryption keys on demand. It also prevents Microsoft’s access to your customer data, if you choose to revoke key access to Microsoft services at any time.
+All customer data stored in Power Platform is encrypted at rest using Microsoft-managed keys by default. With customer-managed keys (CMKs), customers can bring their own encryption keys to protect Power Automate data. This allows customers to have an extra protective layer to manage their Power Platform assets. With this feature, you can rotate or swap encryption keys on demand. It also prevents Microsoft’s access to your customer data, if you choose to revoke key access to Microsoft services at any time.
 
 > [!IMPORTANT]
->
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
->
 > - *Before applying the enterprise policy, ensure that the environment doesn't have any flows.*
-> - If you apply enterprise policy on an environment with flows, the customer key wouldn't be applied to encrypt data, and the workflows and their data would continue to be encrypted with Microsoft-managed keys.
+> - If you apply enterprise policy on an environment with existing flows, those flows and their data would continue to be encrypted with Microsoft-managed keys.
 > - Currently, customer-managed keys aren't leveraged to encrypt non-OAuth connections. Such non-Microsoft Entra based connections will continue to be encrypted at rest using Microsoft-managed keys.
 
 Applying an encryption key is a gesture performed by Power Platform admins and is totally invisible to users. Users can create, save, and execute Power Automate workflows exactly the same way they would if the data was encrypted by Microsoft-managed keys.
