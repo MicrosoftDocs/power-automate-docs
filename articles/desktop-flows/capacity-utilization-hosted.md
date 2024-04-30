@@ -1,6 +1,6 @@
 ---
-title: Hosted process capacity utilization 
-description: Hosted process capacity utilization 
+title: Hosted Process capacity utilization 
+description: Hosted Process capacity utilization 
 author: cvassallo
 ms.subservice: desktop-flow
 ms.date: 05/01/2024
@@ -11,28 +11,28 @@ contributors:
 ms.topic: conceptual
 ---
 
-# Hosted process capacity utilization (preview)
+# Hosted Process capacity utilization (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
-The **Hosted process capacity utilization page** provides you with insights into how your hosted process (previously Power Automate hosted RPA add-on) capacity is being used within your environment. As a reminder, within the Power Automate platform each hosted process capacity is based on a purchased [Hosted process license](/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on). It's [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows you to [run desktop flows with zero infrastructure](hosted-rpa-overview.md).
+The **Hosted Process capacity utilization page** provides you with insights into how your Hosted Process (previously Power Automate hosted RPA add-on) capacity is being used within your environment. As a reminder, within the Power Automate platform each Hosted Process capacity is based on a purchased [Hosted Process license](/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on). It's [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows you to [run desktop flows with zero infrastructure](hosted-rpa-overview.md).
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-A hosted process capacity can be allocated to a hosted machine or committed to a hosted machine group.
+A Hosted Process capacity can be allocated to a hosted machine or committed to a hosted machine group.
 
 |Consuming object|Description|Consumption mode|
 |----|--------------------|----|
-|[Hosted machine](hosted-machines.md)|To be created, each hosted machine requires a hosted process capacity allocated.|Hosted process capacity is autoallocated to hosted machine at its creation.|
-|[Hosted machine group](hosted-machine-groups.md)|Every hosted process capacity committed to a hosted machine group guarantees the availability of a bot during autoscaling (= committed bot). The commitment ensures that the necessary resources are always available for processing the desktop flows.|Manual allocation of committed bots on hosted machine group.|
+|[Hosted machine](hosted-machines.md)|To be created, each hosted machine requires a Hosted Process capacity allocated.|Hosted Process capacity is autoallocated to hosted machine at its creation.|
+|[Hosted machine group](hosted-machine-groups.md)|Every Hosted Process capacity committed to a hosted machine group guarantees the availability of a bot during autoscaling (= committed bot). The commitment ensures that the necessary resources are always available for processing the desktop flows.|Manual allocation of committed bots on hosted machine group.|
 
 > [!NOTE]
 >
 > A hosted machine group with a commitment has a priority of usage on its committed bots over all concurrent hosted machine groups. More information: [Load balance hosted machine groups](hosted-machine-groups.md#load-balance-hosted-machine-group).
 
-## Hosted process capacity overview
+## Hosted Process capacity overview
 
-The **Hosted process capacity overview** pie chart helps you understand what's your share of the hosted capacity consumption within the environment compared to other makers. It lets you know if there's still capacity to scale-up in the future and alerts you when your objects are exceeding environment capacity.
+The **Hosted Process capacity overview** pie chart helps you understand what's your share of the hosted capacity consumption within the environment compared to other makers. It lets you know if there's still capacity to scale-up in the future and alerts you when your objects are exceeding environment capacity.
 
 ![Hosted capacity overview](media/capacity-utilization/hosted-capacity-overview.png)
 
@@ -45,7 +45,7 @@ The **Hosted process capacity overview** pie chart helps you understand what's y
 |![Legend color - My overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Sum of capacities over-allocated to hosted machines and over-committed to hosted machine groups, which the user owns or which are shared with them.|
 |![Legend color - Overage by other makers](media/capacity-utilization/legend-overage-by-other-makers.png)|Overage by other makers|Sum of capacities over-allocated and over-committed to objects, which the user doesn't own and which weren't shared with them.|
 
-## Hosted process capacity insights
+## Hosted Process capacity insights
 
 The '**Hosted capacity insights**' card informs you of operation health and provides you with recommendations if there are compliance issues.
 
@@ -65,7 +65,7 @@ The '**Hosted capacity insights**' card informs you of operation health and prov
 > - For example, one available capacity (non-allocated to a hosted machine and non-committed to a hosted machine group) is pooled between all the hosted machine groups with a first arrived first served behavior.
 > - Having a non-empty pool isn't always a guarantee of good health depending on the number of hosted machine groups relying on the pool, the intensity of runs they perform, and their relative schedule.
 
-## Hosted process utilization details
+## Hosted Process utilization details
 
 In this section, you learn how to oversee and manage all hosted machines and hosted machine groups you have access to (as owner or through sharing).
 
@@ -87,7 +87,7 @@ In this section, you learn how to oversee and manage all hosted machines and hos
 > - The **Active bots** column refers to machines currently spin-up and consuming hosted capacity from the shared pool.
 > - Hosted machine groups can be, when necessary in case of overage, prioritized based on their unattended runs.
 
-## Hosted process capacity overage
+## Hosted Process capacity overage
 
 Capacity overage in an environment occurs when the capacity utilized by hosted machines and hosted machine groups surpasses the assigned capacity of the environment. In such instances, specific hosted machines and/or hosted machine groups might be identified as exceeding capacity. To prevent disruption, it's crucial to promptly rectify the situation.
 
@@ -135,7 +135,7 @@ The **Request capacity** action submits a request to the tenant administrator fo
 
 ### What are the rules governing which objects are identified as in overage?
 
-When the total hosted process capacity assigned to an environment is inferior to the combined capacity allocated to hosted machines and committed to hosted machine groups:
+When the total Hosted Process capacity assigned to an environment is inferior to the combined capacity allocated to hosted machines and committed to hosted machine groups:
 
 - First, the overage is identified on the committed capacity of hosted machine groups, starting from the most recently created committed bot setting to the oldest.
 - Second, the overage is identified on the allocated capacity of hosted machines, starting from the most recently created machine to the oldest.
@@ -146,9 +146,9 @@ To view and edit capacity allocation, you need a security role with privileges t
 
 ![Flow Capacity Assignment](media/capacity-utilization/flow-capacity-assignment.png)
 
-## Using hosted process capacity as process capacity
+## Using Hosted Process capacity as process capacity
 
-The hosted process capacity can be used as process capacity to enable standard machines to run desktop flows in unattended mode. In an environment with hosted process capacity, this hosted process capability enables the creation of overage process capacity allocation to machines and/or cloud flows. These in-overage machine or cloud flows operate as efficiently as any other process, without any performance issues. This mechanism is temporary and will be replaced by a more explicit behavior.
+The Hosted Process capacity can be used as process capacity to enable standard machines to run desktop flows in unattended mode. In an environment with Hosted Process capacity, this Hosted Process capability enables the creation of overage process capacity allocation to machines and/or cloud flows. These in-overage machine or cloud flows operate as efficiently as any other process, without any performance issues. This mechanism is temporary and will be replaced by a more explicit behavior.
 
 ## See also
 
