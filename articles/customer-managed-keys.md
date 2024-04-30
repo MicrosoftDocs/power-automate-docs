@@ -1,6 +1,6 @@
 ---
-title: Support for customer-managed keys (preview)
-description: Learn about support for customer-managed Keys in Power Automate.
+title: Support for customer-managed keys
+description: Learn about support for customer-managed keys in Power Automate.
 suite: flow
 documentationcenter: na
 author: v-aangie
@@ -12,8 +12,8 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/31/2023
-ms.author: rakrish
+ms.date: 04/30/2024
+ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
