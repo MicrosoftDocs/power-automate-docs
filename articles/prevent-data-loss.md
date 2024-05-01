@@ -4,7 +4,7 @@ description: Learn about data loss prevention policies for Power Automate.
 services: ''
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 12/12/2023
+ms.date: 05/01/2024
 ms.author: cgarty
 author: ChrisGarty
 contributors:
