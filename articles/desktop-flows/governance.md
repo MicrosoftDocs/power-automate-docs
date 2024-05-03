@@ -275,7 +275,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 You can configure when desktop flow run action logs should be captured or turn them off completely, using the **Activation status of the run action logs** environment feature setting in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
-:::image type="content" source="media/desktop-flow-logs/configure-desktop-flow-logs.png" alt-text="Screenshot and environment-level setting allowing you to configure desktop flow log verbosity." lightbox="media/desktop-flow-logs/configure-desktop-flow-logs.png":::
+:::image type="content" source="media/desktop-flow-logs/configure-desktop-flow-logs-v1.png" alt-text="Screenshot and environment-level setting allowing you to configure desktop flow log verbosity." lightbox="media/desktop-flow-logs/configure-desktop-flow-logs-v1.png":::
 
 | Log-level | Details |
 |---|---|
