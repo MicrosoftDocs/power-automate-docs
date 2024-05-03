@@ -55,7 +55,7 @@ To enable the picture-in-picture run mode on the machine, follow one of the meth
 
 |Method|Description|
 |----|----|
-| Manually | Run a desktop flow in picture-in-picture mode on the machine. You'll be asked to enable the feature. |
+| Manually | Run a desktop flow in picture-in-picture mode on the machine. You're asked to enable the feature. |
 | MSI installer | Install Power Automate with the [MSI installer](install.md#install-power-automate-using-the-msi-installer) and select the **Enable Picture-in-Picture mode** option during the installation process. |
 | Silent installation | Install Power Automate with [silent installation](install-silently.md). During silent installation, picture-in-picture is enabled by default on the machine. To skip the enablement, add the **-SKIPENABLEPIPMODE** argument. More information: [Command line arguments](install-silently.md#command-line-arguments) |
 | Command | Update an existing installation and enable or disable the picture-in-picture run mode on the machine with a command. Open the **Start** menu, search for **Command Prompt**, right-click it, and then select **Run as administrator**. Go to the installation directory of Power Automate, by default ```cd C:\Program Files (x86)\Power Automate Desktop``` and run the command ```PAD.ChildSession.Installer.Host.exe``` to enable picture-in-picture or ```PAD.ChildSession.Installer.Host.exe -d``` to disable it. |
@@ -110,7 +110,7 @@ Two instances of a web browser (Chrome, Firefox, or Microsoft Edge) can't open c
 
 If a web browser is already open on the desktop with a user data folder, then it opens in picture-in-picture with another user data folder, and vice versa.
 
-This limitation is handled automatically with the **User data folder** parameter in the launch browser actions in the Power Automate designer. More information: [Launch new Microsoft Edge](actions-reference/webautomation.md#launch-new-microsoft-edge)
+This limitation is handled automatically with the **User data folder** parameter in the launch browser actions in the Power Automate designer. For more information, see [Launch new Microsoft Edge](actions-reference/webautomation.md#launch-new-microsoft-edge).
 
 The **User data folder** parameter has the following options:
 
