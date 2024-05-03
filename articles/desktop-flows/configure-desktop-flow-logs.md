@@ -51,18 +51,18 @@ The **Action log version** allows you to choose between logs V1, V2 or using bot
 
 The **FlowLogs entity time to live in minutes (Preview)** value determines the time that action logs should be retained in the 'FlowLogs' elastic table. Records that are older that the specified time-frame will be automatically deleted by Dataverse. Here are some example values for your convenience.
 
-| Days   | Minutes     |  
-|--------|-------------|  
+| Days   | Minutes     |
+|--------|-------------|
+| 1 day  | 1,440 minutes |
+| 3 days | 4,320 minutes |
+| 7 days | 10,080 minutes |
+| 14 days | 20,160 minutes |
+| 28 days | 40,320 minutes |
+| 60 days | 86,400 minutes |
+| 90 days | 129,600 minutes |
+| 180 days | 259,200 minutes |
+| 365 days | 525,600 minutes |
 | Forever | Less than or equal to 0 (zero) minutes |
-| 1 day  | 1,440 minutes |  
-| 3 days | 4,320 minutes |  
-| 7 days | 10,080 minutes |  
-| 14 days | 20,160 minutes |  
-| 28 days | 40,320 minutes |  
-| 60 days | 86,400 minutes |  
-| 90 days | 129,600 minutes |  
-| 180 days | 259,200 minutes |  
-| 365 days | 525,600 minutes |  
 
 > [!NOTE]
 > Before enabling logs V2, make sure you have sufficient Dataverse capacity that would support the data retention settings and aligns with your capacity planning, entitlement and adjust as necessary. See the [Sample Dataverse capacity demand calculations for logs V2](#sample-dataverse-capacity-demand-calculations-for-logs-v2) section below for some sizing examples.
