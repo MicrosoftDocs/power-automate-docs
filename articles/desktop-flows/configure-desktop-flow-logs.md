@@ -13,7 +13,7 @@ search.audienceType:
   - coe
 ---
 
-# Desktop flow run action logs configuration (preview)
+# Desktop flow action logs configuration (preview)
 
 This page provides configuration guidance on the new desktop flow logs configuration feature within the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This feature offers admins the ability to configure  desktop flow action logging, providing options to store logs in either existing storage or the newly introduced [Dataverse Elastic Tables](/power-apps/maker/data-platform/create-edit-elastic-tables) storage format.
 
@@ -24,7 +24,7 @@ This page provides configuration guidance on the new desktop flow logs configura
 > - This feature isn't available yet for local attended runs from Power Automate desktop.
 > - These features are available before an official release so that customers can get early access and provide feedback.
 
-## Configure desktop flow action logs V1 (preview)
+## Desktop flow action logs V1 (preview)
 
 With desktop flow action logs **V1**, you can configure when desktop flow run action logs should be captured or turn them off completely, using the **Activation status of the run action logs** environment feature setting in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
@@ -36,7 +36,7 @@ With desktop flow action logs **V1**, you can configure when desktop flow run ac
 | **On run failure**| This option **only** captures desktop flow actions logs in the event of a runtime error. This means that logs won't be available for every single run, but only when an error occurs. However, if an error does occur, all logs for that particular run are available, including both successful and failed actions. |
 | **Disabled** | This option effectively **disables** desktop flow run action logs **completely**. |
 
-## Configure desktop flow action logs V2 (preview)
+## Desktop flow action logs V2 (preview)
 
 Desktop flow action logs **V2** offers significant enhancements over the previous version, V1. It uses Microsoft's [Dataverse Elastic Tables](/power-apps/maker/data-platform/create-edit-elastic-tables) technology, which can handle large amounts of data, such as action logs, and comes with built-in data retention features (time-to-live or TTL), making it an ideal choice for organizations dealing with significant data that needs to be accessed for reporting and integrations. The choice between V1 or V2 and the setting the retention period for V2 logs are controlled by two distinct settings available in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 
