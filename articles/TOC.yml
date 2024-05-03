@@ -35,9 +35,7 @@
   - name: Export and import a non-solution flow
     href: export-import-flow-non-solution.md
   - name: Drafts and versioning for cloud flows
-    href: drafts-versioning.md
-  - name: Use Power Automate flows as plugins in Copilot for Microsoft 365 (preview)
-    href: flow-plugins-m365.md          
+    href: drafts-versioning.md  
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
@@ -109,10 +107,12 @@
       href: change-cloud-flow-owner.md
     - name: Format data by examples
       href: format-data-by-examples.md
-  - name: Popular cloud flows scenarios
+  - name: Use flows in other apps
     items:
     - name: Use the Power Automate plugin for ChatGPT
       href: ./use-chatgpt-plugin.md
+    - name: Use Power Automate flows as plugins in Copilot for Microsoft 365 (preview)
+      href: flow-plugins-m365.md  
     - name: Use flows with approvals
       items:
       - name: Get started with approvals
