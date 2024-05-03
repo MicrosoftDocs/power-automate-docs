@@ -111,7 +111,7 @@
     items:
     - name: Use the Power Automate plugin for ChatGPT
       href: ./use-chatgpt-plugin.md
-    - name: Use Power Automate flows as plugins in Copilot for Microsoft 365 (preview)
+    - name: Use flows as plugins in Copilot for Microsoft 365 (preview)
       href: flow-plugins-m365.md  
     - name: Use flows with approvals
       items:
