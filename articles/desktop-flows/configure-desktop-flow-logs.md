@@ -39,7 +39,7 @@ The **Activation status of the run action logs** setting defines when desktop fl
 
 ## Configure desktop flow action log version (preview)
 
-The **Action log version** allows you to choose between logs V1, V2 or using both.
+The **Action log version** allows you to choose between logs V1, V2, or using both.
 
 :::image type="content" source="media/desktop-flow-logs/configure-desktop-flow-logs-v2.png" alt-text="Screenshot and environment-level setting allowing you to configure desktop flow logs V2." lightbox="media/desktop-flow-logs/configure-desktop-flow-logs-v2.png":::
 
@@ -67,7 +67,6 @@ The **FlowLogs entity time to live in minutes (Preview)** value determines the t
 > [!NOTE]
 > Before enabling logs V2, make sure you have sufficient Dataverse capacity that would support the data retention settings and aligns with your capacity planning, entitlement and adjust as necessary. See the [Sample Dataverse capacity demand calculations for logs V2](#sample-dataverse-capacity-demand-calculations-for-logs-v2) section below for some sizing examples.
 
-
 ### Key differences of desktop flow logs V1 and V2
 
 | Feature | Logs V1 | Logs V2 | Details |  
@@ -75,11 +74,12 @@ The **FlowLogs entity time to live in minutes (Preview)** value determines the t
 | Automatic Data Retention | Not Available | Available | V2 uses [Elastic Tables](/power-apps/maker/data-platform/create-edit-elastic-tables) which is powered by Azure Cosmos DB and comes with a built-in time-to-live feature for automatic data retention. |  
 | Support for large log sizes | Roughly up to 50,000 to 80,000 action logs maximum | Roughly twice the number of V1 action logs initially | V2 has the theoretical potential to scale up to gigabytes worth of action logs in future, whereas V1 is scaling only to the volume outlined on the left. |
 | Support for advanced reporting and governance | Not Available | Available | In V1, the attribute 'additionalcontext' is a file type, stored as a blob in Dataverse, making it challenging to parse for reporting and governance controls. Logs are much more accessible in V2. |
-| Support for Azure Synapse Link for Dataverse integration | Not Available | Available | In V1, the attribute 'additionalcontext' is a file type, stored as a blob in Dataverse, which isn't supported for synchronization to Azure Synapse. Logs V2 can be synced to Azure Synapse. |
+| Support for Azure Synapse Link for Dataverse integration | Not Available | On roadmap | In V1, the attribute 'additionalcontext' is a file type, stored as a blob in Dataverse, which isn't supported for synchronization to Azure Synapse. Logs V2 can be synced to Azure Synapse. |
 | Support for Dataverse auditing | Not Available | Available | In V1, the attribute 'additionalcontext' is a file type, stored as a blob in Dataverse, which isn't supported in Dataverse auditing. Logs V2 supports Dataverse auditing. |
+| Support for Dataverse long-term retention | Not Available | On roadmap | In V1, the attribute 'additionalcontext' is a file type, stored as a blob in Dataverse, which isn't supported in Dataverse auditing. Logs V2 supports Dataverse auditing. |
 | Based on Dataverse Role-Based Access Control (RBAC) | Available | Available | Both versions use Dataverse RBAC, inheriting action log permissions from their parent 'flowsession' record. |
 
-Logs **V2** offers significant enhancements over the previous version, V1. It uses [Dataverse Elastic Tables](/power-apps/maker/data-platform/create-edit-elastic-tables) technology, which can handle large amounts of data, such as in action log scenarios, and comes with built-in data retention features (time-to-live or TTL), making it an ideal choice for organizations dealing with significant data that needs to be accessed for additional reporting, governance and integration scenarios.
+Logs **V2** offers significant enhancements over the previous version, V1. This log type uses elastic tables, which is great for handling large data volumes, like action log scenarios, and has built-in data retention (TTL). Ideal for organizations needing to access significant amount of data for reporting, governance, and integration.
 
 ## Sample Dataverse capacity demand calculations for logs V2  
 
@@ -108,14 +108,21 @@ The data model of logs V2 is based on a parent-child relationship between the 'F
 The following API call retrieves a specific flow session by its ID (9d51aa1f-315e-43ab-894f-bc445dfb049b), and then accesses the associated action logs using the *flowsession_flowlog_parentobjectid* relationship.
 
 ```http
-https://[my org].api.crm[my region].dynamics.com/api/data/v9.0/flowsessions(9d51aa1f-315e-43ab-894f-bc445dfb049b)/flowsession_flowlog_parentobjectid  
+[Organization URI]/api/data/v9.0/flowsessions(9d51aa1f-315e-43ab-894f-bc445dfb049b)/flowsession_flowlog_parentobjectid  
 ```
 
 #### New ExecuteCosmosSqlQuery API call syntax using FlowLogs table
 
 ```http
-    https://[my org].api.crm[my region].dynamics.com/api/data/v9.2/ExecuteCosmosSqlQuery(QueryText=@p1,EntityLogicalName=@p2,PartitionId=@p3,QueryParameters=@p4,PageSize=@p5)?@p1='SELECT+c.props.flowlogid+as+flowlogid,+c.props.createdon+as+createdon,+c.props.data+as+data,+c.props.level+as+level,+c.props.type+as+type,+c.ttl+as+ttlinseconds,+c.props.cloudflowid+as+cloudflowid,+c.props.cloudflowrunid+as+cloudflowrunid,+c.props.desktopflowid+as+desktopflowid,+c.props.flowmachineid+as+flowmachineid,+c.props.flowmachinegroupid+as+flowmachinegroupid,+c.props.flowsessionid+as+flowsessionid,+c.props.workqueueid+as+workqueueid,+c.props.workqueueitemid+as+workqueueitemid+FROM+c+WHERE+c.props.type+IN+(100000001)+ORDER+BY+c.props.data.startTime+DESC'&@p2='flowlog'&@p3='flowsession_9d51aa1f-315e-43ab-894f-bc445dfb049b'&@p4={"Keys":["@referencingParentId"],"Values":[{"Type":"System.Guid","Value":"9d51aa1f-315e-43ab-894f-bc445dfb049b"}]}&@p5=50  
+    [Organization URI]/api/data/v9.2/ExecuteCosmosSqlQuery(
+    QueryText=@p1,EntityLogicalName=@p2,PartitionId=@p3,QueryParameters=@p4,PageSize=@p5)?
+    @p1='SELECT+c.props.flowlogid+as+flowlogid,+c.props.createdon+as+createdon,+c.props.data+as+data,+c.props.level+as+level,+c.props.type+as+type,+c.ttl+as+ttlinseconds,+c.props.cloudflowid+as+cloudflowid,+c.props.cloudflowrunid+as+cloudflowrunid,+c.props.desktopflowid+as+desktopflowid,+c.props.flowmachineid+as+flowmachineid,+c.props.flowmachinegroupid+as+flowmachinegroupid,+c.props.flowsessionid+as+flowsessionid,+c.props.workqueueid+as+workqueueid,+c.props.workqueueitemid+as+workqueueitemid+FROM+c+WHERE+c.props.type+IN+(100000001)+ORDER+BY+c.props.data.startTime+DESC'&
+    @p2='flowlog'&
+    @p3='flowsession_9d51aa1f-315e-43ab-894f-bc445dfb049b'&
+    @p4={"Keys":["@referencingParentId"],"Values":[{"Type":"System.Guid","Value":"9d51aa1f-315e-43ab-894f-bc445dfb049b"}]}&@p5=50  
 ```
+
+Learn more about [querying JSON columns in elastic tables](/powerapps/developer/data-platform/query-json-columns-elastic-tables.md).
 
 #### Breaking down the call into individual pieces
 
@@ -123,14 +130,14 @@ https://[my org].api.crm[my region].dynamics.com/api/data/v9.0/flowsessions(9d51
 - ExecuteCosmosSqlQuery is the method being called. This method allows the execution of a SQL query against Dataverse.
 - The parameters for the ExecuteCosmosSqlQuery method are provided in parentheses following the method name. These are:
   - QueryText=@p1: The SQL query to be executed. In this case, the query is selecting various properties from a table where the 'type' is 100000001 (desktop flow action log type) and ordering the results by the 'startTime' property in descending order.
-  - EntityLogicalName=@p2: This is the logical name of the entity you're querying. Here, it's set to 'flowlog'.
-  - PartitionId=@p3: This parameter is used to identify the partition within the Cosmos DB where the query is to be executed. It's set to 'flowsession_[FlowSessionId]'.
+  - EntityLogicalName=@p2: This is the logical name of the entity ('flowlog') that stores the action logs.
+  - PartitionId=@p3: This parameter is used to identify the partition within Azure Cosmos DB where the query is to be executed. It's set to 'flowsession_[FlowSessionId]'.
   - QueryParameters=@p4: This is a JSON object specifying parameters for the query. Here, it's specifying a key-value pair where the key is '@referencingParentId' and the value is the flowsessionId (GUID).
 
 ## Known limitations  
   
 - Cascade delete isn't yet supported. Therefore, it's recommended to avoid removing TTL.
 - Logs V2 are only available for desktop flow runs that have been launched from a cloud flow through the desktop flow connector action.
-- Changing action log version will not migrate previous desktop flow action logs to the new log storage type.
+- Changing action log version doesn't migrate previous desktop flow action logs to the new log storage type.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
