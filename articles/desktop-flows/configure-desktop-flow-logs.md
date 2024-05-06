@@ -82,7 +82,7 @@ The **FlowLogs entity time to live in minutes (Preview)** value determines the t
 Logs **V2** offers significant enhancements over the previous version, V1. V2 uses the [Elastic Tables](/power-apps/maker/data-platform/create-edit-elastic-tables) feature, which is great for handling large data volumes, like action log scenarios, and has built-in data retention (TTL). Ideal for organizations needing to access significant amount of data for reporting, governance, and integration with automatic data retention control.
 
 > [!NOTE]
-> The ***Audit changes to its data*** property under the advanced properties of the 'Flow Event' table should be deselected until auditing is supported for Logs V2. Learn more about this and other advanced table settings [here](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel#advanced-options).
+> The ***Audit changes to its data*** property under the advanced properties of the 'Flow Log' table should be deselected until auditing is supported for Logs V2. Learn more about this and other advanced table settings [here](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel#advanced-options).
 
 ## Dataverse capacity demand calculations for logs V2  
 
