@@ -67,7 +67,7 @@ The **FlowLogs entity time to live in minutes (Preview)** value determines the t
 > [!NOTE]
 > Before enabling logs V2, make sure you have sufficient Dataverse capacity that would support the data retention settings and aligns with your capacity planning, entitlement and adjust as necessary. See the [Sample Dataverse capacity demand calculations for logs V2](#sample-dataverse-capacity-demand-calculations-for-logs-v2) section below for some sizing examples.
 
-### Key differences of desktop flow logs V1 and V2
+## Key differences of desktop flow logs V1 and V2
 
 | Feature | Logs V1 | Logs V2 | Details |  
 |---|---|---|---|  
@@ -81,7 +81,7 @@ The **FlowLogs entity time to live in minutes (Preview)** value determines the t
 
 Logs **V2** offers significant enhancements over the previous version, V1. V2 uses the [Elastic Tables](/power-apps/maker/data-platform/create-edit-elastic-tables) feature, which is great for handling large data volumes, like action log scenarios, and has built-in data retention (TTL). Ideal for organizations needing to access significant amount of data for reporting, governance, and integration with automatic data retention control.
 
-## Sample Dataverse capacity demand calculations for logs V2  
+## Dataverse capacity demand calculations for logs V2  
 
 The following table shows sample Dataverse database storage consumption estimates per desktop flow run when using Logs V2. It outlines the approximate storage demand for different numbers of actions, assuming an average of 3-KB storage per action.
 
@@ -97,13 +97,13 @@ The following table shows sample Dataverse database storage consumption estimate
 > [!IMPORTANT]
 > The figures shown in the table above are just estimates and the actual storage consumption can vary significantly. The exact storage demand will depend on the specific details and complexity of each action log. Therefore, these numbers should be used as a rough guide for understanding the potential storage demand and planning your storage requirements accordingly.
 
-### Querying logs V2 data
+## Querying logs V2 data
 
 Accessing desktop flow action logs data can be achieved by making an API call to Microsoft's Dataverse backend, either using the traditional API call syntax or using the new [ExecuteCosmosSqlQuery](/power-apps/developer/data-platform/webapi/reference/executecosmossqlquery) method. This method allows you to execute a SQL query against the Dataverse, enabling the retrieval, filtering, and manipulation of data.
 
 The data model of logs V2 is based on a parent-child relationship between the 'Flowsession' and 'FlowLogs' table. Every record inherits permissions from its parent 'Flowsession' record. In order to query action logs of a specific desktop flow run, you can use the following query syntax.
 
-#### Traditional Dataverse API call syntax
+### Traditional Dataverse API call syntax
 
 The following API call retrieves a specific flow session by its ID (9d51aa1f-315e-43ab-894f-bc445dfb049b), and then accesses the associated action logs using the *flowsession_flowlog_parentobjectid* relationship.
 
@@ -111,7 +111,7 @@ The following API call retrieves a specific flow session by its ID (9d51aa1f-315
 [Organization URI]/api/data/v9.0/flowsessions(9d51aa1f-315e-43ab-894f-bc445dfb049b)/flowsession_flowlog_parentobjectid  
 ```
 
-#### New ExecuteCosmosSqlQuery API call syntax using FlowLogs table
+### New ExecuteCosmosSqlQuery API call syntax using FlowLogs table
 
 ```http
     [Organization URI]/api/data/v9.2/ExecuteCosmosSqlQuery(
@@ -124,7 +124,7 @@ The following API call retrieves a specific flow session by its ID (9d51aa1f-315
 
 Learn more about [querying JSON columns in elastic tables](/powerapps/developer/data-platform/query-json-columns-elastic-tables.md).
 
-#### Breaking down the call into individual pieces
+### Breaking down the call into individual pieces
 
 - The base URL (https://[my org].api.crm[my region].dynamics.com/api/data/v9.2/) is the endpoint for the Dataverse's Web API.
 - ExecuteCosmosSqlQuery is the method being called. This method allows the execution of a SQL query against Dataverse.
