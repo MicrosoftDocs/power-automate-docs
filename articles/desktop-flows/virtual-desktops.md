@@ -16,11 +16,11 @@ search.audienceType:
 
 # Automate on virtual desktops
 
-With the Power Automate agent for virtual desktops, you can automate processes on virtual desktops just as easily as you can on physical devices. If your virtual desktop uses Citrix or Microsoft Remote Desktop Protocol (RDP), you can [capture UI elements](ui-elements.md), [deploy UI automation actions](actions-reference/uiautomation.md), and [create desktop flows using the recorder](recording-flow.md), just like on your physical desktop.
+With the Power Automate agent for virtual desktops, you can automate processes on virtual desktops as easily as you can on physical devices. If your virtual desktop uses Citrix or Microsoft Remote Desktop Protocol (RDP), you can [capture UI elements](ui-elements.md), [deploy UI automation actions](actions-reference/uiautomation.md), and [create desktop flows using the recorder](recording-flow.md), just like on your physical desktop.
 
-The Power Automate agent for virtual desktops must be running both while you're designing a flow and when the flow runs. The agent starts automatically when a user logs in to the virtual desktop. If it isn't running on your virtual desktop, launch the agent manually. To launch the Power Automate agent for virtual desktops manually, double-click the shortcut on your desktop, or search for *Power Automate agent for virtual desktops* on the **Start** menu and then select the respective result, or go to the installation directory of the Power Automate agent for virtual desktops (by default, it is `C:\Program Files (x86)\Power Automate agent for virtual desktops`) and double-click **PAD.RDP.ControlAgent.exe.**
+The Power Automate agent for virtual desktops must be running both while you're designing a flow and when the flow runs. The agent starts automatically when a user logs in to the virtual desktop. If it isn't running on your virtual desktop, launch the agent manually. To launch the Power Automate agent for virtual desktops manually, double-click the shortcut on your desktop, or search for *Power Automate agent for virtual desktops* on the **Start** menu and then select the respective result, or go to the installation directory of the Power Automate agent for virtual desktops (by default, it's `C:\Program Files (x86)\Power Automate agent for virtual desktops`) and double-click **PAD.RDP.ControlAgent.exe.**
 
-It's important to install Power Automate for desktop on the machine where you'll be developing and executing your desktop flows, and Power Automate agent for virtual desktops on the machine where the flow just interacts with for UI automation actions. This second machine can be a Citrix Desktop, a host machine for a Citrix Virtual App, a remote desktop with Windows RDP communication, or a machine that hosts a Remote Desktop app.
+It's important to install Power Automate for desktop on the machine where you're developing and executing your desktop flows, and Power Automate agent for virtual desktops on the machine where the flow just interacts with for UI automation actions. This second machine can be a Citrix Desktop, a host machine for a Citrix Virtual App, a remote desktop with Windows RDP communication, or a machine that hosts a Remote Desktop app.
 
 ## Prerequisites
 
@@ -50,7 +50,7 @@ To automate on virtual desktops, the versions of Power Automate and Power Automa
 
 :::image type="content" source="media\virtual-desktops\virtual-desktops-agent-sync-dialog.png" alt-text="Screenshot of the prompt to sync Power Automate and Power Automate agent for virtual desktops.":::
 
-If the versions are out of sync when a desktop flow is running, Power Automate will sync them automatically.
+If the versions are out of sync when a desktop flow is running, Power Automate syncs them automatically.
 
 > [!NOTE]
 > The DLLs of the synced agent are stored in **C:\Users\\*username*\AppData\Local\Microsoft\Power Automate Desktop\RDP Automation Agents**.
@@ -74,7 +74,7 @@ An automation agent is a specialized agent that is sent to the remote desktop af
 
 The Automation Agent Storage Directory refers to the default path where automation agents are stored. By default, this path is '%LOCALAPPDATA%\Microsoft\Power Automate Desktop\RDP Automation Agents\'. However, if the 'PAD_RDP_STORAGE_DIRECTORY' property is defined on the machine, then the path becomes '%PAD_RDP_STORAGE_DIRECTORY%\Microsoft\Power Automate Desktop\RDP Automation Agents\'.
 
-### Communication Phases
+### Communication phases
 
 The following table and diagram depicts the different phases of communication:
 
@@ -97,7 +97,7 @@ The following table and diagram depicts the different phases of communication:
 
     **Workaround:** None. Remote desktop connection isn't supported in these Windows editions.
 - **Issue:** Encounter the 'Error communicating with Power Automate for desktop' message when Power Automate agent for virtual desktop is launched in Citrix Desktop even though you have installed Power Automate for desktop and Power Automate agent for virtual desktops correctly and met all prerequisites.
-   **Workaround:**  Check the 'Virtual channel allow list policy' setting in your Citrix configuration. This setting needs to be disabled to resolve the issue. Check with your Citrix administrator to disable the 'Virtual channel allow list policy' setting if it is enabled.
+   **Workaround:**  Check the 'Virtual channel allow list policy' setting in your Citrix configuration. This setting needs to be disabled to resolve the issue. Check with your Citrix administrator to disable the 'Virtual channel allow list policy' setting if it's enabled.
 
 - **Issue:** Virtual desktop automation isn't supported in Power Automate installed through the Microsoft store.
 
