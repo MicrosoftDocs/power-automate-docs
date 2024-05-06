@@ -111,7 +111,7 @@ When you save a desktop flow in v2 schema, you might see the following error:
 
 The limit applies to the definition of the desktop flow saved in Dataverse, which can't exceed 10 MB. The issue can happen when you have a large desktop flow, which could occur when actions have a large value in their properties or variables have a large default value. One example could be an image saved as base64 and put into the default variable value.
 
-We recommend to not store large payload in the action properties or in the variable default value. Instead retrieve the value from other actions or pass the value as an input variable. You can also split your desktop flow into multiple child desktop flows.
+We recommend to not store a large payload in the action properties or in the variable default value. Instead retrieve the value from other actions or pass the value as an input variable. You can also split your desktop flow into multiple child desktop flows.
 
 ## Dataverse schema
 
