@@ -81,6 +81,9 @@ The **FlowLogs entity time to live in minutes (Preview)** value determines the t
 
 Logs **V2** offers significant enhancements over the previous version, V1. V2 uses the [Elastic Tables](/power-apps/maker/data-platform/create-edit-elastic-tables) feature, which is great for handling large data volumes, like action log scenarios, and has built-in data retention (TTL). Ideal for organizations needing to access significant amount of data for reporting, governance, and integration with automatic data retention control.
 
+> [!NOTE]
+> The ***Audit changes to its data*** property under the advanced properties of the 'Flow Event' table should be deselected until auditing is supported for Logs V2. Learn more about this and other advanced table settings [here](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel#advanced-options).
+
 ## Dataverse capacity demand calculations for logs V2  
 
 The following table shows sample Dataverse database storage consumption estimates per desktop flow run when using Logs V2. It outlines the approximate storage demand for different numbers of actions, assuming an average of 3-KB storage per action.
@@ -136,8 +139,8 @@ Learn more about [querying JSON columns in elastic tables](/powerapps/developer/
 
 ## Known limitations  
   
-- Cascade delete isn't yet supported. Therefore, it's recommended to avoid removing TTL.
 - Logs V2 are only available for desktop flow runs that have been launched from a cloud flow through the desktop flow connector action.
 - Changing action log version doesn't migrate previous desktop flow action logs to the new log storage type.
+- Cascade delete isn't yet supported. Therefore, it's recommended to avoid removing TTL.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
