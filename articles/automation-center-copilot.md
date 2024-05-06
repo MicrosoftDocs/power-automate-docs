@@ -1,5 +1,5 @@
 ---
-title: Use copilot to analyze automation activity (preview)
+title: Use copilot to analyze automation activity and get your product-related questions answered (preview) (preview)
 description: Use copilot to analyze flow runs, work queues, and ask about general product feature questions in natural language. 
 ms.topic: conceptual
 ms.date: 05/06/2024
@@ -14,4 +14,4 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use copilot to analyze desktop flow activity (preview)
+# Use copilot to analyze automation activity and get your product-related questions answered (preview)
