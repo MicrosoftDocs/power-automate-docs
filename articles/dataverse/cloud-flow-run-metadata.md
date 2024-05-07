@@ -133,3 +133,11 @@ If all of your environments have a [FlowRunTimeToLiveInSeconds value in the Orga
 ### When is this going to be generally available (GA)?
 
 It's uncertain when this capability will change from a public preview to being generally available (GA). The ingestion of flow run history has architectural limitations and performance limitations that require throttling, so the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is often going to have some gaps. Customers told us there's an expectation that the data will be complete when we make this capability GA. We want to get to that point before we change from public preview to GA.
+
+### Why isn't action-level data available?
+
+The [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is for the flow run and does not have inputs and outputs from triggers and actions. The data for triggers and actions takes up a lot more space in Dataverse and is only needed when the maker drills deeper, so it has been omitted for now. We are evaluating mechanisms to make that data available.
+
+### I changed the TTL FlowRunTimeToLiveInSeconds to be longer. Why am I not seeing data for that full period?
+
+The [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is written into Dataverse as flow runs occur. There is no backfill operation to populate historical flow run data.
