@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: mattp123
 ms.topic: conceptual
-ms.date: 03/11/2024
+ms.date: 05/10/2024
 ms.author: iomavrid
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
@@ -11,6 +11,7 @@ contributors:
 - jpapadimitriou
 - Yiannismavridis
 - PetrosFeleskouras
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -265,7 +266,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 ## Configure or disable desktop flow action logs per environment (preview)
 
-See [Desktop flow run action logs configuration (preview)](configure-desktop-flow-logs.md)
+See [Desktop flow action logs configuration (preview)](configure-desktop-flow-logs.md)
 
 ## Configure Power Automate for desktop notification settings
 
