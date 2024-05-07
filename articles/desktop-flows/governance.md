@@ -266,7 +266,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 ## Configure or disable desktop flow action logs per environment (preview)
 
-See [Desktop flow action logs configuration (preview)](configure-desktop-flow-logs.md)
+See [Desktop flow action logs configuration (preview)](configure-desktop-flow-logs.md).
 
 ## Configure Power Automate for desktop notification settings
 
