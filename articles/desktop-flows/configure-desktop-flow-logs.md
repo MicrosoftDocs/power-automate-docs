@@ -130,7 +130,7 @@ The following API call retrieves a specific flow session by its ID (9d51aa1f-315
     @p4={"Keys":["@referencingParentId"],"Values":[{"Type":"System.Guid","Value":"9d51aa1f-315e-43ab-894f-bc445dfb049b"}]}&@p5=50  
 ```
 
-Learn more about [querying JSON columns in elastic tables](/powerapps/developer/data-platform/query-json-columns-elastic-tables.md).
+Learn more about [querying JSON columns in elastic tables](/power-apps/developer/data-platform/query-json-columns-elastic-tables).
 
 ### Breaking down the call into individual pieces
 
