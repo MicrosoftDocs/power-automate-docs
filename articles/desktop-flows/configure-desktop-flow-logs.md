@@ -146,6 +146,6 @@ Learn more about [querying JSON columns in elastic tables](/power-apps/developer
   
 - Logs V2 are only available for desktop flow runs that are launched from a cloud flow through the desktop flow connector action.
 - Changing action log version doesn't migrate previous desktop flow action logs to the new log storage type.
-- Cascade delete isn't yet supported. Therefore, it's recommended to avoid removing TTL.
+- Cascade delete isn't currently supported. When you delete a flowsession record, the underlying logs aren't automatically deleted.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
