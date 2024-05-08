@@ -31,9 +31,10 @@ The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#r
 
 > [!NOTE]
 >
->- Some filters may not be available for some pivots because of the nature of the presented data.
->- When you navigate between tabs, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
->- Desktop flow-related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
+> - Some filters may not be available for some pivots because of the nature of the presented data.
+> - Data under the work queue tab and recommendations are premium features, hence requiring a Power Automate Premium license.
+> - When you navigate between tabs, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
+> - Desktop flow-related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
 
 ## Copilot
 

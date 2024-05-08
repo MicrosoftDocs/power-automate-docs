@@ -28,15 +28,16 @@ Key features of recommendations:
 - Enhance the overall health, compliance, and performance of automation across your environment.
 - Take corrective actions directly from the list of affected automation artifacts.
 
+## Prerequisites
+
+To see and use recommendations in automation center the following are required:
+
+- Premium Power Automate license
+- Environment maker role (or other roles that include access to recommendation data)
+
 ## Recommendation details
 
 Recommendations are displayed as cards in the carousel located at the top of the Automation Center's overview page.
-
-> [!NOTE]
->
-> - If you're a premium Power Automate user and it's your first time accessing the automation center, we will begin to generating recommendations for you. These should be ready for your review in about an hour or two.
-> - If you don't return to the automation center within a week (7 days), or if your premium license got unassigned by your IT team or if your trial expired, we will pause generation of these recommendations.
-> - The recommendations shown as part of the automation center are intra-environmental recommendations targets to makers, operators and member of the CoE. If you are looking for admin related, tenant-wide recommendations in Power Platform Admin Center, these are part of separate feature called **Power Platform Advisor**. [Learn more](/power-platform/admin/power-platform-advisor).
 
 ### Recommendation card
 
@@ -45,6 +46,10 @@ Recommendations are displayed as cards in the carousel located at the top of the
 ### Recommendation details panel
 
 :::image type="content" source="media/automation-center/recommendation-details-panel.png" alt-text="Screenshot of a recommendation details panel on automation center overview page." lightbox="media/automation-center/recommendation-details-panel.png":::
+
+## All recommendations panel
+
+:::image type="content" source="media/automation-center/recommendation-history-panel.png" alt-text="Screenshot of a recommendation details panel on automation center overview page." lightbox="media/automation-center/recommendation-history-panel.png":::
 
 ### Category
 
@@ -88,6 +93,13 @@ This **refresh frequency** provides information on how often the recommendation 
 | REAL TIME | The recommendation is an actual live-query to the underlying automation data. |  
 
 ## List of recommendations
+
+> [!NOTE]
+>
+> - Recommendations that haven't got a refresh frequency of 'REAL TIME"' hold data snapshots from when the recommendations was generated. As a result, if you revisit an older recommendation, the information displayed under artifact details may no longer be accurate or applicable.
+> - If you're a premium Power Automate user and it's your first time accessing the automation center, we will begin generating recommendations for you. These should be ready for your review in about an hour or two.
+> - If you don't return to the automation center within a week (7 days), or if your premium license got unassigned by your IT team or if your trial expired, we will pause generation of these recommendations.
+> - The recommendations shown as part of the automation center are intra-environmental recommendations targets to makers, operators and member of the CoE. If you are looking for admin related, tenant-wide recommendations in Power Platform Admin Center, these are part of separate feature called **Power Platform Advisor**. [Learn more](/power-platform/admin/power-platform-advisor).
 
 ### Work queue SLA violation
 
@@ -192,3 +204,7 @@ This **refresh frequency** provides information on how often the recommendation 
 | Refresh frequency | Daily |  
 | Category | Orchestration |  
 | Recommended action(s) | - Use work queues to group and process multiple work items in a run. </br>- Prioritize them based on their importance and expiration date, and improve processing throughput, overall efficiency, and resiliency. </br>- You also get robust monitoring capabilities (including the ability to reprioritize or reprocess work as needed). |  
+
+## Known limitations
+
+- Deletion of older recommendation is not yet supported through the user experience in automation center. If you wish to clean-up recommendations, consider using the [Dataverse bulk-delete](/power-platform/admin/delete-bulk-records) feature.
