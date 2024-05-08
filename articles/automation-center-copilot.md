@@ -22,14 +22,10 @@ Understanding automation activity and performance is key to achieving operationa
 
 :::image type="content" source="media/automation-center/copilot-overview.png" alt-text="Screenshot of a copilot experience as part of desktop flow activity page." lightbox="media/automation-center/copilot-overview.png":::
 
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-
-The latest advancements in AI provide us with unprecedented opportunities to explore new automation health monitoring use-cases that could include anything from simple data exploration to anomaly detection, smart recommendations, and even self-healing bots.
-
-With copilot now able to analyze desktop flow activity we're taking the first step in a new direction, allowing you to democratize access to insights by asking copilot desktop flow activity-specific questions using natural language.
-
 > [!IMPORTANT]
 >
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
 > - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
 > - Read the [responsible AI FAQs for copilot in automation center (preview)](faqs-copilot-automation-center.md) to learn more about this new copilot experience.
