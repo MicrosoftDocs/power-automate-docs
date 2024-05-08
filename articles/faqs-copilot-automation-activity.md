@@ -23,10 +23,6 @@ Copilot in desktop flow activity is capable of translating natural language quer
 
 The purpose of this system is to enable users to retrieve information about their automation activity data by asking questions in a natural language.
 
-## What is the system's intended use?
-
-The systems intended use is to help you ingest your data into process mining and help you surface actionable insights easily and quickly.
-
 ## How was copilot in desktop flow activity evaluated? What metrics are used to measure performance?
 
 The performance of copilot in desktop flow activity was evaluated using a comprehensive set of metrics. The copilot interface includes thumb up and thumb down gestures, allowing users to submit feedback on the AI outputs. This feedback is closely monitored to ensure that the copilot remains compliant, appropriate, and free of bias.

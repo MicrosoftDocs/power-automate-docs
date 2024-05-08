@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-## Known limitations
+# Known limitations
 
 Following lists the current limitations of the automation center and its underlying data structure. Some of these limitations will be resolved as we continue to develop this feature.
 

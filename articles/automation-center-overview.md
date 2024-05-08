@@ -1,6 +1,6 @@
 ---
 title: Automation center (preview)
-description: Monitor and manage automations with Automation center
+description: Monitor and manage automations with Automation center.
 ms.topic: conceptual
 ms.date: 05/06/2024
 ms.author: appapaio
@@ -19,7 +19,7 @@ search.audienceType:
 
 [This article is prerelease documentation and is subject to change.]
 
-The **Automation center** provides comprehensive monitoring and troubleshooting experiences for your automation processes across Power Automate, and the needs of the diverse set of personas involved in automation. Whether you're a maker, an operator, a Center of Excellence (CoE) team member or a business analyst, the Automation center provides you with a centralized platform to monitor and manage automation activity within your environment. With its user-friendly interface and dashboard, the Automation center enables you to gain a holistic view of all automation-related data, including test results, execution logs, and performance metrics.
+The **Automation center** provides comprehensive monitoring and troubleshooting experiences for your automation processes across Power Automate, catering to a variety of personas involved in automation. Whether you're a maker, an operator, a Center of Excellence (CoE) team member or a business analyst, the Automation center provides serves as a centralized hub to monitor and manage automation activity within your environment. With its user-friendly interface and dashboard, the Automation center enables you to gain a holistic view of all automation-related data, including recommendations, execution logs, performance metrics and an integrated Copilot.
 
 :::image type="content" source="media/automation-center/automation-center-overview.png" alt-text="Screenshot of a copilot experience as part of desktop flow activity page." lightbox="media/automation-center/automation-center-overview.png":::
 
@@ -27,7 +27,7 @@ The **Automation center** provides comprehensive monitoring and troubleshooting 
 
 ## Data and visualization strategy
 
-The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#runs-tab) pages is based on cloud and desktop flow run data that is stored in Dataverse. These pages are designed to provide you with a **top-level** view of your flow run activities, including first-level child cloud or desktop flow runs associated with a particular top-level flow. This approach enables you to monitor the entire automation from beginning to end, allowing you to determine whether the automation succeeded or failed, as well as providing data on the total and average duration of the runs, among many other metrics.
+The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#runs-tab) pages is based on cloud and desktop flow run data that is stored in Dataverse. These pages are designed to provide you with a **top-level** view of your flow run activities, including first-level child cloud or desktop flow runs associated with a particular top-level flow. This approach enables you to monitor the entire automation from start to end, allowing you to determine whether the overall automation succeeded or failed, and providing data on the total and average duration of the runs, among many other metrics.
 
 > [!NOTE]
 >
@@ -37,7 +37,7 @@ The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#r
 
 ## Copilot
 
-The Copilot is designed to assist with the analysis of automation activity, work queue performance, and to provide answers to common questions about Power Automate capabilities. For example, users can ask about the number of flows that ran yesterday, which queue items has been put on hold, or how to analyze activity with Copilot. In response, the copilot generates outputs that provide insights and answers to the questions asked. Learn more about the Copilot feature in automation center [here](automation-center-copilot.md).
+The Copilot is designed to assist with the analysis of automation activity, work queue performance, and to provide answers to common questions about Power Automate capabilities (generative answers). For example, users can ask about the number of flows that ran yesterday, which queue items have been put on hold, or how to analyze activity with Copilot. In response, the copilot generates outputs that provide insights and answers to the questions asked. Learn more about the Copilot feature in automation center [here](automation-center-copilot.md).
 
 > [!IMPORTANT]
 >
@@ -54,7 +54,7 @@ This tab provides an end-to-end automation health view within the environment an
 
 | Visual | Description |
 | --- | --- |
-| **Recommendations** | List of automation health, compliance and best-practice insights and actionable recommendations. |
+| **Recommendations** | List of automation health, compliance, and best-practice insights and actionable recommendations. |
 | **Top-level flows** | Number of top-level flows that had one or more run based on selected filters. Gives an overall automation health indication and helps identify which top-level runs are failing the most. |
 | **Average runs per day**| Average number of flow runs per day based on selected filters. |
 | **Average run duration**| Average flow run duration based on selected filters. |
@@ -62,7 +62,7 @@ This tab provides an end-to-end automation health view within the environment an
 | **Flow runs by status** | Overview of top-level runs status, can be used as to correlate with other factors such as triggering type, run modes, machines. |
 | **Flow runs error trends** | Tracks usage and reliability trend of top-level runs over time. |
 | **Flow runs by trigger type** | Shows top-level flow runs by trigger type. |
-| **Top flow runs** | Quickly identify critical and regularly failing automations, in order to improve health, resiliency and exception handling. |
+| **Top flow runs** | Quickly identify critical and regularly failing automations, in order to improve health, resiliency, and exception handling. |
 | **Top error codes** | Identifies most common errors during flow runs. |
 | **Top cloud flows with failed desktop flow runs**| Shows which cloud flows are causing the most desktop flow failures and may need to be modified to reduce desktop flow failures. |
 
@@ -101,6 +101,6 @@ This tab provides metrics to monitor the health status of work queue items, incl
 
 ## Learn more
 
-- [Get started with recommendations](automation-center-recommendations.md)
-- [Analyze automation activity with Copilot](automation-center-copilot.md)
+- [Learn more about automation center recommendations](automation-center-recommendations.md)
+- [Get started with automation center Copilot](automation-center-copilot.md)
 - [Known limitations](automation-center-known-limitations.md)
