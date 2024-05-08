@@ -23,7 +23,7 @@ Automation center recommendations provides targeted recommendations that help op
 Key features of recommendations:
 
 - Get proactive and reactive recommendation that are based on best practices and data you have access to.
-- Improve the overall health and throughput of automations across the environment.
+- Improve the overall automation health, compliance and performance across the environment.
 - Take contextual corrective actions, right where issue are.
 
 ## Recommendations
@@ -43,13 +43,13 @@ The **category** classifies the recommendations based on the specific area of au
 
 The **level** indicates the severity or urgency of the recommendations.
 
-| Level | Description |  
+| Type| Description |  
 |---|---|  
 | Information | Provides best-practice recommendations you may want to consider. |  
 | Warning | Indicates a potential issue that might lead to a problem later if not addressed. |  
 | Error | Indicates a problem that needs to be resolved. |  
 
-The **impact** assesses the degree of impact an issue has on the overall automation health, compliance, or performance. 
+The **impact** assesses the degree of impact an issue has on the overall automation health, compliance, or performance.
 
 | Impact | Description |  
 |---|---|  
@@ -72,7 +72,7 @@ This **refresh frequency** provides information on how often the recommendation 
 | Title | Work queue SLA violation |  
 | Card details | {0} work queue(s) are out of compliance with their service level agreement (SLA). |  
 | Recommendation details | One or more work queue items are queued but expired. This usually indicates an SLA violation. |  
-| Level | Error |  
+| Type| Error |  
 | Impact | High |  
 | Refresh frequency | Hourly |  
 | Category | Orchestration |  
@@ -85,7 +85,7 @@ This **refresh frequency** provides information on how often the recommendation 
 | Title | Work queue SLA at risk |  
 | Card details | {0} work queues are close to breaching their service level agreement (SLA) or have already been breached. |  
 | Recommendation details | Based on average handling time, volume, available machine capacity, and expiration dates, {0} work queues are at risk of not meeting their SLA targets. Investigate and adjust work queue capacity and prioritization. |  
-| Level | Warning |  
+| Type | Warning |  
 | Impact | Medium |  
 | Refresh frequency | Hourly |  
 | Category | Orchestration |  
@@ -98,7 +98,7 @@ This **refresh frequency** provides information on how often the recommendation 
 | Title | Power Automate Process capacity overage |  
 | Card details | Your Power Automate Process capacity is insufficient. Consider requesting {0} more capacity. |  
 | Recommendation details | Your current Power Automate Process capacity is not enough to handle your workload. You need {0} additional Power Automate Process capacity to meet your needs. |  
-| Level | Error |  
+| Type | Error |  
 | Impact | Medium |  
 | Refresh frequency | Live-query |  
 | Category | Licensing |  
@@ -111,7 +111,7 @@ This **refresh frequency** provides information on how often the recommendation 
 | Title | Power Automate Hosted process capacity overage |  
 | Card details | Your Power Automate Hosted Process capacity is insufficient. Consider requesting {0} more capacity. |  
 | Recommendation details | Your current Power Automate Hosted Process capacity is not enough to handle your workload. You need {0} additional Power Automate Hosted Process capacity to meet your needs. |  
-| Level | Error |  
+| Type | Error |  
 | Impact | Medium |  
 | Refresh frequency | Live-query |  
 | Category | Licensing |  
@@ -124,7 +124,7 @@ This **refresh frequency** provides information on how often the recommendation 
 | Title | Desktop flow suspended due to DLP policy violation |  
 | Card details | {0} desktop flow(s) are suspended due to DLP policy violations |  
 | Recommendation details | Investigate why suspended flows aren't in compliance with your organization's DLP (Data Loss Prevention) policy. |  
-| Level | Error |  
+| Type | Error |  
 | Impact | High |  
 | Refresh frequency | Hourly |  
 | Category | Governance |  
@@ -137,7 +137,7 @@ This **refresh frequency** provides information on how often the recommendation 
 | Title | Fix failing automations |  
 | Card details | One or more of your automation runs have failed. We'll show you why and help you fix the affected automations. |  
 | Recommendation details | There are one or more runs that need your attention. |  
-| Level | Error |  
+| Type | Error |  
 | Impact | High |  
 | Refresh frequency | Live-query |  
 | Category | Monitoring |  
@@ -150,7 +150,7 @@ This **refresh frequency** provides information on how often the recommendation 
 | Title | Unused or inactive machines |  
 | Card details | {0} machines didn't have any runs in the last 30 days |  
 | Recommendation details | Remove inactive machines from this environment. |  
-| Level | Information |  
+| Type | Information |  
 | Impact | Medium |  
 | Refresh frequency | Daily |  
 | Category | Monitoring |  
@@ -163,7 +163,7 @@ This **refresh frequency** provides information on how often the recommendation 
 | Title | Improve performance and resiliency |  
 | Card details | You currently have {0} flows that are running frequently throughout the day. These flows do not currently utilize work queues. Implementing work queues could potentially enhance your processing throughput, improve resiliency, and simplify troubleshooting. |  
 | Recommendation details | Consider using work queues for flows that run frequently throughout the day. This can improve your processing throughput, resilience, and your ability to troubleshoot issues. |  
-| Level | Information |  
+| Type | Information |  
 | Impact | Low |  
 | Refresh frequency | Daily |  
 | Category | Orchestration |  
