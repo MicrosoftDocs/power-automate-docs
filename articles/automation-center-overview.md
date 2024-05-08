@@ -103,7 +103,6 @@ This tab provides metrics to monitor the health status of work queue items, incl
 
 Following lists the current limitations of the automation center and its underlying data structure. Some of these limitations will be resolved as we continue to develop this feature.
 
-- Cloud flow run-specific data retention settings and known limitations can be reviewed [here](dataverse/cloud-flow-run-metadata.md).
 - Visualizations are based on top-level cloud flow runs only.
 - Only runs for solution-based cloud flows are available in the automation center.
 - No top-level desktop-flow runs support yet (for local attended or API-based scenarios)
@@ -113,6 +112,7 @@ Following lists the current limitations of the automation center and its underly
 - Users with broader access to run data may encounter increased latency during data load because of high cloud flow run volumes. Performances can be improved selecting more filters and reducing date range for examples.
 - Only 1st-level child cloud and desktop flow runs are shown under **Runs**.
 - In case of a visual showing "*Too many results"*, try to adjust your filter to limit the number of data that is being returned.
+- In case you see Dataverse or cloud flow run-specific notifications, please check the underlying [cloud flow run history documentation](dataverse/cloud-flow-run-metadata.md) to learn more.
 - Older cloud flow run history may be missing for the selected date range filter. This may be due to your current environment's TTL (time-to-live) configuration, which is set to retain cloud flow runs for a period of *n-days* only. [Learn more](dataverse/cloud-flow-run-metadata.md#cloud-flow-run-elements)
 
 ## Learn more
