@@ -49,7 +49,7 @@ Recommendations are displayed as cards in the carousel located at the top of the
 
 ## All recommendations panel
 
-:::image type="content" source="media/automation-center/recommendation-history-panel.png" alt-text="Screenshot of a recommendation details panel on automation center overview page." lightbox="media/automation-center/recommendation-history-panel.png":::
+:::image type="content" source="media/automation-center/recommendation-history-panel.png" alt-text="Screenshot of a recommendation history panel listing current and previous recommendations on automation center overview page." lightbox="media/automation-center/recommendation-history-panel.png":::
 
 ### Category
 
