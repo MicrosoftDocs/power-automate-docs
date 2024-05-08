@@ -14,7 +14,7 @@ search.audienceType:
   - maker
 ---
 
-# Automation center recommendations
+# Automation center recommendations (preview)
 
 Automation center recommendations provide targeted recommendations that help optimize your automation reliability, throughput, and overall health. Insights such as automations starting to fail, work queues being at risk of breaching their SLA targets, or unused machines or machine groups in the environment are just a few of the recommendations we provide.
 
