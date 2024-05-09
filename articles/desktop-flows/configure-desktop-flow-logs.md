@@ -48,11 +48,11 @@ The **Action logs version** allows you to choose V1, V2, or both.
 
 | Logs version | Explanation |  
 |---|---|  
-| **V1 - Stored in the AdditionalContext field of the FlowSession entity**| This option is the default. Logs are stored in the `AdditionalContext` field of the Flow Session table, which is a file attribute stored as a blob in Microsoft Dataverse. Logs V1 consumes [Dataverse file capacity](/power-platform/admin/capacity-storage). |  
+| **V1 - Stored in the AdditionalContext field of the FlowSession entity**| This option is the default. Logs are stored in the AdditionalContext field of the Flow Session table, which is a file attribute stored as a blob in Microsoft Dataverse. Logs V1 consumes [Dataverse file capacity](/power-platform/admin/capacity-storage). |  
 | **V2 - Stored in the FlowLogs entity (Preview)** | This new option allows you to store logs in the Flow Logs table, which is stored in [Elastic Tables](/power-apps/maker/data-platform/create-edit-elastic-tables). Logs V2 consumes [Dataverse database capacity](/power-platform/admin/capacity-storage).  |  
 | **Both (Preview)** | This setting allows logs to be stored in both the traditional AdditionalContext field of the Flow Session table and the Flow Logs table. This feature is in preview and consumes both Dataverse file and database capacity. This is intended for debugging or testing purposes as it consumes both [Dataverse database and file capacity](/power-platform/admin/capacity-storage). |  
 
-The **FlowLogs entity time to live in minutes (Preview)** value determines how long action logs should be retained in the Flow Logs elastic table. Dataverse automatically deletes Records that are older than the specified time-frame. Here are some example values for your convenience.
+The **FlowLogs entity time to live in minutes (Preview)** value determines how long action logs should be retained in the Flow Logs elastic table. Dataverse automatically deletes records that are older than the specified time-frame. Here are some example values for your convenience.
 
 | Days   | Minutes     |
 |--------|-------------|
@@ -68,7 +68,7 @@ The **FlowLogs entity time to live in minutes (Preview)** value determines how l
 | Forever | Less than or equal to 0 (zero) minutes |
 
 > [!NOTE]
-> Before enabling logs V2, make sure you have sufficient Dataverse database capacity that would support the data retention settings and aligns with your capacity planning, entitlement and adjust as necessary. See the [Sample Dataverse capacity demand calculations for logs V2](#dataverse-capacity-demand-calculations-for-logs-v2) section below for some sizing examples.
+> Before enabling logs V2, make sure you have sufficient Dataverse database capacity that would support the data retention settings and aligns with your capacity planning, entitlement and adjust as necessary. See the [Sample Dataverse capacity demand calculations for logs V2](#dataverse-capacity-demand-calculations-for-logs-v2) following section for some sizing examples.
 
 ## Key differences of desktop flow logs V1 and V2
 
@@ -82,7 +82,7 @@ The following table describes the differences between desktop flow logs V1 and V
 | Support for Azure Synapse Link for Dataverse integration | Not Available | Planned | In V1, the AdditionalContext attribute is a file type, stored as a blob in Dataverse, which isn't supported for synchronization to Azure Synapse. |
 | Support for Dataverse auditing | Not Available | Planned | In V1, the AdditionalContext attribute is a file type, stored as a blob in Dataverse, which isn't supported in Dataverse auditing. |
 | Support for Dataverse long-term retention | Not Available | Planned | In V1, the AdditionalContext attribute is a file type, stored as a blob in Dataverse, which isn't supported in Dataverse long-term retention. |
-| Based on Dataverse Role-Based Access Control (RBAC) | Available | Available | Both versions use Dataverse RBAC, inheriting action log permissions from their parent Flow Session record. |
+| Based on Dataverse Role-Based Access Control (RBAC) | Available | Available | Both versions use Dataverse RBAC, inheriting action log permissions from their parent flow session record. |
 
 Logs V2 offers significant enhancements over the previous version, V1. V2 uses the [elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables) feature, which is great for handling large data volumes, like action log scenarios, and has built-in data retention (TTL). Ideal for organizations needing to access significant amount of data for reporting, governance, and integration with automatic data retention control.
 
@@ -103,17 +103,17 @@ The following table shows sample Dataverse database storage consumption estimate
 | 160,000 | 3 | 480 |  
 
 > [!IMPORTANT]
-> The figures shown in the table above are just estimates and the actual storage consumption can vary significantly. The exact storage demand will depend on the specific details and complexity of each action log. Therefore, these numbers should be used as a rough guide for understanding the potential storage demand and planning your storage requirements accordingly.
+> The figures shown in the above table are just estimates and the actual storage consumption can vary significantly. The exact storage demand will depend on the specific details and complexity of each action log. Therefore, these numbers should be used as a rough guide for understanding the potential storage demand and planning your storage requirements accordingly.
 
 ## Querying logs V2 data
 
 Accessing desktop flow action logs data can be achieved by making an API call to the Dataverse backend, either using the traditional API call syntax or using the new [ExecuteCosmosSqlQuery](/power-apps/developer/data-platform/webapi/reference/executecosmossqlquery) method. This method allows you to execute a SQL query against Dataverse, enabling the retrieval and filtering of data.
 
-The data model of logs V2 is based on a parent-child relationship between the Flow Session and Flow Log tables. Every record inherits permissions from its parent Flow Session record. In order to query action logs of a specific desktop flow run, you can use the following query syntax.
+The data model of logs V2 is based on a parent-child relationship between the Flow Session and Flow Log tables. Every record inherits permissions from its parent flow session record. In order to query action logs of a specific desktop flow run, you can use the following query syntax.
 
 ### Traditional Dataverse API call syntax
 
-The following API call retrieves a specific Flow Session by its ID (9d51aa1f-315e-43ab-894f-bc445dfb049b) and then accesses the associated action logs using the `flowsession_flowlog_parentobjectid` relationship.
+The following API call retrieves a specific flow session by its ID (9d51aa1f-315e-43ab-894f-bc445dfb049b) and then accesses the associated action logs using the `flowsession_flowlog_parentobjectid` relationship.
 
 ```http
 [Organization URI]/api/data/v9.0/flowsessions(9d51aa1f-315e-43ab-894f-bc445dfb049b)/flowsession_flowlog_parentobjectid  
@@ -146,6 +146,6 @@ Learn more about [querying JSON columns in elastic tables](/power-apps/developer
   
 - Logs V2 are only available for desktop flow runs that are launched from a cloud flow through the desktop flow connector action.
 - Changing action log version doesn't migrate previous desktop flow action logs to the new log storage type.
-- Cascade delete isn't currently supported. When you delete a Flow Session record, the underlying logs aren't automatically deleted.
+- Cascade delete isn't currently supported. When you delete a flow session record, the underlying logs aren't automatically deleted.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
