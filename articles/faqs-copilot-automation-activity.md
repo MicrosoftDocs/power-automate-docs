@@ -1,13 +1,15 @@
 ---
 title: FAQ for copilot in desktop flow activity (preview)
 description: This FAQ discusses copilot used in desktop flow activity and the key considerations for making use of this technology responsibly.
-ms.date: 11/13/2023
+ms.date: 05/20/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
 author: rpapostolis
 ms.author: appapaio
 ms.reviewer: angieandrews
+contributors:
+  - DanaMartens
 ms.collection: bap-ai-copilot
 ---
 

@@ -1,11 +1,12 @@
 ---
-title: Use copilot to analyze automation activity and get your product-related questions answered (preview) (preview)
+title: Use copilot to analyze automation activity and get your product-related questions answered (preview)
 description: Use copilot to analyze flow runs, work queues, and ask about general product feature questions in natural language. 
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 05/20/2024
 ms.author: appapaio
-ms.reviewer: 
+ms.reviewer: dmartens
 contributors:
+  - DanaMartens
 author: rpapostolis
 ms.collection: bap-ai-copilot
 search.audienceType: 
@@ -16,7 +17,7 @@ search.audienceType:
 ---
 # Use copilot to analyze automation activity and ask product questions (preview)
 
-[This article is prerelease documentation and is subject to change.]
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Understanding automation activity and performance is key to achieving operational excellence and reliability goals, regardless of the size of the automation estate, team or role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
 

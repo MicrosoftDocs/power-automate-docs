@@ -2,10 +2,11 @@
 title: Automation center (preview)
 description: Monitor and manage automations with Automation center.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 05/20/2024
 ms.author: appapaio
-ms.reviewer: 
+ms.reviewer: dmartens
 contributors:
+  - DanaMartens
 author: rpapostolis
 ms.collection: conceptual
 search.audienceType: 
@@ -19,7 +20,7 @@ search.audienceType:
 
 [This article is prerelease documentation and is subject to change.]
 
-The **Automation center** provides comprehensive monitoring and troubleshooting experiences for your automation processes across Power Automate, catering to a variety of personas involved in automation. Whether you're a maker, an operator, a Center of Excellence (CoE) team member or a business analyst, the Automation center provides serves as a centralized hub to monitor and manage automation activity within your environment. With its user-friendly interface and dashboard, the Automation center enables you to gain a holistic view of all automation-related data, including recommendations, execution logs, performance metrics and an integrated Copilot.
+The automation center provides comprehensive monitoring and troubleshooting experiences for your automation processes across Power Automate, catering to a variety of personas involved in automation. Whether you're a maker, an operator, a Center of Excellence (CoE) team member or a business analyst, the automation center provides serves as a centralized hub to monitor and manage automation activity within your environment. With its user-friendly interface and dashboard, the automation center enables you to gain a holistic view of all automation-related data, including recommendations, execution logs, performance metrics and an integrated Copilot.
 
 :::image type="content" source="media/automation-center/automation-center-overview.png" alt-text="Screenshot of a copilot experience as part of desktop flow activity page." lightbox="media/automation-center/automation-center-overview.png":::
 

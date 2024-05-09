@@ -1,13 +1,15 @@
 ---
 title: FAQ for copilot in automation center (preview)
 description: This FAQ discusses copilot used in automation center (preview) and the key considerations for making use of this technology responsibly.
-ms.date: 05/06/2024
+ms.date: 05/20/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
 author: rpapostolis
 ms.author: appapaio
-ms.reviewer: 
+ms.reviewer: dmartens
+contributors:
+  - DanaMartens
 ms.collection: bap-ai-copilot
 ---
 

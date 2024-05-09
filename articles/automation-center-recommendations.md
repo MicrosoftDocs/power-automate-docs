@@ -1,11 +1,12 @@
 ---
 title: Recommendations within automation center (preview)
-description: Recommendations within automation center (preview)
+description: Recommendations within automation center.
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 05/20/2024
 ms.author: appapaio
-ms.reviewer: 
+ms.reviewer: dmartens
 contributors:
+  - DanaMartens
 author: rpapostolis
 ms.collection: conceptual
 search.audienceType: 
@@ -16,7 +17,11 @@ search.audienceType:
 
 # Automation center recommendations (preview)
 
-The Automation Center offers targeted recommendations aimed at enhancing the reliability, efficiency, and general health of your automation. We provide actionable insights including real-time recommendation of automations starting to fail, warnings of work queues potentially failing to meet their Service Level Agreement (SLA) objectives, and identifications of unused machines or machine groups in the environment, and many more.
+The automation center offers targeted recommendations aimed at enhancing the reliability, efficiency, and general health of your automation. We provide actionable insights including:
+- real-time recommendation of automations starting to fail
+- warnings of work queues potentially failing to meet their Service Level Agreement (SLA) objectives
+- identifications of unused machines or machine groups in the environment
+- many more
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
@@ -30,14 +35,14 @@ Key features of recommendations:
 
 ## Prerequisites
 
-To see and use recommendations in automation center the following are required:
+To see and use recommendations in automation center, the following are required:
 
 - Premium Power Automate license
 - Environment maker role (or other roles that include access to recommendation data)
 
 ## Recommendation details
 
-Recommendations are displayed as cards in the carousel located at the top of the Automation Center's overview page.
+Recommendations are displayed as cards in the carousel located at the top of the automation center's overview page.
 
 ### Recommendation card
 
@@ -99,20 +104,20 @@ This **refresh frequency** provides information on how often the recommendation 
 > - Recommendations that haven't got a refresh frequency of 'REAL TIME"' hold data snapshots from when the recommendations was generated. As a result, if you revisit an older recommendation, the information displayed under artifact details may no longer be accurate or applicable.
 > - If you're a premium Power Automate user and it's your first time accessing the automation center, we will begin generating recommendations for you. These should be ready for your review in about an hour or two.
 > - If you don't return to the automation center within a week (7 days), or if your premium license got unassigned by your IT team or if your trial expired, we will pause generation of these recommendations.
-> - The recommendations shown as part of the automation center are intra-environmental recommendations targets to makers, operators and member of the CoE. If you are looking for admin related, tenant-wide recommendations in Power Platform Admin Center, these are part of separate feature called **Power Platform Advisor**. [Learn more](/power-platform/admin/power-platform-advisor).
+> - The recommendations shown as part of the automation center are intra-environmental recommendations targets to makers, operators and member of the CoE. If you are looking for admin related, tenant-wide recommendations in Power Platform admin center, these are part of separate feature called **Power Platform Advisor**. [Learn more](/power-platform/admin/power-platform-advisor).
 
 ### Work queue SLA violation
 
 | Category or object | Details |  
 |---|---|  
 | Title | Work queue SLA violation |  
-| Card details | {*number of work queues*} work queue(s) are out of compliance with their service level agreement (SLA). |  
+| Card details | {*number of work queues*} work queues are out of compliance with their service level agreement (SLA). |  
 | Recommendation details | One or more work queue items are queued but expired. This usually indicates an SLA violation. |  
 | Type| Error |  
 | Impact | High |  
 | Refresh frequency | Hourly |  
 | Category | Orchestration |  
-| Recommended action(s) | - Identify the root cause. Was it due to a technical issue, a lack of resources, or some other factor? </br>- Once you've identified the cause, notify all relevant stakeholders of the miss and the steps being taken to address it. </br>- Determine which work is impacted by the SLA miss and prioritize it accordingly. </br>- If necessary, allocate extra resources to address the SLA miss (adding more machine capacity, licenses, or other solutions to improve performance). </br>- Monitor progress to ensure the SLA is being met and that work is completed within the agreed-upon time frame. |  
+| Recommended actions | - Identify the root cause. Was it due to a technical issue, a lack of resources, or some other factor? </br>- Once you identify the cause, notify all relevant stakeholders of the miss and the steps being taken to address it. </br>- Determine which work is impacted by the SLA miss and prioritize it accordingly. </br>- If necessary, allocate extra resources to address the SLA miss (adding more machine capacity, licenses, or other solutions to improve performance). </br>- Monitor progress to ensure the SLA is being met and that work is completed within the agreed-upon time frame. |  
 
 ### Work queue SLA at risk
 
@@ -125,7 +130,7 @@ This **refresh frequency** provides information on how often the recommendation 
 | Impact | Medium |  
 | Refresh frequency | Hourly |  
 | Category | Orchestration |  
-| Recommended action(s) | - Align work queue volumes with machine and license capacity and prioritize processing of at-risk work queues. </br>- Increase machine group capacity where needed, and closely monitor work queue item execution and expiration dates. </br> -  Consider moving to a hosted machine group for scalability and cost-effectiveness. Your machines scale automatically to match processing demand and you only pay for what you use. |  
+| Recommended actions | - Align work queue volumes with machine and license capacity and prioritize processing of at-risk work queues. </br>- Increase machine group capacity where needed, and closely monitor work queue item execution and expiration dates. </br> - Consider moving to a hosted machine group for scalability and cost-effectiveness. Your machines scale automatically to match processing demand and you only pay for what you use. |  
 
 ### Power Automate Process capacity overage
 
@@ -207,4 +212,4 @@ This **refresh frequency** provides information on how often the recommendation 
 
 ## Known limitations
 
-- Deletion of older recommendation is not yet supported through the user experience in automation center. If you wish to clean-up recommendations, consider using the [Dataverse bulk-delete](/power-platform/admin/delete-bulk-records) feature.
+- Deletion of older recommendation is not yet supported through the user experience in automation center. If you want to clean-up recommendations, consider using the [Dataverse bulk-delete](/power-platform/admin/delete-bulk-records) feature.
