@@ -40,7 +40,7 @@ Starting April 30th 2024, CMK support for Power Automate Cloud Flows is now enab
  
 If there are existing flows in the environment being enabled for CMK, a warning message along the lines of "Power Automate flows are still encrypted with the Microsoft Managed Key" will be displayed. In some experiences, a failed status may be displayed; please go to the Enterprise Policy experience to review the Power Automate Warning. Please note any new flows created in the environment post CMK application will be protected by CMK.   
  
-Support to migrate non-CMK enabled flows within CMK enabled environments is forthcoming in the future; at such point customers will be able to migrate MMK protected flows to CMK.   
+Support to migrate MMK protected flows within CMK enabled environments is forthcoming in the future; at such point customers will be able to migrate MMK protected flows to CMK.   
 
 ### See also
 
