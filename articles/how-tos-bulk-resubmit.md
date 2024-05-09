@@ -48,7 +48,7 @@ You can cancel flow runs either through the Run history page or by using a templ
 
 ### Cancel up to 20 flow runs
 
-To cancel flow runs that are in progress, follow the steps outlined previously in [Resubmit flow runs](#resubmit-flow-runs) with one exception: In step 6, select **Cancel flow run(s)**, as shown in the following screenshot.
+To cancel flow runs that are in progress, follow the steps outlined previously in [Resubmit flow runs](#resubmit-flow-runs) with one exception: In step 6, select **Cancel flow run(s)**, as shown in the following screenshot.
 
 :::image type="content" source="./media/cancel-resubmit-how-to/cancel-runs.png" alt-text="Screenshot that displays the Cancel flow run(s) button.":::
 
@@ -56,7 +56,7 @@ To cancel flow runs that are in progress, follow the steps outlined previously i
 
 This feature cancels a large number of flow runs.
 
-Canceling a large number of flow runs changes the run status to **Canceling**, typically within three (3) minutes. Then, the final status changes to **Canceled** after some time. Runs are effectively canceled after the three-minute window.
+Canceling a large number of flow runs changes the run status to **Canceling**, typically within three (3) minutes. Then, the final status changes to **Canceled** after some time. Runs are effectively canceled after the three-minute window.
 
 > [!NOTE]
 > If you have a smaller number of flow runs, we recommend you cancel runs in batches of 20. To learn how to do this, go to [Cancel up to 20 flow runs](#cancel-up-to-20-flow-runs) in this article.
@@ -64,24 +64,24 @@ Canceling a large number of flow runs changes the run status to **Canceling**,
 Depending on your license, you might be subject to temporary throttling if the flow has an excessive number of runs. To learn more, go to [Throughput limits](limits-and-config.md#throughput-limits).
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. On the left panel, select **My flows**.
+1. On the left panel, select **My flows**.
 1. On the right panel, select the cloud flow in which you would like to cancel flow runs.
-1. Select **All runs**.
-1. At the top of the page, select **Cancel all flow runs**.
+1. Select **All runs**.
+1. At the top of the page, select **Cancel all flow runs**.
 
     A message opens asking you to confirm the cancellation of all runs.
 
-1. (Optional) In the message, select **Turn my flow off to prevent additional runs**.
+1. (Optional) In the message, select **Turn my flow off to prevent additional runs**.
 
     If you don't do this optional step, go to step 7.
 
 1. Confirm you want to cancel all flow runs by selecting **Yes**.
 
-    The run **Status** column might take up to three (3) minutes to show **Canceling**. Within the three-minute window, the runs might show up as running or canceling, but might still continue to execute. Beyond the three-minute window, nothing runs.
+    The run **Status** column might take up to three (3) minutes to show **Canceling**. Within the three-minute window, the runs might show up as running or canceling, but might still continue to execute. Beyond the three-minute window, nothing runs.
 
     You can refresh the page to see the current status. In rare instances, if you don't see the **Canceling** status after the first three minutes, you can cancel all runs again. You can now make changes to the flow and start the flow again.
 
-1. To verify the cancelation, you can view runs with a **Canceling** status in **All Runs**. To view the canceled runs, you can select **Bulk-Canceled Runs** from the filters menu at the top of the page. Only runs that were canceled using this feature will show with this filter selected. To view other canceled runs, select **Canceled runs**.
+1. To verify the cancelation, you can view runs with a **Canceling** status in **All Runs**. To view the canceled runs, you can select **Bulk-Canceled Runs** from the filters menu at the top of the page. Only runs that were canceled using this feature will show with this filter selected. To view other canceled runs, select **Canceled runs**.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
 
