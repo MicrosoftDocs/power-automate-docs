@@ -2,17 +2,13 @@
 title: Support for customer-managed keys
 description: Learn about support for customer-managed keys in Power Automate.
 suite: flow
-documentationcenter: na
 author: v-aangie
 contributors:
+  - samathur
   - v-aangie
-editor: ''
-tags: ''
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 05/10/2024
+ms.date: 05/13/2024
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -35,13 +31,13 @@ To learn more about the customer-managed key, and the step-by-step instructions 
 
 With CMKs, your workflows and all associated at-rest data are stored and executed on a dedicated infrastructure, partitioned by the environment. This includes your workflow definitions, both cloud and desktop flows, and workflow execution history with detailed inputs and outputs.  
 
-### Power Automate CMK application warning messages 
+### Power Automate CMK application warning messages
 
-As of April 30, 2024, Customer Managed Key (CMK) support for Power Automate cloud flows is now enabled. Enablement is restricted to environments without flows present and processing for environments when flows are present in the environment results in warnings. This doesn't impact CMK application for other platform components.
+As of April 30, 2024, customer-managed key (CMK) support for Power Automate cloud flows is now enabled. Enablement is restricted to environments without flows present and processing for environments when flows are present in the environment results in warnings. This doesn't impact CMK application for other platform components.
 
-If there are existing flows in the environment being enabled for CMK, a warning message similar to "Power Automate flows are still encrypted with the Microsoft Managed Key" displays. In some experiences, a failed status might display. To review the Power Automate warning, go to the Enterprise Policy experience. New flows created in the environment post-CMK application are protected by CMK.
+If there are existing flows in the environment being enabled for CMK, a warning message similar to "Power Automate flows are still encrypted with the Microsoft Managed Key" displays. In some experiences, a failed status might display. To review the Power Automate warning, go to the [Enterprise Policy experience](/power-platform/admin/customer-managed-key#review-the-environments-encryption-status). New flows created in the environment post-CMK application are protected by CMK.
 
-Support to migrate MMK protected flows in CMK enabled environments is forthcoming. When this occurs, customers will be able to migrate MMK protected flows to CMK.
+Support to migrate Microsoft-managed keys (MMKs) protected flows in CMK enabled environments is forthcoming. When this occurs, customers will be able to migrate MMK protected flows to CMK.
 
 ### See also
 
