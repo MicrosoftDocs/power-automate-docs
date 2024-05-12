@@ -1,4 +1,3 @@
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/13593424/d8b91e19-c5d4-464d-86e7-9f521cddd769)---
 title: Manage cloud flow run history in Dataverse (preview)
 description: Learn how to apply the extensibility of Dataverse to track the results of your cloud flow executions at scale.
 author: chrisgarty
