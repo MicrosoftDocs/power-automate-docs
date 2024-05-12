@@ -138,3 +138,11 @@ This [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) d
 ### Does writing cloud flow run history into Dataverse use Power Platform Request quota?
 
 Writing cloud flow run history into Dataverse as [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data does not count towards the [Power Platform Request limits](/power-platform/admin/api-request-limits-allocations). APIs executed to read that [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data do count towards [Power Platform Request limits](/power-platform/admin/api-request-limits-allocations).
+
+### How does this data compare to the data available in Application Insights?
+
+Admins can [set up Application Insights](/power-platform/admin/app-insights-cloud-flow) to provide monitoring data from Power Automate flow executions. 
+The Application Insights data is:
+- More complete because of data pipeline issues obtaining the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data.
+- Deeper because it has information about triggers and actions executed.
+- Able to be correlated with [Power Apps and Dataverse Application Insights data](/power-platform/admin/analyze-telemetry) through correlation identifiers.
