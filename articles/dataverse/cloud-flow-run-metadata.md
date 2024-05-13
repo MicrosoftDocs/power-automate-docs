@@ -1,3 +1,4 @@
+---
 title: Manage cloud flow run history in Dataverse (preview)
 description: Learn how to apply the extensibility of Dataverse to track the results of your cloud flow executions at scale.
 author: chrisgarty
@@ -7,11 +8,11 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 04/15/2024
+ms.date: 05/13/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
-search.audienceType: 
+search.audienceType:
   - flowmaker
   - enduser
 ---
@@ -69,7 +70,7 @@ If the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/
 
 Setting the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) to zero stops all ingestion of new [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records.
 
-We're adding an experience in the [PPAC environments experience](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center) to facilitate setting the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds).
+We're adding an experience in the [Power Platform admin center environments experience](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center) to facilitate setting the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds).
 
 > [!NOTE]
 > This feature is being rolled out and might not be available in your region yet.
@@ -91,9 +92,9 @@ Time to live (TTL) values for [Organization.FlowRunTimeToLiveInSeconds](/power-a
 |28 days |2,419,200 seconds|
 |60 days |5,184,000 seconds|
 
-## Using FlowEvent data to get visibility into FlowRun data completeness
+## Use FlowEvent data to get visibility into FlowRun data completeness
 
-[FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records might be incomplete for many reasons. The [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) table is used to provide signals that runs were skipped and the data set is incomplete. The lack of signals does not mean that the data set is complete.
+[FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records might be incomplete for many reasons. The [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) table is used to provide signals that runs were skipped and the data set is incomplete. The lack of signals doesn't mean that the data set is complete.
 
 You can view the [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) records in the [PowerApps table browser](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel#view-tables) or using the [Dataverse Web API](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/13593424/25bd0eda-0dde-4378-9793-7090fbca5916). All of the relevant records have a [FlowEvent.EventType](/power-apps/developer/data-platform/reference/entities/flowevent#BKMK_eventtype) value of "FlowRunIngestion" and then the [FlowEvent.EventCode](/power-apps/developer/data-platform/reference/entities/flowevent#BKMK_eventcode) value explains the event.
 
@@ -119,7 +120,7 @@ The following table contains a list of [FlowEvent.EventCode](/power-apps/develop
 - [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records might be throttled and skipped if a user has many flows with high run rates. When throttling occurs, an entry is created in the [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) table to signal that runs were skipped and the data set is incomplete.
 
 > [!NOTE]
-> The underlying data stream used for powering the cloud flow run record insertions isn't transactional, and hence isn't 100 percent lossless. Small data losses on this data stream might happen due to temporary, non-repeating service issues. Those missing records will not be represented by FlowEvent  Flow execution history within flow details in the Power Automate portal is transactional, and therefore provides a lossless view of runs.
+> The underlying data stream used for powering the cloud flow run record insertions isn't transactional, and hence isn't 100 percent lossless. Small data losses on this data stream might happen due to temporary, non-repeating service issues. Those missing records aren't represented by FlowEvent. Flow execution history within flow details in the Power Automate portal is transactional, and therefore provides a lossless view of runs.
 
 ## FAQ
 
@@ -133,11 +134,11 @@ If all of your environments have a [FlowRunTimeToLiveInSeconds value in the Orga
 
 It's uncertain when this capability will change from a public preview to being generally available (GA). The ingestion of flow run history has architectural limitations and performance limitations that require throttling, so the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is often going to have some gaps. Customers told us there's an expectation that the data will be complete when we make this capability GA. We want to get to that point before we change from public preview to GA.
 
-This [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is used by the Automation Center in the Power Automate maker portal. The data set will often be incomplete, but there are still useful insights that can be obtained, so we are making the data available early in a preview capacity.  
+This [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is used by the Automation Center in the Power Automate maker portal. The data set is often incomplete, but there are still useful insights that can be obtained. Hence, we're making the data available early in a preview capacity.  
 
 ### Does writing cloud flow run history into Dataverse use Power Platform Request quota?
 
-Writing cloud flow run history into Dataverse as [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data does not count towards the [Power Platform Request limits](/power-platform/admin/api-request-limits-allocations). APIs executed to read that [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data do count towards [Power Platform Request limits](/power-platform/admin/api-request-limits-allocations).
+Writing cloud flow run history into Dataverse as [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data doesn't count towards the [Power Platform Request limits](/power-platform/admin/api-request-limits-allocations). APIs executed to read that [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data do count towards [Power Platform Request limits](/power-platform/admin/api-request-limits-allocations).
 
 ### How does this data compare to the data available in Application Insights?
 
