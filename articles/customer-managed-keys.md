@@ -27,7 +27,7 @@ All customer data stored in Power Platform is encrypted at rest using Microsoft-
 
 Applying an encryption key is a gesture performed by Power Platform admins and is invisible to users. Users can create, save, and execute Power Automate workflows exactly the same way as if the data was encrypted by Microsoft-managed keys.
 
-To learn more about the customer-managed key, and the step-by-step instructions to enable customer-managed keys, go to [Manage your customer-managed encryption key (preview)](/power-platform/admin/customer-managed-key). This enables you to leverage the single enterprise policy created on the environment to secure Power Automate workflows.
+To learn more about the customer-managed key, and the step-by-step instructions to enable customer-managed keys, go to [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key). This enables you to leverage the single enterprise policy created on the environment to secure Power Automate workflows.
 
 With CMKs, your workflows and all associated at-rest data are stored and executed on a dedicated infrastructure, partitioned by the environment. This includes your workflow definitions, both cloud and desktop flows, and workflow execution history with detailed inputs and outputs.  
 
