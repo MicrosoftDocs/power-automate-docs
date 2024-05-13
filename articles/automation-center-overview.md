@@ -39,14 +39,14 @@ The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#r
 
 ## Copilot
 
-The Copilot is designed to assist with the analysis of automation activity, work queue performance, and to provide answers to common questions about Power Automate capabilities (generative answers). For example, users can ask about the number of flows that ran yesterday, which queue items have been put on hold, or how to analyze activity with Copilot. In response, the copilot generates outputs that provide insights and answers to the questions asked. Learn more about the Copilot feature in automation center [here](automation-center-copilot.md).
+The Copilot is designed to assist with the analysis of automation activity, work queue performance, and to provide answers to common questions about Power Automate capabilities (generative answers). For example, users can ask about the number of flows that ran yesterday, which queue items have been put on hold, or how to analyze activity with Copilot. In response, Copilot generates outputs that provide insights and answers to the questions asked. Learn more about the Copilot feature in automation center [here](automation-center-copilot.md).
 
 > [!IMPORTANT]
 >
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
 > - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
 > - During initial preview, you must have an environment in the United States region to use this feature. If you don’t have access to an environment that's based in the United States, you can ask your administrator to [create a new environment in Power Platform admin center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
-> - Read the [responsible AI FAQs for copilot in automation center (preview)](faqs-copilot-automation-center.md) to learn more about this new copilot experience.
+> - Read the [responsible AI FAQs for Copilot in automation center (preview)](faqs-copilot-automation-center.md) to learn more about this new copilot experience.
 
 ## Overview tab
 

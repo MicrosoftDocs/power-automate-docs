@@ -17,7 +17,10 @@ search.audienceType:
 
 # Automation center recommendations (preview)
 
+[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+
 The automation center offers targeted recommendations aimed at enhancing the reliability, efficiency, and general health of your automation. We provide actionable insights including:
+
 - real-time recommendation of automations starting to fail
 - warnings of work queues potentially failing to meet their Service Level Agreement (SLA) objectives
 - identifications of unused machines or machine groups in the environment

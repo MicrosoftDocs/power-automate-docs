@@ -1,6 +1,6 @@
 ---
-title: Use copilot to analyze automation activity and get your product-related questions answered (preview)
-description: Use copilot to analyze flow runs, work queues, and ask about general product feature questions in natural language. 
+title: Use Copilot to analyze automation activity and get your product-related questions answered (preview)
+description: Use Copilot to analyze flow runs, work queues, and ask about general product feature questions in natural language. 
 ms.topic: conceptual
 ms.date: 05/20/2024
 ms.author: appapaio
@@ -15,13 +15,13 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use copilot to analyze automation activity and ask product questions (preview)
+# Use Copilot to analyze automation activity and ask product questions (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Understanding automation activity and performance is key to achieving operational excellence and reliability goals, regardless of the size of the automation estate, team or role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
 
-:::image type="content" source="media/automation-center/copilot-overview.png" alt-text="Screenshot of a copilot experience as part of desktop flow activity page." lightbox="media/automation-center/copilot-overview.png":::
+:::image type="content" source="media/automation-center/copilot-overview.png" alt-text="Screenshot of a Copilot experience as part of desktop flow activity page." lightbox="media/automation-center/copilot-overview.png":::
 
 > [!IMPORTANT]
 >
@@ -29,8 +29,8 @@ Understanding automation activity and performance is key to achieving operationa
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
 > - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
-> - Read the [responsible AI FAQs for copilot in automation center (preview)](faqs-copilot-automation-center.md) to learn more about this new copilot experience.
-> - More FAQs: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md),[FAQ for copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
+> - Read the [responsible AI FAQs for Copilot in automation center (preview)](faqs-copilot-automation-center.md) to learn more about this new Copilot experience.
+> - More FAQs: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md),[FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 ## Prerequisites
 
@@ -49,19 +49,19 @@ Copilot in automation center is able to answer questions about the following fou
 | 3 | Work queue data | Work queue items statuses, SLA attainment, processor counts etc. |
 | 4 | Generative answers | General Power Automate feature questions such as *how to analyze activity with Copilot* |
 
-The first three skills in the above, will translate natural language queries (questions) entered by users into Microsoft Dataverse FetchXML query syntax. This allows users to easily retrieve information about their automation data by asking questions in a natural language. Additionally, copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and information to the user.
+The first three skills in the above, will translate natural language queries (questions) entered by users into Microsoft Dataverse FetchXML query syntax. This allows users to easily retrieve information about their automation data by asking questions in a natural language. Additionally, Copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and information to the user.
 
 The fourth skill uses the Azure OpenAI service to search for answers in Power Automate for desktop's public documentation based on user prompts.
 
 ### Copilot skill selector
 
-When the Copilot window opens (per session) the first time, the "cloud flow" skill is preselected. You can modify the skill by choosing the dropdown next to the phrase "Supporting questions about" and selecting your preferred skill. Please note that during the initial preview phase, the conversation history will be reset each time you change the skill.
+When Copilot opens (per session) the first time, the "cloud flow" skill is preselected. You can modify the skill by choosing the dropdown next to the phrase "Supporting questions about" and selecting your preferred skill. Please note that during the initial preview phase, the conversation history will be reset each time you change the skill.
 
-:::image type="content" source="media/automation-center/copilot-skill-chooser.png" alt-text="Screenshot of a copilot experience that shows a skill chooser experience where users can select from." lightbox="media/automation-center/copilot-skill-chooser.png":::
+:::image type="content" source="media/automation-center/copilot-skill-chooser.png" alt-text="Screenshot of an experience in Copilot where users can select from a list of skills." lightbox="media/automation-center/copilot-skill-chooser.png":::
 
 ### High-level process
 
-1. Once the user inputs a valid prompt, copilot generates a valid [FetchXML](#what-are-fetchxml-queries) query based on the input.
+1. Once the user inputs a valid prompt, Copilot generates a valid [FetchXML](#what-are-fetchxml-queries) query based on the input.
 2. If the generated FetchXML is valid, the query is then executed against the Dataverse backend under the current user's security context to retrieve matching data. This ensures that users only see data that they're already authorized to access.
 3. Copilot then determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and data to the user.
 
@@ -77,7 +77,7 @@ Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-
 
 ## Prompt examples
 
-Examples of prompts that can be used as starter prompt for your own use-cases are explained in this section. Some of these prompts might not be applicable or return incorrect results, since the accuracy might be influenced by model understanding or the actual prompt and the data available to you based on your permissions. We recommend that you review and validate the returned results and FetchXML query. More information: [Validate FetchXML query results generated by copilot](#validate-fetchxml-query-results-generated-by-copilot).
+Examples of prompts that can be used as starter prompt for your own use-cases are explained in this section. Some of these prompts might not be applicable or return incorrect results, since the accuracy might be influenced by model understanding or the actual prompt and the data available to you based on your permissions. We recommend that you review and validate the returned results and FetchXML query. More information: [Validate FetchXML query results generated by Copilot](#validate-fetchxml-query-results-generated-by-copilot).
 
 ### Runs
 
@@ -109,7 +109,7 @@ Examples of prompts that can be used as starter prompt for your own use-cases ar
 - Who were the top 10 users running flows during last month?
 - When and by whom were desktop flows modified last week?
 
-### Generative answers (Documentation)
+### Generative answers (documentation)
 
 - How can I add a condition in Power Automate Desktop?
 - Can Cloud Flows handle approvals and decision-making processes?
@@ -117,12 +117,12 @@ Examples of prompts that can be used as starter prompt for your own use-cases ar
 
 ### Multi-turn prompts
 
-In the context of AI, *multi-turn* prompts allow you to have an ongoing conversation with the copilot, where it remembers the context of the previous messages in the conversation. It's not just answering one-off questions; it's engaging in a dialogue with you, where each response is based on what's been said before.
+In the context of AI, *multi-turn* prompts allow you to have an ongoing conversation with Copilot, where it remembers the context of the previous messages in the conversation. It's not just answering one-off questions; it's engaging in a dialogue with you, where each response is based on what's been said before.
 
 > [!NOTE]
 >
 > - Generative answers (documentation skill) does not support multi-turn conversations yet.
-> - When engaging in a multi-turn conversations, note that copilot keeps track of the five most recent questions only. This means that copilot starts clearing the prompts that were entered first and only keeps the latest five. To improve response quality, we suggest limiting your follow-up questions to four and then restart the chat. More information: [Clearing previous prompt context to start over](#clearing-previous-prompt-context-to-start-over).
+> - When engaging in a multi-turn conversations, note that Copilot keeps track of the five most recent questions only. This means that Copilot starts clearing the prompts that were entered first and only keeps the latest five. To improve response quality, we suggest limiting your follow-up questions to four and then restart the chat. More information: [Clearing previous prompt context to start over](#clearing-previous-prompt-context-to-start-over).
 
 #### Example
 
@@ -137,19 +137,19 @@ In the context of AI, *multi-turn* prompts allow you to have an ongoing conversa
 |:::image type="icon" source="media/automation-center/4.png":::| **User**: of those that succeeded what were their average run duration?|
 ||**Copilot**: *Here's the average run duration of the flows that succeeded.*|
 
-:::image type="content" border="false" source="media/automation-center/copilot-multi-turn-chat.png" alt-text="Screenshot of a copilot multi-turn chat with different output data and visualizations." lightbox="media/automation-center/copilot-multi-turn-chat.png":::
+:::image type="content" border="false" source="media/automation-center/copilot-multi-turn-chat.png" alt-text="Screenshot of a multi-turn chat in Copilot with different output data and visualizations." lightbox="media/automation-center/copilot-multi-turn-chat.png":::
 
 ### Influencing the output format
 
-You can influence copilot's output format by asking for explicit output types like *"show me failed vs. succeeded flow run distribution as a bar chart."* This likely produces the following outcome:
+You can influence Copilot's output format by asking for explicit output types like *"show me failed vs. succeeded flow run distribution as a bar chart."* This likely produces the following outcome:
 
-:::image type="content" source="media/automation-center/copilot-influence-output-format.png" alt-text="Screenshot of a copilot reply that responded to a user prompt with a pie chart." lightbox="media/automation-center/copilot-influence-output-format.png":::
+:::image type="content" source="media/automation-center/copilot-influence-output-format.png" alt-text="Screenshot of a reply that Copilot responded to a user prompt with a pie chart." lightbox="media/automation-center/copilot-influence-output-format.png":::
 
-### Clearing previous prompt context to start over
+### Clear previous prompt context to start over
 
-If you wish to reset the conversation with copilot you can select the three dots `...` next to the copilot name, and then select **New chat**.
+If you wish to reset the conversation with Copilot you can select the three dots `...` next to the copilot name, and then select **New chat**.
 
-:::image type="content" source="media/automation-center/copilot-new-chat.png" alt-text="Screenshot of a copilot New chat option to reset a conversation." lightbox="media/automation-center/copilot-new-chat.png":::
+:::image type="content" source="media/automation-center/copilot-new-chat.png" alt-text="Screenshot of the New chat option in Copilot to reset a conversation." lightbox="media/automation-center/copilot-new-chat.png":::
 
 ### Edit and rerun FetchXML queries returned by Copilot
 
@@ -172,7 +172,7 @@ You can fine-tune the queries returned by Copilot through in-place edits in the 
 </fetch>
 ```
 
-:::image type="content" source="media/automation-center/copilot-rerun-before.png" alt-text="Screenshot of a copilot with generated fetchXML query code before applying changes." lightbox="media/automation-center/copilot-rerun-before.png":::
+:::image type="content" source="media/automation-center/copilot-rerun-before.png" alt-text="Screenshot of Copilot with generated fetchXML query code before applying changes." lightbox="media/automation-center/copilot-rerun-before.png":::
 
 #### Changed query results
 
@@ -189,15 +189,15 @@ You can fine-tune the queries returned by Copilot through in-place edits in the 
 </fetch>
 ```
 
-:::image type="content" source="media/automation-center/copilot-rerun-after.png" alt-text="Screenshot of a copilot with generated fetchXML query code after changes have been applied." lightbox="media/automation-center/copilot-rerun-after.png":::
+:::image type="content" source="media/automation-center/copilot-rerun-after.png" alt-text="Screenshot of Copilot with generated fetchXML query code after changes have been applied." lightbox="media/automation-center/copilot-rerun-after.png":::
 
-## Validate FetchXML query results generated by copilot
+## Validate FetchXML query results generated by Copilot
   
 The following steps guide you through the process to validate (and potentially reuse) [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) queries in Power Automate cloud flows.
 
 ### Step 1: Make a copy of the FetchXML query
 
-After submitting your query to the copilot, you get a reply that includes a link labeled **Show code**. Select this link and then select the copy icon located in the upper right corner of the `FetchXML` box to copy the code.
+After submitting your query to Copilot, you get a reply that includes a link labeled **Show code**. Select this link and then select the copy icon located in the upper right corner of the `FetchXML` box to copy the code.
 
 ### Step 2: Create cloud flow and test FetchXML query
   
@@ -208,14 +208,14 @@ After submitting your query to the copilot, you get a reply that includes a link
 5. On the search bar that appears, enter **Dataverse**, and then select the **Dataverse** connector from the results.
 6. Various actions are displayed. Scroll through until you find and select the **List rows** action.
 7. Within the **List rows** action, select the **Show advanced options** link.
-8. A FetchXML query field appears. This is where you input the copied FetchXML query that copilot previously generated.
+8. A FetchXML query field appears. This is where you input the copied FetchXML query that Copilot previously generated.
 9. After pasting in your FetchXML, select **Save**.  
 10. Test your flow by selecting **Test**.
 11. Follow the prompts on your screen to start your flow manually to review its results.  
   
-### Step 3: Understanding the results  
+### Step 3: Understand the results  
 
-Let's assume you asked the copilot '*how many failed vs succeeded flows did we have last month?'* This produces a [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) query similar to the following:
+Let's assume you asked Copilot '*how many failed vs succeeded flows did we have last month?'* This produces a [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) query similar to the following:
 
 ```xml
 <fetch version="1.0" mapping="logical" aggregate="true" count="3" page="1">
@@ -242,30 +242,30 @@ Each of the returned records contains fields such as:
   
 If you want to know how many times a specific flow ran, look at the `flowsession_count` column of the record where `workflow_name` is *your flow name*.
 
-## Understanding copilot replies on problematic prompts
+## Understand Copilot replies on problematic prompts
 
-This table shows default responses that are returned when the copilot is unable to understand your question, intent, or generate a valid answer.
+This table shows default responses that are returned when Copilot is unable to understand your question, intent, or generate a valid answer.
 
 | **Copilot reply** | **Details** |
 |-------------------------|-------------------------|
 | *Sorry, something went wrong. Please try again.* |  Indicates that an unexpected error occurred. Rephrase your question and try again. |
-| *Sorry, I couldn’t understand your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#use-copilot-to-analyze-automation-activity-and-ask-product-questions-preview).* |  Indicates that your question couldn't be translated into a valid FetchXML query. Rephrase your question and try again. |
+| *Sorry, I couldn’t understand your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask Copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#use-copilot-to-analyze-automation-activity-and-ask-product-questions-preview).* |  Indicates that your question couldn't be translated into a valid FetchXML query. Rephrase your question and try again. |
 | *Sorry, Copilot is at capacity and temporarily unavailable — please try again in a little while.* |  Indicates there are resource constraints on the backend. Retry your question after a short time. |
 | *Sorry, your message contains potentially harmful content. Please ensure your input is appropriate and try again.* |  Indicates that your question might include potentially harmful content and has been blocked by the backend service. Remove any potentially harmful content from your question and try again. |
-| *Sorry, I was not able to generate a valid answer based on your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#use-copilot-to-analyze-automation-activity-and-ask-product-questions-preview).* |  Indicates that the generated FetchXML is invalid or that the query failed when copilot tried to execute it. Rephrase your question and try again. |
-| *Sorry, your search includes too many results. Please refine your query and try again. For examples on how to limit search results returned by the copilot, visit our [documentation page](#use-copilot-to-analyze-automation-activity-and-ask-product-questions-preview).* |  Indicates that the filter(s) applied to your query exceed current aggregation [limits in FetchXML](/power-apps/developer/data-platform/use-fetchxml-aggregation#limitations). Add more appropriate filters such as asking for *yesterday's* or *last month's* data to your query to ensure that it returns data within those limits. |
+| *Sorry, I was not able to generate a valid answer based on your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask Copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#use-copilot-to-analyze-automation-activity-and-ask-product-questions-preview).* |  Indicates that the generated FetchXML is invalid or that the query failed when Copilot tried to execute it. Rephrase your question and try again. |
+| *Sorry, your search includes too many results. Please refine your query and try again. For examples on how to limit search results returned by Copilot, visit our [documentation page](#use-copilot-to-analyze-automation-activity-and-ask-product-questions-preview).* |  Indicates that the filter(s) applied to your query exceed current aggregation [limits in FetchXML](/power-apps/developer/data-platform/use-fetchxml-aggregation#limitations). Add more appropriate filters such as asking for *yesterday's* or *last month's* data to your query to ensure that it returns data within those limits. |
 
 ## Known issues and limitations
 
-The following list contains known limitations of the copilot in desktop flow activity.
+The following list contains known limitations of Copilot in desktop flow activity.
 
 - Copilot is a new technology that is still being developed. It's optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
 - Copilot is currently only available in Dataverse environments based in the United States.
 - Copilot might return wrong or incomplete data and FetchXML queries.
 - Copilot is initially only capable to answer questions about desktop flow activity such as errors, machines, and past and current runs.
-- In multi-turn conversations, copilot keeps context of the last five question only. If you encounter wrong or incomplete results, consider resetting the conversation. More information: [Clearing previous prompt context to start over](#clearing-previous-prompt-context-to-start-over).
+- In multi-turn conversations, Copilot keeps context of the last five question only. If you encounter wrong or incomplete results, consider resetting the conversation. More information: [Clearing previous prompt context to start over](#clearing-previous-prompt-context-to-start-over).
 - Multi-turn conversations are not supported for generative answers (Documentation skill).
-- For queries that return large result-sets, copilot might not be able return or render these.
+- For queries that return large result-sets, Copilot might not be able return or render these.
 
 ## See also
 
