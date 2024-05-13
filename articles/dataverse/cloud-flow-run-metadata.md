@@ -136,7 +136,7 @@ It's uncertain when this capability will change from a public preview to being g
 
 This [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is used by the Automation Center in the Power Automate maker portal. The data set is often incomplete, but there are still useful insights that can be obtained. Hence, we're making the data available early in a preview capacity.  
 
-### Does writing cloud flow run history into Dataverse use Power Platform Request quota?
+### Does writing cloud flow run history into Dataverse use Power Platform request quota?
 
 Writing cloud flow run history into Dataverse as [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data doesn't count towards the [Power Platform Request limits](/power-platform/admin/api-request-limits-allocations). APIs executed to read that [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data do count towards [Power Platform Request limits](/power-platform/admin/api-request-limits-allocations).
 
