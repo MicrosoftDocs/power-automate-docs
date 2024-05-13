@@ -4,10 +4,11 @@ description: Learn about the Power Automate v2 schema.
 author: nvigne
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/26/2024
+ms.date: 05/06/2024
 ms.author: nvigne
 ms.reviewer: matp
 contributors:
+  - DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -15,7 +16,7 @@ search.audienceType:
 # Power Automate v2 schema
 
 > [!NOTE]
-> The Power Automate and Dataverse feature described in this article is applicable to users who sign in [with work, or school accounts, or organization premium accounts](/power-automate/desktop-flows/requirements#sign-in-account-comparison). 
+> The Power Automate and Dataverse feature described in this article is applicable to users who sign in [with work, or school accounts, or organization premium accounts](/power-automate/desktop-flows/requirements#sign-in-account-comparison).
 
 Power Automate stores desktop flows in Microsoft Dataverse, which lets you securely store and manage data used by business applications.
 
@@ -37,11 +38,29 @@ Convert desktop flows stored in the v1 schema to the v2 schema by end of 2024, a
 
 ## Schema v2 enabled by default
 
-Starting January 2024, v2 schema will be automatically enabled for all environments. Although not recommended, the option to opt-out of the autoenablement is available in the Power Platform admin center. By turning the opt-out on, we'll delay the enablement of v2 schema on this particular environment.
+Starting January 2024, v2 schema is automatically enabled for all environments. Although not recommended, the option to opt-out of the autoenablement is available in the Power Platform admin center. Turning on the opt-out delays the enablement of v2 schema on this particular environment.
 
 :::image type="content" source="media/schema/schema-v2-off.png" alt-text="The option in the Power Platform Admin Center to opt-out of schema v2 enabled by default.":::
 
-Later in 2024, v2 schema will be turned on for all environments without the option to disable the feature. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
+Later in 2024, v2 schema will be turned on for all environments without the option to disable the feature and the option won't be visible in Power Platform admin center. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
+
+As of April 25th, 2024, the v2 schema is enabled by default in the following geographies:
+
+- Canada
+- South Africa
+- Switzerland
+- Norway
+- Korea
+- South America
+- Australia
+- Singapore
+- United-Kingdom
+- India
+- France
+- Germany
+- UAE
+- Asia
+- Japan
 
 ## Manage desktop flows in environments with the v2 schema enabled
 
@@ -53,9 +72,16 @@ If a desktop flow belongs to a solution in a v2-enabled environment, follow [the
 
 Power Automate for desktop version 2.29 or later allows organizations that moved ahead with the v2 schema to roll back until the v1 schema becomes deprecated.
 
-You can roll back a desktop flow converted to the v2 schema by resaving the desktop flow to an environment where the PPAC administrator has the feature disabled.
+You can roll back a desktop flow converted to the v2 schema by resaving the desktop flow to an environment where the Power Platform administrator has the feature disabled.
 
 For most scenarios, there's no need to downgrade your version of Power Automate for desktop. However, desktop flows that use v2-related features that aren't supported by the v1 schema can't roll back.
+
+A rollback from v2 to v1 can result in some screenshots associated with UI elements not being saved. Although those screenshots aren't necessary for the desktop flow to run, you can save them:
+
+1. Go to the **UI Elements** right panel in Power Automate desktop.
+1. Select each UI element in the list.
+
+This ensures that the screenshots are saved when you rollback to v1.
 
 ## Limitations of v2 schema desktop flows
 
@@ -74,6 +100,18 @@ Then, you can import the updated v2 schema version of the same process to the ma
 |**Can edit/save v1 desktop flows into v1 schema in environments with the v2 schema enabled?** |Yes|No (flows are upconverted and saved in the v2 schema)|
 |**Can edit/save v2 desktop flows into z1 schema in environments with the v2 schema disabled?** |No (user notified of error)|Yes (flows are downgraded to and saved in the v1 schema)|
 |**Can edit/save v2 desktop flows into v2 schema in environments with the v2 schema enabled?** |No (user notified of error)|Yes|
+
+## Exceeded size limit
+
+When you save a desktop flow in v2 schema, you might see the following error:
+
+"The flow can't be saved as it has exceeded the allowed size limit."
+
+:::image type="content" source="media/schema/desktopflow-v2-limit.png" alt-text="Error during flow save error message indicating limit on the flow size.":::
+
+The limit applies to the definition of the desktop flow saved in Dataverse, which can't exceed 10 MB. The issue can happen when you have a large desktop flow, which could occur when actions have a large value in their properties or variables have a large default value. One example could be an image saved as base64 and put into the default variable value.
+
+We recommend to not store a large payload in the action properties or in the variable default value. Instead retrieve the value from other actions or pass the value as an input variable. You can also split your desktop flow into multiple child desktop flows.
 
 ## Dataverse schema
 

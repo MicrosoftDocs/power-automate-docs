@@ -4,7 +4,7 @@ description: Learn about data loss prevention policies for Power Automate.
 services: ''
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 12/12/2023
+ms.date: 05/01/2024
 ms.author: cgarty
 author: ChrisGarty
 contributors:
@@ -28,7 +28,7 @@ Power Automate allows you to create and enforce DLP policies that classify deskt
 
 >[!IMPORTANT]
 >
-> - Enforcement of DLP policies is available for [Managed Environments](/power-platform/admin/managed-environment-overview) only. Starting April 2024, only desktop flows that are located in Managed Environments will be evaluated by DLP policies.
+> - Enforcement of DLP policies is available for [Managed Environments](/power-platform/admin/managed-environment-overview) only. Starting September 2024, only desktop flows that are located in Managed Environments will be evaluated by DLP policies.
 > - DLP for desktop flows is available for versions of Power Automate for desktop 2.14.173.21294 or later. If you're using an earlier version, uninstall it and update to the latest version.
 
 ### View desktop flow action groups
@@ -195,11 +195,11 @@ Makers who have the latest Power Automate for desktop can't debug, run, or save 
 
 ### DLP enforcement and suspension
 
-When you create or edit a flow, Power Automate evaluates it against the current set of DLP policies. Enforcement is asynchronous and occurs within 24 hours.
-
-When you create or change a DLP policy, a background job scans all active flows in the environment, evaluates them, and then suspends the flows that violate the policy. Enforcement is asynchronous and occurs within 24 hours. If a DLP policy change occurs when the previous DLP policy is being evaluated, then the evaluation restarts to make sure the latest policies are enforced.
-
-Weekly, a background job does a consistency check of all active flows in the environment against the DLP policies to confirm that a DLP policy check wasn't missed.
+1. When you create or edit a flow, Power Automate evaluates it against the current set of DLP policies.
+   1. Enforcement of flows without a child flow, which is 99% of flows, is synchronous and occurs in real-time.
+   1. Enforcement of a flow with a child flow is asynchronous, since the child flows need to be evaluated as well, and occurs within 24 hours.
+1. When you create or change a DLP policy, a background job scans all active flows in the environment, evaluates them, and then suspends the flows that violate the policy. Enforcement is asynchronous and occurs within 24 hours. If a DLP policy change occurs when the previous DLP policy is being evaluated, then the evaluation restarts to make sure the latest policies are enforced.
+1. Weekly, a background job does a consistency check of all active flows in the environment against the DLP policies to confirm that a DLP policy check wasn't missed.
 
 ### DLP reactivation
 
