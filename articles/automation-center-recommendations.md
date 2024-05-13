@@ -65,7 +65,7 @@ The **category** classifies the recommendations based on the specific area of au
 
 | Category | Description |  
 |---|---|  
-| Orchestration | Insights related to the orchestration of processes, work queues and machines. |  
+| Orchestration | Insights related to the orchestration of processes, work queues, and machines. |  
 | Monitoring | Recommendations related to real-time tracking of automation health, compliance, or performance.  |  
 | Governance | Recommendations related to the rules, policies, and processing compliance. |  
 | Licensing | Recommendations related to the management of licenses and capacity. |  
@@ -76,7 +76,7 @@ The **type** indicates the severity or urgency of the recommendations.
 
 | Type| Description |  
 |---|---|  
-| Information | Provides best-practice recommendations you may want to consider. |  
+| Information | Provides best-practice recommendations you might want to consider. |  
 | Warning | Indicates a potential issue that might lead to a problem later if not addressed. |  
 | Error | Indicates a problem that needs to be resolved. |  
 
@@ -127,7 +127,7 @@ This **refresh frequency** provides information on how often the recommendation 
 | Category or object | Details |  
 |---|---|  
 | Title | Work queue SLA at risk |  
-| Card details | {*number of work queues*} work queues are close to breaching their service level agreement (SLA) or have already been breached. |  
+| Card details | {*number of work queues*} work queues are close to breaching their service level agreement (SLA) or are already breached. |  
 | Recommendation details | Based on average handling time, volume, available machine capacity, and expiration dates, {*number of work queues*} work queues are at risk of not meeting their SLA targets. Investigate and adjust work queue capacity and prioritization. |  
 | Type | Warning |  
 | Impact | Medium |  
@@ -215,4 +215,4 @@ This **refresh frequency** provides information on how often the recommendation 
 
 ## Known limitations
 
-- Deletion of older recommendation is not yet supported through the user experience in automation center. If you want to clean-up recommendations, consider using the [Dataverse bulk-delete](/power-platform/admin/delete-bulk-records) feature.
+- Deletion of older recommendation isn't yet supported through the user experience in automation center. If you want to clean-up recommendations, consider using the [Dataverse bulk-delete](/power-platform/admin/delete-bulk-records) feature.
