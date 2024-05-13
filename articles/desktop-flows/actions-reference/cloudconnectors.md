@@ -72,7 +72,7 @@ Here's a list of in Cloud Connectors in Power Automate for desktop currently ava
 - [Excel Online (Business)](/connectors/excelonline)
 - [Microsoft Forms](/connectors/microsoftforms)
 - [Microsoft Teams](/connectors/teams)
-- [Office 365 Outlook (preview)](/connectors/office365)
+- [Office 365 Outlook](/connectors/office365)
 - [OneDrive](/connectors/onedrive)
 - [OneDrive for work or school](/connectors/onedriveforbusiness)
 - [OneNote (Business)](/connectors/onenote)
