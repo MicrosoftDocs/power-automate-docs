@@ -295,7 +295,7 @@
       href: ./dataverse/data-retention-flow.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md
-    - name: Manage cloud flow run metadata in Dataverse (preview)
+    - name: Manage cloud flow run history in Dataverse (preview)
       href: ./dataverse/cloud-flow-run-metadata.md
   - name: Use solutions for ALM
     items:
@@ -1198,3 +1198,5 @@
     href: faqs-copilot-nl-to-code.md
   - name: FAQ for suggested actions in Power Automate for desktop
     href: faqs-action-suggestions-power-automate-desktop.md
+  - name: FAQ for generating flow descriptions using Copilot in desktop flows
+    href: faqs-copilot-generate-description-from-flow-properties.md
