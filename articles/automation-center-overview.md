@@ -110,7 +110,7 @@ Following lists the current limitations of the automation center and its underly
 - No top-level desktop-flow runs support yet (for local attended or API-based scenarios)
 - No support for co-owned or shared flows yet (users don't see runs of flows that are shared with them).
 - No child flow run-specific filter or sorting support yet.
-- Users with broader access to run data (that is, admins, or CoEs) might see *Private flow* as flow names if the corresponding cloud flow isn't explicitly shared with them (or deleted in the meantime).
+- Users with broader access to run data (such as admins or members of the CoE team) might see *Private flow* as flow names if the corresponding cloud flow isn't explicitly shared with them (or deleted in the meantime).
 - Users with broader access to run data might encounter increased latency during data load because of high cloud flow run volumes. Performances can be improved selecting more filters and reducing date range for examples.
 - Only 1st-level child cloud and desktop flow runs are shown under **Runs**.
 - In there's a visual showing "*Too many results*", try to adjust your filter to limit the number of data that is being returned.
