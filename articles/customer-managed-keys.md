@@ -42,4 +42,4 @@ Support to migrate Microsoft-managed keys (MMKs) protected flows in CMK enabled 
 
 ### See also
 
-[Manage your customer-managed encryption key (preview)](/power-platform/admin/customer-managed-key)
+[Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
