@@ -1,6 +1,6 @@
 ---
 title: Use Copilot in automation center (preview)
-description: Use Copilot to analyze flow runs, work queues, and ask about general product feature questions in natural language. 
+description: Use Copilot to analyze flow runs, work queues, and ask general product questions in natural language. 
 ms.topic: conceptual
 ms.date: 05/20/2024
 ms.author: appapaio
@@ -21,7 +21,7 @@ search.audienceType:
 
 Understanding automation activity and performance are key to achieving operational excellence and reliability goals, regardless of the size of the automation estate, team, or role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
 
-:::image type="content" source="media/automation-center/copilot-overview.png" alt-text="Screenshot of a Copilot experience as part of desktop flow activity page." lightbox="media/automation-center/copilot-overview.png":::
+:::image type="content" source="media/automation-center/copilot-overview.png" alt-text="Screenshot of a copilot experience as part of the automation center page." lightbox="media/automation-center/copilot-overview.png":::
 
 > [!IMPORTANT]
 >
@@ -30,7 +30,7 @@ Understanding automation activity and performance are key to achieving operation
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
 > - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
 > - Read the [responsible AI FAQs for Copilot in automation center (preview)](faqs-copilot-automation-center.md) to learn more about this new Copilot experience.
-> - More FAQs: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md),[FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
+> - More FAQs: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md), [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 ## Prerequisites
 
@@ -42,26 +42,26 @@ Understanding automation activity and performance are key to achieving operation
 
 Copilot in automation center is able to answer questions about the following four skills:
 
-| Index | Skill | Questions able to answer|
+| Index | Skill | Questions skill can answer|
 |---|---|---|
-| 1 | Cloud flow run logs | Cloud flow run status, trigger type, run duration, failure rate, etc. |
-| 2 | Desktop flow run logs | Desktop flow run status, used machine, run mode, failure rate, etc. |
-| 3 | Work queue data | Work queue items statuses, service level agreement (SLA) attainment, processor counts, etc. |
+| 1 | Cloud flow run logs | Cloud flow run status, trigger type, run duration, failure rate. |
+| 2 | Desktop flow run logs | Desktop flow run status, used machine, run mode, failure rate. |
+| 3 | Work queue data | Work queue items statuses, service level agreement (SLA) attainment, processor counts. |
 | 4 | Generative answers | General Power Automate feature questions such as *how to analyze activity with Copilot*. |
 
-The first three skills in the above table translate natural language queries (questions) entered by users into Microsoft Dataverse FetchXML query syntax. This translation allows users to easily retrieve information about their automation data by asking questions in a natural language. Additionally, Copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and information to the user.
+The first three skills in the above table translate natural language queries (questions) entered by users into Microsoft Dataverse FetchXML query syntax. This translation allows users to easily retrieve information about their automation data by asking questions in natural language. Additionally, Copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and information to the user.
 
-The fourth skill uses the Azure OpenAI service to search for answers in Power Automate for desktop's public documentation based on user prompts.
+The fourth skill uses the Azure OpenAI service to search for answers in Power Automate for desktop's public documentation.
 
 ### Copilot skill selector
 
-When Copilot opens (per session) the first time, the "cloud flow" skill is preselected. You can modify the skill by choosing the dropdown next to the phrase "Supporting questions about" and selecting your preferred skill. During the initial preview phase, the conversation history is reset each time you change the skill.
+When Copilot opens (per session) the first time, the "cloud flow" skill is preselected. You can modify the skill by choosing the dropdown next to the phrase **Questions about** and selecting your preferred skill. During the initial preview phase, the conversation history is reset each time you change the skill.
 
 :::image type="content" source="media/automation-center/copilot-skill-chooser.png" alt-text="Screenshot of an experience in Copilot where users can select from a list of skills." lightbox="media/automation-center/copilot-skill-chooser.png":::
 
 ### High-level process
 
-1. Once the user inputs a valid prompt, Copilot generates a valid [FetchXML](#what-are-fetchxml-queries) query based on the input.
+1. Once the user inputs a valid prompt, Copilot generates a [FetchXML](#what-are-fetchxml-queries) query based on the input.
 1. If the generated FetchXML is valid, the query is then executed against the Dataverse backend under the current user's security context to retrieve matching data. Retrieving the data as the user ensures that users only see data that they're already authorized to access.
 1. Copilot then determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and data to the user.
 
@@ -71,24 +71,28 @@ Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-
 
 ## Prompt best-practices
 
-- Be specific: The more specific you are with your prompt, the better the AI understands and responds. If the AI isn't producing the desired output, don't worry, try again by adjusting your prompt.
-- Experiment with prompts: If you're not getting the results you were expecting, try rephrasing your prompt or provide more context.
-- Provide feedback: If the AI produced great or unsatisfactory responses, let us know by selecting the thumbs up or down with an option to provide more feedback via the **Tell Microsoft what you liked about this feature** link that appears underneath.
+- Be specific:
+    - The more specific you are with your prompt, the better the AI understands and responds. 
+    - If the AI isn't producing the desired output, don't worry. Try again by adjusting your prompt.
+- Experiment with prompts:
+    - If you're not getting the results you were expecting, try rephrasing your prompt or provide more context.
+- Provide feedback:
+    - If the AI produced great or unsatisfactory responses, let us know by selecting the thumbs up or down with an option to provide more feedback via the **Tell Microsoft what you liked about this feature** link that appears underneath.
 
 ## Prompt examples
 
-This section provides example prompts you can use as a starter prompt for your own use cases. Some of these prompts might not be applicable or return incorrect results. Model understanding or the actual prompt and the data available to you based on your permissions might influence the accuracy. We recommend that you review and validate the returned results and FetchXML query. More information: [Validate FetchXML query results generated by Copilot](#validate-fetchxml-query-results-generated-by-copilot).
+This section provides example prompts you can use as a starter prompt for your own use cases. Some of these prompts might not be applicable or return incorrect results. Model understanding or the actual prompt and the data available to you based on your permissions might influence the accuracy. We recommend that you review and [validate the returned results and FetchXML query](#validate-fetchxml-query-results-generated-by-copilot).
 
 ### Runs
 
 - Which flows ran the most last week?
 - What were yesterday’s top five flows by number of completed runs?
-- What was the average run duration of the *'[insert your flow name here]'* flow during last semester?
+- What was the average run duration of the *\<insert your flow name here\>* flow last month?
 
 ### Errors
 
-- Show me the most frequent run errors during last month.
-- Show me a distribution of successful versus failed flows during last quarter.
+- Show me the most frequent run errors last month.
+- Show me a distribution of successful versus failed flows last quarter.
 - What were the number of failed runs during the week before the last one?
 
 ### Work queues
@@ -106,13 +110,13 @@ This section provides example prompts you can use as a starter prompt for your o
 ### Makers
 
 - Show me the top flows by number of runs together with their owner info.
-- Who were the top 10 users running flows during last month?
+- Who were the top 10 users running flows last month?
 - When and by whom were desktop flows modified last week?
 
 ### Generative answers (documentation)
 
-- How can I add a condition in Power Automate Desktop?
-- Can Cloud Flows handle approvals and decision-making processes?
+- How can I add a condition in Power Automate desktop?
+- Can cloud flows handle approvals and decision-making processes?
 - Where can I find deleted flows in Power Automate?
 
 ### Multi-turn prompts
@@ -122,13 +126,13 @@ In the context of AI, *multi-turn* prompts allow you to have an ongoing conversa
 > [!NOTE]
 >
 > - Generative answers (documentation skill) does not support multi-turn conversations yet.
-> - When engaging in a multi-turn conversations, note that Copilot keeps track of the five most recent questions only. This means that Copilot starts clearing the prompts that were entered first and only keeps the latest five. To improve response quality, we suggest limiting your follow-up questions to four and then restart the chat. More information: [Clear previous prompt context to start over](#clear-previous-prompt-context-to-start-over).
+> - When engaging in a multi-turn conversation, Copilot keeps track of the five most recent questions only. This means that Copilot starts clearing the prompts that were entered first and only keeps the latest five. To improve response quality, we suggest limiting your follow-up questions to four and then restart the chat. For more information, see [Clear previous prompt context to start over](#clear-previous-prompt-context-to-start-over).
 
 #### Example
 
-| **Turn** | **Prompt and reply**
+| **Turn** | **Prompt and reply**|
 |-------------------------|-------------------------|
-|:::image type="icon" source="media/automation-center/1.png":::| **User**: Show me a distribution of successful vs failed flows during last quarter|
+|:::image type="icon" source="media/automation-center/1.png":::| **User**: Show me a distribution of successful vs failed flows last quarter|
 ||**Copilot**: *Here's the distribution of successful vs failed flows during the last quarter.*|
 |:::image type="icon" source="media/automation-center/2.png":::| **User**: What was the top error of the runs that failed?|
 ||**Copilot**: *Here's the top error of the runs that failed.*|
@@ -141,13 +145,13 @@ In the context of AI, *multi-turn* prompts allow you to have an ongoing conversa
 
 ### Influencing the output format
 
-You can influence Copilot's output format by asking for explicit output types like *"show me failed vs. succeeded flow run distribution as a bar chart."* This prompt likely produces the following outcome:
+You can influence Copilot's output format by asking for explicit output types like *"show me failed vs succeeded flow run distribution as a bar chart."* This prompt likely produces the following outcome:
 
 :::image type="content" source="media/automation-center/copilot-influence-output-format.png" alt-text="Screenshot of a reply that Copilot responded to a user prompt with a pie chart." lightbox="media/automation-center/copilot-influence-output-format.png":::
 
 ### Clear previous prompt context to start over
 
-If you wish to reset the conversation with Copilot you can select the three dots `...` next to the copilot name, and then select **New chat**.
+If you wish to reset the conversation with Copilot, select the three dots `...` next to the copilot name, and then select **New chat**.
 
 :::image type="content" source="media/automation-center/copilot-new-chat.png" alt-text="Screenshot of the New chat option in Copilot to reset a conversation." lightbox="media/automation-center/copilot-new-chat.png":::
 
@@ -197,15 +201,15 @@ The following steps guide you through the process to validate (and potentially r
 
 ### Step 1: Make a copy of the FetchXML query
 
-After submitting your query to Copilot, you get a reply that includes a link labeled **Show code**. To copy the code, select this link and then select the copy icon located in the upper right corner of the `FetchXML` box.
+After you submit your query to Copilot, you get a reply that includes a link labeled **Show code**. To copy the code, select this link and then select the copy icon located in the upper-right corner of the **FetchXML** box.
 
-### Step 2: Create cloud flow and test FetchXML query
+### Step 2: Create a cloud flow and test the FetchXML query
   
-1. Navigate to the [Power Automate portal](https://make.powerautomate.com) and select **My flows** from the left-navigation menu.
+1. Navigate to the [Power Automate portal](https://make.powerautomate.com) and select **My flows** from the left navigation menu.
 2. Continue by selecting **+ New flow** on the command bar, and then select **Instant cloud flow** from the dropdown menu.
 3. Enter a flow name, select **Manually trigger a flow**, and then select **Create**.
 4. The cloud flow designer appears. Find and then select the **+ New Step** button.
-5. On the search bar that appears, enter **Dataverse**, and then select the **Dataverse** connector from the results.
+5. On the search bar that appears, enter *Dataverse*, and then select the **Dataverse** connector from the results.
 6. Various actions are displayed. Scroll through until you find and select the **List rows** action.
 7. Within the **List rows** action, select the **Show advanced options** link.
 8. A FetchXML query field appears. This is where you input the copied FetchXML query that Copilot previously generated.
@@ -229,15 +233,15 @@ Let's assume you asked Copilot '*how many failed vs succeeded flows did we have 
 </fetch>
 ```
 
-If data matches the given FetchXML query, the **List rows** Dataverse action configured in [step 2](#step-2-create-cloud-flow-and-test-fetchxml-query) returns data in a format called [JSON](https://www.json.org/json-en.html) (JavaScript Object Notation), which is essentially a method used to present data in a well-organized manner, making it easy to read and write digitally.
+If data matches the given FetchXML query, the **List rows** Dataverse action configured in [step 2](#step-2-create-cloud-flow-and-test-fetchxml-query) returns data in a format called [JSON](https://www.json.org/json-en.html) (JavaScript Object Notation), which is essentially a method used to present data in a well organized manner, making it easy to read and write digitally.
   
-For distribution-based questions like previously mentioned, data is grouped by one or more fields (`statuscode`), together with an aggregation (`count`) that returns the number for each group (that is, `failed`, `succeeded`, and so on).
+For distribution based questions like previously mentioned, data is grouped by one or more fields (`statuscode`), together with an aggregation (`count`) that returns the number for each group (that is, `failed`, `succeeded`, and so on).
 
-Each of the returned records contains fields such as:  
+Each of the returned records contain fields such as:  
   
 - `flowsession_count`: The number of times the workflow ran.  
 - `flowsession_regardingobjectid`: The unique identifier for the flow run.  
-- `flowsession_statuscode`: The status of the flow run (for example, **Failed**).  
+- `flowsession_statuscode`: The status of the flow run (for example, failed).  
 - `workflow_name`: The name of the flow.  
   
 If you want to know how many times a specific flow ran, look at the `flowsession_count` column of the record where `workflow_name` is *your flow name*.
@@ -263,8 +267,8 @@ The following list contains known limitations of Copilot in desktop flow activit
 - Copilot is currently only available in Dataverse environments based in the United States.
 - Copilot might return wrong or incomplete data and FetchXML queries.
 - Copilot is initially only capable to answer questions about desktop flow activity such as errors, machines, and past and current runs.
-- In multi-turn conversations, Copilot keeps context of the last five question only. If you encounter wrong or incomplete results, consider resetting the conversation. More information: [Clear previous prompt context to start over](#clear-previous-prompt-context-to-start-over).
-- Multi-turn conversations aren't supported for generative answers (Documentation skill).
+- In multi-turn conversations, Copilot keeps context of the last five question only. If you encounter wrong or incomplete results, consider [resetting the conversation](#clear-previous-prompt-context-to-start-over).
+- Multi-turn conversations aren't supported for generative answers (documentation skill).
 - For queries that return large result-sets, Copilot might not be able return or render the result.
 
 ## See also

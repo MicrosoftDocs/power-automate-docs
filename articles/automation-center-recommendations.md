@@ -19,11 +19,11 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
-The automation center offers targeted recommendations aimed at enhancing the reliability, efficiency, and general health of your automation. We provide actionable insights including:
+The automation center offers targeted recommendations aimed at enhancing the reliability, efficiency, and general health of your automation. You can find actionable insights such as:
 
 - real-time recommendation of automations starting to fail
-- warnings of work queues potentially failing to meet their Service Level Agreement (SLA) objectives
-- identifications of unused machines or machine groups in the environment
+- warnings of work queues potentially failing to meet their service level agreement (SLA) objectives
+- identification of unused machines or machine groups in the environment
 - many more
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
@@ -82,7 +82,7 @@ The **type** indicates the severity or urgency of the recommendations.
 
 ### Impact
 
-The **impact** assesses the degree of impact an issue has on the overall automation health, compliance, or performance.
+The **impact** assesses the degree of effect an issue has on the overall automation health, compliance, or performance.
 
 | Impact | Description |  
 |---|---|  
@@ -92,7 +92,7 @@ The **impact** assesses the degree of impact an issue has on the overall automat
 
 ### Refresh frequency
 
-This **refresh frequency** provides information on how often the recommendation data is updated, ensuring users have the most recent and relevant information for decision-making.
+The **refresh frequency** provides information on how often the recommendation data is updated, ensuring users have the most recent and relevant information for decision making.
 
 | Refresh frequency | Description |  
 |---|---|  
@@ -104,10 +104,13 @@ This **refresh frequency** provides information on how often the recommendation 
 
 > [!NOTE]
 >
-> - Recommendations that haven't got a refresh frequency of 'REAL TIME"' hold data snapshots from when the recommendations was generated. As a result, if you revisit an older recommendation, the information displayed under artifact details may no longer be accurate or applicable.
+> - Recommendations that don't have a real time refresh frequency hold data snapshots from when the recommendation was generated. As a result, if you revisit an older recommendation, the information displayed under artifact details may no longer be accurate or applicable.
 > - If you're a premium Power Automate user and it's your first time accessing the automation center, we will begin generating recommendations for you. These should be ready for your review in about an hour or two.
-> - If you don't return to the automation center within a week (7 days), or if your premium license got unassigned by your IT team or if your trial expired, we will pause generation of these recommendations.
-> - The recommendations shown as part of the automation center are intra-environmental recommendations targets to makers, operators and member of the CoE. If you are looking for admin related, tenant-wide recommendations in Power Platform admin center, these are part of separate feature called **Power Platform Advisor**. [Learn more](/power-platform/admin/power-platform-advisor).
+> - Generation of recommendations is paused if:
+    > - you don't return to the automation center within 7 days
+    > - your premium license was unassigned by your IT team
+    > - your trial expired
+> - The recommendations shown as part of the automation center are intra-environmental recommendations targeted to makers, operators, and CoE team members. If you are looking for admin related, tenant-wide recommendations in Power Platform admin center, these are part of a separate feature called [**Power Platform Advisor**](/power-platform/admin/power-platform-advisor).
 
 ### Work queue SLA violation
 
@@ -215,4 +218,4 @@ This **refresh frequency** provides information on how often the recommendation 
 
 ## Known limitations
 
-- Deletion of older recommendation isn't yet supported through the user experience in automation center. If you want to clean-up recommendations, consider using the [Dataverse bulk-delete](/power-platform/admin/delete-bulk-records) feature.
+- Deletion of older recommendation isn't yet supported through the user experience in automation center. If you want to clean-up recommendations, consider using the Dataverse [bulk-delete](/power-platform/admin/delete-bulk-records) feature.

@@ -20,7 +20,7 @@ search.audienceType:
 
 [This article is prerelease documentation and is subject to change.]
 
-The automation center provides comprehensive monitoring and troubleshooting experiences for your automation processes across Power Automate, catering to various personas involved in automation. Whether you're a maker, an operator, a Center of Excellence (CoE) team member or a business analyst, the automation center serves as a centralized hub to monitor and manage automation activity within your environment. With its user-friendly interface and dashboard, the automation center enables you to gain a holistic view of all automation-related data, including recommendations, execution logs, performance metrics, and an integrated Copilot.
+The automation center provides comprehensive monitoring and troubleshooting experiences for your automation processes across Power Automate, catering to various personas involved in automation. Whether you're a maker, an operator, a Center of Excellence (CoE) team member, or a business analyst, the automation center serves as a centralized hub to monitor and manage automation activity within your environment. With its user friendly interface and dashboard, the automation center enables you to gain a holistic view of all automation related data, including recommendations, execution logs, performance metrics, and an integrated copilot.
 
 :::image type="content" source="media/automation-center/automation-center-overview.png" alt-text="Screenshot of a copilot experience as part of desktop flow activity page." lightbox="media/automation-center/automation-center-overview.png":::
 
@@ -28,18 +28,18 @@ The automation center provides comprehensive monitoring and troubleshooting expe
 
 ## Data and visualization strategy
 
-The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#runs-tab) pages is based on cloud and desktop flow run data that is stored in Dataverse. These pages are designed to provide you with a **top-level** view of your flow run activities, including first-level child cloud or desktop flow runs associated with a particular top-level flow. This approach enables you to monitor the entire automation from start to end. It allows you to determine whether the overall automation succeeded or failed, providing data on the total and average duration of the runs, among many other metrics.
+The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#runs-tab) pages is based on cloud and desktop flow run data that is stored in Microsoft Dataverse. These pages are designed to provide you with a **top-level** view of your flow run activities, including first-level child cloud or desktop flow runs associated with a particular top-level flow. This approach enables you to monitor the entire automation from start to end. It allows you to determine whether the overall automation succeeded or failed, providing data on the total and average duration of the runs, among many other metrics.
 
 > [!NOTE]
 >
 > - Some filters may not be available for some pivots because of the nature of the presented data.
-> - Data under the work queue tab and recommendations are premium features, hence requiring a Power Automate Premium license.
+> - Data under the **Work queues** tab and **Recommendations** are premium features, which require a Power Automate Premium license.
 > - When you navigate between tabs, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
-> - Desktop flow-related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
+> - Desktop flow related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
 
 ## Copilot
 
-The Copilot is designed to assist with the analysis of automation activity, work queue performance, and to provide answers to common questions about Power Automate capabilities (generative answers). For example, users can ask about the number of flows that ran yesterday, which queue items are put on hold, or how to analyze activity with Copilot. In response, Copilot generates outputs that provide insights and answers to the questions asked. Learn more about the Copilot feature in automation center [here](automation-center-copilot.md).
+Copilot is designed to assist with the analysis of automation activity, work queue performance, and to provide answers to common questions about Power Automate capabilities (generative answers). For example, users can ask about the number of flows that ran yesterday, which queue items are put on hold, or how to analyze activity with Copilot. In response, Copilot generates outputs that provide insights and answers to the questions asked. For more information, see [Use Copilot to analyze automation activity and ask product questions](automation-center-copilot.md).
 
 > [!IMPORTANT]
 >
@@ -50,19 +50,19 @@ The Copilot is designed to assist with the analysis of automation activity, work
 
 ## Overview tab
 
-This tab provides an end-to-end automation health view within the environment and is based on top-level flow reporting. The [recommendation section](#recommendations) of this tab provides actionable insights to your automation estate. You can prioritize and address the most important issues and recommendations, based on their potential impact.
+This tab provides an end-to-end automation health view within the environment and is based on top-level flow reporting. The [Recommendations](#recommendations) section of this tab provides actionable insights to your automation estate. You can prioritize and address the most important issues and recommendations, based on their potential impact.
 
-:::image type="content" source="media/automation-center/automation-center-overview-tab.png" alt-text="Screenshot of the overview page on automation center." lightbox="media/automation-center/automation-center-overview-tab.png":::
+:::image type="content" source="media/automation-center/automation-center-overview-tab.png" alt-text="Screenshot of the overview page in automation center." lightbox="media/automation-center/automation-center-overview-tab.png":::
 
 | Visual | Description |
 | --- | --- |
-| **Recommendations** | List of automation health, compliance, and best-practice insights and actionable recommendations. |
-| **Top-level flows** | Number of top-level flows that had one or more run based on selected filters. Gives an overall automation health indication and helps identify which top-level runs are failing the most. |
+| **Recommendations** | List of automation health, compliance, best practice insights, and actionable recommendations. |
+| **Top-level flows** | Number of top-level flows that had one or more runs based on selected filters. Gives an overall automation health indication and helps identify which top-level runs are failing the most. |
 | **Average runs per day**| Average number of flow runs per day based on selected filters. |
 | **Average run duration**| Average flow run duration based on selected filters. |
 | **Flow runs error rate** | Percentage of errors that occurred during flow execution based on selected filters. |
-| **Flow runs by status** | Overview of top-level runs status, can be used as to correlate with other factors such as triggering type, run modes, machines. |
-| **Flow runs error trends** | Tracks usage and reliability trend of top-level runs over time. |
+| **Flow runs by status** | Overview of top-level runs status, can be used as to correlate with other factors such as triggering type, run modes, or machines. |
+| **Flow runs error trends** | Tracks usage and reliability trends of top-level runs over time. |
 | **Flow runs by trigger type** | Shows top-level flow runs by trigger type. |
 | **Top flow runs** | Quickly identify critical and regularly failing automations, in order to improve health, resiliency, and exception handling. |
 | **Top error codes** | Identifies most common errors during flow runs. |
@@ -70,11 +70,11 @@ This tab provides an end-to-end automation health view within the environment an
 
 ### Recommendations
 
-The recommendation section on this page provides pro- and reactive insights and recommendations about various aspects of your automation estate, such as sudden automation failures, work queues at risk of not meeting their service level agreement (SLA) targets, and unused machines or machine groups in the environment. These recommendations can help you identify areas for improvement and take appropriate action based on their impact. Learn more about the recommendation feature in automation center [here](automation-center-recommendations.md).
+The recommendations section offers both proactive and reactive insights, along with suggestions concerning various elements of your automation landscape. This includes addressing sudden automation failures, work queues at risk of not meeting their service level agreement (SLA) targets, and unused machines or machine groups in the environment. These recommendations can help you identify areas for improvement and take appropriate action based on their impact. For more information, see [automation center recommendations](automation-center-recommendations.md).
 
 ## Runs tab
 
-This tab presents a consolidated view of cloud and desktop flow run data, displayed in a *hierarchical* list-view. The data is organized based on top-level cloud flows, and if a cloud flow has one or more child flows (supporting both cloud and desktop children), the child flow names are indented and preceded by a *'>'* character. This view is useful in scenarios where individual flow session runs succeeded, but other dependent runs failed, ultimately resulting in the top-level flow's failure. By displaying these runs in connection to their parent, this view enhances automation monitoring and enables efficient root cause analysis if there are exceptions.
+This tab presents a consolidated view of cloud and desktop flow run data displayed in a hierarchical list-view. The data is organized based on top-level cloud flows. If a cloud flow has one or more child flows (supporting both cloud and desktop children), the child flow names are indented and preceded by a *'>'* character. This view is useful in scenarios where individual flow session runs succeeded, but other dependent runs failed, ultimately resulting in the top-level flow's failure. By displaying these runs in connection to their parent, this view enhances automation monitoring and enables efficient root cause analysis of any exceptions.
 
 :::image type="content" source="media/automation-center/automation-center-runs-tab.png" alt-text="Screenshot of the runs page on automation center." lightbox="media/automation-center/automation-center-runs-tab.png":::
 
@@ -99,25 +99,25 @@ This tab provides metrics to monitor the health status of work queue items, incl
 | **Top work queues by error frequency** | Shows the top five work queues with the highest number of items in error state. |
 
 > [!NOTE]
-> If you're filtering work queue items by a specific item status, such as "Business exception", note that any matching item that has already expired won't be considered in the results. This is due to the fact that expired items are deemed unprocessable unless their expiration date is extended first, which takes precedence over lower-level exception type searches.
+> If you filter work queue items by a specific item status, such as "Business exception", any matching item that has already expired won't be considered in the results. This is due to the fact that expired items are deemed unprocessable unless their expiration date is extended first, which takes precedence over lower-level exception type searches.
 
 ## Known limitations
 
-Following lists the current limitations of the automation center and its underlying data structure. Some of these limitations will be resolved as we continue to develop this feature.
+The following are current limitations of the automation center and its underlying data structure. Some of these limitations will be resolved as we continue to develop this feature.
 
 - Visualizations are based on top-level cloud flow runs only.
 - Only runs for solution-based cloud flows are available in the automation center.
-- No top-level desktop-flow runs support yet (for local attended or API-based scenarios)
-- No support for co-owned or shared flows yet (users don't see runs of flows that are shared with them).
-- No child flow run-specific filter or sorting support yet.
+- Top-level desktop flow runs aren't supported yet (for local attended or API-based scenarios)
+- Co-owned or shared flows aren't supported yet (users don't see runs of flows that are shared with them).
+- Child flow run-specific filters or sorting aren't supported yet.
 - Users with broader access to run data (such as admins or members of the CoE team) might see *Private flow* as flow names if the corresponding cloud flow isn't explicitly shared with them (or deleted in the meantime).
-- Users with broader access to run data might encounter increased latency during data load because of high cloud flow run volumes. Performances can be improved selecting more filters and reducing date range for examples.
+- Users with broader access to run data might encounter increased latency during data load because of high cloud flow run volumes. Performance can be improved by selecting more filters and reducing date ranges.
 - Only 1st-level child cloud and desktop flow runs are shown under **Runs**.
-- In there's a visual showing "*Too many results*", try to adjust your filter to limit the number of data that is being returned.
-- In case you see Dataverse or cloud flow run-specific notifications, check the underlying [cloud flow run history documentation](dataverse/cloud-flow-run-metadata.md) to learn more.
-- Older cloud flow run history might be missing for the selected date range filter. This might be due to your current environment's time-to-live (TTL) configuration, which is set to retain cloud flow runs for a period of *n-days* only. [Learn more](dataverse/cloud-flow-run-metadata.md#cloud-flow-run-elements)
+- If there's a visual showing "*Too many results*", try to adjust your filter to limit the number of data that is being returned.
+- If you see Dataverse or cloud flow run-specific notifications, check the underlying [cloud flow run history documentation](dataverse/cloud-flow-run-metadata.md) to learn more.
+- Older cloud flow run history might be missing for the selected date range filter. This might be due to your current environment's [time to live](dataverse/cloud-flow-run-metadata.md#cloud-flow-run-elements) (TTL) configuration, which is set to retain cloud flow runs for a period of *n-days* only.
 
 ## Learn more
 
-- [Learn more about automation center recommendations](automation-center-recommendations.md)
-- [Get started with automation center Copilot](automation-center-copilot.md)
+- [Recommendations within automation center](automation-center-recommendations.md)
+- [Use Copilot in automation center](automation-center-copilot.md)
