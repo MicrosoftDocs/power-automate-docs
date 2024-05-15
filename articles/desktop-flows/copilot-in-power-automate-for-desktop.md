@@ -15,7 +15,7 @@ ms.collection: bap-ai-copilot
 
 Copilot in desktop flows allows you to create automation that helps streamline your workflow creation quickly and easily using natural language. You can create a new flow or add more steps to an existing by just describing what you want to achieve using natural language prompts.
 
-The desktop flows copilot can perform the following actions:
+The desktop flows Copilot can perform the following actions:
 -	Understand your intent and create a new flow or enhance an existing one based on the scenario prompt you provide.
 -	Apply the necessary parameters in the actions based on your prompt.
 -	Answer product related questions. For example, you can ask Copilot questions about desktop flows like: How do I read data from an Excel file? and How do I run a PowerShell script?
@@ -40,7 +40,7 @@ Currently, copilot in Power Automate for desktop is only available for users wit
 > [!NOTE]
 > If your environment is in a supported region, you are signed in with a work or school account, and you still can't see the copilot in Power Automate for desktop experience, contact your Power Platform administrator. An admin can turn the Copilot feature off or on in the Power Platform admin center. 
 
-## Create a desktop flow using the Copilot (Early Access)
+## Create a desktop flow using the Copilot (preview)
 
 You can create a new flow in the Power Automate for desktop Console from either the Copilot in the home page or from the Copilot’s side panel.
 To create a flow from the home page, type your prompt in the Copilot’s chat area:
@@ -67,7 +67,7 @@ If Copilot detects an intent for Browser or Desktop automation in your prompt, i
 > [!NOTE]
 > The recording action will produce a design time error. This is to remind you that a significant part of the flow is still missing and needs to be created. To resolve this, you can either launch the recorder and perform the recording or delete / disable it.
 
-## Adding actions to an existing flow using Copilot (Early Access)
+## Adding actions to an existing flow using Copilot (preview)
 
 You can enhance an existing flow with easy by instructing the Copilot to add more functionality to it. To do so, navigate to the Power Automate for desktop’s designer and describe in the Copilot’s side panel what you want to achieve. The Copilot will then add the appropriate actions at the end of your flow, or underneath a selected action. Make sure that the appropriate Copilot skill is enabled prior to typing your prompt by either clicking on the “Add a step that” button on the top of the Copilot’s side panel or by selecting it from the drop-down menu at the bottom.
 
@@ -81,7 +81,7 @@ Writing good prompts includes more than just being specific with your request, o
 - Try tweaking your prompt to further fine tune.
 - For more general information about writing prompts with generative AI, go to [The art of the prompt: How to get the best out of generative AI.](https://news.microsoft.com/source/features/ai/the-art-of-the-prompt-how-to-get-the-best-out-of-generative-ai/)
 
-## How to use copilot to get answers to product-related questions (Public preview)
+## How to use copilot to get answers to product-related questions (preview)
 
 Access the generative answers capability from the console by clicking on the Copilot icon located on the top right corner of the console window.
 :::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-console-generative-answers.png" alt-text="A screenshot that shows the recorder placeholder":::
