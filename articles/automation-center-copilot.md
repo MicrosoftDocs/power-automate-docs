@@ -233,7 +233,7 @@ Let's assume you asked Copilot '*how many failed vs succeeded flows did we have 
 </fetch>
 ```
 
-If data matches the given FetchXML query, the **List rows** Dataverse action configured in [step 2](#step-2-create-cloud-flow-and-test-fetchxml-query) returns data in a format called [JSON](https://www.json.org/json-en.html) (JavaScript Object Notation), which is essentially a method used to present data in a well organized manner, making it easy to read and write digitally.
+If data matches the given FetchXML query, the **List rows** Dataverse action configured in [step 2](#step-2-create-a-cloud-flow-and-test-the-fetchxml-query) returns data in a format called [JSON](https://www.json.org/json-en.html) (JavaScript Object Notation), which is essentially a method used to present data in a well organized manner, making it easy to read and write digitally.
   
 For distribution based questions like previously mentioned, data is grouped by one or more fields (`statuscode`), together with an aggregation (`count`) that returns the number for each group (that is, `failed`, `succeeded`, and so on).
 
