@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: mattp123
 ms.topic: conceptual
-ms.date: 03/11/2024
+ms.date: 05/10/2024
 ms.author: iomavrid
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
@@ -11,6 +11,7 @@ contributors:
 - jpapadimitriou
 - Yiannismavridis
 - PetrosFeleskouras
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -265,26 +266,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 ## Configure or disable desktop flow action logs per environment (preview)
 
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and might have restricted functionality.
-> - This feature isn't available yet for local attended runs from Power Automate desktop.
-> - This feature is currently being gradually rolled-out and might not yet be available in your region.
-> - These features are available before an official release so that customers can get early access and provide feedback.
-
-You can configure when desktop flow run action logs should be captured or turn them off completely, using the **Activation status of the run action logs** environment feature setting in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-
-:::image type="content" source="media/desktop-flow-logs/configure-desktop-flow-logs.png" alt-text="Screenshot and environment-level setting allowing you to configure desktop flow log verbosity." lightbox="media/desktop-flow-logs/configure-desktop-flow-logs.png":::
-
-| Log-level | Details |
-|---|---|
-| **Enabled (default)**| This is the default option for both existing and new environments where logs are captured as usual. |
-| **On run failure**| This option **only** captures desktop flow actions logs in the event of a runtime error. This means that logs will not be available for every single run, but only when an error occurs. However, if an error does occur, all logs for that particular run will be available, including both successful and failed actions. |
-| **Disabled** | This option effectively **disables** desktop flow run action logs **completely**. |
-
-> [!CAUTION]
-> Changing these settings can have a significant impact on features such as run failure troubleshooting and auditing. Consider the implications of changing these settings before proceeding.
+See [Desktop flow action logs configuration (preview)](configure-desktop-flow-logs.md).
 
 ## Configure Power Automate for desktop notification settings
 
