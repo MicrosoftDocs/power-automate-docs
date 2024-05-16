@@ -1212,7 +1212,9 @@
     href: responsible-ai-overview.md
   - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
-  - name: FAQ for copilot in desktop flow activity
+  - name: FAQ for Copilot in automation center (preview)
+    href: faqs-copilot-automation-center.md
+  - name: FAQ for copilot in desktop flow activity (preview)
     href: faqs-copilot-automation-activity.md
   - name: FAQ for Copilot in Process Mining
     href: faqs-copilot-in-process-mining.md

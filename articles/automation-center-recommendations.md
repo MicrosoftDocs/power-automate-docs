@@ -129,9 +129,9 @@ The following list of recommendations aims to provide proactive guidance and act
 > - Recommendations that don't have a real time refresh frequency hold data snapshots from when the recommendation was generated. As a result, if you revisit an older recommendation, the information displayed under artifact details may no longer be accurate or applicable.
 > - If you're a premium Power Automate user and it's your first time accessing the automation center, we will begin generating recommendations for you. These should be ready for your review in about an hour or two.
 > - Generation of recommendations is paused if:
-    > - you don't return to the automation center within 7 days
-    > - your premium license was unassigned by your IT team
-    > - your trial expired
+  > - you don't return to the automation center within 7 days
+  > - your premium license was unassigned by your IT team
+  > - your trial expired
 > - The recommendations shown as part of the automation center are intra-environmental recommendations targeted to makers, operators, and CoE team members. If you are looking for admin related, tenant-wide recommendations in Power Platform admin center, these are part of a separate feature called [**Power Platform Advisor**](/power-platform/admin/power-platform-advisor).
 
 ### Work queue SLA violation
