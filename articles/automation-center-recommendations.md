@@ -102,6 +102,8 @@ The **refresh frequency** provides information on how often the recommendation d
 
 ## List of recommendations
 
+The following list of recommendations aims to provide proactive guidance and actionable isnights for optimizing and troubleshooting various aspects of your automations. From addressing work queue SLA violations and capacity overages to improving system resilience and efficiency, each recommendation offers a detailed and proposed solutions or more details. 
+
 > [!NOTE]
 >
 > - Recommendations that don't have a real time refresh frequency hold data snapshots from when the recommendation was generated. As a result, if you revisit an older recommendation, the information displayed under artifact details may no longer be accurate or applicable.
