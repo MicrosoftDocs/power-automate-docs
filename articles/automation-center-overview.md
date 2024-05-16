@@ -36,6 +36,7 @@ The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#r
 > - Data under the **Work queues** tab and **Recommendations** are premium features, which require a Power Automate Premium license.
 > - When you navigate between tabs, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
 > - Desktop flow related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
+> - Cloud flow run history shown on the overview and runs tab might take up to an hour to be available in Dataverse and the automation center.
 
 ## Copilot
 
@@ -107,15 +108,16 @@ The following are current limitations of the automation center and its underlyin
 
 - Visualizations are based on top-level cloud flow runs only.
 - Only runs for solution-based cloud flows are available in the automation center.
+- Only 1st-level child cloud and desktop flow runs are shown under **Runs**.
 - Top-level desktop flow runs aren't supported yet (for local attended or API-based scenarios)
 - Co-owned or shared flows aren't supported yet (users don't see runs of flows that are shared with them).
 - Child flow run-specific filters or sorting aren't supported yet.
 - Users with broader access to run data (such as admins or members of the CoE team) might see *Private flow* as flow names if the corresponding cloud flow isn't explicitly shared with them (or deleted in the meantime).
 - Users with broader access to run data might encounter increased latency during data load because of high cloud flow run volumes. Performance can be improved by selecting more filters and reducing date ranges.
-- Only 1st-level child cloud and desktop flow runs are shown under **Runs**.
 - If there's a visual showing "*Too many results*", try to adjust your filter to limit the number of data that is being returned.
 - If you see Dataverse or cloud flow run-specific notifications, check the underlying [cloud flow run history documentation](dataverse/cloud-flow-run-metadata.md) to learn more.
 - Older cloud flow run history might be missing for the selected date range filter. This might be due to your current environment's [time to live](dataverse/cloud-flow-run-metadata.md#cloud-flow-run-elements) (TTL) configuration, which is set to retain cloud flow runs for a period of *n-days* only.
+- Cloud flow run history in Dataverse is a preview feature as well, and comes with its own set of [known limitations](dataverse/cloud-flow-run-metadata.md#known-limitations) that might affect the data shown in the automation center.
 
 ## Learn more
 

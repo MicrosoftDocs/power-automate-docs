@@ -49,9 +49,29 @@ Recommendations are displayed as cards in the carousel located at the top of the
 
 ### Recommendation card
 
+The recommendation card shown in the image below is the entry point to your recommendations. Here’s a detailed breakdown of the card’s components:
+
+- **Type**: Indicated by an exclamation mark in a triangle, showing that this is a warning or alert.
+- **Title**: "Work queue SLA at risk" – this provides a concise title of the issue.
+- **Refresh frequency**: "HOURLY" – this specifies the refresh frequency of the recommendation data.
+- **Impact**: "Medium" – this indicates the severity or importance of the issue.
+- **Recommendation details**: The short text that describes the recommendation.
+- **Actions or details**: Call to action or detail that provides more in-depth information about the specific recommendation.
+
 :::image type="content" source="media/automation-center/recommendation-card.png" alt-text="Screenshot of a recommendation card on automation center overview page." lightbox="media/automation-center/recommendation-card.png":::
 
 ### Recommendation details panel
+
+The recommendation details panel shown in the image below provides a more detailed view with inline, actionable insights. Here’s a detailed breakdown of the panel's components:
+
+- **Type**: Indicated by an exclamation mark in a triangle, showing that this is a warning or alert.
+- **Title**: "Work queue SLA at risk" – this provides a concise title of the issue.
+- **Refresh frequency**: "HOURLY" – this specifies the refresh frequency of the recommendation data.
+- **Recommendation timestamp**: Shows the date when the recommendation was generated.
+- **Recommendation details**: Provides context and specifics about the recommendation, including an explanation and suggested actions.
+- **Corrective actions or guidance**: Specific actions recommended to mitigate the issue.
+- **Call to action or details**: Provides buttons for immediate actions or for further details.
+- **Affected artefact details**: A table or chart listing affected recommendation artifacts such as flows, work queues, machines etc.
 
 :::image type="content" source="media/automation-center/recommendation-details-panel.png" alt-text="Screenshot of a recommendation details panel on automation center overview page." lightbox="media/automation-center/recommendation-details-panel.png":::
 
@@ -102,6 +122,8 @@ The **refresh frequency** provides information on how often the recommendation d
 
 ## List of recommendations
 
+The following list of recommendations aims to provide proactive guidance and actionable isnights for optimizing and troubleshooting various aspects of your automations. From addressing work queue SLA violations and capacity overages to improving system resilience and efficiency, each recommendation offers a detailed and proposed solutions or more details. 
+
 > [!NOTE]
 >
 > - Recommendations that don't have a real time refresh frequency hold data snapshots from when the recommendation was generated. As a result, if you revisit an older recommendation, the information displayed under artifact details may no longer be accurate or applicable.
@@ -131,7 +153,7 @@ The **refresh frequency** provides information on how often the recommendation d
 |---|---|  
 | Title | Work queue SLA at risk |  
 | Card details | {*number of work queues*} work queues are close to breaching their service level agreement (SLA) or are already breached. |  
-| Recommendation details | Based on average handling time, volume, available machine capacity, and expiration dates, {*number of work queues*} work queues are at risk of not meeting their SLA targets. Investigate and adjust work queue capacity and prioritization. |  
+| Recommendation details | Based on average handling time, volume, available machine capacity, and expiration dates, {*number of work queues*} work queues are at risk of not meeting their SLA targets. Investigate and adjust work queue capacity and prioritization. All work queue items that are either already expired, or expire within the next hour, will be included in this recommendation. |  
 | Type | Warning |  
 | Impact | Medium |  
 | Refresh frequency | Hourly |  
@@ -183,7 +205,7 @@ The **refresh frequency** provides information on how often the recommendation d
 |---|---|  
 | Title | Fix failing automations |  
 | Card details | One or more of your automation runs have failed. We'll show you why and help you fix the affected automations. |  
-| Recommendation details | There are one or more runs that need your attention. |  
+| Recommendation details | There are one or more runs that need your attention. The recommendation considers only failed automations from the past week. Any failures older than one week are not included. |  
 | Type | Error |  
 | Impact | High |  
 | Refresh frequency | Live-query |  
