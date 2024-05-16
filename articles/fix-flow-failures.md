@@ -95,6 +95,15 @@ In many cases, flows fail because of an authentication error. If you have this t
    
  The flow should now run as expected.
 
+## Troubleshooting Copilot
+The new Troubleshooting Copilot agent in Power Automate is designed to assist users in identifying and resolving errors that may occur during the testing of cloud flows or when reviewing a flow run history. This feature is for Copilot users when the new designer experience (v3) is enabled.
+
+The troubleshooting Copilot provides a human-readable summary of the error and, when possible, attempts to provide a solution to correct the problem. This can greatly enhance the user experience by reducing the time and effort required to troubleshoot and resolve issues.
+
+However, it’s important to note that the troubleshooting Copilot may not work in all scenarios. But the good news is, it’s continuously learning and improving over time, which means its ability to assist users and resolve issues will only get better. This is a great example of how AI and machine learning can be leveraged to improve user experience and productivity.
+
+  ![Troubleshooting Copilot suggestion for fixing a failed flow run.](./media/fix-flow-failures/TSC.png)
+
 ## Action configuration
 Flows also fail if a setting in an action of the flow doesn't function as expected. In this case, the error message contains **Bad request** or **Not found**, or an error code of **400** or **404** appears.
 
