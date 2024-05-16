@@ -205,7 +205,7 @@ The following list of recommendations aims to provide proactive guidance and act
 |---|---|  
 | Title | Fix failing automations |  
 | Card details | One or more of your automation runs have failed. We'll show you why and help you fix the affected automations. |  
-| Recommendation details | There are one or more runs that need your attention. |  
+| Recommendation details | There are one or more runs that need your attention. The recommendation considers only failed automations from the past week. Any failures older than one week are not included. |  
 | Type | Error |  
 | Impact | High |  
 | Refresh frequency | Live-query |  
