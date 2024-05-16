@@ -62,6 +62,17 @@ The recommendation card shown in the image below is the entry point to your reco
 
 ### Recommendation details panel
 
+The recommendation details panel shown in the image below provides a more detailed view with inline, actionable insights. Here’s a detailed breakdown of the panel's components:
+
+- **Type**: Indicated by an exclamation mark in a triangle, showing that this is a warning or alert.
+- **Title**: "Work queue SLA at risk" – this provides a concise title of the issue.
+- **Refresh frequency**: "HOURLY" – this specifies the refresh frequency of the recommendation data.
+- **Recommendation timestamp**: Shows the date when the recommendation was generated.
+- **Recommendation details**: Provides context and specifics about the recommendation, including an explanation and suggested actions.
+- **Corrective actions or guidance**: Specific actions recommended to mitigate the issue.
+- **Call to action or details**: Provides buttons for immediate actions or for further details.
+- **Affected artefact details**: A table or chart listing affected recommendation artifacts such as flows, work queues, machines etc.
+
 :::image type="content" source="media/automation-center/recommendation-details-panel.png" alt-text="Screenshot of a recommendation details panel on automation center overview page." lightbox="media/automation-center/recommendation-details-panel.png":::
 
 ## All recommendations panel
