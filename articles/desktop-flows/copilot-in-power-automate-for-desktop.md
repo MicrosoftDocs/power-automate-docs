@@ -35,12 +35,12 @@ Currently, Copilot in Power Automate for desktop is only available in environmen
 
 ### Availability by account type
 
-Currently, copilot in Power Automate for desktop is only available for users with a work or school account.
+Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
 
 > [!NOTE]
 > If your environment is in a supported region, you are signed in with a work or school account, and you still can't see the copilot in Power Automate for desktop experience, contact your Power Platform administrator. An admin can turn the Copilot feature off or on in the Power Platform admin center. 
 
-## Create a desktop flow using the Copilot (preview)
+## Create a desktop flow using Copilot (preview)
 
 You can create a new flow in the Power Automate for desktop Console from either the Copilot in the home page or from the Copilot’s side panel.
 To create a flow from the home page, type your prompt in the Copilot’s chat area:
