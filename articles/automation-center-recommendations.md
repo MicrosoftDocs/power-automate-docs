@@ -49,6 +49,15 @@ Recommendations are displayed as cards in the carousel located at the top of the
 
 ### Recommendation card
 
+The recommendation card shown in the image below is the entry point to your recommendations. Here’s a detailed breakdown of the card’s components:
+
+- **Type**: Indicated by an exclamation mark in a triangle, showing that this is a warning or alert.
+- **Title**: "Work queue SLA at risk" – this provides a concise title of the issue.
+- **Refresh frequency**: "HOURLY" – this specifies the refresh frequency of the recommendation data.
+- **Impact**: "Medium" – this indicates the severity or importance of the issue.
+- **Recommendation details**: The short text that describes the recommendation.
+- **Actions or details**: Call to action or detail that provides more in-depth information about the specific recommendation.
+
 :::image type="content" source="media/automation-center/recommendation-card.png" alt-text="Screenshot of a recommendation card on automation center overview page." lightbox="media/automation-center/recommendation-card.png":::
 
 ### Recommendation details panel
