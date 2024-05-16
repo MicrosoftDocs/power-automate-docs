@@ -153,7 +153,7 @@ The following list of recommendations aims to provide proactive guidance and act
 |---|---|  
 | Title | Work queue SLA at risk |  
 | Card details | {*number of work queues*} work queues are close to breaching their service level agreement (SLA) or are already breached. |  
-| Recommendation details | Based on average handling time, volume, available machine capacity, and expiration dates, {*number of work queues*} work queues are at risk of not meeting their SLA targets. Investigate and adjust work queue capacity and prioritization. |  
+| Recommendation details | Based on average handling time, volume, available machine capacity, and expiration dates, {*number of work queues*} work queues are at risk of not meeting their SLA targets. Investigate and adjust work queue capacity and prioritization. All work queue items that are either already expired, or expire within the next hour, will be included in this recommendation. |  
 | Type | Warning |  
 | Impact | Medium |  
 | Refresh frequency | Hourly |  
