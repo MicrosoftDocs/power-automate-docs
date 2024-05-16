@@ -36,6 +36,7 @@ The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#r
 > - Data under the **Work queues** tab and **Recommendations** are premium features, which require a Power Automate Premium license.
 > - When you navigate between tabs, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
 > - Desktop flow related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
+> - Cloud flow run history shown on the overview and runs tab might take up to an hour to be available in Dataverse and the automation center.
 
 ## Copilot
 
