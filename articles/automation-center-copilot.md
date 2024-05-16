@@ -253,6 +253,7 @@ This table shows default responses that are returned when Copilot is unable to u
 | **Copilot reply** | **Details** |
 |-------------------------|-------------------------|
 | `Sorry, something went wrong. Please try again.` |  Indicates that an unexpected error occurred. Rephrase your question and try again. |
+| `Sorry, I couldn't find any results for that query. Please try again by refining your question, or consider using a sample suggestion from the prompt guide.` | Indicates that the question was understood and a valid query has been generated, but there is no data available to be returned. |
 | `Sorry, I couldn’t understand your question. Rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask Copilot, you can visit the prompt example section on our documentation page.` |  Indicates that your question couldn't be translated into a valid FetchXML query. Rephrase your question and try again. |
 | `Sorry, Copilot is at capacity and temporarily unavailable — please try again in a little while.` |  Indicates there are resource constraints on the backend. Retry your question after a short time. |
 | `Sorry, your message contains potentially harmful content. Please ensure your input is appropriate and try again.` |  Indicates that your question was blocked by the backend service because it might include potentially harmful content. Remove any potentially harmful content from your question and try again. |
