@@ -49,7 +49,7 @@ Recommendations are displayed as cards in the carousel located at the top of the
 
 ### Recommendation card
 
-The recommendation card shown in the image below is the entry point to your recommendations. Here’s a detailed breakdown of the card’s components:
+The recommendation card shown in the following image is the entry point to your recommendations. Here’s a detailed breakdown of the card’s components:
 
 - **Type**: Indicated by an exclamation mark in a triangle, showing that this is a warning or alert.
 - **Title**: "Work queue SLA at risk" – this provides a concise title of the issue.
@@ -62,16 +62,16 @@ The recommendation card shown in the image below is the entry point to your reco
 
 ### Recommendation details panel
 
-The recommendation details panel shown in the image below provides a more detailed view with inline, actionable insights. Here’s a detailed breakdown of the panel's components:
+The recommendation details panel shown in the following image provides a more detailed view with inline, actionable insights. Here’s a detailed breakdown of the panel's components:
 
-- **Type**: Indicated by an exclamation mark in a triangle, showing that this is a warning or alert.
-- **Title**: "Work queue SLA at risk" – this provides a concise title of the issue.
-- **Refresh frequency**: "HOURLY" – this specifies the refresh frequency of the recommendation data.
+- **Type**: Indicated by an exclamation mark in a triangle, showing that this recommendation is a warning or alert.
+- **Title**: "Work queue SLA at risk" – this value provides a concise title of the issue.
+- **Refresh frequency**: "HOURLY" – this value specifies the refresh frequency of the recommendation data.
 - **Recommendation timestamp**: Shows the date when the recommendation was generated.
 - **Recommendation details**: Provides context and specifics about the recommendation, including an explanation and suggested actions.
 - **Corrective actions or guidance**: Specific actions recommended to mitigate the issue.
 - **Call to action or details**: Provides buttons for immediate actions or for further details.
-- **Affected artefact details**: A table or chart listing affected recommendation artifacts such as flows, work queues, machines etc.
+- **Affected artifact details**: A table or chart listing affected recommendation artifacts such as flows, work queues, machines etc.
 
 :::image type="content" source="media/automation-center/recommendation-details-panel.png" alt-text="Screenshot of a recommendation details panel on automation center overview page." lightbox="media/automation-center/recommendation-details-panel.png":::
 
@@ -116,13 +116,13 @@ The **refresh frequency** provides information on how often the recommendation d
 
 | Refresh frequency | Description |  
 |---|---|  
-| DAILY | A new instance of the recommendation data is regenerated once a day. |  
-| HOURLY | A new instance of the recommendation is regenerated every hour. |  
-| REAL TIME | The recommendation is an actual live-query to the underlying automation data. |  
+| Daily | A new instance of the recommendation data is regenerated once a day. |  
+| Hourly | A new instance of the recommendation is regenerated every hour. |  
+| Real time | The recommendation is an actual live-query to the underlying automation data. |  
 
 ## List of recommendations
 
-The following list of recommendations aims to provide proactive guidance and actionable isnights for optimizing and troubleshooting various aspects of your automations. From addressing work queue SLA violations and capacity overages to improving system resilience and efficiency, each recommendation offers a detailed and proposed solutions or more details. 
+The following list of recommendations aims to provide proactive guidance and actionable insights for optimizing and troubleshooting various aspects of your automations. From addressing work queue SLA violations and capacity overages to improving system resilience and efficiency, each recommendation offers a detailed proposed solution or more details.
 
 > [!NOTE]
 >
@@ -169,7 +169,7 @@ The following list of recommendations aims to provide proactive guidance and act
 | Recommendation details | Your current Power Automate Process capacity isn't enough to handle your workload. You need {*number of capacity*} additional Power Automate Process capacity to meet your needs. |  
 | Type | Error |  
 | Impact | Medium |  
-| Refresh frequency | Live-query |  
+| Refresh frequency | Real time |  
 | Category | Licensing |  
 | Recommended action(s) | We recommend requesting additional hosted process capacity to avoid any potential issues and disruptions. |  
 
@@ -182,7 +182,7 @@ The following list of recommendations aims to provide proactive guidance and act
 | Recommendation details | Your current Power Automate Hosted Process capacity isn't enough to handle your workload. You need {*number of capacities*} additional Power Automate Hosted Process capacity to meet your needs. |  
 | Type | Error |  
 | Impact | Medium |  
-| Refresh frequency | Live-query |  
+| Refresh frequency | Real time |  
 | Category | Licensing |  
 | Recommended action(s) | We recommend requesting additional hosted process capacity to avoid any potential issues and disruptions. |  
 
@@ -208,7 +208,7 @@ The following list of recommendations aims to provide proactive guidance and act
 | Recommendation details | There are one or more runs that need your attention. The recommendation considers only failed automations from the past week. Any failures older than one week are not included. |  
 | Type | Error |  
 | Impact | High |  
-| Refresh frequency | Live-query |  
+| Refresh frequency | Real time |  
 | Category | Monitoring |  
 | Recommended action(s) | Review the list of runs and open flow or run details to troubleshoot. |  
 

@@ -51,7 +51,7 @@ Copilot is designed to assist with the analysis of automation activity, work que
 
 ## Overview tab
 
-This tab provides an end-to-end automation health view within the environment and is based on top-level flow reporting. The [Recommendations](#recommendations) section of this tab provides actionable insights to your automation estate. You can prioritize and address the most important issues and recommendations, based on their potential impact.
+This tab provides an end-to-end automation health view within the environment and is based on top-level flow reporting. The [Recommendations](#recommendations) section of this tab provides actionable insights to your automation estate. You can prioritize and address the most important issues and recommendations, based on their potential effect.
 
 :::image type="content" source="media/automation-center/automation-center-overview-tab.png" alt-text="Screenshot of the overview page in automation center." lightbox="media/automation-center/automation-center-overview-tab.png":::
 
@@ -71,11 +71,11 @@ This tab provides an end-to-end automation health view within the environment an
 
 ### Recommendations
 
-The recommendations section offers both proactive and reactive insights, along with suggestions concerning various elements of your automation landscape. This includes addressing sudden automation failures, work queues at risk of not meeting their service level agreement (SLA) targets, and unused machines or machine groups in the environment. These recommendations can help you identify areas for improvement and take appropriate action based on their impact. For more information, see [automation center recommendations](automation-center-recommendations.md).
+The recommendations section offers both proactive and reactive insights, along with suggestions concerning various elements of your automation landscape. Suggestions might include addressing sudden automation failures, work queues at risk of not meeting their service level agreement (SLA) targets, and unused machines or machine groups in the environment. These recommendations can help you identify areas for improvement and take appropriate action based on their effect. For more information, see [automation center recommendations](automation-center-recommendations.md).
 
 ## Runs tab
 
-This tab presents a consolidated view of cloud and desktop flow run data displayed in a hierarchical list-view. The data is organized based on top-level cloud flows. If a cloud flow has one or more child flows (supporting both cloud and desktop children), the child flow names are indented and preceded by a *'>'* character. This view is useful in scenarios where individual flow session runs succeeded, but other dependent runs failed, ultimately resulting in the top-level flow's failure. By displaying these runs in connection to their parent, this view enhances automation monitoring and enables efficient root cause analysis of any exceptions.
+This tab presents a consolidated view of cloud and desktop flow run data displayed in a hierarchical list view. The data is organized based on top-level cloud flows. If a cloud flow has one or more child flows (supporting both cloud and desktop children), the child flow names are indented and preceded with a *'>'* character. This view is useful in scenarios where individual flow session runs succeeded, but other dependent runs failed, ultimately resulting in the top-level flow's failure. By displaying these runs in connection to their parent, this view enhances automation monitoring and enables efficient root cause analysis of any exceptions.
 
 :::image type="content" source="media/automation-center/automation-center-runs-tab.png" alt-text="Screenshot of the runs page on automation center." lightbox="media/automation-center/automation-center-runs-tab.png":::
 
@@ -104,7 +104,7 @@ This tab provides metrics to monitor the health status of work queue items, incl
 
 ## Known limitations
 
-The following are current limitations of the automation center and its underlying data structure. Some of these limitations will be resolved as we continue to develop this feature.
+The following are current limitations of the automation center and its underlying data structure.
 
 - Visualizations are based on top-level cloud flow runs only.
 - Only runs for solution-based cloud flows are available in the automation center.
@@ -112,11 +112,11 @@ The following are current limitations of the automation center and its underlyin
 - Top-level desktop flow runs aren't supported yet (for local attended or API-based scenarios)
 - Co-owned or shared flows aren't supported yet (users don't see runs of flows that are shared with them).
 - Child flow run-specific filters or sorting aren't supported yet.
-- Users with broader access to run data (such as admins or members of the CoE team) might see *Private flow* as flow names if the corresponding cloud flow isn't explicitly shared with them (or deleted in the meantime).
+- Users with broader access to run data (such as admins or members of the CoE team) might see *Private flow* as flow names. This name might appear if the corresponding cloud flow isn't explicitly shared with the user or the flow was deleted in the meantime.
 - Users with broader access to run data might encounter increased latency during data load because of high cloud flow run volumes. Performance can be improved by selecting more filters and reducing date ranges.
 - If there's a visual showing "*Too many results*", try to adjust your filter to limit the number of data that is being returned.
 - If you see Dataverse or cloud flow run-specific notifications, check the underlying [cloud flow run history documentation](dataverse/cloud-flow-run-metadata.md) to learn more.
-- Older cloud flow run history might be missing for the selected date range filter. This might be due to your current environment's [time to live](dataverse/cloud-flow-run-metadata.md#cloud-flow-run-elements) (TTL) configuration, which is set to retain cloud flow runs for a period of *n-days* only.
+- Older cloud flow run history might be missing for the selected date range filter. Missing run history might be due to your current environment's [time to live](dataverse/cloud-flow-run-metadata.md#cloud-flow-run-elements) (TTL) configuration, which is set to retain cloud flow runs for *n-days* only.
 - Cloud flow run history in Dataverse is a preview feature as well, and comes with its own set of [known limitations](dataverse/cloud-flow-run-metadata.md#known-limitations) that might affect the data shown in the automation center.
 
 ## Learn more

@@ -34,7 +34,7 @@ Understanding automation activity and performance are key to achieving operation
 
 ## Prerequisites
 
-- A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in the United States.
+- A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) located in the United States.
 - During initial preview, you must have an environment in the United States region to use this feature. If you don’t have access to an environment based in the United States, you can ask your administrator to [create a new environment in Power Platform admin center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
 - Check [known limitations](#known-issues-and-limitations) for more information.
 
@@ -67,7 +67,7 @@ When Copilot opens (per session) the first time, the "cloud flow" skill is prese
 
 ### What are FetchXML queries?
 
-Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) is a language used for retrieving data from a Dataverse database. It's designed to be easy to create, use, and understand. For example, you might want to ask Dataverse to give you a list of all flow runs for a specific flow. The FetchXML query is the way you phrase that question so the database understands it and can give you the right results.
+Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) is a language used for retrieving data from a Dataverse database. FetchXML is designed to be easy to create, use, and understand. For example, you might want to ask Dataverse to give you a list of all flow runs for a specific flow. The FetchXML query is the way you phrase that question so the database understands it and can give you the right results.
 
 ## Prompt best-practices
 
@@ -157,7 +157,7 @@ If you wish to reset the conversation with Copilot, select the three dots `...` 
 
 ### Edit and rerun FetchXML queries returned by Copilot
 
-You can fine-tune the queries returned by Copilot through in-place edits in the code area. Just change the code to match your new search criteria and select **Run**. To illustrate this, let's consider the following prompt:
+You can fine-tune the queries returned by Copilot through in-place edits in the code area. Just change the code to match your new search criteria and select **Run**. To illustrate, let's consider the following prompt:
 
 - *"How many flows were triggered by schedule in the last three days?"*
 
@@ -212,7 +212,7 @@ After you submit your query to Copilot, you get a reply that includes a link lab
 5. On the search bar that appears, enter *Dataverse*, and then select the **Dataverse** connector from the results.
 6. Various actions are displayed. Scroll through until you find and select the **List rows** action.
 7. Within the **List rows** action, select the **Show advanced options** link.
-8. A FetchXML query field appears. This is where you input the copied FetchXML query that Copilot previously generated.
+8. A FetchXML query field appears. This field is where you input the copied FetchXML query that Copilot previously generated.
 9. After pasting in your FetchXML, select **Save**.  
 10. Test your flow by selecting **Test**.
 11. Follow the prompts on your screen to start your flow manually to review its results.  
@@ -237,7 +237,7 @@ If data matches the given FetchXML query, the **List rows** Dataverse action con
   
 For distribution based questions like previously mentioned, data is grouped by one or more fields (`statuscode`), together with an aggregation (`count`) that returns the number for each group (that is, `failed`, `succeeded`, and so on).
 
-Each of the returned records contain fields such as:  
+Each record returned contains fields such as:  
   
 - `flowsession_count`: The number of times the workflow ran.  
 - `flowsession_regardingobjectid`: The unique identifier for the flow run.  
@@ -252,13 +252,13 @@ This table shows default responses that are returned when Copilot is unable to u
 
 | **Copilot reply** | **Details** |
 |-------------------------|-------------------------|
-| `Sorry, something went wrong. Please try again.` |  Indicates that an unexpected error occurred. Rephrase your question and try again. |
-| `Sorry, I couldn't find any results for that query. Please try again by refining your question, or consider using a sample suggestion from the prompt guide.` | Indicates that the question was understood and a valid query has been generated, but there is no data available to be returned. |
-| `Sorry, I couldn’t understand your question. Rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask Copilot, you can visit the prompt example section on our documentation page.` |  Indicates that your question couldn't be translated into a valid FetchXML query. Rephrase your question and try again. |
-| `Sorry, Copilot is at capacity and temporarily unavailable — please try again in a little while.` |  Indicates there are resource constraints on the backend. Retry your question after a short time. |
-| `Sorry, your message contains potentially harmful content. Please ensure your input is appropriate and try again.` |  Indicates that your question was blocked by the backend service because it might include potentially harmful content. Remove any potentially harmful content from your question and try again. |
-| `Sorry, I was not able to generate a valid answer based on your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask Copilot, you can visit the prompt example section on our documentation page.` |  Indicates that the generated FetchXML is invalid or that the query failed when Copilot tried to execute it. Rephrase your question and try again. |
-| `Sorry, your search includes too many results. Please refine your query and try again. For examples on how to limit search results returned by Copilot, visit our documentation page.` |  Indicates that the filters applied to your query exceed current aggregation [limits in FetchXML](/power-apps/developer/data-platform/use-fetchxml-aggregation#limitations). Add more appropriate filters such as only yesterday's or last month's data to ensure the query returns data within those limits. |
+| `Sorry, something went wrong. Please try again.` |  An unexpected error occurred. Rephrase your question and try again. |
+| `Sorry, I couldn't find any results for that query. Please try again by refining your question, or consider using a sample suggestion from the prompt guide.` | The question was understood and a valid query was generated, but there's no data available to be returned. |
+| `Sorry, I couldn’t understand your question. Rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask Copilot, you can visit the prompt example section on our documentation page.` |  Your question couldn't be translated into a valid FetchXML query. Rephrase your question and try again. |
+| `Sorry, Copilot is at capacity and temporarily unavailable — please try again in a little while.` |  There are resource constraints on the backend. Retry your question after a short time. |
+| `Sorry, your message contains potentially harmful content. Please ensure your input is appropriate and try again.` |  The backend service blocked your question because it might include potentially harmful content. Remove any potentially harmful content from your question and try again. |
+| `Sorry, I was not able to generate a valid answer based on your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask Copilot, you can visit the prompt example section on our documentation page.` |  The generated FetchXML is invalid or that the query failed when Copilot tried to execute it. Rephrase your question and try again. |
+| `Sorry, your search includes too many results. Please refine your query and try again. For examples on how to limit search results returned by Copilot, visit our documentation page.` |  The filters applied to your query exceed current aggregation [limits in FetchXML](/power-apps/developer/data-platform/use-fetchxml-aggregation#limitations). Add more appropriate filters such as only yesterday's or last month's data to ensure the query returns data within those limits. |
 
 ## Known issues and limitations
 
