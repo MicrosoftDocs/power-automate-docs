@@ -116,9 +116,9 @@ The **refresh frequency** provides information on how often the recommendation d
 
 | Refresh frequency | Description |  
 |---|---|  
-| Daily | A new instance of the recommendation data is regenerated once a day. |  
-| Hourly | A new instance of the recommendation is regenerated every hour. |  
-| Real time | The recommendation is an actual live-query to the underlying automation data. |  
+| DAILY | A new instance of the recommendation data is regenerated once a day. |  
+| HOURLY | A new instance of the recommendation is regenerated every hour. |  
+| REAL TIME | The recommendation is an actual live-query to the underlying automation data. |  
 
 ## List of recommendations
 
