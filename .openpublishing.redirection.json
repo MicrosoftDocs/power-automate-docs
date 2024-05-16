@@ -749,6 +749,11 @@
       "source_path": "articles/custom-controls-business-process-flows.md",
       "redirect_url": "/power-automate/business-process-flows-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/trigger-flow-powerbi-report.md",
+      "redirect_url": "/power-bi/create-reports/power-bi-automate-visual",
+      "redirect_document_id": false
     }
   ]
 }
