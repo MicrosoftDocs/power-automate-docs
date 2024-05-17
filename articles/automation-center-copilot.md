@@ -126,7 +126,7 @@ In the context of AI, *multi-turn* prompts allow you to have an ongoing conversa
 > [!NOTE]
 >
 > - Generative answers (documentation skill) does not support multi-turn conversations yet.
-> - When engaging in a multi-turn conversation, Copilot keeps track of the five most recent questions only. This means that Copilot starts clearing the prompts that were entered first and only keeps the latest five. To improve response quality, we suggest limiting your follow-up questions to four and then restart the chat. For more information, see [Clear previous prompt context to start over](#clear-previous-prompt-context-to-start-over).
+> - When engaging in a multi-turn conversation, Copilot keeps track of the ten most recent questions only. This means that Copilot starts clearing the prompts that were entered first and only keeps the latest ten. To improve response quality, we suggest limiting your follow-up questions or more frequently restart the chat. For more information, see [Clear previous prompt context to start over](#clear-previous-prompt-context-to-start-over).
 
 #### Example
 
