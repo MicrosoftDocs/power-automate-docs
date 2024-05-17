@@ -32,7 +32,8 @@ The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#r
 
 > [!NOTE]
 >
-> - Some filters may not be available for some pivots because of the nature of the presented data.
+> - Cloud flow-based filtering currently only lists solution cloud flows that were created in the current environment and excludes those imported manually or through ALM pipelines.
+> - Some filters may not be available for some tabs because of the nature of the presented data.
 > - Data under the **Work queues** tab and **Recommendations** are premium features, which require a Power Automate Premium license.
 > - When you navigate between tabs, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
 > - Desktop flow related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
