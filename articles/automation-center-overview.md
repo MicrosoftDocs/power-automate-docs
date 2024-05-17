@@ -106,7 +106,7 @@ This tab provides metrics to monitor the health status of work queue items, incl
 
 The following are current limitations of the automation center and its underlying data structure.
 
-- Cloud flow based filtering currently only lists solution cloud flows that were created in the current environment and excludes previously imported through a solution.
+- Cloud flow-based filtering currently only lists solution cloud flows that were created in the current environment. Filtering support for cloud flows that were imported as part of a solutions will be coming soon.
 - Visualizations are based on top-level cloud flow runs only.
 - Only runs for solution-based cloud flows are available in the automation center.
 - During initial preview, visibility of flows and their run history in automation center requires you to be the owner (co-ownership isn't sufficient) of the flows or to have environment wide access to the relevant data in the environment. The main Dataverse tables that power the data shown in the automation center are:  
