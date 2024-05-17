@@ -75,7 +75,7 @@ Copilot is designed to assist with the analysis of automation activity, work que
 
 ## Runs tab
 
-This tab presents a consolidated view of cloud and desktop flow run data displayed in a hierarchical list view. The data is organized based on top-level cloud flows. If a cloud flow has one or more child flows (supporting both cloud and desktop children), the child flow names are indented and preceded with a *'>'* character. This view is useful in scenarios where individual flow session runs succeeded, but other dependent runs failed, ultimately resulting in the top-level flow's failure. By displaying these runs in connection to their parent, this view enhances automation monitoring and enables efficient root cause analysis of any exceptions.
+This tab presents a consolidated view of cloud and desktop flow run data displayed in a hierarchical list view. The data is organized based on top-level cloud flows. If a cloud flow has one or more child flows (supporting both cloud and desktop children), the child flow names are indented and preceded with a *'>'* character. This view is useful in scenarios where individual flow session runs succeeded, but other dependent runs failed, ultimately resulting in the top-level flow's failure. By displaying these runs in connection to their parent, we're enhancing automation monitoring and efficient root cause analysis of exceptions.
 
 :::image type="content" source="media/automation-center/automation-center-runs-tab.png" alt-text="Screenshot of the runs page on automation center." lightbox="media/automation-center/automation-center-runs-tab.png":::
 
