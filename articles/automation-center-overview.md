@@ -28,7 +28,7 @@ The automation center provides comprehensive monitoring and troubleshooting expe
 
 ## Data and visualization strategy
 
-The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#runs-tab) pages is based on cloud and desktop flow run data that is stored in Microsoft Dataverse. These pages are designed to provide you with a **top-level** view of your flow run activities, including first-level child cloud or desktop flow runs associated with a particular top-level flow. This approach enables you to monitor the entire automation from start to end. It allows you to determine whether the overall automation succeeded or failed, providing data on the total and average duration of the runs, among many other metrics.
+The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#runs-tab) pages is based on cloud and desktop flow run data that is stored in Microsoft Dataverse. These pages are designed to provide you with a top-level view of your flow run activities, including first-level child cloud or desktop flow runs associated with a particular top-level flow. This approach enables you to monitor the entire automation from start to end. It allows you to determine whether the overall automation succeeded or failed, providing data on the total and average duration of the runs, among many other metrics.
 
 > [!NOTE]
 >
@@ -121,7 +121,7 @@ The following are current limitations of the automation center and its underlyin
 - Child flow run-specific filters or sorting aren't supported yet.
 - Users with broader access to run data (such as admins or members of the CoE team) might see *Private flow* as flow names. This name might appear if the corresponding cloud flow isn't explicitly shared with the user or the flow was deleted in the meantime.
 - Users with broader access to run data might encounter increased latency during data load because of high cloud flow run volumes. Performance can be improved by selecting more filters and reducing date ranges.
-- If there's a visual showing "*Too many results*", try to adjust your filter to limit the number of data that is being returned.
+- If there's a visual showing "*Too many results*", try to adjust your filter to limit the amount of data that is being returned.
 - If you see Dataverse or cloud flow run-specific notifications, check the underlying [cloud flow run history documentation](dataverse/cloud-flow-run-metadata.md) to learn more.
 - Older cloud flow run history might be missing for the selected date range filter. Missing run history might be due to your current environment's [time to live](dataverse/cloud-flow-run-metadata.md#cloud-flow-run-elements) (TTL) configuration, which is set to retain cloud flow runs for *n-days* only.
 - Cloud flow run history in Dataverse is a preview feature as well, and comes with its own set of [known limitations](dataverse/cloud-flow-run-metadata.md#known-limitations) that might affect the data shown in the automation center.
