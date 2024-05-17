@@ -32,7 +32,8 @@ The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#r
 
 > [!NOTE]
 >
-> - Some filters may not be available for some pivots because of the nature of the presented data.
+> - Cloud flow-based filtering currently only lists solution cloud flows that were created in the current environment and excludes those imported manually or through ALM pipelines.
+> - Some filters may not be available for some tabs because of the nature of the presented data.
 > - Data under the **Work queues** tab and **Recommendations** are premium features, which require a Power Automate Premium license.
 > - When you navigate between tabs, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
 > - Desktop flow related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
@@ -106,6 +107,7 @@ This tab provides metrics to monitor the health status of work queue items, incl
 
 The following are current limitations of the automation center and its underlying data structure.
 
+- Cloud flow-based filtering currently only lists solution cloud flows that were created in the current environment and excludes previously imported through a solution.
 - Visualizations are based on top-level cloud flow runs only.
 - Only runs for solution-based cloud flows are available in the automation center.
 - During initial preview, visibility of flows and their run history in automation center requires you to be the owner (co-ownership isn't sufficient) of the flows or to have environment-wide access to the relevant data in the environment. The main Dataverse tables that power the data shown in the automation center are:  
