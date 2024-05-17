@@ -1050,10 +1050,10 @@
     items:
     - name: Overview
       href: automation-center-overview.md
-    - name: Copilot
-      href: automation-center-copilot.md
     - name: Recommendations
       href: automation-center-recommendations.md
+    - name: Copilot
+      href: automation-center-copilot.md
   - name: Capacity utilization
     items:
     - name: Introduction to capacity utilization (preview)
