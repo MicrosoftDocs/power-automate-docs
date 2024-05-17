@@ -77,6 +77,7 @@ The recommendation details panel shown in the following image provides a more de
 
 ## All recommendations panel
 
+The "All recommendations panel" shown below is used for viewing latest and older recommendation with filtering capabilities. The recommendations are categorized by type (Error, Warning, Information, Success) and can be filtered by impact (High, Medium, Low), status (Hidden), and date range. This panel is divided into two main sections: one for displaying the most recent recommendations and another for showing older recommendations along with their timestamps. The most recent recommendations are initially displayed under 'Latest', but are replaced with refreshed content based on the recommendation interval.
 :::image type="content" source="media/automation-center/recommendation-history-panel.png" alt-text="Screenshot of a recommendation history panel listing current and previous recommendations on automation center overview page." lightbox="media/automation-center/recommendation-history-panel.png":::
 
 ### Category
