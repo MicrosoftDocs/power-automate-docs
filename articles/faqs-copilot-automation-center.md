@@ -26,7 +26,7 @@ Copilot in automation center is able to answer questions about the following fou
 | 1 | Cloud flow run logs | Cloud flow run status, trigger type, run duration, failure rate |
 | 2 | Desktop flow run logs | Desktop flow run status, used machine, run mode, failure rate |
 | 3 | Work queue data | Work queue items statuses, SLA attainment, processor counts |
-| 4 | Generative answers | General Power Automate feature questions such as *how to analyze activity with Copilot* |
+| 4 | Documentation (generative answers) | General Power Automate feature questions such as *how to analyze activity with Copilot* |
 
 The first three skills in the above, will translate natural language queries (questions) entered by users into Microsoft Dataverse FetchXML query syntax. This allows users to easily retrieve information about their automation data by asking questions in natural language. Additionally, Copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart to effectively present the insights and information to the user.
 
