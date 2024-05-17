@@ -107,16 +107,16 @@ This tab provides metrics to monitor the health status of work queue items, incl
 
 The following are current limitations of the automation center and its underlying data structure.
 
-- Cloud flow-based filtering currently only lists solution cloud flows that were created in the current environment and excludes previously imported through a solution.
+- Cloud flow based filtering currently only lists solution cloud flows that were created in the current environment and excludes previously imported through a solution.
 - Visualizations are based on top-level cloud flow runs only.
 - Only runs for solution-based cloud flows are available in the automation center.
-- During initial preview, visibility of flows and their run history in automation center requires you to be the owner (co-ownership isn't sufficient) of the flows or to have environment-wide access to the relevant data in the environment. The main Dataverse tables that power the data shown in the automation center are:  
-  - `workflow`: Solution-aware cloud flow and desktop flows  
-  - `flowrun`: Cloud flow run history  
+- During initial preview, visibility of flows and their run history in automation center requires you to be the owner (co-ownership isn't sufficient) of the flows or to have environment wide access to the relevant data in the environment. The main Dataverse tables that power the data shown in the automation center are:  
+  - `workflow`: Solution-aware cloud flow and desktop flows
+  - `flowrun`: Cloud flow run history
   - `flowsession`: Desktop flow run history
   - `flowevent`: Recommendations and notifications
-  - `workqueue`: Work queues  
-  - `workqueueitem`: Work queue items  
+  - `workqueue`: Work queues
+  - `workqueueitem`: Work queue items
 - Only 1st-level child cloud and desktop flow runs are shown under **Runs**.
 - Top-level desktop flow runs aren't supported yet (for local attended or API-based scenarios)
 - Co-owned or shared flows aren't supported yet (users don't see runs of flows that are shared with them).
