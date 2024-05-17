@@ -40,7 +40,7 @@ The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#r
 
 ## Overview tab
 
-This tab provides an end-to-end automation health view within the environment and is based on top-level flow reporting. The [Recommendations](#recommendations) section of this tab provides actionable insights to your automation estate. You can prioritize and address the most important issues and recommendations, based on their potential effect.
+This tab provides an end-to-end automation health view within the environment and is based on top-level flow reporting. The [Recommendations](#recommendations) section of this tab provides actionable insights to your automation estate. You can prioritize and address the most important issues and recommendations, based on their potential impact.
 
 :::image type="content" source="media/automation-center/automation-center-overview-tab.png" alt-text="Screenshot of the overview page in automation center." lightbox="media/automation-center/automation-center-overview-tab.png":::
 
