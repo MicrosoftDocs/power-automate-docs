@@ -38,17 +38,6 @@ The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#r
 > - Desktop flow related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
 > - Cloud flow run history shown on the overview and runs tab might take up to an hour to be available in Dataverse and the automation center.
 
-## Copilot
-
-Copilot is designed to assist with the analysis of automation activity, work queue performance, and to provide answers to common questions about Power Automate capabilities (generative answers). For example, users can ask about the number of flows that ran yesterday, which queue items are put on hold, or how to analyze activity with Copilot. In response, Copilot generates outputs that provide insights and answers to the questions asked. For more information, see [Use Copilot to analyze automation activity and ask product questions](automation-center-copilot.md).
-
-> [!IMPORTANT]
->
-> - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
-> - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
-> - During initial preview, you must have an environment in the United States region to use this feature. If you don’t have access to an environment that's based in the United States, you can ask your administrator to [create a new environment in Power Platform admin center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
-> - Read the [responsible AI FAQs for Copilot in automation center (preview)](faqs-copilot-automation-center.md) to learn more about this new copilot experience.
-
 ## Overview tab
 
 This tab provides an end-to-end automation health view within the environment and is based on top-level flow reporting. The [Recommendations](#recommendations) section of this tab provides actionable insights to your automation estate. You can prioritize and address the most important issues and recommendations, based on their potential effect.
@@ -72,6 +61,17 @@ This tab provides an end-to-end automation health view within the environment an
 ### Recommendations
 
 The recommendations section offers both proactive and reactive insights, along with suggestions concerning various elements of your automation landscape. Suggestions might include addressing sudden automation failures, work queues at risk of not meeting their service level agreement (SLA) targets, and unused machines or machine groups in the environment. These recommendations can help you identify areas for improvement and take appropriate action based on their effect. For more information, see [automation center recommendations](automation-center-recommendations.md).
+
+## Copilot
+
+Copilot is designed to assist with the analysis of automation activity, work queue performance, and to provide answers to common questions about Power Automate capabilities (generative answers). For example, users can ask about the number of flows that ran yesterday, which queue items are put on hold, or how to analyze activity with Copilot. In response, Copilot generates outputs that provide insights and answers to the questions asked. For more information, see [Use Copilot to analyze automation activity and ask product questions](automation-center-copilot.md).
+
+> [!IMPORTANT]
+>
+> - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
+> - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
+> - During initial preview, you must have an environment in the United States region to use this feature. If you don’t have access to an environment that's based in the United States, you can ask your administrator to [create a new environment in Power Platform admin center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
+> - Read the [responsible AI FAQs for Copilot in automation center (preview)](faqs-copilot-automation-center.md) to learn more about this new copilot experience.
 
 ## Runs tab
 
