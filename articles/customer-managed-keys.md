@@ -24,10 +24,11 @@ All customer data stored in Power Platform is encrypted at rest using Microsoft-
 > - *Before applying the enterprise policy, ensure no flows were created in this environment.*
 > - If you apply enterprise policy on an environment with existing flows, those flows and their data would continue to be encrypted with Microsoft-managed keys.
 > - Currently, customer-managed keys aren't leveraged to encrypt non-OAuth connections. Such non-Microsoft Entra based connections will continue to be encrypted at rest using Microsoft-managed keys.
+> - Create a support ticket if you plan to protect more than 25 environments in your tenant using CMK. The default limit of CMK enabled Power Automate environments per tenant is 25 and this can be extended by engaging the Support team.  
 
 Applying an encryption key is a gesture performed by Power Platform admins and is invisible to users. Users can create, save, and execute Power Automate workflows exactly the same way as if the data was encrypted by Microsoft-managed keys.
 
-To learn more about the customer-managed key, and the step-by-step instructions to enable customer-managed keys, go to [Manage your customer-managed encryption key (preview)](/power-platform/admin/customer-managed-key). This enables you to leverage the single enterprise policy created on the environment to secure Power Automate workflows.
+To learn more about the customer-managed key, and the step-by-step instructions to enable customer-managed keys, go to [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key). This enables you to leverage the single enterprise policy created on the environment to secure Power Automate workflows.
 
 With CMKs, your workflows and all associated at-rest data are stored and executed on a dedicated infrastructure, partitioned by the environment. This includes your workflow definitions, both cloud and desktop flows, and workflow execution history with detailed inputs and outputs.  
 
@@ -41,4 +42,4 @@ Support to migrate Microsoft-managed keys (MMKs) protected flows in CMK enabled 
 
 ### See also
 
-[Manage your customer-managed encryption key (preview)](/power-platform/admin/customer-managed-key)
+[Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
