@@ -20,14 +20,7 @@ The Office 365 Outlook group of actions allows the utilization of the [Office 36
 ## Prerequisites and limitations
 
 - You need an Attended RPA license.
-- Data loss prevention policies (DLP) that include Office 365 Outlook cloud actions aren't enforced within desktop flows. Machine administrators can disable the Office 365 Outlook actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors).
-
-
-## Why should I use Office 365 Outlook actions inside desktop flows instead of cloud flows?
-
-Users can still combine Office 365 Outlook actions with the **Run a flow built with Power Automate for desktop** action. However, Office 365 Outlook actions inside desktop flows improve performance and ease of use for users who need to loop between cloud and desktop actions.
-
-
+- On top of Data loss prevention policies (DLP) for Office 365 Outlook, machine administrators can disable the Office 365 Outlook actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors).
 
 ## Sending an email with attachments with Office 365 Outlook in desktop flows
 
@@ -45,6 +38,8 @@ Then open the Send an Email(v2) action from Office 365 Outlook group of actions 
 
 :::image type="content" source="media\office365outlook\img2.png" alt-text="Screenshot of the Send an Email(v2) action.":::
 
+### Adding a fixed amount of attachments
+
 In **Attachments** window, there is already an item existing in the list. 
 Click on "More" to configure it to contain the desired attachment. 
 
@@ -61,7 +56,50 @@ You can add more attachments by clicking on the plus button.
 
 :::image type="content" source="media\office365outlook\img5.png" alt-text="Screenshot of the add more button in the Attachments window."::: 
 
+When all the respective files to be attached are finalized, select on **Save** to close the **Attachments** window and return to the Send an Email(v2) action configuration. 
 
- When all the respective files to be attached are finalized, select on **Save** to close the **Attachments** window and return to the Send an Email(v2) action configuration. 
+:::image type="content" source="media\office365outlook\img6.png" alt-text="Screenshot of theSend an Email(v2) action with attachments.":::
 
-  :::image type="content" source="media\office365outlook\img6.png" alt-text="Screenshot of theSend an Email(v2) action with attachments.":::
+### Adding a dynamic amount of attachments
+
+When you are not aware of the total amount of file attachments you want to include in an email you must use the following approach: 
+
+- Create a new list. This list will contain the attachments to be sent. 
+- Each file attachment must be represented by a custom object. Each custom object must have the two properties comprising an attachment, **'Name'** and **'ContentBytes'**.
+- Once the list is complete you must pass it as an input to the **Attachments** property of the **Office 365 Outlook** action.
+
+#### Example 
+Your desktop flow receives a list containing a dynamic amount of filepaths as an input.
+You want to attach those files to an email. 
+You begin by creating a new list to store the files to be sent. 
+
+:::image type="content" source="media\office365outlook\img7.png" alt-text="Screenshot of the Create new list action.":::
+
+>[!NOTE]
+> You then need to loop through the inputted list containing the filepaths, convert them to binary data and add the custom object representing each file to the attachments list.
+
+Add a **For each** action to loop through the desktop flow input list. During each loop, the current item is a filepath, pointing to the actual file.
+
+:::image type="content" source="media\office365outlook\img8.png" alt-text="Screenshot of the For each action.":::
+
+Convert the current file to binary data so that it can be utilized by cloud connector actions.
+
+:::image type="content" source="media\office365outlook\img9.png" alt-text="Screenshot of the Convert file to binary data action where the CurrentItem is converted to binary data.":::
+
+The name of the file is needed for the respective property representing it. Use the **Get file path part** action to retrieve the name of the current file.
+
+:::image type="content" source="media\office365outlook\img10.png" alt-text="Screenshot of the Get file path part action where the file name of the CurrentItem is retrieved":::
+
+You must then add the custom object representing the respective file in the list of file attachments. To do that use the **Add item to list** action and in the **Item** property you must input the custom object through this syntax: 
+
+```robin
+{'Name': %variable holding the file name%, 'ContentBytes': %variable containing the binary data%}
+```
+:::image type="content" source="media\office365outlook\img11.png" alt-text="Screenshot of the Add item to list action":::
+
+Finally pass the list of file attachments as an input to the **Attachments** property of the **Send an email (V2)** action.
+
+:::image type="content" source="media\office365outlook\img12.png" alt-text="Screenshot of the Send an email (V2) action configured to use a list of custom objects in the attachments property":::
+
+Your action layout should be similar to this:
+:::image type="content" source="media\office365outlook\img13.png" alt-text="Screenshot of the example overview on how to use a list of attachments in the Send an email (V2) action":::
