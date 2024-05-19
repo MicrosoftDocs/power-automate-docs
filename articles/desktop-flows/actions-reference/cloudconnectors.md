@@ -27,6 +27,13 @@ search.audienceType:
 - Connection reference embedding is only available for co-owners. Users (run-only) can execute flows shared with them only via Power Automate for desktop's console using their own connections.
 - Desktop flows with embedded connection references don't currently support application lifecycle management (ALM) capabilities.
 
+## Using files in cloud connector actions
+
+To pass a file as an input to a cloud connector action, you must first convert it to binary data, using the [Convert file to binary data](file.md#convert-file-to-binary-data) action. 
+
+Cloud connector actions that return/produce files, actually produce binary data representing the respective files. To access the actual file, make sure to use the [Convert binary data to file](file.md#convert-binary-data-to-file) action first.
+
+
 ## Embedding connection references on a desktop flow (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]

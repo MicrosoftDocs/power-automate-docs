@@ -20,42 +20,7 @@ The SharePoint group of actions allows the utilization of the [SharePoint connec
 ## Prerequisites and limitations
 
 - You need an Attended RPA license.
-
-- Sharing desktop flows with SharePoint cloud actions isn't supported. Co-owners won't be able to run such desktop flows unless they overwrite the connection references with their own. **Users** with read access are unable to run such flows.
-
-- Data loss prevention policies (DLP) that include SharePoint cloud actions aren't enforced within desktop flows. Machine administrators can disable the SharePoint actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors).
-
-- Refrain from modifying a response’s properties directly as it may lead to an erroneous state after future updates. Instead, opt for storing the properties you want to utilize (from the response retrieved) directly into separate variables.
-
-## Why should I use SharePoint actions inside desktop flows instead of cloud flows?
-
-Users can still combine SharePoint actions with the **Run a flow built with Power Automate for desktop** action. However, SharePoint actions inside desktop flows improve performance and ease of use for users who need to loop between cloud and desktop actions.
-
-## List of SharePoint actions
-
-- [Create sharing link for a file or folder](/connectors/sharepointonline/#create-sharing-link-for-a-file-or-folder)
-- [Copy file](/connectors/sharepointonline/#copy-file)
-- [Move file](/connectors/sharepointonline/#move-file)
-- [Copy folder](/connectors/sharepointonline/#copy-folder)
-- [Move folder](/connectors/sharepointonline/#move-folder)
-- [Create file](/connectors/sharepointonline/#create-file)
-- [List folder](/connectors/sharepointonline/#list-folder)
-- [Check out file](/connectors/sharepointonline/#check-out-file)
-- [Discard check out](/connectors/sharepointonline/#discard-check-out)
-- [Check in file](/connectors/sharepointonline/#check-in-file)
-- [Get list views](/connectors/sharepointonline/#get-list-views)
-- [Get all lists and libraries](/connectors/sharepointonline/#get-all-lists-and-libraries)
-- [Get file metadata](/connectors/sharepointonline/#get-file-metadata)
-- [Update file](/connectors/sharepointonline/#update-file)
-- [Delete file](/connectors/sharepointonline/#delete-file)
-- [Get file metadata using path](/connectors/sharepointonline/#get-file-metadata-using-path)
-- [Get folder metadata](/connectors/sharepointonline/#get-folder-metadata)
-- [Get folder metadata using path](/connectors/sharepointonline/#get-folder-metadata-using-path)
-- [Get file content using path](/connectors/sharepointonline/#get-file-content-using-path)
-- [Get file content](/connectors/sharepointonline/#get-file-content)
-- [List root folder](/connectors/sharepointonline/#list-root-folder)
-- [Extract folder](/connectors/sharepointonline/#extract-folder)
-- [Get lists](/connectors/sharepointonline/#get-lists)
+- On top of Data loss prevention policies (DLP) for SharePoint cloud actions, machine administrators can disable the SharePoint actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors).
 
 ## Getting started with SharePoint actions in desktop flows
 
