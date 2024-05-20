@@ -158,6 +158,10 @@ The following list of recommendations aims to provide proactive guidance and act
 
 ### Work queue SLA violation
 
+> [!NOTE]
+> Initially, this recommendation will consider all work queue items with past expiry dates for possible SLA violations. However, we might change this logic in a future update to exclude items in a `Processing` or `Processed` state.
+
+
 | Category or object | Details |  
 |---|---|  
 | Title | Work queue SLA violation |  
@@ -172,7 +176,7 @@ The following list of recommendations aims to provide proactive guidance and act
 ### Work queue SLA at risk
 
 > [!NOTE]
-> Initially, this recommendation identifies work queue items that expire within **one hour** as potentially violating the work queue's SLA. However, we're updating this logic soon to include items that expire within **one day** instead, and exclude items in a `Processed` state.  
+> Initially, this recommendation identifies work queue items that expire within **one hour** as potentially violating the work queue's SLA. However, we might change this logic in a future update to include items that expire within **one day** instead, and exclude items in a `Processed` state.  
    
 
 | Category or object | Details |  
@@ -227,8 +231,6 @@ The following list of recommendations aims to provide proactive guidance and act
 
 ### Fix failing automations
 
-> [!NOTE]  
-> Initially, this recommendation displays all automations that failed within the **past week**. However, we're updating this logic soon to only show runs that failed in the **past three days**.
  
 | Category or object | Details |  
 |---|---|  
