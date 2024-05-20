@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 05/13/2024
+ms.date: 05/20/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -25,7 +25,7 @@ With cloud flow run history in Dataverse, you can apply the extensibility of [Da
 
 As part of this feature, each cloud flow execution has an entry in the table [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun). This is using Dataverse’s nonrelational database, [elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables), to store the cloud flow run history.
 
-Cloud flow run history in Dataverse is used by the [Automation Center](/power-automate/automation-center-overview) to provide comprehensive monitoring and troubleshooting experiences for automation processes across Power Automate.
+Cloud flow run history in Dataverse is used by the [automation center](/power-automate/automation-center-overview) to provide comprehensive monitoring and troubleshooting experiences for automation processes across Power Automate.
 
 > [!IMPORTANT]
 >- This is a preview feature.
@@ -68,21 +68,22 @@ The [FlowRunTimeToLiveInSeconds value on the Organization table](/power-apps/dev
 
 ## Turn on or reduce storage of cloud flow run history
 
-The [Power Platform Admin Center (PPAC) environments experience](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center) can be used to set the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) for that environment to some preset levels: Disabled (0 days), 7 days, 14 days, or 28 days (the default). 
-1. Open [Power Platform admin center](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center)
-2. Select the desired environment
-3. Open **Settings** > **Product** > **Features**
-5. In the section **Cloud flow run history in Dataverse**, set the desired **FlowRun entity time to live**
+You can use the [Power Platform admin center environments experience](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center) to set the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) for that environment to some preset levels: Disabled (0 days), 7 days, 14 days, or 28 days (the default).
 
-![image](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/13593424/9694efde-5a5f-44c5-9742-ab02d872ea59)
+1. Sign in to [Power Platform admin center](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center).
+1. Select the desired environment.
+1. Select **Settings** > **Product** > **Features**.
+1. Under **Cloud flow run history in Dataverse**, select the desired **FlowRun entity time to live** from the dropdown menu.
 
-When the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) is changed, then the lifetime of any new **[FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun)** records is retained for that length of time. This can be used to reduce the number of [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records, and storage used, over time.
+    :::image type="content" source="media/cloud-flow-run-metadata/flowrun-entity.png" alt-text="<alt text>":::
+
+When the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) changes, then the lifetime of any new **[FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun)** records is retained for that length of time. This can be used to reduce the number of [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records, and storage used, over time.
 
 Setting the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) to zero stops all ingestion of new [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records.
 
 ### Set custom TTL values to store a longer or more specific amount of cloud flow run history
 
-If a specific Time To Live (TTL) value is desired that isn't available via the [PPAC](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center) experience, then that value can be set directly as the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds).
+If you want a specific Time To Live (TTL) value that isn't available through the [Power Platform admin center](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center) experience, then you can set that value directly as the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds).
 
 ## Reduce number of FlowRun records immediately
 
@@ -157,6 +158,6 @@ The Application Insights data is:
 - Deeper because it has information about triggers and actions executed.
 - Able to be correlated with [Power Apps and Dataverse Application Insights data](/power-platform/admin/analyze-telemetry) through correlation identifiers.
 
-## Learn more
+### See also
 
-- [Automation Center](/power-automate/automation-center-overview)
+[Automation center](/power-automate/automation-center-overview)
