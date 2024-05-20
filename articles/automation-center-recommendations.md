@@ -77,7 +77,7 @@ Once a recommendation is hidden, you see a different icon in the card next to th
 **Unhide**
 If you hide certain recommendations, you can easily make them visible again. Just select the ellipses (...) on the card, and then select the **Show again** option.
 
-:::image type="content" source="media/automation-center/recommendation-show-again.png" alt-text="Screenshot of a recommendation card on the all recommendation panel that shows an unhide button." lightbox="media/automation-center/recommendation-hidden-icon.png":::
+:::image type="content" source="media/automation-center/recommendation-show-again.png" alt-text="Screenshot of a recommendation card on the all recommendation panel that shows an unhide button." lightbox="media/automation-center/recommendation-show-again.png":::
 
 > [!NOTE]
 > Hidden recommendations are only hidden in the user experience. They are still generated on the backend.
