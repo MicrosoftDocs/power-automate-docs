@@ -59,6 +59,27 @@ The recommendation card shown in the following image is the entry point to your 
 - **Impact**: "Medium" – this indicates the severity or importance of the issue.
 - **Recommendation details**: The short text that describes the recommendation.
 - **Actions or details**: Call to action or detail that provides more in-depth information about the specific recommendation.
+- **Card actions**: Ability to hide recommendations for varying durations - an hour, a day, a week, or even indefinitely. 
+
+### Hide & show recommendation
+
+**Hide**
+Recommendations can be hidden and shown again. You can choose between varying durations - an hour, a day, a week, or even indefinitely. 
+
+:::image type="content" source="media/automation-center/recommendation-hiding.png" alt-text="Screenshot of a recommendation card on automation center overview page that allows to hide a recommendation for varying durations." lightbox="media/automation-center/recommendation-hiding.png":::
+
+**Hidden indicator**
+Once a recommendation is hidden you will see a different icon in the card next to the title.
+
+:::image type="content" source="media/automation-center/recommendation-hidden-icon.png" alt-text="Screenshot of a recommendation card on automation center overview page that shows a hidden recommendation." lightbox="media/automation-center/recommendation-hidden-icon.png":::
+
+**Unhide**
+If you've hidden certain recommendations, you can easily make them visible again. Simply click on the three-dot menu (...) on the card, and then select the **Show again** option.
+
+:::image type="content" source="media/automation-center/recommendation-show-again.png" alt-text="Screenshot of a recommendation card on the all recommendation panel that shows an unhide button." lightbox="media/automation-center/recommendation-hidden-icon.png":::
+
+> [!Note]
+> Hidden recommendations are only hidden in the user experience, they will still be genrated on the backend.
 
 :::image type="content" source="media/automation-center/recommendation-card.png" alt-text="Screenshot of a recommendation card on automation center overview page." lightbox="media/automation-center/recommendation-card.png":::
 
