@@ -1,5 +1,5 @@
 ---
-title: Automation center (preview)
+title: Explore Power Automate's automation center (preview)
 description: Explore the comprehensive monitoring and troubleshooting experiences offered by Power Automate's Automation Center (preview), a hub for managing automation activity.
 ms.topic: conceptual
 ms.date: 05/20/2024
