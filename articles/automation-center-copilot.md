@@ -83,11 +83,21 @@ Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-
 
 This section provides example prompts you can use as a starter prompt for your own use cases. Some of these prompts might not be applicable or return incorrect results. Model understanding or the actual prompt and the data available to you based on your permissions might influence the accuracy. We recommend that you review and [validate the returned results and FetchXML query](#validate-fetchxml-query-results-generated-by-copilot).
 
-### Runs
+### Cloud flow runs  
 
-- Which flows ran the most last week?
-- What were yesterday’s top five flows by number of completed runs?
-- What was the average run duration of the *\<insert your flow name here\>* flow last month?
+> [!NOTE]  
+>  
+> - [Cloud flow run history in Dataverse](/dataverse/cloud-flow-run-metadata), which is built on the new [Elastic Table](/power-apps/maker/data-platform/create-edit-elastic-tables) feature, has different known limitations for querying and aggregating data compared to the desktop flow run history. These differences may impact the responses from Copilot. You can find out more about these known limitation [here](/power-apps/maker/data-platform/create-edit-elastic-tables#features-currently-not-supported-with-elastic-tables).  
+
+- How many runs last month were triggered by another cloud flow?  
+- Who initiated flow runs during the last month?  
+- How many flows failed yesterday?  
+
+### Desktop flow runs  
+
+- Which flows ran the most last week?  
+- What were yesterday’s top five flows by number of completed runs?  
+- What is the distribution of flow run statuses?  
 
 ### Errors
 
