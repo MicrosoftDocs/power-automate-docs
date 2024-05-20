@@ -39,9 +39,9 @@ You need a Power Platform environment in the following regions to use Copilot in
 
 | Region | Copilot availability |
 | ------------- | ------------- |
-| Preview region | Copilot is enabled by default at the beginning of October 2023, unless it's [turned off by an admin](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
-| Regions with copilot GPUs (United States, Australia, United Kingdom, India)  | Copilot is enabled by default, unless it's [turned off by an admin](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
-| Europe and all other regions, including France and Canada, with the exception of Sovereign Clouds | Copilot is enabled in the Europe region (using Sweden and Switzerland GPUs) by default, unless admins manually opt out of cross-geo data sharing settings from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). More information: [Turn on copilots and genertive AI features](/power-platform/admin/geographical-availability-copilot#turn-on-copilots-and-generative-ai-features-1)
+| Preview region | Copilot is enabled by default at the beginning of October 2023, unless [an admin turns it off](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
+| Regions with copilot GPUs (United States, Australia, United Kingdom, India)  | Copilot is enabled by default, unless [an admin turns it off](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
+| Europe and all other regions, including France and Canada, except for Sovereign Clouds | Copilot is enabled in the Europe region (using Sweden and Switzerland GPUs) by default, unless admins manually opt out of cross-geo data sharing settings from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). More information: [Turn on copilots and generative AI features](/power-platform/admin/geographical-availability-copilot#turn-on-copilots-and-generative-ai-features-1)
 | Sovereign clouds and personal Microsoft account (MSA) users | There's no access for MSA users or Sovereign cloud users to copilot features. You need to use an organization ID and in a non-Sovereign cloud region. |
 
 > [!NOTE]
@@ -56,7 +56,7 @@ Follow these steps to create a flow using the cloud flows designer with Copilot.
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the navigation menu to the left, select **Home** and begin to describe your scenario.
 
-    **Conversation first** (preview) provides a new way to interact with Copilot in Power Automate. You can go to this experience from the home page by selecting **Chat with Copilot about my idea**, or any of the predefined items above the input field.
+    *Conversation first* (preview) provides a new way to interact with Copilot in Power Automate. You can go to this experience from the home page by selecting **Chat with Copilot about my idea**, or any of the predefined items above the input field.
 
 1. Alternatively, you can continue to interact with Copilot by typing what you want your flow to do. You can also select one of the AI generated suggested flow descriptions based on your manual prompt entry.
 
