@@ -1,9 +1,8 @@
 ---
 title: Get started with Copilot in cloud flows
 description: Learn how to access and use Copilot in cloud flows.
-ms.date: 05/21/2024
+ms.date: 05/20/2024
 ms.custom: bap-template
-  - transparency-note
 ms.topic: conceptual
 author: kisubedi
 contributors:
@@ -12,7 +11,7 @@ contributors:
   - kisubedi
   - janPidych
   - v-aangie
-ms.author: kisubedi
+ms.author: dbekirop
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot 
 ---
@@ -42,7 +41,7 @@ You need a Power Platform environment in the following regions to use Copilot in
 | ------------- | ------------- |
 | Preview region | Copilot is enabled by default at the beginning of October 2023, unless it's [turned off by an admin](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
 | Regions with copilot GPUs (United States, Australia, United Kingdom, India)  | Copilot is enabled by default, unless it's [turned off by an admin](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
-| Europe and all other regions, including France and Canada, with the exception of Sovereign Clouds | Copilot is enabled in the Europe region (using Sweden and Switzerland GPUs) by default, unless admins manually opt out of cross-geo data sharing settings from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) More information: [Turn on copilots and genertive AI features](https://learn.microsoft.com/power-platform/admin/geographical-availability-copilot#turn-on-copilots-and-generative-ai-features-1).
+| Europe and all other regions, including France and Canada, with the exception of Sovereign Clouds | Copilot is enabled in the Europe region (using Sweden and Switzerland GPUs) by default, unless admins manually opt out of cross-geo data sharing settings from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). More information: [Turn on copilots and genertive AI features](/power-platform/admin/geographical-availability-copilot#turn-on-copilots-and-generative-ai-features-1)
 | Sovereign clouds and personal Microsoft account (MSA) users | There's no access for MSA users or Sovereign cloud users to copilot features. You need to use an organization ID and in a non-Sovereign cloud region. |
 
 > [!NOTE]
@@ -55,17 +54,17 @@ You need a Power Platform environment in the following regions to use Copilot in
 Follow these steps to create a flow using the cloud flows designer with Copilot.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-2. Go to the **home** tab and begin to describe your scenario.
+1. On the navigation menu to the left, select **Home** and begin to describe your scenario.
 
-    **Conversation first** (preview) provides a new way to interact with Copilot in Power Automate. Users can step into this experience from the home page, by clicking **chat with Copilot about my idea**, or any of the predefined items above the input field.
+    **Conversation first** (preview) provides a new way to interact with Copilot in Power Automate. You can go to this experience from the home page by selecting **Chat with Copilot about my idea**, or any of the predefined items above the input field.
 
-3.   Alternatively, you can continue interacting with Copilot by typing what you want your flow to do, or by clicking one of the AI generated suggested flow descriptions based on manual your prompt entry.
+1. Alternatively, you can continue to interact with Copilot by typing what you want your flow to do. You can also select one of the AI generated suggested flow descriptions based on your manual prompt entry.
 
     To learn how to write a good prompt, go to [How to write a good prompt](#how-to-write-a-good-prompt) in this article.
 
-4. When you're ready to proceed, select **Generate**.
+1. When you're ready to proceed, select **Generate**.
 
-   If you manually enter a prompt and it's vague, Copilot assists you to build it to completion. You can use this stage of the flow building process to ask questions, or further describe what you would like to achieve with your automation.
+   If you manually enter a prompt and it's vague, Copilot assists you in building it to completion. You can use this stage of the flow building process to ask questions, or further describe what you would like to achieve with your automation.
 
      :::image type="content" source="./media/get-started-with-copilot/vague.png" alt-text="Screenshot of the vague prompt experience, where you can continue building your flow with Copilot.":::
 
