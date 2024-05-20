@@ -148,6 +148,10 @@ The following list of recommendations aims to provide proactive guidance and act
 
 ### Work queue SLA at risk
 
+> [!NOTE]
+> Initially, this recommendation identifies work queue items that expire within **one hour** as potentially violating the work queue's SLA. However, we're updating this logic soon to include items that expire within **one day** instead, and exclude items in a `Processed` state.  
+   
+
 | Category or object | Details |  
 |---|---|  
 | Title | Work queue SLA at risk |  
