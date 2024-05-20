@@ -46,40 +46,39 @@ To see and use recommendations in automation center, the following are required:
 
 ## Recommendation details
 
-Recommendations appear as cards in the carousel found at the top of the automation center's overview page. Each recommendation is uniquely generated per recommendation type, user, and refresh interval, and is stored in the `Flow Events` ([flowevent](/power-apps/developer/data-platform/reference/entities/flowevent)) table in Dataverse. This provides important permission granularity, ensuring that the recommendations each user receives align with their specific access rights to the underlying artifacts. If a user lacks permissions to view the underlying flow, work queue, or any related artifact related to the recommendation, those won't be generated for them.
-
+Recommendations appear as cards in the carousel found at the top of the automation center's overview page. Each recommendation is uniquely generated per recommendation type, user, and refresh interval, and is stored in the `Flow Events` ([flowevent](/power-apps/developer/data-platform/reference/entities/flowevent)) table in Dataverse. This design provides important permission granularity, ensuring that the recommendations each user receives align with their specific access rights to the underlying artifacts. If a user doesn't have permission to view the underlying flow, work queue, or any related artifact related to the recommendation, those recommendations aren't generated for them.
 
 ### Recommendation card
 
 The recommendation card shown in the following image is the entry point to your recommendations. Here’s a detailed breakdown of the card’s components:
 
-- **Type**: Indicated by an exclamation mark in a triangle, showing that this is a warning or alert.
-- **Title**: "Work queue SLA at risk" – this provides a concise title of the issue.
-- **Refresh frequency**: "HOURLY" – this specifies the refresh frequency of the recommendation data.
-- **Impact**: "Medium" – this indicates the severity or importance of the issue.
+- **Type**: Indicated by an exclamation mark in a triangle, shows that this recommendation is a warning or alert.
+- **Title**: "Work queue SLA at risk" – this value provides a concise title of the issue.
+- **Refresh frequency**: "HOURLY" – this value specifies the refresh frequency of the recommendation data.
+- **Impact**: "Medium" – this value indicates the severity or importance of the issue.
 - **Recommendation details**: The short text that describes the recommendation.
 - **Actions or details**: Call to action or detail that provides more in-depth information about the specific recommendation.
-- **Card actions**: Ability to hide recommendations for varying durations - an hour, a day, a week, or even indefinitely. 
+- **Card actions**: Ability to hide recommendations for varying durations such as an hour, day, week, or even indefinitely.
 
 ### Hide & show recommendation
 
 **Hide**
-Recommendations can be hidden and shown again. You can choose between varying durations - an hour, a day, a week, or even indefinitely. 
+Recommendations can be hidden and shown again. You can choose between varying durations such as an hour, day, week, or even indefinitely.
 
 :::image type="content" source="media/automation-center/recommendation-hiding.png" alt-text="Screenshot of a recommendation card on automation center overview page that allows to hide a recommendation for varying durations." lightbox="media/automation-center/recommendation-hiding.png":::
 
 **Hidden indicator**
-Once a recommendation is hidden you will see a different icon in the card next to the title.
+Once a recommendation is hidden, you see a different icon in the card next to the title.
 
 :::image type="content" source="media/automation-center/recommendation-hidden-icon.png" alt-text="Screenshot of a recommendation card on automation center overview page that shows a hidden recommendation." lightbox="media/automation-center/recommendation-hidden-icon.png":::
 
 **Unhide**
-If you've hidden certain recommendations, you can easily make them visible again. Simply click on the three-dot menu (...) on the card, and then select the **Show again** option.
+If you hide certain recommendations, you can easily make them visible again. Just select the ellipses (...) on the card, and then select the **Show again** option.
 
 :::image type="content" source="media/automation-center/recommendation-show-again.png" alt-text="Screenshot of a recommendation card on the all recommendation panel that shows an unhide button." lightbox="media/automation-center/recommendation-hidden-icon.png":::
 
-> [!Note]
-> Hidden recommendations are only hidden in the user experience, they will still be genrated on the backend.
+> [!NOTE]
+> Hidden recommendations are only hidden in the user experience, they will still be generated on the backend.
 
 :::image type="content" source="media/automation-center/recommendation-card.png" alt-text="Screenshot of a recommendation card on automation center overview page." lightbox="media/automation-center/recommendation-card.png":::
 
@@ -100,7 +99,7 @@ The recommendation details panel shown in the following image provides a more de
 
 ## All recommendations panel
 
-The "All recommendations panel" shown below is used for viewing latest and older recommendation with filtering capabilities. The recommendations are categorized by type (Error, Warning, Information, Success) and can be filtered by impact (High, Medium, Low), status (Hidden), and date range. This panel is divided into two main sections: one for displaying the most recent recommendations and another for showing older recommendations along with their timestamps. The most recent recommendations are initially displayed under 'Latest', but are replaced with refreshed content based on the recommendation interval.
+The all recommendations panel shown in the following image is used for viewing latest and older recommendation with filtering capabilities. The recommendations are categorized by type (Error, Warning, Information, Success) and can be filtered by impact (High, Medium, Low), status (Hidden), and date range. This panel is divided into two main sections: one for displaying the most recent recommendations and another for showing older recommendations along with their timestamps. The most recent recommendations are initially displayed under 'Latest', but are replaced with refreshed content based on the recommendation interval.
 :::image type="content" source="media/automation-center/recommendation-history-panel.png" alt-text="Screenshot of a recommendation history panel listing current and previous recommendations on automation center overview page." lightbox="media/automation-center/recommendation-history-panel.png":::
 
 ### Category
@@ -166,7 +165,7 @@ The following list of recommendations aims to provide proactive guidance and act
 | Impact | High |  
 | Refresh frequency | Hourly |  
 | Category | Orchestration |  
-| Recommended actions | - Identify the root cause. Was it due to a technical issue, a lack of resources, or some other factor? </br>- Once you identify the cause, notify all relevant stakeholders of the miss and the steps being taken to address it. </br>- Determine which work is impacted by the SLA miss and prioritize it accordingly. </br>- If necessary, allocate extra resources to address the SLA miss (adding more machine capacity, licenses, or other solutions to improve performance). </br>- Monitor progress to ensure the SLA is being met and that work is completed within the agreed-upon time frame. |  
+| Recommended actions | - Identify the root cause. Was it due to a technical issue, a lack of resources, or some other factor? </br>- First identify the cause. Then notify all relevant stakeholders of the miss and the steps being taken to address it. </br>- Determine which work is impacted by the SLA miss and prioritize it accordingly. </br>- If necessary, allocate extra resources to address the SLA miss (adding more machine capacity, licenses, or other solutions to improve performance). </br>- Monitor progress to ensure the SLA is being met and that work is completed within the agreed-upon time frame. |  
 
 ### Work queue SLA at risk
 
