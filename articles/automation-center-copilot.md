@@ -84,8 +84,8 @@ This section provides example prompts you can use as a starter prompt for your o
 ### Cloud flow runs  
 
 > [!NOTE]  
->  
-> - [Cloud flow run history in Dataverse](/dataverse/cloud-flow-run-metadata), which is built on the new [Elastic Table](/power-apps/maker/data-platform/create-edit-elastic-tables) feature, has different known limitations for querying and aggregating data compared to the desktop flow run history. These differences may impact the responses from Copilot. You can find out more about these known limitation [here](/power-apps/maker/data-platform/create-edit-elastic-tables#features-currently-not-supported-with-elastic-tables).  
+>
+> [Cloud flow run history in Dataverse](dataverse/cloud-flow-run-metadata.md), which is built on the new [Elastic Table](/power-apps/maker/data-platform/create-edit-elastic-tables) feature, has different known limitations for querying and aggregating data compared to the desktop flow run history. These differences may impact the responses from Copilot. You can find out more about these known limitation [here](/power-apps/maker/data-platform/create-edit-elastic-tables#features-currently-not-supported-with-elastic-tables).  
 
 - How many runs last month were triggered by another cloud flow?  
 - Who initiated flow runs during the last month?  
@@ -276,7 +276,7 @@ The following list contains known limitations of Copilot in automation center.
 - Copilot is currently only available in Dataverse environments based in the United States.
 - Copilot might return wrong or incomplete data and FetchXML queries.
 - Copilot is initially only capable to answer questions about desktop flow activity, cloud flow activity, work queues and general product feature questions of Power Automate.
-- In multi-turn conversations, Copilot keeps context of the last ten question only. If you encounter wrong or incomplete results, consider [resetting the conversation](#clear-previous-prompt-context-to-start-over).
+- In multi-turn conversations, Copilot keeps context of the last 10 question only. If you encounter wrong or incomplete results, consider [resetting the conversation](#clear-previous-prompt-context-to-start-over).
 - Multi-turn conversations aren't supported for generative answers (documentation skill).
 - For queries that return large result-sets, Copilot might not be able return or render the result.
 
