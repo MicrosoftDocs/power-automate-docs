@@ -272,13 +272,13 @@ This table shows default responses that are returned when Copilot is unable to u
 
 ## Known issues and limitations
 
-The following list contains known limitations of Copilot in desktop flow activity.
+The following list contains known limitations of Copilot in automation center.
 
 - Copilot is a new technology that is still being developed. It's optimized for use with English language and support with other languages is limited. As such, parts of it might appear in English rather than your preferred language.
 - Copilot is currently only available in Dataverse environments based in the United States.
 - Copilot might return wrong or incomplete data and FetchXML queries.
-- Copilot is initially only capable to answer questions about desktop flow activity such as errors, machines, and past and current runs.
-- In multi-turn conversations, Copilot keeps context of the last five question only. If you encounter wrong or incomplete results, consider [resetting the conversation](#clear-previous-prompt-context-to-start-over).
+- Copilot is initially only capable to answer questions about desktop flow activity, cloud flow activity, work queues and general product feautre questions of Power Automate.
+- In multi-turn conversations, Copilot keeps context of the last ten question only. If you encounter wrong or incomplete results, consider [resetting the conversation](#clear-previous-prompt-context-to-start-over).
 - Multi-turn conversations aren't supported for generative answers (documentation skill).
 - For queries that return large result-sets, Copilot might not be able return or render the result.
 
