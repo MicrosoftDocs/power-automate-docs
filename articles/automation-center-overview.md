@@ -127,8 +127,9 @@ The following are current limitations of the automation center and its underlyin
 - Older cloud flow run history might be missing for the selected date range filter. Missing run history might be due to your current environment's [time to live](/power-automate/dataverse/cloud-flow-run-metadata#storage-use-for-flowrun-records) (TTL) configuration, which is set to retain cloud flow runs for *n-days* only.
 - Cloud flow run history in Dataverse is a preview feature as well, and comes with its own set of [known limitations](dataverse/cloud-flow-run-metadata.md#known-limitations) that might affect the data shown in the automation center.
 
-## Learn more
+### See also
 
 - [Recommendations within automation center](automation-center-recommendations.md)
 - [Use Copilot in automation center](automation-center-copilot.md)
 - [Manage cloud flow run history in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata)
+
