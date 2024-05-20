@@ -1,6 +1,6 @@
 ---
-title: Optimize automations with targeted and proactive recommendations
-description: Explore proactive and reactive recommendations to enhance the health, compliance, and performance of automation across your environment with the automation center.
+title: Boost automation health with Automation center recommendations (preview)
+description: Enhance your automation's reliability and efficiency with the Automation Center's targeted recommendations, offering actionable insights and best practice suggestions.
 ms.topic: conceptual
 ms.date: 05/20/2024
 ms.author: appapaio
