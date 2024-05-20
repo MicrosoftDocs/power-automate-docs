@@ -1,6 +1,6 @@
 ---
-title: Recommendations within automation center (preview)
-description: Recommendations within automation center.
+title: Optimize automations with targeted and proactive recommendations
+description: Explore proactive and reactive recommendations to enhance the health, compliance, and performance of automation across your environment with the automation center.
 ms.topic: conceptual
 ms.date: 05/20/2024
 ms.author: appapaio
