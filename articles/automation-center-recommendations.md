@@ -35,6 +35,7 @@ Key features of recommendations:
 - Get proactive and reactive recommendations, grounded on best practices.
 - Enhance the overall health, compliance, and performance of automation across your environment.
 - Take corrective actions directly from the list of affected automation artifacts.
+- Hiding recommendations for an hour, a day, a week or even indefinitely.
 
 ## Prerequisites
 
