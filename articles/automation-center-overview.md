@@ -1,6 +1,6 @@
 ---
 title: Automation center (preview)
-description: Monitor and manage automations with Automation center.
+description: Explore the comprehensive monitoring and troubleshooting experiences offered by Power Automate's Automation Center (preview), a hub for managing automation activity.
 ms.topic: conceptual
 ms.date: 05/20/2024
 ms.author: appapaio
