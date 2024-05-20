@@ -1,6 +1,6 @@
 ---
 title: Recommendations within automation center (preview)
-description: Recommendations within automation center.
+description: Enhance your automation's reliability and efficiency with the Automation Center's targeted recommendations, offering actionable insights and best practice suggestions.
 ms.topic: conceptual
 ms.date: 05/20/2024
 ms.author: appapaio
