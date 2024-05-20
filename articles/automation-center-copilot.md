@@ -123,7 +123,7 @@ This section provides example prompts you can use as a starter prompt for your o
 - Who were the top 10 users running flows last month?
 - When and by whom were desktop flows modified last week?
 
-### Generative answers (documentation)
+### Documentation (generative answers)
 
 - How can I add a condition in Power Automate desktop?
 - Can cloud flows handle approvals and decision-making processes?
