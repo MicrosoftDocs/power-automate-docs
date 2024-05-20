@@ -52,6 +52,8 @@ Recommendations appear as cards in the carousel found at the top of the automati
 
 The recommendation card shown in the following image is the entry point to your recommendations. Here’s a detailed breakdown of the card’s components:
 
+:::image type="content" source="media/automation-center/recommendation-card.png" alt-text="Screenshot of a recommendation card on automation center overview page." lightbox="media/automation-center/recommendation-card.png":::
+
 - **Type**: Indicated by an exclamation mark in a triangle, shows that this recommendation is a warning or alert.
 - **Title**: "Work queue SLA at risk" – this value provides a concise title of the issue.
 - **Refresh frequency**: "HOURLY" – this value specifies the refresh frequency of the recommendation data.
@@ -78,7 +80,7 @@ If you hide certain recommendations, you can easily make them visible again. Jus
 :::image type="content" source="media/automation-center/recommendation-show-again.png" alt-text="Screenshot of a recommendation card on the all recommendation panel that shows an unhide button." lightbox="media/automation-center/recommendation-hidden-icon.png":::
 
 > [!NOTE]
-> Hidden recommendations are only hidden in the user experience, they will still be generated on the backend.
+> Hidden recommendations are only hidden in the user experience. They are still generated on the backend.
 
 :::image type="content" source="media/automation-center/recommendation-card.png" alt-text="Screenshot of a recommendation card on automation center overview page." lightbox="media/automation-center/recommendation-card.png":::
 
