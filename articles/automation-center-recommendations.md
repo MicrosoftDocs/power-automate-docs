@@ -226,8 +226,6 @@ The following list of recommendations aims to provide proactive guidance and act
 
 ### Fix failing automations
 
-> [!NOTE]  
-> Initially, this recommendation displays all automations that failed within the **past week**. However, we're updating this logic soon to only show runs that failed in the **past three days**.
  
 | Category or object | Details |  
 |---|---|  
