@@ -45,7 +45,8 @@ To see and use recommendations in automation center, the following are required:
 
 ## Recommendation details
 
-Recommendations are displayed as cards in the carousel located at the top of the automation center's overview page.
+Recommendations appear as cards in the carousel found at the top of the automation center's overview page. Each recommendation is uniquely generated per recommendation type, user, and refresh interval, and is stored in the `Flow Events` ([flowevent](/power-apps/developer/data-platform/reference/entities/flowevent)) table in Dataverse. This provides important permission granularity, ensuring that the recommendations each user receives align with their specific access rights to the underlying artifacts. If a user lacks permissions to view the underlying flow, work queue, or any related artifact related to the recommendation, those won't be generated for them.
+
 
 ### Recommendation card
 
