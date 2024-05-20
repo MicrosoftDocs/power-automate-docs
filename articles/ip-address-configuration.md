@@ -67,7 +67,7 @@ The following table lists the additional endpoints you need when using Power Aut
 
 | Domains | Protocols | Uses |
 | --------|  ---------| ---- |
-| *mobile.events.data.microsoft.com   | https   | Send telemetry for all production regions and supported US sovereign clouds from the mobile app. |
+| *.events.data.microsoft.com   | https   | Send telemetry for all production regions and supported US sovereign clouds from the mobile app. |
 | collector.azure.cn   | https  |  Send telemetry for the Mooncake region from the mobile app. |
 | officeapps.live.com   | https   | Access to authentication and authorization endpoints for the mobile app.
 
