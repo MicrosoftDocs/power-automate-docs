@@ -48,10 +48,11 @@ To see and use recommendations in automation center, the following are required:
 
 Recommendations appear as cards in the carousel found at the top of the automation center's overview page. Each recommendation is uniquely generated per recommendation type, user, and refresh interval, and is stored in the `Flow Events` ([flowevent](/power-apps/developer/data-platform/reference/entities/flowevent)) table in Dataverse. This provides important permission granularity, ensuring that the recommendations each user receives align with their specific access rights to the underlying artifacts. If a user lacks permissions to view the underlying flow, work queue, or any related artifact related to the recommendation, those won't be generated for them.
 
-
 ### Recommendation card
 
 The recommendation card shown in the following image is the entry point to your recommendations. Here’s a detailed breakdown of the card’s components:
+
+:::image type="content" source="media/automation-center/recommendation-card.png" alt-text="Screenshot of a recommendation card on automation center overview page." lightbox="media/automation-center/recommendation-card.png":::
 
 - **Type**: Indicated by an exclamation mark in a triangle, showing that this is a warning or alert.
 - **Title**: "Work queue SLA at risk" – this provides a concise title of the issue.
@@ -78,10 +79,9 @@ If you've hidden certain recommendations, you can easily make them visible again
 
 :::image type="content" source="media/automation-center/recommendation-show-again.png" alt-text="Screenshot of a recommendation card on the all recommendation panel that shows an unhide button." lightbox="media/automation-center/recommendation-hidden-icon.png":::
 
-> [!Note]
+> [!NOTE]
 > Hidden recommendations are only hidden in the user experience, they will still be genrated on the backend.
 
-:::image type="content" source="media/automation-center/recommendation-card.png" alt-text="Screenshot of a recommendation card on automation center overview page." lightbox="media/automation-center/recommendation-card.png":::
 
 ### Recommendation details panel
 
