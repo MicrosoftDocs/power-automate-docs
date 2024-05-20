@@ -157,6 +157,10 @@ The following list of recommendations aims to provide proactive guidance and act
 
 ### Work queue SLA violation
 
+> [!NOTE]
+> Initially, this recommendation will consider all work queue items with past expiry dates for possible SLA violations. However, we might change this logic in a future update to exclude items in a `Processing` or `Processed` state.
+
+
 | Category or object | Details |  
 |---|---|  
 | Title | Work queue SLA violation |  
