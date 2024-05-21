@@ -159,8 +159,7 @@ The following list of recommendations aims to provide proactive guidance and act
 ### Work queue SLA violation
 
 > [!NOTE]
-> Initially, this recommendation will consider all work queue items with past expiry dates for possible SLA violations. However, we might change this logic in a future update to exclude items in a `Processing` or `Processed` state.
-
+> Initially, this recommendation will consider all work queue items with past expiry dates for possible SLA violations. However, we will change this logic in a future update to exclude items in a `Processing` or `Processed` state.
 
 | Category or object | Details |  
 |---|---|  
@@ -176,7 +175,7 @@ The following list of recommendations aims to provide proactive guidance and act
 ### Work queue SLA at risk
 
 > [!NOTE]
-> Initially, this recommendation identifies work queue items that expire within **one hour** as potentially violating the work queue's SLA. However, we might change this logic in a future update to include items that expire within **one day** instead, and exclude items in a `Processed` state.  
+> Initially, this recommendation identifies work queue items that expire within **one hour** as potentially violating the work queue's SLA. However, we will change this logic in a future update to include items that expire within **one day** instead, and exclude items in a `Processing` or `Processed` state. 
    
 
 | Category or object | Details |  
@@ -230,7 +229,6 @@ The following list of recommendations aims to provide proactive guidance and act
 | Recommended action(s) | - Your organization applied DLP policies that resulted in suspended flows that you built or co-own. Review the following action list to get your flows back on track: </br>- Identify the specific desktop flows that have been suspended and review them to determine why they don't adhere to the DLP policy. </br>- Analyze the data being processed by the flows and identify any potential risks or vulnerabilities. </br>- Modify the desktop flows to ensure that they adhere to the DLP policy. This may involve implementing additional security measures or changing the way data is processed or stored. </br>- Test the modified desktop flows to ensure that they're functioning correctly and that they adhere to the DLP policy. |  
 
 ### Fix failing automations
-
  
 | Category or object | Details |  
 |---|---|  
