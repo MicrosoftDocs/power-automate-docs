@@ -26,6 +26,7 @@ This page provides configuration guidance for desktop flow logs, located under t
 > - Preview features aren’t meant for production use and might have restricted functionality.
 > - This feature isn't available yet for local attended runs from Power Automate desktop.
 > - These features are available before an official release so that customers can get early access and provide feedback.
+> - Some of the features listed on this page are still gradually rolling out and may not be available in your region yet.
 
 The **Activation status of run action logs** setting defines when desktop flow run action logs should be captured and even allows you to turn them off completely.
 

@@ -1046,6 +1046,14 @@
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Manage automations
   items:
+  - name: Automation center (preview)
+    items:
+    - name: Overview
+      href: automation-center-overview.md
+    - name: Recommendations
+      href: automation-center-recommendations.md
+    - name: Copilot
+      href: automation-center-copilot.md
   - name: Capacity utilization
     items:
     - name: Introduction to capacity utilization (preview)
@@ -1204,7 +1212,9 @@
     href: responsible-ai-overview.md
   - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
-  - name: FAQ for copilot in desktop flow activity
+  - name: FAQ for Copilot in automation center
+    href: faqs-copilot-automation-center.md
+  - name: FAQ for Copilot in desktop flow activity
     href: faqs-copilot-automation-activity.md
   - name: FAQ for Copilot in Process Mining
     href: faqs-copilot-in-process-mining.md
