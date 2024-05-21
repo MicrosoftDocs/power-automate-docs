@@ -111,7 +111,7 @@ The following are current limitations of the automation center and its underlyin
 - Only runs for solution-based cloud flows are available in the automation center.
 - During initial preview, visibility of flows and their run history in automation center requires you to be the owner (co-ownership isn't sufficient) of the flows or to have environment wide access to the relevant data in the environment. The main Dataverse tables that power the data shown in the automation center are:  
   - `workflow`: Solution-aware cloud flow and desktop flows
-  - `flowrun`: Cloud flow run history
+  - `flowrun`: [Cloud flow run history](/power-automate/dataverse/cloud-flow-run-metadata)
   - `flowsession`: Desktop flow run history
   - `flowevent`: Recommendations and notifications
   - `workqueue`: Work queues
@@ -124,10 +124,12 @@ The following are current limitations of the automation center and its underlyin
 - Users with broader access to run data might encounter increased latency during data load because of high cloud flow run volumes. Performance can be improved by selecting more filters and reducing date ranges.
 - If there's a visual showing "*Too many results*", try to adjust your filter to limit the amount of data that is being returned.
 - If you see Dataverse or cloud flow run-specific notifications, check the underlying [cloud flow run history documentation](dataverse/cloud-flow-run-metadata.md) to learn more.
-- Older cloud flow run history might be missing for the selected date range filter. Missing run history might be due to your current environment's [time to live](dataverse/cloud-flow-run-metadata.md#cloud-flow-run-elements) (TTL) configuration, which is set to retain cloud flow runs for *n-days* only.
+- Older cloud flow run history might be missing for the selected date range filter. Missing run history might be due to your current environment's [time to live](/power-automate/dataverse/cloud-flow-run-metadata#storage-use-for-flowrun-records) (TTL) configuration, which is set to retain cloud flow runs for *n-days* only.
 - Cloud flow run history in Dataverse is a preview feature as well, and comes with its own set of [known limitations](dataverse/cloud-flow-run-metadata.md#known-limitations) that might affect the data shown in the automation center.
 
-## Learn more
+### See also
 
 - [Recommendations within automation center](automation-center-recommendations.md)
 - [Use Copilot in automation center](automation-center-copilot.md)
+- [Manage cloud flow run history in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata)
+
