@@ -141,10 +141,10 @@ If all of your environments have a [FlowRunTimeToLiveInSeconds value in the Orga
 2. If [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data was previously available, then an administrator might have turned off ingestion of new records.
 
 ### When is this going to be generally available (GA)?
-
-It's uncertain when this capability will change from a public preview to being generally available (GA). The ingestion of flow run history has architectural limitations and performance limitations that require throttling, so the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is often going to have some gaps. Customers told us there's an expectation that the data will be complete when we make this capability GA. We want to get to that point before we change from public preview to GA.
-
-This [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is used by the Automation Center in the Power Automate maker portal. The data set is often incomplete, but there are still useful insights that can be obtained. Hence, we're making the data available early in a preview capacity.  
+ 
+Today, there is no committed timeline for transitioning this capability from public preview to General Availability (GA). Due to architectural and performance restrictions that require throttling, the FlowRun history might have gaps. However, we understand the importance of complete flow run history data and are actively evaluating strategies for lossless synchronization that will allow us to move this feature to the GA stage in the future.
+ 
+The FlowRun data is used by the [Automation center (preview)](/power-automate/automation-center-overview) within the Power Automate maker portal. Although the FlowRun data set may occasionally be incomplete during the preview stage, we're convinced that there's great value in making this data accessible for public preview, both as standalone feature and as part of the automation center.
 
 ### Does writing cloud flow run history into Dataverse use Power Platform request quota?
 
