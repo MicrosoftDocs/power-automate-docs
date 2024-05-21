@@ -144,7 +144,7 @@ If all of your environments have a [FlowRunTimeToLiveInSeconds value in the Orga
  
 Today, there is no committed timeline for transitioning this capability from public preview to General Availability (GA). Due to architectural and performance restrictions that require throttling, the FlowRun history might have gaps. However, we understand the importance of complete flow run history data and are actively evaluating strategies for lossless synchronization that will allow us to move this feature to the GA stage in the future.
  
-The FlowRun data is used by the [Automation center (preview)](/power-automate/automation-center-overview) within the Power Automate maker portal. Although the FlowRun data set may occasionally be incomplete during the preview stage, we're convinced that there's great value in making this data accessible for public preview, both as standalone feature and as part of the automation center.
+The FlowRun data is used by the [Automation center (preview)](/power-automate/automation-center-overview) within the Power Automate maker portal. Although the FlowRun data set may under certain circumstances be incomplete during the preview stage, we're convinced that there's great value in making this data accessible for public preview, both as standalone feature and as part of the automation center.
 
 ### Does writing cloud flow run history into Dataverse use Power Platform request quota?
 
