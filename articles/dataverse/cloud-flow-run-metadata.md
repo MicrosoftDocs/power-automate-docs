@@ -30,7 +30,7 @@ Cloud flow run history in Dataverse is used by the [automation center](/power-au
 > [!IMPORTANT]
 >- This is a preview feature.
 >- Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
->- This feature is in the process of rolling out, and might not be available in your region yet.
+>- This feature is in the process of rolling out and is not available in the sovereign clouds region yet.
 
 ## Cloud flow run elements
 
