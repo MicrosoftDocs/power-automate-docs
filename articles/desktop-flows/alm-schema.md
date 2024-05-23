@@ -4,29 +4,28 @@ description: Learn how to update a v2 desktop flow and export the solution.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/20/2023
+ms.date: 05/24/2024
 ms.author: dbekirop
 ms.reviewer: matp
 contributors:
+  - DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Application lifecycle management for Power Automate v2 schema
+# Application lifecycle management (ALM) for Power Automate v2 schema
 
-In the Dataverse data model, desktop flows stored in the v2 schema consist of multiple binaries. This article explains how to update a desktop flow within a solution that resides in an environment with the v2 schema enabled.
+In the Dataverse data model, desktop flows stored in the [v2 schema](schema.md) consist of multiple binaries. This article explains how to update a desktop flow within a solution that resides in an environment with the v2 schema enabled.
 
 ## Update a v2 desktop flow and export the solution
 
-> [!NOTE]
-> Importing a managed solution into the same environment as the originating unmanaged solution isn't possible.
+To update a desktop flow with v2 schema and export the solution, follow these steps:
 
 > [!NOTE]
-> New binaries are automatically added to the solution in which the desktop flow is located, we still recommend to use the following procedure before exporting to ensure all binaries are added to the solution.
-
-> [!NOTE]
-> You can use the Solution checker to validate that your solution is not missing any dependencies.
+> - Importing a managed solution into the same environment as the originating unmanaged solution isn't possible.
+> - New binaries are automatically added to the solution in which the desktop flow is located, we still recommend to use the following procedure before exporting to ensure all binaries are added to the solution.
+> - You can use [solution checker](/power-apps/maker/data-platform/use-powerapps-checker) to validate that your solution is not missing any dependencies.
 
 1. Go to [Power Automate](https://make.powerautomate.com) and select **Solutions**.
 
@@ -44,23 +43,34 @@ In the Dataverse data model, desktop flows stored in the v2 schema consist of mu
 
 1. Import the solution into the required environment. This environment must have the v2 schema enabled.
 
-## Deal with v1 and v2 schema migration with solutions
-When using solution to manage the lifecycle of your desktop flows, please be aware when using solutions import a v2 desktop flows in an environment with v1 and v2 desktop flows.
+## Manage v1 and v2 schema migrations with solutions
 
-### Managed solution
+When using solution to manage the lifecycle of your desktop flows, it's important to note the following considerations for importing v2 desktop flows into an environment that contains both v1 and v2 desktop flows.
+
+### Managed solutions
+
 > [!NOTE]
-> As a best practice, you shouldn't be updating a managed desktop flow directly and instead import a new version of the solution. Updating a managed desktop flow in v2 schema is now blocked.
+> As a best practice, you shouldn't update a managed desktop flow directly. Instead, import a new version of the solution. Updating a managed desktop flow in v2 schema is now blocked.
 
-When you are using managed solution to export desktop flows from your test environment to production environment, if you have a desktop flow that has been updated from v1 to v2 in your target environment and you want to import a new version in v2 from another environment, you will first need to remove the managed solution from the target environment before importing it again.
+If you meet all of the following criteria, you first need to remove the managed solution from the target environment before importing it again:
 
-If you cannot remove the solution because you have other dependencies on this solution, you will need to remove any unmanaged layer on the desktop flow, including related data. To see the related data, in the desktop flow in the solution, click on "Dependencies" and select the "Used by" tab. You will see the list of unmanaged binary associated with this desktop flow and you can delete those.
+- You use a managed solution to export desktop flows from your test environment to production environment.
+- You have a desktop flow that was updated from v1 to v2 in your target environment.
+- You want to import a new version in v2 from another environment.
 
-If the desktop flows on the target environment is still in v1, you can safely import the solution containing the v2 desktop flow.
+If you can't remove the solution because you have other dependencies on this solution, you need to remove any unmanaged layer on the desktop flow, including related data. To see the related data, in the desktop flow in the solution, select **Dependencies** and then select the **Used by** tab. You see the list of unmanaged binaries associated with this desktop flow and you can delete them.
 
-### Unmanaged solution
+If the desktop flows on the target environment are still v1, you can safely import the solution containing the v2 desktop flow.
+
+### Unmanaged solutions
+
 > [!NOTE]
-> Unmanaged solution should only be used for sharing desktop flow with other makers and shouldn't be use to import into production where managed solution is recommended to have a proper ALM.
+> An unmanaged solution should only be used for sharing a desktop flow with other makers and shouldn't be use to import into production. Instead, a managed solution is recommended to have a proper ALM.
 
-If you are using unmanaged solution to share desktop flows, if you have a desktop flow that was updated from v1 to v2 in your target environment and you want to import a new version in v2 from another environment, you will need to first delete the desktop flows from the target environment.
+If you meet all of the following criteria, you need to first delete the desktop flows from the target environment using an unmanaged solution:
 
-If the desktop flows on the target environment is still in v1, you can safely import the solution containing the v2 desktop flow.
+- You use an unmanaged solution to share desktop flows.
+- You have a desktop flow that was updated from v1 to v2 in your target environment.
+- You want to import a new version in v2 from another environment.
+
+If the desktop flows in the target environment are still v1, you can safely import the solution containing the v2 desktop flow.
