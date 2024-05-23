@@ -4,10 +4,11 @@ description: Learn about the available SharePoint actions.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 03/01/2023
+ms.date: 05/23/2024
 ms.author: dipapa
 ms.reviewer: matp
 contributors:
+  - DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -15,12 +16,12 @@ search.audienceType:
 
 # SharePoint
 
-The SharePoint group of actions allows the utilization of the [SharePoint connector](/connectors/sharepointonline) from within desktop flows, alleviating the need to create a cloud flow in order to use its actions. This connector is the same as the one used across Power Automate cloud flows, PowerApps, and Logic Apps. It uses the same parameters and returns the same type of data.
+The SharePoint group of actions allows the utilization of the [SharePoint connector](/connectors/sharepointonline) from within desktop flows, alleviating the need to create a cloud flow in order to use its actions. This connector is the same as the one used across Power Automate cloud flows, Power Apps, and Logic Apps. It uses the same parameters and returns the same type of data.
 
 ## Prerequisites and limitations
 
 - You need an Attended RPA license.
-- On top of Data loss prevention policies (DLP) for SharePoint cloud actions, machine administrators can disable the SharePoint actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors).
+- In addition to implementing data loss prevention policies (DLP) for SharePoint cloud actions, administrators can disable the SharePoint actions by modifying the [appropriate registry setting](../governance.md#prevent-power-automate-for-desktop-from-running-flows-containing-cloud-connectors).
 
 ## Getting started with SharePoint actions in desktop flows
 
@@ -31,7 +32,7 @@ This section presents examples on how to use SharePoint actions in your desktop 
 > [!IMPORTANT]
 > Before replicating the following steps, ensure that you are familiar with [lists](../variable-data-types.md#list), [custom objects](../variable-data-types.md#custom-object), [loops](../use-loops.md), [conditionals](../use-conditionals.md), and the [percentage notation](../variable-manipulation.md).
 
-1. Ensure that you've installed the [latest version of Power Automate for desktop](../install.md).
+1. Ensure that you installed the [latest version of Power Automate for desktop](../install.md).
 
 1. Create a new desktop flow.
 
@@ -86,7 +87,7 @@ If you want to download only files of a specific type, add a conditional before 
 
 ### How to upload a local file to SharePoint
 
-1. Ensure that you've installed the [latest version of Power Automate for desktop](../install.md).
+1. Ensure that you installed the [latest version of Power Automate for desktop](../install.md).
 
 1. Create a new desktop flow.
 

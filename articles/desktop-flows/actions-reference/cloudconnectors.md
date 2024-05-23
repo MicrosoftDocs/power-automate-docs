@@ -4,10 +4,11 @@ description: Learn about the available Cloud Connector operations in Power Autom
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 05/13/2024
+ms.date: 05/23/2024
 ms.author: dipapa
 ms.reviewer: 
 contributors:
+  - DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -15,41 +16,40 @@ search.audienceType:
 
 # Cloud Connectors as Power Automate for desktop actions
 
-[Cloud Connectors available for Power Automate](/connectors/connector-reference/connector-reference-powerautomate-connectors) are gradually introduced for desktop flows as well. 
+[Cloud Connectors available for Power Automate](/connectors/connector-reference/connector-reference-powerautomate-connectors) are gradually introduced for desktop flows as well.
 
 ## Prerequisites and limitations
 
 - You need an Attended RPA license.
 - Specific endpoints must be included in the allowlist for desktop flows containing cloud connector actions to work properly. More information: [Desktop flow services required for runtime](../../ip-address-configuration.md#desktop-flows-services-required-for-runtime)
 - For **Office 365 Outlook** actions, if you're using an Exchange Online application access policy, ensure that the allowed user-agents for successful desktop flow execution: PowerAutomateLocal/*, PowerAutomateCloud/.* More information: [Common errors](/connectors/office365/#common-errors)
-- Dynamic output schema isn't fully supported for cloud connector actions in desktop flows. Don't use variables in the respective dropdown fields, such as site address, list name, select file, and so on, while configuring a cloud connector action.
-- To enable attended or unattended runs (cloud-initiated runs), make sure that your desktop flow uses the Power Automate v2 schema and all connection references are marked as embedded.
+- Dynamic output schema isn't fully supported for cloud connector actions in desktop flows. Don't use variables in dropdown fields, such as site address, list name, select file, and so on, while configuring a cloud connector action.
+- To enable attended or unattended runs (cloud-initiated runs), make sure your desktop flow uses the [Power Automate v2 schema](../schema.md) and all connection references are marked as embedded.
 - Connection reference embedding is only available for co-owners. Users (run-only) can execute flows shared with them only via Power Automate for desktop's console using their own connections.
 - Desktop flows with embedded connection references don't currently support application lifecycle management (ALM) capabilities.
 
-## Using files in cloud connector actions
+## Use files in cloud connector actions
 
-To pass a file as an input to a cloud connector action, you must first convert it to binary data, using the [Convert file to binary data](file.md#convert-file-to-binary-data) action. 
+To pass a file as an input to a cloud connector action, you must first convert it to binary data, using the [Convert file to binary data](file.md#convert-file-to-binary-data) action.
 
-Cloud connector actions that return/produce files, actually produce binary data representing the respective files. To access the actual file, make sure to use the [Convert binary data to file](file.md#convert-binary-data-to-file) action first.
+Cloud connector actions that create or retrieve files actually produce binary data representing the respective files. To access the actual file, make sure to use the [Convert binary data to file](file.md#convert-binary-data-to-file) action first.
 
-
-## Embedding connection references on a desktop flow (preview)
+## Embed connection references on a desktop flow (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-With connection reference embedding, you can provide other co-owners access to your connection references and their underlying resources. You do this only in the scope of the respective shared desktop flow.
+With connection reference embedding, you can provide other co-owners access to your connection references and their underlying resources. You do this process only in the scope of the respective shared desktop flow.
 
 [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 To embed a connection reference to a flow, you have access to as a co-owner:
 
-- Select the respective desktop flow in Power Automate (make.powerautomate.com), and then select **Details**.
+- Select the desktop flow in Power Automate (make.powerautomate.com), and then select **Details**.
 - In the **Connection references** section, select **Manage.**
 
 :::image type="content" source="media/cloudconnectors/manage_connection_references_button.png" alt-text="Screenshot of the Manage Connections button" border="false":::
 
-- In the **Connection references** screen all of the connection references used in a respective flow are displayed.
+- In the **Connection references** screen all of the connection references used in a flow are displayed.
 - Set the **Embed in desktop flow** option to **Yes** to enable it.
 
 :::image type="content" source="media/cloudconnectors/embed_a_connection_reference_to_a_flow.png" alt-text="Screenshot of the Manage Connections menu" border="false" lightbox="media/cloudconnectors/embed_a_connection_reference_to_a_flow.png":::
@@ -85,4 +85,3 @@ Here's a list of in Cloud Connectors in Power Automate for desktop currently ava
 - [OneNote (Business)](/connectors/onenote)
 - [RSS](/connectors/rss)
 - [Word Online (Business)](/connectors/wordonlinebusiness)
-
