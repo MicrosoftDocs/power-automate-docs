@@ -30,9 +30,9 @@ search.audienceType:
 
 ## Use files in cloud connector actions
 
-To pass a file as an input to a cloud connector action, you must first convert it to binary data, using the [Convert file to binary data](file.md#convert-file-to-binary-data) action.
+To pass a file as an input to a cloud connector action, you must first convert it to binary data, using the [Convert file to binary data](file.md#convertfiletobinaryaction) action.
 
-Cloud connector actions that create or retrieve files actually produce binary data representing the respective files. To access the actual file, make sure to use the [Convert binary data to file](file.md#convert-binary-data-to-file) action first.
+Cloud connector actions that create or retrieve files actually produce binary data representing the respective files. To access the actual file, make sure to use the [Convert binary data to file](file.md#convertbinarytofileaction) action first.
 
 ## Embed connection references on a desktop flow (preview)
 
