@@ -19,7 +19,7 @@ search.audienceType:
 > [!IMPORTANT]
 > There are some known connector action issues in older versions of Power Automate for Desktop (versions older than v2.44). If you're using Power Automate for desktop version 2.43 or earlier, you might experience issues where connector actions don't load correctly in desktop flows such as:
 > - connector actions missing from the designer's action panel
-> - "unknown actions" errors in desktop flows linked to connector actions
+> - "unknown action" errors in desktop flows linked to connector actions
 > - incorrect console initiated executions (local runs) due to cloud connector actions  
 >
 > To resolve this issue, update Power Automate for desktop to the latest available version.
