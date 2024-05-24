@@ -58,7 +58,7 @@ If you meet all of the following criteria, you first need to remove the managed 
 - You have a desktop flow that was updated from v1 to v2 in your target environment.
 - You want to import a new version in v2 from another environment.
 
-If you can't remove the solution because you have other dependencies on this solution, you need to remove any unmanaged layer on the desktop flow, including related data. To see the related data, in the desktop flow in the solution, select **Dependencies** and then select the **Used by** tab. You see the list of unmanaged binaries associated with this desktop flow and you can delete them.
+If you can't remove the solution because you have other dependencies on this solution, you need to remove any unmanaged layer on the desktop flow, including related data. To see the related data, in the desktop flow in the solution, select **Dependencies** and then select the **Used by** tab. The list of unmanaged binaries associated with this desktop flow are shown and you can delete them.
 
 If the desktop flows on the target environment are still v1, you can safely import the solution containing the v2 desktop flow.
 
