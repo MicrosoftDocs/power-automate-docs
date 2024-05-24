@@ -37,11 +37,26 @@ search.audienceType:
 
 - You need an Attended RPA license.
 - Specific endpoints must be included in the allowlist for desktop flows containing cloud connector actions to work properly. More information: [Desktop flow services required for runtime](../../ip-address-configuration.md#desktop-flows-services-required-for-runtime)
-- For **Office 365 Outlook** actions, if you're using an Exchange Online application access policy, ensure that the allowed user-agents for successful desktop flow execution: PowerAutomateLocal/*, PowerAutomateCloud/.* More information: [Common errors](/connectors/office365/#common-errors)
-- Dynamic output schema isn't fully supported for cloud connector actions in desktop flows. Don't use variables in dropdown fields, such as site address, list name, select file, and so on, while configuring a cloud connector action.
+- For **Office 365 Outlook** actions, if you're using an EWS application access policy, ensure that the following user-agents are allowed (on top of the user agents listed [here](/connectors/office365/#common-errors)) for successful desktop flow execution: PowerAutomateLocal/*, PowerAutomateCloud/*
+- Dynamic output schema isn't fully supported for cloud connector actions in desktop flows. Refrain from using variables in the respective dropdown fields (Site address/ List name/ Select file etc.) while configuring a cloud connector action.
+- Sharing desktop flows with cloud connector actions isn't currently supported. Co-owners aren't able to run such desktop flows unless they overwrite the connection references with their own. Users with read access are unable to run such flows.
 - To enable attended or unattended runs (cloud-initiated runs), make sure your desktop flow uses the [Power Automate v2 schema](../schema.md) and all connection references are marked as embedded.
 - Connection reference embedding is only available for co-owners. Users (run-only) can execute flows shared with them only via Power Automate for desktop's console using their own connections.
 - Desktop flows with embedded connection references don't currently support application lifecycle management (ALM) capabilities.
+- [Microsoft Dataverse (preview)](/connectors/commondataserviceforapps) has the following limitations:
+  - The connector is currently available only for desktop flows in the public cloud.
+  - The following actions are currently supported in desktop flows:
+    - [Add a new row to selected environment](/connectors/commondataserviceforapps/#add-a-new-row-to-selected-environment)
+    - [Delete a row from selected environment](/connectors/commondataserviceforapps/#delete-a-row-from-selected-environment)
+    - [Download a file or an image from selected environment](/connectors/commondataserviceforapps/#download-a-file-or-an-image-from-selected-environment)
+    - [Get a row by ID from selected environment](/connectors/commondataserviceforapps/#get-a-row-by-id-from-selected-environment)
+    - [List rows from selected environment](/connectors/commondataserviceforapps/#list-rows-from-selected-environment)
+    - [Perform a bound action in selected environment](/connectors/commondataserviceforapps/#perform-a-bound-action-in-selected-environment)
+    - [Perform an unbound action in selected environment](/connectors/commondataserviceforapps/#perform-an-unbound-action-in-selected-environment)
+    - [Relate rows in selected environment](/connectors/commondataserviceforapps/#relate-rows-in-selected-environment)
+    - [Unrelate rows in selected environment](/connectors/commondataserviceforapps/#unrelate-rows-in-selected-environment)
+    - [Update a row in selected environment](/connectors/commondataserviceforapps/#update-a-row-in-selected-environment)
+    - [Upload a file or an image to selected environment](/connectors/commondataserviceforapps/#upload-a-file-or-an-image-to-selected-environment)
 
 ## Use files in cloud connector actions
 
@@ -90,6 +105,7 @@ All co-owners and run-only users are required to bring your own connection (BYOC
 
 Here's a list of in Cloud Connectors in Power Automate for desktop currently available:
 
+- [Microsoft Dataverse (preview)](/connectors/commondataserviceforapps)
 - [SharePoint](/connectors/sharepointonline)
 - [Excel Online (Business)](/connectors/excelonline)
 - [Microsoft Forms](/connectors/microsoftforms)
