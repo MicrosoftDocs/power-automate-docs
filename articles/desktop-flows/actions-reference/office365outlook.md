@@ -4,7 +4,7 @@ description: Learn about the available Office 365 Outlook actions.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 05/23/2024
+ms.date: 05/24/2024
 ms.author: dipapa
 ms.reviewer: 
 contributors:
@@ -52,7 +52,7 @@ Modify the **Name** property with the name of the file to be attached. Update **
 
 :::image type="content" source="media\office365outlook\attachments-item-details.png" alt-text="Screenshot of the item details in the Attachments window.":::
 
-You can add more attachments by clicking on the plus button.
+You can add more attachments by selecting the plus button.
 
 :::image type="content" source="media\office365outlook\add-more-attachments.png" alt-text="Screenshot of add more button in the Attachments window.":::
 
