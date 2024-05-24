@@ -749,7 +749,7 @@
       href: ./desktop-flows/actions-reference/logging.md 
     - name: SharePoint
       href: ./desktop-flows/actions-reference/sharepoint.md
-    - name: Office 365 Outlook (preview)
+    - name: Office 365 Outlook
       href: ./desktop-flows/actions-reference/office365outlook.md
     - name: Work queues
       href: ./desktop-flows/actions-reference/workqueues.md
