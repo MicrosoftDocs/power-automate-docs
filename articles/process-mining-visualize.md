@@ -28,6 +28,10 @@ To be able to access them and gain full insights, make sure you've completed ste
 
 After completing these steps, return to the analytics page of your process in the process mining capability.
 
+> [!NOTE]
+>
+> Please be advised that the standard report has applied Power BI report filter set to **ViewID = 1** (which usually is the view named **Default**). All report pages and visualisations reflect this filter by default, unless changed.
+
 ## Process map
 
 The process map empowers you to visualize and gain insights from processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist.
