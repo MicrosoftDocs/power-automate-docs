@@ -48,6 +48,9 @@ By default, Power Automate for desktop honors the proxy settings specified in Wi
 
 If the installation fails, go to the [troubleshooting guide](https://support.microsoft.com/topic/power-automate-desktop-installation-troubleshooting-b2c93d3f-5a90-450a-833d-920a25f2d967) for help.
 
+> [!NOTE]
+> The MSI Power Automate installer (Setup.Microsoft.PowerAutomate.exe) is running in 32-bit. The installer will auto-detect if 32-bit or 64-bit components have to be installed.
+
 ## Install Power Automate from Microsoft Store
 
 1. Find Power Automate in Microsoft Store:
