@@ -3,11 +3,12 @@ title: Prerequisites and limitations
 description: Learn about the prerequisites and limitations of Power Automate for desktop.
 author: mattp123
 ms.topic: overview
-ms.date: 09/13/2023
+ms.date: 05/28/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
 - jpapadimitriou
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -116,7 +117,7 @@ The following table describes what features are available for different account 
 
 ## Known issues and limitations
 
-- Desktop flows in **schema V1 environments** can't exceed **100mb** in size. In case a desktop flow exceeds the size limit, make sure to segregate its logic into smaller desktop flows.
+- Desktop flows in v1 [schema](schema.md) environments can't exceed 100 MB in size. If a desktop flow exceeds the size limit, separate its logic into smaller desktop flows.
 - Only work or school account users with a Dataverse database provisioned in their default environment can create Power Automate desktop flows. Power Automate desktop flows are stored in the default environment with the Dataverse database.
 
   If the Dataverse database doesn't exist in the default environment, the user won't be able to create desktop flows, and will be prompted to create a database. There will be no connectivity of Power Automate desktop flows with cloud flows.  
