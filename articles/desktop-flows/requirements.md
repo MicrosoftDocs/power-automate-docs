@@ -116,7 +116,7 @@ The following table describes what features are available for different account 
 
 ## Known issues and limitations
 
-- Desktop flows can't exceed **100mb** in size. In case a desktop flow exceeds the size limit, make sure to segregate its logic into smaller desktop flows.
+- Desktop flows in **schema V1 environments** can't exceed **100mb** in size. In case a desktop flow exceeds the size limit, make sure to segregate its logic into smaller desktop flows.
 - Only work or school account users with a Dataverse database provisioned in their default environment can create Power Automate desktop flows. Power Automate desktop flows are stored in the default environment with the Dataverse database.
 
   If the Dataverse database doesn't exist in the default environment, the user won't be able to create desktop flows, and will be prompted to create a database. There will be no connectivity of Power Automate desktop flows with cloud flows.  
