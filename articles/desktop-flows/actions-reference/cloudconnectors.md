@@ -29,7 +29,8 @@ search.audienceType:
 > - [2.42](https://go.microsoft.com/fwlink/?linkid=2272571)  
 > - [2.41](https://go.microsoft.com/fwlink/?linkid=2272390)  
 > - [2.40](https://go.microsoft.com/fwlink/?linkid=2272389)  
-> - [2.39](https://go.microsoft.com/fwlink/?linkid=2272570)  
+> - [2.39](https://go.microsoft.com/fwlink/?linkid=2272570)
+> - [2.38](https://go.microsoft.com/fwlink/?linkid=2272859)  
 
 [Cloud Connectors available for Power Automate](/connectors/connector-reference/connector-reference-powerautomate-connectors) are gradually introduced for desktop flows as well.
 
