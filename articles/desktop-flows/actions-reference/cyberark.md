@@ -51,7 +51,7 @@ Retrieves a password for a specific application from CyberArk.
 |Accept untrusted certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to accept untrusted certificates|
 |Certificate location|N/A|Don't use certificate, Load certificate from Windows Store, Load certificate from file|Don't use certificate|Specifies how to load (if needed) the certificate for the request|
 |Use only valid certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to load only valid certificates from the store|
-|Store certificate path|No|[Text value](../variable-data-types.md#text-value)||The path of the certificate in the certificate store|
+|Store certificate path|No|[Text value](../variable-data-types.md#text-value)||The path of the certificate in the certificate store. The path can be specified in this format: `%StoreName%/%StoreLocation%/%CertificateSerialNumber%` <br/>For example: `LocalMachine/My/9F2B7A5C3D4E8F1A6B3C7D8E9A0B1C2D` |
 |Certificates path|No|[File](../variable-data-types.md#files-and-folders)||The path of the certificate selected from the store|
 |Certificate password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the certificate file|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The waiting time (in seconds) to get results from CyberArk|
