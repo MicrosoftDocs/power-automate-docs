@@ -53,7 +53,7 @@ To find the application ID, open CyberArk Password Vault on a web browser and na
 |Certificate location|N/A|Don't use certificate, Load certificate from Windows Store, Load certificate from file|Don't use certificate|Specifies how to load (if needed) the certificate for the request|
 |Use only valid certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to load only valid certificates from the store|
 |Store certificate path|No|[Text value](../variable-data-types.md#text-value)||The path of the certificate in the certificate store. The certificate is represented by its serial number. The path should follow the format (local path to certificate)/(certificate serial)|
-|Certificates path|No|[File](../variable-data-types.md#files-and-folders)||The path of the certificate. The certificate is represented by its serial number. The path should follow the format (local path to certificate)/(certificate serial)|
+|Certificates path|No|[File](../variable-data-types.md#files-and-folders)||The path of the certificate.|
 |Certificate password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the certificate file|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The waiting time (in seconds) to get results from CyberArk|
 
