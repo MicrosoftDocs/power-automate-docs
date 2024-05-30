@@ -43,7 +43,7 @@ Retrieves a password for a specific application from CyberArk.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Server address|No|[Text value](../variable-data-types.md#text-value)||The base URI for the web request to connect. For example, https://yourservice.skytap.com:111|
+|Server address|No|[Text value](../variable-data-types.md#text-value)||The base URI for the web request to connect. For example, <https://yourservice.skytap.com:111>|
 |Application ID|No|[Text value](../variable-data-types.md#text-value)||The application ID to use for the web request. </br></br>To find the application ID, open CyberArk Password Vault on a web browser and navigate to the **Applications** tab. Select **Components**, open the **Private Ark** application, and then select the desired Vault. You can add Owners here.|
 |Safe|No|[Text value](../variable-data-types.md#text-value)||The safe on CyberArk in which the application belongs|
 |Folder|No|[Text value](../variable-data-types.md#text-value)||The folder necessary for the web request query|
