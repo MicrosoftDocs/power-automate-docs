@@ -45,6 +45,4 @@ A full comparison of the features included in each account can be found at [Sign
 
 Here's a list of [Known issues and limitations](setup.md#known-issues-and-limitations) for Power Automate.
 
-To create desktop flows using legacy Windows recorder (V1) and Selenium IDE as alternative solutions, go to [Introduction to other types of desktop flows](overview.md).
-
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
