@@ -20,7 +20,6 @@ search.audienceType:
 
 > [!IMPORTANT]
 >
-> - Selenium IDE is deprecated and will no longer work after February 28th, 2023. Migrate your flows to Power Automate for desktop or delete them.
 > - Gateways for desktop flows are no longer supported. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 There are two different methods that Power Automate can use to connect to the cloud services in order to receive flow execution jobs. The first option is direct connectivity, while the second option requires the on-premises data gateway to be installed.
@@ -65,8 +64,6 @@ The details about this data flow are documented in [Adjust communication setting
 Power Automate makes some additional outgoing web requests at runtime, which are documented in [Desktop flows services required for runtime](../ip-address-configuration.md#desktop-flows-services-required-for-runtime). 
 
 The CRL endpoints are only required if you use the on-premises data gateway. They use HTTP over port 80 and are initiated by the **UIFlowService**. 
-
-The WebDriver endpoints are only required if you use Selenium IDE desktop flows and have an automatically updating browser. These endpoints use HTTPS over port 443 and are initiated by the **Microsoft.Flow.RPA.Agent.exe** process using the user account that is running the desktop flow. 
 
 ## Session credential lifecycle
 
