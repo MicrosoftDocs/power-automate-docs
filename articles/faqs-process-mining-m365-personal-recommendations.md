@@ -20,7 +20,7 @@ The Microsoft 365 personal recommendations found on the Power Automate home page
 
 ## What is Process Mining’s Microsoft 365 personal recommendations?
 
-The Microsoft 365 recommendations are created from your own graph data. The system understands from your use of Microsoft 365 tools opportunities for automation through the use of natural language to flow. The system surfaces these recommendations as natural language text that’s surfaced within natural language to flow for flow creation.
+The Microsoft 365 recommendations are created from your own graph data. The system understands from your use of Microsoft 365 tools opportunities for automation by using natural language to flow. The system surfaces these recommendations as natural language text, which surfaces within natural language to flow for flow creation.
 
 ## What can Process Mining’s Microsoft 365 personal recommendations do?  
 
@@ -32,11 +32,11 @@ The system’s intended use is to help you accelerate your adoption of cloud flo
 
 ## How was Process Mining’s Microsoft 365 personal recommendations evaluated? What metrics are used to measure performance?
 
-We have a robust set of metrics we're tracking to measure the performance of the model and resulting customer experience. We track the telemetry of recommendations selected and success of cloud flow creation.
+We have a robust set of metrics we track to measure the performance of the model and resulting customer experience. We track the telemetry of recommendations selected and success of cloud flow creation.
 
 ## What are the limitations of the system? How can I minimize the impact of the limitations when using the system?
 
-Microsoft 365 recommendations can only create recommendations from Microsoft 365 usage in the preceding seven days. It can't create recommendations without sufficient usage of Microsoft 365 products like emails, Teams usage, or calendar invites. You always have the option to not engage with the surfaced recommendations.
+Microsoft 365 recommendations can only create recommendations from Microsoft 365 usage in the preceding seven days. It can't create recommendations without sufficient usage of Microsoft 365 products like emails, Teams usage, or calendar invites. You can always choose to not engage with the surfaced recommendations.
 
 ## What operational factors and settings allow for effective and responsible use of Process Mining’s Microsoft 365 personal recommendations?
 
