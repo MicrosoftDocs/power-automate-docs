@@ -31,8 +31,6 @@ For an overview of the desktop flows in your environment, visit the [Microsoft P
 ## Learn more
 
 - Analyze the [desktop flows risk assessment](/power-platform/guidance/coe/power-bi-govern#desktop-flows-risk-assessment) in your environment.
-- [Create Windows recorder (V1) flows](create-desktop.md).
-- [Create Selenium IDE flows](create-web.md).
 - Run [desktop flows](run-desktop-flow.md).
 
 
