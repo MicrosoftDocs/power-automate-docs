@@ -11,9 +11,6 @@ contributors:
   - v-aangie
 ms.author: heortaol
 ms.reviewer: angieandrews
-contributors:
-  - HeatherOrt
-  - v-aangie
 ms.collection: bap-ai-copilot
 ---
 
