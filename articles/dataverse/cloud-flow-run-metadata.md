@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 04/15/2024
+ms.date: 06/03/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -136,8 +136,8 @@ It's uncertain when this capability will change from a public preview to being g
 
 ### Why isn't action-level data available?
 
-The [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is for the flow run and does not have inputs and outputs from triggers and actions. The data for triggers and actions takes up a lot more space in Dataverse and is only needed when the maker drills deeper, so it has been omitted for now. We are evaluating mechanisms to make that data available.
+The [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is for the flow run and doesn't have inputs and outputs from triggers and actions. The data for triggers and actions takes up a lot more space in Dataverse and is only needed when the maker drills deeper, so it's omitted for now. We are evaluating mechanisms to make that data available.
 
 ### I changed the TTL FlowRunTimeToLiveInSeconds to be longer. Why am I not seeing data for that full period?
 
-The [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is written into Dataverse as flow runs occur. There is no backfill operation to populate historical flow run data.
+The [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is written into Dataverse as flow runs occur. There isn't a backfill operation to populate historical flow run data.
