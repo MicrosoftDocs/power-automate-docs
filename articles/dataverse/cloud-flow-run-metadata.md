@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 05/23/2024
+ms.date: 06/03/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -81,6 +81,8 @@ When the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-app
 
 Setting the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) to zero stops all ingestion of new [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records.
 
+We're adding an experience in the [Power Platform admin center environments experience](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center) to facilitate setting the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds).
+
 ### Set custom TTL values to store a longer or more specific amount of cloud flow run history
 
 If you want a specific Time To Live (TTL) value that isn't available through the [Power Platform admin center](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center) experience, then you can set that value directly as the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds).
@@ -138,9 +140,19 @@ The following table contains a list of [FlowEvent.EventCode](/power-apps/develop
 
 If all of your environments have a [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) of zero, then it could be one of these situations:
 1. If [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data has never been available, then your environments might not have been automatically enabled for [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) ingestion because there wasn't enough [Dataverse database storage capacity](/power-platform/admin/capacity-storage#dataverse-tab) available.
-2. If [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data was previously available, then an administrator might have turned off ingestion of new records.
+1. If [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data was previously available, then an administrator might have turned off ingestion of new records.
 
 ### When is this going to be generally available (GA)?
+
+It's uncertain when this capability will change from a public preview to being generally available (GA). The ingestion of flow run history has architectural limitations and performance limitations that require throttling, so the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is often going to have some gaps. Customers told us there's an expectation that the data is complete when we make this capability GA. We want to get to that point before we change from public preview to GA.
+
+### Why isn't action-level data available?
+
+The [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is for the flow run and doesn't have inputs and outputs from triggers and actions. The data for triggers and actions takes up a lot more space in Dataverse and is only needed when the maker drills deeper, so it is omitted for now. We're evaluating mechanisms to make that data available.
+
+### I changed the TTL FlowRunTimeToLiveInSeconds to be longer. Why am I not seeing data for that full period?
+
+The [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is written into Dataverse as flow runs occur. There isn't a backfill operation to populate historical flow run data.
 
 It's uncertain when this capability will change from a public preview to being generally available (GA). The ingestion of flow run history has architectural limitations and performance limitations that require throttling, so the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is often going to have some gaps. Customers told us there's an expectation that the data will be complete when we make this capability GA. We want to get to that point before we change from public preview to GA.
 
@@ -161,3 +173,4 @@ The Application Insights data is:
 ### See also
 
 [Automation center](/power-automate/automation-center-overview)
+
