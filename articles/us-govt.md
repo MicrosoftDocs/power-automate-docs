@@ -250,7 +250,7 @@ There are exceptions to the principle of maintaining product functional parity w
 
 ### See also
 
-- [Desktop flows](./desktop-flows/overview.md).
+- [Desktop flows](./desktop-flows/introduction.md).
 
 - [Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government).
 
