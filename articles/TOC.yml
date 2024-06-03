@@ -35,9 +35,7 @@
   - name: Export and import a non-solution flow
     href: export-import-flow-non-solution.md
   - name: Drafts and versioning for cloud flows
-    href: drafts-versioning.md
-  - name: Use Power Automate flows as plugins in Copilot for Microsoft 365 (preview)
-    href: flow-plugins-m365.md          
+    href: drafts-versioning.md  
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
@@ -109,10 +107,12 @@
       href: change-cloud-flow-owner.md
     - name: Format data by examples
       href: format-data-by-examples.md
-  - name: Popular cloud flows scenarios
+  - name: Use flows in other apps
     items:
     - name: Use the Power Automate plugin for ChatGPT
       href: ./use-chatgpt-plugin.md
+    - name: Use flows as plugins in Copilot for Microsoft 365 (preview)
+      href: flow-plugins-m365.md  
     - name: Use flows with approvals
       items:
       - name: Get started with approvals
@@ -353,6 +353,8 @@
       href: ./desktop-flows/manifest.md
     - name: Power Automate v2 schema
       href: ./desktop-flows/schema.md
+    - name: Desktop flow action logs configuration
+      href: ./desktop-flows/configure-desktop-flow-logs.md      
     - name: Application lifecycle management for Power Automate v2 schema
       href: ./desktop-flows/alm-schema.md
     - name: Create a Dataverse database
@@ -747,7 +749,7 @@
       href: ./desktop-flows/actions-reference/logging.md 
     - name: SharePoint
       href: ./desktop-flows/actions-reference/sharepoint.md
-    - name: Office 365 Outlook (preview)
+    - name: Office 365 Outlook
       href: ./desktop-flows/actions-reference/office365outlook.md
     - name: Work queues
       href: ./desktop-flows/actions-reference/workqueues.md
@@ -1044,6 +1046,14 @@
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Manage automations
   items:
+  - name: Automation center (preview)
+    items:
+    - name: Overview
+      href: automation-center-overview.md
+    - name: Recommendations
+      href: automation-center-recommendations.md
+    - name: Copilot
+      href: automation-center-copilot.md
   - name: Capacity utilization
     items:
     - name: Introduction to capacity utilization (preview)
@@ -1070,7 +1080,7 @@
     href: environments-overview-admin.md
   - name: IP address configuration
     href: ip-address-configuration.md
-  - name: Support for customer-managed keys (preview)
+  - name: Support for customer-managed keys
     href: customer-managed-keys.md
   - name: View desktop flows analytics
     href: ./desktop-flows/overview-analytics.md
@@ -1202,7 +1212,9 @@
     href: responsible-ai-overview.md
   - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
-  - name: FAQ for copilot in desktop flow activity
+  - name: FAQ for Copilot in automation center
+    href: faqs-copilot-automation-center.md
+  - name: FAQ for Copilot in desktop flow activity
     href: faqs-copilot-automation-activity.md
   - name: FAQ for Copilot in Process Mining
     href: faqs-copilot-in-process-mining.md
