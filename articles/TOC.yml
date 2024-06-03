@@ -233,8 +233,8 @@
         href: ./teams/customize-approvals.md
       - name: Use custom connectors in approval flows
         href: ./teams/approvals-custom-connector.md
-    - name: Trigger flows from Power BI report
-      href: ./trigger-flow-powerbi-report.md
+    - name: Create a visual for Power BI
+      href: /power-bi/create-reports/power-bi-automate-visual?tabs=powerbi-desktop
     - name: Configure flows in Power Pages (preview)
       href: /power-pages/configure/cloud-flow-integration
     - name: Use flows with Microsoft Forms
@@ -353,6 +353,8 @@
       href: ./desktop-flows/manifest.md
     - name: Power Automate v2 schema
       href: ./desktop-flows/schema.md
+    - name: Desktop flow action logs configuration
+      href: ./desktop-flows/configure-desktop-flow-logs.md      
     - name: Application lifecycle management for Power Automate v2 schema
       href: ./desktop-flows/alm-schema.md
     - name: Create a Dataverse database
@@ -747,7 +749,7 @@
       href: ./desktop-flows/actions-reference/logging.md 
     - name: SharePoint
       href: ./desktop-flows/actions-reference/sharepoint.md
-    - name: Office 365 Outlook (preview)
+    - name: Office 365 Outlook
       href: ./desktop-flows/actions-reference/office365outlook.md
     - name: Work queues
       href: ./desktop-flows/actions-reference/workqueues.md
@@ -1044,6 +1046,14 @@
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Manage automations
   items:
+  - name: Automation center (preview)
+    items:
+    - name: Overview
+      href: automation-center-overview.md
+    - name: Recommendations
+      href: automation-center-recommendations.md
+    - name: Copilot
+      href: automation-center-copilot.md
   - name: Capacity utilization
     items:
     - name: Introduction to capacity utilization (preview)
@@ -1202,7 +1212,9 @@
     href: responsible-ai-overview.md
   - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
-  - name: FAQ for copilot in desktop flow activity
+  - name: FAQ for Copilot in automation center
+    href: faqs-copilot-automation-center.md
+  - name: FAQ for Copilot in desktop flow activity
     href: faqs-copilot-automation-activity.md
   - name: FAQ for Copilot in Process Mining
     href: faqs-copilot-in-process-mining.md
