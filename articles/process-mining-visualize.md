@@ -1,13 +1,14 @@
 ---
-title: Visualize and gain insights from processes (contains video)
-description: This topic explains how to visualize and gain insights from processes in the process mining capability.
+title: Visualize and gain insights from processes
+description: Learn how to visualize and gain insights from processes in the process mining capability.
 author: donums
 contributors:
+  - rosikm
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 07/18/2023
+ms.date: 05/24/2024
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -19,8 +20,7 @@ search.audienceType:
 
 This article explains metrics and visuals, and what they could tell you about your process.
 
-Some of the metrics and visuals are only available in setup with your own Power BI workspace. These metrics and visuals are clearly marked in the text as **Premium**. 
-To be able to access them and gain full insights, make sure you've completed steps in the following articles:
+Some of the metrics and visuals are only available in setup with your own Power BI workspace. These metrics and visuals are clearly marked in the text as **Premium**. To be able to access them and gain full insights, make sure you complete the steps in the following articles:
 
 - [Connect your Power BI workspace to the process mining capability](process-mining-pbi-workspace.md#connect-your-power-bi-workspace-to-the-process-mining-capability)
 - [Create your own custom Power BI workspace](process-mining-pbi-workspace.md#create-your-own-custom-power-bi-workspace)
@@ -28,11 +28,14 @@ To be able to access them and gain full insights, make sure you've completed ste
 
 After completing these steps, return to the analytics page of your process in the process mining capability.
 
+> [!NOTE]
+> The standard report applies the Power BI report filter set to **ViewID = 1**, which usually is the view named **Default**. All report pages and visualisations reflect this filter by default, unless changed.
+
 ## Process map
 
 The process map empowers you to visualize and gain insights from processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist.
 
-Activities describe tasks or actions, the sequence of which makes up a business process. Activities can be performed by humans, or, in the case of automation—by machines. In the process map, different activities appear as nodes, and transitions between activities appear as edges. Each process sequence will have a start and an end.
+Activities describe tasks or actions, the sequence of which makes up a business process. Activities can be performed by humans or machines, in an automation scenario. In the process map, different activities appear as nodes, and transitions between activities appear as edges. Each process sequence has a start and an end.
 
 Different activity combinations and *variants* are shown separately on the process map. A process variant is a unique sequence from start to finish of the process. Each variant differs from the others by at least one activity.
 
@@ -70,7 +73,7 @@ The metrics for following layers visualize the same metric on both nodes and tra
 
   - **Loop outflow:** Loop outflow represents the repetitions of an activity's successors.
 
-  - **Loop count:** Loop represents specific repetition where activity is followed by the same activity, but not directly. For example, at least one additional activity is always involved.
+  - **Loop count:** Loop represents specific repetition where activity is followed by the same activity, but not directly. For example, at least one more activity is always involved.
 
   - **Net loop gain:** Available for activities only. This activity metric represents the difference between Loop outflow and Loop inflow. If the value is positive, the activity is directly followed by more repeated activities than it was preceded. Such activities start new loops in processes. If the value is negative, the activity is directly followed by less repeated activities than it was preceded. Such activities end, close, or exit loops in processes. The halo effect color also helps us see positive and negative trends in the process - red color represents a problem (start of new loops); the blue color represents a favorable change (end of loops).
 
@@ -78,13 +81,13 @@ To learn more about the process map visual, go to [Process map overview](minit/p
 
 ## Use KPIs and visualizations for analytics
 
-You'll get several prebuilt KPIs and visualizations to help you to understand your process. You can filter by selectors, such as **Activity** and **Case Id (Premium)**, and custom filters **(Premium)** if you added the custom attributes (data columns) when you uploaded your data for analysis.
+You get several prebuilt KPIs and visualizations to help you to understand your process. You can filter by selectors, such as **Activity** and **Case Id (Premium)**, and custom filters **(Premium)** if you added the custom attributes (data columns) when you uploaded your data for analysis.
 
-The following screenshot is an example of visualizations and analytics you'll see in the premium version.
+The following screenshot is an example of visualizations and analytics you see in the premium version.
 
 :::image type="content" source="media/process-mining-visualize/kpi-premium.png" alt-text="Screenshot of the 'Summary' tab.":::
 
-If you didn't purchase the premium version, you'll have access to the default version. The top of the default version shows only the four KPIs listed in the [KPIs](#kpis) section in this article and not the two KPIs with **(Premium)** in the title. Also, you won't see the **Average duration of cases over time** chart.
+If you didn't purchase the premium version, you have access to the default version. The top of the default version shows only the four KPIs listed in the [KPIs](#kpis) section in this article and not the two KPIs with **(Premium)** in the title. Also, you won't see the **Average duration of cases over time** chart.
 
 ### KPIs
 
@@ -120,7 +123,7 @@ The filters dialog contains the following filters:
 
 To select multiple activities or cases, you can use **Ctrl** + **click** .
 
-If you didn't purchase the premium version, you'll have access to the default version. The **Filters** pane shows only the activity selector. You won't have access to the other filters listed in this section with **(Premium)** in the title.
+If you didn't purchase the premium version, you have access to the default version. The **Filters** pane shows only the activity selector. You don't have access to the other filters listed in this section with **(Premium)** in the title.
 
 ### Visualizations
 
@@ -130,7 +133,7 @@ If you didn't purchase the premium version, you'll have access to the default ve
 
 - **Average duration of cases over time (Premium)**: Shows how duration of the process changes over time.
 
-- **Cases**, **Activities**, and **Variants**: Shows number of cases, activities and variants based on the current filter settings.
+- **Cases**, **Activities**, and **Variants**: Shows number of cases, activities, and variants based on the current filter settings.
 
     :::image type="content" source="media/process-mining-visualize/visualizations.png" alt-text="Screenshot of the visualizations.":::
 
@@ -144,6 +147,6 @@ The analysis view appears on the right and the corresponding map appears on the 
 
 ### Variant DNA
 
-The **Variant DNA** view is available in both the default and premium views. To show the order of all the activities in each variant sorted based on the variants that happen the most often, select the **Variant DNA** tab. The activities are color coded and abbreviated to quickly show a high-level view of the order of the activities that occur. This also helps identify non-compliant processes, self-loops, and loops quickly.
+The **Variant DNA** view is available in both the default and premium views. To show the order of all the activities in each variant sorted based on the variants that happen the most often, select the **Variant DNA** tab. The activities are color coded and abbreviated to quickly show a high-level view of the order of the activities that occur. This also helps identify noncompliant processes, self-loops, and loops quickly.
 
 :::image type="content" source="media/process-mining-visualize/variant-dna.png" alt-text="Screenshot of the 'Variant DNA' tab'.":::
