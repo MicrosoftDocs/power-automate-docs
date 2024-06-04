@@ -201,6 +201,29 @@ This action doesn't produce any variables.
 |Column index is out of range|Indicates that the provided column index is out of range|
 |Duplicate column name|Indicates that the provided column name already exists|
 
+## <a name="deletecolumnfromdatatableaction"></a> Delete column from data table
+
+Delete a data table column at the specified column index or column name.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Specify column with|N/A|Name, Index|Name|Specify whether to find the column by name or index|
+|Column name|No|[Text value](../variable-data-types.md#text-value)||The name of the column that should be deleted|
+|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the column that should be deleted. Column indexes start from 0|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="deletecolumnfromdatatableaction_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Column name doesn't exist|Indicates that the provided column name doesn't exist|
+|Column index is out of range|Indicates that the provided column index is out of range|
 
 
 
