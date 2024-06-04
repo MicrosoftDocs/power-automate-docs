@@ -64,12 +64,24 @@ Different factors determine the essential requirements needed to run the feature
 
 Copilot (preview) features are enabled by default. Your administrator can disable them.
 
+### Disable Copilot for your tenant
+
 To disable Copilot in Power Automate for your tenant, follow these steps.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. On the navigation menu to the left, select **Environments** > ***your environment***.
-1. On the menu at the top, select **Settings** > **Product** > **Features**.
+1. On the navigation menu to the left, select **Settings** > **Tenant settings**.
 1. Select **Copilot (preview)** > set the toggle to **Off** > **Save**.
+
+### Enable or disable Copilot for your environment
+
+To enable or disable Copilot preview features for your environment, follow these steps.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+1. On the navigation menu to the left, select **Environments**.
+1. Select the environment and on the command bar, select **Settings** > **Product** > **Features**.
+1. Select one of the following options:
+    - To turn it on, set the toggle to **On** for **Copilot**.
+    - To turn it off, set the toggle to **Off** for **Copilot**.
 
 ### See also
 
