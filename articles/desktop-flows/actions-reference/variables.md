@@ -67,7 +67,7 @@ Creates a new data table variable.
 |-----|-----|-----|
 |DataTable|[Datatable](../variable-data-types.md#datatable)|The new data table|
 
-### <a name="truncatenumber_onerror"></a> Exceptions
+### <a name="createnewdatatable_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
@@ -88,13 +88,60 @@ Inserts a row at the end or before a specific index value.
 
 This action doesn't produce any variables.
 
-### <a name="truncatenumber_onerror"></a> Exceptions
+### <a name="addrowtodatatable_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
 |Item index is out of range|Indicates that the provided item index is out of range|
 |Invalid input arguments|Indicates that there's an invalid input parameter|
 |Incompatible type error|Indicates that an input parameter of an incompatible type is provided|
+
+## <a name="deleterowfromdatatable"></a> Delete row from data table
+
+Delete a data table row at the correspoding row index.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Row index|No|[Numeric value](../variable-data-types.md#numeric-value)||The row index within a data table that should be deleted|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="deleterowfromdatatable_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Item index is out of range|Indicates that the specified data table item is out of range|
+
+## <a name="modifydatatableitem"></a> Update data table item
+
+Update a data table row item on a defined column.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Column|No|[Text value](../variable-data-types.md#text-value)||The column name or index of the item to update|
+|Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row index of the item to update|
+|New value|No|[Text value](../variable-data-types.md#text-value)||The new value to update at the specified row index and column|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="modifydatatableitem_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Item index is out of range|Indicates that the specified data table item is out of range|
+|Column name doesn't exist|Indicates that the provided column name doesn't exist|
+|Column index is out of range|Indicates that the provided column index is out of range|
+|Incompatible type error|Indicates that an input parameter of an incompatible type has been provided|
 
 ## <a name="findorreplaceindatatable"></a> Find or replace in data table
 
@@ -121,7 +168,7 @@ Finds and/or replaces data table values.
 |-----|-----|-----|
 |DataTableMatches|[Datatable](../variable-data-types.md#datatable)|The data table containing the row and column indexes for matches|
 
-### <a name="truncatenumber_onerror"></a> Exceptions
+### <a name="findorreplaceindatatable_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -130,52 +177,35 @@ Finds and/or replaces data table values.
 |Column index is out of range|Indicates that the provided column index is out of range|
 |Incompatible type error|Indicates that an input parameter of an incompatible type is provided|
 
-## <a name="modifydatatableitem"></a> Update data table item
+## <a name="addcolumntodatatableaction"></a> Insert column into data table
 
-Update a data table row item on a defined column.
+Inserts a column at the end or before a specific index value.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
-|Column|No|[Text value](../variable-data-types.md#text-value)||The column name or index of the item to update|
-|Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row index of the item to update|
-|New value|No|[Text value](../variable-data-types.md#text-value)||The new value to update at the specified row index and column|
+|Into location|N/A|End of data table, Before column index|End of data table|Specify whether to insert the new column at the end of the data table or before a specified column index|
+|Column name|No|[Text value](../variable-data-types.md#text-value)||Specify the header of the new column|
+|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||Insert the column index value to be used when before column index is specified as the into location parameter|
 
 ### Variables produced
 
 This action doesn't produce any variables.
 
-### <a name="truncatenumber_onerror"></a> Exceptions
+### <a name="addcolumntodatatableaction_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
-|Item index is out of range|Indicates that the specified data table item is out of range|
-|Column name doesn't exist|Indicates that the provided column name doesn't exist|
 |Column index is out of range|Indicates that the provided column index is out of range|
-|Incompatible type error|Indicates that an input parameter of an incompatible type has been provided|
+|Duplicate column name|Indicates that the provided column name already exists|
 
-## <a name="deleterowfromdatatable"></a> Delete row from data table
 
-Update a data table row item on a defined column.
 
-### Input parameters
 
-|Argument|Optional|Accepts|Default Value|Description|
-|-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
-|Row index|No|[Numeric value](../variable-data-types.md#numeric-value)||The row index within a data table that should be deleted|
 
-### Variables produced
 
-This action doesn't produce any variables.
-
-### <a name="truncatenumber_onerror"></a> Exceptions
-
-|Exception|Description|
-|-----|-----|
-|Item index is out of range|Indicates that the specified data table item is out of range|
 
 ## <a name="truncatenumber"></a> Truncate number
 
