@@ -1,9 +1,9 @@
 ---
 title: Copilot in Power Automate overview
 description: Get an overview of Copilot in Power Automate and its features.
-author: v-aandrews
+author: v-aangie
 contributors:
-  - v-aandrews
+  - v-aangie
   - jhaskett-msft
 ms.topic: overview
 ms.date: 06/07/2024
@@ -15,7 +15,7 @@ ms.collection: bap-ai-copilot
 
 # Copilot in Power Automate overview
 
-Copilot in Power Automate accelerates your journey to adopting automation and transforming your processes by using the instructions you give Copilot written in natural language to surface possible solutions that can achieve desired results. Copilot stays with you all the way during creation to guide you through your entire process.
+Copilot in Power Automate accelerates your journey to adopting automation and transforming your processes. It enhances these scenarios by using the instructions you give Copilot written in natural language to surface possible solutions that can achieve desired results. Copilot stays with you all the way during creation to guide you through your entire process.
 
 Use the following sections to learn how to use Copilot features in Power Automate.
 
@@ -51,12 +51,12 @@ Copilot in automation center enables makers, business analysts, and members of t
 
 ## Prerequisites for Copilot features in Power Automate
 
-Different factors determine the essential requirements needed to run the features in Power Automate. To learn the prerequisites for your scenario, choose a category in this section.
+Different factors determine the essential requirements needed to run the features in Power Automate. To learn the prerequisites for your scenario, select from the following links.
 
 - [Cloud flow Copilot prerequisites by region](get-started-with-copilot.md#availability-by-region)
-- [Process Mining Copilot prerequisite](process-mining-copilot-in-ingestion.md[#prerequisite)
+- [Process Mining Copilot prerequisite](process-mining-copilot-in-ingestion.md#prerequisite)
 - [Power Automate for desktop Copilot prerequisites](desktop-flows/copilot-in-power-automate-for-desktop.md#prerequisites)
-- [Copilot in automation center prerequisites](automation-center-copilot.md#prerequesites)
+- [Copilot in automation center prerequisites](automation-center-copilot.md#prerequisites)
 
 ## Enable or disable Copilot in Power Automate
 
