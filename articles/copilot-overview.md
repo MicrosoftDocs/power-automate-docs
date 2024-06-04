@@ -1,6 +1,6 @@
 ---
-title: Copilot in Power Automate overview
-description: Get an overview of Copilot in Power Automate and its features.
+title: Copilot in Power Automate
+description: Explore Copilot in Power Automate and its features.
 author: v-aangie
 contributors:
   - v-aangie
@@ -13,7 +13,7 @@ ms.custom: bap-template
 ms.collection: bap-ai-copilot
 ---
 
-# Copilot in Power Automate overview
+# Copilot in Power Automate
 
 Copilot in Power Automate accelerates your journey to adopting automation and transforming your processes. It enhances these scenarios by using the instructions you give Copilot written in natural language to surface possible solutions that can achieve desired results. Copilot stays with you all the way during creation to guide you through your entire process.
 
@@ -60,9 +60,16 @@ Different factors determine the essential requirements needed to run the feature
 
 ## Enable or disable Copilot in Power Automate
 
-[Generally available](/power-platform/admin/general-availability-deployment) Copilot features are enabled by default and can't be turned off. To disable them, a tenant admin must [contact support](/power-platform/admin/get-help-support). (ANGIE: Is it true? Is it in preview like in Power Apps?)
+[Generally available](/power-platform/admin/general-availability-deployment) Copilot features are enabled by default and can't be turned off. To disable them, a tenant admin must [contact support](/power-platform/admin/get-help-support).
 
-ANGIE: Verify and copy procedure from Power Apps in [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+Copilot (preview) features are enabled by default. Your administrator can disable them.
+
+To disable Copilot in Power Automate for your tenant, follow these steps.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
+1. On the navigation menu to the left, select **Environments** > ***your environment***.
+1. On the menu at the top, select **Settings** > **Product** > **Features**.
+1. Select **Copilot (preview)** > set the toggle to **Off** > **Save**.
 
 ### See also
 
