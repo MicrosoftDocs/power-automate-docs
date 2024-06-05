@@ -20,11 +20,11 @@ The Microsoft 365 personal recommendations found on the Power Automate home page
 
 ## What is Process Mining’s Microsoft 365 personal recommendations?
 
-The Microsoft 365 recommendations are created from your own graph data. The system understands from your use of Microsoft 365 tools opportunities for automation by using natural language to flow. The system surfaces these recommendations as natural language text, which surfaces within natural language to flow for flow creation.
+The Microsoft 365 recommendations are created from your own graph data&mdash;specifically, job role, sent emails, calendar invites, and files. The system understands from your use of Microsoft 365 tools opportunities for automation by using natural language to flow. The system surfaces these recommendations as natural language text that surfaces within natural language to flow for flow creation.
 
 ## What can Process Mining’s Microsoft 365 personal recommendations do?  
 
-The system is a recommendation engine that creates suggestions for automations. You can select these recommendations to create a cloud flow through natural language to flow.
+The system is a recommendation engine that creates suggestions for automations. You can select these recommendations to create a cloud flow through cloud flow's natural language to flow capabilities.
 
 ## What is the system’s intended use?
 
