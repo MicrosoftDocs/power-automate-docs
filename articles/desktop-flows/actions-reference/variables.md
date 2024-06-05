@@ -225,6 +225,23 @@ This action doesn't produce any variables.
 |Column name doesn't exist|Indicates that the provided column name doesn't exist|
 |Column index is out of range|Indicates that the provided column index is out of range|
 
+## <a name="deleteemptyrowsfromdatatableaction"></a> Delete empty rows from data table
+
+Deletes the rows of the data table that have all of their cells empty
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="deleteemptyrowsfromdatatableaction_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
 
 
 
