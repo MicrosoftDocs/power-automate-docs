@@ -243,6 +243,72 @@ This action doesn't produce any variables.
 
 This action doesn't include any exceptions.
 
+## <a name="deleteduplicaterowsfromdatatableaction"></a> Delete duplicate rows from data table
+
+Deletes all the rows that are duplicate from the data table, provided that the values have the same data type in each column
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="deleteduplicaterowsfromdatatableaction_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Type mismatch in the cells of a column|​Indicates that two or more values in a single column are of different data type|
+
+## <a name="cleardatatableaction"></a> Clear data table
+
+Deletes all the rows of the data table, keeping table headers unaffected
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="cleardatatableaction_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
+
+## <a name="sortdatatableaction"></a> Sort data table
+
+Sorts the data table rows in ascending or descending order by the specified column, provided that all its values have the same data type
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Specify column with|N/A|Name, Index|Name|Specify whether to find the column by name or index|
+|Column name|No|[Text value](../variable-data-types.md#text-value)||The name of the column that should be sorted|
+|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the column that should be sorted. Column indexes start from 0|
+|Order|N/A|Ascending, Descending|Ascending|The order in which the data table will be sorted|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="sortdatatableaction_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Column name doesn't exist|​Indicates that the provided column name doesn't exist|
+|Column index is out of range|​Indicates that the provided column index is out of range|
+|Type mismatch in the cells of a column|​Indicates that two or more values in a single column are of different data type|
+
+
+
 
 
 
