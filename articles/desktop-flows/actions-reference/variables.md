@@ -227,7 +227,7 @@ This action doesn't produce any variables.
 
 ## <a name="deleteemptyrowsfromdatatableaction"></a> Delete empty rows from data table
 
-Deletes the rows of the data table that have all of their cells empty
+Deletes the rows of the data table that have all of their cells empty.
 
 ### Input parameters
 
@@ -245,7 +245,7 @@ This action doesn't include any exceptions.
 
 ## <a name="deleteduplicaterowsfromdatatableaction"></a> Delete duplicate rows from data table
 
-Deletes all the rows that are duplicate from the data table, provided that the values have the same data type in each column
+Deletes all the rows that are duplicate from the data table, provided that the values have the same data type in each column.
 
 ### Input parameters
 
@@ -265,7 +265,7 @@ This action doesn't produce any variables.
 
 ## <a name="cleardatatableaction"></a> Clear data table
 
-Deletes all the rows of the data table, keeping table headers unaffected
+Deletes all the rows of the data table, keeping table headers unaffected.
 
 ### Input parameters
 
@@ -283,7 +283,7 @@ This action doesn't include any exceptions.
 
 ## <a name="sortdatatableaction"></a> Sort data table
 
-Sorts the data table rows in ascending or descending order by the specified column, provided that all its values have the same data type
+Sorts the data table rows in ascending or descending order by the specified column, provided that all its values have the same data type.
 
 ### Input parameters
 
@@ -306,6 +306,40 @@ This action doesn't produce any variables.
 |Column name doesn't exist|​Indicates that the provided column name doesn't exist|
 |Column index is out of range|​Indicates that the provided column index is out of range|
 |Type mismatch in the cells of a column|​Indicates that two or more values in a single column are of different data type|
+
+## <a name="filterdatatableaction"></a> Filter data table
+
+Filters the data table rows based on the applied rules.
+
+In the action's built-in wizard that helps you create the filters needed, you can apply multiple filters to different columns that can be defined by name or index. Each filter consists of the column to which it is applied, the selected operator and the corresponding value provided.
+
+In addition, multiple filters are applied together via AND and/or OR rules. AND rules are resolved first in the resulting filter expression, followed by the OR ones.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Filters to apply|No|Filtering rules as defined by the user|N/A|Filtering rules applied to the defined columns|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|FilteredDataTable|[Datatable](../variable-data-types.md#datatable)|The generated data table after applying the filters|
+
+### <a name="filterdatatableaction_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Column name doesn't exist|​Indicates that the provided column name doesn't exist|
+|Column index is out of range|​Indicates that the provided column index is out of range|
+|Type mismatch in the cells of a column|​Indicates that two or more values in a single column are of different data type|
+
+
+
+
+
 
 
 
