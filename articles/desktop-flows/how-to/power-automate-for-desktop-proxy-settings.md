@@ -34,14 +34,16 @@ Configure how Power Automate for desktop interacts with a proxy server using eit
 > [!IMPORTANT]
 > - If a proxy setting is configured in both Windows registry and configuration files, the registry key prevails.
 
-| Proxy setting | Description | Registry key | Config file element/value |
+| Proxy setting | Description | Registry key | Configuration file element/value |
 |---|---|---|---|
-| Proxy server | The proxy address and port | *ProxyServer* [Learn more](..\governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server) | *proxyaddress="your_proxy_address"* |
-| Use default credentials | Authenticate to the proxy server with default account credentials | *UseDefaultProxyCredentials* [Learn more](..\governance.md#configure-power-automate-for-desktop-to-authenticate-to-a-corporate-proxy-server-using-the-current-users-credentials) | *useDefaultCredentials="True"* |
-| Bypass proxy server | Do not honor the Windows Proxy settings and bypass the proxy server | *DisableWindowsProxy* [Learn more](..\governance.md#configure-power-automate-for-desktop-to-bypass-a-corporate-proxy-server) | *enabled ="False"* |
-| Bypass list of IP addresses | Provide a set of regular expressions that describe addresses that do not use a proxy | *ProxyBypassList* [Learn more](..\governance.md#configure-power-automate-for-desktop-to-bypass-a-set-of-addresses-while-interacting-with-a-corporate-proxy-server) |  ```<bypasslist> <add address="bypassed_address" /> <add address="bypassed_address" /> </bypasslist> ``` |
-| Use network credentials | Authenticate with a generic credential from Windows’ Credential Manager | *ProxyNetworkCredentialsKey* [Learn more](..\governance.md#configure-power-automate-for-desktop-to-authenticate-to-a-corporate-proxy-server-using-windows-credentials) | Not applicable |
+| Proxy server | The proxy address and port | *ProxyServer* | *proxyaddress="your_proxy_address"* |
+| Use default credentials | Authenticate to the proxy server with default account credentials | *UseDefaultProxyCredentials* | *useDefaultCredentials="True"* |
+| Bypass proxy server | Do not honor the Windows Proxy settings and bypass the proxy server | *DisableWindowsProxy* | *enabled ="False"* |
+| Bypass list of IP addresses | Provide a set of regular expressions that describe addresses that do not use a proxy | *ProxyBypassList* |  ```<bypasslist> <add address="bypassed_address" /> <add address="bypassed_address" /> </bypasslist> ``` |
+| Use network credentials | Authenticate with a generic credential from Windows’ Credential Manager | *ProxyNetworkCredentialsKey* | Not applicable |
 | Automatic detection of proxy configuration script | Location of the proxy configuration script | Not applicable | *scriptLocation="your_proxy_script_location"* |
+
+[Learn how to configure proxy settings through Windows registry](..\governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server)
 
 ### How to update the proxy configuration files
 
@@ -90,3 +92,5 @@ Example #3 - Configure proxy with address and do not authenticate with default a
     />
   </defaultProxy>
 ```
+[See more examples on how to update the proxy configuration files](https://learn.microsoft.com/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)
+
