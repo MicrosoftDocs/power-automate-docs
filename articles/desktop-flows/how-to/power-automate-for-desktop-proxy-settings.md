@@ -43,5 +43,50 @@ Configure how Power Automate for desktop interacts with a proxy server using eit
 | Use network credentials | Authenticate with a generic credential from Windows’ Credential Manager | *ProxyNetworkCredentialsKey* [Learn more](..\governance.md#configure-power-automate-for-desktop-to-authenticate-to-a-corporate-proxy-server-using-windows-credentials) | Not applicable |
 | Automatic detection of proxy configuration script | Location of the proxy configuration script | Not applicable | *scriptLocation="your_proxy_script_location"* |
 
+### How to update the proxy configuration files
 
+> [!NOTE]
+> From Power Automate for desktop version 2.45, the proxy settings can be configured in specific files, which are not overridden on a product upgrade.
 
+All proxy configuration files are stored in the installation folder (default location: *"C:\Program Files (x86)\Power Automate Desktop"*) and are listed below:
+
+| Proxy file | Related component | Description | Component type | Account type |
+|---|---|---|---|---|
+| *PAD.Proxy.config* | All Power Automate for desktop application components | Console, Designer, Machine runtime app, etc.. | Application | User |
+| *UIFlowService.Proxy.config* | *UIFlowService.exe* | The Power Automate service (UIFlowService) communicates with Power Automate cloud services for machine registration and running desktop flows | Service | Virtual account |
+| *Microsoft.Flow.RPA.LogShipper.Proxy.config* | *Microsoft.Flow.RPA.LogShipper.exe* | Logs collector service | Service | NetworkService |
+| *Microsoft.Flow.RPA.UpdateService.Proxy.config* | *Microsoft.Flow.RPA.UpdateService.exe* | Update applications service | Service | System |
+
+To configure the proxy settings, edit all **.Proxy.config* files with administrator rights as shown in the examples below and save them.
+
+> [!IMPORTANT]
+> - In case you edited a proxy file of a service, you need to restart the service.
+
+Example #1 – Configure proxy with address and authenticate with default account credentials
+```xml
+<defaultProxy useDefaultCredentials="True"> 
+    <proxy
+      bypassonlocal="True"
+      proxyaddress="replace_with_your_proxy_address"
+    />
+</defaultProxy>
+```
+
+Example #2 - Configure proxy with script location and authenticate with default account credentials
+```xml
+<defaultProxy useDefaultCredentials="True"> 
+    <proxy
+      scriptLocation="replace_with_your_proxy_script_location"
+    />
+</defaultProxy>
+```
+
+Example #3 - Configure proxy with address and do not authenticate with default account credentials
+```xml
+<defaultProxy> 
+    <proxy
+      bypassonlocal="True"
+      proxyaddress="replace_with_your_proxy_address"
+    />
+  </defaultProxy>
+```
