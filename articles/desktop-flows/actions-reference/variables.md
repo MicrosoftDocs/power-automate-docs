@@ -386,15 +386,60 @@ In the action's built-in wizard that helps you create the join rules needed, you
 |Column name doesn't exist|​Indicates that the provided column name doesn't exist|
 |Column index is out of range|​Indicates that the provided column index is out of range|
 
+## <a name="generatedatatablefromcsv"></a> Read from CSV text variable
 
+Generates a data table from a CSV text.
 
+### Input parameters
 
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|CSV text|No|[Text value](../variable-data-types.md#text-value)||The CSV text variable to read|
+|Trim fields|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to automatically trim off the leading and trailing whitespaces of the extracted cells|
+|First line contains column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use the first row of the CSV text to set the column names of the resulting data table. Enable this option to avoid reading the names as data into the table. Subsequent actions may access the data held by the data table using column names (instead of column numbers)|
+|Get CSV fields as text|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to retrieve the content of the CSV text fields purely as text or as the closest matching type such as Date Time for dates, Numeric for numbers and so on|
+|Columns separator|N/A|Predefined, Custom, Fixed Column Widths|Predefined|Specifies whether to use a predefined columns separator, a custom one or fixed column widths|
+|Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column-separator to parse the CSV text|
+|Custom separator|No|[Text value](../variable-data-types.md#text-value)||The custom column-separator to use for parsing the CSV text|
+|Fixed column widths|No|[Text value](../variable-data-types.md#text-value)||The fixed column-widths to use for parsing the CSV text. Separate the widths using commas, spaces, tabs or newlines|
 
+### Variables produced
 
+|Argument|Type|Description|
+|-----|-----|-----|
+|CSVTable|[Datatable](../variable-data-types.md#datatable)|The contents of the CSV text as a data table|
 
+### <a name="generatedatatablefromcsv_onerror"></a> Exceptions
 
+|Exception|Description|
+|-----|-----|
+|CSV parsing failed|​Indicates a problem parsing the CSV text|
 
+## <a name="convertdatatabletocsvaction"></a> Convert data table to text 
 
+Converts a data table to a CSV text.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Include column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether the column names of the variant specified should become the first row of the CSV text|
+|Use custom columns separator|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a custom column separator or a predefined one|
+|Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column separator to use in the specified CSV text|
+|Custom columns separator|No|[Text value](../variable-data-types.md#text-value)||The custom column separator to use in the specified CSV text|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|CSVText|[Text value](../variable-data-types.md#text-value)|The variable in which the CSV result will be stored|
+
+### <a name="convertdatatabletocsvaction_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Conversion failed|​Indicates a problem converting the data table to CSV text|
 
 ## <a name="truncatenumber"></a> Truncate number
 
