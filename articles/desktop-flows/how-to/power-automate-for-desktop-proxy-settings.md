@@ -19,7 +19,7 @@ In some organizations, web requests from various Power Automate for desktop comp
 
 ## When to configure the proxy settings
 
-Update your Power Automate proxy configuration settings in case you receive any of the following errors in a Power Automate for desktop component:
+Update your proxy configuration settings in case you receive any of the following errors in a Power Automate for desktop component:
 
 - > The proxy server in your network requires authentication.
 - > The communication with the cloud services requires network proxy authentication.
@@ -30,7 +30,7 @@ Update your Power Automate proxy configuration settings in case you receive any 
 
 ## How to configure the proxy settings
 
-Configure how Power Automate for desktop interacts with a proxy server using either the Windows registry or the Power Automate proxy configuration files. 
+Configure how Power Automate for desktop interacts with a proxy server using either the **Windows registry** or the **Power Automate proxy configuration files**. 
 > [!IMPORTANT]
 > - If a proxy setting is configured in both Windows registry and configuration files, the registry key prevails.
 
