@@ -1,5 +1,5 @@
 ---
-title: Overview of the cloud flows(contains video)
+title: Overview of the cloud flows
 description: Get an overview of cloud flows.
 services: ''
 suite: flow
