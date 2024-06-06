@@ -19,7 +19,7 @@ search.audienceType:
 
 # Overview of process mining
 
-Process mining is a research area and technology that helps businesses understand their real processes, how they're operated, and identify opportunities for improvement, automation, and digitization.
+Process mining is a research area and technology that helps businesses understand their real processes, how they're operated, and identify opportunities for improvement, automation, and digitalization.
 
 The process mining capability in Power Automate works with the existing Microsoft platform and ecosystem to provide end-to-end solutions and enable faster business decisions. By extracting event data from your system of records, it visualizes the processes happening in your organization, allowing you to customize your process mining reports, compare processes, determine the root cause of inefficiencies, and monitor KPIs.
 
