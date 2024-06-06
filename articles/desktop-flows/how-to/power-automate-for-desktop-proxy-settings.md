@@ -60,7 +60,7 @@ All proxy configuration files are stored in the installation folder (default loc
 To configure the proxy settings, edit all **.Proxy.config* files with administrator rights as shown in the examples below and save them.
 
 > [!IMPORTANT]
-> - In case you edited a proxy file of a service, you need to restart the service.
+> - If you edit a proxy file of a service, you need to restart the service.
 
 Example #1 – Configure proxy with address and authenticate with default account credentials
 ```xml
