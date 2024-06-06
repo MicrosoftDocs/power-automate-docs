@@ -362,9 +362,7 @@ This action doesn't produce any variables.
 
 Joins two data tables based on the specified join rule.
 
-In the action's built-in wizard that helps you create the join rules needed, you can apply multiple rules 
-
-
+In the action's built-in wizard that helps you create the join rules needed, you can set multiple rules by specifying the column from the first and the second datatable accordingly, as well as the comparison operator that will apply between them.
 
 ### Input parameters
 
