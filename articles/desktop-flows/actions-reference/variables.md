@@ -336,6 +336,57 @@ In addition, multiple filters are applied together via AND and/or OR rules. AND 
 |Column index is out of range|​Indicates that the provided column index is out of range|
 |Type mismatch in the cells of a column|​Indicates that two or more values in a single column are of different data type|
 
+## <a name="mergedatatablesaction"></a> Merge data tables
+
+Merges two data tables together, specifying the merging behavior in case their number of columns is different.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|First data table|No|[Datatable](../variable-data-types.md#datatable)||The first data table variable to work with. This will also be the action's produced variable that will hold the merged data table|
+|Second data table|No|[Datatable](../variable-data-types.md#datatable)||The second data table that will be merged into the first data table|
+|Merge mode|N/A|Add extra columns, Ignore extra columns, Error on extra columns|Add extra columns|The merging behavior that will be applied when the tables don't have the same number of columns|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="mergedatatablesaction_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Missing Schema|​​Indicates that the data tables don't have the same number of columns|
+
+## <a name="joindatatableaction"></a> Join data tables
+
+Joins two data tables based on the specified join rule.
+
+In the action's built-in wizard that helps you create the join rules needed, you can apply multiple rules 
+
+
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|First data table|No|[Datatable](../variable-data-types.md#datatable)||The first data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Second data table|No|[Datatable](../variable-data-types.md#datatable)||The second data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Join operation|N/A|Inner, Left, Full|Inner|The join operation that will be used to join the two tables|
+|Join rules|No|Join rules as defined by the user|N/A|Define the columns and the operation to be used for joining the two data tables|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|JoinedDataTable|[Datatable](../variable-data-types.md#datatable)|The generated data table after the join operation|
+
+### <a name="joindatatableaction_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Column name doesn't exist|​Indicates that the provided column name doesn't exist|
+|Column index is out of range|​Indicates that the provided column index is out of range|
 
 
 
