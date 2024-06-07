@@ -625,13 +625,40 @@ This action doesn't produce any variables.
 |-----|-----|
 |Failed to append cells|Indicates a problem when appending cells in Excel|
 
+## <a name="lookuprange"></a> Lookup range in Excel worksheet
 
+Finds and returns the result of Excel's LOOKUP function.
 
+### Input parameters
 
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
+|Lookup value|No|[Text value](../variable-data-types.md#text-value)||The value to lookup in the specified range of cells|
+|Ranges format|N/A|Named cells, Specific ranges|Named cells|Specify how the ranges will be referenced, either using named cells or absolute column/row indexes|
+|Cells name|No|[Text value](../variable-data-types.md#text-value)||The name of the cells range to search for the lookup value|
+|Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column of the range to search for the lookup value|
+|Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The first row number of the range to search for the lookup value. The numbering starts from 1|
+|End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column of the range to search for the lookup value|
+|End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number of the range to search for the lookup value. The numbering starts from 1|
+|Array form|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|The array form of LOOKUP looks in the first row or column of an array for the specified value and returns a value from the same position in the last row or column of the array. Use this form of LOOKUP when the values that you want to match are in the first row or column of the array. If this option remains disabled, the vector form of LOOKUP will be used instead, which looks in a one-row or one-column range (known as a vector) for a value and returns a value from the same position in a second one-row or one-column range.|
+|Cells name of results source|Yes|[Text value](../variable-data-types.md#text-value)||The name of the cells range from which the matching value is returned|
+|Start column of results source|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column of the range from which the matching value is returned|
+|Start row of results source|No|[Numeric value](../variable-data-types.md#numeric-value)||The first row number of the range from which the matching value is returned. The numbering starts from 1|
+|End column of results source|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column of the range from which the matching value is returned|
+|End row of results source|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number of the range from which the matching value is returned. The numbering starts from 1|
 
+### Variables produced
 
+|Argument|Type|Description|
+|-----|-----|-----|
+|LookupResult|[Text value](../variable-data-types.md#text-value)|The value returned by the LOOKUP function|
 
+### <a name="lookuprange_onerror"></a> Exceptions
 
+|Exception|Description|
+|-----|-----|
+|Failed to lookup|Indicates a problem when looking up a value in Excel|
 
 ## <a name="launchexcel"></a> Launch Excel
 
