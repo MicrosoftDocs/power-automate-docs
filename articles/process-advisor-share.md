@@ -1,5 +1,5 @@
 ---
-title: Share task mining processes (contains video)
+title: Share task mining processes
 description: Share a task mining process with others so that they can offer input and additional insights. You can share a process with a co-owner or a contributor.
 author: donums
 contributors:
