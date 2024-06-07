@@ -199,7 +199,7 @@ Copies a worksheet from an Excel document and paste it to the Excel document of 
 |Copy worksheet with|N/A|Index, Name|Name|Specify whether to find the worksheet by name or index|
 |Worksheet index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the worksheet to copy. The numbering starts from 1, meaning that the index of the first worksheet is 1, the second is 2, and so on.|
 |Worksheet name|No|[Text value](../variable-data-types.md#text-value)||The name of the worksheet to copy.|
-|Target Excel instance|[Excel instance](../variable-data-types.md#instances)||The Excel instance of the target file. This variable must have been previously specified in a Launch Excel action.|
+|Target Excel instance|Νο|[Excel instance](../variable-data-types.md#instances)||The Excel instance of the target file. This variable must have been previously specified in a Launch Excel action.|
 |Worksheet new name|No|[Text value](../variable-data-types.md#text-value)||The new name of the worksheet|
 |Paste worksheet as|N/A|First worksheet, Last worksheet|First worksheet|Specify whether the copied Excel worksheet will be added before or after the existing worksheets|
 
