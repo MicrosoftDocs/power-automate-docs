@@ -544,6 +544,33 @@ Reads the formula inside a cell in Excel.
 |-----|-----|
 |Failed to read the formula from cell|Indicates a problem when reading the formula from a cell in Excel|
 
+## <a name="gettablerange"></a> Get table range from Excel worksheet
+
+Retrieves the range of a table in the active worksheet of an Excel instance.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
+|Table name|No|[Text value](../variable-data-types.md#text-value)||Specify the name of the table in Excel|
+|Is pivot|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Determine whether the specified table is a pivot one|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|FirstColumnIndex|[Numeric value](../variable-data-types.md#numeric-value)|The numeric value of the table's first column|
+|FirstRowIndex|[Numeric value](../variable-data-types.md#numeric-value)|The numeric value of the table's first row|
+|LastColumnIndex|[Numeric value](../variable-data-types.md#numeric-value)|The numeric value of the table's last column|
+|LastRowIndex|[Numeric value](../variable-data-types.md#numeric-value)|The numeric value of the table's last row|
+
+### <a name="gettablerange_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to get the range from table|Indicates a problem when getting the range from a table in Excel|
+
 
 
 
