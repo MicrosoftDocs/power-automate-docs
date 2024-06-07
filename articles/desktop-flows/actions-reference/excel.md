@@ -453,7 +453,7 @@ Deletes a selected column from an Excel instance.
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
 |Delete column|No|[Text value](../variable-data-types.md#text-value)||The index number or letter of the column to delete.|
 
-##### Variables produced
+### Variables produced
 
 This action doesn't produce any variables.
 
@@ -571,6 +571,34 @@ Retrieves the range of a table in the active worksheet of an Excel instance.
 |-----|-----|
 |Failed to get the range from table|Indicates a problem when getting the range from a table in Excel|
 
+## <a name="autofillcells"></a> Auto fill cells in Excel worksheet
+
+Auto fills a range with data, based on the data of another range, in the active worksheet of an Excel instance.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
+|Ranges format|N/A|Named cells, Specific ranges|Named cells|Specify how the ranges will be referenced, either using named cells or absolute column/row indexes|
+|Source cells name|No|[Text value](../variable-data-types.md#text-value)||Name representing the source range for auto filling|
+|Destination cells name|No|[Text value](../variable-data-types.md#text-value)||Name representing the destination range to auto fill. The source range should begin from the same cell and should be included in the destination range|
+|Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column of both ranges|
+|Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The first row number of both ranges. The numbering starts from 1|
+|Source end column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column of the source range|
+|Source end row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number of the source range. The numbering starts from 1|
+|Destination end column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column of the destination range|
+|Destination end row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number of the destination range. The numbering starts from 1|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="autofillcells_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to auto fill cells|Indicates a problem when auto filling cells in Excel|
 
 
 
