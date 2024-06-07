@@ -600,6 +600,34 @@ This action doesn't produce any variables.
 |-----|-----|
 |Failed to auto fill cells|Indicates a problem when auto filling cells in Excel|
 
+## <a name="appendcells"></a> Append cells in Excel worksheet
+
+Appends a range of cells to the active worksheet of an Excel instance.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
+|Append mode|N/A|To active sheet, To named cells|To active sheet|Specify whether to append to a sheet or range of named cells|
+|Name|No|[Text value](../variable-data-types.md#text-value)||The name of the range of cells|
+|First row has headers|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Indicates that the first row of the destination contains column headers|
+|Starting column|Yes|[Text value](../variable-data-types.md#text-value)||The starting column number or letter, where the data will be appended beginning from the destination's first empty row. If the field is left empty, the first column of the specified destination will be used instead.|
+|Starting column header|Yes|[Text value](../variable-data-types.md#text-value)||The header of the starting column, where the data will be appended beginning from the destination's first empty row. If the field is left empty, the first column of the specified destination will be used instead.|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="appendcells_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to append cells|Indicates a problem when appending cells in Excel|
+
+
+
+
 
 
 
