@@ -1,5 +1,5 @@
 ---
-title: Introduction to other types of desktop flows (contains video)
+title: Introduction to other types of desktop flows
 description: Introduction to other types of desktop flows.
 services: ''
 suite: flow
