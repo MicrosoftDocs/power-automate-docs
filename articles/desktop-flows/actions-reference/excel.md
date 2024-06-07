@@ -187,6 +187,33 @@ This action doesn't produce any variables.
 |Can't find worksheet|Indicates that a worksheet with the specified name couldn't be found|
 |Failed to rename worksheet|Indicates a problem renaming the specified worksheet|
 
+## <a name="copyexcelworksheet"></a> Copy Excel worksheet
+
+Copies a worksheet from an Excel document and paste it to the Excel document of the same or different Excel instance.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
+|Copy worksheet with|N/A|Index, Name|Name|Specify whether to find the worksheet by name or index|
+|Worksheet index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the worksheet to copy. The numbering starts from 1, meaning that the index of the first worksheet is 1, the second is 2, and so on.|
+|Worksheet name|No|[Text value](../variable-data-types.md#text-value)||The name of the worksheet to copy.|
+|Target Excel instance|[Excel instance](../variable-data-types.md#instances)||The Excel instance of the target file. This variable must have been previously specified in a Launch Excel action.|
+|Worksheet new name|No|[Text value](../variable-data-types.md#text-value)||The new name of the worksheet|
+|Paste worksheet as|N/A|First worksheet, Last worksheet|First worksheet|Specify whether the copied Excel worksheet will be added before or after the existing worksheets|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="copyexcelworksheet_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to copy worksheet|Indicates a problem copying the specified worksheet|
+|Can't copy worksheet with this name|Indicates that the worksheet couldn't be copied because a worksheet with the same name already exists|
+
 ## <a name="activatecellinexcel"></a> Activate cell in Excel worksheet
 
 Activate a cell in the active worksheet of an Excel instance, by providing column, row, and offset.
