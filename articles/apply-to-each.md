@@ -1,5 +1,5 @@
 ---
-title: Use the Apply to each action to process a list of items periodically (contains video)
+title: Use the Apply to each action to process a list of items periodically
 description: Use Power Automate to loop through an array of items to check multiple conditions and take actions based on those conditions.
 suite: flow
 documentationcenter: na
