@@ -211,8 +211,8 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Failed to copy worksheet|Indicates a problem copying the specified worksheet|
-|Can't copy worksheet with this name|Indicates that the worksheet couldn't be copied because a worksheet with the same name already exists|
+|Failed to copy worksheet|Indicates a problem when copying a worksheet in Excel|
+|Can't copy worksheet with this name|Indicates a problem when trying to set the sheet name after copying|
 
 ## <a name="activatecellinexcel"></a> Activate cell in Excel worksheet
 
@@ -517,6 +517,38 @@ Retrieve the first free row, given the column of the active worksheet.
 |Exception|Description|
 |-----|-----|
 |Failed to retrieve first free row|Indicates a problem retrieving the first free row of an Excel instance|
+
+## <a name="readcellformula"></a> Read formula from Excel
+
+Reads the formula inside a cell in Excel.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
+|Retrieve|N/A|The formula of a single cell, The formula of a named cell|The formula of a single cell|Specify whether to retrieve the formula from a specified cell or a named cell|
+|Start column|No|[Text value](../variable-data-types.md#text-value)||The cell column (single cell's value) or first column as a numeric value or a letter|
+|Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The cell row (single cell's value) or first row number|
+|Name|No|[Text value](../variable-data-types.md#text-value)||The name of cells|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|CellFormula|[Text value](../variable-data-types.md#text-value)|The formula of a single cell|
+
+### <a name="readcellformula_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to read the formula from cell|Indicates a problem when reading the formula from a cell in Excel|
+
+
+
+
+
+
 
 ## <a name="launchexcel"></a> Launch Excel
 
