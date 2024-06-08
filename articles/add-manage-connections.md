@@ -1,5 +1,5 @@
 ---
-title: Manage connections in Power Automate (contains video)
+title: Manage connections in Power Automate
 description: Add or manage connections to SharePoint, SQL Server, OneDrive for Business, Salesforce, Microsoft 365, OneDrive, Dropbox, Twitter, Google Drive, and more.
 services: ''
 suite: flow

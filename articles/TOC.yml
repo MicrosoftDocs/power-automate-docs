@@ -234,7 +234,7 @@
       - name: Use custom connectors in approval flows
         href: ./teams/approvals-custom-connector.md
     - name: Create a visual for Power BI
-      href: /power-bi/create-reports/power-bi-automate-visual?tabs=powerbi-desktop
+      href: /power-bi/create-reports/power-bi-automate-visual?tabs=powerbi-desktop  
     - name: Configure flows in Power Pages (preview)
       href: /power-pages/configure/cloud-flow-integration
     - name: Use flows with Microsoft Forms
@@ -1226,3 +1226,5 @@
     href: faqs-action-suggestions-power-automate-desktop.md
   - name: FAQ for generating flow descriptions using Copilot in desktop flows
     href: faqs-copilot-generate-description-from-flow-properties.md
+  - name: FAQ for Process Mining's Microsoft 365 personal recommendations
+    href: faqs-process-mining-m365-personal-recommendations.md
