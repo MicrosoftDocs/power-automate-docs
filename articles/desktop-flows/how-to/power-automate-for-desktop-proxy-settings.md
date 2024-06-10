@@ -22,6 +22,7 @@ In some organizations, web requests from various Power Automate for desktop comp
 Update your proxy configuration settings in case you receive any of the following errors in a Power Automate for desktop component:
 
 - > System.Net.WebException: The remote server returned an error: (407) Proxy Authentication Required
+- > System.Net.WebException (this error may appear when Power Automate for desktop was not installed by the target end-user (e.g. Helpdesk, SCCM, etc..))
 - > The proxy server in your network requires authentication.
 - > The communication with the cloud services requires network proxy authentication.
 - > During startup Power Automate couldn't sign you in. The proxy server in your network requires authentication.
@@ -47,7 +48,7 @@ Configure how Power Automate for desktop interacts with a proxy server using the
 
 ### How to update the proxy configuration files
 
-All proxy configuration files are stored in the installation folder (default location: *"C:\Program Files (x86)\Power Automate Desktop"*) and are listed below:
+All proxy configuration files are stored in the installation folder (default location is _"C:\Program Files (x86)\Power Automate Desktop"_) and are listed below:
 
 | Proxy file | Related component | Description | Component type | Account type |
 |---|---|---|---|---|
@@ -110,7 +111,7 @@ a. Either using the [TroubleshootTool UI "change service account" feature](../tr
 b. Or using the TroubleshootTool Console
 1. Create a temporary file “temporary.txt” with the account password inside
 
-2. Put this file in the " C:\Program Files (x86)\Power Automate Desktop\” folder
+2. Put this file in the installation folder (default location is _"C:\Program Files (x86)\Power Automate Desktop"_)
 
 3. Run the two commands after replacing the \<accountname\> by the target account  
 ```
