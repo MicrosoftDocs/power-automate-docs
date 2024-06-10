@@ -104,6 +104,9 @@ Example #3 - Configure proxy with address and do not authenticate with default a
      2. Look for **Power Automate service**, **Power Automate log shipper service** and **Power Automate update service**.
      3. Right-click on each service and select **Restart**.
 
+> [!NOTE]
+> If the new proxy settings do not take effect even after restarting the services, try clearing the internet cache from your system. Go to **Control Panel**, search for and open **Internet Options**. From the **General** tab, click **Delete**. Ensure that at least **Temporary Internet Files** and **Cookies** are selected, and hit **Delete**.
+
 ### For authenticated proxy servers, change the "Power Automate Service" (UIFlowService.exe) account with an allowed domain service account
 
 a. Either using the [TroubleshootTool UI "change service account" feature](../troubleshoot.md#change-the-on-premises-service-account)
