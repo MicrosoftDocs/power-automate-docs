@@ -9,6 +9,11 @@ ms.topic: overview
 ms.date: 06/07/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews
+ms.contributors:
+  - appapaio
+  - cochamos
+  - heortaol
+  - kisubedi
 ms.custom: bap-template
 ms.collection: bap-ai-copilot
 ---
@@ -46,17 +51,8 @@ With Copilot in Power Automate for desktop, you can analyze desktop flow activit
 
 Copilot in automation center enables makers, business analysts, and members of the Center of Excellence team to easily retrieve information about past flow runs, work queue performance, and general product features. You can get this information by asking questions in natural language.
 
-- [Copilot overview](automation-center-overview.md#copilot)
+- [Copilot](automation-center-overview.md#copilot)
 - [Use Copilot to analyze automation activity and ask product questions (preview)](automation-center-copilot.md)
-
-## Prerequisites for Copilot features in Power Automate
-
-Different factors determine the essential requirements needed to run the features in Power Automate. To learn the prerequisites for your scenario, select from the following links.
-
-- [Cloud flow Copilot prerequisites by region](get-started-with-copilot.md#availability-by-region)
-- [Process Mining Copilot prerequisite](process-mining-copilot-in-ingestion.md#prerequisite)
-- [Power Automate for desktop Copilot prerequisites](desktop-flows/copilot-in-power-automate-for-desktop.md#prerequisites)
-- [Copilot in automation center prerequisites](automation-center-copilot.md#prerequisites)
 
 ## Enable or disable Copilot in Power Automate
 
