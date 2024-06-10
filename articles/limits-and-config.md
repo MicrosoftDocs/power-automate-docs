@@ -153,10 +153,10 @@ The following table describes the limits on runtime endpoint requests.
 
 The following table describes the content throughput limits, which refer to the amount of data that's read from or written to the run history of the cloud flow.
 
-| Name | Limit | Notes |
-| ---- | ----- | ----- |
-| Content throughput per 5 minutes | 120 MB for Low; 1.2 GB for all others | You can distribute workload across more than one flow as necessary. |
-| Content throughput per 24 hours | 200 MB for Low; 2 GB for Medium; 10 GB for High | You can distribute workload across more than one flow as necessary. |
+| Name | Limit | Transition Period Limits | Notes |
+| ---- | ----- | ----- | ----- |
+| Content throughput per 5 minutes | 120 MB for Low; 1.2 GB for all others | Unchanged during transition period | You can distribute workload across more than one flow as necessary. |
+| Content throughput per 24 hours | 200 MB for Low; 2 GB for Medium; 10 GB for High | 1GB for Low; 20 GB for Medium; 50 GB for High | You can distribute workload across more than one flow as necessary. |
 
 ## Gateway limits
 
