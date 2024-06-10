@@ -33,7 +33,7 @@ Configure how Power Automate for desktop interacts with a proxy server using the
 
 > [!IMPORTANT]
 > - From Power Automate for desktop version 2.45, the proxy settings can be configured in centralized way, through the **Power Automate proxy configuration files**, and are not overridden on a product upgrade.
-> - It is suggested that you configure the proxy settings using only the **Power Automate proxy configuration files**, as they apply to all the on-premises components. Proxy settings configured through Windows registry apply only to a subset of components like the Console, Designer and Machine runtime app.
+> - It is suggested that you configure the proxy settings using only the **Power Automate proxy configuration files**, as they apply to all the on-premises components. Proxy settings configured through **Windows registry** apply only to a subset of components like the Console, Designer and Machine runtime app.
 > - If a proxy setting is configured in both Windows registry and configuration files, the registry key prevails. [Learn how to configure proxy settings through Windows registry](..\governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server)
 
 | Proxy setting | Description | Configuration file element/value | Registry key |
@@ -56,10 +56,13 @@ All proxy configuration files are stored in the installation folder (default loc
 | *Microsoft.Flow.RPA.LogShipper.Proxy.config* | *Microsoft.Flow.RPA.LogShipper.exe* | Logs collector service | Service | NetworkService |
 | *Microsoft.Flow.RPA.UpdateService.Proxy.config* | *Microsoft.Flow.RPA.UpdateService.exe* | Update applications service | Service | System |
 
-To configure the proxy settings, edit all **.Proxy.config* files with administrator rights as shown in the examples below and save them.
+To configure the proxy settings, follow the steps below:
+1. Close all instances of Power Automate for desktop.
+   
+   - Ensure that the icon doesn't exist in the system tray.
+   - Ensure that no processes are running in the background using Windows Task Manager.
 
-> [!IMPORTANT]
-> - If you edit a proxy file of a service, you need to restart the service.
+2. For all the proxy files, edit each file with administrator rights as shown in the examples below:
 
 Example #1 – Configure proxy with address and authenticate with default account credentials
 ```xml
@@ -91,3 +94,28 @@ Example #3 - Configure proxy with address and do not authenticate with default a
 ```
 [See more examples on how to update the proxy configuration files](https://learn.microsoft.com/dotnet/framework/configure-apps/file-schema/network/defaultproxy-element-network-settings)
 
+4. Save the changes.
+
+5. Restart Power Automate for desktop.
+
+6. Restart the Power Automate services:
+     1. In Windows, open the **Services** desktop app. Press <kbd>Windows</kbd>+<kbd>R</kbd> to open the **Run** box, enter *services.msc*, and then press <kbd>Enter</kbd> or select **OK**.
+     2. Look for **Power Automate service**, **Power Automate log shipper service** and **Power Automate update service**.
+     3. Right-click on each service and select **Restart**.
+
+### For authenticated proxy servers, change the "Power Automate Service" (UIFlowService.exe) account with an allowed domain service account
+
+a. Either using the [TroubleshootTool UI "change service account" feature](../troubleshoot.md#change-the-on-premises-service-account)
+
+b. Or using the TroubleshootTool Console
+1. Create a temporary file “temporary.txt” with the account password inside
+
+2. Put this file in the " C:\Program Files (x86)\Power Automate Desktop\” folder
+
+3. Run the two commands after replacing the \<accountname\> by the target account  
+```
+cd " C:\Program Files (x86)\Power Automate Desktop\”
+“TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount <accountname> < temporary.txt”
+```
+
+4. Delete the temporary.txt file
