@@ -1,5 +1,5 @@
 ---
-title: Prepare processes and data (contains video)
+title: Prepare processes and data
 description: Learn how to prepare processes and data with the process mining capability in Power Automate.
 author: donums
 contributors:
