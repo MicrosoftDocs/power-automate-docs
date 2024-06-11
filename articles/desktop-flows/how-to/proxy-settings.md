@@ -16,25 +16,28 @@ search.audienceType:
 ---
 # Configure Power Automate for desktop proxy settings
 
-In certain cases, web requests originating from different components of Power Automate for desktop, such as the service, update service, console, designer, robot, and others, might be required to route through a network proxy server in order to reach Microsoft's cloud services.
+To reach Microsoft's cloud services, it might be necessary for web requests originating from various Power Automate for desktop components to be directed through a network proxy server.
 
-## When to configure the proxy settings
+## When to configure proxy settings
 
-Configure the proxy settings when you’re connected to the internet using a proxy server.
+Configure proxy settings when you’re connected to the internet using a proxy server.
 
 The following are some of the proxy related errors you might encounter in a Power Automate for desktop component:
-- > System.Net.WebException: The remote server returned an error: (407) Proxy Authentication Required
-- > System.Net.WebException (this error may appear when Power Automate for desktop was not installed by the target end-user (e.g. Helpdesk, SCCM, etc..))
-- > The proxy server in your network requires authentication.
-- > The communication with the cloud services requires network proxy authentication.
-- > During startup Power Automate couldn't sign you in. The proxy server in your network requires authentication.
 
-## How to configure the proxy settings
+- > `System.Net.WebException: The remote server returned an error: (407) Proxy Authentication Required`
+- > `System.Net.WebException`
 
-Configure how Power Automate for desktop interacts with a proxy server using the **Power Automate proxy configuration files**. As an alternative, you can use the **Windows registry** to configure proxy settings that aren't available in the proxy configuration files. 
+    This issue might occur if Power Automate for desktop is installed by someone other than the intended end-user, such as help desk personnel or through automated deployment solutions like Configuration Manager.
+- > `The proxy server in your network requires authentication.`
+- > `The communication with the cloud services requires network proxy authentication.`
+- > `During startup Power Automate couldn't sign you in. The proxy server in your network requires authentication.`
+
+## How to configure proxy settings
+
+Configure how Power Automate for desktop interacts with a proxy server using the Power Automate proxy configuration files. As an alternative, you can use the Windows registry to configure proxy settings that aren't available in the proxy configuration files.
 
 > [!IMPORTANT]
-> - From Power Automate for desktop version 2.45, the proxy settings can be configured in centralized way, through the **Power Automate proxy configuration files**, and are not overridden on a product upgrade.
+> - From Power Automate for desktop version 2.45, the proxy settings can be configured in centralized way, through the Power Automate proxy configuration files, and are not overridden on a product upgrade.
 > - It is suggested that you configure the proxy settings using only the **Power Automate proxy configuration files**, as they apply to all the on-premises components. Proxy settings configured through **Windows registry** apply only to a subset of components like the Console and Designer.
 > - If a proxy setting is configured in both Windows registry and configuration files, the registry key takes precedence. [Learn how to configure proxy settings through Windows registry](..\governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server)
 
@@ -47,7 +50,7 @@ Configure how Power Automate for desktop interacts with a proxy server using the
 | Use network credentials | Authenticate with a generic credential from Windows’ Credential Manager | Not applicable | *ProxyNetworkCredentialsKey* |
 | Automatic detection of proxy configuration script | Location of the proxy configuration script | *scriptLocation="your_proxy_script_location"* | Not applicable |
 
-### How to update the proxy configuration files
+### How to update proxy configuration files
 
 All proxy configuration files are stored in the installation folder (default location is _"C:\Program Files (x86)\Power Automate Desktop"_) and are listed in the following table:
 
@@ -111,7 +114,7 @@ To configure the proxy settings:
      1. Right-click on each service and select **Restart**.
 
 > [!NOTE]
-> If the new proxy settings do not take effect even after restarting the services, try clearing the internet cache from your system. Go to **Control Panel**, search for and open **Internet Options**. From the **General** tab, click **Delete**. Ensure that at least **Temporary Internet Files** and **Cookies** are selected, and hit **Delete**.
+> If the new proxy settings do not take effect even after restarting the services, try clearing the internet cache from your system. Go to **Control Panel**, search for and open **Internet Options**. From the **General** tab, select **Delete**. Ensure that at least **Temporary Internet files** and **Cookies** are selected, and select **Delete**.
 
 ### For authenticated proxy servers, change the "Power Automate Service" (UIFlowService.exe) account with an allowed domain service account
 
