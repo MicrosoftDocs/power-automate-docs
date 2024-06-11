@@ -27,7 +27,7 @@ The following are some of the proxy related errors you might encounter in a Powe
 - > `System.Net.WebException: The remote server returned an error: (407) Proxy Authentication Required`
 - > `System.Net.WebException`
 
-    This issue might occur if Power Automate for desktop is installed by someone other than the intended end-user, such as help desk personnel or through automated deployment solutions like Configuration Manager.
+    This issue might occur if Power Automate for desktop is installed by someone other than the intended user, such as help desk personnel or through automated deployment solutions like Configuration Manager.
 - > `The proxy server in your network requires authentication.`
 - > `The communication with the cloud services requires network proxy authentication.`
 - > `During startup Power Automate couldn't sign you in. The proxy server in your network requires authentication.`
