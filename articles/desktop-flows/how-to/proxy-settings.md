@@ -43,23 +43,23 @@ Configure how Power Automate for desktop interacts with a proxy server using the
 
 | Proxy setting | Description | Configuration file element/value | Registry key |
 |---|---|---|---|
-| Proxy server | The proxy address and port | *proxyaddress="your_proxy_address"* | *ProxyServer* |
-| Use default credentials | Authenticate to the proxy server with default account credentials | *useDefaultCredentials="True"* | *UseDefaultProxyCredentials* |
-| Bypass proxy server | Don't honor the Windows Proxy settings and bypass the proxy server | *enabled ="False"* | *DisableWindowsProxy* |
-| Bypass list of IP addresses | Provide a set of regular expressions that describe addresses that don't use a proxy |  ```<bypasslist> <add address="bypassed_address" /> <add address="bypassed_address" /> </bypasslist> ``` | *ProxyBypassList* |
-| Use network credentials | Authenticate with a generic credential from Windows’ Credential Manager | Not applicable | *ProxyNetworkCredentialsKey* |
-| Automatic detection of proxy configuration script | Location of the proxy configuration script | *scriptLocation="your_proxy_script_location"* | Not applicable |
+| Proxy server | The proxy address and port | proxyaddress="your_proxy_address" | ProxyServer |
+| Use default credentials | Authenticate to the proxy server with default account credentials | useDefaultCredentials="True" | UseDefaultProxyCredentials |
+| Bypass proxy server | Don't honor the Windows Proxy settings and bypass the proxy server | enabled ="False" | DisableWindowsProxy |
+| Bypass list of IP addresses | Provide a set of regular expressions that describe addresses that don't use a proxy |  ```<bypasslist> <add address="bypassed_address" /> <add address="bypassed_address" /> </bypasslist> ``` | ProxyBypassList |
+| Use network credentials | Authenticate with a generic credential from Windows’ Credential Manager | Not applicable | ProxyNetworkCredentialsKey |
+| Automatic detection of proxy configuration script | Location of the proxy configuration script | scriptLocation="your_proxy_script_location" | Not applicable |
 
 ### How to update proxy configuration files
 
-All proxy configuration files are stored in the installation folder (default location is _"C:\Program Files (x86)\Power Automate Desktop"_) and are listed in the following table:
+All proxy configuration files are stored in the installation folder and are listed in the following table. The default installation folder location is "*C:\Program Files (x86)\Power Automate Desktop*".
 
 | Proxy file | Related component | Description | Component type | Account type |
 |---|---|---|---|---|
 | *PAD.Proxy.config* | All Power Automate for desktop application components | Console, Designer, some machine runtime app functionalities such as list environments and edit machine details, etc. | Application | User |
-| *UIFlowService.Proxy.config* | *UIFlowService.exe* | The Power Automate service (UIFlowService) communicates with Power Automate cloud services for machine registration and running desktop flows | Service | Virtual account |
-| *Microsoft.Flow.RPA.LogShipper.Proxy.config* | *Microsoft.Flow.RPA.LogShipper.exe* | Logs collector service | Service | NetworkService |
-| *Microsoft.Flow.RPA.UpdateService.Proxy.config* | *Microsoft.Flow.RPA.UpdateService.exe* | Update applications service | Service | System |
+| *UIFlowService.Proxy.config* | UIFlowService.exe | The Power Automate service (UIFlowService) communicates with Power Automate cloud services for machine registration and running desktop flows | Service | Virtual account |
+| *Microsoft.Flow.RPA.LogShipper.Proxy.config* | Microsoft.Flow.RPA.LogShipper.exe | Logs collector service | Service | NetworkService |
+| *Microsoft.Flow.RPA.UpdateService.Proxy.config* | Microsoft.Flow.RPA.UpdateService.exe | Update applications service | Service | System |
 
 To configure the proxy settings:
 
@@ -123,11 +123,11 @@ To configure the proxy settings:
 
 1. Save this file in the installation folder. The default location is "C:\Program Files (x86)\Power Automate Desktop".
 
-1. Run the following two commands after replacing the \<accountname\> with the target account.
+1. Run the following commands after replacing the placeholder text `<accountname>` with the target account.
 
     ```
     cd " C:\Program Files (x86)\Power Automate Desktop\”
     “TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount <accountname> < temporary.txt”
     ```
 
-1. Delete the temporary.txt file.
+1. Delete the *temporary.txt* file.
