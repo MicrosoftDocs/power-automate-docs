@@ -4,13 +4,14 @@ description: See the main functionality of the Power Automate console.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 06/10/2024
+ms.date: 06/18/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
-- PetrosFeleskouras 
+- PetrosFeleskouras
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -75,7 +76,7 @@ To review the properties of a desktop flow, right-click on it and select **Prope
 
 If the **Add screenshot to logs** option is enabled, a screenshot is captured upon flow run failure and is uploaded to the [flow run action details](monitor-run-details.md#actions-details).
 
-The **Flow timeout** property is disabled by default. If it becomes enabled, you can specify the maximum allowed time that the flow will be allowed to run. If that maximum duration limit is reached during (console or cloud initiated) runtime, the desktop flow will be forced to stop and time out. You can select one of the proposed timeout values, or provide your own using a combination of hours, minutes, and seconds, in the format *hh:mm:ss*.
+The **Flow timeout** property is disabled by default. If it becomes enabled, you can specify the maximum allowed time that the flow is allowed to run. If that maximum duration limit is reached during (console or cloud initiated) runtime, the desktop flow is forced to stop and time out. You can select one of the proposed timeout values, or provide your own using a combination of hours, minutes, and seconds, in the format *hh:mm:ss*.
 
 > [!IMPORTANT]
 >

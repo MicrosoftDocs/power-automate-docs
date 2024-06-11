@@ -4,7 +4,7 @@ description: See all the available variables actions.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 04/11/2024
+ms.date: 06/18/2024
 ms.author: kenseongtan
 ms.reviewer: dipapa
 contributors:
@@ -98,13 +98,13 @@ This action doesn't produce any variables.
 
 ## <a name="deleterowfromdatatable"></a> Delete row from data table
 
-Delete a data table row at the correspoding row index.
+Delete a data table row at the corresponding row index.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must be specified by an action that produces a data table variable|
 |Row index|No|[Numeric value](../variable-data-types.md#numeric-value)||The row index within a data table that should be deleted|
 
 ### Variables produced
@@ -125,10 +125,10 @@ Update a data table row item on a defined column.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
-|Column|No|[Text value](../variable-data-types.md#text-value)||The column name or index of the item to update|
-|Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row index of the item to update|
-|New value|No|[Text value](../variable-data-types.md#text-value)||The new value to update at the specified row index and column|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable.|
+|Column|No|[Text value](../variable-data-types.md#text-value)||The column name or index of the item to update.|
+|Row|No|[Numeric value](../variable-data-types.md#numeric-value)||The row index of the item to update.|
+|New value|No|[Text value](../variable-data-types.md#text-value)||The new value to update at the specified row index and column.|
 
 ### Variables produced
 
@@ -141,7 +141,7 @@ This action doesn't produce any variables.
 |Item index is out of range|Indicates that the specified data table item is out of range|
 |Column name doesn't exist|Indicates that the provided column name doesn't exist|
 |Column index is out of range|Indicates that the provided column index is out of range|
-|Incompatible type error|Indicates that an input parameter of an incompatible type has been provided|
+|Incompatible type error|Indicates that an input parameter of an incompatible type was provided|
 
 ## <a name="findorreplaceindatatable"></a> Find or replace in data table
 
@@ -185,10 +185,10 @@ Inserts a column at the end or before a specific index value.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
-|Into location|N/A|End of data table, Before column index|End of data table|Specify whether to insert the new column at the end of the data table or before a specified column index|
-|Column name|No|[Text value](../variable-data-types.md#text-value)||Specify the header of the new column|
-|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||Insert the column index value to be used when before column index is specified as the into location parameter|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must be specified by an action that produces a data table variable.|
+|Into location|N/A|End of data table, Before column index|End of data table|Specify whether to insert the new column at the end of the data table or before a specified column index.|
+|Column name|No|[Text value](../variable-data-types.md#text-value)||Specify the header of the new column.|
+|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||Specify the column index value that is utilized when the **Before column index** option is selected for the **Into location** parameter.|
 
 ### Variables produced
 
@@ -198,8 +198,8 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Column index is out of range|Indicates that the provided column index is out of range|
-|Duplicate column name|Indicates that the provided column name already exists|
+|Column index is out of range|Indicates that the provided column index is out of range.|
+|Duplicate column name|Indicates that the provided column name already exists.|
 
 ## <a name="deletecolumnfromdatatableaction"></a> Delete column from data table
 
@@ -209,10 +209,10 @@ Delete a data table column at the specified column index or column name.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
-|Specify column with|N/A|Name, Index|Name|Specify whether to find the column by name or index|
-|Column name|No|[Text value](../variable-data-types.md#text-value)||The name of the column that should be deleted|
-|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the column that should be deleted. Column indexes start from 0|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must be specified by an action that produces a data table variable.|
+|Specify column with|N/A|Name, Index|Name|Specify whether to find the column by name or index.|
+|Column name|No|[Text value](../variable-data-types.md#text-value)||The name of the column that should be deleted.|
+|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the column that should be deleted. Column indexes start from 0.|
 
 ### Variables produced
 
@@ -245,13 +245,13 @@ This action doesn't include any exceptions.
 
 ## <a name="deleteduplicaterowsfromdatatableaction"></a> Delete duplicate rows from data table
 
-Deletes all the rows that are duplicate from the data table, provided that the values have the same data type in each column.
+Deletes all the rows that are duplicate from the data table, if the values have the same data type in each column.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. The specified variable must be defined through an action that generates a data table variable.|
 
 ### Variables produced
 
@@ -271,7 +271,7 @@ Deletes all the rows of the data table, keeping table headers unaffected.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. The specified variable must be defined through an action that generates a data table variable.|
 
 ### Variables produced
 
@@ -283,17 +283,17 @@ This action doesn't include any exceptions.
 
 ## <a name="sortdatatableaction"></a> Sort data table
 
-Sorts the data table rows in ascending or descending order by the specified column, provided that all its values have the same data type.
+Sorts the data table rows in ascending or descending order by the specified column, if all its values have the same data type.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
-|Specify column with|N/A|Name, Index|Name|Specify whether to find the column by name or index|
-|Column name|No|[Text value](../variable-data-types.md#text-value)||The name of the column that should be sorted|
-|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the column that should be sorted. Column indexes start from 0|
-|Order|N/A|Ascending, Descending|Ascending|The order in which the data table will be sorted|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. The specified variable must be defined through an action that generates a data table variable.|
+|Specify column with|N/A|Name, Index|Name|Specify whether to find the column by name or index.|
+|Column name|No|[Text value](../variable-data-types.md#text-value)||The name of the column that should be sorted.|
+|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the column that should be sorted. Column indexes start from 0.|
+|Order|N/A|Ascending, Descending|Ascending|The order to sort the data table.|
 
 ### Variables produced
 
@@ -311,15 +311,15 @@ This action doesn't produce any variables.
 
 Filters the data table rows based on the applied rules.
 
-In the action's built-in wizard that helps you create the filters needed, you can apply multiple filters to different columns that can be defined by name or index. Each filter consists of the column to which it is applied, the selected operator and the corresponding value provided.
+In the action's built-in wizard that helps you create the filters needed, you can apply multiple filters to different columns that are defined by name or index. Every filter is composed of a specific column it targets, an operator that is selected, and the value that is assigned to it.
 
-In addition, multiple filters are applied together via AND and/or OR rules. AND rules are resolved first in the resulting filter expression, followed by the OR ones.
+In addition, multiple filters are applied together via AND and/or OR rules. AND rules are resolved first in the resulting filter expression, followed by the OR rules.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. The specified variable must be defined through an action that generates a data table variable.|
 |Filters to apply|No|Filtering rules as defined by the user|N/A|Filtering rules applied to the defined columns|
 
 ### Variables produced
@@ -344,9 +344,9 @@ Merges two data tables together, specifying the merging behavior in case their n
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|First data table|No|[Datatable](../variable-data-types.md#datatable)||The first data table variable to work with. This will also be the action's produced variable that will hold the merged data table|
-|Second data table|No|[Datatable](../variable-data-types.md#datatable)||The second data table that will be merged into the first data table|
-|Merge mode|N/A|Add extra columns, Ignore extra columns, Error on extra columns|Add extra columns|The merging behavior that will be applied when the tables don't have the same number of columns|
+|First data table|No|[Datatable](../variable-data-types.md#datatable)||The first data table variable to work with. This is also the action's produced variable that holds the merged data table|
+|Second data table|No|[Datatable](../variable-data-types.md#datatable)||The second data table that is merged into the first data table|
+|Merge mode|N/A|Add extra columns, Ignore extra columns, Error on extra columns|Add extra columns|The merging behavior that is applied when the tables don't have the same number of columns|
 
 ### Variables produced
 
@@ -362,15 +362,15 @@ This action doesn't produce any variables.
 
 Joins two data tables based on the specified join rule.
 
-In the action's built-in wizard that helps you create the join rules needed, you can set multiple rules by specifying the column from the first and the second datatable accordingly, as well as the comparison operator that will apply between them.
+In the action's built-in wizard that helps you create the join rules needed, you can set multiple rules by specifying the column from the first and the second datatable accordingly, and the comparison operator that applies between them.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|First data table|No|[Datatable](../variable-data-types.md#datatable)||The first data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
-|Second data table|No|[Datatable](../variable-data-types.md#datatable)||The second data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
-|Join operation|N/A|Inner, Left, Full|Inner|The join operation that will be used to join the two tables|
+|First data table|No|[Datatable](../variable-data-types.md#datatable)||The first data table variable to work with. The specified variable must be defined through an action that generates a data table variable. |
+|Second data table|No|[Datatable](../variable-data-types.md#datatable)||The second data table variable to work with. The specified variable must be defined through an action that generates a data table variable. |
+|Join operation|N/A|Inner, Left, Full|Inner|The join operation that is used to join the two tables|
 |Join rules|No|Join rules as defined by the user|N/A|Define the columns and the operation to be used for joining the two data tables|
 
 ### Variables produced
@@ -394,14 +394,14 @@ Generates a data table from a CSV text.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|CSV text|No|[Text value](../variable-data-types.md#text-value)||The CSV text variable to read|
-|Trim fields|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to automatically trim off the leading and trailing whitespaces of the extracted cells|
-|First line contains column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use the first row of the CSV text to set the column names of the resulting data table. Enable this option to avoid reading the names as data into the table. Subsequent actions may access the data held by the data table using column names (instead of column numbers)|
-|Get CSV fields as text|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to retrieve the content of the CSV text fields purely as text or as the closest matching type such as Date Time for dates, Numeric for numbers and so on|
-|Columns separator|N/A|Predefined, Custom, Fixed Column Widths|Predefined|Specifies whether to use a predefined columns separator, a custom one or fixed column widths|
-|Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column-separator to parse the CSV text|
-|Custom separator|No|[Text value](../variable-data-types.md#text-value)||The custom column-separator to use for parsing the CSV text|
-|Fixed column widths|No|[Text value](../variable-data-types.md#text-value)||The fixed column-widths to use for parsing the CSV text. Separate the widths using commas, spaces, tabs or newlines|
+|CSV text|No|[Text value](../variable-data-types.md#text-value)||The CSV text variable to read.|
+|Trim fields|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to automatically trim off the leading and trailing whitespaces of the extracted cells.|
+|First line contains column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use the first row of the CSV text to set the column names of the resulting data table. Enable this option to avoid reading the names as data into the table. Subsequent actions might access the data held by the data table using column names (instead of column numbers).|
+|Get CSV fields as text|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to retrieve the content of the CSV text fields purely as text or as the closest matching type. For example, Date Time for dates and Numeric for numbers.|
+|Columns separator|N/A|Predefined, Custom, Fixed Column Widths|Predefined|Specifies whether to use a predefined columns separator, a custom separator, or fixed column widths.|
+|Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column-separator to parse the CSV text.|
+|Custom separator|No|[Text value](../variable-data-types.md#text-value)||The custom column-separator to use for parsing the CSV text.|
+|Fixed column widths|No|[Text value](../variable-data-types.md#text-value)||The fixed column-widths to use for parsing the CSV text. Separate the widths using commas, spaces, tabs, or newlines.|
 
 ### Variables produced
 
@@ -423,17 +423,17 @@ Converts a data table to a CSV text.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
-|Include column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether the column names of the variant specified should become the first row of the CSV text|
-|Use custom columns separator|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a custom column separator or a predefined one|
-|Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column separator to use in the specified CSV text|
-|Custom columns separator|No|[Text value](../variable-data-types.md#text-value)||The custom column separator to use in the specified CSV text|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. The specified variable must be defined through an action that generates a data table variable.|
+|Include column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether the column names of the variant specified should become the first row of the CSV text.|
+|Use custom columns separator|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a custom column separator or a predefined column separator.|
+|Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column separator to use in the specified CSV text.|
+|Custom columns separator|No|[Text value](../variable-data-types.md#text-value)||The custom column separator to use in the specified CSV text.|
 
 ### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
-|CSVText|[Text value](../variable-data-types.md#text-value)|The variable in which the CSV result will be stored|
+|CSVText|[Text value](../variable-data-types.md#text-value)|The variable in which the CSV result is stored|
 
 ### <a name="convertdatatabletocsvaction_onerror"></a> Exceptions
 
