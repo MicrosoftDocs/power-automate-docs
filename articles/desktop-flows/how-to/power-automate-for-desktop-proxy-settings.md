@@ -19,14 +19,14 @@ In some organizations, web requests from various Power Automate for desktop comp
 
 ## When to configure the proxy settings
 
-Update your proxy configuration settings in case you receive any of the following errors in a Power Automate for desktop component:
+Configure the proxy settings when you’re connected to the internet using a proxy server. 
 
+Some of the proxy related errors you may encounter in a Power Automate for desktop component are the following:
 - > System.Net.WebException: The remote server returned an error: (407) Proxy Authentication Required
 - > System.Net.WebException (this error may appear when Power Automate for desktop was not installed by the target end-user (e.g. Helpdesk, SCCM, etc..))
 - > The proxy server in your network requires authentication.
 - > The communication with the cloud services requires network proxy authentication.
 - > During startup Power Automate couldn't sign you in. The proxy server in your network requires authentication.
-- > The proxy server in your network is blocking access to Microsoft cloud services.
 
 ## How to configure the proxy settings
 
