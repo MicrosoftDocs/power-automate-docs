@@ -119,15 +119,15 @@ To configure the proxy settings:
 ### For authenticated proxy servers, change the "Power Automate Service" (UIFlowService.exe) account with an allowed domain service account
 
 1. Either use the [TroubleshootTool UI "change service account" feature](../troubleshoot.md#change-the-on-premises-service-account) or the TroubleshootTool Console.
-1. Create a temporary file “temporary.txt” with the account password inside
+1. Create a temporary file “temporary.txt” with the account password inside.
 
-1. Put this file in the installation folder (default location is _"C:\Program Files (x86)\Power Automate Desktop"_)
+1. Save this file in the installation folder. The default location is "C:\Program Files (x86)\Power Automate Desktop".
 
-1. Run the two commands after replacing the \<accountname\> by the target account  
+1. Run the following two commands after replacing the \<accountname\> with the target account.
 
     ```
     cd " C:\Program Files (x86)\Power Automate Desktop\”
     “TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount <accountname> < temporary.txt”
     ```
 
-1. Delete the temporary.txt file
+1. Delete the temporary.txt file.
