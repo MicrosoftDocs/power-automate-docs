@@ -34,7 +34,7 @@ Configure how Power Automate for desktop interacts with a proxy server using the
 
 > [!IMPORTANT]
 > - From Power Automate for desktop version 2.45, the proxy settings can be configured in centralized way, through the **Power Automate proxy configuration files**, and are not overridden on a product upgrade.
-> - It is suggested that you configure the proxy settings using only the **Power Automate proxy configuration files**, as they apply to all the on-premises components. Proxy settings configured through **Windows registry** apply only to a subset of components like the Console, Designer and Machine runtime app.
+> - It is suggested that you configure the proxy settings using only the **Power Automate proxy configuration files**, as they apply to all the on-premises components. Proxy settings configured through **Windows registry** apply only to a subset of components like the Console and Designer.
 > - If a proxy setting is configured in both Windows registry and configuration files, the registry key takes precedence. [Learn how to configure proxy settings through Windows registry](..\governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server)
 
 | Proxy setting | Description | Configuration file element/value | Registry key |
@@ -52,7 +52,7 @@ All proxy configuration files are stored in the installation folder (default loc
 
 | Proxy file | Related component | Description | Component type | Account type |
 |---|---|---|---|---|
-| *PAD.Proxy.config* | All Power Automate for desktop application components | Console, Designer, Machine runtime app, etc.. | Application | User |
+| *PAD.Proxy.config* | All Power Automate for desktop application components | Console, Designer, some machine runtime app functionalities such as list environments and edit machine details, etc.. | Application | User |
 | *UIFlowService.Proxy.config* | *UIFlowService.exe* | The Power Automate service (UIFlowService) communicates with Power Automate cloud services for machine registration and running desktop flows | Service | Virtual account |
 | *Microsoft.Flow.RPA.LogShipper.Proxy.config* | *Microsoft.Flow.RPA.LogShipper.exe* | Logs collector service | Service | NetworkService |
 | *Microsoft.Flow.RPA.UpdateService.Proxy.config* | *Microsoft.Flow.RPA.UpdateService.exe* | Update applications service | Service | System |
