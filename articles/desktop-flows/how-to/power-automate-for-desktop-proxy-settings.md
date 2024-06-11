@@ -15,7 +15,7 @@ search.audienceType:
 ---
 # Configure Power Automate for desktop proxy settings
 
-In some organizations, web requests from various Power Automate for desktop components (service, update service, console, designer, robot, etc..) may need to go through a network proxy server to access the Microsoft cloud services. 
+In some organizations, web requests from various Power Automate for desktop components (service, update service, console, designer, robot, etc..) may need to go through a network proxy server to access Microsoft cloud services. 
 
 ## When to configure the proxy settings
 
@@ -35,7 +35,7 @@ Configure how Power Automate for desktop interacts with a proxy server using the
 > [!IMPORTANT]
 > - From Power Automate for desktop version 2.45, the proxy settings can be configured in centralized way, through the **Power Automate proxy configuration files**, and are not overridden on a product upgrade.
 > - It is suggested that you configure the proxy settings using only the **Power Automate proxy configuration files**, as they apply to all the on-premises components. Proxy settings configured through **Windows registry** apply only to a subset of components like the Console, Designer and Machine runtime app.
-> - If a proxy setting is configured in both Windows registry and configuration files, the registry key prevails. [Learn how to configure proxy settings through Windows registry](..\governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server)
+> - If a proxy setting is configured in both Windows registry and configuration files, the registry key takes precedence. [Learn how to configure proxy settings through Windows registry](..\governance.md#configure-power-automate-for-desktop-to-interact-with-a-corporate-proxy-server)
 
 | Proxy setting | Description | Configuration file element/value | Registry key |
 |---|---|---|---|
