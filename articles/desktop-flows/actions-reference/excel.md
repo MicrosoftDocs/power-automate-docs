@@ -636,7 +636,7 @@ Finds and returns the result of Excel's LOOKUP function.
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must be specified in a Launch Excel action.|
 |Lookup value|No|[Text value](../variable-data-types.md#text-value)||The value to lookup in the specified range of cells.|
 |Ranges format|N/A|Named cells, Specific ranges|Named cells|Specify how the ranges are referenced, either using named cells or absolute column/row indexes.|
-|Cells name|No|[Text value](../variable-data-types.md#text-value)||The name of the cells ranges to search for the lookup value.|
+|Cells name|No|[Text value](../variable-data-types.md#text-value)||The name of the cells range to search for the lookup value.|
 |Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column of the range to search for the lookup value.|
 |Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The first row number of the range to search for the lookup value. The numbering starts from 1.|
 |End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column of the range to search for the lookup value.|
