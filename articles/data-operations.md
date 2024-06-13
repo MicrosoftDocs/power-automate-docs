@@ -1,5 +1,5 @@
 ---
-title: Use data operations in Power Automate (contains video)
+title: Use data operations in Power Automate
 description: Learn to perform operations such as create HTML tables, create CSV tables, compose, join, select, and filter arrays with Power Automate.
 suite: flow
 author: kisubedi
