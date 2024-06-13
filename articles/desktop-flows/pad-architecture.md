@@ -4,7 +4,7 @@ description: Power Automate for desktop architecture
 author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/24/2023
+ms.date: 06/20/2024
 ms.author: matp
 ms.reviewer: matp
 contributors:

@@ -4,7 +4,7 @@ description: Introduction to desktop flows
 author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 06/15/2023
+ms.date: 06/20/2024
 ms.collection: get-started
 ms.author: dipapa
 ms.reviewer: matp

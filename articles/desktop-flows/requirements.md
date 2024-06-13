@@ -3,7 +3,7 @@ title: Prerequisites and limitations
 description: Learn about the prerequisites and limitations of Power Automate for desktop.
 author: mattp123
 ms.topic: overview
-ms.date: 05/28/2024
+ms.date: 06/20/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -20,10 +20,6 @@ ms.custom: bap-template
 # Prerequisites and limitations
 
 This article presents all the prerequisites and limitations you should consider before installing and using Power Automate on your desktop.
-
-> [!IMPORTANT]
->
-> - Migrate your flows created with these solutions to Power Automate for desktop or delete them.
 
 ## Prerequisites
 

@@ -12,7 +12,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2020
+ms.date: 06/20/2024
 ms.author: matp
 ms.reviewer: matp
 contributors:

@@ -12,7 +12,7 @@ ms.subservice: desktop-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/26/2022
+ms.date: 06/20/2024
 ms.author: angieandrews
 contributors:
 - mattp123
