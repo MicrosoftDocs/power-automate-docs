@@ -754,6 +754,11 @@
       "source_path": "articles/trigger-flow-powerbi-report.md",
       "redirect_url": "/power-bi/create-reports/power-bi-automate-visual",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/how-to/proxy-settings.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
     }
   ]
 }
