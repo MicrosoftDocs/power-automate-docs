@@ -208,6 +208,14 @@ An example of idempotency would be checking to see if a duplicate SharePoint doc
 
 Another possibility is for flow triggering multiple times might be having copies of the flow active in different environments that are triggering based on same condition. Use trigger conditions to customize triggers to reduce the number of times it triggers.
 
+## My flow triggers unexpectantly
+
+If you have your flow set to trigger when a Dataverse field is "Modified", you might see your flow run when you don't expect it.  This is because "modified" in this instance means that the Dataverse field was "written to", even if the value is the same.
+
+For instance, if the value of a field is "5", and another process (flow, plugin, etc.) also writes the value "5" to the field, that will trigger the flow.  This can be difficult to determine sometimes, even if you have auditing turned on for that field.  Auditing will only record when the value *changes*.  So if the value that was written to the Dataverse field is the same, there will be no audit log showing a change, but your flow will trigger because the field was written to.
+
+To help find what wrote to that field, take a look and see what other flows or processes were running at the time the flow was triggered unexpectantly.
+
 ## My recurrence trigger runs ahead of schedule
 
 Confirm that you've set the **Start time** on the **Recurrence** card to ensure it runs only at the time that you need. For example, set **Start time** to '2022-10-10T10:00:00Z' to start your trigger at 10:00 AM.
