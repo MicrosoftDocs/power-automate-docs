@@ -485,6 +485,6 @@ If the initialized locale isn't listed, Flow will default to the closest support
 | uk-ua      | Ukrainian (Ukraine)        | 
 | vi-vn      | Vietnamese (Viet Nam)      |
 
-Use of the Power Automate Embed SDK is covered under [the Microsoft Software License Terms](https://dynamics.microsoft.com/legaldocs/slt-dynamics365-sdk/).
+Use of the Power Automate Embed SDK is covered under [the Microsoft Software License Terms](https://go.microsoft.com/fwlink/?linkid=2108407).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
