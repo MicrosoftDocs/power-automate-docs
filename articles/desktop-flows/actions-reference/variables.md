@@ -4,7 +4,7 @@ description: See all the available variables actions.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/15/2023
+ms.date: 04/11/2024
 ms.author: kenseongtan
 ms.reviewer: dipapa
 contributors:
@@ -15,6 +15,7 @@ contributors:
 ms.contributors:
  - kenseongtan
  - dipapa
+ - DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -555,6 +556,27 @@ Decrease the value of a variable by a specific amount.
 This action doesn't produce any variables.
 
 ### <a name="decreasevariable_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
+
+## Run Power Fx expression
+
+Runs the provided Power Fx expression.
+
+>[!NOTE]
+>This action is only available for Power Fx enabled desktop flows (preview).
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Expression|No|*||The Power Fx expression to run|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+##### Exceptions
 
 This action doesn't include any exceptions.
 

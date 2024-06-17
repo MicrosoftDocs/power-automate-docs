@@ -8,6 +8,7 @@ ms.date: 06/17/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
+- DanaMartens
 ---
 
 # Hosted machines
@@ -35,25 +36,26 @@ Key capabilities:
 
 ## Licensing requirements
 
-To use hosted machines, you need the following licensing option:
-
-- Use your existing **Power Automate Premium plan** (previously Power Automate per user plan with attended RPA) and the **Power Automate hosted RPA add-on**.
-
-   Assign to your environment as many add-ons as the number of hosted machines you want to run in your environment.
+To use hosted machines, you need the **Power Automate Hosted Process** license (previously Power Automate hosted RPA add-on). Assign to your environment as many capacity as the number of hosted machines you want to run in your environment.
 
 You also need the following prerequisite licenses: Windows, Intune, Microsoft Entra ID.
+
+> [!NOTE]
+> The Hosted Process licenses the machines and not the user. The Premium user plan is required to run attended RPA, and for RPA developers to build and manage desktop flows on the Power Automate portal. To learn more about the Premium RPA features that come with the Premium user plan, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
 
 ### Trial licenses for evaluation
 
 To evaluate hosted machines, you need one of the following trial licensing options:
 
-- Use the **Power Automate Premium** plan (previously Power Automate per user plan with attended RPA) and the **Power Automate hosted RPA add-on trials**.
+- Use the **Power Automate Hosted Process** license
 
-    The Power Automate hosted RPA add-on have trial versions that last 30 days and can be extended once to a total of 60 day. Organization admins can obtain up to 25 user licenses from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those Power Automate Premium (previously Power Automate per user plan with attended RPA) trials to 25 individual makers, and assign the hosted RPA add-ons to the targeted environment.
+    The Power Automate hosted RPA add-on have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 user licenses from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those Power Automate Premium (previously Power Automate per user plan with attended RPA) trials to 25 individual makers, and assign the hosted RPA add-ons to the targeted environment.
 
 - Use the **90-days self-assisted premium trial.**
 
     Trial users are granted the capacity of one hosted machine per tenant. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
+  > [!NOTE]
+  > Hosted machine capacity based on the 90-days self-assisted premium trial has been temporarily disabled until further notice.
 
 ## Prerequisites
 
@@ -614,7 +616,7 @@ A hosted machine stores limited metadata in the geography of your tenant's count
 
 ### Deletion of unused resources
 
-For environments without the Power Automate hosted RPA add-on, we clean unused resources to ensure our service is available for everyone. A hosted machine that is inactive for 14 days is automatically deleted. The deleted hosted machine is still visible but can't be used anymore. An inactive hosted machine is a machine that has no flow runs and no usage of Power Automate for desktop for the last 14 days.
+For environments without the Power Automate Hosted Process license, we clean unused resources to ensure our service is available for everyone. A hosted machine that is inactive for 14 days is automatically deleted. The deleted hosted machine is still visible but can't be used anymore. An inactive hosted machine is a machine that has no flow runs and no usage of Power Automate for desktop for the last 14 days.
 
 > [!NOTE]
 > You need to delete the inactive hosted machine and recreate a new one to continue using the hosted machines feature. You need to reconfigure the connections associated with your cloud flows.

@@ -4,7 +4,7 @@ description: Learn about data loss prevention policies for Power Automate.
 services: ''
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 12/12/2023
+ms.date: 06/11/2024
 ms.author: cgarty
 author: ChrisGarty
 contributors:
@@ -195,11 +195,11 @@ Makers who have the latest Power Automate for desktop can't debug, run, or save 
 
 ### DLP enforcement and suspension
 
-When you create or edit a flow, Power Automate evaluates it against the current set of DLP policies. Enforcement is asynchronous and occurs within 24 hours.
-
-When you create or change a DLP policy, a background job scans all active flows in the environment, evaluates them, and then suspends the flows that violate the policy. Enforcement is asynchronous and occurs within 24 hours. If a DLP policy change occurs when the previous DLP policy is being evaluated, then the evaluation restarts to make sure the latest policies are enforced.
-
-Weekly, a background job does a consistency check of all active flows in the environment against the DLP policies to confirm that a DLP policy check wasn't missed.
+1. When you create or edit a flow, Power Automate evaluates it against the current set of DLP policies.
+   1. Enforcement of flows without a child flow, which is 99% of flows, is synchronous and occurs in real-time.
+   1. Enforcement of a flow with a child flow is asynchronous, since the child flows need to be evaluated as well, and occurs within 24 hours.
+1. When you create or change a DLP policy, a background job scans all active flows in the environment, evaluates them, and then suspends the flows that violate the policy. Enforcement is asynchronous and occurs within 24 hours. If a DLP policy change occurs when the previous DLP policy is being evaluated, then the evaluation restarts to make sure the latest policies are enforced.
+1. Weekly, a background job does a consistency check of all active flows in the environment against the DLP policies to confirm that a DLP policy check wasn't missed.
 
 ### DLP reactivation
 
@@ -232,7 +232,7 @@ The following table lists DLP enforcement changes and the date the changes were 
 | May 2022 | Delegated authorization background job enforcement | DLP policies are enforced on flows that use delegated authorization while the flow is being saved, but not during background job evaluation. | Full |June 2, 2022 | July 21, 2022 |
 | May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have **type=Request** and **kind=apiConnection**. Many of the affected triggers are instant triggers, which are used in instant, or manually triggered, flows. The affected triggers include the following.<br/>- [Power BI](/connectors/powerbi/): Power BI button clicked<br/>- [Teams](/connectors/teams/): From the compose box (V2)<br/>- [OneDrive for Business](/connectors/onedriveforbusiness/): For a selected file<br/>- [Dataverse](/connectors/commondataserviceforapps/): When a flow step is run from a business process flow<br/>- [Dataverse (legacy)](/connectors/commondataservice/): When a record is selected<br/>- [Excel Online (Business)](/connectors/excelonlinebusiness/): For a selected row<br/>- [SharePoint](/connectors/sharepointonline/): For a selected item<br/>- Microsoft Copilot Studio: When Copilot Studio calls a flow (V2) | Full | June 2, 2022 | August 25, 2022 |
 | July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies to include child flows. If a violation is found anywhere in the flow tree, the parent flow is suspended. After the child flow is edited and saved to remove the violation, the parent flows can be resaved or reactivated to run the DLP policy evaluation again. A change to no longer block child flows when the HTTP connector is blocked will roll out along with full enforcement of DLP policies on child flows. Once full enforcement is available, the enforcement will include child desktop flows. | Full | February 14, 2023 | March 2023 |
-| January 2023 | Enforce DLP policies on child desktop flows | Enable the enforcement of DLP policies to include child desktop flows. If a violation is found anywhere in the flow tree, the desktop parent flow is suspended. After the child desktop flow is edited and saved to remove the violation, the parent desktop flows are automatically reactivated. | Learning | - | August 2023 |
+| January 2023 | Enforce DLP policies on child desktop flows | Enable the enforcement of DLP policies to include child desktop flows. If a violation is found anywhere in the flow tree, the desktop parent flow is suspended. After the child desktop flow is edited and saved to remove the violation, the parent desktop flows are automatically reactivated. | Full | - | August 2023 |
 
 *Availability schedule might change and depends on the rollout.
 
