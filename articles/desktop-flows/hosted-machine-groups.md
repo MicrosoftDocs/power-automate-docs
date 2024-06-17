@@ -47,6 +47,10 @@ This section presents all the prerequisites to create and use hosted machine gro
 
 ### Get access to the default VM image
 
+> [!NOTE]
+> The default VM image provided by Power Automate with Microsoft Edge pre-installed is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC, version 22H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration or security constraints, you should use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine-groups) capability.
+
+
 To create a hosted machine group, you need access to the default VM image that is part of your environment. You can view the default image in **Monitor** > **Machines** > **VM images**.
 
 :::image type="content" source="media/hosted-machine-groups/vm-images-preview.png" alt-text="Screenshot of the VM images tab in the Power Automate portal.":::
