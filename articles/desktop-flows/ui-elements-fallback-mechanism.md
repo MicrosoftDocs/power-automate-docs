@@ -20,21 +20,21 @@ activated and the selectors are unable to locate the UI element on the screen, t
 
 ## How to set up the image fallback mechanism for a UI element
 To enable the image fallback mechanism, launch the Selector Builder window for the specific UI element. Press the 'Image as fallback' button on your screen
-:::image type="content" source="media/ui-elements/ui-element-input.png" alt-text="Screenshot of the available UI elements in the Press button in window action.":::
+:::image type="content" source="media/UI fallback/ImageFallback_1.png" alt-text="Screenshot of how to set up an image as fallback mechanism.":::
 
 This will open the UI element picker tool. 
-:::image type="content" source="media/ui-elements/ui-element-input.png" alt-text="Screenshot of the available UI elements in the Press button in window action.":::
+:::image type="content" source="media/UI fallback/ImageFallback_2.png" alt-text="Screenshot of the UI element picker to capture the image.":::
 
 To create an image selector for a specific UI element, press **Ctrl** and **Left-click** on the element. This action will capture an image of the UI element and generate a corresponding image selector. Note that only one image selector can be 
 associated with each UI element. As a result, the 'Image as fallback' button will be disabled once an image selector is created. You can view the captured image by selecting the image selector from the list of selectors in the window.
-:::image type="content" source="media/ui-elements/ui-element-input.png" alt-text="Screenshot of the available UI elements in the Press button in window action.":::
+:::image type="content" source="media/UI fallback/ImageFallback_3.png" alt-text="Screenshot of generated image selector in the UI element selectors' list.":::
 
 
 ## Actions on the image selector of the UI element
 You can perform various actions on the image selector just as you would with standard selectors. These actions include deleting, renaming, testing, and repairing the image selector. Deleting an image selector removes it if it is no longer needed, 
 while renaming allows you to change its name for better identification. Testing the image selector checks whether the captured image can be found on your screen; remember to ensure that the image is in the foreground for accurate testing. 
 Repairing the image selector enables you to replace the current image with a new one.
-:::image type="content" source="media/ui-elements/ui-element-input.png" alt-text="Screenshot of the available UI elements in the Press button in window action.":::
+:::image type="content" source="media/UI fallback/ImageFallback_4.png" alt-text="Screenshot of the available actions on the image selector":::
 
 ## Known issues and limitations
 
