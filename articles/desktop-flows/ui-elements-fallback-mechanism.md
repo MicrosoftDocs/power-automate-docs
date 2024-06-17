@@ -1,11 +1,11 @@
 ---
 title: Set fallback mechanism for UI elements
 description: Explore Power Automate's new feature, an image fallback mechanism for UI elements, increasing the success rate of executing UI or browser actions.
-author: nimoutzo
+author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 06/17/2024
-ms.author: NikosMoutzourakis
+ms.author: nimoutzo
 ms.reviewer: dmartens
 contributors:
   - NikosMoutzourakis
