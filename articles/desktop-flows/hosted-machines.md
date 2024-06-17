@@ -334,7 +334,7 @@ The virtual network needs to be created in the same location with your hosted ma
 - United Kingdom: UK South
 - United States: East US
 
-### More requirements for Microsoft Entra hybrid joined hosted machines (preview)
+### Additional requirements for Microsoft Entra hybrid joined hosted machines (preview)
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
 
