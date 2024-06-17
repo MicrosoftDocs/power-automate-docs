@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/01/2024
+ms.date: 06/17/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -21,29 +21,27 @@ Here are some of the highlights of what you can do with hosted machines:
 
 - Build and test desktop flows using Power Automate for desktop.
 - Run attended and unattended desktop flows.
-- Assign your hosted machines to [machine groups](hosted-machine-groups.md) to distribute your automation workload.
+- To distribute your automation workload, assign your hosted machines to [machine groups](hosted-machine-groups.md).
 
 Key capabilities:
 
 - **Work or school account integration**: Enables access to resources that are part of the business plan linked to your organization, such as Office, SharePoint, and Azure.
 
-- **Vanilla or custom VM images for your hosted machine**: Use a vanilla VM image provided by Microsoft or personalize your hosted machines by providing your own Windows image directly from your Azure Compute Gallery. Providing your own Windows image allows you to have all your applications installed on the provisioned hosted machines.
+- **Vanilla or custom VM images for your hosted machine**: Use a vanilla virtual machine (VM) image provided by Microsoft or personalize your hosted machines by providing your own Windows image directly from your Azure Compute Gallery. Providing your own Windows image allows you to have all your applications installed on the provisioned hosted machines.
 
 - **Connect to your own virtual network**: Securely communicate with each other, the Internet, and your on-premises networks.
 
     > [!NOTE]
     > Sign-in access is only available to the creator of the hosted machine.
 
-
 ## Licensing requirements
 
-To use hosted machines, you need the **Power Automate Hosted Process** license (previously Power Automate hosted RPA add-on). Assign to your environment as many capacity as the number of hosted machines you want to run in your environment.
+To use hosted machines, you need the **Power Automate Hosted Process** license (previously Power Automate hosted RPA add-on). Assign to your environment as much capacity as the number of hosted machines you want to run in your environment.
 
-You'll also need the following prerequisite licenses: Windows, Intune, Microsoft Entra ID.
+You also need the following prerequisite licenses: Windows, Intune, Microsoft Entra ID.
 
 > [!NOTE]
 > The Hosted Process licenses the machines and not the user. The Premium user plan is required to run attended RPA, and for RPA developers to build and manage desktop flows on the Power Automate portal. To learn more about the Premium RPA features that come with the Premium user plan, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
-
 
 ### Trial licenses for evaluation
 
@@ -51,7 +49,7 @@ To evaluate hosted machines, you need one of the following trial licensing optio
 
 - Use the **Power Automate Hosted Process** license
 
-    The Power Automate Hosted Process license have trial versions that last 30 days and can be extended once to a total of 60 day. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign the Power Automate Hosted Process capacity to the targeted environment.
+    The Power Automate hosted RPA add-on have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 user licenses from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those Power Automate Premium (previously Power Automate per user plan with attended RPA) trials to 25 individual makers, and assign the hosted RPA add-ons to the targeted environment.
 
 - Use the **90-days self-assisted premium trial.**
 
@@ -74,7 +72,7 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 
 > [!NOTE]
 > The Windows 365 and Azure Virtual Desktop service principals should automatically be created in your tenant. You can skip this step, unless you face an error  with service principals not created in your tenant when you provision the hosted machine.
-    
+
 1. Validate if the Windows 365 service principal is already created:
 
     1. Sign in to the [Azure portal](https://portal.azure.com/).
@@ -102,7 +100,6 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 1. Create other service principals related to Azure Virtual Desktop.
 
     To create a hosted machine, you must create the following Azure Virtual Desktop services in your tenant.
-
 
     | Application name                   | Application ID                       |
     |------------------------------------|--------------------------------------|
@@ -154,9 +151,9 @@ To create a hosted machine:
 
     1. Select the VM image to use for your hosted machine. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
-        Alternatively, you can select a [custom VM image](#use-custom-vm-images-for-your-hosted-machine) that has been shared with your account.
+        Alternatively, you can select a [custom VM image](#use-custom-vm-images-for-your-hosted-machine) that is shared with your account.
 
-    1. Optionally, select the [custom network connection](#use-a-custom-virtual-network-for-your-hosted-machines) you want your hosted machine to be provisioned with Microsoft Entra ID. Otherwise, you'll automatically connect to the Microsoft Hosted Network.
+    1. Optionally, select the [custom network connection](#use-a-custom-virtual-network-for-your-hosted-machines) you want your hosted machine to be provisioned with. Otherwise, you automatically connect to the Microsoft Hosted Network.
 
     1. Review and create your hosted machine.
 
@@ -201,9 +198,9 @@ You can personalize your hosted machines by providing your own Windows image dir
 
 1. Create a new Azure Compute Gallery and select **Role based access control (RBAC)** in the **Sharing** tab.
 
-1. Select **Review + create**, and once you've validated all the settings, select **Create**.
+1. Select **Review + create**, and once you validated all the settings, select **Create**.
 
-1. Once you've created an Azure Compute Gallery, create an image definition following the steps in [Create an image definition and an image version](/azure/virtual-machines/image-version). You should create the image in the exact location where we deploy your hosted machines. You can find the following mapping with your environment Geo:
+1. Once you created an Azure Compute Gallery, create an image definition following the steps in [Create an image definition and an image version](/azure/virtual-machines/image-version). You should create the image in the exact location where we deploy your hosted machines. You can find the following mapping with your environment Geo:
 
 - Australia: Australia East
 - Asia: East Asia
@@ -211,7 +208,7 @@ You can personalize your hosted machines by providing your own Windows image dir
 - Canada: Canada Central
 - Europe: North Europe
 - France: France Central
-- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com) 
+- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com)
 - India: Central India
 - Japan: Japan East
 - Korea: Korea Central
@@ -220,7 +217,6 @@ You can personalize your hosted machines by providing your own Windows image dir
 - United Arab Emirates: UAE North
 - United Kingdom: UK South
 - United States: East US
-
 
 ### Image requirements
 
@@ -232,7 +228,7 @@ Custom VM images must meet the following requirements:
 - Generalized VM image
 - Single Session VM images (multi-session isn’t supported)
 - No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition)
-- Default 64-GB OS disk size. The OS disk size will be automatically adjusted to 256 GB
+- Default 64-GB OS disk size. The OS disk size is automatically adjusted to 256 GB
 - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
 ### Share the reader permission on Azure subscription with Windows 365 service principal
@@ -257,7 +253,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Select **Select members** and search for the Power Automate makers you want to share with.
 
-1. Once you've selected all the members to add, review the permissions and users, and assign them.
+1. Once you selected all the members to add, review the permissions and users, and assign them.
 
 ### Add a new custom VM image
 
@@ -288,7 +284,7 @@ The last step before using your image in Power Automate is to share the image wi
 
 1. Go to **Monitor** > **Machines** > **VM images**.
 
-1. Select the image you've created.
+1. Select the image you created.
 
 1. Select **Manage access**.
 
@@ -301,7 +297,7 @@ The last step before using your image in Power Automate is to share the image wi
 :::image type="content" source="media/hosted-machines/vm-image-permissions.png" alt-text="Screenshot of the Manage access dialog of the VM image.":::
 
 > [!NOTE]
-> When a user isn't part of an environment anymore, you can continue to see the user as deactivated. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
+> When a user isn't part of an environment anymore, you can continue to see the user as deactivated. You are notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
 
 ## Use a custom virtual network for your hosted machines
 
@@ -314,7 +310,7 @@ You can connect to your own virtual network with your hosted machines to securel
 
 To use your own network and provision Microsoft Entra joined hosted machines, you must meet the following requirements:
 
-- You must have a virtual network in your Azure subscription in the same region where you've created the hosted machines.
+- You must have a virtual network in your Azure subscription in the same region where you created the hosted machines.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
 - A subnet within the virtual network and available IP address space.
 
@@ -326,7 +322,7 @@ The virtual network needs to be created in the same location with your hosted ma
 - Canada: Canada Central
 - Europe: North Europe
 - France: France Central
-- Germany: Germany West Central (Restricted, please send your request to hostedrpa@microsoft.com) 
+- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com) 
 - India: Central India
 - Japan: Japan East
 - Korea: Korea Central
@@ -336,10 +332,40 @@ The virtual network needs to be created in the same location with your hosted ma
 - United Kingdom: UK South
 - United States: East US
 
+### Additional requirements for Microsoft Entra hybrid joined hosted machines (preview)
+
+[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
+
+If your organization has an on-premises Active Directory implementation and you want your hosted machines to be joined to it, you can accomplish this task with Microsoft Entra hybrid join.
+
+[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+
+To use your own network and provision Microsoft Entra hybrid joined machines, you must meet the following requirements:
+
+#### Domain requirements
+
+- You must configure your infrastructure to automatically Microsoft Entra hybrid join any devices that domain joins to the on-premises Active Directory. This [configuration lets them be recognized and managed in the cloud](/azure/active-directory/devices/overview).
+- Microsoft Entra hybrid joined hosted machines require network line of sight to your on-premises domain controllers periodically. Without this connection, devices become unusable. For more information, see [Plan your Microsoft Entra hybrid join deployment](/azure/active-directory/devices/hybrid-join-plan).
+- If an organizational unit is specified, ensure it exists and is valid.
+- An Active Directory user account with sufficient permissions to join the computer into the specified organizational unit within the Active Directory domain. If you don't specify an organizational unit, the user account must have sufficient permissions to join the computer to the Active Directory domain.
+- User accounts that are creators of hosted machines must have a synced identity available in both Active Directory and Microsoft Entra ID.
+
+#### Role and identity requirements
+
+Hosted machines users must be configured with [hybrid identities](/azure/active-directory/hybrid/whatis-hybrid-identity) so that they can authenticate with resources both on-premises and in the cloud.
+
+#### DNS requirements
+
+As part of the Microsoft Entra hybrid join requirements, your hosted machines must be able to join on-premises Active Directory. That requires that the hosted machines be able to resolve DNS records for your on-premises AD environment.
+Configure your Azure Virtual Network where the hosted machines are provisioned as follows:
+
+1. Make sure your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
+1. From the Azure Virtual Network's Settings, select DNS Servers and then choose Custom.
+1. Enter the IP address of DNS servers that environment that can resolve your AD DS domain.
 
 ### Share the virtual network with Windows 365 service principal
 
-To use your virtual network for hosted machines, you'll need to grant Windows 365 service principal with the following permissions:
+To use your virtual network for hosted machines, you need to grant Windows 365 service principal with the following permissions:
 
 - Reader permission on the Azure subscription.
 - Network contributor permission on the specified resource group.
@@ -361,7 +387,7 @@ The last step before being able to reference your virtual network from Power Aut
 
 1. Select **Select members** and search for the Power Automate makers you want to share with.
 
-1. Once you've selected all the members to add, review the permissions and users, and assign them.
+1. Once you selected all the members to add, review the permissions and users, and assign them.
 
 ### Add a new network connection
 
@@ -376,9 +402,19 @@ The last step before being able to reference your virtual network from Power Aut
     - **Network connection name:** A unique name to identify the network connection.
     - **Description:** An optional description for the network connection.
 
-1. Select one of the virtual networks available in Azure that meets the network requirement.
+1. Select one of the **Azure virtual network** available in Azure that meets the network requirement.
 
-1. Select the subnet that the hosted machine will use.
+1. Select the **Subnet** the hosted machine uses.
+
+1. Select the **Domain join type** the machine uses.
+
+1. If the **'Microsoft Entra hybrid join (preview)'** is selected, the following information is required:
+   - **DNS domain name** : The DNS name of the Active Directory domain you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
+   - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain, which can hold users, groups, and computers. Make sure that this OU is enabled to sync with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
+   - **Username UPN** : The username, in user principal name (UPN) format, you want to use for connecting the hosted machines to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
+   - **Domain password** : The password for the user.
+    > [!NOTE]
+    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join (preview) domain join type.
 
 :::image type="content" source="media/hosted-machines/create-network-connection.png" alt-text="Screenshot of the New network connection dialog.":::
 
@@ -388,7 +424,7 @@ The last step before being able to reference your virtual network from Power Aut
 
 1. Go to **Monitor** > **Machines** > **Network connection**.
 
-1. Select the network connection you've created.
+1. Select the network connection you created.
 
 1. Select **Manage access**.
 
@@ -401,11 +437,11 @@ The last step before being able to reference your virtual network from Power Aut
 :::image type="content" source="media/hosted-machines/share-network-connection.png" alt-text="Screenshot of the Manage access of the network connection.":::
 
 > [!NOTE]
-> When a user isn't part of an environment anymore, you can continue to see the user as deactivated. You'll be notified in the **Manage access** section of the network connection if it's shared with deactivated users. In this situation, remove access to them.
+> When a user isn't part of an environment anymore, you can continue to see the user as deactivated. You are notified in the **Manage access** section of the network connection if it's shared with deactivated users. In this situation, remove access to them.
 
 ## View list of hosted machines
 
-Once you've created your hosted machine in an environment, you can view its details in the Power Automate portal.
+Once you created your hosted machine in an environment, you can view its details in the Power Automate portal.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Go to **Monitor** > **Machines**.
@@ -424,7 +460,7 @@ The list contains both hosted machines and standard machines. For each item in t
 
 :::image type="content" source="media/hosted-machines/hosted-machines-list.png" alt-text="Screenshot of the hosted machines list in the Power Automate portal.":::
 
-Selecting a hosted machine in the list will take you to the hosted machine details page where you can:
+Selecting a hosted machine in the list takes you to the hosted machine details page where you can:
 
 - View and edit the details of the machine.
 - Access the machine.
@@ -460,7 +496,7 @@ You can share your hosted machines with other users so they can run desktop flow
 
 > [!NOTE]
 > - Sign-in access is only available to the creator of the hosted machine.
-> - When a user isn't part of an environment anymore, you may continue to see the user as deactivated. You'll be notified in the **Manage access** section of the hosted machine if it's shared with deactivated users. In this situation, remove access to them.
+> - When a user isn't part of an environment anymore, you may continue to see the user as deactivated. You are notified in the **Manage access** section of the hosted machine if it's shared with deactivated users. In this situation, remove access to them.
 
 ## Run desktop flows on hosted machines
 
@@ -469,8 +505,7 @@ Power Automate enables you to trigger desktop flows on your hosted machines as y
 To find more information about triggering desktop flows from cloud flows, go to [Trigger desktop flows from cloud flows](link-pad-flow-portal.md).
 
 > [!NOTE]
-> If you intend to run unattended desktop flows on your hosted machine using the default virtula machine (VM) image option, you'll need to [disable Network Level Authentication](/troubleshoot/power-platform/power-automate/ui-flows-run-failed-with-aadlogonfailure-error) on your machine.
-
+> If you intend to run unattended desktop flows on your hosted machine using the default virtual machine (VM) image option, you need to [disable Network Level Authentication](/troubleshoot/power-platform/power-automate/ui-flows-run-failed-with-aadlogonfailure-error) on your machine.
 
 ## Restart hosted machines
 
@@ -490,7 +525,6 @@ Power Automate enables you to restart your hosted machines from the Power Automa
 > The hosted machine is restart may take a few minutes to complete. Please wait for a few minutes before trying to [access the hosted machine](#access-a-hosted-machine).
 
 :::image type="content" source="media/hosted-machines/restart-hosted-machine.png" alt-text="Screenshot of the restart hosted machine capability.":::
-
 
 ## Permissions based on security roles
 
@@ -543,7 +577,7 @@ The following list displays all the supported Power Platform geographies in the 
 - Canada
 - Europe
 - France
-- Germany (Restricted, please send your request to hostedrpa@microsoft.com) 
+- Germany (Restricted, send your request to hostedrpa@microsoft.com) 
 - India
 - Japan 
 - Korea
@@ -556,10 +590,9 @@ The following list displays all the supported Power Platform geographies in the 
 > [!NOTE]
 > Hosted machines aren't yet available in sovereign clouds.
 
-
 ### Azure tenant country/region and supported geographies in the public cloud
 
-A hosted machine stores limited metadata in the geography of your tenant's country, which can be different from the region of your Power Automate environment. By default, the cross-geo support for hosted machines is enabled. System admins and environment admins can disable or enable the feature from the Power Platform admin center.
+A hosted machine stores limited metadata in the geography of your tenant's country/region, which can be different from the region of your Power Automate environment. By default, the cross-geo support for hosted machines is enabled. System admins and environment admins can disable or enable the feature from the Power Platform admin center.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
@@ -583,7 +616,7 @@ A hosted machine stores limited metadata in the geography of your tenant's count
 
 ### Deletion of unused resources
 
-For environments without the Power Automate Hosted Process license, we clean unused resources to ensure our service is available for everyone. A hosted machine that has been inactive for 14 days may be automatically deleted. The deleted hosted machine will still be visible but can't be used anymore. An inactive hosted machine is a machine that has no flow runs and no usage of Power Automate for desktop for the last 14 days.
+For environments without the Power Automate Hosted Process license, we clean unused resources to ensure our service is available for everyone. A hosted machine that is inactive for 14 days is automatically deleted. The deleted hosted machine is still visible but can't be used anymore. An inactive hosted machine is a machine that has no flow runs and no usage of Power Automate for desktop for the last 14 days.
 
 > [!NOTE]
 > You need to delete the inactive hosted machine and recreate a new one to continue using the hosted machines feature. You need to reconfigure the connections associated with your cloud flows.
