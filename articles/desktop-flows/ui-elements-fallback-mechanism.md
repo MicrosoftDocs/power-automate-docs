@@ -49,6 +49,6 @@ You can perform various actions on the image selector just as you would with sta
 - **Issue:** Fallback mechanism for UI elements in actions 'If window contains', 'Wait for window content', 'If web page contains', 'Wait for web page content' when the parameter 'Check if window'/'Wait until window'/'Check if web page'/'Wait for web page to' is set to 'Contains text' or 'Doesn't contain text', is not supported.
 
  **Workaround:** None
-- **Issue:** When an image is saved for a UI element as fallback mechanism, and the user opens and saves the respective flow in an older Power Automate for desktop version (v2.44 or earlier) then the image selector will be erased and cannot be retrieved even if the desktop flow is opened again with a newer version.
+- **Issue:** When an image is saved for a UI element as fallback mechanism, and the user opens and saves the respective flow in an older Power Automate for desktop version - v2.44 or earlier- then the image selector is erased and cannot be retrieved even if the desktop flow is opened again with a newer version.
 
  **Workaround:** Don't save the desktop flow in the older version of Power Automate for desktop or recapture the image to set as fallback.
