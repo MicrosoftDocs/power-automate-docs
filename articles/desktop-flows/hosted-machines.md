@@ -36,7 +36,7 @@ Key capabilities:
 
 ## Licensing requirements
 
-To use hosted machines, you need the **Power Automate Hosted Process** license (previously Power Automate hosted RPA add-on). Assign to your environment as many capacity as the number of hosted machines you want to run in your environment.
+To use hosted machines, you need the **Power Automate Hosted Process** license (previously Power Automate hosted RPA add-on). Assign to your environment as much capacity as the number of hosted machines you want to run in your environment.
 
 You also need the following prerequisite licenses: Windows, Intune, Microsoft Entra ID.
 
@@ -208,7 +208,7 @@ You can personalize your hosted machines by providing your own Windows image dir
 - Canada: Canada Central
 - Europe: North Europe
 - France: France Central
-- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com) 
+- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com)
 - India: Central India
 - Japan: Japan East
 - Korea: Korea Central
