@@ -1,5 +1,5 @@
 ---
-title: Analyze tasks and processes (contains video)
+title: Analyze tasks and processes
 description: Learn how to analyze processes with the task mining capability. The analyze feature adds a recording into the process map and associated analytics.
 author: donums
 contributors:

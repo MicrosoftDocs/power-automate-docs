@@ -626,6 +626,8 @@
         href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
       - name: Troubleshoot SQL queries
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
+    - name: Configure proxy settings
+      href: ./desktop-flows/how-to/proxy-settings.md
     - name: Use logical operations on conditional statements
       href: ./desktop-flows/how-to/logical-operations-conditional-statements.md
     - name: Handle custom forms
@@ -1226,3 +1228,5 @@
     href: faqs-action-suggestions-power-automate-desktop.md
   - name: FAQ for generating flow descriptions using Copilot in desktop flows
     href: faqs-copilot-generate-description-from-flow-properties.md
+  - name: FAQ for Process Mining's Microsoft 365 personal recommendations
+    href: faqs-process-mining-m365-personal-recommendations.md
