@@ -502,6 +502,8 @@
       href: ./desktop-flows/test-selectors.md  
     - name: Repair a selector
       href: ./desktop-flows/repair-selector.md  
+    - name: Set fallback mechanism for UI element
+      href: ./desktop-flows/ui-elements-fallback-mechanism.md  
   - name: Power Fx in desktop flows (preview)
     items:
     - name: Power Fx in desktop flows
