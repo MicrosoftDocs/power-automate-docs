@@ -59,7 +59,7 @@ When you edit a trigger in an existing flow, the new trigger must be the first s
 
 ## Licensing for premium connectors
 
-You need a standalone [Power Apps license](https://powerapps.microsoft.com/pricing/) or [Power Automate license](https://make.powerautomate.com/pricing/) to access all premium, on-premises, and custom connectors. Microsoft 365 plan licensees can use standard connectors but can't use premium connectors.
+You need a standalone [Power Automate license](https://make.powerautomate.com/pricing/) to access all premium, on-premises, and custom connectors. For flows that are in-context of a Power App, you can leverage [Power Apps license](https://powerapps.microsoft.com/pricing/). Microsoft 365 plan licensees can use standard connectors but can't use premium connectors. For more details on licensing, refer the [licensing guide](https://go.microsoft.com/fwlink/?linkid=2085130) 
 
 Follow these steps to find your license.
 
