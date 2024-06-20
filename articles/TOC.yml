@@ -1163,29 +1163,6 @@
         href: use-cds-for-apps-dialogs.md
       - name: Replace classic Dataverse dialogs
         href: replace-dialogs.md
-  - name: Other types of desktop flows (Legacy)
-    items:
-    - name: Introduction to other types of desktop flows
-      href: ./desktop-flows/overview.md
-    - name: Create and test desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/create-desktop.md
-    - name: Upgrade UI flows app and connections from previous releases
-      href: ./desktop-flows/upgrade.md
-    - name: Edit desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/edit-desktop.md
-    - name: Migrate from Windows recorder (V1) to Power Automate
-      href: ./desktop-flows/migrate.md
-    - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/inputs-outputs-desktop.md
-      items:
-      - name: Use Input Method Editors (IMEs) in desktop flows with Windows recorder (V1)
-        href: ./desktop-flows/use-ime.md
-    - name: Create and test Selenium IDE flows
-      href: ./desktop-flows/create-web.md
-    - name: Edit desktop flows with Selenium IDE
-      href: ./desktop-flows/edit-web.md
-    - name: Use inputs and outputs in desktop flows with Selenium IDE
-      href: ./desktop-flows/inputs-outputs-web.md
 - name: Learning catalog
   items:
   - name: Overview
