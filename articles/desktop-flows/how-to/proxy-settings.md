@@ -4,7 +4,7 @@ description: Configure the proxy settings of Power Automate for desktop to enabl
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 06/13/2024
+ms.date: 06/17/2024
 ms.author: pefelesk
 ms.reviewer: 
 contributors:
