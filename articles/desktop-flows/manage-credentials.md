@@ -4,7 +4,7 @@ description: Use credentials in desktop flow connections
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/12/2023
+ms.date: 06/20/2024
 ms.author: quseleba
 ms.reviewer: 
 contributors:
@@ -50,7 +50,7 @@ To create your credential, you need to provide the following information:
 - **Credential name**: Enter a name for the credential
 - **Description** (optional)
 - **Username**: credential usernames must be **text environment variables**. To select a variable, you can use the dropdown. If you don’t have any environment variables, you must [create a text variable from the solutions page](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution).
-- **Password**: the password must use a **secret environment variables**. To select a variable, you can use the dropdown. If you don’t have any secret environment variables, you must [create a secret variable from the solutions page](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets).
+- **Password**: passwords must use **secret environment variables**. To select a variable, you can use the dropdown. If you don’t have any secret environment variables, you must [create a secret variable from the solutions page](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets).
 
 > [!NOTE]
 > Secret environment variables reference secrets stored in Azure Key Vault. 
