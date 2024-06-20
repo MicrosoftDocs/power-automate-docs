@@ -65,7 +65,7 @@ additionalContent:
         - text: Copilot in Process Mining
           url: ./copilot-overview.md#copilot-in-process-mining
         - text: Copilot in desktop flows
-          url: ./copilot-overview.md#copilot-in-power-automate-for-desktop
+          url: ./copilot-overview.md#copilot-in-desktop-flows
     - title: Plan with the process mining capability
       links:
         - text: Understand your processes and identify opportunities with process mining
