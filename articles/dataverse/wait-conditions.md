@@ -11,7 +11,7 @@ tags: ''
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/15/2022
+ms.date: 06/20/2024
 ms.author: Matow
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -26,11 +26,9 @@ The Microsoft Dataverse connector provides four ways to add wait conditions. Use
 - Postpone triggering the flow and the first action until a specific time. To learn more, go to
     [Wait condition using Postpone Until](./create-update-delete-trigger.md#wait-condition-using-delay-until).
 
-- Add a [fixed delay](../desktop-flows/edit-desktop.md#add-a-delay)
-    before the next step.
+- Add a fixed delay before the next step.
 
-- [Delay an action](../desktop-flows/edit-desktop.md#add-a-delay)
-    until a specific timestamp.
+- Delay an action until a specific timestamp.
 
     ![Delay actions.](../media/wait-conditions/dff6f3bc845cae8be3c69632d6857767.png "Delay actions")
 
