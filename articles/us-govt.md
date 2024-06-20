@@ -6,7 +6,7 @@ suite: flow
 author: kenseongtan
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 08/03/2023
+ms.date: 06/20/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -250,7 +250,7 @@ There are exceptions to the principle of maintaining product functional parity w
 
 ### See also
 
-- [Desktop flows](./desktop-flows/overview.md).
+- [Desktop flows](./desktop-flows/introduction.md).
 
 - [Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government).
 

@@ -3,7 +3,7 @@ title: Prerequisites and limitations
 description: Learn about the prerequisites and limitations of Power Automate for desktop.
 author: mattp123
 ms.topic: overview
-ms.date: 05/28/2024
+ms.date: 06/20/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -20,12 +20,6 @@ ms.custom: bap-template
 # Prerequisites and limitations
 
 This article presents all the prerequisites and limitations you should consider before installing and using Power Automate on your desktop.
-
-> [!IMPORTANT]
->
-> - Selenium IDE is deprecated and will no longer work after February 28th, 2023.
-> - Windows recorder (V1) is deprecated and no longer works.
-> - Migrate your flows created with these solutions to Power Automate for desktop or delete them.
 
 ## Prerequisites
 
@@ -54,12 +48,11 @@ This article presents all the prerequisites and limitations you should consider 
 
 - A device that runs Windows 10 (Home, Pro, Enterprise), Windows 11 (Home, Pro, Enterprise), Windows Server 2016, Windows Server 2019, or Windows Server 2022 (devices with ARM processors aren't supported)
 
-    If your device runs Windows 10 Home or Windows 11 Home, you can use Power Automate to create desktop flows and monitor them on the [Power Automate portal](https://make.powerautomate.com). However, you can't trigger desktop flows from the cloud and run other types of desktop flows (Windows recorder V1 and Selenium IDE).
+    If your device runs Windows 10 Home or Windows 11 Home, you can use Power Automate to create desktop flows and monitor them on the [Power Automate portal](https://make.powerautomate.com). However, you can't trigger desktop flows from the cloud.
   
     | Activity | Description | Windows Home | Windows Enterprise/Pro/Server |
     |---------|------|----------|-----------|
     | Authoring | Create with Power Automate for desktop | Yes | Yes |
-    | Authoring | Create with Selenium IDE | No | Yes |
     | Runtime | Local runtime (attended) | Yes | Yes |
     | Runtime | Cloud runtime (attended/unattended) | No | Yes |
     | Monitoring | Manage desktop flows | Yes | Yes |
