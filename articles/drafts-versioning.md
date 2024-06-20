@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/27/2024
+ms.date: 06/18/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -126,6 +126,10 @@ Not at this time.
 ### Which version is exported?
 
 The last published version of a solution cloud flow is exported in a solution. Draft versions and version history aren't exported.
+
+### What tables are used for drafts and version history?
+
+Dataverse is the storage used for drafts and version history. Solution cloud flows are defined in Dataverse, so they can have drafts and a version history. The ⁠[Workflow table](/power-apps/developer/data-platform/reference/entities/workflow) has a row for the latest published and a row for the latest draft. The version history is stored in the ⁠[Component Version table](/power-apps/developer/data-platform/reference/entities/componentversionnrddatasource).
 
 ### See also
 
