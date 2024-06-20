@@ -50,7 +50,7 @@ To create your credential, you need to provide the following information:
 - **Credential name**: Enter a name for the credential
 - **Description** (optional)
 - **Username**: credential usernames must be **text environment variables**. To select a variable, you can use the dropdown. If you don’t have any environment variables, you must [create a text variable from the solutions page](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution).
-- **Password**: the password must use a **secret environment variables**. To select a variable, you can use the dropdown. If you don’t have any secret environment variables, you must [create a secret variable from the solutions page](/power-apps/maker/data-platform/environmentvariables#create-a-new-environment-variable-for-the-key-vault-secret).
+- **Password**: the password must use a **secret environment variables**. To select a variable, you can use the dropdown. If you don’t have any secret environment variables, you must [create a secret variable from the solutions page](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets).
 
 > [!NOTE]
 > Secret environment variables reference secrets stored in Azure Key Vault. 
