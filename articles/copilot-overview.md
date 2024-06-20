@@ -6,7 +6,7 @@ contributors:
   - v-aangie
   - jhaskett-msft
 ms.topic: overview
-ms.date: 06/07/2024
+ms.date: 06/020/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews
 ms.contributors:
@@ -56,28 +56,9 @@ Copilot in automation center enables makers, business analysts, and members of t
 
 ## Enable or disable Copilot in Power Automate
 
-[Generally available](/power-platform/admin/general-availability-deployment) Copilot features are enabled by default and can't be turned off. To disable them, a tenant admin must [contact support](/power-platform/admin/get-help-support).
+If a region has GPUs (UK, Australia, US, India), we turn on Copilot by default. In this scenario, an admin needs to contact support and they'll use a PowerShell script to turn it off only at tenant level. Environment level support isn't available. If a region doesn't have GPUs (everywhere else except sovereign clouds), we turn on Copilot by default by toggling on the cross-geo data sharing. In this scenario, if you want to disable Copilot, you can toggle off the cross-geo data sharing in Power Platform admin center at the tenant level.
 
-Copilot (preview) features are enabled by default. Your administrator can disable them.
-
-### Disable Copilot for your tenant
-
-To disable Copilot in Power Automate for your tenant, follow these steps.
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. On the navigation menu to the left, select **Settings** > **Tenant settings**.
-1. Select **Copilot (preview)** > set the toggle to **Off** > **Save**.
-
-### Enable or disable Copilot for your environment
-
-To enable or disable Copilot preview features for your environment, follow these steps.
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. On the navigation menu to the left, select **Environments**.
-1. Select the environment and on the command bar, select **Settings** > **Product** > **Features**.
-1. Select one of the following options:
-    - To turn it on, set the toggle to **On** for **Copilot**.
-    - To turn it off, set the toggle to **Off** for **Copilot**.
+To learn more, go to [Availability by region](get-started-with-copilot.md#availability-by-region).
 
 ### See also
 
