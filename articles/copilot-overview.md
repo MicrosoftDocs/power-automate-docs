@@ -39,9 +39,9 @@ Copilot in Process Mining *ingestion* navigates you through the ingestion experi
 - [Copilot in Process Mining ingestion (preview)](process-mining-copilot-in-ingestion.md)
 - [Copilot in Process Mining process analytics (preview)](process-mining-copilot-in-process-analytics.md)
 
-## Copilot in Power Automate for desktop
+## Copilot in desktop flows
 
-With Copilot in Power Automate for desktop, you can analyze desktop flow activity. This analysis allows you to democratize access to insights by asking Copilot activity-specific questions using natural language.
+Copilot in desktop flows allows you to analyze desktop flow activity. With this analysis, you can democratize access to insights by asking Copilot activity-specific questions using natural language.
 
 - [Use Copilot to analyze desktop flow activity (preview)](desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)
 - [Use the Power Automate plug-in for Windows Copilot (preview)](desktop-flows/win-copilot-plug-in.md)
