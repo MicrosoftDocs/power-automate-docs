@@ -18,7 +18,7 @@ ms.collection: bap-ai-copilot
 
 # Get started with Copilot in cloud flows
 
-Copilot in cloud flows allows you to create automation that helps streamline your workflow through quick and easy natural language expressions. You can create a flow by describing what you need through multiple steps of conversation. 
+Copilot in cloud flows allows you to create automation that helps streamline your workflow through quick and easy natural language expressions. You can create a flow by describing what you need through multiple steps of conversation.
 
 The cloud flows copilot can perform the following actions:
 
@@ -26,7 +26,8 @@ The cloud flows copilot can perform the following actions:
 - Auto-set up connections on your behalf to get you to a working automation as soon as possible.
 - Apply the necessary parameters in the flow based on your prompt.
 - Respond to your requests to make changes to your flow, such as update actions and replace actions.
-- Answer questions about your flow and product. For example, you can ask Copilot questions about your flow like, *What does my flow do?* You can also ask Copilot product questions like, *How do I access child flows?* and *How do I access licenses?*
+- Answer questions about your flow and product. For example, you can ask Copilot questions about your flow like, *What does my flow do?* to get a summary of what the flow does. You can also ask Copilot product questions like, *How do I access child flows?* and *How do I access licenses?*.
+- Suggest a description for the flow when editing the flow's details.
 
 > [!IMPORTANT]
 > - Copilot is new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.

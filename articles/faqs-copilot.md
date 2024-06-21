@@ -29,6 +29,8 @@ The system is a copilot embedded in the cloud flows designer with copilot. It he
 
 - Answer questions about the current flow being edited.
 
+- Create a description for the current flow.
+
 - Answer general documentation questions about Power Automate.
 
 - Filter out questions not related to Power Automate or the current flow.
