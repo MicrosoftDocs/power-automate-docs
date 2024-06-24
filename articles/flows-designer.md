@@ -187,9 +187,8 @@ You might notice that some functionalities that were in the classic designer are
 - Non-Open API flows (If there's Peek code on an action and if you see the APIConnection value instead of OpenAPIConnection in Kind field, it's a non-Open API flow.)
 - Some hybrid triggers:
    - When a flow is run from business process flow (Dataverse)
-   - For a selected message (v2 Teams)
-   - TeamsOnComposeMessage (Teams)
-   - Teams card trigger
+   - For a selected message (v2 Teams) - Plan to enable worldwide by July end
+   - Teams On Compose Message (Teams) - Plan to enable worldwide by July end
    - Microsoft 365 Compliance Connector
 - A comment
 - Power Pages connector
@@ -197,7 +196,6 @@ You might notice that some functionalities that were in the classic designer are
 - Perform a changeset request action (Dataverse)
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
 - Email auto-complete suggestions in _Send Email/Post message_ in Teams actions
-- Copy/Paste supporting Scope, Condition, Do until cosntructs
 - Ability to make manual trigger fields optional
 
 ## Some known issues
