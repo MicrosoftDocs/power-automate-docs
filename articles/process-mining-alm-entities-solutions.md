@@ -17,55 +17,70 @@ search.audienceType:
 
 # Transfer ALM Process Mining entities with Power Platform solutions
 
-For this example, we make these references:
+Application lifecycle management (ALM) in Process Mining allows you to transfer your process mining entities with Power Platform solutions. You need to be in your Dev environment to create and export your solution. Then, you change to your Test environment to import your solution.
 
-- **Dev environment**: The environment *from* which you want to port process mining artifacts.
-- **Test environment**: The environment *to* which you want to port process mining artifacts.
+The source and target of your process mining artifacts determine which environment you need to use:
+
+- **Dev environment**: The environment *from* which you want to port artifacts.
+- **Test environment**: The environment *to* which you want to port artifacts.
+
+## Create and export your solution
+
+Create and export your proccess solution in the Dev environment.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select your Dev environment.
-1. In Process Mining, create your process.
+1. On the left navigation menu, select **Process mining** and create your process.
 
-    :::image type="content" source="media/process-mining-alm-entities-solutions/create-process.png" alt-text="Screenshot of the connections that can be configured.":::
+    :::image type="content" source="media/process-mining-alm-entities-solutions/create-process.png" alt-text="Screenshot of the first screen where you create your process.":::
 
-1. After the process has been successfully created, navigate to Solutions from the left navigation (it may be under More).
-14.	Create a new solution.
-a.	From the top command bar, select + New solution.
-b.	Provide a Display name.
-c.	Select a Publisher.
-d.	Select a Version.
+1. On the navigation menu, select **Solutions**.
 
-5. Select **Create**.
-6. After the solution has been created select Add existing from the command bar.
-7. Select More > Other > PM Inferred Task.
+    If **Solutions** doesn't appear on the menu, select **More** > **Solutions**.
 
- 
+1. Create a new solution with the following steps:
+    1. On the menu bar at the top, select **+New solution**.
+    1. In the **Display name** field, enter the name to display.
+    1. In the **Publisher** dropdown menu, select a publisher.
 
-8. From the Add existing PM Inferred Task list select the process you created and want to copy to the Test environment and select Add.
-9. Once added, go back using the back arrow in the left navigation.
-10. In Solutions you should now see the solution you created. Select the solution, select Export solution and Publish.
+        If you want to edit the selected publisher, select the pencil icon next to the dropdown menu.
 
- 
+    1. In the **Version** field, enter a version (for example, 1.0.0.0).
 
-11.	After the publish is successful, select Next > Export.
+1. At the bottom of the screen, select **Create**.
+1. On the menu bar at the top, select **Add existing** > **More** > **Other** > **PM Inferred Task**.
+1. From the **Add existing PM Inferred Task** list, select the process you created and want to copy to the Test environment, and then select **Add**.
+1. On the navigation menu, select the back arrow to go to the **Solutions** screen. You should now see the solution you created.
+1. Select your solution, and then select **Export solution** on the menu at the top.
+1. On the **Before you export** screen, select **Publish**.
+1. When all customizations are published, select **Next**.
 
-12.	After the export a green message bar should appear. Select Download from the message bar.
+    :::image type="content" source="media/process-mining-alm-entities-solutions/before-export.png" alt-text="Screenshot of the first screen where you create your process.":::
 
- 
+ 1. Select **Export**.
 
-13.	After the download is successful, go to your Test environment.
+## Download and import your exported solution
 
-14.	From the left navigation go to Solutions.
+After a export successful export, a green message bar appears below the menu at the top.
 
-15.	Import the solution.
-a.	Select Import solution.
-b.	Select Browse.
-c.	From your file explorer select the solution you downloaded.
-d.	Select Next.
-e.	Select Import.
+1. From the green message bar, select **Download**.
+1. Go to your Test environment.
+1. On the left navigation menu, select **Solutions**.
+1. Import the solution with the following steps.
+    1. On the menu bar at the top, select **Import solution**.
+    1. On the **Import a solution** screen, select **Browse**.
+    1. From your file explorer, select the solution you downloaded.
+    1. Select **Next**.
+    1. Select **Import**.
 
-16.	After the solution has been successfully imported you should see the process mining homepage with an orange exclamation mark inside a speech bubble on it. When you select it follow the Setup process to complete the import to the Test environment.
+    After the solution successfully imports, you should see the Process mining homepage with an orange exclamation mark inside a speech bubble on it.
 
- 
-You can update entities in your Test environment by upgrading or updating your solution: https://learn.microsoft.com/en-us/power-apps/maker/data-platform/update-solutions#apply-the-upgrade-or-update-in-the-target-environment 
-To learn more solutions, go to Solution concepts - Power Platform | Microsoft Learn.
+    :::image type="content" source="media/process-mining-alm-entities-solutions/speech-bubble.png" alt-text="Screenshot of the first screen where you create your process.":::
+
+1. To complete the import to the Test environment, select your process solution and follow the setup process.
+
+## Update entities in your Test environment
+
+You can update entities in your Test environment by upgrading or updating your solution. To learn more, go to [Apply the upgrade or update in the target environment](/power-apps/maker/data-platform/update-solutions#apply-the-upgrade-or-update-in-the-target-environment).
+
+To learn more about solutions, go to [Solution concepts](/power-platform/alm/solution-concepts-alm).
