@@ -167,11 +167,10 @@ You can’t edit flows in the cloud flows designer with the Copilot experience i
 
 - A flow with a comment.
 - A flow contains an unsupported hybrid trigger. Hybrid triggers don't require connections, and are triggered manually from outside of Power Automate. The hybrid triggers, which aren't supported are:
-  - When a flow step is run from business process flows (Dataverse)
-  - For a selected message (v2 Teams)
-  - Teams On Compose Message (teams)
-  - Teams card trigger
-  - Microsoft 365 Compliance Connector
+   - When a flow is run from business process flow (Dataverse)
+   - For a selected message (v2 Teams) - Plan to enable worldwide by July end
+   - Teams On Compose Message (Teams) - Plan to enable worldwide by July end
+   - Microsoft 365 Compliance Connector
 - A flow contains a Power Apps V1 trigger.
 - A flow contains Perform a Changeset Request (Dataverse).
 - A flow contains a Power Pages component.
