@@ -1,7 +1,7 @@
 ---
 title: Get started with Copilot in cloud flows
 description: Learn how to access and use Copilot in cloud flows.
-ms.date: 05/20/2024
+ms.date: 06/24/2024
 ms.custom: bap-template
 ms.topic: conceptual
 author: kisubedi
@@ -167,18 +167,18 @@ You can’t edit flows in the cloud flows designer with the Copilot experience i
 
 - A flow with a comment.
 - A flow contains an unsupported hybrid trigger. Hybrid triggers don't require connections, and are triggered manually from outside of Power Automate. The hybrid triggers, which aren't supported are:
-   - When a flow is run from business process flow (Dataverse)
-   - For a selected message (v2 Teams) - Plan to enable worldwide by July end
-   - Teams On Compose Message (Teams) - Plan to enable worldwide by July end
-   - Microsoft 365 Compliance Connector
+   - When a flow is run from business process flow (Dataverse).
+   - For a selected message (v2 Teams). We plan to enable worldwide by July end.
+   - Teams On Compose Message (Teams). We plan to enable worldwide by July end.
+   - Microsoft 365 Compliance Connector.
 - A flow contains a Power Apps V1 trigger.
 - A flow contains Perform a Changeset Request (Dataverse).
 - A flow contains a Power Pages component.
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use [connection reference](/power-apps/maker/data-platform/create-connection-reference#manually-add-a-connection-reference-to-a-solution-using-solution-explorer) instead.
-  - Email auto-complete suggestions in Send Email/Post message in Teams actions
-  - HTML editor in Send Email action
-  - Copy/Paste supporting Scope, Condition, Do until cosntructs
-  - Ability to make manual trigger fields optional
+  - Email auto-complete suggestions in Send Email/Post message in Teams actions.
+  - HTML editor in Send Email action.
+  - Copy/Paste supporting Scope, Condition, Do until cosntructs.
+  - Ability to make manual trigger fields optional.
 
 You can’t use the cloud flows designer with Copilot if you’re using a personal Microsoft account. For example, you can’t use someone@live.com. Use a work or school account like someone@contoso.com instead.
 
