@@ -21,10 +21,10 @@ Application lifecycle management (ALM) in Process Mining is the lifecycle manage
 
 For an overview of ALM in Power Platform, go to [Overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm).
 
-Yyou can transfer all your Process Mining entities such as dataflow connections, custom metrics, Power BI reports, and more from one environment to another.
+Yyou can transfer all your process mining entities such as dataflow connections, custom metrics, Power BI reports, and more from one environment to another.
 
 If you want to transfer your entity solutions, go to [Transfer ALM Process Mining entities with Power Platform solutions](process-mining-alm-entities-solutions.md).
 
 ### See also
 
-[ALM Process Mining entities with Power Platform solutions](process-mining-alm-entities-solutions.md)
+[ALM process mining entities with Power Platform solutions](process-mining-alm-entities-solutions.md)
