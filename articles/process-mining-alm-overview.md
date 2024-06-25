@@ -1,6 +1,6 @@
 ---
 title: Application lifecycle management in Process Mining overview
-description: Learn how to use the process mining capability with sample data in a tutorial.
+description: Get an overview of application lifecycle management in Process Mining, which includes governance, development, and maintenance.
 author: donums
 contributors:
   - donums
