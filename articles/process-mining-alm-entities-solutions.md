@@ -17,7 +17,7 @@ search.audienceType:
 
 # Transfer ALM process mining entities with Power Platform solutions
 
-Application lifecycle management (ALM) in Process Mining allows you to transfer your process mining entities with Power Platform solutions. To complete the transfer, you need to create and export your solution in your Dev environment. Then, you need to change to your Test environment to import it.
+Application lifecycle management (ALM) in Process Mining alltows you to transfer your process mining entities with Power Platform solutions. To complete the transfer, you need to create and export your solution in your Dev environment. Then, you need to change to your Test environment to import it.
 
 The source and target of your process mining artifacts determine which environment you need to use:
 
@@ -51,19 +51,19 @@ Create and export your proccess solution in the Dev environment.
 
 1. At the bottom of the screen, select **Create**.
 1. On the menu bar at the top, select **Add existing** > **More** > **Other** > **PM Inferred Task**.
-1. From the **Add existing PM Inferred Task** list, select the process you created and want to copy to the Test environment, and then select **Add**.
+1. From the **Add existing PM Inferred Task** list, select the process you created and want to copy to the Test environment for importing, and then select **Add**.
 1. On the navigation menu, select the back arrow to go to the **Solutions** screen. You should now see the solution you created.
 1. Select your solution, and then select **Export solution** on the menu at the top.
 1. On the **Before you export** screen, select **Publish**.
 1. When all customizations are published, select **Next**.
 
-    :::image type="content" source="media/process-mining-alm-entities-solutions/before-export.png" alt-text="Screenshot of the first screen where you create your process.":::
+    :::image type="content" source="media/process-mining-alm-entities-solutions/before-export.png" alt-text="Screenshot of exporting and publishing your process.":::
 
- 1. Select **Export**.
+1. Select **Export**.
 
 ## Download and import your exported solution
 
-Below the menu at the top, a green message bar appears to indicate your export was successful. It also contains a button for you use to download the exported folder.
+Below the menu at the top, a green message bar appears to indicate your export was successful. It also contains a button for you to download the exported folder.
 
 1. From the green message bar, select **Download**.
 1. Go to your Test environment.
@@ -75,9 +75,9 @@ Below the menu at the top, a green message bar appears to indicate your export w
     1. Select **Next**.
     1. Select **Import**.
 
-    After the solution successfully imports, you should see your process on the Process Mining homepage with an orange exclamation mark inside a speech bubble.
+    After the solution successfully imports, your process appears on the Process Mining homepage with an orange exclamation mark inside a speech bubble.
 
-    :::image type="content" source="media/process-mining-alm-entities-solutions/speech-bubble.png" alt-text="Screenshot of the first screen where you create your process.":::
+    :::image type="content" source="media/process-mining-alm-entities-solutions/speech-bubble.png" alt-text="Screenshot of your process on the Process Mining home page.":::
 
 1. To complete the import, select your solution and follow the **Setup** process.
 

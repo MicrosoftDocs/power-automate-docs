@@ -25,6 +25,4 @@ Yyou can transfer all your process mining entities such as dataflow connections,
 
 If you want to transfer your entity solutions, go to [Transfer ALM Process Mining entities with Power Platform solutions](process-mining-alm-entities-solutions.md).
 
-### See also
 
-[ALM process mining entities with Power Platform solutions](process-mining-alm-entities-solutions.md)
