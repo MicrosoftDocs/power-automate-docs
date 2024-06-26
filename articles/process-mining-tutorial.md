@@ -52,6 +52,10 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. Select **Continue**.
 
+2. (Optional) Select a Power BI workspace to attach your process to and give your report a name.
+
+3. Select **Continue**.
+
 ## Import data
 
 1. In the **Choose a data source** screen, select **Text/CSV**.
