@@ -97,7 +97,7 @@ Notes and titles can't be added to the version at this time.
 
 ### Can drafts be tested?
 
-Not at this time. Flow changes need to be published and runnable to be tested.
+Not at this time. Currently, flow changes need to be published and runnable to be tested. We are exploring the concept of creating a second runtime representation of a single flow to facilitate testing.
 
 ### Is there a unique identifier for a version?
 
