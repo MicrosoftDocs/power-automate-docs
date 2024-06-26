@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 06/18/2024
+ms.date: 06/26/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -25,7 +25,7 @@ When authoring a solution cloud flow, drafts can be saved in Microsoft Dataverse
 
 The flow drafts and versioning feature set is only available for [solution cloud flows](/power-automate/create-flow-solution). Solution cloud flows can be [created directly in a solution](/power-automate/create-flow-solution#create-a-solution-aware-cloud-flow), [added into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution), or created by default if the [Create in Dataverse solutions environment setting](/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature) is enabled.
 
-The flow drafts and versioning feature set is being released slowly across specific environments region-by-region. When drafts and versioning capabilities show up in an environment in your region, please allow two weeks for full release in that region.
+The flow drafts and versioning feature set is being released slowly across specific environments region-by-region. When drafts and versioning capabilities show up in an environment in your region, allow two weeks for full release in that region.
 
 ## Save drafts
 
@@ -97,11 +97,11 @@ Notes and titles can't be added to the version at this time.
 
 ### Can drafts be tested?
 
-Not at this time. Currently, flow changes need to be published and runnable to be tested. We are exploring the concept of creating a second runtime representation of a single flow to facilitate testing.
+Not at this time. Currently, flow changes need to be published and runnable to be tested. We're exploring the concept of creating a second runtime representation of a single flow to facilitate testing.
 
 ### Is there a unique identifier for a version?
 
-Timestamps are used to differentiate between versions. There is a GUID identifier used for each version, but that doesn't show in the version history cards. A simple integer identifier isn't available at this time.
+Timestamps are used to differentiate between versions. There's a GUID identifier used for each version, but that doesn't show in the version history cards. A simple integer identifier isn't available at this time.
 
 ### Can the version history list be filtered?
 
