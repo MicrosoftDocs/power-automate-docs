@@ -1,6 +1,6 @@
 ---
 title: Create a CyberArk credential
-description: Use credentials in desktop flow connections 
+description: Use CyberArk credentials in desktop flow connections 
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
@@ -57,7 +57,7 @@ From PVWA, you can then add your machine accounts.
 > [!NOTE]
 > You can also create accounts from PrivateArk client.
 
-1. From the left nav, select **Accounts** > **Add Account**.
+1. From the left navigation, select **Accounts** > **Add Account**.
 1. Select **Windows** as system type.
 1. Select the safe you created to store your robotic process automation (RPA) machine accounts.
 1. Provide information about your account and select **Add**.
@@ -77,7 +77,7 @@ Add the application as a Safe Member with the following authorizations:
 If you want to run a desktop flow on a machine or a group using CyberArk® credentials, you need to add your CyberArk® application information in the Power Automate portal.
 
 1. Sign-in to Power Automate.
-1. From the left nav, select **Machines** and select the machine or the group.
+1. From the left navigation, select **Machines** and select the machine or the group.
 1. In the Machine details, select **Configure CyberArk®**.
 1. Select **New application**
     1. Enter the app ID of the application you created from CyberArk® PVWA.
@@ -95,16 +95,16 @@ If you want to run a desktop flow on a machine or a group using CyberArk® crede
 
 Now that you complete all the prerequisites steps, you can create your CyberArk® credentials.
 
-1. From the left nav, select **Credentials**.
+1. From the left navigation, select **Credentials**.
 1. Select **New credential**.
 1. In the wizard, define a credential name and a small description and then select **Next**
 1. In the second step
-     - Select CyberArk® CCP as the type of credential store
+     - Select CyberArk® CCP as the type of credential store.
      - If you already defined a CyberArk® store, you can select it from the dropdown. Otherwise, select **Create new**.
        - **Display name**
-       - **Server address**: The server address is the Central Credential Provider URL. For example, `https://svc.skytap.com:8992`
-       - **Application id**: To find the application ID, open CyberArk® PVWA (Password Vault Web Access) on a web browser and navigate to the Applications tab
-       - **Safe**: Populate the name of the safe displayed in CyberArk® PVWA
+       - **Server address**: The server address is the Central Credential Provider URL. For example, `https://svc.skytap.com:8992`.
+       - **Application id**: To find the application ID, open CyberArk® PVWA (Password Vault Web Access) on a web browser and navigate to the Applications tab.
+       - **Safe**: Populate the name of the safe displayed in CyberArk® PVWA.
        - **Folder** (optional): Populate the folder name where your credentials are stored. By default, credentials are stored in the "Root" folder.
 
 1. In the last step of the wizard, you need to provide the information about the user account:
