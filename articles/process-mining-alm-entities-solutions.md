@@ -1,6 +1,6 @@
 ---
-title: Transfer ALM process mining entities with Power Platform solutions
-description: Learn how to transfer your process mining entities with Power Platform solutions.
+title: Migrate process mining entities with Power Platform solutions
+description: Learn how to migrate your process mining entities with Power Platform solutions.
 author: donums
 contributors:
   - donums
@@ -15,9 +15,9 @@ search.audienceType:
   - enduser
 ---
 
-# Transfer ALM process mining entities with Power Platform solutions
+# Migrate ALM process mining entities with Power Platform solutions
 
-Application lifecycle management (ALM) in Process Mining alltows you to transfer your process mining entities with Power Platform solutions. To complete the transfer, you need to create and export your solution in your Dev environment. Then, you need to change to your Test environment to import it.
+Application lifecycle management (ALM) in Process Mining allows you to migrate your process mining entities with Power Platform solutions. To complete the migration, you need to create and export your solution in your Dev environment. Then, you need to change to your Test environment to import it.
 
 The source and target of your process mining artifacts determine which environment you need to use:
 
@@ -51,7 +51,7 @@ Create and export your proccess solution in the Dev environment.
 
 1. At the bottom of the screen, select **Create**.
 1. On the menu bar at the top, select **Add existing** > **More** > **Other** > **PM Inferred Task**.
-1. From the **Add existing PM Inferred Task** list, select the process you created and want to copy to the Test environment for importing, and then select **Add**.
+1. From the **Add existing PM Inferred Task** list, select the process you created and want to migrate to the Test environment, and then select **Add**.
 1. On the navigation menu, select the back arrow to go to the **Solutions** screen. You should now see the solution you created.
 1. Select your solution, and then select **Export solution** on the menu at the top.
 1. On the **Before you export** screen, select **Publish**.
