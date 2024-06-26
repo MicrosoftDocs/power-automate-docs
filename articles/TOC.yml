@@ -838,7 +838,7 @@
       items:
       - name: ALM overview
         href: process-mining-alm-overview.md
-      - name: Transfer entities with Power Platform solutions
+      - name: Migrate entities with Power Platform solutions
         href: process-mining-alm-entities-solutions.md
     - name: Improve cloud flows with process insights (preview)
       href: process-mining-cloud-flow-process-insights.md
