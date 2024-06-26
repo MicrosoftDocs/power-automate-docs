@@ -21,7 +21,10 @@ search.audienceType:
 This feature allows users to create a Power Automate credential that retrieves CCP CyberArk® secrets from vault during runtime.
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-> - Currently, this feature isn't available for US Government Clouds.
+
+## Availability
+
+Currently, this feature isn't available for US Government Clouds.
 
 ## Prerequisites
 
