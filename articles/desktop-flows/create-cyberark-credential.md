@@ -27,8 +27,8 @@ This feature allows users to create a Power Automate credential that retrieves C
 
 ### Setup their CyberArk® central credential provider (if not done already)
 1.	Install the Central Credential Provider (CCP). You can retrieve instructions here.
-2.	Ensure that your RPA machines can communicate with the CyberArk® server
-3.	You need to allow https connections to contact the CCP AIMWebservice
+2.	Ensure that your machines can communicate with the CyberArk® server
+3.	Allow https connections to contact the CCP AIMWebservice
 
 ### Create an application with client certification authentication from PVWA
 A signed certificate enables the application authentication with a certificate serial number
@@ -63,7 +63,7 @@ Add the Credential Provider user as a Safe Member with the following authorizati
 •	Retrieve accounts
 •	View Safe Members
 
-Add the application(s) as a Safe Member with the following authorizations:
+Add the application as a Safe Member with the following authorizations:
 •	Retrieve accounts
 
 ## Add a CyberArk® application to machine / group
@@ -75,27 +75,31 @@ If you want to run a desktop flow on a machine or a group using CyberArk® crede
 4.	Select New application
     - Enter the app id of the application you created from CyberArk® PVWA.
     - Select the certificate (allowed formats: .pfx or .p12 file) which stores the private and the public key of the certificate. Note: the private key should be marked as exportable
-    - Enter the certificate file password (that is used to open the certificate file). Note: the password will not be stored, the certificate will be opened and encrypted with the machine public key so it can only be read from the registered machines
+    - Enter the certificate file password (that is used to open the certificate file).
+
+>[!NOTE]
+> The password is not stored: the certificate is opened and encrypted with the public key of the machien group so it is only readable from the registered machines
+
     - Enter a description (optional) then select Save
 
 ## Create a CyberArk® credential
 
-Now that you have completed all the prerequisites steps, you can create your CyberArk® credentials.
+Now that you complete all the prerequisites steps, you can create your CyberArk® credentials.
 1.	From the left nav, select **Credentials**
 2.	Select **New credential** 
 3.	In the wizard, define a credential name and a small description and then select **Next**
 4.	In the second step
      - select CyberArk® CCP as the type of credential store
-     - if you have already defined a CyberArk® store, you can select it from the dropdown. Otherwise, select Create new.
+     - if you already defined a CyberArk® store, you can select it from the dropdown. Otherwise, select Create new.
        - **Display name**
        - **Server address**: the server address is the Central Credential Provider URL example: https://svc.skytap.com:8992
        - **Application id**: to find the application ID, open CyberArk® PVWA (Password Vault Web Access) on a web browser and navigate to the Applications tab
        - **Safe**: populate the name of the safe displayed in CyberArk® PVWA
-       - **Folder** (optional): populate the folder name where your credentials are stored. By default, credentials are stored in the “Root” folder.
+       - **Folder** (optional): populate the folder name where your credentials are stored. By default, credentials are stored in the 'Root' folder.
 
 5.	In the last step of the wizard, you need to provide the information about the user account:
     - **Username**: select a username from your text environment variables or create a new one by selecting new
-    - **Object name**: this is the CyberArk® object name (can be also called account name in PVWA) store in the CyberArk® safe.
+    - **Object name**: it corresponds to the CyberArk® object name (can be also called account name in PVWA) store in the CyberArk® safe.
   
 Your credential is now created. You can use it in a desktop flow connection.
 
