@@ -32,7 +32,7 @@ Currently, this feature isn't available for US Government Clouds.
 
 If your CyberArk® Central Credential Provider (CCP) isn't set up, complete the following actions:
 
-1. Install the Central Credential Provider (CCP). You can retrieve instructions here.
+1. Install the Central Credential Provider (CCP). Learn more at https://docs.cyberark.com/credential-providers/latest/en/Content/CCP/CCP-Installation.htm.
 1. Ensure that your machines can communicate with the CyberArk® server.
 1. Allow https connections to contact the CCP AIMWebService.
 
@@ -55,10 +55,10 @@ A signed certificate enables the application authentication with a certificate s
 1. Enter a safe name and select **PasswordManager**.
 1. Enter Safe members and Access then select **Create Safe**.
 
-From PVWA, you can then add your machine accounts.
+    From PVWA, you can then add your machine accounts.
 
-> [!NOTE]
-> You can also create accounts from PrivateArk client.
+    > [!NOTE]
+    > You can also create accounts from PrivateArk client.
 
 1. From the left navigation, select **Accounts** > **Add Account**.
 1. Select **Windows** as system type.
@@ -82,7 +82,7 @@ If you want to run a desktop flow on a machine or a group using CyberArk® crede
 1. Sign-in to Power Automate.
 1. From the left navigation, select **Machines** and select the machine or the group.
 1. In the Machine details, select **Configure CyberArk®**.
-1. Select **New application**
+1. Select **New application**.
     1. Enter the app ID of the application you created from CyberArk® PVWA.
     1. Select the certificate, which stores the private and the public key of the certificate.
     - The allowed formats are .pfx or .p12 files.
@@ -100,13 +100,13 @@ Now that you complete all the prerequisites steps, you can create your CyberArk�
 
 1. From the left navigation, select **Credentials**.
 1. Select **New credential**.
-1. In the wizard, define a credential name and a small description and then select **Next**
+1. In the wizard, define a credential name and a small description and then select **Next**.
 1. In the second step
      - Select CyberArk® CCP as the type of credential store.
      - If you already defined a CyberArk® store, you can select it from the dropdown. Otherwise, select **Create new**.
-       - **Display name**
+       - **Display name**: Provide a name for your CyberArk store.
        - **Server address**: The server address is the Central Credential Provider URL. For example, `https://svc.skytap.com:8992`.
-       - **Application id**: To find the application ID, open CyberArk® PVWA (Password Vault Web Access) on a web browser and navigate to the Applications tab.
+       - **Application Id**: To find the Application ID, open CyberArk® PVWA (Password Vault Web Access) on a web browser and navigate to the Applications tab.
        - **Safe**: Populate the name of the safe displayed in CyberArk® PVWA.
        - **Folder** (optional): Populate the folder name where your credentials are stored. By default, credentials are stored in the "Root" folder.
 
