@@ -131,7 +131,11 @@ The last published version of a solution cloud flow is exported in a solution. D
 
 Dataverse is the storage used for drafts and version history. Solution cloud flows are defined in Dataverse, so they can have drafts and a version history. The ⁠[Workflow table](/power-apps/developer/data-platform/reference/entities/workflow) has a row for the latest published and a row for the latest draft. The version history is stored in the ⁠[Component Version table](/power-apps/developer/data-platform/reference/entities/componentversionnrddatasource).
 
-### See also
+## Known issues
+
+- **Changing flow URL** - When a solution cloud flow is first published the URL contains the workflowUniqueId and this is changed with each version. If the published flow is subsequently opened from the My Flows experience, then the FlowId will be used in the URL and it will not change.  If the published flow is subsequently opened from the Solution Explorer experience, then the workflowUniqueId will be used in the URL and it will change. The Solution Explorer experience will be updated in the future to provide a static URL, but in the interim, if a static URL reference is needed, then the flow should be opened from the My Flows experience.
+
+## See also
 
 - [Manage and edit a cloud flow](/power-automate/get-started-logic-flow#manage-a-cloud-flow)
 - [Create a solution](./overview-solution-flows.md)
