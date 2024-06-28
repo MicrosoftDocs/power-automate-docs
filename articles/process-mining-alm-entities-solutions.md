@@ -34,8 +34,6 @@ Create and export your process solution in the Dev environment.
 
     For instructions, go to [Create a process](process-mining-tutorial.md#create-a-process).
 
-    :::image type="content" source="media/process-mining-alm-entities-solutions/create-process.png" alt-text="Screenshot of the first screen where you create your process.":::
-
 1. On the navigation menu, select **Solutions**.
 
     If **Solutions** doesn't appear on the menu, select **More** > **Solutions**.
