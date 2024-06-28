@@ -26,7 +26,7 @@ The source and target of your process mining artifacts determine which environme
 
 ## Create and export your solution
 
-Create and export your proccess solution in the Dev environment.
+Create and export your process solution in the Dev environment.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select your Dev environment.

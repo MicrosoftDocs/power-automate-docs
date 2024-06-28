@@ -1,5 +1,5 @@
 ---
-title: Get started with the process mining capbility
+title: Get started with the process mining capability
 description: Learn how to use the process mining capability with sample data in a tutorial.
 author: donums
 contributors:
@@ -7,7 +7,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 07/18/2023
+ms.date: 07/03/2024
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -17,11 +17,11 @@ search.audienceType:
 
 # Tutorial: Get started with the process mining capability
 
-This tutorial allows you to experience the process mining capability with sample data. In this tutorial, you'll create a process, import data, and then analyze it.
+This tutorial allows you to experience the process mining capability with sample data. In this tutorial, you create a process, import data, and then analyze it.
 
 > [!NOTE]
 >
-> If you're not able to see all of the features described below and are using your default environment, create a new environment and retry.
+> If you don't see all of the features described in this article and are using your default environment, create a new environment and retry.
 
 ## Download the sample data
 
@@ -52,9 +52,9 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. Select **Continue**.
 
-2. (Optional) Select a Power BI workspace to attach your process to and give your report a name.
+1. (Optional) Select a Power BI workspace to attach your process to and give your report a name.
 
-3. Select **Continue**.
+1. Select **Continue**.
 
 ## Import data
 
@@ -78,19 +78,19 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. Match the **Attribute Name** from sample data to the **Attribute Type** as appropriate. In this sample, the data attributes you’ll change are **InvoiceValue**, **Resource**, **StartTimestamp**, **EndTimestamp**, **CaseId**, and **ActivityName**.
 
-    When you're finished, the attribute mapping should look like the following screenshot.
+    When you finish, the attribute mapping should look like the following screenshot.
 
     :::image type="content" source="media/process-mining-tutorial/attribute-table.png" alt-text="Screenshot of the attribute mapping.":::
 
 1. Select **Save and analyze**. The analysis might take a few minutes to run.
 
-When the analysis process is complete, you’ll see a process map and a dashboard with other insights about your process. On the dashboard, you can view many metrics that will help you analyze your process. To learn how to analyze the process map and metrics, go to [Visualize and gain insights from processes in the process mining capability](process-mining-visualize.md).
+When the analysis process is complete, you see a process map and a dashboard with other insights about your process. On the dashboard, you can view many metrics that can help you analyze your process. To learn how to analyze the process map and metrics, go to [Visualize and gain insights from processes in the process mining capability](process-mining-visualize.md).
 
 :::image type="content" source="media/process-mining-tutorial/process-map-dash.png" alt-text="Screenshot of the process map and dashboard.":::
 
 ## Analyze a process
 
-Let’s take the analysis of our process beyond KPIs. We'll use the Power Automate Process Mining desktop app, where you can edit and analyze your processes created in the process mining capability.
+Let’s take the analysis of our process beyond KPIs. We use the Power Automate Process Mining desktop app, where you can edit and analyze your processes created in the process mining capability.
 
 1. From the command bar of the analytics report page, select **Download Process Mining app** to download it.
 
@@ -158,7 +158,7 @@ We want to compare the paths that have this **Refund With Special Voucher** step
 
 ### Compare views
 
-We've created two different views. One view shows the paths that have the **Refund With Special Voucher** step but not the **Refund With Standard Voucher** step (Refund w/ Special Voucher). The other view is its inverse (Refund w/ Standard Voucher). Let's compare these two views.
+You created two different views. One view shows the paths that have the **Refund With Special Voucher** step but not the **Refund With Standard Voucher** step (Refund w/ Special Voucher). The other view is its inverse (Refund w/ Standard Voucher). Let's compare these two views.
 
 1. On the left panel, select **Process compare**.
 
@@ -174,7 +174,7 @@ We've created two different views. One view shows the paths that have the **Refu
 
 ## Understand the process map with different views
 
-The green nodes represent steps common to both views. Red node represents the step that take place only in the process with a special voucher (as indicated by the **Compare** legend). Blue nodes represent steps that take place only in the paths with standard voucher.
+The green nodes represent steps common to both views. A red node represents the step that takes place only in the process with a special voucher (as indicated by the **Compare** legend). Blue nodes represent steps that take place only in the paths with standard voucher.
 
 :::image type="content" source="media/process-mining-tutorial/compare-legend.png" alt-text="Screenshot of a process map with color nodes.":::
 
@@ -188,7 +188,7 @@ From the procedure in [Analyze a process](#analyze-a-process) (previously in thi
 
 :::image type="content" source="media/process-mining-tutorial/analyze-compare.png" alt-text="Screenshot of the 'Refund With Special Voucher' with a case comparison.":::
 
-Notice that cases that have the **Refund With Standard Voucher** step also have the possibility of invoices being rejected as the blue node which represents the **Reject Invoice** step suggests. This **Reject Invoice** step contributes only 2.8 hours on average to the process.
+Notice that cases that have the **Refund With Standard Voucher** step also have the possibility of invoices being rejected as the blue node, which represents the **Reject Invoice** step suggests. This **Reject Invoice** step contributes only 2.8 hours on average to the process.
 
 :::image type="content" source="media/process-mining-tutorial/reject-invoice.png" alt-text="Screenshot of the 'Reject Invoice' node.":::
 

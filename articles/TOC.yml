@@ -834,7 +834,7 @@
       href: process-mining-pbi-workspace.md
     - name: Use optimized data structure in Power BI report (preview)
       href: process-mining-pbi-data-structure.md
-    - name: Application Lifecycle Management (ALM)
+    - name: Application lifecycle management (ALM)
       items:
       - name: ALM overview
         href: process-mining-alm-overview.md
