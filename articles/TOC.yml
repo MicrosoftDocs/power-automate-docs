@@ -8,6 +8,8 @@
     href: sign-up-sign-in.md
   - name: Get started with Power Automate
     href: getting-started.md
+  - name: Copilot in Power Automate
+    href: copilot-overview.md
   - name: What's new
     href: whats-new.md
   - name: Create and manage flows in Power Apps
@@ -234,7 +236,7 @@
       - name: Use custom connectors in approval flows
         href: ./teams/approvals-custom-connector.md
     - name: Create a visual for Power BI
-      href: /power-bi/create-reports/power-bi-automate-visual?tabs=powerbi-desktop
+      href: /power-bi/create-reports/power-bi-automate-visual?tabs=powerbi-desktop  
     - name: Configure flows in Power Pages (preview)
       href: /power-pages/configure/cloud-flow-integration
     - name: Use flows with Microsoft Forms
@@ -502,6 +504,8 @@
       href: ./desktop-flows/test-selectors.md  
     - name: Repair a selector
       href: ./desktop-flows/repair-selector.md  
+    - name: Set fallback mechanism for UI element
+      href: ./desktop-flows/ui-elements-fallback-mechanism.md  
   - name: Power Fx in desktop flows (preview)
     items:
     - name: Power Fx in desktop flows
@@ -626,6 +630,8 @@
         href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
       - name: Troubleshoot SQL queries
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
+    - name: Configure proxy settings
+      href: ./desktop-flows/how-to/proxy-settings.md
     - name: Use logical operations on conditional statements
       href: ./desktop-flows/how-to/logical-operations-conditional-statements.md
     - name: Handle custom forms
@@ -1157,29 +1163,6 @@
         href: use-cds-for-apps-dialogs.md
       - name: Replace classic Dataverse dialogs
         href: replace-dialogs.md
-  - name: Other types of desktop flows (Legacy)
-    items:
-    - name: Introduction to other types of desktop flows
-      href: ./desktop-flows/overview.md
-    - name: Create and test desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/create-desktop.md
-    - name: Upgrade UI flows app and connections from previous releases
-      href: ./desktop-flows/upgrade.md
-    - name: Edit desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/edit-desktop.md
-    - name: Migrate from Windows recorder (V1) to Power Automate
-      href: ./desktop-flows/migrate.md
-    - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/inputs-outputs-desktop.md
-      items:
-      - name: Use Input Method Editors (IMEs) in desktop flows with Windows recorder (V1)
-        href: ./desktop-flows/use-ime.md
-    - name: Create and test Selenium IDE flows
-      href: ./desktop-flows/create-web.md
-    - name: Edit desktop flows with Selenium IDE
-      href: ./desktop-flows/edit-web.md
-    - name: Use inputs and outputs in desktop flows with Selenium IDE
-      href: ./desktop-flows/inputs-outputs-web.md
 - name: Learning catalog
   items:
   - name: Overview
@@ -1226,3 +1209,5 @@
     href: faqs-action-suggestions-power-automate-desktop.md
   - name: FAQ for generating flow descriptions using Copilot in desktop flows
     href: faqs-copilot-generate-description-from-flow-properties.md
+  - name: FAQ for Process Mining's Microsoft 365 personal recommendations
+    href: faqs-process-mining-m365-personal-recommendations.md

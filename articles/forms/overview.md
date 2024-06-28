@@ -1,5 +1,5 @@
 ---
-title: Overview of using Microsoft Forms and Power Automate (contains video)
+title: Overview of using Microsoft Forms and Power Automate
 description: Learn how to use a form in a flow.
 services: ''
 suite: flow
