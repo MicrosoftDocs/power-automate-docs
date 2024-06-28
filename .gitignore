@@ -9,6 +9,10 @@
 *.userosscache
 *.sln.docstates
 
+# Operating System files
+.DS_Store
+Thumbs.db
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
