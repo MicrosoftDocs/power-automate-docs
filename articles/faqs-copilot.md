@@ -1,17 +1,21 @@
 ---
-title: FAQ for copilot in cloud flows
+title: FAQ for Copilot in cloud flows
 description: This FAQ discusses copilot in cloud flows and the key considerations for making use of this technology responsibly.
-ms.date: 11/13/2023
+ms.date: 07/02/2024
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: conceptual
 author: kisubedi
+contributors:
+  - radioblazer
+  - kisubedi
+  - v-aangie
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
 ---
 
-# FAQ for copilot in cloud flows
+# FAQ for Copilot in cloud flows
 
 These frequently asked questions (FAQ) describe the AI impact of Power Automate's Copilot in cloud flows (preview) feature.
 
@@ -28,6 +32,8 @@ The system is a copilot embedded in the cloud flows designer with copilot. It he
 - Edit an existing flow according to instructions.
 
 - Answer questions about the current flow being edited.
+
+- Create a description for the current flow.
 
 - Answer general documentation questions about Power Automate.
 
