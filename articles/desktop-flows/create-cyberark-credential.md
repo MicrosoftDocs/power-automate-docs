@@ -14,7 +14,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create a CyberArk credential
+# Create a CyberArk® credential (preview)
 
 [!INCLUDE [cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
 
