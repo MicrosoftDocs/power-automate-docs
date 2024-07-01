@@ -89,7 +89,7 @@ Follow these steps to create a flow using the cloud flows designer with Copilot.
 
 The new troubleshoot in Copilot feature can assist you in identifying and resolving errors that might occur during testing of cloud flows or when reviewing flow run history. You can use this Copilot feature when the new designer experience is enabled.
 
-To learn more, go to [Troubleshoot in Copilot](fix-flow-failures.md#troubleshoot-in-copilot)
+To learn more, go to [Troubleshoot in Copilot](fix-flow-failures.md#troubleshoot-in-copilot).
 
 ## How to write a good prompt
 
@@ -130,7 +130,7 @@ In addition to using Copilot to create a starting flow, you can also change or c
    1. Delete action *X*
    1. I want to send an email at the end of the flow with subject equal to the SharePoint file name.
    1. Instead of email, I want to post message on Teams channel.
-   1. Check if each of the Sharepoint items being returned has a title that equals 'USB', and if so, send an email.
+   1. Check if each of the SharePoint items being returned has a title that equals 'USB', and if so, send an email.
 
 ## Frequently asked questions
 
