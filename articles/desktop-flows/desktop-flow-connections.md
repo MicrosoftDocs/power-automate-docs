@@ -33,13 +33,22 @@ There's two different methods to connect Power Automate with your machines (or g
 
 ## Connect with username and password
 
-With this option, you need to provide the machine (or on-premises data gateway) information and device credentials:
+With this option, you need to provide the machine information and device credentials:
 
    - **Connect**: Select if you want to connect to a machine or a machine group.
 
       To connect to a machine or a machine group, select **Connect with username and password**, and choose the appropriate machine or machine group in  **Machine or machine group**.
 
-      :::image type="content" source="media/desktop-flows-setup/choose-machine.png" alt-text="Screenshot of the Directly to machine option in the Connect field.":::
+     :::image type="content" source="./media/manage-machines/SelectMachine.png" alt-text="Select Machine":::
+
+### Option 1: Select credential
+
+1.	Select **Switch to credentials**.
+1. You can now select the credential you want to use on the selected machine and select **Create**. If you don't have any credential yet, select **New credential**. You can create credential(s) with secrets stored in [Azure Key Vault](create-AzureKeyVault-credential.md) or [CyberArk®](create-cyberark-credential.md) (preview).
+
+:::image type="content" source="./media/manage-machines/SelectCredential.png" alt-text="Select credential.":::
+
+### Option 2: Enter username and password in plain text
 
    - **Domain and Username**: Provide your device account. To use a local account, populate the name of the user (for example, **MACHINENAME\\User** or **local\\User**) or an Active Directory account, such as **DOMAIN\\User** or **username@domain.com**
 
