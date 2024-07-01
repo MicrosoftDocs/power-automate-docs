@@ -1,5 +1,5 @@
 ---
-title: Copilot in cloud flows FAQ
+title: FAQ for Copilot in cloud flows
 description: This FAQ discusses copilot in cloud flows and the key considerations for making use of this technology responsibly.
 ms.date: 07/02/2024
 ms.custom: 
@@ -15,7 +15,7 @@ ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
 ---
 
-# Copilot in cloud flows FAQ
+# FAQ for Copilot in cloud flows
 
 These frequently asked questions (FAQ) describe the AI impact of Power Automate's Copilot in cloud flows (preview) feature.
 
