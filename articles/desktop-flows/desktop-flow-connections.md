@@ -50,7 +50,7 @@ With this option, you need to provide the machine information and device credent
 
 ### Option 2: Enter username and password in plain text
 
-- **Domain and username**: Provide your device account. To use a local account, populate the name of the user (for example, **MACHINENAME\\User** or **local\\User**) or a Microsoft Entra ID account, such as **DOMAIN\\User** or **username@domain.com**.
+- **Domain and username**: Provide your device account. To use a local account, populate the name of the user (for example, `<MACHINENAME\User>` or `<local\User>`) or a Microsoft Entra ID account, such as `<DOMAIN\User>` or `<username@domain.com>`.
 
 - **Password**: Your account’s password.
 

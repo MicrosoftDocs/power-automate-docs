@@ -60,7 +60,7 @@ In the last step of the wizard, you select username and password or create new o
 - **Username**: To select a username, you can use the dropdown. If you don’t have any environment variables, select **new**:
   - **Display name**. Enter a name for the environment variable.
   - **Name**. The unique name is automatically generated from the Display name, but you can change it.
-  - **Value**. Populate the name of the user. For local users, provide username. For domain users, provide DOMAIN\username or username@domain.com
+  - **Value**. Populate the name of the user. For local users, provide username. For domain users, provide `<DOMAIN\username>` or `<username@domain.com>`.
 
     :::image type="content" source="./media/manage-machines/define-username.png" alt-text="Screenshot of defining the username of the credential.":::
 
@@ -70,7 +70,7 @@ In the last step of the wizard, you select username and password or create new o
 - **Password**: To select a password, you can use the dropdown. If you don’t have any secret environment variables, select **new**:
   - **Display name**. Enter a name for the environment variable.
   - **Name**. The unique name is automatically generated from the Display name, but you can change it.
-  - **Subcription id**. The Azure subscription ID associated with the key vault.
+  - **Subscription id**. The Azure subscription ID associated with the key vault.
   - **Resource group name**. The Azure resource group where the key vault that contains the secret is located.
   - **Azure key vault name**. The name of the key vault that contains the secret.  
   - **Secret name**. The name of the secret located in Azure Key Vault.
@@ -108,7 +108,7 @@ You can share the credentials you own with other users in your organization and 
 1. Select **Add people**, enter the name of the person in your organization with whom you would like to share the credentials, and then select the role you want to grant to this user:
     - **Co-owner** (can edit). This access level gives full permission to that credential. Co-owners can use the credential, share it with others, edit its details, and delete it.
     - **User** (can view only). This access level only gives permission to use the credential. No edit, share, or delete permissions are possible with this access.
-    - **User** (can view and share). Same as above, but it gives permission to share.
+    - **User** (can view and share). This access level is the same as the can view only option, but it gives permission to share.
 1. Select **Save**.
 
 >[!NOTE]
@@ -134,16 +134,16 @@ You should import the solution containing the credential and the related environ
 
 - Currently, this feature is available only for desktop flow connections.
 - Creating credentials in the new designer isn't available yet.
-- You can't edit the selected environment variables in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the AKV secret.
+- You can't edit the selected environment variables in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the Azure Key Vault secret.
 - Update of connections using credentials is asynchronous. It can take up to one minute for the desktop flow connection to use the new credentials after the secret is updated.
 
 ## Update a secret (password rotation) - Deprecated
 
->[!NOTE]
->This section is now deprecated. All the connections using Credentials are now retrieving secrets during the flow execution. It is not necessary anymore to create this custom flow to update the connections.
->The connections using Credentials create before April 2024 should be updated to benefit of the automatical update.
+> [!NOTE]
+> This section is now deprecated. All the connections using Credentials are now retrieving secrets during the flow execution. It is not necessary anymore to create this custom flow to update the connections.
+> The connections using Credentials created before April 2024 should be updated to benefit of the automatic update.
 
-### Prerequisites
+### Prerequisites for updating a secret (password rotation)
 
 - Ensure Event Grid is registered as a Resource provider in Azure. [Learn more about resource providers](/azure/azure-resource-manager/management/resource-providers-and-types).
 - Ensure users who use Event Grid trigger in Power Automate have Event Grid Contributor permissions. [Learn more](/azure/event-grid/security-authorization)
