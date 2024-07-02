@@ -14,7 +14,7 @@ search.audienceType:
 ---
 # Create an Azure Key Vault credential
 
-The **Credentials** page (preview) in Power Automate allows you to create, edit, and share sign in credentials using Azure Key Vault and use them in desktop flow connections.
+The **Credentials** page in Power Automate allows you to create, edit, and share sign in credentials using Azure Key Vault and use them in desktop flow connections.
 
 You can also [create credentials with CyberArk® (Preview)](create-cyberark-credential.md).
 
@@ -33,7 +33,7 @@ In a nutshell, admin needs to ensure:
 1. Users who create the environment variable have appropriate permissions to the Azure Key Vault resource.
 1. The Power Automate environment and the Azure subscription must be on the same tenant.
 
-To configure Azure Key Vault, follow the steps described in [Configure Azure Key Vault](/power-apps/maker/data-platform/environmentvariables#configure-azure-key-vault).
+To configure Azure Key Vault, follow the steps described in [Configure Azure Key Vault](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets#configure-azure-key-vault).
 
 ## Create a credential
 
@@ -41,7 +41,7 @@ To create your credentials:
 
 1. Go to the **Credentials** page.
 1. Select **more** in the left nav, then select **Discover all**.
-1. Under **Data**, select **Credentials (preview)**. You can pin the page in the left nav to make it more accessible.
+1. Under **Data**, select **Credentials**. You can pin the page in the left nav to make it more accessible.
 
 In the credentials page, you can now create your first credential.
 
@@ -101,7 +101,7 @@ From Solutions page, you can retrieve all the dependencies of secret environment
 
 You can share the credentials you own with other users in your organization and give those users specific permissions to access it.
 
-1. Sign-in to [Power Automate](https://make.powerautomate.com), and then go to **Credentials (preview)**.
+1. Sign-in to [Power Automate](https://make.powerautomate.com), and then go to **Credentials**.
 1. Select your credential from the list of credentials.
 1. On the command bar, select **Share**.
 1. Select **Add people**, enter the name of the person in your organization with whom you would like to share the credentials, and then select the role you want to grant to this user:
@@ -115,7 +115,7 @@ You can share the credentials you own with other users in your organization and 
 
 ## Delete a credential
 
-1. Sign in to [Power Automate](https://make.powerautomate.com), and then go to **Credentials (preview)**.
+1. Sign in to [Power Automate](https://make.powerautomate.com), and then go to **Credentials**.
 1. From the list, select the credential you want to delete, and then select **Delete machine** on the command bar.
 
 >[!NOTE]
