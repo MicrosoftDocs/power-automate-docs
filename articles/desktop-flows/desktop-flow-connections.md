@@ -35,11 +35,11 @@ There's two different methods to connect Power Automate with your machines (or g
 
 With this option, you need to provide the machine information and device credentials:
 
-   - **Connect**: Select if you want to connect to a machine or a machine group.
+- **Connect**: Select if you want to connect to a machine or a machine group.
 
-      To connect to a machine or a machine group, select **Connect with username and password**, and choose the appropriate machine or machine group in  **Machine or machine group**.
+    To connect to a machine or a machine group, select **Connect with username and password**, and choose the appropriate machine or machine group in  **Machine or machine group**.
 
-     :::image type="content" source="./media/manage-machines/select-machine.png" alt-text="Select Machine":::
+    :::image type="content" source="./media/manage-machines/select-machine.png" alt-text="Select Machine":::
 
 ### Option 1: Select credential
 
@@ -50,24 +50,24 @@ With this option, you need to provide the machine information and device credent
 
 ### Option 2: Enter username and password in plain text
 
-   - **Domain and Username**: Provide your device account. To use a local account, populate the name of the user (for example, **MACHINENAME\\User** or **local\\User**) or an Active Directory account, such as **DOMAIN\\User** or **username@domain.com**
+- **Domain and Username**: Provide your device account. To use a local account, populate the name of the user (for example, **MACHINENAME\\User** or **local\\User**) or an Active Directory account, such as **DOMAIN\\User** or **username@domain.com**
 
-   - **Password**: Your account’s password.
+- **Password**: Your account’s password.
 
-      :::image type="content" source="media/desktop-flows-setup/credentials-screen.png" alt-text="Screenshot that shows where to enter the credentials for the connection.":::
-      
+  :::image type="content" source="media/desktop-flows-setup/credentials-screen.png" alt-text="Screenshot that shows where to enter the credentials for the connection.":::
+
 ## Connect with sign-in for attended runs
 
-With this option, you don't need to provide session credentials. This might be very helpful when your organization doesn't allow username and password for user sessions.
+With this option, you don't need to provide session credentials. This option might be helpful when your organization doesn't allow username and password for user sessions.
 
 ### Prerequisites
 
 To use connection with sign-in, you need to meet the following prerequisites:
 
-  - Microsoft Entra users must be in the same tenant as the selected environment in Power Automate portal.
-  - The target (machine / group) should be Microsoft Entra ID or AD joined. In case of an Entra ID joined target, the machine or group must be synchronized with Microsoft Entra ID.
-  - The Microsoft Entra user account must be granted right to open a Windows session on the target machines (interactive sign in). At runtime, there should a Windows interaction session matching the connection user in order to process the run (as it's today for existing connections).
-  - The tenant of the target Microsoft Entra account is configured to use modern authentication [Authentication with Microsoft Entra ID - Microsoft Azure Well-Architected Framework](/azure/well-architected/).
+- Microsoft Entra users must be in the same tenant as the selected environment in Power Automate portal.
+- The target (machine / group) should be Microsoft Entra ID or AD joined. If there's a Microsoft Entra ID joined target, the machine or group must be synchronized with Microsoft Entra ID.
+- The Microsoft Entra user account must be granted right to open a Windows session on the target machines (interactive sign in). At runtime, there should a Windows interaction session matching the connection user in order to process the run (as it's today for existing connections).
+- The tenant of the target Microsoft Entra account is configured to use modern authentication [Authentication with Microsoft Entra ID - Microsoft Azure Well-Architected Framework](/azure/well-architected/).
 
 > [!NOTE]
 > Connect with sign-in for attended runs is available in most of the Power Platform regions.
@@ -76,11 +76,11 @@ To use connection with sign-in, you need to meet the following prerequisites:
 
 ### Set up the connection with sign-in
 
-- Select **Connect with Sign-in** in the Connect dropdown
-- Select the target (machine or machine group)
-- Select **Sign in**
-- Pick or provide an **Microsoft Entra account** in the sign in pop-up 
-- The desktop flow connect is automatically created
+- Select **Connect with Sign-in** in the Connect dropdown.
+- Select the target (machine or machine group).
+- Select **Sign in**.
+- Pick or provide an **Microsoft Entra account** in the sign in pop-up.
+- The desktop flow connect is automatically created.
 
 ### How it works
 
@@ -90,7 +90,7 @@ To use connection with sign-in, you need to meet the following prerequisites:
 
 ### Limitations
 
-- Connect with sign-in (preview) works **only for attended runs**. Running unattended with this connection will always fail.
+- Connect with sign-in (preview) works **only for attended runs**. Running unattended with this connection fails.
 - Queue time duration is limited to one hour.
 
 > [!IMPORTANT]

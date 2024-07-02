@@ -14,7 +14,7 @@ search.audienceType:
 ---
 # Create an Azure Key Vault credential
 
-The **Credentials** page (preview) in Power Automate allows you to create, edit, and share login credentials using Azure Key Vault and use them in desktop flow connections.
+The **Credentials** page (preview) in Power Automate allows you to create, edit, and share sign in credentials using Azure Key Vault and use them in desktop flow connections.
 
 You can also [create credentials with CyberArk® (Preview)](create-cyberark-credential.md).
 
@@ -27,11 +27,11 @@ Credentials use secrets stored in Azure Key Vault. To allow you to create creden
 
 In a nutshell, admin needs to ensure:
 
-1. Microsoft Power Platform resource provider is registered in Azure subscription
-1. There is an Azure Key Vault that contains the secrets to be used in the credentials.
-1. Dataverse service principal has permissions to use the secrets
+1. Microsoft Power Platform resource provider is registered in Azure subscription.
+1. There's an Azure Key Vault that contains the secrets to be used in the credentials.
+1. Dataverse service principal has permissions to use the secrets.
 1. Users who create the environment variable have appropriate permissions to the Azure Key Vault resource.
-1. The Power Automate environment and the Azure subscription must be on the same tenant
+1. The Power Automate environment and the Azure subscription must be on the same tenant.
 
 To configure Azure Key Vault, follow the steps described in [Configure Azure Key Vault](/power-apps/maker/data-platform/environmentvariables#configure-azure-key-vault).
 
@@ -54,7 +54,7 @@ To create your credential, you need to provide the following information:
 
 After selecting **next**, you need to select **Azure Key Vault** as a credential store.
 
-In the last step of the wizard, you will select username and password or create new ones:
+In the last step of the wizard, you'll select username and password or create new ones:
 
 - **Username**: To select a username, you can use the dropdown. If you don’t have any environment variables, select **new**:
   - **Display name**. Enter a name for the environment variable.
@@ -87,7 +87,7 @@ Note: Credentials are only supported in the desktop flow connections for now.
 
 You can now use your credential in a [desktop flow connections](desktop-flow-connections.md)
 
-## View where secrets are used 
+## View where secrets are used
 
 From Solutions page, you can retrieve all the dependencies of secret environment variables. This helps you to understand where your Azure Key Vault secrets are used before editing them.
 
@@ -126,13 +126,13 @@ You can share the credentials you own with other users in your organization and 
 >[!NOTE]
 >You should first read the article about [ALM for desktop flows](/power-automate/desktop-flows/alm/alm-solution).
 
-You can export a cloud flow with a desktop flow connection using credential. 
-You should import the solution containing the credential and the related environment variables first then import the one containing the cloud flow and the desktop flow. 
+You can export a cloud flow with a desktop flow connection using credential.
+You should import the solution containing the credential and the related environment variables first then import the one containing the cloud flow and the desktop flow.
 
 ## Limitations
 
-- Currently, this feature is available only for desktop flow connections. 
-- Creating credentials in the new designer isn't available yet. 
+- Currently, this feature is available only for desktop flow connections.
+- Creating credentials in the new designer isn't available yet.
 - You can't edit the selected environment variables in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the AKV secret.
 - Update of connections using credentials is asynchronous. It can take up to one minute for the desktop flow connection to use the new credentials after the secret is updated. 
 
@@ -150,10 +150,10 @@ You should import the solution containing the credential and the related environ
 > [!NOTE]
 > This section requires specific permissions such as system admin of the organization otherwise only your own desktop flow connections will be updated.
 
-### Create a cloud flow using EventGrid trigger
+### Create a cloud flow using Event Grid trigger
 
 When you edit secrets in your Azure Key Vault, you want to ensure that the credentials and connections using these secrets are always up to date to avoid breaking your automations.
-In Power Automate, you need to create a cloud flow that will update the credentials when secrets are changed in Azure Key Vault.
+In Power Automate, you need to create a cloud flow that updates the credentials when secrets are changed in Azure Key Vault.
 
 This cloud flow contains one trigger and one action:
 

@@ -130,4 +130,4 @@ Now that you complete all the prerequisites steps, you can create your CyberArkÂ
   
 ## Use the credential in Desktop flow connection
 
-Your credential is now created. You can use it in a desktop flow connection to [run desktop flows from cloud flows](trigger-desktop-flows.md)
+Your credential is now created. You can use it in a desktop flow connection to [run desktop flows from cloud flows](trigger-desktop-flows.md).
