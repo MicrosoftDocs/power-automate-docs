@@ -44,7 +44,7 @@ With this option, you need to provide the machine information and device credent
 ### Option 1: Select credential
 
 1. Select **Switch to credentials**.
-1. You can now select the credential you want to use on the selected machine and select **Create**. If you don't have any credential yet, select **New credential**. You can create credentials with secrets stored in [Azure Key Vault](create-AzureKeyVault-credential.md) or [CyberArk®](create-cyberark-credential.md) (preview).
+1. You can now select the credential you want to use on the selected machine and select **Create**. If you don't have any credential yet, select **New credential**. You can create credentials with secrets stored in [Azure Key Vault](create-azurekeyvault-credential.md) or [CyberArk®](create-cyberark-credential.md) (preview).
 
 :::image type="content" source="./media/manage-machines/select-credential.png" alt-text="Select credential.":::
 

@@ -90,7 +90,7 @@ If you want to run a desktop flow on a machine or a group using CyberArk® crede
 1. From the left navigation, select **Machines** and select the machine or the group.
 1. In the Machine details, select **Configure CyberArk®**.
 
-:::image type="content" source="./media/manage-machines/confiugre-cyberark.png" alt-text="Screenshot of the connection using credentials.":::
+:::image type="content" source="./media/manage-machines/configure-cyberark.png" alt-text="Screenshot of the connection using credentials.":::
 
 1. Select **New application**.
     1. Enter the app ID of the application you created from CyberArk® PVWA.

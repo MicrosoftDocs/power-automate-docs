@@ -416,7 +416,7 @@
     - name: Connections
       items:
       - name: Azure Key Vault credentials
-        href: ./desktop-flows/create-azure-key-vault-credential.md
+        href: ./desktop-flows/create-azurekeyvault-credential.md
       - name: CyberArk credentials
         href: ./desktop-flows/create-cyberark-credential.md
     - name: Machine group certificate renewal
