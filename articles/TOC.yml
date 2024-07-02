@@ -424,11 +424,11 @@
     - name: Scale with AVD starter kit (deprecated)
       href: ./desktop-flows/avd-overview.md
   - name: Create credentials
-  items:
-  - name: Azure Key Vault credentials
-    href: ./desktop-flows/create-azurekeyvault-credential.md
-  - name: CyberArk credentials (preview)
-    href: ./desktop-flows/create-cyberark-credential.md
+    items:
+    - name: Azure Key Vault credentials
+      href: ./desktop-flows/create-azurekeyvault-credential.md
+    - name: CyberArk credentials (preview)
+      href: ./desktop-flows/create-cyberark-credential.md
   - name: Create desktop flow connections
     href: ./desktop-flows/desktop-flow-connections.md
   - name: Manage desktop flows
