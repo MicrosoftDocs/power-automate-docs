@@ -16,7 +16,7 @@ search.audienceType:
 
 The **Credentials** page in Power Automate allows you to create, edit, and share sign in credentials using Azure Key Vault and use them in desktop flow connections.
 
-You can also [create credentials with CyberArk® (Preview)](create-cyberark-credential.md).
+You can also [create credentials with CyberArk® (preview)](create-cyberark-credential.md).
 
 > [!IMPORTANT]
 > - Currently, this feature isn't available for US Government Clouds.
@@ -54,7 +54,7 @@ To create your credential, you need to provide the following information:
 
 After selecting **next**, you need to select **Azure Key Vault** as a credential store.
 
-In the last step of the wizard, you'll select username and password or create new ones:
+In the last step of the wizard, you select username and password or create new ones:
 
 - **Username**: To select a username, you can use the dropdown. If you don’t have any environment variables, select **new**:
   - **Display name**. Enter a name for the environment variable.
