@@ -4,10 +4,11 @@ description: Learn how create a credential with secret stored in Azure Key Vault
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 06/20/2024
+ms.date: 07/02/2024
 ms.author: quseleba
 ms.reviewer: 
 contributors:
+  - DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -45,7 +46,7 @@ To create your credentials:
 
 In the credentials page, you can now create your first credential.
 
-:::image type="content" source="./media/manage-machines/define-name.png" alt-text="Define name of the credential.":::
+:::image type="content" source="./media/manage-machines/define-name.png" alt-text="Screenshot of defining the name of the credential.":::
 
 To create your credential, you need to provide the following information:
 
@@ -61,7 +62,7 @@ In the last step of the wizard, you select username and password or create new o
   - **Name**. The unique name is automatically generated from the Display name, but you can change it.
   - **Value**. Populate the name of the user. For local users, provide username. For domain users, provide DOMAIN\username or username@domain.com
 
-    :::image type="content" source="./media/manage-machines/define-username.png" alt-text="Define username of the credential.":::
+    :::image type="content" source="./media/manage-machines/define-username.png" alt-text="Screenshot of defining the username of the credential.":::
 
 > [!NOTE]
 > Credential username is a text environment variable. You can also [create a text variable from the solutions page](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution) and select it as username.
@@ -74,7 +75,7 @@ In the last step of the wizard, you select username and password or create new o
   - **Azure key vault name**. The name of the key vault that contains the secret.  
   - **Secret name**. The name of the secret located in Azure Key Vault.
 
-:::image type="content" source="./media/manage-machines/define-password.png" alt-text="Define password of the credential.":::
+:::image type="content" source="./media/manage-machines/define-password.png" alt-text="Screenshot of defining the password of the credential.":::
   
 > [!NOTE]
 > The subscription ID, resource group name, and key vault name can be found on the Azure portal Overview page of the key vault. The secret name can be found on the key vault page in the Azure portal by selecting Secrets under Settings.
@@ -134,7 +135,7 @@ You should import the solution containing the credential and the related environ
 - Currently, this feature is available only for desktop flow connections.
 - Creating credentials in the new designer isn't available yet.
 - You can't edit the selected environment variables in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the AKV secret.
-- Update of connections using credentials is asynchronous. It can take up to one minute for the desktop flow connection to use the new credentials after the secret is updated. 
+- Update of connections using credentials is asynchronous. It can take up to one minute for the desktop flow connection to use the new credentials after the secret is updated.
 
 ## Update a secret (password rotation) - Deprecated
 
@@ -177,4 +178,4 @@ To ensure that your cloud flow is working correctly with Azure Key Vault:
 1. Select **Events**.
 1. In **Events subscriptions**, check if you can see a LogicApps webhook.
 
-:::image type="content" source="./media/manage-machines/keyvault-updates.png" alt-text="Screenshot of Event subscriptions in AKV.":::
+:::image type="content" source="./media/manage-machines/keyvault-updates.png" alt-text="Screenshot of Event subscriptions in Azure Key Vault.":::

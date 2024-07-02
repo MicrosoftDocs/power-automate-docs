@@ -32,28 +32,30 @@ Currently, this feature isn't available for US Government Clouds.
 
 If your CyberArk® Central Credential Provider (CCP) isn't set up, complete the following actions:
 
-1. Install the Central Credential Provider (CCP). Learn more at https://docs.cyberark.com/credential-providers/latest/en/Content/CCP/CCP-Installation.htm.
+1. Install the Central Credential Provider (CCP). Learn more at <https://docs.cyberark.com/credential-providers/latest/en/Content/CCP/CCP-Installation.htm>.
 1. Ensure that your machines can communicate with the CyberArk® server.
 1. Allow https connections to contact the CCP AIMWebService.
 
 ### Create an application with client certification authentication from PVWA
 
-A signed certificate enables the application authentication with a certificate serial number
+A signed certificate enables the application authentication with a certificate serial number.
+
+To add a signed certificate:
 
 1. Sign-in to CyberArk®’s Password Vault Web Access (PVWA).
 1. From the left navigation, select the **Applications** tab and then select **Add Application**.
 
-:::image type="content" source="./media/manage-machines/create-application.png" alt-text="Screenshot of CyberArk application.":::
+    :::image type="content" source="./media/manage-machines/create-application.png" alt-text="Screenshot of CyberArk application.":::
 
 1. Provide the information in the Application window (at least a name) and select **Add**.
 1. In the details of the application, select **Add** on the **Authentication** tab.
-1. Select Certificate serial number and enter the value. Learn more in [Application authentication methods](https://docs.cyberark.com/credential-providers/Latest/en/Content/CP%20and%20ASCP/Application-Authentication-Methods-general.htm#ClientCert).
+1. Select **Certificate serial number** and enter the value. Learn more in [Application authentication methods](https://docs.cyberark.com/credential-providers/Latest/en/Content/CP%20and%20ASCP/Application-Authentication-Methods-general.htm#ClientCert).
 
 ### Set up a CyberArk® safe that contains their user accounts
 
 (Optional) If you don’t have a safe yet, you can create a Safe from PVWA:
 
-1. From the left navigation, select **Policies** then select **Safes**.
+1. From the left navigation, select **Policies** and then select **Safes**.
 1. Select **Create Safe**.
 1. Enter a safe name and select **PasswordManager**.
 1. Enter Safe members and Access then select **Create Safe**.
@@ -68,7 +70,7 @@ A signed certificate enables the application authentication with a certificate s
 1. Select the safe you created to store your robotic process automation (RPA) machine accounts.
 1. Provide information about your account and select **Add**.
 
-:::image type="content" source="./media/manage-machines/add-account.png" alt-text="Add an account on CyberArk.":::
+:::image type="content" source="./media/manage-machines/add-account.png" alt-text="Screenshot of adding an account in CyberArk.":::
 
 ### Define application and credential provider as safe member
 
@@ -77,7 +79,7 @@ Add the Credential Provider user as a Safe Member with the following authorizati
 • Retrieve accounts
 • View Safe Members
 
-:::image type="content" source="./media/manage-machines/manage-permissions.png" alt-text="Manage permissions on CyberArk":::
+:::image type="content" source="./media/manage-machines/manage-permissions.png" alt-text="Screenshot of manage permissions in CyberArk":::
 
 Add the application as a Safe Member with the following authorizations:
 • Retrieve accounts
@@ -104,7 +106,7 @@ If you want to run a desktop flow on a machine or a group using CyberArk® crede
 
     1. Enter a description (optional) and then select **Save**.
 
-:::image type="content" source="./media/manage-machines/add-cyberark-app.png" alt-text="Configure CyberArk on machine group":::
+:::image type="content" source="./media/manage-machines/add-cyberark-app.png" alt-text="Screenshot of configure CyberArk on machine group":::
 
 ## Create a CyberArk® credential
 
@@ -122,7 +124,7 @@ Now that you complete all the prerequisites steps, you can create your CyberArk�
        - **Safe**: Populate the name of the safe displayed in CyberArk® PVWA.
        - **Folder** (optional): Populate the folder name where your credentials are stored. By default, credentials are stored in the "Root" folder.
 
-:::image type="content" source="./media/manage-machines/select-credential-store.png" alt-text="Create new credential store.":::
+:::image type="content" source="./media/manage-machines/select-credential-store.png" alt-text="Screenshot of create new credential store.":::
 
 1. In the last step of the wizard, you need to provide the information about the user account:
     - **Username**: Select a username from your text environment variables or create a new one by selecting new.
