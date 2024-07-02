@@ -416,9 +416,9 @@
     - name: Connections
       items:
       - name: Azure Key Vault credentials
-        href: ./desktop-flows/create-azure-key-vault-credentials.md
+        href: ./desktop-flows/create-azure-key-vault-credential.md
       - name: CyberArk credentials
-        href: ./desktop-flows/create-cyberark-credentials.md
+        href: ./desktop-flows/create-cyberark-credential.md
     - name: Machine group certificate renewal
       href: ./desktop-flows/machine-group-certificates.md
     - name: RPA with zero infrastructure (Hosted RPA)

@@ -4,7 +4,7 @@ description: Use CyberArk credentials in desktop flow connections
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 06/26/2024
+ms.date: 07/02/2024
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
@@ -43,7 +43,7 @@ A signed certificate enables the application authentication with a certificate s
 1. Sign-in to CyberArk®’s Password Vault Web Access (PVWA).
 1. From the left navigation, select the **Applications** tab and then select **Add Application**.
 
-:::image type="content" source="./media/manage-machines/CreateApplication.png" alt-text="Screenshot of CyberArk application.":::
+:::image type="content" source="./media/manage-machines/create-application.png" alt-text="Screenshot of CyberArk application.":::
 
 1. Provide the information in the Application window (at least a name) and select **Add**.
 1. In the details of the application, select **Add** on the **Authentication** tab.
@@ -68,7 +68,7 @@ A signed certificate enables the application authentication with a certificate s
 1. Select the safe you created to store your robotic process automation (RPA) machine accounts.
 1. Provide information about your account and select **Add**.
 
-:::image type="content" source="./media/manage-machines/AddAccount.png" alt-text="Add an account on CyberArk.":::
+:::image type="content" source="./media/manage-machines/add-account.png" alt-text="Add an account on CyberArk.":::
 
 ### Define application and credential provider as safe member
 
@@ -77,7 +77,7 @@ Add the Credential Provider user as a Safe Member with the following authorizati
 • Retrieve accounts
 • View Safe Members
 
-:::image type="content" source="./media/manage-machines/ManagePermissions.png" alt-text="Manage permissions on CyberArk":::
+:::image type="content" source="./media/manage-machines/manage-permissions.png" alt-text="Manage permissions on CyberArk":::
 
 Add the application as a Safe Member with the following authorizations:
 • Retrieve accounts
@@ -90,7 +90,7 @@ If you want to run a desktop flow on a machine or a group using CyberArk® crede
 1. From the left navigation, select **Machines** and select the machine or the group.
 1. In the Machine details, select **Configure CyberArk®**.
 
-:::image type="content" source="./media/manage-machines/ConfiugreCyberArk.png" alt-text="Screenshot of the connection using credentials.":::
+:::image type="content" source="./media/manage-machines/confiugre-cyberark.png" alt-text="Screenshot of the connection using credentials.":::
 
 1. Select **New application**.
     1. Enter the app ID of the application you created from CyberArk® PVWA.
@@ -104,7 +104,7 @@ If you want to run a desktop flow on a machine or a group using CyberArk® crede
 
     1. Enter a description (optional) and then select **Save**.
 
-:::image type="content" source="./media/manage-machines/AddACyberArkApp.png" alt-text="Configure CyberArk on machine group":::
+:::image type="content" source="./media/manage-machines/add-cyberark-app.png" alt-text="Configure CyberArk on machine group":::
 
 ## Create a CyberArk® credential
 
@@ -122,7 +122,7 @@ Now that you complete all the prerequisites steps, you can create your CyberArk�
        - **Safe**: Populate the name of the safe displayed in CyberArk® PVWA.
        - **Folder** (optional): Populate the folder name where your credentials are stored. By default, credentials are stored in the "Root" folder.
 
-:::image type="content" source="./media/manage-machines/SelectCredentialStore.png" alt-text="Create new credential store.":::
+:::image type="content" source="./media/manage-machines/select-credential-store.png" alt-text="Create new credential store.":::
 
 1. In the last step of the wizard, you need to provide the information about the user account:
     - **Username**: Select a username from your text environment variables or create a new one by selecting new.

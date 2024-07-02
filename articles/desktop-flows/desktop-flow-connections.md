@@ -39,14 +39,14 @@ With this option, you need to provide the machine information and device credent
 
       To connect to a machine or a machine group, select **Connect with username and password**, and choose the appropriate machine or machine group in  **Machine or machine group**.
 
-     :::image type="content" source="./media/manage-machines/SelectMachine.png" alt-text="Select Machine":::
+     :::image type="content" source="./media/manage-machines/select-machine.png" alt-text="Select Machine":::
 
 ### Option 1: Select credential
 
 1. Select **Switch to credentials**.
 1. You can now select the credential you want to use on the selected machine and select **Create**. If you don't have any credential yet, select **New credential**. You can create credentials with secrets stored in [Azure Key Vault](create-AzureKeyVault-credential.md) or [CyberArk®](create-cyberark-credential.md) (preview).
 
-:::image type="content" source="./media/manage-machines/SelectCredential.png" alt-text="Select credential.":::
+:::image type="content" source="./media/manage-machines/select-credential.png" alt-text="Select credential.":::
 
 ### Option 2: Enter username and password in plain text
 
