@@ -12,7 +12,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Create an Azure Key Vault credential 
+# Create an Azure Key Vault credential
 
 The **Credentials** page (preview) in Power Automate allows you to create, edit, and share login credentials using Azure Key Vault and use them in desktop flow connections.
 
@@ -50,32 +50,33 @@ To create your credential, you need to provide the following information:
 After selecting **next**, you need to select **Azure Key Vault** as a credential store.
 
 In the last step of the wizard, you will select username and password or create new ones:
-- **Username**: to select a username, you can use the dropdown. If you don’t have any environment variables, click on new:
+- **Username**: To select a username, you can use the dropdown. If you don’t have any environment variables, select **new**:
     - **Display name**. Enter a name for the environment variable.
     - **Name**. The unique name is automatically generated from the Display name, but you can change it.
     - **Value**. Populate the name of the user. For local users, provide username. For domain users, provide DOMAIN\username or username@domain.com
 
 :::image type="content" source="./media/manage-machines/DefineUsername.png" alt-text="Define username of the credential.":::
- 
->[!NOTE]
-> Credential username is a **text environment variables**. You can also [create a text variable from the solutions page](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution) and select it as username.
 
-- **Password**: to select a password, you can use the dropdown. If you don’t have any secret environment variables, click on new:
+    > [!NOTE]
+    > Credential username is a **text environment variable**. You can also [create a text variable from the solutions page](/power-apps/maker/data-platform/environmentvariables#create-an-environment-variable-in-a-solution) and select it as username.
+
+- **Password**: To select a password, you can use the dropdown. If you don’t have any secret environment variables, select **new**:
     - **Display name**. Enter a name for the environment variable.
     - **Name**. The unique name is automatically generated from the Display name, but you can change it.
-    - **SubcriptionId**. The Azure subscription ID associated with the key vault.
+    - **Subcription id**. The Azure subscription ID associated with the key vault.
     - **Resource group name**. The Azure resource group where the key vault that contains the secret is located.
     - **Azure key vault name**. The name of the key vault that contains the secret.  
     - **Secret name**. The name of the secret located in Azure Key Vault.
 
 :::image type="content" source="./media/manage-machines/DefinePassword.png" alt-text="Define password of the credential.":::
   
->[!NOTE]
+> [!NOTE]
 > The subscription ID, resource group name, and key vault name can be found on the Azure portal Overview page of the key vault. The secret name can be found on the key vault page in the Azure portal by selecting Secrets under Settings.
 > User access validation for the secret is performed in the background. If the user doesn’t have at least read permission, this validation error is displayed: "This variable didn't save properly. User is not authorized to read secrets from 'Azure Key Vault path'."
 > Passwords use **secret environment variables**. You can also [create a secret variable from the solutions page](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets) and select it as password.
 
 ## Create desktop flow connections using a credential
+
 Note: Credentials are only supported in the desktop flow connections for now.
 
 You can now use your credential in a [desktop flow connections](desktop-flow-connections.md)

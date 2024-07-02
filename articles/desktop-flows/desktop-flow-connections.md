@@ -4,7 +4,7 @@ description: See how to create connections to trigger desktop flows from cloud f
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/21/2023
+ms.date: 07/02/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -43,8 +43,8 @@ With this option, you need to provide the machine information and device credent
 
 ### Option 1: Select credential
 
-1.	Select **Switch to credentials**.
-1. You can now select the credential you want to use on the selected machine and select **Create**. If you don't have any credential yet, select **New credential**. You can create credential(s) with secrets stored in [Azure Key Vault](create-AzureKeyVault-credential.md) or [CyberArk®](create-cyberark-credential.md) (preview).
+1. Select **Switch to credentials**.
+1. You can now select the credential you want to use on the selected machine and select **Create**. If you don't have any credential yet, select **New credential**. You can create credentials with secrets stored in [Azure Key Vault](create-AzureKeyVault-credential.md) or [CyberArk®](create-cyberark-credential.md) (preview).
 
 :::image type="content" source="./media/manage-machines/SelectCredential.png" alt-text="Select credential.":::
 
@@ -74,7 +74,6 @@ To use connection with sign-in, you need to meet the following prerequisites:
 > For GCCH, DOD, and China regions, the feature requires the December version of Power Automate for desktop app.
 > Currently, GCC isn't supported.
 
-
 ### Set up the connection with sign-in
 
 - Select **Connect with Sign-in** in the Connect dropdown
@@ -84,14 +83,15 @@ To use connection with sign-in, you need to meet the following prerequisites:
 - The desktop flow connect is automatically created
 
 ### How it works
+
 - An access / refresh token is created during the Microsoft Entra authentication.
 - The token scope is limited to executing a desktop flow.
 - The Power Platform services manage the refreshment of those tokens.
 
 ### Limitations
+
 - Connect with sign-in (preview) works **only for attended runs**. Running unattended with this connection will always fail.
 - Queue time duration is limited to one hour.
-
 
 > [!IMPORTANT]
 > If you consistently encounter issues when creating a connection on a new machine, first try to remove it, and then [register it](/power-automate/desktop-flows/manage-machines#register-a-new-machine) again.

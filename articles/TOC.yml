@@ -413,6 +413,12 @@
       href: ./desktop-flows/manage-machine-groups.md
     - name: Create desktop flow connections
       href: ./desktop-flows/desktop-flow-connections.md
+    - name: Connections
+      items:
+      - name: Azure Key Vault credentials
+        href: ./desktop-flows/create-azure-key-vault-credentials.md
+      - name: CyberArk credentials
+        href: ./desktop-flows/create-cyberark-credentials.md
     - name: Machine group certificate renewal
       href: ./desktop-flows/machine-group-certificates.md
     - name: RPA with zero infrastructure (Hosted RPA)
@@ -425,8 +431,8 @@
         href: ./desktop-flows/hosted-machine-groups.md
     - name: Scale with AVD starter kit (deprecated)
       href: ./desktop-flows/avd-overview.md
-  - name: Use credentials in desktop flow connections (preview)
-    href: ./desktop-flows/manage-credentials.md
+  - name: Create desktop flow connections
+    href: ./desktop-flows/desktop-flow-connections.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Work queues
