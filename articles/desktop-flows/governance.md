@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: mattp123
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 07/02/2024
 ms.author: iomavrid
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
@@ -165,6 +165,9 @@ You can use the following registry entry to set the region where users will conn
 
 IT administrators can set the following registry key to configure how Power Automate interacts with a corporate proxy server.
 
+> [!IMPORTANT]
+> From Power Automate for desktop version 2.45, all proxy settings can be configured through the Power Automate proxy configuration files. Learn more at [Configure Power Automate for desktop proxy settings](./how-to/proxy-settings.md).
+
 | Hive | Key | Name | Type |
 |---|---|---|---|
 | HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | ProxyServer | String |
@@ -177,6 +180,9 @@ IT administrators can set the following registry key to configure how Power Auto
 
 IT administrators can set the following registry key to configure the Power Automate's bypassing of a corporate proxy server.
 
+> [!IMPORTANT]
+> From Power Automate for desktop version 2.45, all proxy settings can be configured through the Power Automate proxy configuration files. Learn more at [Configure Power Automate for desktop proxy settings](./how-to/proxy-settings.md).
+
 | Hive | Key | Name | Type |
 |---|---|---|---|
 | HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | DisableWindowsProxy | DWORD |
@@ -188,6 +194,9 @@ IT administrators can set the following registry key to configure the Power Auto
 ## Configure Power Automate for desktop to authenticate to a corporate proxy server using the current user's credentials
 
 IT administrators can set the following registry key to configure how Power Automate authenticates with a corporate proxy server.
+
+> [!IMPORTANT]
+> From Power Automate for desktop version 2.45, all proxy settings can be configured through the Power Automate proxy configuration files. Learn more at [Configure Power Automate for desktop proxy settings](./how-to/proxy-settings.md).
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
