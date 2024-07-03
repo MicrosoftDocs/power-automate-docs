@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 06/26/2024
+ms.date: 06/27/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -19,11 +19,11 @@ search.audienceType:
 
 # Drafts and versioning for cloud flows
 
-When authoring a solution cloud flow, drafts can be saved in Microsoft Dataverse before the flow is complete. Then, the flow can be published when you're ready to run the flow. As you're evolving the flow, a version history is built up in Dataverse and can be accessed on the version history panel.
+When you're authoring a solution cloud flow, you can save drafts in Microsoft Dataverse before the flow is complete. Then, the flow can be published when you're ready to run the flow. As you're evolving the flow, a version history is built up in Dataverse and can be accessed on the version history panel.
 
 ## Availability
 
-The flow drafts and versioning feature set is only available for [solution cloud flows](/power-automate/create-flow-solution). Solution cloud flows can be [created directly in a solution](/power-automate/create-flow-solution#create-a-solution-aware-cloud-flow), [added into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution), or created by default if the [Create in Dataverse solutions environment setting](/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature) is enabled.
+The flow drafts and versioning feature set is available only for [solution cloud flows](/power-automate/create-flow-solution). Solution cloud flows can be [created directly in a solution](/power-automate/create-flow-solution#create-a-solution-aware-cloud-flow), [added into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution), or created by default if the [Create in Dataverse solutions environment setting](/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature) is enabled.
 
 The flow drafts and versioning feature set is being released slowly across specific environments region-by-region. When drafts and versioning capabilities show up in an environment in your region, allow two weeks for full release in that region.
 
@@ -131,7 +131,11 @@ The last published version of a solution cloud flow is exported in a solution. D
 
 Dataverse is the storage used for drafts and version history. Solution cloud flows are defined in Dataverse, so they can have drafts and a version history. The ⁠[Workflow table](/power-apps/developer/data-platform/reference/entities/workflow) has a row for the latest published and a row for the latest draft. The version history is stored in the ⁠[Component Version table](/power-apps/developer/data-platform/reference/entities/componentversionnrddatasource).
 
-### See also
+## Known issues
+
+**Changing flow URL**: When a solution cloud flow is first published, the URL contains the `workflowUniqueId` and this changes with each version. If the published flow is subsequently opened from the My Flows experience, then the `FlowId` is used in the URL and it doesn't change.  If the published flow is subsequently opened from the Solution Explorer experience, then the `workflowUniqueId` is used in the URL and it does change. We're planning to update the Solution Explorer experience to provide a static URL. In the interim, if you need a static URL reference, then open the flow from the My Flows experience.
+
+## See also
 
 - [Manage and edit a cloud flow](/power-automate/get-started-logic-flow#manage-a-cloud-flow)
 - [Create a solution](./overview-solution-flows.md)
