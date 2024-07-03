@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 06/03/2024
+ms.date: 07/03/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -25,7 +25,7 @@ With cloud flow run history in Dataverse, you can apply the extensibility of [Da
 
 As part of this feature, each cloud flow execution has an entry in the table [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun). This feature is using Dataverse’s nonrelational database, [elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables), to store the cloud flow run history.
 
-Cloud flow run history in Dataverse is used by the [Automation Center](/power-automate/automation-center-overview) to provide comprehensive monitoring and troubleshooting experiences for automation processes across Power Automate.
+Cloud flow run history in Dataverse is used by the [automation center](/power-automate/automation-center-overview) to provide comprehensive monitoring and troubleshooting experiences for automation processes across Power Automate.
 
 > [!IMPORTANT]
 >- This is a preview feature.
@@ -38,7 +38,7 @@ The [**FlowRun**](/power-apps/developer/data-platform/reference/entities/flowrun
 
 |Element  |Description  |
 |---------|---------|
-|Name     |Primary key and the logic app id of the flow run. |
+|Name     |Primary key and the logic app Id of the flow run. |
 |Start time   | When the cloud flow execution was triggered. |
 |End time     | When the cloud execution was finished. |
 |Run duration | Time, in seconds, for the cloud flow to finish the run. |
@@ -51,7 +51,7 @@ The [**FlowRun**](/power-apps/developer/data-platform/reference/entities/flowrun
 |Workflow Id | WorkflowID of the specific cloud flow, |
 |IsPrimary | Binary value to denote whether this flow run has any parent cloud flow triggering it. |
 |Parent Run Id | Name of the parent cloud flow run instance, if this record is for a child flow. |
-|Partition Id | Partition id of this user in the elastic table instance. |
+|Partition Id | Partition Id of this user in the elastic table instance. |
 |Time to live | Time in seconds of when this run record is automatically deleted. |
 
 You can view and update the details through [standard Dataverse APIs](/power-apps/developer/data-platform/webapi/query-data-web-api), the [Dataverse connector](/connectors/commondataserviceforapps/), or directly from the **Tables** view in the maker portal.
@@ -74,14 +74,15 @@ If the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/
 
 Setting the [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) to zero stops all ingestion of new [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records.
 
-### Set FlowRun time to live in PPAC
+### Set FlowRun time to live in Power Platform admin center
 
-The [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds)  can be set in the [Power Platform admin center (PPAC) environments experience](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center).
-To choose the [FlowRun entity](/power-apps/developer/data-platform/reference/entities/flowrun) time to live that will be used in an environment:
-1. Open [PPAC](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center)
-2. Navigate to **Environments**
-3. For the desired environment, open the **Settings** page
-4. Click **Product** > **Features**
+The [FlowRunTimeToLiveInSeconds value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) can be set in the [Power Platform admin center environments experience](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center).
+To choose the [FlowRun entity](/power-apps/developer/data-platform/reference/entities/flowrun) time to live that's used in an environment:
+
+1. Sign in to [Power Platform admin center](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center).
+2. Navigate to **Environments**.
+3. For the desired environment, open the **Settings** page.
+4. Select **Product** > **Features**.
 5. Under **Cloud flow run history in Dataverse**, set the **FlowRun entity time to live** retention value to 28 days (the default), 14 days, 7 days, or Disabled.
 
 ### Set custom TTL values to store a longer or more specific amount of cloud flow run history
@@ -155,14 +156,14 @@ The [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) da
 
 The [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is written into Dataverse as flow runs occur. There isn't a backfill operation to populate historical flow run data.
 
-This [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is used by the [Automation Center in the Power Automate maker portal](/power-automate/automation-center-overview). The data set is often incomplete, but there are still useful insights that can be obtained. Hence, we're making the data available early in a preview capacity.  
+This [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is used by the [automation center in the Power Automate maker portal](/power-automate/automation-center-overview). The data set is often incomplete, but there are still useful insights that can be obtained. Hence, we're making the data available early in a preview capacity.  
 
-The ingestion of flow run history has architectural limitations and performance limitations that require throttling, so the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is often going to have some gaps. Customers told us there's an expectation that the data is complete when we make this capability GA. We want to get to that point before we change from public preview to GA. It's uncertain when this capability changes from a public preview to being generally available (GA). 
+The ingestion of flow run history has architectural limitations and performance limitations that require throttling, so the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is often going to have some gaps. Customers told us there's an expectation that the data is complete when we make this capability generally available (GA). We want to get to that point before we change from public preview to GA. It's uncertain when this capability changes from a public preview to being GA.
 
 #### Troubleshooting
 
-1. Double check that the storage of cloud flow run history has been turned on for the environment by looking at the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) time to live setting in PPAC.
-2. Open the [Automation Center](/power-automate/automation-center-overview) to see any [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) information related to [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data ingestion.
+1. Double check that the storage of cloud flow run history is turned on for the environment by looking at the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) time to live setting in Power Platform admin center.
+2. Open the [automation center](/power-automate/automation-center-overview) to see any [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) information related to [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data ingestion.
 
 ### Does writing cloud flow run history into Dataverse use Power Platform request quota?
 
