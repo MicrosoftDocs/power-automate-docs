@@ -31,7 +31,9 @@ The desktop flows Copilot can perform the following actions:
 
 ### Availability by region
 
-Currently, Copilot in Power Automate for desktop is only available in environments located in the United States.
+Copilot in Power Automate for desktop offers different capabilities which are available in environments located in the following countries:
+- Creating flows using Copilot: United States.
+- Generative answers: Australia, India, United Kingdom, and United States.
 
 ### Availability by account type
 
