@@ -417,8 +417,6 @@
         href: ./desktop-flows/hosted-machine-groups.md
       - name: Frequently asked questions
         href: ./desktop-flows/hosted-rpa-faq.md
-    - name: Scale with AVD starter kit (deprecated)
-      href: ./desktop-flows/avd-overview.md
   - name: Use credentials in desktop flow connections (preview)
     href: ./desktop-flows/manage-credentials.md
   - name: Manage desktop flows
