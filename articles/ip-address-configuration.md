@@ -3,13 +3,14 @@ title: IP address configuration
 description: Learn about IP address configuration, the services that Power Automate connect to, various endpoints, and more.
 author: masisley
 contributors:
+  - GiovanniBenitez
   - DBEKI
   - nnyarbro
   - v-aangie
   - jpapadimitriou
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 05/22/2024
+ms.date: 07/03/2024
 ms.author: nyarbrough
 ms.reviewer: angieandrews
 ---
@@ -43,7 +44,8 @@ The following table lists the services to which Power Automate connects. Ensure 
 | --------|  ---------| ---- |
 | login.microsoft.com<br />login.windows.net<br />login.microsoftonline.com<br />login.live.com<br />secure.aadcdn.microsoftonline-p.com | https | Access to authentication and authorization endpoints. |
 | graph.microsoft.com | https | Access to Microsoft graph - for getting user information such as a profile photo. |
-| *.azure-apim.net | https | Access to the Runtime for Connectors. |
+| *.azure-apim.net | https | Access to the Runtime for connectors. |
+| *.azure-apihub.net | https | Access to the Runtime for connectors. |
 | *.flow.microsoft.com <br> *.logic.azure.com | https | Access to the Power Automate site. |
 | *.powerautomate.com | https | Access to Power Automate site. |
 | *.powerapps.com | https | Access to the Power Apps site. |
