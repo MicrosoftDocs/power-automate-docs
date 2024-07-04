@@ -10,7 +10,7 @@ ms.reviewer:
 contributors:
 ---
 
-# Hosted machine group
+# Frequently asked questions
 
 Hosted machine group allows you to run unattended automation at scale without providing or setting up any machines. You can create hosted machine groups like any other machine group, and Power Automate will automatically provision the machines based on the specified configuration.
 
