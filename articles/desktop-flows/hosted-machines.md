@@ -339,9 +339,18 @@ The virtual network needs to be created in the same location with your hosted ma
 
 To use your virtual network for hosted machines, you'll need to grant Windows 365 service principal with the following permissions:
 
-- Reader permission on the Azure subscription.
-- Network contributor permission on the specified resource group.
-- Network contributor permission on the virtual network.
+- Reader permission on the Azure subscription
+- Windows 365 Network Interface Contributor permission on the specified resource group
+- Windows 365 Network User permission on the virtual network
+
+> [!NOTE]
+> For virtual network created before November 26, 2023, the Network Contributor role is used to apply permissions on both the Resource Group and Virtual Network. The new RBAC roles have more specific permissions. To manually remove the existing roles and add the new roles, refer to the following table for the existing roles used on each Azure resource. Before removing the existing roles make sure that the updated roles are assigned.
+> | Azure resource | Existing role (before November 26, 2023) | Updated role (after November 26, 2023) |
+> | --- | --- | --- |
+> | Resource group | Network Contributor | Windows 365 Network Interface Contributor |
+> | Virtual network | Network Contributor | Windows 365 Network User |
+> | Subscription | Reader | Reader |
+
 
 ### Share the virtual network with Power Automate makers
 
