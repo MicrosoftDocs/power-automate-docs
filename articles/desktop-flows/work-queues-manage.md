@@ -2,7 +2,7 @@
 title: Manage work queues
 description: Manage work queues in Power Automate.
 ms.topic: conceptual
-ms.date: 04/28/2023
+ms.date: 07/08/2024
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -108,7 +108,7 @@ To create a new work queue item through the Power Automate portal:
 7. (Optional) Select a different **priority** for the work queue item if you wish to influence processing priority.
 8. (Optional) Enter a **unique Id or reference** if you wish to provide a custom unique value within this queue. If left empty, a unique value in the format of `system-<GUID>` will be automatically provided by the system |
 9. (Optional) Activate this section and select a custom **expiration date** value for the work queue item.
-10. Enter the actual alphanumeric value of the work queue item.
+10. Enter the actual alphanumeric **input** value of the work queue item.
 11. (Optional) Enter any processing notes relevant to this work queue item.
 
 Looking for more ways to create work queue data?

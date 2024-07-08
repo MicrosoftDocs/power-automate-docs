@@ -2,7 +2,7 @@
 title: Work queues actions
 description: Use work queue actions in Power Automate desktop flows.
 ms.topic: conceptual
-ms.date: 08/23/2023
+ms.date: 07/08/2024
 ms.author: dbekirop
 ms.reviewer: 
 contributors:
@@ -35,7 +35,7 @@ The **work queue** referenced in the above action is used by the queue orchestra
 
 The **Process work queue item action** action requires the following arguments.
 
-#### Input Parameters 
+#### Input Parameters
 
   | Argument       | Optional | Accepts | Default Value | Description     |
   |-----|-----|-----|---------------|-----------------|
@@ -148,7 +148,7 @@ The **Update work queue item processing notes** action allows users to update or
 
 :::image type="content" source="media\workqueues\UpdateWorkQueueItemProcessingNotes.png" alt-text="Screenshot of the Update Work Queue Item Processing Notes action." lightbox="media\workqueues\UpdateWorkQueueItemProcessingNotes.png":::
 
-### updateworkqueueitemprocessingnotesaction
+### updateprocessingnotesaction
 
 The **Update work queue item processing notes action** action requires the following arguments.
 
