@@ -33,7 +33,7 @@ To create a work queue:
 3. Select **Work queue** and then select **+ New work queue**.
 4. In the **New work queue** side-panel, enter a **work queue name** for the queue.
 5. (Optional) Enter a **description** for the work queue.
-6. (Optional) Enter a **work queue key** for the work queue. When provided, the value must be unique within this queue. If left empty, a unique value will be automatically provided by the system.
+6. (Optional) Enter a **work queue key** for the work queue. When provided, the value must be unique within this queue. If left empty, a unique value is automatically provided by the system.
 7. (Optional) Activate this section and select a default lifespan value for work queue items in the **Items expire after** fields.
    > [!NOTE]
    > If you set an *Items expire after* value for a work queue, any item added without an explicit expiration date will expire after the entered *Items expire value* has elapsed. So if you set the *Items expire after* to 30 minutes, an item added at 2:00 PM will expire at 2:30 PM.
@@ -52,7 +52,7 @@ To edit a work queue:
 4. In the work queue list, select the work queue you would like to edit.
 5. Select **Edit work queue** on the toolbar and update the values in the update pane.
 6. (Optional) Enter a **description** for the work queue.
-7. (Optional) Enter a **work queue key** for the work queue. When provided, the value must be unique within this queue. If left empty, a unique value will be automatically provided by the system.
+7. (Optional) Enter a **work queue key** for the work queue. When provided, the value must be unique within this queue. If left empty, a unique value is automatically provided by the system.
 8. (Optional) Activate this section and select a default lifespan value for work queue items in the **Items expire after** fields.
 9. Select **Save**.
 
@@ -104,7 +104,7 @@ To create a new work queue item through the Power Automate portal:
    > [!NOTE]
    > If you don't provide a value for the work queue item name, the internal work queue id is displayed instead in the work queue item list pages.
 
-6. (Optional) Set the **status** to `On-hold` if you wish the create items that require review or other preprocessing work before they can be queued.
+6. (Optional) Set the **status** to `On-hold` if the created item requires review or other preprocessing work before they can be queued.
 7. (Optional) Select a different **priority** for the work queue item if you wish to influence processing priority.
 8. (Optional) Enter a **unique Id or reference** if you wish to provide a custom unique value within this queue. If left empty, a unique value in the format of `system-<GUID>` will be automatically provided by the system |
 9. (Optional) Activate this section and select a custom **expiration date** value for the work queue item.

@@ -77,7 +77,7 @@ The **Update work queue item action** action requires the following arguments.
 |----------------|----------|
 | **Work queue item not found** | The work queue item being processed has either been deleted or  no longer belongs to the queue that it was called from.
 | **Work queue item on hold** | The work queue item being processed contains a status of `on hold` in the queue orchestrator and can no longer be updated.
-| **Failed to update work queue item** | The work queue item being updated has encountered an unexpected error, check the error message for more details.
+| **Failed to update work queue item** | The work queue item being updated has encountered an unexpected error. Check the error message for more details.
 
 ## Add work queue item
 
@@ -96,7 +96,7 @@ The **Add work queue item** action requires the following arguments.
   | **Work queue** |No    |Text value |               |The work queue item to add the item into|
 | **Priority** |No    |High, Normal, Low| Normal |The priority to set the work queue item to|
 | **Name** | No | Text value, Numeric value| | Custom name or ID for the new work queue item|
-| **Input** | No | Text value, Numeric value| | The data which belongs to the value column to be processed|
+| **Input** | No | Text value, Numeric value| | The data, which belongs to the value column to be processed|
 | **Expires** | Yes | Datetime| | The datetime value set to expire the queue item, otherwise adopts the default value if one is set for the queue|
 | **Processing notes** | Yes | Text value, Numeric value| | Custom processing notes to be added to the new queue item|
 | **Has unique id or reference** | Yes | Text value, Numeric value| | When enabled, a value should be provided that is unique within this queue. If left empty, a unique value in the format of `system-<GUID>` will be automatically provided by the system |
@@ -116,7 +116,7 @@ The **Add work queue item** action requires the following arguments.
 
 ## Requeue item with delay
 
-The **Requeue item with delay** action allows users to to re-add a queue item being processed in the desktop flow, back into it's originating queue.  In addition, the queued item can be held and released until a defined time.
+The **Requeue item with delay** action allows users to readd a queue item being processed in the desktop flow, back into its originating queue.  In addition, the queued item can be held and released until a defined time.
 
 :::image type="content" source="media\workqueues\RequeueWorkQueueItemWithDelay.png" alt-text="Screenshot of the requeue work queue item action." lightbox="media\workqueues\RequeueWorkQueueItemWithDelay.png":::
 
