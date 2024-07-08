@@ -135,6 +135,20 @@ The following screenshot shows an example of the code for the **Compose** action
 
 :::image type="content" source="media/flows-designer/compose.png" alt-text="Screenshot of the code view of the Compose action card.":::
 
+### Copy Paste actions
+
+In the new designer, you can right click on any action (or trigger) whether those are atomic actions like Compose, Get items, Create item, etc. or container actions like Scope, Switch, Condition, Apply to each, etc. and copy the action to clipboard. 
+
+<img width="389" alt="image" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/c0d9a58a-2627-49fa-9785-4e98c1179912">
+
+Next, you can click '+' on canvas to add action, and click 'Paste copied action' to copy/paste actions across different parts of your flow, or in between flows too. 
+
+<img width="364" alt="image" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/f858fdb5-bba8-4fe2-b325-280ed8e8f806">
+
+<img width="322" alt="image" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/f9c9fe0a-0449-40c5-b8dd-7146bd152987">
+
+
+
 ## Canvas
 
 For easy navigation, you can drag your flow on the canvas. You configure the actions of each card in the action configuration pane on the left. The cards on the canvas are compact to allow for easy visibility and navigation, especially in large flows.
@@ -201,7 +215,7 @@ You might notice that some functionalities that were in the classic designer are
 ## Some known issues
 
 - Dynamic content friendly names are getting updated to internal code names upon save.
-- Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', and others.
+- Autoamted trigger polling setting (How often do you want to check for new items) reverts to 1min after saving
 
 As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is gradually becoming the primary interface.
 
