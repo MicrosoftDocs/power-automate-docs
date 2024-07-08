@@ -1,6 +1,6 @@
 ---
 title: Rebind reports without using a composite model
-description: Learn how to migrate your process mining entities with Power Platform solutions.
+description: Learn how to rebind reports without using a composite model with different workspaces or the same workspace.
 author: donums
 contributors:
   - donums
