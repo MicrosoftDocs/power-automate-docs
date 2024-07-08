@@ -68,7 +68,8 @@ The **Update work queue item action** action requires the following arguments.
   |----------      |----------|---------|---------------|-----------------|
   | **Work queue item** |No    |Text |               |Work queue item variable that has been previously returned by the queue orchestrator|
 | **Status** |No    |Processed, Generic Exception| Processed |Update the work queue item being processed using a status from the list of options.|
-| **Processing result** | Yes | Text| | Custom processing result or value to set append  to the queue item being processed |
+| **Processing notes** | Yes | Text| | Custom processing notes or value to set append  to the queue item being processed |
+| **Clear processing notes** | Yes | Boolean| False | When enabled, it hides and clears the processing notes field on this screen and removes any processing notes from the database that have been previously captured for this item |
 
 #### Exceptions
 
@@ -98,6 +99,7 @@ The **Add work queue item** action requires the following arguments.
 | **Input** | No | Text value, Numeric value| | The data which belongs to the value column to be processed|
 | **Expires** | Yes | Datetime| | The datetime value set to expire the queue item, otherwise adopts the default value if one is set for the queue|
 | **Processing notes** | Yes | Text value, Numeric value| | Custom processing notes to be added to the new queue item|
+| **Has unique id or reference** | Yes | Text value, Numeric value| | When enabled, a value should be provided that is unique within this queue. If left empty, a unique value in the format of `system-<GUID>` will be automatically provided by the system |
 
 #### Variables produced
 
@@ -129,7 +131,8 @@ The **Requeue item with delay** action requires the following arguments.
   | **Work queue item** |No    |Work queue item |               |The work queue item to add the item into|
 | **Delay until** |No    |Datetime value| Normal |The datetime value applied to delay the queue item until|
 | **Expires** | Yes | Datetime value| | Custom expiration time for the item being requeued|
-| **Processing result** | Yes | Text value, Numeric value| | Custom processing result to be added to the new queue item|
+| **Processing notes** | Yes | Text value, Numeric value| | Custom processing notes to be added to the new queue item|
+| **Clear processing notes** | Yes | Boolean| False | When enabled, it hides and clears the processing notes field on this screen and removes any processing notes from the database that have been previously captured for this item |
 
 #### Exceptions
 
@@ -138,6 +141,30 @@ The **Requeue item with delay** action requires the following arguments.
 | **Work queue not found** | The value entered into the work queue parameter is invalid|
 | **Work queue item not found** | The queue item value is invalid|
 | **Failed to requeue work queue item** | The work queue item couldn't be added into the work queue.  Bad request - error in query syntax |
+
+## Update work queue item processing notes
+
+The **Update work queue item processing notes** action allows users to update or clear processing notes of the selected work queue item without changing its state or any other property.
+
+:::image type="content" source="media\workqueues\UpdateWorkQueueItemProcessingNotes.png" alt-text="Screenshot of the Update Work Queue Item Processing Notes action." lightbox="media\workqueues\UpdateWorkQueueItemProcessingNotes.png":::
+
+### updateworkqueueitemprocessingnotesaction
+
+The **Update work queue item processing notes action** action requires the following arguments.
+
+| Argument       | Optional | Accepts | Default Value | Description     |
+  |----------      |----------|---------|---------------|-----------------|
+  | **Work queue item** |No    |Text | |Work queue item variable that has been previously returned by the queue orchestrator|
+| **Processing notes** | Yes | Text| | Custom processing result or value to set append  to the queue item being processed |
+| **Clear processing notes** | Yes | Boolean| False | When enabled, it hides and clears the processing notes field on this screen and removes any processing notes from the database that have been previously captured for this item |
+
+#### Exceptions
+
+| Argument       | Description |
+|----------------|----------|
+| **Work queue not found** | The work queue associated with the item has either been deleted or is no longer accessible |
+| **Work queue item not found** | The work queue item is invalid|
+| **Failed to append the processing results** | The work queue item being updated has encountered an unexpected error, check the error message for more details |
 
 ### See also
 
