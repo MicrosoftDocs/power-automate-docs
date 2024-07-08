@@ -840,6 +840,12 @@
         href: process-mining-alm-overview.md
       - name: Migrate entities with Power Platform solutions
         href: process-mining-alm-entities-solutions.md
+      - name: Migrate customized Process Mining Power BI reports
+        items:
+        - name: Overview
+          href: process-mining-pbi-reports-overview.md
+        - name: Rebind reports without using a composite model
+          href: process-mining-alm-rebind-without-comp.md
     - name: Improve cloud flows with process insights (preview)
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
