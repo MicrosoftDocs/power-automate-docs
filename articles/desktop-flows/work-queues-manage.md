@@ -31,15 +31,15 @@ To create a work queue:
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
 2. On the left menu, select the **Monitor** section.
 3. Select **Work queue** and then select **+ New work queue**.
-4. In the **New work queue** side-panel, enter a **work queue name** for the queue.
+4. In the **New work queue** side panel, enter a **work queue name** for the queue.
 5. (Optional) Enter a **description** for the work queue.
 6. (Optional) Enter a **work queue key** for the work queue. When provided, the value must be unique within this queue. If left empty, a unique value is automatically provided by the system.
 7. (Optional) Activate this section and select a default lifespan value for work queue items in the **Items expire after** fields.
    > [!NOTE]
    > If you set an *Items expire after* value for a work queue, any item added without an explicit expiration date will expire after the entered *Items expire value* has elapsed. So if you set the *Items expire after* to 30 minutes, an item added at 2:00 PM will expire at 2:30 PM.
-8. (Optional) Select either JSON or XSD as schema type for work queue item input validation to ensure that input data conforms to the defined schema. Next, select **Add schema** to enter or paste the desired schema.
+8. (Optional) Select either JSON or XSD as the schema type for work queue item input validation to ensure that input data conforms to the defined schema. Next, select **Add schema** to enter or paste the desired schema.
    > [!NOTE]
-   > - Once a schema is added to a work queue, it cannot be changed to avoid data inconsistencies and processing failures.
+   > - Once a schema is added to a work queue, it can't be changed to avoid data inconsistencies and processing failures.
    > - Currently supported JSON schema version is draft 3.
 
 ## Edit a work queue
@@ -48,12 +48,12 @@ To edit a work queue:
 
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
 2. On the left menu, select the **Monitor** section.
-3. Select **Work queue**.
+3. Select **Work queues**.
 4. In the work queue list, select the work queue you would like to edit.
 5. Select **Edit work queue** on the toolbar and update the values in the update pane.
-6. (Optional) Enter a **description** for the work queue.
-7. (Optional) Enter a **work queue key** for the work queue. When provided, the value must be unique within this queue. If left empty, a unique value is automatically provided by the system.
-8. (Optional) Activate this section and select a default lifespan value for work queue items in the **Items expire after** fields.
+6. (Optional) Enter a **Description** for the work queue.
+7. (Optional) Enter a **Work queue key** for the work queue. When provided, the value must be unique within this queue. If left empty, a unique value is automatically provided by the system.
+8. (Optional) Activate **Set default item expiration** and select a default lifespan value for work queue items in the **Items expire after** fields.
 9. Select **Save**.
 
 ## Share a work queue
@@ -100,16 +100,16 @@ To create a new work queue item through the Power Automate portal:
 2. On the left menu, select the **Monitor** section.
 3. Select the work queue you would like to create items for and then select **See details**.
 4. Select **+ New work queue item** on the toolbar.
-5. In the **New work queue item** side-panel, enter a **Name** for the work queue item.
+5. In the **New work queue item** side panel, enter a **Name** for the work queue item.
    > [!NOTE]
-   > If you don't provide a value for the work queue item name, the internal work queue id is displayed instead in the work queue item list pages.
+   > If you don't provide a value for the work queue item name, the internal work queue ID is displayed instead in the work queue item list pages.
 
-6. (Optional) Set the **status** to `On-hold` if the created item requires review or other preprocessing work before they can be queued.
-7. (Optional) Select a different **priority** for the work queue item if you wish to influence processing priority.
-8. (Optional) Enter a **unique Id or reference** if you wish to provide a custom unique value within this queue. If left empty, a unique value in the format of `system-<GUID>` will be automatically provided by the system |
-9. (Optional) Activate this section and select a custom **expiration date** value for the work queue item.
-10. Enter the actual alphanumeric **input** value of the work queue item.
-11. (Optional) Enter any processing notes relevant to this work queue item.
+6. (Optional) Set the **Status** to **On hold** if the created item requires review or other preprocessing work before they can be queued.
+7. (Optional) Select a different **Priority** for the work queue item if you wish to influence processing priority.
+8. (Optional) Enter a **Unique Id or reference** if you wish to provide a custom unique value within this queue. If left empty, a unique value in the format of `system-<GUID>` is automatically provided. |
+9. (Optional) Activate the **Expiration date** section and select a custom **Expiration date** value for the work queue item.
+10. Enter the actual alphanumeric **Input** value of the work queue item.
+11. (Optional) Enter **Processing notes** relevant to this work queue item.
 
 Looking for more ways to create work queue data?
 
@@ -138,7 +138,7 @@ Status transitions rules have been established in order to optimize the lifecycl
 | **Queued**      | This is the default state when items enter the work queue, and the only state under which work queue item dequeuing is allowed. | Processing          |
 | **Processing**  | Indicating that the item is currently being processed.                                       | Processed, Exception|
 | **Processed**   | Indicating that the item is currently processing.                                             | Queued, On hold     |
-| **Exception**   | An exception has been raised during work item processing. Depending on your exception scenarios, you have the option to choose between **Generic**, **IT** and **Business** **exceptions**.                                 | Queued, On hold     |
+| **Exception**   | An exception has been raised during work item processing. Depending on your exception scenarios, you have the option to choose between **Generic**, **IT, and **Business** **exceptions**.                                 | Queued, On hold     |
 | **On hold**    | A business or IT user has picked an item to review, assess, and potentially remediate issues.     | Queued              |
 
 ## Next steps
