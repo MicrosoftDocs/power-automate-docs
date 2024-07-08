@@ -2,7 +2,7 @@
 title: Work queues actions
 description: Use work queue actions in Power Automate desktop flows.
 ms.topic: conceptual
-ms.date: 08/23/2023
+ms.date: 07/08/2024
 ms.author: dbekirop
 ms.reviewer: 
 contributors:
@@ -13,7 +13,7 @@ author: DBEKI
 ---
 # Work queues actions
 
-[Work Queues](../work-queues.md) in Power Automate can be used to store process-relevant data and provide a way to decouple complex processes and automations, allowing them to communicate asynchronously. 
+[Work Queues](../work-queues.md) in Power Automate can be used to store process-relevant data and provide a way to decouple complex processes and automations, allowing them to communicate asynchronously.
 
 Work queues can play a crucial role in improving the efficiency, scalability, and resiliency of automations and help prioritize work. Work queues allow you to complete highest-priority items first, regardless of whether they're processed by digital workers, human workers, or through integrations.
 
@@ -29,13 +29,13 @@ The **Process work queue items** action indicates to the queue orchestrator that
 
 :::image type="content" source="media\workqueues\ProcessWorkQueueItems.png" alt-text="Screenshot of the Process Work Queue Item action." lightbox="media\workqueues\ProcessWorkQueueItems.png":::
 
-The **work queue** referenced in the above action is used by the queue orchestrator to determine the next available items in that work queue that are in **Queued** state. As the desktop flow steps through the actions within the Process work queue items loop that this action renders, you can call on the value by utilizing the variable you have designated for the action along with the property `.Value`.  In this case, you could call the value of the work queue item using the variable %WorkQueueItem.Value% 
+The **work queue** referenced in the previous action is used by the queue orchestrator to determine the next available items in that work queue that are in **Queued** state. As the desktop flow steps through the actions within the Process work queue items loop that this action renders, you can call on the value by utilizing the variable you have designated for the action along with the property `.Value`.  In this case, you could call the value of the work queue item using the variable %WorkQueueItem.Value% 
 
-### processworkqueueitemaction
+### `Processworkqueueitemaction`
 
 The **Process work queue item action** action requires the following arguments.
 
-#### Input Parameters 
+#### Input Parameters
 
   | Argument       | Optional | Accepts | Default Value | Description     |
   |-----|-----|-----|---------------|-----------------|
@@ -60,7 +60,7 @@ The **Update work queue item** action allows users to change the status and proc
 
 :::image type="content" source="media\workqueues\UpdateWorkQueueItem.png" alt-text="Screenshot of the Update Work Queue Item action." lightbox="media\workqueues\UpdateWorkQueueItem.png":::
 
-### updateworkqueueitemaction
+### `Updateworkqueueitemaction`
 
 The **Update work queue item action** action requires the following arguments.
 
@@ -68,7 +68,8 @@ The **Update work queue item action** action requires the following arguments.
   |----------      |----------|---------|---------------|-----------------|
   | **Work queue item** |No    |Text |               |Work queue item variable that has been previously returned by the queue orchestrator|
 | **Status** |No    |Processed, Generic Exception| Processed |Update the work queue item being processed using a status from the list of options.|
-| **Processing result** | Yes | Text| | Custom processing result or value to set append  to the queue item being processed |
+| **Processing notes** | Yes | Text| | Custom processing notes or value to append to the queue item being processed. |
+| **Clear processing notes** | Yes | Boolean| False | When enabled, hides and clears the processing notes field on this screen and removes any processing notes from the database that have been previously captured for this item. |
 
 #### Exceptions
 
@@ -76,7 +77,7 @@ The **Update work queue item action** action requires the following arguments.
 |----------------|----------|
 | **Work queue item not found** | The work queue item being processed has either been deleted or  no longer belongs to the queue that it was called from.
 | **Work queue item on hold** | The work queue item being processed contains a status of `on hold` in the queue orchestrator and can no longer be updated.
-| **Failed to update work queue item** | The work queue item being updated has encountered an unexpected error, check the error message for more details.
+| **Failed to update work queue item** | The work queue item being updated has encountered an unexpected error. Check the error message for more details.
 
 ## Add work queue item
 
@@ -84,7 +85,7 @@ The **Add work queue item** action allows users to populate work queue items int
 
 :::image type="content" source="media\workqueues\AddWorkQueueItem.png" alt-text="Screenshot of the add work queue item action." lightbox="media\workqueues\AddWorkQueueItem.png":::
 
-### addworkqueueitem action
+### `Addworkqueueitem` action
 
 The **Add work queue item** action requires the following arguments.
 
@@ -95,9 +96,10 @@ The **Add work queue item** action requires the following arguments.
   | **Work queue** |No    |Text value |               |The work queue item to add the item into|
 | **Priority** |No    |High, Normal, Low| Normal |The priority to set the work queue item to|
 | **Name** | No | Text value, Numeric value| | Custom name or ID for the new work queue item|
-| **Input** | No | Text value, Numeric value| | The data which belongs to the value column to be processed|
+| **Input** | No | Text value, Numeric value| | The data, which belongs to the value column to be processed|
 | **Expires** | Yes | Datetime| | The datetime value set to expire the queue item, otherwise adopts the default value if one is set for the queue|
 | **Processing notes** | Yes | Text value, Numeric value| | Custom processing notes to be added to the new queue item|
+| **Has unique id or reference** | Yes | Text value, Numeric value| | When enabled, a value should be provided that is unique within this queue. If left empty, a unique value in the format of `system-<GUID>` is automatically provided by the system |
 
 #### Variables produced
 
@@ -110,15 +112,15 @@ The **Add work queue item** action requires the following arguments.
 | Argument       | Description |
 |----------------|----------|
 | **Work queue not found** | The value entered into the work queue parameter is invalid|
-| **Failed to add item into work queue** | The work queue item couldn't be added into the work queue.  Bad request - error in query syntax |
+| **Failed to add item into work queue** | The work queue item couldn't be added into the work queue. Bad request - error in query syntax |
 
 ## Requeue item with delay
 
-The **Requeue item with delay** action allows users to to re-add a queue item being processed in the desktop flow, back into it's originating queue.  In addition, the queued item can be held and released until a defined time.
+The **Requeue item with delay** action allows users to readd a queue item being processed in the desktop flow, back into its originating queue. In addition, the queued item can be held and released until a defined time.
 
 :::image type="content" source="media\workqueues\RequeueWorkQueueItemWithDelay.png" alt-text="Screenshot of the requeue work queue item action." lightbox="media\workqueues\RequeueWorkQueueItemWithDelay.png":::
 
-### requeueworkqueueitemaction
+### `Requeueworkqueueitemaction`
 
 The **Requeue item with delay** action requires the following arguments.
 
@@ -129,7 +131,8 @@ The **Requeue item with delay** action requires the following arguments.
   | **Work queue item** |No    |Work queue item |               |The work queue item to add the item into|
 | **Delay until** |No    |Datetime value| Normal |The datetime value applied to delay the queue item until|
 | **Expires** | Yes | Datetime value| | Custom expiration time for the item being requeued|
-| **Processing result** | Yes | Text value, Numeric value| | Custom processing result to be added to the new queue item|
+| **Processing notes** | Yes | Text value, Numeric value| | Custom processing notes to be added to the new queue item|
+| **Clear processing notes** | Yes | Boolean| False | When enabled, hides and clears the processing notes field on this screen and removes any processing notes from the database that have been previously captured for this item |
 
 #### Exceptions
 
@@ -137,7 +140,31 @@ The **Requeue item with delay** action requires the following arguments.
 |----------------|----------|
 | **Work queue not found** | The value entered into the work queue parameter is invalid|
 | **Work queue item not found** | The queue item value is invalid|
-| **Failed to requeue work queue item** | The work queue item couldn't be added into the work queue.  Bad request - error in query syntax |
+| **Failed to requeue work queue item** | The work queue item couldn't be added into the work queue. Bad request - error in query syntax |
+
+## Update work queue item processing notes
+
+The **Update work queue item processing notes** action allows users to update or clear processing notes of the selected work queue item without changing its state or any other property.
+
+:::image type="content" source="media\workqueues\UpdateWorkQueueItemProcessingNotes.png" alt-text="Screenshot of the Update Work Queue Item Processing Notes action." lightbox="media\workqueues\UpdateWorkQueueItemProcessingNotes.png":::
+
+### `updateprocessingnotesaction`
+
+The **Update work queue item processing notes action** action requires the following arguments.
+
+| Argument       | Optional | Accepts | Default Value | Description     |
+  |----------      |----------|---------|---------------|-----------------|
+  | **Work queue item** |No    |Text | |Work queue item variable that's been previously returned by the queue orchestrator|
+| **Processing notes** | Yes | Text| | Custom processing result or value to append to the queue item processed |
+| **Clear processing notes** | Yes | Boolean| False | When enabled, hides and clears the processing notes field on this screen and removes any processing notes from the database that were previously captured for this item |
+
+#### Exceptions
+
+| Argument       | Description |
+|----------------|----------|
+| **Work queue not found** | The work queue associated with the item has either been deleted or is no longer accessible |
+| **Work queue item not found** | The work queue item is invalid|
+| **Failed to append the processing results** | The work queue item being updated has encountered an unexpected error. Check the error message for more details. |
 
 ### See also
 
