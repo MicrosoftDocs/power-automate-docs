@@ -8,7 +8,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 07/08/2024
+ms.date: 07/09/2024
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -155,6 +155,8 @@ To copy and paste an action, follow these steps.
 
     :::image type="content" source="media/flows-designer/copy-paste-final.png" alt-text="Screenshot of an action that was copied and pasted, ending with a hyphen and the word 'copy'.":::
 
+If you don't have access to a mouse, you can use your keyboard. To copy, press **Ctrl** + **C**. To paste, press **Ctrl** + **V**.
+
 ## Canvas
 
 For easy navigation, you can drag your flow on the canvas. You configure the actions of each card in the action configuration pane on the left. The cards on the canvas are compact to allow for easy visibility and navigation, especially in large flows.
@@ -257,7 +259,7 @@ Power Automate designer requires a flow action to be re-added in order to pick u
 
 Yes, once the issues noted here are resolved and the new cloud flows designer can cover most, if not all, of the classic designer scenarios. At this time, the classic designer will be fully replaced.
 
-### See also
+## Related information
 
 [Get started with Copilot in cloud flows](get-started-with-copilot.md)
 
