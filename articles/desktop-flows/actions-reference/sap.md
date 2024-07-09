@@ -73,6 +73,28 @@ For multiple logon options:
 |-----|-----|
 |SAP GUI login action fails|Indicates a problem logging in to an SAP GUI system.|
 
+## <a name="attachtorunning"></a> Attach
+Attach the running SAP GUI application to a SAP instance
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Attach mode|No|Foreground or last activated, Window title|Window title|Specify how to connect to the SAP GUI server.|
+
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|`SAPInstance`|SAP instance|The SAP instance to use with SAP automation actions. The SAP instance refers to the specific SAP window.|
+
+### <a name="attachtorunning_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Attach to SAP error|Indicates a problem attaching to a SAP instance.|
+
 ## <a name="createnewsession"></a> Create new SAP session
 
 Creates a new SAP session based on the same SAP instance.
