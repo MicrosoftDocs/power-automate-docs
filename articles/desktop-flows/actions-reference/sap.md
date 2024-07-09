@@ -74,15 +74,15 @@ For multiple logon options:
 |SAP GUI login action fails|Indicates a problem logging in to an SAP GUI system.|
 
 ## <a name="attachtorunning"></a> Attach
-Attach the running SAP GUI application to a SAP instance
+
+Attach the running SAP GUI application to an SAP instance.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Attach mode|No|Foreground or last activated, Window title|Window title|Specifies the mode for attaching the SAP instance to a window. In case Foreground or last activated option is selected, then the SAP instance will be attached to the SAP session in the foreground. If there is no SAP session in the foreground, it will attach to the last SAP session that was launched and has not been closed yet.|
-|Window title|Yes|Text||Specifies the title of the SAP window to which the instance will be attached. This can be selected from the drop-down list of existing SAP sessions or entered manually.|
-
+|Attach mode|No|Foreground or last activated, Window title|Window title|Specifies the mode for attaching the SAP instance to a window. If Foreground or last activated option is selected, the SAP instance is attached to the SAP session in the foreground. If there's no SAP session in the foreground, it attaches to the last SAP session that was launched and isn't closed yet.|
+|Window title|Yes|Text||Specifies the title of the SAP window to which the instance is attached. The window title can be selected from the drop-down list of existing SAP sessions or entered manually.|
 
 ### Variables produced
 
@@ -94,7 +94,7 @@ Attach the running SAP GUI application to a SAP instance
 
 |Exception|Description|
 |-----|-----|
-|Attach to SAP error|Indicates a problem attaching to a SAP instance.|
+|Attach to SAP error|Indicates a problem attaching to an SAP instance.|
 
 ## <a name="createnewsession"></a> Create new SAP session
 
@@ -219,7 +219,6 @@ Interacts through click action on any UI element of an SAP window.
 |SAP label operation|Yes|Expand, Collapse, Choose|Expand|Specify whether to expand or collapse the SAP label.|
 |Drop-down option value|Yes|[Text value](../variable-data-types.md#text-value)||Specify the drop-down option is selected.|
 
-
 ### Variables produced
 
 This action doesn't produce any variables.
@@ -228,7 +227,7 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Click Sap GUI Element error|Indicates that the click failed| 
+|Click Sap GUI Element error|Indicates that the click failed.|
 
 ## <a name="getsapelementdetail"></a> Get details of SAP UI element
 
@@ -252,11 +251,11 @@ Gets the value of an SAP UI element's attribute in an SAP window.
 
 |Exception|Description|
 |-----|-----|
-|Get SAP element detail error|Indicates a problem retrieving the UI element's attribute|
+|Get SAP element detail error|Indicates a problem retrieving the UI element's attribute.|
 
 ## <a name="populatetextfield"></a> Populate SAP text field in element
 
-Fills a text box in a SAP window with the specified text.
+Fills a text box in an SAP window with the specified text.
 
 ### Input parameters
 
@@ -275,6 +274,6 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Populate Sap Text Field Value error|Indicates a problem populating the specified SAP text field|
+|Populate Sap Text Field Value error|Indicates a problem populating the specified SAP text field.|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
