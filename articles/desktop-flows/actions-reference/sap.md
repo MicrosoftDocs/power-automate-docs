@@ -4,7 +4,7 @@ description: Learn about the available SAP GUI actions in Power Automate for des
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 04/26/2024
+ms.date: 07/09/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -231,9 +231,9 @@ Gets the value of an SAP UI element's attribute in an SAP window.
 |-----|-----|
 |Get SAP element detail error|Indicates a problem retrieving the UI element's attribute|
 
-## <a name="populatetextfield"></a> Populate text field in window
+## <a name="populatetextfield"></a> Populate SAP text field in element
 
-Fills a text box in a window with the specified text.
+Fills a text box in a SAP window with the specified text.
 
 ### Input parameters
 
@@ -252,6 +252,6 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Populate Sap Text Field Value error|Indicates a problem populating the specified text field|
+|Populate Sap Text Field Value error|Indicates a problem populating the specified SAP text field|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
