@@ -18,7 +18,7 @@ search.audienceType:
 
 # Use passwords
 
-Certain actions within desktop workflows require the use of passwords. For example, the configuration of the [Launch Excel](../actions-reference/excel.md#launch-excel) action is essential for accessing an Excel file secured by a password.
+Certain actions within desktop workflows require the use of passwords. For example, the configuration of the [Launch Excel](../actions-reference/excel.md#-launch-excel) action is essential for accessing an Excel file secured by a password.
 
 :::image type="content" source="media/using-passwords/launch-password-protected-excel-file.png" alt-text="Screenshot of the Launch Excel action configured to open a password protected file" border="false":::
 
@@ -36,7 +36,7 @@ Flows set up with direct password input in specific fields don't display as inva
 To allow the use of such flows from other machines, you can use the **Password input as variable** option.
 
 > [!IMPORTANT]
-> Marking variables as sensitive does not secure hardcoded information. Avoid embedding sensitive details such as passwords and PINs directly into action properties like Set variable, even if you classify these variables as sensitive. While desktop flow logs safeguard this data, hardcoded values remain exposed in both the modal and the flow definition in Microsoft Dataverse. For additional guidance on handling sensitive inputs in cloud flows, learn more in [Manage sensitive input like passwords](https://learn.microsoft.com/power-automate/how-tos-use-sensitive-input).
+> Marking variables as sensitive does not secure hardcoded information. Avoid embedding sensitive details such as passwords and PINs directly into action properties like Set variable, even if you classify these variables as sensitive. While desktop flow logs safeguard this data, hardcoded values remain exposed in both the modal and the flow definition in Microsoft Dataverse. For additional guidance on handling sensitive inputs in cloud flows, learn more in [Manage sensitive input like passwords](../../how-tos-use-sensitive-input.md).
 
 To enhance the security of the "Password input as variable" feature, it's important to designate the corresponding variable as sensitive [sensitive](../manage-variables.md#sensitive-variables).
 
