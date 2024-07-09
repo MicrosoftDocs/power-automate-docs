@@ -35,6 +35,9 @@ Apart from encryption and decryption, the **Cryptography** group of actions prov
 
 :::image type="content" source="media/cryptography/hash-from-file-with-key-action.png" alt-text="Screenshot of the Hash from file with key action.":::
 
+> [!IMPORTANT]
+> Provided passwords in the respective password fields can only work on the machine that they are originally inputted. Direct password inputs use encryption that is machine-based. If the flow is opened on another machine, these inputs will be invalid and must be provided from scratch.
+
 ## <a name="encrypttextaction"></a> Encrypt text with AES
 
 Encrypt a string with AES, using a key and a specified encoding format.
