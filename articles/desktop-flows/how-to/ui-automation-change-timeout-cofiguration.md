@@ -31,7 +31,7 @@ If you need to stop the 'PAD.BrowserNativeMessageHost' process, you should first
 1. In File Explorer, go to the `%LOCALAPPDATA%\Microsoft\Power Automate Desktop` folder.
 1. Check if a folder named **Configurations** exists. If not, create it.
 1. Create a new file with name *UIAutomationTimeOut.config* inside the **Configurations** folder.
-1. The template of the XML code to be copied inside the file can be viewed below. Add the key and value pairs you need, inside the `appSettings` section, replace section between "&lt;appSettings&gt;" and "&lt;/appSettings&gt;".
+1. The template of the XML code to be copied inside the file can be viewed below. Add the key and value pairs you need, inside the `appSettings` section, replace everything between "&lt;appSettings&gt;" and "&lt;/appSettings&gt;".
 > [!NOTE]
 > The provided sample is merely a template and is non-functional. Populate it with the required key-value pairs.
 
