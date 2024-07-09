@@ -18,7 +18,7 @@ search.audienceType:
 
 # Use passwords
 
-Certain actions within desktop workflows require the use of passwords. For example, the configuration of the [Launch Excel](../actions-reference/excel.md#-launch-excel) action is essential for accessing an Excel file secured by a password.
+Certain actions within desktop workflows require the use of passwords. For example, the configuration of the [Launch Excel](../actions-reference/excel.md#launchexcel) action is essential for accessing an Excel file secured by a password.
 
 :::image type="content" source="media/using-passwords/launch-password-protected-excel-file.png" alt-text="Screenshot of the Launch Excel action configured to open a password protected file" border="false":::
 
