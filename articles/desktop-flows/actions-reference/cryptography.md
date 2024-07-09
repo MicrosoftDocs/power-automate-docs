@@ -5,7 +5,7 @@ author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
+ms.date: 07/09/2024
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -36,7 +36,7 @@ Apart from encryption and decryption, the **Cryptography** group of actions prov
 :::image type="content" source="media/cryptography/hash-from-file-with-key-action.png" alt-text="Screenshot of the Hash from file with key action.":::
 
 > [!IMPORTANT]
-> Provided passwords in the respective password fields can only work on the machine that they are originally inputted. Direct password inputs use encryption that is machine-based. If the flow is opened on another machine, these inputs will be invalid and must be provided from scratch.
+> Passwords entered in designated fields only work on the machine where they were initially set. This is due to the machine-specific encryption used for direct password inputs. If the flow is opened on a different machine, these passwords will not be valid and will need to be re-entered.
 
 ## <a name="encrypttextaction"></a> Encrypt text with AES
 
