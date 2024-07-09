@@ -8,7 +8,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 06/24/2024
+ms.date: 07/08/2024
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -135,19 +135,25 @@ The following screenshot shows an example of the code for the **Compose** action
 
 :::image type="content" source="media/flows-designer/compose.png" alt-text="Screenshot of the code view of the Compose action card.":::
 
-### Copy Paste actions
+### Copy and paste actions
 
-In the new designer, you can right click on any action (or trigger) whether those are atomic actions like Compose, Get items, Create item, etc. or container actions like Scope, Switch, Condition, Apply to each, etc. and copy the action to clipboard. 
+You can copy actions to the clipboard whether they're atomic actions or container actions. Examples of atomic actions are `Compose`, `Get items`, `Create item`, and others. Examples of container actions are `Scope`, `Switch`, `Condition`, `Apply to each`, and others.
 
-<img width="389" alt="image" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/c0d9a58a-2627-49fa-9785-4e98c1179912">
+To copy and paste an action, follow these steps.
 
-Next, you can click '+' on canvas to add action, and click 'Paste copied action' to copy/paste actions across different parts of your flow, or in between flows too. 
+1. Right-click on any action (or trigger) you want to copy.
 
-<img width="364" alt="image" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/f858fdb5-bba8-4fe2-b325-280ed8e8f806">
+    :::image type="content" source="media/flows-designer/copy-action.png" alt-text="<alt text>":::
 
-<img width="322" alt="image" src="https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/91279975/f9c9fe0a-0449-40c5-b8dd-7146bd152987">
+1. On the canvas, select **+** on the canvas to add an action, and then select **Paste an action**.
 
+    You can copy and paste actions across different parts of your flow, or in between flows.
 
+    :::image type="content" source="media/flows-designer/paste-action.png" alt-text="<alt text>":::
+
+    After you paste your action, the copied action name is followed by **-copy**.
+
+    :::image type="content" source="media/flows-designer/copy-paste-final.png" alt-text="<alt text>":::
 
 ## Canvas
 
