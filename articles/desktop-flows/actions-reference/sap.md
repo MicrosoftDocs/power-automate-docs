@@ -80,7 +80,8 @@ Attach the running SAP GUI application to a SAP instance
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Attach mode|No|Foreground or last activated, Window title|Window title|Specify how to connect to the SAP GUI server.|
+|Attach mode|No|Foreground or last activated, Window title|Window title|Specifies the mode for attaching the SAP instance to a window. In case Foreground or last activated option is selected, then the SAP instance will be attached to the SAP session in the foreground. If there is no SAP session in the foreground, it will attach to the last SAP session that was launched and has not been closed yet.|
+|Window title|Yes|Text||Specifies the title of the SAP window to which the instance will be attached. This can be selected from the drop-down list of existing SAP sessions or entered manually.|
 
 
 ### Variables produced
