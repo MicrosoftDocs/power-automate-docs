@@ -143,17 +143,17 @@ To copy and paste an action, follow these steps.
 
 1. Right-click on any action (or trigger) you want to copy.
 
-    :::image type="content" source="media/flows-designer/copy-action.png" alt-text="<alt text>":::
+    :::image type="content" source="media/flows-designer/copy-action.png" alt-text="Screenshot of copying an action.":::
 
 1. On the canvas, select **+** on the canvas to add an action, and then select **Paste an action**.
 
     You can copy and paste actions across different parts of your flow, or in between flows.
 
-    :::image type="content" source="media/flows-designer/paste-action.png" alt-text="<alt text>":::
+    :::image type="content" source="media/flows-designer/paste-action.png" alt-text="Screenshot of pasting an action.":::
 
     After you paste your action, the copied action name is followed by **-copy**.
 
-    :::image type="content" source="media/flows-designer/copy-paste-final.png" alt-text="<alt text>":::
+    :::image type="content" source="media/flows-designer/copy-paste-final.png" alt-text="Screenshot of an action that was copied and pasted, ending with a hyphen and the word 'copy'.":::
 
 ## Canvas
 
