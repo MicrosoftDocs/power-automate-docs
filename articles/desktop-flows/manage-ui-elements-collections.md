@@ -46,7 +46,7 @@ For each collection, you can perform the following actions.
 
 ## Edit a UI elements collection
 
-You can edit a UI elements collection, modifying its name and/or description.
+Only owners and co-owners can edit collections. You can edit a UI elements collection, modifying its name and/or description.
 
 :::image type="content" source="media/ui-elements-collections/portal-edit-collection.png" alt-text="Edit a UI elements collection in portal" border="false":::
 
@@ -67,6 +67,13 @@ There are three types of access a maker can have regarding UI elements collectio
 Only owners and co-owners can delete collections. Deleting a collection isn't possible, if that collection is already imported and used in one or more desktop flows. You need to remove it from any flows before you can delete it.
 
 :::image type="content" source="media/ui-elements-collections/portal-delete-collection.png" alt-text="Delete a UI elements collection in portal" border="false":::
+
+## Create a copy of a UI elements collection
+
+You can quickly create a copy of a collection, selecting the option **Save as**. This allows you to create a duplicate collection, which you can also rename.
+
+> [!NOTE]
+> Version 2.45 of Power Automate for desktop is required to properly import collections that have been created in this way (copied from other collections).
 
 ## Next steps
 
