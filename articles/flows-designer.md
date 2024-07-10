@@ -8,7 +8,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 06/24/2024
+ms.date: 07/09/2024
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -135,6 +135,28 @@ The following screenshot shows an example of the code for the **Compose** action
 
 :::image type="content" source="media/flows-designer/compose.png" alt-text="Screenshot of the code view of the Compose action card.":::
 
+### Copy and paste actions
+
+You can copy actions to the clipboard whether they're atomic actions or container actions. Examples of atomic actions are `Compose`, `Get items`, `Create item`, and others. Examples of container actions are `Scope`, `Switch`, `Condition`, `Apply to each`, and others.
+
+To copy and paste an action, follow these steps.
+
+1. Right-click on any action (or trigger) you want to copy.
+
+    :::image type="content" source="media/flows-designer/copy-action.png" alt-text="Screenshot of copying an action.":::
+
+1. On the canvas, select **+** on the canvas to add an action, and then select **Paste an action**.
+
+    You can copy and paste actions across different parts of your flow, or in between flows.
+
+    :::image type="content" source="media/flows-designer/paste-action.png" alt-text="Screenshot of pasting an action.":::
+
+    After you paste your action, the copied action name is followed by **-copy**.
+
+    :::image type="content" source="media/flows-designer/copy-paste-final.png" alt-text="Screenshot of an action that was copied and pasted, ending with a hyphen and the word 'copy'.":::
+
+If you don't have access to a mouse, you can use your keyboard. To copy, press **Ctrl** + **C**. To paste, press **Ctrl** + **V**.
+
 ## Canvas
 
 For easy navigation, you can drag your flow on the canvas. You configure the actions of each card in the action configuration pane on the left. The cards on the canvas are compact to allow for easy visibility and navigation, especially in large flows.
@@ -201,7 +223,7 @@ You might notice that some functionalities that were in the classic designer are
 ## Some known issues
 
 - Dynamic content friendly names are getting updated to internal code names upon save.
-- Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', and others.
+- Autoamted trigger polling setting (How often do you want to check for new items) reverts to 1min after saving
 
 As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is gradually becoming the primary interface.
 
@@ -237,7 +259,7 @@ Power Automate designer requires a flow action to be re-added in order to pick u
 
 Yes, once the issues noted here are resolved and the new cloud flows designer can cover most, if not all, of the classic designer scenarios. At this time, the classic designer will be fully replaced.
 
-### See also
+## Related information
 
 [Get started with Copilot in cloud flows](get-started-with-copilot.md)
 
