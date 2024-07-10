@@ -660,8 +660,6 @@ Finds and returns the result of Excel's LOOKUP function.
 |-----|-----|
 |Failed to lookup|Indicates a problem when looking up a value in Excel|
 
-
-
 ## <a name="setcolor"></a> Set color of cells in Excel worksheet
 
 Fills the background of the selected cells with the specified color, in the active worksheet of an Excel instance.
@@ -679,25 +677,19 @@ You can either specify a hexadecimal value to determine the respective color, or
 |End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the range's last column.|
 |End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The range's last row number. The numbering starts from 1.|
 |Cells name|No|[Text value](../variable-data-types.md#text-value)||Name representing the range that will be filled with the specified color.|
-
 |Color format|N/A|Name, Hexadecimal value|Name|Select whether to specify a color by its name or its hexadecimal value.|
-|Color name|N/A|Name, Hexadecimal value|Name|Select whether to specify a color by its name or its hexadecimal value.|
+|Color name|No|[Text value](../variable-data-types.md#text-value)||Select one of the system defined colors.|
+|Color hexadecimal value|No|[Text value](../variable-data-types.md#text-value)||Specify the hexadecimal (RGB) value of the color.|
 
 ### Variables produced
 
-|Argument|Type|Description|
-|-----|-----|-----|
-|LookupResult|[Text value](../variable-data-types.md#text-value)|The value returned by the LOOKUP function|
+This action doesn't produce any variables.
 
-### <a name="lookuprange_onerror"></a> Exceptions
+### <a name="setcolor_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
-|Failed to lookup|Indicates a problem when looking up a value in Excel|
-
-
-
-
+|Failed to set color|Indicates a problem when setting the color of cells in Excel|
 
 ## <a name="launchexcel"></a> Launch Excel
 
