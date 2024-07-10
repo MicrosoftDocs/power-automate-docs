@@ -4,7 +4,7 @@ description: Change the timeout configuration for the UI and Browser automation 
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 11/02/2023
+ms.date: 07/09/2024
 ms.author: nimoutzo
 ms.reviewer: NikosMoutzourakis
 contributors:
@@ -31,7 +31,10 @@ If you need to stop the 'PAD.BrowserNativeMessageHost' process, you should first
 1. In File Explorer, go to the `%LOCALAPPDATA%\Microsoft\Power Automate Desktop` folder.
 1. Check if a folder named **Configurations** exists. If not, create it.
 1. Create a new file with name *UIAutomationTimeOut.config* inside the **Configurations** folder.
-1. Copy the below XML code inside the file. Add the key and value pairs you need, inside the `appSettings` section as shown in the following example.
+1. The template of the XML code to be copied inside the file can be viewed in the following XML snippet. Add the key and value pairs you need, inside the `appSettings` section. Replace everything between `<appSettings>` and `</appSettings>`.
+
+> [!NOTE]
+> The provided sample is only a template and is non-functional. Populate it with the required key-value pairs to make it functional.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
