@@ -4,7 +4,7 @@ description: See all the available Excel actions.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 06/18/2024
+ms.date: 07/10/2024
 ms.author: dipapa
 ms.reviewer: matp
 contributors:
@@ -659,6 +659,45 @@ Finds and returns the result of Excel's LOOKUP function.
 |Exception|Description|
 |-----|-----|
 |Failed to lookup|Indicates a problem when looking up a value in Excel|
+
+
+
+## <a name="setcolor"></a> Set color of cells in Excel worksheet
+
+Fills the background of the selected cells with the specified color, in the active worksheet of an Excel instance.
+
+You can either specify a hexadecimal value to determine the respective color, or select one of the available predetermined color names in the list. Selecting the 'Transparent' option will leave the cells without any color fill.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must be specified in a Launch Excel action.|
+|Set color of|N/A|Single cell, Range of cells, Named cells|Single cell|Specify whether to set the background color of a single cell, a range of cells or named cells.|
+|Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the cell column or range's first column.|
+|Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The cell row or the range's first row number. The numbering starts from 1.|
+|End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the range's last column.|
+|End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The range's last row number. The numbering starts from 1.|
+|Cells name|No|[Text value](../variable-data-types.md#text-value)||Name representing the range that will be filled with the specified color.|
+
+|Color format|N/A|Name, Hexadecimal value|Name|Select whether to specify a color by its name or its hexadecimal value.|
+|Color name|N/A|Name, Hexadecimal value|Name|Select whether to specify a color by its name or its hexadecimal value.|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|LookupResult|[Text value](../variable-data-types.md#text-value)|The value returned by the LOOKUP function|
+
+### <a name="lookuprange_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to lookup|Indicates a problem when looking up a value in Excel|
+
+
+
+
 
 ## <a name="launchexcel"></a> Launch Excel
 
