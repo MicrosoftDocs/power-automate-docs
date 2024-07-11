@@ -74,17 +74,17 @@ To add a signed certificate:
 
 ### Define application and credential provider as safe member
 
-Add the Credential Provider user as a Safe Member with the following authorizations:
+1. Add the Credential Provider user as a Safe Member with the following authorizations:
 
-- List accounts
-- Retrieve accounts
-- View Safe Members
+    - List accounts
+    - Retrieve accounts
+    - View Safe Members
 
-:::image type="content" source="./media/manage-machines/manage-permissions.png" alt-text="Screenshot of manage permissions in CyberArk":::
+    :::image type="content" source="./media/manage-machines/manage-permissions.png" alt-text="Screenshot of manage permissions in CyberArk":::
 
-Add the application as a Safe Member with the following authorizations:
+1. Add the application as a Safe Member with the following authorizations:
 
-- Retrieve accounts
+    - Retrieve accounts
 
 ## Add a CyberArk® application to machine / group
 
@@ -94,25 +94,25 @@ Add the application as a Safe Member with the following authorizations:
 
 If you want to run a desktop flow on a machine or a group using CyberArk® credentials, you need to add your CyberArk® application information in the Power Automate portal.
 
-1. Sign-in to Power Automate.
-1. From the left navigation, select **Machines** and select the machine or the group.
+1. Sign-in to [Power Automate](https://make.powerautomate.com).
+1. From the left navigation, select **Machines**, and then select the machine or the group.
 1. In the Machine details, select **Configure CyberArk®**.
 
     :::image type="content" source="./media/manage-machines/configure-cyberark.png" alt-text="Screenshot of the connection using credentials.":::
 
 1. Select **New application**.
-    1. Enter the app ID of the application you created from CyberArk® PVWA.
-    1. Select the certificate, which stores the private and the public key of the certificate.
-        - The allowed formats are .pfx or .p12 files.
-        - The private key should be marked as exportable.
-    1. Enter the certificate file password that is used to open the certificate file.
+1. Enter the app ID of the application you created from CyberArk® PVWA.
+1. Select the certificate, which stores the private and the public key of the certificate.
+    - The allowed formats are .pfx or .p12 files.
+    - The private key should be marked as exportable.
+1. Enter the certificate file password that is used to open the certificate file.
 
-        > [!NOTE]
-        > The password is not stored. The certificate is opened and encrypted with the public key of the machine group so it is only readable from the registered machines.
+      > [!NOTE]
+      > The password is not stored. The certificate is opened and encrypted with the public key of the machine group so it is only readable from the registered machines.
 
-    1. Enter a description (optional) and then select **Save**.
+1. Enter a description (optional) and then select **Save**.
 
-        :::image type="content" source="./media/manage-machines/add-cyberark-app.png" alt-text="Screenshot of configure CyberArk on machine group":::
+      :::image type="content" source="./media/manage-machines/add-cyberark-app.png" alt-text="Screenshot of configure CyberArk on machine group":::
 
 ## Create a CyberArk® credential
 
@@ -133,6 +133,7 @@ Now that you complete all the prerequisites steps, you can create your CyberArk�
     :::image type="content" source="./media/manage-machines/select-credential-store.png" alt-text="Screenshot of create new credential store.":::
 
 1. In the last step of the wizard, you need to provide the information about the user account:
+
     - **Username**: Select a username from your text environment variables or create a new one by selecting new.
     - **Object name**: The object name corresponds to the CyberArk® object name store in the CyberArk® safe. This value is also called account name in PVWA.
   
