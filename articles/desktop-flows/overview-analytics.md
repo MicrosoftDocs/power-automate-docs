@@ -12,7 +12,7 @@ ms.subservice: desktop-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/26/2022
+ms.date: 06/20/2024
 ms.author: angieandrews
 contributors:
 - mattp123
@@ -32,8 +32,6 @@ As an admin, you'll need to view the overall status of automation that runs in y
 ## Learn more
 
 - Analyze the [desktop flows risk assessment](/power-platform/guidance/coe/power-bi-govern#desktop-flows-risk-assessment) in your environment.
-- [Create Windows recorder (V1) flows](create-desktop.md).
-- [Create Selenium IDE flows](create-web.md).
 - Run [desktop flows](run-desktop-flow.md).
 
 
