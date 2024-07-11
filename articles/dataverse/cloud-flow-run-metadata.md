@@ -3,12 +3,13 @@ title: Manage cloud flow run history in Dataverse (preview)
 description: Learn how to apply the extensibility of Dataverse to track the results of your cloud flow executions at scale.
 author: chrisgarty
 contributors:
+  - rpapostolis
   - rakrish84
   - chrisgarty
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 07/03/2024
+ms.date: 07/11/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -42,8 +43,8 @@ The [**FlowRun**](/power-apps/developer/data-platform/reference/entities/flowrun
 |Start time   | When the cloud flow execution was triggered. |
 |End time     | When the cloud execution was finished. |
 |Run duration | Time, in seconds, for the cloud flow to finish the run. |
-|Status | End result of the flow execution (**Success**, **Failed**, or **Cancelled**) |
-|Trigger type | The trigger type of this flow run (**Automated**, **Scheduled**, or **Manual**) |
+|Status | End result of the flow execution (**Success**, **Failed**, or **Cancelled**). |
+|Trigger type | The trigger type of this flow run (**Automated**, **Scheduled**, or **Manual**). |
 |Error code | Error code returned from the flow execution.|
 |Error message | Detailed error message, if applicable, returned from the flow execution. |
 |Owner | Owner of the flow. |
@@ -146,24 +147,9 @@ If all of your environments have a [FlowRunTimeToLiveInSeconds value in the Orga
 
 ### When is this going to be generally available (GA)?
 
-It's uncertain when this capability changes from a public preview to being generally available (GA). The ingestion of flow run history has architectural limitations and performance limitations that require throttling, so the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is often going to have some gaps. Customers told us there's an expectation that the data is complete when we make this capability GA. We want to get to that point before we change from public preview to GA.
+Currently, there's no committed timeline for transitioning this capability from public preview to General Availability (GA). Due to architectural and performance restrictions that require throttling, the FlowRun history might have gaps. However, we understand the importance of complete flow run history data. We're actively evaluating strategies for lossless synchronization that allows us to move this feature to GA in the future.
 
-### Why isn't action-level data available?
-
-The [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is for the flow run and doesn't have inputs and outputs from triggers and actions. The data for triggers and actions takes up a lot more space in Dataverse and is only needed when the maker drills deeper, so it's omitted for now. We're evaluating mechanisms to make that data available.
-
-### I changed the TTL FlowRunTimeToLiveInSeconds to be longer. Why am I not seeing data or not seeing data for that full period?
-
-The [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is written into Dataverse as flow runs occur. There isn't a backfill operation to populate historical flow run data.
-
-This [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is used by the [automation center in the Power Automate maker portal](/power-automate/automation-center-overview). The data set is often incomplete, but there are still useful insights that can be obtained. Hence, we're making the data available early in a preview capacity.  
-
-The ingestion of flow run history has architectural limitations and performance limitations that require throttling, so the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data is often going to have some gaps. Customers told us there's an expectation that the data is complete when we make this capability generally available (GA). We want to get to that point before we change from public preview to GA. It's uncertain when this capability changes from a public preview to being GA.
-
-#### Troubleshooting
-
-1. Double check that the storage of cloud flow run history is turned on for the environment by looking at the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) time to live setting in Power Platform admin center.
-2. Open the [automation center](/power-automate/automation-center-overview) to see any [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) information related to [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data ingestion.
+The FlowRun data is used by the [Automation center (preview)](/power-automate/automation-center-overview) in the Power Automate maker portal. Although FlowRun data might have certain gaps during the preview phase, there's value in making this data accessible for public preview, both as a standalone feature and as part of the automation center.
 
 ### Does writing cloud flow run history into Dataverse use Power Platform request quota?
 
@@ -177,7 +163,7 @@ The Application Insights data is:
 - Deeper because it has information about triggers and actions executed.
 - Able to be correlated with [Power Apps and Dataverse Application Insights data](/power-platform/admin/analyze-telemetry) through correlation identifiers.
 
-### See also
+## Related information
 
 [Automation center](/power-automate/automation-center-overview)
 
