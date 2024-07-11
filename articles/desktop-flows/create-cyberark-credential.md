@@ -4,7 +4,7 @@ description: Use CyberArk credentials in desktop flow connections
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/02/2024
+ms.date: 07/11/2024
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
@@ -88,7 +88,7 @@ Add the application as a Safe Member with the following authorizations:
 
 > [!IMPORTANT]
 >
-> Limitation: Machine / Machine groups shared with other users are not supported today.
+> It isn't currently possible for users to associate a CyberArk application with machines or groups that are shared with other users.
 
 If you want to run a desktop flow on a machine or a group using CyberArk® credentials, you need to add your CyberArk® application information in the Power Automate portal.
 
