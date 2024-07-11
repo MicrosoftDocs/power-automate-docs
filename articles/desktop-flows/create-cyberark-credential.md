@@ -86,6 +86,10 @@ Add the application as a Safe Member with the following authorizations:
 
 ## Add a CyberArk® application to machine / group
 
+> [!IMPORTANT]
+>
+> Limitation: Machine / Machine groups shared with other users are not supported today.
+
 If you want to run a desktop flow on a machine or a group using CyberArk® credentials, you need to add your CyberArk® application information in the Power Automate portal.
 
 1. Sign-in to Power Automate.
