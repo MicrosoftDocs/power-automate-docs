@@ -4,7 +4,7 @@ description: Learn about the available flow control actions in desktop flows.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 02/08/2023
+ms.date: 07/17/2024
 ms.author: matp
 ms.reviewer: matp
 contributors:

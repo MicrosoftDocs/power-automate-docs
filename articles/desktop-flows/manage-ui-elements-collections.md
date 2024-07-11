@@ -5,7 +5,7 @@ author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/26/2024
+ms.date: 07/17/2024
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
@@ -70,7 +70,7 @@ Only owners and co-owners can delete collections. Deleting a collection isn't po
 
 ## Create a copy of a UI elements collection
 
-You can quickly create a copy of a collection, selecting the option **Save as**. This allows you to create a duplicate collection, which you can also rename.
+You can quickly create a copy of a collection, selecting the option **Save as**. This option allows you to create a duplicate collection, which you can also rename.
 
 > [!NOTE]
 > Version 2.45 of Power Automate for desktop is required to properly import collections that have been created in this way (copied from other collections).
