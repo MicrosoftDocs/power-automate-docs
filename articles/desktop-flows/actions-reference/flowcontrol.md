@@ -143,6 +143,8 @@ This action doesn't include any exceptions.
 
 Acts as the destination of a 'go to' statement.
 
+From version 2.46 and on, labels can also be used in a different scope than the corresponding **Go to** action (e.g. in a conditional block), except error blocks, loops, and/or other subflows.
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
