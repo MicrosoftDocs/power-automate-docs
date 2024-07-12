@@ -104,7 +104,7 @@ If you linked your process in Test environment to a workspace (for example, WkSp
 
     1. To continue setting up the process, select **Continue**.
 
-       :::image type="content" source="media/process-mining-alm-rebind-without-comp/new-workspace-same.png" alt-text="Screenshot of selecting a new workspace for your process with the same report name as your previous report.":::
+       :::image type="content" source="media/process-mining-alm-rebind-without-comp/new-workspace-same.png" alt-text="Screenshot of selecting a new workspace for your process with a different report name from your previous report.":::
 
 1. (If you didn't do step 3) Attach a custom Power BI workspace to the process:
     1. Go to the process details page for the process.
