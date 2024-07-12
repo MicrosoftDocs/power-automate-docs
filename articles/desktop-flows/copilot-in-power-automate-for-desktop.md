@@ -1,7 +1,7 @@
 ---
 title: Get started with Copilot in Power Automate for desktop
 description: Learn how to access and use Copilot in Power Automate for desktop.
-ms.date: 05/21/2024
+ms.date: 07/18/2024
 ms.topic: how-to
 author: cochamos
 ms.author: cochamos
@@ -13,122 +13,161 @@ ms.collection: bap-ai-copilot
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Copilot in desktop flows allows you to create automation that helps streamline your workflow creation quickly and easily using natural language. You can create a new flow or add more steps to an existing by just describing what you want to achieve using natural language prompts.
+Copilot in desktop flows allows you to create automation that helps streamline your workflow creation quickly and easily using natural language. You can create a new flow or add more steps to an existing flow by just describing what you want to achieve using natural language prompts.
 
-The desktop flows Copilot can perform the following actions:
--	Understand your intent and create a new flow or enhance an existing one based on the scenario prompt you provide.
--	Apply the necessary parameters in the actions based on your prompt.
--	Answer product related questions. For example, you can ask Copilot questions about desktop flows like: How do I read data from an Excel file? and How do I run a PowerShell script?
-
-> [!IMPORTANT]
->
-> -	Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
-> -	Copilot’s Natural Language to flow creation is powered by the Azure OpenAI service. This feature is in Early Access.
+[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
+> - Copilot’s Natural Language to flow creation is powered by the Azure OpenAI service. This feature is in Early Access.
 > - Copilot’s generative answers capability is powered by the Azure OpenAI Service and Bing Search.
-> - More information: [FAQ for Copilot in Power Automate for desktop](../faqs-copilot-in-pad.md)
+
+Copilot can perform the following actions:
+
+- Understand your intent and create a new flow or enhance an existing one based on the scenario prompt you provide.
+- Apply the necessary parameters in the actions based on your prompt.
+- Answer product related questions. For example, you can ask Copilot questions about desktop flows such as:
+  - How do I read data from an Excel file?
+  - How do I run a PowerShell script?
 
 ## Prerequisites
 
 ### Availability by region
 
-Copilot in Power Automate for desktop offers different capabilities which are available in environments located in the following countries:
-- Creating flows using Copilot: United States.
-- Answering product related questions: Australia, India, United Kingdom, and United States.
+Copilot in Power Automate for desktop offers different capabilities, which are available in environments located in the following countries/regions:
+
+- Creating flows using Copilot
+  - United States.
+- Answering product related questions
+  - Australia
+  - India
+  - United Kingdom
+  - United States.
 
 ### Availability by account type
 
 Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
 
 > [!NOTE]
-> If your environment is in a supported region, you are signed in with a work or school account, and you still can't see the Copilot in Power Automate for desktop experience, contact your Power Platform administrator. An admin can turn the Copilot feature off or on in the Power Platform admin center. 
+> If your environment is in a supported region, you are signed in with a work or school account, and you still can't see Copilot in the Power Automate for desktop experience, contact your Power Platform administrator. An admin can turn Copilot off or on in the Power Platform admin center.
 
 ## Create a desktop flow using Copilot (preview)
 
-You can create a new flow in the Power Automate for desktop Console from either the Copilot in the home page or from the Copilot’s side panel.
-To create a flow from the home page, type your prompt in the Copilot’s chat area:
+You can create a new flow in the Power Automate for desktop console from either Copilot in the home page or from the Copilot side panel.
+To create a flow from the home page, type your prompt in Copilot’s chat area:
 
-:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-console-home.png" alt-text="Screenshot that shows where to interact with the Copilot in Power Automate for desktop's home.":::
+:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-console-home.png" alt-text="Screenshot that shows where to interact with Copilot in Power Automate for desktop's home.":::
 
-To create a flow from the Copilot's side panel, open the Copilot chat panel by pressing the Copilot button on the top right corner of the Console and type your prompt. Make sure that the flow creation mode is selected from the drop-down menu:
+To create a flow from the Copilot side panel, open the Copilot chat panel by pressing the Copilot button on the top right corner of the console and type your prompt. Make sure that the flow creation mode is selected from the drop-down menu:
 
-:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-console-side-panel.png" alt-text="Screenshot that shows the Copilot's side panel in Power Automate for desktop console's home location.":::
+:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-console-side-panel.png" alt-text="Screenshot that shows the Copilot side panel in Power Automate for desktop console's home location.":::
 
-Once you submit your prompt, Copilot will process it and launch the designer with the newly generated flow for you to review. 
-In the designer’s Copilot side panel you can view a list of the actions that have been generated. The actions are assigned in groups based on their functionality. You can view the actions contained in each group by expanding it. Lastly, these groups are translated to regions in the main designer’s panel.
+Once you submit your prompt, Copilot processes it and launches the designer with the newly generated flow for you to review. In the designer’s Copilot side panel, you can view a list of the actions that have been generated. The actions are assigned in groups based on their functionality. You can view the actions contained in each group by expanding it. Lastly, these groups are translated to regions in the main designer’s panel.
 
-:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-copilot-side-panel.png" alt-text="A screenshot that shows the designer opened with the actions generated by Copilot":::
+:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-copilot-side-panel.png" alt-text="A screenshot that shows the designer opened with the actions generated by Copilot.":::
 
 Actions that have been generated by Copilot will be marked in the designer’s main area by two comments, one at the beginning and one after the last generated action, so it’s easier for you to locate and review.
 
-:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-comments.png" alt-text="A screenshot that shows the designer opened with the generated flow and auto-generated comments that mark the beggining and the end of the AI generated actions":::
+:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-comments.png" alt-text="A screenshot showing the designer opened with the generated flow and auto-generated comments that mark the beginning and the end of the AI generated actions.":::
 
-If Copilot detects an intent for Browser or UI automation in your prompt, it will then add a placeholder action from which you can launch the recorder and perform a recording of your steps. Once you do that, this action will be replaced by UI related actions automatically. You can also delete the action and add the necessary UI actions manually. 
+If Copilot detects an intent for browser or UI automation in your prompt, it adds as placeholder action from which you can launch the recorder and perform a recording of your steps. Once you do that, this action is replaced by UI related actions automatically. You can also delete the action and add the necessary UI actions manually.
 
-:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-recorder_placeholder.png" alt-text="A screenshot that shows the recorder placeholder in Power Automate for desktop designer":::
+:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-recorder_placeholder.png" alt-text="A screenshot that shows the recorder placeholder in Power Automate for desktop designer.":::
 
 > [!NOTE]
-> The recording action will produce a design time error. This is to remind you that a significant part of the flow is still missing and needs to be created. To resolve this, you can either launch the recorder and perform the recording or delete / disable it.
+> The recording action produces a design time error. This is to remind you that a significant part of the flow is still missing and needs to be created. To resolve this, you can either launch the recorder and perform the recording or delete / disable it.
 
 ## Adding actions to an existing flow using Copilot (preview)
 
-You can enhance an existing flow with easy by instructing the Copilot to add more functionality to it. To do so, navigate to the Power Automate for desktop’s designer and describe in the Copilot’s side panel what you want to achieve. The Copilot will then add the appropriate actions at the end of your flow, or underneath a selected action. Make sure that the appropriate Copilot skill is enabled prior to typing your prompt by either clicking on the “Add a step that” button on the top of the Copilot’s side panel or by selecting it from the drop-down menu at the bottom.
+You can enhance an existing flow with ease by instructing Copilot to add more functionality to it. To do so, navigate to the Power Automate for desktop’s designer and describe in the Copilot side panel what you want to achieve. Copilot adds the appropriate actions at the end of your flow, or underneath a selected action. Make sure that the appropriate Copilot skill is enabled before typing your prompt by either selecting the **Add a step that** button on the top of the Copilot side panel or by selecting it from the drop-down menu at the bottom.
 
-:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-add-step.png" alt-text="A screenshot that shows the add step button on the top and at the drop-down menu at the bottom of the Copilot's side panel":::
+:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-add-step.png" alt-text="A screenshot that shows the add step button on the top and a drop-down menu at the bottom of the Copilot side panel.":::
 
 ## How to write a good prompt
 
 Writing good prompts includes more than just being specific with your request, or saying how you want your results to be displayed. If the initial results aren’t what you’re looking for, try tweaking your prompt and running it again.
 
-- Be as specific as possible. Instead of a generic prompt like, Email an Excel file, try this prompt instead: Send an email to “sales@contoso.com” from the account “accounting@contoso.com” with subject “Contoso sales data” and attach the Excel file in “C:\contoso\contoso.xlsx” 
+- Be as specific as possible. Instead of a generic prompt like, "Email an Excel file", try the following prompt instead:
+  - Send an email to “sales@contoso.com” from the account “accounting@contoso.com” with subject “Contoso sales data” and attach the Excel file in “C:\contoso\contoso.xlsx”
 - Try tweaking your prompt to further fine tune.
 - For more general information about writing prompts with generative AI, go to [The art of the prompt: How to get the best out of generative AI.](https://news.microsoft.com/source/features/ai/the-art-of-the-prompt-how-to-get-the-best-out-of-generative-ai/)
 
 ## How to use Copilot to get answers to product-related questions (preview)
 
 Access the generative answers capability from the console by clicking on the Copilot icon located on the top right corner of the console window.
-:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-console-generative-answers.png" alt-text="A screenshot that shows the recorder placeholder":::
+
+:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-console-generative-answers.png" alt-text="A screenshot that shows the recorder placeholder.":::
 
 Alternatively, you can also access the generative answers capability from the designer’s vertical menu on the right.
-:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-generative-answers.png" alt-text="A screenshot that shows the recorder placeholder":::
 
-From the Copilot’s side panel make sure that the generative answers skill is selected by either clicking on the Help me understand button on the top or the drop-down menu at the bottom.
-:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-generative-answers2.png" alt-text="A screenshot that shows the recorder placeholder":::
+:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-generative-answers.png" alt-text="A screenshot that shows the recorder placeholder.":::
 
-In the Copilot pane, ask any product-related questions or use one of the proposed prompts to get you started. The answer generated contains a link to the documentation page to refer you to additional information. Make sure that you always review AI-generated content.
+From Copilot’s side panel, make sure that the generative answers skill is selected by either clicking on the **Help me understand** button on the top or the drop-down menu at the bottom.
 
+:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-generative-answers2.png" alt-text="A screenshot that shows the recorder placeholder.":::
 
-## Frequently asked questions
+In the Copilot pane, ask any product related questions or use one of the proposed prompts to get you started. The answer generated contains a link to the documentation page to refer you to additional information. Make sure that you always review AI-generated content.
+
+## Frequently asked questions (FAQ)
+
 Use this section to find answers to frequently asked questions.
 
 ### How to prevent users from using Copilot
-- To prevent your users from using any of the Copilot's capabilities, by contacting Microsoft Support. You can disable and re-enable at tenant level easily using a PowerShell script.
-- To prevent users from using specifically the Copilot’s generative answers capability, Power Platform administrators can turn off the **Copilot help assistance in Power Automate via Bing** setting in the Power Platform admin center.
 
-### What are the limitations of the Copilot in Power Automate for desktop?
-- Copilot only supports a subset of the available actions in Power Automate for desktop. Specifically, only the following actions are supported for flow creation or when adding steps in an existing automation: Clipboard, CMD session, Compression, Conditionals, Database, Date Time, Email, Excel, File, Flow Control, Folder, HTTP, Loops, Message Boxes, Microsoft Forms, Microsoft Teams, Mouse and Keyboard, OneDrive for Business, OneNote (Business), Outlook, PDF, Scripting, SharePoint, System, Text, Variables, Word, XML
-- You can’t use Copilot in Power Automate for desktop if you’re using a personal Microsoft account. For example, you can’t use someone@live.com. Use a work or school account like someone@contoso.com instead.
-- Only US-based environments have access to Copilot.
+- To prevent your users from using any of Copilot's capabilities, by contacting Microsoft Support. You can disable and re-enable at tenant level easily using a PowerShell script.
+- To prevent users from using Copilot’s generative answers capability, Power Platform administrators can turn off the **Copilot help assistance in Power Automate via Bing** setting in the Power Platform admin center.
+
+### What are the limitations of Copilot in Power Automate for desktop?
+
+- Copilot only supports a subset of the available actions in Power Automate for desktop. Specifically, only the following actions are supported for flow creation or when adding steps in an existing flow:
+  - Clipboard
+  - CMD session
+  - Compression
+  - Conditionals
+  - Database
+  - Date Time
+  - Email
+  - Excel
+  - File
+  - Flow Control
+  - Folder
+  - HTTP
+  - Loops
+  - Message Boxes
+  - Microsoft Forms
+  - Microsoft Teams
+  - Mouse and Keyboard
+  - OneDrive for Business
+  - OneNote (Business)
+  - Outlook
+  - PDF
+  - Scripting
+  - SharePoint
+  - System
+  - Text
+  - Variables
+  - Word
+  - XML
+- You can’t use Copilot in Power Automate for desktop if you’re using a personal Microsoft account. For example, you can’t use `someone@live.com`. Use a work or school account like `someone@contoso.com` instead.
+- Only environments located in the United States have access to Copilot.
 - Copilot supports English language only.
 
-### Why some of the generated actions are marked erroneous when i create a flow or add actions to an existing flow using Copilot?
-Copilot will generate actions based on your prompt. If the prompt doesn't include the mandatory parameters of an action, it will be left empty when generated and it will be marked as erroneous.
-You can try providing a more detailed prompt to avoid having actions with empty parameters. For example, a prompt like: "Open an excel file and read all data" will result to a design time error, as the Excel file path is a mandatory parameter of the Launch Excel action. If the prompt is: Open the Excel file in "c:\contoso\myExcel.xlsx" and read all data, the Launch Excel action would be populated with the file path and will not result to a design time error.
+### Why some of the generated actions marked erroneous when I create a flow or add actions to an existing flow using Copilot?
 
+Copilot generates actions based on your prompt. If the prompt doesn't include the mandatory parameters of an action, it's left empty when generated and is marked as erroneous. You can try providing a more detailed prompt to avoid having actions with empty parameters. For example, a prompt such as *Open an excel file and read all data* results in a design time error, as the Excel file path is a mandatory parameter of the Launch Excel action. If the prompt is *Open the Excel file in "c:\contoso\myExcel.xlsx" and read all data*, the Launch Excel action would be populated with the file path and doesn't result in a design time error.
 
 ### What are some examples of prompts that I can use to create flows?
--	Check if the folder c:\contoso exists. If it does, search for all Excel files. Add every Excel file found into an archive c:\Contoso\archivedExcels.zip using the best compression level.
--	Search in the Excel file c:\contoso\employees_list.xlsx for the string "Foo" in any of the cells. If there is a match send an email using Outlook from the account sales@contoso.com to accounting@contoso.com with Subject "Here is your Excel file" and attach the Excel file. 
--	Read the text from the file c:\contoso\sample_text.txt. Replace any occurrences of <telephone number> with 514-444 5555 and any occurrences of <email address> with sales@contoso.com. Lastly, display the whole text in a dialog and email the text file to accounting@contoso.com with subject: "Here is the text that I've parsed". Put in the email body the text of the file and also attach the file.
--	Add a PowerShell script that performs an API call to https://contoso.com/api_endpoint and passed the "employee_details" variable. After, create a new Excel file and write the employee_details variable to it. Lastly, save the Excel file to c:\contoso\employees.xlsx
--	Add an action that compresses the following folder "C:\Users\contoso\Desktop\Invoices" and save it on my desktop.
--	Open the following excel file "C:\Users\contoso\Desktop\data.xlsx" and then it will delete column B from the first sheet. Then save the Excel file and close it.
--	Connect to my email account sales@contoso.com, search for the last email sent by accounting@contoso.com and display in a message the order number from that email's subject 
--	Create a flow which searches for a particular application which is going to be prompted by the user and check if it is running. If not, use run application to launch it by first locating its exe from program files.
--	Find all png files in c:\temp and to compress to a new file with name pngs.zip
--	Connect to the SQL Database "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;" and gets the row count of the table car_entries
 
+- *Check if the folder c:\contoso exists. If it does, search for all Excel files. Add every Excel file found into an archive c:\Contoso\archivedExcels.zip using the best compression level.*
+- *Search in the Excel file c:\contoso\employees_list.xlsx for the string "Foo" in any of the cells. If there's a match, send an email using Outlook from the account sales@contoso.com to accounting@contoso.com with Subject "Here is your Excel file" and attach the Excel file.*
+- *Read the text from the file c:\contoso\sample_text.txt. Replace any occurrences of `<telephone number>` with 514-444 5555 and any occurrences of `<email address>` with sales@contoso.com. Lastly, display the whole text in a dialog and email the text file to accounting@contoso.com with subject: "Here's the text that I parsed". Put in the email body the text of the file and also attach the file.*
+- *Add a PowerShell script that performs an API call to https://contoso.com/api_endpoint and passes the "employee_details" variable. Then create a new Excel file and write the employee_details variable to it. Lastly, save the Excel file to c:\contoso\employees.xlsx*
+- *Add an action that compresses the following folder "C:\Users\contoso\Desktop\Invoices" and save it on my desktop.
+- Open the following Excel file "C:\Users\contoso\Desktop\data.xlsx" and delete column B from the first sheet. Then save the Excel file and close it.*
+- *Connect to my email account sales@contoso.com, search for the last email sent by accounting@contoso.com and display in a message the order number from that email's subject.*
+- *Create a flow that prompts the user for the name of an application and then searches for that application to check if it's running. If not, use run application to launch it by first locating it's exe from program files.*
+- *Find all png files in c:\temp and to compress them in a new file with name pngs.zip.*
+- *Connect to the SQL Database "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;" and get the row count of the table car_entries.*
 
-## See also
+## Related information
 
 - [FAQ for Copilot in Power Automate for desktop](../faqs-copilot-in-pad.md)
 - [Responsible AI FAQs for Power Automate](../responsible-ai-overview.md)

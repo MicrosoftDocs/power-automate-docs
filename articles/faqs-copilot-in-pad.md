@@ -1,67 +1,83 @@
+---
+title: FAQ for Copilot in Power Automate desktop
+description: This FAQ discusses Copilot in Power Automate desktop and the key considerations for making use of this technology responsibly.
+ms.date: 07/18/2024
+ms.custom: 
+  - responsible-ai-faqs
+ms.topic: conceptual
+author: cochamos
+ms.author: cochamos
+ms.reviewer: dmartens
+ms.collection: 
+    - bap-ai-copilot
+---
+
 # FAQ for Copilot in Power Automate for desktop
 
 These frequently asked questions (FAQ) describe the AI impact of the Copilot functionality in Power Automate for desktop.
 
 ## What is Copilot in Power Automate for desktop?
 
-Power Automate for desktop offers a new way of building desktop flows by the help of an AI assistant. The Copilot in Power Automate for desktop stays with you in your flow-building journey and helps you build flows from scratch or by adding the next steps to your existing automation through an interactive chat experience. Simply, describe the flow that you want to create, and the Copilot will generate all the necessary actions on your behalf. It can also help you by answering desktop flow and product-related questions .
+Power Automate for desktop offers a new way of building desktop flows by the help of an AI assistant. Copilot in Power Automate for desktop stays with you in your flow-building journey and helps you build flows from scratch or by adding the next steps to your existing automation through an interactive chat experience. Simply, describe the flow that you want to create, and Copilot generates all the necessary actions on your behalf. It can also help you by answering desktop flow and product-related questions.
 
-## What can Copilot in Power Automate for desktop do? 
+## What can Copilot in Power Automate for desktop do?
 
 Copilot in Power Automate for desktop can be used in multiple scenarios. The system’s intended uses include:
-- Creating flows using natural language instructions: From the Power Automate for desktop’s console, you can create a new flow by describing your automation in the Copilot’s chat area. 
+
+- Creating flows using natural language instructions: From the Power Automate for desktop’s console, you can create a new flow by describing your automation in the Copilot’s chat area.
 - Add steps to an existing desktop flow: From the Power Automate for desktop’s designer, you can add one or more actions to your flow by describing them in the Copilot’s chat area.
-- Answer documentation questions about Power Automate for desktop : From the Power Automate for desktop’s designer, you can add one or more actions to your flow by describing them in the Copilot’s chat area. 
+- Answer documentation questions about Power Automate for desktop: From the Power Automate for desktop’s designer, you can add one or more actions to your flow by describing them in the Copilot’s chat area.
 
 ## What is the system’s intended use(s)?
 
 - Copilot can help you create new flows or add actions to an existing flow with ease without having to manually add the actions.
-- Copilot's generative answers capability searches for answers to your product related questions in Power Automate for desktop's public documentation using Azure OpenAI and Bing search. 
+- Copilot's generative answers capability searches for answers to your product related questions in Power Automate for desktop's public documentation using Azure OpenAI and Bing search.
 
 ## How was Copilot evaluated? What metrics are used to measure performance?
 
-Copilot in Power Automate for desktop has been evaluated against real-world scenarios in each phase of its design, development, and release. Using a combination of research and business impact studies, we've evaluated various quantitative and qualitative metrics about copilot, including its accuracy, usefulness, and agent trust.
+Copilot in Power Automate for desktop has been evaluated against real-world scenarios in each phase of its design, development, and release. Using a combination of research and business impact studies, we evaluated various quantitative and qualitative metrics about copilot, including its accuracy, usefulness, and agent trust.
 We have a robust set of metrics we're tracking to measure the model's performance and resulting customer experience. We follow the feature's SLA to make sure it's always available to you. We track the telemetry of thumbs-up and thumbs-down gestures present in the UI experience for each AI output that you can submit feedback for.
 
 ## What are the limitations of Copilot? How can users minimize the impact of Copilot’s limitations when using the system?
--	This feature is currently in preview for environments located in the United States and only supports English.
--	This feature is currently available only to Work or School accounts. 
--	The flow creation with natural language capability only supports the following action groups: 
 
-1.	Clipboard
-2.	CMD session
-3.	Compression
-4.	Conditionals
-5.	Database
-6.	Date Time
-7.	Email
-8.	Excel
-9.	File
-10.	Flow Control
-11.	Folder
-12.	HTTP
-13.	Loops
-14.	Message Boxes
-15.	Microsoft Forms
-16.	Microsoft Teams
-17.	Mouse and Keyboard
-18.	OneDrive for Business
-19.	OneNote (Business)
-20.	Outlook
-21.	PDF
-22.	Scripting
-23.	SharePoint
-24.	System
-25.	Text
-26.	Variables
-27.	Word
-28.	XML
+- This feature is currently in preview for environments located in the United States and only supports English.
+- This feature is currently available only to Work or School accounts.
+- The flow creation with natural language capability only supports the following action groups:
+  - Clipboard
+  - CMD session
+  - Compression
+  - Conditionals
+  - Database
+  - Date Time
+  - Email
+  - Excel
+  - File
+  - Flow Control
+  - Folder
+  - HTTP
+  - Loops
+  - Message Boxes
+  - Microsoft Forms
+  - Microsoft Teams
+  - Mouse and Keyboard
+  - OneDrive for Business
+  - OneNote (Business)
+  - Outlook
+  - PDF
+  - Scripting
+  - SharePoint
+  - System
+  - Text
+  - Variables
+  - Word
+  - XML
 
--	The generative answers capability can only answer to product-related features. It can't answer general questions or anything unrelated to the product.
--	There's a limit of 500 characters to describe a flow that you want to create or ask a question that you have about the product.
--	You can disable completely the Copilot in Power Automate for desktop, from the admin center or close the Copilot chat panel and not interact with it.
+- The generative answers capability can only answer to product-related features. It can't answer general questions or anything unrelated to the product.
+- There's a limit of 500 characters to describe a flow that you want to create or ask a question that you have about the product.
+- You can disable completely the Copilot in Power Automate for desktop, from the admin center or close the Copilot chat panel and not interact with it.
 
 ## What operational factors and settings allow for effective and responsible use of Copilot in Power Automate for desktop?
--	The system is only available in Power Automate for desktop console and designer components. 
--	When creating a new flow or adding steps to an existing flow, you can review the actions that were generated in the Copilot panel in the designer. Additionally, all the AI generated actions in the designer, will be included within two comments: “Start of AI generated actions” and “End of AI generated actions”.
--	The system marks specific generated actions for user’s review in the designer’s Copilot side panel. Specifically, actions from the Scripting, Database, File and Folder actions groups might be marked for you to review.
+
+- The system is only available in Power Automate for desktop console and designer components.
+- When creating a new flow or adding steps to an existing flow, you can review the actions that were generated in the Copilot panel in the designer. Additionally, all the AI generated actions in the designer, are included within two comments: “Start of AI generated actions” and “End of AI generated actions”.
+- The system marks specific generated actions for user’s review in the designer’s Copilot side panel. Specifically, actions from the Scripting, Database, File and Folder actions groups might be marked for you to review.
