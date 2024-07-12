@@ -7,7 +7,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 07/03/2024
+ms.date: 07/12/2024
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -21,6 +21,9 @@ ALM (application lifecycle management) encompasses the entire lifecycle of appli
 
 For an overview of ALM in Power Platform, go to [Overview of application lifecycle management with Microsoft Power Platform](/power-platform/alm/overview-alm).
 
-You can migrate all your process mining entities, including dataflow connections, custom metrics, Power BI reports, and more, from one environment to another, or in the case of Power BI reports, from one workspace to another.
+You can migrate all your process mining entities, including dataflow connections, custom metrics, Power BI reports, and more, from one environment to another, or in the case of Power BI reports, from one workspace to another. You can also rebind your Power BI reports with or without using a composite model.
 
-If you want to migrate your process mining entities from one environment to another except your customized Power BI reports using Power Platform solutions, go to [Migrate Process Mining entities with Power Platform solutions](process-mining-alm-entities-solutions.md).
+To learn more about these ALM features, select from the following list:
+
+- [Migrate Process Mining entities with Power Platform solutions](process-mining-alm-entities-solutions.md)
+- [Migrate customized Process Mining Power BI reports](process-mining-pbi-reports-overview.md)

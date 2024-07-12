@@ -7,7 +7,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 07/10/2024
+ms.date: 07/11/2024
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -29,12 +29,10 @@ The articles in this section use fictitious names. These names are for demonstra
 > [!NOTE]
 > Typically, you perform ALM for the Power BI report after you have performed ALM for the other resources of the process using solutions.
 
-These procedures in **Migrate customized Process Mining Power BI reports** assume you completed the following tasks:
+The procedures in the **Migrate customized Process Mining Power BI reports** section assume you completed the following tasks:
 
 1. You attached a Power BI workspace to your process in your Dev environment.
-   
-1. [You performed ALM on other process mining artifacts using solutions](process-mining-alm-entities-solutions.md). 
-
+1. [You performed ALM on other process mining artifacts using solutions](process-mining-alm-entities-solutions.md).
 1. You made the Power BI report customizations that you want to migrate. If you didn't do this task, perform the following steps:
 
     1. Navigate to the report page of your process in Power Automate.
@@ -43,6 +41,6 @@ These procedures in **Migrate customized Process Mining Power BI reports** assum
 
 You can transfer the Power BI reports in three ways:
 
-- [Rebind without a composite model](process-mining-alm-rebind-without-comp.md)
-- Rebind with a composite model
+- [Rebind without a using a composite model](process-mining-alm-rebind-without-comp.md)
+- Rebind using a composite model
 - Use Power BI pipelines and then rebind

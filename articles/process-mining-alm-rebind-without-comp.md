@@ -7,7 +7,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 07/10/2024
+ms.date: 07/12/2024
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -19,7 +19,7 @@ search.audienceType:
 
 To use your new model in Power BI, *rebind* redirects live connect reports in the Power BI service. The rebind method you choose depends on whether the two processes you have are using two different workspaces or the same workspace.
 
-## Using two different workspaces
+## With two different workspaces
 
 If you linked your process in Test environment to a workspace (for example, WkSpace B) that's different from the one used by the process in Dev environment (for example, WkSpace A), follow the steps in this section.
 
@@ -28,14 +28,15 @@ If you linked your process in Test environment to a workspace (for example, WkSp
 1. In the **Environments** dropdown menu at the top of the screen, select your Test environment.
 1. On the navigation pane to the left, select **Process mining**.
 
-    If your process was newly copied over to the Test environment, there's an exclamation mark inside a speech bubble on the process. This mark indicates that the process was imported.  Select the process, and then select **Confirm**
+    If your process was newly copied over to the Test environment, there's an exclamation mark inside a speech bubble on the process. This mark indicates that the process was imported.
 
     :::image type="content" source="media/process-mining-alm-rebind-without-comp/speech-bubble.png" alt-text="Screenshot of your process on the Process Mining home page.":::
 
-1. If you newly imported the process, continue to the step 4. If you did not newly import the process, go to step 5.
+1. Select the process, and then select **Confirm**.
+1. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
 
 1. Select a new workspace for this process by following these steps:
-    1. In the **Power BI workspace** dropdown menu, select a *different* workspace, which you will use in the Test environment.
+    1. In the **Power BI workspace** dropdown menu, select a *different* workspace, which you'll use in the Test environment.
     1. In the **Report Name** field, enter the same report name as your previous report.
 
         > [!IMPORTANT]
@@ -45,7 +46,7 @@ If you linked your process in Test environment to a workspace (for example, WkSp
 
        :::image type="content" source="media/process-mining-alm-rebind-without-comp/new-workspace.png" alt-text="Screenshot of selecting a new workspace for your process with the same report name as your previous report.":::
 
-1. (If you skipped step 4) Attach a custom Power BI workspace to the process:
+1. (If you didn't do step 5) Attach a custom Power BI workspace to the process:
     1. Go to the process details page for the process.
     1. On the **Details** card, select **Edit**.
     1. From the **Power BI workspace (optional)** dropdown menu, select your **WkSpace B** Power BI workspace that you want to migrate customizations to.
@@ -58,7 +59,7 @@ If you linked your process in Test environment to a workspace (for example, WkSp
     1. Select **Save** > **Continue**.
     1. From the command bar or in the report view, select **Refresh data**.
 
-### Rebind Power BI report
+### Rebind the Power BI report
 
 1. Sign in to [Power BI](https://msit.powerbi.com/).
 1. From the left navigation pane, select **Workspaces** > your **WkSpace A**.
@@ -72,7 +73,7 @@ If you linked your process in Test environment to a workspace (for example, WkSp
 
     :::image type="content" source="media/process-mining-alm-rebind-without-comp/semantic-model.png" alt-text="Screenshot of rebinding your process after you download, edit, and connect your model.":::
 
-1. **Save** the report.
+1. Save the report bu selecting **Save**.
 1. To publish, from the command bar, select **Publish**.
 1. From the **Publish to Power BI** menu, select your **WkSpace B** > **Select**.
 
@@ -86,21 +87,16 @@ If you linked your process in Test environment to a workspace (for example, WkSp
 
     The report is now successfully migrated from WkSpace A and is connected to the semantic model of the process you had in your WkSpace B.
 
-## Using the same workspace
+## With the same workspace
 
 If you linked your process in Test environment to a workspace (for example, WkSpace A) that's the same as the workspace used for the process in Dev environment (for example, WkSpace A), follow the steps in this section.
 
-1. In the **Environments** dropdown menu at the top of the screen, select your Test environment.
-1. On the navigation pane to the left, select **Process mining**.
+1. [Attach a workspace to your process](#attach-a-workspace-to-your-process) by following steps 1 though 3 in this article.
 
-    If your process was newly copied over to the Test environment, there's an exclamation mark inside a speech bubble on the process. This mark indicates that the process was imported.  Select the process, and then select **Confirm**
-
-    :::image type="content" source="media/process-mining-alm-rebind-without-comp/speech-bubble.png" alt-text="Screenshot of your process on the Process Mining home page.":::
-
-1. If you newly imported the process, continue to the step 4. If you did not newly import the process, go to step 5.
+1. If you newly imported the process, continue to step 3. If you didn't newly import the process, go to step 4.
 
 1. Select the same workspace for this process by following these steps:
-    1. In the **Power BI workspace** dropdown menu, select the *same* workspace, which you will use in the Test environment.
+    1. In the **Power BI workspace** dropdown menu, select the *same* workspace, which you'll use in the Test environment.
     1. In the **Report Name** field, enter a different report name from your previous report name.
 
         > [!IMPORTANT]
@@ -110,7 +106,7 @@ If you linked your process in Test environment to a workspace (for example, WkSp
 
        :::image type="content" source="media/process-mining-alm-rebind-without-comp/new-workspace.png" alt-text="Screenshot of selecting a new workspace for your process with the same report name as your previous report.":::
 
-1. (If you skipped step 4) Attach a custom Power BI workspace to the process:
+1. (If you didn't do step 3) Attach a custom Power BI workspace to the process:
     1. Go to the process details page for the process.
     1. On the **Details** card, select **Edit**.
     1. From the **Power BI workspace (optional)** dropdown menu, select your **WkSpace B** Power BI workspace that you want to migrate customizations to.
@@ -127,7 +123,7 @@ If you linked your process in Test environment to a workspace (for example, WkSp
 
 Some of the steps in the following procedure are the same as the steps for rebinding when using different workspaces. These steps guide you to the previously described steps with a link. As you complete the steps, return here to complete the steps for rebinding when using the same workspace.
 
-1. To download your report in Power BI, do steps 1 through 5 in [Rebind Power BI report](#edit-and-rebind-different-workspaces).
+1. To download your report in Power BI, do steps 1 through 5 in [Rebind Power BI report](#rebind-power-bi-report).
 1. From the **File** menu, select **Save as**.
 1. Enter the same name for the report as your Report B, and then select **Save**.
 
