@@ -1,5 +1,5 @@
 ---
-title: Identify automation opportunities (contains video)
+title: Identify automation opportunities
 description: Identify opportunities to automate your processes with automation recommendations.
 author: donums
 contributors:

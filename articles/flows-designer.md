@@ -8,7 +8,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 11/14/2023
+ms.date: 07/09/2024
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -135,6 +135,28 @@ The following screenshot shows an example of the code for the **Compose** action
 
 :::image type="content" source="media/flows-designer/compose.png" alt-text="Screenshot of the code view of the Compose action card.":::
 
+### Copy and paste actions
+
+You can copy actions to the clipboard whether they're atomic actions or container actions. Examples of atomic actions are `Compose`, `Get items`, `Create item`, and others. Examples of container actions are `Scope`, `Switch`, `Condition`, `Apply to each`, and others.
+
+To copy and paste an action, follow these steps.
+
+1. Right-click on any action (or trigger) you want to copy.
+
+    :::image type="content" source="media/flows-designer/copy-action.png" alt-text="Screenshot of copying an action.":::
+
+1. On the canvas, select **+** on the canvas to add an action, and then select **Paste an action**.
+
+    You can copy and paste actions across different parts of your flow, or in between flows.
+
+    :::image type="content" source="media/flows-designer/paste-action.png" alt-text="Screenshot of pasting an action.":::
+
+    After you paste your action, the copied action name is followed by **-copy**.
+
+    :::image type="content" source="media/flows-designer/copy-paste-final.png" alt-text="Screenshot of an action that was copied and pasted, ending with a hyphen and the word 'copy'.":::
+
+If you don't have access to a mouse, you can use your keyboard. To copy, press **Ctrl** + **C**. To paste, press **Ctrl** + **V**.
+
 ## Canvas
 
 For easy navigation, you can drag your flow on the canvas. You configure the actions of each card in the action configuration pane on the left. The cards on the canvas are compact to allow for easy visibility and navigation, especially in large flows.
@@ -183,13 +205,12 @@ The cloud flows designer has smaller cards to facilitate easy navigation. It als
 
 ## Limitations and known issues
 
-You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following:
+You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following items:
 - Non-Open API flows (If there's Peek code on an action and if you see the APIConnection value instead of OpenAPIConnection in Kind field, it's a non-Open API flow.)
 - Some hybrid triggers:
    - When a flow is run from business process flow (Dataverse)
-   - For a selected message (v2 Teams)
-   - TeamsOnComposeMessage (Teams)
-   - Teams card trigger
+   - For a selected message (v2 Teams) - Plan to enable worldwide by July end
+   - Teams On Compose Message (Teams) - Plan to enable worldwide by July end
    - Microsoft 365 Compliance Connector
 - A comment
 - Power Pages connector
@@ -197,13 +218,12 @@ You might notice that some functionalities that were in the classic designer are
 - Perform a changeset request action (Dataverse)
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
 - Email auto-complete suggestions in _Send Email/Post message_ in Teams actions
-- Copy/Paste supporting Scope, Condition, Do until cosntructs
 - Ability to make manual trigger fields optional
 
 ## Some known issues
 
 - Dynamic content friendly names are getting updated to internal code names upon save.
-- Unnecessary loop while consuming tokens for trigger such as 'When a form is submitted', and others.
+- Autoamted trigger polling setting (How often do you want to check for new items) reverts to 1min after saving
 
 As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is gradually becoming the primary interface.
 
@@ -218,28 +238,28 @@ If you prefer to access features not yet available in the new designer, or encou
 
 ### Why do I get this error "O.split(...).at is not a function" when signing in?
 
-Power Automate designer doesn't support browsers that are more than two (2) years old. You could see the aforementioned or similar errors in the designer if your browser version is old. It is generally a good idea to update your browser to latest version to avoid such issues.
+Power Automate designer doesn't support browsers that are more than two (2) years old. You could see the aforementioned or similar errors in the designer if your browser version is old. It's generally a good idea to update your browser to latest version to avoid such issues.
 
 ### Why do I get this error "The provided flow name contains invalid characters" when importing a flow in a new tenant?
 
-This is a temporary gap, which you can work around by adding a query parameter `v3=false` in your URL.
+This error is a temporary gap, which you can work around by adding a query parameter `v3=false` in your URL.
 
 ### Why do I not see dynamic content from triggers like 'When a response is submitted' or why is the flow automatically putting an unnecessary loop?
 
-This might be because of a temporary issue where the **Split On** setting of the trigger is off. If you enable the setting, the issue should go away.
+This scenario might be because of a temporary issue where the **Split On** setting of the trigger is off. If you enable the setting, the issue should go away.
 
 1. On the [action configuration pane](#action-configuration-pane), select the **Settings** tab.
 1. Under the **Split On** heading, move the toggle to **On**,
 
 ### Why don't I see new or updated SharePoint or Excel column values in my flow?
 
-Power Automate designer requires a flow action to be re-added in order to pick up new entities of the underlying action. For example, if you have a SharePoint _Get item_ action in your flow and Sharepoint item has four (4) columns, the flow allows you to access all four column values of the SharePoint item. Now, if you navigate to SharePoint, add a fifth column, and come back to the flow, you can't access the fifth column unless you delete the _Get item_ action and re-add it again to force the designer to pick up the latest changes. The same behavior applies in Excel columns, Dataverse, Onedrive folder/files, and others.
+Power Automate designer requires a flow action to be re-added in order to pick up new entities of the underlying action. For example, if you have a SharePoint _Get item_ action in your flow and Sharepoint item has four (4) columns, the flow allows you to access all four column values of the SharePoint item. Now, if you navigate to SharePoint, add a fifth column, and come back to the flow, you can't access the fifth column unless you delete the _Get item_ action and re-add it again to force the designer to pick up the latest changes. The same behavior applies in Excel columns, Dataverse, OneDrive folder/files, and others.
 
-### Will the new cloud flows designer eventually fully replace the classic designer?
+### Will the new cloud flows designer eventually replace the classic designer fully?
 
 Yes, once the issues noted here are resolved and the new cloud flows designer can cover most, if not all, of the classic designer scenarios. At this time, the classic designer will be fully replaced.
 
-### See also
+## Related information
 
 [Get started with Copilot in cloud flows](get-started-with-copilot.md)
 
