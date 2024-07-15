@@ -4,7 +4,7 @@ description: Learn how to import a solution.
 author: ChrisGarty
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 04/24/2024
+ms.date: 07/15/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -58,7 +58,7 @@ If the importing user doesn't have permissions to all the connections in the flo
 
 When a solution is being imported, the flows in that solution are turned off and turned on again. This impact can be minimized by using multiple smaller solutions.
 
-### See also
+## Related information
 
 - [Create a solution](./overview-solution-flows.md)
 - [Create a cloud flow in a solution](./create-flow-solution.md)
