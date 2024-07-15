@@ -112,7 +112,7 @@ Use this section to find answers to frequently asked questions.
 
 ### How to prevent users from using Copilot
 
-- To prevent your users from using any of Copilot's capabilities, by contacting Microsoft Support. You can disable and re-enable at tenant level easily using a PowerShell script.
+- To prevent your users from using any of Copilot's capabilities, by contacting Microsoft Support.
 - To prevent users from using Copilot’s generative answers capability, Power Platform administrators can turn off the **Copilot help assistance in Power Automate via Bing** setting in the Power Platform admin center.
 
 ### What are the limitations of Copilot in Power Automate for desktop?
