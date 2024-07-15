@@ -37,7 +37,7 @@ If you linked your process in Test environment to a workspace (for example, WkSp
 
 1. Select a new workspace for this process by following these steps:
     1. In the **Power BI workspace** dropdown menu, select a *different* workspace, which you'll use in the Test environment.
-    1. In the **Report Name** field, enter the same report name as your previous report.
+    1. In the **Report Name** field, enter the *same report name* as your previous report.
 
         > [!IMPORTANT]
         > The report name must be identical to your previous report.
@@ -89,11 +89,11 @@ If you linked your process in Test environment to a workspace (for example, WkSp
 
 ## With the same workspace
 
-If you linked your process in Test environment to a workspace (for example, WkSpace A) that's the same as the workspace used for the process in Dev environment (for example, WkSpace A), follow the steps in this section.
+If you linked your process in your Test environment to a workspace (for example, WkSpace A) that's the same as the workspace used for the process in Dev environment (for example, WkSpace A), follow the steps in this section.
 
 1. [Attach a workspace to your process](#attach-a-workspace-to-your-process) by following steps 1 through 3 in this article.
 
-1. If you newly imported the process, continue to step 3. If you didn't newly import the process, go to step 4.
+1. If you newly imported the process, continue to the following step 3. If you didn't newly import the process, go to step 4.
 
 1. Select the same workspace for this process by following these steps:
     1. In the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
@@ -124,8 +124,6 @@ If you linked your process in Test environment to a workspace (for example, WkSp
 Some of the steps in the following procedure are the same as the steps for rebinding when using different workspaces. These steps guide you to the previously described steps with a link. As you complete the steps, return here to complete the steps for rebinding when using the same workspace.
 
 1. To download your report in Power BI, do steps 1 through 5 in [Rebind Power BI report (different workspaces)](#rebind-the-power-bi-report-different-workspaces).
-
-(#rebind-power-bi-report).
 1. From the **File** menu, select **Save as**.
 1. Enter the *same name* for the report as your Report B, and then select **Save**.
 
