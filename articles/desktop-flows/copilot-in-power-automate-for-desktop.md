@@ -94,15 +94,15 @@ Writing good prompts includes more than just being specific with your request, o
 
 Access the generative answers capability from the console by clicking on the Copilot icon located on the top right corner of the console window.
 
-:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-console-generative-answers.png" alt-text="A screenshot that shows the recorder placeholder.":::
+:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-console-generative-answers.png" alt-text="An image that shows the Copilot button location in the console.":::
 
 Alternatively, you can also access the generative answers capability from the right side of the screen in the designer’s vertical menu.
 
-:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-generative-answers.png" alt-text="A screenshot that shows the recorder placeholder.":::
+:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-generative-answers.png" alt-text="An image that shows the Copilot button location in the designer.":::
 
 From Copilot’s side panel, make sure that the generative answers skill is selected by either selecting the **Help me understand** button on the top or the drop-down menu at the bottom.
 
-:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-generative-answers2.png" alt-text="A screenshot that shows the recorder placeholder.":::
+:::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-generative-answers2.png" alt-text="A screenshot that the generative answers button and picker in the designer's Copilot panel":::
 
 In the Copilot pane, ask any product related questions or use one of the proposed prompts to get you started. The answer generated contains a link to the documentation page to refer you to additional information. Make sure that you always review AI-generated content.
 
