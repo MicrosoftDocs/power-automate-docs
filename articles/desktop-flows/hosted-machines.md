@@ -315,6 +315,7 @@ To use your own network and provision Microsoft Entra joined hosted machines, yo
 - You must have a virtual network in your Azure subscription in the same region where you've created the hosted machines.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
 - A subnet within the virtual network and available IP address space.
+- [Allow network connectivity](/windows-365/enterprise/requirements-network) to required services.
 
 The virtual network needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
 
