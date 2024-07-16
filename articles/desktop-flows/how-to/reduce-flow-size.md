@@ -36,4 +36,4 @@ To remove all UI element screenshots of all desktop flows within a solution, fol
 1. Select all items with name **Desktop flow ui element screenshot**.
 1. Select **Remove** > **Remove from this solution**.
 
-:::image type="content" source="/media/reduce-flow-size/remove-ui-element-screenshots.png" alt-text="Screenshot of a solution containing desktop flow objects.":::
+:::image type="content" source="media/reduce-flow-size/remove-ui-element-screenshots.png" alt-text="Screenshot of a solution containing desktop flow objects.":::
