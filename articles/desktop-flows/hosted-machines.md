@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/24/2024
+ms.date: 07/16/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -31,9 +31,8 @@ Key capabilities:
 - **Connect to your own virtual network**: Securely communicate with each other, the Internet, and your on-premises networks.
 
     > [!NOTE]
-    > Sign-in access is only available to the creator of the hosted machine.
-    > You can run unattended desktop flow using a work or school account that is different from the creator of the hosted machine, provided that you add the account on the hosted machine.
-
+    > - Sign-in access is only available to the creator of the hosted machine.
+    > - You can run unattended desktop flows using a work or school account that is different from the creator of the hosted machine, provided that you add the account on the hosted machine.
 
 ## Licensing requirements
 
@@ -44,7 +43,6 @@ To use hosted machines, you need the following licensing option:
    Assign to your environment as many add-ons as the number of hosted machines you want to run in your environment.
 
 You'll also need the following prerequisite licenses: Windows, Intune, Microsoft Entra ID.
-
 
 ### Trial licenses for evaluation
 
@@ -346,13 +344,13 @@ To use your virtual network for hosted machines, you'll need to grant Windows 36
 - Windows 365 Network User permission on the virtual network
 
 > [!NOTE]
-> For virtual network created before November 26, 2023, the Network Contributor role is used to apply permissions on both the Resource Group and Virtual Network. The new RBAC roles have more specific permissions. To manually remove the existing roles and add the new roles, refer to the following table for the existing roles used on each Azure resource. Before removing the existing roles make sure that the updated roles are assigned.
+> For virtual networks created before November 26, 2023, the Network Contributor role is used to apply permissions on both the resource group and virtual network. The new RBAC roles have more specific permissions. To manually remove the existing roles and add the new roles, refer to the following table for the existing roles used on each Azure resource. Before removing the existing roles, make sure that the updated roles are assigned.
+>
 > | Azure resource | Existing role (before November 26, 2023) | Updated role (after November 26, 2023) |
 > | --- | --- | --- |
 > | Resource group | Network Contributor | Windows 365 Network Interface Contributor |
 > | Virtual network | Network Contributor | Windows 365 Network User |
 > | Subscription | Reader | Reader |
-
 
 ### Share the virtual network with Power Automate makers
 

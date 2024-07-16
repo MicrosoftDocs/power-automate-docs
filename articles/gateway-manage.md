@@ -12,7 +12,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/27/2022
+ms.date: 07/16/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -86,6 +86,3 @@ For more information, see [Understand gateways](gateway-reference.md).
 
 <!-- Image references -->
 [1]: ./media/manage-gateway/view-gateways.png
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
