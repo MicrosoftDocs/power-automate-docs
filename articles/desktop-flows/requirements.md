@@ -68,8 +68,8 @@ For high-density workloads on multi-session enabled Windows Servers, each bot cr
   - Storage: 2 GB
   
 - **Requirements per additional user session**:
-  - 2 CPU cores
-  - 2 GB of RAM
+  - CPU: 2 cores
+  - RAM: 2 GB
 
 > [!NOTE]
 > These recommendations can vary significantly based on background processes that are running, the type of workload being executed, and the specifications of the CPU cores. Therefore, this is only a high-level guidance and may require hardware adjustments depending on these factors. 
