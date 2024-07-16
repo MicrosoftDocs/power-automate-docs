@@ -58,6 +58,34 @@ This article presents all the prerequisites and limitations you should consider 
     | Monitoring | Manage desktop flows | Yes | Yes |
     | Monitoring | View run logs | Yes | Yes |
 
+### Prerequisites for multi-user session enabled Windows Server (High Density)
+
+For high-density workloads on multi-session enabled Windows Servers, each bot creates a separate user session. Therefore, the computer's hardware must support these concurrent Windows sessions. At a high level, we recommend the following:
+
+- **Basic requirements for the first session**:
+  - CPU: 2 cores
+  - RAM: 4 GB
+  - Storage: 2 GB
+  
+- **Requirements per additional user session**:
+  - 2 CPU cores
+  - 2 GB of RAM
+
+> [!NOTE]
+> These recommendations can vary significantly based on background processes that are running, the type of workload being executed, and the specifications of the CPU cores. Therefore, this is only a high-level guidance and may require hardware adjustments depending on these factors. 
+
+To monitor the performance of individual user sessions:
+1. Open Task Manager.
+2. Click on the "Users" tab.
+3. Review the RAM and CPU usage for each session.
+
+To monitor the performance of individual user sessions:
+1. Open Task Manager.
+2. Click on the "Users" tab.
+3. Review the RAM and CPU usage for each session.
+
+This high-level guidance helps ensure your system can handle high density workloads effectively.
+
 - Access as described in [IP Address configuration](../ip-address-configuration.md)
 
 - TLS 1.2
