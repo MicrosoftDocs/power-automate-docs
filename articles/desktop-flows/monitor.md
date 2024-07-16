@@ -12,7 +12,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/04/2020
+ms.date: 06/20/2024
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -31,8 +31,6 @@ For an overview of the desktop flows in your environment, visit the [Microsoft P
 ## Learn more
 
 - Analyze the [desktop flows risk assessment](/power-platform/guidance/coe/power-bi-govern#desktop-flows-risk-assessment) in your environment.
-- [Create Windows recorder (V1) flows](create-desktop.md).
-- [Create Selenium IDE flows](create-web.md).
 - Run [desktop flows](run-desktop-flow.md).
 
 

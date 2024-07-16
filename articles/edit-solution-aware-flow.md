@@ -107,7 +107,9 @@ The **Save As** capability can be used to duplicate a solution cloud flow. If an
 
 - [Manage and edit a cloud flow](/power-automate/get-started-logic-flow#manage-a-cloud-flow)
 - [Create a solution](./overview-solution-flows.md)
+- [Use drafts and versioning](./drafts-versioning.md)
 - [Create a cloud flow in a solution](./create-flow-solution.md)
+- [Set a preferred solution](/power-apps/maker/data-platform/preferred-solution)
 - [Export a solution](./export-flow-solution.md)
 - [Import a solution](./import-flow-solution.md)
 - [Remove a solution-aware flow](./remove-solution-aware-flow.md)
