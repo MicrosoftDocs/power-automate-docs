@@ -63,7 +63,7 @@ This article presents all the prerequisites and limitations you should consider 
 For high-density workloads on multi-session enabled Windows Servers, each bot creates a separate user session. Therefore, the computer's hardware must support these concurrent Windows sessions. At a high level, we recommend the following:
 
 - **Basic requirements for the first session**:
-  - CPU: 2 cores
+  - CPU: 4 cores
   - RAM: 4 GB
   - Storage: 2 GB
   
