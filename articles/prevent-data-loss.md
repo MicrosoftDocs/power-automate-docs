@@ -1,5 +1,5 @@
 ---
-title: Set a policy to help prevent data loss
+title: Data loss prevention (DLP) policies
 description: Learn about data loss prevention policies for Power Automate.
 services: ''
 ms.subservice: cloud-flow
@@ -14,13 +14,13 @@ ms.reviewer: angieandrews
 ms.custom: bap-template
 ---
 
-# Set a policy to help prevent data loss
+# Data loss prevention (DLP) policies
 
 An organization's data is critical to its success. Its data needs to be readily available for decision-making, but at the same time protected so that it isn't shared with audiences that shouldn't have access to it. To protect your business data, Power Automate gives you the ability to create and enforce policies that define which connectors can access and share it. The policies that define how data can be shared are referred to as data loss prevention (DLP) policies.
 
 Administrators control DLP policies. If a DLP policy is blocking your flows from running, contact your administrator.
 
-[Learn more about protecting your data with data loss prevention policies](/power-platform/admin/wp-data-loss-prevention).
+[Learn more about protecting your data with Power Platform data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention).
 
 ## Data loss prevention for desktop flows
 
@@ -244,10 +244,11 @@ Suspended flows show as suspended in the Power Automate maker portal and the Pow
 
 [Learn about DLP known issues](/power-platform/admin/dlp-known-issues).
 
-### See also
+### Related information
 
-[Learn more about environments](environments-overview-admin.md)  
-[Learn more about Power Automate](getting-started.md)  
-[Learn more about the admin center](admin-center-introduction.md)  
+- [Power Platform DLP policies](/power-platform/admin/wp-data-loss-prevention)
+- [Learn more about environments](environments-overview-admin.md)  
+- [Learn more about Power Automate](getting-started.md)  
+- [Learn more about the admin center](admin-center-introduction.md)  
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
