@@ -32,6 +32,7 @@ Key capabilities:
 
     > [!NOTE]
     > Sign-in access is only available to the creator of the hosted machine.
+    > You can run unattended desktop flow using a work or school account that is different from the creator of the hosted machine, provided that you add the account on the hosted machine.
 
 
 ## Licensing requirements
@@ -468,6 +469,7 @@ You can share your hosted machines with other users so they can run desktop flow
 
 > [!NOTE]
 > - Sign-in access is only available to the creator of the hosted machine.
+> - You can run unattended desktop flow using a work or school account that is different from the creator of the hosted machine, provided that you add the account on the hosted machine.
 > - When a user isn't part of an environment anymore, you may continue to see the user as deactivated. You'll be notified in the **Manage access** section of the hosted machine if it's shared with deactivated users. In this situation, remove access to them.
 
 ## Run desktop flows on hosted machines
