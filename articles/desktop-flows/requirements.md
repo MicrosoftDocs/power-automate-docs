@@ -73,18 +73,10 @@ For high-density workloads on multi-session enabled Windows operation systems, e
 
 > [!NOTE]
 > These recommendations can vary significantly based on background processes that are running, the type of workload being executed, and the specifications of the CPU cores. Therefore, this is only a high-level guidance and may require hardware adjustments depending on these factors. 
-
-To monitor the performance of individual user sessions:
-1. Open Task Manager.
-2. Click on the "Users" tab.
-3. Review the RAM and CPU usage for each session.
-
-To monitor the performance of individual user sessions:
-1. Open Task Manager.
-2. Click on the "Users" tab.
-3. Review the RAM and CPU usage for each session.
-
-This high-level guidance helps ensure your system can handle high density workloads effectively.
+> To monitor the performance of individual user sessions:
+> 1. Open Task Manager.
+> 2. Select the "Users" tab.
+> 3. Review the RAM and CPU usage for each session.
 
 - Access as described in [IP Address configuration](../ip-address-configuration.md)
 
