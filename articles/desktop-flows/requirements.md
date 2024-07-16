@@ -58,9 +58,9 @@ This article presents all the prerequisites and limitations you should consider 
     | Monitoring | Manage desktop flows | Yes | Yes |
     | Monitoring | View run logs | Yes | Yes |
 
-### Prerequisites for multi-user session enabled Windows Server (High Density)
+### Prerequisites for multi-user session enabled Windows operating system (High Density)
 
-For high-density workloads on multi-session enabled Windows Servers, each bot creates a separate user session. Therefore, the computer's hardware must support these concurrent Windows sessions. At a high level, we recommend the following:
+For high-density workloads on multi-session enabled Windows operation systems, each bot creates a separate user session. Therefore, the computer's hardware must support these concurrent Windows sessions. At a high level, we recommend the following:
 
 - **Basic requirements for the first user session**:
   - CPU: 4 cores
