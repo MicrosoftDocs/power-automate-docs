@@ -4,7 +4,7 @@ description: Learn about the available flow control actions in desktop flows.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 02/08/2023
+ms.date: 07/17/2024
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -142,6 +142,8 @@ This action doesn't include any exceptions.
 ## <a name="label"></a> Label
 
 Acts as the destination of a 'go to' statement.
+
+From version 2.46 and on, labels can also be used in a different scope than the corresponding **Go to** action (e.g. in a conditional block), except error blocks, loops, and/or other subflows.
 
 ### Input parameters
 
