@@ -421,8 +421,6 @@
         href: ./desktop-flows/hosted-machines.md
       - name: Hosted machine groups
         href: ./desktop-flows/hosted-machine-groups.md
-    - name: Scale with AVD starter kit (deprecated)
-      href: ./desktop-flows/avd-overview.md
   - name: Create credentials
     items:
     - name: Azure Key Vault credentials
@@ -636,6 +634,8 @@
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
     - name: Configure proxy settings
       href: ./desktop-flows/how-to/proxy-settings.md
+    - name: Reduce desktop flow size in solution
+      href: ./desktop-flows/how-to/reduce-flow-size.md
     - name: Use logical operations on conditional statements
       href: ./desktop-flows/how-to/logical-operations-conditional-statements.md
     - name: Handle custom forms
