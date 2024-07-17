@@ -1,5 +1,5 @@
 ---
-title: Create an approval flow that requires everyone to approve(contains video)
+title: Create an approval flow that requires everyone to approve
 description: Learn how to create an approval flow that requires everyone to approve or one person to reject a request.
 services: ''
 suite: flow

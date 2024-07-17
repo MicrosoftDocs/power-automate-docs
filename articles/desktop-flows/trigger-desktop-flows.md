@@ -4,10 +4,12 @@ description: See how to trigger Power Automate desktop flows from cloud flows.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/19/2024
+ms.date: 06/25/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
+  - rpapostolis
+  - DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -84,5 +86,6 @@ To trigger a desktop flow from a cloud flow:
 ## Known limitations
 
 - We currently support up to 70 desktop flows runs per minute for every connection.
+- Cancelling a parent cloud flow doesn't stop its child desktop flows if the **Asynchronous Pattern** is disabled under the 'Run a flow built with Power Automate for desktop' action settings.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

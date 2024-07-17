@@ -3,11 +3,12 @@ title: Prerequisites and limitations
 description: Learn about the prerequisites and limitations of Power Automate for desktop.
 author: mattp123
 ms.topic: overview
-ms.date: 09/13/2023
+ms.date: 06/20/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
 - jpapadimitriou
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -19,12 +20,6 @@ ms.custom: bap-template
 # Prerequisites and limitations
 
 This article presents all the prerequisites and limitations you should consider before installing and using Power Automate on your desktop.
-
-> [!IMPORTANT]
->
-> - Selenium IDE is deprecated and will no longer work after February 28th, 2023.
-> - Windows recorder (V1) is deprecated and no longer works.
-> - Migrate your flows created with these solutions to Power Automate for desktop or delete them.
 
 ## Prerequisites
 
@@ -53,12 +48,11 @@ This article presents all the prerequisites and limitations you should consider 
 
 - A device that runs Windows 10 (Home, Pro, Enterprise), Windows 11 (Home, Pro, Enterprise), Windows Server 2016, Windows Server 2019, or Windows Server 2022 (devices with ARM processors aren't supported)
 
-    If your device runs Windows 10 Home or Windows 11 Home, you can use Power Automate to create desktop flows and monitor them on the [Power Automate portal](https://make.powerautomate.com). However, you can't trigger desktop flows from the cloud and run other types of desktop flows (Windows recorder V1 and Selenium IDE).
+    If your device runs Windows 10 Home or Windows 11 Home, you can use Power Automate to create desktop flows and monitor them on the [Power Automate portal](https://make.powerautomate.com). However, you can't trigger desktop flows from the cloud.
   
     | Activity | Description | Windows Home | Windows Enterprise/Pro/Server |
     |---------|------|----------|-----------|
     | Authoring | Create with Power Automate for desktop | Yes | Yes |
-    | Authoring | Create with Selenium IDE | No | Yes |
     | Runtime | Local runtime (attended) | Yes | Yes |
     | Runtime | Cloud runtime (attended/unattended) | No | Yes |
     | Monitoring | Manage desktop flows | Yes | Yes |
@@ -116,6 +110,7 @@ The following table describes what features are available for different account 
 
 ## Known issues and limitations
 
+- Desktop flows in v1 [schema](schema.md) environments can't exceed 100 MB in size. If a desktop flow exceeds the size limit, separate its logic into smaller desktop flows.
 - Only work or school account users with a Dataverse database provisioned in their default environment can create Power Automate desktop flows. Power Automate desktop flows are stored in the default environment with the Dataverse database.
 
   If the Dataverse database doesn't exist in the default environment, the user won't be able to create desktop flows, and will be prompted to create a database. There will be no connectivity of Power Automate desktop flows with cloud flows.  
