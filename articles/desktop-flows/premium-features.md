@@ -4,7 +4,7 @@ description: Premium robotic process automation (RPA) features
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/26/2024
+ms.date: 18/07/2024
 ms.author: dipapa
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
@@ -13,6 +13,7 @@ contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskourass
+- cvassallo
 search.audienceType: 
   - flowmaker
   - enduser
@@ -20,13 +21,13 @@ search.audienceType:
 
 # Premium RPA features
 
-This article lists the premium robotic process automation (RPA) features and benefits that are included in the Power Automate Premium plan (previously Power Automate per user with attended RPA) and are available to [organization premium accounts](getting-started-org.md).
+This article lists the premium robotic process automation (RPA) features and benefits that are included in the [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) user license and are available to [organization premium accounts](getting-started-org.md).
 
 ## Premium feature list
 
 |Feature/Benefit | Description|Additional information|
 |----------------|------------|----------------------|
-|Automatic triggering/scheduling and integration with cloud flows|Trigger/schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger desktop flows from cloud flows](trigger-desktop-flows.md)|
+|Automatic triggering/scheduling and integration with cloud flows<sup>|Trigger/schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger desktop flows from cloud flows](trigger-desktop-flows.md)|
 |Flow triggering via desktop shortcut|Trigger local attended desktop flows through their desktop shortcuts.|[Learn how to trigger a desktop flow via shortcut](run-desktop-flows-url-shortcuts.md)|
 |Flow triggering via URL|Trigger local attended desktop flows through their run URLs from anywhere on your machine.|[Learn how to trigger a desktop flow via URL](run-desktop-flows-url-shortcuts.md)|
 |Flow triggering in Picture-in-Picture|Trigger attended desktop flows within a virtual window.|[Learn how to trigger a desktop in Picture-in-Picture](run-desktop-flows-pip.md)|
@@ -46,22 +47,26 @@ This article lists the premium robotic process automation (RPA) features and ben
 |Customer support|Receive prompt technical assistance from a Microsoft support professional.|[Power Automate support](https://make.powerautomate.com/support/)|
 |Work queues|Use work queues to store, prioritize, distribute and process work items.| [Learn more about work queues](work-queues.md)|
 
+1. 
+
 > [!IMPORTANT]
 >
 > - Unattended desktop flow executions require the Power Automate Process plan (previously named Power Automate per flow).
 > - AI Builder is licensed as an add-on for existing subscription plans. A certain number of AI Builder credits are included in the Power Automate Premium plan (previously Power Automate per user with attended RPA).
 
-## Plans that provide entitlements for the premium RPA features
+## Licenses that provide entitlements for the premium RPA features
 
-### Trial plan
+Compare license entitlements [here]](/power-platform/admin/power-automate-licensing/types#compare-power-automate-licenses).
 
-The Power Automate for desktop free trial plan is available for 90 days. Free users in an organization can sign up for this trial through the **Start trial** option found within the **Go premium** section of Power Automate for desktop or the **desktop flows** sections of the Power Automate portal. Free users are also prompted to start a trial while they attempt to add the **Run a flow built with Power Automate for desktop** action in a cloud flow.
+### Trial license
 
-### Standalone plan
+The [Power Automate Trial](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-trial-license) user license has a 90 days lifetime. Free users in an organization can sign up for this trial through the **Start trial** option found within the **Go premium** section of Power Automate for desktop or the **desktop flows** sections of the Power Automate portal. Free users are also prompted to start a trial while they attempt to add the **Run a flow built with Power Automate for desktop** action in a cloud flow.
 
-The Power Automate Premium plan (paid or trial, previously Power Automate per user with attended RPA) gives full access to all RPA premium features and benefits. Both Power Platform admins and individual users and makers can purchase licenses for Power Automate. You can find more information about purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
+### Power Automate Premium license
 
-### Pay-as-you-go plan
+The [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) license gives access to all RPA premium features (except unattended RPA & hosted RPA). Both Power Platform admins and individual users and makers can purchase licenses for Power Automate. You can find more information about purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
+
+### Pay-as-you-go
 
 Pay-as-you-go is a new way to pay for Power Automate using an Azure subscription. This allows you to get started building and sharing flows without any license commitment or upfront purchasing. Desktop flow users in a pay-as-you-go-enabled environment have access to most of the premium features listed above in the scope of that specific environment. You can find more information regarding the pay-as-you-go plan in [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview).
 
