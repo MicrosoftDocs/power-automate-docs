@@ -1107,7 +1107,7 @@
     displayName: Monitor desktop flows in the Center of Excellence (CoE)
   - name: Machine group certificate renewal for admins
     href: ./desktop-flows/machine-group-certificates-admins.md
-  - name: Set a policy to help prevent data loss
+  - name: Data loss prevention (DLP) policy creation
     href: prevent-data-loss.md
   - name: Support Intune in mobile apps
     href: intune-support.md

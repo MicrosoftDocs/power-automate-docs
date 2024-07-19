@@ -1,10 +1,10 @@
 ---
-title: Data loss prevention (DLP) policies
+title: Data loss prevention (DLP) policy creation
 description: Learn about data loss prevention policies for Power Automate.
 services: ''
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 06/11/2024
+ms.date: 07/19/2024
 ms.author: cgarty
 author: ChrisGarty
 contributors:
@@ -14,7 +14,7 @@ ms.reviewer: angieandrews
 ms.custom: bap-template
 ---
 
-# Data loss prevention (DLP) policies
+# Data loss prevention (DLP) policy creation
 
 An organization's data is critical to its success. Its data needs to be readily available for decision-making, but at the same time protected so that it isn't shared with audiences that shouldn't have access to it. To protect your business data, Power Automate gives you the ability to create and enforce policies that define which connectors can access and share it. The policies that define how data can be shared are referred to as data loss prevention (DLP) policies.
 
@@ -38,7 +38,7 @@ By default, desktop flow action groups don't appear when you're creating a DLP p
 If you've opted for the public preview, the **Desktop flow actions in DLP** setting is already enabled and can't be changed.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the left side panel, select **Settings**.
+1. On the left side panel, select **Settings**.
 1. On the **Tenant settings** page, select **Desktop flow actions in DLP**.
 1. Turn on **Show desktop flow actions in DLP policies**, and then select **Save**.
 
