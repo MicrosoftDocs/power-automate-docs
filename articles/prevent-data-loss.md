@@ -244,7 +244,7 @@ Suspended flows show as suspended in the Power Automate maker portal and the Pow
 
 [Learn about DLP known issues](/power-platform/admin/dlp-known-issues).
 
-### Related information
+## Related information
 
 - [Power Platform DLP policies](/power-platform/admin/wp-data-loss-prevention)
 - [Learn more about environments](environments-overview-admin.md)  
