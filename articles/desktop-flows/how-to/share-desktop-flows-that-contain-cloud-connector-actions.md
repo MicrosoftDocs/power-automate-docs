@@ -1,6 +1,6 @@
 ---
 title: Share desktop flows that contain cloud connector actions
-description: Learn how to share desktpo flows that contain cloud connnector actions.
+description: Learn how to share desktop flows that contain cloud connector actions.
 author: jpapadimitriou
 
 ms.subservice: desktop-flow
@@ -32,9 +32,9 @@ You can share a desktop flow that uses connections with
 ## Executing a shared desktop flow that contains cloud connector actions as a user
 
 - Makers with **user** access on a shared desktop flow must always bring their own connections during execution. 
-- They can only perform attended, console initiated runs.
+- They can only perform attended. Console initiated runs.
 
-Once you execute a shared desktop flow that contains cloud connector actions through the console you will be prompted by the **bring your own connection** dialog to provide a valid connection to be used. 
+Once you execute a shared desktop flow that contains cloud connector actions through the console, you are prompted by the **bring your own connection** dialog to provide a valid connection to be used. 
 
 :::image type="content" source="media/share-desktop-flows-that-contain-cloud-connector-actions/bring-your-own-connection.png" alt-text="Screenshot of the BYOC dialog" border="false":::
 
@@ -75,4 +75,4 @@ After you confirm your selection, the connection reference is embedded in the de
 
 ### Console runs
 
-Just as in the user use-case, once you execute a shared desktop flow that contains cloud connector actions through the console you will be prompted by the **bring your own connection** dialog to provide a valid connection to be used. 
+As in the user use-case, once you execute a shared desktop flow that contains cloud connector actions through the console you are prompted by the **bring your own connection** dialog to provide a valid connection to be used. 
