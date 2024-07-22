@@ -4,7 +4,7 @@ description: Learn how to import a solution.
 author: ChrisGarty
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 04/24/2024
+ms.date: 07/15/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -54,7 +54,11 @@ If the flow already exists in the target environment, then the import of an upda
 
 If the importing user doesn't have permissions to all the connections in the flow, then the [connections need to be shared](/power-apps/maker/data-platform/create-connection-reference#share-connections-with-another-user-so-flows-can-be-enabled) with the importing user so that they can turn on the flow.
 
-### See also
+### Does importing a solution cause flows to turn off?
+
+When a solution is being imported, the flows in that solution are turned off and turned on again. This impact can be minimized by using multiple smaller solutions.
+
+## Related information
 
 - [Create a solution](./overview-solution-flows.md)
 - [Create a cloud flow in a solution](./create-flow-solution.md)
@@ -63,5 +67,6 @@ If the importing user doesn't have permissions to all the connections in the flo
 - [Remove a solution-aware flow](.//remove-solution-aware-flow.md)
 - [Use connection references](/power-apps/maker/data-platform/create-connection-reference)
 - [Manage connections in Power Automate](/power-automate/add-manage-connections)
+- [Import solutions (Power Apps)](/power-apps/maker/data-platform/import-update-export-solutions)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
