@@ -1,0 +1,202 @@
+---
+title: Rebind reports using a composite model
+description: Learn how to rebind reports using a composite model with different workspaces or the same workspace.
+author: donums
+contributors:
+  - donums
+  - v-aangie  
+ms.subservice: process-advisor
+ms.topic: conceptual
+ms.date: 08/01/2024
+ms.author: derahonuorah
+ms.reviewer: angieandrews
+search.audienceType: 
+  - flowmaker
+  - enduser
+---
+
+# Rebind reports using a composite model
+
+To transfer the composite model of your Process Mining report from one workspace to another, follow the steps in this article. Learn more about composite models in [Use composite models in Power BI Desktop](/power-bi/transform-model/desktop-composite-models) and [Customize reports in Power BI workspace](process-mining-pbi-workspace.md#customize-reports-in-power-bi-workspace).
+
+## With two different workspaces
+
+If you linked your process in the Test environment to a workspace (for example, WkSpace B) that's different from the one used by the process in the Dev environment (for example, WkSpace A), follow the steps in this section.
+
+### Attach a workspace to your process
+
+[!INCLUDE[alm-attach-workspace](./includes/alm-attach-workspace.md)]
+
+1. Sign in to [Power BI](https://msit.powerbi.com/home).
+
+Before you get started, ensure that the states of your reports, workspaces, and their lineages correspond to what's in the following sections.
+
+### State of your Report A (different workspaces)
+
+The following report and its composite model are in WkSpace A. Your report can look like this, or have customizations of your choice.
+
+:::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-report-a.png" alt-text="Screenshot of Report A.":::
+
+### State of your WkSpace A (different workspaces)
+
+Your **WkSpace A** should have the following entities:
+
+|Number  |Description  |Entity  |
+|:-:|---------|---------|
+|1  | The original report of your process.        | **Report A**        |
+|2  | The original semantic model of your process.  | **Report_A_Dataset_206…**   |
+|3  | The updated report with the composite model.    | **Report A**  |
+|4  | The composite model.   | **Report A**   |
+
+The numbering corresponds with the numbering of entities in the following screenshot.
+
+There are three (3) entities titled 'Report A'. You can differentiate them using their icons and their **Refreshed** timestamps:
+
+- The icon with the yellow bars represents the reports. The other icon is that of the composite model or semantic model.
+- The report with the same **Refreshed** timestamp as the composite model is the report of the composite model.
+
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-a.png" alt-text="Screenshot of entities and refreshed timestamps for WkSpace A.":::
+
+Your lineage view should look like the following screenshot. The semantic model points to the composite model, which then points to a report.
+
+:::image type="content" source="media/process-mining-alm-rebind-with-comp/wkspace-a-semantic.png" alt-text="Screenshot of the semantic model pointing to the composite model, which then points to a report.":::
+
+### State of your WkSpace B (different workspaces)
+
+Your **WkSpace B** should have the following entities:
+
+|Number  |Description  |Entity  |
+|:-:|---------|---------|
+|1  | The original report of the process you transferred from the Dev environment.   | **Report A**        |
+|2  | The original semantic model of the process you transferred from the Dev environment.  | **Report_A_Dataset_206…**   |
+
+The numbering corresponds with the numbering of entities in the following screenshot.
+
+:::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-b.png" alt-text="Screenshot of entities and refreshed timestamps for WkSpace A.":::
+
+Your lineage views should like the following screenshot. A semantic model points to a report:
+
+:::image type="content" source="media/process-mining-alm-rebind-with-comp/wkspace-b-semantic.png" alt-text="Screenshot of the lineage view of the semantic model pointing to a report.":::
+
+To understand the distinctions between each entity, familiarize yourself with the entities before you proceed.
+
+### Create the report in Power BI (different workspaces)
+
+1. Sign in to [Power BI](https://msit.powerbi.com/).
+1. Navigate to your **WkSpace A**.
+1. From the list of entities, select the three dots beside the composite model, and then select **Download this file**.
+
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/download-this-file.png" alt-text="Screenshot of downloading the file.":::
+
+1. In [Power BI desktop](https://msit.powerbi.com/), open the downloaded file.
+1. From the home tab, select **Transform data** > **Data source settings**. Notice the **Direct Query connection** in the Data source settings.
+1. Select **Change Source**.
+1. Search for and select for the semantic model of the process that was created in Test. Its semantic model is in your **WkSpace B**.
+1. Select **Create**.
+
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/select-dataset-to-create-report.png" alt-text="Screenshot of downloading the file.":::
+
+1. When the **Connect to your data** message appears, select relevant tables, and then select **Submit**.
+1. When the query changes are applied, select **Close**.
+1. Save the report.
+1. From the **Home** tab, select **Publish**.
+1. Select your **WkSpace B** as the destination, and then choose **Select**.
+1. When the publishing completes, go to your **WkSpace B** in Power BI to confirm the changes were applied.
+
+    The lineage view now shows the composite model. In the following screenshot, it's the first red box.
+
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/composite-b.png" alt-text="Screenshot of the lineage view of the composite model.":::
+
+1. Select the **Report A** that the composite model points to. In the previous screenshot, it's the second red box.
+1. Select **Open report**.
+
+    The report looks like that of the composite model from **WkSpace A** with the **Self Loop** percentage in the report.
+
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/self-loop-b.png" alt-text="Screenshot of the composite model with the 'Self Loop' percentage.":::
+
+## With the same workspace
+
+If you linked your process in your Test environment to a workspace (for example, WkSpace B) that's the same as the one used for the process in your Dev environment (for example, WkSpace A), follow these steps:
+
+1. Repeat steps 1 through 3 in [Attach a workspace to your process](#attach-a-workspace-to-your-process) in this article.
+1. If you newly imported the process, continue to step 3 in this section. If you didn't newly import the process, go to step 5 in this section.
+1. Select the same workspace for this process by following these steps:
+    1. In the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
+    1. In the **Report Name** field, enter a *different report name* from your previous report name.
+
+        > [!IMPORTANT]
+        > The report name must be different from your previous report name.
+
+1. To continue setting up the process, select **Continue**.
+
+       :::image type="content" source="media/process-mining-alm-rebind-with-comp/new-workspace-same-with.png" alt-text="Screenshot of selecting a new workspace for your process with a different report name from your previous report.":::
+
+1. (If you didn't do step 3) Attach a custom Power BI workspace to the process:
+    1. Go to the process details page for the process.
+    1. On the **Details** card, select **Edit**.
+    1. From the **Power BI workspace (optional)** dropdown menu, select your **WkSpace A** Power BI workspace.
+    1. Provide a *different report name* from the name you used for the process in Dev environment.
+
+        > [!IMPORTANT]
+        >
+        > The report name must be different from the report name of the process in Dev environment.
+
+    1. Select **Save** > **Continue**.
+    1. From the command bar or in the report view, select **Refresh data**.
+1. Sign in to [Power BI](https://msit.powerbi.com/home).
+
+Before you get started, ensure that the states of your reports, workspaces, and their lineages correspond to what's in the following sections.
+
+### State of your WkSpace A (same workspace)
+
+Your **WkSpace A** should have the following entities:
+
+|Number  |Description  |Entity  |
+|:-:|---------|---------|
+|1  | The original report of your process.        | **Report A**        |
+|2  | The original semantic model of your process.  | **Report_A_Dataset_206…**   |
+|3  | The updated report with the composite model.    | **Report A**  |
+|4  | The composite model.   | **Report A**   |
+|5  | The original report of the copied process.  | **Report B**  |
+|6  | The original semantic model of the copied process   | **Report_B_Dataset_206…** |
+
+The numbering corresponds with the numbering of entities in the following screenshot.
+
+There are three (3) entities titled 'Report A'. You can differentiate them using their icons and their **Refreshed** timestamps:
+
+- The icon with the yellow bars represents the reports and the other icon is that of the composite model or semantic model.
+- The report with the same Refreshed timestamp as the composite model is the report of the composite model.
+
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-a-same.png" alt-text="Screenshot of entities and refreshed timestamps.":::
+
+Your lineage view should look like the following screenshot:
+
+:::image type="content" source="media/process-mining-alm-rebind-with-comp/wkspace-a-semantic-same.png" alt-text="Screenshot of the lineage view of the semantic model.":::
+
+### Create the report in Power BI (same workspace)
+
+1. Repeat steps 1 through 4 in [Create the report in Power BI (different workspaces)](#create-the-report-in-power-bi-different-workspaces).
+1. From the **File** menu, select **Save as** and give the report a new name such as 'Report B'.
+1. From the home tab, select **Transform data** > **Data source settings**. Notice the **Direct Query connection** in the Data source settings.
+1. Select **Change Source**.
+1. Search for and select the semantic model of the process that's in your Test environment. The semantic model is **Report B_Dataset_206…** and it should be in your WkSpace A.
+1. Select **Create**.
+
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/select-dataset-to-create-report-same.png" alt-text="Screenshot of the dataset to create a report using the same workspace.":::
+
+1. When the **Connect to your data** message appears, select relevant tables, and then select **Submit**.
+1. When the query changes are applied, select **Close**.
+1. Save the report.
+1. From the **Home** tab, select **Publish**.
+1. Select your **WkSpace A** as the destination, and then choose **Select**.
+1. When the publishing completes, go to your **WkSpace A** in Power BI to confirm the changes are applied.
+
+    The lineage view now shows the composite model.
+
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-a-same-lineage.png" alt-text="Screenshot of the composit model lineage view.":::
+
+1. Select the **Report B** that the composite model points to. It's the second red box in the previous image.
+1. Select **Open report**.
+
+    The report looks like that of the composite model from **WkSpace A** with the **Self Loop** percentage in the report. For a screenshot, go to step 16 in [Create the report in Power BI (different workspaces)](#create-the-report-in-power-bi-different-workspaces).
+
