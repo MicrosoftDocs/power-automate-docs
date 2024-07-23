@@ -5,11 +5,12 @@ author: jpapadimitriou
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/22/2024
+ms.date: 07/23/2024
 ms.author: dipapa
 ms.reviewer: 
 contributors:
 - jpapadimitriou
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -25,7 +26,7 @@ Connectors require [connections](../../add-manage-connections.md). In Power Auto
 
 ## Connection references
 
-Desktop flows utilize [connection references](https://learn.microsoft.com/power-apps/maker/data-platform/create-connection-reference). In Power Automate, a connection reference is an abstraction layer that points to a specific connection used by actions within your flows. Instead of hardcoding connections directly into each action, connection references allow for a more modular and reusable approach, enabling easier management and sharing of flows, especially within Power Platform solutions.
+Desktop flows utilize [connection references](/power-apps/maker/data-platform/create-connection-reference). In Power Automate, a connection reference is an abstraction layer that points to a specific connection used by actions within your flows. Instead of hardcoding connections directly into each action, connection references allow for a more modular and reusable approach, enabling easier management and sharing of flows, especially within Power Platform solutions.
 
 ### Key concepts
 

@@ -5,11 +5,12 @@ author: jpapadimitriou
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/22/2024
+ms.date: 07/23/2024
 ms.author: dipapa
 ms.reviewer: 
 contributors:
 - jpapadimitriou
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -20,7 +21,7 @@ search.audienceType:
 Sharing a desktop flow that uses connectors follows the same principles as any other desktop flow. However, there are a few more steps required due to the connection references in the desktop flows.
 
 > [!NOTE]
-> Connectors require [connections](https://learn.microsoft.com/power-automate/add-manage-connections). In Power Automate, a connection refers to the authenticated link between Power Automate and an external service. This connection allows Power Automate to access and perform actions on data from various services, such as Office 365, SharePoint, SQL Server, and many others. Each connection is specific to a user and requires authentication to ensure secure access to data and services. This is typically done using OAuth, API keys, or other authentication methods provided by the external service.
+> Connectors require [connections](../../add-manage-connections.md). In Power Automate, a connection refers to the authenticated link between Power Automate and an external service. This connection allows Power Automate to access and perform actions on data from various services, such as Office 365, SharePoint, SQL Server, and many others. Each connection is specific to a user and requires authentication to ensure secure access to data and services. This is typically done using OAuth, API keys, or other authentication methods provided by the external service.
 
 > [!IMPORTANT]
 > Sharing a desktop flow does not automatically provide access to the underlying connections utilized.
@@ -36,7 +37,7 @@ Makers with user access on a shared desktop flow must always bring their own con
 
 Once you run a shared desktop flow that contains connector actions through the console, a prompt appears for you to provide a valid connection to be used.
 
-:::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/bring-your-own-connection.png" alt-text="Screenshot of the bring your own connection dialog." border="false":::
+:::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/bring-your-own-connection.png" alt-text="Screenshot of the dialog for you to add a connection." border="false":::
 
 If there are compatible existing connections available, the first one is selected by default.
 
@@ -62,12 +63,12 @@ To embed a connection reference to a flow that you have access to as a co-owner:
 1. Select the desktop flow in [Power Automate](https://make.powerautomate.com) and then select **Details**.
 1. In the **Connection references** section, select **Manage.**
 
-    :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/manage-connection-references-button.png" alt-text="Screenshot of the Manage Connections button" border="false":::
+    :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/manage-connection-references-button.png" alt-text="Screenshot of the Manage Connections button." border="false":::
 
     In the **Connection references** screen, all of the connection references used in a flow are displayed.
 1. Set the **Embed in desktop flow** option to **Yes** to enable it.
 
-    :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/embed-connection-reference-to-a-flow.png" alt-text="Screenshot of the Manage Connections menu" border="false":::
+    :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/embed-connection-reference-to-a-flow.png" alt-text="Screenshot of the Manage Connections menu." border="false":::
 
 1. After you confirm your selection, the connection reference is embedded in the desktop flow.
 
