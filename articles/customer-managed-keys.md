@@ -5,10 +5,11 @@ suite: flow
 author: v-aangie
 contributors:
   - samathur
+  - ChrisGarty
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 05/13/2024
+ms.date: 07/23/2024
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -40,7 +41,7 @@ If there are existing flows in the environment being enabled for CMK, a warning 
 
 ## Known limitations
 
-- When an environment is enabled for customer-managed keys, then Power Automate data cannot be sent to the analytics pipeline for [tenant-wide reporting in PPAC](/power-platform/admin/power-automate-analytics-reports), [Data Export to Data Lake](/power-platform/admin/self-service-analytics-schema-definition#power-automate-folder-structure), or [Application Insights](/power-platform/admin/app-insights-cloud-flow).
+- When an environment is enabled for customer-managed keys, then Power Automate data can't be sent to the analytics pipeline for [tenant-wide reporting in PPAC](/power-platform/admin/power-automate-analytics-reports), [Data Export to Data Lake](/power-platform/admin/self-service-analytics-schema-definition#power-automate-folder-structure), or [Application Insights](/power-platform/admin/app-insights-cloud-flow).
 
 ## Related information
 
