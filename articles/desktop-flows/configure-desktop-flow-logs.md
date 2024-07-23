@@ -64,7 +64,7 @@ The **FlowLogs entity time to live in minutes (Preview)** value determines how l
 | Forever | Less than or equal to 0 (zero) minutes |
 
 > [!NOTE]
-> Before enabling logs V2 preview, make sure you have sufficient Dataverse database capacity that would support the data retention settings and aligns with your capacity planning, entitlement and adjust as necessary. See the [Sample Dataverse capacity demand calculations for logs V2](#dataverse-capacity-demand-calculations-for-logs-v2) following section for some sizing examples.
+> Before enabling logs V2 preview, make sure you have sufficient Dataverse database capacity that would support the data retention settings and aligns with your capacity planning, entitlement and adjust as necessary. See the [Sample Dataverse capacity demand calculations for logs V2](#dataverse-capacity-demand-calculations-for-logs-v2-preview) following section for some sizing examples.
 
 ## Key differences of desktop flow logs V1 and V2
 
