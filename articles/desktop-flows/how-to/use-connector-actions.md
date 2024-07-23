@@ -1,6 +1,6 @@
 ---
-title: Use cloud connector actions
-description: Learn how to use cloud connector actions in desktop flows.
+title: Use connector actions
+description: Learn how to use connector actions in desktop flows.
 author: jpapadimitriou
 
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Use cloud connector actions in desktop flows
+# Use connector actions in desktop flows
 
 In desktop flows, you can utilize not only the standard set of actions available in the action library but also some of the most popular [connectors](../actions-reference/cloudconnectors.md). These connectors act as proxies or wrappers around APIs, enabling the underlying services to communicate with Microsoft Power Automate, Microsoft Power Apps, and Azure Logic Apps. They allow users to link their accounts and use a collection of prebuilt actions and triggers to create their apps and workflows.
 
@@ -39,17 +39,17 @@ The following are some key concepts of connection references:
 
 - **Simplified management**: By centralizing connection details, it becomes easier to update or replace connections without needing to modify each individual action that uses the connection.
 
-## Use a cloud connector action in desktop flows
+## Use a connector action in desktop flows
 
-In Power Automate for desktop, you can find some of the most popular cloud connectors (for example, SharePoint, Office 365 Outlook, and OneDrive) in the standard library of actions. You can use their actions the same way every other action is utilized. Either double-click or drag and drop the desired action in the designer canvas.
+In Power Automate for desktop, you can find some of the most popular connectors (for example, SharePoint, Office 365 Outlook, and OneDrive) in the standard library of actions. You can use their actions the same way every other action is utilized. Either double-click or drag and drop the desired action in the designer canvas.
 
 If there are no compatible connection references available for the connector you want to use, a prompt appears for you to create a new connection reference.
 
-:::image type="content" source="media/use-cloud-connector-actions/sign-in.png" alt-text="Screenshot of a cloud connector action configuration if there are no compatible connection references" border="false":::
+:::image type="content" source="media/use-connector-actions/sign-in.png" alt-text="Screenshot of a connector action configuration if there are no compatible connection references" border="false":::
 
 To select a connection reference, in the action configuration window, select the socket icon. Once you select it, all the available connection references compatible with the connector appear.
 
-:::image type="content" source="media/use-cloud-connector-actions/viewing-availalble-connection-references.png" alt-text="Screenshot of the available connection references" border="false":::
+:::image type="content" source="media/use-connector-actions/viewing-availalble-connection-references.png" alt-text="Screenshot of the available connection references" border="false":::
 
 To create a new connection reference, select the **Add new connection reference** button. You can use an existing connection that is compatible with the respective connector and create a new connection reference for it. Alternatively, you can create a new connection and include it in a new connection reference.
 

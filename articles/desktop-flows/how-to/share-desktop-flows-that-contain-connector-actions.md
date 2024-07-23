@@ -1,6 +1,6 @@
 ---
-title: Share desktop flows that contain cloud connector actions
-description: Learn how to share desktop flows that contain cloud connector actions.
+title: Share desktop flows that contain connector actions
+description: Learn how to share desktop flows that contain connector actions.
 author: jpapadimitriou
 
 ms.subservice: desktop-flow
@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Share desktop flows that contain cloud connector actions
+# Share desktop flows that contain connector actions
 
 Sharing a desktop flow that uses connectors follows the same principles as any other desktop flow. However, there are a few more steps required due to the connection references in the desktop flows.
 
@@ -30,17 +30,17 @@ You can share a desktop flow that uses connections with:
 - users (run-only level access)
 - co-owners
 
-## Run a shared desktop flow that contains cloud connector actions as a user
+## Run a shared desktop flow that contains connector actions as a user
 
 Makers with user access on a shared desktop flow must always bring their own connections when they run the flow. They can only perform attended console initiated runs.
 
-Once you run a shared desktop flow that contains cloud connector actions through the console, a prompt appears for you to provide a valid connection to be used.
+Once you run a shared desktop flow that contains connector actions through the console, a prompt appears for you to provide a valid connection to be used.
 
-:::image type="content" source="media/share-desktop-flows-that-contain-cloud-connector-actions/bring-your-own-connection.png" alt-text="Screenshot of the bring your own connection dialog." border="false":::
+:::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/bring-your-own-connection.png" alt-text="Screenshot of the bring your own connection dialog." border="false":::
 
 If there are compatible existing connections available, the first one is selected by default.
 
-## Run a shared desktop flow that contains cloud connector actions as a co-owner
+## Run a shared desktop flow that contains connector actions as a co-owner
 
 Co-owners have the ability to modify shared desktop flows in addition to running them. Co-owners have the ability to *embed* (preview) the connection references (and as a result their underlying connections) to the desktop flows they have access to. By embedding a connection reference to a desktop flow, you allow other co-owners to have access to the underlying data provided by it, for both modifying as well as running the desktop flow.
 
@@ -52,7 +52,7 @@ Co-owners have the ability to modify shared desktop flows in addition to running
 
 ### Cloud initiated runs
 
-To successfully invoke a desktop flow containing cloud connector actions from a cloud flow, it must meet the following two requirements:
+To successfully invoke a desktop flow containing connector actions from a cloud flow, it must meet the following two requirements:
 
 - The desktop flow must use the [Power Automate v2 schema](../schema.md).
 - All of its connection references must be marked as embedded.
@@ -62,15 +62,15 @@ To embed a connection reference to a flow that you have access to as a co-owner:
 1. Select the desktop flow in [Power Automate](https://make.powerautomate.com) and then select **Details**.
 1. In the **Connection references** section, select **Manage.**
 
-    :::image type="content" source="media/share-desktop-flows-that-contain-cloud-connector-actions/manage-connection-references-button.png" alt-text="Screenshot of the Manage Connections button" border="false":::
+    :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/manage-connection-references-button.png" alt-text="Screenshot of the Manage Connections button" border="false":::
 
     In the **Connection references** screen, all of the connection references used in a flow are displayed.
 1. Set the **Embed in desktop flow** option to **Yes** to enable it.
 
-    :::image type="content" source="media/share-desktop-flows-that-contain-cloud-connector-actions/embed-connection-reference-to-a-flow.png" alt-text="Screenshot of the Manage Connections menu" border="false" lightbox="media/cloudconnectors/embed-connection-reference-to-a-flow.png":::
+    :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/embed-connection-reference-to-a-flow.png" alt-text="Screenshot of the Manage Connections menu" border="false":::
 
 1. After you confirm your selection, the connection reference is embedded in the desktop flow.
 
 ### Console runs
 
-Similar to the user use-case, when you run a shared desktop flow with cloud connector actions through the console, a prompt appears for you to provide a valid connection to be used.
+Similar to the user use-case, when you run a shared desktop flow with connector actions through the console, a prompt appears for you to provide a valid connection to be used.
