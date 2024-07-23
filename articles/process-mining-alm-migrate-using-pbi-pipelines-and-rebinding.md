@@ -68,12 +68,12 @@ This solution involves using Power BI pipelines for moving entities across two d
     1. Select **Create**.
 
 1. Assign workspaces for the pipeline.
-    1. For the **Development** stage: From the dropdown menu, select your **WkSpace A** > **Assign a workspace**.
+    1. For the **Dev** stage: From the dropdown menu, select your **WkSpace A** > **Assign a workspace**.
     1. For the **Test** stage: From the dropdown menu, select your **WkSpace B** > **Assign a workspace**.
 
-    :::image type="content" source="media/process-mining-alm-pbi-pipelines-and-rebinding/assign-pipeline-workspaces.png" alt-text="Screenshot of assigning workspaces for a pipeline.":::
+         In the following screenshot, your environments might use a different name.
 
-    <!---get updated screenshot.-->
+    :::image type="content" source="media/process-mining-alm-pbi-pipelines-and-rebinding/assign-pipeline-workspaces.png" alt-text="Screenshot of assigning workspaces for a pipeline.":::
 
     The visual that compares the contents of each workspace now shows.
 

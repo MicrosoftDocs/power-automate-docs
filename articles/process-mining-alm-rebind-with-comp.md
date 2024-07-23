@@ -55,7 +55,7 @@ There are three (3) entities titled 'Report A'. You can differentiate them using
 - The icon with the yellow bars represents the reports. The other icon is that of the composite model or semantic model.
 - The report with the same **Refreshed** timestamp as the composite model is the report of the composite model.
 
-    :::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-a.png" alt-text="Screenshot of entities and refreshed timestamps for WkSpace A.":::
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-a.png" alt-text="Screenshot of entities and refreshed timestamps for WkSpace A using different workspaces.":::
 
 Your lineage view should look like the following screenshot. The semantic model points to the composite model, which then points to a report.
 
@@ -72,7 +72,7 @@ Your **WkSpace B** should have the following entities:
 
 The numbering corresponds with the numbering of entities in the following screenshot.
 
-:::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-b.png" alt-text="Screenshot of entities and refreshed timestamps for WkSpace A.":::
+:::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-b.png" alt-text="Screenshot of entities and refreshed timestamps for WkSpace B using different workspaces.":::
 
 Your lineage views should like the following screenshot. A semantic model points to a report:
 
@@ -94,7 +94,7 @@ To understand the distinctions between each entity, familiarize yourself with th
 1. Search for and select for the semantic model of the process that was created in Test. Its semantic model is in your **WkSpace B**.
 1. Select **Create**.
 
-    :::image type="content" source="media/process-mining-alm-rebind-with-comp/select-dataset-to-create-report.png" alt-text="Screenshot of downloading the file.":::
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/select-dataset-to-create-report.png" alt-text="Screenshot of the semantic model of the process that was created in your Test environment.":::
 
 1. When the **Connect to your data** message appears, select relevant tables, and then select **Submit**.
 1. When the query changes are applied, select **Close**.
@@ -129,7 +129,7 @@ If you linked your process in your Test environment to a workspace (for example,
 
 1. To continue setting up the process, select **Continue**.
 
-       :::image type="content" source="media/process-mining-alm-rebind-with-comp/new-workspace-same-with.png" alt-text="Screenshot of selecting a new workspace for your process with a different report name from your previous report.":::
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/new-workspace-same-with.png" alt-text="Screenshot of selecting a new workspace for your process with a different report name from your previous report.":::
 
 1. (If you didn't do step 3) Attach a custom Power BI workspace to the process:
     1. Go to the process details page for the process.

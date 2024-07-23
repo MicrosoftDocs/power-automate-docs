@@ -3,7 +3,7 @@
 
     If your process was newly copied over to the Test environment, there's an exclamation mark inside a speech bubble on the process. This mark indicates that the process was imported.
 
-    :::image type="content" source="./includes/media/process-mining-alm/speech-bubble.png" alt-text="Screenshot of your process on the Process Mining home page.":::
+    :::image type="content" source="../includes/media/process-mining-alm/speech-bubble.png" alt-text="Screenshot of your process on the Process Mining home page.":::
 
 1. Select the process, and then select **Confirm**.
 1. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
@@ -17,9 +17,9 @@
 
     1. To continue setting up the process, select **Continue**.
 
-       :::image type="content" source="./includes/media/process-mining-alm/new-workspace.png" alt-text="Screenshot of selecting a new workspace for your process with the same report name as your previous report.":::
+       :::image type="content" source="../includes/media/process-mining-alm/new-workspace.png" alt-text="Screenshot of selecting a new workspace for your process with the same report name as your previous report.":::
 
-1. (If you didn't do step 5) Attach a custom Power BI workspace to the process:
+1. (If you didn't newly import the process) Attach a custom Power BI workspace to the process:
     1. Go to the process details page for the process.
     1. On the **Details** card, select **Edit**.
     1. From the **Power BI workspace (optional)** dropdown menu, select your **WkSpace B** Power BI workspace that you want to migrate customizations to.
