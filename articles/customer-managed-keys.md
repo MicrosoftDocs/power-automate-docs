@@ -38,6 +38,10 @@ As of April 30, 2024, customer-managed key (CMK) support for Power Automate clou
 
 If there are existing flows in the environment being enabled for CMK, a warning message similar to "Power Automate flows are still encrypted with the Microsoft Managed Key" displays. In some experiences, a failed status might display. To review the Power Automate warning, go to the Enterprise Policy experience.
 
-### See also
+## Known limitations
 
-[Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
+- When an environment is enabled for customer-managed keys, then Power Automate data cannot be sent to [Application Insights](/power-platform/admin/app-insights-cloud-flow).
+
+## Related information
+
+- [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
