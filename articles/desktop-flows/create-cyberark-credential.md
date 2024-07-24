@@ -126,6 +126,10 @@ Now that you complete all the prerequisites steps, you can create your CyberArk 
 
     - **Display name**: Provide a name for your CyberArk store.
     - **Server address**: The server address is the Central Credential Provider URL. For example, `https://svc.skytap.com:8992`.
+
+      > [!NOTE]
+      > Limitation: versions below August release doesn't support **server adress** ending with a "/".   
+      
     - **Application Id**: To find the Application ID, open CyberArk PVWA (Password Vault Web Access) on a web browser and navigate to the Applications tab.
     - **Safe**: Populate the name of the safe displayed in CyberArk PVWA.
     - **Folder** (optional): Populate the folder name where your credentials are stored. By default, credentials are stored in the "Root" folder.
