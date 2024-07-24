@@ -135,6 +135,10 @@ Now that you complete all the prerequisites steps, you can create your CyberArk 
 1. In the last step of the wizard, you need to provide the information about the user account:
 
     - **Username**: Select a username from your text environment variables or create a new one by selecting new.
+
+    > [!NOTE]
+    > If you create a CyberArk credential to be used in a desktop flow connection, provide your device account. Populate the name of the user (for example, <MACHINENAME\User> or <local\User>) or a Microsoft Entra ID account, such as <DOMAIN\User> or <username@domain.com>.
+      
     - **Object name**: The object name corresponds to the CyberArk object name store in the CyberArk safe. This value is also called account name in PVWA.
   
 ## Use the credential in a desktop flow connection
