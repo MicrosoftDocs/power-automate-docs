@@ -70,9 +70,9 @@ To use connection with sign-in, you need to meet the following prerequisites:
 - The tenant of the target Microsoft Entra account is configured to use modern [Authentication with Microsoft Entra ID](/azure/well-architected/).
 
 > [!NOTE]
-> Connect with sign-in for attended runs is available in most of the Power Platform regions.
+> Connect with sign-in for attended runs is available in the Power Platform regions.
 > For GCCH, DOD, and China regions, the feature requires the December version of the Power Automate for desktop app.
-> Currently, GCC isn't supported.
+> For GCC, the feature requires the July version of the Power Automate for desktop app.
 
 ### Set up the connection with sign-in
 
