@@ -119,7 +119,7 @@ To understand the distinctions between each entity, familiarize yourself with th
 If you linked your process in your Test environment to a workspace (for example, WkSpace B) that's the same as the one used for the process in your Dev environment (for example, WkSpace A), follow these steps:
 
 1. Repeat steps 1 through 3 in [Attach a workspace to your process](#attach-a-workspace-to-your-process) in this article.
-1. If you newly imported the process, continue to step 3 in this section. If you didn't newly import the process, go to step 5 in this section.
+1. If you newly imported the process, continue to step 3 in this section. If you didn't newly import the process, go to step 4 in this section.
 1. Select the same workspace for this process by following these steps:
     1. In the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
     1. In the **Report Name** field, enter a *different report name* from your previous report name.
@@ -127,7 +127,7 @@ If you linked your process in your Test environment to a workspace (for example,
         > [!IMPORTANT]
         > The report name must be different from your previous report name.
 
-1. To continue setting up the process, select **Continue**.
+    1. To continue setting up the process, select **Continue**.
 
     :::image type="content" source="media/process-mining-alm-rebind-with-comp/new-workspace-same-with.png" alt-text="Screenshot of selecting a new workspace for your process with a different report name from your previous report.":::
 
@@ -165,7 +165,7 @@ The numbering corresponds with the numbering of entities in the following screen
 There are three (3) entities titled 'Report A'. You can differentiate them using their icons and their **Refreshed** timestamps:
 
 - The icon with the yellow bars represents the reports and the other icon is that of the composite model or semantic model.
-- The report with the same Refreshed timestamp as the composite model is the report of the composite model.
+- The report with the same **Refreshed** timestamp as the composite model is the report of the composite model.
 
     :::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-a-same.png" alt-text="Screenshot of entities and refreshed timestamps.":::
 
@@ -179,7 +179,7 @@ Your lineage view should look like the following screenshot:
 1. From the **File** menu, select **Save as** and give the report a new name such as 'Report B'.
 1. From the home tab, select **Transform data** > **Data source settings**. Notice the **Direct Query connection** in the Data source settings.
 1. Select **Change Source**.
-1. Search for and select the semantic model of the process that's in your Test environment. The semantic model is **Report B_Dataset_206…** and it should be in your WkSpace A.
+1. Search for and select the semantic model of the process that's in your Test environment. The semantic model is **Report B_Dataset_206…** and it should be in your **WkSpace A**.
 1. Select **Create**.
 
     :::image type="content" source="media/process-mining-alm-rebind-with-comp/select-dataset-to-create-report-same.png" alt-text="Screenshot of the dataset to create a report using the same workspace.":::

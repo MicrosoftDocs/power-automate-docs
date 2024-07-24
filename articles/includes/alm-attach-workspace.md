@@ -1,7 +1,7 @@
-1. In the **Environments** dropdown menu at the top of the screen, select your Test environment.
+1. In the **Environments** dropdown menu at the top of the screen, select your **Test** environment.
 1. On the navigation pane to the left, select **Process mining**.
 
-    If your process was newly copied over to the Test environment, there's an exclamation mark inside a speech bubble on the process. This mark indicates that the process was imported.
+    If your process was newly copied over to the **Test** environment, there's an exclamation mark inside a speech bubble on the process. This mark indicates that the process was imported.
 
     :::image type="content" source="../includes/media/process-mining-alm/speech-bubble.png" alt-text="Screenshot of your process on the Process Mining home page.":::
 
@@ -9,7 +9,7 @@
 1. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
 
 1. Select a new workspace for this process by following these steps:
-    1. In the **Power BI workspace** dropdown menu, select a *different workspace*, which you'll use in the Test environment.
+    1. In the **Power BI workspace** dropdown menu, select a *different workspace*, which you'll use in the **Test** environment.
     1. In the **Report Name** field, enter the *same report name* as your previous report.
 
         > [!IMPORTANT]

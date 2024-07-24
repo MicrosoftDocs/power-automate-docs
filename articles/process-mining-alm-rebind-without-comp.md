@@ -17,7 +17,7 @@ search.audienceType:
 
 # Rebind reports without using a composite model
 
-To use your new model in Power BI, *rebind* redirects live connect reports in the Power BI service. The rebind method you choose depends on whether the two processes you have are using two different workspaces or the same workspace.
+The rebind method you choose depends on whether the two processes you have are using two different workspaces or the same workspace.
 
 ## With two different workspaces
 
@@ -41,8 +41,8 @@ If you linked your process in Test environment to a workspace (for example, WkSp
 
     :::image type="content" source="media/process-mining-alm-rebind-without-comp/semantic-model.png" alt-text="Screenshot of rebinding your process after you download, edit, and connect your model.":::
 
-1. Save the report by selecting **Save**.
-1. To publish, from the command bar, select **Publish**.
+1. From the command bar, save the report by selecting **Save**.
+1. From the command bar, publish the report by selecting **Publish**.
 1. From the **Publish to Power BI** menu, select your **WkSpace B** > **Select**.
 
     A message that says **Replacing report** appears because you retained the report name.
@@ -77,7 +77,7 @@ If you linked your process in your Test environment to a workspace (for example,
 1. (If you didn't newly import the process) Attach a custom Power BI workspace to the process:
     1. Go to the process details page for the process.
     1. On the **Details** card, select **Edit**.
-    1. From the **Power BI workspace (optional)** dropdown menu, select your **WkSpace B** Power BI workspace that you want to migrate customizations to.
+    1. From the **Power BI workspace (optional)** dropdown menu, select your **WkSpace A** Power BI workspace that you want to port changes to.
     1. Provide a *different* report name from the name you used for the process in Dev environment.
 
         > [!IMPORTANT]
@@ -107,8 +107,8 @@ If you linked your process in your Test environment to a workspace (for example,
 
     The report refreshes. Learn more about semantic models in [Semantic models in the Power BI service](/power-bi/connect-data/service-datasets-understand).
 
-1. **Save** the report.
-1. To publish, from the command bar, select **Publish**.
+1. From the command bar, save the report by selecting **Save**.
+1. From the command bar, publish the report by selecting **Publish**.
 1. From the list of destinations, select **WkSpace A** > **Select**.
 
     A message that says **Replacing report** opens, indicating you gave the report the same name as your old Report B.

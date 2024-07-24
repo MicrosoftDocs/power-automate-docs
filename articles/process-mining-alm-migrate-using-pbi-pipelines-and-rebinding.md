@@ -61,7 +61,7 @@ This solution involves using Power BI pipelines for moving entities across two d
     1. Select **Next**.
     1. Customize your stages.
 
-        For this example, we use **Development** and **Test**. If you see others, select the trash can icon next to it.
+        For this example, we use **Dev** and **Test**. If you see others, select the trash can icon next to it.
 
     :::image type="content" source="media/process-mining-alm-pbi-pipelines-and-rebinding/customize-your-stages.png" alt-text="Screenshot of customizing your stages.":::
 

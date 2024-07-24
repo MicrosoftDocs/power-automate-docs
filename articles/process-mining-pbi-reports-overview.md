@@ -32,13 +32,11 @@ The articles in this section use fictitious names. These names are for demonstra
 The procedures in the **Migrate customized Process Mining Power BI reports** section assume you completed the following tasks:
 
 1. You attached a Power BI workspace to your process in your Dev environment.
-1. [You performed ALM on other process mining artifacts using solutions](process-mining-alm-entities-solutions.md).
-
-    If you didn't do this task, do the following steps:
+1. [You performed ALM on other process mining artifacts using solutions](process-mining-alm-entities-solutions.md). If you didn't do this task, do the following steps:</br>
 
     1. Navigate to the report page of your process in Power Automate.
     1. From the command bar, select **Open in Power BI**.
-    1. Make the changes you want to migrate and save the report.
+    1. Make the changes you want to port and save the report.
 
 1. You made the Power BI report customizations that you want to migrate.
 
