@@ -4,7 +4,7 @@ description: Use CyberArk credentials in desktop flow connections
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/12/2024
+ms.date: 07/24/2024
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
@@ -128,8 +128,8 @@ Now that you complete all the prerequisites steps, you can create your CyberArk 
     - **Server address**: The server address is the Central Credential Provider URL. For example, `https://svc.skytap.com:8992`.
 
       > [!NOTE]
-      > Limitation: versions below August release doesn't support **server adress** ending with a "/".   
-      
+      > Versions below the August release don't support a server address ending with a "/".
+
     - **Application Id**: To find the Application ID, open CyberArk PVWA (Password Vault Web Access) on a web browser and navigate to the Applications tab.
     - **Safe**: Populate the name of the safe displayed in CyberArk PVWA.
     - **Folder** (optional): Populate the folder name where your credentials are stored. By default, credentials are stored in the "Root" folder.
@@ -140,9 +140,8 @@ Now that you complete all the prerequisites steps, you can create your CyberArk 
 
     - **Username**: Select a username from your text environment variables or create a new one by selecting new.
 
-    > [!NOTE]
-    > If you create a CyberArk credential to be used in a desktop flow connection, provide your device account. Populate the name of the user (for example, <MACHINENAME\User> or <local\User>) or a Microsoft Entra ID account, such as <DOMAIN\User> or <username@domain.com>.
-      
+        If you create a CyberArk credential to be used in a desktop flow connection, provide your device account. Populate the name of the user (for example, `<MACHINENAME\User>` or `<local\User>`) or a Microsoft Entra ID account, such as `<DOMAIN\User>` or `<username@domain.com>`.
+
     - **Object name**: The object name corresponds to the CyberArk object name store in the CyberArk safe. This value is also called account name in PVWA.
   
 ## Use the credential in a desktop flow connection

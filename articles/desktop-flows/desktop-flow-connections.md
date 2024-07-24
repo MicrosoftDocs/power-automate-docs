@@ -4,7 +4,7 @@ description: See how to create connections to trigger desktop flows from cloud f
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/02/2024
+ms.date: 07/24/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -70,9 +70,8 @@ To use connection with sign-in, you need to meet the following prerequisites:
 - The tenant of the target Microsoft Entra account is configured to use modern [Authentication with Microsoft Entra ID](/azure/well-architected/).
 
 > [!NOTE]
-> Connect with sign-in for attended runs is available in the Power Platform regions.
-> For GCCH, DOD, and China regions, the feature requires the December version of the Power Automate for desktop app.
-> For GCC, the feature requires the July version of the Power Automate for desktop app.
+> For GCCH, DOD, and China regions, the December version of the Power Automate for desktop app is required.
+> For GCC, the July version of the Power Automate for desktop app is required.
 
 ### Set up the connection with sign-in
 
