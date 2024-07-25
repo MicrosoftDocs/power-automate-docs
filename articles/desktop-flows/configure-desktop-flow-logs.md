@@ -134,7 +134,8 @@ Learn more about [querying JSON columns in elastic tables](/power-apps/developer
   - `QueryText=@p1`: The SQL query to be executed. In this case, the query selects various properties from a table where the *type* is 100000001 (desktop flow action log type) and orders the results by the startTime property in descending order.
   - `EntityLogicalName=@p2`: This is the logical name of the table (`flowlog`) that stores the action logs.
   - `PartitionId=@p3`: This parameter is used to identify the partition within Azure Cosmos DB where the query is to be executed. It's set to `flowsession_[flowsessionid]`.
-  - `QueryParameters=@p4`: This is a JSON object specifying parameters for the query. In the previous example, it's specifying a key-value pair where the key is `@referencingParentId` and the values are the `flowsessionid` (GUID) and type of the table `flowsession`.
+  - `QueryParameters=@p4`: This is a JSON object specifying parameters for the query. In the previous example, it's specifying a key-value pair where the keys are `@referencingParentId` and `@referencingParentLogicalName` with values of `flowsessionid` (GUID) and type of the table `flowsession`.
+  - `PageSize=p5`: This is the query page size.
 
 ## Known limitations  
   
