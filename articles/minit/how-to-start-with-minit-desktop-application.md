@@ -50,6 +50,6 @@ Before you can start using Power Automate Process Mining, you need to download i
 
 1. Start process mining from the **Processes** screen.
 
-### See also
+## Related information
 
 [Explore the home page](process-hub.md)

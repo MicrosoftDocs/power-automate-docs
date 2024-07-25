@@ -42,6 +42,6 @@ Microsoft 365 recommendations can only create recommendations from Microsoft 365
 
 Microsoft 365 recommendations are currently only surfaced to new users of the Power Automate home page to get them started on their automation journey.
 
-### See also
+## Related information
 
 [Overview of process mining](process-mining-overview.md)

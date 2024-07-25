@@ -64,7 +64,7 @@ One of the limitations of Copilot in automation center is that it currently only
 - The generative answers capability can only answer to product related features. It can't answer general questions or anything unrelated to the product.
 - There's a limit of 200 characters to describe the question.
 
-## See also
+## Related information
 
 - [Use Copilot in automation center (preview)](automation-center-copilot.md)
 - [Use Copilot to analyze desktop flow activity (preview)](./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)

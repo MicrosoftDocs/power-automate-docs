@@ -113,7 +113,7 @@ You can do this in the web version of Outlook.
 
 By default, the email you receive shows the Coordinated Universal Time (UTC) time zone. However, your users might want to change it to their local time zone. For instructions, go to  [Converting time zone in Microsoft Power Automate](https://support.microsoft.com/help/4557244/converting-time-zone-in-microsoft-power-automate) to convert the time zone.
 
-### See also
+## Related information
 
 [Overview of using email with flows](email-overview.md)  
 [Create flows to manage email](create-email-flows.md)  

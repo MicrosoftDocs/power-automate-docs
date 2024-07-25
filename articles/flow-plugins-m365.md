@@ -65,6 +65,6 @@ You can use the flow based plugins shipped by Microsoft in your Copilot for Micr
 
 Currently, the flows that are created and run need to be in the tenant's default environment. A setup experience for the plugin that allows users to choose nondefault environments to associate the plugin with isn't available yet.
 
-### See also
+## Related information
 
 [Build plugins using Microsoft business applications](/microsoft-365-copilot/extensibility/overview-business-applications)

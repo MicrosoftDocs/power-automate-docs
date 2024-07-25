@@ -75,7 +75,7 @@ As a Power Platform admin you can prevent users from sending feedback to Microso
 
 Tenant administrators can view, export, and delete the feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage), and then selecting **Health** > **Product feedback**.
 
-## See also
+## Related information
 
 - [FAQ for Generative Answers in Power Automate for desktop](../faqs-copilot-generative-answers-power-automate-desktop.md)
 - [Responsible AI FAQs for Power Automate](../responsible-ai-overview.md)

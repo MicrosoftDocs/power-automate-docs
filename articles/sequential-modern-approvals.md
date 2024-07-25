@@ -207,7 +207,7 @@ The final approver gets the vacation request only after the request has been pre
 
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]
 
-### See also
+## Related information
 
 [Single approver modern approvals walkthrough](modern-approvals.md)
 

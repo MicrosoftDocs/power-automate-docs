@@ -135,7 +135,7 @@ Dataverse is the storage used for drafts and version history. Solution cloud flo
 
 **Changing flow URL**: When a solution cloud flow is first published, the URL contains the `workflowUniqueId` and this changes with each version. If the published flow is subsequently opened from the My Flows experience, then the `FlowId` is used in the URL and it doesn't change.  If the published flow is subsequently opened from the Solution Explorer experience, then the `workflowUniqueId` is used in the URL and it does change. We're planning to update the Solution Explorer experience to provide a static URL. In the interim, if you need a static URL reference, then open the flow from the My Flows experience.
 
-## See also
+## Related information
 
 - [Manage and edit a cloud flow](/power-automate/get-started-logic-flow#manage-a-cloud-flow)
 - [Create a solution](./overview-solution-flows.md)

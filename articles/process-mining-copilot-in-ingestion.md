@@ -75,7 +75,7 @@ For the list of questions for Copilot in Process Mining ingestion, go to [Freque
 
 For a list of limitations of Copilot in Power Automate, go to [Limitations of Copilot in Power Automate](process-mining-copilot-in-process-analytics.md#limitations-of-copilot-in-power-automate).
 
-### See also
+## Related information
 
 - [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
