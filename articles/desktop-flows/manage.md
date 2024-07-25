@@ -92,7 +92,7 @@ As a Power Platform admin you can prevent users from sending feedback to Microso
 
 Tenant administrators can view, export, and delete the feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage), and then select **Health** > **Product feedback**.
 
-### See also
+## Related information
 
 - [FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md)
 

@@ -46,7 +46,7 @@ UI elements collections exist at the environment level. As a best practice, use 
 
 [Create and publish UI elements collections](create-ui-elements-collections.md)
 
-### See also
+## Related information
 
 - [Assets library](assets-library.md)
 - [Manage UI elements collections](manage-ui-elements-collections.md)

@@ -101,7 +101,7 @@ You can now run or make edits to your flow from the Power Automate designer, jus
 >[!TIP]
 > Use Visio's sharing and commenting capabilities to collaborate with multiple stakeholders and quickly create a complete workflow .
 
-### See also
+## Related information
 
 - [Get started with Power Automate](getting-started.md) 
 - [Build multi-step flows](multi-step-logic-flow.md)

@@ -69,7 +69,7 @@ by Jack Rowbotham and Kent Weare<br/>
 by Pranav Rastogi and Apostolis Papaioannou<br/>
 [Register and watch now](https://info.microsoft.com/ww-landing-businesscenterexcellencerpa.html?lcid=en-us)
 
-### See also
+## Related information
 
 [More Power Automate webinars](https://make.powerautomate.com/blog/category/webinars/)
 

@@ -70,7 +70,7 @@ The flow details page contains a *Solutions* card that lists all the solutions t
 
 - To implement healthy application lifecycle management (ALM) in your organization, use a source control system to store and collaborate on your solutions, and automate the solution export process. More information: [ALM basics](/power-platform/alm/basics-alm) in the Power Platform ALM guide.
 
-### See also
+## Related information
 
 - [Create a solution](./overview-solution-flows.md)
 - [Create a cloud flow in a solution](./create-flow-solution.md)

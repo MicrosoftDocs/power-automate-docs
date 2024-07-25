@@ -60,7 +60,7 @@ Some connectors don't support this capability.
 
 To set up B2B collaboration between tenants in different clouds, both guest user and nonguest user tenants need to configure their Microsoft cloud settings to enable collaboration with the other cloud. Then, each tenant must configure inbound and outbound cross-tenant access with the tenant in the other cloud. To learn more, go to [Configure Microsoft cloud settings for B2B collaboration](/azure/active-directory/external-identities/cross-cloud-settings).
 
-### See also
+## Related information
 
 - [Microsoft Entra B2B in government and national clouds](/azure/active-directory/external-identities/b2b-government-national-clouds)
 - [Assign Azure roles to external guest users using the Azure portal](/azure/role-based-access-control/role-assignments-external-users)

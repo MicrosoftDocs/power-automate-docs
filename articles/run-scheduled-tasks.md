@@ -92,7 +92,7 @@ Copilot adds the following parameters to the flow it created for you in the acti
 
 ---
 
-### See also
+## Related information
 
 [Advanced options in Azure Logic Apps](/azure/connectors/connectors-native-recurrence)
 
