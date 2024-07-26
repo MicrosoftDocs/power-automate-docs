@@ -114,7 +114,7 @@ This opens the full Power Automate designer experience within Microsoft Teams wh
 - All flows that you create from within the Workflows app are located in your organization's default environment.
 - The Workflows app must be enabled in the [Microsoft Teams admin center](https://admin.teams.microsoft.com/policies/manage-apps) in order for this functionality to work.
 
-### See also
+## Related information
 
 - [Manage your flows in Microsoft Teams](./teams-app-home.md)
 - [Microsoft Teams connector documentation](/connectors/teams/)

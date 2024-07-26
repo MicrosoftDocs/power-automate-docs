@@ -89,6 +89,6 @@ When you turn off verbose logging, the **Export logs** button becomes available 
 
 When **Export logs** is used when at least one flow designer is open, not all files may be saved in the .zip file, as some of them are used in the designer process. Those files can’t be automatically deleted.
 
-## See also
+## Related information
 
 [Troubleshoot desktop flows](troubleshoot.md)

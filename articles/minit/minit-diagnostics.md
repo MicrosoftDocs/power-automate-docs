@@ -54,7 +54,7 @@ Power Automate client products don’t collect optional data unless the user con
 |------------------|-----------------|--------------|
 |Enhanced anonymized product usage  | This type of *optional diagnostic data* includes details about the usage of selected functionalities, such as UI language interface, etc. | Selected user interface language such as English, French, etc. |
 
-## See also
+## Related information
 
 [Runtime notifications](../desktop-flows/runtime-notifications.md) 
 

@@ -28,7 +28,7 @@ Get familiar with upcoming features and plan your deployments by reading the [20
 
 Get early access to functionalities and updates before they are available worldwide through [Preview features](https://powerautomate.microsoft.com/blog/flow-preview-program/) and [Experimental features](experimental-features.md).
 
-### See also 
+## Related information 
 
 [Power Platform release plans](/dynamics365/release-plans/)
 
