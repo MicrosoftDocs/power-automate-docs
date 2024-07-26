@@ -57,7 +57,7 @@ Create flows so that you can easily run repetitive tasks from any place, at any 
 
 Congratulations, you've created a flow! You can now run this flow anytime, any place, from the Power Automate mobile app. Simply press the flow and it will run!
 
-### See also
+## Related information
 
 [Power Automate mobile app overview](overview-mobile.md)
 

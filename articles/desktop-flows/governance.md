@@ -436,7 +436,7 @@ As a Power Platform admin you can prevent users from sending feedback to Microso
 
 To prevent your users from using any copilot capability contact Microsoft Customer Support to disable all copilot functionality in your tenant. More information: [Get Help + Support](/power-platform/admin/get-help-support)
 
-### See also
+## Related information
 
 - [Create Power Automate desktop flows](create-flow.md).
 - [Run desktop flows](run-desktop-flow.md).

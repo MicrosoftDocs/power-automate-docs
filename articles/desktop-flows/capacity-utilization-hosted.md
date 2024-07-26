@@ -150,6 +150,6 @@ To view and edit capacity allocation, you need a security role with privileges t
 
 The Hosted Process capacity can be used as process capacity to enable standard machines to run desktop flows in unattended mode. In an environment with Hosted Process capacity, this Hosted Process capability enables the creation of overage process capacity allocation to machines and/or cloud flows. These in-overage machine or cloud flows operate as efficiently as any other process, without any performance issues. This mechanism is temporary and will be replaced by a more explicit behavior.
 
-## See also
+## Related information
 
 [Capacity utilization within Power Automate](capacity-utilization.md)

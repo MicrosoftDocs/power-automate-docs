@@ -71,6 +71,6 @@ Select an existing calendar in the **Calendar** dropdown menu. If the menu optio
 
 Calendar templates can be shared across Power Automate Process Mining projects. To manage all calendar templates, select **Settings** > **Working hours**. To learn more, go to [Settings](settings.md).
 
-### See also
+## Related information
 
 [Process map overview](process-map.md)

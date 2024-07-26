@@ -177,6 +177,6 @@ Once this step is done, you see the report in your Power BI workspace with the r
 
 If you encounter issues or error messages, go to [Issues with your own Power BI workspace](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace).
 
-### See also
+## Related information
 
 [Workspaces in Power BI](/power-bi/collaborate-share/service-new-workspaces)

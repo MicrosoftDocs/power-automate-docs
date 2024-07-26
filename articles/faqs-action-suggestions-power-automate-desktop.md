@@ -40,6 +40,6 @@ We meticulously tested the AI model through various internal processes and revie
 
 The suggested actions capability can only propose actions currently available in the Power Automate for desktop’s standard library of actions. It can't propose actions that are custom-made by an organization (custom actions).
 
-## See also
+## Related information
 
 [Configure actions and the actions pane](desktop-flows/actions-pane.md)
