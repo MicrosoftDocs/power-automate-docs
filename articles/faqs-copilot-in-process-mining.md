@@ -50,7 +50,7 @@ There is also an option to disable the Copilot within the admin center, and the 
 
 Copilot is only available in the Azure Data Lake ingestion experience and within the Power Automate Process Mining desktop app. The user can always close Copilot and not elect to interact with Copilot.
 
-## See also
+## Related information
 
 - [Copilot in Process Mining ingestion (preview)](process-mining-copilot-in-ingestion.md)
 - [Copilot in Process Mining process analytics (preview)](process-mining-copilot-in-process-analytics.md)

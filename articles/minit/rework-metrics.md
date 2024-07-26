@@ -111,6 +111,6 @@ Filters **Attributes (conditional)** and **Edge (conditional)** allow using rewo
 
 :::image type="content" alt-text="Screenshot of the metrics filter per event." source="media/rework-filters.png":::
 
-### See also
+## Related information
 
 [Process map overview](process-map.md)

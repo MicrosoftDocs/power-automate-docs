@@ -48,7 +48,7 @@ You should constantly review the answers provided by the copilot's generative an
 
 When you're interacting with copilot, it's essential to keep in mind that the structure of the questions can significantly affect the response that copilot gives. To interact with copilot effectively, it's crucial to ask clear and specific questions and provide context to help the AI better understand your intent.
 
-## See also
+## Related information
 
 - [Copilot generative answers in Power Automate for desktop](desktop-flows/copilot-in-power-automate-for-desktop.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)

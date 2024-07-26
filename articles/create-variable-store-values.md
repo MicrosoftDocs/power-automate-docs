@@ -347,6 +347,6 @@ Here are the properties for the **Append to...** actions:
 | **Name** | Yes | <*variable-name*> | The name for the variable to change |
 | **Value** | Yes | <*append-value*> | The value you want to append, which can have any type |
 
-### See also
+## Related information
 
 [Power Automate connectors](/connectors/connectors)

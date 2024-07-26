@@ -166,7 +166,7 @@ The **Update work queue item processing notes action** action requires the follo
 | **Work queue item not found** | The work queue item is invalid|
 | **Failed to append the processing results** | The work queue item being updated has encountered an unexpected error. Check the error message for more details. |
 
-### See also
+## Related information
 
 - [Work queue overview](../work-queues.md)
 - [Manage work queues](../work-queues-manage.md)
