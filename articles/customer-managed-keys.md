@@ -39,6 +39,13 @@ As of April 30, 2024, customer-managed key (CMK) support for Power Automate clou
 
 If there are existing flows in the environment being enabled for CMK, a warning message similar to "Power Automate flows are still encrypted with the Microsoft Managed Key" displays. In some experiences, a failed status might display. To review the Power Automate warning, go to the Enterprise Policy experience.
 
+### Power Automate hosted RPA
+
+Customer-managed key (CMK) is supported for the hosted machine group capability of the [Power Automate hosted RPA](../desktop-flows/hosted-rpa-overview) solution
+
+
+
+
 ## Known limitations
 
 When an environment is enabled for customer-managed keys, then Power Automate data can't be sent to the analytics pipeline for [tenant-wide reporting in Power Platform admin center](/power-platform/admin/power-automate-analytics-reports), [Data Export to Data Lake](/power-platform/admin/self-service-analytics-schema-definition#power-automate-folder-structure), or [Application Insights](/power-platform/admin/app-insights-cloud-flow).
