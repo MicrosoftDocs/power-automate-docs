@@ -29,11 +29,11 @@ If you've signed in with an organization premium account, you can also choose on
 
 1. Share the desktop flow directly through the Power Automate portal.
 
-    To share a desktop flow with other users in your organization, give them specific permissions to access the flow. You can find more information regarding sharing flows through Power Automate portal in [Share desktop flows](../manage.md#share-desktop-flows). Also, learn how to [Share desktop flows that contain connector actions](../share-desktop-flows-that-contain-connector-actions.md).
+    To share a desktop flow with other users in your organization, give them specific permissions to access the flow. You can find more information regarding sharing flows through Power Automate portal in [Share desktop flows](../manage.md#share-desktop-flows). Also, learn how to [Share desktop flows that contain connector actions](../how-to/share-desktop-flows-that-contain-connector-actions.md).
 
 2. Export a solution that contains the desktop flow.
 
     To move a desktop flow from one environment to another, host it in a solution. For more information about importing flows into solutions and building solution-aware flows, see [Overview of solution-aware flows](../../overview-solution-flows.md).
 
 > [!NOTE]
-> If the solution fails to export because of its size, learn how to [Reduce the size of desktop flows in a solution](../reduce-flow-size.md).
+> If the solution fails to export because of its size, learn how to [Reduce the size of desktop flows in a solution](../how-to/reduce-flow-size.md).
