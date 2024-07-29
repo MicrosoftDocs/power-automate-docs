@@ -77,7 +77,7 @@ If you linked your process in your Test environment to a workspace (for example,
 1. (If you didn't newly import the process) Attach a custom Power BI workspace to the process:
     1. Go to the process details page for the process.
     1. On the **Details** card, select **Edit**.
-    1. From the **Power BI workspace (optional)** dropdown menu, select your **WkSpace A** Power BI workspace that you want to port changes to.
+    1. From the **Power BI workspace (optional)** dropdown menu, select your **WkSpace A** Power BI workspace that you want to migrate customizations to.
     1. Provide a *different* report name from the name you used for the process in Dev environment.
 
         > [!IMPORTANT]
@@ -109,7 +109,7 @@ If you linked your process in your Test environment to a workspace (for example,
 
 1. From the command bar, save the report by selecting **Save**.
 1. From the command bar, publish the report by selecting **Publish**.
-1. From the list of destinations, select **WkSpace A** > **Select**.
+1. From the list of destinations, select your **WkSpace A** > **Select**.
 
     A message that says **Replacing report** opens, indicating you gave the report the same name as your old Report B.
 
