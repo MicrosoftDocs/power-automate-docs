@@ -50,7 +50,7 @@ This solution involves using Power BI pipelines for moving entities across two d
 
 ## Deploy your pipeline
 
-1. Sing in to [Power BI](https://msit.powerbi.com/home).
+1. Sign in to [Power BI](https://msit.powerbi.com/home).
 1. From the left navigation pane, select **Deployment pipelines**.
 
     :::image type="content" source="media/process-mining-alm-pbi-pipelines-and-rebinding/deployment-pipelines.png" alt-text="Screenshot of the Deployment pipelines icon in the 'More' menu.":::
