@@ -80,7 +80,7 @@ Your lineage views should like the following screenshot. A semantic model points
 
 To understand the distinctions between each entity, familiarize yourself with the entities before you proceed.
 
-### Create the report in Power BI (different workspaces)
+### Rebind the report in Power BI (different workspaces)
 
 1. Sign in to [Power BI](https://msit.powerbi.com/).
 1. Navigate to your **WkSpace A**.
@@ -173,7 +173,7 @@ Your lineage view should look like the following screenshot:
 
 :::image type="content" source="media/process-mining-alm-rebind-with-comp/wkspace-a-semantic-same.png" alt-text="Screenshot of the lineage view of the semantic model.":::
 
-### Create the report in Power BI (same workspace)
+### Rebind the report in Power BI (same workspace)
 
 1. Repeat steps 1 through 4 in [Create the report in Power BI (different workspaces)](#create-the-report-in-power-bi-different-workspaces).
 1. From the **File** menu, select **Save as** and give the report a new name such as 'Report B'.
