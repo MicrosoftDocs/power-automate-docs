@@ -72,7 +72,9 @@ For high-density workloads on multi-session enabled Windows operation systems, e
   - RAM: 4 GB
 
 > [!NOTE]
-> These recommendations can vary significantly based on background processes that are running, the type of workload being executed, and the specifications of the CPU cores. Therefore, this is only a high-level guidance and may require hardware adjustments depending on these factors. 
+> - These recommendations can vary significantly based on background processes that are running, the type of workload being executed, and the specifications of the CPU cores. Hardware adjustments may be required depending on these factors.
+> - You need a DSL-range internet (not LAN) bandwidth to function properly.
+>   
 > To monitor the performance of individual user sessions:
 > 1. Open Task Manager.
 > 2. Select the "Users" tab.
