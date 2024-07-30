@@ -3,7 +3,7 @@ title: Prerequisites and limitations
 description: Learn about the prerequisites and limitations of Power Automate for desktop.
 author: mattp123
 ms.topic: overview
-ms.date: 06/20/2024
+ms.date: 07/30/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
