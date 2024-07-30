@@ -77,6 +77,6 @@ Following are the main components for the process mining capability:
 - [Edit and refresh processes](process-mining-data-source.md)
 - [Share processes](process-mining-share.md)
 
-### See also
+## Related information
 
 [FAQ for Process Mining's Microsoft 365 personal recommendations](faqs-process-mining-m365-personal-recommendations.md)

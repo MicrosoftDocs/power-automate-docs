@@ -45,7 +45,7 @@ The natural language to code in scripting actions capability can only generate s
 
 When you're interacting with copilot, it's essential to keep in mind that the structure of the questions can significantly affect the response that copilot gives. To interact with copilot effectively, is crucial to ask clear and specific questions and provide context to help the AI better understand your intent.
 
-## See also
+## Related information
 
 - [Natural Language to code in scripting actions](./desktop-flows/actions-reference/scripting.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)

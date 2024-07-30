@@ -213,7 +213,7 @@ This might be because of a temporary issue where the **Split On** setting of the
 
 You need a standalone Power Automate license, or a seeded Microsoft 365 license, or PowerApps/Dynamics license, to access and use Copilot. MSA users (@microsoft.com) without an org ID aren't able to use the experience.
 
-### See also
+## Related information
 
 - [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)

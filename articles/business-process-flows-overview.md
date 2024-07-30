@@ -219,7 +219,7 @@ Recent rows are visible in a lookup column in the unified interface. To prevent 
 
 - Business process flows will show the name of the BPF instance, which is set at the time that the BPF instance is created. This means if the name in the BPF definition changes, new BPF instances will display the updated name, but older BPF instances will display the original name. It also means localized BPF definition names aren't displayed.
 
-### See also
+## Related information
 
 - [Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal)
 - [Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal) 

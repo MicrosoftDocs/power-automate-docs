@@ -90,6 +90,6 @@ When a selector is tested and the output is success or multiple UI elements foun
 
 :::image type="content" source="media/test-selectors/test-selector-select-text-editor.png" alt-text="Text editor option in test selector.":::
 
-## See also
+## Related information
 
 [Build a custom selector](build-custom-selectors.md)

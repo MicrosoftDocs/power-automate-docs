@@ -72,7 +72,7 @@ To complete this example, you need accounts with access to the following:
 
 Now, when your manager sends you an email, you receive a Slack message that contains the information that you specified.
 
-### See also
+## Related information
 
 - [Watch your flow in action](see-a-flow-run.md)
 - [Publish your own template](publish-a-template.md)
