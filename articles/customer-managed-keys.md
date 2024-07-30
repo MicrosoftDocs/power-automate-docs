@@ -2,14 +2,14 @@
 title: Support for customer-managed keys
 description: Learn about support for customer-managed keys in Power Automate.
 suite: flow
-author: v-aangie
+author: samathur
 contributors:
   - samathur
   - ChrisGarty
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 07/23/2024
+ms.date: 07/30/2024
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -41,8 +41,17 @@ If there are existing flows in the environment being enabled for CMK, a warning 
 
 ## Known limitations
 
-- When an environment is enabled for customer-managed keys, then Power Automate data can't be sent to the analytics pipeline for a range of scenarios: [tenant-wide reporting in Power Platform admin center](/power-platform/admin/power-automate-analytics-reports), [Data Export to Data Lake](/power-platform/admin/self-service-analytics-schema-definition#power-automate-folder-structure), [Application Insights](/power-platform/admin/app-insights-cloud-flow), [Cloud flow run history](/power-automate/dataverse/cloud-flow-run-metadata) (for [Automation Center](/power-automate/automation-center-overview)), [Power Automate mobile app](/power-automate/mobile/overview-mobile) [notifications page](/power-automate/mobile/notifications), cloud flow activity page, flow failure e-mail, and flow failure digest e-mail.
+When an environment is enabled for customer-managed keys, then Power Automate data can't be sent to the analytics pipeline for a range of scenarios:
+
+- [Tenant-wide reporting in Power Platform admin center](/power-platform/admin/power-automate-analytics-reports)
+- [Data Export to Data Lake](/power-platform/admin/self-service-analytics-schema-definition#power-automate-folder-structure)
+- [Application Insights](/power-platform/admin/app-insights-cloud-flow)
+- [Cloud flow run history](/power-automate/dataverse/cloud-flow-run-metadata) (for [Automation Center](/power-automate/automation-center-overview))
+- [Power Automate mobile app](/power-automate/mobile/overview-mobile) [notifications page](/power-automate/mobile/notifications)
+- Cloud flow activity page
+- Flow failure e-mail
+- Flow failure digest e-mail
 
 ## Related information
 
-- [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
+[Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
