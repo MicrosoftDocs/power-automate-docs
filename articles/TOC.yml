@@ -421,8 +421,6 @@
         href: ./desktop-flows/hosted-machines.md
       - name: Hosted machine groups
         href: ./desktop-flows/hosted-machine-groups.md
-    - name: Scale with AVD starter kit (deprecated)
-      href: ./desktop-flows/avd-overview.md
   - name: Create credentials
     items:
     - name: Azure Key Vault credentials
@@ -636,14 +634,22 @@
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
     - name: Configure proxy settings
       href: ./desktop-flows/how-to/proxy-settings.md
+    - name: Reduce desktop flow size in solution
+      href: ./desktop-flows/how-to/reduce-flow-size.md
     - name: Use logical operations on conditional statements
       href: ./desktop-flows/how-to/logical-operations-conditional-statements.md
+    - name: Use passwords
+      href: ./desktop-flows/how-to/use-passwords.md  
     - name: Handle custom forms
       href: ./desktop-flows/how-to/handle-custom-forms.md
     - name: Share/export a desktop flow
       href: ./desktop-flows/how-to/share-export-desktop-flows.md
     - name: Run desktop flow from other desktop flows
       href: ./desktop-flows/how-to/run-desktop-flow-action.md
+    - name: Use connector actions
+      href: ./desktop-flows/how-to/use-connector-actions.md
+    - name: Share desktop flows that contain connector actions
+      href: ./desktop-flows/how-to/share-desktop-flows-that-contain-connector-actions.md
     - name: Set screen resolution on unattended mode
       href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
     - name: Run Power Automate with elevated rights
@@ -1105,7 +1111,7 @@
     displayName: Monitor desktop flows in the Center of Excellence (CoE)
   - name: Machine group certificate renewal for admins
     href: ./desktop-flows/machine-group-certificates-admins.md
-  - name: Set a policy to help prevent data loss
+  - name: Data loss prevention (DLP) policy creation
     href: prevent-data-loss.md
   - name: Support Intune in mobile apps
     href: intune-support.md

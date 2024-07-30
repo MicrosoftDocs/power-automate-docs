@@ -63,7 +63,7 @@ Copilot is available only in the new designer. When editing a flow, you can choo
 
 If you're using the new designer, all changes done by copilot should be reviewed in the designer. You can undo your changes.
 
-## See also
+## Related information
 
 - [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
 - [Use Copilot to analyze desktop flow activity (preview)](./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)

@@ -93,7 +93,7 @@ After you publish a new collection, the desktop flow needs to be saved to confir
 
 [Manage UI elements collections](manage-ui-elements-collections.md)
 
-### See also
+## Related information
 
 - [Assets library](assets-library.md)
 - [Use and update UI elements collections](use-update-ui-elements-collections.md)

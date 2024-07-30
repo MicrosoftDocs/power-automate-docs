@@ -151,7 +151,7 @@ Have your tenant admin ask the MS Support team to disable Copilot in your tenant
 - You can't use Copilot if you're using a personal Microsoft account. For example, you can't use `someone@live.com`. Use a work or school account like `someone@contoso.com` instead.
 - Copilot supports English language only for models.
 
-### See also
+## Related information
 
 - [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
