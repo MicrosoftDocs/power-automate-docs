@@ -1,6 +1,6 @@
 ---
-title: Rebind reports without using a composite model
-description: Learn how to rebind reports without using a composite model with different workspaces or the same workspace.
+title: Rebind reports without using a composite model - same workspace
+description: Learn how to rebind reports without using a composite model with the same workspace.
 author: donums
 contributors:
   - donums
@@ -15,53 +15,15 @@ search.audienceType:
   - enduser
 ---
 
-# Rebind reports without using a composite model
+# Rebind reports without using a composite model (same workspace)
 
-The rebind method you choose depends on whether the two processes you have are using two different workspaces or the same workspace.
+If you linked your process in your Test environment to a workspace (for example, WkSpace A) that's the same as the one used for the process in your Dev environment (for example, WkSpace A), follow the steps in this article.
 
-## With two different workspaces
+## Attach a workspace to your process
 
-If you linked your process in Test environment to a workspace (for example, WkSpace B) that's different from the one used by the process in Dev environment (for example, WkSpace A), follow the steps in this section.
+1. [!INCLUDE[alm-attach-workspace](./includes/alm-attach-workspace.md)]
 
-### Attach a workspace to your process
-
-[!INCLUDE[alm-attach-workspace](./includes/alm-attach-workspace.md)]
-
-### Rebind the Power BI report (different workspaces)
-
-1. Sign in to [Power BI](https://msit.powerbi.com/).
-1. From the left navigation pane, select **Workspaces** > your **WkSpace A**.
-1. In your **WkSpace A**, select your **Report A**.
-1. To download the report, from the command bar, select **File** > **Download this file** > **"A copy of your report with a live connection…"** > **Download**.
-1. Open the downloaded report in Power BI for desktop.
-1. After you edit the report, select **Transform data** > **Data source settings** from the command bar in the **Home** tab.
-1. From the list of semantic models, select the semantic model of the process that's in your **WkSpace B** workspace, and then select **Connect**.
-
-    This is called *rebinding*. The report refreshes. Learn more about semantic models in [Semantic models in the Power BI service](/power-bi/connect-data/service-datasets-understand).
-
-    :::image type="content" source="media/process-mining-alm-rebind-without-comp/semantic-model.png" alt-text="Screenshot of rebinding your process after you download, edit, and connect your model.":::
-
-1. From the command bar, save the report by selecting **Save**.
-1. From the command bar, publish the report by selecting **Publish**.
-1. From the **Publish to Power BI** menu, select your **WkSpace B** > **Select**.
-
-    A message that says **Replacing report** appears because you retained the report name.
-
-1. Select **Replace** to overwrite the old report in WkSpace B. This action overwrites the existing report with an updated version that incorporates the new customizations. It also preserves the original report name for consistency.
-
-    :::image type="content" source="media/process-mining-alm-rebind-without-comp/replacing-report.png" alt-text="Screenshot of how to replace a report.":::
-
-1. When this process completes, return to Power BI and open **WkSpace B**.
-
-    The report is now successfully migrated from WkSpace A and is connected to the semantic model of the process you had in your WkSpace B.
-
-## With the same workspace
-
-If you linked your process in your Test environment to a workspace (for example, WkSpace A) that's the same as the one used for the process in your Dev environment (for example, WkSpace A), follow the steps in this section.
-
-1. [Attach a workspace to your process](#attach-a-workspace-to-your-process) by following steps 1 through 3 in this article.
-
-1. If you newly imported the process, continue to the following step 3. If you didn't newly import the process, go to step 4.
+1. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
 
 1. Select the *same workspace* for this process by following these steps:
     1. In the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
@@ -87,7 +49,7 @@ If you linked your process in your Test environment to a workspace (for example,
     1. Select **Save** > **Continue**.
     1. From the command bar or in the report view, select **Refresh data**.
 
-### Rebind the Power BI report (same workspace)
+## Rebind the Power BI report
 
 1. To download your report in Power BI, do steps 1 through 5 in [Rebind Power BI report (different workspaces)](#rebind-the-power-bi-report-different-workspaces).
 1. From the **File** menu, select **Save as**.

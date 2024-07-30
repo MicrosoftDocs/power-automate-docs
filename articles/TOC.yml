@@ -856,9 +856,17 @@
         - name: Overview
           href: process-mining-pbi-reports-overview.md
         - name: Rebind reports without using a composite model
-          href: process-mining-alm-rebind-without-comp.md
+          items:
+          - name: With different workspaces
+            href: process-mining-alm-rebind-without-comp-diff-wkspace.md
+          - name: With the same workspace
+            href: process-mining-alm-rebind-without-comp-same-wkspace.md
         - name: Rebind reports using a composite model
-          href: process-mining-alm-rebind-with-comp.md
+          items:
+          - name: With different workspaces
+            href: process-mining-alm-rebind-with-comp-diff-wkspace.md
+          - name: With the same workspace
+            href: process-mining-alm-rebind-with-comp-same-wkspace.md
       - name: Migrate using Power BI pipelines and rebinding
         href: process-mining-alm-migrate-using-pbi-pipelines-and-rebinding.md    
     - name: Improve cloud flows with process insights (preview)

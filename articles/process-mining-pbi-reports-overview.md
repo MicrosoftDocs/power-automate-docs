@@ -17,6 +17,8 @@ search.audienceType:
 
 # Power BI reports in Process Mining overview
 
+The rebind method you choose depends on whether the two processes you have are using two different workspaces or the same workspace.
+
 The articles in this section use fictitious names. These names are for demonstration purposes and you should use names that suit your preferences. As you go through the procedures, select your own environments and workspaces that correspond to these references.
 
 - **Dev environment**: Environment *from which* you want to migrate process mining artifacts.
@@ -43,6 +45,10 @@ The procedures in the **Migrate customized Process Mining Power BI reports** sec
 
 You can transfer the Power BI reports in three ways:
 
-- [Rebind without a using a composite model](process-mining-alm-rebind-without-comp.md)
-- [Rebind using a composite model](process-mining-alm-rebind-with-comp.md)
+- Rebind without a using a composite model
+    - [With two different workspaces](process-mining-alm-rebind-without-comp-diff-wkspace.md)
+    - [With the same workspace](process-mining-alm-rebind-without-comp-same-wkspace.md)
+- Rebind using a composite model
+    - [With two different workspaces](process-mining-alm-rebind-with-comp-diff-wkspace.md)
+    - [With the same workspace](process-mining-alm-rebind-with-comp-same-wkspace.md)
 - [Use Power BI pipelines and rebind](process-mining-alm-migrate-using-pbi-pipelines-and-rebinding.md)
