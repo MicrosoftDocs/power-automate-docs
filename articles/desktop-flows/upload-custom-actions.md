@@ -100,7 +100,7 @@ Only co-owners can delete custom actions. Deleting a custom actions group causes
 
 [Use custom actions](use-custom-actions.md)
 
-### See also
+## Related information
 
 - [Assets library](assets-library.md)
 - [Create custom actions](create-custom-actions.md)

@@ -98,7 +98,7 @@ It might be that the connection for the current user has become unauthenticated.
 
 Use the PowerShell command in [How can I associate in context flows to Power Apps/Dynamics365 apps](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-power-appsdynamics365-apps) in the *Frequently asked questions about Power Automate licensing* article.
 
-### See also
+## Related information
 
 - [How can I associate in context flows to Power Apps/Dynamics365 apps](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-power-appsdynamics365-apps)
 - [Can I use service principal in flows, and does it count against my request limits?](/power-platform/admin/power-automate-licensing/types#can-i-use-service-principal-in-flows-and-does-it-count-against-my-request-limits)

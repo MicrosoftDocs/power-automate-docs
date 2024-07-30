@@ -37,7 +37,7 @@ One of the limitations of Copilot in desktop flow activity is that it currently 
 
 Effective and responsible use of Copilot in desktop flow activity can be achieved by ensuring that the user has the appropriate rights to access the desktop flow activity data in Dataverse. This means that Copilot only answers questions based on the data the user has permission to access. Additionally, it's important for users to understand the scope and limitations of Copilot, and to phrase their queries accordingly.
 
-## See also
+## Related information
 
 - [Use Copilot to analyze desktop flow activity (preview)](./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)
 - [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)

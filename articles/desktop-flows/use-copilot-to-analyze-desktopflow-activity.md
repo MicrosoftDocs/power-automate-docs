@@ -198,7 +198,7 @@ The following list contains known limitations of the copilot in desktop flow act
 - In multi-turn conversations, copilot keeps context of the last five question only. If you encounter wrong or incomplete results, consider resetting the conversation. More information: [Clearing previous prompt context to start over](#clearing-previous-prompt-context-to-start-over).
 - For queries that return large result-sets, copilot might not be able return or render these.
 
-## See also
+## Related information
 
 - [Get started with Copilot in cloud flows (preview)](../get-started-with-copilot.md)
 - [FAQ for Copilot in desktop flow activity (preview)](../faqs-copilot-automation-activity.md)

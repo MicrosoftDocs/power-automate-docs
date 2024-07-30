@@ -5,7 +5,7 @@ author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/26/2024
+ms.date: 07/17/2024
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
@@ -46,7 +46,7 @@ For each collection, you can perform the following actions.
 
 ## Edit a UI elements collection
 
-You can edit a UI elements collection, modifying its name and/or description.
+Only owners and co-owners can edit collections. You can edit a UI elements collection, modifying its name and/or description.
 
 :::image type="content" source="media/ui-elements-collections/portal-edit-collection.png" alt-text="Edit a UI elements collection in portal" border="false":::
 
@@ -68,11 +68,18 @@ Only owners and co-owners can delete collections. Deleting a collection isn't po
 
 :::image type="content" source="media/ui-elements-collections/portal-delete-collection.png" alt-text="Delete a UI elements collection in portal" border="false":::
 
+## Create a copy of a UI elements collection
+
+You can quickly create a copy of a collection, selecting the option **Save as**. This option allows you to create a duplicate collection, which you can also rename.
+
+> [!NOTE]
+> Version 2.45 of Power Automate for desktop is required to properly import collections that have been created in this way (copied from other collections).
+
 ## Next steps
 
 [Use and update UI elements collections](use-update-ui-elements-collections.md)
 
-### See also
+## Related information
 
 - [Assets library](assets-library.md)
 - [Create and publish UI elements collections](create-ui-elements-collections.md)

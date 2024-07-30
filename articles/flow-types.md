@@ -45,7 +45,7 @@ Use [desktop flows](./desktop-flows/introduction.md) to automate tasks on the We
 
 [Business process flows](business-process-flows-overview.md) provide a guide for people to get work done. They provide a streamlined user experience that leads people through the processes their organization has defined for interactions that need to be advanced to a conclusion of some kind. This user experience can be tailored so that people with different security roles can have an experience that best suits the work they do.
 
-### See also
+## Related information
 
 - Read guidance to [determining which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
 - Get started with [cloud flows](overview-cloud.md). 

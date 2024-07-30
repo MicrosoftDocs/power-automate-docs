@@ -63,7 +63,7 @@ Alternatively, you can drag **Workflow** to the **Global Workflows** section, wh
 
 5. Select **Update** on the business process flow designer toolbar.
  
-### See also
+## Related information
 
 - [Use Workflow processes to automate processes that don't require user interaction](workflow-processes.md) <br/>
 - [Tutorial: Create a business process flow to standardize processes](create-business-process-flow.md) <br/>
