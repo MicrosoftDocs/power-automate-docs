@@ -49,7 +49,7 @@ Below are the main tables used in the Automation Center:
 | Process          | Stores desktop flows and solution-aware cloud flows.                        |
 | Flow Session     | Stores desktop flow run data.                                               |
 | Flow Run         | Stores cloud flow run data ingested through the feature [Manage cloud flow run history in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata). |
-| Flow Log         | Stores atomic logs such as Power Automate desktop flow run action logs (requires [logs V2 enablement](/desktop-flows/configure-desktop-flow-logs)), machine run logs, etc.       |
+| Flow Log         | Stores atomic logs such as Power Automate desktop flow run action logs (requires [logs V2 enablement](/power-automate/desktop-flows/configure-desktop-flow-logs)), machine run logs, etc.       |
 | Flow Event       | Stores recommendation-related data and more.                                |
 | Work Queue       | Stores work queue data.                                                     |
 | Work Queue Item  | Stores work queue item data belonging to a particular work queue.           |
