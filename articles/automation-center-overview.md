@@ -55,8 +55,8 @@ Below are the main tables used in the Automation Center:
 | Work Queue Item  | Stores work queue item data belonging to a particular work queue.           |
 
 > [!NOTE]
-> In Dataverse for Teams environments, users must be members of the Dataverse for Teams environment to access the Automation Center. [Learn more](/power-apps/teams/data-platform-faqs#how-does-security-and-governance-differ-between-dataverse-and-microsoft-dataverse-for-teams). Consider upgrading your environment for more granular control over privileges and additional features.
-> The Work Queue tab is not available in Dataverse for Teams environments.
+> - In Dataverse for Teams environments, users must be members of the Dataverse for Teams environment to access the Automation Center. [Learn more](/power-apps/teams/data-platform-faqs#how-does-security-and-governance-differ-between-dataverse-and-microsoft-dataverse-for-teams). Consider upgrading your environment for more granular control over privileges and additional features.
+> - The Work Queue tab is not available in Dataverse for Teams environments.
 
 ## Overview tab
 
