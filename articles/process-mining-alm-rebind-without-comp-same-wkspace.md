@@ -51,7 +51,7 @@ If you linked your process in your Test environment to a workspace (for example,
 
 ## Rebind the Power BI report
 
-1. To download your report in Power BI, do steps 1 through 5 in [Rebind Power BI report (different workspaces)](#rebind-the-power-bi-report-different-workspaces).
+[!INCLUDE[alm-rebind-in-power-bi](./includes/alm-rebind-in-power-bi.md)]
 1. From the **File** menu, select **Save as**.
 1. Enter the *same name* for the report as your Report B, and then select **Save**.
 

@@ -79,7 +79,8 @@ Your lineage view should look like the following screenshot:
 
 ### Rebind the report in Power BI
 
-1. Repeat steps 1 through 4 in [Rebind the report in Power BI (different workspaces)](#rebind-the-report-in-power-bi-different-workspaces).
+[!INCLUDE[alm-rebind-in-power-bi](./includes/alm-rebind-in-power-bi.md)]
+
 1. From the **File** menu, select **Save as** and give the report a new name such as 'Report B'.
 1. From the home tab, select **Transform data** > **Data source settings**. Notice the **Direct Query connection** in the Data source settings.
 1. Select **Change Source**.
@@ -102,5 +103,7 @@ Your lineage view should look like the following screenshot:
 1. Select the **Report B** that the composite model points to. It's the second red box in the previous image.
 1. Select **Open report**.
 
-    The report looks like that of the composite model from **WkSpace A** with the **Self Loop** percentage in the report. For a screenshot, go to step 16 in [Rebind the report in Power BI (different workspaces)](#rebind-the-report-in-power-bi-different-workspaces).
+    The report looks like that of the composite model from **WkSpace A** with the **Self Loop** percentage in the report.
+
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/self-loop-b.png" alt-text="Screenshot of the composite model with the 'Self Loop' percentage.":::
 

@@ -79,13 +79,8 @@ To understand the distinctions between each entity, familiarize yourself with th
 
 ## Rebind the report in Power BI
 
-1. Sign in to [Power BI](https://msit.powerbi.com/).
-1. Navigate to your **WkSpace A**.
-1. From the list of entities, select the three dots beside the composite model, and then select **Download this file**.
+[!INCLUDE[alm-rebind-in-power-bi](./includes/alm-rebind-in-power-bi.md)]
 
-    :::image type="content" source="media/process-mining-alm-rebind-with-comp/download-this-file.png" alt-text="Screenshot of downloading the file.":::
-
-1. In [Power BI desktop](https://msit.powerbi.com/), open the downloaded file.
 1. From the home tab, select **Transform data** > **Data source settings**. Notice the **Direct Query connection** in the Data source settings.
 1. Select **Change Source**.
 1. Search for and select for the semantic model of the process that was created in Test. Its semantic model is in your **WkSpace B**.
