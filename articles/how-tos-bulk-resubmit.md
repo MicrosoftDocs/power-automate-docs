@@ -4,11 +4,11 @@ description: Learn how to resubmit and cancel failed or successful flow runs in 
 services: ''
 suite: flow
 documentationcenter: na
-author: natalie-pienkowska
+author: DBEKI
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 04/24/2024
-ms.author: vimuthuk
+ms.author: dbekirop
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -44,7 +44,7 @@ You can resubmit previous runs of a flow in bulk. To do this, follow these steps
 
 ## Cancel flow runs
 
-You can cancel flow runs either through the Run history page or by using a [template](https://make.powerautomate.com/galleries/public/templates/52c2eb66c0664b3b82480d1adcc6c1b4/cancel-all-of-my-flow-runs.). If you need to cancel up to 20 runs, use the Run history page. If you need to cancel more than 20 (even hundreds), use the template. Procedures for both methods are detailed in the following sections.
+You can cancel flow runs either through the Run history page or by using a [template](https://make.powerautomate.com/galleries/public/templates/52c2eb66c0664b3b82480d1adcc6c1b4/cancel-all-of-my-flow-runs). If you need to cancel up to 20 runs, use the Run history page. If you need to cancel more than 20 (even hundreds), use the template. Procedures for both methods are detailed in the following sections.
 
 ### Cancel up to 20 flow runs
 
