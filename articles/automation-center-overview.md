@@ -38,6 +38,26 @@ The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#r
 > - Desktop flow related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
 > - Cloud flow run history shown on the overview and runs tab might take up to an hour to be available in Dataverse and the automation center.
 
+## Required Permissions
+
+The Automation Center's underlying data is managed through Dataverse tables, secured via Role-Based Access Control (RBAC). In standard Dataverse environments (Production, Trial, Sandbox, Developer), necessary privileges are included in the default Environment Maker role. Administrators can assign users to this role as needed. In **Default** environments with a provisioned Dataverse database, all users automatically become Environment Makers. Additionally, administrators can create custom security roles with row-level privileges to control the data users can view and interact with.
+
+Below are the main tables used in the Automation Center:
+
+| Table             | Description                                                                 |
+|------------------|-----------------------------------------------------------------------------|
+| Process          | Stores desktop flows and solution-aware cloud flows.                        |
+| Flow Session     | Stores desktop flow run data.                                               |
+| Flow Run         | Stores cloud flow run data ingested through the feature [Manage cloud flow run history in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata). |
+| Flow Log         | Stores atomic logs such as Power Automate desktop flow run action logs (requires [logs V2 enablement](/desktop-flows/configure-desktop-flow-logs)), machine run logs, etc.       |
+| Flow Event       | Stores recommendation-related data and more.                                |
+| Work Queue       | Stores work queue data.                                                     |
+| Work Queue Item  | Stores work queue item data belonging to a particular work queue.           |
+
+> [!NOTE]
+> In Dataverse for Teams environments, users must be members of the Dataverse for Teams environment to access the Automation Center. [Learn more](/power-apps/teams/data-platform-faqs#how-does-security-and-governance-differ-between-dataverse-and-microsoft-dataverse-for-teams). Consider upgrading your environment for more granular control over privileges and additional features.
+> The Work Queue tab is not available in Dataverse for Teams environments.
+
 ## Overview tab
 
 This tab provides an end-to-end automation health view within the environment and is based on top-level flow reporting. The [Recommendations](#recommendations) section of this tab provides actionable insights to your automation estate. You can prioritize and address the most important issues and recommendations, based on their potential impact.
