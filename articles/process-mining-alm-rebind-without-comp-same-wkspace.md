@@ -21,9 +21,9 @@ If you linked your process in your Test environment to a workspace (for example,
 
 ## Attach a workspace to your process
 
-1. [!INCLUDE[alm-attach-workspace](./includes/alm-attach-workspace.md)]
+[!INCLUDE[alm-attach-workspace](./includes/alm-attach-workspace.md)]
 
-1. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
+4. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
 
 1. Select the *same workspace* for this process by following these steps:
     1. In the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
@@ -51,7 +51,11 @@ If you linked your process in your Test environment to a workspace (for example,
 
 ## Rebind the Power BI report
 
-[!INCLUDE[alm-rebind-in-power-bi](./includes/alm-rebind-in-power-bi.md)]
+1. Sign in to [Power BI](https://msit.powerbi.com/home).
+1. From the left navigation pane, select **Workspaces** > your **WkSpace A**.
+1. In your **WkSpace A**, open your **Report A**.
+1. From the command bar, download the report by selecting **File** >**Download this file** > **"A copy of your report with a live connection"** > **Download**.
+1. Open the downloaded report in Power BI for desktop.
 1. From the **File** menu, select **Save as**.
 1. Enter the *same name* for the report as your Report B, and then select **Save**.
 

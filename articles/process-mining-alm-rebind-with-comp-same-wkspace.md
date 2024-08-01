@@ -23,7 +23,7 @@ If you linked your process in your Test environment to a workspace (for example,
 
 [!INCLUDE[alm-attach-workspace](./includes/alm-attach-workspace.md)]
 
-1. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
+4. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
 1. Select the same workspace for this process by following these steps:
     1. In the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
     1. In the **Report Name** field, enter a *different report name* from your previous report name.
@@ -35,7 +35,7 @@ If you linked your process in your Test environment to a workspace (for example,
 
     :::image type="content" source="media/process-mining-alm-rebind-with-comp/new-workspace-same-with.png" alt-text="Screenshot of selecting a new workspace for your process with a different report name from your previous report.":::
 
-1. (If you didn't do step 3) Attach a custom Power BI workspace to the process:
+1. (If you didn't newly import the process) Attach a custom Power BI workspace to the process:
     1. Go to the process details page for the process.
     1. On the **Details** card, select **Edit**.
     1. From the **Power BI workspace (optional)** dropdown menu, select your **WkSpace A** Power BI workspace.
@@ -81,7 +81,7 @@ Your lineage view should look like the following screenshot:
 
 [!INCLUDE[alm-rebind-in-power-bi](./includes/alm-rebind-in-power-bi.md)]
 
-1. From the **File** menu, select **Save as** and give the report a new name such as 'Report B'.
+1. From the **File** menu, select **Save as** and give the report a new name such as **Report B**.
 1. From the home tab, select **Transform data** > **Data source settings**. Notice the **Direct Query connection** in the Data source settings.
 1. Select **Change Source**.
 1. Search for and select the semantic model of the process that's in your Test environment. The semantic model is **Report B_Dataset_206…** and it should be in your **WkSpace A**.

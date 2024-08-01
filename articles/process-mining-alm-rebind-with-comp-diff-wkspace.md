@@ -26,6 +26,8 @@ If you linked your process in the Test environment to a workspace (for example, 
 [!INCLUDE[alm-attach-workspace](./includes/alm-attach-workspace.md)]
 [!INCLUDE[alm-attach-wwith-and-without](./includes/alm-attach-with-and-without.md)]
 
+7. Sign in to [Power BI](https://msit.powerbi.com/home).
+
 Before you get started, ensure that the states of your reports, workspaces, and their lineages correspond to what's in the following sections.
 
 ## State of your Report A
@@ -47,7 +49,7 @@ Your **WkSpace A** should have the following entities:
 
 The numbering corresponds with the numbering of entities in the following screenshot.
 
-There are three (3) entities titled 'Report A'. You can differentiate them using their icons and their **Refreshed** timestamps:
+There are three (3) entities titled **Report A**. You can differentiate them using their icons and their **Refreshed** timestamps:
 
 - The icon with the yellow bars represents the reports. The other icon is that of the composite model or semantic model.
 - The report with the same **Refreshed** timestamp as the composite model is the report of the composite model.

@@ -1,4 +1,4 @@
-1. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
+4. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
 
 1. Select a new workspace for this process by following these steps:
     1. In the **Power BI workspace** dropdown menu, select a *different workspace*, which you'll use in the **Test** environment.

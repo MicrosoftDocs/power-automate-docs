@@ -41,7 +41,7 @@ The procedures in the **Migrate customized Process Mining Power BI reports** sec
 
     1. Navigate to the report page of your process in Power Automate.
     1. From the command bar, select **Open in Power BI**.
-    1. Make the changes you want to port and save the report.
+    1. Make the changes you want to migrate and save the report.
 
 You can transfer the Power BI reports in three ways:
 

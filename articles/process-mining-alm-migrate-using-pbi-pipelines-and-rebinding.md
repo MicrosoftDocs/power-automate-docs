@@ -21,16 +21,11 @@ This solution involves using Power BI pipelines for moving entities across two d
 
 ## Attach a workspace to your process
 
-1. In the **Environments** dropdown menu at the top of the screen, select your Test environment.
-1. On the navigation pane to the left, select **Process mining**.
+[!INCLUDE[alm-attach-workspace](./includes/alm-attach-workspace.md)]
 
-    If your process was newly copied over to the Test environment, there's an exclamation mark inside a speech bubble on the process. This mark indicates that the process was imported.
-
-    :::image type="content" source="./includes/media/process-mining-alm/speech-bubble.png" alt-text="Screenshot of your process on the Process Mining home page.":::
-
-1. If your process was newly copied to the Test environment, select the process and go to step 4. If the process wasn't newly imported, go to step 5.
+4. If your process was newly copied to the Test environment, select the process and go to step 5. If the process wasn't newly imported, go to step 6.
 1. Select a new workspace for this process:
-    1. (If your process was newly copied to the Test environment) Choose a *different workspace* that you will be using for the Test environment.
+    1. Select a *different workspace* that you will be using for the Test environment.
     1. For **Report Name**, enter a *different report name* than that of your previous report.
   
         > [!IMPORTANT]
