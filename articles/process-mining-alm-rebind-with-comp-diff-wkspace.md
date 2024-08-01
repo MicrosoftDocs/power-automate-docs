@@ -83,7 +83,7 @@ To understand the distinctions between each entity, familiarize yourself with th
 
 [!INCLUDE[alm-rebind-in-power-bi](./includes/alm-rebind-in-power-bi.md)]
 
-1. From the home tab, select **Transform data** > **Data source settings**. Notice the **Direct Query connection** in the Data source settings.
+5. From the home tab, select **Transform data** > **Data source settings**. Notice the **Direct Query connection** in the Data source settings.
 1. Select **Change Source**.
 1. Search for and select for the semantic model of the process that was created in Test. Its semantic model is in your **WkSpace B**.
 1. Select **Create**.
