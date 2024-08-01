@@ -82,26 +82,26 @@ Your lineage view should look like the following screenshot:
 [!INCLUDE[alm-rebind-in-power-bi](./includes/alm-rebind-in-power-bi.md)]
 
 4. From the **File** menu, select **Save as** and give the report a new name such as **Report B**.
-1. From the home tab, select **Transform data** > **Data source settings**. Notice the **Direct Query connection** in the Data source settings.
-1. Select **Change Source**.
-1. Search for and select the semantic model of the process that's in your Test environment. The semantic model is **Report B_Dataset_206…** and it should be in your **WkSpace A**.
-1. Select **Create**.
+5. From the home tab, select **Transform data** > **Data source settings**. Notice the **Direct Query connection** in the Data source settings.
+6. Select **Change Source**.
+7. Search for and select the semantic model of the process that's in your Test environment. The semantic model is **Report B_Dataset_206…** and it should be in your **WkSpace A**.
+8. Select **Create**.
 
     :::image type="content" source="media/process-mining-alm-rebind-with-comp/select-dataset-to-create-report-same.png" alt-text="Screenshot of the dataset to create a report using the same workspace.":::
 
-1. When the **Connect to your data** message appears, select relevant tables, and then select **Submit**.
-1. When the query changes are applied, select **Close**.
-1. Save the report.
-1. From the **Home** tab, select **Publish**.
-1. Select your **WkSpace A** as the destination, and then choose **Select**.
-1. When the publishing completes, go to your **WkSpace A** in Power BI to confirm the changes are applied.
+9. When the **Connect to your data** message appears, select relevant tables, and then select **Submit**.
+10. When the query changes are applied, select **Close**.
+11. Save the report.
+12. From the **Home** tab, select **Publish**.
+13. Select your **WkSpace A** as the destination, and then choose **Select**.
+15. When the publishing completes, go to your **WkSpace A** in Power BI to confirm the changes are applied.
 
     The lineage view now shows the composite model.
 
     :::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-a-same-lineage.png" alt-text="Screenshot of the composit model lineage view.":::
 
-1. Select the **Report B** that the composite model points to. It's the second red box in the previous image.
-1. Select **Open report**.
+15. Select the **Report B** that the composite model points to. It's the second red box in the previous image.
+16. Select **Open report**.
 
     The report looks like that of the composite model from **WkSpace A** with the **Self Loop** percentage in the report.
 
