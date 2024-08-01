@@ -81,7 +81,7 @@ Your lineage view should look like the following screenshot:
 
 [!INCLUDE[alm-rebind-in-power-bi](./includes/alm-rebind-in-power-bi.md)]
 
-1. From the **File** menu, select **Save as** and give the report a new name such as **Report B**.
+4. From the **File** menu, select **Save as** and give the report a new name such as **Report B**.
 1. From the home tab, select **Transform data** > **Data source settings**. Notice the **Direct Query connection** in the Data source settings.
 1. Select **Change Source**.
 1. Search for and select the semantic model of the process that's in your Test environment. The semantic model is **Report B_Dataset_206…** and it should be in your **WkSpace A**.
