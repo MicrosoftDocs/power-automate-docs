@@ -2,7 +2,7 @@
 title: Explore Power Automate's automation center (preview)
 description: Explore the comprehensive monitoring and troubleshooting experiences offered by Power Automate's Automation Center (preview), a hub for managing automation activity.
 ms.topic: conceptual
-ms.date: 05/20/2024
+ms.date: 08/01/2024
 ms.author: appapaio
 ms.reviewer: dmartens
 contributors:
@@ -32,34 +32,34 @@ The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#r
 
 > [!NOTE]
 >
-> - Some filters may not be available for some tabs because of the nature of the presented data.
+> - Some filters might not be available for some tabs because of the nature of the presented data.
 > - Data under the **Work queues** tab and **Recommendations** are premium features, which require a Power Automate Premium license.
 > - When you navigate between tabs, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
 > - Desktop flow related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
 > - Cloud flow run history shown on the overview and runs tab might take up to an hour to be available in Dataverse and the automation center.
 
-## Required Permissions
+## Required permissions
 
-The Automation Center's underlying data is managed through Dataverse tables, secured via Role-Based Access Control (RBAC). In standard Dataverse environments (Production, Trial, Sandbox, Developer), necessary privileges are included in the default Environment Maker role. Administrators can assign users to this role as needed. In **Default** environments with a provisioned Dataverse database, all users automatically become Environment Makers. Additionally, administrators can create custom security roles with row-level privileges to control the data users can view and interact with.
+The Automation Center's underlying data is managed through Dataverse tables, secured via role-based access control (RBAC). In standard Dataverse environments (production, trial, sandbox, developer), necessary privileges are included in the default environment maker role. Administrators can assign users to this role as needed. In **Default** environments with a provisioned Dataverse database, all users automatically become environment makers. Additionally, administrators can create custom security roles with row-level privileges to control the data users can view and interact with.
 
-Below are the main tables used in the Automation Center:
+Here are the main tables used in the Automation Center:
 
 | Table name       | Privilege name   | Description                                                                 |
 |------------------|------------------|----------------------------------------------------------|
-| Process          | prvReadWorkflow | Stores desktop flows and solution-aware cloud flows.                        |
-| Flow Session     | prvReadflowsession | Stores desktop flow run data.                                               |
-| Flow Run         | prvReadflowrun | Stores cloud flow run data ingested through the feature [Manage cloud flow run history in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata). |
-| Flow Log         | prvReadflowlog | Stores atomic logs such as Power Automate desktop flow run action logs (requires [logs V2 enablement](/power-automate/desktop-flows/configure-desktop-flow-logs)), machine run logs, etc.       |
-| Flow Event       | prvReadflowevent | Stores recommendation-related data and more.                                |
-| Work Queue       | prvReadworkqueue | Stores work queue data.                                                     |
-| Work Queue Item  | prvReadworkqueueitem | Stores work queue item data belonging to a particular work queue.           |
+| Process          | `prvReadWorkflow` | Stores desktop flows and solution-aware cloud flows.                        |
+| Flow Session     | `prvReadflowsession` | Stores desktop flow run data.                                               |
+| Flow Run         | `prvReadflowrun` | Stores cloud flow run data ingested through the feature [Manage cloud flow run history in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata). |
+| Flow Log         | `prvReadflowlog` | Stores atomic logs such as Power Automate desktop flow run action logs (requires [logs V2 enablement](/power-automate/desktop-flows/configure-desktop-flow-logs)), machine run logs, etc.       |
+| Flow Event       | `prvReadflowevent` | Stores recommendation-related data and more.                                |
+| Work Queue       | `prvReadworkqueue` | Stores work queue data.                                                     |
+| Work Queue Item  | `prvReadworkqueueitem` | Stores work queue item data belonging to a particular work queue.           |
 
-Here is an example of a state where the permissions to view data on the overview and runs tabs are missing.
-:::image type="content" source="media/automation-center/automation-center-missing-privileges.png" alt-text="Screenshot of a an error state related to missing permissions." lightbox="media/automation-center/automation-center-missing-privileges.png":::
+Here's an example of a state where the permissions to view data on the overview and runs tabs are missing.
+:::image type="content" source="media/automation-center/automation-center-missing-privileges.png" alt-text="Screenshot of an error state related to missing privileges." lightbox="media/automation-center/automation-center-missing-privileges.png":::
 
 > [!NOTE]
 > - In Dataverse for Teams environments, users must be members of the Dataverse for Teams environment to access the Automation Center. [Learn more](/power-apps/teams/data-platform-faqs#how-does-security-and-governance-differ-between-dataverse-and-microsoft-dataverse-for-teams). Consider upgrading your environment for more granular control over privileges and additional features.
-> - The Work Queue tab is not available in Dataverse for Teams environments.
+> - The **Work Queue** tab isn't available in Dataverse for Teams environments.
 
 ## Overview tab
 
@@ -113,7 +113,7 @@ This tab provides metrics to monitor the health status of work queue items, incl
 | **Work queue distribution**| Shows the number of work queues with SLA-specific configuration, such as "default item expiration" applied. |
 |**Work queue volumes by status** | Shows the number of work queue items categorized by their processing status, with a breakdown of exception types (available when hovering over the exception category). |
 | **Work queue throughput**| Shows the number of items successfully processed in a work queue within a specific time unit, along with their error rate and trend. |
-| **Work queue item error distribution** | Shows the distribution of work queue items per error state, such as "Business exception", "IT exception", and "Processing timeout". |
+| **Work queue item error distribution** | Shows the distribution of work queue items per error state, such as "Business exception," "IT exception," and "Processing timeout". |
 | **Work queue requeue rate** | Shows how often work queue items are being requeued for further processing or manual handling. |
 | **Average handling time trend** | Shows the trend of average handling time for work queue items over time. |
 | **Top work queues by average handling time**| Shows the top five work queues with the highest average handling time in descending order. |
@@ -123,7 +123,7 @@ This tab provides metrics to monitor the health status of work queue items, incl
 | **Top work queues by error frequency** | Shows the top five work queues with the highest number of items in error state. |
 
 > [!NOTE]
-> If you filter work queue items by a specific item status, such as "Business exception", any matching item that has already expired won't be considered in the results. This is due to the fact that expired items are deemed unprocessable unless their expiration date is extended first, which takes precedence over lower-level exception type searches.
+> If you filter work queue items by a specific item status, such as "Business exception," any matching item that has already expired won't be considered in the results. This is due to the fact that expired items are deemed unprocessable unless their expiration date is extended first, which takes precedence over lower-level exception type searches.
 
 ## Known limitations
 
@@ -132,7 +132,7 @@ The following are current limitations of the automation center and its underlyin
 - Cloud flow-based filtering currently only lists solution cloud flows that were created in the current environment. Filtering support for cloud flows that were imported as part of a solution will be coming soon.
 - Visualizations are based on top-level cloud flow runs only.
 - Only runs for solution-based cloud flows are available in the automation center.
-- During initial preview, visibility of flows and their run history in automation center requires you to be the owner (co-ownership isn't sufficient) of the flows or to have environment wide access to the relevant data in the environment. The main Dataverse tables that power the data shown in the automation center are:  
+- During initial preview, visibility of flows and their run history in automation center requires you to be the owner (coownership isn't sufficient) of the flows or to have environment wide access to the relevant data in the environment. The main Dataverse tables that power the data shown in the automation center are:  
   - `workflow`: Solution-aware cloud flow and desktop flows
   - `flowrun`: [Cloud flow run history](/power-automate/dataverse/cloud-flow-run-metadata)
   - `flowsession`: Desktop flow run history
@@ -145,7 +145,7 @@ The following are current limitations of the automation center and its underlyin
 - Child flow run-specific filters or sorting aren't supported yet.
 - Users with broader access to run data (such as admins or members of the CoE team) might see *Private flow* as flow names. This name might appear if the corresponding cloud flow isn't explicitly shared with the user or the flow was deleted in the meantime.
 - Users with broader access to run data might encounter increased latency during data load because of high cloud flow run volumes. Performance can be improved by selecting more filters and reducing date ranges.
-- If there's a visual showing "*Too many results*", try to adjust your filter to limit the amount of data that is being returned.
+- If there's a visual showing "*Too many results*," try to adjust your filter to limit the amount of data that is being returned.
 - If you see Dataverse or cloud flow run-specific notifications, check the underlying [cloud flow run history documentation](dataverse/cloud-flow-run-metadata.md) to learn more.
 - Older cloud flow run history might be missing for the selected date range filter. Missing run history might be due to your current environment's [time to live](/power-automate/dataverse/cloud-flow-run-metadata#storage-use-for-flowrun-records) (TTL) configuration, which is set to retain cloud flow runs for *n-days* only.
 - Cloud flow run history in Dataverse is a preview feature as well, and comes with its own set of [known limitations](dataverse/cloud-flow-run-metadata.md#known-limitations) that might affect the data shown in the automation center.
