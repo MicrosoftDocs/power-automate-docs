@@ -43,7 +43,7 @@ This solution involves using Power BI pipelines for moving entities across two d
     1. Select **Save** > **Continue**.
     1. From the command bar or in the report view, select **Refresh data**.
 
-## Deploy your pipeline
+## Deploy Power BI reports using pipelines
 
 1. Sign in to [Power BI](https://msit.powerbi.com/home).
 1. From the left navigation pane, select **Deployment pipelines**.
