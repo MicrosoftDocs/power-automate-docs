@@ -1,14 +1,17 @@
 ---
 title: Application lifecycle management in Process Mining overview
 description: Get an overview of application lifecycle management in Process Mining, which includes governance, development, and maintenance.
-author: donums
+author: janPidych
 contributors:
+  - janPidych
+  - rosikm
+  - hamenon-ms
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 08/01/2024
-ms.author: derahonuorah
+ms.date: 08/12/2024
+ms.author: janpidych
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

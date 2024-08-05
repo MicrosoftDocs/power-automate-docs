@@ -1,14 +1,17 @@
 ---
 title: Rebind reports without using a composite model - same workspace
 description: Learn how to rebind reports without using a composite model with the same workspace.
-author: donums
+author: janPidych
 contributors:
+  - janPidych
+  - rosikm
+  - hamenon-ms
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 08/01/2024
-ms.author: derahonuorah
+ms.date: 08/12/2024
+ms.author: janpidych
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
