@@ -35,13 +35,13 @@ With CMKs, your workflows and all associated at-rest data are stored and execute
 
 ### Power Automate CMK application warning messages
 
-As of April 30, 2024, customer-managed key (CMK) support for Power Automate cloud flows is now enabled. Enablement is restricted to environments without flows present and processing for environments when flows are present in the environment results in warnings. This doesn't impact CMK application for other platform components.
+As of April 30, 2024, customer-managed key (CMK) support for Power Automate cloud flows is enabled. Enablement is restricted to environments without flows present and processing for environments when flows are present in the environment results in warnings. This doesn't impact customer-managed key application for other platform components.
 
-If there are existing flows in the environment being enabled for CMK, a warning message similar to "Power Automate flows are still encrypted with the Microsoft Managed Key" displays. In some experiences, a failed status might display. To review the Power Automate warning, go to the Enterprise Policy experience.
+If there are existing flows in the environment being enabled for customer-managed key, a warning message similar to "Power Automate flows are still encrypted with the Microsoft Managed Key" displays. In some experiences, a failed status might display. To review the Power Automate warning, go to the Enterprise Policy experience.
 
 ### Power Automate hosted RPA (preview)
 
-The hosted machine group capability of the [Power Automate hosted RPA](../desktop-flows/hosted-rpa-overview) solution supports customer-managed keys. After applying customer-managed keys, you must reprovision any existing hosted machine groups selecting **Reprovision group** on the machine group details page. Once reprovisioned, the VM disks for the hosted machine group bots are encrypted with the customer-managed key.
+The hosted machine group capability of the [Introduction to the Power Automate hosted RPA](desktop-flows/hosted-rpa-overview.md) solution supports customer-managed keys. After applying customer-managed keys, you must reprovision any existing hosted machine groups selecting **Reprovision group** on the machine group details page. Once reprovisioned, the VM disks for the hosted machine group bots are encrypted with the customer-managed key.
 
 > [!NOTE]
 > Customer-managed key for the hosted machine capability is currently not available.
