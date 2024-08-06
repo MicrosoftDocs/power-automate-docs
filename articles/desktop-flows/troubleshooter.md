@@ -4,7 +4,7 @@ description: Troubleshooter application for Power Automate for desktop.
 author: YiannisMavridis
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 11/14/2023
+ms.date: 08/27/2024
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
@@ -20,9 +20,9 @@ search.audienceType:
 
 The troubleshooter in Power Automate for desktop is a component that allows you to diagnose, and in certain cases, troubleshoot, potential issues that you might face in the desktop application of Power Automate.
 
-:::image type="content" source="media/troubleshooter/Troubleshooter window GA.png" alt-text="Troubleshooter main screen" border="false":::
+:::image type="content" source="media/troubleshooter/troubleshooter-window-four-categories.png" alt-text="Troubleshooter main screen" border="false":::
 
-The troubleshooter includes two categories of diagnostics, for connectivity and UI/Web automation issues, while it also hosts the functionality that puts Power Automate in an improved diagnostics state for troubleshooting purposes.
+The troubleshooter includes four categories of diagnostics, for connectivity, UI/Web automation, picture-in-picture, and installation issues, while it also hosts the functionality that puts Power Automate in an improved diagnostics state for troubleshooting purposes.
 
 >[!NOTE]
 >The existing categories don't require you to be logged in to use the troubleshooter.
@@ -65,7 +65,15 @@ After a category is checked for issues end to end, there’s always the option t
 
 :::image type="content" source="media/troubleshooter/error-dialog-with-troubleshooter-link.png" alt-text="Connection error detected dialog with troubleshooter link" border="false":::
 
-## Improve troubleshooting
+## Installation issues
+
+This category diagnoses and troubleshoots potential issues around four different installation types that may be associated to Power Automate for desktop:
+* Power Automate installation type: This step identifies the installation type and exact version of Power Automate for desktop that is installed on your machine.
+* .NET Framework version: This step identifies whether the minimum .NET Framework version (4.8.1) is installed on your machine, so that Power Automate for desktop can work properly.
+* WebView2: This step verifies whether WebView2 Runtime is installed on your machine.
+* Windows Update: This step checks if there are any pending updates for your Windows on your machine.
+
+## Verbose logging
 
 Apart from the various diagnostics, the troubleshooter also hosts the verbose logging functionality. As per the respective description in the troubleshooter app, the toggle button can be turned on and off, forcing the Power Automate desktop application to function in a verbose logging state. This means that any action taken from you, from that point on, is logged with verbose details in local files. The log files are generated in the default path mentioned in the description (**PowerAutomateVerbose** subfolder in your **Documents** folder).
 
