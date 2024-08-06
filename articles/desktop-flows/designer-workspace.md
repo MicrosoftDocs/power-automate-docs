@@ -5,7 +5,7 @@ author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 09/27/2022
+ms.date: 08/27/2024
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -66,7 +66,7 @@ When copying actions, all their parameters, images, and UI elements are copied a
 
 ## Searching in the flow
 
-To search for a text string, an action or variable within the flow, use the search field at the top right of the flow designer window. The results pane will show all occurrences of text string by action and subflow. Double-click on a result to highlight the action that contains it.
+To search for a text string, an action or variable within the flow, use the search field at the top right of the flow designer window. You can also use the keyboard shortcut 'CTRL + F' to bring the search field into focus. The results pane will show all occurrences of text string by action and subflow. Double-click on a result to highlight the action that contains it.
 
 ![Screenshot of the field to search in the flow.](media/searching-flow/search.png)
 
