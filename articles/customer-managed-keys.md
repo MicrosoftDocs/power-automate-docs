@@ -2,7 +2,7 @@
 title: Support for customer-managed keys
 description: Learn about support for customer-managed keys in Power Automate.
 suite: flow
-author: v-aangie
+author: samathur
 contributors:
   - samathur
   - ChrisGarty
@@ -48,8 +48,17 @@ The hosted machine group capability of the [Introduction to the Power Automate h
 
 ## Known limitations
 
-When an environment is enabled for customer-managed keys, then Power Automate data can't be sent to the analytics pipeline for [tenant-wide reporting in Power Platform admin center](/power-platform/admin/power-automate-analytics-reports), [Data Export to Data Lake](/power-platform/admin/self-service-analytics-schema-definition#power-automate-folder-structure), or [Application Insights](/power-platform/admin/app-insights-cloud-flow).
+When an environment is enabled for customer-managed keys, then Power Automate data can't be sent to the analytics pipeline for a range of scenarios:
+
+- [Tenant-wide reporting in Power Platform admin center](/power-platform/admin/power-automate-analytics-reports)
+- [Data export to Data Lake](/power-platform/admin/self-service-analytics-schema-definition#power-automate-folder-structure)
+- [Application Insights](/power-platform/admin/app-insights-cloud-flow)
+- [Cloud flow run history](/power-automate/dataverse/cloud-flow-run-metadata) (for [automation center](/power-automate/automation-center-overview))
+- [Power Automate mobile app](/power-automate/mobile/overview-mobile), [notifications page](/power-automate/mobile/notifications)
+- Cloud flow activity page
+- Flow failure e-mail
+- Flow failure digest e-mail
 
 ## Related information
 
-- [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
+[Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
