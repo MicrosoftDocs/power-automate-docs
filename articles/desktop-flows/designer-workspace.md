@@ -35,7 +35,7 @@ Subflows are groups of actions, which may be referenced as a group within a desk
 
 Every flow contains the **Main** subflow that runs when a desktop flow starts. Any other subflows may be invoked through the **Run subflow** action:
 
-![Screenshot of the Run subflow action.](./media/setting-subflows/run-subflow-action.png)
+![Screenshot of the Run subflow action.](./media/setting-subflows/run-subflow-action-dynamic-invocation.png)
 
 In addition, this action also supports dynamic expressions via the respective toggle parameter, so that you can use variables instead and dynamically invoke the corresponding subflow at runtime.
 
