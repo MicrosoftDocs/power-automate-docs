@@ -37,6 +37,8 @@ Every flow contains the **Main** subflow that runs when a desktop flow starts. A
 
 ![Screenshot of the Run subflow action.](./media/setting-subflows/run-subflow-action.png)
 
+In addition, this action also supports dynamic expressions via the respective toggle parameter, so that you can use variables instead and dynamically invoke the corresponding subflow at runtime.
+
 Subflows are shown in tabs, directly over the main workspace. To add a new subflow, select the subflows tab, select **+**, and enter the subflow name.
 
 ![Screenshot of the populated Run subflow action.](./media/setting-subflows/add-new-subflow.png)
