@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 07/23/2024
+ms.date: 08/06/2024
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -41,13 +41,10 @@ If there are existing flows in the environment being enabled for CMK, a warning 
 
 ### Power Automate hosted RPA (preview)
 
-The hosted machine group capability of the [Power Automate hosted RPA](../desktop-flows/hosted-rpa-overview) solution now supports customer-managed keys (CMK). After applying CMK, you must reprovision any existing hosted machine groups using the “Reprovision group” button on the machine group details page. Once reprovisioned, the VM disks for the hosted machine group bots will be encrypted with the CMK.
+The hosted machine group capability of the [Power Automate hosted RPA](../desktop-flows/hosted-rpa-overview) solution supports customer-managed keys. After applying customer-managed keys, you must reprovision any existing hosted machine groups selecting **Reprovision group** on the machine group details page. Once reprovisioned, the VM disks for the hosted machine group bots are encrypted with the customer-managed key.
 
 > [!NOTE]
-> Customer-managed key (CMK) for the hosted machine capability is currently not available
-
-
-
+> Customer-managed key for the hosted machine capability is currently not available.
 
 ## Known limitations
 
