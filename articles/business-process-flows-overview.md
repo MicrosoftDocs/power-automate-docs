@@ -217,7 +217,7 @@ Recent rows are visible in a lookup column in the unified interface. To prevent 
 
 - Adding the process table to a model-driven app may result in limited functionality. To learn more, go to [creating and editing business process flows](./create-business-process-flow.md). 
 
-- Business process flows will show the name of the BPF instance, which is set at the time that the BPF instance is created. This means if the name in the BPF definition changes, new BPF instances will display the updated name, but older BPF instances will display the original name. It also means localized BPF definition names aren't displayed.
+- The name of business process flows won't change after it's created for a form. If you change the name in the business process flow definition, new business process flows will display the updated name, but older ones will display the original name. The name doesn't translate after it's set. If the creator's language settings was set to Spanish when the business process flow instance was created, the name would be in Spanish for all users, even if the creator changed their language later.
 
 ## Related information
 
