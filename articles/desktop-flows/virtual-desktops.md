@@ -28,6 +28,18 @@ It's important to install Power Automate for desktop on the machine where you're
 
 - Make sure the Citrix or RDP connection to the virtual desktop is closed and then [install Power Automate on your physical device](https://go.microsoft.com/fwlink/?linkid=2137322).
 
+- A device with the following hardware (these requirements don't include the resources required for the applications involved in your desktop flows):
+
+  Minimum hardware:
+  - Processor: 1.50 GHz per session or faster with two or more cores.
+  - Storage: 300ΜΒ System storage for Agent installation, plus 500MB for each user (each version of Power Automnate for desktop will require each own 500MB)
+  - RAM: 384MB per session
+
+  Recommended hardware:
+  - Processor: 2.00 GHz per session or faster with two or more cores.
+  - Storage: 300ΜΒ or more System storage for Agent installation, plus 500MB or more for each user (each version of Power Automnate for desktop will require each own 500MB)
+  - RAM: 512MB or more per session
+
 ## Install the Power Automate agent for virtual desktops
 
 1. [Download the Power Automate agent for virtual desktops](https://go.microsoft.com/fwlink/?linkid=2188766).
