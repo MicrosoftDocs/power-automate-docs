@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 10/16/2023
 ms.author: rakrish
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -43,7 +43,9 @@ If you're restricting the workflow to be triggered only by authenticated users, 
 - `"tid":` \<tenant id of the requestor>
 - `"oid":` \<object id of the requestor>. Optional. This field is required only if you have configured the trigger to restrict to specific users within the tenant.
 
-You can check the claims of your request by pasting the bearer token within the authorization header at https://jwt.io. For more information on extracting the tokens programmatically, go to the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).
+You can check the claims of your request by pasting the bearer token within the authorization header at https://jwt.io. For more information on extracting the tokens programmatically, go to the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).  
+
+If you are to manually fetch the OAuth token from the token endpoint at login.microsoftonline.com or use any other tools or libraries to do so, please ensure you will be using an Entra ID application registration having the delegate permission Power Automate / User set on it. In your OAuth token request, you must use the scope `https://service.flow.microsoft.com//User`. Note the double slashes here in front of user. It will not work with a single slash.
 
 ### Audience values
 
