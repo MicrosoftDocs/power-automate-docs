@@ -55,6 +55,33 @@ The run status is a timeline that allows to understand how works a desktop flow 
 It might be critical for your orchestration to identify if a step took too much time or if a desktop flow always fails during the same step.
 
   :::image type="content" source="media/monitor-run-details/Run-details-timeline.png" alt-text="Screenshot of the run details timeline.":::
+
+## View queue events
+
+The queue event list provides a detailed overview of lifecycle events for desktop flow runs. It includes the status and progress of each flow run, along with corresponding machine queue events, enabling users to monitor and understand every stage of the process. 
+
+  :::image type="content" source="media/monitor-run-details/Run-details-queue-events.png" alt-text="Screenshot of the run details page with the view queue events hyperlink.":::
+  
+Below is a list of the various queue events supported by this feature.
+
+### Supported Queue Events
+
+| Event code                 | Event text                                                                                                 | Event details                                                                                                        |
+|-----------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| **QueueEventEnqueued**      | A flow run is queued and is ready to run                                                        | A desktop flow run has been received by the desktop flow service, and is now in queue to be executed.          |
+| **QueueEventConfirmed**     | The flow run is starting on machine {0}                                               | The desktop flow service will start executing the desktop flow run now.                                        |
+| **QueueEventAssignFailed**  | Machine {0} is returning error {1}, preventing it from accepting the run request             | The desktop flow service selected a machine to run the desktop flow, but the machine was unable to accept the request due to a specific error. |
+| **QueueEventAssigned**      | Before machine {0} can start the run, it needs to complete some preliminary checks               | The desktop flow service has selected a machine to run the desktop flow. The machine must still run preliminary checks before execution can start. |
+| **QueueEventPriorityChanged**  | This run's priority has changed, which might impact its position in the queue   | While still in queue, the run's priority has been changed - this may impact its position in the queue.         |
+| **QueueEventPriorityType.Changed**   | This run's priority has changed, which might impact its position in the queue    | While still in queue, the run's priority has been changed - this may impact its position in the queue.         |
+| **QueueEventPriorityType.MoveToTop**  | This flow run was moved to the front of the queue and will run next  | Run has been moved to the front of the queue - it will be executed next, once the service finds an available host.|
+| **QueueEventPriorityType.UnmoveToTop**  | This flow run was moved back to its previous spot in the queue    | A run was previously moved to the front of the queue, but that action was undone - the run will go back to its previous position. |
+| **QueueEventFinished**      | This flow run completed successfully                                                            | The run has finished executing without any error.                                                              |
+| **QueueEventFinished (error)**    | This flow run completed on machine {1}, but with error {0}                               | The run has finished executing, but encountered an error.                                                     |
+
+### Queue event detail panel
+
+  :::image type="content" source="media/monitor-run-details/Run-details-queue-event-details.png" alt-text="Screenshot of the queue event details panel listing queue events.":::
   
 ## Actions details 
 This card allows you to see information and status for each action of your desktop flow:
