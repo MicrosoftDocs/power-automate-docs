@@ -48,6 +48,7 @@ The hosted machine group capability of the [Introduction to the Power Automate h
 
 ## Known limitations
 
+## Limitations on features leveraging analytics pipeline
 When an environment is enabled for customer-managed keys, then Power Automate data can't be sent to the analytics pipeline for a range of scenarios:
 
 - [Tenant-wide reporting in Power Platform admin center](/power-platform/admin/power-automate-analytics-reports)
@@ -58,6 +59,9 @@ When an environment is enabled for customer-managed keys, then Power Automate da
 - Cloud flow activity page
 - Flow failure e-mail
 - Flow failure digest e-mail
+
+### Limitations on non-solution Power Apps Trigger flows
+- Non-solution Power App trigger flows created in CMK protected environments cannot be conmsumed from a Power App. An error will result when attempting to register this flow from the Power App. Adding Power App trigger flows to a Solution first will enable consumption of flow from the said Power App. Enabling solution by default https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature in the CMK protected environment will ensure new flows are in a Solution to begin with.
 
 ## Related information
 
