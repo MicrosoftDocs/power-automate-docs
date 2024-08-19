@@ -60,8 +60,8 @@ When an environment is enabled for customer-managed keys, then Power Automate da
 - Flow failure e-mail
 - Flow failure digest e-mail
 
-### Limitations on non-solution Power Apps Trigger flows
-- Non-solution Power App trigger flows created in CMK protected environments cannot be conmsumed from a Power App. An error will result when attempting to register this flow from the Power App. Adding Power App trigger flows to a Solution first will enable consumption of flow from the said Power App. Enabling solution by default https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature in the CMK protected environment will ensure new flows are in a Solution to begin with.
+### Limitations on non-solution cloud flows triggered by Power Apps
+- Non-solution cloud flows using the Power Apps trigger that are created in CMK-protected environments cannot be referenced from an app and an error will result when attempting to register the flow from Power Apps. Only solution cloud flows can be referenced from an app in CMK-protected environments. To avoid this situation, [flows should first be added into a Dataverse solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution), so they can be successfully referenced. To prevent this situation, the environment setting to [automatically create flows in Dataverse solutions](/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature) should be enabled in CMK-protected environments, since this will ensure any new flows are solution cloud flows.
 
 ## Related information
 
