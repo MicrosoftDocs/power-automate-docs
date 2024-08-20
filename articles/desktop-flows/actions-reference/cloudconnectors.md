@@ -4,7 +4,7 @@ description: Learn about the available Cloud Connector operations in Power Autom
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 05/24/2024
+ms.date: 08/27/2024
 ms.author: dipapa
 ms.reviewer: 
 contributors:
