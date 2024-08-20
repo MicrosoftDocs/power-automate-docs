@@ -11,7 +11,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 07/04/2023
+ms.date: 08/20/2024
 ms.author: quseleba
 ---
 
@@ -56,11 +56,29 @@ It might be critical for your orchestration to identify if a step took too much 
 
   :::image type="content" source="media/monitor-run-details/Run-details-timeline.png" alt-text="Screenshot of the run details timeline.":::
 
+## Actions details
+
+This card allows you to see information and status for each action of your desktop flow:
+
+- **Start**: timestamp when the action has started.
+- **Subflow**: your flow can be composed of one or several subflows. By default, your actions are in the main subflow. This information helps you to quickly identify in which subflows the action is to fix potential errors.
+- **Action index**: in the desktop flow script, each action is linked to an action index (this corresponds to the number of the line).
+- **Action name**
+- **Duration**
+- **Log level**: indicates the severity level (Info/Warning/Error) of the logged action. The only action that is associated with a log level is the **Log message** action. For any other logged action, the column remains empty.
+- **Status**: this column gives you for each action the result of its run. 
+
+By default, the actions are sorted from the latest to the earliest. If you don’t see all the action in the card, select see all to view the full list of action details.
+
 ## View queue events
 
 The queue event list provides a detailed overview of lifecycle events for desktop flow runs. It includes the status and progress of each flow run, along with corresponding machine queue events, enabling users to monitor and understand every stage of the process. 
 
   :::image type="content" source="media/monitor-run-details/Run-details-queue-events.png" alt-text="Screenshot of the run details page with the view queue events hyperlink.":::
+  
+> [!NOTE]
+>
+> Queue events are only available for desktop flows that were launched from a cloud flow.
   
 Below is a list of the various queue events supported by this feature.
 
@@ -82,15 +100,3 @@ Below is a list of the various queue events supported by this feature.
 ### Queue event detail panel
 
   :::image type="content" source="media/monitor-run-details/Run-details-queue-event-details.png" alt-text="Screenshot of the queue event details panel listing queue events.":::
-  
-## Actions details 
-This card allows you to see information and status for each action of your desktop flow:
-- **Start**: timestamp when the action has started.
-- **Subflow**: your flow can be composed of one or several subflows. By default, your actions are in the main subflow. This information helps you to quickly identify in which subflows the action is to fix potential errors.
-- **Action index**: in the desktop flow script, each action is linked to an action index (this corresponds to the number of the line).
-- **Action name**
-- **Duration**
-- **Log level**: indicates the severity level (Info/Warning/Error) of the logged action. The only action that is associated with a log level is the **Log message** action. For any other logged action, the column remains empty.
-- **Status**: this column gives you for each action the result of its run. 
-
-By default, the actions are sorted from the latest to the earliest. If you don’t see all the action in the card, select see all to view the full list of action details.
