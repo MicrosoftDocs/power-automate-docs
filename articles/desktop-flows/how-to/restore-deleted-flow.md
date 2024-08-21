@@ -46,18 +46,18 @@ As a prerequisite, the flow should have been deleted from the Power Automate por
 
 To recover the actions of the deleted flow, follow the steps below: 
 
-1. Open *%localappdata%\Microsoft\Power Automate Desktop\Console\Workspace\<deleted desktop flow id>\<random string>\script.robin* with notepad 
-1. Copy all the lines right under the text *@SENSITIVE*
-   - If the flow is segregated into subflows, then copy each subflow one by one.
-     - For the *Main* subflow, copy all the lines under text *@SENSITIVE* (not included) and prior to text *FUNCTION <subflow_name_1>* (not included).
-     - For each one of the rest of the subflows, copy all the lines between *FUNCTION <subflow_name_1>* (included) and *END FUNCTION* (included). 
-1. Open Power Automate console and create a new flow
-1. Paste the lines of the *Main* subflow in the main workspace of the designer (right-click on the main workspace > Paste) 
-1. Paste the lines of each subflow in the Subflows section of the designer (right-click on the Subflows section on top of the workspace > Paste) 
+1. Open ***%localappdata%\Microsoft\Power Automate Desktop\Console\Workspace\<deleted desktop flow id>\<random string>\script.robin*** with notepad.
+1. Copy all the lines right under the text **@SENSITIVE**.
+   - If the flow is segregated into multiple subflows, then copy the lines of each subflow one by one.
+     - For the **Main** subflow, copy all the lines under text **@SENSITIVE** (not included) and prior to text **FUNCTION <subflow_name_1>** (not included).
+     - For each one of the rest of the subflows, copy all the lines between **FUNCTION <subflow_name_1>** (included) and **END FUNCTION** (included). 
+1. Open Power Automate console and create a new flow.
+1. Paste the lines of the **Main** subflow in the main workspace of the designer (right-click on the main workspace > Paste).
+1. Paste the lines of each subflow in the Subflows section of the designer (right-click on the Subflows section on top of the workspace > Paste).
 
 ### Restore from environment audit logs 
 
-The prerequisite is that auditing is enabled both in the environment, and in the **Process** Dataverse table. 
+As a prerequisite, auditing should be enabled both at the environment level, and in the **Process** Dataverse table. 
 
 To check if auditing is enabled:
 1. Go to [Power Platform Admin Center](https://aka.ms/ppac) > Environments > *your_environment_name* > Settings > Audit and logs 
