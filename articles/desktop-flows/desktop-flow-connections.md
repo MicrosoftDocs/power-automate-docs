@@ -4,7 +4,7 @@ description: See how to create connections to trigger desktop flows from cloud f
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/24/2024
+ms.date: 09/10/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -66,7 +66,7 @@ To use connection with sign-in, you need to meet the following prerequisites:
 
 - Microsoft Entra ID users must be in the same tenant as the selected environment in the Power Automate portal.
 - The target (machine / group) should be Microsoft Entra ID or AD joined. Microsoft Entra ID joined targets must be synchronized with Microsoft Entra ID.
-- If the target is AD-joined but not Entra-joined, you must [allow-list your Power Platform tenant](how-to/allow-list-tenant-for-connect-with-sign-in-and-registration.md).
+- If the target is AD-joined but not Entra-joined, you must [allowlist your Power Platform tenant](how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md).
 - The Microsoft Entra user account must be granted permission to open a Windows session on the target machines (interactive sign in). At runtime, there should be a Windows user session matching the connection user opened on the machine in order to process the run (same as running attended with other connection types).
 - The tenant of the target Microsoft Entra account is configured to use modern [Authentication with Microsoft Entra ID](/azure/well-architected/).
 
@@ -91,7 +91,7 @@ The desktop flow connection is automatically created.
 
 - Connect with sign-in works only for attended runs. Running unattended with this kind of connection will fail.
 - Queue time duration is limited to one hour.
-- On AD-joined but not Entra-joined machines, you must [allow-list your Power Platform tenant](how-to/allow-list-tenant-for-connect-with-sign-in-and-registration.md) for your machine to trust passwordless tokens from that tenant.
+- On AD-joined but not Entra-joined machines, you must [allowlist your Power Platform tenant](how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md) for your machine to trust passwordless tokens from that tenant.
 
 > [!IMPORTANT]
 > If you consistently encounter issues when creating a connection on a new machine, first try to remove it, and then [register it](/power-automate/desktop-flows/manage-machines#register-a-new-machine) again.
