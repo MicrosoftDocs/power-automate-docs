@@ -1,5 +1,5 @@
 ---
-title: Restore a deleted desktop flow
+title: Restore deleted desktop flows
 description: Learn how to restore deleted desktop flows.
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
@@ -21,19 +21,19 @@ This article provides solutions and workarounds to fully or partially recover a 
 
 ### Restore with solutions
 
-The prerequisite is that the deleted desktop flow is part of a solution that has been exported locally.
+As a prerequisite, the deleted desktop flow should be part of a solution that has been previously exported locally.
 
-To restore the flow, re-import the solution that contains the deleted flow. Learn how to [import a solution](../import-flow-solution.md). 
+To restore the flow, import the solution that contains the deleted flow. Learn how to [import a solution](https://learn.microsoft.com/en-us/power-automate/import-flow-solution). 
 
 ### Restore with an environment backup
 
-To restore the deleted flow using a Power Platform environment backup, follow the steps below: 
+To restore the deleted flow through a Power Platform environment backup, follow the steps below: 
 
-1. Create a new Power Platform environment. 
-1. Restore a backup of the deleted flow’s existing environment to the new target environment. Learn how to [restore environments](..//power-platform/admin/backup-restore-environments.md). 
-1. In the new environment, create a new solution and add your desktop flow. 
-1. Export the solution locally. 
-1. Go back to the initial environment with the missing flow and import the solution. 
+1. Create a new Power Platform environment.
+1. Restore a backup of the deleted flow’s existing environment to the new target environment. Learn how to [restore environments](https://learn.microsoft.com/en-us/power-platform/admin/backup-restore-environments).
+1. In the new environment, create a new solution and add the desktop flow.
+1. Export the solution locally.
+1. Go back to the initial pre-existing environment with the missing flow and import the solution.
 
 ## Partially restore a deleted desktop flow
 
@@ -48,8 +48,8 @@ To recover the actions of the deleted flow, follow the steps below:
 
 1. Open “%localappdata%\Microsoft\Power Automate Desktop\Console\Workspace\<deleted desktop flow id>\<random string>\script.robin” with notepad 
 1. Copy the lines right under text “@SENSITIVE” 
-  - If the script is segregated into Subflows, then you would need to copy each subflow one by one.
-    - For example, the actions of the “Main” subflow can be found under “@SENSITIVE” and prior to “FUNCTION <subflow_name_1>”. The actions of the next subflow can be found within the lines under “FUNCTION <subflow_name_1>” (included) and “END FUNCTION” (included), and so on. 
+   - If the script is segregated into Subflows, then you would need to copy each subflow one by one.
+     - For example, the actions of the “Main” subflow can be found under “@SENSITIVE” and prior to “FUNCTION <subflow_name_1>”. The actions of the next subflow can be found within the lines under “FUNCTION <subflow_name_1>” (included) and “END FUNCTION” (included), and so on. 
 1. Create a new flow  
 1. Paste the lines of the main subflow in the main workspace (right-click on the main workspace > Paste) 
 1. Paste the lines of each subflow in the Subflows section of the Designer (right-click on Subflows > Paste) 
@@ -59,7 +59,7 @@ To recover the actions of the deleted flow, follow the steps below:
 The prerequisite is that auditing is enabled both in the environment, and in the **Process** Dataverse table. 
 
 To check if auditing is enabled:
-1. Go to [Power Platform Admin Center](http://aka.ms/ppac) > Environments > *your_environment_name* > Settings > Audit and logs 
+1. Go to [Power Platform Admin Center](https://aka.ms/ppac) > Environments > *your_environment_name* > Settings > Audit and logs 
 1. Open **Audit settings** and ensure **Start Auditing** is enabled 
 1. **Entity and field audit settings** > filter for **All** tables > Search for the **Process** table > Properties > Advanced options > In the **For this table** section ensure **Audit changes to its data** is enabled 
 
