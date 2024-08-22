@@ -69,4 +69,4 @@ To recover the actions of the deleted flow, follow the steps below:
 1. Filtery by **Delete** events in the **Process** entity to locate the event that deleted the flow.
 1. Select the **Delete** event to open the record. 
 1. Copy the **Definition** field to a text editor and **replace** all the **\r\n** characters with new lines (create a new line for each set of \r\n characters)
-1. Follow the same steps as described in [Restore from local run data](../restore-deleted-flow.md#restore-from-local-flow-run-data) starting from step #2.
+1. Follow the same steps as described in [Restore from local run data](../restore-deleted-desktop-flow.md#restore-from-local-flow-run-data) starting from step #2.
