@@ -14,7 +14,7 @@ search.audienceType:
 
 # Allowlist your Power Automate tenant to allow registration and connect with sign-in
 
-For added security, connect with sign-in now requires your Power Automate tenant to be allowlisted to authorize connections on Active Directory domain-joined machines that aren't Entra ID-joined. Learn more about this security patch at [Troubleshoot desktop flow action failures](https://go.microsoft.com/fwlink/?linkid=2283248).
+For added security, connect with sign-in now requires your Power Automate tenant to be allowlisted to authorize connections on Active Directory domain-joined machines that aren't Microsoft Entra joined. Learn more about this security patch at [Troubleshoot desktop flow action failures](https://go.microsoft.com/fwlink/?linkid=2283248).
 
 Allowlisting a tenant also allows this machine to register to that tenant.
 
