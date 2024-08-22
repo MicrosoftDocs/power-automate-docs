@@ -14,7 +14,7 @@ search.audienceType:
   - flowmaker
   - admin
 ---
-# Restore deleted desktop flows
+# Restore a deleted desktop flow
 
 This article provides solutions and workarounds to fully or partially recover a deleted desktop flow.
 
