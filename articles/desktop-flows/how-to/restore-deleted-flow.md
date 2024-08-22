@@ -4,7 +4,7 @@ description: Learn how to restore deleted desktop flows.
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 08/21/2024
+ms.date: 08/22/2024
 ms.author: pefelesk
 ms.reviewer: 
 contributors:
@@ -57,14 +57,16 @@ To recover the actions of the deleted flow, follow the steps below:
 
 ### Restore from environment audit logs 
 
-As a prerequisite, auditing should be enabled both at the environment level, and in the **Process** Dataverse table. 
+As a prerequisite, auditing should be enabled both in the environment, and in the **Process** Dataverse table. 
 
 To check if auditing is enabled:
-1. Go to [Power Platform Admin Center](https://aka.ms/ppac) > Environments > *your_environment_name* > Settings > Audit and logs 
-1. Open **Audit settings** and ensure **Start Auditing** is enabled 
-1. **Entity and field audit settings** > filter for **All** tables > Search for the **Process** table > Properties > Advanced options > In the **For this table** section ensure **Audit changes to its data** is enabled 
+- Go to [Power Platform Admin Center](https://aka.ms/ppac) > Environments > *your_environment_name* > Settings > Audit and logs 
+  - Open **Audit settings** and ensure **Start Auditing** is enabled.
+  - Open **Entity and field audit settings** > filter for **All** tables > Search for the **Process** table > Properties > Advanced options > In the **For this table** section ensure **Audit changes to its data** is enabled.
 
 To recover the actions of the deleted flow, follow the steps below: 
-1. Go to [Power Platform Admin Center](http://aka.ms/ppac) > Environments > *your_environment_name* > Settings > Audit and logs > Audit summary view
-1. Search for a **Delete** event in the **Process** entity and open the record. 
-1. Copy the **Definition** field to a text editor and replace all the **\r\n** characters with new lines (create a new line by pressing **Enter** for each set of \r\n characters) and follow the same steps as described in Restore from local run data starting from step #2. 
+1. Go to [Power Platform Admin Center](https://aka.ms/ppac) > Environments > *your_environment_name* > Settings > Audit and logs > Audit summary view
+1. Filtery by **Delete** events in the **Process** entity to locate the event that deleted the flow.
+1. Select the **Delete** event to open the record. 
+1. Copy the **Definition** field to a text editor and **replace** all the **\r\n** characters with new lines (create a new line for each set of \r\n characters)
+1. Follow the same steps as described in [Restore from local run data]() starting from step #2.
