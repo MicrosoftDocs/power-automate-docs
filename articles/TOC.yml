@@ -636,7 +636,7 @@
       href: ./desktop-flows/how-to/proxy-settings.md
     - name: Reduce desktop flow size in solution
       href: ./desktop-flows/how-to/reduce-flow-size.md
-    - name: Restore deleted desktop flow
+    - name: Restore a deleted desktop flow
       href: ./desktop-flows/how-to/restore-deleted-desktop-flow.md
     - name: Use logical operations on conditional statements
       href: ./desktop-flows/how-to/logical-operations-conditional-statements.md
