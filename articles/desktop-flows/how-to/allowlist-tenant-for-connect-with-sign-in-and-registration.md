@@ -37,4 +37,4 @@ Use the following steps if you don't know your tenant ID:
 
     ![Screenshot showing the creation of a string value in the Power Automate Desktop Registration registry key.](media/allowlist-tenant-for-connect-with-sign-in-and-registration/registry-value-creation.png)
 
-1. Right click the **AllowedRegistrationTenants** registry value and select **Modify**. Edit the value to add your tenant ID. The expected value is a comma separated list of tenant IDs such as "aaaabbbb-0000-cccc-1111-dddd2222eeee" or "aaaabbbb-0000-cccc-1111-dddd2222eeee,bbbbcccc-1111-dddd-2222-eeee3333ffff".
+1. Right click the **AllowedRegistrationTenants** registry value and select **Modify**. Edit the value to add your tenant ID. The expected value is a comma-separated list of tenant IDs such as "aaaabbbb-0000-cccc-1111-dddd2222eeee" or "aaaabbbb-0000-cccc-1111-dddd2222eeee,bbbbcccc-1111-dddd-2222-eeee3333ffff".
