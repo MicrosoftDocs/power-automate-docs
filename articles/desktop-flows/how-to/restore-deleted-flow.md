@@ -30,7 +30,7 @@ To restore the flow, import the solution that contains the deleted flow. Learn h
 To restore the deleted flow through a Power Platform environment backup, follow the steps below: 
 
 1. Create a new Power Platform environment.
-1. Restore a backup of the deleted flow’s existing environment to the new target environment. Learn how to [restore environments](https://learn.microsoft.com/en-us/power-platform/admin/backup-restore-environments).
+1. Restore a backup of the deleted flow’s environment to the new target environment. Learn how to [restore environments](https://learn.microsoft.com/en-us/power-platform/admin/backup-restore-environments).
 1. In the new environment, create a new solution and add the desktop flow.
 1. Export the solution locally.
 1. Go back to the initial pre-existing environment with the missing flow and import the solution.
@@ -42,13 +42,13 @@ To restore the deleted flow through a Power Platform environment backup, follow 
 
 ### Restore from local flow run data
 
-As a prerequisite, the flow should have been deleted from the Power Automate portal (not from the Power Automate console) and it has run at least once locally from the Power Automate console.
+As a prerequisite, the flow should have been deleted from the Power Automate portal (not from the Power Automate console) and it has run locally from the Power Automate console at least once.
 
 To recover the actions of the deleted flow, follow the steps below: 
 
-1. Open ***%localappdata%\Microsoft\Power Automate Desktop\Console\Workspace\<deleted desktop flow id>\<random string>\script.robin*** with notepad.
+1. Open ***%localappdata%\Microsoft\Power Automate Desktop\Console\Workspace\\\<deleted desktop flow id>\\\<random string>\script.robin*** with notepad.
 1. Copy all the lines right under the text **@SENSITIVE**.
-   - If the flow is segregated into multiple subflows, then copy the lines of each subflow one by one.
+   - If the flow is segregated into multiple subflows, then:
      - For the **Main** subflow, copy all the lines under text **@SENSITIVE** (not included) and prior to text **FUNCTION <subflow_name_1>** (not included).
      - For each one of the rest of the subflows, copy all the lines between **FUNCTION <subflow_name_1>** (included) and **END FUNCTION** (included). 
 1. Open Power Automate console and create a new flow.
