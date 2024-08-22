@@ -83,7 +83,7 @@ The desktop flow connection is automatically created.
 
 ### How it works
 
-- An access / refresh token is created during the Microsoft Entra authentication during connection creation.
+- An access / refresh token is created by the Microsoft Entra ID authentication during connection creation.
 - The created token's scope is limited to executing desktop flows.
 - The Power Platform services manage these tokens.
 
