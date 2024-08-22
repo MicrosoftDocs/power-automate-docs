@@ -15,7 +15,10 @@ search.audienceType:
 ---
 # Restore deleted desktop flows
 
-This article provides solutions and workarounds to fully or partially recover a deleted desktop flow. 
+This article provides solutions and workarounds to fully or partially recover a deleted desktop flow.
+
+> [!NOTE]
+> The solutions and workarounds provided in this article apply to users who sign in with [work or school accounts, or organization premium accounts](/power-automate/desktop-flows/requirements#sign-in-account-comparison).
 
 ## Fully restore a deleted desktop flow
 
@@ -38,7 +41,7 @@ To restore the deleted flow through a Power Platform environment backup, follow 
 ## Partially restore a deleted desktop flow
 
 > [!IMPORTANT]
-> - Only the flow actions can be retrieved with this workaround. Any other flow dependencies like UI elements, images, connection references, etc. cannot be retrieved.
+> Only the flow actions can be retrieved with this workaround. Any other flow dependencies like UI elements, images, connection references, etc. cannot be retrieved.
 
 ### Restore from local flow run data
 
