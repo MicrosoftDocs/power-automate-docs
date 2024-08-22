@@ -66,7 +66,7 @@ To use connection with sign-in, you need to meet the following prerequisites:
 
 - Microsoft Entra ID users must be in the same tenant as the selected environment in the Power Automate portal.
 - The target (machine / group) should be Microsoft Entra ID or AD joined. Microsoft Entra ID joined targets must be synchronized with Microsoft Entra ID.
-- If the target is AD-joined but not Entra-joined, you must [allowlist your Power Platform tenant](how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md).
+- If the target is AD domain-joined but not Entra joined, you must [allowlist your Power Platform tenant](how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md).
 - The Microsoft Entra user account must be granted permission to open a Windows session on the target machines (interactive sign in). At runtime, there should be a Windows user session matching the connection user opened on the machine in order to process the run (same as running attended with other connection types).
 - The tenant of the target Microsoft Entra account is configured to use modern [Authentication with Microsoft Entra ID](/azure/well-architected/).
 
