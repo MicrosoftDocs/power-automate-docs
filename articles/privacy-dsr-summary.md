@@ -30,7 +30,7 @@ Power Automate provides tools and resources to help you respond to requests to c
 ## Prerequisites
 
 - A paid or [trial license](https://make.powerapps.com/trial) for Power Apps Plan 2
-- The [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Microsoft Entra Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) role
+- The [Microsoft 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Microsoft Entra Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) role
 
 If you're a member of an [unmanaged tenant](/azure/active-directory/domains-admin-takeover) and don't have a global administrator, you can export and remove your own personal data. You must have an Microsoft Entra account with a [Power Automate license](https://make.powerautomate.com/pricing/).
 
