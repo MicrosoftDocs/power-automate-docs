@@ -92,6 +92,7 @@ The desktop flow connection is automatically created.
 - Connect with sign-in works only for attended runs. Running unattended with this kind of connection will fail.
 - Queue time duration is limited to one hour.
 - On AD-joined but not Entra-joined machines, you must [allowlist your Power Platform tenant](how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md) for your machine to trust passwordless tokens from that tenant.
+- Connect with sign-in runs will most likely fail with **PasswordlessTokenExpiry** error if **AsyncDisabled=True**. 
 
 > [!IMPORTANT]
 > If you consistently encounter issues when creating a connection on a new machine, first try to remove it, and then [register it](/power-automate/desktop-flows/manage-machines#register-a-new-machine) again.
