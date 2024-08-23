@@ -64,7 +64,7 @@ To recover the actions of the deleted flow:
 
     If the flow is segregated into multiple subflows, then:
      * For the *Main* subflow, copy all the lines under text **@SENSITIVE** (not included) and before the text **FUNCTION <subflow_name_1>** (not included).
-     * For each of the other subflows, copy all the lines between **FUNCTION <subflow_name_1>** (included) and **END FUNCTION** (included).
+     * For each of the other subflows, copy all the lines between **FUNCTION <subflow_name_x>** (included) and **END FUNCTION** (included).
 1. Open the Power Automate console and create a new flow.
 1. Paste the lines of the *Main* subflow in the main workspace of the designer. Right-click on the main workspace and select **Paste**.
 1. Paste the lines of each subflow in the **Subflows** section of the designer. Right-click on the **Subflows** section on top of the workspace and select **Paste**.
