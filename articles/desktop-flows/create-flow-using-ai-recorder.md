@@ -93,11 +93,13 @@ To create a desktop flow using AI Recorder:
 
 Narrate the process clearly as you demonstrate it. Allow screens to fully load and explain each step in detail to get the best results.
 
-### What are some scenarios I can try? Can I see a demo?
+### Is there a recorded demo?
 
-See the following video that showcases a demo for AI Recorder.
+The following video showcases a demo for AI Recorder:
 
 > [!VIDEO https://www.youtube.com/embed/xt3uyoe3Le0?si=hWgo3tEKuzhFrSVq]
+
+### What are some scenarios I can try?
 
 You can try various scenarios, such as transferring data from Excel to a web form, navigating websites, and extracting data.
 
