@@ -95,7 +95,9 @@ Narrate the process clearly as you demonstrate it. Allow screens to fully load a
 
 ### What are some scenarios I can try? Can I see a demo?
 
-See the following video that showcases a demo for AI Recorder. > [!VIDEO https://www.youtube.com/embed/xt3uyoe3Le0?si=hWgo3tEKuzhFrSVq]
+See the following video that showcases a demo for AI Recorder.
+
+> [!VIDEO https://www.youtube.com/embed/xt3uyoe3Le0?si=hWgo3tEKuzhFrSVq]
 
 You can try various scenarios, such as transferring data from Excel to a web form, navigating websites, and extracting data.
 
