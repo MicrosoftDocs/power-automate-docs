@@ -81,7 +81,7 @@ To create a desktop flow using AI Recorder:
 
 ## Frequently asked questions
 
-### Are there any known limitations for the AI Recorder?
+### Are there any known limitations?
 
 * The AI Recorder is currently available only in environments based in the US for users with work or school accounts. At this time, English is the only supported language. We're actively working to expand support to more regions and languages in the coming months.
 
@@ -89,7 +89,7 @@ To create a desktop flow using AI Recorder:
 
 * Interaction with clicks or keystrokes is essential during recording. Simply talking over a screen without any mouse or keyboard interaction doesn't return an automation suggestion.
 
-### What are some best practices when using the AI Recorder?
+### What are some best practices?
 
 Narrate the process clearly as you demonstrate it. Allow screens to fully load and explain each step in detail to get the best results.
 
@@ -103,7 +103,7 @@ The following video showcases a demo for AI Recorder:
 
 You can try various scenarios, such as transferring data from Excel to a web form, navigating websites, and extracting data.
 
-### What languages are supported in AI Recorder?
+### What languages are supported?
 
 Currently, AI Recorder supports English. Other languages will be supported in future updates.
 
