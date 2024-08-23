@@ -93,7 +93,7 @@ To create a desktop flow using AI Recorder:
 
 Narrate the process clearly as you demonstrate it. Allow screens to fully load and explain each step in detail to get the best results.
 
-### Is there a recorded demo?
+### Where can I find a demo?
 
 The following video showcases a demo for AI Recorder:
 
