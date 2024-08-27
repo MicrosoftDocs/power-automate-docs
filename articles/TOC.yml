@@ -636,6 +636,8 @@
       href: ./desktop-flows/how-to/proxy-settings.md
     - name: Reduce desktop flow size in solution
       href: ./desktop-flows/how-to/reduce-flow-size.md
+    - name: Restore a deleted desktop flow
+      href: ./desktop-flows/how-to/restore-deleted-desktop-flow.md
     - name: Use logical operations on conditional statements
       href: ./desktop-flows/how-to/logical-operations-conditional-statements.md
     - name: Use passwords
@@ -850,6 +852,25 @@
         href: process-mining-alm-overview.md
       - name: Migrate entities with Power Platform solutions
         href: process-mining-alm-entities-solutions.md
+      - name: Migrate customized Process Mining Power BI reports
+        href:
+        items:
+        - name: Overview
+          href: process-mining-pbi-reports-overview.md
+        - name: Rebind reports without using a composite model
+          items:
+          - name: With different workspaces
+            href: process-mining-alm-rebind-without-comp-diff-wkspace.md
+          - name: With the same workspace
+            href: process-mining-alm-rebind-without-comp-same-wkspace.md
+        - name: Rebind reports using a composite model
+          items:
+          - name: With different workspaces
+            href: process-mining-alm-rebind-with-comp-diff-wkspace.md
+          - name: With the same workspace
+            href: process-mining-alm-rebind-with-comp-same-wkspace.md
+      - name: Migrate using Power BI pipelines and rebinding
+        href: process-mining-alm-migrate-using-pbi-pipelines-and-rebinding.md    
     - name: Improve cloud flows with process insights (preview)
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
@@ -1227,3 +1248,4 @@
     href: faqs-copilot-generate-description-from-flow-properties.md
   - name: FAQ for Process Mining's Microsoft 365 personal recommendations
     href: faqs-process-mining-m365-personal-recommendations.md
+    
