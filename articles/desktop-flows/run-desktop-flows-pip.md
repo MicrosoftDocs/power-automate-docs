@@ -4,7 +4,7 @@ description: Learn how to run desktop flows in picture-in-picture mode.
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/05/2024
+ms.date: 08/27/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -72,7 +72,7 @@ When you authenticate on the picture-in-picture session, the flow starts running
 Enable options **View only** to block user input, and **Always on top** to always keep the window on the foreground.
 
 > [!TIP]
-> If you are running multiple flows in picture-in-picture mode sequencially, it is suggested that you keep the picture-in-picture window open so that the flows run faster, as user authentication and session loading will occur only once.
+> When running multiple flows in picture-in-picture mode one after the other, it's recommended to keep the picture-in-picture window open. This ensures faster flow execution, as user authentication and session loading will only happen once.
 
 ## Trigger a desktop flow from a cloud flow in picture-in-picture
 
@@ -88,7 +88,7 @@ To trigger a desktop flow in Picture-in-Picture, open the action configuration p
 
 :::image type="content" source="media/run-flow-pip/cloud-pip-parameter.png" alt-text="Set Attended Mode parameter in Run a flow built with Power Automate for desktop cloud action.":::
 
-Upon triggering the desktop flow, the **Picture-in-picture** window pops up prompting for authentication, and then the flow starts running like when you [trigger a desktop flow from Power Automate console in picture-in-picture](run-desktop-flows-pip.md#trigger-a-desktop-flow-from-power-automate-console-in-picture-in-picture).  
+When you trigger the desktop flow, the **Picture-in-picture** window appears, prompting you for authentication. Once authenticated, the flow starts running, similar to when you [trigger a desktop flow from Power Automate console in picture-in-picture](run-desktop-flows-pip.md#trigger-a-desktop-flow-from-power-automate-console-in-picture-in-picture).
 
 ## Debug a desktop flow in picture-in-picture
 
@@ -119,18 +119,18 @@ When set to **Picture-in-picture default**, Power Automate creates a new user da
 > - For browser automation to work successfully, use a launch browser action to open your web browser within the picture-in-picture window and enable the **Power Automate browser extension** on the **Picture-in-picture** user data folder.
 > - Use the [troubleshooter in Power Automate for desktop](/power-automate/desktop-flows/troubleshooter) to diagnose issues related to picture-in-picture.
 
-If it's set to **Browser default**, the browser within the picture-in-picture session uses the default user data folder, which is the same as the one used when the flow runs in the main session.
+If set to **Browser default**, the browser within the picture-in-picture session uses the default user data folder, which is the same as the one used when the flow runs in the main session.
 
 > [!IMPORTANT]
 >
 > - When **User data folder** is set to **Browser default**, the web browser can only open in one session at a time.
 
-When it's set to **Custom**, you can enter a custom user data folder to be used by the browser in picture-in-picture flow runs.
+When set to **Custom**, you can enter a custom user data folder to be used by the browser in picture-in-picture flow runs.
 
 ## Known issues and limitations
 
 - If you're using a PIN to sign in to Windows, PIN authentication only works the first time the picture-in-picture session is opened. After that, it can only be authenticated with username and password.
-- Applications that start on Windows startup are automatically opened within the picture-in-picture session as well. This might cause a conflict between the two sessions, as two instances of an application are running concurrently. To avoid this, don't set the applications to start automatically on Windows startup. To resolve this, it might be required to sign out and sign in again or restart the machine.
+- Applications that start on Windows startup are automatically opened within the picture-in-picture session as well. This might cause a conflict between the two sessions, as two instances of an application are running concurrently. To avoid this issue, don't set the applications to start automatically on Windows startup. To resolve this issue, it might be required to sign out and sign in again or restart the machine.
 - Windows Home editions aren't supported.
 - The machine can't be restarted or shut down while the picture-in-picture session is open.
 - The clipboard is shared between the picture-in-picture session and the main session.
