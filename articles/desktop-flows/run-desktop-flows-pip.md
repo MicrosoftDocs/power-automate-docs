@@ -16,20 +16,11 @@ search.audienceType:
   - enduser
 ---
 
-# Run desktop flows in picture-in-picture (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Run desktop flows in picture-in-picture
 
 Power Automate enables you to run attended desktop flows within a virtual window that replicates your desktop, so that you can continue working on your machine while the automation is running in parallel.
 
 This attended run mode is called *picture-in-picture* and uses the [Child Sessions](/windows/win32/termserv/child-sessions) technology.
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality.
-> - These features are available before an official release so that customers can get early access and provide feedback.
-> - Triggering desktop flows from cloud flows in picture-in-picture requires Power Automate for desktop version 2.43 or later.
 
 ## Prerequisites
 
@@ -64,11 +55,11 @@ To enable the picture-in-picture run mode on the machine, follow one of the meth
 
 You can trigger a desktop flow in picture-in-picture mode through the **Power Automate console**.
 
-Select the target flow, open the **More actions** menu, and then select **Run in Picture-in-Picture**.
+Select the target flow, open the **More actions** menu, and then select **Run in picture-in-picture**.
 
 :::image type="content" source="media/run-flow-pip/console-run-in-pip.png" alt-text="Run in picture-in-picture through the Power Automate console.":::
 
-Alternatively, enable the **Run in Picture-in-Picture** flow property so that the flow always runs in picture-in-picture mode when triggered locally.
+Alternatively, enable the **Run in picture-in-picture** flow property so that the flow always runs in picture-in-picture mode when triggered locally.
 
 :::image type="content" source="media/run-flow-pip/console-pip-property.png" alt-text="Enable the picture-in-picture flow property.":::
 
@@ -80,7 +71,10 @@ When you authenticate on the picture-in-picture session, the flow starts running
 
 Enable options **View only** to block user input, and **Always on top** to always keep the window on the foreground.
 
-## Trigger a desktop flow from a cloud flow in Picture-in-Picture
+> [!TIP]
+> If you are running multiple flows in picture-in-picture mode sequencially, it is suggested that you keep the picture-in-picture window open so that the flows run faster, as user authentication and session loading will occur only once.
+
+## Trigger a desktop flow from a cloud flow in picture-in-picture
 
 You can trigger a desktop flow in picture-in-picture mode from a cloud flow.
 
@@ -94,17 +88,17 @@ To trigger a desktop flow in Picture-in-Picture, open the action configuration p
 
 :::image type="content" source="media/run-flow-pip/cloud-pip-parameter.png" alt-text="Set Attended Mode parameter in Run a flow built with Power Automate for desktop cloud action.":::
 
-Upon triggering the desktop flow, the **Picture-in-Picture** window pops up prompting for authentication, and then the flow starts running like when you [trigger a desktop flow from Power Automate console in picture-in-picture](run-desktop-flows-pip.md#trigger-a-desktop-flow-from-power-automate-console-in-picture-in-picture).  
+Upon triggering the desktop flow, the **Picture-in-picture** window pops up prompting for authentication, and then the flow starts running like when you [trigger a desktop flow from Power Automate console in picture-in-picture](run-desktop-flows-pip.md#trigger-a-desktop-flow-from-power-automate-console-in-picture-in-picture).  
 
-## Debug a desktop flow in Picture-in-Picture
+## Debug a desktop flow in picture-in-picture
 
 You can debug a desktop flow in a picture-in-picture session directly through the **Power Automate flow designer**.
 
-To enable the picture-in-picture run mode in the designer, select **Debug** > **Enable Picture-in-Picture mode**.
+To enable the picture-in-picture run mode in the designer, select **Debug** > **Enable picture-in-picture mode**.
 
 :::image type="content" source="media/run-flow-pip/designer-run-in-pip.png" alt-text="Enable the Picture-in-Picture mode in the Power Automate designer.":::
 
-## Limitations of Browser automation in Picture-in-Picture
+## Limitations of Browser automation in picture-in-picture
 
 Two instances of a web browser (Chrome, Firefox, or Microsoft Edge) can't open concurrently with the same user data folder in both main and picture-in-picture sessions.
 
@@ -114,15 +108,15 @@ This limitation is handled automatically with the **User data folder** parameter
 
 The **User data folder** parameter has the following options:
 
-- Picture-in-Picture default (default option)
+- Picture-in-picture default (default option)
 - Browser default
 - Custom
 
-When set to **Picture-in-Picture default**, Power Automate creates a new user data folder for the browser to use when the flow runs in picture-in-picture mode.
+When set to **Picture-in-picture default**, Power Automate creates a new user data folder for the browser to use when the flow runs in picture-in-picture mode.
 
 > [!IMPORTANT]
 >
-> For browser automation to work successfully, use a launch browser action to open your web browser within the Picture-in-Picture window and enable the **Power Automate browser extension** on the **Picture-in-Picture** user data folder.
+> For browser automation to work successfully, use a launch browser action to open your web browser within the picture-in-picture window and enable the **Power Automate browser extension** on the **Picture-in-picture** user data folder.
 
 If it's set to **Browser default**, the browser within the picture-in-picture session uses the default user data folder, which is the same as the one used when the flow runs in the main session.
 
