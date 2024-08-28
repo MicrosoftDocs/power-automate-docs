@@ -86,7 +86,7 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 
         If the service principal is provisioned in your Microsoft Entra, the page should look like the following screenshot:
 
-        :::image type="content" source="media/hosted-machines/azure-portal.png" alt-text="Screenshot of the Enterprise applications in Microsoft Entra ID.":::
+        :::image type="content" source="media/hosted-machines/azure-portal.svg" alt-text="Screenshot of the Enterprise applications in Microsoft Entra ID.":::
 
         If the application is like the presented screenshot, you don't need to perform any extra steps. However, you must create the service principal if the application isn't showing up.
 

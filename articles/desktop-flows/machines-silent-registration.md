@@ -62,7 +62,7 @@ To silently register your machine and join a group, we recommend that you use a 
    - Directory (tenant) ID
    - Client credentials (certificate or thumbprint)
 
-   ![Screenshot of the information that will be used in the Machine Registration app.](./media/machines-silent-registration/azure-portal-test-app-info.png)
+   ![Screenshot of the information that will be used in the Machine Registration app.](./media/machines-silent-registration/azure-portal-test-app-info.svg)
 
 ## Use the machine registration app
 
