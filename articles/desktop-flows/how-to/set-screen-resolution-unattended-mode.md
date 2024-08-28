@@ -27,8 +27,6 @@ In some scenarios, Power Automate might run unattended flows in a lower resoluti
 Set the screen resolution for unattended flows using the Window registry. This method can be used with Power Automate flows starting with version 2.35.
 
 > [!IMPORTANT]
-> This task contains steps that tell you how to modify the registry. However, serious problems might occur if you modify the registry incorrectly. Therefore, make sure that you follow these steps carefully. For added protection, back up the registry before you modify it. Then, you can restore the registry if a problem occurs. For more information about how to back up and restore the registry, go to: [How to back up and restore the registry in Windows](https://support.microsoft.com/kb/322756).
->
 > Setting the **ScreenResolutionEnabled** registry key to 1 overrides the settings in the UIFlowService.exe.config file. The registry settings for screen resolution persist after an upgrade of Power Automate Desktop, the **UIFlowService.exe.config** file is overwritten with default values during upgrades.
 
 Open the registry editor (Windows key + R, and type 'regedit'), and then set the following values.
@@ -40,7 +38,14 @@ Open the registry editor (Windows key + R, and type 'regedit'), and then set the
 | HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | Height | DWORD | Set the screen resolution height. |
 | HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | Scale | DWORD | Set the screen resolution scale. |
 
+When editing DWORD values, be sure to select the decimal base (hexadecimal is selected by default), to avoid having your values interpreted as hexadecimal which will result in incorrect resolution settings.
+
+   ![Screenshot of the registry DWORD edit window with decimal base selected.](media/set-screen-resolution-unattended-mode/WidthRegDwordDecimalBase.png)
+
 ## With UIFlowService.exe.config file
+
+> [!IMPORTANT]
+> The **UIFlowService.exe.config** file is overwritten with default values during upgrades and screen resolution settings will therefore be reset. We recommend setting the resolution with registry settings instead.
 
 To change the resolution in which unattended flows are run by editing the UIFlowService.exe.config:
 
