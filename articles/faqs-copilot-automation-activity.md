@@ -1,7 +1,7 @@
 ---
 title: FAQ for Copilot in desktop flow activity (preview)
 description: This FAQ discusses Copilot used in desktop flow activity and the key considerations for making use of this technology responsibly.
-ms.date: 05/20/2024
+ms.date: 08/29/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
