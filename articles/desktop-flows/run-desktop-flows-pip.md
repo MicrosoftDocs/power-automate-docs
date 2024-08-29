@@ -1,11 +1,11 @@
 ---
 title: Run a desktop flow in picture-in picture
 description: Learn how to run desktop flows in picture-in-picture mode.
-author: PetrosFeleskouras
+author: nikosmoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 08/27/2024
-ms.author: pefelesk
+ms.date: 08/29/2024
+ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
   - DanaMartens
