@@ -4,7 +4,7 @@ description: See the main functionality of the Power Automate console.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/17/2024
+ms.date: 08/29/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
