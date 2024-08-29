@@ -4,7 +4,7 @@ description: See all the available database actions.
 author: cochamos
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/07/2023
+ms.date: 08/29/2024
 ms.author: cochamos
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
