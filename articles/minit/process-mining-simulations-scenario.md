@@ -113,11 +113,12 @@ The **Resources** tab lists all resources and their work distribution on the act
 
 Use the **Sequence flows** tab to modify probabilities for the next activities and their waiting times.
 
-1. For each activity in the **Next activity name** column, enter the following fields:
-    - **Probability (%)**: The probability of the next activity in terns of percentage.
-    - **Next activity waiting time**: The time between the end of the current activity and the start of the next activity.
+For each activity in the **Next activity name** column, enter the following fields:
 
-    :::image type="content" source="media/process-mining-simulations-scenario/activity-resources.png" alt-text="Screenshot of the sequence flows for a specific activity.":::
+- **Probability (%)**: The probability of the next activity in terns of percentage.
+- **Next activity waiting time**: The time between the end of the current activity and the start of the next activity.
+
+    :::image type="content" source="media/process-mining-simulations-scenario/activity-sequence-flows.png" alt-text="Screenshot of the sequence flows for a specific activity.":::
 
 ## Start a simulation
 

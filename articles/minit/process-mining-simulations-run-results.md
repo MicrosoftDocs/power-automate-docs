@@ -17,11 +17,11 @@ search.audienceType:
 
 # Run a simulation and get results
 
-After you [create a simulation scenario](process-mining-simulations-scenario.md), you can run a simulation and get results. This article shows you how to run a simulation and get results in the Process Mining desktop app.
+After you [create a simulation scenario](process-mining-simulations-scenario.md), you can run it and get results. This article shows you how to run a simulation scenario and get results in the Process Mining desktop app.
 
 ## Start simulation
 
-Now that you have a simulation scenario, you can run a simulation. To run a simulation, follow these steps:
+To run a simulation, follow these steps:
 
 1. In the **Process simulation** screen, select **Simulate**.
 
