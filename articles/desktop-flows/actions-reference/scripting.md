@@ -4,7 +4,7 @@ description: See all the available scripting actions.
 author: cochamos
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 04/11/2024
+ms.date: 08/29/2024
 ms.author: cochamos
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
