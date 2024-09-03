@@ -135,6 +135,6 @@ When you start a recording, you can choose which screen to record and which micr
 
 The recorder captures a video of the selected screen, audio from the chosen microphone, and necessary UI metadata to build the desktop flow.
 
-## Give us your feedback
+## Share your feedback
 
 Do you have any thoughts on the AI Recorder? We'd love to hear from you! Send us a note at <powerautomate-ai@microsoft.com>. We’d love to chat with you.
