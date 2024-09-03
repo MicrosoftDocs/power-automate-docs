@@ -4,7 +4,7 @@ description: Learn about the available flow control actions in desktop flows.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/17/2024
+ms.date: 08/27/2024
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -143,7 +143,7 @@ This action doesn't include any exceptions.
 
 Acts as the destination of a 'go to' statement.
 
-From version 2.46 and on, labels can also be used in a different scope than the corresponding **Go to** action (e.g. in a conditional block), except error blocks, loops, and/or other subflows.
+From version 2.46 and on, labels can also be used in a different scope than the corresponding **Go to** action (for example, in a conditional block), except error blocks, loops, and/or other subflows.
 
 ### Input parameters
 
@@ -205,6 +205,7 @@ Run a subflow specifying any required arguments.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Subflow name|No|[Subflow](../designer-workspace.md#setting-up-subflows)||The name of the subflow to call|
+|Input as expression|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Define whether the input should be handled as an expression. If enabled, variables and expressions can be used to dynamically determine the subflow during runtime.|
 
 ### Variables produced
 
@@ -235,7 +236,7 @@ This action doesn't include any exceptions.
 
 ## <a name="wait"></a> Wait
 
-Suspends the execution of the flow for a specified amount of seconds.
+Suspends the execution of the flow for a specified number of seconds.
 
 ### Input parameters
 
