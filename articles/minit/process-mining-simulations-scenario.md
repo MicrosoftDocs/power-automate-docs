@@ -43,7 +43,7 @@ This section explains some of the settings for your simulation scenario in the *
 1. In the **Arrival time** section, define the settings that determine the arrival of cases in simulation.
     - In the **Instances** field, select the instance number.
     - In the **Scenario start at** field, select the date on the calendar to represent when the simulation scenario starts.
-    - In the **Exclude at the start** and **Exclude from the end** fields, select the up or down arrow to exclude cases from the start and end of simulation when there's increasing and decreasing inflow of new cases. Exclusions filter out periods when there's no full workload or inflow from the simulation results.
+    - In the **Exclude at the start** and **Exclude from the end** fields, select the up or down arrow to exclude cases from the start and end of simulation when there's increasing and decreasing inflow of new cases. Exclusions filter out periods when there's no full workload or inflow from the simulated cases.
 
 1. (Optional) In the **Timetables/Work schedules** section, select **Add new timetable** to add new timetables for working hours. These timetables can be assigned to Resources used in the simulation.
 1. In the **Resources** group, add resources to the simulation scenario by following the instructions in the [Manage the workforce](#manage-the-workforce) section.
@@ -65,8 +65,8 @@ The following table list the fields and a description or example:
 |Field  |Description or example  |
 |---------|---------|
 |Name     | Name of the resource.    |
-|Finance attribute     | Example: Simulation        |
-|Cost per hour     | <!--Jan, please provide description or example.-->       |
+|Finance attribute     | Attribute used to calcuate hourly cost, no such financial attribute exists, use Simulation value and enter hourly cost in field "Cost per hour"        |
+|Cost per hour     | Hourly cost for resource when no other financial attribute is selected (value Simulation)       |
 |Parallel tasks amount     | The maximum number of parallel tasks a given resource can handle.        |
 |Task processing efficiency    | How much more or less efficient the resource is compared to the default resource. A value above 1.0 means more efficient. A value below 1.0 means less efficient.  |
 |Timetables/Work schedules     | Which working hours apply for a given resource.   |
@@ -126,8 +126,7 @@ Use the **Process simulation** screen to start the simulation and to get an esti
 
 1. Return to the **Process simulation** screen.
 1. To start the simulation, select **Simulate**.
-1. To get an estimate of the simulation duration, select **Estimated simulation duration**.  
-1. In the **Process Simulation** hub, select the ellipsis (**…**) in the scenario’s tile and select **Start Simulation**. <!--Jan, I don't see this.-->
+1. To get an estimate of the simulation duration, see **Estimated simulation duration**.  
 
 The status of the simulation scenario is indicated below the scenario’s tile. Examples of the status are **Queued for start** and **Completed**.
 
