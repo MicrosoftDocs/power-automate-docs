@@ -23,13 +23,14 @@ After you [create a simulation scenario](process-mining-simulations-scenario.md)
 
 To run a simulation, follow these steps:
 
-1. In the **Process simulation** screen, select **Simulate**.
+1. In the **Process simulation** screen, click on **Simulate** button.
 
-    When the simulation completes, an estimated duration time for the simulation appears to the left of the **Simulate** button.
+Note: When you already run simulation run for this simulation scenario, the button is name **Re-simulate**.
 
-1. Select the ellipsis (**…**) in scenario’s tile and select **Start Simulation**.
-
-    The status of the simulation scenario appears below the scenario’s tile. Examples of status are **Queued for start** and **Completed**. There are other descriptions depending on the simulation scenario.
+    The status of the simulation scenario appears at bottom of the scenario’s tile. Examples of status are **Queued for start** and **Completed**. There are other descriptions depending on the simulation scenario.
+    When Simulation is finished, simulation tile shows 2 global KPI results:
+- Average case cost difference (can be zero, when no financial attributes have been selected)
+- Average case duration difference (this KPI is allways calculated)
 
 ## Get simulation results
 
