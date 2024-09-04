@@ -47,7 +47,7 @@ Currently, AI Recorder is available only for users with a work or school account
 
 ### Minimum Power Automate Desktop
 
-You need Power Automate desktop version 2.48 or higher. Learn how to download the latest version at [Install Power Automate](install.md).
+You need Power Automate desktop version 2.48 or higher. Learn how to download the latest version at [Install Power Automate](https://aka.ms/DownloadPAD48).
 
 ## Create a desktop flow using the AI Recorder
 
