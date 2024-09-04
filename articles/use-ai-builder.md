@@ -10,7 +10,7 @@ ms.author: angieandrews
 ms.reviewer: angieandrews
 ms.collection:
   - get-started
- search.audienceType: 
+search.audienceType: 
   - admin
 ---
 
