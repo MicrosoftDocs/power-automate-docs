@@ -126,7 +126,8 @@ Use the **Process simulation** screen to start the simulation and to get an esti
 
 1. Return to the **Process simulation** screen.
 1. To start the simulation, select **Simulate**.
-1. To get an estimate of the simulation duration, see **Estimated simulation duration**.  
+
+Expected estimation of the simulation duration is also available, see **Estimated simulation duration**.  
 
 The status of the simulation scenario is indicated below the scenario’s tile. Examples of the status are **Queued for start** and **Completed**.
 
