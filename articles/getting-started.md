@@ -1,7 +1,7 @@
 ---
 title: Get started with Power Automate
 description: Learn how to navigate the Power automate home page.
-author: jamiemwork
+author: kisubedi
 contributors:
   - jamiemwork
   - -kisubedi
@@ -10,8 +10,8 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 11/10/2023
-ms.author: jamiller
+ms.date: 09/04/2024
+ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
