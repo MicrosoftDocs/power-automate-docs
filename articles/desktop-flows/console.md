@@ -4,13 +4,14 @@ description: See the main functionality of the Power Automate console.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/03/2024
+ms.date: 08/29/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
-- PetrosFeleskouras 
+- PetrosFeleskouras
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -71,14 +72,17 @@ To decide whether Microsoft should collect diagnostic data to improve user exper
 
 ## Desktop flow properties
 
-To review the properties of a desktop flow, right-click on it and select **Properties**. In the **General** tab, you can edit the name and description of the flow, set up a keyboard shortcut to trigger the flow locally, and define the **On error** behavior of the flow run.
+To review the properties of a desktop flow, right-click on it and select **Properties**, or select the same option from the corresponding shortcut. In the **General** tab, you can edit the name and description of the flow, set up a keyboard shortcut to trigger the flow locally, define the **On error** behavior of the flow run, and determine whether the desktop flow should **time out** after a set period of time.
 
 If the **Add screenshot to logs** option is enabled, a screenshot is captured upon flow run failure and is uploaded to the [flow run action details](monitor-run-details.md#actions-details).
+
+The **Flow timeout** property is disabled by default. If it becomes enabled, you can specify the maximum allowed time that the flow is allowed to run. If that maximum duration limit is reached during (console or cloud initiated) runtime, the desktop flow is forced to stop and time out. You can use the proposed timeout value, or provide your own using a combination of an integer value with the preferred time unit (seconds, minutes, or hours).
 
 > [!IMPORTANT]
 >
 > - Access to the flow run logs is a premium feature, which requires a [Power Automate subscription](https://powerautomate.microsoft.com/pricing/).
-> - The **Add screenshot to logs** property applies only to flows stored in [Power Automate v2 schema](schema.md).
+> - The **Flow timeout** property is also a premium feature requiring the above license.
+> - The **Add screenshot to logs** and **Flow timeout** properties apply only to flows stored in [Power Automate v2 schema](schema.md).
 
 In the **Details** tab, you can see the owner, the creation and last modification dates, the flow ID and the flow’s storage schema version in Dataverse. For more information on the enhanced desktop flows schema, go to [Power Automate v2 schema](schema.md).
 
@@ -135,7 +139,7 @@ As a Power Platform admin you can prevent users from sending feedback to Microso
 
 Tenant administrators can view, export, and delete the feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage), and then select **Health** > **Product feedback**.
 
-### See also
+## Related information
 
 [FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md)
 

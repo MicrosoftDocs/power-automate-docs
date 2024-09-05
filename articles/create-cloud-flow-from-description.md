@@ -87,6 +87,6 @@ In the following example, we'll build an automated cloud flow that sends a notif
 
 - In the current version, the AI might not fill in some parameters automatically, even if you provide them in the description.
   
-### See also
+## Related information
 
 [Learn more about cloud flows](./overview-cloud.md)  

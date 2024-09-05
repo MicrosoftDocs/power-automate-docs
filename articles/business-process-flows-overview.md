@@ -199,7 +199,7 @@ Recent rows are visible in a lookup column for a model-driven app. To prevent th
 
 - Business process flows show the name of the business process flow instance, which is set at the time that the business process flow is created. This means if the name in the business process flow definition changes, new business process flow instances display the updated name, but older business process flow instances display the original name. Additionally, localized business process flow definition names aren't displayed.
 
-### See also
+## Related information
 
 - [Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal)
 - [Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal) 

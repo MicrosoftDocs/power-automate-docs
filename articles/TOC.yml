@@ -8,6 +8,8 @@
     href: sign-up-sign-in.md
   - name: Get started with Power Automate
     href: getting-started.md
+  - name: Copilot in Power Automate
+    href: copilot-overview.md
   - name: What's new
     href: whats-new.md
   - name: Create and manage flows in Power Apps
@@ -375,6 +377,8 @@
       href: ./desktop-flows/getting-started-org.md
   - name: Create desktop flows
     href: ./desktop-flows/create-flow.md
+  - name: Create desktop flows using the AI Recorder
+    href: ./desktop-flows/create-flow-using-ai-recorder.md
   - name: Copilot in Power Automate for desktop (preview)
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
   - name: Run desktop flows
@@ -399,7 +403,7 @@
         href: ./desktop-flows/run-desktop-flows-via-keyboard-shortcuts.md       
       - name: Runtime notifications
         href: ./desktop-flows/runtime-notifications.md
-    - name: Run desktop flows in Picture-in-Picture (preview)
+    - name: Run desktop flows in picture-in-picture
       href: ./desktop-flows/run-desktop-flows-pip.md
   - name: Manage machines and machine groups
     items:
@@ -409,8 +413,6 @@
       href: ./desktop-flows/machines-silent-registration.md
     - name: Manage machine groups
       href: ./desktop-flows/manage-machine-groups.md
-    - name: Create desktop flow connections
-      href: ./desktop-flows/desktop-flow-connections.md
     - name: Machine group certificate renewal
       href: ./desktop-flows/machine-group-certificates.md
     - name: RPA with zero infrastructure (Hosted RPA)
@@ -421,10 +423,14 @@
         href: ./desktop-flows/hosted-machines.md
       - name: Hosted machine groups
         href: ./desktop-flows/hosted-machine-groups.md
-    - name: Scale with AVD starter kit (deprecated)
-      href: ./desktop-flows/avd-overview.md
-  - name: Use credentials in desktop flow connections (preview)
-    href: ./desktop-flows/manage-credentials.md
+  - name: Create credentials
+    items:
+    - name: Azure Key Vault credentials
+      href: ./desktop-flows/create-azurekeyvault-credential.md
+    - name: CyberArk credentials (preview)
+      href: ./desktop-flows/create-cyberark-credential.md
+  - name: Create desktop flow connections
+    href: ./desktop-flows/desktop-flow-connections.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Work queues
@@ -502,6 +508,8 @@
       href: ./desktop-flows/test-selectors.md  
     - name: Repair a selector
       href: ./desktop-flows/repair-selector.md  
+    - name: Set fallback mechanism for UI element
+      href: ./desktop-flows/ui-elements-fallback-mechanism.md  
   - name: Power Fx in desktop flows (preview)
     items:
     - name: Power Fx in desktop flows
@@ -626,14 +634,26 @@
         href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
       - name: Troubleshoot SQL queries
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
+    - name: Configure proxy settings
+      href: ./desktop-flows/how-to/proxy-settings.md
+    - name: Reduce desktop flow size in solution
+      href: ./desktop-flows/how-to/reduce-flow-size.md
+    - name: Restore a deleted desktop flow
+      href: ./desktop-flows/how-to/restore-deleted-desktop-flow.md
     - name: Use logical operations on conditional statements
       href: ./desktop-flows/how-to/logical-operations-conditional-statements.md
+    - name: Use passwords
+      href: ./desktop-flows/how-to/use-passwords.md  
     - name: Handle custom forms
       href: ./desktop-flows/how-to/handle-custom-forms.md
     - name: Share/export a desktop flow
       href: ./desktop-flows/how-to/share-export-desktop-flows.md
     - name: Run desktop flow from other desktop flows
       href: ./desktop-flows/how-to/run-desktop-flow-action.md
+    - name: Use connector actions
+      href: ./desktop-flows/how-to/use-connector-actions.md
+    - name: Share desktop flows that contain connector actions
+      href: ./desktop-flows/how-to/share-desktop-flows-that-contain-connector-actions.md
     - name: Set screen resolution on unattended mode
       href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
     - name: Run Power Automate with elevated rights
@@ -828,6 +848,31 @@
       href: process-mining-pbi-workspace.md
     - name: Use optimized data structure in Power BI report (preview)
       href: process-mining-pbi-data-structure.md
+    - name: Application lifecycle management (ALM)
+      items:
+      - name: ALM overview
+        href: process-mining-alm-overview.md
+      - name: Migrate entities with Power Platform solutions
+        href: process-mining-alm-entities-solutions.md
+      - name: Migrate customized Process Mining Power BI reports
+        href:
+        items:
+        - name: Overview
+          href: process-mining-pbi-reports-overview.md
+        - name: Rebind reports without using a composite model
+          items:
+          - name: With different workspaces
+            href: process-mining-alm-rebind-without-comp-diff-wkspace.md
+          - name: With the same workspace
+            href: process-mining-alm-rebind-without-comp-same-wkspace.md
+        - name: Rebind reports using a composite model
+          items:
+          - name: With different workspaces
+            href: process-mining-alm-rebind-with-comp-diff-wkspace.md
+          - name: With the same workspace
+            href: process-mining-alm-rebind-with-comp-same-wkspace.md
+      - name: Migrate using Power BI pipelines and rebinding
+        href: process-mining-alm-migrate-using-pbi-pipelines-and-rebinding.md    
     - name: Improve cloud flows with process insights (preview)
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
@@ -1089,7 +1134,7 @@
     displayName: Monitor desktop flows in the Center of Excellence (CoE)
   - name: Machine group certificate renewal for admins
     href: ./desktop-flows/machine-group-certificates-admins.md
-  - name: Set a policy to help prevent data loss
+  - name: Data loss prevention (DLP) policy creation
     href: prevent-data-loss.md
   - name: Support Intune in mobile apps
     href: intune-support.md
@@ -1157,29 +1202,6 @@
         href: use-cds-for-apps-dialogs.md
       - name: Replace classic Dataverse dialogs
         href: replace-dialogs.md
-  - name: Other types of desktop flows (Legacy)
-    items:
-    - name: Introduction to other types of desktop flows
-      href: ./desktop-flows/overview.md
-    - name: Create and test desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/create-desktop.md
-    - name: Upgrade UI flows app and connections from previous releases
-      href: ./desktop-flows/upgrade.md
-    - name: Edit desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/edit-desktop.md
-    - name: Migrate from Windows recorder (V1) to Power Automate
-      href: ./desktop-flows/migrate.md
-    - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/inputs-outputs-desktop.md
-      items:
-      - name: Use Input Method Editors (IMEs) in desktop flows with Windows recorder (V1)
-        href: ./desktop-flows/use-ime.md
-    - name: Create and test Selenium IDE flows
-      href: ./desktop-flows/create-web.md
-    - name: Edit desktop flows with Selenium IDE
-      href: ./desktop-flows/edit-web.md
-    - name: Use inputs and outputs in desktop flows with Selenium IDE
-      href: ./desktop-flows/inputs-outputs-web.md
 - name: Learning catalog
   items:
   - name: Overview
@@ -1228,3 +1250,4 @@
     href: faqs-copilot-generate-description-from-flow-properties.md
   - name: FAQ for Process Mining's Microsoft 365 personal recommendations
     href: faqs-process-mining-m365-personal-recommendations.md
+    

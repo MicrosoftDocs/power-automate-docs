@@ -4,7 +4,7 @@ description: See all the available Excel actions.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 04/11/2024
+ms.date: 07/17/2024
 ms.author: dipapa
 ms.reviewer: matp
 contributors:
@@ -186,6 +186,33 @@ This action doesn't produce any variables.
 |-----|-----|
 |Can't find worksheet|Indicates that a worksheet with the specified name couldn't be found|
 |Failed to rename worksheet|Indicates a problem renaming the specified worksheet|
+
+## <a name="copyexcelworksheet"></a> Copy Excel worksheet
+
+Copies a worksheet from an Excel document and paste it to the Excel document of the same or different Excel instance.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must be specified in a Launch Excel action.|
+|Copy worksheet with|N/A|Index, Name|Name|Specify whether to find the worksheet by name or index|
+|Worksheet index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the worksheet to copy. The numbering starts from 1, meaning that the index of the first worksheet is 1, the second is 2, and so on.|
+|Worksheet name|No|[Text value](../variable-data-types.md#text-value)||The name of the worksheet to copy.|
+|Target Excel instance|Νο|[Excel instance](../variable-data-types.md#instances)||The Excel instance of the target file. This variable must be specified in a Launch Excel action.|
+|Worksheet new name|No|[Text value](../variable-data-types.md#text-value)||The new name of the worksheet|
+|Paste worksheet as|N/A|First worksheet, Last worksheet|First worksheet|Specify whether the copied Excel worksheet will be added before or after the existing worksheets|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="copyexcelworksheet_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to copy worksheet|Indicates a problem when copying a worksheet in Excel|
+|Can't copy worksheet with this name|Indicates a problem when trying to set the sheet name after copying|
 
 ## <a name="activatecellinexcel"></a> Activate cell in Excel worksheet
 
@@ -426,7 +453,7 @@ Deletes a selected column from an Excel instance.
 |Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must have been previously specified in a Launch Excel action.|
 |Delete column|No|[Text value](../variable-data-types.md#text-value)||The index number or letter of the column to delete.|
 
-##### Variables produced
+### Variables produced
 
 This action doesn't produce any variables.
 
@@ -491,6 +518,179 @@ Retrieve the first free row, given the column of the active worksheet.
 |-----|-----|
 |Failed to retrieve first free row|Indicates a problem retrieving the first free row of an Excel instance|
 
+## <a name="readcellformula"></a> Read formula from Excel
+
+Reads the formula inside a cell in Excel.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must be specified in a Launch Excel action.|
+|Retrieve|N/A|The formula of a single cell, The formula of a named cell|The formula of a single cell|Specify whether to retrieve the formula from a specified cell or a named cell|
+|Start column|No|[Text value](../variable-data-types.md#text-value)||The cell column (single cell's value) or first column as a numeric value or a letter|
+|Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The cell row (single cell's value) or first row number|
+|Name|No|[Text value](../variable-data-types.md#text-value)||The name of cells|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|CellFormula|[Text value](../variable-data-types.md#text-value)|The formula of a single cell|
+
+### <a name="readcellformula_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to read the formula from cell|Indicates a problem when reading the formula from a cell in Excel|
+
+## <a name="gettablerange"></a> Get table range from Excel worksheet
+
+Retrieves the range of a table in the active worksheet of an Excel instance.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must be specified in a Launch Excel action.|
+|Table name|No|[Text value](../variable-data-types.md#text-value)||Specify the name of the table in Excel.|
+|Is pivot|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Determine whether the specified table is a pivot table.|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|FirstColumnIndex|[Numeric value](../variable-data-types.md#numeric-value)|The numeric value of the table's first column|
+|FirstRowIndex|[Numeric value](../variable-data-types.md#numeric-value)|The numeric value of the table's first row|
+|LastColumnIndex|[Numeric value](../variable-data-types.md#numeric-value)|The numeric value of the table's last column|
+|LastRowIndex|[Numeric value](../variable-data-types.md#numeric-value)|The numeric value of the table's last row|
+
+### <a name="gettablerange_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to get the range from table|Indicates a problem when getting the range from a table in Excel|
+
+## <a name="autofillcells"></a> Auto fill cells in Excel worksheet
+
+Auto fills a range with data, based on the data of another range, in the active worksheet of an Excel instance.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must be specified in a Launch Excel action.|
+|Ranges format|N/A|Named cells, Specific ranges|Named cells|Specify how the ranges are referenced, either using named cells or absolute column/row indexes|
+|Source cells name|No|[Text value](../variable-data-types.md#text-value)||Name representing the source range for auto filling|
+|Destination cells name|No|[Text value](../variable-data-types.md#text-value)||Name representing the destination range to auto fill. The source range should begin from the same cell and should be included in the destination range|
+|Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column of both ranges|
+|Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The first row number of both ranges. The numbering starts from 1|
+|Source end column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column of the source range|
+|Source end row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number of the source range. The numbering starts from 1|
+|Destination end column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column of the destination range|
+|Destination end row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number of the destination range. The numbering starts from 1|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="autofillcells_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to auto fill cells|Indicates a problem when auto filling cells in Excel|
+
+## <a name="appendcells"></a> Append cells in Excel worksheet
+
+Appends a range of cells to the active worksheet of an Excel instance.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must be specified in a Launch Excel action.|
+|Append mode|N/A|To active sheet, To named cells|To active sheet|Specify whether to append to a sheet or range of named cells|
+|Name|No|[Text value](../variable-data-types.md#text-value)||The name of the range of cells|
+|First row has headers|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Indicates that the first row of the destination contains column headers|
+|Starting column|Yes|[Text value](../variable-data-types.md#text-value)||The starting column number or letter, where the data is appended beginning from the destination's first empty row. If the field is left empty, the first column of the specified destination is used instead.|
+|Starting column header|Yes|[Text value](../variable-data-types.md#text-value)||The header of the starting column, where the data is appended beginning from the destination's first empty row. If the field is left empty, the first column of the specified destination is used instead.|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="appendcells_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to append cells|Indicates a problem when appending cells in Excel|
+
+## <a name="lookuprange"></a> Lookup range in Excel worksheet
+
+Finds and returns the result of Excel's LOOKUP function.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must be specified in a Launch Excel action.|
+|Lookup value|No|[Text value](../variable-data-types.md#text-value)||The value to lookup in the specified range of cells.|
+|Ranges format|N/A|Named cells, Specific ranges|Named cells|Specify how the ranges are referenced, either using named cells or absolute column/row indexes.|
+|Cells name|No|[Text value](../variable-data-types.md#text-value)||The name of the cells range to search for the lookup value.|
+|Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column of the range to search for the lookup value.|
+|Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The first row number of the range to search for the lookup value. The numbering starts from 1.|
+|End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column of the range to search for the lookup value.|
+|End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number of the range to search for the lookup value. The numbering starts from 1.|
+|Array form|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|The array form of LOOKUP looks in the first row or column of an array for the specified value and returns a value from the same position in the last row or column of the array. Use this form of LOOKUP when the values that you want to match are in the first row or column of the array. If this option remains disabled, the vector form of LOOKUP is used instead, which looks in a one-row or one-column range (known as a vector) for a value and returns a value from the same position in a second one-row or one-column range.|
+|Cells name of results source|Yes|[Text value](../variable-data-types.md#text-value)||The name of the cells range from which the matching value is returned.|
+|Start column of results source|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the first column of the range from which the matching value is returned.|
+|Start row of results source|No|[Numeric value](../variable-data-types.md#numeric-value)||The first row number of the range from which the matching value is returned. The numbering starts from 1.|
+|End column of results source|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the last column of the range from which the matching value is returned.|
+|End row of results source|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number of the range from which the matching value is returned. The numbering starts from 1.|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|LookupResult|[Text value](../variable-data-types.md#text-value)|The value returned by the LOOKUP function|
+
+### <a name="lookuprange_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to lookup|Indicates a problem when looking up a value in Excel|
+
+## <a name="setcolor"></a> Set color of cells in Excel worksheet
+
+Fills the background of the selected cells with the specified color, in the active worksheet of an Excel instance.
+
+You can define the color by entering a hexadecimal code, or you can choose from a selection of predefined color names provided in the list. Selecting the 'Transparent' option leaves the cells without any color fill.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Excel instance|No|[Excel instance](../variable-data-types.md#instances)||The Excel instance to work with. This variable must be specified in a Launch Excel action.|
+|Set color of|N/A|Single cell, Range of cells, Named cells|Single cell|Specify whether to set the background color of a single cell, a range of cells, or named cells.|
+|Start column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the cell column or range's first column.|
+|Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The cell row or the range's first row number. The numbering starts from 1.|
+|End column|No|[Text value](../variable-data-types.md#text-value)||The index or letter of the range's last column.|
+|End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The range's last row number. The numbering starts from 1.|
+|Cells name|No|[Text value](../variable-data-types.md#text-value)||Name representing the range that is filled with the specified color.|
+|Color format|N/A|Name, Hexadecimal value|Name|Select whether to specify a color by its name or its hexadecimal value.|
+|Color name|No|[Text value](../variable-data-types.md#text-value)||Select one of the system defined colors.|
+|Color hexadecimal value|No|[Text value](../variable-data-types.md#text-value)||Specify the hexadecimal (RGB) value of the color.|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="setcolor_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Failed to set color|Indicates a problem when setting the color of cells in Excel|
+
 ## <a name="launchexcel"></a> Launch Excel
 
 Launches a new Excel instance or opens an Excel document.
@@ -499,7 +699,7 @@ Launches a new Excel instance or opens an Excel document.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Launch Excel|N/A|With a blank document, and open the following document|With a blank document|Specify whether to open a New Excel document, or an existing one|
+|Launch Excel|N/A|With a blank document, and open the following document|With a blank document|Specify whether to open a New Excel document, or an existing document|
 |Document path|No|[File](../variable-data-types.md#files-and-folders)||The full path of the existing Excel document to open|
 |Make instance visible|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to make the Excel window visible or hidden|
 |Nest under a new Excel process|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Excel spreadsheet should be under a unique Excel process. Macros and add-ins from other spreadsheets won't be accessible.|
@@ -827,7 +1027,7 @@ This action doesn't produce any variables.
 When using the **Filter cells in Excel worksheet** in an active sheet/range with already existing/applied filters:
 
 * If the targeted range is the same as the one the previous filters were applied on, all filters are applied.
-* If the targeted range isn't the same as the range previous filters were applied on, previous filters are cleared, and only the latest one is applied.
+* If the targeted range isn't the same as the range previous filters were applied on, previous filters are cleared, and only the latest filter is applied.
 * If the targeted range is a table, all filters are applied.
 
 ### Input parameters

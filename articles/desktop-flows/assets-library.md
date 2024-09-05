@@ -49,7 +49,7 @@ The UI elements collections (preview) tab shows you the UI elements collections 
 
 :::image type="content" source="media/ui-elements-collections/two-tabs-in-assets-library.png" alt-text="Screenshot of the UI elements collections (preview) tab in the Assets library" border="false":::
 
-### See also
+## Related information
 
 - [Custom actions](custom-actions.md)
 - [Create custom actions](create-custom-actions.md)

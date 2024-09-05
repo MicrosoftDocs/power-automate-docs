@@ -184,7 +184,7 @@ Now, whenever an item in your SharePoint list (source) changes, your flow trigge
 > [!NOTE]
 > Your flow isn't triggered when an item is deleted from the source. If this is an important scenario, consider adding a separate column that indicates when an item is no longer needed.
 
-### See also
+## Related information
 
 [Use data operations](data-operations.md)
 

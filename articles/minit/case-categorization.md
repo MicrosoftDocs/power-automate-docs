@@ -127,7 +127,7 @@ After you categorize the case, each category has its own function in custom metr
 - ISRUNNING()
 - ISINCOMPLETEIMPORT()
 
-### See also
+## Related information
 
 [Explore the home page](process-hub.md)
 

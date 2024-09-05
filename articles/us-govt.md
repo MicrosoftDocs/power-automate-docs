@@ -6,7 +6,7 @@ suite: flow
 author: kenseongtan
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 08/03/2023
+ms.date: 06/20/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -248,9 +248,9 @@ Microsoft strives to maintain functional parity between our commercially availab
 
 There are exceptions to the principle of maintaining product functional parity within the US Government clouds. For more information about feature availability, download this file: [Business Applications US Government - Availability Summary](https://aka.ms/BAPFunctionalParity).
 
-### See also
+## Related information
 
-- [Desktop flows](./desktop-flows/overview.md).
+- [Desktop flows](./desktop-flows/introduction.md).
 
 - [Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government).
 

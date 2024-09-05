@@ -1,7 +1,7 @@
 ---
 title: Get started with copilot in Power Automate for desktop
 description: Learn how to access and use copilot in Power Automate for desktop flows.
-ms.date: 11/13/2023
+ms.date: 08/29/2024
 ms.topic: how-to
 author: cochamos
 ms.author: cochamos
@@ -41,7 +41,7 @@ Access the generative answers capability from the console by selecting **Copilot
 
 :::image type="content" source="media/pad_generative_answers/copilot_console1.png" alt-text="Screenshot that shows where to select the copilot in Power Automate for desktop button.":::
 
-Alternatively, you can also access the generative answers capability from the designer’s vertical menu on the right.
+Alternatively, you can also access the generative answers capability from the designer’s vertical menu on the right side.
 
 :::image type="content" source="media/pad_generative_answers/copilot_designer1.png" alt-text="Screenshot that shows the alternative location to use copilot in Power Automate for desktop designer.":::
 
@@ -75,7 +75,7 @@ As a Power Platform admin you can prevent users from sending feedback to Microso
 
 Tenant administrators can view, export, and delete the feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage), and then selecting **Health** > **Product feedback**.
 
-## See also
+## Related information
 
 - [FAQ for Generative Answers in Power Automate for desktop](../faqs-copilot-generative-answers-power-automate-desktop.md)
 - [Responsible AI FAQs for Power Automate](../responsible-ai-overview.md)

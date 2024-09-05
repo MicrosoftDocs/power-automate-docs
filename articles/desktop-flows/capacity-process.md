@@ -67,6 +67,6 @@ The cloud flow is now independent from the user license.
 >
 > The process capacity allocation to cloud flow will be updated in a future release.
 
-## See also
+## Related information
 
 [Process capacity utilization](capacity-utilization-process.md)

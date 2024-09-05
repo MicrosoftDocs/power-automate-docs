@@ -280,7 +280,7 @@ The following list contains known limitations of Copilot in automation center.
 - Multi-turn conversations aren't supported for generative answers (documentation skill).
 - For queries that return large result-sets, Copilot might not be able return or render the result.
 
-## See also
+## Related information
 
 - [Get started with Copilot in cloud flows](get-started-with-copilot.md)
 - [FAQs for Copilot in automation center (preview)](faqs-copilot-automation-center.md)

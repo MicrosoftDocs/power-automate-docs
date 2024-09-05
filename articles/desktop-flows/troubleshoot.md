@@ -137,5 +137,5 @@ If you need help, use our self-help options, or ask for help from support.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
-### See also
+## Related information
 [Power Automate Troubleshooting](/troubleshoot/power-platform/power-automate/welcome-power-automate)

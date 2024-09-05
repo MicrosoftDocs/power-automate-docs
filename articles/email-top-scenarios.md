@@ -73,7 +73,7 @@ You can further format the data by using expressions. In following example, the 
 
 - Add the [Send an email (V2)](/connectors/office365/) action, and then add the output from an HTML table into the body of the email.
 
-### See also
+## Related information
 
 - [Overview of using Outlook and Power Automate](email-overview.md)  
 - [Create flows to manage email](create-email-flows.md)  

@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: mattp123
 ms.topic: conceptual
-ms.date: 05/10/2024
+ms.date: 08/29/2024
 ms.author: iomavrid
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
@@ -142,7 +142,7 @@ You can use the following registry entry to allow users to select the organizati
 
 ## Configure Power Automate for desktop to connect to a region
 
-You can use the following registry entry to set the region where users will connect to by default during sign-in.
+You can use the following registry entry to set the region where users connect to by default during sign-in.
 
 > [!NOTE]
 > Values **0** and **1** apply to older versions of Power Automate for desktop, prior to version 2.41.
@@ -165,6 +165,9 @@ You can use the following registry entry to set the region where users will conn
 
 IT administrators can set the following registry key to configure how Power Automate interacts with a corporate proxy server.
 
+> [!IMPORTANT]
+> From Power Automate for desktop version 2.45, all proxy settings can be configured through the Power Automate proxy configuration files. Learn more at [Configure Power Automate for desktop proxy settings](./how-to/proxy-settings.md).
+
 | Hive | Key | Name | Type |
 |---|---|---|---|
 | HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | ProxyServer | String |
@@ -177,6 +180,9 @@ IT administrators can set the following registry key to configure how Power Auto
 
 IT administrators can set the following registry key to configure the Power Automate's bypassing of a corporate proxy server.
 
+> [!IMPORTANT]
+> From Power Automate for desktop version 2.45, all proxy settings can be configured through the Power Automate proxy configuration files. Learn more at [Configure Power Automate for desktop proxy settings](./how-to/proxy-settings.md).
+
 | Hive | Key | Name | Type |
 |---|---|---|---|
 | HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | DisableWindowsProxy | DWORD |
@@ -188,6 +194,9 @@ IT administrators can set the following registry key to configure the Power Auto
 ## Configure Power Automate for desktop to authenticate to a corporate proxy server using the current user's credentials
 
 IT administrators can set the following registry key to configure how Power Automate authenticates with a corporate proxy server.
+
+> [!IMPORTANT]
+> From Power Automate for desktop version 2.45, all proxy settings can be configured through the Power Automate proxy configuration files. Learn more at [Configure Power Automate for desktop proxy settings](./how-to/proxy-settings.md).
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -237,7 +246,7 @@ You can use the following registry entry to enable or disable the collection of 
 
 ***Value***
 
-- **0**: Power Automate for desktop won't collect optional diagnostic usage data.
+- **0**: Power Automate for desktop doesn't collect optional diagnostic usage data.
 - **1**: Power Automate for desktop collects optional diagnostic usage data.
 
 ## Prevent Power Automate for desktop from taking screenshots for action logs upon error
@@ -250,7 +259,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 ***Value***
 
-- **1**: Power Automate for desktop won't take a screenshot for the action logs when an error occurs during a flow run.
+- **1**: Power Automate for desktop doesn't take a screenshot for the action logs when an error occurs during a flow run.
 
 ## Prevent Power Automate for desktop from uploading action logs after a desktop flow execution
 
@@ -262,7 +271,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 ***Value***
 
-- **1**: Power Automate for desktop won't upload detailed action logs for the respective run of the flow's run history.
+- **1**: Power Automate for desktop doesn't upload detailed action logs for the respective run of the flow's run history.
 
 ## Configure or disable desktop flow action logs per environment (preview)
 
@@ -353,7 +362,7 @@ You can use the following registry entry to permit the use of the verbose loggin
 
 ***Value***
 
-- **1**: The verbose logging feature will be available to use via the troubleshooter of Power Automate for desktop.
+- **1**: The verbose logging feature is available to use via the troubleshooter of Power Automate for desktop.
 
 ## Turn on verbose logging state in Power Automate for desktop
 
@@ -365,7 +374,7 @@ You can use the following registry entry to turn on the verbose logging state fo
 
 ***Value***
 
-- **1**: The verbose logging state will be turned on for Power Automate for desktop.
+- **1**: The verbose logging state is turned on for Power Automate for desktop.
 
 ## Allow users to register their machine to a different tenant in Power Automate machine-runtime app
 
@@ -427,7 +436,7 @@ As a Power Platform admin you can prevent users from sending feedback to Microso
 
 To prevent your users from using any copilot capability contact Microsoft Customer Support to disable all copilot functionality in your tenant. More information: [Get Help + Support](/power-platform/admin/get-help-support)
 
-### See also
+## Related information
 
 - [Create Power Automate desktop flows](create-flow.md).
 - [Run desktop flows](run-desktop-flow.md).

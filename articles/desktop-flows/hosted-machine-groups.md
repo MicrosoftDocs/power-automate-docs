@@ -4,7 +4,7 @@ description: Learn how to create and use hosted machine groups to distribute you
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/01/2024
+ms.date: 07/16/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -549,7 +549,7 @@ The maximum number of hosted bots per hosted machine group is limited to 50.
 
 ### Delete unused resources
 
-We delete unused resources to ensure the service is available for everyone. Therefore, all hosted machine groups that are inactive for more than 28 days are automatically deleted. The deleted groups remain visible, but they can't be used. An inactive group is a group that hasn't run any desktop flows for the last 28 days.
+We delete unused resources to ensure the service is available for everyone. Therefore, all hosted machine groups that don't have a committed bot configured are automatically deleted if they remain inactive for more than 28 days. Although the deleted groups remain visible, they can't be used. An inactive group is defined as a group that hasn’t run any desktop flows in the last 28 days.
 
 > [!NOTE]
 > You must delete the hosted machine group and create a new one to continue using its features. You'll need to reconfigure the connection that's associated with your cloud flow.

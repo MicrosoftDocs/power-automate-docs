@@ -1,10 +1,10 @@
 ---
-title: Set a policy to help prevent data loss
+title: Data loss prevention (DLP) policy creation
 description: Learn about data loss prevention policies for Power Automate.
 services: ''
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 05/01/2024
+ms.date: 07/19/2024
 ms.author: cgarty
 author: ChrisGarty
 contributors:
@@ -14,13 +14,13 @@ ms.reviewer: angieandrews
 ms.custom: bap-template
 ---
 
-# Set a policy to help prevent data loss
+# Data loss prevention (DLP) policy creation
 
 An organization's data is critical to its success. Its data needs to be readily available for decision-making, but at the same time protected so that it isn't shared with audiences that shouldn't have access to it. To protect your business data, Power Automate gives you the ability to create and enforce policies that define which connectors can access and share it. The policies that define how data can be shared are referred to as data loss prevention (DLP) policies.
 
 Administrators control DLP policies. If a DLP policy is blocking your flows from running, contact your administrator.
 
-[Learn more about protecting your data with data loss prevention policies](/power-platform/admin/wp-data-loss-prevention).
+[Learn more about protecting your data with Power Platform data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention).
 
 ## Data loss prevention for desktop flows
 
@@ -28,7 +28,7 @@ Power Automate allows you to create and enforce DLP policies that classify deskt
 
 >[!IMPORTANT]
 >
-> - Enforcement of DLP policies is available for [Managed Environments](/power-platform/admin/managed-environment-overview) only. Starting September 2024, only desktop flows that are located in Managed Environments will be evaluated by DLP policies.
+> - Enforcement of DLP policies is available for [Managed Environments](/power-platform/admin/managed-environment-overview) only. Starting January 2025, only desktop flows that are located in Managed Environments will be evaluated by DLP policies.
 > - DLP for desktop flows is available for versions of Power Automate for desktop 2.14.173.21294 or later. If you're using an earlier version, uninstall it and update to the latest version.
 
 ### View desktop flow action groups
@@ -38,7 +38,7 @@ By default, desktop flow action groups don't appear when you're creating a DLP p
 If you've opted for the public preview, the **Desktop flow actions in DLP** setting is already enabled and can't be changed.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the left side panel, select **Settings**.
+1. On the left side panel, select **Settings**.
 1. On the **Tenant settings** page, select **Desktop flow actions in DLP**.
 1. Turn on **Show desktop flow actions in DLP policies**, and then select **Save**.
 
@@ -232,7 +232,7 @@ The following table lists DLP enforcement changes and the date the changes were 
 | May 2022 | Delegated authorization background job enforcement | DLP policies are enforced on flows that use delegated authorization while the flow is being saved, but not during background job evaluation. | Full |June 2, 2022 | July 21, 2022 |
 | May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have **type=Request** and **kind=apiConnection**. Many of the affected triggers are instant triggers, which are used in instant, or manually triggered, flows. The affected triggers include the following.<br/>- [Power BI](/connectors/powerbi/): Power BI button clicked<br/>- [Teams](/connectors/teams/): From the compose box (V2)<br/>- [OneDrive for Business](/connectors/onedriveforbusiness/): For a selected file<br/>- [Dataverse](/connectors/commondataserviceforapps/): When a flow step is run from a business process flow<br/>- [Dataverse (legacy)](/connectors/commondataservice/): When a record is selected<br/>- [Excel Online (Business)](/connectors/excelonlinebusiness/): For a selected row<br/>- [SharePoint](/connectors/sharepointonline/): For a selected item<br/>- Microsoft Copilot Studio: When Copilot Studio calls a flow (V2) | Full | June 2, 2022 | August 25, 2022 |
 | July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies to include child flows. If a violation is found anywhere in the flow tree, the parent flow is suspended. After the child flow is edited and saved to remove the violation, the parent flows can be resaved or reactivated to run the DLP policy evaluation again. A change to no longer block child flows when the HTTP connector is blocked will roll out along with full enforcement of DLP policies on child flows. Once full enforcement is available, the enforcement will include child desktop flows. | Full | February 14, 2023 | March 2023 |
-| January 2023 | Enforce DLP policies on child desktop flows | Enable the enforcement of DLP policies to include child desktop flows. If a violation is found anywhere in the flow tree, the desktop parent flow is suspended. After the child desktop flow is edited and saved to remove the violation, the parent desktop flows are automatically reactivated. | Learning | - | August 2023 |
+| January 2023 | Enforce DLP policies on child desktop flows | Enable the enforcement of DLP policies to include child desktop flows. If a violation is found anywhere in the flow tree, the desktop parent flow is suspended. After the child desktop flow is edited and saved to remove the violation, the parent desktop flows are automatically reactivated. | Full | - | August 2023 |
 
 *Availability schedule might change and depends on the rollout.
 
@@ -244,10 +244,11 @@ Suspended flows show as suspended in the Power Automate maker portal and the Pow
 
 [Learn about DLP known issues](/power-platform/admin/dlp-known-issues).
 
-### See also
+## Related information
 
-[Learn more about environments](environments-overview-admin.md)  
-[Learn more about Power Automate](getting-started.md)  
-[Learn more about the admin center](admin-center-introduction.md)  
+- [Power Platform DLP policies](/power-platform/admin/wp-data-loss-prevention)
+- [Learn more about environments](environments-overview-admin.md)  
+- [Learn more about Power Automate](getting-started.md)  
+- [Learn more about the admin center](admin-center-introduction.md)  
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]

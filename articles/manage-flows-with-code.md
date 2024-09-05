@@ -677,7 +677,7 @@ OData-Version: 4.0
 
 ---
 
-### See also
+## Related information
 
 [Entity class operations using the Organization service](/power-apps/developer/data-platform/org-service/entity-operations)  
 [Perform operations using the Web API](/power-apps/developer/data-platform/webapi/perform-operations-web-api)  
