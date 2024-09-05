@@ -13,12 +13,11 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 services: ''
 suite: flow
-ms.date: 04/09/2024
+ms.date: 09/04/2024
 search.audienceType: 
   - flowmaker
   - enduser
 ms.custom: bap-template
-ms.collection: bap-ai-copilot
 ---
 
 # Limits of automated, scheduled, and instant flows

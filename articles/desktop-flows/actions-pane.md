@@ -4,7 +4,7 @@ description: This section shows how to use the actions pane to deploy actions in
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/16/2024
+ms.date: 08/29/2024
 ms.author: iomavrid
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
@@ -55,7 +55,7 @@ Currently, the suggested actions functionality in Power Automate for desktop is 
 
 ### Using suggested actions in your flows
 
-The suggested actions functionality leverages AI to generate a list of actions that you could use as the next steps in your flow. To do so, select the add button that appears on mouse hover or when an action is selected.
+The suggested actions functionality uses AI to generate a list of actions that you could use as the next steps in your flow. To do so, select the add button that appears on mouse hover or when an action is selected.
 :::image type="content" source="media/suggested-actions/next_best_action.png" alt-text="Screenshot of the add actions via the suggested actions panel." lightbox="media/suggested-actions/next_best_action.png":::
 
 Once the **Suggested actions** panel appears, double-click the action that you want to add to your flow.
@@ -121,7 +121,7 @@ Disabling an action allows you to remove it from the flow without erasing it. Th
 
 When an action is disabled, all variables initialized in its modal get hidden from the variables pane. The flow might display an error if you use the hidden variables in other actions.
 
-In the example below, two actions throw an error because they contain variables defined in a disabled action. To find information on how to handle errors, go to [Handle errors in desktop flows](errors.md).
+In the following example, two actions throw an error because they contain variables defined in a disabled action. To find information on how to handle errors, go to [Handle errors in desktop flows](errors.md).
 
 :::image type="content" source="media/enabling-disabling-actions/enable-disable-action-variables.png" alt-text="Screenshot of an example in which disabling an action causes errors.":::
 
