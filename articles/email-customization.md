@@ -1,12 +1,11 @@
 ---
-title: Customize email in flows with Power Automate | Microsoft Docs
+title: Customize email in flows with Power Automate
 description: Learn how to use email in flows with Microsoft 365, email, or mail notification.
 suite: flow
-documentationcenter: na
 author: kisubedi
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 09/04/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
