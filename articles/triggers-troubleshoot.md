@@ -2,7 +2,6 @@
 title: Troubleshoot common issues with triggers
 description: Learn how to find and fix issues when your flows won't run.
 suite: flow
-documentationcenter: na
 author: kenseongtan
 contributors:
   - kisubedi
@@ -10,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 09/04/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot

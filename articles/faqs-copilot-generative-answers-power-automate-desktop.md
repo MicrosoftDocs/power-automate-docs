@@ -1,7 +1,7 @@
 ---
 title: FAQ for copilot generative answers in Power Automate for desktop
 description: This FAQ discusses copilot generative answers in Power Automate for desktop and the key considerations for making use of this technology responsibly.
-ms.date: 11/13/2023
+ms.date: 08/29/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -24,7 +24,7 @@ Copilot's generative answers capability answers product-related questions. Users
 
 Copilot's generative answers capability searches for answers to users' questions in Power Automate for desktop's public documentation using Azure OpenAI and Bing search.
 
-## What are copilot's generative answers intended use(s)?
+## What is copilot's generative answers intended use?
 
 The intended use of copilot's generative answers is to help users find quick and accurate answers to product-related questions without having to navigate away from Power Automate for desktop.
 
