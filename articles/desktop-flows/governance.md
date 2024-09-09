@@ -277,6 +277,23 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 See [Desktop flow action logs configuration (preview)](configure-desktop-flow-logs.md).
 
+## Configure the generation of desktop flow action logs on the local machine for designer-based runs 
+
+You can use the following registry entry to configure whether local Power Automate Desktop Designer runs should store their action logs on the local machine. This may be useful for debugging and troubleshooting scenarios, allowing you to examine the logs without checking each action's input and output individually.
+
+> [!NOTE]
+> This feature does not automatically clean up the logs generated during designer runs. Ensure that you have sufficient local disk space to store the logs or manually clean up older run data.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | EnableDesignerExecutionLogs | DWORD |
+
+***Value***
+
+- **1**: Enables persistence of Power Automate desktop execution logs on the local file system, without uploading them to Dataverse. Once a flow execution from Power Automate desktop desinger is completed, the execution logs can be found under path
+
+```\AppData\Local\Microsoft\Power Automate Desktop\Designer\Scripts\<scriptId>\Runs\<runId>\Actions.log```
+
 ## Configure Power Automate for desktop notification settings
 
 You can use the following registry entry to configure how Power Automate for desktop displays notifications and monitoring information.
