@@ -100,3 +100,26 @@ Below is a list of the various queue events supported by this feature.
 ### Queue event detail panel
 
   :::image type="content" source="media/monitor-run-details/Run-details-queue-event-details.png" alt-text="Screenshot of the queue event details panel listing queue events.":::
+
+## Storage location for queue events
+
+By default, queue event data is stored for 7 days (10,080 minutes). If you want to modify the duration of how long the queue events can be stored, you can update the [**The TTL for new desktop flow queue log records** in the **Organization** table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes) in an environment backed with Dataverse. Depending on your environment’s storage capacity, you can adjust the length of storage for these queue event records.
+
+The [DesktopFlowQueueLogsTtlInMinutes value on the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes) can be changed in the [PowerApps table browser](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel#view-tables) or using the [Dataverse Web API](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/13593424/25bd0eda-0dde-4378-9793-7090fbca5916).
+
+## Change queue event data retention time frames
+
+If the [DesktopFlowQueueLogsTtlInMinutes value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes) is changed, then the lifetime of any new **[FlowLog](/power-apps/developer/data-platform/reference/entities/flowlog)** record of type queue event is retained for that length of time. Lowering the value can reduce the number of [FlowLog](/power-apps/developer/data-platform/reference/entities/flowlog) records, and storage used, over time.
+
+## Time To Live (TTL) value calculation examples
+
+Time to live (TTL) values for [Organization.DesktopFlowQueueLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes) and [FlowLog.TTLInSeconds](/power-apps/developer/data-platform/reference/entities/flowlog#BKMK_TTLInSeconds) are specified in minutes. The following table contains common values that can be used in the Organization and FlowLog tables.
+
+|Days  |Minutes  |
+|---------|---------|
+|1 day |1,140 minutes|
+|3 days |4,320 minutes|
+|7 day |10,080 minutes|
+|14 days |20,160 minutes|
+|28 days |40,320 minutes|
+|60 days |68,400 minutes|
