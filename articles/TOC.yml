@@ -377,6 +377,8 @@
       href: ./desktop-flows/getting-started-org.md
   - name: Create desktop flows
     href: ./desktop-flows/create-flow.md
+  - name: Create desktop flows using the AI Recorder
+    href: ./desktop-flows/create-flow-using-ai-recorder.md
   - name: Copilot in Power Automate for desktop (preview)
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
   - name: Run desktop flows
@@ -401,7 +403,7 @@
         href: ./desktop-flows/run-desktop-flows-via-keyboard-shortcuts.md       
       - name: Runtime notifications
         href: ./desktop-flows/runtime-notifications.md
-    - name: Run desktop flows in Picture-in-Picture (preview)
+    - name: Run desktop flows in picture-in-picture
       href: ./desktop-flows/run-desktop-flows-pip.md
   - name: Manage machines and machine groups
     items:
@@ -636,6 +638,8 @@
       href: ./desktop-flows/how-to/proxy-settings.md
     - name: Reduce desktop flow size in solution
       href: ./desktop-flows/how-to/reduce-flow-size.md
+    - name: Restore a deleted desktop flow
+      href: ./desktop-flows/how-to/restore-deleted-desktop-flow.md
     - name: Use logical operations on conditional statements
       href: ./desktop-flows/how-to/logical-operations-conditional-statements.md
     - name: Use passwords

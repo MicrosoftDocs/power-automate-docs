@@ -2,13 +2,13 @@
 title: Create a cloud flow in Power Automate
 description: Learn how to create a cloud flow that automatically performs one or more actions, such as sending email, when events like someone adding a row to a SharePoint list occur.
 suite: flow
-author: natalie-pienkowska
+author: kisubedi
 contributors:
   - kisubedi
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 09/04/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 

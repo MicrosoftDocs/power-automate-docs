@@ -4,7 +4,7 @@ description: Learn about the available Cloud Connector operations in Power Autom
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 05/24/2024
+ms.date: 08/27/2024
 ms.author: dipapa
 ms.reviewer: 
 contributors:
@@ -44,7 +44,7 @@ search.audienceType:
 - To enable attended or unattended runs (cloud-initiated runs), make sure your desktop flow uses the [Power Automate v2 schema](../schema.md) and all connection references are marked as embedded.
 - Connection reference embedding is only available for co-owners. Users (run-only) can execute flows shared with them only via Power Automate for desktop's console using their own connections.
 - Desktop flows with embedded connection references don't currently support application lifecycle management (ALM) capabilities.
-- [Microsoft Dataverse (preview)](/connectors/commondataserviceforapps) has the following limitations:
+- [Microsoft Dataverse](/connectors/commondataserviceforapps) has the following limitations:
   - The connector is currently available only for desktop flows in the public cloud.
   - The following actions are currently supported in desktop flows:
     - [Add a new row to selected environment](/connectors/commondataserviceforapps/#add-a-new-row-to-selected-environment)
@@ -106,7 +106,7 @@ All co-owners and run-only users are required to bring your own connection (BYOC
 
 Here's a list of in Cloud Connectors in Power Automate for desktop currently available:
 
-- [Microsoft Dataverse (preview)](/connectors/commondataserviceforapps)
+- [Microsoft Dataverse](/connectors/commondataserviceforapps)
 - [SharePoint](/connectors/sharepointonline)
 - [Excel Online (Business)](/connectors/excelonline)
 - [Microsoft Forms](/connectors/microsoftforms)
