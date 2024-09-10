@@ -431,6 +431,8 @@
       href: ./desktop-flows/create-cyberark-credential.md
   - name: Create desktop flow connections
     href: ./desktop-flows/desktop-flow-connections.md
+  - name: Allowlist tenants for connect with sign-in connections
+    href: ./desktop-flows/how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Work queues
