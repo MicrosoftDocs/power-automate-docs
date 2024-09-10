@@ -307,7 +307,7 @@ You can connect to your own virtual network with your hosted machines to securel
 > [!NOTE]
 > You can have up to 30 custom virtual networks configured per tenant.
 
-### General network requirement
+### General network requirements
 
 To use your own network with hosted machines, you must meet the following requirements:
 
@@ -316,7 +316,7 @@ To use your own network with hosted machines, you must meet the following requir
 - A subnet within the virtual network and available IP address space.
 - [Allow network connectivity](/windows-365/enterprise/requirements-network) to required services.
 
-The virtual network needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
+The virtual network needs to be created in the same location as your hosted machines. You can find the following mapping with your environment Geo:
 
 - Australia: Australia East
 - Asia: East Asia
@@ -413,7 +413,7 @@ The last step before being able to reference your virtual network from Power Aut
     - **Network connection name:** A unique name to identify the network connection.
     - **Description:** An optional description for the network connection.
 
-1. Select one of the **Azure virtual network** available in Azure that meets the network requirement.
+1. Select one of the **Azure virtual network** available in Azure that meets the network requirements.
 
 1. Select the **Subnet** the hosted machine uses.
 
