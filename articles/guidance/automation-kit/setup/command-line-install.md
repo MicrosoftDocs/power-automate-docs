@@ -11,7 +11,6 @@ ms.topic: conceptual
 ms.date: 07/01/2024
 ms.author: grarchib
 ms.reviewer: angieandrews
-ms.collection: bap-ai-copilot
 ---
 
 # Install the automation kit using the command line
