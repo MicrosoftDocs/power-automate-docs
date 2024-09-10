@@ -251,6 +251,156 @@ The last step before using your image in Power Automate is to share the image wi
 > [!NOTE]
 > When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
 
+## Use a custom virtual network for your hosted machine groups (preview)
+
+You can connect to your own virtual network with your hosted machines to securely communicate with each other, the Internet, and on-premises networks. Providing your own virtual network from your Azure subscription allows your hosted machines to be provisioned with your virtual network automatically.
+
+> [!NOTE]
+> You can have up to 30 custom virtual networks configured per tenant.
+
+### General network requirement
+
+To use your own network and provision Microsoft Entra joined hosted machines, you must meet the following requirements:
+
+- You must have a virtual network in your Azure subscription in the same region where you created the hosted machines.
+- Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
+- A subnet within the virtual network and available IP address space.
+- [Allow network connectivity](/windows-365/enterprise/requirements-network) to required services.
+
+The virtual network needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
+
+- Australia: Australia East
+- Asia: East Asia
+- Brazil: Brazil South
+- Canada: Canada Central
+- Europe: North Europe
+- France: France Central
+- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com) 
+- India: Central India
+- Japan: Japan East
+- Korea: Korea Central
+- Norway: Norway East
+- Switzerland: Switzerland North
+- United Arab Emirates: UAE North
+- United Kingdom: UK South
+- United States: East US
+
+### Additional requirements for Microsoft Entra hybrid joined hosted machines (preview)
+
+[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
+
+If your organization has an on-premises Active Directory implementation and you want your hosted machines to be joined to it, you can accomplish this task with Microsoft Entra hybrid join.
+
+[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+
+To use your own network and provision Microsoft Entra hybrid joined machines, you must meet the following requirements:
+
+#### Domain requirements
+
+- You must configure your infrastructure to automatically Microsoft Entra hybrid join any devices that domain joins to the on-premises Active Directory. This [configuration lets them be recognized and managed in the cloud](/azure/active-directory/devices/overview).
+- Microsoft Entra hybrid joined hosted machines require network line of sight to your on-premises domain controllers periodically. Without this connection, devices become unusable. For more information, see [Plan your Microsoft Entra hybrid join deployment](/azure/active-directory/devices/hybrid-join-plan).
+- If an organizational unit is specified, ensure it exists and is valid.
+- An Active Directory user account with sufficient permissions to join the computer into the specified organizational unit within the Active Directory domain. If you don't specify an organizational unit, the user account must have sufficient permissions to join the computer to the Active Directory domain.
+- User accounts that are creators of hosted machines must have a synced identity available in both Active Directory and Microsoft Entra ID.
+
+#### Role and identity requirements
+
+Hosted machines users must be configured with [hybrid identities](/azure/active-directory/hybrid/whatis-hybrid-identity) so that they can authenticate with resources both on-premises and in the cloud.
+
+#### DNS requirements
+
+As part of the Microsoft Entra hybrid join requirements, your hosted machines must be able to join on-premises Active Directory. That requires that the hosted machines be able to resolve DNS records for your on-premises AD environment.
+Configure your Azure Virtual Network where the hosted machines are provisioned as follows:
+
+1. Make sure your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
+1. From the Azure Virtual Network's Settings, select DNS Servers and then choose Custom.
+1. Enter the IP address of DNS servers that environment that can resolve your AD DS domain.
+
+### Share the virtual network with Windows 365 service principal
+
+To use your virtual network for hosted machines, you need to grant Windows 365 service principal with the following permissions:
+
+- Reader permission on the Azure subscription
+- Windows 365 Network Interface Contributor permission on the specified resource group
+- Windows 365 Network User permission on the virtual network
+
+> [!NOTE]
+> For virtual networks created before November 26, 2023, the Network Contributor role is used to apply permissions on both the resource group and virtual network. The new RBAC roles have more specific permissions. To manually remove the existing roles and add the new roles, refer to the following table for the existing roles used on each Azure resource. Before removing the existing roles, make sure that the updated roles are assigned.
+>
+> | Azure resource | Existing role (before November 26, 2023) | Updated role (after November 26, 2023) |
+> | --- | --- | --- |
+> | Resource group | Network Contributor | Windows 365 Network Interface Contributor |
+> | Virtual network | Network Contributor | Windows 365 Network User |
+> | Subscription | Reader | Reader |
+
+### Share the virtual network with Power Automate makers
+
+The last step before being able to reference your virtual network from Power Automate is to share the virtual network with the Power Automate makers.
+
+1. Go to the [Azure portal](https://portal.azure.com/).
+
+1. In the Azure portal, go to your **Virtual network**.
+
+1. Go to the **Access Control (IAM)** settings.
+
+1. Select **Add** > **Add role assignment**.
+
+1. Assign at least **Reader** permissions access to the Power Automate makers you want to share the virtual network with. Then select **Next**.
+
+1. Select **Select members** and search for the Power Automate makers you want to share with.
+
+1. Once you selected all the members to add, review the permissions and users, and assign them.
+
+### Add a new network connection
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+
+1. Go to **Monitor** > **Machines**.
+
+1. Select **New** > **Network connection**.
+
+1. Enter a network connection name, a description, and the usage.
+
+    - **Network connection name:** A unique name to identify the network connection.
+    - **Description:** An optional description for the network connection.
+
+1. Select one of the **Azure virtual network** available in Azure that meets the network requirement.
+
+1. Select the **Subnet** the hosted machine uses.
+
+1. Select the **Domain join type** the machine uses.
+
+1. If the **'Microsoft Entra hybrid join (preview)'** is selected, the following information is required:
+   - **DNS domain name** : The DNS name of the Active Directory domain you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
+   - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain, which can hold users, groups, and computers. Make sure that this OU is enabled to sync with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
+   - **Username UPN** : The username, in user principal name (UPN) format, you want to use for connecting the hosted machines to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
+   - **Domain password** : The password for the user.
+    > [!NOTE]
+    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join (preview) domain join type.
+
+:::image type="content" source="media/hosted-machines/create-network-connection.png" alt-text="Screenshot of the New network connection dialog.":::
+
+### Share the network connection
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+
+1. Go to **Monitor** > **Machines** > **Network connection**.
+
+1. Select the network connection you created.
+
+1. Select **Manage access**.
+
+1. Select **Add people** and enter the names of the persons in your organization with whom you’d like to share the network connection.
+
+1. Select the names of the persons and choose which permissions they can access the network connection with.
+
+1. Select **Save**.
+
+:::image type="content" source="media/hosted-machines/share-network-connection.png" alt-text="Screenshot of the Manage access of the network connection.":::
+
+> [!NOTE]
+> When a user isn't part of an environment anymore, you can continue to see the user as deactivated. You are notified in the **Manage access** section of the network connection if it's shared with deactivated users. In this situation, remove access to them.
+
 ## View list of hosted machine groups
 
 Once you've created your hosted machine group in an environment, you can view its details in the Power Automate portal.
