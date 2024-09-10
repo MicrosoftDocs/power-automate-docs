@@ -253,7 +253,11 @@ The last step before using your image in Power Automate is to share the image wi
 
 ## Use a custom virtual network for your hosted machine groups (preview)
 
-You can connect to your own virtual network with your hosted machines to securely communicate with each other, the Internet, and on-premises networks. Providing your own virtual network from your Azure subscription allows your hosted machines to be provisioned with your virtual network automatically.
+[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
+
+[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+
+You can connect to your own virtual network with your hosted machine groups to securely communicate with each other, the Internet, and on-premises networks. Providing your own virtual network from your Azure subscription allows your hosted machine groups to be provisioned with your virtual network automatically.
 
 > [!NOTE]
 > You can have up to 30 custom virtual networks configured per tenant.
@@ -265,7 +269,7 @@ To use your own network and provision Microsoft Entra joined hosted machines, yo
 - You must have a virtual network in your Azure subscription in the same region where you created the hosted machines.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
 - A subnet within the virtual network and available IP address space.
-- [Allow network connectivity](/windows-365/enterprise/requirements-network) to required services.
+- [Allow network connectivity](/power-automate/ip-address-configuration#desktop-flows-services-required-for-runtime) to required services.
 
 The virtual network needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
 
