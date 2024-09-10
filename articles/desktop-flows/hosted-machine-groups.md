@@ -109,6 +109,8 @@ To create a hosted machine group:
 
     - Select the **VM image** to use for your hosted machine group. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
+    - Select the **network connection (preview) (optional)** to use for your hosted machine group. 
+
     - Select how you would like to **access** your hosted machine group. You can use your [work or school account](#use-your-work-or-school-account) or use a local admin account you want created. This account is used to run your automations by the bots.
 
      > [!NOTE]
@@ -166,12 +168,8 @@ Learn how to create a generalized VM image in Azure in [Upload a generalized Win
     - Southeast Asia - Singapore
     - Switzerland: Switzerland North
     - United Arab Emirates: UAE North
-    - United Kingdom: UK West (UK South from May 2nd, 2024)
-    - United States: West US (East US from May 2nd, 2024)
-
-> [!IMPORTANT]
->
-> Starting May 2nd, 2024, we will be updating the region mapping for environments in the United States and United Kingdom to ensure our services are deployed in regions with Azure Availability Zones support. For more information, see the [geographic availability and restrictions](#geographic-availability-and-restrictions).
+    - United Kingdom: UK South
+    - United States: East US
 
 ### Share the Azure compute gallery with Power Automate Hosted Machine Groups service principal
 
@@ -271,71 +269,49 @@ To use your own network and provision Microsoft Entra joined hosted machines, yo
 - A subnet within the virtual network and available IP address space.
 - [Allow network connectivity](/power-automate/ip-address-configuration#desktop-flows-services-required-for-runtime) to required services.
 
-The virtual network needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
+The virtual network needs to be created in the same location with your hosted machine groups. Following are the currently supported Power Platofrm geographies and their region mapping:
 
-- Australia: Australia East
 - Asia: East Asia
 - Brazil: Brazil South
-- Canada: Canada Central
 - Europe: North Europe
-- France: France Central
-- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com) 
 - India: Central India
 - Japan: Japan East
-- Korea: Korea Central
-- Norway: Norway East
-- Switzerland: Switzerland North
-- United Arab Emirates: UAE North
-- United Kingdom: UK South
 - United States: East US
 
-### Additional requirements for Microsoft Entra hybrid joined hosted machines (preview)
+> [!NOTE]
+> We are continuing to roll out support to more Power Platform geographies. Please send your request to hostedrpa@microsoft.com if you have a specific request.
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
 
-If your organization has an on-premises Active Directory implementation and you want your hosted machines to be joined to it, you can accomplish this task with Microsoft Entra hybrid join.
+### Share the virtual network with Power Automate Hosted Machine Groups service principal
 
-[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+To use your virtual network for hosted machine groups, you need to share the virtual network with Power Automate through the Azure portal.
 
-To use your own network and provision Microsoft Entra hybrid joined machines, you must meet the following requirements:
+1. In the [Azure portal](https://portal.azure.com/), go to your Virtual Network
 
-#### Domain requirements
+1. Go to the **Access Control (IAM)** settings.
 
-- You must configure your infrastructure to automatically Microsoft Entra hybrid join any devices that domain joins to the on-premises Active Directory. This [configuration lets them be recognized and managed in the cloud](/azure/active-directory/devices/overview).
-- Microsoft Entra hybrid joined hosted machines require network line of sight to your on-premises domain controllers periodically. Without this connection, devices become unusable. For more information, see [Plan your Microsoft Entra hybrid join deployment](/azure/active-directory/devices/hybrid-join-plan).
-- If an organizational unit is specified, ensure it exists and is valid.
-- An Active Directory user account with sufficient permissions to join the computer into the specified organizational unit within the Active Directory domain. If you don't specify an organizational unit, the user account must have sufficient permissions to join the computer to the Active Directory domain.
-- User accounts that are creators of hosted machines must have a synced identity available in both Active Directory and Microsoft Entra ID.
+1. Select **Add** > **Add role assignment**.
 
-#### Role and identity requirements
-
-Hosted machines users must be configured with [hybrid identities](/azure/active-directory/hybrid/whatis-hybrid-identity) so that they can authenticate with resources both on-premises and in the cloud.
-
-#### DNS requirements
-
-As part of the Microsoft Entra hybrid join requirements, your hosted machines must be able to join on-premises Active Directory. That requires that the hosted machines be able to resolve DNS records for your on-premises AD environment.
-Configure your Azure Virtual Network where the hosted machines are provisioned as follows:
-
-1. Make sure your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
-1. From the Azure Virtual Network's Settings, select DNS Servers and then choose Custom.
-1. Enter the IP address of DNS servers that environment that can resolve your AD DS domain.
-
-### Share the virtual network with Windows 365 service principal
-
-To use your virtual network for hosted machines, you need to grant Windows 365 service principal with the following permissions:
-
-- Reader permission on the Azure subscription
-- Windows 365 Network Interface Contributor permission on the specified resource group
-- Windows 365 Network User permission on the virtual network
+1. Select the role **Network Contributor** and search for the Hosted machine group application: **Power Automate Hosted Machine Groups**. 
 
 > [!NOTE]
-> For virtual networks created before November 26, 2023, the Network Contributor role is used to apply permissions on both the resource group and virtual network. The new RBAC roles have more specific permissions. To manually remove the existing roles and add the new roles, refer to the following table for the existing roles used on each Azure resource. Before removing the existing roles, make sure that the updated roles are assigned.
->
-> | Azure resource | Existing role (before November 26, 2023) | Updated role (after November 26, 2023) |
-> | --- | --- | --- |
-> | Resource group | Network Contributor | Windows 365 Network Interface Contributor |
-> | Virtual network | Network Contributor | Windows 365 Network User |
-> | Subscription | Reader | Reader |
+> If you can't find the application above, verify that the application exists in your tenant and provision it if necessary.
+> To verify that the application exists, go to [Azure portal](https://portal.azure.com/) > **Microsoft Entra** > **Enterprise applications** > **All applications**, and search for application id: **51699864-8078-4c9e-a688-09a1db1b2e09**. If you can't find the application, provision it using the following command:
+> ```
+> az ad sp create --id 51699864-8078-4c9e-a688-09a1db1b2e09
+> ```
+
+
+### Delegate subnet to Microsoft.PowerAutomate/hostedRpa
+
+To use your the subnet configured in your virtual network for hosted machine groups, you need to perform subnet delegration to the **Microsoft.PowerAutomate/hostedRpa** service.
+
+1. In the [Azure portal](https://portal.azure.com/), go to your subnet
+
+1. Go to the **Subnet Delegation** section.
+
+1. Select **Microsoft.PowerAutomate/hostedRpa** from the dropdown list. 
+
 
 ### Share the virtual network with Power Automate makers
 
@@ -355,6 +331,7 @@ The last step before being able to reference your virtual network from Power Aut
 
 1. Once you selected all the members to add, review the permissions and users, and assign them.
 
+
 ### Add a new network connection
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
@@ -367,22 +344,12 @@ The last step before being able to reference your virtual network from Power Aut
 
     - **Network connection name:** A unique name to identify the network connection.
     - **Description:** An optional description for the network connection.
+    - **Use with:** Select the hosted machine group (preview) 
 
 1. Select one of the **Azure virtual network** available in Azure that meets the network requirement.
 
-1. Select the **Subnet** the hosted machine uses.
+1. Select the **Subnet** the hosted machine groups will use.
 
-1. Select the **Domain join type** the machine uses.
-
-1. If the **'Microsoft Entra hybrid join (preview)'** is selected, the following information is required:
-   - **DNS domain name** : The DNS name of the Active Directory domain you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
-   - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain, which can hold users, groups, and computers. Make sure that this OU is enabled to sync with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
-   - **Username UPN** : The username, in user principal name (UPN) format, you want to use for connecting the hosted machines to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
-   - **Domain password** : The password for the user.
-    > [!NOTE]
-    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join (preview) domain join type.
-
-:::image type="content" source="media/hosted-machines/create-network-connection.png" alt-text="Screenshot of the New network connection dialog.":::
 
 ### Share the network connection
 
