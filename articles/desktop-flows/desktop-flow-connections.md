@@ -4,7 +4,7 @@ description: See how to create connections to trigger desktop flows from cloud f
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/24/2024
+ms.date: 09/10/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -64,14 +64,11 @@ With this option, you don't need to provide session credentials. This option mig
 
 To use connection with sign-in, you need to meet the following prerequisites:
 
-- Microsoft Entra users must be in the same tenant as the selected environment in the Power Automate portal.
-- The target (machine / group) should be Microsoft Entra ID or AD joined. If there's a Microsoft Entra ID joined target, the machine or group must be synchronized with Microsoft Entra ID.
-- The Microsoft Entra user account must be granted permission to open a Windows session on the target machines (interactive sign in). At runtime, there should a Windows interaction session matching the connection user in order to process the run (as it's today for existing connections).
+- Microsoft Entra ID users must be in the same tenant as the selected environment in the Power Automate portal.
+- The target (machine / group) should be Microsoft Entra joined or AD domain-joined. Microsoft Entra joined targets must be synchronized with Microsoft Entra ID.
+- If the target is AD domain-joined but not Entra joined, you must [allowlist your Power Platform tenant](how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md).
+- The Microsoft Entra user account must be granted permission to open a Windows session on the target machines (interactive sign in). At runtime, there should be a Windows user session matching the connection user opened on the machine in order to process the run (same as running attended with other connection types).
 - The tenant of the target Microsoft Entra account is configured to use modern [Authentication with Microsoft Entra ID](/azure/well-architected/).
-
-> [!NOTE]
-> For GCCH, DOD, and China regions, the December version of the Power Automate for desktop app is required.
-> For GCC, the July version of the Power Automate for desktop app is required.
 
 ### Set up the connection with sign-in
 
@@ -82,18 +79,19 @@ To set up a connection with sign-in:
 1. Select **Sign in**.
 1. Pick or provide an **Microsoft Entra account** in the sign in pop-up.
 
-The desktop flow connect is automatically created.
+The desktop flow connection is automatically created.
 
 ### How it works
 
-- An access / refresh token is created during the Microsoft Entra authentication.
-- The token scope is limited to executing a desktop flow.
-- The Power Platform services manage the refresh of those tokens.
+- An access / refresh token is created by the Microsoft Entra ID authentication during connection creation.
+- The created token's scope is limited to executing desktop flows.
+- The Power Platform services manage these tokens.
 
 ### Limitations
 
-- Connect with sign-in (preview) works only for attended runs. Running unattended with this connection fails.
+- Connect with sign-in works only for attended runs. Running unattended with this kind of connection will fail.
 - Queue time duration is limited to one hour.
+- On AD-joined but not Entra-joined machines, you must [allowlist your Power Platform tenant](how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md) for your machine to trust passwordless tokens from that tenant. If your tenant is not allowlisted, connect with sign-in runs will most likely fail with **UnallowedTenantForConnectWithSignIn** errors, and connect with sign-in connection creation and testing will fail with either **Invalid Credentials** or **Tenant [tenantId] needs to be explicitly allowlisted to authorize 'connect with sign-in' runs on the machine** error messages.
 
 > [!IMPORTANT]
 > If you consistently encounter issues when creating a connection on a new machine, first try to remove it, and then [register it](/power-automate/desktop-flows/manage-machines#register-a-new-machine) again.
