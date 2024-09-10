@@ -1,7 +1,7 @@
 ---
 title: FAQ for Process Mining's Microsoft 365 personal recommendations
 description: This FAQ discusses how Microsoft 365 personal recommendations found on the Power Automate home page help you accelerate your adoption of cloud flows and automate your personal processes.
-ms.date: 06/06/2024
+ms.date: 09/10/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: conceptual
