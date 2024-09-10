@@ -309,7 +309,7 @@ You can connect to your own virtual network with your hosted machines to securel
 
 ### General network requirement
 
-To use your own network and provision Microsoft Entra joined hosted machines, you must meet the following requirements:
+To use your own network with hosted machines, you must meet the following requirements:
 
 - You must have a virtual network in your Azure subscription in the same region where you created the hosted machines.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
