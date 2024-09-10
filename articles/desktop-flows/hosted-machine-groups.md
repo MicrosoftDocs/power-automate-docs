@@ -260,7 +260,7 @@ You can connect to your own virtual network with your hosted machine groups to s
 > [!NOTE]
 > You can have up to 30 custom virtual networks configured per tenant.
 
-### General network requirement
+### General network requirements
 
 To use your own network and provision Microsoft Entra joined hosted machine groups, you must meet the following requirements:
 
@@ -269,7 +269,7 @@ To use your own network and provision Microsoft Entra joined hosted machine grou
 - A subnet within the virtual network and available IP address space.
 - [Allow network connectivity](/power-automate/ip-address-configuration#desktop-flows-services-required-for-runtime) to required services.
 
-The virtual network needs to be created in the same location with your hosted machine groups. Following are the currently supported Power Platofrm geographies and their region mapping:
+The virtual network needs to be created in the same location as your hosted machine groups. Following are the currently supported Power Platfrom geographies and their region mapping:
 
 - Asia: East Asia
 - Brazil: Brazil South
@@ -304,7 +304,7 @@ To use your virtual network for hosted machine groups, you need to share the vir
 
 ### Delegate subnet to Microsoft.PowerAutomate/hostedRpa
 
-To use your the subnet configured in your virtual network for hosted machine groups, you need to perform subnet delegration to the **Microsoft.PowerAutomate/hostedRpa** service.
+To use the subnet configured in your virtual network for hosted machine groups, you need to perform subnet delegation to the **Microsoft.PowerAutomate/hostedRpa** service.
 
 1. In the [Azure portal](https://portal.azure.com/), go to your subnet
 
@@ -346,7 +346,7 @@ The last step before being able to reference your virtual network from Power Aut
     - **Description:** An optional description for the network connection.
     - **Use with:** Select the hosted machine group (preview) 
 
-1. Select one of the **Azure virtual network** available in Azure that meets the network requirement.
+1. Select one of the **Azure virtual network** available in Azure that meets the network requirements.
 
 1. Select the **Subnet** the hosted machine groups will use.
 
