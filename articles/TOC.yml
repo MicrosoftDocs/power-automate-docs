@@ -532,7 +532,7 @@
       href: /dotnet/api/?view=pad-actions-sdk-latest&preserve-view=true
     - name: Build custom actions in Power Automate for desktop
       href: ./guidance/how-to/build-custom-action/buildcustomaction.md
-  - name: UI elements collections (preview)
+  - name: UI elements collections
     items:
     - name: UI elements collections
       href: ./desktop-flows/ui-elements-collections.md
