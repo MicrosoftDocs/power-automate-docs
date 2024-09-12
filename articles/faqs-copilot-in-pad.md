@@ -26,7 +26,7 @@ Copilot in Power Automate for desktop can be used in multiple scenarios. The sys
 
 - Creating flows using natural language instructions: From the Power Automate for desktop’s console or designer, you can create a new flow by describing your automation in the Copilot’s chat area.
 - Add steps to an existing desktop flow: From the Power Automate for desktop’s designer, you can add one or more actions to your flow by describing them in the Copilot’s chat area.
-- Answer documentation questions about Power Automate for desktop: From the Power Automate for desktop’s consoloe or designer, you can ask product related questions in the Copilot's chat area.
+- Answer documentation questions about Power Automate for desktop: From the Power Automate for desktop’s console or designer, you can ask product related questions in the Copilot's chat area.
 ## What is the system’s intended use(s)?
 
 - Copilot can help you create new flows or add actions to an existing flow with ease without having to manually add the actions.
