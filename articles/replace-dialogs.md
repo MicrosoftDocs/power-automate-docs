@@ -116,7 +116,7 @@ Can workflows be called from a canvas app?
 Can I automatically convert dialogs to business process flows or canvas apps?
 - There is no automated way to convert dialogs to business process flows or canvas apps.
 
-### See also
+## Related information
 
 - [Tutorial: Create a business process flow to standardize processes](create-business-process-flow.md) </br>
 - [What are canvas apps in Power Apps?](/powerapps/maker/canvas-apps/getting-started)

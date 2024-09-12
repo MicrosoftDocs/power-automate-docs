@@ -248,7 +248,7 @@ Microsoft strives to maintain functional parity between our commercially availab
 
 There are exceptions to the principle of maintaining product functional parity within the US Government clouds. For more information about feature availability, download this file: [Business Applications US Government - Availability Summary](https://aka.ms/BAPFunctionalParity).
 
-### See also
+## Related information
 
 - [Desktop flows](./desktop-flows/introduction.md).
 

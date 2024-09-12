@@ -40,7 +40,7 @@ Custom actions exist at the environment level. As a best practice, use a "dev&md
 
 [Create custom actions](create-custom-actions.md)
 
-### See also
+## Related information
 
 - [Assets library](assets-library.md)
 - [Upload custom actions](upload-custom-actions.md)

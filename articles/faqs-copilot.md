@@ -1,7 +1,7 @@
 ---
 title: FAQ for Copilot in cloud flows
 description: This FAQ discusses copilot in cloud flows and the key considerations for making use of this technology responsibly.
-ms.date: 07/02/2024
+ms.date: 09/10/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: conceptual
@@ -63,7 +63,7 @@ Copilot is available only in the new designer. When editing a flow, you can choo
 
 If you're using the new designer, all changes done by copilot should be reviewed in the designer. You can undo your changes.
 
-## See also
+## Related information
 
 - [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
 - [Use Copilot to analyze desktop flow activity (preview)](./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)

@@ -146,7 +146,7 @@ Status transitions rules have been established in order to optimize the lifecycl
 > [!div class="nextstepaction"]
 > [Learn how to process work queues](work-queues-process.md)
 
-## See also
+## Related information
 
 - [Work queue overview](work-queues.md)
 - [Manage work queues](work-queues-manage.md)
