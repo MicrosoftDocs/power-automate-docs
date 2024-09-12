@@ -55,7 +55,7 @@ The run status is a timeline that allows to understand how works a desktop flow 
 
 It might be critical for your orchestration to identify if a step took too much time or if a desktop flow always fails during the same step.
 
-  :::image type="content" source="media/monitor-run-details/Run-details-timeline.png" alt-text="Screenshot of the run details timeline.":::
+  :::image type="content" source="media/monitor-run-details/run-details-timeline.png" alt-text="Screenshot of the run details timeline.":::
 
 ## Actions details
 
@@ -75,7 +75,7 @@ By default, the actions are sorted from the latest to the earliest. If you donâ€
 
 The queue event list provides a detailed overview of lifecycle events for desktop flow runs. It includes the status and progress of each flow run, along with corresponding machine queue events, enabling users to monitor and understand every stage of the process.
 
-  :::image type="content" source="media/monitor-run-details/Run-details-queue-events.png" alt-text="Screenshot of the run details page with the view queue events hyperlink.":::
+  :::image type="content" source="media/monitor-run-details/run-details-queue-events.png" alt-text="Screenshot of the run details page with the view queue events hyperlink.":::
   
 > [!NOTE]
 >
@@ -100,7 +100,7 @@ The following table lists the various queue events supported by this feature.
 
 ### Queue event detail panel
 
-  :::image type="content" source="media/monitor-run-details/Run-details-queue-event-details.png" alt-text="Screenshot of the queue event details panel listing queue events.":::
+  :::image type="content" source="media/monitor-run-details/run-details-queue-event-details.png" alt-text="Screenshot of the queue event details panel listing queue events.":::
 
 ## Storage location for queue events
 
