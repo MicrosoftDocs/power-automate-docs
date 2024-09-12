@@ -18,7 +18,7 @@ These frequently asked questions (FAQ) describe the AI impact of the Copilot fun
 
 ## What is Copilot in Power Automate for desktop?
 
-Power Automate for desktop offers a new way of building desktop flows by the help of an AI assistant. Copilot in Power Automate for desktop stays with you in your flow-building journey and helps you build flows from scratch or by adding the next steps to your existing automation through an interactive chat experience. Simply, describe the flow that you want to create, and Copilot generates all the necessary actions on your behalf. It can also help you by answering desktop flow and product-related questions.
+Power Automate for desktop offers a new way of building desktop flows by the help of an AI assistant. Copilot in Power Automate for desktop accompanies you throughout your flow-building journey, assisting you in creating flows from scratch or enhancing your existing automation with new steps through an interactive chat experience. Simply, describe the flow that you want to create, and Copilot generates all the necessary actions on your behalf. It can also help you by answering desktop flow and product-related questions.
 
 ## What can Copilot in Power Automate for desktop do?
 
