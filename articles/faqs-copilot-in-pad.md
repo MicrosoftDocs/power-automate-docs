@@ -1,7 +1,7 @@
 ---
 title: FAQ for Copilot in Power Automate desktop
 description: This FAQ discusses Copilot in Power Automate desktop and the key considerations for making use of this technology responsibly.
-ms.date: 07/18/2024
+ms.date: 09/16/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: conceptual
@@ -27,7 +27,8 @@ Copilot in Power Automate for desktop can be used in multiple scenarios. The sys
 - Creating flows using natural language instructions: From the Power Automate for desktop’s console or designer, you can create a new flow by describing your automation in the Copilot’s chat area.
 - Add steps to an existing desktop flow: From the Power Automate for desktop’s designer, you can add one or more actions to your flow by describing them in the Copilot’s chat area.
 - Answer documentation questions about Power Automate for desktop: From the Power Automate for desktop’s console or designer, you can ask product related questions in the Copilot's chat area.
-## What is the system’s intended use(s)?
+
+## What are the system’s intended uses?
 
 - Copilot can help you create new flows or add actions to an existing flow with ease without having to manually add the actions.
 - Copilot's generative answers capability searches for answers to your product related questions in Power Automate for desktop's public documentation using Azure OpenAI and Bing search.

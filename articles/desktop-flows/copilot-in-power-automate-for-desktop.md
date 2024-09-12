@@ -1,7 +1,7 @@
 ---
 title: Get started with Copilot in Power Automate for desktop
 description: Learn how to access and use Copilot in Power Automate for desktop.
-ms.date: 07/18/2024
+ms.date: 09/13/2024
 ms.topic: how-to
 author: cochamos
 ms.author: cochamos
@@ -110,7 +110,7 @@ In the Copilot pane, ask any product related questions or use one of the propose
 
 Use this section to find answers to frequently asked questions.
 
-### How to prevent users from using Copilot
+### How can I prevent users from using Copilot?
 
 - To prevent your users from using any of Copilot's capabilities, by contacting Microsoft Support.
 - To prevent users from using Copilot’s generative answers capability, Power Platform administrators can turn off the **Copilot help assistance in Power Automate via Bing** setting in the Power Platform admin center.
@@ -149,7 +149,7 @@ Use this section to find answers to frequently asked questions.
 
 Copilot generates actions based on your prompt. If the prompt doesn't include the mandatory parameters of an action, its left empty when generated and is marked as erroneous. You can try providing a more detailed prompt to avoid having actions with empty parameters. For example, a prompt such as *Open an excel file and read all data* results in a design time error, as the Excel file path is a mandatory parameter of the Launch Excel action. If the instruction is to *Open the Excel file located at "c:\contoso\myExcel.xlsx" and read all data*, then the Launch Excel action is prefilled with the file path, ensuring no design time errors occur.
 
-### What are some examples of prompts that I can use to create flows?
+### What are some example prompts I can use to create flows?
 
 - *Check if the folder c:\contoso exists. If it does, search for all Excel files. Add every Excel file found into an archive c:\Contoso\archivedExcels.zip using the best compression level.*
 - *Search in the Excel file c:\contoso\employees_list.xlsx for the string "Foo" in any of the cells. If there's a match, send an email using Outlook from the account sales@contoso.com to accounting@contoso.com with Subject "Here is your Excel file" and attach the Excel file.*
