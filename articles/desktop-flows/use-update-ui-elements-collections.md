@@ -1,11 +1,11 @@
 ---
-title: Use and update UI elements collections (preview)
+title: Use and update UI elements collections
 description: Learn how to use and update UI elements collections in desktop flows.
 author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/26/2024
+ms.date: 09/24/2024
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
@@ -15,13 +15,9 @@ search.audienceType:
   - enduser
 ---
 
-# Use and update UI elements collections (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Use and update UI elements collections
 
 You can include UI elements collections in desktop flows through the [Assets library](assets-library.md) using Power Automate for desktop's designer.
-
-[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
 
 To open the Assets library, select **Assets library** in the designer.
 
@@ -42,7 +38,7 @@ The [UI elements collections](ui-elements-collections.md) tab shows you the coll
 > [!NOTE]
 > You can only see UI elements collections that you have created or are shared with you. The list of collections in the respective Assets library tab is identical to the list available in the portal page for each maker.
 
-:::image type="content" source="media/ui-elements-collections/two-tabs-in-assets-library.png" alt-text="UI elements collections (preview) tab in Assets library" border="false":::
+:::image type="content" source="media/ui-elements-collections/two-tabs-in-assets-library.png" alt-text="UI elements collections tab in Assets library" border="false":::
 
 After selecting the collection you want to add to your flow, you also need to select a specific desktop under which the collection will be imported. This determines which desktop the collection's UI elements are searched when the flow runs.
 
