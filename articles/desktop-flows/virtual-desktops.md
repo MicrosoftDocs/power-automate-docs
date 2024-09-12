@@ -4,7 +4,7 @@ description: Learn how to build automated workflows on Citrix and RDP virtual de
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 08/13/2024
 ms.author: quseleba
 ms.reviewer: matp
 contributors:
@@ -27,6 +27,18 @@ It's important to install Power Automate for desktop on the machine where you're
 - Your physical device and virtual machine must be running Windows 10 Pro, Windows 10 Enterprise, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, Windows Server 2019, or Windows Server 2022.
 
 - Make sure the Citrix or RDP connection to the virtual desktop is closed and then [install Power Automate on your physical device](https://go.microsoft.com/fwlink/?linkid=2137322).
+
+- A device with the following hardware (these requirements don't include the resources required for the applications involved in your desktop flows):
+
+  Minimum hardware:
+  - Processor: 1.50 GHz per session or faster with two or more cores.
+  - Storage: 300 ΜΒ system storage for agent installation, plus 500 MB for each user (each version of Power Automate for desktop requires a user have 500 MB of storage space).
+  - RAM: 384 MB per session.
+
+  Recommended hardware:
+  - Processor: 2.00 GHz per session or faster with two or more cores.
+  - Storage: 300 ΜΒ or more system storage for agent installation, plus 500 MB or more for each user (each version of Power Automate for desktop requires a user have 500 MB of storage space).
+  - RAM: 512 MB or more per session.
 
 ## Install the Power Automate agent for virtual desktops
 

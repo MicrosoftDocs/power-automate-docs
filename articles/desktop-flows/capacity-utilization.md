@@ -55,7 +55,7 @@ The two pie charts underscore the point that, within a given environment, capaci
 
 [Process capacity or legacy unattended RPA capacity](capacity-utilization-process.md) are needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out another unattended desktop flow run simultaneously. It can also be allocated to a cloud flow to license it independently from user license.
 
-## See also
+## Related information
 
 [Process and unattended RPA capacity utilization (preview)](capacity-utilization-process.md)
 

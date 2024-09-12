@@ -8,7 +8,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 07/09/2024
+ms.date: 09/04/2024
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -223,7 +223,7 @@ You might notice that some functionalities that were in the classic designer are
 ## Some known issues
 
 - Dynamic content friendly names are getting updated to internal code names upon save.
-- Autoamted trigger polling setting (How often do you want to check for new items) reverts to 1min after saving
+- Automated trigger polling setting (How often do you want to check for new items) reverts to 1min after saving
 
 As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is gradually becoming the primary interface.
 

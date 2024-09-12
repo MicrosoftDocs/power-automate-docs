@@ -58,6 +58,8 @@ To create a flow from the home page, type your prompt in Copilot’s chat area:
 
 To create a flow from the Copilot side panel, open the Copilot chat panel by pressing the Copilot button on the top right corner of the console and type your prompt. Make sure that the flow creation mode is selected from the drop-down menu:
 
+Alternatively, you can also access the generative answers capability from the designer’s vertical menu on the right side.
+
 :::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-console-side-panel.png" alt-text="Screenshot that shows the Copilot side panel in Power Automate for desktop console's home location.":::
 
 Once you submit your prompt, Copilot processes it and launches the designer with the newly generated flow for you to review. In the designer’s Copilot side panel, you can view a list of the actions that were generated. The actions are assigned in groups based on their functionality. You can view the actions contained in each group by expanding it. Lastly, these groups are translated to regions in the main designer’s panel.

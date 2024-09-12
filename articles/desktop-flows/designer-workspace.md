@@ -5,7 +5,7 @@ author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 09/27/2022
+ms.date: 08/27/2024
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -23,7 +23,7 @@ The central pane of the flow designer is called the workspace. Workspace is the 
 
 ![Screenshot of the flow designer workspace.](./media/designer-workspace/flow-designer-workspace.png)
 
-During development, users may add, edit, and delete actions in the workspace.
+During development, users can add, edit, and delete actions in the workspace.
 
 Drag actions to rearrange them and change the order in which they run. Right-click an action and select **Enable action** or **Disable action** to enable or disable an action respectively; while running, the flow skips any disabled actions.
 
@@ -31,11 +31,13 @@ Copy and paste any selected actions in the workspace. You can copy and paste act
 
 ## Setting up subflows
 
-Subflows are groups of actions, which may be referenced as a group within a desktop flow.
+Subflows are groups of actions, which can be referenced as a group within a desktop flow.
 
-Every flow contains the **Main** subflow that runs when a desktop flow starts. Any other subflows may be invoked through the **Run subflow** action:
+Every flow contains the **Main** subflow that runs when a desktop flow starts. Any other subflows can be invoked through the **Run subflow** action:
 
-![Screenshot of the Run subflow action.](./media/setting-subflows/run-subflow-action.png)
+![Screenshot of the Run subflow action.](./media/setting-subflows/run-subflow-action-dynamic-invocation.png)
+
+Additionally, this action supports dynamic expressions through the toggle parameter, allowing you to use variables and dynamically invoke the corresponding subflow at runtime.
 
 Subflows are shown in tabs, directly over the main workspace. To add a new subflow, select the subflows tab, select **+**, and enter the subflow name.
 
@@ -45,7 +47,7 @@ Select a subflow tab to edit the respective subflow.
 
 ## Saving flows
 
-To save a flow, select **File** in the flow designer's menu bar and then pick **Save**. Alternatively, you can press the keyboard shortcut **Ctrl +S**.
+To save a flow, select **File** in the flow designer's menu bar and then pick **Save**. Alternatively, you can press the keyboard shortcut <kbd>Ctrl</kbd> + <kbd>S</kbd>.
 
 ![Screenshot of the Save option in the menu bar.](./media/saving-flows/save-flow.png)
 
@@ -55,18 +57,18 @@ To save the flow's current state as a new flow, select **Save as** in the **File
 
 ## Managing the workspace toolbar
 
-Drag actions to rearrange them and change the order in which they run. Right-click an action and select **Enable action** or **Disable action** to enable or disable an action respectively. While running, the flow skips any disabled actions.
+Drag actions to rearrange them and change the order in which they run. Right-click an action and select **Enable action** or **Disable action** to enable or disable an action respectively. While a flow is running, the flow skips any disabled actions.
 
-Hold down **Ctrl** to select multiple actions. Hold down **Shift** and select the first and last actions to select a range of actions. Copy and paste any selected actions in the workspace.
+To select multiple actions, hold down <kbd>Ctrl</kbd>. To select multiple actions, hold down <kbd>Shift</kbd>, and select the first and last actions. Copy and paste any selected actions in the workspace.
 
-When copying actions, all their parameters, images, and UI elements are copied as well. You can copy and paste actions within the same subflow, among different subflows, or other flow designer instances. Apart from flows, you can paste actions in other applications in a text format, such as a text editor, to share flows' sections with others.
+When you copy actions, all their parameters, images, and UI elements are copied as well. You can copy and paste actions within the same subflow, among different subflows, or other flow designer instances. Apart from flows, you can paste actions in other applications in a text format, such as a text editor, to share flows' sections with others.
 
 > [!NOTE]
 > As the underlying schema of an action or the UI elements or images repository might change from one version of Power Automate for desktop to another, make sure when copying flows's sections that the source and target flow designers are on the same version. If the schema is updated on a new version and a different version's flow contents are pasted, the action or the associated UI elements or images might not be recognized.
 
 ## Searching in the flow
 
-To search for a text string, an action or variable within the flow, use the search field at the top right of the flow designer window. The results pane will show all occurrences of text string by action and subflow. Double-click on a result to highlight the action that contains it.
+To search for a text string, an action or variable within the flow, use the search field at the top right of the flow designer window. You can also select <kbd>CTRL</kbd> + <kbd>F</kbd> to focus on the search field. The results pane shows all occurrences of text string by action and subflow. Double-click on a result to highlight the action that contains it.
 
 ![Screenshot of the field to search in the flow.](media/searching-flow/search.png)
 
@@ -74,13 +76,13 @@ To search for a text string, an action or variable within the flow, use the sear
 
 The **Go to line** function navigates to a specific line within the current subflow. It can be helpful in subflows that contain a large number of actions.
 
-Select **Edit**, then **Go to line** and enter a line. The corresponding action will be highlighted.
+Select **Edit**, then **Go to line** and enter a line. The corresponding action is highlighted.
 
 ![Screenshot of the Go to line dialog.](media/using-line-option/go-to-line.png)
 
 ## Using the Run from here option
 
-To run the flow starting from a specific action, right-click the action and select **Run from here**. Power Automate will  ignore all the previous actions and run the flow from the selected action onwards.
+To run the flow starting from a specific action, right-click the action and select **Run from here**. Power Automate ignores all the previous actions and runs the flow from the selected action onwards.
 
 > [!NOTE]
 > The **Run from here** option isn't available for actions located in loops, conditionals, or the **On block error** action.

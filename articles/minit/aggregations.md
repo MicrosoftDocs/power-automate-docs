@@ -555,6 +555,6 @@ Returns true if any of the values, grouped according to the [context], meet the 
 
 Can be used on case metrics filters or case overview statistics. Returns true if any event in the case has an event cost greater than zero.
 
-### See also
+## Related information
 
 [All calculation contexts for aggregation operations](calculation-context.md)

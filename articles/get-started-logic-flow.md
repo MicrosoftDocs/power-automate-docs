@@ -2,13 +2,13 @@
 title: Create a cloud flow in Power Automate
 description: Learn how to create a cloud flow that automatically performs one or more actions, such as sending email, when events like someone adding a row to a SharePoint list occur.
 suite: flow
-author: natalie-pienkowska
+author: kisubedi
 contributors:
   - kisubedi
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 09/04/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -131,7 +131,7 @@ You can have up to 600 flows in your account. If you already have 600 flows, del
 
      Select a cloud flow run from the list of runs to see the inputs and outputs of each step.
 
-### See also
+## Related information
 
 - [Add steps](multi-step-logic-flow.md), such as different ways to be notified, to your flow.
 - [Run tasks on a schedule](run-scheduled-tasks.md), when you want an action to occur daily, on a certain date, or after a certain number of minutes.

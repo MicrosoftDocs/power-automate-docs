@@ -1,19 +1,17 @@
 ---
 title: Manage sequential approvals with Power Automate
 description: Learn how to create a modern approval workflow with multiple approvers.
-services: ''
 suite: flow
-author: v-aangie
+author: hamenon-MS
 contributors:
   - hamenon-MS
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 09/04/2024
 ms.author: hamenon
 ms.reviewer: angieandrews
 ms.collection:
   - get-started
-  - bap-ai-copilot
 search.audienceType: 
   - flowmaker
   - enduser
@@ -68,8 +66,6 @@ The SharePoint Online list you create must include the following columns:
 | Modified By             | Person or group        |
 
 Make  note of the name and URL of the SharePoint Online list. We use these items later when you configure the **SharePoint - When a new item is created** trigger.
-
-Power Automate uses either the classic designer or the Edit with Copilot (preview) designer. To identify which designer you’re using, go to the **Note** section in [Understand the Edit with Copilot designer (preview)](flows-designer.md).
 
 ## Create your flow
 
@@ -207,7 +203,7 @@ The final approver gets the vacation request only after the request has been pre
 
 [!INCLUDE [reject-a-request](includes/reject-a-request.md)]
 
-### See also
+## Related information
 
 [Single approver modern approvals walkthrough](modern-approvals.md)
 
