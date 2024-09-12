@@ -11,16 +11,17 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/20/2024
+ms.date: 09/11/2024
 ms.author: quseleba
 ---
 
-# Monitor run details 
+# Monitor run details
 
 From this page you can view all the details of one of your desktop flow runs for the current environment.
 The information provided in this page can help you to understand better how your flows are running, what went good or bad, and all the useful related metadata (owner, inputs, and others).
 
 You can access this page:
+
 - from the monitor section in the left nav of Power Automate
 - from Desktop flow activity: in last runs pivot by selecting one run from the desktop flows runs card.
 - from Desktop flow runs
@@ -66,13 +67,13 @@ This card allows you to see information and status for each action of your deskt
 - **Action name**
 - **Duration**
 - **Log level**: indicates the severity level (Info/Warning/Error) of the logged action. The only action that is associated with a log level is the **Log message** action. For any other logged action, the column remains empty.
-- **Status**: this column gives you for each action the result of its run. 
+- **Status**: this column gives you for each action the result of its run.
 
 By default, the actions are sorted from the latest to the earliest. If you don’t see all the action in the card, select see all to view the full list of action details.
 
 ## View queue events
 
-The queue event list provides a detailed overview of lifecycle events for desktop flow runs. It includes the status and progress of each flow run, along with corresponding machine queue events, enabling users to monitor and understand every stage of the process. 
+The queue event list provides a detailed overview of lifecycle events for desktop flow runs. It includes the status and progress of each flow run, along with corresponding machine queue events, enabling users to monitor and understand every stage of the process.
 
   :::image type="content" source="media/monitor-run-details/Run-details-queue-events.png" alt-text="Screenshot of the run details page with the view queue events hyperlink.":::
   
@@ -80,22 +81,22 @@ The queue event list provides a detailed overview of lifecycle events for deskto
 >
 > Queue events are only available for desktop flows that were launched from a cloud flow.
   
-Below is a list of the various queue events supported by this feature.
+The following table lists the various queue events supported by this feature.
 
 ### Supported Queue Events
 
 | Event code                 | Event text                                                                                                 | Event details                                                                                                        |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| **QueueEventEnqueued**      | A flow run is queued and is ready to run                                                        | A desktop flow run has been received by the desktop flow service, and is now in queue to be executed.          |
+| **QueueEventEnqueued**      | A flow run is queued and is ready to run                                                        | A desktop flow run was received by the desktop flow service, and is now in queue to be executed.          |
 | **QueueEventConfirmed**     | The flow run is starting on machine {0}                                               | The desktop flow service will start executing the desktop flow run now.                                        |
 | **QueueEventAssignFailed**  | Machine {0} is returning error {1}, preventing it from accepting the run request             | The desktop flow service selected a machine to run the desktop flow, but the machine was unable to accept the request due to a specific error. |
-| **QueueEventAssigned**      | Before machine {0} can start the run, it needs to complete some preliminary checks               | The desktop flow service has selected a machine to run the desktop flow. The machine must still run preliminary checks before execution can start. |
-| **QueueEventPriorityChanged**  | This run's priority has changed, which might impact its position in the queue   | While still in queue, the run's priority has been changed - this may impact its position in the queue.         |
-| **QueueEventPriorityType.Changed**   | This run's priority has changed, which might impact its position in the queue    | While still in queue, the run's priority has been changed - this may impact its position in the queue.         |
-| **QueueEventPriorityType.MoveToTop**  | This flow run was moved to the front of the queue and will run next  | Run has been moved to the front of the queue - it will be executed next, once the service finds an available host.|
-| **QueueEventPriorityType.UnmoveToTop**  | This flow run was moved back to its previous spot in the queue    | A run was previously moved to the front of the queue, but that action was undone - the run will go back to its previous position. |
-| **QueueEventFinished**      | This flow run completed successfully                                                            | The run has finished executing without any error.                                                              |
-| **QueueEventFinished (error)**    | This flow run completed on machine {1}, but with error {0}                               | The run has finished executing, but encountered an error.                                                     |
+| **QueueEventAssigned**      | Before machine {0} can start the run, it needs to complete some preliminary checks               | The desktop flow service selected a machine to run the desktop flow. The machine must still run preliminary checks before execution can start. |
+| **QueueEventPriorityChanged**  | This run's priority has changed, which might impact its position in the queue   | While still in queue, the run's priority has been changed. This might impact its position in the queue.         |
+| **QueueEventPriorityType.Changed**   | This run's priority has changed, which might impact its position in the queue    | While still in queue, the run's priority was changed. This might impact its position in the queue.         |
+| **QueueEventPriorityType.MoveToTop**  | This flow run was moved to the front of the queue and will run next  | Run has been moved to the front of the queue. It will be executed next, once the service finds an available host.|
+| **QueueEventPriorityType.UnmoveToTop**  | This flow run was moved back to its previous spot in the queue    | A run was previously moved to the front of the queue, but that action was undone. The run will go back to its previous position. |
+| **QueueEventFinished**      | This flow run completed successfully                                                            | The run finished executing without any error.                                                              |
+| **QueueEventFinished (error)**    | This flow run completed on machine {1}, but with error {0}                               | The run finished executing, but encountered an error.                                                     |
 
 ### Queue event detail panel
 
@@ -103,13 +104,13 @@ Below is a list of the various queue events supported by this feature.
 
 ## Storage location for queue events
 
-By default, queue event data is stored for 7 days (10,080 minutes). If you want to modify the duration of how long the queue events can be stored, you can update the [**The TTL for new desktop flow queue log records** in the **Organization** table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes) in an environment backed with Dataverse. Depending on your environment’s storage capacity, you can adjust the length of storage for these queue event records.
+By default, queue event data is stored for seven days (10,080 minutes). If you want to modify the duration of how long the queue events can be stored, you can update the [TTL for new desktop flow queue log records in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes) value on the Organization table in an environment backed with Dataverse. Depending on your environment’s storage capacity, you can adjust the length of storage for these queue event records.
 
-The [DesktopFlowQueueLogsTtlInMinutes value on the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes) can be changed in the [PowerApps table browser](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel#view-tables) or using the [Dataverse Web API](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/13593424/25bd0eda-0dde-4378-9793-7090fbca5916).
+The [DesktopFlowQueueLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes) value on the Organization table can be changed in the [Power Apps table browser](/power-apps/maker/data-platform/create-edit-entities-portal?tabs=excel#view-tables) or using the [Dataverse Web API](https://github.com/MicrosoftDocs/power-automate-docs-pr/assets/13593424/25bd0eda-0dde-4378-9793-7090fbca5916).
 
 ## Change queue event data retention time frames
 
-If the [DesktopFlowQueueLogsTtlInMinutes value in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes) is changed, then the lifetime of any new **[FlowLog](/power-apps/developer/data-platform/reference/entities/flowlog)** record of type queue event is retained for that length of time. Lowering the value can reduce the number of [FlowLog](/power-apps/developer/data-platform/reference/entities/flowlog) records, and storage used, over time.
+If the [DesktopFlowQueueLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes) value in the Organization table is changed, then the lifetime of any new **[FlowLog](/power-apps/developer/data-platform/reference/entities/flowlog)** record of type queue event is retained for that length of time. Lowering the value can reduce the number of [FlowLog](/power-apps/developer/data-platform/reference/entities/flowlog) records, and storage used, over time.
 
 ## Time To Live (TTL) value calculation examples
 
@@ -119,7 +120,7 @@ Time to live (TTL) values for [Organization.DesktopFlowQueueLogsTtlInMinutes](/p
 |---------|---------|
 |1 day |1,140 minutes|
 |3 days |4,320 minutes|
-|7 day |10,080 minutes|
+|7 days |10,080 minutes|
 |14 days |20,160 minutes|
 |28 days |40,320 minutes|
 |60 days |68,400 minutes|
