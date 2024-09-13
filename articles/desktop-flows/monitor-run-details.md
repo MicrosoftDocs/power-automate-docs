@@ -11,8 +11,14 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 09/11/2024
+ms.date: 09/13/2024
 ms.author: quseleba
+ms.reviewer: dmartens
+contributors:
+- DanaMartens
+search.audienceType: 
+- flowmaker
+- flowadmin
 ---
 
 # Monitor run details
@@ -85,18 +91,20 @@ The following table lists the various queue events supported by this feature.
 
 ### Supported Queue Events
 
-| Event code                 | Event text                                                                                                 | Event details                                                                                                        |
-|-----------------------------|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| **QueueEventEnqueued**      | A flow run is queued and is ready to run                                                        | A desktop flow run was received by the desktop flow service, and is now in queue to be executed.          |
-| **QueueEventConfirmed**     | The flow run is starting on machine {0}                                               | The desktop flow service will start executing the desktop flow run now.                                        |
-| **QueueEventAssignFailed**  | Machine {0} is returning error {1}, preventing it from accepting the run request             | The desktop flow service selected a machine to run the desktop flow, but the machine was unable to accept the request due to a specific error. |
-| **QueueEventAssigned**      | Before machine {0} can start the run, it needs to complete some preliminary checks               | The desktop flow service selected a machine to run the desktop flow. The machine must still run preliminary checks before execution can start. |
-| **QueueEventPriorityChanged**  | This run's priority has changed, which might impact its position in the queue   | While still in queue, the run's priority has been changed. This might impact its position in the queue.         |
-| **QueueEventPriorityType.Changed**   | This run's priority has changed, which might impact its position in the queue    | While still in queue, the run's priority was changed. This might impact its position in the queue.         |
-| **QueueEventPriorityType.MoveToTop**  | This flow run was moved to the front of the queue and will run next  | Run has been moved to the front of the queue. It will be executed next, once the service finds an available host.|
-| **QueueEventPriorityType.UnmoveToTop**  | This flow run was moved back to its previous spot in the queue    | A run was previously moved to the front of the queue, but that action was undone. The run will go back to its previous position. |
-| **QueueEventFinished**      | This flow run completed successfully                                                            | The run finished executing without any error.                                                              |
-| **QueueEventFinished (error)**    | This flow run completed on machine {1}, but with error {0}                               | The run finished executing, but encountered an error.                                                     |
+| Event text                                                                                                 | Event details                                                                                                        |
+|-------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| A flow run is queued and is ready to run                                                        | A desktop flow run was received by the desktop flow service, and is now in queue to be executed.          |
+| The flow run is starting on machine {0}                                               | The desktop flow service will start executing the desktop flow run now.                                        |
+| Machine {0} is returning error {1}, preventing it from accepting the run request             | The desktop flow service selected a machine to run the desktop flow, but the machine was unable to accept the request due to a specific error. |
+| Before machine {0} can start the run, it needs to complete some preliminary checks               | The desktop flow service selected a machine to run the desktop flow. The machine must still run preliminary checks before execution can start. |
+| This run's priority has changed, which might impact its position in the queue   | While still in queue, the run's priority has been changed. This might impact its position in the queue.         |
+| This run's priority has changed, which might impact its position in the queue    | While still in queue, the run's priority was changed. This might impact its position in the queue.         |
+| This flow run was moved to the front of the queue and will run next  | Run has been moved to the front of the queue. It will be executed next, once the service finds an available host.|
+| This flow run was moved back to its previous spot in the queue    | A run was previously moved to the front of the queue, but that action was undone. The run will go back to its previous position. |
+| This flow run completed successfully                                                            | The run finished executing without any error.                                                              |
+| This flow run completed on machine {1}, but with error {0}                               | The run finished executing, but encountered an error.                                                     |
+
+Is there anything else you need help with?
 
 ### Queue event detail panel
 
