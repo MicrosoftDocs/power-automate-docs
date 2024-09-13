@@ -377,7 +377,7 @@
       href: ./desktop-flows/getting-started-org.md
   - name: Create desktop flows
     href: ./desktop-flows/create-flow.md
-  - name: Create desktop flows using the AI Recorder
+  - name: Create desktop flows using the AI Recorder (preview)
     href: ./desktop-flows/create-flow-using-ai-recorder.md
   - name: Copilot in Power Automate for desktop (preview)
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
