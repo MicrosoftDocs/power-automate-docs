@@ -172,8 +172,6 @@ Create the package and deploy to Power Automate.
 
    1. Validate that the imported certificate appears under **Trusted Root Certification Authorities** > **Certificates** in Certificates Microsoft Manager Console (MMC) snap-in.
 
-      :::image type="content" source="media/padca-8-2-new.png" alt-text="Screenshot of validating certificate in Certificate Manager" lightbox="media/padca-8-2-new.png" border="true":::
-
 1. Finalize the custom module created by signing the DLL file using a trusted certificate. Use Visual Studio’s developer command prompt to use the Signtool for this activity.
 
    ```powershell
