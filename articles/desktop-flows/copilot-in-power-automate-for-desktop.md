@@ -15,7 +15,9 @@ ms.collection: bap-ai-copilot
 
 Copilot in desktop flows allows you to create automation that helps streamline your workflow creation quickly and easily using natural language. You can create a new flow or add more steps to an existing flow by just describing what you want to achieve using natural language prompts.
 
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
 > - Copilot’s Natural Language to flow creation is powered by the Azure OpenAI service. This feature is in Early Access.
 > - Copilot’s generative answers capability is powered by the Azure OpenAI Service and Bing Search.
