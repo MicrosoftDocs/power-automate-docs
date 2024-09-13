@@ -48,10 +48,10 @@ The run details card displays all the parameters related to your run.
 - **Run mode**: can be attended or unattended when the flow is triggered from the cloud, local attended when the flow is triggered manually from Power Automate for desktop.
 - **Flow inputs and outputs**: when a desktop flow is using inputs or provides outputs, you can see the details of both inputs and outputs by clicking on See {inputs/outputs} details.
 
-> [!NOTE]
->
-> When inputs / outputs are secure inputs / outputs, you won't see the value in the details but only {}. o	When inputs or outputs contain sensitive variables, the details value will always be null.
-> Inputs and outputs are also viewable from the Dataverse flow session entity.
+    > [!NOTE]
+    >
+    > When inputs / outputs are secure inputs / outputs, you won't see the value in the details but only {}. o	When inputs or outputs contain sensitive variables, the details value will always be null.
+    > Inputs and outputs are also viewable from the Dataverse flow session entity.
   
 - **Version**: the version of Power Automate for desktop agent used to execute the flow.
 
