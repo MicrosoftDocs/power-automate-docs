@@ -377,7 +377,7 @@
       href: ./desktop-flows/getting-started-org.md
   - name: Create desktop flows
     href: ./desktop-flows/create-flow.md
-  - name: Create desktop flows using the AI Recorder
+  - name: Create desktop flows using the AI Recorder (preview)
     href: ./desktop-flows/create-flow-using-ai-recorder.md
   - name: Copilot in Power Automate for desktop (preview)
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
@@ -431,6 +431,8 @@
       href: ./desktop-flows/create-cyberark-credential.md
   - name: Create desktop flow connections
     href: ./desktop-flows/desktop-flow-connections.md
+  - name: Allowlist tenants for connect with sign-in connections
+    href: ./desktop-flows/how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Work queues
