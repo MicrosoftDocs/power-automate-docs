@@ -350,6 +350,8 @@ The last step before being able to reference your virtual network from Power Aut
 
 1. Select the **Subnet** the hosted machine groups will use.
 
+    :::image type="content" source="media/hosted-machine-groups/create-custom-vnet-hmg.png" alt-text="Screenshot of a new VM image.":::
+
 
 ### Share the network connection
 
