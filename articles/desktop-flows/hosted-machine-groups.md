@@ -255,6 +255,11 @@ The last step before using your image in Power Automate is to share the image wi
 
 [!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
 
+> [!NOTE]
+> **Known issue**: When using custom network connection, hosted machine group may not show correct network connection used.
+> **Description**: When using hosted machine group with custom network connection, the network connection field in the hosted machine group details page may show as blank. This is a cosmetic issue, there is no functional impact to the hosted machine group.
+> **Workaround**: In the machines page on the Power Automate portal, go to the network connections tab. Select the network connection that you have created. From the network connection details page, you can see the hosted machine groups that are using the network connection
+
 You can connect to your own virtual network with your hosted machine groups to securely communicate with each other, the Internet, and on-premises networks. Providing your own virtual network from your Azure subscription allows your hosted machine groups to be provisioned with your virtual network automatically.
 
 > [!NOTE]
@@ -404,6 +409,7 @@ Once you've created your hosted machine group in an environment, you can view it
     - View provisioning errors on the hosted machine group, if any.
     - Manage access by sharing (or not) the hosted machine group.
     - Delete the hosted machine group.
+
 
 ## Share hosted machine groups
 
