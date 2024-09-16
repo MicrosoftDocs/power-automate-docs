@@ -65,7 +65,7 @@ The following table list the fields and a description or example:
 |Field  |Description or example  |
 |---------|---------|
 |Name     | Name of the resource.    |
-|Finance attribute     | Attribute used to calcuate hourly cost. When no such financial attribute exists, select the **Simulation** value and enter hourly cost in **Cost per hour** field.<br/><br/>The value in this field can't be empty. Either select the **Simulation** value or any finance per hour attribute. If you use the **Simulation** value, the value from the **Cost per hour** field is used. Also, when you select a finance attribute but you updated a preloaded value in the field, that value for **Finance attribute** is changed to **Simulation**.       |
+|Finance attribute     | Attribute used to calculate hourly cost. When no such financial attribute exists, select the **Simulation** value and enter hourly cost in **Cost per hour** field.<br/><br/>The value in this field can't be empty. Either select the **Simulation** value or any finance per hour attribute. If you use the **Simulation** value, the value from the **Cost per hour** field is used. Also, when you select a finance attribute but you updated a preloaded value in the field, that value for **Finance attribute** is changed to **Simulation**.       |
 |Cost per hour     | Hourly cost for a resource when there’s no financial attribute. The value from the field is used when you select the **Simulation** value in the **Finance attribute** field.      |
 |Parallel tasks amount     | The maximum number of parallel tasks a given resource can handle.        |
 |Task processing efficiency    | How much more or less efficient the resource is compared to the default resource. A value above 1.0 means more efficient. A value below 1.0 means less efficient.  |
@@ -122,12 +122,11 @@ For each activity in the **Next activity name** column, enter the following fiel
 
 ## Start a simulation
 
-Use the **Process simulation** screen to start the simulation and to get an estimation of its duration.
+Start the simulation and get an estimation of its duration in the **Process simulation** screen.
 
 1. Return to the **Process simulation** screen.
 1. To start the simulation, select **Simulate**.
-
-Expected estimation of the simulation duration is also available, see **Estimated simulation duration**.  
+1. View the expected estimation of the simulation duration next to **Simulate**.  
 
 The status of the simulation scenario is indicated below the scenario’s tile. Examples of the status are **Queued for start** and **Completed**.
 
