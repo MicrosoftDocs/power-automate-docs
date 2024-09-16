@@ -194,6 +194,19 @@ When static outputs are disabled, the toggle label is **Enable Static Result**. 
 
 :::image type="content" source="media/flows-designer/static-result.png" alt-text="Screenshot of the 'Enable or Disable Static Result' toggle in the Testing tab.":::
 
+### View two action panes simultaneously 
+
+One the new designer, you can pin an action pane such that you can open a second action pane next to the pinned action pane. This is particularly useful to compare two similar actions, or copy values across two actions. 
+To pin an action, you can either right click the action on the canvas and click 'Pin action' or use the Pin icon on the action pane. Once an action is pinned, any other action pane when clicked upon gets placed to the right of the pinned action pane.
+
+
+![image](https://github.com/user-attachments/assets/df074c45-79e7-4dc7-b175-38caae6ab3ec)
+
+![image](https://github.com/user-attachments/assets/53f74a98-726b-42d0-bade-d96cbbbaf7c9)
+
+Note: To unpin, you can either right click on action on the canvas and click 'Unpin action' or click the Pin icon on the action pane.
+
+
 ## Identify differences between the classic designer and the cloud flows designer
 
 To quickly identify which designer version you're using, ask yourself the following questions:
