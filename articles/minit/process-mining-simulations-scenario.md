@@ -7,7 +7,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 08/30/2024
+ms.date: 09/30/2024
 ms.author: janpidych
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -65,8 +65,8 @@ The following table list the fields and a description or example:
 |Field  |Description or example  |
 |---------|---------|
 |Name     | Name of the resource.    |
-|Finance attribute     | Attribute used to calcuate hourly cost, when no such financial attribute exists, use Simulation value and enter hourly cost in field "Cost per hour"        |
-|Cost per hour     | Hourly cost for resource when no other financial attribute is selected (value Simulation)       |
+|Finance attribute     | Attribute used to calcuate hourly cost. When no such financial attribute exists, select the **Simulation** value and enter hourly cost in **Cost per hour** field.<br/><br/>The value in this field can't be empty. Either select the **Simulation** value or any finance per hour attribute. If you use the **Simulation** value, the value from the **Cost per hour** field is used. Also, when you select a finance attribute but you updated a preloaded value in the field, that value for **Finance attribute** is changed to **Simulation**.       |
+|Cost per hour     | Hourly cost for a resource when there’s no financial attribute. The value from the field is used when you select the **Simulation** value in the **Finance attribute** field.      |
 |Parallel tasks amount     | The maximum number of parallel tasks a given resource can handle.        |
 |Task processing efficiency    | How much more or less efficient the resource is compared to the default resource. A value above 1.0 means more efficient. A value below 1.0 means less efficient.  |
 |Timetables/Work schedules     | Which working hours apply for a given resource.   |

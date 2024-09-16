@@ -1025,7 +1025,7 @@
         href: ./minit/process-mining-simulations-overview.md
       - name: Create a simulation scenario
         href: ./minit/process-mining-simulations-scenario.md
-      - name: Run a simulation and get results
+      - name: Run a simulation and generate results
         href: ./minit/process-mining-simulations-run-results.md
   - name: Task mining capability
     items:
