@@ -200,11 +200,11 @@ One the new designer, you can pin an action pane so that you can open a second a
 
 To pin an action, you can either right-click the action on the canvas and select **Pin action**, or use the **Pin** icon on the action pane.
 
-:::image type="content" source="media/flows-designer/pin-option.png" alt-text="Screenshot of the four zoom buttons.":::
+:::image type="content" source="media/flows-designer/pin-option.png" alt-text="Screenshot of the 'Pin action' menu option.":::
 
 Once you pin an action, any other action pane when selected is placed to the right of the pinned action pane.
 
-:::image type="content" source="media/flows-designer/pin-result.png" alt-text="Screenshot of the four zoom buttons.":::
+:::image type="content" source="media/flows-designer/pin-result.png" alt-text="Screenshot of a pinned action next to the open action pane.":::
 
 > [!NOTE]
 > To unpin, you can either right-click on action on the canvas and select **Unpin action**, or select the **Pin** icon on the action pane.
