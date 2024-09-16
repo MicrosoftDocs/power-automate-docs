@@ -7,7 +7,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 08/30/2024
+ms.date: 09/30/2024
 ms.author: janpidych
 ms.reviewer: angieandrews
 search.audienceType: 
