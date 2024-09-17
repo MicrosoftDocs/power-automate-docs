@@ -4,10 +4,9 @@ description: Learm how organizations and their partners can use the automation m
 author: ashVancouver
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 08/26/2022
+ms.date: 07/01/2024
 ms.author: ashwinrajuk
 ms.reviewer: angieandrews
-ms.collection: bap-ai-copilot
 search.audienceType: 
   - admin
 ---

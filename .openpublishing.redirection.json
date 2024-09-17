@@ -804,6 +804,16 @@
       "source_path": "articles/desktop-flows/use-ime.md",
       "redirect_url": "/power-automate/desktop-flows/introduction",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/manage-credentials.md",
+      "redirect_url": "/power-automate/desktop-flows/create-azurekeyvault-credential",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/avd-overview.md",
+      "redirect_url": "/power-automate/desktop-flows/hosted-rpa-overview",
+      "redirect_document_id": false
     }
   ]
 }

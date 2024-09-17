@@ -566,7 +566,7 @@ Example:
 
 [Upload custom actions](upload-custom-actions.md)
 
-### See also
+## Related information
 
 - [Assets library](assets-library.md)
 - [Use custom actions](use-custom-actions.md)

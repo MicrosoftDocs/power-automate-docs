@@ -66,7 +66,7 @@ While the inspect UI elements tool is opened, the Power Automate for desktop hig
 
   **Workaround:** Ensure that Power Automate agent for virtual desktops component is installed, up and running in the respective virtual machine.
   
-### See also
+## Related information
 
 [Automate using UI elements](ui-elements.md)
 

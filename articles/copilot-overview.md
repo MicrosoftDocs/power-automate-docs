@@ -6,7 +6,7 @@ contributors:
   - v-aangie
   - jhaskett-msft
 ms.topic: overview
-ms.date: 06/20/2024
+ms.date: 09/04/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews
 ms.contributors:
@@ -45,7 +45,7 @@ Copilot in desktop flows allows you to analyze desktop flow activity. With this 
 
 - [Use Copilot to analyze desktop flow activity (preview)](desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)
 - [Use the Power Automate plug-in for Windows Copilot (preview)](desktop-flows/win-copilot-plug-in.md)
-- [Use Copilot to get answers to product-related questions](desktop-flows/copilot-in-power-automate-for-desktop.md#how-to-use-copilot-to-get-answers-to-product-related-questions)
+- [Use Copilot to get answers to product-related questions](desktop-flows/copilot-in-power-automate-for-desktop.md#how-to-use-copilot-to-get-answers-to-product-related-questions-preview)
 
 ## Copilot in automation center
 
@@ -60,7 +60,7 @@ If a region has GPUs (UK, Australia, US, India), we turn on Copilot by default. 
 
 To learn more, go to [Availability by region](get-started-with-copilot.md#availability-by-region).
 
-### See also
+## Related information
 
 - [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
 - [Understand the cloud flows designer](flows-designer.md)

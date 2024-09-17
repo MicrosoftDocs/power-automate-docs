@@ -4,7 +4,7 @@ description: Learn how to manage desktop flows in the Power Automate portal.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/03/2024
+ms.date: 08/29/2024
 ms.author: appapaio
 ms.reviewer: matp
 contributor:
@@ -92,7 +92,7 @@ As a Power Platform admin you can prevent users from sending feedback to Microso
 
 Tenant administrators can view, export, and delete the feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage), and then select **Health** > **Product feedback**.
 
-### See also
+## Related information
 
 - [FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md)
 

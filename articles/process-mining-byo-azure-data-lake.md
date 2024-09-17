@@ -8,9 +8,9 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 05/24/2024
+ms.date: 08/30/2024
 ms.custom: bap-template
-ms.author: heortaol
+ms.author: michalrosik
 ms.reviewer: angieandrews
 ---
 
@@ -28,12 +28,12 @@ Power Automate Process Mining gives you the option to store and read event log d
 
 - **Resource Sharing (CORS)** rule to your storage account should be established to share with Power Automate Process Mining.
     - Allowed origins must be set to `https://make.powerapps.com`.
-    - Allowed methods must include: `get`, `options`, `put`.
+    - Allowed methods must include: `get`, `options`, `put`, `post`.
     - Allowed headers should be as flexible as possible. We recommend defining them as `*`.
     - Exposed headers should be as flexible as possible. We recommend defining them as `*`.
     - The maximum age should be as flexible as possible. We recommend using `86400`.
 
-    :::image type="content" source="media/process-mining-byo-azure-data-lake/CORS.svg" alt-text="Screenshot of the example of CORS setting screen.":::
+        :::image type="content" source="media/process-mining-byo-azure-data-lake/CORS.png" alt-text="Screenshot of the example of CORS setting screen.":::
 
 -   Data in your Data Lake Storage should meet the following CSV file format requirements:
     - **Compression type:** None

@@ -176,7 +176,7 @@ When you assign a role to a guest, this gives the guest the permission required 
 
 Now that you've created and tested your flow, be sure to let others know how to use it.
 
-### See also
+## Related information
 
 * View and manage [pending approval requests](approve-reject-requests.md)
 * Create [sequential approval flows.](sequential-modern-approvals.md)

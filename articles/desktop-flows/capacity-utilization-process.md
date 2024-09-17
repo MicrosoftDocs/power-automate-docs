@@ -120,6 +120,6 @@ To view and edit capacity allocation, you need a security role with privileges t
 
 ![Flow Capacity Assignment](media/capacity-utilization/flow-capacity-assignment.png)
 
-## See also
+## Related information
 
 [Capacity utilization within Power Automate (preview)](capacity-utilization.md)

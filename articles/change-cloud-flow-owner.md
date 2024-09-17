@@ -117,7 +117,7 @@ To have a Service Principal own and run a flow, follow these steps.
 
     Examples are turning on [Pay As You Go](/power-platform/admin/power-automate-licensing/types#power-platform-requests-pay-as-you-go), [associating the flow to an app](/power-automate/associate-flow-to-app), or [considering a Power Automate Process license (previously Power Automate per flow)](/power-platform/admin/power-automate-licensing/types#what-can-i-do-if-my-flow-is-above-limits).
 
-### See also
+## Related information
 
 - [How to manage orphaned flows when the owner leaves the organization](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org)
 - [(Video) Microsoft Power Automate Tutorial - Export Import](https://www.youtube.com/watch?v=K7_xWJvEPUc)
