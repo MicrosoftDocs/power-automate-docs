@@ -655,10 +655,6 @@ The following features aren't supported in sovereign clouds:
 | Work or school account | GCC, GCC High, DoD |
 | Custom VM images | GCC, DoD |
 
-### Network limitations for hosted machine groups
-
-Hosted machine groups don't have access to on-premises data sources or other on-premises resources. Hosted machine group can't be accessed from the Internet, as the inbound traffic is blocked.
-
 ### Remote desktop to hosted machine groups
 
 Remote desktop to hosted machine groups isn't supported. Hosted machine groups are meant to be used for unattended runs only, and remote desktop access from the Internet isn't required to run Power Automate desktop flows.
