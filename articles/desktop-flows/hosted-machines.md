@@ -334,13 +334,7 @@ The virtual network needs to be created in the same location as your hosted mach
 - United Kingdom: UK South
 - United States: East US
 
-### Additional requirements for Microsoft Entra hybrid joined hosted machines (preview)
-
-[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
-
-If your organization has an on-premises Active Directory implementation and you want your hosted machines to be joined to it, you can accomplish this task with Microsoft Entra hybrid join.
-
-[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+### Additional requirements for Microsoft Entra hybrid joined hosted machines
 
 To use your own network and provision Microsoft Entra hybrid joined machines, you must meet the following requirements:
 
@@ -419,13 +413,13 @@ The last step before being able to reference your virtual network from Power Aut
 
 1. Select the **Domain join type** the machine uses.
 
-1. If the **'Microsoft Entra hybrid join (preview)'** is selected, the following information is required:
+1. If the **'Microsoft Entra hybrid join'** is selected, the following information is required:
    - **DNS domain name** : The DNS name of the Active Directory domain you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
    - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain, which can hold users, groups, and computers. Make sure that this OU is enabled to sync with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
    - **Username UPN** : The username, in user principal name (UPN) format, you want to use for connecting the hosted machines to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
    - **Domain password** : The password for the user.
     > [!NOTE]
-    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join (preview) domain join type.
+    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join domain join type.
 
 :::image type="content" source="media/hosted-machines/create-network-connection.png" alt-text="Screenshot of the New network connection dialog.":::
 
