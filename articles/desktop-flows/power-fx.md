@@ -1,14 +1,15 @@
 ---
 title: Power Fx in desktop flows (preview)
 description: Learn about using Power Fx for creating expressions in desktop flows.
-author: jpapadimitriou
+author: nikosmoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 09/18/2024
-ms.author: dipapa
-ms.reviewer: 
+ms.author: nimoutzo
+ms.reviewer: dmartens
 contributors: 
 - DanaMartens
+- spanopoulos-msft
 search.audienceType: 
   - flowmaker
   - enduser
@@ -81,8 +82,8 @@ To better understand this distinction, consider the following example. The `dyna
 - To access a data table cell using a column index, use the **`Index()`** function.
 **`=Index(Index(DataTableVar, 1), 2)`** retrieves the value from the cell in row 1 within column 2.
 **`=Index(DataRowVar, 1)`** retrieves the value from the cell in row 1.
-- To include an interpolated value in an input or a UI/web element selector, use the following syntax: Lorem ipsum **${variable/ expression}** lorem ipsum
-  - Example: The total number is **`${Sum(10, 20)}`**
+- To include an interpolated value in an input or a UI/web element selector, use the following syntax: `Text before ${variable / expression} text after`
+  - Example: `The total number is ${Sum(10, 20)}`
 
 > [!NOTE]
 > If you want to use the dollar sign (**`$`**) followed by a opening curly brace sign (**`{`**)  within a Power Fx expression or in the syntax of a UI/Web element selector and have Power Automate for desktop not treat it as the string interpolation syntax, make sure to follow this syntax: **`$${`** (the first dollar sign will act as an escape character)
@@ -136,7 +137,7 @@ In April 2024 release:
 
 > [!IMPORTANT]
 > In version 2.43 of Power Automate for desktop, there have been updates for Power Fx enabled desktop flows that could impact the execution of Power Fx enabled desktop flows created with previous versions.
-Specifically: 
+Specifically:
 > - **Case-sensitive variable names**: Variable names within Power Fx enabled desktop flows created with **Power Automate for desktop version 2.43 and later** are case-sensitive. Power Fx desktop flows created with **Power Automate for desktop version 2.42 and earlier** allowed for case-insensitive variable names. For example, *NewVar* and *newVAR* reference the same variable. For Power Fx enabled desktop flows created with **Power Automate for desktop version 2.42 and earlier**, make sure to review and verify that the produced variables are as expected.
 
 ### 2.42
@@ -159,8 +160,8 @@ In March 2024 release:
 In February 2024 release:
 
 - From now on inputs that don't begin with the equals sign (**=**) are considered as text type values. Numeric and boolean inputs must always begin with the equals sign.
-- Inputs now support interpolated strings. To include an interpolated value in an input, use the following syntax: Lorem ipsum **${variable/ expression}** lorem ipsum.
-  - Example: The total number is **${Sum(10, 20)}**
+- Inputs now support interpolated strings. To include an interpolated value in an input, use the following syntax: `Text before ${variable/ expression} text after`.
+  - Example: `The total number is ${Sum(10, 20)}`
 
 > [!NOTE]
 > To use interpolated string syntax, omit the equals (=) sign at the beginning of the input.
