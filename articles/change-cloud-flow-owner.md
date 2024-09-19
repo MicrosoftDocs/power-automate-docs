@@ -31,7 +31,7 @@ The primary flow owner responsibilities include the following:
 In cases where primary ownership needs to be transferred, such as when a primary flow owner leaves the organization or changes roles, providing a new primary flow owner ensures a smooth transition. The previous primary flow owner can transfer ownership to another user to maintain continuity and avoid disruptions in flow management.
 
 If an administrator wants to make changes to a flow, they must first make themselves a primary owner or co-owner.
-Flows are usually owned by [regular users](/power-platform/admin/create-users#user-types), but if you need to change the primary owner to a Service Principal application user instead, go to [Change the owner of a cloud flow to a Service Principal application user](#change-the-owner-of-a-cloud-flow-to-a-service-principal-application-user).
+Flows are usually owned by [regular users](/power-platform/admin/create-users#user-types), but if you need to change the primary owner to a Service Principal application user instead, go to [Change the owner of a cloud flow to a Service Principal application user](#change-the-primary-owner-of-a-cloud-flow-to-a-service-principal-application-user).
 
 ## Change the primary owner of a solution-aware cloud flow
 
