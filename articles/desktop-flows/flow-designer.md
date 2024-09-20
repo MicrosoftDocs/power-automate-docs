@@ -27,7 +27,7 @@ The flow designer consists of multiple elements. The actions pane, the variables
 1. Select **New flow** or open an existing flow, such as from the **My flows** tab.
 1. If you're creating a new flow, enter the name you want for the flow, such as *Operational flow* in this example, and then select **Create**.
    The flow designer is displayed in a separate app window.
-   ![Screenshot of the flow designer.](media/flow-designer/flow-designer.png)
+   :::image type="content" source="media/flow-designer/flow-designer.png" alt-text="Screenshot of the Power Automate desktop flow designer" lightbox="media/flow-designer/flow-designer.png":::
 
 ## Next steps
 
