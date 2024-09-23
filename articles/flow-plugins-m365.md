@@ -65,6 +65,10 @@ You can use the flow based plugins shipped by Microsoft in your Copilot for Micr
 
 Currently, the flows that are created and run need to be in the tenant's default environment. A setup experience for the plugin that allows users to choose nondefault environments to associate the plugin with isn't available yet.
 
+## Copilot Skills trigger support for Power Automate CMK protected flows 
+
+Currently, the flows utilizing the copilot invoking user's connection as opposed to embedded connections are not supported for invokling cloud flows protected by CMK. Learn More about known limitations for Power Automate CMK here https://learn.microsoft.com/en-us/power-automate/customer-managed-keys#known-limitations
+
 ## Related information
 
 [Build plugins using Microsoft business applications](/microsoft-365-copilot/extensibility/overview-business-applications)
