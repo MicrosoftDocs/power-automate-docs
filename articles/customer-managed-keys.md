@@ -67,6 +67,10 @@ When an environment is enabled for customer-managed keys, then Power Automate da
 
 Non-solution cloud flows using the Power Apps trigger and are created in CMK-protected environments can't be referenced from an app. An error results when attempting to register the flow from Power Apps. Only solution cloud flows can be referenced from an app in CMK-protected environments. To avoid this situation, [flows should first be added into a Dataverse solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution) so they can be successfully referenced. To prevent this situation, the environment setting to [automatically create flows in Dataverse solutions](/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature) should be enabled in CMK-protected environments. This ensures new flows are solution cloud flows.
 
+### Limitation on invoking Copilot Skills Trigger Flows
+
+The scenarios where a cloud flow is invoked via the Copilot Skills trigger leveraging the invoking Copilot user's connection as opposed to an embedded connection is not supported for CMK protected cloud flows. Learn More about using flow as plugins from Copilot https://learn.microsoft.com/en-us/power-automate/flow-plugins-m365#run-flows-from-copilot-for-microsoft-365 
+
 ## Related information
 
 [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key)
