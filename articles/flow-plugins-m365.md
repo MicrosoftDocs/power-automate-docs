@@ -68,7 +68,7 @@ Currently, the flows that are created and run need to be in the tenant's default
 
 ## Copilot Skills trigger support for Power Automate customer-managed keys (CMK) protected flows
 
-Currently, the flows utilizing Copilot invoking user's connection as opposed to embedded connections aren't supported for invokling cloud flows protected by CMK. Learn more about known limitations for Power Automate CMK in [Known limitations](customer-managed-keys.md#known-limitations).
+Currently, the flows utilizing Copilot invoking user's connection as opposed to embedded connections aren't supported for invoking cloud flows protected by CMK. Learn more about known limitations for Power Automate CMK in [Known limitations](customer-managed-keys.md#known-limitations).
 
 ## Related information
 
