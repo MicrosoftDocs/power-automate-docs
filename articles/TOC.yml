@@ -293,7 +293,7 @@
       href: ./dataverse/flows-power-apps.md
     - name: Create a cloud flow that uses Microsoft Dataverse
       href: common-data-model-intro.md
-    - name: Create a cloud flow to view retained data (preview)
+    - name: Create a cloud flow to view retained data
       href: ./dataverse/data-retention-flow.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md
