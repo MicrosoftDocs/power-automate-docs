@@ -86,7 +86,7 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 
         If the service principal is provisioned in your Microsoft Entra, the page should look like the following screenshot:
 
-        :::image type="content" source="media/hosted-machines/azure-portal.png" alt-text="Screenshot of the Enterprise applications in Microsoft Entra ID.":::
+        :::image type="content" source="media/hosted-machines/azure-portal.svg" alt-text="Screenshot of the Enterprise applications in Microsoft Entra ID.":::
 
         If the application is like the presented screenshot, you don't need to perform any extra steps. However, you must create the service principal if the application isn't showing up.
 
@@ -307,16 +307,16 @@ You can connect to your own virtual network with your hosted machines to securel
 > [!NOTE]
 > You can have up to 30 custom virtual networks configured per tenant.
 
-### General network requirement
+### General network requirements
 
-To use your own network and provision Microsoft Entra joined hosted machines, you must meet the following requirements:
+To use your own network with hosted machines, you must meet the following requirements:
 
 - You must have a virtual network in your Azure subscription in the same region where you created the hosted machines.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
 - A subnet within the virtual network and available IP address space.
 - [Allow network connectivity](/windows-365/enterprise/requirements-network) to required services.
 
-The virtual network needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
+The virtual network needs to be created in the same location as your hosted machines. You can find the following mapping with your environment Geo:
 
 - Australia: Australia East
 - Asia: East Asia
@@ -334,13 +334,7 @@ The virtual network needs to be created in the same location with your hosted ma
 - United Kingdom: UK South
 - United States: East US
 
-### Additional requirements for Microsoft Entra hybrid joined hosted machines (preview)
-
-[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
-
-If your organization has an on-premises Active Directory implementation and you want your hosted machines to be joined to it, you can accomplish this task with Microsoft Entra hybrid join.
-
-[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+### Additional requirements for Microsoft Entra hybrid joined hosted machines
 
 To use your own network and provision Microsoft Entra hybrid joined machines, you must meet the following requirements:
 
@@ -413,19 +407,19 @@ The last step before being able to reference your virtual network from Power Aut
     - **Network connection name:** A unique name to identify the network connection.
     - **Description:** An optional description for the network connection.
 
-1. Select one of the **Azure virtual network** available in Azure that meets the network requirement.
+1. Select one of the **Azure virtual network** available in Azure that meets the network requirements.
 
 1. Select the **Subnet** the hosted machine uses.
 
 1. Select the **Domain join type** the machine uses.
 
-1. If the **'Microsoft Entra hybrid join (preview)'** is selected, the following information is required:
+1. If the **'Microsoft Entra hybrid join'** is selected, the following information is required:
    - **DNS domain name** : The DNS name of the Active Directory domain you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
    - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain, which can hold users, groups, and computers. Make sure that this OU is enabled to sync with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
    - **Username UPN** : The username, in user principal name (UPN) format, you want to use for connecting the hosted machines to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
    - **Domain password** : The password for the user.
     > [!NOTE]
-    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join (preview) domain join type.
+    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join domain join type.
 
 :::image type="content" source="media/hosted-machines/create-network-connection.png" alt-text="Screenshot of the New network connection dialog.":::
 

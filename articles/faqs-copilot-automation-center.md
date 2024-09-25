@@ -1,7 +1,7 @@
 ---
 title: FAQ for Copilot in automation center (preview)
 description: This FAQ discusses Copilot in automation center (preview) and the key considerations for making use of this technology responsibly.
-ms.date: 05/20/2024
+ms.date: 09/10/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -28,15 +28,15 @@ Copilot in automation center is able to answer questions about the following fou
 | 3 | Work queue data | Work queue items statuses, SLA attainment, processor counts |
 | 4 | Documentation (generative answers) | General Power Automate feature questions such as *how to analyze activity with Copilot* |
 
-The first three skills in the above, will translate natural language queries (questions) entered by users into Microsoft Dataverse FetchXML query syntax. This allows users to easily retrieve information about their automation data by asking questions in natural language. Additionally, Copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart to effectively present the insights and information to the user.
+The first three skills listed in the table translate natural language queries (questions) entered by users into Microsoft Dataverse FetchXML query syntax. This allows users to easily retrieve information about their automation data by asking questions in natural language. Additionally, Copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart to effectively present the insights and information to the user.
 
 The fourth skill uses the Azure OpenAI service to search for answers in Power Automate for desktop's public documentation based on user prompts.
 
-## What are Copilot in automation center's general intended use(s)?
+## What is Copilot in automation center's general intended use?
 
 The purpose of this system is to enable users to retrieve information about their automation activity data, and general product features by asking questions in natural language.
 
-## What are Copilot in automation center's intended use(s) for generative answers?
+## What is Copilot in automation center's intended use for generative answers?
 
 The intended use of Copilot's generative answers is to help users find quick and accurate answers to product related questions without having to navigate away from Power Automate for desktop.
 

@@ -2,16 +2,17 @@
 title: Use Power Automate flows as plugins in Copilot for Microsoft 365 (preview)
 description: Learn how to Power Automate flow based plugins from Microsoft Copilot.
 suite: flow
-author: hamenon-ms
+author: samathur
 contributors:
+  - samathur
   - hamenon-ms
   - radioblazer
   - v-aangie
-ms.author: kewaiss
+ms.author: samathur
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 05/21/2024
+ms.date: 09/23/2024
 ms.collection: 
   - bap-ai-copilot
 ---
@@ -64,6 +65,10 @@ You can use the flow based plugins shipped by Microsoft in your Copilot for Micr
 ## Environment support
 
 Currently, the flows that are created and run need to be in the tenant's default environment. A setup experience for the plugin that allows users to choose nondefault environments to associate the plugin with isn't available yet.
+
+## Copilot Skills trigger support for Power Automate customer-managed keys (CMK) protected flows
+
+Currently, the flows utilizing Copilot invoking user's connection as opposed to embedded connections aren't supported for invoking cloud flows protected by CMK. Learn more about known limitations for Power Automate CMK in [Known limitations](customer-managed-keys.md#known-limitations).
 
 ## Related information
 

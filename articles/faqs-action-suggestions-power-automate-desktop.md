@@ -1,7 +1,7 @@
 ---
 title: FAQ for suggested actions in Power Automate for desktop
 description: This FAQ discusses suggested actions in Power Automate for desktop and the key considerations for making use of this technology responsibly.
-ms.date: 01/16/2024
+ms.date: 09/10/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -22,7 +22,7 @@ Suggested actions can help you discover the next step of your automation by anal
 
 ## What is/are action suggestions intended use(s)?
 
-The intended use of suggested actions is to allow users to quickly discover actions that can be used as the next building steps in their automations without searching the full list of actions in the designer.
+The intended use of suggested actions is to allow users to quickly discover actions that can be used as the next building steps in their automation without searching the full list of actions in the designer.
 
 ## How can I use the suggested actions functionality?
 
