@@ -377,10 +377,10 @@
       href: ./desktop-flows/getting-started-org.md
   - name: Create desktop flows
     href: ./desktop-flows/create-flow.md
-  - name: Create desktop flows using the AI Recorder
-    href: ./desktop-flows/create-flow-using-ai-recorder.md
-  - name: Copilot in Power Automate for desktop (preview)
+  - name: Get started with Copilot in Power Automate for desktop (preview)
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
+  - name: Create desktop flows using the AI Recorder (preview)
+    href: ./desktop-flows/create-flow-using-ai-recorder.md
   - name: Run desktop flows
     items:
     - name: Run unattended and attended desktop flows from the cloud
@@ -431,6 +431,8 @@
       href: ./desktop-flows/create-cyberark-credential.md
   - name: Create desktop flow connections
     href: ./desktop-flows/desktop-flow-connections.md
+  - name: Allowlist tenants for connect with sign-in connections
+    href: ./desktop-flows/how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
   - name: Work queues
@@ -457,7 +459,7 @@
       href: ./desktop-flows/monitor-run-details.md
     - name: Desktop flow queues
       href: ./desktop-flows/monitor-desktop-flow-queues.md
-  - name: Data loss prevention (DLP) (preview)
+  - name: Data loss prevention (DLP)
     href: ./desktop-flows/data-loss-prevention.md
   - name: Power Automate console
     href: ./desktop-flows/console.md
@@ -1240,8 +1242,8 @@
     href: faqs-copilot-automation-activity.md
   - name: FAQ for Copilot in Process Mining
     href: faqs-copilot-in-process-mining.md
-  - name: FAQ for copilot generative answers in Power Automate for desktop
-    href: faqs-copilot-generative-answers-power-automate-desktop.md
+  - name: FAQ for Copilot in Power Automate for desktop
+    href: faqs-copilot-in-pad.md
   - name: FAQ for generating code with natural language
     href: faqs-copilot-nl-to-code.md
   - name: FAQ for suggested actions in Power Automate for desktop
