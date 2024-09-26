@@ -41,7 +41,7 @@ The **Process work queue item action** action requires the following arguments.
   |-----|-----|-----|---------------|-----------------|
   | **Work queue** |No    |Text |               |The work queue ID of the work queue that contains items to process|
   | **Overwrite work queue auto-retry configuration** | Yes | Boolean| False | When enabled, shows a field to set or overwrite the maximum allowed number of retries when encountering `IT Exceptions`. |
-  | **Max retry count** |No    |Text value, Numeric value| |               |The maximum allowed number of retries when encountering `IT Exceptions`. This allows you to adjust the maximum retry count to a higher or lower value, or even disable the retry mechanism by setting the max retry count to **0** (zero).
+  | **Max retry count** |No    |Text value, Numeric value| The maximum allowed number of retries when encountering `IT Exceptions`. This allows you to adjust the maximum retry count to a higher or lower value, or even disable the retry mechanism by setting the max retry count to **0** (zero). |
 
 #### Variables produced
 
