@@ -2,7 +2,7 @@
 title: Work queues actions
 description: Use work queue actions in Power Automate desktop flows.
 ms.topic: conceptual
-ms.date: 07/08/2024
+ms.date: 09/26/2024
 ms.author: dbekirop
 ms.reviewer: 
 contributors:
@@ -27,7 +27,7 @@ Work queues can play a crucial role in improving the efficiency, scalability, an
 
 The **Process work queue items** action indicates to the queue orchestrator that the machine is ready to process one or more work queue items. The user context requesting a new item needs to have sufficient privileges on the work queue and work queue items table in order to process work queues. 
 
-:::image type="content" source="media\workqueues\ProcessWorkQueueItems.png" alt-text="Screenshot of the Process Work Queue Item action." lightbox="media\workqueues\ProcessWorkQueueItems.png":::
+:::image type="content" source="media\workqueues\work-queue-pad-procwqiaction-new.png" alt-text="Screenshot of the Process Work Queue Item action." lightbox="media\workqueues\work-queue-pad-procwqiaction-new.png":::
 
 The **work queue** referenced in the previous action is used by the queue orchestrator to determine the next available items in that work queue that are in **Queued** state. As the desktop flow steps through the actions within the Process work queue items loop that this action renders, you can call on the value by utilizing the variable you have designated for the action along with the property `.Value`.  In this case, you could call the value of the work queue item using the variable %WorkQueueItem.Value% 
 
@@ -40,6 +40,8 @@ The **Process work queue item action** action requires the following arguments.
   | Argument       | Optional | Accepts | Default Value | Description     |
   |-----|-----|-----|---------------|-----------------|
   | **Work queue** |No    |Text |               |The work queue ID of the work queue that contains items to process|
+  | **Overwrite work queue auto-retry configuration** | Yes | Boolean| False | When enabled, a field appears allowing you to set or overwrite the maximum number of retries for `IT Exceptions`. |
+  | **Max retry count** |No    |Text value, Numeric value|               | The maximum allowed number of retries for `IT Exceptions`. This parameter lets you adjust the retry count to a higher or lower value, or even disable the retry mechanism by setting the count to 0.|
 
 #### Variables produced
 
