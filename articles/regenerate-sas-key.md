@@ -15,11 +15,7 @@ ms.date: 09/27/2024
 
 # Regenerate the SAS key used in HTTP trigger flows
 
-This article provides instructions on how to regenerate the SAS key used in HTTP trigger flows in Power Automate. There are three main steps to follow:
-
-- [Step 1: Identify the SAS string being used by your flow](#step-1-identify-the-sas-string-being-used-by-your-flow)
-- [Step 2: Create the request to regenerate the string](#step-2-create-the-request-to-regenerate-the-string)
-- [Step 3: Execute the regenerate request](#step-3-execute-the-regenerate-request)
+This article provides instructions on how to regenerate the SAS (Shared Access Signature) key used in HTTP trigger flows in Power Automate. Regenerating the SAS key is essential for maintaining the security and functionality of your HTTP trigger flows. Over time, the SAS key might become compromised or need to be updated to adhere to security policies. By regenerating the key, you ensure that only authorized requests can trigger your flow, which protects your data and processes from unauthorized access.
 
 ## Step 1: Identify the SAS string being used by your flow
 
@@ -42,9 +38,7 @@ To identify the SAS string being used by your flow:
 
 ## Step 2: Create the request to regenerate the string
 
-Creating the request to regenerate the SAS string is essential for maintaining the security and functionality of your HTTP trigger flows. Over time, the SAS key might become compromised or need to be updated to adhere to security policies. By regenerating the key, you ensure that only authorized requests can trigger your flow, which protects your data and processes from unauthorized access.
-
-This step is a multi-step process that requires using the browser tools. The steps in this section use Microsoft Edge browser.
+Creating the request to regenerate the SAS string is essential for maintaining the security and functionality of your HTTP trigger flows. This multi-step process requires using the browser tools. The steps in this section use Microsoft Edge browser.
 
 To create the request to regenerate the string:
 
