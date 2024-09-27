@@ -24,8 +24,6 @@
     href: flows-designer.md     
   - name: Get started with triggers
     href: triggers-introduction.md
-  - name: Regenerate the SAS key used in HTTP trigger flows
-    href: regenerate-sas-key.md
   - name: Add OAuth authentication for HTTP request triggers
     href: oauth-authentication.md
   - name: Get help from the Microsoft Copilot Studio bot
@@ -111,6 +109,8 @@
       href: change-cloud-flow-owner.md
     - name: Format data by examples
       href: format-data-by-examples.md
+    - name: Regenerate the SAS key used in HTTP trigger flows
+      href: regenerate-sas-key.md
   - name: Use flows in other apps
     items:
     - name: Use the Power Automate plugin for ChatGPT
