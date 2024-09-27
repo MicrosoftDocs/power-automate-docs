@@ -10,23 +10,28 @@ ms.author: samathur
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/26/2024
-ms.collection: 
-  - bap-ai-copilot
+ms.date: 09/27/2024
 ---
 
 # Regenerate the SAS key used in HTTP trigger flows
 
 This article provides instructions on how to regenerate the SAS key used in HTTP trigger flows in Power Automate. There are three main steps to follow:
 
-- Identify the SAS string: To begin, open the flow in Power Automate Designer, copy the HTTP trigger URL, and note the current "sig=" value in the URL.
-- Regenerate the SAS key: Use the browser's Developer Tools to create a request to regenerate the SAS key by modifying the request URL and Authorization Header, then construct a fetch command in a text editor.
-- Execute and verify: Execute the fetch command in the browser's console, verify the key regeneration by checking the updated "sig=" value, and troubleshoot if necessary.
+- [Step 1: Identify the SAS string being used by your flow](#step-1-identify-the-sas-string-being-used-by-your-flow)
+- [Step 2: Create the request to regenerate the string](#step-2-create-the-request-to-regenerate-the-string)
+- [Step 3: Execute the regenerate request](#step-3-execute-the-regenerate-request)
 
 ## Step 1: Identify the SAS string being used by your flow
 
+Identifying the SAS string being used by your flow is crucial because it allows you to confirm that the key regeneration process was successful. By noting the current SAS string, you can compare it with the new string after regeneration to ensure that the operation was executed correctly. This step helps in validating that the flow is using the updated key, which is essential for maintaining the security and functionality of your HTTP trigger flows.
+
+To identify the SAS string being used by your flow:
+
 1. Sign in to [Power Automate](https://flow.microsoft.com/).
-1. Open the flow in the designer.
+1. Open your flow in the designer.
+
+    :::image type="content" source="media/regenerate-sas-key/sas-designer.png" alt-text="Screenshot of the 'Parameters' tab in the designer.":::
+
 1. Copy the HTTP trigger URL.
  
     `https://<region>/workflows/<workflowid>/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=<value>`
@@ -37,19 +42,26 @@ This article provides instructions on how to regenerate the SAS key used in HTTP
 
 ## Step 2: Create the request to regenerate the string
 
-This is a multi-step process that requires using the browser tools. We illustrate the steps using Microsoft Edge browser.
+Creating the request to regenerate the SAS string is essential for maintaining the security and functionality of your HTTP trigger flows. Over time, the SAS key might become compromised or need to be updated to adhere to security policies. By regenerating the key, you ensure that only authorized requests can trigger your flow, which protects your data and processes from unauthorized access.
 
-1. Navigate to the **Flow Details** page (not the designer page).
-1. Open **Developer Tools** and navigate to the **Network** tab.
-1. Select **Clear Network log**.
-1. Select **Record Network log**.
+This step is a multi-step process that requires using the browser tools. The steps in this section use Microsoft Edge browser.
+
+To create the request to regenerate the string:
+
+1. Navigate to the flow **Details** page (not the designer page).
+
+    :::image type="content" source="media/regenerate-sas-key/sas-flow-details.png" alt-text="Screenshot of the flow 'Details' page.":::
+
+1. In the Windows **Settings** menu, select **More tools** > **Developer tools** and navigate to the **Network** tab.
+1. Select **Clear network log** (or select **Ctrl** + **L**).
+1. Select **Record network log** (or select **Ctrl** + **E**).
 1. Refresh the page by selecting **Ctrl** + **R**.
 1. Filter the items with **api.flow** and select the request that starts with **runs?api-version=**.
-    <!--[For Angie: Recording button, Clear log button, Request URL in General and Authorization Bearer token in Request Headers need to be highlighted for sub steps here 3 thru 9]-->
 
-1. From the Network tab > Headers sub-tab, copy the Request URL to a text editor
-1. Replace the word **runs** with **regenerateAccessKey**.
-1. Also, from the Network tab > Headers sub-tab, copy the Authorization Header carefully making sure to not pick up the next header
+    :::image type="content" source="media/regenerate-sas-key/runs-filter.png" alt-text="Screenshot of the 'Network' tab in the 'Developer tools' screen.":::
+
+1. From the **Network** tab > **Headers** subtab, copy the **Request URL** to a text editor.1. Replace the word **runs** with **regenerateAccessKey**.
+1. From the **Network** tab > **Headers** subtab, copy the **Authorization Header**. Make sure you don't include the next header in your selection.
 1. Copy the following text in your text editor:
 
 ``` json
@@ -64,30 +76,36 @@ fetch('<regenerateAccessKeyUrl>', {
 .then(console.log)
 ```
 
-11.	Replace  `<regenerateAccessKeyUrl>` in the fetch command with the request URL you constructed in Step 8 in your text editor.
-12.	Replace `<regenerateAccessKeyUrl>` with the Authorization header you copied in Step 9 to your text editor.
+11. In the fetch command, replace  `<regenerateAccessKeyUrl>` with the request URL you constructed in Step 8 in your text editor.
+12. Replace `<regenerateAccessKeyUrl>` with the **Authorization** header you copied in Step 9 to your text editor.
 
-You're now ready with the command to regenerate the key.
+Congratulations! You're now ready with the command to regenerate the key.
 
 ## Step 3: Execute the regenerate request
 
-Follow the instructions to regenerate the key.
+When you execute the regenerate request, the SAS key associated with your HTTP trigger flow is regenerated. This means that a new key is created, and the old key is invalidated. The new key is reflected in the `sig=` parameter of the HTTP trigger URL. This ensures that only requests with the new key can trigger the flow, enhancing the security of your automation.
 
-1. Copy the code snippet from Step 2 that you constructed in the text editor.
-1. Navigate to the Console tab and paste the text here.
+To execute the regenerate request:
+
+1. Copy the code snippet from [Step 2](#step-2-create-the-request-to-regenerate-the-string) that you constructed in the text editor.
+1. Navigate to the **Console** tab and paste the text here.
 1. Select **Enter**.
 
- 
-[Note for Angie: we need to black out all the text in red except the fetch, method: POST and other lines in Yellow]
+    The command executes as **Promise Pending**.
 
-    You should see the command executing as “Promise Pending”.
+    :::image type="content" source="media/regenerate-sas-key/console-text.png" alt-text="Screenshot of the 'Console' tab with your code snippet from the text editor.":::
 
-1. Open the flow in Power Automate Designer and open the HTTP trigger action. The Post URL shouldn't have a different value for “sig=” than what was recorded in Step 1. 
+1. Open your flow in the Power Automate designer and open the HTTP trigger action.
 
-You successfully refreshed the SAS key.
+    The Post URL shouldn't have a different value for `sig=` than what was recorded at the end of [Step 1](#step-1-identify-the-sas-string-being-used-by-your-flow).
+
+    :::image type="content" source="media/regenerate-sas-key/sas-designer.png" alt-text="Screenshot of the 'Parameters' tab in the designer with the new 'sig='.":::
+
+Congratulations! You successfully refreshed the SAS key.
 
 ## Troubleshooting
 
-- If you encounter an error executing the command, do make sure that the text in the command doesn't have any extra spacings and is well constructed.
+- If you encounter an error executing the command, make sure the text in the command doesn't have any extra spacings and is well constructed.
+
 - If the command execution returns **Rejected**, the key might still be updated successfully. It’s best to validate the flow URL to ensure the `sig=` value is indeed updated.
 

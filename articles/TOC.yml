@@ -24,6 +24,8 @@
     href: flows-designer.md     
   - name: Get started with triggers
     href: triggers-introduction.md
+  - name: Regenerate the SAS key used in HTTP trigger flows
+    href: regenerate-sas-key.md
   - name: Add OAuth authentication for HTTP request triggers
     href: oauth-authentication.md
   - name: Get help from the Microsoft Copilot Studio bot
