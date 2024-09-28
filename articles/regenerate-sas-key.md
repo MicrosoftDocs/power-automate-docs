@@ -54,8 +54,9 @@ To create the request to regenerate the string:
 
     :::image type="content" source="media/regenerate-sas-key/runs-filter.png" alt-text="Screenshot of the 'Network' tab in the 'Developer tools' screen.":::
 
-1. From the **Network** tab > **Headers** subtab, copy the **Request URL** to a text editor.1. Replace the word **runs** with **regenerateAccessKey**.
-1. From the **Network** tab > **Headers** subtab, copy the **Authorization Header**. Make sure you don't include the next header in your selection.
+1. From the **Network** tab > **Headers** subtab, copy the **Request URL** to a text editor.
+1. Replace the word **runs** with **regenerateAccessKey**.
+1. From the **Network** tab > **Headers** subtab, copy the **Authorization** header. Make sure you don't include the next header in your selection.
 1. Copy the following text in your text editor:
 
 ``` json
