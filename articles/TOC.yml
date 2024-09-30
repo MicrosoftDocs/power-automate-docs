@@ -109,6 +109,8 @@
       href: change-cloud-flow-owner.md
     - name: Format data by examples
       href: format-data-by-examples.md
+    - name: Regenerate the SAS key used in HTTP trigger flows
+      href: regenerate-sas-key.md
   - name: Use flows in other apps
     items:
     - name: Use the Power Automate plugin for ChatGPT
@@ -293,7 +295,7 @@
       href: ./dataverse/flows-power-apps.md
     - name: Create a cloud flow that uses Microsoft Dataverse
       href: common-data-model-intro.md
-    - name: Create a cloud flow to view retained data (preview)
+    - name: Create a cloud flow to view retained data
       href: ./dataverse/data-retention-flow.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md
