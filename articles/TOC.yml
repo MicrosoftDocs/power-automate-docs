@@ -1021,6 +1021,14 @@
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md
+    - name: Process simulations (preview)
+      items:
+      - name: Overview
+        href: ./minit/process-mining-simulations-overview.md
+      - name: Create a simulation scenario
+        href: ./minit/process-mining-simulations-scenario.md
+      - name: Run a simulation and generate results
+        href: ./minit/process-mining-simulations-run-results.md
   - name: Task mining capability
     items:
     - name: Overview
