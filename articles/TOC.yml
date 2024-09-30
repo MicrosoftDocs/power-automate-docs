@@ -109,6 +109,8 @@
       href: change-cloud-flow-owner.md
     - name: Format data by examples
       href: format-data-by-examples.md
+    - name: Regenerate the SAS key used in HTTP trigger flows
+      href: regenerate-sas-key.md
   - name: Use flows in other apps
     items:
     - name: Use the Power Automate plugin for ChatGPT
@@ -1019,6 +1021,14 @@
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md
+    - name: Process simulations (preview)
+      items:
+      - name: Overview
+        href: ./minit/process-mining-simulations-overview.md
+      - name: Create a simulation scenario
+        href: ./minit/process-mining-simulations-scenario.md
+      - name: Run a simulation and generate results
+        href: ./minit/process-mining-simulations-run-results.md
   - name: Task mining capability
     items:
     - name: Overview
