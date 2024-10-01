@@ -92,7 +92,7 @@ To execute the regenerate request:
 
 1. Open your flow in the Power Automate designer and open the HTTP trigger action.
 
-    The Post URL shouldn't have a different value for `sig=` than what was recorded at the end of [Step 1](#step-1-identify-the-sas-string-being-used-by-your-flow).
+    The Post URL should have a different value for `sig=` than what was recorded at the end of [Step 1](#step-1-identify-the-sas-string-being-used-by-your-flow).
 
     :::image type="content" source="media/regenerate-sas-key/sas-designer.png" alt-text="Screenshot of the 'Parameters' tab in the designer with the new 'sig='.":::
 
