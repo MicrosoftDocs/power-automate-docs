@@ -1,17 +1,11 @@
 ---
-title: Use SharePoint and Power Automate to build workflows | Microsoft Docs
+title: Use SharePoint and Power Automate to build workflows
 description: Provides an overview of the many ways you can use flows with lists created with Microsoft Lists and files.
-services: ''
 suite: flow
-documentationcenter: na
 author: v-aangie
-editor: ''
-tags: ''
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 05/17/2022
+ms.date: 10/08/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -70,10 +64,11 @@ As soon as your flow starts, you can use any of the more than [40 *actions*](/sh
 
 -  Migrate from [classic workflows to Power Automate flows](/sharepoint/dev/business-apps/power-automate/guidance/migrate-from-classic-workflows-to-power-automate-flows) in SharePoint.
 
-## Next steps
+## Related information
 
-- Get started with [Power Automate and SharePoint](/sharepoint/dev/business-apps/power-automate/get-started/create-your-first-flow). 
-- Get started with [approvals](./get-started-approvals.md).
-- Create modern [approval flows](use-expressions-in-conditions.md) in conditions in advanced mode.
+- Get started with [Power Automate and SharePoint](/sharepoint/dev/business-apps/power-automate/get-started/create-your-first-flow)
+- Get started with [approvals](./get-started-approvals.md)
+- Create modern [approval flows](use-expressions-in-conditions.md) in conditions in advanced mode
+- [Training: Integrate SharePoint and Power Automate (learning path)](/training/paths/integrate-power-automate/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

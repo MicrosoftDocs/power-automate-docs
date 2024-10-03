@@ -1,17 +1,11 @@
 ---
 title: Add an advanced option and multiple actions in Power Automate | Microsoft Docs
 description: Expand a cloud flow to include an advanced option, such as how to add collaboration comments to actions and triggers, set email to high priority, and add another action for the same event.
-services: ''
 suite: flow
-documentationcenter: na
 author: v-aangie
-editor: ''
-tags: ''
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 05/14/2022
+ms.topic: conceptual
+ms.date: 10/03/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -25,9 +19,11 @@ Customize a cloud flow by adding one or more advanced options and multiple actio
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Prerequisites
+
 [Create a cloud flow](get-started-logic-flow.md)
 
 ## Add another action
+
 In this procedure, you'll add an action in the middle of the flow. This action will save a file in your Dropbox, archiving the item in the list.
 
 1. Sign into [Power Automate](https://make.powerautomate.com).
@@ -85,6 +81,7 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 If you want to duplicate actions while designing a cloud flow, you can copy and paste them. For example, if you're building a condition and want similar actions in the **If yes** side and the **If no** side, you can build the first action in one side and then copy it to the other side. This is an alternative to creating both actions from scratch.
 
 ### To copy an action
+
 1. On the action menu heading, select **...** (the ellipses).
 1. Select **Copy to my clipboard**. 
 1. Select **New step** where you want your action to go. 
@@ -93,6 +90,7 @@ If you want to duplicate actions while designing a cloud flow, you can copy and 
 1. Select the item you want to paste.
 
 ## Add advanced options
+
 Start with a cloud flow that has a **Send an email (V2)** action.
 
 1. On the bottom of the **Send an email (V2)** card, select **Show advanced options**.
@@ -181,5 +179,9 @@ Do you struggle with writing expressions in your flow actions? You can make use 
  
 > [!NOTE]
 > Some actions might not support the new expression editor.
+
+## Related information
+
+[Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -205,4 +205,10 @@ Now that you've run the flow successfully, you should receive the push notificat
 > [!NOTE]
 > If you don't receive the push notification, confirm that your mobile device has a working data connection.
 
+## Related information
+
+- [Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
+- [Training: Get started with Power Automate (learning path)](https://docs.microsoft.com/learn/paths/get-started-with-power-automate/)
+
+
 [!INCLUDE[footer-include](includes/footer-banner.md)]
