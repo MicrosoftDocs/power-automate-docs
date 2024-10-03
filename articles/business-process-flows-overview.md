@@ -1,7 +1,7 @@
 ---
 title: Business process flows overview
 description: Get an overview of business process flows in Power Automate.
-ms.date: 09/05/2024
+ms.date: 09/25/2024
 author: radioblazer
 contributors:
   - radioblazer
@@ -95,7 +95,7 @@ To make sure a business process is loaded by default for all users (behavior equ
   
  When you include a workflow that you want to trigger on **Stage Exit** of a stage in your business process flow, and that stage is  the last stage in the flow, the designer gives the impression that the workflow is triggered when that stage is completed. However, the workflow isn't triggered because a stage transition doesn't take place. You don't receive a warning or error preventing you from including the workflow on the stage. When a user interacts with the business process flow, finishing or abandoning the process doesn't result in a stage transition, and therefore the workflow isn't triggered. Consider the following examples:  
   
-- You create a business process flow with two stages, S1 connects to  S2, with a workflow on stage S2 and set the trigger to **Stage Exit**.  
+- You create a business process flow with two stages. S1 connects to S2, with a workflow on stage S2 and sets the trigger to **Stage Exit**.  
   
 - You create a business process flow with three stages, S1 connect to S2, then S2 branches to S3. You include a workflow on S2 and set the trigger to **Stage Exit**.  
   
@@ -197,7 +197,7 @@ Recent rows are visible in a lookup column for a model-driven app. To prevent th
 
 - Adding the process table to a model-driven app might result in limited functionality. To learn more, go to [creating and editing business process flows](./create-business-process-flow.md). 
 
-- Business process flows show the name of the business process flow instance, which is set at the time that the business process flow is created. This means if the name in the business process flow definition changes, new business process flow instances display the updated name, but older business process flow instances display the original name. Additionally, localized business process flow definition names aren't displayed.
+- The name of a business process flow doesn't change after the flow is created for a form. If you change the name in the business process flow definition, new business process flows display the updated name, but older ones display the original name. The name doesn't translate after it's set. If the flow creator's language settings was set to Spanish when the business process flow instance was created, the name will be in Spanish for all users, even if the flow creator changed their language later.
 
 ## Related information
 
