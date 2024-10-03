@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.date: 11/20/2023
 ms.subservice: guidance
 ms.author: jaypadimiti
-ms.reviewer: tapanm-MSFT
+ms.reviewer: angieandrews
 contributors: 
   - jpad5
 search.audienceType: 
@@ -119,21 +119,22 @@ namespace ModulesLogEvent
 }
 ```
 
-**Resources**:
+### Resources
+
 This table lists the descriptions and friendly names for parameters in a *Resources.resx* file.
 
-|Name                  |Value           |Comment            |
+|Name     |Value    |Comment  |
 |---------|---------|---------|
 | LogEventToFile_Description    | Custom action to log message to the supplied file    | Action description        |
-| LogEventToFile_FriendlyName              | LogEventToFile              | Action name               |
-| LogEventToFile_LogFileName_Description   | Input parameter of text type                            | Action input description  |
-| LogEventToFile_LogFileName_FriendlyName  | LogFileName                                             | Action input name         |
-| LogEventToFile_LogMessage_Description    | Input parameter of text type                            | Action input description  |
-| LogEventToFile_LogMessage_FriendlyName   | LogMessage                                              | Action input Name         |                  |
-| LogEventToFile_StatusCode_Description    | Output parameter of boolean type                        | Action output description |
-| LogEventToFile_StatusCode_FriendlyName   | LogMessage                                              | Action outputName         |
-| ModulesLogEvent_Description              | Module to manage log events                             | Module description        |
-| ModulesLogEvent_FriendlyName             | LogEvent                                                | Module name               |
+| LogEventToFile_FriendlyName     | LogEventToFile    | Action name               |
+| LogEventToFile_LogFileName_Description   | Input parameter of text type    | Action input description  |
+| LogEventToFile_LogFileName_FriendlyName  | LogFileName   | Action input name         |
+| LogEventToFile_LogMessage_Description    | Input parameter of text type  | Action input description  |
+| LogEventToFile_LogMessage_FriendlyName   | LogMessage   | Action input name       |
+| LogEventToFile_StatusCode_Description    | Output parameter of boolean type  | Action output description |
+| LogEventToFile_StatusCode_FriendlyName   | LogMessage        | Action outputName         |
+| ModulesLogEvent_Description              | Module to manage log events     | Module description        |
+| ModulesLogEvent_FriendlyName             | LogEvent       | Module name               |
 
 ## Build the package and deploy your custom action
 
@@ -171,8 +172,6 @@ Create the package and deploy to Power Automate.
       ```
 
    1. Validate that the imported certificate appears under **Trusted Root Certification Authorities** > **Certificates** in Certificates Microsoft Manager Console (MMC) snap-in.
-
-      :::image type="content" source="media/padca-8-2-new.png" alt-text="Screenshot of validating certificate in Certificate Manager" lightbox="media/padca-8-2-new.png" border="true":::
 
 1. Finalize the custom module created by signing the DLL file using a trusted certificate. Use Visual Studio’s developer command prompt to use the Signtool for this activity.
 
