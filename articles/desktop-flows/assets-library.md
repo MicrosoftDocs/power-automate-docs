@@ -4,7 +4,7 @@ description: Learn about Assets library in Power Automate for desktop.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/25/2024
+ms.date: 10/15/2024
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors:
@@ -21,7 +21,7 @@ search.audienceType:
 > [!IMPORTANT]
 > - This feature requires Power Automate for desktop v2.32 or later.
 
-Assets library allows you to include more functionality in desktop flows. For example, you can upload custom actions to the assets library when required, or you can search for available UI elements collections.
+Assets library allows you to include more functionality in desktop flows. For example, you can make certain cloud connectors available in your flow, upload custom actions to the assets library when required, or you can search for available UI elements collections.
 
 To access the assets library, select the Assets library button at the top-right of the designer.
 
@@ -48,6 +48,12 @@ The UI elements collections (preview) tab shows you the UI elements collections 
 > You can only see UI elements collections that you have created or are shared with you.
 
 :::image type="content" source="media/ui-elements-collections/two-tabs-in-assets-library.png" alt-text="Screenshot of the UI elements collections (preview) tab in the Assets library" border="false":::
+
+## Connectors (preview) tab
+
+The connectors (preview) tab shows you all the cloud connectors that are available to be included in your desktop flow, offering direct integration with the corresponding operations.
+
+
 
 ## Related information
 
