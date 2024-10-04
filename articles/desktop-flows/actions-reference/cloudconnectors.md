@@ -5,10 +5,11 @@ author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 10/15/2024
-ms.author: dipapa
+ms.author: iomavrid
 ms.reviewer: 
 contributors:
   - DanaMartens
+  - dipapa
 search.audienceType: 
   - flowmaker
   - enduser
