@@ -47,7 +47,7 @@ By default, Power Automate for desktop honors the proxy settings specified in Wi
 
 1. Select the check box to agree to the terms of use, and then select **Install**.
 
-If the installation fails, go to the [troubleshooting guide](https://support.microsoft.com/topic/power-automate-desktop-installation-troubleshooting-b2c93d3f-5a90-450a-833d-920a25f2d967) for help.
+If the installation fails, go to the [troubleshooting guide](/troubleshoot/power-platform/power-automate/desktop-flows/power-automate-desktop-installation-issues) for help.
 
 > [!NOTE]
 > There is only one Power Automate installer for both 32-bit and 64-bit computers. It automatically identifies the architecture of your operating system and proceeds to install the suitable version of the files accordingly.
