@@ -5,7 +5,7 @@ author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 09/24/2024
+ms.date: 10/04/2024
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
@@ -46,7 +46,7 @@ After selecting the collection you want to add to your flow, you also need to se
 
 > [!NOTE]
 > - The list of available desktops includes the local computer, the RDP and/or Citrix desktops that may have already been added in the Flow repository tab, as well as any currently active RDP and/or Citrix connections in your machine.
-> - Each collection can only be imported in one target desktop per flow.
+> - Each collection can only be imported into one target desktop per flow.
 
 After you complete the collection inclusion and close the assets library, the collection will now appear in the Collections tab of the UI elements pane, imported under the desktop that was previously selected.
 
@@ -57,7 +57,7 @@ After you complete the collection inclusion and close the assets library, the co
 After being added to a flow, a collection can similarly be removed through the Assets library. All added collections are tagged accordingly, so you can select the option **Remove** that is available for those collections, to remove them from the flow. In this way, the UI elements they contain are no longer available in that flow.
 
 > [!IMPORTANT]
-> Removing a collection from a flow doesn't delete the collection from the environment. Permanently deleting a collection is only available through the UI elements collections' dedicated portal page.
+> Removing a collection from a flow doesn't delete the collection from the environment. You can only permanently delete a collection through the UI elements collections' dedicated portal page.
 
 > [!NOTE]
 > If a collection is removed from a flow while any of its UI elements are already used in the flow's actions, those actions will throw an error and will need to be fixed.
@@ -74,7 +74,7 @@ After creating and publishing a collection, it can be shared with other users so
 
 To make any required adjustments to a collection, that collection needs to be imported to a desktop flow, so that you can access the collection's contents in the flow designer. In addition, you need to be an **Owner** or have at least **Co-owner** rights on that collection to be able to modify it.
 
-You can find below all the different ways to edit and update a collection.
+The methods to edit and update a collection include the following:
 
 ### Add more UI elements to an imported collection
 
@@ -154,7 +154,7 @@ If you made changes in multiple collections at the same time, you can always use
 
 ## Known limitations
 
-- When selected to be added to an imported collection, individual screens and web pages carry over their child UI elements with them, as the latter are automatically checked.
+When selected to be added to an imported collection, individual screens and web pages carry over their child UI elements with them, as the latter are automatically checked.
 
 ## Related information
 

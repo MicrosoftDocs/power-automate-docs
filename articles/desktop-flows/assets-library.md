@@ -4,7 +4,7 @@ description: Learn about Assets library in Power Automate for desktop.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 09/25/2024
+ms.date: 10/04/2024
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors:
@@ -23,13 +23,13 @@ search.audienceType:
 
 Assets library allows you to include more functionality in desktop flows. For example, you can upload custom actions to the assets library when required, or you can search for available UI elements collections.
 
-To access the assets library, select the Assets library button at the top-right of the designer.
+To access the assets library, select the **Assets library** button at the top-right of the designer.
 
-:::image type="content" source="media/assets-library/assets-library-button.png" alt-text="Screenshot of the Assets library button" border="false":::
+:::image type="content" source="media/assets-library/assets-library-button.png" alt-text="Screenshot of the Assets library button." border="false":::
 
 Alternatively, use the **Tools** bar.
 
-:::image type="content" source="media/assets-library/assets-library-tools.png" alt-text="Screenshot of the Assets library button under tools" border="false":::
+:::image type="content" source="media/assets-library/assets-library-tools.png" alt-text="Screenshot of the Assets library button under tools." border="false":::
 
 ## Custom actions tab
 
@@ -38,16 +38,16 @@ Alternatively, use the **Tools** bar.
 > [!NOTE]
 > You can only see custom actions shared with you.
 
-:::image type="content" source="media/assets-library/assets-library-custom-actions.png" alt-text="Screenshot of the Custom actions tab in the Assets library" border="false":::
+:::image type="content" source="media/assets-library/assets-library-custom-actions.png" alt-text="Screenshot of the Custom actions tab in the Assets library." border="false":::
 
 ## UI elements collections tab
 
-The [UI elements collections](ui-elements-collections.md) tab shows you the UI elements collections that are published in the environment you've selected.
+The [UI elements collections](ui-elements-collections.md) tab shows you the UI elements collections that are published in the environment you selected.
 
 > [!NOTE]
 > You can only see UI elements collections that you have created or are shared with you.
 
-:::image type="content" source="media/ui-elements-collections/two-tabs-in-assets-library--GA.png" alt-text="Screenshot of the UI elements collections tab in the Assets library" border="false":::
+:::image type="content" source="media/ui-elements-collections/two-tabs-in-assets-library--GA.png" alt-text="Screenshot of the UI elements collections tab in the Assets library." border="false":::
 
 ## Related information
 
