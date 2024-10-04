@@ -254,7 +254,7 @@ Requests from Power Automate use IP addresses that are associated with the [regi
 
 Calls made from connectors in cloud flows come from [these IP addresses](/connectors/common/outbound-ip-addresses#power-platform). Add them to your network's allowlist to facilitate communications from Power Automate.
 
-## Allowlist of namespaces endpoints required for runtime
+## Allowlist of namespaces endpoints required for Desktop Flows runtime
 
 By default, administrators need to authorize endpoints, including **\*.servicebus.windows.net**, to allow desktop flow runs. If you don't want to authorize this public endpoint, you can alternatively allow all the following namespace endpoints.
 
