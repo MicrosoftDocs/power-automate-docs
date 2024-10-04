@@ -17,26 +17,17 @@ ms.reviewer: angieandrews
 
 # IP address configuration
 
-The [IP addresses](/connectors/common/outbound-ip-addresses#power-platform) from which Power Automate requests are sent depend on the [region](regions-overview.md) where the [environment](environments-overview-admin.md) that contains the flow is located. We don't currently publish FQDNs (fully qualified domain names) available for flow scenarios.
+The [Power Platform Outbound IP Addresses](/connectors/common/outbound-ip-addresses#power-platform) from which Power Automate requests are sent depend on the [region](regions-overview.md) location of the [environment](environments-overview-admin.md) that contains the flow. FQDNs (fully qualified domain names) are not published for flow scenarios.
 
-Some calls a cloud flow makes might come from IP addresses that are listed in the [Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) documentation. Some examples of these calls include HTTP or HTTP + OpenAPI.
+The simplest mechanism to configure a firewall to allow Power Automate cloud flows to call external services through [connectors](/connectors/overview) is to use [Azure Service Tags](/azure/virtual-network/service-tags-overview). The primary service tag for Logic Apps Connectors is **AzureConnectors** as described in [Power Platform Outbound IP Addresses](/connectors/common/outbound-ip-addresses#power-platform).
 
-You should also consult the [Limits and Configuration](limits-and-config.md) article for a supplemental listing for known IP addresses that Power Automate uses.
-
-> [!NOTE]
-> If you're restricting inbound or outbound IP addresses on your network (for example, through a firewall), to ensure flows continue to work, update your network configuration to allow both the [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions. To learn more, go to [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones).
-
-## Logic Apps
+## Logic Apps and Connectors for Cloud Flows runtime
 
 Calls made from a cloud flow go directly through the Azure Logic Apps service. Some examples of these calls include HTTP or HTTP + OpenAPI. To learn which IP addresses are used by that service, go to the [Logic Apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags).
 
-## Connectors
+If you are restricting inbound or outbound IP addresses on your network (for example, through a firewall), to ensure flows continue to work, update your network configuration to allow both the [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions. To learn more, go to [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones).
 
-Calls made from a connector in a cloud flow (for example, the SQL API or the SharePoint API) come from these [IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
-
-If you must authorize IP addresses for your Azure SQL database, you should use these addresses.
-
-## Required services
+## Required endpoints for Power Automate service
 
 The following table lists the services to which Power Automate connects. Ensure none of these services is blocked on your network.
 
@@ -74,25 +65,18 @@ The following table lists the additional endpoints you need when using Power Aut
 | collector.azure.cn   | https  |  Send telemetry for the Mooncake region from the mobile app. |
 | officeapps.live.com   | https   | Access to authentication and authorization endpoints for the mobile app.
 
-## Approval email delivery
+## Services required for Desktop Flows runtime
 
-Refer to the [approvals email delivery article](https://go.microsoft.com/fwlink/?linkid=2128304) for details about approvals email routing.
+The following table lists endpoint data requirements for connectivity from a user's machine for desktop flows runs. Ensure that you authorize Global endpoints and the endpoints corresponding to your cloud.
 
-## Desktop flows services required for runtime
-
-The following table lists endpoint data requirements for connectivity from a user's machine for desktop flows runs. You need to ensure that you authorize Global endpoints and the endpoints corresponding to your cloud.
-
-### Global endpoints
+### Global endpoints for Desktop Flows runtime
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
 | server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, US government, and Chinese clouds. Works as the fallback telemetry endpoint.|
 | msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. WebDriver is used to automate your browser (Microsoft Edge and Google Chrome).|
 
-> [!NOTE]
-> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. To learn more about namespace endpoints, go to [Allow list of namespaces endpoints required for runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-runtime).
-
-### Public endpoints
+### Public endpoints for Desktop Flows runtime
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
@@ -103,7 +87,10 @@ The following table lists endpoint data requirements for connectivity from a use
 | *.api.powerplatform.com | https | Access to several Power Platform APIs (mandatory for cloud connectors utilization in desktop flows). |
 | *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for GCC). |
 
-### US Government endpoints
+> [!NOTE]
+> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. To learn more about namespace endpoints, go to [Allow list of namespaces endpoints required for runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-Desktop-Flows-runtime).
+
+### US Government endpoints for Desktop Flows runtime
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
@@ -119,7 +106,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | *.crm.appsplatform.us | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(US Government - DoD only). |
 | *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for public clouds). |
 
-### 21Vinaet endpoints (China)
+### 21Vinaet endpoints (China) for Desktop Flows runtime
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
@@ -127,5 +114,19 @@ The following table lists endpoint data requirements for connectivity from a use
 |apac.events.data.microsoft.com|https|Handles telemetry for users in China.|
 | *.api.powerplatform.partner.microsoftonline.cn | https | Access to several Power Platform APIs (mandatory for cloud connector actions in desktop flows) (21Vinaet - China only). |
 | *.dynamics.cn | https | Access to Dataverse tables (DesktopFlow modules feature)(21Vinaet - China only). |
+
+## Other IP Address Topics 
+
+### Approval email delivery
+
+Refer to the [approvals email delivery article](https://go.microsoft.com/fwlink/?linkid=2128304) for details about approvals email routing.
+
+### Azure SQL database
+
+If you need to authorize IP addresses for your Azure SQL database, you should use the [Power Platform Outbound IP Addresses](/connectors/common/outbound-ip-addresses#power-platform).
+
+## Related information
+- [Azure Service Tags](/azure/virtual-network/service-tags-overview)
+- [Power Platform URLs and IP Address Ranges](/power-platform/admin/online-requirements)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
