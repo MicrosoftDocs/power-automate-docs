@@ -8,7 +8,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 09/04/2024
+ms.date: 09/16/2024
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -194,6 +194,21 @@ When static outputs are disabled, the toggle label is **Enable Static Result**. 
 
 :::image type="content" source="media/flows-designer/static-result.png" alt-text="Screenshot of the 'Enable or Disable Static Result' toggle in the Testing tab.":::
 
+### View two action panes simultaneously
+
+One the new designer, you can pin an action pane so that you can open a second action pane next to it. This can be useful to compare two similar actions, or copy values across two actions.
+
+To pin an action, you can either right-click the action on the canvas and select **Pin action**, or use the **Pin** icon on the action pane.
+
+:::image type="content" source="media/flows-designer/pin-option.png" alt-text="Screenshot of the 'Pin action' menu option.":::
+
+Once you pin an action, any other action pane when selected is placed to the right of the pinned action pane.
+
+:::image type="content" source="media/flows-designer/pin-result.png" alt-text="Screenshot of a pinned action next to the open action pane.":::
+
+> [!NOTE]
+> To unpin, you can either right-click on action on the canvas and select **Unpin action**, or select the **Pin** icon on the action pane.
+
 ## Identify differences between the classic designer and the cloud flows designer
 
 To quickly identify which designer version you're using, ask yourself the following questions:
@@ -217,13 +232,6 @@ You might notice that some functionalities that were in the classic designer are
 - Power Apps v1 trigger
 - Perform a changeset request action (Dataverse)
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
-- Email auto-complete suggestions in _Send Email/Post message_ in Teams actions
-- Ability to make manual trigger fields optional
-
-## Some known issues
-
-- Dynamic content friendly names are getting updated to internal code names upon save.
-- Automated trigger polling setting (How often do you want to check for new items) reverts to 1min after saving
 
 As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is gradually becoming the primary interface.
 
@@ -243,13 +251,6 @@ Power Automate designer doesn't support browsers that are more than two (2) year
 ### Why do I get this error "The provided flow name contains invalid characters" when importing a flow in a new tenant?
 
 This error is a temporary gap, which you can work around by adding a query parameter `v3=false` in your URL.
-
-### Why do I not see dynamic content from triggers like 'When a response is submitted' or why is the flow automatically putting an unnecessary loop?
-
-This scenario might be because of a temporary issue where the **Split On** setting of the trigger is off. If you enable the setting, the issue should go away.
-
-1. On the [action configuration pane](#action-configuration-pane), select the **Settings** tab.
-1. Under the **Split On** heading, move the toggle to **On**,
 
 ### Why don't I see new or updated SharePoint or Excel column values in my flow?
 
