@@ -73,6 +73,10 @@ Yes. [Learn more](./us-govt.md).
 
 ### What outbound IP addresses are used in each region?
 
-See [Limits and configuration](limits-and-config.md).
+See [Power Automate IP address configuration](/power-automate/ip-address-configuration).
+
+### Can region be changed? 
+
+A [support case](/power-platform/admin/get-help-support) is needed to change environment region.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
