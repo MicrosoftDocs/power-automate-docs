@@ -63,7 +63,7 @@ Adding a connector will make it appear in the actions pane of your flow designer
 
 ## Related information
 
-- [Ckoud connectors](actions-reference/cloudconnectors.md)
+- [Cloud connectors](actions-reference/cloudconnectors.md)
 - [Custom actions](custom-actions.md)
 - [Create custom actions](create-custom-actions.md)
 - [Upload custom actions](upload-custom-actions.md)
