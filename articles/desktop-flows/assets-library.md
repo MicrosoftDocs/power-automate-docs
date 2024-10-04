@@ -42,7 +42,7 @@ Alternatively, use the **Tools** bar.
 
 ## UI elements collections tab
 
-The UI elements collections tab shows you the UI elements collections that are published in the environment you've selected.
+The [UI elements collections](ui-elements-collections.md) tab shows you the UI elements collections that are published in the environment you've selected.
 
 > [!NOTE]
 > You can only see UI elements collections that you have created or are shared with you.
