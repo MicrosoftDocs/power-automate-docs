@@ -51,7 +51,7 @@ The UI elements collections (preview) tab shows you the UI elements collections 
 
 ## Connectors (preview) tab
 
-The connectors (preview) tab shows you all the cloud connectors that are available to be included in your desktop flow, offering out-of-the-box integration with the corresponding operations.
+The Connectors (preview) tab shows you all the cloud connectors that are available to be included in your desktop flow, offering out-of-the-box integration with the corresponding operations.
 
 :::image type="content" source="media/assets-library/connectors-tab-in-assets-library.png" alt-text="Screenshot of the connectors (preview) tab in the Assets library" border="false":::
 
@@ -59,7 +59,7 @@ Adding a connector will make it appear in the actions pane of your flow designer
 
 ### Known limitations
 
-* When a new connector is manually added to the flow, there's currently no option to remove it through the Assets library. It is automatically removed, if you reopen the flow designer and no action belonging to that connector is used in the flow. This is not the case for the cloud connectors that were introduced before the Connectors tab in the Assets library, as those are permanently available in the actions pane of the designer.
+* When a new connector is manually added to the flow, there's currently no option to remove it through the Assets library. It is automatically removed, if you reopen the flow designer and no action belonging to that connector is used in the flow. This is not the case for the cloud connectors that were introduced before the Connectors tab in the Assets library, as those are permanently visible in the actions pane of the designer.
 
 ## Related information
 
