@@ -56,7 +56,7 @@ Selecting this option opens a confirmation dialog, where you can provide a name 
 
 :::image type="content" source="media/ui-elements-collections/publish-confirmation-dialog.png" alt-text="Confirmation dialog when publishing a new collection" border="false":::
 
-When you select **Publish**, the flow enters a *Publishing* state, during which the collection is saved and uploaded in Dataverse to become available in the specific environment. While publishing takes place, the UI of the flow designer remains disabled.
+When you select **Publish**, the popup dialog enters a *Publishing* state, during which the collection is saved and uploaded in Dataverse to become available in the specific environment. While publishing takes place, the UI of the dialog remains disabled. If the same name of another existing collection is used, an error will occur and you will have to provide a new one.
 
 When the collection is successfully published in this way, a corresponding success banner appears in the UI elements pane to inform you accordingly. In addition, if you look at the Collections tab, that collection is now automatically imported into this flow from which it was created. More precisely, it's imported by default into the same desktop (for instance Local computer or Remote desktop) in which the collection's UI elements were originally captured. This is done automatically for you, to avoid manually importing each new collection you create into the same flow it's generated from.
 
