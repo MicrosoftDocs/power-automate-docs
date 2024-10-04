@@ -70,7 +70,7 @@ After a collection is imported and becomes available in a desktop flow, the UI e
 
 ## Edit a UI elements collection
 
-After creating and publishing a collection, it can be shared with other users so that it's imported and used in multiple flows. However, the application that the collection targets may eventually undergo an update, which could lead to the need to update the CSS/UI selectors of the UI elements that belong to the said collection. Similarly, you may need to add more UI elements to an existing collection, or remove some obsolete elements that are no longer needed.
+After creating and publishing a collection, it can be shared with other users so that it's imported and used in multiple flows. However, the application that the collection targets may eventually undergo an update, which could lead to the need to update the CSS/UI selectors of the UI elements that belong to that collection. Similarly, you may need to add more UI elements to an existing collection, or remove some obsolete elements that are no longer needed.
 
 To make any required adjustments to a collection, that collection needs to be imported to a desktop flow, so that you can access the collection's contents in the flow designer. In addition, you need to be an **Owner** or have at least **Co-owner** rights on that collection to be able to modify it.
 
@@ -106,19 +106,19 @@ Editing a UI element that belongs to a collection is identical to editing any ot
 Similarly, you can rename a UI element belonging to a collection, by pressing 'F2' or selecting the option **Rename** in its context menu.
 
 > [!NOTE]
-> In the context menu of a selected (highlighted) item, the options 'Edit' and 'Rename' are individual and apply only to the said item. However, these options become disabled, if other unrelated items also happen to be checked, to avoid any potential confusion around the item they target.
+> In the context menu of a selected (highlighted) item, the options **Edit** and **Rename** are individual and apply only to that item. However, these options become disabled, if other unrelated items also happen to be checked, to avoid any potential confusion around the item they target.
 
 Editing or renaming UI elements in a collection doesn't automatically update that collection with the new changes. For more information, see [Update a UI elements collection](#update-a-ui-elements-collection).
 
 ### Delete UI elements from a collection
 
-Deleting a UI element that belongs to a collection is identical to deleting any other UI element found in the Flow repository tab. In the Collections tab, select and highlight the UI element you want to delete, then press 'Delete' or select the option **Delete** in its context menu. This brings up the respective confirmation dialog to permanently delete that UI element.
+Deleting a UI element that belongs to a collection is identical to deleting any other UI element found in the Flow repository tab. In the Collections tab, select and highlight the UI element you want to delete, then press <kbd>Delete</kbd> or select the option **Delete** in its context menu. This brings up the respective confirmation dialog to permanently delete that UI element.
 
 > [!IMPORTANT]
 > The option **Remove unused UI elements** in the main context menu at the top right of the UI elements pane is disabled, when you navigate to the Collections tab. This option is only available in the Flow repository tab. This behavior is meant to protect you from the unintentional deletion of a collection's UI elements; there can be elements that are unused in your current flow, which may still be used in other flows where the same collection is referenced.
 
 > [!NOTE]
-> In the context menu of a selected (highlighted) item, the option 'Delete' is individual and applies only to the said item. However, this option becomes disabled, if other unrelated items also happen to be checked, to avoid any potential confusion around the item it targets.
+> In the context menu of a selected (highlighted) item, the option **Delete** is individual and applies only to that item. However, this option becomes disabled, if other unrelated items also happen to be checked, to avoid any potential confusion around the item it targets.
 
 Deleting UI elements from a collection doesn't automatically update that collection with the new changes. For more information, see [Update a UI elements collection](#update-a-ui-elements-collection).
 
