@@ -47,7 +47,7 @@ The UI elements collections tab shows you the UI elements collections that are p
 > [!NOTE]
 > You can only see UI elements collections that you have created or are shared with you.
 
-:::image type="content" source="media/ui-elements-collections/two-tabs-in-assets-library--GA.png" alt-text="Screenshot of the UI elements collections (preview) tab in the Assets library" border="false":::
+:::image type="content" source="media/ui-elements-collections/two-tabs-in-assets-library--GA.png" alt-text="Screenshot of the UI elements collections tab in the Assets library" border="false":::
 
 ## Related information
 
