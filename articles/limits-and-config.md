@@ -250,9 +250,8 @@ There are [limitations](/connectors/sharepointonline/#limits) on how you can use
 
 ## IP addresses
 
-Requests from Power Automate use IP addresses that are associated with the [region of the environment](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center) in which your flow exists.
-
-Calls made from connectors in cloud flows come from [these IP addresses](/connectors/common/outbound-ip-addresses#power-platform). Add them to your network's allowlist to facilitate communications from Power Automate.
+See [IP address configuration for Power Automate](/power-automate/ip-address-configuration).
+Specific endpoint information for Desktop Flows runtime is listed below.
 
 ## Allowlist of namespaces endpoints required for Desktop Flows runtime
 
