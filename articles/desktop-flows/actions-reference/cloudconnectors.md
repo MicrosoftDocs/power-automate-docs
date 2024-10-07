@@ -54,7 +54,6 @@ search.audienceType:
     - [Get a row by ID from selected environment](/connectors/commondataserviceforapps/#get-a-row-by-id-from-selected-environment)
     - [List rows from selected environment](/connectors/commondataserviceforapps/#list-rows-from-selected-environment)
     - [Perform a bound action in selected environment](/connectors/commondataserviceforapps/#perform-a-bound-action-in-selected-environment)
-    - [Perform a changeset request](/connectors/commondataserviceforapps/#perform-a-changeset-request)
     - [Perform an unbound action in selected environment](/connectors/commondataserviceforapps/#perform-an-unbound-action-in-selected-environment)
     - [Relate rows in selected environment](/connectors/commondataserviceforapps/#relate-rows-in-selected-environment)
     - [Unrelate rows in selected environment](/connectors/commondataserviceforapps/#unrelate-rows-in-selected-environment)
