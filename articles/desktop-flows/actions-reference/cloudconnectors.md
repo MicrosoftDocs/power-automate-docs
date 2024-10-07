@@ -41,7 +41,7 @@ search.audienceType:
 - Specific endpoints must be included in the allowlist for desktop flows containing cloud connector actions to work properly. More information: [Desktop flow services required for runtime](../../ip-address-configuration.md#desktop-flows-services-required-for-runtime)
 - For **Office 365 Outlook** actions, if you're using an EWS application access policy, ensure that the following user-agents are allowed (on top of the user agents listed [here](/connectors/office365/#common-errors)) for successful desktop flow execution: PowerAutomateLocal/*, PowerAutomateCloud/*
 - Dynamic output schema isn't fully supported for cloud connector actions in desktop flows. Refrain from using variables in the respective dropdown fields (Site address/ List name/ Select file etc.) while configuring a cloud connector action.
-- Sharing desktop flows with cloud connector actions is currently supported with certain requirements. You can read more [here](../how-to/share-desktop-flows-that-contain-connector-actions.md).
+- Sharing desktop flows with cloud connector actions is currently supported with certain requirements. You can read more in this [article](../how-to/share-desktop-flows-that-contain-connector-actions.md). Using connector actions, as well as their association with connections and connection references, is also explained [here](../how-to/use-connector-actions.md).
 - To enable attended or unattended runs (cloud-initiated runs), make sure your desktop flow uses the [Power Automate v2 schema](../schema.md) and all connection references are marked as embedded.
 - Connection reference embedding is only available for co-owners. Users (run-only) can execute flows shared with them only via Power Automate for desktop's console using their own connections.
 - Desktop flows with embedded connection references don't currently support application lifecycle management (ALM) capabilities.
@@ -171,3 +171,7 @@ More cloud connectors (preview) are available to be added in a desktop flow thro
 - [Azure DevOps](/connectors/visualstudioteamservices)
 - [Webex](/connectors/webex)
 - [Viva Engage](/connectors/yammer)
+
+### Known limitations
+
+* Although creating a connection for a connector through desktop flows is generally supported
