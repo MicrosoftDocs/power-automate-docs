@@ -174,4 +174,6 @@ More cloud connectors (preview) are available to be added in a desktop flow thro
 
 ### Known limitations
 
-* Creating a connection for a connector in desktop flows is generally supported through the sign in dialog. If an error occurs during signing in, 
+* Creating a connection for a connector in desktop flows is generally supported through the sign in dialog. If an error occurs during this process, you can alternatively create a connection through the corresponding [portal page](https://go.microsoft.com/fwlink/?linkid=2286334).
+
+:::image type="content" source="media/cloudconnectors/connector-banner-warning-to-create-connection-in-portal.png" alt-text="Screenshot of the sign in dialog in connector actions including a banner message" border="false":::
