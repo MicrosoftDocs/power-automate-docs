@@ -174,4 +174,4 @@ More cloud connectors (preview) are available to be added in a desktop flow thro
 
 ### Known limitations
 
-* Although creating a connection for a connector through desktop flows is generally supported
+* Creating a connection for a connector in desktop flows is generally supported through the sign in dialog. If an error occurs during signing in, 
