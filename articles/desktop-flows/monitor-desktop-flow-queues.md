@@ -11,7 +11,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 01/29/2024
+ms.date: 10/07/2024
 ms.author: kenseongtan
 ms.reviewer: matp
 contributors:
@@ -27,8 +27,7 @@ search.audienceType:
 
 # Monitor desktop flow queues
 
-As you scale the automations in your business, you might need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor, manage and visualize all your queued desktop flow runs in just one location. Desktop flow queues can be used whether your target device is a machine, machine group.
-
+As you scale the automations in your business, you might need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor, manage, and visualize all your queued desktop flow runs in just one location. Desktop flow queues can be used whether your target device is a machine or machine group.
 
 ## Setting a priority
 
@@ -38,7 +37,7 @@ Available priorities are High and Normal (the default value). This value can als
 
   ![Screenshot of a cloud flow using the Run a flow built with Power Automate Desktop action.](media\monitoring\monitor-desktop-flow-queues-1.png)
 
-When multiple runs are queued, the execution ordering is based on the run priority and enqueued time. Runs with a high priority that's been enqueued first will be executed first.
+When multiple runs are queued, the execution ordering is based on the run priority and enqueued time. Runs with a high priority that's been enqueued first are executed first.
 
 ## View run queue for a machine or machine group
 
@@ -51,14 +50,12 @@ Visit the details page for your machine or machine group, then select on the **R
 In order to see runs in this list, one of the following situations must be true:
 
 - You're [running an attended or unattended desktop flow](run-desktop-flow.md) in the current environment
-- Another user has [shared their desktop flow](../create-team-flows.md#share-a-cloud-flow-with-run-only-permissions) with you, which has run in the current environment
+- Another user [shared their desktop flow](../create-team-flows.md#share-a-cloud-flow-with-run-only-permissions) with you, which has run in the current environment
 - You have [permission](/power-platform/admin/database-security) to see view all data in the environment
 
 > [!TIP]
-> To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources in [Configure user security to resources in an environment](/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database).
-
-> [!TIP]
-> If you encounter some issues with desktop flow queues, you can learn more about [Troubleshooting desktop flow run queue errors](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-desktop-flow-run-queue-errors)
+> - To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources in [Configure user security to resources in an environment](/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database).
+> - If you encounter errors related to the desktop flow run queue, refer to the troubleshooting article. Learn more in [Troubleshoot desktop flow run queue errors](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-desktop-flow-run-queue-errors).
 
 ## Queue Status
 
@@ -85,7 +82,7 @@ Changing the priority only impacts the current run and not any subsequent ones. 
 
 ## Move to top
 
-The owner of the device or a user with administrator privileges for the machine, machine group can override the queue priority by moving an item to the top of the queue. That item is put at the top of the queue regardless of its original priority and queued time. If multiple runs are moved to top, the last one added will be executed first.
+The owner of the device or a user with administrator privileges for the machine or machine group can override the queue priority by moving an item to the top of the queue. That item is put at the top of the queue regardless of its original priority and queued time. If multiple runs are moved to the top, the last one added is executed first.
 
 You can cancel moving a run to top. It reverts the run back to its original priority and queued time.
 

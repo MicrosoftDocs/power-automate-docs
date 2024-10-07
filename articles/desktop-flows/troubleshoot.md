@@ -4,7 +4,7 @@ description: See how to troubleshoot common issues of Power Automate desktop flo
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 04/09/2024
+ms.date: 10/07/2024
 ms.author: pefelesk
 ms.reviewer: tapanm
 contributors:
@@ -71,7 +71,7 @@ The tool also provides other functionality such as getting the name of the accou
 
 If your desktop flow run fails, go to [Errors when running attended or unattended desktop flows](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-errors-running-attended-or-unattended-desktop-flows) and find mitigation steps for different error codes.
 
-If you encounter erorrs related to desktop flow run queue, you can learn more how to [troubleshoot desktop flow run queue errors](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-desktop-flow-run-queue-errors).
+If you encounter errors related to the desktop flow run queue, refer to the troubleshooting article. Learn more in [Troubleshoot desktop flow run queue errors](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-desktop-flow-run-queue-errors).
 
 ## Collect machine logs
 
