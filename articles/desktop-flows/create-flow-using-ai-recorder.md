@@ -101,7 +101,7 @@ Speak clearly and show each step in detail as you demonstrate the process. Wait 
 
 This video shows a demo of the AI Recorder:
 
-> [!VIDEO https://www.youtube.com/embed/xt3uyoe3Le0?si=hWgo3tEKuzhFrSVq]
+> [!VIDEO 853935fc-c43c-4bf2-9a9d-12b83f3abcfd]
 
 ### What are some scenarios I can try with the AI Recorder?
 

@@ -109,6 +109,8 @@
       href: change-cloud-flow-owner.md
     - name: Format data by examples
       href: format-data-by-examples.md
+    - name: Regenerate the SAS key used in HTTP trigger flows
+      href: regenerate-sas-key.md
   - name: Use flows in other apps
     items:
     - name: Use the Power Automate plugin for ChatGPT
@@ -293,7 +295,7 @@
       href: ./dataverse/flows-power-apps.md
     - name: Create a cloud flow that uses Microsoft Dataverse
       href: common-data-model-intro.md
-    - name: Create a cloud flow to view retained data (preview)
+    - name: Create a cloud flow to view retained data
       href: ./dataverse/data-retention-flow.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md
@@ -532,7 +534,7 @@
       href: /dotnet/api/?view=pad-actions-sdk-latest&preserve-view=true
     - name: Build custom actions in Power Automate for desktop
       href: ./guidance/how-to/build-custom-action/buildcustomaction.md
-  - name: UI elements collections (preview)
+  - name: UI elements collections
     items:
     - name: UI elements collections
       href: ./desktop-flows/ui-elements-collections.md
@@ -1019,6 +1021,14 @@
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md
+    - name: Process simulations (preview)
+      items:
+      - name: Overview
+        href: ./minit/process-mining-simulations-overview.md
+      - name: Create a simulation scenario
+        href: ./minit/process-mining-simulations-scenario.md
+      - name: Run a simulation and generate results
+        href: ./minit/process-mining-simulations-run-results.md
   - name: Task mining capability
     items:
     - name: Overview
