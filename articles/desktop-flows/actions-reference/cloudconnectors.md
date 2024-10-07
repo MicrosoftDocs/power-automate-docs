@@ -41,7 +41,7 @@ search.audienceType:
 - Specific endpoints must be included in the allowlist for desktop flows containing cloud connector actions to work properly. More information: [Desktop flow services required for runtime](../../ip-address-configuration.md#desktop-flows-services-required-for-runtime)
 - For **Office 365 Outlook** actions, if you're using an EWS application access policy, ensure that the following user-agents are allowed (on top of the user agents listed [here](/connectors/office365/#common-errors)) for successful desktop flow execution: PowerAutomateLocal/*, PowerAutomateCloud/*
 - Dynamic output schema isn't fully supported for cloud connector actions in desktop flows. Refrain from using variables in the respective dropdown fields (Site address/ List name/ Select file etc.) while configuring a cloud connector action.
-- Sharing desktop flows with cloud connector actions is currently supported with certain requirements. You can read more in this [article](../how-to/share-desktop-flows-that-contain-connector-actions.md). Using connector actions, as well as their association with connections and connection references, is also explained [here](../how-to/use-connector-actions.md).
+- Sharing desktop flows with cloud connector actions is currently supported with certain requirements. Learn more in [Share desktop flows that contain connector actions](../how-to/share-desktop-flows-that-contain-connector-actions.md). Learn about connector actions and their association with connections and connection references in [Use connector actions](../how-to/use-connector-actions.md).
 - To enable attended or unattended runs (cloud-initiated runs), make sure your desktop flow uses the [Power Automate v2 schema](../schema.md) and all connection references are marked as embedded.
 - Connection reference embedding is only available for co-owners. Users (run-only) can execute flows shared with them only via Power Automate for desktop's console using their own connections.
 - Desktop flows with embedded connection references don't currently support application lifecycle management (ALM) capabilities.
@@ -103,9 +103,9 @@ All co-owners and run-only users are required to bring your own connection (BYOC
 > [!NOTE]
 > BYOC is available for both co-owners and run-only makers. BYOC is only available for console initiated flow executions.
 
-## List of Cloud Connectors
+## List of cloud connectors
 
-Here's a list of Cloud Connectors in Power Automate for desktop, which are currently available and permanently visible in the actions pane:
+The following is a list of cloud connectors in Power Automate for desktop that are currently available and permanently visible in the actions pane:
 
 - [Microsoft Dataverse](/connectors/commondataserviceforapps)
 - [SharePoint](/connectors/sharepointonline)
@@ -173,6 +173,6 @@ More cloud connectors (preview) are available to be added in a desktop flow thro
 
 ### Known limitations
 
-* Creating a connection for a connector in desktop flows is generally supported through the sign in dialog. If an error occurs during this process, you can alternatively create a connection through the corresponding [portal page](https://go.microsoft.com/fwlink/?linkid=2286334).
+- Creating a connection for a connector in desktop flows is supported through the sign-in dialog. If an error occurs during this process, you can create a connection through the corresponding [portal page](https://go.microsoft.com/fwlink/?linkid=2286334).
 
-:::image type="content" source="media/cloudconnectors/connector-banner-warning-to-create-connection-in-portal.png" alt-text="Screenshot of the sign in dialog in connector actions including a banner message" border="false":::
+    :::image type="content" source="media/cloudconnectors/connector-banner-warning-to-create-connection-in-portal.png" alt-text="Screenshot of the sign in dialog in connector actions including a banner message" border="false":::
