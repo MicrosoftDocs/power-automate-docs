@@ -50,14 +50,14 @@ Visit the details page for your machine or machine group, then select on the **R
 In order to see runs in this list, one of the following situations must be true:
 
 - You're [running an attended or unattended desktop flow](run-desktop-flow.md) in the current environment
-- Another user [shared their desktop flow](../create-team-flows.md#share-a-cloud-flow-with-run-only-permissions) with you, which has run in the current environment
+- Another user [shared their desktop flow](../create-team-flows.md#share-a-cloud-flow-with-run-only-permissions) with you, which ran in the current environment
 - You have [permission](/power-platform/admin/database-security) to see view all data in the environment
 
 > [!TIP]
 > - To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources in [Configure user security to resources in an environment](/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database).
-> - If you encounter errors related to the desktop flow run queue, refer to the troubleshooting article. Learn more in [Troubleshoot desktop flow run queue errors](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-desktop-flow-run-queue-errors).
+> - If you encounter errors related to the desktop flow run queue, go to [Troubleshoot desktop flow run queue errors](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-desktop-flow-run-queue-errors).
 
-## Queue Status
+## Queue status
 
 A run in a queue can have the following status:
 
@@ -107,13 +107,13 @@ Enabling this feature means that extended queue prioritization is applied on mac
 
 Principle. The machine-assignment algorithm always waits for the first run in queue **Next to run** status to be assigned to a machine before considering the next one.
 
-Step-by-step logic for an attended run. The first run in queue is an attended run, its connection user is user **Y**:​
+Step-by-step logic for an attended run. The first run in queue is an attended run. Its connection user is user **Y**:​
 
 1. *​Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance, and so on).
 2. *Filter*: The algorithm selects all machines, which have an opened session of user **Y**.
 3. *Allocation*: The algorithm assigns the run to one of the remaining machines (randomly). If no machine is remaining after the last filter, the run is failed.
 
-Step-by-step logic for an unattended run. The first run in queue is an unattended run, its connection user is user **Y**:​
+Step-by-step logic for an unattended run. The first run in queue is an unattended run. Its connection user is user **Y**:​
 
 1. *​Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance, and so on).
 2. *Filter*: The algorithm selects all available machines (that is, machines that have at least one session available).
@@ -146,7 +146,7 @@ Step-by-step logic for an attended run: The first run in queue is an attended ru
 3. *Reprioritization*: The algorithm reprioritizes the queue by considering the next run in queue until a run is assignable to a machine.
 4. *Allocation*: The algorithm assigns the run to one of the remaining machines (randomly).
 
-Step-by-step logic for an unattended run. The first run in queue is an unattended run, its connection user is user **Y**:​
+Step-by-step logic for an unattended run. The first run in queue is an unattended run. Its connection user is user **Y**:​
 
 1. *Filter*: The algorithm selects all machines, which are connected and ready to process runs (not in maintenance, and so on).
 2. *Filter*: The algorithm selects all available machines (= machines, which have at least one session available).
@@ -159,6 +159,6 @@ Step-by-step logic for an unattended run. The first run in queue is an unattende
 ## Known issues
 
 - Microsoft recommends that you limit the number of short (~under 1 min) desktop flows that you queue in large machine groups.
-- Desktop flow queues are designed using a best-effort FIFO (first-in, first-out) approach to process runs in the order in which they were received, with the oldest execution running first. However, due to the way runs are prepared and processed internally, it's possible that runs added to the queue a few seconds later will be started before the previous one already in the queue, to optimize the use of machines.
+- Desktop flow queues are designed using a best-effort FIFO (first-in, first-out) approach to process runs in the order in which they were received, with the oldest execution running first. However, due to the way runs are prepared and processed internally, it's possible that runs added to the queue a few seconds later are started before the previous one already in the queue, to optimize the use of machines.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
