@@ -27,12 +27,8 @@ search.audienceType:
 
 # Monitor desktop flow queues
 
-> [!IMPORTANT]
-> Gateways for desktop flows are no longer supported. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
+As you scale the automations in your business, you might need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor, manage and visualize all your queued desktop flow runs in just one location. Desktop flow queues can be used whether your target device is a machine, machine group.
 
-As you scale the automations in your business, you might need an easy way to ensure that competing desktop flows are running according to their business priority. Monitor, manage and visualize all your queued desktop flow runs in just one location. Desktop flow queues can be used whether your target device is a machine, machine group, or a gateway.
-> [!NOTE]
-> Everyone accessing the run queues for their gateways from the **Desktop flow queues** page should now navigate to the **Gateways** pivot in the **Machines** page to access them.
 
 ## Setting a priority
 
@@ -61,6 +57,9 @@ In order to see runs in this list, one of the following situations must be true:
 > [!TIP]
 > To enable a user to view all the desktop flow runs in the current environment, ensure they have been assigned at least a System Administrator or Environment Admin security role for that environment. Learn more about configuring user security to resources in [Configure user security to resources in an environment](/power-platform/admin/database-security#assign-security-roles-to-users-in-an-environment-that-has-a-dataverse-database).
 
+> [!TIP]
+> If you encounter some issues with desktop flow queues, you can learn more about [Troubleshooting desktop flow run queue errors](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-desktop-flow-run-queue-errors)
+
 ## Queue Status
 
 A run in a queue can have the following status:
@@ -80,13 +79,13 @@ Four actions are available when clicking on the three dots next to the desktop f
 
 ## Change priority
 
-You can change the priority of a specific run by clicking on the three dots then **Change priority**. You can only change the priority of a run of which you're an owner, or if you're a co-owner on the machine/machine group or admin on the gateway.
+You can change the priority of a specific run by clicking on the three dots then **Change priority**. You can only change the priority of a run of which you're an owner, or if you're a co-owner on the machine/machine group.
 
 Changing the priority only impacts the current run and not any subsequent ones. If you wish to [change the priority of all the upcoming runs](#setting-a-priority), you need to change the priority in the connector action.
 
 ## Move to top
 
-The owner of the device or a user with administrator privileges for the machine, machine group, or gateway can override the queue priority by moving an item to the top of the queue. That item is put at the top of the queue regardless of its original priority and queued time. If multiple runs are moved to top, the last one added will be executed first.
+The owner of the device or a user with administrator privileges for the machine, machine group can override the queue priority by moving an item to the top of the queue. That item is put at the top of the queue regardless of its original priority and queued time. If multiple runs are moved to top, the last one added will be executed first.
 
 You can cancel moving a run to top. It reverts the run back to its original priority and queued time.
 
@@ -160,24 +159,9 @@ Step-by-step logic for an unattended run. The first run in queue is an unattende
 4. *Reprioritization*: The algorithm reprioritizes the queue by considering the next run in queue (until a run is assignable to a machine).
 5. *Allocation*: The algorithm assigns the run to one of the remaining machines (randomly)
 
-## View list of run queues for gateways
-
-Users can view the desktop flow queues for their gateways under the **Machines page > Gateways pivot**. The gateways pivot is only available if you own or have access to a gateway.
-
-  ![Screenshot of a list of all desktop flow run queues.](media\monitoring\monitor-desktop-flow-queues-2.png)
-
-From this page you can view all the gateways to which you have access. Each gateway has its own run queue when used to run desktop flows.
-
-## Using gateways with multiple environments
-
-We recommend using a gateway for desktop flows only by one environment. However, gateways can still be used across multiple environments if needed.
-
-With multiple environments, in some cases no flows might appear to be running even with a full list of queued runs, as the gateway might be running flows in another environment. Run queues are per environment and can't be prioritized one over the other. A message is shown to indicate if the gateway is being used in another environment.
-
 ## Known issues
 
 - Microsoft recommends that you limit the number of short (~under 1 min) desktop flows that you queue in large machine groups.
-- Machines and machine groups aren't available in China regions. You can still view the desktop flow queue for your gateways by visiting **Desktop flow queues** under the **Monitor** section in the left navigation.
 - Desktop flow queues are designed using a best-effort FIFO (first-in, first-out) approach to process runs in the order in which they were received, with the oldest execution running first. However, due to the way runs are prepared and processed internally, it's possible that runs added to the queue a few seconds later will be started before the previous one already in the queue, to optimize the use of machines.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
