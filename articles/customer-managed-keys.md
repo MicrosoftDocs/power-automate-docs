@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/23/2024
+ms.date: 10/08/2024
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -56,7 +56,6 @@ When an environment is enabled for customer-managed keys, then Power Automate da
 
 - [Tenant-wide reporting in Power Platform admin center](/power-platform/admin/power-automate-analytics-reports)
 - [Data export to Data Lake](/power-platform/admin/self-service-analytics-schema-definition#power-automate-folder-structure)
-- [Application Insights](/power-platform/admin/app-insights-cloud-flow)
 - [Cloud flow run history](/power-automate/dataverse/cloud-flow-run-metadata) (for [automation center](/power-automate/automation-center-overview))
 - [Power Automate mobile app](/power-automate/mobile/overview-mobile), [notifications page](/power-automate/mobile/notifications)
 - Cloud flow activity page
