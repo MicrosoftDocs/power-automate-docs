@@ -207,6 +207,6 @@ Now that you've run the flow successfully, you should receive the push notificat
 
 ## Related information
 
-- [Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
+[Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

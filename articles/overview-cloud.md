@@ -52,6 +52,7 @@ If you can't find your flow, try one of the options in the following table.
 
 ## Related information
 
+- [Training: Describe building automation with Microsoft Power Automate (module)](/training/modules/introduction-power-automate/)
 - [Training: Create and Manage Automated Processes by using Power Automate (learning path)](/training/paths/create-manage-automated-processes-by-using-power-automate/)
 - [Training: Automate a business process using Power Automate (learning path)](/training/paths/automate-process-power-automate/)
 
