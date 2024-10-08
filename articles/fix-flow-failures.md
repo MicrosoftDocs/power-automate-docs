@@ -6,7 +6,7 @@ suite: flow
 author: DBEKI
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/02/2024
+ms.date: 10/09/2024
 ms.author: dbekirop
 ms.reviewer: angieandrews
 search.audienceType: 

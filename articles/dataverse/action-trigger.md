@@ -6,7 +6,7 @@ author: v-aangie
 ms.author: Matow
 ms.reviewer: angieandrews
 ms.topic: conceptual
-ms.date: 10/03/2024
+ms.date: 10/09/2024
 search.audienceType: 
   - maker
 ---
@@ -52,4 +52,5 @@ Here's the naming scheme for the parameters.
 
 ## Related information
 
-[Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
+- [Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
+- [Training: Integrate Power Automate with SharePoint HTTP actions (module)](/training/modules/integration-http-connector/)

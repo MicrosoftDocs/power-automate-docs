@@ -1,7 +1,7 @@
 ---
 title: Get started with Copilot in cloud flows
 description: Learn how to access and use Copilot in cloud flows.
-ms.date: 10/02/2024
+ms.date: 10/09/2024
 ms.custom: bap-template
 ms.topic: conceptual
 author: kisubedi

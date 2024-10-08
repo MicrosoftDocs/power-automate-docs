@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 10/09/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -208,7 +208,5 @@ Now that you've run the flow successfully, you should receive the push notificat
 ## Related information
 
 - [Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
-- [Training: Get started with Power Automate (learning path)](https://docs.microsoft.com/learn/paths/get-started-with-power-automate/)
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

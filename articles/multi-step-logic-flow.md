@@ -1,17 +1,18 @@
 ---
-title: Add an advanced option and multiple actions in Power Automate | Microsoft Docs
+title: Add an advanced option and multiple actions in Power Automate
 description: Expand a cloud flow to include an advanced option, such as how to add collaboration comments to actions and triggers, set email to high priority, and add another action for the same event.
 suite: flow
 author: v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/03/2024
+ms.date: 10/09/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
+
 # Add multiple actions and advanced options to a cloud flow
 
 Customize a cloud flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced option that sends an email message as high priority. In addition to sending mail when an item is added to a list created in Microsoft Lists, create a file in Dropbox that contains the same information.
@@ -182,6 +183,7 @@ Do you struggle with writing expressions in your flow actions? You can make use 
 
 ## Related information
 
-[Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
+- [Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
+- [Training: Integrate Power Automate with SharePoint HTTP actions (module)](/training/modules/integration-http-connector/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
