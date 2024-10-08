@@ -1,17 +1,17 @@
 ---
 title: IP address configuration
 description: Learn about IP address configuration, the services that Power Automate connect to, various endpoints, and more.
-author: masisley
+author: ChrisGarty
 contributors:
-  - GiovanniBenitez
   - DBEKI
+  - GiovanniBenitez
   - nnyarbro
   - v-aangie
   - jpapadimitriou
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 07/03/2024
-ms.author: nyarbrough
+ms.date: 10/08/2024
+ms.author: CGarty
 ms.reviewer: angieandrews
 ---
 
@@ -46,6 +46,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | graph.microsoft.com | https | Access to Microsoft graph - for getting user information such as a profile photo. |
 | *.azure-apim.net | https | Access to the Runtime for connectors. |
 | *.azure-apihub.net | https | Access to the Runtime for connectors. |
+| *.blob.core.windows.net | https | Location of exported flows. |
 | *.flow.microsoft.com <br> *.logic.azure.com | https | Access to the Power Automate site. |
 | *.powerautomate.com | https | Access to Power Automate site. |
 | *.powerapps.com | https | Access to the Power Apps site. |
@@ -90,7 +91,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. WebDriver is used to automate your browser (Microsoft Edge and Google Chrome).|
 
 > [!NOTE]
-> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. To learn more about namespace endpoints, go to [Allow list of namespaces endpoints required for runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-runtime).
+> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. Learn more about namespace endpoints in [Allow list of namespaces endpoints required for desktop flows runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-desktop-flows-runtime).
 
 ### Public endpoints
 
