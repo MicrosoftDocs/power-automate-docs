@@ -31,7 +31,7 @@ Building desktop flows is now easier than ever with Record with Copilot, also kn
 
 Watch this short video to learn how to use Record with Copilot:
 
-[How to build automations with the AI Recorder - YouTube](https://www.youtube.com/watch?v=xt3uyoe3Le0)
+> [!VIDEO 853935fc-c43c-4bf2-9a9d-12b83f3abcfd]
 
 ## Prerequisites
 
@@ -137,4 +137,4 @@ The recorder captures a video of the selected screen, audio from the chosen micr
 
 ## Share your feedback
 
-Do you have any thoughts on the AI Recorder? We'd love to hear from you! Send us a note at <powerautomate-ai@microsoft.com>. We’d love to chat with you.
+Do you have any thoughts on Record with Copilot? We'd love to hear from you! Send us a note at <powerautomate-ai@microsoft.com>. We’d love to chat with you.
