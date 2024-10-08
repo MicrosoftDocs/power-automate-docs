@@ -1,17 +1,17 @@
 ---
 title: IP address configuration
 description: Learn about IP address configuration, the services that Power Automate connect to, various endpoints, and more.
-author: masisley
+author: ChrisGarty
 contributors:
-  - GiovanniBenitez
   - DBEKI
+  - GiovanniBenitez
   - nnyarbro
   - v-aangie
   - jpapadimitriou
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 07/03/2024
-ms.author: nyarbrough
+ms.date: 10/08/2024
+ms.author: CGarty
 ms.reviewer: angieandrews
 ---
 
