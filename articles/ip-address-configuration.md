@@ -36,7 +36,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | Domains | Protocols | Uses |
 | --------|  ---------| ---- |
 | login.microsoft.com<br />login.windows.net<br />login.microsoftonline.com<br />login.live.com<br />secure.aadcdn.microsoftonline-p.com | https | Access to authentication and authorization endpoints. |
-| graph.microsoft.com | https | Access to Microsoft graph - for getting user information such as a profile photo. |
+| graph.microsoft.com | https | Access to Microsoft graph for getting user information such as a profile photo. |
 | *.azure-apim.net | https | Access to the Runtime for connectors. |
 | *.azure-apihub.net | https | Access to the Runtime for connectors. |
 | *.blob.core.windows.net | https | Location of exported flows. |
@@ -45,7 +45,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.powerapps.com | https | Access to the Power Apps site. |
 | *.azureedge.net | https | Access to the Power Automate CDN. |
 | *.microsoftcloud.com | https | Access to NPS (Net Promoter Score). |
-| webshell.suite.office.com | https | Access to Office for header and search. Learn more in [Office 365 URLs and ranges](/office365/enterprise/.urls-and-ip-address-ranges#microsoft-365-common-and-office-online). |
+| webshell.suite.office.com | https | Access to Office for header and search. Learn more in [Office 365 URLs and ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#microsoft-365-common-and-office-online). |
 | *.dynamics.com | https | Access to Dataverse tables |
 |go.microsoft.com|https|Access to the Power Automate to check for updates|
 |download.microsoft.com|https|Access to the Power Automate to check for updates|
@@ -91,7 +91,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for GCC). |
 
 > [!NOTE]
-> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. Learn more about namespace endpoints in [Allow list of namespaces endpoints required for runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-runtime).
+> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. Learn more about namespace endpoints in [Allow list of namespaces endpoints required for desktop flows runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-desktop-flows-runtime).
 
 ### US Government endpoints for desktop flows runtime
 
