@@ -69,7 +69,7 @@ To associate a cloud flow to a process flow, go to the process flow details page
 
 Select the cloud flows you wish to associate to your Process flow and save : 
 
-![Associated flow - Click edit](media/capacity-utilization/associated-flow-select-flow.png)
+![Associated flow - Select flow](media/capacity-utilization/associated-flow-select-flow.png)
 
 > [!NOTE]
 >
