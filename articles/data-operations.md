@@ -5,7 +5,7 @@ suite: flow
 author: kisubedi
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/21/2024
+ms.date: 10/09/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -169,6 +169,11 @@ To do this, follow the steps in the previous **Use the create CSV table action**
 
 > [!TIP]
 > If you plan to send the HTML table via email, remember to select **IsHtml** in the email action.
+
+## Related information
+
+- [Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
+- [Training: Integrate Power Automate flows and Dataverse (learning path)](/training/paths/integrate-dataverse-power-automate/)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
