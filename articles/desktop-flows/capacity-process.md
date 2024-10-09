@@ -65,6 +65,8 @@ A cloud flow associated to a process-flow is also covered by the Process license
 
 To associate a cloud flow to a process flow, go to the process flow details page and select **Edit** in the 'Associated apps and flows' card.
 
+![Associated flow - Click edit](media/capacity-utilization/associated-flow-click-edit.png)
+
 
 ## Related information
 
