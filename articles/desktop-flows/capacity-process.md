@@ -67,6 +67,16 @@ To associate a cloud flow to a process flow, go to the process flow details page
 
 ![Associated flow - Click edit](media/capacity-utilization/associated-flow-click-edit.png)
 
+Select the cloud flows you wish to associate to your Process flow and save : 
+
+![Associated flow - Click edit](media/capacity-utilization/associated-flow-select-flow.png)
+
+> [!NOTE]
+>
+> - Process flows can't be associated together
+> - A maximum of 25 flows can be associated to the same Process flow
+> - De-association can only be done from the Process flow
+> - An associated flow can't have its plan updated - it needs to be de-associated first
 
 ## Related information
 
