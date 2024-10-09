@@ -318,6 +318,8 @@
       href: edit-solution-aware-flow.md
     - name: Remove a solution-aware flow
       href: remove-solution-aware-flow.md
+  - name: Cloud flows best practices white paper
+    href: https://go.microsoft.com/fwlink/?linkid=2290320
   - name: Troubleshoot
     items:
     - name: Troubleshoot common issues with triggers
@@ -381,7 +383,7 @@
     href: ./desktop-flows/create-flow.md
   - name: Get started with Copilot in Power Automate for desktop (preview)
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
-  - name: Create desktop flows using the AI Recorder (preview)
+  - name: Create desktop flows using Record with Copilot (preview)
     href: ./desktop-flows/create-flow-using-ai-recorder.md
   - name: Run desktop flows
     items:
