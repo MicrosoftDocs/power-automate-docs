@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: teams
 ms.topic: conceptual
-ms.date: 10/11/2024
+ms.date: 10/09/2024
 ms.author: kewaiss
 ms.reviewer: angieandrews
 ---

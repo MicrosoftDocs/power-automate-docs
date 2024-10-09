@@ -4,7 +4,7 @@ description: Learn how to import a solution.
 author: ChrisGarty
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/11/2024
+ms.date: 10/09/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template

@@ -1,12 +1,11 @@
 ---
 title: Create flows to manage email in Power Automate
-description: Create flows to manage email.
+description: Learn how to create flows to manage email.
 suite: flow
 author: v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-
-ms.date: 010/07/2024
+ms.date: 10/09/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
