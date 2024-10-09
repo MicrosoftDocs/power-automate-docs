@@ -45,7 +45,7 @@ You now have a machine that can perform unattended RPA.
 > - **Enable auto-allocation** allows unattended bots to automatically be allocated to a machine when an unattended run requires it. Multiple unattended bots can be auto-allocated in case of simultaneous unattended runs.
 > - For a global overview on how process capacity is used within the environment, use the **Manage capacity utilization** link. It also provides the option to request more capacity.
 
-## Allocate process capacity to a cloud flow
+## Allocate process capacity to a cloud flow (transition period)
 
 When process capacity is allocated to a cloud flow, it becomes a *process plan* based on which the cloud flow is licensed to run premium actions independently from the user license.
 
@@ -67,6 +67,28 @@ The cloud flow is now independent from the user license.
 >
 > The process capacity allocation to cloud flow will be updated in a future release.
 
+## Allocate process capacity to a cloud flow (after transition period)
+
+When process capacity is allocated to a cloud flow, it becomes a *process plan* based on which the cloud flow is licensed to run premium actions independently from the user license.
+
+To allocate a Process capacity to a cloud flow, go to the cloud flow details page and select **Edit**.
+
+![Cloud flow details page](media/capacity-utilization/cloud-flow-details-page.png)
+
+> [!NOTE]
+>
+> At creation, a cloud flow is by default based on the user plan.
+
+Change the plan used by the flow to **Process plan**, select the number of Process capacity you want to allocate to the flow and save.
+
+![Cloud flow details page - Change plan](media/capacity-utilization/cloud-flow-details-page-planChange.png)
+
+The cloud flow is now independent from the user license.
+
+> [!NOTE]
+>
+> Each Process capacity allocated to the cloud flow increases its daily PPR allowance by 250 000.
+ 
 ## Related information
 
 [Process capacity utilization](capacity-utilization-process.md)
