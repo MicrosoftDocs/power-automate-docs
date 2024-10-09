@@ -5,7 +5,7 @@ author: radioblazer
 ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 10/09/2024
 ms.collection: bap-ai-copilot
 search.audienceType: 
   - maker
@@ -211,3 +211,8 @@ Preference-Applied: odata.maxpagesize=3
 ### Partition ID
 
 An option to specify the partitionId while retrieving data for NoSQL tables. To learn more, see [Improve performance using storage partitions when accessing table data](/powerapps/developer/data-platform/org-service/azure-storage-partitioning-sdk).
+
+## Related information
+
+- [Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
+- [Training: Integrate Power Automate flows and Dataverse (learning path)](/training/paths/integrate-dataverse-power-automate/)
