@@ -69,7 +69,7 @@ The cloud flow is now independent from the user license.
 
 ## Allocate process capacity to a cloud flow (after transition period)
 
-When process capacity is allocated to a cloud flow, it becomes a *process plan* based on which the cloud flow is licensed to run premium actions independently from the user license.
+Allocated to a cloud flow, a Process capacity entitles it to use standard, premium, and custom connectors while being accessed by unlimited users within the organization (regardless of their user license). Each Process capacity allocated to a cloud flow entitles it to 250k daily [Power Platform Request](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) (stackable limit).
 
 To allocate a Process capacity to a cloud flow, go to the cloud flow details page and select **Edit**.
 
@@ -81,13 +81,9 @@ To allocate a Process capacity to a cloud flow, go to the cloud flow details pag
 
 Change the plan used by the flow to **Process plan**, select the number of Process capacity you want to allocate to the flow and save.
 
-![Cloud flow details page - Change plan](media/capacity-utilization/cloud-flow-details-page-planChange.png)
+![Cloud flow details page - Change plan](media/capacity-utilization/cloud-flow-details-page-planChange2.png)
 
 The cloud flow is now independent from the user license.
-
-> [!NOTE]
->
-> Each Process capacity allocated to the cloud flow increases its daily PPR allowance by 250 000.
  
 ## Related information
 
