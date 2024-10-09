@@ -29,7 +29,7 @@ Custom actions exist at the environment level. As a best practice, use a "dev&md
 ## Known limitations
 
 - Custom actions groups can't exceed 30 MB upon upload.
-- Specific endpoints must be included in the allowlist for desktop flows containing custom actions to work properly. More information: [Desktop flow services required for runtime](../ip-address-configuration.md#desktop-flows-services-required-for-runtime)
+- Specific endpoints must be included in the allowlist for desktop flows containing custom actions to work properly. More information: [Desktop flow services required for runtime](../ip-address-configuration.md#services-required-for-desktop-flows-runtime)
 - Application lifecycle management (ALM) isn't fully supported for desktop flows with dependencies on custom actions.
 - Upload date might differ in the portal than what is shown in the Assets library inside Power Automate for desktop.
 - The Assets library can't display more than 5000 custom actions groups.
