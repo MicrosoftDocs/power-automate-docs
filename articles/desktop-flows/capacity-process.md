@@ -45,29 +45,7 @@ You now have a machine that can perform unattended RPA.
 > - **Enable auto-allocation** allows unattended bots to automatically be allocated to a machine when an unattended run requires it. Multiple unattended bots can be auto-allocated in case of simultaneous unattended runs.
 > - For a global overview on how process capacity is used within the environment, use the **Manage capacity utilization** link. It also provides the option to request more capacity.
 
-## Allocate process capacity to a cloud flow (transition period)
-
-When process capacity is allocated to a cloud flow, it becomes a *process plan* based on which the cloud flow is licensed to run premium actions independently from the user license.
-
-To allocate a Process capacity to a cloud flow, go to the cloud flow details page and select **Edit**.
-
-![Cloud flow page - User plan](media/capacity-utilization/cloud-flow-user-plan.png)
-
-> [!NOTE]
->
-> At creation, a cloud flow is by default based on the user plan.
-
-Change the plan used by the flow to **Per-flow/Process** and save.
-
-![Cloud flow page - Settings - Process plan](media/capacity-utilization/cloud-flow-setting-flow-plan.png)
-
-The cloud flow is now independent from the user license.
-
-> [!NOTE]
->
-> The process capacity allocation to cloud flow will be updated in a future release.
-
-## Allocate process capacity to a cloud flow (after transition period)
+## Allocate process capacity to a cloud flow 
 
 Allocated to a cloud flow, a Process capacity entitles it to use standard, premium, and custom connectors while being accessed by unlimited users within the organization (regardless of their user license). Each Process capacity allocated to a cloud flow entitles it to 250k daily [Power Platform Request](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) (stackable limit).
 
@@ -75,16 +53,19 @@ To allocate a Process capacity to a cloud flow, go to the cloud flow details pag
 
 ![Cloud flow details page](media/capacity-utilization/cloud-flow-details-page.png)
 
-> [!NOTE]
->
-> At creation, a cloud flow is by default based on the user plan.
-
 Change the plan used by the flow to **Process plan**, select the number of Process capacity you want to allocate to the flow and save.
 
 ![Cloud flow details page - Change plan](media/capacity-utilization/cloud-flow-details-page-planChange2.png)
 
-The cloud flow is now independent from the user license.
- 
+The cloud flow is now independent from the user license, it has become a 'process flow.' Process flows have their plan switch to "Process plan" and a process-flow can be associated to other cloud flows (excluding other process-flows). 
+
+ ## Associate a flow to a process flow
+
+A cloud flow associated to a process-flow is also covered by the Process license allocated to the process-flow. Its plan switches to "This flow is associated to run on process plan," its runs are considered 'in-context' or the Process license and its [PPR consumption](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) is counted against the Process license PPR entitlement. A process-flow can be associated to a maximum of 25 cloud flows.
+
+To associate a cloud flow to a process flow, go to the process flow details page and select **Edit** in the 'Associated apps and flows' card.
+
+
 ## Related information
 
 [Process capacity utilization](capacity-utilization-process.md)
