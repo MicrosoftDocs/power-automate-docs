@@ -4,7 +4,7 @@ description: Learn about using Power Fx for creating expressions in desktop flow
 author: nikosmoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 09/18/2024
+ms.date: 10/10/2024
 ms.author: nimoutzo
 ms.reviewer: dmartens
 contributors: 
@@ -123,9 +123,9 @@ In September 2024 release:
 >
 > - **Child flow outputs**: Exercise caution when using output variables from child flows in a Power Fx enabled desktop flow. This involves output variables of types list, custom object, and data table.
 > - **Single-value column arrays**: An array created using an expression like `=[1, 2, 3]` results in a single-value column array in Power Fx enabled flows, whose items are objects with a single property: `{Value: 1}`. Attempting to access the `Value` property of this item, after modifying the first array with an action, results in an authoring error.
-> - **Power Fx function usages**: In certain Power Fx functions, such as `IsEmpty()`, previous versions would accept a dynamic variable as an argument and would not throw a validation error. With the 2.48 version, using a variable that is now handled as a dynamic variable will result in a validation error, and a failure to execute existing flows. The resolution to this is to apply proper casting to the dynamic (untyped) value. On more infromation about casting functions, please refer to [Untyped object data type documentation](/power-platform/power-fx/untyped-object). This case can be recognized when editing the flow and having an error similar to "Invalid argument type (UntypedObject). Expecting a Table value instead". Follow the error messages to convert your expression into a valid one.
->     - Other examples of functions that might throw a validation error when using a combination of dynamic and typed variables is `Sum()`, `Filter()`, `Concatenate()` and operators like `in` (i.e. `"string" in DynamicValueObject`)
-> - **Variable comparison**: Similar to the above issue, there can be type incompatibilities when applying comparison operators (`=`, `<>`, `>`, `<` etc.) on expressions involving dynamic values. Exercise caution and apply the proper casting before comparing dynamic values.
+> - **Power Fx function usage**: In certain Power Fx functions, such as `IsEmpty()`, previous versions accepted a dynamic variable as an argument and didn't throw a validation error. With the 2.48 version, using a variable that is handled as a dynamic variable results in a validation error, and a failure to execute existing flows. The resolution to this is to apply proper casting to the dynamic (untyped) value. Learn more about casting functions in [Untyped object data type](/power-platform/power-fx/untyped-object). You might encounter this issue when editing a flow and receive an error message like "Invalid argument type (UntypedObject). Expecting a Table value instead." To resolve this issue, follow the error messages to convert your expression into a valid one.
+> - Other examples of functions that might throw a validation error when using a combination of dynamic and typed variables are `Sum()`, `Filter()`, `Concatenate()` and operators like `in` (for example, `"string" in DynamicValueObject`).
+> - **Variable comparison**: Similar to the previously mentioned issue, there can be type incompatibilities when you apply comparison operators (`=`, `<>`, `>`, `<` etc.) on expressions involving dynamic values. Exercise caution and apply the proper casting before you compare dynamic values.
 
 ### 2.43
 
