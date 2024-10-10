@@ -47,7 +47,7 @@ You now have a machine that can perform unattended RPA.
 
 ## Allocate process capacity to a cloud flow 
 
-Allocated to a cloud flow, a Process capacity entitles it to use standard, premium, and custom connectors while being accessed by unlimited users within the organization (regardless of their user license). Each Process capacity allocated to a cloud flow entitles it to 250k daily [Power Platform Request](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) (stackable limit).
+Allocated to a cloud flow, the Process plan enables use of premium cloud flow [capabilities] (/https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-process%2Cconnector-types#capacity-licenses.) Each Process capacity allocated to a cloud flow entitles it to 250k daily [Power Platform Request](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) (stackable limit).
 
 To allocate a Process capacity to a cloud flow, go to the cloud flow details page and select **Edit**.
 
@@ -57,11 +57,11 @@ Change the plan used by the flow to **Process plan**, select the number of Proce
 
 ![Cloud flow details page - Change plan](media/capacity-utilization/cloud-flow-details-page-planChange2.png)
 
-The cloud flow is now independent from the user license, it has become a 'process flow.' Process flows have their plan switch to "Process plan" and a process-flow can be associated to other cloud flows (excluding other process-flows). 
+The cloud flow is now independent from the user license, it has become a 'process flow.' Process flows have their plan switch to "Process plan" and a process-flow can be associated to other cloud flows. Please note process-flows cannot be associated to one another.  
 
  ## Associate a flow to a process flow
 
-A cloud flow associated to a process-flow is also covered by the Process license allocated to the process-flow. Its plan switches to "This flow is associated to run on process plan," its runs are considered 'in-context' or the Process license and its [PPR consumption](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) is counted against the Process license PPR entitlement. A process-flow can be associated to a maximum of 25 cloud flows.
+A cloud flow associated to a process-flow is covered by the Process license allocated to the process-flow. Its plan switches to "This flow is associated to run on process plan," its runs are counted against the Process license PPR capacity [PPR consumption](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate). A process-flow can be associated to a maximum of 25 cloud flows.
 
 To associate a cloud flow to a process flow, go to the process flow details page and select **Edit** in the 'Associated apps and flows' card.
 
