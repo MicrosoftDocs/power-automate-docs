@@ -59,7 +59,7 @@ Adding a connector makes it appear in the actions pane of your flow designer, gi
 
 ### Known limitations
 
-- When you manually add a new connector to the flow, there's currently no option to remove it through the Assets library. If you reopen the flow designer and don't use any action belonging to that connector in the flow, the connector is automatically removed. This isn't the case for the cloud connectors that were introduced before the Connectors tab in the Assets library, as those connectors are permanently visible in the actions pane of the designer.
+- When you manually add a new connector to the flow, there's currently no option to remove it through the Assets library. If you save and reopen the flow designer without using any actions from a connector, the unused connector is automatically removed. This isn't the case for the cloud connectors that were introduced before the Connectors tab in the Assets library, as those connectors are permanently visible in the actions pane of the designer.
 
 ## Related information
 
