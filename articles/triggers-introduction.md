@@ -4,12 +4,11 @@ description: Learn about triggers in Power Automate.
 author: samathur
 contributors:
   - samathur
-  - PriyaKodukula
   - kisubedi
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 10/11/2024
 ms.author: samathur
 ms.reviewer: angieandrews
 ms.collection:
@@ -153,6 +152,8 @@ Your flow can generate expressions for you.
 1. Paste the expression into the trigger condition.
 1. Remove the **Filter array** action.
 
----
+## Related information
+
+[Training: Describe building automation with Microsoft Power Automate (module)](/training/modules/introduction-power-automate/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

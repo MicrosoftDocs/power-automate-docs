@@ -1,7 +1,7 @@
 ---
 title: Get started with Copilot in cloud flows
 description: Learn how to access and use Copilot in cloud flows.
-ms.date: 09/04/2024
+ms.date: 10/09/2024
 ms.custom: bap-template
 ms.topic: conceptual
 author: kisubedi
@@ -220,3 +220,4 @@ You need a standalone Power Automate license, or a seeded Microsoft 365 license,
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 - [Language availability for Power Platform](https://dynamics.microsoft.com/availability-reports/languagereport/)
 - [Geographical availability for Power Platform](https://dynamics.microsoft.com/availability-reports/georeport/)
+- [Training: Use Copilot in Power Automate (module)](/training/modules/use-copilot-power-automate/)
