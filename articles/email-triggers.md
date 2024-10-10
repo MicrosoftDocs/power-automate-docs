@@ -10,7 +10,7 @@ ms.author: hamenon
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 10/09/2024
 search.audienceType: 
   - flowmaker
   - enduser
@@ -172,5 +172,8 @@ Test the flow by sending an email that gets routed to the folder you selected ea
 
 ---
 
+## Related information
+
+[Training: Create flows to manage email (module)](create-email-flows.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
