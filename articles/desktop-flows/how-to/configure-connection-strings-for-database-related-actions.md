@@ -28,3 +28,5 @@ Power Automate for desktop uses the same functionality provided in Windows when 
 The available providers below refer to different kinds of relational databases:
  
 ![Screenshot of available providers.](media/configure-connection-strings-for-database-related-actions/available-providers.png)
+
+The most common database providers used are MSQL, Oracle, MySQL or PostgreSQL.
