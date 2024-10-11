@@ -4,11 +4,12 @@ description: Learn about the available Cloud Connector operations in Power Autom
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 08/27/2024
-ms.author: dipapa
+ms.date: 10/11/2024
+ms.author: iomavrid
 ms.reviewer: 
 contributors:
   - DanaMartens
+  - dipapa
 search.audienceType: 
   - flowmaker
   - enduser
