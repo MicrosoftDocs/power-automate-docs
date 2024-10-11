@@ -61,7 +61,7 @@ search.audienceType:
     - [Upload a file or an image to selected environment](/connectors/commondataserviceforapps/#upload-a-file-or-an-image-to-selected-environment)
 - Certain connector actions that were introduced in version 2.49 (both installer and Microsoft Store versions) fail with the following error, during designer, console and cloud-initiated runs:
   ```
-  <Microsoft.Flow.RPA.Desktop.Robin.Connectors.Execution.ConnectorInternalErrorException: Operation 'HttpRequest' not found in connnector '/providers/Microsoft.PowerApps/apis/shared_sharepointonline'. at Microsoft.Flow.RPA.Desktop.Robin.Engine.Execution.Connectors.CloudConnectorRunner.Run(IInvokeCloudConnectorStatement statement, Dictionary2 inputArguments, Dictionary2 dynamicInputArguments) in C:\Work\Flow-PeopleBot\src\Robin.Engine\Execution\Connectors\CloudConnectorRunner.cs:line 180>
+  Operation 'HttpRequest' not found in connector '/providers/Microsoft.PowerApps/apis/shared_sharepointonline'.
   ```
   The affected connector actions are:
   - SharePoint
