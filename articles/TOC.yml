@@ -640,6 +640,8 @@
         href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
       - name: Troubleshoot SQL queries
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
+    - name: Configure connection strings for database related actions
+      href: ./desktop-flows/how-to/configure-connection-strings-for-database-related-actions.md
     - name: Configure proxy settings
       href: ./desktop-flows/how-to/proxy-settings.md
     - name: Reduce desktop flow size in solution
