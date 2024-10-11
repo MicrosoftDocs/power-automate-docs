@@ -4,11 +4,12 @@ description: Learn about the available Cloud Connector operations in Power Autom
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 08/27/2024
-ms.author: dipapa
+ms.date: 10/11/2024
+ms.author: iomavrid
 ms.reviewer: 
 contributors:
   - DanaMartens
+  - dipapa
 search.audienceType: 
   - flowmaker
   - enduser
@@ -58,7 +59,22 @@ search.audienceType:
     - [Unrelate rows in selected environment](/connectors/commondataserviceforapps/#unrelate-rows-in-selected-environment)
     - [Update a row in selected environment](/connectors/commondataserviceforapps/#update-a-row-in-selected-environment)
     - [Upload a file or an image to selected environment](/connectors/commondataserviceforapps/#upload-a-file-or-an-image-to-selected-environment)
+- A few connector actions introduced in version 2.49 (both installer and Microsoft Store versions) might fail with the following error during designer, console, and cloud-initiated runs:
 
+  `Operation 'HttpRequest' not found in connector '/providers/Microsoft.PowerApps/apis/shared_sharepointonline'.`
+
+  The affected connector actions include:
+
+  - SharePoint:
+    - Grant access to an item or a folder
+    - Send an HTTP Request to SharePoint
+  - Teams:
+    - Send a Microsoft Graph HTTP Request
+  - Office 365 Outlook:
+    - Send an HTTP Request
+
+  This issue will be fixed in version 2.50.
+  
 ## Use files in cloud connector actions
 
 To pass a file as an input to a cloud connector action, you must first convert it to binary data, using the [Convert file to binary data](file.md#convertfiletobinaryaction) action.
