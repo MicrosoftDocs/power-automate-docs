@@ -4,7 +4,7 @@ description: See all the available UI automation actions.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/20/2023
+ms.date: 10/11/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -172,6 +172,31 @@ Extracts data from specific parts of a window in the form of single values, list
 |Exception|Description|
 |-----|-----|
 |Extraction failed|Indicates a problem extracting data from the specified window|
+
+## <a name="extractdatafromtable"></a> Extract data from table
+
+Extracts data from a table in the form of a datatable.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Table|No|[UI element](../ui-elements.md)||The table or grid to extract data from|
+|Store extracted data in|N/A|an Excel spreadsheet, A variable|an Excel spreadsheet|Specify where to store the extracted data|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element will be brought to the front during execution. If this option is disabled, the action is executed in the background. Note that not all UI elements are compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option might not extract all elements.|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|ExcelInstance|[Excel instance](../variable-data-types.md#instances)|The Excel instance with the extracted data. Use this instance to manipulate the spreadsheet (or save and close it) by using the dedicated Excel actions.|
+|DataFromTable|[General value](../variable-data-types.md#general-value)|The extracted data in the form of a datatable|
+
+### <a name="extractdatafromtable_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Extraction failed|Indicates a problem extracting data from the specified table|
 
 ## <a name="takescreenshot"></a> Take screenshot of UI element
 
