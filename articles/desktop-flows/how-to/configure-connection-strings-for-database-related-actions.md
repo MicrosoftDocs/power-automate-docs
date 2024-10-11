@@ -17,9 +17,6 @@ search.audienceType:
 
 # Configure connection strings for Database related actions
 
-> [!NOTE]
-> Desktop flows provide the **Resize columns/rows in Excel worksheet** action to facilitate the resizing of Excel columns and rows. This article shows an alternative way to resize Excel columns and rows using scripting.  
-
 ## Summary
 
 This article provides a detailed explanation of how to properly configure and test a connection string for database related actions.
