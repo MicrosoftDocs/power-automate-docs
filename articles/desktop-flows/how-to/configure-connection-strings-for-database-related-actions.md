@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-# Configure connection strings for Database related actions
+# Configure connection strings for database related actions
 
 ## Summary
 
