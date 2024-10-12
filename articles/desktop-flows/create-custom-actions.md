@@ -106,9 +106,25 @@ Here's an example of a **Resources.resx** file for a custom module.
 
 Another way to quickly add friendly names and descriptions to actions and parameters is with the FriendlyName and Description properties in the **[Action]**, **[InputArguement]** and **[OutputArguement]** attributes.
 
-
 > [!NOTE]
 > To add a friendly name and description to a module, you must modify the respective .resx file or add the respective C# attributes.
+
+## Adding error handling to custom actions
+
+You can use the attribute
+```
+ [Throws("ActionError")]
+```
+above the custom action class, which should be 1 for each exception case you want to define.
+
+In the catch block, use this line of code:
+```
+throw new ActionException("ActionError", e.Message, e.InnerException);
+```
+where you match the ActionException with the name you gave to the Throws attribute. You should use *throw new ActionException* per case of exception and match it with the name in every Throws attribute.
+Every Throws defined exception will then be visible in the designer's action error handling tab.
+
+An example of the above is shown in the following section **Conditional actions**.
 
 ## Resources localization
 
