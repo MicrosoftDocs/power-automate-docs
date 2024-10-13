@@ -55,7 +55,9 @@ The Connectors (preview) tab shows you all the cloud connectors that are availab
 
 :::image type="content" source="media/assets-library/connectors-tab-in-assets-library.png" alt-text="Screenshot of the connectors (preview) tab in the Assets library" border="false":::
 
-Adding a connector makes it appear in the actions pane of your flow designer, giving you access to its operations. The connectors that are already available in your flow are also shown in the list and appear marked with the label *Added*.
+Adding a connector makes it appear in the actions pane of your flow designer, giving you access to its operations. The connectors that are already available in your flow are also shown in the Assets library's list and appear marked with the label *Added*. 
+
+If at least one operation from a connector is used in the flow, that connector is loaded during the designer's launch in the actions pane.
 
 ### Known limitations
 
