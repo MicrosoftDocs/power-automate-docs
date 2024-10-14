@@ -43,9 +43,9 @@ The **Process work queue item action** action requires the following arguments.
   | Argument       | Optional | Accepts | Default Value | Description     |
   |-----|-----|-----|---------------|-----------------|
   | **Work queue** |No    |Text |               |The work queue ID of the work queue that contains items to process|
-  | **Filter rows** | No    |Text |              | The [FetchXML](#example-fetchxml-query) query expression used to retrieve items from the work queue |
+  | **Filter rows** | Yes    |Text |              | The [FetchXML](#example-fetchxml-query) query expression used to retrieve items from the work queue |
   | **Overwrite work queue auto-retry configuration** | Yes | Boolean| False | When enabled, a field appears allowing you to set or overwrite the maximum number of retries for `IT Exceptions`. |
-  | **Max retry count** |No    |Text value, Numeric value|               | The maximum allowed number of retries for `IT Exceptions`. This parameter lets you adjust the retry count to a higher or lower value, or even disable the retry mechanism by setting the count to 0.|
+  | **Max retry count** |No    |Text value, Numeric value|  When not overwritten, it will use the default max-retry count defined on the work queue record  | The maximum allowed number of retries for `IT Exceptions`. This parameter lets you adjust the retry count to a higher or lower value, or even disable the retry mechanism by setting the count to 0. |
 
 #### Variables produced
 
