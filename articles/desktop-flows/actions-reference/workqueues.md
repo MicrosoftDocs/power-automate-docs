@@ -166,7 +166,7 @@ This action requires a custom data table that holds one or more work queue items
 
 #### Robin code snippet for creating the data table
 
-The following example is a robin code (used in traditional flows) snippet that you can copy and paste directly into the Power Automate desktop designer window. This snippet adds a [Create new data table](/articles/desktop-flows/actions-reference/variables#createnewdatatable) action with the expected set of fields to your flow.
+The following example is a robin code (used in traditional flows) snippet that you can copy and paste directly into the Power Automate desktop designer window. This snippet adds a [Create new data table](variables#createnewdatatable) action with the expected set of fields to your flow.
 
 ```json
 Variables.CreateNewDatatable InputTable: { ^['Name', 'Input', 'Expires in', 'Processing notes', 'Priority', 'Unique reference', 'Status', 'Delay until'], [$'''''', $'''''', $'''''', $'''''', $'''''', $'''''', $'''''', $''''''] } DataTable=> DataTable
@@ -174,7 +174,7 @@ Variables.CreateNewDatatable InputTable: { ^['Name', 'Input', 'Expires in', 'Pro
 
 #### PowerFx code snippet for creating the data table
 
-The following example is a PowerFx code snippet you can copy and paste directly into the Power Automate desktop designer window. This snippet adds a [Create new data table](/articles/desktop-flows/actions-reference/variables#createnewdatatable) action with the expected set of fields to your flow.
+The following example is a PowerFx code snippet you can copy and paste directly into the Power Automate desktop designer window. This snippet adds a [Create new data table](variables#createnewdatatable) action with the expected set of fields to your flow.
 
 ```json
 Variables.CreateNewDatatable InputTable: { ^['Name', 'Input', 'Expires in', 'Processing notes', 'Priority', 'Unique reference', 'Status', 'Delay until'], [$fx'', $fx'', $fx'', $fx'', $fx'', $fx'', $fx'', $fx''] } DataTable=> DataTable
