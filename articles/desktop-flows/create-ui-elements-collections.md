@@ -5,7 +5,7 @@ author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/04/2024
+ms.date: 10/14/2024
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
@@ -82,7 +82,6 @@ After you publish a new collection, the desktop flow needs to be saved to confir
 
 ## Known limitations
 
-- When a name that is used for a new collection already exists, the collection isn't published and the checked UI elements are reset.
 - When selected to create a new collection, individual screens and web pages always carry over their child UI elements with them, as the latter are automatically checked.
 
 ## Next steps
