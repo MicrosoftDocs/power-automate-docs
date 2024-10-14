@@ -43,7 +43,7 @@
     - name: Overview
       href: generative-actions-overview.md
     - name: Create generative actions
-      href: generative-actions-create.md
+      href: create-generative-actions.md
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
