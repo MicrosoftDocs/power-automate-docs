@@ -86,11 +86,11 @@ Select the cloud flows you wish to associate to your Process flow and save :
 > [!IMPORTANT]
 > **Known issues with flow association**:
 > - During association, in the list of flows that can be associated to the process flow:
->    - currently desktop flows are also displayed in the list.
->    - currently cloud flows which I do not have access to are also displayed in the list.
+>    - Currently desktop flows are also displayed in the list.
+>    - Currently cloud flows which I do not have access to are also displayed in the list.
 > - At Process plan removal from the process flow:
->    - existing flow associations are maintained.
->    - the user should remove the associations from the process flow before removing its process plan. 
+>    - The user should remove the associations from the process flow before removing its process plan.
+>    - Existing flow associations are maintained.
 
 ## Related information
 
