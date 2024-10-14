@@ -32,20 +32,20 @@ The **Process work queue items** action indicates to the queue orchestrator that
 The **work queue** referenced in the previous action is used by the queue orchestrator to determine the next available items in that work queue that are in **Queued** state. As the desktop flow steps through the actions within the Process work queue items loop that this action renders, you can call on the value by utilizing the variable you have designated for the action along with the property `.Value`.  In this case, you could call the value of the work queue item using the variable %WorkQueueItem.Value% 
 
 > [!IMPORTANT]
-> When you supply a [FetchXML](#what-are-fetchxml-queries) expression in the "Filter rows" field, you are effectively bypassing the default work queue orchestrator's FIFO logic for queued items. This enables you to establish a custom dequeue order and even ignore item expiration dates and other settings that are otherwise automatically applied when not providing a filter expression.
+> By supplying a [FetchXML](#what-are-fetchxml-queries) expression in the "Filter rows" field, you bypass the default work queue orchestrator's FIFO logic for queued items. This allows you to set a custom dequeue order and ignore item expiration dates and other settings that are automatically applied when no filter expression is provided.
 
 ### `Processworkqueueitemaction`
 
 The **Process work queue item action** action requires the following arguments.
 
-#### Input Parameters
+#### Input parameters
 
   | Argument       | Optional | Accepts | Default Value | Description     |
   |-----|-----|-----|---------------|-----------------|
-  | **Work queue** |No    |Text |               |The work queue ID of the work queue that contains items to process|
-  | **Filter rows** | Yes    |Text |              | The [FetchXML](#example-fetchxml-query) query expression used to retrieve items from the work queue |
+  | **Work queue** |No    |Text |               |The work queue ID of the work queue that contains items to process.|
+  | **Filter rows** | Yes    |Text |              | The [FetchXML](#example-fetchxml-query) query expression used to retrieve items from the work queue. |
   | **Overwrite work queue auto-retry configuration** | Yes | Boolean| False | When enabled, a field appears allowing you to set or overwrite the maximum number of retries for `IT Exceptions`. |
-  | **Max retry count** |No    |Text value, Numeric value|  When not overwritten, it will use the default max-retry count defined on the work queue record  | The maximum allowed number of retries for `IT Exceptions`. This parameter lets you adjust the retry count to a higher or lower value, or even disable the retry mechanism by setting the count to 0. |
+  | **Max retry count** |No    |Text value, Numeric value|  When not overwritten, it uses the default max-retry count defined on the work queue record.  | The maximum allowed number of retries for `IT Exceptions`. This parameter lets you adjust the retry count to a higher or lower value, or even disable the retry mechanism by setting the count to 0. |
 
 #### Variables produced
 
@@ -57,20 +57,20 @@ The **Process work queue item action** action requires the following arguments.
 
   | Exception       | Description     |
   |----------      |-----------------|
-  | **Work queue not found** |The value entered into the work queue parameter is invalid|
-|**Work queue paused or stopped**| Work queue has either been paused or stopped which is not a valid state when processing items |
-|**Invalid FetchXML**| An invalid FetchXML expression has been provided |
-|**Failed to process work queue**| Bad request - error in query syntax |
+  | **Work queue not found** |The value entered into the work queue parameter is invalid.|
+  |**Work queue paused or stopped**| The work queue is either paused or stopped, which isn't a valid state when processing items. |
+  |**Invalid FetchXML**| An invalid FetchXML expression was provided. |
+  |**Failed to process work queue**| Bad request - error in query syntax. |
 
 ### What are FetchXML queries?
 
-Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) is a language used for retrieving data from a Dataverse database. It's designed to be easy to create, use and understand. For example, you might want to ask the orchestrator to process items in a different order than first-in-first-out (FIFO) and that expire within a specific timeframe.
+Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) is a language used for retrieving data from a Dataverse database. It's designed to be easy to create, use, and understand. For example, you might want to ask the orchestrator to process items in a different order than first-in-first-out (FIFO) and within a specific expiration timeframe.
 
-To limit the FetchXml query support to processing work queue items, we only support a limited set of FetchXml terms and expressions. These include filters, conditions, and ordering expressions, all limited to the work queue item table (workqueueitem). We only return items that are in a `Queued` state.
+To limit FetchXML query support to processing work queue items, a limited set of FetchXML terms and expressions are supported. These terms include filters, conditions, and ordering expressions, all restricted to the work queue item table (workqueueitem). Only items that are in a `Queued` state are returned.
 
 ### Example FetchXML query
 
-Here’s an example query expression on how to filter on the `name` and order the results by those expiring first (FEFO).
+The following is an example query expression for how to filter on the `name` and order the results by the records expiring first (FEFO).
 
 ```xml
 <filter type="and">
@@ -120,7 +120,7 @@ The **Add work queue item** action allows users to populate work queue items int
 
 The **Add work queue item** action requires the following arguments.
 
-#### Input Parameters
+#### Input parameters
 
 | Argument       | Optional | Accepts | Default Value | Description     |
   |----------      |----------|---------|---------------|-----------------|
@@ -151,7 +151,7 @@ The **Add multiple work queue items** action allows users to add one or more wor
 
 :::image type="content" source="media\workqueues\AddMultipleWorkQueueItems.png" alt-text="Screenshot of the add multiple work queue items action." lightbox="media\workqueues\AddMultipleWorkQueueItems.png":::
 
-This action requires a custom data table that holds one or more work queue items. There data table must have 8 columns and conform to the following schema.
+This action requires a custom data table that holds one or more work queue items. The data table must have eight columns and conform to the following schema:
 
 | Column Name         | Description                                            | Required | Allowed Values                               |
 |---------------------|--------------------------------------------------------|----------|----------------------------------------------|
@@ -161,12 +161,12 @@ This action requires a custom data table that holds one or more work queue items
 | Processing notes    | Processing notes related to the item.                  | No       | Any alphanumeric string                                   |
 | Priority            | The priority level of the item.                        | Yes      | Numeric value of either 100 (High), 200 (Normal), 300 (Low) |
 | Unique reference    | A unique identifier or reference value for the item.   | No       | Any unique alphanumeric string or reference                  |
-| Status              | Status of the item on ingestion.                       | Yes      | Numeric value of either 0 (Queued), 1 (On Hold).     |
+| Status              | Status of the item on ingestion.                       | Yes      | Numeric value of either zero (Queued), one (On Hold).     |
 | Delay until         | Specifies a date and time until the work queue items should be ignored for processing.    | No      | Date and time value|
 
 #### Robin code snippet for creating the data table
 
-Here's a robin code (used in traditional flows) snippet that you can simply copy and directly paste into the Power Automate desktop designer window. This will add a [Create new data table](/articles/desktop-flows/actions-reference/variables#createnewdatatable) action with the expected set of fields to your flow.
+The following example is a robin code (used in traditional flows) snippet that you can copy and paste directly into the Power Automate desktop designer window. This snippet adds a [Create new data table](/articles/desktop-flows/actions-reference/variables#createnewdatatable) action with the expected set of fields to your flow.
 
 ```json
 Variables.CreateNewDatatable InputTable: { ^['Name', 'Input', 'Expires in', 'Processing notes', 'Priority', 'Unique reference', 'Status', 'Delay until'], [$'''''', $'''''', $'''''', $'''''', $'''''', $'''''', $'''''', $''''''] } DataTable=> DataTable
@@ -174,7 +174,7 @@ Variables.CreateNewDatatable InputTable: { ^['Name', 'Input', 'Expires in', 'Pro
 
 #### PowerFx code snippet for creating the data table
 
-Here's a PowerFx code snippet that you can simply copy and directly paste into the Power Automate desktop designer window. This will add a [Create new data table](/articles/desktop-flows/actions-reference/variables#createnewdatatable) action with the expected set of fields to your flow.
+The following example is a PowerFx code snippet you can copy and paste directly into the Power Automate desktop designer window. This snippet adds a [Create new data table](/articles/desktop-flows/actions-reference/variables#createnewdatatable) action with the expected set of fields to your flow.
 
 ```json
 Variables.CreateNewDatatable InputTable: { ^['Name', 'Input', 'Expires in', 'Processing notes', 'Priority', 'Unique reference', 'Status', 'Delay until'], [$fx'', $fx'', $fx'', $fx'', $fx'', $fx'', $fx'', $fx''] } DataTable=> DataTable
@@ -184,7 +184,7 @@ Variables.CreateNewDatatable InputTable: { ^['Name', 'Input', 'Expires in', 'Pro
 
 The **Add multiple work queue items** action requires the following arguments.
 
-#### Input Parameters
+#### Input parameters
 
 | Argument       | Optional | Accepts | Default Value | Description     |
   |----------      |----------|---------|---------------|-----------------|
@@ -195,9 +195,9 @@ The **Add multiple work queue items** action requires the following arguments.
 
   | Argument       | Type | Default Value | Description     |
   |----------      |------|------|-----------------|
-  | **FailedWorkQueueItems** |No   | Enabled | In case of failures, this object will hold the index of the item that failed to be inserted together with an error code. The index returned here is the position (index) of the item in the provided work queue data table of the **Add multiple work queue items** action. |
-  | **HasFailedItems** |No   | Enabled | An indicator whethere the actions encountered ingestions errors because of work queue item data issues. |
-  | **SuccessfulWorkQueueItems** | Disabled | No   | A custom object holding the index and work queue items that have been successfully added to the work queue. |
+  | **FailedWorkQueueItems** |No   | Enabled | If there are failures, this object holds the index of the item that failed to be inserted together with an error code. The index returned is the position (index) of the item in the provided work queue data table of the **Add multiple work queue items** action. |
+  | **HasFailedItems** |No   | Enabled | An indicator for whether the actions encountered ingestion errors because of work queue item data issues. |
+  | **SuccessfulWorkQueueItems** | Disabled | No   | A custom object holding the index and work queue items that were successfully added to the work queue. |
 
 #### Exceptions
 
@@ -217,7 +217,7 @@ The **Requeue item with delay** action allows users to readd a queue item being 
 
 The **Requeue item with delay** action requires the following arguments.
 
-#### Input Parameters
+#### Input parameters
 
 | Argument       | Optional | Accepts | Default Value | Description     |
   |----------      |----------|---------|---------------|-----------------|
@@ -269,13 +269,13 @@ The **Get work queue items by filter** action allows users to retrieve one or mo
 
 The **Get work queue items by filter** action requires the following arguments.
 
-#### Input Parameters
+#### Input parameters
 
-| Argument       | Optional | Accepts | Default Value | Description     |
+  | Argument       | Optional | Accepts | Default Value | Description     |
   |----------      |----------|---------|---------------|-----------------|
   | **Work queue** |No    |Text | |Work queue to retrieve items from |
-| **Filter rows** | No | Text| | [FetchXML](#example-fetchxml-query) query expression used to retrieve items from the work queue |
-| **Rows to return** | No | Number | 5000 | The maximum number of work queue items to be returned by the orchestrator |
+  | **Filter rows** | No | Text| | [FetchXML](#example-fetchxml-query) query expression used to retrieve items from the work queue |
+  | **Rows to return** | No | Number | 5000 | The maximum number of work queue items returned by the orchestrator |
 
 #### Variables produced
 
@@ -287,19 +287,19 @@ The **Get work queue items by filter** action requires the following arguments.
 
 | Argument       | Description |
 |----------------|----------|
-| **Work queue** | The work queue to retrieve items from |
-| **Filter rows** | The [FetchXML](#example-fetchxml-query) query expression used to retrieve items from the work queue |
-| **Rows to return** | The maximum number of work queue items to be returned by the orchestrator (default is 5000). |
+| **Work queue** | The work queue to retrieve items from. |
+| **Filter rows** | The [FetchXML](#example-fetchxml-query) query expression used to retrieve items from the work queue. |
+| **Rows to return** | The maximum number of work queue items returned by the orchestrator (default is 5000). |
 
 ### What are FetchXML queries?
 
-Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) is a language used for retrieving data from a Dataverse database. It's designed to be easy to create, use and understand. For example, you might want to ask Dataverse to give you a list of all work queue items that are in `IT Exception` state.
+Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) is a language used for retrieving data from a Dataverse database. It's designed to be easy to create, use, and understand. For example, you might want to ask Dataverse to give you a list of all work queue items that are in `IT Exception` state.
 
-To limit the FetchXml query support to retrieving work queue items, we only support a limited set of FetchXml terms and expressions. These include attributes, filters, conditions, and ordering expressions, all limited to the work queue item table (workqueueitem). You must explicitly specify which properties to return from the work queue item table and the desired sort order.
+To limit the FetchXml query support to retrieving work queue items, we only support a limited set of FetchXml terms and expressions. These terms and expressions include attributes, filters, conditions, and ordering expressions, all limited to the work queue item table (workqueueitem). You must explicitly specify which properties to return from the work queue item table and the desired sort order.
 
 ### Example FetchXML query
 
-Here’s an example query expression on how to fetch several properties, filter out erroneous items marked as `IT Exceptions`, and order the results by those expiring first (FEFO).
+The following example is a query expression for how to fetch several properties, filter out erroneous items marked as `IT Exceptions`, and order the results by those records expiring first (FEFO).
 
 ```xml
 <attribute name="statecode" />
@@ -338,7 +338,7 @@ Here’s an example query expression on how to fetch several properties, filter 
 |-----------|------|-------------------|
 | Queued    | 0    | Item is queued    |
 | Processing| 1    | Item is being processed |
-| Processed | 2    | Item has been processed |
+| Processed | 2    | Item was processed |
 | OnHold    | 3    | Item is on hold   |
 | Error     | 4    | Item encountered an error |
 
@@ -348,7 +348,7 @@ Here’s an example query expression on how to fetch several properties, filter 
 |------------------------|------|--------------------------------|
 | Queued                 | 0    | Item is queued                 |
 | Processing             | 1    | Item is being processed        |
-| Processed              | 2    | Item has been processed        |
+| Processed              | 2    | Item was processed        |
 | OnHold (Paused)        | 3    | Item is on hold (paused)       |
 | GenericException       | 4    | Item encountered a generic exception |
 | ITException            | 5    | Item encountered an IT exception |
