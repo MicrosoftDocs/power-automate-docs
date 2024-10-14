@@ -38,7 +38,7 @@
     href: export-import-flow-non-solution.md
   - name: Drafts and versioning for cloud flows
     href: drafts-versioning.md
-  - Generative actions
+  - name: Generative actions
     items:
     - name: Overview
       href: generative-actions-overview.md
