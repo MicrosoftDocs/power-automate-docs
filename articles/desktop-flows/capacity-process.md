@@ -47,7 +47,7 @@ You now have a machine that can perform unattended RPA.
 
 ## Allocate process capacity to a cloud flow 
 
-Allocated to a cloud flow, the Process plan enables use of premium cloud flow [capabilities] (/https://learn.microsoft.com/en-us/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-process%2Cconnector-types#capacity-licenses.) Each Process capacity allocated to a cloud flow entitles it to 250k daily [Power Platform Request](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) (stackable limit).
+Allocated to a cloud flow, the Process plan enables use of premium cloud flow [capabilities]((/power-platform/admin/power-automate-licensing/types#capacity-licenses). Each Process capacity allocated to a cloud flow entitles it to 250k daily [Power Platform Request](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) (stackable limit).
 
 To allocate a Process capacity to a cloud flow, go to the cloud flow details page and select **Edit**.
 
@@ -77,6 +77,7 @@ Select the cloud flows you wish to associate to your Process flow and save :
 
 > [!NOTE]
 >
+> - Associated flows needs to be in the same solution as the process flow
 > - Process flows can't be associated together
 > - A maximum of 25 flows can be associated to the same Process flow
 > - De-association can only be done from the Process flow
