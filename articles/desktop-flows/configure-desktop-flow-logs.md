@@ -122,12 +122,11 @@ The following API call retrieves a specific flow session by its ID (9d51aa1f-315
 
 ```http
     [Organization URI]/api/data/v9.2/ExecuteCosmosSqlQuery(
-    QueryText=@p1,EntityLogicalName=@p2,PartitionId=@p3,QueryParameters=@p4,PageSize=@p5)?
+    QueryText=@p1,EntityLogicalName=@p2,QueryParameters=@p3,PageSize=@p4)?
     @p1: 'SELECT c.props.flowlogid as flowlogid, c.props.createdon as createdon, c.props.data as data, c.props.level as level, c.props.type as type, c.ttl as ttlinseconds, c.props.cloudflowid as cloudflowid, c.props.cloudflowrunid as cloudflowrunid, c.props.desktopflowid as desktopflowid, c.props.flowmachineid as flowmachineid, c.props.flowmachinegroupid as flowmachinegroupid, c.props.flowsessionid as flowsessionid, c.props.workqueueid as workqueueid, c.props.workqueueitemid as workqueueitemid FROM c WHERE c.props.type IN (100000001) ORDER BY c.props.data.startTime DESC'
     @p2: 'flowlog'
-    @p3: 'flowsession_40590757-a9c0-4f4c-abfc-e2f389049d90'
-    @p4: {"Keys":["@referencingParentId","@referencingParentLogicalName"],"Values":[{"Type":"System.Guid","Value":"40590757-a9c0-4f4c-abfc-e2f389049d90"},{"Type":"System.String","Value":"flowsession"}]}
-    @p5: 50
+    @p3: {"Keys":["@referencingParentId","@referencingParentLogicalName"],"Values":[{"Type":"System.Guid","Value":"40590757-a9c0-4f4c-abfc-e2f389049d90"},{"Type":"System.String","Value":"flowsession"}]}
+    @p4: 50
 ```
 
 Learn more about [querying JSON columns in elastic tables](/power-apps/developer/data-platform/query-json-columns-elastic-tables).
@@ -139,9 +138,8 @@ Learn more about [querying JSON columns in elastic tables](/power-apps/developer
 - The parameters for the ExecuteCosmosSqlQuery method are provided in parentheses following the method name. These are:
   - `QueryText=@p1`: The SQL query to be executed. In this case, the query selects various properties from a table where the *type* is 100000001 (desktop flow action log type) and orders the results by the startTime property in descending order.
   - `EntityLogicalName=@p2`: This is the logical name of the table (`flowlog`) that stores the action logs.
-  - `PartitionId=@p3`: This parameter is used to identify the partition within Azure Cosmos DB where the query is to be executed. It's set to `flowsession_[flowsessionid]`.
-  - `QueryParameters=@p4`: This is a JSON object specifying parameters for the query. In the previous example, it's specifying a key-value pair where the keys are `@referencingParentId` and `@referencingParentLogicalName` with values of `flowsessionid` (GUID) and type of the table `flowsession`.
-  - `PageSize=p5`: This is the query page size.
+  - `QueryParameters=@p3`: This is a JSON object specifying parameters for the query. In the previous example, it's specifying a key-value pair where the keys are `@referencingParentId` and `@referencingParentLogicalName` with values of `flowsessionid` (GUID) and type of the table `flowsession`.
+  - `PageSize=p4`: This is the query page size.
 
 ## Known limitations  
   
