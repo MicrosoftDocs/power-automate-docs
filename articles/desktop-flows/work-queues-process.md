@@ -114,7 +114,7 @@ When the max retry count is reached, the update action sends the update to the o
 
 #### Adding & Requeuing work queue items examples from PAD
 
-The **Add work queue item** enables desktop flow users to populate work queue items into a work queue, which has been set up in the flow portal.
+The **Add work queue item** enables desktop flow users to populate work queue items into a work queue, which has been set up in the flow portal. We also support batch item creation by using the [**Add work queue items**](actions-reference/workqueues.md#add-multiple-work-queue-items) action.
 
 In this example, an Excel file in .csv is dropped into a directory on a daily basis and each row needs to be added to a work queue.
 
