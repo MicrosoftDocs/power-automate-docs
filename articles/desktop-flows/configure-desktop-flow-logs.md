@@ -135,17 +135,17 @@ Learn more about [querying JSON columns in elastic tables](/power-apps/developer
 
 - The base URL (https://[my org].api.crm[my region].dynamics.com/api/data/v9.2/) is the endpoint for the Dataverse Web API.
 - ExecuteCosmosSqlQuery is the method being called. This method allows the execution of a SQL query against Dataverse.
-- The parameters for the ExecuteCosmosSqlQuery method are provided in parentheses following the method name. These are:
+- The parameters for the ExecuteCosmosSqlQuery method are provided in parentheses following the method name:
   - `QueryText=@p1`: The SQL query to be executed. In this case, the query selects various properties from a table where the *type* is 100000001 (desktop flow action log type) and orders the results by the startTime property in descending order.
-  - `EntityLogicalName=@p2`: This is the logical name of the table (`flowlog`) that stores the action logs.
-  - `QueryParameters=@p3`: This is a JSON object specifying parameters for the query. In the previous example, it's specifying a key-value pair where the keys are `@referencingParentId` and `@referencingParentLogicalName` with values of `flowsessionid` (GUID) and type of the table `flowsession`.
-  - `PageSize=p4`: This is the query page size.
+  - `EntityLogicalName=@p2`: This section is the logical name of the table (`flowlog`) that stores the action logs.
+  - `QueryParameters=@p3`: This section is a JSON object specifying parameters for the query. In the previous example, it's specifying a key-value pair where the keys are `@referencingParentId` and `@referencingParentLogicalName` with values of `flowsessionid` (GUID) and type of the table `flowsession`.
+  - `PageSize=p4`: This section is the query page size.
 
 ## Known limitations  
   
 - Logs V2 are only available for desktop flow runs that are launched from a cloud flow through the desktop flow connector action.
-- Bulk-delete jobs are not currently supported for the **Flow Log** table.
-- Flow log records cannot yet be viewed in the Table section of the maker portal (make.powerapps.com).
+- Bulk-delete jobs aren't currently supported for the **Flow Log** table.
+- Flow log records can't yet be viewed in the Table section of the maker portal (make.powerapps.com).
 - Changing action log version doesn't migrate previous desktop flow action logs to the new log storage type.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
