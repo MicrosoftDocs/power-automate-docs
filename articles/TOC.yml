@@ -37,7 +37,13 @@
   - name: Export and import a non-solution flow
     href: export-import-flow-non-solution.md
   - name: Drafts and versioning for cloud flows
-    href: drafts-versioning.md  
+    href: drafts-versioning.md
+  - Generative actions
+    items:
+    - name: Overview
+      href: generative-actions-overview.md
+    - name: Create generative actions
+      href: generative-actions-create.md
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
