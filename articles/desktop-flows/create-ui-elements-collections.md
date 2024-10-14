@@ -5,7 +5,7 @@ author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/04/2024
+ms.date: 10/14/2024
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
