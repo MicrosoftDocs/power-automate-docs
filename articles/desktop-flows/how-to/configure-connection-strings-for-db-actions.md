@@ -65,9 +65,7 @@ Enter all the required information and test the connection. If the connection is
 
 ![Screenshot of testing the connection.](media/configure-connection-strings-for-database-related-actions/test-connection.png)
 
-Select **OK** and the connection string is generated:
-
-![Screenshot of generating the connection string.](media/configure-connection-strings-for-database-related-actions/generate-connection-string-and-allow-saving-password.png)
+Select **OK** and the connection string is generated.
 
 Check the **Allow saving password** option, so that the provider also includes the password in the connection string, and select **OK**, otherwise the connection fails.
 
