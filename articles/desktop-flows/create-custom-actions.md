@@ -4,7 +4,7 @@ description: Learn about how to create custom actions in Power Automate for desk
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/15/2023
+ms.date: 10/14/2024
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors: 
@@ -14,6 +14,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
+
 # Create Power Automate for desktop actions using the Actions SDK
 
 This article describes how to create custom actions in Power Automate for desktop.
@@ -111,20 +112,15 @@ Another way to quickly add friendly names and descriptions to actions and parame
 
 ## Adding error handling to custom actions
 
-You can use the attribute
-```
- [Throws("ActionError")]
-```
-above the custom action class, which should be 1 for each exception case you want to define.
+To define custom exceptions in your action, use the `[Throws("ActionError")]` attribute above the custom action class. Each exception case you want to define should have its own attribute.
 
-In the catch block, use this line of code:
-```
-throw new ActionException("ActionError", e.Message, e.InnerException);
-```
-where you match the ActionException with the name you gave to the Throws attribute. You should use *throw new ActionException* per case of exception and match it with the name in every Throws attribute.
-Every Throws defined exception will then be visible in the designer's action error handling tab.
+In the catch block, use the following code:
 
-An example of the above is shown in the following section **Conditional actions**.
+`throw new ActionException("ActionError", e.Message, e.InnerException);`
+
+Ensure that the `ActionException` name matches the name you provided in the `Throws` attribute. Use `throw new ActionException` for each exception case and match it with the corresponding `Throws` attribute name. All exceptions defined with the `Throws` attribute are visible in the designer's action error handling tab.
+
+An example of this can be found in the [Conditional actions](#conditional-actions) section.
 
 ## Resources localization
 
