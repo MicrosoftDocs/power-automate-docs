@@ -59,6 +59,10 @@ Change the plan used by the flow to **Process plan**, select the number of Proce
 
 The cloud flow is now independent from the user license, it has become a 'process flow.' Process flows have their plan switch to "Process plan" and a process-flow can be associated to other cloud flows. Please note process-flows cannot be associated to one another.  
 
+> [!NOTE]
+>
+> - Only solution flow (flow that are in a solution) can become process flows
+
  ## Associate a flow to a process flow
 
 A cloud flow associated to a process-flow is covered by the Process license allocated to the process-flow. Its plan switches to "This flow is associated to run on process plan," its runs are counted against the Process license PPR capacity [PPR consumption](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate). A process-flow can be associated to a maximum of 25 cloud flows.
@@ -77,6 +81,15 @@ Select the cloud flows you wish to associate to your Process flow and save :
 > - A maximum of 25 flows can be associated to the same Process flow
 > - De-association can only be done from the Process flow
 > - An associated flow can't have its plan updated - it needs to be de-associated first
+
+> [!IMPORTANT]
+> **Known issues with flow association**:
+> - During association, in the list of flows that can be associated to the process flow:
+>    - currently desktop flows are also displayed in the list.
+>    - currently cloud flows which I do not have access to are also displayed in the list.
+> - At Process plan removal from the process flow:
+>    - existing flow associations are maintained.
+>    - the user should remove the associations from the process flow before removing its process plan. 
 
 ## Related information
 
