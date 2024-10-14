@@ -1,5 +1,5 @@
 ---
-title: Overview of generative actions
+title: Overview of generative actions (preview)
 description: Get an overview of generative actions, including benefits, how to author, monitor, and edit.
 ms.date: 10/14/2024
 ms.topic: conceptual
@@ -13,9 +13,13 @@ ms.collection:
     - bap-ai-copilot
 ---
 
-# Overview of generative actions
+# Overview of generative actions (preview)
+
+[!INCLUDE[cc-preview-features-definition](includes/cc-preview-features-top-note.md)]
 
 Generative actions are a new type of automation that's authored, tested, and executed through an AI runtime. You specify only the *intent* of the automation and the AI chooses the right set of actions in the right order based on your input, context, and intent.
+
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Benefits of generative actions
 
