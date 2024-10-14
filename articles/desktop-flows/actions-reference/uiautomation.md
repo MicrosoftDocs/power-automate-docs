@@ -4,7 +4,7 @@ description: See all the available UI automation actions.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/11/2024
+ms.date: 10/14/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -183,7 +183,7 @@ Extracts data from a table in the form of a datatable.
 |-----|-----|-----|-----|-----|
 |Table|No|[UI element](../ui-elements.md)||The table or grid to extract data from|
 |Store extracted data in|N/A|an Excel spreadsheet, A variable|an Excel spreadsheet|Specify where to store the extracted data|
-|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element will be brought to the front during execution. If this option is disabled, the action is executed in the background. Note that not all UI elements are compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option might not extract all elements.|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element is brought to the front during execution. If this option is disabled, the action is executed in the background. Not all UI elements are compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option might not extract all elements.|
 
 ### Variables produced
 
