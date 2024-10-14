@@ -35,6 +35,13 @@ The **Activation status of run action logs** setting defines when desktop flow r
 > [!CAUTION]
 > Changing any of these settings can have a significant impact on features such as run failure troubleshooting and auditing. Consider the implications of changing these settings before proceeding.
 
+## Prerequisites
+
+- Premium Power Automate license and administrative privileges to configure log settings
+- Power Automate URL and IP address configurations
+  - [Public cloud](/power-automate/ip-address-configuration#required-services)
+  - [Government cloud](/power-automate/us-govt#power-automate-us-government-service-urls)
+  
 ## Configure desktop flow action log version
 
 The **Action logs version** allows you to choose V1, V2, or both.
