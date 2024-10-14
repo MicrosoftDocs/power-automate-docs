@@ -103,6 +103,7 @@ The following videos shows a demo of Record with Copilot:
 
 > [!VIDEO 853935fc-c43c-4bf2-9a9d-12b83f3abcfd]
 
+<br>
 
 > [!VIDEO cb7fd0a9-ce47-49f0-95d1-1ebeb135ac4e]
 
@@ -112,7 +113,7 @@ You can try different scenarios, such as moving data from Excel to a web form, n
 
 ### What languages are supported?
 
-Record with Copilot supports English right now. We'll add more languages in future updates.
+Record with Copilot supports English right now. We'll add more languages in future updates. 
 
 ### How is Record with Copilot different from the Recorder?
 
