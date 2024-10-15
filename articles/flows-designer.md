@@ -8,7 +8,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 09/16/2024
+ms.date: 10/15/2024
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -118,12 +118,11 @@ On the **Settings** tab, you can set the action time-out, network retry policy, 
 | Security | Use the **Secure inputs** and **Secure outputs** toggles to turn the operations, and references of output properties, on or off. |
 | Tracking | Set the key and value of tracked properties.
 
-### Undo/Redo
+### Undo and Redo
 
-You can utilize the _Undo_ and _Redo_ command bar buttons to reverse or reinstate any modifications made to the flow. For example, if you've added or configured an action or made significant adjustments to the flow, these features allow you to conveniently revert to a previous state or redo changes you've undone.
+To reverse or reinstate modifications you made to the flow, you can use the **Undo** and **Redo** command bar buttons. For example, if you added or configured an action, or made significant adjustments to the flow, these features allow you to conveniently revert to a previous state or redo changes you previously canceled.
 
-<img width="1124" alt="image" src="https://github.com/user-attachments/assets/e822d740-b4b2-4efc-bcf1-68e955dbbd04">
-
+:::image type="content" source="media/flows-designer/undo-redo.png" alt-text="Screenshot of the 'Undo' and 'Redo' buttons in the command bar.":::
 
 ### Configurable trigger polling setting
 
