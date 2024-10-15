@@ -118,6 +118,13 @@ On the **Settings** tab, you can set the action time-out, network retry policy, 
 | Security | Use the **Secure inputs** and **Secure outputs** toggles to turn the operations, and references of output properties, on or off. |
 | Tracking | Set the key and value of tracked properties.
 
+### Undo/Redo
+
+You can utilize the _Undo_ and _Redo_ command bar buttons to reverse or reinstate any modifications made to the flow. For example, if you've added or configured an action or made significant adjustments to the flow, these features allow you to conveniently revert to a previous state or redo changes you've undone.
+
+<img width="1124" alt="image" src="https://github.com/user-attachments/assets/e822d740-b4b2-4efc-bcf1-68e955dbbd04">
+
+
 ### Configurable trigger polling setting
 
 In select triggers such as _When an item is created-Sharepoint_, and more, you can manually configure the trigger polling setting. This means you can configure how often the flow should check for new items in Sharepoint and others. This in turn ensures how quickly your flow responds to any changes or trigger events. The default polling period is three (3) minutes, which means the flow checks every three (3) minutes if a new item was created.
@@ -224,8 +231,6 @@ You might notice that some functionalities that were in the classic designer are
 - Non-Open API flows (If there's Peek code on an action and if you see the APIConnection value instead of OpenAPIConnection in Kind field, it's a non-Open API flow.)
 - Some hybrid triggers:
    - When a flow is run from business process flow (Dataverse)
-   - For a selected message (v2 Teams) - Plan to enable worldwide by July end
-   - Teams On Compose Message (Teams) - Plan to enable worldwide by July end
    - Microsoft 365 Compliance Connector
 - A comment
 - Power Pages connector
