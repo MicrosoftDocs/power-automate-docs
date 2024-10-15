@@ -2,7 +2,7 @@
 title: Work queues actions
 description: Use work queue actions in Power Automate desktop flows.
 ms.topic: conceptual
-ms.date: 10/14/2024
+ms.date: 10/15/2024
 ms.author: dbekirop
 ms.reviewer: 
 contributors:
@@ -116,7 +116,7 @@ The **Add work queue item** action allows users to populate work queue items int
 
 :::image type="content" source="media\workqueues\AddWorkQueueItem.png" alt-text="Screenshot of the add work queue item action." lightbox="media\workqueues\AddWorkQueueItem.png":::
 
-### `Enqueueworkqueueitemaction` action
+### `Enqueueworkqueueitemaction`
 
 The **Add work queue item** action requires the following arguments.
 
@@ -180,7 +180,7 @@ The following example is a PowerFx code snippet you can copy and paste directly 
 Variables.CreateNewDatatable InputTable: { ^['Name', 'Input', 'Expires in', 'Processing notes', 'Priority', 'Unique reference', 'Status', 'Delay until'], [$fx'', $fx'', $fx'', $fx'', $fx'', $fx'', $fx'', $fx''] } DataTable=> DataTable
 ```
 
-### `Batchenqueueworkqueueitemsaction` action
+### `Batchenqueueworkqueueitemsaction`
 
 The **Add multiple work queue items** action requires the following arguments.
 
