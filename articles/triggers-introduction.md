@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/11/2024
+ms.date: 10/14/2024
 ms.author: samathur
 ms.reviewer: angieandrews
 ms.collection:
@@ -27,28 +27,21 @@ offer prebuilt triggers that you can use to start your flows. Here's a partial l
 
 ## Choose the right trigger
 
-Triggers can be started instantly or manually, on a schedule, or automatically when an external event occurs, such as when an email arrives.
+Triggers can be started instantly or manually, on a schedule, or automatically when an external event occurs, such as when an email arrives. The following table lists some common trigger scenarios and the type of flow you should create.
 
-### Triggers for instant/manual flows
 
-If you'd like to run a cloud flow with a tap of a button on your mobile device, to remind your team to join the daily team meeting, create an instant flow. You can trigger these flows manually from any device.
-
-### Triggers for scheduled flows
-
-If you'd like to run a cloud flow on a schedule, for example, to send a weekly project report, create a *scheduled flow*. In scheduled flows, you can choose when (date and time) and frequency (monthly/daily/hourly, and more).
-
-To learn more, go to [Run flows on a schedule](./run-scheduled-tasks.md).
-
-### Triggers for automated flows
-
-If you want to create a cloud flow that performs tasks automatically after an event occurs, for example, a cloud flow that notifies you by email when someone tweets with a keyword you specify, create [an automated flow](./get-started-logic-flow.md).
+|Trigger scenario |Flow type |
+|---------|---------|
+|Run a cloud flow with a tap of a button on your mobile device to remind your team to join the daily team meeting. You can trigger these flows manually from any device.  | Instant/manual   |
+|Run a cloud flow on a schedule, for example, to send a weekly project report. Choose when (date and time) and frequency (monthly/daily/hourly, and more). More information: [Run flows on a schedule](./run-scheduled-tasks.md)     | Scheduled   |
+|Create a cloud flow that performs tasks automatically after an event occurs, for example, a cloud flow that notifies you by email when someone tweets with a keyword you specify. More information: [Create a cloud flow from scratch](get-started-logic-flow.md)   | Automated   |
 
 ## Add a trigger to an existing flow
 
 When you edit a trigger in an existing flow, the new trigger must be the first step of the flow.
 
 1. Edit the flow and delete the existing trigger.
-1. After deleting the trigger, Power Automate prompts you to select a new trigger.
+1. After you delete the trigger, Power Automate prompts you to select a new trigger.
 1. Search for the connector and then select the app icon. The following screenshot shows the results if you search for **Share**.
 
     :::image type="content" source="./media/triggers-introduction/connectors.png" alt-text="A screenshot that shows a search for a connector.":::

@@ -5,7 +5,7 @@ author: JoeFernandezMS
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/08/2024
+ms.date: 10/14/2024
 ms.author: jofernan
 ms.reviewer: dmartens
 contributors:
@@ -99,9 +99,13 @@ Speak clearly and show each step in detail as you demonstrate the process. Wait 
 
 ### Where can I watch a demo of Record with Copilot?
 
-This video shows a demo of Record with Copilot:
+The following videos shows a demo of Record with Copilot:
 
 > [!VIDEO 853935fc-c43c-4bf2-9a9d-12b83f3abcfd]
+
+<br><br>
+
+> [!VIDEO cb7fd0a9-ce47-49f0-95d1-1ebeb135ac4e]
 
 ### What are some scenarios I can try with Record with Copilot?
 
@@ -109,7 +113,7 @@ You can try different scenarios, such as moving data from Excel to a web form, n
 
 ### What languages are supported?
 
-Record with Copilot supports English right now. We'll add more languages in future updates.
+Record with Copilot supports English right now. We'll add more languages in future updates. 
 
 ### How is Record with Copilot different from the Recorder?
 
