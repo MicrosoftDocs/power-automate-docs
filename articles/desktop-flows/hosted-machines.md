@@ -50,7 +50,8 @@ To evaluate hosted machines, you need one of the following trial licensing optio
 
 - Use the **Power Automate Hosted Process** license
 
-    The Power Automate hosted RPA add-on have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 user licenses from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those Power Automate Premium (previously Power Automate per user plan with attended RPA) trials to 25 individual makers, and assign the hosted RPA add-ons to the targeted environment.
+    The Power Automate Hosted Process license has trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home) and assign Power Automate Hosted Process capacity to the targeted environment.
+
 
 - Use the **90-days self-assisted premium trial.**
 
