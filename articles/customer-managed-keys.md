@@ -68,7 +68,7 @@ Non-solution cloud flows using the Power Apps trigger and are created in CMK-pro
 
 ### Limitation of invoking Copilot Skills trigger flows
 
-The scenarios where a cloud flow is invoked through the Copilot Skills trigger leveraging the invoking Copilot user's connection as opposed to an embedded connection isn't supported for CMK protected cloud flows. Learn more about using flows as plugins from Copilot in [Run flows from Copilot for Microsoft 365](flow-plugins-m365.md#run-flows-from-microsoft-365-coplot).
+The scenarios where a cloud flow is invoked through the Copilot Skills trigger leveraging the invoking Copilot user's connection as opposed to an embedded connection isn't supported for CMK protected cloud flows. Learn more about using flows as plugins from Copilot in [Run flows from Copilot for Microsoft 365](flow-plugins-m365.md#run-flows-from-microsoft-365-copilot).
 
 ## Related information
 
