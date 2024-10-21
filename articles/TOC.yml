@@ -431,7 +431,7 @@
     items:
     - name: Azure Key Vault credentials
       href: ./desktop-flows/create-azurekeyvault-credential.md
-    - name: CyberArk credentials (preview)
+    - name: CyberArk credentials
       href: ./desktop-flows/create-cyberark-credential.md
   - name: Create desktop flow connections
     href: ./desktop-flows/desktop-flow-connections.md
@@ -1216,22 +1216,6 @@
         href: use-cds-for-apps-dialogs.md
       - name: Replace classic Dataverse dialogs
         href: replace-dialogs.md
-- name: Learning catalog
-  items:
-  - name: Overview
-    href: learning-catalog/learning-catalog.md
-  - name: App maker
-    href: learning-catalog/learning-catalog-app-maker.md
-  - name: Administrator
-    href: learning-catalog/learning-catalog-administrator.md
-  - name: Developer
-    href: learning-catalog/learning-catalog-developer.md
-  - name: Functional consultant
-    href: learning-catalog/learning-catalog-functional-consultant.md
-  - name: Partner presales roles
-    href: learning-catalog/learning-catalog-sales.md
-  - name: Business and Technical Decision Makers learning catalog
-    href: learning-catalog/learning-catalog-bdm.md
 - name: Learn from others
   items:
   - name: Webinars
