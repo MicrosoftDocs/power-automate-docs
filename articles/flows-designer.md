@@ -8,7 +8,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 10/18/2024
+ms.date: 10/21/2024
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -37,11 +37,11 @@ Legend:
 1. **Left arrow button**: Return to the previous page.
 1. [**Undo and Redo buttons**](#undo-and-redo): Reverse or reinstate modifications you made to the flow.
 1. [**Send feedback button**](#send-feedback): Send us feedback about your flow creation experience or general comments about the AI-powered designer.
-1. **Clock button**:
+1. **Version history button**: Track and manage changes made to your flows over time. It records every modification, enabling you to view previous versions, compare changes, and, if necessary, revert to an earlier version. Learn more in [Drafts and versioning for cloud flows](drafts-versioning.md).
 1. **Flow checker button**: Check your flow for errors.
 1. [**Save draft button**](#save-draft-button): Save a draft of your flow.
 1. [**Test button**](#test-button): Test your flow to make sure that it works as you intended.
-1. **Publish button**: Publish your flow to activate changes at runtime.
+1. **Publish button**: Publish your flow so that your flow runs when the trigger event is performed.
 1. [**Copilot button**](get-started-with-copilot.md): Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
 1. **New designer toggle**: Switch between the classic designer and the new cloud flows designer. Learn more in [Identify differences between the classic designer and the new cloud flows designer](#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
 1. **Action/trigger name**: The action or trigger card that is selected in your flow in the center of the page (the [*canvas*](#canvas)).
@@ -236,7 +236,7 @@ The new cloud flows designer has smaller cards to facilitate easy navigation. It
 ## Limitations and known issues
 
 You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following items:
-- Non-Open API flows (If there's Peek code on an action and if you see the APIConnection value instead of OpenAPIConnection in Kind field, it's a non-Open API flow.)
+- Non-Open API flows (If there's Peek code on an action and if you see the API Connection value instead of OpenAPI Connection in Kind field, it's a non-Open API flow.)
 - Some hybrid triggers:
    - When a flow is run from business process flow (Dataverse)
    - Microsoft 365 Compliance Connector
