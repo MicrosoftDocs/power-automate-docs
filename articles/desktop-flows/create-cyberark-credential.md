@@ -14,13 +14,9 @@ search.audienceType:
   - enduser
 ---
 
-# Create a CyberArk credential (preview)
-
-[!INCLUDE [cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
+# Create a CyberArk credential 
 
 This feature allows users to create a Power Automate credential that retrieves CCP CyberArk secrets from vault during runtime.
-
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 ## Availability
 
