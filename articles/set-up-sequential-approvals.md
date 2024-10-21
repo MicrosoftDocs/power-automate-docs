@@ -71,7 +71,7 @@ After you get the manager for the person who created the vacation request, you n
 
     :::image type="content" source="media/set-up-sequential-approvals/add-approval-action.png" alt-text="Screenshot of setting up parameters for sequential pre-approvals.":::
 
-Now, when the flow runs, it first goes to the level 1 manager and if that person approves it. Then, it goes to the level 2 manager for approval.
+Now, when the flow runs, it first goes to the level 1 manager. If that person approves it, then it goes to the level 2 manager for approval.
 
 You can rename actions as you wish. You can also add other actions and subsequent actions after the approval, such as an email that sends the approval decision to the requestor. The following screenshot shows what your flow might look like with renamed actions and an email action at the end.
 
