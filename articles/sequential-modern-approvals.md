@@ -8,7 +8,7 @@ contributors:
   - hamenon-MS
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/21/2024/2024
+ms.date: 10/21/2024
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 ms.collection:

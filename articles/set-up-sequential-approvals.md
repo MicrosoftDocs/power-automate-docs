@@ -1,6 +1,6 @@
 ---
 title: Set up sequential approvals
-description: Discover how to migrate customized Process Mining Power BI reports.
+description: Learn how to set up sequential approvals using an example of getting a vacation request approved.
 author: donums
 contributors:
   - donums
