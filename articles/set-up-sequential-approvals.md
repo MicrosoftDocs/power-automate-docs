@@ -27,10 +27,10 @@ Create a flow that triggers when a new response is submitted to a form.
 1. On the menu at the top, select **New flow** > **Automated cloud flow**.
 1. Give your flow a name.
 1. Under **Choose your flow's trigger**, select **When a new response is submitted**, and then select **Create**.
-1. Select the **When a new response is submitted** card to open the action configuration pane, and then select the **Form Id** from a form you previously created.
+1. Select the **When a new response is submitted** card to open the action configuration pane, and then select the **Form Id** of a form you previously created.
 1. Insert a step and then select the **Get response details** action.
 1. In the same action, place the same **Form Id** from the previous action.
-1. In the **Response Id** field, select the response ID from the previous action.
+1. In the **Response Id** field, select the response ID from the previous **Get response details** action.
 
 ## Get the manager for the person who created the vacation request
 
