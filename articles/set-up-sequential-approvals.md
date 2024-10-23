@@ -7,7 +7,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 10/21/2024
+ms.date: 10/23/2024
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 ---
@@ -42,7 +42,7 @@ After you create the flow, you need to get the manager for the person who create
 1. Select **New step**.
 1. In the **Choose an action** search field, type **get manager**.
 1. Find and select the **Get manager (V2) - Office 365 Users** action.
-1. On the **Get manager** card, insert the **Responder’s Email** token into the **User (UPN)** field.
+1. Select the **Get manager (V2)** card to open the action configuration pane, and then insert the **Responder’s Email** token into the **User (UPN)** field.
 1. Rename the action to **Get level 1 manager**.
 
 ## Get the manager of the requestor’s manager
