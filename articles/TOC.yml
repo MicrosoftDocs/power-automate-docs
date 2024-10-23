@@ -133,7 +133,9 @@
         href: modern-approvals.md
       - name: Approvals with attachments
         href: approval-attachments.md
-      - name: Sequential approvals
+      - name: Set up sequential approvals
+        href: set-up-sequential-approvals.md
+      - name: Manage sequential approvals
         href: sequential-modern-approvals.md
       - name: Parallel approvals
         href: parallel-modern-approvals.md
