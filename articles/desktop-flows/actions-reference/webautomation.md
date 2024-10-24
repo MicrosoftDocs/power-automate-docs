@@ -4,7 +4,7 @@ description: See all the available browser automation actions.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 04/09/2024
+ms.date: 10/23/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -19,9 +19,10 @@ search.audienceType:
 
 Browser automation actions enable users to interact with web applications and components through UI elements. Web UI elements, also called Web elements, describe uniquely the web components that the action is going to handle.
 
-To perform web automation, you first need to create a new browser instance. This can be achieved using the Launch Browser actions, which support Microsoft Edge, Google Chrome, Mozilla Firefox, and Internet Explorer. With the Launch Browser actions, you can also specify whether the web page should be launched on your local desktop or in a virtual desktop environment. 
->[!NOTE]
-> To launch a browser on a virtual desktop, you must first capture at least one UI element within that desktop. This element needs to be available in the UI element repository of your flow.
+To perform web automation, you first need to create a new browser instance. You can achieve this using the Launch Browser actions, which support Microsoft Edge, Google Chrome, Mozilla Firefox, and Internet Explorer. With the Launch Browser actions, you can also specify whether the web page should be launched on your local desktop or in a virtual desktop environment.
+
+> [!NOTE]
+> To launch a browser on a virtual desktop, first capture at least one UI element within that desktop. This element needs to be available in the UI element repository of your flow.
 
 To add a new UI element, select **Add UI element** through the deployed browser automation action or the UI elements pane of the flow designer.
 

@@ -4,7 +4,7 @@ description: Learn how to build automated workflows on Citrix and RDP virtual de
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 08/13/2024
+ms.date: 10/23/2024
 ms.author: quseleba
 ms.reviewer: matp
 contributors:
