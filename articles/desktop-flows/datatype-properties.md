@@ -240,6 +240,13 @@ The data types that have properties are displayed in the following lists.
 |IsAlive    |This property is true if the CMD session is alive or false if it isn't.       |
 |ProcessId  |The unique identifier of the process.                                         |
 
+## Credential
+
+|Property   |Description                                                                   |
+|-----------|------------------------------------------------------------------------------|
+|Username  |The username stored in the credential variable                                 |
+|Password  |The password stored in the credential variable (sensitive by default)          |
+
 ## Terminal session
 
 |Property     |Description                                                                       |
