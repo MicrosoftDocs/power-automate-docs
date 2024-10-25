@@ -98,6 +98,7 @@ The following desktop flow modules are available in DLP:
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.OCR      OCR
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Outlook    Outlook
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Pdf      PDF
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.PowerAutomateSecretVariables     Power Automate Secret Variables
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Runflow    Run flow
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Scripting    Scripting
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.System    System
