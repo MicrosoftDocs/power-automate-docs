@@ -35,7 +35,7 @@ Retrieves the values of a credential created through Power Automate's portal pag
 
 |Argument|Type|Description|
 |-----|-----|-----|
-|Credential|[Credential]((../variable-data-types.md#credentials))|The content of the retrieved credential|
+|Credential|[Credential](../variable-data-types.md#credentials)|The content of the retrieved credential|
 
 ### <a name="getcredentialaction_onerror"></a> Exceptions
 
