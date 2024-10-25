@@ -18,7 +18,7 @@ search.audienceType:
 
 In this module, you will find actions that allow you to safely retrieve sensitive data that are available in your environment, offering direct integration with the corresponding components.
 
-Currently, you are able to retrieve CyberArk-based credentials and use them in desktop flows in a secure way, as the credential values are only retrieved at runtime and are not logged (credential type variables are enforced to be sensitive).
+Currently, you are able to retrieve CyberArk-based credentials and [use them in desktop flows (preview)](../create-cyberark-credential.md#use-the-credential-in-a-desktop-flow-action-preview) in a secure way, as the credential values are only retrieved at runtime and are not logged (credential type variables are enforced to be sensitive).
 
 ## <a name="getcredentialaction"></a> Get credential (Preview)
 
