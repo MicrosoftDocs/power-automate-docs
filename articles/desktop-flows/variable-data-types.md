@@ -4,7 +4,7 @@ description: See all the available variable data types in desktop flows.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/15/2023
+ms.date: 10/25/2024
 ms.author: dipapa
 ms.reviewer: matp
 contributors:
@@ -273,7 +273,7 @@ This section presents all the available data types that don't belong to any of t
 
 ### Credentials
 
-- **Credentials** – Contains a credential retrieved through the **Get credential (preview)** action.
+- **Credential** – Contains a credential retrieved through the **Get credential (preview)** action.
 
 [Credential data type properties]()
 
