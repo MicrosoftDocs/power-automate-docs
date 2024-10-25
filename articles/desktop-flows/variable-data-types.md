@@ -275,7 +275,7 @@ This section presents all the available data types that don't belong to any of t
 
 - **Credential** – Contains a credential retrieved through the **Get credential (preview)** action.
 
-[Credential data type properties]()
+[Credential data type properties](datatype-properties.md#credential)
 
 ### Dates and time
 
