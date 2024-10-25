@@ -271,6 +271,12 @@ This section presents all the available data types that don't belong to any of t
 
 [CMD data type properties](datatype-properties.md#cmd-session)
 
+### Credentials
+
+- **Credentials** – Contains a credential retrieved through the **Get credential (preview)** action.
+
+[Credential data type properties]()
+
 ### Dates and time
 
 - **Datetime** – Contains date and time information. To create a datetime variable through the **Set Variable** action, populate the input parameter with the expressions **%d"yyyy-MM-dd HH:mm:ss.ff+zzz"%**, where:
