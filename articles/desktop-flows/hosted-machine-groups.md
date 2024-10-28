@@ -187,7 +187,7 @@ To use the image in Power Automate, you need to share the image with Power Autom
 > If you can't find the application above, verify that the application exists in your tenant and provision it if necessary.
 > To verify that the application exists, go to the [Azure portal](https://portal.azure.com/) > **Microsoft Entra** > **Enterprise applications** > **All applications**, and search for application id: **51699864-8078-4c9e-a688-09a1db1b2e09**. If you can't find the application, provision it using the following command:
 > ```
-> az ad sp create --id 00001111-aaaa-2222-bbbb-3333cccc4444
+> az ad sp create --id 51699864-8078-4c9e-a688-09a1db1b2e09
 > ```
 
 ### Share the gallery with Power Automate makers
