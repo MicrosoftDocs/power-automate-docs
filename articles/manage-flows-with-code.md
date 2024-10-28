@@ -677,6 +677,14 @@ OData-Version: 4.0
 
 ---
 
+## FAQ
+
+### What about the API at api.flow.microsoft.com?
+
+The API at **api.flow.microsoft.com** is not supported. Customers should instead use the Dataverse Web APIs for Power Automate documented above.
+Alternately, customers can use the management connectors: [Power Automate Management](/connectors/flowmanagement/) or [Power Automate for Admins](/connectors/microsoftflowforadmins/).
+Customers can use the unsupported APIs at **api.flow.microsoft.com** at their own risk. Those APIs are subject to change so breaking changes could occur. 
+
 ## Related information
 
 [Entity class operations using the Organization service](/power-apps/developer/data-platform/org-service/entity-operations)  
