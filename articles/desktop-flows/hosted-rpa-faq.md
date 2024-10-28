@@ -37,5 +37,12 @@ For example, an environment with 20 Power Automate Hosted Process capacity could
 
 For more information, refer to the [Power Automate licensing page](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-hosted-process%2Cconnector-types#capacity-licenses).
 
+## Governance
+
+A Center of Excellence (COE) Administrator has full control over which users can access specific resources within the hosted RPA solution. This is managed through **Microsoft Dataverse**, which employs a robust security model using security roles, teams, and business units to control access to tables, fields, and records with permission and row-level access control. 
+
+For more information, refer to the [Permissions Based on Security Roles](/hosted-machines#permissions-based-on-security-roles) relevant to the hosted RPA solution.
+
+COE Administrators can also monitor and govern the usage of the hosted RPA solution within an environment using the [Hosted Process Capacity Utilization Dashboard](/capacity-utilization-hosted).
 
 
