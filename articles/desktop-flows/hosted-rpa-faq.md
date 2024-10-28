@@ -10,7 +10,7 @@ ms.reviewer:
 contributors:
 ---
 
-# Hosted RPA Overview
+# Hosted RPA Best Practices and FAQ
 
 This section provides an overview of the best practices and frequently asked questions related to hosted RPA (Robotic Process Automation). It covers various aspects such as hosted machines and hosted machine groups configuration, maintenance and management, custom VM images, access, and security.
 
@@ -33,16 +33,39 @@ The hosted RPA capability requires the purchase of the **Power Automate Hosted P
 
 For example, an environment with 20 Power Automate Hosted Process capacity could be utilized as such:
 - 10 Hosted Machines
-- 3 Hosted Machine Groups sharing 10 bots. Refer to [load balancing hosted machine groups](/hosted-machine-groups#load-balance-hosted-machine-group).
+- 3 Hosted Machine Groups sharing 10 bots. Refer to [load balancing hosted machine groups](hosted-machine-groups.md#load-balance-hosted-machine-group).
 
-For more information, refer to the [Power Automate licensing page](https://learn.microsoft.com/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-hosted-process%2Cconnector-types#capacity-licenses).
+For more information, refer to the [Power Automate licensing page](/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-hosted-process%2Cconnector-types#capacity-licenses).
 
 ## Governance
 
 A Center of Excellence (COE) Administrator has full control over which users can access specific resources within the hosted RPA solution. This is managed through **Microsoft Dataverse**, which employs a robust security model using security roles, teams, and business units to control access to tables, fields, and records with permission and row-level access control. 
 
-For more information, refer to the [Permissions Based on Security Roles](/hosted-machines#permissions-based-on-security-roles) relevant to the hosted RPA solution.
+For more information, refer to the [Permissions Based on Security Roles](hosted-machines.md#permissions-based-on-security-roles) relevant to the hosted RPA solution.
 
-COE Administrators can also monitor and govern the usage of the hosted RPA solution within an environment using the [Hosted Process Capacity Utilization Dashboard](/capacity-utilization-hosted).
+COE Administrators can also monitor and govern the usage of the hosted RPA solution within an environment using the [Hosted Process Capacity Utilization Dashboard](capacity-utilization-hosted.md).
 
+## Custom VM Images
+
+Using a custom VM image for your hosted virtual machines allows you to create a consistent and tailored environment, pre-configured with specific applications, security settings, and performance optimizations to support your automation and compliance needs.
+
+- **Creating Custom VM Images**: Find instructions and requirements for creating custom VM images for [hosted machines](hosted-machines.md#use-custom-vm-images-for-your-hosted-machine) and [hosted machine groups](hosted-machine-groups.md#use-custom-vm-images-for-your-hosted-machine-groups).
+
+- **Updating VM Images**: Since hosted machines are persistent virtual machines, it’s recommended to perform regular patching and updates after provisioning. For hosted machine groups, you can update the custom VM image by following these [update instructions](hosted-machine-groups.md#update-vm-image-used-by-the-hosted-machine-group). Refer to the maintenance and management section for more information on keeping your hosted VMs up-to-date.
+
+- **Deleting VM Images**: Power Automate prevents users from deleting VM images from the Power Automate Portal if they are currently in use by a hosted machine or hosted machine group. However, a VM image can still be deleted directly from the Azure Compute Gallery, which will cause failure if a hosted virtual machine is being provisioned.
+
+## Custom Network Connection
+
+Using a custom network connection allows you to connect your hosted machines to your own virtual network, enabling secure communication among hosted machines, the Internet, and on-premises networks. This setup also provides organizations full control over traffic in and out of hosted virtual machines.
+
+- **Creating Custom Network Connections**: Follow the instructions and requirements for creating custom network connections for [hosted machines](hosted-machines.md#use-a-custom-virtual-network-for-your-hosted-machines) and [hosted machine groups](hosted-machine-groups.md#use-a-custom-virtual-network-for-your-hosted-machine-groups-preview).
+
+- **Enable Access to Required Service Endpoints**:
+  - Desktop Flow services : WIP
+  - W365 for hosted machines
+
+## Maintenance and Management
+
+Proper maintenance and management of hosted virtual machines are essential for ensuring smooth operations.
 
