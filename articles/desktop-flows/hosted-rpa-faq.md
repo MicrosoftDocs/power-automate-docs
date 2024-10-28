@@ -51,7 +51,7 @@ Using a custom VM image for your hosted virtual machines allows you to create a 
 
 - **Creating Custom VM Images**: Find instructions and requirements for creating custom VM images for [hosted machines](hosted-machines.md#use-custom-vm-images-for-your-hosted-machine) and [hosted machine groups](hosted-machine-groups.md#use-custom-vm-images-for-your-hosted-machine-groups).
 
-- **Updating VM Images**: Since hosted machines are persistent virtual machines, it’s recommended to perform regular patching and updates after provisioning. For hosted machine groups, you can update the custom VM image by following these [update instructions](hosted-machine-groups.md#update-vm-image-used-by-the-hosted-machine-group). Refer to the maintenance and management section for more information on keeping your hosted VMs up-to-date.
+- **Updating VM Images**: Since hosted machines are persistent virtual machines, it’s recommended to perform regular patching and updates after provisioning. For hosted machine groups, you can update the custom VM image by following these [update instructions](hosted-machine-groups.md#update-vm-image-used-by-the-hosted-machine-group). Refer to the [Maintenance and Management](#maintenance-and-management) section for more information on keeping your hosted VMs up-to-date.
 
 - **Deleting VM Images**: Power Automate prevents users from deleting VM images from the Power Automate Portal if they are currently in use by a hosted machine or hosted machine group. However, a VM image can still be deleted directly from the Azure Compute Gallery, which will cause failure if a hosted virtual machine is being provisioned.
 
