@@ -36,26 +36,40 @@ In a nutshell, admin needs to ensure:
 
 To configure Azure Key Vault, follow the steps described in [Configure Azure Key Vault](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets#configure-azure-key-vault).
 
+### Certificate-based authentication (preview)
+
+Entra-ID certificate-based authentication is one of the options that can allow customers to satisfy **Multifactor authentication (MFA) requirements**.
+Instead of using password-based authentication in Credentials, you can use certificate-based authentication (CBA), which is a method of verifying the identity of users based on digital certificates.
+
+To use CBA, first follow the steps described in [Configure certificate-based authentication](configure-CBA.md) . Otherwise, you can now start creating a credential.
+
 ## Create a credential
 
 To create your credentials:
 
-1. Go to the **Credentials** page.
+1. Go to the **Credentials** page. If you don' see the Credentials page, follow the next two steps.
 1. Select **more** in the left nav, then select **Discover all**.
 1. Under **Data**, select **Credentials**. You can pin the page in the left nav to make it more accessible.
 
-In the credentials page, you can now create your first credential.
+In the credentials page, you can now create your first credential by selecting **New Credential**.
 
 :::image type="content" source="./media/manage-machines/define-name.png" alt-text="Screenshot of defining the name of the credential.":::
 
+### Define credential name 
 To create your credential, you need to provide the following information:
 
 - **Credential name**: Enter a name for the credential
 - **Description** (optional)
 
-After selecting **next**, you need to select **Azure Key Vault** as a credential store.
+### Select credential store 
+After selecting **next**, you need to select **Azure key kault** as a credential store.
+1. Select **Connection** as location to use credential. Using credential in desktop flow is not supported with Azure Key Vault yet.
+2. Select **Azure key vault** as the type of credential store and then select **Next**
 
-In the last step of the wizard, you select username and password or create new ones:
+### Select credential values
+In the last step of the wizard, you select credential values. With Azure key vault, there are two two types of supported authentications:
+1. **Username and password**: the secret stored in the vault is a password
+2. **Certificate based authentication**: the secret stored in the vault is a certificate.
 
 - **Username**: To select a username, you can use the dropdown. If you don’t have any environment variables, select **new**:
   - **Display name**. Enter a name for the environment variable.
@@ -133,14 +147,13 @@ You should import the solution containing the credential and the related environ
 ## Limitations
 
 - Currently, this feature is available only for desktop flow connections.
-- Creating credentials in the new designer isn't available yet.
-- You can't edit the selected environment variables in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the Azure Key Vault secret.
-- Update of connections using credentials is asynchronous. It can take up to one minute for the desktop flow connection to use the new credentials after the secret is updated.
+- You can't edit the selected username and secret in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the Azure Key Vault secret.
+
 
 ## Update a secret (password rotation) - Deprecated
 
 > [!NOTE]
-> This section is now deprecated. All the connections using Credentials are now retrieving secrets during the flow execution. It is not necessary anymore to create this custom flow to update the connections.
+> This section is now deprecated for desktop flow connections. Desktop flow connections using Credentials are now retrieving secrets during the flow execution. It is not necessary anymore to create this custom flow to update the connections.
 > The connections using Credentials created before April 2024 should be updated to benefit of the automatic update.
 
 ### Prerequisites for updating a secret (password rotation)
