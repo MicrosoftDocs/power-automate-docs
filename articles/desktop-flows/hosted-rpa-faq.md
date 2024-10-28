@@ -61,9 +61,9 @@ Using a custom network connection allows you to connect your hosted machines to 
 
 - **Creating Custom Network Connections**: Follow the instructions and requirements for creating custom network connections for [hosted machines](hosted-machines.md#use-a-custom-virtual-network-for-your-hosted-machines) and [hosted machine groups](hosted-machine-groups.md#use-a-custom-virtual-network-for-your-hosted-machine-groups-preview).
 
-- **Enable Access to Required Service Endpoints**:
-  - Desktop Flow services : WIP
-  - W365 for hosted machines
+**Note**: Ensure access to the required service endpoints:
+  - [Power Automate service endpoints](/power-automate/ip-address-configuration)
+  - For hosted machines, refer to specific requirements for [Windows 365 service, Azure Virtual Desktop session host virtual machine, Microsoft Intune service, and physical devices network connectivity](windows-365/enterprise/requirements-network?tabs=enterprise%2Cent#allow-network-connectivity).
 
 ## Maintenance and Management
 
