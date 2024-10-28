@@ -41,9 +41,9 @@ For more information, refer to the [Power Automate licensing page](/power-platfo
 
 A Center of Excellence (COE) Administrator has full control over which users can access specific resources within the hosted RPA solution. This is managed through **Microsoft Dataverse**, which employs a robust security model using security roles, teams, and business units to control access to tables, fields, and records with permission and row-level access control. 
 
-For more information, refer to the [Permissions Based on Security Roles](hosted-machines.md#permissions-based-on-security-roles) relevant to the hosted RPA solution.
+For more information, refer to the [permissions based on security roles](hosted-machines.md#permissions-based-on-security-roles) relevant to the hosted RPA solution.
 
-COE Administrators can also monitor and govern the usage of the hosted RPA solution within an environment using the [Hosted Process Capacity Utilization Dashboard](capacity-utilization-hosted.md).
+COE Administrators can also monitor and govern the usage of the hosted RPA solution within an environment using the [Hosted Process capacity utilization dashboard](capacity-utilization-hosted.md).
 
 ## Custom VM Images
 
