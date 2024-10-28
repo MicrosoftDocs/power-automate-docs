@@ -21,6 +21,8 @@ Entra-ID certificate-based authentication is one of the options that can allow c
 
 ## How CBA credentials work in Power Automate
 
+:::image type="content" source="./media/manage-machines/CBA-overview.png" alt-text="Screenshot of how works CBA in Power Automate.":::
+
 To get benefits of this feature, you will need first to follow the following pre-requisites.
 
 > [!NOTE]
