@@ -64,7 +64,7 @@ Using a custom network connection allows you to connect your hosted machines to 
 > [!NOTE]
 > Ensure access to the required service endpoints:
 > - Power Automate [service endpoints](/power-automate/ip-address-configuration)
-> - For hosted machines, refer to specific requirements for [Windows 365 service, Azure Virtual Desktop session host virtual machine, Microsoft Intune service, and physical devices network connectivity](windows-365/enterprise/requirements-network?tabs=enterprise%2Cent#allow-network-connectivity).
+> - For hosted machines, refer to specific requirements for [Windows 365 service, Azure Virtual Desktop session host virtual machine, Microsoft Intune service, and physical devices network connectivity](/windows-365/enterprise/requirements-network?tabs=enterprise%2Cent#allow-network-connectivity).
 
 
 ## Maintenance and Management
