@@ -82,7 +82,7 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 
     1. Remove filter **Application type == Enterprise Applications**.
 
-    1. Fill filter **Application ID starts with** with the Windows 365 application ID **00001111-aaaa-2222-bbbb-3333cccc4444**.
+    1. Fill filter **Application ID starts with** with the Windows 365 application ID **0af06dc6-e4b5-4f28-818e-e78e62d137a5**.
 
         If the service principal is provisioned in your Microsoft Entra, the page should look like the following screenshot:
 
@@ -95,7 +95,7 @@ To find more information about the Microsoft Entra and Intune requirements, go t
     You can create an Azure service principal with the [az ad sp create](/cli/azure/ad/sp) command from the [Azure Command-Line Interface (CLI)](/cli/azure/).
 
     ```Azure-CLI-command
-    az ad sp create --id 00001111-aaaa-2222-bbbb-3333cccc4444
+    az ad sp create --id 0af06dc6-e4b5-4f28-818e-e78e62d137a5
     ```
 
 1. Create other service principals related to Azure Virtual Desktop.
