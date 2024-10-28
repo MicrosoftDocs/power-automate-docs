@@ -69,5 +69,19 @@ Using a custom network connection allows you to connect your hosted machines to 
 
 ## Maintenance and Management
 
-Proper maintenance and management of hosted virtual machines are essential for ensuring smooth operations.
+Proper maintenance and management of hosted virtual machines are essential for ensuring smooth operations. When provisioning hosted machines or hosted machine groups using the default VM image provided by Microsoft, these images are automatically updated monthly following the Windows Servicing & Delivery security patch release schedule.
+
+### Options for Managing Hosted Virtual Machines:
+- **Hosted Machines**  
+  - Use **Intune** to manage devices by applying policies that ensure compliance with your organization's requirements. For example, ensure devices are regularly updated with the latest security patches.
+
+- **Hosted Machine Groups**  
+  - Since hosted machine groups are considered stateless, they are provisioned based on the specified VM images. When using custom VM images, use tools such as the [Azure VM Image Builder](/azure/virtual-machines/image-builder-overview) to integrate the image-building process with your existing DevOps pipeline.
+
+## Miscellaneous
+
+Additional information on hosted RPA:
+
+- **Common Registry Customization Settings for Microsoft Edge**  
+  - As web-based automation using Microsoft Edge is a common task, it may be useful to define Microsoft Edge behavior in areas such as startup behavior, password management, and pop-up handling. Use the [Microsoft Edge Browser Policy](/deployedge/microsoft-edge-policies) for configuration, which can be enforced via registry settings applied to a custom VM image.
 
