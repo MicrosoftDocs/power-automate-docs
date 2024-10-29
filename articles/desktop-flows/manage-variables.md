@@ -4,7 +4,7 @@ description: See how to manage variables and the variables pane
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/25/2024
+ms.date: 10/29/2024
 ms.author: dbekirop
 ms.reviewer: matp
 contributors:
@@ -164,7 +164,7 @@ The flow designer handles sensitivity as a mask that you can set on and off. Thu
 > [!NOTE]
 >
 > - The value of a sensitive variable is visible when you send it outside desktop flows or displayed through the **Display message**  action.
-> - Sensitivity isn't inheritable in variables. If you add or assign a sensitive variable to another variable, the resulting variable won't be sensitive by default. The exception to this rule applies only to credential variable types - credential variables (produced either by the respective action or by reassignment from another variable) are always sensitive, and their sensitivity is enforced. The same exception also applies to the 'Password' property of credential variable types.
+> - Sensitivity isn't inheritable in variables. If you add or assign a sensitive variable to another variable, the resulting variable won't be sensitive by default. The exception to this rule applies only to credential variable types. Credential variables, produced either by the respective action or by reassignment from another variable, are always sensitive, and their sensitivity is enforced. The same exception also applies to the "Password" property of credential variable types.
 > - Marking a variable as sensitive hides its values from the summary of the **Set variable** action.
 > - The input details of the **Set variable** action aren't visible in the desktop flow logs when the contained variables have been marked as sensitive.
 > - Masking sensitive variables during debugging provides only a basic form of protection to developers from third parties looking at their screens.

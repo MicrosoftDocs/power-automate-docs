@@ -4,7 +4,7 @@ description: This section describes all Power Automate actions
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/24/2024
+ms.date: 10/29/2024
 ms.author: dipapa
 ms.reviewer: tapanm
 contributors:
@@ -18,13 +18,9 @@ search.audienceType:
 
 # Actions reference
 
+In this section, you can find a reference to all actions of the Power Automate.
 
-
-In this section, you can find a reference to all actions of the Power Automate. 
-
-Select on any of the action groups and the list of actions will appear along with their parameters to assist you configure them.
-
-
+Select on any of the action groups and the list of actions appear along with their parameters to assist you configure them.
 
 |A - C|D - H|I - R|S - Z|
 |----|----|----|----|
@@ -41,6 +37,5 @@ Select on any of the action groups and the list of actions will appear along wit
 |[Custom actions](actions-reference/custommodule.md)|[HTTP](actions-reference/web.md)|[Run flow](actions-reference/runflow.md)|[Workqueues](actions-reference/workqueues.md)|
 |[Cryptography](actions-reference/cryptography.md)|||[XML](actions-reference/xml.md)|
 |[CyberArk](actions-reference/cyberark.md)|||[Word](actions-reference/word.md)|
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

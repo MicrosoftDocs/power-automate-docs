@@ -1,26 +1,34 @@
 ---
-title: Power Automate secret variables actions reference
-description: See all the available Power Automate secret variables actions.
+title: Power Automate secret variables actions reference (preview)
+description: Discover how to use Power Automate secret variables actions to securely retrieve sensitive data. Integrate CyberArk credentials in your desktop flows.
 author: yiannismavridis
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/24/2024
+ms.date: 10/29/2024
 ms.author: yiannismavridis
 ms.reviewer: yiannismavridis
 contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom:
+- ai-gen-docs-bap
+- ai-gen-description
+- ai-seo-date:10/29/2024
 ---
 
-# Power Automate secret variables (Preview) actions
+# Power Automate secret variables actions (preview)
 
-In this module, you will find actions that allow you to safely retrieve sensitive data that are available in your environment, offering direct integration with the corresponding components.
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Currently, you are able to retrieve CyberArk-based credentials and [use them in desktop flows (preview)](../create-cyberark-credential.md#use-the-credential-in-a-desktop-flow-action-preview) in a secure way, as the credential values are only retrieved at runtime and are not logged (credential type variables are enforced to be sensitive).
+In this module, you find actions that allow you to safely retrieve sensitive data that are available in your environment, offering direct integration with the corresponding components.
 
-## <a name="getcredentialaction"></a> Get credential (Preview)
+You can retrieve CyberArk-based credentials and [use them in desktop flows (preview)](../create-cyberark-credential.md#use-the-credential-in-a-desktop-flow-action-preview) securely. The credential values are only retrieved at runtime and aren't logged. Credential type variables are enforced to be sensitive.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+## <a name="getcredentialaction"></a> Get credential
 
 Retrieves the values of a credential created through Power Automate's portal page for this environment.
 
