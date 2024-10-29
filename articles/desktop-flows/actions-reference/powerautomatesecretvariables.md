@@ -6,8 +6,8 @@ author: yiannismavridis
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 10/29/2024
-ms.author: yiannismavridis
-ms.reviewer: yiannismavridis
+ms.author: iomavrid
+ms.reviewer: dmartens
 contributors:
 search.audienceType: 
   - flowmaker
