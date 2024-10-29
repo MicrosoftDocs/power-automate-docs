@@ -421,6 +421,8 @@
         href: ./desktop-flows/hosted-machines.md
       - name: Hosted machine groups
         href: ./desktop-flows/hosted-machine-groups.md
+      - name: Hosted RPA best practices & FAQ
+        href: ./desktop-flows/hosted-rpa-faq.md
     - name: Scale with AVD starter kit (deprecated)
       href: ./desktop-flows/avd-overview.md
   - name: Create credentials
