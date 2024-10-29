@@ -24,7 +24,6 @@ This section provides an overview of the best practices and frequently asked que
 | **Device join types**                    | • Entra Join<br> • Entra Hybrid join                                                                                                | • Entra Join                                                                                                                                                                       |
 | **User accounts**                        | • Work or school account                                                                                                            | • Work or school account<br> • Local account                                                                                                                                       |
 | **Device management**                    | • Intune<br> • Active Directory (AD)-based Group Policy (GPO) is using Entra Hybrid join<br> • Conditional access policy             | • Conditional access policy                                                                                                                                                        |
-| **Additional Features**                  | Not supported. Can configure multiple hosted machines in a machine group                                                            | Auto-scaling & dynamic load balancing of hosted machine group bots built in                                                                                                        |
 
 
 ## Licensing
