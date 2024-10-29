@@ -28,11 +28,11 @@ This section provides an overview of the best practices and frequently asked que
 
 ## Licensing
 
-The hosted RPA capability requires the purchase of the **Power Automate Hosted Process** license ([Power Automate Pricing | Microsoft Power Platform](https://powerautomate.microsoft.com/pricing)) (previously known as the Power Automate hosted RPA add-on). Each Power Automate Hosted Process capacity assigned to a Power Automate environment can be used to provision one hosted machine or as a shared capacity across hosted machine groups.
+The hosted RPA capability requires the purchase of the **Power Automate Hosted Process** license ([Power Automate Pricing | Microsoft Power Platform](https://www.microsoft.com/power-platform/products/power-automate/pricing)) (previously known as the Power Automate hosted RPA add-on). Each Power Automate Hosted Process capacity assigned to a Power Automate environment can be used to provision one hosted machine or as a shared capacity across hosted machine groups.
 
 For example, an environment with 20 Power Automate Hosted Process capacity could be utilized as such:
-- 10 Hosted Machines
-- 3 Hosted Machine Groups sharing 10 bots. Refer to [load balancing hosted machine groups](hosted-machine-groups.md#load-balance-hosted-machine-group).
+- 10 hosted machines
+- 3 hosted machine groups sharing 10 bots. Refer to [load balancing hosted machine groups](hosted-machine-groups.md#load-balance-hosted-machine-group).
 
 For more information, refer to the [Power Automate licensing page](/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-hosted-process%2Cconnector-types#capacity-licenses).
 
@@ -48,7 +48,7 @@ COE Administrators can also monitor and govern the usage of the hosted RPA solut
 
 Using a custom VM image for your hosted virtual machines allows you to create a consistent and tailored environment, pre-configured with specific applications, security settings, and performance optimizations to support your automation and compliance needs.
 
-- **Creating Custom VM Images**: Find instructions and requirements for creating custom VM images for [hosted machines](hosted-machines.md#use-custom-vm-images-for-your-hosted-machine) and [hosted machine groups](hosted-machine-groups.md#use-custom-vm-images-for-your-hosted-machine-groups).
+- **Creating custom VM Images**: Find instructions and requirements for creating custom VM images for [hosted machines](hosted-machines.md#use-custom-vm-images-for-your-hosted-machine) and [hosted machine groups](hosted-machine-groups.md#use-custom-vm-images-for-your-hosted-machine-groups).
 
 - **Updating VM Images**: Since hosted machines are persistent virtual machines, it’s recommended to perform regular patching and updates after provisioning. For hosted machine groups, you can update the custom VM image by following these [update instructions](hosted-machine-groups.md#update-vm-image-used-by-the-hosted-machine-group). Refer to the [Maintenance and Management](#maintenance-and-management) section for more information on keeping your hosted VMs up-to-date.
 
@@ -71,13 +71,13 @@ Using a custom network connection allows you to connect your hosted machines to 
 Proper maintenance and management of hosted virtual machines are essential for ensuring smooth operations. When provisioning hosted machines or hosted machine groups using the default VM image provided by Microsoft, these images are automatically updated monthly following the Windows Servicing & Delivery security patch release schedule.
 
 ### Options for managing hosted virtual machines:
-- **Hosted Machines**. Use **Intune** to manage devices by applying policies that ensure compliance with your organization's requirements. For example, ensure devices are regularly updated with the latest security patches.
+- **Hosted machines**. Use **Intune** to manage devices by applying policies that ensure compliance with your organization's requirements. For example, ensure devices are regularly updated with the latest security patches.
 
-- **Hosted Machine Groups**. Since hosted machine groups are considered stateless, they are provisioned based on the specified VM images. When using custom VM images, use tools such as the [Azure VM Image Builder](/azure/virtual-machines/image-builder-overview) to integrate the image-building process with your existing DevOps pipeline.
+- **Hosted machine groups**. Since hosted machine groups are considered stateless, they are provisioned based on the specified VM images. When using custom VM images, use tools such as the [Azure VM Image Builder](/azure/virtual-machines/image-builder-overview) to integrate the image-building process with your existing DevOps pipeline.
 
 ## Miscellaneous
 
 Additional information on hosted RPA:
 
-- **Common Registry Customization Settings for Microsoft Edge**. As web-based automation using Microsoft Edge is a common task, it may be useful to define Microsoft Edge behavior in areas such as startup behavior, password management, and pop-up handling. Use the [Microsoft Edge Browser Policy](/deployedge/microsoft-edge-policies) for configuration, which can be enforced via registry settings applied to a custom VM image.
+- **Common Registry Customization Settings for Microsoft Edge**. As web-based automation using Microsoft Edge is a common automation scenario, it may be useful to define Microsoft Edge behavior in areas such as startup behavior, password management, and pop-up handling. Use the [Microsoft Edge Browser Policy](/deployedge/microsoft-edge-policies) for configuration, which can be enforced via registry settings applied to a custom VM image.
 
