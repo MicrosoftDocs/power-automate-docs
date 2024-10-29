@@ -1,17 +1,15 @@
 ---
 title: Get started with Power Automate
 description: Learn how to navigate the Power automate home page.
-author: jamiemwork
+author: kisubedi
 contributors:
   - jamiemwork
   - -kisubedi
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 11/10/2023
-ms.author: jamiller
+ms.date: 10/09/2024
+ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -212,3 +210,10 @@ Here's the list of the main categories:
 ## 6 - Ask a chatbot
 
 Get contextual help while building your flow using the Power Platform virtual agent. To learn more, go to [Get contextual help with flows from the Microsoft Copilot Studio bot](contextual-help-bot.md).
+
+## Related information
+
+- [Training: Get started with Power Automate (module)](/training/modules/get-started-flows/)
+- [Training: Automate a business process using Power Automate (learning path)](/training/paths/automate-process-power-automate/)
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

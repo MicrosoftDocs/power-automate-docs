@@ -4,7 +4,7 @@ description: See how to troubleshoot common issues of Power Automate desktop flo
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 04/09/2024
+ms.date: 10/07/2024
 ms.author: pefelesk
 ms.reviewer: tapanm
 contributors:
@@ -63,13 +63,15 @@ You can find TroubleshootingTool.Console.exe in the directory where you installe
 
 Example:
 
-`TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount mydomain\myuser < tempfilethatcontainspassword.txt`                                                                                              
+`TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount mydomain\myuser < tempfilethatcontainspassword.txt`
 
 The tool also provides other functionality such as getting the name of the account that the service is currently running as, resetting it to run as the default virtual account, or simply restarting the service. For more information on all supported commands, simply run the TroubleshootingTool.Console.exe with no arguments.
 
 ## Troubleshoot desktop flow runs
 
 If your desktop flow run fails, go to [Errors when running attended or unattended desktop flows](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-errors-running-attended-or-unattended-desktop-flows) and find mitigation steps for different error codes.
+
+If you encounter errors related to the desktop flow run queue, go to [Troubleshoot desktop flow run queue errors](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-desktop-flow-run-queue-errors).
 
 ## Collect machine logs
 
@@ -137,5 +139,5 @@ If you need help, use our self-help options, or ask for help from support.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
-### See also
+## Related information
 [Power Automate Troubleshooting](/troubleshoot/power-platform/power-automate/welcome-power-automate)

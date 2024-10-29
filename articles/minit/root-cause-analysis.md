@@ -79,6 +79,6 @@ All of these metrics, can be also used in **Influenced by**.
 
 To learn more about custom metrics, go to [List of other operations](other-operations.md).
 
-### See also
+## Related information
 
 [Root cause analysis overview](root-cause-analysis-overview.md)

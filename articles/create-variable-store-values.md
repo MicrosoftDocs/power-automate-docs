@@ -5,7 +5,7 @@ suite: flow
 author: kisubedi
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 09/04/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -347,6 +347,6 @@ Here are the properties for the **Append to...** actions:
 | **Name** | Yes | <*variable-name*> | The name for the variable to change |
 | **Value** | Yes | <*append-value*> | The value you want to append, which can have any type |
 
-### See also
+## Related information
 
 [Power Automate connectors](/connectors/connectors)

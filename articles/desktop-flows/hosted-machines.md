@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 06/17/2024
+ms.date: 10/15/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -32,7 +32,8 @@ Key capabilities:
 - **Connect to your own virtual network**: Securely communicate with each other, the Internet, and your on-premises networks.
 
     > [!NOTE]
-    > Sign-in access is only available to the creator of the hosted machine.
+    > - Sign-in access is only available to the creator of the hosted machine.
+    > - You can run unattended desktop flows using a work or school account that is different from the creator of the hosted machine, provided that you add the account on the hosted machine.
 
 ## Licensing requirements
 
@@ -49,13 +50,13 @@ To evaluate hosted machines, you need one of the following trial licensing optio
 
 - Use the **Power Automate Hosted Process** license
 
-    The Power Automate hosted RPA add-on have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 user licenses from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those Power Automate Premium (previously Power Automate per user plan with attended RPA) trials to 25 individual makers, and assign the hosted RPA add-ons to the targeted environment.
+    The Power Automate Hosted Process license has trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home) and assign Power Automate Hosted Process capacity to the targeted environment.
+
 
 - Use the **90-days self-assisted premium trial.**
 
     Trial users are granted the capacity of one hosted machine per tenant. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
-  > [!NOTE]
-  > Hosted machine capacity based on the 90-days self-assisted premium trial has been temporarily disabled until further notice.
+
 
 ## Prerequisites
 
@@ -85,7 +86,7 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 
         If the service principal is provisioned in your Microsoft Entra, the page should look like the following screenshot:
 
-        :::image type="content" source="media/hosted-machines/azure-portal.png" alt-text="Screenshot of the Enterprise applications in Microsoft Entra ID.":::
+        :::image type="content" source="media/hosted-machines/azure-portal.svg" alt-text="Screenshot of the Enterprise applications in Microsoft Entra ID.":::
 
         If the application is like the presented screenshot, you don't need to perform any extra steps. However, you must create the service principal if the application isn't showing up.
 
@@ -208,7 +209,7 @@ You can personalize your hosted machines by providing your own Windows image dir
 - Canada: Canada Central
 - Europe: North Europe
 - France: France Central
-- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com)
+- Germany: Germany West Central
 - India: Central India
 - Japan: Japan East
 - Korea: Korea Central
@@ -306,15 +307,16 @@ You can connect to your own virtual network with your hosted machines to securel
 > [!NOTE]
 > You can have up to 30 custom virtual networks configured per tenant.
 
-### General network requirement
+### General network requirements
 
-To use your own network and provision Microsoft Entra joined hosted machines, you must meet the following requirements:
+To use your own network with hosted machines, you must meet the following requirements:
 
 - You must have a virtual network in your Azure subscription in the same region where you created the hosted machines.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
 - A subnet within the virtual network and available IP address space.
+- [Allow network connectivity](/windows-365/enterprise/requirements-network) to required services.
 
-The virtual network needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
+The virtual network needs to be created in the same location as your hosted machines. You can find the following mapping with your environment Geo:
 
 - Australia: Australia East
 - Asia: East Asia
@@ -322,7 +324,7 @@ The virtual network needs to be created in the same location with your hosted ma
 - Canada: Canada Central
 - Europe: North Europe
 - France: France Central
-- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com) 
+- Germany: Germany West Central
 - India: Central India
 - Japan: Japan East
 - Korea: Korea Central
@@ -332,13 +334,7 @@ The virtual network needs to be created in the same location with your hosted ma
 - United Kingdom: UK South
 - United States: East US
 
-### Additional requirements for Microsoft Entra hybrid joined hosted machines (preview)
-
-[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
-
-If your organization has an on-premises Active Directory implementation and you want your hosted machines to be joined to it, you can accomplish this task with Microsoft Entra hybrid join.
-
-[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+### Additional requirements for Microsoft Entra hybrid joined hosted machines
 
 To use your own network and provision Microsoft Entra hybrid joined machines, you must meet the following requirements:
 
@@ -367,9 +363,18 @@ Configure your Azure Virtual Network where the hosted machines are provisioned a
 
 To use your virtual network for hosted machines, you need to grant Windows 365 service principal with the following permissions:
 
-- Reader permission on the Azure subscription.
-- Network contributor permission on the specified resource group.
-- Network contributor permission on the virtual network.
+- Reader permission on the Azure subscription
+- Windows 365 Network Interface Contributor permission on the specified resource group
+- Windows 365 Network User permission on the virtual network
+
+> [!NOTE]
+> For virtual networks created before November 26, 2023, the Network Contributor role is used to apply permissions on both the resource group and virtual network. The new RBAC roles have more specific permissions. To manually remove the existing roles and add the new roles, refer to the following table for the existing roles used on each Azure resource. Before removing the existing roles, make sure that the updated roles are assigned.
+>
+> | Azure resource | Existing role (before November 26, 2023) | Updated role (after November 26, 2023) |
+> | --- | --- | --- |
+> | Resource group | Network Contributor | Windows 365 Network Interface Contributor |
+> | Virtual network | Network Contributor | Windows 365 Network User |
+> | Subscription | Reader | Reader |
 
 ### Share the virtual network with Power Automate makers
 
@@ -402,19 +407,19 @@ The last step before being able to reference your virtual network from Power Aut
     - **Network connection name:** A unique name to identify the network connection.
     - **Description:** An optional description for the network connection.
 
-1. Select one of the **Azure virtual network** available in Azure that meets the network requirement.
+1. Select one of the **Azure virtual network** available in Azure that meets the network requirements.
 
 1. Select the **Subnet** the hosted machine uses.
 
 1. Select the **Domain join type** the machine uses.
 
-1. If the **'Microsoft Entra hybrid join (preview)'** is selected, the following information is required:
+1. If the **'Microsoft Entra hybrid join'** is selected, the following information is required:
    - **DNS domain name** : The DNS name of the Active Directory domain you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
    - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain, which can hold users, groups, and computers. Make sure that this OU is enabled to sync with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
    - **Username UPN** : The username, in user principal name (UPN) format, you want to use for connecting the hosted machines to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
    - **Domain password** : The password for the user.
     > [!NOTE]
-    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join (preview) domain join type.
+    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join domain join type.
 
 :::image type="content" source="media/hosted-machines/create-network-connection.png" alt-text="Screenshot of the New network connection dialog.":::
 
@@ -496,7 +501,8 @@ You can share your hosted machines with other users so they can run desktop flow
 
 > [!NOTE]
 > - Sign-in access is only available to the creator of the hosted machine.
-> - When a user isn't part of an environment anymore, you may continue to see the user as deactivated. You are notified in the **Manage access** section of the hosted machine if it's shared with deactivated users. In this situation, remove access to them.
+> - You can run unattended desktop flow using a work or school account that is different from the creator of the hosted machine, provided that you add the account on the hosted machine.
+> - When a user isn't part of an environment anymore, you may continue to see the user as deactivated. You'll be notified in the **Manage access** section of the hosted machine if it's shared with deactivated users. In this situation, remove access to them.
 
 ## Run desktop flows on hosted machines
 
@@ -577,7 +583,7 @@ The following list displays all the supported Power Platform geographies in the 
 - Canada
 - Europe
 - France
-- Germany (Restricted, send your request to hostedrpa@microsoft.com) 
+- Germany
 - India
 - Japan 
 - Korea

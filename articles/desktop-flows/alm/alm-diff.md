@@ -25,6 +25,6 @@ When a new image or a control is added to your desktop flow, they're added as a 
 
 :::image type="content" source="./media/screenshot-diff.png" alt-text="Screenshot of the diff tool in Azure DevOps on a desktop flow image.":::
 
-## See also
+## Related information
 
 [Overview for configuring ALM for desktop flows](alm-intro.md)

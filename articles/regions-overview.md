@@ -1,19 +1,12 @@
 ---
-title: Regions overview for Power Automate | Microsoft Docs
+title: Regions overview for Power Automate
 description: Overview with question and answer about regions in Power Automate.
-services: ''
 suite: flow
-documentationcenter: na
-author: v-aangie
-editor: ''
-tags: ''
-
+author: ChrisGarty
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 10/18/2022
-ms.author: hamenon
+ms.date: 10/08/2024
+ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -73,6 +66,10 @@ Yes. [Learn more](./us-govt.md).
 
 ### What outbound IP addresses are used in each region?
 
-See [Limits and configuration](limits-and-config.md).
+Learn about outbound IP addresses in each region in [Power Automate IP address configuration](/power-automate/ip-address-configuration).
+
+### Can region be changed?
+
+A [support case](/power-platform/admin/get-help-support) is needed to change environment region.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

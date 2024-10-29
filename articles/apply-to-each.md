@@ -2,15 +2,14 @@
 title: Use the Apply to each action to process a list of items periodically
 description: Use Power Automate to loop through an array of items to check multiple conditions and take actions based on those conditions.
 suite: flow
-documentationcenter: na
-author: natalie-pienkowska
+author: kisubedi
 contributors:
   - kisubedi
   - kartikraop
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/09/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -205,5 +204,9 @@ Now that you've run the flow successfully, you should receive the push notificat
 
 > [!NOTE]
 > If you don't receive the push notification, confirm that your mobile device has a working data connection.
+
+## Related information
+
+[Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

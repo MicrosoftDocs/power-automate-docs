@@ -809,7 +809,46 @@
       "source_path": "articles/desktop-flows/manage-credentials.md",
       "redirect_url": "/power-automate/desktop-flows/create-azurekeyvault-credential",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/avd-overview.md",
+      "redirect_url": "/power-automate/desktop-flows/hosted-rpa-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-administrator.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-app-maker.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-bdm.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-developer.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-functional-consultant.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-sales.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automatew",
+      "redirect_document_id": false
     }
   ]
 }
-

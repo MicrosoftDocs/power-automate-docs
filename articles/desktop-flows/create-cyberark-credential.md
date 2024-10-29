@@ -4,7 +4,7 @@ description: Use CyberArk credentials in desktop flow connections
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/12/2024
+ms.date: 07/24/2024
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
@@ -14,13 +14,9 @@ search.audienceType:
   - enduser
 ---
 
-# Create a CyberArk credential (preview)
-
-[!INCLUDE [cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
+# Create a CyberArk credential 
 
 This feature allows users to create a Power Automate credential that retrieves CCP CyberArk secrets from vault during runtime.
-
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 ## Availability
 
@@ -126,6 +122,10 @@ Now that you complete all the prerequisites steps, you can create your CyberArk 
 
     - **Display name**: Provide a name for your CyberArk store.
     - **Server address**: The server address is the Central Credential Provider URL. For example, `https://svc.skytap.com:8992`.
+
+      > [!NOTE]
+      > Versions below the August release don't support a server address ending with a "/".
+
     - **Application Id**: To find the Application ID, open CyberArk PVWA (Password Vault Web Access) on a web browser and navigate to the Applications tab.
     - **Safe**: Populate the name of the safe displayed in CyberArk PVWA.
     - **Folder** (optional): Populate the folder name where your credentials are stored. By default, credentials are stored in the "Root" folder.
@@ -135,6 +135,9 @@ Now that you complete all the prerequisites steps, you can create your CyberArk 
 1. In the last step of the wizard, you need to provide the information about the user account:
 
     - **Username**: Select a username from your text environment variables or create a new one by selecting new.
+
+        If you create a CyberArk credential to be used in a desktop flow connection, provide your device account. Populate the name of the user (for example, `<MACHINENAME\User>` or `<local\User>`) or a Microsoft Entra ID account, such as `<DOMAIN\User>` or `<username@domain.com>`.
+
     - **Object name**: The object name corresponds to the CyberArk object name store in the CyberArk safe. This value is also called account name in PVWA.
   
 ## Use the credential in a desktop flow connection

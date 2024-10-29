@@ -103,7 +103,7 @@ The **Save As** capability can be used to duplicate a solution cloud flow. If an
 
     The flow will now be visible in the solution. Upon opening that flow, it will have the solution in the **Solutions** card in the flow details page.
 
-### See also
+## Related information
 
 - [Manage and edit a cloud flow](/power-automate/get-started-logic-flow#manage-a-cloud-flow)
 - [Create a solution](./overview-solution-flows.md)
