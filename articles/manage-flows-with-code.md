@@ -40,6 +40,8 @@ You can use any programming language or technology that supports sending HTTP re
 
 More information: [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
+---
+
 ### How to connect?
 
 How to connect depends on whether you're using the Dataverse SDK for .NET or Web API.
@@ -67,6 +69,8 @@ More information:
 - [Quick Start: Web API sample (C#)](/power-apps/developer/data-platform/webapi/quick-start-console-app-csharp)
 - [Compose HTTP requests and handle errors](/power-apps/developer/data-platform/webapi/compose-http-requests-handle-errors)
 - [Use OAuth authentication with Microsoft Dataverse](/power-apps/developer/data-platform/authenticate-oauth)
+
+---
 
 ## Workflow table
 
@@ -273,6 +277,8 @@ Preference-Applied: odata.include-annotations="*"
 
 More information: [Query data using the Web API](/power-apps/developer/data-platform/webapi/query-data-web-api)
 
+---
+
 ## Create a cloud flow
 
 The required properties for automated, instant, and scheduled flows are: `category`, `name`, `type`, `primaryentity`, and `clientdata`. Use `none` for the `primaryentity` for these types of flows.
@@ -339,6 +345,8 @@ OData-EntityId: [Organization URI]/api/data/v9.2/workflows(7b177b96-f9ed-ed11-88
 > The `OData-EntityId` response header is a URL that refers to the workflow record created. The Guid value used as the key is the `workflowid` for the flow.
 
 More information: [Create a table row using the Web API](/power-apps/developer/data-platform/webapi/create-entity-web-api)
+
+---
 
 The `statecode` of all flows created this way are set to `0` (Draft or 'Off'). The flow needs to be enabled before it can be used.
 
@@ -464,6 +472,8 @@ OData-Version: 4.0
 
 More information: [Update and delete table rows using the Web API > Basic update](/power-apps/developer/data-platform/webapi/update-delete-entities-using-web-api#basic-update)
 
+---
+
 ## Delete a cloud flow
 
 The following examples show how to delete the workflow record that represents a cloud flow.
@@ -509,6 +519,8 @@ OData-Version: 4.0
 ```
 
 More information: [Delete a record using the Web API](/power-apps/developer/data-platform/webapi/update-delete-entities-using-web-api#basic-delete)
+
+---
 
 ## Get all users with whom a cloud flow is shared
 
@@ -589,6 +601,8 @@ OData-Version: 4.0
 }
 ```
 
+---
+
 ## Import flows
 
 When you have a solution ZIP file, you can import it using the `ImportSolution` message.
@@ -651,6 +665,8 @@ Content-Length: 4344
 HTTP/1.1 204 NoContent
 OData-Version: 4.0
 ```
+
+---
 
 ## FAQ
 
