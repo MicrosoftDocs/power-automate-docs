@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/16/2024
+ms.date: 10/15/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -50,13 +50,13 @@ To evaluate hosted machines, you need one of the following trial licensing optio
 
 - Use the **Power Automate Hosted Process** license
 
-    The Power Automate hosted RPA add-on have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 user licenses from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those Power Automate Premium (previously Power Automate per user plan with attended RPA) trials to 25 individual makers, and assign the hosted RPA add-ons to the targeted environment.
+    The Power Automate Hosted Process license has trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home) and assign Power Automate Hosted Process capacity to the targeted environment.
+
 
 - Use the **90-days self-assisted premium trial.**
 
     Trial users are granted the capacity of one hosted machine per tenant. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
-  > [!NOTE]
-  > Hosted machine capacity based on the 90-days self-assisted premium trial has been temporarily disabled until further notice.
+
 
 ## Prerequisites
 
@@ -209,7 +209,7 @@ You can personalize your hosted machines by providing your own Windows image dir
 - Canada: Canada Central
 - Europe: North Europe
 - France: France Central
-- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com)
+- Germany: Germany West Central
 - India: Central India
 - Japan: Japan East
 - Korea: Korea Central
@@ -324,7 +324,7 @@ The virtual network needs to be created in the same location as your hosted mach
 - Canada: Canada Central
 - Europe: North Europe
 - France: France Central
-- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com) 
+- Germany: Germany West Central
 - India: Central India
 - Japan: Japan East
 - Korea: Korea Central
@@ -583,7 +583,7 @@ The following list displays all the supported Power Platform geographies in the 
 - Canada
 - Europe
 - France
-- Germany (Restricted, send your request to hostedrpa@microsoft.com) 
+- Germany
 - India
 - Japan 
 - Korea

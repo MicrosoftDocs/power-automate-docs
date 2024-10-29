@@ -2,7 +2,7 @@
 title: Work queues
 description: Work queue management with Power Automate.
 ms.topic: conceptual
-ms.date: 04/28/2023
+ms.date: 10/14/2024
 ms.author: appapaio
 ms.reviewer: angieandrews
 contributors:
@@ -29,6 +29,9 @@ To use work queues in Power Automate the following are required:
 
 - Premium Power Automate license
 - Environment maker role (or other roles that include access to work queue tables)
+- Power Automate URL and IP address configurations
+  - [Public cloud](/power-automate/ip-address-configuration#required-services)
+  - [Government cloud](/power-automate/us-govt#power-automate-us-government-service-urls)
 
 ## Work queue benefits
 
