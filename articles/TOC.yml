@@ -429,6 +429,8 @@
         href: ./desktop-flows/hosted-machines.md
       - name: Hosted machine groups
         href: ./desktop-flows/hosted-machine-groups.md
+      - name: Hosted RPA best practices and FAQ
+        href: ./desktop-flows/hosted-rpa-faq.md
   - name: Create credentials
     items:
     - name: Azure Key Vault credentials
