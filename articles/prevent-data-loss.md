@@ -3,7 +3,7 @@ title: Data loss prevention (DLP) policy creation
 description: Learn about data loss prevention policies for Power Automate.
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 10/30/2024
+ms.date: 10/31/2024
 ms.author: cgarty
 author: ChrisGarty
 contributors:
@@ -97,6 +97,7 @@ The following desktop flow modules are available in DLP:
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.OCR      OCR
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Outlook    Outlook
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Pdf      PDF
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.PowerAutomateSecretVariables     Power Automate Secret Variables
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Runflow    Run flow
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Scripting    Scripting
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.System    System
