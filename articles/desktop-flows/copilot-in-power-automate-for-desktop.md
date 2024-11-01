@@ -113,15 +113,15 @@ In the Copilot pane, ask any product related questions or use one of the propose
 To send feedback, select the thumbs up or thumbs down icon under the AI-generated content. A feedback dialog appears, allowing you to submit feedback to Microsoft. Learn more about how this data is used and your rights at [Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control).
 
 > [!NOTE]
-> If you can't see the feedback dialog, your tenant admin might have turned it off. More information: [Disable user feedback functionality](#disable-user-feedback-functionality)
+> If you can't see the feedback dialog, check if your tenant admin [turned it off](#turn-off-user-feedback-functionality).
 
-### Disable user feedback functionality
+### Turn off user feedback functionality
 
 As a tenant admin, you can prevent users from sending feedback to Microsoft by disabling the `disableSurveyFeedback` tenant setting. Learn more about viewing and setting tenant settings at [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings) and [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings).
 
 ### Data subject rights requests on user feedback
 
-Tenant administrators can view, export, and delete feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), and then selecting **Health** > **Product feedback**.
+Tenant administrators can view, export, and delete feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com) and selecting **Health** > **Product feedback**.
 
 ## Frequently asked questions (FAQ)
 
