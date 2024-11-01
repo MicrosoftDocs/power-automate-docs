@@ -108,6 +108,26 @@ From Copilot’s side panel, make sure the generative answers skill is selected 
 
 In the Copilot pane, ask any product related questions or use one of the proposed prompts to get you started. The answer generated contains a link to the documentation page to refer you to additional information. Make sure you always review AI-generated content.
 
+## Help us improve this feature
+
+Send feedback by selecting the thumb up or thumb down icon underneath the AI-generated content. Once you do, a feedback dialog appears, which you can use to submit feedback to Microsoft. [Learn more](https://go.microsoft.com/fwlink/?linkid=2260166) about how this data is used and your rights.
+
+
+> [!NOTE]
+> If you can't see the feedback dialog, your tenant admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
+
+### Disabling the user feedback functionality
+
+As a tenant admin you can prevent your users from sending feedback to Microsoft by disabling the `disableSurveyFeedback` tenant setting. Find more information about viewing and setting tenant settings:
+
+- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+
+### Data subject rights requests on user feedback
+
+Tenant administrators can view, export, and delete the feedback from their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), and then selecting **Health** > **Product feedback**.
+
+
 ## Frequently asked questions (FAQ)
 
 Use this section to find answers to frequently asked questions.
