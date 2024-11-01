@@ -1,7 +1,7 @@
 ---
 title: Get started with Copilot in Power Automate for desktop
 description: Learn how to access and use Copilot in Power Automate for desktop.
-ms.date: 09/13/2024
+ms.date: 11/01/2024
 ms.topic: how-to
 author: cochamos
 ms.author: cochamos
@@ -110,23 +110,18 @@ In the Copilot pane, ask any product related questions or use one of the propose
 
 ## Help us improve this feature
 
-Send feedback by selecting the thumb up or thumb down icon underneath the AI-generated content. Once you do, a feedback dialog appears, which you can use to submit feedback to Microsoft. [Learn more](https://go.microsoft.com/fwlink/?linkid=2260166) about how this data is used and your rights.
-
+To send feedback, select the thumbs up or thumbs down icon under the AI-generated content. A feedback dialog appears, allowing you to submit feedback to Microsoft. Learn more about how this data is used and your rights at [Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control).
 
 > [!NOTE]
-> If you can't see the feedback dialog, your tenant admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
+> If you can't see the feedback dialog, your tenant admin might have turned it off. More information: [Disable user feedback functionality](#disable-user-feedback-functionality)
 
-### Disabling the user feedback functionality
+### Disable user feedback functionality
 
-As a tenant admin you can prevent your users from sending feedback to Microsoft by disabling the `disableSurveyFeedback` tenant setting. Find more information about viewing and setting tenant settings:
-
-- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
-- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+As a tenant admin, you can prevent users from sending feedback to Microsoft by disabling the `disableSurveyFeedback` tenant setting. Learn more about viewing and setting tenant settings at [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings) and [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings).
 
 ### Data subject rights requests on user feedback
 
-Tenant administrators can view, export, and delete the feedback from their users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), and then selecting **Health** > **Product feedback**.
-
+Tenant administrators can view, export, and delete feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com), and then selecting **Health** > **Product feedback**.
 
 ## Frequently asked questions (FAQ)
 
