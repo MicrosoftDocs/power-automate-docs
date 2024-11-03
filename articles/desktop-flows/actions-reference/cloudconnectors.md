@@ -134,7 +134,7 @@ The following is a list of cloud connectors in Power Automate for desktop, which
 - [RSS](/connectors/rss)
 - [Word Online (Business)](/connectors/wordonlinebusiness)
 
-The rest of the (non-custom) Power Automate cloud connectors are available to be added in a desktop flow through the [Assets library](./assets-library.md#connectors-tab).
+The rest of the (non-custom) Power Automate cloud connectors are available to be added in a desktop flow through the [Assets library](../assets-library.md#connectors-tab).
 
 > [!NOTE]
 > Future updates and additions to non-custom Power Automate connectors and their operations will automatically reflect in Power Automate for desktop.
