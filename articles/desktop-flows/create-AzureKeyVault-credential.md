@@ -41,7 +41,7 @@ To configure Azure Key Vault, follow the steps described in [Configure Azure Key
 Microsoft Entra ID certificate-based authentication lets you meet multifactor authentication (MFA) requirements.
 Instead of using password-based authentication, use certificate-based authentication (CBA), which verifies your identity based on digital certificates.
 
-To use CBA, follow the steps in [Configure certificate-based authentication](configure-CBA.md). Otherwise, start creating a credential.
+To use CBA, follow the steps in [Configure certificate-based authentication](configure-certificate-based-auth.md). Otherwise, start creating a credential.
 
 ## Create a credential
 

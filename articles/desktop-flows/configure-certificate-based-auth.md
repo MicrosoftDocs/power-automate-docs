@@ -22,7 +22,7 @@ ms.custom:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Power Automate lets you [create credentials](create-AzureKeyVault-credentials.md) using certificate-based authentication (CBA). Microsoft Entra ID certificate-based authentication helps meet multifactor authentication (MFA) requirements.
+Power Automate lets you [create credentials](create-AzureKeyVault-credential.md) using certificate-based authentication (CBA). Microsoft Entra ID certificate-based authentication helps meet multifactor authentication (MFA) requirements.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
@@ -44,7 +44,7 @@ To use this feature, make sure you meet these prerequisites.
 > [!NOTE]
 > These operations require an Entra ID tenant admin.
 
-Follow these [instructions](https://learn.microsoft.com/entra/identity/authentication/how-to-certificate-based-authentication#step-1-configure-the-certification-authorities) to set up and use Microsoft Entra CBA for tenants in Office 365 Enterprise and US Government plans.
+Follow the instructions in [Configure the certification authorities](/entra/identity/authentication/how-to-certificate-based-authentication#step-1-configure-the-certification-authorities) to set up and use Microsoft Entra CBA for tenants in Office 365 Enterprise and US Government plans.
 
 ### (Optional) Microsoft Entra ID CBA supports validating MFA requirements
 
@@ -52,7 +52,7 @@ Microsoft Entra CBA can be used as a second factor to meet MFA requirements with
 
 ## Certificates are stored in Azure Key Vault
 
-To use certificates with Power Automate, store them in Azure Key Vault. Learn more at [how to import a certificate in Azure Key Vault](https://learn.microsoft.com/azure/key-vault/certificates/tutorial-import-certificate?tabs=azure-portal).
+To use certificates with Power Automate, store them in Azure Key Vault. Learn more at [how to import a certificate in Azure Key Vault](/azure/key-vault/certificates/tutorial-import-certificate?tabs=azure-portal).
 
 > [!NOTE]
 > The certificate format must be .pfx (not PEM).
