@@ -132,9 +132,9 @@ If you need help, use our self-help options, or ask for help from support.
 > [!IMPORTANT]
 > The following statement is subject to change.
 >
-> Bug fixes and product enhancements are always added to the latest version. For product releases up to 6 months from the latest release, only security issues are supported.
-We offer support for all Power Automate for desktop product versions released within a year from the latest public product release.
-
+> We offer customer support for all Power Automate for Desktop versions released within a year of the latest public release. Security issues are addressed for product releases up to 6 months old.
+> Bug fixes and product enhancements are always included in the latest version.
+ 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
