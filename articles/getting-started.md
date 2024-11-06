@@ -3,12 +3,12 @@ title: Get started with Power Automate
 description: Learn how to navigate the Power Automate home page.
 author: kisubedi
 contributors:
+  - kisubedi
   - jamiemwork
-  - -kisubedi
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/22/2024
+ms.date: 11/06/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -22,10 +22,6 @@ ms.collection:
 # Get started with Power Automate
 
 Power Automate allows you to optimize your business processes across your organization and automate repetitive tasks. This service helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. It does this with the help of with task mining and process mining.
-
-## Achieve results easier and faster with AI features
-
-Power Automate offers AI authoring features that help you create, edit, and extend process automation faster using natural language with Copilot. It also offers AI insights that help you uncover optimization and automation opportunities. Power Automate built-in models give you the tools to intelligently automate your processes and make data-driven decisions.
 
 ## Get started from the home page
 
