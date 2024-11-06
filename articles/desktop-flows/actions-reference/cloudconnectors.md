@@ -4,7 +4,7 @@ description: Learn about the available Cloud Connector operations in Power Autom
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/4/2024
+ms.date: 11/06/2024
 ms.author: iomavrid
 ms.reviewer: 
 contributors:
@@ -120,7 +120,7 @@ All co-owners and run-only users are required to bring your own connection (BYOC
 
 ## List of cloud connectors
 
-The following is a list of cloud connectors in Power Automate for desktop, which are added by default to desktop flows and are permanently visible in the actions pane:
+These cloud connectors are added by default to desktop flows in Power Automate for desktop and are always visible in the actions pane:
 
 - [Microsoft Dataverse](/connectors/commondataserviceforapps)
 - [SharePoint](/connectors/sharepointonline)
@@ -134,17 +134,19 @@ The following is a list of cloud connectors in Power Automate for desktop, which
 - [RSS](/connectors/rss)
 - [Word Online (Business)](/connectors/wordonlinebusiness)
 
-The rest of the (non-custom) Power Automate cloud connectors are available to be added in a desktop flow through the [Assets library](../assets-library.md#connectors-tab).
+You can add the rest of the (non-custom) Power Automate cloud connectors to a desktop flow through the [Assets library](../assets-library.md#connectors-tab).
 
 > [!NOTE]
-> Future updates and additions to non-custom Power Automate connectors and their operations will automatically reflect in Power Automate for desktop.
+> Future updates and additions to non-custom Power Automate connectors and their operations automatically appear in Power Automate for desktop.
 
 ### Known limitations
 
-- Creating an Oauth type connection for a connector in desktop flows is supported through the sign-in dialog. If an error occurs during this process, you can create a connection through the corresponding [portal page](https://go.microsoft.com/fwlink/?linkid=2286334).
+- Create an Oauth connection for a connector in desktop flows through the sign-in dialog. If an error occurs, create the connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
 
     :::image type="content" source="media/cloudconnectors/connector-banner-warning-to-create-connection-in-portal.png" alt-text="Screenshot of the sign in dialog in connector actions including a banner message" border="false":::
 
-- Creating a connection type other than Oauth through Power Automate for desktop is currently not supported. For the respective connectors, you can create a connection through the corresponding [portal page](https://go.microsoft.com/fwlink/?linkid=2286334).
+- Creating a connection type other than Oauth through Power Automate for desktop is currently not supported. For the respective connectors, you can create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
 
     :::image type="content" source="media/cloudconnectors/connector-banner-prompt-to-create-connection-in-portal.png" alt-text="Screenshot of the connector actions including a banner message that prompts to create a connection through the portal" border="false":::
+
+- Creating non-OAuth connections through Power Automate for desktop isn't supported. For these connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).

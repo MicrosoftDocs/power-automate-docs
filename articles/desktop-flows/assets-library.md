@@ -4,7 +4,7 @@ description: Learn about Assets library in Power Automate for desktop.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/4/2024
+ms.date: 11/06/2024
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors:
@@ -51,7 +51,7 @@ The [UI elements collections](ui-elements-collections.md) tab shows you the UI e
 
 ## Connectors tab
 
-The Connectors tab includes all the (non-custom) cloud connectors that are available in Power Automate, offering out-of-the-box integration with the corresponding operations in desktop flows.
+The Connectors tab includes all the non-custom cloud connectors available in Power Automate, offering out-of-the-box integration with the corresponding operations in desktop flows.
 
 :::image type="content" source="media/assets-library/connectors-tab-in-assets-library-GA.png" alt-text="Screenshot of the connectors tab in the Assets library" border="false":::
 
