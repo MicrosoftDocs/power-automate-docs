@@ -435,6 +435,8 @@
       href: ./desktop-flows/create-azurekeyvault-credential.md
     - name: CyberArk credentials
       href: ./desktop-flows/create-cyberark-credential.md
+    - name: Certificate-based authentication (preview)
+      href: ./desktop-flows/configure-certificate-based-auth.md
   - name: Create desktop flow connections
     href: ./desktop-flows/desktop-flow-connections.md
   - name: Allowlist tenants for connect with sign-in connections
