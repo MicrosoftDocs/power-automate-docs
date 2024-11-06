@@ -849,6 +849,11 @@
       "source_path": "articles/learning-catalog/learning-catalog.md",
       "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automatew",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/faqs-process-mining-m365-personal-recommendations.md",
+      "redirect_url": "/power-automate/process-mining-overview",
+      "redirect_document_id": false
     }
   ]
 }

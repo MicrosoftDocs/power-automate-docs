@@ -133,7 +133,9 @@
         href: modern-approvals.md
       - name: Approvals with attachments
         href: approval-attachments.md
-      - name: Sequential approvals
+      - name: Set up sequential approvals
+        href: set-up-sequential-approvals.md
+      - name: Manage sequential approvals
         href: sequential-modern-approvals.md
       - name: Parallel approvals
         href: parallel-modern-approvals.md
@@ -427,6 +429,8 @@
         href: ./desktop-flows/hosted-machines.md
       - name: Hosted machine groups
         href: ./desktop-flows/hosted-machine-groups.md
+      - name: Hosted RPA best practices and FAQ
+        href: ./desktop-flows/hosted-rpa-faq.md
   - name: Create credentials
     items:
     - name: Azure Key Vault credentials
@@ -640,6 +644,8 @@
         href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
       - name: Troubleshoot SQL queries
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
+    - name: Configure connection strings for database related actions
+      href: ./desktop-flows/how-to/configure-connection-strings-for-db-actions.md
     - name: Configure proxy settings
       href: ./desktop-flows/how-to/proxy-settings.md
     - name: Reduce desktop flow size in solution
@@ -785,6 +791,8 @@
       href: ./desktop-flows/actions-reference/cloudconnectors.md
     - name: SAP GUI
       href: ./desktop-flows/actions-reference/sap.md
+    - name: Power Automate secret variables actions (preview)
+      href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
   - name: Troubleshoot desktop flows
     href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
@@ -1246,6 +1254,4 @@
     href: faqs-action-suggestions-power-automate-desktop.md
   - name: FAQ for generating flow descriptions using Copilot in desktop flows
     href: faqs-copilot-generate-description-from-flow-properties.md
-  - name: FAQ for Process Mining's Microsoft 365 personal recommendations
-    href: faqs-process-mining-m365-personal-recommendations.md
     

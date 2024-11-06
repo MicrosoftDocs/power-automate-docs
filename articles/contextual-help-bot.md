@@ -9,7 +9,7 @@ editor: ''
 tags: ''
 
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/27/2021
@@ -23,12 +23,12 @@ search.audienceType:
 
 # Get contextual help with flows from the Microsoft Copilot Studio bot
 
-Real-time, in-product help is available from the [documentation](./index.yml) and the Power Virtual Agent bot to solve the most common workflow scenarios. While building your flows, you can access content from the documentation, community, blogs, and templates.
+Real-time, in-product help is available from the [documentation](./index.yml) and the Copilot Studio bot to solve the most common workflow scenarios. While building your flows, you can access content from the documentation, community, blogs, and templates.
 
 ## Use in-product help
 
->[!NOTE]
->In-product help is available while you create or edit cloud and desktop flows.
+> [!NOTE]
+> In-product help is available while you create or edit cloud and desktop flows.
 
 1. Select the **?** on a connector, action, or trigger to start the in-product help experience.
 

@@ -139,7 +139,7 @@ Custom VM images must meet the following requirements:
 - Generalized VM image
 - 127-GB limit on VM image size
 - Microsoft Edge version 80 or higher
-- The image definition is recommended to have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
+- The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
 Learn how to create a generalized VM image in Azure in [Upload a generalized Windows VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed).
 
