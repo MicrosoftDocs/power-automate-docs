@@ -1,6 +1,6 @@
 ---
 title: Advanced automation-related data analytics with the Dataverse - Fabric integration
-description: Learn how to configure Dataverse shortcuts in Microsoft Fabric to build advanced automation-related queries, reports and alerts at scale. 
+description: Learn how to configure Dataverse shortcuts in Microsoft Fabric to build advanced automation-related queries, reports, and alerts at scale. 
 ms.topic: conceptual
 ms.date: 11/06/2024
 ms.author: appapaio
@@ -20,7 +20,7 @@ search.audienceType:
 
 Power Automate provides a comprehensive built-in monitoring and troubleshooting experience that allows organizations to manage their day-to-day operations, view trends, and access recommendations through features like the [Automation Center](/articles/automation-center-overview.md) and [Desktop Flow Activity](/articles/desktop-flows/desktop-flow-activity.md).
 
-However, your organization may have more advanced or custom monitoring, reporting, and analysis needs that are not covered within the product today. This is one of the key strengths of the Power Platform; through its native integrations with other low-code tooling and platforms, such as Power BI, Microsoft Fabric, as well as with Azure, organizations can develop highly sophisticated, scalable and compliant analytics solutions using data from Power Automate and many other sources.
+However, your organization may have more advanced or custom monitoring, reporting, and analysis needs that aren't covered within the product today. This is one of the key strengths of the Power Platform; through its native integrations with other low-code tooling and platforms, such as Power BI, Microsoft Fabric, as well as with Azure, organizations can develop highly sophisticated, scalable, and compliant analytics solutions using data from Power Automate and many other sources.
 
 ## Microsoft Fabric as your analytics platform
 
@@ -39,7 +39,7 @@ The Link to Microsoft Fabric feature built into Power Platform makes all your Dy
 
 ## Get started
 
-In the following guide, we will walk you through the process of leveraging Dataverse shortcuts within Microsoft Fabric to create powerful data analytics solutions. By the end of this guide, you will have the foundational skills and architectural understanding needed to build sophisticated data queries, generate insightful reports, design interactive dashboards, and set up proactive alerts to seamlessly monitor your data at scale.
+In the following guide, we'll walk you through the process of using Dataverse shortcuts within Microsoft Fabric to create powerful data analytics solutions. By the end of this guide, you'll have the foundational skills and architectural understanding needed to build sophisticated data queries, generate insightful reports, design interactive dashboards, and set up proactive alerts to seamlessly monitor your data at scale.
 
 > [!NOTE]
 >
@@ -49,15 +49,15 @@ In the following guide, we will walk you through the process of leveraging Datav
 
 Before you continue with this tutorial, ensure you meet the following prerequisites:
 
-1. Have a basic understanding of data modelling, Power Automate, Dataverse, and the Fabric ecosystem.
-2. Have access to a Dataverse environment (in the same region as your Fabric capacity) with a Power Automate premium license, (ideally) existing cloud and desktop flow runs, and System Administrator role in this environment.
+1. Have a basic understanding of data modeling, Power Automate, Dataverse, and the Fabric ecosystem.
+2. Have access to a Dataverse environment (in the same region as your Fabric capacity) with a Power Automate premium license, (ideally) existing cloud, and desktop flow runs, and System Administrator role in this environment.
 3. Ensure that you meet the [**prerequisites**](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#prerequisites) before linking your Dataverse environment with Fabric.
 4. Follow [**these steps**](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric) to link your Dataverse environment with Microsoft Fabric.
 5. If you plan to follow the advanced section for [Desktop flow action log-level analytics](#desktop-flow-action-log-level-analytics), ensure that [**Desktop Flow Logs V2**](/articles/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
 
 ## List of tables are automation-related
 
-The following table incudes automation-related tables that are frequently used for reporting and observability use cases.
+The following table includes automation-related tables that are frequently used for reporting and observability use cases.
 
 | Display name | Object name       |   Purpose                                             |
 |--------------------|------------------|-------------------------------------------------------|
