@@ -92,7 +92,7 @@ The image includes only relations to tables that are included above and automati
 
 ### Desktop flow action log-level analytics
 
-[> NOTE!]
+> [!NOTE]
 >
 > Before you continue with this section, ensure that [**Desktop Flow Logs V2**](/articles/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in your environment and that you have existing desktop flow runs.
 
