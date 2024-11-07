@@ -32,6 +32,9 @@ You can retrieve CyberArk-based credentials and [use them in desktop flows (prev
 
 Retrieves the values of a credential created through Power Automate's portal page for this environment.
 
+> [!NOTE]
+> This action is not yet available in sovereign clouds.
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
