@@ -71,4 +71,4 @@ After completing these steps, [create your Azure key vault credential](create-Az
 1. To use certificate-based authentication (CBA) credentials in Power Automate, store them in Azure Key Vault. Other vaults aren't supported today.
 1. Use Power Automate for desktop version 2.49 or later.
 1. If you're using Windows Server, version 2019 or later is supported.
-1. Non Microsoft Entra ID machines aren't supported.
+1. Target machines must be joined to MS Entra-ID.
