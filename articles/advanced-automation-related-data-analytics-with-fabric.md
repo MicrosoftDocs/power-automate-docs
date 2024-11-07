@@ -41,7 +41,7 @@ The Link to Microsoft Fabric feature built into Power Platform makes all your Dy
 
 In the following guide, we will walk you through the process of leveraging Dataverse shortcuts within Microsoft Fabric to create powerful data analytics solutions. By the end of this guide, you will have the foundational skills and architectural understanding needed to build sophisticated data queries, generate insightful reports, design interactive dashboards, and set up proactive alerts to seamlessly monitor your data at scale.
 
-[> !NOTE]
+> [!NOTE]
 >
 > **Disclaimer:** The scenarios, code examples, and data used in this tutorial are fictional, may include errors and intended solely for demonstration purposes. They do not represent product or analysis recommendations.
 
