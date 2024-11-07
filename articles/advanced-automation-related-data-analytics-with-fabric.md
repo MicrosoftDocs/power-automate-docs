@@ -1,5 +1,5 @@
 ---
-title: Advanced automation-related data analytics with the Dataverse - Fabric integration
+title: Automation-related data analytics with the Dataverse - Fabric integration
 description: Learn how to configure Dataverse shortcuts in Microsoft Fabric to build advanced automation-related queries, reports, and alerts at scale. 
 ms.topic: conceptual
 ms.date: 11/06/2024
@@ -16,7 +16,7 @@ search.audienceType:
   - enduser
 ---
 
-# Advanced automation-related data analytics with Fabric
+# Automation-related data analytics with Fabric
 
 Power Automate provides a comprehensive built-in monitoring and troubleshooting experience that allows organizations to manage their day-to-day operations, view trends, and access recommendations through features like the [Automation Center](/articles/automation-center-overview.md) and [Desktop Flow Activity](/articles/desktop-flows/desktop-flow-activity.md).
 
