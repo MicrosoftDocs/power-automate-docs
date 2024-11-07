@@ -5,7 +5,7 @@ author: yiannismavridis
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/29/2024
+ms.date: 11/07/2024
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
@@ -31,6 +31,9 @@ You can retrieve CyberArk-based credentials and [use them in desktop flows (prev
 ## <a name="getcredentialaction"></a> Get credential
 
 Retrieves the values of a credential created through Power Automate's portal page for this environment.
+
+> [!NOTE]
+> This action isn't available in sovereign clouds yet.
 
 ### Input parameters
 
