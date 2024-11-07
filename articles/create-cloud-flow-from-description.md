@@ -1,18 +1,18 @@
 ---
-title: Create a cloud flow from a description (preview)
+title: Create a cloud flow from a description
 description: Learn to create a cloud flow from a written description of the scenario.
-services: ''
 suite: flow
-author: natalie-pienkowska
+author: sbasi19
 contributors:
+  - sbasi19
   - kartikraop
   - JoeFernandezMS
   - v-aangie
-ms.author: kapolepa
+ms.author: ralinga
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/10/2023
+ms.date: 11/07/2024
 search.audienceType: 
   - flowmaker
   - enduser
@@ -20,13 +20,9 @@ search.audienceType:
     - bap-ai-copilot
 ---
 
-# Create a cloud flow from a description (preview)
-
-[This article is pre-release documentation and is subject to change.]
+# Create a cloud flow from a description
 
 When you build automation with Power Automate, it might take valuable time to learn which actions and triggers you need, especially if you’re new to the Power Automate. If you want to jump right in and get started, you can now just write a description of what you want to automate in everyday language. Supporting most of the connectors, Power Automate then uses OpenAI Codex to translate your description into code, and then provides a corresponding flow that you can create instantly.
-
-> - [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Prerequisites
 
@@ -40,34 +36,30 @@ When you build automation with Power Automate, it might take valuable time to le
 
 ## Create a flow from a description
 
-In the following example, we'll build an automated cloud flow that sends a notification through Teams and an email each time someone responds to a Microsoft Forms survey.
+In the following example, you build an automated cloud flow that sends a notification through Teams and an email each time someone responds to a Microsoft Forms survey.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. On the left pane, select **Create** > **Describe it to design it (preview)**.
+1. On the navigation menu to the left, select **Create** > **Describe it to design it (preview)**.
 
     :::image type="content" source="media/easy-flow/describe-it-main.png" alt-text="Screenshot of the Describe it to design it (preview) tile.":::
 
-   A screen opens where you can enter a description of what you want to automate. You'll also get an example you can use for inspiration and try it out right away. As an alternate, you can also go to **Home** and start describing your requirement. More information: [Create a flow using Copilot](get-started-with-copilot.md)
+   A screen opens where you can enter a description of what you want to automate. You also get an example you can use for inspiration and try it out right away. As an alternate, you can also go to **Home** and start describing your requirement. Learn more in [Create a flow using Copilot](get-started-with-copilot.md).
 
 1. For this example, enter **Every time someone responds to a Microsoft Forms survey, post a message to Teams and send an email**.
 
 1. Select **Confirm** (the right arrow).
 
-    :::image type="content" source="media/easy-flow/confirm-button.png" alt-text="Screenshot of the Confirm button.":::
-
-    Power Automate returns a suggested flow that corresponds to what you've entered.
+    Power Automate returns a suggested flow that corresponds to what you entered.
 
     > [!NOTE]
-    > If the suggestion doesn't correspond to what you’re looking to automate, select **This isn't what I'm looking for**. You'll get guidance on what you can do next. This helps Microsoft to improve the AI behind this feature.
+    > If the suggestion doesn't correspond to what you’re looking to automate, select **This isn't what I'm looking for**. You get guidance on what you can do next. This helps Microsoft to improve the AI behind this feature.
 
       :::image type="content" source="media/easy-flow/describe-flow.png" alt-text="Screenshot that displays a suggested flow after providing a description of what to automate.":::
 
 1. Select **Next**.
 
-1. Set up all the connections needed to run the flow.
-
-    :::image type="content" source="media/easy-flow/set-up-connections.png" alt-text="Screenshot of the connections that you might need to set up.":::
+1. Set up the connections you need to run the flow.
 
 1. Select **Next**.
 
@@ -75,18 +67,30 @@ In the following example, we'll build an automated cloud flow that sends a notif
 
 1. Select **Create flow**.
 
-   And there you have it! Your flow has been built. Congratulations! You can decide to make any modification and edit the flow, or save and test it.
+   Your flow is now built. Congratulations! You can make modifications and edit the flow, or save and test it.
 
     :::image type="content" source="media/easy-flow/generated-flow.png" alt-text="Screenshot of a cloud flow that's been built from a description.":::
 
+## Use natural language to flow in Teams
+
+You can use natural language to flow in Teams. If the Workflows app doesn’t have a template that fits your scenario, this feature helps you create a flow in Teams. To do this, type a prompt describing what you want the flow to do, and then the feature generates the flow for you. These steps eliminate the need to start from scratch.
+
+To use natural language to flow, follow these steps:
+
+1. Select a Team.
+1. Navigate to **Workflows**, and choose the Workflow Flow Builder.
+
+    The AI suggests a flow based on your prompt. If necessary, you can edit the prompt.
+
+     :::image type="content" source="media/easy-flow/nl2flow.png" alt-text="Screenshot of sample flows in the Workflows flow builder.":::
+
 ## Limitations
 
-- Power Automate supports descriptions written in the English language only. Descriptions you write in other languages might work, but they are not supported.
-
+- Power Automate supports descriptions written in the English language only. Descriptions you write in other languages might work, but they aren't supported.
 - Cloud flows are the only type of flow that you can create from a description.
-
 - In the current version, the AI might not fill in some parameters automatically, even if you provide them in the description.
+- Natural language to flow in Teams is available only in the Team’s channel for select workflows.
   
 ## Related information
 
-[Learn more about cloud flows](./overview-cloud.md)  
+[Overview of cloud flows](overview-cloud.md)
