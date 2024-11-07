@@ -31,7 +31,8 @@ Set the screen resolution for unattended flows using the Windows registry. This 
 
 1. This task explains how to modify the Windows registry. We recommend that you first back up any registry keys you modify, such as the Power Automate Desktop key. More information: [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692#ID0EBD=Windows_11)
 1. Open the registry editor (Windows key + R, and type 'regedit') and expand the **HKEY_LOCAL_MACHINE** hive.
-1. Locate the following keys and then set the corresponding values. If the value names don’t exist create them. To do this, right-click the **Global** key, select **New** > **DWORD (32-bit) Value**, type *ScreenResolutionEnabled*, and select Enter. Double-click **ScreenResolutionEnabled**, enter *1*, select **Decimal**, and then select **OK**. Repeat these steps for each value in the table below.
+1. Locate the key **Screen** under the path _SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global_. If it does not exist, create the key **Screen** (right-click the **Global** key, select **New** > **Key**, type **Screen** then Enter).
+1. Locate the following keys under the path _SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen_ and then set the corresponding values. If the value names don’t exist create them. To do this, right-click the **Screen** key, select **New** > **DWORD (32-bit) Value**, type *ScreenResolutionEnabled*, and select Enter. Double-click **ScreenResolutionEnabled**, enter *1*, select **Decimal**, and then select **OK**. Repeat these steps for each value in the table below.
  
    When editing DWORD values, be sure to select the **Decimal** base (hexadecimal is selected by default), to avoid having your values interpreted as hexadecimal which results in incorrect resolution settings.
 
