@@ -520,7 +520,7 @@
       href: ./desktop-flows/repair-selector.md  
     - name: Set fallback mechanism for UI element
       href: ./desktop-flows/ui-elements-fallback-mechanism.md  
-  - name: Power Fx in desktop flows (preview)
+  - name: Power Fx in desktop flows
     items:
     - name: Power Fx in desktop flows
       href: ./desktop-flows/power-fx.md
