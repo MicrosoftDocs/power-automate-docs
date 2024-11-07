@@ -145,8 +145,6 @@ You can add the rest of the (non-custom) Power Automate cloud connectors to a de
 
     :::image type="content" source="media/cloudconnectors/connector-banner-warning-to-create-connection-in-portal.png" alt-text="Screenshot of the sign in dialog in connector actions including a banner message" border="false":::
 
-- Creating a connection type other than Oauth through Power Automate for desktop is currently not supported. For the respective connectors, you can create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
+- Creating non-OAuth connections through Power Automate for desktop isn't supported. For these connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
 
     :::image type="content" source="media/cloudconnectors/connector-banner-prompt-to-create-connection-in-portal.png" alt-text="Screenshot of the connector actions including a banner message that prompts to create a connection through the portal" border="false":::
-
-- Creating non-OAuth connections through Power Automate for desktop isn't supported. For these connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
