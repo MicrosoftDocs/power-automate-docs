@@ -34,7 +34,7 @@ Use the Microsoft Dataverse connector to create cloud flows that start when data
 The Microsoft Dataverse connector provides the following triggers to help you define when your flows start:
 
 - [When a row is created, updated, or deleted](create-update-delete-trigger)
-- When a row is selected
+- [When a row is selected](row-selected)
 - [When an action is performed](action-trigger)
 
 ## Overview of actions
@@ -54,4 +54,3 @@ The Microsoft Dataverse connector provides the following actions to help you man
 - [Upload file or image content](upload-download-file#upload-file-or-image-content)
 - [Perform a bound action](bound-unbound#bound-actions)
 - [Perform an unbound action](bound-unbound#unbound-actions)
-
