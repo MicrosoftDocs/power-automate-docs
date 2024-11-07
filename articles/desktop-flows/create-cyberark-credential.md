@@ -161,6 +161,8 @@ Your credential is now created. You can use it in a desktop flow connection to [
     > The registered machine is required for credentials to work properly at runtime, even for local attended or debugging runs.
 
 1. In the desktop flow designer, select the **[Power Automate secret variables (preview)](actions-reference/powerautomatesecretvariables.md)** module  and then select the **[Get credential (preview)](actions-reference/powerautomatesecretvariables.md#getcredentialaction)** action.
+    > [!NOTE]
+    > This action is not yet available in sovereign clouds.
 1. Specify which credential to retrieve. You only see the credentials defined as usable in a desktop flow. In public preview, only credentials using CyberArk as a vault are supported.
 1. Define the name of your produced variable. This variable is marked as "sensitive" and can't be modified. This means the value of this variable isn't stored in the logs.
     > [!NOTE]
