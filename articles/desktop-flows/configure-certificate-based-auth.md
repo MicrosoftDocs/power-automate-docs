@@ -61,10 +61,9 @@ To use certificates with Power Automate, store them in Azure Key Vault. Learn mo
 
 After completing these steps, [create your Azure key vault credential](create-AzureKeyVault-credential.md).
 
-## Admin consent for unattended
+## Admin consent for unattended runs 
 
-1. Admin authorization – pairing machine.
-1. Error code: need to link with the public doc
+Admin consent is required when performing unattended runs with certificate credential on a MS Entra ID joined device. Follow the instructions in [Admin consent for unattended runs]()
 
 ## Limitations and minimal requirements
 
