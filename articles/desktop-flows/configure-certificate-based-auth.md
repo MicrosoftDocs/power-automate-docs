@@ -4,7 +4,7 @@ description: Configure certificate-based authentication (CBA) in Power Automate.
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/05/2024
+ms.date: 11/08/2024
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
@@ -28,7 +28,7 @@ Power Automate lets you [create credentials](create-AzureKeyVault-credential.md)
 
 ## How CBA credentials work in Power Automate
 
-:::image type="content" source="./media/manage-machines/CBA-overview.png" alt-text="Screenshot of how certificate-based authentication works in Power Automate.":::
+:::image type="content" source="./media/manage-machines/cba-overview.png" alt-text="Screenshot of how certificate-based authentication works in Power Automate.":::
 
 1. Certificates are stored and managed in Azure Key Vault.
 2. Credentials are created in Power Automate and stored in Dataverse.
@@ -61,13 +61,13 @@ To use certificates with Power Automate, store them in Azure Key Vault. Learn mo
 
 After completing these steps, [create your Azure key vault credential](create-AzureKeyVault-credential.md).
 
-## Admin consent for unattended runs 
+## Admin consent for unattended runs
 
-Admin consent is required when performing unattended runs with certificate credential on a MS Entra ID joined device. Follow the instructions in [Admin consent for unattended runs]()
+Admin consent is required for unattended runs with certificate credentials on a Microsoft Entra ID joined device. Learn more at [Admin consent for unattended runs](run-unattended-desktop-flows.md#admin-consent-for-unattended-runs).
 
 ## Limitations and minimal requirements
 
 1. To use certificate-based authentication (CBA) credentials in Power Automate, store them in Azure Key Vault. Other vaults aren't supported today.
 1. Use Power Automate for desktop version 2.49 or later.
 1. If you're using Windows Server, version 2019 or later is supported.
-1. Target machines must be joined to MS Entra-ID.
+1. Target machines must be joined to Microsoft Entra ID.

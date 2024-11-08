@@ -4,7 +4,7 @@ description: Learn how to create a credential with secret stored in Azure Key Va
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/05/2024
+ms.date: 11/08/2024
 ms.author: quseleba
 ms.reviewer: 
 contributors:
