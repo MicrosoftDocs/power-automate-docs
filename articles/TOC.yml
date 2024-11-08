@@ -429,6 +429,8 @@
         href: ./desktop-flows/hosted-machines.md
       - name: Hosted machine groups
         href: ./desktop-flows/hosted-machine-groups.md
+      - name: Hosted RPA best practices and FAQ
+        href: ./desktop-flows/hosted-rpa-faq.md
   - name: Create credentials
     items:
     - name: Azure Key Vault credentials
@@ -520,7 +522,7 @@
       href: ./desktop-flows/repair-selector.md  
     - name: Set fallback mechanism for UI element
       href: ./desktop-flows/ui-elements-fallback-mechanism.md  
-  - name: Power Fx in desktop flows (preview)
+  - name: Power Fx in desktop flows
     items:
     - name: Power Fx in desktop flows
       href: ./desktop-flows/power-fx.md
@@ -791,6 +793,8 @@
       href: ./desktop-flows/actions-reference/cloudconnectors.md
     - name: SAP GUI
       href: ./desktop-flows/actions-reference/sap.md
+    - name: Power Automate secret variables actions (preview)
+      href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
   - name: Troubleshoot desktop flows
     href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
@@ -1252,6 +1256,4 @@
     href: faqs-action-suggestions-power-automate-desktop.md
   - name: FAQ for generating flow descriptions using Copilot in desktop flows
     href: faqs-copilot-generate-description-from-flow-properties.md
-  - name: FAQ for Process Mining's Microsoft 365 personal recommendations
-    href: faqs-process-mining-m365-personal-recommendations.md
     

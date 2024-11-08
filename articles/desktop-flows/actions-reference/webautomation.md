@@ -380,6 +380,7 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 |Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Internet Explorer tab to attach to|
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Internet Explorer tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
+|Target desktop|N/A|Local computer, Any virtual desktop that is either currently connected or has at least one UI element captured|Local computer|Set the connection string of the target desktop that the browser launches|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
@@ -418,6 +419,7 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Firefox tab to attach to|
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Firefox tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
+|Target desktop|N/A|Local computer, Any virtual desktop that is either currently connected or has at least one UI element captured|Local computer|Set the connection string of the target desktop that the browser launches|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
@@ -455,6 +457,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Chrome tab to attach to|
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Chrome tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
+|Target desktop|N/A|Local computer, Any virtual desktop that is either currently connected or has at least one UI element captured|Local computer|Set the connection string of the target desktop that the browser launches|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
@@ -492,6 +495,7 @@ Launch a new instance or attach to a running instance of Microsoft Edge for auto
 |Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Microsoft Edge tab to attach to|
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Microsoft Edge tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
+|Target desktop|N/A|Local computer, Any virtual desktop that is either currently connected or has at least one UI element captured|Local computer|Set the connection string of the target desktop that the browser launches|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
