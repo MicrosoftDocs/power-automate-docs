@@ -71,8 +71,8 @@ To allow reusing Windows session:
 
 To perform unattended runs, configure the following:
 
-- An MSEntraID certificate credential on a Microsoft Entra ID joined device
-- An MSEntraID user/password credential on a Microsoft Entra ID joined device requiring Network Level Authentication (NLA)
+- A Microsoft Entra ID certificate credential on a Microsoft Entra ID joined device
+- A Microsoft Entra ID username/password credential on a Microsoft Entra ID joined device requiring Network Level Authentication (NLA)
 
 ### Step 1 - Enable Microsoft Entra authentication for RDP
 
