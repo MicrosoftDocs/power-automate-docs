@@ -76,7 +76,7 @@ To perform unattended runs, configure the following:
 
 ### Step 1 - Enable Microsoft Entra authentication for RDP
 
-Follow the steps from [Enable Microsoft Entra authentication for RDP](/azure/virtual-desktop/configure-single-sign-on#enable-microsoft-entra-authentication-for-rdp) only for the appid `a4a365df-50f1-4397-bc59-1a1564b8bb9c` (MSRDspId).
+[Enable Microsoft Entra authentication for RDP](/azure/virtual-desktop/configure-single-sign-on#enable-microsoft-entra-authentication-for-rdp) only for the appid `a4a365df-50f1-4397-bc59-1a1564b8bb9c` (MSRDspId).
 
 ### Step 2 - Hide the consent prompt dialog for a target device group
 
