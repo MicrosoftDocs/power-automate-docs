@@ -12,7 +12,7 @@ ms.author: ralinga
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 11/07/2024
+ms.date: 11/08/2024
 search.audienceType: 
   - flowmaker
   - enduser
@@ -55,7 +55,7 @@ In the following example, you build an automated cloud flow that sends a notific
     > [!NOTE]
     > If the suggestion doesn't correspond to what you’re looking to automate, select **This isn't what I'm looking for**. You get guidance on what you can do next. This helps Microsoft to improve the AI behind this feature.
 
-      :::image type="content" source="media/easy-flow/describe-flow.png" alt-text="Screenshot that displays a suggested flow after providing a description of what to automate.":::
+    :::image type="content" source="media/easy-flow/describe-flow.png" alt-text="Screenshot that displays a suggested flow after providing a description of what to automate.":::
 
 1. Select **Next**.
 
@@ -75,21 +75,36 @@ In the following example, you build an automated cloud flow that sends a notific
 
 You can use natural language to flow in Teams. If the Workflows app doesn’t have a template that fits your scenario, this feature helps you create a flow in Teams. To do this, type a prompt describing what you want the flow to do, and then the feature generates the flow for you. These steps eliminate the need to start from scratch.
 
+> [!NOTE]
+> Natural language to flow in Teams is available only for select channels.
+
 To use natural language to flow, follow these steps:
 
-1. Select a Team.
-1. Navigate to **Workflows**, and choose the Workflow Flow Builder.
-
-    The AI suggests a flow based on your prompt. If necessary, you can edit the prompt.
+1. At the top of the Teams **Chat** menu, select **Channels**.
+1. Find your channel, select the ellipsis (**...**), and then select **Workflows**.
+1. At the bottom of the **Workflows** screen, select **Workflow builder**.
 
      :::image type="content" source="media/easy-flow/nl2flow.png" alt-text="Screenshot of sample flows in the Workflows flow builder.":::
+
+1. In the empty filed, type your prompt.
+
+    The AI suggests a list of flows based on your prompt.
+
+    If the examples don't quite match your scenario, scroll down and select **View more examples**. If you're not satisfied with the examples, you can edit the prompt for new examples.
+1. Select an example that fits your scenario and then select **Next**.
+1. Review the flow. If you're satisfied, select **Next**. If you're not satisfied, select **This isn't what I'm looking for** and follow the instructions.
+1. When the parameters for your flow are set, select **Next**.
+1. If necessary, edit the flow and select **Create flow**.
+
+    :::image type="content" source="media/easy-flow/generated-flow.png" alt-text="Screenshot of a cloud flow that's been built from a description.":::
+
+1. When your get the message, **Workflow added successfully**, select **Done**.
 
 ## Limitations
 
 - Power Automate supports descriptions written in the English language only. Descriptions you write in other languages might work, but they aren't supported.
 - Cloud flows are the only type of flow that you can create from a description.
 - In the current version, the AI might not fill in some parameters automatically, even if you provide them in the description.
-- Natural language to flow in Teams is available only in the Team’s channel for select workflows.
   
 ## Related information
 
