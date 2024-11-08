@@ -4,7 +4,7 @@ description: Learn about the available Cloud Connector operations in Power Autom
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/06/2024
+ms.date: 11/08/2024
 ms.author: iomavrid
 ms.reviewer: 
 contributors:
@@ -46,7 +46,6 @@ search.audienceType:
 - Connection reference embedding is only available for co-owners. Users (run-only) can execute flows shared with them only via Power Automate for desktop's console using their own connections.
 - Desktop flows with embedded connection references don't currently support application lifecycle management (ALM) capabilities.
 - [Microsoft Dataverse](/connectors/commondataserviceforapps) has the following limitations:
-  - The connector is currently available only for desktop flows in the public cloud.
   - The following actions are currently supported in desktop flows:
     - [Add a new row to selected environment](/connectors/commondataserviceforapps/#add-a-new-row-to-selected-environment)
     - [Delete a row from selected environment](/connectors/commondataserviceforapps/#delete-a-row-from-selected-environment)
