@@ -47,12 +47,13 @@ In the following guide, we'll walk you through the process of using Dataverse sh
 
 ## Prerequisites
 
-Before you continue with this tutorial, ensure you meet the following prerequisites:
+Before you continue, ensure you meet the following prerequisites:
 
 1. Have a basic understanding of data modeling, Power Automate, Dataverse, and the Fabric ecosystem.
 2. Have access to a Dataverse environment (in the same region as your Fabric capacity) with a Power Automate premium license, (ideally) existing cloud, and desktop flow runs, and System Administrator role in this environment.
 3. Ensure that you meet the [**prerequisites**](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#prerequisites) before linking your Dataverse environment with Fabric.
-4. Follow [**these steps**](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric) to link your Dataverse environment with Microsoft Fabric.
+4. Follow [**these steps**](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric) to link your Dataverse environment with Microsoft Fabric. After the environment has been linked, you will see a Lakehouse, a semantic model, and an SQL analytics endpoint. These are prefixed with "dataverse," followed by your environment name and a unique environment suffix, such as ` dataverse_contosousap_cds2_workspace_unq111111111111111111111111`.
+    :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/fabric-workspace-with-lakehouse.png" alt-text="Screenshot of Fabric workspace showing a Dataverse-related lakehouse and other artifacts." lightbox="media/advanced-automation-related-data-analytics-fabric/fabric-workspace-with-lakehouse.png":::
 5. If you plan to follow the advanced section for [Desktop flow action log-level analytics](#desktop-flow-action-log-level-analytics), ensure that [**Desktop Flow Logs V2**](/articles/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
 
 ## List of tables are automation-related
@@ -64,6 +65,7 @@ The following table includes automation-related tables that are frequently used 
 | [Process](/power-apps/developer/data-platform/reference/entities/workflow) | workflow         | Contains desktop flows and solution-based cloud flows (along with other workflow types). |
 | [Flow Session](/power-apps/developer/data-platform/reference/entities/flowsession) | flowsession | Contains desktop flow run-related data such as start, durations, status, machine, robot account, parent flow context etc.     |
 | [Flow Run](/power-apps/developer/data-platform/reference/entities/flowrun) | flowrun  | Contains cloud flow run-related data such start, end, duration, parent flow context etc. |
+| [Flow Log](/power-apps/developer/data-platform/reference/entities/flowlog) | flowrun  | Contains cloud flow run-related data such start, end, duration, parent flow context etc. |
 | [Flow Machine](/power-apps/developer/data-platform/reference/entities/flowmachine) | flowmachine  | Contains machine and hosted machine-related info. |
 | [Flow Machine Group](/power-apps/developer/data-platform/reference/entities/flowmachinegroup) | flowmachinegroup | Contains machine group and hosted machine group-related info.  |
 | [Work Queue](/power-apps/developer/data-platform/reference/entities/workqueue) | workqueue  | Represents an instance of a workflow execution.  |
