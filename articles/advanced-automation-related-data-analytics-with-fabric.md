@@ -54,7 +54,10 @@ Before you continue, ensure you meet the following prerequisites:
 3. Ensure that you meet the [**prerequisites**](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#prerequisites) before linking your Dataverse environment with Fabric.
 4. Follow [**these steps**](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric) to link your Dataverse environment with Microsoft Fabric. After the environment has been linked, you will see a Lakehouse, a semantic model, and an SQL analytics endpoint. These are prefixed with "dataverse," followed by your environment name and a unique environment suffix, such as ` dataverse_contosousap_cds2_workspace_unq111111111111111111111111`.
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/fabric-workspace-with-lakehouse.png" alt-text="Screenshot of Fabric workspace showing a Dataverse-related lakehouse and other artifacts." lightbox="media/advanced-automation-related-data-analytics-fabric/fabric-workspace-with-lakehouse.png":::
-5. If you plan to follow the advanced section for [Desktop flow action log-level analytics](#desktop-flow-action-log-level-analytics), ensure that [**Desktop Flow Logs V2**](/articles/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
+5. (Optional) Select Lakehouse setting and rename your Lakehouse to a more meaningful name, such as "contoso_westus_accounts_payable," and provide a brief description. This will help others quickly identify the specific automations and data being processed in the Lakehouse.
+    :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/lakehouse-renaming.png" alt-text="Screenshot of Fabric workspace showing the settings panel for a lakehouse with description." lightbox="media/advanced-automation-related-data-analytics-fabric/lakehouse-renaming.png":::
+6. (Optional) Link additional Dataverse environments within the same geographical region to Fabric to create cross-environment analytical solutions.
+7. (Optional) If you plan to follow the advanced section for [Desktop flow action log-level analytics](#desktop-flow-action-log-level-analytics), ensure that [**Desktop Flow Logs V2**](/articles/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
 
 ## List of tables are automation-related
 
@@ -80,6 +83,49 @@ The image includes only relations to tables that are included above and automati
 
 ## Creating automation-related queries
 
+Step-by-step instructions to create a sample SQL Query on the SQL Analytical Endpoint in Fabric for the `contoso_westus_accounts_payable` Lakehouse.
+  
+1. **Open Microsoft Fabric:**  
+   - Launch your web browser and navigate to the Microsoft Fabric portal (https://powerbi.com).  
+   - Log in with your credentials.  
+2. **Access the SQL Analytical Endpoint:**  
+   - Choose the workspace where your Lakehouse is located and click on the desired SQL Analytical Endpoint (a sub-node of your Lakehouse).  
+3. **Open the SQL Query Editor:**  
+   - Once in the SQL Analytical Endpoint, locate and click on the "New SQL query" button to open the SQL query editor interface.  
+4. **Write Your SQL Query:**  
+   - In the SQL query editor, enter your SQL query and click **Run**. For example:
+
+     ```sql  
+        SELECT   
+            flowsessionid,  
+            statuscode,  
+            startedon, 
+            completedon,
+            errorcode,  
+            errormessage,  
+            sessionusername,  
+            runexecutionduration,  
+            runduration,  
+            runwaitduration,  
+            context
+        FROM   
+            flowsessions  
+        WHERE   
+            regardingobjectid = '[specific_flow_id]' -- Replace with the actual flow ID  
+            AND machineid = '[specific_machine_guid]'  -- Replace with the actual machine ID  
+            AND statuscode = 8 -- 'Failed' sessions  
+            AND createdon >= DATEADD(day, -7, GETDATE())  
+        ORDER BY   
+            createdon DESC;  
+     ```  
+
+   - This example query retrieves all desktop flow runs (flow sessions) associated with a specific desktop flow and a machine Id that have failed within the last 7 days.
+5. **Review and Save the Results:**  
+   - Review the query results to ensure they meet your requirements.  
+   - If desired, you can open a Live-query with results in Excel by highlighting the SQL query and selecting "Open in Excel" in the query output section. This will generate and download an Excel file with a Live-query to the SQL Analytics endpoint to further deep-dive on the results.
+6. **(Optional) Save the Query:**  
+   - If you want to save the SQL query for future use, click on the "Save Query" button.  
+  
 ### Performance-related query examples
 
 ### Governance-related query examples
