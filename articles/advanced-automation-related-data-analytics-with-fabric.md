@@ -85,15 +85,10 @@ The image includes only relations to tables that are included above and automati
 
 Step-by-step instructions to create a sample SQL Query on the SQL Analytical Endpoint in Fabric for the `contoso_westus_accounts_payable` Lakehouse.
   
-1. **Open Microsoft Fabric:**  
-   - Launch your web browser and navigate to the Microsoft Fabric portal (https://powerbi.com).  
-   - Log in with your credentials.  
-2. **Access the SQL Analytical Endpoint:**  
-   - Choose the workspace where your Lakehouse is located and click on the desired SQL Analytical Endpoint (a sub-node of your Lakehouse).  
-3. **Open the SQL Query Editor:**  
-   - Once in the SQL Analytical Endpoint, locate and click on the "New SQL query" button to open the SQL query editor interface.  
-4. **Write Your SQL Query:**  
-   - In the SQL query editor, enter your SQL query and click **Run**. The following example query retrieves all desktop flow runs (flow sessions) associated with a specific desktop flow and a machine Id that have failed within the last 7 days.
+1. Launch your web browser and navigate to the Microsoft Fabric portal (https://powerbi.com) and log in with your credentials.  
+2. Choose the workspace where your Lakehouse is located and click on the desired SQL Analytical Endpoint (a sub-node of your Lakehouse).  
+3. Once in the SQL Analytical Endpoint, locate and click on the "New SQL query" button to open the SQL query editor interface.  
+4. In the SQL query editor, enter your SQL query and click **Run**. The following example query retrieves all desktop flow runs (flow sessions) associated with a specific desktop flow and a machine Id that have failed within the last 7 days.
 
      ```sql  
         SELECT   
@@ -119,8 +114,7 @@ Step-by-step instructions to create a sample SQL Query on the SQL Analytical End
             createdon DESC;  
      ```  
   
-       :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/basic-sql-flowsession-query.png" alt-text="Screenshot of an entity relationship drawing showing automation-related table relations." lightbox="media/advanced-automation-related-data-analytics-fabric/basic-sql-flowsession-query.png":::
-   - Here's a list of available status reasons (statuscode) for the `Flow Sessions` (desktop flow runs) table.
+5. Here's a list of available status reasons (statuscode) for the `Flow Sessions` (desktop flow runs) table.
 
       | Status reason     | Value |  
       |-----------|-------|  
@@ -137,16 +131,310 @@ Step-by-step instructions to create a sample SQL Query on the SQL Analytical End
       | Aborted   | 11    |  
       | Ignored   | 12    |
 
-5. **Review and Save the Results:**  
-   - Review the query results to ensure they meet your requirements.  
-   - If desired, you can open a Live-query with results in Excel by highlighting the SQL query and selecting "Open in Excel" in the query output section. This will generate and download an Excel file with a Live-query to the SQL Analytics endpoint to further deep-dive on the results.
-       :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/open-query-in-excel.png" alt-text="Screenshot of an entity relationship drawing showing automation-related table relations." lightbox="media/advanced-automation-related-data-analytics-fabric/open-query-in-excel.png":::
-6. **(Optional) Save the Query:**  
-   - If you want to save the SQL query for future use, click on the "Save Query" button.  
+6. Review the query results to ensure they meet your requirements.
+    :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/basic-sql-flowsession-query.png" alt-text="Screenshot of an entity relationship drawing showing automation-related table relations." lightbox="media/advanced-automation-related-data-analytics-fabric/basic-sql-flowsession-query.png":::
+7. (Optional) You can open a Live-query with results in Excel by highlighting the SQL query and selecting "Open in Excel" in the query output section. This will generate and download an Excel file with a Live-query to the SQL Analytics endpoint to further deep-dive on the results.
+    :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/open-query-in-excel.png" alt-text="Screenshot of an entity relationship drawing showing automation-related table relations." lightbox="media/advanced-automation-related-data-analytics-fabric/open-query-in-excel.png":::
+8. (Optional) To store the SQL query for future use, click on the "Save Query" button.  
   
-### Performance-related query examples
+### Performance-related query example
+
+This query retrieves the minimum, mean (average), maximum, and standard deviation of runtimes for desktop flow runs (Flow Sessions) of a specified desktop flow, with the runtimes converted from milliseconds rounded up to the nearest full second. The results are grouped by machine IDs and include additional details such as machine names, management types, maximum hosted machine counts, session capacity and the last heartbeat date etc. from the Machine Group and Machine tables.
+
+```sql
+    SELECT   
+        f.machineid,  
+        fm.name AS machine_name,  
+        CASE   
+            WHEN mg.managementtype = 0 THEN 'Regular Machine (Group)'  
+            ELSE 'Hosted Machine (Group)'  
+        END AS managementtype,  
+        mg.maxmanagedmachinecount AS maxmanagedmachinecount,  
+        fm.lastheartbeatdate AS last_heartbeat_date,  
+        fm.sessioncapacity AS 'Max Parallel Sessions',    
+        CEILING(MIN(f.runduration) / 1000.0) AS min_runtime,  
+        CEILING(AVG(f.runduration) / 1000.0) AS mean_runtime,  
+        CEILING(MAX(f.runduration) / 1000.0) AS max_runtime,  
+        CEILING(STDEV(f.runduration) / 1000.0) AS stdev_runtime
+    FROM   
+        flowsession f  
+    JOIN   
+        flowmachinegroup mg ON f.machinegroupid = mg.flowmachinegroupid  
+    JOIN   
+        flowmachine fm ON f.machinegroupid = fm.flowmachinegroupid  
+    WHERE   
+        f.regardingobjectid = '[specific_flow_id]' -- Replace with the actual flow ID
+    GROUP BY   
+        f.machineid, fm.name, mg.managementtype, mg.maxmanagedmachinecount, fm.lastheartbeatdate, fm.sessioncapacity  
+    ORDER BY   
+        mean_runtime DESC;  
+```
+
+:::image type="content" source="media/advanced-automation-related-data-analytics-fabric/performance-related-query-results.png" alt-text="Screenshot of an entity relationship drawing showing automation-related table relations." lightbox="media/advanced-automation-related-data-analytics-fabric/performance-related-query-results.png":::
+
+### Capacity and bottleneck-related query
+
+
+```sql
+    SELECT   
+        f.machineid,  
+        fm.name AS machine_name,  
+        CASE   
+            WHEN mg.managementtype = 0 THEN 'Regular Machine (Group)'  
+            ELSE 'Hosted Machine (Group)'  
+        END AS managementtype,  
+        mg.maxmanagedmachinecount AS maxmanagedmachinecount,  
+        fm.lastheartbeatdate AS last_heartbeat_date,  
+        fm.sessioncapacity AS 'Max Parallel Sessions',  
+        fm.overcapacitysince,  
+        CASE   
+            WHEN fm.overcapacitysince IS NOT NULL THEN 'Over Capacity'  
+            ELSE 'Within Capacity'  
+        END AS capacity_status  
+    FROM   
+        flowsession f  
+    JOIN   
+        flowmachinegroup mg ON f.machinegroupid = mg.flowmachinegroupid  
+    JOIN   
+        flowmachine fm ON f.machinegroupid = fm.flowmachinegroupid
+    WHERE   
+        f.regardingobjectid = '[specific_flow_id]' -- Replace with the actual flow ID
+    GROUP BY   
+        f.machineid, fm.name, mg.managementtype, mg.maxmanagedmachinecount, fm.lastheartbeatdate, fm.sessioncapacity, fm.overcapacitysince  
+    ORDER BY   
+        capacity_status DESC, fm.lastheartbeatdate DESC;  
+
+```
 
 ### Governance-related query examples
+
+### Base desktop flow query with owner info
+
+This query returns all desktop flows with their owner information.
+
+```sql
+    SELECT   
+        w.name AS 'Desktop flow',  
+        w.workflowid AS 'Desktop flow Id',  
+        w.createdon AS 'Created on',
+        w.modifiedon AS 'Last modified on',
+        w.definition AS 'Script',  
+        w.ownerid AS 'Owner Id',  
+        s.fullname AS 'Owner name',  
+        s.internalemailaddress AS 'Owner email'
+    FROM   
+        workflow w  
+    JOIN   
+        systemuser s ON w.ownerid = s.systemuserid  
+    WHERE   
+        w.category = 6;  -- Only consider desktop flows (category 6)  
+```
+
+### Find scripts that include the term `password` or `pwd`
+
+This query finds all desktop flows that include the terms `password` or `pwd`.
+
+```sql
+    SELECT   
+        w.name AS 'Desktop flow',  
+        w.workflowid AS 'Desktop flow Id',  
+        w.createdon AS 'Created on',  
+        w.modifiedon AS 'Last modified on',  
+        w.definition AS 'Script',  
+        w.ownerid AS 'Owner Id',  
+        s.fullname AS 'Owner name',  
+        s.internalemailaddress AS 'Owner email'  
+    FROM   
+        workflow w  
+    JOIN   
+        systemuser s ON w.ownerid = s.systemuserid  
+    WHERE   
+        w.category = 6  
+        AND w.definition IS NOT NULL  
+        AND (LOWER(w.definition) LIKE '%password%' OR LOWER(w.definition) LIKE '%pwd%');
+```
+
+#### Data exfiltration risk
+
+This query identifies desktop flows that incorporate scripting actions to access SAP's internal GUI scripting engine. This can present potential data loss risks because sensitive data accessed or manipulated by these scripts could be unintentionally or maliciously exposed.
+
+```sql
+    SELECT   
+        workflowid AS 'Desktop flow Id',  
+        name AS 'Desktop flow',  
+        definition  AS 'Script'
+    FROM   
+        workflow  
+    WHERE   
+        (definition LIKE '%System.RunVBScript%'   
+          OR definition LIKE '%System.RunPowershellScript%'   
+          OR definition LIKE '%System.RunJavascript%'   
+          OR definition LIKE '%System.RunDotNetScript%'   
+          OR definition LIKE '%System.RunPythonScript%')  
+        AND definition LIKE '%SapGuiAuto.GetScriptingEngine%'  
+    ORDER BY   
+        workflowid;  
+```
+
+### Potential SQL injection risk
+
+```sql
+    SELECT   
+        w.name AS 'Desktop flow',  
+        w.workflowid AS 'Desktop flow Id',  
+        w.createdon AS 'Created on',  
+        w.modifiedon AS 'Last modified on',  
+        w.definition AS 'Script',  
+        w.ownerid AS 'Owner Id',  
+        s.fullname AS 'Owner name',  
+        s.internalemailaddress AS 'Owner email'  
+    FROM   
+        workflow w  
+    JOIN   
+        systemuser s ON w.ownerid = s.systemuserid  
+    WHERE   
+        w.category = 6  
+        AND w.definition IS NOT NULL  
+        AND LOWER(w.definition) LIKE '%database.executesqlstatement%';
+    
+```
+
+### Advance API request usage
+
+```sql
+    SELECT   
+        w.name AS 'Desktop flow',  
+        w.workflowid AS 'Desktop flow Id',  
+        w.createdon AS 'Created on',  
+        w.modifiedon AS 'Last modified on',  
+        w.definition AS 'Script',  
+        w.ownerid AS 'Owner Id',  
+        s.fullname AS 'Owner name',  
+        s.internalemailaddress AS 'Owner email'  
+    FROM   
+        workflow w  
+    JOIN   
+        systemuser s ON w.ownerid = s.systemuserid  
+    WHERE   
+        w.category = 6  
+        AND w.definition IS NOT NULL  
+        AND (
+            LOWER(w.definition) LIKE '%curl%' OR 
+            LOWER(w.definition) LIKE '%invoke-restmethod%' OR 
+            LOWER(w.definition) LIKE '%invoke-webrequest%' OR 
+            LOWER(w.definition) LIKE '%httpclient%' OR 
+            LOWER(w.definition) LIKE '%requests.get%' OR 
+            LOWER(w.definition) LIKE '%requests.post%' OR 
+            LOWER(w.definition) LIKE '%fetch%' OR 
+            LOWER(w.definition) LIKE '%axios%' OR 
+            LOWER(w.definition) LIKE '%.ajax%'
+        );
+    
+```
+
+### Web endpoints and URL shortcuts usage
+
+```sql
+    SELECT   
+        w.name AS 'Desktop flow',  
+        w.workflowid AS 'Desktop flow Id',  
+        w.createdon AS 'Created on',  
+        w.modifiedon AS 'Last modified on',  
+        w.definition AS 'Script',  
+        w.ownerid AS 'Owner Id',  
+        s.fullname AS 'Owner name',  
+        s.internalemailaddress AS 'Owner email'  
+    FROM   
+        workflow w  
+    JOIN   
+        systemuser s ON w.ownerid = s.systemuserid  
+    WHERE   
+        w.category = 6  
+        AND w.definition IS NOT NULL  
+        AND (
+            LOWER(w.definition) LIKE '%bit.ly%' OR 
+            LOWER(w.definition) LIKE '%linkedin.com%' OR 
+            LOWER(w.definition) LIKE '%aka.ms%' OR 
+            LOWER(w.definition) LIKE '%tinyurl.com%' OR 
+            LOWER(w.definition) LIKE '%goo.gl%' OR 
+            LOWER(w.definition) LIKE '%t.co%' OR 
+            LOWER(w.definition) LIKE '%fb.me%' OR 
+            LOWER(w.definition) LIKE '%is.gd%' OR 
+            LOWER(w.definition) LIKE '%buff.ly%'
+        );
+    
+```
+
+### Hardcode file path usage
+
+```sql
+    SELECT   
+        w.name AS 'Desktop flow',  
+        w.workflowid AS 'Desktop flow Id',  
+        w.createdon AS 'Created on',  
+        w.modifiedon AS 'Last modified on',  
+        w.definition AS 'Script',  
+        w.ownerid AS 'Owner Id',  
+        s.fullname AS 'Owner name',  
+        s.internalemailaddress AS 'Owner email'  
+    FROM   
+        workflow w  
+    JOIN   
+        systemuser s ON w.ownerid = s.systemuserid  
+    WHERE   
+        w.category = 6  
+        AND w.definition IS NOT NULL  
+        AND (
+            LOWER(w.definition) LIKE '%c:\\%' OR 
+            LOWER(w.definition) LIKE '%d:\\%' OR 
+            LOWER(w.definition) LIKE '%e:\\%' OR 
+            LOWER(w.definition) LIKE '%f:\\%' OR 
+            LOWER(w.definition) LIKE '%g:\\%' OR 
+            LOWER(w.definition) LIKE '%h:\\%' OR 
+            LOWER(w.definition) LIKE '%i:\\%' OR 
+            LOWER(w.definition) LIKE '%j:\\%' OR 
+            LOWER(w.definition) LIKE '%k:\\%' OR 
+            LOWER(w.definition) LIKE '%l:\\%' OR 
+            LOWER(w.definition) LIKE '%m:\\%' OR 
+            LOWER(w.definition) LIKE '%n:\\%' OR 
+            LOWER(w.definition) LIKE '%o:\\%' OR 
+            LOWER(w.definition) LIKE '%p:\\%' OR 
+            LOWER(w.definition) LIKE '%q:\\%' OR 
+            LOWER(w.definition) LIKE '%r:\\%' OR 
+            LOWER(w.definition) LIKE '%s:\\%' OR 
+            LOWER(w.definition) LIKE '%t:\\%' OR 
+            LOWER(w.definition) LIKE '%u:\\%' OR 
+            LOWER(w.definition) LIKE '%v:\\%' OR 
+            LOWER(w.definition) LIKE '%w:\\%' OR 
+            LOWER(w.definition) LIKE '%x:\\%' OR 
+            LOWER(w.definition) LIKE '%y:\\%' OR 
+            LOWER(w.definition) LIKE '%z:\\%' 
+        );
+
+```
+
+### Missing error handling
+
+```sql
+    SELECT   
+        w.name AS 'Desktop flow',  
+        w.workflowid AS 'Desktop flow Id',  
+        w.createdon AS 'Created on',  
+        w.modifiedon AS 'Last modified on',  
+        w.definition AS 'Script',  
+        w.ownerid AS 'Owner Id',  
+        s.fullname AS 'Owner name',  
+        s.internalemailaddress AS 'Owner email'  
+    FROM   
+        workflow w  
+    JOIN   
+        systemuser s ON w.ownerid = s.systemuserid  
+    WHERE   
+        w.category = 6  
+        AND w.definition IS NOT NULL  
+        AND NOT (LOWER(w.definition) LIKE '%on block error%' OR LOWER(w.definition) LIKE '%on error%');
+    
+```
 
 ## Creating reports in Fabric
 
