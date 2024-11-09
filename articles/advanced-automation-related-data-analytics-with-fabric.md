@@ -57,7 +57,7 @@ Before you continue, ensure you meet the following prerequisites:
 5. (Optional) Select Lakehouse settings and rename your Lakehouse to a more meaningful name, such as "contoso_westus_accounts_payable," and provide a brief description. This will help others quickly identify the specific automations and data being processed in the Lakehouse.
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/lakehouse-renaming.png" alt-text="Screenshot of Fabric workspace showing the settings panel for a lakehouse with description." lightbox="media/advanced-automation-related-data-analytics-fabric/lakehouse-renaming.png":::
 6. (Optional) Link additional Dataverse environments within the same geographical region to Fabric to create cross-environment analytical solutions.
-7. (Optional) If you plan to follow the advanced section for [Desktop flow action log-level analytics](#desktop-flow-action-log-level-analytics), ensure that [**Desktop Flow Logs V2**](/articles/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
+7. (Optional) If you plan to follow the advanced section for [Desktop flow action log-level analytics](#governance-related-query-examples-for-desktop-flow-run-action-logs), ensure that [**Desktop Flow Logs V2**](/articles/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
 
 ## List of tables are automation-related
 
@@ -174,6 +174,7 @@ This query retrieves the minimum, mean (average), maximum, and standard deviatio
 
 ### Capacity and bottleneck-related query
 
+This query identifies capacity and bottleneck issues in machines running a specific desktop flow to help in optimizing resource allocation and addressing performance constraints.
 
 ```sql
     SELECT   
@@ -206,9 +207,9 @@ This query retrieves the minimum, mean (average), maximum, and standard deviatio
 
 ```
 
-### Governance-related query examples
+### Governance-related query examples for desktop flows
 
-### Base desktop flow query with owner info
+#### Base desktop flow query with owner info
 
 This query returns all desktop flows with their owner information.
 
@@ -230,7 +231,7 @@ This query returns all desktop flows with their owner information.
         w.category = 6;  -- Only consider desktop flows (category 6)  
 ```
 
-### Find scripts that include the term `password` or `pwd`
+#### Find scripts that include the term `password` or `pwd`
 
 This query finds all desktop flows that include the terms `password` or `pwd`.
 
@@ -276,7 +277,9 @@ This query identifies desktop flows that incorporate scripting actions to access
         workflowid;  
 ```
 
-### Potential SQL injection risk
+#### Potential SQL injection risk
+
+This query identifies desktop flows that include scripts with potential SQL injection risks by searching for the use of `database.executesqlstatement` within the flow definitions.
 
 ```sql
     SELECT   
@@ -299,7 +302,9 @@ This query identifies desktop flows that incorporate scripting actions to access
     
 ```
 
-### Advance API request usage
+#### Advance API request usage
+
+This query retrieves desktop flows that utilize advanced API request methods, such as `curl`, `Invoke-RestMethod`, and other `requests`, to identify connectivity to external web services or services.
 
 ```sql
     SELECT   
@@ -332,7 +337,9 @@ This query identifies desktop flows that incorporate scripting actions to access
     
 ```
 
-### Web endpoints and URL shortcuts usage
+#### Web endpoints and URL shortcuts usage
+
+This query detects desktop flows containing scripts that reference URL shorteners to assess potential risks of restricted URL usage.
 
 ```sql
     SELECT   
@@ -365,7 +372,9 @@ This query identifies desktop flows that incorporate scripting actions to access
     
 ```
 
-### Hardcode file path usage
+#### Hardcode file path usage
+
+This query identifies desktop flows that include hardcoded file paths in their scripts, which may indicate poor scripting best-practices and potential security vulnerabilities.
 
 ```sql
     SELECT   
@@ -413,7 +422,9 @@ This query identifies desktop flows that incorporate scripting actions to access
 
 ```
 
-### Missing error handling
+#### Missing error handling
+
+This query searches for desktop flows that lack any error handling mechanisms, such as on `block error` or `on error`, to ensure robustness and reliability in script execution.
 
 ```sql
     SELECT   
@@ -436,6 +447,48 @@ This query identifies desktop flows that incorporate scripting actions to access
     
 ```
 
+
+### Governance-related query examples for desktop flow run action logs
+
+> [!NOTE]
+>
+> Before you continue with this section, ensure that [**Desktop Flow Logs V2**](/articles/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in your environment and that you have existing desktop flow runs.
+
+#### Identify restricted URL usage
+
+This query finds web service invocations (Invoke Web Service action) within a specific desktop flow over the past three weeks. This is particularly useful for identifying and analyzing potentially suspicious endpoints or restricted API calls.
+
+```sql
+    SELECT   
+        JSON_VALUE(f.data, '$.name') AS ActionName,  
+        f.data AS 'Action log',  
+        f.parentobjectid AS 'Parent object id',  
+        f.createdon AS 'Log created on',
+        w.name AS 'Desktop flow',  
+        w.workflowid AS 'Desktop flow Id',  
+        w.createdon AS 'Created on',  
+        w.modifiedon AS 'Last modified on',  
+        w.definition AS 'Script',  
+        w.ownerid AS 'Owner Id',  
+        s.fullname AS 'Owner name',  
+        s.internalemailaddress AS 'Owner email'  
+    FROM  
+        [flowlog] f  
+    JOIN  flowsession fs ON f.parentobjectid = fs.flowsessionid         
+    JOIN  workflow w ON fs.regardingobjectid = w.workflowid  
+    JOIN  systemuser s ON w.ownerid = s.systemuserid  
+    WHERE   
+        w.workflowid = '[specific_flow_id]' -- Replace with the actual flow ID
+        AND f.createdon >= DATEADD(day, -21, GETDATE())
+        AND JSON_VALUE(f.data, '$.name') = 'Invoke web service'  
+        AND (  
+            f.data LIKE '%contoso-default.crm.dynamics.com/api%'  
+            OR f.data LIKE '%api.second-restricted-url.net%'  
+            OR f.data LIKE '%api.third-restricted-url.de%'  
+            OR f.data LIKE '%api.phishing-example.com%'  
+        );
+```
+
 ## Creating reports in Fabric
 
 ### Creating real-time alerts
@@ -443,11 +496,5 @@ This query identifies desktop flows that incorporate scripting actions to access
 ## Persisting telemetry data in a Fabric Warehouse
 
 ### Creating a Dataflow Gen2 to ingest data to a warehouse
-
-### Desktop flow action log-level analytics
-
-> [!NOTE]
->
-> Before you continue with this section, ensure that [**Desktop Flow Logs V2**](/articles/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in your environment and that you have existing desktop flow runs.
 
 ## Closing
