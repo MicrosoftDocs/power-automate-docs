@@ -42,7 +42,7 @@
     items:
     - name: Create a cloud flow from a template
       href: get-started-logic-template.md
-    - name: Create a cloud flow from a description (preview)
+    - name: Create a cloud flow from a description
       href: create-cloud-flow-from-description.md
     - name: Create a cloud flow from scratch
       href: get-started-logic-flow.md
