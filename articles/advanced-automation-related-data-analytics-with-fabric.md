@@ -55,7 +55,7 @@ Before you continue, ensure you meet the following prerequisites:
 6. (Optional) Link additional Dataverse environments within the same geographical region to Fabric to create cross-environment analytical solutions.
 7. (Optional) If you plan to follow the advanced section for [Desktop flow action log-level analytics](#governance-related-query-examples-for-desktop-flow-run-action-logs), ensure that [**Desktop Flow Logs V2**](./desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
 
-## List of tables are automation-related
+## List of automation-related tables
 
 The following table includes automation-related tables that are frequently used for reporting and observability use cases.
 
@@ -137,6 +137,55 @@ Step-by-step instructions to create a sample SQL Query on the SQL Analytical End
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/open-query-in-excel.png" alt-text="Screenshot of an entity relationship drawing showing automation-related table relations." lightbox="media/advanced-automation-related-data-analytics-fabric/open-query-in-excel.png":::
 8. (Optional) To store the SQL query for future use, click on the "Save Query" button.  
   
+### Basic flow queries
+
+#### Retrieve cloud flows with their owner info
+
+This query returns all cloud flows with their owner information. 
+
+> [!NOTE]
+> Only cloud flows that are part of a Dataverse solution are available in Fabric.
+
+```sql
+    SELECT   
+        w.name AS 'Cloud flow',  
+        w.workflowid AS 'Cloud flow Id',  
+        w.createdon AS 'Created on',
+        w.modifiedon AS 'Last modified on',
+        w.clientdata AS 'Script',  
+        w.ownerid AS 'Owner Id',  
+        s.fullname AS 'Owner name',  
+        s.internalemailaddress AS 'Owner email'
+    FROM   
+        workflow w  
+    JOIN   
+        systemuser s ON w.ownerid = s.systemuserid  
+    WHERE   
+        w.category = 5;  -- Only consider solution-cloud flows (category 5)  
+```
+
+#### Retrieve desktop flows with their owner info
+
+This query returns all desktop flows with their owner information.
+
+```sql
+    SELECT   
+        w.name AS 'Desktop flow',  
+        w.workflowid AS 'Desktop flow Id',  
+        w.createdon AS 'Created on',
+        w.modifiedon AS 'Last modified on',
+        w.definition AS 'Script',  
+        w.ownerid AS 'Owner Id',  
+        s.fullname AS 'Owner name',  
+        s.internalemailaddress AS 'Owner email'
+    FROM   
+        workflow w  
+    JOIN   
+        systemuser s ON w.ownerid = s.systemuserid  
+    WHERE   
+        w.category = 6;  -- Only consider desktop flows (category 6)  
+```
+
 ### Performance-related query example
 
 This query retrieves the minimum, mean (average), maximum, and standard deviation of runtimes for desktop flow runs (Flow Sessions) of a specified desktop flow, with the runtimes converted from milliseconds rounded up to the nearest full second. The results are grouped by machine IDs and include additional details such as machine names, management types, maximum hosted machine counts, session capacity and the last heartbeat date etc. from the Machine Group and Machine tables.
@@ -205,55 +254,6 @@ This query identifies machine and licensing-related capacity issues for a specif
     ORDER BY   
         capacity_status DESC, fm.lastheartbeatdate DESC;  
 
-```
-
-### Basic flow queries
-
-#### Retrieve cloud flows with their owner info
-
-This query returns all cloud flows with their owner information. 
-
-> [!NOTE]
-> Only cloud flows that are part of a Dataverse solution are available in Fabric.
-
-```sql
-    SELECT   
-        w.name AS 'Cloud flow',  
-        w.workflowid AS 'Cloud flow Id',  
-        w.createdon AS 'Created on',
-        w.modifiedon AS 'Last modified on',
-        w.clientdata AS 'Script',  
-        w.ownerid AS 'Owner Id',  
-        s.fullname AS 'Owner name',  
-        s.internalemailaddress AS 'Owner email'
-    FROM   
-        workflow w  
-    JOIN   
-        systemuser s ON w.ownerid = s.systemuserid  
-    WHERE   
-        w.category = 5;  -- Only consider solution-cloud flows (category 5)  
-```
-
-#### Retrieve desktop flows with their owner info
-
-This query returns all desktop flows with their owner information.
-
-```sql
-    SELECT   
-        w.name AS 'Desktop flow',  
-        w.workflowid AS 'Desktop flow Id',  
-        w.createdon AS 'Created on',
-        w.modifiedon AS 'Last modified on',
-        w.definition AS 'Script',  
-        w.ownerid AS 'Owner Id',  
-        s.fullname AS 'Owner name',  
-        s.internalemailaddress AS 'Owner email'
-    FROM   
-        workflow w  
-    JOIN   
-        systemuser s ON w.ownerid = s.systemuserid  
-    WHERE   
-        w.category = 6;  -- Only consider desktop flows (category 6)  
 ```
 
 ### Governance-related query examples for desktop flows
