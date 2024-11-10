@@ -141,7 +141,7 @@ Step-by-step instructions to create a sample SQL Query on the SQL Analytical End
 
 #### Retrieve cloud flows with their owner info
 
-This query returns all cloud flows with their owner information. 
+This query returns all cloud flows with their owner information.
 
 > [!NOTE]
 > Only cloud flows that are part of a Dataverse solution are available in Fabric.
@@ -260,7 +260,7 @@ This query identifies machine and licensing-related capacity issues for a specif
 
 #### Find scripts that include plain text passwords in connections
 
-This query finds all desktop flows that use the OLEDB connections action with a plaintext password.
+This query finds all desktop flows that use (OLEDB) DB connection strings that have been configured to use a plaintext password.
 
 ```sql
     SELECT   
@@ -307,6 +307,8 @@ This query detects desktop flows that include scripting actions leveraging SAP's
 #### Potential SQL injection risk
 
 This query detects desktop flows that contain scripts potentially vulnerable to SQL injection by searching for the use of `database.executesqlstatement.execute` within the flow definitions. Consider a scenario where, instead of directly writing the SQL code in the [Execute SQL statement action](./desktop-flows/actions-reference/database#executesqlstatement), the script is configured to use a Power Automate desktop input variable (e.g., *%LetsDeleteAllGeneralLedgerEntriesFromDB%*) that is provided to the script during runtime. This could pose a significant SQL injection risk.
+
+:::image type="content" source="media/advanced-automation-related-data-analytics-fabric/execute-sql-statmenet-risk.png" alt-text="Screenshot of an entity relationship drawing showing automation-related table relations." lightbox="media/advanced-automation-related-data-analytics-fabric/execute-sql-statmenet-risk.png":::
 
 ```sql
     SELECT   
