@@ -18,7 +18,7 @@ search.audienceType:
 
 # Automation-related data analytics with Fabric
 
-Power Automate provides a comprehensive built-in monitoring and troubleshooting experience that allows organizations to manage their day-to-day operations, view trends, and access recommendations through features like the [Automation Center](./automation-center-overview.md) and [Desktop Flow Activity](./desktop-flows/desktop-flow-activity.md).
+Power Automate provides a comprehensive built-in monitoring and troubleshooting experience that allows organizations to manage their day-to-day operations, view trends, and access recommendations through features like the [Automation Center](./automation-center-overview.md) and [Desktop Flow Activity](/desktop-flows/desktop-flow-activity.md).
 
 However, your organization may have more advanced or custom monitoring, reporting, and analysis needs that aren't covered within the product today. This is one of the key strengths of the Power Platform; through its native integrations with other low-code tooling and platforms, such as Power BI, Microsoft Fabric, as well as with Azure, organizations can develop highly sophisticated, scalable, and compliant analytics solutions using data from Power Automate and many other sources.
 
@@ -53,7 +53,7 @@ Before you continue, ensure you meet the following prerequisites:
 5. (Optional) Select Lakehouse settings and rename your Lakehouse to a more meaningful name, such as "contoso_westus_accounts_payable," and provide a brief description. This will help others quickly identify the specific automations and data being processed in the Lakehouse.
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/lakehouse-renaming.png" alt-text="Screenshot of Fabric workspace showing the settings panel for a lakehouse with description." lightbox="media/advanced-automation-related-data-analytics-fabric/lakehouse-renaming.png":::
 6. (Optional) Link additional Dataverse environments within the same geographical region to Fabric to create cross-environment analytical solutions.
-7. (Optional) If you plan to follow the advanced section for [Desktop flow action log-level analytics](#governance-related-query-examples-for-desktop-flow-run-action-logs), ensure that [**Desktop Flow Logs V2**](./desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
+7. (Optional) If you plan to follow the advanced section for [Desktop flow action log-level analytics](#governance-related-query-examples-for-desktop-flow-run-action-logs), ensure that [**Desktop Flow Logs V2**](/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
 
 ## List of automation-related tables
 
@@ -64,7 +64,7 @@ The following table includes automation-related tables that are frequently used 
 | [Process](/power-apps/developer/data-platform/reference/entities/workflow) | workflow         | Contains desktop flows and solution-based cloud flows (along with other workflow types). |
 | [Flow Session](/power-apps/developer/data-platform/reference/entities/flowsession) | flowsession | Contains desktop flow run-related data such as start, durations, status, machine, robot account, parent flow context etc.     |
 | [Flow Run](/power-apps/developer/data-platform/reference/entities/flowrun) | flowrun  | Contains cloud flow run-related data such start, end, duration, parent flow context etc. |
-| [Flow Log](/power-apps/developer/data-platform/reference/entities/flowlog) | flowrun  | Contains a wide variety of logs, such as custom logs, [desktop flow action logs V2](./desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version), [machine run queue logs](./desktop-flows/monitor-run-details#view-queue-events), unattended self-heal requests/responses, and work queue processing logs etc. The data is stored in a [Dataverse elastic table](/power-apps/maker/data-platform/create-edit-elastic-tables), and depending on the log type, can be configured with its own [time-to-live (TTL)](/power-apps/developer/data-platform/elastic-tables#expire-data-by-using-time-to-live) setting in the [Organization table](/power-apps/developer/data-platform/reference/entities/organization#writable-columnsattributes) ([FlowLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowLogsTtlInMinutes) and [DesktopFlowQueueLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes)), which defines when records should be automatically deleted from the table. |
+| [Flow Log](/power-apps/developer/data-platform/reference/entities/flowlog) | flowrun  | Contains a wide variety of logs, such as custom logs, [desktop flow action logs V2](/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version), [machine run queue logs](/desktop-flows/monitor-run-details#view-queue-events), unattended self-heal requests/responses, and work queue processing logs etc. The data is stored in a [Dataverse elastic table](/power-apps/maker/data-platform/create-edit-elastic-tables), and depending on the log type, can be configured with its own [time-to-live (TTL)](/power-apps/developer/data-platform/elastic-tables#expire-data-by-using-time-to-live) setting in the [Organization table](/power-apps/developer/data-platform/reference/entities/organization#writable-columnsattributes) ([FlowLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowLogsTtlInMinutes) and [DesktopFlowQueueLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes)), which defines when records should be automatically deleted from the table. |
 | [Flow Machine](/power-apps/developer/data-platform/reference/entities/flowmachine) | flowmachine  | Contains machine and hosted machine-related info. |
 | [Flow Machine Group](/power-apps/developer/data-platform/reference/entities/flowmachinegroup) | flowmachinegroup | Contains machine group and hosted machine group-related info.  |
 | [Work Queue](/power-apps/developer/data-platform/reference/entities/workqueue) | workqueue  | Represents an instance of a workflow execution.  |
@@ -306,7 +306,7 @@ This query detects desktop flows that include scripting actions leveraging SAP's
 
 #### Potential SQL injection risk
 
-This query detects desktop flows that contain scripts potentially vulnerable to SQL injection by searching for the use of `database.executesqlstatement.execute` within the flow definitions. Consider a scenario where, instead of directly writing the SQL code in the [Execute SQL statement action](./desktop-flows/actions-reference/database#executesqlstatement), the script is configured to use a Power Automate desktop input variable (e.g., *%LetsDeleteAllGeneralLedgerEntriesFromDB%*) that is provided to the script during runtime. This could pose a significant SQL injection risk.
+This query detects desktop flows that contain scripts potentially vulnerable to SQL injection by searching for the use of `database.executesqlstatement.execute` within the flow definitions. Consider a scenario where, instead of directly writing the SQL code in the [Execute SQL statement action](/desktop-flows/actions-reference/database#executesqlstatement), the script is configured to use a Power Automate desktop input variable (e.g., *%LetsDeleteAllGeneralLedgerEntriesFromDB%*) that is provided to the script during runtime. This could pose a significant SQL injection risk.
 
 :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/execute-sql-statmenet-risk.png" alt-text="Screenshot of an entity relationship drawing showing automation-related table relations." lightbox="media/advanced-automation-related-data-analytics-fabric/execute-sql-statmenet-risk.png":::
 
@@ -430,7 +430,7 @@ This query searches for desktop flows that lack any error handling mechanisms, s
 
 > [!NOTE]
 >
-> Before you continue with this section, ensure that [**Desktop Flow Logs V2**](./desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in your environment and that you have existing desktop flow runs.
+> Before you continue with this section, ensure that [**Desktop Flow Logs V2**](/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in your environment and that you have existing desktop flow runs.
 
 #### Identify restricted URL usage
 
