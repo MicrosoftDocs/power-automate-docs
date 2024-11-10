@@ -426,13 +426,13 @@ This query searches for desktop flows that lack any error handling mechanisms, s
     
 ```
 
-### Governance-related query examples for desktop flow run action logs
+### Governance-related query examples for V2 action logs
 
 > [!NOTE]
 >
 > Before you continue with this section, ensure that [**Desktop Flow Logs V2**](./desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in your environment and that you have existing desktop flow runs.
 
-#### Identify restricted URL usage
+#### Desktop flow runs with restricted URL access
 
 This query finds web service invocations (Invoke Web Service action) within a specific desktop flow over the past three weeks. This is particularly useful for identifying and analyzing potentially suspicious endpoints or restricted API calls.
 
@@ -465,6 +465,133 @@ This query finds web service invocations (Invoke Web Service action) within a sp
             OR f.data LIKE '%api.third-restricted-url.de%'  
             OR f.data LIKE '%api.phishing-example.com%'  
         );
+```
+
+#### Desktop flow runs with cryprtographic code
+
+This query scans desktop flow runs for PowerShell script actions that included cryptographic code over the past 7 days.
+
+```sql
+    -- Queries actions logs named 'Run PowerShell script' that contain code that that uses cryptographic libraries 
+    -- and terms such as "AES", "RSA", "encryption", or "decryption," which may indicate risky operations
+    SELECT top(1)
+        JSON_VALUE(data, '$.name') AS ActionName,
+        JSON_VALUE(data, '$.inputs') AS Inputs,
+        JSON_VALUE(data, '$.outputs') AS Outputs
+    FROM 
+        [flowlog]
+    WHERE
+        JSON_VALUE(data, '$.name') = 'Run PowerShell script'
+        AND createdon >= DATEADD(day, -7, GETDATE())
+        AND (
+            JSON_VALUE(data, '$.inputs') LIKE '%AES%'
+            OR JSON_VALUE(data, '$.inputs') LIKE '%RSA%'
+            OR JSON_VALUE(data, '$.inputs') LIKE '%encryption%'
+            OR JSON_VALUE(data, '$.inputs') LIKE '%decryption%'
+        )
+    ORDER BY
+        ActionName
+    
+```
+
+#### Desktop flow runs with pro-code usage
+
+This query is a bit more advanced. It identifies and counts the number of distinct desktop flow runs (Flow Sessions) that include pro-coding parts (such as VBScript, PowerShell, JavaScript, .NET, or Python) within the last 7 days, and then groups the results bydesktop flow.
+
+```sql
+WITH ProCodingSessions AS (  
+    SELECT   
+        fs.flowsessionid,  
+        f.data AS 'Action log',  
+        f.parentobjectid AS 'Parent object id',  
+        f.createdon AS 'Log created on',  
+        w.name AS 'Desktop flow',  
+        w.workflowid AS 'Desktop flow Id',  
+        w.createdon AS 'Created on',  
+        w.modifiedon AS 'Last modified on',  
+        w.definition AS 'Script',  
+        w.ownerid AS 'Owner Id',  
+        s.fullname AS 'Owner name',  
+        s.internalemailaddress AS 'Owner email'  
+    FROM [flowlog] f  
+    JOIN flowsession fs ON f.parentobjectid = fs.flowsessionid  
+    JOIN workflow w ON fs.regardingobjectid = w.workflowid  
+    JOIN systemuser s ON w.ownerid = s.systemuserid  
+    WHERE f.createdon >= DATEADD(day, -7, GETDATE())  
+    AND (  
+        LOWER(w.definition) LIKE '%runvbscript%' OR  
+        LOWER(w.definition) LIKE '%runpowershellscript%' OR  
+        LOWER(w.definition) LIKE '%runjavascript%' OR  
+        LOWER(w.definition) LIKE '%rundotnetscript%' OR  
+        LOWER(w.definition) LIKE '%runpythonscript%'  
+    )  
+),  
+FlowCounts AS (  
+    SELECT  
+        p.[Desktop flow],  
+        p.[Desktop flow Id],  
+        p.[Created on],  
+        p.[Last modified on],  
+        p.[Script],  
+        p.[Owner Id],  
+        p.[Owner name],  
+        p.[Owner email],  
+        COUNT(DISTINCT p.flowsessionid) AS ProCodingSessionCount  
+    FROM ProCodingSessions p  
+    GROUP BY  
+        p.[Desktop flow],  
+        p.[Desktop flow Id],  
+        p.[Created on],  
+        p.[Last modified on],  
+        p.[Script],  
+        p.[Owner Id],  
+        p.[Owner name],  
+        p.[Owner email]  
+)  
+SELECT  
+    f.[Desktop flow],  
+    f.[Desktop flow Id],  
+    f.[Created on],  
+    f.[Last modified on],  
+    f.[Script],  
+    f.[Owner Id],  
+    f.[Owner name],  
+    f.[Owner email],  
+    f.ProCodingSessionCount AS 'Runs with pro-code' 
+FROM FlowCounts f  
+ORDER BY f.ProCodingSessionCount DESC;  
+
+```
+
+### Error and perfromance-related queries for V2 action logs
+
+#### Top 10 failing desktop flow actions
+
+This query returns the top 10 failing actions by number of errors over the past 7 days.
+
+```sql
+    SELECT TOP(10)   
+        JSON_VALUE(data, '$.name') AS ActionName,  
+        SUM(CASE WHEN JSON_VALUE(data, '$.status') = 'Failed' THEN 1 ELSE 0 END) AS ErrorCount  
+    FROM [flowlog]  
+    WHERE createdon >= DATEADD(day, -7, GETDATE())  
+    GROUP BY JSON_VALUE(data, '$.name')  
+    HAVING SUM(CASE WHEN JSON_VALUE(data, '$.status') = 'Failed' THEN 1 ELSE 0 END) > 0  
+    ORDER BY ErrorCount DESC;  
+```
+
+#### Top 10 error codes with count
+
+```sql
+    SELECT TOP(10)  
+        JSON_VALUE(data, '$.errorCode') AS ErrorCode,  
+        COUNT(*) AS OccurrenceCount  
+    FROM [flowlog]  
+    WHERE createdon >= DATEADD(day, -7, GETDATE())  
+      AND JSON_VALUE(data, '$.status') = 'Failed'  
+    GROUP BY JSON_VALUE(data, '$.errorCode')  
+    ORDER BY OccurrenceCount DESC;  
+    
 ```
 
 ## Creating reports in Fabric
