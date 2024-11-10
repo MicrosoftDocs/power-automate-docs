@@ -1116,6 +1116,14 @@
   - name: Automation center (preview)
     items:
     - name: Overview
+      href: automation-center-overview.md
+    - name: Recommendations
+      href: automation-center-recommendations.md
+    - name: Copilot
+      href: automation-center-copilot.md       
+  - name: Automation-centric analytics with Fabric
+    items:
+    - name: Overview
       href: automation-analytics-with-fabric-introduction.md
     - name: Crafting automation-related queries with Fabric
       href: automation-analytics-with-fabric-queries.md
@@ -1124,15 +1132,7 @@
     - name: Designing an automation-centric Fabric warehouse
       href: automation-analytics-with-fabric-warehouse.md
     - name: Setting up real-time alerts with Reflex
-      href: automation-analytics-with-fabric-alerts.md     
-  - name: Automation-centric analytics with Fabric
-    items:
-    - name: Overview
-      href: autom
-    - name: Recommendations
-      href: automation-center-recommendations.md
-    - name: Copilot
-      href: automation-center-copilot.md      
+      href: automation-analytics-with-fabric-alerts.md      
   - name: Capacity utilization
     items:
     - name: Introduction to capacity utilization (preview)
