@@ -18,7 +18,6 @@ search.audienceType:
 
 # Building custom Power BI reports for data insights in Fabric
 
-
 ## What's next
 
 > [!div class="nextstepaction"]
