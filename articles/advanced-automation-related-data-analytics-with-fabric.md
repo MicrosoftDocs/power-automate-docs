@@ -18,7 +18,7 @@ search.audienceType:
 
 # Automation-related data analytics with Fabric
 
-Power Automate provides a comprehensive built-in monitoring and troubleshooting experience that allows organizations to manage their day-to-day operations, view trends, and access recommendations through features like the [Automation Center](/articles/automation-center-overview.md) and [Desktop Flow Activity](/articles/desktop-flows/desktop-flow-activity.md).
+Power Automate provides a comprehensive built-in monitoring and troubleshooting experience that allows organizations to manage their day-to-day operations, view trends, and access recommendations through features like the [Automation Center](./automation-center-overview.md) and [Desktop Flow Activity](./desktop-flows/desktop-flow-activity.md).
 
 However, your organization may have more advanced or custom monitoring, reporting, and analysis needs that aren't covered within the product today. This is one of the key strengths of the Power Platform; through its native integrations with other low-code tooling and platforms, such as Power BI, Microsoft Fabric, as well as with Azure, organizations can develop highly sophisticated, scalable, and compliant analytics solutions using data from Power Automate and many other sources.
 
@@ -41,10 +41,6 @@ The Link to Microsoft Fabric feature built into Power Platform makes all your Dy
 
 In the following guide, we'll walk you through the process of using Dataverse shortcuts within Microsoft Fabric to create powerful data analytics solutions. By the end of this guide, you'll have the foundational skills and architectural understanding needed to build sophisticated data queries, generate insightful reports, design interactive dashboards, and set up proactive alerts to seamlessly monitor your data at scale.
 
-> [!NOTE]
->
-> **Disclaimer:** The scenarios, code examples, and data used in this tutorial are fictional, may include errors and intended solely for demonstration purposes. They do not represent product or analysis recommendations.
-
 ## Prerequisites
 
 Before you continue, ensure you meet the following prerequisites:
@@ -57,7 +53,7 @@ Before you continue, ensure you meet the following prerequisites:
 5. (Optional) Select Lakehouse settings and rename your Lakehouse to a more meaningful name, such as "contoso_westus_accounts_payable," and provide a brief description. This will help others quickly identify the specific automations and data being processed in the Lakehouse.
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/lakehouse-renaming.png" alt-text="Screenshot of Fabric workspace showing the settings panel for a lakehouse with description." lightbox="media/advanced-automation-related-data-analytics-fabric/lakehouse-renaming.png":::
 6. (Optional) Link additional Dataverse environments within the same geographical region to Fabric to create cross-environment analytical solutions.
-7. (Optional) If you plan to follow the advanced section for [Desktop flow action log-level analytics](#governance-related-query-examples-for-desktop-flow-run-action-logs), ensure that [**Desktop Flow Logs V2**](/articles/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
+7. (Optional) If you plan to follow the advanced section for [Desktop flow action log-level analytics](#governance-related-query-examples-for-desktop-flow-run-action-logs), ensure that [**Desktop Flow Logs V2**](./desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
 
 ## List of tables are automation-related
 
@@ -68,7 +64,7 @@ The following table includes automation-related tables that are frequently used 
 | [Process](/power-apps/developer/data-platform/reference/entities/workflow) | workflow         | Contains desktop flows and solution-based cloud flows (along with other workflow types). |
 | [Flow Session](/power-apps/developer/data-platform/reference/entities/flowsession) | flowsession | Contains desktop flow run-related data such as start, durations, status, machine, robot account, parent flow context etc.     |
 | [Flow Run](/power-apps/developer/data-platform/reference/entities/flowrun) | flowrun  | Contains cloud flow run-related data such start, end, duration, parent flow context etc. |
-| [Flow Log](/power-apps/developer/data-platform/reference/entities/flowlog) | flowrun  | Contains cloud flow run-related data such start, end, duration, parent flow context etc. |
+| [Flow Log](/power-apps/developer/data-platform/reference/entities/flowlog) | flowrun  | Contains a wide variety of logs, such as custom logs, [desktop flow action logs V2](./desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version), [machine run queue logs](./desktop-flows/monitor-run-details#view-queue-events), unattended self-heal requests/responses, and work queue processing logs etc. The data is stored in a [Dataverse elastic table](/power-apps/maker/data-platform/create-edit-elastic-tables), and depending on the log type, can be configured with its own [time-to-live (TTL)](/power-apps/developer/data-platform/elastic-tables#expire-data-by-using-time-to-live) setting in the [Organization table](/power-apps/developer/data-platform/reference/entities/organization#writable-columnsattributes) ([FlowLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowLogsTtlInMinutes) and [DesktopFlowQueueLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes)), which defines when records should be automatically deleted from the table. |
 | [Flow Machine](/power-apps/developer/data-platform/reference/entities/flowmachine) | flowmachine  | Contains machine and hosted machine-related info. |
 | [Flow Machine Group](/power-apps/developer/data-platform/reference/entities/flowmachinegroup) | flowmachinegroup | Contains machine group and hosted machine group-related info.  |
 | [Work Queue](/power-apps/developer/data-platform/reference/entities/workqueue) | workqueue  | Represents an instance of a workflow execution.  |
@@ -82,6 +78,10 @@ The image includes only relations to tables that are included above and automati
 :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/automation-related-table-relations.png" alt-text="Screenshot of an entity relationship drawing showing automation-related table relations." lightbox="media/advanced-automation-related-data-analytics-fabric/automation-related-table-relations.png":::
 
 ## Creating automation-related queries
+
+> [!NOTE]
+>
+> **Disclaimer:** The scenarios, query examples, and data used in this tutorial are fictional, may include errors, inefficiencies and are intended solely for demonstration purposes.
 
 Step-by-step instructions to create a sample SQL Query on the SQL Analytical Endpoint in Fabric for the `contoso_westus_accounts_payable` Lakehouse.
   
@@ -172,9 +172,9 @@ This query retrieves the minimum, mean (average), maximum, and standard deviatio
 
 :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/performance-related-query-results.png" alt-text="Screenshot of an entity relationship drawing showing automation-related table relations." lightbox="media/advanced-automation-related-data-analytics-fabric/performance-related-query-results.png":::
 
-### Capacity and bottleneck-related query
+### Machine and licensing capacity-related query
 
-This query identifies capacity and bottleneck issues in machines running a specific desktop flow to help in optimizing resource allocation and addressing performance constraints.
+This query identifies machine and licensing-related capacity issues for a specific desktop flow to help in optimizing resource allocation and addressing performance constraints.
 
 ```sql
     SELECT   
@@ -207,9 +207,34 @@ This query identifies capacity and bottleneck issues in machines running a speci
 
 ```
 
-### Governance-related query examples for desktop flows
+### Basic flow queries
 
-#### Base desktop flow query with owner info
+#### Retrieve cloud flows with their owner info
+
+This query returns all cloud flows with their owner information. 
+
+> [!NOTE]
+> Only cloud flows that are part of a Dataverse solution are available in Fabric.
+
+```sql
+    SELECT   
+        w.name AS 'Cloud flow',  
+        w.workflowid AS 'Cloud flow Id',  
+        w.createdon AS 'Created on',
+        w.modifiedon AS 'Last modified on',
+        w.clientdata AS 'Script',  
+        w.ownerid AS 'Owner Id',  
+        s.fullname AS 'Owner name',  
+        s.internalemailaddress AS 'Owner email'
+    FROM   
+        workflow w  
+    JOIN   
+        systemuser s ON w.ownerid = s.systemuserid  
+    WHERE   
+        w.category = 5;  -- Only consider solution-cloud flows (category 5)  
+```
+
+#### Retrieve desktop flows with their owner info
 
 This query returns all desktop flows with their owner information.
 
@@ -231,9 +256,11 @@ This query returns all desktop flows with their owner information.
         w.category = 6;  -- Only consider desktop flows (category 6)  
 ```
 
-#### Find scripts that include the term `password` or `pwd`
+### Governance-related query examples for desktop flows
 
-This query finds all desktop flows that include the terms `password` or `pwd`.
+#### Find scripts that include plain text passwords in connections
+
+This query finds all desktop flows that use the OLEDB connections action with a plaintext password.
 
 ```sql
     SELECT   
@@ -252,12 +279,12 @@ This query finds all desktop flows that include the terms `password` or `pwd`.
     WHERE   
         w.category = 6  
         AND w.definition IS NOT NULL  
-        AND (LOWER(w.definition) LIKE '%password%' OR LOWER(w.definition) LIKE '%pwd%');
+        AND (LOWER(w.definition) LIKE '%;password=%');
 ```
 
-#### Data exfiltration risk
+#### Potential sensitive data loss or exfiltration risk
 
-This query identifies desktop flows that incorporate scripting actions to access SAP's internal GUI scripting engine. This can present potential data loss risks because sensitive data accessed or manipulated by these scripts could be unintentionally or maliciously exposed.
+This query detects desktop flows that include scripting actions leveraging SAP's internal GUI scripting engine. If this is unexpected, it may pose risks of data loss or exfiltration, as sensitive information could be accessed or manipulated by these scripts and unintentionally or maliciously altered or exposed.
 
 ```sql
     SELECT   
@@ -279,7 +306,7 @@ This query identifies desktop flows that incorporate scripting actions to access
 
 #### Potential SQL injection risk
 
-This query identifies desktop flows that include scripts with potential SQL injection risks by searching for the use of `database.executesqlstatement` within the flow definitions.
+This query detects desktop flows that contain scripts potentially vulnerable to SQL injection by searching for the use of `database.executesqlstatement.execute` within the flow definitions. Consider a scenario where, instead of directly writing the SQL code in the [Execute SQL statement action](./desktop-flows/actions-reference/database#executesqlstatement), the script is configured to use a Power Automate desktop input variable (e.g., *%LetsDeleteAllGeneralLedgerEntriesFromDB%*) that is provided to the script during runtime. This could pose a significant SQL injection risk.
 
 ```sql
     SELECT   
@@ -298,7 +325,7 @@ This query identifies desktop flows that include scripts with potential SQL inje
     WHERE   
         w.category = 6  
         AND w.definition IS NOT NULL  
-        AND LOWER(w.definition) LIKE '%database.executesqlstatement%';
+        AND LOWER(w.definition) LIKE '%database.executesqlstatement.execute%';
     
 ```
 
@@ -372,57 +399,7 @@ This query detects desktop flows containing scripts that reference URL shortener
     
 ```
 
-#### Hardcode file path usage
-
-This query identifies desktop flows that include hardcoded file paths in their scripts, which may indicate poor scripting best-practices and potential security vulnerabilities.
-
-```sql
-    SELECT   
-        w.name AS 'Desktop flow',  
-        w.workflowid AS 'Desktop flow Id',  
-        w.createdon AS 'Created on',  
-        w.modifiedon AS 'Last modified on',  
-        w.definition AS 'Script',  
-        w.ownerid AS 'Owner Id',  
-        s.fullname AS 'Owner name',  
-        s.internalemailaddress AS 'Owner email'  
-    FROM   
-        workflow w  
-    JOIN   
-        systemuser s ON w.ownerid = s.systemuserid  
-    WHERE   
-        w.category = 6  
-        AND w.definition IS NOT NULL  
-        AND (
-            LOWER(w.definition) LIKE '%c:\\%' OR 
-            LOWER(w.definition) LIKE '%d:\\%' OR 
-            LOWER(w.definition) LIKE '%e:\\%' OR 
-            LOWER(w.definition) LIKE '%f:\\%' OR 
-            LOWER(w.definition) LIKE '%g:\\%' OR 
-            LOWER(w.definition) LIKE '%h:\\%' OR 
-            LOWER(w.definition) LIKE '%i:\\%' OR 
-            LOWER(w.definition) LIKE '%j:\\%' OR 
-            LOWER(w.definition) LIKE '%k:\\%' OR 
-            LOWER(w.definition) LIKE '%l:\\%' OR 
-            LOWER(w.definition) LIKE '%m:\\%' OR 
-            LOWER(w.definition) LIKE '%n:\\%' OR 
-            LOWER(w.definition) LIKE '%o:\\%' OR 
-            LOWER(w.definition) LIKE '%p:\\%' OR 
-            LOWER(w.definition) LIKE '%q:\\%' OR 
-            LOWER(w.definition) LIKE '%r:\\%' OR 
-            LOWER(w.definition) LIKE '%s:\\%' OR 
-            LOWER(w.definition) LIKE '%t:\\%' OR 
-            LOWER(w.definition) LIKE '%u:\\%' OR 
-            LOWER(w.definition) LIKE '%v:\\%' OR 
-            LOWER(w.definition) LIKE '%w:\\%' OR 
-            LOWER(w.definition) LIKE '%x:\\%' OR 
-            LOWER(w.definition) LIKE '%y:\\%' OR 
-            LOWER(w.definition) LIKE '%z:\\%' 
-        );
-
-```
-
-#### Missing error handling
+#### Missing error handling in scripts
 
 This query searches for desktop flows that lack any error handling mechanisms, such as on `block error` or `on error`, to ensure robustness and reliability in script execution.
 
@@ -447,12 +424,11 @@ This query searches for desktop flows that lack any error handling mechanisms, s
     
 ```
 
-
 ### Governance-related query examples for desktop flow run action logs
 
 > [!NOTE]
 >
-> Before you continue with this section, ensure that [**Desktop Flow Logs V2**](/articles/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in your environment and that you have existing desktop flow runs.
+> Before you continue with this section, ensure that [**Desktop Flow Logs V2**](./desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in your environment and that you have existing desktop flow runs.
 
 #### Identify restricted URL usage
 
