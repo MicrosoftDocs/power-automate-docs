@@ -32,201 +32,201 @@ There are many scenarios where you would want to store telemetry data for long-t
 
 ### Create Date table for date-based intelligence
 
-    ```sql
-        CREATE TABLE Dates
-        (
-            [Date] [date]  NOT NULL,
-            [DateAsText] [varchar](10)  NOT NULL,
-            [Month] [int]  NOT NULL,
-            [Day] [int]  NOT NULL,
-            [Year] [smallint]  NOT NULL,
-            [Quarter] [int]  NOT NULL,
-            [DayName] [varchar](9)  NOT NULL,
-            [DayInWeek] [int]  NOT NULL,
-            [Week] [int]  NOT NULL,
-            [MonthName] [varchar](9)  NOT NULL,
-            [DaysInMonth] [int]  NOT NULL,
-            [DayOfYear] [int]  NOT NULL
-        )
-        GO
-            
-    ```
+```sql
+    CREATE TABLE Dates
+    (
+        [Date] [date]  NOT NULL,
+        [DateAsText] [varchar](10)  NOT NULL,
+        [Month] [int]  NOT NULL,
+        [Day] [int]  NOT NULL,
+        [Year] [smallint]  NOT NULL,
+        [Quarter] [int]  NOT NULL,
+        [DayName] [varchar](9)  NOT NULL,
+        [DayInWeek] [int]  NOT NULL,
+        [Week] [int]  NOT NULL,
+        [MonthName] [varchar](9)  NOT NULL,
+        [DaysInMonth] [int]  NOT NULL,
+        [DayOfYear] [int]  NOT NULL
+    )
+    GO
+        
+```
 
 ### Create Flows table for desktop and cloud flows
 
-    ```sql
-      CREATE TABLE Flows
-      (
-          [statecode] [bigint]  NULL,
-          [statuscode] [bigint]  NULL,
-          [businessprocesstype] [bigint]  NULL,
-          [category] [bigint]  NULL,
-          [mode] [bigint]  NULL,
-          [type] [bigint]  NULL,
-          [uiflowtype] [bigint]  NULL,
-          [createdby] [varchar](8000)  NULL,
-          [modifiedby] [varchar](8000)  NULL,
-          [owninguser] [varchar](8000)  NULL,
-          [parentworkflowid] [varchar](8000)  NULL,
-          [parentworkflowid_entitytype] [varchar](8000)  NULL,
-          [ownerid] [varchar](8000)  NULL,
-          [clientdata] [varchar](8000)  NULL,
-          [connectionreferences] [varchar](8000)  NULL,
-          [createdbyname] [varchar](8000)  NULL,
-          [createdon] [datetime2](6)  NULL,
-          [definition] [varchar](8000)  NULL,
-          [dependencies] [varchar](8000)  NULL,
-          [description] [varchar](8000)  NULL,
-          [desktopflowmodules] [varchar](8000)  NULL,
-          [inputs] [varchar](8000)  NULL,
-          [modifiedbyname] [varchar](8000)  NULL,
-          [modifiedon] [datetime2](6)  NULL,
-          [name] [varchar](8000)  NULL,
-          [outputs] [varchar](8000)  NULL,
-          [resourceid] [varchar](8000)  NULL,
-          [uniquename] [varchar](8000)  NULL,
-          [workflowid] [varchar](8000)  NULL,
-          [workflowidunique] [varchar](8000)  NULL,
-          [TenantId] [varchar](8000)  NULL,
-          [EnvironmentId] [varchar](8000)  NULL,
-          [EnvironmentName] [varchar](8000)  NULL,
-          [Region] [varchar](8000)  NULL,
-          [isdesktopflow] [bit]  NULL,
-          [Plaintext Password] [bigint]  NULL,
-          [Hardcoded Email] [bigint]  NULL,
-          [Hardcoded API Key] [bigint]  NULL,
-          [Excessive Sleep] [bigint]  NULL,
-          [Missing Error Handling] [bigint]  NULL,
-          [Hardcoded File Path] [bigint]  NULL,
-          [Web Endpoints and URL Shortcuts] [bigint]  NULL,
-          [Advanced API Requests] [bigint]  NULL,
-          [SQL Injection Risk] [bigint]  NULL,
-          [SAP Fiori Access] [bigint]  NULL,
-          [Has .Net] [bigint]  NULL,
-          [Has Python] [bigint]  NULL,
-          [Has JavaScript] [bigint]  NULL,
-          [Has PowerShell] [bigint]  NULL,
-          [Has VBScript] [bigint]  NULL,
-          [Has DOS Command] [bigint]  NULL,
-          [Has curl Command] [bigint]  NULL,
-          [Governance Score] [float]  NULL,
-          [Risk Score] [float]  NULL,
-          [Risk Classification] [varchar](8000)  NULL
-      )
-      GO
-    ```
-    
+```sql
+  CREATE TABLE Flows
+  (
+      [statecode] [bigint]  NULL,
+      [statuscode] [bigint]  NULL,
+      [businessprocesstype] [bigint]  NULL,
+      [category] [bigint]  NULL,
+      [mode] [bigint]  NULL,
+      [type] [bigint]  NULL,
+      [uiflowtype] [bigint]  NULL,
+      [createdby] [varchar](8000)  NULL,
+      [modifiedby] [varchar](8000)  NULL,
+      [owninguser] [varchar](8000)  NULL,
+      [parentworkflowid] [varchar](8000)  NULL,
+      [parentworkflowid_entitytype] [varchar](8000)  NULL,
+      [ownerid] [varchar](8000)  NULL,
+      [clientdata] [varchar](8000)  NULL,
+      [connectionreferences] [varchar](8000)  NULL,
+      [createdbyname] [varchar](8000)  NULL,
+      [createdon] [datetime2](6)  NULL,
+      [definition] [varchar](8000)  NULL,
+      [dependencies] [varchar](8000)  NULL,
+      [description] [varchar](8000)  NULL,
+      [desktopflowmodules] [varchar](8000)  NULL,
+      [inputs] [varchar](8000)  NULL,
+      [modifiedbyname] [varchar](8000)  NULL,
+      [modifiedon] [datetime2](6)  NULL,
+      [name] [varchar](8000)  NULL,
+      [outputs] [varchar](8000)  NULL,
+      [resourceid] [varchar](8000)  NULL,
+      [uniquename] [varchar](8000)  NULL,
+      [workflowid] [varchar](8000)  NULL,
+      [workflowidunique] [varchar](8000)  NULL,
+      [TenantId] [varchar](8000)  NULL,
+      [EnvironmentId] [varchar](8000)  NULL,
+      [EnvironmentName] [varchar](8000)  NULL,
+      [Region] [varchar](8000)  NULL,
+      [isdesktopflow] [bit]  NULL,
+      [Plaintext Password] [bigint]  NULL,
+      [Hardcoded Email] [bigint]  NULL,
+      [Hardcoded API Key] [bigint]  NULL,
+      [Excessive Sleep] [bigint]  NULL,
+      [Missing Error Handling] [bigint]  NULL,
+      [Hardcoded File Path] [bigint]  NULL,
+      [Web Endpoints and URL Shortcuts] [bigint]  NULL,
+      [Advanced API Requests] [bigint]  NULL,
+      [SQL Injection Risk] [bigint]  NULL,
+      [SAP Fiori Access] [bigint]  NULL,
+      [Has .Net] [bigint]  NULL,
+      [Has Python] [bigint]  NULL,
+      [Has JavaScript] [bigint]  NULL,
+      [Has PowerShell] [bigint]  NULL,
+      [Has VBScript] [bigint]  NULL,
+      [Has DOS Command] [bigint]  NULL,
+      [Has curl Command] [bigint]  NULL,
+      [Governance Score] [float]  NULL,
+      [Risk Score] [float]  NULL,
+      [Risk Classification] [varchar](8000)  NULL
+  )
+  GO
+```
+
 ### Create CloudFlowRun table for cloud flow runs
 
-    ```sql
-        CREATE TABLE CloudFlowRuns
-        (
-            [createdby] [varchar](8000)  NULL,
-            [workflow] [varchar](8000)  NULL,
-            [ownerid] [varchar](8000)  NULL,
-            [createdbyname] [varchar](8000)  NULL,
-            [createdon] [datetime2](6)  NULL,
-            [duration] [bigint]  NULL,
-            [endtime] [datetime2](6)  NULL,
-            [errorcode] [varchar](8000)  NULL,
-            [errormessage] [varchar](8000)  NULL,
-            [flowrunid] [varchar](8000)  NULL,
-            [name] [varchar](8000)  NULL,
-            [owneridname] [varchar](8000)  NULL,
-            [parentrunid] [varchar](8000)  NULL,
-            [PartitionId] [varchar](8000)  NULL,
-            [resourceid] [varchar](8000)  NULL,
-            [starttime] [datetime2](6)  NULL,
-            [status] [varchar](8000)  NULL,
-            [triggertype] [varchar](8000)  NULL,
-            [ttlinseconds] [bigint]  NULL,
-            [workflowid] [varchar](8000)  NULL,
-            [workflowname] [varchar](8000)  NULL,
-            [TenantId] [varchar](8000)  NULL,
-            [EnvironmentId] [varchar](8000)  NULL,
-            [EnvironmentName] [varchar](8000)  NULL,
-            [Region] [varchar](8000)  NULL,
-            [ReferenceDate] [date]  NULL
-        )
-        GO    
+```sql
+    CREATE TABLE CloudFlowRuns
+    (
+        [createdby] [varchar](8000)  NULL,
+        [workflow] [varchar](8000)  NULL,
+        [ownerid] [varchar](8000)  NULL,
+        [createdbyname] [varchar](8000)  NULL,
+        [createdon] [datetime2](6)  NULL,
+        [duration] [bigint]  NULL,
+        [endtime] [datetime2](6)  NULL,
+        [errorcode] [varchar](8000)  NULL,
+        [errormessage] [varchar](8000)  NULL,
+        [flowrunid] [varchar](8000)  NULL,
+        [name] [varchar](8000)  NULL,
+        [owneridname] [varchar](8000)  NULL,
+        [parentrunid] [varchar](8000)  NULL,
+        [PartitionId] [varchar](8000)  NULL,
+        [resourceid] [varchar](8000)  NULL,
+        [starttime] [datetime2](6)  NULL,
+        [status] [varchar](8000)  NULL,
+        [triggertype] [varchar](8000)  NULL,
+        [ttlinseconds] [bigint]  NULL,
+        [workflowid] [varchar](8000)  NULL,
+        [workflowname] [varchar](8000)  NULL,
+        [TenantId] [varchar](8000)  NULL,
+        [EnvironmentId] [varchar](8000)  NULL,
+        [EnvironmentName] [varchar](8000)  NULL,
+        [Region] [varchar](8000)  NULL,
+        [ReferenceDate] [date]  NULL
+    )
+    GO    
 
-    ```
-    
+```
+
 ### Create DesktopFlowRun table for desktop flow runs
 
-    ```sql
-        CREATE TABLE DesktopFlowRuns
-        (
-            [statecode] [bigint]  NULL,
-            [statuscode] [bigint]  NULL,
-            [runmode] [bigint]  NULL,
-            [runsessionmode] [bigint]  NULL,
-            [triggertype] [bigint]  NULL,
-            [createdby] [varchar](8000)  NULL,
-            [machinegroupid] [varchar](8000)  NULL,
-            [machinegroupid_entitytype] [varchar](8000)  NULL,
-            [machineid] [varchar](8000)  NULL,
-            [machineid_entitytype] [varchar](8000)  NULL,
-            [modifiedby] [varchar](8000)  NULL,
-            [owningbusinessunit] [varchar](8000)  NULL,
-            [owningteam] [varchar](8000)  NULL,
-            [owninguser] [varchar](8000)  NULL,
-            [regardingobjectid] [varchar](8000)  NULL,
-            [regardingobjectid_entitytype] [varchar](8000)  NULL,
-            [ownerid] [varchar](8000)  NULL,
-            [additionalcontext] [varchar](8000)  NULL,
-            [completedon] [datetime2](6)  NULL,
-            [connectionid] [varchar](8000)  NULL,
-            [context.parentWorkflowId] [varchar](8000)  NULL,
-            [context.parentWorkflowRunId] [varchar](8000)  NULL,
-            [context.attendedMode] [varchar](8000)  NULL,
-            [context.connectionType] [varchar](8000)  NULL,
-            [context.parentWorkflowType] [varchar](8000)  NULL,
-            [correlationid] [varchar](8000)  NULL,
-            [createdbyname] [varchar](8000)  NULL,
-            [createdon] [datetime2](6)  NULL,
-            [errorcode] [varchar](8000)  NULL,
-            [errordetails] [varchar](8000)  NULL,
-            [errorinnererror] [varchar](8000)  NULL,
-            [errormessage] [varchar](8000)  NULL,
-            [flowsessionid] [varchar](8000)  NULL,
-            [gateway] [varchar](8000)  NULL,
-            [inputs] [varchar](8000)  NULL,
-            [machinegroupidname] [varchar](8000)  NULL,
-            [machineidname] [varchar](8000)  NULL,
-            [machinepercentcpuusage] [real]  NULL,
-            [machinepercentramusage] [real]  NULL,
-            [machineramusage] [bigint]  NULL,
-            [modifiedbyname] [varchar](8000)  NULL,
-            [modifiedon] [datetime2](6)  NULL,
-            [name] [varchar](8000)  NULL,
-            [outputs] [varchar](8000)  NULL,
-            [owneridname] [varchar](8000)  NULL,
-            [owneridtype] [varchar](8000)  NULL,
-            [owningbusinessunitname] [varchar](8000)  NULL,
-            [parentcloudflowrunsequenceid] [varchar](8000)  NULL,
-            [parentworkflowid] [varchar](8000)  NULL,
-            [processversion] [varchar](8000)  NULL,
-            [regardingobjectidname] [varchar](8000)  NULL,
-            [regardingobjecttypecode] [varchar](8000)  NULL,
-            [rundetails] [varchar](8000)  NULL,
-            [runduration] [bigint]  NULL,
-            [runexecutionduration] [bigint]  NULL,
-            [runwaitduration] [bigint]  NULL,
-            [sessionusername] [varchar](8000)  NULL,
-            [sessionusersid] [varchar](8000)  NULL,
-            [startedon] [datetime2](6)  NULL,
-            [IsDelete] [bit]  NULL,
-            [PartitionId] [varchar](8000)  NULL,
-            [TenantId] [varchar](8000)  NULL,
-            [EnvironmentId] [varchar](8000)  NULL,
-            [DesktopFlowRunDetailsUrl] [varchar](8000)  NULL,
-            [EnvironmentName] [varchar](8000)  NULL,
-            [Region] [varchar](8000)  NULL,
-            [ReferenceDate] [date]  NULL
-        )
-        GO    
-    ```
+```sql
+    CREATE TABLE DesktopFlowRuns
+    (
+        [statecode] [bigint]  NULL,
+        [statuscode] [bigint]  NULL,
+        [runmode] [bigint]  NULL,
+        [runsessionmode] [bigint]  NULL,
+        [triggertype] [bigint]  NULL,
+        [createdby] [varchar](8000)  NULL,
+        [machinegroupid] [varchar](8000)  NULL,
+        [machinegroupid_entitytype] [varchar](8000)  NULL,
+        [machineid] [varchar](8000)  NULL,
+        [machineid_entitytype] [varchar](8000)  NULL,
+        [modifiedby] [varchar](8000)  NULL,
+        [owningbusinessunit] [varchar](8000)  NULL,
+        [owningteam] [varchar](8000)  NULL,
+        [owninguser] [varchar](8000)  NULL,
+        [regardingobjectid] [varchar](8000)  NULL,
+        [regardingobjectid_entitytype] [varchar](8000)  NULL,
+        [ownerid] [varchar](8000)  NULL,
+        [additionalcontext] [varchar](8000)  NULL,
+        [completedon] [datetime2](6)  NULL,
+        [connectionid] [varchar](8000)  NULL,
+        [context.parentWorkflowId] [varchar](8000)  NULL,
+        [context.parentWorkflowRunId] [varchar](8000)  NULL,
+        [context.attendedMode] [varchar](8000)  NULL,
+        [context.connectionType] [varchar](8000)  NULL,
+        [context.parentWorkflowType] [varchar](8000)  NULL,
+        [correlationid] [varchar](8000)  NULL,
+        [createdbyname] [varchar](8000)  NULL,
+        [createdon] [datetime2](6)  NULL,
+        [errorcode] [varchar](8000)  NULL,
+        [errordetails] [varchar](8000)  NULL,
+        [errorinnererror] [varchar](8000)  NULL,
+        [errormessage] [varchar](8000)  NULL,
+        [flowsessionid] [varchar](8000)  NULL,
+        [gateway] [varchar](8000)  NULL,
+        [inputs] [varchar](8000)  NULL,
+        [machinegroupidname] [varchar](8000)  NULL,
+        [machineidname] [varchar](8000)  NULL,
+        [machinepercentcpuusage] [real]  NULL,
+        [machinepercentramusage] [real]  NULL,
+        [machineramusage] [bigint]  NULL,
+        [modifiedbyname] [varchar](8000)  NULL,
+        [modifiedon] [datetime2](6)  NULL,
+        [name] [varchar](8000)  NULL,
+        [outputs] [varchar](8000)  NULL,
+        [owneridname] [varchar](8000)  NULL,
+        [owneridtype] [varchar](8000)  NULL,
+        [owningbusinessunitname] [varchar](8000)  NULL,
+        [parentcloudflowrunsequenceid] [varchar](8000)  NULL,
+        [parentworkflowid] [varchar](8000)  NULL,
+        [processversion] [varchar](8000)  NULL,
+        [regardingobjectidname] [varchar](8000)  NULL,
+        [regardingobjecttypecode] [varchar](8000)  NULL,
+        [rundetails] [varchar](8000)  NULL,
+        [runduration] [bigint]  NULL,
+        [runexecutionduration] [bigint]  NULL,
+        [runwaitduration] [bigint]  NULL,
+        [sessionusername] [varchar](8000)  NULL,
+        [sessionusersid] [varchar](8000)  NULL,
+        [startedon] [datetime2](6)  NULL,
+        [IsDelete] [bit]  NULL,
+        [PartitionId] [varchar](8000)  NULL,
+        [TenantId] [varchar](8000)  NULL,
+        [EnvironmentId] [varchar](8000)  NULL,
+        [DesktopFlowRunDetailsUrl] [varchar](8000)  NULL,
+        [EnvironmentName] [varchar](8000)  NULL,
+        [Region] [varchar](8000)  NULL,
+        [ReferenceDate] [date]  NULL
+    )
+    GO    
+```
 
 Your warehouse workspace should look similar to this now.
 :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/automation-warehouse-table-creation-result.png" alt-text="Screenshot of a Fabric warehousing workspace with the list of tables that were created as part of this guide." lightbox="media/advanced-automation-related-data-analytics-fabric/automation-warehouse-table-creation-result.png":::
