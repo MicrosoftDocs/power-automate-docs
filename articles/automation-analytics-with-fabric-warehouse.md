@@ -106,10 +106,7 @@ There are many scenarios where you would want to store telemetry data for long-t
       [Has PowerShell] [bigint]  NULL,
       [Has VBScript] [bigint]  NULL,
       [Has DOS Command] [bigint]  NULL,
-      [Has curl Command] [bigint]  NULL,
-      [Governance Score] [float]  NULL,
-      [Risk Score] [float]  NULL,
-      [Risk Classification] [varchar](8000)  NULL
+      [Has curl Command] [bigint]  NULL
   )
   GO
 ```
