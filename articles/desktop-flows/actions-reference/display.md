@@ -4,7 +4,7 @@ description: See all the available message boxes actions.
 author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/23/2023
+ms.date: 11/11/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -68,7 +68,7 @@ Displays a message box.
 |ButtonPressed|[Text value](../variable-data-types.md#text-value)|The text of the button pressed|
 
 > [!NOTE]
-> The value of the ButtonPressed variable will always be in English, regardless of the current locale settings in Power Automate for desktop.
+> The value of the ButtonPressed variable is always in English, regardless of the current locale settings in Power Automate for desktop.
 
 ### <a name="showmessagedialog_onerror"></a> Exceptions
 
@@ -99,7 +99,7 @@ Displays a dialog box that prompts the user to enter text.
 |ButtonPressed|[Text value](../variable-data-types.md#text-value)|The text of the button pressed. The user will automatically be given the choice of OK or Cancel|
 
 > [!NOTE]
-> The value of the ButtonPressed variable will always be in English, regardless of the current locale settings in Power Automate for desktop.
+> The value of the ButtonPressed variable is always in English, regardless of the current locale settings in Power Automate for desktop.
 
 ### <a name="inputdialog_onerror"></a> Exceptions
 
@@ -133,7 +133,7 @@ Displays a dialog box that prompts the user to enter a date or date range.
 |ButtonPressed|[Text value](../variable-data-types.md#text-value)|The text of the button pressed by the user. The user will automatically be given the choice of OK or Cancel|
 
 > [!NOTE]
-> The value of the ButtonPressed variable will always be in English, regardless of the current locale settings in Power Automate for desktop.
+> The value of the ButtonPressed variable is always in English, regardless of the current locale settings in Power Automate for desktop.
 
 ### <a name="selectdatedialog_onerror"></a> Exceptions
 
@@ -170,7 +170,7 @@ Displays a dialog box with options that lets the user select from a list.
 |ButtonPressed|[Text value](../variable-data-types.md#text-value)|The name of the button pressed by the user (OK or Cancel)|
 
 > [!NOTE]
-> The value of the ButtonPressed variable will always be in English, regardless of the current locale settings in Power Automate for desktop.
+> The value of the ButtonPressed variable is always in English, regardless of the current locale settings in Power Automate for desktop.
 
 ### <a name="selectfromlistdialog_onerror"></a> Exceptions
 
@@ -203,7 +203,7 @@ Displays the select file dialog and prompts the user to select one or more files
 |ButtonPressed|[Text value](../variable-data-types.md#text-value)|The text of the button pressed. The user will automatically be given the choice of Open or Cancel|
 
 > [!NOTE]
-> The value of the ButtonPressed variable will always be in English, regardless of the current locale settings in Power Automate for desktop.
+> The value of the ButtonPressed variable is always in English, regardless of the current locale settings in Power Automate for desktop.
 
 ### <a name="selectfiledialog_onerror"></a> Exceptions
 
@@ -232,7 +232,7 @@ Displays the select folder dialog and prompts the user to select a folder.
 |ButtonPressed|[Text value](../variable-data-types.md#text-value)|The text of the button pressed. The user will automatically be given the choice of OK or Cancel|
 
 > [!NOTE]
-> The value of the ButtonPressed variable will always be in English, regardless of the current locale settings in Power Automate for desktop.
+> The value of the ButtonPressed variable is always in English, regardless of the current locale settings in Power Automate for desktop.
 
 ### <a name="selectfolder_onerror"></a> Exceptions
 
@@ -257,7 +257,7 @@ Input parameters are configured through the [custom form designer](../custom-for
 |ButtonPressed|[Text value](../variable-data-types.md#text-value)|The ID of the button pressed|
 
 > [!NOTE]
-> The value of the ButtonPressed variable will always be in English, regardless of the current locale settings in Power Automate for desktop.
+> The value of the ButtonPressed variable is always in English, regardless of the current locale settings in Power Automate for desktop.
 
 ### <a name="showcustomdialog_onerror"></a> Exceptions
 
