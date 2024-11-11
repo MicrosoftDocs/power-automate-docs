@@ -4,7 +4,7 @@ description: Set screen resolution on unattended mode
 author: fredgGitHub
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 09/05/2024
+ms.date: 11/11/2024
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
@@ -31,9 +31,9 @@ Set the screen resolution for unattended flows using the Windows registry. This 
 
 1. This task explains how to modify the Windows registry. We recommend that you first back up any registry keys you modify, such as the Power Automate Desktop key. More information: [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692#ID0EBD=Windows_11)
 1. Open the registry editor (Windows key + R, and type 'regedit') and expand the **HKEY_LOCAL_MACHINE** hive.
-1. Locate the **Screen** key in _SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global_. If it does not exist, create it: right-click the **Global** key, select **New** > **Key**, type **Screen** and select Enter.
-1. Locate the following values in _SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen_ and then set the corresponding values. If the value names don’t exist create them. To do this, right-click the **Screen** key, select **New** > **DWORD (32-bit) Value**, type *ScreenResolutionEnabled*, and select Enter. Double-click **ScreenResolutionEnabled**, enter *1*, select **Decimal**, and then select **OK**. Repeat these steps for each value in the table below.
- 
+1. Locate the **Screen** key in _SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global_. If it doesn't exist, create it: right-click the **Global** key, select **New** > **Key**, type **Screen**, and press Enter.
+1. Locate the following values in _SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen_ and set the corresponding values. If the value names don’t exist, create them. To create them, right-click the **Screen** key, select **New** > **DWORD (32-bit) Value**, type *ScreenResolutionEnabled*, and press Enter. Double-click **ScreenResolutionEnabled**, enter *1*, select **Decimal**, and then select **OK**. Repeat these steps for each value in the following table.
+
    When editing DWORD values, be sure to select the **Decimal** base (hexadecimal is selected by default), to avoid having your values interpreted as hexadecimal which results in incorrect resolution settings.
 
    ![Screenshot of the registry DWORD edit window with decimal base selected.](media/set-screen-resolution-unattended-mode/WidthRegDwordDecimalBase.png)
