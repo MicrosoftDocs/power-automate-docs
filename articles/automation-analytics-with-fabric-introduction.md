@@ -26,7 +26,7 @@ However, your organization likely has more advanced or custom monitoring, report
 
 [Microsoft Fabric](/fabric/get-started/microsoft-fabric-overview) is an end-to-end analytics and data platform designed for enterprises that require a unified solution. It encompasses data movement, processing, ingestion, transformation, real-time event routing, and report building. It offers a unified suite of analytical services including Data Engineering, Data Science, Real-Time Analytics, Data Warehousing with advanced data governance and security control.
 
-:::image type="content" source="media/advanced-automation-related-data-analytics-fabric/fabric-toolset.png" alt-text="Infographic showing different components of the Fabric data platform. It includes sections for Data Integration (Data Factory), Data Engineering (Synapse), Data Warehouse (Synapse), Data Science (Synapse), Real-Time Analytics (Synapse), Applied Observability (Data Activator), and Business Intelligence (Power BI)." lightbox="media/advanced-automation-related-data-analytics-fabric/fabric-toolset.png":::
+:::image type="content" source="media/advanced-automation-related-data-analytics-fabric/fabric-toolset.png" alt-text="Infographic showing different components of the Fabric data platform." lightbox="media/advanced-automation-related-data-analytics-fabric/fabric-toolset.png":::
 
 ## Dataverse direct link to Microsoft Fabric
 
