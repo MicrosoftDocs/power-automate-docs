@@ -4,9 +4,8 @@ description: Learn how to configure Dataverse shortcuts in Microsoft Fabric to b
 ms.topic: conceptual
 ms.date: 11/06/2024
 ms.author: appapaio
-ms.reviewer: dmartens
+ms.reviewer: 
 contributors:
-  - DanaMartens
 author: rpapostolis
 ms.collection: conceptual
 search.audienceType: 
