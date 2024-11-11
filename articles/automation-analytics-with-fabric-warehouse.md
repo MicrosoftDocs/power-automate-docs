@@ -239,9 +239,6 @@ Your warehouse workspace should look similar to this now.
 
 ## Create new semantic model
 
-Here's the outcome of the semantic model relationships we'll define next.
-:::image type="content" source="media/advanced-automation-related-data-analytics-fabric/automation-semantic-model-relationships.png" alt-text="Screenshot of a Fabric manage default semantic model table selection experience." lightbox="media/advanced-automation-related-data-analytics-fabric/automation-semantic-model-relationships.png":::
-
 1. Next, select **New semantic model** to create a new model we'll be using for reporting in Power BI later in this guide.
 2. Give your semantic model a name i.e. `Automation Telemetry Model`, select all 4 tables again from the list and then **Confirm**.
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/manage-default-semantic-model.png" alt-text="Screenshot of a Fabric manage default semantic model table selection experience." lightbox="media/advanced-automation-related-data-analytics-fabric/new-semantic-model.png":::
@@ -256,6 +253,9 @@ Here's the outcome of the semantic model relationships we'll define next.
     | CloudFlowRuns      | workflowid            | Flows        | workflowid       | CloudFlowRuns.workflowid --> Flows.workflowid |  
     | DesktopFlowRuns    | ReferenceDate         | Dates        | Date             | DesktopFlowRuns.ReferenceDate --> Dates.Date |  
     | DesktopFlowRuns    | regardingobjectid     | Flows        | workflowid       | DesktopFlowRuns.regardingobjectid --> Flows.workflowid |  
+
+Here's the outcome of the semantic model relationships we just defined.
+:::image type="content" source="media/advanced-automation-related-data-analytics-fabric/automation-semantic-model-relationships.png" alt-text="Screenshot of a Fabric manage default semantic model table selection experience." lightbox="media/advanced-automation-related-data-analytics-fabric/automation-semantic-model-relationships.png":::
 
 ## What's next
 
