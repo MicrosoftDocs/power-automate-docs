@@ -4,7 +4,7 @@ description: See how to run unattended desktop flows on your device.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/04/2024
+ms.date: 11/08/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -66,6 +66,23 @@ To allow reusing Windows session:
 
 > [!NOTE]
 > When you add machines to machine groups, they inherit the settings of the group. When you remove machines from machine groups, they keep the settings defined at the group level.
+
+## Admin consent for unattended runs
+
+To perform unattended runs, configure the following:
+
+- A Microsoft Entra ID certificate credential on a Microsoft Entra ID joined device
+- A Microsoft Entra ID username/password credential on a Microsoft Entra ID joined device requiring Network Level Authentication (NLA)
+
+### Step 1 - Enable Microsoft Entra authentication for RDP
+
+[Enable Microsoft Entra authentication for RDP](/azure/virtual-desktop/configure-single-sign-on#enable-microsoft-entra-authentication-for-rdp) only for the appid `a4a365df-50f1-4397-bc59-1a1564b8bb9c` (MSRDspId).
+
+### Step 2 - Hide the consent prompt dialog for a target device group
+
+[Hide the consent prompt dialog](/azure/virtual-desktop/configure-single-sign-on#hide-the-consent-prompt-dialog) only for the appid `a4a365df-50f1-4397-bc59-1a1564b8bb9c` (MSRDspId).
+
+The desktop flow fails with an `MSEntraRemoteDesktopAppConsentRequired` error if consent isn't granted.
 
 ## Known issues and limitations
 
