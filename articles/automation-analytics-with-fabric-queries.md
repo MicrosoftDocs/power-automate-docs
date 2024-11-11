@@ -22,6 +22,28 @@ search.audienceType:
 >
 > **Disclaimer:** The scenarios, query examples, and data used in this tutorial are fictional, may include errors, inefficiencies and are intended solely for demonstration purposes.
 
+## List of automation-related tables
+
+The following table includes automation-related tables that are frequently used for reporting and observability use cases.
+
+| Display name | Object name       |   Purpose                                             |
+|--------------------|------------------|-------------------------------------------------------|
+| [Process](/power-apps/developer/data-platform/reference/entities/workflow) | workflow         | Contains desktop flows and solution-based cloud flows (along with other workflow types). |
+| [Flow Session](/power-apps/developer/data-platform/reference/entities/flowsession) | flowsession | Contains desktop flow run-related data such as start, durations, status, machine, robot account, parent flow context etc.     |
+| [Flow Run](/power-apps/developer/data-platform/reference/entities/flowrun) | flowrun  | Contains cloud flow run-related data such start, end, duration, parent flow context etc. |
+| [Flow Log](/power-apps/developer/data-platform/reference/entities/flowlog) | flowrun  | Contains a wide variety of logs, such as custom logs, [desktop flow action logs V2](./desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version), [machine run queue logs](./desktop-flows/monitor-run-details#view-queue-events), unattended self-heal requests/responses, and work queue processing logs etc. The data is stored in a [Dataverse elastic table](/power-apps/maker/data-platform/create-edit-elastic-tables), and depending on the log type, can be configured with its own [time-to-live (TTL)](/power-apps/developer/data-platform/elastic-tables#expire-data-by-using-time-to-live) setting in the [Organization table](/power-apps/developer/data-platform/reference/entities/organization#writable-columnsattributes) ([FlowLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowLogsTtlInMinutes) and [DesktopFlowQueueLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes)), which defines when records should be automatically deleted from the table. |
+| [Flow Machine](/power-apps/developer/data-platform/reference/entities/flowmachine) | flowmachine  | Contains machine and hosted machine-related info. |
+| [Flow Machine Group](/power-apps/developer/data-platform/reference/entities/flowmachinegroup) | flowmachinegroup | Contains machine group and hosted machine group-related info.  |
+| [Work Queue](/power-apps/developer/data-platform/reference/entities/workqueue) | workqueue  | Represents an instance of a workflow execution.  |
+| [Work Queue Item](/power-apps/developer/data-platform/reference/entities/workqueueitem)  | workqueueitem  | Contains information about each run of a workflow.|
+| [User](/power-apps/developer/data-platform/reference/entities/systemuser)   | systemuser | Represents an instance of a workflow execution. |
+
+### Simplified table relationship diagram
+
+The image includes only relations to tables that are included above and automation-relevant.
+
+:::image type="content" source="media/advanced-automation-related-data-analytics-fabric/automation-related-table-relations.png" alt-text="Screenshot of an entity relationship drawing showing automation-related table relations." lightbox="media/advanced-automation-related-data-analytics-fabric/automation-related-table-relations.png":::
+
 Step-by-step instructions to create a sample SQL Query on the SQL Analytical Endpoint in Fabric for the `contoso_westus_accounts_payable` Lakehouse.
   
 1. Launch your web browser and navigate to the Microsoft Fabric portal (https://powerbi.com) and log in with your credentials.  
