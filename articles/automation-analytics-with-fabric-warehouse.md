@@ -247,7 +247,7 @@ Your warehouse workspace should look similar to this now.
 4. Now, define the relationships by dragging and dropping related fields from their child tables to their parent based as outlined below.
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/semantic-model-erd.png" alt-text="Screenshot of a Fabric manage default semantic model table selection experience." lightbox="media/advanced-automation-related-data-analytics-fabric/semantic-model-erd.png":::
 
-    | Source table            | Source column         | Target table | Target column    | Details                   |  
+    | Source table       | Source column         | Target table | Target column    | Details                   |  
     |--------------------|-----------------------|--------------|------------------|--------------------------------------------|  
     | CloudFlowRuns      | ReferenceDate         | Dates        | Date             | CloudFlowRuns.ReferenceDate --> Dates.Date |  
     | CloudFlowRuns      | workflowid            | Flows        | workflowid       | CloudFlowRuns.workflowid --> Flows.workflowid |  

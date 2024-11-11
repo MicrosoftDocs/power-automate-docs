@@ -1,5 +1,5 @@
 ---
-title: Building custom Power BI reports for data insights in Fabric
+title: Building custom reports for data insights in Fabric
 description: Learn how to configure Dataverse shortcuts in Microsoft Fabric to build advanced automation-related queries, reports, and alerts at scale. 
 ms.topic: conceptual
 ms.date: 11/06/2024
@@ -16,7 +16,7 @@ search.audienceType:
   - enduser
 ---
 
-# Building custom Power BI reports for data insights in Fabric
+# Building automation-centric reports in Fabric
 
 ## What's next
 

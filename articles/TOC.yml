@@ -1125,11 +1125,11 @@
     items:
     - name: Overview
       href: automation-analytics-with-fabric-introduction.md
-    - name: Crafting SQL analytics queries with Fabric
+    - name: Crafting automation-centric ad-hoc queries
       href: automation-analytics-with-fabric-queries.md
-    - name: Designing an automation-centric Fabric warehouse
+    - name: Designing automation-centric warehouse
       href: automation-analytics-with-fabric-warehouse.md
-    - name: Building custom Power BI reports in Fabric
+    - name: Building automation-centric reports
       href: automation-analytics-with-fabric-reports.md
     - name: Setting up real-time alerts with Reflex
       href: automation-analytics-with-fabric-alerts.md      
