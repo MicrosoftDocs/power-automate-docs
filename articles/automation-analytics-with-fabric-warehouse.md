@@ -100,7 +100,6 @@ There are many scenarios where you would want to store telemetry data for long-t
       [Web Endpoints and URL Shortcuts] [bigint]  NULL,
       [Advanced API Requests] [bigint]  NULL,
       [SQL Injection Risk] [bigint]  NULL,
-      [SAP Fiori Access] [bigint]  NULL,
       [Has .Net] [bigint]  NULL,
       [Has Python] [bigint]  NULL,
       [Has JavaScript] [bigint]  NULL,
@@ -219,7 +218,6 @@ There are many scenarios where you would want to store telemetry data for long-t
         [PartitionId] [varchar](8000)  NULL,
         [TenantId] [varchar](8000)  NULL,
         [EnvironmentId] [varchar](8000)  NULL,
-        [DesktopFlowRunDetailsUrl] [varchar](8000)  NULL,
         [EnvironmentName] [varchar](8000)  NULL,
         [Region] [varchar](8000)  NULL,
         [ReferenceDate] [date]  NULL
