@@ -21,7 +21,7 @@ search.audienceType:
 ## What's next
 
 > [!div class="nextstepaction"]
-> [Designing an automation-centric Fabric warehouse](automation-analytics-with-fabric-warehouse.md)
+> [Setting up real-time alerts with Reflex for proactive monitoring](automation-analytics-with-fabric-alerts.md)
 
 ## Learn more
 

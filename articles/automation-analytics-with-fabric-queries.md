@@ -537,7 +537,7 @@ This query returns the top 10 failing actions by number of errors over the past 
 ## What's next
 
 > [!div class="nextstepaction"]
-> [Building custom Power BI reports for data insights in Fabric](automation-analytics-with-fabric-reports.md)
+> [Designing an automation-centric Fabric warehouse](automation-analytics-with-fabric-warehouse.md)
 
 ## Learn more
 

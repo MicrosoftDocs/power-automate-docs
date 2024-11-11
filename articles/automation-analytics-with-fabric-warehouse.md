@@ -254,13 +254,13 @@ Your warehouse workspace should look similar to this now.
     | DesktopFlowRuns    | ReferenceDate         | Dates        | Date             | DesktopFlowRuns.ReferenceDate --> Dates.Date |  
     | DesktopFlowRuns    | regardingobjectid     | Flows        | workflowid       | DesktopFlowRuns.regardingobjectid --> Flows.workflowid |  
 
-Here's the outcome of the semantic model relationships we just defined.
-:::image type="content" source="media/advanced-automation-related-data-analytics-fabric/automation-semantic-model-relationships.png" alt-text="Screenshot of a Fabric manage default semantic model table selection experience." lightbox="media/advanced-automation-related-data-analytics-fabric/automation-semantic-model-relationships.png":::
+    Here's the outcome of the semantic model relationships we just defined.
+    :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/automation-semantic-model-relationships.png" alt-text="Screenshot of a Fabric manage default semantic model table selection experience." lightbox="media/advanced-automation-related-data-analytics-fabric/automation-semantic-model-relationships.png":::
 
 ## What's next
 
 > [!div class="nextstepaction"]
-> [Setting up real-time alerts with Reflex for proactive monitoring](automation-analytics-with-fabric-alerts.md)
+> [Building custom Power BI reports for data insights in Fabric](automation-analytics-with-fabric-reports.md)
 
 ## Learn more
 
