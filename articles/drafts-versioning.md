@@ -83,6 +83,10 @@ When you view a flow's version history list, you can select a previous version f
 
 Dataverse is the storage used for drafts that aren't published. It's also the storage used for version history. Solution cloud flows are defined in Dataverse, so they can have drafts and a version history.
 
+### Why is Drafts and Versioning only available in the new designer?
+
+Drafts and Versioning capabilities are available in the [new cloud flows designer](/power-automate/flows-designer#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer). Rather than adding Drafts and Versioning support into the classic designer, we are investing in additional Drafts and Versioning capabilities for the [new cloud flows designer](/power-automate/flows-designer#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+
 ### How do I change a non-solution cloud flow into a solution cloud flow?
 
 When you [add your non-solution cloud flow into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution), it adds the definition into Dataverse so it can have versions.
