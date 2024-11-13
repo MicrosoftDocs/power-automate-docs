@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 11/14/2024
+ms.date: 11/15/2024
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -100,7 +100,7 @@ You can leverage this command before and after executing the CMK Enterprise poli
 
 Learn more in [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key).
 
-## Get run history from th flow Details page
+## Get run history from the flow Details page
 
 The run history list on the flow **Details** page displays new runs only post-CMK application.
 
