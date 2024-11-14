@@ -19,11 +19,11 @@ search.audienceType:
 
 # Support for customer-managed keys
 
-All customer data stored in Power Platform is encrypted at rest using Microsoft-managed keys (MMKs) by default. With customer-managed keys (CMKs), customers can bring their own encryption keys to protect Power Automate data. This ability allows customers to have an extra protective layer to manage their Power Platform assets. With this feature, you can rotate or swap encryption keys on demand. It also prevents Microsoft’s access to your customer data, if you choose to revoke key access to Microsoft services at any time. 
+All customer data stored in Power Platform is encrypted at rest using Microsoft-managed keys (MMKs) by default. With customer-managed keys (CMKs), customers can bring their own encryption keys to protect Power Automate data. This ability allows customers to have an extra protective layer to manage their Power Platform assets. With this feature, you can rotate or swap encryption keys on demand. It also prevents Microsoft’s access to your customer data, if you choose to revoke key access to Microsoft services at any time.
 
 With CMKs, your workflows and all associated at-rest data are stored and executed on a dedicated infrastructure partitioned by the environment. This includes your workflow definitions, both cloud and desktop flows, and workflow execution history with detailed inputs and outputs.  
 
-## Pre-requisite considerations before protecting your flows with CMK
+## Prerequisite considerations before protecting your flows with CMK
 
 Consider the following scenarios when applying the CMK enterprise policy to your environment.
 
@@ -61,7 +61,7 @@ If certain flows continue to be protected by MMKs post CMK application, warnings
 
 You can leverage [PowerShell commands](#powershell-commands) to identify such flows and protect them with CMKs.
 
-## Protect flows that continue to be protected by Microsoft Managed Keys
+## Protect flows that continue to be protected by MMK
 
 The following categories of flows continue to be protected by MMK after applying the Enterprise policy. Follow the instructions to protect the flows by CMK.
 
@@ -84,9 +84,9 @@ You can use the following command to identify flows that continue to be protecte
 
 |DisplayName  |FlowName  |EnvironmentName  |
 |---------|---------|---------|
-|Get Invoice HTTP     | af12-4629-8e99-bba6c076ffed   | 416f77d5-fb58-eb1e-a32    |
-|Pay Invoice from App     | bf15-4629-8e99-bba6c076ffed  | 416f77d5-fb58-eb1e-a32    |
-|Reconcile Account   | ct11-4629-8e99-bba6c076ffed    | 416f77d5-fb58-eb1e-a32    |
+|Get Invoice HTTP     | flow-1   | environment-1    |
+|Pay Invoice from App     | flow-2  | environment-2    |
+|Reconcile Account   | flow-3    | environment-3    |
 
 ### Retrieve flows not protected by CMK in a given environment
 
@@ -96,7 +96,7 @@ You can leverage this command before and after executing the CMK Enterprise poli
 
 |DisplayName  |FlowName  |EnvironmentName  |
 |---------|---------|---------|
-|Get Invoice HTTP	| af12-4629-8e99-bba6c076ffed | 416f77d5-fb58-eb1e-a32 |
+|Get Invoice HTTP	| flow-4 | environment-4 |
 
 Learn more in [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key).
 
