@@ -19,23 +19,39 @@ search.audienceType:
 
 # Support for customer-managed keys
 
-All customer data stored in Power Platform is encrypted at rest using Microsoft-managed keys (MMKs) by default. With customer-managed keys (CMKs), customers can bring their own encryption keys to protect Power Automate data. This ability allows customers to have an extra protective layer to manage their Power Platform assets. With this feature, you can rotate or swap encryption keys on demand. It also prevents Microsoft’s access to your customer data, if you choose to revoke key access to Microsoft services at any time.
+All customer data stored in Power Platform is encrypted at rest using Microsoft-managed keys (MMKs) by default. With customer-managed keys (CMKs), customers can bring their own encryption keys to protect Power Automate data. This ability allows customers to have an extra protective layer to manage their Power Platform assets. With this feature, you can rotate or swap encryption keys on demand. It also prevents Microsoft’s access to your customer data, if you choose to revoke key access to Microsoft services at any time. 
 
-## Impact on scenarios with pre-CMK policy application
+With CMKs, your workflows and all associated at-rest data are stored and executed on a dedicated infrastructure partitioned by the environment. This includes your workflow definitions, both cloud and desktop flows, and workflow execution history with detailed inputs and outputs.  
+
+## Pre-requisite considerations before protecting your flows with CMK
 
 Consider the following scenarios when applying the CMK enterprise policy to your environment.
 
 - When the CMK enterprise policy is applied, cloud flows and their data with CMK are automatically protected. Some flows might continue to be protected by MMKs. Admins can identify these flows using [PowerShell commands](#powershell-commands).  
 - Creation and updates of flows are blocked during migration. Run history isn't carried forward. You can request it through a [support ticket](#get-run-history-by-support-ticket) up to 30 days after migration.
 - Currently, CMKs aren't leveraged to encrypt non-OAuth connections. These non-Microsoft Entra based connections continue to be encrypted at rest using MMKs.
-- To enable incoming and outgoing network traffic from CMK protected infrastructure, [update your firewall configuration](#update-firewall-configuration).  
+- To enable incoming and outgoing network traffic from CMK protected infrastructure, [update your firewall configuration](#update-firewall-configuration) to ensure your flows continue to work.  
 - If you plan to protect more than 25 environments in your tenant using CMK, create a support ticket. The default limit of CMK enabled Power Automate environments per tenant is 25. This number can be extended by engaging the Support team.
 
 Applying an encryption key is a gesture performed by Power Platform admins and is invisible to users. Users can create, save, and execute Power Automate workflows exactly the same way as if MMKs encrypted the data.
 
 The CMK feature enables you to leverage the single enterprise policy created on the environment to secure Power Automate workflows. Learn more about CMK and the step-by-step instructions to enable CMKs in [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key).
 
-With CMKs, your workflows and all associated at-rest data are stored and executed on a dedicated infrastructure partitioned by the environment. This includes your workflow definitions, both cloud and desktop flows, and workflow execution history with detailed inputs and outputs.  
+### Power Automate hosted robotic process automation (RPA) (preview)
+
+The hosted machine group capability of the [Introduction to the Power Automate hosted RPA](desktop-flows/hosted-rpa-overview.md) solution supports CMKs. After applying CMKs, you must reprovision existing hosted machine groups by selecting **Reprovision group** on the machine group details page. Once reprovisioned, the VM disks for the hosted machine group bots are encrypted with the CMK.
+
+> [!NOTE]
+> CMK for the hosted machine capability isn't currently available.
+
+## Update firewall configuration
+
+Power Automate allows you to build flows that can make HTTP calls. After you apply CMK, outbound HTTP actions from Power Automate originate from a different IP range than before. If the firewall was previously configured to allow flow HTTP actions, it's likely that the configuration needs to be updated to allow for the new IP range.
+
+- If you're using Azure Firewall, apply the service tag `PowerPlatformPlex` directly to the configuration for the correct IP range to be configured automatically. Learn more in [Virtual network service tags](/azure/virtual-network/service-tags-overview).
+- If you're using a different firewall, look up and enable inbound traffic from the IP range for `PowerPlatformPlex` referenced in the download of [Azure IP Ranges and Service Tags - Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519).
+
+If this isn't in place, you might get the error, *Http request failed as there is an error: 'No connection could be made because the target machine actively refused it.'*
 
 ### Power Automate CMK application warning messages
 
@@ -44,13 +60,6 @@ If certain flows continue to be protected by MMKs post CMK application, warnings
 :::image type="content" source="media/customer-managed-keys/warning.png" alt-text="Screenshot of the warning message in Power Platform admin center.":::
 
 You can leverage [PowerShell commands](#powershell-commands) to identify such flows and protect them with CMKs.
-
-### Power Automate hosted robotic process automation (RPA) (preview)
-
-The hosted machine group capability of the [Introduction to the Power Automate hosted RPA](desktop-flows/hosted-rpa-overview.md) solution supports CMKs. After applying CMKs, you must reprovision existing hosted machine groups by selecting **Reprovision group** on the machine group details page. Once reprovisioned, the VM disks for the hosted machine group bots are encrypted with the CMK.
-
-> [!NOTE]
-> CMK for the hosted machine capability isn't currently available.
 
 ## Protect flows that continue to be protected by Microsoft Managed Keys
 
@@ -61,15 +70,6 @@ The following categories of flows continue to be protected by MMK after applying
 |Power App v1 trigger flows that aren't in a solution     | **Option 1 (Recommended)**</br>Update the flow to use V2 trigger *before* applying CMK.</br></br>**Option 2**</br>*Post CMK application*, use **Save as** to create a copy of the flow. Update calling Power Apps to use the new copy of the flow.   |
 |HTTP trigger flows and Teams trigger flows     | *Post enterprise policy application*, use **Save as** to create a copy of the flow. Update calling system to use the URL of the new flow.</br></br>This category of flows isn't automatically protected, as a new flow URL is created in the CMK protected infrastructure. Customers might be leveraging the URL in their invoking systems.   |
 |Parents of flows that can't be automatically migrated     | If a flow can't be migrated, then dependent flows are also not migrated to ensure there’s no business disruption. |
-
-## Update firewall configuration
-
-Power Automate allows you to build flows that can make HTTP calls. After you apply CMK, outbound HTTP actions from Power Automate originate from a different IP range than before. If the firewall was previously configured to allow flow HTTP actions, it's likely that the configuration needs to be updated to allow for the new IP range.
-
-- If you're using Azure Firewall, apply the service tag `PowerPlatformPlex` directly to the configuration for the correct IP range to be configured automatically. Learn more in [Virtual network service tags](/azure/virtual-network/service-tags-overview).
-- If you're using a different firewall, look up and enable inbound traffic from the IP range for `PowerPlatformPlex` referenced in the download of [Azure IP Ranges and Service Tags - Public Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=56519).
-
-If this isn't in place, you might get the error, *Http request failed as there is an error: 'No connection could be made because the target machine actively refused it.'*
 
 ## PowerShell commands
 
