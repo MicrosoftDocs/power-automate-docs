@@ -133,11 +133,10 @@ The following are current limitations of the automation center and its underlyin
   - `flowevent`: Recommendations and notifications
   - `workqueue`: Work queues
   - `workqueueitem`: Work queue items
-- Only 1st-level child cloud and desktop flow runs are shown under **Runs (Preview)**.
+- Child cloud and desktop flow runs are shown under **Runs (Preview)**.
 - Top-level desktop flow runs aren't supported yet (for local attended or API-based scenarios)
 - Co-owned or shared flows aren't supported yet (users don't see runs of flows that are shared with them).
-- Child flow run-specific filters or sorting aren't supported yet.
-- Users with broader access to run data (such as admins or members of the CoE team) might see *Private flow* as flow names. This name might appear if the corresponding cloud flow isn't explicitly shared with the user or the flow was deleted in the meantime.
+- Users with broader access to run data (such as admins or members of the CoE team) might see *Unknown flow* as flow names. This name might appear if the corresponding cloud flow isn't explicitly shared with the user or the flow was deleted in the meantime.
 - Users with broader access to run data might encounter increased latency during data load because of high cloud flow run volumes. Performance can be improved by selecting more filters and reducing date ranges.
 - If there's a visual showing "*Too many results*," try to adjust your filter to limit the amount of data that is being returned.
 - If you see Dataverse or cloud flow run-specific notifications, check the underlying [cloud flow run history documentation](dataverse/cloud-flow-run-metadata.md) to learn more.
