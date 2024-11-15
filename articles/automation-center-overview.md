@@ -24,13 +24,13 @@ The automation center provides comprehensive monitoring and troubleshooting expe
 
 ## Data and visualization strategy
 
-The information displayed on the [**Overview**](#overview-tab) and [**Runs (Preview)**](#runs-tab) pages is based on cloud and desktop flow run data that is stored in Microsoft Dataverse. These pages are designed to provide you with a top-level view of your flow run activities, including child cloud or desktop flow runs associated with a particular top-level flow. This approach enables you to monitor the entire automation from start to end. It allows you to determine whether the overall automation succeeded or failed, providing data on the total of the runs, among many other metrics.
+The information displayed on the [**Overview**](#overview-tab) and [**Runs (Preview)**](#runs-tab-preview) pages is based on cloud and desktop flow run data that is stored in Microsoft Dataverse. These pages are designed to provide you with a top-level view of your flow run activities, including child cloud or desktop flow runs associated with a particular top-level flow. This approach enables you to monitor the entire automation from start to end. It allows you to determine whether the overall automation succeeded or failed, providing data on the total of the runs, among many other metrics.
 
 > [!NOTE]
 >
 > - Some filters might not be available for some tabs because of the nature of the presented data.
 > - Data under the **Work queues** tab is a premium feature, which require a Power Automate Premium license.
-> - Recommendations are a premium feature, which require a [Managed Environment](https://learn.microsoft.com/power-platform/admin/managed-environment-enable).
+> - Recommendations are a premium feature, which require a [Managed Environment](/power-platform/admin/managed-environment-enable).
 > - When you navigate between tabs, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
 > - Desktop flow related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
 > - Cloud flow run history shown on the overview and runs tab (preview) might take up to an hour to be available in Dataverse and the automation center.

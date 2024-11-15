@@ -38,7 +38,7 @@ Key features of recommendations:
 
 To see and use recommendations in automation center, the following are required:
 
-- From December 2024 (general availability), a Dataverse environment with [managed environment enabled](https://learn.microsoft.com/power-platform/admin/managed-environment-enable).
+- From December 2024 (general availability), a Dataverse environment with [managed environment](/power-platform/admin/managed-environment-enable) enabled.
 - Premium Power Automate license
 - Environment maker role (or other roles that include access to recommendation data)
 
