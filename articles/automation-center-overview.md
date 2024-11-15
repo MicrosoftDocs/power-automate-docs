@@ -2,8 +2,8 @@
 title: Explore Power Automate's automation center 
 description: Explore the comprehensive monitoring and troubleshooting experiences offered by Power Automate's Automation Center, a hub for managing automation activity.
 ms.topic: conceptual
-ms.date: 08/01/2024
-ms.author: appapaio
+ms.date: 11/15/2024
+ms.author: appapaio, QuentinSele
 ms.reviewer: dmartens
 contributors:
   - DanaMartens
@@ -67,16 +67,17 @@ This tab provides an end-to-end automation health view within the environment an
 | Visual | Description |
 | --- | --- |
 | **Recommendations** | List of automation health, compliance, best practice insights, and actionable recommendations. |
+
+### Activity (Preview)
+
+| Visual | Description |
+| --- | --- |
 | **Top-level flows** | Number of top-level flows that had one or more runs based on selected filters. Gives an overall automation health indication and helps identify which top-level runs are failing the most. |
-| **Average runs per day**| Average number of flow runs per day based on selected filters. |
-| **Average run duration**| Average flow run duration based on selected filters. |
+| **Total runs **| Number of flow runs based on selected filters. |
 | **Flow runs error rate** | Percentage of errors that occurred during flow execution based on selected filters. |
-| **Flow runs by status** | Overview of top-level runs status, can be used as to correlate with other factors such as triggering type, run modes, or machines. |
 | **Flow runs error trends** | Tracks usage and reliability trends of top-level runs over time. |
-| **Flow runs by trigger type** | Shows top-level flow runs by trigger type. |
 | **Top flow runs** | Quickly identify critical and regularly failing automations, in order to improve health, resiliency, and exception handling. |
-| **Top error codes** | Identifies most common errors during flow runs. |
-| **Top cloud flows with failed desktop flow runs**| Shows which cloud flows are causing the most desktop flow failures and might need to be modified to reduce desktop flow failures. |
+| **Flow run failures**| Shows latest flows that failed and might need to be modified to reduce desktop flow failures. |
 
 ### Recommendations
 
