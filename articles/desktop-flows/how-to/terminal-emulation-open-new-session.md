@@ -39,7 +39,7 @@ This option requires you to add all the connection parameters in the action conf
 # HLLAPI
 HLLAPI is a terminal emulation communication protocol supported by nearly all terminal emulation software. PAD provides a mechanism to locate the terminal's HLLAPI implementation for use in flow execution. Since HLLAPI is widely implemented, PAD can theoretically integrate with virtually any terminal emulation software available on the market.
 
-### Configuration
+## Configuration
 The HLLAPI DLL path refers to the location of the DLL file for the terminal emulation software. This DLL contains the HLLAPI implementation provided by each terminal emulation vendor and is typically located within the installation directory of the product. The most common DLL files are HLLAPI32.dll or ehlapi32.dll (Whlapi32.dll is not supported).
 
 ![Screenshot of the configuration in the action.](media/terminal-emulation-open-new-session/Terminal_how_5.png)
@@ -51,4 +51,8 @@ The session name is a letter which corresponds to the currently active session a
 Both the short and long names must match the letter used as the session name in the action configuration.
 
 > [!NOTE]
+> Launching terminal emulation software using the HLLAPI provider does not automatically start the terminal emulation software. The software must be manually launched beforehand, for instance, by using an action like Run Application.
+
+## Usage example
 Since the terminal must be launched with specific long and short names and connection preferences, it is common practice to first manually launch the terminal with any desired connection preferences, save the configuration in an .rd3x file, and then use that file with a Run Application action to launch the application.
+![Screenshot of the above.](media/terminal-emulation-open-new-session/Terminal_how_7.png)
