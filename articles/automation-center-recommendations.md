@@ -17,8 +17,6 @@ search.audienceType:
 
 # Automation center recommendations
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
-
 The automation center offers targeted recommendations aimed at enhancing the reliability, efficiency, and general health of your automation. You can find actionable insights such as:
 
 - real-time recommendation of automations starting to fail

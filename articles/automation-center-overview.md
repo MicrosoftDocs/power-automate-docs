@@ -9,6 +9,7 @@ contributors:
   - DanaMartens
 author: rpapostolis
 ms.collection: conceptual
+ms.custom: ignite-2024
 search.audienceType: 
   - admin
   - coe
