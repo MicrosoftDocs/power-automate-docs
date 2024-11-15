@@ -53,6 +53,9 @@ After opening a terminal session and completing all the wanted operations, termi
 
 Open a new terminal session.
 
+> [!NOTE]
+> To find more information on configuring the action, please refer to the following resource: [How to configure the Open terminal session action](articles/desktop-flows/how-to/terminal-emulation-open-new-session.md)
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
