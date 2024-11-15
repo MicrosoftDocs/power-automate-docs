@@ -41,9 +41,11 @@ HLLAPI is a terminal emulation communication protocol supported by nearly all te
 
 ### Configuration
 The HLLAPI DLL path refers to the location of the DLL file for the terminal emulation software. This DLL contains the HLLAPI implementation provided by each terminal emulation vendor and is typically located within the installation directory of the product. The most common DLL files are HLLAPI32.dll or ehlapi32.dll (Whlapi32.dll is not supported).
+
 ![Screenshot of the configuration in the action.](media/terminal-emulation-open-new-session/Terminal_how_5.png)
 
 The session name is a letter which corresponds to the currently active session and can be configured by the terminal emulation software's option or preferences.
+
 ![Screenshot of the configuration of the session name.](media/terminal-emulation-open-new-session/Terminal_how_6.png)
 
 Both the short and long names must match the letter used as the session name in the action configuration.
