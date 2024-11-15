@@ -1,9 +1,9 @@
 ---
-title: Boost automation health with Automation center recommendations (preview)
+title: Boost automation health with Automation center recommendations 
 description: Enhance your automation's reliability and efficiency with the Automation Center's targeted recommendations, offering actionable insights and best practice suggestions.
 ms.topic: conceptual
 ms.date: 05/20/2024
-ms.author: appapaio
+ms.author: appapaio, QuentinSele
 ms.reviewer: dmartens
 contributors:
   - DanaMartens
@@ -15,7 +15,7 @@ search.audienceType:
   - maker
 ---
 
-# Automation center recommendations (preview)
+# Automation center recommendations 
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -26,8 +26,6 @@ The automation center offers targeted recommendations aimed at enhancing the rel
 - identification of unused machines or machine groups in the environment
 - many more
 
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-
 ## Key capabilities
 
 Key features of recommendations:
@@ -35,12 +33,12 @@ Key features of recommendations:
 - Get proactive and reactive recommendations, grounded on best practices.
 - Enhance the overall health, compliance, and performance of automation across your environment.
 - Take corrective actions directly from the list of affected automation artifacts.
-- Hiding recommendations for an hour, a day, a week or even indefinitely.
 
 ## Prerequisites
 
 To see and use recommendations in automation center, the following are required:
 
+- A Dataverse environment with [managed environment enabled](https://learn.microsoft.com/power-platform/admin/managed-environment-enable).
 - Premium Power Automate license
 - Environment maker role (or other roles that include access to recommendation data)
 
