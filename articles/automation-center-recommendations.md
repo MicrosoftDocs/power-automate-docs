@@ -2,8 +2,8 @@
 title: Boost automation health with Automation center recommendations 
 description: Enhance your automation's reliability and efficiency with the Automation Center's targeted recommendations, offering actionable insights and best practice suggestions.
 ms.topic: conceptual
-ms.date: 05/20/2024
-ms.author: appapaio, QuentinSele
+ms.date: 11/18/2024
+ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
   - DanaMartens
@@ -15,7 +15,7 @@ search.audienceType:
   - maker
 ---
 
-# Automation center recommendations 
+# Automation center recommendations
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -38,7 +38,7 @@ Key features of recommendations:
 
 To see and use recommendations in automation center, the following are required:
 
-- From December 2024 (General availability), a Dataverse environment with [managed environment enabled](https://learn.microsoft.com/power-platform/admin/managed-environment-enable).
+- From December 2024 (general availability), a Dataverse environment with [managed environment enabled](https://learn.microsoft.com/power-platform/admin/managed-environment-enable).
 - Premium Power Automate license
 - Environment maker role (or other roles that include access to recommendation data)
 
@@ -73,7 +73,6 @@ The recommendation details panel shown in the following image provides a more de
 - **Call to action or details**: Provides buttons for immediate actions or for further details.
 - **Affected artifact details**: A table or chart listing affected recommendation artifacts such as flows, work queues, machines etc.
 
-
 ## All recommendations panel
 
 The all recommendations panel shown in the following image is used for viewing latest and older recommendation with filtering capabilities. The recommendations are categorized by type (Error, Warning, Information) and can be filtered by impact (High, Medium, Low), status (Hidden), and date range. This panel is divided into two main sections: one for displaying the most recent recommendations and another for showing older recommendations along with their timestamps. The most recent recommendations are initially displayed under 'Latest', but are replaced with refreshed content based on the recommendation interval.
@@ -99,7 +98,6 @@ The **type** indicates the severity or urgency of the recommendations.
 | Information | Provides best-practice recommendations you might want to consider. |  
 | Warning | Indicates a potential issue that might lead to a problem later if not addressed. |  
 | Error | Indicates a problem that needs to be resolved. |  
-  
 
 ### Refresh frequency
 
@@ -111,7 +109,7 @@ The **refresh frequency** provides information on how often the recommendation d
 | HOURLY | A new instance of the recommendation is regenerated every hour. |  
 | REAL TIME | The recommendation is an actual live-query to the underlying automation data. |  
 
-## List of recommendations 
+## List of recommendations
 
 The following list of recommendations aims to provide proactive guidance and actionable insights for optimizing and troubleshooting various aspects of your automations. From addressing work queue SLA violations and capacity overages to improving system resilience and efficiency, each recommendation offers a detailed proposed solution or more details.
 
@@ -132,7 +130,7 @@ The following list of recommendations aims to provide proactive guidance and act
 | Title | Work queue SLA violation |  
 | Card details | {*number of work queues*} work queues are out of compliance with their service level agreement (SLA). |  
 | Recommendation details | One or more work queue items are queued but expired. This usually indicates an SLA violation. |  
-| Type| Error |    
+| Type| Error |
 | Refresh frequency | Hourly |  
 | Category | Orchestration |  
 | Recommended actions | - Identify the root cause. Was it due to a technical issue, a lack of resources, or some other factor? </br>- First identify the cause. Then notify all relevant stakeholders of the miss and the steps being taken to address it. </br>- Determine which work is impacted by the SLA miss and prioritize it accordingly. </br>- If necessary, allocate extra resources to address the SLA miss (adding more machine capacity, licenses, or other solutions to improve performance). </br>- Monitor progress to ensure the SLA is being met and that work is completed within the agreed-upon time frame. |  
@@ -141,7 +139,6 @@ The following list of recommendations aims to provide proactive guidance and act
 
 > [!NOTE]
 > Initially, this recommendation identifies work queue items that expire within **one hour** as potentially violating the work queue's SLA. However, we will change this logic in a future update to include items that expire within **one day** instead, and exclude items in a `Processing` or `Processed` state. 
-   
 
 | Category or object | Details |  
 |---|---|  
@@ -190,7 +187,7 @@ The following list of recommendations aims to provide proactive guidance and act
 | Recommended action(s) | - Your organization applied DLP policies that resulted in suspended flows that you built or co-own. Review the following action list to get your flows back on track: </br>- Identify the specific desktop flows that have been suspended and review them to determine why they don't adhere to the DLP policy. </br>- Analyze the data being processed by the flows and identify any potential risks or vulnerabilities. </br>- Modify the desktop flows to ensure that they adhere to the DLP policy. This may involve implementing additional security measures or changing the way data is processed or stored. </br>- Test the modified desktop flows to ensure that they're functioning correctly and that they adhere to the DLP policy. |  
 
 ### Fix failing automations
- 
+
 | Category or object | Details |  
 |---|---|  
 | Title | Fix failing automations |  

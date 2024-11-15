@@ -2,8 +2,8 @@
 title: Explore Power Automate's automation center 
 description: Explore the comprehensive monitoring and troubleshooting experiences offered by Power Automate's Automation Center, a hub for managing automation activity.
 ms.topic: conceptual
-ms.date: 11/15/2024
-ms.author: appapaio, QuentinSele
+ms.date: 11/18/2024
+ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
   - DanaMartens
@@ -16,12 +16,11 @@ search.audienceType:
   - enduser
 ---
 
-# Automation center 
+# Automation center
 
 The automation center provides comprehensive monitoring and troubleshooting experiences for your automation processes across Power Automate, catering to various personas involved in automation. Whether you're a maker, an operator, a Center of Excellence (CoE) team member, or a business analyst, the automation center serves as a centralized hub to monitor and manage automation activity within your environment. With its user friendly interface and dashboard, the automation center enables you to gain a holistic view of all automation related data, including recommendations, execution logs, performance metrics, and an integrated copilot.
 
 :::image type="content" source="media/automation-center/automation-center-overview.png" alt-text="Screenshot of a copilot experience as part of desktop flow activity page." lightbox="media/automation-center/automation-center-overview.png":::
-
 
 ## Data and visualization strategy
 
@@ -67,12 +66,12 @@ This tab provides an end-to-end automation health view within the environment an
 | --- | --- |
 | **Recommendations** | List of automation health, compliance, best practice insights, and actionable recommendations. |
 
-### Activity (Preview)
+### Activity (preview)
 
 | Visual | Description |
 | --- | --- |
 | **Top-level flows** | Number of top-level flows that had one or more runs based on selected filters. Gives an overall automation health indication and helps identify which top-level runs are failing the most. |
-| **Total runs **| Number of flow runs based on selected filters. |
+| **Total runs**| Number of flow runs based on selected filters. |
 | **Flow runs error rate** | Percentage of errors that occurred during flow execution based on selected filters. |
 | **Flow runs error trends** | Tracks usage and reliability trends of top-level runs over time. |
 | **Top flow runs** | Quickly identify critical and regularly failing automations, in order to improve health, resiliency, and exception handling. |
@@ -82,7 +81,7 @@ This tab provides an end-to-end automation health view within the environment an
 
 The recommendations section offers both proactive and reactive insights, along with suggestions concerning various elements of your automation landscape. Suggestions might include addressing sudden automation failures, work queues at risk of not meeting their service level agreement (SLA) targets, and unused machines or machine groups in the environment. These recommendations can help you identify areas for improvement and take appropriate action based on their effect. For more information, see [automation center recommendations](automation-center-recommendations.md).
 
-## Copilot (Preview)
+## Copilot (preview)
 
 Copilot is designed to assist with the analysis of automation activity, work queue performance, and to provide answers to common questions about Power Automate capabilities (generative answers). For example, users can ask about the number of flows that ran yesterday, which queue items are put on hold, or how to analyze activity with Copilot. In response, Copilot generates outputs that provide insights and answers to the questions asked. For more information, see [Use Copilot to analyze automation activity and ask product questions](automation-center-copilot.md).
 
@@ -93,7 +92,7 @@ Copilot is designed to assist with the analysis of automation activity, work que
 > - During initial preview, you must have an environment in the United States region to use this feature. If you don’t have access to an environment that's based in the United States, you can ask your administrator to [create a new environment in Power Platform admin center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
 > - Read the [responsible AI FAQs for Copilot in automation center (preview)](faqs-copilot-automation-center.md) to learn more about this new copilot experience.
 
-## Runs tab (Preview)
+## Runs tab (preview)
 
 This tab presents a consolidated view of cloud and desktop flow run data displayed in a hierarchical list view. The data is organized based on top-level flows. If a cloud flow has one or more child flows (supporting both cloud and desktop children). This view is useful in scenarios where individual flow session runs succeeded, but other dependent runs failed, ultimately resulting in the top-level flow's failure. By displaying these runs in connection to their parent, we're enhancing automation monitoring and efficient root cause analysis of exceptions.
 
@@ -124,7 +123,7 @@ This tab provides metrics to monitor the health status of work queue items, incl
 
 The following are current limitations of the automation center and its underlying data structure.
 
-- Cloud flow-based filtering  only lists cloud flows that live in a solution in the current environment. 
+- Cloud flow-based filtering only lists cloud flows that exist within a solution in the current environment.
 - Only runs for solution-based cloud flows are available in the automation center.
 - During initial preview, visibility of flows and their run history in automation center requires you to be the owner (coownership isn't sufficient) of the flows or to have environment wide access to the relevant data in the environment. The main Dataverse tables that power the data shown in the automation center are:  
   - `workflow`: Solution-aware cloud flow and desktop flows
@@ -148,4 +147,3 @@ The following are current limitations of the automation center and its underlyin
 - [Recommendations within automation center](automation-center-recommendations.md)
 - [Use Copilot in automation center](automation-center-copilot.md)
 - [Manage cloud flow run history in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata)
-
