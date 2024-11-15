@@ -35,6 +35,7 @@ The information displayed on the [**Overview**](#overview-tab) and [**Runs (Prev
 > - When you navigate between tabs, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
 > - Desktop flow related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
 > - Cloud flow run history shown on the overview and runs tab (preview) might take up to an hour to be available in Dataverse and the automation center.
+> - By default, visualizations are based on top-level cloud flow runs only. By using filters, you can also see visualizations for child flows.
 
 ## Required permissions
 
@@ -62,8 +63,6 @@ This tab provides an end-to-end automation health view within the environment an
 
 :::image type="content" source="media/automation-center/automation-center-overview-tab.png" alt-text="Screenshot of the overview page in automation center." lightbox="media/automation-center/automation-center-overviewGA.png":::
 
-
-
 | Visual | Description |
 | --- | --- |
 | **Recommendations** | List of automation health, compliance, best practice insights, and actionable recommendations. |
@@ -83,7 +82,7 @@ This tab provides an end-to-end automation health view within the environment an
 
 The recommendations section offers both proactive and reactive insights, along with suggestions concerning various elements of your automation landscape. Suggestions might include addressing sudden automation failures, work queues at risk of not meeting their service level agreement (SLA) targets, and unused machines or machine groups in the environment. These recommendations can help you identify areas for improvement and take appropriate action based on their effect. For more information, see [automation center recommendations](automation-center-recommendations.md).
 
-## Copilot
+## Copilot (Preview)
 
 Copilot is designed to assist with the analysis of automation activity, work queue performance, and to provide answers to common questions about Power Automate capabilities (generative answers). For example, users can ask about the number of flows that ran yesterday, which queue items are put on hold, or how to analyze activity with Copilot. In response, Copilot generates outputs that provide insights and answers to the questions asked. For more information, see [Use Copilot to analyze automation activity and ask product questions](automation-center-copilot.md).
 
@@ -96,9 +95,7 @@ Copilot is designed to assist with the analysis of automation activity, work que
 
 ## Runs tab (Preview)
 
-This tab presents a consolidated view of cloud and desktop flow run data displayed in a hierarchical list view. The data is organized based on top-level cloud flows. If a cloud flow has one or more child flows (supporting both cloud and desktop children), the child flow names are indented and preceded with a *'>'* character. This view is useful in scenarios where individual flow session runs succeeded, but other dependent runs failed, ultimately resulting in the top-level flow's failure. By displaying these runs in connection to their parent, we're enhancing automation monitoring and efficient root cause analysis of exceptions.
-
-:::image type="content" source="media/automation-center/automation-center-runs-tab.png" alt-text="Screenshot of the runs page on automation center." lightbox="media/automation-center/automation-center-runs-tab.png":::
+This tab presents a consolidated view of cloud and desktop flow run data displayed in a hierarchical list view. The data is organized based on top-level flows. If a cloud flow has one or more child flows (supporting both cloud and desktop children). This view is useful in scenarios where individual flow session runs succeeded, but other dependent runs failed, ultimately resulting in the top-level flow's failure. By displaying these runs in connection to their parent, we're enhancing automation monitoring and efficient root cause analysis of exceptions.
 
 ## Work queues tab
 
@@ -127,8 +124,7 @@ This tab provides metrics to monitor the health status of work queue items, incl
 
 The following are current limitations of the automation center and its underlying data structure.
 
-- Cloud flow-based filtering currently only lists solution cloud flows that were created in the current environment. Filtering support for cloud flows that were imported as part of a solution will be coming soon.
-- Visualizations are based on top-level cloud flow runs only.
+- Cloud flow-based filtering  only lists cloud flows that live in a solution in the current environment. 
 - Only runs for solution-based cloud flows are available in the automation center.
 - During initial preview, visibility of flows and their run history in automation center requires you to be the owner (coownership isn't sufficient) of the flows or to have environment wide access to the relevant data in the environment. The main Dataverse tables that power the data shown in the automation center are:  
   - `workflow`: Solution-aware cloud flow and desktop flows
