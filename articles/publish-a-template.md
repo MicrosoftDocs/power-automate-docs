@@ -1,17 +1,17 @@
 ---
-title: Submit a cloud flow template to the Power Automate gallery | Microsoft Docs
+title: Submit a cloud flow template to the Power Automate gallery
 description: Submit your flow as a template so that other organizations can find it in the template gallery and use the flow that you created.
-services: ''
 suite: flow
-author: natalie-pienkowska
+author: ShefaaliP
 contributors:
-  - natalie-pienkowska
+  - ShefaaliP
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 08/10/2022
-ms.author: jamiller
+ms.date: 11/15/2024
+ms.author: spatankar
 ms.reviewer: angieandrews
+ms.custom: ignite-2024
 search.audienceType: 
   - flowmaker
   - enduser
@@ -19,47 +19,99 @@ search.audienceType:
 
 # Submit a template to the Power Automate gallery
 
-Templates help people not only to create flows more easily, but also to imagine additional scenarios that would benefit from a cloud flow.
-
->[!IMPORTANT]
-> - Starting December 2022, the procedure to submit a template explained in this article has been deprecated. Any new template submissions using this deprecated procedure won't be accepted.
-> - This article will be updated with the new template submission process soon.
+Templates help you to create flows more easily, and to imagine additional scenarios that would benefit from a cloud flow.
 
 1. On the left pane, select **My flows**.
+1. Select and open a cloud flow you want to publish.
+1. On the menu at the top, select **Export** > **Package (.zip)**.
 
-1. Select a cloud flow, and then select the **More commands** (vertical ellipses) icon.
+    :::image type="content" source="media/publish-a-template/export.png" alt-text="Screenshot of the 'Export' and 'Package (.zip)' menu options.":::
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the More commands icon.](./media/publish-a-template/ellipsis-button.png "More commands icon")
+1. Provide the following details for your connector template so the end user is able to search the right template:
+    - Name
+    - Description
 
-1. On the menu that appears, select **Details**.
+1. To download the connector template files, select **Export**.
 
-1. On the menu at the top, select **Submit as template**.
+    :::image type="content" source="media/publish-a-template/export-package.png" alt-text="Screenshot of the Export package screen with the 'Export' button.":::
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of the Submit as template menu option.](./media/publish-a-template/context-menu.png "Submit as template menu option")
+1. Upload the package to a storage blob and generate the [SAS URL](/azure/ai-services/translator/document-translation/how-to-guides/create-sas-tokens?tabs=Containers).
 
-   You can only submit flows that have run successfully at least once since the last time you saved the flow. If your flow doesn't meet this requirement, you'll get a warning message.
+    Ensure that your SAS URI is valid for at least 15 days.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot showing warning message of no successful runs.](./media/publish-a-template/need-successful-run-warning.png "Warning message of no successful runs")
+## Set up your Partner Center Seller account
 
-1. On the **Submit as template** screen, provide the following:
-    1. A meaningful title. Make sure the title is fewer than 75 characters.
-    1. A clear description of the scenario that your template automates. Make sure the description/summary is fewer than 1,024 characters. Having accurate English text ensures that misunderstandings to our customers aren't translated into multiple languages.
-    1. The biggest benefit.
-    1. The number of users.
-    1. The number of runs
-    1. The categories that apply to the template.
+This is a one-time process for creating a Seller account in Partner Center. Seller accounts go through a vetting process before they can publish offers through Partner Center.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot of template options.](./media/publish-a-template/template-options.png "Template options")
+If you already have a Seller account, you need to enroll in the [Microsoft 365 and Copilot program](/partner-center/marketplace/open-a-developer-account#create-a-partner-center-account-and-enroll-in-the-microsoft-365-and-copilot-program).
 
-1. Select **Submit**.
+To create a new Seller account, follow these steps:  
 
-     The Power Automate team verifies and *possibly modifies* your template. If the team approves your template, it appears in the gallery of templates for Power Automate.
+1. If you have an existing developer account in Partner Center, use those same credentials to access Partner Center.
 
->[!NOTE]
->Templates are for use in the public gallery only. They aren't supported for private use.
+    If you don't have an account, then follow the steps in [Create a Microsoft AI Cloud Partner Program account in Partner Center](/partner-center/mpn-create-a-partner-center-account).
+
+1. Ensure you have the valid email address configured in your Entra ID account. To configure the email ID, follow the steps in [Manage user profile info](/entra/fundamentals/how-to-manage-user-profile-info).
+
+    > [!NOTE]
+    > If the Email ID for the Entra account is missing, the certification request is auto-rejected.
+
+1. Before you can publish, verify your account information. Learn more in [Verify your account information when you enroll in a new Partner Center program](/partner-center/verification-responses).
+
+1. [Enroll in the Microsoft 365 and Copilot program](/partner-center/marketplace/open-a-developer-account#create-a-partner-center-account-and-enroll-in-the-microsoft-365-and-copilot-program).
+
+## Submit your package for certification
+
+1. Sign in to [Partner Center](https://partner.microsoft.com/dashboard/home).
+1. Under the **Home** heading, select **Marketplace offers** card.
+1. On the **Marketplace offers | Overview** page, select **Microsoft 365 and Copilot** program.
+1. On the **Microsoft 365 and Copilot** page, select **New offer** > **Connectors & Agents in Microsoft Copilot Studio**.
+1. In the **Name** field in the **New Connectors & Agents in Microsoft Copilot Studio** screen, enter a unique name for your offer.
+
+    This name is used to help you identify your offer in Partner Center. We recommend that you include the name of your connector and associated AI enabled connector.
+
+Next, you're taken to the **Product setup** page. You don't need to enter information here. The **Status** is marked as **Complete** to indicate there's nothing for you to do.
+
+### Package your connector based templates
+
+1. On the navigation bar to the left, select **Packages**.
+1. On the **Packages** tab in the **SAS URI** field, enter the link to the SAS URI of your package containing the connector based template.
+1. Ensure your package complies with Marketplace Policies for Power Platform listed in [5000 Power Platform Connectors](/legal/marketplace/certification-policies#5000-power-platform-connectors).
+1. Select **Save draft**.
+
+### Set properties
+
+1. On the navigation bar to the left, select **Properties**.
+
+1. On the **Properties** tab, do the following steps:
+    1. In the **General Info** group, choose up to three (3) categories that your connector and/or AI enabled connector associates best with.
+    1. In the **Legal and support info** group, you need to provide three (3) pieces of information.
+        1. In the first field, you can either enter an HTTPS URL to your End User Licensing Agreement, or you can use the Microsoft commercial marketplace Standard Contract. We recommend that you use the Standard Contract.
+
+           To choose the Standard Contract, select the checkbox.
+
+        1. In the **Privacy policy link** field, enter the privacy link for your policies regarding the user's personal information.
+        1. In the **Support document link** field, enter the support link for customers to refer to in case they have issues.
+    1. Select **Save** to save your draft.
+
+### Post-submission steps
+
+1. After you submit your offer, wait 24 to 48 hours for Microsoft to review your offer.
+
+    You can review the status of your offer as it is progressing through certification lifecycle. Inside your offer, go to the **Product overview** tab.
+
+1. Within 48 hours, Microsoft updates the certification report in the **Product overview** tab.
+
+    If your package passed the certification guidelines, you're asked to move to next stage. If it didn't pass, you're required to update the package based on the certification report and resubmit the package.
+
+1. Once the certification is completed in the **Product overview** for your offer under **Publisher signoff**, select **Go live**.
+
+### Wait for deployment
+
+The Power Automate team verifies and *possibly modifies* your template. If the team approves your template, it appears in the gallery of templates for Power Automate. After your offer is live, we deploy your connector template across all products and regions within 48 hours.
+
+> [!NOTE]
+> - If you want to update your offer content in future, for example, you want to submit version upgrades to the connector template, follow the same rules: To initiate the update request, select the **Product overview** tab for your certified offer, and select the update present for the section you want to modify.
+> - Templates are for use in the public gallery only. They aren't supported for private use.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
