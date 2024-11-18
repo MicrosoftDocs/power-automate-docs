@@ -48,24 +48,24 @@ Flow runs can be canceled through the related flow's Run history page, or by usi
 
 ### Canceling flow runs in bulk through the flow run history pane
 
-1. Navigate to the flow that you want to cancel in the flow portal by clicking **My flows** > ellipses > **Run history**, or by clicking on the flow name and the **All runs** in the 28-day run history list.
-1. You can manually select up to 20 flows in **Waiting**, or **Running** state, or simply click **Cancel all flow runs** in the Run history option menu at the top of the screen to initiate the bulk cancellation feature. 
+1. To cancel flow(s), navigate to the flow portal and click on **My flows**. Then, select the ellipses (three dots) next to the flow and choose **Run history**. Alternatively, you can click on the flow name and select **All runs** from the 28-day run history list
+1. You can manually select up to 20 flows that are in **Waiting**, or **Running** state, or simply click **Cancel all flow runs** in the run history option menu at the top of the screen to initiate the bulk cancellation feature. 
 
     :::image type="content" source="./media/cancel-resubmit-how-to/flowrunlist.png" alt-text="Screenshot that displays the cancel all flow runs button."::: 
 
-1. After clicking **Cancel all flows** a message window will appear - click **Yes** to initiate the bulk cancel utility.  You can also choose to turn the flow off if there are concerns of further unwanted flow runs being initiated.
+1. After clicking **Cancel all flows** a message window will appear. Click **Yes** to initiate the bulk cancel utility.  If you are concerned about further unwanted flow runs being initiated, you can also choose to turn the flow off.
 
     :::image type="content" source="./media/cancel-resubmit-how-to/cancelprompt.png" alt-text="Screenshot that displays the cancel all flow runs message window.":::
 
-1. When there are more than 20 flows in **Waiting**, or **Running** status, an additional pop up message may appear indicating it may take several minutes for the flow run statuses to change to 'Canceling'. Do not be alarmed, your flows have been suspended and no further actions will be executed for flows that are already 'Running', and flows in 'Waiting' status will also be terminated without actions being executed.
+1. If there are more than 20 flows in **Waiting**, or **Running** status, an additional pop up message may appear, indicating that it may take several minutes for the flow run statuses to change to **Canceling**. Do not be alarmed; your flows have been suspended, and no further actions will be executed for flows that are already **Running**. Flows in **Waiting** status will also be terminated without actions being executed.
 
     :::image type="content" source="./media/cancel-resubmit-how-to/workingonit.png" alt-text="Screenshot that displays the cancel all flow runs button.":::
 
-1. Refresh your browser screen periodically to see the updated status changes in the Run history list. Flows in **Running** state have been suspended and will change to a state of **Canceling** before the state changes again to **Canceled**.  At times this can take up to, or more than 24 hours - however, note the flows are suspended and no actions will be executed. If you click on a flow run in **Canceling** state, it may appear that the spinner above a respective action is in motion, but it is in suspended state.  When flows are actually running, you will see a notification banner at the top that indicates *Your flow is running...* this is not the case for suspended flows in *Canceling* state.  The image below displays the banner when a flow is running, which a suspended flow in *Canceling* status will not contain.
+1. Refresh your browser screen periodically to see the updated status changes in the Run history list. Flows in the Running state have been suspended and will change to a state of **Canceling** before eventually changing to Canceled. This process can sometimes take up to, or more than, 24 hours. However, note that the flows are suspended, and no actions will be executed. If you click on a flow run in the **Canceling** state, it may appear that the spinner above a respective action is in motion, but it is in a suspended state. When flows are actually running, you will see a notification banner at the top indicating Your flow is running... This is not the case for suspended flows in the **Canceling** state. The image below shows the banner when a flow is running, which a suspended flow in the **Canceling** status will not contain.
 
     :::image type="content" source="./media/cancel-resubmit-how-to/runningflow.png" alt-text="Screenshot that flow run that indicates it is running.":::
 
-1. Note that flows which exceeded the concurrency setting may be visible in **Waiting** state alongside other flow runs in **Canceling** state.  This is by design, and want to reassure again that the flows were suspended when bulk cancel was submitted, unless they were triggered after the feature was used.  The state will change to **Canceling** when their turn to be processed comes up in the queue.  You can ensure flows in **Running**, or **Waiting** state before submitting a bulk cancel request have been suspended and will eventually change to state 'Canceled'.  
+1. Note that flows which exceeded the concurrency setting may be visible in the **Waiting** state alongside other flow runs in the **Canceling** state. This is by design, and you can be reassured that the flows were suspended when the bulk cancel was submitted, unless they were triggered after the feature was used. The state will change to **Canceling** when their turn to be processed comes up in the queue. You can ensure that flows in the **Running** or **Waiting** state before submitting a bulk cancel request have been suspended and will eventually change to the **Canceled** state..  
 
     :::image type="content" source="./media/cancel-resubmit-how-to/wait_cancel.png" alt-text="Screenshot that flow run in state waiting and canceled.":::
 
