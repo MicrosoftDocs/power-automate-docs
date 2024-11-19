@@ -67,7 +67,7 @@ Step-by-step instructions to create a sample SQL Query on the SQL Analytical End
             runwaitduration,  
             context
         FROM   
-            flowsessions  
+            flowsession  
         WHERE   
             regardingobjectid = '[specific_flow_id]' -- Replace with the actual flow ID  
             AND machineid = '[specific_machine_guid]'  -- Replace with the actual machine ID  
