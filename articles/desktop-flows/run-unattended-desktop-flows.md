@@ -67,9 +67,13 @@ To allow reusing Windows session:
 > [!NOTE]
 > When you add machines to machine groups, they inherit the settings of the group. When you remove machines from machine groups, they keep the settings defined at the group level.
 
-## Admin consent for unattended runs using CBA or login credentials with NLA
+## Admin consent for unattended runs using CBA or login credentials with NLA (preview)
+
+[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
 
 To perform unattended runs with Microsoft Entra ID using certificate-based authentication (CBA) or login credentials with Network Level Authentication, you need to perform the following steps:
+
+[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
 
 ### Step 1 - Enable Microsoft Entra authentication for RDP
 
