@@ -73,18 +73,18 @@ To perform unattended runs with Microsoft Entra ID using certificate-based authe
 
 ### Step 1 - Enable Microsoft Entra authentication for RDP
 
-[Enable Microsoft Entra authentication for RDP](/azure/virtual-desktop/configure-single-sign-on#enable-microsoft-entra-authentication-for-rdp) only for the appid `a4a365df-50f1-4397-bc59-1a1564b8bb9c` (MSRDspId).
+[Enable Microsoft Entra authentication for RDP](/azure/virtual-desktop/configure-single-sign-on#enable-microsoft-entra-authentication-for-rdp) only for the AppID `a4a365df-50f1-4397-bc59-1a1564b8bb9c` (MSRDspId).
 
 ### Step 2 - Hide the consent prompt dialog for a target device group
 
-[Hide the consent prompt dialog](/azure/virtual-desktop/configure-single-sign-on#hide-the-consent-prompt-dialog) only for the appid `a4a365df-50f1-4397-bc59-1a1564b8bb9c` (MSRDspId).
+[Hide the consent prompt dialog](/azure/virtual-desktop/configure-single-sign-on#hide-the-consent-prompt-dialog) only for the AppID `a4a365df-50f1-4397-bc59-1a1564b8bb9c` (MSRDspId).
 
 The desktop flow fails with an `MSEntraRemoteDesktopAppConsentRequired` error if consent isn't granted.
 
 > [!NOTE]
-> To authenticate with Microsoft Entra ID username/password with Network Level Authentication, you need to ensure the following pre-requisites are met:
-> - Power Automate Desktop version 2.50 and above is installed on your machine.
-> - Ensure required [endpoints for Power Automate services](/power-automate/ip-address-configuration) are accessible, specifically config.edge.skype.com.
+> To authenticate with Microsoft Entra ID using a username/password with Network Level Authentication, you need to ensure the following prerequisites are met:
+> - Power Automate Desktop version 2.50 or later is installed on your machine.
+> - Ensure required [endpoints for Power Automate services](/power-automate/ip-address-configuration) are accessible, specifically (config.edge.skype.com).
 
 ## Known issues and limitations
 
