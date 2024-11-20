@@ -67,7 +67,7 @@ To allow reusing Windows session:
 > [!NOTE]
 > When you add machines to machine groups, they inherit the settings of the group. When you remove machines from machine groups, they keep the settings defined at the group level.
 
-## Admin consent for unattended runs using certificate-based authentication or username/password with Network Level Authentication
+## Admin consent for unattended runs using certificate-based authentication or username and password with Network Level Authentication
 
 To perform unattended runs with Microsoft Entra ID using certificate-based authentication or username/password with Network Level Authentication, you need to perform the following steps:
 
