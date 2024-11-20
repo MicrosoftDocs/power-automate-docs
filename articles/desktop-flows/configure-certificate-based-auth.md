@@ -63,7 +63,7 @@ After completing these steps, [create your Azure key vault credential](create-Az
 
 ## Admin consent for unattended runs
 
-Admin consent is required for unattended runs with certificate credentials on a Microsoft Entra ID joined device. Learn more at [Admin consent for unattended runs](run-unattended-desktop-flows.md#admin-consent-for-unattended-runs-using-cba-or-login-credentials-with-nla).
+Admin consent is required for unattended runs with certificate credentials on a Microsoft Entra ID joined device. Learn more at [Admin consent for unattended runs](run-unattended-desktop-flows.md#admin-consent-for-unattended-runs-using-cba-or-login-credentials-with-nla-preview).
 
 ## Limitations and minimal requirements
 
