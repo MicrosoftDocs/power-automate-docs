@@ -69,7 +69,7 @@ To allow reusing Windows session:
 
 ## Admin consent for unattended runs using CBA or login credentials with NLA
 
-To perform unattended runs with Microsoft Entra ID using certificate-based authentication or username/password with Network Level Authentication, you need to perform the following steps:
+To perform unattended runs with Microsoft Entra ID using certificate-based authentication (CBA) or login credentials with Network Level Authentication, you need to perform the following steps:
 
 ### Step 1 - Enable Microsoft Entra authentication for RDP
 
