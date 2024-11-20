@@ -67,12 +67,9 @@ To allow reusing Windows session:
 > [!NOTE]
 > When you add machines to machine groups, they inherit the settings of the group. When you remove machines from machine groups, they keep the settings defined at the group level.
 
-## Admin consent for unattended runs
+## Admin consent for unattended runs using certificate-based authentication or username/password with Network Level Authentication
 
-To perform unattended runs, configure the following:
-
-- A Microsoft Entra ID certificate credential on a Microsoft Entra ID joined device
-- A Microsoft Entra ID username/password credential on a Microsoft Entra ID joined device requiring Network Level Authentication (NLA)
+To perform unattended runs with Microsoft Entra ID using certificate-based authentication or username/password with Network Level Authentication, you need to perform the following steps:
 
 ### Step 1 - Enable Microsoft Entra authentication for RDP
 
@@ -83,6 +80,11 @@ To perform unattended runs, configure the following:
 [Hide the consent prompt dialog](/azure/virtual-desktop/configure-single-sign-on#hide-the-consent-prompt-dialog) only for the appid `a4a365df-50f1-4397-bc59-1a1564b8bb9c` (MSRDspId).
 
 The desktop flow fails with an `MSEntraRemoteDesktopAppConsentRequired` error if consent isn't granted.
+
+> [!NOTE]
+> To authenticate with Microsoft Entra ID username/password with Network Level Authentication, you need to ensure the following pre-requisites are met:
+> - Power Automate Desktop version 2.50 and above is installed on your machine.
+> - Ensure required [endpoints for Power Automate services](/power-automate/ip-address-configuration) are accessible, specifically config.edge.skype.com.
 
 ## Known issues and limitations
 
