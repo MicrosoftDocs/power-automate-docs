@@ -42,14 +42,14 @@ You can resubmit previous runs of a flow in bulk. To do this, follow these steps
 
 ## Cancel flow runs
 
-You can cancel flow runs through the related flow's run history page, or by using a [template](https://make.powerautomate.com/galleries/public/templates/52c2eb66c0664b3b82480d1adcc6c1b4/cancel-//all-of-my-flow-runs). The bulk cancel feature available through the flow portal is most efficient when you cancel up to 20 flows at a time. We recommend that you use the template linked previously in this section for more than 20 runs when possible. This also applies to runs in the hundreds. Alternatively, you can use the bulk cancel feature for all flows in **Waiting** or **Running** status regardless of the count. To set an expectation of how this utility functions review the following details.
+You can cancel flow runs on the related flow's **Run history** page, or by using a [template](https://make.powerautomate.com/galleries/public/templates/52c2eb66c0664b3b82480d1adcc6c1b4/cancel-//all-of-my-flow-runs). The bulk cancel feature available through the flow portal is most efficient when you cancel up to 20 flows at a time. We recommend that you use the template linked previously in this section for more than 20 runs when possible. This also applies to runs in the hundreds. Alternatively, you can use the bulk cancel feature for all flows in **Waiting** or **Running** status regardless of the count. To set an expectation of how this utility functions review the following details.
 
-### Cancel flow runs in bulk through the flow run history pane
+### Cancel flow runs in bulk on the flow 'Run history' page
 
 1. To cancel flows, navigate to the flow portal and select **My flows**.
 1. Next to the flow, select the ellipses (&hellip;) > **Run history**.
 
-    Alternatively, you can select the flow name > **All runs** from the 28-day run history list.
+    Alternatively, you can select the flow name > **All runs** from the **28-day run history** list.
 
 1. You can manually select up to 20 flows that are in **Waiting** or **Running** state.
 
