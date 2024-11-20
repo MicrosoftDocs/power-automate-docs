@@ -42,7 +42,7 @@ You can resubmit previous runs of a flow in bulk. To do this, follow these steps
 
 ## Cancel flow runs
 
-You can cancel flow runs on the related flow's **Run history** page, or by using a [template](https://make.powerautomate.com/galleries/public/templates/52c2eb66c0664b3b82480d1adcc6c1b4/cancel-//all-of-my-flow-runs). The bulk cancel feature available through the flow portal is most efficient when you cancel up to 20 flows at a time. We recommend that you use the template linked previously in this section for more than 20 runs when possible. This also applies to runs in the hundreds. Alternatively, you can use the bulk cancel feature for all flows in **Waiting** or **Running** status regardless of the count. To set an expectation of how this utility functions review the following details.
+You can cancel flow runs on the related flow's **Run history** page, or by using a [template](https://make.preview.powerautomate.com/galleries/public/templates/52c2eb66c0664b3b82480d1adcc6c1b4/cancel-all-of-my-flow-runs?environment=e85a08f2-6b04-ef9d-bbe3-05c8fb307b0b). The bulk cancel feature available through the flow portal is most efficient when you cancel up to 20 flows at a time. We recommend that you use the template linked previously in this section for more than 20 runs when possible. This also applies to runs in the hundreds. Alternatively, you can use the bulk cancel feature for all flows in **Waiting** or **Running** status regardless of the count. To set an expectation of how this utility functions review the following details.
 
 ### Cancel flow runs in bulk on the flow 'Run history' page
 
