@@ -54,3 +54,4 @@ Both the short and long names must match the letter used as the session name in 
 
 ## Usage example
 Since the terminal must be launched with specific long and short names and connection preferences, it is common practice to first manually launch the terminal with any desired connection preferences, save the configuration in an .rd3x file, and then use that file with a Run Application action to launch the application.
+![Screenshot of the configuration with Run application.](media/terminal-emulation-open-new-session/Terminal_how_7.png)
