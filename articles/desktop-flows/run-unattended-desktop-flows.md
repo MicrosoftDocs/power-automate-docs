@@ -93,5 +93,6 @@ The desktop flow fails with an `MSEntraRemoteDesktopAppConsentRequired` error if
 ## Known issues and limitations
 
 - Reusing sessions isn't supported on machines that allow users to have multiple sessions `users aren't restricted to a single session`.
+- Audio peripherals (such as microphones and speakers), cameras, webcams, and video capture peripherals isn't supported in unattended desktop flows.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
