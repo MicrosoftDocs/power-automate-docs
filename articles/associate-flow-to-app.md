@@ -97,7 +97,7 @@ It might be that the connection for the current user has become unauthenticated.
 
 ### I'm an admin and want to associate flows and apps in bulk. Is there an admin command?
 
-Use the PowerShell command [Add-AdminFlowPowerAppContext](https://learn.microsoft.com/en-us/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app) to associate flows and apps in bulk.
+Use the PowerShell command [Add-AdminFlowPowerAppContext](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app) to associate flows and apps in bulk.
 
 This is also described in the [How can I associate in-context flows to Power Apps/Dynamics 365 apps?](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-power-appsdynamics-365-apps) section of the [Power Automate licensing FAQ](/power-platform/admin/power-automate-licensing/faqs).
 
