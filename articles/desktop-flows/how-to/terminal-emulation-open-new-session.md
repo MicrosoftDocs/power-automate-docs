@@ -31,7 +31,6 @@ This option will launch a terminal session using a saved profile file that alrea
 
 ### Specify Connection
 This option requires you to add all the connection parameters in the action configuration, including the terminal host type (two types are supported: IBM3270 and IBM5250), the host address, and the port.
-![Screenshot of the configuration in the action of the terminal host type.](media/terminal-emulation-open-new-session/Terminal_how_3.png)
 
 > [!NOTE]
 > Launching a terminal emulation session using the Micro Focus Reflection provider also initiates the terminal emulation software itself.
@@ -55,4 +54,3 @@ Both the short and long names must match the letter used as the session name in 
 
 ## Usage example
 Since the terminal must be launched with specific long and short names and connection preferences, it is common practice to first manually launch the terminal with any desired connection preferences, save the configuration in an .rd3x file, and then use that file with a Run Application action to launch the application.
-![Screenshot of the above.](media/terminal-emulation-open-new-session/Terminal_how_7.png)
