@@ -1,14 +1,15 @@
 ---
 title: Associate flows with apps
 description: Learn how to associate automated and scheduled flows with apps in Power Apps and with Dynamics 365 apps.
-author: PriyaKodukula
+author: ChrisGarty
 contributors:
+  - ChrisGarty
   - lancedMicrosoft
   - v-aangie
-ms.author: lanced
+ms.author: cgarty
 ms.reviewer: angieandrews
 ms.topic: how-to
-ms.date: 05/08/2023
+ms.date: 11/21/2024
 ms.custom:
 ---
 
