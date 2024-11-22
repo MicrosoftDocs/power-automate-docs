@@ -2,10 +2,9 @@
 title: Terminal emulation actions reference
 description: See all the available terminal emulation actions.
 author: mattp123
-
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 06/02/2023
+ms.date: 11/21/2024
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -54,7 +53,7 @@ After opening a terminal session and completing all the wanted operations, termi
 Open a new terminal session.
 
 > [!NOTE]
-> To find more information on configuring the action, please refer to the following resource: [How to configure the Open terminal session action](articles/desktop-flows/how-to/terminal-emulation-open-new-session.md)
+> Learn more about configuring the action in [How to configure the open terminal session action](articles/desktop-flows/how-to/terminal-emulation-open-new-session.md)
 
 ### Input parameters
 

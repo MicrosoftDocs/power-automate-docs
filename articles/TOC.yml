@@ -680,7 +680,7 @@
       href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
     - name: Timeout configuration for UI/browser automation
       href: ./desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md
-    - name: How to configure the Open terminal session action
+    - name: Configure the open terminal session action
       href: ./desktop-flows/how-to/terminal-emulation-open-new-session.md  
   - name: ALM for desktop flows
     items:
