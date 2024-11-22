@@ -53,7 +53,7 @@ After opening a terminal session and completing all the wanted operations, termi
 Open a new terminal session.
 
 > [!NOTE]
-> Learn more about configuring the action in [How to configure the open terminal session action](articles/desktop-flows/how-to/terminal-emulation-open-new-session.md)
+> Learn more about configuring the action in [How to configure the open terminal session action](../how-to/terminal-emulation-open-new-session.md).
 
 ### Input parameters
 
