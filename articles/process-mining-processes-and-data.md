@@ -113,6 +113,10 @@ One easy way to try out the process mining capability regardless of where your d
 
 1. Upload your event log, select your file from the list, and then select **Open** to use that file.
 
+### Use the Dataflow connector
+
+The Dataflow connector isn't supported in Microsoft Power Platform and existing Dataflow can not be used as a data source for Power Automate Process Mining.
+
 ### Use the Dataverse connector
 
 The Dataverse connector isn't supported in Microsoft Power Platform. You need to connect to it using the OData connector, which requires a few more steps.
