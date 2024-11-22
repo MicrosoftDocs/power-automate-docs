@@ -1,15 +1,15 @@
 ---
 title: Prepare processes and data
 description: Learn how to prepare processes and data with the process mining capability in Power Automate.
-author: donums
+author: rosikm
 contributors:
   - rosikm
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/16/2024
-ms.author: derahonuorah
+ms.date: 11/22/2024
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -38,7 +38,7 @@ Event logs and activity logs are tables stored in your system of record that doc
 
 - **Activity Name**
 
-  Activities are the steps of your process, and activity names describe each step. In a typical approval process, the activity names may be "submit request," "request approved," "request rejected," and "revise request."
+  Activities are the steps of your process, and activity names describe each step. In a typical approval process, the activity names might be "submit request," "request approved," "request rejected," and "revise request."
 
 - **Start Timestamp and End Timestamp**
 
@@ -115,7 +115,7 @@ One easy way to try out the process mining capability regardless of where your d
 
 ### Use the Dataflow connector
 
-The Dataflow connector isn't supported in Microsoft Power Platform and existing Dataflow can not be used as a data source for Power Automate Process Mining.
+The Dataflow connector isn't supported in Microsoft Power Platform. The existing Dataflow can't be used as a data source for Power Automate Process Mining.
 
 ### Use the Dataverse connector
 
