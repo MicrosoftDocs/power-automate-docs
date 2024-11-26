@@ -2,11 +2,11 @@
 title: Use SharePoint and Power Automate to build workflows
 description: Provides an overview of the many ways you can use flows with lists created with Microsoft Lists and files.
 suite: flow
-author: v-aangie
+author: HeatherOrt
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 10/09/2024
-ms.author: angieandrews
+ms.date: 11/25/2024
+ms.author: heortaol
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
