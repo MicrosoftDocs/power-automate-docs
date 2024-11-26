@@ -277,11 +277,15 @@ To use your own network and provision Microsoft Entra joined hosted machine grou
 The virtual network needs to be created in the same location as your hosted machine groups. Following are the currently supported Power Platfrom geographies and their region mapping:
 
 - Asia: East Asia
+- Australia: Australia East
 - Brazil: Brazil South
+- Canada: Canada Central
 - Europe: North Europe
 - India: Central India
 - Japan: Japan East
 - United States: East US
+- United Kingdom: UK South
+
 
 > [!NOTE]
 > We are continuing to roll out support to more Power Platform geographies. Please send your request to hostedrpa@microsoft.com if you have a specific request.
