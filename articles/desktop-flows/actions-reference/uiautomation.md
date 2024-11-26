@@ -47,60 +47,60 @@ For many actions of UI automation there are two modes for executing actions: phy
 
 :::image type="content" source="media/uiautomation/simulateactions.png" alt-text="Screenshot of the parameters related to simulate a UI automation action or execute it physically.":::
 
-### Known limitations for performing an action by simulation
+## Known limitations for performing an action by simulation
 
-#### **Click UI Element in Window and Press Button in Window actions**
+### **Click UI Element in Window and Press Button in Window actions**
 
-When using the 'Click UI element in window' and 'Press button in window' actions, the following limitations apply for Simulate mode:
+When you use the 'Click UI element in window' and 'Press button in window' actions, the following limitations apply for simulate mode:
 
 - **WPF Technology:**
-  - Does not work for Textbox, Toggle button, Richtextbox, Listitem, Griditem/TableItem, Combobox types of UI elements.
+  - Doesn't work for Textbox, Toggle button, Richtextbox, Listitem, Griditem/TableItem, Combobox types of UI elements.
 
 - **Winforms Technology:**
-  - Does not work for Textbox, Richtextbox, Listitem, Griditem/TableItem, Combobox types of UI elements.
+  - Doesn't work for Textbox, Richtextbox, Listitem, Griditem/TableItem, Combobox types of UI elements.
   - When simulating a click to interact with a dialog, the dialog must be closed with a physical click.
 
 - **XAML Technology:**
-  - Does not work for Textbox, Toggle button, Richtextbox, Listitem types of UI elements.
+  - Doesn't work for Textbox, Toggle button, Richtextbox, Listitem types of UI elements.
 
 - **Excel Technology:**
-  - Does not work for Toggle button, MenuItem types of UI elements.
+  - Doesn't work for Toggle button, MenuItem types of UI elements.
 
 - **File Explorer Technology:**
-  - Does not work for Textbox, Richtextbox, Treeitem, MenuItem types of UI elements.
+  - Doesn't work for Textbox, Richtextbox, Treeitem, MenuItem types of UI elements.
 
 - **Windows Settings Technology:**
-  - Does not work for Toggle button, Richtextbox, Group types of UI elements.
+  - Doesn't work for Toggle button, Richtextbox, Group types of UI elements.
 
 - **Java AWT Technology:**
-  - Does not work for Textbox, Richtextbox, Combobox types of UI elements.
+  - Doesn't work for Textbox, Richtextbox, Combobox types of UI elements.
 
 - **Java SWT Technology:**
-  - Does not work for Textbox, Richtextbox, MenuItem types of UI elements.
+  - Doesn't work for Textbox, Richtextbox, MenuItem types of UI elements.
 
 - **SAP Technology:**
-  - Does not work for Combobox types of UI elements.
+  - Doesn't work for Combobox types of UI elements.
 
 - **Windows 11:**
   - Limitations with 'Start menu' and 'Task bar' UI elements.
 
-#### **Populate Text Field in Window Action**
+### **Populate Text Field in Window Action**
 
-When using the 'Populate text field in window' action, the following limitations apply for Simulate mode:
+When using the 'Populate text field in window' action, the following limitations apply for simulate mode:
 
 - **WPF Technology:**
-  - Does not work for Richtextbox type of UI elements.
+  - Doesn't work for Richtextbox type of UI elements.
 
 - **XAML Technology:**
-  - Does not work for Richtextbox type of UI elements.
+  - Doesn't work for Richtextbox type of UI elements.
 
 - **Notepad/MFC Technology:**
-  - Does not work for Pane type of UI elements.
+  - Doesn't work for Pane type of UI elements.
 
 - **SAP Technology:**
-  - Does not work for Combobox type of UI elements.
+  - Doesn't work for Combobox type of UI elements.
 
-Please consider these limitations when configuring your UI automation actions and proceed with interacting with the UI elements using the physical approach.
+Consider these limitations when configuring your UI automation actions and proceed with interacting with the UI elements using the physical approach.
 
 >[!NOTE]
 > To find more information about developing UI automation flows and creating custom selectors, go to [Automate desktop flows](../desktop-automation.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
