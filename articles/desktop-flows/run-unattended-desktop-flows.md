@@ -4,7 +4,7 @@ description: See how to run unattended desktop flows on your device.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/08/2024
+ms.date: 11/26/2024
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -67,11 +67,11 @@ To allow reusing Windows session:
 > [!NOTE]
 > When you add machines to machine groups, they inherit the settings of the group. When you remove machines from machine groups, they keep the settings defined at the group level.
 
-## Admin consent for unattended runs using CBA or login credentials with NLA (preview)
+## Admin consent for unattended runs using CBA or sign-in credentials with NLA (preview)
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
 
-To perform unattended runs with Microsoft Entra ID using certificate-based authentication (CBA) or login credentials with Network Level Authentication, you need to perform the following steps:
+To perform unattended runs with Microsoft Entra ID using certificate-based authentication (CBA) or sign-in credentials with Network Level Authentication (NLA), follow these steps:
 
 [!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
 
@@ -86,13 +86,13 @@ To perform unattended runs with Microsoft Entra ID using certificate-based authe
 The desktop flow fails with an `MSEntraRemoteDesktopAppConsentRequired` error if consent isn't granted.
 
 > [!NOTE]
-> To authenticate with Microsoft Entra ID using a username/password with Network Level Authentication, you need to ensure the following prerequisites are met:
-> - Power Automate Desktop version 2.50 or later is installed on your machine.
-> - Ensure required [endpoints for Power Automate services](/power-automate/ip-address-configuration) are accessible, specifically (config.edge.skype.com).
+> To authenticate with Microsoft Entra ID using a username and password with Network Level Authentication, ensure the following prerequisites are met:
+> - Install Power Automate Desktop version 2.50 or later on your machine.
+> - Ensure required [endpoints for Power Automate services](/power-automate/ip-address-configuration) are accessible, specifically `config.edge.skype.com`.
 
 ## Known issues and limitations
 
-- Reusing sessions isn't supported on machines that allow users to have multiple sessions `users aren't restricted to a single session`.
-- Audio peripherals (such as microphones and speakers), cameras, webcams, and video capture peripherals isn't supported in unattended desktop flows.
+- Reusing sessions isn’t supported on machines that allow users to have multiple sessions (users aren’t restricted to a single session).
+- Audio peripherals (such as microphones and speakers), cameras, webcams, and video capture peripherals aren't supported in unattended desktop flows.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
