@@ -1117,13 +1117,13 @@
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Manage automations
   items:
-  - name: Automation center (preview)
+  - name: Automation center
     items:
     - name: Overview
       href: automation-center-overview.md
     - name: Recommendations
       href: automation-center-recommendations.md
-    - name: Copilot
+    - name: Copilot (preview)
       href: automation-center-copilot.md
   - name: Capacity utilization
     items:

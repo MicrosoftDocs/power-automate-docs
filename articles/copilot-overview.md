@@ -51,7 +51,7 @@ Copilot in desktop flows allows you to analyze desktop flow activity. With this 
 
 Copilot in automation center enables makers, business analysts, and members of the Center of Excellence team to easily retrieve information about past flow runs, work queue performance, and general product features. You can get this information by asking questions in natural language.
 
-- [Copilot](automation-center-overview.md#copilot)
+- [Copilot](automation-center-overview.md#copilot-preview)
 - [Use Copilot to analyze automation activity and ask product questions (preview)](automation-center-copilot.md)
 
 ## Enable or disable Copilot in Power Automate
