@@ -51,7 +51,7 @@ Your admin can determine the appropriate installation scenario based on the opti
 
 |App Installer allowed  |Internet access | Scenario  |
 |---------|---------|---------|
-|Yes     | Yes        | Download and install Power Automate Process Mining desktop app using portal link in the [standard installation](how-to-start-with-minit-desktop-application.md). Check for automatic updates and make sure autoupdating is working.         |
+|Yes     | Yes        | Download and install Power Automate Process Mining desktop app using portal link in the [standard installation](how-to-start-with-minit-desktop-application.md). Check for automatic updates and make sure auto-updating is working.         |
 |No     | Yes        | Use the custom installation in [Run the custom installation](#run-the-custom-installation) in this article.     |
 |Yes or No    | No        | You can’t download the package from the portal. Ask your admin to download the MSIX package and share it with you. Install the package and [set up the custom location for updates](#set-up-the-custom-location-for-updates). Your admin must download updates and put them into the custom location.         |
 

@@ -903,9 +903,9 @@
       href: ./minit/minit-desktop-application-overview.md
     - name: Installation
       items:
-      - name: Standard installation
+      - name: Standard
         href: ./minit/how-to-start-with-minit-desktop-application.md
-      - name: Custom installation
+      - name: Custom
         href: ./minit/process-mining-custom-install.md
     - name: Get started
       items:
