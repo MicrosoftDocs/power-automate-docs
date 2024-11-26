@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-## Custom installation of Power Automate Process Mining desktop app
+# Custom installation of Power Automate Process Mining desktop app
 
 Your admin might have disabled the option to install Power Automate Process Mining desktop app on your workstation with Microsoft App Installer, which is used in the standard installation. In this case, you can use the MSIX file to install the app. With this installation, updates are managed customarily during the application startup process.
 
