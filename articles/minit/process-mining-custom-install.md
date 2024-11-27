@@ -27,19 +27,19 @@ The following table lists the required steps to install the Power Automate Proce
 |---------|---------|---------|
 |Yes     | Yes        | Download and install Power Automate Process Mining desktop app using the portal link in the [standard installation](how-to-start-with-minit-desktop-application.md) article. The installation checks for automatic updates and makes sure auto-updating works.    |
 |No     | Yes        | Use the custom installation in [Run the custom installation](#run-the-custom-installation) in this article.  |
-|Yes or No    | No        | You can’t download the package from the portal. You and your admin have specific tasks:<br/><br/></li><li>**You**: Ask your admin to download the MSIX package and share it with you. Then, install the package and [set up the custom location for updates](#set-up-the-custom-location-for-updates).<br/><br/></li><li>**Admin**: Download the updates and put them into the [custom location](#set-up-the-custom-location-for-updates) you set up. |
+|Yes or No    | No        | You can’t download the package from the portal. You and your admin have specific tasks:<br/><br/></li><li>**You**: Ask your admin to download the MSIX package and share it with you. Then, install the package and [set up the custom location for updates](#set-up-the-custom-location-for-updates).<br/><br/></li><li>**Admin**: Download the updates and put them into the [custom location](#set-up-the-custom-location-for-updates) that the user set up. |
 
 ## Run the custom installation
 
 If App Installer is allowed and you have internet access, follow these steps:
 
-1. Download the [MSIX bundle](https://go.microsoft.com/fwlink/?linkid=2276402) file. The application checks for updates automatically at startup.
+1. Download the [MSIX bundle](https://go.microsoft.com/fwlink/?linkid=2276402) file. The app checks for updates automatically at startup.
 1. Select **Open file**.
 1. Select **Install**.
 
 ## Set up the custom location for updates
 
-After you install the Process Mining desktop app with the MSIX package, the system looks for a setting where the update is located. This setting needs to be set to the internal location where the MSIX files for the update are stored.
+After you install the Process Mining desktop app with the MSIX package, the system looks for a setting where the update is located. You need to identify this setting as the internal location where the MSIX files for the update are stored.
 
 1. In the **Settings** menu, select **Options**.
 1. In the **Options** screen, select **Update**.
@@ -49,7 +49,7 @@ After you install the Process Mining desktop app with the MSIX package, the syst
 
 ## (If you have limited access) Upload the latest version of the app
 
-If you don’t have access to extranet locations and can’t access install files for updates, you can store update files on their own cloud. From this location, you can update the application.
+If you don’t have access to extranet locations and can’t access install files for updates, you can store update files on their own cloud. From this location, you can update the app.
 
 For this scenario, the admin needs to upload the latest version of the application [MSIX bundle](https://go.microsoft.com/fwlink/?linkid=2276402) file to the internal location and rename the MSIX file as follows:
 
