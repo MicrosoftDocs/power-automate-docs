@@ -4,7 +4,7 @@ description: Learn about the available SAP automation actions in Power Automate 
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/20/2023
+ms.date: 11/27/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
