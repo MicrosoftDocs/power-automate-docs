@@ -35,7 +35,7 @@ The intended use of the generate flow description using Copilot feature is for u
 ## What are the limitations of the generate flow description with Copilot capability? How can users minimize the impact of the generate flow description with Copilot limitations when using the system?
   
 - The generate flow description with Copilot capability is available to environments deployed in the following regions: Asia Pacific, Australia, Canada, France, Germany, India, Japan, Korea, Norway, Singapore, South Africa, Switzerland, United Arab Emirates, United Kingdom and United States.
-- This feature is currently only available to organizational or school user accounts.
+- This capability is currently available only to users using a work or school account.
 
 ## What operational factors and settings allow for effective and responsible use of the generate flow description with Copilot capability?
 
