@@ -34,7 +34,9 @@ The intended use is to allow users to create scripts quickly and with ease, by j
 
 ## What are the limitations of natural language to code in scripting actions? How can users minimize the impact of natural language to code in scripting action's limitations when using the system?
 
-The natural language to code in scripting actions capability can only generate scripts. It can't answer general questions or anything unrelated to the specific scripting language where the user launched the functionality. Currently, all the scripting actions are supported, but they run a .NET action.
+- The natural language to code in scripting actions capability can only generate scripts. It can't answer general questions or anything unrelated to the specific scripting language where the user launched the functionality. Currently, all the scripting actions are supported, but they run a .NET action.
+- The natural language to code in scripting actions capability is available to environments deployed in the following regions: Asia Pacific, Australia, Canada, France, Germany, India, Japan, Korea, Norway, Singapore, South Africa, Switzerland, United Arab Emirates, United Kingdom and United Stats.
+- The natural language to code in scripting actions capability is only available to OrgID accounts.
 
 ## What operational factors and settings allow for effective and responsible use of natural language to code in scripting actions?
 
