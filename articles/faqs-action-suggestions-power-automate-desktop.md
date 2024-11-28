@@ -38,7 +38,9 @@ We meticulously tested the AI model through various internal processes and revie
 
 ## What are the limitations of the suggested actions? How can the users minimize the impact of feature when using the system?
 
-The suggested actions capability can only propose actions currently available in the Power Automate for desktop’s standard library of actions. It can't propose actions that are custom-made by an organization (custom actions).
+- The suggested actions Copilot capability can only propose actions currently available in the Power Automate for desktop’s standard library of actions. It can't propose actions that are custom-made by an organization (custom actions).
+- The suggested actions Copilot capability is available to environments deployed in the following regions: Asia Pacific, Australia, Canada, France, Germany, India, Japan, Korea, Norway, Singapore, South Africa, Switzerland, United Arab Emirates, United Kingdom and United States.
+- This feature is currently available only to Work or School accounts.
 
 ## Related information
 
