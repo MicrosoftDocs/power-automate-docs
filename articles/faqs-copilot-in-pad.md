@@ -70,7 +70,7 @@ We have a robust set of metrics we're tracking to measure the model's performanc
 - The generative answers capability can only answer to product-related features. It can't answer general questions or anything unrelated to the product.
 - There's a limit of 500 characters to describe a flow that you want to create or ask a question that you have about the product.
 - You can disable completely the Copilot in Power Automate for desktop, by contacting support or by closing the Copilot chat panel and not interact with it.
-- All Copilot capabilities are currently available only to Work or School accounts.
+- Copilot is currently available only to users using a work or school account.
 
 ## What operational factors and settings allow for effective and responsible use of Copilot in Power Automate for desktop?
 
