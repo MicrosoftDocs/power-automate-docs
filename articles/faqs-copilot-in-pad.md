@@ -40,8 +40,8 @@ We have a robust set of metrics we're tracking to measure the model's performanc
 
 ## What are the limitations of Copilot? How can users minimize the impact of Copilot’s limitations when using the system?
 
-- This feature is currently in preview for environments located in the United States and only supports English.
-- This feature is currently available only to Work or School accounts.
+- The generative answers capability is available to environments deployed in the following regions: Asia Pacific, Australia, Canada, France, Germany, India, Japan, Korea, Norway, Singapore, South Africa, Switzerland, United Arab Emirates, United Kingdom and United States.
+- The flow creation with natural language using Copilot and the generate actions description capabilties are only available to US-based environments.
 - The flow creation with natural language capability only supports the following action groups:
   - Clipboard
   - CMD session
@@ -69,7 +69,8 @@ We have a robust set of metrics we're tracking to measure the model's performanc
 
 - The generative answers capability can only answer to product-related features. It can't answer general questions or anything unrelated to the product.
 - There's a limit of 500 characters to describe a flow that you want to create or ask a question that you have about the product.
-- You can disable completely the Copilot in Power Automate for desktop, from the admin center or close the Copilot chat panel and not interact with it.
+- You can disable completely the Copilot in Power Automate for desktop, by contacting support or by closing the Copilot chat panel and not interact with it.
+- All Copilot capabilities are currently available only to Work or School accounts.
 
 ## What operational factors and settings allow for effective and responsible use of Copilot in Power Automate for desktop?
 
