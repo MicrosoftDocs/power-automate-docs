@@ -22,17 +22,16 @@ In the Automation Kit, the Control Center offers comprehensive desktop flow sche
 
 The scheduler page of the control center provides the following functionality:
 
-- View the schedule of recurring Power Automate Cloud flows contained within a solution that call a Power Automate Desktop flow.
-- A schedule view by day
+- Create and manage scheduling of Unattended Desktop Flows
+- A schedule view by month/day/week/agenda
 - View the status of scheduled flows yet to start, succeeded or failed
-- Filter by machine or cloud flow status
-- Calendar view by Month, Week or Day
-- Run the desktop or cloud flow now
-- Open the Power Automate portal desktop flow run monitoring page for deeper analysis
+- Filter by machine or desktop flow status
+- Run the desktop flow "now"; a helpful feature whenever a transient error has occurred and the operator would like to try the run again on-demand
+- Link directly to Desktop Flow run details to see more information related to a successful or failed desktop flow run
 
 ## Cloud flows
 
-As noted only cloud flows that are included as part of a solution. The recent [https://powerautomate.microsoft.com/blog/more-manageable-cloud-flows-with-dataverse-solutions-by-default/](https://powerautomate.microsoft.com/vi-vn/blog/more-manageable-cloud-flows-with-dataverse-solutions-by-default/) includes information on how to use the new preview of "Dataverse solutions by default" to help ensure that cloud flows are included in solutions. Using this feature can assist users in ensuring the scheduled cloud flows that are created are visible in the scheduler.
+Currently, the Scheduler only supports Desktop Flows. A future release will enable scheduling of Desktop Flows and Processes.
 
 ## Calendar views
 
@@ -54,27 +53,21 @@ The status and run information is available with long touch or hover mouse on th
 
 :::image type="content" source="./media/control-center-desktop-flow-scheduler.png" alt-text="Screenshot of Automation Kit - Control Center Desktop Flow Scheduler.":::
 
-The schedule view includes a set of cloud flows based on time from the current time and future scheduled flows over the next days.
+The schedule view includes a set of desktop flows based on time from the current time and future scheduled flows over the next days.
 
 ## Run Now
 
 :::image type="content" source="./media/control-center-desktop-flow-scheduler-run-now.png" alt-text="Screenshot of Automation Kit - Control Center Desktop Flow Scheduler run now dialog.":::
 
-The current version of Run Now executes the selected Power Automate desktop flow. It's assumed that there's no parameters required to execute the desktop flow.
-
-## Open Grid View
-
-:::image type="content" source="./media/control-center-desktop-flow-scheduler-open-grid-view.png" alt-text="Screenshot of new Button 'Open Grid View' on home page to navigate to desktop flows runs page in Power Automate portal.":::
-
-Users can navigate to desktop flows runs page in power automate portal from our Control Center Home page.
+The current version of Run Now executes the selected Power Automate desktop flow. It will re-execute the same scheduled desktop flow using the same input parameters defined when the run was scheduled.
 
 ## Security
 
-To see scheduled desktop flows, the following must be set up:
+To manage scheduled desktop flows, the following must be set up:
 
-1. The Cloud flow and desktop flow must be part of a solution
-1. The user be an owner or have the had the flow shared with them
-1. Belong to a Security role like the **System Customizer** to see all flows in the environment
+1. The desktop flow must be part of a solution.
+1. The Connections must be referenced as part of a Solution Reference, also contained within the context of a Solution (these do not need to be in the same Solutions as the Desktop Flows).
+1. The user must have either the **Automation Schedule User** or **Desktop Flows Support Analyst** roles assigned. With the Automation Schedule User, they will only see and be able to manage schedules they have created.
 
 ## Error messages
 
