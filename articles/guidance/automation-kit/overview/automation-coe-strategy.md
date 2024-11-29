@@ -112,7 +112,7 @@ The Automation Kit and the ALM Accelerator can be combined to help customers gro
 
 ![Automation Maturity Model - Mapping to Automation Kit and ALM Accelerator](../media/automation-matutity-model.png)
 
-The dotted blue boxes indicate the maturity model areas that the Automation Kit addresses using the [Holistic enterprise automation techniques (HEAT)](/power-platform/guidance/automation-coe/heat). Dotted green boxes indicate areas address by the ALM Accelerator.
+The dotted blue boxes indicate the maturity model areas that the Automation Kit addresses using the [Holistic enterprise automation techniques (HEAT)](/power-platform/guidance/automation-coe/heat). Dotted green boxes indicate areas the ALM Accelerator addresses.
 
 ### Empower
 
