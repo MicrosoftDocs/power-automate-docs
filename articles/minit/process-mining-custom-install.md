@@ -21,7 +21,7 @@ Your admin might have disabled the option to install Power Automate Process Mini
 
 ## Installation scenarios
 
-The following table lists the required steps to install the Power Automate Process Mining desktop app for all scenarios.
+The following table lists the different scenarios to install the Power Automate Process Mining desktop app for all scenarios.
 
 |App Installer allowed  |Internet access | Steps |
 |---------|---------|---------|
@@ -31,23 +31,15 @@ The following table lists the required steps to install the Power Automate Proce
 
 ## Run the custom installation
 
-If App Installer is allowed and you have internet access, follow these steps:
+If App Installer is not allowed and you have internet access, follow these steps:
 
 1. Download the [MSIX bundle](https://go.microsoft.com/fwlink/?linkid=2276402) file. The app checks for updates automatically at startup.
 1. Select **Open file**.
 1. Select **Install**.
 
-## Set up the custom location for updates
+If you have access to extranet locations, the appliation will check automaticaly for updates as for standard installation with App Installer. If you have limited access to extranrt which might prevents auto-updates, continue with the following instructions.
 
-After you install the Process Mining desktop app with the MSIX package, the system looks for a setting where the update is located. You need to identify this setting as the internal location where the MSIX files for the update are stored.
-
-1. In the **Settings** menu, select **Options**.
-1. In the **Options** screen, select **Update**.
-1. In the **Local Url to installers** field, enter the internal location where the MSIX files for the update are stored.
-
-:::image type="content" source="media/process-mining-custom-install/update-url.png" alt-text="media/process-mining-custom-install/update-url.png":::
-
-## (If you have limited access) Upload the latest version of the app
+## Upload the latest version of the app
 
 If you don’t have access to extranet locations and can’t access install files for updates, you can store update files on their own cloud. From this location, you can update the app.
 
@@ -64,4 +56,15 @@ Download the text file that contains the product version number.
 1. Copy the last version number from the file into `PowerAutomateProcessMining_{latestVersion}.msixbundle`.
 
     For example, if the last version number is **6.1.2401.1234**, the MSIX file name is `PowerAutomateProcessMining_6.1.2401.1234.msixbundle`.
+
+## Set up the custom location for updates
+
+After you install the Process Mining desktop app with the MSIX package, the system looks for a setting where the update is located. You need to identify this setting as the internal location where the MSIX files for the update are stored.
+
+1. In the **Settings** menu, select **Options**.
+1. In the **Options** screen, select **Update**.
+1. In the **Local Url to installers** field, enter the internal location where the MSIX files for the update are stored.
+
+:::image type="content" source="media/process-mining-custom-install/update-url.png" alt-text="media/process-mining-custom-install/update-url.png":::
+
 
