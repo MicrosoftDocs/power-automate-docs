@@ -37,7 +37,7 @@ If App Installer is not allowed and you have internet access, follow these steps
 1. Select **Open file**.
 1. Select **Install**.
 
-If you have access to extranet locations, the appliation will check automaticaly for updates as for standard installation with App Installer. If you have limited access to extranrt which might prevents auto-updates, continue with the following instructions.
+If you have access to extranet locations, the appliation will check automaticaly for updates as for standard installation with App Installer. If you have limited access to extranet which might prevents auto-updates, continue with the following instructions.
 
 ## Upload the latest version of the app
 
