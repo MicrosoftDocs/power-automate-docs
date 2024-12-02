@@ -12,7 +12,7 @@ contributors:
   - jpapadimitriou
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/09/2024
+ms.date: 10/22/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 ---
@@ -50,7 +50,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 |go.microsoft.com|https|Access to the Power Automate to check for updates|
 |download.microsoft.com|https|Access to the Power Automate to check for updates|
 |login.partner.microsoftonline.cn|https|Access to the Power Automate for desktop cloud discovery|
-|s2s.config.skype.com<br>use.config.skype.com|https|Access to preview features managed through flighting and configuration endpoints.|
+|s2s.config.skype.com<br>use.config.skype.com<br>config.edge.skype.com|https|Access to preview features managed through flighting and configuration endpoints.|
 |s2s.config.ecs.infra.gov.teams.microsoft.us|https|Access to preview features managed through flighting and configuration endpoints for US government cloud.|
 | \*.api.powerplatform.com <br> \*.api.powerplatformusercontent.com | https | Access to several Power Platform APIs. |
 | *.api.gov.powerplatform.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
@@ -127,6 +127,20 @@ Learn more about approvals email routing in the [approvals email delivery](https
 ### Azure SQL database
 
 If you need to authorize IP addresses for your Azure SQL database, you should use the [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
+
+## FAQ
+
+### There are lots of details here&mdash;what's the high level recommendation for IP Address configuration?
+
+The simplest mechanism to configure a firewall to allow Power Automate cloud flows to call external services through [connectors](/connectors/overview) is to use [Azure service tags](/azure/virtual-network/service-tags-overview). The primary service tag for Logic Apps connectors is **AzureConnectors**, as described in [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
+
+### If I'm using Azure Firewall, do I need to keep track of individual IP addresses?
+
+You should use [Azure service tags](/azure/virtual-network/service-tags-overview). By using service tags in your network security group rules, you don't need to constantly monitor and manually update IP ranges for each service.
+
+### If I'm using on-premises firewall, do I need to keep track of individual IP addresses?
+
+You should use the [Service Tags with an on-premises firewall](/azure/virtual-network/service-tags-overview#service-tags-on-premises) so you don't need to monitor and manually update IP ranges. The [Service Tag Discovery API](/azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api) provides access to the latest IP address ranges associated with each service tag, enabling you to stay current with changes.
 
 ## Related information
 

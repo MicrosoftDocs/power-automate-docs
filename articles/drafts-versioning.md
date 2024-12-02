@@ -1,7 +1,6 @@
 ---
 title: Drafts and versioning for cloud flows
 description: Learn about drafts and versioning feature set for cloud flows.
-services: ''
 suite: flow
 author: ChrisGarty
 contributors:
@@ -9,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 06/27/2024
+ms.date: 11/12/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -83,6 +82,10 @@ When you view a flow's version history list, you can select a previous version f
 
 Dataverse is the storage used for drafts that aren't published. It's also the storage used for version history. Solution cloud flows are defined in Dataverse, so they can have drafts and a version history.
 
+### Why is the drafts and versioning feature set available only in the new designer?
+
+Drafts and versioning capabilities are available in the [new cloud flows designer](/power-automate/flows-designer#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer). Rather than adding drafts and versioning support in the classic designer, we're investing in additional drafts and versioning capabilities for the [new cloud flows designer](/power-automate/flows-designer#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+
 ### How do I change a non-solution cloud flow into a solution cloud flow?
 
 When you [add your non-solution cloud flow into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution), it adds the definition into Dataverse so it can have versions.
@@ -119,7 +122,7 @@ Not at this time.
 
 Versions can be compared by viewing them in succession, or by opening up another browser tab to view a specific version. A side-by-side comparison of versions isn't available at this time.
 
-### Can connection permissions be associated with a certain version so a new connection authorization is needed when the flow is changed by a co-owner?
+### Can connection permissions be associated with a certain version so a new connection authorization is needed when a co-owner changes the flow?
 
 Not at this time.
 

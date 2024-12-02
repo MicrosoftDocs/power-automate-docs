@@ -2,7 +2,7 @@
 title: Process, add, update and requeue work queue items
 description: Work queue processing options through Power Automate cloud flows, desktop flows and Dataverse API's.
 ms.topic: conceptual
-ms.date: 09/26/2024
+ms.date: 10/14/2024
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -112,9 +112,9 @@ The flow won't request a new item when it loops back to the top of the **Process
 
 When the max retry count is reached, the update action sends the update to the orchestrator, changing the item's status to IT Exception and including any provided processing notes.
 
-#### Adding & Requeuing work queue items examples from PAD
+#### Adding and requeuing work queue items examples from PAD
 
-The **Add work queue item** enables desktop flow users to populate work queue items into a work queue, which has been set up in the flow portal.
+The **Add work queue item** enables desktop flow users to populate work queue items into a work queue, which has been set up in the flow portal. Batch item creation is supported by using the [**Add work queue items**](actions-reference/workqueues.md#add-multiple-work-queue-items) action.
 
 In this example, an Excel file in .csv is dropped into a directory on a daily basis and each row needs to be added to a work queue.
 
