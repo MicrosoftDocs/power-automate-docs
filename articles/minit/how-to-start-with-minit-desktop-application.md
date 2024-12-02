@@ -1,15 +1,15 @@
 ---
 title: Standard installation of Power Automate Process Mining desktop app
 description: Use the standard installation instructions to access Power Automate Process Mining desktop app.
-author: rosikm
+author: janPidych
 contributors:
   - janPidych
   - rosikm
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 07/18/2023
-ms.author: michalrosik
+ms.date: 12/02/2024
+ms.author: janpidych
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.audienceType:
@@ -19,7 +19,7 @@ search.audienceType:
 
 # Standard installation of Power Automate Process Mining desktop app
 
-Before you can start using Power Automate Process Mining desktop application, you need to download and install it to your desktop. You can do this using the standard installation from Power Automate Process Mining web page, or with a custom installation.
+Before you can start using Power Automate Process Mining desktop app, you need to download and install it to your desktop. You can do this using the standard installation from the Power Automate Process Mining web page, or with a custom installation.
 
 The standard installation process requires access to Microsoft Windows App Installer. To find out if you access, contact your admin.
 
