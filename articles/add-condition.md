@@ -1,19 +1,18 @@
 ---
-title: Add a condition to a cloud flow in Power Automate (contains video) | Microsoft Docs
+title: Add a condition to a cloud flow in Power Automate | Microsoft Docs
 description: Specify that a cloud flow performs one or more tasks only if a condition is true.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/16/2022
-ms.author: deonhe
+ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

@@ -5,12 +5,13 @@ author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/15/2023
+ms.date: 10/14/2024
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors:
   - jpapadimitriou
   - tapanm-msft
+  - iomavrid
 search.audienceType: 
   - flowmaker
   - enduser
@@ -29,18 +30,19 @@ Custom actions exist at the environment level. As a best practice, use a "dev&md
 ## Known limitations
 
 - Custom actions groups can't exceed 30 MB upon upload.
-- Specific endpoints must be included in the allowlist for desktop flows containing custom actions to work properly. More information: [Desktop flow services required for runtime](../ip-address-configuration.md#desktop-flows-services-required-for-runtime)
+- Specific endpoints must be included in the allowlist for desktop flows containing custom actions to work properly. More information: [Desktop flow services required for runtime](../ip-address-configuration.md#services-required-for-desktop-flows-runtime)
 - Application lifecycle management (ALM) isn't fully supported for desktop flows with dependencies on custom actions.
 - Upload date might differ in the portal than what is shown in the Assets library inside Power Automate for desktop.
 - The Assets library can't display more than 5000 custom actions groups.
 - Custom actions are not available for organizations that have enabled [Bring your own key (BYOK)](/azure/information-protection/byok-price-restrictions) from the protection service.
 - Machines belonging in a [hosted machine group](hosted-machine-groups.md) should have the appropriate certificates required for custom actions, as set by your organization, installed on them. You can create a [golden image](/azure/virtual-desktop/set-up-golden-image), containing the respective certificate(s) and provide it during the creation process of the respective hosted machine group.
+- All dependencies used in custom actions and Power Automate for desktop must be the same version. Using different versions of the same dependency within the same process isn't supported.
 
 ## Next steps
 
 [Create custom actions](create-custom-actions.md)
 
-### See also
+## Related information
 
 - [Assets library](assets-library.md)
 - [Upload custom actions](upload-custom-actions.md)

@@ -2,7 +2,7 @@
 title: Manage flows in Microsoft Teams
 description: Learn how to manage flows using the Workflows app in Microsoft Teams
 suite: flow
-author: msftman
+author: v-aangie
 contributors:
   - kewaiss
   - v-aangie
@@ -42,7 +42,7 @@ Column | Description
 
 The Workflows app in Microsoft Teams shows your flows that are located only in your organization's default environment.
 
-### See also
+## Related information
 
 - [Create flows in Microsoft Teams](./teams-app-create.md)
 - [Microsoft Teams connector documentation](/connectors/teams/)

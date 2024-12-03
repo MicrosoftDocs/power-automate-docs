@@ -4,14 +4,15 @@ description: See all the available CyberArk actions.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 09/15/2023
+ms.date: 05/30/2024
 ms.author: dipapa
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -26,7 +27,7 @@ CyberArk offers an identity security platform that secures human and machine ide
 
 To find the required information to populate the action, see the following instructions:
 
-- **Application ID**: To find the application ID, open CyberArk Password Vault on a web browser and navigate to the **Applications** tab.
+- **Application ID**: To find the application ID, open CyberArk Password Vault on a web browser and navigate to the **Applications** tab. Select **Components**, open the  **Private Ark** application, and then select the desired **Vault**. You can add **Owners** here.
 
 - **Safe**: Populate the name of the safe displayed in PrivateArk Client.
 
@@ -42,8 +43,8 @@ Retrieves a password for a specific application from CyberArk.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Server address|No|[Text value](../variable-data-types.md#text-value)||The base URI for the web request|
-|Application ID|No|[Text value](../variable-data-types.md#text-value)||The application ID to use for the web request|
+|Server address|No|[Text value](../variable-data-types.md#text-value)||The base URI for the web request to connect. For example, `https://yourservice.skytap.com:111`|
+|Application ID|No|[Text value](../variable-data-types.md#text-value)||The application ID to use for the web request. </br></br>To find the application ID, open CyberArk Password Vault on a web browser and navigate to the **Applications** tab. Select **Components**, open the **Private Ark** application, and then select the desired Vault. You can add Owners here.|
 |Safe|No|[Text value](../variable-data-types.md#text-value)||The safe on CyberArk in which the application belongs|
 |Folder|No|[Text value](../variable-data-types.md#text-value)||The folder necessary for the web request query|
 |Object|No|[Text value](../variable-data-types.md#text-value)||The object necessary for the web request query|
@@ -51,8 +52,8 @@ Retrieves a password for a specific application from CyberArk.
 |Accept untrusted certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to accept untrusted certificates|
 |Certificate location|N/A|Don't use certificate, Load certificate from Windows Store, Load certificate from file|Don't use certificate|Specifies how to load (if needed) the certificate for the request|
 |Use only valid certificates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to load only valid certificates from the store|
-|Store certificate path|No|[Text value](../variable-data-types.md#text-value)||The path of the certificate in the certificate store|
-|Certificates path|No|[File](../variable-data-types.md#files-and-folders)||The path of the certificate selected from the store|
+|Store certificate path|No|[Text value](../variable-data-types.md#text-value)||The path of the certificate in the certificate store. The certificate is represented by its serial number. The path should use the following format:</br></br> (local path to certificate)/(certificate serial)|
+|Certificates path|No|[File](../variable-data-types.md#files-and-folders)||The path of the certificate.|
 |Certificate password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the certificate file|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The waiting time (in seconds) to get results from CyberArk|
 
@@ -72,6 +73,7 @@ Retrieves a password for a specific application from CyberArk.
 |Error response from web request|Indicates that the web request returned an error response|
 
 ### Known issues
+
 - NTLM Authentication is currently not supported for web requests in Power Automate for desktop.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

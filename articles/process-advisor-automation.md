@@ -1,5 +1,5 @@
 ---
-title: Identify automation opportunities (contains video)
+title: Identify automation opportunities
 description: Identify opportunities to automate your processes with automation recommendations.
 author: donums
 contributors:
@@ -28,7 +28,7 @@ To automate an activity, select the **+Automate activities** option above the pr
 
 :::image type="content" source="media/automation-reco-2.png" alt-text="Screenshot of the Automate activities options.":::
 
-### See also
+## Related information
 
 [Connector overview](/connectors/connectors)<br/>
 [Visualize processes](process-advisor-visualize.md)

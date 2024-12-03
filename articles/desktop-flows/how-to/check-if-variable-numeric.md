@@ -1,13 +1,13 @@
 ---
 title: Check if a variable is numeric
 description: Check if a variable is numeric	
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 07/13/2021
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

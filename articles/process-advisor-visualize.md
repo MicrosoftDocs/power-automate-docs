@@ -93,7 +93,7 @@ The size of the circles in the scatter plot indicates the frequency of usage of 
 
 - **Actions by application**: This is a pie chart that is hows the distribution of actions performed on each application. This visual helps identify which applications have the most actions or manual inputs, providing insight into areas that may require further optimization or automation.
 
-### See also
+## Related information
 
 [Connector overview](/connectors/connectors)<br/>
 [Overview of cloud flows](overview-cloud.md)

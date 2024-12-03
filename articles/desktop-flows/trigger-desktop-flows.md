@@ -1,13 +1,15 @@
 ---
 title: Trigger desktop flows from cloud flows
 description: See how to trigger Power Automate desktop flows from cloud flows.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/15/2023
+ms.date: 06/25/2024
 ms.author: pefelesk
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
+  - rpapostolis
+  - DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -80,5 +82,10 @@ To trigger a desktop flow from a cloud flow:
    > - The limit of the input size for a desktop flow is 2 MB (1 MB for China regions).
 
     :::image type="content" source="media/trigger-desktop-flows/run-desktop-flow-v2-action-properties-2.png" alt-text="Screenshot of the input variables in the Run a flow built with Power Automate for desktop action.":::
+
+## Known limitations
+
+- We currently support up to 70 desktop flows runs per minute for every connection.
+- Cancelling a parent cloud flow doesn't stop its child desktop flows if the **Asynchronous Pattern** is disabled under the 'Run a flow built with Power Automate for desktop' action settings.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

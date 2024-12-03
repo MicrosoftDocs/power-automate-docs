@@ -1,10 +1,9 @@
 ---
 title: Business approvals templates approvals kit comparison
 description: Learn the differences between the business approvals templates approvals kit and the Power Platform approvals connector.
-documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
-ms.topic: article
+ms.topic: conceptual
 ms.date: 11/15/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
@@ -28,7 +27,7 @@ Whether you're a seasoned workflow expert or just getting started, the approvals
 
 ## Feature comparison
 
-This table provides a comparison between the approvals connector action and the approvals kit. It highlights the core use case, core product features, triggers, premium connectors, and other requirements for each option. Use this information determine which option is best suited for your specific needs and requirements.
+This table provides a comparison between the approvals connector action and the approvals kit. It highlights the core use case, core product features, triggers, premium connectors, and other requirements for each option. Use this information to determine which option is best suited for your specific needs and requirements.
 
 |Feature |Approvals Connector|Approvals Kit|
 |--------------------|-------------------|-------------|

@@ -1,20 +1,14 @@
 ---
-title: Troubleshoot common issues with Outlook email in Power Automate | Microsoft Docs
+title: Troubleshoot common issues with Outlook email in Power Automate
 description: Troubleshoot common issues with Outlook email or mail notifications.
 services: ''
 suite: flow
-documentationcenter: na
-author: msftman
-editor: ''
-tags: ''
-ms.devlang: na
+author: v-aangie
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 05/10/2022
-ms.author: deonhe
-ms.reviewer: gtrantzas
+ms.topic: conceptual
+ms.date: 10/09/2024
+ms.author: angieandrews
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -76,12 +70,13 @@ To resolve the issue, go to ["REST API is not yet supported for this mailbox" er
 
 Use expressions to encode the attachment with base64. The attachment will be recognized after you're done.
 
-### More information
+## Related information
 
-[Overview of using Outlook with Power Automate](email-overview.md)  
-[Create flows to manage email](create-email-flows.md)  
-[Customize email in flows](email-customization.md)  
-[Create flows for popular email scenarios](email-top-scenarios.md)  
+- [Overview of using Outlook with Power Automate](email-overview.md)
+- [Create flows to manage email](create-email-flows.md)
+- [Customize email in flows](email-customization.md)
+- [Create flows for popular email scenarios](email-top-scenarios.md)
+- [Training: Create flows to manage email (module)](create-email-flows.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

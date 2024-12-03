@@ -6,8 +6,8 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.custom: 
 ms.date: 04/28/2022
-ms.author: kvivek
-ms.reviewer: kvivek
+ms.author: angieandrews
+ms.reviewer: angieandrews
 ---
 # Power Automate webinars
 
@@ -61,7 +61,7 @@ by Debraj Ghosh, Stefan Buffner, and Shivani Agarwal<br/>
 by John Anastasopoulos and Stephanie Whitaker<br/>
 [Register and watch now](https://info.microsoft.com/ww-landing-How-to-use-Power-Automate-in-Windows-11.html?lcid=en-us)
 
-**Automation Through Conversation with Power Automate and Power Virtual Agents**  
+**Automation Through Conversation with Power Automate and Microsoft Copilot Studio** (formerly, Power Virtual Agents)  
 by Jack Rowbotham and Kent Weare<br/>
 [Register and watch now](https://info.microsoft.com/ww-landing-automateconversevirtualagents.html?lcid=en-us)
 
@@ -69,8 +69,7 @@ by Jack Rowbotham and Kent Weare<br/>
 by Pranav Rastogi and Apostolis Papaioannou<br/>
 [Register and watch now](https://info.microsoft.com/ww-landing-businesscenterexcellencerpa.html?lcid=en-us)
 
-
-### See also
+## Related information
 
 [More Power Automate webinars](https://make.powerautomate.com/blog/category/webinars/)
 

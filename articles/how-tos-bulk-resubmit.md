@@ -1,16 +1,12 @@
 ---
 title: Cancel or resubmit flow runs in bulk in Power Automate
 description: Learn how to resubmit and cancel failed or successful flow runs in Power Automate.
-services: ''
 suite: flow
-documentationcenter: na
-author: natalie-pienkowska
-editor: ''
-tags: ''
+author: DBEKI
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/05/2023
-ms.author: napienko
+ms.date: 11/21/2024
+ms.author: dbekirop
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -19,47 +15,74 @@ search.audienceType:
 
 # Cancel or resubmit flow runs in bulk
 
-You can resubmit previous runs of a flow in bulk. You can also cancel runs that are in progress.
+You can cancel or resubmit your flow runs in bulk instead of one at a time, which can be a huge time saver.
 
 ## Resubmit flow runs
 
-Follow these steps to resubmit flow runs in bulk:
+You can resubmit previous runs of a flow in bulk. To do this, follow these steps:
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the left panel, select **My flows**.
-1. On the right panel, select the cloud flow that you would like to resubmit or cancel.
+1. On the right panel, select the cloud flow that you want to resubmit or cancel.
 1. Select **All runs**.
 
-    >[!div class="mx-imgBorder"]
-    >![Screenshot that displays all runs for the selected flow.](./media/cancel-resubmit-how-to/all-runs.png "All runs for the selected flow")
+    :::image type="content" source="media/cancel-resubmit-how-to/all-runs.png" alt-text="Screenshot that displays all runs for the selected flow.":::
 
-   >[!TIP]
-   >The flow must have runs to cancel or resubmit the flow runs.
+   > [!TIP]
+   > - The flow must have runs to cancel or resubmit the flow runs.
+   > - You can resubmit or cancel up to 20 flows at a time.
 
-1. Select the flow runs that you would like to resubmit or cancel on the **Run history** page.
-
-    >[!div class="mx-imgBorder"]
-    >![Screenshot that displays the selected runs for the selected flow.](./media/cancel-resubmit-how-to/select-runs.png "Selected runs for the selected flow")
-
-   >[!TIP]
-   >You can resubmit or cancel up to 20 flows at a time.
-
+1. On the **Run history** page, select the flow runs that you want to resubmit or cancel.
 1. Select **Resubmit flow run(s)**.
 
-    >[!div class="mx-imgBorder"]
-     >![Screenshot that displays Resubmit flow run(s) button.](./media/cancel-resubmit-how-to/resubmit-runs.png "Resubmit flow run(s) button")
+    :::image type="content" source="media/cancel-resubmit-how-to/select-runs.png" alt-text="Screenshot that displays the selected runs for your flow.":::
 
-   >[!IMPORTANT]
-   >The number of flows that you can resubmit is limited based on the maximum number of API calls for the connectors in the flow.
+   > [!IMPORTANT]
+   > The number of flows that you can resubmit is limited based on the maximum number of API calls for the connectors in the flow.
 
 ## Cancel flow runs
 
-To cancel flow runs that are in progress, follow the steps to resubmit flow runs as outlined earlier in this article with one exception: In step 6, select **Cancel flow run(s)** as shown in the following image.
+You can cancel flow runs on the related flow's **Run history** page, or by using a [template](https://make.preview.powerautomate.com/galleries/public/templates/52c2eb66c0664b3b82480d1adcc6c1b4/cancel-all-of-my-flow-runs?environment=e85a08f2-6b04-ef9d-bbe3-05c8fb307b0b). The bulk cancel feature available through the flow portal is most efficient when you cancel up to 20 flows at a time. We recommend that you use the template linked previously in this section for more than 20 runs when possible. This also applies to runs in the hundreds. Alternatively, you can use the bulk cancel feature for all flows in **Waiting** or **Running** status regardless of the count. To set an expectation of how this utility functions review the following details.
 
->[!div class="mx-imgBorder"]
->![Screenshot that displays the Cancel flow run(s) button.](./media/cancel-resubmit-how-to/cancel-runs.png "Cancel flow run(s) button")
+### Cancel flow runs in bulk on the flow 'Run history' page
 
->[!NOTE]
->The resubmit and cancel features aren't available for sovereign cloud customers.
- 
+1. To cancel flows, navigate to the flow portal and select **My flows**.
+1. Next to the flow, select the ellipses (&hellip;) > **Run history**.
+
+    Alternatively, you can select the flow name > **All runs** from the **28-day run history** list.
+
+1. You can manually select up to 20 flows that are in **Waiting** or **Running** state.
+
+    To initiate the bulk cancellation feature instead, select **Cancel all flow runs** in the **Run history** menu at the top of the screen.
+
+    :::image type="content" source="media/cancel-resubmit-how-to/flowrunlist.png" alt-text="Screenshot of the 'Cancel all flow runs' option.":::
+
+1. After you select **Cancel all flows**, a message appears asking you to initiate the bulk utility. Select **Yes**. If you're concerned about further unwanted flow runs being initiated, you can turn off the flow.
+
+    :::image type="content" source="media/cancel-resubmit-how-to/cancelprompt.png" alt-text="Screenshot of the 'Cancel all runs for this flow' message.":::
+
+1. If there are more than 20 flows in **Waiting** or **Running** status, another message might appear to indicate that it might take several minutes for the flow run statuses to change to **Canceling**. This message means your flows are suspended, and no further actions are executed for flows that are already **Running**. Flows in **Waiting** status are also terminated without actions being executed.
+
+    :::image type="content" source="media/cancel-resubmit-how-to/workingonit.png" alt-text="Screenshot of the 'We're working on it' message that asks you to wait for a flow status.":::
+
+1. Get the updated status changes in the run history list by periodically refreshing your browser screen.
+
+    > [!NOTE]
+    > - Flows in the **Running** state are suspended and change to a state of **Canceling** before eventually changing to **Canceled**.
+    > - This process can sometimes take up to 24 hours more more.
+    > - In this scenario, the flows are suspended, and no further actions are executed.
+    > - If you select a flow run in the **Canceling** state, it might appear that the spinner near an action is in motion, but it's in a suspended state. When flows are actually running, a notification banner diplays to indicate your flow is running. This isn't the case for suspended flows in the **Canceling** state.
+
+The following screenshot shows the banner when a flow is running. A suspended flow in the **Canceling** status doesn't contain this banner.
+
+:::image type="content" source="media/cancel-resubmit-how-to/runningflow.png" alt-text="Screenshot of the banner that indicates a flow is running.":::
+
+Flows that exceeded the [concurrency](limits-and-config.md#concurrency-looping-and-debatching-limits) setting might be visible in the **Waiting** state alongside other flow runs in the **Canceling** state. This is by design. The flows were suspended when the bulk cancel was submitted unless they were triggered after the feature was used. The state changes to **Canceling** when their turn to be processed comes up in the queue.
+
+:::image type="content" source="media/cancel-resubmit-how-to/wait-cancel.png" alt-text="Screenshot of flow runs in states of 'Waiting' and 'Canceling'.":::
+
+You can ensure that flows in the **Running** or **Waiting** state before submitting a bulk cancel request were suspended and eventually change to the **Canceled** state.
+
+:::image type="content" source="media/cancel-resubmit-how-to/canceled.png" alt-text="Screenshot of flow runs in the state of 'Canceled'.":::
+
 [!INCLUDE[footer-include](includes/footer-banner.md)]

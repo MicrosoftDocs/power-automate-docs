@@ -79,11 +79,13 @@ Now that you've connected your Power BI workspace to the process mining capabili
 
 1. In **Advanced Options**, select a premium Power BI license. (We recommend a **premium per capacity** license.)
 
-1. Select **Save**.
+1. Select **Apply**.
 
-1. Select **Access**.
+1. In the created workspace, select **Manage access**.
 
-1. Search for and add **Process Insights Prod**.
+2. Select **Add people or groups**.
+
+1. Select **Search for**, and then add **Process Insights Prod**.
 
 1. Assign it **admin access**.
 
@@ -175,6 +177,6 @@ Once this step is done, you see the report in your Power BI workspace with the r
 
 If you encounter issues or error messages, go to [Issues with your own Power BI workspace](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace).
 
-### See also
+## Related information
 
 [Workspaces in Power BI](/power-bi/collaborate-share/service-new-workspaces)

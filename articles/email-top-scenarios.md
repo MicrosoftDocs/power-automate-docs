@@ -1,10 +1,10 @@
 ---
 title: Create flows for popular email scenarios in Power Automate
 description: Learn about top scenarios where you can use Power Automate to manage your email.
-author: msftman
+author: v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/09/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -73,10 +73,11 @@ You can further format the data by using expressions. In following example, the 
 
 - Add the [Send an email (V2)](/connectors/office365/) action, and then add the output from an HTML table into the body of the email.
 
-### See also
+## Related information
 
 - [Overview of using Outlook and Power Automate](email-overview.md)  
 - [Create flows to manage email](create-email-flows.md)  
-- [Customize email in flows](email-customization.md)  
+- [Customize email in flows](email-customization.md)
+- [Training: Create flows to manage email (module)](create-email-flows.md) 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

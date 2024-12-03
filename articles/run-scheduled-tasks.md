@@ -2,7 +2,7 @@
 title: Run flows on a schedule in Power Automate
 description: Learn how to automate recurring tasks by running flows on a schedule, such as every day or every hour.
 suite: flow
-author: natalie-pienkowska
+author: kisubedi
 contributors:
   - kisubedi
   - natalie-pienkowska
@@ -12,8 +12,9 @@ ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 09/04/2024
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
   - enduser
@@ -91,7 +92,7 @@ Copilot adds the following parameters to the flow it created for you in the acti
 
 ---
 
-### See also
+## Related information
 
 [Advanced options in Azure Logic Apps](/azure/connectors/connectors-native-recurrence)
 

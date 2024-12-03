@@ -26,7 +26,7 @@ Custom actions developed by your organization and uploaded to the respective env
 
 Custom actions exist at the environment level. As a best practice, use a "dev&mdash;test&mdash;prod" model when developing custom actions.
 
-### See also
+## Related information
 
 - [Assets library](../assets-library.md)
 - [Upload custom actions](../upload-custom-actions.md)

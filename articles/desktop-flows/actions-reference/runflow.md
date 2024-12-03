@@ -1,17 +1,16 @@
 ---
 title: Run desktop flow actions reference
 description: See how to use the Run desktop flow actions.
-author: georgiostrantzas
-
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/24/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 03/14/2024
+ms.author: pefelesk
+ms.reviewer: matp
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
-- PetrosFeleskouras
 search.audienceType: 
   - flowmaker
   - enduser
@@ -25,7 +24,7 @@ To find more information about how to use the **Run desktop flow** action, go to
 
 >[!NOTE]
 >
-> - A flow's dependencies can't be more than 30 other flows.
+> - A flow's dependencies can't be more than 150 other flows.
 > - Two flows can't directly or indirectly call one-another as this causes a recursion.
 > - In org tenants, the flows must be under the same environment.
 
@@ -33,13 +32,13 @@ To find more information about how to use the **Run desktop flow** action, go to
 
 ## <a name="runflow"></a> Run desktop flow
 
-Runs a desktop flow that can receive input variables and may produce output variables. The parent flow run will be paused until the called desktop flow completes.
+Runs a desktop flow that can receive input variables and might produce output variables. The parent flow run will be paused until the called desktop flow completes.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Desktop flow|No|Desktop flow||Select the desktop flow to run from within this flow|
+|Desktop flow|No|Desktop flow||Select the desktop flow to run from within this flow. The called flow always runs in the same Windows session as the parent flow.|
 
 ### Variables produced
 

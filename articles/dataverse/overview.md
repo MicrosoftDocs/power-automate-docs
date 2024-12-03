@@ -4,13 +4,12 @@ description: "Learn how to create Power Automate flows that use Microsoft Datave
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
+author: v-aangie
 ms.author: Matow
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -21,7 +20,7 @@ search.audienceType:
 
 # Overview of how to integrate Power Automate flows with Dataverse
 
-With [Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/?ef_id=4425b9cfc5191d82cc2ed9a8b6fe9233:G:s&OCID=AID2100430_SEM_4425b9cfc5191d82cc2ed9a8b6fe9233:G:s&msclkid=4425b9cfc5191d82cc2ed9a8b6fe9233), you can store and manage data for business applications and integrate natively with other Microsoft Power Platform services like Power BI, Power Apps, Power Virtual Agents, and AI Builder from your [cloud flows](../overview-cloud.md).
+With [Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/?ef_id=4425b9cfc5191d82cc2ed9a8b6fe9233:G:s&OCID=AID2100430_SEM_4425b9cfc5191d82cc2ed9a8b6fe9233:G:s&msclkid=4425b9cfc5191d82cc2ed9a8b6fe9233), you can store and manage data for business applications and integrate natively with other Microsoft Power Platform services like Power BI, Power Apps, Microsoft Copilot Studio, and AI Builder from your [cloud flows](../overview-cloud.md).
 
 The Microsoft Dataverse connector provides [several triggers](#overview-of-triggers) to start your flows and [many actions](#overview-of-actions) that you can use to create or update data in Dataverse while your flows run. You can use Dataverse actions even if your flows don't use a trigger from the Dataverse connector.
 

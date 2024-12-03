@@ -177,9 +177,9 @@ The most common problems that you will encounter when creating adaptive cards ar
 
         - You can validate the format of your JSON by pasting the JSON into the [Card Payload Editor](https://adaptivecards.io/designer/).
 
-    - Missing Image URLs – All image values within Adaptive Cards must refer to a valid URL. Full image content is not be directly supported in an Adaptive Card. Test your image links by pasting the URL into the browser to see if an image is displayed.
+    - Missing Image URLs – All image values within Adaptive Cards must refer to a valid URL. Full image content is not directly supported in an Adaptive Card. Test your image links by pasting the URL into the browser to see if an image is displayed.
 
-- Adaptive Cards may not look like what’s expected during to styling and schema constraints:
+- Adaptive Cards may not look like what’s expected due to styling and schema constraints:
 
     - Check that placeholder values, text styles, and any markup language align with Adaptive Card schema requirements (review **Adaptive Card schema best practices** [here](https://adaptivecards.io/explorer/))
 

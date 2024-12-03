@@ -7,10 +7,11 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 09/04/2024
 ms.author: rakrish
 ms.reviewer: angieandrews
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
 ---
@@ -77,7 +78,9 @@ The parameter shows on the configuration panel to the left.
 
 ---
 
-### See also
+## Related information
 
-[Overview of the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview)
+- [Overview of the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview)
+- [Regenerate the SAS key used in HTTP trigger flows](regenerate-sas-key.md)
+
 
