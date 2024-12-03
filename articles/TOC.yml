@@ -793,7 +793,7 @@
       href: ./desktop-flows/actions-reference/custommodule.md
     - name: Cloud Connector actions
       href: ./desktop-flows/actions-reference/cloudconnectors.md
-    - name: SAP GUI
+    - name: SAP automation
       href: ./desktop-flows/actions-reference/sap.md
     - name: Power Automate secret variables actions (preview)
       href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
