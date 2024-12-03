@@ -1,10 +1,10 @@
 ---
-title: Power Fx in desktop flows (preview)
+title: Power Fx in desktop flows
 description: Learn about using Power Fx for creating expressions in desktop flows.
 author: nikosmoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 09/18/2024
+ms.date: 11/7/2024
 ms.author: nimoutzo
 ms.reviewer: dmartens
 contributors: 
@@ -17,22 +17,13 @@ search.audienceType:
 
 # Power Fx in desktop flows
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
 [Power Fx](/power-platform/power-fx/overview) is the low-code language for expressing logic across [Microsoft Power Platform](/power-platform). It's a general-purpose, strong-typed, declarative, and functional programming language.
 
 Power Fx is expressed in human-friendly text. It's a low-code language that makers can work with directly in an Excel-like formula bar or Visual Studio Code text window. The "low" in low-code is due to the concise and simple nature of the language, making common programming tasks easy for both makers and developers.
 
 Power Fx enables the full spectrum of development from no-code makers without any programming knowledge to pro-code for the professional developers. It enables diverse teams to collaborate and save time and efforts.
 
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality.
-> - These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature requires Power Automate for desktop v2.39 or later.
-
-## Using Power Fx in desktop flow (preview)
+## Using Power Fx in desktop flow
 
 To use Power Fx as an expression language in a desktop flow, you have to create a desktop flow and enable the respective toggle button when creating the flow through Power Automate for desktop's console.
 
@@ -123,6 +114,9 @@ In September 2024 release:
 >
 > - **Child flow outputs**: Exercise caution when using output variables from child flows in a Power Fx enabled desktop flow. This involves output variables of types list, custom object, and data table.
 > - **Single-value column arrays**: An array created using an expression like `=[1, 2, 3]` results in a single-value column array in Power Fx enabled flows, whose items are objects with a single property: `{Value: 1}`. Attempting to access the `Value` property of this item, after modifying the first array with an action, results in an authoring error.
+> - **Power Fx function usage**: In certain Power Fx functions, such as `IsEmpty()`, previous versions accepted a dynamic variable as an argument and didn't throw a validation error. With the 2.48 version, using a variable that is handled as a dynamic variable results in a validation error, and a failure to execute existing flows. The resolution to this is to apply proper casting to the dynamic (untyped) value. Learn more about casting functions in [Untyped object data type](/power-platform/power-fx/untyped-object). You might encounter this issue when editing a flow and receive an error message like "Invalid argument type (UntypedObject). Expecting a Table value instead." To resolve this issue, follow the error messages to convert your expression into a valid one.
+>   - Other examples of functions that might throw a validation error when using a combination of dynamic and typed variables are `Sum()`, `Filter()`, `Concatenate()` and operators like `in` (for example, `"string" in DynamicValueObject`).
+> - **Variable comparison**: Similar to the previously mentioned issue, there can be type incompatibilities when you apply comparison operators (`=`, `<>`, `>`, `<` etc.) on expressions involving dynamic values. Exercise caution and apply the proper casting before you compare dynamic values.
 
 ### 2.43
 

@@ -8,7 +8,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 09/16/2024
+ms.date: 10/21/2024
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -22,11 +22,11 @@ ms.collection: bap-ai-copilot
 You can create, configure, and customize your cloud flows with the classic designer or the cloud flows designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
 
 > [!NOTE]
-> Here are some visual cues that tell you that you're using the cloud flows designer (not the classic designer):
+> Here are some visual cues that tell you that you're using the new cloud flows designer (not the classic designer):
 > - The cards in the flow are small.
 > - The standalone action configuration pane appears on the left when you select a card.
 >
-> More information: [Identify differences between the classic designer and the cloud flows designer](#identify-differences-between-the-classic-designer-and-the-cloud-flows-designer)
+> More information: [Identify differences between the classic designer and the new cloud flows designer](#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer)
 
 The following screenshot shows the features of the AI-powered cloud flows designer.
 
@@ -35,16 +35,27 @@ The following screenshot shows the features of the AI-powered cloud flows design
 Legend:
 
 1. **Left arrow button**: Return to the previous page.
+1. [**Undo and Redo buttons**](#undo-and-redo): Reverse or reinstate modifications you made to the flow.
 1. [**Send feedback button**](#send-feedback): Send us feedback about your flow creation experience or general comments about the AI-powered designer.
-1. **Action/trigger name**: The action or trigger card that is selected in your flow in the center of the page.
-1. [**More commands button**](#more-commands): Add a note to the selected card, or delete the card.
-1. **Collapse button**: Hide the pane. When the pane is collapsed, the **Expand** button (**\>\>**) appears in the upper-left corner. Select it to show the pane again.
-1. [**Copilot button**](get-started-with-copilot.md): Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
-1. [**Save button**](#save-button): Save your flow.
+1. **Version history button**: Track and manage changes made to your flows over time. It records every modification, enabling you to view previous versions, compare changes, and, if necessary, revert to an earlier version. Learn more in [Drafts and versioning for cloud flows](drafts-versioning.md).
+1. **Flow checker button**: Check your flow for errors.
+1. [**Save draft button**](#save-draft-button): Save a draft of your flow.
 1. [**Test button**](#test-button): Test your flow to make sure that it works as you intended.
+1. **Publish button**: Publish your flow so that your flow runs when the trigger event is performed.
+1. [**Copilot button**](get-started-with-copilot.md): Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
+1. **New designer toggle**: Switch between the classic designer and the new cloud flows designer. Learn more in [Identify differences between the classic designer and the new cloud flows designer](#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+1. **Action/trigger name**: The action or trigger card that is selected in your flow in the center of the page (the [*canvas*](#canvas)).
+1. [**More commands button**](#more-commands): Add a note to the selected card, *pin* an action, or delete the card. There are two ways to pin an action. Learn more in [View two action panes simultaneously](#view-two-action-panes-simultaneously).
+1. **Collapse button**: Hide the pane. When the pane is collapsed, the **Expand** button (**\>\>**) appears in the upper-left corner. Select it to show the pane again.
 1. [**Action configuration pane**](#action-configuration-pane): After you select an action card to configure on the canvas, the action configuration pane opens on the left side of the AI-powered designer.
 1. [**Canvas**](#canvas): The canvas is where you build your flow. It's free-flowing and therefore allows for easier navigation.
 1. [**Copilot pane**](get-started-with-copilot.md): Copilot stays with you during your flow editing and fit-and-finish journey. It can help you update and make changes to your flow, based on your conversational-style prompt. It can also help answer flow-related and product-related questions.
+
+## Undo and Redo
+
+To reverse or reinstate modifications you made to the flow, you can use the **Undo** and **Redo** command bar buttons. For example, if you added or configured an action, or made significant adjustments to the flow, these features allow you to conveniently revert to a previous state or redo changes you previously canceled.
+
+:::image type="content" source="media/flows-designer/undo-redo.png" alt-text="Screenshot of the 'Undo' and 'Redo' buttons in the command bar.":::
 
 ## Send feedback
 
@@ -52,15 +63,9 @@ We want to hear from you to help us measure and improve our impact. To provide y
 
 :::image type="content" source="media/flows-designer/feedback.png" alt-text="Screenshot of the feedback form.":::
 
-## More commands
+## Save draft button
 
-Select the **More commands** (**&hellip;**) button to add a note to the selected card in your flow, or to delete the card. Select **Add a note** to describe the purpose of the card in your flow. After you add a note, a note symbol appears in the lower right of the card. To view the note, hover over this symbol.
-
-:::image type="content" source="media/flows-designer/designer-note.png" alt-text="Screenshot that shows a note being added.":::
-
-## Save button
-
-Select **Save** to save your flow. If there are no errors, the message, *"Your flow is ready to go. We recommend you test it"* appears in the upper left with a green check.
+Select **Save draft** to save a draft of your flow. If there are no errors, the message, *"Your flow is ready to go. We recommend you test it"* appears in the upper left with a green check.
 
 :::image type="content" source="media/flows-designer/designer-save.png" alt-text="Screenshot of a successful save.":::
 
@@ -87,6 +92,16 @@ To test your flow, follow the instructions. In this example, you must send an em
 :::image type="content" source="media/flows-designer/test-result.png" alt-text="Screenshot of test results.":::
 
 Testing is part of the planning for a Power Automate project. To learn more, go to [Introduction: Planning a Power Automate project](guidance/planning/introduction.md).
+
+## More commands
+
+Select the **More commands** (**&vellip;**) button to add a note to the selected card in your flow, pin an action, or to delete the card.
+
+Select **Add a note** to describe the purpose of the card in your flow. After you add a note, a note symbol appears in the lower right of the card. To view the note, hover over this symbol.
+
+:::image type="content" source="media/flows-designer/designer-note.png" alt-text="Screenshot that shows a note being added.":::
+
+Select **Pin action** to pin the action card to the top of the action configuration pane. This feature is useful when you want to compare two actions side by side, or copy values across two actions. Learn more in [View two action panes simultaneously](#view-two-action-panes-simultaneously).
 
 ## Action configuration pane
 
@@ -163,7 +178,7 @@ For easy navigation, you can drag your flow on the canvas. You configure the act
 
 ### Drop zones
 
-The canvas contains AI-powered designer drop zones to help you easily drag cloud flow actions. The drop zones are represented by blue dashed lines.
+The canvas contains AI-powered designer drop zones to help you easily drag cloud flow actions. Blue dashed lines represent the drop zones.
 
 :::image type="content" source="media/flows-designer/drop-zone.png" alt-text="Screenshot of an action card and a drop-zone.":::
 
@@ -198,7 +213,7 @@ When static outputs are disabled, the toggle label is **Enable Static Result**. 
 
 One the new designer, you can pin an action pane so that you can open a second action pane next to it. This can be useful to compare two similar actions, or copy values across two actions.
 
-To pin an action, you can either right-click the action on the canvas and select **Pin action**, or use the **Pin** icon on the action pane.
+To pin an action, you can either right-click the action on the canvas and select **Pin action**. Alternatively, in the action pane, you can select **Pin action** in the **More commands** dropdown menu.
 
 :::image type="content" source="media/flows-designer/pin-option.png" alt-text="Screenshot of the 'Pin action' menu option.":::
 
@@ -209,23 +224,21 @@ Once you pin an action, any other action pane when selected is placed to the rig
 > [!NOTE]
 > To unpin, you can either right-click on action on the canvas and select **Unpin action**, or select the **Pin** icon on the action pane.
 
-## Identify differences between the classic designer and the cloud flows designer
+## Identify differences between the classic designer and the new cloud flows designer
 
 To quickly identify which designer version you're using, ask yourself the following questions:
 
 - Are the action cards on the flow small or large?
 - Is the action configuration pane inline or in a separate pane?
 
-The cloud flows designer has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
+The new cloud flows designer has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
 
 ## Limitations and known issues
 
 You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following items:
-- Non-Open API flows (If there's Peek code on an action and if you see the APIConnection value instead of OpenAPIConnection in Kind field, it's a non-Open API flow.)
+- Non-Open API flows (If there's Peek code on an action and if you see the API Connection value instead of OpenAPI Connection in Kind field, it's a non-Open API flow.)
 - Some hybrid triggers:
    - When a flow is run from business process flow (Dataverse)
-   - For a selected message (v2 Teams) - Plan to enable worldwide by July end
-   - Teams On Compose Message (Teams) - Plan to enable worldwide by July end
    - Microsoft 365 Compliance Connector
 - A comment
 - Power Pages connector
@@ -237,7 +250,7 @@ As we continue to innovate, we're introducing a new designer alongside our class
 
 If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply turn off the **New designer** toggle on the menu in the cloud flows designer.
 
-:::image type="content" source="media/flows-designer/designer-toggle.svg" alt-text="Screenshot of the 'New designer' toggle.":::
+:::image type="content" source="media/flows-designer/designer-toggle.png" alt-text="Screenshot of the 'New designer' toggle.":::
 
 > [!NOTE]
 > The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.

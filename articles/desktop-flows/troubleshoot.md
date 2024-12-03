@@ -4,7 +4,7 @@ description: See how to troubleshoot common issues of Power Automate desktop flo
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 04/09/2024
+ms.date: 11/05/2024
 ms.author: pefelesk
 ms.reviewer: tapanm
 contributors:
@@ -63,13 +63,15 @@ You can find TroubleshootingTool.Console.exe in the directory where you installe
 
 Example:
 
-`TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount mydomain\myuser < tempfilethatcontainspassword.txt`                                                                                              
+`TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount mydomain\myuser < tempfilethatcontainspassword.txt`
 
 The tool also provides other functionality such as getting the name of the account that the service is currently running as, resetting it to run as the default virtual account, or simply restarting the service. For more information on all supported commands, simply run the TroubleshootingTool.Console.exe with no arguments.
 
 ## Troubleshoot desktop flow runs
 
 If your desktop flow run fails, go to [Errors when running attended or unattended desktop flows](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-errors-running-attended-or-unattended-desktop-flows) and find mitigation steps for different error codes.
+
+If you encounter errors related to the desktop flow run queue, go to [Troubleshoot desktop flow run queue errors](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-desktop-flow-run-queue-errors).
 
 ## Collect machine logs
 
@@ -130,10 +132,9 @@ If you need help, use our self-help options, or ask for help from support.
 > [!IMPORTANT]
 > The following statement is subject to change.
 >
-> We offer full support for all Power Automate for desktop product versions released within a year from the latest public product release. For product releases prior to a year back from the latest release, only issues of severity level **Critical** and **Severity A** are supported. Product fixes are always added to the latest version.
->
->To find more information about severity levels, go to [Support overview](/power-platform/admin/support-overview#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request). To see the currently supported releases, go to [Released versions for Power Automate for desktop](/power-platform/released-versions/power-automate-desktop).
-
+> We offer customer support for all Power Automate for Desktop versions released within a year of the latest public release. Security issues are addressed for product releases up to 6 months old.
+> Bug fixes and product enhancements are always included in the latest version.
+ 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 

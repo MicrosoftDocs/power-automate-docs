@@ -4,7 +4,7 @@ description: See all the available UI automation actions.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/20/2023
+ms.date: 10/14/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -46,6 +46,61 @@ To develop more dynamic flows, replace the **Equals to** operators with other op
 For many actions of UI automation there are two modes for executing actions: physical and simulated. In physical mode, the tool takes control of the machine's mouse and keyboard to perform the action physically. In simulated mode, the action is performed programmatically without taking control of the mouse and keyboard and without requiring the UI element's screen to be brought to the foreground. It's important to note that the simulated option might not be applicable to every UI element. To perform an action by simulation, either enable the **Simulate action** parameter in some actions or disable the **Bring to front** parameter in other actions.
 
 :::image type="content" source="media/uiautomation/simulateactions.png" alt-text="Screenshot of the parameters related to simulate a UI automation action or execute it physically.":::
+
+## Known limitations for performing an action by simulation
+
+### **Click UI Element in Window and Press Button in Window actions**
+
+When you use the 'Click UI element in window' and 'Press button in window' actions, the following limitations apply for simulate mode:
+
+- **WPF Technology:**
+  - Doesn't work for Textbox, Toggle button, Richtextbox, Listitem, Griditem/TableItem, Combobox types of UI elements.
+
+- **Winforms Technology:**
+  - Doesn't work for Textbox, Richtextbox, Listitem, Griditem/TableItem, Combobox types of UI elements.
+  - When simulating a click to interact with a dialog, the dialog must be closed with a physical click.
+
+- **XAML Technology:**
+  - Doesn't work for Textbox, Toggle button, Richtextbox, Listitem types of UI elements.
+
+- **Excel Technology:**
+  - Doesn't work for Toggle button, MenuItem types of UI elements.
+
+- **File Explorer Technology:**
+  - Doesn't work for Textbox, Richtextbox, Treeitem, MenuItem types of UI elements.
+
+- **Windows Settings Technology:**
+  - Doesn't work for Toggle button, Richtextbox, Group types of UI elements.
+
+- **Java AWT Technology:**
+  - Doesn't work for Textbox, Richtextbox, Combobox types of UI elements.
+
+- **Java SWT Technology:**
+  - Doesn't work for Textbox, Richtextbox, MenuItem types of UI elements.
+
+- **SAP Technology:**
+  - Doesn't work for Combobox types of UI elements.
+
+- **Windows 11:**
+  - Limitations with 'Start menu' and 'Task bar' UI elements.
+
+### **Populate Text Field in Window Action**
+
+When using the 'Populate text field in window' action, the following limitations apply for simulate mode:
+
+- **WPF Technology:**
+  - Doesn't work for Richtextbox type of UI elements.
+
+- **XAML Technology:**
+  - Doesn't work for Richtextbox type of UI elements.
+
+- **Notepad/MFC Technology:**
+  - Doesn't work for Pane type of UI elements.
+
+- **SAP Technology:**
+  - Doesn't work for Combobox type of UI elements.
+
+Consider these limitations when configuring your UI automation actions and proceed with interacting with the UI elements using the physical approach.
 
 >[!NOTE]
 > To find more information about developing UI automation flows and creating custom selectors, go to [Automate desktop flows](../desktop-automation.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
@@ -172,6 +227,31 @@ Extracts data from specific parts of a window in the form of single values, list
 |Exception|Description|
 |-----|-----|
 |Extraction failed|Indicates a problem extracting data from the specified window|
+
+## <a name="extractdatafromtable"></a> Extract data from table
+
+Extracts data from a table in the form of a datatable.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Table|No|[UI element](../ui-elements.md)||The table or grid to extract data from|
+|Store extracted data in|N/A|an Excel spreadsheet, A variable|an Excel spreadsheet|Specify where to store the extracted data|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element is brought to the front during execution. If this option is disabled, the action is executed in the background. Not all UI elements are compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option might not extract all elements.|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|ExcelInstance|[Excel instance](../variable-data-types.md#instances)|The Excel instance with the extracted data. Use this instance to manipulate the spreadsheet (or save and close it) by using the dedicated Excel actions.|
+|DataFromTable|[General value](../variable-data-types.md#general-value)|The extracted data in the form of a datatable|
+
+### <a name="extractdatafromtable_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Extraction failed|Indicates a problem extracting data from the specified table|
 
 ## <a name="takescreenshot"></a> Take screenshot of UI element
 

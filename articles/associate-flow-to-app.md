@@ -1,14 +1,15 @@
 ---
 title: Associate flows with apps
 description: Learn how to associate automated and scheduled flows with apps in Power Apps and with Dynamics 365 apps.
-author: PriyaKodukula
+author: ChrisGarty
 contributors:
+  - ChrisGarty
   - lancedMicrosoft
   - v-aangie
-ms.author: lanced
+ms.author: cgarty
 ms.reviewer: angieandrews
 ms.topic: how-to
-ms.date: 05/08/2023
+ms.date: 11/21/2024
 ms.custom:
 ---
 
@@ -96,7 +97,9 @@ It might be that the connection for the current user has become unauthenticated.
 
 ### I'm an admin and want to associate flows and apps in bulk. Is there an admin command?
 
-Use the PowerShell command in [How can I associate in context flows to Power Apps/Dynamics365 apps](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-power-appsdynamics365-apps) in the *Frequently asked questions about Power Automate licensing* article.
+Use the PowerShell command [Add-AdminFlowPowerAppContext](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app) to associate flows and apps in bulk.
+
+This is also described in the [How can I associate in-context flows to Power Apps/Dynamics 365 apps?](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-power-appsdynamics-365-apps) section of the [Power Automate licensing FAQ](/power-platform/admin/power-automate-licensing/faqs).
 
 ## Related information
 

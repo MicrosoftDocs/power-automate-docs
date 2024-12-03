@@ -1,10 +1,10 @@
 ---
 title: Create an Azure Key Vault credential 
-description: Learn how create a credential with secret stored in Azure Key Vault 
+description: Learn how to create a credential with secret stored in Azure Key Vault.
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/02/2024
+ms.date: 11/08/2024
 ms.author: quseleba
 ms.reviewer: 
 contributors:
@@ -24,9 +24,9 @@ You can also [create credentials with CyberArk® (preview)](create-cyberark-cred
 
 ## Prerequisites
 
-Credentials use secrets stored in Azure Key Vault. To allow you to create credentials, your administrator needs to configure Azure Key Vault first.
+Credentials use secrets stored in Azure Key Vault. To create credentials, your admin must first set up Azure Key Vault.
 
-In a nutshell, admin needs to ensure:
+In short, the admin needs to ensure:
 
 1. Microsoft Power Platform resource provider is registered in Azure subscription.
 1. There's an Azure Key Vault that contains the secrets to be used in the credentials.
@@ -36,26 +36,44 @@ In a nutshell, admin needs to ensure:
 
 To configure Azure Key Vault, follow the steps described in [Configure Azure Key Vault](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets#configure-azure-key-vault).
 
+### Certificate-based authentication (preview)
+
+Microsoft Entra ID certificate-based authentication is a single factor authentication that lets you meet multifactor authentication (MFA) requirements.
+Instead of using password-based authentication, use certificate-based authentication (CBA), which verifies your identity based on digital certificates.
+
+To use CBA, follow the steps in [Configure certificate-based authentication](configure-certificate-based-auth.md). Otherwise, start creating a credential.
+
 ## Create a credential
 
 To create your credentials:
 
-1. Go to the **Credentials** page.
-1. Select **more** in the left nav, then select **Discover all**.
-1. Under **Data**, select **Credentials**. You can pin the page in the left nav to make it more accessible.
+1. Go to the **Credentials** page. If you don't see the **Credentials** page, follow these steps:
+   1. Select **More** in the left nav, then select **Discover all**.
+   1. Under **Data**, select **Credentials**. You can pin the page in the left navigation to make it more accessible.
 
-In the credentials page, you can now create your first credential.
+1. On the **Credentials** page, create your first credential by selecting **New Credential**.
 
 :::image type="content" source="./media/manage-machines/define-name.png" alt-text="Screenshot of defining the name of the credential.":::
 
-To create your credential, you need to provide the following information:
+### Define credential name
+
+Provide the following information to create your credential:
 
 - **Credential name**: Enter a name for the credential
 - **Description** (optional)
 
-After selecting **next**, you need to select **Azure Key Vault** as a credential store.
+### Select credential store
 
-In the last step of the wizard, you select username and password or create new ones:
+1. After selecting **Next**, select **Azure Key Vault** as the credential store.
+1. Select **Connection** as the location to use the credential. Using credentials in desktop flow isn't supported with Azure Key Vault yet.
+1. Select **Azure Key Vault** as the type of credential store, and then select **Next**.
+
+### Select credential values
+
+In the last step of the wizard, select credential values. With Azure Key Vault, there are two types of supported authentications:
+
+1. **Username and password**: The secret stored in the vault is a password.
+1. **Certificate-based authentication**: The secret stored in the vault is a certificate.
 
 - **Username**: To select a username, you can use the dropdown. If you don’t have any environment variables, select **new**:
   - **Display name**. Enter a name for the environment variable.
@@ -133,14 +151,12 @@ You should import the solution containing the credential and the related environ
 ## Limitations
 
 - Currently, this feature is available only for desktop flow connections.
-- Creating credentials in the new designer isn't available yet.
-- You can't edit the selected environment variables in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the Azure Key Vault secret.
-- Update of connections using credentials is asynchronous. It can take up to one minute for the desktop flow connection to use the new credentials after the secret is updated.
+- You can't edit the selected username and secret in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the Azure Key Vault secret.
 
 ## Update a secret (password rotation) - Deprecated
 
 > [!NOTE]
-> This section is now deprecated. All the connections using Credentials are now retrieving secrets during the flow execution. It is not necessary anymore to create this custom flow to update the connections.
+> This section is now deprecated for desktop flow connections. Desktop flow connections using Credentials are now retrieving secrets during the flow execution. It is not necessary anymore to create this custom flow to update the connections.
 > The connections using Credentials created before April 2024 should be updated to benefit of the automatic update.
 
 ### Prerequisites for updating a secret (password rotation)

@@ -42,7 +42,7 @@
     items:
     - name: Create a cloud flow from a template
       href: get-started-logic-template.md
-    - name: Create a cloud flow from a description (preview)
+    - name: Create a cloud flow from a description
       href: create-cloud-flow-from-description.md
     - name: Create a cloud flow from scratch
       href: get-started-logic-flow.md
@@ -133,7 +133,9 @@
         href: modern-approvals.md
       - name: Approvals with attachments
         href: approval-attachments.md
-      - name: Sequential approvals
+      - name: Set up sequential approvals
+        href: set-up-sequential-approvals.md
+      - name: Manage sequential approvals
         href: sequential-modern-approvals.md
       - name: Parallel approvals
         href: parallel-modern-approvals.md
@@ -318,6 +320,8 @@
       href: edit-solution-aware-flow.md
     - name: Remove a solution-aware flow
       href: remove-solution-aware-flow.md
+  - name: Cloud flows best practices white paper
+    href: https://go.microsoft.com/fwlink/?linkid=2290320
   - name: Troubleshoot
     items:
     - name: Troubleshoot common issues with triggers
@@ -381,7 +385,7 @@
     href: ./desktop-flows/create-flow.md
   - name: Get started with Copilot in Power Automate for desktop (preview)
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
-  - name: Create desktop flows using the AI Recorder (preview)
+  - name: Create desktop flows using Record with Copilot (preview)
     href: ./desktop-flows/create-flow-using-ai-recorder.md
   - name: Run desktop flows
     items:
@@ -425,12 +429,16 @@
         href: ./desktop-flows/hosted-machines.md
       - name: Hosted machine groups
         href: ./desktop-flows/hosted-machine-groups.md
+      - name: Hosted RPA best practices and FAQ
+        href: ./desktop-flows/hosted-rpa-faq.md
   - name: Create credentials
     items:
     - name: Azure Key Vault credentials
       href: ./desktop-flows/create-azurekeyvault-credential.md
-    - name: CyberArk credentials (preview)
+    - name: CyberArk credentials
       href: ./desktop-flows/create-cyberark-credential.md
+    - name: Certificate-based authentication (preview)
+      href: ./desktop-flows/configure-certificate-based-auth.md
   - name: Create desktop flow connections
     href: ./desktop-flows/desktop-flow-connections.md
   - name: Allowlist tenants for connect with sign-in connections
@@ -514,7 +522,7 @@
       href: ./desktop-flows/repair-selector.md  
     - name: Set fallback mechanism for UI element
       href: ./desktop-flows/ui-elements-fallback-mechanism.md  
-  - name: Power Fx in desktop flows (preview)
+  - name: Power Fx in desktop flows
     items:
     - name: Power Fx in desktop flows
       href: ./desktop-flows/power-fx.md
@@ -638,6 +646,8 @@
         href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
       - name: Troubleshoot SQL queries
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
+    - name: Configure connection strings for database related actions
+      href: ./desktop-flows/how-to/configure-connection-strings-for-db-actions.md
     - name: Configure proxy settings
       href: ./desktop-flows/how-to/proxy-settings.md
     - name: Reduce desktop flow size in solution
@@ -670,6 +680,8 @@
       href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
     - name: Timeout configuration for UI/browser automation
       href: ./desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md
+    - name: Configure the open terminal session action
+      href: ./desktop-flows/how-to/terminal-emulation-open-new-session.md  
   - name: ALM for desktop flows
     items:
     - name: Overview for configuring ALM for desktop flows
@@ -781,8 +793,10 @@
       href: ./desktop-flows/actions-reference/custommodule.md
     - name: Cloud Connector actions
       href: ./desktop-flows/actions-reference/cloudconnectors.md
-    - name: SAP GUI
+    - name: SAP automation
       href: ./desktop-flows/actions-reference/sap.md
+    - name: Power Automate secret variables actions (preview)
+      href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
   - name: Troubleshoot desktop flows
     href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
@@ -887,8 +901,12 @@
     items:
     - name: Overview
       href: ./minit/minit-desktop-application-overview.md
-    - name: Download Process Mining desktop app
-      href: ./minit/how-to-start-with-minit-desktop-application.md
+    - name: Installation
+      items:
+      - name: Standard
+        href: ./minit/how-to-start-with-minit-desktop-application.md
+      - name: Custom
+        href: ./minit/process-mining-custom-install.md
     - name: Get started
       items:
       - name: Explore the home page
@@ -1103,13 +1121,13 @@
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Manage automations
   items:
-  - name: Automation center (preview)
+  - name: Automation center
     items:
     - name: Overview
       href: automation-center-overview.md
     - name: Recommendations
       href: automation-center-recommendations.md
-    - name: Copilot
+    - name: Copilot (preview)
       href: automation-center-copilot.md
   - name: Capacity utilization
     items:
@@ -1214,22 +1232,6 @@
         href: use-cds-for-apps-dialogs.md
       - name: Replace classic Dataverse dialogs
         href: replace-dialogs.md
-- name: Learning catalog
-  items:
-  - name: Overview
-    href: learning-catalog/learning-catalog.md
-  - name: App maker
-    href: learning-catalog/learning-catalog-app-maker.md
-  - name: Administrator
-    href: learning-catalog/learning-catalog-administrator.md
-  - name: Developer
-    href: learning-catalog/learning-catalog-developer.md
-  - name: Functional consultant
-    href: learning-catalog/learning-catalog-functional-consultant.md
-  - name: Partner presales roles
-    href: learning-catalog/learning-catalog-sales.md
-  - name: Business and Technical Decision Makers learning catalog
-    href: learning-catalog/learning-catalog-bdm.md
 - name: Learn from others
   items:
   - name: Webinars
@@ -1260,6 +1262,4 @@
     href: faqs-action-suggestions-power-automate-desktop.md
   - name: FAQ for generating flow descriptions using Copilot in desktop flows
     href: faqs-copilot-generate-description-from-flow-properties.md
-  - name: FAQ for Process Mining's Microsoft 365 personal recommendations
-    href: faqs-process-mining-m365-personal-recommendations.md
     
