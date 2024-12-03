@@ -901,8 +901,12 @@
     items:
     - name: Overview
       href: ./minit/minit-desktop-application-overview.md
-    - name: Download Process Mining desktop app
-      href: ./minit/how-to-start-with-minit-desktop-application.md
+    - name: Installation
+      items:
+      - name: Standard
+        href: ./minit/how-to-start-with-minit-desktop-application.md
+      - name: Custom
+        href: ./minit/process-mining-custom-install.md
     - name: Get started
       items:
       - name: Explore the home page
