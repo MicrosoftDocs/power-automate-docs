@@ -1,20 +1,12 @@
 ---
-title: Trigger flows with actions | Microsoft Docs
+title: Trigger flows with actions
 description: Learn how to trigger flows when a Dataverse action is executed.  
-services: ''
 suite: flow
-documentationcenter: na
-author: MSFTMAN
+author: v-aangie
 ms.author: Matow
 ms.reviewer: angieandrews
-editor: ''
-tags: ''
-
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 10/05/2021
+ms.topic: conceptual
+ms.date: 10/09/2024
 search.audienceType: 
   - maker
 ---
@@ -57,3 +49,8 @@ Here's the naming scheme for the parameters.
 - For complex data types such as an entity object, the last literal is the column name, for example, *donotfax*.
 
 ![Screenshot of the dynamic content picker in the Power Automate designer showing output from the "When an action is performed" trigger](../media/dataverse-action-trigger/2570885e7cba9c63b45ccaefc6b55056.png)
+
+## Related information
+
+- [Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
+- [Training: Integrate Power Automate with SharePoint HTTP actions (module)](/training/modules/integration-http-connector/)

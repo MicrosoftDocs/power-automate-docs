@@ -10,11 +10,13 @@ ms.author: hamenon
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 10/09/2024
 search.audienceType: 
   - flowmaker
   - enduser
+ms.collection: bap-ai-copilot
 ---
+
 # Trigger a cloud flow based on email properties
 
 Use the **When a new email arrives (V3)** trigger to create a cloud flow that runs when one or more of the following email properties match criteria that you provide.
@@ -170,5 +172,8 @@ Test the flow by sending an email that gets routed to the folder you selected ea
 
 ---
 
+## Related information
+
+[Training: Create flows to manage email (module)](create-email-flows.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

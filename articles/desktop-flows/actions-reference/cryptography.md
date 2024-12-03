@@ -1,13 +1,13 @@
 ---
 title: Cryptography actions reference
 description: See all the available cryptography actions.
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 07/09/2024
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -34,6 +34,9 @@ To decrypt a text, use the **Decrypt text with AES**, and enter the encrypted te
 Apart from encryption and decryption, the **Cryptography** group of actions provides actions to hash values with and without a key. Like the encryption actions, you can hash values from files using the **Hash from file** and **Hash from file with key** actions.
 
 :::image type="content" source="media/cryptography/hash-from-file-with-key-action.png" alt-text="Screenshot of the Hash from file with key action.":::
+
+> [!IMPORTANT]
+> Passwords entered in designated fields only work on the machine where they were initially set. This is due to the machine-specific encryption used for direct password inputs. If the flow is opened on a different machine, these passwords will not be valid and will need to be re-entered.
 
 ## <a name="encrypttextaction"></a> Encrypt text with AES
 

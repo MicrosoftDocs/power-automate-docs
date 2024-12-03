@@ -1,12 +1,12 @@
 ---
 title: Automate webpages | Microsoft Docs
 description: Learn how to launch browsers, automate webpages, and extract data from the Web.
-author: georgiostrantzas
+author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/22/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 10/23/2024
+ms.author: nimoutzo
+ms.reviewer: matp
 contributors:
 - NikosMoutzourakis
 search.audienceType: 
@@ -28,7 +28,15 @@ Apart from the built-in Automation browser, four web browsers are currently supp
 > [!IMPORTANT]
 > Before automating webpages, you need to install the appropriate browser extension and configure the browser accordingly. To find more information regarding the supported browsers and the required extensions, go to [Install Power Automate browser extensions](install-browser-extensions.md).
 
+To perform web automation, you first need to create a new browser instance. You can achieve this using the Launch Browser actions, which support Microsoft Edge, Google Chrome, Mozilla Firefox, and Internet Explorer. With the Launch Browser actions, you can also specify whether the web page should be launched on your local desktop or in a virtual desktop environment.
+
+> [!NOTE]
+> To launch a browser on a virtual desktop, first capture at least one UI element within that desktop. This element needs to be available in the UI element repository of your flow.
+
 To automate a webpage, you must launch or attach to one of the supported browsers, and then deploy browser automation actions. Browser automation actions enable you to interact with webpages and emulate events, such as clicking, using JavaScript scripts. You can develop the flow manually or [using the recorder](recording-flow.md).
+
+> [!NOTE]
+> Web automation in Power Automate for desktop has a behavior where it can't open with a different system user or attach to any browser that was opened with a different system user other than the one used to open Power Automate for desktop. This behavior occurs for security reasons.
 
 By default, browser automation actions don't move the mouse pointer on the screen. As a result, they can run even when the web browser is minimized, or the target tab isn't the focused tab. This functionality allows you to perform other activities on your machine while a browser automation flow is running.
 

@@ -9,11 +9,10 @@ contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-ms.author: napienko
+ms.author: jamiller
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
@@ -99,7 +98,7 @@ Give your flow a name, and then select **Create flow**.
 
 An approval email is sent to the recipient that you specified. When the recipient selects **Approve** or **Reject** in that email, you receive email that indicates the response.
 
-### See also
+## Related information
 
 * [Single approver modern approvals walkthrough](modern-approvals.md)
 * [Create sequential approvals](sequential-modern-approvals.md)

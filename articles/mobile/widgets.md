@@ -11,11 +11,10 @@ contributors:
   - v-aangie
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 06/05/2023
-ms.author: napienko
+ms.author: jamiller
 ms.reviewer: angieandrews
 ---
 
@@ -53,7 +52,7 @@ The widget will show only the top eight (8) flows on an iOS device.
 
     :::image type="content" source="../media/mobile/widget-run.png" alt-text="Screenshot of the widget on your home screen.":::
 
-### See also
+## Related information
 
 [Power Automate mobile app overview](overview-mobile.md)
 

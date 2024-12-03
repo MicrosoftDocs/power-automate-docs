@@ -1,12 +1,12 @@
 ---
 title: UI automation actions reference
 description: See all the available UI automation actions.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/19/2023
+ms.date: 10/14/2024
 ms.author: nimoutzo
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -43,6 +43,65 @@ To develop more dynamic flows, replace the **Equals to** operators with other op
 
 :::image type="content" source="media/uiautomation/selector-operators.png" alt-text="Screenshot of the available operators in the selector builder.":::
 
+For many actions of UI automation there are two modes for executing actions: physical and simulated. In physical mode, the tool takes control of the machine's mouse and keyboard to perform the action physically. In simulated mode, the action is performed programmatically without taking control of the mouse and keyboard and without requiring the UI element's screen to be brought to the foreground. It's important to note that the simulated option might not be applicable to every UI element. To perform an action by simulation, either enable the **Simulate action** parameter in some actions or disable the **Bring to front** parameter in other actions.
+
+:::image type="content" source="media/uiautomation/simulateactions.png" alt-text="Screenshot of the parameters related to simulate a UI automation action or execute it physically.":::
+
+## Known limitations for performing an action by simulation
+
+### **Click UI Element in Window and Press Button in Window actions**
+
+When you use the 'Click UI element in window' and 'Press button in window' actions, the following limitations apply for simulate mode:
+
+- **WPF Technology:**
+  - Doesn't work for Textbox, Toggle button, Richtextbox, Listitem, Griditem/TableItem, Combobox types of UI elements.
+
+- **Winforms Technology:**
+  - Doesn't work for Textbox, Richtextbox, Listitem, Griditem/TableItem, Combobox types of UI elements.
+  - When simulating a click to interact with a dialog, the dialog must be closed with a physical click.
+
+- **XAML Technology:**
+  - Doesn't work for Textbox, Toggle button, Richtextbox, Listitem types of UI elements.
+
+- **Excel Technology:**
+  - Doesn't work for Toggle button, MenuItem types of UI elements.
+
+- **File Explorer Technology:**
+  - Doesn't work for Textbox, Richtextbox, Treeitem, MenuItem types of UI elements.
+
+- **Windows Settings Technology:**
+  - Doesn't work for Toggle button, Richtextbox, Group types of UI elements.
+
+- **Java AWT Technology:**
+  - Doesn't work for Textbox, Richtextbox, Combobox types of UI elements.
+
+- **Java SWT Technology:**
+  - Doesn't work for Textbox, Richtextbox, MenuItem types of UI elements.
+
+- **SAP Technology:**
+  - Doesn't work for Combobox types of UI elements.
+
+- **Windows 11:**
+  - Limitations with 'Start menu' and 'Task bar' UI elements.
+
+### **Populate Text Field in Window Action**
+
+When using the 'Populate text field in window' action, the following limitations apply for simulate mode:
+
+- **WPF Technology:**
+  - Doesn't work for Richtextbox type of UI elements.
+
+- **XAML Technology:**
+  - Doesn't work for Richtextbox type of UI elements.
+
+- **Notepad/MFC Technology:**
+  - Doesn't work for Pane type of UI elements.
+
+- **SAP Technology:**
+  - Doesn't work for Combobox type of UI elements.
+
+Consider these limitations when configuring your UI automation actions and proceed with interacting with the UI elements using the physical approach.
+
 >[!NOTE]
 > To find more information about developing UI automation flows and creating custom selectors, go to [Automate desktop flows](../desktop-automation.md) and [Build a custom selector](../build-custom-selectors.md), respectively.
 
@@ -56,6 +115,7 @@ Gets a property of a window such as its title or its source text.
 |-----|-----|-----|-----|-----|
 |Window|No|[UI element](../ui-elements.md)||The window to get details from|
 |Window property|N/A|Get window title, Get window text, Get window location and size, Get process name|Get window title|Choose which property of the window to extract|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element will be brought to the front during execution. If this option is disabled, the action is executed in the background. Note that not all UI elements are compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option might not extract all elements.|
 
 ### Variables produced
 
@@ -79,6 +139,7 @@ Gets the value of a UI element's attribute in a window.
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The UI element to get details from|
 |Attribute name|Yes|[Text value](../variable-data-types.md#text-value)|Own Text|The attribute whose value will be retrieved|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element will be brought to the front during execution. If this option is disabled, the action is executed in the background. Note that not all UI elements are compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option might not extract all elements.|
 
 ### Variables produced
 
@@ -102,6 +163,7 @@ Retrieves the names of the selected checkboxes in a checkbox group or the state 
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The checkbox or checkbox group|
 |Operation|N/A|Get names of selected checkboxes in group, Get state of checkbox|Get names of selected checkboxes in group|Specify whether to retrieve the state of multiple selected checkboxes or just one|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element should be brought to the front during execution. If this option is disabled, the action will be executed in the background. Note that not all UI elements might be compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option might not extract all elements.|
 
 ### Variables produced
 
@@ -126,6 +188,7 @@ Retrieves the names of the selected radio button in a radio button group or the 
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The radio button or radio button group|
 |Operation|N/A|Get selected radio button name in group, Get state of radio button|Get selected radio button name in group|Specify whether to retrieve the name of the radio button that's selected inside a group of radio buttons or just the state of a single radio button|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element will be brought to the front during execution. If this option is disabled, the action is executed in the background. Note that not all UI elements are compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option might not extract all elements.|
 
 ### Variables produced
 
@@ -150,6 +213,7 @@ Extracts data from specific parts of a window in the form of single values, list
 |-----|-----|-----|-----|-----|
 |Window|No|[UI element](../ui-elements.md)||The window to extract data from|
 |Store extracted data in|N/A|an Excel spreadsheet, A variable|an Excel spreadsheet|Specify where to store the extracted data|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element will be brought to the front during execution. If this option is disabled, the action is executed in the background. Note that not all UI elements are compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option might not extract all elements.|
 
 ### Variables produced
 
@@ -163,6 +227,31 @@ Extracts data from specific parts of a window in the form of single values, list
 |Exception|Description|
 |-----|-----|
 |Extraction failed|Indicates a problem extracting data from the specified window|
+
+## <a name="extractdatafromtable"></a> Extract data from table
+
+Extracts data from a table in the form of a datatable.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Table|No|[UI element](../ui-elements.md)||The table or grid to extract data from|
+|Store extracted data in|N/A|an Excel spreadsheet, A variable|an Excel spreadsheet|Specify where to store the extracted data|
+|Bring to front|N/A|Boolean value|True|Specify whether the window containing the UI element is brought to the front during execution. If this option is disabled, the action is executed in the background. Not all UI elements are compatible with having the option disabled. Additionally, if execution of the action requires scrolling, disabling this option might not extract all elements.|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|ExcelInstance|[Excel instance](../variable-data-types.md#instances)|The Excel instance with the extracted data. Use this instance to manipulate the spreadsheet (or save and close it) by using the dedicated Excel actions.|
+|DataFromTable|[General value](../variable-data-types.md#general-value)|The extracted data in the form of a datatable|
+
+### <a name="extractdatafromtable_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Extraction failed|Indicates a problem extracting data from the specified table|
 
 ## <a name="takescreenshot"></a> Take screenshot of UI element
 
@@ -221,9 +310,9 @@ Fills a text box in a window with the specified text.
 |-----|-----|-----|-----|-----|
 |Text box|No|[UI element](../ui-elements.md)||The text box to populate|
 |Text to fill in|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The text to fill in the text field|
-|Simulate action|N/A|Boolean value|False|Simulate the keystrokes programmatically when populating text to UI text field elements. This option doesn't require the UI element's screen to be focused, it will not automatically bring it to the foreground. Note this option can be applied only to left click action and it might not be applicable to every UI element.
+|Simulate action|N/A|Boolean value|False|Simulate the keystrokes programmatically when populating text to UI text field elements. This option doesn't require the UI element's screen to be focused, it will not automatically bring it to the foreground. Note this option can be applied only to left-click action and it might not be applicable to every UI element.
 |If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
-|Click before populating|Yes|Left click, Double click, No|Left click|Specify whether a left mouse click is performed before populating the text field or not.|
+|Click before populating|Yes|Left-click, Double-click, No|Left-click|Specify whether a left mouse click is performed before populating the text field or not.|
 
 ### Variables produced
 
@@ -596,7 +685,7 @@ Performs desktop and taskbar related operations.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The UI element to perform a click on|
-|Click type|N/A|Left click, Right click, Double click|Left click|The kind of click to perform|
+|Click type|N/A|Left-click, Right-click, Double-click|Left-click|The kind of click to perform|
 |Launch new application when left-clicking on the taskbar|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|When this parameter is set to 'true', it ensures that a new window of an application will be created when left-clicking on its icon in the 'quick launch' bar, also known as the taskbar of Windows 7 or above. Uncheck this option to bring an already running instance of the application to the foreground.|
 
 ### Variables produced
@@ -694,8 +783,8 @@ Clicks on any UI element of a window.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |UI element|No|[UI element](../ui-elements.md)||The UI element to click on|
-|Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The kind of click to perform|
-|Simulate action|N/A|Boolean value|False|Specify whether to simulate the move of the mouse cursor over the element prior to clicking. This option does not require the UI element's screen to be focused, it will not automatically bring it to the foreground. Note this option can be applied only to left click action and it might not be applicable to every UI element.|
+|Click type|N/A|Left-click, Right-click, Double-click, Middle-click, Left button down, Left button up, Right button down, Right button up|Left-click|The kind of click to perform|
+|Simulate action|N/A|Boolean value|False|Specify whether to simulate the move of the mouse cursor over the element prior to clicking. This option does not require the UI element's screen to be focused, it will not automatically bring it to the foreground. Note this option can be applied only to left-click action and it might not be applicable to every UI element.|
 |Mouse position relative to UI element|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the UI element the mouse will be moved to prior to clicking|
 |Offset X|Yes|[Text value](../variable-data-types.md#text-value)|0|Offset the mouse from the position by this many pixels to the right|
 |Offset Y|Yes|[Text value](../variable-data-types.md#text-value)|0|Offset the mouse from the position by this many pixels down|
@@ -740,7 +829,7 @@ Drags and drops a UI element of a window.
 |-----|-----|-----|-----|-----|
 |UI element to drag|No|[UI element](../ui-elements.md)||The UI element to drag|
 |UI element to drop over|No|[UI element](../ui-elements.md)||The UI element to drop over|
-|Click type|N/A|Left click, Right click|Left click|Specify which mouse button to use for clicking and holding down, while dragging the UI element over to its destination|
+|Click type|N/A|Left-click, Right-click|Left-click|Specify which mouse button to use for clicking and holding down, while dragging the UI element over to its destination|
 |Mouse down offset X|Yes|[Text value](../variable-data-types.md#text-value)|0|Offset the mouse-down click, that will be used to grab the UI element drag, by this many pixels to the right|
 |Mouse down offset Y|Yes|[Text value](../variable-data-types.md#text-value)|0|Offset the mouse-down click, that will be used to grab the UI element to drag, by this many pixels downwards|
 |Mouse down position relative to drag-target UI element|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the UI element to drop the mouse onto prior to clicking|

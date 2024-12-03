@@ -4,7 +4,7 @@ description: Create custom processes for approvals by creating an approval flow.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 contributors:
   - kewaiss
   - v-aangie

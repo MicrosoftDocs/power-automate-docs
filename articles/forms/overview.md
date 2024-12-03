@@ -1,5 +1,5 @@
 ---
-title: Overview of using Microsoft Forms and Power Automate (contains video)
+title: Overview of using Microsoft Forms and Power Automate
 description: Learn how to use a form in a flow.
 services: ''
 suite: flow
@@ -7,13 +7,12 @@ documentationcenter: na
 author: Dean-Haas
 editor: ''
 tags: ''
-ms.devlang: na
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/22/2022
-ms.author: napienko
-ms.reviewer: gtrantzas
+ms.author: jamiller
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser

@@ -1,5 +1,5 @@
 ---
-title: Prepare processes and recordings (contains videos)
+title: Prepare processes and recordings
 description: Learn how to create a process, record the activities, and prepare the recording for analysis with the task mining capability in Power Automate.
 author: donums
 contributors:

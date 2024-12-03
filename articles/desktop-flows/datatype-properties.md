@@ -1,13 +1,13 @@
 ---
 title: Variable data type properties
 description: See all the available data type properties of desktop flow variables.
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 09/22/2020
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 10/29/2024
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -240,6 +240,13 @@ The data types that have properties are displayed in the following lists.
 |IsAlive    |This property is true if the CMD session is alive or false if it isn't.       |
 |ProcessId  |The unique identifier of the process.                                         |
 
+## Credential
+
+|Property   |Description                                                                   |
+|-----------|------------------------------------------------------------------------------|
+|Username  |The username stored in the credential variable                                 |
+|Password  |The password stored in the credential variable (sensitive by default)          |
+
 ## Terminal session
 
 |Property     |Description                                                                       |
@@ -397,3 +404,4 @@ The data types that have properties are displayed in the following lists.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+ 

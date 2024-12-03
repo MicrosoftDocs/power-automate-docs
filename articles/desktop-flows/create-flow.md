@@ -1,13 +1,13 @@
 ---
 title: Create desktop flows
 description: See all the available ways to create Power Automate desktop flows.
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 12/02/2022
 ms.author: pefelesk
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
   - Flow
 search.audienceType: 

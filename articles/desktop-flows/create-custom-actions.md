@@ -4,7 +4,7 @@ description: Learn about how to create custom actions in Power Automate for desk
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/19/2023
+ms.date: 10/14/2024
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors: 
@@ -17,7 +17,12 @@ search.audienceType:
 
 # Create Power Automate for desktop actions using the Actions SDK
 
+This article describes how to create custom actions in Power Automate for desktop.
+
 ## Creating custom actions
+
+> [!IMPORTANT]
+> Reserved keywords can't be used as action names and/or action properties. Use of reserved keywords as action names and/or action properties result in erroneous behavior. More information: [Reserved keywords in desktop flows](reserved-keywords.md)
 
 Begin by creating a new Class Library (.NET Framework) project. Select .NET framework version 4.7.2.
 
@@ -87,7 +92,7 @@ The format of the descriptions for Modules and Actions should be as follows:
 
 "Module_Description" or "Action_Description" and "Module_FriendlyName" or "Action_FriendlyName" respectively in the name field. The description in the value field.
 
-It's also recommended to provide descriptions and friendly names for parameters. Their format should be as follows: "Action_Parameter_Description", "Action_Parameter_FriendlyName".
+We also recommend that you provide descriptions and friendly names for parameters. Their format should be as follows: "Action_Parameter_Description", "Action_Parameter_FriendlyName".
 
 :::image type="content" source="media/custom-actions/create-custom-actions/resources-siimple-actions.png" alt-text="Screenshot of Resources for a simple action" border="true":::
 
@@ -102,9 +107,20 @@ Here's an example of a **Resources.resx** file for a custom module.
 
 Another way to quickly add friendly names and descriptions to actions and parameters is with the FriendlyName and Description properties in the **[Action]**, **[InputArguement]** and **[OutputArguement]** attributes.
 
-
 > [!NOTE]
 > To add a friendly name and description to a module, you must modify the respective .resx file or add the respective C# attributes.
+
+## Adding error handling to custom actions
+
+To define custom exceptions in your action, use the `[Throws("ActionError")]` attribute above the custom action class. Each exception case you want to define should have its own attribute.
+
+In the catch block, use the following code:
+
+`throw new ActionException("ActionError", e.Message, e.InnerException);`
+
+Ensure that the `ActionException` name matches the name you provided in the `Throws` attribute. Use `throw new ActionException` for each exception case and match it with the corresponding `Throws` attribute name. All exceptions defined with the `Throws` attribute are visible in the designer's action error handling tab.
+
+An example of this can be found in the [Conditional actions](#conditional-actions) section.
 
 ## Resources localization
 
@@ -458,7 +474,6 @@ To set the assembly name of your module, modify the **Assembly name** property u
 > [!WARNING]
 > Including modules with the same ID in a flow will result in conflicts
 
-
 ## Custom module name conventions
 
 For the custom modules to be readable through Power Automate for desktop, the AssemblyName must have a filename that follows the below pattern:
@@ -472,8 +487,8 @@ For example, **Modules**.ContosoActions.dll
 
 The AssemblyTitle in the project settings specifies the module ID. It can only have alphanumeric characters and underscores and must begin with a letter.
 
+## Sign all DLLs inside the custom module
 
-## Signing a custom module
 > [!IMPORTANT]
 > It is mandatory to have all of the .dll files tha comprise a custom module (generated assembly and all its dependencies) signed with a trusted certificate
 
@@ -481,11 +496,18 @@ To finalize the creation of the custom module, all generated .dll files, which c
 
 Sign all the .dll files using a trusted certificate by running the following command (for each .dll file) in a Developer Command Prompt for Visual Studio:
 
+Sign the .dlls files using a trusted certificate by running the following command (for each dll) in a Developer Command Prompt for Visual Studio:
 ```
 Signtool sign /f {your certificate name}.pfx /p {your password for exporting the certificate} /fd 
 SHA256 {path to the .dll you want to sign}.dll
 ```
-
+or by running the following command (by creating a Windows PowerShell Script .ps1) that iterates through all .dll files and sign each one with the provided certificate:
+```PowerShell
+Get-ChildItem {the folder where dll files of custom module exist} -Filter *.dll | 
+Foreach-Object {
+	Signtool sign /f {your certificate name}.pfx /p {your password for exporting the certificate} /fd SHA256 $_.FullName
+}
+```
 > [!NOTE]
 > The digital certificate must have an exportable private key and code sign capabilities
 
@@ -556,7 +578,7 @@ Example:
 
 [Upload custom actions](upload-custom-actions.md)
 
-### See also
+## Related information
 
 - [Assets library](assets-library.md)
 - [Use custom actions](use-custom-actions.md)
