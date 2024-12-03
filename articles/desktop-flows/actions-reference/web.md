@@ -7,8 +7,6 @@ ms.topic: reference
 ms.date: 12/03/2024
 ms.author: nimoutzo
 ms.reviewer: gtrantzas
-ms.author: dipapa
-ms.reviewer: matp
 contributors:
 - jpapadimitriou
 - Yiannismavridis
