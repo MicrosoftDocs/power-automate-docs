@@ -1,10 +1,10 @@
 ---
 title: Integrate Power Automate with websites and apps | Microsoft Docs
 description: Embed the Power Automate experiences into your website or app.
-author: MSFTMAN
+author: v-aangie
 ms.subservice: developer
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 10/10/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -424,8 +424,6 @@ A sample JavaScript Single Page Application (SPA) is provided in the resources s
 8. Select **Load Flows widget** or **Load Templates widget** to embed the corresponding widgets.
     ![Screenshot showing buttons to embed the Load Flows widget or the Load Templates widget.](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
 
-Sample application [download link](https://procsi.blob.core.windows.net/docs/FlowWidgetSampleApp.zip).
-
 ## Resources
 
 ### Widget test pages
@@ -485,6 +483,6 @@ If the initialized locale isn't listed, Flow will default to the closest support
 | uk-ua      | Ukrainian (Ukraine)        | 
 | vi-vn      | Vietnamese (Viet Nam)      |
 
-Use of the Power Automate Embed SDK is covered under [the Microsoft Software License Terms](https://dynamics.microsoft.com/legaldocs/slt-dynamics365-sdk/).
+Use of the Power Automate Embed SDK is covered under [the Microsoft Software License Terms](https://go.microsoft.com/fwlink/?linkid=2108407).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

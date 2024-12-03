@@ -2,11 +2,12 @@
 title: Common ways to use a form in a flow
 description: Learn some of the most popular ways to use a form in an automated flow.
 suite: flow
-author: Dean-Haas
+author: kisubedi
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 09/04/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
   - enduser

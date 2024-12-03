@@ -9,7 +9,8 @@ contributors:
 ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 09/04/2024
+ms.collection: bap-ai-copilot
 search.app: 
   - Flow
   - Powerplatform
@@ -103,7 +104,7 @@ Use filter conditions to set conditions for when to trigger flows.
 
 ### Filter columns
 
-Use the **Select columns** box to define the specific columns of the row that should cause the flow to run when changed, as a comma-separated list of unique column names.
+Use the **Select columns** box to define the specific columns of the row that should cause the flow to run when included in the request, as a comma-separated list of unique column names. Only include columns with changed values in update requests. The flow will run when the values included are the same as existing values.
 
 This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
 

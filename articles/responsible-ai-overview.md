@@ -1,13 +1,14 @@
 ---
 title: Responsible AI FAQs for Power Automate
 description: Responsible AI FAQs discusses AI technology in Power Automate and the key considerations for making use of this technology responsibly.
-ms.date: 05/15/2023
+ms.date: 09/10/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
 author: kisubedi
 ms.author: kisubedi
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 ---
 
 # Responsible AI FAQs for Power Automate

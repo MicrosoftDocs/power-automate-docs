@@ -27,7 +27,7 @@ You can change the application settings in the **Options** tab.
 
 - **Change process animation settings:** In the **Animation** tab, change settings for process animation. These settings will be used as default, whenever a new process view is created.
 
-### See also
+## Related information
 
 [Settings overview](settings.md)
 

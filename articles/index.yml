@@ -11,7 +11,7 @@ metadata:
   author: v-aangie #Required; your GitHub user alias, with correct capitalization.
   ms.author: angieandrews #Required; microsoft alias of author; optional team alias.
   ms.reviewer: angieandrews
-  ms.date: 06/30/2023 #Required; mm/dd/yyyy format.
+  ms.date: 06/20/2024 #Required; mm/dd/yyyy format.
   ms.custom: bap-template
   hide_bc: true
 
@@ -60,10 +60,12 @@ additionalContent:
           url: ./desktop-flows/create-flow.md
     - title: AI copilot capabilities
       links:
-        - text: Get started with Copilot in cloud flows
-          url: ./get-started-with-copilot.md
-        - text: Edit a flow using the designer with copilot capabilities
-          url: ./get-started-with-copilot.md#edit-a-flow-using-the-designer-with-copilot-capabilities
+        - text: Copilot in cloud flows
+          url: ./copilot-overview.md#copilot-in-cloud-flows
+        - text: Copilot in Process Mining
+          url: ./copilot-overview.md#copilot-in-process-mining
+        - text: Copilot in desktop flows
+          url: ./copilot-overview.md#copilot-in-desktop-flows
     - title: Plan with the process mining capability
       links:
         - text: Understand your processes and identify opportunities with process mining
@@ -167,10 +169,6 @@ additionalContent:
         - title: Power Pages
           summary: Design, host, and administer secure, modern, and low-code business websites.
           url: /power-pages
-        # Card
-        - title: Power Virtual Agents
-          summary: Create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
-          url: /power-virtual-agents
         # Card
         - title: Dynamics 365
           summary: Empower your organization with the next generation of CRM and ERP applications.

@@ -1,21 +1,20 @@
 ---
-title: Use the admin center to manage environments and data policies (contains video) | Microsoft Docs
+title: Use the admin center to manage environments and data policies | Microsoft Docs
 description: The Power Automate admin center is retired and Power Automate admins must use the Power Platform admin center to manage data policies and environments for Power Automate deployments.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/09/2021
-ms.author: deonhe
-ms.reviewer: gtrantzas
+ms.author: angieandrews
+ms.reviewer: angieandrews
 search.audienceType: 
   - admin
 ---

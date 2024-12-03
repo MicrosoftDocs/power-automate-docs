@@ -1,5 +1,5 @@
 ---
-title: Introduction to SAP GUI–based RPA in Power Automate Desktop  (contains video) | Microsoft Docs
+title: Introduction to SAP GUI–based RPA in Power Automate Desktop | Microsoft Docs
 description: In this playbook, we'll focus on SAP GUI automation patterns and best practices using Microsoft Power Automate, Power Automate Desktop, and desktop flows.
 services: ''
 suite: flow
@@ -8,13 +8,12 @@ author: kathyos
 editor: ''
 ms.custom: guidance
 
-ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/01/2021
 ms.author: kathyos
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 ---
 
 # Introduction to SAP GUI–based RPA in Power Automate Desktop

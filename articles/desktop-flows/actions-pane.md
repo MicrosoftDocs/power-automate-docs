@@ -1,12 +1,13 @@
 ---
 title: Configure actions and the actions pane
 description: This section shows how to use the actions pane to deploy actions in the flow designer.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/03/2022
+ms.date: 08/29/2024
 ms.author: iomavrid
-ms.reviewer: gtrantzas
+ms.reviewer: matp
+ms.collection: bap-ai-copilot
 contributors:
 search.audienceType: 
   - flowmaker
@@ -29,9 +30,60 @@ To develop a desktop flow, find the action you want to deploy, and double-click 
 
 :::image type="content" source="media/adding-actions/add-action.png" alt-text="Screenshot of an action while dragging it into the workspace.":::
 
-After the deployment, the modal of the action opens and displays the available parameters of the action. Some actions may have default values for some parameters, while others require user input. When the configuration is ready, select **Save**.
+After the deployment, the modal of the action opens and displays the available parameters of the action. Some actions might have default values for some parameters, while others require user input. When the configuration is ready, select **Save**.
 
 :::image type="content" source="media/adding-actions/action-properties.png" alt-text="Screenshot of the modal of an action.":::
+
+### Adding actions from the suggested actions panel (preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
+
+In addition to adding actions from the actions panel, you can also use the suggested actions panel.
+
+> [!IMPORTANT]
+>
+> - This feature is in preview. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - To understand the capabilities and limitations of this feature, go to [FAQ for Power Automate for desktop suggested actions](../faqs-action-suggestions-power-automate-desktop.md).
+
+### Availability by region
+
+Currently, the suggested actions functionality in Power Automate for desktop is only available in environments located in the United States.
+
+### Availability by account type
+
+Currently, the suggested actions functionality in Power Automate for desktop is only available for users with a work or school account.
+
+### Using suggested actions in your flows
+
+The suggested actions functionality uses AI to generate a list of actions that you could use as the next steps in your flow. To do so, select the add button that appears on mouse hover or when an action is selected.
+:::image type="content" source="media/suggested-actions/next_best_action.png" alt-text="Screenshot of the add actions via the suggested actions panel." lightbox="media/suggested-actions/next_best_action.png":::
+
+Once the **Suggested actions** panel appears, double-click the action that you want to add to your flow.
+:::image type="content" source="media/suggested-actions/next_best_action2.png" alt-text="Screenshot of the suggested actions panel." lightbox="media/suggested-actions/next_best_action2.png":::
+
+### Disabling the suggested actions functionality
+
+To disable the suggested actions functionality, Power Platform admins contact Microsoft support. More information: [Get Help + Support](/power-platform/admin/get-help-support)
+
+### Help us improve this feature
+
+You can send feedback by selecting the thumb up or thumb down icon underneath the AI-generated action suggestions. Once you do, a dialog box appears, which you can use to submit feedback to Microsoft.
+
+:::image type="content" source="media/pad_generative_answers/feedback_dialog1.png" alt-text="Image that shows where you can send your feedback about copilot in Power Automate for desktop.":::
+
+> [!NOTE]
+> If you can't see the dialog box, your Power Platform admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
+
+### Disabling the user feedback functionality
+
+As a Power Platform admin you can prevent users from sending feedback to Microsoft by disabling the **disableSurveyFeedback** tenant setting. More information:
+
+- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+
+### Data subject rights requests on user feedback
+
+Tenant administrators can view, export, and delete the feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage), and then selecting **Health** > **Product feedback**.
 
 ## Configure actions
 
@@ -41,7 +93,7 @@ Power Automate actions contain three main elements:
 
     To use a variable as a parameter, select the appropriate icon on the right side of the field and pick the desired variable.
 
-    Each field can accept specific data types, such as numeric values, text, or lists. If you use values or variables of wrong data types as inputs, the action will throw an error. To find more information about data types, refer to [Variable datatypes](variable-data-types.md).
+    Each field can accept specific data types, such as numeric values, text, or lists. If you use values or variables of wrong data types as inputs, the action results in an error. To find more information about data types, refer to [Variable datatypes](variable-data-types.md).
 
     :::image type="content" source="media/configuring-actions/action-input-parameteres.png" alt-text="Screenshot of the input parameters in an action's modal.":::
 
@@ -67,9 +119,9 @@ To disable or enable an action, right-click on it and select **Disable action** 
 
 Disabling an action allows you to remove it from the flow without erasing it. This feature is commonly applied for testing, as it enables you to try different versions of your desktop flow efficiently.
 
-When an action is disabled, all variables initialized in its modal get hidden from the variables pane. The flow may throw an error if you use the hidden variables in other actions.
+When an action is disabled, all variables initialized in its modal get hidden from the variables pane. The flow might display an error if you use the hidden variables in other actions.
 
-In the example below, two actions throw an error because they contain variables defined in a disabled action. To find information on how to handle errors, go to [Handle errors in desktop flows](errors.md).
+In the following example, two actions throw an error because they contain variables defined in a disabled action. To find information on how to handle errors, go to [Handle errors in desktop flows](errors.md).
 
 :::image type="content" source="media/enabling-disabling-actions/enable-disable-action-variables.png" alt-text="Screenshot of an example in which disabling an action causes errors.":::
 

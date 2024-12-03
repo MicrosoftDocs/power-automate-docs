@@ -1,22 +1,18 @@
 ---
 title: Create a cloud flow with Microsoft Dataverse (legacy)
 description: Learn how to create workflows by using a Microsoft Dataverse (legacy) connection and Power Automate.
-services: ''
+
 suite: flow
 documentationcenter: na
 author: Radioblazer
 contributors:
+  - russrimm
   - Radioblazer
   - ChrisGarty
   - v-aangie
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 02/10/2023
+ms.date: 04/24/2024
 ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -26,10 +22,10 @@ search.audienceType:
 
 # Create a cloud flow with Microsoft Dataverse (legacy)
 
-> [!IMPORTANT]
-> Flows that are created with the Dataverse (legacy) connector will no longer work as of summer 2023. Use the migration tool in Power Automate to automatically migrate from the Dataverse (legacy) connector to the Microsoft Dataverse connector. 
+With the Microsoft Dataverse connector, you can create flows that are initiated by create and update events within Dataverse. You can also perform create, update, retrieve, and delete actions on rows in Dataverse.
 
-With the Microsoft Dataverse connector, you can create flows that are initiated by create and update events within Dataverse. Additionally, you can perform create, update, retrieve, and delete actions on rows within Dataverse.
+> [!IMPORTANT]
+> Flows that are created with the Dataverse (legacy) connector will no longer work after a date that is announced during 2024. To automatically migrate from the Dataverse (legacy) connector to the Microsoft Dataverse connector, use the migration tool in Power Automate.
 
 ## Initiate a cloud flow from Dataverse
 
@@ -41,7 +37,7 @@ You can use any of the following triggers to initiate your flow.
 
 :::image type="content" source="./media/cds-connector/triggers.png" alt-text="Screenshot of selecting a trigger.":::
 
-If the selected trigger requires an environment to be selected, then you can choose `(Current)`, which will always use the database within the environment in which Power Automate runs. If you want your flow to always trigger based on an event in a specific environment, select that environment.
+If the selected trigger requires an environment to be selected, then you can choose `(Current)`, which always uses the database in the environment in which Power Automate runs. If you want your flow to always trigger based on an event in a specific environment, select that environment.
 
 :::image type="content" source="./media/cds-connector/Environments.png" alt-text="Screenshot of choosing an environment.":::
 
@@ -63,9 +59,9 @@ You can use scopes to determine if your flow runs in any of the following scenar
 Triggers that run when a row is modified can also use filtering columns. This ensures that the flow only runs when any of the defined columns are modified.
 
 > [!IMPORTANT]
-> Use filter columns to prevent your flow from unnecessarily running.
+> To prevent your flow from unnecessarily running, use filter columns.
 
-This flow triggers any time the first or last name of a contact that the flow user owns is modified.
+This flow triggers anytime the first or last name of a contact that the flow user owns is modified.
 
 :::image type="content" source="./media/cds-connector/FilterAttributes.png" alt-text="Screenshot of Filter columns.":::
 
@@ -104,9 +100,9 @@ You can use the **update a row** command to provide upsert actions. This command
 
 If you have a trigger registered on the update of a row, the flow runs for every *committed* update to the given row. The service invokes your flow asynchronously, and with the payload that it captures at the time the invocation occurs.
 
-Flow runs may be delayed if there's a backlog of system jobs in your environment.  If this delay occurs, your flow is triggered when the system job to invoke the flow runs.
+Flow runs might be delayed if there's a backlog of system jobs in your environment.  If this delay occurs, your flow is triggered when the system job to invoke the flow runs.
 
-### See also
+## Related information
 
 [Add canvas apps and cloud flows to a solution by default](/power-apps/maker/canvas-apps/add-app-solution-default)
 

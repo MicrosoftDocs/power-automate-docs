@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: taiki-yoshida
   ms.author: tayoshi
-  ms.date: 11/01/2020 
+  ms.date: 06/20/2024
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -85,6 +85,8 @@ landingContent:
             url: ./automation-kit/overview/introduction.md
           - text: Manage Power Automate for desktop on Windows
             url: ./automation-coe/manage-pad-on-windows.md  
+          - text: Building custom action for Power Automate for desktop
+            url: ./how-to/build-custom-action/buildcustomaction.md
 
 
   # Card
@@ -95,7 +97,7 @@ landingContent:
           - text: Create your first flow
             url: ../getting-started.md
           - text: What is desktop flow?
-            url: ../desktop-flows/overview.md
+            url: ../desktop-flows/introduction.md
           - text: Power Platform Center of Excellence (CoE) kit
             url: /power-platform/guidance/coe/starter-kit
           - text: Power Platform ALM guide

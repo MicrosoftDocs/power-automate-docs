@@ -1,12 +1,12 @@
 ---
 title: Browser automation actions reference
 description: See all the available browser automation actions.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/23/2023
+ms.date: 10/23/2024
 ms.author: nimoutzo
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -18,6 +18,11 @@ search.audienceType:
 # Browser automation actions
 
 Browser automation actions enable users to interact with web applications and components through UI elements. Web UI elements, also called Web elements, describe uniquely the web components that the action is going to handle.
+
+To perform web automation, you first need to create a new browser instance. You can achieve this using the Launch Browser actions, which support Microsoft Edge, Google Chrome, Mozilla Firefox, and Internet Explorer. With the Launch Browser actions, you can also specify whether the web page should be launched on your local desktop or in a virtual desktop environment.
+
+> [!NOTE]
+> To launch a browser on a virtual desktop, first capture at least one UI element within that desktop. This element needs to be available in the UI element repository of your flow.
 
 To add a new UI element, select **Add UI element** through the deployed browser automation action or the UI elements pane of the flow designer.
 
@@ -375,6 +380,7 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 |Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Internet Explorer tab to attach to|
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Internet Explorer tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
+|Target desktop|N/A|Local computer, Any virtual desktop that is either currently connected or has at least one UI element captured|Local computer|Set the connection string of the target desktop that the browser launches|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
@@ -413,6 +419,7 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Firefox tab to attach to|
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Firefox tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
+|Target desktop|N/A|Local computer, Any virtual desktop that is either currently connected or has at least one UI element captured|Local computer|Set the connection string of the target desktop that the browser launches|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
@@ -420,6 +427,8 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
+|User data folder|N/A|Picture-in-Picture default, Browser default, Custom|Picture-in-Picture default|Specify the user data folder the browser uses when the flow runs in Picture-in-Picture. If Browser default is selected, the browser can't be opened on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip.md#limitations-of-browser-automation-in-picture-in-picture)|
+|User data folder path|No|[Folder](../variable-data-types.md#files-and-folders)||Specify the path of the user data folder the browser uses when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip.md#limitations-of-browser-automation-in-picture-in-picture)|
 
 ### Variables produced
 
@@ -448,13 +457,16 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Chrome tab to attach to|
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Chrome tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
+|Target desktop|N/A|Local computer, Any virtual desktop that is either currently connected or has at least one UI element captured|Local computer|Set the connection string of the target desktop that the browser launches|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
 |Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error|
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
-|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
+|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be opened before the action fails|
+|User data folder|N/A|Picture-in-Picture default, Browser default, Custom|Picture-in-Picture default|Specify the user data folder the browser uses when the flow runs in Picture-in-Picture. If Browser default is selected, the browser can't be opened on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip.md#limitations-of-browser-automation-in-picture-in-picture)|
+|User data folder path|No|[Folder](../variable-data-types.md#files-and-folders)||Specify the path of the user data folder the browser will use when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip.md#limitations-of-browser-automation-in-picture-in-picture)|
 
 ### Variables produced
 
@@ -469,7 +481,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Failed to launch Chrome|Indicates a problem launching Chrome|
 |Invalid URL|Indicates that the provided URL was invalid|
 
-## <a name="launchedgebase"></a> Launch new Microsoft Edge
+## Launch new Microsoft Edge
 
 Launch a new instance or attach to a running instance of Microsoft Edge for automating websites and web applications.
 
@@ -478,11 +490,12 @@ Launch a new instance or attach to a running instance of Microsoft Edge for auto
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Launch mode|N/A|Launch new Instance, Attach to running instance|Launch new Instance|Specify whether to launch a new instance of Microsoft Edge or attach to an existing one|
-|Attach to Microsoft Edge tab|N/A|By title, By URL, Use foreground window|By title|Specify whether to attach to an Microsoft Edge tab by its title, URL, or attach to the active tab of Microsoft Edge running as the foreground window|
+|Attach to Microsoft Edge tab|N/A|By title, By URL, Use foreground window|By title|Specify whether to attach to a Microsoft Edge tab by its title, URL, or attach to the active tab of Microsoft Edge running as the foreground window|
 |Initial URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL of the web site to visit when the web browser is launched|
 |Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Microsoft Edge tab to attach to|
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Microsoft Edge tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
+|Target desktop|N/A|Local computer, Any virtual desktop that is either currently connected or has at least one UI element captured|Local computer|Set the connection string of the target desktop that the browser launches|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
@@ -490,6 +503,8 @@ Launch a new instance or attach to a running instance of Microsoft Edge for auto
 |If a pop-up dialog appears|N/A|Close it, Press a button, Do nothing|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
+|User data folder|N/A|Picture-in-Picture default, Browser default, Custom|Picture-in-Picture default|Specify the user data folder the browser uses when the flow runs in Picture-in-Picture. If Browser default is selected, the browser can't be opened on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip.md#limitations-of-browser-automation-in-picture-in-picture)|
+|User data folder path|No|[Folder](../variable-data-types.md#files-and-folders)||Specify the path of the user data folder the browser uses when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip.md#limitations-of-browser-automation-in-picture-in-picture)|
 
 ### Variables produced
 
@@ -649,6 +664,7 @@ Hover the mouse over an element of a web page.
 |-----|-----|-----|-----|-----|
 |Web browser instance|No|[Web browser instance](../variable-data-types.md#instances)||Enter or choose the variable that contains the web browser instance to work with|
 |UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to hover|
+|Move mouse to hover|No|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to physically move the mouse cursor over the element in order to hover the UI element. A physical hover is required for cases where emulated hover doesn't perform the intentional action on the element. As this option requires the browser window to be focused, it automatically brings it to the foreground.|
 
 ### Variables produced
 

@@ -56,7 +56,7 @@ You can switch between a constant value and a custom expression by selecting **F
 
 To learn how to use a custom expression, go to [Custom metrics overview](custom-metrics.md).
 
-### See also
+## Related information
 
 [Custom metrics overview](custom-metrics.md)<br/>
 [Tips and examples](general-information.md)

@@ -1,13 +1,14 @@
 ---
 title: Power Automate v2 schema
 description: Learn about the Power Automate v2 schema.
-author: georgiostrantzas
+author: nvigne
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/11/2023
-ms.author: dbekirop
-ms.reviewer: gtrantzas
+ms.date: 11/07/2024
+ms.author: nvigne
+ms.reviewer: matp
 contributors:
+  - DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -15,11 +16,11 @@ search.audienceType:
 # Power Automate v2 schema
 
 > [!NOTE]
-> The Power Automate and Dataverse feature described in this article is applicable to users who sign in [with work, or school accounts, or organization premium accounts](/power-automate/desktop-flows/requirements#sign-in-account-comparison). 
+> The Power Automate and Dataverse feature described in this article is applicable to users who sign in [with work, or school accounts, or organization premium accounts](/power-automate/desktop-flows/requirements#sign-in-account-comparison).
 
 Power Automate stores desktop flows in Microsoft Dataverse, which lets you securely store and manage data used by business applications.
 
-This functionality enables you to use features like solutions for Application Lifecycle Management (ALM). However, handling data stored in this way may be challenging.
+This functionality enables you to use features like solutions for Application Lifecycle Management (ALM). However, handling data stored in this way might be challenging.
 
 Thus, a new storage schema for desktop flows in Dataverse (v2) is available. It makes working with Dataverse APIs easier and enables future product enhancements with desktop flows. The new storage schema is publicly available along with Power Automate for desktop (v2.29).
 
@@ -37,11 +38,13 @@ Convert desktop flows stored in the v1 schema to the v2 schema by end of 2024, a
 
 ## Schema v2 enabled by default
 
-Starting January 2024, v2 schema will be automatically enabled for all environments. Although not recommended, the option to opt-out of the auto-enablement is available in the Power Platform admin center. By turning the opt-out on, we will delay the enablement of v2 schema on this particular environment.
+Starting January 2024, v2 schema is automatically enabled for all environments. Although not recommended, the option to opt-out of the autoenablement is available in the Power Platform admin center. Turning on the opt-out delays the enablement of v2 schema on this particular environment.
 
 :::image type="content" source="media/schema/schema-v2-off.png" alt-text="The option in the Power Platform Admin Center to opt-out of schema v2 enabled by default.":::
 
-Later in 2024, v2 schema will be turned on for all environments without the option to disable the feature. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
+Later in 2024, v2 schema will be turned on for all environments without the option to disable the feature and the option won't be visible in Power Platform admin center. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
+
+As of October 1st, 2024, the v2 schema is enabled by default in all Public regions of the Power Platform.
 
 ## Manage desktop flows in environments with the v2 schema enabled
 
@@ -53,15 +56,22 @@ If a desktop flow belongs to a solution in a v2-enabled environment, follow [the
 
 Power Automate for desktop version 2.29 or later allows organizations that moved ahead with the v2 schema to roll back until the v1 schema becomes deprecated.
 
-You can roll back a desktop flow converted to the v2 schema by resaving the desktop flow to an environment where the PPAC administrator has the feature disabled.
+You can roll back a desktop flow converted to the v2 schema by resaving the desktop flow to an environment where the Power Platform administrator has the feature disabled.
 
 For most scenarios, there's no need to downgrade your version of Power Automate for desktop. However, desktop flows that use v2-related features that aren't supported by the v1 schema can't roll back.
+
+A rollback from v2 to v1 can result in some screenshots associated with UI elements not being saved. Although those screenshots aren't necessary for the desktop flow to run, you can save them:
+
+1. Go to the **UI Elements** right panel in Power Automate desktop.
+1. Select each UI element in the list.
+
+This ensures that the screenshots are saved when you rollback to v1.
 
 ## Limitations of v2 schema desktop flows
 
 Desktop flows stored in the v2 schema only function in environments with the v2 schema feature enabled.
 
-V1 schema desktop flows in a managed solution may operate in an environment where the v2 schema is enabled, but first you should resave them into another environment where the v2 schema is enabled.
+V1 schema desktop flows in a managed solution might operate in an environment where the v2 schema is enabled, but first you should resave them into another environment where the v2 schema is enabled.
 
 Then, you can import the updated v2 schema version of the same process to the managed environment where it's intended to run. The active layer can be replaced by the v2 schema version of the automated process.
 
@@ -75,13 +85,44 @@ Then, you can import the updated v2 schema version of the same process to the ma
 |**Can edit/save v2 desktop flows into z1 schema in environments with the v2 schema disabled?** |No (user notified of error)|Yes (flows are downgraded to and saved in the v1 schema)|
 |**Can edit/save v2 desktop flows into v2 schema in environments with the v2 schema enabled?** |No (user notified of error)|Yes|
 
+## Exceeded size limit
+
+When you save a desktop flow in v2 schema, you might see the following error:
+
+"The flow can't be saved as it has exceeded the allowed size limit."
+
+:::image type="content" source="media/schema/desktopflow-v2-limit.png" alt-text="Error during flow save error message indicating limit on the flow size.":::
+
+The limit applies to the definition of the desktop flow saved in Dataverse, which can't exceed 16M characters. The issue can occur with a large desktop flow, such as when actions have large property values or variables have large default values. For example, an image saved as base64 and set as a default variable value.
+
+We recommend to not store a large payload in the action properties or in the variable default value. Instead retrieve the value from other actions or pass the value as an input variable. You can also split your desktop flow into multiple child desktop flows.
+
 ## Dataverse schema
+
 With v2 schema, we change the data model stored in Dataverse. In addition to the workflow entity, we use the desktop flow binary entity to store data related to the desktop flow including images and metadata.
 
 :::image type="content" source="media/schema/desktopflowbinaries-v2.png" alt-text="Desktop flow in v2 schema with desktop flow binaries.":::
 
 > [!IMPORTANT]
-> The desktop flow binaries objects are required components of the desktop flow as they store required data for the desktop flow to be able to open or run. 
+> The desktop flow binary objects are required components of the desktop flow as they store required data for the desktop flow to be able to open or run. Don't delete these binary objects. Deleting them results in permanent data loss for the desktop flow, which makes the respective flow non-editable.
 
 The number of desktop flow binaries might vary depending on the size of the desktop flow.
 
+## Roles and privileges
+
+With the v2 schema, the desktop flow binary table is used. For desktop flows to work as expected, you need additional privileges. If you're using the default security roles `Environment Maker` and `Basic User`, there's no change needed.
+
+If you use custom security roles to manage the access to your desktop flow, Power Platform admins need to add the following list of privileges to the role:
+
+- `prvCreatedesktopflowbinary`
+- `prvReaddesktopflowbinary`
+- `prvWritedesktopflowbinary`
+- `prvDeletedesktopflowbinary`
+- `prvSharedesktopflowbinary`
+- `prvAssigndesktopflowbinary`
+- `prvAppenddesktopflowbinary`
+- `prvAppendTodesktopflowbinary`
+
+The minimum access level for each privilege is basic (user). More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
+
+:::image type="content" source="media/schema/desktopflowbinary-permissions.png" alt-text="Privilege and access level required for desktop flow binaries with v2 schema":::
