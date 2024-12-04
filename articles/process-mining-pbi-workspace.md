@@ -54,7 +54,7 @@ If you haven't done this yet, install the Azure tools.
 
 1. Register the process mining service principal by typing this command:
 
-    **New-AzureADServicePrincipal -AppId dad3c6de-ed58-42ef-989f-9c0303aaeedc -DisplayName ‘Process Insights Prod’**
+    **New-AzureADServicePrincipal -AppId 00001111-aaaa-2222-bbbb-3333cccc4444 -DisplayName ‘Process Insights Prod’**
 
     :::image type="content" source="media/process-mining-pbi-workspace/svc-principal.png" alt-text="Screenshot of the service principal registration.":::
 
