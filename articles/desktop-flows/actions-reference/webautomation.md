@@ -4,7 +4,7 @@ description: See all the available browser automation actions.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/23/2024
+ms.date: 12/04/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -607,7 +607,7 @@ This action doesn't produce any variables.
 Select a link in a web page that results in downloading a file.
 
 > [!IMPORTANT]
-> The **Click download link on web page** action only works in the Internet Explorer web browser, which has reached the end of its product lifecycle. We don't recommend you use this action, use [HTTP actions](web.md#downloadfromweb) instead.
+> The **Click download link on web page** action only works in Internet Explorer, which has reached the end of its lifecycle. We recommend using [HTTP actions](web.md#downloadfromweb) instead.
 
 ### Input parameters
 
