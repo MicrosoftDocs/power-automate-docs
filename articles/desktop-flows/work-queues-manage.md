@@ -2,7 +2,7 @@
 title: Manage work queues
 description: Manage work queues in Power Automate.
 ms.topic: conceptual
-ms.date: 07/08/2024
+ms.date: 12/05/2024
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -128,6 +128,19 @@ To edit a work queue item:
 
   > [!NOTE]
   > If you don't provide a value for the work queue item name, the internal work queue id is displayed instead in the work queue item list pages.
+
+### Work queue item statuses
+
+| Status             | Purpose                                                                           | When to Use                                                                                  | Example                                                      |
+|--------------------|-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
+| Queued             | The item is waiting to be picked up for processing.                               | When the item is ready to be processed. This status is the default when adding items to a work queue. | An invoice was received and added to the processing queue.   |
+| Processing         | A system or a human is currently processing the item.                             | When the item is actively being worked on.                                                   | A customer service representative is working on resolving a customer complaint. |
+| On hold            | The item is temporarily paused and isn't available for processing.                | When additional information is required or a dependent task needs to be completed.           | An order is on hold because the payment confirmation is pending from the customer. |
+| Processed          | The item is successfully processed and completed.                                 | Use this status to indicate that the work on the item finished successfully.                 | A customer refund was processed and confirmed.               |
+| Generic exception  | The item encountered an unspecified, unexpected error or issue during processing. | When an unexpected error occurs that doesn't fit into other more specific exception statuses. | An unexpected system error caused an order processing to fail. |
+| IT exception       | The item encountered a technical error or IT-related issue during processing.     | When processing is interrupted by a technical failure, such as a server error or connectivity issue. | An order processing failed due to a network or database server outage. |
+| Business exception | The item encountered a business rule-related issue during processing.             | When processing fails due to a business logic error or violation, such as incorrect data input. | A vendor invoice is rejected because the vendor sending the invoice is blocked. |
+| Processing timeout | The item failed to complete processing within the allocated time limit.           | When processing takes longer than the predefined time frame for the work queue.              | A data extraction process from a remote application is taking longer than the set timeout limit. |
 
 ### Allowed status transitions
 
