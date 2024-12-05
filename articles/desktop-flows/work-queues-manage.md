@@ -129,6 +129,8 @@ To edit a work queue item:
   > [!NOTE]
   > If you don't provide a value for the work queue item name, the internal work queue id is displayed instead in the work queue item list pages.
 
+### Work queue item statuses
+
 | Status             | Purpose                                                                           | When to Use                                                                                  | Example                                                      |
 |--------------------|-----------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|--------------------------------------------------------------|
 | Queued             | The item is waiting to be picked up for processing.                               | When the item is ready to be processed. This status is the default when adding items to a work queue. | An invoice was received and added to the processing queue.   |
