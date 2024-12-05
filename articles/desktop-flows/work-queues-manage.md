@@ -129,6 +129,19 @@ To edit a work queue item:
   > [!NOTE]
   > If you don't provide a value for the work queue item name, the internal work queue id is displayed instead in the work queue item list pages.
 
+### Work queue item statuses
+
+| Status               | Purpose                                                                           | When to Use                                                                                | Example           |
+|----------------------|-----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|-------------------|
+| Queued               | The item is waiting to be picked up for processing.                               | When the item is ready to be processed. This is the default status when adding items to a work queue. | An invoice has just been received and added to the processing queue.  |
+| Processing           | The item is currently being processed by a system or a human.                     | When the item is actively being worked on.                                  | A customer service representative is currently working on resolving a customer complaint.       |
+| On hold              | The item has been temporarily paused and is not available for processing.         | When additional information is required or a dependent task needs to be completed. | An order is on hold because the payment confirmation is pending from the customer.       |
+| Processed            | The item has been successfully processed and completed.                           | Use this status to indicate that the work on the item has finished successfully.            | A customer refund has been processed and confirmed.                             |
+| Generic exception    | The item encountered an unspecified, unexpected error or issue during processing. | When an unexpected error occurs that does not fit into other more specific exception statuses. | An unexpected system error caused an order processing to fail.               |
+| IT exception         | The item encountered a technical error or IT-related issue during processing.     | When processing is interrupted by a technical failure, such as a server error or connectivity issue. | An order processing failed due to a network or database server outage. |
+| Business exception   | The item encountered a business rule-related issue during processing.             | When processing fails due to a business logic error or violation, such as incorrect data input. | An vendor invoice is rejected because the vendor sending the invoice is blocked. |
+| Processing timeout   | The item failed to complete processing within the allocated time limit.           | When processing takes longer than the predefined time frame for the work queue. | A data extraction process from a remote application is taking way longer than the set timeout limit.|
+
 ### Allowed status transitions
 
 Status transitions rules have been established in order to optimize the lifecycle management of work queue items. As a result, certain work queue item statuses might be unavailable for selection either interactively or during runtime processing if they don't fall under the allowed transition path. More information about these paths is in the following table.
