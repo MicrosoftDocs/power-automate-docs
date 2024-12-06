@@ -1,7 +1,7 @@
 ---
 title: Create generative actions in cloud flows (preview)
 description: Learn how to create generative actions in cloud flows.
-ms.date: 10/14/2024
+ms.date: 12/11/2024
 ms.topic: conceptual
 author: HeatherOrt
 contributors:
@@ -17,11 +17,11 @@ ms.collection:
 
 [!INCLUDE[cc-preview-features-definition](includes/cc-preview-features-top-note.md)]
 
-# Create a generative action
-
 Generative actions are a new type of automation that is authored, tested, and executed through an AI runtime. Generative actions can simplify and accelerate the automation process by reducing the need for specifying the action sets and sequencing to execute. Generative actions can also adapt to changing scenarios and data sources by leveraging the AI runtime's intelligence and reasoning capabilities. Generative actions can handle complex and dynamic tasks that involve multiple steps, conditions, loops, branches, and integrations.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
+## Create a generative action
 
 To create a generative action, you start in cloud flows designer.
 
@@ -48,38 +48,37 @@ To create a generative action, you start in cloud flows designer.
 
 1. Give your flow a name, select a trigger, or follow the directions to build a flow.
 1. Go to the designer by selecting **Create** or **Create flow**, depending on the flow type you selected.
-1. Once in the designer, select the plus sign (+) to create an action and select **Add generative action (preview)**.
+1. In the designer, select the plus sign (**+**) to create an action, and then select **Add generative action (preview)**.
+1. In the **Parameters** tab, select **+ New generative action**.
 
-    Alternatively, select from the action search panel.
+    :::image type="content" source="media/create-generative-actions/new-generative-action.png" alt-text="Screenshot of the option to create a new generative action.":::
 
-    :::image type="content" source="media/generative-actions-preview/image2.png" alt-text="Screenshot of a computer showing the action search panel in Power Automate":::
+1. To describe the automation you want to create, enter the intent of your automation in as many details as you like. Then, get an AI suggested action plan by selecting **Generate**.
 
-1. Select **+ New generative action**.
+    :::image type="content" source="media/create-generative-actions/generate-action.png" alt-text="Screenshot of a generative action description and the 'Generate' button.":::
 
-    :::image type="content" source="media/generative-actions-preview/image3.png" alt-text="Screenshot of a computer showing the option to create a new generative action":::
+### AI generated suggestions
 
-1. You're presented with the option to describe the automation you want to create. You can enter the intent of your automation here in as many details as you like. To have AI suggest an action plan, select **Generate**.
+AI generates suggested input and output types to use in the flow. AI also generates suggested connectors and actions that it can use to achieve the automation goal.
 
-    :::image type="content" source="media/generative-actions-preview/image4.png" alt-text="Screenshot of a computer showing the option to describe the automation intent":::
+Inputs are texts that the generative action uses to execute the plan. This text can be passed dynamically from previous cloud flow actions. Inputs are limited to 2,500 characters.
 
-    AI generates suggested input and output types to use in the flow. AI also generates suggested connectors and actions that it can use to achieve the automation goal.
+Outputs are text that the generative action creates that can be used in succeeding actions in the flow.
 
-    Inputs are texts that the generative action uses to execute the plan. This text can be passed dynamically from previous cloud flow actions. Inputs are limited to 2,500 characters.
+> [!TIP]
+> To remove additional detail or HTML and reduce input character count, review and use compose action on dynamic input.
 
-    Outputs are text that the generative action creates that can be used in succeeding actions in the flow.
+:::image type="content" source="media/create-generative-actions/inputs-outputs.png" alt-text="Screenshot of a computer showing the AI-generated inputs and outputs":::
 
-    > [!TIP]
-    > To remove additional detail or HTML and reduce input character count, review and use compose action on dynamic input.
+### Finalize your generative action
 
-    <!--Heather: What does this TIP mean?-->
+Finalize your generative action and preview it before execution. This allows you to make sure that the generative action is working as expected, and make necessary changes before adding it to your cloud flow.
 
-    :::image type="content" source="media/generative-actions-preview/image5.png" alt-text="Screenshot of a computer showing the AI-generated inputs and outputs":::
+1. Review, accept, or reject these suggestions.
 
-1. Review, accept, or reject these suggestions. If you don't accept suggestions, they're deleted when you preview or add your generative action to the flow.
-
-    You can add custom inputs, outputs, connectors, and actions if they aren't suggested.
-
-    The generative action doesn't execute on actions that aren't first added to the plan.
+    - If you don't accept suggestions, they're deleted when you preview or add your generative action to the flow.
+    - You can add custom inputs, outputs, connectors, and actions if they aren't suggested.
+    - The generative action doesn't execute on actions that aren't first added to the plan.
 
 1. To preview your generative action, select the **Preview** tab.
 1. Provide sample inputs for your generative action, such as an order ID or a customer name.
@@ -91,9 +90,9 @@ To create a generative action, you start in cloud flows designer.
 
 ## Add references to a generative action
 
-You can add up to three OneDrive documents as references, which the Generative action can use as part of its execution.
+You can add up to three Microsoft OneDrive documents as references. The generative action can use them as part of its execution.
 
-The Microsoft Word document must be labeled as non-confidential and reside in the owner’s OneDrive. Each Word document must be fewer than 10 MB.
+The Microsoft Word document must be labeled as non-confidential and reside in the owner's OneDrive. Each Word document must be fewer than 10 MB.
 
 ## Monitor a generative action
 
@@ -103,7 +102,7 @@ To monitor and edit a generative action, follow these steps:
 
 1. From the **My flows** page, select the **Generative actions** tab.
 
-    You can see the list of your generative actions, their status, and their last run time.
+    You can display the list of your generative actions, their status, and their last run time.
 
 1. To monitor the run history of a generative action, select the generative action name > **Run history**.
 
@@ -117,10 +116,11 @@ To monitor and edit a generative action, follow these steps:
 
 ## Known limitations
 
+The following limitations apply to generative actions in cloud flows:
+
 - Only text based inputs are supported.
 - Cancelling the cloud flow doesn't cancel the running generative action. It must be canceled separately.
 - Currently limited to the following connectors:
-
   - SharePoint
   - Office 365 Outlook
   - OneDrive for work or school
