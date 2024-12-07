@@ -56,8 +56,6 @@ If you haven't done this yet, install the Azure tools.
 
     **New-AzureADServicePrincipal -AppId 00001111-aaaa-2222-bbbb-3333cccc4444 -DisplayName ‘Process Insights Prod’**
 
-    :::image type="content" source="media/process-mining-pbi-workspace/svc-principal.png" alt-text="Screenshot of the service principal registration.":::
-
 1. Sign in to [Microsoft Power BI](https://powerbi.microsoft.com/).
 
 1. Select the ellipsis (**...**) > **Settings** > **Admin portal**.
