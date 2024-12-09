@@ -47,7 +47,7 @@ Currently, Copilot in Power Automate for desktop is only available for users wit
  :::image type="content" source="articles/desktop-flows/media/repair-with-copilot/repair_flow_properties.png" alt-text="Screenshot for enabling feature in flow properties.":::
 
  
-## Feature step-by-step 
+## Attended experience step-by-step 
 
 The feature is triggered when a cloud flow initiates a desktop flow that is on the verge of failing. This potential failure is due to a UI or browser automation action encountering an error because the UI element intended for interaction cannot be located using the pre-configured selector(s). Next, a ‘Repair with Copilot’ notification window will appear on the screen. Copilot will then attempt to find the necessary UI element by analyzing the UI elements present on the relevant screen or web page. Clicking on Cancel shall stop the entire process and action will fail, which means that desktop flow should fail (or activate the error handling mechanism of the failed action). Click on 'Repair manually', and you should indicate the required UI element manually in the screen by capturing it. 
 :::image type="content" source="articles/desktop-flows/media/repair-with-copilot/repair_wait_for_copilot.png" alt-text="Copilot is trying to locate the UI element.":::
