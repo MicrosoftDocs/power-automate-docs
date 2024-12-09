@@ -93,6 +93,14 @@ To monitor the performance of individual user sessions:
 1. Select the **Users** tab.
 1. Review the RAM and CPU usage for each session.
 
+## Considerations when setting up Power Automate for desktop using VM images
+
+When setting up Power Automate for desktop in your organization, it's important to note that **pre-installing Power Automate for desktop as part of a VM imaging process is not recommended**. This approach can lead to potential unexpected behavior due to the machine registration information that may still be retained in the cloned VM image.
+
+Instead, it's advised to install Power Automate for desktop individually on each machine after the imaging process. This ensures that the installation is tailored to the specific environment context.
+
+For automated deployments, consider using deployment tools and scripts that can install and configure Power Automate for desktop post-imaging. This method provides greater flexibility and control over the installation process, allowing for a more consistent and error-free deployment.
+
 ## Supported languages
 
 Power Automate for desktop uses the display language selected in Windows. [Learn how to manage display language settings in Windows](https://support.microsoft.com/windows/manage-display-language-settings-in-windows-10-219f28b0-9881-cd4c-75ca-dba919c52321).
