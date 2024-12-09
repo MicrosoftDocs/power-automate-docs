@@ -40,6 +40,15 @@ For example, an environment with 20 Power Automate Hosted Process capacity could
 
 Learn more about licensing in the [Power Automate licensing page](/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-hosted-process%2Cconnector-types#capacity-licenses).
 
+
+## Implementation checklist
+
+|Steps | Checklist |  Description |
+|--------|--------| --------|
+|**Setup**|- Cloud flow <br>- Standard machine|Bla|
+|**Allocated automation**|- Cloud flow <br>- Standard machine||
+
+
 ## Governance
 
 A Center of Excellence (COE) Administrator controls user access to specific resources within the hosted RPA solution. Microsoft Dataverse enforces governance using security roles, teams, and business units to control access to tables, fields, and records with permission and row-level access control.
