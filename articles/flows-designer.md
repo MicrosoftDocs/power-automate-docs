@@ -199,6 +199,43 @@ The expression editor in the designer is multi-line, which allows you to easily 
 > [!TIP]
 > You can use a forward slash ( / ) keyboard shortcut to invoke the token picker/expression editor popup when you're on an action field.
 
+
+### Create, Update and Fix your expressions with Copilot Expression Assistant
+
+This is a preview feature and will be available to tenants where copilot is enabled. On the modern designer, you can use this functionality to create, update or fix expression with the help of Copilot. 
+
+Scenario 1: Create expression with NL
+
+Click ‘Create expression with Copilot’ on expression editor, the UX you see is the UX for Expression Assistant. In the text box, write a prompt to generate an expression for, and click ‘Create expression’. You can reference flow’s dynamic content in your prompt using their names, to build expressions around. For e.g. Assuming you have first name, last name, Phone number, TriggerDate as dynamic data in your flow, you can ask following sample prompts:
+
+1.	Concatenate first name and last name
+2.	Grab last four characters of Phone Number
+3.	Convert Phone number from Integer to String
+4.	Format TriggerDate to ‘DD-MM’ format
+
+![image](https://github.com/user-attachments/assets/80eb10b0-d7f2-477b-aa75-8fc4af4ed697)
+
+  
+Scenario 2: Update an existing expression with NL
+If you have a existing expression (created manually or through Expression Assistant), you can click on ‘Create expression with Copilot’ in expression editor. Now it understands the context of the expression and any prompt you write is used to modify the existing expression. Finally, you click ‘Create expression’ and it returns updated expression, Click ‘OK’ to apply to expression editor and ‘Apply’ to apply to your flow.
+
+ ![image](https://github.com/user-attachments/assets/a1c43972-f61f-4e2e-82ce-96bafeddf1fc)
+
+![image](https://github.com/user-attachments/assets/d2e82c4c-7cfa-4740-93ac-38b14112fe02)
+
+![image](https://github.com/user-attachments/assets/346c5d94-9d53-4296-a473-cfa37cf5687c)
+
+Scenario 3: Fix invalid expression with a click of a button 
+You can use the same experience to fix erroneous expressions. 
+For e.g. below I have an erroneous expression because I have missed a parenthesis after ‘Phone’ [variables function opening parenthesis did not close].  
+ 
+
+![image](https://github.com/user-attachments/assets/573458a7-4644-414a-95ec-6fbad0bd6d8d)
+
+At this point, when I click ‘Create expression with Copilot’, it automatically fixes the expression that is currently loaded in expression editor. 
+![image](https://github.com/user-attachments/assets/61f8c17c-283b-4394-9c86-76b2c8622fa5)
+
+
 ### Disable an action or enable static results on an action
 
 On the designer, if you want to disable an action rather than remove it entirely, go to the **Testing** tab of the action and enable static outputs by turning on the **Enable Static Result** toggle. When the flow runs, this essentially treats the action as successful, without actually running the action.
