@@ -1258,6 +1258,8 @@
     href: faqs-copilot-in-process-mining.md
   - name: FAQ for Copilot in Power Automate for desktop
     href: faqs-copilot-in-pad.md
+  - name: FAQ for Repair with Copilot at runtime in Power Automate for desktop
+    href: faq-repair-copilot.md
   - name: FAQ for generating code with natural language
     href: faqs-copilot-nl-to-code.md
   - name: FAQ for suggested actions in Power Automate for desktop
