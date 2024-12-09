@@ -90,7 +90,10 @@ You also have the option to repair the issue manually. Similar to the previous m
 
 The manual repair experience will also be triggered if Copilot is unable to locate the UI element or if you select the ‘Repair manually’ option from the notification window’s drop-down menu.  
 
-:::image type="content" source="articles/desktop-flows/media/repair-with-copilot/repair_manual.png" alt-text="User is capturing the required UI element manually.":::
+:::image type="content" source="media/repair-with-copilot/repair_manual.png" alt-text="User is capturing the required UI element manually.":::
+
+
+
 ### Known limitations 
 - This feature is available only in attended and unattended executions through the portal (cloud flow).
 - This feature is available only in desktop flows saved in Schema v2.
