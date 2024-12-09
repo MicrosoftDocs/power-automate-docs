@@ -58,17 +58,6 @@ The feature is triggered when a cloud flow initiates a desktop flow that is on t
 > [!NOTE]
 > The timer, is set to 15 minutes from the initial display of the notification window, must be adhered to. The user has the option to reset the timer at any point within this period, which will restart the 15-minute countdown.
 
-
-The feature activates when a cloud flow executes a desktop flow that is about to fail due to an error in a UI or Browser automation action, where the required UI element cannot be located using the pre-configured selector(s). Upon activation: 
-
-The ‘Repair with Copilot’ notification window will appear on the screen. Copilot will attempt to locate the required UI element by analyzing the UI elements present on the related screen or web page. 
-
-Cancel: Clicking this option will stop the entire process, causing the action to fail and the desktop flow to either fail or trigger the error handling mechanism for the failed action. 
-
-Repair Manually: Selecting this option allows you to manually identify and capture the required UI element on the screen.  
-
-Note: During the private preview phase, the timer is static and must be adhered to. It is set to 15 minutes from the initial display of the notification window. 
-
 #### Repair with Copilot
 When Copilot locates the UI element successfully, then the options are: 
 - Apply for every run: The newly identified selector will be added to the selectors list for the UI element, positioned as the last in order. The desktop flow will be updated with this new selector, ensuring that in future runs, the suggested selector will be included in the list for this UI element.
