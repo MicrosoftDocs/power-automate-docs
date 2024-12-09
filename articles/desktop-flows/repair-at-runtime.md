@@ -44,13 +44,13 @@ Currently, Copilot in Power Automate for desktop is only available for users wit
 - For already existing flows, navigate to the respective desktop flow properties in the Power Automate for desktop console. The property ‘Repair flow errors’ in the desktop flow’s properties should enabled.
   - Repair with Copilot: This option allows for automated issue resolution with the assistance of Copilot. 
   - Repair: This option enables manual issue resolution, requiring the user to specify the UI element on the screen at the moment of failure during runtime.
- :::image type="content" source="articles/desktop-flows/media/repair-with-copilot/repair_flow_properties.png" alt-text="Screenshot for enabling feature in flow properties.":::
+ :::image type="content" source="/media/repair-with-copilot/repair_flow_properties.png" alt-text="Screenshot for enabling feature in flow properties.":::
 
  
 ### Attended experience step-by-step 
 
 The feature is triggered when a cloud flow initiates a desktop flow that is on the verge of failing. This potential failure is due to a UI or browser automation action encountering an error because the UI element intended for interaction cannot be located using the pre-configured selector(s). Next, a ‘Repair with Copilot’ notification window will appear on the screen. Copilot will then attempt to find the necessary UI element by analyzing the UI elements present on the relevant screen or web page. Clicking on Cancel shall stop the entire process and action will fail, which means that desktop flow should fail (or activate the error handling mechanism of the failed action). Click on 'Repair manually', and you should indicate the required UI element manually in the screen by capturing it. 
-:::image type="content" source="articles/desktop-flows/media/repair-with-copilot/repair_wait_for_copilot.png" alt-text="Copilot is trying to locate the UI element.":::
+:::image type="content" source="/media/repair-with-copilot/repair_wait_for_copilot.png" alt-text="Copilot is trying to locate the UI element.":::
 [!NOTE]
 > The timer, is set to 15 minutes from the initial display of the notification window, must be adhered to. The user has the option to reset the timer at any point within this period, which will restart the 15-minute countdown.
 
@@ -75,11 +75,11 @@ If the suggestion is accepted, the notification window will close, and the actio
 
 You can check the UI element suggested by Copilot by pressing the ‘Target’ button on the screen.
 
-:::image type="content" source="articles/desktop-flows/media/repair-with-copilot/repair_copilot_suggestion.png" alt-text="Copilot has located the UI element successfully.":::
+:::image type="content" source="media/repair-with-copilot/repair_copilot_suggestion.png" alt-text="Copilot has located the UI element successfully.":::
 
 When the AI service cannot locate the UI element successfully, then you will be prompted to locate the UI element manually. Of course, you may cancel the repair and subsequently, the desktop flow should fail (or activate the error handling mechanism of the failed action). 
 
-:::image type="content" source="articles/desktop-flows/media/repair-with-copilot/repair_copilot_cannot find.png" alt-text="Copilot could not locate the UI element.":::
+:::image type="content" source="media/repair-with-copilot/repair_copilot_cannot find.png" alt-text="Copilot could not locate the UI element.":::
 
 ### Repair manually
 You also have the option to repair the issue manually. Similar to the previous method, a notification window will appear at runtime, prompting you to capture the UI element using Power Automate for Desktop's highlighter. To initiate this process, simply click the ‘Repair’ button in the notification window, which will enable the highlighter. Next, hover over the necessary UI element on your screen and press ‘Ctrl’ along with a left-click to capture it.  
