@@ -44,7 +44,8 @@ Currently, Copilot in Power Automate for desktop is only available for users wit
 - For already existing flows, navigate to the respective desktop flow properties in the Power Automate for desktop console. The property ‘Repair flow errors’ in the desktop flow’s properties should enabled.
   - Repair with Copilot: This option allows for automated issue resolution with the assistance of Copilot. 
   - Repair: This option enables manual issue resolution, requiring the user to specify the UI element on the screen at the moment of failure during runtime.
- :::image type="content" source="/media/repair-with-copilot/repair_flow_properties.png" alt-text="Screenshot for enabling feature in flow properties.":::
+
+:::image type="content" source="/media/repair-with-copilot/repair_flow_properties.png" alt-text="Screenshot for enabling feature in flow properties.":::
 
  
 ### Attended experience step-by-step 
