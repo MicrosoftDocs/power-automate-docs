@@ -8,7 +8,7 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 10/21/2024
+ms.date: 12/12/2024
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -192,49 +192,63 @@ The bottom button is for the minimap. Use it to focus on a specific section of a
 
 ### Expression editor and token picker
 
-The expression editor in the designer is multi-line, which allows you to easily create and edit long, complex expressions. A *gripper* allows you to temporarily expand the box by one or two (1-2) lines, as needed. If that's not enough, you can expand the popup to a full page view. A search box allows you to search for tokens and functions, both in the Dynamic content view and Function view.
+The expression editor in the designer is multi-line, which allows you to easily create and edit long, complex expressions. A *gripper* allows you to temporarily expand the box by one or two (1-2) lines, as needed. If that's not enough, you can expand the popup to a full page view. A search box allows you to search for tokens and functions, both in the **Dynamic content** view and **Function** view.
 
 :::image type="content" source="media/flows-designer/expression-editor.png" alt-text="Screenshot of the expression editor.":::
 
 > [!TIP]
 > You can use a forward slash ( / ) keyboard shortcut to invoke the token picker/expression editor popup when you're on an action field.
 
+### Create, update, and fix your expressions with Copilot expression assistant (preview)
 
-### Create, Update and Fix your expressions with Copilot Expression Assistant
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-This is a preview feature and will be available to tenants where copilot is enabled. On the modern designer, you can use this functionality to create, update or fix expression with the help of Copilot. 
+This is a preview feature and is available to tenants where Copilot is enabled. On the modern designer, you can use this functionality to create, update, or fix expression with the help of Copilot.
 
-Scenario 1: Create expression with NL
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-Click ‘Create expression with Copilot’ on expression editor, the UX you see is the UX for Expression Assistant. In the text box, write a prompt to generate an expression for, and click ‘Create expression’. You can reference flow’s dynamic content in your prompt using their names, to build expressions around. For e.g. Assuming you have first name, last name, Phone number, TriggerDate as dynamic data in your flow, you can ask following sample prompts:
+#### Scenario 1: Create expression with natural language
 
-1.	Concatenate first name and last name
-2.	Grab last four characters of Phone Number
-3.	Convert Phone number from Integer to String
-4.	Format TriggerDate to ‘DD-MM’ format
+1. On the expression editor, select **Create expression with Copilot**.
 
-![image](https://github.com/user-attachments/assets/80eb10b0-d7f2-477b-aa75-8fc4af4ed697)
+    The user experience that displays is the user experience for expression assistant.
 
-  
-Scenario 2: Update an existing expression with NL
-If you have a existing expression (created manually or through Expression Assistant), you can click on ‘Create expression with Copilot’ in expression editor. Now it understands the context of the expression and any prompt you write is used to modify the existing expression. Finally, you click ‘Create expression’ and it returns updated expression, Click ‘OK’ to apply to expression editor and ‘Apply’ to apply to your flow.
+1. In the text box, write a prompt to generate an expression for, and select **Create expression**.
 
- ![image](https://github.com/user-attachments/assets/a1c43972-f61f-4e2e-82ce-96bafeddf1fc)
+    You can reference the flow’s dynamic content in your prompt using their names to build expressions around. For example, assume you have first name, last name, phone number, and TriggerDate as dynamic data in your flow. You can ask following sample prompts:
 
-![image](https://github.com/user-attachments/assets/d2e82c4c-7cfa-4740-93ac-38b14112fe02)
+    - Concatenate first name and last name.
+    - Grab last four characters of Phone Number.
+    - Convert Phone number from Integer to String.
+    - Format TriggerDate to 'DD-MM' format.
 
-![image](https://github.com/user-attachments/assets/346c5d94-9d53-4296-a473-cfa37cf5687c)
+    :::image type="content" source="media/flows-designer/create-expression-nl.png" alt-text="<alt text>":::
 
-Scenario 3: Fix invalid expression with a click of a button 
-You can use the same experience to fix erroneous expressions. 
-For e.g. below I have an erroneous expression because I have missed a parenthesis after ‘Phone’ [variables function opening parenthesis did not close].  
- 
+#### Scenario 2: Update an existing expression with natural language
 
-![image](https://github.com/user-attachments/assets/573458a7-4644-414a-95ec-6fbad0bd6d8d)
+If you have an existing expression that you created manually or through the expression assistant, you can select **Create expression with Copilot** in expression editor. Now it understands the context of the expression, and any prompt you write is used to modify the existing expression.
 
-At this point, when I click ‘Create expression with Copilot’, it automatically fixes the expression that is currently loaded in expression editor. 
-![image](https://github.com/user-attachments/assets/61f8c17c-283b-4394-9c86-76b2c8622fa5)
+To finalize the update, do the following steps:
 
+1. To return updated expression, select **Create expression**.
+1. To apply to expression editor, select **OK**.
+1. To apply to your flow, select **Apply**.
+
+    :::image type="content" source="media/flows-designer/compose-nl.png" alt-text="Screenshot of an input parameter.":::
+
+    :::image type="content" source="media/flows-designer/compose-full-nl.png" alt-text="Screenshot of an expression and string functions.":::
+
+    :::image type="content" source="media/flows-designer/compose-ok-nl.png" alt-text="Screenshot of a suggested expression.":::
+
+#### Scenario 3: Fix invalid expression using a button
+
+You can use the same experience to fix erroneous expressions. The following example shows an erroneous expression that has a missing parenthesis after 'Phone' [variables function opening parenthesis didn't close].  
+
+:::image type="content" source="media/flows-designer/phone-paren.png" alt-text="Screenshot of an erroneous expression.":::
+
+At this point, when you select **Create expression with Copilot**, it automatically fixes the expression that is currently loaded in expression editor.
+
+:::image type="content" source="media/flows-designer/phone-paren-fix.png" alt-text="Screenshot of a suggested fix for an erroneous expression.":::
 
 ### Disable an action or enable static results on an action
 
