@@ -34,7 +34,7 @@ This section provides an overview of the best practices and frequently asked que
 
 |Steps | Checklist |  Description |
 |--------|-----------| -----------------------------------------------------------------------|
-|**Setup**|• Licensing <br>• Infrastructure requirement <br>• Environment requirement|• **Licensing:** Refer to [licensing section](#licensing) to understand how hosted RPA machines are licensed and how many you need for your project |
+|**Setup**|• Licensing <br>• Infrastructure requirement <br>• Environment requirement|• **Licensing:** Refer to [licensing section](#licensing) to understand how hosted RPA machines are licensed and how many you need for your project. <br>• **Infrastructure requirement:** Understand your automation needs. If you are running Web automation, then the vanilla VM image provided by Microsoft may be sufficient. If you need specific desktop apps as part of your UI automation, then you may consider the custom VM image path or using device management tools such as Intune to install the requirement desktop apps via policies. |
 |**Governance**|• Permissions <br>• Device management  <br>• Security <br>• Capacity management|Bla|
 |**Maintenance**|• Monitoring <br>• Updates|Bla |
 
