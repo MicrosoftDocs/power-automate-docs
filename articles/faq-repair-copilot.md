@@ -18,20 +18,20 @@ These frequently asked questions (FAQ) describe the AI impact of the Repair with
 
 ## What is Repair with Copilot at runtime feature? 
 
-In Power Automate for desktop, a frequent issue arises when the product fails to locate UI elements during UI and Web automation actions at runtime. To address this, this feature enables Power Automate for desktop to employ Copilot capabilities to automatically locate the required UI element in case of a failure. This way, the execution continues, and automation is completed successfully, achieving the required goal. 
+In Power Automate for desktop, a frequent issue arises when the product fails to locate UI elements during UI and Web automation actions at runtime. To address this issue, this feature enables Power Automate for desktop to employ Copilot capabilities to automatically locate the required UI element in a failure. This way, the execution continues, and automation is completed successfully, achieving the required goal. 
 
 ## What can Repair with Copilot at runtime feature do?  
 
 The specific feature provides the user the capability to repair UI and Browser automation related issues at runtime, automatically, with the use of Copilot. More specifically: 
-- Feature is applied when a desktop flow is executed through the Power Automate portal in attended or unattended mode as part of a cloud flow (use of action ‘Run a flow built with Power Automate for desktop’), and a UI/Browser automation action is about to fail because the UI element to interact with cannot be found.
-- Power Automate for desktop provides as input to the Copilot the old selector(s) of the UI element (which is/are invalid) and the hierarchy tree of all UI elements that are contained in the respective window/pane/web tab.
+- Feature is applied when a desktop flow is executed through the Power Automate portal in attended or unattended mode as part of a cloud flow - use of action ‘Run a flow built with Power Automate for desktop’ - and a UI/Browser automation action is about to fail because the UI element to interact with cannot be found.
+- Power Automate for desktop provides as input to the Copilot the one or more old selectors of the UI element (which is/are invalid) and the hierarchy tree of all UI elements that are contained in the respective window/pane/web tab.
 - The Copilot locates the UI element in the provided hierarchy tree and has as output the UI element ID (unique identifier in the tree).
 - Power Automate for desktop generates the new selector for the indicated UI element and repairs the old selector.
 - Action is performed with the new, repaired, selector and execution of the flow continues.
 - User can either use the repaired selector only in the context of the specific execution or he/she can save the repaired selector for future execution as well. 
 
-## What is the system’s intended use(s)? 
-1. Execution of a UI/Browser automation action can be performed even if the selector(s) of the related UI element is invalid.
+## What is the system’s intended uses? 
+1. Execution of a UI/Browser automation action can be performed even if one or more selectors of the related UI element is invalid.
 2. The selector of a UI element can be repaired automatically and saved by the user and increase the success rate of the future executions of the specific flow. 
 
  
@@ -43,8 +43,8 @@ Feature in Power Automate for desktop has been evaluated against real-world scen
 - This feature is currently available only to Work or School accounts.
 - This feature refers only to attended or unattended execution through Power Automate portal as part of a cloud flow (use of action ‘Run a flow built with Power Automate for desktop’).
 - This feature can fix only cases where a UI element cannot be found because the existing selector(s) are not valid, meaning that cannot locate successfully the element in the screen at the moment of the UI/Browser automation action’s execution.
-- The feature can tackle issues only for leaf level UI element – invalid screens’ selectors will not be handled.
-- There is a specific time window that notification window will wait for the user to interact with. After the window closes, the fix will not be applied, and the action will fail.
+- The feature can tackle issues only for leaf level UI element – invalid screens’ selectors is not handled.
+- There is a specific time window that notification window waits for the user to interact with. After the window closes, the fix is not applied, and the action fails.
 - You can disable completely the feature in Power Automate for desktop, from the admin center or from the desktop flow’s properties window.
 
 ## What operational factors and settings allow for effective and responsible use of the feature in Power Automate for desktop? 
