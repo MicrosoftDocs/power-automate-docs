@@ -29,6 +29,16 @@ This section provides an overview of the best practices and frequently asked que
 | **User accounts**                        | • Work or school account                                                                                                            | • Work or school account<br> • Local account                                                                                                                                       |
 | **Device management**                    | • Intune<br> • Active Directory (AD)-based Group Policy (GPO) is using Microsoft Entra Hybrid join<br> • Conditional access policy             | • Conditional access policy                                                                                                                                                        |
 
+
+## Implementation checklist
+
+|Steps | Checklist |  Description |
+|--------|-----------| -----------------------------------------------------------------------|
+|**Setup**|• Licensing <br>• Infrastructure requirement <br>• Environment requirement|• **Licensing:** Refer to [licensing section](#licensing) to understand how hosted RPA machines are licensed and how many you need for your project |
+|**Governance**|• Permissions <br>• Device management  <br>• Security <br>• Capacity management|Bla|
+|**Maintenance**|• Monitoring <br>• Updates|Bla |
+
+
 ## Licensing
 
 Hosted RPA requires the **Power Automate Hosted Process** license ([Power Automate Pricing](https://www.microsoft.com/power-platform/products/power-automate/pricing)) (previously known as the Power Automate hosted RPA add-on). Each Power Automate Hosted Process capacity can provision one hosted machine or be used as shared capacity across hosted machine groups.
@@ -39,14 +49,6 @@ For example, an environment with 20 Power Automate Hosted Process capacity could
 - Three hosted machine groups sharing 10 bots. Refer to [load balancing hosted machine groups](hosted-machine-groups.md#load-balance-hosted-machine-group).
 
 Learn more about licensing in the [Power Automate licensing page](/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-hosted-process%2Cconnector-types#capacity-licenses).
-
-
-## Implementation checklist
-
-|Steps | Checklist |  Description |
-|--------|--------| --------|
-|**Setup**|- Cloud flow <br>- Standard machine|Bla|
-|**Allocated automation**|- Cloud flow <br>- Standard machine||
 
 
 ## Governance
