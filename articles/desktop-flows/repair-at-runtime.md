@@ -32,16 +32,16 @@ Copilot in Power Automate for desktop offers different capabilities, which are a
 Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
 
 > [!NOTE]
-> If your environment is in a supported region, you are signed in with a work or school account, and you still can't 'Repair with Copilot' in the Power Automate for desktop experience, contact your Power Platform administrator. An admin can turn Copilot off or on in the Power Platform admin center.
+> If your environment is in a supported region, you are signed in with a work or school account, and you still can't "Repair with Copilot" in the Power Automate for desktop experience, contact your Power Platform administrator. An admin can turn Copilot off or on in the Power Platform admin center.
 
 ## Repair a flow at runtime
 
 ### How to enable it 
 - Install the latest Power Automate for desktop build.  
-- To enable the use of AI for self-healing issues, the 'Repair at runtime' flag in PPAC must also be enabled. 
+- Enable the use of AI for self-healing issues, the "Repair at runtime" flag in PPAC must also be enabled. 
 - For repairing with Copilot, ensure the Copilot flag in Power Platform Admin Center (PPAC) is enabled.+
-- For newly created flows, enable the 'Repair flow errors' option.
-- For already existing flows, navigate to the respective desktop flow properties in the Power Automate for desktop console. The property ‘Repair flow errors’ in the desktop flow’s properties should enabled.
+- For newly created flows, enable the "Repair flow errors" option.
+- For already existing flows, navigate to the respective desktop flow properties in the Power Automate for desktop console. The property "Repair flow errors" in the desktop flow’s properties should be enabled.
   - Repair with Copilot: This option allows for automated issue resolution with the assistance of Copilot. 
   - Repair: This option enables manual issue resolution, requiring the user to specify the UI element on the screen at the moment of failure during runtime.
 
@@ -50,7 +50,7 @@ Currently, Copilot in Power Automate for desktop is only available for users wit
  
 ### Attended experience step-by-step 
 
-The feature is triggered when a cloud flow initiates a desktop flow that is on the verge of failing. This potential failure is due to a UI or browser automation action encountering an error because the UI element intended for interaction cannot be located using one or more pre-configured selectors. Next, a ‘Repair with Copilot’ notification window appears on the screen. Copilot  then attempts to find the necessary UI element by analyzing the UI elements present on the relevant screen or web page. Clicking on Cancel shall stop the entire process and action  fails, which means that desktop flow should fail (or activate the error handling mechanism of the failed action). Click on 'Repair manually', and you should indicate the required UI element manually in the screen by capturing it. 
+The feature is triggered when a cloud flow initiates a desktop flow that is on the verge of failing. This potential failure is due to a UI or browser automation action encountering an error because the UI element intended for interaction cannot be located using one or more preconfigured selectors. Next, a "Repair with Copilot" notification window appears on the screen. Copilot  then attempts to find the necessary UI element by analyzing the UI elements present on the relevant screen or web page. Clicking on Cancel shall stop the entire process and action  fails, which means that desktop flow should fail (or activate the error handling mechanism of the failed action). Click on "Repair manually", and you should indicate the required UI element manually in the screen by capturing it. 
 
 
 :::image type="content" source="media/repair-with-copilot/repair_wait_for_copilot.png" alt-text="Copilot is trying to locate the UI element.":::
@@ -68,9 +68,9 @@ If the suggestion is accepted, the notification window closes, and the action is
 
 You can check the UI element suggested by Copilot by pressing the ‘Target’ button on the screen.
 
-:::image type="content" source="media/repair-with-copilot/repair_copilot_suggestion.png" alt-text="Copilot has located the UI element successfully.":::
+:::image type="content" source="media/repair-with-copilot/repair_copilot_suggestion.png" alt-text="Copilot located the UI element successfully.":::
 
-When the AI service cannot locate the UI element successfully, then you is prompted to locate the UI element manually. Of course, you may cancel the repair and subsequently, the desktop flow should fail (or activate the error handling mechanism of the failed action). 
+When the AI service cannot locate the UI element successfully, then you are prompted to locate the UI element manually. You may cancel the repair and then, the desktop flow should fail (or activate the error handling mechanism of the failed action). 
 
 :::image type="content" source="media/repair-with-copilot/repair_copilot_cannot find.png" alt-text="Copilot could not locate the UI element.":::
 
@@ -92,12 +92,12 @@ The manual repair experience is also be triggered if Copilot is unable to locate
 - The feature is not supported in child flows execution.
 - The feature is not supported in UI element collections.
 - The feature cannot be applied to selectors containing one or more variables as part of them.
-- Drag-and-drop actions is not supported in this phase.
+- Drag-and-drop action is not supported in this phase.
 - The “Apply for every run” uses the user identity logged in the Power Automate for desktop console. If no user is signed into the console, the option is not available.
 
 ## Help us improve this feature
 
-To send feedback, select the thumbs up or thumbs down icon under the AI-generated content. A feedback dialog appears, allowing you to submit feedback to Microsoft. Learn more about how this data is used and your rights at [Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control).
+To send feedback, select the thumbs up or thumbs down icon under the AI-generated content. A feedback dialog appears, allowing you to submit feedback to Microsoft. Learn more about how this data is being used and your rights at [Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control).
 
 > [!NOTE]
 > If you can't see the feedback dialog, check if your tenant admin [turned it off](#turn-off-user-feedback-functionality).
