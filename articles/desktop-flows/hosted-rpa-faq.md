@@ -35,7 +35,7 @@ This section provides an overview of the best practices and frequently asked que
 |Steps | Checklist |  Description |
 |--------|-----------| -----------------------------------------------------------------------|
 |**Setup**|• Licensing <br>• VM image requirement  <br>• Network requirement  <br>• Device join requirement <br>• Environment requirement|• **Licensing:** Refer to [licensing section](#licensing) to understand how hosted virtual machines are licensed and how many you need for your project. <br>• **VM image requirement:** If you are running Web automation, then the vanilla VM image provided by Microsoft may be sufficient. If you need specific desktop apps as part of your desktop flow automation, then you may consider using [custom VM image](#custom-vm-images) or using device management tools such as Intune to install the requirement desktop apps via policies. <br>• **Network requirement:** If you need to access on-premises resources and/or want to manage inbound and outbound traffic of your hosted virtual machines using Azure Firewall or Network Security Groups (NSGs), then you will need to configure [custom network connection](#custom-network-connection). <br>• **Device join requirement:** All hosted virtual machines are Entra joined by default. If your automation requires a device that is joined to the Active Directory(AD) domain, then you will need to configure Entra Hybrid join.   |
-|**Governance**|• Permissions <br>• Device management  <br>• Security <br>• Capacity management|Bla|
+|**Governance**|• Permissions <br>• Device management  <br>• Security <br>• Capacity management|• **Permissions:**  |
 |**Maintenance**|• Monitoring <br>• Updates|Bla |
 
 
