@@ -5,7 +5,7 @@ author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 12/11/2024
-ms.author: Yiannismavridis
+ms.author: iomavrid
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
