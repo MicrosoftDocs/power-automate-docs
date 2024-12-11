@@ -238,7 +238,7 @@ For example, the first step is to select an expression.
 
 :::image type="content" source="media/flows-designer/compose-nl.png" alt-text="Screenshot of an input parameter.":::
 
-The next step is to select **Create expression with Copilot**. Then, describe how you want to update this existing expression and select **Update expression**.
+The next step is to select **Create expression with Copilot**. Then, describe how you want to update this existing expression and select **Update**.
 
 :::image type="content" source="media/flows-designer/compose-full-nl.png" alt-text="Screenshot of an expression and string functions.":::
 
