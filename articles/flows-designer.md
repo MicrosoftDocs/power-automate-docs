@@ -222,7 +222,7 @@ This is a preview feature and is available to tenants where Copilot is enabled. 
     - Convert Phone number from Integer to String.
     - Format TriggerDate to 'DD-MM' format.
 
-    :::image type="content" source="media/flows-designer/create-expression-nl.png" alt-text="<alt text>":::
+    :::image type="content" source="media/flows-designer/create-expression-nl.png" alt-text="Screenshot of creating an expression with Copilot.":::
 
 #### Scenario 2: Update an existing expression with natural language
 
@@ -230,15 +230,21 @@ If you have an existing expression that you created manually or through the expr
 
 To finalize the update, do the following steps:
 
-1. To return updated expression, select **Create expression**.
+1. To return the updated expression, select **Create expression**.
 1. To apply to expression editor, select **OK**.
 1. To apply to your flow, select **Apply**.
 
-    :::image type="content" source="media/flows-designer/compose-nl.png" alt-text="Screenshot of an input parameter.":::
+For example, the first step is to select an expression.
 
-    :::image type="content" source="media/flows-designer/compose-full-nl.png" alt-text="Screenshot of an expression and string functions.":::
+:::image type="content" source="media/flows-designer/compose-nl.png" alt-text="Screenshot of an input parameter.":::
 
-    :::image type="content" source="media/flows-designer/compose-ok-nl.png" alt-text="Screenshot of a suggested expression.":::
+The next step is to select **Create expression with Copilot**. Then, describe how you want to update this existing expression and select **Update expression**.
+
+:::image type="content" source="media/flows-designer/compose-full-nl.png" alt-text="Screenshot of an expression and string functions.":::
+
+Finally, select **OK** to apply the Copilot generated expression.
+
+:::image type="content" source="media/flows-designer/compose-ok-nl.png" alt-text="Screenshot of a suggested expression.":::
 
 #### Scenario 3: Fix invalid expression using a button
 
@@ -326,6 +332,6 @@ Yes, once the issues noted here are resolved and the new cloud flows designer ca
 
 ## Related information
 
-[Get started with Copilot in cloud flows](get-started-with-copilot.md)
-
+- [Get started with Copilot in cloud flows](get-started-with-copilot.md)
+- [FAQ for Copilot expression assistant](faqs-copilot-expression-assistant.md)
 

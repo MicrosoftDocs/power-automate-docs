@@ -6,7 +6,7 @@ ms.custom:
   - responsible-ai-faqs
 ms.topic: article
 author: ksubedi
-ms.author: ksubedi
+ms.author: kisubedi
 ms.reviewer: angieandrews
 ---
 
@@ -44,6 +44,6 @@ It needs a descriptive name when you want to reference dynamic content in the ex
 
 ## Related information
 
-[Understand the cloud flows designer](flows-designer.md)
+[Create, update, and fix your expressions with Copilot expression assistant (preview)](flows-designer.md#create-update-and-fix-your-expressions-with-copilot-expression-assistant-preview)
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]
