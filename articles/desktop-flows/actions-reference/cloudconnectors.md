@@ -4,7 +4,7 @@ description: Learn about the available Cloud Connector operations in Power Autom
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 09/12/2024
+ms.date: 12/11/2024
 ms.author: iomavrid
 ms.reviewer: 
 contributors:
@@ -128,6 +128,6 @@ You can add the rest of the (non-custom) Power Automate cloud connectors to a de
 
     :::image type="content" source="media/cloudconnectors/connector-banner-warning-to-create-connection-in-portal.png" alt-text="Screenshot of the sign in dialog in connector actions including a banner message" border="false":::
 
-- Creating non-OAuth connections through Power Automate for desktop is only supported for connectors, whose connection parameters require you to accept some terms of use. For the rest of the connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
+- Creating non-OAuth connections through Power Automate for desktop is supported only for connectors that require you to accept terms of use. For other connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
 
     :::image type="content" source="media/cloudconnectors/connector-banner-prompt-to-create-connection-in-portal.png" alt-text="Screenshot of the connector actions including a banner message that prompts to create a connection through the portal" border="false":::
