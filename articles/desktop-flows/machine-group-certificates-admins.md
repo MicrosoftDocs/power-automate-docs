@@ -53,7 +53,7 @@ If a desktop flow connection is unused during the machine group certificate rene
 
 - Go to the Power Automate portal.
 - Navigate to **Data** > **Connection**.
-- Find the expired connection, select it, select **Edit, and reenter the necessary information.
+- Find the expired connection, select it, select **Edit**, and reenter the necessary information.
 
 ## What if some machines are expected to remain offline or unused for multiple months?
 
