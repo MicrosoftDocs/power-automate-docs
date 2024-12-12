@@ -44,24 +44,24 @@
               href: coding-guidelines/troubleshoot-cloud-flows.md
             - name: Understand limits
               href: coding-guidelines/understand-limits.md
-      - name: Design secure cloud flows
-        items: 
-          - name: Use secure inputs/outputs
-            href: coding-guidelines/use-secure-inputs-outputs-and-triggers.md
-          - name: Keep flow configuration generic
-            href: coding-guidelines/keep-flow-configuration-generic.md
-          - name: Understand access to flows
-            href: coding-guidelines/understand-access-to-flows.md
-          - name: Use auditing in Dataverse and Purview
-            href: coding-guidelines/use-auditing-in-dataverse.md
-          - name: Prevent data exfiltration
-            href: coding-guidelines/prevent-data-exfiltration.md
-          - name: Consider customer-managed keys
-            href: coding-guidelines/use-cmk-for-cloud-flows.md
-      - name: Integrating cloud flows with Power Apps 
-        href: coding-guidelines/integrating-cloud-flows-with-powerapps.md
-      - name: Monitoring and alerting
-        href: coding-guidelines/monitoring-and-alerting.md
+        - name: Design secure cloud flows
+          items: 
+            - name: Use secure inputs/outputs
+              href: coding-guidelines/use-secure-inputs-outputs-and-triggers.md
+            - name: Keep flow configuration generic
+              href: coding-guidelines/keep-flow-configuration-generic.md
+            - name: Understand access to flows
+              href: coding-guidelines/understand-access-to-flows.md
+            - name: Use auditing in Dataverse and Purview
+              href: coding-guidelines/use-auditing-in-dataverse.md
+            - name: Prevent data exfiltration
+              href: coding-guidelines/prevent-data-exfiltration.md
+            - name: Consider customer-managed keys
+              href: coding-guidelines/use-cmk-for-cloud-flows.md
+        - name: Integrating cloud flows with Power Apps 
+          href: coding-guidelines/integrating-cloud-flows-with-powerapps.md
+        - name: Monitoring and alerting
+          href: coding-guidelines/monitoring-and-alerting.md
     - name: Plan a Power Automate project
       items:
         - name: Introduction
