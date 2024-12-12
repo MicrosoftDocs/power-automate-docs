@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: mattp123
 ms.topic: conceptual
-ms.date: 09/25/2024
+ms.date: 12/12/2024
 ms.author: iomavrid
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
@@ -37,6 +37,18 @@ You can use the following registry entry to keep users from manually updating Po
 ***Value***
 
 - **1**: Users can't manually update Power Automate for desktop.
+
+## Prevent users from manually configuring Power Automate for desktop to start automatically
+
+You can use the following registry entry to prevent users from manually configuring Power Automate for desktop to auto-start, disabling the corresponding console setting.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_CURRENT_USER | SOFTWARE\Microsoft\Power Automate Desktop | DisableAutoStartConfiguration | DWORD |
+
+***Value***
+
+- **1**: Users can't manually select to auto-start Power Automate for desktop.
 
 ## Prevent users accessing Power Automate for desktop using certain kinds of accounts
 
