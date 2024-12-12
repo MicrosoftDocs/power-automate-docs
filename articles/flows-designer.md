@@ -232,7 +232,7 @@ To finalize the update, do the following steps:
 
 1. To return the updated expression, select **Create expression**.
 1. To apply to expression editor, select **OK**.
-1. To apply to your flow, select **Apply**.
+1. To apply to your flow, select **Add**.
 
 For example, the first step is to select an expression.
 
