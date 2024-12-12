@@ -27,16 +27,16 @@ This section provides an overview of the best practices and frequently asked que
 | **Custom VNET via Azure Virtual Network** | Supported                                                                                                                           | Supported (preview)                                                                                                                                                               |
 | **Device join types**                    | • Microsoft Entra join<br> • Microsoft Entra Hybrid join                                                                                                | • Microsoft Entra Join                                                                                                                                                                       |
 | **User accounts**                        | • Work or school account                                                                                                            | • Work or school account<br> • Local account                                                                                                                                       |
-| **Device management**                    | • Intune<br> • Active Directory (AD)-based Group Policy (GPO) is using Microsoft Entra Hybrid join<br> • Conditional access policy             | • Conditional access policy                                                                                                                                                        |
+| **Device management**                    | • Intune<br> • Active Directory (AD)-based Group Policy (GPO) if using Microsoft Entra Hybrid join<br> • Conditional access policy             | • Conditional access policy                                                                                                                                                        |
 
 
 ## Implementation checklist
 
 |Steps | Checklist |  Description |
-|--------|-----------| -----------------------------------------------------------------------|
+|--------|----------------------------| -----------------------------------------------------------------------|
 |**Setup**|• Licensing <br>• VM image requirement  <br>• Network requirement  <br>• Device join requirement <br>• Environment requirement|• **Licensing:** Refer to [licensing section](#licensing) to understand how hosted virtual machines are licensed and how many you need for your project. <br>• **VM image requirement:** If you are running Web automation, then the vanilla VM image provided by Microsoft may be sufficient. If you need specific desktop apps as part of your desktop flow automation, then you may consider using [custom VM image](#custom-vm-images) or using device management tools such as Intune to install the requirement desktop apps via policies. <br>• **Network requirement:** If you need to access on-premises resources and/or want to manage inbound and outbound traffic of your hosted virtual machines using Azure Firewall or Network Security Groups (NSGs), then you will need to configure [custom network connection](#custom-network-connection). <br>• **Device join requirement:** All hosted virtual machines are Entra joined by default. If your automation requires a device that is joined to the Active Directory(AD) domain, then you will need to configure Entra Hybrid join.   |
-|**Governance**|• Permissions <br>• Device management  <br>• Security <br>• Capacity management|• **Permissions:**  |
-|**Maintenance**|• Monitoring <br>• Updates|Bla |
+|**Governance**|• Permissions <br>• Device management  <br>• Security <br>• Capacity management| Refer to [governance section](#governance) to understand how IT and Center of Excellence (COE) administrators can govern the use of hosted virtual machines. |
+|**Maintenance**|• Updates <br>• Monitoring|Refer to [maintenance and management section](#maintenance-and-management) to understand how IT and Center of Excellence (COE) administrators can ensure hosted virtual machines stays up to date with the latest security patches and desktop automation requirements, and how to monitor them. |
 
 
 ## Licensing
@@ -53,9 +53,15 @@ Learn more about licensing in the [Power Automate licensing page](/power-platfor
 
 ## Governance
 
-A Center of Excellence (COE) Administrator controls user access to specific resources within the hosted RPA solution. Microsoft Dataverse enforces governance using security roles, teams, and business units to control access to tables, fields, and records with permission and row-level access control.
+A Center of Excellence (COE) Administrator controls user access to specific resources within the hosted RPA solution. Microsoft Dataverse enforces governance using security roles, teams, and business units to control access to tables, fields, and records with permission and row-level access control. Learn more about the [permissions based on security roles](hosted-machines.md#permissions-based-on-security-roles) relevant to the hosted RPA solution.
 
-Learn more about the [permissions based on security roles](hosted-machines.md#permissions-based-on-security-roles) relevant to the hosted RPA solution.
+IT & COE Administrators have the necessary tools to ensure hosted virtual machines are secured:
+| Tools   | Description | 
+|----------|-------------------------------------------------------------|
+| **Microsoft Intune** |  With [Intune](/mem/intune/fundamentals/what-is-intune), you can create policies that applies to these devices to ensure that they are compliant based on your organization's policies.|
+| **Active Directory (AD)-based Group Policy (GPO) if using Microsoft Entra Hybrid join** | Devices that are hybrid joined can utilize GPOs for configuration and policy management, allowing administrators to apply GPOs as they would with any other domain-joined device. |
+| **Conditional access policy** | [Conditional Access policy](/entra/identity/conditional-access/overview) in Microsoft Entra ID (formerly Azure AD) is a security feature that enforces access requirements based on specific conditions. It is structured as an "if-then" statement, where assignments define the conditions (who, what, and where), and access controls specify the actions to be taken (e.g., grant or block access).|
+
 
 COE Administrators can also monitor and govern the usage of the hosted RPA solution within an environment using the [Hosted Process capacity utilization dashboard](capacity-utilization-hosted.md).
 
