@@ -4,6 +4,8 @@
       href: index.yml
     - name: Best practices for building cloud flows
       items:
+        - name: Overview
+          href: coding-guidelines/overview.md
         - name: Coding Guidelines
           items: 
             - name: Use consistent naming conventions 
