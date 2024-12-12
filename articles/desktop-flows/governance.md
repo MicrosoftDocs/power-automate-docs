@@ -40,7 +40,7 @@ You can use the following registry entry to keep users from manually updating Po
 
 ## Prevent users from manually configuring Power Automate for desktop to start automatically
 
-You can use the following registry entry to prevent users from manually configuring Power Automate for desktop to auto-start, disabling the corresponding console setting. This key only applies to Installer (MSI) versions.
+Use the following registry entry to prevent users from manually configuring Power Automate for desktop to start automatically. This key only applies to installer (MSI) versions.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -48,7 +48,7 @@ You can use the following registry entry to prevent users from manually configur
 
 ***Value***
 
-- **1**: Users can't manually select to auto-start Power Automate for desktop.
+- **1**: Users can't manually select to automatically start Power Automate for desktop.
 
 ## Prevent users accessing Power Automate for desktop using certain kinds of accounts
 

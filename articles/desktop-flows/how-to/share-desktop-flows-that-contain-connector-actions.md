@@ -74,7 +74,10 @@ To embed a connection reference to a flow that you have access to as a co-owner:
 1. After you confirm your selection, the connection reference is embedded in the desktop flow.
 
 #### Known limitations
-- Currently, when importing a desktop flow with embedded connection references in a solution, the required connection references are not automatically included in the solution. The workaround is to look for and explicitly include the required connection references in the solution, alongside the desktop flow.
+
+##### Required connection references not automatically included when importing desktop flows
+
+When importing a desktop flow with embedded connection references in a solution, the required connection references aren't automatically included. To work around this current limitation, explicitly include the required connection references in the solution alongside the desktop flow.
 
 ### Console runs
 
