@@ -5,11 +5,12 @@ author: jpapadimitriou
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/23/2024
+ms.date: 12/12/2024
 ms.author: dipapa
 ms.reviewer: 
 contributors:
 - jpapadimitriou
+- yiannismavridis
 - DanaMartens
 search.audienceType: 
   - flowmaker
@@ -71,6 +72,9 @@ To embed a connection reference to a flow that you have access to as a co-owner:
     :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/embed-connection-reference-to-a-flow.png" alt-text="Screenshot of the Manage Connections menu." border="false":::
 
 1. After you confirm your selection, the connection reference is embedded in the desktop flow.
+
+#### Known limitations
+- Currently, when importing a desktop flow with embedded connection references in a solution, the required connection references are not automatically included in the solution. The workaround is to look for and explicitly include the required connection references in the solution, alongside the desktop flow.
 
 ### Console runs
 
