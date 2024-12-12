@@ -1,6 +1,7 @@
 ---
 title: Monitoring and alerting
 description: Learn how to implement robust monitoring and alerting
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 12/12/2024
@@ -31,6 +32,7 @@ The process mining capability enables you to obtain useful insights and enhance 
 
 Learn more: [Improve cloud flows with process insights](/power-automate/process-mining-cloud-flow-process-insights)
 
+<!-- TODO relace -->
 ![A screenshot of a computer  Description automatically generated](media/image80.png)
 
 ![A screenshot of a computer  Description automatically generated](media/image81.png)

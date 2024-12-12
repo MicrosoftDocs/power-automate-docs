@@ -3,7 +3,6 @@
     - name: Power Automate guidance documentation
       href: index.yml
     - name: Best practices for building cloud flows
-      href: coding-guidelines/overview.md
       items:
         - name: Coding Guidelines
           items: 

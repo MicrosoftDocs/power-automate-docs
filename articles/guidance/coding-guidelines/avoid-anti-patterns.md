@@ -1,6 +1,7 @@
 ---
 title: Anti-patterns to avoid
 description: Learn how to avoid anti-patterns
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 12/12/2024
@@ -56,3 +57,24 @@ When you need to work with large amount of data transformation, consider if it r
 If you need to manage the data load using some form of orchestration logic that you can implement in Cloud Flows, consider combining it with Dataflow. We can use the Dataflow connector to invoke a refresh action, and use its trigger “When a dataflow refresh completes” to perform post-ETL actions.
 
 :::image type="content" source="media/use-dataflow.png" alt-text="Screenshot of using dataflow actions in a cloud flow" border="true":::
+
+# Avoid using a for each loop to update a large number of records
+
+Often users find using Power Automate to create/updated thousands of records to the data source when a flow is triggered. Most user would end up using For Each loop which goes through each of the records, and push them to the data source sequentially causing latency and delays.
+
+To address this issue, try these two approaches:
+
+- Create/Patch records to the data source in BATCH. Most of the connectors/services expose API services to post request in BATCH. You can group multiple operations into a single HTTP request using a batch operation. These operations are performed sequentially in the order they're specified. The order of the responses matches the order of the requests in the batch operation.
+- Parallelism in For Each loop provides up to 50 records to be processed for the services which don't have capability to accept BATCH requests.
+
+Refer to the following links of rest APIs from [Sharepoint](https://learn.microsoft.com/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis) and [Dataverse](https://learn.microsoft.com/power-apps/developer/data-platform/webapi/execute-batch-operations-using-web-api) which shows how to make batch requests.
+
+![A screenshot of a computer  Description automatically generated](media/image27.png)
+
+When working with Dataverse, you can take advantage of the new [Bulk Operations Web APIs](/power-apps/developer/data-platform/bulk-operations). Bulk Operations API differs from Batch Operations - while Batch Operations are posted in a single request, it is executed as multiple operations. Bulk Operations are posted in a single request and counted as a single Operation. Bulk Operations Web API can be invoked using HTTP with Entra ID, or with HTTP connector when using with Service Principals. Additionally, Using Dataverse Bulk Operations to reduce number of actions. 
+
+![A screenshot of a computer  Description automatically generated](media/image28.png)
+
+![A screenshot of a computer  Description automatically generated](media/image29.png)
+
+In the example, we prepare the records in JSON format using Select action, and use HTTP with Entra ID to post the request using CreateMultiple Web API. If we have 100 records in the JSON output, this only incurs one single action instead of 100 Create Row actions in Dataverse.

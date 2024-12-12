@@ -1,6 +1,7 @@
 ---
 title: Use environment variables
 description: Learn how to use environment variables
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 12/12/2024

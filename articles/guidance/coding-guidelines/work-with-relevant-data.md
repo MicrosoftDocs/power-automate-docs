@@ -1,6 +1,7 @@
 ---
 title: Working with relevant data
 description: Learn how to work with relevant data
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 12/12/2024

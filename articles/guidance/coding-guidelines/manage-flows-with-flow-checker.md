@@ -1,6 +1,7 @@
 ---
 title: Manage cloud flow behaviour with Flow Checker
 description: Learn how to manage cloud flow behaviour with Flow Checker
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 12/12/2024

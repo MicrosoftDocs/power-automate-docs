@@ -1,6 +1,7 @@
 ---
 title: Implement parallel execution and concurrency
 description: Learn how to implement parallel execution and concurrency
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 12/12/2024

@@ -1,6 +1,7 @@
 ---
 title: Use CMK (Customer Managed Keys) for Cloud flows
 description: Learn how to use CMK (Customer Managed Keys) for Cloud flows
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 12/12/2024

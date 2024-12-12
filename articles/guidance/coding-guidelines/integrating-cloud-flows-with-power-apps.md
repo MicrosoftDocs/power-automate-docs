@@ -1,6 +1,7 @@
 ---
 title: Understand when to integrate cloud flows with Power Apps
 description: Learn when to integrate cloud flows with Power Apps
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 12/12/2024
@@ -65,7 +66,7 @@ For common data access scenarios, Dataverse combined with Power Fx is going to b
 
 ![A diagram of a machine  Description automatically generated](media/image77.png)
 
-### Complex sequences & multi-connector **
+### Complex sequences & multi-connector
 
 For **complex sequences** of actions, across multiple connectors, **then Power Automate is an asynchronous mechanism to offload processing from the Power App**. In addition, the asynchronous nature of Power Automate allows the Power App to initiate a workflow and enable the experience to move on without waiting for a response.  
 

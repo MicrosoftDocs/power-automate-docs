@@ -1,6 +1,7 @@
 ---
 title: Using secure inputs and outputs, and securing HTTP request triggers
 description: Learn how to use secure inputs and outputs, and securing HTTP request triggers
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 12/12/2024

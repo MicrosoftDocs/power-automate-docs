@@ -1,6 +1,7 @@
 ---
 title: Understand Platform limits and avoid throttling
 description: Learn how to understand Platform limits and avoid throttling
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 12/12/2024

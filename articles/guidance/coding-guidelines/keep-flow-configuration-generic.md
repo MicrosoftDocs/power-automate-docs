@@ -1,6 +1,7 @@
 ---
 title: Keep Flow configuration generic
 description: Learn how to keep Flow configuration generic
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 12/12/2024

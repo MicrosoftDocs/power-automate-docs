@@ -1,6 +1,7 @@
 ---
 title: Prevent data exfiltration
 description: Learn how to prevent data exfiltration
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 12/12/2024

@@ -1,6 +1,7 @@
 ---
 title: Use code view, add notes, and copy&paste action
 description: Learn how to use code view, add notes, and copy&paste action
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 12/12/2024
