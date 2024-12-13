@@ -45,14 +45,14 @@ Currently, Copilot in Power Automate for desktop is only available for users wit
 ### How to turn on the feature
 
 - Install the latest Power Automate for desktop build.
-- Enable the use of AI for self-healing issues. The "Repair at runtime" flag in PPAC must also be enabled.
-- For repairing with Copilot, ensure the Copilot flag in Power Platform Admin Center (PPAC) is enabled.
-- For newly created flows, enable the "Repair flow errors" option.
-- For existing flows, navigate to the respective desktop flow properties in the Power Automate for desktop console. Enable the "Repair flow errors" property in the desktop flow's properties.
+- Turn on the use of AI for self-healing issues. The "Repair at runtime" setting in the Power Platform admin center must also be turned on.
+- For repairing with Copilot, ensure the Copilot setting in the Power Platform Admin Center is turned on.
+- For newly created flows, turn on the "Repair flow errors" option.
+- For existing flows, navigate to the respective desktop flow properties in the Power Automate for desktop console. Turn on the "Repair flow errors" property in the desktop flow's properties.
   - **Repair with Copilot**: This option allows for automated issue resolution with the assistance of Copilot.
-  - **Repair**: This option enables manual issue resolution, requiring you to specify the UI element on the screen at the moment of failure during runtime.
+  - **Repair**: This option turns on manual issue resolution, requiring you to specify the UI element on the screen at the moment of failure during runtime.
 
-:::image type="content" source="media/repair-with-copilot/repair_flow_properties.png" alt-text="Screenshot for enabling feature in flow properties.":::
+:::image type="content" source="media/repair-with-copilot/repair_flow_properties.png" alt-text="Screenshot for turning on the feature in flow properties.":::
 
 ### Attended experience step-by-step
 
@@ -84,7 +84,7 @@ When the AI service can't locate the UI element successfully, you're prompted to
 
 ### Repair manually
 
-You can also repair the issue manually. Similar to the previous method, a notification window appears at runtime, prompting you to capture the UI element using Power Automate for Desktop's highlighter. To initiate this process, select the "Repair" button in the notification window, which enables the highlighter. Next, hover over the necessary UI element on your screen and press "Ctrl" along with a left-click to capture it.
+You can also repair the issue manually. Similar to the previous method, a notification window appears at runtime, prompting you to capture the UI element using Power Automate for Desktop's highlighter. To initiate this process, select the "Repair" button in the notification window, which turns on the highlighter. Next, hover over the necessary UI element on your screen and press "Ctrl" along with a left-click to capture it.
 
 The manual repair experience is also triggered if Copilot can't locate the UI element or if you select the "Repair manually" option from the notification window's drop-down menu.
 
