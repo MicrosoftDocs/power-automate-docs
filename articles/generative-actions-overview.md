@@ -31,7 +31,7 @@ Generative actions simplify automation by reducing the need for detailed specifi
 
 ## Author generative actions
 
-You can author generative actions in the cloud flows designer in Power Automate. When you give the system an intent, the AI generates suggested inputs, outputs, and actions to use in the action. You can choose to accept the AI suggestions, or reject them and add your own inputs, outputs, and flow values.
+You can author generative actions in the cloud flows designer in Power Automate. When you give the system an intent, the AI generates suggested inputs, outputs, and actions to use in the action. You can choose to accept the AI suggestions, or reject them and add your own inputs, and outputs.
 
 In addition to inputs, outputs, and flow values, the system also provides connectors and actions that it can use to achieve its intended automation goal. You can choose to accept, reject, or add your own.
 
