@@ -96,7 +96,7 @@ The Microsoft Word document must be labeled as non-confidential and reside in th
 
 ## Monitor a generative action
 
-You can monitor the run history and the performance of your generative action from the **My flows** page in Power Automate. You can also edit or customize your generative action at any time.
+You can monitor the run history and the performance of your generative action from the **My flows** page in Power Automate. You can also edit or customize your generative action at any time from within the cloud flow designer.
 
 To monitor and edit a generative action, follow these steps:
 
