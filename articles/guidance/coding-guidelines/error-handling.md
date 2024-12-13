@@ -106,7 +106,7 @@ You can then parse that information and build the flow run URL which you can inc
 > [!CAUTION]
 > Use this option judiciously, as it can result in excessive custom logging and an increased number of actions, which may negatively impact overall performance. Overuse can lead to an anti-pattern, where frequent alerts and actions degrade the efficiency and effectiveness of your workflow.
 
-## Scope actions for error handling**:
+## Scope actions for error handling
 
 Group related actions into scopes and use scopes to handle errors collectively. You can implement a try-catch pattern using scopes to manage errors. Create a "Try" scope for your main actions and a "Catch" scope for error handling. If an error occurs in the main scope, the error handling scope can be triggered to manage the error. Configure the "Catch" scope to run if the "Try" scope fails.
 **Example**: If a data retrieval action fails, the error handling scope can send an alert and log the error for further investigation.
