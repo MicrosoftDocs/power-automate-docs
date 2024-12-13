@@ -29,11 +29,11 @@
             - name: Avoid anti-patterns
               href: coding-guidelines/avoid-anti-patterns.md
             - name: Use asynchronous flow pattern
-              href: coding-guidelines/use-asynchronous-flow-pattern.md
+              href: coding-guidelines/asynchronous-flow-pattern.md
             - name: Use environment variables
               href: coding-guidelines/use-environment-variables.md
             - name: Employ robust error handling
-              href: coding-guidelines/employe-robust-error-handling.md
+              href: coding-guidelines/error-handling.md
             - name: Use Flow Checker
               href: coding-guidelines/manage-flows-with-flow-checker.md
             - name: Test cloud flows
@@ -59,7 +59,7 @@
             - name: Consider customer-managed keys
               href: coding-guidelines/use-cmk-for-cloud-flows.md
         - name: Integrating cloud flows with Power Apps 
-          href: coding-guidelines/integrating-cloud-flows-with-powerapps.md
+          href: coding-guidelines/integrating-cloud-flows-with-power-apps.md
         - name: Monitoring and alerting
           href: coding-guidelines/monitoring-and-alerting.md
     - name: Plan a Power Automate project

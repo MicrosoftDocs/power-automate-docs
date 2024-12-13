@@ -14,7 +14,7 @@ search.audienceType:
   - flowmaker
 ---
 
-## Understand when to integrate cloud flows with Power Apps
+# Understand when to integrate cloud flows with Power Apps
 
 There are a range of capabilities available through Power Platform that enable makers to create business logic for their Power Apps.  Below are the primary methods along with guidance to determine which one to use: 
 
