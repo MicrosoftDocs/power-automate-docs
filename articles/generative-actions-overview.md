@@ -39,7 +39,7 @@ In addition to inputs, and outputs, the system also provides connectors and acti
 
 ## Monitor a generative action
 
-You can monitor your generative actions runs from the cloud flows run history. From the **My Flows** page, you can select any flow to get to its manage page. This page is where you can monitor the run history for the related generative action. To examine the process behind why a generative action called a specific action, you can dive into any run history instance.
+You can monitor your generative actions runs from the cloud flows run history. From the **My Flows** page, you can select any generative action under the "generative actions" tab to get to its manage page. This page is where you can monitor the run history for the related generative action. To examine the process behind why a generative action called a specific action, you can dive into any run history instance.
 
 ## Edit or customize a generative action
 
