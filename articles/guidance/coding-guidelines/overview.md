@@ -16,7 +16,3 @@ search.audienceType:
 
 Creating a simple Power Automate cloud flow is straightforward, but as the flow’s complexity grows, maintaining quality becomes crucial. These guidelines outline standards for naming actions, variables, and connectors, as well as best practices for developing consistent, performant, and easily maintainable flows. They provide essential guidance for developers who design, build, test, deploy, and maintain Power Automate flows in various environments, including small businesses, corporations, and government entities.
 
-## Next steps
-
-> [!div class="nextstepaction"]
-> [Cloud flow best practices](/power-automate/guidance/code-guidelines/cloud-flow-best-practices)

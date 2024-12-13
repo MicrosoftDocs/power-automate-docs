@@ -29,7 +29,7 @@
             - name: Avoid anti-patterns
               href: coding-guidelines/avoid-anti-patterns.md
             - name: Use asynchronous flow pattern
-              href: coding-guidelines/asynchronous-flow-pattern.md
+              href: coding-guidelines/asychronous-flow-pattern.md
             - name: Use environment variables
               href: coding-guidelines/use-environment-variables.md
             - name: Employ robust error handling
