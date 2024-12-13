@@ -12,7 +12,7 @@ search.audienceType:
   - flowmaker
 ---
 
-## Consistent naming for flow components
+# Consistent naming for flow components
 
 Maintaining consistent naming conventions for the components within your Power Automate flows is important for ensuring clarity, organization, and ease of management. By adopting a standardized approach to naming, you can enhance collaboration among team members, simplify troubleshooting, and streamline the development and maintenance of your workflows.
 

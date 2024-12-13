@@ -12,7 +12,7 @@ search.audienceType:
   - flowmaker
 ---
 
-## Working with data operations
+# Working with data operations
 
 Data operations in Power Automate refer to the manipulation, transformation, and management of data within your automation flows in an efficient way. 
 
