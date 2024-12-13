@@ -38,17 +38,17 @@ Copilot in Power Automate for desktop offers different capabilities, which are a
 Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
 
 > [!NOTE]
-> If your environment is in a supported region, you're signed in with a work or school account, and you still can't "Repair with Copilot" in the Power Automate for desktop experience, contact your Power Platform administrator. An admin can turn Copilot off or on in the Power Platform admin center.
+> If your environment is in a supported region, you're signed in with a work or school account, and you still can't use "Repair with Copilot" in the Power Automate for desktop experience, contact your Power Platform administrator. An admin can turn Copilot off or on in the Power Platform admin center.
 
 ## Repair a flow at runtime
 
 ### How to turn on the feature
 
 - You need Power Automate desktop version 2.51 (11.2412.xxx.y) or higher. Learn how to download the latest version at [Install Power Automate](https://aka.ms/DownloadPAD48).
-- Turn on the use of AI for self-healing issues. The "Repair at runtime" setting in the Power Platform admin center must also be turned on.
+- Turn on the use of AI for self-healing issues. The **Repair at runtime** setting in the Power Platform admin center must also be turned on.
 - For repairing with Copilot, ensure the Copilot setting in the Power Platform Admin Center is turned on.
-- For newly created flows, turn on the "Repair flow errors" option.
-- For existing flows, navigate to the respective desktop flow properties in the Power Automate for desktop console. Turn on the "Repair flow errors" property in the desktop flow's properties.
+- For newly created flows, turn on the **Repair flow errors** option.
+- For existing flows, navigate to the respective desktop flow properties in the Power Automate for desktop console. Turn on the **Repair flow errors** property in the desktop flow's properties.
 
   - **Repair with Copilot**: This option allows for automated issue resolution with the assistance of Copilot.
   - **Repair**: This option turns on manual issue resolution, requiring you to specify the UI element on the screen at the moment of failure during runtime.
@@ -85,9 +85,9 @@ When the AI service can't locate the UI element successfully, you're prompted to
 
 ### Repair manually
 
-You can also repair the issue manually. Similar to the previous method, a notification window appears at runtime, prompting you to capture the UI element using Power Automate for Desktop's highlighter. To initiate this process, select the "Repair" button in the notification window, which turns on the highlighter. Next, hover over the necessary UI element on your screen and press "Ctrl" along with a left-click to capture it.
+You can also repair the issue manually. Similar to the previous method, a notification window appears at runtime, prompting you to capture the UI element using Power Automate for Desktop's highlighter. To initiate this process, select the **Repair** button in the notification window, which turns on the highlighter. Next, hover over the necessary UI element on your screen and press "Ctrl" along with a left-click to capture it.
 
-The manual repair experience is also triggered if Copilot can't locate the UI element or if you select the "Repair manually" option from the notification window's drop-down menu.
+The manual repair experience is also triggered if Copilot can't locate the UI element or if you select the **Repair manually** option from the notification window's drop-down menu.
 
 :::image type="content" source="media/repair-with-copilot/repair_manual.png" alt-text="Screenshot of user capturing the required UI element manually.":::
 
@@ -102,7 +102,7 @@ The manual repair experience is also triggered if Copilot can't locate the UI el
 - The feature doesn't support UI element collections.
 - The feature can't apply to selectors that contain one or more variables.
 - Drag-and-drop actions aren't supported at this phase.
-- The "Apply for every run" option uses the user identity logged into the Power Automate for desktop console. If no user is signed into the console, the option isn't available.
+- The **Apply for every run** option uses the user identity logged into the Power Automate for desktop console. If no user is signed into the console, the option isn't available.
 
 ## Help us improve this feature
 
