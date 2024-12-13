@@ -14,17 +14,13 @@ search.audienceType:
   - flowmaker
 ---
 
-## Troubleshoot cloud flows
+# Troubleshoot cloud flows
 
-Power Automate Cloud flows detailed troubleshooting documents are listed as follows:
-
-[Troubleshooting triggers](/power-automate/triggers-troubleshoot)
-
-[Troubleshoot Cloud flows](/power-automate/fix-flow-failures)
-
-Here are some important handy tips
+When troubleshooting cloud flows in Power Automate, start by checking the Run History to identify where the flow failed and review any error messages provided. Ensure that all connections are authenticated and have the necessary permissions. Verify that input data is correct and available, and check for any changes in the environment that might affect the flow. Implement proper error handling and retry policies to manage transient issues. For more detailed guidance, refer to [Troubleshooting triggers](/power-automate/triggers-troubleshoot) and [Troubleshoot Cloud flows](/power-automate/fix-flow-failures).
 
 ## Understand the error codes
+
+Understanding error codes is important when troubleshooting cloud flows in Power Automate. These codes provide specific information about why a flow failed, helping you quickly identify and address the underlying issues. By recognizing and interpreting these codes, you can implement improvements, ensuring your flows run smoothly and efficiently. 
 
 Error codes in the 400s can usually be fixed by the user:
 

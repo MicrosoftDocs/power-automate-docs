@@ -52,28 +52,24 @@ Written in C#, [Dataverse plugin](/power-apps/developer/data-platform/plug-ins)s
 
 **Efficiency** - Plugins can make multiple connector and database calls in succession without the storage and networking overhead of each step if they were in a Power Automate flow. 
 
-**Increased security -** Dataverse virtual network support allows you to protect your outbound connections to resources within your private network. In this way, you can securely manage your egress traffic from the Power Platform according to your network policy.  In addition, data can be insulated and protected from clients by wrapping access in a server-side plugin. 
+**Increased security** - Dataverse virtual network support allows you to protect your outbound connections to resources within your private network. In this way, you can securely manage your egress traffic from the Power Platform according to your network policy.  In addition, data can be insulated and protected from clients by wrapping access in a server-side plugin. 
 
-## When you should use Power Fx Vs Power Automate in Power Apps
+## When to use what
 
-**Power Fx in the app should be the default mechanism used for building Power App business logic** - Like any tool however there are sweet spots and break points where it makes sense to leverage other tools in the toolbox.   
+Power Fx should be the primary method for creating business logic in Power Apps. However, like any tool, it has its strengths and limitations, and there are situations where using other tools might be more appropriate.
 
-### Low Latency Use Cases
+### Low latency use cases
 
-If **low latency** in a Power App is the focus, the live nature of a Power Fx function means that you have the **best ability to deliver low latency business logic via Power Fx**.  Achieving low latency depends significantly on the complexity of the task and size of the dataset involved.  It is therefore important to highlight, that although you can achieve low latency through Power Fx, what you're trying to do and how it's been designed will have a significant bearing on the performance realized.  Additional guidance available [here](https://powerapps.microsoft.com/en-us/blog/performance-considerations-with-powerapps/). 
+If low latency in a Power App is the focus, the live nature of a Power Fx function means that you have the best ability to deliver low latency business logic via Power Fx.  Achieving low latency depends significantly on the complexity of the task and size of the dataset involved.  It is therefore important to highlight, that although you can achieve low latency through Power Fx, what you're trying to do and how it's been designed will have a significant bearing on the performance realized. Learn more: [Performance considerations with PowerApps](https://www.microsoft.com/power-platform/blog/power-apps/performance-considerations-with-powerapps/). 
 
 For common data access scenarios, Dataverse combined with Power Fx is going to be the fastest approach. 
 
-![A diagram of a machine  Description automatically generated](media/image77.png)
-
 ### Complex sequences & multi-connector
 
-For **complex sequences** of actions, across multiple connectors, **then Power Automate is an asynchronous mechanism to offload processing from the Power App**. In addition, the asynchronous nature of Power Automate allows the Power App to initiate a workflow and enable the experience to move on without waiting for a response.  
-
-![A diagram of a process  Description automatically generated](media/image78.png)
+For complex sequences of actions involving multiple connectors, Power Automate serves as an asynchronous mechanism to offload processing from the Power App. This asynchronous nature allows the Power App to initiate a workflow and continue its operations without waiting for a response, enhancing the user experience.
 
 ### Centralized business logic
 
-**If the business logic is gating changes to the database**, for example validation before adding a record, then **Dataverse plugins with Power Fx** **is the best answer**. No other solution is a part of the Dataverse transaction and can return an error all the way back to the end user who initiated the original change, allowing them to make corrections, and retry, while keeping the database consistent throughout. Plugins provide a unified choke point to ensure the same business logic is enforced for all apps (Canvas and Model-driven), flows, and other end points. 
+When business logic involves controlling changes to the database, such as validating data before adding a record, Dataverse plugins combined with Power Fx are the recommended solution. This approach is unique because it integrates directly with the Dataverse transaction, allowing errors to be communicated back to the user who initiated the change. This feedback mechanism enables users to correct and retry their actions, ensuring database consistency throughout the process. Plugins serve as a centralized control point, enforcing consistent business logic across all applications (both Canvas and Model-driven), flows, and other endpoints.
 
-Similar to Power Automate, Dataverse plugins with Power Fx also provide a central location for defining custom actions that don't necessarily change the database. This facilitates sharing of Power Fx based business logic across all Power Platform end points. 
+Additionally, similar to Power Automate, Dataverse plugins with Power Fx provide a centralized location for defining custom actions that do not necessarily alter the database. This setup facilitates the sharing of Power Fx-based business logic across all Power Platform endpoints, promoting consistency and reusability.

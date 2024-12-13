@@ -14,7 +14,7 @@
               href: coding-guidelines/understand-benefits-of-solution-aware-flows.md
             - name: Create scopes
               href: coding-guidelines/create-scopes.md
-            - name: Leave complex business logic out
+            - name: Offload complex business logic
               href: coding-guidelines/leave-complex-business-logic-out.md
             - name: Create reusable code
               href: coding-guidelines/create-reusable-code.md
@@ -46,7 +46,7 @@
               href: coding-guidelines/understand-limits.md
         - name: Design secure cloud flows
           items: 
-            - name: Use secure inputs/outputs
+            - name: Secure data used in cloud flows
               href: coding-guidelines/use-secure-inputs-outputs-and-triggers.md
             - name: Keep flow configuration generic
               href: coding-guidelines/keep-flow-configuration-generic.md

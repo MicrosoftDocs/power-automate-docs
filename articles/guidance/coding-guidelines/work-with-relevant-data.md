@@ -59,11 +59,9 @@ You can either use one or a combination of these options to minimize the data.
     ![](media/image24.png)
     :::column-end:::
     :::column:::
-    
+    ![](media/image25.png)
     :::column-end:::
 :::row-end:::
-
-![](media/image25.png)
 
 When using Power Automate to get data from SharePoint, you have several options to limit the data processed in your cloud flow:
 

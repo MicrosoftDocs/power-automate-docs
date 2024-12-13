@@ -14,17 +14,15 @@ search.audienceType:
 
 # Use CMK (Customer Managed Keys) for Cloud flows
 
-Customer Managed Keys (CMK) for cloud flows in Power Automate is a security feature that allows organizations to use their own encryption keys to encrypt and protect data within their flows. This provides enhanced control over the encryption keys and meets specific compliance requirements for data security and privacy. Here's an overview of how CMK works in Power Automate and how to implement it:
+Customer Managed Keys (CMK) for cloud flows in Power Automate is a security feature that allows organizations to use their own encryption keys to encrypt and protect data within their flows. This provides enhanced control over the encryption keys and meets specific compliance requirements for data security and privacy. 
 
 ## What is Customer Managed Keys (CMK)?
 
 Customer Managed Keys (CMK) enable organizations to manage their own encryption keys, typically using a key management service such as Azure Key Vault. By using CMK, organizations can:
 
-Gain greater control over the encryption keys used to protect their data.
-
-Meet regulatory and compliance requirements that mandate customer-controlled encryption.
-
-Revoke access to data by disabling or deleting keys.
+- Gain greater control over the encryption keys used to protect their data.
+- Meet regulatory and compliance requirements that mandate customer-controlled encryption.
+- Revoke access to data by disabling or deleting keys.
 
 ## How CMK Works in Power Automate
 
@@ -34,6 +32,7 @@ Revoke access to data by disabling or deleting keys.
 
 **Key Rotation and Management**: You have the ability to rotate, revoke, and audit the keys, providing enhanced control over the encryption lifecycle.
 
-For more information, refer to the following learn [document](/power-automate/customer-managed-keys)
+Learn more:
 
-More details on [Managing CMK](/power-platform/admin/customer-managed-key) 
+- [Support for customer-managed keys in Power Automate](/power-automate/customer-managed-keys)
+- [Managing customer-managed keys](/power-platform/admin/customer-managed-key) 

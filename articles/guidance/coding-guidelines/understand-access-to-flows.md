@@ -18,20 +18,23 @@ search.audienceType:
 
 ## Ownership of Flows (Service Principal vs User) 
 
-When managing Power Automate flows, the choice between using a Service Principal Name (SPN) or a user account as the flow owner is critical. Using an SPN for flow ownership offers consistency and security, as SPNs are not tied to individual users, ensuring that flows continue running smoothly even if personnel changes occur. This setup reduces the risk of disruptions and allows for stricter control over permissions, as SPNs can be granted only the necessary access.
+When managing Power Automate flows, the choice between using a Service Principal Name (SPN) or a user account as the flow owner is important. Using an SPN for flow ownership offers consistency and security, as SPNs are not tied to individual users, ensuring that flows continue running smoothly even if personnel changes occur. This setup reduces the risk of disruptions and allows for stricter control over permissions, as SPNs can be granted only the necessary access.
 
 ### Service Principal Name (SPN) ownership
 
 Advantages of Service Principal Name (SPN) ownership:
 
-- **Consistency**: SPNs are not tied to an individual user, which ensures that flows continue to run regardless of personnel changes (e.g., if a user leaves the organization).
-- **Security**: SPNs can be configured with the minimum required permissions, reducing the risk of unauthorized access.
+- **Consistency**: SPNs are not tied to individual users, ensuring that flows continue to run smoothly even if there are personnel changes. This provides a stable and consistent ownership model.
+- **Security**: Using an SPN enhances security by allowing for stricter control over permissions. SPNs can be granted only the necessary access, reducing the risk of unauthorized actions.
 - **Scalability**: SPNs are better suited for managing automated tasks across large environments, especially in scenarios involving multiple flows or environments.
 - **Compliance**: Using SPNs can help maintain compliance, as they provide a clearer audit trail of actions taken by the flow, independent of specific users.
+- **Reduced Disruptions**: Since SPNs are not affected by user account changes (such as employees leaving the organization), there is a lower risk of disruptions to the flow operations.
+- **Centralized Management**: SPNs allow for centralized management of flow permissions and access, making it easier to maintain and audit security policies.
 
 ### User account ownership
 
 Advantages of user account ownership:
+
 - **Ease of setup**: Flows can be created and owned by users with minimal setup, making it easier for users to develop and manage their own flows.
 - **Human interaction**: If the flow involves tasks that require human approval, decision-making, or interaction, using a user account might be more appropriate.
 - **Personalized context**: Flows owned by users can run in the context of that user, utilizing their permissions and settings
@@ -53,8 +56,6 @@ Adding a [co-owner](/power-automate/create-team-flows) to a cloud flow is the mo
 - Delete the flow.
 
 Only add co-owners for flow collaborations as needed. In most cases, if flow needs to be shared, share the flow with run-only permissions, which will restrict the users to view flow run history or make any changes to the flows.  This will also allow users to specify whether the flow will use the connections of the user invoking the flow or the inbuilt connections of the user or account creating the flow. Learn more: [Share a cloud flow](/power-automate/create-team-flows)
-
-![A screenshot of a computer  Description automatically generated](media/image75.png)
 
 ## Configuring security roles for appropriate access
 
