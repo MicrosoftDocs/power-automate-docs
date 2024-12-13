@@ -1,6 +1,6 @@
 ---
 title: FAQ for generative actions in cloud flows
-description: This FAQ provides information about the AI technology used in Power Automate, along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
+description: This FAQ provides information about the AI technology used in Power Automate generative actions, along with key considerations and details about how AI is used, how it was tested and evaluated, and any specific limitations.
 ms.date: 12/18/2024
 ms.custom: 
   - responsible-ai-faqs
@@ -60,5 +60,4 @@ In addition, we have classifiers that look at input to the system to detect harm
 
 [Create generative actions in cloud flows (preview)](create-generative-actions.md)
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[!INCLUDE[footer-include](./includes/footer-banner.md)]
