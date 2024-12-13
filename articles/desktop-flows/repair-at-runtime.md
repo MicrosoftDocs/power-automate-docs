@@ -44,7 +44,7 @@ Currently, Copilot in Power Automate for desktop is only available for users wit
 
 ### How to turn on the feature
 
-- Install the latest Power Automate for desktop build.
+- You need Power Automate desktop version 2.51 (11.2412.xxx.y) or higher. Learn how to download the latest version at [Install Power Automate](https://aka.ms/DownloadPAD48).
 - Enable the use of AI for self-healing issues. The "Repair at runtime" flag in PPAC must also be enabled.
 - For repairing with Copilot, ensure the Copilot flag in Power Platform Admin Center (PPAC) is enabled.
 - For newly created flows, enable the "Repair flow errors" option.
