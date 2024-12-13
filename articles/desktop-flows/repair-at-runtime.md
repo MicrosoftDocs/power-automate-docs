@@ -42,7 +42,7 @@ Currently, Copilot in Power Automate for desktop is only available for users wit
 
 ## Repair a flow at runtime
 
-### How to enable it
+### How to turn on the feature
 
 - Install the latest Power Automate for desktop build.
 - Enable the use of AI for self-healing issues. The "Repair at runtime" flag in PPAC must also be enabled.
@@ -105,7 +105,7 @@ The manual repair experience is also triggered if Copilot can't locate the UI el
 
 ## Help us improve this feature
 
-To send feedback, select the thumbs up or thumbs down icon under the AI-generated content. A feedback dialog appears, allowing you to submit feedback to Microsoft. Learn more about how this data is used and your rights at [Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control).
+To send feedback, select the thumbs up or thumbs down icon under the AI-generated content. A feedback dialog appears, allowing you to submit feedback to Microsoft. Learn more about how this data is used and your rights in [Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control).
 
 > [!NOTE]
 > If you can't see the feedback dialog, check if your tenant admin [turned it off](#turn-off-user-feedback-functionality).

@@ -38,7 +38,7 @@ The specific feature provides the user the capability to repair UI and Browser a
 
 ## How was Repair with Copilot at runtime feature evaluated? What metrics are used to measure performance?
 
-Feature in Power Automate for desktop is evaluated against real-world scenarios in each phase of its design, development, and release. Using a combination of research and business impact studies, we evaluated various quantitative and qualitative metrics about copilot, including its accuracy, usefulness, and AI service trust. We have a robust set of metrics we're tracking to measure the model's performance and resulting customer experience. We follow the feature's SLA to make sure it's always available to you. We track the telemetry of thumbs-up and thumbs-down gestures present in the UI experience for each AI output that you can submit feedback for.
+This feature in Power Automate for desktop is evaluated against real-world scenarios in each phase of its design, development, and release. Using a combination of research and business impact studies, we evaluated various quantitative and qualitative metrics about copilot, including its accuracy, usefulness, and AI service trust. We have a robust set of metrics we're tracking to measure the model's performance and resulting customer experience. We follow the feature's SLA to make sure it's always available to you. We track the telemetry of thumbs-up and thumbs-down gestures present in the UI experience for each AI output that you can submit feedback for.
 
 ## What are the limitations of Suggesting fixes to user at runtime feature? How can users minimize the impact of Suggesting fixes to user at runtime feature’s limitations when using the system?
 
