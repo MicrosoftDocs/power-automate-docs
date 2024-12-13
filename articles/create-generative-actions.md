@@ -17,7 +17,7 @@ ms.collection:
 
 [!INCLUDE[cc-preview-features-definition](includes/cc-preview-features-top-note.md)]
 
-Generative actions are a new type of automation that is authored, tested, and executed through an AI runtime. Generative actions can simplify and accelerate the automation process by reducing the need for specifying the action sets and sequencing to execute. Generative actions can also adapt to changing scenarios and data sources by leveraging the AI runtime's intelligence and reasoning capabilities. Generative actions can handle complex and dynamic tasks that involve multiple steps, conditions, loops, branches, and integrations.
+Generative actions are a new type of action that is authored, tested, and executed through an AI runtime. Generative actions can simplify and accelerate the automation process by reducing the need for specifying the action sets and sequencing to execute. Generative actions can also adapt to changing scenarios and data sources by leveraging the AI runtime's intelligence and reasoning capabilities. Generative actions can handle complex and dynamic tasks that involve multiple steps, conditions, loops, branches, and integrations.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
@@ -96,7 +96,7 @@ The Microsoft Word document must be labeled as non-confidential and reside in th
 
 ## Monitor a generative action
 
-You can monitor the run history and the performance of your generative action from the **My flows** page in Power Automate. You can also edit or customize your generative action at any time.
+You can monitor the run history and the performance of your generative action from the **My flows** page in Power Automate. You can also edit or customize your generative action at any time from within the cloud flow designer.
 
 To monitor and edit a generative action, follow these steps:
 
