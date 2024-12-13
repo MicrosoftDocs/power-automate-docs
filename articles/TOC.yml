@@ -1204,8 +1204,6 @@
     href: regions-overview.md
   - name: Limits and configuration
     href: limits-and-config.md
-  - name: Power Automate embed pay-as-you-go
-    href: isv-pay-as-you-go.md
   - name: Frequently asked questions
     href: frequently-asked-questions.yml
   - name: Power Automate glossary
