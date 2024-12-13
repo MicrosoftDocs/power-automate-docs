@@ -1,7 +1,7 @@
 ---
 title: Create generative actions in cloud flows (preview)
 description: Learn how to create generative actions in cloud flows.
-ms.date: 12/11/2024
+ms.date: 12/18/2024
 ms.topic: conceptual
 author: HeatherOrt
 contributors:
@@ -135,3 +135,7 @@ The following limitations apply to generative actions in cloud flows:
   > if you wish to include more connectors in your generative actions use case, contact your representative.
 
 - Data loss prevention (DLP) policies for cloud flows are supported exclusively at the generative action level. Differentiating connectors as Business or Non-Business between cloud flow connections and generative action connections isn't currently supported.
+
+## Related information
+
+[FAQ for generative actions in cloud flows](faqs-generative-actions.md)
