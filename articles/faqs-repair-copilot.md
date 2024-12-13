@@ -5,7 +5,7 @@ ms.date: 12/10/2024
 ms.custom:
   - responsible-ai-faqs
 ms.topic: conceptual
-author: nimoutzo
+author: nikosmoutzourakis
 ms.author: nimoutzo
 ms.reviewer: dmartens
 ms.collection:
