@@ -4,7 +4,7 @@ description: Learn about the available Cloud Connector operations in Power Autom
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/08/2024
+ms.date: 12/11/2024
 ms.author: iomavrid
 ms.reviewer: 
 contributors:
@@ -16,22 +16,6 @@ search.audienceType:
 ---
 
 # Cloud Connectors as Power Automate for desktop actions
-
-> [!IMPORTANT]
-> There are some known connector action issues in older versions of Power Automate for Desktop (versions older than v2.44). If you're using Power Automate for desktop version 2.43 or earlier, you might experience issues where connector actions don't load correctly in desktop flows such as:
-> - connector actions missing from the designer's action panel
-> - "unknown action" errors in desktop flows linked to connector actions
-> - incorrect console initiated executions (local runs) due to cloud connector actions  
->
-> To resolve this issue, update Power Automate for desktop to the latest available version.
->
-> For patched versions of previous releases, refer to the following list:
-> - [2.43](https://go.microsoft.com/fwlink/?linkid=2272572)
-> - [2.42](https://go.microsoft.com/fwlink/?linkid=2272571)  
-> - [2.41](https://go.microsoft.com/fwlink/?linkid=2272390)  
-> - [2.40](https://go.microsoft.com/fwlink/?linkid=2272389)  
-> - [2.39](https://go.microsoft.com/fwlink/?linkid=2272570)
-> - [2.38](https://go.microsoft.com/fwlink/?linkid=2272859)  
 
 [Cloud Connectors available for Power Automate](/connectors/connector-reference/connector-reference-powerautomate-connectors) are now available for desktop flows as well.
 
@@ -56,7 +40,7 @@ search.audienceType:
     - [Perform an unbound action in selected environment](/connectors/commondataserviceforapps/#perform-an-unbound-action-in-selected-environment)
     - [Relate rows in selected environment](/connectors/commondataserviceforapps/#relate-rows-in-selected-environment)
     - [Unrelate rows in selected environment](/connectors/commondataserviceforapps/#unrelate-rows-in-selected-environment)
-    - [Update a row in selected environment](/connectors/commondataserviceforapps/#update-a-row-in-selected-environment)
+    - [Upsert a row in selected environment](/connectors/commondataserviceforapps/#update-a-row-in-selected-environment)
     - [Upload a file or an image to selected environment](/connectors/commondataserviceforapps/#upload-a-file-or-an-image-to-selected-environment)
 - A few connector actions introduced in version 2.49 (both installer and Microsoft Store versions) might fail with the following error during designer, console, and cloud-initiated runs:
 
@@ -144,6 +128,6 @@ You can add the rest of the (non-custom) Power Automate cloud connectors to a de
 
     :::image type="content" source="media/cloudconnectors/connector-banner-warning-to-create-connection-in-portal.png" alt-text="Screenshot of the sign in dialog in connector actions including a banner message" border="false":::
 
-- Creating non-OAuth connections through Power Automate for desktop isn't supported. For these connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
+- Creating non-OAuth connections through Power Automate for desktop is supported only for connectors that require you to accept terms of use. For other connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
 
     :::image type="content" source="media/cloudconnectors/connector-banner-prompt-to-create-connection-in-portal.png" alt-text="Screenshot of the connector actions including a banner message that prompts to create a connection through the portal" border="false":::
