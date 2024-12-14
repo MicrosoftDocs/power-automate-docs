@@ -114,6 +114,10 @@ We provide a summary view for all runs from both existing and new flow runs post
 
 Limitations include limitations for features using analytics pipeline and for non-solution cloud flows triggered by Power Apps, as described in this section.
 
+## Protecting flows in Environments that are already protected by CMK
+
+For environments that are already protected by CMK, create a Support Ticket to request protection of flows in said environment. Learn More. 
+
 ### Limitations on features applying analytics pipeline
 
 When an environment is enabled for customer-managed keys, then Power Automate data can't be sent to the analytics pipeline for a range of scenarios:
