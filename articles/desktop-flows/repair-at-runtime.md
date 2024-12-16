@@ -113,18 +113,19 @@ As soon as you select a row in the recommendation list view, you can choose one 
 
 On the panel that opens once you select **Repair with Copilot**, you'll see 2 main areas and an action list at the bottom.
 The upper part of the panel shows the problematic element together with script, location and selector details.
-:::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details-original.png" alt-text="Screenshot of repair at runtime recommendation details panel in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details-original.png":::
+:::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details-original.png" alt-text="Screenshot of repair at runtime recommendation details panel with actions bar in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details-original.png":::
 
-In the middle of the panel, you'll see a **Suggested fix** area displaying a visual representation of the element identified by Copilot along with the new selector. A red bounding box labeled "Copilot found this element" highlights the exact position on the screen or control.
-:::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details-suggested.png" alt-text="Screenshot of repair at runtime recommendation details panel in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details-suggested.png":::
+In the lower part of the panel, you'll see a **Suggested fix** area displaying a visual representation of the element identified by Copilot along with the new selector. A red bounding box labeled "Copilot found this element" highlights the exact position on the screen or control.
+:::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details-suggested.png" alt-text="Screenshot of repair at runtime recommendation details panel showing Copilot suggestion in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details-suggested.png":::
 
-On the lower part of the screen, you'll see a button menu labeled **Apply once** from which you can choose:
+On the bottom of the panel, you'll see a button menu labeled **Apply once** from which you can choose:
 
 - **Apply once**: Temporarily applies the selected fix for the current run.
 - **Ignore and continue**: Ignores the repair request, likely causing the run to fail since the selector wasn't changed.
-:::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details-actions.png" alt-text="Screenshot of repair at runtime recommendation details panel in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details-actions.png":::
+:::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details-actions.png" alt-text="Screenshot of repair at runtime recommendation details panel with actions in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details-actions.png":::
 
-If you choose **Apply once**, a confirmation message will indicate whether the selector was applied successfully.
+If you choose **Apply once**, a confirmation message will indicate whether the selector was applied successfully. When you return to the previous screen, you'll nottice that the Repair with Copilot button is replaced by View outcome that will show you an audit trail of the action taken.
+:::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details-audit.png" alt-text="Screenshot of repair at runtime recommendation details panel with an audit trail in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details-audit.png":::
 
 ### Known limitations
 
