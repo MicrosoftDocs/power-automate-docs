@@ -102,7 +102,11 @@ Let’s take the analysis of our process beyond KPIs. We use the Power Automate 
 
     Based on your settings, the process model will:
      - be downloaded to your local computer and analyzed locally
-     - be kept and analyzed in the cloud (Preview) - [learn more about the new option](minit/settings.md).
+     - be kept and analyzed in the cloud (Preview) - you will be notified about availability of this option with message on top of your application
+       
+       :::image type="content" source="media/process-mining-tutorial/PAPMDesktopMessageMarked.png" alt-text="Screenshot of the keep and analyze in cloud message.":::
+
+       [Learn more about setting the new option](minit/settings.md).
 
     You’re ready to use the advanced capabilities of the Process Mining desktop app.
 
