@@ -96,6 +96,9 @@ The manual repair experience is also triggered if Copilot can't locate the UI el
 
 ### Unattended experience step-by-step
 
+> [!NOTE]
+> Repair with Copilot feature for unattended runs is only supported in [managed envrionments](/power-platform/admin/managed-environment-enable).
+
 If you've enabled repair at runtime for **unattended** runs in the Power Platform admin center, you'll receive repair requests direclty under [Recommendations](/power-automate/automation-center-recommendations) within the [Automation Center](/power-automate/automation-center-overview) experience.
 :::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco.png" alt-text="Screenshot of repair at runtime recommendation in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco.png":::
 
