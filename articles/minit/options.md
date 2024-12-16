@@ -27,6 +27,18 @@ You can change the application settings in the **Options** tab.
 
 - **Change process animation settings:** In the **Animation** tab, change settings for process animation. These settings will be used as default, whenever a new process view is created.
 
+## Keep and analyze process model in cloud (Preview)
+
+You can now decide if the desktop application will download the process model to your client computer and analyze it locally or keep and analyze it in the cloud. The second option allows to eliminate limitations on your local hardware resources and allows to analyze process models that are boyond your local computer capacity.
+To opt-in for this option, check the **Keep process model in the cloud (preview)**, click Save and restart the application as prompted.
+
+:::image type="content" alt-text="Screenshot of Options screen with Keep process model in cloud option checked." source="media/OptionsDownloadCheckMarked.png":::
+
+Checking the option will make the sections (marked red):
+- Data storage location
+- Automatic download process data
+hidden and not relevant after the application restart.
+
 ## Related information
 
 [Settings overview](settings.md)
