@@ -100,6 +100,10 @@ Let’s take the analysis of our process beyond KPIs. We use the Power Automate 
 
 1. Select **Default** to display the default view.
 
+    Based on your settings, the process model will:
+     - be downloaded to your local computer and analyzed locally
+     - be kept and analyzed in the cloud (Preview) - [learn more about the new option](minit/settings.md).
+
     You’re ready to use the advanced capabilities of the Process Mining desktop app.
 
 1. On the **Customize** panel toolbar, select **Frequency** (the first icon), and then select **Case count** in the **Metric** dropdown menu.
