@@ -106,7 +106,7 @@ Let’s take the analysis of our process beyond KPIs. We use the Power Automate 
        
        :::image type="content" source="media/process-mining-tutorial/PAPMDesktopMessageMarked.png" alt-text="Screenshot of the keep and analyze in cloud message.":::
 
-       [Learn more about setting the new option](minit/settings.md).
+       [Learn more about setting the new option](minit/options.md).
 
     You’re ready to use the advanced capabilities of the Process Mining desktop app.
 
