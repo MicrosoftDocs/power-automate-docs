@@ -99,7 +99,7 @@ The manual repair experience is also triggered if Copilot can't locate the UI el
 > [!NOTE]
 > Repair with Copilot feature for unattended runs is only supported in [managed envrionments](/power-platform/admin/managed-environment-enable).
 
-If you've enabled repair at runtime for **unattended** runs in the Power Platform admin center, you'll receive repair requests directly under [Recommendations](/power-automate/automation-center-recommendations) within the [Automation Center](/power-automate/automation-center-overview) experience. The repair request will automatically time out after **15 minutes** if no action is taken.
+If you've enabled repair at runtime for **unattended** runs in the Power Platform admin center, you'll receive repair requests directly under [Recommendations](/power-automate/automation-center-recommendations) within the [Automation Center](/power-automate/automation-center-overview) experience. The repair request will automatically time out after **10 minutes** if no action is taken.
 :::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco.png" alt-text="Screenshot of repair at runtime recommendation in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco.png":::
 
 Once you select the **Repair with Copilot** button, a side panel opens with the repair request details. This panel contains a list of desktop flow runs for which alternative UI selectors have been identified to recover failing unattended runs.
