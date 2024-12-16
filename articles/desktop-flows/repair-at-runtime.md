@@ -97,8 +97,34 @@ The manual repair experience is also triggered if Copilot can't locate the UI el
 ### Unattended experience step-by-step
 
 If you've enabled repair at runtime for **unattended** runs in the Power Platform admin center, you'll receive repair requests direclty under [Recommendations](/power-automate/automation-center-recommendations) within the [Automation Center](/power-automate/automation-center-overview) experience.
-
 :::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco.png" alt-text="Screenshot of repair at runtime recommendation in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco.png":::
+
+Once you select the **Repair with Copilot** button, a side panel opens with the repair request details. This panel contains a list of desktop flow runs for which alternative UI selectors have been identified to recover failing unattended runs.
+:::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details.png" alt-text="Screenshot of repair at runtime recommendation details panel in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details.png":::
+As soon as you select a row in the recommendation list view, you can choose one of the following actions:
+
+- **Repair with Copilot**: Opens a panel showing the problematic control along with the original and new selector identified by Copilot.
+- **Ignore and continue**: Ignores the repair request, likely causing the run to fail since the selector wasn't changed.
+- **Flow details**: Navigates to the flow details page for which the request was created.
+- **Run details**: Navigates to the desktop flow run details page for which the request was created.
+- **Refresh**: Refreshes the list of repair recommendations.
+
+#### Repair with Copilot action
+
+On the panel that opens once you select **Repair with Copilot**, you'll see 2 main areas and an action list at the bottom.
+The upper part of the panel shows the problematic element together with script, location and selector details.
+:::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details-original.png" alt-text="Screenshot of repair at runtime recommendation details panel in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details-original.png":::
+
+In the middle of the panel, you'll see a **Suggested fix** area displaying a visual representation of the element identified by Copilot along with the new selector. A red bounding box labeled "Copilot found this element" highlights the exact position on the screen or control.
+:::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details-suggested.png" alt-text="Screenshot of repair at runtime recommendation details panel in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details-suggested.png":::
+
+On the lower part of the screen, you'll see a button menu labeled **Apply once** from which you can choose:
+
+- **Apply once**: Temporarily applies the selected fix for the current run.
+- **Ignore and continue**: Ignores the repair request, likely causing the run to fail since the selector wasn't changed.
+:::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details-actions.png" alt-text="Screenshot of repair at runtime recommendation details panel in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details-actions.png":::
+
+If you choose **Apply once**, a confirmation message will indicate whether the selector was applied successfully.
 
 ### Known limitations
 
@@ -110,6 +136,7 @@ If you've enabled repair at runtime for **unattended** runs in the Power Platfor
 - The feature doesn't support child flow execution.
 - The feature doesn't support UI element collections.
 - The feature can't apply to selectors that contain one or more variables.
+- The unattended version of this feature doesn't yet support persisting a new selector in the desktop flow script during runtime.
 - Drag-and-drop actions aren't supported at this phase.
 - The **Apply for every run** option uses the user identity logged into the Power Automate for desktop console. If no user is signed into the console, the option isn't available.
 
