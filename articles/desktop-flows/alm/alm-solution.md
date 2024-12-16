@@ -31,7 +31,7 @@ You might be using connections inside your desktop flow. To be able to easily ex
 1. Select **Add existing** > **More** > **Connection Reference**.
 2. Search the connection reference that matches the connection referenced used in your desktop flow.
 
-:::image type="content" source="./media/desktopflow-connectionreference.png" alt-text="Screenshot of a desktop flow in a solution":::
+:::image type="content" source="./media/desktopflow-connectionreference.png" alt-text="Screenshot of a desktop flow and a connection reference in a solution":::
 
 If you are exporting as Managed solution this is required to be able to map your connection reference to your connection used in Production.
 
@@ -43,7 +43,7 @@ You're redirected to the cloud flow designer. Edit to add an action with a deskt
 
 The connection you use won't be the connection that is used in your production environment.
 
-:::image type="content" source="./media/cloudflow-solution.png" alt-text="Screenshot of a desktop flow, a cloud flow, and connection reference in a solution":::
+:::image type="content" source="./media/cloudflow-solution.png" alt-text="Screenshot of a desktop flow, a cloud flow, and connection references in a solution":::
 
 You see the cloud flow in your solution and a connection reference. This is the connection reference used by the cloud flow. You will need to map the connection when importing in the production environment.
 
