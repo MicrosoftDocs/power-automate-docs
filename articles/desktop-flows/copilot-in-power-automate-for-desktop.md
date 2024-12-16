@@ -42,6 +42,8 @@ Copilot in Power Automate for desktop offers different capabilities, which are a
   - India
   - United Kingdom
   - United States
+- Summarize actions & subflows
+  - United States
 
 ### Availability by account type
 
@@ -92,7 +94,7 @@ Crafting effective prompts involves more than just being specific with your requ
 - Try tweaking your prompt to further fine tune.
 - Learn more about writing prompts with generative AI at [The art of the prompt: How to get the best out of generative AI](https://news.microsoft.com/source/features/ai/the-art-of-the-prompt-how-to-get-the-best-out-of-generative-ai/).
 
-## How to use Copilot to get answers to product-related questions (preview)
+## Use Copilot to get answers to product-related questions (preview)
 
 Access the generative answers capability from the console by selecting the Copilot icon located on the top right corner of the console window.
 
@@ -108,7 +110,16 @@ From Copilot’s side panel, make sure the generative answers skill is selected 
 
 In the Copilot pane, ask any product related questions or use one of the proposed prompts to get you started. The answer generated contains a link to the documentation page to refer you to additional information. Make sure you always review AI-generated content.
 
-## Help us improve this feature
+## Use Copilot to summarize actions and subflows
+The Summarize actions & subflows Copilot skill helps you quickly grasp the structure and functionality of desktop flows by generating concise summaries for specific actions, multiple actions, or entire subflows. This enables you to troubleshoot and maintain flows more efficiently, saving time and simplifying the process of understanding and optimizing your automation.
+
+### Key Features:
+This skill allows you to generate summaries for individual actions, multiple actions, or entire subflows within your desktop flow. You can reference specific line numbers or subflow names to request descriptions, such as "Summarize action in line 4" or "Summarize subflow 'main'." Additionally, you can customize the level of detail in the generated summaries by specifying your preferences, like requesting a high-level overview in a couple of sentences or a more detailed explanation. For example you can say "Summarize subflow <subflow_name> in a couple of sentences".
+
+### How to Use:
+To use the "Summarize actions & subflows" skill, select it from the Copilot skill picker drop-down menu in the Power Automate for desktop flows designer. Once selected, type your prompt in natural language to generate a summary.
+
+## Help us improve Copilot
 
 To send feedback, select the thumbs up or thumbs down icon under the AI-generated content. A feedback dialog appears, allowing you to submit feedback to Microsoft. Learn more about how this data is used and your rights at [Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control).
 
