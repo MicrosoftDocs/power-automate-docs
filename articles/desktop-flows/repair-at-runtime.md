@@ -1,12 +1,14 @@
 ---
 title: Repair Flow Automation Errors (preview)
 description: Users can automatically or manually fix errors in UI elements that can't be located during the execution of a UI or browser automation task.
-ms.date: 12/12/2024
+ms.date: 12/16/2024
 ms.topic: how-to
 author: nikosmoutzourakis
 ms.author: nimoutzo
 ms.reviewer: null
 ms.collection: bap-ai-copilot
+contributors:
+- rpapostolis
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-title
@@ -45,8 +47,9 @@ Currently, Copilot in Power Automate for desktop is only available for users wit
 ### How to turn on the feature
 
 - You need Power Automate desktop version 2.51 (11.2412.xxx.y) or higher. Learn how to download the latest version at [Install Power Automate](https://aka.ms/DownloadPAD48).
-- Turn on the use of AI for self-healing issues. The **Repair at runtime** setting in the Power Platform admin center must also be turned on.
 - For repairing with Copilot, ensure the Copilot setting in the Power Platform Admin Center is turned on.
+- Turn on the use of AI for self-healing issues. The **Repair at runtime** setting for the desired run mode (`attended` and `unattended`) can be found under the **Desktop flow repair at runtime configuration** setting in the Power Platform admin center.
+    :::image type="content" source="media/repair-with-copilot/repair-with-copilot-ppac-setting.png" alt-text="Screenshot of repair at runtime setting for the respective run mode." lightbox="media/repair-with-copilot/repair-with-copilot-ppac-setting.png":::
 - For newly created flows, turn on the **Repair flow errors** option.
 - For existing flows, navigate to the respective desktop flow properties in the Power Automate for desktop console. Turn on the **Repair flow errors** property in the desktop flow's properties.
 
@@ -90,6 +93,12 @@ You can also repair the issue manually. Similar to the previous method, a notifi
 The manual repair experience is also triggered if Copilot can't locate the UI element or if you select the **Repair manually** option from the notification window's drop-down menu.
 
 :::image type="content" source="media/repair-with-copilot/repair_manual.png" alt-text="Screenshot of user capturing the required UI element manually.":::
+
+### Unattended experience step-by-step
+
+If you've enabled repair at runtime for **unattended** runs in the Power Platform admin center, you'll receive repair requests direclty under [Recommendations](/power-automate/automation-center-recommendations) within the [Automation Center](/power-automate/automation-center-overview) experience.
+
+:::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco.png" alt-text="Screenshot of repair at runtime recommendation in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco.png":::
 
 ### Known limitations
 
