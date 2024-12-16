@@ -25,6 +25,16 @@ You're redirected to Power Automate desktop, once you have finished editing your
 
 :::image type="content" source="./media/desktopflow-solution.png" alt-text="Screenshot of a desktop flow in a solution":::
 
+## (Optional) Add your desktop flow connection references
+You might be using connections inside your desktop flow. To be able to easily export your desktop flow into other environment, you need to ensure that the connection references are added as well.
+
+1. Select **Add existing** > **More** > **Connection Reference**.
+2. Search the connection reference that matches the connection referenced used in your desktop flow.
+
+:::image type="content" source="./media/desktopflow-connectionreference.png" alt-text="Screenshot of a desktop flow in a solution":::
+
+If you are exporting as Managed solution this is required to be able to map your connection reference to your connection used in Production.
+
 ## Create a cloud flow
 
 From within the solution, select **New** > **Automation** > **Cloud flow** > **Scheduled**.
@@ -35,7 +45,7 @@ The connection you use won't be the connection that is used in your production e
 
 :::image type="content" source="./media/cloudflow-solution.png" alt-text="Screenshot of a desktop flow, a cloud flow, and connection reference in a solution":::
 
-You see the cloud flow in your solution and a connection reference.
+You see the cloud flow in your solution and a connection reference. This is the connection reference used by the cloud flow. You will need to map the connection when importing in the production environment.
 
 ## Next steps
 
