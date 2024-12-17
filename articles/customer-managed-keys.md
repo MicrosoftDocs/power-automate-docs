@@ -70,6 +70,7 @@ The following categories of flows continue to be protected by MMK after applying
 |Power App v1 trigger flows that aren't in a solution     | **Option 1 (Recommended)**</br>Update the flow to use V2 trigger *before* applying CMK.</br></br>**Option 2**</br>*Post CMK application*, use **Save as** to create a copy of the flow. Update calling Power Apps to use the new copy of the flow.   |
 |HTTP trigger flows and Teams trigger flows     | *Post enterprise policy application*, use **Save as** to create a copy of the flow. Update calling system to use the URL of the new flow.</br></br>This category of flows isn't automatically protected, as a new flow URL is created in the CMK protected infrastructure. Customers might be leveraging the URL in their invoking systems.   |
 |Parents of flows that can't be automatically migrated     | If a flow can't be migrated, then dependent flows are also not migrated to ensure there’s no business disruption. |
+|Flows using the List flows as Admin (v1) connector action     | Flows referencing this legacy action should either be deleted or updated to use the [List Flows as Admin (V2)](/connectors/flowmanagement/#list-flows-as-admin-(v2)) action.   |
 
 ## PowerShell commands
 
