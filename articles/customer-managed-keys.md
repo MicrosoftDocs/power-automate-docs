@@ -110,13 +110,12 @@ If you want to view input/output data, you can use the run history (**All Runs**
 
 We provide a summary view for all runs from both existing and new flow runs post CMK application. This view contains summary information such as run id, start time, duration, and fail/successs. It doesn't contain input/output data.
 
+## Protecting flows in Environments that are already protected by CMK
+
+For environments that are already protected by CMK, protecting flows using CMK can be requested by a Support Ticket.
 ## Known limitations
 
 Limitations include limitations for features using analytics pipeline and for non-solution cloud flows triggered by Power Apps, as described in this section.
-
-## Protecting flows in Environments that are already protected by CMK
-
-For environments that are already protected by CMK, create a Support Ticket to request protection of flows in said environment. Learn More. 
 
 ### Limitations on features applying analytics pipeline
 
