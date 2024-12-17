@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 11/15/2024
+ms.date: 12/17/2024
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -30,7 +30,7 @@ Consider the following scenarios when applying the CMK enterprise policy to your
 - When the CMK enterprise policy is applied, cloud flows and their data with CMK are automatically protected. Some flows might continue to be protected by MMKs. Admins can identify these flows using [PowerShell commands](#powershell-commands).  
 - Creation and updates of flows are blocked during migration. Run history isn't carried forward. You can request it through a [support ticket](#get-run-history-by-support-ticket) up to 30 days after migration.
 - Currently, CMKs aren't leveraged to encrypt non-OAuth connections. These non-Microsoft Entra based connections continue to be encrypted at rest using MMKs.
-- To enable incoming and outgoing network traffic from CMK protected infrastructure, [update your firewall configuration](#update-firewall-configuration) to ensure your flows continue to work.  
+- To enable incoming and outgoing network traffic from CMK protected infrastructure, [update your firewall configuration](#update-firewall-configuration) to ensure your flows continue to work.
 - If you plan to protect more than 25 environments in your tenant using CMK, create a support ticket. The default limit of CMK enabled Power Automate environments per tenant is 25. This number can be extended by engaging the Support team.
 
 Applying an encryption key is a gesture performed by Power Platform admins and is invisible to users. Users can create, save, and execute Power Automate workflows exactly the same way as if MMKs encrypted the data.
@@ -111,6 +111,10 @@ If you want to view input/output data, you can use the run history (**All Runs**
 ## Get run history by support ticket
 
 We provide a summary view for all runs from both existing and new flow runs post CMK application. This view contains summary information such as run id, start time, duration, and fail/successs. It doesn't contain input/output data.
+
+## Protect flows in environments that are already protected by CMK
+
+For environments that are already protected by CMK, protecting flows using CMK can be requested by a Support Ticket.
 
 ## Known limitations
 
