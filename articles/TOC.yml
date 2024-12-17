@@ -387,6 +387,8 @@
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
   - name: Create desktop flows using Record with Copilot (preview)
     href: ./desktop-flows/create-flow-using-ai-recorder.md
+  - name: Repair flow automation errors (preview)
+    href: ./desktop-flows/repair-at-runtime.md
   - name: Run desktop flows
     items:
     - name: Run unattended and attended desktop flows from the cloud
@@ -793,7 +795,7 @@
       href: ./desktop-flows/actions-reference/custommodule.md
     - name: Cloud Connector actions
       href: ./desktop-flows/actions-reference/cloudconnectors.md
-    - name: SAP GUI
+    - name: SAP automation
       href: ./desktop-flows/actions-reference/sap.md
     - name: Power Automate secret variables actions (preview)
       href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
@@ -901,8 +903,12 @@
     items:
     - name: Overview
       href: ./minit/minit-desktop-application-overview.md
-    - name: Download Process Mining desktop app
-      href: ./minit/how-to-start-with-minit-desktop-application.md
+    - name: Installation
+      items:
+      - name: Standard
+        href: ./minit/how-to-start-with-minit-desktop-application.md
+      - name: Custom
+        href: ./minit/process-mining-custom-install.md
     - name: Get started
       items:
       - name: Explore the home page
@@ -1244,6 +1250,8 @@
     href: responsible-ai-overview.md
   - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
+  - name: FAQ for Copilot expression assistant
+    href: faqs-copilot-expression-assistant.md  
   - name: FAQ for Copilot in automation center
     href: faqs-copilot-automation-center.md
   - name: FAQ for Copilot in desktop flow activity
@@ -1252,6 +1260,8 @@
     href: faqs-copilot-in-process-mining.md
   - name: FAQ for Copilot in Power Automate for desktop
     href: faqs-copilot-in-pad.md
+  - name: FAQ for Repair with Copilot at runtime in Power Automate for desktop
+    href: faqs-repair-copilot.md
   - name: FAQ for generating code with natural language
     href: faqs-copilot-nl-to-code.md
   - name: FAQ for suggested actions in Power Automate for desktop
