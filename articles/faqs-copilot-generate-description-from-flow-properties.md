@@ -1,7 +1,7 @@
 ---
 title: FAQ for generating a flow description using Copilot
 description: This FAQ discusses the generating a flow description using Copilot feature in Power Automate for desktop and the key considerations for making use of this technology responsibly.
-ms.date: 09/10/2024
+ms.date: 12/17/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -34,7 +34,7 @@ The intended use of the generate flow description using Copilot feature is for u
 
 ## What are the limitations of the generate flow description with Copilot capability? How can users minimize the impact of the generate flow description with Copilot limitations when using the system?
   
-- The generate flow description with Copilot capability is available to environments deployed in the following regions: Asia Pacific, Australia, Canada, France, Germany, India, Japan, Korea, Norway, Singapore, South Africa, Switzerland, United Arab Emirates, United Kingdom and United States.
+- The generate flow description with Copilot capability is available to environments deployed in the following regions: Asia Pacific, Australia, Canada, France, Germany, India, Japan, Korea, Norway, Singapore, South Africa, Switzerland, United Arab Emirates, United Kingdom, and United States.
 - This capability is currently available only to users using a work or school account.
 
 ## What operational factors and settings allow for effective and responsible use of the generate flow description with Copilot capability?

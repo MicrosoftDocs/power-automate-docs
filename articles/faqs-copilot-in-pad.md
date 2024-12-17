@@ -1,7 +1,7 @@
 ---
 title: FAQ for Copilot in Power Automate desktop
 description: This FAQ discusses Copilot in Power Automate desktop and the key considerations for making use of this technology responsibly.
-ms.date: 09/13/2024
+ms.date: 12/17/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: conceptual
@@ -69,8 +69,8 @@ We have a robust set of metrics we're tracking to measure the model's performanc
 
 - The generative answers capability can only answer to product-related features. It can't answer general questions or anything unrelated to the product.
 - There's a limit of 500 characters to describe a flow that you want to create or ask a question that you have about the product.
-- You can disable completely the Copilot in Power Automate for desktop, by contacting support or by closing the Copilot chat panel and not interact with it.
-- Copilot is currently available only to users using a work or school account.
+- You can disable Copilot in Power Automate for desktop by contacting support or closing the Copilot chat panel and not interacting with it.
+- Copilot is available only to users with a work or school account.
 
 ## What operational factors and settings allow for effective and responsible use of Copilot in Power Automate for desktop?
 
