@@ -1,7 +1,7 @@
 ---
 title: Get started with Copilot in Power Automate for desktop
 description: Learn how to access and use Copilot in Power Automate for desktop.
-ms.date: 11/01/2024
+ms.date: 12/17/2024
 ms.topic: how-to
 author: cochamos
 ms.author: cochamos
@@ -42,7 +42,7 @@ Copilot in Power Automate for desktop offers different capabilities, which are a
   - India
   - United Kingdom
   - United States
-- Summarize actions & subflows
+- Summarize actions and subflows
   - United States
 
 ### Availability by account type
@@ -111,13 +111,16 @@ From Copilot’s side panel, make sure the generative answers skill is selected 
 In the Copilot pane, ask any product related questions or use one of the proposed prompts to get you started. The answer generated contains a link to the documentation page to refer you to additional information. Make sure you always review AI-generated content.
 
 ## Use Copilot to summarize actions and subflows
-The Summarize actions & subflows Copilot skill helps you quickly grasp the structure and functionality of desktop flows by generating concise summaries for specific actions, multiple actions, or entire subflows. This enables you to troubleshoot and maintain flows more efficiently, saving time and simplifying the process of understanding and optimizing your automation.
 
-### Key Features:
-This skill allows you to generate summaries for individual actions, multiple actions, or entire subflows within your desktop flow. You can reference specific line numbers or subflow names to request descriptions, such as "Summarize action in line 4" or "Summarize subflow 'main'." Additionally, you can customize the level of detail in the generated summaries by specifying your preferences, like requesting a high-level overview in a couple of sentences or a more detailed explanation. For example you can say "Summarize subflow <subflow_name> in a couple of sentences".
+The Summarize actions & subflows Copilot skill helps you quickly understand desktop flows by generating concise summaries for specific actions, multiple actions, or entire subflows. This skill lets you troubleshoot and maintain flows more efficiently, saving time and simplifying the process of understanding and optimizing your automation.
 
-### How to Use:
-To use the "Summarize actions & subflows" skill, select it from the Copilot skill picker drop-down menu in the Power Automate for desktop flows designer. Once selected, type your prompt in natural language to generate a summary.
+### Key features
+
+This skill lets you generate summaries for individual actions, multiple actions, or entire subflows within your desktop flow. You can reference specific line numbers or subflow names to request descriptions, such as "Summarize action in line 4" or "Summarize subflow 'main'." You can also customize the level of detail in the summaries by specifying your preferences, like requesting a high-level overview in a couple of sentences or a more detailed explanation. For example, you can say "Summarize subflow <subflow_name> in a couple of sentences".
+
+### How to use
+
+To use the "Summarize actions & subflows" skill, select it from the Copilot skill picker drop-down menu in the Power Automate for desktop flows designer. Then, type your prompt in natural language to generate a summary.
 
 ## Help us improve Copilot
 
