@@ -43,11 +43,12 @@ To choose this option, follow these steps:
 
 :::image type="content" source="media/options/options-download-checkmarked.png" alt-text="Screenshot of the 'Options' screen with 'Keep process model in cloud option' checked.":::
 
-When you check the option, these sections are made:
+When you check the option, these sections:
 
 - Data storage location
 - Automatic download process data
-- hidden and not relevant after the application restart
+
+are made hidden and not relevant after the application restart.
 
 ## Related information
 
