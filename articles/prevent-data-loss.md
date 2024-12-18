@@ -3,7 +3,7 @@ title: Data loss prevention (DLP) policy creation
 description: Learn about data loss prevention policies for Power Automate.
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 11/04/2024
+ms.date: 12/18/2024
 ms.author: cgarty
 author: ChrisGarty
 contributors:
@@ -27,7 +27,7 @@ Power Automate allows you to create and enforce DLP policies that classify deskt
 
 > [!IMPORTANT]
 >
-> - Enforcement of DLP policies is available for [Managed Environments](/power-platform/admin/managed-environment-overview) only. Starting January 2025, only desktop flows that are located in Managed Environments will be evaluated by DLP policies.
+> - DLP policy enforcement for desktop flows is available in all environments.
 > - DLP for desktop flows is available for versions of Power Automate for desktop 2.14.173.21294 or later. If you're using an earlier version, uninstall it and update to the latest version.
 
 ### View desktop flow action groups
