@@ -1,7 +1,7 @@
 ---
 title: Overview of generative actions (preview)
 description: Get an overview of generative actions, including benefits, how to author, monitor, and edit.
-ms.date: 10/14/2024
+ms.date: 12/20/2024
 ms.topic: conceptual
 author: HeatherOrt
 contributors:
@@ -17,7 +17,7 @@ ms.collection:
 
 [!INCLUDE[cc-preview-features-definition](includes/cc-preview-features-top-note.md)]
 
-Generative actions are a new type of action that's authored, tested, and executed through an AI runtime. You specify only the *intent* of the action and the AI chooses the right set of actions in the right order based on your input, context, and intent.
+Generative actions are a new type of action that is authored, tested, and executed through an AI runtime. You specify only the *intent* of the action and the AI chooses the right set of actions in the right order based on your input, context, and intent.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
@@ -31,15 +31,15 @@ Generative actions simplify automation by reducing the need for detailed specifi
 
 ## Author generative actions
 
-You can author generative actions in the cloud flows designer in Power Automate. When you give the system an intent, the AI generates suggested inputs, outputs, and actions to use in the action. You can choose to accept the AI suggestions, or reject them and add your own inputs, and outputs.
+You can author generative actions in the cloud flows designer in Power Automate. When you give the system an intent, the AI generates suggested inputs, outputs, and actions to use in the action. You can choose to accept the AI suggestions, or reject them and add your own inputs and outputs.
 
-In addition to inputs, and outputs, the system also provides connectors and actions that it can use to achieve its intended automation goal. You can choose to accept, reject, or add your own.
+In addition to inputs and outputs, the system also provides connectors and actions that it can use to achieve its intended automation goal. You can choose to accept, reject, or add your own.
 
  Once you create the action, you can preview how it behaves by providing sample inputs and verifying  what the action does. In the preview phase, the action pauses before taking any action. You can run this multiple times.
 
 ## Monitor a generative action
 
-You can monitor your generative actions runs from the cloud flows run history. From the **My Flows** page, you can select any generative action under the "generative actions" tab to get to its manage page. This page is where you can monitor the run history for the related generative action. To examine the process behind why a generative action called a specific action, you can dive into any run history instance.
+You can monitor your generative actions runs from the cloud flows run history. From the **My Flows** page, you can select any generative action under the **Generative actions** tab to get to its manage page. This page is where you can monitor the run history for the related generative action. To examine the process behind why a generative action called a specific action, you can dive into any run history instance.
 
 ## Edit or customize a generative action
 

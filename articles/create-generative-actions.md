@@ -1,7 +1,7 @@
 ---
 title: Create generative actions in cloud flows (preview)
 description: Learn how to create generative actions in cloud flows.
-ms.date: 12/18/2024
+ms.date: 12/20/2024
 ms.topic: conceptual
 author: HeatherOrt
 contributors:
@@ -36,6 +36,7 @@ To create a generative action, you start in cloud flows designer.
         - Desktop flow
 
           :::image type="content" source="media/create-generative-actions/start-from-blank.png" alt-text="Screenshot of the create page in Power Automate":::
+
         Or
 
     1. Select **My flows** > **New flow** > one of the following menu options under **Build your own from blank**:
@@ -66,7 +67,7 @@ Inputs are texts that the generative action uses to execute the plan. This text 
 Outputs are text that the generative action creates that can be used in succeeding actions in the flow.
 
 > [!TIP]
-> To remove additional detail or HTML and reduce input character count, review and use compose action on dynamic input.
+> To remove additional detail or HTML and reduce input character count, review and use the **Compose** action on dynamic input.
 
 :::image type="content" source="media/create-generative-actions/inputs-outputs.png" alt-text="Screenshot of a computer showing the AI-generated inputs and outputs":::
 
