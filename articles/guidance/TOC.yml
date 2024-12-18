@@ -20,7 +20,7 @@
               href: coding-guidelines/create-reusable-code.md
             - name: Implement parallel execution and concurrency
               href: coding-guidelines/implement-parallel-execution.md
-            - name: Use Data Operations
+            - name: Use data operations
               href: coding-guidelines/use-data-operations.md
             - name: Optimize Power Automate triggers
               href: coding-guidelines/optimize-power-automate-triggers.md

@@ -1,6 +1,6 @@
 ---
 title: Create reusable code (child flows)
-description: Learn how create reusable code
+description: Learn how create reusable code by using child flows
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
@@ -34,26 +34,28 @@ Instead of creating a single, overly complex automation solution, consider using
 
 ## Example Parent/Child flow scenario
 
-The Contoso organization requires approvals for various scenarios such as project proposals, leave requests, and expense submissions. The approvers for these scenarios are members of different SharePoint groups. To streamline this process, a single reusable child flow can be created to extract the list of approvers from the SharePoint groups. Each parent flow (e.g., project proposal, leave request, or expense submission) can then call this child flow to retrieve the list of approvers.
+The Contoso organization requires approvals for various scenarios such as project proposals, leave requests, and expense submissions. The approvers for these scenarios are members of different SharePoint groups. To streamline this process, a single reusable child flow can be created to extract the list of approvers from the SharePoint groups. Each parent flow (for example, project proposal, leave request, or expense submission) can then call this child flow to retrieve the list of approvers.
 
 #### Child Flow
 
 The child flow is responsible for extracting the list of approvers from a SharePoint list and returning this list to the parent flow.
 
 **Steps in the Child Flow:**
-1. **Retrieve Approvers**: Query the SharePoint list to get the approvers based on the specified criteria.
+
+1. **Retrieve Approvers**: Query the SharePoint group to get the approvers based on the specified criteria.
 2. **Return Data**: Send the list of approvers back to the calling parent flow.
 
-:::image type="content" source="media/child-flow1.png" alt-text="Screenshot of the child flow that gets approvers from a SharePoint list":::
+:::image type="content" source="media/child-flow1.png" alt-text="Screenshot of the child flow that gets approvers from a SharePoint group":::
 
 #### Parent Flow
 
 The parent flow calls the child flow to get the list of approvers and then processes the response accordingly.
 
 **Steps in the Parent Flow:**
+
 1. **Call Child Flow**: Invoke the child flow to retrieve the list of approvers.
-2. **Process Response**: Use the list of approvers returned by the child flow to proceed with the approval process for the specific scenario (e.g., project proposal, leave request, or expense submission).
+2. **Process Response**: Use the list of approvers returned by the child flow to proceed with the approval process for the specific scenario (for example, project proposal, leave request, or expense submission).
 
 :::image type="content" source="media/child-flow2.png" alt-text="Screenshot of the parent flow that calls the child flow":::
 
-By using this approach, Contoso can maintain a modular and efficient approval process, reducing redundancy and simplifying maintenance.
+Use this approach to maintain a modular and efficient approval process, reducing redundancy and simplifying maintenance.

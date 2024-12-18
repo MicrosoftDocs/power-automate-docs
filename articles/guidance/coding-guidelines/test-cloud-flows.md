@@ -1,6 +1,6 @@
 ---
-title: Test cloud flows and resubmit cloud flow runs
-description: Learn how to test cloud flows and resubmit cloud flow runs
+title: Test and resubmit cloud flow runs
+description: Learn how to test and resubmit cloud flow runs
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
@@ -16,57 +16,56 @@ search.audienceType:
 
 # Cloud flow testing
 
-Effective testing of Power Automate cloud flows is essential for ensuring their reliability, performance, and correctness. Here are some of the mechanisms that you could use to test your flows.
+Effective testing of Power Automate cloud flows is essential for ensuring their reliability, performance, and correctness. Here are some of the mechanisms that you could use to test your flows:
 
-### Design Phase testing
+### Design phase testing
 
-Consider using Flow checker and Test Flow tool during this phase. 
+Consider using **Flow checker** and **Test Flow** tools during this phase. 
 
-In the Test pane, there are two options for testing your flow:
+In the **Test pane**, there are two options for testing your flow:
 
-- Manually trigger the test yourself by doing the action that triggers the flow. For example, you can go to your inbox and send yourself a test email. Or, you can go to SQL and insert a row.
+- Manually trigger the test yourself by performing the action that triggers the flow. For example, you can go to your inbox and send yourself a test email. Or, you can go to SQL and insert a row.
 - Use data from previous runs to perform the test.
 
-![A screenshot of the Test Flow pane](media/image49.png)
+:::image type="content" source="media/test-cloud-flows.png" alt-text="A screenshot of the Test Flow pane":::
 
 ### Static result testing (Mock Data)
 
 The Static Result option in Power Automate is a feature designed to streamline the testing of your flows. It allows you to mock the outcomes of specific actions, enabling you to test different parts of your flow without having to execute the entire process each time.
 
-1. **Time Efficiency**: By using static results, you can bypass long-running actions and focus on testing specific sections of your flow. This significantly reduces the time spent on repetitive testing.
+1. **Time Efficiency**: By using static results, you can bypass long-running actions and focus on testing specific sections of your flow. 
 
-1. **Simplified Testing**:  Mocking action outcomes allows you to simulate various scenarios and conditions without needing the actual data or events to occur. This makes it easier to validate the behavior of your flow under different circumstances.
+1. **Simplified Testing**:  Mocking action outcomes allows you to simulate various scenarios and conditions without needing the actual data or events to occur. This approach makes it easier to validate the behavior of your flow under different circumstances.
 
 1. **Troubleshooting**: Static results can help isolate and troubleshoot issues within your flow. By controlling the output of specific actions, you can identify and resolve problems more effectively.
 
 #### How to Use Static Results
 
 1. **Capture the Action’s Outcome**:
-   - Create a new, manually triggered flow with the action you want to mock (e.g., "Start and wait for an approval").
+   - Create a new, manually triggered flow with the action you want to mock (for example, "Start and wait for an approval").
    - Run the flow once and complete the action to capture its outcome.
    - Go to the flow history, open the last run instance, and expand the action to view its outputs.
    - Copy the output data, which typically includes the "body" and other relevant details.
 
 2. **Configure the Static Result**:
-   - In the flow editor, click on the ellipsis on the action you want to mock and select **Static result (Preview)**.
-   - Toggle **Enable Static Result (Preview)** and switch to JSON mode.
-   - Paste the copied output data into the JSON editor, ensuring it includes the necessary keys and values.
+   - In the flow editor, select on the ellipsis on the action you want to mock and select **Static result (Preview)**.
+   - Toggle **Enable Static Result (Preview)** and select the fields you want to provide as a response.
    - Save the changes.
 
-3. **Run the Flow with Static Results**: When you run the flow again, it will use the static result for the mocked action, skipping the actual execution and using the predefined output instead.
+3. **Run the flow with static results**: When you run the flow again, it uses the static result for the mocked action, skipping the actual execution and using the predefined output instead.
 
 ## Resubmitting cloud flow runs
 
-Sometimes, a Cloud Flow might stop working unexpectedly or fail due to server issues or an asynchronous process not meeting certain requirements. If this happens, you can rerun the flow by going to the Run History and selecting Resubmit. You can also [resubmit or cancel runs in bulk](../../how-tos-bulk-resubmit.md).
+Sometimes, a cloud flow might stop working unexpectedly or fail due to server issues or an asynchronous process not meeting certain requirements. You can rerun the flow by going to the Run History and selecting Resubmit. You can also [resubmit or cancel runs in bulk](../../how-tos-bulk-resubmit.md).
 
 ### Considerations for resubmitting runs
 
 When resubmitting a flow run in Power Automate, it's important to keep several key considerations in mind to ensure the process is smooth and effective:
 
-1. **Error Handling**: Ensure your flow includes effective error handling and retry policies. This can help address the issues that caused the initial failure and provide better insights into why a run might fail again.
+1. **Error Handling**: Ensure your flow includes effective error handling and retry policies. This approach can help address the issues that caused the initial failure and provide better insights into why a run might fail again.
 
 1. **Data Duplication**: Be cautious of potential data duplication or other side effects from resubmitting a run. For example, if your flow creates records or sends emails, resubmitting might repeat these actions, leading to duplicates.
 
 1. **Input Data**: Verify that the input data required for the flow run is still valid and available. Changes in the data or environment (such as deleted files or records) can affect the outcome of the resubmitted run.
 
-1. **Flow Updates**: If you have made changes to the flow since the original run, consider whether these changes might impact the resubmission. It is generally best to resubmit using the version of the flow that was in place at the time of the original run to ensure consistency.
+1. **Flow Updates**: If you made changes to the flow since the original run, consider whether these changes might affect the resubmission. It's best to resubmit using the version of the flow that was in place at the time of the original run to ensure consistency.

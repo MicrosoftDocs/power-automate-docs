@@ -29,8 +29,8 @@ Here are some guidelines to follow:
 
 - **Consistency across flows**: Maintain consistency in naming conventions across all your Power Automate flows to facilitate navigation and standardization. Consistent naming ensures that team members can easily understand and work with different flows without having to decipher unique naming styles.
 
-- **Document naming conventions**: Document your naming conventions in a style guide or documentation to ensure that all team members are aware of the standards to follow. Documenting your naming conventions promotes uniformity and reduces the likelihood of inconsistencies or misunderstandings.
+- **Document naming conventions**: Document your naming conventions in a style guide or documentation to ensure that all team members are aware of the standards to follow. Documenting your naming conventions promotes uniformity and reduces the likelihood of inconsistencies or misunderstandings. Consider setting up a [SharePoint site](/power-platform/guidance/adoption/wiki-community#create-a-power-platform-hub) to share guidelines with your maker community.
 
 - **Add comments**: Adding comments to the actions makes it easy to understand the flow implementation logic.
 
-![A screenshot showing an example of comments in a flow](media/comments-example.png)
+    :::image type="content" source="media/comments-example.png" alt-text="A screenshot showing an example of comments in a flow":::

@@ -18,54 +18,50 @@ search.audienceType:
 
 ## Parallel Execution
 
-Power Automate supports parallel execution meaning flows can have two or more steps that run simultaneously, after which the workflow is only priced when all parallel steps are complete.
+Power Automate supports parallel execution, allowing flows to run two or more steps simultaneously. The workflow continues only after all parallel steps are complete. This capability enables more efficient processing, especially for asynchronous tasks.
 
-This enables flow to do more processing at the same time, specifically when the tasks are asynchronous.
+:::image type="content" source="media/parallel-branch.png" alt-text="A screenshot of a cloud flow with parallel branches":::
 
-![A screenshot of a cloud flow with parallel branches](media/image8.png)
+By running multiple actions at the same time, you can significantly reduce the overall execution time of your flow. Parallel execution is useful for tasks that don't depend on each other and can be processed independently.
 
-A good rule of thumb is to parallelize only when actions **take more than 5 seconds to execute**.​
+A good rule of thumb is to use parallel branches for actions that take more than 5 seconds to execute. Following this approach helps optimize the flow's performance without overwhelming the system.
 
-You can use parallel branches to achieve some of the following scenarios:​
+Some use cases for parallel branches:
 
-- [Sending nonblocking approval requests](https://flow.microsoft.com/blog/approval-reminders-using-parallel-branches/)
-- [Creating “Quorum” based approvals](https://flow.microsoft.com/blog/approvals-by-majority/)
-- Creating or updating records in multiple systems​
-- Getting data from multiple sources and consolidating them in one
+- **[Sending Nonblocking Approval Requests](https://flow.microsoft.com/blog/approval-reminders-using-parallel-branches/)**: Use parallel branches to send approval requests that don't block other actions. 
+- **[Creating “Quorum” based approvals](https://flow.microsoft.com/blog/approvals-by-majority/)**: Implement quorum-based approval processes where a decision is made based on most responses. Learn more
+- **Creating or updating records in multiple systems**: Ensure data consistency and reduce processing time by simultaneously create or update records across different systems.
+- **Consolidating data from multiple sources**: Retrieve data from various sources in parallel and consolidate it into a single dataset for further processing.
 
 ## Reducing scheduling overhead
 
 Straight line of actions can run sequentially in the engine. Parallel structuring can help organize the flow better and save time. Specially initializing multiple variables can be done in parallel to save time.
 
-![A screenshot of a cloud flow with parallel branches](media/image9.png)
+It's important to minimize the number of skipped actions in your flows. Wide switch statements with numerous actions in each branch, or parallel branches where the less frequently used path has more actions, can negatively affect the readability and maintainability of your flow.
 
-> [!NOTE]
-> One thing to always keep in mind is to avoid a huge number of skipped actions. Very wide switch statements with lots of actions in each branch or parallel branches where the less used path has significantly more actions impact flow readability.
->
-> Mitigation: Using child flows can address this. Instead of having lots of skipped actions in a switch branch, call child flows from the switch branch instead, so we skip the irrelevant child flows instead of a sizeable number of actions. This makes it easier to maintain.
+Instead of having many skipped actions within a switch branch, you can call child flows from the switch branch. This way, you skip the irrelevant child flows rather than a large number of individual actions. This approach simplifies your main flow and makes it easier to maintain.
 
-![Microsoft Flow performance](media/image10.png)
+By reducing the number of actions within each branch, your flow becomes more readable and easier to understand. Child flows allow you to manage and update specific parts of your workflow independently, making the overall maintenance process more straightforward.
 
 ## Concurrency control
 
-Concurrency enables Parallel execution in For Each loop. By default, For each loop executes sequentially. Therefore, when processing large data, it might take a long time. If the items in loop aren't required to run sequentially, concurrency enables X items to process at once. Currently users are allowed to see the degree of parallelism from 1 to 50.
+Concurrency enables parallel execution in a `Apply to each` loop. By default, `Apply to each` loops execute sequentially. Therefore, when processing large data, it might take a long time. If the items in loop aren't required to run sequentially, concurrency enables X items to process at once. Currently users can set the degree of parallelism between 1 and 50.
 
-Consider a scenario where 100 records need to be updated with status as Active, instead of updating one record after the other, Concurrency control enables up to 50 records to be updated simultaneously.
+Consider a scenario where the status field of 100 records needs to be updated - instead of updating one record after the other, Concurrency control enables up to 50 records to be updated simultaneously.
 
 Be mindful of the degree of parallelism to set:
 
 - There's overhead in dividing the work, queueing up extra threads, delays from the endpoint being called, etc.
 - High number (for example, 50) might not necessarily make things go faster
 
-![A screenshot of a computer  Description automatically generated](media/image11.png)
+:::image type="content" source="media/concurrency-control.png" alt-text="A screenshot of configuring the concurrency control in an Apply to each action":::
 
 Some other real-world scenarios where this approach is applicable:​
 
 - Sending individual emails to many recipients​
 - Updating records in Dataverse, SharePoint Lists, SQL​
-- Bulk creating users in Microsoft Entra ID
-- Creating parallelized approvals ([more details](https://flow.microsoft.com/blog/advanced-flow-of-the-week-send-parallel-approval-requests-to-a-dynamic-set-of-approvers/))​
-- Fanning out operations in SharePoint ([more details](http://johnliu.net/blog/2018/2/serverless-parallelism-in-microsoft-flow-and-sharepoint))​
+- Creating users in Microsoft Entra ID in bulk
+- [Creating parallelized approvals](https://flow.microsoft.com/blog/advanced-flow-of-the-week-send-parallel-approval-requests-to-a-dynamic-set-of-approvers/)
 
 Here's a comparison of the impact of concurrency control for array processing within for each loop.
 
@@ -76,4 +72,4 @@ Here's a comparison of the impact of concurrency control for array processing wi
 | **4 ​**            | 4 ​                         | 6 seconds ​                  |
 | **4 ​**            | 6 ​                         | 6 seconds ​                  |
 
-Concurrency control for `Apply to each` actions only take effect on the highest level in the cloud flow. When nesting `Apply to each` actions, the inner actions always execute serially.
+Concurrency controls for `Apply to each` actions only take effect on the highest level in the cloud flow. When nesting `Apply to each` actions, the inner actions always execute serially.
