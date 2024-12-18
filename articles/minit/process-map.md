@@ -167,17 +167,17 @@ The following properties can be set in the advanced settings of the process map:
 
 - Highlight the activities that go before and after the activity being presently monitored.
 
-## Export a process map
+## Export a process map or social map
 
-A process map can be converted and exported into a BPMN 2.0 compliant format that allows you to work with the map in any standard BPMN modeling tool.
+A process map or a social map can be converted and exported into:
 
-A process or social map can also be exported as:
+- BPMN 2.0 compliant format that allows you to work with the map in any standard BPMN modeling tool (you can choose a BPMN format with or without gateways).
 
 - PNG image
 
-- XML file containing a list of activities and edges (for processing in any 3rd party tools)
+- XML file containing a list of activities / resources and edges (for processing in any 3rd party tools)
 
-To export process map, select **Export process map** on the menu at the top, and then make your selection.
+To export process map or social map, select **Export process map** on the menu at the top, and then make your selection.
 
 ## Social chart
 
