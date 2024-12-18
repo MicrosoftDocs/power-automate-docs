@@ -27,7 +27,7 @@ Power Automate allows you to create and enforce DLP policies that classify deskt
 
 > [!IMPORTANT]
 >
-> - Enforcement of DLP policies only for [Managed Environments](/power-platform/admin/managed-environment-overview) announced to start January 2025 is on hold. With the new advanced DLP capabilities, we will revisit and communicate by mid-June 2025 on how Desktop flow DLP policies apply to Manage and Unmanaged environments.
+> - DLP policy enforcement for desktop flows is available in all environments.
 > - DLP for desktop flows is available for versions of Power Automate for desktop 2.14.173.21294 or later. If you're using an earlier version, uninstall it and update to the latest version.
 
 ### View desktop flow action groups
