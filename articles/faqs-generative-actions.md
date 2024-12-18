@@ -16,7 +16,7 @@ These frequently asked questions (FAQ) describe the AI impact of the generative 
 
 ## What are generative actions?
 
-Generative actions are a new type of automation that's authored, tested, and executed through an AI runtime. You specify only the intent of the automation and the AI chooses the right set of actions in the right order based on your input, context, and intent.
+Generative actions are a new type of action that's authored, tested, and executed through an AI runtime. You specify only the intent of the automation and the AI chooses the right set of actions in the right order based on your input, context, and intent.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
