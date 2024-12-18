@@ -3,7 +3,7 @@ title: Data loss prevention (DLP) policy creation
 description: Learn about data loss prevention policies for Power Automate.
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 11/04/2024
+ms.date: 12/18/2024
 ms.author: cgarty
 author: ChrisGarty
 contributors:
