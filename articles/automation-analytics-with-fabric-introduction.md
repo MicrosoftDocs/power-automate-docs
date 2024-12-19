@@ -40,6 +40,10 @@ The Link to Microsoft Fabric feature built into Power Platform makes all your Dy
 
 In this guide, we walk you through the process of using Dataverse shortcuts within Microsoft Fabric to create powerful data analytics solutions. By the end of this guide, you have the foundational skills and architectural understanding needed to build sophisticated data queries, generate insightful reports, design interactive dashboards, and set up proactive alerts to seamlessly monitor your data at scale.
 
+> [!NOTE]
+>
+> As per [this documentation](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric), it might take up to **60 minutes** to update data in OneLake including the conversion to delta parquet format. If you selected a table that contains a lot of data, the initial load time might take longer. When you open Fabric lakehouse, the links appear as **unidentified** until the initial sync is completed. More information: [Troubleshooting common issues](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#troubleshooting-common-issues)
+
 ## Prerequisites
 
 Before you continue, ensure you meet the following prerequisites:
