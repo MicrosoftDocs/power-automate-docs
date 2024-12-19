@@ -58,10 +58,3 @@ Before you continue, ensure you meet the following prerequisites:
 
 > [!div class="nextstepaction"]
 > [Crafting automation-related queries with Fabric](automation-analytics-with-fabric-queries.md)
-
-## Learn more
-
-- [Crafting automation-related queries with Fabric](automation-analytics-with-fabric-queries.md)
-- [Building custom Power BI reports for data insights in Fabric](automation-analytics-with-fabric-reports.md)
-- [Designing an automation-centric Fabric warehouse](automation-analytics-with-fabric-warehouse.md)
-- [Setting up real-time alerts with Reflex for proactive monitoring](automation-analytics-with-fabric-alerts.md)

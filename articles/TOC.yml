@@ -1127,12 +1127,6 @@
       href: automation-analytics-with-fabric-introduction.md
     - name: Crafting automation-centric ad-hoc queries
       href: automation-analytics-with-fabric-queries.md
-    - name: Designing automation-centric warehouse
-      href: automation-analytics-with-fabric-warehouse.md
-    - name: Building automation-centric reports
-      href: automation-analytics-with-fabric-reports.md
-    - name: Setting up real-time alerts with Reflex
-      href: automation-analytics-with-fabric-alerts.md      
   - name: Capacity utilization
     items:
     - name: Introduction to capacity utilization (preview)

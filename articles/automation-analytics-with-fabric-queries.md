@@ -1,6 +1,6 @@
 ---
 title: Crafting automation-related queries with Fabric
-description: Learn how to configure Dataverse shortcuts in Microsoft Fabric to build advanced automation-related queries, reports, and alerts at scale. 
+description: Learn how to query automation-related Dataverse data in Microsoft Fabric
 ms.topic: conceptual
 ms.date: 11/06/2024
 ms.author: appapaio
@@ -16,7 +16,6 @@ search.audienceType:
 ---
 
 ## Crafting automation-related queries with Fabric
-
 
 > [!NOTE]
 >
@@ -556,15 +555,3 @@ This query returns the top 10 failing actions by number of errors over the past 
     ORDER BY OccurrenceCount DESC;  
     
 ```
-
-## What's next
-
-> [!div class="nextstepaction"]
-> [Designing an automation-centric Fabric warehouse](automation-analytics-with-fabric-warehouse.md)
-
-## Learn more
-
-- [Automation-centric data analytics with Fabric](automation-analytics-with-fabric-introduction.md)
-- [Building custom Power BI reports for data insights in Fabric](automation-analytics-with-fabric-reports.md)
-- [Designing an automation-centric Fabric warehouse](automation-analytics-with-fabric-warehouse.md)
-- [Setting up real-time alerts with Reflex for proactive monitoring](automation-analytics-with-fabric-alerts.md)
