@@ -52,7 +52,7 @@ Before you continue, ensure you meet the following prerequisites:
 5. (Optional) Select Lakehouse settings and rename your Lakehouse to a more meaningful name, such as "contoso_westus_accounts_payable," and provide a brief description. This helps others quickly identify the specific automations and data being processed in the Lakehouse.
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/lakehouse-renaming.png" alt-text="Screenshot of the Fabric interface with details such as name, description, location, and ownership of a lakehouse." lightbox="media/advanced-automation-related-data-analytics-fabric/lakehouse-renaming.png":::
 6. (Optional) Link other Dataverse environments within the same geographical region to Fabric to create cross-environment analytical solutions.
-7. (Optional) If you plan to follow the advanced section for [Desktop flow action log-level analytics](automation-analytics-with-fabric-queries.md#governance-related-query-examples-for-v2-action-logs), ensure that [**Desktop Flow Logs V2**](./desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
+7. (Optional) If you plan to follow the advanced section for [Desktop flow action log-level analytics](automation-analytics-with-fabric-queries.md#governance-related-query-examples-for-v2-action-logs), ensure that [**Desktop Flow Logs V2**](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
 
 ## What's next
 
