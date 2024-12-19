@@ -854,6 +854,11 @@
       "source_path": "articles/faqs-process-mining-m365-personal-recommendations.md",
       "redirect_url": "/power-automate/process-mining-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/win-copilot-plug-in.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
     }
   ]
 }
