@@ -22,29 +22,21 @@ When creating cloud flows in Power Automate, it's important to secure sensitive 
 
 ### Avoid Hardcoding Sensitive Information
 
-1. **Dynamic Data Handling**: Avoid embedding sensitive information, such as passwords or API keys, directly in your flow. Hardcoding these details can expose them to anyone with access to the flow, increasing the risk of data breaches.
+1. **Dynamic Data Handling**: Avoid embedding sensitive information, such as passwords or API keys, directly in your flow. Power Automate gives users ability to view flow run history and deep dive into a trigger or action’s inputs and outputs information. Hardcoding these details can expose them to anyone with access to the flow, increasing the risk of data breaches.
 
-1. **Environment Variables**: Use environment variables to store sensitive information. This approach allows you to manage and update these values centrally without modifying the flow itself.
+1. **Environment Variables**: Use environment variables to store sensitive information. This approach allows you to manage and update these values centrally without modifying the flow itself. You can use [environment variables for Azure Key Vault secrets](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets)
 
 ### Using Azure Key Vault
 
 1. **Centralized Secret Management**: Azure Key Vault is a cloud service for securely storing and accessing secrets, keys, and certificates. It provides a centralized solution for managing sensitive information, ensuring that your data is encrypted and access is tightly controlled.
 
-1. **Integration with Power Automate**: Power Automate can integrate with Azure Key Vault using the Key Vault connector. This allows your flows to retrieve secrets dynamically during execution, without exposing them in the flow design.
+1. **Integration with Power Automate**: Power Automate can integrate with Azure Key Vault using the [Azure Key Vault](/connectors/keyvault/) connector or by using [environment variables for Azure Key Vault secrets](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets). Using the connector or environment variables allows your flows to retrieve secrets dynamically during execution, without exposing them in the flow design.
 
-1. **Role-Based Access Control (RBAC)**: Access to Azure Key Vault is managed using RBAC via Entra ID, ensuring that only authorized users and applications can access the stored secrets.
-
-### Steps to Use Azure Key Vault in Power Automate
-
-1. **Set Up Azure Key Vault**: Create a Key Vault in Azure and add your secrets, such as API keys or passwords.
-
-1. **Configure the Key Vault Connector**: In Power Automate, add the Azure Key Vault connector to your flow. Use the connector to retrieve secrets from the Key Vault during flow execution.
-
-1. **Secure Inputs and Outputs**: Enable the Secure Inputs and Outputs options in your flow actions to prevent sensitive data from being logged or exposed in the run history.
+1. **Role-Based Access Control (RBAC)**: Access to Azure Key Vault is managed using RBAC via Microsoft Entra ID, ensuring that only authorized users and applications can access the stored secrets.
 
 ## Using Secure Inputs/Outputs
 
-The **Secure Inputs and Outputs** feature in Power Automate is designed to protect sensitive data within your flows. When enabled, this feature ensures that sensitive information, such as passwords and personal data, is not visible in the run history or logs. This is important for maintaining data privacy and security.
+The **Secure Inputs and Outputs** feature in Power Automate is designed to protect sensitive data within your flows. When enabled, this feature ensures that sensitive information, such as passwords and personal data, isn't visible in the run history or logs and helps maintain data privacy and security.
 
 The key benefits of using secure inputs and outputs are:
 
@@ -52,18 +44,18 @@ The key benefits of using secure inputs and outputs are:
 
 1. **Compliance**: Helps meet regulatory requirements by safeguarding sensitive information, which is essential for compliance with data protection laws.
 
-1. **Enhanced Security**: By hiding sensitive data, this feature reduces the risk of data breaches and unauthorized access.
+1. **Enhanced Security**: This feature reduces the risk of data breaches and unauthorized access by hiding sensitive data.
 
 ### How to Enable Secure Inputs and Outputs
 
 1. **Access Action Settings**:
-   - In the flow editor, click on the ellipsis on the action you want to secure.
+   - In the flow editor, select on the ellipsis on the action you want to secure.
    - Select **Settings**.
 
 2. **Enable Secure Options**:
    - Toggle on the **Secure Inputs** and **Secure Outputs** options.
-   ![A screenshot of enabling secure inputs and outputs](media/image71.png)
-   - Click **Done**. A lock icon will appear on the action, indicating that secure handling is enabled.
+   :::image type="content" source="media/secure-inputs.png" alt-text="A screenshot of enabling secure inputs and outputs"::: 
+   - Select **Done**. A lock icon appears on the action, indicating that secure handling is enabled.
 
 Learn more: [Manage sensitive input like passwords](/power-automate/how-tos-use-sensitive-input)
 
@@ -71,23 +63,22 @@ Learn more: [Manage sensitive input like passwords](/power-automate/how-tos-use-
 
 The **When an HTTP request is received** trigger allows you to initiate workflows by sending an HTTP request to the endpoint generated by the flow. To ensure that only authorized users can trigger this workflow, you can implement several security measures.
 
-One approach is to use an Azure Active Directory (AAD) token. This token can be configured to restrict access to specific users or principals within a tenant, or to any user within the tenant. By requiring an AAD token, you ensure that only authenticated users can trigger the workflow.
+One approach is to use a Microsoft Entra ID token. This token can be configured to restrict access to specific users or principals within a tenant, or to any user within the tenant. By requiring a Microsoft Entra ID token, you ensure that only authenticated users can trigger the workflow.
 
 **How to Implement**:
 
-- Configure your flow to require an AAD token for authentication.
+- Configure your flow to require a Microsoft Entra ID token for authentication.
 - Define the token to restrict access to specific users or groups within your tenant.
 
-![A screenshot of selecting who can trigger the flow](media/image74.png)
+:::image type="content" source="media/when-http.png" alt-text="A screenshot of selecting who can trigger the flow"::: 
 
 Learn more: [OAuth authentication](/power-automate/oauth-authentication) 
 
-Another approach is to use IP-Pinning. Environment admins can configure a set or range of IP addresses that are allowed to interact with Power Platform resources. This ensures that only requests from specified IP addresses can trigger the workflow.
+Another approach is to use IP-Pinning. Environment admins can configure a set or range of IP addresses that are allowed to interact with Power Platform resources. Configuring this feature ensures that only requests from specified IP addresses can trigger the workflow.
 
 **How to Implement**:
 
 - Set up IP restrictions in your Power Platform environment.
 - Define the allowed IP addresses or ranges that can access the HTTP request trigger.
-
 
 Learn more: [IP firewall in Power Platform environments](/power-platform/admin/ip-firewall)

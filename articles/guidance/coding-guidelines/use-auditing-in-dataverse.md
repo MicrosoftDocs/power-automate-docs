@@ -18,13 +18,17 @@ search.audienceType:
 
 ## Manage Dataverse auditing
 
-The Dataverse auditing feature is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. Audit History tab for a single record and in the Audit Summary view for all audited operations in a single environment. Audit logs can also be retrieved using the web API or the SDK for .NET. You can enabling auditing on the workflows and connection reference tables to gain more visibility into changes that are made.
+The Dataverse auditing feature is designed to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises. Dataverse auditing logs changes that are made to customer records in an environment with a Dataverse database. Dataverse auditing also logs user access through an app or through the SDK in an environment.
+
+Audit logs can be viewed in the **Audit History** tab for a single record and in the **Audit Summary** view for all audited operations in a single environment. Audit logs can also be retrieved using the web API or the SDK for .NET. Audit logs are created when there are changes to the record on a table where auditing is turned on. Audit logs for updates are created when a new value is different from the old value of a column.
+
+You can enable auditing on the **workflows** and **connection reference** tables to gain more visibility into changes that are made.
 
 Audit logs help administrators and other privileged users to answer questions like:
 
 - Who created or updated a record and when?
 - Which fields in a record were updated?
--  What was the previous field value before the update?
+- What was the previous field value before the update?
 - Who was accessing the system and when?
 - Who deleted a record?
 

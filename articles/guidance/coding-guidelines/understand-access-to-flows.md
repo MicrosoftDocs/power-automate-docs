@@ -18,24 +18,24 @@ search.audienceType:
 
 ## Ownership of Flows (Service Principal vs User) 
 
-When managing Power Automate flows, the choice between using a Service Principal Name (SPN) or a user account as the flow owner is important. Using an SPN for flow ownership offers consistency and security, as SPNs are not tied to individual users, ensuring that flows continue running smoothly even if personnel changes occur. This setup reduces the risk of disruptions and allows for stricter control over permissions, as SPNs can be granted only the necessary access.
+When managing Power Automate flows, the choice between using a Service Principal Name (SPN) or a user account as the flow owner is important. SPNs aren't tied to individual users, ensuring that flows can continue running smoothly even if personnel changes happen. This setup reduces the risk of disruptions and allows for stricter control over permissions, as SPNs can be granted only the necessary access.
 
 ### Service Principal Name (SPN) ownership
 
 Advantages of Service Principal Name (SPN) ownership:
 
-- **Consistency**: SPNs are not tied to individual users, ensuring that flows continue to run smoothly even if there are personnel changes. This provides a stable and consistent ownership model.
+- **Consistency**: SPNs aren't tied to individual users, ensuring that flows continue to run smoothly even if there are personnel changes. This configuration provides a stable and consistent ownership model.
 - **Security**: Using an SPN enhances security by allowing for stricter control over permissions. SPNs can be granted only the necessary access, reducing the risk of unauthorized actions.
 - **Scalability**: SPNs are better suited for managing automated tasks across large environments, especially in scenarios involving multiple flows or environments.
 - **Compliance**: Using SPNs can help maintain compliance, as they provide a clearer audit trail of actions taken by the flow, independent of specific users.
-- **Reduced Disruptions**: Since SPNs are not affected by user account changes (such as employees leaving the organization), there is a lower risk of disruptions to the flow operations.
+- **Reduced Disruptions**: Since SPNs aren't affected by user account changes (such as employees leaving the organization), there's a lower risk of disruptions to the flow operations.
 - **Centralized Management**: SPNs allow for centralized management of flow permissions and access, making it easier to maintain and audit security policies.
 
 ### User account ownership
 
 Advantages of user account ownership:
 
-- **Ease of setup**: Flows can be created and owned by users with minimal setup, making it easier for users to develop and manage their own flows.
+- **Ease of setup**: Users can create and own flows with minimal setup, making it easier for users to develop and manage their own flows.
 - **Human interaction**: If the flow involves tasks that require human approval, decision-making, or interaction, using a user account might be more appropriate.
 - **Personalized context**: Flows owned by users can run in the context of that user, utilizing their permissions and settings
 
@@ -55,10 +55,10 @@ Adding a [co-owner](/power-automate/create-team-flows) to a cloud flow is the mo
 - Add or remove other owners (but not the flow's creator), including guest users.
 - Delete the flow.
 
-Only add co-owners for flow collaborations as needed. In most cases, if flow needs to be shared, share the flow with run-only permissions, which will restrict the users to view flow run history or make any changes to the flows.  This will also allow users to specify whether the flow will use the connections of the user invoking the flow or the inbuilt connections of the user or account creating the flow. Learn more: [Share a cloud flow](/power-automate/create-team-flows)
+Only add co-owners for flow collaborations as needed. In most cases, if flow needs to be shared, share the flow with run-only permissions, which restricts the users from viewing the flow run history or making any changes to the flows. Sharing flows also allows the owner to specify whether the flow uses the connections of the user invoking the flow or the inbuilt connections of the user or account creating the flow. Learn more: [Share a cloud flow](/power-automate/create-team-flows)
 
 ## Configuring security roles for appropriate access
 
 In addition to assigning users as co-owners, certain users can access flows based on their security roles on Workflow tables or their role as environment admins.
 
-Generally, users with full access to Workflow tables can edit any flow and view any run history. Likewise, environment admins will always have full access to edit workflows and view all the data that flows through them.
+Generally, users with full access to Workflow tables can edit any flow and view any run history. Likewise, environment admins always have full access to edit workflows and view all the data that flows through them.
