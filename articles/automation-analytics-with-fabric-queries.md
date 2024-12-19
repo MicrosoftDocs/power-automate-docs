@@ -15,7 +15,7 @@ search.audienceType:
   - enduser
 ---
 
-## Crafting automation-related queries with Fabric
+# Crafting automation-related queries with Fabric
 
 > [!NOTE]
 >
@@ -30,7 +30,7 @@ The following table includes automation-related tables that are frequently used 
 | [Process](/power-apps/developer/data-platform/reference/entities/workflow) | workflow         | Contains desktop flows and solution-based cloud flows (along with other workflow types). |
 | [Flow Session](/power-apps/developer/data-platform/reference/entities/flowsession) | flowsession | Contains desktop flow run-related data such as start, durations, status, machine, robot account, parent flow context etc.     |
 | [Flow Run](/power-apps/developer/data-platform/reference/entities/flowrun) | flowrun  | Contains cloud flow run-related data such start, end, duration, parent flow context etc. |
-| [Flow Log](/power-apps/developer/data-platform/reference/entities/flowlog) | flowlog  | Contains a wide variety of logs, such as custom logs, [desktop flow action logs V2](./desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version), [machine run queue logs](./desktop-flows/monitor-run-details#view-queue-events), unattended self-heal requests/responses, and work queue processing logs etc. The data is stored in a [Dataverse elastic table](/power-apps/maker/data-platform/create-edit-elastic-tables), and depending on the log type, can be configured with its own [time-to-live (TTL)](/power-apps/developer/data-platform/elastic-tables#expire-data-by-using-time-to-live) setting in the [Organization table](/power-apps/developer/data-platform/reference/entities/organization#writable-columnsattributes) ([FlowLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowLogsTtlInMinutes) and [DesktopFlowQueueLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes)), which defines when records should be automatically deleted from the table. |
+| [Flow Log](/power-apps/developer/data-platform/reference/entities/flowlog) | flowlog  | Contains a wide variety of logs, such as custom logs, [desktop flow action logs V2](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version), [machine run queue logs](/power-automate/desktop-flows/monitor-run-details#view-queue-events), unattended self-heal requests/responses, and work queue processing logs etc. The data is stored in a [Dataverse elastic table](/power-apps/maker/data-platform/create-edit-elastic-tables), and depending on the log type, can be configured with its own [time-to-live (TTL)](/power-apps/developer/data-platform/elastic-tables#expire-data-by-using-time-to-live) setting in the [Organization table](/power-apps/developer/data-platform/reference/entities/organization#writable-columnsattributes) ([FlowLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowLogsTtlInMinutes) and [DesktopFlowQueueLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes)), which defines when records should be automatically deleted from the table. |
 | [Flow Machine](/power-apps/developer/data-platform/reference/entities/flowmachine) | flowmachine  | Contains machine and hosted machine-related info. |
 | [Flow Machine Group](/power-apps/developer/data-platform/reference/entities/flowmachinegroup) | flowmachinegroup | Contains machine group and hosted machine group-related info.  |
 | [Work Queue](/power-apps/developer/data-platform/reference/entities/workqueue) | workqueue  | Represents an instance of a workflow execution.  |
@@ -268,7 +268,7 @@ This query detects desktop flows that include scripting actions using SAP's inte
 
 #### Potential SQL injection risk
 
-This query detects desktop flows that contain scripts potentially vulnerable to SQL injection by searching for the use of `database.executesqlstatement.execute` within the flow definitions. Consider a scenario where, instead of directly writing the SQL code in the [Execute SQL statement action](./desktop-flows/actions-reference/database#executesqlstatement), the script is configured to use a Power Automate desktop input variable (for example, *%LetsDeleteAllGeneralLedgerEntriesFromDB%*) that is provided to the script during runtime. This could pose a significant SQL injection risk.
+This query detects desktop flows that contain scripts potentially vulnerable to SQL injection by searching for the use of `database.executesqlstatement.execute` within the flow definitions. Consider a scenario where, instead of directly writing the SQL code in the [Execute SQL statement action](/power-automate/desktop-flows/actions-reference/database#executesqlstatement), the script is configured to use a Power Automate desktop input variable (for example, *%LetsDeleteAllGeneralLedgerEntriesFromDB%*) that is provided to the script during runtime. This could pose a significant SQL injection risk.
 
 :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/execute-sql-statmenet-risk.png" alt-text="Screenshot of an 'Execute SQL statement' configuration dialog in Power Automate desktop." lightbox="media/advanced-automation-related-data-analytics-fabric/execute-sql-statmenet-risk.png":::
 
@@ -392,7 +392,7 @@ This query searches for desktop flows that lack any error handling mechanisms, s
 
 > [!NOTE]
 >
-> Before you continue with this section, ensure that [**Desktop Flow Logs V2**](./desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in your environment and that you have existing desktop flow runs.
+> Before you continue with this section, ensure that [**Desktop Flow Logs V2**](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in your environment and that you have existing desktop flow runs.
 
 #### Desktop flow runs with restricted URL access
 
