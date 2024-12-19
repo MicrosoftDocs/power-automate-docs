@@ -1234,8 +1234,10 @@
         href: use-cds-for-apps-dialogs.md
       - name: Replace classic Dataverse dialogs
         href: replace-dialogs.md
-- name: Learn from others
+- name: Resources
   items:
+  - name: Microsoft Credentials: Microsoft Power Platform
+    href: https://learn.microsoft.com/credentials/browse/?products=power-platform
   - name: Webinars
     href: webinars.md
   - name: Blog
