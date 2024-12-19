@@ -38,7 +38,7 @@ The Link to Microsoft Fabric feature built into Power Platform makes all your Dy
 
 ## Get started
 
-In this guide, we'll walk you through the process of using Dataverse shortcuts within Microsoft Fabric to create powerful data analytics solutions. By the end of this guide, you'll have the foundational skills and architectural understanding needed to build sophisticated data queries, generate insightful reports, design interactive dashboards, and set up proactive alerts to seamlessly monitor your data at scale.
+In this guide, we walk you through the process of using Dataverse shortcuts within Microsoft Fabric to create powerful data analytics solutions. By the end of this guide, you have the foundational skills and architectural understanding needed to build sophisticated data queries, generate insightful reports, design interactive dashboards, and set up proactive alerts to seamlessly monitor your data at scale.
 
 ## Prerequisites
 
@@ -47,11 +47,11 @@ Before you continue, ensure you meet the following prerequisites:
 1. Have a basic understanding of data modeling, Power Automate, Dataverse, and the Fabric ecosystem.
 2. Have access to a Dataverse environment (in the same region as your Fabric capacity) with a Power Automate premium license, (ideally) existing cloud, and desktop flow runs, and System Administrator role in this environment.
 3. Ensure that you meet the [**prerequisites**](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#prerequisites) before linking your Dataverse environment with Fabric.
-4. Follow [**these steps**](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric) to link your Dataverse environment with Microsoft Fabric. After the environment has been linked, you will see a Lakehouse, a semantic model, and an SQL analytics endpoint. These are prefixed with "dataverse," followed by your environment name and a unique environment suffix, such as `dataverse_contosousap_cds2_workspace_unq111111111111111111111111`.
+4. Follow [**these steps**](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric) to link your Dataverse environment with Microsoft Fabric. After the environment has been linked, you'll see a Lakehouse, a semantic model, and an SQL analytics endpoint. These are prefixed with "Dataverse," followed by your environment name and a unique environment suffix, such as `dataverse_contosousap_cds2_workspace_unq111111111111111111111111`.
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/fabric-workspace-with-lakehouse.png" alt-text="Screenshot of Fabric workspace showing a Dataverse-related lakehouse and other artifacts." lightbox="media/advanced-automation-related-data-analytics-fabric/fabric-workspace-with-lakehouse.png":::
-5. (Optional) Select Lakehouse settings and rename your Lakehouse to a more meaningful name, such as "contoso_westus_accounts_payable," and provide a brief description. This will help others quickly identify the specific automations and data being processed in the Lakehouse.
+5. (Optional) Select Lakehouse settings and rename your Lakehouse to a more meaningful name, such as "contoso_westus_accounts_payable," and provide a brief description. This helps others quickly identify the specific automations and data being processed in the Lakehouse.
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/lakehouse-renaming.png" alt-text="Screenshot of the Fabric interface with details such as name, description, location, and ownership of a lakehouse." lightbox="media/advanced-automation-related-data-analytics-fabric/lakehouse-renaming.png":::
-6. (Optional) Link additional Dataverse environments within the same geographical region to Fabric to create cross-environment analytical solutions.
+6. (Optional) Link other Dataverse environments within the same geographical region to Fabric to create cross-environment analytical solutions.
 7. (Optional) If you plan to follow the advanced section for [Desktop flow action log-level analytics](automation-analytics-with-fabric-queries.md#governance-related-query-examples-for-v2-action-logs), ensure that [**Desktop Flow Logs V2**](./desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version) has been enabled in that environment and you have existing desktop flow runs.
 
 ## What's next
