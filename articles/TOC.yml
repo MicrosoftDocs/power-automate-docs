@@ -1236,7 +1236,7 @@
         href: replace-dialogs.md
 - name: Resources
   items:
-  - name: "Microsoft Credentials: Microsoft Power Platform"
+  - name: Microsoft Credentials for Power Platform
     href: /credentials/browse/?products=power-platform
   - name: Webinars
     href: webinars.md
