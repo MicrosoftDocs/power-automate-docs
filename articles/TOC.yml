@@ -1135,7 +1135,7 @@
     items:
     - name: Overview
       href: automation-analytics-with-fabric-introduction.md
-    - name: Crafting automation-centric ad-hoc queries
+    - name: Create ad-hoc queries
       href: automation-analytics-with-fabric-queries.md
   - name: Capacity utilization
     items:

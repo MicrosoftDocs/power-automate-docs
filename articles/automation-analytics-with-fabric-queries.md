@@ -245,7 +245,7 @@ This query finds all desktop flows that use (OLEDB) database connection strings 
 
 #### Potential SQL injection risk
 
-The query detects desktop flows that contain scripts potentially vulnerable to SQL injection by searching for the use of `database.executesqlstatement.execute` within the flow definitions. Consider a scenario where, instead of directly writing the SQL code in the [Execute SQL statement action](/power-automate/desktop-flows/actions-reference/database#executesqlstatement), the script uses a Power Automate desktop input variable (for example, *%LetsDeleteAllGeneralLedgerEntriesFromDB%*) provided to the script during runtime. Such a scenario could pose a significant SQL injection risk.
+The query detects desktop flows that contain scripts potentially vulnerable to SQL injection by searching for the use of `database.executesqlstatement.execute` within the flow definitions. Consider a scenario where, instead of directly writing the SQL code in the [Execute SQL statement action](/power-automate/desktop-flows/actions-reference/database#executesqlstatement), the script uses a Power Automate desktop input variable (for example, *%LetsDeleteAllGeneralLedgerEntriesFromDB%*) provided to the script during runtime.
 
 :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/execute-sql-statmenet-risk.png" alt-text="Screenshot of an 'Execute SQL statement' configuration dialog in Power Automate desktop." lightbox="media/advanced-automation-related-data-analytics-fabric/execute-sql-statmenet-risk.png":::
 
