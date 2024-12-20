@@ -17,7 +17,7 @@ search.audienceType:
 
 # Automation-centric data analytics with Fabric
 
-Power Automate offers built-in monitoring and troubleshooting to help organizations manage operations, view trends, and access recommendations through features like the [Automation Center](automation-center-overview.md) and [Desktop Flow Activity](desktop-flow-activity.md).
+Power Automate offers built-in monitoring and troubleshooting to help organizations manage operations, view trends, and access recommendations through features like the [Automation Center](automation-center-overview.md) and [Desktop Flow Activity](desktop-flows/desktop-flow-activity.md).
 
 However, your organization likely has more advanced or custom monitoring, reporting, and analysis needs that aren't covered within the product today. One key strength of the Power Platform is its native integrations with other low-code tools and platforms like Power BI, Microsoft Fabric, and Azure. Organizations can develop sophisticated, scalable, and compliant analytics solutions using data from Power Automate and other sources.
 
