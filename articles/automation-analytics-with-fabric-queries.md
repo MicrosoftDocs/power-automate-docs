@@ -35,7 +35,7 @@ The following table lists automation-related tables frequently used for reportin
 | [Flow Machine Group](/power-apps/developer/data-platform/reference/entities/flowmachinegroup) | flowmachinegroup | Contains machine group and hosted machine group-related info.  |
 | [Work Queue](/power-apps/developer/data-platform/reference/entities/workqueue) | workqueue  | Represents an instance of a workflow execution.  |
 | [Work Queue Item](/power-apps/developer/data-platform/reference/entities/workqueueitem)  | workqueueitem  | Contains information about each run of a workflow.|
-| [User](/power-apps/developer/data-platform/reference/entities/systemuser)   | systemuser | Represents an instance of a workflow execution. |
+| [User](/power-apps/developer/data-platform/reference/entities/systemuser)   | systemuser | Represents the Dataverse user. |
 
 ### Simplified table relationship diagram
 
@@ -241,28 +241,6 @@ This query finds all desktop flows that use (OLEDB) database connection strings 
         w.category = 6  
         AND w.definition IS NOT NULL  
         AND (LOWER(w.definition) LIKE '%;password=%');
-```
-
-#### Potential sensitive data loss or exfiltration risk
-
-This query detects desktop flows that include scripting actions using SAP's internal GUI scripting engine. If this is unexpected, these scripts might pose risks of data loss or exfiltration, as they could access or manipulate sensitive information and unintentionally or maliciously alter or expose it.
-
-```sql
-    SELECT   
-        workflowid AS 'Desktop flow Id',  
-        name AS 'Desktop flow',  
-        definition  AS 'Script'
-    FROM   
-        workflow  
-    WHERE   
-        (definition LIKE '%System.RunVBScript%'   
-          OR definition LIKE '%System.RunPowershellScript%'   
-          OR definition LIKE '%System.RunJavascript%'   
-          OR definition LIKE '%System.RunDotNetScript%'   
-          OR definition LIKE '%System.RunPythonScript%')  
-        AND definition LIKE '%SapGuiAuto.GetScriptingEngine%'  
-    ORDER BY   
-        workflowid;  
 ```
 
 #### Potential SQL injection risk
