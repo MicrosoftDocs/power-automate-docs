@@ -45,7 +45,7 @@ Copilot in desktop flows allows you to analyze desktop flow activity. With this 
 
 - [Use Copilot to analyze desktop flow activity (preview)](desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)
 - [Use the Power Automate plug-in for Windows Copilot (preview)](desktop-flows/win-copilot-plug-in.md)
-- [Use Copilot to get answers to product-related questions](desktop-flows/copilot-in-power-automate-for-desktop.md#how-to-use-copilot-to-get-answers-to-product-related-questions-preview)
+- [Use Copilot to get answers to product-related questions](desktop-flows/copilot-in-power-automate-for-desktop.md#use-copilot-to-get-answers-to-product-related-questions-preview)
 
 ## Copilot in automation center
 
