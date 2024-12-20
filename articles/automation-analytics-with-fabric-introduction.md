@@ -65,4 +65,4 @@ Before you continue, ensure you meet the following prerequisites:
 ## What's next
 
 > [!div class="nextstepaction"]
-> [Crafting automation-related queries with Fabric](automation-analytics-with-fabric-queries.md)
+> [Create automation-related queries with Fabric](automation-analytics-with-fabric-queries.md)
