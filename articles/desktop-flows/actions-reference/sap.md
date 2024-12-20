@@ -1,10 +1,10 @@
 ---
-title: SAP GUI actions reference for Power Automate for desktop
-description: Learn about the available SAP GUI actions in Power Automate for desktop flows.
+title: SAP GUI automation actions reference for Power Automate for desktop
+description: Learn about the available SAP automation actions in Power Automate for desktop flows.
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/09/2024
+ms.date: 12/03/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:

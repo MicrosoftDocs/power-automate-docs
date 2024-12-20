@@ -42,7 +42,7 @@
     items:
     - name: Create a cloud flow from a template
       href: get-started-logic-template.md
-    - name: Create a cloud flow from a description (preview)
+    - name: Create a cloud flow from a description
       href: create-cloud-flow-from-description.md
     - name: Create a cloud flow from scratch
       href: get-started-logic-flow.md
@@ -387,6 +387,8 @@
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
   - name: Create desktop flows using Record with Copilot (preview)
     href: ./desktop-flows/create-flow-using-ai-recorder.md
+  - name: Repair flow automation errors (preview)
+    href: ./desktop-flows/repair-at-runtime.md
   - name: Run desktop flows
     items:
     - name: Run unattended and attended desktop flows from the cloud
@@ -437,6 +439,8 @@
       href: ./desktop-flows/create-azurekeyvault-credential.md
     - name: CyberArk credentials
       href: ./desktop-flows/create-cyberark-credential.md
+    - name: Certificate-based authentication (preview)
+      href: ./desktop-flows/configure-certificate-based-auth.md
   - name: Create desktop flow connections
     href: ./desktop-flows/desktop-flow-connections.md
   - name: Allowlist tenants for connect with sign-in connections
@@ -520,7 +524,7 @@
       href: ./desktop-flows/repair-selector.md  
     - name: Set fallback mechanism for UI element
       href: ./desktop-flows/ui-elements-fallback-mechanism.md  
-  - name: Power Fx in desktop flows (preview)
+  - name: Power Fx in desktop flows
     items:
     - name: Power Fx in desktop flows
       href: ./desktop-flows/power-fx.md
@@ -678,6 +682,8 @@
       href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
     - name: Timeout configuration for UI/browser automation
       href: ./desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md
+    - name: Configure the open terminal session action
+      href: ./desktop-flows/how-to/terminal-emulation-open-new-session.md  
   - name: ALM for desktop flows
     items:
     - name: Overview for configuring ALM for desktop flows
@@ -789,7 +795,7 @@
       href: ./desktop-flows/actions-reference/custommodule.md
     - name: Cloud Connector actions
       href: ./desktop-flows/actions-reference/cloudconnectors.md
-    - name: SAP GUI
+    - name: SAP automation
       href: ./desktop-flows/actions-reference/sap.md
     - name: Power Automate secret variables actions (preview)
       href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
@@ -897,8 +903,12 @@
     items:
     - name: Overview
       href: ./minit/minit-desktop-application-overview.md
-    - name: Download Process Mining desktop app
-      href: ./minit/how-to-start-with-minit-desktop-application.md
+    - name: Installation
+      items:
+      - name: Standard
+        href: ./minit/how-to-start-with-minit-desktop-application.md
+      - name: Custom
+        href: ./minit/process-mining-custom-install.md
     - name: Get started
       items:
       - name: Explore the home page
@@ -1113,7 +1123,7 @@
     href: ./developer/custom-cds-for-apps-workflow-activities.md
 - name: Manage automations
   items:
-  - name: Automation center (preview)
+  - name: Automation center
     items:
     - name: Overview
       href: automation-center-overview.md
@@ -1246,6 +1256,8 @@
     href: responsible-ai-overview.md
   - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
+  - name: FAQ for Copilot expression assistant
+    href: faqs-copilot-expression-assistant.md  
   - name: FAQ for Copilot in automation center
     href: faqs-copilot-automation-center.md
   - name: FAQ for Copilot in desktop flow activity
@@ -1254,6 +1266,8 @@
     href: faqs-copilot-in-process-mining.md
   - name: FAQ for Copilot in Power Automate for desktop
     href: faqs-copilot-in-pad.md
+  - name: FAQ for Repair with Copilot at runtime in Power Automate for desktop
+    href: faqs-repair-copilot.md
   - name: FAQ for generating code with natural language
     href: faqs-copilot-nl-to-code.md
   - name: FAQ for suggested actions in Power Automate for desktop

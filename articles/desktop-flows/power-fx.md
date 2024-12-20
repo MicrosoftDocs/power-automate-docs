@@ -1,10 +1,10 @@
 ---
-title: Power Fx in desktop flows (preview)
+title: Power Fx in desktop flows
 description: Learn about using Power Fx for creating expressions in desktop flows.
 author: nikosmoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/10/2024
+ms.date: 11/7/2024
 ms.author: nimoutzo
 ms.reviewer: dmartens
 contributors: 
@@ -17,22 +17,13 @@ search.audienceType:
 
 # Power Fx in desktop flows
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
 [Power Fx](/power-platform/power-fx/overview) is the low-code language for expressing logic across [Microsoft Power Platform](/power-platform). It's a general-purpose, strong-typed, declarative, and functional programming language.
 
 Power Fx is expressed in human-friendly text. It's a low-code language that makers can work with directly in an Excel-like formula bar or Visual Studio Code text window. The "low" in low-code is due to the concise and simple nature of the language, making common programming tasks easy for both makers and developers.
 
 Power Fx enables the full spectrum of development from no-code makers without any programming knowledge to pro-code for the professional developers. It enables diverse teams to collaborate and save time and efforts.
 
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality.
-> - These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature requires Power Automate for desktop v2.39 or later.
-
-## Using Power Fx in desktop flow (preview)
+## Using Power Fx in desktop flow
 
 To use Power Fx as an expression language in a desktop flow, you have to create a desktop flow and enable the respective toggle button when creating the flow through Power Automate for desktop's console.
 

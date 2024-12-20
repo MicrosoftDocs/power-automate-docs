@@ -4,7 +4,7 @@ description: Learn about the available Cloud Connector operations in Power Autom
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/14/2024
+ms.date: 12/11/2024
 ms.author: iomavrid
 ms.reviewer: 
 contributors:
@@ -17,23 +17,7 @@ search.audienceType:
 
 # Cloud Connectors as Power Automate for desktop actions
 
-> [!IMPORTANT]
-> There are some known connector action issues in older versions of Power Automate for Desktop (versions older than v2.44). If you're using Power Automate for desktop version 2.43 or earlier, you might experience issues where connector actions don't load correctly in desktop flows such as:
-> - connector actions missing from the designer's action panel
-> - "unknown action" errors in desktop flows linked to connector actions
-> - incorrect console initiated executions (local runs) due to cloud connector actions  
->
-> To resolve this issue, update Power Automate for desktop to the latest available version.
->
-> For patched versions of previous releases, refer to the following list:
-> - [2.43](https://go.microsoft.com/fwlink/?linkid=2272572)
-> - [2.42](https://go.microsoft.com/fwlink/?linkid=2272571)  
-> - [2.41](https://go.microsoft.com/fwlink/?linkid=2272390)  
-> - [2.40](https://go.microsoft.com/fwlink/?linkid=2272389)  
-> - [2.39](https://go.microsoft.com/fwlink/?linkid=2272570)
-> - [2.38](https://go.microsoft.com/fwlink/?linkid=2272859)  
-
-[Cloud Connectors available for Power Automate](/connectors/connector-reference/connector-reference-powerautomate-connectors) are gradually introduced for desktop flows as well.
+[Cloud Connectors available for Power Automate](/connectors/connector-reference/connector-reference-powerautomate-connectors) are now available for desktop flows as well.
 
 ## Prerequisites and limitations
 
@@ -46,7 +30,6 @@ search.audienceType:
 - Connection reference embedding is only available for co-owners. Users (run-only) can execute flows shared with them only via Power Automate for desktop's console using their own connections.
 - Desktop flows with embedded connection references don't currently support application lifecycle management (ALM) capabilities.
 - [Microsoft Dataverse](/connectors/commondataserviceforapps) has the following limitations:
-  - The connector is currently available only for desktop flows in the public cloud.
   - The following actions are currently supported in desktop flows:
     - [Add a new row to selected environment](/connectors/commondataserviceforapps/#add-a-new-row-to-selected-environment)
     - [Delete a row from selected environment](/connectors/commondataserviceforapps/#delete-a-row-from-selected-environment)
@@ -57,7 +40,7 @@ search.audienceType:
     - [Perform an unbound action in selected environment](/connectors/commondataserviceforapps/#perform-an-unbound-action-in-selected-environment)
     - [Relate rows in selected environment](/connectors/commondataserviceforapps/#relate-rows-in-selected-environment)
     - [Unrelate rows in selected environment](/connectors/commondataserviceforapps/#unrelate-rows-in-selected-environment)
-    - [Update a row in selected environment](/connectors/commondataserviceforapps/#update-a-row-in-selected-environment)
+    - [Upsert a row in selected environment](/connectors/commondataserviceforapps/#update-a-row-in-selected-environment)
     - [Upload a file or an image to selected environment](/connectors/commondataserviceforapps/#upload-a-file-or-an-image-to-selected-environment)
 - A few connector actions introduced in version 2.49 (both installer and Microsoft Store versions) might fail with the following error during designer, console, and cloud-initiated runs:
 
@@ -68,12 +51,12 @@ search.audienceType:
   - SharePoint:
     - Grant access to an item or a folder
     - Send an HTTP Request to SharePoint
-  - Teams:
+  - Microsoft Teams:
     - Send a Microsoft Graph HTTP Request
   - Office 365 Outlook:
     - Send an HTTP Request
 
-  This issue will be fixed in version 2.50.
+  This issue is fixed in version 2.50.
   
 ## Use files in cloud connector actions
 
@@ -120,7 +103,7 @@ All co-owners and run-only users are required to bring your own connection (BYOC
 
 ## List of cloud connectors
 
-The following is a list of cloud connectors in Power Automate for desktop that are currently available and permanently visible in the actions pane:
+These cloud connectors are added by default to desktop flows in Power Automate for desktop and are always visible in the actions pane:
 
 - [Microsoft Dataverse](/connectors/commondataserviceforapps)
 - [SharePoint](/connectors/sharepointonline)
@@ -134,60 +117,17 @@ The following is a list of cloud connectors in Power Automate for desktop that a
 - [RSS](/connectors/rss)
 - [Word Online (Business)](/connectors/wordonlinebusiness)
 
-More cloud connectors (preview) are available to be added in a desktop flow through the Assets library:
+You can add the rest of the (non-custom) Power Automate cloud connectors to a desktop flow through the [Assets library](../assets-library.md#connectors-tab).
 
-- [Azure Container Instance](/connectors/aci)
-- [Adobe Acrobat Sign](/connectors/adobesign)
-- [Azure Resource Manager](/connectors/arm)
-- [Asana](/connectors/asana)
-- [Microsoft Entra ID](/connectors/azuread)
-- [Azure Data Factory](/connectors/azuredatafactory)
-- [Azure Monitor Logs](/connectors/azuremonitorlogs)
-- [Azure VM](/connectors/azurevm)
-- [Box](/connectors/box)
-- [Content Conversion](/connectors/conversionservice)
-- [Dynamics 365 Customer Insights](/connectors/customerinsights)
-- [Power Query Dataflows](/connectors/dataflows)
-- [Docusign](/connectors/docusign)
-- [Dropbox](/connectors/dropbox)
-- [Fin & Ops Apps (Dynamics 365)](/connectors/dynamicsax)
-- [Dynamics 365 Business Central](/connectors/dynamicssmbsaas)
-- [Excel Online (OneDrive)](/connectors/excelonline)
-- [Power Automate Management](/connectors/flowmanagement)
-- [GitHub](/connectors/github)
-- [Google Calendar](/connectors/googlecalendar)
-- [Google Drive](/connectors/googledrive)
-- [Google Sheets](/connectors/googlesheet)
-- [Google Tasks](/connectors/googletasks)
-- [Azure Data Explorer](/connectors/kusto)
-- [Microsoft 365 message center](/connectors/m365messagecenter)
-- [Microsoft Bookings](/connectors/microsoftbookings)
-- [Power Automate for Admins](/connectors/microsoftflowforadmins)
-- [Dynamics 365 Customer Voice](/connectors/microsoftformspro)
-- [MSN Weather](/connectors/msnweather)
-- [Office 365 Groups](/connectors/office365groups)
-- [Office 365 Groups Mail](/connectors/office365groupsmail)
-- [Office 365 Users](/connectors/office365users)
-- [Outlook.com](/connectors/outlook)
-- [Planner](/connectors/planner)
-- [Power Apps for Admins](/connectors/powerappsforadmins)
-- [Power Apps for Makers](/connectors/powerappsforappmakers)
-- [Power BI](/connectors/powerbi)
-- [Power Platform for Admins](/connectors/powerplatformforadmins)
-- [Project Online](/connectors/projectonline)
-- [Project Roadmap](/connectors/projectroadmap)
-- [Salesforce](/connectors/salesforce)
-- [Shifts for Microsoft Teams](/connectors/shifts)
-- [Smartsheet](/connectors/smartsheet)
-- [Microsoft To-Do (Business)](/connectors/todo)
-- [Trello](/connectors/trello)
-- [X ](/connectors/twitter)
-- [Azure DevOps](/connectors/visualstudioteamservices)
-- [Webex](/connectors/webex)
-- [Viva Engage](/connectors/yammer)
+> [!NOTE]
+> Future updates and additions to non-custom Power Automate connectors and their operations automatically appear in Power Automate for desktop.
 
 ### Known limitations
 
-- Creating a connection for a connector in desktop flows is supported through the sign-in dialog. If an error occurs during this process, you can create a connection through the corresponding [portal page](https://go.microsoft.com/fwlink/?linkid=2286334).
+- Create an Oauth connection for a connector in desktop flows through the sign-in dialog. If an error occurs, create the connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
 
     :::image type="content" source="media/cloudconnectors/connector-banner-warning-to-create-connection-in-portal.png" alt-text="Screenshot of the sign in dialog in connector actions including a banner message" border="false":::
+
+- Creating non-OAuth connections through Power Automate for desktop is supported only for connectors that require you to accept terms of use. For other connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
+
+    :::image type="content" source="media/cloudconnectors/connector-banner-prompt-to-create-connection-in-portal.png" alt-text="Screenshot of the connector actions including a banner message that prompts to create a connection through the portal" border="false":::
