@@ -37,7 +37,13 @@
   - name: Export and import a non-solution flow
     href: export-import-flow-non-solution.md
   - name: Drafts and versioning for cloud flows
-    href: drafts-versioning.md  
+    href: drafts-versioning.md
+  - name: Generative actions (preview)
+    items:
+    - name: Overview
+      href: generative-actions-overview.md
+    - name: Create generative actions
+      href: create-generative-actions.md
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
@@ -1262,6 +1268,8 @@
     href: faqs-copilot-in-pad.md
   - name: FAQ for Repair with Copilot at runtime in Power Automate for desktop
     href: faqs-repair-copilot.md
+  - name: FAQ for generative actions in cloud flows
+    href: faqs-generative-actions.md 
   - name: FAQ for generating code with natural language
     href: faqs-copilot-nl-to-code.md
   - name: FAQ for suggested actions in Power Automate for desktop
