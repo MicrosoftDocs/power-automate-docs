@@ -1,5 +1,5 @@
 ---
-title: Crafting automation-related queries with Fabric
+title: Create automation-related queries with Fabric
 description: Learn how to query automation-related Dataverse data in Microsoft Fabric
 ms.topic: conceptual
 ms.date: 12/19/2024
@@ -15,11 +15,11 @@ search.audienceType:
   - enduser
 ---
 
-# Crafting automation-related queries with Fabric
+# Create automation-related queries with Fabric
 
 > [!NOTE]
 >
-> **Disclaimer:** The scenarios, query examples, and data used in this tutorial are fictional, may include errors, inefficiencies and are intended solely for demonstration purposes.
+> **Disclaimer:** The scenarios, query examples, and data used in this tutorial are fictional, may include errors, inefficiencies, and are intended solely for demonstration purposes.
 
 ## List of automation-related tables
 
@@ -27,15 +27,15 @@ The following table lists automation-related tables frequently used for reportin
 
 | Display name | Object name       |   Purpose                                             |
 |--------------------|------------------|-------------------------------------------------------|
-| [Process](/power-apps/developer/data-platform/reference/entities/workflow) | workflow         | Contains desktop flows and solution-based cloud flows (along with other workflow types). |
-| [Flow Session](/power-apps/developer/data-platform/reference/entities/flowsession) | flowsession | Contains desktop flow run-related data such as start, durations, status, machine, robot account, parent flow context etc.     |
-| [Flow Run](/power-apps/developer/data-platform/reference/entities/flowrun) | flowrun  | Contains cloud flow run-related data such start, end, duration, parent flow context etc. |
 | [Flow Log](/power-apps/developer/data-platform/reference/entities/flowlog) | flowlog  | Contains a wide variety of logs, such as custom logs, [desktop flow action logs V2](/power-automate/desktop-flows/configure-desktop-flow-logs#configure-desktop-flow-action-log-version), [machine run queue logs](/power-automate/desktop-flows/monitor-run-details#view-queue-events), unattended self-heal requests/responses, and work queue processing logs etc. The data is stored in a [Dataverse elastic table](/power-apps/maker/data-platform/create-edit-elastic-tables), and depending on the log type, can be configured with its own [time-to-live (TTL)](/power-apps/developer/data-platform/elastic-tables#expire-data-by-using-time-to-live) setting in the [Organization table](/power-apps/developer/data-platform/reference/entities/organization#writable-columnsattributes) ([FlowLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowLogsTtlInMinutes) and [DesktopFlowQueueLogsTtlInMinutes](/power-apps/developer/data-platform/reference/entities/organization#BKMK_DesktopFlowQueueLogsTtlInMinutes)), which defines when records should be automatically deleted from the table. |
 | [Flow Machine](/power-apps/developer/data-platform/reference/entities/flowmachine) | flowmachine  | Contains machine and hosted machine-related info. |
 | [Flow Machine Group](/power-apps/developer/data-platform/reference/entities/flowmachinegroup) | flowmachinegroup | Contains machine group and hosted machine group-related info.  |
+| [Flow Run](/power-apps/developer/data-platform/reference/entities/flowrun) | flowrun  | Contains cloud flow run-related data such start, end, duration, parent flow context etc. |
+| [Flow Session](/power-apps/developer/data-platform/reference/entities/flowsession) | flowsession | Contains desktop flow run-related data such as start, durations, status, machine, robot account, parent flow context etc.     |
+| [Process](/power-apps/developer/data-platform/reference/entities/workflow) | workflow         | Contains desktop flows and solution-based cloud flows (along with other workflow types). |
+| [User](/power-apps/developer/data-platform/reference/entities/systemuser)   | systemuser | Represents the Dataverse user. |
 | [Work Queue](/power-apps/developer/data-platform/reference/entities/workqueue) | workqueue  | Represents an instance of a workflow execution.  |
 | [Work Queue Item](/power-apps/developer/data-platform/reference/entities/workqueueitem)  | workqueueitem  | Contains information about each run of a workflow.|
-| [User](/power-apps/developer/data-platform/reference/entities/systemuser)   | systemuser | Represents the Dataverse user. |
 
 ### Simplified table relationship diagram
 
@@ -94,10 +94,14 @@ Follow these steps to create a sample SQL query on the SQL Analytical Endpoint i
       | Ignored   | 12    |
 
 1. Review the query results to ensure they meet your needs.
+
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/basic-sql-flowsession-query.png" alt-text="Screenshot of a SQL query being executed in a database management tool." lightbox="media/advanced-automation-related-data-analytics-fabric/basic-sql-flowsession-query.png":::
+
 1. (Optional) Open a Live-query with results in Excel by highlighting the SQL query and selecting **Open in Excel** in the query output section. This generates and downloads an Excel file with a Live-query to the SQL Analytics endpoint for further analysis.
+
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/open-query-in-excel.png" alt-text="Screenshot of a SQL query being executed in a database query panel in Fabric." lightbox="media/advanced-automation-related-data-analytics-fabric/open-query-in-excel.png":::
-1. (Optional) To store the SQL query for future use, select the **Save Query**.  
+
+1. (Optional) To store the SQL query for future use, select **Save Query**.  
   
 ### Basic flow queries
 
