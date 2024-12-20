@@ -2,9 +2,9 @@
 title: Crafting automation-related queries with Fabric
 description: Learn how to query automation-related Dataverse data in Microsoft Fabric
 ms.topic: conceptual
-ms.date: 11/06/2024
+ms.date: 12/19/2024
 ms.author: appapaio
-ms.reviewer: 
+ms.reviewer: dmartens
 contributors:
 author: rpapostolis
 ms.collection: conceptual
@@ -23,7 +23,7 @@ search.audienceType:
 
 ## List of automation-related tables
 
-The following table includes automation-related tables that are frequently used for reporting and observability use cases.
+The following table lists automation-related tables frequently used for reporting and observability.
 
 | Display name | Object name       |   Purpose                                             |
 |--------------------|------------------|-------------------------------------------------------|
@@ -39,18 +39,18 @@ The following table includes automation-related tables that are frequently used 
 
 ### Simplified table relationship diagram
 
-The image includes only relations to tables that are included above and automation-relevant.
+The image shows only the relevant table relations for automation.
 
 :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/automation-related-table-relations.png" alt-text="Screenshot of an entity relationship drawing showing automation-related table relations." lightbox="media/advanced-automation-related-data-analytics-fabric/automation-related-table-relations.png":::
 
 ### Create your first query in Fabric
 
-Step-by-step instructions to create a sample SQL Query on the SQL Analytical Endpoint in Fabric for the `contoso_westus_accounts_payable` Lakehouse.
+Follow these steps to create a sample SQL query on the SQL Analytical Endpoint in Fabric for the `contoso_westus_accounts_payable` Lakehouse.
   
-1. Launch your web browser and navigate to the Microsoft Fabric portal (https://powerbi.com) and sign in with your credentials.  
-2. Choose the workspace where your Lakehouse is located and select on the desired SQL Analytical Endpoint (a subnode of your Lakehouse).  
-3. Once in the SQL Analytical Endpoint, locate and select on the "New SQL query" button to open the SQL query editor interface.  
-4. In the SQL query editor, enter your SQL query and select **Run**. The following example query retrieves all desktop flow runs (flow sessions) associated with a specific desktop flow and a machine ID that have failed within the last seven days.
+1. Open your web browser, go to the Microsoft Fabric portal (https://powerbi.com), and sign in with your credentials.  
+1. Select the workspace where your Lakehouse is located, then select the desired SQL Analytical Endpoint (a subnode of your Lakehouse).  
+1. In the SQL Analytical Endpoint, select **New SQL query** to open the SQL query editor.  
+1. In the SQL query editor, enter your SQL query and select **Run**. The following example query retrieves all desktop flow runs (flow sessions) associated with a specific desktop flow and a machine ID that failed within the last seven days.
 
      ```sql  
         SELECT   
@@ -75,8 +75,8 @@ Step-by-step instructions to create a sample SQL Query on the SQL Analytical End
         ORDER BY   
             createdon DESC;  
      ```  
-  
-5. Here's a list of available status reasons (statuscode) for the `Flow Sessions` (desktop flow runs) table.
+
+1. Here's a list of available status reasons (statuscode) for the `Flow Sessions` (desktop flow runs) table.
 
       | Status reason     | Value |  
       |-----------|-------|  
@@ -93,11 +93,11 @@ Step-by-step instructions to create a sample SQL Query on the SQL Analytical End
       | Aborted   | 11    |  
       | Ignored   | 12    |
 
-6. Review the query results to ensure they meet your requirements.
+1. Review the query results to ensure they meet your needs.
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/basic-sql-flowsession-query.png" alt-text="Screenshot of a SQL query being executed in a database management tool." lightbox="media/advanced-automation-related-data-analytics-fabric/basic-sql-flowsession-query.png":::
-7. (Optional) You can open a Live-query with results in Excel by highlighting the SQL query and selecting "Open in Excel" in the query output section. This will generate and download an Excel file with a Live-query to the SQL Analytics endpoint to further deep-dive on the results.
+1. (Optional) Open a Live-query with results in Excel by highlighting the SQL query and selecting **Open in Excel** in the query output section. This generates and downloads an Excel file with a Live-query to the SQL Analytics endpoint for further analysis.
     :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/open-query-in-excel.png" alt-text="Screenshot of a SQL query being executed in a database query panel in Fabric." lightbox="media/advanced-automation-related-data-analytics-fabric/open-query-in-excel.png":::
-8. (Optional) To store the SQL query for future use, select on the "Save Query" button.  
+1. (Optional) To store the SQL query for future use, select the **Save Query**.  
   
 ### Basic flow queries
 
@@ -150,7 +150,7 @@ This query returns all desktop flows with their owner information.
 
 ### Performance-related query example
 
-This query retrieves the minimum, mean (average), maximum, and standard deviation of runtimes for desktop flow runs (Flow Sessions) of a specified desktop flow, with the runtimes converted from milliseconds rounded up to the nearest full second. The results are grouped by machine IDs and include other details such as machine names, management types, maximum hosted machine counts, session capacity, and the last heartbeat date etc. from the Machine Group and Machine tables.
+This query retrieves the minimum, mean (average), maximum, and standard deviation of runtimes for desktop flow runs (Flow Sessions) of a specified desktop flow, with the runtimes converted from milliseconds rounded up to the nearest full second. The query groups the results by machine IDs and includes details such as machine names, management types, maximum hosted machine counts, session capacity, and the last heartbeat date from the Machine Group and Machine tables.
 
 ```sql
     SELECT   
@@ -215,14 +215,13 @@ This query identifies machine and licensing-related capacity issues for a specif
         f.machineid, fm.name, mg.managementtype, mg.maxmanagedmachinecount, fm.lastheartbeatdate, fm.sessioncapacity, fm.overcapacitysince  
     ORDER BY   
         capacity_status DESC, fm.lastheartbeatdate DESC;  
-
 ```
 
 ### Governance-related query examples for desktop flows
 
 #### Find scripts that include plain text passwords in connections
 
-This query finds all desktop flows that use (OLEDB) DB connection strings that have been configured to use a plaintext password.
+This query finds all desktop flows that use (OLEDB) database connection strings that are configured to use a plaintext password.
 
 ```sql
     SELECT   
@@ -246,7 +245,7 @@ This query finds all desktop flows that use (OLEDB) DB connection strings that h
 
 #### Potential sensitive data loss or exfiltration risk
 
-This query detects desktop flows that include scripting actions using SAP's internal GUI scripting engine. If this is unexpected, it may pose risks of data loss or exfiltration, as sensitive information could be accessed or manipulated by these scripts and unintentionally or maliciously altered or exposed.
+This query detects desktop flows that include scripting actions using SAP's internal GUI scripting engine. If this is unexpected, these scripts might pose risks of data loss or exfiltration, as they could access or manipulate sensitive information and unintentionally or maliciously alter or expose it.
 
 ```sql
     SELECT   
@@ -268,7 +267,7 @@ This query detects desktop flows that include scripting actions using SAP's inte
 
 #### Potential SQL injection risk
 
-This query detects desktop flows that contain scripts potentially vulnerable to SQL injection by searching for the use of `database.executesqlstatement.execute` within the flow definitions. Consider a scenario where, instead of directly writing the SQL code in the [Execute SQL statement action](/power-automate/desktop-flows/actions-reference/database#executesqlstatement), the script is configured to use a Power Automate desktop input variable (for example, *%LetsDeleteAllGeneralLedgerEntriesFromDB%*) that is provided to the script during runtime. This could pose a significant SQL injection risk.
+The query detects desktop flows that contain scripts potentially vulnerable to SQL injection by searching for the use of `database.executesqlstatement.execute` within the flow definitions. Consider a scenario where, instead of directly writing the SQL code in the [Execute SQL statement action](/power-automate/desktop-flows/actions-reference/database#executesqlstatement), the script uses a Power Automate desktop input variable (for example, *%LetsDeleteAllGeneralLedgerEntriesFromDB%*) provided to the script during runtime. Such a scenario could pose a significant SQL injection risk.
 
 :::image type="content" source="media/advanced-automation-related-data-analytics-fabric/execute-sql-statmenet-risk.png" alt-text="Screenshot of an 'Execute SQL statement' configuration dialog in Power Automate desktop." lightbox="media/advanced-automation-related-data-analytics-fabric/execute-sql-statmenet-risk.png":::
 
@@ -396,7 +395,7 @@ This query searches for desktop flows that lack any error handling mechanisms, s
 
 #### Desktop flow runs with restricted URL access
 
-This query finds web service invocations (Invoke Web Service action) within a specific desktop flow over the past three weeks. This is useful for identifying and analyzing potentially suspicious endpoints or restricted API calls.
+This query finds web service invocations (Invoke Web Service action) within a specific desktop flow over the past three weeks. This result is useful for identifying and analyzing potentially suspicious endpoints or restricted API calls.
 
 ```sql
     SELECT   
@@ -458,7 +457,7 @@ This query scans desktop flow runs for PowerShell script actions that included c
 
 #### Desktop flow runs with pro-code usage
 
-This query is a bit more advanced. It identifies and counts the number of distinct desktop flow runs (Flow Sessions) that include pro-coding parts (such as VBScript, PowerShell, JavaScript, .NET, or Python) within the last seven days, and then groups the results by desktop flow.
+This query is a bit more advanced. It identifies and counts distinct desktop flow runs (Flow Sessions) with pro-coding parts (such as VBScript, PowerShell, JavaScript, .NET, or Python) from the last seven days, and groups the results by desktop flow.
 
 ```sql
 WITH ProCodingSessions AS (  
