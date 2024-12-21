@@ -1135,8 +1135,14 @@
       href: automation-center-overview.md
     - name: Recommendations
       href: automation-center-recommendations.md
-    - name: Copilot (preview)
-      href: automation-center-copilot.md
+    - name: Copilot
+      href: automation-center-copilot.md       
+  - name: Automation-centric analytics with Fabric
+    items:
+    - name: Overview
+      href: automation-analytics-with-fabric-introduction.md
+    - name: Create ad-hoc queries
+      href: automation-analytics-with-fabric-queries.md
   - name: Capacity utilization
     items:
     - name: Introduction to capacity utilization (preview)
