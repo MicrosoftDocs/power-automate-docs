@@ -1,6 +1,6 @@
 ---
-title: Create desktop flow connections
-description: See how to create connections to trigger desktop flows from cloud flows.
+title: Manage desktop flow connections
+description: See how to manage connections to trigger desktop flows from cloud flows.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
@@ -98,3 +98,31 @@ The desktop flow connection is automatically created.
 > If you consistently encounter issues when creating a connection on a new machine, first try to remove it, and then [register it](/power-automate/desktop-flows/manage-machines#register-a-new-machine) again.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+## Select a run owner
+
+A run owner of a Desktop Flow is the user whose permissions are checked during the flow execution.
+
+Connections created using the Power Automate Portal use the connection's creator (the user who creates the connection) as the run owner.
+
+However, you can choose to select a specific identity as the run owner.
+More information: [Set a run owner on a Desktop Flow connection](/how-to/set-runowner-desktopflowconnection)
+
+# Share desktop flow connection
+
+Limitations:
+- Only Desktop Flow with a specified run owner identity can be shared: [Select a run owner](#select-a-run-owner)
+- Recipients of Desktop Flows connection sharing are limited to Service Principal users
+- Desktop Flow connection cannot be shared with the "Can Share" permission
+
+
+You can share a machine with other users in your organization and give those users specific permissions to access it.
+
+1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com/).
+2. Go to **Monitor** > **Connection**.
+3. Select your connection from the list, and then select the **Share** button.
+4. Enter the name of the Service Principal User in your organization with whom you’d like to share the connection.
+5. Select which permissions they can access the connection with:
+- Can use
+- Can edit
+6. Select **Save**

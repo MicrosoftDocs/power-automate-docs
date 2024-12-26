@@ -11,6 +11,10 @@ ms.topic: overview
 
 # Create a connection with a service principal
 
+There are two solutions to use a connection with a service principal:
+1. Create a connection using the service principal. This is the solution detailed in this article.
+2. Create a connection with a user principal and share it to a service principal. More information: [Set a run owner on a Desktop Flow connection](/power-automate/desktop-flows/how-to/set-runowner-desktopflowconnection)
+
 To create a connection with a service principal, the best approach is to register the machine using a [service principal with silent registration](/power-automate/desktop-flows/machines-silent-registration#using-a-service-principal-account). Alternatively, you can give permissions to the service principal on the machine or the machine group and then create a connection using the service principal.
 
 ## Give permissions on the machine or machine group
