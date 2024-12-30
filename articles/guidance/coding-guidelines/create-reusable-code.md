@@ -29,7 +29,7 @@ Instead of creating a single, overly complex automation solution, consider using
 - **Collaboration**: In a team environment, child flows promote collaboration by allowing team members to work on separate components of a larger automation project simultaneously.
 
 > [!NOTE]
-> Create the parent flow and all child flows *directly* in the same solution. Refer to [known limitations](https://learn.microsoft.com/power-automate/create-child-flows#known-issue).
+> Create the parent flow and all child flows *directly* in the same solution. Refer to [known limitations](/power-automate/create-child-flows#known-issue).
 
 
 ## Example Parent/Child flow scenario

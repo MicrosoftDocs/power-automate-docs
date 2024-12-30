@@ -63,7 +63,7 @@ Learn more: [Limits and configuration](../../limits-and-config.md)
 
 ## Flow versioning
 
-[Flow versioning](https://learn.microsoft.com/power-automate/drafts-versioning) is available only to solution-aware cloud flows where users can create draft of flows as they continue to evolve the flow logic and publish once complete. Versioning information, for example metadata of a flow, gets stored in Dataverse.
+[Flow versioning](/power-automate/drafts-versioning) is available only to solution-aware cloud flows where users can create draft of flows as they continue to evolve the flow logic and publish once complete. Versioning information, for example metadata of a flow, gets stored in Dataverse.
 
 Versioning allows the flow maker to keep track of changes, revert to previous versions if necessary, and ensure that flows are stable and reliable.
 
