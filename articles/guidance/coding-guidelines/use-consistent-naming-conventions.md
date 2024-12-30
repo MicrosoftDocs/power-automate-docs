@@ -21,7 +21,7 @@ Maintaining consistent naming conventions for the components within your Power A
 
 Here are some guidelines to follow:
 
-- **Descriptive and meaningful names**: Give meaningful names to your flows before saving. Additionally, choose names that accurately describe the purpose or function of each component. Avoid generic or ambiguous names that could lead to confusion. For example, instead of naming a trigger `Trigger1`, use a descriptive name like "New Email Received" to clearly indicate its purpose.
+- **Descriptive and meaningful names**: Give meaningful names to your flows before saving. Additionally, choose names that accurately describe the purpose or function of each component. Avoid generic or ambiguous names that could lead to confusion. For example, instead of naming a trigger *Trigger1*, use a descriptive name like "New Email Received" to clearly indicate its purpose.
 
 - **Use CamelCase or underscores**: Use CamelCase (capitalizing the first letter of each word except the first one) or underscores to separate words in your component names. Using CamelCase or underscores improves readability and makes it easier to distinguish between different parts of the name. For instance, you might name an action "SendEmailNotification" or "send_email_notification" for consistency.
 

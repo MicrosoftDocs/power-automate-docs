@@ -45,7 +45,7 @@ The child flow is responsible for extracting the list of approvers from a ShareP
 1. **Retrieve Approvers**: Query the SharePoint group to get the approvers based on the specified criteria.
 2. **Return Data**: Send the list of approvers back to the calling parent flow.
 
-:::image type="content" source="media/child-flow1.png" alt-text="Screenshot of the child flow that gets approvers from a SharePoint group":::
+  :::image type="content" source="media/child-flow1.png" alt-text="Screenshot of the child flow that gets approvers from a SharePoint group":::
 
 #### Parent Flow
 
@@ -56,6 +56,6 @@ The parent flow calls the child flow to get the list of approvers and then proce
 1. **Call Child Flow**: Invoke the child flow to retrieve the list of approvers.
 2. **Process Response**: Use the list of approvers returned by the child flow to proceed with the approval process for the specific scenario (for example, project proposal, leave request, or expense submission).
 
-:::image type="content" source="media/child-flow2.png" alt-text="Screenshot of the parent flow that calls the child flow":::
+  :::image type="content" source="media/child-flow2.png" alt-text="Screenshot of the parent flow that calls the child flow":::
 
 Use this approach to maintain a modular and efficient approval process, reducing redundancy and simplifying maintenance.

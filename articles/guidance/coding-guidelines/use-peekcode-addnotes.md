@@ -31,19 +31,23 @@ The code view can be used to view trigger polling frequency, trigger type,  trig
 Adding notes or comments in Power Automate cloud flows is a helpful way to document the purpose, logic, and specific details of various actions and triggers within the flow. This practice is beneficial for both individual users and teams, as it improves the readability and maintainability of the flows.
 
 To add a note, select the ellipsis next to an action and select **Add Note**:
-:::image type="content" source="media/addnote.png" alt-text="A screenshot of the selecting Add a note":::
+
+:::image type="content" source="media/add-note.png" alt-text="A screenshot of the selecting Add a note":::
 
 Once you add the note, it shows under the action name:
 To add a note, select the ellipsis next to an action and select **Add Note**:
-:::image type="content" source="media/addnote-done.png" alt-text="A screenshot of an action with a note":::
+
+:::image type="content" source="media/add-note-done.png" alt-text="A screenshot of an action with a note":::
 
 ## Copy and Paste actions
 
 Copying actions is useful to reuse the same action multiple times within a flow or across different flows. This helps in simplifying the process of creating and modifying flows and saves time and multiple select. You can copy and paste individual actions or entire conditions or scope actions as well. 
 
 Select an action and select **Copy Action** to copy the action:
+
 :::image type="content" source="media/copy-action.png" alt-text="A screenshot of selecting Copy Action":::
 
 Select the **+** to paste an action:
+
 :::image type="content" source="media/paste-action.png" alt-text="A screenshot of selecting Paste Action":::
 

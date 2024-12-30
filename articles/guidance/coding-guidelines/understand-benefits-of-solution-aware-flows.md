@@ -39,6 +39,8 @@ Nonsolution cloud flows are flows that are created outside the solutions. Their 
 
 When you create a flow, you need to create or select a connection to the service you want to interact with. Connections are user-specific, meaning they're tied to the credentials of the user who creates them.
 
+:::image type="content" source="media/flow-connections.png" alt-text="A screenshot of flow connections on the Flow Details page":::
+
 If you change a connection for a cloud flow, every action associated with the connection needs to be updated.
 
 ### Connection references (solution-aware cloud flows)
@@ -46,6 +48,8 @@ If you change a connection for a cloud flow, every action associated with the co
 **Connection References** are pointers used within flows to refer to specific connections. They allow flows to be more portable and manageable, especially when moving flows between different environments.
 
 Connection references are an abstraction layer that simplifies the management of connections within a Power Platform solution. They act as placeholders or pointers to actual connections, making it easier to manage and update connections in solution-aware scenarios.
+
+:::image type="content" source="media/flow-connectionreference.png" alt-text="A screenshot of flow connection references on the Flow Details page":::
 
 Connection references are used in solution-aware cloud flows, which are part of a broader Power Platform solution, for example solutions integrated with Power Apps, Dataverse, or other components. They enable the separation of the flow's design from the specific user connections, facilitating easier deployment and updates across different environments (development, testing, production).
 
@@ -63,7 +67,7 @@ Learn more: [Limits and configuration](../../limits-and-config.md)
 
 Versioning allows the flow maker to keep track of changes, revert to previous versions if necessary, and ensure that flows are stable and reliable.
 
-![A screenshot of a cloud flow version history](media/image4.png)
+:::image type="content" source="media/flow-versioning.png" alt-text="A screenshot of a cloud flow version history":::
 
 ## Environment variables
 

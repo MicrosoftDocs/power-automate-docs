@@ -55,7 +55,11 @@ Adding a [co-owner](/power-automate/create-team-flows) to a cloud flow is the mo
 - Add or remove other owners (but not the flow's creator), including guest users.
 - Delete the flow.
 
-Only add co-owners for flow collaborations as needed. In most cases, if flow needs to be shared, share the flow with run-only permissions, which restricts the users from viewing the flow run history or making any changes to the flows. Sharing flows also allows the owner to specify whether the flow uses the connections of the user invoking the flow or the inbuilt connections of the user or account creating the flow. Learn more: [Share a cloud flow](/power-automate/create-team-flows)
+Only add co-owners for flow collaborations as needed. In most cases, if flow needs to be shared, share the flow with run-only permissions, which restricts the users from viewing the flow run history or making any changes to the flows. Sharing flows also allows the owner to specify whether the flow uses the connections of the user invoking the flow or the inbuilt connections of the user or account creating the flow. 
+
+:::image type="content" source="media/run-only-users.png" alt-text="A screenshot of sharing the flow with run-only permissions":::
+
+Learn more: [Share a cloud flow](/power-automate/create-team-flows)
 
 ## Configuring security roles for appropriate access
 

@@ -45,7 +45,7 @@ By reducing the number of actions within each branch, your flow becomes more rea
 
 ## Concurrency control
 
-Concurrency enables parallel execution in a `Apply to each` loop. By default, `Apply to each` loops execute sequentially. Therefore, when processing large data, it might take a long time. If the items in loop aren't required to run sequentially, concurrency enables X items to process at once. Currently users can set the degree of parallelism between 1 and 50.
+Concurrency enables parallel execution in a **Apply to each** loop. By default, **Apply to each** loops execute sequentially. Therefore, when processing large data, it might take a long time. If the items in loop aren't required to run sequentially, concurrency enables X items to process at once. Currently users can set the degree of parallelism between 1 and 50.
 
 Consider a scenario where the status field of 100 records needs to be updated - instead of updating one record after the other, Concurrency control enables up to 50 records to be updated simultaneously.
 
@@ -54,7 +54,7 @@ Be mindful of the degree of parallelism to set:
 - There's overhead in dividing the work, queueing up extra threads, delays from the endpoint being called, etc.
 - High number (for example, 50) might not necessarily make things go faster
 
-:::image type="content" source="media/concurrency-control.png" alt-text="A screenshot of configuring the concurrency control in an Apply to each action":::
+  :::image type="content" source="media/concurrency-control.png" alt-text="A screenshot of configuring the concurrency control in an Apply to each action":::
 
 Some other real-world scenarios where this approach is applicable:​
 
@@ -72,4 +72,4 @@ Here's a comparison of the impact of concurrency control for array processing wi
 | **4 ​**            | 4 ​                         | 6 seconds ​                  |
 | **4 ​**            | 6 ​                         | 6 seconds ​                  |
 
-Concurrency controls for `Apply to each` actions only take effect on the highest level in the cloud flow. When nesting `Apply to each` actions, the inner actions always execute serially.
+Concurrency controls for **Apply to each** actions only take effect on the highest level in the cloud flow. When nesting **Apply to each** actions, the inner actions always execute serially.

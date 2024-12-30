@@ -32,6 +32,8 @@ Follow these steps to configure the asynchronous response:
 1. Select **When an HTTP request is received** as the trigger.
 1. Add the required actions to your cloud flow.
 1. Add the **Response** action to your cloud flow.
+
     :::image type="content" source="media/async-1.png" alt-text="Screenshot of the Response action.":::
 1. Select the **Response** action, select **Settings**, and toggle asynchronous response to on.
+
  :::image type="content" source="media/async-2.png" alt-text="Screenshot of the Settings of the Response action.":::

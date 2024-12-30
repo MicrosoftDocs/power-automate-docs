@@ -26,18 +26,18 @@ Nested **For each** loops can be resource-intensive operations in cloud flows an
 
 Learn more: [Concurrency looping and debatching limits](../../limits-and-config.md)
 
-Depending on your scenarios, you can avoid nested loops by using the following alternatives:
-
-### Processing related records from a parent table
+Depending on your scenarios, you can avoid nested loops by processing related records from a parent table:
 
 **Scenario:** An outer loop uses the **List Rows** action to retrieve a list of product categories from the *ProductCategory* table where the *IsPromotion* column is true. An inner loop then processes related records from the *Product* table for each category retrieved by the outer loop.
 
-**Alternative approach:** Use OData Query Expansion to streamline this process. This method allows you to work with a single `For each` loop, reducing the total number of requests to Dataverse to just one *RetrieveMultiple* call.
+**Alternative approach:** Use OData Query Expansion to streamline this process. This method allows you to work with a single **For each** loop, reducing the total number of requests to Dataverse to just one *RetrieveMultiple* call.
 
 **Implement OData query expansion:**
 - Use the **Expand Query** parameter to specify the lookup column name that links the *ProductCategory* table to the *Product* table. This approach retrieves related records in a single query. For example, set the Expand Query parameter to `Products($select=ProductName,Price)`.
 - Use the **$select** parameter to limit the columns returned from the related table.
 - Retrieve and process relevant records by applying conditions directly on the lookup table’s columns using the **Filter Rows** parameter. For example, set the Filter parameter to  `IsPromotion eq true`.
+
+:::image type="content" source="media/nested-loop.png" alt-text="Screenshot of using the Expand Query and Filter parameter to implement OData query expansion":::
 
 ## Avoid infinite runs
 
@@ -68,7 +68,7 @@ If you need to manage the data load using orchestration logic that you can imple
    - **Trigger**: Use the “When a dataflow refresh completes” trigger in Power Automate to perform actions after the ETL process is finished.
    - **Example**: After the Dataflow completes, you can use a cloud flow to send notifications, update records, or perform more data processing.
 
-:::image type="content" source="media/use-dataflow.png" alt-text="Screenshot of using dataflow actions in a cloud flow" border="true":::
+  :::image type="content" source="media/use-dataflow.png" alt-text="Screenshot of using dataflow actions in a cloud flow" border="true":::
 
 ## Avoid using a "For each" loop to update a large number of records
 
@@ -81,6 +81,8 @@ To improve the performance, try these two approaches:
    - **Implementation**: Use the batch operation feature to send multiple create or update requests in one go. These operations are executed sequentially in the order specified in the batch request. The order of the responses matches the order of the requests in the batch operation.
    - **Benefits**: Reduces the number of individual requests sent to the data source and minimizing latency and improving performance.
 
+   :::image type="content" source="media/batch-operation.png" alt-text="A screenshot using the SharePoint API to execute a batch request":::
+
 2. **Parallelism in For each loop**:
    - **Description**: Enable parallel processing within the "For Each" loop to handle multiple records simultaneously.
    - **Implementation**: Configure the **For Each** loop to process up to 50 records in parallel. This approach is useful for services that don't support batch operations.
@@ -90,8 +92,6 @@ For information on making batch requests, refer to the following REST API docume
 
 - [SharePoint REST API](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis)
 - [Dataverse Web API](/power-apps/developer/data-platform/webapi/execute-batch-operations-using-web-api)
-
-:::image type="content" source="media/batch-operation.png" alt-text="A screenshot using the SharePoint API to execute a batch request":::
 
 When working with Dataverse, you can utilize the [Bulk Operations Web APIs](/power-apps/developer/data-platform/bulk-operations). These APIs offer a distinct advantage over Batch Operations:
 
@@ -104,11 +104,13 @@ Invoke Bulk Operations by:
 - **Using HTTP Connector with Service Principals**: Alternatively, you can use the HTTP connector in Power Automate when working with Service Principals to invoke these APIs.
 
 Prepare the records in JSON format using **Select** action:
+
 :::image type="content" source="media/prepare-json.png" alt-text="A screenshot of a using a Select action to prepare the content for the bulk request":::
 
 Use HTTP with Entra ID to post the request using **CreateMultiple Web API**:
+
 :::image type="content" source="media/createmultiple.png" alt-text="A screenshot of invoking an HTTP request to perform a bulk operation":::
 
-If we have 100 records in the JSON output, this approach only incurs one single action instead of 100 Create Row actions in Dataverse.
+If you have 100 records in the JSON output, this approach only incurs one single action instead of 100 Create Row actions in Dataverse.
 
 By using Dataverse Bulk Operations, you can reduce the number of actions required, streamline your processes, and enhance performance.

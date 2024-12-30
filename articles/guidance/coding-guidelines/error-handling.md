@@ -102,6 +102,7 @@ Use the **Parse JSON** function with the JSON schema to parse the response of th
 :::image type="content" source="media/parse-workflow-data.png" alt-text="A screenshot of parsing the JSON of the workflow function":::
 
 Use the **Compose** action to compose a flow run URL. You can use this URL to directly link to the flow run in a notification email or store in a table where you log errors. Enter `https://make.powerautomate.com/environments@{body('Parse_JSON')?['tags']?['environmentName']}/flows@{body('Parse_JSON')?['tags']?['logicAppName']}/runs@{body('Parse_JSON')?['run']}` as your input in the **Compose** action.
+
 :::image type="content" source="media/compose-workflow-run.png" alt-text="A screenshot of using the Compose action to compose the flow run URL":::
 
 > [!CAUTION]
@@ -117,7 +118,7 @@ Use the **Filter array** action to filter the [**Result function**](/azure/logic
 
 :::image type="content" source="media/filter-result-function.png" alt-text="A screenshot of using the filter array action to filter the response from the result function":::
 
-You can create an HTML table from this response to send an email alert or store the details in your error logging table. 
+You can use the **Create HTML table** action to create an HTML table from this response to send an email alert or store the details in your error logging table. 
 
 ## Use retry policy
 
