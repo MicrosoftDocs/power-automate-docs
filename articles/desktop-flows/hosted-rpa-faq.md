@@ -88,11 +88,11 @@ A custom network connection connects hosted virtual machines to your virtual net
 > - Power Automate [service endpoints](/power-automate/ip-address-configuration)
 > - For hosted machines, refer to specific requirements for [Windows 365 service, Azure Virtual Desktop session host virtual machine, Microsoft Intune service, and physical devices network connectivity](/windows-365/enterprise/requirements-network?tabs=enterprise%2Cent#allow-network-connectivity).
 
-## Maintenance and management
+## Maintenance and updates
 
-Proper maintenance and management of hosted virtual machines ensure smooth operations. When provisioning hosted machines or hosted machine groups using the default VM image provided by Microsoft, these images are automatically updated monthly following the Windows Servicing & Delivery security patch release schedule.
+Proper maintenance and update of hosted virtual machines ensure smooth operations. When provisioning hosted machines or hosted machine groups using the default VM image provided by Microsoft, these images are automatically updated monthly following the Windows Servicing & Delivery security patch release schedule.
 
-### Options for managing hosted virtual machines
+### Options for updating hosted virtual machines
 
 - **Hosted machines**. Use **Intune** to manage devices by applying policies that ensure compliance with your organization's requirements. For example, ensure devices are regularly updated with the latest security patches.
 
