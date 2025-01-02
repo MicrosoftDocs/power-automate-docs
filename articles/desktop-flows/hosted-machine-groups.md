@@ -53,8 +53,8 @@ To create a hosted machine group, you need access to the default VM image that i
 
 > [!NOTE]
 >
-> - Users need either the **System Administrator** or **Desktop Flow Machine Image Admin** role to see and manage the default image.
-> - For other users, the **System Administrator** or **Desktop Flow Machine Image Admin** has to share the default image with them before they can use it.
+> - Users need either the **System Administrator** or **Desktop Flows Machine Configuration Admin** role to see and manage the default image.
+> - For other users, the **System Administrator** or **Desktop Flows Machine Configuration Admin** has to share the default image with them before they can use it.
 
 ### Share the default image
 
