@@ -116,7 +116,10 @@ To create hosted machines, you need access to the default image that is part of 
 
 :::image type="content" source="media/hosted-machines/default-vm-image.png" alt-text="Screenshot of the default VM image in the VM images list.":::
 
-Users need either the **System Administrator** or **Desktop Flow Machine Image Admin** role to see and manage the default image. For other users, the **System Administrator** or **Desktop Flow Machine Image Admin** needs to [share the default image](#share-the-default-image) with them before they can use it.
+> [!NOTE]
+>
+> - Users need either the **System Administrator** or **Desktop Flows Machine Configuration Admin** role to see and manage the default image.
+> - For other users, the **System Administrator** or **Desktop Flows Machine Configuration Admin** has to share the default image with them before they can use it.
 
 ### Share the default image
 
