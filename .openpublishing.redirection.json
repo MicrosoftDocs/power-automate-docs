@@ -859,6 +859,11 @@
       "source_path": "articles/desktop-flows/win-copilot-plug-in.md",
       "redirect_url": "/power-automate/desktop-flows/introduction",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/isv-pay-as-you-go.md",
+      "redirect_url": "/connectors/connector-reference",
+      "redirect_document_id": false
     }
   ]
 }
