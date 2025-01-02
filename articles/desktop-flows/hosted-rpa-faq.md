@@ -55,13 +55,14 @@ Learn more about licensing in the [Power Automate licensing page](/power-platfor
 
 A Center of Excellence (COE) Administrator controls user access to specific resources within the hosted RPA solution in Power Automate. Learn more about the [permissions based on security roles](hosted-machines.md#permissions-based-on-security-roles) relevant to the hosted RPA solution that leverages Microsoft Dataverse enforcement using security roles, teams, and business units to control access to tables, fields, and records with permission and row-level access control.
 
-IT & COE Administrators have the necessary tools to ensure hosted virtual machines are secured:
+IT & COE Administrators have the necessary tools to manage hosted virtual machines:
 
-| Tools   | Description | 
-|----------|-------------------------------------------------------------|
-| **Microsoft Intune** |  With [Intune](/mem/intune/fundamentals/what-is-intune), you can create policies that applies to these devices to ensure that they are compliant based on your organization's policies.|
-| **Active Directory (AD)-based Group Policy (GPO) if using Microsoft Entra Hybrid join** | Devices that are hybrid joined can utilize GPOs for configuration and policy management, allowing administrators to apply GPOs as they would with any other domain-joined device. |
-| **Conditional access policy** | [Conditional Access policy](/entra/identity/conditional-access/overview) in Microsoft Entra ID (formerly Azure AD) is a security feature that enforces access requirements based on specific conditions. It is structured as an "if-then" statement, where assignments define the conditions (who, what, and where), and access controls specify the actions to be taken (e.g., grant or block access).|
+| Tools   | Description | Supported scenarios |
+|----------|-------------------------------------------------------------|-----------------------|
+| **Microsoft Intune** |  With [Intune](/mem/intune/fundamentals/what-is-intune), you can create policies that applies to these devices to ensure that they are compliant based on your organization's policies.| • Hosted machines |
+| **Active Directory (AD)-based Group Policy (GPO) if using Microsoft Entra Hybrid join** | Devices that are hybrid joined can utilize GPOs for configuration and policy management, allowing administrators to apply GPOs as they would with any other domain-joined device. | • Hosted machines |
+| **Conditional access policy** | [Conditional Access policy](/entra/identity/conditional-access/overview) in Microsoft Entra ID (formerly Azure AD) is a security feature that enforces access requirements based on specific conditions. It is structured as an "if-then" statement, where assignments define the conditions (who, what, and where), and access controls specify the actions to be taken (e.g., grant or block access).| • Hosted machines <br>• hosted machine groups |
+
 
 
 COE Administrators can also monitor and govern the usage of the hosted RPA solution within an environment using the [Hosted Process capacity utilization dashboard](capacity-utilization-hosted.md).
