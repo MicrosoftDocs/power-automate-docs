@@ -2,7 +2,7 @@
 title: Configure desktop flow logs behavior
 description: Configure desktop flow log verbosity and storage destination in Power Platform Admin Center.
 ms.topic: conceptual
-ms.date: 10/14/2024
+ms.date: 01/03/2025
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -67,7 +67,7 @@ The **FlowLogs entity time to live in minutes** value determines how long action
 | 90 days | 129,600 minutes |
 | 180 days | 259,200 minutes |
 | 365 days | 525,600 minutes |
-| Forever | Less than or equal to 0 (zero) minutes |
+| Forever | 0 (zero) minutes |
 
 > [!NOTE]
 > Before enabling logs V2, make sure you have sufficient Dataverse database capacity that would support the data retention settings and aligns with your capacity planning, entitlement and adjust as necessary. See the [Sample Dataverse capacity demand calculations for logs V2](#dataverse-capacity-demand-calculations-for-logs-v2) following section for some sizing examples.
