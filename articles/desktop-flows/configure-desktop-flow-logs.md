@@ -2,7 +2,7 @@
 title: Configure desktop flow logs behavior
 description: Configure desktop flow log verbosity and storage destination in Power Platform Admin Center.
 ms.topic: conceptual
-ms.date: 10/14/2024
+ms.date: 01/03/2025
 ms.author: appapaio
 ms.reviewer: 
 contributors:
