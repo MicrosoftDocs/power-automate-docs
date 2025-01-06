@@ -90,6 +90,7 @@ The desktop flow connection is automatically created.
 ### Limitations
 
 - Connect with sign-in works only for attended runs. Running unattended with this kind of connection will fail.
+- Connect with sign-in runs will most likely fail with **PasswordlessTokenExpiry** error if **AsyncDisabled=True**.
 - Queue time duration is limited to one hour.
 - On AD-joined but not Entra-joined machines, you must [allowlist your Power Platform tenant](how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md) for your machine to trust passwordless tokens from that tenant. If your tenant is not allowlisted, connect with sign-in runs will most likely fail with `UnallowedTenantForConnectWithSignIn` errors. Connect with sign-in connection creation and testing will fail with either `Unable to connect. The credentials for the machine are incorrect.` or `Tenant [tenantId] needs to be explicitly allowlisted to authorize 'connect with sign-in' runs on the machine` error messages.
 
