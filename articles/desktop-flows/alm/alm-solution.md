@@ -6,7 +6,7 @@ ms.author: nvigne
 ms.subservice: desktop-flow
 ms.reviewer: matp
 ms.topic: how-to
-ms.date: 09/06/2023
+ms.date: 01/06/2025
 ---
 
 # Add a cloud flow, desktop flow and connection reference to a solution
@@ -26,14 +26,15 @@ You're redirected to Power Automate desktop, once you have finished editing your
 :::image type="content" source="./media/desktopflow-solution.png" alt-text="Screenshot of a desktop flow in a solution":::
 
 ## (Optional) Add your desktop flow connection references
-You might be using connections inside your desktop flow. To be able to easily export your desktop flow into other environment, you need to ensure that the connection references are added as well.
+
+You might use connections inside your desktop flow. To easily export your desktop flow to another environment, ensure that the connection references are added.
 
 1. Select **Add existing** > **More** > **Connection Reference**.
-2. Search the connection reference that matches the connection referenced used in your desktop flow.
+1. Search for the connection reference that matches the one used in your desktop flow.
 
-:::image type="content" source="./media/desktopflow-connectionreference.png" alt-text="Screenshot of a desktop flow and a connection reference in a solution":::
+:::image type="content" source="./media/desktopflow-connectionreference.png" alt-text="Screenshot of a desktop flow and a connection reference in a solution.":::
 
-If you are exporting as Managed solution this is required to be able to map your connection reference to your connection used in Production.
+If you export as a managed solution, you need this step to map your connection reference to your connection used in Production.
 
 ## Create a cloud flow
 
@@ -45,7 +46,7 @@ The connection you use won't be the connection that is used in your production e
 
 :::image type="content" source="./media/cloudflow-solution.png" alt-text="Screenshot of a desktop flow, a cloud flow, and connection references in a solution":::
 
-You see the cloud flow in your solution and a connection reference. This is the connection reference used by the cloud flow. You will need to map the connection when importing in the production environment.
+You see the cloud flow and its connection reference in your solution. Map the connection when importing to the production environment.
 
 ## Next steps
 
