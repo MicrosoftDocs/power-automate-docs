@@ -125,10 +125,8 @@ First, join the tenant. Then, promote yourself to the admin role, if it hasn't a
 1. Select the app launcher icon in the upper-left corner of the page, and then select **Admin**.
 1. Read the instructions on the **Become the admin** page, and then select **Yes, I want to be the admin**.
 
-   If this option doesn't appear, a Microsoft 365 administrator is already in place.
-
-       > [!TIP]
-       > If this option doesn’t appear, an Office 365 administrator is already in place.
+> [!TIP]
+> If this option doesn’t appear, an Office 365 administrator is already in place.
 
 ### If I have multiple domains, can I control the Microsoft 365 tenant that users are added to?
 
