@@ -37,7 +37,13 @@
   - name: Export and import a non-solution flow
     href: export-import-flow-non-solution.md
   - name: Drafts and versioning for cloud flows
-    href: drafts-versioning.md  
+    href: drafts-versioning.md
+  - name: Generative actions (preview)
+    items:
+    - name: Overview
+      href: generative-actions-overview.md
+    - name: Create generative actions
+      href: create-generative-actions.md
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
@@ -341,8 +347,6 @@
     href: ./desktop-flows/getting-started-windows-11.md
   - name: Use copilot to analyze desktop flow activity (preview)
     href: ./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md
-  - name: Use the Power Automate plug-in for Windows Copilot (preview)
-    href: ./desktop-flows/win-copilot-plug-in.md  
   - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Premium RPA features
@@ -387,6 +391,8 @@
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
   - name: Create desktop flows using Record with Copilot (preview)
     href: ./desktop-flows/create-flow-using-ai-recorder.md
+  - name: Repair flow automation errors (preview)
+    href: ./desktop-flows/repair-at-runtime.md
   - name: Run desktop flows
     items:
     - name: Run unattended and attended desktop flows from the cloud
@@ -1127,8 +1133,14 @@
       href: automation-center-overview.md
     - name: Recommendations
       href: automation-center-recommendations.md
-    - name: Copilot (preview)
-      href: automation-center-copilot.md
+    - name: Copilot
+      href: automation-center-copilot.md       
+  - name: Automation-centric analytics with Fabric
+    items:
+    - name: Overview
+      href: automation-analytics-with-fabric-introduction.md
+    - name: Create ad-hoc queries
+      href: automation-analytics-with-fabric-queries.md
   - name: Capacity utilization
     items:
     - name: Introduction to capacity utilization (preview)
@@ -1202,8 +1214,6 @@
     href: regions-overview.md
   - name: Limits and configuration
     href: limits-and-config.md
-  - name: Power Automate embed pay-as-you-go
-    href: isv-pay-as-you-go.md
   - name: Frequently asked questions
     href: frequently-asked-questions.yml
   - name: Power Automate glossary
@@ -1232,8 +1242,10 @@
         href: use-cds-for-apps-dialogs.md
       - name: Replace classic Dataverse dialogs
         href: replace-dialogs.md
-- name: Learn from others
+- name: Resources
   items:
+  - name: Microsoft Credentials for Power Platform
+    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl
   - name: Webinars
     href: webinars.md
   - name: Blog
@@ -1248,6 +1260,8 @@
     href: responsible-ai-overview.md
   - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
+  - name: FAQ for Copilot expression assistant
+    href: faqs-copilot-expression-assistant.md  
   - name: FAQ for Copilot in automation center
     href: faqs-copilot-automation-center.md
   - name: FAQ for Copilot in desktop flow activity
@@ -1256,6 +1270,10 @@
     href: faqs-copilot-in-process-mining.md
   - name: FAQ for Copilot in Power Automate for desktop
     href: faqs-copilot-in-pad.md
+  - name: FAQ for Repair with Copilot at runtime in Power Automate for desktop
+    href: faqs-repair-copilot.md
+  - name: FAQ for generative actions in cloud flows
+    href: faqs-generative-actions.md 
   - name: FAQ for generating code with natural language
     href: faqs-copilot-nl-to-code.md
   - name: FAQ for suggested actions in Power Automate for desktop
