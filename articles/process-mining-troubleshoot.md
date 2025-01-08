@@ -141,7 +141,7 @@ This issue should occur only if there's no data. Either the data source that you
 
 ### "The number of rows in your data exceeds the limit. [x] rows have been ignored."
 
-We support only up to 150,000 rows of data. To learn how to fix this issue using Power Query, go to [Reduce the number of total records](process-mining-transform.md#reduce-the-number-of-total-records).
+To learn how to fix this issue using Power Query, go to [Reduce the number of total records](process-mining-transform.md#reduce-the-number-of-total-records).
 
 ### "Analysis failed, please try again."
 
