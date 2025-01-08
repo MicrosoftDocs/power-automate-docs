@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 11/15/2024
+ms.date: 12/17/2024
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -30,7 +30,7 @@ Consider the following scenarios when applying the CMK enterprise policy to your
 - When the CMK enterprise policy is applied, cloud flows and their data with CMK are automatically protected. Some flows might continue to be protected by MMKs. Admins can identify these flows using [PowerShell commands](#powershell-commands).  
 - Creation and updates of flows are blocked during migration. Run history isn't carried forward. You can request it through a [support ticket](#get-run-history-by-support-ticket) up to 30 days after migration.
 - Currently, CMKs aren't leveraged to encrypt non-OAuth connections. These non-Microsoft Entra based connections continue to be encrypted at rest using MMKs.
-- To enable incoming and outgoing network traffic from CMK protected infrastructure, [update your firewall configuration](#update-firewall-configuration) to ensure your flows continue to work.  
+- To enable incoming and outgoing network traffic from CMK protected infrastructure, [update your firewall configuration](#update-firewall-configuration) to ensure your flows continue to work.
 - If you plan to protect more than 25 environments in your tenant using CMK, create a support ticket. The default limit of CMK enabled Power Automate environments per tenant is 25. This number can be extended by engaging the Support team.
 
 Applying an encryption key is a gesture performed by Power Platform admins and is invisible to users. Users can create, save, and execute Power Automate workflows exactly the same way as if MMKs encrypted the data.
@@ -70,6 +70,7 @@ The following categories of flows continue to be protected by MMK after applying
 |Power App v1 trigger flows that aren't in a solution     | **Option 1 (Recommended)**</br>Update the flow to use V2 trigger *before* applying CMK.</br></br>**Option 2**</br>*Post CMK application*, use **Save as** to create a copy of the flow. Update calling Power Apps to use the new copy of the flow.   |
 |HTTP trigger flows and Teams trigger flows     | *Post enterprise policy application*, use **Save as** to create a copy of the flow. Update calling system to use the URL of the new flow.</br></br>This category of flows isn't automatically protected, as a new flow URL is created in the CMK protected infrastructure. Customers might be leveraging the URL in their invoking systems.   |
 |Parents of flows that can't be automatically migrated     | If a flow can't be migrated, then dependent flows are also not migrated to ensure there’s no business disruption. |
+|Flows using the List flows as Admin (v1) connector action     | Flows referencing this legacy action should either be deleted or updated to use the [List Flows as Admin (V2)](/connectors/flowmanagement/#list-flows-as-admin-(v2)) action.   |
 
 ## PowerShell commands
 
@@ -109,6 +110,10 @@ If you want to view input/output data, you can use the run history (**All Runs**
 ## Get run history by support ticket
 
 We provide a summary view for all runs from both existing and new flow runs post CMK application. This view contains summary information such as run id, start time, duration, and fail/successs. It doesn't contain input/output data.
+
+## Protect flows in environments that are already protected by CMK
+
+For environments that are already protected by CMK, protecting flows using CMK can be requested by a Support Ticket.
 
 ## Known limitations
 
