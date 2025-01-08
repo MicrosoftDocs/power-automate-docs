@@ -98,7 +98,7 @@ Runs a stored Access query
 |Argument|Type|Description|
 |-----|-----|-----|
 |QueryResult|Text|The result of the Select query execution, returning the output of the query in a datatable.|
-|Affected rows|Text|The number of rows that are affected, as a result of executing the Action query.|
+|AffectedRows|Text|The number of rows that are affected, as a result of executing the Action query.|
 
 ### <a name="runaccessquery_onerror"></a> Exceptions
 
@@ -152,8 +152,5 @@ Closes an Access instance
 |Exception|Description|
 |-----|-----|
 |Failed to close Access|Indicates an issue with closing the specific Access instance.|
-
-## Known limitations
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
