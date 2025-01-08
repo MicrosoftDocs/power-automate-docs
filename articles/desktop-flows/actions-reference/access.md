@@ -154,7 +154,6 @@ Closes an Access instance
 |Failed to close Access|Indicates an issue with closing the specific Access instance.|
 
 ## Known limitations
-
-### Read Access table and Read Access query cannot retirve attachement and binary data type cells.
+Read Access table and Read Access query cannot retirve attachement and binary data type cells.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
