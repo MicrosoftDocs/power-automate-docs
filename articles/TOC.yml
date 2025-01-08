@@ -347,8 +347,6 @@
     href: ./desktop-flows/getting-started-windows-11.md
   - name: Use copilot to analyze desktop flow activity (preview)
     href: ./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md
-  - name: Use the Power Automate plug-in for Windows Copilot (preview)
-    href: ./desktop-flows/win-copilot-plug-in.md  
   - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Premium RPA features
@@ -1216,8 +1214,6 @@
     href: regions-overview.md
   - name: Limits and configuration
     href: limits-and-config.md
-  - name: Power Automate embed pay-as-you-go
-    href: isv-pay-as-you-go.md
   - name: Frequently asked questions
     href: frequently-asked-questions.yml
   - name: Power Automate glossary
