@@ -70,6 +70,10 @@ By default, Power Automate for desktop notifies you when a new version is availa
 
 Autoupdate isn't currently supported with the MSI installation. To learn about managing Power Automate for desktop using System Center Configuration Manager, go to [Manage Power Automate for desktop on Windows](../guidance/automation-coe/manage-pad-on-windows.md).
 
+## Determining which install you have on your computer
+
+If you already have Power Automate installed on your machine and you did not install it, you may need to understand if it is the Microsoft Store version or the MSI version. To do this, you can go to Start Menu > Add or remove programs. Then search for "Power Automate". If you see "Power Automate for desktop" in the list, then that is the MSI version. "Power Automate" is the Microsoft Store version. 
+
 ## Uninstall Power Automate
 
 1. Open the **Start** menu > **Settings** > **Apps**.
