@@ -29,7 +29,7 @@ Power Automate uses *connections* to make it easy for you to access your data wh
 
 Here's a quick video on managing connections.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKZQq]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9d210b7d-5449-4da2-9ee8-62d049617cbd]
 
 You can use connections to perform these tasks:
 

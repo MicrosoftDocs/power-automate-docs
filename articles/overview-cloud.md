@@ -22,7 +22,7 @@ Create a cloud flow when you want your automation to be triggered either automat
 
 This video gives an overview of cloud flows.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWL2mo]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=354cdd1a-a7a7-4d2c-9517-ca49184b9e3f]
 
 | **Flow type**     | **Use case**         | **Automation target**          |
 |-------------------|----------------------|----------------------|
