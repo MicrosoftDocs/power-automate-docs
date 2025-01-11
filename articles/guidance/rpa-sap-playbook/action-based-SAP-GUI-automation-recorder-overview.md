@@ -23,7 +23,7 @@ If you want to see the new desktop recording experience in action, follow these 
 
 You can also follow along in the no-code approach in episode 6 of the video series:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJEiJ ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e98fa76a-db96-4295-ac31-7e15604a254c ]
 
 1. Select the **ProcessHRMasterForm** subflow tab, and then select **Desktop recorder**.
 
