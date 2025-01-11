@@ -25,7 +25,7 @@ You can create [cloud flows](#cloud-flows), [desktop flows](#desktop-flows), or 
 
 Check out this video about the different types of flows.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKUwZ]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=0f11bc32-0ef4-437b-b15b-dfb3cf47ee04]
 
 ## Cloud flows
 
