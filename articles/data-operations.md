@@ -22,7 +22,7 @@ In this article, you learn about some common data operations in Power Automate, 
 
 Here's a quick video about data operations.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKXdo]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4eb588b9-6468-4e0f-b07b-8af41f31f6ea]
 
 ## Prerequisites
 

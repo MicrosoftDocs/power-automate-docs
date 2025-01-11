@@ -25,7 +25,7 @@ Many triggers can immediately start a cloud flow based on an event such as when 
 
 Watch this video for a demo of the **Apply to each** action.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWL7EL]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6b48b330-128d-4130-b093-2f18edae65c3]
 
 In this tutorial, we'll create a cloud flow that runs every 15 minutes and does the following:
 
