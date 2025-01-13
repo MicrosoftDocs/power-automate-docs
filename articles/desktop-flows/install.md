@@ -68,7 +68,9 @@ If the installation fails, go to the [troubleshooting guide](/troubleshoot/power
 
 By default, Power Automate for desktop notifies you when a new version is available. Select **Update** to automatically download and open the latest installer for your region. You must have admin permissions on your local computer to perform the update. Updating to the latest version is recommended to have the latest features and bug fixes.
 
-Autoupdate isn't currently supported with the MSI installation. To learn about managing Power Automate for desktop using System Center Configuration Manager, go to [Manage Power Automate for desktop on Windows](../guidance/automation-coe/manage-pad-on-windows.md).
+Auto-update isn't currently supported with the MSI installation. To learn about managing Power Automate for desktop using System Center Configuration Manager, go to [Manage Power Automate for desktop on Windows](../guidance/automation-coe/manage-pad-on-windows.md).
+
+New versions of Power Automate MSI installer are served from a URL beginning with https://download.microsoft.com.
 
 ## Determining which install you have on your computer
 
