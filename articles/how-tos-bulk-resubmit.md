@@ -36,7 +36,7 @@ To enable flow run resubmission for flows initiated by instant triggers, run the
   ```powershell
    $tenantSettings = Get-TenantSettings
    ```
-1. Set the powerPlatform.powerAutomate.disableFlowRunResubmission flag to **False**, to allow flow run resubmissions for cloud flows initialized by instant triggers.
+1. Set the `powerPlatform.powerAutomate.disableFlowRunResubmission` flag to **False**, to allow flow run resubmissions for cloud flows initialized by instant triggers.
 
   ```powershell
    $tenantSettings.powerPlatform.powerAutomate.disableFlowRunResubmission= $False
