@@ -1,5 +1,5 @@
 ---
-title: Use Copilot in automation center (preview)
+title: Use Copilot in automation center
 description: Use Copilot to analyze flow runs, work queues, and ask general product questions in natural language. 
 ms.topic: conceptual
 ms.date: 05/20/2024
@@ -15,8 +15,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use Copilot to analyze automation activity and ask product questions (preview)
-
+# Use Copilot to analyze automation activity and ask product questions 
 [!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
 
 Understanding automation activity and performance are key to achieving operational excellence and reliability goals, regardless of the size of the automation estate, team, or role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
@@ -25,17 +24,14 @@ Understanding automation activity and performance are key to achieving operation
 
 > [!IMPORTANT]
 >
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
 > - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
-> - Read the [responsible AI FAQs for Copilot in automation center (preview)](faqs-copilot-automation-center.md) to learn more about this new Copilot experience.
+> - Read the [responsible AI FAQs for Copilot in automation center](faqs-copilot-automation-center.md) to learn more about this new Copilot experience.
 > - More FAQs: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md), [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 ## Prerequisites
 
 - A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) located in the United States.
-- During initial preview, you must have an environment in the United States region to use this feature. If you don’t have access to an environment based in the United States, you can ask your administrator to [create a new environment in Power Platform admin center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
 - Check [known limitations](#known-issues-and-limitations) for more information.
 
 ## How does it work?
@@ -53,7 +49,7 @@ The first three skills in the above table translate natural language queries (qu
 
 ### Copilot skill selector
 
-When Copilot opens (per session) the first time, the "cloud flow" skill is preselected. You can modify the skill by choosing the dropdown next to the phrase **Questions about** and selecting your preferred skill. During the initial preview phase, the conversation history is reset each time you change the skill.
+When Copilot opens (per session) the first time, the "cloud flow" skill is preselected. You can modify the skill by choosing the dropdown next to the phrase **Questions about** and selecting your preferred skill. The conversation history is reset each time you change the skill.
 
 :::image type="content" source="media/automation-center/copilot-skill-chooser.png" alt-text="Screenshot of an experience in Copilot where users can select from a list of skills." lightbox="media/automation-center/copilot-skill-chooser.png":::
 
@@ -283,8 +279,8 @@ The following list contains known limitations of Copilot in automation center.
 ## Related information
 
 - [Get started with Copilot in cloud flows](get-started-with-copilot.md)
-- [FAQs for Copilot in automation center (preview)](faqs-copilot-automation-center.md)
-- [FAQ for Copilot in desktop flow activity (preview)](faqs-copilot-automation-activity.md)
+- [FAQs for Copilot in automation center](faqs-copilot-automation-center.md)
+- [FAQ for Copilot in desktop flow activity](faqs-copilot-automation-activity.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
