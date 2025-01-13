@@ -5,7 +5,7 @@ suite: flow
 author: DBEKI
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 11/21/2024
+ms.date: 01/13/2025
 ms.author: dbekirop
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -17,14 +17,14 @@ search.audienceType:
 
 You can cancel or resubmit your flow runs in bulk instead of one at a time, which can be a huge time saver.
 
-## Power Platform Admin Center (PPAC) configuration
+## Resubmit flow runs initiated by instant triggers
 
-   > [!IMPORTANT]
-   > The new PPAC setting for resubmitting flow runs initiated by instant triggers will start rolling out on January 13, 2025, and will be available in all regions by the end of January 2025. PPAC admins can follow the instructions in this section to enable all users to resubmit flow runs initiated by instant triggers. Other trigger types will not be affected by this change and will continue to function as they have previously.
+As a Power Platform administrator, you can enable users to resubmit flow runs initiated by instant triggers. Instant triggers, which are used to manually start flows, can be activated through Power Automate, a mobile app, or a button in a canvas app, among other methods.
 
-As of January 2025, a new configuration in the Power Platform Admin Center (PPAC) allows Power Platform admins to enable users to resubmit flow runs initiated by instant triggers. Instant triggers, which are used to manually start flows, can be activated through the cloud flows portal, mobile app, or a button in a Power App, among other methods.
+> [!IMPORTANT]
+> The new setting for resubmitting flow runs initiated by instant triggers will start rolling out on January 13, 2025, and is expected to be available in all regions by the end of January 2025. Power Platform administrators can follow the instructions in this section to enable all users to resubmit flow runs initiated by instant triggers. Other trigger types will not be affected by this change and will continue to function as they have previously.
 
-To enable flow run resubmission for flows initiated by instant triggers, run the PowerShell commands in the following steps. If you are not familiar with running PowerShell commands for the Power Platform refer to this [Cmdlets](https://review.learn.microsoft.com/power-platform/admin/powerapps-powershell?branch=main#cmdlets) guide:
+To enable flow run resubmission for flows initiated by instant triggers, run the following PowerShell commands.
 
 1. Sign in to your tenant account: 
 
@@ -42,6 +42,8 @@ To enable flow run resubmission for flows initiated by instant triggers, run the
    $tenantSettings.powerPlatform.powerAutomate.disableFlowRunResubmission= $False
    Set-TenantSettings -RequestBody $tenantSettings
    ```
+
+To learn more about PowerShell commands, see [PowerShell support for Power Apps and Power Automate](/power-platform/admin/powerapps-powershell#cmdlets).
 
 ## Resubmit flow runs
 
