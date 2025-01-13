@@ -1,5 +1,5 @@
 ---
-title: Use copilot to analyze desktop flow activity (preview)
+title: Use copilot to analyze desktop flow activity
 description: Use copilot to analyze flow runs, errors, machines and more by asking questions in natural language. 
 ms.topic: conceptual
 ms.date: 08/29/2024
@@ -14,7 +14,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use copilot to analyze desktop flow activity (preview)
+# Use copilot to analyze desktop flow activity
 
 [This article is prerelease documentation and is subject to change.]
 
@@ -22,7 +22,6 @@ Understanding automation performance is key to achieving operational excellence 
 
 :::image type="content" source="media/analyze-automation-activity-copilot/copilot-overview.png" alt-text="Screenshot of a copilot experience as part of desktop flow activity page." lightbox="media/analyze-automation-activity-copilot/copilot-overview.png":::
 
-[!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 The latest advancements in AI provide us with unprecedented opportunities to explore new automation health monitoring use-cases that could include anything from simple data exploration to anomaly detection, smart recommendations, and even self-healing bots.
 
@@ -32,13 +31,12 @@ With copilot now able to analyze desktop flow activity we're taking the first st
 >
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
 > - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
-> - Read the [responsible AI FAQs for copilot in desktop flow activity (preview)](../faqs-copilot-automation-activity.md) to learn more about this new copilot experience.
+> - Read the [responsible AI FAQs for copilot in desktop flow activity](../faqs-copilot-automation-activity.md) to learn more about this new copilot experience.
 > - More FAQs: [Responsible AI FAQs for Power Automate](../responsible-ai-overview.md),[FAQ for copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 ## Prerequisites
 
 - A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in the United States.
-- During initial preview, you must have an environment in the United States region to use this feature. If you don’t have access to an environment that's based in the United States, you can ask your administrator to [create a new environment in Power Platform admin center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
 - Check [known limitations](#known-issues-and-limitations) for more information.
 
 ## How does it work?
@@ -201,7 +199,7 @@ The following list contains known limitations of the copilot in desktop flow act
 ## Related information
 
 - [Get started with Copilot in cloud flows (preview)](../get-started-with-copilot.md)
-- [FAQ for Copilot in desktop flow activity (preview)](../faqs-copilot-automation-activity.md)
+- [FAQ for Copilot in desktop flow activity](../faqs-copilot-automation-activity.md)
 - [FAQ for Copilot in cloud flows](../faqs-copilot.md)
 - [FAQ for Copilot in Power Automate Process Mining](../faqs-copilot-in-process-mining.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
