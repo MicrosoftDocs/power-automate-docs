@@ -17,6 +17,32 @@ search.audienceType:
 
 You can cancel or resubmit your flow runs in bulk instead of one at a time, which can be a huge time saver.
 
+## Power Platform Admin Center (PPAC) configuration
+
+   > [!IMPORTANT]
+   > The new PPAC setting for resubmitting flow runs initiated by instant triggers will start rolling out on January 13, 2025, and will be available in all regions by the end of January 2025. PPAC admins can follow the instructions in this section to enable all users to resubmit flow runs initiated by instant triggers. Other trigger types will not be affected by this change and will continue to function as they have previously.
+
+As of January 2025, a new configuration in the Power Platform Admin Center (PPAC) allows Power Platform admins to enable users to resubmit flow runs initiated by instant triggers. Instant triggers, which are used to manually start flows, can be activated through the cloud flows portal, mobile app, or a button in a Power App, among other methods.
+
+To enable flow run resubmission for flows initiated by instant triggers, run the PowerShell commands in the following steps. If you are not familiar with running PowerShell commands for the Power Platform refer to this [Cmdlets](https://review.learn.microsoft.com/power-platform/admin/powerapps-powershell?branch=main#cmdlets) guide:
+
+1. Sign in to your tenant account: 
+
+  ```powershell
+   Add-PowerAppsAccount -Endpoint "prod" -TenantID <Tenant_ID>
+   ```
+1. Retrieve and store your tenant settings in TenantSettings:
+   
+  ```powershell
+   $tenantSettings = Get-TenantSettings
+   ```
+1. Set the powerPlatform.powerAutomate.disableFlowRunResubmission flag to **False**, to allow flow run resubmissions for cloud flows initialized by instant triggers.
+
+  ```powershell
+   $tenantSettings.powerPlatform.powerAutomate.disableFlowRunResubmission= $False
+   Set-TenantSettings -RequestBody $tenantSettings
+   ```
+
 ## Resubmit flow runs
 
 You can resubmit previous runs of a flow in bulk. To do this, follow these steps:
