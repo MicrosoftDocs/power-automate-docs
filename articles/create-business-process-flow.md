@@ -132,6 +132,33 @@ This article shows you how to create a business process flow with [Power Apps](/
 > - Use the mini-map to navigate quickly to different parts of the process. This is useful when you have a complicated process that scrolls off the screen.  
 > - To add a description for the business process, select **Details** under the process name in the left corner of the business process flow window. You can use up to 2,000 characters. 
 
+### What you need to know when designing business process flows with branches  
+ Take notice of the following information when you design the business process flow with the branches:  
+  
+-   A process can span across a maximum of 5 unique entities.  
+  
+-   You can use a maximum of 30 stages per process and a maximum of 30 steps per stage.  
+  
+-   Each branch can be no more than 10 levels deep.  
+  
+-   Branching rule must be based on the steps in the stage that immediately precedes it.  
+  
+-   You can combine multiple conditions in a rule by using the `AND` operator or the `OR` operator, but not both operators.  
+  
+-   When you define a process flow, you can optionally select an entity relationship. This relationship must a 1:N (One-to-Many) entity relationship.  
+  
+-   More than one active process can run concurrently on the same data record.  
+  
+-   You can rearrange tiles (Stages, Steps, Conditions etc.) on the process flow  using drag and drop.  
+  
+-   When merging branches using the connector command to connect two stages, all peer branches must merge to a single stage. The peer branches must all either merge to a single stage, or each peer branch must end the process. A peer branch can’t merge with other branches and at the same time end the process.  
+  
+> [!NOTE]
+> - An entity used in the process can be revisited multiple times (multiple closed entity loops).  
+> - A process can go back to the previous stage regardless of an entity type. For example, if the active stage is **Deliver Quote** on a quote record, process users can move the active stage back to the **Propose** stage on an opportunity record.  
+>   
+>   In another example, suppose a process is currently in the **Present Proposal** stage in your process flow: **Qualify Lead** > **Identify Needs** > **Create Proposal** > **Present Proposal** > **Close**. If the proposal presented to the customer requires more research to identify customer needs, users can simply select the **Identify Needs** stage of your process and choose **Set Active**.  
+
 <a name="BKMK_Editbusinessprocessflows"></a>   
 ## Edit a business process flow  
  To edit a business process flow, open the solution explorer, select **Processes**, and then select the **Business Process Flow** from the list of processes that you want to edit.  
