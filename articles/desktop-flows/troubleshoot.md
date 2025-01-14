@@ -1,10 +1,10 @@
 ---
-title: Troubleshoot desktop flows
+title: Troubleshoot desktop flows machine registration and cloud runtime issues
 description: See how to troubleshoot common issues of Power Automate desktop flows.
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 11/05/2024
+ms.date: 01/13/2025
 ms.author: pefelesk
 ms.reviewer: tapanm
 contributors:
@@ -30,21 +30,21 @@ To open the Power Automate troubleshoot tab:
 ## Diagnose runtime connectivity issues
 
 >[!NOTE]
->You can access to the diagnostic tool from Power Automate console as well. Select **help**. From the dropdown select **troubleshooter** then select **diagnose connectivity issues for cloud runtime**. 
+>You can access the diagnostic tool from Power Automate console as well. Select **help**. From the dropdown, select **troubleshooter** > **diagnose connectivity issues for cloud runtime**.
 
-The diagnostic tool helps you identify connectivity issues between your computer and services required to run Power Automate. It can help debug both cloud runtime and machine registration issues you may be experiencing. To run the tool, click the "Launch diagnostic tool" button in the troubleshoot tab in the machine runtime.
+The diagnostic tool helps you identify connectivity issues between your computer and services required to run Power Automate. It can help debug both cloud runtime and machine registration issues you might experience. To run the tool, select **Launch diagnostic tool** in the troubleshoot tab in the machine runtime.
 
-When running the tool, Power Automate tries to connect to each requied service. If a connection fails, the logs can help you understand the list of endpoints you must allow. For the cloud runtime to work, the Power Automate service (UIFlowService) running on your machine must have access to *.dynamics.com, *.servicebus.windows.net, *.gateway.prod.island.powerapps.com, and *.api.powerplatform.com.
+When you run the tool, Power Automate tries to connect to each required service. If a connection fails, the logs can help you understand the list of endpoints you must allow. For the cloud runtime to work, the Power Automate service (UIFlowService) running on your machine must have access to *.dynamics.com, *.servicebus.windows.net, *.gateway.prod.island.powerapps.com, and *.api.powerplatform.com.
 
-What the tool is able to check differs depending on whether your machine is registered or not. If you are experiencing problems registering your machine, it is recommended to read [registration troubleshooting documentation](https://learn.microsoft.com/en-us/troubleshoot/power-platform/power-automate/desktop-flows/desktop-flow-machine-registration-troubleshooting) prior to running the tool. The following is a list of endpoints the tool checks and actions to take depending on your machine state.
+The tool can check different items based on whether your machine is registered. If you experience problems registering your machine, read [registration troubleshooting documentation](https://learn.microsoft.com/en-us/troubleshoot/power-platform/power-automate/desktop-flows/desktop-flow-machine-registration-troubleshooting) before running the tool. The following table lists the endpoints the tool checks and the actions to take depending on your machine state.
 
 | Required services | What it checks | What to do if it fails |
 | --------|  ---------| ---- |
-| Azure Relay (*.servicebus.windows.net) | If the machine is registered, it checks the specific endpoints used for machine-cloud communication that are established upon registration. If you computer is not registered, it checks a static relay endpoint. | If your machine is not registered, ensure *.servicebus.windows.net has connectivity. If your machine is registered, you can either allow *.servicebus.windows.net or specifically the endpoints in the logs |
-| Dataverse (*.dynamics.com) | If the machine is registered, it contacts your specific dataverse. If the machine is not registered, it does not do a check | Allow connectivity to *.dynamics.com or your team’s dataverse URL |
-| Desktop flow service (*.gateway.prod.island.powerapps.com and *.api.powerplatform.com) | If the machine is registered, it checks that the endpoint is reachable for desktop flow runtime | The logs should tell you what failed. Through version 2.51, *.gateway.prod.island.powerapps.com must be reachable. From 2.52 onward, *.api.powerplatform.com must also be reachable. |
+| Azure Relay (*.servicebus.windows.net) | If the machine is registered, it checks the specific endpoints used for machine-cloud communication that are established upon registration. If your computer isn't registered, it checks a static relay endpoint. | If your machine isn't registered, ensure *.servicebus.windows.net has connectivity. If your machine is registered, you can either allow *.servicebus.windows.net or specifically the endpoints in the logs. |
+| Dataverse (*.dynamics.com) | If the machine is registered, it contacts your specific Dataverse environment. If the machine isn't registered, it doesn't do a check. | Allow connectivity to *.dynamics.com or your team’s Dataverse URL. |
+| Desktop flow service (*.gateway.prod.island.powerapps.com and *.api.powerplatform.com) | If the machine is registered, it checks that the endpoint is reachable for desktop flow runtime. | The logs should tell you what failed. Up to version 2.51, *.gateway.prod.island.powerapps.com must be reachable. Starting with version 2.52, *.api.powerplatform.com must also be reachable. |
 
-Remember that the Power Automate service (UIFlowService) running on your machine is making the call to required services. On-premises proxy servers may have rules that require calls to come from a specific user. Please consider [changing the on-premises Service account](#change-the-on-premises-service-account) to fix these errors if a specific endpoint works from a user sesion but not via the Power Automate service.
+Remember that the Power Automate service (UIFlowService) running on your machine is making the call to required services. On-premises proxy servers might have rules that require calls to come from a specific user. Consider [changing the on-premises service account](#change-the-on-premises-service-account) to fix these errors if a specific endpoint works in a user session but not via the Power Automate service.
 
 You can see the list of all [services required for desktop flow runtime](/ip-address-configuration.md).
 
