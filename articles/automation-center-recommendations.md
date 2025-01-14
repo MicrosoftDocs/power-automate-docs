@@ -220,6 +220,18 @@ The following list of recommendations aims to provide proactive guidance and act
 | Category | Orchestration |  
 | Recommended action(s) | - Use work queues to group and process multiple work items in a run. </br>- Prioritize them based on their importance and expiration date, and improve processing throughput, overall efficiency, and resiliency. </br>- You also get robust monitoring capabilities (including the ability to reprioritize or reprocess work as needed). |  
 
+### Desktop flows not running
+
+| Category or object | Details |  
+|---|---|  
+| Title | Desktop flows not running |  
+| Card details | A user session or a connection problem is preventing {*number of flows*} of your desktop flows to run. |  
+| Recommendation details | {*number of flows*} of your desktop flows need fixes. These flows were scheduled to run in unattended mode, but another user session or a connection problem prevented them from completing. |  
+| Type | Information |  
+| Refresh frequency | Real time |  
+| Category | Orchestration |  
+| Recommended action(s) | Select the identified runs, open the disconnect user menu, and then choose how to end other inactive user sessions on this machine. |  
+
 ## Known limitations
 
 - Deletion of older recommendation isn't yet supported through the user experience in automation center. If you want to clean-up recommendations, consider using the Dataverse [bulk-delete](/power-platform/admin/delete-bulk-records) feature.

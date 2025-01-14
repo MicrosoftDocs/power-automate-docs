@@ -184,6 +184,29 @@ You can share a machine with other users in your organization and give those use
 > [!NOTE]
 > When a user isn't part of an environment anymore, you'll continue seeing the user as deactivated. You'll be notified in the **Manage access** section of the machine if it's shared with deactivated users. In this situation, remove access to them.
 
+## Receive user session related recommendations (preview)
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+
+The **Receive user session related recommendations (preview)** setting enables orchestration-based notifications when an **unattended** desktop flow run is queued but can't be launched due to a locked or disconnected user session of the same user on the machine. When enabled, users receive an [Automation Center recommendation](../automation-center-recommendations.md) titled **Desktop flows not running** that details all affected desktop flow runs, allowing you to take corrective actions within a **10-minute** timeout window.
+
+:::image type="content" source="media/manage-machines/user-orchestration-recommendation.png" alt-text="Screenshot of an orchestration-related recommendation in Automation center showing a user session disconnect request." lightbox="media/manage-machines/user-orchestration-recommendation.png":::
+
+### Supported actions
+
+|Action|Details|
+|-------|---|
+| Disconnect users | Disconnect the users of the selected active runs. |
+| Flow details | Opens the flow details page of the desktop flow listed on the the selected run. |
+| Run details | Opens the desktop flow run details page of the desktop flow listed on the selected run. |
+| Refresh | Refreshes the active run list. |
+
+### Who receives user-session based recommendations
+
+To receive user orchestration-related recommendations in the Automation Center, you must be the owner of the desktop flow connection that created and assigned the desktop flow connection within a cloud flow.  
+
 ## Delete a machine
 
 Although you can't delete a machine from the Power Automate machine runtime, you can do it from the Power Automate portal:
