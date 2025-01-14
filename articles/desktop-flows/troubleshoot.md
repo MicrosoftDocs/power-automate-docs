@@ -36,7 +36,7 @@ The diagnostic tool helps you identify connectivity issues between your computer
 
 When you run the tool, Power Automate tries to connect to each required service. If a connection fails, the logs can help you understand the list of endpoints you must allow. For the cloud runtime to work, the Power Automate service (UIFlowService) running on your machine must have access to *.dynamics.com, *.servicebus.windows.net, *.gateway.prod.island.powerapps.com, and *.api.powerplatform.com.
 
-The tool can check different items based on whether your machine is registered. If you experience problems registering your machine, read [registration troubleshooting documentation](https://learn.microsoft.com/en-us/troubleshoot/power-platform/power-automate/desktop-flows/desktop-flow-machine-registration-troubleshooting) before running the tool. The following table lists the endpoints the tool checks and the actions to take depending on your machine state.
+The tool can check different items based on whether your machine is registered. If you experience problems registering your machine, read [registration troubleshooting documentation](/troubleshoot/power-platform/power-automate/desktop-flows/desktop-flow-machine-registration-troubleshooting) before running the tool. The following table lists the endpoints the tool checks and the actions to take depending on your machine state.
 
 | Required services | What it checks | What to do if it fails |
 | --------|  ---------| ---- |
@@ -46,7 +46,7 @@ The tool can check different items based on whether your machine is registered. 
 
 Remember that the Power Automate service (UIFlowService) running on your machine is making the call to required services. On-premises proxy servers might have rules that require calls to come from a specific user. Consider [changing the on-premises service account](#change-the-on-premises-service-account) to fix these errors if a specific endpoint works in a user session but not via the Power Automate service.
 
-You can see the list of all [services required for desktop flow runtime](/ip-address-configuration.md).
+You can review the list of all [services required for desktop flow runtime](../ip-address-configuration.md).
 
 ## Resolve failed connection between Power Automate components
 
