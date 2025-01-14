@@ -187,11 +187,9 @@ You can share a machine with other users in your organization and give those use
 
 ## Receive user session related recommendations (preview)
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-The **Receive user session related recommendations (preview)** setting enables orchestration-based notifications when an **unattended** desktop flow run is queued but can't be launched due to a locked or disconnected user session of the same user on the machine. When enabled, users receive an [Automation Center recommendation](../automation-center-recommendations.md) titled **Desktop flows not running** that details all affected desktop flow runs, allowing you to take corrective actions within a **10-minute** timeout window.
+The **Receive user session related recommendations (preview)** setting sends orchestration-based notifications when an **unattended** desktop flow run is queued but can't start due to a locked or disconnected user session of the same user on the machine. When turned on, users receive an [Automation Center recommendation](../automation-center-recommendations.md) titled **Desktop flows not running** that details all affected desktop flow runs, allowing you to take corrective actions within a **10-minute** timeout window.
 
 :::image type="content" source="media/manage-machines/user-orchestration-recommendation.png" alt-text="Screenshot of an orchestration-related recommendation in Automation center showing a user session disconnect request." lightbox="media/manage-machines/user-orchestration-recommendation.png":::
 
@@ -206,7 +204,7 @@ The **Receive user session related recommendations (preview)** setting enables o
 
 ### Who receives user-session based recommendations
 
-To receive user orchestration-related recommendations in the Automation Center, you must be the owner of the desktop flow connection that created and assigned the desktop flow connection within a cloud flow.  
+To receive user orchestration recommendations in the Automation Center, you must own the desktop flow connection that created and assigned the desktop flow connection within a cloud flow.
 
 ## Delete a machine
 
