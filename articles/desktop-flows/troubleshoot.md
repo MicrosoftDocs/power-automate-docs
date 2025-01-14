@@ -1,19 +1,23 @@
 ---
-title: Troubleshoot desktop flows machine registration and cloud runtime issues
-description: See how to troubleshoot common issues of Power Automate desktop flows.
+title: Troubleshoot desktop flows runtime
+description: Learn how to resolve common Power Automate desktop flows runtime problems effectively.
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 01/13/2025
+ms.date: 01/14/2025
 ms.author: pefelesk
 ms.reviewer: tapanm
 contributors:
-- PetrosFeleskouras
-- johndund
-- DanaMartens
-search.audienceType: 
+  - PetrosFeleskouras
+  - johndund
+  - DanaMartens
+search.audienceType:
   - flowmaker
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:01/14/2025
 ---
 
 # Troubleshoot desktop flows runtime
