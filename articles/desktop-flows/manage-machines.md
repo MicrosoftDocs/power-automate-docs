@@ -4,10 +4,11 @@ description: Manage machines
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/20/2024
+ms.date: 01/14/2025
 ms.author: kenseongtan
 ms.reviewer: matp
 contributors:
+- rpapostolis
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
