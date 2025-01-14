@@ -3,7 +3,7 @@ title: Data loss prevention (DLP) policy creation
 description: Learn about data loss prevention policies for Power Automate.
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 12/18/2024
+ms.date: 01/14/2025
 ms.author: cgarty
 author: ChrisGarty
 contributors:
@@ -19,7 +19,7 @@ An organization's data is critical to its success. Its data needs to be readily 
 
 Administrators control DLP policies. If a DLP policy is blocking your flows from running, contact your administrator.
 
-[Learn more about protecting your data with Power Platform data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention).
+Learn more about protecting your data with Power Platform in [Data Loss Prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention).
 
 ## Data loss prevention for desktop flows
 
