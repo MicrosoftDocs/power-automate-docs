@@ -3,7 +3,7 @@ title: Install Power Automate
 description: Learn how to install Power Automate for desktop on your device.
 author: johndund
 ms.topic: how-to
-ms.date: 05/28/2024
+ms.date: 01/13/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -68,13 +68,13 @@ If the installation fails, go to the [troubleshooting guide](/troubleshoot/power
 
 By default, Power Automate for desktop notifies you when a new version is available. Select **Update** to automatically download and open the latest installer for your region. You must have admin permissions on your local computer to perform the update. Updating to the latest version is recommended to have the latest features and bug fixes.
 
-Auto-update isn't currently supported with the MSI installation. To learn about managing Power Automate for desktop using System Center Configuration Manager, go to [Manage Power Automate for desktop on Windows](../guidance/automation-coe/manage-pad-on-windows.md).
+Autoupdate isn't currently supported with the MSI installation. To learn about managing Power Automate for desktop using System Center Configuration Manager, go to [Manage Power Automate for desktop on Windows](../guidance/automation-coe/manage-pad-on-windows.md).
 
 New versions of Power Automate MSI installer are served from a URL beginning with https://download.microsoft.com.
 
 ## Determining which install you have on your computer
 
-If you already have Power Automate installed on your machine and you did not install it, you may need to understand if it is the Microsoft Store version or the MSI version. To do this, you can go to Start Menu > Add or remove programs. Then search for "Power Automate". If you see "Power Automate for desktop" in the list, then that is the MSI version. "Power Automate" is the Microsoft Store version. 
+If you already have Power Automate installed on your machine and you didn't install it, check whether it's the Microsoft Store version or the MSI version. To do this, go to Start Menu > Add or remove programs. Then search for "Power Automate". If **Power Automate for desktop** is in the list, it's the MSI version. **Power Automate** is the Microsoft Store version.
 
 ## Uninstall Power Automate
 
