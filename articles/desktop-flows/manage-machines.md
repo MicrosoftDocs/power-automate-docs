@@ -189,7 +189,7 @@ You can share a machine with other users in your organization and give those use
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-The **Receive user session related recommendations (preview)** setting sends orchestration-based notifications when an **unattended** desktop flow run is queued but can't start due to a locked or disconnected user session of the same user on the machine. When turned on, users receive an [Automation Center recommendation](../automation-center-recommendations.md) titled **Desktop flows not running** that details all affected desktop flow runs, allowing you to take corrective actions within a **10-minute** timeout window.
+The **Receive user session related recommendations (preview)** setting sends orchestration-based notifications when an **unattended** desktop flow run is queued but can't start due to a locked or disconnected user session of the same user on the machine. When turned on, users receive an [Automation Center recommendation](../automation-center-recommendations.md) titled "Desktop flows not running" that details all affected desktop flow runs, allowing you to take corrective actions within a 10-minute timeout window.
 
 :::image type="content" source="media/manage-machines/user-orchestration-recommendation.png" alt-text="Screenshot of an orchestration-related recommendation in Automation center showing a user session disconnect request." lightbox="media/manage-machines/user-orchestration-recommendation.png":::
 
