@@ -16,7 +16,7 @@ search.audienceType:
   - enduser
 ---
 
-# Troubleshoot desktop flows machine registration and cloud runtime issues
+# Troubleshoot desktop flows runtime
 
 To open the Power Automate troubleshoot tab:
 
