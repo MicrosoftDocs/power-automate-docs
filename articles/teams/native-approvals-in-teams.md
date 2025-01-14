@@ -27,7 +27,7 @@ These approvals are triggered directly with the Power Automate infrastructure an
 
 Learn more about how to use approvals in Teams in the following video.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWL2mp]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=32135b16-f88d-43dc-8537-a960235611f1]
 
 ## Use the approvals app in Teams
 
