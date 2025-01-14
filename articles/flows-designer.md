@@ -4,12 +4,13 @@ description: Learn about the components in the cloud flows designer.
 suite: flow
 author: kisubedi
 contributors:
+ - lanlanlee2008
  - kisubedi
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 12/12/2024
-ms.author: kisubedi
+ms.date: 01/13/2025
+ms.author: lali
 search.audienceType: 
   - flowmaker
   - enduser
@@ -292,25 +293,27 @@ The new cloud flows designer has smaller cards to facilitate easy navigation. It
 
 ## Limitations and known issues
 
-You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following items:
-- Non-Open API flows (If there's Peek code on an action and if you see the API Connection value instead of OpenAPI Connection in Kind field, it's a non-Open API flow.)
-- Some hybrid triggers:
-   - When a flow is run from business process flow (Dataverse)
-   - Microsoft 365 Compliance Connector
-- A comment
-- Power Pages connector
-- Power Apps v1 trigger
-- Perform a changeset request action (Dataverse)
-- A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
+- You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following items:
+    - Non-Open API flows (If there's Peek code on an action and if you see the API Connection value instead of OpenAPI Connection in Kind field, it's a non-Open API flow.)
+    - Some hybrid triggers:
+       - When a flow is run from business process flow (Dataverse)
+       - Microsoft 365 Compliance Connector
+    - A comment
+    - Power Pages connector
+    - Power Apps v1 trigger
+    - Perform a changeset request action (Dataverse)
+    - A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
 
-As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is gradually becoming the primary interface.
+    As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is gradually becoming the primary interface.
 
-If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply turn off the **New designer** toggle on the menu in the cloud flows designer.
+    If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply turn off the **New designer** toggle on the menu in the cloud flows designer.
 
-:::image type="content" source="media/flows-designer/designer-toggle.png" alt-text="Screenshot of the 'New designer' toggle.":::
+    :::image type="content" source="media/flows-designer/designer-toggle.png" alt-text="Screenshot of the 'New designer' toggle.":::
 
-> [!NOTE]
-> The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.
+    > [!NOTE]
+    > The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.
+
+- If a flow is saved too soon on load, it might be saved without advanced parameters if those parameters weren't fetched yet. As a workaround, you can avoid saving a flow too soon on load. Alternatively, use the classic designer.
 
 ## FAQ
 
