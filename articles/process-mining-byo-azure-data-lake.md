@@ -19,13 +19,14 @@ ms.reviewer: angieandrews
 Power Automate Process Mining gives you the option to store and read event log data directly from [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction). This feature simplifies extract, transform, load (ETL) management by connecting directly to your storage account.
 
 This feature currently supports the ingestion of:
+
 **CSV**
 - single **CSV** file
-- folder with multiple **CSV** files having the same structure (all files are ingested)
+- folder with multiple **CSV** files having the same structure (all files will be ingested)
 
 **Parquet**
 - single **parquet** file
-- folder with multiple **parquet** files having the same structure (all files are ingested)
+- folder with multiple **parquet** files having the same structure (all files will be ingested)
 
 **Delta-Parquet**
 - folder containing a **delta-parquet** structure 
