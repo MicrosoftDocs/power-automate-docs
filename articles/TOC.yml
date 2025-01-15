@@ -866,7 +866,7 @@
         href: process-mining-byo-azure-data-lake-private.md
     - name: Fabric OneLake
       items:
-      - name: Ingest files from Fabric OneLake
+      - name: Ingest files from Fabric OneLake (preview)
         href: process-mining-files-fabric-onelake.md
     - name: Transform and map data
       href: process-mining-transform.md
