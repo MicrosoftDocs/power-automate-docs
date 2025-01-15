@@ -26,11 +26,11 @@ The simplest mechanism to configure a firewall to allow Power Automate cloud flo
 
 ## Logic Apps and connectors for cloud flows runtime
 
-Calls made from a cloud flow go directly through the Azure Logic Apps service. Some examples of these calls include HTTP or HTTP + OpenAPI. 
+Calls made from a cloud flow go directly through the Azure Logic Apps service. Some examples of these calls include HTTP or HTTP + OpenAPI.
 
-Learn which IP addresses are used by that service in [Logic Apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags).
+Learn which IP addresses are used by that service in [Azure Logic Apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags).
 
-If you're restricting inbound or outbound IP addresses on your network (for example, through a firewall), to ensure flows continue to work, update your network configuration to allow both the [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions. Learn more in [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones). In order to automate the process of firewall or configuration updates, you can leverage the Azure IP range downloadable JSON file. [downloadable IP] https://www.microsoft.com/en-us/download/details.aspx?id=56519
+If you're restricting inbound or outbound IP addresses on your network (for example, through a firewall), to ensure flows continue to work, update your network configuration to allow both the [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions. Learn more in [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones). In order to automate the process of firewall or configuration updates, you can leverage the Azure IP range downloadable JSON file in the Download Center: [Downloadable IP](https://www.microsoft.com/download/details.aspx?id=56519)
 
 ## Required endpoints for Power Automate service
 
