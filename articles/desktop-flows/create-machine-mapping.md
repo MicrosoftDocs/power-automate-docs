@@ -64,6 +64,8 @@ To create a mapping between machine(s) and credential(s), complete the following
      > [!NOTE]
      > In the dropdown, you will only see credentials that are usable in **connections** and using CyberArk as a credential store
 
+    :::image type="content" source="./media/manage-machines/Machine-credential.png" alt-text="Screenshot of create new credential store.":::
+
 1. Once the mapping between a machine and credential(s) is done, you can see it in the list of mappings. The mapping can be edited (changing the credentials to be used) or deleted.
 1. If you need to define a new mapping, select the button **Add new**
 1. Once you completed the mappings, select **Save**
