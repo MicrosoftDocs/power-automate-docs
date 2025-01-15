@@ -28,6 +28,7 @@ A machine mapping is a type of credential that can be used in desktop flow conne
     
 2. Example 2: For a server, you can define all the user accounts that can execute your desktop flow.
 
+    :::image type="content" source="./media/manage-machines/machine-mapping.png" alt-text="Screenshot of mapping architecture.":::
 
 ## Availability 
 
@@ -64,7 +65,7 @@ To create a mapping between machine(s) and credential(s), complete the following
      > [!NOTE]
      > In the dropdown, you will only see credentials that are usable in **connections** and using CyberArk as a credential store
 
-    :::image type="content" source="./media/manage-machines/Machine-credential.png" alt-text="Screenshot of create new credential store.":::
+    :::image type="content" source="./media/manage-machines/Machine-credential.png" alt-text="Screenshot of create new mapping.":::
 
 1. Once the mapping between a machine and credential(s) is done, you can see it in the list of mappings. The mapping can be edited (changing the credentials to be used) or deleted.
 1. If you need to define a new mapping, select the button **Add new**
