@@ -36,44 +36,30 @@ This feature currently supports the ingestion of:
 
 ## Prerequisites
 
-- The Data Lake Storage account must be Gen2. You can check this out from the Azure portal. Azure Data Lake Gen1 storage accounts aren't supported.
-- The Data Lake Storage account must have [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
-- The **Owner** role must be attributed to the user performing the initial container setup for the environment for the following users in the same environment. These users are connecting to the same container and must have these assignments:
-    - **Storage Blob Data Reader** or **Storage Blob Data Contributor** role assigned
-    - Azure Resource Manager **Reader** role assigned, at minimum.
+- A Fabric workspace that is different from the default **My workspace**.
+- The **Admin** role must be attributed to the user performing the initial workspace setup for the environment for the other users in the same environment. 
+- The Fabric workspace needs to be shared to the Process Insight Prod service principal with an Admin role. To register the Process Insights Prod service principal, please use the [following steps](/power-automate/process-mining-pbi-workspace#install-azure-tools).
+  :::image type="content" source="media/process-mining-files-fabric-onelake/OneLakeSP.png" alt-text="Screenshot of the Fabric workspace settings with sharing to Process Insights service principal.":::
 
-- **Resource Sharing (CORS)** rule to your storage account should be established to share with Power Automate Process Mining.
-    - Allowed origins must be set to `https://make.powerautomate.com` and `https://make.powerapps.com`.
-    - Allowed methods must include: `get`, `options`, `put`, `post`.
-    - Allowed headers should be as flexible as possible. We recommend defining them as `*`.
-    - Exposed headers should be as flexible as possible. We recommend defining them as `*`.
-    - The maximum age should be as flexible as possible. We recommend using `86400`.
-
-        :::image type="content" source="media/process-mining-byo-azure-data-lake/CORS.png" alt-text="Screenshot of the example of CORS setting screen.":::
-
--   CSV data in your Data Lake Storage should meet the following CSV file format requirements:
-    - **Compression type:** None
-    - **Column delimiter:** Comma (,)
-    - **Row delimiter:** Default and encoding. For example, Default (\r,\n, or \r\n) 
-
-    :::image type="content" source="media/process-mining-byo-azure-data-lake/csv.png" alt-text="Screenshot of the File format settings screen.":::
-
-- All data must be in final event log format and meet the requirements listed in [Data requirements](process-mining-processes-and-data.md#data-requirements). Data should be ready to be mapped to the process mining schema. No data transformation is available post ingestion.
-- The size (width) of the header row is currently limited to 1 MB.
+- A Fabric Lakehouse must be created within this workspace with the the data in supported formats located in the **Files folder of the Lakehouse**.
+  :::image type="content" source="media/process-mining-files-fabric-onelake/LakehouseFileFolder.png" alt-text="Screenshot of the Lakehouse File folder.":::
 
 > [!IMPORTANT]
-> Ensure that time stamp represented in your CSV file follows the ISO 8601 standard format (for example, `YYYY-MM-DD HH:MM:SS.sss` or `YYYY-MM-DDTHH:MM:SS.sss`).
+> Currently not supported:
+> - Fabric Lakehouses with Schema support enabled.
+> - Delta tables in Lakehouse
 
-## Connect to Azure Data Lake Storage
+## Connect to Fabric OneLake
 
 1. On the navigation pane to the left, select **Process mining** > **Start here**.
 1. In the **Process name** field, enter a name for your process.
-1. Under the **Data source** heading, select **Import data** > **Azure Data Lake** > **Continue**.
-:::image type="content" source="media/process-mining-byo-azure-data-lake/CreateProcess.svg" alt-text="Screenshot of the Create process step.":::
+1. Under the **Data source** heading, select **Import data** > **OneLake (preview)** > **Continue**.
+:::image type="content" source="media/process-mining-files-fabric-onelake/CreateProcess.png" alt-text="Screenshot of the Create process step.":::
 
-1. On the **Connection setup** screen, select your **Subscription ID**, **Resource Group**, **Storage account**, and **Container** from the dropdown menus.
+1. Choose an optional Power BI workspace or select Skip.
+1. On the **Connection setup** screen, select your **Fabric Workspace** from the dropdown menu. This will populate the Lakehouse dropdown menu - select the **Lakehouse** containing your data files and click **Next**.
 
-1. Select the file or folder containing the event log data.
+1. Browse the Lakehouse folder structure and select the file or folder containing the event log data.
 
     You can either select a single file or a folder with multiple files. All files must have the same headers and format.
 1. Select **Next**.
@@ -85,7 +71,7 @@ This feature currently supports the ingestion of:
 
 ## Define incremental data refresh settings
 
-You can refresh a process ingested from Azure Data Lake on a schedule, either through a full or incremental refresh. Though there are no retention policies, you can ingest data incrementally using one of the following methods:
+You can refresh a process ingested from Fabric OneLake on a schedule, either through a full or incremental refresh. Though there are no retention policies, you can ingest data incrementally using one of the following methods:
 
 If you selected a *single file* in the previous section, append more data to the selected file.
 
