@@ -17,7 +17,7 @@ ms.reviewer: angieandrews
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-Power Automate Process Mining gives you the option to store and read event log data files directly from [Fabric OneLake](/fabric/onelake/onelake-overview). This feature simplifies extract, transform, load (ETL) management by connecting directly to your OneLake.
+Power Automate Process Mining gives you the option to store and read event log data files directly from [Fabric OneLake](/fabric/onelake/onelake-overview) via [Fabric Lakehouse](/fabric/data-engineering/lakehouse-overview). This feature simplifies extract, transform, load (ETL) management by connecting directly to your OneLake.
 
 This feature currently supports the ingestion of:
 
@@ -41,7 +41,7 @@ This feature currently supports the ingestion of:
 - The Fabric workspace needs to be shared to the **Process Insight Prod service principal with an Admin role**. To register the Process Insights Prod service principal, please use the [following steps](/power-automate/process-mining-pbi-workspace#install-azure-tools).
   :::image type="content" source="media/process-mining-files-fabric-onelake/OneLakeSP.png" alt-text="Screenshot of the Fabric workspace settings with sharing to Process Insights service principal.":::
 
-- A Fabric Lakehouse must be created within this workspace with the the data in supported formats located in the **Files folder of the Lakehouse**.
+- A Fabric Lakehouse must be created within this workspace, with the the data in supported formats located in the **Files folder of the Lakehouse**.
   :::image type="content" source="media/process-mining-files-fabric-onelake/LakehouseFileFolder.png" alt-text="Screenshot of the Lakehouse File folder.":::
 
 > [!IMPORTANT]
