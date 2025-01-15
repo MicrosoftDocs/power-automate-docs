@@ -38,7 +38,7 @@ This feature currently supports the ingestion of:
 
 - A Fabric workspace that is different from the default **My workspace**.
 - The **Admin** role must be attributed to the user performing the initial workspace setup for the environment for the other users in the same environment. 
-- The Fabric workspace needs to be shared to the Process Insight Prod service principal with an Admin role. To register the Process Insights Prod service principal, please use the [following steps](/power-automate/process-mining-pbi-workspace#install-azure-tools).
+- The Fabric workspace needs to be shared to the **Process Insight Prod service principal with an Admin role**. To register the Process Insights Prod service principal, please use the [following steps](/power-automate/process-mining-pbi-workspace#install-azure-tools).
   :::image type="content" source="media/process-mining-files-fabric-onelake/OneLakeSP.png" alt-text="Screenshot of the Fabric workspace settings with sharing to Process Insights service principal.":::
 
 - A Fabric Lakehouse must be created within this workspace with the the data in supported formats located in the **Files folder of the Lakehouse**.
