@@ -15,6 +15,8 @@ ms.reviewer: angieandrews
 
 # Ingest files from Fabric OneLake
 
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+
 Power Automate Process Mining gives you the option to store and read event log data files directly from [Fabric OneLake](/fabric/onelake/onelake-overview). This feature simplifies extract, transform, load (ETL) management by connecting directly to your OneLake.
 
 This feature currently supports the ingestion of:
@@ -28,7 +30,9 @@ This feature currently supports the ingestion of:
 - folder with multiple **parquet** files having the same structure (all files will be ingested)
 
 **Delta-Parquet**
-- folder containing a **delta-parquet** structure 
+- folder containing a **delta-parquet** structure
+
+> [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Prerequisites
 
