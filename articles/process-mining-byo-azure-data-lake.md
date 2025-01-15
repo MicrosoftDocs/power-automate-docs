@@ -48,7 +48,7 @@ This feature currently supports the ingestion of:
 
         :::image type="content" source="media/process-mining-byo-azure-data-lake/CORS.png" alt-text="Screenshot of the example of CORS setting screen.":::
 
--   Data in your Data Lake Storage should meet the following CSV file format requirements:
+-   CSV data in your Data Lake Storage should meet the following CSV file format requirements:
     - **Compression type:** None
     - **Column delimiter:** Comma (,)
     - **Row delimiter:** Default and encoding. For example, Default (\r,\n, or \r\n) 
