@@ -65,7 +65,7 @@ This feature currently supports the ingestion of:
 1. Select **Next**.
 1. On the **Map your data** screen, map your data to the required schema.
 
-    :::image type="content" source="media/process-mining-byo-azure-data-lake/map.png" alt-text="Screenshot of the Map your data screen.":::
+    :::image type="content" source="media/process-mining-files-fabric-onelake/map.png" alt-text="Screenshot of the Map your data screen.":::
 
 1. Complete the connection by selecting **Save and Analyze**.
 
