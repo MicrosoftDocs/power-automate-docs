@@ -18,7 +18,7 @@ search.audienceType:
 
 This feature allows you to map user account credential(s) with your RPA machine(s).
 
-## How does a mapping work 
+## How does a machine mapping work ?
 
 A machine mapping is a type of credential that can be used in desktop flow connection to use specific credentials depending on the machine assigned.
 
@@ -71,7 +71,9 @@ To create a mapping between machine(s) and credential(s), complete the following
 1. If you need to define a new mapping, select the button **Add new**
 1. Once you completed the mappings, select **Save**
 
-You can now use this mapping in a desktop flow connection. Instead of selecting a single credential, you can select this mapping.
+## Use the machine mapping in a desktop flow connection.
+
+You can now use this mapping in a [desktop flow connection](deskop-flow-connections.md). Instead of selecting a single credential, you can select this mapping.
 
 During runtime (when the desktop flow is triggered), depending on which machine the flow has been assigned to run, the appropriate user account credential defined in your mapping will be used to connect on your machine.
 
