@@ -135,23 +135,23 @@ This article shows you how to create a business process flow with [Power Apps](/
 
 ### Design business process flows with branches
 
-Consider these points when designing business process flow with branches:
+Consider these points when designing business process flows with branches:
   
-* A process can span across a maximum of five unique tables.  
-* You can use a maximum of 30 stages per process and a maximum of 30 steps per stage.  
+* A process can span a maximum of five unique tables.  
+* Use a maximum of 30 stages per process and 30 steps per stage.
 * Each branch can be no more than 10 levels deep.  
-* Branching rule must be based on the steps in the stage that immediately precedes it.  
+* Branching rules must be based on the steps in the preceding stage.
 * You can combine multiple conditions in a rule by using the `AND` operator or the `OR` operator, but not both operators.  
-* When you define a process flow, you can optionally select a table relationship. This relationship needs to be a 1:N (One-to-Many) relationship.  
-* More than one active process can run concurrently on the same record.  
-* Rearrange tiles (stages, steps, conditions) on the process flow by dragging and dropping them.
-* When merging branches using the connector command to connect two stages, all peer branches must merge to a single stage. Peer branches must either merge to a single stage or end the process. A peer branch can't merge with other branches and end the process simultaneously.
-  
-> [!NOTE]
-> * You can revisit a table used in the process multiple times (multiple closed entity loops).
-> * A process can return to the previous stage regardless of the table type. For example, if the active stage is **Deliver Quote** on a quote record, users can move the active stage back to the **Propose** stage on an opportunity record.
->
->   In another example, suppose a process is currently in the **Present Proposal** stage in your process flow: **Qualify Lead** > **Identify Needs** > **Create Proposal** > **Present Proposal** > **Close**. If the proposal presented to the customer requires more research to identify customer needs, users can select the **Identify Needs** stage of your process and choose **Set Active**.  
+* When defining a process flow, optionally select a table relationship. This relationship must be a 1:N (One-to-Many) relationship.
+* Multiple active processes can run concurrently on the same record.
+* Rearrange tiles (stages, steps, conditions) on the process flow by dragging and dropping.
+* When merging branches using the connector command, all peer branches must merge to a single stage. Peer branches must merge to a single stage or end the process. A peer branch can't merge with other branches and end the process at the same time.
+* You can revisit a table used in the process multiple times (multiple closed entity loops).
+* A process can return to the previous stage regardless of the table type.
+
+    For example, if the active stage is **Deliver Quote** on a quote record, users can move the active stage back to the **Propose** stage on an opportunity record. 
+
+    In another example, suppose a process is in the **Present Proposal** stage in your process flow: **Qualify Lead** > **Identify Needs** > **Create Proposal** > **Present Proposal** > **Close**. If the proposal requires more research to identify customer needs, users can select the **Identify Needs** stage of your process and choose **Set Active**.  
 
 <a name="BKMK_Editbusinessprocessflows"></a>
 ## Edit a business process flow  
