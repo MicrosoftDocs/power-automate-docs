@@ -4,7 +4,7 @@ description: Learn about the available Cloud Connector operations in Power Autom
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/08/2024
+ms.date: 12/11/2024
 ms.author: iomavrid
 ms.reviewer: 
 contributors:
@@ -16,22 +16,6 @@ search.audienceType:
 ---
 
 # Cloud Connectors as Power Automate for desktop actions
-
-> [!IMPORTANT]
-> There are some known connector action issues in older versions of Power Automate for Desktop (versions older than v2.44). If you're using Power Automate for desktop version 2.43 or earlier, you might experience issues where connector actions don't load correctly in desktop flows such as:
-> - connector actions missing from the designer's action panel
-> - "unknown action" errors in desktop flows linked to connector actions
-> - incorrect console initiated executions (local runs) due to cloud connector actions  
->
-> To resolve this issue, update Power Automate for desktop to the latest available version.
->
-> For patched versions of previous releases, refer to the following list:
-> - [2.43](https://go.microsoft.com/fwlink/?linkid=2272572)
-> - [2.42](https://go.microsoft.com/fwlink/?linkid=2272571)  
-> - [2.41](https://go.microsoft.com/fwlink/?linkid=2272390)  
-> - [2.40](https://go.microsoft.com/fwlink/?linkid=2272389)  
-> - [2.39](https://go.microsoft.com/fwlink/?linkid=2272570)
-> - [2.38](https://go.microsoft.com/fwlink/?linkid=2272859)  
 
 [Cloud Connectors available for Power Automate](/connectors/connector-reference/connector-reference-powerautomate-connectors) are now available for desktop flows as well.
 
