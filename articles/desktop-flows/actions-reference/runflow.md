@@ -20,13 +20,13 @@ search.audienceType:
 
 The **Run desktop flow** action enables you to call other desktop flows while running a specific desktop flow. To use the action, add it to the workspace and select the desktop flow you want to call. If the called flow contains input variables, the action will prompt you to enter their values.
 
-You can also disable the toggle property 'Wait for flow to complete', which is enabled by default. If disabled, the invoked desktop flow runs concurrently with the parent flow. This is useful primarily for certain scenarios, where unexpected popups in the target application could block the parent flow. By running a child flow in parallel, you can monitor and manage these popups, ensuring the parent flow continues smoothly. This improvement provides a workaround given the current concurrency policy, which only allows one flow per machine at a time.
+You can disable the toggle property 'Wait for flow to complete', which is enabled by default. If disabled, the invoked desktop flow runs concurrently with the parent flow. This configuration is useful for scenarios where unexpected popups in the target application block the parent flow. By running a child flow in parallel, you can monitor and manage these popups, ensuring the parent flow continues smoothly. This improvement provides a workaround given the current concurrency policy, which allows only one flow per machine at a time.
 
 >[!IMPORTANT]
 >
-> - Only one parallel flow is allowed to run at this time. If a second child flow is set to run in parallel, an error will occur during runtime.
-> - If a child flow is set to run in parallel, its output variables are ignored. In this case, the 'Run desktop flow' action's produced variables are not shown in the action modal.
-> - Child flows are not allowed to run another child flow in parallel. A parallel flow run is only allowed, if invoked directly from the parent (root) flow. 
+> - Only one parallel flow can run at this time. If a second child flow runs in parallel, an error occurs during runtime.
+> - If a child flow runs in parallel, its output variables are ignored. The variables produced from the 'Run desktop flow' actions aren't shown in the action modal.
+> - Child flows can't run another child flow in parallel. A parallel flow run is allowed only if invoked directly from the parent (root) flow.
 
 To find more information about how to use the **Run desktop flow** action, go to [Run desktop flow from other desktop flows](../how-to/run-desktop-flow-action.md).
 
@@ -47,7 +47,7 @@ Runs a desktop flow that can receive input variables and might produce output va
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Desktop flow|No|Desktop flow||Select the desktop flow to run from within this flow. The called flow always runs in the same Windows session as the parent flow.|
-|Wait for flow to complete|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|If enabled, this desktop flow waits for the invoked desktop flow to complete, before resuming its run. The invoked desktop flow's output variables become normally available to the current flow. If disabled, the invoked desktop flow runs concurrently. Its output variables are ignored in this case.|
+|Wait for flow to complete|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|If enabled, this desktop flow waits for the invoked desktop flow to complete before resuming. The invoked desktop flow's output variables are available to the current flow. If disabled, the invoked desktop flow runs concurrently, and its output variables are ignored.|
 
 ### Variables produced
 
@@ -58,6 +58,6 @@ This action produces the output variables of the selected flow.
 |Exception|Description|
 |-----|-----|
 |Run desktop flow failed|Indicates a problem while running the desktop flow|
-|Desktop flow timed out|Indicates that the desktop flow timed out before it completed its run|
+|Desktop flow timed out|Indicates that the desktop flow timed out before completing its run|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

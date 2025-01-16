@@ -116,18 +116,18 @@ Invokes a method from a SOAP web service.
 |HTTP Authentication|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the web server requires HTTP authentication (that is, the browser displays a popup window asking for a username and password)
 |User name|No|[Text value](../variable-data-types.md#text-value)||The user name for the web server
 |Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the web server
-|Trim whitespaces|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Enable this to trim the whitespaces at the end of the request body of the web service response|
+|Trim whitespaces|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Enable this option to trim the whitespace at the end of the request body of the web service response|
 
 ### <a name="invokesoapserviceaction_builder"></a> Request Builder Parameters
 
 |Argument|Accepts|Description|
 |-----|-----|-----|
-|WSDL|[File](../variable-data-types.md#files-and-folders)|The Web Services Description Language (WSDL) document to build the request with
-|Service|[Text value](../variable-data-types.md#text-value)|The service to invoke
-|Port|[Text value](../variable-data-types.md#text-value)|The port to invoke the service
-|SOAP version|[Text value](../variable-data-types.md#text-value)|The version of the SOAP service
-|Operation|[Text value](../variable-data-types.md#text-value)|The operation to invoke the service
-|Request envelope|[Text value](../variable-data-types.md#text-value)|The envelope to send in the request to invoke the service
+|WSDL|[File](../variable-data-types.md#files-and-folders)|The Web Services Description Language (WSDL) document to build the request with|
+|Service|[Text value](../variable-data-types.md#text-value)|The service to invoke|
+|Port|[Text value](../variable-data-types.md#text-value)|The port to invoke the service|
+|SOAP version|[Text value](../variable-data-types.md#text-value)|The version of the SOAP service|
+|Operation|[Text value](../variable-data-types.md#text-value)|The operation to invoke the service|
+|Request envelope|[Text value](../variable-data-types.md#text-value)|The envelope to send in the request to invoke the service|
 
 ### Variables produced
 
@@ -149,7 +149,7 @@ Invokes a method from a SOAP web service.
 
 ## <a name="invokewebservicebase"></a> Invoke web service
 
-Invokes a web service by sending data and stored the response text.
+Invokes a web service by sending data and stores the response text.
 
 ### Input parameters
 
@@ -209,6 +209,7 @@ Configures the attachments to be added to the web service request. The attachmen
 |Invalid header in custom headers|Indicates that some custom headers were invalid|
 
 ### Known issues
+
 - NTLM Authentication is currently not supported for web requests in Power Automate for desktop.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -27,16 +27,16 @@ To use the action, add it to the workspace and select the desktop flow you want 
 
 ![Screenshot of the available desktop flows in the Run desktop flow action.](media/run-desktop-flow-action/run-desktop-flow-action.png)
 
-When the action runs, depending on the state of the 'Wait for flow to complete' toggle, the parent flow can either be paused until the called desktop flow completes, or they can run in parallel. If the called flow contains input variables, you'll be prompted to populate them. Likewise, if the called flow has output variables, the action will return their values in the parent flow, so long as the parent flow remains paused. If the child flow runs in parallel, no output variables are produced.
+When the action runs, depending on the state of the 'Wait for flow to complete' toggle, the parent flow either pauses until the called desktop flow completes or runs in parallel. If the called flow contains input variables, you're prompted to populate them. Likewise, if the called flow has output variables, the action returns their values in the parent flow, as long as the parent flow remains paused. If the child flow runs in parallel, no output variables are produced.
 
 >[!IMPORTANT]
 >
-> - Only one parallel flow is allowed to run at this time. If a second child flow is set to run in parallel, an error will occur during runtime.
-> - Child flows are not allowed to run another child flow in parallel. A parallel flow run is only allowed, if invoked directly from the parent (root) flow. 
+> - Only one parallel flow is allowed to run at this time. If a second child flow is set to run in parallel, an error occurs during runtime.
+> - Child flows aren't allowed to run another child flow in parallel. A parallel flow run is only allowed, if invoked directly from the parent (root) flow.
 
 > [!NOTE]
 > You can find more information regarding input and output variables in [Input and output variables](../manage-variables.md#input-and-output-variables).
 
 ![Screenshot of the Run desktop flow action.](media/run-desktop-flow-action/run-desktop-flow-action-with-parallel-run-toggle.png)
 
-Power Automate doesn't allow two flows to directly or indirectly call each other to prevent recursions. Additionally, a flow can't have more than 150 dependent flows. If a dependent flow is missing or the parent flow has more than 150 dependencies, the flow won't run.
+Power Automate doesn't allow two flows to directly or indirectly call each other to prevent recursions. Additionally, a flow can't have more than 150 dependent flows. If a dependent flow is missing or the parent flow has more than 150 dependencies, the flow doesn't run.
