@@ -74,7 +74,7 @@ To create an input variable:
 1. When the **New input variable** dialog appears, populate the following fields:
 
     - **Variable name**: The name of the variable in the desktop flow.
-    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list), [datatable](variable-data-types.md#datatable), or [instance](variable-data-types#instances).
+    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list), [datatable](variable-data-types.md#datatable), or [instance](variable-data-types.md#instances).
     - **Default value**: The default value when the flow runs through the flow designer or console. When you create a custom object, list, or datatable input variable, Power Automate allows you to construct the default value through a visual or JSON editor.
         ![Screenshot of a custom object input variable in the visual editor.](media\input-output-variables\custom-object-input-variable.png)
     - **Data subtype**: The exact type of the instance (available only when **Instance** is previously selected as data type): Excel, Word, or Outlook.
@@ -109,7 +109,7 @@ To create an output variable:
 1. When the **New output variable** dialog appears, populate the following fields:
 
     - **Variable name**: The name of the variable in the desktop flow.
-    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list), [datatable](variable-data-types.md#datatable), or [instance](variable-data-types#instances).
+    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list), [datatable](variable-data-types.md#datatable), or [instance](variable-data-types.md#instances).
     - **Data subtype**: The exact type of the instance (available only when **Instance** is previously selected as data type): Excel, Word, or Outlook.
     - **External name**: The external name is the name that appears in the cloud flow designer.
     - **Description**: The description of the variable that appears in the cloud or desktop flow designer while calling the flow.
