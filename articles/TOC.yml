@@ -391,8 +391,6 @@
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
   - name: Create desktop flows using Record with Copilot (preview)
     href: ./desktop-flows/create-flow-using-ai-recorder.md
-  - name: Repair flow automation errors (preview)
-    href: ./desktop-flows/repair-at-runtime.md
   - name: Run desktop flows
     items:
     - name: Run unattended and attended desktop flows from the cloud
@@ -1260,8 +1258,6 @@
     href: responsible-ai-overview.md
   - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
-  - name: FAQ for Copilot expression assistant
-    href: faqs-copilot-expression-assistant.md  
   - name: FAQ for Copilot in automation center
     href: faqs-copilot-automation-center.md
   - name: FAQ for Copilot in desktop flow activity
@@ -1270,10 +1266,16 @@
     href: faqs-copilot-in-process-mining.md
   - name: FAQ for Copilot in Power Automate for desktop
     href: faqs-copilot-in-pad.md
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - name: FAQ for Repair with Copilot at runtime in Power Automate for desktop
     href: faqs-repair-copilot.md
   - name: FAQ for generative actions in cloud flows
     href: faqs-generative-actions.md 
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
   - name: FAQ for generating code with natural language
     href: faqs-copilot-nl-to-code.md
   - name: FAQ for suggested actions in Power Automate for desktop
