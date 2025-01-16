@@ -87,7 +87,7 @@ To create a mapping between machines and credentials, follow these steps:
 
 ## Use the machine mapping in a desktop flow connection
 
-You can now use this mapping in a [desktop flow connection](deskop-flow-connections.md). Instead of selecting a single credential, you can select this mapping.
+You can now use this mapping in a [desktop flow connection](desktop-flow-connections.md). Instead of selecting a single credential, you can select this mapping.
 
 During runtime, the appropriate user account credential defined in your mapping is used to connect to the assigned machine.
 
