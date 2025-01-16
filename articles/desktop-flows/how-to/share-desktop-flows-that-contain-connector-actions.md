@@ -2,10 +2,9 @@
 title: Share desktop flows that contain connector actions
 description: Learn how to share desktop flows that contain connector actions.
 author: jpapadimitriou
-
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/23/2024
+ms.date: 12/12/2024
 ms.author: dipapa
 ms.reviewer: 
 contributors:
@@ -71,6 +70,12 @@ To embed a connection reference to a flow that you have access to as a co-owner:
     :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/embed-connection-reference-to-a-flow.png" alt-text="Screenshot of the Manage Connections menu." border="false":::
 
 1. After you confirm your selection, the connection reference is embedded in the desktop flow.
+
+#### Known limitations
+
+##### Required connection references not automatically included when importing desktop flows
+
+When importing a desktop flow with embedded connection references in a solution, the required connection references aren't automatically included. To work around this current limitation, explicitly include the required connection references in the solution alongside the desktop flow.
 
 ### Console runs
 
