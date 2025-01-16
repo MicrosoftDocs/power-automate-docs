@@ -1,8 +1,9 @@
 ---
 title: IP address configuration
 description: Learn about IP address configuration, the services that Power Automate connect to, various endpoints, and more.
-author: ChrisGarty
+author: samathur
 contributors:
+  - samathur
   - ChrisGarty
   - GiovanniBenitez
   - DBEKI
@@ -12,8 +13,8 @@ contributors:
   - jpapadimitriou
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/22/2024
-ms.author: cgarty
+ms.date: 01/15/2025
+ms.author: samathur
 ms.reviewer: angieandrews
 ---
 
@@ -25,9 +26,11 @@ The simplest mechanism to configure a firewall to allow Power Automate cloud flo
 
 ## Logic Apps and connectors for cloud flows runtime
 
-Calls made from a cloud flow go directly through the Azure Logic Apps service. Some examples of these calls include HTTP or HTTP + OpenAPI. Learn which IP addresses are used by that service in [Logic Apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags).
+Calls made from a cloud flow go directly through the Azure Logic Apps service. Some examples of these calls include HTTP or HTTP + OpenAPI.
 
-If you're restricting inbound or outbound IP addresses on your network (for example, through a firewall), to ensure flows continue to work, update your network configuration to allow both the [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions. Learn more in [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones).
+Learn which IP addresses are used by that service in [Azure Logic Apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags).
+
+If you're restricting inbound or outbound IP addresses on your network (for example, through a firewall), to ensure flows continue to work, update your network configuration to allow both the [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and the [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions. Learn more in [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones). In order to automate the process of firewall or configuration updates, you can leverage the Azure IP range downloadable JSON file in the Download Center: [Downloadable IP](https://www.microsoft.com/download/details.aspx?id=56519)
 
 ## Required endpoints for Power Automate service
 
@@ -36,7 +39,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | Domains | Protocols | Uses |
 | --------|  ---------| ---- |
 | login.microsoft.com<br />login.windows.net<br />login.microsoftonline.com<br />login.live.com<br />secure.aadcdn.microsoftonline-p.com | https | Access to authentication and authorization endpoints. |
-| graph.microsoft.com | https | Access to Microsoft graph for getting user information such as a profile photo. |
+| graph.microsoft.com | https | Access to Microsoft Graph for getting user information such as a profile photo. |
 | *.azure-apim.net | https | Access to the Runtime for connectors. |
 | *.azure-apihub.net | https | Access to the Runtime for connectors. |
 | *.blob.core.windows.net | https | Location of exported flows. |
@@ -52,11 +55,11 @@ The following table lists the services to which Power Automate connects. Ensure 
 |login.partner.microsoftonline.cn|https|Access to the Power Automate for desktop cloud discovery|
 |s2s.config.skype.com<br>use.config.skype.com<br>config.edge.skype.com|https|Access to preview features managed through flighting and configuration endpoints.|
 |s2s.config.ecs.infra.gov.teams.microsoft.us|https|Access to preview features managed through flighting and configuration endpoints for US government cloud.|
-| \*.api.powerplatform.com <br> \*.api.powerplatformusercontent.com | https | Access to several Power Platform APIs. |
-| *.api.gov.powerplatform.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
-| *.api.high.powerplatform.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
-| *.api.appsplatform.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
-| *.api.powerplatform.partner.microsoftonline.cn | https | Access to several Power Platform APIs (21Vinaet - China only). |
+| \*.api.powerplatform.com <br> \*.api.powerplatformusercontent.com <br> *.api.bap.microsoft.com | https | Access to several Power Platform APIs. |
+| *.api.gov.powerplatform.microsoft.us <br> *.gov.api.bap.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
+| *.api.high.powerplatform.microsoft.us <br> *.high.api.bap.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
+| *.api.appsplatform.us <br> *.api.bap.appsplatform.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
+| *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn | https | Access to several Power Platform APIs (21Vinaet - China only). |
 
 ### Endpoints needed to use Power Automate mobile app
 
