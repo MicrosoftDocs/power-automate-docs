@@ -1267,10 +1267,13 @@
   - name: FAQ for Copilot in Power Automate for desktop
     href: faqs-copilot-in-pad.md
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - name: FAQ for Repair with Copilot at runtime in Power Automate for desktop
     href: faqs-repair-copilot.md
   - name: FAQ for generative actions in cloud flows
     href: faqs-generative-actions.md 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
   - name: FAQ for generating code with natural language
