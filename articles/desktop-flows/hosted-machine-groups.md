@@ -650,6 +650,33 @@ Hosted machine groups aren't yet available in the following sovereign cloud:
 
 - China
 
+### Default VM image deprecation for Windows 11 Enterprise 22H2
+
+Windows versions are supported for a limited time to provide the latest security updates, performance improvements, and features. The default VM image on Windows 11 Enterprise 22H2 will be deprecated and replaced with Windows 11 Enterprise 24H2.
+
+> [!NOTE]
+> This does not affect Windows version used in custom VM images.
+
+
+Image scheduled for deprecation:
+| Name | Description| Reference |Deprecation date  (0:00 UTC) | End of support date  (0:00 UTC)|
+| ----------| --------------| ----------| --------------| --------------|
+| Default Windows 11 Enterprise 22H2 Image | Default Windows Desktop Image for use in Microsoft Desktop Flows. Windows 11 Enterprise 22H2 with Microsoft Edge. | MicrosoftWindowsDesktop:windows-ent-cpc:win11-22h2-ent-cpc-os | February 28th, 2025 | May 31st, 2025 |
+
+Recommended alternative image:
+| Name | Description| Reference |
+| ----------| --------------| ----------|
+| Default VM image – Windows 11 Enterprise 24H2 | Default Windows Desktop Image for use in Microsoft Desktop Flows. Windows 11 Enterprise 24H2 with Microsoft Edge. | MicrosoftWindowsDesktop:windows-ent-cpc:win11-24h2-ent-cpc |
+
+Impact:
+- After the deprecation date, deploying new hosted machine groups with the deprecated image will no longer be possible.
+- If no action is taken by the end of support, affected hosted machine groups will be automatically reprovisioned to the recommended default image.
+
+Action:
+1. Review all affected hosted machine group(s) by navigating to the **VM images** tab under the **Machines** page in the Power Automate Portal.
+1. Test your desktop flows with the recommended alternative image in a non-production environment to ensure compatibility.
+3. After validated, use the [update VM image](#update-vm-image-used-by-the-hosted-machine-group) to reprovision the hosted machine group(s) to the recommended alternative default image.
+
 ### Sovereign clouds limitations for hosted machine groups
 
 The following features aren't supported in sovereign clouds:
