@@ -230,7 +230,7 @@ Custom VM images must meet the following requirements:
 - Windows 10 Enterprise version 20H2 or later
 - Windows 11 Enterprise 21H2 or later
 - Generation 2 image
-- Generalized VM image
+- Generalized VM image. Learn how to [generalize VM image](/azure/virtual-machines/generalize).
 - Single Session VM images (multi-session isn’t supported)
 - No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition)
 - Default 64-GB OS disk size. The OS disk size is automatically adjusted to 256 GB
