@@ -373,6 +373,9 @@ To use your virtual network for hosted machines, you need to grant Windows 365 s
 - Windows 365 Network User permission on the virtual network
 
 > [!NOTE]
+> Ensure that the resources have the specified role requirements assigned to the Windows 365 service principal, even if other roles with the same or higher permissions are already assigned.
+
+> [!NOTE]
 > For virtual networks created before November 26, 2023, the Network Contributor role is used to apply permissions on both the resource group and virtual network. The new RBAC roles have more specific permissions. To manually remove the existing roles and add the new roles, refer to the following table for the existing roles used on each Azure resource. Before removing the existing roles, make sure that the updated roles are assigned.
 >
 > | Azure resource | Existing role (before November 26, 2023) | Updated role (after November 26, 2023) |
