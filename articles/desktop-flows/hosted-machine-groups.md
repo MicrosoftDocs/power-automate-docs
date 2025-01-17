@@ -136,12 +136,11 @@ You can personalize your hosted machine groups by providing your own Windows ima
 Custom VM images must meet the following requirements:
 
 - Generation 2 images
-- Generalized VM image
+- Generalized VM image. Learn how to [generalize VM image](/azure/virtual-machines/generalize).
 - 127-GB limit on VM image size
 - Microsoft Edge version 80 or higher
 - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
-Learn how to create a generalized VM image in Azure in [Upload a generalized Windows VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed).
 
 ### Create an Azure compute gallery in Azure and add an image
 
