@@ -211,18 +211,13 @@ This is a preview feature and is available to tenants where Copilot is enabled. 
 #### Scenario 1: Create expression with natural language
 
 1. On the expression editor, select **Create expression with Copilot**.
-
     The user experience that displays is the user experience for expression assistant.
-
 1. In the text box, write a prompt to generate an expression for, and select **Create expression**.
-
     You can reference the flow’s dynamic content in your prompt using their names to build expressions around. For example, assume you have first name, last name, phone number, and TriggerDate as dynamic data in your flow. You can ask following sample prompts:
-
     - Concatenate first name and last name.
     - Grab last four characters of Phone Number.
     - Convert Phone number from Integer to String.
     - Format TriggerDate to 'DD-MM' format.
-
     :::image type="content" source="media/flows-designer/create-expression-nl.png" alt-text="Screenshot of creating an expression with Copilot.":::
 
 #### Scenario 2: Update an existing expression with natural language
@@ -337,4 +332,3 @@ Yes, once the issues noted here are resolved and the new cloud flows designer ca
 
 - [Get started with Copilot in cloud flows](get-started-with-copilot.md)
 - [FAQ for Copilot expression assistant](faqs-copilot-expression-assistant.md)
-
