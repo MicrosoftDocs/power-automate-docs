@@ -659,7 +659,7 @@ Windows versions are supported for a limited time to provide the latest security
 
 
 Image scheduled for deprecation:
-| Name | Description| Reference |Deprecation date  (0:00 UTC) | End of support date  (0:00 UTC)|
+| Name | Description| Reference | Deprecation date  (0:00 UTC) | End of support date  (0:00 UTC) |
 | ----------| --------------| ----------| --------------| --------------|
 | Default Windows 11 Enterprise 22H2 Image | Default Windows Desktop Image for use in Microsoft Desktop Flows. Windows 11 Enterprise 22H2 with Microsoft Edge. | MicrosoftWindowsDesktop:windows-ent-cpc:win11-22h2-ent-cpc-os | February 28th, 2025 | May 31st, 2025 |
 
