@@ -124,8 +124,7 @@ Runs a stored Access macro
 
 ### Variables produced
 
-|Argument|Type|Description|
-|-----|-----|-----|
+This action doesn't produce any variables.
 
 ### <a name="runaccessmacro_onerror"></a> Exceptions
 
@@ -146,8 +145,7 @@ Closes an Access instance
 
 ### Variables produced
 
-|Argument|Type|Description|
-|-----|-----|-----|
+This action doesn't produce any variables.
 
 ### <a name="closeaccess_onerror"></a> Exceptions
 
