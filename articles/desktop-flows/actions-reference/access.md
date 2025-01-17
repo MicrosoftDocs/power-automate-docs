@@ -4,7 +4,7 @@ description: Discover all available Access actions in Power Automate for desktop
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 01/08/2025
+ms.date: 01/17/2025
 ms.author: nimoutzo
 ms.reviewer: DanaMartens
 contributors: null
