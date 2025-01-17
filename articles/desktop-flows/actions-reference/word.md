@@ -38,7 +38,7 @@ Currently, the below actions are available:
 >[!NOTE]
 > Word actions in Power Automate for desktop are compatible with Microsoft Word 2013 or later versions.
 
-## Launch Word
+## <a name="launchword"></a> Launch Word
 
 Opens a new Word instance or opens a Word document.
 
@@ -59,7 +59,7 @@ Opens a new Word instance or opens a Word document.
 |-----|-----|-----|
 |`WordInstance`|Word instance|The specific Word instance for use with later Word actions. This allows the user to specify which of possibly several Word documents to access|
 
-### Exceptions
+### <a name="launchword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -69,7 +69,7 @@ Opens a new Word instance or opens a Word document.
 |Failed to launch Word application|Indicates that Word application could not be launched due to an internal error|
 |Word application is not installed|Indicates that Word application isn't installed on the specific machine|
 
-## Attach to running Word
+## <a name="attachtorunningword"></a> Attach to running Word
 
 Attaches to a Word document that's already open.
 
@@ -85,7 +85,7 @@ Attaches to a Word document that's already open.
 |-----|-----|-----|
 |`WordInstance`|Word instance|The Word instance this action has attached to for use with later Word actions|
 
-### Exceptions
+### <a name="attachtorunningword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -93,7 +93,7 @@ Attaches to a Word document that's already open.
 |Specified Word document not found|Indicates that the specific Word document couldn't be found in the provided location|
 |Failed to launch Word|Indicates that Word application couldn't be launched due to an internal error|
 
-## Save Word
+## <a name="saveword"></a> Save Word
 
 Saves a previously launched Word instance.
 
@@ -110,7 +110,7 @@ Saves a previously launched Word instance.
 
 This action doesn't produce any variables.
 
-### Exceptions
+### <a name="saveword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -118,7 +118,7 @@ This action doesn't produce any variables.
 |The Word instance or the Word document is not initialized|Indicates that Word instance or Word document specified in action isn't initialized|
 |The operation cannot be performed on a read-only document|Indicates that Word document can't be saved because it is opened as read-only|
 
-## Close Word
+## <a name="closeword"></a> Close Word
 
 Closes a Word instance.
 
@@ -135,7 +135,7 @@ Closes a Word instance.
 
 This action doesn't produce any variables.
 
-### Exceptions
+### <a name="closeword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -143,7 +143,7 @@ This action doesn't produce any variables.
 |Failed to save Word|Indicates a problem saving the Word document|
 |The operation cannot be performed on a read-only document|Indicates that Word document can't be saved because it is opened as read-only|
 
-## Read from Word document
+## <a name="readfromword"></a> Read from Word document
 
 Reads the text content from a document of a Word instance.
 
@@ -162,14 +162,14 @@ Reads the text content from a document of a Word instance.
 |-----|-----|-----|
 |WordData|Text value|The value of the retrieved content|
 
-### Exceptions
+### <a name="readfromword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
 |Failed to read the content from a Word document|Indicates a problem retrieving the content from the specified Word document|
 |The Word instance or the Word document is not initialized|Indicates that Word instance or Word document specified in action isn't initialized|
 
-## Write to Word document
+## <a name="writetoword"></a> Write to Word document
 
 Write or append text to a Word file.
 
@@ -187,7 +187,7 @@ Write or append text to a Word file.
 
 This action doesn't produce any variables.
 
-### Exceptions
+### <a name="writetoword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -195,7 +195,7 @@ This action doesn't produce any variables.
 |The operation cannot be performed on a read-only document|Indicates that Word document can't be edited because it is opened as read-only|
 |The write operation on the Word document instance failed|Indicates a problem writing content in the specified Word document|
 
-## Insert image in Word document
+## <a name="insertimagetoword"></a> Insert image in Word document
 
 Insert an image to a Word file.
 
@@ -214,7 +214,7 @@ Insert an image to a Word file.
 
 This action doesn't produce any variables.
 
-### Exceptions
+### <a name="insertimagetoword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -222,7 +222,7 @@ This action doesn't produce any variables.
 |The operation cannot be performed on a read-only document|Indicates that Word document can't be edited because it is opened as read-only|
 |Failed to insert image|Indicates a problem inserting the image in the specified Word document|
 
-## Find and replace words in Word document
+## <a name="findandreplaceword"></a> Find and replace words in Word document
 
 Finds text and replaces it with another in the active worksheet of an Excel instance.
 
@@ -242,7 +242,7 @@ Finds text and replaces it with another in the active worksheet of an Excel inst
 
 This action doesn't produce any variables.
 
-### Exceptions
+### <a name="findandreplaceword_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
