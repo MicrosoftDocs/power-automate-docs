@@ -21,7 +21,7 @@ ms.collection:
 
 # Get started with Power Automate
 
-Power Automate allows you to optimize your business processes across your organization and automate repetitive tasks. This service helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. It does this with the help of with task mining and process mining.
+Power Automate allows you to optimize your business processes across your organization and automate repetitive tasks. This service helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. It does this with the help of task mining and process mining.
 
 ## Get started from the home page
 
