@@ -136,7 +136,7 @@ Environments where you have either system administrator and/or system customizer
 > - To view the environment list in the environment switcher in Power Automate, you must have the Environment Maker, System Customizer, or System Administrator security role in the environment. For information about predefined security roles, see [Predefined security roles](/power-platform/admin/database-security#predefined-security-roles) in the Microsoft Power Platform admin guide.
 > - Make sure that you're in the correct environment *before* you create a flow, an app, or a similar component. You can't easily move components from one environment to another.
 > - Every member in an organization can access the [default environment](/power-platform/admin/environments-overview#the-default-environment). Like any environment, users can see flows where they have sufficient privileges to access a flow.
-> - When you create a flow in one environment, you won't be able to see it from another environment. 
+> - When you create a flow in one environment, you aren't able to see it from another environment.
 
 Learn more in [Environments overview](/power-platform/admin/environments-overview).
 
@@ -146,9 +146,9 @@ Learn more in [Environments overview](/power-platform/admin/environments-overvi
 
 Power Automate and Power Apps both show environments with administrator access and environment maker access.
 
-Power Apps shows environments with app contributor access, when users without a maker-level security role assigned but with edit permission to at least one canvas app in the environment.Learn more in [Choose an environment in Power Apps](/power-apps/maker/canvas-apps/sign-in-to-power-apps#choose-an-environment).
+Power Apps shows environments with app contributor access, when users without a maker-level security role assigned but with edit permission to at least one canvas app in the environment. Learn more in [Choose an environment in Power Apps](/power-apps/maker/canvas-apps/sign-in-to-power-apps#choose-an-environment).
 
-Power Automate shows environments user can approve approvals. Users are granted read access to environments thats have approvals.
+Power Automate shows environments user can approve approvals. Users are granted read access to environments that have approvals.
 
 Since approvals are frequently used in Power Automate, users could have read access to many environments.
 
