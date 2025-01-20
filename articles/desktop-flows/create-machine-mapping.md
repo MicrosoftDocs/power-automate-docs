@@ -18,7 +18,7 @@ ms.custom:
   - ai-seo-date:01/16/2025
 ---
 
-# Create a machine-credential mapping (preview)
+# Create a machine mapping credential (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
@@ -51,7 +51,9 @@ Currently, this feature isn't available for US Government Clouds and China regio
 
 To create a mapping between machines and credentials, follow these steps:
 
-1. Create your [credentials](create-cyberark-credential.md). These credentials must be defined as usable in **connection** to be selected in your mapping.
+1. Ensure you have a Dataverse solution equals to 1.8.36.0 or above.
+2. Ensure the version of Power Automate desktop app is 2.50 or above. 
+3. Create your [credentials](create-cyberark-credential.md). These credentials must be defined as usable in **connection** to be selected in your mapping.
 
     > [!NOTE]
     > Currently, only CyberArk credentials can be used in a mapping.
@@ -62,7 +64,7 @@ To create a mapping between machines and credentials, follow these steps:
 ## Create a machine mapping
 
 1. From the left navigation, select **Credentials**.
-1. Select **New** > **Mapping credential per machine**.
+1. Select **New** > **Mapping between machine and account credential(s)**.
 1. In the wizard, define a credential name and a brief description, then select **Next**.
 1. Define the default value of your mapping used when an assigned machine doesn't have a mapped credential.
 1. For each machine, select one or several credentials to be used to sign in to the machine.
@@ -78,6 +80,7 @@ To create a mapping between machines and credentials, follow these steps:
 
          > [!NOTE]
          > In the dropdown, you only see credentials that are usable in **connections** and using CyberArk as a credential store.
+         > You cannot map a mapping credential to another mapping.
 
         :::image type="content" source="./media/manage-machines/machine-credential.png" alt-text="Screenshot of create new mapping.":::
 
@@ -96,3 +99,4 @@ During runtime, the appropriate user account credential defined in your mapping 
 1. During this preview phase, sharing a mapping isn't supported.
 1. During this preview phase, machine mapping can't use Azure Key Vault credentials.
 1. The run detail page doesn't display the credential used in the credential mapping. Retrieve the credential used in the `flowsession` table in the `credentials` field.
+1. In machine mapping credential, the default credential can be exported / imported but the mappings between machines and user credentials must be reconfigured in the environment where the machine mapping credential has been imported. 
