@@ -33,6 +33,8 @@ To perform the administration operations in the cmdlets, you'll need the followi
 
 - For Dataverse for Teams environments, you must be a Power Platform administrator to manage environments from which you aren't the owner of the team in Microsoft Teams.
 
+#### PowerShell Commands
+
 To enable flow run resubmission for flows initiated by instant triggers, run the following PowerShell commands.  **Please note that it may take approximately an hour or so for the function to become enabled once the PowerShell commands are applied**.
 
 1. Sign in to your tenant account: 
