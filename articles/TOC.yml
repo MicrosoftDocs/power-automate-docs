@@ -741,6 +741,8 @@
       href: ./desktop-flows/actions-reference/aibuilder.md
     - name: Database
       href: ./desktop-flows/actions-reference/database.md
+    - name: Access
+      href: ./desktop-flows/actions-reference/access.md
     - name: Email
       href: ./desktop-flows/actions-reference/email.md
     - name: Exchange Server
@@ -866,6 +868,8 @@
         href: process-mining-byo-azure-data-lake.md
       - name: Bring your own network isolated Azure Data Lake Storage Gen2
         href: process-mining-byo-azure-data-lake-private.md
+    - name: Ingest files from Fabric OneLake (preview)
+      href: process-mining-files-fabric-onelake.md
     - name: Transform and map data
       href: process-mining-transform.md
     - name: Visualize and gain insights from processes
