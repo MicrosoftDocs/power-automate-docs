@@ -2,7 +2,7 @@
 title: Explore Power Automate's automation center 
 description: Explore the comprehensive monitoring and troubleshooting experiences offered by Power Automate's Automation Center, a hub for managing automation activity.
 ms.topic: conceptual
-ms.date: 11/18/2024
+ms.date: 01/21/2025
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
@@ -21,7 +21,6 @@ search.audienceType:
 
 The automation center provides comprehensive monitoring and troubleshooting experiences for your automation processes across Power Automate, catering to various personas involved in automation. Whether you're a maker, an operator, a Center of Excellence (CoE) team member, or a business analyst, the automation center serves as a centralized hub to monitor and manage automation activity within your environment. With its user friendly interface and dashboard, the automation center enables you to gain a holistic view of all automation related data, including recommendations, execution logs, performance metrics, and an integrated copilot.
 
-
 ## Data and visualization strategy
 
 The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#runs-tab) pages is based on cloud and desktop flow run data that is stored in Microsoft Dataverse. These pages are designed to provide you with a top-level view of your flow run activities, including child cloud or desktop flow runs associated with a particular top-level flow. This approach enables you to monitor the entire automation from start to end. It allows you to determine whether the overall automation succeeded or failed, providing data on the total of the runs, among many other metrics.
@@ -29,8 +28,8 @@ The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#r
 > [!NOTE]
 >
 > - Some filters might not be available for some tabs because of the nature of the presented data.
-> - Data under the **Work queues** tab is a premium feature, which require a Power Automate Premium license.
-> - Recommendations are a premium feature, which require a [Managed Environment](/power-platform/admin/managed-environment-enable).
+> - Data under the **Work queues** tab is a premium feature, which requires a Power Automate Premium license.
+> - Recommendations is a premium feature, which requires a [Managed Environment](/power-platform/admin/managed-environment-enable).
 > - When you navigate between tabs, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
 > - Desktop flow related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
 > - Cloud flow run history shown on the overview and runs tab might take up to an hour to be available in Dataverse and the automation center.
@@ -60,12 +59,12 @@ Here are the main tables used in the Automation Center:
 
 This tab provides an end-to-end automation health view within the environment and is based on top-level flow reporting. The [Recommendations](#recommendations) section of this tab provides actionable insights to your automation estate. You can prioritize and address the most important issues and recommendations, based on their potential impact.
 
-
 | Visual | Description |
 | --- | --- |
 | **Recommendations** | List of automation health, compliance, best practice insights, and actionable recommendations. |
 
-### Activity 
+### Activity
+
 | Visual | Description |
 | --- | --- |
 | **Top-level flows** | Number of top-level flows that had one or more runs based on selected filters. Gives an overall automation health indication and helps identify which top-level runs are failing the most. |
@@ -79,14 +78,14 @@ This tab provides an end-to-end automation health view within the environment an
 
 The recommendations section offers both proactive and reactive insights, along with suggestions concerning various elements of your automation landscape. Suggestions might include addressing sudden automation failures, work queues at risk of not meeting their service level agreement (SLA) targets, and unused machines or machine groups in the environment. These recommendations can help you identify areas for improvement and take appropriate action based on their effect. For more information, see [automation center recommendations](automation-center-recommendations.md).
 
-## Copilot 
+## Copilot
 
 Copilot is designed to assist with the analysis of automation activity, work queue performance, and to provide answers to common questions about Power Automate capabilities (generative answers). For example, users can ask about the number of flows that ran yesterday, which queue items are put on hold, or how to analyze activity with Copilot. In response, Copilot generates outputs that provide insights and answers to the questions asked. For more information, see [Use Copilot to analyze automation activity and ask product questions](automation-center-copilot.md).
 
 > [!IMPORTANT]
 >
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
-> - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
+> - Copilot is a new technology that is still being developed. It's optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
 > - Read the [responsible AI FAQs for Copilot in automation center](faqs-copilot-automation-center.md) to learn more about this new copilot experience.
 
 ## Runs tab
@@ -114,7 +113,7 @@ This tab provides metrics to monitor the health status of work queue items, incl
 | **Top work queues by error frequency** | Shows the top five work queues with the highest number of items in error state. |
 
 > [!NOTE]
-> If you filter work queue items by a specific item status, such as "Business exception," any matching item that has already expired won't be considered in the results. This is due to the fact that expired items are deemed unprocessable unless their expiration date is extended first, which takes precedence over lower-level exception type searches.
+> If you filter work queue items by a specific item status, such as "Business exception," any matching item that has already expired isn't considered in the results. This is because expired items are deemed unprocessable unless their expiration date is extended first, which takes precedence over lower-level exception type searches.
 
 ## Known limitations
 
