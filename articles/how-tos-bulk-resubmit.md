@@ -22,9 +22,9 @@ You can cancel or resubmit your flow runs in bulk instead of one at a time, whic
 As a Power Platform administrator, you can enable users to resubmit flow runs initiated by instant triggers. Instant triggers, which are used to manually start flows, can be activated through Power Automate, a mobile app, or a button in a canvas app, among other methods.
 
 > [!IMPORTANT]
-> The new setting for resubmitting flow runs initiated by instant triggers will start rolling out on January 13, 2025, and is expected to be available in all regions by the end of January 2025. Power Platform administrators can follow the instructions in this section to enable all users to resubmit flow runs initiated by instant triggers. Other trigger types are not affected by this change.
+> The new setting for resubmitting flow runs initiated by instant triggers will start rolling out on January 13, 2025, and is expected to be available in all regions by the end of January 2025. To ensure that flow owners cannot resubmit flow runs with connections others have provided to the flow, leave this setting off.  Otherwise, Power Platform administrators can follow the instructions in this section to enable all users to resubmit flow runs initiated by instant triggers. Other trigger types are not affected by this change.
 
-To enable flow run resubmission for flows initiated by instant triggers, run the following PowerShell commands.
+To enable flow run resubmission for flows initiated by instant triggers, run the following PowerShell commands.  Please note that it may take approximately an hour or so for the function to become enabled once the PowerShell commands are applied.
 
 1. Sign in to your tenant account: 
 
