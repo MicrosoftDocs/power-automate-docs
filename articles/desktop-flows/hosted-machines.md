@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/03/2025
+ms.date: 01/17/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -217,6 +217,7 @@ You can personalize your hosted machines by providing your own Windows image dir
 - Japan: Japan East
 - Korea: Korea Central
 - Norway: Norway East
+- Southeast Asia: Singapore
 - Switzerland: Switzerland North
 - United Arab Emirates: UAE North
 - United Kingdom: UK South
@@ -229,7 +230,7 @@ Custom VM images must meet the following requirements:
 - Windows 10 Enterprise version 20H2 or later
 - Windows 11 Enterprise 21H2 or later
 - Generation 2 image
-- Generalized VM image
+- Generalized VM image. Learn more in [generalize VM image](/azure/virtual-machines/generalize).
 - Single Session VM images (multi-session isn’t supported)
 - No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition)
 - Default 64-GB OS disk size. The OS disk size is automatically adjusted to 256 GB
@@ -332,6 +333,7 @@ The virtual network needs to be created in the same location as your hosted mach
 - Japan: Japan East
 - Korea: Korea Central
 - Norway: Norway East
+- Southeast Asia - Singapore
 - Switzerland: Switzerland North
 - United Arab Emirates: UAE North
 - United Kingdom: UK South
@@ -369,6 +371,9 @@ To use your virtual network for hosted machines, you need to grant Windows 365 s
 - Reader permission on the Azure subscription
 - Windows 365 Network Interface Contributor permission on the specified resource group
 - Windows 365 Network User permission on the virtual network
+
+> [!NOTE]
+> Ensure the resources have the specified role requirements assigned to the Windows 365 service principal, even if other roles with the same or higher permissions are already assigned.
 
 > [!NOTE]
 > For virtual networks created before November 26, 2023, the Network Contributor role is used to apply permissions on both the resource group and virtual network. The new RBAC roles have more specific permissions. To manually remove the existing roles and add the new roles, refer to the following table for the existing roles used on each Azure resource. Before removing the existing roles, make sure that the updated roles are assigned.
@@ -591,6 +596,7 @@ The following list displays all the supported Power Platform geographies in the 
 - Japan 
 - Korea
 - Norway
+- Southeast Asia
 - Switzerland
 - United Arab Emirates
 - United Kingdom
