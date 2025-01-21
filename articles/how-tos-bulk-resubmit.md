@@ -19,12 +19,21 @@ You can cancel or resubmit your flow runs in bulk instead of one at a time, whic
 
 ## Resubmit flow runs initiated by instant triggers
 
-As a Power Platform administrator, you can enable users to resubmit flow runs initiated by instant triggers. Instant triggers, which are used to manually start flows, can be activated through Power Automate, a mobile app, or a button in a canvas app, among other methods.
+Administrators can enable users to resubmit flow runs initiated by instant triggers. Instant triggers, which are used to manually start flows, can be activated through Power Automate, a mobile app, or a button in a canvas app, among other methods.
 
 > [!IMPORTANT]
 > The new setting for resubmitting flow runs initiated by instant triggers will start rolling out on January 13, 2025, and is expected to be available in all regions by the end of January 2025. To ensure that flow owners cannot resubmit flow runs with connections others have provided to the flow, leave this setting off.  Otherwise, Power Platform administrators can follow the instructions in this section to enable all users to resubmit flow runs initiated by instant triggers. Other trigger types are not affected by this change.
 
-To enable flow run resubmission for flows initiated by instant triggers, run the following PowerShell commands.  Please note that it may take approximately an hour or so for the function to become enabled once the PowerShell commands are applied.
+### Prerequisite
+To perform the administration operations in the cmdlets, you'll need the following:
+
+- Any of these roles from Microsoft Entra ID, Tenant admin, Power Platform administrator, Dynamics 365 Service Administrator, can access the Power Apps admin PowerShell cmdlets. These roles no longer require a Power Apps plan for administrative access to the Power Apps admin PowerShell cmdlets. However, these administrators need to sign in to the Power Platform admin center at least once before using the PowerShell cmdlets. If this isn't done, the cmdlets fail with an authorization error.
+
+- Power Platform administrator or Dynamics 365 administrator permissions are required if you need to search through another user's resources. Note that environment admins only have access to those environments and environment resources for which they have permissions.
+
+- For Dataverse for Teams environments, you must be a Power Platform administrator to manage environments from which you aren't the owner of the team in Microsoft Teams.
+
+To enable flow run resubmission for flows initiated by instant triggers, run the following PowerShell commands.  **Please note that it may take approximately an hour or so for the function to become enabled once the PowerShell commands are applied**.
 
 1. Sign in to your tenant account: 
 
