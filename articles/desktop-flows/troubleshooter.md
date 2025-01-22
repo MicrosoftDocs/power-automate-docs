@@ -22,7 +22,7 @@ The troubleshooter in Power Automate for desktop is a component that allows you 
 
 :::image type="content" source="media/troubleshooter/troubleshooter-window-four-categories.png" alt-text="Troubleshooter main screen" border="false":::
 
-The troubleshooter includes four categories of diagnostics:
+The troubleshooter includes six categories of diagnostics:
 
 * connectivity
 * Dataverse
@@ -76,11 +76,11 @@ After a category is checked for issues end to end, there’s always the option t
 
 ## Dataverse issues
 
-This category detects potential issues around Dataverse that may affect Power Automate for desktop:
+This category detects potential issues around Dataverse that might affect Power Automate for desktop:
 
-* **Provisioning**: This step checks if the user can have a Dataverse database provisioned in the selected environment.
-* **Permissions**: This step check if the user has the required permissions to access the selected environment.
-* **Required endpoints**: This step checks whether the required endpoints for the respective policies are normally accessible.
+* **Provisioning**: This step checks whether the user can provision a Dataverse database in the selected environment.
+* **Permissions**: This step checks whether the user has the required permissions to access the selected environment.
+* **Required endpoints**: This step checks whether the required endpoints for the respective policies are accessible.
 
 ## Installation issues
 
