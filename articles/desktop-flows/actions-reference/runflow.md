@@ -25,7 +25,7 @@ You can disable the toggle property 'Wait for flow to complete', which is enable
 >[!IMPORTANT]
 >
 > - Only one parallel flow can run at this time. If a second child flow runs in parallel, an error occurs during runtime.
-> - If a child flow runs in parallel, its output variables are ignored. The variables produced from the 'Run desktop flow' actions aren't shown in the action modal.
+> - If a child flow runs in parallel, its output variables are ignored. The variables produced from the 'Run desktop flow' action aren't shown in the action modal.
 > - Child flows can't run another child flow in parallel. A parallel flow run is allowed only if invoked directly from the parent (root) flow.
 
 To find more information about how to use the **Run desktop flow** action, go to [Run desktop flow from other desktop flows](../how-to/run-desktop-flow-action.md).
