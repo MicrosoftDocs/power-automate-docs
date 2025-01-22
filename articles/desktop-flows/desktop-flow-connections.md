@@ -13,7 +13,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create desktop flow connections
+# Manage desktop flow connections
 
 > [!IMPORTANT]
 > Before using a machine to run desktop flows from the cloud, ensure that the machine is secured and the machine's admins are trusted.
@@ -31,7 +31,7 @@ Before using the **Run desktop flow** action in your cloud flow to trigger a des
 
 There are two different methods to connect Power Automate with your machines (or groups).
 
-## Connect with username and password
+## Create a connection: Connect with username and password
 
 With this option, you need to provide the machine information and device credentials:
 
@@ -56,7 +56,7 @@ With this option, you need to provide the machine information and device credent
 
   :::image type="content" source="media/desktop-flows-setup/credentials-screen.png" alt-text="Screenshot that shows where to enter the credentials for the connection.":::
 
-## Connect with sign-in for attended runs
+## Create a connection: Connect with sign-in for attended runs
 
 With this option, you don't need to provide session credentials. This option might be helpful when your organization doesn't allow username and password for user sessions.
 
@@ -99,24 +99,14 @@ The desktop flow connection is automatically created.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
-## Select a run owner
-
-A run owner of a Desktop Flow is the user whose permissions are checked during the flow execution.
-
-Connections created using the Power Automate Portal use the connection's creator (the user who creates the connection) as the run owner.
-
-However, you can choose to select a specific identity as the run owner.
-More information: [Set a run owner on a Desktop Flow connection](/how-to/set-runowner-desktopflowconnection)
-
-# Share desktop flow connection
+## Share a desktop flow connection
 
 Limitations:
 - Only Desktop Flow with a specified run owner identity can be shared: [Select a run owner](#select-a-run-owner)
 - Recipients of Desktop Flows connection sharing are limited to Service Principal users
-- Desktop Flow connection cannot be shared with the "Can Share" permission
+- Desktop Flow connection cannot be shared with the "Can Share" permission (only "Can use" or "Can edit")
 
-
-You can share a machine with other users in your organization and give those users specific permissions to access it.
+You can share a connection with other Service Principal users in your organization and give those Service Principal users specific permissions to access it.
 
 1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com/).
 2. Go to **Monitor** > **Connection**.
@@ -126,3 +116,17 @@ You can share a machine with other users in your organization and give those use
 - Can use
 - Can edit
 6. Select **Save**
+
+## Select a run owner
+
+A run owner of a Desktop Flow is the user whose permissions are checked during the flow execution.
+
+By default, connections created using the Power Automate Portal use the connection's creator (the user who creates the connection) as the run owner.
+
+However, you can choose to select a specific identity as the run owner.
+More information: [Set a run owner on a Desktop Flow connection](/power-automate/desktop-flows/how-to/set-runowner-desktopflowconnection)
+
+## Desktop Flow connection audit
+
+You can see the Desktop Flow run owner in the run status page. More information: [Run status](/power-automate/desktop-flows/monitor-run-details#run-status)
+You can also see the summary of Desktop Flow run owners usage in the Desktop Flow activity page : [Desktop Flow activity](/power-automate/desktop-flows/desktop-flow-activity)
