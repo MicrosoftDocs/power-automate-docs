@@ -139,6 +139,10 @@ When you start a recording, you can choose which screen to record and which micr
 
 The recorder captures a video of the selected screen, audio from the chosen microphone, and necessary UI metadata to build the desktop flow.
 
+## Can you turn off Record with Copilot?
+
+You can turn off Copilot for Power Automate, which also turns off Record with Copilot. Learn more in [Enable or disable Copilot in Power Automate](../copilot-overview.md#enable-or-disable-copilot-in-power-automate).
+
 ## Share your feedback
 
 Do you have any thoughts on Record with Copilot? We'd love to hear from you! Send us a note at <powerautomate-ai@microsoft.com>. We’d love to chat with you.
