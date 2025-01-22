@@ -59,10 +59,7 @@ To configure Power Automate for desktop to your liking, select the **Settings** 
 
 :::image type="content" source="media/console/console-settings-panel-with-appearence.png" alt-text="Screenshot of the console settings pane.":::
 
-Under **Application**, choose if Power Automate should launch automatically and if closing the console also closes the application.
-
 Under **Appearance**, choose if Power Automate should work in light or dark mode (preview).
-
 :::image type="content" source="media/console/dark-mode-preview.png" alt-text="Screenshot of the dark mode experience in Power Automate for desktop.":::
 
 Under **Flow run control**, use the **Monitoring/Notifications** dropdown to choose if Power Automate should display integrated Windows notifications, a custom flow monitoring window, or no notifications. Learn more about Power Automate notifications in [Runtime notifications](runtime-notifications.md).
