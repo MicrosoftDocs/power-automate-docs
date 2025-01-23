@@ -24,7 +24,11 @@ ms.custom:
 
 This feature lets you map user account credentials to your robotic process automation (RPA) machines.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is gradually rolling out across regions and might not be available in your region.
 
 ## How a machine mapping works
 
