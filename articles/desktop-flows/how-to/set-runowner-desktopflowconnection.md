@@ -1,6 +1,6 @@
 ---
-title: Set a run owner on a Desktop Flow connection
-description: Set a Service Principal identity as a run owner on a Desktop Flow connection by sending an HTTP PUT request to the Power Platform Service
+title: Set a run owner on a Desktop Flow connection (preview)
+description: Set a Service Principal identity as a run owner on a Desktop Flow connection by sending an HTTP PUT request to the Power Platform Service (preview)
 author: iriverain
 ms.topic: article
 ms.date: 02/19/2024
@@ -12,7 +12,7 @@ search.audienceType:
   - enduser
 ---
 
-# Set a run owner on a Desktop Flow connection
+# Set a run owner on a Desktop Flow connection (preview)
 
 > [!NOTE]
 > This feature is only enabled for Public Preview.
