@@ -1,73 +1,88 @@
 ---
-title: Set a run owner on a Desktop Flow connection (preview)
-description: Set a Service Principal identity as a run owner on a Desktop Flow connection by sending an HTTP PUT request to the Power Platform Service (preview)
+title: Set a run owner on a desktop flow connection (preview)
+description: Learn how to set a run owner on a desktop flow connection using a service principal identity in Power Automate (preview).
 author: iriverain
 ms.topic: article
-ms.date: 02/19/2024
+ms.date: 01/24/2025
 ms.author: iriverain
 ms.reviewer: iriverain
 ms.subservice: desktop-flow
-search.audienceType: 
+search.audienceType:
   - flowmaker
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:01/24/2025
 ---
 
-# Set a run owner on a Desktop Flow connection (preview)
+# Set a run owner on a desktop flow connection (preview)
 
-> [!NOTE]
-> This feature is only enabled for Public Preview.
-A run owner of a Desktop Flow is the user whose permissions are checked during the flow execution.
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 To run a flow, a user needs:
-- To have the "Environment Maker" role at minimum (defined in the Power Automate Admin Center).
-- To have access to Dataverse entities used by the flow, including:
-    - The machine or machine group (or hosted machine group, if applicable)
-    - The Desktop Flow script
-    - Credentials (if any on the connection)
-    - Any dependency inside the desktop flow script (such as cloud connector, credential, etc.)
-    - Work queues (if any used by the flow)
 
-Connections created using the Power Automate Portal use the connection's creator (the user who creates the connection) as the run owner.
+- To have the "Environment Maker" role at minimum (defined in the Power Automate admin center).
+- To have access to Dataverse tables used by the flow, including:
+  - The machine or machine group (or hosted machine group, if applicable)
+  - The Desktop Flow script
+  - Credentials (if any on the connection)
+  - Any dependency inside the desktop flow script (such as cloud connector, credential, etc.)
+  - Work queues (if used by the flow)
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is gradually rolling out across regions and might not be available in your region.
+> - A run owner of a desktop flow is the user whose permissions are checked during the flow execution.
+
+Connections created using the Power Automate portal use the connection's creator (the user who creates the connection) as the run owner.
 
 Users can now explicitly select a Microsoft Entra Identity as the run owner.
 
-Only connections with an explicitly selected run owner can be shared with other users. In this case, recipients of Desktop Flows connection sharing are limited to Service Principal users.
+Only connections with an explicitly selected run owner can be shared with other users. In this case, recipients of desktop flow connection sharing are limited to service principal users.
 
 ## Restrictions
 
 ### Run owner identity restrictions
-1. The explicit run owner needs to be of type Service Principal
-2. The Service Principal needs to be registered in the same tenant as the connection creator
-3. Connections with an explicit run owner only support certificate-based authentication
+
+- The explicit run owner needs to be of type Service Principal.
+- The service principal needs to be registered in the same tenant as the connection creator.
+- Connections with an explicit run owner only support certificate-based authentication.
 
 ### Product restrictions
-1. Connections with an explicit run owner can't be used to run desktop flow with non-embedded cloud flows.
-2. "Connect with sign-in for attended runs" connections aren't supported.
+
+- Connections with an explicit run owner can't be used to run a desktop flow with non-embedded cloud flows.
+- "Connect with sign-in for attended runs" connections aren't supported.
 
 > [!NOTE]
-> The feature is available in Public Preview only. Some Desktop Flows features aren't supported until general availability:
+> Some desktop flow features aren't supported until general availability:
 > - Updates on connections credentials
 > - [Machine Group password rotation](/power-automate/desktop-flows/manage-machine-groups#change-machine-groups-password)
+
 ### Connection restrictions
-1. An explicit run owner identity can be update on a connection but it can't be removed. You need to create a new connection, without the run owner identity, if you want to remove the run owner identity on the connection.
+
+- An explicit run owner identity can be updated on a connection but it can't be removed. You need to create a new connection, without the run owner identity, if you want to remove the run owner identity on the connection.
 
 ## Prerequisite
 
-Have a Service Principal User already setup in Microsoft Entra with a certificate based authentication.
+Have a service principal user already set up in Microsoft Entra with certificate-based authentication.
 
-## How to set up the Service Principal identity used as run owner
+## How to set up the service principal identity used as run owner
 
 > [!IMPORTANT]
-> In this article, you must replace all squared brackets [...] in URLs and input/output data with values specific to your scenario.
-### Register the Service Principal identity as an environment application user
+> In this article, replace all squared brackets `[...]` in URLs and input/output data with values specific to your scenario.
 
-1. Add the Service Principal user as an application user on your environment: [Manage Application User](/power-platform/admin/manage-application-users)
+### Register the service principal identity as an environment application user
 
-2. Add the role "Environment Maker" to the application user: [Manage Roles for an Application User](/power-platform/admin/manage-application-users#manage-roles-for-an-application-user)
+1. Add the service principal user as an application user on your environment. Learn more in [Manage Application User](/power-platform/admin/manage-application-users).
 
-### Share Dataverse entities
+1. Add the "Environment Maker" role to the application user. Learn more in [Manage Roles for an Application User](/power-platform/admin/manage-application-users#manage-roles-for-an-application-user)
 
-| Entity  |  Link  |
+### Share Dataverse tables
+
+| Table  |  Link  |
 |-------|---------------|
 | Machine | [Share a machine](/power-automate/desktop-flows/manage-machines#share-a-machine) |
 | Machine Group | [Share a machine group](/power-automate/desktop-flows/manage-machine-groups#share-a-machine-group) |
@@ -80,11 +95,11 @@ Have a Service Principal User already setup in Microsoft Entra with a certificat
 
 ### Request an access token
 
-First, request an access token to interact with the Power Platform API. More information: [Request an access token](/power-platform/admin/programmability-authentication-v2#step-5-request-an-access-token).
+First, request an access token to interact with the Power Platform API. Learn more in [Request an access token](/power-platform/admin/programmability-authentication-v2#step-5-request-an-access-token).
 
 ### Send a request to create a connection with run owner
 
-To create a connection, send an `HTTP PUT` to the Power Apps API to create the connection, using the access token that you obtained earlier.
+To create a connection, send an `HTTP PUT` request to the Power Apps API to create the connection, using the access token you obtained earlier.
 
 ```HTTP
 PUT https://[ENVIRONMENT_ID_URL].environment.api.powerplatform.com/connectivity/connectors/shared_uiflow/connections/[CONNECTION_ID]?api-version=1
@@ -96,26 +111,26 @@ Authorization: Bearer eyJ0eXAiOiJKV1QiLCJu...
 
 | Placeholder  |  Description  | Example |
 |-------|---------------|------|
-| ENVIRONMENT_ID_URL | The environment ID, with all separators removed, and the last two characters separated by a period | 37520647-dbdf-49fa-ba01-6134c14680c4 -> 37520647dbdf49faba016134c14680.c4 |
-| CONNECTION_ID | The connection ID used to create the connection. It needs to be a valid GUID. You can use the `New-Guid` PowerShell command to get this GUID. | a8a85e2f-1dec-44ce-8814-a37c34234317 |
+| ENVIRONMENT_ID_URL | The environment ID, with all separators removed, and the last two characters separated by a period. | 00aa00aa-bb11-cc22-dd33-44ee44ee44ee -> 00aa00aabb11cc22dd3344ee44ee44ee |
+| CONNECTION_ID | The connection ID used to create the connection. It needs to be a valid GUID. You can use the `New-Guid` PowerShell command to create a GUID. | aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb |
 
 The body content changes according to the type of machine credentials used.
 
-If you use a credential, it needs to be shared to the Service Principal identity before creating the connection. More information: [Share a credential](/power-automate/desktop-flows/create-azurekeyvault-credential#share-a-credential)
+If you use a credential, it needs to be shared with the service principal identity before creating the connection. Learn more in [Share a credential](/power-automate/desktop-flows/create-azurekeyvault-credential#share-a-credential)
 
 Placeholders defined for the request body:
 
 | Placeholder  |  Description  | Example |
 |-------|---------------|------|
-| ENVIRONMENT_ID | The environment ID | 37520647-dbdf-49fa-ba01-6134c14680c4 |
-| DISPLAY_NAME | The connection display name in the Power Automate Portal | InvoiceAppConnection |
-| CREDENTIAL_ID | The credential ID. More information: [Get the credential ID](#get-the-credential-id) | 81164aed-6905-445e-a190-d9c2a576f6c8 |
-| ENVIRONMENT_VARIABLE_USERNAME | The name of the environment variable that contains the machine account name. More information: [Get an environment variable name](#get-an-environment-variable-name) | new_ContosoLogin |
-| ENVIRONMENT_VARIABLE_PASSWORD | The name of the environment variable that contains password for the account. More information: [Get an environment variable name](#get-an-environment-variable-name) | new_ContosoPassword |
-| GROUP_ID | The group ID you want to create the connection for. More information: [Get the group ID of the machine or group](#get-the-group-id-of-the-machine-or-group) | dd4cac14-0b49-475d-b274-3ad41a4e82a7 |
-| APP_ID | The application Id (or client ID) of your Service Principal Identity that is used as run owner | 73ba3759-88a8-4107-b58c-fe71d1a4d171 |
-| PFX | The base64 encoded string of your Service Principal Personal Information Exchange (PFX) certificate file. More information: [Get the base64 encoding of your certificate](#get-the-base64-encoding-of-your-service-principal-certificate) | MIIKdQIBA...ICB9A= |
-| PASSWORD | The password of the Service Principal certificate. Can be left empty if null | |
+| ENVIRONMENT_ID | The environment ID | 00aa00aa-bb11-cc22-dd33-44ee44ee44ee |
+| DISPLAY_NAME | The connection display name in the Power Automate portal | InvoiceAppConnection |
+| CREDENTIAL_ID | The credential ID. Learn more in [Get the credential ID](#get-the-credential-id) | bbbbbbbb-1111-2222-3333-cccccccccccc |
+| ENVIRONMENT_VARIABLE_USERNAME | The name of the environment variable that contains the machine account name. Learn more in [Get an environment variable name](#get-an-environment-variable-name) | new_ContosoLogin |
+| ENVIRONMENT_VARIABLE_PASSWORD | The name of the environment variable that contains the password for the account. Learn more in [Get an environment variable name](#get-an-environment-variable-name) | new_ContosoPassword |
+| GROUP_ID | The group ID you want to create the connection for. Learn more in [Get the group ID of the machine or group](#get-the-group-id-of-the-machine-or-group) | dd4cac14-0b49-475d-b274-3ad41a4e82a7 |
+| APP_ID | The application ID (or client ID) of your service principal identity that is used as run owner.| 73ba3759-88a8-4107-b58c-fe71d1a4d171 |
+| PFX | The base64 encoded string of your service principal personal information exchange (PFX) certificate file. Learn more in [Get the base64 encoding of your certificate](#get-the-base64-encoding-of-your-service-principal-certificate) | MIIKdQIBA...ICB9A= |
+| PASSWORD | The password of the service principal certificate. Can be left empty if null | |
 
 #### Connection without credentials
 
@@ -152,7 +167,7 @@ Placeholders defined for the request body:
 }
 ```
 
-#### Connection with Azure Key vault Password-based authentication credentials
+#### Connection with Azure Key Vault password-based authentication credentials
 
 ```json
 {
@@ -188,7 +203,7 @@ Placeholders defined for the request body:
 }
 ```
 
-#### Connection with Azure Key vault Certificate-based authentication credentials
+#### Connection with Azure Key Vault certificate-based authentication credentials
 
 ```json
 {
@@ -260,12 +275,12 @@ Placeholders defined for the request body:
 }
 ```
 
-### Connection Creation Response
+### Connection creation response
 
-Once the request is completed, you can see the newly created connection in the Power Automate Portal.
-You can also use the connection for Desktop Flow executions if all necessary permissions are provided. See: [Share Dataverse entities](#share-dataverse-entities) 
+Once the request is completed, you can see the newly created connection in the Power Automate portal. You can also use the connection for desktop flow executions if all necessary permissions are provided. Learn more in [Share Dataverse entities](#share-dataverse-entities).
 
 Response format:
+
 ```json
 {
   "name": "[CONNECTION_ID]",
@@ -282,14 +297,16 @@ Response format:
 ```
 
 The response contains:
-- the `CONNECTION_ID`: ID of your new connection
-- the `CONNECTION_STATUS`: the creation status.
+
+- `CONNECTION_ID`: ID of your new connection
+- `CONNECTION_STATUS`: the creation status
 
 > [!IMPORTANT]
 > Check that the connection status received is `Connected`. You can receive a valid response (201 Created) with an invalid connection status.
-If there's an error at the connection creation, the error details will appear in the response.
+If there's an error creating the connection, the response shows the error details.
 
 Error response:
+
 ```json
 {
   "error": {
@@ -313,13 +330,14 @@ Error response:
 
 ## Update a connection with a run owner
 
-You can update an existing connection with new parameters (display name, credentials, run owner identity) using the same PUT request as for the Create Connection request (#create-a-connection-with-a-run-owner). Keep the same connection ID as the existing connection in the request URL.
+You can update an existing connection with new parameters (display name, credentials, run owner identity) using the same PUT request as for the [Create Connection request](#create-a-connection-with-a-run-owner). Keep the same connection ID as the existing connection in the request URL.
 
 > [!IMPORTANT]
-> Removing a run owner on an existing identity isn't allowed. If you want to block the usage of a service principal, you can deactivate it in your Dataverse organization: [Deactivate an application user](/power-platform/admin/manage-application-users#activate-or-deactivate-an-application-user)
+> Removing a run owner on an existing identity isn't allowed. If you want to block the usage of a service principal, you can deactivate it in your Dataverse organization. Learn more in [Deactivate an application user](/power-platform/admin/manage-application-users#activate-or-deactivate-an-application-user)
+
 ## Delete a connection with a run owner
 
-You can delete the connection using the Delete button in the Connection page of the Power Automate Portal.
+You can delete the connection using the **Delete** button in the Connection page of the Power Automate portal.
 
 ### Appendix
 
@@ -327,12 +345,12 @@ You can delete the connection using the Delete button in the Connection page of 
 
 To be able to create the connection, get the group ID associated with the machine or machine group.
 
-- If it's a group, you can go to **Monitor** > **Machines** > **Machine groups** and select the group. You can then get the group ID from the URL.
-- If it's a machine, go to **Data** > **Tables** > **All** > **Flow Machine Group**. Search for your machine in the list and display the column **Flow Machine Group**, it's the group ID associated with your machine.
+- If it's a group, go to **Monitor** > **Machines** > **Machine groups** and select the group. You can then get the group ID from the URL.
+- If it's a machine, go to **Data** > **Tables** > **All** > **Flow Machine Group**. Search for your machine in the list and display the column **Flow Machine Group**. It's the group ID associated with your machine.
 
-### Get the base64 encoding of your Service Principal certificate
+### Get the base64 encoding of your service principal certificate
 
-You can use PowerShell to get it:
+You can use PowerShell to get the base64 encoding of your service principal certificate:
 
 ```powershell
 $filePath = "C:\path\to\your\certificate.pfx"
@@ -343,10 +361,15 @@ $base64String
 
 ### Get the credential ID
 
-Go to **Data** > **Tables** > **All** > **Credential**. Search for your credential in the list and display the column **Credential**, it's the credential ID associated with your credential.
+To get the credential ID:
+
+1. Go to **Data** > **Tables** > **All** > **Credential**.
+1. Search for your credential in the list and display the column **Credential**. It's the credential ID associated with your credential.
 
 ### Get an environment variable name
 
-In the **Credential** page, select your credential and select the **View dependencies** button, then select **See in Solution**.
-In the solution page, search for the environment variables used by your credential and look at the **Name** column.
-The column value is the name of your environment variable.
+To get an environment variable name:
+
+1. In the **Credential** page, select your credential and select the **View dependencies** button
+1. Select **See in Solution**.
+1. In the solution page, search for the environment variables used by your credential and look at the **Name** column. The column value is the name of your environment variable.
