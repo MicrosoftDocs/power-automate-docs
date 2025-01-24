@@ -277,7 +277,7 @@ Placeholders defined for the request body:
 
 ### Connection creation response
 
-Once the request is completed, you can see the newly created connection in the Power Automate portal. You can also use the connection for desktop flow executions if all necessary permissions are provided. Learn more in [Share Dataverse entities](#share-dataverse-entities).
+Once the request is completed, you can see the newly created connection in the Power Automate portal. You can also use the connection for desktop flow executions if all necessary permissions are provided. Learn more in [Share Dataverse tables](#share-dataverse-tables).
 
 Response format:
 
