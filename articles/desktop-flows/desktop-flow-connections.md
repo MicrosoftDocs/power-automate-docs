@@ -4,7 +4,7 @@ description: See how to manage connections to trigger desktop flows from cloud f
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/24/2025
+ms.date: 01/27/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -99,15 +99,15 @@ The desktop flow connection is automatically created.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
-## Share a desktop flow connection
+## Share a desktop flow connection (preview)
 
-Limitations:
-
-- You can only share desktop flows with a specified run owner identity. Learn more in [Select a run owner](#select-a-run-owner).
-- Recipients of desktop flow connection sharing are limited to service principal users.
-- You can't share a desktop flow connection with the "Can Share" permission (only "Can use" or "Can edit").
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 You can share a connection with other Service Principal users in your organization and give those Service Principal users specific permissions to access it.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+To share a desktop flow connection:
 
 1. Sign in to [Power Automate](https://make.powerautomate.com/).
 1. Go to **Monitor** > **Connection**.
@@ -117,6 +117,12 @@ You can share a connection with other Service Principal users in your organizati
     - Can use
     - Can edit
 1. Select **Save**.
+
+### Limitations
+
+- You can only share desktop flows with a specified run owner identity. Learn more in [Select a run owner](#select-a-run-owner).
+- Recipients of desktop flow connection sharing are limited to service principal users.
+- You can't share a desktop flow connection with the "Can Share" permission (only "Can use" or "Can edit").
 
 ## Select a run owner
 

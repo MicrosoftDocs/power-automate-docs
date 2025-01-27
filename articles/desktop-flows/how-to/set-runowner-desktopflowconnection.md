@@ -3,7 +3,7 @@ title: Set a run owner on a desktop flow connection (preview)
 description: Learn how to set a run owner on a desktop flow connection using a service principal identity in Power Automate (preview).
 author: iriverain
 ms.topic: article
-ms.date: 01/24/2025
+ms.date: 01/27/2025
 ms.author: iriverain
 ms.reviewer: iriverain
 ms.subservice: desktop-flow
@@ -20,6 +20,18 @@ ms.custom:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
+When a connection is shared, the recipient can execute scripts, retrieve script IDs, and CloudConnector IDs, potentially performing unauthorized actions on behalf of the connection owner. This reason is why desktop flow connection sharing wasn't available.
+
+To enable Application Lifecycle Management (ALM) with a pipeline owned by a service principal, a new "run owner" role is included in the desktop flow connection. This new role separates the connection owner from the run owner. Sharing a desktop flow connection with a service principal (also known as pipeline SPN) is only possible if the run owner is another service principal (also known as run owner SPN).
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is gradually rolling out across regions and might not be available in your region.
+> - A run owner of a desktop flow is the user whose permissions are checked during the flow execution.
+> - Connections created using the Power Automate portal use the connection's creator (the user who creates the connection) as the run owner.
+
 To run a flow, a user needs:
 
 - To have the "Environment Maker" role at minimum (defined in the Power Automate admin center).
@@ -29,15 +41,6 @@ To run a flow, a user needs:
   - Credentials (if any on the connection)
   - Any dependency inside the desktop flow script (such as cloud connector, credential, etc.)
   - Work queues (if used by the flow)
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is gradually rolling out across regions and might not be available in your region.
-> - A run owner of a desktop flow is the user whose permissions are checked during the flow execution.
-
-Connections created using the Power Automate portal use the connection's creator (the user who creates the connection) as the run owner.
 
 Users can now explicitly select a Microsoft Entra Identity as the run owner.
 
@@ -81,6 +84,8 @@ Have a service principal user already set up in Microsoft Entra with certificate
 1. Add the "Environment Maker" role to the application user. Learn more in [Manage Roles for an Application User](/power-platform/admin/manage-application-users#manage-roles-for-an-application-user)
 
 ### Share Dataverse tables
+
+The run owner needs to have access to all the Dataverse tables used by the flow during execution.
 
 | Table  |  Link  |
 |-------|---------------|
