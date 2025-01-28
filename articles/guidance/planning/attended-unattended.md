@@ -47,10 +47,9 @@ The following table summarizes the two types of automation scenarios.
 | Sign-in isn't required because the automation assumes that the system is already signed in. | Windows Sign-in is automated with predefined user credentials |
 
 You can use a combination of attended and unattended automation in your
-solution. However, keep in mind that because attended requires an opened 
-session and unattended requires the opposite (no session for the user) 
-**it is not recommended to mix attended and unattended on a same
-machine or machine group**.
+solution. However, since attended requires an active session and unattended 
+requires users to be signed out or have a disconnected session, **it is not 
+recommended to mix attended and unattended on a same machine or machine group**.
 
 In the expense report example, the approval process can be automated with
 unattended automation. The cash reimbursement process might be better suited to attended
