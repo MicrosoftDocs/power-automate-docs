@@ -287,4 +287,8 @@ You can try one of the following:
 
 To resolve this issue, edit each flow and save it. The triggers should start firing again.
 
+# Triggers are not respecting expressions used in them
+
+For triggers, the value of expressions are calculated only when the flow is saved.  For example, if your trigger uses `utcNow()` in an input, when you save the flow `utcNow()` will be calculated and the current UTC time will be inserted into the trigger definition as a hardcoded value.  `utcNow()` will not be recalculated every time the flow is triggered.
+
 [!INCLUDE[footer-include](includes/footer-banner.md)]
