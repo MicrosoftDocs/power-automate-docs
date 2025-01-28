@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 12/17/2024
+ms.date: 01/28/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -115,9 +115,7 @@ We provide a summary view for all runs from both existing and new flow runs post
 
 For environments that are already protected by CMK, protecting flows using CMK can be requested by a Support Ticket.
 
-## Known limitations
-
-### Limitation on non-solution cloud flows triggered by Power Apps
+## Limitation on non-solution cloud flows triggered by Power Apps
 
 Non-solution cloud flows using the Power Apps trigger and are created in CMK-protected environments can't be referenced from an app. An error results when attempting to register the flow from Power Apps. Only solution cloud flows can be referenced from an app in CMK-protected environments. To avoid this situation, [flows should first be added into a Dataverse solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution) so they can be successfully referenced. To prevent this situation, the environment setting to [automatically create flows in Dataverse solutions](/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature) should be enabled in CMK-protected environments. This setting ensures new flows are solution cloud flows.
 
