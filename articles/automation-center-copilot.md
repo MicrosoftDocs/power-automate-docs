@@ -50,7 +50,7 @@ The first three skills in the prior table translate natural language queries (qu
 
 When Copilot opens (per session) the first time, the "cloud flow" skill is preselected. You can modify the skill by choosing the dropdown next to the phrase **Questions about** and selecting your preferred skill. The conversation history is reset each time you change the skill.
 
-:::image type="content" source="media/automation-center/copilot-skill-chooser.png" alt-text="Screenshot of an experience in Copilot where users can select from a list of skills." lightbox="media/automation-center/copilot-skill-chooser.png":::
+:::image type="content" source="media/automation-center/copilot-skill-chooser.png" alt-text="Screenshot of an experience in Copilot where users can select from a list of skills." lightbox="media/automation-center/copilot-skill-chooser-2.png":::
 
 ### High-level process
 
