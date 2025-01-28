@@ -4,7 +4,7 @@ description: Learn about the available flow control actions in desktop flows.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 08/27/2024
+ms.date: 01/20/2025
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -168,6 +168,7 @@ Marks the beginning of a block to handle actions errors.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Name|No|[Text value](../variable-data-types.md#text-value)||The name of the Exception Block for Visual purposes only.|
+|Retry policy|N/A|None, Fixed, Exponential|None|The rules based on which retries are performed. Delays are estimated in seconds.|
 |Capture unexpected logic errors|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Expand the scope of error handling, also capturing logical errors in the flow, for example, dividing a number by zero or trying to access an item from an out of bounds position.|
 
 ### Variables produced
