@@ -1,5 +1,5 @@
 ---
-title: Use generative actions (preview)
+title: Use generative actions in cloud flows (preview)
 description: Learn how to use generative actions in Power Automate to simplify automation with AI-generated suggestions.
 ms.date: 12/20/2024
 ms.topic: conceptual
@@ -13,7 +13,7 @@ ms.collection:
     - bap-ai-copilot
 ---
 
-# Use generative actions (preview)
+# Use generative actions in cloud flows (preview)
 
 [!INCLUDE[cc-preview-features-definition](includes/cc-preview-features-top-note.md)]
 

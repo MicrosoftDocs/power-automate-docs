@@ -11,7 +11,6 @@
     - name: What's new
       href: whats-new.md
 - name: Get started
-  expanded: true
   items: 
     - name: Sign up
       href: sign-up-sign-in.md
@@ -71,7 +70,6 @@
       - name: Regenerate the SAS key used in HTTP trigger flows
         href: regenerate-sas-key.md
     - name: Manage cloud flows
-      expanded: true
       items: 
         - name: Share a flow
           href: create-team-flows.md
