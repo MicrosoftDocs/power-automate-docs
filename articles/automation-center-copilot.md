@@ -19,7 +19,7 @@ search.audienceType:
 
 Understanding automation activity and performance are key to achieving operational excellence and reliability goals, regardless of the size of the automation estate, team, or role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
 
-:::image type="content" source="media/automation-center/copilot-overview.png" alt-text="Screenshot of a copilot experience as part of the automation center page." lightbox="media/automation-center/copilot-overview.png":::
+:::image type="content" source="media/automation-center/copilot-overview.png" alt-text="Screenshot of a copilot experience as part of the automation center page." lightbox="media/automation-center/Copilot-AC.png":::
 
 > [!IMPORTANT]
 >
