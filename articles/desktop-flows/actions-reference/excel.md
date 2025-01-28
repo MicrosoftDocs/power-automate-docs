@@ -1131,8 +1131,9 @@ For this reason, when you try to open an Excel file stored under a OneDrive or S
 * Open a new Excel instance using the **Run application** action. Make sure that you provide enough wait time between actions, allowing the Excel process to load completely, including any add-ins.
 * Use the action **Attach to Excel** to attach to the new process.
 
-### Issue with fata retrieval from Excel Worksheets
-* When the 'Get cell contents as text' option is enabled in the 'Read from Excel worksheet' action, the data will be retrieved exactly as it appears in the Excel worksheet. This means that if the column width is too narrow and the data is displayed as ### in Excel, these symbols will also appear in the result. To avoid this, use the 'Resize columns/rows' action.
+### Case with Read from Excel worksheet
+* When the 'Get cell contents as text' option is enabled in the 'Read from Excel worksheet' action, the data will be retrieved exactly as it appears in the Excel worksheet. This means that if the column width is too narrow and the data is displayed as ### in Excel, these symbols will also appear in the result.
+  * Workaround: To avoid this, use the 'Resize columns/rows' action.
 * If the 'Get cell contents as text' option is not used, the data fetched will be the raw cell values, regardless of how they are displayed or formatted in the worksheet. This means there is no need to use the 'Resize columns/rows' action. For date values, the time will be appended because the Date data type includes time.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
