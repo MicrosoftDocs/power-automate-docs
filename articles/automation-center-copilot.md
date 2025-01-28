@@ -156,8 +156,6 @@ You can influence Copilot's output format by asking for explicit output types li
 
 If you wish to reset the conversation with Copilot, select the three dots `...` next to the copilot name, and then select **New chat**.
 
-:::image type="content" source="media/automation-center/copilot-new-chat.png" alt-text="Screenshot of the New chat option in Copilot to reset a conversation." lightbox="media/automation-center/copilot-new-chat.png":::
-
 ### Edit and rerun FetchXML queries returned by Copilot
 
 You can fine-tune the queries returned by Copilot through in-place edits in the code area. Just change the code to match your new search criteria and select **Run**. To illustrate, let's consider the following prompt:
