@@ -1,6 +1,6 @@
 ---
-title: Overview of the types of flows in Power Automate
-description: Provides an overview of cloud, dekstop, business process flows.
+title: What is Power Automate?
+description: Learn how Power Automate can streamline repetitive tasks with cloud, desktop, and business process flows.
 services: ''
 suite: flow
 documentationcenter: na
@@ -17,7 +17,8 @@ ms.date: 06/05/2023
 ms.author: jamiller
 ms.reviewer: angieandrews
 ---
-# Overview of the different types of flows
+
+# What is Power Automate?
 
 Power Automate is a service that you can use to automate repetitive tasks to bring efficiencies to any organizations.
 

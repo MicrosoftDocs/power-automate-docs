@@ -21,8 +21,8 @@ highlightedContent:
   items:
     # Card
     - title: What is Power Automate?
-      itemType: get-started
-      url: getting-started.md
+      itemType: overview
+      url: flow-types.md
 
     # Card
     - title: What's new in Power Automate?
