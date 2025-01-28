@@ -4,9 +4,9 @@ description: Learn how to avoid anti-patterns
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/28/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
+ms.reviewer: pankajsharma2087
 contributors: 
   - manuelap-msft
 search.audienceType: 
@@ -14,11 +14,11 @@ search.audienceType:
   - flowmaker
 ---
 
-# Avoid Anti-patterns
+# Avoiding anti-patterns
 
-## Avoid nested for-each loops
+Nested For each Loops in Cloud Flows: Impact on Performance and Resources
 
-Nested **For each** loops can be resource-intensive operations in cloud flows and affect performance and resource consumption.
+-  **Resource Intensity and Performance Impact**:  Nested For each loops are resource-intensive operations in cloud flows, impacting both performance and resource consumption.
 
 - **Execution time**: Nested loops can multiple the total number of iterations rapidly. For instance, if you have two loops, each with 10 iterations, the total number of iterations becomes 10 x 10 = 100. This exponential increase can extend the execution time of your flow, especially if each iteration processes large datasets or performs complex operations.
 - **Limits and quotas**: Power Automate enforces limits and quotas, such as the maximum number of iterations allowed within a loop and the overall execution time. Nested loops can quickly approach these limits, leading to flow failures or throttling, particularly when dealing with large datasets or frequent executions.
@@ -28,18 +28,18 @@ Learn more: [Concurrency looping and debatching limits](../../limits-and-config.
 
 Depending on your scenarios, you can avoid nested loops by processing related records from a parent table:
 
-**Scenario:** An outer loop uses the **List Rows** action to retrieve a list of product categories from the *ProductCategory* table where the *IsPromotion* column is true. An inner loop then processes related records from the *Product* table for each category retrieved by the outer loop.
+**Scenario:** An outer loop uses the **List Rows** action to retrieve a list of product categories from the *ProductCategory* table where the *IsPromotion* column is true. An inner loop then processes related-records from the *Product* table for each category retrieved by the outer-loop.
 
 **Alternative approach:** Use OData Query Expansion to streamline this process. This method allows you to work with a single **For each** loop, reducing the total number of requests to Dataverse to just one *RetrieveMultiple* call.
 
-**Implement OData query expansion:**
+Implement OData query expansion:
 - Use the **Expand Query** parameter to specify the lookup column name that links the *ProductCategory* table to the *Product* table. This approach retrieves related records in a single query. For example, set the Expand Query parameter to `Products($select=ProductName,Price)`.
 - Use the **$select** parameter to limit the columns returned from the related table.
 - Retrieve and process relevant records by applying conditions directly on the lookup table’s columns using the **Filter Rows** parameter. For example, set the Filter parameter to  `IsPromotion eq true`.
 
 :::image type="content" source="media/nested-loop.png" alt-text="Screenshot of using the Expand Query and Filter parameter to implement OData query expansion":::
 
-## Avoid infinite runs
+## Avoiding infinite loops
 
 With Power Automate, it's easy to encounter a situation where flows start to trigger infinitely, for example when the flow updates the same table that triggers it.
 
@@ -47,32 +47,32 @@ When saving a flow that might result in an infinite trigger loop, Power Automate
 
 :::image type="content" source="media/infinite-loop.png" alt-text="Screenshot of the warning a maker receives when trying to save a flow that can result in an infinite loop":::
 
-Prevent infinite runs by:
+### How to avoid infinite loops by:
 
-- **Use Trigger Conditions**: Trigger conditions ensure that the flow only runs when specific criteria are met, preventing unnecessary executions. Implement trigger conditions by adding a condition to the trigger to check for certain values or states before the flow proceeds. For example, if your flow updates a status field, you can set a trigger condition to only run the flow if the status isn't already set to the desired value.
+- **Use trigger conditions**: Trigger conditions ensure that the flow only runs when specific criteria is met, preventing unnecessary executions. Implement trigger conditions by adding a condition to the trigger to check for certain values or states before the flow proceeds. For example, if your flow updates a status field, you can set a trigger condition to only run the flow if the status isn't already set to the desired value.
 - **Terminate the flow**: An alternative approach is to stop the flow from continuing if it detects a condition that would cause an infinite loop. End the flow when a specific condition is met by using the **Terminate** action. This approach can be used as a safeguard to prevent further actions if the flow is about to enter an infinite loop. For example, if the flow detects that it has already processed a record, it can terminate itself to avoid reprocessing.
 
-## Avoid performing large numbers of data transformation operations
+## Avoid large numbers of data transformation operations
 
 When working with large-scale data transformations, consider whether the task should be handled as an Extract-Transform-Load (ETL) process. For example, instead of using a Power Automate cloud flow to read data from a large Excel spreadsheet, perform data formatting or validations, and then write the data into Dataverse, consider using [Power Platform Dataflows](/power-query/dataflows/create-use) or another ETL tool instead of cloud flows.
 
 Dataflows are designed to handle large volumes of data efficiently, providing better performance for ETL tasks compared to cloud flows. ETL tools offer specialized features for data transformation, validation, and loading, which can simplify complex data processing tasks.
 
-If you need to manage the data load using orchestration logic that you can implement in cloud flows, consider combining cloud flows with Dataflows. Here’s how you can do it:
+To manage data load with orchestration logic in cloud flows, consider combining cloud flows with Dataflows. Here’s how:
 
 1. **Invoke Dataflow Refresh**:
    - **Action**: Use the Dataflow connector in Power Automate to trigger a refresh action and initiate the ETL process defined in your Dataflow.
    - **Example**: Set up a Cloud Flow that triggers the Dataflow refresh based on a schedule, for example daily, or an event, for example when a new file is uploaded to a SharePoint folder.
 
-2. **Post-ETL Actions**:
-   - **Trigger**: Use the “When a dataflow refresh completes” trigger in Power Automate to perform actions after the ETL process is finished.
-   - **Example**: After the Dataflow completes, you can use a cloud flow to send notifications, update records, or perform more data processing.
+1. **Post-ETL Actions**:
+   - **Trigger**: Use the *When a dataflow refresh completes* trigger in Power Automate to perform actions after the ETL process is finished.
+   - **Example**: After the Dataflow completes, you can use a cloud flow to send notifications, update records, or perform data processing.
 
   :::image type="content" source="media/use-dataflow.png" alt-text="Screenshot of using dataflow actions in a cloud flow" border="true":::
 
-## Avoid using a "For each" loop to update a large number of records
+## Avoid using For each loop to update large numbers of records
 
-Often, users need to create or update thousands of records in a data source when a flow is triggered in Power Automate. Many users end up using a **For Each** loop to process each record sequentially, which can cause latency and delays.
+Often, users need to create or update thousands of records in a data source when a flow is triggered in Power Automate. Many users end up using a **For each** loop to process each record sequentially, which can cause latency and delays.
 
 To improve the performance, try these two approaches:
 
@@ -84,7 +84,7 @@ To improve the performance, try these two approaches:
    :::image type="content" source="media/batch-operation.png" alt-text="A screenshot using the SharePoint API to execute a batch request":::
 
 2. **Parallelism in For each loop**:
-   - **Description**: Enable parallel processing within the "For Each" loop to handle multiple records simultaneously.
+   - **Description**: Enable parallel processing within the **For Each** loop to handle multiple records simultaneously.
    - **Implementation**: Configure the **For Each** loop to process up to 50 records in parallel. This approach is useful for services that don't support batch operations.
    - **Benefits**: Significantly reduces the overall processing time by handling multiple records at the same time.
 
