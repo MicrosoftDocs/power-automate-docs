@@ -108,7 +108,7 @@ From the list of credentials, you can share a mapping with other users:
 1. From **Add People**, enter the name of the people you want to share the mapping with.
 1. Finally, select the permissions for this user (user, user + share, co-owner).
 
-When you share the mapping, you also share all the credentials selected for this mapping. Whenever you update the mapping with new credentials, those credentials are shared with other users of this mapping.
+When you share the mapping, you also share all the credentials selected for this mapping. Whenever you update the mapping with new credentials, those credentials are shared with other users of this mapping. Removing permissions on a machine mapping credential doesn't remove permissions on the mapped credentials.
 
 ## Limitations
 
