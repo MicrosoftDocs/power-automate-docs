@@ -2,7 +2,7 @@
 title: Use Copilot in automation center
 description: Use Copilot to analyze flow runs, work queues, and ask general product questions in natural language. 
 ms.topic: conceptual
-ms.date: 01/21/2025
+ms.date: 01/29/2025
 ms.author: appapaio
 ms.reviewer: dmartens
 contributors:
@@ -19,7 +19,7 @@ search.audienceType:
 
 Understanding automation activity and performance are key to achieving operational excellence and reliability goals, regardless of the size of the automation estate, team, or role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
 
-:::image type="content" source="media/automation-center/copilot-overview.png" alt-text="Screenshot of a copilot experience as part of the automation center page." lightbox="media/automation-center/Copilot-AC.png":::
+:::image type="content" source="media/automation-center/copilot-overview.png" alt-text="Screenshot of a copilot experience as part of the automation center page." lightbox="media/automation-center/copilot-overview.png":::
 
 > [!IMPORTANT]
 >
@@ -50,7 +50,7 @@ The first three skills in the prior table translate natural language queries (qu
 
 When Copilot opens (per session) the first time, the "cloud flow" skill is preselected. You can modify the skill by choosing the dropdown next to the phrase **Questions about** and selecting your preferred skill. The conversation history is reset each time you change the skill.
 
-:::image type="content" source="media/automation-center/copilot-skill-chooser.png" alt-text="Screenshot of an experience in Copilot where users can select from a list of skills." lightbox="media/automation-center/copilot-skill-chooser-2.png":::
+:::image type="content" source="media/automation-center/copilot-skill-chooser.png" alt-text="Screenshot of an experience in Copilot where users can select from a list of skills." lightbox="media/automation-center/copilot-skill-chooser.png":::
 
 ### High-level process
 
