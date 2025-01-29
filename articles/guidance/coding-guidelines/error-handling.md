@@ -4,9 +4,9 @@ description: Learn how to employ robust error handling
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/29/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
+ms.reviewer: pankajsharma2087
 contributors: 
   - manuelap-msft
 search.audienceType: 
@@ -18,9 +18,11 @@ search.audienceType:
 
 Error handling is important for ensuring the reliability and robustness of your automated workflows in Power Automate. Implementing effective error handling strategies can help you manage and resolve issues efficiently. 
 
-Here are some key strategies:
+## Key strategies
 
-## Configure "Run After" settings
+Implement these key strategies to effectively handle errors in your Power Automate flows.
+
+### Configure run after settings
 
 Use the **Configure run after** settings to specify what should happen if an action fails, times out, is skipped, or is successful. For each action, you can set conditions to determine the next steps based on the outcome of the previous action. This approach allows you to create alternative paths for error handling. For example, if an action fails, you can configure to send a notification or log the error details as the next action.
 
@@ -108,7 +110,7 @@ Use the **Compose** action to compose a flow run URL. You can use this URL to di
 > [!CAUTION]
 > Use this option judiciously, as it can result in excessive custom logging and an increased number of actions, which might negatively impact overall performance. Overuse can lead to an anti-pattern, where frequent alerts and actions degrade the efficiency and effectiveness of your workflow.
 
-## Scope actions for error handling
+### Scope actions for error handling
 
 Group related actions into scopes and use scopes to handle errors collectively. You can implement a try-catch pattern using scopes to manage errors. Create a "Try" scope for your main actions and a "Catch" scope for error handling. If an error occurs in the main scope, the error handling scope can be triggered to manage the error. Configure the "Catch" scope to run if the "Try" scope fails.
 
@@ -120,7 +122,7 @@ Use the **Filter array** action to filter the [**Result function**](/azure/logic
 
 You can use the **Create HTML table** action to create an HTML table from this response to send an email alert or store the details in your error logging table. 
 
-## Use retry policy
+### Use retry policy
 
 The retry policy in flow settings is designed to handle transient failures, which are temporary issues that can often be resolved by retrying the action. 
 
@@ -139,7 +141,7 @@ An **exponential retry policy** starts with a short retry interval and gradually
 
 An exponential retry policy improves the likelihood of success without causing excessive load on the system. 
 
-Configure the retry policy by:
+To configure the retry policy:
 
 1. Open your flow in Power Automate and go to the settings of the action you want to configure.
 2. Select the exponential option under the retry policy settings, and configure the initial interval and maximum retry count according to your needs.
@@ -149,18 +151,18 @@ By implementing an exponential retry policy, you can effectively manage transien
 
 :::image type="content" source="media/retry-policy.png" alt-text="A screenshot of the retry policy settings in a cloud flow":::
 
-## Terminate action
+### Terminate action
 
 Use the **Terminate** action to stop the flow and set a specific status (Succeeded, Failed, or Cancelled). Add the **Terminate** action when you need to explicitly stop the flow due to an error. For example, if a critical error occurs, you can use the **Terminate** action to stop the flow and set the status to "Failed," ensuring that no further actions are executed. Provide a status and message to further debug why the flow failed.
 
 :::image type="content" source="media/terminate-flow.png" alt-text="A screenshot of configuring the terminate action":::
 
-## Logging and notifications
+### Logging and notifications
 
 Implement logging and notifications to monitor and track errors. Use actions to log error details to a database, SharePoint list, or other storage solutions. Set up notifications to alert relevant stakeholders when an error occurs. For example, if an error is detected, log the error details and send an email notification to the support team for immediate attention.
 
 Instead of using custom logging, you can also set up [Application Insights](/power-platform/admin/app-insights-cloud-flow) with Power Automate and [create alerts for cloud flow run failures](/power-platform/admin/app-insights-cloud-flow#create-alerts-for-cloud-flow-run-failures)
 
-## Use flow remediation email
+### Use flow remediation email
 
 Power Automate Flow service generates email alerts to all flow owners for certain common or critical failures like broken connections or flow turning off due to throttling. Email alerts contain the error information in detail and troubleshooting tips on how to rectify the issue.

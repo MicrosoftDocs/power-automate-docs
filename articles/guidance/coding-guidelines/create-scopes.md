@@ -4,9 +4,9 @@ description: Learn how to use and create scopes
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/29/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
+ms.reviewer: pankajsharma2087
 contributors: 
   - manuelap-msft
 search.audienceType: 
@@ -22,11 +22,13 @@ As workflows become more complex, it's essential to manage them effectively to h
 
 ## How to use scopes
 
+To group actions and manage their execution using scopes in Power Automate:
+
 - **Grouping actions**: You can add multiple actions inside a scope which is useful when you have a series of related actions that need to be executed together. Grouping actions in a scope helps maintain a clear structure and ensures that related tasks are kept together.
 
 - **Organizing your flow**: Scopes allow you to create a hierarchical structure within your flow. You can nest scopes, where one scope contains another, enabling you to break down your workflow into smaller, more manageable sections. This hierarchical organization makes it easier to understand and manage complex workflows.
 
-- **Error Handling**: Scopes are also beneficial for error handling. You can configure scopes to catch and handle errors that occur within the actions they contain. Using a catch scope makes it easier to troubleshoot and fix issues in your workflow. Learn more: [Employ robust error handling](error-handling.md)
+- **Error handling**: Scopes are also beneficial for error handling. You can configure scopes to catch and handle errors that occur within the actions they contain. Using a catch scope makes it easier to troubleshoot and fix issues in your workflow. Learn more: [Employ robust error handling](error-handling.md)
 
 - **Visibility and readability**: Scopes can be collapsed to hide their contents, making it easier to read the flow and focus on other parts of your flow. Collapsing scopes helps keep your workspace neat and organized, especially when dealing with large and complex flows.
 
