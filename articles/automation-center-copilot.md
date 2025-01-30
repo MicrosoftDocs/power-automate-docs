@@ -2,7 +2,7 @@
 title: Use Copilot in automation center
 description: Use Copilot to analyze flow runs, work queues, and ask general product questions in natural language. 
 ms.topic: conceptual
-ms.date: 01/21/2025
+ms.date: 01/29/2025
 ms.author: appapaio
 ms.reviewer: dmartens
 contributors:
@@ -42,7 +42,7 @@ Copilot in automation center is able to answer questions about the following fou
 | 1 | Cloud flow run logs | Cloud flow run status, trigger type, run duration, failure rate. |
 | 2 | Desktop flow run logs | Desktop flow run status, used machine, run mode, failure rate. |
 | 3 | Work queue data | Work queue items statuses, service level agreement (SLA) attainment, processor counts. |
-| 4 | Documentation (generative answers) | General Power Automate feature questions such as *how to analyze activity with Copilot*. |
+| 4 | Documentation (generative answers - preview) | General Power Automate feature questions such as *how to analyze activity with Copilot*. |
 
 The first three skills in the prior table translate natural language queries (questions) entered by users into Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) query syntax. This translation allows users to easily retrieve information about their automation data by asking questions in natural language. Additionally, Copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and information to the user.
 
@@ -116,7 +116,7 @@ This section provides example prompts you can use as a starter prompt for your o
 - Who were the top 10 users running flows last month?
 - When and by whom were desktop flows modified last week?
 
-### Documentation (generative answers)
+### Documentation (generative answers - preview)
 
 - How can I add a condition in Power Automate desktop?
 - Can cloud flows handle approvals and decision-making processes?
@@ -128,7 +128,7 @@ In the context of AI, *multi-turn* prompts allow you to have an ongoing conversa
 
 > [!NOTE]
 >
-> - Generative answers (documentation skill) doesn't support multi-turn conversations yet.
+> - Generative answers (documentation skill - preview) doesn't support multi-turn conversations yet.
 > - When engaging in a multi-turn conversation, Copilot keeps track of the 10 most recent questions only. This means that Copilot starts clearing the prompts that were entered first and only keeps the latest 10. To improve response quality, we suggest limiting your follow-up questions or more frequently restart the chat. For more information, see [Clear previous prompt context to start over](#clear-previous-prompt-context-to-start-over).
 
 #### Example
@@ -155,8 +155,6 @@ You can influence Copilot's output format by asking for explicit output types li
 ### Clear previous prompt context to start over
 
 If you wish to reset the conversation with Copilot, select the three dots `...` next to the copilot name, and then select **New chat**.
-
-:::image type="content" source="media/automation-center/copilot-new-chat.png" alt-text="Screenshot of the New chat option in Copilot to reset a conversation." lightbox="media/automation-center/copilot-new-chat.png":::
 
 ### Edit and rerun FetchXML queries returned by Copilot
 
@@ -272,7 +270,7 @@ The following list contains known limitations of Copilot in automation center.
 - Copilot might return wrong or incomplete data and FetchXML queries.
 - Copilot is initially only capable to answer questions about desktop flow activity, cloud flow activity, work queues, and general product feature questions of Power Automate.
 - In multi-turn conversations, Copilot keeps context of the last 10 question only. If you encounter wrong or incomplete results, consider [resetting the conversation](#clear-previous-prompt-context-to-start-over).
-- Multi-turn conversations aren't supported for generative answers (documentation skill).
+- Multi-turn conversations aren't supported for generative answers (documentation skill -preview).
 - For queries that return large result-sets, Copilot might not be able return or render the result.
 
 ## Related information
