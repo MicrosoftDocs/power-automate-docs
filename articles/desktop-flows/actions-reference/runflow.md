@@ -38,6 +38,10 @@ To find more information about how to use the **Run desktop flow** action, go to
 
 :::image type="content" source="media/runflow/run-desktop-flow-action-with-parallel-run-toggle.png" alt-text="Screenshot of the Run desktop flow action.":::
 
+### Known limitations
+
+- The produced output variables of a 'Run desktop flow' action don't currently keep their type during authoring, but rather appear as 'General values' in the variables pane. Their proper variable type is only resolved during runtime. As a result, output variables of instance type are not automatically loaded in the lists of the corresponding actions' instance parameters, and they need to be typed in or pasted on the said parameters.
+
 ## <a name="runflow"></a> Run desktop flow
 
 Runs a desktop flow that can receive input variables and might produce output variables. The parent flow run will be paused until the called desktop flow completes.
