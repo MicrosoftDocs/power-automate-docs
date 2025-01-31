@@ -4,7 +4,7 @@ description: See how to use the Run desktop flow actions.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 01/20/2025
+ms.date: 01/31/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -37,6 +37,10 @@ To find more information about how to use the **Run desktop flow** action, go to
 > - In org tenants, the flows must be under the same environment.
 
 :::image type="content" source="media/runflow/run-desktop-flow-action-with-parallel-run-toggle.png" alt-text="Screenshot of the Run desktop flow action.":::
+
+## Known limitations
+
+The output variables of a 'Run desktop flow' action don't keep their type during authoring and appear as 'General values' in the variables pane. Their proper variable type is resolved during runtime. As a result, output variables of instance type aren't automatically loaded in the lists of the corresponding actions' instance parameters, so you need to type or paste them into the parameters.
 
 ## <a name="runflow"></a> Run desktop flow
 
