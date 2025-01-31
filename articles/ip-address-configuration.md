@@ -46,7 +46,8 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.flow.microsoft.com <br> *.logic.azure.com | https | Access to the Power Automate site. |
 | *.powerautomate.com | https | Access to Power Automate site. |
 | *.powerapps.com | https | Access to the Power Apps site. |
-| *.azureedge.net | https | Access to the Power Automate CDN. |
+| *.azureedge.net | https | Access to Power Automate CDN. |
+| *.azurefd.net | https | Access to Power Automate CDN. |
 | *.microsoftcloud.com | https | Access to NPS (Net Promoter Score). |
 | webshell.suite.office.com | https | Access to Office for header and search. Learn more in [Office 365 URLs and ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#microsoft-365-common-and-office-online&preserve-view=true). |
 | *.dynamics.com | https | Access to Dataverse tables |
