@@ -4,9 +4,9 @@ description: Learn how to implement parallel execution and concurrency
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/30/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
+ms.reviewer: pankajsharma2087
 contributors: 
   - manuelap-msft
 search.audienceType: 
@@ -14,9 +14,9 @@ search.audienceType:
   - flowmaker
 ---
 
-# Parallel execution and concurrency (within For each loop)
+# Parallel execution and concurrency in For each loop
 
-## Parallel Execution
+## Parallel execution
 
 Power Automate supports parallel execution, allowing flows to run two or more steps simultaneously. The workflow continues only after all parallel steps are complete. This capability enables more efficient processing, especially for asynchronous tasks.
 
@@ -28,8 +28,8 @@ A good rule of thumb is to use parallel branches for actions that take more than
 
 Some use cases for parallel branches:
 
-- **[Sending Nonblocking Approval Requests](https://flow.microsoft.com/blog/approval-reminders-using-parallel-branches/)**: Use parallel branches to send approval requests that don't block other actions. 
-- **[Creating “Quorum” based approvals](https://flow.microsoft.com/blog/approvals-by-majority/)**: Implement quorum-based approval processes where a decision is made based on most responses. Learn more
+- **[Sending nonblocking approval requests](https://flow.microsoft.com/blog/approval-reminders-using-parallel-branches/)**: Use parallel branches to send approval requests that don't block other actions. 
+- **[Creating quorum based approvals](https://flow.microsoft.com/blog/approvals-by-majority/)**: Implement quorum-based approval processes where a decision is made based on most responses. Learn more
 - **Creating or updating records in multiple systems**: Ensure data consistency and reduce processing time by simultaneously create or update records across different systems.
 - **Consolidating data from multiple sources**: Retrieve data from various sources in parallel and consolidate it into a single dataset for further processing.
 

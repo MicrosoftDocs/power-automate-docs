@@ -4,17 +4,17 @@ description: Learn how to use auditing in Dataverse and Purview
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/31/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
-contributors: 
-  - manuelap-msft
+ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
   - flowmaker
 ---
 
-## Use auditing in Dataverse and Purview
+# Use auditing in Dataverse and purview
+
+
 
 ## Manage Dataverse auditing
 

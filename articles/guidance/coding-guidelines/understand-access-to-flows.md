@@ -4,9 +4,9 @@ description: Learn how to understand access to flows
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/31/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
+ms.reviewer: pankajsharma2087
 contributors: 
   - manuelap-msft
 search.audienceType: 
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Understand access to flows
 
-## Ownership of Flows (Service Principal vs User) 
+## Ownership of flows (service principal vs user) 
 
 When managing Power Automate flows, the choice between using a Service Principal Name (SPN) or a user account as the flow owner is important. SPNs aren't tied to individual users, ensuring that flows can continue running smoothly even if personnel changes happen. This setup reduces the risk of disruptions and allows for stricter control over permissions, as SPNs can be granted only the necessary access.
 
@@ -28,8 +28,8 @@ Advantages of Service Principal Name (SPN) ownership:
 - **Security**: Using an SPN enhances security by allowing for stricter control over permissions. SPNs can be granted only the necessary access, reducing the risk of unauthorized actions.
 - **Scalability**: SPNs are better suited for managing automated tasks across large environments, especially in scenarios involving multiple flows or environments.
 - **Compliance**: Using SPNs can help maintain compliance, as they provide a clearer audit trail of actions taken by the flow, independent of specific users.
-- **Reduced Disruptions**: Since SPNs aren't affected by user account changes (such as employees leaving the organization), there's a lower risk of disruptions to the flow operations.
-- **Centralized Management**: SPNs allow for centralized management of flow permissions and access, making it easier to maintain and audit security policies.
+- **Reduced disruptions**: Since SPNs aren't affected by user account changes (such as employees leaving the organization), there's a lower risk of disruptions to the flow operations.
+- **Centralized management**: SPNs allow for centralized management of flow permissions and access, making it easier to maintain and audit security policies.
 
 ### User account ownership
 

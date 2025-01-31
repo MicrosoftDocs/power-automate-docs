@@ -4,9 +4,9 @@ description: Learn how to use data operations
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/31/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
+ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
   - flowmaker
@@ -85,9 +85,21 @@ When working with a set of variables that are updated within the same logical bl
 
 For example, instead of working with Var1 and Var2 as separate variables, use one object variable to manage both values:
 
-| Individual variables | One object variable |
-| --- | --- |
-| Using separate variables for var1 and var2 requires two **Initialize variable** actions and two **Set variable** actions to update them, resulting in additional steps in the flow. | By using a single object variable in JSON format, you only need one **Initialize variable** action and one **Set variable** action, which reduces the number of steps in the flow. |
-| :::image type="content" source="media/var-individual.png" alt-text="A screenshot of using individual variables"::: | :::image type="content" source="media/var-object.png" alt-text="A screenshot of using an object variable and JSON":::
+<table>
+  <tr>
+    <th>Approach</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Using separate variables for var1 and var2</td>
+    <td>Requires two <strong>Initialize variable</strong> actions and two <strong>Set variable</strong> actions to update them, resulting in additional steps in the flow.</td>
+  </tr>
+  <tr>
+    <td>Using a single object variable in JSON format</td>
+    <td>You only need one <strong>Initialize variable</strong> action and one <strong>Set variable</strong> action, which reduces the number of steps in the flow.</td>
+  </tr>
+</table>
+
+| ![A screenshot of using individual variables](media/var-individual.png) | ![A screenshot of using an object variable and JSON](media/var-object.png) |
 
 

@@ -4,9 +4,9 @@ description: Learn how to optimize Power Automate triggers
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/30/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
+ms.reviewer: pankajsharma2087
 contributors: 
   - manuelap-msft
 search.audienceType: 
@@ -37,40 +37,40 @@ This screenshot shows a flow with a trigger condition on the "When a row is adde
 
 In some scenarios, your flow might interact with data sources that have limited throughput. In such cases, configuring the trigger’s concurrency control can help manage the flow's execution more effectively. By default, a cloud flow trigger executes as many runs as possible simultaneously when its conditions are met. However, you can change this behavior by adjusting the *Concurrency Control* settings, allowing you to limit the number of concurrent runs from a minimum of 1 up to 100. Any other runs are queued automatically.
 
-Use concurrency control:
+To use concurrency control:
 
-1. **Limited Throughput Resources**: If your automation depends on an on-premises resource that doesn't support parallel executions, configuring concurrency control can prevent overloading the resource.
+- **Limited throughput resources**: If your automation depends on an on-premises resource that doesn't support parallel executions, configuring concurrency control can prevent overloading the resource.
 
-1. **Preventing Race Conditions**: Limiting concurrency ensures that only one instance of the flow runs at a time and avoids race conditions where a dirty-read might occur due to parallel executions.
+- **Preventing race conditions**: Limiting concurrency ensures that only one instance of the flow runs at a time and avoids race conditions where a dirty-read might occur due to parallel executions.
 
-Configure concurrency control:
+To configure concurrency control:
 
-1. **Accessing Concurrency Control Settings**: In the Power Automate portal, open the flow you want to configure. Go to the trigger settings by selecting the trigger card. Expand the **Settings** section to find the **Concurrency Control** option.
+- **Accessing concurrency control settings**: In the Power Automate portal, open the flow you want to configure. Go to the trigger settings by selecting the trigger card. Expand the **Settings** section to find the **Concurrency Control** option.
 
-1. **Setting the Concurrency Limit**: Enable the **Concurrency Control** option. Specify the maximum number of concurrent runs you want to allow. You can set this number between 1 and 100.
+- **Setting the concurrency limit**: Enable the **Concurrency Control** option. Specify the maximum number of concurrent runs you want to allow. You can set this number between 1 and 100.
 
-1. **Applying the Settings**: Save the changes to apply the concurrency control settings to your flow.
+- **Applying the settings**: Save the changes to apply the concurrency control settings to your flow.
 
 :::image type="content" source="media/trigger-concurrency-control.png" alt-text="A screenshot of a setting the trigger concurrency control":::
 
-### Important Considerations
+### Important considerations
 
-- **Irreversible Action**: Once applied, concurrency control settings can't be undone. To remove concurrency control, you need to create a new flow. Therefore, proceed with caution.
-- **Best Practices**: It's best to leave the concurrency control at its default setting. If you need to apply concurrency control, consider doing so on a flow with the least number of actions. For example, you might organize actions that require such control into a dedicated child flow, applying the control only to the child flow.
+- **Irreversible action**: Once applied, concurrency control settings can't be undone. To remove concurrency control, you need to create a new flow. Therefore, proceed with caution.
+- **Best practices**: It's best to leave the concurrency control at its default setting. If you need to apply concurrency control, consider doing so on a flow with the least number of actions. For example, you might organize actions that require such control into a dedicated child flow, applying the control only to the child flow.
 
 ## Flow turn-off behavior
 
 A trigger is an event that initiates a cloud flow in Power Automate. For example, if you want to receive a notification in Microsoft Teams whenever someone sends you an email, the event of receiving an email acts as the trigger that starts this flow.
 
-### How Do Triggers Work?
+### How Do triggers work?
 
 There are two main types of triggers in Power Automate. Once you create a flow, the trigger registers itself to either poll the service it connects to or listen for events from the service. Here’s how it works:
 
-1. **Polling Triggers**: 
-    - These triggers periodically check (or "poll") a service to see if a specific event has occurred. For instance, a SQL trigger might poll a SQL server at regular intervals to check for new or updated records.
+1. **Polling triggers**: 
+    - These triggers periodically check (or *poll*) a service to see if a specific event has occurred. For instance, a SQL trigger might poll a SQL server at regular intervals to check for new or updated records.
     - If you set up a SQL trigger, it polls the SQL server at defined intervals to check for changes that meet your specified conditions.
     - When the flow is turned on again, all unprocessed or pending events are processed. If you don't want to process pending items when you turn your flow back on, delete and then recreate your flow.
-2. **Webhook Triggers**: 
+2. **Webhook triggers**: 
     - These triggers listen for specific events in real-time. When the event occurs, the service sends a notification to Power Automate to start the flow. For example, an Outlook trigger listens for incoming emails and triggers the flow as soon as a new email arrives.
     - If you set up an Outlook trigger, it listens to the Outlook service and trigger the flow immediately when a new email is received.
     - When the flow is turned on again, it processes new events that are generated after the flow is turned on.
@@ -79,16 +79,19 @@ There are two main types of triggers in Power Automate. Once you create a flow, 
 
 Once a polling trigger is registered, it periodically checks the service every X minutes to retrieve details of any new or modified records/events based on the filters applied to the trigger. The frequency of these checks depends on the user's license.
 
-1. **Timestamp Tracking**:  The trigger tracks the timestamp of its last poll. Every X minutes, it polls the service again based on this timestamp.
-1. **Example Scenario**: 
+- **Timestamp tracking**:  The trigger tracks the timestamp of its last poll. Every X minutes, it polls the service again based on this timestamp.
+
+**Example scenario**: 
   - If the trigger is set to activate when a new SQL record is created, it polls the SQL service every minute (or the specified interval). It retrieves information on any records created since the last poll.
    - If new records are found, the flow is triggered. If no new records are found, the run is skipped.
    - You can view these polling checks in the run history page under the checks section.
-1. **Handling Flow Stops**:
+   
+- **Handling flow stops**:
    - When a flow is stopped (for example, on September 13 at 12:30 PM), the trigger notes this timestamp.
    - When the flow is restarted (for example, on September 14 at 1:30 PM PT), it polls the service for all events created between the last poll time (September 13 at 12:30 PM) and the current time (that is, September 14 at 1:30 PM).
    - This behavior ensures no data is missed, even if the flow is stopped temporarily due to errors or throttling.
-1. **Important Considerations**:
+   
+**Important considerations**:
    - Turning off the flow doesn't deregister the trigger; it only pauses the polling. This design ensures that data isn't missed when the flow is restarted.
    - To completely reset the polling behavior, you need to create a new copy of the flow. This re-registers the trigger when the flow is turned on for the first time, and you should delete the existing flow to avoid conflicts.
 
@@ -96,8 +99,8 @@ Once a polling trigger is registered, it periodically checks the service every X
 
 Webhook triggers operate differently from polling triggers. Instead of periodically checking a service, webhook triggers register with the service to receive notifications when specific events occur.
 
-1. **Registration**: When a webhook trigger is created, it registers with the service to indicate that it wants to receive notifications for certain events.
-1. **Event Notifications**: Webhooks are simple HTTP callbacks used to provide event notifications. When the specified event occurs, the service sends an event notification to the webhook trigger with all the details of that event.
-1. **Flow Activation**: Power Automate allows you to use webhooks as triggers. When the webhook trigger receives the event notification, it activates the flow, which then performs the specified actions.
+- **Registration**: When a webhook trigger is created, it registers with the service to indicate that it wants to receive notifications for certain events.
+- **Event notifications**: Webhooks are simple HTTP callbacks used to provide event notifications. When the specified event occurs, the service sends an event notification to the webhook trigger with all the details of that event.
+- **Flow activation**: Power Automate allows you to use webhooks as triggers. When the webhook trigger receives the event notification, it activates the flow, which then performs the specified actions.
 
 Learn more: [My trigger is firing for old events](/power-automate/triggers-troubleshoot?tabs=classic-designer#my-trigger-is-firing-for-old-events)

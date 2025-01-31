@@ -4,19 +4,19 @@ description: Learn how to use CMK (Customer Managed Keys) for Cloud flows
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/31/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
+ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
   - flowmaker
 ---
 
-# Use CMK (Customer Managed Keys) for Cloud flows
+# Use CMK (customer managed keys) for cloud flows
 
 Customer Managed Keys (CMK) for cloud flows in Power Automate is a security feature that allows organizations to use their own encryption keys to encrypt and protect data within their flows. This approach provides enhanced control over the encryption keys and meets specific compliance requirements for data security and privacy. 
 
-## What is Customer Managed Keys (CMK)?
+## What is customer managed keys (CMK)?
 
 Customer Managed Keys (CMK) enable organizations to manage their own encryption keys, typically using a key management service such as Azure Key Vault. By using CMK, organizations can:
 
@@ -24,13 +24,13 @@ Customer Managed Keys (CMK) enable organizations to manage their own encryption 
 - Meet regulatory and compliance requirements that mandate customer-controlled encryption.
 - Revoke access to data by disabling or deleting keys.
 
-## How CMK Works in Power Automate
+## How CMK works in Power Automate
 
-**Encryption at Rest**: CMK allows you to encrypt the data stored by Power Automate at rest using your own keys.
+- **Encryption at rest**: CMK allows you to encrypt the data stored by Power Automate at rest using your own keys.
 
-**Azure Key Vault**: The keys are typically stored and managed in Azure Key Vault, which provides secure key management capabilities.
+- **Azure key vault**: The keys are typically stored and managed in Azure Key Vault, which provides secure key management capabilities.
 
-**Key Rotation and Management**: You have the ability to rotate, revoke, and audit the keys, providing enhanced control over the encryption lifecycle.
+- **Key rotation and management**: You have the ability to rotate, revoke, and audit the keys, providing enhanced control over the encryption lifecycle.
 
 Learn more:
 

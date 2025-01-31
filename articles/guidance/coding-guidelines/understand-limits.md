@@ -4,15 +4,15 @@ description: Learn how to understand Platform limits and avoid throttling
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/31/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
+ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
   - flowmaker
 ---
 
-# Understand Platform limits and avoid throttling
+# Understand platform limits and avoid throttling
 
 Understanding Power Automate and Power Platform limits can help users design scalable Power Automate Flows. 
 
@@ -55,19 +55,19 @@ API Limits at the platform level are based on the user License. Learn more: [Pow
 
 In addition to platform limits, each connector service has its own limits. Connector throttling in Power Automate refers to the mechanism by which connectors enforce rate limits or usage quotas to prevent abuse and ensure fair resource allocation. When a connector is throttled, it restricts the number of requests or operations that can be made within a specific timeframe.
 
-When a flow runs into connector level throttling limits, the service returns a "429 (Too Many Requests)" error code, with an error text like "Rate limit is exceeded. Try again in 27 seconds"
+When a flow runs into connector level throttling limits, the service returns a *429 (Too Many Requests)* error code, with an error text like *Rate limit is exceeded. Try again in 27 seconds*
 
 Each [connector](/connectors/connector-reference/connector-reference-powerautomate-connectors) has its own throttling limit. 
 
-## Dataverse API Limits
+## Dataverse API limits
 
-Dataverse as a connector service defines its own [service protection limits](/power-apps/developer/data-platform/api-limits). The service protection API limits are evaluated per user. When called by a flow the "user" is whoever is associated with the action. Usually this user is the flow owner but it can be the invoking user if the flow is invoking user context in the action.
+Dataverse as a connector service defines its own [service protection limits](/power-apps/developer/data-platform/api-limits). The service protection API limits are evaluated per user. When called by a flow the *user* is whoever is associated with the action. Usually this user is the flow owner but it can be the invoking user if the flow is invoking user context in the action.
 
-## Flow Concurrency Limits
+## Flow concurrency limits
 
-Designing scalable, efficient flows includes understanding of the concurrency, looping and debatching limits to help avoid unnecessary delays. Learn more: [Concurrency, looping, and debatching limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits)
+Designing scalable, efficient flows includes understanding of the concurrency, looping and debatching limits to help avoid unnecessary delays. Learn more: [Concurrency, looping, and debatching limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits).
 
-## Action Burst Limits
+## Action burst limits
 
 Action Burst Limits refer to the maximum number of actions that can be triggered within a specific period, typically measured in a rolling window of time. Currently there's a per-flow cap of 100,000 actions per 5 minutes. 
 
@@ -75,7 +75,7 @@ Any bursts of triggering or loops can lead to over exceeding this limit, causing
 
 To address this limit, distribute the load between multiple flows - for example, by using [child flows](/power-automate/create-child-flows) - or by using [trigger conditions](optimize-power-automate-triggers.md).
 
-## Flow Design limits
+## Flow design limits
 
 While designing flows, users can run into some limits that are defined at the design/definition level. Consider redesigning your flows, if you run into any of these limits:
 

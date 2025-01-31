@@ -4,9 +4,9 @@ description: Learn how to implement robust monitoring and alerting
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/30/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
+ms.reviewer: pankajsharma2087
 contributors: 
   - manuelap-msft
 search.audienceType: 
@@ -20,17 +20,16 @@ Regularly monitoring Power Automate flows is vital for businesses to ensure thei
 
 ## Key benefits of monitoring flows
 
-1. **Issue Identification and Resolution**: Monitoring helps in promptly detecting and addressing emerging issues, such as errors or delays in the flow execution. 
+- **Issue identification and resolution**: Monitoring helps in promptly detecting and addressing emerging issues, such as errors or delays in the flow execution. 
 
-1. **Performance Enhancement**: Keep an eye on flow performance to implement measures to optimize workflows, leading to improved efficiency and productivity.
+- **Performance enhancement**: Keep an eye on flow performance to implement measures to optimize workflows, leading to improved efficiency and productivity.
 
-1. **Security and Compliance**: Regular monitoring aids in identifying potential security vulnerabilities or compliance concerns. This approach is essential for safeguarding sensitive data and ensuring that workflows adhere to regulatory requirements.
+- **Security and compliance**: Regular monitoring aids in identifying potential security vulnerabilities or compliance concerns. This approach is essential for safeguarding sensitive data and ensuring that workflows adhere to regulatory requirements.
 
-1. **Insight into Usage Patterns**: Monitoring provides valuable insights into how flows are being used. Understanding usage patterns can help businesses make informed decisions about optimizing workflows for better performance and cost-effectiveness.
+- **Insight into usage patterns**: Monitoring provides valuable insights into how flows are used. Understanding usage patterns can help businesses make informed decisions about optimizing workflows for better performance and cost-effectiveness.
 
 ## How to monitor Power Automate cloud flows
 
-### Automation Center
 
 The Automation Center in Power Automate serves as a central hub for managing and overseeing all your automation activities. It offers a comprehensive interface that allows you to create, monitor, and optimize automated workflows across your entire organization. This feature is designed to streamline operations, boost productivity, and ensure that all automation tasks run efficiently.
 
@@ -40,9 +39,9 @@ Learn more: [Automation center overview](/power-automate/automation-center-overv
 
 The process mining capability in Power Automate allows you to gain valuable insights and improve your cloud flows. With this feature, you can:
 
-- **Analyze Flow Performance**: See how your flow performs, identify areas where it slows down, and find opportunities for improvement.
-- **Track Performance Changes**: Monitor any changes in your flow’s performance over time.
-- **Examine Run History**: Use process mining methods to analyze your flow’s run history directly from the flow details page, generating actionable insights.
+- **Analyze flow performance**: See how your flow performs, identify areas where it slows down, and find opportunities for improvement.
+- **Track performance changes**: Monitor any changes in your flow’s performance over time.
+- **Examine run history**: Use process mining methods to analyze your flow’s run history directly from the flow details page, generating actionable insights.
 
 :::image type="content" source="media/process-mining.png" alt-text="A screenshot of a Process Mining report":::
 
@@ -52,7 +51,7 @@ The **Runs and actions** section also gives information about the total action c
 
 Learn more: [Improve cloud flows with process insights](/power-automate/process-mining-cloud-flow-process-insights)
 
-## Cloud Flow Analytics
+## Cloud flow analytics
 
 Power Automate offers built-in analytics capabilities that allow you to monitor flow runs, track execution history, and analyze flow performance. Use analytics dashboards and reports to gain insights into flow execution patterns and identify bottlenecks. 
 
@@ -66,11 +65,11 @@ The analytics page shows the following details:
 
 :::image type="content" source="media/cloud-flow-analytics.png" alt-text="A screenshot of a the cloud flow analytics":::
 
-## Power Automate Admin Analytics
+## Power automate admin analytics
 
 Environment admins can access analytics for Power Automate in the Microsoft [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). The reports provide insights into runs, usage, errors, types of flows created, shared flows, and details on connectors associated with all the different flow types like automated flows, button flows, scheduled flows, approval flows, business process flows. 
 
-Covers following details:
+It covers following details:
 
 - Reports of flow usage based on environments, environment type, and region
 - Flow inventory, including flow state
@@ -82,7 +81,7 @@ Covers following details:
 
 Learn more: [View analytics for cloud flows](/power-platform/admin/analytics-flow)
 
-## Power Automate Management connectors
+## Power automate management connectors
 
 Power Automate service also provides ways to automate some of the management activities for Flows via the **Power Automate Management** and **Power Automate for Admins** connectors.
 
@@ -90,21 +89,21 @@ The **Power Automate Management** connector provides actions for managing flows,
 
 Power Automate for Admins connector on the other hand are used mostly by administrators giving them the ability to enable/disable flows, change flow owners etc. Learn more: [Power Automate for Admins connector](/connectors/microsoftflowforadmins/).
 
-## Power Automate App Insights
+## Power automate app insights
 
 Application Insights is a feature of Azure Monitor that provides extensive monitoring and diagnostic capabilities for web applications. Integrating Power Automate with Application Insights allows you to use these capabilities to monitor, analyze, and optimize your cloud flows.
 
 ## Key features of the integration
 
-1. **Comprehensive Monitoring**: Application Insights collects telemetry data from your Power Automate flows, including flow runs, triggers, and actions. This data is stored in Azure Monitor logs and can be visualized in various panels within Application Insights.
+- **Comprehensive monitoring**: Application Insights collects telemetry data from your Power Automate flows, including flow runs, triggers, and actions. This data is stored in Azure Monitor logs and can be visualized in various panels within Application Insights.
 
-1. **Performance Analysis**: The integration provides detailed performance metrics, such as the duration of flow runs and the frequency of specific actions. This data helps identify bottlenecks and optimize flow performance.
+- **Performance analysis**: The integration provides detailed performance metrics, such as the duration of flow runs and the frequency of specific actions. This data helps identify bottlenecks and optimize flow performance.
 
-1. **Error Tracking**: Application Insights tracks errors and failures in your flows, offering insights into the root causes. This information enables quick troubleshooting and resolution of issues.
+- **Error tracking**: Application Insights tracks errors and failures in your flows, offering insights into the root causes. This information enables quick troubleshooting and resolution of issues.
 
-1. **Custom Alerts**: You can set up custom alerts based on specific criteria, such as flow failures or performance thresholds. These alerts help you stay informed about critical issues and take timely action.
+- **Custom alerts**: You can set up custom alerts based on specific criteria, such as flow failures or performance thresholds. These alerts help you stay informed about critical issues and take timely action.
 
-5. **Usage Insights**: The integration provides insights into usage patterns, helping you understand how flows are being used across your organization. This information can guide decisions on optimizing and scaling your automation efforts.
+- **Usage insights**: The integration provides insights into usage patterns, helping you understand how flows are being used across your organization. This information can guide decisions on optimizing and scaling your automation efforts.
 
 In Power Automate, data from flow runs, triggers, and actions can be linked to Application Insights at the environment level. However, data from multiple environments can be logged into the same Application Insights resource.
 
@@ -112,7 +111,7 @@ Cloud flow runs telemetry get stored in **requests** table and trigger and actio
 
 Learn more: [Set up Application Insights with Power Automate](/power-platform/admin/app-insights-cloud-flow) 
 
-## Flow Run history in Dataverse
+## Flow run history in dataverse
 
 The Flow Run History feature in Microsoft Dataverse allows you to track and manage the execution history of your Power Automate cloud flows at scale. This feature uses Dataverse’s robust data architecture to provide detailed insights and enhanced control over your automation processes.
 

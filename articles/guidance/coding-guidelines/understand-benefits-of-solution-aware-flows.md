@@ -4,9 +4,9 @@ description: Learn about the benefits of using solution-aware cloud flows
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/31/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
+ms.reviewer: pankajsharma2087
 contributors: 
   - manuelap-msft
 search.audienceType: 
@@ -93,9 +93,9 @@ Learn more: [Manage cloud flow run history in Dataverse](/power-automate/dataver
 
 ALM (Application Lifecycle Management) enables organizations to safely move artifacts within a solution across environments such as Development, Test, and Production.
 
-**Unmanaged solutions** are fully editable and allow developers to modify and customize the components within a solution. 
+- **Unmanaged solutions** are fully editable and allow developers to modify and customize the components within a solution. 
 
-**Managed solutions** are sealed and don't allow any modifications once deployed to target environments. 
+- **Managed solutions** are sealed and don't allow any modifications once deployed to target environments. 
 
 While moving solutions from one environment to another, here are some of the key deployment practices that should be followed:
 
@@ -103,41 +103,43 @@ While moving solutions from one environment to another, here are some of the key
 
 Solutions can be used as a logical boundary to keep related flows together. Consider keeping parent and child flows together in one solution as they can use the same connection reference. 
 
-Environment variables allow you to dynamically change configurations across different environments (for example, development, staging, production) without modifying the code. These variables act as placeholders for data that can be set or updated externally, making it easier to manage and deploy the application.
+- Environment variables allow you to dynamically change configurations across different environments (for example, development, staging, production) without modifying the code. These variables act as placeholders for data that can be set or updated externally, making it easier to manage and deploy the application.
 
-[Azure Key Vault](/azure/key-vault/) securely stores sensitive information like secrets, keys, and certificates. Integrating Azure Key Vault with Power Automate ensures that sensitive data is stored and retrieved securely. This integration allows Power Automate to access the secrets directly from Azure Key Vault, reducing the risk of exposure and enhancing the overall security posture of the application.
+- [Azure Key Vault](/azure/key-vault/) securely stores sensitive information like secrets, keys, and certificates. Integrating Azure Key Vault with Power Automate ensures that sensitive data is stored and retrieved securely. This integration allows Power Automate to access the secrets directly from Azure Key Vault, reducing the risk of exposure and enhancing the overall security posture of the application.
 
 ### Deployment best practices
 
-Ensure safe ALM by not allowing any unmanaged customizations in the test and production environments by deploying only managed solutions. 
+Follow these best practices for successful deployment:
 
-Flows should only be edited in a development environment and then moved to test and then production environments. Within the production environments, ensure that service principals own flows.
+- Ensure safe ALM by not allowing any unmanaged customizations in the test and production environments by deploying only managed solutions. 
 
-Any changes to production environments should always go through ALM processes. 
+- Flows should only be edited in a development environment and then moved to test and then production environments. Within the production environments, ensure that service principals own flows.
 
-### Use Pipelines for deployment
+- Any changes to production environments should always go through ALM processes. 
+
+### Use pipelines for deployment
 
 [Pipelines](/power-platform/alm/pipelines) offer numerous advantages for managing and deploying solutions within your organization:
 
-1. **Streamlined Application Lifecycle Management (ALM)**: Pipelines automate and simplify the ALM process, making it easier to manage solution development, testing, and deployment. Pipelines reduce the effort and domain knowledge required to implement effective ALM practices.
+1. **Streamlined application lifecycle management (ALM)**: Pipelines automate and simplify the ALM process, making it easier to manage solution development, testing, and deployment. Pipelines reduce the effort and domain knowledge required to implement effective ALM practices.
 
-1. **Centralized Management**: Admins can centrally govern both citizen-led and pro-dev-led projects, ensuring consistent and secure deployment practices across the organization. This centralized approach helps maintain control and oversight. 
+1. **Centralized management**: Admins can centrally govern both citizen-led and pro-dev-led projects, ensuring consistent and secure deployment practices across the organization. This centralized approach helps maintain control and oversight. 
 
-1. **Improved Productivity**: By automating deployment processes, pipelines significantly enhance productivity for makers, developers, and admins. Solutions can therefore be delivered faster and with higher quality.
+1. **Improved productivity**: By automating deployment processes, pipelines significantly enhance productivity for makers, developers, and admins. Solutions can therefore be delivered faster and with higher quality.
 
-1. **Cost Efficiency**: Pipelines reduce the total cost of ownership by minimizing the manual effort required for deployment and ongoing maintenance, which leads to cost savings and more efficient resource utilization.
+1. **Cost efficiency**: Pipelines reduce the total cost of ownership by minimizing the manual effort required for deployment and ongoing maintenance, which leads to cost savings and more efficient resource utilization.
 
-1. **Enhanced Compliance and Security**: Pipelines support secure production environments with approval-based delegated deployments. They also provide out-of-the-box analytics and audit logs, ensuring compliance and security throughout the deployment process.
+1. **Enhanced compliance and security**: Pipelines support secure production environments with approval-based delegated deployments. They also provide out-of-the-box analytics and audit logs, ensuring compliance and security throughout the deployment process.
 
 Additionally, pipelines can be customized to meet the unique needs of your organization. Here are some ways to extend pipelines:
 
-1. **Custom Approvals**: Ensure that deployments meet specific business requirements before proceeding by adding custom approval steps to your pipelines.
+1. **Custom approvals**: Ensure that deployments meet specific business requirements before proceeding by adding custom approval steps to your pipelines.
 
-1. **Service Principal Deployments**: Use service principals for deployments to maintain security and control to allow makers to request deployments without needing elevated access within target environments.
+1. **Service principal deployments**: Use service principals for deployments to maintain security and control to allow makers to request deployments without needing elevated access within target environments.
 
-1. **Integration with DevOps Tools**: Enhance your CI/CD processes by integrating pipelines with tools like Azure DevOps and GitHub. This integration allows for seamless management and deployment of solutions.
+1. **Integration with devOps tools**: Enhance your CI/CD processes by integrating pipelines with tools like Azure DevOps and GitHub. This integration allows for seamless management and deployment of solutions.
 
-1. **Custom Business Logic**: Execute specific business logic by inserting custom steps into the pipeline progression, for example pre-export validation, pre-deployment checks, and other custom actions.
+1. **Custom business logic**: Execute specific business logic by inserting custom steps into the pipeline progression, for example pre-export validation, pre-deployment checks, and other custom actions.
 
 Learn more: 
 

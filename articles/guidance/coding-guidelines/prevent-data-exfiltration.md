@@ -4,9 +4,9 @@ description: Learn how to prevent data exfiltration
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/30/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
+ms.reviewer: pankajsharma2087
 contributors: 
   - manuelap-msft
 search.audienceType: 
@@ -14,9 +14,9 @@ search.audienceType:
   - flowmaker
 ---
 
-## Prevent data exfiltration
+# Prevent data exfiltration
 
-## Use Data Loss Prevention Policies
+## Use data loss prevention policies
 
 Data Loss Prevention (DLP) policies are relevant for managing and controlling data sharing and movement across Power Apps, Power Automate, and other Power Platform components. These policies help organizations prevent data loss and ensure compliance with regulatory requirements and internal policies.
 
@@ -45,7 +45,7 @@ Microsoft Power Platform has a rich ecosystem of connectors based on Microsoft E
 
 Learn more: [Cross-tenant inbound and outbound restrictions](/power-platform/admin/cross-tenant-restrictions)
 
-# Configure Microsoft Entra conditional access policies
+# Configure Microsoft entra conditional access policies
 
 Power Automate conditional access policies can be created in addition to DLP, HTTP OAuth, and IP-pinning to prevent data exfiltration. 
 

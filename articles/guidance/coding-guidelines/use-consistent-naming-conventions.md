@@ -4,9 +4,9 @@ description: Learn about how to use consistent naming for flow components
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 01/31/2025
 ms.author: rachaudh
-ms.reviewer: angieandrews
+ms.reviewer: pankajsharma2087
 search.audienceType: 
   - admin
   - flowmaker
@@ -19,11 +19,13 @@ Maintaining consistent naming conventions for the components within your Power A
 > [!NOTE]
 > These are recommendations and may change as per individual organization requirements.
 
+## Naming convention guidelines
+
 Here are some guidelines to follow:
 
 - **Descriptive and meaningful names**: Give meaningful names to your flows before saving. Additionally, choose names that accurately describe the purpose or function of each component. Avoid generic or ambiguous names that could lead to confusion. For example, instead of naming a trigger *Trigger1*, use a descriptive name like "New Email Received" to clearly indicate its purpose.
 
-- **Use CamelCase or underscores**: Use CamelCase (capitalizing the first letter of each word except the first one) or underscores to separate words in your component names. Using CamelCase or underscores improves readability and makes it easier to distinguish between different parts of the name. For instance, you might name an action "SendEmailNotification" or "send_email_notification" for consistency.
+- **Use camelcase or underscores**: Use CamelCase (capitalizing the first letter of each word except the first one) or underscores to separate words in your component names. Using CamelCase or underscores improves readability and makes it easier to distinguish between different parts of the name. For instance, you might name an action "SendEmailNotification" or "send_email_notification" for consistency.
 
 - **Prefixes or tags**: Consider using prefixes or tags to categorize components based on their type or functionality. For example, you could use prefixes like "Trg_" for triggers, "Act_" for actions, or "Var_" for variables. Prefixes or tags help you quickly identify the role of each component within the flow.
 
