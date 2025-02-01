@@ -20,8 +20,7 @@ ms.collection:
 
 A *trigger* is an event that starts a cloud flow. For example, you want to get a notification in Microsoft Teams when someone sends you an email. In this case, receiving an email is the trigger that starts this flow.
 
-Power Automate offers connectors to services such as SharePoint and Outlook. Most connectors
-offer prebuilt triggers that you can use to start your flows. Here's a partial look at the triggers that Office 365 Outlook connector provides by default.
+Power Automate offers connectors to services such as SharePoint and Outlook. Most connectors offer prebuilt triggers that you can use to start your flows. Here's a partial look at the triggers that Office 365 Outlook connector provides by default.
 
 :::image type="content" source="./media/triggers-introduction/outlook-triggers.png" alt-text="Screenshot of some of the Office 365 Outlook triggers.":::
 
@@ -147,6 +146,8 @@ Your flow can generate expressions for you.
 
 ## Related information
 
-[Training: Describe building automation with Microsoft Power Automate (module)](/training/modules/introduction-power-automate/)
+- [Training: Describe building automation with Microsoft Power Automate (module)](/training/modules/introduction-power-automate/)
+- [Training: Enhance productivity with Power Automate and the Office 365 Outlook Connector (module)](/training/modules/enhance-productivity/)
+- [Training: Streamline SharePoint processes with Power Automate (module)](/training/modules/streamline-processes/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
