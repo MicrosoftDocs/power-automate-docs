@@ -24,7 +24,7 @@ Power Automate offers connectors to services such as SharePoint and Outlook. Mos
 
 :::image type="content" source="./media/triggers-introduction/outlook-triggers.png" alt-text="Screenshot of some of the Office 365 Outlook triggers.":::
 
-## Choose the right trigger
+## Choose the right trigger 
 
 Triggers can be started instantly or manually, on a schedule, or automatically when an external event occurs, such as when an email arrives. The following table lists some common trigger scenarios and the type of flow you should create.
 
