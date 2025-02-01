@@ -144,6 +144,8 @@ Your flow can generate expressions for you.
 1. Paste the expression into the trigger condition.
 1. Remove the **Filter array** action.
 
+---
+
 ## Related information
 
 - [Training: Describe building automation with Microsoft Power Automate (module)](/training/modules/introduction-power-automate/)
