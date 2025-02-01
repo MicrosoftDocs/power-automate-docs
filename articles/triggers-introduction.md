@@ -151,3 +151,5 @@ Your flow can generate expressions for you.
 - [Training: Streamline SharePoint processes with Power Automate (module)](/training/modules/streamline-processes/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
+
+
