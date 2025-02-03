@@ -3,8 +3,8 @@ title: Use an asynchronous flow pattern
 description: Learn how to use the asynchronous flow pattern in Power Automate to handle long-running processes efficiently.
 author: manuelap-msft
 ms.subservice: guidance
-ms.topic: conceptual
-ms.date: 01/23/2025
+ms.topic: best-practice
+ms.date: 02/03/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Use an asynchronous flow pattern
 
-When a parent flow or a Power App invokes a [child flow](/power-automate/create-child-flows), it must send a response back to the caller within 120 seconds. If the flow doesn't respondrgb(0, 0, 0) within this time frame, the caller experiences a time-out and an error occurs.
+When a parent flow or a Power App invokes a [child flow](/power-automate/create-child-flows), it must send a response back to the caller within 120 seconds. If the flow doesn't respond within this time frame, the caller experiences a time-out and an error occurs.
 
 To ensure that the caller doesn't wait indefinitely for a response, you can configure the flow to send an asynchronous response. By setting the flow to respond asynchronously, the caller receives an immediate acknowledgment that the request is being processed. 
 
