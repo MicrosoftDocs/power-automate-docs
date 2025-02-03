@@ -6,7 +6,7 @@
       items:
         - name: Overview
           href: coding-guidelines/overview.md
-        - name: Coding Guidelines
+        - name: Coding guidelines
           items: 
             - name: Use consistent naming conventions 
               href: coding-guidelines/use-consistent-naming-conventions.md
@@ -28,7 +28,7 @@
               href: coding-guidelines/work-with-relevant-data.md
             - name: Avoid anti-patterns
               href: coding-guidelines/avoid-anti-patterns.md
-            - name: Use asynchronous flow pattern
+            - name: Use asynchronous flow patterns
               href: coding-guidelines/asychronous-flow-pattern.md
             - name: Use environment variables
               href: coding-guidelines/use-environment-variables.md

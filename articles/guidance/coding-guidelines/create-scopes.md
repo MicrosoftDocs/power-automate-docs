@@ -1,10 +1,10 @@
 ---
 title: Use and create scopes
-description: Learn how to use and create scopes
+description: Learn how to use and create scopes in Power Automate to manage complex workflows and effectively troubleshoot.
 author: manuelap-msft
 ms.subservice: guidance
-ms.topic: conceptual
-ms.date: 01/29/2025
+ms.topic: best-practice
+ms.date: 02/03/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -16,27 +16,31 @@ search.audienceType:
 
 # Use and create scopes
 
-As workflows become more complex, it's essential to manage them effectively to handle problems, test them, and ensure they run smoothly. A **Scope** is a container that groups multiple actions together, making it easier to organize and visualize distinct parts of your workflow. When your workflow grows larger and more intricate, using a Scope can help keep things organized and simplify troubleshooting.
+As workflows become more complex, it's essential to manage them effectively to handle problems, test them, and ensure they run smoothly. 
 
-:::image type="content" source="media/use-scope.png" alt-text="Screenshot of the actions within a Scope":::
+## What is a scope?
+
+A *scope* is a container that groups multiple actions together, making it easier to organize and visualize distinct parts of your workflow. When your workflow grows larger and more intricate, using a scope can help keep things organized and simplify troubleshooting.
+
+:::image type="content" source="media/use-scope.png" alt-text="Screenshot of actions within a scope.":::
 
 ## How to use scopes
 
 To group actions and manage their execution using scopes in Power Automate:
 
-- **Grouping actions**: You can add multiple actions inside a scope which is useful when you have a series of related actions that need to be executed together. Grouping actions in a scope helps maintain a clear structure and ensures that related tasks are kept together.
+- **Group actions**: You can add multiple actions inside a scope, which is useful when you have a series of related actions that need to be executed together. Grouping actions in a scope helps maintain a clear structure and ensures that related tasks are kept together.
 
-- **Organizing your flow**: Scopes allow you to create a hierarchical structure within your flow. You can nest scopes, where one scope contains another, enabling you to break down your workflow into smaller, more manageable sections. This hierarchical organization makes it easier to understand and manage complex workflows.
+- **Organize your flow**: Scopes allow you to create a hierarchical structure within your flow. You can nest scopes, where one scope contains another, enabling you to break down your workflow into smaller, more manageable sections. This hierarchical organization makes it easier to understand and manage complex workflows.
 
-- **Error handling**: Scopes are also beneficial for error handling. You can configure scopes to catch and handle errors that occur within the actions they contain. Using a catch scope makes it easier to troubleshoot and fix issues in your workflow. Learn more: [Employ robust error handling](error-handling.md)
+- **Implement for error handling**: Scopes are also beneficial for error handling. You can configure scopes to catch and handle errors that occur within the actions they contain. Using a catch scope makes it easier to troubleshoot and fix issues in your workflow. Learn more: [Employ robust error handling](error-handling.md)
 
-- **Visibility and readability**: Scopes can be collapsed to hide their contents, making it easier to read the flow and focus on other parts of your flow. Collapsing scopes helps keep your workspace neat and organized, especially when dealing with large and complex flows.
+- **Maintain visibility and readability**: Scopes can be collapsed to hide their contents, making it easier to read the flow and focus on other parts of your flow. Collapsing scopes helps keep your workspace neat and organized, especially when dealing with large and complex flows.
 
 - **Avoid overusing scopes**: Not every action needs to be within a scope. Use scopes judiciously to avoid unnecessary complexity. Only group actions into scopes when it adds value to the organization and manageability of your flow.
 
-By using scopes effectively, you can enhance the clarity, organization, and maintainability of your workflows, making it easier to manage and troubleshoot as they grow in complexity.
+By using scopes effectively, you can enhance the clarity, organization, and maintainability of your workflows, making them easier to manage and troubleshoot as they grow in complexity.
 
-> [!NOTE]
-> We advise that you add comments or notes in the scope to make the flows more readable.
+> [!TIP]
+> Add comments or notes in the scope to make the flows more readable.
 >
-> :::image type="content" source="media/use-scope-note.png" alt-text="Screenshot of a note within a Scope":::
+> :::image type="content" source="media/use-scope-note.png" alt-text="Screenshot of a note within a scope.":::
