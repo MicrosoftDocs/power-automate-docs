@@ -1,4 +1,4 @@
----
+d---
 title: Hosted machines
 description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
@@ -113,6 +113,10 @@ To find more information about the Microsoft Entra and Intune requirements, go t
     Follow the same instruction as for creating the Windows 365 application to check and create the service principals.
 
 ### Get access to the default VM image
+
+> [!NOTE]
+> The default VM image provided by Power Automate with Microsoft Edge pre-installed is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration or security constraints, you should use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine) capability.
+
 
 To create hosted machines, you need access to the default image that is part of your environment. You can view the default image in **Monitors** > **Machines** > **VM images**.
 
