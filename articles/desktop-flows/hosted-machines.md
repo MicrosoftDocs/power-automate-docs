@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/01/2024
+ms.date: 02/03/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -103,7 +103,6 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 
     To create a hosted machine, you must create the following Azure Virtual Desktop services in your tenant.
 
-
     | Application name                   | Application ID                       |
     |------------------------------------|--------------------------------------|
     | Azure Virtual Desktop              | 9cdead84-a844-4324-93f2-b2e6bb768d07 |
@@ -115,8 +114,7 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 ### Get access to the default VM image
 
 > [!NOTE]
-> The default VM image provided by Power Automate with Microsoft Edge pre-installed is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration or security constraints, you should use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine) capability.
-
+> The default VM image provided by Power Automate with Microsoft Edge preinstalled is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration, or security constraints, use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine) capability.
 
 To create hosted machines, you need access to the default image that is part of your environment. You can view the default image in **Monitors** > **Machines** > **VM images**.
 
