@@ -12,7 +12,7 @@
               href: coding-guidelines/use-consistent-naming-conventions.md
             - name: Understand benefits of solution-aware flows
               href: coding-guidelines/understand-benefits-of-solution-aware-flows.md
-            - name: Create scopes
+            - name: Use and create scopes
               href: coding-guidelines/create-scopes.md
             - name: Offload complex business logic
               href: coding-guidelines/leave-complex-business-logic-out.md
