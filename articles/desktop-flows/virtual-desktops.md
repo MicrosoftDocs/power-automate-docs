@@ -4,7 +4,7 @@ description: Learn how to build automated workflows on Citrix and RDP virtual de
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 10/23/2024
 ms.author: quseleba
 ms.reviewer: matp
 contributors:
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Automate on virtual desktops
 
-With the Power Automate agent for virtual desktops, you can automate processes on virtual desktops as easily as you can on physical devices. If your virtual desktop uses Citrix or Microsoft Remote Desktop Protocol (RDP), you can [capture UI elements](ui-elements.md), [deploy UI automation actions](actions-reference/uiautomation.md), and [create desktop flows using the recorder](recording-flow.md), just like on your physical desktop.
+With the Power Automate agent for virtual desktops, you can automate processes on virtual desktops as easily as you can on physical devices. If your virtual desktop uses Citrix or Microsoft Remote Desktop Protocol (RDP), you can [capture UI elements](ui-elements.md), [deploy UI automation actions](actions-reference/uiautomation.md), [deploy Browser automation actions](actions-reference/webautomation.md),and [create desktop flows using the recorder](recording-flow.md), just like on your physical desktop.
 
 The Power Automate agent for virtual desktops must be running both while you're designing a flow and when the flow runs. The agent starts automatically when a user logs in to the virtual desktop. If it isn't running on your virtual desktop, launch the agent manually. To launch the Power Automate agent for virtual desktops manually, double-click the shortcut on your desktop, or search for *Power Automate agent for virtual desktops* on the **Start** menu and then select the respective result, or go to the installation directory of the Power Automate agent for virtual desktops (by default, it's `C:\Program Files (x86)\Power Automate agent for virtual desktops`) and double-click **PAD.RDP.ControlAgent.exe.**
 
@@ -27,6 +27,18 @@ It's important to install Power Automate for desktop on the machine where you're
 - Your physical device and virtual machine must be running Windows 10 Pro, Windows 10 Enterprise, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, Windows Server 2019, or Windows Server 2022.
 
 - Make sure the Citrix or RDP connection to the virtual desktop is closed and then [install Power Automate on your physical device](https://go.microsoft.com/fwlink/?linkid=2137322).
+
+- A device with the following hardware (these requirements don't include the resources required for the applications involved in your desktop flows):
+
+  Minimum hardware:
+  - Processor: 1.50 GHz per session or faster with two or more cores.
+  - Storage: 300 ΜΒ system storage for agent installation, plus 500 MB for each user (each version of Power Automate for desktop requires a user have 500 MB of storage space).
+  - RAM: 384 MB per session.
+
+  Recommended hardware:
+  - Processor: 2.00 GHz per session or faster with two or more cores.
+  - Storage: 300 ΜΒ or more system storage for agent installation, plus 500 MB or more for each user (each version of Power Automate for desktop requires a user have 500 MB of storage space).
+  - RAM: 512 MB or more per session.
 
 ## Install the Power Automate agent for virtual desktops
 
@@ -104,10 +116,6 @@ The following table and diagram depicts the different phases of communication:
     **Workaround:** Download and install the Microsoft Visual C++ Redistributable, which installs Microsoft C and C++ (MSVC) runtime libraries.
   - [Download the x86 version](https://aka.ms/vs/17/release/vc_redist.x86.exe).
   - [Download the x64 version](https://aka.ms/vs/17/release/vc_redist.x64.exe).
-
-- **Issue:** Citrix and RDP automation doesn't support the use of web automation actions.
-
-    **Workarounds:** [Treat web components as desktop UI elements](desktop-automation.md), [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md), or [automate using images](images.md).
 
 - **Issue:** When a flow is running, an element isn't found if the virtual desktop window is minimized.
 

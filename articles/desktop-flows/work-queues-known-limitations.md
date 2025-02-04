@@ -21,7 +21,7 @@ The following table lists known limitations for work queues in Power Automate fo
 | Work queue DLP policy configuration support | There may be a delay before new work queue connector actions added to Power Automate desktop are visible and configurable through DLP policies in Power Platform Admin Center. <br><br>Additionally, if you want to limit the use of work queues in cloud flow and API-based scenarios, you should use Dataverse RBAC to control access to the underlying tables. This is because work queues are built on the Dataverse platform, and their actions (such as adding, updating, deleting and dequeueing) are accessible by-design through the native Dataverse connector, which cannot be completely blocked by DLP policies. |
 | Throughput and scaling | Work queues aren't suited for high throughput (subsecond processing time) scenarios, where hundreds or thousands of items need to be processed in seconds. If you do have such throughput requirements, consider using other queuing solutions such as Azure Service Bus Queues. |
 
-### See also
+## Related information
 
 - [Work queue overview](work-queues.md)
 - [Manage work queues](work-queues-manage.md)

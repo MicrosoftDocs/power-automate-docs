@@ -102,7 +102,7 @@ If you have a trigger registered on the update of a row, the flow runs for every
 
 Flow runs might be delayed if there's a backlog of system jobs in your environment.  If this delay occurs, your flow is triggered when the system job to invoke the flow runs.
 
-### See also
+## Related information
 
 [Add canvas apps and cloud flows to a solution by default](/power-apps/maker/canvas-apps/add-app-solution-default)
 

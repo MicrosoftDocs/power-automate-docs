@@ -18,7 +18,7 @@ search.audienceType:
 
 The automation recommendation feature in the process mining capability helps you identify automation opportunities and guides you through automating your processes using Microsoft Power Automate. You can watch this short video to learn how to use the feature:<br>
 </br>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6PS ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=1087996f-5232-47bd-b098-2ca0bdaa11c2 ]
 
 The blue recommendation icons on the process map activities indicate automation opportunities.
 
@@ -28,7 +28,7 @@ To automate an activity, select the **+Automate activities** option above the pr
 
 :::image type="content" source="media/automation-reco-2.png" alt-text="Screenshot of the Automate activities options.":::
 
-### See also
+## Related information
 
 [Connector overview](/connectors/connectors)<br/>
 [Visualize processes](process-advisor-visualize.md)

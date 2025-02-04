@@ -62,7 +62,7 @@ Now that you've created your solution, it's time to [add your flows](./create-fl
 
 There are certain limitations when using flows with solutions. For information about these limitations, see [Known limitations](/powerapps/maker/data-platform/solutions-overview#known-limitations) in the Power Apps docs.
   
-### See also
+## Related information
 
 - [Create a cloud flow in a solution](./create-flow-solution.md)
 - [Export a solution](./export-flow-solution.md)

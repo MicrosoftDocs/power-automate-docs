@@ -243,7 +243,7 @@ Learn how to [visualize and gain insights from processes](process-mining-visuali
 
 :::image type="content" source="media/process-mining-azure-templates/durable-functions-map.png" alt-text="Screenshot of the process map for the Durable Functions template.":::
 
-### See also
+## Related information
 
 [What is Azure DevOps?](/azure/devops/user-guide/what-is-azure-devops?)<br/>
 [What is Azure Pipelines?](/azure/devops/pipelines/get-started/what-is-azure-pipelines?)<br/>

@@ -46,6 +46,6 @@ An example of process scope is average case or event duration. When it's longer 
 
 Edge scope is the same as event scope, except that results are provided per edge. The calculation result displays in the **Statistics** and **Process map** screens.
 
-### See also
+## Related information
 
 [Business rules overview](business-rules.md)

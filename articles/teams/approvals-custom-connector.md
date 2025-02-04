@@ -156,7 +156,7 @@ Now that you've created your custom connector, it's time to create your approval
 
 1. Confirm in the target system the approval completion update steps were executed successfully.
 
-### See also
+## Related information
 
 - [Create a custom connector from scratch](/connectors/custom-connectors/define-blank)
 - [Use a Webhook as a trigger for Azure Logic Apps and Power Automate](/connectors/custom-connectors/create-webhook-trigger)

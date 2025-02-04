@@ -5,7 +5,7 @@ suite: flow
 author: kisubedi
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/21/2024
+ms.date: 10/09/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -22,7 +22,7 @@ In this article, you learn about some common data operations in Power Automate, 
 
 Here's a quick video about data operations.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKXdo]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4eb588b9-6468-4e0f-b07b-8af41f31f6ea]
 
 ## Prerequisites
 
@@ -169,6 +169,11 @@ To do this, follow the steps in the previous **Use the create CSV table action**
 
 > [!TIP]
 > If you plan to send the HTML table via email, remember to select **IsHtml** in the email action.
+
+## Related information
+
+- [Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
+- [Training: Integrate Power Automate flows and Dataverse (learning path)](/training/paths/integrate-dataverse-power-automate/)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

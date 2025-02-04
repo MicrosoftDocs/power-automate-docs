@@ -1,15 +1,15 @@
 ---
 title: Prepare processes and data
 description: Learn how to prepare processes and data with the process mining capability in Power Automate.
-author: donums
+author: rosikm
 contributors:
   - rosikm
   - donums
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/16/2024
-ms.author: derahonuorah
+ms.date: 11/22/2024
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -26,7 +26,7 @@ Before you can use the process mining capability in Power Automate effectively, 
 
 Here's a short video on how to upload data for use with the process mining capability:<br>
 </br>
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5b4UA]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e51bfefa-2e88-4c2b-a29f-95d7e65c362d]
 
 ## Data requirements
 
@@ -38,7 +38,7 @@ Event logs and activity logs are tables stored in your system of record that doc
 
 - **Activity Name**
 
-  Activities are the steps of your process, and activity names describe each step. In a typical approval process, the activity names may be "submit request," "request approved," "request rejected," and "revise request."
+  Activities are the steps of your process, and activity names describe each step. In a typical approval process, the activity names might be "submit request," "request approved," "request rejected," and "revise request."
 
 - **Start Timestamp and End Timestamp**
 
@@ -113,6 +113,10 @@ One easy way to try out the process mining capability regardless of where your d
 
 1. Upload your event log, select your file from the list, and then select **Open** to use that file.
 
+### Use the Dataflow connector
+
+The Dataflow connector isn't supported in Microsoft Power Platform. The existing Dataflow can't be used as a data source for Power Automate Process Mining.
+
 ### Use the Dataverse connector
 
 The Dataverse connector isn't supported in Microsoft Power Platform. You need to connect to it using the OData connector, which requires a few more steps.
@@ -140,4 +144,3 @@ The Dataverse connector isn't supported in Microsoft Power Platform. You need to
 1. Expand the **OData** folder. You should see all the Dataverse tables in that environment. As an example, the **Activities** table is called *activitypointers*.
 
 1. Select the checkbox next to the table you want to import, and then select **Next**.
-
