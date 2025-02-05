@@ -1,5 +1,5 @@
 ---
-title: Use data operations
+title: Work with data operations
 description: Learn how to efficiently manipulate, transform, and manage data within your cloud flows using data operations in Power Automate.
 author: manuelap-msft
 ms.subservice: guidance
@@ -12,7 +12,7 @@ search.audienceType:
   - flowmaker
 ---
 
-# Use data operations
+# Work with data operations
 
 Data operations in Power Automate refer to the manipulation, transformation, and management of data within your automation flows in an efficient way. Actions like **Filter array**, **Select**, and **Join** help avoid unnecessary loops to process data.
 
