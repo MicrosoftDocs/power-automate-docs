@@ -4,7 +4,7 @@ description: Troubleshooter application for Power Automate for desktop.
 author: YiannisMavridis
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 08/27/2024
+ms.date: 01/22/2025
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
@@ -22,12 +22,14 @@ The troubleshooter in Power Automate for desktop is a component that allows you 
 
 :::image type="content" source="media/troubleshooter/troubleshooter-window-four-categories.png" alt-text="Troubleshooter main screen" border="false":::
 
-The troubleshooter includes four categories of diagnostics:
+The troubleshooter includes six categories of diagnostics:
 
 * connectivity
+* Dataverse
 * UI/Web automation
 * picture-in-picture
 * installation issues
+* connectivity for cloud runtime
 
 The troubleshooter also hosts the functionality that puts Power Automate in an improved diagnostics state for troubleshooting purposes.
 
@@ -71,6 +73,14 @@ After a category is checked for issues end to end, there’s always the option t
 Τhere can be relevant connectivity errors while using Power Automate for desktop. In those cases, you're prompted to launch the troubleshooter directly, through a link in the error dialog. Doing so automatically opens and runs the connectivity issues category.
 
 :::image type="content" source="media/troubleshooter/error-dialog-with-troubleshooter-link.png" alt-text="Connection error detected dialog with troubleshooter link" border="false":::
+
+## Dataverse issues
+
+This category detects potential issues around Dataverse that might affect Power Automate for desktop:
+
+* **Provisioning**: This step checks whether the user can provision a Dataverse database in the selected environment.
+* **Permissions**: This step checks whether the user has the required permissions to access the selected environment.
+* **Required endpoints**: This step checks whether the required endpoints for the respective policies are accessible.
 
 ## Installation issues
 

@@ -2,7 +2,6 @@
 title: Share desktop flows that contain connector actions
 description: Learn how to share desktop flows that contain connector actions.
 author: jpapadimitriou
-
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 12/12/2024
@@ -10,7 +9,6 @@ ms.author: dipapa
 ms.reviewer: 
 contributors:
 - jpapadimitriou
-- yiannismavridis
 - DanaMartens
 search.audienceType: 
   - flowmaker

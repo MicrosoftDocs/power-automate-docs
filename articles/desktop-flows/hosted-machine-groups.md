@@ -4,7 +4,7 @@ description: Learn how to create and use hosted machine groups to distribute you
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 09/16/2024
+ms.date: 02/03/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -47,14 +47,17 @@ This section presents all the prerequisites to create and use hosted machine gro
 
 ### Get access to the default VM image
 
+> [!NOTE]
+> The default VM image provided by Power Automate with Microsoft Edge preinstalled is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration, or security constraints, use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine-groups) capability.
+
 To create a hosted machine group, you need access to the default VM image that is part of your environment. You can view the default image in **Monitor** > **Machines** > **VM images**.
 
 :::image type="content" source="media/hosted-machine-groups/vm-images-preview.png" alt-text="Screenshot of the VM images tab in the Power Automate portal.":::
 
 > [!NOTE]
 >
-> - Users need either the **System Administrator** or **Desktop Flow Machine Image Admin** role to see and manage the default image.
-> - For other users, the **System Administrator** or **Desktop Flow Machine Image Admin** has to share the default image with them before they can use it.
+> - Users need either the **System Administrator** or **Desktop Flows Machine Configuration Admin** role to see and manage the default image.
+> - For other users, the **System Administrator** or **Desktop Flows Machine Configuration Admin** has to share the default image with them before they can use it.
 
 ### Share the default image
 
@@ -136,12 +139,11 @@ You can personalize your hosted machine groups by providing your own Windows ima
 Custom VM images must meet the following requirements:
 
 - Generation 2 images
-- Generalized VM image
+- Generalized VM image. Learn more in [generalize VM image](/azure/virtual-machines/generalize).
 - 127-GB limit on VM image size
 - Microsoft Edge version 80 or higher
 - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
-Learn how to create a generalized VM image in Azure in [Upload a generalized Windows VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed).
 
 ### Create an Azure compute gallery in Azure and add an image
 
@@ -164,8 +166,8 @@ Learn how to create a generalized VM image in Azure in [Upload a generalized Win
     - Japan: Japan East
     - Korea: Korea Central
     - Norway: Norway East
-    - South Africa - South Africa North
-    - Southeast Asia - Singapore
+    - South Africa: South Africa North
+    - Southeast Asia: Singapore
     - Switzerland: Switzerland North
     - United Arab Emirates: UAE North
     - United Kingdom: UK South
@@ -560,13 +562,13 @@ Admins can also use the roles provided as part of Desktop Flows. You can find mo
 
 ### Desktop Flows Machine Owner role
 
-By default, **Desktop Flows Machine** owners can create hosted machine groups but can't create custom VM images. They can only use previously shared [custom VM images](#use-custom-vm-images-for-your-hosted-machine-groups) in their own hosted machine groups.
+By default, **Desktop Flows Machine Owners** can create hosted machine groups but can't create custom VM images. They can only use previously shared [custom VM images](#use-custom-vm-images-for-your-hosted-machine-groups) in their own hosted machine groups.
 
 :::image type="content" source="media/hosted-machine-groups/desktop-flows-machine-owner-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Owner role.":::
 
 ### Desktop Flows Machine Configuration Admin role
 
-The **Desktop Flows Machine Image Admin** role only brings full privileges on the **Flow Machine Image** entity. In particular, it allows users with this role to share/unshare VM images to be used for created hosted machine group in their environment. You can find more information about sharing pre-provisioned VM Images in [Create hosted machine groups](#create-hosted-machine-groups).
+The **Desktop Flows Machine Configuration Admin** role  brings full privileges on the **Flow Machine Image** entity. In particular, it allows users with this role to share/unshare VM images to be used for created hosted machine group in their environment. You can find more information about sharing pre-provisioned VM Images in [Create hosted machine groups](#create-hosted-machine-groups).
 
 :::image type="content" source="media/hosted-machine-groups/desktop-flow-machine-configuration-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Configuration Admin role.":::
 
@@ -649,6 +651,36 @@ The following list displays all supported sovereign clouds:
 Hosted machine groups aren't yet available in the following sovereign cloud:
 
 - China
+
+### Default VM image deprecation for Windows 11 Enterprise 22H2
+
+Windows versions are supported for a limited time to provide the latest security updates, performance improvements, and features. The default VM image on Windows 11 Enterprise 22H2 is deprecated and replaced by Windows 11 Enterprise 24H2.
+
+> [!NOTE]
+> This deprecation doesn't affect Windows version used in custom VM images.
+
+Image scheduled for deprecation:
+
+| Name | Description | Reference | Deprecation date (0:00 UTC) | End of support date (0:00 UTC) |
+|------|-------------|-----------|-----------------------------|--------------------------------|
+| Default Windows 11 Enterprise 22H2 Image | Default Windows Desktop Image for use in Microsoft Desktop Flows. Windows 11 Enterprise 22H2 with Microsoft Edge. | `MicrosoftWindowsDesktop:windows-ent-cpc:win11-22h2-ent-cpc-os` | February 28, 2025 | May 31, 2025 |
+
+Recommended alternative image:
+
+| Name | Description | Reference |
+|------|-------------|-----------|
+| Default VM image – Windows 11 Enterprise 24H2 | Default Windows Desktop Image for use in Microsoft Desktop Flows. Windows 11 Enterprise 24H2 with Microsoft Edge. | `MicrosoftWindowsDesktop:windows-ent-cpc:win11-24h2-ent-cpc` |
+
+Impact:
+
+- After the deprecation date, you can't deploy new hosted machine groups with the deprecated image.
+- If you don't take action by the end of support, affected hosted machine groups are automatically reprovisioned to the recommended default image.
+
+Action:
+
+1. Review all affected hosted machine groups by navigating to the **VM images** tab under the **Machines** page in the Power Automate Portal.
+1. To ensure compatibility, test your desktop flows with the recommended alternative image in a nonproduction environment.
+1. After validation, use the [update VM image](#update-vm-image-used-by-the-hosted-machine-group) to reprovision the hosted machine groups to the recommended alternative default image.
 
 ### Sovereign clouds limitations for hosted machine groups
 

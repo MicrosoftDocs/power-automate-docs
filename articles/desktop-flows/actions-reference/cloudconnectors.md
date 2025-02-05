@@ -40,7 +40,7 @@ search.audienceType:
     - [Perform an unbound action in selected environment](/connectors/commondataserviceforapps/#perform-an-unbound-action-in-selected-environment)
     - [Relate rows in selected environment](/connectors/commondataserviceforapps/#relate-rows-in-selected-environment)
     - [Unrelate rows in selected environment](/connectors/commondataserviceforapps/#unrelate-rows-in-selected-environment)
-    - [Upsert a row in selected environment](/connectors/commondataserviceforapps/#update-a-row-in-selected-environment)
+    - [Update a row in selected environment](/connectors/commondataserviceforapps/#update-a-row-in-selected-environment)
     - [Upload a file or an image to selected environment](/connectors/commondataserviceforapps/#upload-a-file-or-an-image-to-selected-environment)
 - A few connector actions introduced in version 2.49 (both installer and Microsoft Store versions) might fail with the following error during designer, console, and cloud-initiated runs:
 
@@ -128,6 +128,6 @@ You can add the rest of the (non-custom) Power Automate cloud connectors to a de
 
     :::image type="content" source="media/cloudconnectors/connector-banner-warning-to-create-connection-in-portal.png" alt-text="Screenshot of the sign in dialog in connector actions including a banner message" border="false":::
 
-- Creating non-OAuth connections through Power Automate for desktop is supported only for connectors that require you to accept terms of use. For other connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
+- Creating non-OAuth connections through Power Automate for desktop isn't supported. For these connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
 
     :::image type="content" source="media/cloudconnectors/connector-banner-prompt-to-create-connection-in-portal.png" alt-text="Screenshot of the connector actions including a banner message that prompts to create a connection through the portal" border="false":::
