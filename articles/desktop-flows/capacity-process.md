@@ -47,7 +47,7 @@ You now have a machine that can perform unattended RPA.
 
 ## Allocate Process capacity to a cloud flow
 
-When Process capacity is allocated to a cloud flow, it becomes a *Process plan* based on which the cloud flow is licensed to run premium actions independently from the user license.
+When Process capacity is allocated to a cloud flow, it becomes a *Process plan* based on which the cloud flow is licensed to run premium actions independently from the user license with a 250k Power Platform Request daily limit.
 
 To allocate a Process capacity to a cloud flow, go to the cloud flow details page and select **Edit**.
 
@@ -57,11 +57,15 @@ To allocate a Process capacity to a cloud flow, go to the cloud flow details pag
 >
 > At creation, a cloud flow is by default based on the user plan.
 
-Change the plan used by the flow to **Per-flow/Process** and save.
+Change the plan used by the flow to **Process plan** and save.
 
 ![Cloud flow page - Settings - Process plan](media/capacity-utilization/cloud-flow-process-allocation.png)
 
 The cloud flow is now independent from the user license.
+
+> [!NOTE]
+>
+> Stacking multiple Process capacity on a single cloud flow is not yet enabled.
 
 ## Related information
 
