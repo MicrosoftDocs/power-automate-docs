@@ -21,7 +21,7 @@ Process capacity or legacy Unattended RPA capacity can be allocated to a machine
 
 |Before allocation|Consuming object|After allocation|Description|Allocation mode|
 |----|--------------------|----|----|----|
-|Process capacity|[Machine](manage-machines.md)|Unattended bot|Every unattended bot on a machine allows it to carry out an additional unattended desktop flow run simultaneously.|Capacity is auto-allocated to the machine at unattended desktop flow runtime or can be manually allocated by the user.|
+|Process capacity|[Machine](manage-machines.md)|Unattended bot|Every unattended bot on a machine allows it to carry out an additional unattended desktop flow run simultaneously.|Capacity is auto-allocated to the machine at unattended desktop flow runtime, or the user can  manually allocate it.|
 |Process capacity|Cloud flow|Process plan|Every Process plan allocated to a cloud flow allows it to run premium actions independently from the user license.|Capacity is manually allocated to the cloud flow by the user.|
 
 > [!NOTE]

@@ -28,7 +28,7 @@ You manage the following capacity within the capacity utilization page:
 
 > [!NOTE]
 >
-> Process capacity and Unattended RPA capacity (legacy) have been combined in a single pool. They can seamlessly be utilized by machines.
+> We've combined Process capacity and Unattended RPA capacity (legacy) into a single pool. Machines can seamlessly utilize them.
 
 ## Capacity utilization overview page
 
