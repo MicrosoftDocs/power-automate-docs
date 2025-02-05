@@ -3,9 +3,9 @@ title: Capacity utilization within Power Automate
 description: Capacity utilization within Power Automate
 author: cvassallo
 ms.subservice: desktop-flow
-ms.date: 05/01/2024
+ms.date: 02/05/2025
 ms.author: cvassallo
-ms.reviewer: matp
+ms.reviewer: angieandrews
 contributors:
 - DanaMartens
 ms.topic: conceptual

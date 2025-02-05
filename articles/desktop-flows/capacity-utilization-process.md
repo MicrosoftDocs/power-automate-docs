@@ -3,9 +3,9 @@ title: Process capacity utilization
 description: Process capacity utilization 
 author: cvassallo
 ms.subservice: desktop-flow
-ms.date: 03/20/2024
+ms.date: 02/05/2025
 ms.author: cvassallo
-ms.reviewer: matp
+ms.reviewer: angieandrews
 contributors:
 - DanaMartens
 ms.topic: conceptual
