@@ -40,9 +40,9 @@ Follow these best practices when using environment variables:
 Imagine you have a flow that connects to an API endpoint that differs across development, testing, and production environments.
 
 1.  **Create environment variable**:
-    -   API_Base_URL with default value https://api.dev.example.com for development.
-    -   Change the value to https://api.test.example.com in the testing environment.
-    -   Change the value to https://api.example.com in the production environment.
+    -   API_Base_URL with default value `https://api.dev.example.com` for development.
+    -   Change the value to `https://api.test.example.com` in the testing environment.
+    -   Change the value to `https://api.example.com` in the production environment.
 2.  **Reference in flow**:
     -   In the HTTP action within your flow, set the URL to `@{variables('API_Base_URL')}`.
 
