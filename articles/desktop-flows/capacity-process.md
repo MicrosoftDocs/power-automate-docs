@@ -59,7 +59,7 @@ To allocate a Process capacity to a cloud flow, go to the cloud flow details pag
 
 Change the plan used by the flow to **Per-flow/Process** and save.
 
-![Cloud flow page - Settings - Process plan](media/capacity-utilization/cloud-flow-setting-flow-plan.png)
+![Cloud flow page - Settings - Process plan](media/capacity-utilization/cloud-flow-process-allocation.png)
 
 The cloud flow is now independent from the user license.
 
