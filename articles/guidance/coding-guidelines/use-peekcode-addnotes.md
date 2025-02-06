@@ -46,7 +46,7 @@ Copying actions enables you to reuse the same action multiple times within a flo
 
 Select an action and select **Copy Action** to copy the action.
 
-:::image type="content" source="media/copy-action.png" alt-text=Screenshot of selecting Copy Action.":::
+:::image type="content" source="media/copy-action.png" alt-text="Screenshot of selecting Copy Action.":::
 
 Select the **+** to **Paste an action**.
 
