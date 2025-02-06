@@ -24,6 +24,7 @@ Custom actions developed by your organization and uploaded to the respective env
 > [!IMPORTANT]
 > - This feature requires Power Automate for desktop v2.32 or later.
 > - Ensure the .dll files describing Custom actions, their dependency .dll files, and the .cab files are properly signed with a digital certificate trusted by your organization. The certificate should also be installed on the device under the trusted root certificate authority where the desktop flow with custom action dependencies is modified and/or executed.
+> - If you use custom security roles to manage access, Power Platform admins need to add the privilege `prvReaddesktopflowmodule` to the role.
 
 Custom actions exist at the environment level. As a best practice, use a "dev&mdash;test&mdash;prod" model when developing custom actions.
 
