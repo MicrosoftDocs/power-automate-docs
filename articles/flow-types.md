@@ -48,9 +48,9 @@ Use [desktop flows](./desktop-flows/introduction.md) to automate tasks on the We
 
 ## Related information
 
-- Read guidance to [determining which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
-- Get started with [cloud flows](overview-cloud.md). 
-- Get started with [desktop flows](./desktop-flows/introduction.md).
-- Get started with [business process flows](business-process-flows-overview.md) in conditions in advanced mode.
+- Read guidance on [determining which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
+- Overview of [cloud flows](overview-cloud.md)
+- Get started with [desktop flows](./desktop-flows/introduction.md)
+- Get started with [business process flows](business-process-flows-overview.md) in conditions in advanced mode
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
