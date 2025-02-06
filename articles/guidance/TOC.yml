@@ -34,11 +34,11 @@
               href: coding-guidelines/use-environment-variables.md
             - name: Employ robust error handling
               href: coding-guidelines/error-handling.md
-            - name: Use Flow Checker
+            - name: Manage flow behavior with Flow Checker
               href: coding-guidelines/manage-flows-with-flow-checker.md
             - name: Test cloud flows
               href: coding-guidelines/test-cloud-flows.md
-            - name: Use code view and add notes
+            - name: Leverage Power Automate features
               href: coding-guidelines/use-peekcode-addnotes.md
             - name: Troubleshooting tips
               href: coding-guidelines/troubleshoot-cloud-flows.md
