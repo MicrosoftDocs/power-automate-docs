@@ -26,9 +26,9 @@ The simplest mechanism to configure a firewall to allow Power Automate cloud flo
 
 ## Logic Apps and connectors for cloud flows runtime
 
-Calls made from a cloud flow go directly through the Azure Logic Apps service. Some examples of these calls include HTTP or HTTP + OpenAPI. Network traffic for these calls originates from the IP ranges listed in the [IP range for HTTP or HTTP + OpenAPI]((#ip-range-for-http-actions-openapi)) and [Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) documentation.
+Calls made from a cloud flow go directly through the Azure Logic Apps service. Some examples of these calls include HTTP or HTTP + OpenAPI. Network traffic for these calls originates from the IP ranges listed in the [IP range for HTTP or HTTP + OpenAPI](#ip-range-for-http-actions-and-openapi) and [Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) documentation.
 
-If you're restricting inbound or outbound IP addresses on your network (for example, through a firewall), update your network configuration to allow [IP Range for HTTP or HTTP + OpenAPI](#ip-range-for-http-actions-openapi), [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration), and [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions to ensure flows continue to work.
+If you're restricting inbound or outbound IP addresses on your network (for example, through a firewall), update your network configuration to allow [IP Range for HTTP or HTTP + OpenAPI](#ip-range-for-http-actions-and-openapi), [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration), and [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions to ensure flows continue to work.
 
 Learn more in [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones). 
 
