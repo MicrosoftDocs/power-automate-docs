@@ -13,7 +13,7 @@ contributors:
   - jpapadimitriou
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 01/15/2025
+ms.date: 02/06/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 ---
@@ -26,16 +26,13 @@ The simplest mechanism to configure a firewall to allow Power Automate cloud flo
 
 ## Logic Apps and connectors for cloud flows runtime
 
-Calls made from a cloud flow go directly through the Azure Logic Apps service. Some examples of these calls include HTTP or HTTP + OpenAPI. Network traffic for these originates from IP range listed here [IP Range](/new section in doc) and [Azure Logic Apps documentation](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags)
+Calls made from a cloud flow go directly through the Azure Logic Apps service. Some examples of these calls include HTTP or HTTP + OpenAPI. Network traffic for these calls originates from the IP ranges listed in the [IP range for HTTP or HTTP + OpenAPI]((#ip-range-for-http-actions-openapi)) and [Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) documentation.
 
-If you're restricting inbound or outbound IP addresses on your network (for example, through a firewall), to ensure flows continue to work, update your network configuration to allow 
-1. [IP Range for HTTP or HTTP + OpenAPI](#ip-range-for-http-actions-openapi)
-2. [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration) and
-3. [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions.
+If you're restricting inbound or outbound IP addresses on your network (for example, through a firewall), update your network configuration to allow [IP Range for HTTP or HTTP + OpenAPI](#ip-range-for-http-actions-openapi), [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration), and [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions to ensure flows continue to work.
 
 Learn more in [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones). 
 
-In order to automate the process of firewall or configuration updates, you can leverage the Azure IP range downloadable JSON file in the Download Center: [Downloadable IP](https://www.microsoft.com/download/details.aspx?id=56519)
+To automate firewall or configuration updates, you can use the Azure IP range downloadable JSON file available in the Download Center: [Downloadable IP](https://www.microsoft.com/download/details.aspx?id=56519)
 
 ## Required endpoints for Power Automate service
 
@@ -151,7 +148,10 @@ You should use [Azure service tags](/azure/virtual-network/service-tags-overview
 
 You should use the [Service Tags with an on-premises firewall](/azure/virtual-network/service-tags-overview#service-tags-on-premises) so you don't need to monitor and manually update IP ranges. The [Service Tag Discovery API](/azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api) provides access to the latest IP address ranges associated with each service tag, enabling you to stay current with changes.
 
-## IP Range for HTTP Actions, OpenAPI
+## IP range for HTTP actions and OpenAPI
+
+For HTTP actions and OpenAPI, the IP ranges are as follows:
+
           "4.150.232.8/29",
           "4.150.233.64/26",
           "4.150.233.128/25",
