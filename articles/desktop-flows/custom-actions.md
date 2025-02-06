@@ -33,7 +33,6 @@ Custom actions exist at the environment level. As a best practice, use a "dev&md
 - Specific endpoints must be included in the allowlist for desktop flows containing custom actions to work properly. More information: [Desktop flow services required for runtime](../ip-address-configuration.md#services-required-for-desktop-flows-runtime)
 - Application lifecycle management (ALM) isn't fully supported for desktop flows with dependencies on custom actions.
 - Upload date might differ in the portal than what is shown in the Assets library inside Power Automate for desktop.
-- The Assets library can't display more than 5000 custom actions groups.
 - Custom actions are not available for organizations that have enabled [Bring your own key (BYOK)](/azure/information-protection/byok-price-restrictions) from the protection service.
 - Machines belonging in a [hosted machine group](hosted-machine-groups.md) should have the appropriate certificates required for custom actions, as set by your organization, installed on them. You can create a [golden image](/azure/virtual-desktop/set-up-golden-image), containing the respective certificate(s) and provide it during the creation process of the respective hosted machine group.
 - All dependencies used in custom actions and Power Automate for desktop must be the same version. Using different versions of the same dependency within the same process isn't supported.
