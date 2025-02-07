@@ -9,10 +9,10 @@ ms.date: 02/07/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors:
- : manuelap-msft
+ - manuelap-msft
 search.audienceType:
- : admin
- : flowmaker
+ - admin
+ - flowmaker
 ---
 
 # Integrating cloud flows with Power Apps
