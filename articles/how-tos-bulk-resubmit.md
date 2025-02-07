@@ -5,7 +5,7 @@ suite: flow
 author: DBEKI
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 01/13/2025
+ms.date: 02/06/2025
 ms.author: dbekirop
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -19,12 +19,27 @@ You can cancel or resubmit your flow runs in bulk instead of one at a time, whic
 
 ## Resubmit flow runs initiated by instant triggers
 
-As a Power Platform administrator, you can enable users to resubmit flow runs initiated by instant triggers. Instant triggers, which are used to manually start flows, can be activated through Power Automate, a mobile app, or a button in a canvas app, among other methods.
+Administrators can enable users to resubmit flow runs initiated by instant triggers. Instant triggers, which are used to manually start flows, can be activated through Power Automate, a mobile app, or a button in a canvas app, among other methods.
 
 > [!IMPORTANT]
-> The new setting for resubmitting flow runs initiated by instant triggers will start rolling out on January 13, 2025, and is expected to be available in all regions by the end of January 2025. Power Platform administrators can follow the instructions in this section to enable all users to resubmit flow runs initiated by instant triggers. Other trigger types are not affected by this change.
+> The new setting for resubmitting flow runs initiated by instant triggers starts rolling out on January 13, 2025, and is expected to be available in all regions by the end of January 2025. To ensure that flow owners can't resubmit flow runs with connections others have provided to the flow, leave this setting off. Otherwise, Power Platform administrators can follow the instructions in this section to enable all users to resubmit flow runs initiated by instant triggers. Other trigger types aren't affected by this change.
+
+### Prerequisites
+
+To perform the administration operations in the cmdlets, you need the following:
+
+- Any of these roles from Microsoft Entra ID: Tenant admin, Power Platform administrator, or Dynamics 365 Service Administrator. These roles can access the Power Apps admin PowerShell cmdlets without requiring a Power Apps plan for administrative access. However, these administrators need to sign in to the Power Platform admin center at least once before using the PowerShell cmdlets. If this isn't done, the cmdlets fail with an authorization error.
+
+- Power Platform administrator or Dynamics 365 administrator permissions are required to search through another user's resources. Environment admins only have access to those environments and environment resources for which they have permissions.
+
+- For Dataverse for Teams environments, you must be a Power Platform administrator to manage environments where you aren't the owner of the team in Microsoft Teams.
+
+### PowerShell commands
 
 To enable flow run resubmission for flows initiated by instant triggers, run the following PowerShell commands.
+
+> [!NOTE]
+> It takes approximately an hour for the function to become enabled after the PowerShell commands are applied.
 
 1. Sign in to your tenant account: 
 
@@ -97,9 +112,9 @@ You can cancel flow runs on the related flow's **Run history** page, or by using
 
     > [!NOTE]
     > - Flows in the **Running** state are suspended and change to a state of **Canceling** before eventually changing to **Canceled**.
-    > - This process can sometimes take up to 24 hours more more.
+    > - This process can sometimes take up to 24 hours more.
     > - In this scenario, the flows are suspended, and no further actions are executed.
-    > - If you select a flow run in the **Canceling** state, it might appear that the spinner near an action is in motion, but it's in a suspended state. When flows are actually running, a notification banner diplays to indicate your flow is running. This isn't the case for suspended flows in the **Canceling** state.
+    > - If you select a flow run in the **Canceling** state, it might appear that the spinner near an action is in motion, but it's in a suspended state. When flows are actually running, a notification banner displays to indicate your flow is running. This isn't the case for suspended flows in the **Canceling** state.
 
 The following screenshot shows the banner when a flow is running. A suspended flow in the **Canceling** status doesn't contain this banner.
 
