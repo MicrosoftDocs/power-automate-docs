@@ -8,7 +8,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 04/16/2024
+ms.date: 02/06/2025
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -67,7 +67,7 @@ If you encounter an error message while attempting to create and analyze a proce
 
 ### Analyze a process
 
-Once you're done with setup, select **Analyze**. You'll be able to view the Analytics page when the analysis is complete. Analysis typically takes a few minutes but might be faster or slower depending on how much data needs to be analyzed.
+Once you're done with setup, select **Analyze**. You're able to view the Analytics page when the analysis is complete. Analysis typically takes a few minutes but might be faster or slower depending on how much data needs to be analyzed.
 
 > [!NOTE]
 >
@@ -129,7 +129,7 @@ Where the format is **dd/mm/yyyy hh:mm:ss**, setting the locale to **English (Ca
 
 ### "More than 50% of your data has invalid format. Please check your data and try again."
 
-To fix this issue, go to [Following column(s) do not have the right data types: [x]. Please check your data and try again.](#following-columns-dont-have-the-right-data-types-x-please-check-your-data-and-try-again)
+To fix this issue, go to [Following column(s) don't have the right data types: [x]. Please check your data and try again.](#following-columns-dont-have-the-right-data-types-x-please-check-your-data-and-try-again)
 
 ### "Following column(s) are missing from your dataflow: [x]. Please check your data and try again."
 
@@ -141,7 +141,7 @@ This issue should occur only if there's no data. Either the data source that you
 
 ### "The number of rows in your data exceeds the limit. [x] rows have been ignored."
 
-We support only up to 150,000 rows of data. To learn how to fix this issue using Power Query, go to [Reduce the number of total records](process-mining-transform.md#reduce-the-number-of-total-records).
+To fix this issue using Power Query, learn more in [Reduce the number of total records](process-mining-transform.md#reduce-the-number-of-total-records).
 
 ### "Analysis failed, please try again."
 
