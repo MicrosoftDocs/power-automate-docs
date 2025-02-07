@@ -52,6 +52,7 @@ The key benefits of using secure inputs and outputs are:
 
 1. **Access action settings**:
    1. In the flow editor, select the ellipsis on the action you want to secure.
+   
    1. Select **Settings**.
 
 2. **Enable secure options**:

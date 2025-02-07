@@ -52,7 +52,7 @@
               href: coding-guidelines/keep-flow-configuration-generic.md
             - name: Understand access to flows
               href: coding-guidelines/understand-access-to-flows.md
-            - name: Use auditing in Microsoft Dataverse and Microsoft Purview
+            - name: Use auditing in Dataverse and Microsoft Purview
               href: coding-guidelines/use-auditing-in-dataverse.md
             - name: Prevent data exfiltration
               href: coding-guidelines/prevent-data-exfiltration.md
