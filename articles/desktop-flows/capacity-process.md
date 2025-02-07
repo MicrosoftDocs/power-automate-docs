@@ -65,7 +65,7 @@ The cloud flow is now independent from the user license.
 
 > [!NOTE]
 >
-> Stacking multiple process capacities on a single cloud flow isn't yet enabled.
+> Stacking multiple process capacities on a single cloud flow isn't enabled yet.
 
 ## Related information
 
