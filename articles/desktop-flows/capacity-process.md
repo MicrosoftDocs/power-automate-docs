@@ -3,7 +3,7 @@ title: Process capacity
 description: How to use process capacity
 author: cvassallo
 ms.subservice: desktop-flow
-ms.date: 02/05/2025
+ms.date: 02/06/2025
 ms.author: cvassallo
 ms.reviewer: angieandrews
 contributors:
@@ -42,12 +42,12 @@ You now have a machine that can perform unattended RPA.
 >
 > - **Machine max bot supported** depends on your machine and its OS. The maximum value this parameter can reach is 10 (for some Windows Servers).
 > - **Available capacity in the environment** shows how many unattended bots can still be created. Keep in mind that the process capacity is a shared resources between all users within an environment and so use only what you need.
-> - **Enable auto-allocation** allows unattended bots to be automatically allocated to a machine when an unattended run requires it. Multiple unattended bots can be auto-allocated in the case of simultaneous unattended runs. Once auto-allocated, the unattended bots remain on the machine until manually deallocated.
-> - For a global overview of how process capacity is used within the environment, use the **Manage capacity utilization** link. It also provides an option to request more capacity.
+> - **Enable auto-allocation** lets unattended bots be automatically allocated to a machine when an unattended run requires it. Multiple unattended bots can be auto-allocated for simultaneous unattended runs. Once auto-allocated, the unattended bots remain on the machine until manually deallocated.
+> - For a global overview of how process capacity is used within the environment, select the **Manage capacity utilization** link. It also provides an option to request more capacity.
 
 ## Allocate process capacity to a cloud flow
 
-When process capacity is allocated to a cloud flow, it becomes a *Process plan*. This plan licenses the cloud flow to run premium actions independently from the user license, with a daily limit of 250k Power Platform requests.
+When process capacity is allocated to a cloud flow, it becomes a *Process plan*. This plan licenses the cloud flow to run premium actions independently from the user license, with a daily limit of 250,000 Power Platform requests.
 
 To allocate process capacity to a cloud flow, go to the cloud flow details page and select **Edit**.
 
