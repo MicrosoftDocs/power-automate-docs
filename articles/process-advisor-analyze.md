@@ -42,7 +42,7 @@ To begin analyzing your process, start by checking the status of your recordings
 
 Here's a short video on how to view analytics:<br>
 </br>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMYVy ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cc81da71-f071-4d12-80f4-e806464a4788 ]
 
 ## View your recording status
 

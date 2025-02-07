@@ -24,7 +24,7 @@ Use the [Microsoft Forms](/connectors/microsoftforms/) connector in Power Automa
 
 Watch the following video to see how you can use a form in Power Automate.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKXdv]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=630b3153-e815-4f18-a372-d6cade5effee]
 
 ## Triggering a form action in a flow
 
