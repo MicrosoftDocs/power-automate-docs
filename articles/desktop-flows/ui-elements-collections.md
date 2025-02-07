@@ -5,7 +5,7 @@ author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/04/2024
+ms.date: 02/06/2025
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
@@ -33,6 +33,7 @@ UI elements collections exist at the environment level. As a best practice, use 
 - Power Automate for desktop 2.43 or later.
 - This feature requires an environment where the [Power Automate v2 schema](schema.md) is enabled. In v1 schema environments, UI elements collections aren't available.
 - An Attended RPA license is required to include and use UI elements collections in desktop flows, given that access to the flow designer of Power Automate for desktop is needed.
+- If you use custom security roles to manage access, Power Platform admins need to update the role to include read permission for the Desktop Flow Module table (`prvReaddesktopflowmodule`).
 
 ## Known limitations
 
