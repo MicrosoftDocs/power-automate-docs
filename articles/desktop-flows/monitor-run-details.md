@@ -55,8 +55,8 @@ The run details card displays all the parameters related to your run.
     > Inputs and outputs are also viewable from the Dataverse `Flow session` table.
   
 - **Version**: the version of Power Automate for desktop agent used to execute the flow.
-- **Action log version**: indicates which [desktop flow log version](/articles/desktop-flows/configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) was used for this run.
-- **Expiration date**: refers to the date and time when action logs that are based on [desktop flow logs V2](/articles/desktop-flows/configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) will start to be automatically deleted.
+- **Action log version**: indicates which [desktop flow log version](/desktop-flows/configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) was used for this run.
+- **Expiration date**: refers to the date and time when action logs that are based on [desktop flow logs V2](/desktop-flows/configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) will start to be automatically deleted.
 - **Machine credential user**: indicates which machine user name was used to connect and run the desktop on the machine.
 
 ## Run status
@@ -71,9 +71,9 @@ It might be critical for your orchestration to identify if a step took too much 
 
 > [!NOTE]
 >
-> This feature is only available when [desktop flow logs V2](/articles/desktop-flows/configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) is configured in your environment.
+> This feature is only available when [desktop flow logs V2](/desktop-flows/configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) is configured in your environment.
 
-With [desktop flow logs V2](/articles/desktop-flows/configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) enabled, you'll receive near real-time updates of actions as your desktop flow runs. This feature may be essential for long-running flows that need frequent action status update monitoring throughout the flow's execution.
+With [desktop flow logs V2](/desktop-flows/configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) enabled, you'll receive near real-time updates of actions as your desktop flow runs. This feature may be essential for long-running flows that need frequent action status update monitoring throughout the flow's execution.
 
 :::image type="content" source="media/monitor-run-details/progressive-desktop-flow-logging.png" alt-text="Screenshot of progressive logging feature showing action logs as flow is running." lightbox="media/monitor-run-details/progressive-desktop-flow-logging.png":::
 
