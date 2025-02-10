@@ -4,7 +4,7 @@ description: Learn how to build automated workflows on Citrix and RDP virtual de
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/23/2024
+ms.date: 02/10/2025
 ms.author: quseleba
 ms.reviewer: matp
 contributors:
@@ -110,12 +110,17 @@ The following table and diagram depicts the different phases of communication:
     **Workaround:** None. Remote desktop connection isn't supported in these Windows editions.
 - **Issue:** Encounter the 'Error communicating with Power Automate for desktop' message when Power Automate agent for virtual desktop is launched in Citrix Desktop even though you have installed Power Automate for desktop and Power Automate agent for virtual desktops correctly and met all prerequisites.
 
-   **Workaround:**  Check the 'Virtual channel allow list policy' setting in your Citrix configuration.
-  - If the Citrix VDA version is earlier than 2407: The "Virtual channel Allow list" policy on Citrix is by default either enabled or set to Default. However, if this policy is not disabled, the Power Automate agent is unable to communicate with Power Automate for desktop. It is recommended to contact your Citrix administrators to disable this policy, as keeping it set to Default will not be sufficient.
-  - If the Citrix VDA versions 2407 and later: A different policy needs to be configured. The older "Virtual channel Allow list" can remain set to Default. The new policy to be configured is "Virtual channel allow list for DVC," and the following values need to be added.
+   **Workaround:**  
+   Check the **Virtual channel allow list policy** setting in your Citrix configuration.
+  - If the Citrix VDA version is earlier than 2407:
+  
+      The Virtual channel Allow list policy on Citrix is by default either enabled or set to default. However, if this policy isn't disabled, the Power Automate agent can't communicate with Power Automate for desktop. Contact your Citrix administrators to disable this policy, as keeping it set to Default isn't sufficient.
+  - If the Citrix VDA version is 2407 or later:
+  
+      Configure a different policy. The older **Virtual channel Allow list** can remain set to Default. Configure the new policy **Virtual channel allow list for DVC** and add the following values.
     - C:\Program Files (x86)\Power Automate agent for virtual desktops\PAD.RDP.ControlAgent.exe,Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin,PAD\CONTROL
     - C:\Users\*\AppData\Local\Microsoft\Power Automate Desktop\RDP Automation Agents\*\PAD.RDP.AutomationAgent.exe,Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin,PAD\UIA
-Make sure the Citrix machines are restarted after policy is applied.
+Restart the Citrix machines after applying the policy.
 
 - **Issue:** Virtual desktop automation isn't supported in Power Automate installed through the Microsoft store.
 
