@@ -80,7 +80,7 @@ The Power Platform admin center also provides:
 - Number of failed runs (no information which flows failed)
 - 28 days history
 
-:::image type="content" source="media/ppac-flow-analytics.png" alt-text="Screenshot of the flow analytics in the Power Platform Admin Center.":::
+:::image type="content" source="media/ppac-flow-analytics.png" alt-text="Screenshot of the flow analytics in the Power Platform Admin Center." lightbox="media/ppac-flow-analytics.png":::
 
 Learn more: [View analytics for cloud flows](/power-platform/admin/analytics-flow)
 
