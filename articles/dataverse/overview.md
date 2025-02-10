@@ -26,8 +26,7 @@ The Microsoft Dataverse connector provides [several triggers](#overview-of-trigg
 
 Use the Microsoft Dataverse connector to create cloud flows that start when data changes in Dataverse tables and custom messages. <!--todo, how is custom messages-->For example, you can send an email whenever a row gets updated in Dataverse.
 
-
-![A screenshot of a flow triggering on changes in Dataverse, listing rows, and updating arow](example-dataverse-flow.png)
+:::image type="content" source="media/overview/example-dataverse-flow.png" alt-text="A screenshot of a flow triggering on changes in Dataverse, listing rows, and updating a row.":::
 
 ## Overview of triggers
 

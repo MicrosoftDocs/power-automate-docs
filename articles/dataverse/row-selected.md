@@ -20,19 +20,20 @@ search.audienceType:
 
 # Trigger flows for selected rows
 
-![A screenshot of the "When a row is selected" trigger in the Power Automate cloud flow designer.](media/selected-rows.png)
-
 With the **When a row is selected** trigger in the Dataverse connector, you can enable users to run flows for one or more selected rows in a [model-driven app view](/power-apps/maker/model-driven-apps/create-edit-views). This trigger can also be used to [run flows as steps](/power-automate/create-instant-flows) in business process flows.
 
-![A screenshot of the flow menu in the command bar of a view in a model-driven app.](media/model-driven-app-example.png)
+:::image type="content" source="media/row-selected/selected-rows.png" alt-text="A screenshot of the "When a row is selected" trigger in the Power Automate cloud flow designer.":::
 
 To use it, follow these steps:
 
-1. Create a cloud flow with the **When a row is selected** trigger, either from Power Automate or from the Flow menu in a model-driven app. 
-2. In the trigger, select the table that users trigger the flow from, and optionally add any additional inputs that should be provided when running the flow. 
-3. Add at least one action and save the flow. The outputs of the trigger are available to other actions as dynamic content, including each column of the selected row in Dataverse, and the details of the user who triggered the flow.
-4. Go to the flow's detail page by clicking the back button in the flow designer or locating the flow through My flows. 
-5. Select **Edit** in the **Run only users** tile and share the flow with the users or groups of users that should have access to run the flow. All co-owners and run-only users can see the flow in the Flow menu in model-driven app views for the related table.
+1. Create a cloud flow with the **When a row is selected** trigger, either from Power Automate or from the Flow menu in a model-driven app.
+
+   :::image type="content" source="media/row-selected/model-driven-app-example.png" alt-text="A screenshot of the flow menu in the command bar of a view in a model-driven app.":::
+
+1. In the trigger, select the table that users trigger the flow from, and optionally add any additional inputs that should be provided when running the flow. 
+1. Add at least one action and save the flow. The outputs of the trigger are available to other actions as dynamic content, including each column of the selected row in Dataverse, and the details of the user who triggered the flow.
+1. Go to the flow's detail page by clicking the back button in the flow designer or locating the flow through My flows. 
+1. Select **Edit** in the **Run only users** tile and share the flow with the users or groups of users that should have access to run the flow. All co-owners and run-only users can see the flow in the Flow menu in model-driven app views for the related table.
 
 ## Migration from the Microsoft Dataverse (legacy) connector
 
