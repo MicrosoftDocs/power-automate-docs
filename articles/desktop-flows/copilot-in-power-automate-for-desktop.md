@@ -110,7 +110,7 @@ From Copilot’s side panel, make sure the generative answers skill is selected 
 
 In the Copilot pane, ask any product related questions or use one of the proposed prompts to get you started. The answer generated contains a link to the documentation page to refer you to additional information. Make sure you always review AI-generated content.
 
-## Use Copilot to summarize actions and subflows
+## Use Copilot to summarize actions and subflows (preview)
 
 The Summarize actions & subflows Copilot skill helps you quickly understand desktop flows by generating concise summaries for specific actions, multiple actions, or entire subflows. This skill lets you troubleshoot and maintain flows more efficiently, saving time and simplifying the process of understanding and optimizing your automation.
 

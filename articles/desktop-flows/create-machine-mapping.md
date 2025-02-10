@@ -24,7 +24,11 @@ ms.custom:
 
 This feature lets you map user account credentials to your robotic process automation (RPA) machines.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is gradually rolling out across regions and might not be available in your region.
 
 ## How a machine mapping works
 
@@ -104,7 +108,7 @@ From the list of credentials, you can share a mapping with other users:
 1. From **Add People**, enter the name of the people you want to share the mapping with.
 1. Finally, select the permissions for this user (user, user + share, co-owner).
 
-When you share the mapping, you also share all the credentials selected for this mapping. Whenever you update the mapping with new credentials, those credentials are shared with other users of this mapping.
+When you share the mapping, you also share all the credentials selected for this mapping. Whenever you update the mapping with new credentials, those credentials are shared with other users of this mapping. Removing permissions on a machine mapping credential doesn't remove permissions on the mapped credentials.
 
 ## Limitations
 

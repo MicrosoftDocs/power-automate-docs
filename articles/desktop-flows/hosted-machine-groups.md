@@ -4,7 +4,7 @@ description: Learn how to create and use hosted machine groups to distribute you
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/17/2025
+ms.date: 02/03/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -46,6 +46,9 @@ To evaluate the hosted machine group, you need one of the following trial licens
 This section presents all the prerequisites to create and use hosted machine groups.
 
 ### Get access to the default VM image
+
+> [!NOTE]
+> The default VM image provided by Power Automate with Microsoft Edge preinstalled is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration, or security constraints, use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine-groups) capability.
 
 To create a hosted machine group, you need access to the default VM image that is part of your environment. You can view the default image in **Monitor** > **Machines** > **VM images**.
 
