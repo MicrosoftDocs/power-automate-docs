@@ -82,7 +82,7 @@ The above example contains placeholders:
 - `ENVIRONMENT_ID_URL`: The environment ID, with all separators removed, and the last two characters separated by a period. (Example: *37520647-dbdf-49fa-ba01-6134c14680c4 -> 37520647dbdf49faba016134c14680.c4*).
 - `ENVIRONMENT_ID`: The environment ID.
 - CONNECTION_ID: The connection ID used to create the connection. It needs to be a valid GUID. (You can use the `New-Guid` PowerShell command to get this).
-- `MACHINE_ACCOUNT`: The username of the account used to open a Windows session.
+- `MACHINE_ACCOUNT`: The username of the account used to open a Windows session. Example for a local account: <MACHINENAME\\\User> or <local\\\User>. Example for a Microsoft Entra ID account: <DOMAIN\\\User> or <username@domain.com>. Note that backslashes need to be escaped.
 - `MACHINE_PASSWORD`: The password for the account.
 - `GROUP_ID`: The group ID you want to create the connection for. More information: [Get the group ID of the machine or group](#get-the-group-id-of-the-machine-or-group)
 
