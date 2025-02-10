@@ -33,24 +33,24 @@ Use the Microsoft Dataverse connector to create cloud flows that start when data
 
 The Microsoft Dataverse connector provides the following triggers to help you define when your flows start:
 
-- [When a row is created, updated, or deleted](create-update-delete-trigger)
-- [When a row is selected](row-selected)
-- [When an action is performed](action-trigger)
+- [When a row is created, updated, or deleted](create-update-delete-trigger.md)
+- [When a row is selected](row-selected.md)
+- [When an action is performed](action-trigger.md)
 
 ## Overview of actions
 
 The Microsoft Dataverse connector provides the following actions to help you manage data in your flows:<!-- Edit note: How about a See also link to more details about triggers or actions, like a page describing them. -->
 
-- [Create a new row](create)
-- [Update a row](update)
-- [Search rows with relevance search](search)
-- [Get a row](get-row-id)
-- [List rows](list-rows)
-- [Delete a row](delete-row)
-- [Relate rows](relate-unrelate-rows)
-- [Unrelate rows](relate-unrelate-rows)
-- [Execute a changeset request](change-set)
-- [Download file or image content](upload-download-file#download-file-or-image-content)
-- [Upload file or image content](upload-download-file#upload-file-or-image-content)
-- [Perform a bound action](bound-unbound#bound-actions)
-- [Perform an unbound action](bound-unbound#unbound-actions)
+- [Create a new row](create.md)
+- [Update a row](update.md)
+- [Search rows with relevance search](search.md)
+- [Get a row](get-row-id.md)
+- [List rows](list-rows.md)
+- [Delete a row](delete-row.md)
+- [Relate rows](relate-unrelate-rows.md)
+- [Unrelate rows](relate-unrelate-rows.md)
+- [Execute a changeset request](change-set.md)
+- [Download file or image content](upload-download-file.md#download-file-or-image-content)
+- [Upload file or image content](upload-download-file.md#upload-file-or-image-content)
+- [Perform a bound action](bound-unbound.md#bound-actions)
+- [Perform an unbound action](bound-unbound.md#unbound-actions)

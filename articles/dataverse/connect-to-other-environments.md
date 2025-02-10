@@ -94,7 +94,7 @@ For actions like **Add a row** that depend on the specific table schema from one
 
 ## Limitations
 
-- Dataverse connector operations connecting to other environments require the connection to remain active and the related user to have sufficient permissions in Dataverse. Actions and triggers in the current environment can continue to run as long as the related user is still active and has sufficient permissions in Dataverse, even if the connection has expired. Learn more about [maintaining Dataverse connector connections](maintain-connections).
+- Dataverse connector operations connecting to other environments require the connection to remain active and the related user to have sufficient permissions in Dataverse. Actions and triggers in the current environment can continue to run as long as the related user is still active and has sufficient permissions in Dataverse, even if the connection has expired. Learn more about [maintaining Dataverse connector connections](manage-dataverse-connections.md).
 - Using instant flows with the Dataverse connection set to **Provided by run-only user** isn't supported outside of the current environment yet.
 - The triggers **When a row is added, modified or deleted** and **When an action is performed** don't support the Environment parameter yet.
 - The actions to **Search rows** and **Perform a changeset** request don't have preview actions with the Environment parameter yet.
