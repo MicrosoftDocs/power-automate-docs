@@ -25,13 +25,13 @@ landingContent:
        - linkListType: how-to-guide
          links:
           - text: Overview
-            url: coding-guidelines/overview.md
+            url: coding-guidelines/index.md
           - text: Coding guidelines
             url: coding-guidelines/use-consistent-naming-conventions.md
           - text: Design secure cloud flows
-            url: coding-guidelines/use-secure-inputs-outputs-and-triggers.md
+            url: coding-guidelines/use-secure-inputs-outputs-triggers.md
           - text: Integrate cloud flows with Power Apps
-            url: coding-guidelines/integrating-cloud-flows-with-power-apps.md
+            url: coding-guidelines/integrating-cloud-flows-power-apps.md
           - text: Monitoring and alerting
             url: coding-guidelines/monitoring-and-alerting.md
   

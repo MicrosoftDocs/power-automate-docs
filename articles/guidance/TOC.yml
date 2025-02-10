@@ -5,13 +5,13 @@
     - name: Best practices for building cloud flows
       items:
         - name: Overview
-          href: coding-guidelines/overview.md
+          href: coding-guidelines/index.md
         - name: Coding guidelines
           items: 
             - name: Use consistent naming conventions 
               href: coding-guidelines/use-consistent-naming-conventions.md
             - name: Understand benefits of solution-aware flows
-              href: coding-guidelines/understand-benefits-of-solution-aware-flows.md
+              href: coding-guidelines/understand-benefits-solution-aware-flows.md
             - name: Use and create scopes
               href: coding-guidelines/create-scopes.md
             - name: Offload complex business logic
@@ -35,7 +35,7 @@
             - name: Employ robust error handling
               href: coding-guidelines/error-handling.md
             - name: Manage flow behavior with Flow Checker
-              href: coding-guidelines/manage-flows-with-flow-checker.md
+              href: coding-guidelines/manage-flows-flow-checker.md
             - name: Test cloud flows
               href: coding-guidelines/test-cloud-flows.md
             - name: Leverage Power Automate features
@@ -47,19 +47,19 @@
         - name: Design secure cloud flows
           items: 
             - name: Secure data used in cloud flows
-              href: coding-guidelines/use-secure-inputs-outputs-and-triggers.md
+              href: coding-guidelines/use-secure-inputs-outputs-triggers.md
             - name: Keep flow configuration generic
               href: coding-guidelines/keep-flow-configuration-generic.md
             - name: Understand access to flows
               href: coding-guidelines/understand-access-to-flows.md
             - name: Use auditing in Dataverse and Microsoft Purview
-              href: coding-guidelines/use-auditing-in-dataverse.md
+              href: coding-guidelines/use-auditing-dataverse.md
             - name: Prevent data exfiltration
               href: coding-guidelines/prevent-data-exfiltration.md
             - name: Consider customer-managed keys
               href: coding-guidelines/use-cmk-for-cloud-flows.md
         - name: Integrating cloud flows with Power Apps 
-          href: coding-guidelines/integrating-cloud-flows-with-power-apps.md
+          href: coding-guidelines/integrating-cloud-flows-power-apps.md
         - name: Monitoring and alerting
           href: coding-guidelines/monitoring-and-alerting.md
     - name: Plan a Power Automate project
