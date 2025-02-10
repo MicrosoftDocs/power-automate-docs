@@ -22,7 +22,7 @@ search.audienceType:
 
 With the **When a row is selected** trigger in the Dataverse connector, you can enable users to run flows for one or more selected rows in a [model-driven app view](/power-apps/maker/model-driven-apps/create-edit-views). This trigger can also be used to [run flows as steps](/power-automate/create-instant-flows) in business process flows.
 
-:::image type="content" source="media/row-selected/selected-rows.png" alt-text="A screenshot of the "When a row is selected" trigger in the Power Automate cloud flow designer.":::
+:::image type="content" source="media/row-selected/selected-rows.png" alt-text="A screenshot of the When a row is selected trigger in the Power Automate cloud flow designer.":::
 
 To use it, follow these steps:
 
