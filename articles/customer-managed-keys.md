@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 12/17/2024
+ms.date: 01/28/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -115,29 +115,9 @@ We provide a summary view for all runs from both existing and new flow runs post
 
 For environments that are already protected by CMK, protecting flows using CMK can be requested by a Support Ticket.
 
-## Known limitations
-
-Limitations include limitations for features using analytics pipeline and for non-solution cloud flows triggered by Power Apps, as described in this section.
-
-### Limitations on features applying analytics pipeline
-
-When an environment is enabled for customer-managed keys, then Power Automate data can't be sent to the analytics pipeline for a range of scenarios:
-
-- [Tenant-wide reporting in Power Platform admin center](/power-platform/admin/power-automate-analytics-reports)
-- [Data export to Data Lake](/power-platform/admin/self-service-analytics-schema-definition#power-automate-folder-structure)
-- [Cloud flow run history](/power-automate/dataverse/cloud-flow-run-metadata) (for [automation center](/power-automate/automation-center-overview))
-- [Power Automate mobile app](/power-automate/mobile/overview-mobile), [notifications page](/power-automate/mobile/notifications)
-- Cloud flow activity page
-- Flow failure e-mail
-- Flow failure digest e-mail
-
-### Limitation on non-solution cloud flows triggered by Power Apps
+## Limitation on non-solution cloud flows triggered by Power Apps
 
 Non-solution cloud flows using the Power Apps trigger and are created in CMK-protected environments can't be referenced from an app. An error results when attempting to register the flow from Power Apps. Only solution cloud flows can be referenced from an app in CMK-protected environments. To avoid this situation, [flows should first be added into a Dataverse solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution) so they can be successfully referenced. To prevent this situation, the environment setting to [automatically create flows in Dataverse solutions](/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature) should be enabled in CMK-protected environments. This setting ensures new flows are solution cloud flows.
-
-### Limitation of invoking Copilot Skills trigger flows
-
-The scenarios where a cloud flow is invoked through the Copilot Skills trigger applying the invoking Copilot user's connection as opposed to an embedded connection isn't supported for CMK protected cloud flows. Learn more about using flows as plugins from Copilot in [Run flows from Copilot for Microsoft 365](flow-plugins-m365.md#run-flows-from-microsoft-365-copilot).
 
 ## Related information
 
