@@ -34,7 +34,7 @@ Check out this video to learn more about the different types of flows.
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=0f11bc32-0ef4-437b-b15b-dfb3cf47ee04]
 
-### Cloud flows
+## Cloud flows
 
 Create a cloud flow when you want your automation to be triggered either automatically, instantly, or via a schedule.
 
@@ -44,11 +44,11 @@ Create a cloud flow when you want your automation to be triggered either automat
 | [Instant flows](./mobile/mobile-create-flow.md)   | Start an automation with a click of a button. You can automate repetitive tasks from your desktop or mobile devices. For example, instantly send a reminder to the team with a push of a button from your mobile device.     |     Wide range of tasks such as requesting an approval, an action in Teams or SharePoint.       |
 | [Scheduled flows](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to SharePoint or a database.             |Tasks that need to be automated on a schedule.         |
 
-### Desktop flows
+## Desktop flows
 
 Use [desktop flows](./desktop-flows/introduction.md) to automate tasks on the web or the desktop.
 
-### Business process flows
+## Business process flows
 
 [Business process flows](business-process-flows-overview.md) provide a guide for people to get work done. They provide a streamlined user experience that leads people through the processes their organization has defined for interactions that need to be advanced to a conclusion of some kind. This user experience can be tailored so that people with different security roles can have an experience that best suits the work they do.
 
