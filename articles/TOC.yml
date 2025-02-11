@@ -1149,11 +1149,11 @@
       href: automation-analytics-with-fabric-queries.md
   - name: Capacity utilization
     items:
-    - name: Introduction to capacity utilization (preview)
+    - name: Introduction to capacity utilization
       href: ./desktop-flows/capacity-utilization.md
-    - name: Hosted RPA capacity utilization (preview)
+    - name: Hosted RPA capacity utilization
       href: ./desktop-flows/capacity-utilization-hosted.md
-    - name: Process capacity utilization (preview)
+    - name: Process capacity utilization
       href: ./desktop-flows/capacity-utilization-process.md
     - name: How to use process capacity
       href: ./desktop-flows/capacity-process.md
