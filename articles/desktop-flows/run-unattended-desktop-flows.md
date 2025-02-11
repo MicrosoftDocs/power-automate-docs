@@ -4,7 +4,7 @@ description: See how to run unattended desktop flows on your device.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/26/2024
+ms.date: 02/10/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -43,6 +43,7 @@ When running desktop flows in unattended mode, keep in mind that:
 > - Unattended desktop flows require an available machine with all users signed out.
 > - Locked Windows user sessions will prevent unattended desktop flows from running.
 > - Unattended desktop flows can't run with elevated privileges.
+> - Logging into a machine during an unattended flow execution isn't supported and might cause the flow to fail.
 
 ## Reuse a Windows session in unattended mode
 
