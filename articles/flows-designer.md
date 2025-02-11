@@ -290,6 +290,9 @@ The new cloud flows designer has smaller cards to facilitate easy navigation. It
 
 - You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following items:
     - Non-Open API flows (If there's Peek code on an action and if you see the API Connection value instead of OpenAPI Connection in Kind field, it's a non-Open API flow.)
+        - These are legacy flows, probably created a long time ago when Open API support was not available.
+        - We have plans to migrate them to Open API format, with no concrete ETA. In the meantime, if you want to work with the latest functionalities in new designer/Copilot experience, please consider 
+          recreating the flow in new designer, until migration plan is announced.
     - Some hybrid triggers:
        - When a flow is run from business process flow (Dataverse)
        - Microsoft 365 Compliance Connector
