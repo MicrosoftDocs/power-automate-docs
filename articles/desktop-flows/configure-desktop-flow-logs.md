@@ -2,7 +2,7 @@
 title: Configure desktop flow logs behavior
 description: Configure desktop flow log verbosity and storage destination in Power Platform Admin Center.
 ms.topic: conceptual
-ms.date: 01/03/2025
+ms.date: 02/11/2025
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -79,7 +79,7 @@ The following table describes the differences between desktop flow logs V1 and V
 | Feature | Logs V1 | Logs V2 | Details |  
 |---|---|---|---|  
 | Automatic Data Retention | Not Available | Available | V2 uses [Elastic Tables](/power-apps/maker/data-platform/create-edit-elastic-tables), which are powered by Azure Cosmos DB and comes with a built-in time-to-live feature for automatic data retention. |  
-| Support for large log sizes | Roughly up to 50,000 to 80,000 action logs (maximum) | Roughly twice the number of V1 action logs (initially) | V2 could theoretically scale up to gigabytes worth of action logs per run in future, whereas V1 can only scale to the volume specified in this table. |
+| Support for large log sizes | Roughly up to 50,000 to 80,000 action logs (maximum) | Minimum 100K actions, can go up to 10M actions depending on the actions generated and the duration of execution | V2 can theoretically scale up to gigabytes worth of action logs per run in the future, whereas V1 can only scale to the volume specified in this table. |
 | Support for advanced reporting and governance | Not Available | Available | In V1, the AdditionalContext attribute is a file type, stored as a blob in Dataverse, making it challenging to parse for reporting and governance controls. Logs are much more accessible in V2. |
 | Support for Azure Synapse Link for Dataverse integration | Not Available | Available | In V1, the AdditionalContext attribute is a file type, stored as a blob in Dataverse, which isn't supported for synchronization to Azure Synapse. |
 | Support for Dataverse auditing | Not Available | Available | In V1, the AdditionalContext attribute is a file type, stored as a blob in Dataverse, which isn't supported in Dataverse auditing. |
@@ -102,7 +102,7 @@ The following table shows sample Dataverse database storage consumption estimate
 | 160,000 | 3 | 480 |  
 
 > [!IMPORTANT]
-> The figures shown in the above table are just estimates and the actual storage consumption can vary significantly. The exact storage demand will depend on the specific details and complexity of each action log. Therefore, these numbers should be used as a rough guide for understanding the potential storage demand and planning your storage requirements accordingly.
+> The figures shown in the above table are just estimates and the actual storage consumption can vary significantly. The exact storage demand depends on the specific details and complexity of each action log. Therefore, these numbers should be used as a rough guide for understanding the potential storage demand and planning your storage requirements accordingly.
 
 ## Querying logs V2 data
 
