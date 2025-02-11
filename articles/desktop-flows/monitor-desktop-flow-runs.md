@@ -11,7 +11,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/10/2025
+ms.date: 02/11/2025
 ms.author: kenseongtan
 ms.reviewer: matp
 contributors:
@@ -47,8 +47,8 @@ In order to see runs in this list, one of the following must be true:
 
 > [!IMPORTANT]
 >
-> - For cloud-initiated desktop flows based on [desktop flow log V1](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) there's a maximum action log capacity of 32 MB, which equates to approximately 50,000 to 80,000 action log entries. Once this limit is reached, any subsequent actions are not recorded in the log. If you encounter this limitation, you can either split your flow into smaller, separate flows or switch to [desktop flow log V2](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version). Desktop flow log V2 provides significantly more log capacity and includes [near-real-time logging](./monitor-run-details.md#progressive-near-real-time-action-logging) while the flow is running.
-> - For desktop flows that are launched within the Power Automate desktop designer itself, no action logs are collected.
+> - For cloud-initiated desktop flows based on [desktop flow log V1](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version), there's a maximum action log capacity of 32 MB, which equates to approximately 50,000 to 80,000 action log entries. Once this limit is reached, any subsequent actions aren't recorded in the log. If you encounter this limitation, you can either split your flow into smaller, separate flows or switch to [desktop flow log V2](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version). Desktop flow log V2 provides significantly more log capacity and includes [near-real-time logging](./monitor-run-details.md#progressive-near-real-time-action-logging) while the flow is running.
+> - Desktop flows launched within the Power Automate desktop designer don't collect action logs.
 
 ## Desktop flow run information
 

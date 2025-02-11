@@ -11,7 +11,7 @@ ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/10/2025
+ms.date: 02/11/2025
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
@@ -54,10 +54,10 @@ The run details card displays all the parameters related to your run.
     > When inputs / outputs are secure inputs / outputs, you won't see the value in the details but only {}.
     > Inputs and outputs are also viewable from the Dataverse `Flow session` table.
   
-- **Version**: the version of Power Automate for desktop agent used to execute the flow.
-- **Action log version**: indicates which [desktop flow log version](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) was used for this run.
-- **Expiration date**: refers to the date and time when action logs that are based on [desktop flow logs V2](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) will start to be automatically deleted.
-- **Machine credential user**: indicates which machine user name was used to connect and run the desktop on the machine.
+- **Version**: the version of Power Automate for desktop agent used to run the flow.
+- **Action log version**: indicates which [desktop flow log version](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) is used for this run.
+- **Expiration date**: refers to the date and time when action logs based on [desktop flow logs V2](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) start to be automatically deleted.
+- **Machine credential user**: indicates which machine username is used to connect and run the desktop on the machine.
 
 ## Run status
 
@@ -67,14 +67,14 @@ It might be critical for your orchestration to identify if a step took too much 
 
   :::image type="content" source="media/monitor-run-details/run-details-timeline.png" alt-text="Screenshot of the run details timeline.":::
 
-## Progressive (near-real-time) action logging
+## Progressive action logging
 
 > [!NOTE]
 >
 > - This feature is only available when [desktop flow logs V2](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) is configured in your environment.
-> - You need Power Automate desktop version **2.52** or higher installed to use progressive logging.
+> - You need Power Automate desktop version 2.52 or higher installed to use progressive logging.
 
-With [desktop flow logs V2](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) enabled, you'll receive near real-time updates of actions as your desktop flow runs. This feature may be essential for long-running flows that need frequent action status update monitoring throughout the flow's execution.
+With [desktop flow logs V2](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) enabled, you receive near real-time updates of actions as your desktop flow runs. This feature might be essential for long-running flows that need frequent action status update monitoring throughout the flow's execution.
 
 :::image type="content" source="media/monitor-run-details/progressive-desktop-flow-logging.png" alt-text="Screenshot of progressive logging feature showing action logs as flow is running." lightbox="media/monitor-run-details/progressive-desktop-flow-logging.png":::
 
