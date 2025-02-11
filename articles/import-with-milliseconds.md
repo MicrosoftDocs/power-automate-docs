@@ -46,13 +46,13 @@ Follow these steps to define the custom column for the event's start timestamp:
 1. In **Custom column formula** field, enter `Duration.TotalSeconds(DateTimeZone.From([StartDate]) - #datetimezone(1970, 1, 1, 0, 0, 0, 0, 0)) * 1000`.
 1. In **Available column(s)**, select the source column from your event log, such as `StartDate`.
 
-The definition of custom column must exactly match the following screenshot:
+The custom column values must match the values in the following screenshot exactly:
 
 :::image type="content" source="media/process-mining-import-milliseconds/custom-column-start.png" alt-text="Screenshot of the custom definition of event's start time.":::
 
 ## Step 3: Define the event's end timestamp
 
-Repeat the steps mentioned in [Step 2: Custom define the event's start timestamp](#step-2-custom-define-the-events-start-timestamp) customize the event's end timestamp, using the `EndDate` column. In the **New column name** field, use `EndTimestamp.millisecondsEpoch` instead.
+Repeat the steps mentioned in [Step 2: Define the event's start timestamp](#step-2-define-the-events-start-timestamp) to customize the event's end timestamp, using the `EndDate` column. In the **New column name** field, use `EndTimestamp.millisecondsEpoch` instead.
 
 :::image type="content" source="media/process-mining-import-milliseconds/custom-column-end.png" alt-text="Screenshot of the custom definition of event's end time.":::
 
