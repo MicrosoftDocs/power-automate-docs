@@ -1,6 +1,6 @@
 ---
-title: How to setup milisecond support when ingesting data via Dataflows
-description: Learn how to setup milisecond part for start and end timestamps for events.
+title: Set up millisecond support when ingesting data with Dataflows
+description: Learn how to set up the start and end timestamps for events.
 author: janpidych
 contributors:
   - janpidych
@@ -17,50 +17,59 @@ ms.collection:
   - get-started
 ---
 
-# Get started with process import
+# Set up millisecond support when ingesting data with Dataflows
 
-Use the Power Automate Process Mining home page to create new process and select for Data Source select Dataflow. Upload the source file with process event log. Continue until step Transform your data (optional).
+To get started with setting up millisecond support when ingesting data with Dataflows, go to the Power Automate Process mining home page to create a new process. Learn more in [Get started with the process mining capability](process-mining-tutorial.md#create-a-process).
 
-## Step by step setup
+## Step 1: Customize your data
 
-## 1 In step Transform your data (optional) you see Power Query component.
+Follow these steps to customize your data for the Power Query component:
+
+1. In the **Create new process** section of the Power Automate Process mining home page, select **Start here**.
+1. In the **Create a new process** screen, enter a process name.
+1. Enter a description for the process.
+1. In **Data Source**, select **Import data**.
+1. Select **Dataflow**.
+1. Select **Continue**.
+1. Upload the source file that contains the process event log. Continue until you reach the **Transform your data (optional)** step to see the Power Query component.
 
 :::image type="content" source="media/process-mining-import-milliseconds/power-query-component.png" alt-text="Screenshot of the Power Query web component.":::
 
-## 2 At first with definition of start timestamp for event.
+## Step 2: Define the event's start timestamp
 
-1. Click on **Add column** tab in the top bar.
+Follow these steps to define the custom column for the event's start timestamp:
 
-1. Click on **Custom column** button. Custom column window is displayed.
+1. Select the **Add column** tab in the top bar.
+1. Select the **Custom column** button to open the custom column window.
+1. In the  **New column name** field, enter `StartTimestamp.millisecondsEpoch`.
+1. For **Data type**, select `Whole number`.
+1. In **Custom column formula** field, enter `Duration.TotalSeconds(DateTimeZone.From([StartDate]) - #datetimezone(1970, 1, 1, 0, 0, 0, 0, 0)) * 1000`.
+1. In **Available column(s)**, select the source column from your event log, such as `StartDate`.
 
-1. For **New column name** enter StartTimestamp.millisecondsEpoch.
+The definition of custom column must exactly match the following screenshot:
 
-1. For **Data type** select Whole number.
+:::image type="content" source="media/process-mining-import-milliseconds/custom-column-start.png" alt-text="Screenshot of the custom definition of event's start time.":::
 
-1. For **Custom column formula** enter value Duration.TotalSeconds(DateTimeZone.From([StartDate]) - #datetimezone(1970, 1, 1, 0, 0, 0, 0, 0)) * 1000.
+## Step 3: Define the event's end timestamp
 
-1. For **Available column(s)** selects the source column from your event log StartDate.
+Repeat the steps mentioned in [Step 2: Custom define the event's start timestamp](#step-2-custom-define-the-events-start-timestamp) customize the event's end timestamp, using the `EndDate` column. In the **New column name** field, use `EndTimestamp.millisecondsEpoch` instead.
 
-Definiton of Custom column must be exact match as following picture:
+:::image type="content" source="media/process-mining-import-milliseconds/custom-column-end.png" alt-text="Screenshot of the custom definition of event's end time.":::
 
-:::image type="content" source="media/process-mining-import-milliseconds/custom-column-start.png" alt-text="Screenshot of the custom definition of event's start time":::
+The following screenshot displays the end result of mapping two new custom columns as part of the event log.
 
-## 3 Custom definition for event's end timestamp
+:::image type="content" source="media/process-mining-import-milliseconds/mapped-event-log.png" alt-text="Screenshot of the mapped event log.":::
 
-Repeat the same steps for customization of event's end timestamp, using EndDate column. Use column name EndTimestamp.millisecondsEpoch.
+Select **Next** to continue mapping your attributes.
 
-:::image type="content" source="media/process-mining-import-milliseconds/custom-column-end.png" alt-text="Screenshot of the custom definition of event's start time":::
+## Step 4: Map your data
 
-The end result of mapping displays two new custom columns at part of event log.
+To map your data, choose the correct mapping. Assign the custom columns' attribute type as Event Start and Event End, respectively.
 
-:::image type="content" source="media/process-mining-import-milliseconds/mapped-event-log.png" alt-text="Screenshot of the custom definition of event's start time":::
+:::image type="content" source="media/process-mining-import-milliseconds/mapped-attributes.png" alt-text="Screenshot of the mapped attributes Event Start and vent End.":::
 
-Click next to continue with mapping your attributes.
-
-## 4 Map your data
-
-On screen Step 4 of 4: Map your data choose corrent mapping. Assign to custom columns attribute type Event Start respectively Event End.
-
-Note: Our attribute mapping screen will intentionally hide these 2 custom columns in case user map to the wrong data type, it must be whole number.
+> [!NOTE]
+>
+> The attribute mapping screen intentionally hides these two custom columns in case the user maps to the wrong data type. It must be a whole number.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
