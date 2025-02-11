@@ -71,7 +71,8 @@ It might be critical for your orchestration to identify if a step took too much 
 
 > [!NOTE]
 >
-> This feature is only available when [desktop flow logs V2](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) is configured in your environment.
+> - This feature is only available when [desktop flow logs V2](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) is configured in your environment.
+> - You need Power Automate desktop version **2.5** or higher installed to use progressive logging.
 
 With [desktop flow logs V2](./configure-desktop-flow-logs.md#configure-desktop-flow-action-log-version) enabled, you'll receive near real-time updates of actions as your desktop flow runs. This feature may be essential for long-running flows that need frequent action status update monitoring throughout the flow's execution.
 
