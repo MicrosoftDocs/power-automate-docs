@@ -5,7 +5,7 @@ author: janpidych
 contributors:
   - janpidych
   - v-aangie
-ms.subservice: process-mining
+ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 02/11/2025
 ms.author: janpidych
