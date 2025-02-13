@@ -17,15 +17,15 @@ search.audienceType:
 
 # Integrating cloud flows with Power Apps
 
-Power Platform offers a range of capabilities that enable makers to create business logic for their Power Apps. This article describes the primary methods and provides guidance on which one to use.
+Power Platform offers a range of capabilities that enable you to create business logic for their Power Apps. This article describes the primary methods and provides guidance on which one to use.
 
 ## Power Apps with Power Fx
 
-Power Fx is the low-code functional programming language shared by Excel and Power Platform. Using Power Platform connectors, makers can access data and create custom app logic.
+Power Fx is the low-code functional programming language shared by Excel and Power Platform. Using Power Platform connectors, you can access data and create custom app logic.
 
 Power Fx supports:  
 
-- **Live**: Canvas Power Apps recalculate just like Excel spreadsheets do. As the end user interacts with the app, Power Fx is in the background making data requests and keeping the state of the app up to date with Dataverse.
+- **Live**: Canvas Power Apps recalculate just like Excel spreadsheets do. As you interact with the app, Power Fx is in the background making data requests and keeping the state of the app up to date with Dataverse.
 
 - **Delegation**: Power Fx automatically delegates what it can to the server. Functions such as `Filter()`, `Lookup()`, and `Search()` enable an app to access data using server-side filtering so that only relevant data is brought into the app to support the experience and functional logic. Where delegation isn't possible, functions execute in the local JavaScript context (that is, in the local browser).
 
@@ -49,9 +49,9 @@ Many developers rely on [Dataverse plugins](/power-apps/developer/data-platform/
 
 These plugins bring delegation and Dataverse optimizations:
 
-- **In the transaction**: Power Fx plugins run in the Dataverse transaction that is updating the database. If there's a problem updating a secondary table, all changes are rolled back, keeping the database in a consistent state.
+- **In the transaction**: Power Fx plugins run in the Dataverse transaction that updates the database. If there's a problem updating a secondary table, all changes are rolled back, keeping the database in a consistent state.
 
-- **Error reporting**: Reporting an error all the way back to the end user in an app or flow is as simple as calling the `Error()` function. The end user sees the error as a result of their action, can take immediate corrective action, and retry the operation.
+- **Error reporting**: Reporting an error all the way back to the end user in an app or flow is as simple as calling the `Error()` function. The end user sees the error as a result of their action, takes immediate corrective action, and retries the operation.
 
 - **Common choke point**: You can't avoid the plugin. Common business logic is written and maintained in one place for all apps, flows, and other Power Platform endpoints.
 

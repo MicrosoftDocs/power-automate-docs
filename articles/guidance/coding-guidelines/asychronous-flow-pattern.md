@@ -16,7 +16,7 @@ search.audienceType:
 
 # Use an asynchronous flow pattern
 
-When a parent flow or a Power App invokes a [child flow](/power-automate/create-child-flows), it must send a response back to the caller within 120 seconds. If the flow doesn't respond within this time frame, the caller experiences a time-out and an error occurs.
+When a parent flow or a Power App invokes a [child flow](/power-automate/create-child-flows), it must send a response back to the caller within 120 seconds. If the flow doesn't respond within this time frame, the caller experiences a timeout and an error occurs.
 
 To ensure that the caller doesn't wait indefinitely for a response, you can configure the flow to send an asynchronous response. By setting the flow to respond asynchronously, the caller receives an immediate acknowledgment that the request is being processed. 
 
@@ -30,13 +30,13 @@ Follow these steps to configure the asynchronous response:
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select **Create**.
 1. Select **Instant cloud flow**.
-1. Select as the trigger **When an HTTP request is received**.
+1. Select **When an HTTP request is received** as the trigger.
 1. Add the required actions to your cloud flow.
 1. Add the **Response** action to your cloud flow.
 
-    :::image type="content" source="media/async-1.png" alt-text="Screenshot of a cloud flow showing the Response action.":::
+    :::image type="content" source="media/async-1.png" alt-text="Screenshot of a cloud flow showing the Response action" lightbox="media/async-1.png":::
 
 
 1. Select the **Response** action, select **Settings**, and toggle **Asynchronous response** to on.
 
-    :::image type="content" source="media/async-2.png" alt-text="Screenshot of the Settings tab of the Response action with Asynchronous response toggled on.":::
+    :::image type="content" source="media/async-2.png" alt-text="Screenshot of the Settings tab of the Response action with Asynchronous response toggled on." lightbox="media/async-2.png":::

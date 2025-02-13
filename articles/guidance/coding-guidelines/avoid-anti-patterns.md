@@ -1,5 +1,5 @@
 ---
-title: Avoid anti-patterns
+title: Avoid anti-patterns in cloud flows
 description: Learn how to avoid common anti-patterns in cloud flows to improve performance and resource efficiency.
 author: manuelap-msft
 ms.subservice: guidance
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Avoid anti-patterns
 
-Anti-patterns are practices that might seem beneficial but can lead to performance issues, resource inefficiencies, and potential failures in your workflows. By understanding and avoiding these anti-patterns, you can optimize your cloud flows for better performance and reliability.
+Anti-patterns are practices that seem beneficial but lead to performance issues, resource inefficiencies, and potential failures in your workflows. By understanding and avoiding these anti-patterns, you optimize your cloud flows for better performance and reliability.
 
 ## Avoid nested For each loops
 
@@ -28,9 +28,9 @@ Nested For each loops can be resource intensive operations in cloud flows and af
 
 Learn more: [Concurrency looping and debatching limits](../../limits-and-config.md)
 
-Depending on your scenario, you can avoid nested loops by processing related records from a parent table. Consider:
+Depending on your scenario, you can avoid nested loops by processing related records from a parent table. Consider the following:
 
-- **Scenario:** An outer loop uses the **List Rows** action to retrieve a list of product categories from the *ProductCategory* table where the *IsPromotion* column is true. An inner loop then processes related-records from the *Product* table for each category retrieved by the outer loop.
+- **Scenario:** An outer loop uses the **List Rows** action to retrieve a list of product categories from the *ProductCategory* table where the *IsPromotion* column is true. An inner loop then processes related records from the *Product* table for each category retrieved by the outer loop.
 
 - **Alternative approach:** Use OData Query Expansion to streamline this process. This method allows you to work with a single For each loop, reducing the total number of requests to Dataverse to just one *RetrieveMultiple* call.
 
@@ -38,7 +38,7 @@ To implement OData query expansion:
 
 - Use the **Expand Query** parameter to specify the lookup column name that links the *ProductCategory* table to the *Product* table. This approach retrieves related records in a single query. For example, set the Expand Query parameter to `Products($select=ProductName,Price)`.
 - Use the **$select** parameter to limit the columns returned from the related table.
-- Retrieve and process relevant records by applying conditions directly on the lookup table's columns using the **Filter Rows** parameter. For example, set the filter parameter to  `IsPromotion eq true`.
+- Retrieve and process relevant records by applying conditions directly on the lookup table's columns using the **Filter Rows** parameter. For example, set the **Filter Rows** parameter to `IsPromotion eq true`.
 
 :::image type="content" source="media/nested-loop.png" alt-text="Screenshot of using the Expand Query and Filter Rows parameter to implement OData query expansion.":::
 
@@ -57,18 +57,18 @@ To avoid infinite loops:
 
 ## Avoid large numbers of data transformation operations
 
-When working with large-scale data transformations, consider using an extract, transform, load (ETL) process. For example, instead of using a Power Automate cloud flow to read data from a large Excel spreadsheet, perform data formatting or validations, and then write the data into Dataverse. In such a scenario, it might be more appropriate to use [Power Platform dataflows](/power-query/dataflows/create-use) or another ETL tool.
+When working with large-scale data transformations, consider using an extract, transform, load (ETL) process. For example, instead of using a Power Automate cloud flow to read data from a large Excel spreadsheet, perform data formatting or validations, and then write the data into Dataverse. It might be more appropriate to use [Power Platform dataflows](/power-query/dataflows/create-use) or another ETL tool.
 
 Dataflows handle large volumes of data efficiently and provide better performance for ETL tasks than cloud flows. ETL tools offer specialized features for data transformation, validation, and loading, which can simplify complex data processing tasks.
 
-To manage data load with orchestration logic in cloud flows, consider combining cloud flows with dataflows. Here's how:
+To manage data load with orchestration logic in cloud flows, combine cloud flows with dataflows. Here's how:
 
-1. **Invoke dataflow refresh**:
+1. **Invoke dataflow refresh**
    - **Action**: Use the dataflow connector in Power Automate to trigger a refresh action and initiate the ETL process defined in your dataflow.
-   - **Example**: Set up a cloud flow that triggers the dataflow refresh based on a schedule (such as daily) or based on an event (for example, when a new file is uploaded to a SharePoint folder).
+   - **Example**: Set up a cloud flow that triggers the dataflow refresh based on a schedule (such as daily) or an event (for example, when a new file is uploaded to a SharePoint folder).
 
-1. **Post-ETL actions**:
-   - **Trigger**: Use the **When a dataflow refresh completes** trigger in Power Automate to perform actions after the ETL process is finished.
+1. **Post-ETL actions**
+   - **Trigger**: Use the **When a dataflow refresh completes** trigger in Power Automate to perform actions after the ETL process finishes.
    - **Example**: After the dataflow completes, use a cloud flow to send notifications, update records, or perform data processing.
 
   :::image type="content" source="media/use-dataflow.png" alt-text="Screenshot of using dataflow actions in a cloud flow.":::
@@ -77,16 +77,16 @@ To manage data load with orchestration logic in cloud flows, consider combining 
 
 Users often need to create or update thousands of records in a data source when a flow triggers in Power Automate. Many users use a For each loop to process each record sequentially, causing latency and delays.
 
-To improve the performance, try these two approaches:
+To improve performance, try these two approaches:
 
-1. **Batch operations**:
+1. **Batch operations**
    - **Description**: Create or update records in batches. Many connectors and services provide API endpoints that support batch requests. This approach allows you to group multiple operations into a single HTTP request.
    - **Implementation**: Use the batch operation feature to send multiple create or update requests at once. These operations are executed sequentially in the order specified in the batch request. The order of the responses matches the order of the requests in the batch operation.
    - **Benefits**: Reduces the number of individual requests sent to the data source, minimizing latency and improving performance.
 
    :::image type="content" source="media/batch-operation.png" alt-text="Screenshot demonstrating using the SharePoint API to execute a batch request.":::
 
-2. **Parallelism in For each loop**:
+2. **Parallelism in For each loop**
    - **Description**: Enable parallel processing within the **For Each** loop to handle multiple records simultaneously.
    - **Implementation**: Configure the **For Each** loop to process up to 50 records in parallel. This approach is useful for services that don't support batch operations.
    - **Benefits**: Significantly reduces the overall processing time by handling multiple records at the same time.
@@ -100,7 +100,7 @@ For information on making batch requests, refer to the following REST API docume
 
 When working with Dataverse, use the [Bulk Operations Web APIs](/power-apps/developer/data-platform/bulk-operations) to reduce the number of actions required, streamline your processes, and enhance performance.
 
-Bulk Operations Web APIs offer a distinct advantage over batch operations. Here's how they differ:
+Bulk operations Web APIs offer a distinct advantage over batch operations. Here's how they differ:
 
 - **Batch operations**: Although batch operations are posted in a single request, they're executed as multiple individual operations. Each operation within the batch is processed separately.
 - **Bulk operations**: In contrast, bulk operations are posted and executed as a single operation. The entire bulk request is counted as one operation, which can significantly reduce the number of actions and improve efficiency.
@@ -112,7 +112,7 @@ To invoke Bulk Operations:
 
 In this example, we prepare the records in JSON format using the **Select** action:
 
-:::image type="content" source="media/prepare-json.png" alt-text="Screenshot of a using a Select action to prepare the content for the bulk request.":::
+:::image type="content" source="media/prepare-json.png" alt-text="Screenshot of a using a Select action to prepare the content for the bulk request." lightbox="media/prepare-json.png" :::
 
 Then, we use HTTP with Microsoft Entra ID to post the request using the **CreateMultiple Web API**:
 

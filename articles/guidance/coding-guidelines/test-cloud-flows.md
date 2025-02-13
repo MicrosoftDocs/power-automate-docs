@@ -16,7 +16,7 @@ search.audienceType:
 
 # Test cloud flows
 
-Testing your Power Automate cloud flows is crucial to ensure their reliability, performance, and accuracy. By following these best practices, you can streamline your testing process, identify and resolve issues more efficiently, and maintain the integrity of your automated workflows.
+Testing your Power Automate cloud flows is crucial to ensure their reliability, performance, and accuracy. By following these best practices, you streamline your testing process, identify and resolve issues more efficiently, and maintain the integrity of your automated workflows.
 
 ## Design phase testing
 
@@ -28,7 +28,7 @@ In the **Test** pane, there are two options for testing your flow:
 
 - Use data from previous runs to perform the test.
 
-:::image type="content" source="media/test-cloud-flows.png" alt-text="Screenshot of the Test Flow pane.":::
+:::image type="content" source="media/test-cloud-flows.png" alt-text="Screenshot of the Test Flow pane." lightbox="media/test-cloud-flows.png":::
 
 ## Static result testing (mock data)
 
@@ -46,20 +46,22 @@ Advantages of using static result testing include:
 
 Take a three-step approach:
 
-1. **Capture the action's outcome**:
+1. **Capture the action's outcome**
    - Create a new manually triggered flow with the action you want to mock (for example, **Start and wait for an approval**).
    - Run the flow once and complete the action to capture its outcome.
    - Go to the flow history, open the last run instance, and expand the action to view its outputs.
    - Copy the output data, which typically includes the "body" and other relevant details.
 
-2. **Configure the static result**:
+2. **Configure the static result**
    - In the flow editor, select the ellipsis on the action you want to mock and select **Static result**.
    - Toggle **Enable Static Result** and select the fields you want to provide as a response.
    - Save the changes.
 
 <!-- Not able to check first steps above -->
 
-3. **Run the flow with static results**: When you run the flow again, it uses the static result for the mocked action, skipping the actual execution and using the predefined output instead.
+3. **Run the flow with static results**
+
+      - When you run the flow again, it uses the static result for the mocked action, skipping the actual execution and using the predefined output instead.
 
 ## Resubmitting cloud flow runs
 

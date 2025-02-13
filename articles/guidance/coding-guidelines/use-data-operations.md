@@ -1,5 +1,5 @@
 ---
-title: Work with data operations
+title: Work with Data Operations
 description: Learn how to efficiently manipulate, transform, and manage data within your cloud flows using data operations in Power Automate.
 author: manuelap-msft
 ms.subservice: guidance
@@ -16,13 +16,13 @@ search.audienceType:
 
 Data operations in Power Automate refer to the manipulation, transformation, and management of data within your automation flows in an efficient way. Actions like **Filter array**, **Select**, and **Join** help avoid unnecessary loops to process data.
 
-:::image type="content" source="media/data-operations.png" alt-text="Screenshot of available data operations.":::
+:::image type="content" source="media/data-operations.png" alt-text="Screenshot of available data operations." lightbox="media/data-operations.png":::
 
 Learn more: [Use data operations](/power-automate/data-operations)
 
 ## Example use cases for data operations
 
-Instead of using a condition in a loop to find elements in a table that match certain criteria, consider using a filter or select operation to simplify your cloud flow and improve performance.
+Consider using a filter or select operation instead of a condition in a loop to find elements in a table that match certain criteria. This approach can simplify your cloud flow and improve performance.
 
 Data operations in Power Automate are useful for transforming and manipulating data from external sources that lack built-in filtering or selection capabilities. For instance, when retrieving data from an API via an HTTP request or using a custom connector that doesn't support filter parameters, you can use data operation actions to handle these tasks. By using actions such as **Filter array**, **Select**, **Compose**, and **Parse JSON**, you can effectively filter, select, and transform the data within your flow. This approach lets you tailor the data to your specific needs, ensuring that only relevant information is processed and utilized in subsequent steps of your automation.
 
@@ -51,11 +51,11 @@ Using data operations in Power Automate offers several benefits, especially when
    - The **Join** action simplifies the process of combining data, making it easier to generate summaries or formatted outputs quickly.
 
 > [!TIP]
-> When working with data sources such as Dataverse in Power Automate, it's important to optimize your flows for better performance. Instead of using the **Filter array** and **Select** actions, consider using the **Select columns** and **Filter rows** options directly within the action. This technique reduces the number of actions required in your flow, enhancing performance and efficiency. By filtering and selecting data at the source, you minimize the amount of data processed and transferred, leading to faster execution times and more streamlined workflows.
+> When working with data sources such as Dataverse in Power Automate, it's important to optimize your flows for better performance. Instead of using the **Filter array** and **Select** actions, consider using the **Select columns** and **Filter rows** options directly within the action. This technique reduces the number of actions required in your flow, enhancing performance and efficiency. By filtering and selecting data at the source, you minimize the amount of data processed and transferred, leading to faster execution times, and more streamlined workflows.
 
 ## Variables vs Compose
 
-Variables store data that can be updated or changed throughout the flow. They're useful when you need to:
+Variables store data that can be updated or changed throughout the flow. They're useful when you:
 
 - **Store and update values**: Variables can hold data that might change as the flow progresses, such as counters, accumulators, or dynamic values.
 - **Maintain state**: Variables help in maintaining the state of data across different actions and conditions within the flow.
@@ -67,7 +67,7 @@ Benefits of variables include:
 - **Flexibility**: Variables can be updated multiple times, making them ideal for scenarios where data changes dynamically.
 - **Persistence**: Variables retain their value throughout the flow, which is useful for maintaining state and performing iterative operations.
 
-The **Compose** action generates a single output from a given input expression. It's useful when you need to:
+The **Compose** action generates a single output from a given input expression. It's useful when you:
 
 - **Simplify expressions**: Simplify complex expressions by breaking them down into smaller, manageable parts.
 - **Store static values**: Store values that don't change throughout the flow but need to be read many times.
@@ -86,12 +86,12 @@ Use variables when you need to store and update data dynamically throughout the 
 
 When working with a set of variables that are updated within the same logical blocks in the flow, use JSON variables instead of individual variables to reduce the number of actions in the flow.
 
-Using separate variables for each value requires multiple actions: two **Initialize variable** actions and two **Set variable** actions to update them, resulting in additional steps in the flow.
+Using separate variables for each value requires multiple actions: two **Initialize variable** actions and two **Set variable** actions to update them, resulting in another steps in the flow.
 
-:::image type="content" source="media/var-individual.png" alt-text="Screenshot of using separate variables for var1 and var2.":::
+:::image type="content" source="media/var-individual.png" alt-text="Screenshot of using separate variables for var1 and var2." lightbox="media/var-individual.png":::
 
 The second approach, using a single object variable in JSON format, reduces the number of actions in the flow and makes it easier to manage related data.
 
-:::image type="content" source="media/var-object.png" alt-text="Screenshot of using a single object variable in JSON format.":::
+:::image type="content" source="media/var-object.png" alt-text="Screenshot of using a single object variable in JSON format." lightbox="media/var-object.png":::
 
-Notice that with this approach you only need one **Initialize variable** action and one **Set variable** action, reducing the number of steps in the flow.
+With this approach, you only need one **Initialize variable** action and one **Set variable** action, reducing the number of steps in the flow.

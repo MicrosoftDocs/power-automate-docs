@@ -16,11 +16,11 @@ search.audienceType:
 
 # Work only with relevant data
 
-In Power Automate, using only relevant data is essential for maintaining efficiency and accuracy in your automated workflows.
+In Power Automate, using only relevant data is essential for maintaining efficiency and accuracy in automated workflows.
 
 [Content throughput limits](/power-automate/limits-and-config#throughput-limits) refer to the maximum amount of data that can be read from or written to the run history of a cloud flow within a specific time period. These limits affect how much data can be processed during a specified time period. Throughput limits vary by [performance profile](/power-automate/limits-and-config#performance-profiles).
 
-To optimize performance in your cloud flows, it's important to limit the data processed to only what is relevant. 
+To optimize performance in cloud flows, it's important to limit the data processed to only what is relevant.
 
 You can limit the data processed at both the trigger and action levels by:
 
@@ -34,11 +34,11 @@ These techniques help filter the data effectively, ensuring that your flow proce
 
 At the trigger level stage, you can define conditions that must be met for the data to be read and processed in the cloud flow. Using OData expressions, you can filter data based on specific criteria, ensuring only pertinent data is brought in.
 
-:::image type="content" source="media/odata-filter.png" alt-text="Screenshot of using select columns and filter rows in a Dataverse trigger.":::
+:::image type="content" source="media/odata-filter.png" alt-text="Screenshot of using select columns and filter rows in a Dataverse trigger." lightbox="media/odata-filter.png":::
 
 Data sources like SharePoint allow you to specify views to get only relevant columns and filtered records. In the trigger,  specify the view relevant to your use case.
 
-:::image type="content" source="media/sharepoint-filter-view.png" alt-text="Screenshot of using the Limit Columns By View option on a SharePoint trigger.":::
+:::image type="content" source="media/sharepoint-filter-view.png" alt-text="Screenshot of using the Limit Columns By View option on a SharePoint trigger." lightbox="media/sharepoint-filter-view.png":::
 
 ## Actions
 
@@ -54,7 +54,7 @@ When using Power Automate to get data from Dataverse, you can use the following 
 
 You can either use one or a combination of these options to minimize the data.
 
-:::image type="content" source="media/dataverse-limit.png" alt-text="Screenshot of a Dataverse action in a cloud flow that specifies the Select Column, Filter Row, and Row Count settings.":::
+:::image type="content" source="media/dataverse-limit.png" alt-text="Screenshot of a Dataverse action in a cloud flow that specifies the Select Column, Filter Row, and Row Count settings." lightbox="media/dataverse-limit.png":::
 
 When using Power Automate to get data from SharePoint, you have similar options to limit the data processed:
 
@@ -62,6 +62,6 @@ When using Power Automate to get data from SharePoint, you have similar options 
 - **Top count**: This option allows you to limit the number of items returned by the action. For example, setting a top count of 100 ensures that only the first 100 items that meet your criteria are processed.
 - **Limit columns by view**: You can choose to limit the columns returned by selecting a specific view. This technique reduces the amount of data processed by only including the columns defined in that view.
 
-:::image type="content" source="media/sharepoint-filter-action.png" alt-text="Screenshot of a SharePoint action showing the Filter Query, Top Count, and Limit Columns By View options.":::
+:::image type="content" source="media/sharepoint-filter-action.png" alt-text="Screenshot of a SharePoint action showing the Filter Query, Top Count, and Limit Columns By View options." lightbox="media/sharepoint-filter-action.png":::
 
 By using these options, you can optimize your flows to handle only the necessary data, improving performance and efficiency.

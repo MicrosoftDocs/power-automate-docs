@@ -1,5 +1,5 @@
 ---
-title: Understand access to flows
+title: Understand access to Power Automate flows
 description: Discover the benefits of using service principal names (SPNs) for managing Power Automate flows and maintaining compliance.
 #customerIntent: As a Power Automate user, I want to understand the differences between service principal and user account ownership so that I can manage Power Automate flows effectively.
 author: manuelap-msft
@@ -15,13 +15,14 @@ search.audienceType:
   - flowmaker
 ---
 
-# Understand access to flows
+# Understand access to Power Automate flows
 
 Understanding the different ownership models available to Power Automate flows is key to maintaining the stability, security, and compliance of your flows.
 
-## Ownership of flows (service principal vs user) 
+## Ownership of flows (service principal vs user)
 
-The flow owner plays a vital role in the management, control, and maintenance of Power Automate flows. It's important to carefully consider whether to use a service principal name (SPN) or a user account as the flow owner. SPNs aren't tied to individual users, reducing the risk of disruptions, and they enable stricter control over permissions.
+The flow owner plays a vital role in managing, controlling, and maintaining Power Automate flows. It's important to carefully consider whether to use a service principal name (SPN) or a user account as the flow owner. SPNs aren't tied to individual users, reducing the risk of disruptions, and they enable stricter control over permissions.
+
 
 ### Service principal name (SPN) ownership
 
@@ -60,7 +61,7 @@ Add a [co-owner](/power-automate/create-team-flows) to a cloud flow to share it.
 
 Only add co-owners for flow collaborations as needed. In most cases, if a flow needs to be shared, share it with run-only permissions, which restrict users from viewing the flow run history or making any changes. Sharing flows also lets the owner specify whether the flow uses the connections of the user invoking the flow or the built-in connections of the user or account creating the flow.
 
-:::image type="content" source="media/run-only-users.png" alt-text="Screenshot of sharing the flow with run-only permissions.":::
+:::image type="content" source="media/run-only-users.png" alt-text="Screenshot of sharing the flow with run-only permissions." lightbox="media/run-only-users.png":::
 
 Learn more: [Share a cloud flow](/power-automate/create-team-flows)
 

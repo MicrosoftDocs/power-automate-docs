@@ -25,9 +25,9 @@ Learn more:
 
 ## How to check your license plan
 
-Some platform and API limits depend on your license plan. From Power Automate, the easiest way to identify your licenses and capabilities is by selecting **Settings** > **View My Licenses**.
+Some platform and API limits depend on your license plan. From Power Automate, the easiest way to identify your licenses and capabilities is to select **Settings** > **View My Licenses**.
 
-:::image type="content" source="media/view-my-license.png" alt-text="Screenshot of the View My Licenses option in Settings.":::
+:::image type="content" source="media/view-my-license.png" alt-text="Screenshot of the View My Licenses option in Settings." lightbox="media/view-my-license.png":::
 
 Alternatively, select <kbd>Ctrl</kbd> + <kbd>Alt</kbd>+ <kbd>A</kbd> from the Power Automate portal to get deeper plan level details. 
 
@@ -52,9 +52,9 @@ API limits at the platform level are based on the user license. Learn more: [Pow
 
 ## API throughput limits on connectors
 
-In addition to platform limits, each connector service has its own limits. Connector throttling in Power Automate refers to the mechanism by which connectors enforce rate limits or usage quotas to prevent abuse and ensure fair resource allocation. When a connector is throttled, it restricts the number of requests or operations that can be made within a specific time frame.
+In addition to platform limits, each connector service has its own limits. Connector throttling in Power Automate refers to the mechanism by which connectors enforce rate limits or usage quotas to prevent abuse and ensure fair resource allocation. When a connector is throttled, it restricts the number of requests or operations that can be made within a specific timeframe.
 
-When a flow runs into connector level throttling limits, the service returns a *429 (Too Many Requests)* error code with an error text like *Rate limit is exceeded. Try again in 27 seconds*.
+When a flow runs into connector-level throttling limits, the service returns a *429 (Too Many Requests)* error code with an error text like *Rate limit is exceeded. Try again in 27 seconds*.
 
 Each [connector](/connectors/connector-reference/connector-reference-powerautomate-connectors) has its own throttling limit. 
 

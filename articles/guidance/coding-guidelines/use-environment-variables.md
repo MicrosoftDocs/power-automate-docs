@@ -18,7 +18,7 @@ Environment variables in Power Automate cloud flows enhance the flexibility and 
 
 ## Why use environment variables?
 
-Environment variables are parameters that can be used to store configuration settings and other values that can be easily changed without modifying the actual flow logic. These variables can be referenced within flows, making it easier to manage environment-specific settings, such as URLs, API keys, connection strings, or other configuration data.
+Environment variables are parameters that can be used to store configuration settings and other values that can be easily changed without modifying the actual flow logic. Reference these variables within flows to manage environment-specific settings like URLs, API keys, connection strings, or other configuration data.
 
 Benefits of using environment variables include:
 
@@ -46,4 +46,4 @@ Imagine you have a flow that connects to an API endpoint that differs across dev
 2.  **Reference in flow**:
     -   In the HTTP action within your flow, set the URL to `@{variables('API_Base_URL')}`.
 
-By using an environment variable, you only need to update the environment variable values when you promote your solution from development to testing and production. You don't have to alter the flow logic, ensuring consistency, reducing the chance of errors, and simplifying management.
+By using an environment variable, you only need to update the environment variable values when you promote your solution from development to testing and production. You don't have to alter the flow logic, ensuring consistency, reduce the chance of errors, and simplify management.

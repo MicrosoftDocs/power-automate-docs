@@ -14,17 +14,20 @@ search.audienceType:
   - flowmaker
 ---
 
-# Use and create scopes
+# Use and create scopes in Power Automate
 
-As workflows become more complex, it's essential to manage them effectively to handle problems, test them, and ensure they run smoothly. 
+As workflows become more complex, it's essential to manage them effectively to handle problems, test, and ensure they run smoothly. 
 
-## What is a scope?
+## What is a scope
 
-A *scope* is a container that groups multiple actions together, making it easier to organize and visualize distinct parts of your workflow. When your workflow grows larger and more intricate, using a scope can help keep things organized and simplify troubleshooting.
+A *scope* is a container that groups multiple actions together, making it easier to organize and visualize distinct parts of your workflow. When your workflow grows larger and more intricate, using a scope helps keep things organized and simplifies troubleshooting.
 
-:::image type="content" source="media/use-scope.png" alt-text="Screenshot of actions within a scope.":::
+:::image type="content" source="media/use-scope.png" alt-text="Screenshot of actions within a scope." lightbox="media/use-scope.png":::
 
 ## How to use scopes
+
+> [!TIP]
+> To make the flows more readable, add comments or notes in the scope.
 
 To group actions and manage their execution using scopes in Power Automate:
 
@@ -34,13 +37,12 @@ To group actions and manage their execution using scopes in Power Automate:
 
 - **Implement for error handling**: Scopes are also beneficial for error handling. You can configure scopes to catch and handle errors that occur within the actions they contain. Using a catch scope makes it easier to troubleshoot and fix issues in your workflow. Learn more: [Employ robust error handling](error-handling.md)
 
-- **Maintain visibility and readability**: Scopes can be collapsed to hide their contents, making it easier to read the flow and focus on other parts of your flow. Collapsing scopes helps keep your workspace neat and organized, especially when dealing with large and complex flows.
+- **Maintain visibility and readability**: Collapse scopes to hide their contents, making it easier to read the flow and focus on other parts of your flow. Collapsing scopes helps keep your workspace neat and organized, especially when dealing with large and complex flows.
 
-- **Avoid overusing scopes**: Not every action needs to be within a scope. Use scopes judiciously to avoid unnecessary complexity. Only group actions into scopes when it adds value to the organization and manageability of your flow.
+- **Avoid overusing scopes**: Not every action needs to be within a scope. Use scopes judiciously to avoid unnecessary complexity. Group actions into scopes only when it adds value to the organization and manageability of your flow.
 
 By using scopes effectively, you can enhance the clarity, organization, and maintainability of your workflows, making them easier to manage and troubleshoot as they grow in complexity.
 
-> [!TIP]
-> Add comments or notes in the scope to make the flows more readable.
->
-> :::image type="content" source="media/use-scope-note.png" alt-text="Screenshot of a note within a scope.":::
+
+
+ :::image type="content" source="media/use-scope-note.png" alt-text="Screenshot of a note within a scope." lightbox="media/use-scope-note.png":::

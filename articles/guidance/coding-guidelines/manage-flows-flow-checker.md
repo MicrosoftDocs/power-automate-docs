@@ -28,7 +28,7 @@ Flow Checker in Power Automate is a built-in tool designed to help users ensure 
 
 - **Detailed explanations**: Each error and warning includes a detailed explanation and guidance on how to resolve the issue. This extra detail makes it easier to understand the problem and implement the necessary fixes.
 
-:::image type="content" source="media/flow-checker-result.png" alt-text="Screenshot of a Flow Checker result displaying two errors.":::
+:::image type="content" source="media/flow-checker-result.png" alt-text="Screenshot of a Flow Checker result displaying two errors." lightbox="media/flow-checker-result.png":::
 
 ## How to use Flow Checker
 

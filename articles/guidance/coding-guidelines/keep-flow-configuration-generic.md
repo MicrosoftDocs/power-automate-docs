@@ -16,7 +16,7 @@ search.audienceType:
 
 # Keep flow configuration generic
 
-By leveraging environment variables and service principals, you can avoid exposing sensitive information and streamline the administration of your flows.
+By using environment variables and service principals, you can avoid exposing sensitive information and streamline the administration of your flows.
 
 ## Environment variables
 
@@ -30,4 +30,4 @@ A [service principal](/entra/identity-platform/app-objects-and-service-principal
 
 To use a service principal in Power Platform, you need to create a service principal application user. You can create a service principal application user through the portal or through the API. An application user can have connections shared with them and can own resources such as flows.
 
-Whenever possible, use service principals for flow ownership and for creating connections. This approach enhances security and simplifies management. Learn more: [Support for service principal owned flows](/power-automate/service-principal-support).
+Whenever possible, use service principals for flow ownership and creating connections. This approach enhances security and simplifies management. Learn more: [Support for service principal owned flows](/power-automate/service-principal-support).

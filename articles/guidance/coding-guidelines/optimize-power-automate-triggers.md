@@ -16,7 +16,7 @@ search.audienceType:
 
 # Optimize Power Automate triggers
 
-A trigger is an event that initiates a cloud flow in Power Automate. For example, to get a notification in Microsoft Teams whenever you receive an email, you might set up a trigger that starts a flow when an email arrives to your inbox. Triggers are the starting points of a flow and can be based on a variety of events.
+A trigger is an event that initiates a cloud flow in Power Automate. For example, to get a notification in Microsoft Teams whenever you receive an email, you might set up a trigger that starts a flow when an email arrives to your inbox. Triggers are the starting points of a flow and can be based on various events.
 
 ## Types of triggers
 
@@ -24,15 +24,15 @@ There are two main types of triggers in Power Automate. Once you create a flow, 
 
 - **Polling trigger**: Periodically checks (or *polls*) a service to see if a specific event occurred. 
 
-    Example: A SQL trigger might poll a SQL server at regular intervals to check for new or updated records, or for some other change that meets specified conditions.
+    *Example*: A SQL trigger might poll a SQL server at regular intervals to check for new or updated records or for some other change that meets specified conditions.
   
     Flow turn-off behavior: When the flow is turned on, all unprocessed or pending events are processed. If you don't want to process pending items when you turn your flow back on, delete and then recreate your flow.
 
 - **Webhook trigger**: Listens for specific events in real time. When the event occurs, the service sends a notification to Power Automate to start the flow. 
  
-    Example: An Outlook trigger listens for incoming emails and triggers the flow as soon as a new email arrives. In this case, the trigger listens to the Outlook service and triggers the flow immediately on receipt of an email.
-  
-    Flow turn-off behavior: When the flow is turned on again, it processes any new events that are generated after the flow was turned on.
+*Example*: An Outlook trigger listens for incoming emails and triggers the flow as soon as a new email arrives. In this case, the trigger listens to the Outlook service and triggers the flow immediately on receipt of an email.
+
+Flow turn-off behavior: When the flow is turned on again, it processes any new events generated after the flow is turned on.
 
 ### Polling triggers
 
@@ -49,7 +49,7 @@ This behavior ensures no data is missed, even if the flow is stopped temporarily
    
 Keep in mind:
 
-- Turning off the flow doesn't deregister the trigger. It only pauses the polling. This design ensures that data isn't missed when the flow is restarted.
+- Turning off the flow doesn't deregister the trigger. It only pauses the polling. This design ensures that data isn't missed when the flow restarts.
 - To completely reset the polling behavior, you need to create a new copy of the flow. This re-registers the trigger when the flow is turned on for the first time, and you should delete the existing flow to avoid conflicts.
 
 ### Webhook triggers
@@ -66,15 +66,15 @@ Learn more: [My trigger is firing for old events](/power-automate/triggers-troub
 
 Many Power Automate users encounter the issue of their flows running every time a new row is added or an existing row is modified in the data source. However, there are often scenarios where you only want the flow to execute when a specific condition is met. To achieve this behavior, you need to configure your triggers correctly. By setting up the right conditions for your triggers, you ensure that your flow runs only when necessary, improving efficiency and reducing unnecessary executions.
 
-Consider a scenario where any user who submits an expense more than $100 needs to obtain manager approval. If the trigger conditions are not specified, the flow will run for every expense that is submitted and the flow author will have to specify additional conditions to filter the expenses greater than $100. By implementing trigger conditions, you can ensure that the flow only triggers when the expense is more than $100.
+Consider a scenario where any user who submits an expense more than $100 needs to obtain manager approval. If the trigger conditions aren't specified, the flow runs for every expense that is submitted and the flow author has to specify additional conditions to filter the expenses greater than $100. By implementing trigger conditions, you ensure that the flow only triggers when the expense is more than $100.
 
 In the example shown, a flow is triggered when a row is added, modified, or deleted. A condition checks if the amount is greater than 100 and starts the approval if the condition is met. *This flow is started every time data in the table is added, modified, or deleted.*
 
-:::image type="content" source="media/no-trigger-condition.png" alt-text="Screenshot of a flow using a condition instead of a trigger condition.":::
+:::image type="content" source="media/no-trigger-condition.png" alt-text="Screenshot of a flow using a condition instead of a trigger condition." lightbox="media/no-trigger-condition.png":::
 
 In this example, the flow includes a trigger condition on the **When a row is added, modified, or deleted** action that checks if the amount is greater than 100 and *then* starts the approval. *This flow only starts when the value in the amount field is greater than 100.*
 
-:::image type="content" source="media/trigger-condition.png" alt-text="Screenshot of a flow using a trigger condition.":::
+:::image type="content" source="media/trigger-condition.png" alt-text="Screenshot of a flow using a trigger condition." lightbox="media/trigger-condition.png":::
 
 > [!TIP]
 > The OData filter property in Power Automate is a powerful feature that allows you to define precise conditions for when a flow should be triggered based on changes in Dataverse data. You can specify a condition and the names of the columns on which the flow can trigger. This approach helps to optimize flow performance and ensure that flows run only when necessary.
@@ -99,7 +99,7 @@ To configure concurrency control:
 1. Specify the maximum number of concurrent runs you want to allow. You can set the number between 1 and 100.
 1. Save your changes to apply the concurrency control settings to your flow.
 
-:::image type="content" source="media/trigger-concurrency-control.png" alt-text="Screenshot of setting the trigger Concurrency control.":::
+:::image type="content" source="media/trigger-concurrency-control.png" alt-text="Screenshot of setting the trigger Concurrency control." lightbox="media/trigger-concurrency-control.png":::
 
 ### Important considerations
 

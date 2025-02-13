@@ -36,19 +36,23 @@ Reasons to use child flows include:
 
 ## Example parent-child flow scenario
 
-This scenario demonstrates the value of using a modular and efficient approval process to reduce redundancy and simplify maintenance.
+This scenario shows the value of using a modular and efficient approval process to reduce redundancy and simplify maintenance.
 
-The Contoso organization requires approvals for various scenarios such as project proposals, leave requests, and expense submissions. The approvers for these scenarios are members of different SharePoint groups. To streamline this process, a single reusable child flow can be created to extract the list of approvers from the SharePoint groups. Each parent flow (for example, project proposal, leave request, or expense submission) can then call this child flow to retrieve the list of approvers.
+The Contoso organization requires approvals for various scenarios such as project proposals, leave requests, and expense submissions. The approvers for these scenarios are members of different SharePoint groups. To streamline this process, create a single reusable child flow to extract the list of approvers from the SharePoint groups. Each parent flow (for example, project proposal, leave request, or expense submission) can then call this child flow to retrieve the list of approvers.
 
 ### Child flow
 
-The child flow is responsible for extracting the list of approvers from a SharePoint list and returning this list to the parent flow.
+The child flow extracts the list of approvers from a SharePoint list and returns this list to the parent flow.
 
 Steps in the child flow:
 
-1. **Retrieve approvers**: Query the SharePoint group to get the approvers based on the specified criteria.
+1. **Retrieve approvers**
 
-1. **Return data**: Send the list of approvers back to the calling parent flow.
+    Query the SharePoint group to get the approvers based on the specified criteria.
+
+1. **Return data**
+
+    Send the list of approvers back to the calling parent flow.
 
 :::image type="content" source="media/child-flow1.png" alt-text="Screenshot of the child flow that gets approvers from a SharePoint group.":::
 
@@ -58,8 +62,12 @@ The parent flow calls the child flow to get the list of approvers and then proce
 
 Steps in the parent flow:
 
-1. **Call child flow**: Invoke the child flow to retrieve the list of approvers.
+1. **Call child flow** 
 
-1. **Process response**: Use the list of approvers returned by the child flow to proceed with the approval process for the specific scenario (for example, project proposal, leave request, or expense submission).
+    Invoke the child flow to retrieve the list of approvers.
 
-:::image type="content" source="media/child-flow2.png" alt-text="Screenshot of the parent flow that calls the child flow.":::
+1. **Process response**
+
+    Use the list of approvers returned by the child flow to proceed with the approval process for the specific scenario (for example, project proposal, leave request, or expense submission).
+
+:::image type="content" source="media/child-flow2.png" alt-text="Screenshot of the parent flow that calls the child flow." lightbox="media/child-flow2.png":::

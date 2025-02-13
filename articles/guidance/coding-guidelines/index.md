@@ -14,7 +14,7 @@ search.audienceType:
 
 # Power Automate coding guidelines
 
-No matter how simple or complex a Power Automate cloud flow is, maintaining quality becomes critical as the flow's complexity grows. 
+No matter how simple or complex a Power Automate cloud flow is, maintaining quality is critical as the flow's complexity grows.
 
 These coding guidelines provide standards for naming actions, variables, and connectors, along with best practices for developing consistent, performant, and easily maintainable flows. They offer essential guidance for developers who design, build, test, deploy, and maintain Power Automate flows in various environments, including small businesses, corporations, and government entities.
 

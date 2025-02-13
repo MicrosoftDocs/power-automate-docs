@@ -27,7 +27,7 @@ Data loss prevention (DLP) policies help manage and control data sharing and mov
 
 DLP best practices to consider include:
 
-- Blocking/isolating non-business connectors, especially in default environments.
+- Blocking/isolating nonbusiness connectors, especially in default environments.
 - Blocking high risk operations such as HTTP, HTTP with Microsoft Entra ID and SharePoint URLs in environments with many makers.
 - Using endpoint filtering to make sure only expected endpoints can be reached.
 
@@ -39,7 +39,7 @@ Learn more:
 
 ## Configure IP firewall in Power Platform environments
 
-Environment admins can configure a set or range of IP addresses that are allowed to interact with Power Platform resources. Configuring IP firewalls ensures that only requests from specified IP addresses can trigger a workflow.
+Environment admins can set up a range of IP addresses that can interact with Power Platform resources. Setting up IP firewalls ensures that only requests from specified IP addresses can trigger a workflow.
 
 - Set up IP restrictions in your Power Platform environment.
 - Define the allowed IP addresses or ranges that can access the HTTP request trigger.
@@ -50,15 +50,15 @@ Learn more: [IP firewall in Power Platform environments](/power-platform/admin/i
 
 Power Platform has a rich ecosystem of connectors based on Microsoft Entra that allow authorized Microsoft Entra users to build compelling apps and flows establishing connections to the business data available through these data stores. 
 
-Tenant isolation makes it easy for administrators to ensure that these connectors can be used in a secure way within the tenant while minimizing the risk of data exfiltration outside the tenant. Tenant isolation allows Power Platform administrators to effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant.
+Tenant isolation makes it easy for administrators to ensure that these connectors are used securely within the tenant while minimizing the risk of data exfiltration outside the tenant. Tenant isolation lets Power Platform administrators effectively govern the movement of tenant data from Microsoft Entra authorized data sources to and from their tenant.
 
 Learn more: [Cross-tenant inbound and outbound restrictions](/power-platform/admin/cross-tenant-restrictions)
 
 ## Configure Microsoft Entra conditional access policies
 
-Power Automate conditional access policies can be created in addition to DLP, HTTP OAuth, and IP-pinning to prevent data exfiltration.
+You can create Power Automate conditional access policies in addition to DLP, HTTP OAuth, and IP-pinning to prevent data exfiltration.
 
-The minimum audience to include in conditional access policies include:
+The minimum audience to include in conditional access policies includes:
 
 | Audience | Endpoint |
 | --- | --- |

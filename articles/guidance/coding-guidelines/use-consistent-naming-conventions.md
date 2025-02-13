@@ -18,9 +18,9 @@ Maintaining consistent naming conventions for the components within your Power A
 
 Here are some naming convention guidelines to follow:
 
-- **Descriptive and meaningful names**: Give meaningful names to your flows. Additionally, choose names that accurately describe the purpose or function of each component. Avoid generic or ambiguous names that could lead to confusion. For example, instead of naming a trigger *Trigger1*, use a descriptive name like "New Email Received" to clearly indicate its purpose.
+- **Descriptive and meaningful names**: Give meaningful names to your flows. Choose names that accurately describe the purpose or function of each component. Avoid generic or ambiguous names that could lead to confusion. For example, instead of naming a trigger *Trigger1*, use a descriptive name like "New Email Received" to clearly indicate its purpose.
 
-- **Camelcase or underscores**: Use camelCase (capitalizing the first letter of each word except the first one) or underscores to separate words in your component names. Using camelCase or underscores improves readability and makes it easier to distinguish between different parts of the name. For instance, you might name an action "sendEmailNotification" or "send_email_notification" for consistency.
+- **Camelcase or underscores**: Use camelCase (capitalizing the first letter of each word except the first one) or underscores to separate words in your component names. Using camelCase or underscores improves readability and makes it easier to distinguish between different parts of the name. For instance, name an action "sendEmailNotification" or "send_email_notification" for consistency.
 
 - **Prefixes or tags**: Consider using prefixes or tags to categorize components based on their type or functionality. For example, you could use prefixes like "Trg_" for triggers, "Act_" for actions, or "Var_" for variables. Prefixes or tags help you quickly identify the role of each component within the flow.
 
@@ -30,4 +30,4 @@ Here are some naming convention guidelines to follow:
 
 - **Commenting**: Adding notes to the actions makes it easy to understand the flow implementation logic.
 
-    :::image type="content" source="media/comments-example.png" alt-text="Screenshot showing an example of notes or comments added to a flow.":::
+    :::image type="content" source="media/comments-example.png" alt-text="Screenshot showing an example of notes or comments added to a flow." lightbox="media/comments-example.png":::
