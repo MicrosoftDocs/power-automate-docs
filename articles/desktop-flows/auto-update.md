@@ -1,0 +1,55 @@
+---
+title: Automatic updates for Power Automate Desktop
+description: How to enable Power Automate Desktop to update itself automatically
+author: a-887178056
+ms.subservice: desktop-flow
+ms.date: 02/14/2025
+ms.author: guco
+ms.topic: conceptual
+---
+
+# Automatic update capability
+
+Starting with the April 2025 (2.54) release of Power Automate Desktop, machines are able to upgrade to greater versions in the background without requiring user interaction.
+
+There are two Automatic update modes: regular and emergency.
+
+> [!NOTE]
+> Automatic updates will be gradually enabled on a per-tenant basis, you can expect some delay between enabling auto-updates and your tenant's machines starting to update. 
+
+### Regular automatic updates
+
+When a new Power Automate release is available, the `Power Automate update service` will download the latest version and run the update in the background when the machine is not in use.
+
+This behavior is disabled by default and can be enabled via the registry, see [Configuring Automatic updates](#configuring-automatic-updates).
+
+### Emergency automatic updates
+
+This update mode can be used to distribute critical security patches and major regression fixes to Power Automate Desktop machines.
+
+When such an patch is available, machines will upgrade to their patched minor version (2.XX.Y => 2.XX.Z) when available, or to the latest version including the patch. This will only happen when machines are not in use.
+
+This behavior is enabled by default and can be disabled via the registry, see [Configuring Automatic updates](#configuring-automatic-updates).
+
+## Configuring automatic updates
+
+By default, regular automatic updates are disabled and emergency auto-updates are enabled.
+
+To change from the default behavior, create the following registry values. This will require admin privileges.
+
+| Key | Name | Type | Value |
+|---|---|---|---|
+| SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global | EnableRegularAutoUpdates | DWORD | If set to '1', will enable regular automatic updates. |
+| SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global | DisableEmergencyAutoUpdates | DWORD | If set to '1', will disable emergency automatic updates. |
+
+## Automatic updates limitations
+
+Automatic updates will not run when:
+- The Power Automate service has been configured to run with a custom account.
+- A local or cloud-orchestrated desktop flow run is currently executing on the machine.
+- The Power Automate Desktop designer, runtime application, installer or troubleshooter is currently running.
+- There is some custom configuration in the *.exe.config files of the Power Automate install folder:
+  - If you require custom proxy configuration, they should be set in the *.Proxy.config files instead of the *.exe.config files. See [configure Power Automate for desktop proxy settings](./how-to/proxy-settings.md).
+  - If you require custom screen settings, it should be defined in the registry instead of the config files. See [set screen resolution for unatttended mode](./how-to/set-screen-resolution-unattended-mode.md).
+- The machine is a member of a Hosted Machine Group.
+- Power Automate Desktop was installed by extracting the MSI installer from the .exe bundle installer.
