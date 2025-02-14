@@ -1,5 +1,5 @@
 ---
-title: Apply Power Automate features
+title: Leverage Power Automate features
 description: Learn how to use Power Automate features like code view, notes, and copy and paste actions to streamline your workflow creation process.
 author: manuelap-msft
 ms.subservice: guidance
@@ -12,7 +12,7 @@ search.audienceType:
   - flowmaker
 ---
 
-# Apply Power Automate features
+# Leverage Power Automate features
 
 Power Automate includes features designed to help streamline your workflow. This article describes features like viewing and editing the underlying code of actions and triggers, adding notes for better team communication, and using copy-paste actions to save time and boost productivity.
 

@@ -36,9 +36,9 @@ Azure Key Vault is a cloud service for securely storing and accessing secrets, k
 
 - **Role-based access control (RBAC)**: Access to Azure Key Vault is managed using RBAC via Microsoft Entra ID, ensuring only authorized users and applications can access the stored secrets.
 
-## Use secure inputs and outputs
+## Use Secure inputs and Secure outputs
 
-The **secure inputs and outputs** feature in Power Automate protects sensitive data within your flows. When enabled, this feature ensures that sensitive information, such as passwords and personal data, isn't visible in the run history or logs and helps maintain data privacy and security.
+The Secure inputs and Secure outputs feature in Power Automate protects sensitive data within your flows. When enabled, this feature ensures that sensitive information, such as passwords and personal data, isn't visible in the run history or logs and helps maintain data privacy and security.
 
 The key benefits of using secure inputs and outputs are:
 
@@ -56,7 +56,7 @@ The key benefits of using secure inputs and outputs are:
    1. Select **Settings**.
 
 2. **Enable secure options**
-   1. Toggle on the **Secure Inputs** and **Secure Outputs** options:
+   1. Toggle on the **Secure inputs** and **Secure outputs** options:
    
        :::image type="content" source="media/secure-inputs.png" alt-text="Screenshot of enabling Secure Inputs and Secure Outputs." lightbox="media/secure-inputs.png":::
 
@@ -78,7 +78,7 @@ The **When an HTTP request is received** trigger lets you initiate workflows by 
 
     Learn more: [OAuth authentication](/power-automate/oauth-authentication) 
 
-- **Use IP-pinning:**. Environment admins can configure a set or range of IP addresses that are permitted to interact with Power Platform resources. Configuring this feature ensures that only requests from specified IP addresses can trigger the workflow.
+- **Use IP-pinning:** Environment admins can configure a set or range of IP addresses that are permitted to interact with Power Platform resources. Configuring this feature ensures that only requests from specified IP addresses can trigger the workflow.
 
     To implement:
 

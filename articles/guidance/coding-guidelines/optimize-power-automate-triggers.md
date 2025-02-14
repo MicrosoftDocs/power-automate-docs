@@ -24,15 +24,15 @@ There are two main types of triggers in Power Automate. Once you create a flow, 
 
 - **Polling trigger**: Periodically checks (or *polls*) a service to see if a specific event occurred. 
 
-    *Example*: A SQL trigger might poll a SQL server at regular intervals to check for new or updated records or for some other change that meets specified conditions.
+  - *Example*: A SQL trigger might poll a SQL server at regular intervals to check for new or updated records or for some other change that meets specified conditions.
   
-    Flow turn-off behavior: When the flow is turned on, all unprocessed or pending events are processed. If you don't want to process pending items when you turn your flow back on, delete and then recreate your flow.
+  - Flow turn-off behavior: When the flow is turned on, all unprocessed or pending events are processed. If you don't want to process pending items when you turn your flow back on, delete and then recreate your flow.
 
 - **Webhook trigger**: Listens for specific events in real time. When the event occurs, the service sends a notification to Power Automate to start the flow. 
  
-*Example*: An Outlook trigger listens for incoming emails and triggers the flow as soon as a new email arrives. In this case, the trigger listens to the Outlook service and triggers the flow immediately on receipt of an email.
+  - *Example*: An Outlook trigger listens for incoming emails and triggers the flow as soon as a new email arrives. In this case, the trigger listens to the Outlook service and triggers the flow immediately on receipt of an email.
 
-Flow turn-off behavior: When the flow is turned on again, it processes any new events generated after the flow is turned on.
+  - Flow turn-off behavior: When the flow is turned on again, it processes any new events generated after the flow is turned on.
 
 ### Polling triggers
 

@@ -18,7 +18,7 @@ search.audienceType:
 
 Cloud flows that are created within or added to a [solution](/power-platform/alm/solution-concepts-alm) are known as solution-aware cloud flows, or simply solution cloud flows. These flows are designed to be portable and manageable and easy to move between environments. This capability supports robust Application Lifecycle Management (ALM) practices. Additionally, you can add multiple flows to a single solution, enhancing organization and management.
 
-Nonsolution cloud flows are flows that are created outside the solutions. Their deployment needs to be managed individually.
+Non-solution cloud flows are flows that are created outside the solutions. Their deployment needs to be managed individually.
 
 Learn more:
 
@@ -30,7 +30,7 @@ Learn more:
 
 *Connection references* and *connections* refer to different aspects of how flows interact with external services and data sources. Understanding the distinction between these two terms is important for effectively managing and deploying flows, particularly within the context of solution-aware and non-solution-aware cloud flows.
 
-### Connections (nonsolution cloud flows)
+### Connections (non-solution cloud flows)
 
 Connections are configurations that establish a link between Power Automate and external services, such as Office 365, SharePoint, Dynamics 365, SQL, or any other connector. A connection includes authentication details (like API keys, OAuth tokens, or user credentials) required to access the external service.
 
@@ -40,7 +40,7 @@ When you create a flow, you need to create or select a connection to the service
 
 If you change a connection for a cloud flow, every action associated with the connection needs to be updated.
 
-### Connection references (solution aware cloud flows)
+### Connection references (solution-aware cloud flows)
 
 Connection references are pointers used within flows to refer to specific connections. They allow flows to be more portable and manageable, especially when moving flows between different environments.
 
@@ -72,7 +72,7 @@ Only solution aware cloud flows (ALM-friendly) support the use of environment va
 
 ### No limit on the number of flows owned by a user
 
-With nonsolution cloud flows, a user can own a maximum of 600 flows. This limit doesn't apply to flows created within solutions.
+With non-solution cloud flows, a user can own a maximum of 600 flows. This limit doesn't apply to flows created within solutions.
 
 Learn more: [Limits and configuration](../../limits-and-config.md)
 

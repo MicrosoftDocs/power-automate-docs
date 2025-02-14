@@ -1,5 +1,5 @@
 ---
-title: Overview of Power Automate coding guidelines
+title: Power Automate coding guidelines
 description: Learn best practices for building Power Automate flows with coding guidelines. Improve consistency, performance, and maintainability.
 author: manuelap-msft
 ms.subservice: guidance

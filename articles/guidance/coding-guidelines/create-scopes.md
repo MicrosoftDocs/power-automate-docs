@@ -14,7 +14,7 @@ search.audienceType:
   - flowmaker
 ---
 
-# Use and create scopes in Power Automate
+# Use and create scopes
 
 As workflows become more complex, it's essential to manage them effectively to handle problems, test, and ensure they run smoothly. 
 
@@ -25,9 +25,6 @@ A *scope* is a container that groups multiple actions together, making it easier
 :::image type="content" source="media/use-scope.png" alt-text="Screenshot of actions within a scope." lightbox="media/use-scope.png":::
 
 ## How to use scopes
-
-> [!TIP]
-> To make the flows more readable, add comments or notes in the scope.
 
 To group actions and manage their execution using scopes in Power Automate:
 
@@ -43,6 +40,7 @@ To group actions and manage their execution using scopes in Power Automate:
 
 By using scopes effectively, you can enhance the clarity, organization, and maintainability of your workflows, making them easier to manage and troubleshoot as they grow in complexity.
 
-
+> [!TIP]
+> To make the flows more readable, add comments or notes in the scope.
 
  :::image type="content" source="media/use-scope-note.png" alt-text="Screenshot of a note within a scope." lightbox="media/use-scope-note.png":::

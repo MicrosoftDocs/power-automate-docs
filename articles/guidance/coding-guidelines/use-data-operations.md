@@ -1,5 +1,5 @@
 ---
-title: Work with Data Operations
+title: Work with data operations
 description: Learn how to efficiently manipulate, transform, and manage data within your cloud flows using data operations in Power Automate.
 author: manuelap-msft
 ms.subservice: guidance
@@ -28,7 +28,7 @@ Data operations in Power Automate are useful for transforming and manipulating d
 
 ## Advantages of using data operations
 
-Using data operations in Power Automate offers several benefits, especially when dealing with complex data manipulation tasks. Here are some key advantages:
+Using data operations in Power Automate offers several benefits, especially for complex data manipulation tasks. Here are some key advantages:
 
 - **Efficiency**
    - The **Filter array** action lets you quickly filter out unwanted data based on specific conditions, making your workflows more efficient. For example, you can easily filter out records that don't meet certain criteria without using conditions and loops.
@@ -55,7 +55,7 @@ Using data operations in Power Automate offers several benefits, especially when
 
 ## Variables vs Compose
 
-Variables store data that can be updated or changed throughout the flow. They're useful when you:
+Variables store data that you can update or change throughout the flow. They're useful when you:
 
 - **Store and update values**: Variables can hold data that might change as the flow progresses, such as counters, accumulators, or dynamic values.
 - **Maintain state**: Variables help in maintaining the state of data across different actions and conditions within the flow.
@@ -71,7 +71,7 @@ The **Compose** action generates a single output from a given input expression. 
 
 - **Simplify expressions**: Simplify complex expressions by breaking them down into smaller, manageable parts.
 - **Store static values**: Store values that don't change throughout the flow but need to be read many times.
-- **Intermediate calculations**: Perform intermediate calculations or transformations that don't need to be updated later.
+- **Intermediate calculations**: Either perform intermediate calculations or transformations that don't need later updates.
 - **Pass data between actions**: Pass data between actions without the need to create a variable.
 
 Benefits of the **Compose** action include:
@@ -86,7 +86,7 @@ Use variables when you need to store and update data dynamically throughout the 
 
 When working with a set of variables that are updated within the same logical blocks in the flow, use JSON variables instead of individual variables to reduce the number of actions in the flow.
 
-Using separate variables for each value requires multiple actions: two **Initialize variable** actions and two **Set variable** actions to update them, resulting in another steps in the flow.
+Using separate variables for each value requires multiple actions: two **Initialize variable** actions and two **Set variable** actions to update them, resulting in additional steps in the flow.
 
 :::image type="content" source="media/var-individual.png" alt-text="Screenshot of using separate variables for var1 and var2." lightbox="media/var-individual.png":::
 

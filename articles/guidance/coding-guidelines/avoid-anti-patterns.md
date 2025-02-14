@@ -1,5 +1,5 @@
 ---
-title: Avoid anti-patterns in cloud flows
+title: Avoid anti-patterns
 description: Learn how to avoid common anti-patterns in cloud flows to improve performance and resource efficiency.
 author: manuelap-msft
 ms.subservice: guidance
@@ -40,7 +40,7 @@ To implement OData query expansion:
 - Use the **$select** parameter to limit the columns returned from the related table.
 - Retrieve and process relevant records by applying conditions directly on the lookup table's columns using the **Filter Rows** parameter. For example, set the **Filter Rows** parameter to `IsPromotion eq true`.
 
-:::image type="content" source="media/nested-loop.png" alt-text="Screenshot of using the Expand Query and Filter Rows parameter to implement OData query expansion.":::
+:::image type="content" source="media/nested-loop.png" alt-text="Screenshot of using the Expand Query and Filter Rows parameter to implement OData query expansion." lightbox="media/nested-loop.png":::
 
 ## Avoid infinite loops
 

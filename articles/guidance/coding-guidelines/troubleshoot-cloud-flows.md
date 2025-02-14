@@ -26,7 +26,7 @@ For more guidance, refer to [Troubleshoot a cloud flow](/power-automate/fix-flow
 
 Understanding error codes is important when troubleshooting. Error codes provide specific information about why a flow failed, helping you to quickly identify and address the underlying issues. By recognizing and interpreting these codes, you can implement improvements, ensuring your flows run smoothly and efficiently. 
 
-You usually fix error codes in the 400s:
+You can usually fix error codes in the 400s:
 
 - **400 - Bad Request**: Often due to a misconfiguration at the trigger or action level.
 - **401 - Access Denied**: User doesn't have access to the service.
