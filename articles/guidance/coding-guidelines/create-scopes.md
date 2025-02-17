@@ -42,5 +42,5 @@ By using scopes effectively, you can enhance the clarity, organization, and main
 
 > [!TIP]
 > To make the flows more readable, add comments or notes in the scope.
-
- :::image type="content" source="media/use-scope-note.png" alt-text="Screenshot of a note within a scope." lightbox="media/use-scope-note.png":::
+>
+> :::image type="content" source="media/use-scope-note.png" alt-text="Screenshot of a note within a scope." lightbox="media/use-scope-note.png":::

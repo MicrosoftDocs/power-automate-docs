@@ -71,7 +71,7 @@ The **Compose** action generates a single output from a given input expression. 
 
 - **Simplify expressions**: Simplify complex expressions by breaking them down into smaller, manageable parts.
 - **Store static values**: Store values that don't change throughout the flow but need to be read many times.
-- **Intermediate calculations**: Either perform intermediate calculations or transformations that don't need later updates.
+- **Intermediate calculations**: Perform intermediate calculations or transformations that don't need later updates.
 - **Pass data between actions**: Pass data between actions without the need to create a variable.
 
 Benefits of the **Compose** action include:

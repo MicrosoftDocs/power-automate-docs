@@ -36,9 +36,9 @@ Azure Key Vault is a cloud service for securely storing and accessing secrets, k
 
 - **Role-based access control (RBAC)**: Access to Azure Key Vault is managed using RBAC via Microsoft Entra ID, ensuring only authorized users and applications can access the stored secrets.
 
-## Use Secure inputs and Secure outputs
+## Use secure inputs and secure outputs
 
-The Secure inputs and Secure outputs feature in Power Automate protects sensitive data within your flows. When enabled, this feature ensures that sensitive information, such as passwords and personal data, isn't visible in the run history or logs and helps maintain data privacy and security.
+The secure inputs and secure outputs feature in Power Automate protects sensitive data within your flows. When enabled, this feature ensures that sensitive information, such as passwords and personal data, isn't visible in the run history or logs and helps maintain data privacy and security.
 
 The key benefits of using secure inputs and outputs are:
 
