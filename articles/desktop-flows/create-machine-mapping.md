@@ -4,7 +4,7 @@ description: Learn how to create a machine-credential mapping for your desktop f
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/21/2025
+ms.date: 02/17/2025
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
@@ -57,13 +57,9 @@ To create a mapping between machines and credentials, follow these steps:
 
 1. Ensure the Microsoft Flow Extensions core package (MicrosoftFlowExtensionsCore) Dataverse solution in your environment equals to 1.8.36.0 or higher.
 1. Ensure the version of Power Automate desktop app is 2.50 or higher.
-1. Create your [credentials](create-cyberark-credential.md). These credentials must be defined as usable in **connection** to be selected in your mapping.
-
-    > [!NOTE]
-    > Currently, only CyberArk credentials can be used in a mapping.
-
+1. Create your credential using [Azure Key Vault](create-AzureKeyVault-credential.md) or [CyberArk](create-cyberark-credential.md). These credentials must be defined as usable in **connection** to be selected in your mapping.
 1. You need to have machines registered in this environment. If you didn't register your machine, follow the steps in [Manage Machines](manage-machines.md).  
-1. For CyberArk credentials, the machine must be [configured with a CyberArk application](create-cyberark-credential.md).
+1. CyberArk only: **all the machines using CyberArk credentials** must be [configured with a CyberArk application](create-cyberark-credential.md).
 
 ## Create a machine mapping
 
@@ -83,7 +79,7 @@ To create a mapping between machines and credentials, follow these steps:
     1. From the credential dropdown, select the credentials to map to this machine.
 
          > [!NOTE]
-         > In the dropdown, you only see credentials that are usable in **connections** and using CyberArk as a credential store.
+         > In the dropdown, you only see credentials that are usable in **connections**.
          > All credentials listed for a machine must be working credentials for that machine. In other words, if one credential fails for a machine, this machine is considered as not available even if there are other credentials defined for this machine.
          > You can't map a mapping credential to another mapping.
 
@@ -112,6 +108,5 @@ When you share the mapping, you also share all the credentials selected for this
 
 ## Limitations
 
-1. During this preview phase, machine mapping can't use Azure Key Vault credentials.
 1. The run detail page doesn't display the credential used in the credential mapping. Retrieve the credential used in the `flowsession` table in the `credentials` field.
 1. In machine mapping credential, the default credential can be exported and imported, but you must reconfigure the mappings between machines and user credentials in the environment where the machine mapping credential is imported.
