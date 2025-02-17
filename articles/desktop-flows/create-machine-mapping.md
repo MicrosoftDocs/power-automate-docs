@@ -87,7 +87,7 @@ To create a mapping between machines and credentials, follow these steps:
          > All credentials listed for a machine must be working credentials for that machine. In other words, if one credential fails for a machine, this machine is considered as not available even if there are other credentials defined for this machine.
          > You can't map a mapping credential to another mapping.
 
-        :::image type="content" source="./media/manage-machines/machine-mapping.png" alt-text="Screenshot of create new mapping.":::
+        :::image type="content" source="./media/manage-machines/Machine-mapping-3.png" alt-text="Screenshot of create new mapping.":::
 
 1. Once the mapping between a machine and credentials is done, you can see it in the list of mappings. You can edit the mapping to change the credentials or delete it.
 1. If you need to define a new mapping, select **Add new**.
