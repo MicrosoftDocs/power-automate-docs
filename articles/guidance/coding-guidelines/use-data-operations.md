@@ -1,14 +1,18 @@
 ---
 title: Work with data operations
 description: Learn how to efficiently manipulate, transform, and manage data within your cloud flows using data operations in Power Automate.
+<<<<<<< HEAD
 #customer intent: As an admin, I want to learn how to efficiently manipulate, transform, and manage data within my cloud flows using data operations in Power Automate so that I can optimize my workflows.
+=======
+#customerIntent: As a Power Automate user, I want to learn how to efficiently manipulate, transform, and manage data within my cloud flows so that I can optimize my automation processes.
+>>>>>>> cc990c6097679af5044905c8ff1c4d6f89998c12
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/05/2025
+ms.date: 02/17/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
-search.audienceType: 
+search.audienceType:
   - admin
   - flowmaker
 ---
@@ -72,7 +76,7 @@ The **Compose** action generates a single output from a given input expression. 
 
 - **Simplify expressions**: Simplify complex expressions by breaking them down into smaller, manageable parts.
 - **Store static values**: Store values that don't change throughout the flow but need to be read many times.
-- **Intermediate calculations**: Perform intermediate calculations or transformations that don't need later updates.
+- **Perform intermediate calculations**: Perform intermediate calculations or transformations that don't need later updates.
 - **Pass data between actions**: Pass data between actions without the need to create a variable.
 
 Benefits of the **Compose** action include:
