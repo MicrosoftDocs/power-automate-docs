@@ -1,30 +1,22 @@
 ---
 title: What is Power Automate?
 description: Learn how Power Automate can streamline repetitive tasks with cloud, desktop, and business process flows.
-services: ''
 suite: flow
-documentationcenter: na
-author: natalie-pienkowska
+author: HeatherOrt
 contributors:
-  - natalie-pienkowska
+  - HeatherOrt
   - kartikraop
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 06/05/2023
-ms.author: jamiller
+ms.date: 02/18/2025
+ms.author: heortaol
 ms.reviewer: angieandrews
 ---
 
 # What is Power Automate?
 
-Microsoft Power Automate offers a powerful suite of automation capabilities that empower businesses to streamline processes, automate repetitive tasks, and unlock new opportunities for growth.
-
-Power Automate provides a user friendly interface and a vast array of connectors to enable automation without the need for extensive coding knowledge. By dragging and dropping components and configuring settings, you can quickly create powerful workflows that save time, improve efficiency, and enhance productivity. From simple notification flows to advanced multi-step processes, Power Automate offers the flexibility and scalability to meet a wide range of automation needs, making it an indispensable tool for modern digital workplaces.
-
-Power Automate is part of Microsoft Power Platform. 
+With its automation capabilities, Power Automate helps you streamline your business’ processes and automate repetitive tasks. Its intuitive interface and many connectors allow you to create workflows with little to no knowledge of coding. You can drag and drop components and set up workflows to save time and improve efficiency. Power Automate can handle simple tasks like sending notifications as well as more complex processes across multiple apps and services. It's flexible and scalable, making it useful for various automation needs in a modern workplace.
 
 ## Types of flows
 
@@ -41,7 +33,7 @@ Create a cloud flow when you want your automation to be triggered either automat
 | **Flow type**      | **Use case**       | **Automation target**     |
 |--------------------|--------------------|---------------------------|
 | [Automated flows](get-started-logic-flow.md)                 | Create an automation that is triggered by an event such as arrival of an email from a specific person, or a mention of your company in social media.| [Connectors](/connectors/) for cloud or on-premises services connect your accounts and enable them to talk to each other. |
-| [Instant flows](./mobile/mobile-create-flow.md)   | Start an automation with a click of a button. You can automate repetitive tasks from your desktop or mobile devices. For example, instantly send a reminder to the team with a push of a button from your mobile device.     |     Wide range of tasks such as requesting an approval, an action in Teams or SharePoint.       |
+| [Instant flows](./mobile/mobile-create-flow.md)   | Start an automation by selecting a button. You can automate repetitive tasks from your desktop or mobile devices. For example, instantly send a reminder to the team with a push of a button from your mobile device.     |     Wide range of tasks such as requesting an approval, an action in Teams or SharePoint.       |
 | [Scheduled flows](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to SharePoint or a database.             |Tasks that need to be automated on a schedule.         |
 
 ## Desktop flows
@@ -50,13 +42,13 @@ Use [desktop flows](./desktop-flows/introduction.md) to automate tasks on the we
 
 ## Business process flows
 
-[Business process flows](business-process-flows-overview.md) provide a guide for people to get work done. They provide a streamlined user experience that leads people through the processes their organization has defined for interactions that need to be advanced to a conclusion of some kind. This user experience can be tailored so that people with different security roles can have an experience that best suits the work they do.
+[Business process flows](business-process-flows-overview.md) provide a guide for people to get work done. They provide a streamlined user experience that leads people through the processes their organization defined for interactions that need to be advanced to a conclusion of some kind. This user experience can be tailored so that people with different security roles can have an experience that best suits the work they do.
 
 ## Related information
 
-- Read guidance on [determining which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
-- Overview of [cloud flows](overview-cloud.md)
-- Get started with [desktop flows](./desktop-flows/introduction.md)
-- Get started with [business process flows](business-process-flows-overview.md) in conditions in advanced mode
+- [Determine which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
+- [Overview of cloud flows](overview-cloud.md)
+- [Introduction to desktop flows](./desktop-flows/introduction.md)
+- [Business process flows overview](business-process-flows-overview.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

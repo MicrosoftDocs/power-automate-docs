@@ -4,7 +4,7 @@
   items: 
     - name: What is Power Automate
       href: flow-types.md
-    - name: Use Copilot in Power Automate
+    - name: Adopt automation with Copilot in Power Automate
       href: copilot-overview.md
     - name: Create and manage flows in Power Apps
       href: create-flows-power-apps.md
@@ -24,7 +24,7 @@
       items:
         - name: Get started with Copilot in cloud flows
           href: get-started-with-copilot.md
-        - name: Understand the cloud flows designer
+        - name: Explore the cloud flows designer
           href: flows-designer.md
         - name: Use generative actions in cloud flows (preview)
           href: generative-actions-overview.md
