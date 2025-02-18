@@ -12,10 +12,14 @@ ms.topic: conceptual
 
 Starting with the April 2025 (2.54) release of Power Automate Desktop, machines are able to upgrade to greater versions in the background without requiring user interaction.
 
-There are two Automatic update modes: regular and emergency.
+> [!IMPORTANT]
+> - This article only applies to the MSI version of Power Automate Desktop. The store version's updates are managed by the Windows store.
+
+There are two automatic update modes: regular and emergency.
 
 > [!NOTE]
-> Automatic updates will be gradually enabled on a per-tenant basis, you can expect some delay between enabling auto-updates and your tenant's machines starting to update. 
+> Automatic updates will be gradually enabled on a per-tenant basis, you can expect some delay between enabling auto-updates and your tenant's machines starting to update.
+> If you want your tenant to be enabled early, please contact support.
 
 ### Regular automatic updates
 
