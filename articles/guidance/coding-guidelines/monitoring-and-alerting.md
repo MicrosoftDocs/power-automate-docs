@@ -1,7 +1,7 @@
 ---
 title: Monitoring and alerting
 description: Discover the key benefits of monitoring Power Automate flows, including issue resolution, performance enhancement, and security compliance.
-#customerIntent: As a Power Automate user, I want to monitor flows so that I can ensure workflows run smoothly and efficiently.
+#customer intent: As a Power Automate user, I want to monitor flows so that I can ensure workflows run smoothly and efficiently.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice

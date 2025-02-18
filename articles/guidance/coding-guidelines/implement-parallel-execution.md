@@ -1,6 +1,7 @@
 ---
 title: Implement parallel execution and concurrency
 description: Learn how to implement parallel execution and concurrency in Power Automate to optimize your workflows and reduce execution time.
+#customer intent: As an admin, I want to implement parallel execution in Power Automate so that I can optimize workflow efficiency.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice

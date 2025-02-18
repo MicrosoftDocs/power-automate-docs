@@ -1,6 +1,7 @@
 ---
 title: Use environment variables
 description: Learn how to use environment variables in Power Automate to enhance workflow flexibility and maintainability across different environments.
+#customer intent: As an admin, I want to use environment variables in Power Automate so that I can enhance workflow flexibility and maintainability across different environments.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice

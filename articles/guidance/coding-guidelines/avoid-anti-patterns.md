@@ -1,6 +1,7 @@
 ---
 title: Avoid anti-patterns
 description: Learn how to avoid common anti-patterns in cloud flows to improve performance and resource efficiency.
+#customer intent: As an admin, I want to avoid anti-patterns in cloud flows so that I can improve performance and resource efficiency.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice

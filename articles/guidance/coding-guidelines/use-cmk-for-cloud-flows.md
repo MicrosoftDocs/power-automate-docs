@@ -1,7 +1,7 @@
 ---
 title: Use customer managed keys for cloud flows
 description: Learn how to use customer managed keys (CMK) for cloud flows in Power Automate to enhance data security and meet compliance requirements.
-#customerIntent: As an administrator, I want to use customer managed keys for cloud flows in Power Automate so that I can enhance data security and meet compliance requirements.
+#customer intent: As an admin, I want to use customer managed keys for cloud flows so that I can enhance data security and meet compliance requirements.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice
@@ -17,7 +17,7 @@ search.audienceType:
 
 Customer managed keys (CMK) within the context of cloud flows in Power Automate enable organizations to use their own encryption keys to encrypt and protect data within their flows. CMK provides enhanced control over the encryption keys and meets compliance requirements for data security and privacy. 
 
-## What is CMK?
+## What is CMK
 
 Customer managed keys (CMK) enable organizations to manage their own encryption keys, typically using a key management service such as Azure Key Vault. By using CMK, organizations can:
 

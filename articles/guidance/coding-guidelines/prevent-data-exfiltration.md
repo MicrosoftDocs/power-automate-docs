@@ -1,7 +1,7 @@
 ---
 title: Prevent data exfiltration
 description: Learn how to prevent data exfiltration in Power Platform environments to ensure compliance and secure your data.
-#customerIntent: As an administrator, I want to prevent data exfiltration in Power Platform environments so that I can ensure compliance and secure my data.
+#customer intent: As an admin, I want to prevent data exfiltration in Power Platform environments so that I can ensure compliance and secure my data.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice

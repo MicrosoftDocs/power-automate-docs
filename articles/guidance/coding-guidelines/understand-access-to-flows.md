@@ -1,7 +1,7 @@
 ---
 title: Understand access to Power Automate flows
 description: Discover the benefits of using service principal names (SPNs) for managing Power Automate flows and maintaining compliance.
-#customerIntent: As a Power Automate user, I want to understand the differences between service principal and user account ownership so that I can manage Power Automate flows effectively.
+#customer intent: As an admin, I want to understand the different ownership models for Power Automate flows so that I can maintain stability, security, and compliance.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice

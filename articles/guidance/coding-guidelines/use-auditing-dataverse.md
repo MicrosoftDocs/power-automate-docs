@@ -1,7 +1,7 @@
 ---
 title: Use auditing in Microsoft Dataverse and Microsoft Purview
 description: Learn how to use auditing in Microsoft Dataverse and Microsoft Purview to meet compliance and security policies.
-#customerIntent: As an administrator, I want to use auditing capabilities of both Microsoft Dataverse and Microsoft Purview so that I can meet auditing, compliance, security, and governance policies.
+#customer intent: As an admin, I want to use auditing in Microsoft Dataverse so that I can meet compliance and security policies.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice

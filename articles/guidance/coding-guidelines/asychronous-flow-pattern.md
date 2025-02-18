@@ -1,6 +1,7 @@
 ---
 title: Use an asynchronous flow pattern
 description: Learn how to use the asynchronous flow pattern in Power Automate to handle long-running processes efficiently.
+#customer intent: As a Power Automate user, I want to configure an asynchronous flow pattern so that I can handle long-running processes efficiently.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice
