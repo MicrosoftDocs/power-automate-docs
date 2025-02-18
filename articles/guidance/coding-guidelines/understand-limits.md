@@ -1,11 +1,11 @@
 ---
 title: Understand platform limits and avoid throttling
 description: Understand Power Automate and Power Platform limits and licensing to design scalable flows and avoid throttling.
-#customer intent: As an admin, I want to understand Power Automate and Power Platform limits so that I can design scalable flows and avoid throttling.
+#customer intent: As a Power Automate user, I want to understand Power Automate and Power Platform limits, including licensing capabilities, so that I can design scalable flows and avoid throttling.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/06/2025
+ms.date: 02/18/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 search.audienceType: 

@@ -1,11 +1,11 @@
 ---
 title: Secure data used in cloud flows
 description: Learn best practices for securing sensitive data in Power Automate cloud flows, including using Azure Key Vault and enabling secure inputs and outputs.
-#customer intent: As an admin, I want to secure sensitive data in Power Automate cloud flows so that I can prevent unauthorized access and ensure compliance with data protection standards.
+#customer intent: As a Power Automate user, I want to secure sensitive data in Power Automate cloud flows so that I can prevent unauthorized access and ensure compliance with data protection standards.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/06/2025
+ms.date: 02/18/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 

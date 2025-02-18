@@ -1,16 +1,16 @@
 ---
 title: Troubleshoot cloud flows
 description: Learn how to troubleshoot cloud flows in Power Automate, identify failures, and review error messages to ensure smooth operation.
-#customer intent: As an admin, I want to troubleshoot cloud flows so that I can ensure smooth operation in Power Automate.
+#customer intent: As a Power Automate user, I want to identify where a flow failed so that I can review error messages and resolve issues.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/06/2025
+ms.date: 02/18/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
-contributors: 
+contributors:
   - manuelap-msft
-search.audienceType: 
+search.audienceType:
   - admin
   - flowmaker
 ---

@@ -1,11 +1,11 @@
 ---
 title: Optimize Power Automate triggers
 description: Enhance your Power Automate flows by optimizing triggers. Learn about polling and webhook triggers, setting conditions, and managing concurrency control.
-#customer intent: As an admin, I want to optimize Power Automate triggers so that my flows run efficiently.
+#customer intent: As a Power Automate user, I want to optimize Power Automate triggers so that my flows run efficiently.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/05/2025
+ms.date: 02/18/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 

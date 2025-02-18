@@ -1,11 +1,11 @@
 ---
 title: Use and create scopes
 description: Learn how to use and create scopes in Power Automate to manage complex workflows and effectively troubleshoot.
-#customer intent: As a Power Automate user, I want to understand how to use scopes so that I can manage complex workflows effectively.
+#customer intent: As a Power Automate user, I want to organize my flows using scopes so that I can manage complex workflows effectively.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/03/2025
+ms.date: 02/18/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 

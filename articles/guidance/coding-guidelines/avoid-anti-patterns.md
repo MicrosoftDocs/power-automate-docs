@@ -1,11 +1,11 @@
 ---
 title: Avoid anti-patterns
 description: Learn how to avoid common anti-patterns in cloud flows to improve performance and resource efficiency.
-#customer intent: As an admin, I want to avoid anti-patterns in cloud flows so that I can improve performance and resource efficiency.
+#customer intent: As a Power Automate user, I want to avoid anti-patterns in cloud flows so that I can optimize performance and resource efficiency.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/03/2025
+ms.date: 02/18/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 

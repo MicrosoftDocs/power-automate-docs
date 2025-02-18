@@ -1,11 +1,11 @@
 ---
 title: Create reusable code for child flows
 description: Learn how to create reusable code using child flows in Power Automate to streamline your automation processes and enhance maintainability.
-#customer intent: As an admin, I want to create reusable code for child flows so that I can streamline automation processes and enhance maintainability.
+#customer intent: As a Power Automate user, I want to create reusable code using child flows so that I can create modular and scalable automation solutions.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/03/2025
+ms.date: 02/18/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 

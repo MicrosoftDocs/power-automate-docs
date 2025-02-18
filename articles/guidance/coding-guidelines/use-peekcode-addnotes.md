@@ -1,11 +1,11 @@
 ---
 title: Leverage Power Automate features
 description: Learn how to use Power Automate features like code view, notes, and copy and paste actions to streamline your workflow creation process.
-#customer intent: As an admin, I want to leverage Power Automate features so that I can streamline workflow creation.
+#customer intent: As a Power Automate user, I want to leverage Power Automate features so that I can streamline workflow creation.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/06/2025
+ms.date: 02/18/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 search.audienceType: 

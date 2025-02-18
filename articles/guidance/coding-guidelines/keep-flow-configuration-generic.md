@@ -1,11 +1,11 @@
 ---
 title: Keep flow configuration generic
 description: Improve security and simplify management of Power Automate flows using environment variables and service principals.
-#customer intent: As an admin, I want to keep flow configurations generic so that I can improve security and simplify management.
+#customer intent: As a Power Automate user, I want to keep flow configurations generic so that I can improve security and simplify management.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/04/2025
+ms.date: 02/18/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -25,9 +25,7 @@ When you export a Power Automate flow via a solution or as a zip package, it's e
 
 ## Service principals
 
-A [service principal](/entra/identity-platform/app-objects-and-service-principals) is a nonhuman security identity that represents an application or service capable of owning and managing resources within Microsoft Azure and Microsoft Power Platform. 
-
-<!--Not sure above link is beneficial?-->
+A service principal is a nonhuman security identity that represents an application or service capable of owning and managing resources within Microsoft Azure and Microsoft Power Platform. 
 
 To use a service principal in Power Platform, you need to create a service principal application user. You can create a service principal application user through the portal or through the API. An application user can have connections shared with them and can own resources such as flows.
 

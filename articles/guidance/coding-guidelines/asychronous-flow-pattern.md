@@ -1,11 +1,11 @@
 ---
 title: Use an asynchronous flow pattern
 description: Learn how to use the asynchronous flow pattern in Power Automate to handle long-running processes efficiently.
-#customer intent: As a Power Automate user, I want to configure an asynchronous flow pattern so that I can handle long-running processes efficiently.
+#customer intent: As a Power Automate user, I want to configure a flow to send an asynchronous response so that I can manage long-running processes efficiently.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/03/2025
+ms.date: 02/18/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Use an asynchronous flow pattern
 
-When a parent flow or a Power App invokes a [child flow](/power-automate/create-child-flows), it must send a response back to the caller within 120 seconds. If the flow doesn't respond within this time frame, the caller experiences a timeout and an error occurs.
+When a parent flow or a Power App invokes a [child flow](/power-automate/create-child-flows), it must send a response back to the caller within 120 seconds. If the flow doesn't respond within this time frame, the caller experiences a time-out and an error occurs.
 
 To ensure that the caller doesn't wait indefinitely for a response, you can configure the flow to send an asynchronous response. By setting the flow to respond asynchronously, the caller receives an immediate acknowledgment that the request is being processed. 
 
@@ -35,7 +35,7 @@ Follow these steps to configure the asynchronous response:
 1. Add the required actions to your cloud flow.
 1. Add the **Response** action to your cloud flow.
 
-    :::image type="content" source="media/async-1.png" alt-text="Screenshot of a cloud flow showing the Response action" lightbox="media/async-1.png":::
+    :::image type="content" source="media/async-1.png" alt-text="Screenshot of a cloud flow showing the Response action." lightbox="media/async-1.png":::
 
 
 1. Select the **Response** action, select **Settings**, and toggle **Asynchronous response** to on.

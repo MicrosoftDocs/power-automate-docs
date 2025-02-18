@@ -1,11 +1,11 @@
 ---
 title: Power Automate coding guidelines
 description: Learn best practices for building Power Automate flows with coding guidelines. Improve consistency, performance, and maintainability.
-#customer intent: As an admin, I want to learn Power Automate coding guidelines so that I can ensure flow quality and maintainability.
+#customer intent: As a Power Automate user, I want to learn best practices for building and maintaining efficient cloud flows.
 author: manuelap-msft
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 02/03/2025
+ms.date: 02/18/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 search.audienceType: 
