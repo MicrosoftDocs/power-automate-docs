@@ -55,11 +55,11 @@ To change the default behavior, create the following registry values. You need a
 
 Automatic updates don't run when:
 
-- The Power Automate service is configured to run with a custom account. Learn more in [change the on-premises service account](./troubleshoot.md#change-the-on-premises-service-account).
-- A local or cloud-orchestrated desktop flow run is currently executing on the machine.
-- The Power Automate for desktop designer, runtime application, installer, or troubleshooter is currently running.
+- The Power Automate service is running as a custom account. Learn more in [change the on-premises service account](./troubleshoot.md#change-the-on-premises-service-account).
+- A local or cloud-orchestrated desktop flow run is executing on the machine.
+- The Power Automate for desktop designer, runtime application, installer, or troubleshooter is running.
 - There's custom configuration in the `*.exe.config` files of the Power Automate install folder.
-  - If you require custom proxy configuration, set it in the `*.Proxy.config` files instead of the `*.exe.config` files. Learn more in [configure Power Automate for desktop proxy settings](./how-to/proxy-settings.md).
-  - If you require custom screen settings, define them in the registry instead of in the config files. Learn more in [set screen resolution for unattended mode](./how-to/set-screen-resolution-unattended-mode.md).
-- The machine is a member of a [hosted machine group](./hosted-machine-groups.md).
+  - If you need custom proxy configuration, set it in the `*.Proxy.config` files instead of the `*.exe.config` files. Learn more in [configure Power Automate for desktop proxy settings](./how-to/proxy-settings.md).
+  - If you need custom screen settings, define them in the registry instead of in the config files. Learn more in [set screen resolution for unattended mode](./how-to/set-screen-resolution-unattended-mode.md).
+- The machine belongs to a [hosted machine group](./hosted-machine-groups.md).
 - Power Automate for desktop was installed by extracting the MSI installer from the .exe bundle installer.
