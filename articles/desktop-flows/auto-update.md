@@ -49,11 +49,11 @@ To change from the default behavior, create the following registry values. This 
 ## Automatic updates limitations
 
 Automatic updates will not run when:
-- The Power Automate service has been configured to run with a custom account.
+- The Power Automate service has been configured to run with a custom account, see [change the on-premises service account](./troubleshoot#change-the-on-premises-service-account).
 - A local or cloud-orchestrated desktop flow run is currently executing on the machine.
 - The Power Automate for desktop designer, runtime application, installer or troubleshooter is currently running.
-- There is some custom configuration in the *.exe.config files of the Power Automate install folder:
+- There is custom configuration in the *.exe.config files of the Power Automate install folder:
   - If you require custom proxy configuration, they should be set in the *.Proxy.config files instead of the *.exe.config files. See [configure Power Automate for desktop proxy settings](./how-to/proxy-settings.md).
   - If you require custom screen settings, it should be defined in the registry instead of the config files. See [set screen resolution for unatttended mode](./how-to/set-screen-resolution-unattended-mode.md).
-- The machine is a member of a Hosted Machine Group.
+- The machine is a member of a [hosted machine group](./hosted-machine-groups.md).
 - Power Automate for desktop was installed by extracting the MSI installer from the .exe bundle installer.
