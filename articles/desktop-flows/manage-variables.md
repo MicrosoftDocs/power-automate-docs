@@ -4,7 +4,7 @@ description: See how to manage variables and the variables pane
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/20/2025
+ms.date: 02/19/2025
 ms.author: dbekirop
 ms.reviewer: matp
 contributors:
