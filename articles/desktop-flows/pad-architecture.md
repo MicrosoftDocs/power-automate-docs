@@ -1,13 +1,12 @@
 ---
 title: Power Automate for desktop architecture
 description: Power Automate for desktop architecture
-author: georgiostrantzas
-
+author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/24/2023
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 06/20/2024
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -21,8 +20,7 @@ search.audienceType:
 
 > [!IMPORTANT]
 >
-> - Selenium IDE is deprecated and will no longer work after February 28th, 2023. Migrate your flows to Power Automate for desktop or delete them.
-> - Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities.
+> - Gateways for desktop flows are no longer supported. Switch to our machine-management capabilities. Learn more about [switching from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
 
 There are two different methods that Power Automate can use to connect to the cloud services in order to receive flow execution jobs. The first option is direct connectivity, while the second option requires the on-premises data gateway to be installed.
 
@@ -43,7 +41,7 @@ The outgoing web requests from the **UIFlowService** on the desktop machine to A
 
 Destination IP addresses for Azure Relay can be found at [Azure IP Ranges and Service Tags](https://www.microsoft.com/download/details.aspx?id=56519) for the public cloud under the name **ServiceBus**. Similar documents are available for the other Azure national clouds. No inbound ports are required to be open on the desktop machine. 
 
-## Attended/Unattended desktop connectivity to the cloud service using the on-premises data gateway 
+## Attended/Unattended desktop connectivity to the cloud service using the on-premises data gateway
 
 > [!NOTE]
 > Power Automate now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Attended/Unattended desktop direct connectivity to the cloud service](pad-architecture.md#attendedunattended-desktop-direct-connectivity-to-the-cloud-service).
@@ -63,11 +61,9 @@ The details about this data flow are documented in [Adjust communication setting
 
 ## Other Power Automate outgoing web requests 
 
-Power Automate makes some additional outgoing web requests at runtime, which are documented in [Desktop flows services required for runtime](../ip-address-configuration.md#desktop-flows-services-required-for-runtime). 
+Power Automate makes some additional outgoing web requests at runtime, which are documented in [Desktop flow services required for runtime](../ip-address-configuration.md#services-required-for-desktop-flows-runtime).
 
 The CRL endpoints are only required if you use the on-premises data gateway. They use HTTP over port 80 and are initiated by the **UIFlowService**. 
-
-The WebDriver endpoints are only required if you use Selenium IDE desktop flows and have an automatically updating browser. These endpoints use HTTPS over port 443 and are initiated by the **Microsoft.Flow.RPA.Agent.exe** process using the user account that is running the desktop flow. 
 
 ## Session credential lifecycle
 

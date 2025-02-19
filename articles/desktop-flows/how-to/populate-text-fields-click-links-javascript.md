@@ -1,13 +1,13 @@
 ---
 title: Populate text fields and click on links using JavaScript
 description: Populate text fields and click on links using JavaScript
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 07/01/2021
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

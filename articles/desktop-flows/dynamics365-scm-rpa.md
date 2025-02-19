@@ -1,11 +1,11 @@
 ---
 title: Create orders on Dynamics 365 Supply Chain Management
 description: Automate quality order creation on Dynamics 365 Supply Chain Management with Robotic Process Automation
-author: georgiostrantzas
+author: mattp123
 ms.topic: conceptual
 ms.date: 11/15/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker
@@ -36,7 +36,7 @@ To accomplish the full automation, sign out of the application before running th
 
 ### Get the appropriate security role set up for the account running the automation
 
-You need to decide which work account will run the automation. It can be a dedicated account created by your admin in Azure Active Directory or the account of an existing employee. Check that the chosen account has the appropriate security roles to access the surfaces you're automating.  
+You need to decide which work account will run the automation. It can be a dedicated account created by your admin in Microsoft Entra ID or the account of an existing employee. Check that the chosen account has the appropriate security roles to access the surfaces you're automating.  
 
 We recommend the following security roles:
 

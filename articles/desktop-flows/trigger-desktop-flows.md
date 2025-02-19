@@ -1,13 +1,15 @@
 ---
 title: Trigger desktop flows from cloud flows
 description: See how to trigger Power Automate desktop flows from cloud flows.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/15/2023
+ms.date: 06/25/2024
 ms.author: pefelesk
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
+  - rpapostolis
+  - DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
@@ -17,19 +19,14 @@ search.audienceType:
 
 ## Prerequisites
 
-> [!IMPORTANT]
-> Gateways for desktop flows are now deprecated. This feature is no longer supported from June 30th, 2023, and for China regions from September 30th, 2023. [Learn more about the switch from gateways to direct connectivity.](manage-machines.md#switch-from-gateways-to-direct-connectivity)
-
 - A registered [machine](manage-machines.md) or [machine group](manage-machine-groups.md) that will run the triggered desktop flows. Machines are the physical or virtual devices you use to automate desktop processes. Machine groups allow you to handle multiple machines as one entity and distribute your automation workload.
 
 - A work or school account.
 
-   >[!IMPORTANT]
-   >You must use the same work or school account to sign in to Power Automate and to sign in to your Windows device.
-
 - A configured [desktop flow connection](desktop-flow-connections.md).
 
-- To run the triggered desktop flows in attended mode, you need an active Windows user session that matches the user's name of your desktop flow connection. In addition, the session must be unlocked. When an attended desktop flow starts on the target machine, avoid interacting with your device until the run completes.
+- To run the triggered desktop flows, you need to have the appropriate license (for attended runs) or an unattended add-on (for unattended runs). The user who needs to have the appropriate license is the creator of the connection.
+  
 
 ## Trigger a desktop flow from a cloud flow
 
@@ -85,5 +82,10 @@ To trigger a desktop flow from a cloud flow:
    > - The limit of the input size for a desktop flow is 2 MB (1 MB for China regions).
 
     :::image type="content" source="media/trigger-desktop-flows/run-desktop-flow-v2-action-properties-2.png" alt-text="Screenshot of the input variables in the Run a flow built with Power Automate for desktop action.":::
+
+## Known limitations
+
+- We currently support up to 70 desktop flows runs per minute for every connection.
+- Cancelling a parent cloud flow doesn't stop its child desktop flows if the **Asynchronous Pattern** is disabled under the 'Run a flow built with Power Automate for desktop' action settings.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

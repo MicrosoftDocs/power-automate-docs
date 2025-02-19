@@ -7,13 +7,12 @@ author: Grant-Archibald-MS
 editor: ''
 ms.custom: guidance
 
-ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
 ms.author: grarchib
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 ---
 
 # Limitations and resolutions for issues in the Automation Kit
@@ -98,6 +97,6 @@ Do any of the following tasks:
 >[!NOTE]
 >You can use a solution to extend the Automation Kit to sync all desktop flows in an environment with the [RPA CLI](https://aka.ms/rpacli).
 
-### See also
+## Related information
 
 [RPA CLI for the Automation Kit](https://aka.ms/rpaclie)

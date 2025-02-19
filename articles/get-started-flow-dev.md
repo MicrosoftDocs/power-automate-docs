@@ -4,12 +4,11 @@ description: Create a custom connector, share it, embed a cloud flow, and do muc
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
-ms.author: Deonhe
+author: v-aangie
+ms.author: angieandrews
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
@@ -19,7 +18,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ms.collection: get-started
-ms.reviewer: gtrantzas
+ms.reviewer: angieandrews
 ---
 
 # Extend apps with Power Automate

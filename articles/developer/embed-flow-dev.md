@@ -1,12 +1,12 @@
 ---
 title: Integrate Power Automate with websites and apps | Microsoft Docs
 description: Embed the Power Automate experiences into your website or app.
-author: MSFTMAN
+author: v-aangie
 ms.subservice: developer
-ms.topic: article
-ms.date: 02/02/2023
-ms.author: Deonhe
-ms.reviewer: gtrantzas
+ms.topic: conceptual
+ms.date: 10/10/2024
+ms.author: angieandrews
+ms.reviewer: angieandrews
 search.audienceType: 
   - developer
 ---
@@ -72,7 +72,7 @@ The following table shows the list of Power Automate widgets that support the fu
 | approvalCenter | Embeds approval requests and sent approvals.                                                                                        | 
 | templates      | Shows a list of templates. The user chooses one to create a new flow.                                                                         | 
 
-Use the authenticated Flow SDK to allow users to create and manage flows directly from your website or app (instead of navigating to  Power Automate). You'll need to sign the user in with their Microsoft Account or Azure Active Directory to use the authenticated SDK.
+Use the authenticated Flow SDK to allow users to create and manage flows directly from your website or app (instead of navigating to  Power Automate). You'll need to sign the user in with their Microsoft Account or Microsoft Entra to use the authenticated SDK.
 
 > [!NOTE]
 > There is no way to hide the Power Automate branding when you use widgets.
@@ -159,7 +159,7 @@ These are the parameters for `renderWidget()`:
 
 ### Access tokens
 
-After the JS SDK `renderWidget()` runs, the JS SDK initializes an iframe which points to the Power Automate widget URL. This URL contains all the settings in the query string parameters. The host application needs to get a Power Automate access token for the user (Azure Active Directory JWT token with audience `https://service.flow.microsoft.com`) before it initializes the widget. The widget raises a `GET_ACCESS_TOKEN` event to request an access token from the host. The host needs to handle the event and pass the token to the widget:
+After the JS SDK `renderWidget()` runs, the JS SDK initializes an iframe which points to the Power Automate widget URL. This URL contains all the settings in the query string parameters. The host application needs to get a Power Automate access token for the user (Microsoft Entra ID JWT token with audience `https://service.flow.microsoft.com`) before it initializes the widget. The widget raises a `GET_ACCESS_TOKEN` event to request an access token from the host. The host needs to handle the event and pass the token to the widget:
 
 ```javascript
 widget.listen("GET_ACCESS_TOKEN", function(requestParam, widgetDoneCallback) {
@@ -364,7 +364,7 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 
 ## Configuring your client application
 
-You will need to configure your client application with Flow Service Scopes (Delegated Permissions). If the Azure Active Directory (AAD) app used for the widget integration uses a 'code grant' authorization flow, the AAD app needs to be preconfigured with delegated permissions that are supported by Power Automate. This provides delegated permissions that let the application:
+You will need to configure your client application with Flow Service Scopes (Delegated Permissions). If the Microsoft Entra (Microsoft Entra ID) app used for the widget integration uses a 'code grant' authorization flow, the Microsoft Entra app needs to be preconfigured with delegated permissions that are supported by Power Automate. This provides delegated permissions that let the application:
 
 -   Manage approvals
 -   Read approvals
@@ -375,29 +375,29 @@ You will need to configure your client application with Flow Service Scopes (Del
 Follow these steps to select one or more delegated permissions:
 
 1.  Go to https://portal.azure.com 
-2.  Select **Azure Active Directory**.
+2.  Select **Microsoft Entra ID**.
 3.  Select **App registrations** under **Manage**.
 4.  Enter the third-party application to be configured for Flow service scopes.
 5.  Select **Settings**.
-      ![Screenshot locating the settings icon for the application.](../media/embed-flow-dev/AAD-App-Settings.png)
+      ![Screenshot locating the settings icon for the application.](../media/embed-flow-dev/Microsoft Entra ID-App-Settings.png)
 6. Select **Required permissions** under **API access**/
 7. Select **Add**.
 8. Choose **Select an API**.
-      ![Screenshot locating required permissions, add, and select an A P I.](../media/embed-flow-dev/AAD-App-Select-an-API.png)
-9. Search for **Power Automate service** and select it. Note: Before you can see Power Automate service, your tenant needs to  have at least one AAD user signed into the Flow portal (<https://make.powerautomate.com>)
+      ![Screenshot locating required permissions, add, and select an A P I.](../media/embed-flow-dev/Microsoft Entra ID-App-Select-an-API.png)
+9. Search for **Power Automate service** and select it. Note: Before you can see Power Automate service, your tenant needs to  have at least one Microsoft Entra user signed into the Flow portal (<https://make.powerautomate.com>)
 10. Choose the required Flow scopes for your application then select **Save**.
-      ![Screenshot showing the delegated permissions.](../media/embed-flow-dev/AAD-App-DelegatedPermissions.png)
+      ![Screenshot showing the delegated permissions.](../media/embed-flow-dev/Microsoft Entra ID-App-DelegatedPermissions.png)
 
 Your application will now get a Flow Service token that contains delegated permissions in the \'scp' claim in the JWT token.
 
 ## Sample application embedding flow widgets 
 
-A sample JavaScript Single Page Application (SPA) is provided in the resources section so you can experiment with embedding flow widgets in a host page. Using the sample application requires registering an AAD application with implicit grant flow enabled.
+A sample JavaScript Single Page Application (SPA) is provided in the resources section so you can experiment with embedding flow widgets in a host page. Using the sample application requires registering a Microsoft Entra application with implicit grant flow enabled.
 
-### Registering an AAD app
+### Registering a Microsoft Entra app
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/).
-2.  In the left navigation pane, select **Azure Active Directory**, then select **App registrations** (Preview) \> New registration.
+2.  In the left navigation pane, select **Microsoft Entra**, then select **App registrations** (Preview) \> New registration.
 3.  When the **Register an application** page appears, enter a name for your application.
 4.  Under **Supported account types**, select **Accounts** in any organizational directory.
 5.  Under the **Redirect URL** section, select the web platform and set the value to the application\'s URL based on your web server.  Configure this value to http://localhost:30662/ to run the sample app.
@@ -418,13 +418,11 @@ A sample JavaScript Single Page Application (SPA) is provided in the resources s
     > \> npm install 
     > \> node server.js
 5. Open the browser and then enter http://localhost:30662
-6. Select the **Sign in** button to authenticate to AAD and acquire a cloud flow access token.
+6. Select the **Sign in** button to authenticate to Microsoft Entra and acquire a cloud flow access token.
 7. The **Access Token** text box contains the access token.
     ![Screenshot showing the access token box containing an access token.](../media/embed-flow-dev/SampleApp-AccessToken.png)
 8. Select **Load Flows widget** or **Load Templates widget** to embed the corresponding widgets.
     ![Screenshot showing buttons to embed the Load Flows widget or the Load Templates widget.](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
-
-Sample application [download link](https://procsi.blob.core.windows.net/docs/FlowWidgetSampleApp.zip).
 
 ## Resources
 
@@ -485,6 +483,6 @@ If the initialized locale isn't listed, Flow will default to the closest support
 | uk-ua      | Ukrainian (Ukraine)        | 
 | vi-vn      | Vietnamese (Viet Nam)      |
 
-Use of the Power Automate Embed SDK is covered under [the Microsoft Software License Terms](https://dynamics.microsoft.com/legaldocs/slt-dynamics365-sdk/).
+Use of the Power Automate Embed SDK is covered under [the Microsoft Software License Terms](https://go.microsoft.com/fwlink/?linkid=2108407).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

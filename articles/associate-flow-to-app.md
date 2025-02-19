@@ -1,14 +1,15 @@
 ---
 title: Associate flows with apps
 description: Learn how to associate automated and scheduled flows with apps in Power Apps and with Dynamics 365 apps.
-author: PriyaKodukula
+author: ChrisGarty
 contributors:
-  - PriyaKodukula
+  - ChrisGarty
+  - lancedMicrosoft
   - v-aangie
-ms.author: prkoduku
+ms.author: cgarty
 ms.reviewer: angieandrews
 ms.topic: how-to
-ms.date: 05/08/2023
+ms.date: 11/21/2024
 ms.custom:
 ---
 
@@ -90,11 +91,17 @@ This is a known issue. If a flow has a Power Apps trigger, the apps that use tha
 
 A Power Apps per app license allows for a limited set of Power Automate capabilities. If the flow is supporting an app in Power Apps, associate the flow with the app. After the association is made, users who have a Power Apps per app license can use the flow.
 
+### Why are my end-user's Power Automate flow connections not working in Power Apps?
+
+It might be that the connection for the current user has become unauthenticated. For instance, the user might have changed their password. The flow will continuously fail. Power Apps doesn't try to automatically repair these connections or re-prompt the end user for updated credentials. This is a known issue for Microsoft SharePoint Online and non-Entra based connections. Refreshing the session might work. Alternatively, you might need to wrap the flow in an `IfError()` and in the failure case, invoke all the dependent connections directly to trigger reauthentication and then rerun the flow.
+
 ### I'm an admin and want to associate flows and apps in bulk. Is there an admin command?
 
-Use the PowerShell command in [How can I associate in context flows to Power Apps/Dynamics365 apps](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-power-appsdynamics365-apps) in the *Frequently asked questions about Power Automate licensing* article.
+Use the PowerShell command [Add-AdminFlowPowerAppContext](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app) to associate flows and apps in bulk.
 
-### See also
+This is also described in the [How can I associate in-context flows to Power Apps/Dynamics 365 apps?](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-power-appsdynamics-365-apps) section of the [Power Automate licensing FAQ](/power-platform/admin/power-automate-licensing/faqs).
+
+## Related information
 
 - [How can I associate in context flows to Power Apps/Dynamics365 apps](/power-platform/admin/power-automate-licensing/faqs#how-can-i-associate-in-context-flows-to-power-appsdynamics365-apps)
 - [Can I use service principal in flows, and does it count against my request limits?](/power-platform/admin/power-automate-licensing/types#can-i-use-service-principal-in-flows-and-does-it-count-against-my-request-limits)

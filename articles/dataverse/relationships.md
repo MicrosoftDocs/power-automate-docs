@@ -4,12 +4,11 @@ description: "Use Microsoft Dataverse relationships to modify rows."
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMan
+author: v-aangie
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na

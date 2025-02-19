@@ -1,13 +1,14 @@
 ---
 title: Manage machines
 description: Manage machines
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/21/2023
+ms.date: 01/14/2025
 ms.author: kenseongtan
-ms.reviewer: marleon
+ms.reviewer: matp
 contributors:
+- rpapostolis
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -59,11 +60,12 @@ Your machine is automatically registered on the currently selected environment i
 
 > [!NOTE]
 >
-> - To successfully register a machine, ensure the services specified in [IP address configuration](../ip-address-configuration.md#desktop-flows-services-required-for-runtime) are accessible.
+> - To successfully register a machine, ensure the services specified in [Desktop flow services required for runtime](../ip-address-configuration.md#services-required-for-desktop-flows-runtime) are accessible.
 > - You need an **Environment Maker** or **Desktop Flow Machine Owner** role to register machines. Before registering a machine, ensure you have the required permissions and an available environment to register the new machine.
 > - In the case of a virtual machine, don't clone the virtual machine after installing Power Automate machine runtime.
 > - Machines aren't affected by changes in the Power Automate for desktop organization.
 > - Although you can create and debug desktop flows in Teams environments, you can't register machines in them.
+> - If you reset your PC, your machine registration will be lost.
 
 ## Update running environment for your machine
 
@@ -91,6 +93,12 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 > - To apply this functionality, you need a [premium per-user plan with attended RPA](https://make.powerautomate.com/pricing/).
 > - When you create a desktop flow connection, you allow Power Automate to create a Windows session on your machine to run your desktop flows. Make sure you trust co-owners of your flows before using your connection in a flow.
 > - If you consistently encounter issues when creating a connection on a new machine, first try to remove it, and then [register it](/power-automate/desktop-flows/manage-machines#register-a-new-machine) again.
+
+## Enable your machine for unattended mode
+
+To trigger desktop flows in unattended mode on your machine, you need some unattended bots on the machine. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform.
+
+To create unattended bots, allocate process capacity or unattended RPA capacity to your machine. Learn how to [allocate process capacity as an unattended bot](capacity-process.md) on a machine.
 
 ## Maintenance mode for machines
 
@@ -177,6 +185,27 @@ You can share a machine with other users in your organization and give those use
 > [!NOTE]
 > When a user isn't part of an environment anymore, you'll continue seeing the user as deactivated. You'll be notified in the **Manage access** section of the machine if it's shared with deactivated users. In this situation, remove access to them.
 
+## Receive user session related recommendations (preview)
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+The **Receive user session related recommendations (preview)** setting sends orchestration-based notifications when an **unattended** desktop flow run is queued but can't start due to a locked or disconnected user session of the same user on the machine. When turned on, users receive an [Automation Center recommendation](../automation-center-recommendations.md) titled "Desktop flows not running" that details all affected desktop flow runs, allowing you to take corrective actions within a 10-minute timeout window.
+
+:::image type="content" source="media/manage-machines/user-orchestration-recommendation.png" alt-text="Screenshot of an orchestration-related recommendation in Automation center showing a user session disconnect request." lightbox="media/manage-machines/user-orchestration-recommendation.png":::
+
+### Supported actions
+
+|Action|Details|
+|-------|---|
+| Disconnect users | Disconnect the users of the selected active runs. |
+| Flow details | Opens the flow details page of the desktop flow listed on the the selected run. |
+| Run details | Opens the desktop flow run details page of the desktop flow listed on the selected run. |
+| Refresh | Refreshes the active run list. |
+
+### Who receives user-session based recommendations
+
+To receive user orchestration recommendations in the Automation Center, you must own the desktop flow connection that created and assigned the desktop flow connection within a cloud flow.
+
 ## Delete a machine
 
 Although you can't delete a machine from the Power Automate machine runtime, you can do it from the Power Automate portal:
@@ -192,7 +221,7 @@ Although you can't delete a machine from the Power Automate machine runtime, you
 ## Switch from gateways to direct connectivity
 
 > [!IMPORTANT]
-> Gateways for desktop flows are now deprecated. This feature is no longer supported from June 30th, 2023, and for China regions from September 30th, 2023. Switch to our machine-management capabilities.
+> Gateways for desktop flows are no longer supported. Switch to our machine-management capabilities.
 
 > [!NOTE]
 > To determine which desktop flow connections that are still using a gateway:
@@ -245,4 +274,4 @@ Environment admins can also restrict machine registration to a specific set of u
 |---|---|
 |Maximum number of machines in a group |50|
 |Maximum amount of time a desktop flow can run |24 hours|
-|Maximum amount of time a desktop flow can be queued |Three hours|
+|Maximum amount of time a desktop flow can be queued |Six hours|

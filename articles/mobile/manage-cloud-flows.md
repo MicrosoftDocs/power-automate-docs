@@ -10,7 +10,7 @@ contributors:
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 06/05/2023
-ms.author: napienko
+ms.author: jamiller
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -80,7 +80,7 @@ You can also toggle **Enable** here to turn the flow on or off.
 
 :::image type="content" source="../media/mobile/flow-details.png" alt-text="Screenshot of flow details and run history.":::
 
-### See also
+## Related information
 
 [Power Automate mobile app overview](overview-mobile.md)
 

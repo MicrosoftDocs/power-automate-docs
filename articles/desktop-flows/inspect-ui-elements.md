@@ -1,10 +1,10 @@
 ---
-title: Inspect a UI element (preview)
+title: Inspect a UI element
 description: Inspect a UI element in Power Automate for desktop that allows you to explore the hierarchy tree of all UI elements on your screen.
 author: nikosmoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/11/2023
+ms.date: 10/19/2023
 ms.author: nimoutzo
 ms.reviewer: ndoelman, matp, angieandrews
 contributors:
@@ -15,20 +15,16 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Inspect a UI element (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
+# Inspect a UI element
 
 The inspect UI element tool is a powerful feature in Power Automate for desktop that allows you to explore the hierarchy tree of all UI elements on your screen, check their attributes and values, and capture them for use in your desktop flow through the UI and browser automation actions.
 
-> [!IMPORTANT]
-> This is a preview feature.
-
 ## Open the inspect UI elements tool
 
-To open the inspect UI element tool, locate the designer component of Power Automate for desktop, and then go to the UI element repository. Select the **Add UI element** from the dropdown list, and then select the **Inspect UI elements** option.
-
-:::image type="content" source="media/Inspect UI Elements/InspectUIElements_1.png" alt-text="Open the inspect UI elements tool":::
+To open the inspect UI element tool, there are three approaches:
+- Locate the designer component of Power Automate for desktop, and then go to the UI element repository. Select the **Add UI element** from the dropdown list and launch the UI element picker. Then, in the UI element picker window, select the **Inspect UI elements** arrow.
+- Locate the designer component of Power Automate for desktop, and then go to the UI element repository. Select the dropdown list and then select the **Inspect UI elements** option.
+- In the designer window, navigate to the **Tools** option in the menu bar and select the **Inspect UI elements** option.
 
 ## Description of inspect UI elements tool
 
@@ -43,7 +39,7 @@ Selecting a UI element in the hierarchy tree displays its attributes and values 
 
 :::image type="content" source="media/Inspect UI Elements/InspectUIElements_Attributes.png" alt-text="Check UI element attributes":::
 
-You can capture the selected UI element and store it in the UI element repository of the desktop flow by selecting **Add UI element** on the top of the tool. This UI element can then be used in a UI automation or browser automation action respectively, depending on its type (desktop or web UI element).
+You can capture one or more UI elements and store them in the UI element repository of the desktop flow by hovering to the left of a UI element in the hierarchy tree and checking those you desire. Then, you can select the **Add UI element** on the top of the tool. The captured UI elements can then be used in a UI automation or browser automation action respectively, depending on its type (desktop or web UI element).
 
 :::image type="content" source="media/Inspect UI Elements/InspectUIElements_Addtoflow.png" alt-text="Add UI element to flow":::
 
@@ -59,7 +55,7 @@ While the inspect UI elements tool is opened, the Power Automate for desktop hig
 
 - **Issue:** Hierarchy tree of specific web browser pages can't be displayed in the tool when the browser window containing them is minimized.
 
-    **Workaround:** Ensure the web browser window that you desire to inspect isn't minimized on your machine.
+    **Workaround:** Ensure the web browser window that you want to inspect isn't minimized on your machine.
 - **Issue:** Specific web browser's tree of UI elements can't be displayed in the tool if the Microsoft Power Automate web extension isn't installed and enabled.
 
   **Workaround:** Ensure that the Microsoft Power Automate web extension is installed and enabled in the respective web browser.
@@ -70,7 +66,7 @@ While the inspect UI elements tool is opened, the Power Automate for desktop hig
 
   **Workaround:** Ensure that Power Automate agent for virtual desktops component is installed, up and running in the respective virtual machine.
   
-### See also
+## Related information
 
 [Automate using UI elements](ui-elements.md)
 

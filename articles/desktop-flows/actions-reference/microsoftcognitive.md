@@ -1,14 +1,14 @@
 ---
 title: Microsoft cognitive actions reference
 description: See all the available Microsoft cognitive actions.
-author: georgiostrantzas
-
+author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 11/08/2023
+ms.author: dipapa
+ms.reviewer: matp
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -16,10 +16,12 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Microsoft cognitive actions
 
-Microsoft cognitive services enable you to accelerate decision-making using artificial intelligence without requiring machine learning expertise.
+Azure Cognitive Services enables you to accelerate decision-making using artificial intelligence without requiring machine learning expertise.
+
+> [!IMPORTANT]
+> Azure is retiring [Azure Cognitive Services Text Analytics v2.x on 29 February 2024](https://azure.microsoft.com/updates/we-are-retiring-azure-cognitive-services-text-analytics-v2x-on-29-february-2024/). This library is used by the **Microsoft Cognitive Text Analytics actions**. After February 29, 2024 those actions will no longer be supported in desktop flows and will not be operational.
 
 Desktop flows provide a wide variety of Microsoft cognitive actions that allow you to integrate this functionality into your desktop flows. Text analysis, computer vision, and spell-checking are all tasks that Microsoft cognitive actions can perform.
 
@@ -29,7 +31,7 @@ All Microsoft cognitive actions require a subscription key that validates your s
 
 ## <a name="spellcheck"></a> Spell check
 
-Invokes the Microsoft Cognitive service named 'Bing Spell Check'.
+Invokes the Microsoft Cognitive service named 'Bing Spell Check.'
 
 ### Input parameters
 
@@ -57,7 +59,7 @@ Invokes the Microsoft Cognitive service named 'Bing Spell Check'.
 
 ## <a name="analyzeimagemicrosoft"></a> Analyze image
 
-Invokes the Microsoft Cognitive service named 'Analyze Image'.
+Invokes the Microsoft Cognitive service named 'Analyze Image.'
 
 ### Input parameters
 
@@ -89,7 +91,7 @@ Invokes the Microsoft Cognitive service named 'Analyze Image'.
 
 ## <a name="describeimagemicrosoft"></a> Describe image
 
-Invokes the Microsoft Cognitive service named 'Describe Image'.
+Invokes the Microsoft Cognitive service named 'Describe Image.'
 
 ### Input parameters
 
@@ -119,7 +121,7 @@ Invokes the Microsoft Cognitive service named 'Describe Image'.
 
 ## <a name="ocrmicrosoft"></a> OCR
 
-Invokes the Microsoft Cognitive service named 'OCR'.
+Invokes the Microsoft Cognitive service named 'OCR.'
 
 ### Input parameters
 
@@ -150,7 +152,7 @@ Invokes the Microsoft Cognitive service named 'OCR'.
 
 ## <a name="tagimagemicrosoft"></a> Tag image
 
-Invokes the Microsoft Cognitive service named 'Tag Image'.
+Invokes the Microsoft Cognitive service named 'Tag Image.'
 
 ### Input parameters
 
@@ -179,7 +181,7 @@ Invokes the Microsoft Cognitive service named 'Tag Image'.
 
 ## <a name="detectlanguage"></a> Detect language
 
-Invokes the Microsoft Cognitive service named 'Text Analytics - Detect Language'.
+Invokes the Microsoft Cognitive service named 'Text Analytics - Detect Language.'
 
 ### Input parameters
 
@@ -206,7 +208,7 @@ Invokes the Microsoft Cognitive service named 'Text Analytics - Detect Language'
 
 ## <a name="keyphrases"></a> Key phrases
 
-Invokes the Microsoft Cognitive service named 'Text Analytics - Key Phrases'.
+Invokes the Microsoft Cognitive service named 'Text Analytics - Key Phrases.'
 
 ### Input parameters
 
@@ -234,7 +236,7 @@ Invokes the Microsoft Cognitive service named 'Text Analytics - Key Phrases'.
 
 ## <a name="sentiment"></a> Sentiment
 
-Invokes the Microsoft Cognitive service named 'Text Analytics - Sentiment'.
+Invokes the Microsoft Cognitive service named 'Text Analytics - Sentiment.'
 
 ### Input parameters
 
@@ -243,7 +245,7 @@ Invokes the Microsoft Cognitive service named 'Text Analytics - Sentiment'.
 |Server location|N/A|West US, West US 2, East US, East US 2, West Central US, South Central US, West Europe, North Europe, Southeast Asia, East Asia, Australia East, Brazil South, Canada Central, Central India, UK South, Japan East|West US|The server location to be used for this API call|
 |Subscription key|No|[Text value](../variable-data-types.md#text-value)||The subscription key to use for this API call|
 |Text|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||Text|
-|Language|Yes|[Text value](../variable-data-types.md#text-value)||The 2 letter ISO 639-1 representation of the language of the text(s)|
+|Language|Yes|[Text value](../variable-data-types.md#text-value)||The two letter ISO 639-1 representation of the language of the text(s)|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The time (in seconds) that the agent should wait for a connection to be established with the server, before it fails|
 
 ### Variables produced

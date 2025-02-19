@@ -1,35 +1,33 @@
 ---
-title: Use data operations in Power Automate (contains video)
+title: Use data operations in Power Automate
 description: Learn to perform operations such as create HTML tables, create CSV tables, compose, join, select, and filter arrays with Power Automate.
 suite: flow
-documentationcenter: na
-author: MSFTMan
+author: kisubedi
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 07/14/2022
+ms.topic: conceptual
+ms.date: 10/09/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
+
 # Use data operations
 
-In this article, you'll learn about some common data operations in Power Automate, such as compose, join, select, filter arrays, create tables, and parse JSON. These are available to manipulate data when you create flows.
+In this article, you learn about some common data operations in Power Automate, such as compose, join, select, filter arrays, create tables, and parse JSON. Use these operations to manipulate data when you create flows.
 
 >[!NOTE]
->The different sections in this article aren't related and are not dependent upon each other. The different sections use different examples.
+>The different sections in this article aren't related and aren't dependent upon each other. The different sections use different examples.
 
 Here's a quick video about data operations.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKXdo]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4eb588b9-6468-4e0f-b07b-8af41f31f6ea]
 
 ## Prerequisites
 
-* Access to Power Automate.
-* A tool such as [PostMan](https://www.getpostman.com/postman) to send HTTP POST requests with a JSON array to your flow.
+- Access to [Power Automate](https://make.powerautomate.com).
+- A tool to send HTTP POST requests with a JSON array to your flow.
 
 ## Use the compose action
 
@@ -63,7 +61,7 @@ When you need to access the contents of the compose action, do so by following t
 
 ## Use the join action
 
-Use the **Data Operation - Join** action to delimit an array with the separator of your choice. For example, your flow receives a web request that includes the following array of email addresses: `["d@example.com", "k@example.com", "dal@example.com"]`. However, your email program requires addresses to be formatted in a single string, separated with semicolons. You'll use the **Data Operation - Join** action to change the comma delimiter (,) to a semicolon (;) by following these steps:
+Use the **Data Operation - Join** action to delimit an array with the separator of your choice. For example, your flow receives a web request that includes the following array of email addresses: `["d@example.com", "k@example.com", "dal@example.com"]`. However, your email program requires addresses to be formatted in a single string, separated with semicolons. You use the **Data Operation - Join** action to change the comma delimiter (,) to a semicolon (;) by following these steps:
 
 1. Add a new action, search for **Join**, and then select **Data Operation - Join**.
 
@@ -104,15 +102,13 @@ You want to reshape the incoming data by renaming `first` to `FirstName` and `la
 To do this:
 
 1. Add the **When an HTTP request is received** trigger to your flow.
-
-2. Select **Use sample payload to generate schema**.
+1. Select **Use sample payload to generate schema**.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of selecting the sample payload.](./media/data-operations/request-trigger.png "Use sample payload to generate schema")
 
-3. In the box that appears, paste a sample of your source data array, and then select **Done**.
-
-4. Add the **Data Operation – Select** action, and then configure it as shown in the following screenshot.
+1. In the box that appears, paste a sample of your source data array, and then select **Done**.
+1. Add the **Data Operation – Select** action, and then configure it as shown in the following screenshot.
 
    :::image type="complex" source="./media/data-operations/select-card-2.png" alt-text="Configure the select action.":::
    Screenshot showing the select action. From is set to Body. In the Map section, FirstName is set to first, FamilyName is set to last, and FullName is set to first and last, separated by a space.:::image-end:::
@@ -135,21 +131,14 @@ In this example, you use the filter array action on this array:
 [ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]
 ```
 
-to create a new array that contains only objects in which `first` is set to `Eugenia`.
+This example creates a new array that contains only objects in which `first` is set to `Eugenia`.
 
 1. Find, and then add, the **Filter array** action to your flow.
-2. Configure the filter array action as shown in the following screenshot.
+1. Configure the filter array action as shown in the following screenshot.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of in the From section, the first line is set to Body. In the second line, first is set equal to Eugenia.](./media/data-operations/add-configure-filter-array-2.png "Configure the Filter array")
-3. Save, and then run your flow.
-
-    You can use [PostMan](https://www.getpostman.com/postman) to generate a web request that sends a JSON array to your flow.
-4. When your flow runs, the output looks like the following array. Notice that only objects in which `first` is set to `Eugenia` are included in the output of the action.
-
-    ``` JSON
-    [ { "first": "Eugenia", "last": "Lopez" }]
-    ```
+1. Save, and then run your flow.
 
 ## Use the create CSV table action
 
@@ -165,7 +154,7 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
     >![Screenshot of Configuring the Create CSV table action. From is set to Body, and Columns is set to Automatic.](./media/data-operations/create-csv-table-2.png "Configure the CSV table action")
 
     The **Body** token in this image comes from a **When a HTTP request is received** action; however, you can get the input for the **Create CSV table** action from the output of any previous action in your flow, or you can enter it directly in the **From** box.
-2. Save, and then run, your flow.
+1. Save, and then run your flow.
 
     When your flow runs, the **Create CSV table** action displays the output shown in the following screenshot.
 
@@ -180,6 +169,11 @@ To do this, follow the steps in the previous **Use the create CSV table action**
 
 > [!TIP]
 > If you plan to send the HTML table via email, remember to select **IsHtml** in the email action.
+
+## Related information
+
+- [Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
+- [Training: Integrate Power Automate flows and Dataverse (learning path)](/training/paths/integrate-dataverse-power-automate/)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

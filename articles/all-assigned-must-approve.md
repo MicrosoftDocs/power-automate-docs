@@ -1,5 +1,5 @@
 ---
-title: Create an approval flow that requires everyone to approve(contains video)
+title: Create an approval flow that requires everyone to approve
 description: Learn how to create an approval flow that requires everyone to approve or one person to reject a request.
 services: ''
 suite: flow
@@ -11,13 +11,12 @@ contributors:
   - v-aangie
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/12/2023
-ms.author: napienko
+ms.author: jamiller
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -34,7 +33,7 @@ This type of approval workflow is useful in an organization that requires a pers
 
 Here's a quick video tutorial about approvals.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKXdq]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ac0eac35-a857-429a-9996-5ea92343872c]
 
 ## Prerequisites
 
@@ -141,7 +140,7 @@ Here's an example of what a response and a response summary may look like after 
 
 ![response tokens.](media/all-assigned-must-approve/response-output.png)
 
-### See also
+## Related information
 
 * [Single approver modern approvals](modern-approvals.md)
 * [Sequential modern approvals](sequential-modern-approvals.md)

@@ -1,13 +1,13 @@
 ---
 title: Automate using mouse & keyboard and OCR actions (recommended for automation in VDI)
 description: Automate using mouse & keyboard and OCR actions (recommended for automation in VDI)
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 11/17/2021
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

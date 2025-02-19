@@ -1,15 +1,17 @@
 ﻿---
 title: Copilot in Process Mining ingestion (preview)
 description: Learn how to identify your process during data ingestion and auto map your data to the required data schema.
-ms.date: 08/25/2023
+ms.date: 12/18/2023
 ms.topic: conceptual
 author: HeatherOrt
 contributors:
+  - janPidych
   - HeatherOrt
   - v-aangie 
 ms.custom: bap-template
-ms.author: heortaol
+ms.author: janpidych
 ms.reviewer: angieandrews
+ms.collection: bap-ai-copilot
 ---
 
 # Copilot in Process Mining ingestion (preview)
@@ -25,14 +27,21 @@ Copilot can perform the following actions:
 - Answer your questions about your process data.
 - Answer your general questions about processes.
 
-[!INCLUDE[cc_preview_features_definition_copilot_process_mining](./includes/cc-preview-features-definition-copilot-process-mining.md)]
 
-## Prerequisites
+> [!IMPORTANT]
+>- This feature is generally available only in the United States region, and is in preview for all other regions.
+>- Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+>- For more information, go to our [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520).
+>- This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
+>- More information: [FAQ for Copilot data security and privacy in Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
-You need a Power Platform environment in the United States or Preview (United States) region for Copilot in Process Mining.
+## Prerequisite
+
+You need a Power Platform environment for Copilot in Process Mining.
 
 > [!NOTE]
-> If your environment is in the United States or Preview (United States) region and you still don’t see the Copilot experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center.
+> - If you still don’t see the Copilot experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center.
+> - In some geographic regions outside United States, Australia, and United Kingdom, an admin needs to turn on the cross geo calls to enable Copilot. More information: [Copilot availability by region](get-started-with-copilot.md#availability-by-region).
 
 ## Ingest Data with Copilot
 
@@ -60,13 +69,13 @@ Follow these steps to ingest data with Copilot.
 
 ## Frequently asked questions
 
-For the list of questions for Copilot in Process Mining ingestion, go to [Frequently asked questions](./minit/process-mining-copilot-in-process-analytics.md#frequently-asked-questions).
+For the list of questions for Copilot in Process Mining ingestion, go to [Frequently asked questions](process-mining-copilot-in-process-analytics.md#frequently-asked-questions).
 
 ## Limitations of Copilot in Power Automate
 
-For a list of limitations of Copilot in Power Automate, go to [Limitations of Copilot in Power Automate](./minit/process-mining-copilot-in-process-analytics.md#limitations-of-copilot-in-power-automate).
+For a list of limitations of Copilot in Power Automate, go to [Limitations of Copilot in Power Automate](process-mining-copilot-in-process-analytics.md#limitations-of-copilot-in-power-automate).
 
-### See also
+## Related information
 
 - [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)

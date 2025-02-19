@@ -1,18 +1,16 @@
 ---
 title: Change the owner of a cloud flow in Power Automate | Microsoft Docs
 description: Learn how to change the owner of a solution-aware cloud flow in Power Automate.
-services: ''
 suite: flow
 author: kisubedi
 contributors:
  - ChrisGarty
  - kisubedi
  - v-aangie
-
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 07/14/2023
-ms.author: kisubedi
+ms.date: 03/01/2024
+ms.author: cgarty
 search.audienceType: 
   - flowmaker
   - enduser
@@ -47,17 +45,14 @@ Follow these steps to change the owner of a flow.
 > To perform this action, the flow must be a solution-aware flow.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-
 1. On the menu to the left, either select **My flows**, or select **Solutions** and locate a solution the flow is referenced by.
 non-
 1. Select the flow for which you're changing the owner.
-
 1. In the **Details** section, select **Edit**.
 
     :::image type="content" source="media/change-cloud-flow-owner/details-edit.png" alt-text="Screenshot of the edit button in the details section.":::
 
 1. In the **Owner** section, remove the current owner.
-
 1. Enter the email address of the new owner.
 
     Once assigned, the new owner gets access to the run history and connection references. The new owner can update the flow or reassign it to other users.
@@ -70,7 +65,10 @@ If the flow is a **manual** flow, the flow runs under the license of the user wh
 
 ## Change the owner of a non-solution cloud flow
 
-To change the ownership of a non-solution-aware cloud flow, you must create a new flow with export/import, **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows isn't available because the owner is part of the flow identity.
+In-place ownership change for non-solution-aware cloud flows isn't available because the owner is part of the flow identity.
+
+- If your environment has Dataverse, then the ideal way to change the ownership is to [add the flow into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution) so ownership can be changed.
+- If your environment doesn't have Dataverse, then you must create a new non-solution cloud flow with export/import, **Save as**, or **Send a copy**.
 
 ## Ownership and licensing
 
@@ -87,12 +85,15 @@ The following sections include various scenarios for changing ownership.
 ### Service Principal application users
 
 A [Service Principal](/azure/active-directory/develop/app-objects-and-service-principals#service-principal-object) is a non-human security identity that represents an application or service that can own and manage resources within Azure and the Power Platform. To use a Service Principal within the Power Platform, a Service Principal application user needs to be created that represents the service principal [through the portal](/power-platform/admin/create-users#create-an-application-user) or [through API](/power-platform/admin/manage-application-users). An application user can have connections shared with them and own resources such as flows.
+
 A Service Principal application user is a [non-interactive user](/power-platform/admin/create-users#create-a-non-interactive-user-account), so it can't have a user license associated with it. It's also subject to [non-licensed user limits](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits).
 
 ### Service Principal application user ownership of flows
 
 Power Automate has the ability for Service Principal application users to own and run flows to provide flexibility and stability in how organizations administer Power Automate flows. When the owners of flows change roles or leave the organization entirely, the ownership of a flow needs to be changed to a different user or set of users. If the owner of the flow is a Service Principal application user, then that ownership isn't tied to a user that could leave the organization.
+
 The flow [connections need to be shared](/power-apps/maker/canvas-apps/share-app-resources#connections) with the Service Principal application user in order for them to successfully run the flow.
+
 Since a Service Principal application user is a [non-interactive user](/power-platform/admin/create-users#create-a-non-interactive-user-account) without a user license, it's subject to [non-licensed user limits](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits) and has special [licensing and request limit implications](/power-platform/admin/power-automate-licensing/types#can-i-use-service-principal-in-flows-and-does-it-count-against-my-request-limits).
 
 ### Change the owner of a flow to a Service Principal application user
@@ -108,7 +109,7 @@ To change the owner of a flow to a Service Principal application user:
 
 To have a Service Principal own and run a flow, follow these steps.
 
-1. [Create a Service Principal application user](/power-platform/admin/create-users#create-an-application-user) representing the AAD Service Principal.
+1. [Create a Service Principal application user](/power-platform/admin/create-users#create-an-application-user) representing the Microsoft Entra Service Principal.
 1. [Share connections](/power-apps/maker/canvas-apps/share-app-resources#connections) with the Service Principal application user.
 1. Change the owner of the flow to the Service Principal application user using the steps detailed here: **Details** > **Edit** > **Owner**.
 1. [Turn on the flow](/power-automate/disable-flow) so it's ready to run.
@@ -116,9 +117,8 @@ To have a Service Principal own and run a flow, follow these steps.
 
     Examples are turning on [Pay As You Go](/power-platform/admin/power-automate-licensing/types#power-platform-requests-pay-as-you-go), [associating the flow to an app](/power-automate/associate-flow-to-app), or [considering a Power Automate Process license (previously Power Automate per flow)](/power-platform/admin/power-automate-licensing/types#what-can-i-do-if-my-flow-is-above-limits).
 
-### See also
+## Related information
 
+- [How to manage orphaned flows when the owner leaves the organization](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org)
 - [(Video) Microsoft Power Automate Tutorial - Export Import](https://www.youtube.com/watch?v=K7_xWJvEPUc)
-- [The owner of a flow left the organization. How can we ensure it works without interruptions?](/power-platform/admin/power-automate-licensing/faqs#the-owner-of-a-flow-left-the-company-how-can-we-ensure-it-works-without-interruptions#the-owner-of-a-flow-left-the-company-how-can-we-ensure-it-works-without-interruptions)
-
-
+- [The owner of a flow left the organization. How can we ensure it works without interruptions?](/power-platform/admin/power-automate-licensing/faqs#the-owner-of-a-flow-left-the-organization-how-can-we-ensure-it-works-without-interruptions)

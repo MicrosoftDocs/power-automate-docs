@@ -3,9 +3,9 @@ title: Work with desktop flows using code
 description: Developer guide to integrate desktop flows capabilities within their applications.
 author: benabbon
 ms.topic: article
-ms.date: 12/01/2022
+ms.date: 02/19/2024
 ms.author: nabena
-ms.reviewer: gtrantzas
+ms.reviewer: angieandrews
 ms.subservice: developer
 ---
 # Work with desktop flows using code
@@ -341,5 +341,9 @@ HTTP/1.1 403 Forbidden
     }
 }
 ```
+
+## Known limitations
+
+- We currently support up to 70 desktop flows runs per minute for every connection.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

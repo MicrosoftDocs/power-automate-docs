@@ -1,5 +1,5 @@
 ---
-title: Get started from a template (contains video) | Microsoft Docs
+title: Get started from a template | Microsoft Docs
 description: Learn how to create a cloud flow from any of many prebuilt templates.
 services: ''
 suite: flow
@@ -25,7 +25,7 @@ A good way to get started is to use a template that is suited to your organizati
 
 The following video gives insights into using templates to create your flows.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKZQv]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b8ff0396-8bfb-44a7-821a-a9bc2e136bb0]
 
 You can tweak templates by adding, editing, or removing triggers and actions to create your own flows. You can [copy paste actions](/business-applications-release-notes/april19/microsoft-flow/copy-paste-actions) in the same flow or across flows to speed up the your tweaks.
 
@@ -72,7 +72,7 @@ To complete this example, you need accounts with access to the following:
 
 Now, when your manager sends you an email, you receive a Slack message that contains the information that you specified.
 
-### See also
+## Related information
 
 - [Watch your flow in action](see-a-flow-run.md)
 - [Publish your own template](publish-a-template.md)

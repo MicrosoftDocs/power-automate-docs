@@ -4,11 +4,11 @@ description: Create and manage flows with Power Automate pane in Power Apps.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
-
+author: v-aangie
+ms.topic: conceptual
 ms.subservice: cloud-flow
 ms.date: 02/11/2022
-ms.author: deonhe
+ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

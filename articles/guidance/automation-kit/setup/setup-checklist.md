@@ -7,13 +7,12 @@ author: Grant-Archibald-MS
 editor: ''
 ms.custom: guidance
 
-ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
 ms.author: grarchib
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 ---
 
 # Automation Kit setup checklist
@@ -36,7 +35,7 @@ The following checklist provides an overview of the key steps, to assist you in 
 
 - Import the Power Platform Creator Kit (CreatorKitCore_x.x.x.x _managed).
 - Verify Creator Kit is installed correctly.
-- Created Azure AD app registration (Dataverse API) for each satellite.
+- Created Microsoft Entra app registration (Dataverse API) for each satellite.
 - Defined satellite environments (new or existing).
 - Created application users in all satellite environments.
 - Imported AutomationCoESatellite_x_x_x_x_managed.

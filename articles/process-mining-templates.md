@@ -26,7 +26,7 @@ By using templates in the process mining capability, organizations can quickly a
 
 ## Desktop flows template
 
-The Desktop Flows template analyzes the run history of flows created using [robotic process automation (RPA)](https://powerautomate.microsoft.com/robotic-process-automation/) in Power Automate. This template provides insights into the performance and compliance of RPA workflows. To learn more about desktop flows, please refer to the[Introduction to desktop flows](desktop-flows/introduction.md) documentation. 
+The Desktop Flows template analyzes the run history of flows created using [robotic process automation (RPA)](https://powerautomate.microsoft.com/robotic-process-automation/) in Power Automate. This template provides insights into the performance and compliance of RPA workflows. To learn more about desktop flows, please refer to the [Introduction to desktop flows](desktop-flows/introduction.md) documentation.
 
 By analyzing the run history of RPA flows, the Desktop Flows template can identify potential issues, such as errors or inefficiencies, and provide recommendations for improvement. This information can help organizations optimize their RPA workflows and improve overall performance. Additionally, the Desktop Flows template can help organizations ensure compliance with regulatory requirements by identifying potential violations and recommending corrective actions.
 
@@ -61,7 +61,7 @@ Learn how to [visualize and gain insights from processes](process-mining-visuali
 
 ## Power Virtual Agents template
 
-The Power Virtual Agents template is designed to analyze the performance and usage of your chatbots, providing insights into your users' journeys and helping you maximize the bots' effectiveness. To learn more about Power Virtual Agents, you can refer to the [Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
+The Power Virtual Agents template is designed to analyze the performance and usage of your chatbots, providing insights into your users' journeys and helping you maximize the bots' effectiveness. To learn more, go to [Microsoft Copilot Studio overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents) (formerly, Power Virtual Agents).
 
 ### Create and run the Power Virtual Agents template
 
@@ -157,7 +157,7 @@ The process mining capability will analyze your process. It might take up to two
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
-### See also
+## Related information
 
 - [Introduction to desktop flows](desktop-flows/introduction.md)  
 - [Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents)

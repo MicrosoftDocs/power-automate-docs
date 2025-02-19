@@ -3,21 +3,15 @@ title: Create flows that post adaptive cards to Microsoft Teams
 description: Learn how to create flows that post richly formatted content with adaptive cards to Microsoft Teams.
 services: ''
 suite: flow
-documentationcenter: na
 author: natalie-pienkowska
 contributors:
-  - natalie-pienkowska
+  - kewaiss
   - kartikraop
   - v-aangie
-editor: ''
-tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 01/13/2023
-ms.author: napienko
+ms.author: kewaiss
 ms.reviewer: angieandrews
 ---
 
@@ -27,35 +21,26 @@ Adaptive cards within Power Automate may either share blocks of information or c
 
 In either case, you'll need to sketch out which datasets you'll share, and/or what data the form will need to collect.
 
->[!TIP]
->Use simple blocks of data rather than complex table arrays.
+> [!TIP]
+> Use simple blocks of data rather than complex table arrays.
 
 ## Prerequisites
 
-- Microsoft Teams with the Power Automate app installed.
+Microsoft Teams with the Workflows app installed.
 
 ## Add an action
 
 In this procedure, you’ll add an action that will use the data from previous actions in the flow to post information to a Microsoft Teams channel.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-
 1. Select **My flows** in the top navigation bar.
-
 1. Select **New flow** > **Instant cloud flow**.
-
 1. Name your flow.
-
 1. Select **Manually trigger a flow** as the trigger.
-
 1. Select **Create**.
-
 1. In the designer, select **New Step**.
-
 1. Search for **Microsoft Teams**, and then select **Post an adaptive card to a Teams channel and wait for a response** as the action.
-
 1. Select the **Team** and the **Channel** to which you'd like to post the card.
-
 1. Paste this JSON into the **Message** box.
 
     ``` JSON
@@ -178,23 +163,23 @@ Congratulations! you’ve just made your first interactive adaptive card!
 
 The most common problems that you will encounter when creating adaptive cards are:
 
--   Flow run errors are often caused by one of the following factors:
+- Flow run errors are often caused by one of the following factors:
 
-    -  The Flow App is not installed in Microsoft Teams – Please [install the Flow App](https://make.powerautomate.com/blog/microsoft-flow-in-microsoft-teams) into Teams. 
-    
+    - The Workflows app isn't installed in Microsoft Teams – [Install the Workflows app in Microsoft Teams](teams/install-teams-app.md).
+
     In this case the error may resemble this screenshot:  
 
     ![Error message.](media/adaptive-cards/error-message.png)
 
-    -  Improperly formatted JSON – This is not usually as complex as one might expect. These are most often just situations where:
+    - Improperly formatted JSON – This is not usually as complex as one might expect. These are most often just situations where:
 
         - There are curly quotes, or missing quotes, around values within the JSON. Always check the JSON to ensure all text values are enclosed within double quotes, and that numbers are enclosed in quotation marks. All quotation marks should be straight and not curly.
 
         - You can validate the format of your JSON by pasting the JSON into the [Card Payload Editor](https://adaptivecards.io/designer/).
 
-    - Missing Image URLs – All image values within Adaptive Cards must refer to a valid URL. Full image content is not be directly supported in an Adaptive Card. Test your image links by pasting the URL into the browser to see if an image is displayed.
+    - Missing Image URLs – All image values within Adaptive Cards must refer to a valid URL. Full image content is not directly supported in an Adaptive Card. Test your image links by pasting the URL into the browser to see if an image is displayed.
 
-- Adaptive Cards may not look like what’s expected during to styling and schema constraints:
+- Adaptive Cards may not look like what’s expected due to styling and schema constraints:
 
     - Check that placeholder values, text styles, and any markup language align with Adaptive Card schema requirements (review **Adaptive Card schema best practices** [here](https://adaptivecards.io/explorer/))
 

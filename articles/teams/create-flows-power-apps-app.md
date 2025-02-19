@@ -1,15 +1,17 @@
 ---
 title: Create flows using the Power Apps app in Microsoft Teams | Microsoft Docs
 description: Create flows using the Power Apps app in Teams.
-author: msftman
-ms.devlang: na
+author: v-aangie
+contributors:
+  - kewaiss
+  - v-aangie
 ms.subservice: teams
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/16/2020
-ms.author: hamenon
-ms.reviewer: gtrantzas
+ms.author: kewaiss
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -79,7 +81,7 @@ In Teams, you might have acquired flows from an installed app or you might have 
 
    ![View the details of flows.](..\media\overview-teams-flows\view-details-history.png)
 
-### See also
+## Related information
 
 - [Use the new Power Apps app in Microsoft Teams](/powerapps/teams/create-apps-overview)<br/>
 - [What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)<br/>

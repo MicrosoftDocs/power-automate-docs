@@ -1,31 +1,35 @@
 ---
 title: Get started with Power Automate
-description: Learn how to navigate the Power automate home page.
-author: jamiemwork
+description: Learn how to navigate the Power Automate home page.
+author: kisubedi
 contributors:
+  - kisubedi
   - jamiemwork
-  - -kisubedi
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 09/06/2023
-ms.author: jamiller
+ms.date: 11/06/2024
+ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
-ms.collection: get-started
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ---
 
 # Get started with Power Automate
+
+Power Automate allows you to optimize your business processes across your organization and automate repetitive tasks. This service helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. It does this with the help of task mining and process mining.
+
+## Get started from the home page
 
 The Power Automate home page offers you various options for creating your own flows and learning about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate can help your business.
 
 If your organization has AI enabled, then it also includes the new Copilot features.
 
-To learn more, select the links below.
+To learn more, select the following links.
 
 :::image type="content" source="media/getting-started/home-full-numbers.png" alt-text="Screenshot of the new look of the home screen.":::
 
@@ -54,7 +58,7 @@ Legend:
 
 1. **Learn**: Learn experience takes you to the Power Automate product documentation.
 
-1. **My Flows**: If you've created a flow, or someone else has created one and shared it with you, you can view or edit it.
+1. **My Flows**: If you created a flow, or someone else created one and shared it with you, you can view or edit it.
 
 1. **Your most used pages**: When you first sign in, items such as **Approvals**, **Solutions**, **Process mining**, **AI models**, and **Desktop Flow Activity** appear in the left navigation menu by default. Use the **More** menu item to [unpin](#pin-and-unpin) any of these items and [pin](#pin-and-unpin) something else.
 
@@ -104,11 +108,57 @@ View your environment information and settings.
 
 ### Choose an environment
 
-For best results, start by ensuring that the home page is set to the correct environment.
+Environments create boundaries between different types of work. For example, an organization might have separate environments for different departments. Many organizations use environments to separate flows that are still being developed from those that are ready for widespread use. You might have access to multiple environments or only one. If you have the appropriate permissions, you might even be able to create your own environments.
 
-:::image type="content" source="media/getting-started/environment.png" alt-text="Screenshot of the 'Select environment' screen.":::
+To verify which environment you're in, find the environment switcher near the right side of the header.
 
-Environments can be managed using [Power Platform admin center](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center).
+:::image type="content" source="media/getting-started/environment-picker.png" alt-text="Environment switcher.":::
+
+With the environment selector, environments are grouped into two categories: **Build Flows** and **Other environments**. Select **Filter** to filter the list of environments by your role, data platform (Dataverse or none), and environment type, such as production or sandbox.
+
+:::image type="content" source="media/getting-started/environments-list.png" alt-text="Environment selector to filter and select an environment.":::
+
+Environments where you have either system administrator and/or system customizer security role membership appear under **Build flows.** The **Other environments** list displays environments where you have read-only permissions, and can access approvals.
+
+> [!TIP]
+> Hover over an environment in the list to view the details of the environment.
+
+**Filter environments by role**
+
+| **Filter role** | **Power Platform role or description** |
+|-------------------------|-------------------------|
+| Admin | System administrator<br /></br>Environment administrator |
+| Maker with data access | System administrator<br /></br>System customizer |
+| Maker without full data access | Environment maker (with or without Dataverse) |
+| Run only user | User without maker-level access |
+
+> [!NOTE]
+> - To view the environment list in the environment switcher in Power Automate, you must have the Environment Maker, System Customizer, or System Administrator security role in the environment. For information about predefined security roles, see [Predefined security roles](/power-platform/admin/database-security#predefined-security-roles) in the Microsoft Power Platform admin guide.
+> - Make sure that you're in the correct environment *before* you create a flow, an app, or a similar component. You can't easily move components from one environment to another.
+> - Every member in an organization can access the [default environment](/power-platform/admin/environments-overview#the-default-environment). Like any environment, users can see flows where they have sufficient privileges to access a flow.
+> - When you create a flow in one environment, you aren't able to see it from another environment.
+
+Learn more in [Environments overview](/power-platform/admin/environments-overview).
+
+#### FAQ about environments
+
+**Why does Power Automate show different environments compared to Power Apps?**
+
+Power Automate and Power Apps both show environments with administrator access and environment maker access.
+
+Power Apps shows environments with app contributor access, when users without a maker-level security role assigned but with edit permission to at least one canvas app in the environment. Learn more in [Choose an environment in Power Apps](/power-apps/maker/canvas-apps/sign-in-to-power-apps#choose-an-environment).
+
+Power Automate shows environments user can approve approvals. Users are granted read access to environments that have approvals.
+
+Since approvals are frequently used in Power Automate, users could have read access to many environments.
+
+**How do I get access to environments?**
+
+You can view access in the Power Platform admin center, by logging in using an account with environment administrator permissions. If you don't have administrator privileges, contact your administrator to obtain access.
+
+Once in admin center, select the **Users** and **Teams** options under the access panel, environment admin could find everyone/teams has access to the environment. Environment admin could also change the security roles for a particular user.
+
+More information: [Manage environments in Power Platform admin center](/power-platform/admin/environments-overview#manage-environments-in-the-power-platform-admin-center).
 
 ### Settings
 
@@ -159,8 +209,15 @@ Here's the list of the main categories:
 
 - **More to explore in Power Automate:** Discover all that Power Automate has to offer such as video how-tos and the Power Automate Community forum.
 
-- **What's new:** Learn about upcoming events as well as new and updated product features.
+- **What's new:** Learn about upcoming events and new and updated product features.
 
 ## 6 - Ask a chatbot
 
-Get contextual help while building your flow using the Power Platform virtual agent. To learn more, go to [Get contextual help with flows from the Power Virtual Agents bot](contextual-help-bot.md).
+Get contextual help while building your flow using the Power Platform virtual agent. To learn more, go to [Get contextual help with flows from the Microsoft Copilot Studio bot](contextual-help-bot.md).
+
+## Related information
+
+- [Training: Get started with Power Automate (module)](/training/modules/get-started-flows/)
+- [Training: Automate a business process using Power Automate (learning path)](/training/paths/automate-process-power-automate/)
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

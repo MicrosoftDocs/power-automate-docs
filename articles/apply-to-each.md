@@ -1,31 +1,31 @@
 ---
-title: Use the apply to each action in Power Automate to loop through an array of items. (contains video)
+title: Use the Apply to each action to process a list of items periodically
 description: Use Power Automate to loop through an array of items to check multiple conditions and take actions based on those conditions.
 suite: flow
-documentationcenter: na
-author: natalie-pienkowska
+author: kisubedi
 contributors:
   - kisubedi
-  - natalie-pienkowska
   - kartikraop
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 10/09/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.audienceType: 
   - flowmaker
   - enduser
+ms.collection: bap-ai-copilot
 ---
+
 # Use the Apply to each action to process a list of items periodically
 
 Many triggers can immediately start a cloud flow based on an event such as when a new email arrives in your inbox. These triggers are great, but sometimes you want to run a cloud flow that queries a data source on a predefined schedule, taking certain actions based on the properties of the items in the data source. To do this, your flow can be started on a schedule (such as once per day) and use a loop action such as **Apply to each** to process a list of items. For example, you could use **Apply to each** to update records from a database or list of items from Microsoft SharePoint.
 
 Watch this video for a demo of the **Apply to each** action.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWL7EL]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6b48b330-128d-4130-b093-2f18edae65c3]
 
 In this tutorial, we'll create a cloud flow that runs every 15 minutes and does the following:
 
@@ -204,5 +204,9 @@ Now that you've run the flow successfully, you should receive the push notificat
 
 > [!NOTE]
 > If you don't receive the push notification, confirm that your mobile device has a working data connection.
+
+## Related information
+
+[Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

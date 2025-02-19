@@ -42,12 +42,13 @@
         "marycc",
         "tinaburden",
         "almostdunh",
-        "AshleyWoodruff"
+        "AshleyWoodruff",
+        "kimberleybrown",
+        "nathlaroche"
       ],
       "breadcrumb_path": "breadcrumb/toc.yml",
       "titleSuffix": "Power Automate",
-      "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/power-automate-docs",
+      "feedback_system": "Standard",  
       "feedback_product_url": "https://ideas.powerautomate.com/",
       "search.app": [
         "Flow",
@@ -80,9 +81,7 @@
         "guidance/**.*": "guidance",
         "developer/**.*": "developer",
         "desktop-flows/**.*": "desktop-flow",
-        "teams/**.*": "teams",
-        "dataverse/**.*": "cloud-flow",
-        "forms/**.*": "cloud-flow"
+        "teams/**.*": "teams"
       }
     },
     "template": [],

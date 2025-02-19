@@ -1,14 +1,14 @@
 ---
 title: Date time actions reference
 description: See all the available date time actions.
-author: georgiostrantzas
-
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/09/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 10/20/2023
+ms.author: matp
+ms.reviewer: matp
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -53,6 +53,8 @@ This action doesn't include any exceptions.
 
 Finds the time difference between two given dates in days, hours, minutes, or seconds.
 
+To subtract a given date from another one use the **Subtract dates** action. Input a valid date in the **From date** property to use as a base to subtract the other date from. Then populate the **Subtract date** property to calculate the difference. Make sure to use a valid `Datetime` type of variable here (to create one use the **Get current date and time** action). You can specify how the returned difference should be represented (in days/ hours/ minutes/ seconds) by selecting the respective option in the **Get difference in** property.
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
@@ -80,8 +82,13 @@ Retrieves the current date or the current date and time.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Retrieve|N/A|Current date and time, Current date only|Current date and time|Specify whether to get the date and time, or just the date. If the latter is chosen, the time value will be stored as midnight (0:00:00)|
-|Time zone|N/A|System time zone, Specific time zone|System time zone|Whether to use the system's time zone or a custom one|
+|Time zone|N/A|System time zone, Specific time zone **(to be deprecated)**, Windows time zone, Custom input|System time zone|Specify whether to use the system's time zone or select a specific one or set up a time zone manually|
 |Country/region|No|[Text value](../variable-data-types.md#text-value)|Europe/Bucharest|The country/region to get the time of or add a numeric value as the hours that will be added in the UTC time zone|
+|Windows time zone|No|Available [Windows time zones](/windows-hardware/manufacture/desktop/default-time-zones#time-zones)|(UTC) Coordinated Universal Time|Specify the country/region to obtain the time zone from|
+|Input Type|No|Offset, Windows time zone|Offset|Choose whether to set the offset via a numeric value or by providing a Windows format time zone|
+|Offset|No|[Numeric value](../variable-data-types.md#numeric-value)|N/A|Specify the number of hours the offset is going to be. Time format is UTC.|
+|Time zone|No|[Text value](../variable-data-types.md#text-value)|N/A|Specify the time zone (Windows time zone)|
+
 
 ### Variables produced
 

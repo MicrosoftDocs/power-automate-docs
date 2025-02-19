@@ -1,18 +1,16 @@
 ---
-title: Respond to personal data requests (Azure AD)
-description: Learn about the resources available in Power Automate to help you meet your obligations under various privacy laws and regulations for users who authenticate using Azure AD.
+title: Respond to personal data requests (Microsoft Entra ID)
+description: Learn about the resources available in Power Automate to help you meet your obligations under various privacy laws and regulations for users who authenticate using Microsoft Entra ID.
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
-manager: KVIVEK
-ms.author: Deonhe
-ms.reviewer: gtrantzas
+author: v-aangie
+ms.author: angieandrews
+ms.reviewer: angieandrews
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/14/2023
@@ -23,18 +21,18 @@ search.audienceType:
   - admin
 ---
 
-# Respond to personal data requests (Azure AD)
+# Respond to personal data requests (Microsoft Entra ID)
 
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
-Power Automate provides tools and resources to help you respond to requests to correct, export, or delete personal data that resides in the Microsoft cloud. This article helps you respond to requests from users who authenticate using Azure Active Directory (Azure AD). [Respond to requests from users who authenticate using a Microsoft account](privacy-dsr-summary-msa.md).
+Power Automate provides tools and resources to help you respond to requests to correct, export, or delete personal data that resides in the Microsoft cloud. This article helps you respond to requests from users who authenticate using Microsoft Entra ID. [Respond to requests from users who authenticate using a Microsoft account](privacy-dsr-summary-msa.md).
 
 ## Prerequisites
 
 - A paid or [trial license](https://make.powerapps.com/trial) for Power Apps Plan 2
-- The [Office 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Azure Active Directory (Azure AD) Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) role
+- The [Microsoft 365 Global Administrator](https://support.office.com/article/assign-admin-roles-in-office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) or [Microsoft Entra Global Administrator](/azure/active-directory/active-directory-assign-admin-roles-azure-portal) role
 
-If you're a member of an [unmanaged tenant](/azure/active-directory/domains-admin-takeover) and don't have a global administrator, you can export and remove your own personal data. You must have an Azure AD account with a [Power Automate license](https://make.powerautomate.com/pricing/).
+If you're a member of an [unmanaged tenant](/azure/active-directory/domains-admin-takeover) and don't have a global administrator, you can export and remove your own personal data. You must have an Microsoft Entra account with a [Power Automate license](https://make.powerautomate.com/pricing/).
 
 ## Respond to requests for Power Automate customer data
 

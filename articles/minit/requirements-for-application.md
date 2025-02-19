@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 07/18/2023
+ms.date: 04/16/2024
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -37,7 +37,7 @@ Following are the requirements for the statistics metric type:
 
 - **Case Level Attribute:** Requires aggregation. Uses case context functions. It's not possible to access the values of event-level attributes. For example, `AVG(CaseEvents, PriceUSD)` returns the average value of the attribute **PriceUSD**.
 
-- **Case Duration Influence:** Requires aggregation. Uses case context functions. It's not possible to access the values of event-level attributes. For example, `AVG(CasesPerAttribute,DURATION)1` returns the average duration of cases for selected case level attribute value.
+- **Case Duration Influence:** Requires aggregation. Uses case context functions. It's not possible to access the values of event-level attributes. For example, `AVG(CasesPerAttribute,DURATION())` returns the average duration of cases for selected case level attribute value.
 
 - **Case Overview:** Aggregation isn't needed since  **Case Overview** displays results per individual cases. Uses functions valid for cases. If you want to calculate statistics of all cases and use them in a metric, you need to define the scope of aggregation. For example, `DURATION()/AVG(ViewCases,DURATION())` returns the ratio between the specific case duration to the average case duration.
 
@@ -59,5 +59,5 @@ Following are the requirements for the filter metric type:
 
 Following are the requirements for the process root cause analysis metric type:
 
-**RCA**: The requirements are the same as for Statistics - Case Overview in the [Statistics](#statistics) section in this topic.
+**RCA**: The requirements are the same as for Statistics - Case Overview in the [Statistics](#statistics) section in this article.
 

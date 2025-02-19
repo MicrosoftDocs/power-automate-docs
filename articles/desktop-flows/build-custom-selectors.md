@@ -1,13 +1,13 @@
 ---
 title: Build a custom selector
 description: Build a custom selector
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 06/02/2021
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

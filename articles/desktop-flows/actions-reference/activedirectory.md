@@ -1,14 +1,15 @@
 ---
 title: Active Directory actions reference
 description: See all the available Active Directory actions.
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/23/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -46,6 +47,8 @@ CN="Varga, Norbert",DC=contoso,DC=com
 ## <a name="creategroup"></a> Create group
 
 Creates a group in the Active Directory.
+> [!IMPORTANT]
+> Make sure you that Power Automate for desktop is operating with elevated rights when executing a flow containing the **Create a group** action
 
 ### Input parameters
 
@@ -287,6 +290,8 @@ This action doesn't produce any variables.
 ## <a name="createuser"></a> Create user
 
 Creates a user in the Active Directory.
+> [!IMPORTANT]
+> Make sure you that Power Automate for desktop is operating with elevated rights when executing a flow containing the **Create user** action
 
 ### Input parameters
 

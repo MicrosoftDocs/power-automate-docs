@@ -2,19 +2,21 @@
 title: Create a cloud flow in Power Automate
 description: Learn how to create a cloud flow that automatically performs one or more actions, such as sending email, when events like someone adding a row to a SharePoint list occur.
 suite: flow
-author: natalie-pienkowska
+author: kisubedi
 contributors:
   - kisubedi
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 10/09/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
-ms.collection: get-started
+ms.collection:
+  - get-started
+  - bap-ai-copilot
 ---
 
 # Create a cloud flow in Power Automate
@@ -54,7 +56,7 @@ First, select what event, or *trigger*, starts your flow.
 1. At the bottom of the screen, select **Create**.
 
    > [!TIP]
-   > Connectors support multiple types of authentication. For example, SQL Server supports Azure AD, SQL Server authentication, Windows authentication, and SQL connection string. Users choose which type of authentication they want to use when configuring a connector.
+   > Connectors support multiple types of authentication. For example, SQL Server supports Microsoft Entra ID, SQL Server authentication, Windows authentication, and SQL connection string. Users choose which type of authentication they want to use when configuring a connector.
 
 1. If you haven't already connected your Twitter account to Power Automate, select **Sign in to Twitter**, and then provide your credentials.
 1. In the **Search text** box, type the keyword that you want to find.
@@ -129,12 +131,13 @@ You can have up to 600 flows in your account. If you already have 600 flows, del
 
      Select a cloud flow run from the list of runs to see the inputs and outputs of each step.
 
-### See also
+## Related information
 
 - [Add steps](multi-step-logic-flow.md), such as different ways to be notified, to your flow.
 - [Run tasks on a schedule](run-scheduled-tasks.md), when you want an action to occur daily, on a certain date, or after a certain number of minutes.
 - [Add a cloud flow to an app](/power-apps/maker/canvas-apps/using-logic-flows)
 - [Get started with team flows](create-team-flows.md) and invite others to collaborate with you to design flows.
-
+- [Training: Get started with Power Automate (module)](/training/modules/get-started-flows/)
+- [Training: Enhance communication using Power Automate and the Office 365 Users Connector (module)](/training/modules/enhance-communication/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

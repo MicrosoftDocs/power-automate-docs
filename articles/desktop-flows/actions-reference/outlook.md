@@ -1,13 +1,14 @@
 ---
 title: Outlook actions reference
 description: See all the available Outlook actions.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/28/2023
+ms.date: 01/11/2024
 ms.author: dipapa
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -19,6 +20,9 @@ search.audienceType:
 # Outlook actions
 
 For machines with an installation of Outlook, you can manage your mailboxes with the Outlook actions.
+
+> ![IMPORTANT]
+> Outlook automation actions don't support the [new Outlook for Windows](https://support.microsoft.com/office/getting-started-with-the-new-outlook-for-windows-656bb8d9-5a60-49b2-a98b-ba7822bc7627) application. Make sure you are using the **Outlook** desktop application.
 
 After creating an Outlook instance with the **Launch Outlook** action, use the **Retrieve email messages from Outlook** action to get the messages from a specified account and mail folder.
 

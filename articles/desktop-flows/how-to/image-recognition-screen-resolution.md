@@ -1,13 +1,13 @@
 ---
 title: Use image recognition on machines with different screen resolutions
 description: Use image recognition on machines with different screen resolutions
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/08/2021
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

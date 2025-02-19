@@ -1,5 +1,5 @@
 ---
-title: Overview of using Microsoft Forms and Power Automate (contains video)
+title: Overview of using Microsoft Forms and Power Automate
 description: Learn how to use a form in a flow.
 services: ''
 suite: flow
@@ -7,13 +7,12 @@ documentationcenter: na
 author: Dean-Haas
 editor: ''
 tags: ''
-ms.devlang: na
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/22/2022
-ms.author: napienko
-ms.reviewer: gtrantzas
+ms.author: jamiller
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -25,7 +24,7 @@ Use the [Microsoft Forms](/connectors/microsoftforms/) connector in Power Automa
 
 Watch the following video to see how you can use a form in Power Automate.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKXdv]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=630b3153-e815-4f18-a372-d6cade5effee]
 
 ## Triggering a form action in a flow
 

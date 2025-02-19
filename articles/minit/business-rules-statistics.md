@@ -52,7 +52,7 @@ Event scope and edge scope business rules calculate results per event or edge. T
 
     The table shows metrics for each activity or edge in the data set of the selected business rule.
 
-### See also
+## Related information
 
 [Statistics overview](statistics.md)  
 [Business rule scope](business-rule-scope.md)

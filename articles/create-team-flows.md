@@ -1,15 +1,13 @@
 ---
 title: Share a cloud flow
 description: Learn how to share cloud flows with others in your organization and guest users, add owners, and collaborate with them to design and manage flows.
-author: natalie-pienkowska
+author: ChrisGarty
 contributors:
-  - natalie-pienkowska
+  - ChrisGarty
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 02/01/2023
+ms.date: 10/09/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -163,7 +161,7 @@ If the shared flow still has an active owner, the flow continues to run.
 To change the ownership of a non-solution-aware cloud flow, you must create a new flow via export/import, **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows is not available because the owner is part of the flow identity. 
 
 ### Share ownership of a solution-aware cloud flow with a user who isn't in Dataverse
-When you share ownership of a solution-aware cloud flow with a user who isn't in Dataverse, that user gets added into Dataverse automatically to facilitate sharing. In a default environment, Azure Active Directory (AAD) users have the EnvironmentMaker role. In a non-default environment, AAD users and groups are added into Dataverse but they aren't assigned the EnvironmentMaker role automatically. Therefore, they may only be able to run the flow until an administrator assigns them a role. If the user doesn't have an appropriate role, they will see a detailed error message.
+When you share ownership of a solution-aware cloud flow with a user who isn't in Dataverse, that user gets added into Dataverse automatically to facilitate sharing. In a default environment, Microsoft Entra ID (Microsoft Entra ID) users have the EnvironmentMaker role. In a non-default environment, Microsoft Entra users and groups are added into Dataverse but they aren't assigned the EnvironmentMaker role automatically. Therefore, they may only be able to run the flow until an administrator assigns them a role. If the user doesn't have an appropriate role, they will see a detailed error message.
 
 ### Can connections be provided by the user that runs the flow? 
 Yes. When a connection is configured to be **Provided by run-only user**, then that connection is provided by the user who runs (or invokes) the flow.
@@ -171,4 +169,10 @@ Yes. When a connection is configured to be **Provided by run-only user**, then t
 ### Can a connection provided by run-only user be used by another user?
 No. When a connection is configured to be **Provided by run-only user** then that connection is provided by the user that runs (or "invokes") the flow. Embedded connections are used by all users of the flow, but connections provided by a run-only user are used only by the user that provides them. When the flow connects to a service via a connector, then the **Provided by run-only user** connections will allow the flow to act as the run-only user and access the data that the user has access to. If the flow is exported, then the **Provided by run-only user** connections have a **RuntimeSource** value of **invoker**.
 
+## Related information
+
+- [Training: Share a cloud flow with Power Automate (module)](/training/modules/share-cloud-flow/)
+- [Training: Share and collaborate with Power Automate (learning path)](/training/paths/share-collaborate-power-automate/)
+
+ 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

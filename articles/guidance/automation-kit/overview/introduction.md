@@ -7,13 +7,12 @@ author: Grant-Archibald-MS
 editor: ''
 ms.custom: guidance
 
-ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
 ms.author: grarchib
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 ---
 
 # Overview of the Automation Kit

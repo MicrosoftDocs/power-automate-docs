@@ -178,5 +178,29 @@
           href: automation-coe/automation-maturity-model-overview.md
         - name: Automation Maturity Model details
           href: automation-coe/automation-maturity-model-details.md
+        - name: Build custom actions for Power Automate for desktop
+          href: ./how-to/build-custom-action/buildcustomaction.md
     - name: Business approvals templates (preview)
-      href: ./business-approvals-templates/introduction.md
+      items:
+        - name: Introduction
+          href: ./business-approvals-templates/introduction.md
+        - name: User journey
+          href: ./business-approvals-templates/user-journey.md
+        - name: Comparison
+          href: ./business-approvals-templates/approvals-kit-comparison.md
+        - name: Setup
+          href: ./business-approvals-templates/setup.md
+        - name: Configure preset approvals
+          href: ./business-approvals-templates/configure-preset-approvals.md
+        - name: Setup out of office and delegation
+          href: ./business-approvals-templates/setup-out-of-office-and-delegation.md
+        - name: Process approval requests
+          href: ./business-approvals-templates/process-approval-requests.md
+        - name: Nurture
+          href: ./business-approvals-templates/nurture.md
+        - name: Frequently asked questions
+          href: ./business-approvals-templates/frequently-asked-questions.md
+        - name: Limitations
+          href: ./business-approvals-templates/limitations.md
+        - name: Content
+          href: ./business-approvals-templates/content.md

@@ -5,7 +5,6 @@ suite: flow
 documentationcenter: na
 author: kathyos
 ms.custom: guidance
-ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na

@@ -256,6 +256,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "articles/desktop-flows/create-processes.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "articles/ui-flows/edit-web.md",
       "redirect_url": "/power-automate/desktop-flows/edit-web",
       "redirect_document_id": false
@@ -724,7 +729,141 @@
       "source_path": "articles/mobile-monitor-activity.md",
       "redirect_url": "/power-automate/mobile/manage-cloud-flows",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/minit/process-mining-copilot-in-process-analytics.md",
+      "redirect_url": "/power-automate/process-mining-copilot-in-process-analytics",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/avd-setup.md",
+      "redirect_url": "/power-automate/desktop-flows/avd-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/avd-use-starter-kit.md",
+      "redirect_url": "/power-automate/desktop-flows/avd-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/custom-controls-business-process-flows.md",
+      "redirect_url": "/power-automate/business-process-flows-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/trigger-flow-powerbi-report.md",
+      "redirect_url": "/power-bi/create-reports/power-bi-automate-visual",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/create-desktop.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/create-web.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/edit-desktop.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/edit-web.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/inputs-outputs-desktop.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/inputs-outputs-web.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/migrate.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/overview.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/upgrade.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/use-ime.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/manage-credentials.md",
+      "redirect_url": "/power-automate/desktop-flows/create-azurekeyvault-credential",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/avd-overview.md",
+      "redirect_url": "/power-automate/desktop-flows/hosted-rpa-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-administrator.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-app-maker.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-bdm.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-developer.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-functional-consultant.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-sales.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automatew",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/faqs-process-mining-m365-personal-recommendations.md",
+      "redirect_url": "/power-automate/process-mining-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/win-copilot-plug-in.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/isv-pay-as-you-go.md",
+      "redirect_url": "/connectors/connector-reference",
+      "redirect_document_id": false
     }
   ]
 }
-

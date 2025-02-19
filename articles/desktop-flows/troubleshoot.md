@@ -1,99 +1,60 @@
 ---
-title: Troubleshoot desktop flows
-description: See how to troubleshoot common issues of Power Automate desktop flows.
+title: Troubleshoot desktop flows runtime
+description: Learn how to resolve common Power Automate desktop flows runtime problems effectively.
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 09/21/2023
+ms.date: 01/14/2025
 ms.author: pefelesk
 ms.reviewer: tapanm
 contributors:
-- PetrosFeleskouras
-- johndund
-search.audienceType: 
+  - PetrosFeleskouras
+  - johndund
+  - DanaMartens
+search.audienceType:
   - flowmaker
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:01/14/2025
 ---
 
-# Troubleshoot desktop flows
+# Troubleshoot desktop flows runtime
 
-To open the Power Automate troubleshoot tool:
+To open the Power Automate troubleshoot tab:
 
 1. Launch **Power Automate machine runtime**
 1. Select **Troubleshoot**
 1. Select **Launch Troubleshoot tool**  
 
 >[!NOTE]
->You need to have admin privileges to open the troubleshoot tool from Power Automate machine runtime.  
+>You need to have admin privileges to open the troubleshoot tool from Power Automate machine runtime.
 
-## Resolve sign in and sign out issues
+## Diagnose runtime connectivity issues
 
-Power Automate uses a file named **msalcache.bin3** to acquire tokens and authenticate users.
+>[!NOTE]
+>You can access the diagnostic tool from Power Automate console as well. Select **help**. From the dropdown, select **troubleshooter** > **diagnose connectivity issues for cloud runtime**.
 
-If you encounter errors while signing in or signing out, try to erase all the stored tokens by deleting this file. To delete the file, navigate to **C:\Users\Username\AppData\Local\Microsoft\Power Automate Desktop\Cache**.
+The diagnostic tool helps you identify connectivity issues between your computer and services required to run Power Automate. It can help debug both cloud runtime and machine registration issues you might experience. To run the tool, select **Launch diagnostic tool** in the troubleshoot tab in the machine runtime.
 
-> [!NOTE]
-> If the **AppData** folder isn't visible in your user folder, try to [display hidden files](https://support.microsoft.com/windows/show-hidden-files-0320fe58-0117-fd59-6851-9b7f9840fdb2).
+When you run the tool, Power Automate tries to connect to each required service. If a connection fails, the logs can help you understand the list of endpoints you must allow. For the cloud runtime to work, the Power Automate service (UIFlowService) running on your machine must have access to *.dynamics.com, *.servicebus.windows.net, *.gateway.prod.island.powerapps.com, and *.api.powerplatform.com.
 
-If you have Power Automate installed in another drive, replace **C** with the letter of the respective drive. Also, replace **Username** with the name of your user folder.
+The tool can check different items based on whether your machine is registered. If you experience problems registering your machine, read [registration troubleshooting documentation](/troubleshoot/power-platform/power-automate/desktop-flows/desktop-flow-machine-registration-troubleshooting) before running the tool. The following table lists the endpoints the tool checks and the actions to take depending on your machine state.
 
-After deleting the **msalcache.bin3** file, restart the Power Automate service and sign in to your account.
+| Required services | What it checks | What to do if it fails |
+| --------|  ---------| ---- |
+| Azure Relay (*.servicebus.windows.net) | If the machine is registered, it checks the specific endpoints used for machine-cloud communication that are established upon registration. If your computer isn't registered, it checks a static relay endpoint. | If your machine isn't registered, ensure *.servicebus.windows.net has connectivity. If your machine is registered, you can either allow *.servicebus.windows.net or specifically the endpoints in the logs. |
+| Dataverse (*.dynamics.com) | If the machine is registered, it contacts your specific Dataverse environment. If the machine isn't registered, it doesn't do a check. | Allow connectivity to *.dynamics.com or your team’s Dataverse URL. |
+| Desktop flow service (*.gateway.prod.island.powerapps.com and *.api.powerplatform.com) | If the machine is registered, it checks that the endpoint is reachable for desktop flow runtime. | The logs should tell you what failed. Up to version 2.51, *.gateway.prod.island.powerapps.com must be reachable. Starting with version 2.52, *.api.powerplatform.com must also be reachable. |
 
-:::image type="content" source="media/troubleshoot/msal-file.png" alt-text="Screenshot of the msalcache.bin3 file in the file explorer.":::
+Remember that the Power Automate service (UIFlowService) running on your machine is making the call to required services. On-premises proxy servers might have rules that require calls to come from a specific user. Consider [changing the on-premises service account](#change-the-on-premises-service-account) to fix these errors if a specific endpoint works in a user session but not via the Power Automate service.
 
-### Sign in using Web Account Manager (WAM)
-
-By default, Power Automate for desktop uses an Internet Explorer client to facilitate user authentication. If you encounter errors while signing in, try setting it to authenticate users through Web Account Manager (WAM).
-
-WAM allows signing in using accounts already registered to Windows without requiring passwords. It enables single sign-on (SSO) and can resolve sign-in issues related to Active Directory Federation Services (ADFS). Learn more about WAM in [Interactive with WAM](/azure/active-directory/develop/scenario-desktop-acquire-token-wam).
-
-To enable the WAM functionality in Power Automate for desktop, modify the [appropriate registry entry](governance.md#allow-users-to-sign-in-to-power-automate-for-desktop-using-web-account-manager-wam).
+You can review the list of all [services required for desktop flow runtime](../ip-address-configuration.md).
 
 ## Resolve failed connection between Power Automate components
 
-On startup, Power Automate shows the following error message:
-
-**Connection error: The connection between Power Automate components couldn't be established. A required named pipe is in use by another application. Contact your IT administrator.**
-
-This issue could occur because there are two (2) Power Automate for desktop applications installed on the machine (one installed from Microsoft Store and one from the MSI installer), and each one is on a different version. This is not a supported scenario due to conflicts between the installations.
-
-If your version of Power Automate for desktop is **2.34.176.23181 or higher** (Microsoft Store version **10.0.7118.0 or higher**), then follow the steps below to uninstall either one of the two apps and resolve the issue:
-
-1. Go to Windows Start Menu > Settings > Apps > Installed apps
-1. Search for **Power Automate**
-1. Uninstall either one of the two – either Power Automate (Microsoft Store installation) or Power Automate for desktop (MSI installation)
-
-If your version of Power Automate for desktop is **less than 2.34.176.23181** (Microsoft Store version **less than 10.0.7118.0**), then this error may occur because another process is running a named pipes server in the same machine. This process probably runs with elevated rights using the localhost endpoint. As a result, it blocks other applications from using the endpoint.
-
-To identify whether another process is indeed the issue:
-
-- Close Power Automate and use Windows Task Manager to ensure that its process isn't still running.
-
-- Download the [Sysinternals Suite](/sysinternals/downloads/sysinternals-suite).
-
-- Extract the zip file to a folder on your desktop.
-
-- Run a command prompt session as administrator.
-
-- Navigate to the folder in which you've extracted Sysinternals.
-
-- Run the following command:
-
-  ``` CMD
-  handle net.pipe
-  ```
-
-  Running this command should display a list of processes that use named pipes and the address they listen to.
-
-  :::image type="content" source="media/troubleshoot/command-prompt.png" alt-text="Screenshot of the results of the handle net.pipe command.":::
-
-- Identify whether a process displaying the string **EbmV0LnBpcGU6Ly8rLw==** exists.
-
-- If such a process exists, stop the process identified in the previous step, and try again to launch Power Automate.
-
-As a permanent fix, you can stop the process causing the issue from running. Alternatively,  if it's an internal process, you can change it to use a more specific endpoint, such as **net.pipe://localhost/something**.
-
-If none of the above is possible, specify Power Automate executables to run as administrator. However, this solution may not solve the issue in all cases, and it will cause a UAC prompt to appear each time.
+See ["Communication error" and the connection between Power Automate components fails](/troubleshoot/power-platform/power-automate/desktop-flows/failed-connection-between-power-automate-components)
 
 ## Change the on-premises Service account
 
@@ -127,28 +88,15 @@ You can find TroubleshootingTool.Console.exe in the directory where you installe
 
 Example:
 
-`TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount mydomain\myuser < tempfilethatcontainspassword.txt`                                                                                              
+`TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount mydomain\myuser < tempfilethatcontainspassword.txt`
 
 The tool also provides other functionality such as getting the name of the account that the service is currently running as, resetting it to run as the default virtual account, or simply restarting the service. For more information on all supported commands, simply run the TroubleshootingTool.Console.exe with no arguments.
 
 ## Troubleshoot desktop flow runs
 
-> [!IMPORTANT]
-> Gateways for desktop flows are now deprecated except for the China region. Switch to our machine-management capabilities. [Learn more about the switch from gateways to direct connectivity.](manage-machines.md#switch-from-gateways-to-direct-connectivity)
+If your desktop flow run fails, go to [Errors when running attended or unattended desktop flows](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-errors-running-attended-or-unattended-desktop-flows) and find mitigation steps for different error codes.
 
-- If your unattended desktop flow fails with the **cannot create new session** message, perform the following steps to resolve the issue:
-
-    1. On Windows 10 or Windows 11, confirm that you don't have an active user session locked or unlocked on your target machine.
-
-    2. On Windows Server (2016, 2019, or 2022), confirm that you have yet to reach the maximum number of active user sessions configured for your device. Desktop flows can only run if they can create new sessions.
-
-- If the **gateway status** is **offline**, confirm that the device is turned on and connected to the Internet. To find more information regarding gateway troubleshooting, go to [Troubleshoot the on-premises data gateway](/data-integration/gateway/service-gateway-tshoot).
-
-- If the **gateway status** is **online**, try the following actions:
-
-   1. Confirm that the Power Automate for desktop app and services are running on your device.
-
-   1. Restart the service on your device.
+If you encounter errors related to the desktop flow run queue, go to [Troubleshoot desktop flow run queue errors](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-desktop-flow-run-queue-errors).
 
 ## Collect machine logs
 
@@ -186,75 +134,9 @@ If the agent for virtual desktops can't communicate with Power Automate for desk
     regsvr32  .\Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin.dll
     ```
 
-## Troubleshoot missing on-premises data gateway
-
-> [!IMPORTANT]
-> Gateways for desktop flows are now deprecated except for China region. Switch to our machine-management capabilities. To learn more, go to [Switch from gateways to direct connectivity](manage-machines.md#switch-from-gateways-to-direct-connectivity).
-
-The following reasons might cause you to not find your on-premises data gateway in the displayed list on the Power Automate portal.
-
-- The gateway may be installed in a different region than your Power Automate region. To resolve this issue, uninstall the gateway from the device, and then reinstall it, selecting [the correct Power Automate region](../regions-overview.md#region-mappings-for-power-automate-and-gateways).
-- The gateway has been deleted by its owner.
-
 ## Troubleshoot hosted machines
 
-This section provides suggestions for troubleshooting hosted machine issues.
-
-### Hosted machine errors
-
-- [Errors related to VM Image](/graph/api/resources/cloudpcdeviceimage?#cloudpcdeviceimagestatusdetails-values) used in hosted machine
-- [Errors related to network connection](/graph/api/resources/cloudpconpremisesconnectionhealthcheck#cloudpconpremisesconnectionhealthcheckerrortype-values) used in hosted machine
-
-Hosted machine provisioning errors:
-
-| Error code | Short Summary | Description | Learn more |
-| ----------| --------------|-------------|------------|
-| intuneEnrollFailed | We can’t complete MEM enrollment of this Cloud PC. Check MEM policy settings and retry. If that doesn’t work, contact Customer support. | Intune MDM enrollment has failed. During %brandName% provisioning, an Intune MDM enrollment occurs. This action has failed. Possible causes for this issue include: Windows enrollment is blocked in Intune, the Intune endpoints can’t be reached on your vNet, or your Intune tenant isn’t in a healthy state. Ensure the Intune MDM enrollment will be successful and retry provisioning. | [Troubleshooting Windows enrollment errors](/troubleshoot/mem/intune/device-enrollment/troubleshoot-windows-enrollment-errors) |
-| intuneEnroll_BlockedByEnrollmentRestriction | An Intune enrollment restriction exists for this user/tenant, causing MDM enrollment to fail. Ensure Windows enrollment is allowed in your Intune tenant. | Intune enrollment restriction blocking enrollment. An Intune enrollment restriction exists for this user/tenant, causing MDM enrollment to fail. Ensure Windows enrollment is allowed in your Intune tenant. | [Intune enrollment failed](/windows-365/enterprise/provisioning-errors#intune-enrollment-failed) |
-| intuneEnroll_BlockedByGroupPolicyOrConfigMgr | A group policy or ConfigMgr is blocking Intune enrollment. This issue could be caused by the ConfigMgr client installing on the Cloud PC before provisioning is complete. Ensure the device can successfully perform an MDM enrollment into Intune by delaying the ConfigMgr client installation until provisioning completes. | Intune enrollment has been blocked. A group policy or ConfigMgr is blocking Intune enrollment. This issue could be caused by the ConfigMgr client installing on the %brandName% before provisioning is complete. Ensure the device can successfully perform an MDM enrollment into Intune by delaying the ConfigMgr client installation until provisioning completes. | [Configure automatic MDM enrollment](/mem/intune/enrollment/windows-enroll#configure-automatic-mdm-enrollment) |
-| intuneEnroll_InvalidIntuneSubscriptionOrLicense | Enrollment failed due to the user/device being unlicensed or using an expired license. Ensure the Intune tenant is healthy and the subscription and licenses are valid. | Intune enrollment failed due to Intune licensing error. Enrollment failed due to the user/device being unlicensed or using an expired license. Ensure the Intune tenant is healthy and the subscription and licenses are valid. | [Microsoft Intune licensing](/mem/intune/fundamentals/licenses) |
-| intuneEnroll_NetworkConnectivityIssue | Intune enrollment failed due to DNS or network connectivity issues. | Intune enrollment failed due to DNS or network connectivity failures. The Intune enrollment endpoints couldn't be resolved correctly, causing enrollment to fail. Ensure your Cloud PCs can use your on-premises DNS servers to resolve Intune domain names and that connectivity isn't restricted to these endpoints. | [Network requirements](/windows-365/enterprise/requirements-network) |
-| intuneEnroll_MdmDiscoveryUrlMisconfigured | Intune enrollment is required for Cloud PC provisioning. Ensure the MDM discovery URLs are configured correctly. | Intune enrollment failed due to an incorrect MDM discovery URL. Intune enrollment is required for %brandName% provisioning. Ensure the MDM discovery URLs are configured correctly. | [Configure automatic MDM enrollment](/mem/intune/enrollment/windows-enroll#configure-automatic-mdm-enrollment) |
-| intuneEnroll_DelayedEffectivenessOfIntuneLicense | Intune license isn't available | Intune enrollment failed as the license isn't available. A valid Intune license is required for MDM enrollment. Ensure the license is assigned correctly and available for Intune enrollment and retry provisioning. | [Assign licenses to users so they can enroll devices in Intune](/mem/intune/fundamentals/licenses-assign) |
-| intuneEnroll_TenantUnderAccountMove | Intune tenant maintenance | Intune tenant maintenance. Your Intune tenant is being moved between scale units. Provisioning can't occur until the maintenance is complete. Contact support for more information. | |
-| noEnoughIpAddress | The specified Subnet doesn’t have adequate IP addresses available. Update or adjust the network settings and retry. | The specified subnet doesn’t have adequate IP addresses available. An IP address couldn’t be allocated during %brandName% provisioning. Ensure the selected subnet has sufficient available IP addresses and retry provisioning. | [Add, change, or delete a virtual network subnet](/azure/virtual-network/virtual-network-manage-subnet) |
-| userNotFound | The user doesn’t exist. We can’t provision this cloud PC. | The user %userName% doesn’t exist. The user account %userName% didn’t exist at the time of provisioning. This issue was likely caused by deleting the user. Ensure the user exists and is assigned a valid provisioning policy, then retry. | [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory)|
-| licenseNotFound | The user no longer has the required license for Deschutes. Contact your licensing Administrator and retry after a license has been assigned. | The user %userName% doesn’t have a valid license. Ensure the user has a valid %brandName% license assigned and retry provisioning. | [Assign or remove licenses in the Azure Active Directory portal](/azure/active-directory/fundamentals/license-users-groups) |
-| requestDisallowedByPolicy | Workspace creation wasn't allowed by a policy. | Azure policy has blocked provisioning. An Azure policy has blocked %brandName% from provisioning into your Azure subscription. Ensure that there's no Azure policy blocking %brandName% from creating resources in the subscription/resource group defined. | [What is Azure Policy?](/azure/governance/policy/overview) |
-| canaryCheckUnpass | Canary check didn’t pass. Check the canary validation status, and ensure all settings match provision criteria. | The on-premises network connection isn't healthy. The on-premises network connection associated with the provisioning policy isn’t healthy. Browse to the on-premises network connection tab, resolve the failed check, and retry provisioning. | [Troubleshoot provisioning errors](/windows-365/enterprise/provisioning-errors) |
-| imageDiskSizeOverMatch | The selected image size is larger than the cloud PC disk size being provisioned. | The selected image size is larger than the %brandName% disk being provisioned. The provided custom image must be the same size or smaller than the disk size being provisioned. Users may have more than one size %brandName% assigned, so be sure the uploaded custom image is small enough to be used for all %brandName%'s being provisioned using this provisioning policy. | [Device images overview](/windows-365/enterprise/device-images) |
-| internalError | We encountered a service error. Contact Customer support for a resolution. | An unknown error occurred. We encountered a service error. Retry provisioning, and contact support if the problem persists. | [Access Help and support](/mem/get-support#access-help-and-support) |
-| userNotAvailableInLocalAD | The user doesn't exist in the on-premises Active Directory. We can't provision this Cloud PC. | Cloud PC assigned user doesn't exist in the on-premises Active Directory. Ensure the user is assigned to the cloud PC, has an on-premises Active Directory and cloud Azure AD user account, and the UPN matches. | [Azure AD Connect sync: Understanding Users, Groups, and Contacts](/azure/active-directory/hybrid/concept-azure-ad-connect-sync-user-and-contacts) |
-| CpuOrRamNotFitImageOS | Cloud PC hardware specification doesn't meet the minimum Windows 11 requirements. | The selected Cloud PC hardware specification doesn't meet the minimum requirements for Windows 11. Assign a license with hardware that meets the Windows 11 requirements, or update the provisioning policy with a supported Windows 10 image. | 
-| imageNotSupportTPM | The selected image isn't ready to be used on UEFI-enabled Cloud PCs. | Custom images must be configured as Gen 2 images that are configured to support UEFI. Update your custom image and retry provisioning. | 
-| imageNotSupportedWarning | The selected image is out of Windows support lifecycle and may not receive updates. | Windows image out of support. The selected Windows image is out of the Windows support lifecycle. This issue may result in no Windows updates being provided. Provisioning for this image will be complete, but in the future will be blocked. Update your provisioning policy with a Windows image within its supported lifecycle. | |
-| imageNotSupportedFail | The selected image is out of Windows support lifecycle and can't be used. | Windows image out of support. The selected Windows image is out of the Windows support lifecycle and can't be used. Provisioning using this image will fail. Update your provisioning policy with a Windows image within its supported lifecycle, and retry provisioning. | |
-| endpointCheckFailed | During provisioning, a required URL/s couldn't be contacted. Ensure all of the required URLs are allowed through your firewalls and proxies. | A Windows 365 required URL(s) couldn't be contacted during provisioning. Ensure all of the required URLs are allowed through your firewalls and proxies. For a definitive list of required URLs, refer to the appropriate documentation. | [Network requirements](/windows-365/enterprise/requirements-network) |
-| scriptDownloadFailed | During provisioning, a required URL(s) couldn't be contacted. | A required URL/s couldn't be contacted during provisioning. Ensure all of the required URLs are allowed through your firewalls and proxies. For a definitive list of required URLs, refer to the appropriate documentation.| [Network requirements](/windows-365/enterprise/requirements-network) |
-| cmdAgentMSIDownloadFailed | During provisioning, a required URL(s) couldn't be contacted. | A required URL/s couldn't be contacted during provisioning. Ensure all of the required URLs are allowed through your firewalls and proxies. For a definitive list of required URLs, refer to the appropriate documentation. | [Network requirements](/windows-365/enterprise/requirements-network) |
-| rdAgentPackageDownloadFailed | During provisioning, a required WVD URL(s) couldn't be contacted. | A required WVD URL/s couldn't be contacted during provisioning. Ensure all of the required URLs are allowed through your firewalls and proxies. For a definitive list of required URLs, refer to the appropriate documentation. | [Network requirements](/windows-365/enterprise/requirements-network) |
-| AzureADUser_ResourceNotFound | Azure Active Directory D user account not found. | The user %userName% doesn’t exist in Azure AD. The user account %userName% didn’t exist at the time of provisioning. This issue was likely caused by deleting the user. Ensure the user exists and is assigned a valid provisioning policy and retry. | [Add or delete users using Azure Active Directory](/azure/active-directory/fundamentals/add-users-azure-active-directory) |
-| CreateNic_ReadOnlyDisabledSubscription | The Azure subscription provided is disabled. | The provided Azure subscription is disabled. Ensure the Azure subscription is enabled and available for provisioning. | [Reactivate a disabled Azure subscription](/azure/cost-management-billing/manage/subscription-disabled) |
-| CreateNic_ResourceGroupNotFound | The selected Azure resource group is invalid or not found. | The selected Azure resource group is invalid or not found. Ensure the selected Azure resource group is available to provision resources. Alternatively, update the Azure network connection with another resource group. | [Tutorial: Grant a user access to Azure resources using the Azure portal](/azure/role-based-access-control/quickstart-assign-role-user-portal) |
-| CreateNic_ArmAuthorizationFailed | Windows 365 doesn't have sufficient Azure permissions. | Windows 365 doesn't have sufficient Azure permissions. The Windows 365 service isn't authorized to perform actions on the Azure subscription. | [Assign a user as an administrator of an Azure subscription](/azure/role-based-access-control/role-assignments-portal-subscription-admin) |
-
-### Flow run failures
-
-- Network Level Authentication (NLA) not disabled
-
-    Network Level Authentication (NLA) must be disabled for unattended runs. You may see the following error details if an unattended flow run is triggered against a machine with NLA enabled:
-
-    **Could not create unattended session with these credentials. Please make sure you have Network Level Authentication (NLA) disabled in your remote settings if you’re using AAD credentials.**
-
-- Active session exists
-
-    When reuse session is disabled, no active user session should be running on the target machine. You may see the following error details when an unattended flow run is triggered against a machine with an active user session:
-
-    **No machine able to run the desktop flow has been found. Aborting execution. Error encountered when connecting to machines: There is a user session on the target machine. Cannot execute unattended desktop flow.**
-
-    To resolve this issue, open the Task Manager and go to the **Users** tab. There, terminate all other user sessions except for the current session, and then log-off from the machine.
-
-    :::image type="content" source="media/troubleshoot/task-manager-sessions.png" alt-text="Screenshot of the Users tab in Task Manager.":::
+See [Troubleshoot hosted machines in Power Automate for desktop](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-hosted-machines-in-power-automate-for-desktop)
 
 ## Get self-help or ask help from support
 
@@ -275,9 +157,11 @@ If you need help, use our self-help options, or ask for help from support.
 > [!IMPORTANT]
 > The following statement is subject to change.
 >
-> We offer full support for all Power Automate for desktop product versions released within a year from the latest public product release. For product releases prior to a year back from the latest release, only issues of severity level **Critical** and **Severity A** are supported. Product fixes are always added to the latest version.
->
->To find more information about severity levels, go to [Support overview](/power-platform/admin/support-overview#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request). To see the currently supported releases, go to [Released versions for Power Automate for desktop](/power-platform/released-versions/power-automate-desktop).
-
+> We offer customer support for all Power Automate for Desktop versions released within a year of the latest public release. Security issues are addressed for product releases up to 6 months old.
+> Bug fixes and product enhancements are always included in the latest version.
+ 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+## Related information
+[Power Automate Troubleshooting](/troubleshoot/power-platform/power-automate/welcome-power-automate)

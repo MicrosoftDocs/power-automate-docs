@@ -51,7 +51,7 @@ It's also possible to collapse and expand all clusters at the same time using th
 
 The process may contain multiple levels of hierarchy. To quickly navigate through individual levels, use the hierarchy display options available in the bottom right corner of the **Process map** and **Process animation**. Using the selection list, you can select an exact level or expand all clusters. Using the buttons next to this list, you can successively increase and decrease the displayed level.
 
-### See also
+## Related information
 
 [Process map overview](process-map.md)
 

@@ -211,6 +211,8 @@ Converts an integer to a string according to the formatting string (if an option
 
 - **[format*]** - formatting string
 
+  [Learn more about formatting strings](/dotnet/standard/base-types/formatting-types)
+
    Data type: STRING (only fixed string is allowed)
 
 **Output Data Type**: STRING
@@ -226,6 +228,8 @@ Converts a float to a string according to the formatting string (if an optional 
    Data type: FLOAT
 
 - **[format*]** - formatting string
+
+  [Learn more about formatting strings](/dotnet/standard/base-types/formatting-types)
 
    Data type: STRING (only fixed string in allowed)
 
@@ -255,6 +259,8 @@ Converts a date to a string according to the formatting string (if an optional p
 
 - **[format*]** - formatting string applied on date
 
+  [Learn more about formatting strings  ](/dotnet/standard/base-types/formatting-types)
+
    Date type: STRING (only fixed string is allowed)
 
 **Output Data Type**: STRING
@@ -270,6 +276,8 @@ Converts a time to a string according to the formatting string (if an optional p
    Data type: STRING
 
 - **[format*]** - formatting string applied on time
+
+  [Learn more about formatting strings  ](/dotnet/standard/base-types/formatting-types)
 
    Data type: STRING (only fixed string is allowed)
 

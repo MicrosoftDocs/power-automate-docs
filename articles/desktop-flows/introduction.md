@@ -4,7 +4,7 @@ description: Introduction to desktop flows
 author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 06/15/2023
+ms.date: 06/20/2024
 ms.collection: get-started
 ms.author: dipapa
 ms.reviewer: matp
@@ -44,7 +44,5 @@ Sign in to Power Automate Windows application using one of the following account
 A full comparison of the features included in each account can be found at [Sign-in account comparison](setup.md#sign-in-account-comparison).
 
 Here's a list of [Known issues and limitations](setup.md#known-issues-and-limitations) for Power Automate.
-
-To create desktop flows using legacy Windows recorder (V1) and Selenium IDE as alternative solutions, go to [Introduction to other types of desktop flows](overview.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,10 +4,9 @@ description: Learn about Power Automate US Government service description, plans
 services: ''
 suite: flow
 author: kenseongtan
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 08/03/2023
+ms.date: 06/20/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -38,7 +37,7 @@ In addition to the features and capabilities of Power Automate, organizations th
 
 Beginning September 2019, eligible customers can choose to deploy Power Automate US Government to the **GCC High** environment, which enables single sign-on and seamless integration with Microsoft Office 365 GCC High deployments. 
 
-Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate the US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the Power Automate US Government GCC High deployment option. This option enables and requires the customer to leverage Azure AD Government for customer identities, in contrast to GCC, which leverages the public Azure AD. For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense. A Provisional Authority to Operate has been granted by DISA.
+Microsoft has designed the platform and our operational procedures to meet the requirements aligning with the DISA SRG IL4 compliance framework. We anticipate the US Department of Defense contractor customer base and other Federal agencies currently leveraging Office 365 GCC High to use the Power Automate US Government GCC High deployment option. This option enables and requires the customer to leverage Microsoft Entra Government for customer identities, in contrast to GCC, which leverages the public Microsoft Entra ID. For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense. A Provisional Authority to Operate has been granted by DISA.
 
 Beginning April, 2021, eligible customers may now choose to deploy Power Automate US Government to the "DoD" environment, which enables single sign-on and seamless integration with Microsoft 365 DoD deployments. Microsoft has designed the platform and operational procedures in accordance with the DISA SRG IL5 compliance framework. DISA has granted a Provisional Authority to Operate.
 
@@ -117,7 +116,7 @@ Power Automate US Government is designed to support the Federal Risk and Authori
 
 Power Automate US Government has features designed to support customers' CJIS Policy requirements for law enforcement agencies. Visit the Power Automate US Government products page in the Trust Center for more detailed information related to certifications and accreditations.
 
-Microsoft designed this platform and its operational procedures to meet the requirements for the DISA SRG IL4 and IL5 compliance frameworks and has received the requisite DISA Provisional Authorities to Operate. Microsoft anticipates that the US Department of Defense contractor customer base and other Federal agencies currently leveraging Microsoft Office 365 GCC High to use the Power Automate US Government GCC High deployment option, which enables and requires customers to leverage Azure AD Government for customer identities, in contrast to GCC, which leverages the public Azure AD. For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations. Further, Microsoft expects its US Department of Defense customers who currently use Microsoft 365 DoD to use the Power Automate US Government DoD deployment option.  
+Microsoft designed this platform and its operational procedures to meet the requirements for the DISA SRG IL4 and IL5 compliance frameworks and has received the requisite DISA Provisional Authorities to Operate. Microsoft anticipates that the US Department of Defense contractor customer base and other Federal agencies currently leveraging Microsoft Office 365 GCC High to use the Power Automate US Government GCC High deployment option, which enables and requires customers to leverage Microsoft Entra Government for customer identities, in contrast to GCC, which leverages the public Microsoft Entra ID. For the US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations. Further, Microsoft expects its US Department of Defense customers who currently use Microsoft 365 DoD to use the Power Automate US Government DoD deployment option.  
 
 ## Power Automate US Government and other Microsoft services
 
@@ -154,7 +153,7 @@ The mobile application will now use the US Government Cloud.
 
 ## Power Automate US Government and Azure Services
 
-The Power Automate US Government services are deployed to Microsoft Azure Government. Azure Active Directory (Azure AD) is not part of the Power Automate US Government accreditation boundary, but takes a reliance on a customer’s [Azure AD](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
+The Power Automate US Government services are deployed to Microsoft Azure Government. Microsoft Entra is not part of the Power Automate US Government accreditation boundary, but takes a reliance on a customer’s [Microsoft Entra ID](https://azure.microsoft.com/services/active-directory/) tenant for customer tenant and identity functions, including authentication, federated authentication, and licensing.
 
 When a user of an organization employing ADFS attempts to access Power Automate US Government, the user is redirected to a login page hosted on the organization’s ADFS server.
 
@@ -162,13 +161,13 @@ The user provides credentials to their organization's ADFS server. The organizat
 
 If authentication is successful, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket that contains information about the user’s identity and group membership.
 
-The customer’s ADFS server signs this ticket using one half of an asymmetric key pair and then it sends the ticket to Azure AD via encrypted TLS. Azure AD validates the signature using the other half of the asymmetric key pair and then grants access based on the ticket.
+The customer’s ADFS server signs this ticket using one half of an asymmetric key pair and then it sends the ticket to Microsoft Entra via encrypted TLS. Microsoft Entra ID validates the signature using the other half of the asymmetric key pair and then grants access based on the ticket.
 
-The user's identity and group membership information remain encrypted in Azure AD. In other words, only limited user-identifiable information is stored in Azure AD.
+The user's identity and group membership information remain encrypted in Microsoft Entra ID. In other words, only limited user-identifiable information is stored in Microsoft Entra ID.
 
-You can find full details of the Azure AD security architecture and control implementation in the Azure SSP.
+You can find full details of the Microsoft Entra security architecture and control implementation in the Azure SSP.
 
-The Azure AD account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Azure AD.
+The Microsoft Entra account management services are hosted on physical servers managed by the Microsoft Global Foundation Services (GFS). Network access to these servers is controlled by GFS-managed network devices using rules set by Azure. Users do not interact directly with Microsoft Entra ID.
 
 ## Power Automate US Government service URLs
 
@@ -249,9 +248,9 @@ Microsoft strives to maintain functional parity between our commercially availab
 
 There are exceptions to the principle of maintaining product functional parity within the US Government clouds. For more information about feature availability, download this file: [Business Applications US Government - Availability Summary](https://aka.ms/BAPFunctionalParity).
 
-### See also
+## Related information
 
-- [Desktop flows](./desktop-flows/overview.md).
+- [Desktop flows](./desktop-flows/introduction.md).
 
 - [Dynamics 365 US Government](/power-platform/admin/microsoft-dynamics-365-government).
 

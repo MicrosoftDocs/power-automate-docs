@@ -1,6 +1,6 @@
 ---
-title: Respond to personal data deletion requests (Azure AD)
-description: Learn about the resources available in Power Automate to help you meet your obligations to delete customers' personal data under various privacy laws and regulations for users who authenticate using Azure AD.
+title: Respond to personal data deletion requests (Microsoft Entra ID)
+description: Learn about the resources available in Power Automate to help you meet your obligations to delete customers' personal data under various privacy laws and regulations for users who authenticate using Microsoft Entra ID.
 author: hamenon-ms
 contributors:
   - hamenon-ms
@@ -12,7 +12,7 @@ ms.topic: conceptual
 ms.date: 04/14/2023
 ---
 
-# Respond to personal data deletion requests (Azure AD)
+# Respond to personal data deletion requests (Microsoft Entra ID)
 
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
@@ -20,11 +20,11 @@ ms.date: 04/14/2023
 
 The right of erasure allows data subjects to request the removal of their personal data from an organization's customer data. This personal data includes system-generated logs but excludes audit logs.
 
-In addition, when a user leaves your organization, an admin must determine whether to delete data and resources that the user created as part of their Power Automate flows. Other personal data is automatically deleted when the user's account is deleted from Azure Active Directory (Azure AD).
+In addition, when a user leaves your organization, an admin must determine whether to delete data and resources that the user created as part of their Power Automate flows. Other personal data is automatically deleted when the user's account is deleted from Microsoft Entra ID.
 
-The following table shows which personal data is automatically deleted, and which data an admin must manually review and delete, for users who authenticate by using Azure AD.
+The following table shows which personal data is automatically deleted, and which data an admin must manually review and delete, for users who authenticate by using Microsoft Entra ID.
 
-| Requires manual review and deletion | Automatically deleted when the user is deleted from Azure AD |
+| Requires manual review and deletion | Automatically deleted when the user is deleted from Microsoft Entra ID |
 |---|---|
 | <ul><li>Environment\*</li><li>Environment permissions\*\*</li><li>Flows</li><li>Flow permissions</li><li>User details</li><li>Connections\*</li><li>Connection permissions</li><li>Custom connector\*</li><li>Custom connector permissions</li></ul> | <ul><li>System-generated logs</li><li>Run history</li><li>Activity Feed</li><li>Gateway</li><li>Gateway permissions</li></ul> |
 
@@ -72,7 +72,7 @@ The following table summarizes where to find and delete a user's personal data i
 1. [Delete or reassign environments created by the user.](#delete-or-reassign-environments-created-by-the-user)
 1. [Delete gateway settings.](#delete-gateway-settings)
 1. [Delete the user's details.](#delete-the-users-details)
-1. [Delete the user from Azure AD.](#delete-the-user-from-azure-ad)
+1. [Delete the user from Microsoft Entra ID.](#delete-the-user-from-microsoft-entra-id)
 
 ### Reassign and copy the user's flows
 
@@ -245,9 +245,9 @@ Add-PowerAppsAccount
 Remove-AdminFlowUserDetails -UserId {userID}
 ```
 
-### Delete the user from Azure AD
+### Delete the user from Microsoft Entra ID
 
-The final step is to delete the user's Azure AD account.
+The final step is to delete the user's Microsoft Entra account.
 
 [!INCLUDE [gdpr-dsr-azure-note](~/../shared-content/shared/privacy-includes/gdpr-dsr-azure-note.md)]
 

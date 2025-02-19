@@ -1,13 +1,13 @@
 ---
 title: Get started with an organization premium account
 description: Get started with Power Automate desktop flows using an organization premium account.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 02/17/2023
 ms.collection: get-started
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -73,4 +73,4 @@ Following this example, it's possible to imagine a wide range of scenarios where
 
 - Find the list of actions in the [Actions reference](actions-reference.md).
 
-- Learn how to [apply unattended RPA licenses to your flows](../organization-q-and-a.md#power-automate-rpa-license).
+- Learn how to [apply unattended RPA licenses to your flows](../organization-q-and-a.md).

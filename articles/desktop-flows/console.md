@@ -1,20 +1,22 @@
 ---
 title: Power Automate console
-description: See the main functionality of the Power Automate console
-author: georgiostrantzas
-
+description: See the main functionality of the Power Automate console.
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/21/2022
-ms.author: pefelesk
-ms.reviewer: gtrantzas
+ms.date: 12/11/2024
+ms.author: iomavrid
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
-- PetrosFeleskouras 
+- PetrosFeleskouras
+- DanaMartens
 search.audienceType: 
   - flowmaker
   - enduser
+ms.collection: 
+    - bap-ai-copilot
 ---
 
 # Power Automate console
@@ -36,7 +38,7 @@ To run a desktop flow as local attended, use the **Start** button next to the se
 
 :::image type="content" source="media/console/start-flow.png" alt-text="Screenshot of the status column in the console.":::
 
-If a running flow contains [input variables](manage-variables.md#input-and-output-variables), a dialog box will prompt you to provide the appropriate values.
+If a running flow contains [input variables](manage-variables.md#input-and-output-variables), a dialog box prompts you to provide the appropriate values.
 
 :::image type="content" source="media/console/start-flow-inputs.png" alt-text="Screenshot of the flow inputs dialog.":::
 
@@ -55,29 +57,35 @@ The development of new flows and the editing of existing flows occur in the flow
 
 To configure Power Automate for desktop to your liking, select the **Settings** button.
 
-:::image type="content" source="media/console/console-settings-panel.png" alt-text="Screenshot of the console settings pane":::
+:::image type="content" source="media/console/console-settings-panel-with-appearence.png" alt-text="Screenshot of the console settings pane.":::
 
-Under the **Application** category, select whether Power Automate should launch automatically and whether closing the console will also close the application. You may also set a hotkey combination to stop running flows instantly.
+Under **Appearance**, choose if Power Automate should work in light or dark mode (preview).
+:::image type="content" source="media/console/dark-mode-preview.png" alt-text="Screenshot of the dark mode experience in Power Automate for desktop.":::
 
-Using the **Monitoring/Notifications** dropdown menu, you can choose whether Power Automate will display integrated Windows notifications, a custom monitoring window, or no notifications at all. To find more information regarding Power Automate notifications, refer to [Runtime notifications](runtime-notifications.md).
+Under **Flow run control**, use the **Monitoring/Notifications** dropdown to choose if Power Automate should display integrated Windows notifications, a custom flow monitoring window, or no notifications. Learn more about Power Automate notifications in [Runtime notifications](runtime-notifications.md).
+
+You can also set a hotkey combination to pause or resume a running flow, and another hotkey to stop running flows instantly.
 
 By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. The **Display confirmation dialog when invoking flows externally** option allows you to disable this functionality. You can find more information about external links in [Run desktop flows via URL or desktop shortcuts](run-desktop-flows-url-shortcuts.md).  
 
-To decide whether Microsoft may collect diagnostic data to improve user experience, navigate to the **Data collection** settings tab.
+To decide whether Microsoft should collect diagnostic data to improve user experience, navigate to the **Data collection** settings tab.
 
->[!IMPORTANT]
->Only admins can change data collection settings.
+> [!IMPORTANT]
+> Only admins can change data collection settings.
 
 ## Desktop flow properties
 
-To review the properties of a desktop flow, right-click on it and select **Properties**. In the **General** tab, you can edit the name and description of the flow, set up a keyboard shortcut to trigger the flow locally, and define the **On error** behavior of the flow run.
+To review the properties of a desktop flow, right-click on it and select **Properties**, or select the same option from the corresponding shortcut. In the **General** tab, you can edit the name and description of the flow, set up a keyboard shortcut to trigger the flow locally, define the **On error** behavior of the flow run, and determine whether the desktop flow should **time out** after a set period of time.
 
 If the **Add screenshot to logs** option is enabled, a screenshot is captured upon flow run failure and is uploaded to the [flow run action details](monitor-run-details.md#actions-details).
+
+The **Flow timeout** property is disabled by default. If it becomes enabled, you can specify the maximum allowed time that the flow is allowed to run. If that maximum duration limit is reached during (console or cloud initiated) runtime, the desktop flow is forced to stop and time out. You can use the proposed timeout value, or provide your own using a combination of an integer value with the preferred time unit (seconds, minutes, or hours).
 
 > [!IMPORTANT]
 >
 > - Access to the flow run logs is a premium feature, which requires a [Power Automate subscription](https://powerautomate.microsoft.com/pricing/).
-> - The **Add screenshot to logs** property applies only to flows stored in [Power Automate v2 schema](schema.md).
+> - The **Flow timeout** property is also a premium feature requiring the above license.
+> - The **Add screenshot to logs** and **Flow timeout** properties apply only to flows stored in [Power Automate v2 schema](schema.md).
 
 In the **Details** tab, you can see the owner, the creation and last modification dates, the flow ID and the flow’s storage schema version in Dataverse. For more information on the enhanced desktop flows schema, go to [Power Automate v2 schema](schema.md).
 
@@ -87,17 +95,68 @@ Additionally, there's the **Run URL** that you can use to run the flow through m
 
 :::image type="content" source="media/console/desktop-flow-details-properties.png" alt-text="Screenshot of the details of a desktop flow.":::
 
+## Generate flow description using Copilot (preview)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+Generate a flow description for flows that you own or are a co-owner by the press of a button. Copilot then analyzes the flow and generates a description for it. This feature is also available from the flow details in make.powerautomate.com. More information: [Manage desktop flows](manage.md)
+
+> [!IMPORTANT]
+>
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - To understand the capabilities and limitations of this feature, go to [FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md).
+
+### Prerequisites
+
+- Currently, the generate flow description using Copilot functionality is only available in environments located in the United States.
+- Currently, the generate flow description using Copilot functionality is only available for users with a work or school account.
+
+### Use Copilot to generate the description
+
+To generate a flow description, navigate to the properties of the flow where you want to generate the description. Under the **Description** text area, select **Let Copilot create a description**. Copilot analyzes your flow and populates the description with a summary of your flow.
+
+:::image type="content" source="media/console/console_generate_description_with_ai.png" alt-text="Screenshot of the general properties of a desktop flow showing the generated flow description with Copilot." lightbox="media/console/console_generate_description_with_ai.png":::
+
+### Help us improve this feature
+
+Send feedback by selecting the thumb up or thumb down icon underneath the AI-generated content. Once you do, a dialog box appears, which you can use to submit feedback to Microsoft.
+
+:::image type="content" source="media/pad_generative_answers/feedback_dialog1.png" alt-text="Image that shows where you can send your feedback about copilot in Power Automate for desktop.":::
+
+> [!NOTE]
+> If you can't see the dialog box, your Power Platform admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
+
+### Disabling the generate flow description using Copilot functionality
+
+To disable the generate flow description using Copilot functionality, Power Platform admins can contact Microsoft support. More information: [Get Help + Support](/power-platform/admin/get-help-support)
+
+### Disabling the user feedback functionality
+
+As a Power Platform admin you can prevent users from sending feedback to Microsoft by disabling the **disableSurveyFeedback** tenant setting using PowerShell. More information:
+
+- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+
+### Data subject rights requests on user feedback
+
+Tenant administrators can view, export, and delete the feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home?#/homepage), and then select **Health** > **Product feedback**.
+
+## Related information
+
+[FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md)
+
 ## Update Power Automate for desktop
 
 Power Automate frequently checks for updates and displays appropriate notifications.
 
-Update notifications offer you the option to delay the update and proceed with it at a later time. If you don't wish to receive any update notifications, uncheck the **Show update notifications** option in the general settings.
+Update notifications offer you the option to delay the update and proceed with it at a later time. If you don't wish to receive any update notifications, clear the **Show update notifications** option in the general settings.
 
-To manually update, select **Check for updates** in the general settings.
+To manually update Power Automate for desktop, select **Check for updates** in the general settings.
 
 ## Switch organization
 
-If you're a member of more than one tenant, you can switch between them by selecting their alias at the top right corner of the console and clicking on **Switch organization**.
+If you're a member of more than one tenant, you can switch organizations by selecting the organization name at the top right corner of the console and then select **Switch organization**.
 
 :::image type="content" source="media/console/switch-tenant.png" alt-text="Screenshot of the switch tenants option.":::
 

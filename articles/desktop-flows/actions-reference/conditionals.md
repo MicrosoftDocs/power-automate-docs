@@ -1,14 +1,14 @@
 ---
 title: Conditional actions reference
 description: See all the available conditionals actions.
-author: georgiostrantzas
-
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/23/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: dipapa
+ms.reviewer: matp
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -38,7 +38,7 @@ An expression that, if met, a block of actions associated with that particular c
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Operator|N/A|Equal to (=), Not equal to (<>), Greater than (>), Greater than or equal to (>=), Less than (<), Less than or equal to (<=), Contains, Does not contain, Is empty, Isn't empty, Starts with, Doesn't start with, Ends with, Doesn't end with|Equal to (=)|The comparison operator of this case|
+|Operator|N/A|Equal to (=), Not equal to (<>), Greater than (>), Greater than or equal to (>=), Less than (<), Less than or equal to (<=), Contains, Does not contain, Is empty, Is not empty, Starts with, Does not start with, Ends with, Does not end with, Is blank, Is not blank|Equal to (=)|The comparison operator of this case|
 |Value to compare|No|*||Enter a value to compare with the switch-block value|
 
 ### Variables produced
@@ -88,7 +88,7 @@ Marks the beginning of a block of actions that run if the conditions specified i
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Operator|N/A|Equal to (=), Not equal to (<>), Greater than (>), Greater than or equal to (>=), Less than (<), Less than or equal to (<=), Contains, Does not contain, Is empty, Isn't empty, Starts with, Doesn't start with, Ends with, Doesn't end with|Equal to (=)|Choose the relationship of first operand to the second operand.|
+|Operator|N/A|Equal to (=), Not equal to (<>), Greater than (>), Greater than or equal to (>=), Less than (<), Less than or equal to (<=), Contains, Does not contain, Is empty, Is not empty, Starts with, Does not start with, Ends with, Does not end with, Is blank, Is not blank|Equal to (=)|Choose the relationship of first operand to the second operand.|
 |First operand|No|*||Enter a value name defined by a previous action, text, number or expression to compare with the second operand.|
 |Second operand|No|*||Enter a value name produced by a previous action, text, number or expression to compare with the first operand.|
 
@@ -108,7 +108,7 @@ Marks the beginning of a block of actions that is run if the condition specified
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Operator|N/A|Equal to (=), Not equal to (<>), Greater than (>), Greater than or equal to (>=), Less than (<), Less than or equal to (<=), Contains, Does not contain, Is empty, Isn't empty, Starts with, Doesn't start with, Ends with, Doesn't end with|Equal to (=)|Choose the relationship of first operand to the second operand.|
+|Operator|N/A|Equal to (=), Not equal to (<>), Greater than (>), Greater than or equal to (>=), Less than (<), Less than or equal to (<=), Contains, Does not contain, Is empty, Is not empty, Starts with, Does not start with, Ends with, Does not end with, Is blank, Is not blank|Equal to (=)|Choose the relationship of first operand to the second operand.|
 |First operand|No|*||Enter a value name defined by a previous action, text, number or expression to compare with the second operand.|
 |Second operand|No|*||Enter a value name produced by a previous action, text, number or expression to compare with the first operand.|
 

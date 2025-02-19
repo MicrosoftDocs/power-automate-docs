@@ -16,7 +16,6 @@ caps.latest.revision: 39
 author: "vashr"
 ms.author: "vashr"
 ms.reviewer: angieandrews
-ms.manager: KVIVEK
 search.audienceType: 
   - flowmaker
   - enduser

@@ -4,16 +4,15 @@ description: Learn how to use a Power Automate template to add a form to a flow.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
-ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/23/2022
-ms.author: napienko
-ms.reviewer: gtrantzas
+ms.author: jamiller
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser

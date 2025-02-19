@@ -52,6 +52,6 @@ There are cases when Power Automate for desktop won't be able to generate a repa
 > [!NOTE]
 > The selectors that contain one or more variables can't be repaired. Either replace the variables with static values or repair the selector manually. More information: [Build a custom selector](build-custom-selectors.md)
 
-### See also
+## Related information
 
 [Build a custom selector](build-custom-selectors.md)

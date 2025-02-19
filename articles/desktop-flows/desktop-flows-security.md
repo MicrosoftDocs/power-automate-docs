@@ -2,7 +2,7 @@
 title: Manage security for Power Automate
 description: Manage security for Power Automate through built-in Dataverse roles.
 ms.topic: conceptual
-ms.date: 04/24/2023
+ms.date: 02/27/2024
 ms.author: appapaio
 ms.reviewer: ndoelman
 contributors:
@@ -25,9 +25,9 @@ This article explains the built-in security roles that are available for Power A
 
 To access an environment, a user must meet the following criteria:
 
-1. Be enabled for sign-in in Azure Active Directory (Azure AD).
+1. Be enabled for sign-in in Microsoft Entra ID.
 2. Have a valid license that has a Microsoft Power Platform or Dynamics 365 recognized service plan.
-3. Be a member of the environment's Azure AD group (if one has been associated with the environment).
+3. Be a member of the environment's Microsoft Entra group (if one has been associated with the environment).
 4. Have at least one Dataverse security role assigned directly to them or to a group team they're a member of.
 
 If you have difficulties connecting to Dataverse, review this troubleshooting page for [Common user access issues.](/power-platform/admin/troubleshooting-user-needs-read-write-access-organization)
@@ -81,6 +81,14 @@ For example, you might create a security role that allows users to create, read,
 
 Overall, privileges are a key component of the security model in Dataverse, and are used to control access to resources in a granular and flexible way.
 
+> [!NOTE]
+>
+> To run a desktop flow, you need these minimum privileges:
+> - Basic Append, AppendTo, Create and Write privileges on the `flowsession` table.
+> - Basic Append, AppendTo, Create and Write privileges on the `workflowbinary` table.
+> - Basic Read privilege on the `workflow` table.
+> - Basic Read privilege on the `desktopflowbinary` table.
+
 ## Power Automate specific security roles
 
 Following security roles are available out-of-the-box with Power Automate.
@@ -97,12 +105,12 @@ This role is typically assigned to CoE or IT admins that manage VM images and vi
 
 ### Desktop Flows Machine Owner
 
-This role allows users to manage machines and machine groups they own, including creating, editing, sharing and deleting machines and machine groups.
+This role allows users to manage machines and machine groups they own, including creating, editing, sharing, and deleting machines and machine groups.
 :::image type="content" source="media/desktop-flows-security-roles/desktop-flows-machine-owner.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Owner role." lightbox="media/desktop-flows-security-roles/desktop-flows-machine-owner.png":::
 
 ### Desktop flows machine user
 
-This role allows users to run Desktop flows but not configure machines. A CoE may assign this role to other users in the environment, so that they can use machines created and shared by the CoE, but not edit or share them.
+This role allows users to run Desktop flows but not configure machines. A CoE might assign this role to other users in the environment, so that they can use machines created and shared by the CoE, but not edit or share them.
 :::image type="content" source="media/desktop-flows-security-roles/desktop-flows-machine-user.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine User role." lightbox="media/desktop-flows-security-roles/desktop-flows-machine-user.png":::
 
 ### Desktop flows machine user can share

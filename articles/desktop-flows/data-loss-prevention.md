@@ -1,13 +1,13 @@
 ---
 title: Data loss prevention (DLP) policies 
 description: Data loss prevention (DLP) policies 
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 06/30/2023
 ms.author: quseleba
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

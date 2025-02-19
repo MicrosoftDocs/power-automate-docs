@@ -9,11 +9,10 @@ contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-ms.author: napienko
+ms.author: jamiller
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
-ms.devlang: na
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.tgt_pltfrm: na
@@ -71,7 +70,7 @@ In this tutorial, we'll create a simple flow that uses one of the many [OneDrive
 >[!TIP]
 >While this tutorial shows how to create a cloud flow from a template, you can also create a cloud flow from blank to use any of the hundreds of connectors available in Power Automate.
 
-### See also
+## Related information
 
 - [Get started with Power Automate](getting-started.md)
 - [Build multi-step flows](multi-step-logic-flow.md)

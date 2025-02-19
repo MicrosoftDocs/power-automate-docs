@@ -1,14 +1,14 @@
 ---
 title: Variable manipulation and the % notation
 description: Variable manipulation and the % notation
-author: georgiostrantzas
-
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 09/22/2020
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 01/16/2024
+ms.author: dipapa
+ms.reviewer: matp
 contributors:
+- jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -18,8 +18,6 @@ search.audienceType:
 ---
 
 # Use variables and the % notation
-
-
 
 Variables are used within flows to store data for further processing. Every variable name must be enclosed by percentage signs (**%**). The percentage sign is used as a special character to denote variables. Any expression between percentage signs should be evaluated.
 
@@ -36,6 +34,13 @@ Occasionally, the percentage sign should be used as a simple character, instead 
 To include a hardcoded text value inside a variable, use quotes. Every value between the quote characters will be treated as a text value and not as a variable name.
 
 ![Screenshot of the hardcoded values in a Set variable action's field.](media\variable-manipulation\hardcoded-values.png)
+
+## Using blank values
+
+Variables can receive null (empty) values. Any variable, dynamic or not, including nested properties, can be populated with a **Blank** value. To check whether a variable holds a blank value use the **Is blank** or **Is not blank** options when configuring the respective [conditional actions](./actions-reference/conditionals.md).
+
+> [!NOTE]
+> Some action parameters can be assigned a blank value if the input argument is nullable. If the parameter can't receive a blank value, an error occurs.
 
 ## Variable names
 

@@ -1,5 +1,5 @@
 ---
-title: Analyze tasks and processes (contains video)
+title: Analyze tasks and processes
 description: Learn how to analyze processes with the task mining capability. The analyze feature adds a recording into the process map and associated analytics.
 author: donums
 contributors:
@@ -42,7 +42,7 @@ To begin analyzing your process, start by checking the status of your recordings
 
 Here's a short video on how to view analytics:<br>
 </br>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMYVy ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cc81da71-f071-4d12-80f4-e806464a4788 ]
 
 ## View your recording status
 

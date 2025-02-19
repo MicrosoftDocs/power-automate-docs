@@ -1,10 +1,10 @@
 ---
-title: Troubleshooter (preview)
+title: Troubleshooter
 description: Troubleshooter application for Power Automate for desktop.
 author: YiannisMavridis
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 07/12/2023
+ms.date: 01/22/2025
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
@@ -14,23 +14,27 @@ search.audienceType:
   - enduser
 ---
 
-# Troubleshooter (preview)
+# Troubleshooter
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
 The troubleshooter in Power Automate for desktop is a component that allows you to diagnose, and in certain cases, troubleshoot, potential issues that you might face in the desktop application of Power Automate.
 
-:::image type="content" source="media/troubleshooter/troubleshooter-window.png" alt-text="Troubleshooter main screen" border="false":::
+:::image type="content" source="media/troubleshooter/troubleshooter-window-four-categories.png" alt-text="Troubleshooter main screen" border="false":::
 
-> [!IMPORTANT]
-> This is a preview feature.
-> 
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+The troubleshooter includes six categories of diagnostics:
 
-The troubleshooter includes two categories of diagnostics, for connectivity and UI/Web automation issues, while it also hosts the functionality that puts Power Automate in an improved diagnostics state for troubleshooting purposes.
+* connectivity
+* Dataverse
+* UI/Web automation
+* picture-in-picture
+* installation issues
+* connectivity for cloud runtime
 
->[!NOTE]
->The existing categories don't require you to be logged in to use the troubleshooter.
+The troubleshooter also hosts the functionality that puts Power Automate in an improved diagnostics state for troubleshooting purposes.
+
+> [!NOTE]
+> The existing categories don't require you to be logged in to use the troubleshooter.
 
 The troubleshooter can be manually opened via the console and the flow designer, through the dedicated menu under **Help** > **Troubleshooter**. It can also be opened via the process file PAD.Troubleshooter.exe, found in the installation folder of Power Automate for desktop.
 
@@ -46,20 +50,20 @@ On a high level, there are three steps that are checked one after the other:
 * Proxy server
 * Required services
 
-:::image type="content" source="media/troubleshooter/steps-of-connectivity-issues-diagnostic.png" alt-text="All steps of diagnostic with no issues detected" border="false":::
+:::image type="content" source="media/troubleshooter/Steps of connectivity issues diagnostic GA.png" alt-text="All steps of diagnostic with no issues detected" border="false":::
 
 For the **internet connection**, the troubleshooter checks in sequence:
 
 1. If an active internet connection can be detected.
-2. If there's proper DNS resolution for the endpoints that need to be checked, mapping their domain names to IP addresses.
-3. If a sample Microsoft page can be pinged.
-4. If the required endpoints can be reached.
+1. If there's proper DNS resolution for the endpoints that need to be checked, mapping their domain names to IP addresses.
+1. If a sample Microsoft page can be pinged.
+1. If the required endpoints can be reached.
 
 For the **proxy server**, the troubleshooter checks if there's any proxy related error regarding the endpoints. For the **required services**, the troubleshooter checks if the endpoints are properly set up and running.
 
 If one step fails with an error, the following steps aren't checked at all, as the success of one check on connectivity issues is a requirement to proceed to the following step.
 
-:::image type="content" source="media/troubleshooter/connectivity-error-detected.png" alt-text="Connectivity error detected during step" border="false":::
+:::image type="content" source="media/troubleshooter/Connectivity error detected GA.png" alt-text="Connectivity error detected during step" border="false":::
 
 > [!NOTE]
 > In case of one or more errors, the respective details are displayed in the troubleshooter screen, after expanding the corresponding error.
@@ -70,11 +74,28 @@ After a category is checked for issues end to end, there’s always the option t
 
 :::image type="content" source="media/troubleshooter/error-dialog-with-troubleshooter-link.png" alt-text="Connection error detected dialog with troubleshooter link" border="false":::
 
-## Improve troubleshooting
+## Dataverse issues
+
+This category detects potential issues around Dataverse that might affect Power Automate for desktop:
+
+* **Provisioning**: This step checks whether the user can provision a Dataverse database in the selected environment.
+* **Permissions**: This step checks whether the user has the required permissions to access the selected environment.
+* **Required endpoints**: This step checks whether the required endpoints for the respective policies are accessible.
+
+## Installation issues
+
+This category diagnoses and troubleshoots potential issues around four different installation types that might be associated to Power Automate for desktop:
+
+* **Power Automate installation type:** This step identifies the installation type and exact version of Power Automate for desktop that is installed on your machine.
+* **.NET Framework version:** This step identifies whether the minimum .NET Framework version (4.8.1) is installed on your machine, so that Power Automate for desktop can work properly.
+* **WebView2:** This step verifies whether WebView2 Runtime is installed on your machine.
+* **Windows Update:** This step checks if there are any pending updates for your Windows on your machine.
+
+## Verbose logging
 
 Apart from the various diagnostics, the troubleshooter also hosts the verbose logging functionality. As per the respective description in the troubleshooter app, the toggle button can be turned on and off, forcing the Power Automate desktop application to function in a verbose logging state. This means that any action taken from you, from that point on, is logged with verbose details in local files. The log files are generated in the default path mentioned in the description (**PowerAutomateVerbose** subfolder in your **Documents** folder).
 
-Because of this feature’s nature, we recommend that you not leave verbose logging on permanently as there might be slower performance and capacity issues. While verbose logging is enabled, Power Automate constantly produces files with verbose logs, which may eventually consume a larger disk capacity. So enable this mode only for the purposes of reproducing the issue faced and capturing the respective logs, before turning it off again.
+Because of this feature’s nature, we recommend that you not leave verbose logging on permanently as there might be slower performance and capacity issues. While verbose logging is enabled, Power Automate constantly produces files with verbose logs, which might eventually consume a larger disk capacity. So enable this mode only for the purposes of reproducing the issue faced and capturing the respective logs, before turning it off again.
 
 There are two registry entries related to verbose logging, as explained in [Improve troubleshooting of the Power Automate troubleshooter](governance.md#improve-troubleshooting-of-the-power-automate-troubleshooter) and [Turn on verbose logging state in Power Automate for desktop](governance.md#turn-on-verbose-logging-state-in-power-automate-for-desktop).
 
@@ -92,8 +113,8 @@ When you turn off verbose logging, the **Export logs** button becomes available 
 
 ### Known issues and limitations
 
-When **Export logs** is used when at least one flow designer is open, not all files may be saved in the .zip file, as some of them are used in the designer process. Those files can’t be automatically deleted.
+When **Export logs** is used when at least one flow designer is open, not all files can be saved in the .zip file, as some of them are used in the designer process. Those files can’t be automatically deleted.
 
-## See also
+## Related information
 
 [Troubleshoot desktop flows](troubleshoot.md)

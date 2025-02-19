@@ -4,13 +4,13 @@ description: Learn about the resources available in Power Automate to help you m
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
+author: v-aangie
 ms.subservice: cloud-flow
-ms.topic: onceptual
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/18/2023
-ms.author: Deonhe
+ms.author: angieandrews
 search.app: 
   - Flow
   - Powerplatform

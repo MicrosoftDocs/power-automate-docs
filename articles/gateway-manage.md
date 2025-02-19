@@ -4,17 +4,16 @@ description: View and install an on-premises data gateway in Power Automate.
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/27/2022
-ms.author: deonhe
+ms.date: 07/16/2024
+ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -31,9 +30,8 @@ With a gateway, you can connect to on-premises data over the following connectio
 * BizTalk Server
 * Custom connectors that you create
 * DB2
-* Desktop flows
 * File System
-* Http with Azure AD
+* Http with Microsoft Entra ID
 * Informix
 * MySQL
 * Oracle Database
@@ -88,6 +86,3 @@ For more information, see [Understand gateways](gateway-reference.md).
 
 <!-- Image references -->
 [1]: ./media/manage-gateway/view-gateways.png
-
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

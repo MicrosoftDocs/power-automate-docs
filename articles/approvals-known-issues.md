@@ -1,21 +1,15 @@
 ---
-title: Known issues and limitations | Microsoft Docs
+title: Known issues and limitations
 description: Known issues and limitations when working with approvals.
 services: ''
 suite: flow
 documentationcenter: na
 author: hamenon 
-editor: ''
-tags: ''
-
-ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
 ms.date: 10/05/2022
-ms.author: tatn
-ms.reviewer: gtrantzas
+ms.author: kewaiss
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -23,25 +17,25 @@ search.audienceType:
 
 # Known issues
 
-## Working with guest users
+## Work with guest users
 
-If you assign a guest user to an approval, that user won't be able to view or act on the approval by default. The guest user must be assigned a valid Power Automate license (per user license or Microsoft 365-based user license) to view or respond to the approval.
+If you assign a guest user to an approval, that user can't view or act on the approval by default. The guest user must be assigned a valid Power Automate license (per user license or Microsoft 365-based user license) to view or respond to the approval.
   
-## Adaptive Cards mismatch in Microsoft Teams
+## Adaptive cards mismatch in Microsoft Teams
 
-There are multiple ways in which you can notify an approver when a flow runs. By default, all flows that handle approvals send an email notification. You can also send an Adaptive Card with the approval to users in Microsoft Teams. If the approver responds through the email notification or through the approval action center, the card in Microsoft Teams won't auto-update. This can lead to situations where there's a mismatch between the status shown on the Adaptive Card and that of the flow.
+There are multiple ways in which you can notify an approver when a flow runs. By default, all flows that handle approvals send an email notification. You can also send an adaptive card with the approval to users in Microsoft Teams. If the approver responds through the email notification or through the approval action center, the card in Microsoft Teams won't auto-update. This can lead to situations where there's a mismatch between the status shown on the adaptive card and that of the flow.
 
-To avoid this, you can choose to disable the default notification email that is sent to the user as part of approval creation. 
+To avoid this, you can disable the default notification email sent to the user as part of approval creation.
 
 ![Disable default email notification.](./media/create-approval-response-options/disable-default-notification.png)
 
 ## Abandoned approvals in the approval action center
 
-As part of the flow, you can send an approval request to a user and wait for a response. Today, an approval flow can wait for 28 days. If the wait time exceeds 28 days, that flow will fail. This only impacts the flow itself, meaning that the approval continues to exist in the action center. This can lead to cases where there are abandoned approvals in the approval action center that have no flow waiting on them. The requestor or environment admin will need to manually delete these approvals from the action center.
+As part of the flow, you can send an approval request to a user and wait for a response. An approval flow can wait for 28 days. If the wait time exceeds 28 days, that flow fails. This only impacts the flow itself, meaning that the approval continues to exist in the action center. This can lead to cases where there are abandoned approvals in the approval action center that have no flow waiting on them. The requestor or environment admin then needs to manually delete these approvals from the action center.
 
 ## Anchors
 
-Anchor links aren't supported. Unexpected results will occur if you use anchors.
+Anchor links aren't supported. Unexpected results occur if you use anchors.
 
 ## Data templating
 
@@ -49,34 +43,39 @@ Data templating isn't fully supported for adaptive cards in Power Automate. As a
 
 ## Approvals with custom responses set to Everyone must approve
 
-Approvals that rely on custom responses can fail if they're sent to many users with the type set to "Everyone must approve". This failure is due to data size limitations of the results field.
+Approvals that rely on custom responses can fail if they're sent to many users with the type set to **Everyone must approve**. This failure is due to data size limitations of the results field.
 
-### PowerApps (V2) trigger doesn't support non-open API flows
+## Update a Power Apps (V2) trigger to invoker connection
 
-If you update your PowerApps version 1 trigger to the PowerApps (V2) trigger, your flow receives a connection error. To work around this issue, update your flow to the PowerApps (V2) trigger, remove and re-add the flow, and then save the app.
+The Power Apps (V2) trigger supports both embedded and invoker connections. When you update the connections in your Power Apps (V2) trigger to invoker connections, you must refresh or remove and re-add the flow in the app and save the app.
 
-### Updating PowerApps (V2) trigger to invoker connection
+To learn more, go to [Known issues with Power Apps (V2) trigger](/troubleshoot/power-platform/power-automate/known-issues-power-apps-v2-trigger).
 
-The PowerApps (V2) trigger supports both embedded and invoker connections. When you update the connections in your PowerApps (V2) trigger to invoker connections, you must refresh or remove and re-add the flow in the app and save the app. 
-
-To learn more, go to [Known issues with PowerApps (V2) trigger](/troubleshoot/power-platform/power-automate/known-issues-power-apps-v2-trigger).
-
-## Splitting create and wait actions
+## Split create and wait actions
 
 It's possible to create flows with the approval connector where you use the *Create an approval* and *Wait for an approval* as independent actions. If a user immediately responds to an approval request before the flow reaches the wait action, it's possible for the flow to become stuck in the wait stage. To avoid getting the flow stuck, ensure that the create and wait actions are called close together within the flow. Alternately, change the status of the approval in Dataverse before you call the wait action.
 
-## Using approval outcomes in loops
+## Use approval outcomes in loops
 
-When you use approvals with *do until* loops, users need to account for all possible outcomes of a flow. If not, the flows could be stuck in infinite loops. For 'basic' and 'await all approvals', the final states can be *Approved*, *Rejected*, or *Canceled*. For custom approvals, it's based on what the user chooses to have as the options for the approval. Use a condition or switch statement with approval flow instead of *do until* loops.
+When you use approvals with *do until* loops, users need to account for all possible outcomes of a flow. If not, the flows could be stuck in infinite loops. For *basic* and *await all approvals*, the final states can be **Approved**, **Rejected**, or **Canceled**. Custom approvals are based on what the user chooses to have as the options for the approval. Use a condition or switch statement with approval flow instead of *do until* loops.
+
+## View details of an approval
+
+To view details of an approval, select an individual approval to open it. Formerly, you could also view the details in the **Details** column on the **Received** tab of the Approvals list view, but this column is now removed.
+
 
 ## Issues with email notifications
 
-Here's an explanation of the process for sending an approval email notification, as well as a description of the possible email notification statuses and troubleshooting.
+Here's an explanation of the process for sending an approval email notification, and a description of the possible email notification statuses and troubleshooting.
 
 Sending approval email notifications is a two-step process:
 
 1. Power Automate places a request for the email to be sent.
 1. The email goes into a queue.
+
+### Reply to an approval email
+
+When you reply to an approval email notification, you must add your intended recipient(s) to the **To:** line. Previously, the person who sent you the approval request would be automatically added to the **To:** line when you selected **Reply**, but now it must be done manually.
 
 ### Email status definitions
 

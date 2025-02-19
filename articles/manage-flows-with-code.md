@@ -7,12 +7,10 @@ contributors:
   - v-aangie
   - JimDaly
 ms.reviewer: angieandrews
-ms.date: 06/06/2023
+ms.date: 10/29/2024
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.author: cgarty
-ms.prod: 
-ms.technology: 
 audience: Power user
 ---
 
@@ -38,7 +36,7 @@ More information: [Use the Organization service](/power-apps/developer/data-plat
 
 #### [Web API](#tab/webapi)
 
-You can use any programming language or technology that supports sending HTTP requests, including .NET. You can use familiar tools like [Postman](https://www.postman.com/) to send requests.
+You can use any programming language or technology that supports sending HTTP requests, including .NET.
 
 More information: [Use the Microsoft Dataverse Web API](/power-apps/developer/data-platform/webapi/overview)
 
@@ -58,7 +56,6 @@ More information:
 - [Use the Organization service](/power-apps/developer/data-platform/org-service/overview)
 - [IOrganizationService Interface](/power-apps/developer/data-platform/org-service/iorganizationservice-interface)
 
-
 #### [Web API](#tab/webapi)
 
 With the Web API, you need to use OAuth to authenticate to the Web API endpoint. See [View developer resources](/power-apps/developer/data-platform/view-download-developer-resources) to get the specific organization URI you should use.
@@ -69,7 +66,6 @@ Your base URL should look something like this:
 
 More information:
 
-- [Set up a Postman environment](/power-apps/developer/data-platform/webapi/setup-postman-environment)
 - [Quick Start: Web API sample (C#)](/power-apps/developer/data-platform/webapi/quick-start-console-app-csharp)
 - [Compose HTTP requests and handle errors](/power-apps/developer/data-platform/webapi/compose-http-requests-handle-errors)
 - [Use OAuth authentication with Microsoft Dataverse](/power-apps/developer/data-platform/authenticate-oauth)
@@ -92,7 +88,7 @@ The following table describes important columns in the workflow table:
 |`ismanaged`|Bool|Indicates if the flow was installed via a managed solution.|
 |`modifiedby`|Lookup|The last user who updated the flow.|
 |`modifiedon`|DateTime|The last time the flow was updated.|
-|`name`|String|The display name that you have given the flow. |
+|`name`|String|The display name that you gave the flow. |
 |`ownerid`|Lookup|The user or team who owns the flow.|
 |`statecode`|Choice|The status of the flow. The status can be:  <br>`0` - Draft (Off)  <br>`1` - Activated (On)<br>`2` - Suspended.|
 |`type`|Choice|Indicates if the flow is a running flow, or a template that can be used to create more flows.  <br>`1` - Definition,  <br>`2` - Activation <br>`3` - Template.|
@@ -104,7 +100,6 @@ The following table describes important columns in the workflow table:
 >
 > Lookup columns also have corresponding GUID [lookup properties](/power-apps/developer/data-platform/webapi/web-api-properties#lookup-properties) that can be used in queries. Lookup properties have this naming convention: `_<logical name>_value`. For the workflow entitytype in Web API you can reference these lookup properties: `_createdby_value`, `_modifiedby_value`, and `_ownerid_value`.
 
-
 ## List flows
 
 To retrieve a list of cloud flows, you can query the workflow table. The following query returns the first automated, instant, or scheduled flow that is currently 'on':
@@ -112,7 +107,6 @@ To retrieve a list of cloud flows, you can query the workflow table. The followi
 #### [SDK for .NET](#tab/sdk)
 
 This static `OutputFirstActiveFlow` method requires an authenticated client that implements the <xref:Microsoft.Xrm.Sdk.IOrganizationService>. It uses the [IOrganizationService.RetrieveMultiple](xref:Microsoft.Xrm.Sdk.IOrganizationService.RetrieveMultiple%2A) method.
-
 
 ```csharp
 /// <summary>
@@ -175,7 +169,6 @@ public static void OutputFirstActiveFlow(IOrganizationService service)
 
 To retrieve more records, remove the [TopCount](xref:Microsoft.Xrm.Sdk.Query.QueryExpression.TopCount) limit.
 
-
 **Output**
 
 ```console
@@ -202,8 +195,8 @@ More information:
 
 This query uses `$filter` to limit the results:
 
-- `category eq 5` limits the results to only automated, instant, or scheduled flows.
-- `statecode eq 1` limits the results only the flows that are 'on'.
+- `category eq 5` limits the results to only automated, instant, or scheduled flows
+- `statecode eq 1` limits the results only the flows that are 'on'
 
 Also, `$top=1` limits the number of flows returned to one.
 
@@ -320,7 +313,6 @@ public static Guid CreateCloudFlow(IOrganizationService service)
 
 More information: [Create table rows using the Organization Service](/power-apps/developer/data-platform/org-service/entity-operations-create)
 
-
 #### [Web API](#tab/webapi)
 
 Send a `POST` request to the `workflows` resource.
@@ -346,7 +338,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 OData-Version: 4.0
-OData-EntityId: [Organization URI]/api/data/v9.2/workflows(7b177b96-f9ed-ed11-8849-000d3a993550)
+OData-EntityId: [Organization URI]/api/data/v9.2/workflows(00aa00aa-bb11-cc22-dd33-44ee44ee44ee)
 ```
 
 > [!NOTE]
@@ -486,7 +478,6 @@ More information: [Update and delete table rows using the Web API > Basic update
 
 The following examples show how to delete the workflow record that represents a cloud flow.
 
-
 #### [SDK for .NET](#tab/sdk)
 
 The static `DeleteCloudFlow` method deletes a workflow record.
@@ -547,14 +538,13 @@ If you want to change the access rights you grant when you share a record, use t
 
 To unshare a record, use the `RevokeAccess` message. With the SDK, use the [RevokeAccessRequest Class](xref:Microsoft.Crm.Sdk.Messages.RevokeAccessRequest) and with the Web API use the [RevokeAccess Action](xref:Microsoft.Dynamics.CRM.RevokeAccess). More information: [Revoking access](/power-apps/developer/data-platform/security-sharing-assigning#revoking-access)
 
-
 ## Export flows
 
 When a flow is part of a solution, you can export it by exporting the solution that contains the flow using the `ExportSolution` message.
 
 #### [SDK for .NET](#tab/sdk)
 
-The static `ExportSolution` example method below uses the [ExportSolutionRequest](xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest) to retrieve a `byte[]` containing the ZIP file of the unmanaged solution with the specified [UniqueName](/power-apps/developer/data-platform/reference/entities/solution#BKMK_UniqueName).
+The following static `ExportSolution` example method uses the [ExportSolutionRequest](xref:Microsoft.Crm.Sdk.Messages.ExportSolutionRequest) to retrieve a `byte[]` containing the ZIP file of the unmanaged solution with the specified [UniqueName](/power-apps/developer/data-platform/reference/entities/solution#BKMK_UniqueName).
 
 ```csharp
 /// <summary>
@@ -577,7 +567,6 @@ public static byte[] ExportSolution(
    return response.ExportSolutionFile;
 }
 ```
-
 
 #### [Web API](#tab/webapi)
 
@@ -622,8 +611,8 @@ When you import flows, you should set the following parameters:
 
 | Property name                    | Description                               |
 | -------------------------------- | ----------------------------------------- |
-| `OverwriteUnmanagedCustomizations` | If there are existing instances of these flows in Dataverse, this flag needs to be set to `true` to import them. Otherwise they won't be overwritten. |
-| `PublishWorkflows`| Indicates if classic Dataverse workflows will be activated on import. This setting doesn't apply to other types of flows. |
+| `OverwriteUnmanagedCustomizations` | If there are existing instances of these flows in Dataverse, this flag needs to be set to `true` to import them. Otherwise they aren't overwritten. |
+| `PublishWorkflows`| Indicates if classic Dataverse workflows are activated on import. This setting doesn't apply to other types of flows. |
 | `CustomizationFile`| A base 64-encoded zip file that contains the solution. |
 
 #### [SDK for .NET](#tab/sdk)
@@ -653,7 +642,6 @@ public static void ImportSolution(
 
 The following example uses the [ImportSolution Action](xref:Microsoft.Dynamics.CRM.ImportSolution) to import a solution. The `CustomizationFile` contains the base64 encoded string that represents the bytes of the solution file.
 
-
 **Request**
 
 ```http
@@ -680,7 +668,17 @@ OData-Version: 4.0
 
 ---
 
-### See also
+## FAQ
+
+### What about the API at api.flow.microsoft.com?
+
+The API at **api.flow.microsoft.com** isn't supported. Customers should instead use the Dataverse Web APIs for Power Automate documented previously in this article.
+
+Alternatively, customers can use the management connectors: [Power Automate Management](/connectors/flowmanagement/) or [Power Automate for Admins](/connectors/microsoftflowforadmins/).
+
+Customers can use the unsupported APIs at `api.flow.microsoft.com` at their own risk. These APIs are subject to change, so breaking changes could occur.
+
+## Related information
 
 [Entity class operations using the Organization service](/power-apps/developer/data-platform/org-service/entity-operations)  
 [Perform operations using the Web API](/power-apps/developer/data-platform/webapi/perform-operations-web-api)  

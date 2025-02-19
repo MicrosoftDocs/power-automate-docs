@@ -1,5 +1,5 @@
 ---
-title: Share task mining processes (contains video)
+title: Share task mining processes
 description: Share a task mining process with others so that they can offer input and additional insights. You can share a process with a co-owner or a contributor.
 author: donums
 contributors:
@@ -21,7 +21,7 @@ When you create a process in the process mining capability, only you can see it.
 
 Here's a short video on how to share a process.<br>
 </br>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6PP]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0998b545-3c11-417b-b46b-f4c67139b230]
 
 There are two primary ways to share a process:
 

@@ -4,7 +4,7 @@ description: Learn about how to upload custom developed actions for desktop flow
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/23/2023
+ms.date: 10/19/2023
 ms.author: dipapa
 ms.reviewer: jpapadimitriou
 contributors:
@@ -16,8 +16,6 @@ search.audienceType:
 ---
 
 # Uploading custom actions to an environment
-
-[!INCLUDE[cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
 
 This article explains how to upload custom actions to an environment.
 
@@ -33,7 +31,7 @@ Ensure that you have the following permissions to upload a custom actions group 
 
 1. Go to [Power Automate](https://make.powerautomate.com).
 
-1. Select **Custom actions (preview)** under **Data**. 
+1. Select **Custom actions** under **Data**. 
 
     :::image type="content" source="media/custom-actions/upload-custom-actions/custom-actions.png" alt-text="Screenshot of Custom actions under Data section" border="true":::
 
@@ -88,7 +86,7 @@ There are three types of access a maker can have regarding custom actions.
 
 Only co-owners can update a file. Update files when you want to update existing custom actions by uploading a .cab file.
 
-Update file (Co-owners only) for when you want to update the existing custom actions (preview) etc. by uploading a .cab file.
+Update file (Co-owners only) for when you want to update the existing custom actions etc. by uploading a .cab file.
 
 :::image type="content" source="media/custom-actions/upload-custom-actions/upload.png" alt-text="Screenshot of Update custom actions group" border="true":::
 
@@ -102,9 +100,9 @@ Only co-owners can delete custom actions. Deleting a custom actions group causes
 
 [Use custom actions](use-custom-actions.md)
 
-### See also
+## Related information
 
-- [Assets library (preview)](assets-library.md)
+- [Assets library](assets-library.md)
 - [Create custom actions](create-custom-actions.md)
 - [Custom actions](custom-actions.md)
 

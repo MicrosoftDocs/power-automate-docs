@@ -133,12 +133,12 @@ Before you start using the process mining capability, make sure you have the fol
 
   - To learn how to add a database to an environment, go to [Add a Microsoft Dataverse database](/power-platform/admin/create-database).  
 
-- Adequate roles are assigned for users who want to use the process mining capability. Typically an Environment Maker security role is recommended. Go to [Security and privacy](process-advisor-security.md) to learn more.
+- Adequate roles are assigned for users who want to use the process mining capability. The **Environment Maker** is required to create, share, and contribute to processes. Go to [Security and privacy](process-advisor-security.md) to learn more.
 
 Additional considerations for specific capabilities:
 
 - For the Power Automate Process Mining desktop app, download and install [Power Automate Process Mining desktop app](minit/how-to-start-with-minit-desktop-application.md).
 
-- To customize your report, you need to [set up your Power BI workspace](process-mining-pbi-workspace.md) and [register the process mining service principal in Azure AD](process-mining-pbi-workspace.md#install-azure-tools).
+- To customize your report, you need to [set up your Power BI workspace](process-mining-pbi-workspace.md) and [register the process mining service principal in Microsoft Entra ID](process-mining-pbi-workspace.md#install-azure-tools).
 
 - For task mining, download and install [Power Automate for desktop](desktop-flows/install.md).

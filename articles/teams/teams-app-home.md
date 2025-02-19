@@ -1,22 +1,17 @@
 ---
-title: Manage your flows in Microsoft Teams | Microsoft Docs
-description: Learn how to manage flows using the Power Automate app in Microsoft Teams
-services: ''
+title: Manage flows in Microsoft Teams
+description: Learn how to manage flows using the Workflows app in Microsoft Teams
 suite: flow
-documentationcenter: na
-author: msftman
-editor: ''
-tags: ''
+author: v-aangie
+contributors:
+  - kewaiss
+  - v-aangie
 ms.collection: get-started
-
-ms.devlang: na
 ms.subservice: teams
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 11/16/2020
-ms.author: hamenon
-ms.reviewer: gtrantzas
+ms.topic: conceptual
+ms.date: 10/27/2023
+ms.author: kewaiss
+ms.reviewer: angieandrews
 ---
 
 # Manage flows in Microsoft Teams
@@ -25,7 +20,7 @@ The **Home** tab provides an overview of your flows from your organization's def
 
 By default, the **Home** tab is filtered to display flows that use Microsoft Teams triggers and actions. You can select **Microsoft Teams flows** to change the filter to display all your flows.
 
-![Home tab.](../media/power-automate-teams-app-create/home-tab.png)
+:::image type="content" source="media/teams-app-home/display-flows.png" alt-text="Screenshot of a confirmation message that says 'Worflow added successfully'.":::
 
 On the **Home** tab, you can view the information that's displayed in each of the following six columns to get an overview of your flows.
 
@@ -38,22 +33,19 @@ Column | Description
  Type |Shows the type of flow. Flows can be **Automated**, **Instant**, or **Scheduled**.
  Team and channel |If your flow reads from or writes to any team or channel, that information is provided here so you can get a quick glance of the teams your flow touches.
   |
+> [!TIP]
+> You can select any flow to view more details about it.
 
+:::image type="content" source="media/teams-app-home/details.png" alt-text="Screenshot of details for the selected flow.":::
 
->[!TIP]
->You can select any flow to view more details about it. 
+## Known issue
 
-![Flow details.](../media/power-automate-teams-app-create/flow-details.png)
+The Workflows app in Microsoft Teams shows your flows that are located only in your organization's default environment.
 
-## Known issues
+## Related information
 
-The Power Automate app in Microsoft Teams only shows your flows that are located in your organization's default environment. 
-
-## Related articles
-
-[Create flows in Microsoft Teams](./teams-app-create.md).
-
-View the [Microsoft Teams connector documentation](/connectors/teams/).
+- [Create flows in Microsoft Teams](./teams-app-create.md)
+- [Microsoft Teams connector documentation](/connectors/teams/)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

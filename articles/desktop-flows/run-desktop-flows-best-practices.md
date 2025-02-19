@@ -1,12 +1,12 @@
 ---
 title: Best practices
 description: See the best practices for running Power Automate desktop flows.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 02/15/2023
 ms.author: pefelesk
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker
@@ -67,6 +67,6 @@ To provide load balancing:
 >
 > - Offline gateway members within a cluster will negatively impact performance. Disable or remove these members.
 > - If you are using local Windows accounts, all machines in the cluster must have the same local account with the same password. Use these credentials when you create the [desktop flow connection](desktop-flow-connections.md).
->- If you are using Active Directory or Azure AD-joined machines, confirm that the user account in the [desktop flow connection](desktop-flow-connections.md) can access all the gateways in the cluster.
+>- If you are using Active Directory or Microsoft Entra ID-joined machines, confirm that the user account in the [desktop flow connection](desktop-flow-connections.md) can access all the gateways in the cluster.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

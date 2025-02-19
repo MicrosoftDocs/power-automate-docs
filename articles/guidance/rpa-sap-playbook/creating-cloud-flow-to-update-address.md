@@ -7,13 +7,12 @@ author: kathyos
 editor: ''
 ms.custom: guidance
 
-ms.devlang: na
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2022
 ms.author: kathyos
-ms.reviewer: deonhe
+ms.reviewer: angieandrews
 ---
 
 # Create the cloud flow to update an address with Power Automate 
@@ -22,7 +21,7 @@ Now, we'll create the cloud flow that employees use to request an updated addres
 
 We highly recommended that you create cloud flows, desktop flows and other Microsoft Power Platform artifacts within solutions to allow for better portability, application lifecycle management (ALM), and encapsulation.
 
-1. Navigate to <https://make.powerautomate.com> and sign in with your Azure Active Directory (Azure AD) credentials.
+1. Navigate to <https://make.powerautomate.com> and sign in with your Microsoft Entra credentials.
 
 2. Confirm that you're in the same environment as the one in which you built the desktop flow with Power Automate Desktop, and then select **Solutions** > **+ New solution**.
 
@@ -76,7 +75,7 @@ We highly recommended that you create cloud flows, desktop flows and other Micro
 
     ![Screenshot of selecting the Azure Key Vault Get secret action in the Power Automate flow designer.](media/selecting-Azure-Key-Vault-get-secret-action.png)
 
-12. If you don't have an existing Key Vault connection, you'll be prompted to create one. You can sign in either with an Azure AD user account or a Service Principal (recommended).
+12. If you don't have an existing Key Vault connection, you'll be prompted to create one. You can sign in either with a Microsoft Entra user account or a Service Principal (recommended).
 
     ![Screenshot of an Azure Key Vault action in the Power Automate flow designer.](media/selecting-Azure-Key-Vault-action-in-flow-designer.png)
 

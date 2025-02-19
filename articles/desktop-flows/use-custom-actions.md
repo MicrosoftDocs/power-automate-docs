@@ -4,7 +4,7 @@ description: How to use custom actions in desktop flows
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/15/2023
+ms.date: 10/19/2023
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors:
@@ -15,19 +15,17 @@ search.audienceType:
   - enduser
 ---
 
-# Using custom actions in desktop flows (preview)
-
-[!INCLUDE[cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
+# Using custom actions in desktop flows
 
 > [!NOTE]
 > An Attended RPA license is required to include and use custom actions in desktop flows.
 
 > [!IMPORTANT]
-> - Ensure the .dll files describing Custom actions (preview), their dependency .dll files, and the .cab files are properly signed with a digital certificate trusted by your organization. The certificate should also be installed on the device under the trusted root certificate authority where the desktop flow with custom action dependencies is modified and/or executed.
+> - Ensure the .dll files describing Custom actions, their dependency .dll files, and the .cab files are properly signed with a digital certificate trusted by your organization. The certificate should also be installed on the device under the trusted root certificate authority where the desktop flow with custom action dependencies is modified and/or executed.
 
-You can include custom actions in desktop flows through the [Assets library (preview)](assets-library.md) using Power Automate for desktop's designer.
+You can include custom actions in desktop flows through the [Assets library](assets-library.md) using Power Automate for desktop's designer.
 
-To use Assets library, select **Assets library (preview)** in the designer.
+To use Assets library, select **Assets library** in the designer.
 
 :::image type="content" source="media/custom-actions/use-custom-actions/assets-library-button.png" alt-text="Screenshot of the Assets library button" border="false":::
 
@@ -38,9 +36,9 @@ Alternatively, use the **Tools** bar.
 > [!IMPORTANT]
 > This feature requires Power Automate for desktop v2.32 or later.
 
-## Custom actions (preview) tab
+## Custom actions tab
 
-[Custom actions (preview)](custom-actions.md) tab shows you the custom actions uploaded in the environment you've selected.
+[Custom actions](custom-actions.md) tab shows you the custom actions uploaded in the environment you've selected.
 
 > [!NOTE]
 > You can only see custom actions shared with you.
@@ -53,7 +51,7 @@ After you complete the custom action inclusion and close the asset library, the 
 
 To include a custom action in a desktop flow, drag and drop or double-click on it.
 
-### See also
+## Related information
 
 - [Assets library ](assets-library.md)
 - [Upload custom actions](upload-custom-actions.md)

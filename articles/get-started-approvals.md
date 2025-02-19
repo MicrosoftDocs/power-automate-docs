@@ -1,16 +1,13 @@
 ---
-title: Get started with Power Automate approvals | Microsoft Docs
+title: Get started with Power Automate approvals
 description: Learn about the permissions and general details about Power Automate approvals.
-services: ''
 suite: flow
-author: msftman
-editor: ''
-tags: ''
+author: donums
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 06/17/2022
-ms.author: deonhe
-ms.reviewer: gtrantzas
+ms.date: 10/21/2024
+ms.author: derahonuorah
+ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
@@ -37,8 +34,7 @@ When you submit an approval in a flow, approvers are notified and can review and
 
 The following image shows the full list of [approval actions](/connectors/approvals/#actions) that you can use in your flows.  
 
->[!div class="mx-imgBorder"]  
->![Screenshot showing the actions Create an approval, Start and wait for an approval, and Wait for an approval.](media/get-started-approvals/list-approval-actions.png "Approvals actions")
+:::image type="content" source="media/get-started-approvals/list-approval-actions.png" alt-text="Screenshot of the actions Create an approval, Start and wait for an approval, and Wait for an approval.":::
 
 If you want to quickly get started with approvals, use the **Start and wait for an approval** action. This action lets you provide the information that should be in the approval request and the approvers who will receive the request. 
 
@@ -52,6 +48,7 @@ There are four approval types you can use.
 | Approve/Reject - First to respond         | Assigned approvers are given two options: **Approve** or **Reject**. <br> Approval or rejection by any approver completes the request. The actions that follow the **Start and wait for an approval** action run after any one of the approvers gives approval. |
 | Custom Responses - Wait for all responses | You define the options the assigned approvers can choose from. <br>All approvers must respond to complete the process. |
 | Custom Responses - Wait for one response  | You define the options the assigned approvers can choose from. <br> A response from any approver completes the process.|
+| Sequential approval | Approvals are requested one at a time, in a specific order. Each approver must respond before the request moves to the next approver in the sequence. The actions that follow the **Start and wait for an approval** action run after all the approvers in the sequence have responded.
 
 ## Prerequisites
 
@@ -66,8 +63,8 @@ When you create approval flows, they're saved in Dataverse. Initially, when you 
 
 It can take a few minutes for the database provisioning to be completed, and you'll notice this delay the first time that you run the flow. Other users who create approval flows don't need any elevated permissions in the environment.
 
->[!NOTE]
->If you're using the default environment, you don't need to provision the Dataverse database. If you create approval flows, the Dataverse database is created for you automatically in the default environment.
+> [!NOTE]
+> If you're using the default environment, you don't need to provision the Dataverse database. If you create approval flows, the Dataverse database is created for you automatically in the default environment.
 
 ## License to create flows
 
@@ -100,16 +97,15 @@ Use one of the following options to get started creating approval flows.
 
 ## Assign approvals to any user in your tenant
 
-You can assign approvals to users&mdash;including guest users and Microsoft 365 groups&mdash;in your current Dataverse environment or your Azure Active Directory (Azure AD) tenant.
+You can assign approvals to users&mdash;including guest users and Microsoft 365 groups&mdash;in your current Dataverse environment or your Microsoft Entra tenant.
 
 When you assign an approval to users who aren't in your environment, they're automatically given the *Approvals User* Dataverse security role. Users need this role for their responses to be processed and persisted in their approvals history.
 
 The following tenant configurations don't allow this:
 
-- When the AllowAdHocSubscriptions setting in Azure AD is disabled. In this case, you can request your tenant administrator to enable it. You can find more information about this in the self-service signup.
+- When the AllowAdHocSubscriptions setting in Microsoft Entra is disabled. In this case, you can request your tenant administrator to enable it. You can find more information about this in the self-service signup.
 - If a security group has been used to control which users have access to the Dataverse environment.
 - Power Automate [US Government plans](./us-govt.md).
-
 
 After you assign an approval request to a user, they can respond directly from an Outlook email, a Microsoft Teams adaptive card, or the Power Automate action center if they have a Power Automate license or an Office 365 or a Dynamics 365 license with built-in Power Automate capabilities. You can find a list of these Office 365 and Dynamics 365 licenses in the Microsoft Power Apps and Power Automate licensing guide.
 

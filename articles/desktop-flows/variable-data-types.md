@@ -1,13 +1,12 @@
 ---
 title: Variable data types
 description: See all the available variable data types in desktop flows.
-author: georgiostrantzas
-
+author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/09/2023
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 10/29/2024
+ms.author: dipapa
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -16,7 +15,6 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-
 # Variable data types
 
 When you create variables in your flows, Power Automate converts them to a specific type based on their content.
@@ -124,7 +122,7 @@ For example, suppose that a flow retrieves the content of an Excel worksheet and
 
 If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']%** notation.
 
-If you loop through a datatable with a **For Each** action, the variable that will contain the current iteration’s data is considered to be a datarow. 
+If you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is considered to be a datarow. 
 
 Similarly to lists, you use the **%VariableName[StartRow:StopRow]%** notation to access a specific part of a datatable. The expression retrieves only the rows defined by the two indexes, while the **StopRow** position is the boundary of the slicing and doesn't get retrieved.
 
@@ -152,6 +150,9 @@ To create a new empty **Custom object**, use the **Set variable** action and pop
 
 ![Screenshot of Set variable action that creates a new custom object.](media\variable-data-types\create-custom-object-variable.png)
 
+> [!IMPORTANT]
+> Reserved keywords can't be used as custom object properties. For the full list of reserved keywords go to [Reserved keywords in desktop flows](reserved-keywords.md).
+
 To update the value of an existing property or add a new one, deploy a **Set variable** action, populate the property's name in the **Set** field, and enter its value in the **To** field.
 
 ![Screenshot of a Set variable action that adds a new property to a custom object.](media\variable-data-types\add-property-custom-object.png)
@@ -162,7 +163,7 @@ Apart from literal values, you can use variables to dynamically set the properti
 
 ## Connector object
 
-Connector objects store information from cloud connectors and work similarly to custom objects. Their properties usually contain lists of other connector objects. Accessing values works as in custom objects, although accessing nested values may require more complicated expressions.
+Connector objects store information from cloud connectors and work similarly to custom objects. Their properties usually contain lists of other connector objects. Accessing values works as in custom objects, although accessing nested values might require more complicated expressions.
 
 :::image type="content" source="media\variable-data-types\connector-object.png" alt-text="Screenshot of a custom object variable in the variables viewer.":::
 
@@ -212,7 +213,7 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 
 ## Connections
 
-- **SQL connection** – Contains a connection to a SQL database established through the **Open SQL connection** action.
+- **SQL connection** – Contains a connection to an SQL database established through the **Open SQL connection** action.
 
   [SQL connection data type properties](datatype-properties.md#sql-connection)
 
@@ -269,6 +270,12 @@ This section presents all the available data types that don't belong to any of t
 - **CMD session** – Contains a CMD session created through the **Open CMD session** action.
 
 [CMD data type properties](datatype-properties.md#cmd-session)
+
+### Credentials
+
+- **Credential** – Contains a credential retrieved through the **Get credential (preview)** action.
+
+[Credential data type properties](datatype-properties.md#credential)
 
 ### Dates and time
 

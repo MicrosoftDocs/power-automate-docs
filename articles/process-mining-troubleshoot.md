@@ -3,11 +3,12 @@ title: Troubleshoot issues in the process mining capability
 description: Learn how to troubleshoot issues in the process mining capability in Power Automate.
 author: donums
 contributors:
+  - rosikm
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 07/18/2023
+ms.date: 02/06/2025
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -18,7 +19,7 @@ search.audienceType:
 
 # Troubleshoot issues in the process mining capability
 
-This article explains common issues and error messages in the process mining capability. You'll find solutions to troubleshoot with procedures and helpful tips.
+This article explains common issues and error messages in the process mining capability. You find solutions to troubleshoot with procedures and helpful tips.
 
 ## Issues with dataflow refresh
 
@@ -52,7 +53,7 @@ To troubleshoot:
 
 ### "There was an issue with your Dataverse access privileges for dataflows"
 
-When you go through setup, the process mining capability creates a dataflow that's tied to the process. A dataflow requires certain sets of Dataverse privileges. If these privileges are revoked or altered, it may result in this issue.
+When you go through setup, the process mining capability creates a dataflow that's tied to the process. A dataflow requires certain sets of Dataverse privileges. If these privileges are revoked or altered, it might result in this issue.
 
 To troubleshoot, system administrators can review the privileges on the dataflow tables for the environment Maker role, and ensure they have the default privileges at the **Organization** level set.
 
@@ -62,11 +63,11 @@ To troubleshoot, system administrators can review the privileges on the dataflow
 
 ### Failure when analyzing
 
-If you encounter an error message while attempting to create and analyze a process, it may be due to a missing security role. To resolve this, contact the administrator of your environment and request that they assign you the **Environment Maker** security role.
+If you encounter an error message while attempting to create and analyze a process, it might be due to a missing security role. To resolve this, contact the administrator of your environment and request that they assign you the **Environment Maker** security role.
 
 ### Analyze a process
 
-Once you're done with setup, select **Analyze**. You'll be able to view the Analytics page when the analysis is complete. Analysis typically takes a few minutes but may be faster or slower depending on how much data needs to be analyzed.
+Once you're done with setup, select **Analyze**. You're able to view the Analytics page when the analysis is complete. Analysis typically takes a few minutes but might be faster or slower depending on how much data needs to be analyzed.
 
 > [!NOTE]
 >
@@ -74,15 +75,35 @@ Once you're done with setup, select **Analyze**. You'll be able to view the Anal
 
 For more information and a short video of analytics, go to [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics).
 
+### "The process can't be analyzed because there are too many processes in this environment. To fix this, delete some of the processes, use a different environment, or use your own Power BI workspace."
+
+Currently, Dataverse-managed Power BI workspaces allow only 1,000 reports for each environment. This means you need to delete a few processes from the current environment, or create a new environment to analyze the process in. To learn more about limitations, go to [Workspaces in Power BI&mdash;Considerations and limitations](/power-bi/collaborate-share/service-new-workspaces#considerations-and-limitations).
+
+To delete a process, follow these steps:
+
+1. Select **Processes** from the breadcrumbs on the analytics or details page, or select **All procesess** from the **Process mining** home page.
+
+    :::image type="content" source="media/process-mining-troubleshoot/processes-breadcrumbs.png" alt-text="Screenshot of 'processes' in the breadcrumbs.":::
+
+1. Select the vertical ellipses (**&vellip;**) for the process you want to delete, and then select **Delete process** from the dropdown menu.
+
+    :::image type="content" source="media/process-mining-troubleshoot/delete-process.png" alt-text="Screenshot of deleting a process from the dropdown menu.":::
+
+1. To delete the process, select **Confirm**.
+
+    Another option is to use your own Power BI workspace to store the generated reports. This option surpasses the limit of the Dataverse-managed Power BI workspace.
+
+    To learn more, go to [Create your own custom Power BI workspace](process-mining-pbi-workspace.md).
+
 ### "You must have one case with at least two activities to analyze your process. Please change your data."
 
-Process mining isn't normally helpful when there's only one activity name in the data. This is because the process map visualizes the flow of the process from one activity to the next. In this case, you should do the following:
+Process mining isn't normally helpful when there's only one activity name in the data. This is because the process map visualizes the flow of the process from one activity to the next. In this case, you should do the steps in the following list:
 
 - Check the column that's been mapped to activity name.
 - Confirm that there's only one value for that column.
 - Determine if there's another column that contains something with more than one possible value that can represent activities of the process.
 
-### "Following column(s) do not have the right data types: [x]. Please check your data and try again."
+### "Following column(s) don't have the right data types: [x]. Please check your data and try again."
 
 The *case ID* and *activity name* columns should be of the **Text** data type. The *timestamp* columns should be of the **Date/Time** data type. One of the most frequent causes of invalid format is in the *timestamp* column. To fix the format, return to setup and select the icon next to the *timestamp* column, and ensure it's been mapped to **Date/Time**.
 
@@ -108,7 +129,7 @@ Where the format is **dd/mm/yyyy hh:mm:ss**, setting the locale to **English (Ca
 
 ### "More than 50% of your data has invalid format. Please check your data and try again."
 
-To fix this issue, go to [Following column(s) do not have the right data types: [x]. Please check your data and try again.](#following-columns-do-not-have-the-right-data-types-x-please-check-your-data-and-try-again)
+To fix this issue, go to [Following column(s) don't have the right data types: [x]. Please check your data and try again.](#following-columns-dont-have-the-right-data-types-x-please-check-your-data-and-try-again)
 
 ### "Following column(s) are missing from your dataflow: [x]. Please check your data and try again."
 
@@ -120,7 +141,7 @@ This issue should occur only if there's no data. Either the data source that you
 
 ### "The number of rows in your data exceeds the limit. [x] rows have been ignored."
 
-We support only up to 150,000 rows of data. To learn how to fix this issue using Power Query, go to [Reduce the number of total records](process-mining-transform.md#reduce-the-number-of-total-records).
+To fix this issue using Power Query, learn more in [Reduce the number of total records](process-mining-transform.md#reduce-the-number-of-total-records).
 
 ### "Analysis failed, please try again."
 
@@ -144,11 +165,11 @@ Enable admin access for the process mining capability prod service principal. To
 
 This is the same as the previous issue, but the error occurred during process analysis. After ensuring the process mining capability service principal is the admin of the workspace, reanalyze the report.
 
-### "The process mining service principal cannot access the Power BI workspace."  
+### "The process mining service principal can't access the Power BI workspace."  
 
 Set up the process mining capability service principal for your Power BI workspace. To learn how to set up, go to [Set up your workspace](process-mining-pbi-workspace.md#set-up-your-workspace).
 
-### "The process mining service principal cannot access the Power BI workspace. After the problem is fixed, try to reanalyze the report."
+### "The process mining service principal can't access the Power BI workspace. After the problem is fixed, try to reanalyze the report."
 
 This is the same as the previous issue, but the error occurred during process analysis. After ensuring that the process mining service principal is added to the workspace and has admin access, reanalyze the report.
 
@@ -159,3 +180,25 @@ Assign a premium license to your workspace. To learn how to enable premium capac
 ### "The selected Power BI workspace needs premium capacity to work with this report. After the problem is fixed, try to reanalyze the report."
 
 This is the same as the previous issue, but the error occurred during process analysis. After ensuring that your workspace has premium capacity per [Premium capacity settings](/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings), reanalyze the report.
+
+### Optimized data model isn't created
+
+Confirm the *Allow XMLA endpoints and Analyze in Excel with on-premises semantic mode* setting is enabled *(this setting is enabled by default)*. You can find this setting in **Power BI admin portal** > **Tenant-level settings** > **Integration Settings**. If an admin doesn't want to enable this setting for all users, it's necessary to add the **Process Insights service principal** to a security group where the setting is enabled.
+
+## Issues with your own Azure Data Lake Storage Gen2 and incremental data refresh
+
+### If you encountered an error message, "Couldn’t connect to container"
+
+Revisit the prerequisites to make sure settings are correct.
+
+### How can I check if a CORS issue exists or not?
+
+You can check the network logs in your browser with developer tools while connecting data lake storage. Some HTTP requests failed with a 403 error and it could state "CORS not enabled, or no matching rule found for this request."
+
+### Although I set CORS setting correctly, why do I still get the error and am unable to access?
+
+The browser cached CORS settings. Retry after flushing out browser cache. As the client browser does cache the CORS setting, you need to remove the cache if you have trouble even after you set the CORS properly. You can also adjust the max age of CORS settings.
+
+### Your header row is larger than 1 MB
+
+Check the event log file and rename the column headers so that their aggregated length including separator (comma) is less than 1 MB.

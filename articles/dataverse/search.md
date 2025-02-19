@@ -1,19 +1,11 @@
 ---
-title: Use Dataverse search to retrieve rows | Microsoft Docs
-description: "Learn how to find and retrieve rows in Microsoft Dataverse by using the search rows action with flows."
-services: ''
+title: Use Dataverse search to retrieve rows
+description: Learn how to find and retrieve rows in Microsoft Dataverse by using the search rows action with flows.
 suite: flow
-documentationcenter: na
-author: MSFTMAN
+author: v-aangie
 ms.author: Matow
 ms.reviewer: angieandrews
-editor: ''
-tags: ''
-
-ms.devlang: na
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: conceptual
 ms.date: 10/04/2021
 search.audienceType: 
   - maker
@@ -31,12 +23,10 @@ Your admin must configure [Dataverse search](/power-platform/admin/configure-rel
 
 You can add the **Search rows** action to your flows, and then provide a keyword in **Search term** to search for that keyword across all the indexed rows in Dataverse.
 
-You can use dynamic content from a previous step in the flow to parameterize the **Search term** box. For example, you can use a keyword that's entered in a Power Virtual Agent bot and set the following options to initiate an automated search:
+You can use dynamic content from a previous step in the flow to parameterize the **Search term** box. For example, you can use a keyword that's entered in a Microsoft Copilot Studio bot and set the following options to initiate an automated search.
 
-![Power Virtual Agent calling a flow.](../media/search-row/da5e692228bd41726bc5c1e03dc70b7c.png "Power Virtual Agent calling a flow")
-
->[!NOTE]
->It can take a few hours for newly added rows to be included in the search results.
+> [!NOTE]
+> It can take a few hours for newly added rows to be included in the search results.
 
 ## Search type
 

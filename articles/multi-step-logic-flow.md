@@ -1,24 +1,18 @@
 ---
-title: Add an advanced option and multiple actions in Power Automate | Microsoft Docs
+title: Add an advanced option and multiple actions in Power Automate
 description: Expand a cloud flow to include an advanced option, such as how to add collaboration comments to actions and triggers, set email to high priority, and add another action for the same event.
-services: ''
 suite: flow
-documentationcenter: na
-author: msftman
-editor: ''
-tags: ''
-ms.devlang: na
+author: v-aangie
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 05/14/2022
-ms.author: deonhe
+ms.topic: conceptual
+ms.date: 10/09/2024
+ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
+
 # Add multiple actions and advanced options to a cloud flow
 
 Customize a cloud flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced option that sends an email message as high priority. In addition to sending mail when an item is added to a list created in Microsoft Lists, create a file in Dropbox that contains the same information.
@@ -26,10 +20,12 @@ Customize a cloud flow by adding one or more advanced options and multiple actio
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 ## Prerequisites
+
 [Create a cloud flow](get-started-logic-flow.md)
 
 ## Add another action
-In this procedure, you'll add an action in the middle of the flow. This action will save a file in your Dropbox, archiving the item in the list.
+
+In this procedure, you add an action in the middle of the flow. This action saves a file in your Dropbox, archiving the item in the list.
 
 1. Sign into [Power Automate](https://make.powerautomate.com).
 1. On the left pane, select **My flows**.
@@ -50,14 +46,14 @@ In this procedure, you'll add an action in the middle of the flow. This action w
     > [!div class="mx-imgBorder"]
     >![Screenshot of selecting a Dropbox folder path.](./media/multi-step-logic-flow/create-file-folder.png "Select a Dropbox folder path")
 
-1. Enter the name of the new file into the **File name** box. Be sure to append an extension, such as ".txt", to the file name. Here, let's use the **TweetId** in the file's name to ensure uniqueness of the files. You may have to select **See more** to find the **TweetId** token.
+1. Enter the name of the new file into the **File name** box. Be sure to append an extension, such as ".txt", to the file name. Here, let's use the **TweetId** in the file's name to ensure uniqueness of the files. You might have to select **See more** to find the **TweetId** token.
 1. Add the text that you want the file to contain by typing into the **File content** box. You can also add tokens into the **File content** box.
 
     > [!div class="mx-imgBorder"]
     >![Screenshot of a sample file name and content.](./media/multi-step-logic-flow/create-file-name-and-contents.png "File name and file content")
    
    > [!IMPORTANT]
-   > If the file name you enter matches an existing file's name in the selected folder, the existing file will be overwritten.
+   > If the file name you enter matches an existing file's name in the selected folder, the existing file is overwritten.
 
 1. Save your flow.
 1. Send a tweet that contains the keyword you specified.
@@ -86,19 +82,21 @@ In this procedure, you'll add an action in the middle of the flow. This action w
 If you want to duplicate actions while designing a cloud flow, you can copy and paste them. For example, if you're building a condition and want similar actions in the **If yes** side and the **If no** side, you can build the first action in one side and then copy it to the other side. This is an alternative to creating both actions from scratch.
 
 ### To copy an action
+
 1. On the action menu heading, select **...** (the ellipses).
 1. Select **Copy to my clipboard**. 
 1. Select **New step** where you want your action to go. 
 
-     Notice the **My clipboard** tab that lets you choose from all of the actions that you've copied.
+     Notice the **My clipboard** tab that lets you choose from all of the actions that you copied.
 1. Select the item you want to paste.
 
 ## Add advanced options
+
 Start with a cloud flow that has a **Send an email (V2)** action.
 
 1. On the bottom of the **Send an email (V2)** card, select **Show advanced options**.
 
-     You'll see the advanced options for sending an email. The word **Show** changes to **Hide** so that you can toggle the advanced options.
+     You see the advanced options for sending an email. The word **Show** changes to **Hide** so that you can toggle the advanced options.
 
     > [!div class="mx-imgBorder"]
     >![Screenshot of showing advanced options.](./media/multi-step-logic-flow/advanced.png "Show/hide advanced options")
@@ -130,12 +128,12 @@ Follow these steps to add a comment to any action or trigger in your flow.
     >![Screenshot of the menu that contains the New Comment option.](./media/multi-step-logic-flow/comments-actions-triggers.png "New Comment option")
 
    The comments pane opens.
-1. Enter a comment to your action with an @mention to others. If you do this, an email notification will be sent to them when you select the **Send** icon.
+1. Enter a comment to your action with an @mention to others. If you do this, an email notification is sent to them when you select the **Send** icon.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the mention or comment box.](./media/multi-step-logic-flow/mention.png "Mention or comment")
 
-    If the person you want to @mention isn't a co-owner of the flow, they'll get the **Share and notify** option. Select this option to share the flow with the other user, and send an email notification automatically.
+    If the person you want to @mention isn't a co-owner of the flow, they get the **Share and notify** option. Select this option to share the flow with the other user, and send an email notification automatically.
 
     >[!div class="mx-imgBorder"]
     >![Screenshot of the Grant access box with the Share and notify button.](./media/multi-step-logic-flow/grant.png "Share and notify button")
@@ -182,5 +180,10 @@ Do you struggle with writing expressions in your flow actions? You can make use 
  
 > [!NOTE]
 > Some actions might not support the new expression editor.
+
+## Related information
+
+- [Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
+- [Training: Integrate Power Automate with SharePoint HTTP actions (module)](/training/modules/integration-http-connector/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -8,6 +8,8 @@
     href: sign-up-sign-in.md
   - name: Get started with Power Automate
     href: getting-started.md
+  - name: Copilot in Power Automate
+    href: copilot-overview.md
   - name: What's new
     href: whats-new.md
   - name: Create and manage flows in Power Apps
@@ -18,25 +20,35 @@
     href: overview-cloud.md
   - name: Get started with Copilot in cloud flows
     href: get-started-with-copilot.md
-  - name: Understand the cloud flows designer with copilot capabilities
+  - name: Understand the cloud flows designer
     href: flows-designer.md     
   - name: Get started with triggers
     href: triggers-introduction.md
   - name: Add OAuth authentication for HTTP request triggers
     href: oauth-authentication.md
-  - name: Get help from the Power Virtual Agents bot
+  - name: Get help from the Microsoft Copilot Studio bot
     href: contextual-help-bot.md
-  - name: Find it with unified search
-    href: /power-apps/maker/search
   - name: Share a flow
     href: create-team-flows.md
   - name: Support for guest users
-    href: share-guest-users.md  
+    href: share-guest-users.md
+  - name: Support for service principal owned flows
+    href: service-principal-support.md
+  - name: Export and import a non-solution flow
+    href: export-import-flow-non-solution.md
+  - name: Drafts and versioning for cloud flows
+    href: drafts-versioning.md
+  - name: Generative actions (preview)
+    items:
+    - name: Overview
+      href: generative-actions-overview.md
+    - name: Create generative actions
+      href: create-generative-actions.md
   - name: Automated flows
     items:
     - name: Create a cloud flow from a template
       href: get-started-logic-template.md
-    - name: Create a cloud flow from a description (preview)
+    - name: Create a cloud flow from a description
       href: create-cloud-flow-from-description.md
     - name: Create a cloud flow from scratch
       href: get-started-logic-flow.md
@@ -77,6 +89,10 @@
       href:  associate-flow-to-app.md
     - name: Use data operations
       href: data-operations.md
+    - name: Customize or format date and time values in a flow
+      href: date-time-values.md
+    - name: Convert a time zone
+      href: convert-time-zone.md
     - name: Use expressions in conditions
       href: use-expressions-in-conditions.md
     - name: Store and manage values in variables
@@ -99,10 +115,14 @@
       href: change-cloud-flow-owner.md
     - name: Format data by examples
       href: format-data-by-examples.md
-  - name: Popular cloud flows scenarios
+    - name: Regenerate the SAS key used in HTTP trigger flows
+      href: regenerate-sas-key.md
+  - name: Use flows in other apps
     items:
     - name: Use the Power Automate plugin for ChatGPT
       href: ./use-chatgpt-plugin.md
+    - name: Use flows as plugins in Copilot for Microsoft 365 (preview)
+      href: flow-plugins-m365.md  
     - name: Use flows with approvals
       items:
       - name: Get started with approvals
@@ -119,7 +139,9 @@
         href: modern-approvals.md
       - name: Approvals with attachments
         href: approval-attachments.md
-      - name: Sequential approvals
+      - name: Set up sequential approvals
+        href: set-up-sequential-approvals.md
+      - name: Manage sequential approvals
         href: sequential-modern-approvals.md
       - name: Parallel approvals
         href: parallel-modern-approvals.md
@@ -170,7 +192,7 @@
       - name: Overview
         href: ./teams/overview.md
         displayName: Use flows with Microsoft Teams
-      - name: Install the Power Automate app
+      - name: Install the Workflows app
         href: ./teams/install-teams-app.md
       - name: Create flows in Teams
         href: ./teams/teams-app-create.md
@@ -223,8 +245,8 @@
         href: ./teams/customize-approvals.md
       - name: Use custom connectors in approval flows
         href: ./teams/approvals-custom-connector.md
-    - name: Trigger flows from Power BI report
-      href: ./trigger-flow-powerbi-report.md
+    - name: Create a visual for Power BI
+      href: /power-bi/create-reports/power-bi-automate-visual?tabs=powerbi-desktop  
     - name: Configure flows in Power Pages (preview)
       href: /power-pages/configure/cloud-flow-integration
     - name: Use flows with Microsoft Forms
@@ -259,6 +281,8 @@
       href: ./dataverse/delete-row.md
     - name: Use lists of rows in flows
       href: ./dataverse/list-rows.md
+    - name: Connect to other environments
+      href: ./dataverse/connect-to-other-environments.md
     - name: Use wait conditions to delay flows
       href: ./dataverse/wait-conditions.md
     - name: Perform bound or unbound actions in flows
@@ -279,10 +303,12 @@
       href: ./dataverse/flows-power-apps.md
     - name: Create a cloud flow that uses Microsoft Dataverse
       href: common-data-model-intro.md
-    - name: Create a cloud flow to view retained data (preview)
+    - name: Create a cloud flow to view retained data
       href: ./dataverse/data-retention-flow.md
     - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
       href: connection-cds.md
+    - name: Manage cloud flow run history in Dataverse (preview)
+      href: ./dataverse/cloud-flow-run-metadata.md
   - name: Use solutions for ALM
     items:
     - name: Overview
@@ -300,6 +326,8 @@
       href: edit-solution-aware-flow.md
     - name: Remove a solution-aware flow
       href: remove-solution-aware-flow.md
+  - name: Cloud flows best practices white paper
+    href: https://go.microsoft.com/fwlink/?linkid=2290320
   - name: Troubleshoot
     items:
     - name: Troubleshoot common issues with triggers
@@ -317,6 +345,8 @@
     href: ./desktop-flows/introduction.md
   - name: Get started with Power Automate in Windows 11
     href: ./desktop-flows/getting-started-windows-11.md
+  - name: Use copilot to analyze desktop flow activity (preview)
+    href: ./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md
   - name: Power Automate architecture
     href: ./desktop-flows/pad-architecture.md
   - name: Premium RPA features
@@ -335,6 +365,8 @@
       href: ./desktop-flows/manifest.md
     - name: Power Automate v2 schema
       href: ./desktop-flows/schema.md
+    - name: Desktop flow action logs configuration
+      href: ./desktop-flows/configure-desktop-flow-logs.md      
     - name: Application lifecycle management for Power Automate v2 schema
       href: ./desktop-flows/alm-schema.md
     - name: Create a Dataverse database
@@ -355,6 +387,12 @@
       href: ./desktop-flows/getting-started-org.md
   - name: Create desktop flows
     href: ./desktop-flows/create-flow.md
+  - name: Get started with Copilot in Power Automate for desktop (preview)
+    href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
+  - name: Create desktop flows using Record with Copilot (preview)
+    href: ./desktop-flows/create-flow-using-ai-recorder.md
+  - name: Repair flow automation errors (preview)
+    href: ./desktop-flows/repair-at-runtime.md
   - name: Run desktop flows
     items:
     - name: Run unattended and attended desktop flows from the cloud
@@ -377,6 +415,8 @@
         href: ./desktop-flows/run-desktop-flows-via-keyboard-shortcuts.md       
       - name: Runtime notifications
         href: ./desktop-flows/runtime-notifications.md
+    - name: Run desktop flows in picture-in-picture
+      href: ./desktop-flows/run-desktop-flows-pip.md
   - name: Manage machines and machine groups
     items:
     - name: Manage machines
@@ -385,25 +425,35 @@
       href: ./desktop-flows/machines-silent-registration.md
     - name: Manage machine groups
       href: ./desktop-flows/manage-machine-groups.md
-    - name: Create desktop flow connections
-      href: ./desktop-flows/desktop-flow-connections.md
     - name: Machine group certificate renewal
       href: ./desktop-flows/machine-group-certificates.md
-    - name: Hosted machines
-      href: ./desktop-flows/hosted-machines.md
-    - name: Hosted machine groups
-      href: ./desktop-flows/hosted-machine-groups.md
-    - name: Scale with AVD starter kit
+    - name: RPA with zero infrastructure (Hosted RPA)
       items:
       - name: Overview
-        href: ./desktop-flows/avd-overview.md
-      - name: Set up the AVD integration starter kit
-        href: ./desktop-flows/avd-setup.md
-      - name: Use the starter kit
-        href: ./desktop-flows/avd-use-starter-kit.md
+        href: ./desktop-flows/hosted-rpa-overview.md
+      - name: Hosted machines
+        href: ./desktop-flows/hosted-machines.md
+      - name: Hosted machine groups
+        href: ./desktop-flows/hosted-machine-groups.md
+      - name: Hosted RPA best practices and FAQ
+        href: ./desktop-flows/hosted-rpa-faq.md
+  - name: Create credentials
+    items:
+    - name: Azure Key Vault credentials
+      href: ./desktop-flows/create-azurekeyvault-credential.md
+    - name: CyberArk credentials
+      href: ./desktop-flows/create-cyberark-credential.md
+    - name: Certificate-based authentication (preview)
+      href: ./desktop-flows/configure-certificate-based-auth.md
+    - name: Machine mapping (preview)
+      href: ./desktop-flows/create-machine-mapping.md
+  - name: Create desktop flow connections
+    href: ./desktop-flows/desktop-flow-connections.md
+  - name: Allowlist tenants for connect with sign-in connections
+    href: ./desktop-flows/how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
-  - name: Work queues (preview)
+  - name: Work queues
     items:
     - name: Overview
       href: ./desktop-flows/work-queues.md
@@ -427,7 +477,7 @@
       href: ./desktop-flows/monitor-run-details.md
     - name: Desktop flow queues
       href: ./desktop-flows/monitor-desktop-flow-queues.md
-  - name: Data loss prevention (DLP) (preview)
+  - name: Data loss prevention (DLP)
     href: ./desktop-flows/data-loss-prevention.md
   - name: Power Automate console
     href: ./desktop-flows/console.md
@@ -436,7 +486,7 @@
     items:
     - name: Configure actions and the actions pane
       href: ./desktop-flows/actions-pane.md
-    - name: Assets library (preview)
+    - name: Assets library
       href: ./desktop-flows/assets-library.md
     - name: Manage the flow designer workspace
       href: ./desktop-flows/designer-workspace.md
@@ -478,7 +528,15 @@
       href: ./desktop-flows/test-selectors.md  
     - name: Repair a selector
       href: ./desktop-flows/repair-selector.md  
-  - name: Custom actions (preview)
+    - name: Set fallback mechanism for UI element
+      href: ./desktop-flows/ui-elements-fallback-mechanism.md  
+  - name: Power Fx in desktop flows
+    items:
+    - name: Power Fx in desktop flows
+      href: ./desktop-flows/power-fx.md
+    - name: Formula reference - desktop flows
+      href: /power-platform/power-fx/formula-reference-desktop-flows
+  - name: Custom actions
     items:
     - name: Custom actions
       href: ./desktop-flows/custom-actions.md
@@ -488,9 +546,21 @@
       href: ./desktop-flows/upload-custom-actions.md
     - name: Use custom actions
       href: ./desktop-flows/use-custom-actions.md
-    - name: Actions SDK for .NET reference (preview)
+    - name: Actions SDK for .NET reference
       href: /dotnet/api/?view=pad-actions-sdk-latest&preserve-view=true
-  - name: Troubleshooter (preview)
+    - name: Build custom actions in Power Automate for desktop
+      href: ./guidance/how-to/build-custom-action/buildcustomaction.md
+  - name: UI elements collections
+    items:
+    - name: UI elements collections
+      href: ./desktop-flows/ui-elements-collections.md
+    - name: Create and publish UI elements collections
+      href: ./desktop-flows/create-ui-elements-collections.md
+    - name: Manage UI elements collections
+      href: ./desktop-flows/manage-ui-elements-collections.md
+    - name: Use and update UI elements collections
+      href: ./desktop-flows/use-update-ui-elements-collections.md
+  - name: Troubleshooter
     href: ./desktop-flows/troubleshooter.md
   - name: How to
     items:
@@ -584,14 +654,28 @@
         href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
       - name: Troubleshoot SQL queries
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
+    - name: Configure connection strings for database related actions
+      href: ./desktop-flows/how-to/configure-connection-strings-for-db-actions.md
+    - name: Configure proxy settings
+      href: ./desktop-flows/how-to/proxy-settings.md
+    - name: Reduce desktop flow size in solution
+      href: ./desktop-flows/how-to/reduce-flow-size.md
+    - name: Restore a deleted desktop flow
+      href: ./desktop-flows/how-to/restore-deleted-desktop-flow.md
     - name: Use logical operations on conditional statements
       href: ./desktop-flows/how-to/logical-operations-conditional-statements.md
+    - name: Use passwords
+      href: ./desktop-flows/how-to/use-passwords.md  
     - name: Handle custom forms
       href: ./desktop-flows/how-to/handle-custom-forms.md
     - name: Share/export a desktop flow
       href: ./desktop-flows/how-to/share-export-desktop-flows.md
     - name: Run desktop flow from other desktop flows
       href: ./desktop-flows/how-to/run-desktop-flow-action.md
+    - name: Use connector actions
+      href: ./desktop-flows/how-to/use-connector-actions.md
+    - name: Share desktop flows that contain connector actions
+      href: ./desktop-flows/how-to/share-desktop-flows-that-contain-connector-actions.md
     - name: Set screen resolution on unattended mode
       href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
     - name: Run Power Automate with elevated rights
@@ -602,6 +686,10 @@
       href: ./desktop-flows/how-to/passing-datatable.md
     - name: Delete desktop flow run history data
       href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
+    - name: Timeout configuration for UI/browser automation
+      href: ./desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md
+    - name: Configure the open terminal session action
+      href: ./desktop-flows/how-to/terminal-emulation-open-new-session.md  
   - name: ALM for desktop flows
     items:
     - name: Overview for configuring ALM for desktop flows
@@ -612,6 +700,8 @@
       href: ./desktop-flows/alm/alm-diff.md
     - name: Create a connection with a service principal
       href: ./desktop-flows/alm/alm-connection.md
+  - name: Reserved keywords
+    href: ./desktop-flows/reserved-keywords.md
   - name: Desktop actions reference
     href: ./desktop-flows/actions-reference.md
     items:
@@ -645,10 +735,14 @@
       href: ./desktop-flows/actions-reference/webautomation.md
     - name: Excel
       href: ./desktop-flows/actions-reference/excel.md
+    - name: Word
+      href: ./desktop-flows/actions-reference/word.md
     - name: AI Builder (preview)
       href: ./desktop-flows/actions-reference/aibuilder.md
     - name: Database
       href: ./desktop-flows/actions-reference/database.md
+    - name: Access
+      href: ./desktop-flows/actions-reference/access.md
     - name: Email
       href: ./desktop-flows/actions-reference/email.md
     - name: Exchange Server
@@ -701,15 +795,19 @@
       href: ./desktop-flows/actions-reference/logging.md 
     - name: SharePoint
       href: ./desktop-flows/actions-reference/sharepoint.md
-    - name: Office 365 Outlook (preview)
+    - name: Office 365 Outlook
       href: ./desktop-flows/actions-reference/office365outlook.md
-    - name: Work queues (preview)
+    - name: Work queues
       href: ./desktop-flows/actions-reference/workqueues.md
-    - name: Custom actions (preview)
+    - name: Custom actions
       href: ./desktop-flows/actions-reference/custommodule.md
     - name: Cloud Connector actions
-      href: ./desktop-flows/actions-reference/cloudconnectors.md  
-  - name: Troubleshoot desktop flows
+      href: ./desktop-flows/actions-reference/cloudconnectors.md
+    - name: SAP automation
+      href: ./desktop-flows/actions-reference/sap.md
+    - name: Power Automate secret variables actions (preview)
+      href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
+  - name: Troubleshoot desktop flows runtime
     href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
     href: ./desktop-flows/softomotive-migrator.md
@@ -733,8 +831,6 @@
     href: create-instant-flows.md
   - name: Enhance business process flows with branching
     href: enhance-business-process-flows-branching.md
-  - name: Add custom controls to business process flows
-    href: custom-controls-business-process-flows.md
   - name: Add on-demand workflows to business process Flows
     href: bpf-add-on-demand-workflow.md
   - name: Best practices for business process flow columns
@@ -760,18 +856,53 @@
         href: process-mining-templates.md
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
-    - name: Copilot in Process Mining ingestion (preview)
-      href: process-mining-copilot-in-ingestion.md 
+    - name: Copilot in Process Mining ingestion (preview) 
+      href: process-mining-copilot-in-ingestion.md
+    - name: Copilot in Process Mining process analytics (preview) 
+      href: process-mining-copilot-in-process-analytics.md   
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
-    - name: Use your own Azure Data Lake Storage Gen2 (preview)
-      href: process-mining-byo-azure-data-lake.md
+    - name: Azure Data Lake Storage Gen2
+      items:
+      - name: Bring your own Azure Data Lake Storage Gen2
+        href: process-mining-byo-azure-data-lake.md
+      - name: Bring your own network isolated Azure Data Lake Storage Gen2
+        href: process-mining-byo-azure-data-lake-private.md
+    - name: Ingest files from Fabric OneLake (preview)
+      href: process-mining-files-fabric-onelake.md
     - name: Transform and map data
       href: process-mining-transform.md
     - name: Visualize and gain insights from processes
       href: process-mining-visualize.md
     - name: Customize a report with your own Power BI workspace
       href: process-mining-pbi-workspace.md
+    - name: Use optimized data structure in Power BI report (preview)
+      href: process-mining-pbi-data-structure.md
+    - name: Application lifecycle management (ALM)
+      items:
+      - name: ALM overview
+        href: process-mining-alm-overview.md
+      - name: Migrate entities with Power Platform solutions
+        href: process-mining-alm-entities-solutions.md
+      - name: Migrate customized Process Mining Power BI reports
+        href:
+        items:
+        - name: Overview
+          href: process-mining-pbi-reports-overview.md
+        - name: Rebind reports without using a composite model
+          items:
+          - name: With different workspaces
+            href: process-mining-alm-rebind-without-comp-diff-wkspace.md
+          - name: With the same workspace
+            href: process-mining-alm-rebind-without-comp-same-wkspace.md
+        - name: Rebind reports using a composite model
+          items:
+          - name: With different workspaces
+            href: process-mining-alm-rebind-with-comp-diff-wkspace.md
+          - name: With the same workspace
+            href: process-mining-alm-rebind-with-comp-same-wkspace.md
+      - name: Migrate using Power BI pipelines and rebinding
+        href: process-mining-alm-migrate-using-pbi-pipelines-and-rebinding.md    
     - name: Improve cloud flows with process insights (preview)
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
@@ -782,10 +913,12 @@
     items:
     - name: Overview
       href: ./minit/minit-desktop-application-overview.md
-    - name: Download Process Mining desktop app
-      href: ./minit/how-to-start-with-minit-desktop-application.md
-    - name: Copilot in Process Mining process analytics (preview)
-      href: ./minit/process-mining-copilot-in-process-analytics.md      
+    - name: Installation
+      items:
+      - name: Standard
+        href: ./minit/how-to-start-with-minit-desktop-application.md
+      - name: Custom
+        href: ./minit/process-mining-custom-install.md
     - name: Get started
       items:
       - name: Explore the home page
@@ -918,6 +1051,14 @@
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md
+    - name: Process simulations (preview)
+      items:
+      - name: Overview
+        href: ./minit/process-mining-simulations-overview.md
+      - name: Create a simulation scenario
+        href: ./minit/process-mining-simulations-scenario.md
+      - name: Run a simulation and generate results
+        href: ./minit/process-mining-simulations-run-results.md
   - name: Task mining capability
     items:
     - name: Overview
@@ -990,6 +1131,32 @@
       href: ./developer/sample-work-business-process-flows.md
   - name: Custom Dataverse workflow activities
     href: ./developer/custom-cds-for-apps-workflow-activities.md
+- name: Manage automations
+  items:
+  - name: Automation center
+    items:
+    - name: Overview
+      href: automation-center-overview.md
+    - name: Recommendations
+      href: automation-center-recommendations.md
+    - name: Copilot
+      href: automation-center-copilot.md       
+  - name: Automation-centric analytics with Fabric
+    items:
+    - name: Overview
+      href: automation-analytics-with-fabric-introduction.md
+    - name: Create ad-hoc queries
+      href: automation-analytics-with-fabric-queries.md
+  - name: Capacity utilization
+    items:
+    - name: Introduction to capacity utilization
+      href: ./desktop-flows/capacity-utilization.md
+    - name: Hosted RPA capacity utilization
+      href: ./desktop-flows/capacity-utilization-hosted.md
+    - name: Process capacity utilization
+      href: ./desktop-flows/capacity-utilization-process.md
+    - name: How to use process capacity
+      href: ./desktop-flows/capacity-process.md
 - name: Administration
   items:
   - name: Power Automate sign-up FAQ
@@ -1006,7 +1173,7 @@
     href: environments-overview-admin.md
   - name: IP address configuration
     href: ip-address-configuration.md
-  - name: Support for customer-managed keys (preview)
+  - name: Support for customer-managed keys
     href: customer-managed-keys.md
   - name: View desktop flows analytics
     href: ./desktop-flows/overview-analytics.md
@@ -1015,7 +1182,7 @@
     displayName: Monitor desktop flows in the Center of Excellence (CoE)
   - name: Machine group certificate renewal for admins
     href: ./desktop-flows/machine-group-certificates-admins.md
-  - name: Set a policy to help prevent data loss
+  - name: Data loss prevention (DLP) policy creation
     href: prevent-data-loss.md
   - name: Support Intune in mobile apps
     href: intune-support.md
@@ -1023,7 +1190,7 @@
     href: introduction-to-data-groups.md
   - name: View sharing and connectors analytics reports
     href: admin-analytics-report.md
-  - name: Respond to personal data requests (Azure AD)
+  - name: Respond to personal data requests (Microsoft Entra ID)
     items:
     - name: Summary
       href: privacy-dsr-summary.md
@@ -1053,8 +1220,6 @@
     href: regions-overview.md
   - name: Limits and configuration
     href: limits-and-config.md
-  - name: Power Automate embed pay-as-you-go
-    href: isv-pay-as-you-go.md
   - name: Frequently asked questions
     href: frequently-asked-questions.yml
   - name: Power Automate glossary
@@ -1083,49 +1248,10 @@
         href: use-cds-for-apps-dialogs.md
       - name: Replace classic Dataverse dialogs
         href: replace-dialogs.md
-  - name: Other types of desktop flows (Legacy)
-    items:
-    - name: Introduction to other types of desktop flows
-      href: ./desktop-flows/overview.md
-    - name: Create and test desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/create-desktop.md
-    - name: Upgrade UI flows app and connections from previous releases
-      href: ./desktop-flows/upgrade.md
-    - name: Edit desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/edit-desktop.md
-    - name: Migrate from Windows recorder (V1) to Power Automate
-      href: ./desktop-flows/migrate.md
-    - name: Use inputs and outputs in desktop flows with Windows recorder (V1)
-      href: ./desktop-flows/inputs-outputs-desktop.md
-      items:
-      - name: Use Input Method Editors (IMEs) in desktop flows with Windows recorder (V1)
-        href: ./desktop-flows/use-ime.md
-      - name: Use WinAutomation with desktop flows
-        href: ./desktop-flows/create-processes.md
-    - name: Create and test Selenium IDE flows
-      href: ./desktop-flows/create-web.md
-    - name: Edit desktop flows with Selenium IDE
-      href: ./desktop-flows/edit-web.md
-    - name: Use inputs and outputs in desktop flows with Selenium IDE
-      href: ./desktop-flows/inputs-outputs-web.md
-- name: Learning catalog
+- name: Resources
   items:
-  - name: Overview
-    href: learning-catalog/learning-catalog.md
-  - name: App maker
-    href: learning-catalog/learning-catalog-app-maker.md
-  - name: Administrator
-    href: learning-catalog/learning-catalog-administrator.md
-  - name: Developer
-    href: learning-catalog/learning-catalog-developer.md
-  - name: Functional consultant
-    href: learning-catalog/learning-catalog-functional-consultant.md
-  - name: Partner presales roles
-    href: learning-catalog/learning-catalog-sales.md
-  - name: Business and Technical Decision Makers learning catalog
-    href: learning-catalog/learning-catalog-bdm.md
-- name: Learn from others
-  items:
+  - name: Microsoft Credentials for Power Platform
+    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl
   - name: Webinars
     href: webinars.md
   - name: Blog
@@ -1140,12 +1266,24 @@
     href: responsible-ai-overview.md
   - name: FAQ for Copilot in cloud flows
     href: faqs-copilot.md
+  - name: FAQ for Copilot expression assistant
+    href: faqs-copilot-expression-assistant.md
+  - name: FAQ for Copilot in automation center
+    href: faqs-copilot-automation-center.md
+  - name: FAQ for Copilot in desktop flow activity
+    href: faqs-copilot-automation-activity.md
   - name: FAQ for Copilot in Process Mining
     href: faqs-copilot-in-process-mining.md
-
-
-
-
-
+  - name: FAQ for Copilot in Power Automate for desktop
+    href: faqs-copilot-in-pad.md
+  - name: FAQ for Repair with Copilot at runtime in Power Automate for desktop
+    href: faqs-repair-copilot.md
+  - name: FAQ for generative actions in cloud flows
+    href: faqs-generative-actions.md 
+  - name: FAQ for generating code with natural language
+    href: faqs-copilot-nl-to-code.md
+  - name: FAQ for suggested actions in Power Automate for desktop
+    href: faqs-action-suggestions-power-automate-desktop.md
+  - name: FAQ for generating flow descriptions using Copilot in desktop flows
+    href: faqs-copilot-generate-description-from-flow-properties.md
     
-

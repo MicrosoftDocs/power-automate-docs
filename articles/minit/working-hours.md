@@ -67,6 +67,6 @@ On the **Non-Working days** tab, define special non-working days such as bank ho
 
     If you imported a set of holidays by mistake, you can delete them from the calendar template by selecting **Remove holidays** below the calendar view.
 
-### See also
+## Related information
 
 [Settings overview](settings.md)

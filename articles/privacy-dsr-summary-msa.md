@@ -4,16 +4,14 @@ description: Learn about the resources available in Power Automate to help you m
 services: ''
 suite: flow
 documentationcenter: na
-author: MSFTMAN
-manager: KVIVEK
-ms.author: Deonhe
-ms.reviewer: gtrantzas
+author: v-aangie
+ms.author: angieandrews
+ms.reviewer: angieandrews
 editor: ''
 tags: ''
 
-ms.devlang: na
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/18/2023
@@ -28,7 +26,7 @@ search.audienceType:
 
 [!INCLUDE [gdpr-intro](~/../shared-content/shared/privacy-includes/gdpr-intro.md)]
 
- Power Automate provides tools and resources to help you respond to requests to correct, export, or delete personal data that resides in the Microsoft cloud. This article helps you respond to requests from users who authenticate using a Microsoft account. [Respond to requests from users who authenticate using Azure Active Directory (Azure AD)](privacy-dsr-summary.md).
+ Power Automate provides tools and resources to help you respond to requests to correct, export, or delete personal data that resides in the Microsoft cloud. This article helps you respond to requests from users who authenticate using a Microsoft account. [Respond to requests from users who authenticate using Microsoft Entra ID](privacy-dsr-summary.md).
 
 ## Prerequisites
 

@@ -4,13 +4,13 @@ description: Learn how to manage sensitive input like passwords in Power Automat
 services: ''
 suite: flow
 documentationcenter: na
-author: msftman
+author: v-aangie
 editor: ''
 tags: ''
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 06/13/2022
-ms.author: deonhe
+ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

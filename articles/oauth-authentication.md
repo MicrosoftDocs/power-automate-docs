@@ -7,10 +7,11 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/02/2023
+ms.date: 09/04/2024
 ms.author: rakrish
 ms.reviewer: angieandrews
 ms.custom: bap-template
+ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
 ---
@@ -71,15 +72,15 @@ The parameter shows on the card.
 
 # [Edit with Copilot](#tab/edit-with-copilot)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
 The parameter shows on the configuration panel to the left.
 
 :::image type="content" source="./media/oauth-authentication/v3-oauth-parameter.png" alt-text="Screenshot of who can trigger the cloud flow in the designer with Copilot.":::
 
 ---
 
-### See also
+## Related information
 
-[Overview of the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview)
+- [Overview of the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview)
+- [Regenerate the SAS key used in HTTP trigger flows](regenerate-sas-key.md)
+
 

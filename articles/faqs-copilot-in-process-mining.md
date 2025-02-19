@@ -1,13 +1,15 @@
 ﻿---
 title: FAQ for Copilot in Power Automate Process Mining
 description: This FAQ discusses Copilot in Process Mining and the key considerations for making use of this technology responsibly.
-ms.date: 08/25/2023
+ms.date: 09/10/2024
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: conceptual
 author: HeatherOrt
 ms.author: heortaol
 ms.reviewer: angieandrews
+ms.collection: 
+    - bap-ai-copilot
 ---
 
 # FAQ for Copilot in Power Automate Process Mining
@@ -40,16 +42,16 @@ You can provide feedback for Copilot when the results are biased or inappropriat
 
 **What are the limitations of Copilot? How can users minimize the impact of the Copilot limitations when using the system?**
 
-Copilot can support ingestion only in a process created through Azure Data Lake as a source. It supports only analytics driven through the Power Automate Process Mining desktop application. It is not equipped with transforming or preparing any ETL work on behalf of the users. You're made aware of these limitations throughout the experience with warnings that AI outputs must be validated. You will also only be surfaced copilot prompts and experiences in the sections of the products without limitations.
+Copilot can support ingestion only in a process created through Azure Data Lake as a source. It supports only analytics driven through the Power Automate Process Mining desktop application. It isn't equipped with transforming or preparing any ETL work on behalf of the users. You're made aware of these limitations throughout the experience with warnings that AI outputs must be validated. You'll also only be surfaced copilot prompts and experiences in the sections of the products without limitations.
 
-There is also an option to disable the Copilot within the admin center, and the user always has the option to close the Copilot and not engage with the feature.
+There's also an option to disable the Copilot within the admin center, and the user always has the option to close the Copilot and not engage with the feature.
 
 **What operational factors and setting allow for effective and responsible use of the system?**
 
 Copilot is only available in the Azure Data Lake ingestion experience and within the Power Automate Process Mining desktop app. The user can always close Copilot and not elect to interact with Copilot.
 
-## See also
+## Related information
 
 - [Copilot in Process Mining ingestion (preview)](process-mining-copilot-in-ingestion.md)
-- [Copilot in Process Mining process analytics (preview)](./minit/process-mining-copilot-in-process-analytics.md)
+- [Copilot in Process Mining process analytics (preview)](process-mining-copilot-in-process-analytics.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)

@@ -1,13 +1,13 @@
 ---
 title: PDF actions reference
 description: See all the available PDF actions.
-author: georgiostrantzas
+author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/24/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.date: 10/20/2023
+ms.author: iomavrid
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -46,7 +46,7 @@ The following example selects a combination of specific pages and a range of pag
 
 ## <a name="extracttextfrompdfaction"></a> Extract text from PDF
 
-Extract text from a PDF file.
+You can extract text from a PDF file by using the "Extract text from PDF" action. In the action properties you can define the source PDF file and the pages that text should be extracted from. Under the advanced action properties you can define a password in case the PDF file is protected and if the engine should optimize for structured data or not. 
 
 ### Input parameters
 
@@ -76,7 +76,7 @@ Extract text from a PDF file.
 
 ## <a name="extracttablesfrompdfaction"></a> Extract tables from PDF
 
-Extract tables from a PDF file.
+You can extract tables that are contained in a PDF file by using the **Extract tables from PDF** action. In the action properties you can define the PDF file and the range of pages that the tables will be extracted from. Under the advanced action properties you can define a password in case a the PDF file is protected, define if the table has headers or not, and finally if tables that cross page margins should be merged or not.
 
 ### Input parameters
 
@@ -107,7 +107,7 @@ Extract tables from a PDF file.
 
 ## <a name="extractimagesfrompdfaction"></a> Extract images from PDF
 
-Extract images from a PDF file.
+To extract images from a PDF file you can use the **Extract images from PDF** action. In the action parameters you can define the PDF file and the pages to extract images from, the naming convention of the extacted images and the target location of the saved images. You can also define a password if the PDF file is protected under the advanced settings. 
 
 ### Input parameters
 
@@ -137,7 +137,7 @@ This action doesn't produce any variables.
 
 ## <a name="extractpages"></a> Extract PDF file pages to new PDF file
 
-Extract pages from a PDF file to a new PDF file.
+You can create a new PDF file by extracting pages from an existing PDF file by using the **PDF file pages to a new PDF file** action. In the action parameters you can define the PDF file to extract the pages from, the page(s) to be extracted, the location of the new PDF file and what should happen if a file with the same name and extension already exists. Finally, under the advanced properties you can define a password in case the source PDF is protected. 
 
 ### Input parameters
 
@@ -168,6 +168,8 @@ Extract pages from a PDF file to a new PDF file.
 ## <a name="mergefiles"></a> Merge PDF files
 
 Merges multiple PDF files into a new one.
+
+You can use the **Merge PDF files** action to take two or more PDF files and merge them into a single file. The files to be merged can be provided either in the form of a list, or enclosed in double quotes and separated by a delimiter. You can also provide passwords for the PDF files, in case they are password-protected.
 
 ### Input parameters
 

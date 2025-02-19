@@ -24,7 +24,7 @@ This article describes how to use our mass deployment tool that allows you to ea
 
 To silently register your machines, you need to download and install Power Automate for desktop on the targeted devices. Visit this page to understand how to [install Power Automate silently](install-silently.md).
 
-To silently register your machine and join a group, we recommend that you use a service principal account. You can also use your Azure Active Directory account.
+To silently register your machine and join a group, we recommend that you use a service principal account. You can also use your Microsoft Entra account.
 
 ## Using a service principal account
 
@@ -62,7 +62,7 @@ To silently register your machine and join a group, we recommend that you use a 
    - Directory (tenant) ID
    - Client credentials (certificate or thumbprint)
 
-   ![Screenshot of the information that will be used in the Machine Registration app.](./media/machines-silent-registration/azure-portal-test-app-info.png)
+   ![Screenshot of the information that will be used in the Machine Registration app.](./media/machines-silent-registration/azure-portal-test-app-info.svg)
 
 ## Use the machine registration app
 
@@ -112,7 +112,7 @@ Machine registration arguments:
       ```
 
 >[!NOTE]
->If you decide to use an Azure AD account, you can specify the username: -username [UPN] instead of service principal account arguments
+>If you decide to use an Microsoft Entra account, you can specify the username: -username [UPN] instead of service principal account arguments
 
 ## Silently join a machine group
 
@@ -131,7 +131,7 @@ To join a group silently with the service principal account, use the join group 
 .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword -applicationid appid -clientsecret (or -certificatethumbprint thumbprint) -tenantid tenantid -environmentid envid
 ```
 > [!NOTE]
-> To use an Azure Active Directory account, specify the username: -username [UPN] instead of service principal account arguments.
+> To use an Microsoft Entra account, specify the username: -username [UPN] instead of service principal account arguments.
 
 ## Secure input
 

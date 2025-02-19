@@ -1,13 +1,13 @@
 ---
 title: Convert data using PowerShell
 description: Convert data using PowerShell
-author: georgiostrantzas
+author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 02/17/2022
-ms.author: marleon
-ms.reviewer: gtrantzas
+ms.author: matp
+ms.reviewer: matp
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

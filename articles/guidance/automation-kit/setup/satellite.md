@@ -9,7 +9,6 @@ contributors:
   - v-aangie
 editor: ''
 ms.custom: guidance
-ms.devlang: na
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
@@ -22,13 +21,13 @@ ms.reviewer: angieandrews
 
 This article includes the manual install process for the Satellite solution of the automation kit. There's an automated [command line installer](./command-line-install.md) that will also guide you through this process.
 
-## Create an Azure Active Directory (Azure AD) app registration to connect to Dataverse Web API
+## Create a Microsoft Entra app registration to connect to Dataverse Web API
 
 Use the following steps to create an app registration that will be used by flows in the satellite environment.
 
 1. Sign in to [Azure](https://portal.azure.com/).
 
-1. Go to **Azure Active Directory** > **App registrations**.
+1. Go to **Microsoft Entra** > **App registrations**.
 
 1. Select **New Registration**.
 

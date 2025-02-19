@@ -1,12 +1,12 @@
 ---
 title: Machine group certificate renewal for admins
 description: Common questions and answers for machine group certificate renewal.
-author: georgiostrantzas
+author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/16/2022
+ms.date: 12/12/2024
 ms.author: gachasta
-ms.reviewer: gtrantzas
+ms.reviewer: matp
 contributors:
 search.audienceType: 
   - admin
@@ -49,11 +49,11 @@ If all the machines of a machine group missed the certificate renewal, you can't
 
 ## What if desktop flow connections are unused during the machine group certificate renewal?
 
-If a desktop flow connection is unused during the machine group certificate renewal, you need to fix this connection:
+If a desktop flow connection is unused during the machine group certificate renewal, you get `ExpiredDesktopFlowConnection` errors when you try to use it. Fix the connection by:
 
 - Go to the Power Automate portal.
 - Navigate to **Data** > **Connection**.
-- Look for desktop flow connections with the status **Fix connection**, and open them to reenter the necessary information.
+- Find the expired connection, select it, select **Edit**, and reenter the necessary information.
 
 ## What if some machines are expected to remain offline or unused for multiple months?
 
@@ -129,7 +129,7 @@ Power Automate enables you to customize the certificate lifetime and how early t
 |Flow Machine Group |Group Key Validity Period |Duration in minutes after which the next certificate issued will be expired. |Minimum: Three months (129,600 minutes) </br> Maximum: Five years (2,628,000 minutes). |
 |Flow Machine Group |Group Key Expiry Grace Period |Duration in minutes before the machine group certificate’s expiration date where machines will renew their certificates. |Minimum: 45 days (64,800 minutes) </br> Maximum: half of the Group Key Validity Period. |
 
-The current certificate remains valid until its expiry date is reached. Changes to the validity period will only apply to the next certificate.
+The current certificate remains valid until its expiration date. Changes to the validity period will only apply to the next certificate.
 
 Some special considerations must be kept in mind when changing the validity period and the grace period:
 
