@@ -1,6 +1,6 @@
 ---
-title: Automatic updates for Power Automate Desktop
-description: How to enable Power Automate Desktop to update itself automatically
+title: Automatic updates for Power Automate for Desktop
+description: How to enable Power Automate for Desktop to update itself automatically
 author: a-887178056
 ms.subservice: desktop-flow
 ms.date: 02/14/2025
