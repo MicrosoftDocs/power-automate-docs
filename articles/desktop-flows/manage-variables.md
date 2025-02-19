@@ -110,7 +110,7 @@ To create an output variable:
 
     - **Variable name**: The name of the variable in the desktop flow.
     - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list), [datatable](variable-data-types.md#datatable), or [instance](variable-data-types.md#instances).
-    - **Data subtype**: The exact type of the instance (available only when **Instance** is previously selected as data type): Excel, Word, or Outlook.
+    - **Data subtype**: The exact type of the instance (available only when **Instance** is previously selected as data type): Excel, Word, Outlook, or Access.
     - **External name**: The external name is the name that appears in the cloud flow designer.
     - **Description**: The description of the variable that appears in the cloud or desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](#sensitive-variables).
