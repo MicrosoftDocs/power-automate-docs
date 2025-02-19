@@ -73,7 +73,7 @@ By default, Power Automate for desktop notifies you when a new version is availa
 
 ### Update automatically
 
-Starting with the April 2025 (2.54) release of Power Automate Desktop, automatic updates are available. Learn more at [Automatic update capability](/auto-update.md).
+Starting with the April 2025 (2.54) release, automatic updates are available for the MSI installation of Power Automate for desktop.  Learn more at [Automatic update capability](/auto-update.md).
 
 To learn about managing Power Automate for desktop using System Center Configuration Manager, go to [Manage Power Automate for desktop on Windows](../guidance/automation-coe/manage-pad-on-windows.md).
 

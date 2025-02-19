@@ -10,7 +10,7 @@ ms.topic: conceptual
 
 # Automatic update capability
 
-Starting with the April 2025 (2.54) release of Power Automate Desktop, machines are able to upgrade to greater versions in the background without requiring user interaction.
+Starting with the April 2025 (2.54) release of Power Automate for Desktop, machines are able to upgrade to greater versions in the background without requiring user interaction.
 
 > [!IMPORTANT]
 > - This article only applies to the MSI version of Power Automate Desktop. The store version's updates are managed by the Windows store.
@@ -23,13 +23,13 @@ There are two automatic update modes: regular and emergency.
 
 ### Regular automatic updates
 
-When a new Power Automate release is available, the `Power Automate update service` will download the latest version and run the update in the background when the machine is not in use.
+When a new Power Automate for Desktop release is available, the `Power Automate update service` will download the latest version and run the update in the background when the machine is not in use.
 
 This behavior is disabled by default and can be enabled via the registry, see [Configuring Automatic updates](#configuring-automatic-updates).
 
 ### Emergency automatic updates
 
-This update mode can be used to distribute critical security patches and major regression fixes to Power Automate Desktop machines.
+This update mode can be used to distribute critical security patches and major regression fixes to Power Automate for Desktop machines.
 
 When such an patch is available, machines will upgrade to their patched minor version (2.XX.Y => 2.XX.Z) when available, or to the latest version including the patch. This will only happen when machines are not in use.
 
@@ -51,9 +51,9 @@ To change from the default behavior, create the following registry values. This 
 Automatic updates will not run when:
 - The Power Automate service has been configured to run with a custom account.
 - A local or cloud-orchestrated desktop flow run is currently executing on the machine.
-- The Power Automate Desktop designer, runtime application, installer or troubleshooter is currently running.
+- The Power Automate for Desktop designer, runtime application, installer or troubleshooter is currently running.
 - There is some custom configuration in the *.exe.config files of the Power Automate install folder:
   - If you require custom proxy configuration, they should be set in the *.Proxy.config files instead of the *.exe.config files. See [configure Power Automate for desktop proxy settings](./how-to/proxy-settings.md).
   - If you require custom screen settings, it should be defined in the registry instead of the config files. See [set screen resolution for unatttended mode](./how-to/set-screen-resolution-unattended-mode.md).
 - The machine is a member of a Hosted Machine Group.
-- Power Automate Desktop was installed by extracting the MSI installer from the .exe bundle installer.
+- Power Automate for Desktop was installed by extracting the MSI installer from the .exe bundle installer.
