@@ -49,7 +49,7 @@ To change from the default behavior, create the following registry values. This 
 ## Automatic updates limitations
 
 Automatic updates will not run when:
-- The Power Automate service has been configured to run with a custom account, see [change the on-premises service account](./troubleshoot#change-the-on-premises-service-account).
+- The Power Automate service has been configured to run with a custom account, see [change the on-premises service account](./troubleshoot.md#change-the-on-premises-service-account).
 - A local or cloud-orchestrated desktop flow run is currently executing on the machine.
 - The Power Automate for desktop designer, runtime application, installer or troubleshooter is currently running.
 - There is custom configuration in the *.exe.config files of the Power Automate install folder:
