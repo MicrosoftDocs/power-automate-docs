@@ -59,12 +59,12 @@ To embed a connection reference to a flow, you have access to as a co-owner:
 - Select the desktop flow in Power Automate (make.powerautomate.com), and then select **Details**.
 - In the **Connection references** section, select **Manage.**
 
-:::image type="content" source="media/cloudconnectors/manage_connection_references_button.png" alt-text="Screenshot of the Manage Connections button" border="false":::
+:::image type="content" source="media/cloudconnectors/manage_connection_references_button-GA.png" alt-text="Screenshot of the Manage Connections button" border="false":::
 
 - In the **Connection references** screen all of the connection references used in a flow are displayed.
 - Set the **Embed in desktop flow** option to **Yes** to enable it.
 
-:::image type="content" source="media/cloudconnectors/embed_a_connection_reference_to_a_flow.png" alt-text="Screenshot of the Manage Connections menu" border="false" lightbox="media/cloudconnectors/embed_a_connection_reference_to_a_flow.png":::
+:::image type="content" source="media/cloudconnectors/embed_a_connection_reference_to_a_flow-GA.png" alt-text="Screenshot of the Manage Connections menu" border="false" lightbox="media/cloudconnectors/embed_a_connection_reference_to_a_flow-GA.png":::
 
 After you confirm your selection, the connection reference is embedded in the desktop flow.
 
