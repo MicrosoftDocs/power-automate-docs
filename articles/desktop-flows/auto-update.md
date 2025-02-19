@@ -13,7 +13,7 @@ ms.topic: conceptual
 Starting with the April 2025 (2.54) release of Power Automate for desktop, machines are able to upgrade to greater versions in the background without requiring user interaction.
 
 > [!IMPORTANT]
-> - This article only applies to the MSI version of Power Automate Desktop. The store version's updates are managed by the Windows store.
+> - This article only applies to the MSI version of Power Automate for desktop. The store version's updates are managed by the Windows store.
 
 There are two automatic update modes: regular and emergency.
 
