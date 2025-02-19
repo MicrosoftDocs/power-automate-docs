@@ -4,7 +4,7 @@ description: Learn how to create a machine-credential mapping for your desktop f
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/17/2025
+ms.date: 02/19/2025
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
@@ -57,9 +57,9 @@ To create a mapping between machines and credentials, follow these steps:
 
 1. Ensure the Microsoft Flow Extensions core package (MicrosoftFlowExtensionsCore) Dataverse solution in your environment equals to 1.8.36.0 or higher.
 1. Ensure the version of Power Automate desktop app is 2.50 or higher.
-1. Create your credential using [Azure Key Vault](create-AzureKeyVault-credential.md) or [CyberArk](create-cyberark-credential.md). These credentials must be defined as usable in **connection** to be selected in your mapping.
-1. You need to have machines registered in this environment. If you didn't register your machine, follow the steps in [Manage Machines](manage-machines.md).  
-1. CyberArk only: **all the machines using CyberArk credentials** must be [configured with a CyberArk application](create-cyberark-credential.md).
+1. Create your credential using [Azure Key Vault](create-AzureKeyVault-credential.md) or [CyberArk](create-cyberark-credential.md). To select them in your mapping, define these credentials as usable in connection.
+1. Register your machines in this environment. If your machine isn't registered, follow the steps in [Manage Machines](manage-machines.md).
+1. CyberArk only: Configure all machines using CyberArk credentials with a [CyberArk application](create-cyberark-credential.md).
 
 ## Create a machine mapping
 
@@ -79,11 +79,11 @@ To create a mapping between machines and credentials, follow these steps:
     1. From the credential dropdown, select the credentials to map to this machine.
 
          > [!NOTE]
-         > In the dropdown, you only see credentials that are usable in **connections**.
+         > In the dropdown, you only see credentials that are usable in connections.
          > All credentials listed for a machine must be working credentials for that machine. In other words, if one credential fails for a machine, this machine is considered as not available even if there are other credentials defined for this machine.
          > You can't map a mapping credential to another mapping.
 
-        :::image type="content" source="./media/manage-machines/Machine-mapping-3.png" alt-text="Screenshot of create new mapping.":::
+        :::image type="content" source="./media/manage-machines/machine-mapping.png" alt-text="Screenshot of create new mapping.":::
 
 1. Once the mapping between a machine and credentials is done, you can see it in the list of mappings. You can edit the mapping to change the credentials or delete it.
 1. If you need to define a new mapping, select **Add new**.
