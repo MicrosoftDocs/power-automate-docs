@@ -4,7 +4,7 @@ description: Learn about the available Cloud Connector operations in Power Autom
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/11/2024
+ms.date: 02/20/2025
 ms.author: iomavrid
 ms.reviewer: 
 contributors:
@@ -42,21 +42,7 @@ search.audienceType:
     - [Unrelate rows in selected environment](/connectors/commondataserviceforapps/#unrelate-rows-in-selected-environment)
     - [Update a row in selected environment](/connectors/commondataserviceforapps/#update-a-row-in-selected-environment)
     - [Upload a file or an image to selected environment](/connectors/commondataserviceforapps/#upload-a-file-or-an-image-to-selected-environment)
-- A few connector actions introduced in version 2.49 (both installer and Microsoft Store versions) might fail with the following error during designer, console, and cloud-initiated runs:
 
-  `Operation 'HttpRequest' not found in connector '/providers/Microsoft.PowerApps/apis/shared_sharepointonline'.`
-
-  The affected connector actions include:
-
-  - SharePoint:
-    - Grant access to an item or a folder
-    - Send an HTTP Request to SharePoint
-  - Microsoft Teams:
-    - Send a Microsoft Graph HTTP Request
-  - Office 365 Outlook:
-    - Send an HTTP Request
-
-  This issue is fixed in version 2.50.
   
 ## Use files in cloud connector actions
 
@@ -64,13 +50,9 @@ To pass a file as an input to a cloud connector action, you must first convert i
 
 Cloud connector actions that create or retrieve files actually produce binary data representing the respective files. To access the actual file, make sure to use the [Convert binary data to file](file.md#convertbinarytofileaction) action first.
 
-## Embed connection references on a desktop flow (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+## Embed connection references on a desktop flow
 
 With connection reference embedding, you can provide other co-owners access to your connection references and their underlying resources. You do this process only in the scope of the respective shared desktop flow.
-
-[!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 To embed a connection reference to a flow, you have access to as a co-owner:
 
