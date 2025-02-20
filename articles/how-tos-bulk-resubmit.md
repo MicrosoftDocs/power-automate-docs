@@ -5,7 +5,7 @@ suite: flow
 author: DBEKI
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 02/06/2025
+ms.date: 02/19/2025
 ms.author: dbekirop
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -22,14 +22,22 @@ You can cancel or resubmit your flow runs in bulk instead of one at a time, whic
 Administrators can enable users to resubmit flow runs initiated by instant triggers. Instant triggers, which are used to manually start flows, can be activated through Power Automate, a mobile app, or a button in a canvas app, among other methods.
 
 > [!IMPORTANT]
-> The new setting for resubmitting flow runs initiated by instant triggers starts rolling out on January 13, 2025, and is expected to be available in all regions by the end of January 2025. To ensure that flow owners can't resubmit flow runs with connections others provided to the flow, leave this setting off. Otherwise, Power Platform administrators can follow the instructions in this section to enable all users to resubmit flow runs initiated by instant triggers. Other trigger types aren't affected by this change.
+> Starting on February 6, 2025, we'll change the functionality of the Power Platform Admin setting **Power Automate flow run resubmission**. Previously, users could disable flow run resubmissions initiated by instant triggers for all users. With the update, users can resubmit their own flows initiated by instant triggers but aren't able to resubmit flows initiated by others. The state of the Power Platform admin center toggle on your tenant remains unchanged, as this update is rolled out in February.
 
 | Scenario matrix | January 2025 feature release | February 2025 feature update (currently rolling out) |
-|-----------------|----------------------|-------------------------------------------|
+|-----------------|------------------------------|-----------------------------------------------------|
 | Feature setting disabled in Power Platform admin center | User can't resubmit their own flows initiated by instant triggers, or resubmit flows initiated by another user. | User can resubmit their own flows initiated by instant triggers, but disallowed to resubmit flows initiated by another user. |
 | Feature setting enabled in Power Platform admin center | User can resubmit their own flows initiated by instant triggers and also resubmit flows initiated by another user. | User can resubmit their own flows initiated by instant triggers and also resubmit flows initiated by another user. |
+> 
+There are two options to enable flow run resubmission for flows initiated by instant triggers, which are through Power Platform admin center and by using PowerShell.
 
-### Prerequisites
+### Power Platform Admin Center
+
+1. Sign in to your Power Platform admin center account.
+1. Select **Settings** and then search for **Power Automate flow run resubmission**.
+1. Choose whether to enable or disable the functionality using the toggle.
+
+### Apply tenant setting using PowerShell prerequisites
 
 To perform the administration operations in the cmdlets, you need the following:
 
@@ -38,10 +46,6 @@ To perform the administration operations in the cmdlets, you need the following:
 - Power Platform administrator or Dynamics 365 administrator permissions are required to search through another user's resources. Environment admins only have access to those environments and environment resources for which they have permissions.
 
 - For Dataverse for Teams environments, you must be a Power Platform administrator to manage environments where you aren't the owner of the team in Microsoft Teams.
-
-### PowerShell commands
-
-To enable flow run resubmission for flows initiated by instant triggers, run the following PowerShell commands.
 
 > [!NOTE]
 > It takes approximately an hour for the function to become enabled after the PowerShell commands are applied.
@@ -63,7 +67,7 @@ To enable flow run resubmission for flows initiated by instant triggers, run the
    Set-TenantSettings -RequestBody $tenantSettings
    ```
 
-To learn more about PowerShell commands, see [PowerShell support for Power Apps and Power Automate](/power-platform/admin/powerapps-powershell#cmdlets).
+Learn more about PowerShell commands in [PowerShell support for Power Apps and Power Automate](/power-platform/admin/powerapps-powershell#cmdlets).
 
 ## Resubmit flow runs
 
