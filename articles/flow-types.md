@@ -44,7 +44,7 @@ Use [desktop flows](./desktop-flows/introduction.md) to automate tasks on the we
 
 [Business process flows](business-process-flows-overview.md) provide a guide for people to get work done. They provide a streamlined user experience that leads people through the processes their organization defined for interactions that need to be advanced to a conclusion of some kind. This user experience can be tailored so that people with different security roles can have an experience that best suits the work they do.
 
-## Creating and managing flows in Power Apps
+## Create and manage flows in Power Apps
 
 Your Power Automate license also gives you rights to create and manage flows in Power Apps. For example, after you sign in to Power Apps, you can select **Flows** in the left navigation pane. You can also create and manage flows through the [Power Automate pane](/powerapps/maker/canvas-apps/working-with-flows) within Power Apps Studio.
 

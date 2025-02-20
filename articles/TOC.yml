@@ -2,7 +2,7 @@
   href: ./index.yml
 - name: Overview
   items: 
-    - name: What is Power Automate
+    - name: What is Power Automate?
       href: flow-types.md
     - name: Adopt automation with Copilot in Power Automate
       href: copilot-overview.md
