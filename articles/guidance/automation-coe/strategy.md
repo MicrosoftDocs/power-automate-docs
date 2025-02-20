@@ -8,7 +8,6 @@ ms.date: 07/01/2024
 ms.subservice: guidance
 ms.author: kathyos
 ms.reviewer: angieandrews
-ms.collection: bap-ai-copilot
 
 search.audienceType: 
   - admin

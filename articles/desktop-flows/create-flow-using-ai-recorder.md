@@ -1,11 +1,11 @@
 ---
-title: Create desktop flows using the AI Recorder
-description: Create desktop flows effortlessly with AI Recorder in Power Automate desktop by sharing your screen and narrating tasks to automate.
+title: Create desktop flows using Record with Copilot (preview)
+description: Create desktop flows effortlessly with Record with Copilot in Power Automate desktop by sharing your screen and narrating tasks to automate.
 author: JoeFernandezMS
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 09/03/2024
+ms.date: 10/14/2024
 ms.author: jofernan
 ms.reviewer: dmartens
 contributors:
@@ -19,41 +19,41 @@ ms.custom:
   - ai-seo-date:08/23/2024
 ---
 
-# Create desktop flows using the AI Recorder
+# Create desktop flows using Record with Copilot (preview)
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Introduction
 
-Building desktop flows is now easier than ever with the AI Recorder, also known as Record with Copilot, in Power Automate desktop. This feature lets you build desktop automations by sharing your screen and describing the task you want to automate, as if you were explaining it to someone else. The AI Recorder captures your voice, mouse, and keyboard inputs during the recording. Then, it processes them and converts them into a desktop flow. You can review, edit, and save the flow before running it.
+Building desktop flows is now easier than ever with Record with Copilot, also known as the AI Recorder, in Power Automate desktop. This feature lets you build desktop automations by sharing your screen and describing the task you want to automate, as if you were explaining it to someone else. Record with Copilot captures your voice, mouse, and keyboard inputs during the recording. Then, it processes them and converts them into a desktop flow. You can review, edit, and save the flow before running it.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-Watch this short video to learn how to use the AI Recorder:
+Watch this short video to learn how to use Record with Copilot:
 
-[How to build automations with the AI Recorder - YouTube](https://www.youtube.com/watch?v=xt3uyoe3Le0)
+> [!VIDEO 853935fc-c43c-4bf2-9a9d-12b83f3abcfd]
 
 ## Prerequisites
 
-Before you use the AI Recorder, make sure you meet these requirements:
+Before you use Record with Copilot, make sure you meet these requirements:
 
 ### Availability by region
 
-Currently, The AI Recorder is available only in environments in the United States. Learn how to create an environment in the United States at [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
+Currently, Record with Copilot is available only in environments in the United States. Learn how to create an environment in the United States at [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment).
 
 ### Availability by account type
 
-Currently, AI Recorder is available only for users with a work or school account.
+Currently, Record with Copilot is available only for users with a work or school account.
 
 ### Minimum Power Automate Desktop
 
 You need Power Automate desktop version 2.48 or higher. Learn how to download the latest version at [Install Power Automate](https://aka.ms/DownloadPAD48).
 
-## Create a desktop flow using the AI Recorder
+## Create a desktop flow using Record with Copilot
 
-To create a desktop flow using the AI Recorder:
+To create a desktop flow using Record with Copilot:
 
-1. **Open the AI Recorder:**
+1. **Open Record with Copilot:**
 
     In Power Automate for desktop, select **Record with Copilot**, and then select **Start**. If this option isn’t available, check the [Prerequisites](#prerequisites).
 
@@ -85,41 +85,45 @@ To create a desktop flow using the AI Recorder:
 
 ## Frequently asked questions
 
-### What are some limitations of the AI Recorder?
+### What are some limitations of Record with Copilot?
 
-* The AI Recorder is available only in environments based in the United States for users with work or school accounts. It supports only English at this time. We're working hard to expand support to more regions and languages soon.
+* Record with Copilot is available only in environments based in the United States for users with work or school accounts. It supports only English at this time. We're working hard to expand support to more regions and languages soon.
 
-* The AI Recorder needs you to speak and explain the automation process. If you don't provide narration, it doesn't generate an automation.
+* Record with Copilot needs you to speak and explain the automation process. If you don't provide narration, it doesn't generate an automation.
 
 * You need to interact with clicks or keystrokes during recording. Just talking over a screen without any mouse or keyboard interaction doesn't produce an automation suggestion.
 
-### How can I get the best results from the AI Recorder?
+### How can I get the best results from Record with Copilot?
 
 Speak clearly and show each step in detail as you demonstrate the process. Wait for screens to load completely and avoid interruptions or distractions during recording.
 
-### Where can I watch a demo of the AI Recorder?
+### Where can I watch a demo of Record with Copilot?
 
-This video shows a demo of the AI Recorder:
+The following videos shows a demo of Record with Copilot:
 
-> [!VIDEO https://www.youtube.com/embed/xt3uyoe3Le0?si=hWgo3tEKuzhFrSVq]
+> [!VIDEO 853935fc-c43c-4bf2-9a9d-12b83f3abcfd]
 
-### What are some scenarios I can try with the AI Recorder?
+<br><br>
+
+> [!VIDEO cb7fd0a9-ce47-49f0-95d1-1ebeb135ac4e]
+
+### What are some scenarios I can try with Record with Copilot?
 
 You can try different scenarios, such as moving data from Excel to a web form, navigating websites, and extracting data.
 
 ### What languages are supported?
 
-The AI Recorder supports English right now. We'll add more languages in future updates.
+Record with Copilot supports English right now. We'll add more languages in future updates. 
 
-### How is the AI Recorder different from the Recorder?
+### How is Record with Copilot different from the Recorder?
 
 The Recorder captures interactions like mouse clicks and keystrokes, and creates a desktop flow that repeats those actions. However, it doesn't capture logic such as conditions or loops.
 
-The AI Recorder lets you explain the process verbally while showing it. The AI model then interprets your actions and narration and suggests an automation that includes conditions, loops, and necessary interactions.
+Record with Copilot lets you explain the process verbally while showing it. The AI model then interprets your actions and narration and suggests an automation that includes conditions, loops, and necessary interactions.
 
-### Why does the flow suggested by the AI Recorder have missing actions or UI selectors?
+### Why does the flow suggested by Record with Copilot have missing actions or UI selectors?
 
-The AI Recorder is in preview, and we're constantly improving its accuracy. As an AI-powered tool, the AI Recorder is designed to get better over time. If you run into issues, we'd love your feedback to help us improve the AI Recorder for your specific use case. Contact us at <powerautomate-ai@microsoft.com> and we're happy to chat with you.
+Record with Copilot is in preview, and we're constantly improving its accuracy. As an AI-powered tool, Record with Copilot is designed to get better over time. If you run into issues, we'd love your feedback to help us improve Record with Copilot for your specific use case. Contact us at <powerautomate-ai@microsoft.com> and we're happy to chat with you.
 
 ### How does the system manage recordings, and what measures are taken to ensure privacy and security?
 
@@ -135,6 +139,10 @@ When you start a recording, you can choose which screen to record and which micr
 
 The recorder captures a video of the selected screen, audio from the chosen microphone, and necessary UI metadata to build the desktop flow.
 
+## Can you turn off Record with Copilot?
+
+You can turn off Copilot for Power Automate, which also turns off Record with Copilot. Learn more in [Enable or disable Copilot in Power Automate](../copilot-overview.md#enable-or-disable-copilot-in-power-automate).
+
 ## Share your feedback
 
-Do you have any thoughts on the AI Recorder? We'd love to hear from you! Send us a note at <powerautomate-ai@microsoft.com>. We’d love to chat with you.
+Do you have any thoughts on Record with Copilot? We'd love to hear from you! Send us a note at <powerautomate-ai@microsoft.com>. We’d love to chat with you.

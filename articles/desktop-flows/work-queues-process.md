@@ -2,7 +2,7 @@
 title: Process, add, update and requeue work queue items
 description: Work queue processing options through Power Automate cloud flows, desktop flows and Dataverse API's.
 ms.topic: conceptual
-ms.date: 04/28/2023
+ms.date: 10/14/2024
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -49,7 +49,7 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
 
 1. The **Process work queue items** action is used to designate which work queue to consume items from and process in your desktop flow.  The action can be configured to select a work queue from a list using the dropdown arrow, pass a variable including the queue name. When run, this action works by bringing in the first (oldest) item from the work queue into your flow that contains a status of **queued**. Once the queue item begins processing in your flow, its status automatically changes to **processing**.
 
-   :::image type="content" source="media/work-queues/work-queue-pad-procwqiaction.png" alt-text="Screenshot of the WorkQueueItem action configured to process queue items in Power Automate desktop." lightbox="media/work-queues/work-queue-pad-procwqiaction.png":::
+   :::image type="content" source="media/work-queues/work-queue-pad-procwqiaction-new.png" alt-text="Screenshot of the WorkQueueItem action configured to process queue items in Power Automate desktop." lightbox="media/work-queues/work-queue-pad-procwqiaction-new.png":::
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqirocessing.png" alt-text="Screenshot of work queue item in **processing** state." lightbox="media/work-queues/work-queue-pad-wqirocessing.png":::
 
@@ -93,9 +93,28 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqiresults.png" alt-text="Screenshot example of updated status for work queue items processed in the flow portal." lightbox="media/work-queues/work-queue-pad-wqiresults.png":::
 
-#### Adding & Requeuing work queue items examples from PAD
+#### Auto-retry pattern
 
-The **Add work queue item** enables desktop flow users to populate work queue items into a work queue, which has been set up in the flow portal.
+The **Process work queue items** action in Power Automate Desktop includes an advanced option to configure or override an auto-retry mechanism. This feature allows you to specify the maximum auto-retry count per work queue item, which is useful for handling IT exceptions like transient network errors or temporary system unavailability. It enables the machine to retain the item and perform controlled retries without requeuing the item, ensuring more efficient and resilient work queue processing.
+
+You can set and centrally control the maximum retry count on the work queue record in Dataverse. This default value applies to all desktop flows that process this work queue through the **Process Work Queue Items** action.
+
+To override the queue-level default in your flow, navigate to the **Advanced** section of the **Process work queue items** action, and toggle the **Override work queue auto-retry configuration** option. This setting lets you adjust the maximum retry count to a higher or lower value, or even disable the retry mechanism by setting the max retry count to 0.
+
+When you use the **Update work queue item** action with a status set to `IT exception` and a max auto-retry count greater than 0, the system doesn't immediately send the update to the work queue orchestrator. Instead, it retries the operation until it reaches the specified max retry count. The only value updated in the work queue item is the `retrycount`. This value increases from the second update attempt onwards until the max auto-retry count is reached. Additionally, a local work queue item variable called `CurrentRetryCount` increments with each retry. This variable allows you to implement custom logic based on its value if needed.
+
+:::image type="content" source="media/work-queues/work-queue-pad-procwqiaction.png" alt-text="Screenshot of the WorkQueueItem action configured to process queue items with advance max retry count set in Power Automate desktop." lightbox="media/work-queues/work-queue-pad-procwqiaction.png":::
+
+The flow won't request a new item when it loops back to the top of the **Process work queue items** action if the following conditions are met:
+
+* The maximum retry count is not reached.
+* No other updates occur except for IT exceptions.
+
+When the max retry count is reached, the update action sends the update to the orchestrator, changing the item's status to IT Exception and including any provided processing notes.
+
+#### Adding and requeuing work queue items examples from PAD
+
+The **Add work queue item** enables desktop flow users to populate work queue items into a work queue, which has been set up in the flow portal. Batch item creation is supported by using the [**Add work queue items**](actions-reference/workqueues.md#add-multiple-work-queue-items) action.
 
 In this example, an Excel file in .csv is dropped into a directory on a daily basis and each row needs to be added to a work queue.
 

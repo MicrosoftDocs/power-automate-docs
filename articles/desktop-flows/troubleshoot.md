@@ -1,24 +1,28 @@
 ---
-title: Troubleshoot desktop flows
-description: See how to troubleshoot common issues of Power Automate desktop flows.
+title: Troubleshoot desktop flows runtime
+description: Learn how to resolve common Power Automate desktop flows runtime problems effectively.
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 04/09/2024
+ms.date: 01/14/2025
 ms.author: pefelesk
 ms.reviewer: tapanm
 contributors:
-- PetrosFeleskouras
-- johndund
-- DanaMartens
-search.audienceType: 
+  - PetrosFeleskouras
+  - johndund
+  - DanaMartens
+search.audienceType:
   - flowmaker
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:01/14/2025
 ---
 
-# Troubleshoot desktop flows
+# Troubleshoot desktop flows runtime
 
-To open the Power Automate troubleshoot tool:
+To open the Power Automate troubleshoot tab:
 
 1. Launch **Power Automate machine runtime**
 1. Select **Troubleshoot**
@@ -26,6 +30,27 @@ To open the Power Automate troubleshoot tool:
 
 >[!NOTE]
 >You need to have admin privileges to open the troubleshoot tool from Power Automate machine runtime.
+
+## Diagnose runtime connectivity issues
+
+>[!NOTE]
+>You can access the diagnostic tool from Power Automate console as well. Select **help**. From the dropdown, select **troubleshooter** > **diagnose connectivity issues for cloud runtime**.
+
+The diagnostic tool helps you identify connectivity issues between your computer and services required to run Power Automate. It can help debug both cloud runtime and machine registration issues you might experience. To run the tool, select **Launch diagnostic tool** in the troubleshoot tab in the machine runtime.
+
+When you run the tool, Power Automate tries to connect to each required service. If a connection fails, the logs can help you understand the list of endpoints you must allow. For the cloud runtime to work, the Power Automate service (UIFlowService) running on your machine must have access to *.dynamics.com, *.servicebus.windows.net, *.gateway.prod.island.powerapps.com, and *.api.powerplatform.com.
+
+The tool can check different items based on whether your machine is registered. If you experience problems registering your machine, read [registration troubleshooting documentation](/troubleshoot/power-platform/power-automate/desktop-flows/desktop-flow-machine-registration-troubleshooting) before running the tool. The following table lists the endpoints the tool checks and the actions to take depending on your machine state.
+
+| Required services | What it checks | What to do if it fails |
+| --------|  ---------| ---- |
+| Azure Relay (*.servicebus.windows.net) | If the machine is registered, it checks the specific endpoints used for machine-cloud communication that are established upon registration. If your computer isn't registered, it checks a static relay endpoint. | If your machine isn't registered, ensure *.servicebus.windows.net has connectivity. If your machine is registered, you can either allow *.servicebus.windows.net or specifically the endpoints in the logs. |
+| Dataverse (*.dynamics.com) | If the machine is registered, it contacts your specific Dataverse environment. If the machine isn't registered, it doesn't do a check. | Allow connectivity to *.dynamics.com or your team’s Dataverse URL. |
+| Desktop flow service (*.gateway.prod.island.powerapps.com and *.api.powerplatform.com) | If the machine is registered, it checks that the endpoint is reachable for desktop flow runtime. | The logs should tell you what failed. Up to version 2.51, *.gateway.prod.island.powerapps.com must be reachable. Starting with version 2.52, *.api.powerplatform.com must also be reachable. |
+
+Remember that the Power Automate service (UIFlowService) running on your machine is making the call to required services. On-premises proxy servers might have rules that require calls to come from a specific user. Consider [changing the on-premises service account](#change-the-on-premises-service-account) to fix these errors if a specific endpoint works in a user session but not via the Power Automate service.
+
+You can review the list of all [services required for desktop flow runtime](../ip-address-configuration.md).
 
 ## Resolve failed connection between Power Automate components
 
@@ -63,13 +88,15 @@ You can find TroubleshootingTool.Console.exe in the directory where you installe
 
 Example:
 
-`TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount mydomain\myuser < tempfilethatcontainspassword.txt`                                                                                              
+`TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount mydomain\myuser < tempfilethatcontainspassword.txt`
 
 The tool also provides other functionality such as getting the name of the account that the service is currently running as, resetting it to run as the default virtual account, or simply restarting the service. For more information on all supported commands, simply run the TroubleshootingTool.Console.exe with no arguments.
 
 ## Troubleshoot desktop flow runs
 
 If your desktop flow run fails, go to [Errors when running attended or unattended desktop flows](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-errors-running-attended-or-unattended-desktop-flows) and find mitigation steps for different error codes.
+
+If you encounter errors related to the desktop flow run queue, go to [Troubleshoot desktop flow run queue errors](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-desktop-flow-run-queue-errors).
 
 ## Collect machine logs
 
@@ -130,10 +157,9 @@ If you need help, use our self-help options, or ask for help from support.
 > [!IMPORTANT]
 > The following statement is subject to change.
 >
-> We offer full support for all Power Automate for desktop product versions released within a year from the latest public product release. For product releases prior to a year back from the latest release, only issues of severity level **Critical** and **Severity A** are supported. Product fixes are always added to the latest version.
->
->To find more information about severity levels, go to [Support overview](/power-platform/admin/support-overview#what-is-initial-response-time-and-how-quickly-can-i-expect-to-hear-back-from-someone-after-submitting-my-support-request). To see the currently supported releases, go to [Released versions for Power Automate for desktop](/power-platform/released-versions/power-automate-desktop).
-
+> We offer customer support for all Power Automate for Desktop versions released within a year of the latest public release. Security issues are addressed for product releases up to 6 months old.
+> Bug fixes and product enhancements are always included in the latest version.
+ 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 

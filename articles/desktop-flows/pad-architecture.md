@@ -41,7 +41,7 @@ The outgoing web requests from the **UIFlowService** on the desktop machine to A
 
 Destination IP addresses for Azure Relay can be found at [Azure IP Ranges and Service Tags](https://www.microsoft.com/download/details.aspx?id=56519) for the public cloud under the name **ServiceBus**. Similar documents are available for the other Azure national clouds. No inbound ports are required to be open on the desktop machine. 
 
-## Attended/Unattended desktop connectivity to the cloud service using the on-premises data gateway 
+## Attended/Unattended desktop connectivity to the cloud service using the on-premises data gateway
 
 > [!NOTE]
 > Power Automate now offers direct connectivity to the cloud without the use of on-premises data gateways. You can find more information in [Attended/Unattended desktop direct connectivity to the cloud service](pad-architecture.md#attendedunattended-desktop-direct-connectivity-to-the-cloud-service).
@@ -61,7 +61,7 @@ The details about this data flow are documented in [Adjust communication setting
 
 ## Other Power Automate outgoing web requests 
 
-Power Automate makes some additional outgoing web requests at runtime, which are documented in [Desktop flows services required for runtime](../ip-address-configuration.md#desktop-flows-services-required-for-runtime). 
+Power Automate makes some additional outgoing web requests at runtime, which are documented in [Desktop flow services required for runtime](../ip-address-configuration.md#services-required-for-desktop-flows-runtime).
 
 The CRL endpoints are only required if you use the on-premises data gateway. They use HTTP over port 80 and are initiated by the **UIFlowService**. 
 

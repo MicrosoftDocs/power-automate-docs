@@ -4,7 +4,7 @@ description: Learn how to run desktop flows in picture-in-picture mode.
 author: nikosmoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 08/29/2024
+ms.date: 09/30/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -20,7 +20,11 @@ search.audienceType:
 
 Power Automate enables you to run attended desktop flows within a virtual window that replicates your desktop, so that you can continue working on your machine while the automation is running in parallel.
 
-This attended run mode is called *picture-in-picture* and uses the [Child Sessions](/windows/win32/termserv/child-sessions) technology.
+This attended run mode is called *picture-in-picture* and uses the [Child Sessions](/windows/win32/termserv/child-sessions) technology. 
+
+Here's a quick video tutorial about running desktop flows in picture-in-picture.
+
+> [!VIDEO 0454b032-9e88-4bfd-a04e-a8cd4ba2310e]
 
 ## Prerequisites
 

@@ -1,10 +1,9 @@
 ---
 title: Data loss prevention (DLP) policy creation
 description: Learn about data loss prevention policies for Power Automate.
-services: ''
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 07/19/2024
+ms.date: 01/14/2025
 ms.author: cgarty
 author: ChrisGarty
 contributors:
@@ -16,26 +15,26 @@ ms.custom: bap-template
 
 # Data loss prevention (DLP) policy creation
 
-An organization's data is critical to its success. Its data needs to be readily available for decision-making, but at the same time protected so that it isn't shared with audiences that shouldn't have access to it. To protect your business data, Power Automate gives you the ability to create and enforce policies that define which connectors can access and share it. The policies that define how data can be shared are referred to as data loss prevention (DLP) policies.
+An organization's data is critical to its success. Its data needs to be readily available for decision-making, but at the same time, data needs to be protected so that it isn't shared with audiences that shouldn't have access to it. To protect your business data, Power Automate gives you the ability to create and enforce policies that define which connectors can access and share it. The policies that define how data can be shared are referred to as data loss prevention (DLP) policies.
 
 Administrators control DLP policies. If a DLP policy is blocking your flows from running, contact your administrator.
 
-[Learn more about protecting your data with Power Platform data loss prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention).
+Learn more about protecting your data with Power Platform in [Data Loss Prevention (DLP) policies](/power-platform/admin/wp-data-loss-prevention).
 
 ## Data loss prevention for desktop flows
 
 Power Automate allows you to create and enforce DLP policies that classify desktop flow modules and individual module actions as **Business**, **Non-business**, or **Blocked**. This categorization prevents makers from combining modules and actions from different categories into a desktop flow or between a cloud flow and the desktop flows it uses.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 >
-> - Enforcement of DLP policies is available for [Managed Environments](/power-platform/admin/managed-environment-overview) only. Starting January 2025, only desktop flows that are located in Managed Environments will be evaluated by DLP policies.
+> - DLP policy enforcement for desktop flows is available in all environments.
 > - DLP for desktop flows is available for versions of Power Automate for desktop 2.14.173.21294 or later. If you're using an earlier version, uninstall it and update to the latest version.
 
 ### View desktop flow action groups
 
 By default, desktop flow action groups don't appear when you're creating a DLP policy. You need to turn on the **Show desktop flow actions in DLP policies** setting in your tenant settings.
 
-If you've opted for the public preview, the **Desktop flow actions in DLP** setting is already enabled and can't be changed.
+If you opted for the public preview, the **Desktop flow actions in DLP** setting is already enabled and can't be changed.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. On the left side panel, select **Settings**.
@@ -65,7 +64,7 @@ Granular control over the use of desktop flows on all machines as described in t
 
 - **Ability to govern desktop flow orchestration**: The desktop flow connector can be governed in your policies like any other connector in all environments.
 
-- **Ability to govern usage of Power Automate for desktop**: You can govern Power Automate for desktop flows through GPO. This governance allows you to turn on or off desktop flows for actions such as to restrict to a set of environments or regions, limit use of account types, and restrict manual updates.
+- **Ability to govern usage of Power Automate for desktop**: You can govern Power Automate for desktop flows through Group Policy objects (GPO). This governance allows you to turn on or off desktop flows for actions such as to restrict to a set of environments or regions, limit use of account types, and restrict manual updates.
 
 [Learn more about governance in Power Automate](/power-automate/desktop-flows/governance).
 
@@ -98,6 +97,7 @@ The following desktop flow modules are available in DLP:
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.OCR      OCR
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Outlook    Outlook
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Pdf      PDF
+- providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.PowerAutomateSecretVariables     Power Automate Secret Variables
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Runflow    Run flow
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.Scripting    Scripting
 - providers/Microsoft.ProcessSimple/operationGroups/DesktopFlow.System    System
@@ -211,7 +211,7 @@ Periodically, DLP enforcement needs to change because new DLP capabilities or a 
 
 1. **Investigating**: Confirm the need for a DLP enforcement change and investigate the specifics of the change.
 
-1. **Learning**: Implement the change and gather data about the breadth of the effects of the change. Document DLP enforcement changes to explain the scope of the change. If the data suggests that customers will be greatly affected, then a communication may be sent to those customers to let them know that a change is coming. If the change has a broad impact on existing flows, then at a later stage in the learning phase, when the background DLP enforcement job finds a violation in an existing flow, Power Automate notifies the flow owners that the flow will be suspended, so that they have more time to respond.
+1. **Learning**: Implement the change and gather data about the breadth of the effects of the change. Document DLP enforcement changes to explain the scope of the change. If the data suggests that customers will be greatly affected, then a communication might be sent to those customers to let them know that a change is coming. If the change has a broad impact on existing flows, then at a later stage in the learning phase, when the background DLP enforcement job finds a violation in an existing flow, Power Automate notifies the flow owners that the flow will be suspended, so that they have more time to respond.
 
 1. **Notify only**: Turn on email notifications only for DLP violations so owners of existing flows get notified about the upcoming DLP enforcement change. When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended. This mechanism runs weekly.
 
@@ -231,8 +231,9 @@ The following table lists DLP enforcement changes and the date the changes were 
 |----|----|----|----|----|----|
 | May 2022 | Delegated authorization background job enforcement | DLP policies are enforced on flows that use delegated authorization while the flow is being saved, but not during background job evaluation. | Full |June 2, 2022 | July 21, 2022 |
 | May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have **type=Request** and **kind=apiConnection**. Many of the affected triggers are instant triggers, which are used in instant, or manually triggered, flows. The affected triggers include the following.<br/>- [Power BI](/connectors/powerbi/): Power BI button clicked<br/>- [Teams](/connectors/teams/): From the compose box (V2)<br/>- [OneDrive for Business](/connectors/onedriveforbusiness/): For a selected file<br/>- [Dataverse](/connectors/commondataserviceforapps/): When a flow step is run from a business process flow<br/>- [Dataverse (legacy)](/connectors/commondataservice/): When a record is selected<br/>- [Excel Online (Business)](/connectors/excelonlinebusiness/): For a selected row<br/>- [SharePoint](/connectors/sharepointonline/): For a selected item<br/>- Microsoft Copilot Studio: When Copilot Studio calls a flow (V2) | Full | June 2, 2022 | August 25, 2022 |
-| July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies to include child flows. If a violation is found anywhere in the flow tree, the parent flow is suspended. After the child flow is edited and saved to remove the violation, the parent flows can be resaved or reactivated to run the DLP policy evaluation again. A change to no longer block child flows when the HTTP connector is blocked will roll out along with full enforcement of DLP policies on child flows. Once full enforcement is available, the enforcement will include child desktop flows. | Full | February 14, 2023 | March 2023 |
+| July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies to include child flows. If a violation is found anywhere in the flow tree, the parent flow is suspended. After the child flow is edited and saved to remove the violation, the parent flows can be resaved or reactivated to run the DLP policy evaluation again. A change to no longer block child flows when the HTTP connector is blocked will roll out along with full enforcement of DLP policies on child flows. Once full enforcement is available, the enforcement includes child desktop flows. | Full | February 14, 2023 | March 2023 |
 | January 2023 | Enforce DLP policies on child desktop flows | Enable the enforcement of DLP policies to include child desktop flows. If a violation is found anywhere in the flow tree, the desktop parent flow is suspended. After the child desktop flow is edited and saved to remove the violation, the parent desktop flows are automatically reactivated. | Full | - | August 2023 |
+| October 2024 | Enforce [connector action control](/power-platform/admin/connector-action-control) on triggers and internal actions | Expand enforcement of [connector action control](/power-platform/admin/connector-action-control) to ensure that triggers and internal actions are covered. List them in Power Platform admin center and enforce blocking them if individually referenced in DLP policies or if the DLP policy doesn't include them as allowed. | Learning | January 27, 2025 | February 10, 2025 |
 
 *Availability schedule might change and depends on the rollout.
 

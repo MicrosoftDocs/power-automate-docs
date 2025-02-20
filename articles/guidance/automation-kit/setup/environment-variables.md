@@ -10,8 +10,6 @@ Contributors:
 editor: ''
 ms.custom: guidance
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 04/21/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
@@ -46,7 +44,7 @@ To get the format, follow these steps:
 
 1. Under **Security**, open your Key Vault with the secrets for your app registration.
 
-1. Select the **Secrets** tab. <!--I don't see this tab.-->
+1. Select the **Secrets** tab.
 
 1. In the **URL** field, copy the URL.
 

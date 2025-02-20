@@ -41,18 +41,21 @@ Copilot in Process Mining *ingestion* navigates you through the ingestion experi
 
 ## Copilot in desktop flows
 
-Copilot in desktop flows allows you to analyze desktop flow activity. With this analysis, you can democratize access to insights by asking Copilot activity-specific questions using natural language.
+Copilot in desktop flows offers various capabilities to enhance your automation experience. You can analyze desktop flow activity, create flows using natural language, repair automation errors, and get answers to product-related questions. These features democratize access to insights and streamline your workflow.
 
+- [Get started with Copilot in Power Automate for desktop (preview)](desktop-flows/copilot-in-power-automate-for-desktop.md)
+- [Create desktop flows using Record with Copilot (preview)](desktop-flows/create-flow-using-ai-recorder.md)
+- [Natural language to script powered by copilot (preview)](desktop-flows/actions-reference/scripting.md#natural-language-to-script-powered-by-copilot-preview)
+- [Repair flow automation errors (preview)](desktop-flows/repair-at-runtime.md)
 - [Use Copilot to analyze desktop flow activity (preview)](desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)
-- [Use the Power Automate plug-in for Windows Copilot (preview)](desktop-flows/win-copilot-plug-in.md)
-- [Use Copilot to get answers to product-related questions](desktop-flows/copilot-in-power-automate-for-desktop.md#how-to-use-copilot-to-get-answers-to-product-related-questions)
+- [Use Copilot to get answers to product-related questions](desktop-flows/copilot-in-power-automate-for-desktop.md#use-copilot-to-get-answers-to-product-related-questions-preview)
 
 ## Copilot in automation center
 
 Copilot in automation center enables makers, business analysts, and members of the Center of Excellence team to easily retrieve information about past flow runs, work queue performance, and general product features. You can get this information by asking questions in natural language.
 
 - [Copilot](automation-center-overview.md#copilot)
-- [Use Copilot to analyze automation activity and ask product questions (preview)](automation-center-copilot.md)
+- [Use Copilot to analyze automation activity and ask product questions](automation-center-copilot.md)
 
 ## Enable or disable Copilot in Power Automate
 

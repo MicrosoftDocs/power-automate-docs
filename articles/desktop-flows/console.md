@@ -4,8 +4,8 @@ description: See the main functionality of the Power Automate console.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 08/29/2024
-ms.author: pefelesk
+ms.date: 12/11/2024
+ms.author: iomavrid
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
@@ -57,11 +57,14 @@ The development of new flows and the editing of existing flows occur in the flow
 
 To configure Power Automate for desktop to your liking, select the **Settings** button.
 
-:::image type="content" source="media/console/console-settings-panel.png" alt-text="Screenshot of the console settings pane":::
+:::image type="content" source="media/console/console-settings-panel-with-appearence.png" alt-text="Screenshot of the console settings pane.":::
 
-Under the **Application** category, select whether Power Automate should launch automatically and whether closing the console also closes the application. You can also set a hotkey combination to stop running flows instantly.
+Under **Appearance**, choose if Power Automate should work in light or dark mode (preview).
+:::image type="content" source="media/console/dark-mode-preview.png" alt-text="Screenshot of the dark mode experience in Power Automate for desktop.":::
 
-Using the **Monitoring/Notifications** dropdown list, you can choose whether Power Automate displays integrated Windows notifications, a custom monitoring window, or no notifications at all. To find more information regarding Power Automate notifications, go to [Runtime notifications](runtime-notifications.md).
+Under **Flow run control**, use the **Monitoring/Notifications** dropdown to choose if Power Automate should display integrated Windows notifications, a custom flow monitoring window, or no notifications. Learn more about Power Automate notifications in [Runtime notifications](runtime-notifications.md).
+
+You can also set a hotkey combination to pause or resume a running flow, and another hotkey to stop running flows instantly.
 
 By default, Power Automate always prompts you to confirm the triggering of a desktop flow via URL or desktop shortcut. The **Display confirmation dialog when invoking flows externally** option allows you to disable this functionality. You can find more information about external links in [Run desktop flows via URL or desktop shortcuts](run-desktop-flows-url-shortcuts.md).  
 

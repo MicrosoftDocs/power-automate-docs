@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: mattp123
 ms.topic: conceptual
-ms.date: 08/29/2024
+ms.date: 12/12/2024
 ms.author: iomavrid
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
@@ -37,6 +37,18 @@ You can use the following registry entry to keep users from manually updating Po
 ***Value***
 
 - **1**: Users can't manually update Power Automate for desktop.
+
+## Prevent users from manually configuring Power Automate for desktop to start automatically
+
+Use the following registry entry to prevent users from manually configuring Power Automate for desktop to start automatically. This key only applies to installer (MSI) versions.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_CURRENT_USER | SOFTWARE\Microsoft\Power Automate Desktop | DisableAutoStartConfiguration | DWORD |
+
+***Value***
+
+- **1**: Users can't manually select to automatically start Power Automate for desktop.
 
 ## Prevent users accessing Power Automate for desktop using certain kinds of accounts
 
@@ -276,6 +288,23 @@ You can use the following registry entry to prevent Power Automate for desktop f
 ## Configure or disable desktop flow action logs per environment (preview)
 
 See [Desktop flow action logs configuration (preview)](configure-desktop-flow-logs.md).
+
+## Configure the generation of desktop flow action logs on the local machine for designer-based runs
+
+Use the following registry entry to configure whether local Power Automate Desktop Designer runs should store their action logs on the local machine. This option can be useful for debugging and troubleshooting scenarios, allowing you to examine the logs without checking each action's input and output individually.
+
+> [!NOTE]
+> This feature does not automatically clean up the logs generated during designer runs. Make sure you have sufficient local disk space to store the logs or manually clean up older run data.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | EnableDesignerExecutionLogs | DWORD |
+
+***Value***
+
+- **1**: Enables persistence of Power Automate for desktop execution logs on the local file system, without uploading them to Dataverse. After a flow execution from Power Automate Desktop Designer is completed, the execution logs can be found at the following path:
+
+    ```%LOCALAPPDATA%\Microsoft\Power Automate Desktop\Designer\Scripts\<scriptId>\Runs\<runId>\Actions.log```
 
 ## Configure Power Automate for desktop notification settings
 

@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 10/09/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -137,6 +137,7 @@ You can have up to 600 flows in your account. If you already have 600 flows, del
 - [Run tasks on a schedule](run-scheduled-tasks.md), when you want an action to occur daily, on a certain date, or after a certain number of minutes.
 - [Add a cloud flow to an app](/power-apps/maker/canvas-apps/using-logic-flows)
 - [Get started with team flows](create-team-flows.md) and invite others to collaborate with you to design flows.
-
+- [Training: Get started with Power Automate (module)](/training/modules/get-started-flows/)
+- [Training: Enhance communication using Power Automate and the Office 365 Users Connector (module)](/training/modules/enhance-communication/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

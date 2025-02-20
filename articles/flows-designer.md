@@ -4,11 +4,12 @@ description: Learn about the components in the cloud flows designer.
 suite: flow
 author: kisubedi
 contributors:
+ - lanlanlee2008
  - kisubedi
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 09/04/2024
+ms.date: 02/13/2025
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -22,11 +23,11 @@ ms.collection: bap-ai-copilot
 You can create, configure, and customize your cloud flows with the classic designer or the cloud flows designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
 
 > [!NOTE]
-> Here are some visual cues that tell you that you're using the cloud flows designer (not the classic designer):
+> Here are some visual cues that tell you that you're using the new cloud flows designer (not the classic designer):
 > - The cards in the flow are small.
 > - The standalone action configuration pane appears on the left when you select a card.
 >
-> More information: [Identify differences between the classic designer and the cloud flows designer](#identify-differences-between-the-classic-designer-and-the-cloud-flows-designer)
+> More information: [Identify differences between the classic designer and the new cloud flows designer](#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer)
 
 The following screenshot shows the features of the AI-powered cloud flows designer.
 
@@ -35,16 +36,27 @@ The following screenshot shows the features of the AI-powered cloud flows design
 Legend:
 
 1. **Left arrow button**: Return to the previous page.
+1. [**Undo and Redo buttons**](#undo-and-redo): Reverse or reinstate modifications you made to the flow.
 1. [**Send feedback button**](#send-feedback): Send us feedback about your flow creation experience or general comments about the AI-powered designer.
-1. **Action/trigger name**: The action or trigger card that is selected in your flow in the center of the page.
-1. [**More commands button**](#more-commands): Add a note to the selected card, or delete the card.
-1. **Collapse button**: Hide the pane. When the pane is collapsed, the **Expand** button (**\>\>**) appears in the upper-left corner. Select it to show the pane again.
-1. [**Copilot button**](get-started-with-copilot.md): Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
-1. [**Save button**](#save-button): Save your flow.
+1. **Version history button**: Track and manage changes made to your flows over time. It records every modification, enabling you to view previous versions, compare changes, and, if necessary, revert to an earlier version. Learn more in [Drafts and versioning for cloud flows](drafts-versioning.md).
+1. **Flow checker button**: Check your flow for errors.
+1. [**Save draft button**](#save-draft-button): Save a draft of your flow.
 1. [**Test button**](#test-button): Test your flow to make sure that it works as you intended.
+1. **Publish button**: Publish your flow so that your flow runs when the trigger event is performed.
+1. [**Copilot button**](get-started-with-copilot.md): Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
+1. **New designer toggle**: Switch between the classic designer and the new cloud flows designer. Learn more in [Identify differences between the classic designer and the new cloud flows designer](#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+1. **Action/trigger name**: The action or trigger card that is selected in your flow in the center of the page (the [*canvas*](#canvas)).
+1. [**More commands button**](#more-commands): Add a note to the selected card, *pin* an action, or delete the card. There are two ways to pin an action. Learn more in [View two action panes simultaneously](#view-two-action-panes-simultaneously).
+1. **Collapse button**: Hide the pane. When the pane is collapsed, the **Expand** button (**\>\>**) appears in the upper-left corner. Select it to show the pane again.
 1. [**Action configuration pane**](#action-configuration-pane): After you select an action card to configure on the canvas, the action configuration pane opens on the left side of the AI-powered designer.
 1. [**Canvas**](#canvas): The canvas is where you build your flow. It's free-flowing and therefore allows for easier navigation.
 1. [**Copilot pane**](get-started-with-copilot.md): Copilot stays with you during your flow editing and fit-and-finish journey. It can help you update and make changes to your flow, based on your conversational-style prompt. It can also help answer flow-related and product-related questions.
+
+## Undo and Redo
+
+To reverse or reinstate modifications you made to the flow, you can use the **Undo** and **Redo** command bar buttons. For example, if you added or configured an action, or made significant adjustments to the flow, these features allow you to conveniently revert to a previous state or redo changes you previously canceled.
+
+:::image type="content" source="media/flows-designer/undo-redo.png" alt-text="Screenshot of the 'Undo' and 'Redo' buttons in the command bar.":::
 
 ## Send feedback
 
@@ -52,15 +64,9 @@ We want to hear from you to help us measure and improve our impact. To provide y
 
 :::image type="content" source="media/flows-designer/feedback.png" alt-text="Screenshot of the feedback form.":::
 
-## More commands
+## Save draft button
 
-Select the **More commands** (**&hellip;**) button to add a note to the selected card in your flow, or to delete the card. Select **Add a note** to describe the purpose of the card in your flow. After you add a note, a note symbol appears in the lower right of the card. To view the note, hover over this symbol.
-
-:::image type="content" source="media/flows-designer/designer-note.png" alt-text="Screenshot that shows a note being added.":::
-
-## Save button
-
-Select **Save** to save your flow. If there are no errors, the message, *"Your flow is ready to go. We recommend you test it"* appears in the upper left with a green check.
+Select **Save draft** to save a draft of your flow. If there are no errors, the message, *"Your flow is ready to go. We recommend you test it"* appears in the upper left with a green check.
 
 :::image type="content" source="media/flows-designer/designer-save.png" alt-text="Screenshot of a successful save.":::
 
@@ -87,6 +93,16 @@ To test your flow, follow the instructions. In this example, you must send an em
 :::image type="content" source="media/flows-designer/test-result.png" alt-text="Screenshot of test results.":::
 
 Testing is part of the planning for a Power Automate project. To learn more, go to [Introduction: Planning a Power Automate project](guidance/planning/introduction.md).
+
+## More commands
+
+Select the **More commands** (**&vellip;**) button to add a note to the selected card in your flow, pin an action, or to delete the card.
+
+Select **Add a note** to describe the purpose of the card in your flow. After you add a note, a note symbol appears in the lower right of the card. To view the note, hover over this symbol.
+
+:::image type="content" source="media/flows-designer/designer-note.png" alt-text="Screenshot that shows a note being added.":::
+
+Select **Pin action** to pin the action card to the top of the action configuration pane. This feature is useful when you want to compare two actions side by side, or copy values across two actions. Learn more in [View two action panes simultaneously](#view-two-action-panes-simultaneously).
 
 ## Action configuration pane
 
@@ -163,7 +179,7 @@ For easy navigation, you can drag your flow on the canvas. You configure the act
 
 ### Drop zones
 
-The canvas contains AI-powered designer drop zones to help you easily drag cloud flow actions. The drop zones are represented by blue dashed lines.
+The canvas contains AI-powered designer drop zones to help you easily drag cloud flow actions. Blue dashed lines represent the drop zones.
 
 :::image type="content" source="media/flows-designer/drop-zone.png" alt-text="Screenshot of an action card and a drop-zone.":::
 
@@ -177,12 +193,64 @@ The bottom button is for the minimap. Use it to focus on a specific section of a
 
 ### Expression editor and token picker
 
-The expression editor in the designer is multi-line, which allows you to easily create and edit long, complex expressions. A *gripper* allows you to temporarily expand the box by one or two (1-2) lines, as needed. If that's not enough, you can expand the popup to a full page view. A search box allows you to search for tokens and functions, both in the Dynamic content view and Function view.
+The expression editor in the designer is multi-line, which allows you to easily create and edit long, complex expressions. A *gripper* allows you to temporarily expand the box by one or two (1-2) lines, as needed. If that's not enough, you can expand the popup to a full page view. A search box allows you to search for tokens and functions, both in the **Dynamic content** view and **Function** view.
 
 :::image type="content" source="media/flows-designer/expression-editor.png" alt-text="Screenshot of the expression editor.":::
 
 > [!TIP]
 > You can use a forward slash ( / ) keyboard shortcut to invoke the token picker/expression editor popup when you're on an action field.
+
+### Create, update, and fix your expressions with Copilot expression assistant (preview)
+
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+
+This is a preview feature and is available to tenants where Copilot is enabled. On the modern designer, you can use this functionality to create, update, or fix expression with the help of Copilot.
+
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
+#### Scenario 1: Create expression with natural language
+
+1. On the expression editor, select **Create expression with Copilot**.
+    The user experience that displays is the user experience for expression assistant.
+1. In the text box, write a prompt to generate an expression for, and select **Create expression**.
+    You can reference the flow’s dynamic content in your prompt using their names to build expressions around. For example, assume you have first name, last name, phone number, and TriggerDate as dynamic data in your flow. You can ask following sample prompts:
+    - Concatenate first name and last name.
+    - Grab last four characters of Phone Number.
+    - Convert Phone number from Integer to String.
+    - Format TriggerDate to 'DD-MM' format.
+    :::image type="content" source="media/flows-designer/create-expression-nl.png" alt-text="Screenshot of creating an expression with Copilot.":::
+
+#### Scenario 2: Update an existing expression with natural language
+
+If you have an existing expression that you created manually or through the expression assistant, you can select **Create expression with Copilot** in expression editor. Now it understands the context of the expression, and any prompt you write is used to modify the existing expression.
+
+To finalize the update, do the following steps:
+
+1. To return the updated expression, select **Create expression**.
+1. To apply to expression editor, select **OK**.
+1. To apply to your flow, select **Add**.
+
+For example, the first step is to select an expression.
+
+:::image type="content" source="media/flows-designer/compose-nl.png" alt-text="Screenshot of an input parameter.":::
+
+The next step is to select **Create expression with Copilot**. Then, describe how you want to update this existing expression and select **Update**.
+
+:::image type="content" source="media/flows-designer/compose-full-nl.png" alt-text="Screenshot of an expression and string functions.":::
+
+Finally, select **OK** to apply the Copilot generated expression.
+
+:::image type="content" source="media/flows-designer/compose-ok-nl.png" alt-text="Screenshot of a suggested expression.":::
+
+#### Scenario 3: Fix invalid expression using a button
+
+You can use the same experience to fix erroneous expressions. The following example shows an erroneous expression that has a missing parenthesis after 'Phone' [variables function opening parenthesis didn't close].  
+
+:::image type="content" source="media/flows-designer/phone-paren.png" alt-text="Screenshot of an erroneous expression.":::
+
+At this point, when you select **Create expression with Copilot**, it automatically fixes the expression that is currently loaded in expression editor.
+
+:::image type="content" source="media/flows-designer/phone-paren-fix.png" alt-text="Screenshot of a suggested fix for an erroneous expression.":::
 
 ### Disable an action or enable static results on an action
 
@@ -194,45 +262,56 @@ When static outputs are disabled, the toggle label is **Enable Static Result**. 
 
 :::image type="content" source="media/flows-designer/static-result.png" alt-text="Screenshot of the 'Enable or Disable Static Result' toggle in the Testing tab.":::
 
-## Identify differences between the classic designer and the cloud flows designer
+### View two action panes simultaneously
+
+One the new designer, you can pin an action pane so that you can open a second action pane next to it. This can be useful to compare two similar actions, or copy values across two actions.
+
+To pin an action, you can either right-click the action on the canvas and select **Pin action**. Alternatively, in the action pane, you can select **Pin action** in the **More commands** dropdown menu.
+
+:::image type="content" source="media/flows-designer/pin-option.png" alt-text="Screenshot of the 'Pin action' menu option.":::
+
+Once you pin an action, any other action pane when selected is placed to the right of the pinned action pane.
+
+:::image type="content" source="media/flows-designer/pin-result.png" alt-text="Screenshot of a pinned action next to the open action pane.":::
+
+> [!NOTE]
+> To unpin, you can either right-click on action on the canvas and select **Unpin action**, or select the **Pin** icon on the action pane.
+
+## Identify differences between the classic designer and the new cloud flows designer
 
 To quickly identify which designer version you're using, ask yourself the following questions:
 
 - Are the action cards on the flow small or large?
 - Is the action configuration pane inline or in a separate pane?
 
-The cloud flows designer has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
+The new cloud flows designer has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
 
 ## Limitations and known issues
 
 You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following items:
-- Non-Open API flows (If there's Peek code on an action and if you see the APIConnection value instead of OpenAPIConnection in Kind field, it's a non-Open API flow.)
+
+- Non-Open API flows (If there's Peek code on an action and if you see the API Connection value instead of Open API Connection in Kind field, it's a non-Open API flow.)
+    - These are legacy flows, probably created a long time ago when Open API support wasn't available.
+    - We have plans to migrate them to Open API format, with no fixed announcement date. In the meantime, if you want to work with the latest functionalities in the new designer/Copilot experience, consider recreating the flow in new designer until the migration plan is announced.
 - Some hybrid triggers:
-   - When a flow is run from business process flow (Dataverse)
-   - For a selected message (v2 Teams) - Plan to enable worldwide by July end
-   - Teams On Compose Message (Teams) - Plan to enable worldwide by July end
-   - Microsoft 365 Compliance Connector
+    - When a flow is run from business process flow (Dataverse)
+    - Microsoft 365 Compliance Connector
 - A comment
 - Power Pages connector
 - Power Apps v1 trigger
 - Perform a changeset request action (Dataverse)
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
-- Email auto-complete suggestions in _Send Email/Post message_ in Teams actions
-- Ability to make manual trigger fields optional
-
-## Some known issues
-
-- Dynamic content friendly names are getting updated to internal code names upon save.
-- Automated trigger polling setting (How often do you want to check for new items) reverts to 1min after saving
 
 As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is gradually becoming the primary interface.
 
 If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply turn off the **New designer** toggle on the menu in the cloud flows designer.
 
-:::image type="content" source="media/flows-designer/designer-toggle.svg" alt-text="Screenshot of the 'New designer' toggle.":::
+:::image type="content" source="media/flows-designer/designer-toggle.png" alt-text="Screenshot of the 'New designer' toggle.":::
 
 > [!NOTE]
 > The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.
+
+If a flow is saved too soon on load, it might be saved without advanced parameters if those parameters weren't fetched yet. As a workaround, you can avoid saving a flow too soon on load. Alternatively, use the classic designer.
 
 ## FAQ
 
@@ -244,13 +323,6 @@ Power Automate designer doesn't support browsers that are more than two (2) year
 
 This error is a temporary gap, which you can work around by adding a query parameter `v3=false` in your URL.
 
-### Why do I not see dynamic content from triggers like 'When a response is submitted' or why is the flow automatically putting an unnecessary loop?
-
-This scenario might be because of a temporary issue where the **Split On** setting of the trigger is off. If you enable the setting, the issue should go away.
-
-1. On the [action configuration pane](#action-configuration-pane), select the **Settings** tab.
-1. Under the **Split On** heading, move the toggle to **On**,
-
 ### Why don't I see new or updated SharePoint or Excel column values in my flow?
 
 Power Automate designer requires a flow action to be re-added in order to pick up new entities of the underlying action. For example, if you have a SharePoint _Get item_ action in your flow and Sharepoint item has four (4) columns, the flow allows you to access all four column values of the SharePoint item. Now, if you navigate to SharePoint, add a fifth column, and come back to the flow, you can't access the fifth column unless you delete the _Get item_ action and re-add it again to force the designer to pick up the latest changes. The same behavior applies in Excel columns, Dataverse, OneDrive folder/files, and others.
@@ -261,6 +333,5 @@ Yes, once the issues noted here are resolved and the new cloud flows designer ca
 
 ## Related information
 
-[Get started with Copilot in cloud flows](get-started-with-copilot.md)
-
-
+- [Get started with Copilot in cloud flows](get-started-with-copilot.md)
+- [FAQ for Copilot expression assistant](faqs-copilot-expression-assistant.md)

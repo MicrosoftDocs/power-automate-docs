@@ -5,7 +5,7 @@ suite: flow
 author: v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 10/09/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
@@ -294,5 +294,9 @@ Here's the implementation of the **and** expression that identifies all employee
 ## Use functions in expressions
 
 Some expressions get their values from runtime actions that might not yet exist when a cloud flow starts to run. To reference or work with these values in expressions, you can use functions that the Workflow Definition Language provides. More information. To learn more, go to [Reference guide to workflow expression functions in Azure Logic Apps and Power Automate](/azure/logic-apps/workflow-definition-language-functions-reference).
+
+## Related information
+
+[Training: Introduction to expressions in Power Automate (module)](/training/modules/introduction-expressions/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

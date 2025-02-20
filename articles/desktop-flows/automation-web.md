@@ -4,7 +4,7 @@ description: Learn how to launch browsers, automate webpages, and extract data f
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/29/2024
+ms.date: 10/23/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -27,6 +27,11 @@ Apart from the built-in Automation browser, four web browsers are currently supp
 
 > [!IMPORTANT]
 > Before automating webpages, you need to install the appropriate browser extension and configure the browser accordingly. To find more information regarding the supported browsers and the required extensions, go to [Install Power Automate browser extensions](install-browser-extensions.md).
+
+To perform web automation, you first need to create a new browser instance. You can achieve this using the Launch Browser actions, which support Microsoft Edge, Google Chrome, Mozilla Firefox, and Internet Explorer. With the Launch Browser actions, you can also specify whether the web page should be launched on your local desktop or in a virtual desktop environment.
+
+> [!NOTE]
+> To launch a browser on a virtual desktop, first capture at least one UI element within that desktop. This element needs to be available in the UI element repository of your flow.
 
 To automate a webpage, you must launch or attach to one of the supported browsers, and then deploy browser automation actions. Browser automation actions enable you to interact with webpages and emulate events, such as clicking, using JavaScript scripts. You can develop the flow manually or [using the recorder](recording-flow.md).
 

@@ -1,7 +1,7 @@
 ---
 title: FAQ for copilot generative answers in Power Automate for desktop
 description: This FAQ discusses copilot generative answers in Power Automate for desktop and the key considerations for making use of this technology responsibly.
-ms.date: 08/29/2024
+ms.date: 09/10/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article

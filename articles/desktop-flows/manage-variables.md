@@ -4,7 +4,7 @@ description: See how to manage variables and the variables pane
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/16/2024
+ms.date: 02/19/2025
 ms.author: dbekirop
 ms.reviewer: matp
 contributors:
@@ -57,7 +57,7 @@ To rename a desktop flow variable, right-click on its name and select **Rename**
 
 ## Input and output variables
 
-Power Automate enables data exchange between cloud and desktop flows through the input and output variables, allowing you to expand automation capabilities 
+Power Automate lets you exchange data between cloud and desktop flows using input and output variables, expanding automation capabilities. Input and output variables also let you pass information between desktop flows through the 'Run desktop flow' action.
 
 Additionally, you can use input variables to set values manually when the flows are triggered through the console.
 
@@ -74,9 +74,10 @@ To create an input variable:
 1. When the **New input variable** dialog appears, populate the following fields:
 
     - **Variable name**: The name of the variable in the desktop flow.
-    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list) or [datatable](variable-data-types.md#datatable).
+    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list), [datatable](variable-data-types.md#datatable), or [instance](variable-data-types.md#instances).
     - **Default value**: The default value when the flow runs through the flow designer or console. When you create a custom object, list, or datatable input variable, Power Automate allows you to construct the default value through a visual or JSON editor.
         ![Screenshot of a custom object input variable in the visual editor.](media\input-output-variables\custom-object-input-variable.png)
+    - **Data subtype**: The exact type of the instance (available only when **Instance** is previously selected as data type): Excel, Word, Outlook, or Access.
     - **External name**: The external name is the name that appears in the cloud flow designer and the flow inputs dialog when calling the flow from the console.
     - **Description**: The description of the variable that appears in the cloud and desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](#sensitive-variables).
@@ -84,6 +85,9 @@ To create an input variable:
 
     > [!NOTE]
     > The **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
+
+    > [!NOTE]
+    > Input variables of instance type (Excel, Word, Outlook, or Access) don't support default values. Flows with these inputs can run through the 'Run desktop flow' action of another desktop flow or through the designer for testing or debugging. In designer runs, instance input variables can be temporarily initialized by using them as the produced variables of the respective Launch or Attach actions.
 
     > [!IMPORTANT]
     > If you choose an existing flow variable name for a new input variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, you can't use the name of an existing input or output variable.
@@ -105,7 +109,8 @@ To create an output variable:
 1. When the **New output variable** dialog appears, populate the following fields:
 
     - **Variable name**: The name of the variable in the desktop flow.
-    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list) or [datatable](variable-data-types.md#datatable).
+    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list), [datatable](variable-data-types.md#datatable), or [instance](variable-data-types.md#instances).
+    - **Data subtype**: The exact type of the instance (available only when **Instance** is previously selected as data type): Excel, Word, Outlook, or Access.
     - **External name**: The external name is the name that appears in the cloud flow designer.
     - **Description**: The description of the variable that appears in the cloud or desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](#sensitive-variables).
@@ -164,7 +169,7 @@ The flow designer handles sensitivity as a mask that you can set on and off. Thu
 > [!NOTE]
 >
 > - The value of a sensitive variable is visible when you send it outside desktop flows or displayed through the **Display message**  action.
-> - Sensitivity isn't inheritable in variables. If you add or assign a sensitive variable to another variable, the resulting variable won't be sensitive by default.
+> - Sensitivity isn't inheritable in variables. If you add or assign a sensitive variable to another variable, the resulting variable won't be sensitive by default. The exception to this rule applies only to credential variable types. Credential variables, produced either by the respective action or by reassignment from another variable, are always sensitive, and their sensitivity is enforced. The same exception also applies to the "Password" property of credential variable types.
 > - Marking a variable as sensitive hides its values from the summary of the **Set variable** action.
 > - The input details of the **Set variable** action aren't visible in the desktop flow logs when the contained variables have been marked as sensitive.
 > - Masking sensitive variables during debugging provides only a basic form of protection to developers from third parties looking at their screens.

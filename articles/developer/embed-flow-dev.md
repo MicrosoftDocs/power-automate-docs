@@ -4,7 +4,7 @@ description: Embed the Power Automate experiences into your website or app.
 author: v-aangie
 ms.subservice: developer
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 10/10/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -423,8 +423,6 @@ A sample JavaScript Single Page Application (SPA) is provided in the resources s
     ![Screenshot showing the access token box containing an access token.](../media/embed-flow-dev/SampleApp-AccessToken.png)
 8. Select **Load Flows widget** or **Load Templates widget** to embed the corresponding widgets.
     ![Screenshot showing buttons to embed the Load Flows widget or the Load Templates widget.](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
-
-Sample application [download link](https://procsi.blob.core.windows.net/docs/FlowWidgetSampleApp.zip).
 
 ## Resources
 

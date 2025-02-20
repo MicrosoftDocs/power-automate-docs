@@ -814,7 +814,56 @@
       "source_path": "articles/desktop-flows/avd-overview.md",
       "redirect_url": "/power-automate/desktop-flows/hosted-rpa-overview",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-administrator.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-app-maker.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-bdm.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-developer.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-functional-consultant.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog-sales.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automate",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/learning-catalog/learning-catalog.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/browse/?expanded=power-platform&products=power-automatew",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/faqs-process-mining-m365-personal-recommendations.md",
+      "redirect_url": "/power-automate/process-mining-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/win-copilot-plug-in.md",
+      "redirect_url": "/power-automate/desktop-flows/introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/isv-pay-as-you-go.md",
+      "redirect_url": "/connectors/connector-reference",
+      "redirect_document_id": false
     }
   ]
 }
-

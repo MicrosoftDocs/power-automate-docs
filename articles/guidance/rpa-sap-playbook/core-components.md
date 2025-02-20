@@ -1,16 +1,11 @@
 ---
-title: Core components to use for RPA SAP GUI automation | Microsoft Docs
-description: You'll need these four main components for SAP GUI automation with Power Automate.
+title: Core components to use for RPA SAP GUI automation
+description: You need these four main components for SAP GUI automation with Power Automate.
 suite: flow
-documentationcenter: na
 author: kathyos
-editor: ''
 ms.custom: guidance
-
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 06/01/2021
+ms.topic: conceptual
+ms.date: 10/16/2024
 ms.author: kathyos
 ms.reviewer: angieandrews
 ---
@@ -21,16 +16,16 @@ Here are the four components needed to automate SAP GUI with Power Automate:
 
 - [Power Automate](#power-automate)
 - [Desktop flows](#desktop-flows)
-- [Power Automate Desktop](#power-automate-desktop)
+- [Power Automate for desktop](#power-automate-for-desktop)
 - [On-premises data gateway](#on-premises-data-gateway)
 
 ## Power Automate
 
-Let's start with the core platform service called Power Automate. Power Automate is an enterprise service that helps you create automated workflows by using your favorite apps and services to synchronize files, get notifications, collect data, and more. Learn more in [Get started with Power Automate](../../getting-started.md) and in our [learning catalog](../../learning-catalog/learning-catalog.md).
+Let's start with the core platform service called Power Automate. Power Automate is an enterprise service that helps you create automated workflows by using your favorite apps and services to synchronize files, get notifications, collect data, and more. Learn more in [Get started with Power Automate](../../getting-started.md) and in [Browse all training](/training/browse/?expanded=power-platform&products=power-automate).
 
 ![Screenshot of the Power Automate portal home page.](media/power-automate-website.png)
 
-The Power Automate designer is shown in the following image.
+The Power Automate designer shows in the following image.
 
 ![Screenshot of the flow in the designer.](media/power-automate-flow-authoring.png)
 
@@ -38,15 +33,15 @@ The Power Automate designer is shown in the following image.
 
 Desktop flows bring robotic process automation (RPA) capabilities to Power Automate. You can use desktop flows to automate repetitive tasks in Windows and web applications. A desktop flow can record and play back UI actions (such as clicks and keyboard input) for applications that don't have easy-to-use or complete APIs available.
 
-A list of desktop flows is shown in the following image.
+A list of desktop flows shows in the following image.
 
 ![Screenshot of the Desktop flows tab on the Power Automate portal My flows screen.](media/my-flows-screen.png)
 
-## Power Automate Desktop
+## Power Automate for desktop
 
-It's quicker and easier than ever to automate with new, intuitive Power Automate Desktop. You can use Power Automate Desktop to automate legacy applications, such as terminal emulators, and interact with modern web and desktop applications, files, folders and many more.
+It's quicker and easier than ever to automate with new, intuitive Power Automate Desktop. You can use Power Automate Desktop to automate legacy applications, such as terminal emulators, and interact with modern web and desktop applications, files, folders, and many more.
 
-Power Automate Desktop broadens the existing RPA capabilities in Power Automate. In conjunction with desktop flows, all repetitive desktop processes can be automated.
+Power Automate for desktop broadens the existing RPA capabilities in Power Automate. In conjunction with desktop flows, all repetitive desktop processes can be automated.
 
 You can use prebuilt drag-and-drop actions or record your own cloud flows to run later.
 
@@ -66,7 +61,7 @@ By using a gateway, organizations can keep databases and other data sources on-p
 
 ## Direct machine connectivity
 
-In addition to the on-premises data gateway, there is a new connectivity option that allows physical or virtual machines to directly connect to Power Automate. When you connect your machine to Power Automate, you can instantly start your desktop automation with any of the wide array of available triggers.
+In addition to the on-premises data gateway, there's a new connectivity option that allows physical or virtual machines to directly connect to Power Automate. When you connect your machine to Power Automate, you can instantly start your desktop automation with any of the wide array of available triggers.
 
 Learn more about [direct machine connectivity](../../desktop-flows/manage-machines.md).
 

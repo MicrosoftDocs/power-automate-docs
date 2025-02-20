@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 10/09/2024
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -25,7 +25,7 @@ Many triggers can immediately start a cloud flow based on an event such as when 
 
 Watch this video for a demo of the **Apply to each** action.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWL7EL]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6b48b330-128d-4130-b093-2f18edae65c3]
 
 In this tutorial, we'll create a cloud flow that runs every 15 minutes and does the following:
 
@@ -204,5 +204,9 @@ Now that you've run the flow successfully, you should receive the push notificat
 
 > [!NOTE]
 > If you don't receive the push notification, confirm that your mobile device has a working data connection.
+
+## Related information
+
+[Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

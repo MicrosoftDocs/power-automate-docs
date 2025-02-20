@@ -1,18 +1,16 @@
 ---
 title: Overview of the cloud flows
 description: Get an overview of cloud flows.
-services: ''
 suite: flow
-documentationcenter: na
-author: jamiemwork
+author: kisubedi
 contributors:
   - jamiemwork
   - v-aangie
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 06/05/2023
-ms.author: jamiller
+ms.date: 10/09/2024
+ms.author: kisubedi
 search.audienceType: 
   - flowmaker
   - enduser
@@ -24,7 +22,7 @@ Create a cloud flow when you want your automation to be triggered either automat
 
 This video gives an overview of cloud flows.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWL2mo]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=354cdd1a-a7a7-4d2c-9517-ca49184b9e3f]
 
 | **Flow type**     | **Use case**         | **Automation target**          |
 |-------------------|----------------------|----------------------|
@@ -52,5 +50,10 @@ If you can't find your flow, try one of the options in the following table.
 | You might have been removed as an owner of the flow.    |  Contact the flow owner to be re-added. To find out if you’re an owner of the flow, go to [Remove an owner](create-team-flows.md#remove-an-owner).       |
 | The flow might have been deleted.     | To restore the flow, go to [Restore deleted flows](how-tos-restore-deleted-flow.md).        |
 
+## Related information
+
+- [Training: Describe building automation with Microsoft Power Automate (module)](/training/modules/introduction-power-automate/)
+- [Training: Create and Manage Automated Processes by using Power Automate (learning path)](/training/paths/create-manage-automated-processes-by-using-power-automate/)
+- [Training: Automate a business process using Power Automate (learning path)](/training/paths/automate-process-power-automate/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

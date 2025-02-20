@@ -6,7 +6,7 @@ suite: flow
 author: DBEKI
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 10/09/2024
 ms.author: dbekirop
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -136,5 +136,9 @@ The Power Automate Support site offers you several self help options.
 1. If you need more help from others, return to the [Power Automate Support](https://make.powerautomate.com/support/), and select [Community](https://go.microsoft.com/fwlink/?LinkID=787467).
 
     On the **Microsoft Power Automate Community** page, you can customize your search and get answers and tips directly from other Power Automate users.
+
+## Related information
+
+[Training: Best practices for error handling in Power Automate flows (module)](/training/modules/error-handling/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

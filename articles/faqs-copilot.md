@@ -1,7 +1,7 @@
 ---
 title: FAQ for Copilot in cloud flows
 description: This FAQ discusses copilot in cloud flows and the key considerations for making use of this technology responsibly.
-ms.date: 07/02/2024
+ms.date: 09/10/2024
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: conceptual

@@ -5,7 +5,7 @@ suite: flow
 author: v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 10/09/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews
 ms.collection:
@@ -24,5 +24,9 @@ You can build AI models by using the **AI models** option from the left navigati
 
 
 Use your AI Builder models in your flows to add intelligence to your organization. More information: [Use AI Builder in Power Automate](/ai-builder/use-in-flow-overview)
+
+## Related information
+
+[Training: Use AI Builder in Power Automate (module)](/training/modules/ai-builder-power-automate/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

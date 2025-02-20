@@ -1,10 +1,10 @@
 ---
-title: Create desktop flow connections
-description: See how to create connections to trigger desktop flows from cloud flows.
+title: Manage desktop flow connections
+description: See how to manage connections to trigger desktop flows from cloud flows.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/24/2024
+ms.date: 01/27/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -13,7 +13,7 @@ search.audienceType:
   - enduser
 ---
 
-# Create desktop flow connections
+# Manage desktop flow connections
 
 > [!IMPORTANT]
 > Before using a machine to run desktop flows from the cloud, ensure that the machine is secured and the machine's admins are trusted.
@@ -31,7 +31,7 @@ Before using the **Run desktop flow** action in your cloud flow to trigger a des
 
 There are two different methods to connect Power Automate with your machines (or groups).
 
-## Connect with username and password
+## Create a connection: Connect with username and password
 
 With this option, you need to provide the machine information and device credentials:
 
@@ -56,7 +56,7 @@ With this option, you need to provide the machine information and device credent
 
   :::image type="content" source="media/desktop-flows-setup/credentials-screen.png" alt-text="Screenshot that shows where to enter the credentials for the connection.":::
 
-## Connect with sign-in for attended runs
+## Create a connection: Connect with sign-in for attended runs
 
 With this option, you don't need to provide session credentials. This option might be helpful when your organization doesn't allow username and password for user sessions.
 
@@ -64,14 +64,11 @@ With this option, you don't need to provide session credentials. This option mig
 
 To use connection with sign-in, you need to meet the following prerequisites:
 
-- Microsoft Entra users must be in the same tenant as the selected environment in the Power Automate portal.
-- The target (machine / group) should be Microsoft Entra ID or AD joined. If there's a Microsoft Entra ID joined target, the machine or group must be synchronized with Microsoft Entra ID.
-- The Microsoft Entra user account must be granted permission to open a Windows session on the target machines (interactive sign in). At runtime, there should a Windows interaction session matching the connection user in order to process the run (as it's today for existing connections).
+- Microsoft Entra ID users must be in the same tenant as the selected environment in the Power Automate portal.
+- The target (machine / group) should be Microsoft Entra joined or AD domain-joined. Microsoft Entra joined targets must be synchronized with Microsoft Entra ID.
+- If the target is AD domain-joined but not Entra joined, you must [allowlist your Power Platform tenant](how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md).
+- The Microsoft Entra user account must be granted permission to open a Windows session on the target machines (interactive sign in). At runtime, there should be a Windows user session matching the connection user opened on the machine in order to process the run (same as running attended with other connection types).
 - The tenant of the target Microsoft Entra account is configured to use modern [Authentication with Microsoft Entra ID](/azure/well-architected/).
-
-> [!NOTE]
-> For GCCH, DOD, and China regions, the December version of the Power Automate for desktop app is required.
-> For GCC, the July version of the Power Automate for desktop app is required.
 
 ### Set up the connection with sign-in
 
@@ -82,20 +79,60 @@ To set up a connection with sign-in:
 1. Select **Sign in**.
 1. Pick or provide an **Microsoft Entra account** in the sign in pop-up.
 
-The desktop flow connect is automatically created.
+The desktop flow connection is automatically created.
 
 ### How it works
 
-- An access / refresh token is created during the Microsoft Entra authentication.
-- The token scope is limited to executing a desktop flow.
-- The Power Platform services manage the refresh of those tokens.
+- An access / refresh token is created by the Microsoft Entra ID authentication during connection creation.
+- The created token's scope is limited to executing desktop flows.
+- The Power Platform services manage these tokens.
 
 ### Limitations
 
-- Connect with sign-in (preview) works only for attended runs. Running unattended with this connection fails.
+- Connect with sign-in works only for attended runs. Running unattended with this kind of connection will fail.
+- Connect with sign-in runs likely fail with a PasswordlessTokenExpiry error if **AsyncDisabled** is set to True.
 - Queue time duration is limited to one hour.
+- On AD-joined but not Entra-joined machines, you must [allowlist your Power Platform tenant](how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md) for your machine to trust passwordless tokens from that tenant. If your tenant is not allowlisted, connect with sign-in runs will most likely fail with `UnallowedTenantForConnectWithSignIn` errors. Connect with sign-in connection creation and testing will fail with either `Unable to connect. The credentials for the machine are incorrect.` or `Tenant [tenantId] needs to be explicitly allowlisted to authorize 'connect with sign-in' runs on the machine` error messages.
 
 > [!IMPORTANT]
 > If you consistently encounter issues when creating a connection on a new machine, first try to remove it, and then [register it](/power-automate/desktop-flows/manage-machines#register-a-new-machine) again.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+## Share a desktop flow connection (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+You can share a connection with other Service Principal users in your organization and give those Service Principal users specific permissions to access it.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+To share a desktop flow connection:
+
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+1. Go to **Monitor** > **Connection**.
+1. Select your connection from the list, and then select the **Share** button.
+1. Enter the name of the service principal user in your organization with whom you want to share the connection.
+1. Select the permissions they can access the connection with:
+    - Can use
+    - Can edit
+1. Select **Save**.
+
+### Limitations
+
+- You can only share desktop flows with a specified run owner identity. Learn more in [Select a run owner](#select-a-run-owner).
+- Recipients of desktop flow connection sharing are limited to service principal users.
+- You can't share a desktop flow connection with the "Can Share" permission (only "Can use" or "Can edit").
+
+## Select a run owner
+
+A run owner of a desktop flow is the user whose permissions are checked during the flow execution.
+
+By default, connections created using the Power Automate portal use the connection's creator as the run owner.
+
+You can select a specific identity as the run owner. Learn more in [Set a run owner on a desktop flow connection](/power-automate/desktop-flows/how-to/set-runowner-desktopflowconnection).
+
+## Desktop flow connection audit
+
+You can see the desktop flow run owner on the run status page. Learn more in [Run status](/power-automate/desktop-flows/monitor-run-details#run-status).
+You can also see the summary of desktop flow run owner usage on the Desktop Flow activity page. Learn more in [Desktop flow activity](/power-automate/desktop-flows/desktop-flow-activity).

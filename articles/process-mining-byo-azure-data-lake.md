@@ -8,7 +8,7 @@ contributors:
   - v-aangie 
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 08/30/2024
+ms.date: 01/17/2025
 ms.custom: bap-template
 ms.author: michalrosik
 ms.reviewer: angieandrews
@@ -17,6 +17,8 @@ ms.reviewer: angieandrews
 # Bring your own Azure Data Lake Storage Gen2
 
 Power Automate Process Mining gives you the option to store and read event log data directly from [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction). This feature simplifies extract, transform, load (ETL) management by connecting directly to your storage account.
+
+[!INCLUDE [data-lake-storage](./includes/data-lake-storage.md)]
 
 ## Prerequisites
 
@@ -27,7 +29,7 @@ Power Automate Process Mining gives you the option to store and read event log d
     - Azure Resource Manager **Reader** role assigned, at minimum.
 
 - **Resource Sharing (CORS)** rule to your storage account should be established to share with Power Automate Process Mining.
-    - Allowed origins must be set to `https://make.powerapps.com`.
+    - Allowed origins must be set to `https://make.powerautomate.com` and `https://make.powerapps.com`.
     - Allowed methods must include: `get`, `options`, `put`, `post`.
     - Allowed headers should be as flexible as possible. We recommend defining them as `*`.
     - Exposed headers should be as flexible as possible. We recommend defining them as `*`.
@@ -35,7 +37,7 @@ Power Automate Process Mining gives you the option to store and read event log d
 
         :::image type="content" source="media/process-mining-byo-azure-data-lake/CORS.png" alt-text="Screenshot of the example of CORS setting screen.":::
 
--   Data in your Data Lake Storage should meet the following CSV file format requirements:
+- CSV data in your Data Lake Storage should meet the following CSV file format requirements:
     - **Compression type:** None
     - **Column delimiter:** Comma (,)
     - **Row delimiter:** Default and encoding. For example, Default (\r,\n, or \r\n) 

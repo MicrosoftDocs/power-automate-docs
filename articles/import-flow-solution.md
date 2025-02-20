@@ -4,7 +4,7 @@ description: Learn how to import a solution.
 author: ChrisGarty
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 07/15/2024
+ms.date: 10/09/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -68,5 +68,6 @@ When a solution is being imported, the flows in that solution are turned off and
 - [Use connection references](/power-apps/maker/data-platform/create-connection-reference)
 - [Manage connections in Power Automate](/power-automate/add-manage-connections)
 - [Import solutions (Power Apps)](/power-apps/maker/data-platform/import-update-export-solutions)
+- [Training: Import and export solutions with cloud flows (module)](/training/modules/import-export-solutions/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
