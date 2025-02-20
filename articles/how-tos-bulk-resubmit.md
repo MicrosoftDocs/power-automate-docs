@@ -31,7 +31,7 @@ Administrators can enable users to resubmit flow runs initiated by instant trigg
 > 
 There are two options to enable flow run resubmission for flows initiated by instant triggers, which are through Power Platform admin center and by using PowerShell.
 
-### Power Platform Admin Center
+### Power Platform admin center
 
 1. Sign in to your Power Platform admin center account.
 1. Select **Settings** and then search for **Power Automate flow run resubmission**.
