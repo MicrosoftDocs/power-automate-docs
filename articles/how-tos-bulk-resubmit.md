@@ -22,7 +22,12 @@ You can cancel or resubmit your flow runs in bulk instead of one at a time, whic
 Administrators can enable users to resubmit flow runs initiated by instant triggers. Instant triggers, which are used to manually start flows, can be activated through Power Automate, a mobile app, or a button in a canvas app, among other methods.
 
 > [!IMPORTANT]
-> The new setting for resubmitting flow runs initiated by instant triggers starts rolling out on January 13, 2025, and is expected to be available in all regions by the end of January 2025. To ensure that flow owners can't resubmit flow runs with connections others have provided to the flow, leave this setting off. Otherwise, Power Platform administrators can follow the instructions in this section to enable all users to resubmit flow runs initiated by instant triggers. Other trigger types aren't affected by this change.
+> The new setting for resubmitting flow runs initiated by instant triggers starts rolling out on January 13, 2025, and is expected to be available in all regions by the end of January 2025. To ensure that flow owners can't resubmit flow runs with connections others provided to the flow, leave this setting off. Otherwise, Power Platform administrators can follow the instructions in this section to enable all users to resubmit flow runs initiated by instant triggers. Other trigger types aren't affected by this change.
+
+| Scenario matrix | January 2025 feature release | February 2025 feature update (currently rolling out) |
+|-----------------|----------------------|-------------------------------------------|
+| Feature setting disabled in Power Platform admin center | User can't resubmit their own flows initiated by instant triggers, or resubmit flows initiated by another user. | User can resubmit their own flows initiated by instant triggers, but disallowed to resubmit flows initiated by another user. |
+| Feature setting enabled in Power Platform admin center | User can resubmit their own flows initiated by instant triggers and also resubmit flows initiated by another user. | User can resubmit their own flows initiated by instant triggers and also resubmit flows initiated by another user. |
 
 ### Prerequisites
 
@@ -41,7 +46,7 @@ To enable flow run resubmission for flows initiated by instant triggers, run the
 > [!NOTE]
 > It takes approximately an hour for the function to become enabled after the PowerShell commands are applied.
 
-1. Sign in to your tenant account: 
+1. Sign in to your tenant account:
 
   ```powershell
    Add-PowerAppsAccount -Endpoint "prod" -TenantID <Tenant_ID>
