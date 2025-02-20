@@ -34,7 +34,7 @@ Automatic updates are disabled by default. Enable them using the registry. Learn
 
 ## Emergency automatic updates
 
-Use this update mode to distribute critical security patches and major regression fixes to Power Automate for desktop machines.
+Use this update mode to receive critical security patches and major regression fixes to Power Automate for desktop machines.
 
 When a patch is available, machines upgrade to the patched minor version (2.XX.Y to 2.XX.Z) or to the latest version with the patch, but only when not in use.
 
