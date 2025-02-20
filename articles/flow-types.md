@@ -9,14 +9,14 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 02/18/2025
+ms.date: 02/20/2025
 ms.author: heortaol
 ms.reviewer: angieandrews
 ---
 
 # What is Power Automate?
 
-With its automation capabilities, Power Automate helps you streamline your business’ processes and automate repetitive tasks. Its intuitive interface and many connectors allow you to create workflows with little to no knowledge of coding. You can drag and drop components and set up workflows to save time and improve efficiency. Power Automate can handle simple tasks like sending notifications as well as more complex processes across multiple apps and services. It's flexible and scalable, making it useful for various automation needs in a modern workplace.
+With its automation capabilities, Power Automate helps you streamline your business processes and automate repetitive tasks. Its intuitive interface and many connectors allow you to create workflows with little to no knowledge of coding. You can drag and drop components and set up workflows to save time and improve efficiency. Power Automate can handle simple tasks like sending notifications as well as more complex processes across multiple apps and services. It's flexible and scalable, making it useful for various automation needs in a modern workplace.
 
 ## Types of flows
 
@@ -44,11 +44,16 @@ Use [desktop flows](./desktop-flows/introduction.md) to automate tasks on the we
 
 [Business process flows](business-process-flows-overview.md) provide a guide for people to get work done. They provide a streamlined user experience that leads people through the processes their organization defined for interactions that need to be advanced to a conclusion of some kind. This user experience can be tailored so that people with different security roles can have an experience that best suits the work they do.
 
+## Creating and managing flows in Power Apps
+
+Your Power Automate license also gives you rights to create and manage flows in Power Apps. For example, after you sign in to Power Apps, you can select **Flows** in the left navigation pane. You can also create and manage flows through the [Power Automate pane](/powerapps/maker/canvas-apps/working-with-flows) within Power Apps Studio.
+
 ## Related information
 
 - [Determine which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
 - [Overview of cloud flows](overview-cloud.md)
 - [Introduction to desktop flows](./desktop-flows/introduction.md)
 - [Business process flows overview](business-process-flows-overview.md)
+- [Add canvas apps and cloud flows to a solution in Power Apps](/power-apps/maker/canvas-apps/add-app-solution-default)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

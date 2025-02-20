@@ -6,8 +6,6 @@
       href: flow-types.md
     - name: Adopt automation with Copilot in Power Automate
       href: copilot-overview.md
-    - name: Create and manage flows in Power Apps
-      href: create-flows-power-apps.md
     - name: What's new
       href: whats-new.md
 - name: Get started
@@ -26,19 +24,21 @@
           href: get-started-with-copilot.md
         - name: Explore the cloud flows designer
           href: flows-designer.md
-        - name: Use generative actions in cloud flows (preview)
-          href: generative-actions-overview.md
         - name: Get started with triggers
           href: triggers-introduction.md
+        - name: Get help from the Microsoft Copilot Studio bot
+          href: contextual-help-bot.md
     - name: How to
       items:
       - name: Add an action
         href: multi-step-logic-flow.md
         displayName: Copy and paste actions
+      - name: Use generative actions (preview)
+        href: generative-actions-overview.md
       - name: Add a condition
         href: add-condition.md
       - name: Associate flows to apps
-        href:  associate-flow-to-app.md
+        href: associate-flow-to-app.md
       - name: Use data operations
         href: data-operations.md
       - name: Customize or format date and time values in a flow
@@ -53,8 +53,6 @@
         href: how-tos-use-sensitive-input.md
       - name: Cancel or resubmit flow runs in bulk
         href: how-tos-bulk-resubmit.md
-      - name: Restore deleted flows
-        href: how-tos-restore-deleted-flow.md
       - name: Use Visio to model flows
         href: visio-flows.md
       - name: "Reference: Use functions in expressions"
@@ -63,12 +61,8 @@
         href: publish-a-template.md
       - name: Turn a cloud flow on or off
         href: disable-flow.md
-      - name: Change the owner of cloud flow
-        href: change-cloud-flow-owner.md
       - name: Format data by examples
         href: format-data-by-examples.md
-      - name: Regenerate the SAS key used in HTTP trigger flows
-        href: regenerate-sas-key.md
     - name: Manage cloud flows
       items: 
         - name: Share a flow
@@ -83,8 +77,29 @@
           href: drafts-versioning.md
         - name: Add OAuth authentication for HTTP request triggers 
           href: oauth-authentication.md
-        - name: Get help from the Microsoft Copilot Studio bot
-          href: contextual-help-bot.md
+        - name: Regenerate the SAS key used in HTTP trigger flows
+          href: regenerate-sas-key.md
+        - name: Change the owner of a cloud flow
+          href: change-cloud-flow-owner.md
+        - name: Restore deleted flows
+          href: how-tos-restore-deleted-flow.md
+        - name: Use solutions for ALM
+          items:
+          - name: Overview
+            href: overview-solution-flows.md
+            displayName: Use solutions for ALM of flows
+          - name: Create a cloud flow in a solution
+            href: create-flow-solution.md
+          - name: Create child flows
+            href: create-child-flows.md
+          - name: Export solution
+            href: export-flow-solution.md
+          - name: Import solution
+            href: import-flow-solution.md
+          - name: Edit a solution-aware flow
+            href: edit-solution-aware-flow.md
+          - name: Remove a solution-aware flow
+            href: remove-solution-aware-flow.md
     - name: Troubleshoot
       items:
       - name: Troubleshoot common issues with triggers
@@ -322,23 +337,6 @@
         href: connection-cds.md
       - name: Manage cloud flow run history in Dataverse (preview)
         href: ./dataverse/cloud-flow-run-metadata.md
-    - name: Use solutions for ALM
-      items:
-      - name: Overview
-        href: overview-solution-flows.md
-        displayName: Use solutions for ALM of flows
-      - name: Create a cloud flow in a solution
-        href: create-flow-solution.md
-      - name: Create child flows
-        href: create-child-flows.md
-      - name: Export solution
-        href: export-flow-solution.md
-      - name: Import solution
-        href: import-flow-solution.md
-      - name: Edit a solution-aware flow
-        href: edit-solution-aware-flow.md
-      - name: Remove a solution-aware flow
-        href: remove-solution-aware-flow.md
 - name: Desktop flows
   items:
   - name: Introduction to desktop flows
