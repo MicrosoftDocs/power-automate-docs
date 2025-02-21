@@ -1,13 +1,14 @@
 ---
-title: Copilot in Power Automate
-description: Explore Copilot in Power Automate and its features.
-author: v-aangie
+title: Adopt automation with Copilot in Power Automate
+description: Discover how to use Copilot in Power Automate to streamline your automation processes with natural language instructions.
+author: HeatherOrt
 contributors:
+  - HeatherOrt
   - v-aangie
   - jhaskett-msft
 ms.topic: overview
-ms.date: 09/04/2024
-ms.author: angieandrews
+ms.date: 02/18/2025
+ms.author: heortaol
 ms.reviewer: angieandrews
 ms.contributors:
   - appapaio
@@ -18,7 +19,7 @@ ms.custom: bap-template
 ms.collection: bap-ai-copilot
 ---
 
-# Copilot in Power Automate
+# Adopt automation with Copilot in Power Automate
 
 Copilot in Power Automate accelerates your journey to adopting automation and transforming your processes. It enhances these scenarios by using the instructions you give Copilot written in natural language to surface possible solutions that can achieve desired results. Copilot stays with you all the way during creation to guide you through your entire process.
 
@@ -59,7 +60,7 @@ Copilot in automation center enables makers, business analysts, and members of t
 
 ## Enable or disable Copilot in Power Automate
 
-If a region has GPUs (UK, Australia, US, India), we turn on Copilot by default. In this scenario, an admin needs to contact support and they'll use a PowerShell script to turn it off only at tenant level. Environment level support isn't available. If a region doesn't have GPUs (everywhere else except sovereign clouds), we turn on Copilot by default by toggling on the cross-geo data sharing. In this scenario, if you want to disable Copilot, you can toggle off the cross-geo data sharing in Power Platform admin center at the tenant level.
+If a region has GPUs (UK, Australia, US, India), we turn on Copilot by default. In this scenario, an admin needs to contact support and they use a PowerShell script to turn it off only at tenant level. Environment level support isn't available. If a region doesn't have GPUs (everywhere else except sovereign clouds), we turn on Copilot by default by toggling on the cross-geo data sharing. In this scenario, if you want to disable Copilot, you can toggle off the cross-geo data sharing in Power Platform admin center at the tenant level.
 
 To learn more, go to [Availability by region](get-started-with-copilot.md#availability-by-region).
 

@@ -1,5 +1,5 @@
 ---
-title: Understand the cloud flows designer
+title: Explore the cloud flows designer
 description: Learn about the components in the cloud flows designer.
 suite: flow
 author: kisubedi
@@ -18,7 +18,7 @@ ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
 ---
 
-# Understand the cloud flows designer
+# Explore the cloud flows designer
 
 You can create, configure, and customize your cloud flows with the classic designer or the cloud flows designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
 
