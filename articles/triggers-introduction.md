@@ -95,7 +95,7 @@ To set a trigger condition:
 
 1. If you have multiple filter conditions to add, Select **+ Add** and add expressions.
 
-    By default, all conditions must be met for the condition to be true. If any condition is optional, you need **OR**, and then use the syntax  `@or (test1, test2,test3)`.
+    By default, all conditions must be met for the condition to be true. If any condition is optional, you need **OR**, and then use the syntax  `@or (test1, test2, test3)`.
 
 ### Easily create expressions
 
