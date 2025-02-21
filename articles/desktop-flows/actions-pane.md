@@ -4,7 +4,7 @@ description: This section shows how to use the actions pane to deploy actions in
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 08/29/2024
+ms.date: 02/21/2025
 ms.author: iomavrid
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
