@@ -74,40 +74,6 @@ This is especially important in pay-as-you-go environments, where every flow run
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-# [Classic designer](#tab/classic-designer)
-
-To set a trigger condition:
-
-1. Select the trigger of the flow.
-1. On the upper right, select the ellipses (**…**) > **Settings**.  
-1. Under **Trigger Conditions**, select **Add**.
-
-    :::image type="content" source="./media/triggers-introduction/add-trigger-condition.png" alt-text="Screenshot that shows where you add a trigger condition.":::
-
-1. Add an expression and then select **Done**.
-
-    > [!NOTE]
-    > Every trigger condition must start with a the **@** symbol.
-
-    :::image type="content" source="./media/triggers-introduction/add-another-condition.png" alt-text="Screenshot of an expression.":::
-
-    As an alternative, follow the instructions in [Easily create expressions](#easily-create-expressions).
-
-1. If you have multiple filter conditions to add, Select **+ Add** and add expressions.
-
-    By default, all conditions must be met for the condition to be true. If any condition is optional, you need **OR**, and then use the syntax  `@or (test1, test2,test3)`.
-
-### Easily create expressions
-
-Your flow can generate expressions for you.
-
-1. On your flow, select the **+** sign in the down arrow, and then select **Add an action**.
-1. Search for and select the **Filter array** action.
-1. On the **Filter array** card, create your condition.
-1. Select **Edit in advanced mode** and copy the expression.
-1. Paste the expression into the trigger condition.
-1. Remove the **Filter array** action.
-
 # [Edit with Copilot](#tab/edit-with-copilot)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
@@ -126,6 +92,40 @@ To set a trigger condition:
     > Every trigger condition must start with a the **@** symbol.
 
      :::image type="content" source="./media/triggers-introduction/copilot-trigger-example.png" alt-text="Screenshot that shows an expression example in Copilot.":::
+
+    As an alternative, follow the instructions in [Easily create expressions](#easily-create-expressions).
+
+1. If you have multiple filter conditions to add, Select **+ Add** and add expressions.
+
+    By default, all conditions must be met for the condition to be true. If any condition is optional, you need **OR**, and then use the syntax  `@or (test1, test2,test3)`.
+
+### Easily create expressions
+
+Your flow can generate expressions for you.
+
+1. On your flow, select the **+** sign in the down arrow, and then select **Add an action**.
+1. Search for and select the **Filter array** action.
+1. On the **Filter array** card, create your condition.
+1. Select **Edit in advanced mode** and copy the expression.
+1. Paste the expression into the trigger condition.
+1. Remove the **Filter array** action.
+
+# [Classic designer](#tab/classic-designer)
+
+To set a trigger condition:
+
+1. Select the trigger of the flow.
+1. On the upper right, select the ellipses (**…**) > **Settings**.  
+1. Under **Trigger Conditions**, select **Add**.
+
+    :::image type="content" source="./media/triggers-introduction/add-trigger-condition.png" alt-text="Screenshot that shows where you add a trigger condition.":::
+
+1. Add an expression and then select **Done**.
+
+    > [!NOTE]
+    > Every trigger condition must start with a the **@** symbol.
+
+    :::image type="content" source="./media/triggers-introduction/add-another-condition.png" alt-text="Screenshot of an expression.":::
 
     As an alternative, follow the instructions in [Easily create expressions](#easily-create-expressions).
 

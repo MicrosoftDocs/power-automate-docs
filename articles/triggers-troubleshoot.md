@@ -99,20 +99,6 @@ Sometimes, the inputs and trigger conditions may cause failures. Follow these st
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-# [Classic designer](#tab/classic-designer)
-
-1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. Edit the flow.
-1. Expand the first card to see what folders, sites, mailboxes, etc. are used in the trigger.
-1. On the card, select the ellipses (**…**) > **Settings**.
-1. Find **Trigger conditions**.
-
-   If the field is empty, it means that there are no additional customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
-
-   If there are additional customizations in **Trigger Conditions**, confirm that you're using the expected or correct inputs to trigger the flow.
-
-    :::image type="content" source="./media/triggers-introduction/trigger-conditions.png" alt-text="Screenshot that shows trigger conditions.":::
-
 # [Edit with Copilot](#tab/edit-with-copilot)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
@@ -129,6 +115,20 @@ Sometimes, the inputs and trigger conditions may cause failures. Follow these st
    If there are additional customizations in **Trigger Conditions**, confirm that you're using the expected or correct inputs to trigger the flow.
 
     :::image type="content" source="./media/triggers-introduction/copilot-trigger-conditions.png" alt-text="Screenshot that shows trigger conditions in Copilot.":::
+
+# [Classic designer](#tab/classic-designer)
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. Edit the flow.
+1. Expand the first card to see what folders, sites, mailboxes, etc. are used in the trigger.
+1. On the card, select the ellipses (**…**) > **Settings**.
+1. Find **Trigger conditions**.
+
+   If the field is empty, it means that there are no additional customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
+
+   If there are additional customizations in **Trigger Conditions**, confirm that you're using the expected or correct inputs to trigger the flow.
+
+    :::image type="content" source="./media/triggers-introduction/trigger-conditions.png" alt-text="Screenshot that shows trigger conditions.":::
 
 ---
 
@@ -176,6 +176,13 @@ See the following table to understand how your flow responds when it's turned ba
 
 Follow these steps to determine the type of trigger that your flow uses.
 
+# [Edit with Copilot](#tab/edit-with-copilot)
+
+1. In the action configfuration pane to the left, select **Code View**.
+1. Find the `recurrence` section with an interval `frequency` element. If this section is available, the trigger is a *polling* trigger.
+
+    :::image type="content" source="./media/triggers-introduction/copilot-recurrence.png" alt-text="Screenshot of the recurrence section in Copilot.":::
+
 # [Classic designer](#tab/classic-designer)
 
 1. On the title bar, select the ellipsis (**...**) > **Peek code**.
@@ -185,13 +192,6 @@ Follow these steps to determine the type of trigger that your flow uses.
 1. Find the `recurrence` section with an interval `frequency` element. If this section is available, the trigger is a *polling* trigger.
 
     :::image type="content" source="./media/triggers-introduction/frequency.png" alt-text="Screenshot of the recurrence section.":::
-
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-1. In the action configfuration pane to the left, select **Code View**.
-1. Find the `recurrence` section with an interval `frequency` element. If this section is available, the trigger is a *polling* trigger.
-
-    :::image type="content" source="./media/triggers-introduction/copilot-recurrence.png" alt-text="Screenshot of the recurrence section in Copilot.":::
 
 ---
 
@@ -221,6 +221,14 @@ And, if your license is the **Flow for Office 365** plan (from your Enterprise l
 
 Follow these steps to check the trigger wake up frequency.
 
+# [Edit with Copilot](#tab/edit-with-copilot)
+
+1. On your flow, select your flow trigger.
+1. Select **Code View**.
+1. Find the interval frequency.
+
+    :::image type="content" source="./media/triggers-introduction/copilot-recurrence.png" alt-text="Screenshot of the frequency element in Copilot.":::
+
 # [Classic designer](#tab/classic-designer)
 
 1. Go to your flow trigger, and then select the ellipsis (**...**) > **Peek code**.
@@ -230,14 +238,6 @@ Follow these steps to check the trigger wake up frequency.
 1. Find the interval frequency.
 
     :::image type="content" source="./media/triggers-introduction/frequency.png" alt-text="Screenshot of the frequency element.":::
-
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-1. On your flow, select your flow trigger.
-1. Select **Code View**.
-1. Find the interval frequency.
-
-    :::image type="content" source="./media/triggers-introduction/copilot-recurrence.png" alt-text="[Screenshot of the frequency element in Copilot.":::
 
 ---
 
