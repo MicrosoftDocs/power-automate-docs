@@ -5,7 +5,7 @@ author: JoeFernandezMS
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/14/2024
+ms.date: 02/20/2024
 ms.author: jofernan
 ms.reviewer: dmartens
 contributors:
@@ -17,6 +17,8 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
   - ai-seo-date:08/23/2024
+ms.collection: 
+  - bap-ai-copilot
 ---
 
 # Create desktop flows using Record with Copilot (preview)
