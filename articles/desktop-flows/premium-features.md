@@ -4,7 +4,7 @@ description: Premium robotic process automation (RPA) features
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 08/30/2024
+ms.date: 02/20/2025
 ms.author: dipapa
 ms.reviewer: angieandrews
 contributors:
@@ -34,7 +34,7 @@ This article lists the premium robotic process automation (RPA) features and ben
 |Access to process mining |Visualize and analyze your business processes with process mining.|[Learn about process mining](/power-automate/process-advisor-overview)|
 |Access to cloud connectors from desktop flows|Use cloud connectors directly in desktop flows.|[Learn how to invoke the SharePoint cloud connector from desktop flows](actions-reference/sharepoint.md)|
 |Custom actions|Ability to use custom developed automation actions in desktop flows|[Learn how to create and use custom actions in desktop flows](custom-actions.md)|
-|UI elements collections (preview)|Ability to create, share, and use groups of predefined UI elements in multiple desktop flows|[Learn how to create and use UI elements collections in desktop flows](ui-elements-collections.md)|
+|UI elements collections |Ability to create, share, and use groups of predefined UI elements in multiple desktop flows|[Learn how to create and use UI elements collections in desktop flows](ui-elements-collections.md)|
 |Sharing and collaboration|Share flows between team members and select access levels such as co-owner or user. View and manage the flows shared with you.|[Learn how to share desktop flows](manage.md#share-desktop-flows)|
 |Access to multiple environments|Organize, store, and manage flows across multiple environments, and benefit from environment isolation and role-based access.|[Learn about environments](/power-platform/admin/environments-overview)|
 |Centralized flow management and reporting|Manage desktop flows and view their detailed run logs centrally from the Power Automate portal.|[Learn how to manage desktop flows](manage.md)|

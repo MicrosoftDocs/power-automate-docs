@@ -19,11 +19,26 @@ metadata:
 
 landingContent:
 
+  # Card 
+  - title: Best practices for building cloud flows
+    linkLists:
+       - linkListType: how-to-guide
+         links:
+          - text: Overview
+            url: coding-guidelines/index.md
+          - text: Coding guidelines
+            url: coding-guidelines/use-consistent-naming-conventions.md
+          - text: Design secure cloud flows
+            url: coding-guidelines/use-secure-inputs-outputs-triggers.md
+          - text: Integrate cloud flows with Power Apps
+            url: coding-guidelines/integrating-cloud-flows-power-apps.md
+          - text: Monitoring and alerting
+            url: coding-guidelines/monitoring-and-alerting.md
   
   # Card 
   - title: Planning a Power Automate project
     linkLists:
-       - linkListType: overview
+       - linkListType: get-started
          links:
           - text: Introduction
             url: planning/introduction.md       
