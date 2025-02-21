@@ -864,14 +864,6 @@
       href: process-mining-copilot-in-process-analytics.md   
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
-    - name: Azure Data Lake Storage Gen2
-      items:
-      - name: Bring your own Azure Data Lake Storage Gen2
-        href: process-mining-byo-azure-data-lake.md
-      - name: Bring your own network isolated Azure Data Lake Storage Gen2
-        href: process-mining-byo-azure-data-lake-private.md
-    - name: Ingest files from Fabric OneLake (preview)
-      href: process-mining-files-fabric-onelake.md
     - name: Transform and map data
       href: process-mining-transform.md
     - name: Visualize and gain insights from processes
@@ -909,8 +901,20 @@
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
       href: process-mining-share.md
+  - name: Load process data
+    items:
+    - name: Azure Data Lake Storage Gen2
+      items:
+      - name: Bring your own Azure Data Lake Storage Gen2
+        href: process-mining-byo-azure-data-lake.md
+      - name: Bring your own network isolated Azure Data Lake Storage Gen2
+        href: process-mining-byo-azure-data-lake-private.md    
+    - name: Ingest files from Fabric OneLake (preview)
+      href: process-mining-files-fabric-onelake.md
     - name: Edit and refresh processes
       href: process-mining-data-source.md
+    - name: Set up millisecond support when ingesting data with dataflows
+      href: import-with-milliseconds.md
   - name: Process Mining desktop app
     items:
     - name: Overview
