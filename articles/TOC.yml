@@ -357,6 +357,8 @@
       href: ./desktop-flows/install.md
     - name: Install Power Automate silently
       href: ./desktop-flows/install-silently.md
+    - name: Enable Power Automate automatic updates
+      href: ./desktop-flows/auto-update.md
     - name: Install Power Automate browser extensions
       href: ./desktop-flows/install-browser-extensions.md
     - name: Migration to Manifest V3 (browser extensions)
