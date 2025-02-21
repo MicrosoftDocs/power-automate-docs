@@ -1,5 +1,5 @@
 ---
-title: Overview of the cloud flows
+title: Overview of cloud flows
 description: Get an overview of cloud flows.
 suite: flow
 author: kisubedi
