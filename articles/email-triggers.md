@@ -6,7 +6,7 @@ author: hamenon
 contributors:
   - hamenon
   - v-aangie
-ms.author: hamenon
+ms.author: heortaol
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
