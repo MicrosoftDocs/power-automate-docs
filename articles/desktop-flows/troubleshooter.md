@@ -4,7 +4,7 @@ description: Troubleshooter application for Power Automate for desktop.
 author: YiannisMavridis
 ms.subservice: desktop-flow
 ms.topic: troubleshooting
-ms.date: 01/22/2025
+ms.date: 02/19/2025
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
@@ -25,6 +25,7 @@ The troubleshooter in Power Automate for desktop is a component that allows you 
 The troubleshooter includes six categories of diagnostics:
 
 * connectivity
+* sign-in
 * Dataverse
 * UI/Web automation
 * picture-in-picture
@@ -73,6 +74,14 @@ After a category is checked for issues end to end, there’s always the option t
 Τhere can be relevant connectivity errors while using Power Automate for desktop. In those cases, you're prompted to launch the troubleshooter directly, through a link in the error dialog. Doing so automatically opens and runs the connectivity issues category.
 
 :::image type="content" source="media/troubleshooter/error-dialog-with-troubleshooter-link.png" alt-text="Connection error detected dialog with troubleshooter link" border="false":::
+
+## Sign-in issues
+
+This category detects potential issues when you try to sign in to Power Automate for desktop:
+
+* **Authentication**: This step checks whether the user is authenticated to sign in.
+* **Authorization**: This step checks whether the user is authorized to sign in.
+* **Internet options**: This step checks whether the required trusted sites are in place or missing.
 
 ## Dataverse issues
 

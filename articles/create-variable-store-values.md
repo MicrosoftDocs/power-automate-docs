@@ -75,7 +75,7 @@ You can create a variable and declare its data type and initial value all within
 > [!NOTE]
 > Although the **Initialize variable** action has a `variable` section structured as an array, the action can create only one variable at a time. Each new variable requires an individual **Initialize variable** action.
 
-# [Edit with Copilot)](#tab/edit-with-copilot)
+# [Edit with Copilot](#tab/edit-with-copilot)
 
 You can create a variable and declare its data type and initial value all within one action in your flow. You can only declare variables at the global level, not within scopes, conditions, and loops.
 
