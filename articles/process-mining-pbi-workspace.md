@@ -91,6 +91,12 @@ Now that you connected your Power BI workspace to the process mining capability 
    > [!IMPORTANT]
    > It's required that the service principal gets added as an admin. If you skip this step, the feature doesn't work.
 
+### Use an existing custom Power BI workspace
+
+If you decide to use an already existing Power BI workspace, please make sure you are added to it with at least a **Contributor** role assigned.
+
+Only a workspace admin can [assign users access to Power BI workspace](/power-bi/collaborate-share/service-give-access-new-workspaces). 
+
 ## Load your process analytics in Power BI
 
 Load your process analytics in Power BI to start customizing your report.
