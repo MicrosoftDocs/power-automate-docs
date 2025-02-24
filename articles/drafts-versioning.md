@@ -24,7 +24,7 @@ When you're authoring a solution cloud flow, you can save drafts in Microsoft Da
 
 The flow drafts and versioning feature set is available only for [solution cloud flows](/power-automate/create-flow-solution). Solution cloud flows can be [created directly in a solution](/power-automate/create-flow-solution#create-a-solution-aware-cloud-flow), [added into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution), or created by default if the [Create in Dataverse solutions environment setting](/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature) is enabled.
 
-The flow drafts and versioning feature set is being released slowly across specific environments region-by-region. When drafts and versioning capabilities show up in an environment in your region, allow two weeks for full release in that region.
+The flow drafts and versioning feature set has been available in all regions since February 7th, 2025.
 
 ## Save drafts
 
