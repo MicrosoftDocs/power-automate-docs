@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 02/24/2025
+ms.date: 02/25/2025
 ms.author: janpidych
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -61,7 +61,8 @@ To customize the event's end timestamp, follow these steps.
 
     :::image type="content" source="media/process-mining-import-milliseconds/custom-column-end.png" alt-text="Screenshot of the custom definition of event's end time.":::
 
-    As result of these mappings there are two custom columns as part of event long. Each of these columns displays huge numeric values, which represents total amount of seconds since 1st January 1970 to [StartDate] or [EndDate] value. For dates in 2024 years the value has approximately 13 digits).
+    As a result of these mappings, there are two custom columns as part of event log. Each of these columns displays huge numeric values, which represent total amount of seconds since January 1, 1970 to [StartDate] or [EndDate] value. For dates in 2024 years the value has approximately 13 digits).
+  
     The following screenshot displays the end result of mapping two new custom columns as part of the event log.
 
     :::image type="content" source="media/process-mining-import-milliseconds/mapped-event-log.png" alt-text="Screenshot of the mapped event log.":::
