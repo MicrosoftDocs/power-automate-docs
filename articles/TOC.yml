@@ -204,7 +204,7 @@
           href: email-customization.md
         - name: Troubleshoot issues with email in flows
           href: email-troubleshooting.md
-      - name: Use flows with Excel for the web
+      - name: Use flows with Excel
         href: flows-excel.md    
       - name: Use flows with SharePoint
         items:
