@@ -167,7 +167,7 @@ Custom VM images must meet the following requirements:
     - Korea: Korea Central
     - Norway: Norway East
     - South Africa: South Africa North
-    - Southeast Asia: Singapore
+    - Southeast Asia: Singapore (Allowlisted tenants only)
     - Switzerland: Switzerland North
     - United Arab Emirates: UAE North
     - United Kingdom: UK South
