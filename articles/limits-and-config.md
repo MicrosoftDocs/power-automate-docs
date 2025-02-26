@@ -209,7 +209,7 @@ The following table describes the default retry limits.
 | Performance profile | Description |
 | ------------------- | ----------- |
 | Low | This policy sends up to two retries at *exponentially increasing* intervals, which scale by 5 minutes up to an interval of approximately 10 minutes for the last retry. |
-| Medium, High | This policy sends up to eight retries at *exponentially increasing* intervals, which scale by 7 seconds up to an interval of approximately 15 minutes for the last retry. |
+| Medium, High | This policy sends up to twelve retries at *exponentially increasing* intervals, which scale by 7 seconds up to an interval of approximately 1 hour for the last retry. |
 
 #### Retry setting limits
 
