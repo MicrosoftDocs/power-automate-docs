@@ -38,7 +38,7 @@ There are two options to enable flow run resubmission for flows initiated by ins
 1. Choose whether to enable or disable the functionality using the toggle.
 
 > [!Note]
-> This setting is valid for both [Managed and Unmanaged](../admin/managed-environment-overview) environments.
+> This setting is valid for both [Managed and Unmanaged](/power-platform/admin/managed-environment-overview) environments.
 
 
 ### Apply tenant setting using PowerShell prerequisites
