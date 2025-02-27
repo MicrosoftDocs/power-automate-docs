@@ -1,12 +1,12 @@
 ---
-title: Use Power Automate flows in Microsoft Teams | Microsoft Docs
+title: Use Power Automate flows in Microsoft Teams
 description: Learn how to use Power Automate flows within Microsoft Teams.
 documentationcenter: na
 author: v-aangie
 contributors:
+  - lutorre
   - kewaiss
   - v-aangie
-  - lutorre
 ms.subservice: teams
 ms.topic: overview
 ms.date: 02/27/2025
@@ -28,7 +28,7 @@ Use flows with [adaptive cards](../create-adaptive-cards.md).| Here, adaptive ca
 Create flows from within the [Power Apps app in Teams](./create-flows-power-apps-app.md).|Use the Power Apps app in Teams to create flows that use [Dataverse for Teams](/power-apps/teams/overview-data-platform). Dataverse for Teams is a built-in, low-code data platform for Teams that empowers users to build custom apps and workflows within Teams by using Power Apps and Power Automate.
 
 > [!NOTE]
-> Department of Defense (DoD) Cloud environments support the following capabilities:
+> Department of Defense (DoD) cloud environments support the following capabilities:
 >
 > - Create and trigger the **When a new chat message is added** flow
 > - Create and trigger the **When keywords are mentioned** flow
@@ -42,10 +42,10 @@ There are no additional licensing requirements when you use Power Automate with 
 
 For detailed licensing information about Dataverse for Teams, see [licensing and restrictions](/power-platform/admin/about-teams-environment?branch=teams-preview#licensing-and-restrictions) in the Microsoft Power Platform admin guide.
 
-### Related topics
+### Related information
 
-[Power Apps and Teams](/powerapps/teams/overview)<br/>
-[Microsoft Copilot Studio overview](https://aka.ms/pva-teams-docs)
+- [Power Apps and Teams](/powerapps/teams/overview)
+- [Microsoft Copilot Studio overview](https://aka.ms/pva-teams-docs)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
