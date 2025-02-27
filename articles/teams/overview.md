@@ -34,7 +34,7 @@ Create flows from within the [Power Apps app in Teams](./create-flows-power-apps
 > - Create and trigger the **When keywords are mentioned** flow
 > - Create and trigger the **When a new team member is added** flow
 > - Create and trigger the **Post a feed notification** flow
-> - Create and trigger the **When I am @mentioned** flow
+> - Create and trigger the **When I am \@mentioned** flow
 
 ## Licensing
 
