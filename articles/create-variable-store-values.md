@@ -36,7 +36,7 @@ Before you can add actions for creating and working with variables, your flow mu
 
 - Access to [Power Automate](https://make.powerautomate.com).
 - A cloud flow in which you want to create the variable.
-- If you're new to Power Automate, review [Getting started with Power Automate](getting-started.md) and [Overview of cloud flows](overview-cloud.md).
+- If you're new to Power Automate, review [Get started with Power Automate](getting-started.md) and [Overview of cloud flows](overview-cloud.md).
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 

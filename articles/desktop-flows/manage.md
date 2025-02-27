@@ -4,7 +4,7 @@ description: Learn how to manage desktop flows in the Power Automate portal.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 08/29/2024
+ms.date: 02/21/2025
 ms.author: appapaio
 ms.reviewer: matp
 contributor:
@@ -122,7 +122,7 @@ Follow these steps to share a desktop flow:
 
 > [!NOTE]
 >
-> Once a desktop flow has been shared, owners and co-owners can change the access of each user by selecting **Manage access** on the desktop flow details page.
+> Once a desktop flow is shared, owners and co-owners can change the access of each user by selecting **Manage access** on the desktop flow details page.
 > If someone shares a desktop flow with you, select the refresh button to see it in the **Shared with me** flows list.
 > After you share a desktop flow with new co-owners, the co-owners see all the desktop runs that happen in the future. However those co-owners don't see the desktop flows already completed before sharing.
 
@@ -173,9 +173,9 @@ In this page, you can:
 
 > [!NOTE]
 >
-> - Users of an environment with a Dataverse security role that grants them **Read** access to **all records** in the **Process** table (where different types of flows are stored), will be listed as **Co-owners** of **any desktop flows** created in that environment. They can't be removed as co-owners unless you change privileges and access level in the underlying security role.
-> - The **System Customizer** role is an example of a security role with environment-wide **Read** privileges for desktop flows. This role has **Read** permission set to **Organization** on the **Process** table, allowing users with this role to view all desktop flows in the environment and be marked as co-owners. It is highly recommended to review each security role before assigning it to users to ensure that the privilege set and access level are appropriate for the intended use case.
-> - Starting from version 2.46 of Power Automate for desktop, if a message appears indicating that the user does not have sufficient permissions in an environment using schema V2, **Read** access must be provided to their respective security role on the **Solution** entity in Dataverse.
+> - Users of an environment with a Dataverse security role that grants them **Read** access to **all records** in the **Process** table (where different types of flows are stored), are listed as **Co-owners** of **any desktop flows** created in that environment. They can't be removed as co-owners unless you change privileges and access level in the underlying security role.
+> - The **System Customizer** role is an example of a security role with environment-wide **Read** privileges for desktop flows. This role has **Read** permission set to **Organization** on the **Process** table, allowing users with this role to view all desktop flows in the environment and be marked as co-owners. It's highly recommended to review each security role before assigning it to users to ensure that the privilege set and access level are appropriate for the intended use case.
+> - Starting from version 2.46 of Power Automate for desktop, if a message appears indicating that the user doesn't have sufficient permissions in an environment using schema V2, **Read** access must be provided to their respective security role on the **Solution** entity in Dataverse.
 > - When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You're notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
 
 ## Learn more
