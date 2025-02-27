@@ -31,6 +31,24 @@ Create a cloud flow that performs one or more tasks automatically after it's tri
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
+# [Edit with Copilot](#tab/edit-with-copilot)
+
+Using Copilot, you can use natural language to create a flow.
+
+1. Simply ask Copilot to create your flow by typing the following prompt:
+
+    **when a new tweet is posted, send an email to eug@contoso.com with Twitter username**
+
+    Copilot suggests a flow based on your prompt:
+
+    :::image type="content" source="./media/get-started-logic-flow/copilot-natural-language.png" alt-text="Screenshot of a prompt that uses natural language in Copilot.":::
+
+1. Review and then provide the necessary connections to Twitter and Outlook.
+1. Select **Next** and your flow appears on the designer.
+1. Save the flow and it's ready to use.
+
+    Your flow will trigger when any new tweets that mention the key phrase *Contoso Company* are posted. It will also send an email to the specified email address in the **Send an email** action.
+
 # [Classic designer](#tab/classic-designer)
 
 ## Specify an event to start the flow
@@ -78,24 +96,6 @@ First, select what event, or *trigger*, starts your flow.
 
    Optionally, you can add more tokens, other text, or both to the body of the email.
 1. Near the top of the screen, select **Save**.
-
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-Using Copilot, you can use natural language to create a flow.
-
-1. Simply ask Copilot to create your flow by typing the following prompt:
-
-    **when a new tweet is posted, send an email to eug@contoso.com with Twitter username**
-
-    Copilot suggests a flow based on your prompt:
-
-    :::image type="content" source="./media/get-started-logic-flow/copilot-natural-language.png" alt-text="Screenshot of a prompt that uses natural language in Copilot.":::
-
-1. Review and then provide the necessary connections to Twitter and Outlook.
-1. Select **Next** and your flow appears on the designer.
-1. Save the flow and it's ready to use.
-
-    Your flow will trigger when any new tweets that mention the key phrase *Contoso Company* are posted. It will also send an email to the specified email address in the **Send an email** action.
 
 ---
 
