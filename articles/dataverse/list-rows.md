@@ -21,6 +21,14 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 
 [!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
 
+# [Edit with Copilot](#tab/edit-with-copilot)
+
+1. Select the plus sign (**+**) > **Add an action**.
+1. On the **Add an action** sceen, enter **list rows** in the **Search** field.
+1. Under **Microsoft Dataverse**, select **List rows (Preview)**.
+1. On the **Parameters** tab to the left, select **Accounts** in the **Table Name** dropdown menu.
+1. Close the screen by selecting (**<<**).
+
 # [Classic designer](#tab/classic-designer)
 
 1. Select **New step** to add an action to your flow.
@@ -29,14 +37,6 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 1. Select **List rows**.
 1. Select the **Accounts** table from the **Table name** list.
 1. Save and run your flow to confirm that no more than 5,000 rows are returned.
-
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-1. Select the plus sign (**+**) > **Add an action**.
-1. On the **Add an action** sceen, enter **list rows** in the **Search** field.
-1. Under **Microsoft Dataverse**, select **List rows (Preview)**.
-1. On the **Parameters** tab to the left, select **Accounts** in the **Table Name** dropdown menu.
-1. Close the screen by selecting (**<<**).
 
 ---
 
@@ -48,19 +48,19 @@ When pagination is set and the amount of rows exceeds that number of the thresho
 
 [Content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) apply to ensure general service guarantees.
 
-# [Classic designer](#tab/classic-designer)
+# [Edit with Copilot](#tab/edit-with-copilot)
 
-1. In the upper-right corner of the **List rows** card, select the menu (...).
-1. Select **Settings**.
+1. Select the **List rows** card.
+1. On the pane to the left, select the **Settings** tab > **Networking**.
 1. Move the **Pagination** slider to the **On** position if it's not already turned on.
 1. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000.
 
     Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [Classic designer](#tab/classic-designer)
 
-1. Select the **List rows** card.
-1. On the pane to the left, select the **Settings** tab > **Networking**.
+1. In the upper-right corner of the **List rows** card, select the menu (...).
+1. Select **Settings**.
 1. Move the **Pagination** slider to the **On** position if it's not already turned on.
 1. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000.
 
@@ -72,12 +72,6 @@ When pagination is set and the amount of rows exceeds that number of the thresho
 
 The advanced options for the **List Rows** action allow you to sort, filter, arrange, and extend the results of a query.
 
-# [Classic designer](#tab/classic-designer)
-
-You can set advanced options directly on the **List rows** card. To see the options, select **Show advanced options**. When you select it, the name changes to **Hide advanced options**.
-
-:::image type="content" source="../media/list-rows/advanced-list-rows.png" alt-text="Screenshot of advanced options in the List rows card.":::
-
 # [Edit with Copilot](#tab/edit-with-copilot)
 
 You can set options inthe action configuration pane.
@@ -86,6 +80,12 @@ You can set options inthe action configuration pane.
 1. In the **Parameters** tab, select an advanced option in the **Add new parameters** dropdown menu.
 
     :::image type="content" source="../media/list-rows/ai-advanced-list-rows.png" alt-text="Screenshot of advanced options for the List rows action in the Configuration action pane.":::
+
+# [Classic designer](#tab/classic-designer)
+
+You can set advanced options directly on the **List rows** card. To see the options, select **Show advanced options**. When you select it, the name changes to **Hide advanced options**.
+
+:::image type="content" source="../media/list-rows/advanced-list-rows.png" alt-text="Screenshot of advanced options in the List rows card.":::
 
 ---
 
@@ -131,17 +131,6 @@ Use to indicate the specific number of rows for Dataverse to return. Here's an e
 
 [Aggregation queries](/powerapps/developer/data-platform/use-fetchxml-aggregation) aren't currently supported when using the **List rows** action with FetchXML queries. However, the distinct operator is supported.
 
-# [Classic designer](#tab/classic-designer)
-
-Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML.
-
-Type the following in the **Fetch Xml Query** field.
-
-![List accounts example with FetchXML.](../media/list-rows/fetch-sml-example.png)
-
-As the distinct operator isn't currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](../data-operations.md#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](../create-variable-store-values.md#initialize-a-variable) with the expression *union(body(‘Select’),body(‘Select’))* to get an array with distinct rows.
-
-
 # [Edit with Copilot](#tab/edit-with-copilot)
 
 Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML.
@@ -165,6 +154,16 @@ Example FetchXML query for the Account table:
 	</entity>
 </fetch>
 ```
+
+As the distinct operator isn't currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](../data-operations.md#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](../create-variable-store-values.md#initialize-a-variable) with the expression *union(body(‘Select’),body(‘Select’))* to get an array with distinct rows.
+
+# [Classic designer](#tab/classic-designer)
+
+Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML.
+
+Type the following in the **Fetch Xml Query** field.
+
+![List accounts example with FetchXML.](../media/list-rows/fetch-sml-example.png)
 
 As the distinct operator isn't currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](../data-operations.md#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](../create-variable-store-values.md#initialize-a-variable) with the expression *union(body(‘Select’),body(‘Select’))* to get an array with distinct rows.
 
