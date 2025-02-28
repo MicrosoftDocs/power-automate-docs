@@ -109,8 +109,6 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
     :::image type="content" source="./media/use-expressions-in-conditions/table-parameters.png" alt-text="Screenshot of the parameters for list rows present in a table in Copilot.":::
 
----
-
 # [Classic designer](#tab/classic-designer)
 
 1. Select **New step**.
@@ -127,27 +125,9 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
     :::image type="content" source="includes/media/new-step/select-table-to-search.png" alt-text="Screenshot of Location, Document Library, File, and Table fields in the List rows present in a table card.":::
 
+---
+
 ### Check the status column of each row
-
-# [Classic designer](#tab/classic-designer)
-
-1. Select **New step**.
-
-1. Search for **apply to each**, and then select the **Apply to each - Control**.
-
-1. Add the **value** token to the **Select an output from previous steps** box.
-
-   This **value** token represents the spreadsheet table and all of its data.
-
-1. Select **Add an action** on the **Apply to each** card.
-
-1. Search for **condition**, and then select the **Condition** control.
-
-1. Add the following **Or** expression. This **Or** expression checks the value of each row in the table. If the value of the **Status** column is *completed* **Or** *unnecessary*, the **Or** expression evaluates to "true".
-
-    Here's an example of a **Condition** card.
-
-    :::image type="content" source="./media/use-expressions-in-conditions/or-expression.png" alt-text="Screenshot of an 'or' expression.":::
 
 # [Edit with Copilot](#tab/edit-with-copilot)
 
@@ -173,25 +153,29 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
     :::image type="content" source="./media/use-expressions-in-conditions/condition-card.png" alt-text="Screenshot of selecting the value from the previous step.":::
 
+# [Classic designer](#tab/classic-designer)
+
+1. Select **New step**.
+
+1. Search for **apply to each**, and then select the **Apply to each - Control**.
+
+1. Add the **value** token to the **Select an output from previous steps** box.
+
+   This **value** token represents the spreadsheet table and all of its data.
+
+1. Select **Add an action** on the **Apply to each** card.
+
+1. Search for **condition**, and then select the **Condition** control.
+
+1. Add the following **Or** expression. This **Or** expression checks the value of each row in the table. If the value of the **Status** column is *completed* **Or** *unnecessary*, the **Or** expression evaluates to "true".
+
+    Here's an example of a **Condition** card.
+
+    :::image type="content" source="./media/use-expressions-in-conditions/or-expression.png" alt-text="Screenshot of an 'or' expression.":::
+
 ---
 
 ### Delete matching rows from the spreadsheet
-
-# [Classic designer](#tab/classic-designer)
-
-1. Select **Add an action** on the **If yes** branch of the condition.
-
-    The **If yes** branch runs if the **OR** condition evaluates to **true**.
-
-1. Search for **Delete a row**, select **Excel Online (Business)**, and then select **Delete a row**.
-
-1. On the **Delete a row** card, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
-
-1. In the **Key Column** dropdown list, select **\_PowerAppsId_**.
-
-1. In the **Key Value** field, insert the **\_PowerAppsId_** dynamic value.
-
-1. Save your flow.
 
 # [Edit with Copilot](#tab/edit-with-copilot)
 
@@ -202,6 +186,22 @@ Alternatively, you can follow the below steps to create the same flow manually:
 1. Search for **Delete a row**, select **Excel Online (Business)**, and then select **Delete a row**.
 
     :::image type="content" source="./media/use-expressions-in-conditions/delete-a-row-test.png" alt-text="Screenshot of deleting a row.":::
+
+1. On the **Delete a row** card, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
+
+1. In the **Key Column** dropdown list, select **\_PowerAppsId_**.
+
+1. In the **Key Value** field, insert the **\_PowerAppsId_** dynamic value.
+
+1. Save your flow.
+
+# [Classic designer](#tab/classic-designer)
+
+1. Select **Add an action** on the **If yes** branch of the condition.
+
+    The **If yes** branch runs if the **OR** condition evaluates to **true**.
+
+1. Search for **Delete a row**, select **Excel Online (Business)**, and then select **Delete a row**.
 
 1. On the **Delete a row** card, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
 
