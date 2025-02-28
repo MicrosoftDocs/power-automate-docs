@@ -79,8 +79,7 @@ Let's create the flow.
 
 ### Select the spreadsheet and get all rows
 
-> [!NOTE]
-> If you want to switch to Classic Designer, save the flow in New Designer first or you'll lose your work. In case you get errors while creating the flow in New Designer, you'll need to resolve them before you save. 
+To switch to Classic Designer in Power Automate, save the flow in New Designer first to avoid losing your work. Resolve any errors in New Designer before saving.
 
 # [Edit with Copilot](#tab/edit-with-copilot)
 
@@ -92,7 +91,7 @@ Let's create the flow.
 
     :::image type="content" source="./media/use-expressions-in-conditions/copilot-prompt.png" alt-text="Screenshot of a prompt in Copilot.":::
 
-Once you submit the prompt, Copilot creates the flow for you. You still need to fill in the necessary details for the flow to work, such as parameters for various actions added by Copilot.
+    After you submit the prompt, Copilot creates the flow for you. You still need to fill in the necessary details for the flow to work, such as parameters for various actions added by Copilot.
 
 Alternatively, you can follow the below steps to create the same flow manually:
 
