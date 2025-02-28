@@ -64,17 +64,17 @@ Depending on your designer version, parameters appear in different locations.
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-# [Classic designer](#tab/classic-designer)
-
-The parameter shows on the card.
-
-:::image type="content" source="./media/oauth-authentication/classic-oauth-parameter.png" alt-text="Screenshot of who can trigger the cloud flow in the classic designer.":::
-
 # [Edit with Copilot](#tab/edit-with-copilot)
 
 The parameter shows on the configuration panel to the left.
 
 :::image type="content" source="./media/oauth-authentication/v3-oauth-parameter.png" alt-text="Screenshot of who can trigger the cloud flow in the designer with Copilot.":::
+
+# [Classic designer](#tab/classic-designer)
+
+The parameter shows on the card.
+
+:::image type="content" source="./media/oauth-authentication/classic-oauth-parameter.png" alt-text="Screenshot of who can trigger the cloud flow in the classic designer.":::
 
 ---
 
