@@ -36,7 +36,7 @@ Expression|Description|Example
 
 ## Prerequisites
 
-Here's what you'll need to complete this walkthrough.
+Here's what you need to complete this walkthrough.
 
 * Access to Power Automate.
 * Your own spreadsheet with the tables described later in this walkthrough. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Power Automate can access it.
@@ -77,7 +77,39 @@ Let's create the flow.
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-## Select the spreadsheet and get all rows
+### Select the spreadsheet and get all rows
+
+> [!NOTE]
+> If you want to switch to Classic Designer, save the flow in New Designer first or you'll lose your work. In case you get errors while creating the flow in New Designer, you'll need to resolve them before you save. 
+
+# [Edit with Copilot](#tab/edit-with-copilot)
+
+1. Ask Copilot to create a flow for you. Type the following prompt in Copilot:
+
+    **Every week, list rows in a Excel table and if the Status column equals Succeeded or claim manager's email is jake@contoso.com, delete Excel row**
+
+1. Select **Submit** ![Screenshot of the Submit button](./media/use-expressions-in-conditions/submit.png).
+
+    :::image type="content" source="./media/use-expressions-in-conditions/copilot-prompt.png" alt-text="Screenshot of a prompt in Copilot.":::
+
+Once you submit the prompt, Copilot creates the flow for you. You still need to fill in the necessary details for the flow to work, such as parameters for various actions added by Copilot.
+
+Alternatively, you can follow the below steps to create the same flow manually:
+
+1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
+1. Search for **rows**, select **Excel Online (Business)**, and then select the **Get a row** action that corresponds to the spreadsheet that you're using.
+
+    For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
+
+1. Select the **List rows present in a table** action.
+
+    :::image type="content" source="./media/use-expressions-in-conditions/add-an-action-test.png" alt-text="Screenshot of listing rows in a table in Copilot.":::
+
+1. Select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
+
+    :::image type="content" source="./media/use-expressions-in-conditions/table-parameters.png" alt-text="Screenshot of the parameters for list rows present in a table in Copilot.":::
+
+---
 
 # [Classic designer](#tab/classic-designer)
 
@@ -95,34 +127,7 @@ Let's create the flow.
 
     :::image type="content" source="includes/media/new-step/select-table-to-search.png" alt-text="Screenshot of Location, Document Library, File, and Table fields in the List rows present in a table card.":::
 
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-1. Ask Copilot to create a flow for you. Please type the following prompt in Copilot:
-
-    **Every week, list rows in a Excel table and if the Status column equals Succeded or claim maangers email is jake@contoso.com, delete Excel row**
-
-1. Select **Submit** ![Screenshot of the Submit button](./media/use-expressions-in-conditions/submit.png).
-
-    :::image type="content" source="./media/use-expressions-in-conditions/copilot-prompt.png" alt-text="Screenshot of a prompt in Copilot.":::
-
-Alternatively, you can follow the below steps to create the same flow manually:
-
-1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
-1. Search for **rows**, select **Excel Online (Business)**, and then select the **Get a row** action that corresponds to the spreadsheet that you're using.
-
-    For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
-
-1. Select the **List rows present in a table** action.
-
-    :::image type="content" source="./media/use-expressions-in-conditions/add-an-action.png" alt-text="Screenshot of listing rows in a table in Copilot.":::
-
-1. Select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
-
-    :::image type="content" source="./media/use-expressions-in-conditions/table-parameters.png" alt-text="Screenshot of the parameters for list rows present in a table in Copilot.":::
-
----
-
-## Check the status column of each row
+### Check the status column of each row
 
 # [Classic designer](#tab/classic-designer)
 
@@ -150,7 +155,7 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
 1. On the **Add an action** screen, search for **apply to each**, and then select the **Apply to each** under **Control**.
 
-1. Add the **value** token to the **Select an output from previous steps** box by selecting the ligtening rod icon.
+1. Add the **value** token to the **Select an output from previous steps** box by selecting the lightning rod icon.
 
     :::image type="content" source="./media/use-expressions-in-conditions/lightning-rod.png" alt-text="Screenshot selecting the value from the previous step.":::
 
@@ -170,7 +175,7 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
 ---
 
-## Delete matching rows from the spreadsheet
+### Delete matching rows from the spreadsheet
 
 # [Classic designer](#tab/classic-designer)
 
@@ -196,7 +201,7 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
 1. Search for **Delete a row**, select **Excel Online (Business)**, and then select **Delete a row**.
 
-    :::image type="content" source="./media/use-expressions-in-conditions/delete-a-row.png" alt-text="Screenshot of deleting a row.":::
+    :::image type="content" source="./media/use-expressions-in-conditions/delete-a-row-test.png" alt-text="Screenshot of deleting a row.":::
 
 1. On the **Delete a row** card, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
 
