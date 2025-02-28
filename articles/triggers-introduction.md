@@ -126,6 +126,7 @@ To set a trigger condition:
     > Every trigger condition must start with a the **@** symbol.
 
     :::image type="content" source="./media/triggers-introduction/add-another-condition.png" alt-text="Screenshot of an expression.":::
+   !!Wrong expression. It should be @equals(triggeroutputs()?['body/subject'], 'invoice approved) 
 
     As an alternative, follow the instructions in [Easily create expressions](#easily-create-expressions).
 
