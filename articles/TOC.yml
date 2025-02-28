@@ -100,6 +100,8 @@
             href: edit-solution-aware-flow.md
           - name: Remove a solution-aware flow
             href: remove-solution-aware-flow.md
+          - name: Set up Application Insights with Power Automate
+            href: /power-platform/admin/app-insights-cloud-flow.md
     - name: Troubleshoot
       items:
       - name: Troubleshoot common issues with triggers
