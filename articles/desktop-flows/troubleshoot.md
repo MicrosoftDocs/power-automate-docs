@@ -3,7 +3,7 @@ title: Troubleshoot desktop flows runtime
 description: Learn how to resolve common Power Automate desktop flows runtime problems effectively.
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
-ms.topic: troubleshooting
+ms.topic: article
 ms.date: 01/14/2025
 ms.author: pefelesk
 ms.reviewer: tapanm

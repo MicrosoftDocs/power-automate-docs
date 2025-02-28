@@ -100,6 +100,8 @@
             href: edit-solution-aware-flow.md
           - name: Remove a solution-aware flow
             href: remove-solution-aware-flow.md
+          - name: Set up Application Insights with Power Automate
+            href: /power-platform/admin/app-insights-cloud-flow.md
     - name: Troubleshoot
       items:
       - name: Troubleshoot common issues with triggers
@@ -204,7 +206,7 @@
           href: email-customization.md
         - name: Troubleshoot issues with email in flows
           href: email-troubleshooting.md
-      - name: Use flows with Excel for the web
+      - name: Use flows with Excel
         href: flows-excel.md    
       - name: Use flows with SharePoint
         items:
@@ -862,14 +864,6 @@
       href: process-mining-copilot-in-process-analytics.md   
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
-    - name: Azure Data Lake Storage Gen2
-      items:
-      - name: Bring your own Azure Data Lake Storage Gen2
-        href: process-mining-byo-azure-data-lake.md
-      - name: Bring your own network isolated Azure Data Lake Storage Gen2
-        href: process-mining-byo-azure-data-lake-private.md
-    - name: Ingest files from Fabric OneLake (preview)
-      href: process-mining-files-fabric-onelake.md
     - name: Transform and map data
       href: process-mining-transform.md
     - name: Visualize and gain insights from processes
@@ -907,8 +901,20 @@
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
       href: process-mining-share.md
+  - name: Load process data
+    items:
+    - name: Azure Data Lake Storage Gen2
+      items:
+      - name: Bring your own Azure Data Lake Storage Gen2
+        href: process-mining-byo-azure-data-lake.md
+      - name: Bring your own network isolated Azure Data Lake Storage Gen2
+        href: process-mining-byo-azure-data-lake-private.md    
+    - name: Ingest files from Fabric OneLake (preview)
+      href: process-mining-files-fabric-onelake.md
     - name: Edit and refresh processes
       href: process-mining-data-source.md
+    - name: Set up millisecond support when ingesting data with dataflows
+      href: import-with-milliseconds.md
   - name: Process Mining desktop app
     items:
     - name: Overview
