@@ -33,9 +33,9 @@ Once you open the expression editor, you can use the instructions in the followi
 1. In the action configuration pane, select the field that you want to edit.
 1. Select **fx**.
 
-## Scenario 1: Create expression with natural language
+## Scenario 1: Create an expression with natural language
 
-Use Copilot to create expressions with natural language.
+Use Copilot to create an expression with natural language.
 
 1. On the expression editor, select **Create expression with Copilot**.
 
@@ -73,7 +73,7 @@ Finally, select **OK** to apply the Copilot generated expression.
 
 :::image type="content" source="media/expressions-copilot/compose-ok-nl.png" alt-text="Screenshot of a suggested expression.":::
 
-### Scenario 3: Fix invalid expression using a button
+## Scenario 3: Fix an invalid expression using a button
 
 You can use the same experience to fix erroneous expressions. The following example shows an erroneous expression that has a missing parenthesis after 'Phone' [variables function opening parenthesis didn't close].  
 
