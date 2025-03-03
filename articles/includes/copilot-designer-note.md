@@ -1,2 +1,3 @@
 > [!NOTE]
-> Power Automate uses either the classic cloud flows designer or the cloud flows designer with Copilot. To identify which designer you’re using, go to the **Note** section in [Understand the cloud flows designer with copilot capabilities](../flows-designer.md).
+> - Power Automate uses either the classic cloud flows designer or the new modern designer with Copilot capabilities. To identify which designer you’re using, go to the **Note** section in [Explain the cloud flows designer](../flows-designer.md).
+> - When you switch between the classic and modern designer, you're asked to save your flow. You can't save and switch until all [errors](../error-checker.md) are resolved.
