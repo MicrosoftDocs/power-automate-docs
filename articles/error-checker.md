@@ -25,34 +25,32 @@ Flow Checker in Power Automate promotes higher quality flows by ensuring you fol
 
 For each issue the checker identifies, the checker points to specific occurrences within the flow where you should consider making improvements. And, you learn how to implement these improvements by following detailed guidance.
 
-The checker is always active, appearing in the command bar in the designer. The checker shows a red dot when it finds one or more errors, potential errors, or warnings in your flow.
-
-:::image type="content" source="./media/checker/checker-in-designer.png" alt-text="Flow checker":::
+The checker is always active, appearing in the command bar in the designer. 
 
 ## View errors or warnings in the checker
 
-While designing your flow, you can select the **Flow Checker** button to open the checker to view errors and warnings. 
+While designing your flow, you can select the **Flow Checker** button to open the checker to view errors and warnings.
 
-The checker also opens automatically when you save the flow if there are errors or warnings.  Once the checker opens, it shows all errors and warnings in your flow. In each section, the checker calls out the actions where the error or warning occurs. 
+The checker also opens automatically when you save the flow if there are errors or warnings. Once the checker opens, it shows all errors and warnings in your flow. In each section, the checker calls out the actions where the error or warning occurs. 
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
 # [Modern designer](#tab/modern-designer)
 
-1. Select the Flow Checker icon to run the checker. The checker shows you any errors or warnings in your flow.
+1. To run the checker, select the Flow Checker icon. The checker shows you any errors or warnings in your flow.
     
     :::image type="content" source="./media/checker/checker-in-new-designer.png" alt-text="Screenshot of Flow Checker in new designer.":::
     
-1. Select an error or warning to see more details about the issue.
+1. To see more details about the issue, select an error or warning the Flow Checker window.
     :::image type="content" source="./media/checker/error-in-new-designer.png" alt-text="Screenshot of the Flow Checker error tab in new designer.":::
 
 # [Classic designer](#tab/classic-designer)
 
-1. Select the Flow Checker icon to run the checker. The checker shows you any errors or warnings in your flow.
+1. To run the checker, select the Flow Checker icon. The Flow Checker icon shows a red dot when it finds one or more errors, potential errors, or warnings in your flow.
     
     :::image type="content" source="./media/checker/checker-in-classic-designer.png" alt-text="Screenshot of Flow Checker in classic designer.":::
     
-1. Select an error or warning to see more details about the issue.
+1. To see more details about the issue, select an error or warning the Flow Checker window.
     :::image type="content" source="./media/checker/error-in-classic-designer.png" alt-text="Screenshot of the Flow Checker error tab in classic designer.":::
 
 ---
