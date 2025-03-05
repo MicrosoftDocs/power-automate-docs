@@ -28,7 +28,7 @@ The checker also opens automatically when you save the flow if there are errors 
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-# [Modern designer](#tab/modern-designer)
+# [New designer](#tab/new-designer)
 
 The Flow Checker shows you errors or warnings in your flow. It also provides help to fix the errors and warnings in red on both the action panel and the flow card.
 
