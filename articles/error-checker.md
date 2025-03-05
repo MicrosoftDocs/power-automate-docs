@@ -44,10 +44,8 @@ The Flow Checker shows you errors or warnings in your flow. It also provides hel
     :::image type="content" source="./media/checker/checker-in-new-designer.png" alt-text="Screenshot of Flow Checker in new designer.":::
     
     The **Flow Checker** panel opens.
-1. To see more details about the issue, select an error or warning in the Flow Checker panel.
-    
 
-1. In the Flow Checker, select the error or warning and correct your error with the help of the red text from the checker. 
+1. In the Flow Checker panel, select the error or warning and correct your error with the help of the red text from the checker.
 
     :::image type="content" source="./media/checker/error-in-new-designer.png" alt-text="Screenshot of the Flow Checker panel in new designer.":::
 
