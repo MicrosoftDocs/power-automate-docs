@@ -20,7 +20,7 @@ search.audienceType:
 This article provides solutions and workarounds to fully or partially recover a deleted desktop flow.
 
 > [!NOTE]
-> The solutions and workarounds provided first in this article apply to users who sign in with [work or school accounts, or organization premium accounts](/power-automate/desktop-flows/requirements#sign-in-account-comparison). The last solution presented applies to users who sign in with [Microsoft personal accounts](/power-automate/desktop-flows/getting-started-msa).
+> The solutions and workarounds provided first in this article apply to users who sign in with [work or school accounts, or organization premium accounts](/power-automate/desktop-flows/requirements#sign-in-account-comparison). The last solution applies to users who sign in with [Microsoft accounts](/power-automate/desktop-flows/getting-started-msa).
 
 ## Fully restore a deleted desktop flow
 
