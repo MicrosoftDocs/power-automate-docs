@@ -64,7 +64,8 @@ Depending on your designer version, parameters appear in different locations.
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [Edit with Copilot](#tab
+-copilot)
 
 The parameter shows on the configuration panel to the left.
 

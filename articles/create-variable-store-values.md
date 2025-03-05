@@ -42,7 +42,8 @@ Before you can add actions for creating and working with variables, your flow mu
 
 ## Initialize a variable
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [Edit with Copilot](#tab
+-copilot)
 
 You can create a variable and declare its data type and initial value all within one action in your flow. You can only declare variables at the global level, not within scopes, conditions, and loops.
 
@@ -158,7 +159,8 @@ For example, this expression gets the items from the array variable by using the
 
 To increase or *increment* a variable by a constant value, add the **Increment variable** action to your flow.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [Edit with Copilot](#tab
+-copilot)
 
 This action works only with integer and float variables.
 
@@ -212,7 +214,8 @@ This action works only with integer and float variables.
 
 Variables are commonly used for counting the number of times that a loop runs. This example shows how to create and use variables for this task by creating a loop that counts the attachments in an email.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [Edit with Copilot](#tab
+-copilot)
 
 1. In Power Automate, create a cloud flow and add a trigger that checks for new email and any attachments.
 

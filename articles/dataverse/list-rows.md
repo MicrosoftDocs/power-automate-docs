@@ -21,7 +21,8 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 
 [!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [Edit with Copilot](#tab
+-copilot)
 
 1. Select the plus sign (**+**) > **Add an action**.
 1. On the **Add an action** sceen, enter **list rows** in the **Search** field.
@@ -48,7 +49,8 @@ When pagination is set and the amount of rows exceeds that number of the thresho
 
 [Content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) apply to ensure general service guarantees.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [Edit with Copilot](#tab
+-copilot)
 
 1. Select the **List rows** card.
 1. On the pane to the left, select the **Settings** tab > **Networking**.
@@ -72,7 +74,8 @@ When pagination is set and the amount of rows exceeds that number of the thresho
 
 The advanced options for the **List Rows** action allow you to sort, filter, arrange, and extend the results of a query.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [Edit with Copilot](#tab
+-copilot)
 
 You can set options inthe action configuration pane.
 
@@ -131,7 +134,8 @@ Use to indicate the specific number of rows for Dataverse to return. Here's an e
 
 [Aggregation queries](/powerapps/developer/data-platform/use-fetchxml-aggregation) aren't currently supported when using the **List rows** action with FetchXML queries. However, the distinct operator is supported.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [Edit with Copilot](#tab
+-copilot)
 
 Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML.
 
