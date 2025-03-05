@@ -45,13 +45,17 @@ The Flow Checker shows you errors or warnings in your flow. It also provides hel
     
     The **Flow Checker** panel opens.
 1. To see more details about the issue, select an error or warning in the Flow Checker panel.
-    :::image type="content" source="./media/checker/error-in-new-designer.png" alt-text="Screenshot of the Flow Checker error tab in new designer.":::
+    
 
 1. In the Flow Checker, select the error or warning and correct your error with the help of the red text from the checker. 
-    
+
+    :::image type="content" source="./media/checker/error-in-new-designer.png" alt-text="Screenshot of the Flow Checker panel in new designer.":::
+
    Alternatively, select the red error in the flow card to open the same window where you correct the error.
 
-1. Run the Flow Checker again. If there're no errors or warnings, you get a message in the Flow Checker panel that says "No errors found". We recommend that you test your flow to ensure it works as expected.
+    :::image type="content" source="./media/checker/select-error-in-new-designer.png" alt-text="Screenshot of selecting error in the Flow Checker panel in new designer.":::
+
+1. Run Flow Checker again. If there are no errors or warnings, you get a message in the Flow Checker panel that says *No errors found*. We recommend that you test your flow to ensure it works as expected.
 
 # [Classic designer](#tab/classic-designer)
 
@@ -62,12 +66,12 @@ The Flow Checker shows you errors or warnings in your flow. It also provides hel
     :::image type="content" source="./media/checker/checker-in-classic-designer.png" alt-text="Screenshot of Flow Checker in classic designer.":::
     
 1. To see more details about the issue, expand an error or warning in the Flow Checker panel. 
-1. In the Flow Checker panel, select the error or warning. For example, in the following screenshot the error is *'Message Id' is required*.
-    :::image type="content" source="./media/checker/error-in-classic-designer.png" alt-text="Screenshot of the Flow Checker error tab in classic designer.":::
+1. In the Flow Checker panel, select the error or warning. For example, in the following screenshot, the error is *'Message Id' is required*.
+    :::image type="content" source="./media/checker/error-in-classic-designer.png" alt-text="Screenshot of the Flow Checker panel in classic designer.":::
 
 1. Correct your error.
 
-1. Run the Flow Checker again. If there're no errors or warnings, we recommend that you test your flow to ensure it works as expected.
+1. Run Flow Checker again. If there are no errors or warnings, we recommend that you test your flow to ensure it works as expected.
 
 ---
 
