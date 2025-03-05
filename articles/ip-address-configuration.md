@@ -151,7 +151,7 @@ You should use the [Service Tags with an on-premises firewall](/azure/virtual-ne
 
 ## IP range for HTTP actions and OpenAPI
 
-For HTTP actions and OpenAPI, the IP ranges are as follows:
+For HTTP Connector action "HTTP and "HTTP + Swagger", the service tag "powerplatformplex" AND the IP ranges listed below need to be allow-listed:
 
 ```markdown
 "4.150.232.8/29",
