@@ -12,7 +12,7 @@ ms.subservice: cloud-flow
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/04/2015
+ms.date: 03/05/2025
 ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -27,9 +27,9 @@ For each issue the checker identifies, the checker points to specific occurrence
 
 The checker is always active, appearing in the command bar in the designer. 
 
-## View errors or warnings in the checker
+## Resolve errors and warnings
 
-While designing your flow, you can select the **Flow Checker** button to open the checker to view errors and warnings.
+While designing your flow, you can select **Flow Checker** to open the checker to view errors and warnings.
 
 The checker also opens automatically when you save the flow if there are errors or warnings. Once the checker opens, it shows all errors and warnings in your flow. In each section, the checker calls out the actions where the error or warning occurs. 
 
@@ -37,29 +37,39 @@ The checker also opens automatically when you save the flow if there are errors 
 
 # [Modern designer](#tab/modern-designer)
 
-1. To run the checker, select the Flow Checker icon. The checker shows you any errors or warnings in your flow.
+The Flow Checker shows you errors or warnings in your flow. It also provides help to fix the errors and warnings in red on both the action panel and the flow card.
+
+1. To run the checker, select **Flow Checker**. 
     
     :::image type="content" source="./media/checker/checker-in-new-designer.png" alt-text="Screenshot of Flow Checker in new designer.":::
     
-1. To see more details about the issue, select an error or warning the Flow Checker window.
+    The **Flow Checker** panel opens.
+1. To see more details about the issue, select an error or warning in the Flow Checker panel.
     :::image type="content" source="./media/checker/error-in-new-designer.png" alt-text="Screenshot of the Flow Checker error tab in new designer.":::
+
+1. In the Flow Checker, select the error or warning and correct your error with the help of the red text from the checker. 
+    
+   Alternatively, select the red error in the flow card to open the same window where you correct the error.
+
+1. Run the Flow Checker again. If there're no errors or warnings, you get a message in the Flow Checker panel that says "No errors found". We recommend that you test your flow to ensure it works as expected.
 
 # [Classic designer](#tab/classic-designer)
 
-1. To run the checker, select the Flow Checker icon. The Flow Checker icon shows a red dot when it finds one or more errors, potential errors, or warnings in your flow.
+The Flow Checker shows you errors or warnings in your flow. It also provides help to fix the errors and warnings in red on both the action panel and the flow card.
+
+1. To run the checker, select **Flow Checker**. It shows a red dot when it finds one or more errors, potential errors, or warnings in your flow.
     
     :::image type="content" source="./media/checker/checker-in-classic-designer.png" alt-text="Screenshot of Flow Checker in classic designer.":::
     
-1. To see more details about the issue, select an error or warning the Flow Checker window.
+1. To see more details about the issue, expand an error or warning in the Flow Checker panel. 
+1. In the Flow Checker panel, select the error or warning. For example, in the following screenshot the error is *'Message Id' is required*.
     :::image type="content" source="./media/checker/error-in-classic-designer.png" alt-text="Screenshot of the Flow Checker error tab in classic designer.":::
 
+1. Correct your error.
+
+1. Run the Flow Checker again. If there're no errors or warnings, we recommend that you test your flow to ensure it works as expected.
+
 ---
-
-## Learn to fix errors and warnings
-
-Expand each section to learn more about how to fix the errors or warnings.
-
-![Checker details.](media/checker/checker-detail.png "Checker details")
 
 ## More information
 
