@@ -30,8 +30,7 @@ You can use HTML to beautify your email. Following are two options that you can 
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-# [Edit with Copilot](#tab
--copilot) 
+# [New designer](#tab/new-designer)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 

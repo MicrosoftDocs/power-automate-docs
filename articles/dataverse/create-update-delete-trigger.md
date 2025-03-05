@@ -36,18 +36,17 @@ The following information is required to use the **When a row is added, modified
 
 [!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
 
-# [Edit with Copilot](#tab
--copilot)
+# [New designer](#tab/new-designer)
 
 In your flow, select the card for the **When a row is added, modified or deleted** trigger. A pane opens on the left with the **Parameters** tab selected.
 
-:::image type="content" source="../media/create-update-delete-trigger/trigger-ai.png" alt-text="Screenshot of ":::
+:::image type="content" source="../media/create-update-delete-trigger/trigger-ai.png" alt-text="Screenshot of the Parameters tab.":::
 
 # [Classic designer](#tab/classic-designer)
 
 Set the parameters directly on the card for the **When a row is added, modified or deleted** trigger.
 
-:::image type="content" source="../media/create-update-delete-trigger/trigger-current.png" alt-text="Screenshot of ":::
+:::image type="content" source="../media/create-update-delete-trigger/trigger-current.png" alt-text="Screenshot of parameters.":::
 
 ---
 
@@ -82,8 +81,7 @@ Here’s what each scope means:
 
 You can set additional properties to define more granularly when the flow runs and the user profile under which it runs.
 
-# [Edit with Copilot](#tab
--copilot)
+# [New designer](#tab/new-designer)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -141,8 +139,7 @@ When you create flows with the **When a row is added, modified or deleted** trig
 
 Follow these steps to impersonate a user.
 
-# [Edit with Copilot](#tab
--copilot)
+# [New designer](#tab/new-designer)
 
 For each Dataverse action that you want to run as a different user, select an option in the **Run as** dropdown menu.
 

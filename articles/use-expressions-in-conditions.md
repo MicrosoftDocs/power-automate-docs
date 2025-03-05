@@ -79,8 +79,7 @@ Let's create the flow.
 
 ## Select the spreadsheet and get all rows
 
-# [Edit with Copilot](#tab
--copilot)
+# [New designer](#tab/new-designer)
 
 1. Ask Copilot to create a flow for you. Please type the following prompt in Copilot:
 
@@ -125,8 +124,7 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
 ## Check the status column of each row
 
-# [Edit with Copilot](#tab
--copilot)
+# [New designer](#tab/new-designer)
 
 1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
 
@@ -174,8 +172,7 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
 ## Delete matching rows from the spreadsheet
 
-# [Edit with Copilot](#tab
--copilot)
+# [New designer](#tab/new-designer)
 
 1. Select **Add an action** on the **If yes** branch of the condition.
 
