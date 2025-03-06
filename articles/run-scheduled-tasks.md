@@ -47,7 +47,7 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 
 ## Configure advanced options
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 The steps to configure an action in the cloud flows designer with Copilot are identical to the classic cloud flows designer. However, if you have access to Copilot, you can simply ask Copilot to create a scheduled flow. For example, you can ask by typing the following prompt:
 

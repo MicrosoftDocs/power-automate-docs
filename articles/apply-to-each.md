@@ -56,11 +56,11 @@ For detailed information about using SharePoint with Power Automate, go to the [
 
 ## Create a cloud flow
 
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
+# [New designer](#tab/new-designer)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
-1. Try asking Copilot to create a flow by typing this prompt: 
+1. Try asking Copilot to create a flow by typing this prompt:
 
     **Every 15 minutes, Get top 10 unread emails and get my manager. If the email is from my manager OR the email is Important and subject contains 'meet now', send me a push notification to my phone.**
 
