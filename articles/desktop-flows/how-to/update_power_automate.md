@@ -23,11 +23,9 @@ This article provides guidance on upgrading or downgrading Power Automate for de
 
 ## Update Power Automate
 
-Learn how to [install Power Automate](../install.md) and [install Power Automate silently](../install-silently.md).  
+Learn how to [install Power Automate](../install.md), including options for [silent installation](../install-silently.md). You can [manage manual updates and update notifications](../console.md#update-power-automate-for-desktop) through the [Power Automate for desktop console](../console.md) and the machine-runtime app.
 
-[Manage manual updates and update notifications](../console.md#update-power-automate-for-desktop) through the [Power Automate for desktop console](../console.md) and machine-runtime app.  
-
-A registry key is available to prevent users from manually updating Power Automate and receiving update notifications. Learn more in [Prevent users manually updating Power Automate for desktop](../governance.md#prevent-users-manually-updating-power-automate-for-desktop).
+To prevent users from manually updating Power Automate and receiving update notifications, a registry key is available. Learn more in [Prevent users manually updating Power Automate for desktop](../governance.md#prevent-users-manually-updating-power-automate-for-desktop).
 
 ### Backward compatibility
 
