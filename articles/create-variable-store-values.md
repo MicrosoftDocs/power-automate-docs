@@ -203,7 +203,7 @@ This action works only with integer and float variables.
 
    Example:
 
-    :::image type="content" source="./media/create-variables-store-values/increment-variable-action-information.png" alt-text="Screenshot of the Increment variable action example.":::
+    :::image type="content" source="./media/create-variables-store-values/increment-variable-action-information-classic.png" alt-text="Screenshot of the Increment variable action example.":::
 
 1. When you're done, on the designer toolbar, select **Save**.
 
