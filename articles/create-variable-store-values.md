@@ -5,7 +5,7 @@ suite: flow
 author: kisubedi
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 03/06/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -42,7 +42,7 @@ Before you can add actions for creating and working with variables, your flow mu
 
 ## Initialize a variable
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New Designer](#tab/new-designer)
 
 You can create a variable and declare its data type and initial value all within one action in your flow. You can only declare variables at the global level, not within scopes, conditions, and loops.
 
@@ -158,9 +158,10 @@ For example, this expression gets the items from the array variable by using the
 
 To increase or *increment* a variable by a constant value, add the **Increment variable** action to your flow.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+> [!NOTE]
+> The **Increment variable** action works only with integer and float variables.
 
-This action works only with integer and float variables.
+# [New Designer](#tab/new-designer)
 
 1. In the Power Automate designer, under the step where you want to increase an existing variable, select the plus sign (**+**).
 
@@ -178,7 +179,7 @@ This action works only with integer and float variables.
 
    Example:
 
-    :::image type="content" source="./media/create-variables-store-values/increment-variable-action-information.png" alt-text="Screenshot of the Increment variable action example.":::
+    :::image type="content" source="./media/create-variables-store-values/increment-variable-action-information-modern-designer.png" alt-text="Screenshot of the Increment variable action example.":::
 
 1. When you're done, select **Save** on the designer toolbar.
 
@@ -212,11 +213,11 @@ This action works only with integer and float variables.
 
 Variables are commonly used for counting the number of times that a loop runs. This example shows how to create and use variables for this task by creating a loop that counts the attachments in an email.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New Designer](#tab/new-designer)
 
 1. In Power Automate, create a cloud flow and add a trigger that checks for new email and any attachments.
 
-   This example uses the Office 365 Outlook trigger for **When a new email arrives**. You can set up this trigger to fire only when the email has attachments. However, you can use any connector that checks for new emails with attachments, such as the Outlook.com connector.
+   This example uses the Office 365 Outlook trigger for **When a new email arrives (V3)**. You can set up this trigger to fire only when the email has attachments. However, you can use any connector that checks for new emails with attachments, such as the Outlook.com connector.
 
 1. In the trigger, to check for attachments and pass those attachments into your flow, select **Yes** for these properties:
 
@@ -231,10 +232,9 @@ Variables are commonly used for counting the number of times that a loop runs. T
 1. Add an *apply to each* loop to cycle through the attachments.
 
    1. Under the **Initialize variable** action, select **New step**.
-   1. Under **Choose an action**, select **Built-in**.
    1. In the search box, enter **apply to each** as your search filter, and select **Apply to each**.
 
-    :::image type="content" source="./media/create-variables-store-values/copilot-add-loop.png" alt-text="Screenshot of adding an Apply to each - Control loop.":::
+    :::image type="content" source="./media/create-variables-store-values/copilot-add-loop-new-designer.png" alt-text="Screenshot of adding an Apply to each - Control loop.":::
 
 1. In the loop, select inside the **Select an output from previous steps** box. When the dynamic content list appears, select **Attachments**.
 
@@ -251,16 +251,15 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 1. Under the loop, add any action that sends you the number of attachments. In your action, include the value from the **Count** variable, for example:
 
-    :::image type="content" source="./media/create-variables-store-values/copilot-send-email-results.png" alt-text="Screenshot of adding an action that sends results.":::
+    :::image type="content" source="./media/create-variables-store-values/copilot-send-email-results-new-designer.png" alt-text="Screenshot of adding an action that sends results.":::
 
 1. On the designer toolbar, select **Save**.
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
 # [Classic designer](#tab/classic-designer)
 
 1. In Power Automate, create a cloud flow and add a trigger that checks for new email and any attachments.
 
-   This example uses the Office 365 Outlook trigger for **When a new email arrives**. You can set up this trigger to fire only when the email has attachments. However, you can use any connector that checks for new emails with attachments, such as the Outlook.com connector.
+   This example uses the Office 365 Outlook trigger for **When a new email arrives (V3)**. You can set up this trigger to fire only when the email has attachments. However, you can use any connector that checks for new emails with attachments, such as the Outlook.com connector.
 
 1. In the trigger, to check for attachments and pass those attachments into your flow, select **Yes** for these properties:
 
@@ -275,7 +274,6 @@ Variables are commonly used for counting the number of times that a loop runs. T
 1. Add an *apply to each* loop to cycle through the attachments.
 
    1. Under the **Initialize variable** action, select **New step**.
-   1. Under **Choose an action**, select **Built-in**.
    1. In the search box, enter **apply to each** as your search filter, and select **Apply to each**.
 
     :::image type="content" source="./media/create-variables-store-values/add-loop.png" alt-text="Screenshot of adding an Apply to each - Control loop.":::
@@ -293,9 +291,9 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 1. In the **Increment variable** action, from the **Name** list, select the **Count** variable.
 
-1. Under the loop, add any action that sends you the number of attachments. In your action, include the value from the **Count** variable, for example:
+1. Under the loop, add any action that sends you the number of attachments. In your action, include the value from the **Count** variable. For example, in the following screenshot, the **Send an email (V2)** action sends the number of attachments:
 
-    :::image type="content" source="./media/create-variables-store-values/send-email-results.png" alt-text="Screenshot of adding an action that sends results in Copilot.":::
+    :::image type="content" source="./media/create-variables-store-values/send-email-results-classic-designer.png" alt-text="Screenshot of adding an action that sends results in Copilot.":::
 
 1. On the designer toolbar, select **Save**.
 
