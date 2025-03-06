@@ -14,6 +14,7 @@ search.audienceType:
 
 > [!NOTE]
 > Test Drives is deprecated. As an alternative to Test Drives, we encourage you to consider transitioning to Free Trials, which allows you to fully engage with your product using your personalized settings and configurations to meet your specific requirements.
+>
 > We recommend that you remove Test Drives from your offers and clean up your test drive environments.
 
 Do you want to show off how your app integrates with Power Automate? We now Test Drive solutions on [AppSource.com](https://appsource.microsoft.com) as a way for you to share Power Automate integration with customers, and generate leads for your business.
