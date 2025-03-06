@@ -240,7 +240,7 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
    The **Attachments** property passes an array, which has all email attachments from the email, into your loop.
 
-1. In the **Apply to each** loop, select **Add an action**.
+1. In the **Apply to each** loop, select the plus sign (+) for **Add an action**.
 1. In the search box, enter **increment variable** as your filter.
 1. From the actions list, select **Increment variable**.
 
@@ -249,7 +249,7 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 1. In the **Increment variable** action, from the **Name** list, select the **Count** variable.
 
-1. Under the loop, add any action that sends you the number of attachments. In your action, include the value from the **Count** variable, for example:
+1. Under the loop, add any action that sends you the number of attachments. In your action, include the value from the **Count** variable. For example, in the following screenshot, **Send an email (V2)** sends the number of attachments:
 
     :::image type="content" source="./media/create-variables-store-values/copilot-send-email-results-new-designer.png" alt-text="Screenshot of adding an action that sends results.":::
 
@@ -291,7 +291,7 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 1. In the **Increment variable** action, from the **Name** list, select the **Count** variable.
 
-1. Under the loop, add any action that sends you the number of attachments. In your action, include the value from the **Count** variable. For example, in the following screenshot, the **Send an email (V2)** action sends the number of attachments:
+1. Under the loop, add any action that sends you the number of attachments. In your action, include the value from the **Count** variable. For example, in the following screenshot, **Send an email (V2)** sends the number of attachments:
 
     :::image type="content" source="./media/create-variables-store-values/send-email-results-classic-designer.png" alt-text="Screenshot of adding an action that sends results in Copilot.":::
 
