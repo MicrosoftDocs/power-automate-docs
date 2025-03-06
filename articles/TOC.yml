@@ -656,8 +656,8 @@
         href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
       - name: Troubleshoot SQL queries
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
-    - name: Upgrade/downgrade Power Automate
-      href: ./desktop-flows/how-to/upgrade_downgrade_power_automate.md
+    - name: Upgrade Power Automate
+      href: ./desktop-flows/how-to/update_power_automate.md
     - name: Configure connection strings for database related actions
       href: ./desktop-flows/how-to/configure-connection-strings-for-db-actions.md
     - name: Configure proxy settings
