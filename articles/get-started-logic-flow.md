@@ -31,7 +31,7 @@ Create a cloud flow that performs one or more tasks automatically after it's tri
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 Using Copilot, you can use natural language to create a flow.
 
