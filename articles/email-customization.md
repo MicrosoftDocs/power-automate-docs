@@ -30,6 +30,14 @@ You can use HTML to beautify your email. Following are two options that you can 
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
+# [New designer](#tab/new-designer)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+In the Edit with Copilot designer, you can simply format the email body with rich controls like bold, italics, headers, and more.
+
+:::image type="content" source="./media/email/copilot-format.png" alt-text="Screenshot of the formatting options in the body.":::
+
 # [Classic designer](#tab/classic-designer)
 
 ### Option 1: Write HTML directly into the flow
@@ -58,14 +66,6 @@ Alternatively, if you don't know&mdash;or don't feel like playing with&mdash;HTM
 1. Back in [Power Automate](https://make.powerautomate.com), select the **\</\>** button in the rich text editor of the **Send an email (V2)** action, and then paste the contents that you copied from Outlook.
 1. Select **Save** at the bottom of the flow steps to save your flow.
 1. Be sure to test your flow to confirm that it works as intended.
-
-# [Edit with Copilot](#tab/edit-with-copilot) 
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
-In the Edit with Copilot designer, you can simply format the email body with rich controls like bold, italics, headers, and more.
-
-:::image type="content" source="./media/email/copilot-format.png" alt-text="Screenshot of the formatting options in the body.":::
 
 ---
 
