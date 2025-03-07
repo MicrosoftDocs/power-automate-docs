@@ -97,7 +97,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for GCC). |
 
 > [!NOTE]
-> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. Learn more about namespace endpoints in [Allow list of namespaces endpoints required for desktop flows runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-desktop-flows-runtime).
+> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. Learn more about namespace endpoints in [Allowlist of namespaces endpoints required for desktop flows runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-desktop-flows-runtime).
 
 ### US Government endpoints for desktop flows runtime
 
@@ -151,7 +151,7 @@ You should use the [Service Tags with an on-premises firewall](/azure/virtual-ne
 
 ## IP range for HTTP actions and OpenAPI
 
-For HTTP Connector action "HTTP and "HTTP + Swagger", the service tag "powerplatformplex" AND the IP ranges listed below need to be allow-listed:
+For the HTTP Connector actions **HTTP** and **HTTP + Swagger**, allowlist the **powerplatformplex** service tag and the following IP ranges:
 
 ```markdown
 "4.150.232.8/29",
