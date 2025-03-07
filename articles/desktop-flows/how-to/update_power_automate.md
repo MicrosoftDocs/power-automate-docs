@@ -1,7 +1,6 @@
 ---
 title: Update or roll back Power Automate for desktop
-description: Learn how to update or roll back Power Automate for desktop and the machine runtime app. Address compatibility concerns and manage updates seamlessly.
-#customer intent: As a flowmaker, I want to prevent users from manually updating Power Automate so that I can maintain a stable environment.
+description: Learn how to update or roll back Power Automate for desktop and the machine runtime app. Address compatibility issues and manage updates seamlessly.
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: how-to
