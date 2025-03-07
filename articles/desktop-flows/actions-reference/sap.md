@@ -121,6 +121,27 @@ Creates a new SAP session based on the same SAP instance.
 |-----|-----|
 |Create new SAP session action fails |Indicates a problem creating a new SAP session.|
 
+## <a name="selectnavigationbaritem"></a> Select SAP navigation item
+
+Select a SAP menu item in the application toolbar of the SAP window.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|`SAPInstance`|No|SAP instance|Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
+|Navigation item name|No|[Text value](../variable-data-types.md#text-value)||The name of the item in the navigation toolbar to be selected, such as 'System'. Also, you can specify an option from a sub menu by using the '>' symbol to indicate the parent-child relationship. For example, 'Program> Execute' means that the 'Execute' option is selected which is part of the sub menu under 'Program'.|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="selectnavigationbaritem_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|SAP GUI select navigation toolbar item error |Indicates a problem selecting a navigation toolbar item.|
+
 ## <a name="sapselectmenuitem"></a> Select SAP menu item
 
 Select an SAP menu item in the window tool bar. Enter the name of the item in the respective input parameter manually, in the same language as the SAP GUI screen is being displayed.
