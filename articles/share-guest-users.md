@@ -2,7 +2,7 @@
 title: Support for guest users
 description: Learn support scenarios for guest users, including how to create, share, and approve flows.
 author: natalie-pienkowska
-ms.date: 07/09/2023
+ms.date: 03/07/2025
 ms.custom: 
 ms.topic: conceptual
 ms.author: lali
