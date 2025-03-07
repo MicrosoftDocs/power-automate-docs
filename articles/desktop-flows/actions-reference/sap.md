@@ -4,7 +4,7 @@ description: Learn about the available SAP automation actions in Power Automate 
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/03/2024
+ms.date: 03/07/2025
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -123,14 +123,14 @@ Creates a new SAP session based on the same SAP instance.
 
 ## <a name="selectnavigationbaritem"></a> Select SAP navigation item
 
-Select a SAP menu item in the application toolbar of the SAP window.
+Select an SAP menu item in the application toolbar of the SAP window.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance|Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
-|Navigation item name|No|[Text value](../variable-data-types.md#text-value)||The name of the item in the navigation toolbar to be selected, such as 'System'. Also, you can specify an option from a sub menu by using the '>' symbol to indicate the parent-child relationship. For example, 'Program> Execute' means that the 'Execute' option is selected which is part of the sub menu under 'Program'.|
+|`SAPInstance`|No|SAP instance|Select the variable that holds the SAP instance you want to work with. Define this variable in a previous SAP login action.
+|Navigation item name|No|[Text value](../variable-data-types.md#text-value)||The name of the item in the navigation toolbar to select, such as 'System'. You can also specify an option from a submenu by using the '>' symbol to indicate the parent-child relationship. For example, 'Program > Execute' means that the 'Execute' option, which is part of the submenu under 'Program', is selected.|
 
 ### Variables produced
 
