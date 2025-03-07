@@ -1,6 +1,7 @@
 ---
-title: Update Power Automate for desktop
-description: Learn how to update Power Automate for desktop and the machine runtime app. Address compatibility concerns and manage updates seamlessly.
+title: Update or roll back Power Automate for desktop
+description: Learn how to update or roll back Power Automate for desktop and the machine runtime app. Address compatibility concerns and manage updates seamlessly.
+#customer intent: As a flowmaker, I want to prevent users from manually updating Power Automate so that I can maintain a stable environment.
 author: PetrosFeleskouras
 ms.subservice: desktop-flow
 ms.topic: how-to
@@ -17,9 +18,9 @@ ms.custom:
   - ai-gen-description
   - ai-seo-date:03/06/2025
 ---
-# Update Power Automate for desktop
+# Update or roll back Power Automate for desktop
 
-This article provides guidance on upgrading or downgrading Power Automate for desktop and the machine runtime app, and addresses compatibility concerns.
+This article provides guidance on updating or rolling back Power Automate for desktop and the machine runtime app, and addresses compatibility concerns.
 
 ## Update Power Automate
 
@@ -29,7 +30,7 @@ To prevent users from manually updating Power Automate and receiving update noti
 
 ### Backward compatibility
 
-Power Automate maintains backward compatibility, ensuring that users who upgrade to the latest version retain functionality and access to their previous work. Newer versions of the software are designed to operate seamlessly with desktop flows created with older versions.
+Power Automate maintains backward compatibility, ensuring that users who update to the latest version retain functionality and access to their previous work. Newer versions of the software are designed to operate seamlessly with desktop flows created with older versions.
 
 Desktop flows are stored in the **Process** Dataverse table and aren't affected by software updates.  
 
@@ -48,15 +49,15 @@ Determine the version associated with a desktop flow:
 
 The **clientversion** property in the **Metadata** column shows the last Power Automate for desktop version used to save the flow.
 
-:::image type="content" source="media/upgrade_downgrade_power_automate/process_dataverse_table.png" alt-text="Screenshot of the Process Dataverse table showing desktop flows and their metadata." lightbox="media/upgrade_downgrade_power_automate/process_dataverse_table.png":::
+:::image type="content" source="media/update_power_automate/process_dataverse_table.png" alt-text="Screenshot of the Process Dataverse table showing desktop flows and their metadata." lightbox="media/update_power_automate/process_dataverse_table.png":::
 
-## Downgrade Power Automate  
+## Roll back Power Automate  
 
-Downgrading Power Automate isn't supported. The latest version is always installed when you download using an [MSI installer](../install.md#install-power-automate-using-the-msi-installer) or from [Microsoft Store](../install.md#install-power-automate-from-microsoft-store).
+Rolling back Power Automate isn't supported. The latest version is always installed when you download using an [MSI installer](../install.md#install-power-automate-using-the-msi-installer) or from [Microsoft Store](../install.md#install-power-automate-from-microsoft-store).
 
 > [!IMPORTANT]
 > - If you require access to an older version for business continuity purposes, contact Microsoft Support.
-> - To downgrade Power Automate, you're required to uninstall the current version before installing the desired one.
+> - To roll back Power Automate, you're required to uninstall the current version before installing the desired one.
 
 ### Forward compatibility
 
