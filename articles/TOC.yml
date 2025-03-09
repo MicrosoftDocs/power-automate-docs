@@ -83,7 +83,7 @@
           href: change-cloud-flow-owner.md
         - name: Restore deleted flows
           href: how-tos-restore-deleted-flow.md
-        - name: Use solutions for ALM
+        - name: Export and import solution-aware flows for ALM
           items:
           - name: Overview
             href: overview-solution-flows.md
@@ -100,6 +100,8 @@
             href: edit-solution-aware-flow.md
           - name: Remove a solution-aware flow
             href: remove-solution-aware-flow.md
+          - name: Set up Application Insights with Power Automate
+            href: /power-platform/admin/app-insights-cloud-flow.md
     - name: Troubleshoot
       items:
       - name: Troubleshoot common issues with triggers

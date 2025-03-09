@@ -42,7 +42,7 @@ Before you can add actions for creating and working with variables, your flow mu
 
 ## Initialize a variable
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 You can create a variable and declare its data type and initial value all within one action in your flow. You can only declare variables at the global level, not within scopes, conditions, and loops.
 
@@ -158,7 +158,7 @@ For example, this expression gets the items from the array variable by using the
 
 To increase or *increment* a variable by a constant value, add the **Increment variable** action to your flow.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 This action works only with integer and float variables.
 
@@ -181,7 +181,6 @@ This action works only with integer and float variables.
     :::image type="content" source="./media/create-variables-store-values/increment-variable-action-information.png" alt-text="Screenshot of the Increment variable action example.":::
 
 1. When you're done, select **Save** on the designer toolbar.
-
 
 # [Classic designer](#tab/classic-designer)
 
@@ -212,7 +211,7 @@ This action works only with integer and float variables.
 
 Variables are commonly used for counting the number of times that a loop runs. This example shows how to create and use variables for this task by creating a loop that counts the attachments in an email.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. In Power Automate, create a cloud flow and add a trigger that checks for new email and any attachments.
 
@@ -278,7 +277,7 @@ Variables are commonly used for counting the number of times that a loop runs. T
    1. Under **Choose an action**, select **Built-in**.
    1. In the search box, enter **apply to each** as your search filter, and select **Apply to each**.
 
-    :::image type="content" source="./media/create-variables-store-values/add-loop.png" alt-text="Screenshot of adding an Apply to each - Control loop.":::
+    :::image type="content" source="./media/create-variables-store-values/add-loop.png" alt-text="Screenshot of adding an Apply to each loop to cycle through the attavhments.":::
 
 1. In the loop, select inside the **Select an output from previous steps** box. When the dynamic content list appears, select **Attachments**.
 
