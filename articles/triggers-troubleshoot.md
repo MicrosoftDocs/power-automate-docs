@@ -99,7 +99,7 @@ Sometimes, the inputs and trigger conditions may cause failures. Follow these st
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Edit the flow.
@@ -176,7 +176,7 @@ See the following table to understand how your flow responds when it's turned ba
 
 Follow these steps to determine the type of trigger that your flow uses.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. In the action configfuration pane to the left, select **Code View**.
 1. Find the `recurrence` section with an interval `frequency` element. If this section is available, the trigger is a *polling* trigger.
@@ -221,7 +221,7 @@ And, if your license is the **Flow for Office 365** plan (from your Enterprise l
 
 Follow these steps to check the trigger wake up frequency.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. On your flow, select your flow trigger.
 1. Select **Code View**.

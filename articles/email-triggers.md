@@ -56,7 +56,7 @@ Although this tutorial sends a push notification, you're free to use any other a
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. Simply ask Copilot to create your flow by typing the following prompt:
 
@@ -97,7 +97,7 @@ Congratulations! You now receive a push notification each time you receive an em
 
 In this tutorial, you create a cloud flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as Read.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. Simply ask Copilot to create your flow by typing the following prompt:
 
@@ -135,7 +135,7 @@ If you have rules that route emails to different folders based on certain proper
 > [!NOTE]
 > If you don't already have a rule that routes email to a folder other than your inbox, create such a rule and confirm it works by sending a test email.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. Simply ask Copilot to create your flow by typing :
 

@@ -29,7 +29,7 @@ You can turn on email notifications for the form's owners in your form settings.
 
 [!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. Ask Copilot to create your flow by typing the following prompt:
 
@@ -72,7 +72,7 @@ We start with a prebuilt template and customize it to help our managers plan for
 
 You can turn on email receipts for respondents in your form settings. If you want to customize the email they receive, use Power Automate.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. Ask Copilot to create your flow by typing the following prompt:
 
@@ -100,7 +100,7 @@ Follow the steps to [send an email when there's a new form response](#send-an-em
 
 In this example, we'll start with another prebuilt template and customize it to create a vacation approval request.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -163,7 +163,7 @@ For more examples of approval flows, go to [Manage sequential approvals](../sequ
 
 In this example, you create a flow from blank. Continuing with the scenario from our earlier examples, we'll use the flow to record employees' names and vacation dates in an Excel table when they submit their summer vacation form.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. Create an Excel sheet if it doesn't already exist.
 1. From within the designer, simply ask copilot to create your flow by typing the the following prompt:
