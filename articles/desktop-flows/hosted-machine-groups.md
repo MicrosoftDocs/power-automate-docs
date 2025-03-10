@@ -112,7 +112,7 @@ To create a hosted machine group:
 
     - Select the **VM image** to use for your hosted machine group. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
-    - Select the **network connection (preview) (optional)** to use for your hosted machine group.
+    - Select the **Network connection (optional)** to use for your hosted machine group.
 
     - Select how you would like to **access** your hosted machine group. You can use your [work or school account](#use-your-work-or-school-account) or use a local admin account you want created. This account is used to run your automations by the bots.
 
@@ -250,47 +250,72 @@ The last step before using your image in Power Automate is to share the image wi
 > [!NOTE]
 > When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
 
-## Use a custom virtual network for your hosted machine groups (preview)
-
-[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
+## Use a custom virtual network for your hosted machine groups
 
 You can connect to your own virtual network with your hosted machine groups to securely communicate with each other, the Internet, and on-premises networks. Providing your own virtual network from your Azure subscription allows your hosted machine groups to be provisioned with your virtual network automatically.
 
-[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
-
 > [!NOTE]
 > You can have up to 30 custom virtual networks configured per tenant.
-
-### Known issues
-
-- **Issue:** When using a hosted machine group with a custom network connection, the network connection field in the hosted machine group details page might show as blank. This is a cosmetic issue. Functionality of the hosted machine group is not affected.
-
-    **Workaround:** In the machines page on the Power Automate portal, go to the network connections tab. Select the network connection that you created. From the network connection details page, you can see the hosted machine groups that are using the network connection.
 
 ### General network requirements
 
 To use your own network and provision Microsoft Entra joined hosted machine groups, you must meet the following requirements:
 
-- You must have a virtual network in your Azure subscription in the same region where you created the hosted machines.
+- You must have a virtual network in your Azure subscription in the same region where you created the hosted machine groups.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
 - A subnet within the virtual network and available IP address space.
 - [Allow network connectivity](/power-automate/ip-address-configuration#desktop-flows-services-required-for-runtime) to required services.
 
 The virtual network needs to be created in the same location as your hosted machine groups. Following are the currently supported Power Platfrom geographies and their region mapping:
 
-- Asia: East Asia
-- Australia: Australia East
-- Brazil: Brazil South
-- Canada: Canada Central
-- Europe: North Europe
-- India: Central India
-- Japan: Japan East
-- United States: East US
-- United Kingdom: UK South
+    - Asia: East Asia
+    - Australia: Australia East
+    - Brazil: Brazil South
+    - Canada: Canada Central
+    - Europe: North Europe
+    - France: France Central
+    - Germany: Germany West Central
+    - India: Central India
+    - Japan: Japan East
+    - Korea: Korea Central
+    - Norway: Norway East
+    - South Africa: South Africa North
+    - Singapore: Southeast Asia (Allowlisted tenants only)
+    - Switzerland: Switzerland North
+    - United Arab Emirates: UAE North
+    - United Kingdom: UK South
+    - United States: East US
 
+### Additional requirements for Microsoft Entra hybrid joined hosted machines groups (preview)
 
-> [!NOTE]
-> We are continuing to roll out support to more Power Platform geographies. Please send your request to hostedrpa@microsoft.com if you have a specific request.
+[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
+
+Microsoft Entra hybrid join using custom virtual networks (VNETs) with hosted machine groups allows your hosted machine group bots to enroll in both your on-premises Active Directory (AD) and Microsoft Entra ID. This feature is useful in scenarios where automation requires authentication using an AD account, or when devices need to be managed using Group Policy (GPO).
+
+[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+
+To use your own network and provision Microsoft Entra hybrid joined machines, you must meet the following requirements:
+
+#### Domain requirements
+
+- You must configure your infrastructure to automatically Microsoft Entra hybrid join any devices that domain joins to the on-premises Active Directory. This [configuration lets them be recognized and managed in the cloud](/azure/active-directory/devices/overview).
+- Microsoft Entra hybrid joined hosted machines require network line of sight to your on-premises domain controllers periodically. Without this connection, devices become unusable. For more information, see [Plan your Microsoft Entra hybrid join deployment](/azure/active-directory/devices/hybrid-join-plan).
+- If an organizational unit is specified, ensure it exists and is valid.
+- An Active Directory user account with sufficient permissions to join the computer into the specified organizational unit within the Active Directory domain. If you don't specify an organizational unit, the user account must have sufficient permissions to join the computer to the Active Directory domain.
+- User accounts that are creators of hosted machines must have a synced identity available in both Active Directory and Microsoft Entra ID.
+
+#### Role and identity requirements
+
+Hosted machine groups users must be configured with [hybrid identities](/azure/active-directory/hybrid/whatis-hybrid-identity) so that they can authenticate with resources both on-premises and in the cloud.
+
+#### DNS requirements
+
+As part of the Microsoft Entra hybrid join requirements, your hosted machine groups must be able to join on-premises Active Directory. That requires that the hosted machine groups be able to resolve DNS records for your on-premises AD environment.
+Configure your Azure Virtual Network where the hosted machine groups are provisioned as follows:
+
+1. Make sure your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
+1. From the Azure Virtual Network's Settings, select DNS Servers and then choose Custom.
+1. Enter the IP address of DNS servers that environment that can resolve your AD DS domain.
 
 ### Share the virtual network with Power Automate Hosted Machine Groups service principal
 
