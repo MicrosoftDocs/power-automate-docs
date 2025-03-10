@@ -220,7 +220,7 @@ You can personalize your hosted machines by providing your own Windows image dir
 - Japan: Japan East
 - Korea: Korea Central
 - Norway: Norway East
-- Southeast Asia: Singapore
+- Singapore: Southeast Asia (Allowlisted tenants only)
 - Switzerland: Switzerland North
 - United Arab Emirates: UAE North
 - United Kingdom: UK South
@@ -336,7 +336,7 @@ The virtual network needs to be created in the same location as your hosted mach
 - Japan: Japan East
 - Korea: Korea Central
 - Norway: Norway East
-- Southeast Asia - Singapore
+- Singapore: Southeast Asia (Allowlisted tenants only)
 - Switzerland: Switzerland North
 - United Arab Emirates: UAE North
 - United Kingdom: UK South
@@ -599,7 +599,7 @@ The following list displays all the supported Power Platform geographies in the 
 - Japan 
 - Korea
 - Norway
-- Southeast Asia
+- Singapore (Allowlisted tenants only)
 - Switzerland
 - United Arab Emirates
 - United Kingdom
