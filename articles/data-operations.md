@@ -140,6 +140,11 @@ This example creates a new array that contains only objects in which `first` is 
     >![Screenshot of in the From section, the first line is set to Body. In the second line, first is set equal to Eugenia.](./media/data-operations/add-configure-filter-array-2.png "Configure the Filter array")
 1. Save, and then run your flow.
 
+`Body` will now just contain the following array item as a result:
+``` JSON
+[ { "first": "Eugenia", "last": "Lopez" } ]
+```
+
 ## Use the create CSV table action
 
 Use the **Create CSV table - Data Operation** action to change a JSON array input into a comma-separated value (CSV) table. You can keep the headers visible in the CSV output. In this example, you convert the following array into a CSV table:
