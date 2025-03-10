@@ -314,7 +314,7 @@ Configure your Azure Virtual Network where the hosted machine groups are provisi
 
 1. Ensure your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
 1. From the Azure Virtual Network's Settings, select **DNS Servers** and then choose **Custom**.
-1. Enter the IP address of DNS servers that can resolve your Active Directory DNS domain.
+1. Enter the IP address of DNS servers that can resolve your Active Directory DS domain.
 
 ### Share the virtual network with Power Automate Hosted Machine Groups service principal
 
