@@ -87,7 +87,7 @@ You can use Copilot to create the flow for you, or create it manually.
 
 1. Ask Copilot to create a flow for you. Type the following prompt in Copilot:
 
-    **Every week, list rows in a Excel table and if the Status column equals Succeeded or claim manager's email is jake@contoso.com, delete Excel row**
+    **Every week, list rows in an Excel table, and if the Status column equals Succeeded or claim manager's email is jake@contoso.com, delete Excel row.**
 
 1. Select **Submit** ![Screenshot of the Submit button.](./media/use-expressions-in-conditions/submit.png).
 
