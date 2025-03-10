@@ -586,6 +586,8 @@ By default, users with the **Environment Maker** role can create hosted machine 
 - Flow Machine
 - Flow Machine Group
 - Flow Machine Image
+- Flow Machine Network (if using custom virtual network for your hosted machine groups)
+
 
 :::image type="content" source="media/hosted-machine-groups/environment-maker-role.png" alt-text="Screenshot of the permissions for the Environment Maker role.":::
 
