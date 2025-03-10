@@ -1,40 +1,31 @@
 ---
 title: IP address configuration
-description: Learn about IP address configuration, the services that Power Automate connect to, various endpoints, and more.
+description: Learn about IP address configuration required to use Power Automate, the services that Power Automate connects to, various endpoints, and more.
 author: samathur
 contributors:
   - samathur
-  - ChrisGarty
-  - GiovanniBenitez
-  - DBEKI
-  - GiovanniBenitez
-  - nnyarbro
   - v-aangie
-  - jpapadimitriou
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 03/07/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 ---
+# Allow flows to call your services
+## Allow Connector calls to your services
+Power Automate flows comprise of actions. Actions can utilize both “Connector actions” and native actions such as “HTTP/ HTTP + Swagger”. This section describes the firewall configuration required to enable the “Connector Actions” to call services hosted in your network. 
+Please note this configuration is only needed if you're restricting inbound or outbound IP addresses on your network (for example, through a firewall).
+Configuration required:
+•	Allow-list the **AzureConnectors** service tag
 
-# IP address configuration
+## Allow list HTTP/ HTTP + Swagger calls to your services
+For flows consisting of actions including HTTP/ HTTP + Swagger, add the network configuration to allow ALL of the following
+1.	LogicApps service tag
+2.	PowerPlatformPlex service tag
+3.	[IP range for HTTP or HTTP + Swagger](#ip-range-for-http-actions-and-openapi)
 
-The [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform) from which Power Automate requests are sent depend on the [region](regions-overview.md) location of the [environment](environments-overview-admin.md) that contains the flow. FQDNs (fully qualified domain names) aren't published for flow scenarios.
-
-The simplest mechanism to configure a firewall to allow Power Automate cloud flows to call external services through [connectors](/connectors/overview) is to use [Azure service tags](/azure/virtual-network/service-tags-overview). The primary service tag for Logic Apps connectors is **AzureConnectors**, as described in [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
-
-## Logic Apps and connectors for cloud flows runtime
-
-Calls made from a cloud flow go directly through the Azure Logic Apps service. Some examples of these calls include HTTP or HTTP + OpenAPI. Network traffic for these calls originates from the IP ranges listed in the [IP range for HTTP or HTTP + OpenAPI](#ip-range-for-http-actions-and-openapi) and [Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) documentation.
-
-If you're restricting inbound or outbound IP addresses on your network (for example, through a firewall), update your network configuration to allow [IP Range for HTTP or HTTP + OpenAPI](#ip-range-for-http-actions-and-openapi), [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration), and [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions to ensure flows continue to work.
-
-Learn more in [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones). 
-
-To automate firewall or configuration updates, you can use the Azure IP range downloadable JSON file available in the Download Center: [Downloadable IP](https://www.microsoft.com/download/details.aspx?id=56519)
-
-## Required endpoints for Power Automate service
+# Allow users on your network to use the Power Automate 
+## To use Power Automate Web Portal aka Maker Portal
 
 The following table lists the services to which Power Automate connects. Ensure none of these services is blocked on your network.
 
@@ -64,8 +55,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.api.appsplatform.us <br> *.api.bap.appsplatform.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
 | *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
 
-### Endpoints needed to use Power Automate mobile app
-
+## Allow users on your network to use Power Automate Mobile App 
 The following table lists the additional endpoints you need when using Power Automate mobile app.
 
 | Domains | Protocols | Uses |
@@ -74,8 +64,7 @@ The following table lists the additional endpoints you need when using Power Aut
 | collector.azure.cn   | https  |  Send telemetry for the Mooncake region from the mobile app. |
 | officeapps.live.com   | https   | Access to authentication and authorization endpoints for the mobile app.
 
-## Services required for desktop flows runtime
-
+## Allow machines & users on your network to access Power Automate Desktop services
 The following table lists endpoint data requirements for connectivity from a user's machine for desktop flows runs. Ensure that you authorize Global endpoints and the endpoints corresponding to your cloud.
 
 ### Global endpoints for desktop flows runtime
