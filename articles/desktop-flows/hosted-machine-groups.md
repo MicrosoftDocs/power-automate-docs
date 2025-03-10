@@ -167,7 +167,7 @@ Custom VM images must meet the following requirements:
     - Korea: Korea Central
     - Norway: Norway East
     - South Africa: South Africa North
-    - Southeast Asia: Singapore (Allowlisted tenants only)
+    - Singapore: Southeast Asia (Allowlisted tenants only)
     - Switzerland: Switzerland North
     - United Arab Emirates: UAE North
     - United Kingdom: UK South
@@ -636,7 +636,7 @@ The following list displays all the supported geographies in the public clouds:
 - Korea
 - Norway
 - South Africa
-- Southeast Asia
+- Singapore (Allowlisted tenants only)
 - Switzerland
 - United Arab Emirates
 - United Kingdom
