@@ -387,7 +387,7 @@ The last step before being able to reference your virtual network from Power Aut
 1. If the **'Microsoft Entra hybrid join'** is selected, the following information is required:
    - **DNS domain name** : The DNS name of the Active Directory domain you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
    - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain, which can hold users, groups, and computers. Make sure that this OU is enabled to sync with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
-   - **Network credential** : Store in as an [Azure Key Vault credential](create-azurekeyvault-credential.md),  The user principal name (UPN) and its password that will be used for connecting the hosted machine groups to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
+   - **Network credential** : Store as an [Azure Key Vault credential](create-azurekeyvault-credential.md),  The user principal name (UPN) and its password that will be used for connecting the hosted machine groups to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
  
     > [!NOTE]
     > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join domain join type.
