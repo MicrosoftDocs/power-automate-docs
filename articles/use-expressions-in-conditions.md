@@ -83,7 +83,7 @@ Let's create the flow.
 
 You can use Copilot to create the flow for you, or create it manually.
 
-### Create a flow with Copilot
+#### Create a flow with Copilot
 
 1. Ask Copilot to create a flow for you. Type the following prompt in Copilot:
 
@@ -93,7 +93,7 @@ You can use Copilot to create the flow for you, or create it manually.
 
     After you submit the prompt, Copilot creates the flow for you. You need to fill in details for the flow to work, such as parameters for various actions added by Copilot.
 
-### Create a flow manually
+#### Create a flow manually
 
 Alternatively, you can perform the following procedure to create the same flow manually:
 
