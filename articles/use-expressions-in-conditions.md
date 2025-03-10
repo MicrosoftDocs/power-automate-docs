@@ -182,9 +182,9 @@ In the classic designer, you can create the flow manually. Copilot isn't an opti
 
 # [New designer](#tab/new-designer)
 
-1. Select yhe plus sign (**+**) to add an action on the **True** branch of the condition.
+1. Select the plus sign (**+**) to add an action on the **True** branch of the condition.
 
-    The **If yes** branch runs if the **Or** condition evaluates to **true**.
+    The **True** branch runs if the **Or** condition evaluates to **true**.
 
 1. Search for **Excel Online (Business)** and then select **Delete a row**.
 
