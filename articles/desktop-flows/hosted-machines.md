@@ -367,7 +367,7 @@ Configure your Azure Virtual Network where the hosted machines are provisioned a
 
 1. Make sure your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
 1. From the Azure Virtual Network's Settings, select DNS Servers and then choose Custom.
-1. Enter the IP address of DNS servers that environment that can resolve your AD DS domain.
+1. Enter the IP address of DNS servers that environment that can resolve your Active Directory Domain Services domain.
 
 ### Share the virtual network with Windows 365 service principal
 
