@@ -586,6 +586,13 @@ The **Desktop Flows Machine Configuration Admin role** role only brings full pri
 
 :::image type="content" source="media/hosted-machines/desktop-flow-machine-configuration-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Configuration Admin role.":::
 
+#### Custom virtual network permissions
+
+The [create and share custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machines) feature requires permissions to the  **Flow Machine Network** table. You can grant / deny privileges to this table to control which user can create and share custom virtual networks.
+
+
+
+
 ## Hosted machines limitations
 
 This section presents the limitations of hosted machines.
