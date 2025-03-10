@@ -15,9 +15,9 @@ search.audienceType:
 ---
 # Use expressions in conditions to check multiple values
 
-In this tutorial, you'll learn to use expressions and *conditions* to compare multiple values in **Advanced mode**.
+In this tutorial, you learn to use expressions and *conditions* to compare multiple values in **Advanced mode**.
 
-When you create a cloud flow, you can use the [**Condition**](add-condition.md#add-a-condition) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you might want to check the value of a few columns in a spreadsheet or database table.
+When you create a cloud flow, you can use the [**Condition**](add-condition.md#add-a-condition) card in basic mode to quickly compare a single value with another value. However, there are times when you need to compare multiple values. For example, you might want to check the value of a few columns in a spreadsheet or database table.
 
 You can use any combination of the following logical expressions in your conditions.
 
@@ -44,7 +44,7 @@ Here's what you need to complete this walkthrough.
 
 ## Use the 'or' expression
 
-Sometimes your workflow needs to take an action if the value of an item is valueA *or* valueB. For example, you may be tracking the status of tasks in a spreadsheet table. Assume that the table has a column named **Status** and the possible values in this column are:
+Sometimes your workflow needs to take an action if the value of an item is valueA *or* valueB. For example, you might be tracking the status of tasks in a spreadsheet table. Assume that the table has a column named **Status** and the possible values in this column are:
 
 * **completed**
 * **blocked**
@@ -55,7 +55,7 @@ Here's an example of what the spreadsheet might look like:
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table.png" alt-text="Screenshot of a sample spreadsheet with a Status column.":::
 
-Given the preceding spreadsheet, you want to use Power Automate to remove all rows with a **Status** column that's set to **completed** or **unnecessary**.
+Given the preceding spreadsheet, you want to use Power Automate to remove all rows with a **Status** column that is set to **completed** or **unnecessary**.
 
 Let's create the flow.
 
@@ -228,7 +228,7 @@ Notice all data from rows that had **completed** or **unnecessary** in the **Sta
 
 ## Use the 'and' expression
 
-Assume you have a spreadsheet table with two columns. The column names are **Status** and **Assigned**. Assume also that you want to delete all rows if the **Status** column's value is **blocked** and the **Assigned** column's value is **John Wonder**.  To accomplish this task, follow all steps earlier in this tutorial, but when you edit the **Condition** card in advanced mode, use the **and** expression shown here.
+Assume you have a spreadsheet table with two columns. The column names are **Status** and **Assigned**. Assume also that you want to delete all rows if the **Status** column's value is **blocked** and the **Assigned** column's value is **John Wonder**. To accomplish this task, follow all steps earlier in this tutorial, but when you edit the **Condition** card in advanced mode, use the **and** expression shown here.
 
 ````@and(equals(item()?['Status'], 'blocked'), equals(item()?['Assigned'], 'John Wonder'))````
 
@@ -238,7 +238,7 @@ Here's an example of a **Condition** card.
 
 ## Run the flow with the 'and' expression
 
-If you've followed the steps in this tutorial, your spreadsheet should look similar to the following screenshot.
+If you followed the steps in this tutorial, your spreadsheet should look similar to the following screenshot.
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-before-and-expression-runs.png" alt-text="Screenshot of the spreadsheet before your flow runs.":::
 
@@ -266,21 +266,21 @@ Notice extra lines are removed from the table.
 
 ## Use the 'greater' expression
 
-Imagine you've bought baseball tickets for your coworkers and you're using a spreadsheet to ensure you're reimbursed by each person. You can quickly create a cloud flow that sends a daily email to each person who hasn't paid the full amount.
+Imagine you bought baseball tickets for your coworkers and you use a spreadsheet to ensure you get reimbursed by each person. You can quickly create a cloud flow that sends a daily email to each person who didn't paid the full amount.
 
-Use the **greater** expression to identify the employees who haven't paid the full amount. You can then automatically send a reminder email to those who haven't paid in full.
+Use the **greater** expression to identify the employees who didn't pay the full amount. You can then automatically send a reminder email to them.
 
 Here's a view of the spreadsheet.
 
-:::image type="content" source="./media/use-expressions-in-conditions/tickets-spreadsheet-table.png" alt-text="Screenshot of the spreadsheet of those who haven't paid in full.":::
+:::image type="content" source="./media/use-expressions-in-conditions/tickets-spreadsheet-table.png" alt-text="Screenshot of the spreadsheet of the employees who didn't pay in full.":::
 
-Here's the implementation of the **greater** expression that identifies all persons who have paid less than the amount due from them.
+Here's the implementation of the **greater** expression that identifies all persons who paid less than the amount due from them.
 
 ````@greater(item()?['Due'], item()?['Paid'])````
 
 ## Use the 'less' expression
 
-Imagine you've bought baseball tickets for your coworkers, and you're using a spreadsheet to ensure you're reimbursed by each person by the date to which everyone agreed. You can create a cloud flow that sends a reminder email to each person who hasn't paid the full amount if the current date is less than one day before the due date.
+Imagine you bought baseball tickets for your coworkers, and you use a spreadsheet to ensure you get reimbursed by each person by the date to which everyone agreed. You can create a cloud flow that sends a reminder email to each person who didn't pay the full amount if the current date is less than one day before the due date.
 
 Use the **and** expression with the **less** expression since there are two conditions being validated.
 
@@ -291,13 +291,13 @@ Use the **and** expression with the **less** expression since there are two cond
 
 ## Combine the 'greater' and 'less' expressions in an 'and' expression
 
-Use the **greater** expression to identify the employees who have paid less than the full amount due and use the **less** expression to determine if the payment due date is less than one day away from the current date. You can then use the **Send an email** action to send reminder emails to those employees who haven't paid in full and the due date is less than one day away.
+Use the **greater** expression to identify the employees who paid less than the full amount due and use the **less** expression to determine if the payment due date is less than one day away from the current date. You can then use the **Send an email** action to send reminder emails to those employees who didn't pay in full and the due date is less than one day away.
 
 Here's a view of the spreadsheet table.
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-due-date.png" alt-text="Screenshot of the spreadsheet table.":::
 
-Here's the implementation of the **and** expression that identifies all employees who have paid less than the amount due from them and the due date is less than one day away from the current date.
+Here's the implementation of the **and** expression that identifies all employees who paid less than the amount due from them and the due date is less than one day away from the current date.
 
 ````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 
