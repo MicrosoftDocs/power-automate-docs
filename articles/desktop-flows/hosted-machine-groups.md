@@ -376,13 +376,21 @@ The last step before being able to reference your virtual network from Power Aut
 
     - **Network connection name:** A unique name to identify the network connection.
     - **Description:** An optional description for the network connection.
-    - **Use with:** Select the hosted machine group (preview).
+    - **Use with:** Select hosted machine group (preview).
 
 1. Select one of the **Azure virtual network** available in Azure that meets the network requirements.
 
 1. Select the **Subnet** the hosted machine groups use.
 
-    :::image type="content" source="media/hosted-machine-groups/create-custom-vnet-hmg.png" alt-text="Screenshot of selecting the subnet in a new network connection.":::
+1. Select the **Domain join type** the machine uses.
+
+1. If the **'Microsoft Entra hybrid join'** is selected, the following information is required:
+   - **DNS domain name** : The DNS name of the Active Directory domain you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
+   - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain, which can hold users, groups, and computers. Make sure that this OU is enabled to sync with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
+   - **Network credential** : Store in as an [Azure Key Vault credential](create-azurekeyvault-credential.md),  The user principal name (UPN) and its password that will be used for connecting the hosted machine groups to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
+ 
+    > [!NOTE]
+    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join domain join type.
 
 ### Share the network connection
 
