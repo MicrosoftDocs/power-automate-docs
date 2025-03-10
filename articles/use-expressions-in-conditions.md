@@ -79,9 +79,40 @@ Let's create the flow.
 
 ### Select the spreadsheet and get all rows
 
-To switch to Classic Designer in Power Automate, save the flow in New Designer first to avoid losing your work. Resolve any errors in New Designer before saving.
+# [New designer](#tab/new-designer)
+
+You can use Copilot to create the flow for you, or create it manually.
+
+### Create a flow with Copilot
+
+1. Ask Copilot to create a flow for you. Type the following prompt in Copilot:
+
+    **Every week, list rows in a Excel table and if the Status column equals Succeeded or claim manager's email is jake@contoso.com, delete Excel row**
+
+1. Select **Submit** ![Screenshot of the Submit button.](./media/use-expressions-in-conditions/submit.png).
+
+    After you submit the prompt, Copilot creates the flow for you. You need to fill in details for the flow to work, such as parameters for various actions added by Copilot.
+
+### Create a flow manually
+
+Alternatively, you can perform the following procedure to create the same flow manually:
+
+1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
+1. Search for **rows** > **Excel Online (Business)** > the **Get a row** action that corresponds to the spreadsheet that you're using.
+
+    For example, if you're using *Google Sheets*, select **Google Sheets - Get rows**.
+
+1. Select the **List rows present in a table** action.
+
+    :::image type="content" source="./media/use-expressions-in-conditions/add-an-action-test.png" alt-text="Screenshot of listing rows in a table in Copilot.":::
+
+1. Select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
+
+    :::image type="content" source="./media/use-expressions-in-conditions/table-parameters.png" alt-text="Screenshot of the parameters for list rows present in a table in Copilot.":::
 
 # [Classic designer](#tab/classic-designer)
+
+In the classic designer, you can create the flow manually. Copilot isn't an option.
 
 1. Select **New step**.
 
@@ -97,58 +128,11 @@ To switch to Classic Designer in Power Automate, save the flow in New Designer f
 
     :::image type="content" source="includes/media/new-step/select-table-to-search.png" alt-text="Screenshot of Location, Document Library, File, and Table fields in the List rows present in a table card.":::
 
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-1. Ask Copilot to create a flow for you. Type the following prompt in Copilot:
-
-    **Every week, list rows in a Excel table and if the Status column equals Succeeded or claim manager's email is jake@contoso.com, delete Excel row**
-
-1. Select **Submit** ![Screenshot of the Submit button](./media/use-expressions-in-conditions/submit.png).
-
-    :::image type="content" source="./media/use-expressions-in-conditions/copilot-prompt.png" alt-text="Screenshot of a prompt in Copilot.":::
-
-    After you submit the prompt, Copilot creates the flow for you. You still need to fill in the necessary details for the flow to work, such as parameters for various actions added by Copilot.
-
-Alternatively, you can follow the below steps to create the same flow manually:
-
-1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
-1. Search for **rows**, select **Excel Online (Business)**, and then select the **Get a row** action that corresponds to the spreadsheet that you're using.
-
-    For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
-
-1. Select the **List rows present in a table** action.
-
-    :::image type="content" source="./media/use-expressions-in-conditions/add-an-action-test.png" alt-text="Screenshot of listing rows in a table in Copilot.":::
-
-1. Select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
-
-    :::image type="content" source="./media/use-expressions-in-conditions/table-parameters.png" alt-text="Screenshot of the parameters for list rows present in a table in Copilot.":::
-
 ---
 
-### Check the status column of each row
+## Check the status column of each row
 
-# [Classic designer](#tab/classic-designer)
-
-1. Select **New step**.
-
-1. Search for **apply to each**, and then select the **Apply to each - Control**.
-
-1. Add the **value** token to the **Select an output from previous steps** box.
-
-   This **value** token represents the spreadsheet table and all of its data.
-
-1. Select **Add an action** on the **Apply to each** card.
-
-1. Search for **condition**, and then select the **Condition** control.
-
-1. Add the following **Or** expression. This **Or** expression checks the value of each row in the table. If the value of the **Status** column is *completed* **Or** *unnecessary*, the **Or** expression evaluates to "true".
-
-    Here's an example of a **Condition** card.
-
-    :::image type="content" source="./media/use-expressions-in-conditions/or-expression.png" alt-text="Screenshot of an 'or' expression.":::
-
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
 
@@ -172,17 +156,39 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
     :::image type="content" source="./media/use-expressions-in-conditions/condition-card.png" alt-text="Screenshot of selecting the value from the previous step.":::
 
+# [Classic designer](#tab/classic-designer)
+
+1. Select **New step**.
+
+1. Search for **apply to each**, and then select the **Apply to each - Control**.
+
+1. Add the **value** token to the **Select an output from previous steps** box.
+
+   This **value** token represents the spreadsheet table and all of its data.
+
+1. Select **Add an action** on the **Apply to each** card.
+
+1. Search for **condition**, and then select the **Condition** control.
+
+1. Add the following **Or** expression. This **Or** expression checks the value of each row in the table. If the value of the **Status** column is *completed* **Or** *unnecessary*, the **Or** expression evaluates to "true".
+
+    Here's an example of a **Condition** card.
+
+    :::image type="content" source="./media/use-expressions-in-conditions/or-expression.png" alt-text="Screenshot of an 'or' expression.":::
+
 ---
 
 ### Delete matching rows from the spreadsheet
 
-# [Classic designer](#tab/classic-designer)
+# [New designer](#tab/new-designer)
 
 1. Select **Add an action** on the **If yes** branch of the condition.
 
-    The **If yes** branch runs if the **OR** condition evaluates to **true**.
+    The **If yes** branch runs if the **Or** condition evaluates to **true**.
 
 1. Search for **Delete a row**, select **Excel Online (Business)**, and then select **Delete a row**.
+
+    :::image type="content" source="./media/use-expressions-in-conditions/delete-a-row.png" alt-text="Screenshot of deleting a row.":::
 
 1. On the **Delete a row** card, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
 
@@ -192,11 +198,11 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
 1. Save your flow.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [Classic designer](#tab/classic-designer)
 
 1. Select **Add an action** on the **If yes** branch of the condition.
 
-    The **If yes** branch runs if the **Or** condition evaluates to **true**.
+    The **If yes** branch runs if the **OR** condition evaluates to **true**.
 
 1. Search for **Delete a row**, select **Excel Online (Business)**, and then select **Delete a row**.
 

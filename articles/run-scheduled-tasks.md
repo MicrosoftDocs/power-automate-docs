@@ -47,6 +47,22 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 
 ## Configure advanced options
 
+# [New designer](#tab/new-designer)
+
+The steps to configure an action in the cloud flows designer with Copilot are identical to the classic cloud flows designer. However, if you have access to Copilot, you can simply ask Copilot to create a scheduled flow. For example, you can ask by typing the following prompt:
+
+**Create a flow that runs Monday every two weeks starting 09/25/2023 which sends an email to contoso@gmail.com that their MPR doc is due**
+
+:::image type="content" source="./media/run-scheduled-tasks/copilot-scheduled-prompt.png" alt-text="Screenshot of a prompt to create a scheduled flow.":::
+
+You can ask Copilot to create a scheduled flow using the same prompt in the Copilot panel in the designer.
+
+:::image type="content" source="./media/run-scheduled-tasks/copilot-designer-prompt.png" alt-text="Screenshot of a prompt to create a scheduled flow in the Copilot pane.":::
+
+Copilot adds the following parameters to the flow it created for you in the action configuration pane on the left:
+
+:::image type="content" source="./media/run-scheduled-tasks/copilot-create-flow.png" alt-text="Screenshot of a prompt to create a scheduled flow in the action configuration pane.":::
+
 # [Classic designer](#tab/classic-designer)
 
 1. Follow the steps in the previous section.
@@ -73,22 +89,6 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
    > If you run a flow on the month frequency, the flow runs on the same date each month.
 
 1. Add the action or actions that you want the flow to take, as described in [Create a cloud flow from scratch](get-started-logic-flow.md).
-
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-The steps to configure an action in the cloud flows designer with Copilot are identical to the classic cloud flows designer. However, if you have access to Copilot, you can simply ask Copilot to create a scheduled flow. For example, you can ask by typing the following prompt:
-
-**Create a flow that runs Monday every two weeks starting 09/25/2023 which sends an email to contoso@gmail.com that their MPR doc is due**
-
-:::image type="content" source="./media/run-scheduled-tasks/copilot-scheduled-prompt.png" alt-text="Screenshot of a prompt to create a scheduled flow.":::
-
-You can ask Copilot to create a scheduled flow using the same prompt in the Copilot panel in the designer.
-
-:::image type="content" source="./media/run-scheduled-tasks/copilot-designer-prompt.png" alt-text="Screenshot of a prompt to create a scheduled flow in the Copilot pane.":::
-
-Copilot adds the following parameters to the flow it created for you in the action configuration pane on the left:
-
-:::image type="content" source="./media/run-scheduled-tasks/copilot-create-flow.png" alt-text="Screenshot of a prompt to create a scheduled flow in the action configuration pane.":::
 
 ---
 
