@@ -11,21 +11,21 @@ ms.date: 03/07/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 ---
-# Allow flows to call your services
-## Allow Connector calls to your services
+## Allow flows to call your services
+### Allow Connector calls to your services
 Power Automate flows comprise of actions. Actions can utilize both “Connector actions” and native actions such as “HTTP/ HTTP + Swagger”. This section describes the firewall configuration required to enable the “Connector Actions” to call services hosted in your network. 
 Please note this configuration is only needed if you're restricting inbound or outbound IP addresses on your network (for example, through a firewall).
 Configuration required:
 •	Allow-list the **AzureConnectors** service tag
 
-## Allow list HTTP/ HTTP + Swagger calls to your services
+### Allow list HTTP/ HTTP + Swagger calls to your services
 For flows consisting of actions including HTTP/ HTTP + Swagger, add the network configuration to allow ALL of the following
 1.	LogicApps service tag
 2.	PowerPlatformPlex service tag
 3.	[IP range for HTTP or HTTP + Swagger](#ip-range-for-http-actions-and-openapi)
 
-# Allow users on your network to use the Power Automate 
-## To use Power Automate Web Portal aka Maker Portal
+## Allow users on your network to use the Power Automate 
+### To use Power Automate Web Portal aka Maker Portal
 
 The following table lists the services to which Power Automate connects. Ensure none of these services is blocked on your network.
 
@@ -55,7 +55,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.api.appsplatform.us <br> *.api.bap.appsplatform.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
 | *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
 
-## Allow users on your network to use Power Automate Mobile App 
+### Allow users on your network to use Power Automate Mobile App 
 The following table lists the additional endpoints you need when using Power Automate mobile app.
 
 | Domains | Protocols | Uses |
@@ -64,17 +64,17 @@ The following table lists the additional endpoints you need when using Power Aut
 | collector.azure.cn   | https  |  Send telemetry for the Mooncake region from the mobile app. |
 | officeapps.live.com   | https   | Access to authentication and authorization endpoints for the mobile app.
 
-## Allow machines & users on your network to access Power Automate Desktop services
+### Allow machines & users on your network to access Power Automate Desktop services
 The following table lists endpoint data requirements for connectivity from a user's machine for desktop flows runs. Ensure that you authorize Global endpoints and the endpoints corresponding to your cloud.
 
-### Global endpoints for desktop flows runtime
+#### Global endpoints for desktop flows runtime
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
 | server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, US government, and Chinese clouds. Works as the fallback telemetry endpoint.|
 | msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. WebDriver is used to automate your browser (Microsoft Edge and Google Chrome).|
 
-### Public endpoints for desktop flows runtime
+#### Public endpoints for desktop flows runtime
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
@@ -88,7 +88,7 @@ The following table lists endpoint data requirements for connectivity from a use
 > [!NOTE]
 > If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. Learn more about namespace endpoints in [Allowlist of namespaces endpoints required for desktop flows runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-desktop-flows-runtime).
 
-### US Government endpoints for desktop flows runtime
+#### US Government endpoints for desktop flows runtime
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
@@ -104,7 +104,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | *.crm.appsplatform.us | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(US Government - DoD only). |
 | *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for public clouds). |
 
-### 21Vianet endpoints (China) for desktop flows runtime
+#### 21Vianet endpoints (China) for desktop flows runtime
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
@@ -138,9 +138,9 @@ You should use [Azure service tags](/azure/virtual-network/service-tags-overview
 
 You should use the [Service Tags with an on-premises firewall](/azure/virtual-network/service-tags-overview#service-tags-on-premises) so you don't need to monitor and manually update IP ranges. The [Service Tag Discovery API](/azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api) provides access to the latest IP address ranges associated with each service tag, enabling you to stay current with changes.
 
-## IP range for HTTP actions and OpenAPI
+## IP range for HTTP actions and HTTP + Swagger
 
-For the HTTP Connector actions **HTTP** and **HTTP + Swagger**, allowlist the **powerplatformplex** service tag and the following IP ranges:
+For the HTTP Connector actions **HTTP** and **HTTP + Swagger**, allowlist the **PowerPlatformPlex** service tag and the following IP ranges:
 
 ```markdown
 "4.150.232.8/29",
