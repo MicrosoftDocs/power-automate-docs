@@ -116,16 +116,18 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 ### Get access to the default VM image
 
 > [!NOTE]
-> The default VM image provided by Power Automate with Microsoft Edge preinstalled is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration, or security constraints, use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine) capability.
+> - The default VM image provided by Power Automate with Microsoft Edge preinstalled is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration, or security constraints, use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine) capability.
 
-To create hosted machines, you need access to the default image that is part of your environment. You can view the default image in **Monitors** > **Machines** > **VM images**.
+The default VM image is available to all users in the environment. If you can't see the default VM image, your administrator has disabled sharing of default VM image(s) to users. In this case:
+- Users need either the **System Administrator** or **Desktop Flows Machine Configuration Admin** role to see and manage the default image.
+- For other users, the **System Administrator** or **Desktop Flows Machine Configuration Admin** has to share the default image with them before they can use it.
+
+
+ You can view the default image in **Monitors** > **Machines** > **VM images**.
 
 :::image type="content" source="media/hosted-machines/default-vm-image.png" alt-text="Screenshot of the default VM image in the VM images list.":::
 
-> [!NOTE]
->
-> - Users need either the **System Administrator** or **Desktop Flows Machine Configuration Admin** role to see and manage the default image.
-> - For other users, the **System Administrator** or **Desktop Flows Machine Configuration Admin** has to share the default image with them before they can use it.
+
 
 ### Share the default image
 
