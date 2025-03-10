@@ -157,6 +157,7 @@ You should import the solution containing the credential and the related environ
 
 - Currently, this feature is available only for desktop flow connections.
 - You can't edit the selected username and secret in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the Azure Key Vault secret.
+- If your environment uses a managed identity to [access your Azure Data Lake](/power-apps/maker/data-platform/azure-synapse-link-msi), that identity is also used to access your Azure Key Vault. Only one enterprise policy can connect to the Dataverse environment simultaneously. Ensure that the managed identity has the appropriate permissions to the Azure Key Vault resource.
 
 ## Update a secret (password rotation) - Deprecated
 
