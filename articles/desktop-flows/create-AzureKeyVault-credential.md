@@ -66,6 +66,12 @@ Provide the following information to create your credential:
 
 1. After selecting **Next**, select location to use credential.
 1. Select **Connection** or **Network** as the location to use the credential. Using credentials in desktop flow isn't supported with Azure Key Vault yet.
+
+  | Location to use credential | Description                    |
+  | --------- | ----- | ------------------------------ |
+  | **Connection** | Used in desktop flow connection, the credential is used to login on the machine during runtime (attended and unattended runs). |
+  | **Network** | Used when creating [Microsoft Entra hybrid join network connection](hosted-machine-groups.md#additional-requirements-for-microsoft-entra-hybrid-joined-hosted-machines-groups-preview) for hosted machine groups. |
+
 1. If prompted, select **Azure Key Vault** as the type of credential store, and then select **Next**.
 
 ### Select credential values
