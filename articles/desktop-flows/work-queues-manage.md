@@ -17,8 +17,8 @@ Power Automate provides rich user experiences and features that allow you to eff
 To view the list of work queues:
 
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
-2. On the left menu, select the **Monitor** section.
-3. Select **Work queue**.
+2. On the left menu, select the **More**, press **Discover All** button, and scroll to the **Monitor** section.
+3. Select **Work queues**.
 
 If you have already created work queues or if any work queue has been shared with you, you see a list similar to the below.
 
@@ -29,8 +29,8 @@ If you have already created work queues or if any work queue has been shared wit
 To create a work queue:
 
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
-2. On the left menu, select the **Monitor** section.
-3. Select **Work queue** and then select **+ New work queue**.
+2. On the left menu, select the **More**, press **Discover All** button, and scroll to the **Monitor** section.
+3. Select **Work queues** and then select **+ New work queue**.
 4. In the **New work queue** side panel, enter a **work queue name** for the queue.
 5. (Optional) Enter a **description** for the work queue.
 6. (Optional) Enter a **work queue key** for the work queue. When provided, the value must be unique within this queue. If left empty, a unique value is automatically provided by the system.
@@ -47,7 +47,7 @@ To create a work queue:
 To edit a work queue:
 
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
-2. On the left menu, select the **Monitor** section.
+2. On the left menu, select the **More**, press **Discover All** button, and scroll to the **Monitor** section.
 3. Select **Work queues**.
 4. In the work queue list, select the work queue you would like to edit.
 5. Select **Edit work queue** on the toolbar and update the values in the update pane.
@@ -61,8 +61,8 @@ To edit a work queue:
 To share a work queue:
 
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
-2. On the left menu, select the **Monitor** section.
-3. Select **Work queue**.
+2. On the left menu, select the **More**, press **Discover All** button, and scroll to the **Monitor** section.
+3. Select **Work queues**.
 4. In the work queue list, select the work queue you would like to share.
 5. Select **Manage access** on the toolbar.
 6. In the **Share** pane, enter the email or name of the person you want to share with.
@@ -75,8 +75,8 @@ If you're ingesting or programmatically interacting with work queue data through
 To view advanced work queue details:
 
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
-2. On the left menu, select the **Monitor** section.
-3. Select **Work queue**.
+2. On the left menu, select the **More**, press **Discover All** button, and scroll to the **Monitor** section.
+3. Select **Work queues**.
 4. In the work queue list, select the work queue you would like to share.
 5. Select **Advanced details** on the work queue details card.
 6. In the **Advanced details** pane, you can use the 'Copy' icons to copy each of its values.
@@ -97,19 +97,20 @@ To delete a work queue:
 To create a new work queue item through the Power Automate portal:
 
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
-2. On the left menu, select the **Monitor** section.
-3. Select the work queue you would like to create items for and then select **See details**.
-4. Select **+ New work queue item** on the toolbar.
-5. In the **New work queue item** side panel, enter a **Name** for the work queue item.
+2. On the left menu, select the **More**, press **Discover All** button, and scroll to the **Monitor** section.
+3. Select **Work queues**.
+4. Select the work queue you would like to create items for and then select **See details**.
+5. Select **+ New work queue item** on the toolbar.
+6. In the **New work queue item** side panel, enter a **Name** for the work queue item.
    > [!NOTE]
    > If you don't provide a value for the work queue item name, the internal work queue ID is displayed instead in the work queue item list pages.
 
-6. (Optional) Set the **Status** to **On hold** if the created item requires review or other preprocessing work before they can be queued.
-7. (Optional) Select a different **Priority** for the work queue item if you wish to influence processing priority.
-8. (Optional) Enter a **Unique Id or reference** if you wish to provide a custom unique value within this queue. If left empty, a unique value in the format of `system-<GUID>` is automatically provided. |
-9. (Optional) Activate the **Expiration date** section and select a custom **Expiration date** value for the work queue item.
-10. Enter the actual alphanumeric **Input** value of the work queue item.
-11. (Optional) Enter **Processing notes** relevant to this work queue item.
+7. (Optional) Set the **Status** to **On hold** if the created item requires review or other preprocessing work before they can be queued.
+8. (Optional) Select a different **Priority** for the work queue item if you wish to influence processing priority.
+9. (Optional) Enter a **Unique Id or reference** if you wish to provide a custom unique value within this queue. If left empty, a unique value in the format of `system-<GUID>` is automatically provided. |
+10. (Optional) Activate the **Expiration date** section and select a custom **Expiration date** value for the work queue item.
+11. Enter the actual alphanumeric **Input** value of the work queue item.
+12. (Optional) Enter **Processing notes** relevant to this work queue item.
 
 Looking for more ways to create work queue data?
 
