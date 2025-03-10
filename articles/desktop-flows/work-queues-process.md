@@ -80,6 +80,8 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
    For instance, let's say there was a requirement to enter the invoice ID into a field of a finance system as part of a process where you're automating the UI of a web or desktop app – you can call that value using **%JsonAsCustomObject.InvoiceId%** to populate a text field and push a button.
 
 1. Moving along, this example contains some conditional statements once it completes processing the steps and uses the data from the custom object within the subflow Fabrikam Data Entry.  If the process runs end-to-end without encountering any input system related exceptions the **Update work queue item** action is used to change the status of the work queue item to **Processed** and the **processing result** field can be used to input some optional notes. If the **expires** field is left blank, the new queue item retains the *Items expire after* value defined in the work queue properties.
+ > [!NOTE]
+ > If you have work queue items that are stuck in processing state if a desktop flow fails to complete the run, It is recommended to use a Cloud Flow to retrieve and update the work queue item accordingly.
 
    :::image type="content" source="media/work-queues/work-queue-pad-updatewqi.png" alt-text="Screenshot example of update work queue item action inputs." lightbox="media/work-queues/work-queue-pad-updatewqi.png":::
 
