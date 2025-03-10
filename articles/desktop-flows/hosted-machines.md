@@ -422,6 +422,7 @@ The last step before being able to reference your virtual network from Power Aut
 
     - **Network connection name:** A unique name to identify the network connection.
     - **Description:** An optional description for the network connection.
+    - **Use with:** Select hosted machine.
 
 1. Select one of the **Azure virtual network** available in Azure that meets the network requirements.
 
