@@ -64,13 +64,13 @@ Provide the following information to create your credential:
 
 ### Select credential store
 
-1. After selecting **Next**, select **Azure Key Vault** as the credential store.
-1. Select **Connection** as the location to use the credential. Using credentials in desktop flow isn't supported with Azure Key Vault yet.
-1. Select **Azure Key Vault** as the type of credential store, and then select **Next**.
+1. After selecting **Next**, select location to use credential.
+1. Select **Connection** or **Network** as the location to use the credential. Using credentials in desktop flow isn't supported with Azure Key Vault yet.
+1. If prompted, select **Azure Key Vault** as the type of credential store, and then select **Next**.
 
 ### Select credential values
 
-In the last step of the wizard, select credential values. With Azure Key Vault, there are two types of supported authentications:
+In the last step of the wizard, select credential values. Depending on the location to use the credential, there may be two types of supported authentications:
 
 1. **Username and password**: The secret stored in the vault is a password.
 1. **Certificate-based authentication**: The secret stored in the vault is a certificate.
