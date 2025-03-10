@@ -3,8 +3,8 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: mattp123
 ms.topic: conceptual
-ms.date: 12/12/2024
-ms.author: iomavrid
+ms.date: 03/10/2025
+ms.author: NikosMoutzourakis
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
 contributors:
@@ -449,6 +449,23 @@ You can use the following registry entry to allow switching machine registration
 ***Value***
 
 - **1**: Machine registration can switch to another tenant.
+
+## Configuring Power Automate for Desktop to disable UNC Paths in action inputs
+
+> [!NOTE]
+> This registry entry applies to Power Automate desktop version 2.55 and later.
+
+IT administrators can enhance security by setting the following registry key to disable UNC paths in module actions. 
+
+This configuration will cause any action that already contains a UNC path to result in a runtime error.
+
+ | Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | DisableUNCPaths | DWORD |
+
+***Value***
+
+- **1**: Disables the support of UNC Paths in Power Automate for Desktop.
 
 ## Prevent users from using the copilot's generative answers capability
 
