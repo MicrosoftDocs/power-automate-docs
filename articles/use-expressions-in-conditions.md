@@ -182,15 +182,15 @@ In the classic designer, you can create the flow manually. Copilot isn't an opti
 
 # [New designer](#tab/new-designer)
 
-1. Select **Add an action** on the **If yes** branch of the condition.
+1. Select yhe plus sign (**+**) to add an action on the **True** branch of the condition.
 
     The **If yes** branch runs if the **Or** condition evaluates to **true**.
 
-1. Search for **Delete a row**, select **Excel Online (Business)**, and then select **Delete a row**.
+1. Search for **Excel Online (Business)** and then select **Delete a row**.
 
     :::image type="content" source="./media/use-expressions-in-conditions/delete-a-row.png" alt-text="Screenshot of deleting a row.":::
 
-1. On the **Delete a row** card, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
+1. On the **Delete a row** panel, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
 
 1. In the **Key Column** dropdown list, select **\_PowerAppsId_**.
 
