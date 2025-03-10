@@ -49,14 +49,15 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
 
 1. The **Process work queue items** action is used to designate which work queue to consume items from and process in your desktop flow.  The action can be configured to select a work queue from a list using the dropdown arrow, pass a variable including the queue name. When run, this action works by bringing in the first (oldest) item from the work queue into your flow that contains a status of **queued**. Once the queue item begins processing in your flow, its status automatically changes to **processing**.
   > [!NOTE]
-  > - If you are using a variable to dynamically select the work queue, use the ID of the work queue as input. The work queue ID is available under **Advanced details** of the work queue details page.
-  > - The **CurrentWorkqueueItem** variable shows the information of the current work queue item when there are remaining items to proess. If there are no more work queue items to process and the action is complete, it will show the information of the last work queue item.
+  > If you are using a variable to dynamically select the work queue, use the ID of the work queue as input. The work queue ID is available under **Advanced details** of the work queue details page.
 
    :::image type="content" source="media/work-queues/work-queue-pad-procwqiaction-new.png" alt-text="Screenshot of the WorkQueueItem action configured to process queue items in Power Automate desktop." lightbox="media/work-queues/work-queue-pad-procwqiaction-new.png":::
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqirocessing.png" alt-text="Screenshot of work queue item in **processing** state." lightbox="media/work-queues/work-queue-pad-wqirocessing.png":::
 
 1. A [breakpoint](debugging-flow.md#adding-breakpoints) (red dot) was set by clicking next to action 3 in the flow and then run through the PAD console.  When the process pauses at the breakpoint, the **WorkQueueItem** variable can be opened by double clicking the populated value under **Flow variables** and this shows all the properties associated with the work queue item being processed.
+  > [!NOTE]
+  > The **WorkQueueItem** variable shows the information of the current work queue item when there are remaining items to proess. If there are no more work queue items to process and the action is complete, it will show the information of the last work queue item.
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqvarvalue.png" alt-text="Screenshot of the WorkQueueItem variable in the variable viewer." lightbox="media/work-queues/work-queue-pad-wqvarvalue.png":::
 
