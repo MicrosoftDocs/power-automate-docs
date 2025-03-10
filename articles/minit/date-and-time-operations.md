@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 07/18/2023
+ms.date: 03/10/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -16,6 +16,8 @@ search.audienceType:
 ---
 
 # List of date and time operations
+
+[!INCLUDE [papm-operations-note](../includes/papm-operations-note.md)]
 
 ## TODATE([year],[month],[day])
 
