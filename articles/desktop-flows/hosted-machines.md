@@ -588,10 +588,7 @@ The **Desktop Flows Machine Configuration Admin role** role only brings full pri
 
 #### Custom virtual network permissions
 
-The [create and share custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machines) feature requires permissions to the  **Flow Machine Network** table. You can grant / deny privileges to this table to control which user can create and share custom virtual networks.
-
-
-
+The [custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machines) feature requires permissions to the  **Flow Machine Network** table. You can grant / deny privileges to this table to control which user can create and share custom virtual networks.
 
 ## Hosted machines limitations
 
