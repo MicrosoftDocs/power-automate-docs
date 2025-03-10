@@ -16,7 +16,7 @@ ms.reviewer: angieandrews
 Power Automate flows comprise of actions. Actions can utilize both “Connector actions” and native actions such as “HTTP/ HTTP + Swagger”. This section describes the firewall configuration required to enable the “Connector Actions” to call services hosted in your network. 
 Please note this configuration is only needed if you're restricting inbound or outbound IP addresses on your network (for example, through a firewall).
 Configuration required:
-•	Allow-list the **AzureConnectors** service tag
+ - Allow-list the **AzureConnectors** service tag
 
 ### Allow list HTTP/ HTTP + Swagger calls to your services
 For flows consisting of actions including HTTP/ HTTP + Swagger, add the network configuration to allow ALL of the following
