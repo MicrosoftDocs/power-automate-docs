@@ -4,7 +4,7 @@ description: Learn how to create a credential with secret stored in Azure Key Va
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/08/2024
+ms.date: 03/10/2025
 ms.author: quseleba
 ms.reviewer: 
 contributors:
@@ -68,16 +68,14 @@ Provide the following information to create your credential:
 1. Select **Connection** or **Network** as the location to use the credential. Using credentials in desktop flow isn't supported with Azure Key Vault yet.
 1. If prompted, select **Azure Key Vault** as the type of credential store, and then select **Next**.
 
-
-  | Location to use credential | Description                    | Supported  Azure Key Vault authentication(s)                   |
+  | Location to use credential | Description                    | Supported  Azure Key Vault authentication                   |
   | --------- | ------------------------------ | ------------ |
-  | **Connection** | Used in desktop flow connection, the credential is used to login on the machine during runtime (attended and unattended runs). | • Username and password<br> • Certificate-based authentication |
+  | **Connection** | Used in a desktop flow connection, the credential is used to sign into the machine during runtime (attended and unattended runs). | • Username and password<br> • Certificate-based authentication |
   | **Network** | Used when creating [Microsoft Entra hybrid join network connection](hosted-machine-groups.md#additional-requirements-for-microsoft-entra-hybrid-joined-hosted-machines-groups-preview) for hosted machine groups. | • Username and password   |
-
 
 ### Select credential values
 
-In the last step of the wizard, select credential values. Depending on the location to use the credential, there may be two types of supported authentications:
+In the last step of the wizard, select credential values. Depending on the location to use the credential, there might be two types of supported authentications:
 
 1. **Username and password**: The secret stored in the vault is a password.
 1. **Certificate-based authentication**: The secret stored in the vault is a certificate.

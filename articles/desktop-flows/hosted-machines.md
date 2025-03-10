@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/03/2025
+ms.date: 03/10/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -51,7 +51,6 @@ To evaluate hosted machines, you need one of the following trial licensing optio
 - Use the **Power Automate Hosted Process** license
 
     The Power Automate Hosted Process license has trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home) and assign Power Automate Hosted Process capacity to the targeted environment.
-
 
 - Use the **90-days self-assisted premium trial.**
 
@@ -118,16 +117,14 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 > [!NOTE]
 > - The default VM image provided by Power Automate with Microsoft Edge preinstalled is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration, or security constraints, use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine) capability.
 
-The default VM image is available to all users in the environment. If you can't see the default VM image, your administrator has disabled sharing of default VM image(s) to users. In this case:
+The default VM image is available to all users in the environment. If you can't see the default VM image, your admin disabled sharing of default VM images with users. In this case:
+
 - Users need either the **System Administrator** or **Desktop Flows Machine Configuration Admin** role to see and manage the default image.
-- For other users, the **System Administrator** or **Desktop Flows Machine Configuration Admin** has to share the default image with them before they can use it.
+- For other users, the **System Administrator** or **Desktop Flows Machine Configuration Admin** must share the default image with them before they can use it.
 
-
- You can view the default image in **Monitors** > **Machines** > **VM images**.
+View the default image in **Monitors** > **Machines** > **VM images**.
 
 :::image type="content" source="media/hosted-machines/default-vm-image.png" alt-text="Screenshot of the default VM image in the VM images list.":::
-
-
 
 ### Share the default image
 
@@ -588,7 +585,7 @@ The **Desktop Flows Machine Configuration Admin role** role only brings full pri
 
 #### Custom virtual network permissions
 
-The [custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machines) feature requires permissions to the  **Flow Machine Network** table. You can grant / deny privileges to this table to control which user can create and share custom virtual networks.
+The [custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machines) feature requires permissions to the  **Flow Machine Network** table. You can grant or deny privileges to this table to control which user can create and share custom virtual networks.
 
 ## Hosted machines limitations
 

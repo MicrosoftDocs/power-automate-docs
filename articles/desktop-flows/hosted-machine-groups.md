@@ -50,12 +50,11 @@ This section presents all the prerequisites to create and use hosted machine gro
 > [!NOTE]
 > - The default VM image provided by Power Automate with Microsoft Edge preinstalled is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration, or security constraints, use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine-groups) capability.
 
-The default VM image is available to all users in the environment. If you can't see the default VM image, your administrator has disabled sharing of default VM image(s) to users. In this case:
+The default VM image is available to all users in the environment. If you can't see the default VM image, your admin disabled sharing of default VM images to users. In this case:
 - Users need either the **System Administrator** or **Desktop Flows Machine Configuration Admin** role to see and manage the default image.
 - For other users, the **System Administrator** or **Desktop Flows Machine Configuration Admin** has to share the default image with them before they can use it.
 
-
- You can view the default image in **Monitors** > **Machines** > **VM images**.
+View the default image in **Monitors** > **Machines** > **VM images**.
 
 :::image type="content" source="media/hosted-machines/default-vm-image.png" alt-text="Screenshot of the default VM image in the VM images list.":::
 
@@ -268,29 +267,29 @@ To use your own network and provision Microsoft Entra joined hosted machine grou
 
 The virtual network needs to be created in the same location as your hosted machine groups. Following are the currently supported Power Platfrom geographies and their region mapping:
 
-    - Asia: East Asia
-    - Australia: Australia East
-    - Brazil: Brazil South
-    - Canada: Canada Central
-    - Europe: North Europe
-    - France: France Central
-    - Germany: Germany West Central
-    - India: Central India
-    - Japan: Japan East
-    - Korea: Korea Central
-    - Norway: Norway East
-    - South Africa: South Africa North
-    - Singapore: Southeast Asia (Allowlisted tenants only)
-    - Switzerland: Switzerland North
-    - United Arab Emirates: UAE North
-    - United Kingdom: UK South
-    - United States: East US
+- Asia: East Asia
+- Australia: Australia East
+- Brazil: Brazil South
+- Canada: Canada Central
+- Europe: North Europe
+- France: France Central
+- Germany: Germany West Central
+- India: Central India
+- Japan: Japan East
+- Korea: Korea Central
+- Norway: Norway East
+- South Africa: South Africa North
+- Singapore: Southeast Asia (Allowlisted tenants only)
+- Switzerland: Switzerland North
+- United Arab Emirates: UAE North
+- United Kingdom: UK South
+- United States: East US
 
 ### Additional requirements for Microsoft Entra hybrid joined hosted machines groups (preview)
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Microsoft Entra hybrid join using custom virtual networks (VNETs) with hosted machine groups allows your hosted machine group bots to enroll in both your on-premises Active Directory (AD) and Microsoft Entra ID. This feature is useful in scenarios where automation requires authentication using an AD account, or when devices need to be managed using Group Policy (GPO).
+Microsoft Entra hybrid join using custom virtual networks (VNETs) with hosted machine groups lets your hosted machine group bots enroll in both your on-premises Active Directory (AD) and Microsoft Entra ID. This feature is useful when automation requires authentication using an AD account or when devices need to be managed using Group Policy (GPO).
 
 [!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
 
@@ -298,11 +297,11 @@ To use your own network and provision Microsoft Entra hybrid joined machines, yo
 
 #### Domain requirements
 
-- You must configure your infrastructure to automatically Microsoft Entra hybrid join any devices that domain joins to the on-premises Active Directory. This [configuration lets them be recognized and managed in the cloud](/azure/active-directory/devices/overview).
-- Microsoft Entra hybrid joined hosted machines require network line of sight to your on-premises domain controllers periodically. Without this connection, devices become unusable. For more information, see [Plan your Microsoft Entra hybrid join deployment](/azure/active-directory/devices/hybrid-join-plan).
-- If an organizational unit is specified, ensure it exists and is valid.
-- An Active Directory user account with sufficient permissions to join the computer into the specified organizational unit within the Active Directory domain. If you don't specify an organizational unit, the user account must have sufficient permissions to join the computer to the Active Directory domain.
-- User accounts that are creators of hosted machines must have a synced identity available in both Active Directory and Microsoft Entra ID.
+- Configure your infrastructure to automatically Microsoft Entra hybrid join any devices that domain joins to the on-premises Active Directory. [configuration lets them be recognized and managed in the cloud](/azure/active-directory/devices/overview).
+- Microsoft Entra hybrid joined hosted machines need periodic network line of sight to your on-premises domain controllers. Without this connection, devices become unusable. Learn more in [Plan your Microsoft Entra hybrid join deployment](/azure/active-directory/devices/hybrid-join-plan).
+- If you specify an organizational unit, ensure it exists and is valid.
+- Ensure an Active Directory user account has sufficient permissions to join the computer into the specified organizational unit within the Active Directory domain. If you don't specify an organizational unit, ensure the user account has sufficient permissions to join the computer to the Active Directory domain.
+- User accounts that create hosted machines must have a synced identity available in both Active Directory and Microsoft Entra ID.
 
 #### Role and identity requirements
 
@@ -310,12 +309,12 @@ Hosted machine groups users must be configured with [hybrid identities](/azure/a
 
 #### DNS requirements
 
-As part of the Microsoft Entra hybrid join requirements, your hosted machine groups must be able to join on-premises Active Directory. That requires that the hosted machine groups be able to resolve DNS records for your on-premises AD environment.
+As part of the Microsoft Entra hybrid join requirements, ensure your hosted machine groups can join on-premises Active Directory. To achieve this requirement, the hosted machine groups must resolve DNS records for your on-premises AD environment.
 Configure your Azure Virtual Network where the hosted machine groups are provisioned as follows:
 
-1. Make sure your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
-1. From the Azure Virtual Network's Settings, select DNS Servers and then choose Custom.
-1. Enter the IP address of DNS servers that environment that can resolve your AD DS domain.
+1. Ensure your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
+1. From the Azure Virtual Network's Settings, select **DNS Servers** and then choose **Custom**.
+1. Enter the IP address of DNS servers that can resolve your Active Directory DNS domain.
 
 ### Share the virtual network with Power Automate Hosted Machine Groups service principal
 
@@ -382,15 +381,15 @@ The last step before being able to reference your virtual network from Power Aut
 
 1. Select the **Subnet** the hosted machine groups use.
 
-1. Select the **Domain join type** the machine uses.
+1. Select the **Domain join type** for the machine.
 
-1. If the **'Microsoft Entra hybrid join (preview)'** is selected, the following information is required:
-   - **DNS domain name** : The DNS name of the Active Directory domain you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
-   - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain, which can hold users, groups, and computers. Make sure that this OU is enabled to sync with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
-   - **Network credential** : Store as an [Azure Key Vault credential](create-azurekeyvault-credential.md),  The user principal name (UPN) and its password that will be used for connecting the hosted machine groups to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
- 
+1. If you select **'Microsoft Entra hybrid join (preview)'**, provide the following information:
+   - **DNS domain name** : The DNS name of the Active Directory domain used for connecting and provisioning hosted machines. For example, corp.contoso.com.
+   - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain that can hold users, groups, and computers. Ensure this OU syncs with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
+   - **Network credential** : Stored as an [Azure Key Vault credential](create-azurekeyvault-credential.md). The user principal name (UPN) and its password connect the hosted machine groups to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
+
     > [!NOTE]
-    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join domain join type.
+    > Provisioning a new network connection with Microsoft Entra hybrid join domain join type takes 10-15 minutes.
 
 ### Share the network connection
 
@@ -588,14 +587,13 @@ By default, users with the **Environment Maker** role can create hosted machine 
 - Flow Machine Image
 - Flow Machine Network (if using custom virtual network for your hosted machine groups)
 
-
 :::image type="content" source="media/hosted-machine-groups/environment-maker-role.png" alt-text="Screenshot of the permissions for the Environment Maker role.":::
 
-The Environment Maker role can [create and share custom VM images](#use-custom-vm-images-for-your-hosted-machine-groups), as this functionality requires create and append privileges on the **Flow Machine Image**.
+The Environment Maker role can [create and share custom VM images](#use-custom-vm-images-for-your-hosted-machine-groups) because this functionality requires create and append privileges on the Flow Machine Image.
 
-The Environment Maker role can [create and share custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machine-groups), as these actions require create and append privileges on the **Flow Machine Network**.
+The Environment Maker role can [create and share custom virtual networks](#use-a-custom-virtual-network-for-your-hosted-machine-groups) because these actions require create and append privileges on the Flow Machine Network.
 
-Admins can also use the roles provided as part of Desktop Flows. You can find more information about desktop flow security roles in [Manage Machines](manage-machines.md#update-permissions-based-on-security-role).
+Admins can also use the roles provided as part of desktop flows. Learn more about desktop flow security roles in [Manage Machines](manage-machines.md#update-permissions-based-on-security-role).
 
 ### Desktop Flows Machine Owner role
 
@@ -611,9 +609,7 @@ The **Desktop Flows Machine Configuration Admin** role  brings full privileges o
 
 ### Custom virtual network permissions
 
-The [custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machine-groups) feature requires permissions to the  **Flow Machine Network** table. You can grant / deny privileges to this table to control which user can create and share custom virtual networks.
-
-
+The [custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machine-groups) feature requires permissions to the  **Flow Machine Network** table. You can grant or deny privileges to this table to control which user can create and share custom virtual networks.
 
 ## Use your work or school account
 
