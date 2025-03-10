@@ -591,7 +591,9 @@ By default, users with the **Environment Maker** role can create hosted machine 
 
 :::image type="content" source="media/hosted-machine-groups/environment-maker-role.png" alt-text="Screenshot of the permissions for the Environment Maker role.":::
 
-Environment Maker role can [create and share custom VM images](#use-custom-vm-images-for-your-hosted-machine-groups), as this functionality requires create and append privileges on the **Flow Machine Image**.
+The Environment Maker role can [create and share custom VM images](#use-custom-vm-images-for-your-hosted-machine-groups), as this functionality requires create and append privileges on the **Flow Machine Image**.
+
+The Environment Maker role can [create and share custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machine-groups), as these actions require create and append privileges on the **Flow Machine Network**.
 
 Admins can also use the roles provided as part of Desktop Flows. You can find more information about desktop flow security roles in [Manage Machines](manage-machines.md#update-permissions-based-on-security-role).
 
@@ -603,9 +605,15 @@ By default, **Desktop Flows Machine Owners** can create hosted machine groups bu
 
 ### Desktop Flows Machine Configuration Admin role
 
-The **Desktop Flows Machine Configuration Admin** role  brings full privileges on the **Flow Machine Image** entity. In particular, it allows users with this role to share/unshare VM images to be used for created hosted machine group in their environment. You can find more information about sharing pre-provisioned VM Images in [Create hosted machine groups](#create-hosted-machine-groups).
+The **Desktop Flows Machine Configuration Admin** role  brings full privileges on the **Flow Machine Image** entity and **Flow Machine Network** entities.. In particular, it allows users with this role to share/unshare VM images to be used for created hosted machine group in their environment. You can find more information about sharing pre-provisioned VM Images in [Create hosted machine groups](#create-hosted-machine-groups).
 
 :::image type="content" source="media/hosted-machine-groups/desktop-flow-machine-configuration-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Configuration Admin role.":::
+
+### Custom virtual network permissions
+
+The [create and share custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machine-groups) feature requires permissions to the  **Flow Machine Network** table. You can grant / deny privileges to this table to control which user can create and share custom virtual networks.
+
+
 
 ## Use your work or school account
 
