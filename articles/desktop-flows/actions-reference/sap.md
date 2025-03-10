@@ -107,7 +107,7 @@ Creates a new SAP session based on the same SAP instance.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance|Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
 
 ### Variables produced
 
@@ -129,7 +129,7 @@ Select an SAP menu item in the application toolbar of the SAP window.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance|Select the variable that holds the SAP instance you want to work with. Define this variable in a previous SAP login action.
+|`SAPInstance`|No|SAP instance| |Select the variable that holds the SAP instance you want to work with. Define this variable in a previous SAP login action.|
 |Navigation item name|No|[Text value](../variable-data-types.md#text-value)||The name of the item in the navigation toolbar to select, such as 'System'. You can also specify an option from a submenu by using the '>' symbol to indicate the parent-child relationship. For example, 'Program > Execute' means that the 'Execute' option, which is part of the submenu under 'Program', is selected.|
 
 ### Variables produced
@@ -150,7 +150,7 @@ Select an SAP menu item in the window tool bar. Enter the name of the item in th
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance|Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
 |Menu item name|No|[Text value](../variable-data-types.md#text-value)||The name of the menu item in the toolbar to be selected, such as ‘Save’. Insert the name of the menu item as it's displayed in the machine’s SAP installation.|
 
 ### Variables produced
@@ -171,7 +171,7 @@ Close the SAP connection of the selected SAP instance. Note that all instances r
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance|Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
 
 ### Variables produced
 
@@ -191,7 +191,7 @@ Opens a specific transaction code in existing session.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance|Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
 |Transaction code|No|[Text value](../variable-data-types.md#text-value)||The transaction code that you desire to execute.|
 
 ### Variables produced
@@ -204,7 +204,7 @@ This action doesn't produce any variables.
 |-----|-----|
 |Start SAP transaction action fails |Indicates a problem starting an SAP transaction.|
 
-## <a name="endtransaction"></a> End SAP transaction 
+## <a name="endtransaction"></a> End SAP transaction
 
 Closes the SAP transaction in a specific SAP instance and returns to the SAP easy access menu. An SAP transaction must be started before for the specific SAP session.
 
@@ -212,7 +212,7 @@ Closes the SAP transaction in a specific SAP instance and returns to the SAP eas
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance|Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
 
 ### Variables produced
 
