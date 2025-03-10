@@ -36,17 +36,17 @@ The following information is required to use the **When a row is added, modified
 
 [!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
 
+# [New designer](#tab/new-designer)
+
+In your flow, select the card for the **When a row is added, modified or deleted** trigger. A pane opens on the left with the **Parameters** tab selected.
+
+:::image type="content" source="../media/create-update-delete-trigger/trigger-ai.png" alt-text="Screenshot of the Parameters tab.":::
+
 # [Classic designer](#tab/classic-designer)
 
 Set the parameters directly on the card for the **When a row is added, modified or deleted** trigger.
 
-:::image type="content" source="../media/create-update-delete-trigger/trigger-current.png" alt-text="Screenshot of ":::
-
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-In your flow, select the card for the **When a row is added, modified or deleted** trigger. A pane opens on the left with the **Parameters** tab selected.
-
-:::image type="content" source="../media/create-update-delete-trigger/trigger-ai.png" alt-text="Screenshot of ":::
+:::image type="content" source="../media/create-update-delete-trigger/trigger-current.png" alt-text="Screenshot of parameters.":::
 
 ---
 
@@ -81,13 +81,7 @@ Here’s what each scope means:
 
 You can set additional properties to define more granularly when the flow runs and the user profile under which it runs.
 
-# [Classic designer](#tab/classic-designer)
-
-To access the advanced options, select **Show advanced options**.
-
-:::image type="content" source="../media/create-update-delete-trigger/advanced-current.png" alt-text="Screenshot of the advanced options.":::
-
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -95,6 +89,12 @@ To access the advanced options, select **Show advanced options**.
 1. In the **Parameters** tab, select **Add new parameters** from the dropdown menu.
 
     :::image type="content" source="../media/create-update-delete-trigger/advanced-ai.png" alt-text="Screenshot of the advanced options in the Add new parameters field.":::
+
+# [Classic designer](#tab/classic-designer)
+
+To access the advanced options, select **Show advanced options**.
+
+:::image type="content" source="../media/create-update-delete-trigger/advanced-current.png" alt-text="Screenshot of the advanced options.":::
 
 ---
 
@@ -139,16 +139,16 @@ When you create flows with the **When a row is added, modified or deleted** trig
 
 Follow these steps to impersonate a user.
 
+# [New designer](#tab/new-designer)
+
+For each Dataverse action that you want to run as a different user, select an option in the **Run as** dropdown menu.
+
+For the steps in which it isn't selected, the default user is assumed. This calls the underlying APIs as per the selected user, and not as the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
+
 # [Classic designer](#tab/classic-designer)
 
 1. In the designer, select a value for **Run as** to tell Microsoft Dataverse which user’s context you intend to use for subsequent Dataverse actions.
 1. For each Dataverse action that you want to run as a different user, select the ellipses (**...**) in the upper-right corner and then select the **Use invoker’s connection** setting.
-
-For the steps in which it isn't selected, the default user is assumed. This calls the underlying APIs as per the selected user, and not as the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
-
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-For each Dataverse action that you want to run as a different user, select an option in the **Run as** dropdown menu.
 
 For the steps in which it isn't selected, the default user is assumed. This calls the underlying APIs as per the selected user, and not as the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
 
