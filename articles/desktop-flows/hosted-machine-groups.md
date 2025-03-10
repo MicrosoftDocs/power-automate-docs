@@ -48,7 +48,7 @@ This section presents all the prerequisites to create and use hosted machine gro
 ### Get access to the default VM image
 
 > [!NOTE]
-> - The default VM image provided by Power Automate with Microsoft Edge preinstalled is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration, or security constraints, use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine) capability.
+> - The default VM image provided by Power Automate with Microsoft Edge preinstalled is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration, or security constraints, use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine-groups) capability.
 
 The default VM image is available to all users in the environment. If you can't see the default VM image, your administrator has disabled sharing of default VM image(s) to users. In this case:
 - Users need either the **System Administrator** or **Desktop Flows Machine Configuration Admin** role to see and manage the default image.
