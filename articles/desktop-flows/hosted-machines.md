@@ -55,6 +55,9 @@ To evaluate hosted machines, you need one of the following trial licensing optio
 
 - Use the **90-days self-assisted premium trial.**
 
+  > [!NOTE]
+  > This trial licensing option for hosted machines is suspended until further notice.
+
     Trial users are granted the capacity of one hosted machine per tenant. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
 
 
