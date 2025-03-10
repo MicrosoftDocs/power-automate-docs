@@ -76,7 +76,7 @@ Use a custom VM image for hosted virtual machines to create a consistent and tai
 
 A custom network connection connects hosted virtual machines to your virtual network. It enables secure communication among hosted machines, the Internet, and on-premises networks, providing full control over traffic.
 
-- **Create custom network connections**: Follow the instructions and requirements for creating custom network connections for [hosted machines](hosted-machines.md#use-a-custom-virtual-network-for-your-hosted-machines) and [hosted machine groups](hosted-machine-groups.md#use-a-custom-virtual-network-for-your-hosted-machine-groups-preview).
+- **Create custom network connections**: Follow the instructions and requirements for creating custom network connections for [hosted machines](hosted-machines.md#use-a-custom-virtual-network-for-your-hosted-machines) and [hosted machine groups](hosted-machine-groups.md#use-a-custom-virtual-network-for-your-hosted-machine-groups).
 
 > [!NOTE]
 > Ensure access to the required service endpoints:
