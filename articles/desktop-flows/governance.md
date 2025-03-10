@@ -455,9 +455,9 @@ You can use the following registry entry to allow switching machine registration
 > [!NOTE]
 > This registry entry applies to Power Automate desktop version 2.55 and later.
 
-IT administrators can enhance security by setting the following registry key to disable UNC paths in module actions. 
+IT admins can enhance security by setting the following registry key to disable UNC paths in module actions.
 
-This configuration will cause any action that already contains a UNC path to result in a runtime error.
+This configuration causes any action that contains a UNC path to result in a runtime error.
 
  | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -465,7 +465,7 @@ This configuration will cause any action that already contains a UNC path to res
 
 ***Value***
 
-- **1**: Disables the support of UNC Paths in Power Automate for Desktop.
+- **1**: Disables the support of UNC Paths in Power Automate for desktop.
 
 ## Prevent users from using the copilot's generative answers capability
 
