@@ -5,7 +5,7 @@ author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/06/2025
+ms.date: 03/12/2025
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
@@ -27,10 +27,9 @@ After these elements are captured, they can be associated with the respective UI
 Previously, UI elements were only available separately to each desktop flow. This means that they needed to be captured individually in the context of each desktop flow built, even if the elements happened to be exactly the same among multiple desktop flows. To avoid this, UI elements collections now offer makers and admins the ability to have control and central management over "groups" of UI elements, which can be shared across multiple users and imported in multiple desktop flows as reusable components. In this way, in case of an application update for instance, the UI elements collection only needs a one-time adjustment - all desktop flows referencing this collection in the same environment should then reflect that change automatically.
 
 > [!NOTE]
-> - UI elements collections exist at the environment level and are stored in the **Desktop Flow Module** Dataverse table. As a best practice, use a "dev&mdash;test&mdash;prod" model when deploying UI elements collections.
-> - To add a UI elements collection to a Solution, go to your Solution and then select **Add existing > More > Other > Desktop Flow Module > *your_collection***. This will add the collection and all its dependencies.
-> - In case your Solution contains a desktop flow that is referencing a UI elements collection, select the desktop flow and then select **Advanced > Add required objects** to add all dependent components including the UI elements collection and its dependencies to the Solution.
-
+> - UI elements collections exist at the environment level and are stored in the **Desktop Flow Module** Dataverse table. As a best practice, use a "dev—test—prod" model when deploying UI elements collections.
+> - To add a UI elements collection to a solution, go to your solution and then select **Add existing** > **More** > **Other** > **Desktop Flow Module** > ***your_collection***. This action adds the collection and all its dependencies.
+> - If your solution contains a desktop flow that references a UI elements collection, select the desktop flow and then select **Advanced** > **Add required objects** to add all dependent components, including the UI elements collection and its dependencies, to the Solution.
 
 ## Prerequisites
 
