@@ -19,7 +19,7 @@ Power Automate includes features designed to help streamline your workflow. This
 
 ## Peek code or code view
 
-Peek code or Code view is a feature that allows users to view the underlying JSON representation of the actions and triggers within a flow. This feature is useful for users who want to understand the structure and configuration of their flows, troubleshoot issues, or manually edit details that aren't easily accessible through the standard visual interface. 
+Peek code or Code view is a feature that allows users to view the underlying JSON representation of the actions and triggers within a flow. This feature is useful for users who want to understand the structure and configuration of their flows, and actions. At this time, editing code view directly to make flow changes is not available.
 
 Select an action and then select **Code view**:
 
