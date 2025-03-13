@@ -19,19 +19,19 @@ This article presents the best practices for running Power Automate desktop flow
 
 ## Avoid time-outs and distribute load across machines
 
-Desktop flows will queue for up to six hours until a machine is available. Adopt one of the recommended strategies to distribute the workload and ensure that all desktop flows run successfully without overloading the target machines.
+Desktop flows queue for up to six hours until a machine is available. Adopt one of the recommended strategies to distribute the workload and ensure that all desktop flows run successfully without overloading the target machines.
 
 - Spread the load over time by planning your desktop flows to run at different times. This practice works best if you have a limited set of machines and can control the triggers that start your desktop flows.
 
 - Create machine groups that run desktop flows with identical configurations in parallel. To find more information about machine groups, go to [Manage machine groups](manage-machine-groups.md).
 
-- To run desktop flows in unattended mode, you need to anticipate the number of desktop flows your organization plans to run in parallel and then purchase an adequate amount of Process licenses. To find more information about the Process license, go to [Power Automate Process license](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license).
+- Anticipate the number of unattended desktop flows your organization plans to run in parallel and then purchase an adequate number of Process licenses. To find more information about the Process license, go to [Power Automate Process license](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license).
 
 All the presented strategies prevent desktop flows from competing to run on the same device and failing due to time-outs.
 
 > [!NOTE]
 >
-> If a target device becomes offline due to a restart or connectivity issues, desktop flows will wait up to six hours before failing. This wait time allows for transient machine states and enables you to run automation successfully even if the devices go through restart or update cycles.
+> If a target device becomes offline due to a restart or connectivity issues, desktop flows wait up to six hours before failing. This wait time allows for transient machine states and enables you to run automation successfully even if the devices go through restart or update cycles.
 
 ## Support long-running desktop flows
 
