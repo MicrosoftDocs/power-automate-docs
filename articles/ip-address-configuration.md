@@ -11,6 +11,7 @@ ms.date: 03/07/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 ---
+# IP Address Configuration for Power Automate
 ## Allow flows to call your services
 ### Allow Connector calls to your services
 Power Automate flows comprise of actions. Actions can utilize both “Connector actions” and native actions such as “HTTP/ HTTP + Swagger”. This section describes the firewall configuration required to enable the “Connector Actions” to call services hosted in your network. 
