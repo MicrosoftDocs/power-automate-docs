@@ -17,22 +17,30 @@ search.audienceType:
 
 # Structure of semantic model in Fabric workspace (preview)
 
-When a process is published to Power BI, a default data source and a corresponding report are created. The following screenshot is an example of the structure of the dataset in the published data source in Power BI.
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+
+The new optimized DirectLake semantic model leads to faster and more memory efficient analysis of processes. By saving on memory, customers can analyze larger processes and save on costs by using smaller Fabric capacities to perform analysis.
+In addition, a simpler and more intuitive Power BI semantic model data structure is used, which allows customers to dig deeper into their insights with less time and effort. 
+
+> [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
+## Semantic model description
+
+When a process is published to Fabric workspace, a new semantic model and a corresponding report are created. The following screenshot is an example of the structure of the semantic model published to Fabric.
 
 For an enlarged view of the screenshot, select the magnifying glass in the lower-right corner.
 
-[ ![Power BI data model structure.](media/process-mining-pbi-data-structure/DataModel2.png)](media/process-mining-pbi-data-structure/DataModel2.png#lightbox)
+[ ![Power BI DirectLake semantic model structure.](media/process-mining-fabric-semantic-model/DataModel.png)](media/process-mining-fabric-semantic-model/DataModel.png#lightbox)
 
 ### Relationships
 
-Relationships necessary for filtering and interconnectivity of visuals are predefined in the published data model. There isn't a need to manually create more relationships unless other data sources are connected. For this scenario, use the Power BI composite data model and build relationships on top of that model.
+Relationships necessary for filtering and interconnectivity of visuals are predefined in the published data model. There isn't a need to manually create more relationships unless other data sources are connected. For this scenario, use the Power BI composite semantic model and build relationships on top of that model.
 
 ### Data model summary
 
 From a logical perspective, the data model consists of many entity subsets as depicted in the first paragraph of this section.
 
 - **Process Data**: All process related data without filtering and calculated measures.
-- **View Data**: Entities giving the process data into the context of the created process analytical view&mdash;applied filters, calculated measures, and custom metrics.
 - **Visuals data**: Entities providing precalculated data necessary for process mining custom visuals to display.
 - **Helping entities**: Other entities needed by Power BI.
 
@@ -44,33 +52,19 @@ The content of process data entities changes in specific scenarios.
 
 - When process model data is refreshed.
 - When a new view is created.
-
-Working with these entities allows you to access the raw process data not influenced by the applied filters.
-
-|Entity|Description|
-|------|-----------|
-|Cases|List of all cases in the process. Each case contains a unique case identifier index, Case ID display, and values for each of the *case attributes*, as defined in the mapping setup step.|
-|Events|List of all events in the process. Each event references a case into which it belongs using `Case_ID`, has a unique event identifier index, and values for each of the *event attributes*, as defined in the mapping setup step.|
-|AttributesMetadata|Entity holds the definition of all case/event-level attributes as defined in the import of event log data into process model. It includes its datatype, attribute type, and attribute level being either case or event.|
-|MiningAttributeLabels|Holds values of available mining attributes. A process view can be set up to look at the process from different perspective based on the selected mining attribute. If no other mining attribute is available, the entity holds the values of `Activity` attribute.|
-|CustomMetricsMetadata|Includes the definition of custom metrics created in the Process Mining desktop app. Based on the context in which the metric is available, many entries might exist for the same custom metric, having a different `Type`. It also includes the custom metric result data type that can be used for conversion or formatting of the values.|
-|Views|List of available (published) views created in the Power Automate desktop app. Only public process views are published to the data set. Entries can be used to filter report, report page, and visual to visualize only data from the specific process view.|
-
-#### View Data
-
-The content of view data entities changes in the following scenarios.
-
-- When a user changes the filtering definition in any process view.
 - When a new custom metric is created.
+- When a user changes the filtering definition in any process view.
 
-View data entities allows you to access process data influenced by the applied filters and accesses the measures calculated based on the applied filters. As both case and event level filters can be used in the definition of a process view, it is recommended to work with view data entities, as the influence on the resulting dataset might be significant.
+Working with these entities allows you to access the raw process data as well as process data influenced by the applied filters and accesses the measures calculated based on the applied filters. 
 
 |Entity|Description|
 |------|-----------|
-|ViewCases|Entity holds information on which cases are included in which view. In addition, it includes the information for which variant the case is following and precalculated measures for the case. If a case is included in several views, the entity holds a record for each case-view combination. This is important, as some of the values of calculated case measures depend on the filtering criteria set in the view. It also holds any precalculated custom metric values (if defined in process context and valid on case level). The case record is uniquely identified by the **Index** column.|
-|ViewEvents|Entity holds information on which events are included in which view and which case they are connected to (event level process view filters might modify the events included in the case). In addition, it includes precalculated measures for the event. If an event is included in several views, the entity holds a record for each event-view combination. This is important, as some of the values of calculated event measures depend on the filtering criteria set in the view. It also holds any precalculated custom metric values (if defined in process context and valid on event level). The event record is uniquely identified by the **Index** column.|
-|ViewTransitions|Entity holds information on which transitions are included in which view. In addition, it includes precalculated measures for the transition. If a transition is included in several views, the entity holds a record for each transition-view combination. This is important, as some of the values of calculated transition measures depend on the filtering criteria set in the view. It also holds any precalculated custom metric values (if defined in process context and valid on transition / edge level). The transition record is uniquely identified by the **Index** column. |
-|ViewParallelTransitions|Entity holds a record for a combination of transition and case, when that transition is considered parallel in that case in a particular view.|
+|Cases|List of all cases and their attributes in the process. Each case contains a unique Case ID display, and values for each of the *case attributes*, as defined in the mapping setup step. Combine with *CaseMetrics* entity to get a complete case information.|
+|Events|List of all event attributes in the process. Each event has a unique event identifier index, and values for each of the *event attributes*, as defined in the mapping setup step. Combine with *ProcessMapMetrics* entity filtered by `Is_Node` column to get a complete event information.|
+|CaseMetrics|Entity holds all case level metrics related to a specific combination of case and view. *Case level custom metrics* defined in Power Automate Process Mining desktop app will be added to this entity.|
+|AttributesMetadata|Entity holds the definition of all case/event-level attributes as defined in the import of event log data into process model. It includes its datatype, attribute type, and attribute level being either case or event.|
+|MiningAttributes|Holds values of available mining attributes. A process view can be set up to look at the process from different perspective based on the selected mining attribute. If no other mining attribute is available, the entity holds the values of `Activity` attribute.|
+|Views|List of available (published) views created in the Power Automate Process Mining desktop app. Only public process views are published to the data set. Entries can be used to filter report, report page, and visual to visualize only data from the specific process view.|
 |Variants|Entity holds the relations between variants and process views. A record is included if a particular variant is included in a view after the filtering criteria are taken into account.|
 
 #### Visuals data
@@ -79,24 +73,24 @@ Visuals data entities are recalculated only when there's a data refresh for the 
 
 |Entity|Description|
 |------|-----------|
-|ProcessMapMetrics|Aggregated measures for all nodes and transitions in the process model that are needed for visualization in process map custom visual.|
-|VariantDNA|Aggregated measures and relations to events and attributes that are needed for visualization in variant DNA custom visual.|
+|ProcessMapMetrics|Aggregated measures for all nodes and transitions in the process model that are needed for visualization in process map custom visual. This entity combines event (node) information and edge (transition) information - to use the events or edges in your other visuals, filter by the value in `Is_Node` column. *Event level custom metrics* defined in Power Automate Process Mining desktop app will be added to this entity.|
 
 #### Other entities
 
 |Entity|Description|
 |------|-----------|
 |LocalizationTable|Internal table used for localization purpose.|
-|LocalizationMeasures|Internal measures used for localization purpose.|
-|ReportMeasures|Precreated and preformatted most frequent measures that can be used for summary KPIs in the process report. Their evaluation might be subject to filtering and interactive selection in Power BI report.|
 
-## Power BI composite data model
+## Power BI composite model
 
-We recommend that you use the Power BI composite data model on top of the data model published by Power Automate Process Mining and create necessary modifications there for the following scenarios.
+   > [!IMPORTANT]
+   > The semantic model is created in a DirectLake access mode, but it's option is set to Automatic. This means that using a non-optimal DAX queries or incorrectly setting composite model might result in fallback to DirectQuery mode - this means, that your report will not break, but you might experience lower performance.
+   
+We recommend that you use the Power BI composite model on top of the semantic model published by Power Automate Process Mining and create necessary modifications there for the following scenarios.
 
 - When more data sources are needed
 - When more entities should be created
 - When more relationships are needed
 - When custom DAX queries are needed
 
-To learn more about creating Power BI composite data models, go to [Use composite models in Power BI Desktop](/power-bi/transform-model/desktop-composite-models).
+To learn more about creating Power BI composite data models on top of DirectLake semantic models, go to [Building a composite models on a semantic model or model](/power-bi/transform-model/desktop-composite-models#building-a-composite-model-on-a-semantic-model-or-model).
