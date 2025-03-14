@@ -144,7 +144,7 @@ Load your process analytics in Fabric to start customizing your report.
 
 8.	Follow the rest of the wizard steps based on the selected ingestion method.
 
-9.	After the process is successfully analyzed, you can access the default report created in the workspace, newly created semantic model and delta tables created in your Fabric Lakehouse.
+9.	After the process is successfully analyzed, you can access the default report created in the workspace, [newly created semantic model](process-mining-fabric-semantic-model.md) and delta tables created in your Fabric Lakehouse.
 
 ## Customize reports in Fabric workspace
 
