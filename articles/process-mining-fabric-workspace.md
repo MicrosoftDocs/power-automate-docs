@@ -152,15 +152,15 @@ With the powerful integration of the process mining capability with Power BI, yo
 
  To be able to do this, make sure you completed these steps in this article:
 
-- [Connect your Power BI workspace to the process mining capability](#connect-your-power-bi-workspace-to-the-process-mining-capability)
+- [Connect your Fabric workspace to the process mining capability](#set-up-your-workspace)
 
-- [Create your own custom Power BI workspace](#create-your-own-custom-power-bi-workspace)
+- [Create your own custom Fabric workspace](#create-your-own-custom-fabric-workspace)
 
-- [Load your process analytics in Power BI](#load-your-process-analytics-in-power-bi)
+- [Load your process analytics in Fabric](#load-your-process-analytics-in-fabric)
 
 After completing these steps, return to the analytics page of your process in the process mining capability.
 
-1. Select **Open in Power BI**. If you don't see this button, make sure you completed the steps in the [Load your process analytics in Fabric](#load-your-process-analytics-in-power-bi) section in this article.
+1. Select **Open in Power BI**. If you don't see this button, make sure you completed the steps in the [Load your process analytics in Fabric](#load-your-process-analytics-in-fabric) section in this article.
 
     You're redirected to a Power BI web screen that shows you a report of your process.
 
