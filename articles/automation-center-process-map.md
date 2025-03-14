@@ -21,7 +21,7 @@ search.audienceType:
 
 Building on the robust monitoring and observability features of the Automation Center, we're excited to introduce the **process map (preview)**. This new feature enhances transparency by displaying flow dependencies and offers an intuitive, streamlined, and process-centric experience for monitoring and troubleshooting end-to-end automations. It's optimized to quickly identify root causes, assess the impact of failed or skipped automations, and enable faster recovery, all while providing a comprehensive view of the entire process without the need to navigate through multiple user interfaces.
 
-:::image type="content" source="media/automation-center/process-map.png" alt-text="Screenshot and environment-level setting allowing you to configure when desktop flow logs should be captured." lightbox="media/automation-center/process-map.png":::
+:::image type="content" source="media/automation-center/process-map.png" alt-text="Screenshot of the process map tab in the automation center." lightbox="media/automation-center/process-map.png":::
 
 ## Create or view a process map
 
