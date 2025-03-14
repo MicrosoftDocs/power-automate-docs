@@ -46,7 +46,7 @@ If this is your first time you select the process map icon, you're prompted to p
 ## Known issues and limitations
 
 - Child desktop flow runs are currently not shown in the map.
-- You must be an Environment maker or have similar permissions in your environment to see and create process maps.
+- You must be an Environment maker or have similar permissions for the business process table in your environment to see and create process maps.
 - Parallelization, such a **Apply each** with concurrency setting or **RunAfter** customization in cloud flow aren't represented in the process map. Child runs will be presented in the order they were defined in the flow.
 - Dynamic Flow selection using a formula instead of the standard picker isn't supported, such children are ignored.
 - We won't load more than 100 child runs for a given run (if flow A runs 150 instances of flow B, we load the first 100 and continue the recursion).
