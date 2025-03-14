@@ -12,12 +12,14 @@ ms.author: samathur
 ms.reviewer: angieandrews
 ---
 # IP Address Configuration for Power Automate
+This document describes the required configuration for both Power Automate to connect to services in your network as well as for Makers and Users to get to Power Automate.
+
 ## Allow flows to call your services
+The following two sections list configuration for Power Automate to connect to services in your network 
 ### Allow Connector calls to your services
 Power Automate flows comprise of actions. Actions can utilize both “Connector actions” and native actions such as “HTTP/ HTTP + Swagger”. This section describes the firewall configuration required to enable the “Connector Actions” to call services hosted in your network. 
 Please note this configuration is only needed if you're restricting inbound or outbound IP addresses on your network (for example, through a firewall).
-Configuration required:
- - Allow-list the **AzureConnectors** service tag
+Configuration required: Allow-list the **AzureConnectors** service tag
 
 ### Allow list HTTP/ HTTP + Swagger calls to your services
 For flows consisting of actions including HTTP/ HTTP + Swagger, add the network configuration to allow ALL of the following
