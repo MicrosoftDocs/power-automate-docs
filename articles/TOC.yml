@@ -872,7 +872,7 @@
       href: process-mining-visualize.md
     - name: Customize a report with your own Power BI workspace
       href: process-mining-pbi-workspace.md
-    - name: Use optimized data structure in Power BI report (preview)
+    - name: Use optimized data structure in Power BI report
       href: process-mining-pbi-data-structure.md
     - name: Application lifecycle management (ALM)
       items:
