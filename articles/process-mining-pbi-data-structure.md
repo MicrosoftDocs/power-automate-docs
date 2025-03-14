@@ -15,15 +15,11 @@ search.audienceType:
   - enduser
 ---
 
-# Use the optimized data structure in a Power BI report (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Use the optimized data structure in a Power BI report
 
 The new optimized data structure leads to faster and more memory efficient analysis of processes. By saving on memory, customers can analyze larger processes and save on costs by using smaller Power BI capacities to perform analysis.
 
 In addition, a more intuitive Power BI model data structure is used, which allows customers to dig deeper into their insights with less time and effort. To learn more about this data model, go to the [Power BI data model structure](#power-bi-data-model-structure) section this article.
-
-> [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Previous optimized structure to deprecate soon
 
@@ -33,14 +29,14 @@ The new optimized data structure takes place in the background, so you'll see it
   
 ## Enable XMLA read/write setting
 
-To use the optimized data structure, the XMLA endpoint property must be enabled for read-write. By default, Premium capacity or Premium Per User semantic model workloads have the XMLA endpoint property setting enabled for read-only.
+To use the optimized data structure, the XMLA endpoint property must be enabled for read-write. By default, Premium capacity, Fabric capcity or Premium Per User semantic model workloads have the XMLA endpoint property setting enabled for read-only.
 
    > [!IMPORTANT]
    > Enabling XMLA can only be done by the capacity admin.
 
 ### Enable read-write for a Premium capacity semantic model workload
 
-1. Sign in to [Power BI](https://msit.powerbi.com/).
+1. Sign in to [Power BI](https://app.powerbi.com/).
 1. Select **Settings** > **Admin portal**.
 1. In the Power BI **Admin portal**, select **Capacity settings** > **Power BI Premium** > *capacity name*.
 1. Expand **Power BI Workloads**.
@@ -52,12 +48,24 @@ To use the optimized data structure, the XMLA endpoint property must be enabled 
 
 ### Enable read-write for a Premium Per User semantic model workload
 
-1. Sign in to [Power BI](https://msit.powerbi.com/).
+1. Sign in to [Power BI](https://app.powerbi.com/).
 1. Select **Settings** > **Admin portal**.
 1. In the Power BI **Admin portal**, select **Premium Per User**.
 1. Expand **Semantic model workload** settings.
 1. In the **XMLA Endpoint** setting, select **Read Write**.
 
+### Enable read-write for a Fabric capacity semantic model workload
+
+1. Sign in to [Power BI](https://app.powerbi.com/).
+1. Select **Settings** > **Admin portal**.
+1. In the Power BI **Admin portal**, select **Capacity settings** > **Fabric Capacity** > *capacity name*.
+1. Expand **Power BI Workloads**.
+1. In the **XMLA Endpoint** setting, select **Read Write**.
+
+    The **XMLA Endpoint** setting applies to all workspaces and semantic models assigned to the capacity.
+
+    :::image type="content" source="media/process-mining-pbi-data-structure/XMLAEndpoint.svg" alt-text="Screenshot of the XMLA endpoint settings.":::
+   
 ### Enable using the optimized data structure
 
 For new processes that use a custom workspace, the optimized data structure is set to **true** by default. To enable it or confirm it is enabled, perform the following steps.
