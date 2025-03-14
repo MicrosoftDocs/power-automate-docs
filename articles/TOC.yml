@@ -1260,8 +1260,6 @@
   items:
   - name: Microsoft Credentials for Power Platform
     href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl
-  - name: Webinars
-    href: webinars.md
   - name: Blog
     href: https://make.powerautomate.com/blog/
   - name: Forums
