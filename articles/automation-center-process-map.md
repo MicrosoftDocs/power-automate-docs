@@ -30,7 +30,7 @@ search.audienceType:
 
 - Child desktop flow runs are currently not shown in the map.
 - You must be an Environment maker or have similar permissions in your environment to see and create process maps.
-- Parallelization (Apply each with concurrency) or RunAfter customization in cloud flow is not supported. Children will be presented in the order they are define in the flow.
+- Parallelization, such a **Apply each**with concurrency setting or **RunAfter** customization in cloud flow are not supported. Child runs will be presented in the order they were defined in the flow.
 - Dynamic Flow selection using a formula instead of the standard picker is not supported, such children will be ignored.
 - We will not load more than 100 child runs for a given run (if flow A runs 150 instances of flow B, we will load the first 100 and continue the recursion).
 - Beyond a depth of 50, the child process map will not be recomputed if the dependent flow is updated.
