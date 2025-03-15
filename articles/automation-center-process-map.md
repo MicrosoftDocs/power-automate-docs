@@ -51,9 +51,9 @@ When you select a flow box on the map, its side panel opens, providing detailed 
 |  :::image type="icon" source="media/automation-center/legend-start-end.png" lightbox="media/automation-center/legend-start-end.png":::  | Represents the start end different end states of a process. |
 | :::image type="icon" source="media/automation-center/legend-cf.png" lightbox="media/automation-center/legend-cf.png":::  | Represents a cloud flow.  |
 | :::image type="icon" source="media/automation-center/legend-df.png" lightbox="media/automation-center/legend-df.png":::   | Represents a desktop flow. |
-| :::image type="icon" source="media/automation-center/legend-loop.png" lightbox="media/automation-center/legend-loop.png":::  | Represents a loop scenario where a parent flow calls an child flow n-times. |
+| :::image type="icon" source="media/automation-center/legend-loop.png" lightbox="media/automation-center/legend-loop.png":::  | Represents a loop scenario where a parent flow calls a child flow n-times. |
 |  :::image type="icon" source="media/automation-center/legend-stack.png" lightbox="media/automation-center/legend-stack.png":::  | Represents the total number of times this flow was run by various parent flow runs. Each instance of the flow was triggered by a different parent flow run, rather than being repeatedly called within a single parent run loop |
-| :::image type="icon" source="media/automation-center/legend-conditional.png" lightbox="media/automation-center/legend-conditional.png":::  | Represents a conditional or optional flow. This means that the flow connected by the dotted line is not always executed but depends on certain conditions being met. |
+| :::image type="icon" source="media/automation-center/legend-conditional.png" lightbox="media/automation-center/legend-conditional.png":::  | Represents a conditional or optional flow. This means that the flow connected by the dotted line isn't always executed but depends on certain conditions being met. |
 |  :::image type="icon" source="media/automation-center/legend-missed.png" lightbox="media/automation-center/legend-missed.png":::  | Represents a missed or skipped flow based on conditional logic or an upstream error.|
 |  :::image type="icon" source="media/automation-center/legend-unattended.png" lightbox="media/automation-center/legend-unattended.png":::  | Represents an unattended desktop flow run.|
 |  :::image type="icon" source="media/automation-center/legend-attended.png" lightbox="media/automation-center/legend-attended.png":::  | Represents an attended desktop flow run. |
@@ -64,7 +64,7 @@ When you select a flow box on the map, its side panel opens, providing detailed 
 
 The **Runs** view offers a comprehensive look at the entire process by displaying both the main flow run and its child runs. This feature allows users to easily track and understand how each part of the process is executed, identify any issues or bottlenecks, and ensure that all steps are completed successfully. It enhances visibility into complex workflows, making them easier to manage and optimize.
 
-The **Overview** view presents the design-time process structure, including all connected children. This view is ideal for quickly understanding the various sub-processes within the process, even if there are no runs yet. In future releases, this view mode will also serve as the home for aggregated process information and additional flow-level configurations.
+The **Overview** view presents the design-time process structure, including all connected children. This view is ideal for quickly understanding the various subprocesses within the process, even if there are no runs yet. In future releases, this view mode will also serve as the home for aggregated process information and other flow-level configurations.
 
 > [!NOTE]
 > Preview features in the Automation Center, such as the process map (preview), can be turned off via the Power Platform admin center. The toggle to control this can be found under the **Power Automate Automation center** section.
