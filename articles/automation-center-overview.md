@@ -23,7 +23,7 @@ The automation center provides comprehensive monitoring and troubleshooting expe
 
 ## Data and visualization strategy
 
-The information displayed on the [**Overview**](#overview-tab) and [**Runs**](#runs-tab) pages is based on cloud and desktop flow run data that is stored in Microsoft Dataverse. These pages are designed to provide you with a top-level view of your flow run activities, including child cloud or desktop flow runs associated with a particular top-level flow. This approach enables you to monitor the entire automation from start to end. It allows you to determine whether the overall automation succeeded or failed, providing data on the total of the runs, among many other metrics.
+The information displayed on the [**Overview**](#overview-tab), [**Runs**](#runs-tab) and [**Process map (preview)**]() pages is based on cloud and desktop flow run data that is stored in Microsoft Dataverse. These pages are designed to provide you with a top-level view of your flow run activities, including child cloud or desktop flow runs associated with a particular top-level flow. This approach enables you to monitor the entire automation from start to end. It allows you to determine whether the overall automation succeeded or failed, providing data on the total of the runs, among many other metrics.
 
 > [!NOTE]
 >
@@ -91,6 +91,10 @@ Copilot is designed to assist with the analysis of automation activity, work que
 ## Runs tab
 
 This tab presents a consolidated view of cloud and desktop flow run data displayed in a hierarchical list view. The data is organized based on top-level flows. This view is useful in scenarios where individual flow session runs succeeded, but other dependent runs failed, ultimately resulting in the top-level flow's failure. By displaying these runs in connection to their parent, we're enhancing automation monitoring and efficient root cause analysis of exceptions.
+
+## Process map (preview) tab
+
+This tab is designed to make troubleshooting and monitoring in Power Automate more efficient and transparent. It provides a clear process-centric view of the main orchestrating flow and all its child flows that run during a process run. It also understands important structural details about the flows, like conditions, so it can show flows that are part of the process but didn't run because of certain conditional logic or errors. [Learn more](automation-center-process-map.md)
 
 ## Work queues tab
 
