@@ -19,7 +19,7 @@ search.audienceType:
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-Building on the robust monitoring and observability features of the Automation Center, we're excited to introduce the **process map (preview)**. This new feature enhances transparency by displaying flow dependencies and offers an intuitive, streamlined, and process-centric experience for monitoring and troubleshooting end-to-end automations. It's optimized to quickly identify root causes, assess the impact of failed or skipped automations, and enable faster recovery, all while providing a comprehensive view of the entire process without the need to navigate through multiple user interfaces.
+Building on the robust monitoring and observability features of the Automation Center, we're excited to introduce the **process map (preview)**. This new feature enhances transparency by displaying process-centric flow dependencies and offers an intuitive, streamlined, and process-centric experience for monitoring and troubleshooting end-to-end automations.
 
 :::image type="content" source="media/automation-center/process-map.png" alt-text="Screenshot of the process map tab in the automation center." lightbox="media/automation-center/process-map.png":::
 
@@ -38,7 +38,33 @@ If this is your first time you select the process map icon, you're prompted to p
 
 ## Rename or delete a process map
 
-## Interact with the process map
+### Working with the process map
+
+The process map is designed to make troubleshooting and monitoring in Power Automate more efficient and transparent. It provides a clear view of the main orchestrating flow and all its child flows that run during a process run. It also understands important structural details about the flows, like conditions, so it can show flows that are part of the process but didn't run because of certain conditional logic or errors. This is particularly helpful for understanding how a problem in one part of the process can affect other parts, and it helps you take the right countermeasures to fix issues.
+
+When you select a flow box on the map, its side panel opens, providing detailed contextual information on run, connection, and design-time aspects. This allows you to efficiently scan through the multi-run history and better understand the root cause and impact of errors without having to navigate through different individual runs on flow details or other pages. The efficiency is especially helpful when troubleshooting flows that are called in a loop by their parent, potentially producing tens or even hundreds of runs per process run.
+
+### Process map icons and visualizations
+
+| Icon | Description |
+|------|-------------|
+|  :::image type="icon" source="media/automation-center/legend-start-end.png" lightbox="media/automation-center/legend-start-end.png":::  | Represents the start end different end states of a process. |
+| :::image type="icon" source="media/automation-center/legend-cf.png" lightbox="media/automation-center/legend-cf.png":::  | Represents a cloud flow.  |
+| :::image type="icon" source="media/automation-center/legend-df.png" lightbox="media/automation-center/legend-df.png":::   | Represents a desktop flow. |
+| :::image type="icon" source="media/automation-center/legend-loop.png" lightbox="media/automation-center/legend-loop.png":::  | Represents a loop scenario where a parent flow calls an child flow n-times. |
+|  :::image type="icon" source="media/automation-center/legend-stack.png" lightbox="media/automation-center/legend-stack.png":::  | Represents the total number of times this flow was run by various parent flow runs. Each instance of the flow was triggered by a different parent flow run, rather than being repeatedly called within a single parent run loop |
+| :::image type="icon" source="media/automation-center/legend-conditional.png" lightbox="media/automation-center/legend-conditional.png":::  | Represents a conditional or optional flow. This means that the flow connected by the dotted line is not always executed but depends on certain conditions being met. |
+|  :::image type="icon" source="media/automation-center/legend-missed.png" lightbox="media/automation-center/legend-missed.png":::  | Represents a missed or skipped flow based on conditional logic or an upstream error.|
+|  :::image type="icon" source="media/automation-center/legend-unattended.png" lightbox="media/automation-center/legend-unattended.png":::  | Represents an unattended desktop flow run.|
+|  :::image type="icon" source="media/automation-center/legend-attended.png" lightbox="media/automation-center/legend-attended.png":::  | Represents an attended desktop flow run. |
+|  :::image type="icon" source="media/automation-center/legend-runs.png" lightbox="media/automation-center/legend-local.png":::  | Represents the runtime view mode of the process. |
+|  :::image type="icon" source="media/automation-center/legend-overview.png" lightbox="media/automation-center/legend-local.png":::  | Represents the design-time view of the process. |
+
+### Runs vs. Overview view
+
+The **Runs** view offers a comprehensive look at the entire process by displaying both the main flow run and its child runs. This feature allows users to easily track and understand how each part of the process is executed, identify any issues or bottlenecks, and ensure that all steps are completed successfully. It enhances visibility into complex workflows, making them easier to manage and optimize.
+
+The **Overview** view presents the design-time process structure, including all connected children. This view is ideal for quickly understanding the various sub-processes within the process, even if there are no runs yet. In future releases, this view mode will also serve as the home for aggregated process information and additional flow-level configurations.
 
 > [!NOTE]
 > Preview features in the Automation Center, such as the process map (preview), can be turned off via the Power Platform admin center. The toggle to control this can be found under the **Power Automate Automation center** section.
