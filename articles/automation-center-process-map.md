@@ -23,6 +23,11 @@ Building on the robust monitoring and observability features of the Automation C
 
 :::image type="content" source="media/automation-center/process-map.png" alt-text="Screenshot of the process map tab in the automation center." lightbox="media/automation-center/process-map.png":::
 
+[!INCLUDE preview-note]
+
+> [!NOTE]
+> This feature is currently rolling out and may not yet be available in your area. If you'd like to try it out today, you can either use an existing **preview** environment or create a new one as described [here](/power-platform/admin/early-release).
+
 ## Working with the process map
 
 The process map is designed to make troubleshooting and monitoring in Power Automate more efficient and transparent. It provides a clear view of the main orchestrating flow and all its child flows that run during a process run. It also understands important structural details about the flows, like conditions, so it can show flows that are part of the process but didn't run because of certain conditional logic or errors. This is particularly helpful for understanding how a problem in one part of the process can affect other parts, and it helps you take the right countermeasures to fix issues.
