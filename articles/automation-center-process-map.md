@@ -1,5 +1,5 @@
 ---
-title: Boost process-centric observability with process map
+title: Enhanced process-centric observability with process map
 description: Enhance your automation's observability  and troubleshooting efficiency story with the Automation Center's new process map
 ms.topic: conceptual
 ms.date: 03/14/2025
@@ -25,40 +25,42 @@ Building on the robust monitoring and observability features of the Automation C
 
 ## Create or view a process map
 
-To create a process map in Power Automate, follow these steps:
+To create or view a process map in Power Automate, you have two options:
 
-1. Navigate to the Automation center and select the Runs tab.
-2. Hover over a top-level flow run in that list that has child runs (although not required as long as this is a run that has no parent run).
-3. Select the process map icon next to the name to generate the map.
+### Option 1: Using the Runs tab
 
-If this is your first time you select the process map icon, you're prompted to provide a process name and then select 'Create'. Once the process map is generated in the backend, you see the process name next to the flow name you in the run list. Should the process column not be visible, you can add it through the 'show/hide column' link on the top-right corner of the runs list.
+1. Navigate to the Automation center and select the **Runs** tab.
+2. Hover over a top-level flow run and select the process map icon next to the name to generate the map.
+3. If this is your first time using the process map icon, you're prompted to provide a process name and then select 'Create'.
+
+### Option 2: Using the Process map (preview) tab
+
+1. Navigate to the Automation center and select the **Process map (preview)** tab.
+2. On the map, you see a drop-down box in the upper left corner that lists the processes you have access to.
+3. Select the three dots (ellipsis) in the drop-down menu and select 'Create a new process map'.
+
+Once the process map is generated in the backend, the process name appears next to the flow name in the run list. If the process column isn't visible, you can add it by using the 'Show/hide columns' link located at the top-right corner of the runs list.
 
 > [!NOTE]
 > Depending on the volume and complexity of child flow dependencies of your flow, this process could take up to 10 minutes to complete. You can also close the dialog that says 'Analyzing flow dependencies' and return later to view your runs in a process-centric view.
 
 ## Rename or delete a process map
 
-### Working with the process map
+To rename or delete a process in Power Automate, follow these steps:
+
+1. Navigate to the Automation center and select the Process map (preview) tab.
+2. Once on the map, you see a drop-down box in the upper left corner that lists the processes you have access to.
+3. Select the three dots (ellipsis) next to the process name in the drop-down menu to view the list of processes.
+4. From here you can rename or delete your process now.
+
+> [!NOTE]
+> Deleting or renaming a process **does not** delete any of the flows or runs associated with the process.
+
+## Working with the process map
 
 The process map is designed to make troubleshooting and monitoring in Power Automate more efficient and transparent. It provides a clear view of the main orchestrating flow and all its child flows that run during a process run. It also understands important structural details about the flows, like conditions, so it can show flows that are part of the process but didn't run because of certain conditional logic or errors. This is particularly helpful for understanding how a problem in one part of the process can affect other parts, and it helps you take the right countermeasures to fix issues.
 
 When you select a flow box on the map, its side panel opens, providing detailed contextual information on run, connection, and design-time aspects. This allows you to efficiently scan through the multi-run history and better understand the root cause and impact of errors without having to navigate through different individual runs on flow details or other pages. The efficiency is especially helpful when troubleshooting flows that are called in a loop by their parent, potentially producing tens or even hundreds of runs per process run.
-
-### Process map icons and visualizations
-
-| Icon | Description |
-|------|-------------|
-|  :::image type="icon" source="media/automation-center/legend-start-end.png" lightbox="media/automation-center/legend-start-end.png":::  | Represents the start end different end states of a process. |
-| :::image type="icon" source="media/automation-center/legend-cf.png" lightbox="media/automation-center/legend-cf.png":::  | Represents a cloud flow.  |
-| :::image type="icon" source="media/automation-center/legend-df.png" lightbox="media/automation-center/legend-df.png":::   | Represents a desktop flow. |
-| :::image type="icon" source="media/automation-center/legend-loop.png" lightbox="media/automation-center/legend-loop.png":::  | Represents a loop scenario where a parent flow calls a child flow n-times. |
-|  :::image type="icon" source="media/automation-center/legend-stack.png" lightbox="media/automation-center/legend-stack.png":::  | Represents the total number of times this flow was run by various parent flow runs. Each instance of the flow was triggered by a different parent flow run, rather than being repeatedly called within a single parent run loop |
-| :::image type="icon" source="media/automation-center/legend-conditional.png" lightbox="media/automation-center/legend-conditional.png":::  | Represents a conditional or optional flow. This means that the flow connected by the dotted line isn't always executed but depends on certain conditions being met. |
-|  :::image type="icon" source="media/automation-center/legend-missed.png" lightbox="media/automation-center/legend-missed.png":::  | Represents a missed or skipped flow based on conditional logic or an upstream error.|
-|  :::image type="icon" source="media/automation-center/legend-unattended.png" lightbox="media/automation-center/legend-unattended.png":::  | Represents an unattended desktop flow run.|
-|  :::image type="icon" source="media/automation-center/legend-attended.png" lightbox="media/automation-center/legend-attended.png":::  | Represents an attended desktop flow run. |
-|  :::image type="icon" source="media/automation-center/legend-runs.png" lightbox="media/automation-center/legend-local.png":::  | Represents the runtime view mode of the process. |
-|  :::image type="icon" source="media/automation-center/legend-overview.png" lightbox="media/automation-center/legend-local.png":::  | Represents the design-time view of the process. |
 
 ### Runs vs. Overview view
 
@@ -68,6 +70,22 @@ The **Overview** view presents the design-time process structure, including all 
 
 > [!NOTE]
 > Preview features in the Automation Center, such as the process map (preview), can be turned off via the Power Platform admin center. The toggle to control this can be found under the **Power Automate Automation center** section.
+
+### Process map icons and visualizations
+
+| Icon | Description |
+|------|-------------|
+|  :::image type="icon" source="media/automation-center/legend-start-end.png":::  | Represents the start end different end states of a process. |
+| :::image type="icon" source="media/automation-center/legend-cf.png":::  | Represents a cloud flow.  |
+| :::image type="icon" source="media/automation-center/legend-df.png":::   | Represents a desktop flow. |
+| :::image type="icon" source="media/automation-center/legend-loop.png":::  | Represents a loop scenario where a parent flow calls a child flow n-times. |
+|  :::image type="icon" source="media/automation-center/legend-stack.png":::  | Represents the total number of times this flow was run by various parent flow runs. Each instance of the flow was triggered by a different parent flow run, rather than being repeatedly called within a single parent run loop |
+| :::image type="icon" source="media/automation-center/legend-conditional.png":::  | Represents a conditional or optional flow. This means that the flow connected by the dotted line isn't always executed but depends on certain conditions being met. |
+|  :::image type="icon" source="media/automation-center/legend-missed.png":::  | Represents a missed or skipped flow based on conditional logic or an upstream error.|
+|  :::image type="icon" source="media/automation-center/legend-unattended.png":::  | Represents an unattended desktop flow run.|
+|  :::image type="icon" source="media/automation-center/legend-attended.png":::  | Represents an attended desktop flow run. |
+|  :::image type="icon" source="media/automation-center/legend-runs.png":::  | Represents the runtime view mode of the process. |
+|  :::image type="icon" source="media/automation-center/legend-overview.png":::  | Represents the design-time view of the process. |
 
 ## Known issues and limitations
 
