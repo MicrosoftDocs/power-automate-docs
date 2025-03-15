@@ -94,14 +94,15 @@ To rename or delete a process in Power Automate, follow these steps:
 
 ## Known issues and limitations
 
-- Child desktop flow runs are currently not shown in the map.
-- You must be an Environment maker or have similar permissions for the business process table in your environment to see and create process maps.
-- Parallelization, such a **Apply each** with concurrency setting or **RunAfter** customization in cloud flow aren't represented in the process map. Child runs will be presented in the order they were defined in the flow.
-- Dynamic Flow selection using a formula instead of the standard picker isn't supported, such children are ignored.
-- We won't load more than 100 child runs for a given run (if flow A runs 150 instances of flow B, we load the first 100 and continue the recursion).
-- Generating a process map for flows with moderate to large dependencies may take up to 10 minutes to be complete. An 'Analyzing flow dependencies' dialog is shown when you try to view the map until it finished.
-- It may take several minutes for a process map to be updated after flows shown in that process map are modified. There's currently no visual indicator that a process map is being updated.
-- Process maps may not be kept fully up-to-date when there are more than 50 levels of child flows.
-- Runs of co-owned or shared flows aren't supported yet (users won't see runs of flows that are shared with them).
-- Users with broader access to run data (such as admins or members of the CoE team) might see Unknown flow as flow names. This name might appear if the corresponding cloud flow isn't explicitly shared with the user or the flow was deleted in the meantime.
-- Even though the process map (stored in the business process table in Dataverse) is solution-aware and can be exported and imported into downstream environment, you can't yet create them directly from the solution explorer yet.
+- Creating and viewing process maps requires users to have Environment Maker (or similar roles) with sufficient privileges on the **business process** table.  
+- Runs for co-owned or shared flows aren't supported yet which means users won't see runs for flows shared with them.  
+- Users with broader access (like admins or CoE teams) might see 'Unknown flow' as the flow name. This can happen if the flow isn't explicitly shared with them or it has been deleted.  
+- Child desktop flows aren't displayed yet on the map.  
+- Parallelization features (e.g., cloud flow 'Apply each' with concurrency or 'RunAfter' customizations) aren't visually represented; such child runs appear in the order they were defined.  
+- Dynamic flow selection using a formula (instead of the standard picker) isn't supported; such child flows will be ignored.  
+- For any given run, only the first 100 child flows are loaded (e.g., if flow A triggers 150 instances of flow B, only the first 100 are processed).  
+- Process map definitions may not remain fully current if more than 50 levels of child flows exist.  
+- Runs that were created with a previous structure of the process map will not show flow runs of flows that are not part of the current map anymore.  
+- Generating a process map with moderate to large dependencies can take up to 10 minutes. During this time, an 'Analyzing flow dependencies' dialog is shown.  
+- Updates to a process map after its dependent flow structures are modified may take several minutes, and there’s currently no visual indicator to show the map is updating.  
+- Although process maps are solution-aware and can be exported/imported to downstream environments, they cannot yet be created directly from within the solution explorer.
