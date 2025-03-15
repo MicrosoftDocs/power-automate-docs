@@ -64,7 +64,7 @@ Once the process map is generated in the backend, the process name appears next 
 > [!NOTE]
 > Depending on the volume and complexity of child flow dependencies of your flow, this process could take up to 10 minutes to complete. You can also close the dialog that says 'Analyzing flow dependencies' and return later to view your runs in a process-centric view.
 
-## Rename or delete a process map
+### Rename or delete a process map
 
 To rename or delete a process in Power Automate, follow these steps:
 
