@@ -23,7 +23,7 @@ Building on the robust monitoring and observability features of the Automation C
 
 :::image type="content" source="media/automation-center/process-map.png" alt-text="Screenshot of the process map tab in the automation center." lightbox="media/automation-center/process-map.png":::
 
-[!INCLUDE preview-note]
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 > [!NOTE]
 > This feature is currently rolling out and may not yet be available in your area. If you'd like to try it out today, you can either use an existing **preview** environment or create a new one as described [here](/power-platform/admin/early-release).
