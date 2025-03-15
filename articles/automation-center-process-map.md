@@ -23,6 +23,21 @@ Building on the robust monitoring and observability features of the Automation C
 
 :::image type="content" source="media/automation-center/process-map.png" alt-text="Screenshot of the process map tab in the automation center." lightbox="media/automation-center/process-map.png":::
 
+## Working with the process map
+
+The process map is designed to make troubleshooting and monitoring in Power Automate more efficient and transparent. It provides a clear view of the main orchestrating flow and all its child flows that run during a process run. It also understands important structural details about the flows, like conditions, so it can show flows that are part of the process but didn't run because of certain conditional logic or errors. This is particularly helpful for understanding how a problem in one part of the process can affect other parts, and it helps you take the right countermeasures to fix issues.
+
+When you select a flow box on the map, its side panel opens, providing detailed contextual information on run, connection, and design-time aspects. This allows you to efficiently scan through the multi-run history and better understand the root cause and impact of errors without having to navigate through different individual runs on flow details or other pages. The efficiency is especially helpful when troubleshooting flows that are called in a loop by their parent, potentially producing tens or even hundreds of runs per process run.
+
+### Runs vs. Overview view
+
+The **Runs** view offers a comprehensive look at the entire process by displaying both the main flow run and its child runs. This feature allows users to easily track and understand how each part of the process is executed, identify any issues or bottlenecks, and ensure that all steps are completed successfully. It enhances visibility into complex workflows, making them easier to manage and optimize.
+
+The **Overview** view presents the design-time process structure, including all connected children. This view is ideal for quickly understanding the various subprocesses within the process, even if there are no runs yet. In future releases, this view mode will also serve as the home for aggregated process information and other flow-level configurations.
+
+> [!NOTE]
+> Preview features in the Automation Center, such as the process map (preview), can be turned off via the Power Platform admin center. The toggle to control this can be found under the **Power Automate Automation center** section.
+
 ## Create or view a process map
 
 To create or view a process map in Power Automate, you have two options:
@@ -56,22 +71,7 @@ To rename or delete a process in Power Automate, follow these steps:
 > [!NOTE]
 > Deleting or renaming a process **does not** delete any of the flows or runs associated with the process.
 
-## Working with the process map
-
-The process map is designed to make troubleshooting and monitoring in Power Automate more efficient and transparent. It provides a clear view of the main orchestrating flow and all its child flows that run during a process run. It also understands important structural details about the flows, like conditions, so it can show flows that are part of the process but didn't run because of certain conditional logic or errors. This is particularly helpful for understanding how a problem in one part of the process can affect other parts, and it helps you take the right countermeasures to fix issues.
-
-When you select a flow box on the map, its side panel opens, providing detailed contextual information on run, connection, and design-time aspects. This allows you to efficiently scan through the multi-run history and better understand the root cause and impact of errors without having to navigate through different individual runs on flow details or other pages. The efficiency is especially helpful when troubleshooting flows that are called in a loop by their parent, potentially producing tens or even hundreds of runs per process run.
-
-### Runs vs. Overview view
-
-The **Runs** view offers a comprehensive look at the entire process by displaying both the main flow run and its child runs. This feature allows users to easily track and understand how each part of the process is executed, identify any issues or bottlenecks, and ensure that all steps are completed successfully. It enhances visibility into complex workflows, making them easier to manage and optimize.
-
-The **Overview** view presents the design-time process structure, including all connected children. This view is ideal for quickly understanding the various subprocesses within the process, even if there are no runs yet. In future releases, this view mode will also serve as the home for aggregated process information and other flow-level configurations.
-
-> [!NOTE]
-> Preview features in the Automation Center, such as the process map (preview), can be turned off via the Power Platform admin center. The toggle to control this can be found under the **Power Automate Automation center** section.
-
-### Process map icons and visualizations
+### Process map visualizations
 
 | Icon | Description |
 |------|-------------|
