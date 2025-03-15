@@ -139,6 +139,7 @@ The following are current limitations of the automation center and its underlyin
   
 ## Related information
 
+- [Use process map (preview)](automation-center-process-map.md)
 - [Recommendations within automation center](automation-center-recommendations.md)
 - [Use Copilot in automation center](automation-center-copilot.md)
 - [Manage cloud flow run history in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata)
