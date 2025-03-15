@@ -40,9 +40,6 @@ The **Runs** view offers a comprehensive look at the entire process by displayin
 
 The **Overview** view presents the design-time process structure, including all connected children. This view is ideal for quickly understanding the various subprocesses within the process, even if there are no runs yet. In future releases, this view mode will also serve as the home for aggregated process information and other flow-level configurations.
 
-> [!NOTE]
-> Preview features in the Automation Center, such as the process map (preview), can be turned off via the Power Platform admin center. The toggle to control this can be found under the **Power Automate Automation center** section.
-
 ## Create or view a process map
 
 To create or view a process map in Power Automate, you have two options:
@@ -91,6 +88,9 @@ To rename or delete a process in Power Automate, follow these steps:
 |  :::image type="icon" source="media/automation-center/legend-attended.png":::  | Represents an attended desktop flow run. |
 |  :::image type="icon" source="media/automation-center/legend-runs.png":::  | Represents the runtime view mode of the process. |
 |  :::image type="icon" source="media/automation-center/legend-overview.png":::  | Represents the design-time view of the process. |
+
+> [!NOTE]
+> Preview features in the Automation Center, including this process map (preview), can be disabled through the Power Platform admin center. The toggle for this setting is located under the **Power Automate Automation center** section. However, once the process map (preview) feature becomes generally available, it will be a permanent part of the Automation center and cannot be turned off anymore.
 
 ## Known issues and limitations
 
