@@ -22,7 +22,6 @@ search.audienceType:
 You can use your own custom Fabric workspace and leverage a higher capacity to analyze processes with a lot more data. You're also able to customize the look and feel of the report.
 When using custom Fabric workspace, data from Power Automate Process Mining will be first stored in Fabric Lakehouse from where they are transformed into delta tables. A semantic model is automatically created on top of the tables to power the default report. The Power BI report is connected to the data using [Direct Lake mode](/fabric/fundamentals/direct-lake-overview).
 
-> [!IMPORTANT]
 > [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Set up your workspace
