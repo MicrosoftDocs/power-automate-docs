@@ -20,12 +20,20 @@ search.audienceType:
 
 This article explains metrics and visuals, and what they could tell you about your process.
 
-Some of the metrics and visuals are only available in setup with your own Power BI workspace. These metrics and visuals are clearly marked in the text as **Premium**. To be able to access them and gain full insights, make sure you complete the steps in the following articles:
+Some of the metrics and visuals are only available in setup with your own Power BI workspace or Fabric workspace (preview). These metrics and visuals are clearly marked in the text as **Premium**. To be able to access them and gain full insights, make sure you complete the steps in the following articles.
+
+For **Power BI workspace**:
 
 - [Connect your Power BI workspace to the process mining capability](process-mining-pbi-workspace.md#connect-your-power-bi-workspace-to-the-process-mining-capability)
 - [Create your own custom Power BI workspace](process-mining-pbi-workspace.md#create-your-own-custom-power-bi-workspace)
 - [Load your process analytics in Power BI](process-mining-pbi-workspace.md#load-your-process-analytics-in-power-bi)
 
+For **Fabric workspace (preview)**:
+
+- [Connect your Fabric workspace to the process mining capability](process-mining-fabric-workspace.md#set-up-your-workspace)
+- [Create your own custom Fabric workspace](process-mining-fabric-workspace.md#create-your-own-custom-fabric-workspace)
+- [Load your process analytics in Fabric](process-mining-fabric-workspace.md#load-your-process-analytics-in-fabric)
+  
 After completing these steps, return to the analytics page of your process in the process mining capability.
 
 > [!NOTE]
