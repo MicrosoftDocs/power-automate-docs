@@ -31,6 +31,7 @@ Building on the robust monitoring and observability features of the Automation C
 
 > [!NOTE]
 > This feature is currently rolling out and might not yet be available in your area. If you'd like to try it out today, you can either use an existing preview environment or create a new one. Learn more about how to create a preview environment in [Early release cycle environments](/power-platform/admin/early-release).
+> Process Map is considered a premium capability. Any flows that are part of a Process Map will be considered premium flows and require a appropriate license. [Learn more about licensing](/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-process%2Cconnector-types).
 
 ## Working with the process map
 
