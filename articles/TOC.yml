@@ -1145,6 +1145,8 @@
     items:
     - name: Overview
       href: automation-center-overview.md
+    - name: Process map (preview)
+      href: automation-center-process-map.md      
     - name: Recommendations
       href: automation-center-recommendations.md
     - name: Copilot
