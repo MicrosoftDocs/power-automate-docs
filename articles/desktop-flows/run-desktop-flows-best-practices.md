@@ -4,7 +4,7 @@ description: See the best practices for running Power Automate desktop flows.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/15/2023
+ms.date: 03/17/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -25,13 +25,13 @@ Desktop flows queue for up to six hours until a machine is available. Adopt one 
 
 - Create machine groups that run desktop flows with identical configurations in parallel. To find more information about machine groups, go to [Manage machine groups](manage-machine-groups.md).
 
-- Anticipate the number of unattended desktop flows your organization plans to run in parallel and then purchase an adequate number of Process licenses. To find more information about the Process license, go to [Power Automate Process license](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license).
+- Anticipate the number of unattended desktop flows your organization plans to run in parallel, and purchase an adequate number of Process licenses. Learn more in [Power Automate Process license](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license).
 
 All the presented strategies prevent desktop flows from competing to run on the same device and failing due to time-outs.
 
 > [!NOTE]
 >
-> If a target device becomes offline due to a restart or connectivity issues, desktop flows wait up to six hours before failing. This wait time allows for transient machine states and enables you to run automation successfully even if the devices go through restart or update cycles.
+> If a target device goes offline due to a restart or connectivity issues, desktop flows wait up to six hours before failing. This wait time allows for transient machine states and lets you run automation successfully even if the devices go through restart or update cycles.
 
 ## Support long-running desktop flows
 
