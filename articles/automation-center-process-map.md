@@ -33,7 +33,7 @@ Building on the robust monitoring and observability features of the Automation C
 > - This feature is rolling out and might not be available in your area yet. To try it out today, you can either use an existing preview environment or create a new one. Learn more about how to create a preview environment in [Early release cycle environments](/power-platform/admin/early-release).
 > - Process map is considered a premium capability. Any flows that are part of a process map are considered premium flows and require an appropriate license. Learn more in [Power Automate licensing](/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-process%2Cconnector-types).
 
-## Working with the process map
+## Navigate the process map
 
 The process map makes troubleshooting and monitoring in Power Automate more efficient and transparent. It shows the main orchestrating flow and all its child flows invoked during a process run. When a process map is created, it considers structural details like conditions, so it can show flows that are part of the process but didn't run because of certain conditional logic or errors. This helps you understand how a problem in one part of the process can affect other parts and take the right countermeasures to fix issues.
 
