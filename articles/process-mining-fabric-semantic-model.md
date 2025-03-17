@@ -30,7 +30,7 @@ When a process is published to Fabric workspace, a new semantic model and a corr
 
 For an enlarged view of the screenshot, select the magnifying glass in the lower-right corner.
 
-[ ![Power BI DirectLake semantic model structure.](media/process-mining-fabric-semantic-model/DataModel.png)](media/process-mining-fabric-semantic-model/DataModel.png#lightbox)
+[ ![Power BI DirectLake semantic model structure.](media/process-mining-fabric-semantic-model/FabricSemanticModel.png)](media/process-mining-fabric-semantic-model/FabricSemanticModel.png#lightbox)
 
 ### Relationships
 
