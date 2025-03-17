@@ -153,9 +153,7 @@ With the powerful integration of the process mining capability with Power BI, yo
  To be able to do this, make sure you completed these steps in this article:
 
 - [Connect your Fabric workspace to the process mining capability](#set-up-your-workspace)
-
 - [Create your own custom Fabric workspace](#create-your-own-custom-fabric-workspace)
-
 - [Load your process analytics in Fabric](#load-your-process-analytics-in-fabric)
 
 After completing these steps, return to the analytics page of your process in the process mining capability.
