@@ -132,6 +132,7 @@ The following are current limitations of the automation center and its underlyin
   - `flowevent`: Recommendations and notifications
   - `workqueue`: Work queues
   - `workqueueitem`: Work queue items
+  - `businessprocess`: Process map details and definition
 - Child cloud and desktop flow runs are shown under **Runs**.
 - Top-level desktop flow runs aren't supported yet (for local attended or API-based scenarios)
 - Co-owned or shared flows aren't supported yet (users don't see runs of flows that are shared with them).

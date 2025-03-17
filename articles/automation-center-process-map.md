@@ -34,15 +34,15 @@ Building on the robust monitoring and observability features of the Automation C
 
 ## Working with the process map
 
-The process map is designed to make troubleshooting and monitoring in Power Automate more efficient and transparent. It provides a clear view of the main orchestrating flow and all its child flows that run during a process run. It also understands important structural details about the flows, like conditions, so it can show flows that are part of the process but didn't run because of certain conditional logic or errors. This is helpful for understanding how a problem in one part of the process can affect other parts, and it helps you take the right countermeasures to fix issues.
+The process map is designed to make troubleshooting and monitoring in Power Automate more efficient and transparent. It provides a clear view of the main orchestrating flow and all its child flows that are invoked during a process run. When a process map is created, it takes into account structural details like conditions, so it can show flows that are part of the process but didn't run because of certain conditional logic or errors. This is helpful for understanding how a problem in one part of the process can affect other parts, and it helps you take the right countermeasures to fix issues.
 
-When you select a flow box on the map, its side panel opens, providing detailed contextual information on run, connection, and design-time aspects. This panel allows you to efficiently scan through the multi-run history and better understand the root cause and impact of errors without having to navigate through different individual runs on flow details or other pages. The efficiency is especially helpful when troubleshooting flows that are called in a loop by their parent, potentially producing tens or even hundreds of runs per process run.
+When you select a flow box on the map, its side panel opens, providing detailed contextual information on run, connection, and design-time properties. This panel allows you to efficiently scan through the run history and better understand the root cause and impact of errors without having to navigate to each run from the flow details page or the Automation Center. This efficiency is especially helpful when troubleshooting flows that are called in a loop by their parent, potentially producing tens or even hundreds of runs per process run.
 
 ### Runs vs overview view
 
 The **Runs** view offers a comprehensive look at the entire process by displaying both the main flow run and its child runs. This feature lets users track and understand how each part of the process is executed, identify issues or bottlenecks, and ensure that all steps are completed successfully. It enhances visibility into complex workflows, making them easier to manage and optimize.
 
-The **Overview** view presents the design-time process structure, including all connected children. This view is ideal for quickly understanding the various subprocesses within the process, even if there are no runs yet. In future releases, this view mode also serves as the home for aggregated process information and other flow-level configurations.
+The **Overview** view presents the design-time process structure, including all connected children. This view is ideal for quickly understanding the various subprocesses within the process, even if there are no runs yet. In future releases, this view may also show aggregated process information and other flow-level configurations.
 
 ## Create or view a process map
 
@@ -85,13 +85,11 @@ To rename or delete a process in Power Automate, follow these steps:
 | :::image type="icon" source="media/automation-center/legend-cf.png":::  | Represents a cloud flow.  |
 | :::image type="icon" source="media/automation-center/legend-df.png":::   | Represents a desktop flow. |
 | :::image type="icon" source="media/automation-center/legend-loop.png":::  | Represents a loop scenario where a parent flow calls a child flow n-times. |
-|  :::image type="icon" source="media/automation-center/legend-stack.png":::  | This value represents the total number of times various parent flows ran this flow. Each flow instance is triggered by a different parent flow run, instead of being repeatedly called within a single parent run loop. |
+|  :::image type="icon" source="media/automation-center/legend-stack.png":::  | Represents the total number of times various parent flows ran this flow. Each flow instance is triggered by a different parent flow run, instead of being repeatedly called within a single parent run loop. |
 | :::image type="icon" source="media/automation-center/legend-conditional.png":::  | Represents a conditional or optional flow. This means that the flow connected by the dotted line isn't always executed but depends on certain conditions being met. |
 |  :::image type="icon" source="media/automation-center/legend-missed.png":::  | Represents a missed or skipped flow based on conditional logic or an upstream error.|
 |  :::image type="icon" source="media/automation-center/legend-unattended.png":::  | Represents an unattended desktop flow run.|
 |  :::image type="icon" source="media/automation-center/legend-attended.png":::  | Represents an attended desktop flow run. |
-|  :::image type="icon" source="media/automation-center/legend-runs.png":::  | Represents the runtime view mode of the process. |
-|  :::image type="icon" source="media/automation-center/legend-overview.png":::  | Represents the design-time view of the process. |
 
 > [!NOTE]
 > Preview features in the Automation Center, including this process map (preview), can be disabled through the Power Platform admin center. The toggle for this setting is located under the **Power Automate Automation center** section. However, once the process map (preview) feature becomes generally available, it will be a permanent part of the Automation center and can't be turned off anymore.
@@ -101,6 +99,7 @@ To rename or delete a process in Power Automate, follow these steps:
 - Creating and viewing process maps requires users to have Environment Maker (or similar roles) with sufficient privileges on the business process table.  
 - Runs for co-owned or shared flows aren't supported yet which means users don't see runs for flows shared with them.  
 - Users with broader access (like admins or CoE teams) might see 'Unknown flow' as the flow name. This can happen if the flow isn't explicitly shared with them or it is deleted.  
+- Process maps for top-level desktop-flows aren’t supported yet.
 - Child desktop flows aren't displayed yet on the map.  
 - Parallelization features (for example, cloud flow 'Apply each' with concurrency or 'RunAfter' customizations) aren't visually represented; such child runs appear in the order they were defined.  
 - Dynamic flow selection using a formula (instead of the standard picker) isn't supported; such child flows are ignored.  
