@@ -1,40 +1,44 @@
 ---
 title: IP address configuration
-description: Learn about IP address configuration, the services that Power Automate connect to, various endpoints, and more.
+description: Learn about IP address configuration required to use Power Automate, the services that Power Automate connects to, various endpoints, and more.
 author: samathur
 contributors:
   - samathur
-  - ChrisGarty
-  - GiovanniBenitez
-  - DBEKI
-  - GiovanniBenitez
-  - nnyarbro
   - v-aangie
-  - jpapadimitriou
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/07/2025
+ms.date: 03/17/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 ---
 
-# IP address configuration
+# IP Address configuration for Power Automate
 
-The [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform) from which Power Automate requests are sent depend on the [region](regions-overview.md) location of the [environment](environments-overview-admin.md) that contains the flow. FQDNs (fully qualified domain names) aren't published for flow scenarios.
+This article describes the required configuration for Power Automate to connect to services in your network. It explains the configuration required for your makers and users to access Power Automate to build and use experiences.
 
-The simplest mechanism to configure a firewall to allow Power Automate cloud flows to call external services through [connectors](/connectors/overview) is to use [Azure service tags](/azure/virtual-network/service-tags-overview). The primary service tag for Logic Apps connectors is **AzureConnectors**, as described in [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
+## Allow flows to call your services
 
-## Logic Apps and connectors for cloud flows runtime
+The following two sections list the network configuration required for Power Automate to connect to services in your network. This configuration is needed only if you're restricting inbound or outbound IP addresses on your network (for example, through a firewall).
 
-Calls made from a cloud flow go directly through the Azure Logic Apps service. Some examples of these calls include HTTP or HTTP + OpenAPI. Network traffic for these calls originates from the IP ranges listed in the [IP range for HTTP or HTTP + OpenAPI](#ip-range-for-http-actions-and-openapi) and [Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-configuration-ip-addresses-and-service-tags) documentation.
+### Allow connector calls to your services
 
-If you're restricting inbound or outbound IP addresses on your network (for example, through a firewall), update your network configuration to allow [IP Range for HTTP or HTTP + OpenAPI](#ip-range-for-http-actions-and-openapi), [IP addresses for Azure Logic Apps](/azure/logic-apps/logic-apps-limits-and-config#firewall-ip-configuration), and [IP addresses for managed connectors](/connectors/common/outbound-ip-addresses) in the supported regions to ensure flows continue to work.
+Power Automate flows are comprised of actions. Actions can utilize both *connector actions* and native actions such as 'HTTP' and 'HTTP + Swagger'. To enable *connector actions* to call services hosted in your network, allow traffic into your network from the **AzureConnectors** service tag.
 
-Learn more in [Azure Logic Apps - Set up zone redundancy with availability zones](/azure/logic-apps/set-up-zone-redundancy-availability-zones). 
+### Allowlist 'HTTP' and 'HTTP + Swagger' calls to your services
 
-To automate firewall or configuration updates, you can use the Azure IP range downloadable JSON file available in the Download Center: [Downloadable IP](https://www.microsoft.com/download/details.aspx?id=56519)
+For flows consisting of actions including 'HTTP' and 'HTTP + Swagger', add the network configuration to allow *all* of the following items:
 
-## Required endpoints for Power Automate service
+- **LogicApps** service tag
+- **PowerPlatformPlex** service tag
+- [IP range for 'HTTP' or 'HTTP + Swagger'](#ip-range-for-http-actions-and-http--swagger)
+
+## Allow users on your network to use the Power Automate
+
+This section contains information on providing your makers and users access to the build and use experiences within Power Automate.
+
+### Use the Power Automate web portal
+
+The Power Automate web portal is also known as the maker portal.
 
 The following table lists the services to which Power Automate connects. Ensure none of these services is blocked on your network.
 
@@ -52,10 +56,10 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.azurefd.net | https | Access to Power Automate CDN. |
 | *.microsoftcloud.com | https | Access to NPS (Net Promoter Score). |
 | webshell.suite.office.com | https | Access to Office for header and search. Learn more in [Office 365 URLs and ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#microsoft-365-common-and-office-online&preserve-view=true). |
-| *.dynamics.com | https | Access to Dataverse tables |
-|go.microsoft.com|https|Access to the Power Automate to check for updates|
-|download.microsoft.com|https|Access to the Power Automate to check for updates|
-|login.partner.microsoftonline.cn|https|Access to the Power Automate for desktop cloud discovery|
+| *.dynamics.com | https | Access to Dataverse tables. |
+|go.microsoft.com|https|Access to the Power Automate to check for updates.|
+|download.microsoft.com|https|Access to the Power Automate to check for updates.|
+|login.partner.microsoftonline.cn|https|Access to the Power Automate for desktop cloud discovery.|
 |s2s.config.skype.com<br>use.config.skype.com<br>config.edge.skype.com|https|Access to preview features managed through flighting and configuration endpoints.|
 |s2s.config.ecs.infra.gov.teams.microsoft.us|https|Access to preview features managed through flighting and configuration endpoints for US government cloud.|
 | \*.api.powerplatform.com <br> \*.api.powerplatformusercontent.com <br> *.api.bap.microsoft.com | https | Access to several Power Platform APIs. |
@@ -64,9 +68,9 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.api.appsplatform.us <br> *.api.bap.appsplatform.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
 | *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
 
-### Endpoints needed to use Power Automate mobile app
+### Allow users on your network to use Power Automate mobile app
 
-The following table lists the additional endpoints you need when using Power Automate mobile app.
+The following table lists additional endpoints you need when using Power Automate mobile app.
 
 | Domains | Protocols | Uses |
 | --------|  ---------| ---- |
@@ -74,18 +78,18 @@ The following table lists the additional endpoints you need when using Power Aut
 | collector.azure.cn   | https  |  Send telemetry for the Mooncake region from the mobile app. |
 | officeapps.live.com   | https   | Access to authentication and authorization endpoints for the mobile app.
 
-## Services required for desktop flows runtime
+### Allow machines & users on your network to access Power Automate desktop services
 
-The following table lists endpoint data requirements for connectivity from a user's machine for desktop flows runs. Ensure that you authorize Global endpoints and the endpoints corresponding to your cloud.
+The following table lists endpoint data requirements for connectivity from a user's machine for desktop flows runs. Ensure that you authorize global endpoints and the endpoints corresponding to your cloud.
 
-### Global endpoints for desktop flows runtime
+#### Global endpoints for desktop flows runtime
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
 | server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, US government, and Chinese clouds. Works as the fallback telemetry endpoint.|
 | msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. WebDriver is used to automate your browser (Microsoft Edge and Google Chrome).|
 
-### Public endpoints for desktop flows runtime
+#### Public endpoints for desktop flows runtime
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
@@ -99,7 +103,7 @@ The following table lists endpoint data requirements for connectivity from a use
 > [!NOTE]
 > If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. Learn more about namespace endpoints in [Allowlist of namespaces endpoints required for desktop flows runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-desktop-flows-runtime).
 
-### US Government endpoints for desktop flows runtime
+#### US Government endpoints for desktop flows runtime
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
@@ -115,7 +119,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | *.crm.appsplatform.us | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(US Government - DoD only). |
 | *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for public clouds). |
 
-### 21Vianet endpoints (China) for desktop flows runtime
+#### 21Vianet endpoints (China) for desktop flows runtime
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
@@ -129,19 +133,19 @@ The following table lists endpoint data requirements for connectivity from a use
 
 ### Approval email delivery
 
-Learn more about approvals email routing in the [approvals email delivery](https://go.microsoft.com/fwlink/?linkid=2128304) article.
+Learn more about approvals email routing in [Power Automate approval email delivery information](https://go.microsoft.com/fwlink/?linkid=2128304).
 
 ### Azure SQL database
 
-If you need to authorize IP addresses for your Azure SQL database, you should use the [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
+If you need to authorize IP addresses for your Azure SQL database, use the [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
 
 ## FAQ
 
-### There are lots of details here&mdash;what's the high level recommendation for IP Address configuration?
+### There are lots of details here&mdash;what's the high level recommendation for IP address configuration?
 
 The simplest mechanism to configure a firewall to allow Power Automate cloud flows to call external services through [connectors](/connectors/overview) is to use [Azure service tags](/azure/virtual-network/service-tags-overview). The primary service tag for Logic Apps connectors is **AzureConnectors**, as described in [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
 
-### If I'm using Azure Firewall, do I need to keep track of individual IP addresses?
+### If I'm using Azure firewall, do I need to keep track of individual IP addresses?
 
 You should use [Azure service tags](/azure/virtual-network/service-tags-overview). By using service tags in your network security group rules, you don't need to constantly monitor and manually update IP ranges for each service.
 
@@ -149,9 +153,9 @@ You should use [Azure service tags](/azure/virtual-network/service-tags-overview
 
 You should use the [Service Tags with an on-premises firewall](/azure/virtual-network/service-tags-overview#service-tags-on-premises) so you don't need to monitor and manually update IP ranges. The [Service Tag Discovery API](/azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api) provides access to the latest IP address ranges associated with each service tag, enabling you to stay current with changes.
 
-## IP range for HTTP actions and OpenAPI
+## IP range for 'HTTP' actions and 'HTTP + Swagger'
 
-For the HTTP Connector actions **HTTP** and **HTTP + Swagger**, allowlist the **powerplatformplex** service tag and the following IP ranges:
+For the HTTP connector actions 'HTTP' and 'HTTP + Swagger', allowlist the **PowerPlatformPlex** service tag and the following IP ranges:
 
 ```markdown
 "4.150.232.8/29",
