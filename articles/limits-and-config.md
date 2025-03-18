@@ -1,8 +1,8 @@
 ---
 title: Limits of automated, scheduled, and instant flows
 description: Learn about the limits that apply to automated, scheduled, and instant flows in Microsoft Power Automate.
-author: ChrisGarty
-ms.author: CGarty
+author: samathur
+ms.author: samathur
 ms.reviewer: angieandrews
 Contributors:
   - samathur
@@ -12,7 +12,7 @@ Contributors:
 ms.subservice: cloud-flow
 ms.topic: conceptual
 suite: flow
-ms.date: 10/08/2024
+ms.date: 02/11/2025
 search.audienceType: 
   - flowmaker
   - enduser
@@ -33,8 +33,8 @@ A flow's *performance profile* determines its Power Platform request limits. The
 |---------------------|-------|
 | Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials <br>- Dynamics 365 Team Member<br>- Microsoft Power Apps for Developer | 
 | Medium              | - Power Apps triggered flows, manual flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate Premium (previously Power Automate per user), Power Automate Premium plans (previously Power Automate per user with Attended RPA plans) <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses)|
-| High                | - Power Automate Process plan, Power Automate per flow plan |
-| Unlimited Extended  | - Pay-as-you-go flows, Dynamics in context flows running under service principal  
+| High                | Power Automate Process plan, Power Automate per flow plan |
+| Unlimited Extended  | Pay-as-you-go flows, Dynamics in context flows running under service principal  
 
 If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow has the performance profile of the higher of the plans. For the exact set of plans that include Power Automate, refer to the [Power Platform licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
@@ -130,7 +130,7 @@ The following table describes the limits on requests.
 | Name | Transition period limit | Notes |
 | ---- | ----- |----- |
 | Power platform requests per 5 minutes | 100,000 | Distribute the workload across more than one flow as necessary. |
-| Power platform requests per 24 hours |10,000 for Low; 200,000 for Medium; 500,000 for High; 10,000,000 for Unlimited Extended | These limits represent approximations of how many requests are allowed daily. They aren't guarantees. Actual amounts might be smaller, but are greater than the [documented request limits and allocations](/power-platform/admin/api-request-limits-allocations) during the [licensing transition period](/power-platform/admin/power-automate-licensing/types#transition-period). The documented limits were substantially increased in late 2021. [View detailed Power Platform request usage information in the Power Platform admin center (preview)](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). Any potential enforcement of high usage based on the [documented limits](/power-platform/admin/api-request-limits-allocations) wouldn't start until six months after reports have been made generally available. Distribute the workload across more than one flow as necessary. |
+| Power platform requests per 24 hours |10,000 for Low; 200,000 for Medium; 500,000 for High; 10,000,000 for Unlimited Extended | These limits represent approximations of how many requests are allowed daily. They aren't guarantees. Actual amounts might be smaller, but are greater than the [documented request limits and allocations](/power-platform/admin/api-request-limits-allocations) during the [licensing transition period](/power-platform/admin/power-automate-licensing/types#transition-period). The documented limits were substantially increased in late 2021. [View detailed Power Platform request usage information in the Power Platform admin center (preview)](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). Any potential enforcement of high usage based on the [documented limits](/power-platform/admin/api-request-limits-allocations) doesn't start until six months after reports are made generally available. Distribute the workload across more than one flow as necessary. |
 | Concurrent outbound calls | 500 for Low; 2,500 for all others | You can reduce the number of concurrent requests or reduce the duration as necessary. |
 
 > [!TIP]
@@ -150,12 +150,12 @@ The following table describes the limits on runtime endpoint requests.
 
 ### Content throughput limits
 
-The following table describes the content throughput limits, which refer to the amount of data that's read from or written to the run history of the cloud flow.
+The following table describes the content throughput limits, which refer to the amount of data that is read from or written to the run history of the cloud flow.
 
 | Name | Limit | Transition period limits | Notes |
 | ---- | ----- | ----- | ----- |
 | Content throughput per 5 minutes | 120 MB for Low; 1.2 GB for all others | Unchanged during transition period | You can distribute workload across more than one flow as necessary. |
-| Content throughput per 24 hours | 200 MB for Low; 2 GB for Medium; 10 GB for High | 1 GB for Low; 20 GB for Medium; 50 GB for High | You can distribute workload across more than one flow as necessary. |
+| Content throughput per 24 hours | 200 MB for Low; 2 GB for Medium; 10 GB for High | 2.5 GB for Low; 20 GB for Medium; 50 GB for High | You can distribute workload across more than one flow as necessary. |
 
 ## Gateway limits
 

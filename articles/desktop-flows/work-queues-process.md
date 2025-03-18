@@ -2,7 +2,7 @@
 title: Process, add, update and requeue work queue items
 description: Work queue processing options through Power Automate cloud flows, desktop flows and Dataverse API's.
 ms.topic: conceptual
-ms.date: 10/14/2024
+ms.date: 03/10/2025
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -49,11 +49,17 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
 
 1. The **Process work queue items** action is used to designate which work queue to consume items from and process in your desktop flow.  The action can be configured to select a work queue from a list using the dropdown arrow, pass a variable including the queue name. When run, this action works by bringing in the first (oldest) item from the work queue into your flow that contains a status of **queued**. Once the queue item begins processing in your flow, its status automatically changes to **processing**.
 
+  > [!NOTE]
+  > If you're using a variable to dynamically select the work queue, use the ID of the work queue as input. The work queue ID is available under **Advanced details** of the work queue details page.
+
    :::image type="content" source="media/work-queues/work-queue-pad-procwqiaction-new.png" alt-text="Screenshot of the WorkQueueItem action configured to process queue items in Power Automate desktop." lightbox="media/work-queues/work-queue-pad-procwqiaction-new.png":::
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqirocessing.png" alt-text="Screenshot of work queue item in **processing** state." lightbox="media/work-queues/work-queue-pad-wqirocessing.png":::
 
 1. A [breakpoint](debugging-flow.md#adding-breakpoints) (red dot) was set by clicking next to action 3 in the flow and then run through the PAD console.  When the process pauses at the breakpoint, the **WorkQueueItem** variable can be opened by double clicking the populated value under **Flow variables** and this shows all the properties associated with the work queue item being processed.
+
+  > [!NOTE]
+  > The **WorkQueueItem** variable shows the information of the current work queue item when there are remaining items to process. If there are no more work queue items to process and the action is complete, it shows the information of the last work queue item.
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqvarvalue.png" alt-text="Screenshot of the WorkQueueItem variable in the variable viewer." lightbox="media/work-queues/work-queue-pad-wqvarvalue.png":::
 
@@ -78,6 +84,9 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
    For instance, let's say there was a requirement to enter the invoice ID into a field of a finance system as part of a process where you're automating the UI of a web or desktop app – you can call that value using **%JsonAsCustomObject.InvoiceId%** to populate a text field and push a button.
 
 1. Moving along, this example contains some conditional statements once it completes processing the steps and uses the data from the custom object within the subflow Fabrikam Data Entry.  If the process runs end-to-end without encountering any input system related exceptions the **Update work queue item** action is used to change the status of the work queue item to **Processed** and the **processing result** field can be used to input some optional notes. If the **expires** field is left blank, the new queue item retains the *Items expire after* value defined in the work queue properties.
+
+     > [!NOTE]
+     > If work queue items are stuck in the processing state because a desktop flow fails to complete, use a cloud flow to retrieve and update the work queue items.
 
    :::image type="content" source="media/work-queues/work-queue-pad-updatewqi.png" alt-text="Screenshot example of update work queue item action inputs." lightbox="media/work-queues/work-queue-pad-updatewqi.png":::
 
@@ -200,8 +209,10 @@ The simplest way to dequeue a work queue item and process it is as follows:
   | --------- | ----- | ------------------------------ |
   | **Table name** | Work Queues | The name of the work queue table. |
   | **Action name** | Dequeue | The action, which gets the next available item from the queue.|
-  | **Row ID** | *[Work Queue ID]* | The work queue ID (GUID) of the queue you'd like to dequeue from. You can get to this value by navigating to the work queue details page of your queue and opening the **Advanced details** panel. |
-  
+  | **Row ID** | *[Work Queue ID]* | The work queue ID (GUID) of the queue you'd like to dequeue from. You can get to this value by navigating to the work queue details page of your queue and opening the **Advanced details** panel. 
+  | **request** | request | FetchXML in stringified JSON format you want to apply on the Work Queue ID. Example: ```{  "query": "<fetch mapping=\"logical\" returntotalrecordcount=\"true\" page=\"1\" count=\"1\" no-lock=\"false\">\n<entity name=\"workqueueitem\">\n<filter type=\"and\">\n<condition attribute=\"workqueueid\" operator=\"eq\" value=\"38b14649-cb09-ee11-8f6e-00224804934a\"/>\n<condition attribute=\"statuscode\" operator=\"eq\" value=\"0\"/>\n</filter>\n</entity>\n</fetch>"}``` |
+
+
   :::image type="content" source="media/work-queues/work-queue-advanced-fields.png" alt-text="Screenshot of a work queue details page with the work queue ID highlighted in the browser URL bar." lightbox="media/work-queues/work-queue-advanced-fields.png":::
 
   > [!NOTE]

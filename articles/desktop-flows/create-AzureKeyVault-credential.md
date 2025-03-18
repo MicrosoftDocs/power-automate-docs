@@ -4,7 +4,7 @@ description: Learn how to create a credential with secret stored in Azure Key Va
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/08/2024
+ms.date: 03/10/2025
 ms.author: quseleba
 ms.reviewer: 
 contributors:
@@ -64,13 +64,18 @@ Provide the following information to create your credential:
 
 ### Select credential store
 
-1. After selecting **Next**, select **Azure Key Vault** as the credential store.
-1. Select **Connection** as the location to use the credential. Using credentials in desktop flow isn't supported with Azure Key Vault yet.
-1. Select **Azure Key Vault** as the type of credential store, and then select **Next**.
+1. After selecting **Next**, select location to use credential.
+1. Select **Connection** or **Network** as the location to use the credential. Using credentials in desktop flow isn't supported with Azure Key Vault yet.
+1. If prompted, select **Azure Key Vault** as the type of credential store, and then select **Next**.
+
+  | Location to use credential | Description                    | Supported  Azure Key Vault authentication                   |
+  | --------- | ------------------------------ | ------------ |
+  | **Connection** | Used in a desktop flow connection, the credential is used to sign into the machine during runtime (attended and unattended runs). | • Username and password<br> • Certificate-based authentication |
+  | **Network** | Used when creating [Microsoft Entra hybrid join network connection](hosted-machine-groups.md#additional-requirements-for-microsoft-entra-hybrid-joined-hosted-machines-groups-preview) for hosted machine groups. | • Username and password   |
 
 ### Select credential values
 
-In the last step of the wizard, select credential values. With Azure Key Vault, there are two types of supported authentications:
+In the last step of the wizard, select credential values. Depending on the location to use the credential, there might be two types of supported authentications:
 
 1. **Username and password**: The secret stored in the vault is a password.
 1. **Certificate-based authentication**: The secret stored in the vault is a certificate.
@@ -152,6 +157,7 @@ You should import the solution containing the credential and the related environ
 
 - Currently, this feature is available only for desktop flow connections.
 - You can't edit the selected username and secret in an existing credential. If you want to change the value of username and password, you need to either update the environment variables or the Azure Key Vault secret.
+- If your environment uses a managed identity to [access your Azure Data Lake](/power-apps/maker/data-platform/azure-synapse-link-msi), that identity is also used to access your Azure Key Vault. Only one enterprise policy can connect to the Dataverse environment simultaneously. Ensure that the managed identity has the appropriate permissions to the Azure Key Vault resource.
 
 ## Update a secret (password rotation) - Deprecated
 

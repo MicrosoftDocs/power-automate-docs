@@ -13,7 +13,7 @@ contributors:
   - jpapadimitriou
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 02/06/2025
+ms.date: 03/07/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 ---
@@ -62,7 +62,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.api.gov.powerplatform.microsoft.us <br> *.gov.api.bap.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
 | *.api.high.powerplatform.microsoft.us <br> *.high.api.bap.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
 | *.api.appsplatform.us <br> *.api.bap.appsplatform.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
-| *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn | https | Access to several Power Platform APIs (21Vinaet - China only). |
+| *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
 
 ### Endpoints needed to use Power Automate mobile app
 
@@ -97,7 +97,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for GCC). |
 
 > [!NOTE]
-> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. Learn more about namespace endpoints in [Allow list of namespaces endpoints required for desktop flows runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-desktop-flows-runtime).
+> If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. Learn more about namespace endpoints in [Allowlist of namespaces endpoints required for desktop flows runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-desktop-flows-runtime).
 
 ### US Government endpoints for desktop flows runtime
 
@@ -115,14 +115,15 @@ The following table lists endpoint data requirements for connectivity from a use
 | *.crm.appsplatform.us | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(US Government - DoD only). |
 | *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for public clouds). |
 
-### 21Vinaet endpoints (China) for desktop flows runtime
+### 21Vianet endpoints (China) for desktop flows runtime
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
 |crl.digicert.cn<br>ocsp.digicert.cn | http | Access to the CRL servers for 21Vianet operated cloud.<br>Needed when connecting through the on-premises data gateway.|
 |apac.events.data.microsoft.com|https|Handles telemetry for users in China.|
-| *.api.powerplatform.partner.microsoftonline.cn | https | Access to several Power Platform APIs (mandatory for cloud connector actions in desktop flows) (21Vinaet - China only). |
-| *.dynamics.cn | https | Access to Dataverse tables (DesktopFlow modules feature)(21Vinaet - China only). |
+| \*.gateway.mooncake.island.powerapps.cn | https | Needed for machine connectivity (21Vianet - China only). |
+| *.api.powerplatform.partner.microsoftonline.cn | https | Access to several Power Platform APIs (mandatory for cloud connector actions in desktop flows) (21Vianet - China only). |
+| *.dynamics.cn | https | Access to Dataverse tables (DesktopFlow modules feature)(21Vianet - China only). |
 
 ## Other IP address articles
 
@@ -150,7 +151,7 @@ You should use the [Service Tags with an on-premises firewall](/azure/virtual-ne
 
 ## IP range for HTTP actions and OpenAPI
 
-For HTTP actions and OpenAPI, the IP ranges are as follows:
+For the HTTP Connector actions **HTTP** and **HTTP + Swagger**, allowlist the **powerplatformplex** service tag and the following IP ranges:
 
 ```markdown
 "4.150.232.8/29",

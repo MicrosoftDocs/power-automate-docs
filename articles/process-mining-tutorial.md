@@ -8,7 +8,7 @@ contributors:
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 12/16/2024
+ms.date: 02/10/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -70,13 +70,13 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 1. Select **Save and analyze**. The analysis might take a few minutes to run.
 
-When the analysis process is complete, you see a process map and a dashboard with other insights about your process. On the dashboard, you can view many metrics that can help you analyze your process. To learn how to analyze the process map and metrics, go to [Visualize and gain insights from processes in the process mining capability](process-mining-visualize.md).
+    When the analysis process is complete, you see a process map and a dashboard with other insights about your process. On the dashboard, you can view many metrics that can help you analyze your process. To learn how to analyze the process map and metrics, go to [Visualize and gain insights from processes in the process mining capability](process-mining-visualize.md).
 
-:::image type="content" source="media/process-mining-tutorial/process-map-dash.png" alt-text="Screenshot of the process map and dashboard.":::
+    :::image type="content" source="media/process-mining-tutorial/process-map-dash.png" alt-text="Screenshot of the process map and dashboard.":::
 
 ## Analyze a process
 
-Let’s take the analysis of our process beyond KPIs. We use the Power Automate Process Mining desktop app, where you can edit and analyze your processes created in the process mining capability.
+Let's take the analysis of our process beyond KPIs. We use the Power Automate Process Mining desktop app, where you can edit and analyze your processes created in the process mining capability.
 
 1. From the command bar of the analytics report page, select **Download Process Mining app** to download it.
 1. On the toolbar, select the environment from the top right.

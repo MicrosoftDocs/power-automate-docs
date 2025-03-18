@@ -1,344 +1,344 @@
 - name: Power Automate documentation
   href: ./index.yml
 - name: Overview
-  items:
-  - name: Types of flows
-    href: flow-types.md
-  - name: Sign up
-    href: sign-up-sign-in.md
-  - name: Get started with Power Automate
-    href: getting-started.md
-  - name: Copilot in Power Automate
-    href: copilot-overview.md
-  - name: What's new
-    href: whats-new.md
-  - name: Create and manage flows in Power Apps
-    href: create-flows-power-apps.md
+  items: 
+    - name: What is Power Automate?
+      href: flow-types.md
+    - name: Adopt automation with Copilot in Power Automate
+      href: copilot-overview.md
+    - name: What's new
+      href: whats-new.md
+- name: Get started
+  items: 
+    - name: Sign up
+      href: sign-up-sign-in.md
+    - name: Get started with Power Automate
+      href: getting-started.md
 - name: Cloud flows
   items:
-  - name: Get started with cloud flows
-    href: overview-cloud.md
-  - name: Get started with Copilot in cloud flows
-    href: get-started-with-copilot.md
-  - name: Understand the cloud flows designer
-    href: flows-designer.md     
-  - name: Get started with triggers
-    href: triggers-introduction.md
-  - name: Add OAuth authentication for HTTP request triggers
-    href: oauth-authentication.md
-  - name: Get help from the Microsoft Copilot Studio bot
-    href: contextual-help-bot.md
-  - name: Share a flow
-    href: create-team-flows.md
-  - name: Support for guest users
-    href: share-guest-users.md
-  - name: Support for service principal owned flows
-    href: service-principal-support.md
-  - name: Export and import a non-solution flow
-    href: export-import-flow-non-solution.md
-  - name: Drafts and versioning for cloud flows
-    href: drafts-versioning.md
-  - name: Generative actions (preview)
-    items:
     - name: Overview
-      href: generative-actions-overview.md
-    - name: Create generative actions
-      href: create-generative-actions.md
-  - name: Automated flows
-    items:
-    - name: Create a cloud flow from a template
-      href: get-started-logic-template.md
-    - name: Create a cloud flow from a description
-      href: create-cloud-flow-from-description.md
-    - name: Create a cloud flow from scratch
-      href: get-started-logic-flow.md
-    - name: Create a cloud flow with OneDrive for Business
-      href: onedrive-business-launch-panel.md
-    - name: Filter and copy data
-      href: odata-filters.md
-    - name: Run your flows with bttns
-      href: bttn-button-flows.md
-  - name: Scheduled flows
-    items:
-    - name: Run a cloud flow on a schedule
-      href: run-scheduled-tasks.md
-    - name: Process a list of items
-      href: apply-to-each.md
-  - name: Power Automate mobile app
-    items:
-    - name: Overview
-      href: ./mobile/overview-mobile.md
-    - name: Create flows from your phone
-      href: ./mobile/mobile-create-flow.md
+      href: overview-cloud.md
+    - name: Get started with cloud flows
+      items:
+        - name: Get started with Copilot in cloud flows
+          href: get-started-with-copilot.md
+        - name: Explore the cloud flows designer
+          href: flows-designer.md
+        - name: Get started with triggers
+          href: triggers-introduction.md
+        - name: Get help from the Microsoft Copilot Studio bot
+          href: contextual-help-bot.md
+    - name: How to
+      items:
+      - name: Add an action
+        href: multi-step-logic-flow.md
+        displayName: Copy and paste actions
+      - name: Use generative actions (preview)
+        href: generative-actions-overview.md
+      - name: Add a condition
+        href: add-condition.md
+      - name: Associate flows to apps
+        href: associate-flow-to-app.md
+      - name: Use data operations
+        href: data-operations.md
+      - name: Customize or format date and time values in a flow
+        href: date-time-values.md
+      - name: Convert a time zone
+        href: convert-time-zone.md
+      - name: Use expressions in conditions
+        href: use-expressions-in-conditions.md
+      - name: Store and manage values in variables
+        href: create-variable-store-values.md
+      - name: Manage sensitive input like passwords
+        href: how-tos-use-sensitive-input.md
+      - name: Cancel or resubmit flow runs in bulk
+        href: how-tos-bulk-resubmit.md
+      - name: Use Visio to model flows
+        href: visio-flows.md
+      - name: "Reference: Use functions in expressions"
+        href: /azure/logic-apps/workflow-definition-language-functions-reference
+      - name: Publish a template
+        href: publish-a-template.md
+      - name: Turn a cloud flow on or off
+        href: disable-flow.md
+      - name: Format data by examples
+        href: format-data-by-examples.md
     - name: Manage cloud flows
-      href: ./mobile/manage-cloud-flows.md 
-    - name: Create widgets
-      href: ./mobile/widgets.md
-    - name: Manage approvals
-      href: ./mobile/manage-approvals.md
-    - name: Receive notifications
-      href: ./mobile/notifications.md
-  - name: How to
-    items:
-    - name: Add an action
-      href: multi-step-logic-flow.md
-      displayName: Copy and paste actions
-    - name: Add a condition
-      href: add-condition.md
-    - name: Associate flows to apps
-      href:  associate-flow-to-app.md
-    - name: Use data operations
-      href: data-operations.md
-    - name: Customize or format date and time values in a flow
-      href: date-time-values.md
-    - name: Convert a time zone
-      href: convert-time-zone.md
-    - name: Use expressions in conditions
-      href: use-expressions-in-conditions.md
-    - name: Store and manage values in variables
-      href: create-variable-store-values.md
-    - name: Manage sensitive input like passwords
-      href: how-tos-use-sensitive-input.md
-    - name: Cancel or resubmit flow runs in bulk
-      href: how-tos-bulk-resubmit.md
-    - name: Restore deleted flows
-      href: how-tos-restore-deleted-flow.md
-    - name: Use Visio to model flows
-      href: visio-flows.md
-    - name: "Reference: Use functions in expressions"
-      href: /azure/logic-apps/workflow-definition-language-functions-reference
-    - name: Publish a template
-      href: publish-a-template.md
-    - name: Turn a cloud flow on or off
-      href: disable-flow.md
-    - name: Change the owner of cloud flow
-      href: change-cloud-flow-owner.md
-    - name: Format data by examples
-      href: format-data-by-examples.md
-    - name: Regenerate the SAS key used in HTTP trigger flows
-      href: regenerate-sas-key.md
-  - name: Use flows in other apps
-    items:
-    - name: Use the Power Automate plugin for ChatGPT
-      href: ./use-chatgpt-plugin.md
-    - name: Use flows as plugins in Copilot for Microsoft 365 (preview)
-      href: flow-plugins-m365.md  
-    - name: Use flows with approvals
+      items: 
+        - name: Share a flow
+          href: create-team-flows.md
+        - name: Support for guest users
+          href: share-guest-users.md
+        - name: Support for service principal owned flows
+          href: service-principal-support.md
+        - name: Export and import a non-solution flow
+          href: export-import-flow-non-solution.md
+        - name: Save drafts and use versioning
+          href: drafts-versioning.md
+        - name: Add OAuth authentication for HTTP request triggers 
+          href: oauth-authentication.md
+        - name: Regenerate the SAS key used in HTTP trigger flows
+          href: regenerate-sas-key.md
+        - name: Change the owner of a cloud flow
+          href: change-cloud-flow-owner.md
+        - name: Restore deleted flows
+          href: how-tos-restore-deleted-flow.md
+        - name: Export and import solution-aware flows for ALM
+          items:
+          - name: Overview
+            href: overview-solution-flows.md
+            displayName: Use solutions for ALM of flows
+          - name: Create a cloud flow in a solution
+            href: create-flow-solution.md
+          - name: Create child flows
+            href: create-child-flows.md
+          - name: Export solution
+            href: export-flow-solution.md
+          - name: Import solution
+            href: import-flow-solution.md
+          - name: Edit a solution-aware flow
+            href: edit-solution-aware-flow.md
+          - name: Remove a solution-aware flow
+            href: remove-solution-aware-flow.md
+          - name: Set up Application Insights with Power Automate
+            href: /power-platform/admin/app-insights-cloud-flow.md
+    - name: Troubleshoot
       items:
-      - name: Get started with approvals
-        href: get-started-approvals.md
-      - name: Trigger approvals from lists
-        href: trigger-sharepoint-list.md
-      - name: Trigger approvals from SharePoint library
-        href: trigger-sharepoint-library.md
-      - name: How to - Top scenarios with approval flows
-        href: approvals-howto.md
-      - name: Manage approval requests in Power Automate
-        href: approve-reject-requests.md
-      - name: Single approvals
-        href: modern-approvals.md
-      - name: Approvals with attachments
-        href: approval-attachments.md
-      - name: Set up sequential approvals
-        href: set-up-sequential-approvals.md
-      - name: Manage sequential approvals
-        href: sequential-modern-approvals.md
-      - name: Parallel approvals
-        href: parallel-modern-approvals.md
-      - name: Everyone must approve
-        href: all-assigned-must-approve.md
-      - name: Wait for approval
-        href: wait-for-approvals.md
-      - name: Mobile approvals
-        href: mobile-approvals.md
-      - name: Request approvals from groups
-        href: group-approvals.md
-      - name: Integrated approvals
-        href: common-data-model-approve.md
-      - name: Format approval requests
-        href: approvals-markdown-support.md
-      - name: Custom approval response options
-        href: create-approval-response-options.md
-      - name: Known issues and limitations
-        href: approvals-known-issues.md
-    - name: Use flows with Microsoft 365 Outlook email
+      - name: Troubleshoot common issues with triggers
+        href: triggers-troubleshoot.md
+      - name: Watch a cloud flow
+        href: see-a-flow-run.md
+        displayName: Monitor flow activity on mobile devices
+      - name: Troubleshoot a cloud flow
+        href: fix-flow-failures.md
+      - name: Find and fix errors with the error checker
+        href: error-checker.md
+    - name: Automated flows
+      items:
+      - name: Create a cloud flow from a template
+        href: get-started-logic-template.md
+      - name: Create a cloud flow from a description
+        href: create-cloud-flow-from-description.md
+      - name: Create a cloud flow from scratch
+        href: get-started-logic-flow.md
+      - name: Create a cloud flow with OneDrive for Business
+        href: onedrive-business-launch-panel.md
+      - name: Filter and copy data
+        href: odata-filters.md
+      - name: Run your flows with bttns
+        href: bttn-button-flows.md
+    - name: Scheduled flows
+      items:
+      - name: Run a cloud flow on a schedule
+        href: run-scheduled-tasks.md
+      - name: Process a list of items
+        href: apply-to-each.md
+    - name: Power Automate mobile app
       items:
       - name: Overview
-        href: email-overview.md
-        displayName: Use flows with Outlook
-      - name: Create flows to manage email
-        href: create-email-flows.md
-      - name: Create flows for popular email scenarios
-        href: email-top-scenarios.md
-      - name: Trigger a cloud flow with email
-        href: email-triggers.md
-      - name: Customize email in flows
-        href: email-customization.md
-      - name: Troubleshoot issues with email in flows
-        href: email-troubleshooting.md
-    - name: Use flows with Excel for the web
-      href: flows-excel.md    
-    - name: Use flows with SharePoint
+        href: ./mobile/overview-mobile.md
+      - name: Create flows from your phone
+        href: ./mobile/mobile-create-flow.md
+      - name: Manage cloud flows
+        href: ./mobile/manage-cloud-flows.md 
+      - name: Create widgets
+        href: ./mobile/widgets.md
+      - name: Manage approvals
+        href: ./mobile/manage-approvals.md
+      - name: Receive notifications
+        href: ./mobile/notifications.md
+    - name: Use flows in other apps
       items:
-      - name: Overview
-        href: sharepoint-overview.md
-        displayName: Use flows with SharePoint
-      - name: Create SharePoint reminder flows
-        href: create-sharepoint-reminder-flows.md
-      - name: Manage SharePoint page approvals
-        href: customize-sharepoint-page-approvals.md
-    - name: Use flows with Microsoft Teams
-      items:
-      - name: Overview
-        href: ./teams/overview.md
-        displayName: Use flows with Microsoft Teams
-      - name: Install the Workflows app
-        href: ./teams/install-teams-app.md
-      - name: Create flows in Teams
-        href: ./teams/teams-app-create.md
-      - name: Use flows in teams created from templates
-        href: ./teams/introduction-teams-templates.md
-      - name: Manage flows in Teams
-        href: ./teams/teams-app-home.md
-      - name: Send a message in Teams
-        href: ./teams/send-a-message-in-teams.md
-      - name: Trigger flows from Teams messages
-        href: trigger-flow-teams-message.md
-      - name: Create flows using the Power Apps app
-        href: ./teams/create-flows-power-apps-app.md
-      - name: Model flows with adaptive cards
-        href: create-adaptive-cards.md
+      - name: Use the Power Automate plugin for ChatGPT
+        href: ./use-chatgpt-plugin.md
+      - name: Use flows as plugins in Copilot for Microsoft 365 (preview)
+        href: flow-plugins-m365.md  
+      - name: Use flows with approvals
         items:
-        - name: Overview of adaptive cards for Teams
-          href: overview-adaptive-cards.md
-        - name: Create adaptive cards for Teams
+        - name: Get started with approvals
+          href: get-started-approvals.md
+        - name: Trigger approvals from lists
+          href: trigger-sharepoint-list.md
+        - name: Trigger approvals from SharePoint library
+          href: trigger-sharepoint-library.md
+        - name: How to - Top scenarios with approval flows
+          href: approvals-howto.md
+        - name: Manage approval requests in Power Automate
+          href: approve-reject-requests.md
+        - name: Single approvals
+          href: modern-approvals.md
+        - name: Approvals with attachments
+          href: approval-attachments.md
+        - name: Set up sequential approvals
+          href: set-up-sequential-approvals.md
+        - name: Manage sequential approvals
+          href: sequential-modern-approvals.md
+        - name: Parallel approvals
+          href: parallel-modern-approvals.md
+        - name: Everyone must approve
+          href: all-assigned-must-approve.md
+        - name: Wait for approval
+          href: wait-for-approvals.md
+        - name: Mobile approvals
+          href: mobile-approvals.md
+        - name: Request approvals from groups
+          href: group-approvals.md
+        - name: Integrated approvals
+          href: common-data-model-approve.md
+        - name: Format approval requests
+          href: approvals-markdown-support.md
+        - name: Custom approval response options
+          href: create-approval-response-options.md
+        - name: Known issues and limitations
+          href: approvals-known-issues.md
+      - name: Use flows with Microsoft 365 Outlook email
+        items:
+        - name: Overview
+          href: email-overview.md
+          displayName: Use flows with Outlook
+        - name: Create flows to manage email
+          href: create-email-flows.md
+        - name: Create flows for popular email scenarios
+          href: email-top-scenarios.md
+        - name: Trigger a cloud flow with email
+          href: email-triggers.md
+        - name: Customize email in flows
+          href: email-customization.md
+        - name: Troubleshoot issues with email in flows
+          href: email-troubleshooting.md
+      - name: Use flows with Excel
+        href: flows-excel.md    
+      - name: Use flows with SharePoint
+        items:
+        - name: Overview
+          href: sharepoint-overview.md
+          displayName: Use flows with SharePoint
+        - name: Create SharePoint reminder flows
+          href: create-sharepoint-reminder-flows.md
+        - name: Manage SharePoint page approvals
+          href: customize-sharepoint-page-approvals.md
+      - name: Use flows with Microsoft Teams
+        items:
+        - name: Overview
+          href: ./teams/overview.md
+          displayName: Use flows with Microsoft Teams
+        - name: Install the Workflows app
+          href: ./teams/install-teams-app.md
+        - name: Create flows in Teams
+          href: ./teams/teams-app-create.md
+        - name: Use flows in teams created from templates
+          href: ./teams/introduction-teams-templates.md
+        - name: Manage flows in Teams
+          href: ./teams/teams-app-home.md
+        - name: Send a message in Teams
+          href: ./teams/send-a-message-in-teams.md
+        - name: Trigger flows from Teams messages
+          href: trigger-flow-teams-message.md
+        - name: Create flows using the Power Apps app
+          href: ./teams/create-flows-power-apps-app.md
+        - name: Model flows with adaptive cards
           href: create-adaptive-cards.md
-        - name: Sample - Candidate feedback
-          href: candidate-feedback-sample.md
-        - name: Sample - Image share
-          href: image-share-sample.md
-        - name: Sample - Lead collection
-          href: lead-collection-sample.md
-        - name: Sample - Poll generator
-          href: poll-generator-sample.md
-        - name: Sample - Metadata update
-          href: metadata-update-sample.md
-        - name: Sample - Daily weather
-          href: daily-weather-sample.md
-        - name: Sample - Acronym form
-          href: acronym-sample.md
-        - name: Sample - Lead generation
-          href: lead-collection-sample.md
-    - name: Create approvals in Microsoft Teams
-      items:
-      - name: Overview of approvals in Microsoft Teams
-        href: ./teams/native-approvals-in-teams.md
-      - name: Create approvals in chats or channels
-        href: ./teams/create-approval-from-chat.md
-      - name: Create approvals from the approvals app
-        href: ./teams/create-approval-from-teams-app.md
-      - name: Respond to approvals in Teams
-        href: ./teams/respond-to-approvals-in-teams.md
-      - name: Manage approvals in Teams
-        href: ./teams/manage-approvals-app.md
-      - name: Customize approvals in Teams
-        href: ./teams/customize-approvals.md
-      - name: Use custom connectors in approval flows
-        href: ./teams/approvals-custom-connector.md
-    - name: Create a visual for Power BI
-      href: /power-bi/create-reports/power-bi-automate-visual?tabs=powerbi-desktop  
-    - name: Configure flows in Power Pages (preview)
-      href: /power-pages/configure/cloud-flow-integration
-    - name: Use flows with Microsoft Forms
+          items:
+          - name: Overview of adaptive cards for Teams
+            href: overview-adaptive-cards.md
+          - name: Create adaptive cards for Teams
+            href: create-adaptive-cards.md
+          - name: Sample - Candidate feedback
+            href: candidate-feedback-sample.md
+          - name: Sample - Image share
+            href: image-share-sample.md
+          - name: Sample - Lead collection
+            href: lead-collection-sample.md
+          - name: Sample - Poll generator
+            href: poll-generator-sample.md
+          - name: Sample - Metadata update
+            href: metadata-update-sample.md
+          - name: Sample - Daily weather
+            href: daily-weather-sample.md
+          - name: Sample - Acronym form
+            href: acronym-sample.md
+          - name: Sample - Lead generation
+            href: lead-collection-sample.md
+      - name: Create approvals in Microsoft Teams
+        items:
+        - name: Overview of approvals in Microsoft Teams
+          href: ./teams/native-approvals-in-teams.md
+        - name: Create approvals in chats or channels
+          href: ./teams/create-approval-from-chat.md
+        - name: Create approvals from the approvals app
+          href: ./teams/create-approval-from-teams-app.md
+        - name: Respond to approvals in Teams
+          href: ./teams/respond-to-approvals-in-teams.md
+        - name: Manage approvals in Teams
+          href: ./teams/manage-approvals-app.md
+        - name: Customize approvals in Teams
+          href: ./teams/customize-approvals.md
+        - name: Use custom connectors in approval flows
+          href: ./teams/approvals-custom-connector.md
+      - name: Create a visual for Power BI
+        href: /power-bi/create-reports/power-bi-automate-visual?tabs=powerbi-desktop  
+      - name: Configure flows in Power Pages (preview)
+        href: /power-pages/configure/cloud-flow-integration
+      - name: Use flows with Microsoft Forms
+        items:
+        - name: Overview
+          href: ./forms/overview.md
+          displayName: Use flows with Microsoft Forms
+        - name: Get started
+          href: ./forms/get-started.md
+        - name: Top scenarios
+          href: ./forms/popular-scenarios.md
+        - name: How to
+          href: ./forms/how-to.md
+        - name: Troubleshoot known issues with forms
+          href: ./forms/troubleshoot-issues.md
+    - name: Use flows with Microsoft Dataverse
       items:
       - name: Overview
-        href: ./forms/overview.md
-        displayName: Use flows with Microsoft Forms
-      - name: Get started
-        href: ./forms/get-started.md
-      - name: Top scenarios
-        href: ./forms/popular-scenarios.md
-      - name: How to
-        href: ./forms/how-to.md
-      - name: Troubleshoot known issues with forms
-        href: ./forms/troubleshoot-issues.md
-  - name: Use flows with Microsoft Dataverse
-    items:
-    - name: Overview
-      href: ./dataverse/overview.md
-      displayName: Use flows with Microsoft Dataverse
-    - name: Trigger flows when a row changes
-      href: ./dataverse/create-update-delete-trigger.md
-    - name: Trigger flows with actions
-      href: ./dataverse/action-trigger.md
-    - name: Use a flow to add a row
-      href: ./dataverse/create.md
-    - name: Use a flow to update a row
-      href: ./dataverse/update.md
-    - name: Get a row by id
-      href: ./dataverse/get-row-id.md
-    - name: Delete a row
-      href: ./dataverse/delete-row.md
-    - name: Use lists of rows in flows
-      href: ./dataverse/list-rows.md
-    - name: Connect to other environments
-      href: ./dataverse/connect-to-other-environments.md
-    - name: Use wait conditions to delay flows
-      href: ./dataverse/wait-conditions.md
-    - name: Perform bound or unbound actions in flows
-      href: ./dataverse/bound-unbound.md
-    - name: Use relationships to update rows
-      href: ./dataverse/relationships.md
-    - name: Use Dataverse search to retrieve rows
-      href: ./dataverse/search.md
-    - name: Relate rows or unrelate rows
-      href: ./dataverse/relate-unrelate-rows.md
-    - name: Use a flow to perform a changeset request in Dataverse
-      href: ./dataverse/change-set.md
-    - name: Upload or download image and file content
-      href: ./dataverse/upload-download-file.md
-    - name: Troubleshoot known issues with Dataverse
-      href: ./dataverse/known-issues.md
-    - name: Use Dataverse-based flows in Power Apps
-      href: ./dataverse/flows-power-apps.md
-    - name: Create a cloud flow that uses Microsoft Dataverse
-      href: common-data-model-intro.md
-    - name: Create a cloud flow to view retained data
-      href: ./dataverse/data-retention-flow.md
-    - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
-      href: connection-cds.md
-    - name: Manage cloud flow run history in Dataverse (preview)
-      href: ./dataverse/cloud-flow-run-metadata.md
-  - name: Use solutions for ALM
-    items:
-    - name: Overview
-      href: overview-solution-flows.md
-      displayName: Use solutions for ALM of flows
-    - name: Create a cloud flow in a solution
-      href: create-flow-solution.md
-    - name: Create child flows
-      href: create-child-flows.md
-    - name: Export solution
-      href: export-flow-solution.md
-    - name: Import solution
-      href: import-flow-solution.md
-    - name: Edit a solution-aware flow
-      href: edit-solution-aware-flow.md
-    - name: Remove a solution-aware flow
-      href: remove-solution-aware-flow.md
-  - name: Cloud flows best practices white paper
-    href: https://go.microsoft.com/fwlink/?linkid=2290320
-  - name: Troubleshoot
-    items:
-    - name: Troubleshoot common issues with triggers
-      href: triggers-troubleshoot.md
-    - name: Watch a cloud flow
-      href: see-a-flow-run.md
-      displayName: Monitor flow activity on mobile devices
-    - name: Troubleshoot a cloud flow
-      href: fix-flow-failures.md
-    - name: Find and fix errors with the error checker
-      href: error-checker.md
+        href: ./dataverse/overview.md
+        displayName: Use flows with Microsoft Dataverse
+      - name: Trigger flows when a row changes
+        href: ./dataverse/create-update-delete-trigger.md
+      - name: Trigger flows with actions
+        href: ./dataverse/action-trigger.md
+      - name: Use a flow to add a row
+        href: ./dataverse/create.md
+      - name: Use a flow to update a row
+        href: ./dataverse/update.md
+      - name: Get a row by id
+        href: ./dataverse/get-row-id.md
+      - name: Delete a row
+        href: ./dataverse/delete-row.md
+      - name: Use lists of rows in flows
+        href: ./dataverse/list-rows.md
+      - name: Connect to other environments
+        href: ./dataverse/connect-to-other-environments.md
+      - name: Use wait conditions to delay flows
+        href: ./dataverse/wait-conditions.md
+      - name: Perform bound or unbound actions in flows
+        href: ./dataverse/bound-unbound.md
+      - name: Use relationships to update rows
+        href: ./dataverse/relationships.md
+      - name: Use Dataverse search to retrieve rows
+        href: ./dataverse/search.md
+      - name: Relate rows or unrelate rows
+        href: ./dataverse/relate-unrelate-rows.md
+      - name: Use a flow to perform a changeset request in Dataverse
+        href: ./dataverse/change-set.md
+      - name: Upload or download image and file content
+        href: ./dataverse/upload-download-file.md
+      - name: Troubleshoot known issues with Dataverse
+        href: ./dataverse/known-issues.md
+      - name: Use Dataverse-based flows in Power Apps
+        href: ./dataverse/flows-power-apps.md
+      - name: Create a cloud flow that uses Microsoft Dataverse
+        href: common-data-model-intro.md
+      - name: Create a cloud flow to view retained data
+        href: ./dataverse/data-retention-flow.md
+      - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
+        href: connection-cds.md
+      - name: Manage cloud flow run history in Dataverse (preview)
+        href: ./dataverse/cloud-flow-run-metadata.md
 - name: Desktop flows
   items:
   - name: Introduction to desktop flows
@@ -359,6 +359,8 @@
       href: ./desktop-flows/install.md
     - name: Install Power Automate silently
       href: ./desktop-flows/install-silently.md
+    - name: Enable Power Automate automatic updates
+      href: ./desktop-flows/auto-update.md
     - name: Install Power Automate browser extensions
       href: ./desktop-flows/install-browser-extensions.md
     - name: Migration to Manifest V3 (browser extensions)
@@ -654,6 +656,8 @@
         href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
       - name: Troubleshoot SQL queries
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
+    - name: Update or roll back Power Automate
+      href: ./desktop-flows/how-to/update_power_automate.md
     - name: Configure connection strings for database related actions
       href: ./desktop-flows/how-to/configure-connection-strings-for-db-actions.md
     - name: Configure proxy settings
@@ -862,14 +866,6 @@
       href: process-mining-copilot-in-process-analytics.md   
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
-    - name: Azure Data Lake Storage Gen2
-      items:
-      - name: Bring your own Azure Data Lake Storage Gen2
-        href: process-mining-byo-azure-data-lake.md
-      - name: Bring your own network isolated Azure Data Lake Storage Gen2
-        href: process-mining-byo-azure-data-lake-private.md
-    - name: Ingest files from Fabric OneLake (preview)
-      href: process-mining-files-fabric-onelake.md
     - name: Transform and map data
       href: process-mining-transform.md
     - name: Visualize and gain insights from processes
@@ -907,8 +903,20 @@
       href: process-mining-cloud-flow-process-insights.md
     - name: Share process mining processes
       href: process-mining-share.md
+  - name: Load process data
+    items:
+    - name: Azure Data Lake Storage Gen2
+      items:
+      - name: Bring your own Azure Data Lake Storage Gen2
+        href: process-mining-byo-azure-data-lake.md
+      - name: Bring your own network isolated Azure Data Lake Storage Gen2
+        href: process-mining-byo-azure-data-lake-private.md    
+    - name: Ingest files from Fabric OneLake (preview)
+      href: process-mining-files-fabric-onelake.md
     - name: Edit and refresh processes
       href: process-mining-data-source.md
+    - name: Set up millisecond support when ingesting data with dataflows
+      href: import-with-milliseconds.md
   - name: Process Mining desktop app
     items:
     - name: Overview
@@ -1137,6 +1145,8 @@
     items:
     - name: Overview
       href: automation-center-overview.md
+    - name: Process map (preview)
+      href: automation-center-process-map.md      
     - name: Recommendations
       href: automation-center-recommendations.md
     - name: Copilot

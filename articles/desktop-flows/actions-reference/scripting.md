@@ -4,7 +4,7 @@ description: See all the available scripting actions.
 author: cochamos
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 08/29/2024
+ms.date: 02/21/2025
 ms.author: cochamos
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
@@ -29,7 +29,7 @@ Scripting actions enable you to run blocks of code and implement custom behavior
 > [!IMPORTANT]
 > As announced on [October 2023](/windows/whats-new/deprecated-features), VBScript is deprecated from Windows. In future releases of Windows, VBScript will be available as a feature on demand before its removal from the operating system. [For more information, see Resources for deprecated features.](/windows/whats-new/deprecated-features-resources#vbscript)
 
-All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, JavaScript and C#/VB.NET.
+All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, JavaScript, and C#/VB.NET.
 
 > [!NOTE]
 > Supported version for **C#:** v 5.0. For **VB.NET**: v 11.0
@@ -57,7 +57,7 @@ Currently, copilot in Power Automate for desktop is only available in environmen
 Currently, copilot in Power Automate for desktop is only available for users with a work or school account.
 
 > [!NOTE]
-> If your environment is in the region listed above and you still need to see the copilot in Power Automate for desktop experience, contact your tenant administrator. They might have turned off the copilot functionality.
+> If your environment is in one of the previously listed regions and you still need to see the copilot in Power Automate for desktop experience, contact your tenant administrator. They might have turned off the copilot functionality.
 
 ### How to generate scripts using copilot and natural language
 
@@ -185,7 +185,7 @@ You can use this action to include your own custom VBScript code in the desktop 
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|VBScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The VBScript code to execute. Variables may be included within the script since they evaluate prior to the execution of the VBScript|
+|VBScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The VBScript code to execute. Variables might be included within the script since they evaluate before the execution of the VBScript|
 |Fail after timeout|Yes|[Boolean value](../variable-data-types.md#boolean-value)|N/A|Specify whether the VBScript script will run indefinitely or fail after a set period of time|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|10|The maximum number of seconds to wait for the script to complete (-1 for indefinitely)|
 
@@ -193,7 +193,7 @@ You can use this action to include your own custom VBScript code in the desktop 
 |Argument|Type|Description|
 |-----|-----|-----|
 |VBScriptOutput|[Text value](../variable-data-types.md#text-value)|The script's output|
-|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that may occur during the execution of the VBScript code|
+|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that might occur during the execution of the VBScript code|
 
 ### <a name="runvbscript_onerror"></a> Exceptions
 
@@ -209,7 +209,7 @@ Executes some custom JavaScript code and retrieves its output into a variable.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|JavaScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The JavaScript code to execute. Variables may be included within the script since they evaluate prior to the JavaScript code's execution|
+|JavaScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The JavaScript code to execute. Variables might be included within the script since they evaluate before the JavaScript code's execution|
 |Fail after timeout|Yes|[Boolean value](../variable-data-types.md#boolean-value)||Specify whether the JavaScript script will run indefinitely or fail after a set period of time|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|10|The maximum number of seconds to wait for the script to complete (-1 for indefinitely)|
 
@@ -218,7 +218,7 @@ Executes some custom JavaScript code and retrieves its output into a variable.
 |Argument|Type|Description|
 |-----|-----|-----|
 |JavascriptOutput|[Text value](../variable-data-types.md#text-value)|The script's output|
-|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that may occur during the execution of the JavaScript code|
+|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that might occur during the execution of the JavaScript code|
 
 ### <a name="runjavascript_onerror"></a> Exceptions
 
@@ -236,7 +236,7 @@ You can use this action to include your own custom PowerShell code in the deskto
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|PowerShell code to run|Yes|[Text value](../variable-data-types.md#text-value)||The PowerShell code to execute. Variables may be included within the script since they evaluate prior to the execution of the PowerShell code|
+|PowerShell code to run|Yes|[Text value](../variable-data-types.md#text-value)||The PowerShell code to execute. Variables can be included within the script since they evaluate before the execution of the PowerShell code|
 |Fail after timeout|Yes|[Boolean value](../variable-data-types.md#boolean-value)||Specify whether the PowerShell script will run indefinitely or fail after a set period of time|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|10|The maximum number of seconds to wait for the script to complete (-1 for indefinitely)|
 
@@ -245,7 +245,7 @@ You can use this action to include your own custom PowerShell code in the deskto
 |Argument|Type|Description|
 |-----|-----|-----|
 |PowershellOutput|[Text value](../variable-data-types.md#text-value)|The script's output|
-|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that may occur during the execution of the PowerShell code|
+|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that might occur during the execution of the PowerShell code|
 
 ### <a name="runpowershellscript_onerror"></a> Exceptions
 
@@ -264,14 +264,14 @@ Executes Python script code and retrieves its output.
 |-----|-----|-----|-----|-----|
 |Python script to run|No|[Text value](../variable-data-types.md#text-value)||The Python script code to execute|
 |Python version|No|Python 2.7, Python 3.4|Python 2.7|Specify which version of Python to use when executing the script|
-|Module folder paths|Yes|[List](../variable-data-types.md#list) of [Folders](../variable-data-types.md#files-and-folders)||The path(s) of folder(s) where external Python modules lie|
+|Module folder paths|Yes|[List](../variable-data-types.md#list) of [Folders](../variable-data-types.md#files-and-folders)||The paths of folders where external Python modules lie|
 
 ### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
 |PythonScriptOutput|[Text value](../variable-data-types.md#text-value)|The script's output|
-|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that may occur during the execution of the Python script code|
+|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that might occur during the execution of the Python script code|
 
 ### <a name="runpythonscript_onerror"></a> Exceptions
 
@@ -297,8 +297,8 @@ Executes .NET (C#/VB.NET) script code and retrieves its output.
 ### Variables produced
 
 This action might produce variables, depending on the configuration made by the user when using the **Script Parameters** window.
-> [!NOTE] 
-> In the case the action is configured to produce output parameters (using the **Out** direction when configuring them), you should always ensure that the parameter inside the script is set to a value other than null. Otherwise, the script execution will result in an error since the output parameter has not been set.
+> [!NOTE]
+> In the case the action is configured to produce output parameters (using the **Out** direction when configuring them), you should always ensure that the parameter inside the script is set to a value other than null. Otherwise, the script execution results in an error since the output parameter hasn't been set.
 
 ### <a name="rundotnetscript_onerror"></a> Exceptions
 
