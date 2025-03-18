@@ -1097,9 +1097,6 @@
     - name: Known issues
       href: process-advisor-issues.md
       displayName: Known issues in process mining
-  - name: Glossary
-    href: process-advisor-glossary.md
-    displayName: Process mining glossary
   - name: Troubleshoot issues
     href: process-mining-troubleshoot.md
 - name: Connect to data
@@ -1145,6 +1142,8 @@
     items:
     - name: Overview
       href: automation-center-overview.md
+    - name: Process map (preview)
+      href: automation-center-process-map.md      
     - name: Recommendations
       href: automation-center-recommendations.md
     - name: Copilot
