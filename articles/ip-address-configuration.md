@@ -12,7 +12,7 @@ ms.author: samathur
 ms.reviewer: angieandrews
 ---
 
-# IP sddress configuration for Power Automate
+# IP address configuration for Power Automate
 
 This article describes the required configuration for Power Automate to connect to services in your network. It explains the configuration required for your makers and users to access Power Automate to build and use experiences.
 
