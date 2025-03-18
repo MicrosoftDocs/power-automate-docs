@@ -7,12 +7,12 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/17/2025
+ms.date: 03/18/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 ---
 
-# IP Address configuration for Power Automate
+# IP sddress configuration for Power Automate
 
 This article describes the required configuration for Power Automate to connect to services in your network. It explains the configuration required for your makers and users to access Power Automate to build and use experiences.
 
