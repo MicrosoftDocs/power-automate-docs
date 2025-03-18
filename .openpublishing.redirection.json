@@ -874,6 +874,16 @@
       "source_path": "articles/isv-pay-as-you-go.md",
       "redirect_url": "/connectors/connector-reference",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/process-advisor-glossary.md",
+      "redirect_url": "/power-automate/process-advisor-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/webinars.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl",
+      "redirect_document_id": false
     }
   ]
 }
