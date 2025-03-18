@@ -1097,9 +1097,6 @@
     - name: Known issues
       href: process-advisor-issues.md
       displayName: Known issues in process mining
-  - name: Glossary
-    href: process-advisor-glossary.md
-    displayName: Process mining glossary
   - name: Troubleshoot issues
     href: process-mining-troubleshoot.md
 - name: Connect to data
