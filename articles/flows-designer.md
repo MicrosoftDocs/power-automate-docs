@@ -286,6 +286,21 @@ To quickly identify which designer version you're using, ask yourself the follow
 
 The new cloud flows designer has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
 
+## Designer resiliency and save flow with errors
+
+The new designer automatically saves a copy of the flow to browser storage upon failed save, even with errors. This capability comes in handy on two occasions a. when underlying service is going through an outage and when makers need to avoid losing their unsaved changes, by exiting out of their flows, or b. for non-solution flows which lack the Save draft functionality, makers can exit out of their flow with errors and come back at a later time to fix the errors and save the flow. 
+
+A info banner appears on the designer notifying when designer is able to save the flow copy to browser's storage. Makers can now exit out of their flow. 
+
+![image](https://github.com/user-attachments/assets/8e65812c-959a-45e8-b74c-03aedf57db62)
+
+Upon revisiting the flow on the designer, the previously saved version loads on the designer by default. The unsaved copy is recoverable through the 'Recover' button on the info banner.
+
+![image](https://github.com/user-attachments/assets/7482cb36-de12-4526-8e87-df03e857f065)
+
+Makers can now fix errors on this copy of the flow. If they do not save this copy, the previously saved version of the flow is still accessible upon reloading the tab. However, please note that saving this copy will override the previously saved version of the flow, and will also clear up the browser storage as there is no unsaved changes on the flow. 
+
+
 ## Limitations and known issues
 
 You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following items:
