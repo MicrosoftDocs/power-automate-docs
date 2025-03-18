@@ -2,7 +2,7 @@
 title: Configure desktop flow logs behavior
 description: Configure desktop flow log verbosity and storage destination in Power Platform Admin Center.
 ms.topic: conceptual
-ms.date: 02/11/2025
+ms.date: 03/17/2025
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -112,10 +112,10 @@ The data model of logs V2 is based on a parent-child relationship between the Fl
 
 ### Traditional Dataverse API call syntax
 
-The following API call retrieves a specific flow session by its ID (9d51aa1f-315e-43ab-894f-bc445dfb049b) and then accesses the associated action logs using the `flowsession_flowlog_parentobjectid` relationship.
+The following API call retrieves a specific flow session by its ID (aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb) and then accesses the associated action logs using the `flowsession_flowlog_parentobjectid` relationship.
 
 ```http
-[Organization URI]/api/data/v9.0/flowsessions(9d51aa1f-315e-43ab-894f-bc445dfb049b)/flowsession_flowlog_parentobjectid  
+[Organization URI]/api/data/v9.0/flowsessions(aaaaaaaa-0000-1111-2222-bbbbbbbbbbbb)/flowsession_flowlog_parentobjectid  
 ```
 
 ### New ExecuteCosmosSqlQuery API call syntax using FlowLogs table
