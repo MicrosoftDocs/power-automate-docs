@@ -133,10 +133,7 @@ To disable the generate flow description using Copilot functionality, Power Plat
 
 ### Disabling the user feedback functionality
 
-As a Power Platform admin you can prevent users from sending feedback to Microsoft by disabling the **disableSurveyFeedback** tenant setting using PowerShell. More information:
-
-- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
-- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+As a tenant admin, you can prevent users from sending Copilot related feedback to Microsoft by disabling the "Copilot feedback" tenant setting from within Power Platform Admin Center.
 
 ### Data subject rights requests on user feedback
 
