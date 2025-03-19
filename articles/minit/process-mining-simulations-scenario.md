@@ -133,3 +133,4 @@ The status of the simulation scenario is indicated below the scenario’s tile. 
 ## Next step
 
 [Run a simulation and generate results](process-mining-simulations-run-results.md)
+
