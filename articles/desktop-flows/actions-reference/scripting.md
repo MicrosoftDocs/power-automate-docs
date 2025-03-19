@@ -86,10 +86,7 @@ Send feedback by selecting the thumb up or thumb down icon underneath the AI-gen
 
 ### Disabling the user feedback functionality
 
-As a tenant admin you can prevent your users from sending feedback to Microsoft by disabling the `disableSurveyFeedback` tenant setting. Find more information about viewing and setting tenant settings:
-
-- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
-- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+As a tenant admin, you can prevent users from sending Copilot related feedback to Microsoft by disabling the "Copilot feedback" tenant setting from within Power Platform Admin Center.
 
 ### Data subject rights requests on user feedback
 
