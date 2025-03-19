@@ -303,7 +303,13 @@ Upon revisiting the flow on the designer, the previously saved version loads on 
 
 :::image type="content" source="media/flows-designer/designer-recover.png" alt-text="Screenshot of the Recover flow button in flow designer.":::
 
-Makers can now fix errors on this copy of the flow. If they do not save this copy, the previously saved version of the flow is still accessible upon reloading the tab. However, please note that saving this copy will override the previously saved version of the flow, and will also clear up the browser storage as there is no unsaved changes on the flow.
+When you click on 'Recover' button, the unsaved browser copy of the flow is loaded on the designer, on top of which you can make updates.
+
+![image](https://github.com/user-attachments/assets/37c917bf-2f6b-46a9-a07c-dbad2aa7b512)
+
+You can now fix errors on this copy of the flow, and save it. If you do not save this copy, the previously saved version of the flow is still accessible upon reloading the tab. However, please note that saving this copy will override the previously saved version of the flow, and will also clear up the browser storage as there is no unsaved changes on the flow.
+
+Warning: Clearing the browser cache will delete the saved copy of the flow from browser. Please do not clear cache/cookies from browser if you still need access to the unsaved flow copy.
 
 ## Limitations and known issues
 
