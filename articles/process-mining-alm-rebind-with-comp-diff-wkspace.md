@@ -20,7 +20,7 @@ search.audienceType:
 
 # Rebind reports using a composite model (different workspaces)
 
-To migrate customizations of your Process Mining report from one workspace to another, follow the steps in this article. Learn more about composite models in [Use composite models in Power BI Desktop](/power-bi/transform-model/desktop-composite-models) and [Customize reports in Power BI workspace](process-mining-pbi-workspace.md#customize-reports-in-power-bi-workspace).
+To migrate customizations of your Process Mining report from one workspace to another, follow the steps in this article. Learn more about composite models in [Use composite models in Power BI Desktop](/power-bi/transform-model/desktop-composite-models) and [Customize reports in Power BI workspace](process-mining-pbi-workspace.md#customize-reports-in-power-bi-workspace) or [Customize reports in Fabric workspace (preview)](process-mining-fabric-workspace.md).
 
 If you linked your process in the Test environment to a workspace (for example, WkSpace B) that's different from the one used by the process in the Dev environment (for example, WkSpace A), follow the steps in this section.
 
