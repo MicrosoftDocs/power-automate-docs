@@ -293,7 +293,7 @@ To quickly identify which designer version you're using, ask yourself the follow
 
 ## Designer resiliency and save flow with errors
 
-The new designer automatically saves a copy of the flow to browser storage upon failed save, even with errors. This capability comes in handy on two occasions a. when underlying service is going through an outage and when makers need to avoid losing their unsaved changes, by exiting out of their flows, or b. for non-solution flows which lack the Save draft functionality, makers can exit out of their flow with errors and come back at a later time to fix the errors and save the flow.
+The new designer automatically saves a copy of the flow to browser storage upon failed save, even with errors. This capability comes in handy on two occasions: 1) When the underlying service is going through an outage and when makers need to avoid losing their unsaved changes, by exiting out of their flows, or 2) For non-solution flows, which lack the 'Save draft' functionality, makers can exit out of their flow with errors and come back at a later time to fix the errors and save the flow.
 
 A info banner appears on the designer notifying when designer is able to save the flow copy to browser's storage. Makers can now exit out of their flow.
 
@@ -303,7 +303,16 @@ Upon revisiting the flow on the designer, the previously saved version loads on 
 
 :::image type="content" source="media/flows-designer/designer-recover.png" alt-text="Screenshot of the Recover flow button in flow designer.":::
 
-Makers can now fix errors on this copy of the flow. If they do not save this copy, the previously saved version of the flow is still accessible upon reloading the tab. However, please note that saving this copy will override the previously saved version of the flow, and will also clear up the browser storage as there is no unsaved changes on the flow.
+When you select **Recover**, the unsaved browser copy of the flow is loaded on the designer, on top of which you can make updates.
+
+:::image type="content" source="media/flows-designer/recover.png" alt-text="Screenshot of the unsaved copy of the flow in flow designer.":::
+
+You can now fix errors on this copy of the flow and save it. If you don't save this copy, the previously saved version of the flow is still accessible upon reloading the tab.
+
+> [!WARNING]
+> - Saving this copy overrides the previously saved version of the flow. It also clears the browser storage, as there are no unsaved changes on the flow.
+> - Clearing the browser cache deletes the saved copy of the flow from the browser.
+> - If you still need access to the unsaved flow copy, *don't* clear cache orcookies from the browser.
 
 ## Limitations and known issues
 
@@ -358,3 +367,5 @@ Learn how to work with Copilot in cloud flows. You can get started with these ar
 
 - [Get started with Copilot in cloud flows](get-started-with-copilot.md)
 - [FAQ for Copilot expression assistant](faqs-copilot-expression-assistant.md)
+
+
