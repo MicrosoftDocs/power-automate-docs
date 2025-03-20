@@ -26,9 +26,14 @@ If you linked your process in your Test environment to a workspace (for example,
 
 [!INCLUDE[alm-attach-workspace](./includes/alm-attach-workspace.md)]
 
-4. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
+4. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 7.
+1. Select the type of workspace to be used - Power BI workspace or Fabric workspace
+    1. The dialog informs you whether you originally exported the process to Power BI or Fabric workspace
+    2. Select the same type of workspace
+    3. Select **Continue**
 1. Select the same workspace for this process by following these steps:
     1. In the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
+    1. For Fabric workspace - in the **Fabric workspace** dropdown menu, select the *same workspace*, in the **Lakehouse** dropdown menu select the same destination Lakehouse.
     1. In the **Report Name** field, enter a *different report name* from your previous report name.
 
         > [!IMPORTANT]
