@@ -32,7 +32,7 @@ If you linked your process in your Test environment to a workspace (for example,
     2. Select the same type of workspace
     3. Select **Continue**
 1. Select the same workspace for this process by following these steps:
-    1. In the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
+    1. For Power BI workspace - in the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
     1. For Fabric workspace - in the **Fabric workspace** dropdown menu, select the *same workspace*, in the **Lakehouse** dropdown menu select the same destination Lakehouse.
     1. In the **Report Name** field, enter a *different report name* from your previous report name.
 
