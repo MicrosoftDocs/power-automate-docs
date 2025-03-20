@@ -1059,7 +1059,7 @@
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md
-    - name: Process simulations (preview)
+    - name: Process simulations
       items:
       - name: Overview
         href: ./minit/process-mining-simulations-overview.md
