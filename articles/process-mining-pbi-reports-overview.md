@@ -26,8 +26,8 @@ The articles in this section use fictitious names. These names are for demonstra
 
 - **Dev environment**: Environment *from which* you want to migrate process mining artifacts.
 - **Test environment**: Environment *to which* you want to migrate process mining artifacts.
-- **WkSpace A**: Custom Power BI workspace associated with the Dev environment *from which* you want to migrate the Power BI report.
-- **WkSpace B**: Custom Power BI workspace associated with the Test environment *to which* you want to migrate the Power BI report.
+- **WkSpace A**: Custom Power BI or Fabric workspace associated with the Dev environment *from which* you want to migrate the Power BI report.
+- **WkSpace B**: Custom Power BI or Fabric workspace associated with the Test environment *to which* you want to migrate the Power BI report.
 - **Report A**: Name of the Power BI report for the process in Dev environment.
 - **Report B**: Name of the Power BI report for the process in Test environment.
 
@@ -36,7 +36,7 @@ The articles in this section use fictitious names. These names are for demonstra
 
 The procedures in the **Migrate customized Process Mining Power BI reports** section assume you completed the following tasks:
 
-1. You attached a Power BI workspace to your process in your Dev environment.
+1. You attached a Power BI or Fabric workspace to your process in your Dev environment.
 
 1. [You performed ALM on other process mining artifacts using solutions](process-mining-alm-entities-solutions.md).
 
