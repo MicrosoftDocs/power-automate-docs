@@ -4,7 +4,7 @@ description: See the main functionality of the Power Automate console.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/11/2024
+ms.date: 03/21/2025
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
@@ -133,7 +133,7 @@ To disable the generate flow description using Copilot functionality, Power Plat
 
 ### Disabling the user feedback functionality
 
-As a tenant admin, you can prevent users from sending Copilot related feedback to Microsoft by disabling the "Copilot feedback" tenant setting from within Power Platform Admin Center.
+As a [Power Platform admin](/power-platform/admin/use-service-admin-role-manage-tenant), prevent users from sending Copilot feedback to Microsoft by using the "Copilot feedback" [tenant setting](/power-platform/admin/tenant-settings).
 
 ### Data subject rights requests on user feedback
 
