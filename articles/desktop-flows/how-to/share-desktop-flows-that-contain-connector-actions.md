@@ -4,12 +4,13 @@ description: Learn how to share desktop flows that contain connector actions.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/12/2024
+ms.date: 03/21/2025
 ms.author: dipapa
 ms.reviewer: 
 contributors:
 - jpapadimitriou
 - DanaMartens
+- yiannismavridis
 search.audienceType: 
   - flowmaker
   - enduser
@@ -42,7 +43,7 @@ If there are compatible existing connections available, the first one is selecte
 
 ## Run a shared desktop flow that contains connector actions as a co-owner
 
-Co-owners have the ability to modify shared desktop flows in addition to running them. Co-owners have the ability to *embed* (preview) the connection references (and as a result their underlying connections) to the desktop flows they have access to. By embedding a connection reference to a desktop flow, you allow other co-owners to have access to the underlying data provided by it, for both modifying as well as running the desktop flow.
+Co-owners have the ability to modify shared desktop flows in addition to running them. Co-owners have the ability to *embed* the connection references (and as a result their underlying connections) to the desktop flows they have access to. By embedding a connection reference to a desktop flow, you allow other co-owners to have access to the underlying data provided by it, for both modifying as well as running the desktop flow.
 
 > [!NOTE]
 > You can only embed or remove connection references that you own from a desktop flow. Connection references added by other co-owners can only be managed by them.
