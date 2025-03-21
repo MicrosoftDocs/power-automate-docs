@@ -113,18 +113,17 @@ You can now use your credential in a [desktop flow connections](desktop-flow-con
 
 ## Use the credential in a desktop flow action (preview)
 
+> [!IMPORTANT]
+>- Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+>- For more information, go to our [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520).
+>- This action isn't available in sovereign clouds yet.
+
 1. Make sure you have a [registered machine](manage-machines.md) where your desktop flow runs. The credential is retrieved from this machine.  
 
-    > [!IMPORTANT]
+    > [!NOTE]
     > The registered machine is required for credentials to work properly at runtime, even for local attended or debugging runs.
 
 1. In the desktop flow designer, select the **[Power Automate secret variables (preview)](actions-reference/powerautomatesecretvariables.md)** module and then select the **[Get credential (preview)](actions-reference/powerautomatesecretvariables.md#getcredentialaction)** action.
-
-    > [!IMPORTANT]
-    >- Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-    >- For more information, go to our [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520).
-    >- This action isn't available in sovereign clouds yet.
-
 1. Specify the credential to retrieve. You see only the credentials defined as usable in a desktop flow. In public preview, only credentials using Azure key vault or CyberArk as a vault are supported.
 1. Define the name of the variable you create. This variable is marked as "sensitive" and can't be changed. This means the value of this variable isn't stored in the logs.
 
@@ -132,7 +131,7 @@ You can now use your credential in a [desktop flow connections](desktop-flow-con
     > Credential type variables are always enforced to be [sensitive](manage-variables.md#sensitive-variables), independently of how they're produced (Get credential (preview) action or reassigning a credential variable to a new one, which inherits the same variable type). The same applies to the 'Password' property of credential variables.
 
 1. After you select **Save**, use your credential in another action. All Power Automate actions can use credentials.
-1. In the **action** field, select the variable picker. In your flow variables list, find your credential and expand it. You can see the attributes **username** and **password**. Select the one you want to use in this action (double-click).
+1. In the action field, select the variable picker. In your flow variables list, find your credential and expand it. You can see the attributes **Username** and **Password**. Select the one you want to use in this action (double-click).
 1. Run your flow.
 
 ## View where secrets are used
