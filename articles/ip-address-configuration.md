@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/18/2025
+ms.date: 03/21/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 ---
@@ -88,6 +88,12 @@ The following table lists endpoint data requirements for connectivity from a use
 | ------- |  -------- | ---- |
 | server.events.data.microsoft.com|https|Handles telemetry for users outside EMEA, US government, and Chinese clouds. Works as the fallback telemetry endpoint.|
 | msedgedriver.azureedge.net<br>chromedriver.storage.googleapis.com | https | Access to desktop flows WebDriver downloaders. WebDriver is used to automate your browser (Microsoft Edge and Google Chrome).|
+
+#### Global endpoints for Power Automate for desktop MSI installer
+
+| Domains | Protocols | Uses |
+| ------- |  -------- | ---- |
+| *.builds.dotnet.microsoft.com|https| Downloads the .NET 8 runtime if it isn't already installed on the machine. |
 
 #### Public endpoints for desktop flows runtime
 
