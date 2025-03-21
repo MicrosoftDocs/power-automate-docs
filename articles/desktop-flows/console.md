@@ -133,7 +133,7 @@ To disable the generate flow description using Copilot functionality, Power Plat
 
 ### Disabling the user feedback functionality
 
-As a [Power Platform admin](/power-platform/admin/use-service-admin-role-manage-tenant), prevent users from sending Copilot feedback to Microsoft by using the "Copilot feedback" [tenant setting](/power-platform/admin/tenant-settings).
+As a [Power Platform admin](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), prevent users from sending Copilot feedback to Microsoft by using the "Copilot feedback" [tenant setting](/power-platform/admin/tenant-settings).
 
 ### Data subject rights requests on user feedback
 

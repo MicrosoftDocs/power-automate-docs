@@ -131,7 +131,7 @@ To send feedback, select the thumbs up or thumbs down icon under the AI-generate
 
 ### Turn off user feedback functionality
 
-As a [Power Platform admin](/power-platform/admin/use-service-admin-role-manage-tenant), prevent users from sending Copilot feedback to Microsoft by using the "Copilot feedback" [tenant setting](/power-platform/admin/tenant-settings).
+As a [Power Platform admin](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), prevent users from sending Copilot feedback to Microsoft by using the "Copilot feedback" [tenant setting](/power-platform/admin/tenant-settings).
 
 ### Data subject rights requests on user feedback
 
