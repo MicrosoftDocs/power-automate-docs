@@ -3,7 +3,7 @@ title: Install Power Automate
 description: Learn how to install Power Automate for desktop on your device.
 author: johndund
 ms.topic: how-to
-ms.date: 02/19/2025
+ms.date: 03/21/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -54,12 +54,12 @@ If the installation fails, go to the [troubleshooting guide](/troubleshoot/power
 
 ### .NET 8 requirement
 
-Starting with version 2.55, the Power Automate for desktop requires the .NET 8 runtime to be installed. The Power Automate MSI installer attempts to download and install the .NET 8 runtime if it does not exist on the machine. Therefore, without .NET 8, computers need internet access to the following URLs:
+Starting with version 2.55, Power Automate for desktop requires the .NET 8 runtime. The Power Automate MSI installer downloads and installs the .NET 8 runtime if it isn't already on the machine. Without .NET 8, computers need internet access to these URLs:
 
-- https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x64.exe
-- https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x86.exe
+- `https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x64.exe`
+- `https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x86.exe`
 
-If you get an error indicating that the .NET 8 runtime has failed to install on your computer, this may be because you don’t have connectivity to these URLs, or because one or both packages couldn’t be installed. To resolve this, you can install these runtime packages manually on the machine. Once installed, future versions of Power Automate will not need to download the .NET 8 runtime.
+If you receive an error indicating that the .NET 8 runtime failed to install, it might be because your computer can't connect to these URLs or one of the packages didn't install. To fix this issue, install these runtime packages manually on the machine. After installation, future versions of Power Automate don't download the .NET 8 runtime.
 
 ## Install Power Automate from Microsoft Store
 

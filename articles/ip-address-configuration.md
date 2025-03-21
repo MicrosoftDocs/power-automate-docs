@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/18/2025
+ms.date: 03/21/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 ---
@@ -93,7 +93,7 @@ The following table lists endpoint data requirements for connectivity from a use
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
-| *.builds.dotnet.microsoft.com|https|Used to download the .NET 8 runtime if it is not already installed on the machine.|
+| *.builds.dotnet.microsoft.com|https| Downloads the .NET 8 runtime if it isn't already installed on the machine. |
 
 #### Public endpoints for desktop flows runtime
 
