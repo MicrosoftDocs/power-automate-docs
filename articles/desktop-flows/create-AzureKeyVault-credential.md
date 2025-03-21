@@ -4,18 +4,19 @@ description: Learn how to create a credential with secret stored in Azure Key Va
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/10/2025
+ms.date: 03/21/2025
 ms.author: quseleba
 ms.reviewer: 
 contributors:
   - DanaMartens
+  - yiannismavridis
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 # Create an Azure Key Vault credential
 
-The **Credentials** page in Power Automate allows you to create, edit, and share sign in credentials using Azure Key Vault and use them in desktop flow connections.
+The **Credentials** page in Power Automate allows you to create, edit, and share sign in credentials using Azure Key Vault and use them in desktop flows or desktop flow connections.
 
 You can also [create credentials with CyberArk® (preview)](create-cyberark-credential.md).
 
@@ -65,12 +66,13 @@ Provide the following information to create your credential:
 ### Select credential store
 
 1. After selecting **Next**, select location to use credential.
-1. Select **Connection** or **Network** as the location to use the credential. Using credentials in desktop flow isn't supported with Azure Key Vault yet.
+1. Select **Connection**, **Desktop flow**, or **Network** as the location to use the credential. 
 1. If prompted, select **Azure Key Vault** as the type of credential store, and then select **Next**.
 
   | Location to use credential | Description                    | Supported  Azure Key Vault authentication                   |
   | --------- | ------------------------------ | ------------ |
   | **Connection** | Used in a desktop flow connection, the credential is used to sign into the machine during runtime (attended and unattended runs). | • Username and password<br> • Certificate-based authentication |
+  | **Desktop flow** | Used in a desktop flow automation, the credential can be used in actions in order to login, enter a password, etc. without keeping sensitive information in the script. | • Username and password |
   | **Network** | Used when creating [Microsoft Entra hybrid join network connection](hosted-machine-groups.md#additional-requirements-for-microsoft-entra-hybrid-joined-hosted-machines-groups-preview) for hosted machine groups. | • Username and password   |
 
 ### Select credential values
@@ -107,9 +109,27 @@ In the last step of the wizard, select credential values. Depending on the locat
 
 ## Create desktop flow connections using a credential
 
-Note: Credentials are only supported in the desktop flow connections for now.
-
 You can now use your credential in a [desktop flow connections](desktop-flow-connections.md)
+
+## Use the credential in a desktop flow action (preview)
+
+1. Ensure you have a [registered machine](manage-machines.md) where your desktop flow is executed. The credential is retrieved from this machine.
+
+    > [!IMPORTANT]
+    > The registered machine is required for credentials to work properly at runtime, even for local attended or debugging runs.
+
+1. In the desktop flow designer, select the **[Power Automate secret variables (preview)](actions-reference/powerautomatesecretvariables.md)** module  and then select the **[Get credential (preview)](actions-reference/powerautomatesecretvariables.md#getcredentialaction)** action.
+
+    > [!NOTE]
+    > This action isn't available in sovereign clouds yet.
+
+1. Specify which credential to retrieve. You only see the credentials defined as usable in a desktop flow. In public preview, only credentials using Azure key vault or CyberArk as a vault are supported.
+1. Define the name of your produced variable. This variable is marked as "sensitive" and can't be modified. This means the value of this variable isn't stored in the logs.
+    > [!NOTE]
+    > Credential type variables are always enforced to be [sensitive](manage-variables.md#sensitive-variables), independently of how they are produced (Get credential (preview) action or reassigning a credential variable to a new one, which inherits the same variable type). The same applies to the 'Password' property of credential variables.
+1. After clicking save, use your credential in another action. All Power Automate actions can use credentials.
+1. In the action field, select the variable picker button. In your flow variables list, find your credential and expand it. You can see the attributes "username" and "password". Select the one you want to use in this action (double-click).
+1. Run the flow.
 
 ## View where secrets are used
 
