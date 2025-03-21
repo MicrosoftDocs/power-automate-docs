@@ -4,7 +4,7 @@ description: Use CyberArk credentials in desktop flow connections
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/07/2024
+ms.date: 03/21/2025
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
@@ -164,10 +164,10 @@ Your credential is now created. You can use it in a desktop flow connection to [
     > [!NOTE]
     > This action isn't available in sovereign clouds yet.
 
-1. Specify which credential to retrieve. You only see the credentials defined as usable in a desktop flow. In public preview, only credentials using CyberArk as a vault are supported.
+1. Specify which credential to retrieve. You only see the credentials defined as usable in a desktop flow. In public preview, only credentials using Azure key vault or CyberArk as a vault are supported.
 1. Define the name of your produced variable. This variable is marked as "sensitive" and can't be modified. This means the value of this variable isn't stored in the logs.
     > [!NOTE]
     > Credential type variables are always enforced to be [sensitive](manage-variables.md#sensitive-variables), independently of how they are produced (Get credential (preview) action or reassigning a credential variable to a new one, which inherits the same variable type). The same applies to the 'Password' property of credential variables.
 1. After clicking save, use your credential in another action. All Power Automate actions can use credentials.
-1. In the action field, select the blue button for variables. In your flow variables list, find your credential and expand it. You can see the attributes "username" and "password". Select the one you want to use in this action (double-click).
-1. Execute the flow.
+1. In the action field, select the variable picker button. In your flow variables list, find your credential and expand it. You can see the attributes "username" and "password". Select the one you want to use in this action (double-click).
+1. Run the flow.
