@@ -5,7 +5,7 @@ author: yiannismavridis
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/07/2024
+ms.date: 03/21/2025
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
@@ -24,7 +24,7 @@ ms.custom:
 
 In this module, you find actions that allow you to safely retrieve sensitive data that are available in your environment, offering direct integration with the corresponding components.
 
-You can retrieve CyberArk-based credentials and [use them in desktop flows (preview)](../create-cyberark-credential.md#use-the-credential-in-a-desktop-flow-action-preview) securely. The credential values are only retrieved at runtime and aren't logged. Credential type variables are enforced to be sensitive.
+You can retrieve CyberArk-based credentials and [use them in desktop flows (preview)](../create-cyberark-credential.md#use-the-credential-in-a-desktop-flow-action-preview) securely, or credentials that are based on Azure key vault. The credential values are only retrieved at runtime and aren't logged. Credential type variables are enforced to be sensitive.
 
 [!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
