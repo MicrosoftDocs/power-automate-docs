@@ -3,7 +3,7 @@ title: Set a run owner on a desktop flow connection (preview)
 description: Learn how to set a run owner on a desktop flow connection using a service principal identity in Power Automate (preview).
 author: iriverain
 ms.topic: article
-ms.date: 01/27/2025
+ms.date: 03/18/2025
 ms.author: iriverain
 ms.reviewer: iriverain
 ms.subservice: desktop-flow
@@ -130,10 +130,12 @@ Placeholders defined for the request body:
 | ENVIRONMENT_ID | The environment ID | 00aa00aa-bb11-cc22-dd33-44ee44ee44ee |
 | DISPLAY_NAME | The connection display name in the Power Automate portal | InvoiceAppConnection |
 | CREDENTIAL_ID | The credential ID. Learn more in [Get the credential ID](#get-the-credential-id) | bbbbbbbb-1111-2222-3333-cccccccccccc |
+| MACHINE_ACCOUNT | The username of the account used to open a Windows session. For a local account, use `<MACHINENAME\\User>` or `<local\\User>`. For a Microsoft Entra ID account, use `<DOMAIN\\User>` or `<username@domain.com>`. Note that backslashes need to be escaped, for example, `CONTOSO\\accountName`. | `CONTOSO\\accountName` |
+| MACHINE_PASSWORD | The account password | |
 | ENVIRONMENT_VARIABLE_USERNAME | The name of the environment variable that contains the machine account name. Learn more in [Get an environment variable name](#get-an-environment-variable-name) | new_ContosoLogin |
 | ENVIRONMENT_VARIABLE_PASSWORD | The name of the environment variable that contains the password for the account. Learn more in [Get an environment variable name](#get-an-environment-variable-name) | new_ContosoPassword |
 | GROUP_ID | The group ID you want to create the connection for. Learn more in [Get the group ID of the machine or group](#get-the-group-id-of-the-machine-or-group) | dd4cac14-0b49-475d-b274-3ad41a4e82a7 |
-| APP_ID | The application ID (or client ID) of your service principal identity that is used as run owner.| 73ba3759-88a8-4107-b58c-fe71d1a4d171 |
+| APP_ID | The application ID (or client ID) of your service principal identity that is used as run owner.| 00001111-aaaa-2222-bbbb-3333cccc4444 |
 | PFX | The base64 encoded string of your service principal personal information exchange (PFX) certificate file. Learn more in [Get the base64 encoding of your certificate](#get-the-base64-encoding-of-your-service-principal-certificate) | MIIKdQIBA...ICB9A= |
 | PASSWORD | The password of the service principal certificate. Can be left empty if null | |
 

@@ -83,7 +83,7 @@
           href: change-cloud-flow-owner.md
         - name: Restore deleted flows
           href: how-tos-restore-deleted-flow.md
-        - name: Use solutions for ALM
+        - name: Export and import solution-aware flows for ALM
           items:
           - name: Overview
             href: overview-solution-flows.md
@@ -100,6 +100,8 @@
             href: edit-solution-aware-flow.md
           - name: Remove a solution-aware flow
             href: remove-solution-aware-flow.md
+          - name: Set up Application Insights with Power Automate
+            href: /power-platform/admin/app-insights-cloud-flow.md
     - name: Troubleshoot
       items:
       - name: Troubleshoot common issues with triggers
@@ -654,6 +656,8 @@
         href: ./desktop-flows/how-to/sql-queries-microsoft-access.md
       - name: Troubleshoot SQL queries
         href: ./desktop-flows/how-to/troubleshoot-sql-queries.md
+    - name: Update or roll back Power Automate
+      href: ./desktop-flows/how-to/update_power_automate.md
     - name: Configure connection strings for database related actions
       href: ./desktop-flows/how-to/configure-connection-strings-for-db-actions.md
     - name: Configure proxy settings
@@ -1055,7 +1059,7 @@
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md
-    - name: Process simulations (preview)
+    - name: Process simulations
       items:
       - name: Overview
         href: ./minit/process-mining-simulations-overview.md
@@ -1093,9 +1097,6 @@
     - name: Known issues
       href: process-advisor-issues.md
       displayName: Known issues in process mining
-  - name: Glossary
-    href: process-advisor-glossary.md
-    displayName: Process mining glossary
   - name: Troubleshoot issues
     href: process-mining-troubleshoot.md
 - name: Connect to data
@@ -1141,6 +1142,8 @@
     items:
     - name: Overview
       href: automation-center-overview.md
+    - name: Process map (preview)
+      href: automation-center-process-map.md      
     - name: Recommendations
       href: automation-center-recommendations.md
     - name: Copilot
@@ -1256,8 +1259,6 @@
   items:
   - name: Microsoft Credentials for Power Platform
     href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl
-  - name: Webinars
-    href: webinars.md
   - name: Blog
     href: https://make.powerautomate.com/blog/
   - name: Forums
