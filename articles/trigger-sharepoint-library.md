@@ -68,7 +68,7 @@ Add an action that allows you to retrieve the content of the file.
 1. In the **Search for an action or connector** field, enter **sharepoint get file content**.
 1. Scroll down to find and select the **Get File Content** action.
 
-## Configure the flow
+## Configure your flow
 
 1. In the **Get File Content** action screen, **Parameters** tab, update the following input
 parameters:
@@ -125,8 +125,6 @@ You're done configuring the flow. You can now test it.
 
     Power Automate indicates to you when the flow is in test mode.
 
-    \[14_TestRunning.jpg\]
-
 1. When it's in test mode, upload a new file to the **Incoming Invoices** folder in the SharePoint document library that you specified earlier.
 
     The flow continues to run the test.
@@ -143,7 +141,7 @@ If the email doesn't display correctly, make sure you have the latest updates in
 
 :::image type="content" source="media/trigger-sharepoint-library/email.png" alt-text="Screenshot of the 'Approvals' screen in Power Automate.":::
 
-### In Power Automate maker portal, in Approvals section
+### In Power Automate maker portal, in the Approvals section
 
 The approver gets a list of their approval requests in the **Received** tab. When the request is selected, the **Respond** panel appears where the approver can review the request, including select the link which loads the SharePoint file to review in a new browser tab.
 
@@ -152,13 +150,13 @@ The approver gets a list of their approval requests in the **Received** tab. Whe
 
     :::image type="content" source="media/trigger-sharepoint-library/response.png" alt-text="Screenshot of the 'Respond' panel in Power Automate.":::
 
-    Once the request is approved or rejected, the flow test run continues. If the request was approved, the **True** branch processes. Otherwise, the **False* branch processes.
+    Once the request is approved or rejected, the flow test run continues. If the request was approved, the **True** branch processes. Otherwise, the **False** branch processes.
 
     Since the request in this example was approved, the file uploaded in the original folder was deleted and created in the other folder.
 
 ## Related information
 
-- Create [approval flows](modern-approvals.md)
+[Create and test an approval workflow with Power Automate](modern-approvals.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
