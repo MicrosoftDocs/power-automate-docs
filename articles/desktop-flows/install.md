@@ -59,6 +59,8 @@ Starting with version 2.55, Power Automate for desktop requires the .NET 8 runti
 - `https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x64.exe`
 - `https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x86.exe`
 
+Power Automate for desktop uses the .NET 8 runtime to bring you the best and latest UI experience. The x86 package is required even on x64 operating systems because some automation modules within Power Automate are only available in 32-bit mode.
+
 If you receive an error indicating that the .NET 8 runtime failed to install, it might be because your computer can't connect to these URLs or one of the packages didn't install. To fix this issue, install these runtime packages manually on the machine. After installation, future versions of Power Automate don't download the .NET 8 runtime.
 
 ## Install Power Automate from Microsoft Store
