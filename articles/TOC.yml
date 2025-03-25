@@ -47,6 +47,8 @@
         href: convert-time-zone.md
       - name: Use expressions in conditions
         href: use-expressions-in-conditions.md
+      - name: Create and edit expressions with Copilot expression assistant (preview)
+        href: expressions-copilot.md
       - name: Store and manage values in variables
         href: create-variable-store-values.md
       - name: Manage sensitive input like passwords
@@ -1065,7 +1067,7 @@
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md
-    - name: Process simulations (preview)
+    - name: Process simulations
       items:
       - name: Overview
         href: ./minit/process-mining-simulations-overview.md
@@ -1103,9 +1105,6 @@
     - name: Known issues
       href: process-advisor-issues.md
       displayName: Known issues in process mining
-  - name: Glossary
-    href: process-advisor-glossary.md
-    displayName: Process mining glossary
   - name: Troubleshoot issues
     href: process-mining-troubleshoot.md
 - name: Connect to data
@@ -1151,6 +1150,8 @@
     items:
     - name: Overview
       href: automation-center-overview.md
+    - name: Process map (preview)
+      href: automation-center-process-map.md      
     - name: Recommendations
       href: automation-center-recommendations.md
     - name: Copilot
@@ -1266,8 +1267,6 @@
   items:
   - name: Microsoft Credentials for Power Platform
     href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl
-  - name: Webinars
-    href: webinars.md
   - name: Blog
     href: https://make.powerautomate.com/blog/
   - name: Forums
