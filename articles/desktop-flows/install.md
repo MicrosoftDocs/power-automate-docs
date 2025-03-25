@@ -3,11 +3,12 @@ title: Install Power Automate
 description: Learn how to install Power Automate for desktop on your device.
 author: johndund
 ms.topic: how-to
-ms.date: 03/21/2025
+ms.date: 03/25/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
   - DanaMartens
+  - v-aangie
 search.audienceType: 
   - flowmaker
   - enduser
@@ -50,7 +51,7 @@ By default, Power Automate for desktop honors the proxy settings specified in Wi
 If the installation fails, go to the [troubleshooting guide](/troubleshoot/power-platform/power-automate/desktop-flows/power-automate-desktop-installation-issues) for help.
 
 > [!NOTE]
-> There is only one Power Automate installer for both 32-bit and 64-bit computers. It automatically identifies the architecture of your operating system and proceeds to install the suitable version of the files accordingly.
+> There's only one Power Automate installer for both 32-bit and 64-bit computers. It automatically identifies the architecture of your operating system and proceeds to install the suitable version of the files accordingly.
 
 ### .NET 8 requirement
 
