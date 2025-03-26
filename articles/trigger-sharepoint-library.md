@@ -9,9 +9,10 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/25/2025
+ms.date: 03/26/2025
 ms.author: heortaol
 ms.reviewer: angieandrews
+ms.custom: DevRelAdv
 search.audienceType: 
   - flowmaker
   - enduser
@@ -25,7 +26,7 @@ In the approval process, every time a new invoice is added to a SharePoint libra
 
 To learn how to trigger approvals from a SharePoint document library, check out this short video:
 
-[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Q6Qv]
+> [!VIDEO 02bf237b-8c58-4513-bd4e-1c66b7163793]
 
 For more detailed instructions, follow the procedures in this article.
 
