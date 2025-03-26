@@ -37,7 +37,7 @@ For flows consisting of actions including 'HTTP' and 'HTTP + Swagger' actions, a
 |**PowerPlatformPlex** | yes |
 |**PowerPlatformInfra** | yes |
 
-:::image type="content" source="media/ip-address-configuration/http.png" alt-text=”screenshot of HTTP actions.":::
+:::image type="content" source="media/ip-address-configuration/http.png" alt-text="screenshot of HTTP actions.":::
 
 ## Allow users on your network to use Power Automate
 
