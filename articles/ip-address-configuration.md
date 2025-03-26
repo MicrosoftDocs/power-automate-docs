@@ -7,14 +7,17 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/18/2025
+ms.date: 03/26/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 ---
 
 # IP address configuration for Power Automate
 
-This article describes the required configuration for Power Automate to connect to services in your network (for inbound firewall configuration) and also the configuration required for your makers and users to access Power Automate to build and use experiences (for outbound firewall configuration).
+This article describes the required configuration for:
+
+- Power Automate to connect to services in your network by inbound firewall configuration, and
+- Your makers and users to access Power Automate to build and use experiences by outbound firewall configuration.
 
 ## Allow flows to call your services
 
@@ -26,13 +29,15 @@ Power Automate flows are comprised of actions. Actions can utilize both *connect
 
 ### Allowlist 'HTTP' and 'HTTP + Swagger' calls to your services
 
-For flows consisting of actions including 'HTTP' and 'HTTP + Swagger', add the network configuration to allow *all* of the following items:
+For flows consisting of actions including 'HTTP' and 'HTTP + Swagger' actions, allow traffic from *all* the following service tags:
 
-- **LogicApps** service tag AND
-- **PowerPlatformPlex** service tag AND
-- **PowerPlatformInfra** service tag 
+| Service tag | Required? |
+|----------| :-------------: |
+| **LogicApps** | yes |
+|**PowerPlatformPlex** | yes |
+|**PowerPlatformInfra** | yes | 
 
-## Allow users on your network to use the Power Automate
+## Allow users on your network to use Power Automate
 
 This section contains information on providing your makers and users access to the build and use experiences within Power Automate.
 
