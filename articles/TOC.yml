@@ -47,6 +47,8 @@
         href: convert-time-zone.md
       - name: Use expressions in conditions
         href: use-expressions-in-conditions.md
+      - name: Create and edit expressions with Copilot expression assistant (preview)
+        href: expressions-copilot.md
       - name: Store and manage values in variables
         href: create-variable-store-values.md
       - name: Manage sensitive input like passwords
@@ -1059,7 +1061,7 @@
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md
-    - name: Process simulations (preview)
+    - name: Process simulations
       items:
       - name: Overview
         href: ./minit/process-mining-simulations-overview.md

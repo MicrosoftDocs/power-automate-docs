@@ -202,57 +202,7 @@ The expression editor in the designer is multi-line, which allows you to easily 
 > [!TIP]
 > You can use a forward slash ( / ) keyboard shortcut to invoke the token picker/expression editor popup when you're on an action field.
 
-### Create, update, and fix your expressions with Copilot expression assistant (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
-
-This is a preview feature and is available to tenants where Copilot is enabled. On the modern designer, you can use this functionality to create, update, or fix expression with the help of Copilot.
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-
-#### Scenario 1: Create expression with natural language
-
-1. On the expression editor, select **Create expression with Copilot**.
-    The user experience that displays is the user experience for expression assistant.
-1. In the text box, write a prompt to generate an expression for, and select **Create expression**.
-    You can reference the flow's dynamic content in your prompt using their names to build expressions around. For example, assume you have first name, last name, phone number, and TriggerDate as dynamic data in your flow. You can ask following sample prompts:
-    - Concatenate first name and last name.
-    - Grab last four characters of Phone Number.
-    - Convert Phone number from Integer to String.
-    - Format TriggerDate to 'DD-MM' format.
-    :::image type="content" source="media/flows-designer/create-expression-nl.png" alt-text="Screenshot of creating an expression with Copilot.":::
-
-#### Scenario 2: Update an existing expression with natural language
-
-If you have an existing expression that you created manually or through the expression assistant, you can select **Create expression with Copilot** in expression editor. Now it understands the context of the expression, and any prompt you write is used to modify the existing expression.
-
-To finalize the update, do the following steps:
-
-1. To return the updated expression, select **Create expression**.
-1. To apply to expression editor, select **OK**.
-1. To apply to your flow, select **Add**.
-
-For example, the first step is to select an expression.
-
-:::image type="content" source="media/flows-designer/compose-nl.png" alt-text="Screenshot highlights an input parameter.":::
-
-The next step is to select **Create expression with Copilot**. Then, describe how you want to update this existing expression and select **Update**.
-
-:::image type="content" source="media/flows-designer/compose-full-nl.png" alt-text="Screenshot of an expression and string functions.":::
-
-Finally, select **OK** to apply the Copilot generated expression.
-
-:::image type="content" source="media/flows-designer/compose-ok-nl.png" alt-text="Screenshot highlights a suggested expression.":::
-
-#### Scenario 3: Fix invalid expression using a button
-
-You can use the same experience to fix erroneous expressions. The following example shows an erroneous expression that has a missing parenthesis after 'Phone' [variables function opening parenthesis didn't close].  
-
-:::image type="content" source="media/flows-designer/phone-paren.png" alt-text="Screenshot highlighting an erroneous expression.":::
-
-At this point, when you select **Create expression with Copilot**, it automatically fixes the expression that is currently loaded in expression editor.
-
-:::image type="content" source="media/flows-designer/phone-paren-fix.png" alt-text="Screenshot of a suggested fix for an erroneous expression.":::
+Learn how to use the expression editor in [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md).
 
 ### Disable an action or enable static results on an action
 
@@ -293,7 +243,7 @@ To quickly identify which designer version you're using, ask yourself the follow
 
 ## Designer resiliency and save flow with errors
 
-The new designer automatically saves a copy of the flow to browser storage upon failed save, even with errors. This capability comes in handy on two occasions a. when underlying service is going through an outage and when makers need to avoid losing their unsaved changes, by exiting out of their flows, or b. for non-solution flows which lack the Save draft functionality, makers can exit out of their flow with errors and come back at a later time to fix the errors and save the flow.
+The new designer automatically saves a copy of the flow to browser storage upon failed save, even with errors. This capability comes in handy on two occasions: 1) When the underlying service is going through an outage and when makers need to avoid losing their unsaved changes, by exiting out of their flows, or 2) For non-solution flows, which lack the 'Save draft' functionality, makers can exit out of their flow with errors and come back at a later time to fix the errors and save the flow.
 
 A info banner appears on the designer notifying when designer is able to save the flow copy to browser's storage. Makers can now exit out of their flow.
 
@@ -303,7 +253,16 @@ Upon revisiting the flow on the designer, the previously saved version loads on 
 
 :::image type="content" source="media/flows-designer/designer-recover.png" alt-text="Screenshot of the Recover flow button in flow designer.":::
 
-Makers can now fix errors on this copy of the flow. If they do not save this copy, the previously saved version of the flow is still accessible upon reloading the tab. However, please note that saving this copy will override the previously saved version of the flow, and will also clear up the browser storage as there is no unsaved changes on the flow.
+When you select **Recover**, the unsaved browser copy of the flow is loaded on the designer, on top of which you can make updates.
+
+:::image type="content" source="media/flows-designer/recover.png" alt-text="Screenshot of the unsaved copy of the flow in flow designer.":::
+
+You can now fix errors on this copy of the flow and save it. If you don't save this copy, the previously saved version of the flow is still accessible upon reloading the tab.
+
+> [!WARNING]
+> - Saving this copy overrides the previously saved version of the flow. It also clears the browser storage, as there are no unsaved changes on the flow.
+> - Clearing the browser cache deletes the saved copy of the flow from the browser.
+> - If you still need access to the unsaved flow copy, *don't* clear cache orcookies from the browser.
 
 ## Limitations and known issues
 
@@ -358,3 +317,5 @@ Learn how to work with Copilot in cloud flows. You can get started with these ar
 
 - [Get started with Copilot in cloud flows](get-started-with-copilot.md)
 - [FAQ for Copilot expression assistant](faqs-copilot-expression-assistant.md)
+
+
