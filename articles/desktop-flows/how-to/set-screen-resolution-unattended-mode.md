@@ -38,6 +38,9 @@ Set the screen resolution for unattended flows using the Windows registry. This 
 
    ![Screenshot of the registry DWORD edit window with decimal base selected.](media/set-screen-resolution-unattended-mode/WidthRegDwordDecimalBase.png)
 
+> [!IMPORTANT]
+> The registry keys mentioned are in the 32-bit registry as that is where the Power Automate installer writes its registry settings. However if the screen resolution keys are set in the 64-bit registry (i.e. SOFTWARE\Microsoft\Power Automate Desktop\Global\Screen), they will take precedence. If the settings are not working as expected, please check both locations and only use one or the other.
+
 | Key | Name | Type | Value |
 |---|---|---|---|
 | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | ScreenResolutionEnabled | DWORD | If set to '1', will enable the custom resolution settings. |
@@ -45,7 +48,7 @@ Set the screen resolution for unattended flows using the Windows registry. This 
 | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | Height | DWORD | Set the screen resolution height, such as 1080. |
 | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | Scale | DWORD | Set the screen resolution scale, such as 100. |
 
-## With UIFlowService.exe.config file
+## With UIFlowService.exe.config file (Deprecated)
 
 > [!IMPORTANT]
 > The **UIFlowService.exe.config** file is overwritten with default values during upgrades and screen resolution settings will therefore be reset. We recommend setting the resolution [with Windows registry](#with-windows-registry) settings instead.
