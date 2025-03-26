@@ -26,7 +26,7 @@ In the approval process, every time a new invoice is added to a SharePoint libra
 
 To learn how to trigger approvals from a SharePoint document library, check out this short video:
 
-> [!VIDEO 02bf237b-8c58-4513-bd4e-1c66b7163793]
+> [!VIDEO 551bee92-5535-4783-802e-7d2ff9a808d9]
 
 For more detailed instructions, follow the procedures in this article.
 
