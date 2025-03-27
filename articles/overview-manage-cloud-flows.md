@@ -10,7 +10,7 @@ ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.date: 03/27/2025
-ms.author: Heortaol
+ms.author: heortaol
 search.audienceType: 
   - flowmaker
   - enduser
@@ -33,7 +33,7 @@ To learn more about how you can manage your cloud flows, select the following ar
 
 ## Open the details screen for a flow
 
-To see the details of a flow, you need to select it from a list of flows.
+To get the details of a flow, you need to select it from a list of flows.
 
 1. Sign in to [Power Automate](http://powerautomate.com).
 1. Make sure you're in the environment that contains the flow you want to manage.
