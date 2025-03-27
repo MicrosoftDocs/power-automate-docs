@@ -18,11 +18,7 @@ search.audienceType:
 
 # Overview of cloud flows
 
-Create a cloud flow when you want your automation to be triggered either automatically, instantly, or via a schedule.
-
-This video gives an overview of cloud flows.
-
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=354cdd1a-a7a7-4d2c-9517-ca49184b9e3f]
+You can choose from three cloud flow options depending on what you want to automate. An *automated cloud flow* creates an automation that's triggered by an event such as the  arrival of an email from a specific person, or a mention of your company in social media. An *instant cloud flow* starts an automation with a selection of a button. A *scheduled cloud flow* start a scheduled automation such as daily data upload to SharePoint or a database.
 
 | **Flow type**     | **Use case**         | **Automation target**          |
 |-------------------|----------------------|----------------------|

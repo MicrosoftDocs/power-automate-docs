@@ -67,6 +67,8 @@
         href: format-data-by-examples.md
     - name: Manage cloud flows
       items: 
+        - name: Overview
+          href: overview-manage-cloud-flows.md
         - name: Share a flow
           href: create-team-flows.md
         - name: Support for guest users
