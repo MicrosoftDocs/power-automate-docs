@@ -20,9 +20,6 @@ search.audienceType:
 
 After you import process data the Process overview tab is displayed. Tab contains metrics and visuals to gain insights from process analysis.
 
-To fully use the Process Mining desktop app, you need a Power Automate Premium license to unlock the enterprise process mining capabilities. To learn how to install the Process Mining desktop app, go to [Download Power Automate Process Mining desktop app](how-to-start-with-minit-desktop-application.md).
-
-
  :::image type="content" source="media/process-overview.png" alt-text="Screenshot of the 'Process Overview' tab.":::
 
 
@@ -32,7 +29,7 @@ Tab displayes process map, KPIs and charts related to variants, activities and e
 
 ### Process map
 
-The process map empowers you to visualize and gain insights from processes. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist.
+The process map empowers you to visualize and gain insights from processes. Activities describe tasks or actions, the sequence of which makes up a business process. By looking at a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist.
 
 Process map offer visualization of different metrics grouped into 3 layers or context types - Performance, Freqeuncy and Rework. It is possible to selected the same or different metrics for nodes (activities) and paths (edges). To automatically set complexity of diplayed map user can turn on autoslider settings (set on by default). It automatically displayes only most relevant (frequent) process map elements. When autoslider setting is turned off, user can manually set sliders for activities and paths to control how many activities or paths are displayed).
 
@@ -40,7 +37,7 @@ To learn more about process map visual go to [(Process map overview)](process-ma
 
 ### KPIs
 
-Process Overview contains 4 tiles to display global KPIs for imported process. These KPIs are grouped into 3 categories.
+Process Overview contains 4 tiles to display global KPIs for imported process. In each tile you are select one of process KPIs. These are grouped into 3 categories.
 
 Process:
 - Event count - event count in actual process view.
@@ -71,7 +68,7 @@ Charts components visualize the following KPIs:
 
 - Top 10 variants - case count distribution for top 10 variants.
 - Top 5 edges - total counts for 5 most frequent edges in the process.
-- Top 10 activities - displays mean duration and case count for top 10 most frequent activities
+- Top 10 activities - displays mean duration and case count for top 10 most frequent activities.
 
 ### Filter pane
 
