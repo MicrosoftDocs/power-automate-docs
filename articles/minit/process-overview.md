@@ -16,7 +16,7 @@ search.audienceType:
 - enduser
 ---
 
-# Overview of Power Automate Process Mining
+# Process Overview (preview)
 
 Take advantage of additional enterprise process mining capabilities with the Power Automate Process Mining desktop app. For example, there are many ways to break down your process cycles into smaller pieces for analysis. With the Power Automate Process Mining desktop app, you can easily delve into the details of your processes.
 
@@ -43,15 +43,4 @@ Copilot in Process Mining process analytics provides process insights through qu
 
 Following are the main components for the Process Mining desktop app:
 
-- [Process map](process-map.md)
-- [Process animation](process-animation.md)
-- [Statistics](statistics.md)
-- [Root cause analysis](root-cause-analysis-overview.md)
-- [Variants](variants.md)
-- [Process compare](process-compare-compliance.md)
-- [Export](export.md)
-- [Filtering](filtering.md)
-- [Settings](settings.md)
-- Advanced features
-    - [Custom metrics](custom-metrics.md)
-    - [Business rules](business-rules.md)
+
