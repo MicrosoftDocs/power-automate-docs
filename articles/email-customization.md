@@ -90,7 +90,7 @@ Outlook takes the image you included in your email and converts it to plain text
    > [!IMPORTANT]
    > Inline images are limited to a size of 100 KB. This might affect the quality of the image.
 
-Here's a quick video that shows how to include an image from OneDrive.</br>
+Learn more about how to include an image from OneDrive in this quick video:</br>
 </br>
 
 > [!VIDEO b5c93ea2-c39a-4903-bba8-65ad22fa390d]
