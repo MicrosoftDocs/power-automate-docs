@@ -1,5 +1,5 @@
 ---
-title: Manage cloud flow run history in Dataverse (preview)
+title: Manage cloud flow run history in Dataverse
 description: Learn how to apply the extensibility of Dataverse to track the results of your cloud flow executions at scale.
 author: chrisgarty
 contributors:
@@ -7,9 +7,10 @@ contributors:
   - rakrish84
   - chrisgarty
   - v-aangie
+  - quentinsele
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 07/11/2024
+ms.date: 03/28/2025
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -18,20 +19,13 @@ search.audienceType:
   - enduser
 ---
 
-# Manage cloud flow run history in Dataverse (preview)
-
-[!INCLUDE[cc-preview-features-definition](../includes/cc-preview-features-top-note.md)]
+# Manage cloud flow run history in Dataverse
 
 With cloud flow run history in Dataverse, you can apply the extensibility of [Dataverse](/power-apps/maker/data-platform/) to track the results of your cloud flow executions at scale. With this feature, you can use the power of Dataverse’s common data architecture, including [Role-Based Access Control (RBAC)](/power-platform/admin/wp-security-cds#role-based-security), to manage the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data. Only solution cloud flows, with their definitions in Dataverse, can have their run history stored in Dataverse.
 
 As part of this feature, each cloud flow execution has an entry in the table [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun). This feature is using Dataverse’s nonrelational database, [elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables), to store the cloud flow run history.
 
 Cloud flow run history in Dataverse is used by the [automation center](/power-automate/automation-center-overview) to provide comprehensive monitoring and troubleshooting experiences for automation processes across Power Automate.
-
-> [!IMPORTANT]
->- This is a preview feature.
->- Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
->- This feature is in the process of rolling out and isn't available in the sovereign clouds region yet.
 
 ## Cloud flow run elements
 
@@ -122,7 +116,7 @@ The following table contains a list of [FlowEvent.EventCode](/power-apps/develop
 |IngestionDisabledByOrgSettings|Cloud flow run history isn't being saved in Dataverse due to environments settings, so some of the run history for cloud flows might be missing. This occurrence happens when [Organization.FlowRunTimeToLiveInSeconds](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) was set to zero in the past.|
 |ElasticTableStorageCapacityReached|You reached your Dataverse storage capacity limit, causing a pause in cloud flow run data synchronization.|
 |ElasticTablePartitionLimitReached|You reached your Dataverse storage partition limit, causing a pause in cloud flow run data synchronization.|
-|IngestionRateDataLoss|Some of the run history for cloud flows might be missing due to high volume of runs in this environment during the preview.|
+|IngestionRateDataLoss|Some of the run history for cloud flows might be missing due to high volume of runs in this environment.|
 |FlowRunsEventLoadingFailed|Unable to load the events for cloud flow runs in your current environment. As a result, some historical cloud flow run data might not be available.|
 |FlowRunsTTlSettingFailedMessage|Unable to retrieve your environment's TTL (time-to-live) setting for cloud flow runs. As a result, some historical cloud flow run data might not be available.|
 |ElasticTableNoRoleForUser|A user who owns one or more flows doesn't have read permissions to the FlowRun table in Dataverse, so some cloud flow run history isn't saved in Dataverse. The reason is because that user can't be set as the owner.|
@@ -145,11 +139,6 @@ If all of your environments have a [FlowRunTimeToLiveInSeconds value in the Orga
 1. If [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data isn't available, then your environments might not be automatically enabled for [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) ingestion because there wasn't enough [Dataverse database storage capacity](/power-platform/admin/capacity-storage#dataverse-tab) available.
 1. If [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data was previously available, then an administrator might have turned off ingestion of new records.
 
-### When is this going to be generally available (GA)?
-
-Currently, there's no committed timeline for transitioning this capability from public preview to General Availability (GA). Due to architectural and performance restrictions that require throttling, the FlowRun history might have gaps. However, we understand the importance of complete flow run history data. We're actively evaluating strategies for lossless synchronization that allows us to move this feature to GA in the future.
-
-The FlowRun data is used by the [Automation center (preview)](/power-automate/automation-center-overview) in the Power Automate maker portal. Although FlowRun data might have certain gaps during the preview phase, there's value in making this data accessible for public preview, both as a standalone feature and as part of the automation center.
 
 ### Does writing cloud flow run history into Dataverse use Power Platform request quota?
 
