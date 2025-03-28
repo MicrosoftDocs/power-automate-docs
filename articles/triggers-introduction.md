@@ -26,7 +26,7 @@ Power Automate offers connectors to services such as SharePoint and Outlook. Mos
 
 :::image type="content" source="./media/triggers-introduction/outlook-triggers.png" alt-text="Screenshot of some of the Office 365 Outlook triggers.":::
 
-Here's a quick video that shows how to get started with triggers.</br>
+Learn more about triggers in this quick video:</br>
 </br>
 
 > [!VIDEO 523050f3-8402-4a8a-ad86-108a1c6d2518]
@@ -69,7 +69,7 @@ To find your license, do the following steps.
 
 Sometimes, you might need to customize a trigger so that it fires only when certain conditions are met. For example, you might be using SharePoint's **When an item is created or modified** trigger in Power Automate. This trigger fires for every change to SharePoint items. However, you might want the flow to only trigger when an item is created or the status is marked as *Approved*. While you can filter other events by adding conditions to the flow, the flow still runs and the calls are counted as an API request. This causes you to reach your API request limits faster. To avoid it, you can write [expressions](./use-expressions-in-conditions.md) in trigger conditions, avoiding a *run* if the condition in trigger isn't met.
 
-Here's a quick video that shows how to customize a trigger by adding conditions.</br>
+Learn more about conditions in this quick video:</br>
 </br>
 
 > [!VIDEO fd4468f4-6d56-499e-98d0-4d98086cf9d5]
