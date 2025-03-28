@@ -16,11 +16,14 @@ search.audienceType:
 - enduser
 ---
 
-# Process Overview (preview)
+# Process overview (preview)
 
-Take advantage of additional enterprise process mining capabilities with the Power Automate Process Mining desktop app. For example, there are many ways to break down your process cycles into smaller pieces for analysis. With the Power Automate Process Mining desktop app, you can easily delve into the details of your processes.
+After you import process data the Process overview tab is displayed. Tab contains metrics and visuals to gain insights from process analysis.
 
 To fully use the Process Mining desktop app, you need a Power Automate Premium license to unlock the enterprise process mining capabilities. To learn how to install the Process Mining desktop app, go to [Download Power Automate Process Mining desktop app](how-to-start-with-minit-desktop-application.md).
+
+
+ :::image type="content" source="media/process-overview.png" alt-text="Screenshot of the 'Process Overview' tab.":::
 
 ## Benefits of the Process Mining desktop app
 
@@ -35,12 +38,8 @@ The Process Mining desktop app helps businesses to:
 
 Power Automate Process Mining analyzes data from processes that you create using the process mining capability in Power Automate. For example, you can get deep insights into how your processes run, uncover the root cause of problems, and build useful outputs for the rest of your organization.
 
-## Use Copilot in Process Mining process analytics (preview)
+## Embeded PowerBI tabs
 
-Copilot in Process Mining process analytics provides process insights through quick and easy natural language expression. Copilot can surface insights on your process and recommend solutions in power automate process mining. To learn more, go to [Copilot in Process Mining process analytics (preview)](../process-mining-copilot-in-process-analytics.md).
-
-## Components
-
-Following are the main components for the Process Mining desktop app:
+As part of process import PowerBI report is also generated with the process insights. This report is accessible through tabs next to Process Ovierview. Generation of PowerBI report represnts the last step, so it is usaully available later then Process overview tab.
 
 
