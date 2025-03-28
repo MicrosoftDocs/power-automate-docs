@@ -85,6 +85,6 @@ As part of process import PowerBI report is also generated with the process insi
 
 :::image type="content" source="media/process-overview-pbi.png" alt-text="Screenshot of the default PowerBI tab embeded in process page.":::
 
-To learn more, go to [Visualize and gain insights from PowerBI report](..\process-mining.visualize.md).
+To learn more, go to [Visualize and gain insights from PowerBI report](..\process-mining-visualize.md).
 
 
