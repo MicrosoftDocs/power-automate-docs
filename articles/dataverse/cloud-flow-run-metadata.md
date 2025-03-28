@@ -10,7 +10,7 @@ contributors:
   - quentinsele
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 07/11/2024
+ms.date: 03/28/2025
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -19,8 +19,7 @@ search.audienceType:
   - enduser
 ---
 
-# Manage cloud flow run history in Dataverse 
-
+# Manage cloud flow run history in Dataverse
 
 With cloud flow run history in Dataverse, you can apply the extensibility of [Dataverse](/power-apps/maker/data-platform/) to track the results of your cloud flow executions at scale. With this feature, you can use the power of Dataverse’s common data architecture, including [Role-Based Access Control (RBAC)](/power-platform/admin/wp-security-cds#role-based-security), to manage the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) data. Only solution cloud flows, with their definitions in Dataverse, can have their run history stored in Dataverse.
 
