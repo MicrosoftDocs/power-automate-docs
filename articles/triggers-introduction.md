@@ -8,12 +8,13 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/14/2024
+ms.date: 03/28/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 ms.collection:
   - get-started
   - bap-ai-copilot
+  - DevRelAdv
 ---
 
 # Get started with triggers
@@ -24,7 +25,12 @@ Power Automate offers connectors to services such as SharePoint and Outlook. Mos
 
 :::image type="content" source="./media/triggers-introduction/outlook-triggers.png" alt-text="Screenshot of some of the Office 365 Outlook triggers.":::
 
-## Choose the right trigger 
+Here's a quick video that shows how to get started with triggers.</br>
+</br>
+
+> [!VIDEO 523050f3-8402-4a8a-ad86-108a1c6d2518]
+
+## Choose the right trigger
 
 Triggers can be started instantly or manually, on a schedule, or automatically when an external event occurs, such as when an email arrives. The following table lists some common trigger scenarios and the type of flow you should create.
 
@@ -153,5 +159,3 @@ Your flow can generate expressions for you.
 - [Training: Streamline SharePoint processes with Power Automate (module)](/training/modules/streamline-processes/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
-
-
