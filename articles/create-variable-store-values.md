@@ -183,7 +183,6 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 
 1. When you're done, select **Save** on the designer toolbar.
 
-
 # [Classic designer](#tab/classic-designer)
 
 This action works only with integer and float variables.
@@ -276,7 +275,7 @@ Variables are commonly used for counting the number of times that a loop runs. T
    1. Under the **Initialize variable** action, select **New step**.
    1. In the search box, enter **apply to each** as your search filter, and select **Apply to each**.
 
-    :::image type="content" source="./media/create-variables-store-values/add-loop.png" alt-text="Screenshot of adding an Apply to each - Control loop.":::
+    :::image type="content" source="./media/create-variables-store-values/add-loop.png" alt-text="Screenshot of adding an Apply to each loop to cycle through the attavhments.":::
 
 1. In the loop, select inside the **Select an output from previous steps** box. When the dynamic content list appears, select **Attachments**.
 

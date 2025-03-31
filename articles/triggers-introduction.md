@@ -8,12 +8,14 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/14/2024
+ms.date: 03/28/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 ms.collection:
   - get-started
   - bap-ai-copilot
+  - DevRelAdv
+  - CXT
 ---
 
 # Get started with triggers
@@ -24,7 +26,12 @@ Power Automate offers connectors to services such as SharePoint and Outlook. Mos
 
 :::image type="content" source="./media/triggers-introduction/outlook-triggers.png" alt-text="Screenshot of some of the Office 365 Outlook triggers.":::
 
-## Choose the right trigger 
+Learn more about triggers in this quick video:</br>
+</br>
+
+> [!VIDEO 523050f3-8402-4a8a-ad86-108a1c6d2518]
+
+## Choose the right trigger
 
 Triggers can be started instantly or manually, on a schedule, or automatically when an external event occurs, such as when an email arrives. The following table lists some common trigger scenarios and the type of flow you should create.
 
@@ -62,6 +69,11 @@ To find your license, do the following steps.
 
 Sometimes, you might need to customize a trigger so that it fires only when certain conditions are met. For example, you might be using SharePoint's **When an item is created or modified** trigger in Power Automate. This trigger fires for every change to SharePoint items. However, you might want the flow to only trigger when an item is created or the status is marked as *Approved*. While you can filter other events by adding conditions to the flow, the flow still runs and the calls are counted as an API request. This causes you to reach your API request limits faster. To avoid it, you can write [expressions](./use-expressions-in-conditions.md) in trigger conditions, avoiding a *run* if the condition in trigger isn't met.
 
+Learn more about conditions in this quick video:</br>
+</br>
+
+> [!VIDEO fd4468f4-6d56-499e-98d0-4d98086cf9d5]
+
 ## Use trigger conditions to reduce flow runs  
 
 Trigger conditions can help streamline your flows and reduce the number of unnecessary runs. This helps keep flow runs and Power platform requests consumption low. With trigger conditions, you can set up multiple conditions that must be met before a flow is triggered.
@@ -74,7 +86,7 @@ This is especially important in pay-as-you-go environments, where every flow run
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -153,5 +165,3 @@ Your flow can generate expressions for you.
 - [Training: Streamline SharePoint processes with Power Automate (module)](/training/modules/streamline-processes/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
-
-

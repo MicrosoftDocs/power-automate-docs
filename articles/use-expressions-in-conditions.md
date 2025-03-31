@@ -2,10 +2,10 @@
 title: Use expressions in conditions in Power Automate
 description: Use advanced expressions such as "and", "or", "empty", "less", and "greater" in Power Automate Conditions.
 suite: flow
-author: v-aangie
+author: HeatherOrt
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/09/2024
+ms.date: 03/20/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
@@ -15,9 +15,9 @@ search.audienceType:
 ---
 # Use expressions in conditions to check multiple values
 
-In this tutorial, you'll learn to use expressions and *conditions* to compare multiple values in **Advanced mode**.
+In this tutorial, you learn to use expressions and *conditions* to compare multiple values in **Advanced mode**.
 
-When you create a cloud flow, you can use the [**Condition**](add-condition.md#add-a-condition) card in basic mode to quickly compare a single value with another value. However, there're times when you need to compare multiple values. For example, you might want to check the value of a few columns in a spreadsheet or database table.
+When you create a cloud flow, you can use the [**Condition**](add-condition.md#add-a-condition) card in basic mode to quickly compare a single value with another value. However, there are times when you need to compare multiple values. For example, you might want to check the value of a few columns in a spreadsheet or database table.
 
 You can use any combination of the following logical expressions in your conditions.
 
@@ -36,7 +36,7 @@ Expression|Description|Example
 
 ## Prerequisites
 
-Here's what you'll need to complete this walkthrough.
+Here's what you need to complete this walkthrough.
 
 * Access to Power Automate.
 * Your own spreadsheet with the tables described later in this walkthrough. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Power Automate can access it.
@@ -44,7 +44,7 @@ Here's what you'll need to complete this walkthrough.
 
 ## Use the 'or' expression
 
-Sometimes your workflow needs to take an action if the value of an item is valueA *or* valueB. For example, you may be tracking the status of tasks in a spreadsheet table. Assume that the table has a column named **Status** and the possible values in this column are:
+Sometimes your workflow needs to take an action if the value of an item is valueA *or* valueB. For example, you might be tracking the status of tasks in a spreadsheet table. Assume that the table has a column named **Status** and the possible values in this column are:
 
 * **completed**
 * **blocked**
@@ -55,7 +55,7 @@ Here's an example of what the spreadsheet might look like:
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table.png" alt-text="Screenshot of a sample spreadsheet with a Status column.":::
 
-Given the preceding spreadsheet, you want to use Power Automate to remove all rows with a **Status** column that's set to **completed** or **unnecessary**.
+Given the preceding spreadsheet, you want to use Power Automate to remove all rows with a **Status** column that is set to **completed** or **unnecessary**.
 
 Let's create the flow.
 
@@ -77,34 +77,42 @@ Let's create the flow.
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-## Select the spreadsheet and get all rows
+### Select the spreadsheet and get all rows
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
-1. Ask Copilot to create a flow for you. Please type the following prompt in Copilot:
+You can use Copilot to create the flow for you, or create it manually.
 
-    **Every week, list rows in a Excel table and if the Status column equals Succeded or claim maangers email is jake@contoso.com, delete Excel row**
+#### Create a flow with Copilot
 
-1. Select **Submit** ![Screenshot of the Submit button](./media/use-expressions-in-conditions/submit.png).
+1. Ask Copilot to create a flow for you. Type the following prompt in Copilot:
 
-    :::image type="content" source="./media/use-expressions-in-conditions/copilot-prompt.png" alt-text="Screenshot of a prompt in Copilot.":::
+    **Every week, list rows in an Excel table, and if the Status column equals Succeeded or claim manager's email is jake@contoso.com, delete Excel row.**
 
-Alternatively, you can follow the below steps to create the same flow manually:
+1. Select **Submit** ![Screenshot of the Submit button.](./media/use-expressions-in-conditions/submit.png).
+
+    After you submit the prompt, Copilot creates the flow for you. You need to fill in details for the flow to work, such as parameters for various actions added by Copilot.
+
+#### Create a flow manually
+
+Alternatively, you can perform the following procedure to create the same flow manually:
 
 1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
-1. Search for **rows**, select **Excel Online (Business)**, and then select the **Get a row** action that corresponds to the spreadsheet that you're using.
+1. Search for **rows** > **Excel Online (Business)** > the **Get a row** action that corresponds to the spreadsheet that you're using.
 
-    For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
+    For example, if you're using *Google Sheets*, select **Google Sheets - Get rows**.
 
 1. Select the **List rows present in a table** action.
 
-    :::image type="content" source="./media/use-expressions-in-conditions/add-an-action.png" alt-text="Screenshot of listing rows in a table in Copilot.":::
+    :::image type="content" source="./media/use-expressions-in-conditions/add-an-action-test.png" alt-text="Screenshot of listing rows in a table in Copilot.":::
 
 1. Select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
 
     :::image type="content" source="./media/use-expressions-in-conditions/table-parameters.png" alt-text="Screenshot of the parameters for list rows present in a table in Copilot.":::
 
 # [Classic designer](#tab/classic-designer)
+
+In the classic designer, you can create the flow manually. Copilot isn't an option.
 
 1. Select **New step**.
 
@@ -124,13 +132,13 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
 ## Check the status column of each row
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
 
 1. On the **Add an action** screen, search for **apply to each**, and then select the **Apply to each** under **Control**.
 
-1. Add the **value** token to the **Select an output from previous steps** box by selecting the ligtening rod icon.
+1. Add the **value** token to the **Select an output from previous steps** box by selecting the lightning rod icon.
 
     :::image type="content" source="./media/use-expressions-in-conditions/lightning-rod.png" alt-text="Screenshot selecting the value from the previous step.":::
 
@@ -170,19 +178,19 @@ Alternatively, you can follow the below steps to create the same flow manually:
 
 ---
 
-## Delete matching rows from the spreadsheet
+### Delete matching rows from the spreadsheet
 
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
-1. Select **Add an action** on the **If yes** branch of the condition.
+1. Select the plus sign (**+**) to add an action on the **True** branch of the condition.
 
-    The **If yes** branch runs if the **Or** condition evaluates to **true**.
+    The **True** branch runs if the **Or** condition evaluates to **true**.
 
-1. Search for **Delete a row**, select **Excel Online (Business)**, and then select **Delete a row**.
+1. Search for **Excel Online (Business)** and then select **Delete a row**.
 
     :::image type="content" source="./media/use-expressions-in-conditions/delete-a-row.png" alt-text="Screenshot of deleting a row.":::
 
-1. On the **Delete a row** card, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
+1. On the **Delete a row** panel, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
 
 1. In the **Key Column** dropdown list, select **\_PowerAppsId_**.
 
@@ -197,6 +205,8 @@ Alternatively, you can follow the below steps to create the same flow manually:
     The **If yes** branch runs if the **OR** condition evaluates to **true**.
 
 1. Search for **Delete a row**, select **Excel Online (Business)**, and then select **Delete a row**.
+
+    :::image type="content" source="./media/use-expressions-in-conditions/delete-a-row-test.png" alt-text="Screenshot of deleting a row.":::
 
 1. On the **Delete a row** card, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
 
@@ -218,7 +228,7 @@ Notice all data from rows that had **completed** or **unnecessary** in the **Sta
 
 ## Use the 'and' expression
 
-Assume you have a spreadsheet table with two columns. The column names are **Status** and **Assigned**. Assume also that you want to delete all rows if the **Status** column's value is **blocked** and the **Assigned** column's value is **John Wonder**.  To accomplish this task, follow all steps earlier in this tutorial, but when you edit the **Condition** card in advanced mode, use the **and** expression shown here.
+Assume you have a spreadsheet table with two columns. The column names are **Status** and **Assigned**. Assume also that you want to delete all rows if the **Status** column's value is **blocked** and the **Assigned** column's value is **John Wonder**. To accomplish this task, follow all steps earlier in this tutorial, but when you edit the **Condition** card in advanced mode, use the **and** expression shown here.
 
 ````@and(equals(item()?['Status'], 'blocked'), equals(item()?['Assigned'], 'John Wonder'))````
 
@@ -228,7 +238,7 @@ Here's an example of a **Condition** card.
 
 ## Run the flow with the 'and' expression
 
-If you've followed the steps in this tutorial, your spreadsheet should look similar to the following screenshot.
+If you followed the steps in this tutorial, your spreadsheet should look similar to the following screenshot.
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-before-and-expression-runs.png" alt-text="Screenshot of the spreadsheet before your flow runs.":::
 
@@ -256,21 +266,21 @@ Notice extra lines are removed from the table.
 
 ## Use the 'greater' expression
 
-Imagine you've bought baseball tickets for your coworkers and you're using a spreadsheet to ensure you're reimbursed by each person. You can quickly create a cloud flow that sends a daily email to each person who hasn't paid the full amount.
+Imagine you bought baseball tickets for your coworkers and you use a spreadsheet to ensure you get reimbursed by each person. You can quickly create a cloud flow that sends a daily email to each person who didn't paid the full amount.
 
-Use the **greater** expression to identify the employees who haven't paid the full amount. You can then automatically send a reminder email to those who haven't paid in full.
+Use the **greater** expression to identify the employees who didn't pay the full amount. You can then automatically send a reminder email to them.
 
 Here's a view of the spreadsheet.
 
-:::image type="content" source="./media/use-expressions-in-conditions/tickets-spreadsheet-table.png" alt-text="Screenshot of the spreadsheet of those who haven't paid in full.":::
+:::image type="content" source="./media/use-expressions-in-conditions/tickets-spreadsheet-table.png" alt-text="Screenshot of the spreadsheet of the employees who didn't pay in full.":::
 
-Here's the implementation of the **greater** expression that identifies all persons who have paid less than the amount due from them.
+Here's the implementation of the **greater** expression that identifies all persons who paid less than the amount due from them.
 
 ````@greater(item()?['Due'], item()?['Paid'])````
 
 ## Use the 'less' expression
 
-Imagine you've bought baseball tickets for your coworkers, and you're using a spreadsheet to ensure you're reimbursed by each person by the date to which everyone agreed. You can create a cloud flow that sends a reminder email to each person who hasn't paid the full amount if the current date is less than one day before the due date.
+Imagine you bought baseball tickets for your coworkers, and you use a spreadsheet to ensure you get reimbursed by each person by the date to which everyone agreed. You can create a cloud flow that sends a reminder email to each person who didn't pay the full amount if the current date is less than one day before the due date.
 
 Use the **and** expression with the **less** expression since there are two conditions being validated.
 
@@ -281,13 +291,13 @@ Use the **and** expression with the **less** expression since there are two cond
 
 ## Combine the 'greater' and 'less' expressions in an 'and' expression
 
-Use the **greater** expression to identify the employees who have paid less than the full amount due and use the **less** expression to determine if the payment due date is less than one day away from the current date. You can then use the **Send an email** action to send reminder emails to those employees who haven't paid in full and the due date is less than one day away.
+Use the **greater** expression to identify the employees who paid less than the full amount due and use the **less** expression to determine if the payment due date is less than one day away from the current date. You can then use the **Send an email** action to send reminder emails to those employees who didn't pay in full and the due date is less than one day away.
 
 Here's a view of the spreadsheet table.
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-due-date.png" alt-text="Screenshot of the spreadsheet table.":::
 
-Here's the implementation of the **and** expression that identifies all employees who have paid less than the amount due from them and the due date is less than one day away from the current date.
+Here's the implementation of the **and** expression that identifies all employees who paid less than the amount due from them and the due date is less than one day away from the current date.
 
 ````@and(greater(item()?['Due'], item()?['Paid']), less(item()?['dueDate'], addDays(utcNow(),1)))````
 

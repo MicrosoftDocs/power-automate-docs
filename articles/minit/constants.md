@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 07/18/2023
+ms.date: 03/10/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -18,6 +18,8 @@ search.audienceType:
 # List of constants
 
 The following table lists the constants in the Power Automate Process Mining desktop app.
+
+[!INCLUDE [papm-operations-note](../includes/papm-operations-note.md)]
 
 | Constant | Data type | Description |
 | - | - | - |
