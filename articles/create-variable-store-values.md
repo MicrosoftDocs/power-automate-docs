@@ -5,7 +5,7 @@ suite: flow
 author: kisubedi
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/06/2025
+ms.date: 03/31/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -42,7 +42,7 @@ Before you can add actions for creating and working with variables, your flow mu
 
 ## Initialize a variable
 
-# [New Designer](#tab/new-designer)
+# [New designer](#tab/new-designer)
 
 You can create a variable and declare its data type and initial value all within one action in your flow. You can only declare variables at the global level, not within scopes, conditions, and loops.
 
@@ -161,7 +161,7 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 > [!NOTE]
 > The **Increment variable** action works only with integer and float variables.
 
-# [New Designer](#tab/new-designer)
+# [New designer](#tab/new-designer)
 
 1. In the Power Automate designer, under the step where you want to increase an existing variable, select the plus sign (**+**).
 
@@ -212,7 +212,7 @@ This action works only with integer and float variables.
 
 Variables are commonly used for counting the number of times that a loop runs. This example shows how to create and use variables for this task by creating a loop that counts the attachments in an email.
 
-# [New Designer](#tab/new-designer)
+# [New designer](#tab/new-designer)
 
 1. In Power Automate, create a cloud flow and add a trigger that checks for new email and any attachments.
 
