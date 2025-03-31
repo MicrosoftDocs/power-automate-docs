@@ -447,7 +447,7 @@
       href: ./desktop-flows/create-azurekeyvault-credential.md
     - name: CyberArk credentials
       href: ./desktop-flows/create-cyberark-credential.md
-    - name: Certificate-based authentication (preview)
+    - name: Certificate-based authentication
       href: ./desktop-flows/configure-certificate-based-auth.md
     - name: Machine mapping (preview)
       href: ./desktop-flows/create-machine-mapping.md
