@@ -4,7 +4,7 @@ description: Configure certificate-based authentication (CBA) in Power Automate.
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/08/2024
+ms.date: 03/31/2025
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
