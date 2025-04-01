@@ -12,7 +12,7 @@ ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 04/01/2025
 ms.custom: bap-template
 ms.collection: bap-ai-copilot
 search.audienceType: 
@@ -24,21 +24,15 @@ search.audienceType:
 Create a cloud flow that performs one or more tasks (such as sending a report in email).
 
 - Once a day, an hour, or a minute.
-
 - On a date that you specify.
-
 - After a number days, hours, or minutes that you specify.
 
 ## Create a recurring flow
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-
 1. Select **My flows** > **New flow** > **Scheduled cloud flow**.
-
 1. In the fields next to **Starting**, specify the date and time when your flow should start.
-
 1. In the fields next to **Repeat every**, specify the flow's recurrence.
-
 1. Select **Create**.
 
     :::image type="content" source="media/run-scheduled-tasks/select-recurrence-aa.png" alt-text="Screenshot of the options to set up a scheduled flow.":::
@@ -66,17 +60,13 @@ Copilot adds the following parameters to the flow it created for you in the acti
 # [Classic designer](#tab/classic-designer)
 
 1. Follow the steps in the previous section.
-
 1. Select **Recurrence** > **Show advanced options**. When you select **Show advanced options**, the dropdown name changes to **Hide advanced options**.
 
     :::image type="content" source="./media/run-scheduled-tasks/select-recurrence1.png" alt-text="Screenshot of show/hide advanced options.":::
 
 1. In the **Time zone** field, select a time zone from the dropdown list to specify whether the **Start time** reflects a local time zone, Coordinated Universal Time (UTC), or other time zone.
-
 1. In the **Start time** field, enter a start time in this format: YYYY-MM-DDTHH:MM:SSZ
-
 1. If you specified **Day** under **Frequency**, select the time of day when the flow should run in the **At these hours** and **At these minutes** dropdown lists.
-
 1. If you specified **Week** under **Frequency**, do the following.<br/>
     - In the **On these days** and **At these hours** dropdown lists, select the day or days of the week on which the flow should run and the time or times of day when the flow should run.
     - In the **At these minutes** field, enter the minute values (from 0 to 59) separated by a comma.
