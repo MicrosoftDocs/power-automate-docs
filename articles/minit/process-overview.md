@@ -19,7 +19,7 @@ search.audienceType:
 
 [!INCLUDE[cc-preview-features-definition](../includes/cc-preview-features-top-note.md)]
 
-After you import process data, the **Process Overview** tab displays. This tab contains metrics and visuals to gain insights from process analysis.
+After you import process data, the **Process overview (preview)** tab displays. This tab contains metrics and visuals to gain insights from process analysis.
 
 [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
@@ -33,22 +33,22 @@ This tab displays the process map, key performance indicators (KPIs), and charts
 
 The process map empowers you to visualize and gain insights from processes. Activities describe tasks or actions, the sequence of which makes up a business process. By displaying a graphical representation of how your business processes are performed, you can glean insights about where opportunities exist.
 
-A process map offers a visualization of different metrics grouped into four (4) layers or context types&mdash;performance, frequency, finance and rework. It's possible to select the same or different metrics for nodes (activities) and paths (edges). To automatically set complexity of the displayed map, you can turn on autoslider settings. These settings are *on* by default. It automatically displays only most relevant (frequent) process map elements. When the autoslider setting is turned *off*, you can manually set sliders for activities and paths to control how many activities or paths display.
+A process map offers a visualization of different metrics grouped into four (4) layers or context types&mdash;performance, frequency, finance, and rework. It's possible to select the same or different metrics for nodes (activities) and paths (edges). To automatically set complexity of the displayed map, you can turn on autoslider settings. These settings are *on* by default. It automatically displays only most relevant (frequent) process map elements. When the autoslider setting is turned *off*, you can manually set sliders for activities and paths to control how many activities or paths display.
 
 Learn more about the process map visual in [(Process map overview)](process-map.md).
 
 ### Key performance indicators (KPIs)
 
-The **Process Overview** tab contains four (4) tiles to display global KPIs for the imported process. In each tile, you select one of the process KPIs. These are grouped into three (3) categories.
+The **Process overview (preview)** tab contains four (4) tiles to display global KPIs for the imported process. In each tile, you select one of the process KPIs. These are grouped into three (3) categories.
 
 - **Process**
     - **Event count**: Event count in actual process view.
     - **Total Event count**: Event count in actual process.
-    - **Case Count**: Case count in actual process view.
+    - **Case count**: Case count in actual process view.
     - **Total Case count**: Case count in actual process.
     - **Activities**: Count of activities in actual process view.
     - **Resources**: Count of resources in actual process view.
-    - **Variants count**: Count of variants in actual process view.
+    - **Variant count**: Count of variants in actual process view.
 
 - **Duration**
     - **Median case duration**: Median case duration for cases in actual view.
@@ -74,7 +74,7 @@ Charts components visualize the following KPIs:
 
 ### Filter pane
 
-The topmost part of the **Process Overview** tab contains a filter pane. There are four filters in total for filtering:
+The topmost part of the **Process overview (preview)** tab contains a filter pane. There are four filters in total for filtering:
 
 - **View**: Select the process view. Process always contains at least one view.
 - **Date & time**: Filter view data based on event's time.
@@ -83,7 +83,7 @@ The topmost part of the **Process Overview** tab contains a filter pane. There a
 
 ## Embedded Power BI tabs
 
-As part of process import, a Power BI report is generated with the process insights. This report is accessible through tabs next to **Process Overview**. Generation of a Power BI report represents the last step, so it's usually available later than the **Process Overview** tab.
+As part of process import, a Power BI report is generated with the process insights. This report is accessible through tabs next to **Process overview (preview)**. Generation of a Power BI report represents the last step, so it's usually available later than the **Process overview (preview)** tab.
 
 :::image type="content" source="media/process-overview/process-overview-pbi.png" alt-text="Screenshot of the default Power BI tab embedded in process page.":::
 
