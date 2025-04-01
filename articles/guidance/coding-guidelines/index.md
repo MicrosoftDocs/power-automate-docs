@@ -1,6 +1,6 @@
 ---
 title: Power Automate coding guidelines
-description: Learn best practices for building Power Automate flows with coding guidelines. Improve consistency, performance, and maintainability.
+description: Learn best practices for building Power Automate flows that are consistent, perform well, and easier to maintain.
 #customer intent: As a Power Automate user, I want to learn best practices for building and maintaining efficient cloud flows.
 author: manuelap-msft
 ms.subservice: guidance
@@ -15,13 +15,8 @@ search.audienceType:
 
 # Power Automate coding guidelines
 
-No matter how simple or complex a Power Automate cloud flow is, maintaining quality is critical as the flow's complexity grows.
+The articles in this section provide standards and best practices for developing Power Automate flows that are consistent, perform well, and can be maintained more easily. They include guidelines for naming actions, variables, and connectors, structuring your flows, optimizing performance, and troubleshooting. They also provide guidance on how to make sure your flows and the data that they handle are secure.
 
-These coding guidelines provide standards for naming actions, variables, and connectors, along with best practices for developing consistent, performant, and easily maintainable flows. They offer essential guidance for developers who design, build, test, deploy, and maintain Power Automate flows in various environments, including small businesses, corporations, and government entities.
+These guidelines are intended for all Power Automate makers, including citizen developers and professional developers. Although this guidance is intended for makers of cloud flows, much of it can be applied to any type of flow.
 
 [!INCLUDE [pp-tip-powercat-toolkit](~/../shared-content/shared/guidance-includes/pp-tip-powercat-toolkit.md)]
-
-## Next step
-
-> [!div class="nextstepaction"]
-> [Use consistent naming conventions](use-consistent-naming-conventions.md)
