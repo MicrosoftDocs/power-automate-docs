@@ -7,12 +7,12 @@
         - name: Overview
           href: coding-guidelines/index.md
         - name: Coding guidelines
-          items: 
-            - name: Use consistent naming conventions 
+          items:
+            - name: Use consistent naming conventions
               href: coding-guidelines/use-consistent-naming-conventions.md
             - name: Understand benefits of solution-aware flows
               href: coding-guidelines/understand-benefits-solution-aware-flows.md
-            - name: Use and create scopes
+            - name: Organize your flows with scopes
               href: coding-guidelines/create-scopes.md
             - name: Offload complex business logic
               href: coding-guidelines/leave-complex-business-logic-out.md
@@ -45,7 +45,7 @@
             - name: Understand limits
               href: coding-guidelines/understand-limits.md
         - name: Design secure cloud flows
-          items: 
+          items:
             - name: Secure data used in cloud flows
               href: coding-guidelines/use-secure-inputs-outputs-triggers.md
             - name: Keep flow configuration generic
@@ -58,7 +58,7 @@
               href: coding-guidelines/prevent-data-exfiltration.md
             - name: Consider customer-managed keys
               href: coding-guidelines/use-cmk-for-cloud-flows.md
-        - name: Integrating cloud flows with Power Apps 
+        - name: Integrating cloud flows with Power Apps
           href: coding-guidelines/integrating-cloud-flows-power-apps.md
         - name: Monitoring and alerting
           href: coding-guidelines/monitoring-and-alerting.md
