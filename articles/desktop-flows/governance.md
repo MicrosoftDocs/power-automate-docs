@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: mattp123
 ms.topic: conceptual
-ms.date: 12/12/2024
+ms.date: 04/01/2025
 ms.author: iomavrid
 ms.reviewer: matp
 ms.collection: bap-ai-copilot

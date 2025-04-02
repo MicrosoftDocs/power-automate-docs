@@ -2,7 +2,7 @@
 title: Configure desktop flow logs behavior
 description: Configure desktop flow log verbosity and storage destination in Power Platform Admin Center.
 ms.topic: conceptual
-ms.date: 03/17/2025
+ms.date: 04/01/2025
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -51,8 +51,8 @@ The **Action logs version** allows you to choose V1, V2, or both.
 | Logs version | Explanation |  
 |---|---|  
 | **V1 - Stored in the AdditionalContext field of the FlowSession entity**| This option is the default. Logs are stored in the AdditionalContext field of the Flow Session table, which is a file attribute stored as a blob in Microsoft Dataverse. Logs V1 consumes [Dataverse file capacity](/power-platform/admin/capacity-storage). |  
-| **V2 - Stored in the FlowLogs entity** | This option allows you to store logs in the Flow Logs table, which is stored in [Elastic Tables](/power-apps/maker/data-platform/create-edit-elastic-tables). Logs V2 consumes [Dataverse database capacity](/power-platform/admin/capacity-storage).  |  
-| **Both** | This setting allows logs to be stored in both the traditional AdditionalContext field of the Flow Session table and the Flow Logs table. This feature consumes both Dataverse file and database capacity. This setting is intended for debugging or testing purposes as it consumes both [Dataverse database and file capacity](/power-platform/admin/capacity-storage).  |  
+| **V2 - Stored in the FlowLogs entity** | This option allows you to store logs in the Flow Logs table, which is stored in [Elastic Tables](/power-apps/maker/data-platform/create-edit-elastic-tables). Logs V2 consumes [Dataverse log capacity](/power-platform/admin/capacity-storage).  |  
+| **Both** | This setting allows logs to be stored in both the traditional AdditionalContext field of the Flow Session table and the Flow Logs table. This feature consumes both Dataverse file and log capacity. This setting is intended for debugging or testing purposes as it consumes both [Dataverse log and file capacity](/power-platform/admin/capacity-storage).  |  
 
 The **FlowLogs entity time to live in minutes** value determines how long action logs should be retained in the Flow Logs elastic table. Dataverse automatically deletes records that are older than the specified time-frame. Here are some example values for your convenience.
 
@@ -70,7 +70,7 @@ The **FlowLogs entity time to live in minutes** value determines how long action
 | Forever | 0 (zero) minutes |
 
 > [!NOTE]
-> Before enabling logs V2, make sure you have sufficient Dataverse database capacity that would support the data retention settings and aligns with your capacity planning, entitlement and adjust as necessary. See the [Sample Dataverse capacity demand calculations for logs V2](#dataverse-capacity-demand-calculations-for-logs-v2) following section for some sizing examples.
+> Before enabling logs V2, make sure you have sufficient Dataverse log capacity that would support the data retention settings and aligns with your capacity planning, entitlement and adjust as necessary. See the [Sample Dataverse capacity demand calculations for logs V2](#dataverse-capacity-demand-calculations-for-logs-v2) following section for some sizing examples.
 
 ## Key differences of desktop flow logs V1 and V2
 
@@ -90,7 +90,7 @@ Logs V2 offers significant enhancements over the previous version, V1. V2 uses t
 
 ## Dataverse capacity demand calculations for logs V2
 
-The following table shows sample Dataverse database storage consumption estimates per desktop flow run when using logs V2. It outlines the approximate storage demand for different numbers of actions, assuming an average of 3 KB of storage per action.
+The following table shows sample Dataverse log storage consumption estimates per desktop flow run when using logs V2. It outlines the approximate storage demand for different numbers of actions, assuming an average of 3 KB of storage per action.
 
 | Number of actions | Storage demand per action (KB) | Total storage consumption (MB) |  
 |---|---|---|  
