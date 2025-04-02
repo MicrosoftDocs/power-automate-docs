@@ -49,7 +49,7 @@ Learn more in [Get started with Copilot in cloud flows](get-started-with-copilot
 
 ## Create and use cloud flows from your phone
 
-If you [install the Power Automate mobile app on your phone](mobile/overview-mobile.md##install-the-power-automate-mobile-app), you can create and use cloud flows from your phone. The mobile app is available for both iOS and Android devices.
+If you [install the Power Automate mobile app on your phone](mobile/overview-mobile.md#install-the-power-automate-mobile-app), you can create and use cloud flows from your phone. The mobile app is available for both iOS and Android devices.
 
 Learn more in [Power Automate mobile app overview](mobile/overview-mobile.md).
 
@@ -69,7 +69,7 @@ If you can't find your cloud flow, try one of the options in the following table
 |Scenario  |Solution  |
 |---------|---------|
 |The cloud flow might be in a different environment.      | To change environments, go to /Environment information and settings](getting-started.md#3--environment-information-and-settings).      |
-|The cloud flow was shared.   | Check the **Shared with me** tab in **My Flows** menu option. (For an example, refer to the screenshot in [Find your flows easily](#find-your-flows-easily) in this article.)       |
+|The cloud flow was shared.   | Check the **Shared with me** tab in **My Flows** menu option. (For an example, refer to the screenshot in [Find your cloud flows easily](#find-your-cloud-flows-easily) in this article.)       |
 | You were possibly removed as an owner of the cloud flow.    |  Contact the flow owner to be re-added. Learn how to find out if you’re an owner of the cloud flow in [Remove an owner](create-team-flows.md#remove-an-owner).       |
 | The flow was possibly deleted.     | Learn how to restore the flow in [Restore deleted flows](how-tos-restore-deleted-flow.md).        |
 
