@@ -26,9 +26,6 @@ Since adaptive cards adapt to their host, they're perfect vehicles for sharing i
 
 The following actions enable makers to create adaptive cards for Microsoft Teams. As integration scenarios evolve, other hosts will also be supported by Power Automate, which will extend your opportunities to leverage adaptive cards throughout Microsoft cloud subscriptions.
 
-> [!NOTE]
-> Adaptive cards aren't available within the DoD (Department of Defense) environment.
-
 ## Directing content to Teams members or Microsoft Entra users
 
 ### Post your own adaptive card as the Flow bot to a user
