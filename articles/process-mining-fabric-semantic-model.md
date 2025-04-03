@@ -1,6 +1,6 @@
 ---
 title: Structure of semantic model in Fabric workspace (preview)
-description: Learn how the semantic model created in your Fabric workspace is structured.
+description: Learn about the benefits of using the semantic model created in your Fabric workspace and how it's structured.
 author: rosikm
 contributors:
   - rosikm
