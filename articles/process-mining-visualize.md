@@ -7,10 +7,10 @@ contributors:
   - donums
   - v-aangie 
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 05/24/2024
+ms.topic: concept-article
+ms.date: 04/03/2025
 ms.author: derahonuorah
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - flowmaker
   - enduser
@@ -18,7 +18,7 @@ search.audienceType:
 
 # Visualize and gain insights from processes
 
-This article explains metrics and visuals, and what they could tell you about your process.
+This article explains metrics and visuals, and what they can tell you about your process.
 
 Some of the metrics and visuals are only available in setup with your own Power BI workspace or Fabric workspace (preview). These metrics and visuals are clearly marked in the text as **Premium**. To be able to access them and gain full insights, make sure you complete the steps in the following articles.
 
@@ -34,7 +34,7 @@ For **Fabric workspace (preview)**:
 - [Create your own custom Fabric workspace](process-mining-fabric-workspace.md#create-your-own-custom-fabric-workspace)
 - [Load your process analytics in Fabric](process-mining-fabric-workspace.md#load-your-process-analytics-in-fabric)
   
-After completing these steps, return to the analytics page of your process in the process mining capability.
+Once you complete the steps, return to the analytics page of your process in the process mining capability.
 
 > [!NOTE]
 > The standard report applies the Power BI report filter set to **ViewID = 1**, which usually is the view named **Default**. All report pages and visualisations reflect this filter by default, unless changed.
@@ -54,9 +54,9 @@ The metrics for following layers visualize the same metric on both nodes and tra
 - **Frequency** layer
 
   - **Total count**: The total frequency of an activity/transition captured in the process data.
- 
+
   - **Case count**: The number of process instances in which an activity/transition occurred.
- 
+
   - **Maximum occurrence in case**: The maximum number of times an activity/transition is repeated in one process instance.
 
 - **Performance** layer
@@ -93,7 +93,7 @@ You get several prebuilt KPIs and visualizations to help you to understand your 
 
 The following screenshot is an example of visualizations and analytics you see in the premium version.
 
-:::image type="content" source="media/process-mining-visualize/kpi-premium.png" alt-text="Screenshot of the 'Summary' tab.":::
+:::image type="content" source="media/process-mining-visualize/kpi-premium.png" alt-text="Screenshot that shows the 'Summary' tab.":::
 
 If you didn't purchase the premium version, you have access to the default version. The top of the default version shows only the four KPIs listed in the [KPIs](#kpis) section in this article and not the two KPIs with **(Premium)** in the title. Also, you won't see the **Average duration of cases over time** chart.
 
