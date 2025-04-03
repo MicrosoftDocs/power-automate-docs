@@ -56,7 +56,11 @@ The content of process data entities changes in specific scenarios.
 - When a new custom metric is created.
 - When a user changes the filtering definition in any process view.
 
-Working with these entities allows you to access the raw process data as well as process data influenced by the applied filters and accesses the measures calculated based on the applied filters.
+Working with these entities allows you to:
+
+- access the raw process data.
+- process data influenced by applied filters.
+- accesses the measures calculated based on the applied filters.
 
 |Entity|Description|
 |------|-----------|
@@ -92,6 +96,6 @@ We recommend that you use the Power BI composite model on top of the semantic mo
 - Custom DAX queries are needed
 
 > [!IMPORTANT]
-> The semantic model is created in a DirectLake access mode, but it's option is set to *Automatic*. This means that using a non-optimal DAX queries or incorrectly setting a composite model might result in fallback to DirectQuery mode—this means that your report will not break, but you might experience lower performance.
+> The semantic model is created in DirectLake access mode, but it's option is set to *Automatic*. This setting means that using a non-optimal DAX queries or incorrectly setting a composite model might result in fallback to DirectQuery mode—this means that your report will not break, but you might experience lower performance.
 
 To learn more about creating Power BI composite data models on top of DirectLake semantic models, go to [Building a composite models on a semantic model or model](/power-bi/transform-model/desktop-composite-models#building-a-composite-model-on-a-semantic-model-or-model).
