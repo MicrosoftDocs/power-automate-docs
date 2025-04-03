@@ -3,7 +3,7 @@ title: Connect to other environments using the Microsoft Dataverse connector
 description: Learn how to use the Microsoft Dataverse connector for actions and triggers across Power Platform environments.
 suite: flow
 author: radioblazer
-ms.author: matow
+ms.author: samathur
 ms.reviewer: angieandrews
 ms.topic: conceptual
 ms.date: 02/10/2025
@@ -17,7 +17,7 @@ You can automate apps, data, and processes across Dataverse databases in differe
 
 Dataverse connector operations with the **Environment** parameter allow you to choose between using the current environment where the flow is located or selecting another environment.
 
-Actions with names ending in **selected environment** are now generally available to use in cloud flows, with an **Environment** parameter that allows you to choose between the current environment where the flow is located or another environment. Support for triggers is on the way.
+Actions with names ending in **selected environment** are now generally available to use in cloud flows, with an **Environment** parameter that allows you to choose between the current environment where the flow is located or another environment. Support for triggering flows based on Dataverse changes from other environments is not yet available.
 <!-- All connections visible -->
 
 The following diagram shows a Power Automate cloud flow being triggered when a row changes in the Contoso Support environment. It takes actions in other Contoso Services and Contoso Field Service environments to list rows, add a row, and perform an action in the example Contoso Corporation's Microsoft Entra tenant.
@@ -83,7 +83,7 @@ To set the Environment parameter dynamically, select **Enter custom value** at t
 
 To get the base URL of an environment, open the details page of the environment from the [Power Platform admin center](https://admin.powerplatform.com), or use the output of the **List user environments** action in the [Power Automate Management](/connectors/flowmanagement/) connector.
 
-For actions like **Add a row** that depend on the specific table schema from one environment, the schema isn't automatically retrieved when specifying the environment dynamically, and the request payload needs to be manually constructed. To use these actions, set the **Table** parameter to the `LogicalCollectionName` of the table, and the **Body** parameter to the contents of the equivalent [Dataverse Web API request](/power-apps/developer/data-platform/webapi/create-entity-web-api) in JSON format. For example, to create a new account, enter the table name as **accounts** and the body as **{ "name": "Contoso Marketing" }**.
+For actions like **Add a row** that depend on the specific table schema from one environment, the schema isn't automatically retrieved when specifying the environment dynamically, and the request payload needs to be manually constructed. To use these actions, set the **Table** parameter to the `LogicalCollectionName` of the table, and the **Body** parameter to the contents of the equivalent [Dataverse Web API request](/power-apps/developer/data-platform/webapi/create-entity-web-api) in JSON format. For example, to create a new account, enter the table name as **accounts** and the body as **{"name": "Contoso Marketing"}**.
 
 ## Best practices
 
@@ -97,5 +97,4 @@ For actions like **Add a row** that depend on the specific table schema from one
 - Dataverse connector operations connecting to other environments require the connection to remain active and the related user to have sufficient permissions in Dataverse. Actions and triggers in the current environment can continue to run as long as the related user is still active and has sufficient permissions in Dataverse, even if the connection has expired. Learn more about [maintaining Dataverse connector connections](manage-dataverse-connections.md).
 - Using instant flows with the Dataverse connection set to **Provided by run-only user** isn't supported outside of the current environment yet.
 - The triggers **When a row is added, modified or deleted** and **When an action is performed** don't support the Environment parameter yet.
-- The actions to **Search rows** and **Perform a changeset** request don't have preview actions with the Environment parameter yet.
-
+- The `Environment` parameter isn't supported for the actions **Search rows (preview)** and **Perform a changeset**. 
