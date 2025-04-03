@@ -1,7 +1,7 @@
 ﻿---
 title: Copilot in Process Mining process analytics (preview)
 description: Learn how to surface insights on your process and get recommended solutions with Copilot.
-ms.date: 12/18/2023
+ms.date: 04/01/2025
 ms.topic: conceptual
 author: janPidych
 contributors:
