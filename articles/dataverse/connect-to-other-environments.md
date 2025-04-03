@@ -1,30 +1,24 @@
 ---
-title: Connect to other environments using the Microsoft Dataverse connector (preview)
+title: Connect to other environments using the Microsoft Dataverse connector
 description: Learn how to use the Microsoft Dataverse connector for actions and triggers across Power Platform environments.
 suite: flow
 author: radioblazer
-ms.author: matow
+ms.author: samathur
 ms.reviewer: angieandrews
 ms.topic: conceptual
-ms.date: 10/23/2023
+ms.date: 02/10/2025
 search.audienceType: 
   - maker
 ---
 
-# Connect to other environments using the Microsoft Dataverse connector (preview)
+# Connect to other environments using the Microsoft Dataverse connector
 
-[!INCLUDE[cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+You can automate apps, data, and processes across Dataverse databases in different Power Platform environments through supported actions in the Microsoft Dataverse connector.
 
-You can automate apps, data, and processes across Power Platform environments through supported actions and triggers in the Microsoft Dataverse connector.
+Dataverse connector operations with the **Environment** parameter allow you to choose between using the current environment where the flow is located or selecting another environment.
 
-> [!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
-Previously, the Microsoft Dataverse connector supported the flow's current environment. The Dynamic 365 (deprecated) and Microsoft Dataverse (legacy) connectors were the available ways to connect to Dataverse in other environments from cloud flows. With the addition of the **Environment** parameter, the Microsoft Dataverse connector's triggers and action have the same flexibility of connecting to either the flow's current environment or choosing another.
-
-During the preview of this capability, separate actions and triggers with names ending in **selected environment (preview)** are available to add to both new and existing flows. After the preview, Dataverse connector actions in existing flows will be automatically updated to include the **Environment** parameter. There's no action needed from flow owners or changes to existing flow behavior as part of this update.
-
-> [!IMPORTANT]
-> The updated actions with the **Environment** parameter are rolling out as a public preview to all [Power Platform regions](/power-automate/regions-overview) by the end of October 2023.
+Actions with names ending in **selected environment** are now generally available to use in cloud flows, with an **Environment** parameter that allows you to choose between the current environment where the flow is located or another environment. Support for triggering flows based on Dataverse changes from other environments is not yet available.
+<!-- All connections visible -->
 
 The following diagram shows a Power Automate cloud flow being triggered when a row changes in the Contoso Support environment. It takes actions in other Contoso Services and Contoso Field Service environments to list rows, add a row, and perform an action in the example Contoso Corporation's Microsoft Entra tenant.
 
@@ -42,7 +36,7 @@ The following diagram shows a Power Automate cloud flow being triggered when a r
 
     :::image type="content" source="media/connect-to-other-environments/cross-env-add-a-preview-action.png" alt-text="Screenshot of the Microsoft Dataverse connector actions including the new actions for Add a new row to the selected environment (preview) and Delete a row from the selected environment (preview).":::
 
-1. Add one of actions that ends in **selected environment (preview)**, such as **List rows from selected environment (preview)**.
+1. Add one of actions that ends in **selected environment**, such as **List rows from selected environment**.
 1. Use the **Environment** parameter in the action card to choose the environment to connect to. The connection you use for the action must have permissions to perform the operation in the other environment.
 
     :::image type="content" source="media/connect-to-other-environments/list-flows.png" alt-text="Screenshot of the List rows from selected environment (preview) action in the Microsoft Dataverse connector with the Environment parameter being used to select either the current environment, another environment, or enter a custom value for the environment.":::
@@ -51,7 +45,7 @@ The following diagram shows a Power Automate cloud flow being triggered when a r
 
 ## Actions and triggers that can connect to other environments
 
-The following Microsoft Dataverse connector actions support connecting to other environments. In the flow designer, the preview actions with the environment parameter have names ending in **selected environment (preview)** for each of the following actions.
+The following actions now support connecting to other environments, and appear in the flow designer with names ending in **selected environment**:
 
 - [Add a new row](/power-automate/dataverse/create)
 - [Update a row](/power-automate/dataverse/update)
@@ -65,43 +59,42 @@ The following Microsoft Dataverse connector actions support connecting to other 
 - [Upload a file or image](/power-automate/dataverse/upload-download-file)
 - [Download a file or image](/power-automate/dataverse/upload-download-file)
 
-The actions to [search rows](/power-automate/dataverse/search) and [perform a changeset request](/power-automate/dataverse/change-set) don't have preview actions with the Environment parameter yet.
+The actions to [search rows](/power-automate/dataverse/search) and [perform a changeset request](/power-automate/dataverse/change-set) don't support the Environment parameter yet.
 
-The following triggers support connecting to other environments but haven't been released yet:
+Support for the following triggers is coming soon: 
 
 - [When a row is added, modified or deleted](/power-automate/dataverse/create-update-delete-trigger)
 - [When an action is performed](/power-automate/dataverse/action-trigger)
 
-The following triggers won't support the Environment parameter since they're only applicable to the same environment the flow is located in.
-- When a flow step is run from a business process flow
-- [When a row is selected](/power-automate/connection-cds#initiate-a-cloud-flow-from-dataverse)
+The [When a row is selected](/power-automate/connection-cds#initiate-a-cloud-flow-from-dataverse) trigger doesn't have the **Environment** parameter because it's only supported within the same environment as the related Dataverse table.
 
-## Features supported by the Environment parameter in the preview actions and triggers
 
-- Connect to other environments in the same tenant as the connection used with the action or trigger.
-- Connect to environments in other tenants when using a connection to another tenant.
-  - To restrict connections to other tenants from the Microsoft Dataverse connector and other connectors, you can configure Power Platform tenant isolation policies. To learn more, go to [Cross-tenant inbound and outbound restrictions](/power-platform/admin/cross-tenant-restrictions).
-- [Specify the environment dynamically](#add-actions-that-connect-to-other-environments-dynamically).
-- Service principal connections can be used to connect to other environments.
+## Features supported by operations with the Environment parameter
+
+- Connect to the same environment the flow is located when **(Current)** is selected as the environment.
+- Connect to other environments in the same tenant or other tenants based on the connection used. The connection must have permissions.
+  - To restrict connections to other tenants from the Microsoft Dataverse connector and other connectors, Power Platform administrators can enable [tenant isolation policies](/power-platform/admin/cross-tenant-restrictions).
+- [Connect to an environment specified dynamically](#add-actions-that-connect-to-other-environments-dynamically).
+- Use of user and service principal connections.
 
 ## Add actions that connect to other environments dynamically
 
-To set the Environment parameter dynamically instead of selecting a specific environment, select **Enter custom value** at the end of the Environment parameter selector and provide the root URL of a Power Platform environment in the format `https://<yourenvironmentid>.crm.dynamics.com/`. The URL can be provided as a string, expression, environment variable, or as dynamic content from the trigger or other actions in the flow.
+To set the Environment parameter dynamically, select **Enter custom value** at the end of the Environment parameter selector and provide the base URL of a Power Platform environment. The URL should be in the format `https://<yourenvironmentid>.crm.dynamics.com/` and can be provided as a string, expression, environment variable, or dynamic content.
 
-To get the root URL of an environment, you can open the details page of the environment from the [Power Platform admin center](https://admin.powerplatform.com), or use the output of the **List user environments** action in the [Power Automate Management](/connectors/flowmanagement/) connector.
+To get the base URL of an environment, open the details page of the environment from the [Power Platform admin center](https://admin.powerplatform.com), or use the output of the **List user environments** action in the [Power Automate Management](/connectors/flowmanagement/) connector.
 
-For actions like **Add a row** that depend on the specific table schema from one environment, the schema won't be automatically retrieved when specifying the environment dynamically. The request must be manually created using the `LogicalCollectionName` of the table and the body for the request in JSON format, similar to a [Dataverse Web API request](/power-apps/developer/data-platform/webapi/create-entity-web-api). For example, **accounts** and  **{ "name": "Contoso Marketing" }**.
+For actions like **Add a row** that depend on the specific table schema from one environment, the schema isn't automatically retrieved when specifying the environment dynamically, and the request payload needs to be manually constructed. To use these actions, set the **Table** parameter to the `LogicalCollectionName` of the table, and the **Body** parameter to the contents of the equivalent [Dataverse Web API request](/power-apps/developer/data-platform/webapi/create-entity-web-api) in JSON format. For example, to create a new account, enter the table name as **accounts** and the body as **{"name": "Contoso Marketing"}**.
 
 ## Best practices
 
-- For best performance, deploy flows using the Microsoft Dataverse connector to the same Power Platform environment as the data and apps they are connecting to.
-  - The Microsoft Dataverse connector in Power Automate is optimized to directly connect to Dataverse through a native integration when the Environment parameter is set to `(Current)`.
+- For best performance, deploy flows using the Microsoft Dataverse connector to the same Power Platform environment as the data and apps they're connecting to.
+  - The Microsoft Dataverse connector in Power Automate is optimized to directly connect to Dataverse through a native integration when the Environment parameter is set to `(Current)`. 
   - When connecting to other environments, it connects through the [Power Platform connectors platform](/connectors/connectors).
 - Review recommended admin and governance practices around your [Power Platform environment strategy](/power-platform/guidance/adoption/environment-strategy) when planning solutions that connect to other environments, including staging flows in separate development, test, and production environments for specific business groups and applications.
 
 ## Limitations
 
-- Using instant flows with the Dataverse connection set to **Provided by run-only user** isn't supported yet.
+- Dataverse connector operations connecting to other environments require the connection to remain active and the related user to have sufficient permissions in Dataverse. Actions and triggers in the current environment can continue to run as long as the related user is still active and has sufficient permissions in Dataverse, even if the connection has expired. Learn more about [maintaining Dataverse connector connections](manage-dataverse-connections.md).
+- Using instant flows with the Dataverse connection set to **Provided by run-only user** isn't supported outside of the current environment yet.
 - The triggers **When a row is added, modified or deleted** and **When an action is performed** don't support the Environment parameter yet.
-- The actions to **Search rows** and **Perform a changeset** request don't have preview actions with the Environment parameter yet.
-
+- The `Environment` parameter isn't supported for the actions **Search rows (preview)** and **Perform a changeset**.
