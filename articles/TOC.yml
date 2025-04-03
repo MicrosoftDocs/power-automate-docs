@@ -1259,16 +1259,16 @@
         href: use-cds-for-apps-dialogs.md
       - name: Replace classic Dataverse dialogs
         href: replace-dialogs.md
-- name: Resources
+- name: Find help and support
   items:
-  - name: Microsoft Credentials for Power Platform
-    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl
   - name: Blog
     href: https://make.powerautomate.com/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-  - name: Support
-    href: https://make.powerautomate.com/support/
+  - name: Online help
+    href: self-help.md
+  - name: Learn new Power Platform skills
+    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl    
 - name: Responsible AI
   items:
   - name: Overview
