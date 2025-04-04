@@ -1,7 +1,7 @@
 ---
 title: Repair Flow Automation Errors (preview)
 description: Users can automatically or manually fix errors in UI elements that aren't located during the execution of a UI or browser automation task.
-ms.date: 12/16/2024
+ms.date: 04/01/2025
 ms.topic: how-to
 author: nikosmoutzourakis
 ms.author: nimoutzo
