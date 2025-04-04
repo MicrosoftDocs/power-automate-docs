@@ -40,21 +40,21 @@ To complete this walkthrough, you need:
 ## View pending requests
 1. Open the mobile app for Power Automate.
    
-    ![start the mobile app.](./media/mobile-approvals/launch_power_automate.png)
+    ![start the mobile app.](./media/mobile/launch_power_automate.png)
 2. Select **APPROVALS** in the bottom-right corner and you will see a list of pending approvals if any exist.
    
-    ![select approvals.](./media/mobile-approvals/select_approvals.jpg)
+    ![select approvals.](./media/mobile/select_approvals.jpg)
 
 If you don't have any pending approval requests and you would like to test the functionality, create an [approval flow](modern-approvals.md), set yourself as an approver, and then trigger the flow. Approval requests appear in the approval center a few seconds after the flow triggers and sends a request for approval.
 
 ## Approve or reject requests and leave an optional message
 1. Navigate to the **add a message along with your reply** to input a custom message if required, then select **APPROVE**, or **REJECT** on the request.
    
-    ![select approve or reject and enter an optional message.](./media/mobile-approvals/approve_or_reject_cropped.png)
+    ![select approve or reject and enter an optional message.](./media/mobile/approve_or_reject_cropped.png)
    
 2. A notification stating **approval submitted successfully** will appear once the process is completed.
    
-    ![aproval submitted successfully.](./media/mobile-approvals/approval_submitted.png)
+    ![aproval submitted successfully.](./media/mobile/approval_submitted.png)
 
 
 ## Learn more
