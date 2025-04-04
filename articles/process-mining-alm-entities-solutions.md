@@ -26,6 +26,9 @@ The source and target of your process mining artifacts determine which environme
 
 ## Create and export your solution
 
+> [!NOTE]
+> Created solution will include process context state at the time of last analysis (data refresh). To include custom metrics, business rules and other changes done to the process context after the last analysis, please re-analyze the process using **Refresh data** button in Process details page before creating the solution.
+
 Create and export your process solution in the Dev environment.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
