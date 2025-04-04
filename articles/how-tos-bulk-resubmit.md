@@ -96,10 +96,10 @@ You can resubmit previous runs of a flow in bulk. To do this, follow these steps
 
 The bulk cancel feature enables users to initiate the cancellation process for any flows in the queue that are currently in the **Running** or **Waiting** state, without needing to select individual flow runs. This is particularly useful during incidents involving numerous erroneous flows. By using this feature, all flow runs in the queue will be immediately suspended and will no longer be processed. While suspended, their status will display as **Waiting** and will systematically transition to **Canceling** and finally to **Cancelled**.
 
-    > [!Tip]
-    > - If a flow is turned off, any pending canceled flows will remain **Waiting**, and the queue will not clear until the flow is turned back on.
-    > - If the flow has been throttled, allocate some [capacity](capacity-process.md#allocate-process-capacity-to-a-cloud-flow) or the queue will remain stuck and not clear. Contact your environment administrator to assign capacity to the environment which can be applied to the flow.
-    > - To expedite cancellation on flows with [concurrency](limits-and-config.md#concurrency-looping-and-debatching-limits) settings, adjust the setting to the max value (100) so erroneous queued runs can clear (100) at a time.
+  > [!Tip]
+  > - If a flow is turned off, any pending canceled flows will remain **Waiting**, and the queue will not clear until the flow is turned back on.
+  > - If the flow has been throttled, allocate some [capacity](capacity-process.md#allocate-process-capacity-to-a-cloud-flow) or the queue will remain stuck and not clear. Contact your environment administrator to assign capacity to the environment which can be applied to the flow.
+  > - To expedite cancellation on flows with [concurrency](limits-and-config.md#concurrency-looping-and-debatching-limits) settings, adjust the setting to the max value (100) so erroneous queued runs can clear (100) at a time.
 
 capacity-process.md#allocate-process-capacity-to-a-cloud-flow
 
