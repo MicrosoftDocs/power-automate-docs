@@ -1,14 +1,15 @@
 ---
 title: Migrate process mining entities with Power Platform solutions
 description: Learn how to migrate your process mining entities with Power Platform solutions.
-author: donums
+author: rosikm
 contributors:
+  - rosikm
   - donums
   - v-aangie  
 ms.subservice: process-advisor
 ms.topic: conceptual
-ms.date: 07/03/2024
-ms.author: derahonuorah
+ms.date: 04/04/2025
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -27,7 +28,7 @@ The source and target of your process mining artifacts determine which environme
 ## Create and export your solution
 
 > [!NOTE]
-> Created solution will include process context state at the time of last analysis (data refresh). To include custom metrics, business rules and other changes done to the process context after the last analysis, please re-analyze the process using **Refresh data** button in Process details page before creating the solution.
+> The created solution includes the process context state at the time of the last analysis (data refresh). To include custom metrics, business rules, and other changes done to the process context after the last analysis, you should re-analyze the process using **Refresh data** on the process details page before creating the solution.
 
 Create and export your process solution in the Dev environment.
 
@@ -35,7 +36,7 @@ Create and export your process solution in the Dev environment.
 1. Select your Dev environment.
 1. On the left navigation menu, select **Process mining** and create your process.
 
-    For instructions, go to [Create a process](process-mining-tutorial.md#create-a-process).
+    Get instructions in [Create a process](process-mining-tutorial.md#create-a-process).
 
 1. On the navigation menu, select **Solutions**.
 
@@ -84,7 +85,7 @@ Below the menu at the top, a green message bar appears to indicate your export w
 
 ## Update entities in your Test environment
 
-You can update entities in your Test environment by upgrading or updating your solution. To learn more, go to [Apply the upgrade or update in the target environment](/power-apps/maker/data-platform/update-solutions#apply-the-upgrade-or-update-in-the-target-environment).
+You can update entities in your Test environment by upgrading or updating your solution. Learn more in [Apply the upgrade or update in the target environment](/power-apps/maker/data-platform/update-solutions#apply-the-upgrade-or-update-in-the-target-environment).
 
-To learn more about solutions, go to [Solution concepts](/power-platform/alm/solution-concepts-alm).
+Learn more about solutions in [Solution concepts](/power-platform/alm/solution-concepts-alm).
 
