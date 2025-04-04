@@ -68,7 +68,7 @@ If you didn't do this yet, install the Azure tools.
   
     :::image type="content" source="media/process-mining-pbi-workspace/pbi-api-toggles2.png" alt-text="Screenshot of the developer settings.":::
 
-   Both settings can be applied to the whole organisation, or you can setup a dedicated security group and include the Process Insights service principal in it.
+   Both settings can be applied to the whole organisation, or you can setup a dedicated security group and include the **Process Insights Prod** service principal (registered in step 5) in it.
 
 1. Return to the Power BI home page.
 
