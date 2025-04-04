@@ -40,38 +40,22 @@ To complete this walkthrough, you need:
 ## View pending requests
 1. Open the mobile app for Power Automate.
    
-    ![start the mobile app.](./media/mobile-approvals/open-app.png)
-2. Select **APPROVALS** in the upper-right corner.
+    ![start the mobile app.](./media/mobile-approvals/launch_power_automate.png)
+2. Select **APPROVALS** in the bottom-right corner and you will see a list of pending approvals if any exist.
    
-    ![select approvals.](./media/mobile-approvals/select-approvals.png)
-3. View all pending approvals:
-   
-    ![see pending approval requests.](./media/mobile-approvals/show-pending-approval-requests.png)
+    ![select approvals.](./media/mobile-approvals/select_approvals.jpg)
 
-If you don't have any pending approval requests, create an [approval flow](modern-approvals.md), set yourself as an approver, and then trigger the flow. Approval requests appear in the approval center a few seconds after the flow triggers and sends a request for approval.
+If you don't have any pending approval requests and you would like to test the functionality, create an [approval flow](modern-approvals.md), set yourself as an approver, and then trigger the flow. Approval requests appear in the approval center a few seconds after the flow triggers and sends a request for approval.
 
-## Approve requests and leave an optional comment
-1. If you haven't done so, follow the preceding steps to [view pending requests](mobile-approvals.md#view-pending-requests).
-2. Select **APPROVE** on the request that you want to approve.
+## Approve or reject requests and leave an optional message
+1. Navigate to the **add a message along with your reply** to input a custom message if required, then select **APPROVE**, or **REJECT** on the request.
    
-    ![select approve.](./media/mobile-approvals/select-approve.png)
-3. (Optional) select **Add comment (optional)**.
+    ![select approve or reject and enter an optional message.](./media/mobile-approvals/approve_or_reject_cropped.png)
    
-    ![select add a comment.](./media/mobile-approvals/select-add-comment.png)
+2. A notification stating **approval submitted successfully** will appear once the process is completed.
    
-    Enter a comment on the **Add comment** screen.
-   
-    ![enter your comment.](./media/mobile-approvals/enter-comment-for-approval.png)
-4. Select **CONFIRM** in the upper-right corner.
-   
-    ![confirm you are finished.](./media/mobile-approvals/tap-confirm-button.png)
-   
-    The success screen displays after the flow records your decision.
-   
-    ![success screen.](./media/mobile-approvals/approved.png)
+    ![aproval submitted successfully.](./media/mobile-approvals/approval_submitted.png)
 
-## Reject requests and leave an optional comment
-Follow the [steps to approve a request](mobile-approvals.md#approve-requests-and-leave-an-optional-comment), but select **REJECT** in the second step.
 
 ## Learn more
 [Create modern approval flows](modern-approvals.md).
