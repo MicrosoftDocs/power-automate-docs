@@ -1,7 +1,7 @@
 ---
 title: FAQ for Copilot in cloud flows
 description: This FAQ discusses copilot in cloud flows and the key considerations for making use of this technology responsibly.
-ms.date: 09/10/2024
+ms.date: 04/04/2025
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: conceptual
@@ -17,9 +17,9 @@ ms.collection: bap-ai-copilot
 
 # FAQ for Copilot in cloud flows
 
-These frequently asked questions (FAQ) describe the AI impact of Power Automate's Copilot in cloud flows (preview) feature.
+These frequently asked questions (FAQ) describe the AI impact of Power Automate's Copilot in cloud flows feature.
 
-## What is Copilot in cloud flows (preview)?
+## What is Copilot in cloud flows?
 
 The copilot in cloud flows experience in Power Automate is a new way to build automation (at this time cloud flows specifically) with the help of an AI assistant&mdash;the copilot. The copilot in Power Automate stays with you in your flow building journey and helps you build, set up, and run an automation on your behalf through a chat experience. It helps answer flow and product questions, too. It takes your input and provides either documentation, links, or answers in the copilot chat pane. As an alternative, it makes changes to the flow per your natural language description.
 
@@ -45,7 +45,7 @@ The copilot also provides buttons to prompt you to save or test your flow occasi
 
 The system's intended use is to help you build automation easily and quickly, to start getting value out of automation as soon as possible.
 
-## How was copilot in cloud flows (preview) evaluated? What metrics are used to measure performance?
+## How was copilot in cloud flows evaluated? What metrics are used to measure performance?
 
 We have a robust set of metrics we're tracking to measure the performance of the model and resulting customer experience. We track copilot's SLA to make sure it's always available to you. We track the telemetry of thumb up and thumb down gestures present in the AI copilot for each AI output where you can submit feedback.
 
@@ -65,7 +65,7 @@ If you're using the new designer, all changes done by copilot should be reviewed
 
 ## Related information
 
-- [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
+- [Get started with Copilot in cloud flows](get-started-with-copilot.md)
 - [Use Copilot to analyze desktop flow activity (preview)](./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
