@@ -64,9 +64,11 @@ If you didn't do this yet, install the Azure tools.
 1. Scroll down to **Developer settings** and do the following steps:
 
     1. Expand the dropdown menu for **Embed content in apps** and enable it by toggling the slider.
-    2. Expand the dropdown menu for **Allow service principals to use Power BI APIs** and enable it by toggling the slider.
+    2. Expand the dropdown menu for **Service principals can use Fabric APIs** and enable it by toggling the slider.
   
-    :::image type="content" source="media/process-mining-pbi-workspace/pbi-api-toggles.png" alt-text="Screenshot of the developer settings.":::
+    :::image type="content" source="media/process-mining-pbi-workspace/pbi-api-toggles2.png" alt-text="Screenshot of the developer settings.":::
+
+   Both settings can be applied to the whole organisation, or you can setup a dedicated security group and include the Process Insights service principal in it.
 
 1. Return to the Power BI home page.
 
