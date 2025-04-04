@@ -1,6 +1,6 @@
 ---
 title: Structure of semantic model in Fabric workspace (preview)
-description: Learn about the benefits of using the semantic model created in your Fabric workspace and how it's structured.
+description: Learn about the benefits of the DirectLake semantic model you can create in your Fabric workspace and how it's structured.
 author: rosikm
 contributors:
   - rosikm
@@ -20,14 +20,14 @@ search.audienceType:
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-The new optimized DirectLake semantic model leads to faster and more memory efficient analysis of processes. By saving on memory, customers can analyze larger processes and save on costs by using smaller Fabric capacities to perform analysis.
-In addition, a simpler and more intuitive Power BI semantic model data structure is used, which allows customers to dig deeper into their insights with less time and effort.
+The new optimized DirectLake semantic model leads to faster and more memory-efficient analysis of processes. By saving on memory, you can analyze larger processes and save on costs by using smaller Fabric capacities to perform analysis.
+In addition, a more intuitive Power BI semantic model data structure is used, which allows you to dig deeper into insights with less time and effort.
 
 > [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Semantic model description
 
-When a process is published to Fabric workspace, it creates a new semantic model and a corresponding report. This screenshot is an example of the of the semantic model structure published to Fabric.
+When a process is published to Fabric workspace, it creates a new semantic model and a corresponding report. This screenshot is an example of a semantic model structure published to Fabric.
 
 Select the **magnifying glass** in the lower-right corner of the image to enlarge it.
 
@@ -41,7 +41,7 @@ Relationships necessary for filtering and interconnectivity of visuals are prede
 
 From a logical perspective, the data model consists of many entity subsets as depicted in the first paragraph of this section.
 
-- **Process Data**: All process related data without filtering and calculated measures.
+- **Process Data**: All process-related data without filtering and calculated measures.
 - **Visuals data**: Entities providing precalculated data necessary for process mining custom visuals to display.
 - **Helping entities**: Other entities needed by Power BI.
 
@@ -58,9 +58,9 @@ The content of process data entities changes in specific scenarios.
 
 Working with these entities allows you to:
 
-- access the raw process data.
-- process data influenced by applied filters.
-- accesses the measures calculated based on the applied filters.
+- Access the raw process data.
+- Process data influenced by applied filters.
+- Access the measures calculated based on the applied filters.
 
 |Entity|Description|
 |------|-----------|
@@ -88,14 +88,14 @@ Visuals data entities are recalculated only when there's a data refresh for the 
 
 ## Power BI composite model
 
-We recommend that you use the Power BI composite model on top of the semantic model published by Power Automate Process Mining and create necessary modifications there for these scenarios:
+We recommend that you use the Power BI composite model on top of the semantic model published by Power Automate Process Mining and create the necessary modifications there for these scenarios:
 
-- More data sources are needed
-- More entities should be created
-- More relationships are needed
-- Custom DAX queries are needed
+- You need to create more data sources
+- You need to create more entities
+- You need to create more relationships
+- You need to create more custom DAX queries
 
 > [!IMPORTANT]
-> The semantic model is created in DirectLake access mode, but it's option is set to *Automatic*. This setting means that using a non-optimal DAX queries or incorrectly setting a composite model might result in fallback to DirectQuery mode—this means that your report will not break, but you might experience lower performance.
+> The semantic model is created in DirectLake access mode, but its option is set to *Automatic*. This setting means that using a nonoptimal DAX queries or incorrectly setting a composite model might result in fallback to DirectQuery mode—this means that your report will not break, but you might experience lower performance.
 
-To learn more about creating Power BI composite data models on top of DirectLake semantic models, go to [Building a composite models on a semantic model or model](/power-bi/transform-model/desktop-composite-models#building-a-composite-model-on-a-semantic-model-or-model).
+To learn more about creating Power BI composite data models on top of DirectLake semantic models, go to: [Building a composite models on a semantic model or model](/power-bi/transform-model/desktop-composite-models#building-a-composite-model-on-a-semantic-model-or-model).
