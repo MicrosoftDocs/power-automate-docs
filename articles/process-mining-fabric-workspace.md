@@ -13,7 +13,7 @@ ms.reviewer: ellenwehrle
 search.audienceType: 
   - flowmaker
   - enduser
-#customer intent: As a business process analyst, 
+#customer intent: As a business process analyst, I want to customize a report with my own Fabric workspace so that I can leverage a higher capacity to analyze processes with a lot more data.
 ---
 
 # Customize a report with your own Fabric workspace (preview)
@@ -77,7 +77,7 @@ If you didn't do this yet, install the Azure tools.
     1. Expand the dropdown menu for **Embed content in apps** and enable it by toggling the slider.
     2. Expand the dropdown menu for **Allow service principals to use Power BI APIs** and enable it by toggling the slider.
   
-    :::image type="content" source="media/process-mining-pbi-workspace/pbi-api-toggles.png" alt-text="Screenshot highlights the developer settings.":::
+    :::image type="content" source="media/process-mining-pbi-workspace/pbi-api-toggles.png" alt-text="Developer settings in Power BI to enable embedding content and allow service principals to use APIs.":::
 
 1. Return to the Power BI home page.
 
@@ -148,7 +148,7 @@ After completing these steps, return to the analytics page of your process in th
 1. Select **Open in Power BI**. If you don't see this button, make sure you completed the steps in the [Load your process analytics in Fabric](#load-your-process-analytics-in-fabric) section in this article. This redirects you to a Power BI web screen that shows you a report of your process.
 1. Begin customizing your report by downloading it to your local machine. To do this, select **File** > **Download this file**.
 
-    :::image type="content" source="media/process-mining-pbi-workspace/download-file.png" alt-text="Screenshot highlights the file downloading.":::
+    :::image type="content" source="media/process-mining-pbi-workspace/download-file.png" alt-text="Highlights selecting, 'Download this file'.":::
 
 1. Select **A copy of your report with a live connection to data online (.pbix)** to download a report with a live connection.
 1. Open the downloaded report in Power BI Desktop. Ensure you have the latest Power BI Desktop version and the preview feature [Enable PBIR format is switched on](/power-bi/developer/projects/projects-report#enable-pbir-format-preview-feature).
@@ -160,7 +160,7 @@ After completing these steps, return to the analytics page of your process in th
 
     In your process, you don't have any self loops, so you should see **0.00%** in that card.
 
-    :::image type="content" source="media/process-mining-pbi-workspace/zero-self-loops.png" alt-text="Screenshot of a new card with 0.00 percent.":::
+    :::image type="content" source="media/process-mining-pbi-workspace/zero-self-loops.png" alt-text="Highlights a new 'Self Loop' card with 0.00 percent in a report.":::
 
 1. Save the report.
 

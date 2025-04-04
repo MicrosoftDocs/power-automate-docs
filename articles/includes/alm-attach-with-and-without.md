@@ -5,7 +5,7 @@
     2. In this step you can decide to change the destination to not match the original setup
   
         > [!IMPORTANT]
-        > The semantic model structure is different for Power BI workspace and for Fabric workspace. This might potentially result in problems in your report visualisations, that must be resolved manually.
+        > The semantic model structure is different for Power BI workspace and for Fabric workspace. This might potentially result in problems in your report visualizations, that must be resolved manually.
 
     3. Select **Continue**
 

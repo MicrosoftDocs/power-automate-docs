@@ -16,7 +16,7 @@ ms.reviewer: ellenwehrle
 search.audienceType: 
   - flowmaker
   - enduser
-#customer intent: As a business process analyst, I want to learn more about Power BI reports in Process Mining, so I can create them to identify opportunities in my organization's current processes to improve.
+#customer intent: As a business process analyst, I want to learn more about Power BI reports in Process Mining, so I can create them to identify improvement opportunities in my organization's current processes.
 ---
 
 # Power BI reports in Process Mining overview

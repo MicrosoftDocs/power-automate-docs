@@ -3,6 +3,6 @@
 
     If your process was newly copied over to the **Test** environment, there's an exclamation mark inside a speech bubble on the process. This mark indicates that the process was imported.
 
-    :::image type="content" source="../includes/media/process-mining-alm/speech-bubble.png" alt-text="Screenshot of your process on the Process Mining home page.":::
+    :::image type="content" source="../includes/media/process-mining-alm/speech-bubble.png" alt-text="Your process mapped out on the Process Mining home page.":::
 
 1. Select the process, and then select **Confirm**.

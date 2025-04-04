@@ -1,6 +1,6 @@
 ---
 title: Visualize and gain insights from processes
-description: Learn how to visualize and gain insights from processes in the process mining capability.
+description: Learn how to visualize business processes, analyze process data, and gain actionable insights using the process mining capability in Power Automate.
 author: donums
 contributors:
   - rosikm
@@ -14,6 +14,7 @@ ms.reviewer: ellenwehrle
 search.audienceType: 
   - flowmaker
   - enduser
+#customer intent: As a business process analyst, I want to learn how to visualize and gain insights into my business processes so I can glean insights about where opportunities exist.
 ---
 
 # Visualize and gain insights from processes
@@ -93,7 +94,7 @@ You get several prebuilt KPIs and visualizations to help you to understand your 
 
 The following screenshot is an example of visualizations and analytics you see in the premium version.
 
-:::image type="content" source="media/process-mining-visualize/kpi-premium.png" alt-text="Screenshot that shows the 'Summary' tab.":::
+:::image type="content" source="media/process-mining-visualize/kpi-premium.png" alt-text="Highlights the visualization and analytics of the 'Summary' tab .":::
 
 If you didn't purchase the premium version, you have access to the default version. The top of the default version shows only the four KPIs listed in the [KPIs](#kpis) section in this article and not the two KPIs with **(Premium)** in the title. Also, you won't see the **Average duration of cases over time** chart.
 
@@ -143,7 +144,7 @@ If you didn't purchase the premium version, you have access to the default versi
 
 - **Cases**, **Activities**, and **Variants**: Shows number of cases, activities, and variants based on the current filter settings.
 
-    :::image type="content" source="media/process-mining-visualize/visualizations.png" alt-text="Screenshot of the visualizations.":::
+    :::image type="content" source="media/process-mining-visualize/visualizations.png" alt-text="Shows the visualizations. It shows variants by frequency and time, duration, and numbers of types of cases.":::
 
 ### Time Analysis (Premium)
 
@@ -157,4 +158,4 @@ The analysis view appears on the right and the corresponding map appears on the 
 
 The **Variant DNA** view is available in both the default and premium views. To show the order of all the activities in each variant sorted based on the variants that happen the most often, select the **Variant DNA** tab. The activities are color coded and abbreviated to quickly show a high-level view of the order of the activities that occur. This also helps identify noncompliant processes, self-loops, and loops quickly.
 
-:::image type="content" source="media/process-mining-visualize/variant-dna.png" alt-text="Screenshot of the 'Variant DNA' tab'.":::
+:::image type="content" source="media/process-mining-visualize/variant-dna.png" alt-text="Shows the 'Variant DNA' tab' view. Select the 'Variant DNA' tab to show the order of the activities":::
