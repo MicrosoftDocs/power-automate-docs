@@ -1,4 +1,4 @@
-1. In the **Environments** dropdown menu at the top of the screen, select your **Test** environment.
+1. In the **Environments** dropdown menu at the top of the Power Automate screen, select your **Test** environment.
 1. On the navigation pane to the left, select **Process mining**.
 
     If your process was newly copied over to the **Test** environment, there's an exclamation mark inside a speech bubble on the process. This mark indicates that the process was imported.
