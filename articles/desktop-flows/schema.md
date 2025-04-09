@@ -124,7 +124,6 @@ If you use custom security roles to manage the access to your desktop flow, Powe
 - `prvAppenddesktopflowbinary`
 - `prvAppendTodesktopflowbinary`
 - `prvReadSolution`
-- `prvReadTeam `
 
 The minimum access level for each privilege is basic (user). More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
 
