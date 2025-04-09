@@ -17,7 +17,7 @@ ms.collection: bap-ai-copilot
 
 [!INCLUDE[responsible-ai-features](./includes/responsible-ai-features.md)]
 
-- [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
+- [Get started with Copilot in cloud flows](get-started-with-copilot.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md)
 - [FAQ for Copilot expression assistant](faqs-copilot-expression-assistant.md)

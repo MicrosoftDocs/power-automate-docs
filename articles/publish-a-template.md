@@ -27,9 +27,10 @@ Templates help you to create flows more easily, and to imagine additional scenar
 
     :::image type="content" source="media/publish-a-template/export.png" alt-text="Screenshot of the 'Export' and 'Package (.zip)' menu options.":::
 
-1. Provide the following details for your connector template so the end user is able to search the right template:
-    - Name
-    - Description
+1. Please ensure the following details for your connector template so the end user is able to search the right template:
+- No personal information or secret is included
+- Title is less than 75 characters
+- Description is less than 1024 characters.
 
 1. To download the connector template files, select **Export**.
 
