@@ -1,10 +1,10 @@
 ---
-title: Configure certificate-based authentication (preview)
+title: Configure certificate-based authentication 
 description: Configure certificate-based authentication (CBA) in Power Automate. Learn how to set up and use CBA credentials to meet MFA requirements.
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 11/08/2024
+ms.date: 03/31/2025
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
@@ -18,13 +18,11 @@ ms.custom:
 - ai-seo-date:11/05/2024
 ---
 
-# Configure certificate-based authentication (preview)
+# Configure certificate-based authentication 
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 Power Automate lets you [create credentials](create-AzureKeyVault-credential.md) using certificate-based authentication (CBA). Microsoft Entra ID certificate-based authentication helps meet multifactor authentication (MFA) requirements.
 
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## How CBA credentials work in Power Automate
 

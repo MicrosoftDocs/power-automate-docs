@@ -339,7 +339,7 @@
         href: ./dataverse/data-retention-flow.md
       - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
         href: connection-cds.md
-      - name: Manage cloud flow run history in Dataverse (preview)
+      - name: Manage cloud flow run history in Dataverse
         href: ./dataverse/cloud-flow-run-metadata.md
 - name: Desktop flows
   items:
@@ -447,7 +447,7 @@
       href: ./desktop-flows/create-azurekeyvault-credential.md
     - name: CyberArk credentials
       href: ./desktop-flows/create-cyberark-credential.md
-    - name: Certificate-based authentication (preview)
+    - name: Certificate-based authentication
       href: ./desktop-flows/configure-certificate-based-auth.md
     - name: Machine mapping (preview)
       href: ./desktop-flows/create-machine-mapping.md
@@ -870,6 +870,8 @@
       href: process-mining-sap-erp.md    
     - name: Transform and map data
       href: process-mining-transform.md
+    - name: Process overview (preview)
+      href: ./minit/process-overview.md
     - name: Visualize and gain insights from processes
       href: process-mining-visualize.md
     - name: Customize a report with your own Power BI workspace
