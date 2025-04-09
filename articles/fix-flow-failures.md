@@ -93,7 +93,7 @@ In many cases, flows fail because of an authentication error. If you have this t
 
 The new troubleshoot in Copilot feature in Power Automate can assist you in identifying and resolving errors that might occur during the testing of cloud flows or when reviewing flow run history. You can use this Copilot feature when the new designer experience is enabled.
 
-Learn more about how to troubleshoot cloud flow errors with Copilot in this quick video:</br>
+Learn how to troubleshoot cloud flow errors with Copilot in this quick video:</br>
 </br>
 
 > [!VIDEO <!--insert Abhinav's link-->]
