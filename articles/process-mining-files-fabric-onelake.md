@@ -40,6 +40,19 @@ Power Automate Process Mining gives you the option to store and read event log d
 > - Fabric Lakehouses with Schema support enabled.
 > - Delta tables in Lakehouse.
 
+- CSV data in your Lakehouse should meet the following CSV file format requirements:
+    - **Compression type:** None
+    - **Column delimiter:** Comma (,)
+    - **Row delimiter:** Default and encoding. For example, Default (\r,\n, or \r\n) 
+
+    :::image type="content" source="media/process-mining-byo-azure-data-lake/csv.png" alt-text="Screenshot of the File format settings screen.":::
+
+- All data must be in final event log format and meet the requirements listed in [Data requirements](process-mining-processes-and-data.md#data-requirements). Data should be ready to be mapped to the process mining schema. No data transformation is available post ingestion.
+- The size (width) of the header row is currently limited to 1 MB.
+
+> [!IMPORTANT]
+> Ensure that time stamp represented in your CSV file follows the ISO 8601 standard format (for example, `YYYY-MM-DD HH:MM:SS.sss` or `YYYY-MM-DDTHH:MM:SS.sss`).
+
 ## Connect to Fabric OneLake
 
 1. On the navigation pane to the left, select **Process mining** > **Start here**.
