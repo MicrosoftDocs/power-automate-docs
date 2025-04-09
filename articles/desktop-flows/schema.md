@@ -4,12 +4,11 @@ description: Learn about the Power Automate v2 schema.
 author: nvigne
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/11/2025
+ms.date: 03/05/2025
 ms.author: nvigne
 ms.reviewer: matp
 contributors:
   - DanaMartens
-  - YiannisMavridis
 search.audienceType: 
   - flowmaker
   - enduser
