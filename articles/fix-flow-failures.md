@@ -6,18 +6,19 @@ suite: flow
 author: DBEKI
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 04/01/2025
-ms.author: dbekirop
+ms.date: 04/10/2025
+ms.author: heoltaol
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
-ms.collection: bap-ai-copilot 
+ms.collection: bap-ai-copilot
+ms.custom: DevRelAdv
 ---
 
 # Troubleshoot a cloud flow
 
-This article contains tips and tricks for troubleshooting cloud flows.
+This article contains tips and tricks for troubleshooting cloud flows. With the new designer, you can easily find and fix errors using Copilot. Check out the video in this article in the [Troubleshoot in Copilot](#troubleshoot-in-copilot) section.
 
 ## Identify specific flow runs
 
@@ -91,6 +92,11 @@ In many cases, flows fail because of an authentication error. If you have this t
 ## Troubleshoot in Copilot
 
 The new troubleshoot in Copilot feature in Power Automate can assist you in identifying and resolving errors that might occur during the testing of cloud flows or when reviewing flow run history. You can use this Copilot feature when the new designer experience is enabled.
+
+Learn more about how to troubleshoot cloud flow errors with Copilot in this quick video:</br>
+</br>
+
+> [!VIDEO <!--insert Abhinav's link-->]
 
 Troubleshooting in Copilot provides a human-readable summary of the error and, when possible, attempts to provide a solution to correct the error. This can greatly enhance your experience by reducing the time and effort required to troubleshoot and resolve issues.
 
