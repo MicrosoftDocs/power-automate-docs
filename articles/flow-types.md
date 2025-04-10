@@ -9,14 +9,18 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 04/02/2025
+ms.date: 04/10/2025
 ms.author: heortaol
 ms.reviewer: angieandrews
 ---
 
 # What is Power Automate?
 
-With its automation capabilities, Power Automate helps you streamline your business processes and automate repetitive tasks. Its intuitive interface and many connectors allow you to create workflows with little to no knowledge of coding. You can drag and drop components and set up workflows to save time and improve efficiency. Power Automate can handle simple tasks like sending notifications as well as more complex processes across multiple apps and services. It's flexible and scalable, making it useful for various automation needs in a modern workplace.
+With its automation capabilities, Power Automate helps you streamline your business processes and automate repetitive tasks. Its intuitive interface and many connectors allow you to create workflows with little to no knowledge of coding. You can drag and drop components and set up workflows to save time and improve efficiency. Power Automate can handle simple tasks like sending notifications and more complex processes across multiple apps and services. It's flexible and scalable, making it useful for various automation needs in a modern workplace.
+
+Before you can create a workflow, you need to sign up for Power Automate with any email address. If you never used an online Microsoft product with that address, you need to register it. Learn more in [Sign up and sign in for Power Automate](sign-up-sign-in.md).
+
+Once you have access, you're ready to [get started using Power Automate](getting-started.md)!
 
 ## Types of flows
 
