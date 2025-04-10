@@ -22,10 +22,19 @@ Tags are available (in preview) in the console of Power Automate for desktop, to
 
 The **Tags (Preview)** column displays all the tags that are associated with a desktop flow. To manage (e.g. add or remove) the tags of a flow, you can select the option **Manage tags (Preview)** in its context menu in the console. Alternatively, you can bring up the **Flow properties** pane and navigate directly to the **Tags (preview)** section.
 
+In this section, you can add the tags of your preference to the selected flow, by typing the proper text label. As you type, the list of tags in your environment is automatically filtered, to help you decide on using an existing tag or creating a new one. From the same pane, you can remove any of the tags that have been previously associated with your flow.
+
+> [!NOTE]
+> - Makers can access and use by default all the tags within an environment, even those created by others; no explicit sharing with other users is needed. They can associate the required tags with flows they own or co-own, but not flows shared with them as run-only users.
+
+## Update multiple flows
+
+## Delete a tag
+
 ## Prerequisites
 
 - Power Automate for desktop version 2.55 or later.
-- Dataverse solution version 1.9.1.1 or later. To confirm the latest version used, navigate to the portal of Power Automate, then navigate to **Solutions** > **History** and search for the key term *MicrosoftFlowExtensionsCore*.
+- Dataverse solution version 1.9.1.1 or later. To confirm the latest version used, navigate to the portal of Power Automate, then navigate to the **Solutions** page, select the **History** tab and search for the key term *MicrosoftFlowExtensionsCore*. Look at the *Version* column to verify the most recent version update.
 - Tags are only available for users with a work or school account.
 - This feature requires an environment where the [Power Automate v2 schema](schema.md) is enabled. In v1 schema environments, tags aren't available.
 
