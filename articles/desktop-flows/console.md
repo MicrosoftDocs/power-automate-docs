@@ -75,7 +75,9 @@ To decide whether Microsoft should collect diagnostic data to improve user exper
 
 ## Desktop flow properties
 
-To review the properties of a desktop flow, right-click on it and select **Properties**, or select the same option from the corresponding shortcut. In the **General** tab, you can edit the name and description of the flow, set up a keyboard shortcut to trigger the flow locally, define the **On error** behavior of the flow run, and determine whether the desktop flow should **time out** after a set period of time.
+To review the properties of a desktop flow, right-click on it and select **Properties**, or select the same option from the corresponding shortcut. In the **General** tab, you can edit the name and description of the flow, set up a keyboard shortcut to trigger the flow locally, manage the **Tags (preview)** associated with the flow, define the **On error** behavior of the flow run, and determine whether the desktop flow should **time out** after a set period of time.
+
+[**Tags (preview)**](tags.md) are labels that can be applied to desktop flows, to group and associate them together in an easy and straightforward way.
 
 If the **Add screenshot to logs** option is enabled, a screenshot is captured upon flow run failure and is uploaded to the [flow run action details](monitor-run-details.md#actions-details).
 
@@ -84,8 +86,8 @@ The **Flow timeout** property is disabled by default. If it becomes enabled, you
 > [!IMPORTANT]
 >
 > - Access to the flow run logs is a premium feature, which requires a [Power Automate subscription](https://powerautomate.microsoft.com/pricing/).
-> - The **Flow timeout** property is also a premium feature requiring the above license.
-> - The **Add screenshot to logs** and **Flow timeout** properties apply only to flows stored in [Power Automate v2 schema](schema.md).
+> - The **Tags (preview)** functionality and the **Flow timeout** property are only available for users with a work or school account.
+> - The **Tags (preview)** functionality, as well as the **Add screenshot to logs** and **Flow timeout** properties, apply only to flows stored in [Power Automate v2 schema](schema.md).
 
 In the **Details** tab, you can see the owner, the creation and last modification dates, the flow ID and the flow’s storage schema version in Dataverse. For more information on the enhanced desktop flows schema, go to [Power Automate v2 schema](schema.md).
 
