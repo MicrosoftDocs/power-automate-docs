@@ -20,7 +20,7 @@ search.audienceType:
 
 Tags are available (in preview) in the console of Power Automate for desktop, to help you categorize and group desktop flows together. Tags have the form of custom text labels, which allow you to easily organize your flows and manage them more efficiently.
 
-The **Tags (Preview)** column displays all the tags that are associated with a desktop flow. To manage (e.g. add or remove) the tags of a flow, you can select the option **Manage tags (Preview)** in its context menu in the console. Alternatively, you can bring up the **Flow properties** pane and navigate directly to the Tags (preview) area.
+The **Tags (Preview)** column displays all the tags that are associated with a desktop flow. To manage (e.g. add or remove) the tags of a flow, you can select the option **Manage tags (Preview)** in its context menu in the console. Alternatively, you can bring up the **Flow properties** pane and navigate directly to the **Tags (preview)** section.
 
 ## Prerequisites
 
