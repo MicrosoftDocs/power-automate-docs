@@ -1,6 +1,6 @@
 ---
 title: What is Power Automate?
-description: Learn about the Power Automate automation capabilities with cloud, desktop, and business process flows.
+description: Learn about the Power Automate automation capabilities with cloud, desktop, and generative actions (preview) flows.
 suite: flow
 author: HeatherOrt
 contributors:
@@ -30,10 +30,7 @@ Select one of the following types for an overview of what it can do:
 
 - [Cloud flows](overview-cloud.md): Create a cloud flow when you want your automation to be triggered either automatically, instantly, or via a schedule.
 - [Desktop flows](./desktop-flows/introduction.md): Use desktop flows to automate tasks on the web or the desktop.
-- [Business process flows](business-process-flows-overview.md): Use business process flows to guide users through a defined set of steps in a business process. This is especially useful for ensuring consistency and compliance in processes that require user input. This user experience can be tailored so that people with different security roles can have an experience that best suits the work they do.
-
-Check out this video to learn more about the different types of flows.<br/><br/>
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=0f11bc32-0ef4-437b-b15b-dfb3cf47ee04]
+- [Generative actions (preview)](generative-actions-overview.md): Use generative actions in your flow if you want to specify only the *intent* of the action and then have the AI choose the right set of actions in the right order based on your input, context, and intent.
 
 ## Create and manage flows in Power Apps
 
@@ -44,7 +41,6 @@ Your Power Automate license gives you rights to create and manage flows in Power
 - [Determine which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
 - [Overview of cloud flows](overview-cloud.md)
 - [Introduction to desktop flows](./desktop-flows/introduction.md)
-- [Business process flows overview](business-process-flows-overview.md)
 - [Add canvas apps and cloud flows to a solution in Power Apps](/power-apps/maker/canvas-apps/add-app-solution-default)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
