@@ -4,7 +4,7 @@ description: See the main functionality of the Power Automate console.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/21/2025
+ms.date: 04/11/2025
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
@@ -59,8 +59,8 @@ To configure Power Automate for desktop to your liking, select the **Settings** 
 
 :::image type="content" source="media/console/console-settings-panel-with-appearence.png" alt-text="Screenshot of the console settings pane.":::
 
-Under **Appearance**, choose if Power Automate should work in light or dark mode (preview).
-:::image type="content" source="media/console/dark-mode-preview.png" alt-text="Screenshot of the dark mode experience in Power Automate for desktop.":::
+Under **Appearance**, choose if Power Automate should work in light or dark mode, or follow the system default setting.
+:::image type="content" source="media/console/dark-mode.png" alt-text="Screenshot of the dark mode experience in Power Automate for desktop.":::
 
 Under **Flow run control**, use the **Monitoring/Notifications** dropdown to choose if Power Automate should display integrated Windows notifications, a custom flow monitoring window, or no notifications. Learn more about Power Automate notifications in [Runtime notifications](runtime-notifications.md).
 
