@@ -31,7 +31,7 @@ Launch any of your installed applications with the **Run application** action. Y
 
 ![Screenshot of the Run application action.](media/system/run-application-example.png)
 
-Additionally, desktop flows enable you to terminate processes by name or ID through the **Terminate process** action, and wait for processes to start or stop through the **Wait for process** action. You can also use user context, in case a process runs under a specific user.
+Additionally, desktop flows enable you to terminate processes by name or ID through the **Terminate process** action, and wait for processes to start or stop through the **Wait for process** action. You can also use user context if a process runs under a specific user.
 
 ![Screenshot of the Wait for process action.](media/system/wait-process-action.png)
 
@@ -128,9 +128,9 @@ Immediately stops a running process.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Specify process by|N/A|Process ID, Process name|Process name|Specify whether the process to terminate will be specified by its name, or by its ID|
+|Specify process by|N/A|Process ID, Process name|Process name|Specify whether the process to terminate is specified by its name, or by its ID|
 |Process ID|No|[Numeric value](../variable-data-types.md#numeric-value)||The ID of the process to terminate|
-|Process name|No|[Text value](../variable-data-types.md#text-value)||The name of the process to terminate. If more than one process with the same name is running, all of them will be terminated|
+|Process name|No|[Text value](../variable-data-types.md#text-value)||The name of the process to terminate. If more than one process with the same name is running, all of them are terminated|
 |From User|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Determine whether the process runs under a specific user or not|
 |User name|No|[Text value](../variable-data-types.md#text-value)||Specify the name of the user running the process. The format is either domain\username or username.|
 
