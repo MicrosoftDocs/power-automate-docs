@@ -25,7 +25,7 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 
 - Once a day, an hour, or a minute.
 - On a date that you specify.
-- After a number days, hours, or minutes that you specify.
+- After many days, hours, or minutes that you specify.
 
 ## Create a recurring flow
 
@@ -43,7 +43,7 @@ Create a cloud flow that performs one or more tasks (such as sending a report in
 
 # [New designer](#tab/new-designer)
 
-The steps to configure an action in the cloud flows designer with Copilot are identical to the classic cloud flows designer. However, if you have access to Copilot, you can simply ask Copilot to create a scheduled flow. For example, you can ask by typing the following prompt:
+The steps to configure an action in the cloud flows designer with Copilot are identical to the classic cloud flows designer. However, if you have access to Copilot, you can ask Copilot to create a scheduled flow. For example, you can ask by typing the following prompt:
 
 **Create a flow that runs Monday every two weeks starting 09/25/2023 which sends an email to contoso@gmail.com that their MPR doc is due**
 
@@ -65,7 +65,17 @@ Copilot adds the following parameters to the flow it created for you in the acti
     :::image type="content" source="./media/run-scheduled-tasks/select-recurrence1.png" alt-text="Screenshot of show/hide advanced options.":::
 
 1. In the **Time zone** field, select a time zone from the dropdown list to specify whether the **Start time** reflects a local time zone, Coordinated Universal Time (UTC), or other time zone.
-1. In the **Start time** field, enter a start time in this format: YYYY-MM-DDTHH:MM:SSZ
+1. In the **Start time** field, enter a start time in this format: YYYY-MM-DDTHH:MM:SSZ.
+    - YYYY = four-digit year
+    - MM = two-digit month (01-12)
+    - DD = two-digit day of the month (01-31)
+    - T = literal character that separates the date and time
+    - HH = two-digit hour in 24-hour format (00-23)
+    - MM = two-digit minute (00-59)
+    - SS = two-digit second (00-59)
+    - Z = literal character that indicates UTC time
+
+    For example, enter **2022-03-24T22:00:00Z** to specify 3:00 PM Pacific time on March 24, 2022.
 1. If you specified **Day** under **Frequency**, select the time of day when the flow should run in the **At these hours** and **At these minutes** dropdown lists.
 1. If you specified **Week** under **Frequency**, do the following.<br/>
     - In the **On these days** and **At these hours** dropdown lists, select the day or days of the week on which the flow should run and the time or times of day when the flow should run.
