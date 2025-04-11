@@ -4,7 +4,7 @@ description: Group multiple machines together to help distribute your automation
 author: Mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/27/2024
+ms.date: 04/10/2025
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -87,7 +87,7 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 
 > [!IMPORTANT]
 >
-> - If you use local Windows accounts, all machines in the group must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
+>- If you use local Windows accounts, all machines in the group must have the same local account with the same password. Use these credentials when you create the desktop flows connection.
 >- If you use Active Directory or Microsoft Entra joined machines, confirm that the user account in the desktop flow connection can access all the machines in the cluster.
 
 ## Maintenance mode for machine groups
@@ -190,6 +190,24 @@ To change the password of the currently used machine group:
 1. Select **Re-generate password**, copy the automatically generated password, and save the changes.
 
 :::image type="content" source="./media/manage-machine-groups/machine-group-new-password.png" alt-text="Screenshot of the fields for the new machine group password.":::
+
+### Machine group password compatibility limitations with Windows Server 2016
+
+When you generate a machine group password, the group's keys are encrypted into a PFX file using the AES256 algorithm.
+
+Windows Server 2016 doesn't support exporting or importing PFX files protected with AES256. Instead, it uses 3DES, a deprecated encryption algorithm. Windows Server 2016 machines can't join a group if a more recent version of Windows generates the group password.
+
+To let Windows Server 2016 join a group of machines with at least one machine running a later version of Windows, export the group keys in a format that Windows Server 2016 understands by generating the password in legacy mode.
+
+> [!IMPORTANT]
+> 3DES is a deprecated encryption algorithm. Using the machine group feature with Windows Server 2016 weakens your group's security and isn't recommended.
+
+1. Connect to a machine that is already a member of the group.
+1. Go to the `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global` registry key.
+1. Create a DWORD value named `UseLegacyPasswordProtectionForGroupKey` and set it to 1.
+1. Regenerate the group password using the Power Automate machine runtime application.
+1. Join the Windows Server 2016 machine to the group using the newly generated password.
+1. Recommended: Delete the registry value created earlier and regenerate the group password from a non-Windows Server 2016 machine to ensure the keys are protected with AES256 after joining Windows Server 2016 machines to the group.
 
 ## Update permissions based on security role
 
