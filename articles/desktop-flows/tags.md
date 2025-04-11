@@ -29,14 +29,14 @@ The **Tags (Preview)** column displays all the tags that are associated with a d
 In this section, add your preferred tags to the selected flow by selecting a tag from the list or creating a new text label. As you type, the list of tags in your environment automatically filters to help you choose an existing tag or create a new one. From the same pane, you can remove any tags previously associated with your flow. Select **Save** in the flow properties for the tag changes to take effect.
 
 > [!NOTE]
-> - Users with the **Environment maker** role can access and use all tags within an environment by default, including those created by others. Explicit sharing with other users isn't needed. They can associate the required tags with flows they own or co-own, but not flows shared with them as run-only users.
+> Users with the **Environment maker** role can access and use all tags within an environment by default, including those created by others. Explicit sharing with other users isn't needed. They can associate the required tags with flows they own or co-own, but not flows shared with them as run-only users.
 
 ## Update tags for multiple flows
 
 Select multiple desktop flows and update their tags at the same time by selecting the common context option **Manage tags (Preview)**. A dialog appears, displaying only the tags already associated with all the selected flows. Remove common tags or add new ones associated with all selected flows.
 
 > [!NOTE]
-> - Tags associated with only a subset of the selected flows aren't displayed in this dialog and can't be removed this way.
+> Tags associated with only a subset of the selected flows aren't displayed in this dialog and can't be removed this way.
 
 ## Filter flows based on tags
 
@@ -54,7 +54,7 @@ Tags are solution-aware components, so you manage them in your environment's Def
 You can select one or more tags in the list and choose **Delete from this environment** to permanently delete them. You can only delete tags you own (tags you created yourself).
 
 > [!NOTE]
-> - You can access and use tags created by others, but you can't delete them, unless you're an administrator in this environment.
+> You can access and use tags created by others, but you can't delete them, unless you're an administrator in this environment.
 
 ## Prerequisites
 
