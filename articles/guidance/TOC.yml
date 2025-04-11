@@ -34,7 +34,7 @@
               href: coding-guidelines/use-environment-variables.md
             - name: Employ robust error handling
               href: coding-guidelines/error-handling.md
-            - name: Manage flow behavior with Flow Checker
+            - name: Get feedback on your flows with Flow Checker
               href: coding-guidelines/manage-flows-flow-checker.md
             - name: Test cloud flows
               href: coding-guidelines/test-cloud-flows.md
