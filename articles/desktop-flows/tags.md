@@ -18,38 +18,38 @@ search.audienceType:
 
 # Tags in desktop flows (preview)
 
-Tags are available (in preview) in the console of Power Automate for desktop to help you categorize and group desktop flows. Tags are custom text labels that let you organize your flows and manage them efficiently.
+Tags are available (in preview) in the Power Automate for desktop console to help you categorize and group desktop flows. Tags are custom text labels that let you organize your flows and manage them efficiently.
 
-The **Tags (Preview)** column displays all the tags that are associated with a desktop flow. To manage tags (for example, add or remove them) for a flow, select **Manage tags (Preview)** in its context menu in the console. Alternatively, open the **Flow properties** pane and go to the **Tags (preview)** section.
+The **Tags (Preview)** column displays all the tags that are associated with a desktop flow. To manage tags, such as adding or removing them for a flow, select **Manage tags (Preview)** in its context menu in the console. Alternatively, open the **Flow properties** pane and go to the **Tags (preview)** section.
 
-In this section, you can add the tags of your preference to the selected flow, by selecting a tag from the list or creating a new text label. As you type, the list of tags in your environment filters automatically to help you choose an existing tag or create a new one. From the same pane, you can remove any tags previously associated with your flow. You need to **Save** the flow properties for the tag changes to take place.
+In this section, add your preferred tags to the selected flow by selecting a tag from the list or creating a new text label. As you type, the list of tags in your environment automatically filters to help you choose an existing tag or create a new one. From the same pane, you can remove any tags previously associated with your flow. Select **Save** in the flow properties for the tag changes to take effect.
 
 > [!NOTE]
-> - Users with the **Environment maker** role can access and use all tags within an environment by default, including those created by others; no explicit sharing with other users is needed. They can associate the required tags with flows they own or co-own, but not flows shared with them as run-only users.
+> - Users with the **Environment maker** role can access and use all tags within an environment by default, including those created by others. Explicit sharing with other users isn't needed. They can associate the required tags with flows they own or co-own, but not flows shared with them as run-only users.
 
 ## Update tags for multiple flows
 
-You can select multiple desktop flows and update their tags at the same time, selecting the common context option **Manage tags (Preview)**. In this case, a dialog comes up, displaying only the tags that are already associated with all the selected flows. You can remove those common tags, or add new ones that will be associated with all the selected flows.
+Select multiple desktop flows and update their tags at the same time by selecting the common context option **Manage tags (Preview)**. A dialog appears, displaying only the tags already associated with all the selected flows. Remove common tags or add new ones associated with all selected flows.
 
 > [!NOTE]
-> - Tags that are associated with only a subset of the selected flows are not displayed in this dialog and can't be removed in this way.
+> - Tags associated with only a subset of the selected flows aren't displayed in this dialog and can't be removed this way.
 
 ## Filter flows based on tags
 
-Using the **Filters** button in the console and then selecting **Tags (Preview)**, you can filter your flows based on the tags you select from the list. If two or more tags are selected, there are two filtering modes:
-* **Or**: All the flows containing at least one of the selected tags are displayed.
-* **And**: Only the flows containing all the selected tags are displayed.
+Select the **Filters** button in the console, and then select **Tags (Preview)** to filter your flows based on the tags you choose from the list. If you select two or more tags, there are two filtering modes:
+* **Or**: Shows all flows that contain at least one of the selected tags.
+* **And**: Shows only flows that contain all the selected tags.
 
-You can also **Clear** your filters to quickly reset the selected tags.
+Select **Clear** to reset the selected tags quickly.
 
 ## Delete a tag from your environment
 
-Tags are solution aware components, so they can be managed in your environment's Default solution in the portal of Power Automate. Go to the Power Automate portal, then select the **Solutions** page, and select the solution called *Default Solution*. In the list of objects on the left, displaying the contents of the solution, select the **Tag** component to see all the tags available in the current environment (provided you have the default *Environment maker* role with the corresponding permissions).
+Tags are solution-aware components, so you manage them in your environment's Default solution in the Power Automate portal. Go to the Power Automate portal, select the **Solutions** page, and then select the solution called *Default Solution*. In the list of objects on the left that displays the solution's contents, select the **Tag** component to see all tags available in the current environment (if you have the default *Environment maker* role with the required permissions).
 
-You can select one or more tags in the list and choose the option **Delete from this environment** to permanently delete them. You can only delete tags you own (tags you created yourself).
+You can select one or more tags in the list and choose **Delete from this environment** to permanently delete them. You can only delete tags you own (tags you created yourself).
 
 > [!NOTE]
-> - You can access and use tags created by others, but you can't delete them, unless you are an Administrator in this environment.
+> - You can access and use tags created by others, but you can't delete them, unless you're an Administrator in this environment.
 
 ## Prerequisites
 
@@ -61,7 +61,7 @@ You can select one or more tags in the list and choose the option **Delete from 
 ## Known limitations
 
 - Tags can't be renamed. You can delete them and create new ones instead.
-- Tags are not visible in the desktop flows page of the Power Automate portal.
+- Tags aren't visible in the desktop flows page of the Power Automate portal.
 
 ## Related information
 
