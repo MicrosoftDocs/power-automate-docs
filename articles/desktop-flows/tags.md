@@ -41,8 +41,9 @@ Select multiple desktop flows and update their tags at the same time by selectin
 ## Filter flows based on tags
 
 Select the **Filters** button in the console, and then select **Tags (Preview)** to filter your flows based on the tags you choose from the list. If you select two or more tags, there are two filtering modes:
-* **Or**: Shows all flows that contain at least one of the selected tags.
-* **And**: Shows only flows that contain all the selected tags.
+
+- **Or**: Shows all flows that contain at least one of the selected tags.
+- **And**: Shows only flows that contain all the selected tags.
 
 Select **Clear** to reset the selected tags quickly.
 
@@ -53,12 +54,12 @@ Tags are solution-aware components, so you manage them in your environment's Def
 You can select one or more tags in the list and choose **Delete from this environment** to permanently delete them. You can only delete tags you own (tags you created yourself).
 
 > [!NOTE]
-> - You can access and use tags created by others, but you can't delete them, unless you're an Administrator in this environment.
+> - You can access and use tags created by others, but you can't delete them, unless you're an administrator in this environment.
 
 ## Prerequisites
 
 - Power Automate for desktop version 2.55 or later.
-- Dataverse solution version 1.9.1.1 or later. To confirm the latest version used, go to the Power Automate portal, then select the **Solutions** page, go to the **History** tab, and search for the key term *MicrosoftFlowExtensionsCore*. Check the *Version* column to verify the most recent version update.
+- Dataverse solution version 1.9.1.1 or later. To confirm the latest version used, go to the Power Automate portal, then select the **Solutions** page, go to the **History** tab, and search for the key term *MicrosoftFlowExtensionsCore*. Check the **Version** column to verify the most recent version update.
 - Tags are available only for users with a work or school account.
 - This feature requires an environment with the [Power Automate v2 schema](schema.md) enabled. Tags aren't available in v1 schema environments.
 
