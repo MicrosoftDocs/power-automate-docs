@@ -51,7 +51,7 @@ Natural language to script is a new Copilot capability added in Power Automate f
 ### Availability by region
 
 Currently, natural language to script is available in environments located in the following regions/countries:
-  - Asia
+  - Asia Pacific
   - Australia
   - Brazil
   - Canada
