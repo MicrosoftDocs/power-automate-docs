@@ -117,7 +117,7 @@
         href: fix-flow-failures.md
       - name: Find and fix errors with the error checker
         href: error-checker.md
-    - name: Automated flows
+    - name: Automated cloud flows
       items:
       - name: Create a cloud flow from a template
         href: get-started-logic-template.md
@@ -131,7 +131,7 @@
         href: odata-filters.md
       - name: Run your flows with bttns
         href: bttn-button-flows.md
-    - name: Scheduled flows
+    - name: Scheduled cloud flows
       items:
       - name: Run a cloud flow on a schedule
         href: run-scheduled-tasks.md
