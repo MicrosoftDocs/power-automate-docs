@@ -38,7 +38,7 @@ Copilot in Power Automate for desktop offers different capabilities, which are a
 - Create flows using Copilot (preview)
   - United States
 - Answer product related questions and Summarize actions and subflows
-  - Asia
+  - Asia Pacific
   - Australia
   - Brazil
   - Canada
