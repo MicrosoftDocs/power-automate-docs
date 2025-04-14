@@ -1,6 +1,6 @@
 ---
-title: Run flows on a schedule in Power Automate
-description: Learn how to automate recurring tasks by running flows on a schedule, such as every day or every hour.
+title: Run a cloud flow on a schedule in Power Automate
+description: Learn how to automate recurring tasks by running a cloud flow on a schedule, such as every day or every hour.
 suite: flow
 author: kisubedi
 contributors:
@@ -20,7 +20,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Run flows on a schedule
+# Run a cloud flow on a schedule
 
 Create a cloud flow that performs one or more tasks such as sending a report in email.
 
@@ -44,7 +44,7 @@ Create a cloud flow that performs one or more tasks such as sending a report in 
 
 # [New designer](#tab/new-designer)
 
-You can ask Copilot to create a scheduled flow. For example, you can ask by typing the following prompt:
+You can ask Copilot to create a scheduled cloud flow. For example, you can ask by typing the following prompt:
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. In the **Create your automation with Copilot** field, type the following prompt:
