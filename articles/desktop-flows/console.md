@@ -111,7 +111,7 @@ Generate a flow description for flows you own or co-own by pressing a button. Co
 This feature is currently available to the following regions/countries:
 
 - Generate flow description using Copilot
-  - Asia
+  - Asia Pacific
   - Australia
   - Brazil
   - Canada
