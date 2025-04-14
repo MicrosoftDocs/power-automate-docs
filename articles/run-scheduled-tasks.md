@@ -47,7 +47,6 @@ Create a cloud flow that performs one or more tasks such as sending a report in 
 You can ask Copilot to create a scheduled flow. For example, you can ask by typing the following prompt:
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
- and select **Copilot** in the designer.
 1. In the **Create your automation with Copilot** field, type the following prompt:
 
     **Create a flow that runs Monday every week starting 04/14/2025 which sends an email to contoso@gmail.com that their MPR doc is due.**
@@ -70,11 +69,11 @@ You can ask Copilot to create a scheduled flow. For example, you can ask by typi
 
     :::image type="content" source="./media/run-scheduled-tasks/copilot-create-flow.png" alt-text="Screenshot of a prompt to create a scheduled flow in the action configuration pane.":::
 
-You can ask Copilot to make changes to your scheduled flow using the Copilot panel in the designer.
+    You can ask Copilot to make changes to your scheduled flow using the Copilot panel in the designer.
 
-After Copilot generates a response, it confirms that it made the update successfully. If you change your mind, you can select **Undo** to revert the changes.
+    After Copilot generates a response, it confirms that it made the update successfully. If you change your mind, you can select **Undo** to revert the changes.
 
-:::image type="content" source="./media/run-scheduled-tasks/copilot-designer-prompt.png" alt-text="Screenshot of a prompt to create a scheduled flow in the Copilot pane.":::
+    :::image type="content" source="./media/run-scheduled-tasks/copilot-designer-prompt.png" alt-text="Screenshot of a prompt to create a scheduled flow in the Copilot pane.":::
 
 # [Classic designer](#tab/classic-designer)
 
