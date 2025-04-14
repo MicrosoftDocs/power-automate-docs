@@ -815,7 +815,7 @@
       href: ./desktop-flows/actions-reference/cloudconnectors.md
     - name: SAP automation
       href: ./desktop-flows/actions-reference/sap.md
-    - name: Power Automate secret variables actions (preview)
+    - name: Power Automate secret variables actions
       href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
   - name: Troubleshoot desktop flows runtime
     href: ./desktop-flows/troubleshoot.md
