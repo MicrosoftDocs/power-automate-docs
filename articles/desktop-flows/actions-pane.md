@@ -48,7 +48,7 @@ In addition to adding actions from the actions panel, you can also use the sugge
 
 The suggested next best action is available in environments located in the following countries/regions:
 
-  - Asia
+  - Asia Pacific
   - Australia
   - Brazil
   - Canada
