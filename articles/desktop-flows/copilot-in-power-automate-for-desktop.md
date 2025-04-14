@@ -9,17 +9,17 @@ ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
 ---
 
-# Get started with Copilot in Power Automate for desktop (preview)
+# Get started with Copilot in Power Automate for desktop
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Copilot in desktop flows allows you to create automation that helps streamline your workflow creation quickly and easily using natural language. You can create a new flow or add more steps to an existing flow by just describing what you want to achieve using natural language prompts.
 
 > [!IMPORTANT]
-> - This is a preview feature.
+> - Copilot’s Natural Language to flow creation is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
-> - Copilot’s Natural Language to flow creation is powered by the Azure OpenAI service. This feature is in Early Access.
+> - Copilot’s Natural Language to flow creation is powered by the Azure OpenAI service. This feature is in preview.
 > - Copilot’s generative answers capability is powered by the Azure OpenAI Service and Bing Search.
 
 Copilot can perform the following actions:
@@ -35,14 +35,26 @@ Copilot can perform the following actions:
 
 Copilot in Power Automate for desktop offers different capabilities, which are available in environments located in the following countries/regions:
 
-- Create flows using Copilot
+- Create flows using Copilot (preview)
   - United States
-- Answer product related questions
+- Answer product related questions and Summarize actions and subflows
+  - Asia
   - Australia
+  - Brazil
+  - Canada
+  - Europe
+  - France
+  - Germany
   - India
+  - Japan
+  - Norway
+  - Singapore
+  - South Africa
+  - South Korea
+  - Sweden
+  - Switzerland
+  - United Arab Emirates
   - United Kingdom
-  - United States
-- Summarize actions and subflows
   - United States
 
 ### Availability by account type
@@ -94,7 +106,7 @@ Crafting effective prompts involves more than just being specific with your requ
 - Try tweaking your prompt to further fine tune.
 - Learn more about writing prompts with generative AI at [The art of the prompt: How to get the best out of generative AI](https://news.microsoft.com/source/features/ai/the-art-of-the-prompt-how-to-get-the-best-out-of-generative-ai/).
 
-## Use Copilot to get answers to product-related questions (preview)
+## Use Copilot to get answers to product-related questions
 
 Access the generative answers capability from the console by selecting the Copilot icon located on the top right corner of the console window.
 
@@ -110,7 +122,7 @@ From Copilot’s side panel, make sure the generative answers skill is selected 
 
 In the Copilot pane, ask any product related questions or use one of the proposed prompts to get you started. The answer generated contains a link to the documentation page to refer you to additional information. Make sure you always review AI-generated content.
 
-## Use Copilot to summarize actions and subflows (preview)
+## Use Copilot to summarize actions and subflows 
 
 The Summarize actions & subflows Copilot skill helps you quickly understand desktop flows by generating concise summaries for specific actions, multiple actions, or entire subflows. This skill lets you troubleshoot and maintain flows more efficiently, saving time and simplifying the process of understanding and optimizing your automation.
 
