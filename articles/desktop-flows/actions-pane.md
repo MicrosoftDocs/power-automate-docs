@@ -34,7 +34,7 @@ After the deployment, the modal of the action opens and displays the available p
 
 :::image type="content" source="media/adding-actions/action-properties.png" alt-text="Screenshot of the modal of an action.":::
 
-### Adding actions from the suggested actions panel (preview)
+### Adding actions from the suggested actions panel
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -42,16 +42,36 @@ In addition to adding actions from the actions panel, you can also use the sugge
 
 > [!IMPORTANT]
 >
-> - This feature is in preview. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - To understand the capabilities and limitations of this feature, go to [FAQ for Power Automate for desktop suggested actions](../faqs-action-suggestions-power-automate-desktop.md).
 
 ### Availability by region
 
-Currently, the suggested actions functionality in Power Automate for desktop is only available in environments located in the United States.
+The suggested next best action is available in environments located in the following countries/regions:
+
+  - Asia
+  - Australia
+  - Brazil
+  - Canada
+  - Europe
+  - France
+  - Germany
+  - India
+  - Japan
+  - Norway
+  - Singapore
+  - South Africa
+  - South Korea
+  - Switzerland
+  - United Arab Emirates
+  - United Kingdom
+  - United States
 
 ### Availability by account type
 
-Currently, the suggested actions functionality in Power Automate for desktop is only available for users with a work or school account.
+Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
+
+> [!NOTE]
+> If your environment is in a supported region, you are signed in with a work or school account, and you still can't see Copilot in the Power Automate for desktop experience, contact your Power Platform administrator. An admin can turn Copilot off or on in the Power Platform admin center.
 
 ### Using suggested actions in your flows
 
@@ -74,12 +94,9 @@ You can send feedback by selecting the thumb up or thumb down icon underneath th
 > [!NOTE]
 > If you can't see the dialog box, your Power Platform admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
 
-### Disabling the user feedback functionality
+### Turn off user feedback functionality
 
-As a Power Platform admin you can prevent users from sending feedback to Microsoft by disabling the **disableSurveyFeedback** tenant setting. More information:
-
-- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
-- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+As a [Power Platform admin](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), prevent users from sending Copilot feedback to Microsoft by using the "Copilot feedback" [tenant setting](/power-platform/admin/tenant-settings).
 
 ### Data subject rights requests on user feedback
 
