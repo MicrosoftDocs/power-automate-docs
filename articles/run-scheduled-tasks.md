@@ -4,15 +4,16 @@ description: Learn how to automate recurring tasks by running flows on a schedul
 suite: flow
 author: kisubedi
 contributors:
+  - puneet-singh1
   - kisubedi
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-ms.author: kisubedi
+ms.author: heortaol
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 04/11/2025
+ms.date: 04/14/2025
 ms.custom: bap-template
 ms.collection: bap-ai-copilot
 search.audienceType: 
@@ -21,7 +22,7 @@ search.audienceType:
 ---
 # Run flows on a schedule
 
-Create a cloud flow that performs one or more tasks (such as sending a report in email).
+Create a cloud flow that performs one or more tasks such as sending a report in email.
 
 - Once a day, an hour, or a minute.
 - On a date that you specify.
@@ -81,7 +82,7 @@ Copilot adds the following parameters to the flow it created for you in the acti
     - In the **On these days** and **At these hours** dropdown lists, select the day or days of the week on which the flow should run and the time or times of day when the flow should run.
     - In the **At these minutes** field, enter the minute values (from 0 to 59) separated by a comma.
 
-    For example, configure the options as shown to start a cloud flow no sooner than 3:00 PM (Pacific time) on Thursday, March 24, 2022, and run it every two weeks on Tuesdays at 5:30 PM (Pacific time).
+    For example, configure the options as shown to start a cloud flow no sooner than 3:00 PM (Pacific Time) on Thursday, March 24, 2022, and run it every two weeks on Tuesdays at 5:30 PM (Pacific Time).
 
     :::image type="content" source="./media/run-scheduled-tasks/advanced-options.png" alt-text="Screenshot of configured advanced options.":::
 
