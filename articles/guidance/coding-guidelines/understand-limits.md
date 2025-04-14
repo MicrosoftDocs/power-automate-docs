@@ -15,68 +15,64 @@ search.audienceType:
 
 # Understand platform limits and avoid throttling
 
-Understanding Power Automate and Power Platform limits can help users design scalable Power Automate flows. 
+To design scalable flows, it helps to understand the limits that Power Automate and Power Platform licenses and APIs impose on your flows. Flows that violate them can be throttled, or slowed down, or even turned off altogether if they're throttled continuously for 14 days. Flows can be turned on again at any time, but if they continue to violate the limits, they continue to get turned off. This article describes the limits that can affect your flows and how to stay within them. Learn more in [Limits of automated, scheduled, and instant flows](/power-automate/limits-and-config) and [Requests limits and allocations](/power-platform/admin/api-request-limits-allocations).
 
-These limits can impact a flow's performance and help avoid throttling (slowing down) or turning off of flows due to request limit violations. Any flows that get throttled continuously for 14 days get turned off. These flows can be turned on again anytime; however, if their performance doesn't improve, the flow continues to get disabled.
+## Check your license plan
 
-Learn more: 
+Some platform and API limits depend on your license plan. In Power Automate, the easiest way to identify your licenses and capabilities is to select **Settings** > **View My Licenses**.
 
-- [Limits of automated, scheduled, and instant flows](/power-automate/limits-and-config)
-- [API requests limits and allocations](/power-platform/admin/api-request-limits-allocations)
+:::image type="content" source="media/view-my-license.png" alt-text="Screenshot of the View My Licenses option in Power Automate settings." lightbox="media/view-my-license.png":::
 
-## How to check your license plan
-
-Some platform and API limits depend on your license plan. From Power Automate, the easiest way to identify your licenses and capabilities is to select **Settings** > **View My Licenses**.
-
-:::image type="content" source="media/view-my-license.png" alt-text="Screenshot of the View My Licenses option in Settings." lightbox="media/view-my-license.png":::
-
-Alternatively, select <kbd>Ctrl</kbd> + <kbd>Alt</kbd>+ <kbd>A</kbd> from the Power Automate portal to get deeper plan level details. 
+To dig deeper into the details of your license plan, press **Ctrl+Alt+A** in the Power Automate portal.
 
 ## API request limits
 
-Requests in Microsoft Power Platform consist of various actions that a user makes across products. At a high level, an API request is a request to connectors, process advisor analysis, HTTP actions, and built-in actions like initializing variables or using Compose. Both succeeded and failed actions count towards API request limits. Additionally, retries and other requests from pagination count as action executions too. Learn more: [What counts as Power Platform request?](/power-platform/admin/power-automate-licensing/types)
+An API request is how Power Automate flows ask a service to do something, like connect to apps or send or return data. Every time your flow does something, it counts as a request, whether it succeeds or fails. Learn more in [What is a Microsoft Power Platform request?](/power-platform/admin/api-request-limits-allocations#what-is-a-microsoft-power-platform-request).
 
-Based on your license plan, there are limits to the number of actions a cloud flow can run in a day. These limits are different from connector throttling limits. You can see the number of actions your flow runs by selecting **Analytics** from the flow details page and accessing the **Actions** tab.
+The limits to the number of actions a cloud flow can run in a day are based on your license plan. API limits at the platform level are based on the user license. Learn more in [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types).
 
-Even when the flow uses fewer Power Platform requests, you can still reach your limits if the flow runs more frequently than you expect. For example, you might create a cloud flow that sends you a push notification whenever your manager sends you an email. That flow runs every time you get an email (from anyone) because the flow must check whether the email came from your manager. The limit applies to all runs across all your flows in a 24-hour period. 
+API request limits are different from [connector throttling limits](#api-throughput-limits-on-connectors). They apply to all runs across all your flows in a 24-hour period. To view the number of actions a flow runs, go to the flow details page, select **Analytics**, and then select the **Actions** tab.
 
-Here are some guidelines to estimate the request usage of a flow:
+Even when a flow makes few Power Platform requests, it can still reach the limits if it runs more frequently than you expect. For example, you might create a cloud flow that sends you a push notification whenever your manager sends you an email. The flow runs every time you get an email from anyone, because it must check whether the email came from your manager.
 
-- One or more actions run as part of a flow run. A simple flow with one trigger and one action results in two actions each time the flow runs, consuming two requests.
-- Every trigger/action in the flow generates Power Platform requests. All types of actions like connector actions, HTTP actions, built-in actions (from initializing variables, creating scopes, to a simple compose action) generate Power Platform requests. 
-- Both succeeded and failed actions count towards these limits. Skipped actions aren't counted towards these limits.
-- Each action generates one request. If the action is in an apply to each loop, it generates as many requests as there are items the loop processes.
-- An action can have multiple expressions but it counts as one API request only.
-- Retries and extra requests from pagination count as action executions too.
+Use the following guidelines to estimate the request usage of a flow:
 
-API limits at the platform level are based on the user license. Learn more: [Power Automate licensing types](/power-platform/admin/power-automate-licensing/types)
+- A simple flow with one trigger and one action results in two actions each time the flow runs, consuming two requests.
+
+- Every trigger and action in the flow generates Power Platform requests. Actions include connector actions, HTTP actions, and built-in actions like initializing variables, creating scopes, and simple compose actions.
+
+- Both successful and failed actions count toward limits, but not skipped actions.
+
+- Each action generates one request. If the action is in an "apply to each" loop, it generates as many requests as there are items for the loop to process.
+
+- An action can have multiple expressions but it counts as one API request.
+
+- Retries and extra requests from pagination count as actions.
 
 ## API throughput limits on connectors
 
-In addition to platform limits, each connector service has its own limits. Connector throttling in Power Automate refers to the mechanism by which connectors enforce rate limits or usage quotas to prevent abuse and ensure fair resource allocation. When a connector is throttled, it restricts the number of requests or operations that can be made within a specific timeframe.
+In addition to the limits the platform imposes, each connector service has its own limits. Connector throttling in Power Automate refers to the mechanism by which connectors enforce rate limits or usage quotas to prevent abuse and ensure fair resource allocation. When a connector is throttled, it restricts the number of requests or operations that can be made in a specific timeframe. Every connector has its own throttling limit.
 
-When a flow runs into connector-level throttling limits, the service returns a *429 (Too Many Requests)* error code with an error text like *Rate limit is exceeded. Try again in 27 seconds*.
-
-Each [connector](/connectors/connector-reference/connector-reference-powerautomate-connectors) has its own throttling limit. 
+When a flow runs into connector-level throttling limits, the service returns error code *429 (Too Many Requests)* with error text like *Rate limit is exceeded. Try again in 27 seconds*.
 
 ## Dataverse API limits
 
-Dataverse as a connector service defines its own [service protection limits](/power-apps/developer/data-platform/api-limits). The service protection API limits are evaluated per user. When called by a flow the *user* is whomever is associated with the action. Usually, this user is the flow owner, but it can be the invoking user if the flow is invoking user context in the action.
+Dataverse as a connector service defines its own service protection limits. These limits are evaluated per user, where the user is whoever is associated with the action. Usually, the user is the flow owner, but it can be the invoking user if the flow invokes user context in the action. Learn more in [Service protection API limits](/power-apps/developer/data-platform/api-limits).
 
 ## Flow concurrency limits
 
-Designing scalable, efficient flows includes understanding concurrency, looping, and debatching limits to help avoid unnecessary delays. Learn more: [Concurrency, looping, and debatching limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits).
+Limits apply to the number of runs that can execute at the same time, items that can be processed in a loop, and chunks that a large dataset can be split into for more efficient processing. Learn more in [Concurrency, looping, and debatching limits](/power-automate/limits-and-config#concurrency-looping-and-debatching-limits).
 
 ## Action burst limits
 
-Action burst limits refer to the maximum number of actions that can be triggered within a specific period, typically measured in a rolling window of time. Currently, there's a per-flow cap of 100,000 actions per 5 minutes. 
+Action burst limits refer to the maximum number of actions that can be triggered in a specific period, typically measured in a rolling window of time. Currently, the cap is 100,000 actions in five minutes.
 
-Any bursts of triggering or loops can exceed this limit, causing flows to slow down or throttle.
-
-To address this limit, distribute the load between multiple flows,  for example, by using [child flows](/power-automate/create-child-flows) or by using [trigger conditions](optimize-power-automate-triggers.md).
+To stay under this limit, distribute the load between multiple flows using child flows or add trigger conditions. Learn more in [Create child flows](/power-automate/create-child-flows) and [Optimize Power Automate triggers](optimize-power-automate-triggers.md).
 
 ## Flow design limits
 
-When designing flows, you might encounter limits defined at the design/definition level. Consider redesigning your flows if you encounter these limits.
+You might encounter limits on the complexity of a flow that are defined at the design and definition level. Consider redesigning your flow if you encounter them. Learn more in [Flow definition limits](/power-automate/limits-and-config#flow-definition-limits).
 
-Learn more: [Flow definition limits](/power-automate/limits-and-config#flow-definition-limits)
+## Related content
+
+[List of all Power Automate connectors](/connectors/connector-reference/connector-reference-powerautomate-connectors)

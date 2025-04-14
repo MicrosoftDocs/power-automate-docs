@@ -1,6 +1,6 @@
 ---
 title: Test cloud flows
-description: Discover effective methods for testing Power Automate cloud flows, including design phase testing and static result testing.
+description: Learn how to use built-in tools in Power Automate to test the design of your cloud flows to ensure their reliability, performance, and accuracy.
 #customer intent: As a Power Automate user, I want to test my Power Automate cloud flows so that I can ensure their reliability, performance, and accuracy.
 author: manuelap-msft
 ms.subservice: guidance
@@ -17,67 +17,126 @@ search.audienceType:
 
 # Test cloud flows
 
-Testing your Power Automate cloud flows is crucial to ensure their reliability, performance, and accuracy. By following these best practices, you streamline your testing process, identify and resolve issues more efficiently, and maintain the integrity of your automated workflows.
+Make it a habit to test your Power Automate cloud flows. It's crucial to ensuring their reliability, performance, and accuracy. This article discusses how to use built-in tools in Power Automate to help you identify and resolve issues more efficiently.
 
 ## Design phase testing
 
-Consider using **Flow Checker** and **Test Flow** tools during the design phase to identify issues.
+During the design phase, use the Flow Checker and Test Flow tools to identify and fix problems with flow logic, actions, and connectors.
 
-In the **Test** pane, there are two options for testing your flow:
+### Flow Checker
 
-- Manually trigger the test by performing the action that triggers the flow. For example, depending on the use case, go to your inbox and send yourself a test email, or go to SQL and insert a row.
+The Flow Checker tool analyzes your flow before you run it. It identifies potential errors and performance issues and provides suggestions for improvements early in the design process, reducing the time and effort needed to troubleshoot later.
 
-- Use data from previous runs to perform the test.
+:::image type="content" source="media/test-cloud-flows-flow-checker.png" alt-text="Screenshot of Flow Checker results in the Power Automate designer showing a flow with one error.":::
 
-:::image type="content" source="media/test-cloud-flows.png" alt-text="Screenshot of the Test Flow pane." lightbox="media/test-cloud-flows.png":::
+Learn more in [Find and fix errors with Flow Checker](../../error-checker.md).
 
-## Static result testing (mock data)
+### Test Flow
 
-The Static Result option in Power Automate streamlines testing your flows. It lets you mock the outcomes of specific actions, enabling you to test different parts of your flow without executing the entire process each time.
+Even if Flow Checker doesn't show any issues, it's a good idea to test your flow. Testing ensures that the flow behaves as expected and that all actions and connectors are working correctly.
 
-Advantages of using static result testing include:
+The **Test Flow** pane in the Power Automate designer allows you to test a flow either manually or automatically. You must save your flow before you can test it, and you must test it manually at least once before you can use the automatic testing option.
 
-- **Time efficiency**: By using static results, you bypass long-running actions and focus on testing specific sections of your flow. 
+- **To manually test the flow**, perform the action that triggers the flow.
 
-- **Simplified testing**: Mocking action outcomes lets you simulate various scenarios and conditions without needing the actual data or events to occur. This approach makes it easier to validate the behavior of your flow under different circumstances.
+- **To test the flow automatically**, use a recently used trigger or repeat a previous test run.
 
-- **Troubleshooting**: Static results can help isolate and troubleshoot issues within your flow. By controlling the output of specific actions, you can identify and resolve problems more effectively.
+:::image type="content" source="media/test-cloud-flows-test-flow-pane.png" alt-text="Screenshot of the Test Flow pane in the Power Automate designer showing manual and automatic testing options." lightbox="media/test-cloud-flows.png":::
+
+Learn more in [Test button](../../flows-designer.md#test-button) in the article [What is the cloud flows designer?](../../flows-designer.md).
+
+## Static result testing with mock data
+
+The static outputs option in Power Automate lets you run an action with mock data. When the flow runs, it essentially treats the action as successful without actually running it. It's a good way to test different parts of your flow without executing the entire process each time.
+
+Static result testing offers several advantages:
+
+- You can bypass long-running actions and focus on testing specific sections of your flow.
+
+- Mock action outcomes let you simulate various scenarios and conditions without needing the actual data or events to occur. This approach makes it easier to validate the behavior of your flow under different circumstances.
+
+- Controlling the output of specific actions helps you isolate and troubleshoot issues in your flow more effectively.
+
+Learn more in [Disable an action or enable static results on an action](../../flows-designer#disable-an-action-or-enable-static-results-on-an-action) in the article [What is the cloud flows designer?](../../flows-designer.md).
 
 ### How to use static results
 
-Take a three-step approach:
+First, create a flow with the action you want to mock and capture its output. Then, configure the action to return the same results in future runs. When you run the flow again, it uses the static result for the mocked action, skipping the actual execution.
 
-1. **Capture the action's outcome**
-   - Create a new manually triggered flow with the action you want to mock (for example, **Start and wait for an approval**).
-   - Run the flow once and complete the action to capture its outcome.
-   - Go to the flow history, open the last run instance, and expand the action to view its outputs.
-   - Copy the output data, which typically includes the "body" and other relevant details.
+In the following example, we want to run the **Start and wait for an approval** action with static results to test the flow without actually sending an approval request.
 
-2. **Configure the static result**
-   - In the flow editor, select the ellipsis on the action you want to mock and select **Static result**.
-   - Toggle **Enable Static Result** and select the fields you want to provide as a response.
-   - Save the changes.
+#### Capture the action's outcome
 
-<!-- Not able to check first steps above -->
+1. Create a manually triggered flow. Add the action you want to mock and a **Compose** action to capture the output of the previous action.
 
-3. **Run the flow with static results**
+    :::image type="content" source="media/test-cloud-flows-compose-inputs-new-designer.png" alt-text="Screenshot of the Power Automate designer showing the input of a Compose action set to the output of the previous action.":::
 
-      - When you run the flow again, it uses the static result for the mocked action, skipping the actual execution and using the predefined output instead.
+1. Save the flow.
 
-## Resubmitting cloud flow runs
+1. Run the flow using a manual test in the **Test Flow** pane. Complete the action.
 
-Sometimes, a cloud flow stops working unexpectedly or fails due to server issues or an asynchronous process not meeting certain requirements. Rerun the flow by going to **Run history** and selecting **Resubmit**. You can also [resubmit or cancel runs in bulk](../../how-tos-bulk-resubmit.md).
+1. After the flow runs, go to its run history and select the last run instance.
 
-### Considerations for resubmitting runs
+1. Expand the action you want to mock and select **Show raw outputs**.
 
-When resubmitting a flow run in Power Automate, keep the following key considerations in mind to ensure that the process is smooth and effective:
+    :::image type="content" source="media/test-cloud-flows-raw-output-new-designer.png" alt-text="Screenshot of the Power Automate designer showing the raw outputs of an action.":::
 
-- **Error handling**: Ensure your flow includes effective error handling and retry policies. This approach helps address the issues that caused the initial failure and provides better insights into why a run might fail again.
+1. In the **Outputs** window, copy everything in the `"body":` section. Be sure to include the corresponding closing bracket (`}`). This output is the static result you'll use in the next step.
 
-- **Data duplication**: Be cautious of potential data duplication or other side effects from resubmitting a run. For example, if your flow creates records or sends emails, resubmitting might repeat these actions, leading to duplicates.
+    :::image type="content" source="media/test-cloud-flows-body-output-new-designer.png" alt-text="Screenshot of the raw output of an action, with the body section highlighted.":::
 
-- **Input data**: Verify that the input data required for the flow run is still valid and available. Changes in the data or environment (such as deleted files or records) can affect the outcome of the resubmitted run.
+1. Close the output window and the test run. Edit the flow in the flow designer.
 
-- **Flow updates**: If you made changes to the flow since the original run, consider whether these changes might affect the resubmission. It's best to resubmit using the version of the flow that was in place at the time of the original run to ensure consistency.
- 
+#### Configure the static result (new designer)
 
+1. Select the action, and then select the **Testing** tab in the action's properties pane. Toggle **Static result off** to **Static result on**.
+
+1. Under **Testing**, select the **Status** and **Outputs** fields. The **Status** field should be set to **Succeeded**.
+
+1. Under **Output**, select the **StatusCode**, **Headers**, and **Body** fields.
+
+1. Under **Body**, select the **Body** field. Select the text box under **body** and paste the static result you copied earlier.
+
+    :::image type="content" source="media/test-cloud-flows-static-results-new-designer.png" alt-text="Screenshot of an action's Static result settings in the Power Automate new designer.":::
+
+1. Select **Save**.
+
+A beaker icon appears on the action card, indicating that the action is set to use static results.
+
+:::image type="content" source="media/test-cloud-flows-beaker-new-designer.png" alt-text="Screenshot of an action in the Power Automate new designer showing a beaker icon.":::
+
+#### Configure the static result (classic designer)
+
+1. Select the ellipsis (**&hellip;**) on the action you want to mock, and then select **Static result**. Select the **Enable Static Result** toggle.
+
+1. To the right of **Static Result**, select the **Switch to JSON Mode** icon.
+
+    :::image type="content" source="media/test-cloud-flows-json-mode.png" alt-text="Screenshot of an action's Static result settings, with the Switch to JSON Mode icon highlighted.":::
+
+1. In the **Static Result** pane, type a comma at the end of the `"headers":` line and press Enter to start a new line.
+
+1. Paste the static result you copied earlier, starting with the `"body":` line. Be sure to include the corresponding closing bracket (`}`) at the end.
+
+1. Select **Done**.
+
+A beaker icon appears next to the action name, indicating that the action is set to use static results.
+
+:::image type="content" source="media/test-cloud-flows-beaker-classic-designer.png" alt-text="Screenshot of an action in the Power Automate classic designer showing a beaker icon.":::
+
+## Resubmit cloud flow runs
+
+If a cloud flow stops working unexpectedly, you can rerun it. You can also cancel a flow that's running too long. Select the flow run instance in the run history, and then select either **Resubmit** or **Cancel**.
+
+:::image type="content" source="media/test-cloud-flows-resubmit-flow-runs.png" alt-text="Screenshot of a flow run instance, with the Resubmit and Cancel actions highlighted.":::
+
+You can also resubmit or cancel multiple runs at the same time. Learn more in [Cancel or resubmit flow runs in bulk](../../how-tos-bulk-resubmit.md).
+
+Before you resubmit a flow run, keep the following considerations in mind:
+
+- Make sure that your flow includes error handling and retry policies to address whatever caused the initial failure.
+
+- Be cautious of potential data duplication or other side effects from resubmitting a run. For example, if your flow creates records or sends emails, resubmitting it might result in duplicated data or emails.
+
+- Verify that the input data required for the flow run is still valid and available. Changes in the data or environment, such as deleted files or records, can affect the outcome of the resubmitted run.
+
+- If you made changes to the flow after the original run, consider how your changes might affect the resubmission. It's best to resubmit using the version of the flow that was in place at the time of the original run to ensure consistency.

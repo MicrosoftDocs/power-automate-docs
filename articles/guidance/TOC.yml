@@ -38,7 +38,7 @@
               href: coding-guidelines/manage-flows-flow-checker.md
             - name: Test cloud flows
               href: coding-guidelines/test-cloud-flows.md
-            - name: Leverage Power Automate features
+            - name: Streamline workflow creation with Power Automate features
               href: coding-guidelines/use-peekcode-addnotes.md
             - name: Troubleshooting tips
               href: coding-guidelines/troubleshoot-cloud-flows.md
@@ -50,11 +50,11 @@
               href: coding-guidelines/use-secure-inputs-outputs-triggers.md
             - name: Keep flow configuration generic
               href: coding-guidelines/keep-flow-configuration-generic.md
-            - name: Understand access to flows
+            - name: Understand flow ownership and access
               href: coding-guidelines/understand-access-to-flows.md
             - name: Use auditing in Dataverse and Microsoft Purview
               href: coding-guidelines/use-auditing-dataverse.md
-            - name: Prevent data exfiltration
+            - name: Prevent unauthorized transfer of data
               href: coding-guidelines/prevent-data-exfiltration.md
             - name: Consider customer-managed keys
               href: coding-guidelines/use-cmk-for-cloud-flows.md
