@@ -33,7 +33,9 @@ Here's a quick video about data operations.
 
 Use the **Data Operation - Compose** action to save yourself from having to enter the same data multiple times as you're designing a cloud flow. In this example, you need to enter an array of digits&mdash;`[0,1,2,3,4,5,6,7,8,9]`&mdash;several times while you design your flow. You can use the compose action to save the array, as described in the following procedure.
 
-# [New designer](#tab/new-designer)
+> [!NOTE]
+> The look and feel of the designer may vary depending on the version of Power Automate you're using. The screenshots in this article are from the new designer, but the steps are similar in the classic designer.
+> If you're using the classic designer, you can switch to the new designer by selecting **New designer** in the top-right corner of the screen.
 
 1. Search for **compose**, and then select the **Compose - Data Operation** action.
 
@@ -58,38 +60,9 @@ When you need to access the contents of the compose action, do so by following t
 
     :::image type="content" source="./media/data-operations/use-compose-output-2-new-designer.png" alt-text="Use Outputs from the Compose action.":::
 
-# [Classic designer](#tab/classic-designer)
-
-1. Search for **compose**, and then select the **Compose - Data Operation** action.
-
-    :::image type="content" source="./media/data-operations/search-select-compose-2.png" alt-text="Compose - Data Operation action.":::
-
-1. In the **Inputs** box, enter the array that you want to reference later.
-
-    :::image type="content" source="./media/data-operations/add-array-compose-2.png" alt-text="Configure the Compose action.":::
-
-    > [!TIP]
-    > To make the **Compose** card easier to find later, rename it by selecting the text **Compose** on the title bar of the card and entering a name that's easy to remember.
-
-When you need to access the contents of the compose action, do so by following these steps.
-
-1. Add an action, such as **Join - Data Operation**.
-
-1. Select the control to which you'd like to add the contents you saved in the compose action.
-
-   The **Add dynamic content from the apps and connectors used in this flow** screen opens.
-
-1. On the **Dynamic content** tab, in the **Compose** section, select **Outputs**.
-
-    :::image type="content" source="./media/data-operations/use-compose-output-2.png" alt-text="Use Outputs from the Compose action.":::
-
----
-
 ## Use the join action
 
 Use the **Data Operation - Join** action to delimit an array with the separator of your choice. For example, your flow receives a web request that includes the following array of email addresses: `["d@example.com", "k@example.com", "dal@example.com"]`. However, your email program requires addresses to be formatted in a single string, separated with semicolons. You use the **Data Operation - Join** action to change the comma delimiter (,) to a semicolon (;) by following these steps:
-
-# [New designer](#tab/new-designer)
 
 1. Add a new action, search for **Join**, and then select **Data Operation - Join**.
 
@@ -103,25 +76,7 @@ Use the **Data Operation - Join** action to delimit an array with the separator 
 
 4. After your flow runs, the output of the **Data Operation – Join** action will be a string with the addresses joined by semicolons, as shown in the following screenshot.
 
-    :::image type="content" source="./media/data-operations/join-output-2-new-designer.png" alt-text="Screenshot of input of addresses separated by commas, a Join with value of semicolon, and output of those addresses separated by semicolons..":::
-
-# [Classic designer](#tab/classic-designer)
-
-1. Add a new action, search for **Join**, and then select **Data Operation - Join**.
-
-    :::image type="content" source="./media/data-operations/search-select-join-2.png" alt-text="Screenshot of searching for and selecting the join action.":::
-
-2. In the **From** box, enter the array, and in the **Join with** box, enter a semicolon (**;**).
-
-    :::image type="content" source="./media/data-operations/add-array-join-2.png" alt-text="Screenshot of configuring the join action.":::
-
-3. Save your flow, and then run it.
-
-4. After your flow runs, the output of the **Data Operation – Join** action will be a string with the addresses joined by semicolons, as shown in the following screenshot.
-
-    :::image type="content" source="./media/data-operations/join-output-2.png" alt-text="Screenshot of input of addresses separated by commas, a Join with value of semicolon, and output of those addresses separated by semicolons.":::
-
----
+    :::image type="content" source="./media/data-operations/join-output-2-new-designer.png" alt-text="Screenshot of input of addresses separated by commas, a Join with value of semicolon, and output of those addresses separated by semicolons.":::
 
 ## Use the select action
 
@@ -144,8 +99,6 @@ You want to reshape the incoming data by renaming `first` to `FirstName` and `la
 
 To do this:
 
-# [New designer](#tab/new-designer)
-
 1. Add the **When an HTTP request is received** trigger to your flow.
 1. Select **Use sample payload to generate schema**.
 
@@ -155,28 +108,10 @@ To do this:
 1. Add the **Data Operation – Select** action, and then configure it as shown in the following screenshot.
 
    :::image type="complex" source="./media/data-operations/select-card-2-new-designer.png" alt-text="Configure the select action.":::
-   Screenshot showing the select action. From is set to Body. In the Map section, FirstName is set to first, FamilyName is set to last, and FullName is set to first and last, separated by a space.:::image-end:::
+   Screenshot showing the select action. The From field is set to Body. In the Map section, FirstName is set to first, FamilyName is set to last, and FullName is set to first and last, separated by a space.:::image-end:::
     
    > [!TIP]
    > The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
-
-# [Classic designer](#tab/classic-designer)
-
-1. Add the **When an HTTP request is received** trigger to your flow.
-1. Select **Use sample payload to generate schema**.
-
-    :::image type="content" source="./media/data-operations/request-trigger.png" alt-text="Screenshot of selecting the sample payload.":::
-
-1. In the box that appears, paste a sample of your source data array, and then select **Done**.
-1. Add the **Data Operation – Select** action, and then configure it as shown in the following screenshot.
-
-   :::image type="complex" source="./media/data-operations/select-card-2.png" alt-text="Configure the select action.":::
-   Screenshot showing the select action. From is set to Body. In the Map section, FirstName is set to first, FamilyName is set to last, and FullName is set to first and last, separated by a space.:::image-end:::
-
-   > [!TIP]
-   > The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
-
----
 
 ## Use the filter array action
 
@@ -195,25 +130,12 @@ In this example, you use the filter array action on this array:
 
 This example creates a new array that contains only objects in which `first` is set to `Eugenia`.
 
-# [New designer](#tab/new-designer)
-
 1. Find, and then add, the **Filter array** action to your flow.
 1. Configure the filter array action as shown in the following screenshot.
 
     :::image type="content" source="./media/data-operations/add-configure-filter-array-2-new-designer.png" alt-text="Screenshot of in the From section, the first line is set to Body. In the second line, first is set equal to Eugenia.":::
 
 1. Save, and then run your flow.
-
-# [Classic designer](#tab/classic-designer)
-
-1. Find, and then add, the **Filter array** action to your flow.
-1. Configure the filter array action as shown in the following screenshot.
-
-    :::image type="content" source="./media/data-operations/add-configure-filter-array-2.png" alt-text="Screenshot of in the From section, the first line is set to Body. In the second line, first is set equal to Eugenia.":::
-
-1. Save, and then run your flow.
-
----
 
 ## Use the create CSV table action
 
@@ -222,9 +144,6 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
 ``` JSON
 [ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]
 ```
-
-# [New designer](#tab/new-designer)
-
 1. Find, add, and then configure the **Create CSV table - Data Operation** action to resemble the following image.
 
     :::image type="content" source="./media/data-operations/create-csv-table-2-new-designer.png" alt-text="Screenshot of Configuring the Create CSV table action. From is set to Body, and Columns is set to Automatic.":::
@@ -235,21 +154,6 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
     When your flow runs, the **Create CSV table** action displays the output shown in the following screenshot.
 
     :::image type="content" source="./media/data-operations/create-csv-table-output-2-new-designer.png" alt-text="Screenshot of the output from the create CSV table action, showing firstname,familyname in the first row followed by Eugenia,Lopez and Elizabeth,Moore.":::
-
-# [Classic designer](#tab/classic-designer)
-
-1. Find, add, and then configure the **Create CSV table - Data Operation** action to resemble the following image.
-
-    :::image type="content" source="./media/data-operations/create-csv-table-2.png" alt-text="Screenshot of Configuring the Create CSV table action. From is set to Body, and Columns is set to Automatic.":::
-
-    The **Body** token in this image comes from a **When a HTTP request is received** action; however, you can get the input for the **Create CSV table** action from the output of any previous action in your flow, or you can enter it directly in the **From** box.
-1. Save, and then run your flow.
-
-    When your flow runs, the **Create CSV table** action displays the output shown in the following screenshot.
-
-    :::image type="content" source="./media/data-operations/create-csv-table-output-2.png" alt-text="Screenshot of the output from the create CSV table action, showing first,last in the first row followed by Eugenia,Lopez and Elizabeth,Moore.":::
-
----
 
 ## Use the create HTML table action
 
