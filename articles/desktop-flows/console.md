@@ -135,7 +135,7 @@ This feature is currently available to the following regions/countries:
 Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
 
 > [!NOTE]
-> If your environment is in a supported region, you are signed in with a work or school account, and you still can't see Copilot in the Power Automate for desktop experience, contact your Power Platform administrator. An admin can turn Copilot off or on in the Power Platform admin center.
+> If your environment is in a supported region, you are signed in with a work or school account, and you still can't see Copilot in the Power Automate for desktop experience, contact your Power Platform administrator.
 
 ### Use Copilot to generate the description
 
