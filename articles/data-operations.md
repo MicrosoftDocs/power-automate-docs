@@ -68,7 +68,8 @@ When you need to access the contents of the compose action, do so by following t
 
     :::image type="content" source="./media/data-operations/add-array-compose-2.png" alt-text="Configure the Compose action.":::
 
-    To make the **Compose** card easier to find later, rename it by selecting the text **Compose** on the title bar of the card and entering a name that's easy to remember.
+    > [!TIP]
+    > To make the **Compose** card easier to find later, rename it by selecting the text **Compose** on the title bar of the card and entering a name that's easy to remember.
 
 When you need to access the contents of the compose action, do so by following these steps.
 
@@ -81,6 +82,8 @@ When you need to access the contents of the compose action, do so by following t
 1. On the **Dynamic content** tab, in the **Compose** section, select **Outputs**.
 
     :::image type="content" source="./media/data-operations/use-compose-output-2.png" alt-text="Use Outputs from the Compose action.":::
+
+---
 
 ## Use the join action
 
@@ -118,6 +121,8 @@ Use the **Data Operation - Join** action to delimit an array with the separator 
 
     :::image type="content" source="./media/data-operations/join-output-2.png" alt-text="Screenshot of input of addresses separated by commas, a Join with value of semicolon, and output of those addresses separated by semicolons.":::
 
+---
+
 ## Use the select action
 
 Use the **Data Operation – Select** action to transform the shape of objects in an array. For example, you can add, remove, or rename elements in each object in an array.
@@ -152,7 +157,8 @@ To do this:
    :::image type="complex" source="./media/data-operations/select-card-2-new-designer.png" alt-text="Configure the select action.":::
    Screenshot showing the select action. From is set to Body. In the Map section, FirstName is set to first, FamilyName is set to last, and FullName is set to first and last, separated by a space.:::image-end:::
     
-   The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
+   > [!TIP]
+   > The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
 
 # [Classic designer](#tab/classic-designer)
 
@@ -167,8 +173,10 @@ To do this:
    :::image type="complex" source="./media/data-operations/select-card-2.png" alt-text="Configure the select action.":::
    Screenshot showing the select action. From is set to Body. In the Map section, FirstName is set to first, FamilyName is set to last, and FullName is set to first and last, separated by a space.:::image-end:::
 
-> [!TIP]
-> The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
+   > [!TIP]
+   > The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
+
+---
 
 ## Use the filter array action
 
@@ -205,6 +213,8 @@ This example creates a new array that contains only objects in which `first` is 
 
 1. Save, and then run your flow.
 
+---
+
 ## Use the create CSV table action
 
 Use the **Create CSV table - Data Operation** action to change a JSON array input into a comma-separated value (CSV) table. You can keep the headers visible in the CSV output. In this example, you convert the following array into a CSV table:
@@ -238,6 +248,8 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
     When your flow runs, the **Create CSV table** action displays the output shown in the following screenshot.
 
     :::image type="content" source="./media/data-operations/create-csv-table-output-2.png" alt-text="Screenshot of the output from the create CSV table action, showing first,last in the first row followed by Eugenia,Lopez and Elizabeth,Moore.":::
+
+---
 
 ## Use the create HTML table action
 
