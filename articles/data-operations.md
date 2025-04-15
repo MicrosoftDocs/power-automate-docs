@@ -37,7 +37,7 @@ Use the **Data Operation - Compose** action to save yourself from having to ente
 > The look and feel of the designer may vary depending on the version of Power Automate you're using. The screenshots in this article are from the new designer, but the steps are similar in the classic designer.
 > If you're using the classic designer, you can switch to the new designer by selecting **New designer** in the top-right corner of the screen.
 
-1. Search for **compose**, and then select the **Compose - Data Operation** action.
+1. Search for **compose**, and then select the **Compose** action under **Data Operation**.
 
     :::image type="content" source="./media/data-operations/search-select-compose-2-new-designer.png" alt-text="Screenshot of the Compose - Data Operation action.":::
 
@@ -50,7 +50,7 @@ Use the **Data Operation - Compose** action to save yourself from having to ente
 
 When you need to access the contents of the compose action, do so by following these steps.
 
-1. Add an action, such as **Join - Data Operation**.
+1. Add an action, such as **Data Operation - Join**.
 
 1. Select the control to which you'd like to add the contents you saved in the compose action.
 
@@ -115,7 +115,7 @@ To do this:
 
 ## Use the filter array action
 
-Use the **Filter array - Data Operation** action to reduce the number of objects in an array to a subset that matches the criteria you provide.
+Use the **Data Operation - Filter array** action to reduce the number of objects in an array to a subset that matches the criteria you provide.
 
 > [!NOTE]
 >
@@ -139,12 +139,13 @@ This example creates a new array that contains only objects in which `first` is 
 
 ## Use the create CSV table action
 
-Use the **Create CSV table - Data Operation** action to change a JSON array input into a comma-separated value (CSV) table. You can keep the headers visible in the CSV output. In this example, you convert the following array into a CSV table:
+Use the **Data Operation - Create CSV table** action to change a JSON array input into a comma-separated value (CSV) table. You can keep the headers visible in the CSV output. In this example, you convert the following array into a CSV table:
 
 ``` JSON
 [ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]
 ```
-1. Find, add, and then configure the **Create CSV table - Data Operation** action to resemble the following image.
+
+1. Find, add, and then configure the **Data Operation - Create CSV table** action to resemble the following image.
 
     :::image type="content" source="./media/data-operations/create-csv-table-2-new-designer.png" alt-text="Screenshot of Configuring the Create CSV table action. From is set to Body, and Columns is set to Automatic.":::
 
@@ -157,9 +158,9 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
 
 ## Use the create HTML table action
 
-Use the **Create HTML table - Data Operation** action to change a JSON array input into an HTML table. You can keep the headers visible in the HTML output.
+Use the **Data Operation - Create HTML table** action to change a JSON array input into an HTML table. You can keep the headers visible in the HTML output.
 
-To do this, follow the steps in the previous **Use the create CSV table action** section for creating a CSV table. Use the **Create HTML table - Data Operation** action instead of **Create CSV table**.
+To do this, follow the steps in the previous [Use the create CSV table action](#use-the-create-csv-table-action) section, but use the **Data Operation - Create HTML table** action instead of **Create CSV table**.
 
 > [!TIP]
 > If you plan to send the HTML table via email, remember to select **IsHtml** in the email action.
