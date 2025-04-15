@@ -75,7 +75,7 @@ Currently, natural language to script is available in environments located in th
 Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
 
 > [!NOTE]
-> If your environment is in one of the previously listed regions and you still need to see the copilot in Power Automate for desktop experience, contact your tenant administrator. They might have turned off the copilot functionality.
+> If your environment is in one of the previously listed regions and you still need to see the copilot in Power Automate for desktop experience, contact your tenant administrator.
 
 ### How to generate scripts using copilot and natural language
 
