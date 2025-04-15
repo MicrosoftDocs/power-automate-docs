@@ -97,22 +97,45 @@ Additionally, the **Run URL** lets you run the flow through various sources, suc
 
 :::image type="content" source="media/console/desktop-flow-details-properties.png" alt-text="Screenshot of the details of a desktop flow.":::
 
-## Generate flow description using Copilot (preview)
+## Generate flow description using Copilot
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Generate a flow description for flows you own or co-own by pressing a button. Copilot analyzes the flow and generates a description. This feature is also available from the flow details in make.powerautomate.com. More information: [Manage desktop flows](manage.md)
 
 > [!IMPORTANT]
 >
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - To understand the capabilities and limitations of this feature, go to [FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md).
 
-### Prerequisites
+### Availability by region
 
-- The generate flow description using Copilot functionality is available only in environments located in the United States.
-- The generate flow description using Copilot functionality is available only for users with a work or school account.
+This feature is currently available to the following regions/countries:
+
+- Generate flow description using Copilot
+  - Asia Pacific
+  - Australia
+  - Brazil
+  - Canada
+  - Europe
+  - France
+  - Germany
+  - India
+  - Japan
+  - Norway
+  - Singapore
+  - South Africa
+  - South Korea
+  - Sweden
+  - Switzerland
+  - United Arab Emirates
+  - United Kingdom
+  - United States
+
+### Availability by account type
+
+Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
+
+> [!NOTE]
+> If your environment is in a supported region, you are signed in with a work or school account, and you still can't see Copilot in the Power Automate for desktop experience, contact your Power Platform administrator.
 
 ### Use Copilot to generate the description
 

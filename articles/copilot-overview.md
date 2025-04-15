@@ -49,7 +49,7 @@ Copilot in desktop flows offers various capabilities to enhance your automation 
 - [Natural language to script powered by copilot (preview)](desktop-flows/actions-reference/scripting.md#natural-language-to-script-powered-by-copilot-preview)
 - [Repair flow automation errors (preview)](desktop-flows/repair-at-runtime.md)
 - [Use Copilot to analyze desktop flow activity (preview)](desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)
-- [Use Copilot to get answers to product-related questions](desktop-flows/copilot-in-power-automate-for-desktop.md#use-copilot-to-get-answers-to-product-related-questions-preview)
+- [Use Copilot to get answers to product-related questions](desktop-flows/copilot-in-power-automate-for-desktop.md#use-copilot-to-get-answers-to-product-related-questions)
 
 ## Copilot in automation center
 
