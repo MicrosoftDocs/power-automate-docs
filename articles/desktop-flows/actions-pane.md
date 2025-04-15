@@ -93,7 +93,7 @@ You can send feedback by selecting the thumb up or thumb down icon underneath th
 :::image type="content" source="media/pad_generative_answers/feedback_dialog1.png" alt-text="Image that shows where you can send your feedback about copilot in Power Automate for desktop.":::
 
 > [!NOTE]
-> If you can't see the dialog box, your Power Platform admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
+> If you can't see the dialog box, your Power Platform admin might have turned it off. More information: [Turn off user feedback functionality](#turn-off-user-feedback-functionality)
 
 ### Turn off user feedback functionality
 
