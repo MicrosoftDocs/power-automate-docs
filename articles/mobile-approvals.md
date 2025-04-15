@@ -40,7 +40,7 @@ To view pending requests, follow these steps.
 
     :::image type="content" source="./media/mobile-approvals/launch_power_automate.png" alt-text="Screenshot of the mobile app.":::
 
-1. On the bottom right corner, select **APPROVALS**. A list of pending approvals opens.
+1. On the bottom right corner, select **Approvals**. A list of pending approvals opens.
 
     :::image type="content" source="./media/mobile-approvals/select_approvals.jpg" alt-text="Screenshot of the 'Approvals' icon.":::
 
@@ -51,7 +51,7 @@ To view pending requests, follow these steps.
 You can approve or reject requests and leave an optional message. To do this, follow these steps.
 
 1. Navigate to **add a message along with your reply**.
-1. Select **APPROVE** or **REJECT**.
+1. Select **Approve** or **Reject**.
 
     :::image type="content" source="./media/mobile-approvals/approve_or_reject_cropped.png" alt-text="Screenshot of the 'Accept' and 'Reject' buttons and a field to enter an optional message.":::
 
@@ -61,6 +61,6 @@ You can approve or reject requests and leave an optional message. To do this, fo
 
 ## Related information
 
-[Create modern approval flows](modern-approvals.md)
+[Create and test an approval workflow](modern-approvals.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
