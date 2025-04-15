@@ -228,7 +228,7 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
 
     When your flow runs, the **Create CSV table** action displays the output shown in the following screenshot.
 
-    :::image type="content" source="./media/data-operations/create-csv-table-output-2-new-designer.png" alt-text="Screenshot of the output from the create CSV table action, showing "firstname,familyname" in the first row followed by "Eugenia,Lopez" and "Elizabeth,Moore.":::
+    :::image type="content" source="./media/data-operations/create-csv-table-output-2-new-designer.png" alt-text="Screenshot of the output from the create CSV table action, showing firstname,familyname in the first row followed by Eugenia,Lopez and Elizabeth,Moore.":::
 
 # [Classic designer](#tab/classic-designer)
 
@@ -241,7 +241,7 @@ Use the **Create CSV table - Data Operation** action to change a JSON array inpu
 
     When your flow runs, the **Create CSV table** action displays the output shown in the following screenshot.
 
-    :::image type="content" source="./media/data-operations/create-csv-table-output-2.png" alt-text="Screenshot of the output from the create CSV table action, showing "first,last" in the first row followed by "Eugenia,Lopez" and "Elizabeth,Moore.":::
+    :::image type="content" source="./media/data-operations/create-csv-table-output-2.png" alt-text="Screenshot of the output from the create CSV table action, showing first,last in the first row followed by Eugenia,Lopez and Elizabeth,Moore.":::
 
 ## Use the create HTML table action
 
