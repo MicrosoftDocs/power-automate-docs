@@ -8,8 +8,9 @@ contributors:
  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 03/03/2025
+ms.date: 04/16/2025
 ms.author: heortaol
+ms.custome: DevRelAdv
 search.audienceType: 
   - flowmaker
   - enduser
@@ -24,6 +25,10 @@ ms.collection: bap-ai-copilot
 This feature is available to tenants where Copilot is enabled. On the modern designer, you can use this functionality to create, update, or fix expression with the help of Copilot.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
+To learn how to use this feature, check out this short video:
+
+<!--insert video-->
 
 ## Open the expression editor
 
