@@ -220,7 +220,7 @@ templatesSettings?: {
 
 | Parameter |Required/Optional | Description                                                                        
 |-----------|-------------------|-----------------| 
-|`defaultParams` | Optional          | Design time parameters to use when creating a cloud flow from a template, for example: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': 'b3a5baa8-fe94-44ca-a6f0-270d9f821668'   } ```| 
+|`defaultParams` | Optional          | Design time parameters to use when creating a cloud flow from a template, for example: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': '00001111-aaaa-2222-bbbb-3333cccc4444'   } ```| 
 | `destination` | Optional          | Valid values are 'new' or 'details'. When set to 'details', a detail page is shown when creating a cloud flow from a template.     |
 | `pageSize` | Optional          | Number of templates to display. Default size = 6 | 
 | `searchTerm` | Optional          | Display templates that match the provided search term| 

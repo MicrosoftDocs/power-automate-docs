@@ -1,11 +1,11 @@
 ---
-title: Power Automate secret variables actions reference (preview)
+title: Power Automate secret variables actions reference 
 description: Discover how to use Power Automate secret variables actions to securely retrieve sensitive data. Integrate CyberArk credentials in your desktop flows.
 author: yiannismavridis
 
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 03/21/2025
+ms.date: 04/11/2025
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
@@ -18,22 +18,15 @@ ms.custom:
 - ai-seo-date:10/29/2024
 ---
 
-# Power Automate secret variables actions (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Power Automate secret variables actions
 
 In this module, you find actions that allow you to safely retrieve sensitive data that are available in your environment, offering direct integration with the corresponding components.
 
-You can securely retrieve CyberArk-based credentials and [use them in desktop flows (preview)](../create-cyberark-credential.md#use-the-credential-in-a-desktop-flow-action-preview), or retrieve Azure Key Vault-based credentials and [use them in desktop flows (preview)](../create-AzureKeyVault-credential.md#use-the-credential-in-a-desktop-flow-action-preview). The credential values are only retrieved at runtime and aren't logged. Credential type variables are enforced to be sensitive.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+You can securely retrieve CyberArk-based credentials and [use them in desktop flows](../create-cyberark-credential.md#use-the-credential-in-a-desktop-flow-action), or retrieve Azure Key Vault-based credentials and [use them in desktop flows](../create-AzureKeyVault-credential.md#use-the-credential-in-a-desktop-flow-action). The credential values are only retrieved at runtime and aren't logged. Credential type variables are enforced to be sensitive.
 
 ## <a name="getcredentialaction"></a> Get credential
 
 Retrieves the values of a credential created through Power Automate's portal page for this environment.
-
-> [!NOTE]
-> This action isn't available in sovereign clouds yet.
 
 ### Input parameters
 

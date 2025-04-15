@@ -9,25 +9,26 @@ contributors:
   - donums
   - v-aangie  
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 08/12/2024
+ms.topic: how-to
+ms.date: 04/03/2025
 ms.author: janpidych
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - flowmaker
   - enduser
+#customer intent: As a business process analyst, I want to migrate customizations of my Process Mining report from one workspace to another so that the report customizations appear where I need them.
 ---
 
 # Rebind reports using a composite model (different workspaces)
 
-To migrate customizations of your Process Mining report from one workspace to another, follow the steps in this article. Learn more about composite models in [Use composite models in Power BI Desktop](/power-bi/transform-model/desktop-composite-models) and [Customize reports in Power BI workspace](process-mining-pbi-workspace.md#customize-reports-in-power-bi-workspace).
+To migrate customizations of your Process Mining report from one workspace to another, follow the steps in this article. Learn more about composite models in [Use composite models in Power BI Desktop](/power-bi/transform-model/desktop-composite-models) and [Customize reports in Power BI workspace](process-mining-pbi-workspace.md#customize-reports-in-power-bi-workspace) or [Customize reports in Fabric workspace (preview)](process-mining-fabric-workspace.md).
 
 If you linked your process in the Test environment to a workspace (for example, WkSpace B) that's different from the one used by the process in the Dev environment (for example, WkSpace A), follow the steps in this section.
 
 ## Attach a workspace to your process
 
 [!INCLUDE[alm-attach-workspace](./includes/alm-attach-workspace.md)]
-[!INCLUDE[alm-attach-wwith-and-without](./includes/alm-attach-with-and-without.md)]
+[!INCLUDE[alm-attach-with-and-without](./includes/alm-attach-with-and-without.md)]
 
 7. Sign in to [Power BI](https://msit.powerbi.com/home).
 
@@ -37,7 +38,7 @@ Before you get started, ensure that the states of your reports, workspaces, and 
 
 The following report and its composite model are in WkSpace A. Your report can look like this, or have customizations of your choice.
 
-:::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-report-a.png" alt-text="Screenshot of Report A.":::
+:::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-report-a.png" alt-text="Report A shows a dashboard with a process map on the left, case percentages at the top, duration of cases, and other variants.":::
 
 ### State of your WkSpace A
 
@@ -110,4 +111,3 @@ To understand the distinctions between each entity, familiarize yourself with th
     The report looks like that of the composite model from **WkSpace A** with the **Self Loop** percentage in the report.
 
     :::image type="content" source="media/process-mining-alm-rebind-with-comp/self-loop-b.png" alt-text="Screenshot of the composite model with the 'Self Loop' percentage.":::
-

@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: mattp123
 ms.topic: conceptual
-ms.date: 04/01/2025
+ms.date: 04/11/2025
 ms.author: iomavrid
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
@@ -344,6 +344,18 @@ You can use the following registry entry to enforce the confirmation dialog or d
 
 - **1**: Power Automate for desktop always displays a confirmation dialog when invoking flows using a URL or desktop shortcut. Users aren't allowed to change this option through the console settings.
 - **2**: Users aren't allowed to invoke flows using a URL or desktop shortcut.
+
+## Configure Power Automate for desktop to disable the security check to run shared flows if the author is not trusted
+
+A security check does not allow users to run shared flows if they have not trusted the author. You can use the following registry entry to disable this security check.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_CURRENT_USER | SOFTWARE\Microsoft\Power Automate Desktop | DisableAskBeforeRunningASharedFlow | DWORD |
+
+***Value***
+
+- **1**: Power Automate for desktop doesn't display a dialog to confirm running a shared flow, when the author is not trusted.
 
 ## Configure Power Automate for desktop to keep the flow run details
 
