@@ -50,7 +50,7 @@ To view pending requests, follow these steps.
 
 You can approve or reject requests and leave an optional message. To do this, follow these steps.
 
-1. (Optional) Enter a message to send with your reply.
+1. (Optional) Navigate to the **Comment** field and enter a message to send with your reply.
 1. Select **Approve** or **Reject**.
 
     :::image type="content" source="./media/mobile-approvals/approve_or_reject_cropped.png" alt-text="Screenshot of the 'Accept' and 'Reject' buttons and a field to enter an optional message.":::
