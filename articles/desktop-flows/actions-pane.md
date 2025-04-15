@@ -71,7 +71,7 @@ The suggested next best action is available in environments located in the follo
 Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
 
 > [!NOTE]
-> If your environment is in a supported region, you are signed in with a work or school account, and you still can't see Copilot in the Power Automate for desktop experience, contact your Power Platform administrator. An admin can turn Copilot off or on in the Power Platform admin center.
+> If your environment is in a supported region, you are signed in with a work or school account, and you still can't see Copilot in the Power Automate for desktop experience, contact your Power Platform administrator.
 
 ### Using suggested actions in your flows
 
@@ -83,7 +83,7 @@ Once the **Suggested actions** panel appears, double-click the action that you w
 
 ### Disabling the suggested actions functionality
 
-To disable the suggested actions functionality, Power Platform admins contact Microsoft support. More information: [Get Help + Support](/power-platform/admin/get-help-support)
+To disable Copilot's suggested actions functionality, Power Platform admins can contact Microsoft support. More information: [Get Help + Support](/power-platform/admin/get-help-support)
 
 ### Help us improve this feature
 
