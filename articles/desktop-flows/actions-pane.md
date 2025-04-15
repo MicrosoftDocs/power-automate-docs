@@ -59,6 +59,7 @@ The suggested next best action is available in environments located in the follo
   - Japan
   - Norway
   - Singapore
+  - Sweden
   - South Africa
   - South Korea
   - Switzerland
