@@ -38,7 +38,7 @@ All scripting actions follow the basic structure of the respective programming o
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Natural language to script is a new Copilot capability added in Power Automate for desktop. It lets you quickly generate code used in the scripting actions by describing it. This feature is available in the following scripting actions:
+Natural language to script is a new Copilot capability added in Power Automate for desktop. It lets you quickly generate the code used in the scripting actions by just describing it in natural language. This feature is available in the following scripting actions:
 
 - **Run PowerShell**
 - **Run VBScript**
