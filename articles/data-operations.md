@@ -43,8 +43,8 @@ Use the **Data Operation - Compose** action to save yourself from having to ente
 
     :::image type="content" source="./media/data-operations/add-array-compose-2-new-designer.png" alt-text="Configure the Compose action.":::
 
-> [!TIP]
-> To make the **Compose** card easier to find later, rename it by selecting the text **Compose** on the title bar of the card and entering a name that's easy to remember.
+    > [!TIP]
+    > To make the **Compose** card easier to find later, rename it by selecting the text **Compose** on the title bar of the card and entering a name that's easy to remember.
 
 When you need to access the contents of the compose action, do so by following these steps.
 
@@ -68,8 +68,7 @@ When you need to access the contents of the compose action, do so by following t
 
     :::image type="content" source="./media/data-operations/add-array-compose-2.png" alt-text="Configure the Compose action.":::
 
-> [!TIP]
-> To make the **Compose** card easier to find later, rename it by selecting the text **Compose** on the title bar of the card and entering a name that's easy to remember.
+    To make the **Compose** card easier to find later, rename it by selecting the text **Compose** on the title bar of the card and entering a name that's easy to remember.
 
 When you need to access the contents of the compose action, do so by following these steps.
 
@@ -102,7 +101,6 @@ Use the **Data Operation - Join** action to delimit an array with the separator 
 4. After your flow runs, the output of the **Data Operation – Join** action will be a string with the addresses joined by semicolons, as shown in the following screenshot.
 
     :::image type="content" source="./media/data-operations/join-output-2-new-designer.png" alt-text="Screenshot of input of addresses separated by commas, a Join with value of semicolon, and output of those addresses separated by semicolons..":::
-
 
 # [Classic designer](#tab/classic-designer)
 
@@ -154,9 +152,7 @@ To do this:
    :::image type="complex" source="./media/data-operations/select-card-2-new-designer.png" alt-text="Configure the select action.":::
    Screenshot showing the select action. From is set to Body. In the Map section, FirstName is set to first, FamilyName is set to last, and FullName is set to first and last, separated by a space.:::image-end:::
     
-
-   > [!TIP]
-   > The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
+   The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
 
 # [Classic designer](#tab/classic-designer)
 
@@ -171,8 +167,8 @@ To do this:
    :::image type="complex" source="./media/data-operations/select-card-2.png" alt-text="Configure the select action.":::
    Screenshot showing the select action. From is set to Body. In the Map section, FirstName is set to first, FamilyName is set to last, and FullName is set to first and last, separated by a space.:::image-end:::
 
-   > [!TIP]
-   > The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
+> [!TIP]
+> The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
 
 ## Use the filter array action
 
