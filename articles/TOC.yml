@@ -878,6 +878,8 @@
       href: process-mining-transform.md
     - name: Visualize and gain insights in Power BI
       items:
+      - name: Process overview (preview)
+        href: ./minit/process-overview.md
       - name: Visualize and gain insights from processes
         href: process-mining-visualize.md
       - name: Customize a report with your own Power BI workspace
