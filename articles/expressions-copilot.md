@@ -22,7 +22,7 @@ ms.collection: bap-ai-copilot
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-This feature is available to tenants where Copilot is enabled. On the modern designer, you can use this functionality to create, update, or fix expression with the help of Copilot.
+The expression assistant is available to tenants where Copilot is enabled. On the new designer, you can use this functionality to create, update, and fix expressions with the help of Copilot.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
