@@ -1235,8 +1235,8 @@
       href: privacy-dsr-accountclose-msa.md
   - name: Power Automate US Government
     href: us-govt.md
-- name: Regions overview
-  href: regions-overview.md
+  - name: Regions overview
+    href: regions-overview.md
 - name: Common questions about Power Automate
   href: frequently-asked-questions.yml
 - name: Classic Dataverse
