@@ -19,7 +19,7 @@ search.audienceType:
 
 # Troubleshoot common issues with triggers
 
-Here are a few tips and tricks for troubleshooting issues with triggers.
+Here are some tips and tricks for troubleshooting issues with triggers.
 
 ## Identify specific flow run
 
@@ -31,9 +31,9 @@ Sometimes, you might need to [Identify specific flow runs](./fix-flow-failures.m
 
    Admins can create [data loss prevention (DLP)](/power-platform/admin/wp-data-loss-prevention) policies that can act as guardrails to help prevent users from unintentionally exposing organizational data. DLP policies enforce rules for which connectors can be used together by classifying connectors as either **Business** or **Non-Business**. If you put a connector in the **Business** group, it can only be used with other connectors from that group in any given app or flow.
 
-   If your flow violates a DLP policy, it's suspended, causing the trigger to not fire. To know if your flow is suspended, try to edit the flow and save it. The flow checker reports it if the flow violates a DLP policy. Your admin can change the DLP policy.
+   If your flow violates a DLP policy, it is suspended, causing the trigger to not fire. To know if your flow is suspended, try to edit the flow and save it. The flow checker reports it if the flow violates a DLP policy. Your admin can change the DLP policy.
 
-1. The trigger may be failing. 
+1. The trigger might be failing. 
    Follow these steps to confirm:
 
    1. Sign in to [Power Automate](https://make.powerautomate.com).
@@ -44,7 +44,7 @@ Sometimes, you might need to [Identify specific flow runs](./fix-flow-failures.m
 
    This error means that Power Automate tried multiple times to establish a connection to register the trigger and failed. Your flow won't trigger until this problem is resolved.
 
-   One of the common reasons for this failure is that the Power Automate service endpoints aren't part of the allow list. To fix it, confirm that your IT department has added these endpoints to the allow list.
+   One of the common reasons for this failure is that the Power Automate service endpoints aren't part of the allow list. To fix it, confirm that your IT department added these endpoints to the allow list.
 
    Here's the list of [IP addresses](/power-apps/limits-and-config#ip-addresses) and [domains](https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate) that need to be added to your allow list.
 
@@ -54,7 +54,7 @@ After the problem is resolved, modify the flow and then save it. You can then ch
 
 ### Verify connections
 
-With the default settings, users only need to sign in to a connection once. They can then use that connection until it's revoked by an admin. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s authentication token to expire after a specific amount of time. Token lifetime policies are configured on Microsoft Entra ID. For more information, review this [Azure article](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) or this [support article](https://support.microsoft.com/help/4467879/conditional-access-and-multi-factor-authentication-in-flow).
+With the default settings, users only need to sign in to a connection once. They can then use that connection until an admin revokes it. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s authentication token to expire after a specific amount of time. Token lifetime policies are configured on Microsoft Entra ID. For more information, review this [Azure article](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) or this [support article](https://support.microsoft.com/help/4467879/conditional-access-and-multi-factor-authentication-in-flow).
 
 Follow these steps to verify if your connections are broken:
 
@@ -95,7 +95,7 @@ If you expect the flow to run but it didn’t run, see if it shows the trigger c
 
 ### Verify inputs and trigger conditions
 
-Sometimes, the inputs and trigger conditions may cause failures. Follow these steps to verify your inputs and conditions.
+Sometimes, the inputs and trigger conditions might cause failures. Follow these steps to verify your inputs and conditions.
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
@@ -110,9 +110,9 @@ Sometimes, the inputs and trigger conditions may cause failures. Follow these st
 1. Select **Settings**.
 1. Find **Trigger conditions**.
 
-   If the field is empty, it means that there are no additional customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
+   If the field is empty, it means that there are no other customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
 
-   If there are additional customizations in **Trigger Conditions**, confirm that you're using the expected or correct inputs to trigger the flow.
+   If there are other customizations in **Trigger Conditions**, confirm that you're using the expected or correct inputs to trigger the flow.
 
     :::image type="content" source="./media/triggers-introduction/copilot-trigger-conditions.png" alt-text="Screenshot that shows trigger conditions in Copilot.":::
 
@@ -124,9 +124,9 @@ Sometimes, the inputs and trigger conditions may cause failures. Follow these st
 1. On the card, select the ellipses (**…**) > **Settings**.
 1. Find **Trigger conditions**.
 
-   If the field is empty, it means that there are no additional customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
+   If the field is empty, it means that there are no other customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
 
-   If there are additional customizations in **Trigger Conditions**, confirm that you're using the expected or correct inputs to trigger the flow.
+   If there are other customizations in **Trigger Conditions**, confirm that you're using the expected or correct inputs to trigger the flow.
 
     :::image type="content" source="./media/triggers-introduction/trigger-conditions.png" alt-text="Screenshot that shows trigger conditions.":::
 
