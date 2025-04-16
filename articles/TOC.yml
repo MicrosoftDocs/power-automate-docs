@@ -1235,6 +1235,8 @@
       href: privacy-dsr-accountclose-msa.md
   - name: Power Automate US Government
     href: us-govt.md
+  - name: Use Power Automate within the EU Data Boundary
+    href: flow-eudb.md
 - name: Reference
   items:
   - name: Regions overview
