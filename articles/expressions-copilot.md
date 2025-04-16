@@ -10,7 +10,7 @@ ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 04/16/2025
 ms.author: heortaol
-ms.custome: DevRelAdv
+ms.custom: DevRelAdv
 search.audienceType: 
   - flowmaker
   - enduser
@@ -26,9 +26,9 @@ This feature is available to tenants where Copilot is enabled. On the modern des
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-To learn how to use this feature, check out this short video:
-
-<!--insert video-->
+To learn how to create an expression with Copilot, check out this short video:<br/>
+<br/>
+> [!VIDEO 403ad290-5271-42d3-ba4c-e5bb3c5629c8]
 
 ## Open the expression editor
 
@@ -47,7 +47,7 @@ Use Copilot to create an expression with natural language.
     The user experience that displays is the user experience for expression assistant.
 1. In the text box, write a prompt to generate an expression for, and select **Create expression**.
 
-    You can reference the flow’s dynamic content in your prompt using their names to build expressions around. For example, assume you have first name, last name, phone number, and TriggerDate as dynamic data in your flow. You can ask following sample prompts:
+    You can reference the flow's dynamic content in your prompt using their names to build expressions around. For example, assume you have first name, last name, phone number, and TriggerDate as dynamic data in your flow. You can ask following sample prompts:
 
     - Concatenate first name and last name.
     - Grab last four characters of Phone Number.
