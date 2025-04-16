@@ -54,7 +54,7 @@ After the problem is resolved, modify the flow and then save it. You can then ch
 
 ### Verify connections
 
-With the default settings, users only need to sign in to a connection once. They can then use that connection until an admin revokes it. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s authentication token to expire after a specific amount of time. Token lifetime policies are configured on Microsoft Entra ID. For more information, review this [Azure article](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) or this [support article](https://support.microsoft.com/help/4467879/conditional-access-and-multi-factor-authentication-in-flow).
+With the default settings, users only need to sign in to a connection once. They can then use that connection until an admin revokes it. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s authentication token to expire after a specific amount of time. Token lifetime policies are configured on Microsoft Entra ID. For more information, review this [Azure article](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
 
 Follow these steps to verify if your connections are broken:
 
