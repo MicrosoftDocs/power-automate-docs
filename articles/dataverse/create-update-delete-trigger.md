@@ -139,10 +139,6 @@ To access the advanced parameters, select **Show all** in the **Advanced paramet
 
 :::image type="content" source="../media/create-update-delete-trigger/advanced-ai-new-designer.png" alt-text="Screenshot of the advanced parameters.":::
 
-## Filter conditions
-
-Use filter conditions to set conditions for when to trigger flows.
-
 ### Wait condition using delay until
 
 Use an OData-style time stamp in the **Delay until** property to delay the flow trigger until a specific UTC time.
@@ -154,8 +150,6 @@ The key benefit of using the Dataverse **Delay until** property instead of the s
 The flow owner must have the Microsoft Dataverse privilege **Act on Behalf of Another User** (prvActOnBehalfOfAnotherUser). The **Delegate** security role includes this privilege by default. You can enable it on any security role. Learn more in [Impersonate another user](/powerapps/developer/common-data-service/impersonate-another-user).
 
 When you create flows with the **When a row is added, modified or deleted** trigger, you can set each Microsoft Dataverse action in the flow to be performed using the context of a user, other than the flow owner.
-
-To impersonate a user, follow these steps:
 
 For each Dataverse action you want to run as a different user, select an option in the **Run as** dropdown menu.
 
