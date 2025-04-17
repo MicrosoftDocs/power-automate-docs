@@ -5,7 +5,7 @@ suite: flow
 author: kisubedi
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 04/15/2025
+ms.date: 04/17/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -17,13 +17,24 @@ search.audienceType:
 
 In this article, you learn about some common data operations in Power Automate, such as compose, join, select, filter arrays, create tables, and parse JSON. Use these operations to manipulate data when you create flows.
 
->[!NOTE]
->The different sections in this article aren't related and aren't dependent upon each other. The different sections use different examples.
+The different sections in this article aren't related and aren't dependent upon each other. The different sections use different examples.
 
-Here's a quick video about data operations.
+The look and feel of your designer might look different from the screenshots in this article depending on the designer version you're using. The screenshots use the new designer, but the steps are similar in the classic designer.
+
+> [!NOTE]
+> Here are some visual cues that tell you that you're using the new cloud flows designer (not the classic designer):
+>
+> - The cards in the flow are small.
+> - The standalone action configuration pane appears on the left when you select a card.
+>
+> More information: [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer)
+
+If you're using the classic designer, you can switch to the new designer by selecting **New designer** in the top-right corner of the screen.
+
+<!--Here's a quick video about data operations.
 
 >[!VIDEO https://learn-video.azurefd.net/vod/player?id=4eb588b9-6468-4e0f-b07b-8af41f31f6ea]
-
+-->
 ## Prerequisites
 
 - Access to [Power Automate](https://make.powerautomate.com).
@@ -32,10 +43,6 @@ Here's a quick video about data operations.
 ## Use the compose action
 
 Use the **Data Operation - Compose** action to save yourself from having to enter the same data multiple times as you're designing a cloud flow. In this example, you need to enter an array of digits&mdash;`[0,1,2,3,4,5,6,7,8,9]`&mdash;several times while you design your flow. You can use the compose action to save the array, as described in the following procedure.
-
-> [!NOTE]
-> The look and feel of the designer may vary depending on the version of Power Automate you're using. The screenshots in this article are from the new designer, but the steps are similar in the classic designer.
-> If you're using the classic designer, you can switch to the new designer by selecting **New designer** in the top-right corner of the screen.
 
 1. Search for **compose**, and then select the **Compose** action under **Data Operation**.
 
@@ -111,7 +118,7 @@ To do this:
    Screenshot showing the select action. The From field is set to Body. In the Map section, FirstName is set to first, FamilyName is set to last, and FullName is set to first and last, separated by a space.:::image-end:::
     
    > [!TIP]
-   > The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed earlier.
+   > The output from the select action is an array that contains the newly shaped objects. You can then use this array in any other action, such as the compose action discussed previously.
 
 ## Use the filter array action
 
@@ -131,7 +138,7 @@ In this example, you use the filter array action on this array:
 This example creates a new array that contains only objects in which `first` is set to `Eugenia`.
 
 1. Find, and then add, the **Filter array** action to your flow.
-1. Configure the filter array action as shown in the following screenshot.
+1. In the **Filter Query** section, configure the filter array action. Following the example in this section, select `first` > **is equal to** > **Eugenia**.
 
     :::image type="content" source="./media/data-operations/add-configure-filter-array-2-new-designer.png" alt-text="Screenshot of in the From section, the first line is set to Body. In the second line, first is set equal to Eugenia.":::
 
