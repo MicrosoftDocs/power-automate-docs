@@ -151,7 +151,7 @@ The flow owner must have the Microsoft Dataverse privilege **Act on Behalf of A
 
 When you create flows with the **When a row is added, modified or deleted** trigger, you can set each Microsoft Dataverse action in the flow to be performed using the context of a user, other than the flow owner.
 
-For each Dataverse action you want to run as a different user, select an option in the **Run as** dropdown menu.
+To impersonate a user, follow these steps. For each Dataverse action you want to run as a different user, select an option in the **Run as** dropdown menu.
 
 For the steps where it isn't selected, the default user is assumed. This calls the underlying APIs based on the selected user, not the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
 
@@ -225,70 +225,6 @@ Here are the other options:
 - **Modifying user**: The user who acted on the Microsoft Dataverse row, triggering or modifying the flow.
 
 ---
-
-<!--## Filter conditions
-
-Use filter conditions to set conditions for when to trigger flows.
-
-### Filter columns
-
-Use the **Select columns** box to define the specific columns of the row that should cause the flow to run when included in the request, as a comma-separated list of unique column names. Only include columns with changed values in update requests. The flow runs when the values included are the same as existing values.
-
-This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
-
-This property isn't supported on virtual tables.
-
-### Filter expression
-
-The filter expression provides a way for you to define an OData style filter expression to help you to define the trigger conditions even more precisely. The flow runs only when the expression evaluates to *true* after the change is saved in Dataverse. In the following examples, the flow triggers when `firstname` is updated to *John*.
-
-Examples for **Filter rows**:
-
-`firstname eq 'John'`
-
-`contains(firstname,'John')`
-
-Learn more in [standard filter operators](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-filter-operators)
-and [query functions](/powerapps/developer/common-data-service/webapi/query-data-web-api#standard-query-functions).
-
-Unlike the examples in the reference links, your expression must not contain the string **$filter=**. This string applies only when you use the APIs directly.
-
-### Wait condition using delay until
-
-Use an OData-style time stamp in the **Delay until** property to delay the flow trigger until a specific UTC time.
-
-The key benefit of using the Dataverse **Delay until** property instead of the standard **Delay until** *action* is the Dataverse **Delay until** property never expires, allowing the flow run to wait for long periods of time.
-
-### User impersonation using Run As
-
-The flow owner must have the Microsoft Dataverse privilege **Act on Behalf of Another User** (prvActOnBehalfOfAnotherUser). The **Delegate** security role includes this privilege by default. You can enable it on any security role. Learn more in [Impersonate another user](/powerapps/developer/common-data-service/impersonate-another-user).
-
-When you create flows with the **When a row is added, modified or deleted** trigger, you can set each Microsoft Dataverse action in the flow to be performed using the context of a user, other than the flow owner.
-
-To impersonate a user, follow these steps:
-
-# [New designer](#tab/new-designer)
-
-For each Dataverse action you want to run as a different user, select an option in the **Run as** dropdown menu.
-
-For the steps where it isn't selected, the default user is assumed. This calls the underlying APIs based on the selected user, not the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
-
-# [Classic designer](#tab/classic-designer)
-
-1. In the designer, select a value for **Run as** to specify which user's context Microsoft Dataverse uses for subsequent Dataverse actions.
-1. For each Dataverse action you want to run as a different user, select the ellipses (**...**) in the upper-right corner, and then select **Use invoker’s connection**.
-
-For the steps where it isn't selected, the default user is assumed. This calls the underlying APIs based on the selected user, not the flow owner. If nothing is specified, it defaults to the flow owner who created the flow&mdash;essentially, the author.
-
----
-
-Here are the other options:
-
-- **Flow owner**: The user who created the flow.
-
-- **Row owner**: The user who owns the Microsoft Dataverse row that changes, triggering the flow. If a team owns a row, this option defaults to running as the flow owner.
-
-- **Modifying user**: The user who acted on the Microsoft Dataverse row, triggering or modifying the flow.-->
 
 Additionally, instant flows allow running the steps of any other [connector](/connectors/) such as [Microsoft Teams](/connectors/teams/), [Microsoft 365 Outlook](/connectors/office365/), or [SharePoint](/connectors/sharepointonline/) in the same flow using the invoker’s connection. To do so, follow these steps:
 
