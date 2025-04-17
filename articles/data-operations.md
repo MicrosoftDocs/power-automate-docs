@@ -59,7 +59,7 @@ When you need to access the contents of the compose action, do so by following t
 
 1. Add an action, such as **Data Operation - Join**.
 
-1. Select the control to which you'd like to add the contents you saved in the compose action.
+1. Select the control where you want to add the contents saved in the compose action.
 
    The **Add dynamic content from the apps and connectors used in this flow** screen opens.
 
@@ -81,7 +81,7 @@ Use the **Data Operation - Join** action to delimit an array with the separator 
 
 3. Save your flow, and then run it.
 
-4. After your flow runs, the output of the **Data Operation – Join** action will be a string with the addresses joined by semicolons, as shown in the following screenshot.
+4. After your flow runs, the output of the **Data Operation – Join** action is a string with the addresses joined by semicolons, as shown in the following screenshot.
 
     :::image type="content" source="./media/data-operations/join-output-2-new-designer.png" alt-text="Screenshot of input of addresses separated by commas, a Join with value of semicolon, and output of those addresses separated by semicolons.":::
 
@@ -135,7 +135,7 @@ In this example, you use the filter array action on this array:
 [ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]
 ```
 
-This example creates a new array that contains only objects in which `first` is set to `Eugenia`.
+This example creates a new array containing only objects where `first` is set to **Eugenia**.
 
 1. Find, and then add, the **Filter array** action to your flow.
 1. In the **Filter Query** section, configure the filter array action. Following the example in this section, select `first` > **is equal to** > **Eugenia**.
