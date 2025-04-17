@@ -34,11 +34,11 @@ All scripting actions follow the basic structure of the respective programming o
 > [!NOTE]
 > Supported version for **C#:** v 5.0. For **VB.NET**: v 11.0
 
-## Natural language to script powered by copilot (preview)
+## Natural language to script powered by Copilot (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Natural language to code is a new copilot capability added in Power Automate for desktop. It lets you quickly generate code used in the scripting actions by describing it. This feature is available in the following scripting actions:
+Natural language to script is a new Copilot capability added in Power Automate for desktop. It lets you quickly generate the code used in the scripting actions by just describing it in natural language. This feature is available in the following scripting actions:
 
 - **Run PowerShell**
 - **Run VBScript**
@@ -50,14 +50,32 @@ Natural language to code is a new copilot capability added in Power Automate for
 
 ### Availability by region
 
-Currently, copilot in Power Automate for desktop is only available in environments located in the United States.
-
+Currently, natural language to script is available in environments located in the following regions/countries:
+  - Asia Pacific
+  - Australia
+  - Brazil
+  - Canada
+  - Europe
+  - France
+  - Germany
+  - India
+  - Japan
+  - Norway
+  - Singapore
+  - South Africa
+  - South Korea
+  - Sweden
+  - Switzerland
+  - United Arab Emirates
+  - United Kingdom
+  - United States
+    
 ### Availability by account type
 
-Currently, copilot in Power Automate for desktop is only available for users with a work or school account.
+Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
 
 > [!NOTE]
-> If your environment is in one of the previously listed regions and you still need to see the copilot in Power Automate for desktop experience, contact your tenant administrator. They might have turned off the copilot functionality.
+> If your environment is in one of the previously listed regions and you still need to see the copilot in Power Automate for desktop experience, contact your tenant administrator.
 
 ### How to generate scripts using copilot and natural language
 

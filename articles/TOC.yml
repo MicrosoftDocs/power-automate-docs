@@ -117,7 +117,7 @@
         href: fix-flow-failures.md
       - name: Find and fix errors with the error checker
         href: error-checker.md
-    - name: Automated flows
+    - name: Automated cloud flows
       items:
       - name: Create a cloud flow from a template
         href: get-started-logic-template.md
@@ -131,7 +131,7 @@
         href: odata-filters.md
       - name: Run your flows with bttns
         href: bttn-button-flows.md
-    - name: Scheduled flows
+    - name: Scheduled cloud flows
       items:
       - name: Run a cloud flow on a schedule
         href: run-scheduled-tasks.md
@@ -815,7 +815,7 @@
       href: ./desktop-flows/actions-reference/cloudconnectors.md
     - name: SAP automation
       href: ./desktop-flows/actions-reference/sap.md
-    - name: Power Automate secret variables actions (preview)
+    - name: Power Automate secret variables actions
       href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
   - name: Troubleshoot desktop flows runtime
     href: ./desktop-flows/troubleshoot.md
@@ -876,6 +876,8 @@
       href: process-mining-transform.md
     - name: Visualize and gain insights in Power BI
       items:
+      - name: Process overview (preview)
+        href: ./minit/process-overview.md
       - name: Visualize and gain insights from processes
         href: process-mining-visualize.md
       - name: Customize a report with your own Power BI workspace
