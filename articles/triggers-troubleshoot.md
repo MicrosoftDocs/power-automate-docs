@@ -247,7 +247,7 @@ If it's taking much longer than expected for your flow to trigger, here are the 
 
    You can check the [Power Automate analytics](./admin-analytics-report.md) to learn more about your flows.
 
-   If your flow is frequently throttled, redesign your flow to use fewer actions. Learn more about [plan limits and tips to optimize flows to use fewer actions](https://support.microsoft.com/help/4531688/troubleshooting-slow-running-flows).
+   If your flow is frequently throttled, redesign your flow to use fewer actions. Learn more in [Understand platform limits and avoid throttling](guidance/coding-guidelines/understand-limits.md).
 
    Additional tips:
 
