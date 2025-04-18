@@ -9,7 +9,7 @@ ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 07/27/2023
 ms.custom: bap-template
-ms.author: heortaol
+ms.author: michalrosik
 ms.reviewer: angieandrews
 ---
 

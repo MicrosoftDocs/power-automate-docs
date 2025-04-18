@@ -9,7 +9,7 @@ contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-ms.author: heortaol
+ms.author: matow
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual

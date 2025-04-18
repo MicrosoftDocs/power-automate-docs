@@ -7,7 +7,7 @@ contributors:
   - matow
   - hamenon-ms
   - v-aangie
-ms.author: matow
+ms.author: ralinga
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
