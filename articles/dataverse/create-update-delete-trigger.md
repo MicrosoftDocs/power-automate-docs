@@ -4,12 +4,13 @@ description: Learn how to trigger flows by using the When a row is added, modifi
 suite: flow
 author: radioblazer
 contributors:
+  - HeatherOrt
   - radioblazer
   - v-aangie
 ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: conceptual
-ms.date: 04/17/2025
+ms.date: 04/18/2025
 ms.collection: bap-ai-copilot
 search.app: 
   - Flow
@@ -40,7 +41,7 @@ The following information is required to use the **When a row is added, modified
 
 In your flow, select the card for the **When a row is added, modified or deleted** trigger. A pane opens on the left with the **Parameters** tab selected.
 
-:::image type="content" source="../media/create-update-delete-trigger/trigger-ai-new-designer-old.png" alt-text="Screenshot of the Parameters tab.":::
+:::image type="content" source="../media/create-update-delete-trigger/trigger-ai-new-designer-old.png" alt-text="Screenshot of the 'Parameters' tab.":::
 
 ## Trigger condition
 
@@ -162,7 +163,6 @@ Here are the other options:
 - **Row owner**: The user who owns the Microsoft Dataverse row that changes, triggering the flow. If a team owns a row, this option defaults to running as the flow owner.
 
 - **Modifying user**: The user who acted on the Microsoft Dataverse row, triggering or modifying the flow.
-
 
 # [Classic designer](#tab/classic-designer)
 
