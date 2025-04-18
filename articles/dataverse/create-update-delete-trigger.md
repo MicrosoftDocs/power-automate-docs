@@ -27,7 +27,9 @@ The **When a row is added, modified or deleted** trigger runs a flow whenever a 
 
 - To create a flow that triggers when you create, modify, or delete a row, you must have user-level permissions for create, read, write, and delete on the **Callback Registration** table.
 
-- Additionally, depending on the scopes defined in the flow, you might need at least that level of read on the same table. You can get more information about [Environment security](/power-platform/admin/database-security).
+- Depending on the scopes defined in the flow, you might need at least that level of read on the same table. Learn more in [Environment security](/power-platform/admin/database-security).
+
+## Set parameters for your trigger
 
 The following information is required to use the **When a row is added, modified or deleted** trigger.
 
