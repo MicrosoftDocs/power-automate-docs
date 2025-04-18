@@ -33,21 +33,21 @@ The references in this section use fictitious names. These names are for demonst
 - **Report B**: Name of the Power BI report for the process in Test environment.
 
 > [!NOTE]
-> Typically, you perform ALM for the Power BI report after you have performed ALM for the other resources of the process using solutions.
+> Typically, you perform ALM for the Power BI report after you perform ALM for the other resources of the process using solutions.
 
 The procedures in the **Migrate customized Process Mining Power BI reports** section assume you already completed these tasks:
 
-- You attached a Power BI or Fabric workspace to your process in your Dev environment.
-- [You performed ALM on other process mining artifacts using solutions](process-mining-alm-entities-solutions.md).
-- You made the Power BI report customizations that you want to migrate. If you didn't do this task, take the following steps:
+- Attached a Power BI or Fabric workspace to your process in your Dev environment.
+- Performed ALM on other process mining artifacts using solutions. Learn more in [Migrate ALM process mining entities with Power Platform solutions](process-mining-alm-entities-solutions.md).
+- Created the Power BI report customizations that you want to migrate. If you didn't do this task, take the following steps:
 
   1. Go to the report page of your process in Power Automate.
-  1. From the command bar, select **Open in Power BI**.
+  1. Select **Open in Power BI** from the command bar.
   1. Make the changes you want to migrate and *save* and *publish* the report.
 
 You can transfer the Power BI reports in three ways:
 
-- Rebind without a using a composite model.
+- Rebind without using a composite model.
 
   - [With two different workspaces](process-mining-alm-rebind-without-comp-diff-wkspace.md)
   - [With the same workspace](process-mining-alm-rebind-without-comp-same-wkspace.md)
