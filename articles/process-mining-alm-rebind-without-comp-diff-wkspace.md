@@ -21,7 +21,7 @@ search.audienceType:
 
 # Rebind reports without using a composite model (different workspaces)
 
-If your process in the Test environment is connected to a different workspace (for example, WkSpace B) than the one used in the Development environment (for example, WkSpace A), follow the guidance in this article.
+If your process in the Test environment is connected to a different workspace (for example, WkSpace B) than the one used in the Development environment (for example, WkSpace A), follow the steps in this article.
 
 ## Attach a workspace to your process
 
@@ -46,8 +46,8 @@ Take these steps to rebind the Power BI report:
 
     :::image type="content" source="media/process-mining-alm-rebind-without-comp/semantic-model.png" alt-text="Screenshot of rebinding your process after you download, edit, and connect your model.":::
 
-1. Select **Save** from the command bar to save the report.
-1. Select **Publish** from the command bar to publish the report. 
+1. From the command bar, select **Save** to save the report.
+1. From the command bar, select **Publish** to publish the report. 
 1. Select your **WkSpace B** > **Select** from the **Publish to Power BI** menu.
 
     A message that says **Replacing report** appears because you retained the report name.
