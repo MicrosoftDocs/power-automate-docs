@@ -4,7 +4,7 @@ description: Learn about Assets library in Power Automate for desktop.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 01/31/2025
+ms.date: 04/11/2025
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors:
@@ -62,7 +62,7 @@ If at least one operation from a connector is used in the flow, that connector i
 ### Known limitations
 
 - When you manually add a new connector to a flow, there's currently no option to remove it through the assets library. If you save and reopen the flow designer without using any actions from a connector, the unused connector is automatically removed. This isn't the case for the cloud connectors that were introduced before the Connectors tab in the Assets library, as those connectors are permanently visible in the actions pane of the designer and can't be removed.
-- The SFTP and YouTube connectors can't currently be added in the actions pane through the assets library.
+- The SFTP connector can't currently be added in the actions pane, even if selected through the assets library.
 
 ## Related information
 

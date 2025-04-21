@@ -1,23 +1,27 @@
 ---
 title: Troubleshoot a cloud flow
 description: Learn how to resolve some of the most common reasons why flows fail.
-services: ''
 suite: flow
 author: DBEKI
+contributors:
+  - HeaterOrt
+  - DBEKI
+  - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 04/01/2025
-ms.author: dbekirop
+ms.date: 04/16/2025
+ms.author: heortaol
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
-ms.collection: bap-ai-copilot 
+ms.collection: bap-ai-copilot
+ms.custom: DevRelAdv
 ---
 
 # Troubleshoot a cloud flow
 
-This article contains tips and tricks for troubleshooting cloud flows.
+This article contains tips and tricks for troubleshooting cloud flows. With the new designer, you can easily find and fix errors using Copilot. Check out the video in this article in the [Troubleshoot in Copilot](#troubleshoot-in-copilot) section.
 
 ## Identify specific flow runs
 
@@ -90,12 +94,17 @@ In many cases, flows fail because of an authentication error. If you have this t
 
 ## Troubleshoot in Copilot
 
-The new troubleshoot in Copilot feature in Power Automate can assist you in identifying and resolving errors that might occur during the testing of cloud flows or when reviewing flow run history. You can use this Copilot feature when the new designer experience is enabled.
+The troubleshoot in Copilot feature in Power Automate can assist you in identifying and resolving errors that might occur during the testing of cloud flows or when reviewing flow run history. You can use this Copilot feature when the new designer experience is enabled.
 
-Troubleshooting in Copilot provides a human-readable summary of the error and, when possible, attempts to provide a solution to correct the error. This can greatly enhance your experience by reducing the time and effort required to troubleshoot and resolve issues.
+Learn how to troubleshoot cloud flow errors with Copilot in this quick video:</br>
+</br>
+
+> [!VIDEO 040bad79-4775-4fd7-90d9-bc13368d0473]
+
+The troubleshoot in Copilot feature provides a human-readable summary of the error and, when possible, attempts to provide a solution to correct the error. This can greatly enhance your experience by reducing the time and effort required to troubleshoot and resolve issues.
 
 > [!NOTE]
-> The troubleshooting in Copilot feature might not work in all scenarios. The good news is, it’s continuously learning and improving over time, which means its ability to assist users and resolve issues only gets better. This is a great example of how AI and machine learning can be leveraged to improve your experience and productivity.
+> The troubleshoot in Copilot feature might not work in all scenarios. It’s continuously learning and improving over time, which means its ability to assist users and resolve issues only gets better. This is a great example of how AI and machine learning can be leveraged to improve your experience and productivity.
 
 :::image type="content" source="./media/fix-flow-failures/troubleshoot-copilot.png" alt-text="Screenshot of a troubleshooting in Copilot suggestion for fixing a failed flow run.":::
 
