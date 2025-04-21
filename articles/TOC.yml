@@ -24,8 +24,12 @@
           href: get-started-with-copilot.md
         - name: Explore the cloud flows designer
           href: flows-designer.md
-        - name: Get started with triggers
-          href: triggers-introduction.md
+        - name: Start a cloud flow with a trigger
+          items:
+          - name: Get started with triggers
+            href: triggers-introduction.md
+          - name: Troubleshoot common issues with triggers
+            href: triggers-troubleshoot.md
         - name: Get help from the Microsoft Copilot Studio bot
           href: contextual-help-bot.md
     - name: How to
@@ -108,8 +112,6 @@
             href: /power-platform/admin/app-insights-cloud-flow.md
     - name: Troubleshoot
       items:
-      - name: Troubleshoot common issues with triggers
-        href: triggers-troubleshoot.md
       - name: Watch a cloud flow
         href: see-a-flow-run.md
         displayName: Monitor flow activity on mobile devices
