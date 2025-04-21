@@ -35,7 +35,7 @@ Take these steps to attach a workspace to your process:
 Take these steps to rebind the Power BI report:
 
 1. Sign in to [Power BI](https://msit.powerbi.com/).
-1. Select **Workspaces** > your **WkSpace A** from the left navigation pane.
+1. From the left navigation pane, select **Workspaces** > your **WkSpace A**.
 1. In your **WkSpace A**, select your **Report A**.
 1. To download the report, select **File** from the command bar > **Download this file** > **"A copy of your report with a live connection…"** > **Download**.
 1. Open the downloaded report in Power BI for desktop.
