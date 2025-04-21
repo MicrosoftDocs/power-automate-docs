@@ -48,7 +48,7 @@ Take these steps to rebind the Power BI report:
 
 1. From the command bar, select **Save** to save the report.
 1. From the command bar, select **Publish** to publish the report. 
-1. Select your **WkSpace B** > **Select** from the **Publish to Power BI** menu.
+1. From the **Publish to Power BI** menu, select your **WkSpace B** > **Select**.
 
     A message that says **Replacing report** appears because you retained the report name.
 
