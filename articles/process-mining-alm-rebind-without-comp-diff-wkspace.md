@@ -1,5 +1,5 @@
 ---
-title: Rebind reports without using a composite model—different workspaces
+title: Rebind reports without using a composite model (different workspaces)
 description: Learn how to rebind reports without using a composite model if you linked your process to different workspaces.
 author: janPidych
 contributors:
