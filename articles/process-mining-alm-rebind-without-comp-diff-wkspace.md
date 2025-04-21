@@ -54,7 +54,7 @@ Take these steps to rebind the Power BI report:
 
 1. Select **Replace** to overwrite the old report in WkSpace B. This action overwrites the existing report with an updated version that incorporates the new customizations. It also preserves the original report name for consistency.
 
-    :::image type="content" source="media/process-mining-alm-rebind-without-comp/replacing-report.png" alt-text="Screenshot showing how one should replace a report.":::
+    :::image type="content" source="media/process-mining-alm-rebind-without-comp/replacing-report.png" alt-text="Screenshot showing how to replace a report.":::
 
 1. When this process completes, return to Power BI and open **WkSpace B**.
 
