@@ -21,7 +21,7 @@ search.audienceType:
 
 # Rebind reports using a composite model (same workspace)
 
-If you linked your process in your Test environment to a workspace (for example, WkSpace B) that's the same as the one used for the process in your Dev environment (for example, WkSpace A), follow the steps in this article.
+If your process in the Test environment is connected to the same workspace (for example, WkSpace B) as the one in your Dev environment (for example, WkSpace A), follow the steps in this article.
 
 ## Attach a workspace to your process
 
@@ -30,13 +30,13 @@ Take these steps to attach a workspace to your process:
 [!INCLUDE[alm-attach-workspace](./includes/alm-attach-workspace.md)]
 
 4. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 7.
-1. Select the type of workspace to be used - Power BI workspace or Fabric workspace
-    1. The dialog informs you whether you originally exported the process to Power BI or Fabric workspace
-    2. Select the same type of workspace
-    3. Select **Continue**
+1. Select the type of workspace to be used—Power BI workspace or Fabric workspace
+    1. The dialog informs you whether you originally exported the process to Power BI or Fabric workspace.
+    2. Select the same type of workspace.
+    3. Select **Continue**.
 1. Select the same workspace for this process by following these steps:
-    1. For Power BI workspace - in the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
-    1. For Fabric workspace - in the **Fabric workspace** dropdown menu, select the *same workspace*, in the **Lakehouse** dropdown menu select the same destination Lakehouse.
+    1. For Power BI workspace—in the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
+    1. For Fabric workspace—in the **Fabric workspace** dropdown menu, select the *same workspace*, in the **Lakehouse** dropdown menu select the same destination Lakehouse.
     1. In the **Report Name** field, enter a *different report name* from your previous report name.
 
         > [!IMPORTANT]
@@ -79,7 +79,7 @@ The numbering corresponds with the numbering of entities in the following screen
 
 There are three (3) entities titled 'Report A'. You can differentiate them using their icons and their **Refreshed** timestamps:
 
-- The icon with the yellow bars represents the reports and the other icon is that of the composite model or semantic model.
+- The icon with yellow bars represents the reports and the other icon is that of the composite model or semantic model.
 - The report with the same **Refreshed** timestamp as the composite model is the report of the composite model.
 
     :::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-a-same.png" alt-text="Highlights a report showing entities and refreshed timestamps.":::

@@ -23,7 +23,7 @@ search.audienceType:
 
 The rebind method you choose depends on whether your two processes are using two different workspaces or the same workspace.
 
-The references in this section use fictitious names. These names are for demonstration purposes and you should use names that suit your preferences. As you go through the procedures, select your own environments and workspaces that correspond to these references.
+The references in this section use fictitious names. These names are for demonstration purposes. You should use names that suit your business needs. As you go through the procedures, select your own environments and workspaces that correspond to these references.
 
 - **Dev environment**: Environment *from which* you want to migrate process mining artifacts.
 - **Test environment**: Environment *to which* you want to migrate process mining artifacts.
