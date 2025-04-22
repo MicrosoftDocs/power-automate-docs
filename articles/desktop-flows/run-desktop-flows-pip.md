@@ -4,7 +4,7 @@ description: Learn how to run desktop flows in picture-in-picture mode.
 author: nikosmoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 09/30/2024
+ms.date: 04/22/2025
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -142,10 +142,9 @@ When set to **Custom**, you can enter a custom user data folder to be used by th
 - The default timeout to start a process in a picture-in-picture is 120 seconds. If the sign in takes longer than that, a timeout error is thrown.
 - Picture-in-picture asks for credentials every time it starts in case the following Windows policy is set to *Disabled*:
   - `Local Group Policy\Computer Configuration\Administrative Templates\System\Credential Delegation\Allow delegating default credentials`
-  - Note that certain Windows policies and configurations may not allow picture-in-picture to auto connect without asking for credentials. As a workaround we suggest to not close the picture-in-picture session after every flow run and use the same session for consecutive flow runs, thus not needing to enter credentials every time. Asking for credentials is an expected behavior of picture-in-picture and it abides to the local security policies of the machine.
-- In case the picture-in-picture functionality does not work, a troubleshooting step should be to make sure you are able to use Remote Desktop to connect both to the machine that runs PAD from another machine and from the local machine to other machines.
-- It has been identified that several issues are shown when several VPN Clients are used in a Picture-in-Picture session. The issues identified so far are related with sign out of apps and the VPN clients identified so far related to such issues are the below:
-    - Zscaler
+  - Certain Windows policies and configurations might not let picture-in-picture automatically connect without asking for credentials. To work around this issue, don't close the picture-in-picture session after every flow run. Use the same session for consecutive flow runs to avoid entering credentials every time. Asking for credentials is expected behavior for picture-in-picture and complies with the local security policies of the machine.
+- If the picture-in-picture functionality doesn't work, troubleshoot by checking whether you can use Remote Desktop to connect to the machine running Power Automate for desktop from another machine and connect from the local machine to other machines.
+- Issues might occur when several VPN clients are used in a picture-in-picture session. The identified issues are related to app sign out, and the VPN client identified so far is Zscaler.
 - If smartcard is used to sign in to Windows, the following policy should be set to *Not Configured* or *Disabled*:
   - `Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection\Do not allow smart card device redirection`
 
