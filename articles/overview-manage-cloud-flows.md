@@ -20,6 +20,10 @@ search.audienceType:
 
 Each flow contains a details screen where you can manage the selected flow. This screen shows you the name of the flow, its description, the owner, when it was created, the type of flow (automated, instant, or scheduled), the connections used, and more.
 
+Check out this short video for an overview of cloud flow management.<br/><br/>
+
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=354cdd1a-a7a7-4d2c-9517-ca49184b9e3f]
+
 To learn more about how you can manage your cloud flows, select the following articles:
 
 - [Edit and test updates](error-checker.md)
