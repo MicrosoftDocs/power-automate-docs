@@ -13,7 +13,9 @@ ms.topic: conceptual
 
 # Hosted Process capacity utilization
 
-The **Hosted Process capacity utilization page** provides you with insights into how your Hosted Process (previously Power Automate hosted RPA add-on) capacity is being used within your environment. As a reminder, within the Power Automate platform each Hosted Process capacity is based on a purchased [Hosted Process license](/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on). It's [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows you to [run desktop flows with zero infrastructure](hosted-rpa-overview.md).
+[!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
+
+The Hosted Process capacity utilization page provides insight into how your Hosted Process (previously Power Automate Hosted RPA add-on) capacity is being used within your environment. As a reminder, within the Power Automate platform, each Hosted Process capacity is based on a purchased [Hosted Process license](/power-platform/admin/power-automate-licensing/add-ons#hosted-rpa-add-on). It's [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) and allows you to [run desktop flows with zero infrastructure](hosted-rpa-overview.md).
 
 A Hosted Process capacity can be allocated to a hosted machine or committed to a hosted machine group.
 
