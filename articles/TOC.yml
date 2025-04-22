@@ -1269,14 +1269,44 @@
       href: replace-dialogs.md
 - name: Resources
   items:
-  - name: Microsoft Credentials for Power Platform
-    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl
+  - name: Limits and configuration
+    href: limits-and-config.md
+  - name: Frequently asked questions
+    href: frequently-asked-questions.yml
+  - name: Classic Dataverse
+    items:
+    - name: Classic Dataverse workflows
+      items:
+      - name: Overview
+        href: workflow-processes.md
+      - name: Configure background workflow stages and steps
+        href: configure-workflow-steps.md
+      - name: Monitor and manage background workflow processes
+        href: monitor-manage-processes.md
+      - name: Best practices for background workflow processes
+        href: best-practices-workflow-processes.md
+      - name: Replace background workflows with flows
+        href: replace-workflows-with-flows.md
+    - name: Classic Dataverse task flows
+      items:
+      - name: Create mobile task flows
+        href: create-mobile-task-flow.md
+    - name: Classic Dataverse dialogs
+      items:
+      - name: Use classic Dataverse dialogs
+        href: use-cds-for-apps-dialogs.md
+      - name: Replace classic Dataverse dialogs
+        href: replace-dialogs.md
+- name: Find help and support
+  items:
+  - name: Get online help
+    href: self-help.md
   - name: Blog
     href: https://make.powerautomate.com/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-  - name: Support
-    href: https://make.powerautomate.com/support/
+  - name: Learn new Power Platform skills
+    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl    
 - name: Responsible AI
   items:
   - name: Overview
