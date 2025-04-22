@@ -24,8 +24,12 @@
           href: get-started-with-copilot.md
         - name: Explore the cloud flows designer
           href: flows-designer.md
-        - name: Get started with triggers
-          href: triggers-introduction.md
+        - name: Start a cloud flow with a trigger
+          items:
+          - name: Get started with triggers
+            href: triggers-introduction.md
+          - name: Troubleshoot common issues with triggers
+            href: triggers-troubleshoot.md
         - name: Get help from the Microsoft Copilot Studio bot
           href: contextual-help-bot.md
     - name: How to
@@ -47,6 +51,8 @@
         href: convert-time-zone.md
       - name: Use expressions in conditions
         href: use-expressions-in-conditions.md
+      - name: Create and edit expressions with Copilot expression assistant (preview)
+        href: expressions-copilot.md
       - name: Store and manage values in variables
         href: create-variable-store-values.md
       - name: Manage sensitive input like passwords
@@ -65,6 +71,8 @@
         href: format-data-by-examples.md
     - name: Manage cloud flows
       items: 
+        - name: Management overview
+          href: overview-manage-cloud-flows.md
         - name: Share a flow
           href: create-team-flows.md
         - name: Support for guest users
@@ -104,8 +112,6 @@
             href: /power-platform/admin/app-insights-cloud-flow.md
     - name: Troubleshoot
       items:
-      - name: Troubleshoot common issues with triggers
-        href: triggers-troubleshoot.md
       - name: Watch a cloud flow
         href: see-a-flow-run.md
         displayName: Monitor flow activity on mobile devices
@@ -113,7 +119,7 @@
         href: fix-flow-failures.md
       - name: Find and fix errors with the error checker
         href: error-checker.md
-    - name: Automated flows
+    - name: Automated cloud flows
       items:
       - name: Create a cloud flow from a template
         href: get-started-logic-template.md
@@ -127,7 +133,7 @@
         href: odata-filters.md
       - name: Run your flows with bttns
         href: bttn-button-flows.md
-    - name: Scheduled flows
+    - name: Scheduled cloud flows
       items:
       - name: Run a cloud flow on a schedule
         href: run-scheduled-tasks.md
@@ -337,7 +343,7 @@
         href: ./dataverse/data-retention-flow.md
       - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
         href: connection-cds.md
-      - name: Manage cloud flow run history in Dataverse (preview)
+      - name: Manage cloud flow run history in Dataverse
         href: ./dataverse/cloud-flow-run-metadata.md
 - name: Desktop flows
   items:
@@ -445,7 +451,7 @@
       href: ./desktop-flows/create-azurekeyvault-credential.md
     - name: CyberArk credentials
       href: ./desktop-flows/create-cyberark-credential.md
-    - name: Certificate-based authentication (preview)
+    - name: Certificate-based authentication
       href: ./desktop-flows/configure-certificate-based-auth.md
     - name: Machine mapping (preview)
       href: ./desktop-flows/create-machine-mapping.md
@@ -483,6 +489,8 @@
     href: ./desktop-flows/data-loss-prevention.md
   - name: Power Automate console
     href: ./desktop-flows/console.md
+  - name: Tags in desktop flows (preview)
+    href: ./desktop-flows/tags.md
   - name: Desktop flow designer
     href: ./desktop-flows/flow-designer.md
     items:
@@ -809,7 +817,7 @@
       href: ./desktop-flows/actions-reference/cloudconnectors.md
     - name: SAP automation
       href: ./desktop-flows/actions-reference/sap.md
-    - name: Power Automate secret variables actions (preview)
+    - name: Power Automate secret variables actions
       href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
   - name: Troubleshoot desktop flows runtime
     href: ./desktop-flows/troubleshoot.md
@@ -868,12 +876,20 @@
       href: process-mining-sap-erp.md    
     - name: Transform and map data
       href: process-mining-transform.md
-    - name: Visualize and gain insights from processes
-      href: process-mining-visualize.md
-    - name: Customize a report with your own Power BI workspace
-      href: process-mining-pbi-workspace.md
-    - name: Use optimized data structure in Power BI report (preview)
-      href: process-mining-pbi-data-structure.md
+    - name: Visualize and gain insights in Power BI
+      items:
+      - name: Process overview (preview)
+        href: ./minit/process-overview.md
+      - name: Visualize and gain insights from processes
+        href: process-mining-visualize.md
+      - name: Customize a report with your own Power BI workspace
+        href: process-mining-pbi-workspace.md
+      - name: Use optimized data structure in Power BI report
+        href: process-mining-pbi-data-structure.md
+      - name: Customize a report with your own Fabric workspace (preview)
+        href: process-mining-fabric-workspace.md
+      - name: Structure of semantic model in Fabric workspace (preview)
+        href: process-mining-fabric-semantic-model.md
     - name: Application lifecycle management (ALM)
       items:
       - name: ALM overview
@@ -1059,7 +1075,7 @@
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md
-    - name: Process simulations (preview)
+    - name: Process simulations
       items:
       - name: Overview
         href: ./minit/process-mining-simulations-overview.md
@@ -1097,9 +1113,6 @@
     - name: Known issues
       href: process-advisor-issues.md
       displayName: Known issues in process mining
-  - name: Glossary
-    href: process-advisor-glossary.md
-    displayName: Process mining glossary
   - name: Troubleshoot issues
     href: process-mining-troubleshoot.md
 - name: Connect to data
@@ -1145,6 +1158,8 @@
     items:
     - name: Overview
       href: automation-center-overview.md
+    - name: Process map (preview)
+      href: automation-center-process-map.md      
     - name: Recommendations
       href: automation-center-recommendations.md
     - name: Copilot
@@ -1256,18 +1271,16 @@
         href: use-cds-for-apps-dialogs.md
       - name: Replace classic Dataverse dialogs
         href: replace-dialogs.md
-- name: Resources
+- name: Find help and support
   items:
-  - name: Microsoft Credentials for Power Platform
-    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl
-  - name: Webinars
-    href: webinars.md
+  - name: Get online help
+    href: self-help.md
   - name: Blog
     href: https://make.powerautomate.com/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-  - name: Support
-    href: https://make.powerautomate.com/support/
+  - name: Learn new Power Platform skills
+    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl    
 - name: Responsible AI
   items:
   - name: Overview
