@@ -110,7 +110,7 @@ To build a classic Dataverse workflow that creates activities for internal solut
 
     :::image type="content" source="media/best-practices-entity-attributes/close-stage-followup.png" alt-text="Screenshot of close stage follow-up.":::
 
-### See also
+## Related information
 
 [Get started with Power Apps](/power-apps/maker/canvas-apps/intro-maker-portal)
 

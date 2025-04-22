@@ -3,14 +3,13 @@ title: Create flows in Microsoft Teams
 description: Learn how to create flows using the Workflows app in Microsoft Teams
 services: ''
 suite: flow
-documentationcenter: na
 author: v-aangie
 contributors:
   - kewaiss
   - v-aangie
 ms.subservice: teams
 ms.topic: conceptual
-ms.date: 10/27/2023
+ms.date: 10/09/2024
 ms.author: kewaiss
 ms.reviewer: angieandrews
 ---
@@ -114,9 +113,12 @@ This opens the full Power Automate designer experience within Microsoft Teams wh
 - All flows that you create from within the Workflows app are located in your organization's default environment.
 - The Workflows app must be enabled in the [Microsoft Teams admin center](https://admin.teams.microsoft.com/policies/manage-apps) in order for this functionality to work.
 
-### See also
+## Related information
 
 - [Manage your flows in Microsoft Teams](./teams-app-home.md)
 - [Microsoft Teams connector documentation](/connectors/teams/)
+- [Training: Build your first workflow with Power Automate and Dataverse for Teams (module)](/training/modules/build-first-workflow/)
+- [Training: Get started with Microsoft Dataverse for Teams (module)](/training/modules/get-started-dataverse-teams/)
+- [Training: Create apps, copilots, flows, and more with Microsoft Dataverse and Teams (learning path)](/training/paths/work-power-platform-teams/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

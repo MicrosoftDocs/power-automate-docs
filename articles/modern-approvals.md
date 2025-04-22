@@ -1,23 +1,17 @@
 ---
 title: Create and test an approval workflow with Power Automate
 description: Learn how to automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress.
-services: ''
 suite: flow
-documentationcenter: na
-author: natalie-pienkowska
+author: kisubedi
 contributors:
-  - natalie-pienkowska
+  - kisubedi
   - kartikraop
   - v-aangie
 ms.author: kisubedi
 ms.reviewer: angieandrews
-editor: ''
-tags: ''
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 01/12/2023
+ms.date: 10/09/2024
 search.audienceType: 
   - flowmaker
   - enduser
@@ -176,12 +170,14 @@ When you assign a role to a guest, this gives the guest the permission required 
 
 Now that you've created and tested your flow, be sure to let others know how to use it.
 
-### See also
+## Related information
 
-* View and manage [pending approval requests](approve-reject-requests.md)
-* Create [sequential approval flows.](sequential-modern-approvals.md)
-* Create [parallel approval flows.](parallel-modern-approvals.md)
-* Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows).
+- View and manage [pending approval requests](approve-reject-requests.md)
+- Create [sequential approval flows.](sequential-modern-approvals.md)
+- Create [parallel approval flows.](parallel-modern-approvals.md)
+- Install the Power Automate mobile app for [Android](https://aka.ms/flowmobiledocsandroid), [iOS](https://aka.ms/flowmobiledocsios), or [Windows Phone](https://aka.ms/flowmobilewindows)
+- [Training: Build approval flows with Power Automate (module)](/training/modules/build-approval-flows/)
+- [Training: Automate an approval process in Power Automate (module)](/training/modules/approvals-power-automate/)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

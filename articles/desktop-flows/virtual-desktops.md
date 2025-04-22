@@ -4,7 +4,7 @@ description: Learn how to build automated workflows on Citrix and RDP virtual de
 author: NikosMoutzourakis
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 02/10/2025
 ms.author: quseleba
 ms.reviewer: matp
 contributors:
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Automate on virtual desktops
 
-With the Power Automate agent for virtual desktops, you can automate processes on virtual desktops as easily as you can on physical devices. If your virtual desktop uses Citrix or Microsoft Remote Desktop Protocol (RDP), you can [capture UI elements](ui-elements.md), [deploy UI automation actions](actions-reference/uiautomation.md), and [create desktop flows using the recorder](recording-flow.md), just like on your physical desktop.
+With the Power Automate agent for virtual desktops, you can automate processes on virtual desktops as easily as you can on physical devices. If your virtual desktop uses Citrix or Microsoft Remote Desktop Protocol (RDP), you can [capture UI elements](ui-elements.md), [deploy UI automation actions](actions-reference/uiautomation.md), [deploy Browser automation actions](actions-reference/webautomation.md),and [create desktop flows using the recorder](recording-flow.md), just like on your physical desktop.
 
 The Power Automate agent for virtual desktops must be running both while you're designing a flow and when the flow runs. The agent starts automatically when a user logs in to the virtual desktop. If it isn't running on your virtual desktop, launch the agent manually. To launch the Power Automate agent for virtual desktops manually, double-click the shortcut on your desktop, or search for *Power Automate agent for virtual desktops* on the **Start** menu and then select the respective result, or go to the installation directory of the Power Automate agent for virtual desktops (by default, it's `C:\Program Files (x86)\Power Automate agent for virtual desktops`) and double-click **PAD.RDP.ControlAgent.exe.**
 
@@ -27,6 +27,18 @@ It's important to install Power Automate for desktop on the machine where you're
 - Your physical device and virtual machine must be running Windows 10 Pro, Windows 10 Enterprise, Windows 11 Pro, Windows 11 Enterprise, Windows Server 2016, Windows Server 2019, or Windows Server 2022.
 
 - Make sure the Citrix or RDP connection to the virtual desktop is closed and then [install Power Automate on your physical device](https://go.microsoft.com/fwlink/?linkid=2137322).
+
+- A device with the following hardware (these requirements don't include the resources required for the applications involved in your desktop flows):
+
+  Minimum hardware:
+  - Processor: 1.50 GHz per session or faster with two or more cores.
+  - Storage: 300 ΜΒ system storage for agent installation, plus 500 MB for each user (each version of Power Automate for desktop requires a user have 500 MB of storage space).
+  - RAM: 384 MB per session.
+
+  Recommended hardware:
+  - Processor: 2.00 GHz per session or faster with two or more cores.
+  - Storage: 300 ΜΒ or more system storage for agent installation, plus 500 MB or more for each user (each version of Power Automate for desktop requires a user have 500 MB of storage space).
+  - RAM: 512 MB or more per session.
 
 ## Install the Power Automate agent for virtual desktops
 
@@ -90,43 +102,49 @@ The following table and diagram depicts the different phases of communication:
 ## Known issues and limitations
 
 - **Issue:** Virtual desktop automation is available only in Windows RDP, RemoteApp, Citrix Desktop, and Citrix Virtual Apps. Other virtual desktop platforms aren't supported.
-
-    **Workaround:** None
+  
+  **Workaround:** None
 
 - **Issue:** Power Automate agent for virtual desktops isn't compatible with Windows 10 Home and Windows 11 Home.
+  
+  **Workaround:** None. Remote desktop connection isn't supported in these Windows editions.
 
-    **Workaround:** None. Remote desktop connection isn't supported in these Windows editions.
 - **Issue:** Encounter the 'Error communicating with Power Automate for desktop' message when Power Automate agent for virtual desktop is launched in Citrix Desktop even though you have installed Power Automate for desktop and Power Automate agent for virtual desktops correctly and met all prerequisites.
-   **Workaround:**  Check the 'Virtual channel allow list policy' setting in your Citrix configuration. This setting needs to be disabled to resolve the issue. Check with your Citrix administrator to disable the 'Virtual channel allow list policy' setting if it's enabled.
+  
+  **Workaround:**  
+  Check the **Virtual channel allow list policy** setting in your Citrix configuration.
+  - If the Citrix VDA version is earlier than 2407:
+    - The Virtual channel Allow list policy on Citrix is by default either enabled or set to default. However, if this policy isn't disabled, the Power Automate agent can't communicate with Power Automate for desktop. Contact your Citrix administrators to disable this policy, as keeping it set to Default isn't sufficient.
+  - If the Citrix VDA version is 2407 or later:
+    - Configure a different policy. The older **Virtual channel Allow list** can remain set to Default. Configure the new policy **Virtual channel allow list for DVC** and add the following values:
+      - `C:\Program Files (x86)\Power Automate agent for virtual desktops\PAD.RDP.ControlAgent.exe,Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin,PAD\CONTROL`
+      - `C:\Users\*\AppData\Local\Microsoft\Power Automate Desktop\RDP Automation Agents\*\PAD.RDP.AutomationAgent.exe,Microsoft.Flow.RPA.Desktop.UIAutomation.RDP.DVC.Plugin,PAD\UIA`
+    - Restart the Citrix machines after applying the policy.
 
 - **Issue:** Virtual desktop automation isn't supported in Power Automate installed through the Microsoft store.
-
-    **Workaround:** Download and install the Microsoft Visual C++ Redistributable, which installs Microsoft C and C++ (MSVC) runtime libraries.
+  
+  **Workaround:** Download and install the Microsoft Visual C++ Redistributable, which installs Microsoft C and C++ (MSVC) runtime libraries.
   - [Download the x86 version](https://aka.ms/vs/17/release/vc_redist.x86.exe).
   - [Download the x64 version](https://aka.ms/vs/17/release/vc_redist.x64.exe).
 
-- **Issue:** Citrix and RDP automation doesn't support the use of web automation actions.
-
-    **Workarounds:** [Treat web components as desktop UI elements](desktop-automation.md), [use mouse, keyboard, and OCR actions](how-to/automate-using-mouse-keyboard-ocr.md), or [automate using images](images.md).
-
 - **Issue:** When a flow is running, an element isn't found if the virtual desktop window is minimized.
-
-    **Workaround:** Use a **Focus window** action on the virtual desktop window before deploying UI automation actions to interact with the virtual desktop.
+  
+  **Workaround:** Use a **Focus window** action on the virtual desktop window before deploying UI automation actions to interact with the virtual desktop.
 
 - **Issue:** When you're using the recorder and the virtual desktop window is maximized, the **Populate text field in window** and **Send keys** actions might not work as expected.
-
-    **Workaround:** Make sure the virtual desktop window isn't maximized while you're recording.
+  
+  **Workaround:** Make sure the virtual desktop window isn't maximized while you're recording.
 
 - **Issue:** UI automation of Java applets running on virtual desktops isn't supported.
-
-    **Workaround:** None
+  
+  **Workaround:** None
 
 - **Issue:** Citrix UI automation doesn't work if you're using Citrix Desktop and Citrix App in the same session.
-
-    **Workaround:** None
+  
+  **Workaround:** None
 
 - **Issue:** Defining a window on virtual desktops using the **Window instance/handle** or **Window title/class** options isn't supported.
-
-    **Workaround:** None
+  
+  **Workaround:** None
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

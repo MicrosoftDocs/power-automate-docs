@@ -81,7 +81,7 @@ In Teams, you might have acquired flows from an installed app or you might have 
 
    ![View the details of flows.](..\media\overview-teams-flows\view-details-history.png)
 
-### See also
+## Related information
 
 - [Use the new Power Apps app in Microsoft Teams](/powerapps/teams/create-apps-overview)<br/>
 - [What is Dataverse for Teams?](/powerapps/teams/overview-data-platform)<br/>

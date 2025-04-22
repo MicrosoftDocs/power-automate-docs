@@ -2,15 +2,14 @@
 title: Use the Apply to each action to process a list of items periodically
 description: Use Power Automate to loop through an array of items to check multiple conditions and take actions based on those conditions.
 suite: flow
-documentationcenter: na
-author: natalie-pienkowska
+author: kisubedi
 contributors:
   - kisubedi
   - kartikraop
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/08/2023
+ms.date: 04/01/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -26,7 +25,7 @@ Many triggers can immediately start a cloud flow based on an event such as when 
 
 Watch this video for a demo of the **Apply to each** action.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWL7EL]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=6b48b330-128d-4130-b093-2f18edae65c3]
 
 In this tutorial, we'll create a cloud flow that runs every 15 minutes and does the following:
 
@@ -57,6 +56,27 @@ For detailed information about using SharePoint with Power Automate, go to the [
 
 ## Create a cloud flow
 
+# [New designer](#tab/new-designer)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+1. Try asking Copilot to create a flow by typing this prompt:
+
+    **Every 15 minutes, Get top 10 unread emails and get my manager. If the email is from my manager OR the email is Important and subject contains 'meet now', send me a push notification to my phone.**
+
+    Copilot suggests a flow based on your prompt:
+
+    :::image type="content" source="./media/apply-to-each/copilot-apply-to-each-prompt.png" alt-text="Screenshot of a flow suggestion from Copilot.":::
+
+1. Select **Next** and review the connections.
+1. Select **Next** and your flow appears on the designer.
+
+    The flow is preconfigured with all the required fields in the designer.
+
+    :::image type="content" source="./media/apply-to-each/copilot-configured-flow.png" alt-text="Screenshot of a flow created by Copilot based on your prompt.":::
+
+1. Save the flow and it's ready to use.
+
 # [Classic designer](#tab/classic-designer)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
@@ -86,27 +106,6 @@ For detailed information about using SharePoint with Power Automate, go to the [
     :::image type="content" source="./media/apply-to-each/foreach-5.png" alt-text="Screenshot of a configured email card.":::
 
 So far, you've created a simple flow that gets some emails from your inbox. These emails will be returned in an array. The **Apply to each** action requires an array, so this is exactly what's needed.
-
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
-1. Try asking Copilot to create a flow by typing this prompt: 
-
-    **Every 15 minutes, Get top 10 unread emails and get my manager. If the email is from my manager OR the email is Important and subject contains 'meet now', send me a push notification to my phone.**
-
-    Copilot suggests a flow based on your prompt:
-
-    :::image type="content" source="./media/apply-to-each/copilot-apply-to-each-prompt.png" alt-text="Screenshot of a flow suggestion from Copilot.":::
-
-1. Select **Next** and review the connections.
-1. Select **Next** and your flow appears on the designer.
-
-    The flow is preconfigured with all the required fields in the designer.
-
-    :::image type="content" source="./media/apply-to-each/copilot-configured-flow.png" alt-text="Screenshot of a flow created by Copilot based on your prompt.":::
-
-1. Save the flow and it's ready to use.
 
 ---
 
@@ -205,5 +204,9 @@ Now that you've run the flow successfully, you should receive the push notificat
 
 > [!NOTE]
 > If you don't receive the push notification, confirm that your mobile device has a working data connection.
+
+## Related information
+
+[Training: Use Dataverse triggers and actions in Power Automate (module)](/training/modules/use-dataverse-triggers-actions/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

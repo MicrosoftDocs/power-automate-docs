@@ -67,7 +67,7 @@ The **Update Message** and the **Should update card** inputs must be configured 
 
 - Power Automate uses Microsoft adaptive cards' unique features and services to handle the cards within any host. This article is intended to clarify any specifics related to flow actions. You can also use the full documentation for [building adaptive cards](/adaptive-cards/).
 
-### See also
+## Related information
 
 - [Create your first adaptive card](./create-adaptive-cards.md)
 - [Microsoft Teams connector](/connectors/teams/)

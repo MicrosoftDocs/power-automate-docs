@@ -1,7 +1,7 @@
 ---
-title: FAQ for Copilot in desktop flow activity (preview)
+title: FAQ for Copilot in desktop flow activity 
 description: This FAQ discusses Copilot used in desktop flow activity and the key considerations for making use of this technology responsibly.
-ms.date: 05/20/2024
+ms.date: 01/21/2025
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -13,7 +13,7 @@ contributors:
 ms.collection: bap-ai-copilot
 ---
 
-# FAQ for Copilot in desktop flow activity (preview)
+# FAQ for Copilot in desktop flow activity
 
 Copilot in desktop flow activity enables administrators, CoE teams, business users, and makers to easily retrieve information about past flow runs by asking questions in natural language. For example, users can ask about the number of flows that ran yesterday, which machine ran the most flows, or how many flows are currently queued. In response, Copilot generates outputs that provide insights and answers to the questions asked.
 
@@ -37,10 +37,10 @@ One of the limitations of Copilot in desktop flow activity is that it currently 
 
 Effective and responsible use of Copilot in desktop flow activity can be achieved by ensuring that the user has the appropriate rights to access the desktop flow activity data in Dataverse. This means that Copilot only answers questions based on the data the user has permission to access. Additionally, it's important for users to understand the scope and limitations of Copilot, and to phrase their queries accordingly.
 
-## See also
+## Related information
 
-- [Use Copilot to analyze desktop flow activity (preview)](./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)
-- [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
+- [Use Copilot to analyze desktop flow activity](./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)
+- [Get started with Copilot in cloud flows](get-started-with-copilot.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)

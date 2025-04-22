@@ -4,7 +4,7 @@ description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/16/2024
+ms.date: 03/10/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -50,13 +50,15 @@ To evaluate hosted machines, you need one of the following trial licensing optio
 
 - Use the **Power Automate Hosted Process** license
 
-    The Power Automate hosted RPA add-on have trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 user licenses from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home), assign those Power Automate Premium (previously Power Automate per user plan with attended RPA) trials to 25 individual makers, and assign the hosted RPA add-ons to the targeted environment.
+    The Power Automate Hosted Process license has trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home) and assign Power Automate Hosted Process capacity to the targeted environment.
 
 - Use the **90-days self-assisted premium trial.**
 
-    Trial users are granted the capacity of one hosted machine per tenant. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
   > [!NOTE]
-  > Hosted machine capacity based on the 90-days self-assisted premium trial has been temporarily disabled until further notice.
+  > This trial licensing option for hosted machines is suspended until further notice.
+
+    Trial users are granted the capacity of one hosted machine per tenant. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
+
 
 ## Prerequisites
 
@@ -86,7 +88,7 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 
         If the service principal is provisioned in your Microsoft Entra, the page should look like the following screenshot:
 
-        :::image type="content" source="media/hosted-machines/azure-portal.png" alt-text="Screenshot of the Enterprise applications in Microsoft Entra ID.":::
+        :::image type="content" source="media/hosted-machines/azure-portal.svg" alt-text="Screenshot of the Enterprise applications in Microsoft Entra ID.":::
 
         If the application is like the presented screenshot, you don't need to perform any extra steps. However, you must create the service principal if the application isn't showing up.
 
@@ -112,11 +114,17 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 
 ### Get access to the default VM image
 
-To create hosted machines, you need access to the default image that is part of your environment. You can view the default image in **Monitors** > **Machines** > **VM images**.
+> [!NOTE]
+> - The default VM image provided by Power Automate with Microsoft Edge preinstalled is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration, or security constraints, use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine) capability.
+
+The default VM image is available to all users in the environment. If you can't see the default VM image, your admin disabled sharing of default VM images with users. In this case:
+
+- Users need either the **System Administrator** or **Desktop Flows Machine Configuration Admin** role to see and manage the default image.
+- For other users, the **System Administrator** or **Desktop Flows Machine Configuration Admin** must share the default image with them before they can use it.
+
+View the default image in **Monitors** > **Machines** > **VM images**.
 
 :::image type="content" source="media/hosted-machines/default-vm-image.png" alt-text="Screenshot of the default VM image in the VM images list.":::
-
-Users need either the **System Administrator** or **Desktop Flow Machine Image Admin** role to see and manage the default image. For other users, the **System Administrator** or **Desktop Flow Machine Image Admin** needs to [share the default image](#share-the-default-image) with them before they can use it.
 
 ### Share the default image
 
@@ -209,11 +217,12 @@ You can personalize your hosted machines by providing your own Windows image dir
 - Canada: Canada Central
 - Europe: North Europe
 - France: France Central
-- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com)
+- Germany: Germany West Central
 - India: Central India
 - Japan: Japan East
 - Korea: Korea Central
 - Norway: Norway East
+- Singapore: Southeast Asia (Allowlisted tenants only)
 - Switzerland: Switzerland North
 - United Arab Emirates: UAE North
 - United Kingdom: UK South
@@ -226,7 +235,7 @@ Custom VM images must meet the following requirements:
 - Windows 10 Enterprise version 20H2 or later
 - Windows 11 Enterprise 21H2 or later
 - Generation 2 image
-- Generalized VM image
+- Generalized VM image. Learn more in [generalize VM image](/azure/virtual-machines/generalize).
 - Single Session VM images (multi-session isn’t supported)
 - No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition)
 - Default 64-GB OS disk size. The OS disk size is automatically adjusted to 256 GB
@@ -307,16 +316,16 @@ You can connect to your own virtual network with your hosted machines to securel
 > [!NOTE]
 > You can have up to 30 custom virtual networks configured per tenant.
 
-### General network requirement
+### General network requirements
 
-To use your own network and provision Microsoft Entra joined hosted machines, you must meet the following requirements:
+To use your own network with hosted machines, you must meet the following requirements:
 
 - You must have a virtual network in your Azure subscription in the same region where you created the hosted machines.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
 - A subnet within the virtual network and available IP address space.
 - [Allow network connectivity](/windows-365/enterprise/requirements-network) to required services.
 
-The virtual network needs to be created in the same location with your hosted machines. You can find the following mapping with your environment Geo:
+The virtual network needs to be created in the same location as your hosted machines. You can find the following mapping with your environment Geo:
 
 - Australia: Australia East
 - Asia: East Asia
@@ -324,23 +333,18 @@ The virtual network needs to be created in the same location with your hosted ma
 - Canada: Canada Central
 - Europe: North Europe
 - France: France Central
-- Germany: Germany West Central (Restricted, send your request to hostedrpa@microsoft.com) 
+- Germany: Germany West Central
 - India: Central India
 - Japan: Japan East
 - Korea: Korea Central
 - Norway: Norway East
+- Singapore: Southeast Asia (Allowlisted tenants only)
 - Switzerland: Switzerland North
 - United Arab Emirates: UAE North
 - United Kingdom: UK South
 - United States: East US
 
-### Additional requirements for Microsoft Entra hybrid joined hosted machines (preview)
-
-[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
-
-If your organization has an on-premises Active Directory implementation and you want your hosted machines to be joined to it, you can accomplish this task with Microsoft Entra hybrid join.
-
-[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+### Additional requirements for Microsoft Entra hybrid joined hosted machines
 
 To use your own network and provision Microsoft Entra hybrid joined machines, you must meet the following requirements:
 
@@ -363,7 +367,7 @@ Configure your Azure Virtual Network where the hosted machines are provisioned a
 
 1. Make sure your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
 1. From the Azure Virtual Network's Settings, select DNS Servers and then choose Custom.
-1. Enter the IP address of DNS servers that environment that can resolve your AD DS domain.
+1. Enter the IP address of DNS servers that environment that can resolve your Active Directory Domain Services domain.
 
 ### Share the virtual network with Windows 365 service principal
 
@@ -372,6 +376,9 @@ To use your virtual network for hosted machines, you need to grant Windows 365 s
 - Reader permission on the Azure subscription
 - Windows 365 Network Interface Contributor permission on the specified resource group
 - Windows 365 Network User permission on the virtual network
+
+> [!NOTE]
+> Ensure the resources have the specified role requirements assigned to the Windows 365 service principal, even if other roles with the same or higher permissions are already assigned.
 
 > [!NOTE]
 > For virtual networks created before November 26, 2023, the Network Contributor role is used to apply permissions on both the resource group and virtual network. The new RBAC roles have more specific permissions. To manually remove the existing roles and add the new roles, refer to the following table for the existing roles used on each Azure resource. Before removing the existing roles, make sure that the updated roles are assigned.
@@ -412,20 +419,21 @@ The last step before being able to reference your virtual network from Power Aut
 
     - **Network connection name:** A unique name to identify the network connection.
     - **Description:** An optional description for the network connection.
+    - **Use with:** Select hosted machine.
 
-1. Select one of the **Azure virtual network** available in Azure that meets the network requirement.
+1. Select one of the **Azure virtual network** available in Azure that meets the network requirements.
 
 1. Select the **Subnet** the hosted machine uses.
 
 1. Select the **Domain join type** the machine uses.
 
-1. If the **'Microsoft Entra hybrid join (preview)'** is selected, the following information is required:
+1. If the **'Microsoft Entra hybrid join'** is selected, the following information is required:
    - **DNS domain name** : The DNS name of the Active Directory domain you want to use for connecting and provisioning hosted machines. For example, corp.contoso.com.
    - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain, which can hold users, groups, and computers. Make sure that this OU is enabled to sync with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
    - **Username UPN** : The username, in user principal name (UPN) format, you want to use for connecting the hosted machines to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
    - **Domain password** : The password for the user.
     > [!NOTE]
-    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join (preview) domain join type.
+    > It takes 10-15 minutes to provision a new network connection with Microsoft Entra hybrid join domain join type.
 
 :::image type="content" source="media/hosted-machines/create-network-connection.png" alt-text="Screenshot of the New network connection dialog.":::
 
@@ -575,6 +583,10 @@ The **Desktop Flows Machine Configuration Admin role** role only brings full pri
 
 :::image type="content" source="media/hosted-machines/desktop-flow-machine-configuration-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Configuration Admin role.":::
 
+#### Custom virtual network permissions
+
+The [custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machines) feature requires permissions to the  **Flow Machine Network** table. You can grant or deny privileges to this table to control which user can create and share custom virtual networks.
+
 ## Hosted machines limitations
 
 This section presents the limitations of hosted machines.
@@ -589,11 +601,12 @@ The following list displays all the supported Power Platform geographies in the 
 - Canada
 - Europe
 - France
-- Germany (Restricted, send your request to hostedrpa@microsoft.com) 
+- Germany
 - India
 - Japan 
 - Korea
 - Norway
+- Singapore (Allowlisted tenants only)
 - Switzerland
 - United Arab Emirates
 - United Kingdom

@@ -117,7 +117,7 @@ To convert a timestamp from the source time zone to UTC, or from UTC to the targ
 
 There might be limitations in some connectors for how the time zone displays. To learn more about each connector, go to [Connector reference overview](/connectors/connector-reference/).
 
-### See also
+## Related information
 
 - [Customize or format date and time values in a flow](date-time-values.md)
 - [Reference guide to workflow expression functions in Azure Logic Apps and Power Automate](/azure/logic-apps/workflow-definition-language-functions-reference)

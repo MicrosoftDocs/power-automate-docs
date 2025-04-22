@@ -5,7 +5,7 @@ author: nvigne
 ms.author: nvigne
 ms.subservice: desktop-flow
 ms.reviewer: matp
-ms.date: 09/06/2023
+ms.date: 01/06/2025
 ms.topic: how-to
 ---
 
@@ -21,10 +21,10 @@ The desktop flow definition is stored in the **Workflow** folder in a file with 
 
 ## New image or control added to the desktop flow
 
-When a new image or a control is added to your desktop flow, they're added as a new folder in the **desktopflowbinaries** folder. Each image has a dedicated folder, with a subfolder, which contains the screenshot. The file is named **Untitled.txt**.
+When you add a new image or control to your desktop flow, a new folder is created in the **desktopflowbinaries** folder. Each image has its own folder with a subfolder containing the screenshot.
 
-:::image type="content" source="./media/screenshot-diff.png" alt-text="Screenshot of the diff tool in Azure DevOps on a desktop flow image.":::
+The image is stored so you can easily compare which control was removed or added while authoring your desktop flow.
 
-## See also
+## Related information
 
 [Overview for configuring ALM for desktop flows](alm-intro.md)

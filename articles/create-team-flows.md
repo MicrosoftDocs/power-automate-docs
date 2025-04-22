@@ -1,15 +1,13 @@
 ---
 title: Share a cloud flow
 description: Learn how to share cloud flows with others in your organization and guest users, add owners, and collaborate with them to design and manage flows.
-author: natalie-pienkowska
+author: ChrisGarty
 contributors:
-  - natalie-pienkowska
+  - ChrisGarty
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 02/01/2023
+ms.date: 10/09/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -171,4 +169,10 @@ Yes. When a connection is configured to be **Provided by run-only user**, then t
 ### Can a connection provided by run-only user be used by another user?
 No. When a connection is configured to be **Provided by run-only user** then that connection is provided by the user that runs (or "invokes") the flow. Embedded connections are used by all users of the flow, but connections provided by a run-only user are used only by the user that provides them. When the flow connects to a service via a connector, then the **Provided by run-only user** connections will allow the flow to act as the run-only user and access the data that the user has access to. If the flow is exported, then the **Provided by run-only user** connections have a **RuntimeSource** value of **invoker**.
 
+## Related information
+
+- [Training: Share a cloud flow with Power Automate (module)](/training/modules/share-cloud-flow/)
+- [Training: Share and collaborate with Power Automate (learning path)](/training/paths/share-collaborate-power-automate/)
+
+ 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

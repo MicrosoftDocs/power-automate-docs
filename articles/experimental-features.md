@@ -40,6 +40,6 @@ You will now be able to access all experimental features in Power Automate.
 >[!NOTE]
 >Experimental features are available only for the account that turns on experimental features.
 
-### See also
+## Related information
 
 [New expression editor for actions (experimental feature)](multi-step-logic-flow.md#new-expression-editor-for-actions-experimental-feature)

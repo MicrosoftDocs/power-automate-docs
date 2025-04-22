@@ -2,7 +2,7 @@
 title: Process, add, update and requeue work queue items
 description: Work queue processing options through Power Automate cloud flows, desktop flows and Dataverse API's.
 ms.topic: conceptual
-ms.date: 04/28/2023
+ms.date: 03/10/2025
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -49,11 +49,17 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
 
 1. The **Process work queue items** action is used to designate which work queue to consume items from and process in your desktop flow.  The action can be configured to select a work queue from a list using the dropdown arrow, pass a variable including the queue name. When run, this action works by bringing in the first (oldest) item from the work queue into your flow that contains a status of **queued**. Once the queue item begins processing in your flow, its status automatically changes to **processing**.
 
-   :::image type="content" source="media/work-queues/work-queue-pad-procwqiaction.png" alt-text="Screenshot of the WorkQueueItem action configured to process queue items in Power Automate desktop." lightbox="media/work-queues/work-queue-pad-procwqiaction.png":::
+  > [!NOTE]
+  > If you're using a variable to dynamically select the work queue, use the ID of the work queue as input. The work queue ID is available under **Advanced details** of the work queue details page.
+
+   :::image type="content" source="media/work-queues/work-queue-pad-procwqiaction-new.png" alt-text="Screenshot of the WorkQueueItem action configured to process queue items in Power Automate desktop." lightbox="media/work-queues/work-queue-pad-procwqiaction-new.png":::
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqirocessing.png" alt-text="Screenshot of work queue item in **processing** state." lightbox="media/work-queues/work-queue-pad-wqirocessing.png":::
 
 1. A [breakpoint](debugging-flow.md#adding-breakpoints) (red dot) was set by clicking next to action 3 in the flow and then run through the PAD console.  When the process pauses at the breakpoint, the **WorkQueueItem** variable can be opened by double clicking the populated value under **Flow variables** and this shows all the properties associated with the work queue item being processed.
+
+  > [!NOTE]
+  > The **WorkQueueItem** variable shows the information of the current work queue item when there are remaining items to process. If there are no more work queue items to process and the action is complete, it shows the information of the last work queue item.
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqvarvalue.png" alt-text="Screenshot of the WorkQueueItem variable in the variable viewer." lightbox="media/work-queues/work-queue-pad-wqvarvalue.png":::
 
@@ -79,6 +85,9 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
 
 1. Moving along, this example contains some conditional statements once it completes processing the steps and uses the data from the custom object within the subflow Fabrikam Data Entry.  If the process runs end-to-end without encountering any input system related exceptions the **Update work queue item** action is used to change the status of the work queue item to **Processed** and the **processing result** field can be used to input some optional notes. If the **expires** field is left blank, the new queue item retains the *Items expire after* value defined in the work queue properties.
 
+     > [!NOTE]
+     > If work queue items are stuck in the processing state because a desktop flow fails to complete, use a cloud flow to retrieve and update the work queue items.
+
    :::image type="content" source="media/work-queues/work-queue-pad-updatewqi.png" alt-text="Screenshot example of update work queue item action inputs." lightbox="media/work-queues/work-queue-pad-updatewqi.png":::
 
    Exception handling options can be configured by clicking **on error** in the **update work queue item** action configuration window.  Three options are available for customization under the advanced tab.  **Work queue item not found** might occur if the work queue item is removed from the queue, either manually or through another systematic process, before it finishes processing in PAD.  **Work queue item on hold** might occur if an automated process, or somebody changes the status of the work queue item being processed to **on hold** in the flow portal while the queue item is being processed.  **Failed to update work queue item** might occur if the queue item no longer exists in the queue, or has been placed into the status **on hold**. All the above are edge cases, which might occur - [learn more about handling errors in desktop flows here](errors.md).
@@ -93,9 +102,28 @@ The example flow we'll be using to demonstrate work queue action usage mimics a 
 
    :::image type="content" source="media/work-queues/work-queue-pad-wqiresults.png" alt-text="Screenshot example of updated status for work queue items processed in the flow portal." lightbox="media/work-queues/work-queue-pad-wqiresults.png":::
 
-#### Adding & Requeuing work queue items examples from PAD
+#### Auto-retry pattern
 
-The **Add work queue item** enables desktop flow users to populate work queue items into a work queue, which has been set up in the flow portal.
+The **Process work queue items** action in Power Automate Desktop includes an advanced option to configure or override an auto-retry mechanism. This feature allows you to specify the maximum auto-retry count per work queue item, which is useful for handling IT exceptions like transient network errors or temporary system unavailability. It enables the machine to retain the item and perform controlled retries without requeuing the item, ensuring more efficient and resilient work queue processing.
+
+You can set and centrally control the maximum retry count on the work queue record in Dataverse. This default value applies to all desktop flows that process this work queue through the **Process Work Queue Items** action.
+
+To override the queue-level default in your flow, navigate to the **Advanced** section of the **Process work queue items** action, and toggle the **Override work queue auto-retry configuration** option. This setting lets you adjust the maximum retry count to a higher or lower value, or even disable the retry mechanism by setting the max retry count to 0.
+
+When you use the **Update work queue item** action with a status set to `IT exception` and a max auto-retry count greater than 0, the system doesn't immediately send the update to the work queue orchestrator. Instead, it retries the operation until it reaches the specified max retry count. The only value updated in the work queue item is the `retrycount`. This value increases from the second update attempt onwards until the max auto-retry count is reached. Additionally, a local work queue item variable called `CurrentRetryCount` increments with each retry. This variable allows you to implement custom logic based on its value if needed.
+
+:::image type="content" source="media/work-queues/work-queue-pad-procwqiaction.png" alt-text="Screenshot of the WorkQueueItem action configured to process queue items with advance max retry count set in Power Automate desktop." lightbox="media/work-queues/work-queue-pad-procwqiaction.png":::
+
+The flow won't request a new item when it loops back to the top of the **Process work queue items** action if the following conditions are met:
+
+* The maximum retry count is not reached.
+* No other updates occur except for IT exceptions.
+
+When the max retry count is reached, the update action sends the update to the orchestrator, changing the item's status to IT Exception and including any provided processing notes.
+
+#### Adding and requeuing work queue items examples from PAD
+
+The **Add work queue item** enables desktop flow users to populate work queue items into a work queue, which has been set up in the flow portal. Batch item creation is supported by using the [**Add work queue items**](actions-reference/workqueues.md#add-multiple-work-queue-items) action.
 
 In this example, an Excel file in .csv is dropped into a directory on a daily basis and each row needs to be added to a work queue.
 
@@ -181,8 +209,10 @@ The simplest way to dequeue a work queue item and process it is as follows:
   | --------- | ----- | ------------------------------ |
   | **Table name** | Work Queues | The name of the work queue table. |
   | **Action name** | Dequeue | The action, which gets the next available item from the queue.|
-  | **Row ID** | *[Work Queue ID]* | The work queue ID (GUID) of the queue you'd like to dequeue from. You can get to this value by navigating to the work queue details page of your queue and opening the **Advanced details** panel. |
-  
+  | **Row ID** | *[Work Queue ID]* | The work queue ID (GUID) of the queue you'd like to dequeue from. You can get to this value by navigating to the work queue details page of your queue and opening the **Advanced details** panel. 
+  | **request** | request | FetchXML in stringified JSON format you want to apply on the Work Queue ID. Example: ```{  "query": "<fetch mapping=\"logical\" returntotalrecordcount=\"true\" page=\"1\" count=\"1\" no-lock=\"false\">\n<entity name=\"workqueueitem\">\n<filter type=\"and\">\n<condition attribute=\"workqueueid\" operator=\"eq\" value=\"38b14649-cb09-ee11-8f6e-00224804934a\"/>\n<condition attribute=\"statuscode\" operator=\"eq\" value=\"0\"/>\n</filter>\n</entity>\n</fetch>"}``` |
+
+
   :::image type="content" source="media/work-queues/work-queue-advanced-fields.png" alt-text="Screenshot of a work queue details page with the work queue ID highlighted in the browser URL bar." lightbox="media/work-queues/work-queue-advanced-fields.png":::
 
   > [!NOTE]

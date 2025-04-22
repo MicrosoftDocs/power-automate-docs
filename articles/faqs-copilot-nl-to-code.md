@@ -1,7 +1,7 @@
 ---
 title: FAQ for Power Automate for desktop natural language to code in scripting actions
 description: This FAQ discusses Power Automate for desktop natural language to code in scripting actions and the key considerations for making use of this technology responsibly.
-ms.date: 11/09/2023
+ms.date: 04/01/2025
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: conceptual
@@ -34,7 +34,9 @@ The intended use is to allow users to create scripts quickly and with ease, by j
 
 ## What are the limitations of natural language to code in scripting actions? How can users minimize the impact of natural language to code in scripting action's limitations when using the system?
 
-The natural language to code in scripting actions capability can only generate scripts. It can't answer general questions or anything unrelated to the specific scripting language where the user launched the functionality. Currently, all the scripting actions are supported, but they run a .NET action.
+- The natural language to code in scripting actions capability can only generate scripts. It can't answer general questions or anything unrelated to the specific scripting language where the user launched the functionality. Currently, all the scripting actions are supported, but they run a .NET action.
+- The natural language to code in scripting actions capability is available to environments deployed in the following regions: Asia Pacific, Australia, Canada, France, Germany, India, Japan, Korea, Norway, Singapore, South Africa, Switzerland, United Arab Emirates, United Kingdom, and United States.
+- This capability is available only to users using a work or school account.
 
 ## What operational factors and settings allow for effective and responsible use of natural language to code in scripting actions?
 
@@ -45,7 +47,7 @@ The natural language to code in scripting actions capability can only generate s
 
 When you're interacting with copilot, it's essential to keep in mind that the structure of the questions can significantly affect the response that copilot gives. To interact with copilot effectively, is crucial to ask clear and specific questions and provide context to help the AI better understand your intent.
 
-## See also
+## Related information
 
 - [Natural Language to code in scripting actions](./desktop-flows/actions-reference/scripting.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)

@@ -57,6 +57,6 @@ The following example shows the highlighted progress indicator for an activity i
 
 :::image type="content" alt-text="Screenshot of the progress indicator." source="media/activity-progress.png":::
 
-### See also
+## Related information
 
 [Process animation](process-animation.md)

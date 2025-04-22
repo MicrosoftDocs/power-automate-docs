@@ -1,17 +1,14 @@
 ---
-title: Use format data by examples to change the format of data with Power Automate | Microsoft Docs
+title: Use format data by examples to change the format of data with Power Automate
 description: Learn how to use format data by examples to create expressions automatically, based on the output you want.
-services: ''
 suite: flow
-documentationcenter: na
 author: JoeFernandezMS
 contributors:
   - JoeFernandezMS
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-
-ms.date: 05/23/2023
+ms.date: 02/19/2025
 ms.author: jofernan
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -21,11 +18,11 @@ search.audienceType:
 
 # Format data by examples
 
-[Expressions](./use-expressions-in-conditions.md) in Power Automate is a powerful way to perform operations over data. You can use the *Format data by examples* feature to access these expressions without knowing the different functions and corresponding syntax that's needed to create the expressions that you want. To format text, dates, and numbers, you can just provide examples of the output format that you want the flow to produce, and Power Automate will automatically generate the expression formula to use.
+[Expressions](./use-expressions-in-conditions.md) in Power Automate is a powerful way to perform operations over data. You can use the *Format data by examples* feature to access these expressions without knowing the different functions and corresponding syntax that is needed to create the expressions that you want. To format text, dates, and numbers, you can just provide examples of the output format that you want the flow to produce, and Power Automate automatically generates the expression formula to use.
 
 ## Format dates by examples
 
-In this sample scenario, imagine that there's a Microsoft list with products that you've purchased. You want to send an email whenever the list gets updated with new products. By default, the SharePoint formats dates like this: *2022-09-18*, but you'd like it to display as *September 18* in the email notification message. Let’s see how to change the format of the date with format data by examples.
+In this sample scenario, imagine that there's a Microsoft list with products that you purchased. You want to send an email whenever the list gets updated with new products. By default, the SharePoint formats dates like this: *2022-09-18*, but you'd like it to display as *September 18* in the email notification message. Let’s see how to change the format of the date with format data by examples.
 
 1. Edit your flow in the Power Automate designer.
 
@@ -38,7 +35,7 @@ In this sample scenario, imagine that there's a Microsoft list with products tha
    A list displays all items in your flow that can be formatted.
 
 1. Select the item that you want to transform.
-1. Provide an example of the original data for the item that you've selected in the previous step.
+1. Provide an example of the original data for the item that you selected in the previous step.
 
    > [!TIP]
    > You can go to the original data source or review a previous flow run to copy an example value for the previous step.
@@ -58,7 +55,7 @@ In this sample scenario, imagine that there's a Microsoft list with products tha
 
    Power Automate adds the expression to the flow.
 
-Congratulations! You’ve built an expression by providing an example.  
+Congratulations! You built an expression by providing an example.  
 
 ## Format numbers by examples
 
@@ -80,8 +77,8 @@ Just provide an example and Power Automate suggests the right expression to achi
 
 - Format data by examples can format one text, number, or date at a time. More complex structures like arrays aren't supported.
 
-- Format data by examples isn't available in environments based in South Africa, GCC, GCC High, and DoD.
+- Format data by examples isn't available in environments based in South Africa, GCC High, and DoD.
 
-### See also
+## Related information
 
 [PROSE](https://www.microsoft.com/research/project/prose-framework/), a technology that enables programming by example, powers format data by examples.

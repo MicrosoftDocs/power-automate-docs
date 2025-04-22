@@ -42,7 +42,7 @@ Column | Description
 
 The Workflows app in Microsoft Teams shows your flows that are located only in your organization's default environment.
 
-### See also
+## Related information
 
 - [Create flows in Microsoft Teams](./teams-app-create.md)
 - [Microsoft Teams connector documentation](/connectors/teams/)

@@ -7,7 +7,6 @@ ms.topic: conceptual
 ms.date: 11/15/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
-ms.collection: bap-ai-copilot
 ---
 
 # Business approvals templates approvals kit comparison

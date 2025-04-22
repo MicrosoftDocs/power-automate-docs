@@ -59,7 +59,7 @@ To pin the Workflows app in Microsoft Teams:
 
 The Workflows app in Microsoft Teams shows flows only from your organization's default environment. Any flow that you create from the Workflows app is located in the default environment.
 
-### See also
+## Related information
 
 - [Create flows in Microsoft Teams](./teams-app-create.md)
 - [Manage your flows in Microsoft Teams](./teams-app-home.md)

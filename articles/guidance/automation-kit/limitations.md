@@ -97,6 +97,6 @@ Do any of the following tasks:
 >[!NOTE]
 >You can use a solution to extend the Automation Kit to sync all desktop flows in an environment with the [RPA CLI](https://aka.ms/rpacli).
 
-### See also
+## Related information
 
 [RPA CLI for the Automation Kit](https://aka.ms/rpaclie)

@@ -3,11 +3,12 @@ title: Install Power Automate
 description: Learn how to install Power Automate for desktop on your device.
 author: johndund
 ms.topic: how-to
-ms.date: 05/28/2024
+ms.date: 03/25/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
   - DanaMartens
+  - v-aangie
 search.audienceType: 
   - flowmaker
   - enduser
@@ -47,10 +48,21 @@ By default, Power Automate for desktop honors the proxy settings specified in Wi
 
 1. Select the check box to agree to the terms of use, and then select **Install**.
 
-If the installation fails, go to the [troubleshooting guide](https://support.microsoft.com/topic/power-automate-desktop-installation-troubleshooting-b2c93d3f-5a90-450a-833d-920a25f2d967) for help.
+If the installation fails, go to the [troubleshooting guide](/troubleshoot/power-platform/power-automate/desktop-flows/power-automate-desktop-installation-issues) for help.
 
 > [!NOTE]
-> There is only one Power Automate installer for both 32-bit and 64-bit computers. It automatically identifies the architecture of your operating system and proceeds to install the suitable version of the files accordingly.
+> There's only one Power Automate installer for both 32-bit and 64-bit computers. It automatically identifies the architecture of your operating system and proceeds to install the suitable version of the files accordingly.
+
+### .NET 8 requirement
+
+Starting with version 2.55, Power Automate for desktop requires the .NET 8 runtime. The Power Automate MSI installer downloads and installs the .NET 8 runtime if it isn't already on the machine. Without .NET 8, computers need internet access to these URLs:
+
+- `https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x64.exe`
+- `https://aka.ms/dotnet/8.0/windowsdesktop-runtime-win-x86.exe`
+
+Power Automate for desktop uses the .NET 8 runtime to bring you the best and latest UI experience. The x86 package is required even on x64 operating systems because some automation modules within Power Automate are only available in 32-bit mode.
+
+If you receive an error indicating that the .NET 8 runtime failed to install, it might be because your computer can't connect to these URLs or one of the packages didn't install. To fix this issue, install these runtime packages manually on the machine. After installation, future versions of Power Automate don't download the .NET 8 runtime.
 
 ## Install Power Automate from Microsoft Store
 
@@ -66,9 +78,21 @@ If the installation fails, go to the [troubleshooting guide](https://support.mic
 
 ## Update Power Automate
 
+New versions of Power Automate MSI installer are served from a URL beginning with https://download.microsoft.com.
+
+### Update manually
+
 By default, Power Automate for desktop notifies you when a new version is available. Select **Update** to automatically download and open the latest installer for your region. You must have admin permissions on your local computer to perform the update. Updating to the latest version is recommended to have the latest features and bug fixes.
 
-Autoupdate isn't currently supported with the MSI installation. To learn about managing Power Automate for desktop using System Center Configuration Manager, go to [Manage Power Automate for desktop on Windows](../guidance/automation-coe/manage-pad-on-windows.md).
+### Update automatically
+
+Starting with the April 2025 (2.54) release, automatic updates are available for the MSI installation of Power Automate for desktop. Learn more at [Automatic update capability](./auto-update.md).
+
+To learn about managing Power Automate for desktop using System Center Configuration Manager, go to [Manage Power Automate for desktop on Windows](../guidance/automation-coe/manage-pad-on-windows.md).
+
+## Determining which install you have on your computer
+
+If you already have Power Automate installed on your machine and you didn't install it, check whether it's the Microsoft Store version or the MSI version. To do this, go to Start Menu > Add or remove programs. Then search for "Power Automate". If **Power Automate for desktop** is in the list, it's the MSI version. **Power Automate** is the Microsoft Store version.
 
 ## Uninstall Power Automate
 

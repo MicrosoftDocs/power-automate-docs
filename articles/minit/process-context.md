@@ -45,6 +45,6 @@ On the **Process context** screen, you can launch the following capabilities. To
 - **General settings**: Select the [default **Activity label**](view-settings.md).
 
 
-### See also
+## Related information
 
 [Explore the home page](process-hub.md)

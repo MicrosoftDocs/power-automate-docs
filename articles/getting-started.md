@@ -1,17 +1,15 @@
 ---
 title: Get started with Power Automate
-description: Learn how to navigate the Power automate home page.
-author: jamiemwork
+description: Learn how to navigate the Power Automate home page.
+author: kisubedi
 contributors:
+  - kisubedi
   - jamiemwork
-  - -kisubedi
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 11/10/2023
-ms.author: jamiller
+ms.date: 04/01/2025
+ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -23,11 +21,15 @@ ms.collection:
 
 # Get started with Power Automate
 
+Power Automate allows you to optimize your business processes across your organization and automate repetitive tasks. This service helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. It does this with the help of task mining and process mining.
+
+## Get started from the home page
+
 The Power Automate home page offers you various options for creating your own flows and learning about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate can help your business.
 
 If your organization has AI enabled, then it also includes the new Copilot features.
 
-To learn more, select the links below.
+To learn more, select the following links.
 
 :::image type="content" source="media/getting-started/home-full-numbers.png" alt-text="Screenshot of the new look of the home screen.":::
 
@@ -56,7 +58,7 @@ Legend:
 
 1. **Learn**: Learn experience takes you to the Power Automate product documentation.
 
-1. **My Flows**: If you've created a flow, or someone else has created one and shared it with you, you can view or edit it.
+1. **My Flows**: If you created a flow, or someone else created one and shared it with you, you can view or edit it.
 
 1. **Your most used pages**: When you first sign in, items such as **Approvals**, **Solutions**, **Process mining**, **AI models**, and **Desktop Flow Activity** appear in the left navigation menu by default. Use the **More** menu item to [unpin](#pin-and-unpin) any of these items and [pin](#pin-and-unpin) something else.
 
@@ -134,19 +136,19 @@ Environments where you have either system administrator and/or system customizer
 > - To view the environment list in the environment switcher in Power Automate, you must have the Environment Maker, System Customizer, or System Administrator security role in the environment. For information about predefined security roles, see [Predefined security roles](/power-platform/admin/database-security#predefined-security-roles) in the Microsoft Power Platform admin guide.
 > - Make sure that you're in the correct environment *before* you create a flow, an app, or a similar component. You can't easily move components from one environment to another.
 > - Every member in an organization can access the [default environment](/power-platform/admin/environments-overview#the-default-environment). Like any environment, users can see flows where they have sufficient privileges to access a flow.
-> - When you create a flow in one environment, you won't be able to see it from another environment. 
+> - When you create a flow in one environment, you aren't able to see it from another environment.
 
-For more information, see [Environments overview](/power-platform/admin/environments-overview)
+Learn more in [Environments overview](/power-platform/admin/environments-overview).
 
-#### Frequently asked questions about environments
+#### FAQ about environments
 
 **Why does Power Automate show different environments compared to Power Apps?**
 
-Power Automate and Power Apps will both show environments with administrator access and environment maker access.
+Power Automate and Power Apps both show environments with administrator access and environment maker access.
 
-Power Apps will show environments with app contributor access, when users without a maker-level security role assigned but with edit permission to at least one canvas app in the environment. More information: [Choose an environment in Power Apps](/power-apps/maker/canvas-apps/sign-in-to-power-apps#choose-an-environment)
+Power Apps shows environments with app contributor access, when users without a maker-level security role assigned but with edit permission to at least one canvas app in the environment. Learn more in [Choose an environment in Power Apps](/power-apps/maker/canvas-apps/sign-in-to-power-apps#choose-an-environment).
 
-Power Automate will show environments user can approve approvals. User will be granted read access to environments have approvals.
+Power Automate shows environments user can approve approvals. Users are granted read access to environments that have approvals.
 
 Since approvals are frequently used in Power Automate, users could have read access to many environments.
 
@@ -207,8 +209,15 @@ Here's the list of the main categories:
 
 - **More to explore in Power Automate:** Discover all that Power Automate has to offer such as video how-tos and the Power Automate Community forum.
 
-- **What's new:** Learn about upcoming events as well as new and updated product features.
+- **What's new:** Learn about upcoming events and new and updated product features.
 
 ## 6 - Ask a chatbot
 
 Get contextual help while building your flow using the Power Platform virtual agent. To learn more, go to [Get contextual help with flows from the Microsoft Copilot Studio bot](contextual-help-bot.md).
+
+## Related information
+
+- [Training: Get started with Power Automate (module)](/training/modules/get-started-flows/)
+- [Training: Automate a business process using Power Automate (learning path)](/training/paths/automate-process-power-automate/)
+
+[!INCLUDE[footer-include](includes/footer-banner.md)]

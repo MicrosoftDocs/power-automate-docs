@@ -89,7 +89,7 @@ Only the [owner or co-owner](/sharepoint/dev/business-apps/power-automate/gui
 
 1. The **Import** button becomes active once you've successfully configured all the required settings. Select **Import**.
 
-### See also
+## Related information
 
 - [Export a solution](export-flow-solution.md#export-a-specific-solution-cloud-flow)
 - [Import a solution](/power-automate/import-flow-solution)

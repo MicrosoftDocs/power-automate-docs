@@ -9,8 +9,8 @@ contributors:
   - tatn
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 06/06/2024
-ms.author: derahonuorah
+ms.date: 10/30/2024
+ms.author: heortaol
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -34,7 +34,6 @@ The business value of the process mining capability lies in its ability to help 
 - **Optimize resources**: Process mining enables businesses to identify opportunities for automation, reducing the need for manual intervention and allowing resources to be allocated more effectively.
 - **Ensure compliance**: Process mining can help organizations to identify noncompliant processes and take corrective action to avoid legal and financial risks.
 - **Improve supply chain management processes**: Create processes that help warehouse and operations managers gain insights into the material flow in the warehouse. This can help improve the performance of the warehouse. To learn more, go to [Analyze warehouse material movement through process mining (preview)](/dynamics365/supply-chain/warehousing/warehouse-material-movement-analysis).
-- **Receive personal recommendations**: Get personal recommendations for automation opportunities based on your Microsoft 365 usage. Process Mining intelligently creates automation recommendations based on your Microsoft 365 role title, email, and calendar invites to help get your started on your automation journey. The prompts created through intelligent recommendations allow you to use the natural language to flow feature in Power Automate to create an automation personal to you.
 
 ## Business examples
 
@@ -77,6 +76,4 @@ Following are the main components for the process mining capability:
 - [Edit and refresh processes](process-mining-data-source.md)
 - [Share processes](process-mining-share.md)
 
-### See also
 
-[FAQ for Process Mining's Microsoft 365 personal recommendations](faqs-process-mining-m365-personal-recommendations.md)

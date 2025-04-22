@@ -82,6 +82,6 @@ Case information can be exported from the **Case overview**.
 
     :::image type="content" alt-text="Screenshot of the case information export." source="media/case-cost-export.png":::
 
-### See also
+## Related information
 
 [Statistics overview](statistics.md)

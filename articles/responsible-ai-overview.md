@@ -1,7 +1,7 @@
 ---
 title: Responsible AI FAQs for Power Automate
 description: Responsible AI FAQs discusses AI technology in Power Automate and the key considerations for making use of this technology responsibly.
-ms.date: 05/15/2023
+ms.date: 04/01/2025
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -17,8 +17,12 @@ ms.collection: bap-ai-copilot
 
 [!INCLUDE[responsible-ai-features](./includes/responsible-ai-features.md)]
 
-- [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
+- [Get started with Copilot in cloud flows](get-started-with-copilot.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
+- [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md)
+- [FAQ for Copilot expression assistant](faqs-copilot-expression-assistant.md)
+- [Create generative actions in cloud flows (preview)](create-generative-actions.md)
+- [FAQ for generative actions in cloud flows](faqs-generative-actions.md)
 - [Copilot in Process Mining ingestion (preview)](process-mining-copilot-in-ingestion.md)
 - [Copilot in Process Mining process analytics (preview)](process-mining-copilot-in-process-analytics.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)

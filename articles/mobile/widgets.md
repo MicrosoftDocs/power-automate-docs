@@ -52,7 +52,7 @@ The widget will show only the top eight (8) flows on an iOS device.
 
     :::image type="content" source="../media/mobile/widget-run.png" alt-text="Screenshot of the widget on your home screen.":::
 
-### See also
+## Related information
 
 [Power Automate mobile app overview](overview-mobile.md)
 

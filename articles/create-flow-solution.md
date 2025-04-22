@@ -142,7 +142,7 @@ The **Objects** tab of a solution shows all the solution objects in the solution
 
 Administrators can use PowerShell to quickly add many or all non-solution cloud flows into Dataverse solutions using the [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution) cmdlet. To learn more, go to [Add flows into Dataverse solutions via PowerShell](/power-platform/admin/powerapps-powershell#Add-flows-into-Dataverse-solutions).
 
-### See also
+## Related information
 
 - [Add canvas apps and cloud flows to a solution by default](/power-apps/maker/canvas-apps/add-app-solution-default)
 - [Create a solution](./overview-solution-flows.md)

@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: mattp123
 ms.topic: conceptual
-ms.date: 07/02/2024
+ms.date: 04/11/2025
 ms.author: iomavrid
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
@@ -37,6 +37,18 @@ You can use the following registry entry to keep users from manually updating Po
 ***Value***
 
 - **1**: Users can't manually update Power Automate for desktop.
+
+## Prevent users from manually configuring Power Automate for desktop to start automatically
+
+Use the following registry entry to prevent users from manually configuring Power Automate for desktop to start automatically. This key only applies to installer (MSI) versions.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_CURRENT_USER | SOFTWARE\Microsoft\Power Automate Desktop | DisableAutoStartConfiguration | DWORD |
+
+***Value***
+
+- **1**: Users can't manually select to automatically start Power Automate for desktop.
 
 ## Prevent users accessing Power Automate for desktop using certain kinds of accounts
 
@@ -142,7 +154,7 @@ You can use the following registry entry to allow users to select the organizati
 
 ## Configure Power Automate for desktop to connect to a region
 
-You can use the following registry entry to set the region where users will connect to by default during sign-in.
+You can use the following registry entry to set the region where users connect to by default during sign-in.
 
 > [!NOTE]
 > Values **0** and **1** apply to older versions of Power Automate for desktop, prior to version 2.41.
@@ -246,7 +258,7 @@ You can use the following registry entry to enable or disable the collection of 
 
 ***Value***
 
-- **0**: Power Automate for desktop won't collect optional diagnostic usage data.
+- **0**: Power Automate for desktop doesn't collect optional diagnostic usage data.
 - **1**: Power Automate for desktop collects optional diagnostic usage data.
 
 ## Prevent Power Automate for desktop from taking screenshots for action logs upon error
@@ -259,7 +271,7 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 ***Value***
 
-- **1**: Power Automate for desktop won't take a screenshot for the action logs when an error occurs during a flow run.
+- **1**: Power Automate for desktop doesn't take a screenshot for the action logs when an error occurs during a flow run.
 
 ## Prevent Power Automate for desktop from uploading action logs after a desktop flow execution
 
@@ -271,11 +283,28 @@ You can use the following registry entry to prevent Power Automate for desktop f
 
 ***Value***
 
-- **1**: Power Automate for desktop won't upload detailed action logs for the respective run of the flow's run history.
+- **1**: Power Automate for desktop doesn't upload detailed action logs for the respective run of the flow's run history.
 
 ## Configure or disable desktop flow action logs per environment (preview)
 
 See [Desktop flow action logs configuration (preview)](configure-desktop-flow-logs.md).
+
+## Configure the generation of desktop flow action logs on the local machine for designer-based runs
+
+Use the following registry entry to configure whether local Power Automate Desktop Designer runs should store their action logs on the local machine. This option can be useful for debugging and troubleshooting scenarios, allowing you to examine the logs without checking each action's input and output individually.
+
+> [!NOTE]
+> This feature does not automatically clean up the logs generated during designer runs. Make sure you have sufficient local disk space to store the logs or manually clean up older run data.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | EnableDesignerExecutionLogs | DWORD |
+
+***Value***
+
+- **1**: Enables persistence of Power Automate for desktop execution logs on the local file system, without uploading them to Dataverse. After a flow execution from Power Automate Desktop Designer is completed, the execution logs can be found at the following path:
+
+    ```%LOCALAPPDATA%\Microsoft\Power Automate Desktop\Designer\Scripts\<scriptId>\Runs\<runId>\Actions.log```
 
 ## Configure Power Automate for desktop notification settings
 
@@ -315,6 +344,18 @@ You can use the following registry entry to enforce the confirmation dialog or d
 
 - **1**: Power Automate for desktop always displays a confirmation dialog when invoking flows using a URL or desktop shortcut. Users aren't allowed to change this option through the console settings.
 - **2**: Users aren't allowed to invoke flows using a URL or desktop shortcut.
+
+## Configure Power Automate for desktop to disable the security check to run shared flows if the author is not trusted
+
+A security check does not allow users to run shared flows if they have not trusted the author. You can use the following registry entry to disable this security check.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_CURRENT_USER | SOFTWARE\Microsoft\Power Automate Desktop | DisableAskBeforeRunningASharedFlow | DWORD |
+
+***Value***
+
+- **1**: Power Automate for desktop doesn't display a dialog to confirm running a shared flow, when the author is not trusted.
 
 ## Configure Power Automate for desktop to keep the flow run details
 
@@ -362,7 +403,7 @@ You can use the following registry entry to permit the use of the verbose loggin
 
 ***Value***
 
-- **1**: The verbose logging feature will be available to use via the troubleshooter of Power Automate for desktop.
+- **1**: The verbose logging feature is available to use via the troubleshooter of Power Automate for desktop.
 
 ## Turn on verbose logging state in Power Automate for desktop
 
@@ -374,7 +415,7 @@ You can use the following registry entry to turn on the verbose logging state fo
 
 ***Value***
 
-- **1**: The verbose logging state will be turned on for Power Automate for desktop.
+- **1**: The verbose logging state is turned on for Power Automate for desktop.
 
 ## Allow users to register their machine to a different tenant in Power Automate machine-runtime app
 
@@ -436,7 +477,7 @@ As a Power Platform admin you can prevent users from sending feedback to Microso
 
 To prevent your users from using any copilot capability contact Microsoft Customer Support to disable all copilot functionality in your tenant. More information: [Get Help + Support](/power-platform/admin/get-help-support)
 
-### See also
+## Related information
 
 - [Create Power Automate desktop flows](create-flow.md).
 - [Run desktop flows](run-desktop-flow.md).

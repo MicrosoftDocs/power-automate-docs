@@ -110,7 +110,7 @@ You must define severities before you can save the business rule. The simplest d
 
 If the business rule doesn't have a custom output defined, severities are applied over the default output, count.
 
-### See also
+## Related information
 
 [Process context](process-context.md)  
 [Business rules for process maps](business-rules-process-map.md)  

@@ -4,7 +4,7 @@ description: Learn about the Power Automate v2 schema.
 author: nvigne
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 05/06/2024
+ms.date: 03/05/2025
 ms.author: nvigne
 ms.reviewer: matp
 contributors:
@@ -44,23 +44,7 @@ Starting January 2024, v2 schema is automatically enabled for all environments. 
 
 Later in 2024, v2 schema will be turned on for all environments without the option to disable the feature and the option won't be visible in Power Platform admin center. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
 
-As of April 25th, 2024, the v2 schema is enabled by default in the following geographies:
-
-- Canada
-- South Africa
-- Switzerland
-- Norway
-- Korea
-- South America
-- Australia
-- Singapore
-- United-Kingdom
-- India
-- France
-- Germany
-- UAE
-- Asia
-- Japan
+As of October 1st, 2024, the v2 schema is enabled by default in all Public regions of the Power Platform.
 
 ## Manage desktop flows in environments with the v2 schema enabled
 
@@ -109,7 +93,7 @@ When you save a desktop flow in v2 schema, you might see the following error:
 
 :::image type="content" source="media/schema/desktopflow-v2-limit.png" alt-text="Error during flow save error message indicating limit on the flow size.":::
 
-The limit applies to the definition of the desktop flow saved in Dataverse, which can't exceed 10 MB. The issue can happen when you have a large desktop flow, which could occur when actions have a large value in their properties or variables have a large default value. One example could be an image saved as base64 and put into the default variable value.
+The limit applies to the definition of the desktop flow saved in Dataverse, which can't exceed 16M characters. The issue can occur with a large desktop flow, such as when actions have large property values or variables have large default values. For example, an image saved as base64 and set as a default variable value.
 
 We recommend to not store a large payload in the action properties or in the variable default value. Instead retrieve the value from other actions or pass the value as an input variable. You can also split your desktop flow into multiple child desktop flows.
 
@@ -138,6 +122,7 @@ If you use custom security roles to manage the access to your desktop flow, Powe
 - `prvAssigndesktopflowbinary`
 - `prvAppenddesktopflowbinary`
 - `prvAppendTodesktopflowbinary`
+- `prvReadSolution`
 
 The minimum access level for each privilege is basic (user). More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
 

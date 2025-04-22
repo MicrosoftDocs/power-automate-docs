@@ -49,6 +49,6 @@ Select an activity in the process map to view its details. In the **Business rul
 
 :::image type="content" alt-text="Screenshot of a process map details display mode." source="media/brpmdetails.png":::
 
-### See also
+## Related information
 
 [Business rules overview](business-rules.md)

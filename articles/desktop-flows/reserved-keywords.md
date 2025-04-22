@@ -74,7 +74,7 @@ Reserved keywords for the Power Automate for desktop's engine can't be used for 
 - XOR
 - YES
 
-### See also
+## Related information
 
 - [Variables](./actions-reference/variables.md)
 - [Custom objects](variable-data-types.md#custom-object)

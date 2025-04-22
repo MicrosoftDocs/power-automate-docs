@@ -4,7 +4,7 @@ description: Common questions and answers for machine group certificate renewal.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/16/2022
+ms.date: 12/12/2024
 ms.author: gachasta
 ms.reviewer: matp
 contributors:
@@ -49,11 +49,11 @@ If all the machines of a machine group missed the certificate renewal, you can't
 
 ## What if desktop flow connections are unused during the machine group certificate renewal?
 
-If a desktop flow connection is unused during the machine group certificate renewal, you need to fix this connection:
+If a desktop flow connection is unused during the machine group certificate renewal, you get `ExpiredDesktopFlowConnection` errors when you try to use it. Fix the connection by:
 
 - Go to the Power Automate portal.
 - Navigate to **Data** > **Connection**.
-- Look for desktop flow connections with the status **Fix connection**, and open them to reenter the necessary information.
+- Find the expired connection, select it, select **Edit**, and reenter the necessary information.
 
 ## What if some machines are expected to remain offline or unused for multiple months?
 

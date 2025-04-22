@@ -2,7 +2,7 @@
 title: Support for guest users
 description: Learn support scenarios for guest users, including how to create, share, and approve flows.
 author: natalie-pienkowska
-ms.date: 07/09/2023
+ms.date: 03/07/2025
 ms.custom: 
 ms.topic: conceptual
 ms.author: lali
@@ -42,7 +42,7 @@ If a guest user needs to only run a flow, they need to have the **Sharing-Run On
 
 ### Approvals
 
-A guest user can be assigned an approval, receive an approval email, and be routed to the **Approvals** page in the guest tenant to approve or reject. They can also view and interact with the approval email body in the same way as a nonguest user.
+A guest user can be assigned an approval, receive an approval email, and be routed to the **Approvals** page in the guest tenant to approve or reject.
 
 Guest users can't see the approvals from their guest tenant while they're in their original tenant, or from their original tenant while they're in their guest tenant.  
 
@@ -60,7 +60,7 @@ Some connectors don't support this capability.
 
 To set up B2B collaboration between tenants in different clouds, both guest user and nonguest user tenants need to configure their Microsoft cloud settings to enable collaboration with the other cloud. Then, each tenant must configure inbound and outbound cross-tenant access with the tenant in the other cloud. To learn more, go to [Configure Microsoft cloud settings for B2B collaboration](/azure/active-directory/external-identities/cross-cloud-settings).
 
-### See also
+## Related information
 
 - [Microsoft Entra B2B in government and national clouds](/azure/active-directory/external-identities/b2b-government-national-clouds)
 - [Assign Azure roles to external guest users using the Azure portal](/azure/role-based-access-control/role-assignments-external-users)

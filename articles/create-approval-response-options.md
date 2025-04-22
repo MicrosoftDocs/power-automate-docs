@@ -112,7 +112,7 @@ Approvals that rely on custom responses can fail if they're sent to many users w
 >[!NOTE]
 >For approvals using a single custom response, Outlook and OWA expand the response field so users do not need to select a button before they can respond like they do when there are multiple approval options.
 
-### See also
+## Related information
 
 - [Create single approver flows](modern-approvals.md)
 - [Create sequential approver flows](sequential-modern-approvals.md)

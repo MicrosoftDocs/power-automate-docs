@@ -1,7 +1,7 @@
 ﻿---
 title: Copilot in Process Mining process analytics (preview)
 description: Learn how to surface insights on your process and get recommended solutions with Copilot.
-ms.date: 12/18/2023
+ms.date: 04/01/2025
 ms.topic: conceptual
 author: janPidych
 contributors:
@@ -34,7 +34,7 @@ You need a Power Platform environment for Copilot in Process Mining.
 
 > [!NOTE]
 > - If you still don’t see the Copilot experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center.
-> - In some geographic regions outside United States, Australia, and United Kingdom, an admin needs to turn on the cross geo calls to enable Copilot. More informatfion: [Copilot availability by region](get-started-with-copilot.md#availability-by-region).
+> - In some geographic regions outside United States, Australia, and United Kingdom, an admin needs to turn on the cross geo calls to enable Copilot. More information: [Copilot availability by region](get-started-with-copilot.md#availability-by-region).
 
 ## Copilot in Process Mining analysis
 
@@ -151,7 +151,7 @@ Have your tenant admin ask the MS Support team to disable Copilot in your tenant
 - You can't use Copilot if you're using a personal Microsoft account. For example, you can't use `someone@live.com`. Use a work or school account like `someone@contoso.com` instead.
 - Copilot supports English language only for models.
 
-### See also
+## Related information
 
 - [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)

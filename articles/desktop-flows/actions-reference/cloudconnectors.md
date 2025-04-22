@@ -4,11 +4,12 @@ description: Learn about the available Cloud Connector operations in Power Autom
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 05/24/2024
-ms.author: dipapa
+ms.date: 03/21/2025
+ms.author: iomavrid
 ms.reviewer: 
 contributors:
   - DanaMartens
+  - dipapa
 search.audienceType: 
   - flowmaker
   - enduser
@@ -16,36 +17,17 @@ search.audienceType:
 
 # Cloud Connectors as Power Automate for desktop actions
 
-> [!IMPORTANT]
-> There are some known connector action issues in older versions of Power Automate for Desktop (versions older than v2.44). If you're using Power Automate for desktop version 2.43 or earlier, you might experience issues where connector actions don't load correctly in desktop flows such as:
-> - connector actions missing from the designer's action panel
-> - "unknown action" errors in desktop flows linked to connector actions
-> - incorrect console initiated executions (local runs) due to cloud connector actions  
->
-> To resolve this issue, update Power Automate for desktop to the latest available version.
->
-> For patched versions of previous releases, refer to the following list:
-> - [2.43](https://go.microsoft.com/fwlink/?linkid=2272572)
-> - [2.42](https://go.microsoft.com/fwlink/?linkid=2272571)  
-> - [2.41](https://go.microsoft.com/fwlink/?linkid=2272390)  
-> - [2.40](https://go.microsoft.com/fwlink/?linkid=2272389)  
-> - [2.39](https://go.microsoft.com/fwlink/?linkid=2272570)
-> - [2.38](https://go.microsoft.com/fwlink/?linkid=2272859)  
-
-[Cloud Connectors available for Power Automate](/connectors/connector-reference/connector-reference-powerautomate-connectors) are gradually introduced for desktop flows as well.
+[Cloud Connectors available for Power Automate](/connectors/connector-reference/connector-reference-powerautomate-connectors) are now available for desktop flows as well.
 
 ## Prerequisites and limitations
 
 - You need an Attended RPA license.
-- Specific endpoints must be included in the allowlist for desktop flows containing cloud connector actions to work properly. More information: [Desktop flow services required for runtime](../../ip-address-configuration.md#desktop-flows-services-required-for-runtime)
+- Specific endpoints must be included in the allowlist for desktop flows containing cloud connector actions to work properly. More information: [Desktop flow services required for runtime](../../ip-address-configuration.md#allow-machines--users-on-your-network-to-access-power-automate-desktop-services)
 - For **Office 365 Outlook** actions, if you're using an EWS application access policy, ensure that the following user-agents are allowed (on top of the user agents listed [here](/connectors/office365/#common-errors)) for successful desktop flow execution: PowerAutomateLocal/*, PowerAutomateCloud/*
-- Dynamic output schema isn't fully supported for cloud connector actions in desktop flows. Refrain from using variables in the respective dropdown fields (Site address/ List name/ Select file etc.) while configuring a cloud connector action.
-- Sharing desktop flows with cloud connector actions isn't currently supported. Co-owners aren't able to run such desktop flows unless they overwrite the connection references with their own. Users with read access are unable to run such flows.
+- Sharing desktop flows with cloud connector actions is currently supported with certain requirements. Learn more in [Share desktop flows that contain connector actions](../how-to/share-desktop-flows-that-contain-connector-actions.md). Learn about connector actions and their association with connections and connection references in [Use connector actions](../how-to/use-connector-actions.md).
 - To enable attended or unattended runs (cloud-initiated runs), make sure your desktop flow uses the [Power Automate v2 schema](../schema.md) and all connection references are marked as embedded.
-- Connection reference embedding is only available for co-owners. Users (run-only) can execute flows shared with them only via Power Automate for desktop's console using their own connections.
-- Desktop flows with embedded connection references don't currently support application lifecycle management (ALM) capabilities.
-- [Microsoft Dataverse (preview)](/connectors/commondataserviceforapps) has the following limitations:
-  - The connector is currently available only for desktop flows in the public cloud.
+- Connection reference embedding is only available for co-owners. Users (run-only) can run flows shared with them only via Power Automate for desktop's console using their own connections.
+- The [Microsoft Dataverse](/connectors/commondataserviceforapps) connector supports the option *Current* in the *Environment* parameter of its operations in desktop flows. This option allows dynamic resolution based on the environment. This connector also has the following limitations:
   - The following actions are currently supported in desktop flows:
     - [Add a new row to selected environment](/connectors/commondataserviceforapps/#add-a-new-row-to-selected-environment)
     - [Delete a row from selected environment](/connectors/commondataserviceforapps/#delete-a-row-from-selected-environment)
@@ -65,25 +47,21 @@ To pass a file as an input to a cloud connector action, you must first convert i
 
 Cloud connector actions that create or retrieve files actually produce binary data representing the respective files. To access the actual file, make sure to use the [Convert binary data to file](file.md#convertbinarytofileaction) action first.
 
-## Embed connection references on a desktop flow (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+## Embed connection references on a desktop flow
 
 With connection reference embedding, you can provide other co-owners access to your connection references and their underlying resources. You do this process only in the scope of the respective shared desktop flow.
-
-[!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 To embed a connection reference to a flow, you have access to as a co-owner:
 
 - Select the desktop flow in Power Automate (make.powerautomate.com), and then select **Details**.
 - In the **Connection references** section, select **Manage.**
 
-:::image type="content" source="media/cloudconnectors/manage_connection_references_button.png" alt-text="Screenshot of the Manage Connections button" border="false":::
+    :::image type="content" source="media/cloudconnectors/manage_connection_references_button.png" alt-text="Screenshot of the Manage Connections button" border="false":::
 
 - In the **Connection references** screen all of the connection references used in a flow are displayed.
 - Set the **Embed in desktop flow** option to **Yes** to enable it.
 
-:::image type="content" source="media/cloudconnectors/embed_a_connection_reference_to_a_flow.png" alt-text="Screenshot of the Manage Connections menu" border="false" lightbox="media/cloudconnectors/embed_a_connection_reference_to_a_flow.png":::
+    :::image type="content" source="media/cloudconnectors/embed_a_connection_reference_to_a_flow.png" alt-text="Screenshot of the Manage Connections menu" border="false" lightbox="media/cloudconnectors/embed_a_connection_reference_to_a_flow.png":::
 
 After you confirm your selection, the connection reference is embedded in the desktop flow.
 
@@ -102,13 +80,13 @@ All co-owners and run-only users are required to bring your own connection (BYOC
 > [!NOTE]
 > BYOC is available for both co-owners and run-only makers. BYOC is only available for console initiated flow executions.
 
-## List of Cloud Connectors
+## List of cloud connectors
 
-Here's a list of in Cloud Connectors in Power Automate for desktop currently available:
+These cloud connectors are added by default to desktop flows in Power Automate for desktop and are always visible in the actions pane:
 
-- [Microsoft Dataverse (preview)](/connectors/commondataserviceforapps)
+- [Microsoft Dataverse](/connectors/commondataserviceforapps)
 - [SharePoint](/connectors/sharepointonline)
-- [Excel Online (Business)](/connectors/excelonline)
+- [Excel Online (Business)](/connectors/excelonlinebusiness)
 - [Microsoft Forms](/connectors/microsoftforms)
 - [Microsoft Teams](/connectors/teams)
 - [Office 365 Outlook](/connectors/office365)
@@ -117,3 +95,18 @@ Here's a list of in Cloud Connectors in Power Automate for desktop currently ava
 - [OneNote (Business)](/connectors/onenote)
 - [RSS](/connectors/rss)
 - [Word Online (Business)](/connectors/wordonlinebusiness)
+
+You can add the rest of the (non-custom) Power Automate cloud connectors to a desktop flow through the [Assets library](../assets-library.md#connectors-tab).
+
+> [!NOTE]
+> Future updates and additions to non-custom Power Automate connectors and their operations automatically appear in Power Automate for desktop.
+
+### Known limitations
+
+- Create a connection for a connector in desktop flows through the sign-in dialog. If an error occurs, create the connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
+
+    :::image type="content" source="media/cloudconnectors/connector-banner-warning-to-create-connection-in-portal.png" alt-text="Screenshot of the sign in dialog in connector actions including a banner message" border="false":::
+
+- Not all connection types are supported to be created through Power Automate for desktop. For these connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
+
+    :::image type="content" source="media/cloudconnectors/connector-banner-prompt-to-create-connection-in-portal.png" alt-text="Screenshot of the connector actions including a banner message that prompts to create a connection through the portal" border="false":::

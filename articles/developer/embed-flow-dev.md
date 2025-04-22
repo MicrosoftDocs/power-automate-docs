@@ -4,7 +4,7 @@ description: Embed the Power Automate experiences into your website or app.
 author: v-aangie
 ms.subservice: developer
 ms.topic: conceptual
-ms.date: 02/02/2023
+ms.date: 10/10/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -220,7 +220,7 @@ templatesSettings?: {
 
 | Parameter |Required/Optional | Description                                                                        
 |-----------|-------------------|-----------------| 
-|`defaultParams` | Optional          | Design time parameters to use when creating a cloud flow from a template, for example: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': 'b3a5baa8-fe94-44ca-a6f0-270d9f821668'   } ```| 
+|`defaultParams` | Optional          | Design time parameters to use when creating a cloud flow from a template, for example: <br /> ``` defaultParams: {'parameters.sharepoint.site': 'https://microsoft.sharepoint.com/teams/ProcessSimple', 'parameters.sharepoint.list': '00001111-aaaa-2222-bbbb-3333cccc4444'   } ```| 
 | `destination` | Optional          | Valid values are 'new' or 'details'. When set to 'details', a detail page is shown when creating a cloud flow from a template.     |
 | `pageSize` | Optional          | Number of templates to display. Default size = 6 | 
 | `searchTerm` | Optional          | Display templates that match the provided search term| 
@@ -423,8 +423,6 @@ A sample JavaScript Single Page Application (SPA) is provided in the resources s
     ![Screenshot showing the access token box containing an access token.](../media/embed-flow-dev/SampleApp-AccessToken.png)
 8. Select **Load Flows widget** or **Load Templates widget** to embed the corresponding widgets.
     ![Screenshot showing buttons to embed the Load Flows widget or the Load Templates widget.](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
-
-Sample application [download link](https://procsi.blob.core.windows.net/docs/FlowWidgetSampleApp.zip).
 
 ## Resources
 

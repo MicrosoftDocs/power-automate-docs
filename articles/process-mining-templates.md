@@ -157,7 +157,7 @@ The process mining capability will analyze your process. It might take up to two
 
 Learn how to [visualize and gain insights from processes](process-mining-visualize.md). You can also use the custom attributes filter to dive deeper into your insights.
 
-### See also
+## Related information
 
 - [Introduction to desktop flows](desktop-flows/introduction.md)  
 - [Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents)

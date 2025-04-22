@@ -158,11 +158,12 @@ For example, to display the current time in Eastern Standard time, you can use t
   
 `formatDateTime(convertTimeZone(utcNow(), 'UTC', 'Eastern Standard Time'), 'yyyy-MM-dd HH:mm:ss')` // Returns the date time adjusted for Eastern Standard time
 
-### See also
+## Related information
 
 For more information on the date and time function, select the following articles.
 
 - [Convert a time zone](convert-time-zone.md)
 - [formatDateTime function reference](/azure/logic-apps/workflow-definition-language-functions-reference#formatdatetime)
 - [Format dates by examples](format-data-by-examples.md#format-dates-by-examples)
+- [Training: Introduction to expressions in Power Automate (module)](/training/modules/introduction-expressions/)
 

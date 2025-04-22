@@ -91,6 +91,6 @@ The metrics in the following table are in the summary row.
 | Loop events | Percentage of events in loops relative to the total number of events in the view |
 | Rework events | Percentage of events in rework relative to the total number of events in the view |
 
-### See also
+## Related information
 
 [Statistics overview](statistics.md)

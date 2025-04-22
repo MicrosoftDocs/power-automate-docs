@@ -82,6 +82,6 @@ The metrics in the following table are available in the summary header.
 | Loop events    | Shows the percentage of edges in loops relative to the total number of edges in the view. An edge is in the loop if its ending node (activity) is repeated within a case. |
 | Rework events   | Shows the percentage of edges in rework relative to the total number of   edges in the view. Rework edge is edge either in a loop or in a self-loop.   |
 
-### See also
+## Related information
 
 [Statistics overview](statistics.md)

@@ -51,7 +51,7 @@ After you complete the custom action inclusion and close the asset library, the 
 
 To include a custom action in a desktop flow, drag and drop or double-click on it.
 
-### See also
+## Related information
 
 - [Assets library ](assets-library.md)
 - [Upload custom actions](upload-custom-actions.md)

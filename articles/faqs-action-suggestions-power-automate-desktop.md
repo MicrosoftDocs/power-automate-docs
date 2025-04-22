@@ -1,7 +1,7 @@
 ---
 title: FAQ for suggested actions in Power Automate for desktop
 description: This FAQ discusses suggested actions in Power Automate for desktop and the key considerations for making use of this technology responsibly.
-ms.date: 01/16/2024
+ms.date: 04/01/2025
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: article
@@ -22,7 +22,7 @@ Suggested actions can help you discover the next step of your automation by anal
 
 ## What is/are action suggestions intended use(s)?
 
-The intended use of suggested actions is to allow users to quickly discover actions that can be used as the next building steps in their automations without searching the full list of actions in the designer.
+The intended use of suggested actions is to allow users to quickly discover actions that can be used as the next building steps in their automation without searching the full list of actions in the designer.
 
 ## How can I use the suggested actions functionality?
 
@@ -38,8 +38,10 @@ We meticulously tested the AI model through various internal processes and revie
 
 ## What are the limitations of the suggested actions? How can the users minimize the impact of feature when using the system?
 
-The suggested actions capability can only propose actions currently available in the Power Automate for desktop’s standard library of actions. It can't propose actions that are custom-made by an organization (custom actions).
+- The suggested actions Copilot capability can only propose actions currently available in the Power Automate for desktop’s standard library of actions. It can't propose actions that are custom-made by an organization (custom actions).
+- The suggested actions Copilot capability is available to environments deployed in the following regions: Asia Pacific, Australia, Canada, France, Germany, India, Japan, Korea, Norway, Singapore, South Africa, Switzerland, United Arab Emirates, United Kingdom, and United States.
+- This capability is available only to users with a work or school account.
 
-## See also
+## Related information
 
 [Configure actions and the actions pane](desktop-flows/actions-pane.md)

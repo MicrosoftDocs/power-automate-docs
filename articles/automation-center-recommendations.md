@@ -1,9 +1,9 @@
 ---
-title: Boost automation health with Automation center recommendations (preview)
+title: Boost automation health with Automation center recommendations 
 description: Enhance your automation's reliability and efficiency with the Automation Center's targeted recommendations, offering actionable insights and best practice suggestions.
 ms.topic: conceptual
-ms.date: 05/20/2024
-ms.author: appapaio
+ms.date: 01/14/2025
+ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
   - DanaMartens
@@ -15,9 +15,7 @@ search.audienceType:
   - maker
 ---
 
-# Automation center recommendations (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+# Automation center recommendations
 
 The automation center offers targeted recommendations aimed at enhancing the reliability, efficiency, and general health of your automation. You can find actionable insights such as:
 
@@ -26,8 +24,6 @@ The automation center offers targeted recommendations aimed at enhancing the rel
 - identification of unused machines or machine groups in the environment
 - many more
 
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-
 ## Key capabilities
 
 Key features of recommendations:
@@ -35,12 +31,12 @@ Key features of recommendations:
 - Get proactive and reactive recommendations, grounded on best practices.
 - Enhance the overall health, compliance, and performance of automation across your environment.
 - Take corrective actions directly from the list of affected automation artifacts.
-- Hiding recommendations for an hour, a day, a week or even indefinitely.
 
 ## Prerequisites
 
 To see and use recommendations in automation center, the following are required:
 
+- From December 2024 (general availability), a Dataverse environment with [managed environment](/power-platform/admin/managed-environment-enable) enabled.
 - Premium Power Automate license
 - Environment maker role (or other roles that include access to recommendation data)
 
@@ -62,28 +58,6 @@ The recommendation card shown in the following image is the entry point to your 
 - **Actions or details**: Call to action or detail that provides more in-depth information about the specific recommendation.
 - **Card actions**: Ability to hide recommendations for varying durations such as an hour, day, week, or even indefinitely.
 
-### Hide & show recommendation
-
-**Hide**
-Recommendations can be hidden and shown again. You can choose between varying durations such as an hour, day, week, or even indefinitely.
-
-:::image type="content" source="media/automation-center/recommendation-hiding.png" alt-text="Screenshot of a recommendation card on automation center overview page that allows to hide a recommendation for varying durations." lightbox="media/automation-center/recommendation-hiding.png":::
-
-**Hidden indicator**
-Once a recommendation is hidden, you see a different icon in the card next to the title.
-
-:::image type="content" source="media/automation-center/recommendation-hidden-icon.png" alt-text="Screenshot of a recommendation card on automation center overview page that shows a hidden recommendation." lightbox="media/automation-center/recommendation-hidden-icon.png":::
-
-**Unhide**
-If you hide certain recommendations, you can easily make them visible again. Just select the ellipses (...) on the card, and then select the **Show again** option.
-
-:::image type="content" source="media/automation-center/recommendation-show-again.png" alt-text="Screenshot of a recommendation card on the all recommendation panel that shows an unhide button." lightbox="media/automation-center/recommendation-show-again.png":::
-
-> [!NOTE]
-> Hidden recommendations are only hidden in the user experience. They are still generated on the backend.
-
-:::image type="content" source="media/automation-center/recommendation-card.png" alt-text="Screenshot of a recommendation card on automation center overview page." lightbox="media/automation-center/recommendation-card.png":::
-
 ### Recommendation details panel
 
 The recommendation details panel shown in the following image provides a more detailed view with inline, actionable insights. Here’s a detailed breakdown of the panel's components:
@@ -97,11 +71,9 @@ The recommendation details panel shown in the following image provides a more de
 - **Call to action or details**: Provides buttons for immediate actions or for further details.
 - **Affected artifact details**: A table or chart listing affected recommendation artifacts such as flows, work queues, machines etc.
 
-:::image type="content" source="media/automation-center/recommendation-details-panel.png" alt-text="Screenshot of a recommendation details panel on automation center overview page." lightbox="media/automation-center/recommendation-details-panel.png":::
-
 ## All recommendations panel
 
-The all recommendations panel shown in the following image is used for viewing latest and older recommendation with filtering capabilities. The recommendations are categorized by type (Error, Warning, Information, Success) and can be filtered by impact (High, Medium, Low), status (Hidden), and date range. This panel is divided into two main sections: one for displaying the most recent recommendations and another for showing older recommendations along with their timestamps. The most recent recommendations are initially displayed under 'Latest', but are replaced with refreshed content based on the recommendation interval.
+The all recommendations panel shown in the following image is used for viewing latest and older recommendation with filtering capabilities. The recommendations are categorized by type (Error, Warning, Information) and can be filtered by impact (High, Medium, Low), status (Hidden), and date range. This panel is divided into two main sections: one for displaying the most recent recommendations and another for showing older recommendations along with their timestamps. The most recent recommendations are initially displayed under 'Latest', but are replaced with refreshed content based on the recommendation interval.
 :::image type="content" source="media/automation-center/recommendation-history-panel.png" alt-text="Screenshot of a recommendation history panel listing current and previous recommendations on automation center overview page." lightbox="media/automation-center/recommendation-history-panel.png":::
 
 ### Category
@@ -124,16 +96,6 @@ The **type** indicates the severity or urgency of the recommendations.
 | Information | Provides best-practice recommendations you might want to consider. |  
 | Warning | Indicates a potential issue that might lead to a problem later if not addressed. |  
 | Error | Indicates a problem that needs to be resolved. |  
-
-### Impact
-
-The **impact** assesses the degree of effect an issue has on the overall automation health, compliance, or performance.
-
-| Impact | Description |  
-|---|---|  
-| Low | The issue has a minor effect on automation health, compliance, or performance. |  
-| Medium | The issue has a moderate effect on automation health, compliance, or performance. |  
-| High | The issue has a significant effect on automation health, compliance, or performance. |  
 
 ### Refresh frequency
 
@@ -166,8 +128,7 @@ The following list of recommendations aims to provide proactive guidance and act
 | Title | Work queue SLA violation |  
 | Card details | {*number of work queues*} work queues are out of compliance with their service level agreement (SLA). |  
 | Recommendation details | One or more work queue items are queued but expired. This usually indicates an SLA violation. |  
-| Type| Error |  
-| Impact | High |  
+| Type| Error |
 | Refresh frequency | Hourly |  
 | Category | Orchestration |  
 | Recommended actions | - Identify the root cause. Was it due to a technical issue, a lack of resources, or some other factor? </br>- First identify the cause. Then notify all relevant stakeholders of the miss and the steps being taken to address it. </br>- Determine which work is impacted by the SLA miss and prioritize it accordingly. </br>- If necessary, allocate extra resources to address the SLA miss (adding more machine capacity, licenses, or other solutions to improve performance). </br>- Monitor progress to ensure the SLA is being met and that work is completed within the agreed-upon time frame. |  
@@ -176,7 +137,6 @@ The following list of recommendations aims to provide proactive guidance and act
 
 > [!NOTE]
 > Initially, this recommendation identifies work queue items that expire within **one hour** as potentially violating the work queue's SLA. However, we will change this logic in a future update to include items that expire within **one day** instead, and exclude items in a `Processing` or `Processed` state. 
-   
 
 | Category or object | Details |  
 |---|---|  
@@ -184,7 +144,6 @@ The following list of recommendations aims to provide proactive guidance and act
 | Card details | {*number of work queues*} work queues are close to breaching their service level agreement (SLA) or are already breached. |  
 | Recommendation details | Based on average handling time, volume, available machine capacity, and expiration dates, {*number of work queues*} work queues are at risk of not meeting their SLA targets. Investigate and adjust work queue capacity and prioritization. All work queue items that are either already expired, or expire within the next hour, will be included in this recommendation. |  
 | Type | Warning |  
-| Impact | Medium |  
 | Refresh frequency | Hourly |  
 | Category | Orchestration |  
 | Recommended actions | - Align work queue volumes with machine and license capacity and prioritize processing of at-risk work queues. </br>- Increase machine group capacity where needed, and closely monitor work queue item execution and expiration dates. </br> - Consider moving to a hosted machine group for scalability and cost-effectiveness. Your machines scale automatically to match processing demand and you only pay for what you use. |  
@@ -197,7 +156,6 @@ The following list of recommendations aims to provide proactive guidance and act
 | Card details | Your Power Automate Process capacity is insufficient. Consider requesting {*number of capacities*} more capacity. |  
 | Recommendation details | Your current Power Automate Process capacity isn't enough to handle your workload. You need {*number of capacity*} additional Power Automate Process capacity to meet your needs. |  
 | Type | Error |  
-| Impact | Medium |  
 | Refresh frequency | Real time |  
 | Category | Licensing |  
 | Recommended action(s) | We recommend requesting additional hosted process capacity to avoid any potential issues and disruptions. |  
@@ -210,7 +168,6 @@ The following list of recommendations aims to provide proactive guidance and act
 | Card details | Your Power Automate Hosted Process capacity is insufficient. Consider requesting {*number of capacities*} more capacity. |  
 | Recommendation details | Your current Power Automate Hosted Process capacity isn't enough to handle your workload. You need {*number of capacities*} additional Power Automate Hosted Process capacity to meet your needs. |  
 | Type | Error |  
-| Impact | Medium |  
 | Refresh frequency | Real time |  
 | Category | Licensing |  
 | Recommended action(s) | We recommend requesting additional hosted process capacity to avoid any potential issues and disruptions. |  
@@ -223,20 +180,18 @@ The following list of recommendations aims to provide proactive guidance and act
 | Card details | {*number of flows*} desktop flow(s) are suspended due to DLP policy violations |  
 | Recommendation details | Investigate why suspended flows aren't in compliance with your organization's DLP (Data Loss Prevention) policy. |  
 | Type | Error |  
-| Impact | High |  
 | Refresh frequency | Hourly |  
 | Category | Governance |  
 | Recommended action(s) | - Your organization applied DLP policies that resulted in suspended flows that you built or co-own. Review the following action list to get your flows back on track: </br>- Identify the specific desktop flows that have been suspended and review them to determine why they don't adhere to the DLP policy. </br>- Analyze the data being processed by the flows and identify any potential risks or vulnerabilities. </br>- Modify the desktop flows to ensure that they adhere to the DLP policy. This may involve implementing additional security measures or changing the way data is processed or stored. </br>- Test the modified desktop flows to ensure that they're functioning correctly and that they adhere to the DLP policy. |  
 
 ### Fix failing automations
- 
+
 | Category or object | Details |  
 |---|---|  
 | Title | Fix failing automations |  
 | Card details | One or more of your automation runs have failed. We'll show you why and help you fix the affected automations. |  
 | Recommendation details | There are one or more runs that need your attention. The recommendation considers only failed automations from the past week. Any failures older than one week are not included. |  
 | Type | Error |  
-| Impact | High |  
 | Refresh frequency | Real time |  
 | Category | Monitoring |  
 | Recommended action(s) | Review the list of runs and open flow or run details to troubleshoot. |  
@@ -249,7 +204,6 @@ The following list of recommendations aims to provide proactive guidance and act
 | Card details | {*number of machines*} machines didn't have any runs in the last 30 days |  
 | Recommendation details | Remove inactive machines from this environment. |  
 | Type | Information |  
-| Impact | Medium |  
 | Refresh frequency | Daily |  
 | Category | Monitoring |  
 | Recommended action(s) | Consider cleaning up any machine that you know isn't active or used anymore. |  
@@ -262,10 +216,21 @@ The following list of recommendations aims to provide proactive guidance and act
 | Card details | You currently have {*number of flows*} flows that are running frequently throughout the day. These flows don't currently utilize work queues. Implementing work queues could potentially enhance your processing throughput, improve resiliency, and simplify troubleshooting. |  
 | Recommendation details | Consider using work queues for flows that run frequently throughout the day. This can improve your processing throughput, resilience, and your ability to troubleshoot issues. |  
 | Type | Information |  
-| Impact | Low |  
 | Refresh frequency | Daily |  
 | Category | Orchestration |  
 | Recommended action(s) | - Use work queues to group and process multiple work items in a run. </br>- Prioritize them based on their importance and expiration date, and improve processing throughput, overall efficiency, and resiliency. </br>- You also get robust monitoring capabilities (including the ability to reprioritize or reprocess work as needed). |  
+
+### Desktop flows not running
+
+| Category or object | Details |  
+|---|---|  
+| Title | Desktop flows not running |  
+| Card details | A user session or a connection problem is preventing {*number of flows*} of your desktop flows to run. |  
+| Recommendation details | {*number of flows*} of your desktop flows need fixes. These flows were scheduled to run in unattended mode, but another user session or a connection problem prevented them from completing. |  
+| Type | Information |  
+| Refresh frequency | Real time |  
+| Category | Orchestration |  
+| Recommended action(s) | Select the identified runs, open the disconnect user menu, and then choose how to end other inactive user sessions on this machine. |  
 
 ## Known limitations
 

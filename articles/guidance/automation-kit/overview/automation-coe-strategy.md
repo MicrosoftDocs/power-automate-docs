@@ -136,7 +136,7 @@ Use the ALM Accelerator to automate the deployment of RPA solutions so that the 
 
 Use the near real-time ROI automation to monitor the impact of automation projects.
 
-### See also
+## Related information
 
 - [ALM Accelerator for Power Platform](/power-platform/guidance/coe/almacceleratorpowerplatform-components) - The ALM Accelerator is released as part of the [CoE Kit](/power-platform/guidance/coe/starter-kit) and provides tools and templates to provide enterprise-scale end-to-end Application Lifecycle Management.
 - [Admin and Governance Whitepaper](https://aka.ms/autocoeadminwhitepaper)

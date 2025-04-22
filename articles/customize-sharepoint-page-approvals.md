@@ -1,18 +1,12 @@
 ---
-title: Manage SharePoint page approvals with Power Automate | Microsoft Docs
+title: Manage SharePoint page approvals with Power Automate
 description: Learn how to manage SharePoint page approvals with Power Automate.
-services: ''
 suite: flow
-documentationcenter: na
-author: v-aangie
-editor: ''
-tags: ''
+author: HeatherOrt
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 05/17/2022
-ms.author: angieandrews
+ms.topic: conceptual
+ms.date: 11/25/2024
+ms.author: heortaol
 ms.reviewer: angieandrews
 ---
 
@@ -21,10 +15,10 @@ ms.reviewer: angieandrews
 
 SharePoint site admins can use Power Automate to require new or updated site pages to be approved before being published.
 
-In this article, you'll learn how to configure your SharePoint site to use a cloud flow to require changes to the site to be approved before they go live.
+In this article, you learn how to configure your SharePoint site to use a cloud flow to require changes to the site to be approved before they go live.
 
->[!NOTE]
->SharePoint approvals isn't available in government cloud environments.
+> [!NOTE]
+> SharePoint approvals isn't available in government cloud environments.
 
 ## Configure SharePoint for page approvals
 
@@ -58,14 +52,14 @@ You must be a SharePoint site admin to perform the activities in this article.
 
 Your flow is complete. Now, each time a page is added or modified, an approval request goes to the **Approvers** you listed in the flow.
 
-The page approval flow is just like any other flow, so it's listed in the **My flows** tab.
+The page approval flow is just like any other flow, so it is listed in the **My flows** tab.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot that shows the My flows menu item.](media/customize-sharepoint-page-approvals/page-approval-flow-success.png "My flows menu item")
 
 ## Submit a page for approval
 
-Now that you've created a page approval flow, anyone who adds or changes a page will need to do the following steps.
+Now that you created a page approval flow, anyone who adds or changes a page needs to do the following steps.
 
  1. Make a change to the site (add a new page, for example) and then save the change.
 
@@ -89,7 +83,7 @@ Because page approvals use Power Automate behind the scenes, the page approval f
 
 Only the specific triggers and actions that are used by a page approval flow are supported for use on a Pages library. All other SharePoint triggers and actions aren't supported.
 
-### More information
+## Related information
 
 - [Page approval flow](https://support.office.com/article/page-approval-flow-a8b2e689-d4a1-4639-8028-333c0ece30d9)
 - [Configure page approval](https://support.office.com/article/configure-page-approval-14ce6976-a0a7-427b-b4ab-d28d344a5222)
