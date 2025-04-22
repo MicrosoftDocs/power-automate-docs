@@ -47,29 +47,18 @@ You now have a machine that can perform unattended RPA.
 
 ## Allocate process capacity to a cloud flow 
 
-Allocated to a cloud flow, the Process plan enables use of premium cloud flow [capabilities](/power-platform/admin/power-automate-licensing/types#capacity-licenses). Each Process capacity allocated to a cloud flow entitles it to 250k daily [Power Platform Request](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) (stackable limit).
+When a process capacity is allocated to a cloud flow, it becomes a *Process plan*. This plan licenses the cloud flow to run premium actions independently from the user license, with a daily limit of 250,000 [Power Platform Request](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate).
 
 To allocate a Process capacity to a cloud flow, go to the cloud flow details page and select **Edit**.
 
-![Cloud flow details page](media/capacity-utilization/cloud-flow-details-page.png)
-
-Change the plan used by the flow to **Process plan**, select the number of Process capacity you want to allocate to the flow and save.
-
 ![Cloud flow details page - Change plan](media/capacity-utilization/cloud-flow-details-page-planChange2.png)
 
-The cloud flow is now independent from the user license, it has become a 'process flow.' Process flows have their plan switch to "Process plan".
+Process flows have their plan switch to "Process plan".
 
 > [!NOTE]
 >
 > - Only solution flow (flow that are in a solution) can become process flows
-
-> [!IMPORTANT]
-> **Known issues with flow association**:
-> - During association, in the list of flows that can be associated to the process flow:
->    - Currently desktop flows are also displayed in the list.
-> - At Process plan removal from the process flow:
->    - The user should remove the associations from the process flow before removing its process plan.
->    - Existing flow associations are maintained.
+> - Stacking multiple process capacities on a single cloud flow isn't enabled yet.
 
 ## Related information
 
