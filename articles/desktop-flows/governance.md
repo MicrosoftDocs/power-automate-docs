@@ -462,7 +462,7 @@ You can use the following registry entry to allow switching machine registration
 
 - **1**: Machine registration can switch to another tenant.
 
-## Configuring Power Automate for Desktop to disable UNC Paths in action inputs
+## Configuring Power Automate for Desktop to disable UNC paths in action inputs
 
 > [!NOTE]
 > This registry entry applies to Power Automate desktop version 2.55 and later.
@@ -477,7 +477,7 @@ This configuration causes any action that contains a UNC path to result in a run
 
 ***Value***
 
-- **1**: Disables the support of UNC Paths in Power Automate for desktop.
+- **1**: Disables the support of UNC paths in Power Automate for desktop.
 
 ## Prevent users from using the copilot's generative answers capability
 
