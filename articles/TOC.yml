@@ -1245,8 +1245,6 @@
     href: limits-and-config.md
   - name: Frequently asked questions
     href: frequently-asked-questions.yml
-  - name: Power Automate glossary
-    href: glossary.md
   - name: Classic Dataverse
     items:
     - name: Classic Dataverse workflows
