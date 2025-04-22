@@ -33,7 +33,7 @@ This type of approval workflow is useful in an organization that requires a pers
 
 Here's a quick video tutorial about approvals.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKXdq]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=ac0eac35-a857-429a-9996-5ea92343872c]
 
 ## Prerequisites
 

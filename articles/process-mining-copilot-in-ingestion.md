@@ -1,7 +1,7 @@
 ﻿---
 title: Copilot in Process Mining ingestion (preview)
 description: Learn how to identify your process during data ingestion and auto map your data to the required data schema.
-ms.date: 12/18/2023
+ms.date: 04/01/2025
 ms.topic: conceptual
 author: HeatherOrt
 contributors:
@@ -41,7 +41,7 @@ You need a Power Platform environment for Copilot in Process Mining.
 
 > [!NOTE]
 > - If you still don’t see the Copilot experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center.
-> - In some geographic regions outside United States, Australia, and United Kingdom, an admin needs to turn on the cross geo calls to enable Copilot. More informatfion: [Copilot availability by region](get-started-with-copilot.md#availability-by-region).
+> - In some geographic regions outside United States, Australia, and United Kingdom, an admin needs to turn on the cross geo calls to enable Copilot. More information: [Copilot availability by region](get-started-with-copilot.md#availability-by-region).
 
 ## Ingest Data with Copilot
 

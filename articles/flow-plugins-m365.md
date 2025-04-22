@@ -12,7 +12,7 @@ ms.author: samathur
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/23/2024
+ms.date: 01/28/2025
 ms.collection: 
   - bap-ai-copilot
 ---
@@ -27,7 +27,7 @@ You can run Power Automate flows as plugins from Copilot for Microsoft 365.
 
 ## Prerequisites
 
-To use flows as plugins in Copilot for Microsoft 365, you need a license and the ability to enable plugins. To learn more, go to [Licenses for Copilot for Microsoft 365](/microsoft-365-copilot/extensibility/overview-business-applications#get-copilot-for-microsoft-365-licenses-and-enable-plugins).
+To use flows as plugins in Microsoft 365 Copilot, you need a license and the ability to enable plugins. To learn more, go to [Licenses for Microsoft 365 Copilot](/microsoft-365-copilot/extensibility/overview-business-applications#get-copilot-for-microsoft-365-licenses-and-enable-plugins).
 
 ## Deploy the app
 
@@ -38,22 +38,22 @@ To use flows as plugins in Copilot for Microsoft 365, you need a license and the
 1. Choose to deploy for all users, a specific set of users, or yourself.
 1. To complete the remaining steps to deploy the app, select **Next**.
 
-    It might take up to 12 hours for the deployed app's plugin to show in Copilot for Microsoft 365.
+    It might take up to 12 hours for the deployed app's plugin to show in Microsoft 365 Copilot.
 
 ## Enable flow plugins
 
-Create flows using the **Run a flow from Copilot** trigger from the Copilot Skills connector in the default environment. Once created, these flows appear in the plugins menu in Copilot for Microsoft 365. Currently, users can only see flow plugins that they created.
+Create flows using the **Run a flow from Copilot** trigger from the Copilot Skills connector in the default environment. Once created, these flows appear in the plugins menu in Microsoft 365 Copilot. Currently, users can only see flow plugins that they created.
 
-## Run flows from Copilot for Microsoft 365
+## Run flows from Microsoft 365 Copilot
 
-You can use the flow based plugins shipped by Microsoft in your Copilot for Microsoft 365 app in Microsoft Teams.
+You can use the flow based plugins shipped by Microsoft in your Microsoft 365 Copilot app in Microsoft Teams.
 
 1. Sign in to [Microsoft Teams](https://teams.microsoft.com).
 1. Open the **M365 Chat** app.
 
     If the Copilot app isn't on your menu, search for it in the Teams app store. A plugins icon (four squares) shows on the text prompt.
 
-    :::image type="content" source="media/flow-plugins-m365/copilot-plugin-flyout.png" alt-text="Screenshot of the Copilot for Microsoft 365 Chat app.":::
+    :::image type="content" source="media/flow-plugins-m365/copilot-plugin-flyout.png" alt-text="Screenshot of the Microsoft 365 Copilot Chat app.":::
 
 1. Select the **Plugins** icon > **Power Automate**.
 1. Enable the flow you want to use.
@@ -65,10 +65,6 @@ You can use the flow based plugins shipped by Microsoft in your Copilot for Micr
 ## Environment support
 
 Currently, the flows that are created and run need to be in the tenant's default environment. A setup experience for the plugin that allows users to choose nondefault environments to associate the plugin with isn't available yet.
-
-## Copilot Skills trigger support for Power Automate customer-managed keys (CMK) protected flows
-
-Currently, the flows utilizing Copilot invoking user's connection as opposed to embedded connections aren't supported for invoking cloud flows protected by CMK. Learn more about known limitations for Power Automate CMK in [Known limitations](customer-managed-keys.md#known-limitations).
 
 ## Related information
 

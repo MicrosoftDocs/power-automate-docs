@@ -165,4 +165,5 @@ For more information on the date and time function, select the following article
 - [Convert a time zone](convert-time-zone.md)
 - [formatDateTime function reference](/azure/logic-apps/workflow-definition-language-functions-reference#formatdatetime)
 - [Format dates by examples](format-data-by-examples.md#format-dates-by-examples)
+- [Training: Introduction to expressions in Power Automate (module)](/training/modules/introduction-expressions/)
 

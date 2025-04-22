@@ -4,7 +4,7 @@ description: See how to run unattended desktop flows on your device.
 author: mattp123
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/04/2024
+ms.date: 02/10/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -43,6 +43,7 @@ When running desktop flows in unattended mode, keep in mind that:
 > - Unattended desktop flows require an available machine with all users signed out.
 > - Locked Windows user sessions will prevent unattended desktop flows from running.
 > - Unattended desktop flows can't run with elevated privileges.
+> - Logging into a machine during an unattended flow execution isn't supported and might cause the flow to fail.
 
 ## Reuse a Windows session in unattended mode
 
@@ -67,8 +68,32 @@ To allow reusing Windows session:
 > [!NOTE]
 > When you add machines to machine groups, they inherit the settings of the group. When you remove machines from machine groups, they keep the settings defined at the group level.
 
+## Admin consent for unattended runs using CBA or sign-in credentials with NLA (preview)
+
+[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
+
+To perform unattended runs with Microsoft Entra ID using certificate-based authentication (CBA) or sign-in credentials with Network Level Authentication (NLA), follow these steps:
+
+[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+
+### Step 1 - Enable Microsoft Entra authentication for RDP
+
+[Enable Microsoft Entra authentication for RDP](/azure/virtual-desktop/configure-single-sign-on#enable-microsoft-entra-authentication-for-rdp) only for the AppID `a4a365df-50f1-4397-bc59-1a1564b8bb9c` (MSRDspId).
+
+### Step 2 - Hide the consent prompt dialog for a target device group
+
+[Hide the consent prompt dialog](/azure/virtual-desktop/configure-single-sign-on#hide-the-consent-prompt-dialog) only for the AppID `a4a365df-50f1-4397-bc59-1a1564b8bb9c` (MSRDspId).
+
+The desktop flow fails with an `MSEntraRemoteDesktopAppConsentRequired` error if consent isn't granted.
+
+> [!NOTE]
+> To authenticate with Microsoft Entra ID using a username and password with Network Level Authentication, ensure the following prerequisites are met:
+> - Install Power Automate Desktop version 2.50 or later on your machine.
+> - Ensure required [endpoints for Power Automate services](/power-automate/ip-address-configuration) are accessible, specifically `config.edge.skype.com`.
+
 ## Known issues and limitations
 
-- Reusing sessions isn't supported on machines that allow users to have multiple sessions (users aren't restricted to a single session).
+- Reusing sessions isn’t supported on machines that allow users to have multiple sessions (users aren’t restricted to a single session).
+- Audio peripherals (such as microphones and speakers), cameras, webcams, and video capture peripherals aren't supported in unattended desktop flows.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: See all the available Excel actions.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/17/2024
+ms.date: 02/10/2025
 ms.author: dipapa
 ms.reviewer: matp
 contributors:
@@ -1068,7 +1068,6 @@ This action doesn't produce any variables.
 |Clear filters from specific column|Yes|[Boolean value](../variable-data-types.md#boolean-value)||Clear filters from specific column.|
 |Clear filter in column|No|[Text value](../variable-data-types.md#text-value)||The column name to clear applied filter.|
 
-
 ### Variables produced
 
 This action doesn't produce any variables.
@@ -1126,9 +1125,19 @@ For this reason, when you try to open an Excel file stored under a OneDrive or S
 * Override the Excel file copy synchronized through OneDrive/ Sharepoint with the local copy that includes the latest changes.
 
 #### Workaround 2
->[!NOTE]
+
+> [!NOTE]
 > This workaround can be used in general when the **Launch Excel** action fails to execute.
-* Open a new Excel instance using the **Run application** action. Make sure that you provide enough wait time between actions, allowing the Excel process to load completely, including any add-ins.
-* Use the action **Attach to Excel** to attach to the new process.
+
+- Open a new Excel instance using the **Run application** action. Make sure that you provide enough wait time between actions, allowing the Excel process to load completely, including any add-ins.
+- Use the action **Attach to Excel** to attach to the new process.
+
+### Case with Read from Excel worksheet
+
+When the **Get cell contents as text** option is enabled in the **Read from Excel worksheet** action, the data is retrieved exactly as it appears in the Excel worksheet. This means that if the column width is too narrow and the data is displayed as ### in Excel, these symbols will also appear in the result.
+
+**Workaround:**
+
+To avoid this, use the **Resize columns/rows** action. If the **Get cell contents as text** option is not used, the data fetched is the raw cell values, regardless of how they are displayed or formatted in the worksheet. This means there is no need to use the **Resize columns/rows** action. For date values, the time will be appended because the date data type includes time.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

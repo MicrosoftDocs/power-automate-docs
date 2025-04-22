@@ -3,9 +3,9 @@ title: Capacity utilization within Power Automate
 description: Capacity utilization within Power Automate
 author: cvassallo
 ms.subservice: desktop-flow
-ms.date: 05/01/2024
+ms.date: 02/06/2025
 ms.author: cvassallo
-ms.reviewer: matp
+ms.reviewer: angieandrews
 contributors:
 - DanaMartens
 ms.topic: conceptual
@@ -28,13 +28,13 @@ You manage the following capacity within the capacity utilization page:
 
 > [!NOTE]
 >
-> Process capacity and unattended RPA capacity (legacy) have been combined in a single pool. They can seamlessly be utilized by machines.
+> We combined Process capacity and Unattended RPA capacity (legacy) into a single pool. Machines can seamlessly use them.
 
 ## Capacity utilization overview page
 
 The capacity utilization page offers an overview of the environment-assigned capacities. It details their usage and provides suggestions and insights for more efficient management of automation and the desktop infrastructure.
 
-The overview page provides insights for Hosted Process capacity, process capacity, or legacy unattended RPA capacity including:
+The overview page provides insights for Hosted Process capacity, Process capacity, or legacy Unattended RPA capacity including:
 
 - A breakdown of each capacity utilization (user's consumption / others' consumption / capacity available / capacity in overage).
 - Insights and recommendation on compliance issues.
@@ -51,10 +51,10 @@ The two pie charts underscore the point that, within a given environment, capaci
 
 ### Process (or legacy unattended RPA) capacity utilization
 
-[Process capacity or legacy unattended RPA capacity](capacity-utilization-process.md) are needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out another unattended desktop flow run simultaneously. It can also be allocated to a cloud flow to license it independently from user license.
+[Process capacity or legacy Unattended RPA capacity](capacity-utilization-process.md) are needed to run desktop flows in unattended mode. Every capacity allocated to a machine allows it to carry out another unattended desktop flow run simultaneously. It can also be allocated to a cloud flow to license it independently from user license.
 
 ## Related information
 
-[Process and unattended RPA capacity utilization (preview)](capacity-utilization-process.md)
+[Process and Unattended RPA capacity utilization](capacity-utilization-process.md)
 
-[Hosted Process capacity utilization (preview)](capacity-utilization-hosted.md)
+[Hosted Process capacity utilization](capacity-utilization-hosted.md)

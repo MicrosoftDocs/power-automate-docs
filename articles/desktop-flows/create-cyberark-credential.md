@@ -4,23 +4,20 @@ description: Use CyberArk credentials in desktop flow connections
 author: QuentinSele
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 07/24/2024
+ms.date: 04/11/2025
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
   - DanaMartens
+  - iomavrid
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Create a CyberArk credential (preview)
-
-[!INCLUDE [cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
+# Create a CyberArk credential
 
 This feature allows users to create a Power Automate credential that retrieves CCP CyberArk secrets from vault during runtime.
-
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
 ## Availability
 
@@ -120,7 +117,14 @@ Now that you complete all the prerequisites steps, you can create your CyberArk 
 
 1. From the left navigation, select **Credentials**.
 1. Select **New credential**.
-1. In the wizard, define a credential name and a small description and then select **Next**.
+1. In the wizard, define a credential name and a brief description, then select **Next**.
+1. When creating a credential in Power Automate, specify where this credential is used. You can use a credential for two types of usage:
+    - **Connection**: These are the credentials of the user session on which the desktop flow runs.
+    - **Desktop flows (preview)**: These are credentials that you want to use in a desktop flow. For example, SAP credential, SharePoint credential, Excel password, etc.
+
+        > [!NOTE]
+        > For public preview, credentials used in desktop flow actions require CyberArk.
+
 1. Select CyberArk CCP as the type of credential store.
 1. If you already defined a CyberArk store, you can select it from the dropdown. Otherwise, select **Create new**.
 
@@ -146,4 +150,22 @@ Now that you complete all the prerequisites steps, you can create your CyberArk 
   
 ## Use the credential in a desktop flow connection
 
-Your credential is now created. You can use it in a desktop flow connection to [run desktop flows from cloud flows](trigger-desktop-flows.md).
+Your credential is now created. You can use it in a desktop flow connection to [run desktop flows from cloud flows](desktop-flow-connections.md).
+
+## Use the credential in a desktop flow action
+
+1. Ensure you have a [registered machine](manage-machines.md) where your desktop flow is executed. The credential is retrieved from this machine.
+
+    > [!NOTE]
+    > The registered machine is required for credentials to work properly at runtime, even for local attended or debugging runs.
+
+1. In the desktop flow designer, select the **[Power Automate secret variables](actions-reference/powerautomatesecretvariables.md)** module and then select the **[Get credential](actions-reference/powerautomatesecretvariables.md#getcredentialaction)** action.
+1. Specify which credential to retrieve. You see only the credentials defined as usable in a desktop flow. Credentials using Azure Key Vault or CyberArk as a vault are supported.
+1. Define the name of your produced variable. This variable is marked as "sensitive" and can't be modified. This means the value of this variable isn't stored in the logs.
+
+    > [!NOTE]
+    > Credential type variables are always enforced to be [sensitive](manage-variables.md#sensitive-variables), independently of how they are produced (**Get credential** action or reassigning a credential variable to a new one, which inherits the same variable type). The same applies to the 'Password' property of credential variables.
+
+1. After you select **Save**, use your credential in another action. All Power Automate actions can use credentials.
+1. In the action field, select the variable picker. In your flow variables list, find your credential and expand it. You can see the attributes **Username** and **Password**. Select the one you want to use in this action (double-click).
+1. Run the flow.

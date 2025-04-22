@@ -4,7 +4,7 @@ description: Learn about how to create custom actions in Power Automate for desk
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/15/2023
+ms.date: 10/14/2024
 ms.author: dipapa
 ms.reviewer: tapanm-msft
 contributors: 
@@ -14,6 +14,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
+
 # Create Power Automate for desktop actions using the Actions SDK
 
 This article describes how to create custom actions in Power Automate for desktop.
@@ -106,9 +107,20 @@ Here's an example of a **Resources.resx** file for a custom module.
 
 Another way to quickly add friendly names and descriptions to actions and parameters is with the FriendlyName and Description properties in the **[Action]**, **[InputArguement]** and **[OutputArguement]** attributes.
 
-
 > [!NOTE]
 > To add a friendly name and description to a module, you must modify the respective .resx file or add the respective C# attributes.
+
+## Adding error handling to custom actions
+
+To define custom exceptions in your action, use the `[Throws("ActionError")]` attribute above the custom action class. Each exception case you want to define should have its own attribute.
+
+In the catch block, use the following code:
+
+`throw new ActionException("ActionError", e.Message, e.InnerException);`
+
+Ensure that the `ActionException` name matches the name you provided in the `Throws` attribute. Use `throw new ActionException` for each exception case and match it with the corresponding `Throws` attribute name. All exceptions defined with the `Throws` attribute are visible in the designer's action error handling tab.
+
+An example of this can be found in the [Conditional actions](#conditional-actions) section.
 
 ## Resources localization
 

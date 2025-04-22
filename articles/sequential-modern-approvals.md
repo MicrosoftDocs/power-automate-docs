@@ -2,13 +2,14 @@
 title: Manage sequential approvals with Power Automate
 description: Learn how to create a modern approval workflow with multiple approvers.
 suite: flow
-author: hamenon-MS
+author: donums
 contributors:
+  - donums
   - hamenon-MS
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/04/2024
-ms.author: hamenon
+ms.date: 10/21/2024
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 ms.collection:
   - get-started
@@ -16,13 +17,16 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
+
 # Manage sequential approvals with Power Automate
 
 Some workflows require pre-approval before the final approver is required to sign off. For example, a company may have a sequential approval policy that requires pre-approval for invoices over $1000.00 before they're approved by the Finance department.
 
-In this tutorial, you create a sequential approval flow that manages employee vacation requests. For detailed information about using SharePoint with Power Automate, go to the SharePoint documentation.
+Learn how to quickly and easily set up sequential approvals in [Set up sequential approvals](set-up-sequential-approvals.md).
 
-For detailed information about using SharePoint with Power Automate, go to the [SharePoint documentation](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers).
+In this tutorial, you manually create a sequential approval flow that manages employee vacation requests. For detailed information about using SharePoint with Power Automate, go to the SharePoint documentation.
+
+Learn more about using SharePoint with Power Automate in [SharePoint documentation](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers).
 
 > [!NOTE]
 > SharePoint is used here only as an example. It isn't required to create approval flows. You can use any of the more than 200 services with which Power Automate integrates to drive your flows. If you're using SharePoint 2010, go to [SharePoint 2010 workflow retirement](https://go.microsoft.com/fwlink/?linkid=2138686).

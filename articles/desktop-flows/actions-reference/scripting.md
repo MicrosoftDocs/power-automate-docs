@@ -4,7 +4,7 @@ description: See all the available scripting actions.
 author: cochamos
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 08/29/2024
+ms.date: 03/21/2025
 ms.author: cochamos
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
@@ -29,16 +29,16 @@ Scripting actions enable you to run blocks of code and implement custom behavior
 > [!IMPORTANT]
 > As announced on [October 2023](/windows/whats-new/deprecated-features), VBScript is deprecated from Windows. In future releases of Windows, VBScript will be available as a feature on demand before its removal from the operating system. [For more information, see Resources for deprecated features.](/windows/whats-new/deprecated-features-resources#vbscript)
 
-All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, JavaScript and C#/VB.NET.
+All scripting actions follow the basic structure of the respective programming or scripting language: PowerShell, Python, VBScript, JavaScript, and C#/VB.NET.
 
 > [!NOTE]
 > Supported version for **C#:** v 5.0. For **VB.NET**: v 11.0
 
-## Natural language to script powered by copilot (preview)
+## Natural language to script powered by Copilot (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-Natural language to code is a new copilot capability added in Power Automate for desktop. It lets you quickly generate code used in the scripting actions by describing it. This feature is available in the following scripting actions:
+Natural language to script is a new Copilot capability added in Power Automate for desktop. It lets you quickly generate the code used in the scripting actions by just describing it in natural language. This feature is available in the following scripting actions:
 
 - **Run PowerShell**
 - **Run VBScript**
@@ -50,14 +50,32 @@ Natural language to code is a new copilot capability added in Power Automate for
 
 ### Availability by region
 
-Currently, copilot in Power Automate for desktop is only available in environments located in the United States.
-
+Currently, natural language to script is available in environments located in the following regions/countries:
+  - Asia Pacific
+  - Australia
+  - Brazil
+  - Canada
+  - Europe
+  - France
+  - Germany
+  - India
+  - Japan
+  - Norway
+  - Singapore
+  - South Africa
+  - South Korea
+  - Sweden
+  - Switzerland
+  - United Arab Emirates
+  - United Kingdom
+  - United States
+    
 ### Availability by account type
 
-Currently, copilot in Power Automate for desktop is only available for users with a work or school account.
+Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
 
 > [!NOTE]
-> If your environment is in the region listed above and you still need to see the copilot in Power Automate for desktop experience, contact your tenant administrator. They might have turned off the copilot functionality.
+> If your environment is in one of the previously listed regions and you still need to see the copilot in Power Automate for desktop experience, contact your tenant administrator.
 
 ### How to generate scripts using copilot and natural language
 
@@ -86,10 +104,7 @@ Send feedback by selecting the thumb up or thumb down icon underneath the AI-gen
 
 ### Disabling the user feedback functionality
 
-As a tenant admin you can prevent your users from sending feedback to Microsoft by disabling the `disableSurveyFeedback` tenant setting. Find more information about viewing and setting tenant settings:
-
-- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
-- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+As a [Power Platform admin](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), prevent users from sending Copilot feedback to Microsoft by using the "Copilot feedback" [tenant setting](/power-platform/admin/tenant-settings).
 
 ### Data subject rights requests on user feedback
 
@@ -185,7 +200,7 @@ You can use this action to include your own custom VBScript code in the desktop 
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|VBScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The VBScript code to execute. Variables may be included within the script since they evaluate prior to the execution of the VBScript|
+|VBScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The VBScript code to execute. Variables might be included within the script since they evaluate before the execution of the VBScript|
 |Fail after timeout|Yes|[Boolean value](../variable-data-types.md#boolean-value)|N/A|Specify whether the VBScript script will run indefinitely or fail after a set period of time|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|10|The maximum number of seconds to wait for the script to complete (-1 for indefinitely)|
 
@@ -193,7 +208,7 @@ You can use this action to include your own custom VBScript code in the desktop 
 |Argument|Type|Description|
 |-----|-----|-----|
 |VBScriptOutput|[Text value](../variable-data-types.md#text-value)|The script's output|
-|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that may occur during the execution of the VBScript code|
+|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that might occur during the execution of the VBScript code|
 
 ### <a name="runvbscript_onerror"></a> Exceptions
 
@@ -209,7 +224,7 @@ Executes some custom JavaScript code and retrieves its output into a variable.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|JavaScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The JavaScript code to execute. Variables may be included within the script since they evaluate prior to the JavaScript code's execution|
+|JavaScript to run|Yes|[Text value](../variable-data-types.md#text-value)||The JavaScript code to execute. Variables might be included within the script since they evaluate before the JavaScript code's execution|
 |Fail after timeout|Yes|[Boolean value](../variable-data-types.md#boolean-value)||Specify whether the JavaScript script will run indefinitely or fail after a set period of time|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|10|The maximum number of seconds to wait for the script to complete (-1 for indefinitely)|
 
@@ -218,7 +233,7 @@ Executes some custom JavaScript code and retrieves its output into a variable.
 |Argument|Type|Description|
 |-----|-----|-----|
 |JavascriptOutput|[Text value](../variable-data-types.md#text-value)|The script's output|
-|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that may occur during the execution of the JavaScript code|
+|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that might occur during the execution of the JavaScript code|
 
 ### <a name="runjavascript_onerror"></a> Exceptions
 
@@ -236,7 +251,7 @@ You can use this action to include your own custom PowerShell code in the deskto
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|PowerShell code to run|Yes|[Text value](../variable-data-types.md#text-value)||The PowerShell code to execute. Variables may be included within the script since they evaluate prior to the execution of the PowerShell code|
+|PowerShell code to run|Yes|[Text value](../variable-data-types.md#text-value)||The PowerShell code to execute. Variables can be included within the script since they evaluate before the execution of the PowerShell code|
 |Fail after timeout|Yes|[Boolean value](../variable-data-types.md#boolean-value)||Specify whether the PowerShell script will run indefinitely or fail after a set period of time|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|10|The maximum number of seconds to wait for the script to complete (-1 for indefinitely)|
 
@@ -245,7 +260,7 @@ You can use this action to include your own custom PowerShell code in the deskto
 |Argument|Type|Description|
 |-----|-----|-----|
 |PowershellOutput|[Text value](../variable-data-types.md#text-value)|The script's output|
-|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that may occur during the execution of the PowerShell code|
+|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that might occur during the execution of the PowerShell code|
 
 ### <a name="runpowershellscript_onerror"></a> Exceptions
 
@@ -264,14 +279,14 @@ Executes Python script code and retrieves its output.
 |-----|-----|-----|-----|-----|
 |Python script to run|No|[Text value](../variable-data-types.md#text-value)||The Python script code to execute|
 |Python version|No|Python 2.7, Python 3.4|Python 2.7|Specify which version of Python to use when executing the script|
-|Module folder paths|Yes|[List](../variable-data-types.md#list) of [Folders](../variable-data-types.md#files-and-folders)||The path(s) of folder(s) where external Python modules lie|
+|Module folder paths|Yes|[List](../variable-data-types.md#list) of [Folders](../variable-data-types.md#files-and-folders)||The paths of folders where external Python modules lie|
 
 ### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
 |PythonScriptOutput|[Text value](../variable-data-types.md#text-value)|The script's output|
-|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that may occur during the execution of the Python script code|
+|ScriptError|[Text value](../variable-data-types.md#text-value)|The errors that might occur during the execution of the Python script code|
 
 ### <a name="runpythonscript_onerror"></a> Exceptions
 
@@ -297,8 +312,8 @@ Executes .NET (C#/VB.NET) script code and retrieves its output.
 ### Variables produced
 
 This action might produce variables, depending on the configuration made by the user when using the **Script Parameters** window.
-> [!NOTE] 
-> In the case the action is configured to produce output parameters (using the **Out** direction when configuring them), you should always ensure that the parameter inside the script is set to a value other than null. Otherwise, the script execution will result in an error since the output parameter has not been set.
+> [!NOTE]
+> In the case the action is configured to produce output parameters (using the **Out** direction when configuring them), you should always ensure that the parameter inside the script is set to a value other than null. Otherwise, the script execution results in an error since the output parameter hasn't been set.
 
 ### <a name="rundotnetscript_onerror"></a> Exceptions
 

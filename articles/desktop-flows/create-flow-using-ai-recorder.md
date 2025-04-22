@@ -5,7 +5,7 @@ author: JoeFernandezMS
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/08/2024
+ms.date: 04/01/2025
 ms.author: jofernan
 ms.reviewer: dmartens
 contributors:
@@ -17,6 +17,8 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
   - ai-seo-date:08/23/2024
+ms.collection: 
+  - bap-ai-copilot
 ---
 
 # Create desktop flows using Record with Copilot (preview)
@@ -99,9 +101,13 @@ Speak clearly and show each step in detail as you demonstrate the process. Wait 
 
 ### Where can I watch a demo of Record with Copilot?
 
-This video shows a demo of Record with Copilot:
+The following videos shows a demo of Record with Copilot:
 
 > [!VIDEO 853935fc-c43c-4bf2-9a9d-12b83f3abcfd]
+
+<br><br>
+
+> [!VIDEO cb7fd0a9-ce47-49f0-95d1-1ebeb135ac4e]
 
 ### What are some scenarios I can try with Record with Copilot?
 
@@ -109,7 +115,7 @@ You can try different scenarios, such as moving data from Excel to a web form, n
 
 ### What languages are supported?
 
-Record with Copilot supports English right now. We'll add more languages in future updates.
+Record with Copilot supports English right now. We'll add more languages in future updates. 
 
 ### How is Record with Copilot different from the Recorder?
 
@@ -134,6 +140,10 @@ The recordings aren't used for training the AI model.
 When you start a recording, you can choose which screen to record and which microphone to use. A colored border shows around the screen being recorded. To avoid capturing sensitive information, make sure it isn't shown during the recording. If you accidentally record something you don't want to include, you can restart the recording or close the recorder. In these cases, the recordings aren't sent to the cloud for processing.
 
 The recorder captures a video of the selected screen, audio from the chosen microphone, and necessary UI metadata to build the desktop flow.
+
+## Can you turn off Record with Copilot?
+
+You can turn off Copilot for Power Automate, which also turns off Record with Copilot. Learn more in [Enable or disable Copilot in Power Automate](../copilot-overview.md#enable-or-disable-copilot-in-power-automate).
 
 ## Share your feedback
 

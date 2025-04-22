@@ -1,55 +1,46 @@
 ---
-title: Overview of the types of flows in Power Automate
-description: Provides an overview of cloud, dekstop, business process flows.
-services: ''
+title: What is Power Automate?
+description: Learn about the Power Automate automation capabilities with cloud, desktop, and generative actions (preview) flows.
 suite: flow
-documentationcenter: na
-author: natalie-pienkowska
+author: HeatherOrt
 contributors:
-  - natalie-pienkowska
+  - HeatherOrt
   - kartikraop
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 06/05/2023
-ms.author: jamiller
+ms.date: 04/10/2025
+ms.author: heortaol
 ms.reviewer: angieandrews
 ---
-# Overview of the different types of flows
 
-Power Automate is a service that you can use to automate repetitive tasks to bring efficiencies to any organizations.
+# What is Power Automate?
 
-You can create [cloud flows](#cloud-flows), [desktop flows](#desktop-flows), or [business process flows](#business-process-flows).
+With its automation capabilities, Power Automate helps you streamline your business processes and automate repetitive tasks. Its intuitive interface and many connectors allow you to create workflows with little to no knowledge of coding. You can drag and drop components and set up workflows to save time and improve efficiency. Power Automate can handle simple tasks like sending notifications and more complex processes across multiple apps and services. It's flexible and scalable, making it useful for various automation needs in a modern workplace.
 
-Check out this video about the different types of flows.
+Before you can create a workflow, you need to sign up for Power Automate with any email address. If you never used an online Microsoft product with that address, you need to register it. Learn more in [Sign up and sign in for Power Automate](sign-up-sign-in.md).
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKUwZ]
+Once you have access, you're ready to [get started using Power Automate](getting-started.md)!
 
-## Cloud flows
+## Types of flows
 
-Create a cloud flow when you want your automation to be triggered either automatically, instantly, or via a schedule.
+Power Automate provides three types of flows to meet different automation needs. Each type of flow is designed for specific scenarios and can be used independently or in combination with others.
 
-| **Flow type**      | **Use case**       | **Automation target**     |
-|--------------------|--------------------|---------------------------|
-| [Automated flows](get-started-logic-flow.md)                 | Create an automation that is triggered by an event such as arrival of an email from a specific person, or a mention of your company in social media.| [Connectors](/connectors/) for cloud or on-premises services connect your accounts and enable them to talk to each other. |
-| [Instant flows](./mobile/mobile-create-flow.md)   | Start an automation with a click of a button. You can automate for repetitive tasks from your Desktop or Mobile devices. For example, instantly send a reminder to the team with a push of a button from your mobile device.     |     Wide range of tasks such as requesting an approval, an action in Teams or SharePoint.       |
-| [Scheduled flows](run-scheduled-tasks.md)                    | Schedule an automation such as daily data upload to SharePoint or a database.             |Tasks that need to be automated on a schedule.         |
+Select one of the following types for an overview of what it can do:
 
-## Desktop flows
+- [Cloud flows](overview-cloud.md): Create a cloud flow when you want your automation to be triggered either automatically, instantly, or via a schedule.
+- [Desktop flows](./desktop-flows/introduction.md): Use desktop flows to automate tasks on the web or the desktop.
+- [Generative actions (preview)](generative-actions-overview.md): Use generative actions in your flow if you want to specify only the *intent* of the action and then have the AI choose the right set of actions in the right order based on your input, context, and intent.
 
-Use [desktop flows](./desktop-flows/introduction.md) to automate tasks on the Web or the desktop.
+## Create and manage flows in Power Apps
 
-## Business process flows
-
-[Business process flows](business-process-flows-overview.md) provide a guide for people to get work done. They provide a streamlined user experience that leads people through the processes their organization has defined for interactions that need to be advanced to a conclusion of some kind. This user experience can be tailored so that people with different security roles can have an experience that best suits the work they do.
+Your Power Automate license gives you rights to create and manage flows in Power Apps. For example, after you sign in to Power Apps, you can select **Flows** on the left navigation pane. You can also create and manage flows through the [Power Automate pane](/powerapps/maker/canvas-apps/working-with-flows) within Power Apps Studio.
 
 ## Related information
 
-- Read guidance to [determining which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
-- Get started with [cloud flows](overview-cloud.md). 
-- Get started with [desktop flows](./desktop-flows/introduction.md).
-- Get started with [business process flows](business-process-flows-overview.md) in conditions in advanced mode.
+- [Determine which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
+- [Overview of cloud flows](overview-cloud.md)
+- [Introduction to desktop flows](./desktop-flows/introduction.md)
+- [Add canvas apps and cloud flows to a solution in Power Apps](/power-apps/maker/canvas-apps/add-app-solution-default)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

@@ -1,18 +1,12 @@
 ---
-title: Create a reminder flow in Power Automate for SharePoint items | Microsoft Docs
+title: Create a reminder flow in Power Automate for SharePoint items
 description: Create flows in Power Automate that remind you of due dates for SharePoint items.
-services: ''
 suite: flow
-documentationcenter: na
-author: v-aangie
-editor: ''
-tags: ''
+author: HeatherOrt
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 09/28/2022
-ms.author: angieandrews
+ms.topic: conceptual
+ms.date: 11/25/2024
+ms.author: heortaol
 ms.reviewer: angieandrews
 ---
 
@@ -50,21 +44,20 @@ Lists created with Microsoft Lists and SharePoint libraries allow you to define 
 
 1. On the **Set a reminder** card, select **Create**.
 
-1. You'll receive the following message, indicating that the flow was created.
+1. You receive the following message, indicating that the flow was created.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the reminder flow created.](media/create-sharepoint-reminder-flows/success.png "Reminder flow created")
-    
 
 ## Confirm reminders received
 
-You'll receive a reminder via email, based on the **Remind me this many day(s) in advance** entry you made on the **Set a reminder** flow you created earlier. 
+You receive a reminder via email, based on the **Remind me this many day(s) in advance** entry you made on the **Set a reminder** flow you created earlier. 
 
 ## Edit your flow
 
 The reminder flow is like any other flow, so you can access and edit it through [Power Automate](https://make.powerautomate.com).
 
-## More information
+## Related information
 
 - Getting started with [Power Automate](https://make.powerautomate.com).
 - Set a [reminder flow](https://support.office.com/article/set-a-reminder-flow-23c0e172-1fc1-4ac8-a9db-cd0b81d634d8) in SharePoint.

@@ -28,7 +28,7 @@ The next step is to set up the automation.
 
 3.  [Add actions](../../multi-step-logic-flow.md) and [conditions](../../add-condition.md).
 
-More information: [Create a cloud flow in Power Automate](../../overview-cloud.md), [Create a flow from a template in Power Automate](../../get-started-logic-template.md)
+More information: [Overview of cloud flows](../../overview-cloud.md), [Create a flow from a template in Power Automate](../../get-started-logic-template.md)
 
 ## Basic steps for desktop flows
 

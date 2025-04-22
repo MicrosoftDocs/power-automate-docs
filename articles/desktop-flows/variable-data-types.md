@@ -4,7 +4,7 @@ description: See all the available variable data types in desktop flows.
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 12/15/2023
+ms.date: 10/29/2024
 ms.author: dipapa
 ms.reviewer: matp
 contributors:
@@ -270,6 +270,12 @@ This section presents all the available data types that don't belong to any of t
 - **CMD session** – Contains a CMD session created through the **Open CMD session** action.
 
 [CMD data type properties](datatype-properties.md#cmd-session)
+
+### Credentials
+
+- **Credential** – Contains a credential retrieved through the **Get credential (preview)** action.
+
+[Credential data type properties](datatype-properties.md#credential)
 
 ### Dates and time
 

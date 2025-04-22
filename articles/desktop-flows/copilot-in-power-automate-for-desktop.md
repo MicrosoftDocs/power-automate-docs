@@ -1,7 +1,7 @@
 ---
 title: Get started with Copilot in Power Automate for desktop
 description: Learn how to access and use Copilot in Power Automate for desktop.
-ms.date: 09/13/2024
+ms.date: 03/21/2025
 ms.topic: how-to
 author: cochamos
 ms.author: cochamos
@@ -9,17 +9,17 @@ ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
 ---
 
-# Get started with Copilot in Power Automate for desktop (preview)
+# Get started with Copilot in Power Automate for desktop
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
 Copilot in desktop flows allows you to create automation that helps streamline your workflow creation quickly and easily using natural language. You can create a new flow or add more steps to an existing flow by just describing what you want to achieve using natural language prompts.
 
 > [!IMPORTANT]
-> - This is a preview feature.
+> - Copilot’s Natural Language to flow creation is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it may appear in English rather than your preferred language.
-> - Copilot’s Natural Language to flow creation is powered by the Azure OpenAI service. This feature is in Early Access.
+> - Copilot’s Natural Language to flow creation is powered by the Azure OpenAI service. This feature is in preview.
 > - Copilot’s generative answers capability is powered by the Azure OpenAI Service and Bing Search.
 
 Copilot can perform the following actions:
@@ -35,11 +35,25 @@ Copilot can perform the following actions:
 
 Copilot in Power Automate for desktop offers different capabilities, which are available in environments located in the following countries/regions:
 
-- Create flows using Copilot
+- Create flows using Copilot (preview)
   - United States
-- Answer product related questions
+- Answer product related questions and Summarize actions and subflows
+  - Asia Pacific
   - Australia
+  - Brazil
+  - Canada
+  - Europe
+  - France
+  - Germany
   - India
+  - Japan
+  - Norway
+  - Singapore
+  - South Africa
+  - South Korea
+  - Sweden
+  - Switzerland
+  - United Arab Emirates
   - United Kingdom
   - United States
 
@@ -48,7 +62,7 @@ Copilot in Power Automate for desktop offers different capabilities, which are a
 Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
 
 > [!NOTE]
-> If your environment is in a supported region, you are signed in with a work or school account, and you still can't see Copilot in the Power Automate for desktop experience, contact your Power Platform administrator. An admin can turn Copilot off or on in the Power Platform admin center.
+> If your environment is in a supported region, you are signed in with a work or school account, and you still can't see Copilot in the Power Automate for desktop experience, contact your Power Platform administrator.
 
 ## Create a desktop flow using Copilot (preview)
 
@@ -92,7 +106,7 @@ Crafting effective prompts involves more than just being specific with your requ
 - Try tweaking your prompt to further fine tune.
 - Learn more about writing prompts with generative AI at [The art of the prompt: How to get the best out of generative AI](https://news.microsoft.com/source/features/ai/the-art-of-the-prompt-how-to-get-the-best-out-of-generative-ai/).
 
-## How to use Copilot to get answers to product-related questions (preview)
+## Use Copilot to get answers to product-related questions
 
 Access the generative answers capability from the console by selecting the Copilot icon located on the top right corner of the console window.
 
@@ -107,6 +121,33 @@ From Copilot’s side panel, make sure the generative answers skill is selected 
 :::image type="content" source="media/pad-copilot/power-automate-desktop-copilot-designer-generative-answers2.png" alt-text="Screenshot that the generative answers button and picker in the designer's Copilot panel":::
 
 In the Copilot pane, ask any product related questions or use one of the proposed prompts to get you started. The answer generated contains a link to the documentation page to refer you to additional information. Make sure you always review AI-generated content.
+
+## Use Copilot to summarize actions and subflows 
+
+The Summarize actions & subflows Copilot skill helps you quickly understand desktop flows by generating concise summaries for specific actions, multiple actions, or entire subflows. This skill lets you troubleshoot and maintain flows more efficiently, saving time and simplifying the process of understanding and optimizing your automation.
+
+### Key features
+
+This skill lets you generate summaries for individual actions, multiple actions, or entire subflows within your desktop flow. You can reference specific line numbers or subflow names to request descriptions, such as "Summarize action in line 4" or "Summarize subflow 'main'." You can also customize the level of detail in the summaries by specifying your preferences, like requesting a high-level overview in a couple of sentences or a more detailed explanation. For example, you can say "Summarize subflow <subflow_name> in a couple of sentences".
+
+### How to use
+
+To use the "Summarize actions & subflows" skill, select it from the Copilot skill picker drop-down menu in the Power Automate for desktop flows designer. Then, type your prompt in natural language to generate a summary.
+
+## Help us improve Copilot
+
+To send feedback, select the thumbs up or thumbs down icon under the AI-generated content. A feedback dialog appears, allowing you to submit feedback to Microsoft. Learn more about how this data is used and your rights at [Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control).
+
+> [!NOTE]
+> If you can't see the feedback dialog, check if your tenant admin [turned it off](#turn-off-user-feedback-functionality).
+
+### Turn off user feedback functionality
+
+As a [Power Platform admin](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), prevent users from sending Copilot feedback to Microsoft by using the "Copilot feedback" [tenant setting](/power-platform/admin/tenant-settings).
+
+### Data subject rights requests on user feedback
+
+Tenant administrators can view, export, and delete feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com) and selecting **Health** > **Product feedback**.
 
 ## Frequently asked questions (FAQ)
 

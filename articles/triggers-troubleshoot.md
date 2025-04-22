@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot common issues with triggers
-description: Learn how to find and fix issues when your flows won't run.
+description: Learn how to find and fix issues when your flows don't run.
 suite: flow
 author: kenseongtan
 contributors:
@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 09/04/2024
+ms.date: 02/06/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
@@ -19,7 +19,7 @@ search.audienceType:
 
 # Troubleshoot common issues with triggers
 
-Here are a few tips and tricks for troubleshooting issues with triggers.
+Here are some tips and tricks for troubleshooting issues with triggers.
 
 ## Identify specific flow run
 
@@ -31,9 +31,9 @@ Sometimes, you might need to [Identify specific flow runs](./fix-flow-failures.m
 
    Admins can create [data loss prevention (DLP)](/power-platform/admin/wp-data-loss-prevention) policies that can act as guardrails to help prevent users from unintentionally exposing organizational data. DLP policies enforce rules for which connectors can be used together by classifying connectors as either **Business** or **Non-Business**. If you put a connector in the **Business** group, it can only be used with other connectors from that group in any given app or flow.
 
-   If your flow violates a DLP policy, it's suspended, causing the trigger to not fire. To know if your flow is suspended, try to edit the flow and save it. The flow checker will report it if the flow violates a DLP policy. Your admin can change the DLP policy.
+   If your flow violates a DLP policy, it is suspended, causing the trigger to not fire. To know if your flow is suspended, try to edit the flow and save it. The flow checker reports it if the flow violates a DLP policy. Your admin can change the DLP policy.
 
-1. The trigger may be failing. 
+1. The trigger might be failing. 
    Follow these steps to confirm:
 
    1. Sign in to [Power Automate](https://make.powerautomate.com).
@@ -44,9 +44,9 @@ Sometimes, you might need to [Identify specific flow runs](./fix-flow-failures.m
 
    This error means that Power Automate tried multiple times to establish a connection to register the trigger and failed. Your flow won't trigger until this problem is resolved.
 
-   One of the common reasons for this failure is that the Power Automate service endpoints are not part of the allow list. To fix it, confirm that your IT department has added these endpoints to the allow list.
+   One of the common reasons for this failure is that the Power Automate service endpoints aren't part of the allow list. To fix it, confirm that your IT department added these endpoints to the allow list.
 
-   Here is the list of [IP addresses](/power-apps/limits-and-config#ip-addresses) and [domains](https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate) that need to be added to your allow list.
+   Here's the list of [IP addresses](/power-apps/limits-and-config#ip-addresses) and [domains](https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate) that need to be added to your allow list.
 
    Refer to this [support article](https://support.microsoft.com/help/4540228/there-is-a-problem-with-the-flow-s-trigger) to learn more about how to fix issues with triggers.
 
@@ -54,14 +54,14 @@ After the problem is resolved, modify the flow and then save it. You can then ch
 
 ### Verify connections
 
-With the default settings, users only need to sign in to a connection once. They can then use that connection until it's revoked by an admin. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s authentication token to expire after a specific amount of time. Token lifetime policies are configured on Microsoft Entra ID. For more information, review this [Azure article](/azure/active-directory/develop/active-directory-configurable-token-lifetimes) or this [support article](https://support.microsoft.com/help/4467879/conditional-access-and-multi-factor-authentication-in-flow).
+With the default settings, users only need to sign in to a connection once. They can then use that connection until an admin revokes it. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s authentication token to expire after a specific amount of time. Token lifetime policies are configured on Microsoft Entra ID. For more information, review this [Azure article](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
 
 Follow these steps to verify if your connections are broken:
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Go to **Data** > **Connections**.
 1. Find the connection that your flow uses.
-1. Select **Fix connections**, and then update the credentials for your connection if there is a **Fix connection** message next to the **Status** column.
+1. Select **Fix connections**, and then update the credentials for your connection if there's a **Fix connection** message next to the **Status** column.
 
    ![A screenshot that displays a link to fix a broken connection.](./media/triggers-introduction/fix-link.png)
 
@@ -91,29 +91,15 @@ Go to **My flows** in the left pane, and then select the flow. In the **28-day r
 
 :::image type="content" source="./media/triggers-introduction/all-runs.png" alt-text="Screenshot showing all runs.":::
 
-If you expect the flow to run but it didn’t run, see if it shows the trigger check was skipped at that time. If the trigger check was skipped, it means that the trigger condition wasn’t met for the flow to trigger. Verify the flow the inputs and trigger conditions to confirm if you are using the latest configuration to trigger the flow.
+If you expect the flow to run but it didn’t run, see if it shows the trigger check was skipped at that time. If the trigger check was skipped, it means that the trigger condition wasn’t met for the flow to trigger. Verify the flow the inputs and trigger conditions to confirm if you're using the latest configuration to trigger the flow.
 
 ### Verify inputs and trigger conditions
 
-Sometimes, the inputs and trigger conditions may cause failures. Follow these steps to verify your inputs and conditions.
+Sometimes, the inputs and trigger conditions might cause failures. Follow these steps to verify your inputs and conditions.
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-# [Classic designer](#tab/classic-designer)
-
-1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. Edit the flow.
-1. Expand the first card to see what folders, sites, mailboxes, etc. are used in the trigger.
-1. On the card, select the ellipses (**…**) > **Settings**.
-1. Find **Trigger conditions**.
-
-   If the field is empty, it means that there are no additional customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
-
-   If there are additional customizations in **Trigger Conditions**, confirm that you're using the expected or correct inputs to trigger the flow.
-
-    :::image type="content" source="./media/triggers-introduction/trigger-conditions.png" alt-text="Screenshot that shows trigger conditions.":::
-
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Edit the flow.
@@ -124,11 +110,25 @@ Sometimes, the inputs and trigger conditions may cause failures. Follow these st
 1. Select **Settings**.
 1. Find **Trigger conditions**.
 
-   If the field is empty, it means that there are no additional customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
+   If the field is empty, it means that there are no other customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
 
-   If there are additional customizations in **Trigger Conditions**, confirm that you are using the expected or correct inputs to trigger the flow.
+   If there are other customizations in **Trigger Conditions**, confirm that you're using the expected or correct inputs to trigger the flow.
 
     :::image type="content" source="./media/triggers-introduction/copilot-trigger-conditions.png" alt-text="Screenshot that shows trigger conditions in Copilot.":::
+
+# [Classic designer](#tab/classic-designer)
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. Edit the flow.
+1. Expand the first card to see what folders, sites, mailboxes, etc. are used in the trigger.
+1. On the card, select the ellipses (**…**) > **Settings**.
+1. Find **Trigger conditions**.
+
+   If the field is empty, it means that there are no other customizations and that the title of the card (in this case, **When an item is created or modified**) indicates when the trigger fires.
+
+   If there are other customizations in **Trigger Conditions**, confirm that you're using the expected or correct inputs to trigger the flow.
+
+    :::image type="content" source="./media/triggers-introduction/trigger-conditions.png" alt-text="Screenshot that shows trigger conditions.":::
 
 ---
 
@@ -138,7 +138,7 @@ Verify that you have access to the folders, sites, or mailboxes that are used in
 
 ### Verify if admin mode is turned on
 
-If an environment’s admin mode is turned on, all background processes, including flows will be turned off, causing the flow to not trigger.
+If an environment’s admin mode is turned on, all background processes, including flows are turned off, causing the flow to not trigger.
 
 Follow these steps to disable the admin mode.
 
@@ -176,6 +176,13 @@ See the following table to understand how your flow responds when it's turned ba
 
 Follow these steps to determine the type of trigger that your flow uses.
 
+# [New designer](#tab/new-designer)
+
+1. In the action configfuration pane to the left, select **Code View**.
+1. Find the `recurrence` section with an interval `frequency` element. If this section is available, the trigger is a *polling* trigger.
+
+    :::image type="content" source="./media/triggers-introduction/copilot-recurrence.png" alt-text="Screenshot of the recurrence section in Copilot.":::
+
 # [Classic designer](#tab/classic-designer)
 
 1. On the title bar, select the ellipsis (**...**) > **Peek code**.
@@ -185,13 +192,6 @@ Follow these steps to determine the type of trigger that your flow uses.
 1. Find the `recurrence` section with an interval `frequency` element. If this section is available, the trigger is a *polling* trigger.
 
     :::image type="content" source="./media/triggers-introduction/frequency.png" alt-text="Screenshot of the recurrence section.":::
-
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-1. In the action configfuration pane to the left, select **Code View**.
-1. Find the `recurrence` section with an interval `frequency` element. If this section is available, the trigger is a *polling* trigger.
-
-    :::image type="content" source="./media/triggers-introduction/copilot-recurrence.png" alt-text="Screenshot of the recurrence section in Copilot.":::
 
 ---
 
@@ -213,13 +213,21 @@ Confirm that you've set the **Start time** on the **Recurrence** card to ensure 
 
 ## There's a delay before my trigger fires
 
-If the trigger is a polling trigger, it wakes up periodically to check if any new events have occurred.  The wake-up time depends on the license plan on which the flow runs.
+If the trigger is a polling trigger, it wakes up periodically to check if any new events have occurred. The wake-up time depends on the license plan on which the flow runs.
 
 For example, your flows may run every 15 minutes if you’re on the **Free** license plan. On the **Free** plan, if a cloud flow is triggered less than 15 minutes after its last run, it’s queued until 15 minutes have elapsed.
 
 And, if your license is the **Flow for Office 365** plan (from your Enterprise license E3, E5, etc.) or the **Flow for Dynamics 365** plan, your flow won't run again until five minutes have elapsed. So, it may be a few minutes between the time the triggering event occurs and the time the flow begins.
 
 Follow these steps to check the trigger wake up frequency.
+
+# [New designer](#tab/new-designer)
+
+1. On your flow, select your flow trigger.
+1. Select **Code View**.
+1. Find the interval frequency.
+
+    :::image type="content" source="./media/triggers-introduction/copilot-recurrence.png" alt-text="Screenshot of the frequency element in Copilot.":::
 
 # [Classic designer](#tab/classic-designer)
 
@@ -231,23 +239,15 @@ Follow these steps to check the trigger wake up frequency.
 
     :::image type="content" source="./media/triggers-introduction/frequency.png" alt-text="Screenshot of the frequency element.":::
 
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-1. On your flow, select your flow trigger.
-1. Select **Code View**.
-1. Find the interval frequency.
-
-    :::image type="content" source="./media/triggers-introduction/copilot-recurrence.png" alt-text="[Screenshot of the frequency element in Copilot.":::
-
 ---
 
 If it's taking much longer than expected for your flow to trigger, here are the two likeliest reasons:
 
-1. There's been too many calls to the connector or flow, causing it to be throttled. To verify if your flow is being throttled, manually test the flow to see if it triggers immediately. If it triggers immediately, it is not throttled.
+1. There's been too many calls to the connector or flow, causing it to be throttled. To verify if your flow is being throttled, manually test the flow to see if it triggers immediately. If it triggers immediately, it isn't throttled.
 
    You can check the [Power Automate analytics](./admin-analytics-report.md) to learn more about your flows.
 
-   If your flow is frequently throttled, redesign your flow to use fewer actions. Learn more about [plan limits and tips to optimize flows to use fewer actions](https://support.microsoft.com/help/4531688/troubleshooting-slow-running-flows).
+   If your flow is frequently throttled, redesign your flow to use fewer actions. Learn more in [Understand platform limits and avoid throttling](guidance/coding-guidelines/understand-limits.md).
 
    Additional tips:
 
@@ -263,11 +263,11 @@ If it's taking much longer than expected for your flow to trigger, here are the 
 
 Unable to rename actions in a cloud flow – This is a known issue for flows that use Power Apps triggers. As a workaround to rename actions, remove the trigger. Rename the actions, add your Power Apps trigger, and then configure variables wherever needed.
 
-After an app is published, make copies of the flows used by that app to make any updates. Any update to a cloud flow that's referenced by a published app can break existing users. Do not delete or turn off existing flows until all users have been upgraded to the new published version of the app.
+After an app is published, make copies of the flows used by that app to make any updates. Any update to a cloud flow that's referenced by a published app can break existing users. Don't delete or turn off existing flows until all users have been upgraded to the new published version of the app.
 
 ## SharePoint trigger issues
 
-SharePoint triggers, for example **When a file is created or modified**, will not fire if a file is added or updated in a subfolder. If you need the flow to trigger on subfolders, create multiple flows.
+SharePoint triggers, for example **When a file is created or modified**, don't fire if a file is added or updated in a subfolder. If you need the flow to trigger on subfolders, create multiple flows.
 
 ## Users are unable to run flows that are shared with them, but the owner can run the flow
 
@@ -279,12 +279,16 @@ You can try one of the following:
 
 1. Confirm the user has the appropriate license for the connections in the flow.
 
-   A Power Automate license is required for the user to perform any actions like save, turn off, and more. A Power Apps, Dynamics 365, or Microsoft 365 license is not sufficient. Users with whom flows that use premium connectors are shared will each need a Power Automate Premium (previously Power Automate per user) or Power Automate Process license (previously Power Automate per flow) license to edit or manually trigger the flow. If the user was previously able to save or modify the flow, it's possible that their license has expired.
+   A Power Automate license is required for the user to perform any actions like save, turn off, and more. A Power Apps, Dynamics 365, or Microsoft 365 license isn't sufficient. Users with whom flows that use premium connectors are shared will each need a Power Automate Premium (previously Power Automate per user) or Power Automate Process license (previously Power Automate per flow) license to edit or manually trigger the flow. If the user was previously able to save or modify the flow, it's possible that their license has expired.
 
-   Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you will need a paid plan to run or edit flows that use premium connectors. See the [licensing page](https://make.powerautomate.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard) for more details.
+   Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you need a paid plan to run or edit flows that use premium connectors. You can find more information in the [licensing page](https://make.powerautomate.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard).
 
 ### My flows don't trigger after I change the environment URL
 
 To resolve this issue, edit each flow and save it. The triggers should start firing again.
+
+## Triggers aren't respecting expressions used in them
+
+For triggers, the value of expressions is calculated only when the flow is saved. For example, if your trigger uses `utcNow()` in an input, `utcNow()` is calculated when you save the flow, and the current UTC time is inserted into the trigger definition as a hardcoded value. `utcNow()` isn't recalculated every time the flow is triggered.
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

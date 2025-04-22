@@ -4,7 +4,7 @@ description: Learn about the Power Automate v2 schema.
 author: nvigne
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 10/03/2024
+ms.date: 03/05/2025
 ms.author: nvigne
 ms.reviewer: matp
 contributors:
@@ -93,7 +93,7 @@ When you save a desktop flow in v2 schema, you might see the following error:
 
 :::image type="content" source="media/schema/desktopflow-v2-limit.png" alt-text="Error during flow save error message indicating limit on the flow size.":::
 
-The limit applies to the definition of the desktop flow saved in Dataverse, which can't exceed 2 MB. The issue can occur with a large desktop flow, such as when actions have large property values or variables have large default values. For example, an image saved as base64 and set as a default variable value.
+The limit applies to the definition of the desktop flow saved in Dataverse, which can't exceed 16M characters. The issue can occur with a large desktop flow, such as when actions have large property values or variables have large default values. For example, an image saved as base64 and set as a default variable value.
 
 We recommend to not store a large payload in the action properties or in the variable default value. Instead retrieve the value from other actions or pass the value as an input variable. You can also split your desktop flow into multiple child desktop flows.
 
@@ -122,6 +122,7 @@ If you use custom security roles to manage the access to your desktop flow, Powe
 - `prvAssigndesktopflowbinary`
 - `prvAppenddesktopflowbinary`
 - `prvAppendTodesktopflowbinary`
+- `prvReadSolution`
 
 The minimum access level for each privilege is basic (user). More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
 
