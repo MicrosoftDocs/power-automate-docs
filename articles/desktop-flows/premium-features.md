@@ -4,7 +4,7 @@ description: Premium robotic process automation (RPA) features
 author: jpapadimitriou
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 04/11/2025
+ms.date: 04/22/2025
 ms.author: dipapa
 ms.reviewer: angieandrews
 contributors:
@@ -26,7 +26,7 @@ This article lists the premium robotic process automation (RPA) features and ben
 
 |Feature/Benefit | Description|Additional information|
 |----------------|------------|----------------------|
-|Automatic triggering/scheduling and integration with cloud flows<sup>|Trigger/schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger desktop flows from cloud flows](trigger-desktop-flows.md)|
+|Automatic triggering/scheduling and integration with cloud flows|Trigger/schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger desktop flows from cloud flows](trigger-desktop-flows.md)|
 |Flow triggering via desktop shortcut|Trigger local attended desktop flows through their desktop shortcuts.|[Learn how to trigger a desktop flow via shortcut](run-desktop-flows-url-shortcuts.md)|
 |Flow triggering via URL|Trigger local attended desktop flows through their run URLs from anywhere on your machine.|[Learn how to trigger a desktop flow via URL](run-desktop-flows-url-shortcuts.md)|
 |Flow triggering in Picture-in-Picture|Trigger attended desktop flows within a virtual window.|[Learn how to trigger a desktop in Picture-in-Picture](run-desktop-flows-pip.md)|
@@ -47,8 +47,6 @@ This article lists the premium robotic process automation (RPA) features and ben
 |Work queues|Use work queues to store, prioritize, distribute, and process work items.| [Learn more about work queues](work-queues.md)|
 |Credentials|Retrieve and use credentials in desktop flows| [Learn more about credentials](create-AzureKeyVault-credential.md)|
 
-1. 
-
 > [!IMPORTANT]
 >
 > - Unattended desktop flow executions require the Power Automate Process plan (previously named Power Automate per flow).
@@ -56,15 +54,15 @@ This article lists the premium robotic process automation (RPA) features and ben
 
 ## Licenses that provide entitlements for the premium RPA features
 
-Compare license entitlements [here]](/power-platform/admin/power-automate-licensing/types#compare-power-automate-licenses).
+Compare license entitlements in [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-process%2Cconnector-types).
 
 ### Trial license
 
-The [Power Automate Trial](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-trial-license) user license has a 90 days lifetime. Free users in an organization can sign up for this trial through the **Start trial** option found within the **Go premium** section of Power Automate for desktop or the **desktop flows** sections of the Power Automate portal. Free users are also prompted to start a trial while they attempt to add the **Run a flow built with Power Automate for desktop** action in a cloud flow.
+The [Power Automate Trial](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-trial-license) user license lasts for 90 days. Free users in an organization can sign up for this trial through the **Start trial** option in the **Go premium** section of Power Automate for desktop or the **desktop flows** section of the Power Automate portal. Free users are prompted to start a trial when they try to add the **Run a flow built with Power Automate for desktop** action in a cloud flow.
 
 ### Power Automate Premium license
 
-The [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) license gives access to all RPA premium features (except unattended RPA & hosted RPA). Both Power Platform admins and individual users and makers can purchase licenses for Power Automate. You can find more information about purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
+The [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) license lets you access all RPA premium features, except unattended RPA and hosted RPA. Both Power Platform admins, individual users, and makers can buy licenses for Power Automate. Learn more about purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
 
 ### Pay-as-you-go
 
