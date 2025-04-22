@@ -23,7 +23,7 @@ search.audienceType:
 
 To migrate customizations of your Process Mining report from one workspace to another, follow the steps in this article. Learn more about composite models in [Use composite models in Power BI Desktop](/power-bi/transform-model/desktop-composite-models) and [Customize reports in Power BI workspace](process-mining-pbi-workspace.md#customize-reports-in-power-bi-workspace) or [Customize reports in Fabric workspace (preview)](process-mining-fabric-workspace.md).
 
-If you linked your process in the Test environment to a workspace (for example, WkSpace B) that's different from the one used by the process in the Dev environment (for example, WkSpace A), follow the steps in this section.
+If your process in the Test environment is connected to a different workspace (for example, WkSpace B) than the one used in the Dev environment (for example, WkSpace A), follow the steps in this article.
 
 ## Attach a workspace to your process
 
@@ -38,7 +38,7 @@ Before you get started, ensure that the states of your reports, workspaces, and 
 
 The following report and its composite model are in WkSpace A. Your report can look like this, or have customizations of your choice.
 
-:::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-report-a.png" alt-text="Report A shows a dashboard with a process map on the left, case percentages at the top, duration of cases, and other variants.":::
+:::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-report-a.png" alt-text="Screenshot of Report A dashboard with a process map, case percentages, duration of cases, and other variants.":::
 
 ### State of your WkSpace A
 
@@ -55,7 +55,7 @@ The numbering corresponds with the numbering of entities in the following screen
 
 There are three (3) entities titled **Report A**. You can differentiate them using their icons and their **Refreshed** timestamps:
 
-- The icon with the yellow bars represents the reports. The other icon is that of the composite model or semantic model.
+- The icon with yellow bars represents the reports. The other icon is that of the composite model or semantic model.
 - The report with the same **Refreshed** timestamp as the composite model is the report of the composite model.
 
     :::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-a.png" alt-text="Screenshot of entities and refreshed timestamps for WkSpace A using different workspaces.":::
