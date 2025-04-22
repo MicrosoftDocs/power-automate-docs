@@ -27,10 +27,8 @@ Check out this short video for an overview of cloud flow management.<br/><br/>
 To learn more about how you can manage your cloud flows, select the following articles:
 
 - [Edit and test updates](error-checker.md)
-- [Share your flows with others](create-team-flows.md)
-- [Export and import a non-solution flow](export-import-flow-non-solution.md)
-- [Save drafts of your flows and get version history](drafts-versioning.md)
 - [Turn flows on or off](disable-flow.md)
+- [Share your flows with others](create-team-flows.md)
 
 ## Open the details screen for a flow
 
