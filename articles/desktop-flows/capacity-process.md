@@ -26,7 +26,7 @@ Process capacity or legacy unattended RPA capacity can be allocated to a machine
 
 ## Allocate process capacity to a machine
 
-When process capacity is allocated to a cloud flow, it becomes a *Process plan*. This plan licenses the cloud flow to run premium actions independently from the user license, with a daily limit of 250,000 Power Platform requests.
+When Process capacity is allocated to a machine, it becomes an *unattended bot*. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform.
 
 To allocate process capacity to a machine, go to the machine details page and select **Settings**.
 
@@ -47,7 +47,7 @@ You now have a machine that can perform unattended RPA.
 
 ## Allocate process capacity to a cloud flow 
 
-When a process capacity is allocated to a cloud flow, it becomes a *Process plan*. This plan licenses the cloud flow to run premium actions independently from the user license, with a daily limit of 250,000 [Power Platform Request](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate).
+When process capacity is allocated to a cloud flow, it becomes a *Process plan*. This plan licenses the cloud flow to run premium actions independently from the user license, with a daily limit of 250,000 Power Platform requests.
 
 To allocate a Process capacity to a cloud flow, go to the cloud flow details page and select **Edit**.
 
