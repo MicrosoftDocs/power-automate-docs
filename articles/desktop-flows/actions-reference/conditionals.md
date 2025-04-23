@@ -5,7 +5,7 @@ author: HeatherOrt
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/23/2022
-ms.author: samanthur
+ms.author: samathur
 ms.reviewer: matp
 contributors:
 - jpapadimitriou
