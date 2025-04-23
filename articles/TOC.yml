@@ -139,6 +139,8 @@
         href: run-scheduled-tasks.md
       - name: Process a list of items
         href: apply-to-each.md
+    - name: Limits and configuration
+      href: limits-and-config.md
     - name: Power Automate mobile app
       items:
       - name: Overview
@@ -1237,40 +1239,34 @@
       href: privacy-dsr-accountclose-msa.md
   - name: Power Automate US Government
     href: us-govt.md
-- name: Reference
-  items:
   - name: Regions overview
     href: regions-overview.md
-  - name: Limits and configuration
-    href: limits-and-config.md
-  - name: Frequently asked questions
-    href: frequently-asked-questions.yml
-  - name: Power Automate glossary
-    href: glossary.md
-  - name: Classic Dataverse
+- name: Common questions about Power Automate
+  href: frequently-asked-questions.yml
+- name: Classic Dataverse
+  items:
+  - name: Classic Dataverse workflows
     items:
-    - name: Classic Dataverse workflows
-      items:
-      - name: Overview
-        href: workflow-processes.md
-      - name: Configure background workflow stages and steps
-        href: configure-workflow-steps.md
-      - name: Monitor and manage background workflow processes
-        href: monitor-manage-processes.md
-      - name: Best practices for background workflow processes
-        href: best-practices-workflow-processes.md
-      - name: Replace background workflows with flows
-        href: replace-workflows-with-flows.md
-    - name: Classic Dataverse task flows
-      items:
-      - name: Create mobile task flows
-        href: create-mobile-task-flow.md
-    - name: Classic Dataverse dialogs
-      items:
-      - name: Use classic Dataverse dialogs
-        href: use-cds-for-apps-dialogs.md
-      - name: Replace classic Dataverse dialogs
-        href: replace-dialogs.md
+    - name: Overview
+      href: workflow-processes.md
+    - name: Configure background workflow stages and steps
+      href: configure-workflow-steps.md
+    - name: Monitor and manage background workflow processes
+      href: monitor-manage-processes.md
+    - name: Best practices for background workflow processes
+      href: best-practices-workflow-processes.md
+    - name: Replace background workflows with flows
+      href: replace-workflows-with-flows.md
+  - name: Classic Dataverse task flows
+    items:
+    - name: Create mobile task flows
+      href: create-mobile-task-flow.md
+  - name: Classic Dataverse dialogs
+    items:
+    - name: Use classic Dataverse dialogs
+      href: use-cds-for-apps-dialogs.md
+    - name: Replace classic Dataverse dialogs
+      href: replace-dialogs.md
 - name: Find help and support
   items:
   - name: Get online help
