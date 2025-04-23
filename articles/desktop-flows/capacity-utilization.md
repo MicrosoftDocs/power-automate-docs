@@ -1,14 +1,18 @@
 ---
 title: Capacity utilization within Power Automate
-description: Capacity utilization within Power Automate
+description: Learn how to manage and optimize capacity utilization in Power Automate, including Hosted Process and Process capacities, for efficient automation.
 author: cvassallo
 ms.subservice: desktop-flow
-ms.date: 02/06/2025
+ms.date: 04/23/2025
 ms.author: cvassallo
 ms.reviewer: angieandrews
 contributors:
-- DanaMartens
+  - DanaMartens
 ms.topic: conceptual
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/23/2025
 ---
 
 # Capacity utilization within Power Automate

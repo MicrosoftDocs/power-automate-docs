@@ -1,14 +1,18 @@
 ---
-title: Hosted Process capacity utilization 
-description: Hosted Process capacity utilization 
+title: Hosted Process capacity utilization
+description: Learn how to monitor and manage Hosted Process capacity utilization in Power Automate to optimize your environment's performance and scalability.
 author: cvassallo
 ms.subservice: desktop-flow
-ms.date: 02/05/2025
+ms.date: 04/23/2025
 ms.author: cvassallo
 ms.reviewer: angieandrews
 contributors:
-- DanaMartens
+  - DanaMartens
 ms.topic: conceptual
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/23/2025
 ---
 
 # Hosted Process capacity utilization
