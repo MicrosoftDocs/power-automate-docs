@@ -4,7 +4,7 @@ description: "Learn how to use flows to delete rows in Microsoft Dataverse."
 services: ''
 suite: flow
 documentationcenter: na
-author: v-aangie
+author: radioblazer
 ms.author: Matow
 ms.reviewer: angieandrews
 editor: ''

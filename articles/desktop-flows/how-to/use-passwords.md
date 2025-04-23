@@ -1,12 +1,11 @@
 ---
 title: Use passwords
 description: Learn how to use passwords in desktop flow actions.
-author: jpapadimitriou
-
+author: HeatherOrt
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 07/09/2024
-ms.author: dipapa
+ms.author: nimoutzo
 ms.reviewer: 
 contributors:
 - jpapadimitriou

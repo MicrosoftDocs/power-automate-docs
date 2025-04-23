@@ -4,14 +4,14 @@ description: Learn how to fix known issues with using forms in automated flows.
 services: ''
 suite: i
 documentationcenter: na
-author: Dean-Haas
+author: HeatherOrt
 editor: ''
 tags: ''
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/12/2022
-ms.author: jamiller
+ms.author: dbekirop
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

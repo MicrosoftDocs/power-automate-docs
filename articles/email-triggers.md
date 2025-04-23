@@ -2,11 +2,11 @@
 title: Trigger a cloud flow based on email properties in Power Automate
 description: Learn how to start a cloud flow based on properties of an email such as the subject, sender's address, or recipient's address - When a new email arrives (V3), On new email.
 suite: flow
-author: hamenon
+author: HeatherOrt
 contributors:
   - hamenon
   - v-aangie
-ms.author: heortaol
+ms.author: dbekirop
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
