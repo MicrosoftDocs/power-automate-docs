@@ -1,19 +1,12 @@
 ---
-title: How to - Top scenarios with approval flows | Microsoft Docs
+title: How to - Top scenarios with approval flows
 description: Get help on implementing top scenarios for approval processes with flows.
-services: ''
 suite: flow
-documentationcenter: na
-author: v-aangie
-editor: ''
-tags: ''
-
+author: HeatherOrt
 ms.subservice: cloud-flow
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 01/12/2023
-ms.author: angieandrews
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

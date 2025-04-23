@@ -4,7 +4,7 @@ description: "Learn how to update rows in Microsoft Dataverse with flows."
 services: ''
 suite: flow
 documentationcenter: na
-author: v-aangie
+author: HeatherOrt
 ms.author: Matow
 ms.reviewer: angieandrews
 editor: ''

@@ -1,11 +1,11 @@
 ---
 title: Share/export a desktop flow
 description: Share/export a desktop flow
-author: mattp123
+author: HeatherOrt
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 07/29/2024
-ms.author: quseleba
+ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
