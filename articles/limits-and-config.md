@@ -2,7 +2,7 @@
 title: Limits of automated, scheduled, and instant flows
 description: Learn about the limits that apply to automated, scheduled, and instant flows in Microsoft Power Automate.
 author: samathur
-ms.author: samathur
+ms.author: lali
 ms.reviewer: angieandrews
 Contributors:
   - samathur

@@ -3,10 +3,10 @@ title: Manage security for Power Automate
 description: Manage security for Power Automate through built-in Dataverse roles.
 ms.topic: conceptual
 ms.date: 02/27/2024
-ms.author: appapaio
+ms.author: cgarty
 ms.reviewer: ndoelman
 contributors:
-author: rpapostolis
+author: HeatherOrt
 search.audienceType: 
   - flowmaker
   - enduser

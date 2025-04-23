@@ -1,10 +1,7 @@
 ---
 title: Create a business process flow in Power Apps
 description: Learn how to create a business process flow
-ms.custom: ""
 ms.date: 01/15/2025
-ms.suite: ""
-ms.tgt_pltfrm: ""
 ms.subservice: cloud-flow
 ms.topic: conceptual
 applies_to: 
@@ -13,10 +10,9 @@ applies_to:
   - "Power Apps"
 ms.assetid: efe86ab3-430f-485a-b924-6ed82cfbb449
 caps.latest.revision: 39
-author: "vashr"
-ms.author: "vashr"
+author: HeatherOrt
+ms.author: cgarty
 ms.reviewer: angieandrews
-ms.manager: tapanm
 search.audienceType: 
   - flowmaker
   - enduser

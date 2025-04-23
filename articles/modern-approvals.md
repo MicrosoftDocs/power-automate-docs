@@ -7,7 +7,7 @@ contributors:
   - kisubedi
   - kartikraop
   - v-aangie
-ms.author: kisubedi
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual

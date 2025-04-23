@@ -1,14 +1,12 @@
 ---
 title: Known issues and limitations
 description: Known issues and limitations when working with approvals.
-services: ''
 suite: flow
-documentationcenter: na
-author: hamenon 
+author: HeatherOrt 
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 10/05/2022
-ms.author: kewaiss
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
