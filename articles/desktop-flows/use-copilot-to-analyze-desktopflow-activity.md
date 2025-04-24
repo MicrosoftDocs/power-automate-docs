@@ -189,7 +189,6 @@ This table shows default responses that are returned when the copilot is unable 
 The following list contains known limitations of the copilot in desktop flow activity.
 
 - Copilot is a new technology that is still being developed. It's optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
-- Copilot is currently only available in Dataverse environments based in the United States.
 - Copilot might return wrong or incomplete data and FetchXML queries.
 - Copilot is initially only capable to answer questions about desktop flow activity such as errors, machines, and past and current runs.
 - In multi-turn conversations, copilot keeps context of the last five question only. If you encounter wrong or incomplete results, consider resetting the conversation. More information: [Clearing previous prompt context to start over](#clearing-previous-prompt-context-to-start-over).
