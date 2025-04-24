@@ -10,7 +10,7 @@ contributors:
  - EllenWehrle
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 03/19/2025
+ms.date: 04/24/2025
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -19,7 +19,7 @@ ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
 ---
 
-# What is the cloud flows designer?
+# Explore the cloud flows designer
 
 You can create, configure, and customize your cloud flows with the classic designer or the cloud flows designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
 
@@ -31,7 +31,7 @@ You can create, configure, and customize your cloud flows with the classic desig
 >
 > More information: [Identify differences between the classic designer and the new cloud flows designer](#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer)
 
-Here's a screenshot of the AI-powered cloud flows designer's features and a legend is available to give you more context.
+Following is a screenshot of the AI-powered cloud flows designer's features. To give you more context, refer to the legend.
 
 :::image type="content" source="media/flows-designer/designer-overview-numbers-borders.png" alt-text="Screenshot of the cloud flows designer with Copilot.":::
 
@@ -82,7 +82,7 @@ When there are no errors, your next step should be to test your flow.
 
 ## Test button
 
-After your flow is saved successfully, **Test** becomes active. To test your flow, select **Test** > After your flow is successfully saved, the **Test** button becomes available. To test your flow, select **Test**, select the **Manually** option, and then select **Test**.
+After your flow is successfully saved, the **Test** button becomes available. To test your flow, select **Test**, select the **Manually** option, and then select **Test**.
 
 :::image type="content" source="media/flows-designer/test-manually.png" alt-text="Screenshot of the option for manually testing your flow.":::
 
@@ -135,15 +135,6 @@ On the **Settings** tab, you can set the action time-out, network retry policy, 
 | Run After | In the **Run After** field, configure how an action should run after the execution of any of the preceding flow actions. For example, you can choose to run an action after the preceding action runs successfully, times out, skips, or fails. |
 | Security | Use the **Secure inputs** and **Secure outputs** toggles to turn the operations, and references of output properties, on or off. |
 | Tracking | Set the key and value of tracked properties.|
-
-### Configurable trigger polling setting
-
-In select triggers such as *When an item is created-Sharepoint*, and more, you can manually configure the trigger polling setting. This means you can configure how often the flow should check for new items in Sharepoint and others. This in turn ensures how quickly your flow responds to any changes or trigger events. The default polling period is three (3) minutes, which means the flow checks every three (3) minutes if a new item was created.
-
-1. On the [action configuration pane](#action-configuration-pane), select the **Parameters** tab.
-1. Under the **How often do you want to check for items?** heading, enter the interval number and the frequency from the dropdown menu.
-
-    :::image type="content" source="media/flows-designer/trigger-polling.svg" alt-text="Screenshot of the trigger polling setting in the action configuration pane, Parameters tab.":::
 
 ### Code View
 
@@ -245,11 +236,11 @@ To quickly identify which designer version you're using, ask yourself the follow
 
 The new designer automatically saves a copy of the flow to browser storage upon failed save, even with errors. This capability comes in handy on two occasions: 1) When the underlying service is going through an outage and when makers need to avoid losing their unsaved changes, by exiting out of their flows, or 2) For non-solution flows, which lack the 'Save draft' functionality, makers can exit out of their flow with errors and come back at a later time to fix the errors and save the flow.
 
-A info banner appears on the designer notifying when designer is able to save the flow copy to browser's storage. Makers can now exit out of their flow.
+A banner appears on the designer notifying you when designer can save the flow copy to browser's storage. You can now exit out of your flow.
 
 :::image type="content" source="media/flows-designer/designer-info-banner.png" alt-text="Screenshot of the info banner above the flow.":::
 
-Upon revisiting the flow on the designer, the previously saved version loads on the designer by default. The unsaved copy is recoverable through the 'Recover' button on the info banner.
+Upon revisiting the flow on the designer, the previously saved version loads on the designer by default. The unsaved copy is recoverable through the 'Recover' button on the banner.
 
 :::image type="content" source="media/flows-designer/designer-recover.png" alt-text="Screenshot of the Recover flow button in flow designer.":::
 
@@ -262,7 +253,7 @@ You can now fix errors on this copy of the flow and save it. If you don't save t
 > [!WARNING]
 > - Saving this copy overrides the previously saved version of the flow. It also clears the browser storage, as there are no unsaved changes on the flow.
 > - Clearing the browser cache deletes the saved copy of the flow from the browser.
-> - If you still need access to the unsaved flow copy, *don't* clear cache orcookies from the browser.
+> - If you still need access to the unsaved flow copy, *don't* clear cache or cookies from the browser.
 
 ## Limitations and known issues
 
@@ -270,7 +261,7 @@ You might notice that some functionalities that were in the classic designer are
 
 - Non-Open API flows (If there's Peek code on an action and if you see the API Connection value instead of Open API Connection in Kind field, it's a non-Open API flow.)
   - These are legacy flows, probably created a long time ago when Open API support wasn't available.
-  - We have plans to migrate them to Open API format, with no fixed announcement date. In the meantime, if you want to work with the latest functionalities in the new designer/Copilot experience, consider recreating the flow in new designer until the migration plan is announced.
+  - We plan to migrate them to Open API format. In the meantime, if you want to work with the latest functionalities in the new designer Copilot experience, consider recreating the flow in the new designer until we announce the migration plan.
 - Some hybrid triggers:
   - When a flow is run from business process flow (Dataverse)
   - Microsoft 365 Compliance Connector
@@ -280,9 +271,9 @@ You might notice that some functionalities that were in the classic designer are
 - Perform a changeset request action (Dataverse)
 - A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
 
-As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is gradually becoming the primary interface.
+As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is becoming the primary interface.
 
-If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. Simply turn off the **New designer** toggle on the menu in the cloud flows designer.
+If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. To do this, turn off the **New designer** toggle on the menu in the cloud flows designer.
 
 :::image type="content" source="media/flows-designer/designer-toggle.png" alt-text="Screenshot of the 'New designer' toggle.":::
 
