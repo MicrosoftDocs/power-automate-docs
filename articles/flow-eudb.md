@@ -41,7 +41,7 @@ Get-AdminFlow -EnvironmentName 00aa00aa-bb11-cc22-dd33-44ee44ee44ee -IncludeEUDB
 
 ## Perform the migration
 
-Once you identify which environments contain flows that need to be migrated, you can proceed to migrate them either individually or environment-by-environment using the [Start-EUDBMigration](/powershell/module/microsoft.powerapps.administration.powershell/start-eudbmigration) cmdlet. After starting the migration, save the **Operation ID** that is returned. You can use this with the [Get-EUDBMigrationStatus](/powershell/module/microsoft.powerapps.administration.powershell/get-eudbmigrationstatus cmdlet to check whether the migration is complete or is still in progress.
+Once you identify which environments contain flows that need to be migrated, you can proceed to migrate them either individually or environment-by-environment using the [Start-EUDBMigration](/powershell/module/microsoft.powerapps.administration.powershell/start-eudbmigration) cmdlet. After starting the migration, save the **Operation ID** that is returned. You can use this with the [Get-EUDBMigrationStatus](/powershell/module/microsoft.powerapps.administration.powershell/get-eudbmigrationstatus) cmdlet to check whether the migration is complete or is still in progress.
 
 ### During migration
 
