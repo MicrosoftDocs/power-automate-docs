@@ -1241,9 +1241,7 @@
     href: us-govt.md
   - name: Use Power Automate within the EU Data Boundary
     href: flow-eudb.md
-- name: Reference
-  items:
-  - name: Regions overview
+- name: Regions overview
     href: regions-overview.md
 - name: Common questions about Power Automate
   href: frequently-asked-questions.yml
