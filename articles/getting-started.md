@@ -1,5 +1,5 @@
 ---
-title: Get started with Power Automate
+title: Explore the Power Automate home page
 description: Learn how to navigate the Power Automate home page.
 author: kisubedi
 contributors:
@@ -19,7 +19,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Get started with Power Automate
+# Explore the Power Automate home page
 
 Power Automate allows you to optimize your business processes across your organization and automate repetitive tasks. This service helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. It does this with the help of task mining and process mining.
 
