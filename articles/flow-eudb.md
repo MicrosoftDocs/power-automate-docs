@@ -25,7 +25,7 @@ Power Automate temporarily transfers some pseudonymized personal data from the E
 
 ## Plan for migration
 
-To identity which flows need to be migrated and from which environments, run the [Get-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflow?view=pa-ps-latest) cmdlet with the flag `IncludeEUDBNonCompliantFlows`. This command lists all the flows in need of migration from the environments that you have Power Platform administrator permissions.
+To identity which flows need to be migrated and from which environments, run the [Get-AdminFlow](/powershell/module/microsoft.powerapps.administration.powershell/get-adminflow) cmdlet with the flag `IncludeEUDBNonCompliantFlows`. This command lists all the flows in need of migration from the environments that you have Power Platform administrator permissions.
 
 ### List flows from across all environments
 
@@ -41,7 +41,7 @@ Get-AdminFlow -EnvironmentName 00aa00aa-bb11-cc22-dd33-44ee44ee44ee -IncludeEUDB
 
 ## Perform the migration
 
-Once you identify which environments contain flows that need to be migrated, you can proceed to migrate them either individually or environment-by-environment using the [Start-EUDBMigration](/powershell/module/microsoft.powerapps.administration.powershell/start-eudbmigration?view=pa-ps-latest) cmdlet. After starting the migration, save the **Operation ID** that is returned. You can use this with the [Get-EUDBMigrationStatus](/powershell/module/microsoft.powerapps.administration.powershell/get-eudbmigrationstatus?view=pa-ps-latest) cmdlet to check whether the migration is complete or is still in progress.
+Once you identify which environments contain flows that need to be migrated, you can proceed to migrate them either individually or environment-by-environment using the [Start-EUDBMigration](/powershell/module/microsoft.powerapps.administration.powershell/start-eudbmigration) cmdlet. After starting the migration, save the **Operation ID** that is returned. You can use this with the [Get-EUDBMigrationStatus](/powershell/module/microsoft.powerapps.administration.powershell/get-eudbmigrationstatus cmdlet to check whether the migration is complete or is still in progress.
 
 ### During migration
 
