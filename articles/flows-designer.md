@@ -136,15 +136,6 @@ On the **Settings** tab, you can set the action time-out, network retry policy, 
 | Security | Use the **Secure inputs** and **Secure outputs** toggles to turn the operations, and references of output properties, on or off. |
 | Tracking | Set the key and value of tracked properties.|
 
-### Configurable trigger polling setting
-
-In select triggers such as *When an item is created-Sharepoint*, and more, you can manually configure the trigger polling setting. This means you can configure how often the flow should check for new items in Sharepoint and others. This in turn ensures how quickly your flow responds to any changes or trigger events. The default polling period is three (3) minutes, which means the flow checks every three (3) minutes if a new item was created.
-
-1. On the [action configuration pane](#action-configuration-pane), select the **Parameters** tab.
-1. Under the **How often do you want to check for items?** heading, enter the interval number and the frequency from the dropdown menu.
-
-    :::image type="content" source="media/flows-designer/trigger-polling.svg" alt-text="Screenshot of the trigger polling setting in the action configuration pane, Parameters tab.":::
-
 ### Code View
 
 To view the code behind any card in your flow, select the card on the canvas, and then select **Code View** in the action configuration pane. As you customize the code on the [Parameters](#parameters) tab, you can view the new code on the **Code View** tab.
