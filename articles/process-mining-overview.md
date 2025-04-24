@@ -1,7 +1,7 @@
 ---
 title: Overview of process mining in Power Automate
 description: Get an overview of process mining to help you understand your real processes, how they're operated, identify opportunities for improvement, and more.
-author: donums
+author: rosikm
 contributors:
   - HeatherOrt
   - donums
@@ -10,7 +10,7 @@ contributors:
 ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 10/30/2024
-ms.author: heortaol
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

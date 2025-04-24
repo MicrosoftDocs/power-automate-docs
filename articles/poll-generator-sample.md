@@ -1,19 +1,12 @@
 ---
-title: Poll generator sample | Microsoft Docs
+title: Poll generator sample
 description: An Adaptive Card input form that's designed for submitting polls to Microsoft Teams.
-services: ''
 suite: flow
-documentationcenter: na
-author: v-aangie
-editor: ''
-tags: ''
-
+author: HeatherOrt
 ms.subservice: cloud-flow
 ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 01/01/2020
-ms.author: angieandrews
+ms.author: derahonuorah
 search.audienceType: 
   - flowmaker
   - enduser

@@ -1,11 +1,11 @@
 ---
 title: SharePoint 
 description: Learn about the available SharePoint actions.
-author: mattp123
+author: HeatherOrt
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 05/24/2024
-ms.author: dipapa
+ms.author: kisubedi
 ms.reviewer: matp
 contributors:
   - DanaMartens

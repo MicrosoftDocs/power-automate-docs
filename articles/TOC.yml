@@ -24,8 +24,12 @@
           href: get-started-with-copilot.md
         - name: Explore the cloud flows designer
           href: flows-designer.md
-        - name: Get started with triggers
-          href: triggers-introduction.md
+        - name: Start a cloud flow with a trigger
+          items:
+          - name: Get started with triggers
+            href: triggers-introduction.md
+          - name: Troubleshoot common issues with triggers
+            href: triggers-troubleshoot.md
         - name: Get help from the Microsoft Copilot Studio bot
           href: contextual-help-bot.md
     - name: How to
@@ -108,8 +112,6 @@
             href: /power-platform/admin/app-insights-cloud-flow.md
     - name: Troubleshoot
       items:
-      - name: Troubleshoot common issues with triggers
-        href: triggers-troubleshoot.md
       - name: Watch a cloud flow
         href: see-a-flow-run.md
         displayName: Monitor flow activity on mobile devices
@@ -137,6 +139,8 @@
         href: run-scheduled-tasks.md
       - name: Process a list of items
         href: apply-to-each.md
+    - name: Limits and configuration
+      href: limits-and-config.md
     - name: Power Automate mobile app
       items:
       - name: Overview
@@ -1241,46 +1245,42 @@
   items:
   - name: Regions overview
     href: regions-overview.md
-  - name: Limits and configuration
-    href: limits-and-config.md
-  - name: Frequently asked questions
-    href: frequently-asked-questions.yml
-  - name: Power Automate glossary
-    href: glossary.md
-  - name: Classic Dataverse
-    items:
-    - name: Classic Dataverse workflows
-      items:
-      - name: Overview
-        href: workflow-processes.md
-      - name: Configure background workflow stages and steps
-        href: configure-workflow-steps.md
-      - name: Monitor and manage background workflow processes
-        href: monitor-manage-processes.md
-      - name: Best practices for background workflow processes
-        href: best-practices-workflow-processes.md
-      - name: Replace background workflows with flows
-        href: replace-workflows-with-flows.md
-    - name: Classic Dataverse task flows
-      items:
-      - name: Create mobile task flows
-        href: create-mobile-task-flow.md
-    - name: Classic Dataverse dialogs
-      items:
-      - name: Use classic Dataverse dialogs
-        href: use-cds-for-apps-dialogs.md
-      - name: Replace classic Dataverse dialogs
-        href: replace-dialogs.md
-- name: Resources
+- name: Common questions about Power Automate
+  href: frequently-asked-questions.yml
+- name: Classic Dataverse
   items:
-  - name: Microsoft Credentials for Power Platform
-    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl
+  - name: Classic Dataverse workflows
+    items:
+    - name: Overview
+      href: workflow-processes.md
+    - name: Configure background workflow stages and steps
+      href: configure-workflow-steps.md
+    - name: Monitor and manage background workflow processes
+      href: monitor-manage-processes.md
+    - name: Best practices for background workflow processes
+      href: best-practices-workflow-processes.md
+    - name: Replace background workflows with flows
+      href: replace-workflows-with-flows.md
+  - name: Classic Dataverse task flows
+    items:
+    - name: Create mobile task flows
+      href: create-mobile-task-flow.md
+  - name: Classic Dataverse dialogs
+    items:
+    - name: Use classic Dataverse dialogs
+      href: use-cds-for-apps-dialogs.md
+    - name: Replace classic Dataverse dialogs
+      href: replace-dialogs.md
+- name: Find help and support
+  items:
+  - name: Get online help
+    href: self-help.md
   - name: Blog
     href: https://make.powerautomate.com/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-  - name: Support
-    href: https://make.powerautomate.com/support/
+  - name: Learn new Power Platform skills
+    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl    
 - name: Responsible AI
   items:
   - name: Overview
