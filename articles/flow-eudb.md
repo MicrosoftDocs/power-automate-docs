@@ -15,7 +15,7 @@ search.audienceType:
 
 The [EU (European Union) Data Boundary](/privacy/eudb/eu-data-boundary-learn) is a geographically defined boundary within which Microsoft committed to store and process customer data and personal data for Microsoft online services including Power Automate.
 
-Power Automate temporarily transfers some pseudonymized personal data from the EU for certain Power Automate cloud flows created before November 2024. Prior to this date, cloud flows created outside of solutions were created in per-user resource groups with resource group names containing the user's object ID being globally replicated. Customers can ensure that pseudonymized personal data resides within the EU Data Boundary for these flows by using a migration tool available to Power Platform administrators. This article details the use of this tool.
+Power Automate temporarily transfers some pseudonymized personal data from the EU for certain Power Automate cloud flows created before November 2024. Prior to this date, cloud flows created outside of solutions were created in per-user resource groups with resource group names containing the user's object ID being globally replicated. Customers can ensure that pseudonymized personal data resides within the EU Data Boundary for these flows through the use of a migration tool available to Power Platform administrators. This article details the use of this tool.
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ Once you identify which environments contain flows that need to be migrated, you
 * New runs of instant (manually triggered) cloud flows can't be started.
 * Automated and scheduled cloud flows continue to run uninterrupted.
 
- For instant flows that are frequently run, we recommend to migrate them individually during off-hours. When performed on the environment level, migration occurs on a rolling basis during off-hours to minimize disruption, based on the Power Platform region of the environment. Environments with thousands of cloud flows might take up to two weeks to completely migrate. Migration doesn't require any action from flow owners, or cause changes to flow definitions or connections.
+ For instant flows that are frequently run, we recommend migrating them individually during off-hours. When performed on the environment level, migration occurs on a rolling basis during off-hours to minimize disruption, based on the Power Platform region of the environment. Environments with thousands of cloud flows might take up to two weeks to completely migrate. Migration doesn't require any action from flow owners, or cause changes to flow definitions or connections.
 
 #### Example: Starting the migration of all the non-compliant flows in the environment 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 
