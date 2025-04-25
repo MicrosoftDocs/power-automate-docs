@@ -1,6 +1,6 @@
 ---
 title: Create and test an approval workflow with Power Automate
-description: Learn how to automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, OneDrive for Business, Zendesk, or WordPress.
+description: Learn how to automate approval workflows that integrate with SharePoint, Dynamics CRM, Salesforce, OneDrive for work or school, Zendesk, or WordPress.
 suite: flow
 author: kisubedi
 contributors:
@@ -11,21 +11,22 @@ ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 10/09/2024
+ms.date: 04/21/2025
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 # Create and test an approval workflow with Power Automate
 
-With Power Automate, you can manage the approval of documents or processes across several services, including SharePoint, Dynamics 365, Salesforce, OneDrive for Business, Zendesk, or WordPress.
+With Power Automate, you can manage the approval of documents or processes across several services, including SharePoint, Dynamics 365, Salesforce, OneDrive for work or school, Zendesk, or WordPress.
 
 To create an approval workflow, add the **Approvals - Start and wait for an approval** action to any flow. After you add this action, your flow can manage the approval of documents or processes. For example, you can create document approval flows that approve invoices, work orders, or sales quotations. You can also create process approval flows that approve vacation requests, overtime work, or travel plans.
 
 Approvers can respond to requests from their email inbox, the approvals center in [Power Automate](https://make.powerautomate.com), or the Power Automate app.
 
 ## Create an approval flow
-Here's an overview of the flow we'll create and test:
+
+Here's an overview of the flow you create and test:
 
    ![Approval flow.](./media/modern-approvals/create-flow-overview.png)
 
@@ -61,7 +62,7 @@ Create these columns in your SharePoint Online list:
 | Approved | Yes/No |
 | Manager Comments | Single line of text |
 
-Make note of the name and URL of the SharePoint Online list. You'll need these items later when you configure the **SharePoint - When an item is created** trigger.
+Make note of the name and URL of the SharePoint Online list. You need these items later when you configure the **SharePoint - When an item is created** trigger.
 
 ## Create an automated cloud flow
 
@@ -85,7 +86,7 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 
     ![search for profile.](./media/modern-approvals/search-for-profile.png)
 
-1. Select the fields from your profile that you want to include in your flow, and then select **Create** to save the work you've done so far.
+1. Select the fields from your profile to include in your flow, and then select **Create** to save your work.
 
 ## Add an approval action
 
@@ -128,7 +129,7 @@ Follow these steps to send an email if the vacation request is approved.
 
    ![update item card.](./media/modern-approvals/configure-update-item-no.png)
 
-4. Select **Save** to save the work we've done.
+4. Select **Save** to save your work.
 
 If you've followed along, your flow should resemble this screenshot:
 
@@ -142,7 +143,7 @@ Now that we've created the flow, it's time to test it!
 
 ## Create long-running approvals
 
-If it's likely that your flow will run for more than 30 days, consider storing your approvals in Microsoft Dataverse. This makes it possible for you to create flows that act on responses to approval requests, even after the original flow run times out. 
+If your flow might run for more than 30 days, store your approvals in Microsoft Dataverse. This lets you create flows that act on responses to approval requests, even after the original flow run times out.
 
 To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action. Learn more about [long running approvals](/business-applications-release-notes/april19/microsoft-flow/increased-run-duration).
 
