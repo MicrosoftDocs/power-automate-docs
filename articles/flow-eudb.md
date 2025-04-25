@@ -60,7 +60,7 @@ Once you identify which environments contain flows that need to be migrated, you
 Start-EUDBMigration -EnvironmentName 00aa00aa-bb11-cc22-dd33-44ee44ee44ee
 </pre>
 
-#### Example: Starting the migration for several specific flows:
+#### Example: Starting the migration for several specific flows
 
 <pre>
 Start-EUDBMigration -EnvironmentName 00aa00aa-bb11-cc22-dd33-44ee44ee44ee -FlowNames 00001111-aaaa-2222-bbbb-3333cccc4444,11112222-bbbb-3333-cccc-4444dddd5555,22223333-cccc-4444-dddd-5555eeee6666
