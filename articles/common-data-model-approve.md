@@ -1,22 +1,16 @@
 ---
 title: Build an approval loop with Microsoft Dataverse
 description: Create a table, a cloud flow, and an app that work together so that reviewers can approve or reject files added to Dropbox.
-services: ''
 suite: flow
-documentationcenter: na
-author: natalie-pienkowska
+author: HeatherOrt
 contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-editor: ''
-tags: ''
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 02/22/2023
-ms.author: jamiller
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

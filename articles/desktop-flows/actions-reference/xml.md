@@ -1,12 +1,11 @@
 ---
 title: XML actions reference
-description: See all the available XML actions.
-author: mattp123
-
+description: Display the XML actions.
+author: HeatherOrt
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/24/2022
-ms.author: matp
+ms.author: kisubedi
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
