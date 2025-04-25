@@ -1,22 +1,16 @@
 ---
 title: Create approval flows with custom responses
 description: Learn how to create approval flows with custom responses.
-services: ''
 suite: flow
-documentationcenter: na
-author: natalie-pienkowska
+author: HeatherOrt
 contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-editor: ''
-tags: ''
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
 ms.date: 01/12/2023
-ms.author: jamiller
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
   - maker

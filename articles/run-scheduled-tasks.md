@@ -2,14 +2,14 @@
 title: Run a cloud flow on a schedule in Power Automate
 description: Learn how to automate recurring tasks by running a cloud flow on a schedule, such as every day or every hour.
 suite: flow
-author: kisubedi
+author: HeatherOrt
 contributors:
   - puneet-singh1
   - kisubedi
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-ms.author: heortaol
+ms.author: matow
 ms.reviewer: angieandrews
 ms.subservice: cloud-flow
 ms.topic: conceptual
