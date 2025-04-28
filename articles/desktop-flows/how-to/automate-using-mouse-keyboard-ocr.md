@@ -3,6 +3,7 @@ title: Automate using mouse & keyboard and OCR actions (recommended for automati
 description: Automate using mouse & keyboard and OCR actions (recommended for automation in VDI)
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 11/17/2021

@@ -3,6 +3,7 @@ title: Autofit Excel columns using VBScript
 description: Autofit Excel columns using VBScript
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 07/13/2021

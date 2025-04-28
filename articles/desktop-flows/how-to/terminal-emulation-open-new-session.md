@@ -2,6 +2,7 @@
 title: How to configure the open terminal session action
 description: Learn to configure the open terminal session action in Power Automate for desktop. Set up terminal sessions with Micro Focus Reflection and HLLAPI.
 author: NikosMoutzourakis
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 11/15/2024

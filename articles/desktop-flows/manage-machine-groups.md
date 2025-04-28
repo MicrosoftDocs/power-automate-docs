@@ -2,6 +2,7 @@
 title: Manage machine groups
 description: Group multiple machines together to help distribute your automation workload and optimize productivity.
 author: Mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 04/10/2025

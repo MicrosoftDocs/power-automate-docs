@@ -2,6 +2,7 @@
 title: Manage variables and the variables pane
 description: See how to manage variables and the variables pane
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 04/11/2025

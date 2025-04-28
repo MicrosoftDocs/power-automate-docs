@@ -3,6 +3,7 @@ title: Run desktop flow from other desktop flows
 description: Run desktop flow from other desktop flows
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 01/20/2025

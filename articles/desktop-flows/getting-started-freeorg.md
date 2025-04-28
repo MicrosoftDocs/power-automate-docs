@@ -2,6 +2,7 @@
 title: Get started with a work or school account
 description: Get started with Power Automate desktop flows using a work or school account.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 02/17/2023
