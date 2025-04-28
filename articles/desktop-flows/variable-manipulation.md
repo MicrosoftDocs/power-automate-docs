@@ -2,6 +2,7 @@
 title: Variable manipulation and the % notation
 description: Variable manipulation and the % notation
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 01/16/2024

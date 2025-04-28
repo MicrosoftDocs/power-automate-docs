@@ -3,6 +3,7 @@ title: FTP actions reference
 description: See all the available FTP actions.
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/23/2022

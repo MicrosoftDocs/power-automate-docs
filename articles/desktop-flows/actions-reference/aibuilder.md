@@ -2,6 +2,7 @@
 title: AI Builder actions reference
 description: Learn about the available AI Builder action.
 author: Mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 10/19/2023

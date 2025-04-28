@@ -5,6 +5,7 @@ author: janPidych
 contributors:
   - janPidych
   - v-aangie
+ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 04/03/2023

@@ -2,6 +2,7 @@
 title: Test a selector
 description: Test a selector
 author: nikosmoutzourakis
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 04/04/2023

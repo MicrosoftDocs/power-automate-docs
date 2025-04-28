@@ -3,6 +3,7 @@ title: Run SQL queries to Microsoft Access
 description: Run SQL queries to Microsoft Access
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/09/2021

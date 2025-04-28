@@ -2,6 +2,7 @@
 title: Excel actions reference
 description: See all the available Excel actions.
 author: jpapadimitriou
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 02/10/2025

@@ -3,6 +3,7 @@ title: Customize email in flows with Power Automate
 description: Learn to enhance your email flows in Power Automate with HTML formatting, cloud-hosted images, and dynamic group email actions.
 suite: flow
 author: kisubedi
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 03/28/2025
