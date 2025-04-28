@@ -70,6 +70,7 @@ There are certain limitations when using flows with solutions. For information a
 - [Import a solution](./import-flow-solution.md)
 - [Edit a solution-aware flow](./edit-solution-aware-flow.md)
 - [Remove a solution-aware flow](./remove-solution-aware-flow.md)
+- [Training: Work with solution-aware cloud flows (module)](/training/modules/solution-aware-flow/)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
