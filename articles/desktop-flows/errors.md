@@ -2,6 +2,7 @@
 title: Handle errors in desktop flows
 description: See how to handle errors and warnings in your desktop flows
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 01/20/2025

@@ -2,6 +2,7 @@
 title: What's new in Power Automate | Microsoft Docs
 description: Learn about all the new features in Power Automate.
 author: v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 05/22/2023

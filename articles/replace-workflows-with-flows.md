@@ -4,6 +4,7 @@ description: Describes Power Automate capabilities and recommended patterns to u
 author: v-aangie
 ms.author: angieandrews
 ms.reviewer: angieandrews
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 08/12/2022

@@ -2,6 +2,7 @@
 title: Manage machines
 description: Manage machines
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 01/14/2025

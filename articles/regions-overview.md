@@ -3,6 +3,7 @@ title: Regions overview for Power Automate
 description: Overview with question and answer about regions in Power Automate.
 suite: flow
 author: ChrisGarty
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.date: 10/08/2024

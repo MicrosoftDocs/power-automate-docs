@@ -2,6 +2,7 @@
 title: Hosted RPA Best Practices and FAQ
 description: Discover best practices and FAQs for hosted RPA solutions. Learn about configuration, maintenance, custom VM images, access, and security.
 author: kenseongtan
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 03/10/2025

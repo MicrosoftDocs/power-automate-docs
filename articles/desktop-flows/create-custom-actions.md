@@ -2,6 +2,7 @@
 title: Create custom actions
 description: Learn about how to create custom actions in Power Automate for desktop
 author: jpapadimitriou
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 10/14/2024

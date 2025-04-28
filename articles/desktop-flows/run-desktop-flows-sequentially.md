@@ -2,6 +2,7 @@
 title: Run desktop flows sequentially
 description: See how to run multiple desktop flows on the same machine sequentially.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 02/15/2023

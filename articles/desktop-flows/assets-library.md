@@ -2,6 +2,7 @@
 title: Assets library 
 description: Learn about Assets library in Power Automate for desktop.
 author: jpapadimitriou
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 04/11/2025

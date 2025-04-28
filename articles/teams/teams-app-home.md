@@ -7,6 +7,7 @@ contributors:
   - kewaiss
   - v-aangie
 ms.collection: get-started
+ms.service: power-automate
 ms.subservice: teams
 ms.topic: conceptual
 ms.date: 10/27/2023

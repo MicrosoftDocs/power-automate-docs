@@ -7,6 +7,7 @@ contributors:
   - lutorre
   - kewaiss
   - v-aangie
+ms.service: power-automate
 ms.subservice: teams
 ms.topic: overview
 ms.date: 02/27/2025

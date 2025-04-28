@@ -2,6 +2,7 @@
 title: Power Fx in desktop flows
 description: Learn about using Power Fx for creating expressions in desktop flows.
 author: nikosmoutzourakis
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 11/7/2024

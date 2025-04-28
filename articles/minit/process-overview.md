@@ -5,6 +5,7 @@ author: janpidych
 contributors:
   - janpidych
   - v-aangie
+ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 03/31/2025
