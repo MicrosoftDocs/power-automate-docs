@@ -11,6 +11,7 @@ contributors:
   - v-aangie
 ms.author: derahonuorah
 ms.reviewer: angieandrews
+ms.service: power-automate
 ms.subservice: teams
 ms.topic: conceptual
 ms.date: 01/13/2021

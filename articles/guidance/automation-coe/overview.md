@@ -4,6 +4,7 @@ description: Automation adoption best practices provide proven guidance for esta
 author: kathyos
 ms.topic: conceptual
 ms.date: 10/6/2022
+ms.service: power-automate
 ms.subservice: guidance
 ms.author: kathyos
 ms.reviewer: angieandrews

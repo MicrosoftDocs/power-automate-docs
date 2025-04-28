@@ -3,6 +3,7 @@ title: Use auditing in Microsoft Dataverse and Microsoft Purview
 description: Learn how to use auditing in Microsoft Dataverse and Microsoft Purview to meet compliance and security policies.
 #customer intent: As a Power Automate user, I want to use auditing in Microsoft Dataverse and view audit logs in Microsoft Purview so that I can ensure adherence to compliance and security policies.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 02/18/2025

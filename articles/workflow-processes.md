@@ -4,6 +4,7 @@ description: "Learn about how to run classic Dataverse background workflows."
 ms.custom: ""
 ms.date: 07/27/2020
 ms.reviewer: "angieandrews"
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.assetid: 1f3c9780-26ad-49ec-a3fb-fc226def19c5
