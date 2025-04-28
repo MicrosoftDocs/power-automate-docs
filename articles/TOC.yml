@@ -138,7 +138,7 @@
       - name: Process a list of items
         href: apply-to-each.md
     - name: Analyze Power Automate telemetry using Application Insights
-      href: /power-platform/admin/app-insights-cloud-flow.md
+      href: /power-platform/admin/app-insights-cloud-flow
     - name: Limits and configuration
       href: limits-and-config.md
     - name: Power Automate mobile app
