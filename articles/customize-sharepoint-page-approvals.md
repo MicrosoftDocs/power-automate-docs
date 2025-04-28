@@ -3,6 +3,7 @@ title: Manage SharePoint page approvals with Power Automate
 description: Learn how to manage SharePoint page approvals with Power Automate.
 suite: flow
 author: HeatherOrt
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 11/25/2024

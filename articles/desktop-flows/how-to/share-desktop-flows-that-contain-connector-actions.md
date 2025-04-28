@@ -2,6 +2,7 @@
 title: Share desktop flows that contain connector actions
 description: Learn how to share desktop flows that contain connector actions.
 author: jpapadimitriou
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 03/21/2025

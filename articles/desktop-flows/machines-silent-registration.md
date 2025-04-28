@@ -2,6 +2,7 @@
 title: Silent registration for machines
 description: This article describes how to use a mass deployment tool that allows you to easily install Power Automate on multiple machines.
 author: QuentinSele
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 09/07/2023

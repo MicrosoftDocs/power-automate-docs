@@ -2,6 +2,7 @@
 title: CyberArk actions reference
 description: See all the available CyberArk actions.
 author: jpapadimitriou
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 05/30/2024

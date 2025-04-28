@@ -2,6 +2,7 @@
 title: HTTP actions reference
 description: Display the HTTP actions.
 author: HeatherOrt
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 01/20/2025

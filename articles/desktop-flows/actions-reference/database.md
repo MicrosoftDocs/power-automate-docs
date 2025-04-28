@@ -2,6 +2,7 @@
 title: Database actions reference
 description: See all the available database actions.
 author: cochamos
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 02/21/2025
