@@ -5,7 +5,7 @@ author: mattp123
 
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 06/30/2023
+ms.date: 04/28/2025
 ms.author: quseleba
 ms.reviewer: matp
 contributors:
@@ -68,6 +68,13 @@ To be able to launch the desktop flow from a cloud flow, edit the desktop flow i
 
 >[!IMPORTANT]
 > In case a data loss prevention (DLP) policy rule is set to a desktop flow after it has been used in a cloud flow, there won't be any notification and the cloud flow will error out at that step. In case a desktop flow violates any rules and you correct it you will need to go back to the cloud flow and reselect it from the list.
+
+## Endpoint filtering in desktop flows
+
+The Browser Automation Endpoint Filtering feature in Power Automate for Desktop enhances the control and security of desktop flows by specifying which web pages can or cannot be accessed. This functionality is crucial for maintaining compliance with organizational policies and reducing the risk of accessing unwanted or harmful content during a flow's execution. Endpoint filtering is implemented within the 'Launch Web Browser' or 'Go to web page' actions. It validates each web page request according to predefined endpoint criteria before a desktop flow can proceed with browser interactions. 
+
+Learn more [here](/power-platform/admin/connector-endpoint-filtering)
+
 
 ### More info
 
