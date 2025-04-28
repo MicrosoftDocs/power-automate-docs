@@ -2,7 +2,7 @@
 title: Determining which automation method to use when planning a Power Automate project | Microsoft Docs
 description: After the process design is complete, the next step is the architectural design to focus on how you'll automate that process.
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance

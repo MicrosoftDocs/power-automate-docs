@@ -5,6 +5,7 @@ ms.custom: ""
 ms.date: 08/02/2018
 ms.suite: ""
 ms.tgt_pltfrm: ""
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
 applies_to: 
