@@ -6,6 +6,7 @@ contributors:
   - janPidych
   - rosikm
   - v-aangie
+ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
 ms.date: 12/02/2024
