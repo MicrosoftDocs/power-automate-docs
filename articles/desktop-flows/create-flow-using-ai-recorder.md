@@ -3,6 +3,7 @@ title: Create desktop flows using Record with Copilot (preview)
 description: Create desktop flows effortlessly with Record with Copilot in Power Automate desktop by sharing your screen and narrating tasks to automate.
 author: JoeFernandezMS
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 04/01/2025

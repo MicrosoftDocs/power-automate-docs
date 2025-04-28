@@ -2,6 +2,7 @@
 title: Cloud Connectors in Power Automate for desktop 
 description: Learn about the available Cloud Connector operations in Power Automate for desktop.
 author: jpapadimitriou
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 03/21/2025

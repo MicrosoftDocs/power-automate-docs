@@ -3,6 +3,7 @@ title: Automate desktop applications
 description: See how to automate desktop applications and extract data from them.
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 09/22/2020

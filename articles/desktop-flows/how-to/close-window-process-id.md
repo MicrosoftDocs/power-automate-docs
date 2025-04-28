@@ -3,6 +3,7 @@ title: Close any window through its process ID
 description: Close any window through its process ID
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/03/2021
