@@ -20,8 +20,6 @@ No matter how simple or complex a Power Automate desktop flow is, maintaining qu
 
 These coding guidelines provide standards for building readable and maintainable desktop flows, optimizing end to end process performance, securing your data and monitoring your automation processes.
 
-[!INCLUDE [pp-tip-powercat-toolkit](~/../shared-content/shared/guidance-includes/pp-tip-powercat-toolkit.md)]
-
 ## Next step
 
 > [!div class="nextstepaction"]
