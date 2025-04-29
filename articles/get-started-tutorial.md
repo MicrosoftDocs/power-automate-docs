@@ -1,6 +1,6 @@
 ---
 title: Get started with Power Automate tutorial
-description: Learn how to navigate the Power Automate home page.
+description: Learn how to build a cloud flow with Copilot with a tutorial.
 author: HeatherOrt
 contributors:
   - HeatherOrt

@@ -190,7 +190,7 @@ Here are some examples of what you can find with the help feature:
 - Access the Power Automate Community, where you can share information with users in other organizations.
 - Get announcements on the newest features in the Power Automate blog.
 
-## 4 – AI Copilot
+## 4 - AI Copilot
 
 If your organization has AI enabled, then you see **Start building your flow with Copilot** on the Power Automate Home screen.
 
@@ -210,7 +210,7 @@ Here's the list of the main categories:
 
 - **What's new:** Learn about upcoming events and new and updated product features.
 
-## 6 – Ask a chatbot
+## 6 - Ask a chatbot
 
 Get contextual help while building your flow using the Power Platform virtual agent. To learn more, go to [Get contextual help with flows from the Microsoft Copilot Studio bot](contextual-help-bot.md).
 
