@@ -22,15 +22,13 @@ ms.collection:
 
 # Explore the Power Automate home page
 
-Power Automate allows you to optimize your business processes across your organization and automate repetitive tasks. This service helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. It does this with the help of task mining and process mining.
-
-## Get started from the home page
+Power Automate allows you to optimize your business processes across your organization and automate repetitive tasks. This service helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
 
 The Power Automate home page offers you various options for creating your own flows and learning about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate can help your business.
 
-If your organization has AI enabled, then it also includes the new Copilot features.
+If your organization has AI enabled, then it also includes Copilot features.
 
-To learn more, select the following links.
+To learn more, select the links following the screenshot.
 
 :::image type="content" source="media/getting-started/home-full-numbers.png" alt-text="Screenshot of the new look of the home screen.":::
 
@@ -192,7 +190,7 @@ Here are some examples of what you can find with the help feature:
 - Access the Power Automate Community, where you can share information with users in other organizations.
 - Get announcements on the newest features in the Power Automate blog.
 
-## 4 - AI Copilot
+## 4 – AI Copilot
 
 If your organization has AI enabled, then you see **Start building your flow with Copilot** on the Power Automate Home screen.
 
@@ -212,12 +210,13 @@ Here's the list of the main categories:
 
 - **What's new:** Learn about upcoming events and new and updated product features.
 
-## 6 - Ask a chatbot
+## 6 – Ask a chatbot
 
 Get contextual help while building your flow using the Power Platform virtual agent. To learn more, go to [Get contextual help with flows from the Microsoft Copilot Studio bot](contextual-help-bot.md).
 
 ## Related information
 
+- [Get started with Power Automate: tutorial](get-started-tutorial.md)
 - [Training: Get started with Power Automate (module)](/training/modules/get-started-flows/)
 - [Training: Automate a business process using Power Automate (learning path)](/training/paths/automate-process-power-automate/)
 

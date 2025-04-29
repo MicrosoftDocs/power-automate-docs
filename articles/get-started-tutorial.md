@@ -1,5 +1,5 @@
 ---
-title: Get started with Power Automate
+title: Get started with Power Automate tutorial
 description: Learn how to navigate the Power Automate home page.
 author: HeatherOrt
 contributors:
@@ -18,9 +18,9 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Get started with Power Automate
+# Get started with Power Automate tutorial
 
-This article provides a tutorial for you to learn how to create a cloud flow using Copilot. Copilot is a feature in Power Automate that helps you create flows using natural language. You can use Copilot to create flows, add actions, and modify existing flows. <!--say more-->-->.
+This article provides a tutorial for you to learn how to create a cloud flow using Copilot. Copilot is a feature in Power Automate that helps you create flows using natural language. You can use Copilot to create flows, add actions, and modify existing flows. <!--say more-->
 
 The completed flow in this tutorial sends an email weekly to a customer with an overdue account.
 
