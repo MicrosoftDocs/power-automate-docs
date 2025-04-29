@@ -2,11 +2,11 @@
 title: Optimize flow performance
 description: Learn how to enhance flow performance by choosing the right actions, applying error handling, and avoiding unnecessary loops.
 # customer intent: As a Power Automate user, I want to optimize flow performance so that my workflows execute faster and with fewer errors.
-author: manuelap-msft
+author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 04/29/2025
-ms.author: mapichle
+ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin

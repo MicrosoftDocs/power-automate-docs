@@ -2,11 +2,11 @@
 title: Monitor and troubleshoot your automation processes
 description: Monitor and troubleshoot your automation processes with actionable insights to ensure reliability and efficiency. Learn how to optimize and maintain seamless operations.
 # customer intent: As a Power Automate user, I want to monitor desktop flow action logs so that I can ensure seamless operation and troubleshoot issues effectively.
-author: manuelap-msft
+author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 04/29/2025
-ms.author: mapichle
+ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
@@ -22,7 +22,7 @@ Monitor and troubleshoot your automation activities to ensure seamless operation
 
 - With logs V2, you get near real-time updates of actions as your desktop flow runs. Learn more about [progressive action logging](/power-automate/desktop-flows/monitor-run-details#progressive-action-logging).
 
-:::image type="content" source="media/monitor-and-troubleshoot-your-automation-processes/desktop-flow-run.png" alt-text="Screenshot of desktop flow action logs configuration screen." lightbox = "media/monitor-and-troubleshoot-your-automation-processes/desktop-flow-run.png":::
+:::image type="content" source="media/monitor-automation-processes/desktop-flow-run.png" alt-text="Screenshot of desktop flow action logs configuration screen." lightbox = "media/monitor-processes/desktop-flow-run.png":::
 
 - Use the [**Log message** action](/power-automate/desktop-flows/actions-reference/logging) to log custom text messages with a severity level of Info, Warning, or Error in the flow run action details.
 
@@ -60,15 +60,15 @@ The [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the 
 
 It lets you measure and improve the operational health metrics of your automation-related assets across environments and highlights resources with degraded operational health that might need improvement.
 
-:::image type="content" source="media/monitor-and-troubleshoot-your-automation-processes/tenant-reports.png" alt-text="Screenshot of the Monitor page in the Power Platform admin center showing analytics and recommendations." lightbox = "media/monitor-and-troubleshoot-your-automation-processes/tenant-reports.png":::
+:::image type="content" source="media/monitor-automation-processes/tenant-reports.png" alt-text="Screenshot of the Monitor page in the Power Platform admin center showing analytics and recommendations." lightbox = "media/monitor-automation-processes/tenant-reports.png":::
 
 ## Build your own reports on MS Fabric
 
 For more advanced or custom monitoring, reporting, and analysis, integrate with Microsoft Fabric. The **Link to Microsoft Fabric** feature in Power Platform lets you access all your Power Automate data in Microsoft OneLake, the built-in data lake for Microsoft Fabric.
 
-:::image type="content" source="media/monitor-and-troubleshoot-your-automation-processes/fabric.png" alt-text="Screenshot of Microsoft Fabric interface showing Power Automate data in OneLake." lightbox = "media/monitor-and-troubleshoot-your-automation-processes/fabric.png":::
+:::image type="content" source="media/monitor-automation-processes/fabric.png" alt-text="Screenshot of Microsoft Fabric interface showing Power Automate data in OneLake." lightbox = "media/monitor-automation-processes/fabric.png":::
 
-## Related information
+## Related resources
 
 - [Generate automation-centric data analytics with Fabric](/power-automate/automation-analytics-with-fabric-introduction).
-- [Create automation-related SQL queries](/power-automate/automation-analytics-with-fabric-queries) on the SQL Analytical Endpoint in Fabric. 
+- [Create automation-related SQL queries](/power-automate/automation-analytics-with-fabric-queries) on the SQL Analytical Endpoint in Fabric.

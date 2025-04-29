@@ -2,11 +2,11 @@
 title: Secure your data
 description: Protect sensitive data and ensure compliance with security standards in Power Automate by using credentials, sensitive variables, and DLP policies.
 # customer intent: As a Power Automate user, I want to set up credentials securely so that I can protect sensitive data in desktop flows and network connections.
-author: manuelap-msft
+author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 04/29/2025
-ms.author: mapichle
+ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin

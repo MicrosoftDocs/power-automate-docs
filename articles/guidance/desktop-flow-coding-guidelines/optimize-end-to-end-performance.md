@@ -2,11 +2,11 @@
 title: Optimize end-to-end process performance
 description: Learn how to distribute workloads dynamically using machine groups and hosted machine groups in Power Automate for improved automation efficiency.
 # customer intent: As a Power Automate user, I want to distribute workloads dynamically using machine groups so that I can improve automation efficiency.
-author: manuelap-msft
+author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 04/29/2025
-ms.author: mapichle
+ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
@@ -37,9 +37,7 @@ To maximize automation efficiency in Power Automate, optimize how workloads are 
 - Redundancy - built-in redundancy helps prevent downtime and ensures continuous operation.
 - Reduced overhead - lower operational costs due to reduced need for hardware and maintenance.
 
-:::image type="content" source="media/optimize-end-to-end-process-performance/hosted-machine.png" alt-text="Screenshot showing the configuration and benefits of hosted machine groups in Power Automate." lightbox = "media/optimize-end-to-end-process-performance/hosted-machine.png":::
-
-
+:::image type="content" source="media/optimize-e2e/hosted-machine.png" alt-text="Screenshot showing the configuration and benefits of hosted machine groups in Power Automate." lightbox = "media/optimize-e2e/hosted-machine.png":::
 
 ## Utilize machines effectively
 
@@ -55,7 +53,7 @@ To maximize automation efficiency in Power Automate, optimize how workloads are 
 
 Use work queues to manage a list of work items that need to be completed in a particular order. Each work item contains some properties such as its name, priority, expiration date, status, and the actual value to be processed.
 
-:::image type="content" source="media/optimize-end-to-end-process-performance/work-queues.png" alt-text="Screenshot of a work queue interface showing various properties such as name, priority, and status.":::
+:::image type="content" source="media/optimize-e2e/work-queues.png" alt-text="Screenshot of a work queue interface showing various properties such as name, priority, and status."lightbox = "media/optimize-e2e/work-queues.png":::
 
 Work queues are useful for:
 
@@ -79,8 +77,7 @@ Reuse desktop flows’ related components, like child desktop flows, UI elements
 
 Use [Process mining](/power-automate/process-advisor-overview) with the [Desktop flows template](/power-automate/process-mining-templates#desktop-flows-template) to analyze the run history of a desktop flow and optimize its performance. The Desktop flows template can identify potential issues, such as errors or inefficiencies, and provide recommendations for improvement.
 
-
-## Related information 
+## Related resources
 
 - [Manage machine groups and trigger flows to run on them](/power-automate/desktop-flows/manage-machine-groups).
 - [Hosted machines and hosted machine groups](/power-automate/desktop-flows/hosted-rpa-overview). 
