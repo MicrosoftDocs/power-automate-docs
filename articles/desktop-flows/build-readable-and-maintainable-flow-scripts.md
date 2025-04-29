@@ -2,11 +2,11 @@
 title: Build clear and easy to manage flow scripts
 description: Learn how to build clear and manageable flow scripts to improve efficiency, teamwork, and troubleshooting in Power Automate.
 # customer intent: As a Power Automate user, I want to organize flow scripts clearly so that I can improve development efficiency and troubleshooting.
-author: mapichle
+author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 04/29/2025
-ms.author: mapichle
+ms.author: manuelap-msft
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
