@@ -34,7 +34,23 @@ landingContent:
             url: coding-guidelines/integrating-cloud-flows-power-apps.md
           - text: Monitoring and alerting
             url: coding-guidelines/monitoring-and-alerting.md
-  
+  - title: Best practices for building desktop flows
+    linkLists:
+       - linkListType: how-to-guide
+         links:
+          - text: Overview
+            url: desktop-flow-coding-guidelines/index.md
+          - text: Build readable and maintainable flow scripts
+            url: desktop-flow-coding-guidelines/build-readable-flow-scripts.md
+          - text: Optimize flow performance
+            url: desktop-flow-coding-guidelines/optimize-flow-performance.md
+          - text: Secure your data
+            url: desktop-flow-coding-guidelines/secure-your-data.md
+          - text: Optimize end-to-end process performance
+            url: desktop-flow-coding-guidelines/optimize-end-to-end-performance.md
+          - text: Monitor and troubleshoot your automation processes
+            url: desktop-flow-coding-guidelines/monitor-automation.md
+
   # Card 
   - title: Planning a Power Automate project
     linkLists:
