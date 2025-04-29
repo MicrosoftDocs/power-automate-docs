@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 04/29/2025
-ms.author: manuelap-msft
+ms.author: mapichle
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
