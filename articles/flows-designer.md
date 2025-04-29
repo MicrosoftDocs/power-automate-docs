@@ -11,7 +11,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 04/24/2025
+ms.date: 04/29/2025
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -177,13 +177,19 @@ The canvas contains AI-powered designer drop zones to help you easily drag cloud
 
 :::image type="content" source="media/flows-designer/drop-zone.png" alt-text="Screenshot of an action card and a drop-zone.":::
 
-### Zoom buttons
+### Change how your flow displays
 
-Depending on the size and complexity of your flow, you might want to adjust its size on the canvas as you're building it. Use the zoom buttons to zoom in, zoom out, fit to screen, and toggle a *minimap*. The buttons appear when the Action configuration pane is closed.
+Depending on the size and complexity of your cloud flow, you might want to adjust how it displays to make it easier to work with. The buttons appear at the bottom-left corner of the canvas when the Action configuration pane is closed.
 
-The bottom button is for the minimap. Use it to focus on a specific section of a large flow.
+:::image type="content" source="media/flows-designer/tools-numbers.png" alt-text="Screenshot highlights the buttons that allow you to adjust how your flow displays on the canvas.":::
 
-:::image type="content" source="media/flows-designer/zoom-controls.png" alt-text="Screenshot highlights the four zoom buttons.":::
+Legend:
+1. **Expand/Collapse**: Expand or collapse all action groups. For example, if an action has multiple conditions, select this icon to show the condition details.
+1. **Zoom in**: Increase the size of the flow on the canvas.
+1. **Zoom out**: Decrease the size of the flow on the canvas.
+1. **Fit view**: Resize the view to fit the entire flow on the canvas.
+1. **Minimap**: Navigate to a specific section of a large flow.
+1. **Search**: Look for an operation in your flow.
 
 ### Expression editor and token picker
 
