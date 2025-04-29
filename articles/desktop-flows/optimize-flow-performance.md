@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.subservice: guidance
 ms.topic: conceptual
 ms.date: 04/29/2025
-ms.author: manuelap-msft
+ms.author: mapichle
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
@@ -22,7 +22,7 @@ When looking for actions to automate your app or service, consider the following
 
 1.  Cloud connector actions. Learn more about [Cloud Connectors in Power Automate for desktop](/power-automate/desktop-flows/actions-reference/cloudconnectors).
 
-:::image type="content" source="media/optimize-flow-performance/actions.png" alt-text="Screenshot of a computer AI-generated content may be incorrect." lightbox = "media/optimize-flow-performance/actions.png":::
+:::image type="content" source="media/optimize-flow-performance/actions.png" alt-text="Screenshot showing various cloud connector actions in Power Automate." lightbox = "media/optimize-flow-performance/actions.png":::
 
 2.  Application or file-specific Power Automate for desktop actions like Excel, PDF, File/Folder, etc.
 
@@ -42,7 +42,7 @@ For more advanced scenarios, consider the **Scripting** actions, like **Run VBSc
 
 - Handle errors for individual actions through their **On error** parameters.
 
-:::image type="content" source="media/optimize-flow-performance/files-folder.png" alt-text="Screenshot of a computer AI-generated content may be incorrect." lightbox = "media/optimize-flow-performance/files-folder.png":::
+:::image type="content" source="media/optimize-flow-performance/files-folder.png" alt-text="Screenshot showing the configuration of file and folder actions in Power Automate." lightbox = "media/optimize-flow-performance/files-folder.png":::
 
 - Handle errors for groups of actions with the **On block error** action.
 
@@ -63,7 +63,7 @@ Learn more about [configuring error handling functionality](/power-automate/desk
 > [!NOTE]  
 > Screenshot of a computer AI-generated content may be incorrect.
 
-:::image type="content" source="media/optimize-flow-performance/wait-for.png" alt-text="Screenshot of a computer AI-generated content may be incorrect." lightbox = "media/optimize-flow-performance/wait-for.png":::
+:::image type="content" source="media/optimize-flow-performance/wait-for.png" alt-text="Screenshot showing the configuration of a Wait for action in Power Automate." lightbox = "media/optimize-flow-performance/wait-for.png":::
 
 - Configure the **Flow timeout** property to specify the maximum allowed time that the flow is allowed to run.
 
@@ -73,13 +73,13 @@ Learn more about [configuring error handling functionality](/power-automate/desk
 
 ## Remove unused components
 
-Keep only the necessary flow components by deleting any disabled actions and removing unused UI elements and images. This will decrease the size of the flow and reduce its saving and loading times.
+Keep only the necessary flow components by deleting any disabled actions and removing unused UI elements and images. This decreases the size of the flow and reduce its saving and loading times.
 
 :::image type="content" source="media/optimize-flow-performance/ui-elements.png" alt-text="Screenshot of a flow diagram showing unused components." lightbox = "media/optimize-flow-performance/ui-elements.png":::
 
 ## Avoid unnecessary loops
 
-Avoid looping through large datasets, for example Excel files with 1000’s of records.
+Avoid looping through large datasets, for example Excel files with 1000s of records.
 
 - Use the **Data table** actions or **Database** actions for data table related operations.
 
