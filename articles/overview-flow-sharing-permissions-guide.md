@@ -2,7 +2,7 @@
 
 This guide can assist in identifying suitable flow sharing scenarios and establishing permissions to manage user access and ensure security.
 
-## 1. Managing Permissions and Roles in Power Automate Environments
+## Managing Permissions and Roles in Power Automate Environments
 
 Managing who can create, edit, or merely execute flows is critical to maintaining a secure and orderly Power Automate environment. Power Automate’s security model operates on multiple levels of permissions:
 
@@ -10,7 +10,7 @@ Managing who can create, edit, or merely execute flows is critical to maintainin
 * Dataverse security roles (if the environment has a Dataverse database) – like Basic User, System Customizer, etc., which control access to data and entities. (For example, users typically need at least the Basic User role to run apps or flows that use Dataverse data).
 * Flow-level permissions – sharing settings on individual flows that make other users either co-owners (with edit rights) or run-only users.
 
-## Environment Roles and Security
+### Environment Roles and Security
 
 In each environment, only users with the appropriate roles can create or manage resources:
 
@@ -37,7 +37,7 @@ It’s important to note that environment roles and flow sharing permissions wor
 
 To manage permissions effectively, organizations should formalize which users are flow “makers” (creators) and which are flow “consumers” (runners), and then apply roles accordingly. The next sections will delve into best practices for implementing these distinctions and minimizing risk.
 
-## Permissions Levels in Power Automate – Owners vs Run-Only Users
+### Permissions Levels in Power Automate – Owners vs Run-Only Users
 
 A key aspect of managing flow security is understanding the capabilities of different sharing permission levels. The table below summarizes the differences between Co-Owners and Run-Only users for a cloud flow:
 
@@ -55,7 +55,7 @@ Table: Comparison of Flow Co-Owner vs Run-Only User permissions and capabilities
 
 In practice, these distinctions mean that co-owners should be limited to users who truly need to collaborate on the design or maintenance of a flow, whereas run-only sharing is preferred for broad distribution of a flow’s functionality. Microsoft’s guidance reinforces this: “Only add co-owners for flow collaboration as needed. In most cases, if a flow needs to be shared, share it with run-only permissions.” This ensures users can benefit from the automation without risking unauthorized modifications or exposure of flow internals.
 
-## 2. Mitigating Risks of Sharing Flows Outside Their Environment
+## Mitigating Risks of Sharing Flows Outside Their Environment
 
 Allowing users who are not environment members to access flows can introduce several risks: governance blind spots (admins might not realize who has access), potential data exposure (if flows handle sensitive data, even run-only access could be a concern if triggers allow parameter input or output visibility), and loss of change control (co-owners outside the team making unintended edits). To mitigate these risks, organizations should adopt a combination of policy, technical controls, and monitoring:
 
@@ -79,7 +79,7 @@ Allowing users who are not environment members to access flows can introduce sev
 
 In summary, mitigating the risks associated with sharing flows broadly comes down to tight control of environment access, prudent use of sharing options, and vigilant oversight. By combining technical safeguards (like security group-controlled environments and DLP policies) with process safeguards (like approvals for adding owners and periodic audits), organizations can enjoy the collaborative benefits of Power Automate while minimizing security and compliance issues. The next section will focus on a specific aspect of governance: using roles and groups to define who is a “maker” versus who is merely a “runner” of flows.
 
-## 3. Using Security Roles and Groups: Managing Makers vs. Run-Only Users
+## Using Security Roles and Groups: Managing Makers vs. Run-Only Users
 
 A critical governance decision is determining which users should be makers (with the ability to create and own flows) and which should be limited to running flows (and perhaps consuming the results). Power Automate and the Power Platform offer several mechanisms to enforce this distinction, primarily through security roles and security groups.
 
