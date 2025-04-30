@@ -196,4 +196,7 @@ You can use the **Merge PDF files** action to take two or more PDF files and mer
 |Invalid password|The given password is invalid|
 |Failed to merge PDF files|Indicates that an error occurred while merging the files|
 
+> [!NOTE]
+> When using the "Merge PDF Files" action, the destination for the merged PDF should not be one of the original files being merged. Doing so can result in the failure of the action and potential deletion of the original file. To avoid this, always designate a new file location for the merged PDF output to ensure the integrity of your original documents.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
