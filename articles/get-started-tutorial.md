@@ -42,7 +42,7 @@ The Power Automate maker portal provides multiple ways to create workflows for y
 
 1. When you're satisfied with the prompt, select **Generate**.
 
-   :::image type="content" source="media/getting-started-tutorial/copilot-prompt-overdue-notification.png" alt-text="Screenshot of the Copilot interface showing the Generate button.":::
+   :::image type="content" source="media/getting-started-tutorial/copilot-prompt-overdue-notification.png" alt-text="Screenshot of the Copilot interface showing the 'Generate' button.":::
 
    Based on the description, Copilot begins to create a suggested trigger and actions for your flow.
 
@@ -92,7 +92,7 @@ In this section, change the subject for your email:
 
 Congratulations! You successfully created a cloud flow using Copilot. You can now run the flow to test it using the flow checker.
 
-:::image type="content" source="media/getting-started-tutorial/flow-checker-test.png" alt-text="Screenshot that highlights the flow checker button.":::
+:::image type="content" source="media/getting-started-tutorial/flow-checker-test.png" alt-text="Screenshot of the flow checker button highlighted.":::
 
 ## Related information
 
