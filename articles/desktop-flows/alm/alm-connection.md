@@ -3,6 +3,7 @@ title: Create a connection with a service principal
 description: This article describes how to create a connection for a desktop flow by using a service principal
 author: nvigne
 ms.author: nvigne
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.reviewer: matp
 ms.date: 03/18/2025

@@ -2,6 +2,7 @@
 title: XML actions reference
 description: Display the XML actions.
 author: HeatherOrt
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/24/2022

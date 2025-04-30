@@ -2,7 +2,7 @@
 title: Formalizing messages and alerts in a Power Automate project | Microsoft Docs
 description: When sending email notifications and Microsoft Teams messages, you might not want to send them as yourself but you still might want people to be able to reach you.
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance

@@ -2,7 +2,7 @@
 title: Planning a Power Automate project - Introduction | Microsoft Docs
 description: You can use Power Automate to automate your manual and repetitive processes so that you can focus on higher-value tasks. 
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance

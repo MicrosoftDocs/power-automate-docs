@@ -2,6 +2,7 @@
 title: Record desktop flows
 description: Record desktop flows
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 09/27/2022

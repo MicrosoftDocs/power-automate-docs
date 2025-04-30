@@ -2,7 +2,7 @@
 title: Making phase for Power Automate projects | Microsoft Docs
 description: This article lists the relevant documentation to help you set up a Power Automate cloud or desktop automation.
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance

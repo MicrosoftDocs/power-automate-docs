@@ -3,6 +3,7 @@ title: Add cloud flow, desktop flow and connection reference.
 description: This section describes how to add your cloud flow, desktop flow and connection references to your solution.
 author: nvigne
 ms.author: nvigne
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.reviewer: matp
 ms.topic: how-to

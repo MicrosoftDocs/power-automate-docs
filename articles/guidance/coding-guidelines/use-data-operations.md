@@ -3,6 +3,7 @@ title: Work with data operations
 description: Learn how to efficiently manipulate, transform, and manage data within your cloud flows using data operations in Power Automate.
 #customer intent: As a Power Automate user, I want to learn how to efficiently manipulate, transform, and manage data within my cloud flows so that I can optimize my automation processes.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 02/17/2025

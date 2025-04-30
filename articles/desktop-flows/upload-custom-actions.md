@@ -2,6 +2,7 @@
 title: Upload custom actions
 description: Learn about how to upload custom developed actions for desktop flows
 author: jpapadimitriou
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 10/19/2023

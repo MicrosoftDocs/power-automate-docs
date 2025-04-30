@@ -3,6 +3,7 @@ title: Data loss prevention (DLP) policies
 description: Data loss prevention (DLP) policies 
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 04/30/2025

@@ -3,6 +3,7 @@ title: Send physical clicks on a web element
 description: Send physical clicks on a web element
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/23/2021

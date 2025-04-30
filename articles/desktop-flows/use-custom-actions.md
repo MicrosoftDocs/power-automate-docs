@@ -2,6 +2,7 @@
 title: Use custom actions 
 description: How to use custom actions in desktop flows
 author: jpapadimitriou
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 10/19/2023

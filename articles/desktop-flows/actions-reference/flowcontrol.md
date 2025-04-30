@@ -2,6 +2,7 @@
 title: Flow control actions reference
 description: Learn about the available flow control actions in desktop flows.
 author: HeatherOrt
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 01/20/2025

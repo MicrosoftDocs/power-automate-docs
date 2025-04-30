@@ -3,6 +3,7 @@ title: Configure connection strings for database related actions
 description: Learn how to configure and test connection strings for various databases in Power Automate for desktop.
 author: Yiannismavridis
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 10/23/2024

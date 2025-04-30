@@ -3,6 +3,7 @@ title: Variable data type properties
 description: See all the available data type properties of desktop flow variables.
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 10/29/2024

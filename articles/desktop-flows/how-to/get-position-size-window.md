@@ -3,6 +3,7 @@ title: Get the position and size of a window
 description: Get the position and size of a window
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/03/2021
