@@ -2,6 +2,7 @@
 title: Scripting actions reference
 description: See all the available scripting actions.
 author: cochamos
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 03/21/2025

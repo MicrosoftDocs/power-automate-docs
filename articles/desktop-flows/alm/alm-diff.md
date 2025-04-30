@@ -3,6 +3,7 @@ title: Compare your desktop flow changes
 description: This section describes how compare changes between two versions of your desktop flow.
 author: nvigne
 ms.author: nvigne
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.reviewer: matp
 ms.date: 01/06/2025

@@ -3,6 +3,7 @@ title: Create a reminder flow in Power Automate for SharePoint items
 description: Create flows in Power Automate that remind you of due dates for SharePoint items.
 suite: flow
 author: HeatherOrt
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 11/25/2024

@@ -2,6 +2,7 @@
 title: Best practices
 description: See the best practices for running Power Automate desktop flows.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 03/17/2025

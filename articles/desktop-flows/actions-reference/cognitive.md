@@ -3,6 +3,7 @@ title: Cognitive actions overview
 description: See all the available cognitive actions.
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/23/2022

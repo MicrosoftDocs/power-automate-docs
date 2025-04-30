@@ -2,6 +2,7 @@
 title: Microsoft cognitive actions reference
 description: See all the available Microsoft cognitive actions.
 author: Mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/08/2023
