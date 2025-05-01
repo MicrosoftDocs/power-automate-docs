@@ -109,6 +109,19 @@ Select **Pin action** to pin the action card to the top of the action configurat
 
 ## Action configuration pane
 
+When you click '+' icon on the canvas, you will see the _Add action_ view for adding actions to your flow for e.g. Send email, Get Dataverse rows, Initialize variable, etc. 
+
+![image](https://github.com/user-attachments/assets/9fbcc80b-dc66-4766-bea8-69d01e27ee01)
+
+
+This view by default is organized into 4 sections:
+
+1. Favorites (When you favorite a connector or an action using _star_ icon which appears when you hover over it the Add action pane, those show up in the _Favorites_ section for quick retrieval)
+2. AI Capabilities (All AI capabilities are uplevelled in this standalone section)
+3. Builtin (These are the building blocks to your flow if you want to store value in a variable, insert a loop, etc. 
+4. All connectors (Below the 3 sections, you will see a list of all connectors at the top of which are top used 20 connectors)
+
+When you choose an action from the Add action pane, it's time to configure it. The same pane/view refreshes to let you customize the action, which is called Action configuration pane.
 Use the action configuration pane to customize parameters, settings, and code for the selected card in your flow.
 
 ### Parameters
