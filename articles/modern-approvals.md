@@ -78,17 +78,17 @@ Follow these steps to add a trigger to your flow:
 
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
-The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
+    The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
 
-:::image type="content" source="./media/modern-approvals/select-sharepoint-site-info-new-designer.png" alt-text="Screenshot showing SharePoint site information selection in the new designer.":::
+    :::image type="content" source="./media/modern-approvals/select-sharepoint-site-info-new-designer.png" alt-text="Screenshot showing SharePoint site information selection in the new designer.":::
 
 # [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
-The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
+    The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
 
-:::image type="content" source="./media/modern-approvals/select-sharepoint-site-info.png" alt-text="Screenshot showing SharePoint site information selection in the classic designer.":::
+    :::image type="content" source="./media/modern-approvals/select-sharepoint-site-info.png" alt-text="Screenshot showing SharePoint site information selection in the classic designer.":::
 
 ---
 
@@ -98,15 +98,13 @@ Follow these steps to add a profile action to your flow. This action retrieves t
 
 # [New designer](#tab/new-designer)
 
-1. Select **New step**, and then type **profile** into the **Choose an action** search box.
+1. Select **+**, and then type **Profile** into the **Add an action** search box.
 
-1. Select **Office 365 Users**.
-
-1. Find, and then select the **Get my profile (V2)** action.
+1. In **Office 365 Users**, select **Get my profile (V2)**.
 
     :::image type="content" source="./media/modern-approvals/search-for-profile-new-designer.png" alt-text="Screenshot showing how to search for profile action in the new designer.":::
 
-1. Select the fields from your profile to include in your flow, and then select **Create** to save your work.
+1. Select the fields from your profile to include in your flow, and then select **Create**.
 
 # [Classic designer](#tab/classic-designer)
 
@@ -149,13 +147,13 @@ Follow these steps to send an email if the vacation request is approved:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved-new-designer.md)]
 
-   :::image type="content" source="./media/modern-approvals/yes-email-config-new-designer.png" alt-text="Screenshot showing email configuration for approved requests in the new designer.":::
+     :::image type="content" source="./media/modern-approvals/yes-email-config-new-designer.png" alt-text="Screenshot showing email configuration for approved requests in the new designer.":::
 
 # [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-   :::image type="content" source="./media/modern-approvals/yes-email-config.png" alt-text="Screenshot showing email configuration for approved requests in the classic designer.":::
+     :::image type="content" source="./media/modern-approvals/yes-email-config.png" alt-text="Screenshot showing email configuration for approved requests in the classic designer.":::
 
 ---
 
@@ -167,19 +165,19 @@ Follow these steps to update actions for approved requests:
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval-new-designer.md)]
 
-> [!NOTE]
-> **Site Address**, **List Name**, **Id**, and **Title** are required.
+   > [!NOTE]
+   > **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-:::image type="content" source="./media/modern-approvals/configure-update-item-new-designer.png" alt-text="Screenshot showing update item configuration in the new designer.":::
+   :::image type="content" source="./media/modern-approvals/configure-update-item-new-designer.png" alt-text="Screenshot showing update item configuration in the new designer.":::
 
 # [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
-> [!NOTE]
-> **Site Address**, **List Name**, **Id**, and **Title** are required.
+   > [!NOTE]
+   > **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-:::image type="content" source="./media/modern-approvals/configure-update-item.png" alt-text="Screenshot showing update item configuration in the classic designer.":::
+   :::image type="content" source="./media/modern-approvals/configure-update-item.png" alt-text="Screenshot showing update item configuration in the classic designer.":::
 
 ---
 
@@ -191,13 +189,13 @@ Follow these steps to send an email if the vacation request is rejected:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected-new-designer.md)]
 
-:::image type="content" source="./media/modern-approvals/configure-rejected-email-new-designer.png" alt-text="Screenshot showing configuration for rejected request emails in the new designer.":::
+   :::image type="content" source="./media/modern-approvals/configure-rejected-email-new-designer.png" alt-text="Screenshot showing configuration for rejected request emails in the new designer.":::
 
 # [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
-:::image type="content" source="./media/modern-approvals/configure-rejected-email.png" alt-text="Screenshot showing configuration for rejected request emails in the classic designer.":::
+   :::image type="content" source="./media/modern-approvals/configure-rejected-email.png" alt-text="Screenshot showing configuration for rejected request emails in the classic designer.":::
 
 ---
 
@@ -214,13 +212,13 @@ Follow these steps to update actions for rejected requests:
 
    :::image type="content" source="./media/modern-approvals/configure-update-item-no-new-designer.png" alt-text="Screenshot showing update item configuration for rejected requests in the new designer.":::
 
-4. Select **Save** to save your work.
+5. Select **Save** to save your work.
 
-If you've followed along, your flow should resemble this screenshot:
+   If you've followed along, your flow should resemble this screenshot:
 
-:::image type="content" source="./media/modern-approvals/completed-flow-new-designer.png" alt-text="Screenshot showing the completed flow in the new designer.":::
+   :::image type="content" source="./media/modern-approvals/completed-flow-new-designer.png" alt-text="Screenshot showing the completed flow in the new designer.":::
 
-Now that we've created the flow, it's time to test it!
+   Now that we've created the flow, it's time to test it!
 
 
 # [Classic designer](#tab/classic-designer)
@@ -234,11 +232,11 @@ Now that we've created the flow, it's time to test it!
 
 4. Select **Save** to save your work.
 
-If you've followed along, your flow should resemble this screenshot:
+   If you've followed along, your flow should resemble this screenshot:
 
-:::image type="content" source="./media/modern-approvals/completed-flow.png" alt-text="Screenshot showing the completed flow in the classic designer.":::
+   :::image type="content" source="./media/modern-approvals/completed-flow.png" alt-text="Screenshot showing the completed flow in the classic designer.":::
 
-Now that we've created the flow, it's time to test it!
+   Now that we've created the flow, it's time to test it!
 
 ---
 

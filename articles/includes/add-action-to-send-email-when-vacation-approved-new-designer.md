@@ -1,7 +1,7 @@
-1. Select **Add an action** on the **If yes** branch of the condition.
+1. Select **+** on the **True** branch of the condition.
 
     :::image type="content" source="media/modern-approvals/add-action-after-condition-new-designer.png" alt-text="Screenshot showing how to add a new action after the condition in the new designer.":::
-1. Enter **send email** into the search box on the **Choose an action** card.
+1. Enter **send email** into the search box on the **Add an action** card.
 1. Select the **Send an email (V2)** action.
 
     :::image type="content" source="media/modern-approvals/select-send-email-yes-new-designer.png" alt-text="Screenshot showing how to select the send email action in the new designer.":::
