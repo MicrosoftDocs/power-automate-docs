@@ -147,13 +147,13 @@ Follow these steps to send an email if the vacation request is approved:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved-new-designer.md)]
 
-     :::image type="content" source="./media/modern-approvals/yes-email-config-new-designer.png" alt-text="Screenshot showing email configuration for approved requests in the new designer.":::
+   :::image type="content" source="./media/modern-approvals/yes-email-config-new-designer.png" alt-text="Screenshot showing email configuration for approved requests in the new designer.":::
 
 # [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-     :::image type="content" source="./media/modern-approvals/yes-email-config.png" alt-text="Screenshot showing email configuration for approved requests in the classic designer.":::
+   :::image type="content" source="./media/modern-approvals/yes-email-config.png" alt-text="Screenshot showing email configuration for approved requests in the classic designer.":::
 
 ---
 
@@ -207,12 +207,12 @@ Follow these steps to update actions for rejected requests:
 
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection-new-designer.md)]
 
-   > [!NOTE]
-   > **Site Address**, **List Name**, **Id**, and **Title** are required.
+  > [!NOTE]
+  > **Site Address**, **List Name**, **Id**, and **Title** are required.
 
-   :::image type="content" source="./media/modern-approvals/configure-update-item-no-new-designer.png" alt-text="Screenshot showing update item configuration for rejected requests in the new designer.":::
+  :::image type="content" source="./media/modern-approvals/configure-update-item-no-new-designer.png" alt-text="Screenshot showing update item configuration for rejected requests in the new designer.":::
 
-5. Select **Save** to save your work.
+4. Select **Save** to save your work.
 
    If you've followed along, your flow should resemble this screenshot:
 
