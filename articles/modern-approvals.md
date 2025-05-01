@@ -66,9 +66,23 @@ Make note of the name and URL of the SharePoint Online list. You need these item
 
 ## Create an automated cloud flow
 
+Follow these steps to create an automated cloud flow:
+
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
 ## Add a trigger
+
+Follow these steps to add a trigger to your flow:
+
+# [New designer](#tab/new-designer)
+
+[!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
+
+The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
+
+![SharePoint info.](./media/modern-approvals/select-sharepoint-site-info-new-designer.png)
+
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
@@ -76,7 +90,25 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 
 ![SharePoint info.](./media/modern-approvals/select-sharepoint-site-info.png)
 
+---
+
 ## Add a profile action
+
+Follow these steps to add a profile action to your flow. This action retrieves the user's profile information, which you can use in the approval request:
+
+# [New designer](#tab/new-designer)
+
+1. Select **New step**, and then type **profile** into the **Choose an action** search box.
+
+1. Select **Office 365 Users**.
+
+1. Find, and then select the **Get my profile (V2)** action.
+
+    ![search for profile.](./media/modern-approvals/search-for-profile-new-designer.png)
+
+1. Select the fields from your profile to include in your flow, and then select **Create** to save your work.
+
+# [Classic designer](#tab/classic-designer)
 
 1. Select **New step**, and then type **profile** into the **Choose an action** search box.
 
@@ -88,9 +120,21 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 
 1. Select the fields from your profile to include in your flow, and then select **Create** to save your work.
 
+---
+
 ## Add an approval action
 
+Follow these steps to add an approval action to your flow:
+
+# [New designer](#tab/new-designer)
+
+[!INCLUDE [add-an-approval-action](includes/add-an-approval-action-new-designer.md)]
+
+# [Classic designer](#tab/classic-designer)
+
 [!INCLUDE [add-an-approval-action](includes/add-an-approval-action.md)]
+
+---
 
 > [!NOTE]
 > This action sends the approval request to the email address in the **Assigned To** box.
@@ -99,13 +143,36 @@ The **Site Address** and the **List Name** are the items you noted earlier in th
 
 ## Add an email action for approvals
 
-Follow these steps to send an email if the vacation request is approved.
+Follow these steps to send an email if the vacation request is approved:
+
+# [New designer](#tab/new-designer)
+
+[!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved-new-designer.md)]
+
+   ![configure approved email template.](./media/modern-approvals/yes-email-config-new-designer.png)
+
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
    ![configure approved email template.](./media/modern-approvals/yes-email-config.png)
 
+---
+
 ## Add an update action for approved requests
+
+Follow these steps to update actions for approved requests:
+
+# [New designer](#tab/new-designer)
+
+[!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval-new-designer.md)]
+
+> [!NOTE]
+> **Site Address**, **List Name**, **Id**, and **Title** are required.
+
+![update item configuration.](./media/modern-approvals/configure-update-item-new-designer.png)
+
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-update-sharepoint-with-approval](includes/add-action-to-update-sharepoint-with-approval.md)]
 
@@ -114,13 +181,49 @@ Follow these steps to send an email if the vacation request is approved.
 
 ![update item configuration.](./media/modern-approvals/configure-update-item.png)
 
+---
+
 ## Add an email action for rejections
+
+Follow these steps to send an email if the vacation request is rejected:
+
+# [New designer](#tab/new-designer)
+
+[!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected-new-designer.md)]
+
+![configuration for rejected requests.](./media/modern-approvals/configure-rejected-email-new-designer.png)
+
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected.md)]
 
 ![configuration for rejected requests.](./media/modern-approvals/configure-rejected-email.png)
 
+---
+
 ## Add update action for rejected requests
+
+Follow these steps to update actions for rejected requests:
+
+# [New designer](#tab/new-designer)
+
+[!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection-new-designer.md)]
+
+   > [!NOTE]
+   > **Site Address**, **List Name**, **Id**, and **Title** are required.
+
+   ![update item card.](./media/modern-approvals/configure-update-item-no-new-designer.png)
+
+4. Select **Save** to save your work.
+
+If you've followed along, your flow should resemble this screenshot:
+
+![Completed flow.](./media/modern-approvals/completed-flow-new-designer.png)
+
+Now that we've created the flow, it's time to test it!
+
+
+# [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
 
@@ -136,6 +239,8 @@ If you've followed along, your flow should resemble this screenshot:
 ![Completed flow.](./media/modern-approvals/completed-flow.png)
 
 Now that we've created the flow, it's time to test it!
+
+---
 
 ## Request an approval to test your flow
 
