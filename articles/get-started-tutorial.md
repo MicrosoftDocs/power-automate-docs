@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 04/30/2025
+ms.date: 05/01/2025
 ms.author: heortaol
 ms.reviewer: angieandrews
 search.audienceType:
@@ -102,7 +102,7 @@ To make sure your flow works as expected, you should test it.
 
 1. Select **Done**.
 
-    The flow is now listed in **My flows**. To display it, select **My flows** in the navigation menu to the left in the main Power Automate screen.
+    The flow is now listed in **My flows**. To display it, leave the designer by selecting **Back** in the top-left corner, and then select **My flows** in the navigation menu on the left in the main Power Automate screen.
 
     :::image type="content" source="media/getting-started-tutorial/my-flows.png" alt-text="Screenshot of the list of cloud flows in the main Power Automate screen.":::
 
