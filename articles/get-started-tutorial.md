@@ -20,7 +20,7 @@ ms.collection:
 
 # Get started with Power Automate tutorial
 
-This article provides a tutorial for you to learn how to create a cloud flow using Copilot. Copilot is a feature in Power Automate that helps you create flows using natural language. You can use Copilot to create flows, add actions, and modify existing flows.
+This article provides a tutorial for you to learn how to create a cloud flow using Copilot. Copilot is a feature in Power Automate that helps you create flows using natural language. You can also use Copilot to add actions and modify existing flows.
 
 Once you create a flow, we recommend that you test it. The completed flow in this tutorial sends an email weekly to a customer with an overdue account.
 
