@@ -111,7 +111,7 @@ Select **Pin action** to pin the action card to the top of the action configurat
 
 When you select the plus (+) icon on the canvas, the _Add action_ view for adding actions to your flow appears (for example, **Send email**, **Get Dataverse rows**, **Initialize variable**, and more).
 
-:::image type="content" source="media/flows-designer/add-action.png" alt-text="Screenshot that shows a note being added.":::
+:::image type="content" source="media/flows-designer/add-action.png" alt-text="Screenshot of the 'Add an action' pane.":::
 
 This view by default is organized into four (4) sections:
 
