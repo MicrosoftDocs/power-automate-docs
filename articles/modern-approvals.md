@@ -28,7 +28,7 @@ Approvers can respond to requests from their email inbox, the approvals center i
 
 Here's an overview of the flow you create and test:
 
-   ![Approval flow.](./media/modern-approvals/create-flow-overview.png)
+   :::image type="content" source="./media/modern-approvals/create-flow-overview.png" alt-text="Screenshot of an approval flow overview."::: 
 
 The flow performs the following steps:
 
