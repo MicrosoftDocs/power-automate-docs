@@ -1,5 +1,5 @@
 1. Select **Add an action**.
 2. Enter **update** into the search box on the **Choose an action** card, and then select the **Update item - SharePoint** action.
    
-    ![select update item.](media/modern-approvals/select-update-item-no.png)
+    :::image type="content" source="media/modern-approvals/select-update-item-no.png" alt-text="Screenshot showing how to select the SharePoint update item action for rejected requests in the classic designer.":::
 4. Configure the card to suit your needs.

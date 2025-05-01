@@ -2,7 +2,7 @@
 1. Type **approval** into the **Choose an action** search box.
 1. Select the **Start and wait for an approval** action.
 
-    ![select the approvals action.](media/modern-approvals/select-approvals.png)
+    :::image type="content" source="media/modern-approvals/select-approvals.png" alt-text="Screenshot showing how to select the approvals action in the classic designer.":::
 
 1. Configure the **Start and wait for an approval** card to suit your needs.
 
@@ -12,4 +12,4 @@
      > 
      >
 
-    ![configure Start and wait for an approval.](media/modern-approvals/provide-approval-config-info.png)
+    :::image type="content" source="media/modern-approvals/provide-approval-config-info.png" alt-text="Screenshot showing how to configure the Start and wait for an approval card in the classic designer.":::
