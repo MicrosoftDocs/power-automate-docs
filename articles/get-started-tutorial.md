@@ -58,22 +58,25 @@ The Power Automate maker portal provides multiple ways to create workflows for y
 
 ## Use Copilot to make changes to an action
 
-After your flow is created, you can make changes manually, or you can use Copilot to assist you. You can make changes directly in the designer, or you can use the Copilot pane to make changes.
+After your flow is created, you can make changes manually, or you can use Copilot to assist you.
 
-In this section, change the subject for your email.
+In this section, change the subject for your email from **Payment Overdue Notification** to **Your account is overdue** in the Copilot panel.
 
-1. In the designer, select **Send an email**.
-1. Copy the following prompt and paste it into the **Subject** field (replacing the existing subject):  
+1. In the designer, select **Send an email**. Notice that in the configuration pane to the left, the subject is **Payment Overdue Notification**.
 
-    ```copilot-prompt
-    Your account is overdue
-    ```
+   :::image type="content" source="media/getting-started-tutorial/subject-overdue.png" alt-text="Screenshot of the subject 'Payment Overdue Notification.":::
 
-    The subject line is updated in the configuration pane.
+1. Copy the following prompt and paste it into the **Copilot** pane:  
 
-    :::image type="content" source="media/getting-started-tutorial/send-email-action.png" alt-text="Screenshot of the configuration pane with the 'Send an email' option selected.":::
+   ```copilot-prompt
+   Change the subject of the email to "Your account is overdue".
+   ```
 
-1. Hide the configuration pane by selecting **Collapse** (**<<**).
+1. Select **Submit**. Copilot updates the action in the designer.
+
+1. In the **Send an email** action in the designer, select the bubble icon to display the updated subject, **Your account is overdue**.
+
+    :::image type="content" source="media/getting-started-tutorial/send-email-action.png" alt-text="Screenshot of the Copilot pane confirming the 'Send an email' action was changed.":::
 
     As you make changes, use the icons on the toolbar to adjust the size and appearance of your flow. You can also move your flow anywhere on the screen by dragging with a traditional mouse or using another navigation device.
 
@@ -95,14 +98,11 @@ To make sure your flow works as expected, you should test it.
 1. On the toolbar, select **Test**.
 1. In the **Test your flow** pane, select **Manually**, and then select **Test**.
 1. In the **Run flow** pane, select **Run flow**.
-
-    When the flow finishes running, a message appears indicating that the flow ran successfully.
+1. When the flow run starts successfully (indicated by a green checkmark), select **Done**.
 
     :::image type="content" source="media/getting-started-tutorial/successful-run.png" alt-text="Screenshot of the message that you flow ran successfully.":::
 
-1. Select **Done**.
-
-    The flow is now listed in **My flows**. To display it, leave the designer by selecting **Back** in the top-left corner, and then select **My flows** in the navigation menu on the left in the main Power Automate screen.
+    Your flow is now listed in **My flows**. To display it, leave the designer by selecting **Back** in the top-left corner, and then select **My flows** in the navigation menu on the left in the main Power Automate screen.
 
     :::image type="content" source="media/getting-started-tutorial/my-flows.png" alt-text="Screenshot of the list of cloud flows in the main Power Automate screen.":::
 
