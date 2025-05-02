@@ -5,10 +5,10 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/21/2025
+ms.date: 05/02/2025
 ms.author: appapaio
 ms.reviewer: matp
-contributor:
+contributor: yiannismavridis
 search.audienceType: 
   - flowmaker
   - enduser
@@ -178,6 +178,7 @@ In this page, you can:
 > - The **System Customizer** role is an example of a security role with environment-wide **Read** privileges for desktop flows. This role has **Read** permission set to **Organization** on the **Process** table, allowing users with this role to view all desktop flows in the environment and be marked as co-owners. It's highly recommended to review each security role before assigning it to users to ensure that the privilege set and access level are appropriate for the intended use case.
 > - Starting from version 2.46 of Power Automate for desktop, if a message appears indicating that the user doesn't have sufficient permissions in an environment using schema V2, **Read** access must be provided to their respective security role on the **Solution** table in Dataverse.
 > - If a message appears indicating that the user doesn't have sufficient permissions in an environment, **Read** access must be provided to their respective security role on the **Team** table in Dataverse.
+> - Starting from version 2.55 of Power Automate for desktop, if a message appears indicating that the user doesn't have sufficient permissions in an environment, **Read** access must be provided to their respective security role on the **Tag** and **Tagged Process** table in Dataverse.
 > - When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You're notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
 
 ## Learn more
