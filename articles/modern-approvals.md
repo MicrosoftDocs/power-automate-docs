@@ -78,9 +78,9 @@ Follow these steps to add a trigger to your flow:
 
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
-The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
+&nbsp;&nbsp;&nbsp;The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
 
-:::image type="content" source="./media/modern-approvals/select-sharepoint-site-info-new-designer.png" alt-text="Screenshot showing SharePoint site information selection in the new designer.":::
+&nbsp;&nbsp;&nbsp;:::image type="content" source="./media/modern-approvals/select-sharepoint-site-info-new-designer.png" alt-text="Screenshot showing SharePoint site information selection in the new designer.":::
 
 # [Classic designer](#tab/classic-designer)
 
