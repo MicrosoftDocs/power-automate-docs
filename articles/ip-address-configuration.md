@@ -85,6 +85,14 @@ The following table lists additional endpoints you need when using Power Automat
 | collector.azure.cn   | https  |  Send telemetry for the Mooncake region from the mobile app. |
 | officeapps.live.com   | https   | Access to authentication and authorization endpoints for the mobile app.
 
+### Allow users on your network to use "When an HTTP request is received" trigger
+We strongly recommend allow listing the list of domains in the section "Use the Power Automate web portal" to ensure your Makers and Admins can take advantage of the Power Automate services. For customers looking to narrowly allow network traffic to support "When an HTTP request is received" trigger, allow list the IP Address range covered by the following Service tags in your firewall's outbound configuration. 
+
+| Service tag |
+|----------| :-------------: |
+| **LogicAppsManagement** | 
+| **PowerPlatformInfra** |
+
 ### Allow machines & users on your network to access Power Automate desktop services
 
 The following table lists endpoint data requirements for connectivity from a user's machine for desktop flows runs. Ensure that you authorize global endpoints and the endpoints corresponding to your cloud.
