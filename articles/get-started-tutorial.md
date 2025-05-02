@@ -52,7 +52,7 @@ The Power Automate maker portal provides multiple ways to create workflows for y
 
 1. Select **Create flow**.
 
-   A new flow is created and opens in the designer. The flow includes the **Recurrence** trigger and **Send an email** action based on your prompt.
+   A new flow is created and opens in the designer. The flow consists of the **Recurrence** trigger and **Send an email** action based on your prompt.
 
    :::image type="content" source="media/getting-started-tutorial/create-flow-copilot.png" alt-text="Screenshot of the designer after the flow is created.":::
 
@@ -66,6 +66,7 @@ In this section, change the subject for your email from **Payment Overdue Notifi
 
    :::image type="content" source="media/getting-started-tutorial/subject-overdue.png" alt-text="Screenshot of the subject 'Payment Overdue Notification.":::
 
+1. Close the configuration pane by selecting  **Collapse** (**<<**) in the top-right corner.
 1. Copy the following prompt and paste it into the **Copilot** pane:  
 
    ```copilot-prompt
@@ -102,7 +103,10 @@ To make sure your flow works as expected, you should test it.
 
     :::image type="content" source="media/getting-started-tutorial/successful-run.png" alt-text="Screenshot of the message that you flow ran successfully.":::
 
-    Your flow is now listed in **My flows**. To display it, leave the designer by selecting **Back** in the top-left corner, and then select **My flows** in the navigation menu on the left in the main Power Automate screen.
+    When your flow is finished running, the message, **Your flow ran successfully** appears in a green message at the top. Your flow is now listed in **My flows**.
+
+1. To display your flow, leave the designer by selecting **Back** in the top-left corner.
+1. On the navigation menu to the left, select **My flows**.
 
     :::image type="content" source="media/getting-started-tutorial/my-flows.png" alt-text="Screenshot of the list of cloud flows in the main Power Automate screen.":::
 
@@ -110,5 +114,6 @@ Congratulations! You successfully created a cloud flow using Copilot and tested 
 
 ## Related information
 
-- [Explore the Power Automate home page](getting-started.md)  
+- [Explore the Power Automate home page](getting-started.md)
+- [Human review for automation with a prompt](/ai-builder/azure-openai-human-review)  
 - [Find and fix errors with Flow Checker](error-checker.md)
