@@ -6,7 +6,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
+ms.date: 05/02/2025
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -31,6 +31,36 @@ Download files using the **Download file(s) from FTP** action. The following exa
 :::image type="content" source="media/ftp/download-files-ftp-example.png" alt-text="Screenshot of the Download files from FTP action.":::
 
 Upload files using the **Upload file(s) to FTP** action and specifying the file and the remote location.
+
+> [!IMPORTANT]
+> Starting from version 2.56, Power Automate for desktop will no longer support legacy cipher algorithms that have been deprecated in Secure FTP (SFTP) actions. This update is intended to enhance security by removing outdated cryptographic methods.
+> 
+> More specifically, the below algorithms will no longer be supported: 
+> * blowfish-cbc
+> * twofish-cbc
+> * twofish192-cbc
+> * twofish128-cbc
+> * twofish256-cbc
+> * arcfour
+> * arcfour128
+> * arcfour256
+> * cast128-cbc
+> * hmac-sha2-512-96
+> * hmac-sha2-256-96
+> * hmac-sha1-96
+> * hmac-md5
+> * hmac-md5-96
+> * hmac-sha1-96-etm
+> * hmac-md5-etm
+> * hmac-md5-96-etm 
+>
+> Users using SFTP servers that rely exclusively on deprecated cipher algorithms may experience failed flows when attempting to perform SFTP actions using version 2.56 Power Automate for desktop, as these servers will no longer be compatible with the updated library.
+> 
+> To ensure a seamless experience and avoid disruptions in your workflows, we recommend the following steps: 
+> * Verify the cipher algorithms supported by your SFTP server. 
+> * If your server uses deprecated cipher algorithms, consider updating your server to support modern and secure cipher algorithms. 
+> * Consult with your IT team or SFTP server provider for guidance on upgrading your server’s cryptographic capabilities. 
+> * Avoid installing version 2.56 (or later) until the migration of SFTP servers to the correct version is complete. 
 
 ## <a name="openconnection"></a> Open FTP connection
 
