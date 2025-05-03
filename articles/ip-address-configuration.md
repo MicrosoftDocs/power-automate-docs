@@ -69,11 +69,11 @@ The following table lists the services to which Power Automate connects. Ensure 
 |login.partner.microsoftonline.cn|https|Access to the Power Automate for desktop cloud discovery.|
 |s2s.config.skype.com<br>use.config.skype.com<br>config.edge.skype.com|https|Access to preview features managed through flighting and configuration endpoints.|
 |s2s.config.ecs.infra.gov.teams.microsoft.us|https|Access to preview features managed through flighting and configuration endpoints for US government cloud.|
-| \*.api.powerplatform.com <br> \*.api.powerplatformusercontent.com <br> *.api.bap.microsoft.com | https | Access to several Power Platform APIs. |
-| *.api.gov.powerplatform.microsoft.us <br> *.gov.api.bap.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
-| *.api.high.powerplatform.microsoft.us <br> *.high.api.bap.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
-| *.api.appsplatform.us <br> *.api.bap.appsplatform.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
-| *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
+| \*.api.powerplatform.com <br> \*.api.powerplatformusercontent.com <br> *.api.bap.microsoft.com <br> *.logic.azure.com | https | Access to several Power Platform APIs. |
+| *.api.gov.powerplatform.microsoft.us <br> *.gov.api.bap.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
+| *.api.high.powerplatform.microsoft.us <br> *.high.api.bap.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
+| *.api.appsplatform.us <br> *.api.bap.appsplatform.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
+| *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn <br> *.logic.azure.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
 
 ### Allow users on your network to use Power Automate mobile app
 
@@ -90,10 +90,12 @@ We strongly recommend allow listing the list of domains in the section "Use the 
 
 | Domains | Protocols | Uses |
 | --------|  ---------| ---- |
-| *.api.powerplatform.com | https   | Access to several Power Platform APIs |
-| *.logic.azure.com | https   | Access to several Power Platform APIs |
-| *.logic.azure.us | https   | Access to several Power Platform APIs in Supported US sovereign clouds |
-| *.logic.azure.cn | https   | Access to several Power Platform APIs  (21Vianet - China only) |
+| \*.api.powerplatform.com <br> \*.api.powerplatformusercontent.com <br> *.api.bap.microsoft.com <br> *.logic.azure.com | https | Access to several Power Platform APIs. |
+| *.api.gov.powerplatform.microsoft.us <br> *.gov.api.bap.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
+| *.api.high.powerplatform.microsoft.us <br> *.high.api.bap.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
+| *.api.appsplatform.us <br> *.api.bap.appsplatform.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
+| *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn <br> *.logic.azure.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
+
 
 ### Allow machines & users on your network to access Power Automate desktop services
 
