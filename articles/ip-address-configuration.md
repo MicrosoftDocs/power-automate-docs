@@ -86,12 +86,14 @@ The following table lists additional endpoints you need when using Power Automat
 | officeapps.live.com   | https   | Access to authentication and authorization endpoints for the mobile app.
 
 ### Allow users on your network to use "When an HTTP request is received" trigger
-We strongly recommend allow listing the list of domains in the section "Use the Power Automate web portal" to ensure your Makers and Admins can take advantage of the Power Automate services. For customers looking to narrowly allow network traffic to support "When an HTTP request is received" trigger, allow list the IP Address range covered by the following Service tags in your firewall's outbound configuration. 
+We strongly recommend allow listing the list of domains in the section "Use the Power Automate web portal" to ensure your Makers and Admins can take advantage of the Power Automate services. For customers looking to narrowly allow network traffic to support "When an HTTP request is received" trigger, allow list the following domains in your firewall's outbound configuration. 
 
-| Service tag |
-|----------| :-------------: |
-| **LogicAppsManagement** | 
-| **PowerPlatformInfra** |
+| Domains | Protocols | Uses |
+| --------|  ---------| ---- |
+| *.api.powerplatform.com | https   | Access to several Power Platform APIs |
+| *.logic.azure.com | https   | Access to several Power Platform APIs |
+| *.logic.azure.us | https   | Access to several Power Platform APIs in Supported US sovereign clouds |
+| *.logic.azure.cn | https   | Access to several Power Platform APIs  (21Vianet - China only) |
 
 ### Allow machines & users on your network to access Power Automate desktop services
 
