@@ -82,9 +82,8 @@ If you're ingesting or programmatically interacting with work queue data through
 To view advanced work queue details:
 
 1. Go to [Power Automate](https://make.powerautomate.com/) and sign in with your credentials.
-2. On the left menu, select the **Monitor** section.
-3. Select **Work queue**.
-4. In the work queue list, select the work queue you would like to share.
+2. On the left menu, select the **Work queue**.
+4. In the work queue list, select the work queue.
 5. Select **Advanced details** on the work queue details card.
 6. In the **Advanced details** pane, you can use the 'Copy' icons to copy each of its values.
 
