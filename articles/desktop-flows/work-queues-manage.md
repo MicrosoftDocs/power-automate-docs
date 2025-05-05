@@ -34,7 +34,7 @@ To create a work queue:
 4. In the **New work queue** side panel, enter a **work queue name** for the queue.
 5. (Optional) Enter a **description** for the work queue.
 6. (Optional) Enter a **work queue key** for the work queue. When provided, the value must be unique within this queue. If left empty, a unique value is automatically provided by the system.
-7. (Optional) Activate this section and select a default lifespan value for work queue items in the **Items expire after** fields.
+7. (Optional) Activate SLA strategy if you want to enable Work queues SLA. set default time-to-live (TTL) Activate this section and select a default lifespan value for work queue items in the **Items expire after** fields.
    > [!NOTE]
    > If you set an *Items expire after* value for a work queue, any item added without an explicit expiration date will expire after the entered *Items expire value* has elapsed. So if you set the *Items expire after* to 30 minutes, an item added at 2:00 PM will expire at 2:30 PM.
 8. (Optional) Select either JSON or XSD as the schema type for work queue item input validation to ensure that input data conforms to the defined schema. Next, select **Add schema** to enter or paste the desired schema.
@@ -153,6 +153,11 @@ Status transitions rules have been established in order to optimize the lifecycl
 | **Processed**   | Indicating that the item is currently processing.                                             | Queued, On hold     |
 | **Exception**   | An exception has been raised during work item processing. Depending on your exception scenarios, you have the option to choose between **Generic**, **IT, and **Business** **exceptions**.                                 | Queued, On hold     |
 | **On hold**    | A business or IT user has picked an item to review, assess, and potentially remediate issues.     | Queued              |
+
+## Work Queues SLA
+> [!NOTE]
+> The Work Queues SLA capability is currently being deployed across all supported Power Automate geographies. It may take a few weeks for the feature to become available in all regions.
+
 
 ## Next steps
 
