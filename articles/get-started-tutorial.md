@@ -57,6 +57,11 @@ The Power Automate maker portal provides multiple ways to create workflows for y
 
    :::image type="content" source="media/getting-started-tutorial/create-flow-copilot.png" alt-text="Screenshot of the designer after the flow is created.":::
 
+> [!IMPORTANT]
+> To ensure accuracy and appropriateness of your AI-generated prompt, assign a human to review the content. This critical step can mitigate the risk of incorrect, inappropriate, or harmful information entering your workflow by way of a malicious attacker or by the AI model itself.
+>
+> Learn more in [Human review for automation with a prompt](/ai-builder/azure-openai-human-review).
+
 ## Use Copilot to make changes to an action
 
 After your flow is created, you can make changes manually, or you can use Copilot to assist you.
