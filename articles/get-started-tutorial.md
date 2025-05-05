@@ -80,13 +80,6 @@ In this section, change the subject for your email from **Payment Overdue Notifi
 
     :::image type="content" source="media/getting-started-tutorial/send-email-action.png" alt-text="Screenshot of the Copilot pane confirming the 'Send an email' action was changed.":::
 
-    As you make changes, use the icons on the toolbar to adjust the size and appearance of your flow. You can also move your flow anywhere on the screen by dragging with a traditional mouse or using another navigation device.
-
-1. Practice adjusting the size of your flow by using the following icons:
-    1. To zoom in, select the **Zoom in** icon (**+**).  
-    1. To zoom out, select the **Zoom out** icon (**-**).  
-    1. To reposition your flow, select the white space anywhere on the canvas and drag your flow to the desired location.  
-
 1. On the toolbar at the top of the screen, select **Save**.
 
     A green message appears at the top of the screen, indicating that your flow was saved successfully.
