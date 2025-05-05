@@ -3,12 +3,13 @@ title: Get started with Power Automate tutorial
 description: Learn how to build a cloud flow with Copilot with a tutorial.
 author: HeatherOrt
 contributors:
+  - Kewaiss
   - HeatherOrt
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 05/01/2025
-ms.author: heortaol
+ms.date: 05/05/2025
+ms.author: kewaiss
 ms.reviewer: angieandrews
 search.audienceType:
   - flowmaker
