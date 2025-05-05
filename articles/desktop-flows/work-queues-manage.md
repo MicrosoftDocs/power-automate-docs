@@ -42,6 +42,10 @@ To create a work queue:
    > [!NOTE]
    > - Once a schema is added to a work queue, it can't be changed to avoid data inconsistencies and processing failures.
    > - Currently supported JSON schema version is draft 3.
+9. (Optional) Determine if you want to enable **Auto-retry on IT exception**. When enabled, this feature will activate the auto-retry pattern for desktop flow based work queue item processing. It enables the machine to retain the currently processing item and allows makers to perform controlled retries without requeuing the item.
+10. (Optional) Determine if you want to **Allow update item input while in processing**. When enabled, this feature allows updates to the input field of work queue items during processing.
+
+
 
 ## Edit a work queue
 
