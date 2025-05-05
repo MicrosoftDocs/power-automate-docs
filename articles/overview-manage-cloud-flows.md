@@ -2,7 +2,7 @@
 title: Overview of how to manage your cloud flows
 description: Get an overview of how to manage cloud flows.
 suite: flow
-author: HeatherOrt
+author: kewaiss
 contributors:
   - HeatherOrt
   - v-aangie
@@ -10,8 +10,8 @@ ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 4/10/2025
-ms.author: heortaol
+ms.date: 05/05/2025
+ms.author: kewaiss
 search.audienceType: 
   - flowmaker
   - enduser
