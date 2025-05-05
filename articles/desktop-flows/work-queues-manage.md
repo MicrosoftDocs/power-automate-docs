@@ -157,12 +157,19 @@ Status transitions rules have been established in order to optimize the lifecycl
 | **Queued**      | This is the default state when items enter the work queue, and the only state under which work queue item dequeuing is allowed. | Processing          |
 | **Processing**  | Indicating that the item is currently being processed.                                       | Processed, Exception|
 | **Processed**   | Indicating that the item is currently processing.                                             | Queued, On hold     |
-| **Exception**   | An exception has been raised during work item processing. Depending on your exception scenarios, you have the option to choose between **Generic**, **IT, and **Business** **exceptions**.                                 | Queued, On hold     |
+| **Exception**   | An exception has been raised during work item processing. Depending on your exception scenarios, you have the option to choose between **Generic**, **IT**, and **Business** **exceptions**.                                 | Queued, On hold     |
 | **On hold**    | A business or IT user has picked an item to review, assess, and potentially remediate issues.     | Queued              |
 
 ## Work queues SLA
 > [!NOTE]
 > The Work Queues SLA capability is currently being deployed across all supported Power Automate geographies. It may take a few weeks for the feature to become available in all regions.
+
+Work Queues SLA enables organizations to define, monitor, and manage service level expectations for items processed through work queues. By configuring time-to-live (TTL), SLA violation and at-risk thresholds, users can ensure timely handling of queued work and proactively address delays. This capability helps improve operational efficiency, maintain compliance with business policies, and provide better visibility into automation adherence to SLA requirements.
+
+Work Queues SLA is configured when [creating](#create-a-work-queue) or [editing](#edit-a-work-queue) your work queue, and can be managed on the work queue list page, work queue details page, and (automation center)[../automation-center-overview.md#work-queues-tab]
+
+### Example of a work queue SLA use case
+
 
 
 ## Next steps
