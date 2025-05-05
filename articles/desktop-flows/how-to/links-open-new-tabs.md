@@ -3,6 +3,7 @@ title: Handle links that open new tabs
 description: Handle links that open new tabs
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/04/2021

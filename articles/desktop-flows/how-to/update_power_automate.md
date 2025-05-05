@@ -2,6 +2,7 @@
 title: Update or roll back Power Automate for desktop
 description: Learn how to update or roll back Power Automate for desktop and the machine runtime app. Address compatibility issues and manage updates seamlessly.
 author: PetrosFeleskouras
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 03/12/2025

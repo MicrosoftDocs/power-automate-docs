@@ -2,6 +2,7 @@
 title: Convert a CSV file into an Excel spreadsheet
 description: Convert a CSV file into an Excel spreadsheet
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 10/08/2024

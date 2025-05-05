@@ -5,6 +5,7 @@ author: kathyos
 ms.component: pa-admin
 ms.topic: conceptual
 ms.date: 07/01/2024
+ms.service: power-automate
 ms.subservice: guidance
 ms.author: kathyos
 ms.reviewer: angieandrews

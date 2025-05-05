@@ -2,6 +2,7 @@
 title: Manage desktop flow connections
 description: See how to manage connections to trigger desktop flows from cloud flows.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 01/27/2025

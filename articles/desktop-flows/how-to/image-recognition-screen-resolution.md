@@ -3,6 +3,7 @@ title: Use image recognition on machines with different screen resolutions
 description: Use image recognition on machines with different screen resolutions
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/08/2021

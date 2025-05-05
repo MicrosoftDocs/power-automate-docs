@@ -2,6 +2,7 @@
 title: Power Automate v2 schema
 description: Learn about the Power Automate v2 schema.
 author: nvigne
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
 ms.date: 03/05/2025

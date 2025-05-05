@@ -3,6 +3,7 @@ title: Power Automate secret variables actions reference
 description: Discover how to use Power Automate secret variables actions to securely retrieve sensitive data. Integrate CyberArk credentials in your desktop flows.
 author: yiannismavridis
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 04/11/2025

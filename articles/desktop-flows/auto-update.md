@@ -2,6 +2,7 @@
 title: Configure automatic updates for Power Automate for desktop
 description: Learn how to configure automatic updates for Power Automate for desktop to ensure your machines stay current.
 author: a-887178056
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.date: 02/19/2025
 ms.author: guco
