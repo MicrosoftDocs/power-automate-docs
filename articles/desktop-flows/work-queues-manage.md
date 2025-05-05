@@ -170,6 +170,17 @@ Work Queues SLA is configured when [creating](#create-a-work-queue) or [editing]
 
 ### Example of a work queue SLA use case
 
+As part of a supply chain process, thousands of transactions have to be processed every day.
+
+Process completion is based on a strict SLA and has to be completed within 5 hours, as it is processed with a unique token that expires after that period
+
+Here’s an example of how to leverage Work Queues SLA:
+
+1. Create a work queue for transaction processing with an SLA violation threshold set to 5 hours and an SLA at-risk threshold set to 80% (4 hours).
+2. Create a Dataverse trigger for when work queue items enter the "At-risk" status. This should trigger additional processing and send an email notification to the operations team, alerting them that the SLA is at risk.
+3. Create another Dataverse trigger for when work queue items reach SLA violation (i.e., expire), notifying the operations team so the transaction can be manually reprocessed.
+
+With this setup, at-risk work queue items can be addressed proactively to avoid SLA violations, and violated items are promptly flagged for manual intervention.
 
 
 ## Next steps
