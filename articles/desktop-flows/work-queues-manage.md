@@ -58,8 +58,10 @@ To edit a work queue:
 5. Select **Edit work queue** on the toolbar and update the values in the update pane.
 6. (Optional) Enter a **Description** for the work queue.
 7. (Optional) Enter a **Work queue key** for the work queue. When provided, the value must be unique within this queue. If left empty, a unique value is automatically provided by the system.
-8. (Optional) Activate **Set default item expiration** and select a default lifespan value for work queue items in the **Items expire after** fields.
-9. Select **Save**.
+8. (Optional) Activate SLA strategy if you want to enable [Work queues SLA](#work-queues-sla). Select the default time-to-live (TTL) and configure the default SLA violation in the **SLA violated after** field. Then, determine the  **SLA considered at risk after (preview)** configuration. 
+9. (Optional) Determine if you want to enable **Auto-retry on IT exception**. 
+10. (Optional) Determine if you want to **Allow update item input while in processing**. 
+11. Select **Save**.
 
 ## Share a work queue
 
