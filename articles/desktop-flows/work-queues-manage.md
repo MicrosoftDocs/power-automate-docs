@@ -130,7 +130,7 @@ Looking for more ways to create work queue data?
 To edit a work queue item:
 
 1. Select the work queue item you would like to edit and then select  **Edit work queue item** .
-2. In the **Edi work queue item** side-panel, you can update all values as long as the item isn't in the **Processing** state.
+2. In the **Edit work queue item** side-panel, you can update all values as long as the item isn't in the **Processing** state.
 
   > [!NOTE]
   > If you don't provide a value for the work queue item name, the internal work queue id is displayed instead in the work queue item list pages.
