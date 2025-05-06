@@ -91,7 +91,7 @@ To create an input variable:
     > Input variables of instance type (Terminal, Browser, Excel, Word, Outlook, or Access) don't support default values. Flows with these inputs can run through the 'Run desktop flow' action of another desktop flow or through the designer for testing or debugging. In designer runs, instance input variables can be temporarily initialized by using them as the produced variables of the respective Launch or Attach actions.
 
     > [!NOTE]
-    > Edge, Chrome, and Firefox are supported as browser instances for input/ouput variables.
+    > Edge, Chrome, and Firefox are supported as browser instances for input variables.
 
     > [!IMPORTANT]
     > If you choose an existing flow variable name for a new input variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, you can't use the name of an existing input or output variable.
@@ -121,6 +121,9 @@ To create an output variable:
 
     > [!NOTE]
     > The **Variable name**, **Data type**, and **External name** fields are required to create an output variable.
+
+    > [!NOTE]
+    > Edge, Chrome, and Firefox are supported as browser instances for output variables.
 
     > [!IMPORTANT]
     > If you choose an existing flow variable name for a new output variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, you can't use the name of an existing input or output variable.
