@@ -1,7 +1,7 @@
 ---
 title: Bulk-import work queue data
 description: Create work queue data in bulk with Power Platform tools.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 06/23/2023
 ms.author: appapaio
 ms.reviewer: 

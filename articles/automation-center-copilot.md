@@ -1,7 +1,7 @@
 ---
 title: Use Copilot in automation center
 description: Use Copilot to analyze flow runs, work queues, and ask general product questions in natural language. 
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/29/2025
 ms.author: appapaio
 ms.reviewer: dmartens
