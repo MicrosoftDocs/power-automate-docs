@@ -47,11 +47,11 @@ The **Post as** and **Post in** options within the action control all the differ
 
 ## Post a message as the Flow bot in a Teams channel
 
-To send a message as the Flow bot in a Teams Channel select the **Post as** option as **Flow bot** and the **Post in** option as Channel. Once you do two more dynamic inputs show up, which allows you to specify the Team and Channel in which to send the message and add your message in the message field.
+To send a message as the Flow bot in a Teams channel, select the **Post as** option as **Flow bot** and the **Post in** option as **Channel**. After selecting these options, two more dynamic inputs shoappear. Specify the team and channel where you want to send the message, and enter your message in the message field.
 
-![Post a message in channel as the Flow bot](../media/post-a-message/flow-bot-channel-new-designer.png)
+:::image type="content" source="../media/post-a-message/flow-bot-channel-new-designer.png" alt-text="Screenshot showing Post a message in channel as the Flow bot":::
 
-![Message in Teams from the Flow bot](../media/post-a-message/flow-bot-channel-teams-new-designer.png)
+:::image type="content" source="../media/post-a-message/flow-bot-channel-teams-new-designer.png" alt-text="Screenshot showing Message in Teams from the Flow bot":::
 
 ## Post a message as the Flow bot in an existing named group chat
 
@@ -59,11 +59,11 @@ To send a message as the Flow bot in a group chat:
 
 1. Select the **Post as** option as **Flow bot** and the **Post in** option as **Group chat**.
 
-    ![Post a message in group chat](../media/post-a-message/flow-bot-group-chat-new-designer.png)
+    :::image type="content" source="../media/post-a-message/flow-bot-group-chat-new-designer.png" alt-text="Screenshot showing Post a message in group chat":::
 
 1. Another option shows up that lets you select the group chat to post in. Choose a group chat to post the message in and add your message in the message field.
 
-    By default, Teams lists only the 50 most recent **named** group chats in the dropdown menu. If you want to send a message to a new group chat, use the option in the following section.
+    By default, Teams lists only the 50 most recent **named** group chats in the dropdown menu. If you want to send a message to a new group chat, use the option in [Create a new group chat and post a message to it as the Flow bot](#create-a-new-group-chat-and-post-a-message-to-it-as-the-flow-bot).
 
 ## Create a new group chat and post a message to it as the Flow bot
 
@@ -73,7 +73,7 @@ The **Post message in a chat or channel** action can be combined with the **Crea
 1. To send a message as the Flow bot in the new created group chat, select the **Post as** option as **Flow bot** and the **Post in** option as **Group chat**. Once you do, another option that lets you select the group chat to post in appears.
 1. In the Group chat field, choose **Enter custom value** and select the **Conversation id** from the **Create a chat** action in the dynamic token picker.
 
-    ![Post a message in group chat as the Flow bot](../media/post-a-message/flow-bot-group-chat-new-new-designer.png)
+    :::image type="content" source="../media/post-a-message/flow-bot-group-chat-new-new-designer.png" alt-text="Screenshot showing Post a message in group chat as the Flow bot":::
 
 ## Post a message as the Flow bot directly to a user
 
@@ -81,21 +81,21 @@ When you send a message as the Flow bot, you have the added option of posting di
 
 For this, select the **Chat with Flow bot** option and specify the user you want to message and the specific message you want to send.
 
-![Post a message in a Teams group chat as the Flow bot](../media/post-a-message/flow-bot-chat-direct-new-designer.png)
+:::image type="content" source="../media/post-a-message/flow-bot-chat-direct-new-designer.png" alt-text="Screenshot showing Post a message in a Teams group chat as the Flow bot":::
 
 ## Post a message as the user in a Teams Channel
 
-To send a message as the user in a Teams Channel, select the **Post as** option as **User** and the **Post in** option as **Channel**. Once you do, two dynamic inputs appear, which allows you to specify the Team and Channel in which to send the message and add your message in the message field.
+To send a message as the user in a Teams channel, select the **Post as** option as **User** and the **Post in** option as **Channel**. This action displays two dynamic inputs that let you specify the team and channel to send the message and add your message in the message field.  
 
-![Post a message in channel as the user](../media/post-a-message/user-channel-new-designer.png)
+:::image type="content" source="../media/post-a-message/user-channel-new-designer.png" alt-text="Screenshot showing Post a message in channel as the user":::
 
 ## Post a message as the user in an existing named group chat
 
 To send a message as the user in a Group chat, select the **Post as** option as **User** and the **Post in** option as **Group chat**. After you do, an another option that lets you select the Group chat to post in appears. Choose a group chat to post the message in and add your message in the message field.
 
-![Post a message in existing named group chat as the user](../media/post-a-message/user-group-chat-new-designer.png)
+:::image type="content" source="../media/post-a-message/user-group-chat-new-designer.png" alt-text="Screenshot showing Post a message in existing named group chat as the user":::
 
-By default, Teams only lists the 50 most recent **named** group chats in the drop-down. If you want to send a message to a new group chat, use the option in the following section.
+By default, Teams only lists the 50 most recent **named** group chats in the drop-down. If you want to send a message to a new group chat, use the option in [Create a new group chat and post a message](#create-a-new-group-chat-and-post-a-message).
 
 ## Create a new group chat and post a message
 
@@ -104,21 +104,21 @@ The **Post message in a chat or channel** action can be combined with the **Crea
 1. To create a new group chat, add the **Create a chat** action *before* the **Post message in a chat or channel** action. Add the members who need to be in the chat using their emails. Separate multiple emails with a semi-colon and enter the title for the chat if needed.
 1. To send a message as the Flow bot in the new created group chat, select the **Post as** option as **User** and the **Post in** option as **Group chat**. Once you do, another option that lets you select the Group chat to post in appears. In the Group chat field, choose **Enter custom value** and select the **Conversation id** from the **Create a chat** action in the dynamic token picker.
 
-    ![Post a message in group chat as the user](../media/post-a-message/user-group-chat-new-new-designer.png)
+    :::image type="content" source="../media/post-a-message/user-group-chat-new-new-designer.png" alt-text="Screenshot showing Post a message in group chat as the user":::
 
 ### Mention a user in any message
 
 Mentions are a great way to get the attention of a user in Teams. You can combine any of the above actions and add a mention in the message of to a user or channel.
 
-1. To mention a user, use the **Get @mention token for a user** action and specify the email of the user you want to mention in the **User** field.
+1. To mention a user, use the **Get @mention token for a user** action before the **Post a message in chat or channel** action. Specify the email of the user you want to mention in the **User** field. This action generates a token that can be used in the message field of the **Post a message in chat or channel** action.
 
     The **User** field only accepts a single user input. If you want to mention multiple users, you need to add multiple instances of this action within the flow.
 
-    ![Post a message in group chat as the user with a mention](../media/post-a-message/user-group-chat-mention-new-designer.png)
+1. Add the mention token generated from  **Get @mention token for a user** action in any of the previous **Post a message in chat or channel** action scenarios.
 
-1. Add the mention token generated from that action in any of the previous **Post a message in chat or channel** action scenarios.
+    The **Get @mention token for a user** action only supports mentioning users and not channels or Teams at the moment.
 
-    The **Get @mention token for a user** action only supports mentioning users and not channels or Teams at the moment. 
+    :::image type="content" source="../media/post-a-message/user-group-chat-mention-new-designer.png" alt-text="Screenshot showing Post a message in group chat as the user with a mention":::
 
 ## Known issues and limitations
 
