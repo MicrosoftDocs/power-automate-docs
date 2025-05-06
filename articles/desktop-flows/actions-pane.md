@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 02/21/2025
+ms.date: 05/06/2025
 ms.author: iomavrid
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
@@ -24,6 +24,17 @@ The actions pane occupies the left side of the flow designer and displays all th
 To find a specific action, populate its name in the search bar at the top of the pane. Searching also returns partial matches but requires at least two provided characters. When the search term matches a module name, the results display the module expanded with all its actions available.
 
 :::image type="content" source="media/actions-pane/actions-search.png" alt-text="Screenshot of the search field in the actions pane.":::
+
+## Mark actions as favorites
+
+By default, all your available actions are shown under the **All** section.
+
+To bookmark your preferred or most frequently used actions in a separate area, select the star icon on the right of each suc action to mark it as favorite, so that it appears under the **Favorites** section. The same actions tree structure is persisted for your favorite actions as well.
+
+:::image type="content" source="media/actions-pane/favorite-actions.png" alt-text="Actions marked as favorite in the actions pane.":::
+
+> [!NOTE]
+> Favorite actions persist and reflect across all the user's flows on their machine.
 
 ## Add actions to the workspace
 
