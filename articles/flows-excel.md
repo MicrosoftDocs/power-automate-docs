@@ -8,7 +8,7 @@ contributors:
   - sbasi19
   - v-aangie
 ms.custom: 
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: miregate
 ms.reviewer: angieandrews
 ---
