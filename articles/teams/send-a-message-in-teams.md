@@ -122,9 +122,9 @@ Mentions are a great way to get the attention of a user in Teams. You can combin
 
 ## Known issues and limitations
 
-- By default Teams only lists the 50 most recent **named** group chats in the drop-down list. If you want to send a message to a new group chat, use the following option.
+- By default, Teams only lists the 50 most recent **named** group chats in the drop-down list.
 
-- The **Get @mention token for a user** can only be used for mentioning users, mentioning channels/teams is currently not supported.
+- The **Get @mention token for a user** is only for mentioning users. Mentioning channels or teams isn't supported.
 
 - Sending a message in private channels isn't supported.
 
