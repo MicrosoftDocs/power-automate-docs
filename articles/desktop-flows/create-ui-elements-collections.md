@@ -4,7 +4,7 @@ description: Learn how to create and publish UI elements collections in Power Au
 author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/14/2024
 ms.author: iomavrid
 ms.reviewer: dmartens
