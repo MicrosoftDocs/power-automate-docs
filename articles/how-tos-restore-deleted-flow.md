@@ -10,7 +10,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.date: 04/24/2023
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
