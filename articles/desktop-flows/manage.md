@@ -4,7 +4,7 @@ description: Learn how to manage desktop flows in the Power Automate portal.
 author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/21/2025
 ms.author: appapaio
 ms.reviewer: matp

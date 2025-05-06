@@ -4,7 +4,7 @@ description: This section shows how to use the actions pane to deploy actions in
 author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/21/2025
 ms.author: iomavrid
 ms.reviewer: matp

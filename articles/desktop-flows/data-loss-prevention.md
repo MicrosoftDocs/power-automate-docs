@@ -5,7 +5,7 @@ author: mattp123
 
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/30/2025
 ms.author: quseleba
 ms.reviewer: matp
