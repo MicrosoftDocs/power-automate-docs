@@ -29,12 +29,12 @@ To find a specific action, populate its name in the search bar at the top of the
 
 By default, all your available actions are shown under the **All** section.
 
-To bookmark your preferred or most frequently used actions in a separate area, select the star icon on the right of each such action to mark it as favorite, so that it appears under the **Favorites** section. The same actions tree structure is persisted for your favorite actions as well. Select the star icon again to remove an action from the favorites list.
+To bookmark your preferred or most frequently used actions in a separate area, select the star icon on the right of each action to mark it as a favorite. The action then appears under the **Favorites** section. The same actions tree structure is kept for your favorite actions. To remove an action from the favorites list, select the star icon again.
 
-:::image type="content" source="media/actions-pane/favorite-actions.png" alt-text="Actions marked as favorite in the actions pane.":::
+:::image type="content" source="media/actions-pane/favorite-actions.png" alt-text="Screenshot of actions marked as favorite in the actions pane.":::
 
 > [!NOTE]
-> Favorite actions persist and reflect across all the user's flows on their machine.
+> Favorite actions are saved and appear across all the user's flows on their machine.
 
 ## Add actions to the workspace
 
