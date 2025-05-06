@@ -4,7 +4,7 @@ description: Learn about the Approvals kit's limitations.
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
-ms.topic: article
+ms.topic: limits-and-quotas
 ms.date: 11/15/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
