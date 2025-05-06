@@ -29,7 +29,7 @@ To find a specific action, populate its name in the search bar at the top of the
 
 By default, all your available actions are shown under the **All** section.
 
-To bookmark your preferred or most frequently used actions in a separate area, select the star icon on the right of each suc action to mark it as favorite, so that it appears under the **Favorites** section. The same actions tree structure is persisted for your favorite actions as well.
+To bookmark your preferred or most frequently used actions in a separate area, select the star icon on the right of each such action to mark it as favorite, so that it appears under the **Favorites** section. The same actions tree structure is persisted for your favorite actions as well. Select the star icon again to remove an action from the favorites list.
 
 :::image type="content" source="media/actions-pane/favorite-actions.png" alt-text="Actions marked as favorite in the actions pane.":::
 
