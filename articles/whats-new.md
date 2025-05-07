@@ -4,7 +4,7 @@ description: Learn about all the new features in Power Automate.
 author: v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: whats-new
 ms.date: 05/22/2023
 ms.author: angieandrews
 ms.reviewer: angieandrews
