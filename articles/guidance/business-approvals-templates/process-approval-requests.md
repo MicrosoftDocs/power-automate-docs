@@ -4,7 +4,7 @@ description: Learn how to process approval requests.
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
-ms.topic: article
+ms.topic: how-to
 ms.date: 11/15/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
