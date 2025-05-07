@@ -4,7 +4,7 @@ description: You need these four main components for SAP GUI automation with Pow
 suite: flow
 author: kathyos
 ms.custom: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/16/2024
 ms.author: kathyos
 ms.reviewer: angieandrews

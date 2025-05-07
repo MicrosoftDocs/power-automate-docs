@@ -4,7 +4,7 @@ description: Frequently asked questions for the Business approvals templates.
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
-ms.topic: article
+ms.topic: faq
 ms.date: 11/15/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
