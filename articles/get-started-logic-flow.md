@@ -50,7 +50,7 @@ Using Copilot, you can use natural language to create a flow.
 
 1. Select **Keep it and continue**.
 
-1. Review your connected apps and services to Twitter and Outlook. A green checkmark indicates that the connection is valid.
+1. Review your connected apps and services to X and Outlook. A green checkmark indicates that the connection is valid.
 1. Select **Next** and your flow appears on the designer.
 
    The new flow contains the **When a new tweet is posted** trigger and the **Send an email (V2)** action. 
