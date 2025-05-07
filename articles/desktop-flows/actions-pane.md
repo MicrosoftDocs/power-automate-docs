@@ -25,6 +25,17 @@ To find a specific action, populate its name in the search bar at the top of the
 
 :::image type="content" source="media/actions-pane/actions-search.png" alt-text="Screenshot of the search field in the actions pane.":::
 
+## Mark actions as favorites
+
+By default, all your available actions are shown under the **All** section.
+
+To bookmark your preferred or most frequently used actions in a separate area, select the star icon on the right of each action to mark it as a favorite. The action then appears under the **Favorites** section. The same actions tree structure is kept for your favorite actions. To remove an action from the favorites list, select the star icon again.
+
+:::image type="content" source="media/actions-pane/favorite-actions.png" alt-text="Screenshot of actions marked as favorite in the actions pane.":::
+
+> [!NOTE]
+> Favorite actions are saved and appear across all the user's flows on their machine.
+
 ## Add actions to the workspace
 
 To develop a desktop flow, find the action you want to deploy, and double-click on it or drag it into the workspace.

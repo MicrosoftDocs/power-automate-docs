@@ -78,17 +78,16 @@ To create an input variable:
     - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list), [datatable](variable-data-types.md#datatable), or [instance](variable-data-types.md#instances).
     - **Default value**: The default value when the flow runs through the flow designer or console. When you create a custom object, list, or datatable input variable, Power Automate allows you to construct the default value through a visual or JSON editor.
         ![Screenshot of a custom object input variable in the visual editor.](media\input-output-variables\custom-object-input-variable.png)
-    - **Data subtype**: The exact type of the instance (available only when **Instance** is previously selected as data type): Browser, Excel, Word, Outlook, or Access.
+    - **Data subtype**: The exact type of the instance (available only when **Instance** is previously selected as data type): Terminal, Browser, Excel, Word, Outlook, or Access.
     - **External name**: The external name is the name that appears in the cloud flow designer and the flow inputs dialog when calling the flow from the console.
     - **Description**: The description of the variable that appears in the cloud and desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](#sensitive-variables).
     - **Mark as optional**: Defines whether populating this input variable is mandatory or not. By marking an input variable as optional, you allow it to receive **Blank** values and omit passing an actual value, which doesn't result in an error. You can find information regarding optional input variables in [Optional input variables](#optional-input-variables).
 
     > [!NOTE]
-    > The **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
-
-    > [!NOTE]
-    > Input variables of instance type (Browser, Excel, Word, Outlook, or Access) don't support default values. Flows with these inputs can run through the 'Run desktop flow' action of another desktop flow or through the designer for testing or debugging. In designer runs, instance input variables can be temporarily initialized by using them as the produced variables of the respective Launch or Attach actions.
+    > - The **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
+    > - Input variables of instance type (Terminal, Browser, Excel, Word, Outlook, or Access) don't support default values. Flows with these inputs can run through the 'Run desktop flow' action of another desktop flow or through the designer for testing or debugging. In designer runs, instance input variables can be temporarily initialized by using them as the produced variables of the respective Launch or Attach actions.
+    > - Edge, Chrome, and Firefox are supported as browser instances for input variables.
 
     > [!IMPORTANT]
     > If you choose an existing flow variable name for a new input variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, you can't use the name of an existing input or output variable.
@@ -111,13 +110,14 @@ To create an output variable:
 
     - **Variable name**: The name of the variable in the desktop flow.
     - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list), [datatable](variable-data-types.md#datatable), or [instance](variable-data-types.md#instances).
-    - **Data subtype**: The exact type of the instance (available only when **Instance** is previously selected as data type): Browser, Excel, Word, Outlook, or Access.
+    - **Data subtype**: The exact type of the instance (available only when **Instance** is previously selected as data type): Terminal, Browser, Excel, Word, Outlook, or Access.
     - **External name**: The external name is the name that appears in the cloud flow designer.
     - **Description**: The description of the variable that appears in the cloud or desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](#sensitive-variables).
 
     > [!NOTE]
-    > The **Variable name**, **Data type**, and **External name** fields are required to create an output variable.
+    > - The **Variable name**, **Data type**, and **External name** fields are required to create an output variable.
+    > - Edge, Chrome, and Firefox are supported as browser instances for output variables.
 
     > [!IMPORTANT]
     > If you choose an existing flow variable name for a new output variable, Power Automate will prompt you to confirm the merging of the two variables. Unintentional merging may affect the functionality of your flow and cause errors. Also, you can't use the name of an existing input or output variable.
