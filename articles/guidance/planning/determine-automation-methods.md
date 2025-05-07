@@ -4,7 +4,7 @@ description: After the process design is complete, the next step is the architec
 author: taiki-yoshida
 ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: best-practice
 ms.custom: guidance
 ms.date: 03/16/2022
 ms.author: tayoshi
