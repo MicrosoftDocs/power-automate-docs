@@ -4,7 +4,7 @@ description: Learn how to manage UI elements collections in Power Automate deskt
 author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/04/2024
 ms.author: iomavrid
 ms.reviewer: dmartens
