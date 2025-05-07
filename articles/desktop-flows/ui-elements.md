@@ -4,7 +4,7 @@ description: Learn how to capture UI elements in your desktop flows.
 author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 12/20/2023
 ms.author: nimoutzo
 ms.reviewer: matp

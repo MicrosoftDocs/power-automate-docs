@@ -1,7 +1,7 @@
 ---
 title: Work queues
 description: Work queue management with Power Automate.
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/14/2024
 ms.author: appapaio
 ms.reviewer: angieandrews

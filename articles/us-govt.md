@@ -6,7 +6,7 @@ suite: flow
 author: kenseongtan
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/20/2024
 ms.author: kenseongtan
 ms.reviewer: angieandrews
