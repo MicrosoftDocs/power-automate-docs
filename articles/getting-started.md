@@ -1,5 +1,5 @@
 ---
-title: Get started with Power Automate
+title: Explore the Power Automate home page
 description: Learn how to navigate the Power Automate home page.
 author: kisubedi
 contributors:
@@ -9,7 +9,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 04/01/2025
+ms.date: 04/30/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -20,17 +20,15 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Get started with Power Automate
+# Explore the Power Automate home page
 
-Power Automate allows you to optimize your business processes across your organization and automate repetitive tasks. This service helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. It does this with the help of task mining and process mining.
-
-## Get started from the home page
+Power Automate allows you to optimize your business processes across your organization and automate repetitive tasks. This service helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
 
 The Power Automate home page offers you various options for creating your own flows and learning about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate can help your business.
 
-If your organization has AI enabled, then it also includes the new Copilot features.
+If your organization has AI enabled, then it also includes Copilot features.
 
-To learn more, select the following links.
+To learn more, select the links following the screenshot.
 
 :::image type="content" source="media/getting-started/home-full-numbers.png" alt-text="Screenshot of the new look of the home screen.":::
 
@@ -218,6 +216,7 @@ Get contextual help while building your flow using the Power Platform virtual ag
 
 ## Related information
 
+- [Get started with Power Automate: tutorial](get-started-tutorial.md)
 - [Training: Get started with Power Automate (module)](/training/modules/get-started-flows/)
 - [Training: Automate a business process using Power Automate (learning path)](/training/paths/automate-process-power-automate/)
 
