@@ -4,7 +4,7 @@ description: Learn about custom actions in Power Automate desktop flows.
 author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/06/2025
 ms.author: dipapa
 ms.reviewer: tapanm-msft
