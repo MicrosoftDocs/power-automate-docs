@@ -3,7 +3,7 @@ title: Business approvals templates approvals kit comparison
 description: Learn the differences between the business approvals templates approvals kit and the Power Platform approvals connector.
 author: Grant-Archibald-MS
 ms.custom: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 11/15/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
