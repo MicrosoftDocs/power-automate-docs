@@ -4,7 +4,7 @@ description: Learn how to create a machine-credential mapping for your desktop f
 author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/19/2025
 ms.author: quseleba
 ms.reviewer: dmartens
