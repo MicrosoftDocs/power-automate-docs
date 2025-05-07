@@ -12,7 +12,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/16/2022
 ms.author: thjeffri
 ms.reviewer: angieandrews
