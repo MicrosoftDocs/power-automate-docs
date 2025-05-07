@@ -4,7 +4,7 @@ description: Common questions and answers for machine group certificate renewal.
 author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/12/2024
 ms.author: gachasta
 ms.reviewer: matp
