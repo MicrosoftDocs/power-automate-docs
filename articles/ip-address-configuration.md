@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 03/28/2025
+ms.date: 05/02/2025
 ms.author: cgarty
 ms.reviewer: angieandrews
 ---
@@ -141,6 +141,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | \*.gateway.mooncake.island.powerapps.cn | https | Needed for machine connectivity (21Vianet - China only). |
 | *.api.powerplatform.partner.microsoftonline.cn | https | Access to several Power Platform APIs (mandatory for cloud connector actions in desktop flows) (21Vianet - China only). |
 | *.dynamics.cn | https | Access to Dataverse tables (DesktopFlow modules feature)(21Vianet - China only). |
+| *.api.powerautomate.cn | https | Access to Power Automate (21Vianet - China only). |
 
 ## Other IP address articles
 
