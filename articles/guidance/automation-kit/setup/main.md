@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 editor: ''
 ms.custom: guidance
-ms.topic: conceptual
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/21/2023

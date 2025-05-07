@@ -4,7 +4,7 @@ description: Learn how to use and update UI elements collections in desktop flow
 author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/04/2024
 ms.author: iomavrid
 ms.reviewer: dmartens
