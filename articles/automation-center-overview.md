@@ -1,7 +1,7 @@
 ---
 title: Explore Power Automate's automation center 
 description: Explore the comprehensive monitoring and troubleshooting experiences offered by Power Automate's Automation Center, a hub for managing automation activity.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/14/2025
 ms.author: quseleba
 ms.reviewer: dmartens

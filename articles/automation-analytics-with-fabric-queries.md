@@ -1,7 +1,7 @@
 ---
 title: Create automation-related queries with Fabric
 description: Learn how to query automation-related Dataverse data in Microsoft Fabric
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/19/2024
 ms.author: appapaio
 ms.reviewer: dmartens
