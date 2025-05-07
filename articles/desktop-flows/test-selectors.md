@@ -4,7 +4,7 @@ description: Test a selector
 author: nikosmoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/04/2023
 ms.author: nimoutzo
 ms.reviewer: ndoelman, matp
