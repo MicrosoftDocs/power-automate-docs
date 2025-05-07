@@ -4,7 +4,7 @@ description: This article explains how you can define inputs and outputs for a P
 author: taiki-yoshida
 ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: guidance
 ms.date: 12/10/2020
 ms.author: tayoshi
