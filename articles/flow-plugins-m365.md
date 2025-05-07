@@ -12,7 +12,7 @@ ms.author: samathur
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/28/2025
 ms.collection: 
   - bap-ai-copilot

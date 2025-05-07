@@ -9,7 +9,7 @@ ms.author: cvassallo
 ms.reviewer: angieandrews
 contributors:
   - DanaMartens
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

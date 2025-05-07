@@ -1,7 +1,7 @@
 ---
 title: Process, add, update and requeue work queue items
 description: Work queue processing options through Power Automate cloud flows, desktop flows and Dataverse API's.
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/10/2025
 ms.author: appapaio
 ms.reviewer: 

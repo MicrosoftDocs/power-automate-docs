@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.author: anaggar
 ms.reviewer: angieandrews
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/31/2024
 ms.service: power-automate
 ms.subservice: cloud-flow

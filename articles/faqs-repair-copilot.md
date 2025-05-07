@@ -4,7 +4,7 @@ description: This FAQ discusses Repair with Copilot at runtime in Power Automate
 ms.date: 04/01/2025
 ms.custom:
   - responsible-ai-faqs
-ms.topic: conceptual
+ms.topic: faq
 author: nikosmoutzourakis
 ms.author: nimoutzo
 ms.reviewer: dmartens

@@ -1,4 +1,4 @@
-﻿---
+---
 title: Support for service principal owned flows
 description: Learn about support for service principal owned flows and best practices.
 author: samathur
@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.author: samathur
 ms.reviewer: angieandrews
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/04/2024
 ms.custom:
 ---

@@ -4,7 +4,7 @@ description: See all the available variable data types in desktop flows.
 author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/29/2024
 ms.author: dipapa
 ms.reviewer: matp
