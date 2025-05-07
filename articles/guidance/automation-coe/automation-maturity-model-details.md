@@ -4,7 +4,7 @@ description: Learn about goals, indicators, and learning resources for each capa
 author: ashVancouver
 ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 07/01/2024
 ms.author: ashwinrajuk
 ms.reviewer: angieandrews
