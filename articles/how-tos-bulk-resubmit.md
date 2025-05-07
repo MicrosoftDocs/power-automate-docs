@@ -5,7 +5,7 @@ suite: flow
 author: DBEKI
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/19/2025
 ms.author: dbekirop
 ms.reviewer: angieandrews
