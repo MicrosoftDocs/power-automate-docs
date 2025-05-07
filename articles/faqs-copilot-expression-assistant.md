@@ -4,7 +4,7 @@ description: This FAQ provides information about the AI technology used in Power
 ms.date: 12/12/2024
 ms.custom:
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: ksubedi
 ms.author: kisubedi
 ms.reviewer: angieandrews
