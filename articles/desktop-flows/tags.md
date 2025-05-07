@@ -29,7 +29,7 @@ The **Tags (Preview)** column displays all the tags that are associated with a d
 In this section, add your preferred tags to the selected flow by selecting a tag from the list or creating a new text label. As you type, the list of tags in your environment automatically filters to help you choose an existing tag or create a new one. From the same pane, you can remove any tags previously associated with your flow. Select **Save** in the flow properties for the tag changes to take effect.
 
 > [!NOTE]
-> - Users with the Environment Maker role can access and use all tags within an environment by default, including tags created by others. Explicit sharing with other users isn't needed. <!-- TO BE ADDED HERE WHEN THE BEHAVIOR IS FIXED IN v.2.57: They can associate the required tags with flows they own or co-own, but not flows shared with them as run-only users.-->
+> - Users with the Environment Maker role can access and use all tags within an environment by default, including tags created by others. Explicit sharing with other users isn't needed. 
 > - If a message appears in the console indicating that a user with a custom role doesn't have sufficient permissions to view or create flows in an environment, Read access must be provided to their respective security role on the Tag and Tagged Process tables in Dataverse.
 
 ## Update tags for multiple flows
