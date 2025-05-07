@@ -1,7 +1,7 @@
 ---
 title: Boost automation health with Automation center recommendations 
 description: Enhance your automation's reliability and efficiency with the Automation Center's targeted recommendations, offering actionable insights and best practice suggestions.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 01/14/2025
 ms.author: quseleba
 ms.reviewer: dmartens

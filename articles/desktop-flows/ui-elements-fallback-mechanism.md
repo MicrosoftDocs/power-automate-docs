@@ -4,7 +4,7 @@ description: Explore Power Automate's new feature, an image fallback mechanism f
 author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 06/17/2024
 ms.author: nimoutzo
 ms.reviewer: dmartens

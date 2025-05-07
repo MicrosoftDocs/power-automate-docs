@@ -2,7 +2,7 @@
 title: Build and certify custom connectors
 description: Learn how to create custom connectors using different options, get them certified, and publish.
 author: ChrisGarty
-ms.topic: conceptual
+ms.topic: article
 ms.service: power-automate
 ms.subservice: developer
 ms.date: 03/25/2024

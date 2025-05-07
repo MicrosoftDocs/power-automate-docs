@@ -4,7 +4,7 @@ description: Learn how to use flows to work with lists of rows from Microsoft Da
 author: radioblazer
 ms.author: matow
 ms.reviewer: angieandrews
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/01/2025
 ms.collection: bap-ai-copilot
 search.audienceType: 
