@@ -8,7 +8,7 @@ contributors:
   - jhaskett-msft
 ms.topic: overview
 ms.date: 02/18/2025
-ms.author: heortaol
+ms.author: lali
 ms.reviewer: angieandrews
 ms.contributors:
   - appapaio

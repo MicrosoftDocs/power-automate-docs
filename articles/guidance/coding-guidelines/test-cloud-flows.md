@@ -3,6 +3,7 @@ title: Test cloud flows
 description: Discover effective methods for testing Power Automate cloud flows, including design phase testing and static result testing.
 #customer intent: As a Power Automate user, I want to test my Power Automate cloud flows so that I can ensure their reliability, performance, and accuracy.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 02/18/2025

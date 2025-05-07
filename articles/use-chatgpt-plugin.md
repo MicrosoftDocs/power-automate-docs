@@ -2,15 +2,16 @@
 title: Use the Power Automate plugin for ChatGPT
 description: Learn how to create and run flows from the Power Automate plugin for ChatGPT
 suite: flow
-author: matow
+author: HeatherOrt
 contributors:
   - matow
   - hamenon-ms
   - v-aangie
-ms.author: matow
+ms.author: ralinga
 ms.reviewer: angieandrews
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/01/2025
 ms.collection: 
   - bap-ai-copilot

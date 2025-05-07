@@ -2,13 +2,15 @@
 title: Power Automate v2 schema
 description: Learn about the Power Automate v2 schema.
 author: nvigne
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
-ms.date: 03/05/2025
+ms.date: 05/02/2025
 ms.author: nvigne
 ms.reviewer: matp
 contributors:
   - DanaMartens
+  - yiannismavridis
 search.audienceType: 
   - flowmaker
   - enduser
@@ -123,6 +125,8 @@ If you use custom security roles to manage the access to your desktop flow, Powe
 - `prvAppenddesktopflowbinary`
 - `prvAppendTodesktopflowbinary`
 - `prvReadSolution`
+- `prvReadtag`
+- `prvReadtaggedprocess`
 
 The minimum access level for each privilege is basic (user). More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
 

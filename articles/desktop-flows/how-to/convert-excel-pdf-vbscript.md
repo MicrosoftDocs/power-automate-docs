@@ -3,6 +3,7 @@ title: Convert Excel to PDF using VBScript
 description: Convert Excel to PDF using VBScript
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 07/13/2021

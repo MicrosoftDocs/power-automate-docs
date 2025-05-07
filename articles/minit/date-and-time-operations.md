@@ -5,10 +5,11 @@ author: rosikm
 contributors:
   - rosikm
   - v-aangie
+ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: conceptual
 ms.date: 03/10/2025
-ms.author: michalrosik
+ms.author: dbekirop
 ms.reviewer: angieandrews
 search.audienceType:
 - flowmaker

@@ -2,7 +2,7 @@
 title: Planning phase for a Power Automate project| Microsoft Docs
 description: Planning is the most important part of automating processes. This article introduces a set of articles that walk you through the planning process step by step.
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: conceptual
 ms.custom: guidance

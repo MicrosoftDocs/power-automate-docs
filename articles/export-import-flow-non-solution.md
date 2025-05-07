@@ -2,14 +2,15 @@
 title: Export and import a non-solution flow
 description: Learn how export a flow from one environment and import it to another.
 suite: flow
-author: jamiemwork
+author: HeatherOrt
 contributors:
   - jamiemwork
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 01/29/2024
-ms.author: jamiller
+ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType:
   - flowmaker

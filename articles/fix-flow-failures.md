@@ -7,6 +7,7 @@ contributors:
   - HeaterOrt
   - DBEKI
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 04/16/2025
@@ -121,30 +122,6 @@ The error details should specify how to correct the failure. To update the confi
 ## Other failures
 
 If the error code **500** or **502** appears, the failure is temporary or transient. To try the flow again, select **Resubmit**.
-
-## Get help from support or the community
-
-When you need help, you can use our **Self Help** options, or you can **Ask for help** from others.
-
-### Self help
-
-The Power Automate Support site offers you several self help options.
-
-1. Go to [Power Automate Support](https://make.powerautomate.com/support/).
-1. In the **Self Help** category, select **Learn**, **Samples**, or **Documentation**.
-
-### Ask for help from others
-
-1. Go to [Power Automate Support](https://make.powerautomate.com/support/).
-1. In the **Ask for help** section, select **Contact support**.
-1. Type or select the environment to help identify the issue.
-1. To search recommended solutions, complete the **Tell us what you need help with** field, and then select the right arrow next to the field.
-1. If you found your solution, select **Yes** in the **Were these solutions helpful** field.
-1. If you don't find a solution, select **Ask virtual agent**.
-1. In the **Virtual Agent** screen, type your message, and then select **Send**.
-1. If you need more help from others, return to the [Power Automate Support](https://make.powerautomate.com/support/), and select [Community](https://go.microsoft.com/fwlink/?LinkID=787467).
-
-    On the **Microsoft Power Automate Community** page, you can customize your search and get answers and tips directly from other Power Automate users.
 
 ## Related information
 
