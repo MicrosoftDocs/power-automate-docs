@@ -4,7 +4,7 @@ description: Premium robotic process automation (RPA) features
 author: HeatherOrt
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/22/2025
 ms.author: mustlaz
 ms.reviewer: angieandrews

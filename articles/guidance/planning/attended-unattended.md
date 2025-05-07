@@ -4,7 +4,7 @@ description: With any of the automation methods you use, the automation is going
 author: taiki-yoshida
 ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: guidance
 ms.date: 01/28/2025
 ms.author: tayoshi
