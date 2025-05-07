@@ -9,7 +9,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
-ms.date: 04/01/2025
+ms.date: 05/07/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -37,7 +37,7 @@ Create a cloud flow that performs one or more tasks automatically after it's tri
 Using Copilot, you can use natural language to create a flow.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. Copy the following prompt and paste it in the Copilot field to create your flow:
+1. To create your flow, copy the following prompt and paste it in the Copilot field:
 
     ```copilot-prompt
     when a new tweet is posted, send an email to eug@contoso.com with X username
@@ -73,7 +73,7 @@ First, select what event, or *trigger*, starts your flow.
 
 1. In the **Flow name** field, give your flow a name.
 
-    If you skip this step, Power Automate will generate a name for you.
+    If you skip this step, Power Automate generates a name for you.
 
 1. In the **Search all triggers** field, enter **X**.
 
@@ -137,7 +137,7 @@ You can have up to 600 flows in your account. If you already have 600 flows, del
 
    * To delete a cloud flow, **Delete**, and then select **Delete** on the message box that appears.
 
-   * To view the run history of a cloud flow, select the flow from the **My flows** page, and then select **Details** to view the history under the **28 day run history** section of the page that opens. Select a cloud flow run from the list of runs to see the inputs and outputs of each step in the **28 day run history** section.
+   * To view the run history of a cloud flow, select the flow from the **My flows** page. Then, select **Details** to see the history under the **28 day run history** section. Select a cloud flow run from the list to view the inputs and outputs of each step.
 
 ## Related information
 
