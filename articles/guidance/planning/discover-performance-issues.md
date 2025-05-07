@@ -4,7 +4,7 @@ description: If you're experiencing delays or slowdowns during your flow executi
 author: taiki-yoshida
 ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: guidance
 ms.date: 12/10/2020
 ms.author: tayoshi
