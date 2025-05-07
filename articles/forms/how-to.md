@@ -7,7 +7,7 @@ documentationcenter: na
 author: Dean-Haas
 editor: ''
 tags: ''
-ms.topic: article
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/22/2022
