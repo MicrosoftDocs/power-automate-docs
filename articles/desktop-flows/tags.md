@@ -4,7 +4,7 @@ description: Learn about tags in Power Automate desktop flows.
 author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/11/2025
 ms.author: iomavrid
 ms.reviewer: dmartens
@@ -29,7 +29,8 @@ The **Tags (Preview)** column displays all the tags that are associated with a d
 In this section, add your preferred tags to the selected flow by selecting a tag from the list or creating a new text label. As you type, the list of tags in your environment automatically filters to help you choose an existing tag or create a new one. From the same pane, you can remove any tags previously associated with your flow. Select **Save** in the flow properties for the tag changes to take effect.
 
 > [!NOTE]
-> Users with the **Environment maker** role can access and use all tags within an environment by default, including those created by others. Explicit sharing with other users isn't needed. They can associate the required tags with flows they own or co-own, but not flows shared with them as run-only users.
+> - Users with the Environment Maker role can access and use all tags within an environment by default, including tags created by others. Explicit sharing with other users isn't needed. 
+> - If a message appears in the console indicating that a user with a custom role doesn't have sufficient permissions to view or create flows in an environment, Read access must be provided to their respective security role on the Tag and Tagged Process tables in Dataverse.
 
 ## Update tags for multiple flows
 
@@ -49,7 +50,7 @@ Select **Clear** to reset the selected tags quickly.
 
 ## Delete a tag from your environment
 
-Tags are solution-aware components, so you manage them in your environment's Default solution in the Power Automate portal. Go to the Power Automate portal, select the **Solutions** page, and then select the solution called *Default Solution*. In the list of objects on the left that displays the solution's contents, select the **Tag** component to see all tags available in the current environment (if you have the default *Environment maker* role with the required permissions).
+Tags are solution-aware components, so you manage them in your environment's Default solution in the Power Automate portal. Go to the Power Automate portal, select the **Solutions** page, and then select the solution called *Default Solution*. In the list of objects on the left that displays the solution's contents, select the **Tag** component to see all tags available in the current environment (if you have the default *Environment Maker* role with the required permissions).
 
 You can select one or more tags in the list and choose **Delete from this environment** to permanently delete them. You can only delete tags you own (tags you created yourself).
 
