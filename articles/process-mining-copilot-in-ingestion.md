@@ -1,8 +1,8 @@
-﻿---
+---
 title: Copilot in Process Mining ingestion (preview)
 description: Learn how to identify your process during data ingestion and auto map your data to the required data schema.
 ms.date: 04/01/2025
-ms.topic: conceptual
+ms.topic: article
 author: HeatherOrt
 contributors:
   - janPidych

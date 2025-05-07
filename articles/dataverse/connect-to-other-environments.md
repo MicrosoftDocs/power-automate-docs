@@ -5,7 +5,7 @@ suite: flow
 author: radioblazer
 ms.author: samathur
 ms.reviewer: angieandrews
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/03/2025
 search.audienceType: 
   - maker
