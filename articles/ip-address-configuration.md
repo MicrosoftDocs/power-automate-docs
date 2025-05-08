@@ -99,11 +99,11 @@ We recommend allowlisting the list of domains in the [Use the Power Automate web
 
 | Domains | Protocols | Uses |
 | --------|  ---------| ---- |
-| \*.api.powerplatform.com <br> \*.api.powerplatformusercontent.com <br> *.api.bap.microsoft.com <br> *.logic.azure.com | https | Access to several Power Platform APIs. |
-| *.api.gov.powerplatform.microsoft.us <br> *.gov.api.bap.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
-| *.api.high.powerplatform.microsoft.us <br> *.high.api.bap.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
-| *.api.appsplatform.us <br> *.api.bap.appsplatform.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
-| *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn <br> *.logic.azure.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
+| \*.api.powerplatform.com <br> *.logic.azure.com | https | Access to several Power Platform APIs. |
+| *.api.gov.powerplatform.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
+| *.api.high.powerplatform.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
+| *.api.appsplatform.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
+| *.api.powerplatform.partner.microsoftonline.cn <br> *.logic.azure.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
 
 ### Allow machines & users on your network to access Power Automate desktop services
 
