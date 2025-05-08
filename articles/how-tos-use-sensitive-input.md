@@ -5,7 +5,7 @@ suite: flow
 author: HeatherOrt
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/13/2022
 ms.author: cgarty
 ms.reviewer: angieandrews

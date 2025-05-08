@@ -5,7 +5,7 @@ suite: flow
 author: v-aangie
 ms.author: Matow
 ms.reviewer: angieandrews
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/04/2021
 search.audienceType: 
   - maker

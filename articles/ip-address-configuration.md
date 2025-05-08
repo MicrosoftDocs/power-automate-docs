@@ -7,7 +7,7 @@ contributors:
   - v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 05/02/2025
 ms.author: cgarty
 ms.reviewer: angieandrews

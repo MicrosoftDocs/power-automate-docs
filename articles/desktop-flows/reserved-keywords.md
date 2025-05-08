@@ -4,7 +4,7 @@ description: Special keywords that can't be used as variable names in a flow
 author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 12/14/2023
 ms.author: dipapa
 ms.reviewer: 

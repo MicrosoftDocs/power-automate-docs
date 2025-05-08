@@ -7,7 +7,7 @@ documentationcenter: na
 author: v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/22/2022
 ms.author: angieandrews
 ms.reviewer: angieandrews
