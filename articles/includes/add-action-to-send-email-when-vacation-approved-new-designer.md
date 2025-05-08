@@ -1,5 +1,5 @@
 1. Select **+** to add the **Condition** action.
-1. Select the **Responses Approval response** token from the **Approvals - Start and wait for an approval** action and set it equal to *Approve* in the Parameters tab of the **Condition** action.
+1. Select the **Responses Approval response** token from the **Approvals - Start and wait for an approval** action and set it equal to **Approve** in the Parameters tab of the **Condition** action.
 
 1. Select **+** on the **True** branch of the **Condition** action.
 
