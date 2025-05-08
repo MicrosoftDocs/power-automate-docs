@@ -12,8 +12,8 @@ ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 05/05/2025
+ms.topic: article
+ms.date: 05/08/2025
 ---
 
 # Send a message in Teams using Power Automate
@@ -47,7 +47,7 @@ The **Post as** and **Post in** options within the action control all the differ
 
 ## Post a message as the Flow bot in a Teams channel
 
-To send a message as the Flow bot in a Teams channel, select the **Post as** option as **Flow bot** and the **Post in** option as **Channel**. After selecting these options, two more dynamic inputs shoappear. Specify the team and channel where you want to send the message, and enter your message in the message field.
+To send a message as the Flow bot in a Teams channel, select the **Post as** option as **Flow bot** and the **Post in** option as **Channel**. After selecting these options, two more dynamic inputs should appear. Specify the team and channel where you want to send the message, and enter your message in the message field.
 
 :::image type="content" source="../media/post-a-message/flow-bot-channel-new-designer.png" alt-text="Screenshot showing Post a message in channel as the Flow bot":::
 
