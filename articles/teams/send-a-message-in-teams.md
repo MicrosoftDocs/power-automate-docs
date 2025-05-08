@@ -47,7 +47,7 @@ The **Post as** and **Post in** options within the action control all the differ
 
 ## Post a message as the Flow bot in a Teams channel
 
-To send a message as the Flow bot in a Teams channel, select the **Post as** option as **Flow bot** and the **Post in** option as **Channel**. After selecting these options, two more dynamic inputs should appear. Specify the team and channel where you want to send the message, and enter your message in the message field.
+To send a message as the Flow bot in a Teams channel, select the **Post as** option as **Flow bot** and the **Post in** option as **Channel**. After you select these options, two more dynamic inputs should appear. Specify the team and channel where you want to send the message, and enter your message in the message field.
 
 :::image type="content" source="../media/post-a-message/flow-bot-channel-new-designer.png" alt-text="Screenshot showing Post a message in channel as the Flow bot":::
 
@@ -91,7 +91,7 @@ To send a message as the user in a Teams channel, select the **Post as** option 
 
 ## Post a message as the user in an existing named group chat
 
-To send a message as the user in a Group chat, select the **Post as** option as **User** and the **Post in** option as **Group chat**. After you do, an another option that lets you select the Group chat to post in appears. Choose a group chat to post the message in and add your message in the message field.
+To send a message as the user in a Group chat, select the **Post as** option as **User** and the **Post in** option as **Group chat**. After you do, another option that lets you select the Group chat to post in appears. Choose a group chat to post the message in and add your message in the message field.
 
 :::image type="content" source="../media/post-a-message/user-group-chat-new-designer.png" alt-text="Screenshot showing Post a message in existing named group chat as the user":::
 
