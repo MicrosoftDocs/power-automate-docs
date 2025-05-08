@@ -4,15 +4,16 @@ description: Learn how to automate approval workflows that integrate with ShareP
 suite: flow
 author: kisubedi
 contributors:
+  - kewaiss
   - kisubedi
   - kartikraop
   - v-aangie
-ms.author: derahonuorah
+ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 04/21/2025
+ms.topic: how-to
+ms.date: 05/08/2025
 search.audienceType: 
   - flowmaker
   - enduser
@@ -215,11 +216,11 @@ Follow these steps to update actions for rejected requests:
 
 4. Select **Save** to save your work.
 
-   If you've followed along, your flow should resemble this screenshot:
+   If you followed along, your flow should resemble this screenshot:
 
    :::image type="content" source="./media/modern-approvals/completed-flow-new-designer.png" alt-text="Screenshot showing the completed flow in the new designer.":::
 
-   Now that we've created the flow, it's time to test it!
+   Now that you created the flow, it's time to test it!
 
 
 # [Classic designer](#tab/classic-designer)
@@ -233,11 +234,11 @@ Follow these steps to update actions for rejected requests:
 
 4. Select **Save** to save your work.
 
-   If you've followed along, your flow should resemble this screenshot:
+   If you followed along, your flow should resemble this screenshot:
 
    :::image type="content" source="./media/modern-approvals/completed-flow.png" alt-text="Screenshot showing the completed flow in the classic designer.":::
 
-   Now that we've created the flow, it's time to test it!
+   Now that you created the flow, it's time to test it!
 
 ---
 
@@ -256,13 +257,13 @@ To do this, use two flows, one to send an approval request, and the other to run
 
 ## Cancel an approval request
 
-Sometimes you might want to cancel an approval request that you've sent. Possibly you made a mistake in the request, or it’s no longer relevant. In either case, the person who sent the request can cancel it by following these steps:
+Sometimes you might want to cancel an approval request that you sent. Possibly you made a mistake in the request, or it’s no longer relevant. In either case, the person who sent the request can cancel it by following these steps:
 
 1. Select the approval
 1. Select **Cancel approval** in the side pane.
 
 > [!TIP]
-> You can always select the **History** tab to view the approval requests that you've canceled.
+> You can always select the **History** tab to view the approval requests that you canceled.
 
 > [!NOTE]
 > The cancel feature is supported on the **Create an approval (v2)** action.
@@ -273,7 +274,7 @@ You can send approvals requests to persons outside your organization. To do this
 
 When you assign a role to a guest, this gives the guest the permission required to participate in the approval process.
 
-Now that you've created and tested your flow, be sure to let others know how to use it.
+Now that you created and tested your flow, be sure to let others know how to use it.
 
 ## Related information
 
