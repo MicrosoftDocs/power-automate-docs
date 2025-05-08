@@ -8,8 +8,8 @@ contributors:
   - v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 04/30/2025
+ms.topic: get-started
+ms.date: 04/01/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 

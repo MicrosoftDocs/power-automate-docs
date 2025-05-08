@@ -4,7 +4,7 @@ description: Discover best practices and FAQs for hosted RPA solutions. Learn ab
 author: kenseongtan
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: best-practice
 ms.date: 03/10/2025
 ms.author: kenseongtan
 ms.reviewer: 

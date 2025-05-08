@@ -6,7 +6,7 @@ ms.author: angieandrews
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 08/12/2022
 search.audienceType: 
   - flowmaker
