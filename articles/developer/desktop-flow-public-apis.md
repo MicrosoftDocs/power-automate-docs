@@ -2,7 +2,7 @@
 title: Work with desktop flows using code
 description: Developer guide to integrate desktop flows capabilities within their applications.
 author: benabbon
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/19/2024
 ms.author: nabena
 ms.reviewer: angieandrews

@@ -4,7 +4,7 @@ description: This FAQ discusses copilot in cloud flows and the key consideration
 ms.date: 04/04/2025
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: conceptual
+ms.topic: faq
 author: kisubedi
 contributors:
   - radioblazer

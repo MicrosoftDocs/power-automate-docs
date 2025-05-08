@@ -4,7 +4,7 @@ description: Embed the Power Automate experiences into your website or app.
 author: v-aangie
 ms.service: power-automate
 ms.subservice: developer
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/10/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews

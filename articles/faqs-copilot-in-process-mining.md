@@ -1,10 +1,10 @@
-﻿---
+---
 title: FAQ for Copilot in Power Automate Process Mining
 description: This FAQ discusses Copilot in Process Mining and the key considerations for making use of this technology responsibly.
 ms.date: 04/01/2025
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: conceptual
+ms.topic: faq
 author: HeatherOrt
 ms.author: heortaol
 ms.reviewer: angieandrews

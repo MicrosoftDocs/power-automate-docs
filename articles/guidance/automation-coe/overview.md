@@ -2,7 +2,7 @@
 title: Automation adoption best practices overview  | Microsoft Docs
 description: Automation adoption best practices provide proven guidance for establishing and scaling an Automation Center of Excellence in your organization. 
 author: kathyos
-ms.topic: conceptual
+ms.topic: overview
 ms.date: 10/6/2022
 ms.service: power-automate
 ms.subservice: guidance

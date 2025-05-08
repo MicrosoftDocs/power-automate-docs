@@ -14,7 +14,7 @@ ms.author: jamiller
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
-ms.topic: conceptual
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/12/2023
