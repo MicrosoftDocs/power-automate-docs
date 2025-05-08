@@ -1,5 +1,5 @@
 1. Select **Add an action** to add the **Condition** action.
-1. Select the **Responses Approval response** token from the **Approvals - Start and wait for an approval** action and set it equal to *Approve* in the Parameters tab of the **Condition** action.
+1. Select the **Responses Approval response** token from the **Approvals - Start and wait for an approval** action and set it equal to **Approve** in the Parameters tab of the **Condition** action.
 1. Select **Add an action** on the **If yes** branch of the condition.
 
     :::image type="content" source="media/modern-approvals/add-action-after-condition.png" alt-text="Screenshot showing how to add a new action after the condition in classic designer.":::
