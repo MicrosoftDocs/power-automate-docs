@@ -4,8 +4,8 @@ description: See how to manage variables and the variables pane
 author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 05/06/2025
+ms.topic: how-to
+ms.date: 04/11/2025
 ms.author: dbekirop
 ms.reviewer: matp
 contributors:

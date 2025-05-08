@@ -4,8 +4,8 @@ description: See how to run desktop flows via URL or desktop shortcuts.
 author: HeatherOrt
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 05/02/2025
+ms.topic: how-to
+ms.date: 11/28/2023
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors: yiannismavridis

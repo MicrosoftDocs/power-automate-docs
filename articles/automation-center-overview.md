@@ -1,7 +1,7 @@
 ---
 title: Explore Power Automate's automation center 
 description: Explore the comprehensive monitoring and troubleshooting experiences offered by Power Automate's Automation Center, a hub for managing automation activity.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/14/2025
 ms.author: quseleba
 ms.reviewer: dmartens
@@ -105,6 +105,7 @@ This tab provides metrics to monitor the health status of work queue items, incl
 | Visual | Description |
 | --- | --- |
 | **Work queue distribution**| Shows the number of work queues with SLA-specific configuration, such as "default item expiration" applied. |
+| **Work queue SLA status (preview)**| Shows the number of work queues items for each SLA status, such as "In", "At risk", "Out", "Not Set". |
 |**Work queue volumes by status** | Shows the number of work queue items categorized by their processing status, with a breakdown of exception types (available when hovering over the exception category). |
 | **Work queue throughput**| Shows the number of items successfully processed in a work queue within a specific time unit, along with their error rate and trend. |
 | **Work queue item error distribution** | Shows the distribution of work queue items per error state, such as "Business exception," "IT exception," and "Processing timeout". |
