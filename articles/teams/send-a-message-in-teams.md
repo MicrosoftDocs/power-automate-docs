@@ -12,8 +12,8 @@ ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
 ms.date: 05/08/2025
+ms.topic: how-to
 ---
 
 # Send a message in Teams using Power Automate

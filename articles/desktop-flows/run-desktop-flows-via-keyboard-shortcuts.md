@@ -4,7 +4,7 @@ description: See how to run desktop flows via keyboard shortcuts.
 author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/24/2023
 ms.author: pefelesk
 ms.reviewer: ndoelman

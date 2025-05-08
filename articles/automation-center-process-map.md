@@ -1,7 +1,7 @@
 ---
 title: Improve automation monitoring with process map (preview)
 description: Enhance your automation's observability and troubleshooting efficiency story with the Automation Center's new process map
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/17/2025
 ms.author: appapaio
 ms.reviewer: dmartens

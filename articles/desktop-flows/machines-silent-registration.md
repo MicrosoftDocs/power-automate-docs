@@ -4,7 +4,7 @@ description: This article describes how to use a mass deployment tool that allow
 author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/07/2023
 ms.author: quseleba
 ms.reviewer: quseleba

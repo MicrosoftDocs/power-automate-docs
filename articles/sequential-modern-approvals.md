@@ -8,7 +8,7 @@ contributors:
   - hamenon-MS
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/21/2024
 ms.author: derahonuorah
 ms.reviewer: angieandrews

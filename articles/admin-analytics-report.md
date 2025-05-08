@@ -10,7 +10,7 @@ tags: ''
 
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: concept-article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 09/14/2020
