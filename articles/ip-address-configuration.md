@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 05/02/2025
+ms.date: 05/08/2025
 ms.author: cgarty
 ms.reviewer: angieandrews
 ---
@@ -19,6 +19,14 @@ This article describes the required configuration for:
 
 - Power Automate to connect to services in your network by inbound firewall configuration, and
 - Your makers and users to access Power Automate to build and use experiences by outbound firewall configuration.
+
+For configuration details in this article, use the links in the following table.
+
+|For details in this category  |Select from these links |
+|---------|---------|
+|[Allow flows to call your services](#allow-flows-to-call-your-services)     | </li><li>[Allow connector calls to your services](#allow-connector-calls-to-your-services)<br/></li><li>[Allowlist 'HTTP' and 'HTTP + Swagger' calls to your services](#allowlist-http-and-http--swagger-calls-to-your-services)        |
+|[Allow users on your network to use Power Automate](#allow-users-on-your-network-to-use-power-automate)     | </li><li>[Use the Power Automate web portal](#use-the-power-automate-web-portal)<br/></li><li>[Allow users on your network to use Power Automate mobile app](#allow-users-on-your-network-to-use-power-automate-mobile-app)<br/></li><li>[Allow users on your network to use "When an HTTP request is received" trigger](#allow-users-on-your-network-to-use-when-an-http-request-is-received-trigger)<br/></li><li>[Allow machines & users on your network to access Power Automate desktop services](#allow-machines--users-on-your-network-to-access-power-automate-desktop-services)<br/></li><li>[Global endpoints for desktop flows runtime](#global-endpoints-for-desktop-flows-runtime)<br/></li><li>[Global endpoints for Power Automate for desktop MSI installer](#global-endpoints-for-power-automate-for-desktop-msi-installer)<br/></li><li>[Public endpoints for desktop flows runtime](#public-endpoints-for-desktop-flows-runtime)<br/></li><li>[US Government endpoints for desktop flows runtime](#us-government-endpoints-for-desktop-flows-runtime)<br/></li><li>[21Vianet endpoints (China) for desktop flows runtime](#21vianet-endpoints-china-for-desktop-flows-runtime)       |
+|[Other IP address articles and FAQ](#other-ip-address-articles)     | </li><li>[Approval email delivery](#approval-email-delivery)<br/></li><li>[Azure SQL database](#azure-sql-database)</li><li>[There are lots of details here&mdash;what's the high level recommendation for IP address configuration?](#there-are-lots-of-details-herewhats-the-high-level-recommendation-for-ip-address-configuration)<br/></li><li>[If I'm using Azure firewall, do I need to keep track of individual IP addresses?](#if-im-using-azure-firewall-do-i-need-to-keep-track-of-individual-ip-addresses)<br/></li><li>[If I'm using on-premises firewall, do I need to keep track of individual IP addresses?](#if-im-using-on-premises-firewall-do-i-need-to-keep-track-of-individual-ip-addresses)        |
 
 ## Allow flows to call your services
 
@@ -69,11 +77,11 @@ The following table lists the services to which Power Automate connects. Ensure 
 |login.partner.microsoftonline.cn|https|Access to the Power Automate for desktop cloud discovery.|
 |s2s.config.skype.com<br>use.config.skype.com<br>config.edge.skype.com|https|Access to preview features managed through flighting and configuration endpoints.|
 |s2s.config.ecs.infra.gov.teams.microsoft.us|https|Access to preview features managed through flighting and configuration endpoints for US government cloud.|
-| \*.api.powerplatform.com <br> \*.api.powerplatformusercontent.com <br> *.api.bap.microsoft.com | https | Access to several Power Platform APIs. |
-| *.api.gov.powerplatform.microsoft.us <br> *.gov.api.bap.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
-| *.api.high.powerplatform.microsoft.us <br> *.high.api.bap.microsoft.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
-| *.api.appsplatform.us <br> *.api.bap.appsplatform.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
-| *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
+| \*.api.powerplatform.com <br> \*.api.powerplatformusercontent.com <br> *.api.bap.microsoft.com <br> *.logic.azure.com | https | Access to several Power Platform APIs. |
+| *.api.gov.powerplatform.microsoft.us <br> *.gov.api.bap.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
+| *.api.high.powerplatform.microsoft.us <br> *.high.api.bap.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
+| *.api.appsplatform.us <br> *.api.bap.appsplatform.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
+| *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn <br> *.logic.azure.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
 
 ### Allow users on your network to use Power Automate mobile app
 
@@ -84,6 +92,18 @@ The following table lists additional endpoints you need when using Power Automat
 | *.events.data.microsoft.com   | https   | Send telemetry for all production regions and supported US sovereign clouds from the mobile app. |
 | collector.azure.cn   | https  |  Send telemetry for the Mooncake region from the mobile app. |
 | officeapps.live.com   | https   | Access to authentication and authorization endpoints for the mobile app.
+
+### Allow users on your network to use "When an HTTP request is received" trigger
+
+We recommend allowlisting the list of domains in the [Use the Power Automate web portal](#use-the-power-automate-web-portal) section to ensure your makers and admins can take advantage of the Power Automate services. For customers looking to narrowly allow network traffic to support the `When an HTTP request is received` trigger, allowlist the following domains in your firewall's outbound configuration.
+
+| Domains | Protocols | Uses |
+| --------|  ---------| ---- |
+| \*.api.powerplatform.com <br> *.logic.azure.com | https | Access to several Power Platform APIs. |
+| *.api.gov.powerplatform.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
+| *.api.high.powerplatform.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
+| *.api.appsplatform.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
+| *.api.powerplatform.partner.microsoftonline.cn <br> *.logic.azure.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
 
 ### Allow machines & users on your network to access Power Automate desktop services
 
