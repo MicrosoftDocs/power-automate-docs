@@ -5,7 +5,7 @@ ms.custom: ""
 ms.date: 04/19/2021
 ms.service: power-automate
 ms.subservice: developer
-ms.topic: "article"
+ms.topic: how-to
 ms.assetid: 67d8cf80-9f77-4804-97a1-cf9f61417e83
 author: mattp123
 ms.author: matp

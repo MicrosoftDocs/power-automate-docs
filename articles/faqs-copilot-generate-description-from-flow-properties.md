@@ -4,7 +4,7 @@ description: This FAQ discusses the generating a flow description using Copilot 
 ms.date: 04/01/2025
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: Cochamos
 ms.author: cochamos
 ms.reviewer: matp

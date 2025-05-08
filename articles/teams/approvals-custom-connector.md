@@ -13,7 +13,7 @@ ms.author: derahonuorah
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: teams
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/13/2021
 search.audienceType: 
   - flowmaker

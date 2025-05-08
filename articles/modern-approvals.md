@@ -4,15 +4,16 @@ description: Learn how to automate approval workflows that integrate with ShareP
 suite: flow
 author: kisubedi
 contributors:
+  - kewaiss
   - kisubedi
   - kartikraop
   - v-aangie
-ms.author: derahonuorah
+ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 04/21/2025
+ms.topic: how-to
+ms.date: 05/08/2025
 search.audienceType: 
   - flowmaker
   - enduser

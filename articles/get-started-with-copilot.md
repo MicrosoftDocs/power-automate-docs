@@ -5,7 +5,7 @@ ms.date: 04/28/2025
 ms.custom: 
   - bap-template
   - copilot-learning-hub
-ms.topic: conceptual
+ms.topic: get-started
 author: kisubedi
 contributors:
   - radioblazer

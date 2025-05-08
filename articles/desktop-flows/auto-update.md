@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.date: 02/19/2025
 ms.author: guco
-ms.topic: conceptual
+ms.topic: article
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

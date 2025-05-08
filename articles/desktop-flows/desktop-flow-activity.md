@@ -4,7 +4,7 @@ description: Learn to use the Desktop flow activity in the Power Automate portal
 author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 08/29/2023
 ms.author: quseleba
 ms.reviewer: matp
