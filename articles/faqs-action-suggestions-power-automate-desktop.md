@@ -4,7 +4,7 @@ description: This FAQ discusses suggested actions in Power Automate for desktop 
 ms.date: 04/01/2025
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: Cochamos
 ms.author: cochamos
 ms.reviewer: angieandrews

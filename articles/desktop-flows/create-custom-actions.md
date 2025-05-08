@@ -4,7 +4,7 @@ description: Learn about how to create custom actions in Power Automate for desk
 author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/14/2024
 ms.author: dipapa
 ms.reviewer: tapanm-msft

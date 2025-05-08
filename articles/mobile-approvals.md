@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 04/15/2025
 ms.author: dbekirop
 ms.reviewer: angieandrews

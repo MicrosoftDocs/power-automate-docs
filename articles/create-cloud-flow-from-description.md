@@ -12,7 +12,7 @@ ms.author: ralinga
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/08/2024
 search.audienceType: 
   - flowmaker

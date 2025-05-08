@@ -7,7 +7,7 @@ ms.suite:
 ms.tgt_pltfrm: 
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: best-practice
 applies_to: 
   - Business Process Flows
 helpviewer_keywords: 
