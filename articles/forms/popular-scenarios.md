@@ -3,7 +3,7 @@ title: Common ways to use a form in a flow
 description: Learn some of the most popular ways to use a form in an automated flow.
 suite: flow
 author: kisubedi
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/01/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews

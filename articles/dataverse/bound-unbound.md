@@ -5,7 +5,7 @@ suite: flow
 author: HeatherOrt
 ms.author: cgarty
 ms.reviewer: angieandrews
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/09/2024
 search.audienceType: 
   - maker

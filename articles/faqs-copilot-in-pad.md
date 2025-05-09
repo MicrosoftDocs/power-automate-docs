@@ -4,7 +4,7 @@ description: This FAQ discusses Copilot in Power Automate desktop and the key co
 ms.date: 04/01/2025
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: conceptual
+ms.topic: faq
 author: cochamos
 ms.author: cochamos
 ms.reviewer: dmartens

@@ -5,7 +5,7 @@ author: mattp123
 
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual 
+ms.topic: get-started
 ms.date: 12/01/2022
 ms.collection: get-started
 ms.author: matp
