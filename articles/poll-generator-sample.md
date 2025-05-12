@@ -7,7 +7,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 01/01/2020
-ms.author: derahonuorah, dbekirop
+ms.author: derahonuorah
 search.audienceType: 
   - flowmaker
   - enduser
