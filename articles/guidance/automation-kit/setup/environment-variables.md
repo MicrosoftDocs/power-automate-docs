@@ -40,7 +40,7 @@ The Azure Key Vault secrets are using the environment variable type. These envir
 
 To get the format, follow these steps:
 
-1. Sign in to [Azure](https://portal.azure.com/home).
+1. Sign in to [Azure](https://portal.azure.com/#home).
 
 1. Under **Security**, open your Key Vault with the secrets for your app registration.
 

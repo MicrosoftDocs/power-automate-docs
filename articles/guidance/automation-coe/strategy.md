@@ -43,7 +43,7 @@ To get started, we recommend that you [learn about the HEAT techniques](heat.md)
 
 ## Additional strategy resources
 
-- Building an RPA and Automation Center of Excellence (video): <https://aka.ms/autocoestrategy>
+- Building an RPA and Automation Center of Excellence (video): <https://aka.ms/autocoeblueprintvideo>
 - Customer presentations:
   - Coca-Cola HQ Webinar: <https://aka.ms/cocacolaautomationplatform>
   - Coca-Cola United: <https://aka.ms/cocacolaunitedrpa>
