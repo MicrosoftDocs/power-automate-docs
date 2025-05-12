@@ -1,7 +1,7 @@
 ---
 title: Use a shared Outlook mailbox in email automations
 description: Use a shared Outlook mailbox in email automations.
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to

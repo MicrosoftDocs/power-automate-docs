@@ -1,7 +1,7 @@
 ---
 title: Add OAuth authentication for HTTP request triggers
 description: Learn about authentication parameters for HTTP request triggers.
-author: HeatherOrt
+author: kewaiss
 contributors:
   - rakrish84
   - v-aangie

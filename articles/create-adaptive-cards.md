@@ -3,7 +3,7 @@ title: Create flows that post adaptive cards to Microsoft Teams
 description: Learn how to create flows that post richly formatted content with adaptive cards to Microsoft Teams.
 services: ''
 suite: flow
-author: HeatherOrt
+author: kewaiss
 contributors:
   - kewaiss
   - kartikraop

@@ -13,7 +13,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual
 ms.date: 06/14/2023
-ms.author: kapolepa
+ms.author: lali
 ms.reviewer: angieandrews
 search.audienceType:
   - flowmaker

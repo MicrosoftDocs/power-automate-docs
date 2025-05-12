@@ -1,7 +1,7 @@
 ---
 title: Access actions reference
 description: Discover all available Access actions in Power Automate for desktop. Learn how to launch, read, run queries, and close Access databases.
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference

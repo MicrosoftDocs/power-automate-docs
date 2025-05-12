@@ -6,7 +6,7 @@ ms.topic: conceptual
 ms.date: 10/6/2022
 ms.service: power-automate
 ms.subservice: guidance
-ms.author: kathyos
+ms.author: mapichle
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin

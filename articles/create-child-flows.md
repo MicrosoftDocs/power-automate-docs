@@ -1,7 +1,7 @@
 ---
 title: Create child Flows
 description: Flows can now call other flows and pass parameters to them.
-author: HeatherOrt
+author: kewaiss
 conttributors:
   - ChrisGarty
   - v-aangie

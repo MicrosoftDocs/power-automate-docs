@@ -5,7 +5,7 @@ services: ''
 suite: flow
 documentationcenter: na
 author: radioblazer
-ms.author: Matow
+ms.author: matow
 ms.reviewer: angieandrews
 editor: ''
 tags: ''

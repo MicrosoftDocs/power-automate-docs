@@ -4,7 +4,7 @@ description: Learn how to create a custom connector to use in an approval flow.
 services: ''
 suite: flow
 documentationcenter: na
-author: HeatherOrt
+author: kewaiss
 contributors:
   - natalie-pienkowska
   - kartikraop

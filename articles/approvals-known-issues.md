@@ -2,7 +2,7 @@
 title: Known issues and limitations
 description: Known issues and limitations when working with approvals.
 suite: flow
-author: HeatherOrt 
+author: kewaiss 
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: conceptual

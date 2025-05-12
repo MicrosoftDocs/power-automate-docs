@@ -1,7 +1,7 @@
 ---
 title: Run desktop flows concurrently
 description: See how to run desktop flows concurrently on machines running Windows Server.
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: conceptual
