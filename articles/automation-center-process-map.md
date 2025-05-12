@@ -84,8 +84,6 @@ To rename or delete a process in Power Automate, follow these steps:
 |  :::image type="icon" source="media/automation-center/legend-stack.png":::  | Represents the total number of times various parent flows ran this flow. Each flow instance is triggered by a different parent flow run, instead of being repeatedly called within a single parent run loop |
 | :::image type="icon" source="media/automation-center/legend-conditional.png":::  | Represents a conditional or optional flow. This means that the flow connected by the dotted line isn't always executed but depends on certain conditions being met |
 |  :::image type="icon" source="media/automation-center/legend-missed.png":::  | Represents a missed or skipped flow based on conditional logic or an upstream error|
-|  :::image type="icon" source="media/automation-center/legend-unattended.png":::  | Represents an unattended desktop flow run|
-|  :::image type="icon" source="media/automation-center/legend-attended.png":::  | Represents an attended desktop flow run |
 
 ## Known issues and limitations
 
