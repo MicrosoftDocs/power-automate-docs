@@ -284,11 +284,11 @@ You might notice that some functionalities that were in the classic designer are
 - Some hybrid triggers:
   - When a flow is run from business process flow (Dataverse)
   - Microsoft 365 Compliance Connector
-- A comment
+- A comment. We recommend that you use Action _notes_ until the support is available.
 - Power Pages connector
-- Power Apps v1 trigger
+- Power Apps v1 trigger. We recommend that you use V2 trigger instead.
 - Perform a changeset request action (Dataverse)
-- A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
+- A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference as a proper ALM practice instead.
 
 As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is becoming the primary interface.
 
@@ -297,7 +297,7 @@ If you prefer to access features not yet available in the new designer, or encou
 :::image type="content" source="media/flows-designer/designer-toggle.png" alt-text="Screenshot of the 'New designer' toggle.":::
 
 > [!NOTE]
-> The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.
+> The new cloud flows designer isn't yet available in integration surfaces such as Solution Explorer, Power Apps, Teams, and others. 
 
 If a flow is saved too soon on load, it might be saved without advanced parameters if those parameters weren't fetched yet. As a workaround, you can avoid saving a flow too soon on load. Alternatively, use the classic designer.
 
