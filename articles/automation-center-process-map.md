@@ -1,8 +1,8 @@
 ---
-title: Improve automation monitoring with process map (preview)
+title: Improve automation monitoring with process map
 description: Enhance your automation's observability and troubleshooting efficiency story with the Automation Center's new process map
 ms.topic: how-to
-ms.date: 03/17/2025
+ms.date: 05/12/2025
 ms.author: appapaio
 ms.reviewer: dmartens
 contributors:
@@ -19,25 +19,20 @@ ms.custom:
   - ai-seo-date:03/15/2025
 ---
 
-# Improve automation monitoring with process map (preview)
+# Improve automation monitoring with process map
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-Building on the robust monitoring and observability features of the Automation Center, we're excited to introduce the process map (preview). This feature enhances transparency by showing process-centric flow dependencies and offers an intuitive, streamlined experience for monitoring and troubleshooting end-to-end automations.
+Building on the robust monitoring and observability features of the Automation Center, we're excited to introduce the process map. This feature enhances transparency by showing process-centric flow dependencies and offers an intuitive, streamlined experience for monitoring and troubleshooting end-to-end automations.
 
 :::image type="content" source="media/automation-center/process-map.png" alt-text="Screenshot of the process map tab in the automation center." lightbox="media/automation-center/process-map.png":::
-
-> [!IMPORTANT]
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - For more information, go to our [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520).
-> - This feature is rolling out and might not be available in your area yet. To try it out today, you can either use an existing preview environment or create a new one. Learn more about how to create a preview environment in [Early release cycle environments](/power-platform/admin/early-release).
-> - Process map is considered a premium capability. Any flows that are part of a process map are considered premium flows and require an appropriate license. Learn more in [Power Automate licensing](/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-process%2Cconnector-types).
 
 ## Navigate the process map
 
 The process map makes troubleshooting and monitoring in Power Automate more efficient and transparent. It shows the main orchestrating flow and all its child flows invoked during a process run. When a process map is created, it considers structural details like conditions, so it can show flows that are part of the process but didn't run because of certain conditional logic or errors. This helps you understand how a problem in one part of the process can affect other parts and take the right countermeasures to fix issues.
 
 When you select a flow box on the map, its side panel opens, providing detailed contextual information on run, connection, and design-time properties. This panel lets you efficiently scan through the run history and better understand the root cause and impact of errors without navigating to each run from the flow details page or the Automation Center. This efficiency is especially helpful when troubleshooting flows called in a loop by their parent, potentially producing tens or even hundreds of runs per process run.
+
+> [!IMPORTANT]
+> Process map is considered a premium capability. Any flows that are part of a process map are considered premium flows and require an appropriate license. Learn more in [Power Automate licensing](/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-process%2Cconnector-types).
 
 ### Runs vs overview
 
@@ -55,9 +50,9 @@ To create or view a process map in Power Automate, you have two options:
 2. Hover over a top-level flow run and select the process map icon next to the name to generate the map.
 3. If this is your first time using the process map icon, you're prompted to provide a process name and then select **Create**.
 
-### Option 2: Use the process map (preview) tab
+### Option 2: Use the process map tab
 
-1. Go to the Automation center and select the **Process map (preview)** tab.
+1. Go to the Automation center and select the **Process map** tab.
 2. On the map, you see a drop-down box in the upper left corner that lists the processes you have access to.
 3. Select the three dots (ellipsis) in the drop-down menu and select **Create a new process map**.
 
@@ -70,7 +65,7 @@ Once the process map is generated in the backend, the process name appears next 
 
 To rename or delete a process in Power Automate, follow these steps:
 
-1. Go to the Automation center and select the **Process map (preview)** tab.
+1. Go to the Automation center and select the **Process map** tab.
 1. Once on the map, you see a drop-down box in the upper left corner that lists the processes you have access to.
 1. To view the list of processes, select the three dots (ellipsis) next to the process name in the drop-down menu.
 1. From here, you can rename or delete your process.
@@ -92,16 +87,12 @@ To rename or delete a process in Power Automate, follow these steps:
 |  :::image type="icon" source="media/automation-center/legend-unattended.png":::  | Represents an unattended desktop flow run|
 |  :::image type="icon" source="media/automation-center/legend-attended.png":::  | Represents an attended desktop flow run |
 
-> [!NOTE]
-> Preview features in the Automation Center, including this process map (preview), can be disabled through the Power Platform admin center. The toggle for this setting is located under the **Power Automate Automation center** section. However, once the process map (preview) feature becomes generally available, it will be a permanent part of the Automation center and can't be turned off anymore.
-
 ## Known issues and limitations
 
 - Creating and viewing process maps requires users to have the Environment Maker or similar roles with sufficient privileges on the business process table.  
 - Runs for co-owned or shared flows aren't supported yet, which means users don't see runs for flows shared with them.  
 - Users with broader access (like admins or CoE teams) might see 'Unknown flow' as the flow name. This happens if the flow isn't explicitly shared with them or it's deleted.  
 - Process maps for top-level desktop-flows aren't supported yet.
-- Child desktop flows aren't displayed yet on the map.  
 - Parallelization features (for example, cloud flow 'Apply each' with concurrency or 'RunAfter' customizations) aren't visually represented. Such child runs appear in the order they were defined.  
 - Dynamic flow selection using a formula (instead of the standard picker) isn't supported. Such child flows are ignored.  
 - For any given run, only the first 100 child flows are loaded. For example, if flow A triggers 150 instances of flow B, only the first 100 are processed.  
