@@ -2,8 +2,9 @@
 title: Using loops
 description: Using loops
 author: HeatherOrt
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/22/2020
 ms.author: nimoutzo
 ms.reviewer: matp

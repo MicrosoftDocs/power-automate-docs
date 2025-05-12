@@ -2,6 +2,7 @@
 title: Word actions reference
 description: See all the available Word actions.
 author: NikosMoutzourakis
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 01/19/2024

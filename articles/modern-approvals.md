@@ -9,8 +9,9 @@ contributors:
   - v-aangie
 ms.author: derahonuorah
 ms.reviewer: angieandrews
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/09/2024
 search.audienceType: 
   - flowmaker

@@ -2,13 +2,14 @@
 title: Process capacity
 description: Learn how to allocate process capacity in Power Automate to machines or cloud flows for efficient unattended RPA and premium action execution.
 author: cvassallo
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.date: 04/23/2025
 ms.author: cvassallo
 ms.reviewer: angieandrews
 contributors:
   - DanaMartens
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

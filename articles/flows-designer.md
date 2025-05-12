@@ -8,9 +8,10 @@ contributors:
  - kisubedi
  - v-aangie
  - EllenWehrle
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 04/24/2025
+ms.date: 04/01/2025
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -108,6 +109,18 @@ Select **Pin action** to pin the action card to the top of the action configurat
 
 ## Action configuration pane
 
+When you select the plus (+) icon on the canvas, the _Add action_ view for adding actions to your flow appears (for example, **Send email**, **Get Dataverse rows**, **Initialize variable**, and more).
+
+:::image type="content" source="media/flows-designer/add-action.png" alt-text="Screenshot of the 'Add an action' pane.":::
+
+This view by default is organized into four (4) sections:
+
+- **Favorites**: When you favorite a connector or an action using the star icon, these connectors show in the **Favorites** section for quick retrieval. The star icon appears when you hover over it in the **Add an action** pane.
+- **AI Capabilities**: All AI capabilities are uplevelled in this standalone section.
+- **Built-in tools**: These are the building blocks to your flow if you want to store value in a variable, insert a loop, and more.
+- **By connector**: Below the three sections is a list of all connectors. At the top of the list are the top used 20 connectors.
+
+When you select an action from the **Add an action** pane, it's time to configure it. The same pane view refreshes to let you customize the action. This pane is called the *action configuration pane*.
 Use the action configuration pane to customize parameters, settings, and code for the selected card in your flow.
 
 ### Parameters
@@ -176,13 +189,19 @@ The canvas contains AI-powered designer drop zones to help you easily drag cloud
 
 :::image type="content" source="media/flows-designer/drop-zone.png" alt-text="Screenshot of an action card and a drop-zone.":::
 
-### Zoom buttons
+### Change how your flow displays
 
-Depending on the size and complexity of your flow, you might want to adjust its size on the canvas as you're building it. Use the zoom buttons to zoom in, zoom out, fit to screen, and toggle a *minimap*. The buttons appear when the Action configuration pane is closed.
+Depending on the size and complexity of your cloud flow, you might want to adjust how it displays to make it easier to work with. The buttons appear at the bottom-left corner of the canvas when the Action configuration pane is closed.
 
-The bottom button is for the minimap. Use it to focus on a specific section of a large flow.
+:::image type="content" source="media/flows-designer/tools-numbers.png" alt-text="Screenshot highlights the buttons that allow you to adjust how your flow displays on the canvas.":::
 
-:::image type="content" source="media/flows-designer/zoom-controls.png" alt-text="Screenshot highlights the four zoom buttons.":::
+Legend:
+1. **Expand/Collapse**: Expand or collapse all action groups. For example, if an action has multiple conditions, select this icon to show the condition details.
+1. **Zoom in**: Increase the size of the flow on the canvas.
+1. **Zoom out**: Decrease the size of the flow on the canvas.
+1. **Fit view**: Resize the view to fit the entire flow on the canvas.
+1. **Minimap**: Navigate to a specific section of a large flow.
+1. **Search**: Look for an operation in your flow.
 
 ### Expression editor and token picker
 

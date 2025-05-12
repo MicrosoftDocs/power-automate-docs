@@ -3,6 +3,7 @@ title: Click all the elements in a list of links
 description: Click all the elements in a list of links
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/04/2021

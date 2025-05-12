@@ -6,8 +6,9 @@ contributors:
   - sbasi19
   - kewaiss
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/08/2024
 ms.author: kewaiss
 ms.reviewer: angieandrews

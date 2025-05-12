@@ -4,8 +4,9 @@ description: Answers to frequently asked questions regarding billing and meterin
 services: ''
 author: kenseongtan
 suite: flow
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/30/2022
 ms.author: kenseongtan
 ms.reviewer: angieandrews

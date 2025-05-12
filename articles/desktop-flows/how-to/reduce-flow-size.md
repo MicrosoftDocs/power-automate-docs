@@ -2,6 +2,7 @@
 title: Reduce the size of desktop flows in a solution
 description: Learn how to reduce the size of desktop flows in a solution by removing UI element screenshots.
 author: PetrosFeleskouras
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 07/16/2024

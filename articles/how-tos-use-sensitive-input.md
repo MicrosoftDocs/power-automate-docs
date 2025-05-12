@@ -3,8 +3,9 @@ title: Manage sensitive input like passwords in Power Automate
 description: Learn how to manage sensitive input like passwords in Power Automate.
 suite: flow
 author: HeatherOrt
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/13/2022
 ms.author: cgarty
 ms.reviewer: angieandrews

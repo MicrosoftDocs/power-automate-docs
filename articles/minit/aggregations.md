@@ -6,8 +6,9 @@ contributors:
   - janPidych
   - rosikm
   - v-aangie
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/10/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews

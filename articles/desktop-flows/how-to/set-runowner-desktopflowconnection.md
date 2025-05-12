@@ -2,10 +2,11 @@
 title: Set a run owner on a desktop flow connection (preview)
 description: Learn how to set a run owner on a desktop flow connection using a service principal identity in Power Automate (preview).
 author: iriverain
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/18/2025
 ms.author: iriverain
 ms.reviewer: iriverain
+ms.service: power-automate
 ms.subservice: desktop-flow
 search.audienceType:
   - flowmaker

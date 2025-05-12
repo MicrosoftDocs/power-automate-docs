@@ -2,8 +2,9 @@
 title: Automate webpages | Microsoft Docs
 description: Learn how to launch browsers, automate webpages, and extract data from the Web.
 author: NikosMoutzourakis
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/23/2024
 ms.author: nimoutzo
 ms.reviewer: matp

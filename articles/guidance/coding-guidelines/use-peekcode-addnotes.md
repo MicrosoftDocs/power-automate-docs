@@ -7,6 +7,7 @@ contributors:
   - manuelap-msft
   - kisubedi
   - v-aangie
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 03/13/2025

@@ -2,8 +2,9 @@
 title: Power Automate console
 description: See the main functionality of the Power Automate console.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/11/2025
 ms.author: iomavrid
 ms.reviewer: matp

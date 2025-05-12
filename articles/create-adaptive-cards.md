@@ -8,8 +8,9 @@ contributors:
   - kewaiss
   - kartikraop
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/13/2023
 ms.author: ralinga
 ms.reviewer: angieandrews

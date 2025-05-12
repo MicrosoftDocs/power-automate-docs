@@ -3,8 +3,9 @@ title: Build a custom selector
 description: Build a custom selector
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 06/02/2021
 ms.author: matp
 ms.reviewer: matp

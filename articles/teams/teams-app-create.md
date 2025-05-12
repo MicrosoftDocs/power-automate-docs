@@ -7,8 +7,9 @@ author: v-aangie
 contributors:
   - kewaiss
   - v-aangie
+ms.service: power-automate
 ms.subservice: teams
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/09/2024
 ms.author: kewaiss
 ms.reviewer: angieandrews

@@ -9,8 +9,9 @@ Contributors:
   - ChrisGarty
   - Radioblazer
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: article
 suite: flow
 ms.date: 02/11/2025
 search.audienceType: 

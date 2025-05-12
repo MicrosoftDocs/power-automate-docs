@@ -7,8 +7,9 @@ contributors:
   - Jopanchal
   - schabungbam
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 02/10/2023
 ms.author: matow
 ms.reviewer: angieandrews

@@ -3,6 +3,7 @@ title: Manage cloud flow behavior with Flow Checker
 description: Learn to use Flow Checker in Power Automate to detect errors, receive warnings, and get suggestions for optimizing your cloud flows.
 #customer intent: As a Power Automate user, I want to use Flow Checker so that I can detect and fix errors in my cloud flows.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 02/18/2025

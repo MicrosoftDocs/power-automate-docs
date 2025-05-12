@@ -4,7 +4,7 @@ description: Responsible AI FAQs discusses AI technology in Power Automate and t
 ms.date: 04/01/2025
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: kisubedi
 ms.author: kisubedi
 ms.reviewer: angieandrews

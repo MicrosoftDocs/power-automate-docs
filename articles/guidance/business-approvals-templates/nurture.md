@@ -4,7 +4,7 @@ description: Discussion Nurturing and educating the user community and the techn
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
-ms.topic: article
+ms.topic: concept-article
 ms.date: 11/15/2023
 ms.author: grarchib
 ms.reviewer: angieandrews

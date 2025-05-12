@@ -2,9 +2,9 @@
 title: Attended and unattended scenarios for process automation | Microsoft Docs
 description: With any of the automation methods you use, the automation is going to be either attended or unattended. This article explains the scenarios for each type.
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: guidance
 ms.date: 01/28/2025
 ms.author: tayoshi

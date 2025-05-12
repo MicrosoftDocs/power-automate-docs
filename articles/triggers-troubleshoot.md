@@ -7,8 +7,9 @@ contributors:
   - kisubedi
   - kenseongtan
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.date: 02/06/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews

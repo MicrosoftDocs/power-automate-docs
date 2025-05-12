@@ -4,6 +4,7 @@ description: Building custom actions in Power Automate for desktop
 author: jpad5
 ms.topic: how-to
 ms.date: 11/20/2023
+ms.service: power-automate
 ms.subservice: guidance
 ms.author: jaypadimiti
 ms.reviewer: angieandrews

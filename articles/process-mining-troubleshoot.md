@@ -6,8 +6,9 @@ contributors:
   - rosikm
   - donums
   - v-aangie  
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.date: 02/06/2025
 ms.author: derahonuorah
 ms.reviewer: angieandrews

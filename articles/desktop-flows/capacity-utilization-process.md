@@ -2,13 +2,14 @@
 title: Process capacity utilization
 description: Understand how Process and Unattended RPA capacity is utilized in your environment and learn to manage allocations effectively.
 author: cvassallo
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.date: 04/23/2025
 ms.author: cvassallo
 ms.reviewer: angieandrews
 contributors:
   - DanaMartens
-ms.topic: conceptual
+ms.topic: article
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

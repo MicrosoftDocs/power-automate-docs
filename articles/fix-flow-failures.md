@@ -7,8 +7,9 @@ contributors:
   - HeaterOrt
   - DBEKI
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.date: 04/16/2025
 ms.author: heortaol
 ms.reviewer: angieandrews

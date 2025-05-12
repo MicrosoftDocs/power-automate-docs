@@ -3,8 +3,9 @@ title: Cancel or resubmit flow runs in bulk in Power Automate
 description: Learn how to resubmit and cancel failed or successful flow runs in Power Automate.
 suite: flow
 author: DBEKI
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/19/2025
 ms.author: dbekirop
 ms.reviewer: angieandrews

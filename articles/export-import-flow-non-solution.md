@@ -6,8 +6,9 @@ author: HeatherOrt
 contributors:
   - jamiemwork
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/29/2024
 ms.author: cgarty
 ms.reviewer: angieandrews
