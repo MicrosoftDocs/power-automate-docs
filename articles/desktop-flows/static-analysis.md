@@ -23,10 +23,32 @@ experience.
 
 :::image type="content" source="media\web-automation\get-details-of-element-on-web-page-action.png" alt-text="Screenshot of the Get details of element on web page action.":::
 
-## How rules can be enabled
-SOlution checker+++
+## Rule Management
+Rules are defined and managed through the Solution Checker in PPAC. Administrators can:
+- Enable or disable specific rules.
+- Configure severity levels (Error, Warning, Info).
+- Apply rules to specific environments or environment groups (Managed Environments only).
 
-:::image type="content" source="media\web-automation\get-details-of-element-on-web-page-action.png" alt-text="Screenshot of the Get details of element on web page action.":::
+## Configuration in PPAC
+To configure static analysis rules:
+- Navigate to Power Platform Admin Center (PPAC).
+- Go to Environments.
+- Click on Edit managed environments.
+- In the Solution checker enforcement section, configure which rules should be excluded for the selected environment.
+> [!NOTE]
+> If the environment is already part of an Environment Group with a defined configuration, the rule settings will be inherited and cannot be edited individually.
+
+## Running Static Analysis via Portal
+To manually trigger static analysis:
+- Navigate to the Solutions page in the Power Platform portal.
+- Click the context menu (⋯) next to a solution.
+- Hover over Solution checker.
+- Choose one of the following options:
+  - Run: Initiates the static analysis.
+  - View results: Opens the latest analysis report.
+  - Download results: Exports the report for offline review.
+ 
+  More information about solution checker and its configuration can be found in the following links: '' , ''
 
 ## Static analysis in the designer
 The Static Analysis is performed automatically, providing continuous inspection of your code without requiring manual intervention. As you add, remove, or edit actions within your flow, this feature is triggered 
@@ -133,6 +155,8 @@ addressing issues promptly and effectively.
 - Description: This rule verifies if the hardcoded wait actions in the flow exceed a specified amount of time, with the default limit set to 600 seconds.
 - Suggested fix: Review the flow to find wait actions that exceed the 600-second limit. Evaluate the necessity of these long wait times and adjust their durations to the shortest time necessary for the flow to function correctly. If a long wait is necessary, consider breaking it into smaller intervals with additional checks or conditional actions in between. Finally, whenever possible, replace long wait actions with event-driven triggers. 
 
-
+## Known Limitations
+- Available only in Managed Environments.
+- Rule customization is limited to enabling/disabling and severity configuration.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
