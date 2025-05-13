@@ -1,20 +1,20 @@
 ---
-title: Build clear and easy to manage flow scripts
+title: Build readable and maintainable flow scripts
 description: Learn how to build clear and manageable flow scripts to improve efficiency, teamwork, and troubleshooting in Power Automate.
 # customer intent: As a Power Automate user, I want to organize flow scripts clearly so that I can improve development efficiency and troubleshooting.
 author: PetrosFeleskouras
 ms.subservice: guidance
-ms.topic: conceptual
-ms.date: 04/29/2025
+ms.topic: best-practice
+ms.date: 05/13/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
 ---
 
-# Build clear and easy to manage flow scripts
+# Build readable and maintainable flow scripts
 
-Building flow scripts in Power Automate with clarity and organization improves development efficiency, fosters collaboration, and simplifies troubleshooting. Follow these recommendations to streamline workflows, enhance teamwork, and make scripts easy to manage and scale.
+Building flow scripts in Power Automate with clarity and organization improves development efficiency, fosters collaboration, and simplifies troubleshooting. Follow these recommendations to streamline workflows, enhance teamwork, and make scripts easier to manage and scale.
 
 ## Use consistent naming conventions
 
@@ -26,13 +26,13 @@ For variables (Input/Output and Flow variables):
 - Add a datatype prefix to variable names.  
 - For Input/Output variables, add a prefix to both the variable name and external name to distinguish them from flow variables and other variables outside the flow designer.
 
-:::image type="content" source="media/build-flow-scripts/variables.png" alt-text="Screenshot of a flow designer showing variable naming conventions." lightbox = "media/build-flow-scripts/variables.png":::
+:::image type="content" source="media/build-flow-scripts/variables.png" alt-text="Screenshot of the flow designer interface showing use of prefixes in names to distinguish variables." lightbox="media/build-flow-scripts/variables.png":::
 
-To follow best practices for cloud flows, learn more about [using consistent naming for flow components](/power-automate/guidance/coding-guidelines/use-consistent-naming-conventions).
+Follow best practices for cloud flows by learning more about [using consistent naming for flow components](../coding-guidelines/use-consistent-naming-conventions.md).
 
 ## Add comments
 
-Use the **Comment** action to add notes in the flow script.
+Use the **Comment** action to add notes in the flow script:
 
 - Add a comment at the beginning of the **Main** subflow to introduce the flow. Provide a short description of the process, the intended audience, and related flows.
 
@@ -40,45 +40,46 @@ Use the **Comment** action to add notes in the flow script.
 
 - Add comments at the beginning of each subflow to describe its purpose.
 
-:::image type="content" source="media/build-flow-scripts/comments.png" alt-text="Screenshot of adding comments in a flow script." lightbox = "media/build-flow-scripts/comments.png":::
+:::image type="content" source="media/build-flow-scripts/comments.png" alt-text="Screenshot showing how to add comments in a flow script." lightbox="media/build-flow-scripts/comments.png":::
 
 > [!NOTE]  
-> Get help adding comments using the [Summarize actions and subflows Copilot skill](/power-automate/desktop-flows/copilot-in-power-automate-for-desktop#use-copilot-to-summarize-actions-and-subflows-preview).
+> Get help adding comments using the [Summarize actions and subflows Copilot skill](../../desktop-flows/copilot-in-power-automate-for-desktop.md#use-copilot-to-summarize-actions-and-subflows).
 
 ## Add regions
 
 Use the **Region** and **End region** actions to group actions within a subflow logically so they can be expanded or collapsed.
 
-:::image type="content" source="media/build-flow-scripts/region.png" alt-text="Screenshot of the Region and End region actions in a subflow." lightbox = "media/build-flow-scripts/region.png":::
+:::image type="content" source="media/build-flow-scripts/region.png" alt-text="Screenshot of the Region and End region actions in a subflow." lightbox="media/build-flow-scripts/region.png":::
 
-## Modular design and reusable components
+## Use modular design and reusable components
 
-Break down your flow into logical modules or sections by functionality or tasks.
+Break down your flow into logical modules or sections based on functionality or tasks.
 
 ### Subflows
 
 Create subflows to group related actions or reusable tasks.
 
-- Identify actions that perform a task or need repetition, and group them in a subflow.  
-- Invoke the subflow with the **Run subflow** action.
+1. Identify actions that perform a task or need repetition, and group them in a subflow. 
 
-:::image type="content" source="media/build-flow-scripts/subflow.png" alt-text="Screenshot of a flow diagram showing subflow creation." lightbox = "media/build-flow-scripts/subflow.png":::
+    :::image type="content" source="media/build-flow-scripts/subflow.png" alt-text="Screenshot of a flow diagram showing subflow creation." lightbox="media/build-flow-scripts/subflow.png":::
+ 
+1. Invoke the subflow with the **Run subflow** action.
 
-:::image type="content" source="media/build-flow-scripts/run-subflow.png" alt-text="Screenshot of the Run subflow action." lightbox = "media/build-flow-scripts/run-subflow.png":::
+    :::image type="content" source="media/build-flow-scripts/run-subflow.png" alt-text="Screenshot of the Run subflow action." lightbox="media/build-flow-scripts/run-subflow.png":::
 
-Learn more about [setting up subflows](/power-automate/desktop-flows/designer-workspace#setting-up-subflows).
+Learn more about [setting up subflows](../../desktop-flows/designer-workspace.md#setting-up-subflows)
 
 ### Reusable flows
 
 Create reusable flows to simplify complex processes into manageable parts for use in different workflows.
 
-- Identify flows that can be reused across other desktop flows and create a dedicated flow to be used as a reusable component.  
+- Identify flows that can be reused across other desktop flows, and create a dedicated flow to use as a reusable component.  
 - Share the reusable flow with other users in an environment.  
 - Convert a subflow to a reusable flow by copying and pasting all its actions into the new flow's workspace.  
 - Invoke it with the **Run desktop flow** action as a child desktop flow.
 
-:::image type="content" source="media/build-flow-scripts/run-desktop-flow.png" alt-text="Screenshot of the available desktop flows in the Run desktop flow action." lightbox = "media/build-flow-scripts/run-desktop-flow.png":::
+:::image type="content" source="media/build-flow-scripts/run-desktop-flow.png" alt-text="Screenshot of the available desktop flows in the Run desktop flow action." lightbox="media/build-flow-scripts/run-desktop-flow.png":::
 
-Learn more about [running a desktop flow from other desktop flows](/power-automate/desktop-flows/how-to/run-desktop-flow-action).
+Learn more about [running a desktop flow from other desktop flows](../../desktop-flows/how-to/run-desktop-flow-action.md).
 
-To follow best practices for cloud flows, learn more about [creating reusable code](/power-automate/guidance/coding-guidelines/create-reusable-code).
+Follow best practices for cloud flows by learning more about [creating reusable code](../coding-guidelines/create-reusable-code.md).
