@@ -57,7 +57,7 @@ Static result testing offers several advantages:
 
 - Controlling the output of specific actions helps you isolate and troubleshoot issues in your flow more effectively.
 
-Learn more in [Disable an action or enable static results on an action](../../flows-designer#disable-an-action-or-enable-static-results-on-an-action) in the article [What is the cloud flows designer?](../../flows-designer.md).
+Learn more in [Disable an action or enable static results on an action](../../flows-designer.md#disable-an-action-or-enable-static-results-on-an-action) in the article [What is the cloud flows designer?](../../flows-designer.md).
 
 ### How to use static results
 

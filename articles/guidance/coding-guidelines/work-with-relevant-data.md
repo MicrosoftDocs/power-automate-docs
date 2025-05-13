@@ -19,7 +19,7 @@ search.audienceType:
 
 To build Power Automate flows that are as efficient and accurate as possible, make sure that they process only the data they need to. This practice helps optimize their performance and reduces the risk of errors or inconsistencies. This article provides guidance on how to limit the data your flows process, focusing on triggers and actions.
 
-Aside from considerations of performance and accuracy, eliminating unneeded data from your flows is also important for staying within [throughput limits](/power-automate/limits-and-config#throughput-limits). Throughput limits are the maximum amount of data that can be read from or written to the run history of a cloud flow in a specific time period. They vary by [performance profile](/power-automate/limits-and-config#performance-profiles), but in all cases, if a cloud flow exceeds the limit, its activity is slowed until it falls below the threshold. If the activity remains above the limit for 14 days, the flow is turned off. Learn more in [Limits of automated, scheduled, and instant flows](/power-automate/limits-and-config.md).
+Aside from considerations of performance and accuracy, eliminating unneeded data from your flows is also important for staying within [throughput limits](../../limits-and-config.md#throughput-limits). Throughput limits are the maximum amount of data that can be read from or written to the run history of a cloud flow in a specific time period. They vary by [performance profile](../../limits-and-config.md#performance-profiles), but in all cases, if a cloud flow exceeds the limit, its activity is slowed until it falls below the threshold. If the activity remains above the limit for 14 days, the flow is turned off. Learn more in [Limits of automated, scheduled, and instant flows](../../limits-and-config.md).
 
 You can limit the data that's processed at both the trigger and action levels.
 
@@ -59,4 +59,4 @@ Data sources like SharePoint offer similar options:
 
 - [Work with data operations](./use-data-operations.md)
 - [Optimize Power Automate triggers](./optimize-power-automate-triggers.md)
-- [Flow of the Week: Filtering Data with OData](/power-platform/blog/power-automate/advanced-flow-of-the-week-filtering-with-odata/?msockid=063dbab77c7468f2349baef17d1b6953)
+- [Flow of the Week: Filtering Data with OData](https://www.microsoft.com/power-platform/blog/power-automate/advanced-flow-of-the-week-filtering-with-odata/)
