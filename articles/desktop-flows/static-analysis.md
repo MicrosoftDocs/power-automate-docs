@@ -162,8 +162,15 @@ addressing issues promptly and effectively.
 - Description: This rule verifies if the hardcoded wait actions in the flow exceed a specified amount of time, with the default limit set to 600 seconds.
 - Suggested fix: Review the flow to find wait actions that exceed the 600-second limit. Evaluate the necessity of these long wait times and adjust their durations to the shortest time necessary for the flow to function correctly. If a long wait is necessary, consider breaking it into smaller intervals with additional checks or conditional actions in between. Finally, whenever possible, replace long wait actions with event-driven triggers. 
 
-## Known Limitations
+## Known limitations
 - Available only in Managed Environments.
 - Rule customization is limited to enabling/disabling and severity configuration.
+
+## Known issues
+- Deleting copied actions after viewing a rule violation detail may trigger unhandled errors.
+- Using a non-sensitive password variable in the following actions causes static analysis to crash during rule evaluation.
+  - Display input dialog
+  - Display select folder dialog
+  - Display custom form
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
