@@ -30,7 +30,7 @@ Each one of these action groups accepts a different type of UI elements. UI auto
 
 To add a new UI element to your flow, add a new UI element through an action or the UI elements pane, highlight the respective element, and press **Ctrl + Left click**. When the selection is finished, select **Done**.
 
-:::image type="content" source="media/ui-elements/capturing-ui-elements.png" alt-text="Screenshot of a highlighted element.":::
+:::image type="content" source="media/ui-elements/capturing-ui-elements1.png" alt-text="Screenshot of a highlighted element.":::
 > [!NOTE]
 > The UI element picker now supports capturing both UI Automation (UIA) and Microsoft Active Accessibility (MSAA) selectors when working with desktop UI elements. By default, the picker operates in UIA mode. You can
 > change the capturing mode using the menu located in the top-right corner of the UI element picker. Select MSAA to target legacy applications that do not expose UIA selectors. When MSAA mode is enabled, a banner will
@@ -82,13 +82,14 @@ To capture a UI element from a webpage, you need to install the appropriate brow
 
 ### Distinguish desktop from web UI elements
 
-The UI elements pane displays distinctive visual indications to help users quickly recognize desktop and web UI elements.
+The UI elements pane displays distinctive visual indications to help users quickly recognize between desktop and web UI elements.
 
-:::image type="content" source="media/ui-elements/ui-element-type-visual-indication.png" alt-text="Screenshot of the UI element type visual indications in the UI element pane.":::
+:::image type="content" source="media/ui-elements/ui-element-type-visual-indication1.png" alt-text="Screenshot of the UI element type visual indications in the UI element pane.":::
 
-The same icons are also displayed during capturing, so you can confirm the type of an element before even saving it.
+During capturing the desktop icon will appear when capturing desktop elements and the web icon will appear when capturing web elements, so you can confirm the type of an element before even saving it.
 
 :::image type="content" source="media/ui-elements/ui-element-type-visual-indication-capturing.png" alt-text="Screenshot of a UI element type visual indication during capturing.":::
+
 
 Another method to check the type of a UI element is to review its selectors. Desktop UI elements usually have the desktop as their parent element, while web UI elements have a webpage as their root element.
 
