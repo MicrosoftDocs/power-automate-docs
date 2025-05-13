@@ -2,7 +2,7 @@
 title: Poll generator sample
 description: An Adaptive Card input form that's designed for submitting polls to Microsoft Teams.
 suite: flow
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
