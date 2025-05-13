@@ -51,6 +51,18 @@ To pause the recording process temporarily, select **Pause**. To add a comment t
 
 ![Screenshot of the comment button.](./media/recording-flow/comment-button.png "Screenshot of the comment button.")
 
+### Choosing different capturing modes when recording desktop applications
+The recorder now supports capturing both UI Automation (UIA) and Microsoft Active Accessibility (MSAA) selectors. You can choose the appropriate selector type based on the application you're automating by opening the Capturing mode menu within the recorder and selecting either UIA or MSAA.
+
+![Screenshot of the recorder's capturing mode menu.](./media/recording-flow/recorder_capturing_mode_uia_msaa.png "Screenshot of the recorder's capturing mode menu.")
+
+- **UI Automation (UIA)** is the modern accessibility framework introduced by Microsoft to replace MSAA. It is the recommended technology for automating most Windows applications, especially those built with newer UI frameworks such as WPF, WinForms, and Universal Windows Platform (UWP). UIA offers more robust and detailed element information, improved hierarchy structures, and greater reliability in automation scenarios.
+Use UIA capturing mode whenever possible for better performance, maintainability, and support across modern desktop applications.
+
+- **Microsoft Active Accessibility (MSAA)**-- is an older accessibility technology that predates UIA. It is primarily used for legacy applications that do not expose UIA elements, such as older Windows applications built with technologies like VB6 or classic Win32. While MSAA provides less detail and structure than UIA, it is essential for enabling automation in environments where UIA is not available.
+Use MSAA capturing mode when targeting legacy or custom-built applications that do not expose their UI components through UIA.
+
+
 ### Replicate drag and drop steps
 
 The recorder supports steps related to dragging and dropping the mouse pointer; therefore, the recorder can generate actions like the **Resize window** and **Move window**. Currently, however, the **Drag and drop UI element of a window** action isn't supported.
@@ -73,7 +85,7 @@ The first method is to select the dots icon on the right side of the recorder di
 
 After you've selected the proper browser, the recorder will detect the loaded web page automatically and configure the launching browsing step accordingly.
 
-![Screenshot of the Launch new web browser option.](./media/recording-flow/launch-new-web-browser-option.png "Screenshot of the Launch new web browser option.")
+![Screenshot of the Launch new web browser option.](./media/recording-flow/launch-new-web-browser-option1.png "Screenshot of the Launch new web browser option.")
 
 An alternative way to launch a browser is to start recording in an already open web browser. The recorder will automatically detect the loaded page and will create a launching browser action.
 
@@ -131,7 +143,7 @@ To record flows using images:
 
 1. Select the dots icon on the right side of the recorder dialog, and then enable **Image recording**. After enabling this option, select **Record** to start recording actions using image recognition.
 
-    ![Screenshot of the Image recording button.](./media/recording-flow/image-recording-button.png "Screenshot of the Image recording button.")
+    ![Screenshot of the Image recording button.](./media/recording-flow/image-recording-button1.png "Screenshot of the Image recording button.")
 
      Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, hover, or select the **preview icon**.
 
