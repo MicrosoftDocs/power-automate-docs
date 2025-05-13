@@ -4,8 +4,8 @@ description: Learn how to use Flow Checker in Power Automate to detect errors an
 #customer intent: As a Power Automate user, I want to use Flow Checker so that I can detect and fix errors in my cloud flows.
 author: manuelap-msft
 ms.subservice: guidance
-ms.topic: conceptual
-ms.date: 02/18/2025
+ms.topic: best-practice
+ms.date: 05/12/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 

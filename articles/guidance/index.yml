@@ -32,7 +32,7 @@ landingContent:
             url: coding-guidelines/use-secure-inputs-outputs-triggers.md
           - text: Integrate cloud flows with Power Apps
             url: coding-guidelines/integrating-cloud-flows-power-apps.md
-          - text: Monitoring and alerting
+          - text: Monitor your flows
             url: coding-guidelines/monitoring-and-alerting.md
   
   # Card 

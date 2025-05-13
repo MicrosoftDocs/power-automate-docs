@@ -4,8 +4,8 @@ description: Learn common anti-patterns that you should avoid using in your Powe
 #customer intent: As a Power Automate user, I want to avoid anti-patterns in cloud flows so that I can optimize performance and resource efficiency.
 author: manuelap-msft
 ms.subservice: guidance
-ms.topic: conceptual
-ms.date: 02/18/2025
+ms.topic: best-practice
+ms.date: 05/12/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 

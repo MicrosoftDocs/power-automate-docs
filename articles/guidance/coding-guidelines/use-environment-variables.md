@@ -3,8 +3,8 @@ title: Use environment variables
 description: Learn how to use environment variables in Power Automate to separate configuration from logic, making your workflows modular and easier to manage.
 author: manuelap-msft
 ms.subservice: guidance
-ms.topic: conceptual
-ms.date: 04/03/2025
+ms.topic: best-practice
+ms.date: 05/13/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 search.audienceType:

@@ -1,10 +1,11 @@
 ---
 title: Optimize Power Automate triggers
 description: Learn how to improve your Power Automate flows by understanding trigger types, setting conditions, and managing concurrency for optimal performance.
+#customer intent: As a Power Automate user, I want to optimize Power Automate triggers so that my flows run efficiently. 
 author: manuelap-msft
 ms.subservice: guidance
-ms.topic: conceptual
-ms.date: 04/02/2025
+ms.topic: best-practice
+ms.date: 05/13/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors:

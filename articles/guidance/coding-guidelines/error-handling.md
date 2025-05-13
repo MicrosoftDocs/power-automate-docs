@@ -4,8 +4,8 @@ description: Learn strategies for handling errors in your Power Automate flows, 
 #customer intent: As a Power Automate user, I want to implement strategies to identify and resolve issues quickly and efficiently.
 author: manuelap-msft
 ms.subservice: guidance
-ms.topic: conceptual
-ms.date: 02/18/2025
+ms.topic: best-practice
+ms.date: 05/12/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 

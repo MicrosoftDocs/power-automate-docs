@@ -18,7 +18,7 @@
               href: coding-guidelines/leave-complex-business-logic-out.md
             - name: Create reusable code
               href: coding-guidelines/create-reusable-code.md
-            - name: Implement parallel execution and concurrency
+            - name: Optimize flows with parallel execution and concurrency
               href: coding-guidelines/implement-parallel-execution.md
             - name: Work with data operations
               href: coding-guidelines/use-data-operations.md
@@ -58,9 +58,9 @@
               href: coding-guidelines/prevent-data-exfiltration.md
             - name: Consider customer-managed keys
               href: coding-guidelines/use-cmk-for-cloud-flows.md
-        - name: Integrating cloud flows with Power Apps
+        - name: Integrate cloud flows with Power Apps
           href: coding-guidelines/integrating-cloud-flows-power-apps.md
-        - name: Monitoring and alerting
+        - name: Monitor your flows
           href: coding-guidelines/monitoring-and-alerting.md
     - name: Plan a Power Automate project
       items:
