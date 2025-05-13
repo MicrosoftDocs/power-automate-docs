@@ -2,8 +2,9 @@
 title: "Monitor and manage background workflow processes | MicrosoftDocs"
 description: "To monitor and manage background workflow processes, you must locate the process, evaluate the status, and perform any actions necessary to address problems."
 ms.date: 01/28/2022
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: "article"
+ms.topic: how-to
 author: "Mattp123"
 ms.assetid: a987a803-4674-4eb0-87de-caefa003b1eb
 caps.latest.revision: 12

@@ -2,8 +2,9 @@
 title: Hosted machine groups
 description: Learn how to create and use hosted machine groups to distribute your automation workload.
 author: kenseongtan
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/03/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews

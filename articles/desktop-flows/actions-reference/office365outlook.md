@@ -2,6 +2,7 @@
 title: Office 365 Outlook 
 description: Learn about the available Office 365 Outlook actions.
 author: jpapadimitriou
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 05/24/2024

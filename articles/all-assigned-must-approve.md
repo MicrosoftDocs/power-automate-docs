@@ -1,22 +1,17 @@
 ---
 title: Create an approval flow that requires everyone to approve
 description: Learn how to create an approval flow that requires everyone to approve or one person to reject a request.
-services: ''
 suite: flow
-documentationcenter: na
-author: natalie-pienkowska
+author: HeatherOrt
 contributors:
   - natalie-pienkowska
   - kartikraop
   - v-aangie
-editor: ''
-tags: ''
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: how-to
 ms.date: 01/12/2023
-ms.author: jamiller
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

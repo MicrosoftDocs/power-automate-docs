@@ -2,6 +2,7 @@
 title: Variables actions reference
 description: See all the available variables actions.
 author: kenseongtan
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 04/11/2024

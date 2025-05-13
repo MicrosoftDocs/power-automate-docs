@@ -3,6 +3,7 @@ title: Monitor your flows
 description: Learn how to monitor your Power Automate flows to ensure that they run correctly, efficiently, and securely.
 #customer intent: As a Power Automate user, I want to monitor flows so that I can ensure workflows run smoothly and efficiently.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 05/13/2025

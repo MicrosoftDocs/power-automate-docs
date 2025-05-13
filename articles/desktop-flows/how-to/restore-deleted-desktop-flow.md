@@ -2,6 +2,7 @@
 title: Restore a deleted desktop flow
 description: Learn how to restore a deleted desktop flow.
 author: PetrosFeleskouras
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 03/05/2025

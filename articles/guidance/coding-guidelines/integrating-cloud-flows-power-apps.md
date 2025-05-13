@@ -3,6 +3,7 @@ title: Integrate cloud flows with Power Apps
 description: Learn when to integrate cloud flows with Power Apps canvas and model-driven apps to enhance their business logic capabilities.
 #customer intent: As a Power Automate user, I want to understand how to integrate cloud flows with Power Apps so that I can enhance business logic capabilities.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 05/12/2025

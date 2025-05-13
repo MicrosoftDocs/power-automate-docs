@@ -5,8 +5,9 @@ author: donums
 contributors:
   - donums
   - v-aangie 
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: get-started
 ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews

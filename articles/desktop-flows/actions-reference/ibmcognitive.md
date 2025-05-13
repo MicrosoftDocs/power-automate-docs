@@ -3,6 +3,7 @@ title: IBM cognitive actions reference
 description: See all the available IBM cognitive actions.
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/23/2022

@@ -3,6 +3,7 @@ title: Understand the benefits of using solution-aware cloud flows
 description: Learn how solution-aware cloud flows in Power Automate enhance portability, management, and deployment for a seamless flow development experience.
 #customer intent: As a Power Automate user, I want to understand the benefits of using solution-aware versus non-solution cloud flows so that I can enhance flow portability and management.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 05/13/2025

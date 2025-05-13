@@ -3,6 +3,7 @@ title: Use consistent naming for flow components
 description: Learn best practices for naming Power Automate flow components to improve collaboration, troubleshooting, maintenance, and consistency across workflows.
 #customer intent: As a Power Automate user, I want to establish consistent naming standards for Power Automate flows so that I can ensure clarity and consistency across workflows.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 05/13/2025

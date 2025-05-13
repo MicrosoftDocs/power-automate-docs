@@ -2,8 +2,9 @@
 title: Create a CyberArk credential
 description: Use CyberArk credentials in desktop flow connections 
 author: QuentinSele
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/11/2025
 ms.author: quseleba
 ms.reviewer: dmartens

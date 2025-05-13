@@ -3,6 +3,7 @@ title: Use asynchronous responses
 description: Learn how to use asynchronous responses in your Power Automate flows to handle long-running processes efficiently and avoid timeouts.
 #customer intent: As a Power Automate user, I want to configure asynchronous responses in child flows so that I can manage long-running processes efficiently.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 05/12/2025

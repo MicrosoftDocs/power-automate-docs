@@ -3,6 +3,7 @@ title: Organize your flows with scopes
 description: Learn how to use scopes to organize your Power Automate flows, manage complex workflows, and troubleshoot more effectively.
 #customer intent: As a Power Automate user, I want to organize my flows using scopes so that I can manage complex workflows effectively.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 05/12/2025

@@ -3,6 +3,7 @@ title: Simplify cloud flows by offloading complex business logic
 description: Learn how to improve the efficiency of your Power Automate flows by offloading complex business logic with alternatives like Dataverse plugins and custom connectors.
 #customer intent: As a Power Automate user, I want to offload complex business logic from cloud flows so that I can improve performance and maintainability.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 05/12/2025

@@ -3,6 +3,7 @@ title: Windows services actions reference
 description: See all the available Windows services actions.
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/24/2022

@@ -5,7 +5,7 @@ author: Grant-Archibald-MS
 editor: ''
 ms.custom: guidance
 
-ms.topic: article
+ms.topic: release-notes
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022

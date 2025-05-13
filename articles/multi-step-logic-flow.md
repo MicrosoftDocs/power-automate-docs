@@ -3,8 +3,9 @@ title: Add an advanced option and multiple actions in Power Automate
 description: Expand a cloud flow to include an advanced option, such as how to add collaboration comments to actions and triggers, set email to high priority, and add another action for the same event.
 suite: flow
 author: v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/09/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews

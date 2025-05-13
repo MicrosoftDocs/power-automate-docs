@@ -3,6 +3,7 @@ title: Prevent unauthorized transfer of data
 description: Learn how to prevent data in your Power Platform environments from being transferred to an external system without authorization.
 #customer intent: As a Power Automate user, I want to prevent unauthorized access to data so that I can ensure the security of my Power Platform resources.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 05/13/2025

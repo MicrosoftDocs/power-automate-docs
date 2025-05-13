@@ -3,6 +3,7 @@ title: Test cloud flows
 description: Learn how to use built-in tools in Power Automate to test the design of your cloud flows to ensure their reliability, performance, and accuracy.
 #customer intent: As a Power Automate user, I want to test my Power Automate cloud flows so that I can ensure their reliability, performance, and accuracy.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 05/13/2025

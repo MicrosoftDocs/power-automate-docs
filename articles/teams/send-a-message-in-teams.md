@@ -10,8 +10,9 @@ contributors:
   - v-aangie
 ms.author: kisubedi
 ms.reviewer: angieandrews
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/15/2024
 ---
 

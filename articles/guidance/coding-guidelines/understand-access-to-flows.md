@@ -3,6 +3,7 @@ title: Understand flow ownership and access
 description: Learn about the different ownership models for Power Automate flows and how to manage access to your cloud flows.
 #customer intent: As a Power Automate flow owner, I want to understand the different ownership models for Power Automate flows so that I can maintain stability, security, and compliance.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 05/13/2025

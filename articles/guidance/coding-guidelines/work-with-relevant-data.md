@@ -3,6 +3,7 @@ title: Work only with relevant data
 description: Learn how to optimize the performance of your Power Automate flows by ensuring that only necessary data is processed.
 #customer intent: As a Power Automate user, I want to limit data processed in Power Automate so that I can optimize efficiency and accuracy in automated workflows.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 05/13/2025

@@ -1,19 +1,22 @@
 ---
-title: Process capacity utilization 
-description: Process capacity utilization 
+title: Process capacity utilization
+description: Understand how Process and Unattended RPA capacity is utilized in your environment and learn to manage allocations effectively.
 author: cvassallo
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.date: 02/05/2025
+ms.date: 04/23/2025
 ms.author: cvassallo
 ms.reviewer: angieandrews
 contributors:
-- DanaMartens
-ms.topic: conceptual
+  - DanaMartens
+ms.topic: article
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/23/2025
 ---
 
 # Process and Unattended RPA capacity utilization
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
 The Process and Unattended RPA capacity utilization page provides you with insights into how your Process capacity or legacy Unattended RPA capacity is being used within your environment. As a reminder, within the Power Automate portal each Process capacity is based on a purchased [Process license](/power-platform/admin/power-automate-licensing/types) and each legacy Unattended RPA capacity is based on an [Unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on). Those capacities are [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) by the admin.
 

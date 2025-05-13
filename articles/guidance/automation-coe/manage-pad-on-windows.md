@@ -4,8 +4,9 @@ description: Introduction to the PDF playbook and YouTube video series for manag
 author: kathyos
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/6/2021
+ms.service: power-automate
 ms.subservice: guidance
 ms.author: kathyos
 ms.reviewer: angieandrews

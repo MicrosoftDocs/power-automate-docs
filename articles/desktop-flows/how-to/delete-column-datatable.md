@@ -2,6 +2,7 @@
 title: Delete columns from a datatable
 description: Delete columns from a datatable
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 07/13/2021

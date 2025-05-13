@@ -3,8 +3,9 @@ title: The flow designer workspace
 description: The flow designer workspace
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 08/27/2024
 ms.author: matp
 ms.reviewer: matp

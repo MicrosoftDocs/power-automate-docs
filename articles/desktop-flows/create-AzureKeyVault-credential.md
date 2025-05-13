@@ -2,8 +2,9 @@
 title: Create an Azure Key Vault credential 
 description: Learn how to create a credential with secret stored in Azure Key Vault.
 author: QuentinSele
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/11/2025
 ms.author: quseleba
 ms.reviewer: 

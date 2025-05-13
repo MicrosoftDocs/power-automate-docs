@@ -12,8 +12,10 @@
   items: 
     - name: Sign up
       href: sign-up-sign-in.md
-    - name: Get started with Power Automate
+    - name: Explore the Power Automate home page
       href: getting-started.md
+    - name: Get Started with Power Automate tutorial
+      href: get-started-tutorial.md
 - name: Cloud flows
   items:
     - name: Overview
@@ -24,8 +26,12 @@
           href: get-started-with-copilot.md
         - name: Explore the cloud flows designer
           href: flows-designer.md
-        - name: Get started with triggers
-          href: triggers-introduction.md
+        - name: Start a cloud flow with a trigger
+          items:
+          - name: Get started with triggers
+            href: triggers-introduction.md
+          - name: Troubleshoot common issues with triggers
+            href: triggers-troubleshoot.md
         - name: Get help from the Microsoft Copilot Studio bot
           href: contextual-help-bot.md
     - name: How to
@@ -104,12 +110,8 @@
             href: edit-solution-aware-flow.md
           - name: Remove a solution-aware flow
             href: remove-solution-aware-flow.md
-          - name: Set up Application Insights with Power Automate
-            href: /power-platform/admin/app-insights-cloud-flow.md
     - name: Troubleshoot
       items:
-      - name: Troubleshoot common issues with triggers
-        href: triggers-troubleshoot.md
       - name: Watch a cloud flow
         href: see-a-flow-run.md
         displayName: Monitor flow activity on mobile devices
@@ -137,6 +139,10 @@
         href: run-scheduled-tasks.md
       - name: Process a list of items
         href: apply-to-each.md
+    - name: Analyze Power Automate telemetry using Application Insights
+      href: /power-platform/admin/app-insights-cloud-flow
+    - name: Limits and configuration
+      href: limits-and-config.md
     - name: Power Automate mobile app
       items:
       - name: Overview
@@ -876,6 +882,8 @@
       href: process-mining-transform.md
     - name: Visualize and gain insights in Power BI
       items:
+      - name: Process overview (preview)
+        href: ./minit/process-overview.md
       - name: Visualize and gain insights from processes
         href: process-mining-visualize.md
       - name: Customize a report with your own Power BI workspace
@@ -1233,50 +1241,46 @@
       href: privacy-dsr-accountclose-msa.md
   - name: Power Automate US Government
     href: us-govt.md
-- name: Reference
+  - name: Use Power Automate within the EU Data Boundary
+    href: flow-eudb.md
+- name: Regions overview
+  href: regions-overview.md
+- name: Common questions about Power Automate
+  href: frequently-asked-questions.yml
+- name: Classic Dataverse
   items:
-  - name: Regions overview
-    href: regions-overview.md
-  - name: Limits and configuration
-    href: limits-and-config.md
-  - name: Frequently asked questions
-    href: frequently-asked-questions.yml
-  - name: Power Automate glossary
-    href: glossary.md
-  - name: Classic Dataverse
+  - name: Classic Dataverse workflows
     items:
-    - name: Classic Dataverse workflows
-      items:
-      - name: Overview
-        href: workflow-processes.md
-      - name: Configure background workflow stages and steps
-        href: configure-workflow-steps.md
-      - name: Monitor and manage background workflow processes
-        href: monitor-manage-processes.md
-      - name: Best practices for background workflow processes
-        href: best-practices-workflow-processes.md
-      - name: Replace background workflows with flows
-        href: replace-workflows-with-flows.md
-    - name: Classic Dataverse task flows
-      items:
-      - name: Create mobile task flows
-        href: create-mobile-task-flow.md
-    - name: Classic Dataverse dialogs
-      items:
-      - name: Use classic Dataverse dialogs
-        href: use-cds-for-apps-dialogs.md
-      - name: Replace classic Dataverse dialogs
-        href: replace-dialogs.md
-- name: Resources
+    - name: Overview
+      href: workflow-processes.md
+    - name: Configure background workflow stages and steps
+      href: configure-workflow-steps.md
+    - name: Monitor and manage background workflow processes
+      href: monitor-manage-processes.md
+    - name: Best practices for background workflow processes
+      href: best-practices-workflow-processes.md
+    - name: Replace background workflows with flows
+      href: replace-workflows-with-flows.md
+  - name: Classic Dataverse task flows
+    items:
+    - name: Create mobile task flows
+      href: create-mobile-task-flow.md
+  - name: Classic Dataverse dialogs
+    items:
+    - name: Use classic Dataverse dialogs
+      href: use-cds-for-apps-dialogs.md
+    - name: Replace classic Dataverse dialogs
+      href: replace-dialogs.md
+- name: Find help and support
   items:
-  - name: Microsoft Credentials for Power Platform
-    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl
+  - name: Get online help
+    href: self-help.md
   - name: Blog
     href: https://make.powerautomate.com/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-  - name: Support
-    href: https://make.powerautomate.com/support/
+  - name: Learn new Power Platform skills
+    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl    
 - name: Responsible AI
   items:
   - name: Overview
