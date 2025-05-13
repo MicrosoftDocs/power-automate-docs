@@ -20,19 +20,19 @@ Optimizing the performance of flows in Power Automate is essential for creating 
 
 When looking for actions to automate your app or service, consider the following priorities, listed from most to least preferable:
 
-1.  Cloud connector actions. Learn more about [Cloud Connectors in Power Automate for desktop](/power-automate/desktop-flows/actions-reference/cloudconnectors).
+1. Cloud connector actions. Learn more about [Cloud Connectors in Power Automate for desktop](/power-automate/desktop-flows/actions-reference/cloudconnectors).
 
-:::image type="content" source="media/optimize-flow-performance/actions.png" alt-text="Screenshot showing various cloud connector actions in Power Automate." lightbox = "media/optimize-flow-performance/actions.png":::
+    :::image type="content" source="media/optimize-flow-performance/actions.png" alt-text="Screenshot showing various cloud connector actions in Power Automate." lightbox = "media/optimize-flow-performance/actions.png":::
 
-2.  Application or file-specific Power Automate for desktop actions like Excel, PDF, File/Folder, etc.
+1. Application or file-specific Power Automate for desktop actions like Excel, PDF, File/Folder, etc.
 
-:::image type="content" source="media/optimize-flow-performance/desktop-actions.png" alt-text="Screenshot of a computer. AI-generated content might be incorrect." lightbox="media/optimize-flow-performance/desktop-actions.png":::
+    :::image type="content" source="media/optimize-flow-performance/desktop-actions.png" alt-text="Screenshot of a computer. AI-generated content might be incorrect." lightbox="media/optimize-flow-performance/desktop-actions.png":::
 
 1. Actions from the **UI automation** and **Browser automation** groups of actions.
 
 1. Image recognition actions like **Move mouse to image** and **Extract text with OCR**, **Mouse and keyboard** actions like **Send keys** and **Send mouse click**, and **Clipboard** actions. Learn more about [automating with mouse, keyboard, and OCR actions](/power-automate/desktop-flows/how-to/automate-using-mouse-keyboard-ocr).
 
-1. As an alternative to OCR actions for extracting data, consider the AI Builder cloud connector action **Recognize text in an image or a PDF document**, which is available for cloud flows. Learn more about [using the text recognition prebuilt model in Power Automate](/ai-builder/flow-text-recognition).
+    As an alternative to OCR actions for extracting data, consider the AI Builder cloud connector action **Recognize text in an image or a PDF document**, which is available for cloud flows. Learn more about [using the text recognition prebuilt model in Power Automate](/ai-builder/flow-text-recognition).
 
 For more advanced scenarios, consider the **Scripting** actions, like **Run VBScript** or **Run Python script**, and the **HTTP** actions, like **Invoke web service**. 
 
@@ -42,7 +42,7 @@ For more advanced scenarios, consider the **Scripting** actions, like **Run VBSc
 
 - Handle errors for individual actions through their **On error** parameters.
 
-:::image type="content" source="media/optimize-flow-performance/files-folder.png" alt-text="Screenshot showing the configuration of file and folder actions in Power Automate." lightbox = "media/optimize-flow-performance/files-folder.png":::
+    :::image type="content" source="media/optimize-flow-performance/files-folder.png" alt-text="Screenshot showing the configuration of file and folder actions in Power Automate." lightbox = "media/optimize-flow-performance/files-folder.png":::
 
 - Handle errors for groups of actions with the **On block error** action.
 
@@ -67,7 +67,7 @@ Learn more about [configuring error handling functionality](/power-automate/desk
 
 - Configure the **Flow timeout** property to specify the maximum allowed time that the flow is allowed to run.
 
-:::image type="content" source="media/optimize-flow-performance/flow-timeout.png" alt-text="Screenshot of the Flow timeout property configuration." lightbox = "media/optimize-flow-performance/flow-timeout.png":::
+    :::image type="content" source="media/optimize-flow-performance/flow-timeout.png" alt-text="Screenshot of the Flow timeout property configuration." lightbox = "media/optimize-flow-performance/flow-timeout.png":::
 
 - Adjust the time-out settings for distinct desktop and web automation scenarios. Learn more about [Timeout configuration for UI and browser automation](/power-automate/desktop-flows/how-to/ui-automation-change-timeout-cofiguration)
 
@@ -83,13 +83,10 @@ Avoid looping through large datasets, for example Excel files with 1000s of reco
 
 - Use the **Data table** actions or **Database** actions for data table related operations.
 
-:::image type="content" source="media/optimize-flow-performance/database.png" alt-text="Screenshot of a data table. AI-generated content may be incorrect." lightbox = "media/optimize-flow-performance/database.png":::
+    :::image type="content" source="media/optimize-flow-performance/database.png" alt-text="Screenshot of a data table. AI-generated content may be incorrect." lightbox = "media/optimize-flow-performance/database.png":::
 
 - Use **PowerFx** functions. Learn more about [Power Fx in desktop flows](/power-automate/desktop-flows/power-fx).
 
 - Use **Scripting** actions, like **Run VBScript** or **Run Python script**.
 
-## Related information
-
-- [Working only with relevant data](/power-automate/guidance/coding-guidelines/work-with-relevant-data)
-- [Avoiding anti-patterns](/power-automate/guidance/coding-guidelines/avoid-anti-patterns).
+To follow best practices for cloud flows, learn more about [working only with relevant data](/power-automate/guidance/coding-guidelines/work-with-relevant-data) and [avoiding anti-patterns](/power-automate/guidance/coding-guidelines/avoid-anti-patterns).

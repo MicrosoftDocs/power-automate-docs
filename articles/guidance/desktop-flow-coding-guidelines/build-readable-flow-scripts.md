@@ -28,7 +28,7 @@ For variables (Input/Output and Flow variables):
 
 :::image type="content" source="media/build-flow-scripts/variables.png" alt-text="Screenshot of a flow designer showing variable naming conventions." lightbox = "media/build-flow-scripts/variables.png":::
 
-Learn more about [using consistent naming for flow components](/power-automate/guidance/coding-guidelines/use-consistent-naming-conventions) for best practices in cloud flows.  
+To follow best practices for cloud flows, learn more about [using consistent naming for flow components](/power-automate/guidance/coding-guidelines/use-consistent-naming-conventions).
 
 ## Add comments
 
@@ -79,8 +79,6 @@ Create reusable flows to simplify complex processes into manageable parts for us
 
 :::image type="content" source="media/build-flow-scripts/run-desktop-flow.png" alt-text="Screenshot of the available desktop flows in the Run desktop flow action." lightbox = "media/build-flow-scripts/run-desktop-flow.png":::
 
-## Related resources
+Learn more about [running a desktop flow from other desktop flows](/power-automate/desktop-flows/how-to/run-desktop-flow-action).
 
-- [Running a desktop flow from other desktop flows](/power-automate/desktop-flows/how-to/run-desktop-flow-action).
-
-- [Creating reusable code](/power-automate/guidance/coding-guidelines/create-reusable-code).  
+To follow best practices for cloud flows, learn more about [creating reusable code](/power-automate/guidance/coding-guidelines/create-reusable-code).

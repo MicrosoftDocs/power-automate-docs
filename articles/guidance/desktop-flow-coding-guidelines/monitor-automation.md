@@ -68,7 +68,4 @@ For more advanced or custom monitoring, reporting, and analysis, integrate with 
 
 :::image type="content" source="media/monitor-automation-processes/fabric.png" alt-text="Screenshot of Microsoft Fabric interface showing Power Automate data in OneLake." lightbox = "media/monitor-automation-processes/fabric.png":::
 
-## Related resources
-
-- [Generate automation-centric data analytics with Fabric](/power-automate/automation-analytics-with-fabric-introduction).
-- [Create automation-related SQL queries](/power-automate/automation-analytics-with-fabric-queries) on the SQL Analytical Endpoint in Fabric.
+Learn how to [generate automation-centric data analytics with Fabric](/power-automate/automation-analytics-with-fabric-introduction) and [create automation-related SQL queries](/power-automate/automation-analytics-with-fabric-queries) on the SQL Analytical Endpoint in Fabric.

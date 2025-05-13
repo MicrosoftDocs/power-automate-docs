@@ -26,6 +26,10 @@ To maximize automation efficiency in Power Automate, optimize how workloads are 
 
 - In a desktop flow connection, use a [machine mapping credential](/power-automate/desktop-flows/create-machine-mapping) to sign in to each machine in the group with a dedicated credential.
 
+Learn how to [manage machine groups and trigger flows to run on them](/power-automate/desktop-flows/manage-machine-groups).
+
+Review the [additional best practices](/power-automate/desktop-flows/run-desktop-flows-best-practices) for running desktop flows and distributing the workload.
+
 ## Use hosted machine groups to scale workloads automatically
 
 **Hosted machine groups** use Microsoft hosted infrastructure running in Azure and offer several benefits over traditional machine groups. Here are some key advantages:
@@ -38,6 +42,8 @@ To maximize automation efficiency in Power Automate, optimize how workloads are 
 - Reduced overhead - lower operational costs due to reduced need for hardware and maintenance.
 
 :::image type="content" source="media/optimize-e2e/hosted-machine.png" alt-text="Screenshot showing the configuration and benefits of hosted machine groups in Power Automate." lightbox = "media/optimize-e2e/hosted-machine.png":::
+
+Learn more about [hosted machines and hosted machine groups](/power-automate/desktop-flows/hosted-rpa-overview).
 
 ## Utilize machines effectively
 
@@ -63,6 +69,8 @@ Work queues are useful for:
 
 - Ensuring that important work is completed on time, regardless of the complexity of the process or the size of the automation they're being used for.
 
+Learn more about [work queues](/power-automate/desktop-flows/work-queues).
+
 ## Create reusable components
 
 Reuse desktop flows’ related components, like child desktop flows, UI elements, and custom actions within an environment.
@@ -76,10 +84,3 @@ Reuse desktop flows’ related components, like child desktop flows, UI elements
 ## Analyze flow run history with Process mining
 
 Use [Process mining](/power-automate/process-advisor-overview) with the [Desktop flows template](/power-automate/process-mining-templates#desktop-flows-template) to analyze the run history of a desktop flow and optimize its performance. The Desktop flows template can identify potential issues, such as errors or inefficiencies, and provide recommendations for improvement.
-
-## Related resources
-
-- [Manage machine groups and trigger flows to run on them](/power-automate/desktop-flows/manage-machine-groups).
-- [Hosted machines and hosted machine groups](/power-automate/desktop-flows/hosted-rpa-overview). 
-- [Work queues](/power-automate/desktop-flows/work-queues).
-- [Additional best practices](/power-automate/desktop-flows/run-desktop-flows-best-practices) for running desktop flows and distributing the workload.
