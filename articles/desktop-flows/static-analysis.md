@@ -21,8 +21,6 @@ flow requirements, this tool provides an automated evaluation of your flows to e
 also delivers real-time feedback and preemptive code inspection. By seamlessly integrating into your current workflow, it enhances code quality and offers a robust framework for a more streamlined and productive development
 experience.
 
-:::image type="content" source="media\web-automation\get-details-of-element-on-web-page-action.png" alt-text="Screenshot of the Get details of element on web page action.":::
-
 ## Rule Management
 Rules are defined and managed through the Solution Checker in PPAC. Administrators can:
 - Enable or disable specific rules.
@@ -38,6 +36,8 @@ To configure static analysis rules:
 > [!NOTE]
 > If the environment is already part of an Environment Group with a defined configuration, the rule settings will be inherited and cannot be edited individually.
 
+More information about solution checker and its configuration can be found in the following links: [Solution checker](/power-apps/maker/data-platform/use-powerapps-checker.md) , [Solution checker enforcement in Managed Environments](/power-platform/admin/managed-environment-solution-checker.md)
+
 ## Running Static Analysis via Portal
 To manually trigger static analysis:
 - Navigate to the Solutions page in the Power Platform portal.
@@ -47,24 +47,31 @@ To manually trigger static analysis:
   - Run: Initiates the static analysis.
   - View results: Opens the latest analysis report.
   - Download results: Exports the report for offline review.
- 
-  More information about solution checker and its configuration can be found in the following links: '' , ''
+
+> [!NOTE]
+> Static analysis is executed for all desktop flows included in a solution. You can identify which desktop flow triggered a specific rule violation by checking the Object name column in the results—this column contains the name of the corresponding desktop flow.
+
+:::image type="content" source="media\static-analysis\Static-analysis-solution-chekcer-results.png" alt-text="View results of an execution of static analysis for a solution in the Power Automate portal:::
 
 ## Static analysis in the designer
 The Static Analysis is performed automatically, providing continuous inspection of your code without requiring manual intervention. As you add, remove, or edit actions within your flow, this feature is triggered 
 automatically to evaluate the changes and update the analysis on the spot, ensuring that the development process is both seamless and efficient.
 
+:::image type="content" source="media\static-analysis\Static-analysis-pad-button.png" alt-text="Button in PAD designer that opens the Static analysis pane.":::
+
 Each analysis generates a score, represented as a percentage, which indicates the proportion of rules that have been successfully adhered to. A higher score reflects fewer violations, thus signaling better code quality. 
 This score is recalculated every time a change is made on the flow, providing immediate feedback and promoting good development practices.
+
+:::image type="content" source="media\static-analysis\Static-analysis-pad-score.png" alt-text="The score of the Static analysis and a summary of all the rules that have been violated, if any.":::
 
 If any rules are violated, the Static Analysis Report provides a clear and concise summary. The report lists the rule names, along with the number of actions or variables in your flow that breach each rule. By clicking 
 on a specific rule, the feature conveniently highlights the corresponding action, offering a detailed explanation of the error. If a rule violation pertains to a variable, the system will automatically navigate you to the
 variable pane, ensuring that corrections can be made with ease.
 
-For each violation, a new tile displays further details, including the nature of the error, recommended remediation steps, and a direct link to comprehensive documentation. This integrated guidance supports developers in 
+For each violation, a new tile displays further details, including the nature of the error, recommended remediation steps, and a direct link to comprehensive documentation. You can navigate between different occurrences of the same static analysis rule violation using the slider located in the rule’s header. This integrated guidance supports developers in 
 addressing issues promptly and effectively.
 
-:::image type="content" source="media\web-automation\get-details-of-element-on-web-page-action.png" alt-text="Screenshot of the Get details of element on web page action.":::
+:::image type="content" source="media\static-analysis\Static-analysis-pad-details.png" alt-text="The details of a static analysis rule.":::
 
 ## Rules of static analysis
 <a name="unsafepasswordsecurity"></a>
