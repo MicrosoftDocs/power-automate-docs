@@ -4,7 +4,7 @@ description: Learn about how to upload custom developed actions for desktop flow
 author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/19/2023
 ms.author: dipapa
 ms.reviewer: jpapadimitriou

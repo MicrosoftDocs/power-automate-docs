@@ -10,7 +10,7 @@ ms.author: dbekirop
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/01/2025
 search.audienceType: 
   - flowmaker

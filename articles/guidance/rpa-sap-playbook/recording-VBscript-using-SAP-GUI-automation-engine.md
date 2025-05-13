@@ -7,7 +7,7 @@ author: kathyos
 editor: ''
 ms.custom: guidance
 
-ms.topic: article
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/25/2021

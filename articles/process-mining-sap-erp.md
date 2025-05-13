@@ -7,7 +7,7 @@ contributors:
   - v-aangie 
 ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/27/2023
 ms.custom: bap-template
 ms.author: michalrosik

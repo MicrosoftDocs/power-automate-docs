@@ -10,7 +10,7 @@ ms.reviewer: angieandrews
 editor: ''
 tags: ''
 
-ms.topic: article
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/06/2021

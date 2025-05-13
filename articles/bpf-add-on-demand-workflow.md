@@ -9,7 +9,7 @@ ms.author: matow
 ms.date: 07/12/2018
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 applies_to: 
   - Dynamics 365 (online)
   - Dynamics 365 Version 9.x

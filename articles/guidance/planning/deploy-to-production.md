@@ -4,7 +4,7 @@ description: When you deploy an automation, consider how you'll replace the curr
 author: taiki-yoshida
 ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: best-practice
 ms.custom: guidance
 ms.date: 12/10/2020
 ms.author: mapichle

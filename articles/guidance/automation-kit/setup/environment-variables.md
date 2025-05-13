@@ -9,7 +9,7 @@ Contributors:
   - v-aangie
 editor: ''
 ms.custom: guidance
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/21/2023
 ms.author: macarrer
 ms.reviewer: angieandrews

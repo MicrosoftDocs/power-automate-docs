@@ -4,7 +4,7 @@ description: Learn how to create a business process flow
 ms.date: 01/15/2025
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: tutorial
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"

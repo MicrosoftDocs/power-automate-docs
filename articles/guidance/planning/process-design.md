@@ -4,7 +4,7 @@ description: When you design a process automation, the first step is to decide w
 author: taiki-yoshida
 ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: guidance
 ms.date: 12/10/2020
 ms.author: mapichle

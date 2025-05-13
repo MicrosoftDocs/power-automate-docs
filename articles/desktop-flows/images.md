@@ -3,7 +3,7 @@ title: Images
 description: Use the images pane to manage images in a desktop flow.
 author: mattp123
 
-ms.topic: conceptual
+ms.topic: article
 ms.date: 09/22/2020
 ms.author: matp
 ms.reviewer: matp

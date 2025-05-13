@@ -4,7 +4,7 @@ description: Planning is the most important part of automating processes. This a
 author: taiki-yoshida
 ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: guidance
 ms.date: 12/10/2020
 ms.author: mapichle

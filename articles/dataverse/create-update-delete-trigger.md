@@ -9,7 +9,7 @@ contributors:
   - v-aangie
 ms.author: matow
 ms.reviewer: angieandrews
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/18/2025
 ms.collection: bap-ai-copilot
 search.app: 

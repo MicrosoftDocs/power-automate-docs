@@ -4,7 +4,7 @@ description: Learn about top scenarios where you can use Power Automate to manag
 author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/09/2024
 ms.author: ralinga
 ms.reviewer: angieandrews

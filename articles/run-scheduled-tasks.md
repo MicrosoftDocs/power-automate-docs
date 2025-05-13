@@ -13,7 +13,7 @@ ms.author: matow
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/14/2025
 ms.custom: bap-template
 ms.collection: bap-ai-copilot

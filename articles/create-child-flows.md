@@ -9,7 +9,7 @@ ms.date: 04/08/2022
 ms.assetid: 6e6d3c34-b209-ea11-a811-000d3a4f1cdd
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: dbekirop
 ms.reviewer: angieandrews
 dynamics365pdf: True
