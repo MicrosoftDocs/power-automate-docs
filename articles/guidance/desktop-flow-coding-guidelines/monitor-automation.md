@@ -1,71 +1,72 @@
 ---
 title: Monitor and troubleshoot your automation processes
-description: Monitor and troubleshoot your automation processes with actionable insights to ensure reliability and efficiency. Learn how to optimize and maintain seamless operations.
-# customer intent: As a Power Automate user, I want to monitor desktop flow action logs so that I can ensure seamless operation and troubleshoot issues effectively.
+description: Learn how to monitor desktop flow action logs and troubleshoot issues effectively to ensure smooth automation processes in Power Automate.
 author: PetrosFeleskouras
 ms.subservice: guidance
-ms.topic: conceptual
-ms.date: 04/29/2025
+ms.topic: best-practice
+ms.date: 05/14/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:05/14/2025
 ---
 
 # Monitor and troubleshoot your automation processes
 
-Monitor and troubleshoot your automation activities to ensure seamless operation. Get insights into maintaining and optimizing your automation processes so they stay reliable and efficient. Whether you're managing desktop flows or analyzing tenant-level performance, these strategies help ensure smooth operations and resolve issues effectively.
+Monitor and troubleshoot your automation activities to ensure seamless operation. This article provides advice on maintaining and optimizing your automation processes to keep them reliable and efficient. 
 
 ## Capture desktop flow run action logs
 
-- Configure the desktop flow action log version to **V2**. Logs V2 uses Elastic Tables, provides automatic data retention, and can scale up to gigabytes of action logs per run. Learn more about [Desktop flow action logs configuration](/power-automate/desktop-flows/configure-desktop-flow-logs).
+To monitor and troubleshoot your desktop flow runs, capture action logs. Action logs provide detailed information about the execution of each action in your desktop flow, including input and output values, errors, and warnings.
 
-- With logs V2, you get near real-time updates of actions as your desktop flow runs. Learn more about [progressive action logging](/power-automate/desktop-flows/monitor-run-details#progressive-action-logging).
+- Configure the desktop flow action log version to **V2**. Logs V2 uses Elastic Tables, provides automatic data retention, and can scale up to gigabytes of action logs per run. Learn more about [Desktop flow action logs configuration](../../desktop-flows/configure-desktop-flow-logs.md).
 
-:::image type="content" source="media/monitor-automation-processes/desktop-flow-run.png" alt-text="Screenshot of desktop flow action logs configuration screen." lightbox = "media/monitor-processes/desktop-flow-run.png":::
+- Logs V2 provides near real-time updates of actions as your desktop flow runs. Learn more about [progressive action logging](../../desktop-flows/monitor-run-details.md#progressive-action-logging).
 
-- Use the [**Log message** action](/power-automate/desktop-flows/actions-reference/logging) to log custom text messages with a severity level of Info, Warning, or Error in the flow run action details.
+:::image type="content" source="media/monitor-automation-processes/desktop-flow-run.png" alt-text="Screenshot from the Power Platform admin center showing the configuration of desktop flow run action logs." lightbox="media/monitor-processes/desktop-flow-run.png":::
 
-- Use the **Display message** action to show messages on the user’s screen that are also logged in the flow run details. These messages are useful for interacting with attended flow runs and debugging.
+- Use the [**Log message** action](../../desktop-flows/actions-reference/logging.md) to log custom text messages with a severity level of Info, Warning, or Error in the flow run action details.
 
-- As an alternative logging method, use your own custom logging mechanism. For example, use the **Microsoft Dataverse**, **SharePoint**, or **File** actions to log custom messages to a cloud or local location.
+- Use the **Display message** action to show messages on the user's screen that are also logged in the flow run details. These messages are useful for interacting with attended flow runs and debugging.
+
+- Use your own custom logging mechanism. For example, use the **Microsoft Dataverse**, **SharePoint**, or **File** actions to log custom messages to a cloud or local location.
 
 - Use log messages to track flow progress and record important details such as input values, output values, intermediate results, or error messages.
 
 - Use the **Get last error** action to capture and log the last error in the flow.
 
-## Use the Automation center and other out-of-the-box reports
+## Use Automation center reports
 
-There are two types of reports - Environment level reports and Tenant level reports.
+There are two types of reports: environment-level reports and tenant-level reports.
 
 ### Environment level reports
 
-The [Automation center](/power-automate/automation-center-overview) in the Power Automate portal is a centralized hub to monitor and manage automation activity within an environment.
+The [Automation center](../../automation-center-overview.md) in the Power Automate portal is a centralized hub to monitor and manage automation activity within an environment. It shows all automation-related data, including a process map, recommendations, execution logs, performance metrics, and an integrated copilot.
 
-It shows all automation-related data, including a process map, recommendations, execution logs, performance metrics, and an integrated copilot.
+Reports available in the Automation center include:
 
-Here's a list of additional automation-related out-of-the-box reports:
+- **Cloud flow activity**: View a summary of daily cloud flow activity.
 
-- **Cloud flow activity** - View a summary of daily cloud flow activity.
+- [**Desktop flow activity**](../../desktop-flows/desktop-flow-activity.md): Monitor and manage your desktop automations and machines.
 
-- [**Desktop flow activity**](/power-automate/desktop-flows/desktop-flow-activity) - Monitor and manage your desktop automations and machines.
+- [**Desktop flow runs**](../../desktop-flows/monitor-desktop-flow-runs.md): Troubleshoot issues using an overview of your desktop automations.
 
-- [**Desktop flow runs**](/power-automate/desktop-flows/monitor-desktop-flow-runs) - Troubleshoot issues using an overview of your desktop automations.
-
-- [**Capacity utilization**](/power-automate/desktop-flows/capacity-utilization) - Get an overview of your capacity utilization and recommendations to manage your automations and the desktop infrastructure more efficiently.
+- [**Capacity utilization**](../../desktop-flows/capacity-utilization.md): Get an overview of capacity utilization and recommendations to manage automations and desktop infrastructure efficiently.
 
 ### Tenant level reports
 
-The [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center shows **detailed analytics** to help you understand the health of your enterprise automations and **proactive recommendations** to improve your flows’ health and efficiency.
+The [Monitor page](/power-platform/admin/monitoring/monitoring-overview) in the Power Platform admin center provides detailed analytics to help you understand the health of your enterprise automations and offers proactive recommendations to improve the health and efficiency of your flows across environments. The Monitor page also highlights resources with degraded operational health that might need improvement.
 
-It lets you measure and improve the operational health metrics of your automation-related assets across environments and highlights resources with degraded operational health that might need improvement.
+:::image type="content" source="media/monitor-automation-processes/tenant-reports.png" alt-text="Screenshot of the Monitor page in the Power Platform admin center showing Power Automate analytics." lightbox="media/monitor-automation-processes/tenant-reports.png":::
 
-:::image type="content" source="media/monitor-automation-processes/tenant-reports.png" alt-text="Screenshot of the Monitor page in the Power Platform admin center showing analytics and recommendations." lightbox = "media/monitor-automation-processes/tenant-reports.png":::
-
-## Build your own reports on MS Fabric
+## Build your own reports using Microsoft Fabric
 
 For more advanced or custom monitoring, reporting, and analysis, integrate with Microsoft Fabric. The **Link to Microsoft Fabric** feature in Power Platform lets you access all your Power Automate data in Microsoft OneLake, the built-in data lake for Microsoft Fabric.
 
-:::image type="content" source="media/monitor-automation-processes/fabric.png" alt-text="Screenshot of Microsoft Fabric interface showing Power Automate data in OneLake." lightbox = "media/monitor-automation-processes/fabric.png":::
+:::image type="content" source="media/monitor-automation-processes/fabric.png" alt-text="Screenshot of Power Apps interface showing integration with Microsoft Fabric." lightbox="media/monitor-automation-processes/fabric.png":::
 
-Learn how to [generate automation-centric data analytics with Fabric](/power-automate/automation-analytics-with-fabric-introduction) and [create automation-related SQL queries](/power-automate/automation-analytics-with-fabric-queries) on the SQL Analytical Endpoint in Fabric.
+Learn how to [generate automation-centric data analytics with Fabric](../../automation-analytics-with-fabric-introduction.md)and [create automation-related SQL queries](../../automation-analytics-with-fabric-queries.md) on the SQL Analytical Endpoint in Fabric.

@@ -4,7 +4,7 @@ description: Learn how to distribute workloads dynamically using machine groups 
 # customer intent: As a Power Automate user, I want to distribute workloads dynamically using machine groups so that I can improve automation efficiency.
 author: PetrosFeleskouras
 ms.subservice: guidance
-ms.topic: best=practice
+ms.topic: best-practice
 ms.date: 05/14/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
@@ -75,7 +75,7 @@ Learn more about [work queues](../../desktop-flows/work-queues.md).
 
 Reuse desktop flows related components, like child desktop flows, UI elements, and custom actions within an environment.
 
-- Desktop flows shared among users in an environment are visible in the Power Automate for desktop console's **Shared with me** tab and in the Power Automate portal's **My flows > Desktop flows** page. To view them, filter the **Access** column by the **Shared with me** value. To trigger a shared desktop flow and reuse it from other desktop flows, use the **Run desktop flow** action. Learn more about [sharing desktop flows](../../desktop-flows/manage.md#share-desktop-flows) and the [Run desktop flow action](../../desktop-flows/actions-reference.md#runflow).
+- Desktop flows shared among users in an environment are visible in the Power Automate for desktop console's **Shared with me** tab and in the Power Automate portal's **My flows > Desktop flows** page. To view them, filter the **Access** column by the **Shared with me** value. To trigger a shared desktop flow and reuse it from other desktop flows, use the **Run desktop flow** action. Learn more about [sharing desktop flows](../../desktop-flows/manage.md#share-desktop-flows) and the [Run desktop flow action](../../desktop-flows/actions-reference/runflow.md).
 
 
 - UI element collections let you control and manage groups of UI elements centrally. These collections can be shared across multiple users and imported into multiple desktop flows. When an application is updated, you only need to adjust the UI elements collection once. All desktop flows referencing this collection in the same environment automatically reflect the change. Learn more about [UI elements collections](../../desktop-flows/ui-elements-collections.md).  
