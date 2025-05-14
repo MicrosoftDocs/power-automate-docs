@@ -16,7 +16,7 @@ ms.custom:
 
 # Configure automatic updates for Power Automate for desktop
 
-Starting with the April 2025 (2.54) release of Power Automate for desktop, machines upgrade automatically to new versions in the background without requiring user interaction.
+Starting with the June 2025 (2.57) release of Power Automate for desktop, machines upgrade automatically to new versions in the background without requiring user interaction.
 
 > [!IMPORTANT]
 > - This article only applies to the MSI version of Power Automate for desktop. The store version's updates are managed by the Windows Store.
