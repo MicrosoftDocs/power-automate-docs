@@ -19,7 +19,8 @@ search.audienceType:
 No matter how simple or complex a Power Automate desktop flow is, maintaining quality is critical as the flow grows more complex.
 
 These coding guidelines provide standards for building readable and maintainable desktop flows, optimizing end-to-end process performance, securing your data, and monitoring your automation processes.
+
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Build readable and maintainable flow scripts](build-readable-and-maintainable-flow-scripts.md.md)
+> [Build readable and maintainable flow scripts](build-readable-and-maintainable-flow-scripts.md)

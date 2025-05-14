@@ -20,15 +20,15 @@ Building flow scripts in Power Automate with clarity and organization improves d
 
 Provide descriptive and meaningful names for subflows, variables, UI elements, and images.
 
-For variables (Input/Output and Flow variables):
+For variables (input/output and flow variables):
 
 - Use camelCase, PascalCase, or underscores to separate words.  
 - Add a datatype prefix to variable names.  
-- For Input/Output variables, add a prefix to both the variable name and external name to distinguish them from flow variables and other variables outside the flow designer.
+- For input/output variables, add a prefix to both the variable name and external name to distinguish them from flow variables and other variables outside the Desktop flow designer.
 
-:::image type="content" source="media/build-flow-scripts/variables.png" alt-text="Screenshot of the flow designer interface showing use of prefixes in names to distinguish variables." lightbox="media/build-flow-scripts/variables.png":::
+:::image type="content" source="media/build-flow-scripts/variables.png" alt-text="Screenshot of the variables pane in Desktop flow designer showing use of prefixes in names to distinguish variables." lightbox="media/build-flow-scripts/variables.png":::
 
-Follow best practices for cloud flows by learning more about [using consistent naming for flow components](../coding-guidelines/use-consistent-naming-conventions.md).
+Follow best practices for cloud flows by learning more about [using consistent naming for flow components](../coding-guidelines/use-consistent-naming-conventions.md). Learn more about [managing variables and the variables pane in Desktop flow designer](../../desktop-flows/manage-variables.md).
 
 ## Add comments
 
@@ -67,7 +67,7 @@ Create subflows to group related actions or reusable tasks.
 
     :::image type="content" source="media/build-flow-scripts/run-subflow.png" alt-text="Screenshot of the Run subflow action." lightbox="media/build-flow-scripts/run-subflow.png":::
 
-Learn more about [setting up subflows](../../desktop-flows/designer-workspace.md#setting-up-subflows)
+Learn more about [setting up subflows](../../desktop-flows/designer-workspace.md#setting-up-subflows).
 
 ### Reusable flows
 
