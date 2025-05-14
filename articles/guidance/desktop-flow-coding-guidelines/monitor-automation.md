@@ -27,7 +27,7 @@ To monitor and troubleshoot your desktop flow runs, capture action logs. Action 
 
 - Logs V2 provides near real-time updates of actions as your desktop flow runs. Learn more about [progressive action logging](../../desktop-flows/monitor-run-details.md#progressive-action-logging).
 
-:::image type="content" source="media/monitor-automation-processes/desktop-flow-run.png" alt-text="Screenshot from the Power Platform admin center showing the configuration of desktop flow run action logs." lightbox="media/monitor-processes/desktop-flow-run.png":::
+:::image type="content" source="media/monitor-automation-processes/desktop-flow-run.png" alt-text="Screenshot from the Power Platform admin center showing the configuration of desktop flow run action logs." lightbox="media/monitor-automation-processes/desktop-flow-run.png":::
 
 - Use the [**Log message** action](../../desktop-flows/actions-reference/logging.md) to log custom text messages with a severity level of Info, Warning, or Error in the flow run action details.
 
