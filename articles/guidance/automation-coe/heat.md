@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 09/28/2022
 ms.service: power-automate
 ms.subservice: guidance
-ms.author: kathyos
+ms.author: mapichle
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin

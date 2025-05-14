@@ -1,7 +1,7 @@
 ---
 title: Using loops
 description: Using loops
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to

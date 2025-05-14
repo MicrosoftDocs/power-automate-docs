@@ -1,7 +1,7 @@
 ---
 title: Use passwords
 description: Learn how to use passwords in desktop flow actions.
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
