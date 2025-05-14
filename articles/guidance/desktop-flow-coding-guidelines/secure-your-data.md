@@ -53,7 +53,7 @@ The values of sensitive variables are masked during debugging in the flow design
 
 - Instead of passing sensitive values to the desktop flow as input variables, use the **Get credential** action. This practice ensures that credential variables are marked as sensitive by default and aren't stored in flow run logs.
 
-Learn more about [sensitive variables](../../desktop-flows/manage-variables#sensitive-variables.md) and [using passwords in desktop flows](../../desktop-flows/how-to/use-passwords.md).
+Learn more about [sensitive variables](../../desktop-flows/manage-variables.md#sensitive-variables) and [using passwords in desktop flows](../../desktop-flows/how-to/use-passwords.md).
 
 ## Manage access to desktop flows
 
