@@ -23,4 +23,4 @@ These coding guidelines provide standards for building readable and maintainable
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Build readable and maintainable flow scripts](build-readable-and-maintainable-flow-scripts.md)
+> [Build readable and maintainable flow scripts](build-readable-flow-scripts.md)
