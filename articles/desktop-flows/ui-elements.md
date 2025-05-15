@@ -34,7 +34,7 @@ To add a new UI element to your flow, add a new UI element through an action or 
 > [!NOTE]
 > The UI element picker now supports capturing both UI Automation (UIA) and Microsoft Active Accessibility (MSAA) selectors when working with desktop UI elements. By default, the picker operates in UIA mode. You can
 > change the capturing mode using the menu located in the top-right corner of the UI element picker. Select MSAA to target legacy applications that do not expose UIA selectors. When MSAA mode is enabled, a banner will
-> appear in the UI element picker to indicate that you are capturing MSAA selectors.
+> appear in the UI element picker to indicate that you are capturing MSAA selectors. To better understand the difference between UIA and MSAA selectors you can find a description [here](#ui-elements-types)
 
 Any captured UI elements will be added to the UI elements pane. To access the UI elements pane, select the UI elements tab on the right-hand side of the flow designer.
 
