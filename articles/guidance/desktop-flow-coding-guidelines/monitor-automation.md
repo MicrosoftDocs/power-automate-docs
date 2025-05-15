@@ -1,6 +1,7 @@
 ---
-title: Monitor and troubleshoot your automation processes
+title: Monitor and troubleshoot automation processes
 description: Learn how to monitor desktop flow action logs and troubleshoot issues effectively to ensure smooth automation processes in Power Automate.
+#customer intent: As a Power Automate user, I want to capture detailed logs of my automation runs so that I can troubleshoot errors efficiently.
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
@@ -15,7 +16,7 @@ ms.custom:
   - ai-seo-date:05/14/2025
 ---
 
-# Monitor and troubleshoot your automation processes
+# Monitor and troubleshoot automation processes
 
 Monitor and troubleshoot your automation activities to ensure seamless operation. This article provides advice on maintaining and optimizing your automation processes to keep them reliable and efficient. 
 
