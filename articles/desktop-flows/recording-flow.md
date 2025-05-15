@@ -59,7 +59,7 @@ The recorder now supports capturing both UI Automation (UIA) and Microsoft Activ
 - **UI Automation (UIA)** is the modern accessibility framework introduced by Microsoft to replace MSAA. It is the recommended technology for automating most Windows applications, especially those built with newer UI frameworks such as WPF, WinForms, and Universal Windows Platform (UWP). UIA offers more robust and detailed element information, improved hierarchy structures, and greater reliability in automation scenarios.
 Use UIA capturing mode whenever possible for better performance, maintainability, and support across modern desktop applications.
 
-- **Microsoft Active Accessibility (MSAA)**-- is an older accessibility technology that predates UIA. It is primarily used for legacy applications that do not expose UIA elements, such as older Windows applications built with technologies like VB6 or classic Win32. While MSAA provides less detail and structure than UIA, it is essential for enabling automation in environments where UIA is not available.
+- **Microsoft Active Accessibility (MSAA)** is an older accessibility technology that predates UIA. It is primarily used for legacy applications that do not expose UIA elements, such as older Windows applications built with technologies like VB6 or classic Win32. While MSAA provides less detail and structure than UIA, it is essential for enabling automation in environments where UIA is not available.
 Use MSAA capturing mode when targeting legacy or custom-built applications that do not expose their UI components through UIA.
 
 
