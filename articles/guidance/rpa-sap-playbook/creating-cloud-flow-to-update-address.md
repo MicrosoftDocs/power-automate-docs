@@ -7,11 +7,11 @@ author: kathyos
 editor: ''
 ms.custom: guidance
 
-ms.topic: article
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2022
-ms.author: kathyos
+ms.author: mapichle
 ms.reviewer: angieandrews
 ---
 

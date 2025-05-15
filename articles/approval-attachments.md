@@ -2,7 +2,7 @@
 title: Create approval flows with attachments
 description: Learn how to create flows that send attachments with approval requests.
 suite: flow
-author: HeatherOrt
+author: kewaiss
 contributors:
   - hamenon-ms
   - natalie-pienkowska
@@ -10,7 +10,7 @@ contributors:
   - v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/12/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews

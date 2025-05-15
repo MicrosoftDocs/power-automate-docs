@@ -11,7 +11,7 @@ editor: ''
 tags: ''
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/19/2023

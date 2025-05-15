@@ -1,14 +1,14 @@
 ---
 title: Run desktop flows via URL or desktop shortcuts
 description: See how to run desktop flows via URL or desktop shortcuts.
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/28/2023
 ms.author: nimoutzo
 ms.reviewer: matp
-contributors:
+contributors: yiannismavridis
 search.audienceType: 
   - flowmaker
   - enduser
@@ -154,7 +154,7 @@ A URL containing the `runId` input parameter should have the following structure
 To trigger a flow using the command prompt, use a command with the following syntax (applies to MSI installations):
 
 ```
-"C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe" "ms-powerautomate:/console/flow/run?workflowName=[workflowName]"
+"C:\Program Files (x86)\Power Automate Desktop\dotnet\PAD.Console.Host.exe" "ms-powerautomate:/console/flow/run?workflowName=[workflowName]"
 ```
 
 > [!NOTE]
@@ -170,7 +170,7 @@ To trigger a flow using the Task Scheduler application of Windows:
    
    - For MSI installations:
     ```
-    C:\Program Files (x86)\Power Automate Desktop\PAD.Console.Host.exe
+    C:\Program Files (x86)\Power Automate Desktop\dotnet\PAD.Console.Host.exe
     ```
 
    - For Microsoft Store installations:

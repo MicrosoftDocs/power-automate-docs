@@ -4,7 +4,7 @@ description: This FAQ discusses Power Automate for desktop natural language to c
 ms.date: 04/01/2025
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: conceptual
+ms.topic: faq
 author: Cochamos
 ms.author: cochamos
 ms.reviewer: angieandrews

@@ -10,7 +10,7 @@ ms.reviewer: angieandrews
 editor: ''
 tags: ''
 
-ms.topic: article
+ms.topic: troubleshooting-known-issue
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/07/2021

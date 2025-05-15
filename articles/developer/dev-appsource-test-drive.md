@@ -4,7 +4,7 @@ description: Use AppSource to share apps with customers, and generate leads for 
 author: maordp
 ms.service: power-automate
 ms.subservice: developer
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/06/2025
 ms.author: maord
 ms.reviewer: angieandrews

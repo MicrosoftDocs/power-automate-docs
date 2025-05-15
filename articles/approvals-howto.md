@@ -2,10 +2,10 @@
 title: How to - Top scenarios with approval flows
 description: Get help on implementing top scenarios for approval processes with flows.
 suite: flow
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: how-to
 ms.date: 01/12/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews

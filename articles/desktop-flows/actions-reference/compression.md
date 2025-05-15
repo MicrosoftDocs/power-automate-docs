@@ -1,7 +1,7 @@
 ---
 title: Compression actions reference
 description: See all the available compression actions.
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference

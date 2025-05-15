@@ -7,11 +7,11 @@ author: Grant-Archibald-MS
 editor: ''
 ms.custom: guidance
 
-ms.topic: article
+ms.topic: best-practice
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
-ms.author: grarchib
+ms.author: mapichle
 ms.reviewer: angieandrews
 ---
 

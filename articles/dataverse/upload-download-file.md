@@ -4,10 +4,10 @@ description: Learn how upload or download image and file content in Microsoft Da
 services: ''
 suite: flow
 documentationcenter: na
-author: HeatherOrt
-ms.author: Matow
+author: kewaiss
+ms.author: matow
 ms.reviewer: angieandrews
-ms.topic: article
+ms.topic: how-to
 ms.date: 03/06/2021
 search.audienceType: 
   - maker

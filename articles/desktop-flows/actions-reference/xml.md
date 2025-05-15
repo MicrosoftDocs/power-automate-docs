@@ -1,7 +1,7 @@
 ---
 title: XML actions reference
 description: Display the XML actions.
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
