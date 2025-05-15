@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 05/12/2025
+ms.date: 05/15/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 search.audienceType: 
@@ -21,3 +21,8 @@ The articles in this section provide standards and best practices for developing
 These guidelines are intended for all Power Automate makers, including citizen developers and professional developers. Although this guidance is intended for makers of cloud flows, much of it can be applied to any type of flow.
 
 [!INCLUDE [pp-tip-powercat-toolkit](~/../shared-content/shared/guidance-includes/pp-tip-powercat-toolkit.md)]
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Use consistent naming conventions](use-consistent-naming-conventions.md)
