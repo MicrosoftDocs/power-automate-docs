@@ -1185,7 +1185,7 @@
     - name: How to use process capacity
       href: ./desktop-flows/capacity-process.md
   - name: Savings (preview)
-    href: ./desktop-flows/savings.md
+    href: savings.md
 - name: Administration
   items:
   - name: Power Automate sign-up FAQ
