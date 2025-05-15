@@ -1,6 +1,6 @@
 ---
 title: Savings in Power Automate (Preview)
-description: Understand how your Power Automate automation can generate savings
+description: Understand how your Power Automate cloud flows can generate savings to track the impact of your automation in terms of time and money saved.
 author: cvassallo
 ms.service: power-automate
 ms.subservice: desktop-flow
