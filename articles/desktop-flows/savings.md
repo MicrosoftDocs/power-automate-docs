@@ -1,5 +1,5 @@
 ---
-title: Savings in Power Automate
+title: Savings in Power Automate (Preview)
 description: Understand how your Power Automate automation can generate savings
 author: cvassallo
 ms.service: power-automate
@@ -12,7 +12,16 @@ ms.topic: article
 
 # Savings in Power Automate (Preview)
 
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
 The savings feature provides a way to calculate how much time and/or money a cloud flow is saving to its organization. Each cloud flow can now be added a user-defined saving-rule which generates savings at successful cloud flow runs.
+
+> [!IMPORTANT]
+> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - For more information, go to our [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520).
+> - This feature is rolling out and might not be available in your area yet. To try it out today, you can either use an existing preview environment or create a new one. Learn more about how to create a preview environment in [Early release cycle environments](/power-platform/admin/early-release).
+
+With the savings feature, two new concepts are added to Power Automate:
 
 |Concept|Definition|
 |----|-------------------------------------------|
