@@ -95,7 +95,7 @@ The name of the file is needed for the respective property representing it. Use 
 Then add the custom object representing the file in the list of file attachments. To do that, use the **Add item to list** action. In the **Item** property, reference the custom object using the following syntax:
 
 ```robin
-{'Name': %variable holding the file name%, 'ContentBytes': %variable containing the binary data%}
+%{ 'Name': variable_holding_the_file_name , 'ContentBytes': variable_containing_the_binary_data }%
 ```
 
 :::image type="content" source="media\office365outlook\add-item-to-list.png" alt-text="Screenshot of the Add item to list action.":::
