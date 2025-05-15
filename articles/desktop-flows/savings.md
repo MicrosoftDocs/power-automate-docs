@@ -27,11 +27,7 @@ The savings feature provides a way to calculate how much time and/or money a clo
 
 The saving rule can be defined on the cloud flow details page by clicking on the **savings icon** in the page action bar : 
 
-
-
-The **Process & Unattended RPA capacity overview** pie chart helps you understand the capacity consumption within the environment, lets you know if there's still capacity to scale-up in the future, and alerts you when the utilized capacity is exceeding environment capacity (= overage).
-
-![Process capacity overview](media/capacity-utilization/unattended-capacity-overview.png)
+![Savings rule edition](media/savings/savings_edition.png)
 
 |-|Legend|Description|
 |----|--------------------|----|
