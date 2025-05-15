@@ -5,7 +5,7 @@ author: PetrosFeleskouras
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 05/02/2025
+ms.date: 05/15/2025
 ms.author: pefelesk
 ms.reviewer: 
 contributors:
