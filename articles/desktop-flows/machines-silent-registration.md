@@ -161,6 +161,12 @@ You have two options to provide a secure input:
         ```CMD
         Get-Content <PathToSavedFile>\password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
         ```
-  
+
+        For CMD Prompt:
+        
+        ```CMD
+        .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword < c:\myfolder\password.txt
+        ```
+        
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
