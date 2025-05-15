@@ -21,8 +21,9 @@ The savings feature provides a way to calculate how much time and/or money a clo
 
 > [!NOTE]
 >
-> Savings is only supported by solution-based cloud flows
-> Only successful runs will generate savings (successful test runs don't)
+> - Savings is only supported by solution-based cloud flows
+> - Only successful runs will generate savings (successful test runs don't)
+> - Environment with dataverse for Teams can't use the savings feature
 
 ## How to set-up a saving rule
 
@@ -38,7 +39,8 @@ The saving rule can be defined on the cloud flow details page by clicking on the
 
 > [!NOTE]
 >
-> Money-saving rule based on hourly rate: the money-savings generated are rounded and don't save decimals. For example the user defines a time-saving baseline of 1 hour and 15 minutes per successful run and an hourly rate of 1$/hour, the money-saving associated should be 1.25$ on a successful run but it will be rounded to 1$.
+> - Money-saving rule based on hourly rate: the money-savings generated are rounded and don't save decimals.
+> - For example the user defines a time-saving baseline of 1 hour and 15 minutes per successful run and an hourly rate of 1$/hour, the money-saving associated should be 1.25$ on a successful run but it will be rounded to 1$.
 
 ## When are savings generated
 
