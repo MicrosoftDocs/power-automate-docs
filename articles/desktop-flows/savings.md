@@ -12,7 +12,7 @@ ms.topic: article
 
 # Savings in Power Automate (Preview)
 
-The savings feature provides a way to calculate how much time and/or money a cloud flow is saving to its organization. Each cloud flow can now be added a user-defined saving-rule which will be generate savings on successfull cloud flow runs.
+The savings feature provides a way to calculate how much time and/or money a cloud flow is saving to its organization. Each cloud flow can now be added a user-defined saving-rule which generates savings at successful cloud flow runs.
 
 |Concept|Definition|
 |----|-------------------------------------------|
@@ -22,33 +22,33 @@ The savings feature provides a way to calculate how much time and/or money a clo
 > [!NOTE]
 >
 > Savings is only supported by solution-based cloud flows
+> Only successful runs will generate savings (successful test runs don't)
 
 ## How to set-up a saving rule
 
-The saving rule can be defined on the cloud flow details page by clicking on the **savings icon** in the page action bar : 
+The saving rule can be defined on the cloud flow details page by clicking on the **savings icon** in the page action bar which opens the saving-rule edition dialog:
 
 ![Savings rule edition](media/savings/savings_edition.png)
 
-|-|Legend|Description|
-|----|--------------------|----|
-|![Legend color - Allocated as unattended bots to my machines](media/capacity-utilization/legend-used-by-unattended-machines.png)|Allocated as unattended bots to my machines|Compliant capacity allocated to machines, which the user owns or which are shared with them.|
-|![Legend color - Allocated to my cloud flows](media/capacity-utilization/legend-allocated-to-my-cloud-flows.png)|Allocated to my cloud flows|Compliant capacity allocated to cloud flows, which the user owns or which are shared with them.|
-|![Legend color - Utilized by other makers](media/capacity-utilization/legend-utilized-by-other-makers.png)|Utilized by other makers|Compliant capacity allocated to objects, which the user doesn't own and which weren't shared with them.|
-|![Legend color - Available capacity](media/capacity-utilization/legend-available-capacity.png)|Available capacity|Available capacity for new unattended bots on machines and new process plan on cloud flows.|
-|![Legend color - My overage utilization](media/capacity-utilization/legend-my-overage-utilization.png)|My overage utilization|Sum of capacities over-allocated to machines or/and to cloud flows, which the user owns or which are shared with them.|
-|![Legend color - Overage by other makers](media/capacity-utilization/legend-overage-by-other-makers.png)|Overage by other makers|Sum of capacities over-allocated to objects, which the user doesn't own and which weren't shared with them.|
+|Saving-rule|Definition|
+|----|-------------------------------------------|
+|Time saving rule|Define the manual processing time it usually takes to manually perform the actions being automated. The saving can be generated either on every successful run or once every hour/day/week if a successful run happened in that period.|
+|Money-saving rule based on hourly rate|The money-saving rule can be based on an hourly rate converting time-savings in money-savings. This mode is only available if the time-saving rule is enabled.|
+|Money-saving rule with user-defined baseline|Define the amount of money saved by the actions being automated. The saving can also be generated either on every successful run or once every hour/day/week if a successful run happened in that period.|
 
-## Process and Unattended RPA capacity insights
+> [!NOTE]
+>
+> For money-saving rule based on hourly rate: the money-savings generated are rounded and don't save decimals. For example the user defines a time-saving baseline of 1 hour and 15 minutes per successful run and an hourly rate of 1$/hour, the money-saving associated should be 1.25$ on a successful run but it will be rounded to 1$.
 
-The **Process and Unattended RPA capacity insights** card informs you of operation health and gives recommendations when there are compliance issues.
+## When are savings generated
 
-![Unattended capacity insight](media/capacity-utilization/unattended-capacity-insight-2.png)
+Once a saving-rule is saved on a cloud flow, every succesful run of this flow will contribute to generate savings. But the saving is not immediately generated after the successful run: a periodic update of the saving amount for the cloud flow is automatically performed. It can take up to one hour for a run to be accounted for in the savings amount of its cloud flow.
 
-|Badge|Message|Insight|
-|----|--------------------|----|
-|**Sufficient capacity**|There's available capacity for new unattended machines or for new process plans on cloud flows.|Scale-up possible in the future.|
-|**Fully utilized**|There's no more capacity for new unattended bots or for new process plans on cloud flows.|The capacity utilization rate is optimal at 100% but there's no room for scaling-up.|
-|**Capacity overage**|User has over-allocated capacity to their machines or/and to their cloud flows.|Uncompliant capacity usage exceeding environment capacity.|
+### How can you track the savings generated by your cloud flow
+
+You can visualize the saving generated by a cloud flow on its details card : 
+
+
 
 ## Process and Unattended RPA utilization details
 
