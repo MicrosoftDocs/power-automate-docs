@@ -5,7 +5,7 @@ description: Learn how to distribute workloads dynamically using machine groups 
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/14/2025
+ms.date: 05/15/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
@@ -32,7 +32,7 @@ Review [additional best practices](../../desktop-flows/run-desktop-flows-best-pr
 
 ## Use hosted machine groups to scale workloads
 
-Hosted machine groups use Microsoft hosted infrastructure running in Azure and offer several benefits over traditional machine groups. Here are some key advantages:
+Hosted machine groups use Microsoft hosted infrastructure running in Azure and offer several benefits over traditional machine groups.
 
 - **Automatic scaling**: Hosted machine groups scale automatically based on demand, reducing the need for manual intervention to add or remove machines.
 - **Dynamic load balancing**: Flows are allocated dynamically based on the workload.

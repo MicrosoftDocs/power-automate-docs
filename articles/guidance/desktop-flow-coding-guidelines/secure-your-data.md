@@ -5,7 +5,7 @@ description: Secure your Power Automate workflows by managing credentials, sensi
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/14/2025
+ms.date: 05/15/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
@@ -18,9 +18,7 @@ ms.custom:
 
 # Secure your data
 
-Protecting sensitive data is critical when automating processes with Power Automate. This article explains best practices and actionable steps to secure your data: setting up credentials, managing sensitive variables, controlling access to desktop flows and related components, enforcing data loss prevention (DLP) policies, and capturing audit logs. 
-
-Follow these guidelines to comply with security standards and safeguard your automation workflows.
+Protecting sensitive data is critical when automating processes with Power Automate. This article explains best practices and actionable steps to secure your data: setting up credentials, managing sensitive variables, controlling access to desktop flows and related components, enforcing data loss prevention (DLP) policies, and capturing audit logs. Follow these guidelines to comply with security standards and safeguard your automation workflows.
 
 ## Set up Power Automate credentials
 
@@ -68,9 +66,9 @@ Any user with access to a desktop flow can have owner, co-owner, or user access.
 
 Learn more about [managing desktop flows access](../../desktop-flows/manage.md#manage-desktop-flows-access) and [managing security for Power Automate](../../desktop-flows/desktop-flows-security.md). 
 
-## Manage access to desktop flows' related components
+## Manage access to the desktop flow's related components
 
-While sharing a desktop flow that references other Power Platform components, ensure that the end users have appropriate access to the connectors as well.
+While sharing a desktop flow that references other Power Platform components, ensure that end users have appropriate access to the connectors as well.
 
 Access is managed either through the dedicated page of each component in the Power Automate Portal or through a Dataverse security role that grants access to the records in the component's table.
 
@@ -89,7 +87,7 @@ The following table lists the most common components that may be referenced by a
 
 ## Enable data loss prevention (DLP) policies
 
-Protect your business data by creating and enforcing policies that classify desktop flows' action groups as **Business** or **Non-business** and to mark actions or action groups as **Blocked**.
+Protect your business data by creating and enforcing policies that classify the desktop flow's action groups as **Business** or **Non-business** and to mark actions or action groups as **Blocked**.
 
 :::image type="content" source="media/secure-your-data/data-privacy.png" alt-text="Screenshot of the interface for settting up a new security policy to assign a connector to Business, Non-business, or Blocked." lightbox="media/secure-your-data/data-privacy.png":::
 
@@ -101,7 +99,7 @@ Learn more about [data loss prevention (DLP) policies in desktop flows](../../de
 
 ## Capture audit logs
 
-Use Dataverse auditing to log changes and access to desktop flows' related tables.
+Use Dataverse auditing to track changes and access to tables related to desktop flows.
 
 Enable Dataverse auditing at both the environment level and for the specific automation-related tables where you intend to capture logs.
 

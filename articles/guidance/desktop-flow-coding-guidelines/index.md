@@ -1,14 +1,14 @@
 ---
 title: Power Automate desktop flow coding guidelines
-description: Learn best practices for building Power Automate desktop flows with coding guidelines. Improve consistency, performance, and maintainability.
+description: Learn best practices for building Power Automate desktop flows for building, optimizing, securing, and monitoring your Power Automate desktop flows.
 #customer intent: As a Power Automate user, I want to learn best practices for building and maintaining efficient desktop flows.
 author: PetrosFeleskouras
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 05/13/2025
+ms.date: 05/15/2025
 ms.author: pefelesk
-ms.reviewer: pankajsharma2087
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
   - flowmaker
@@ -16,9 +16,9 @@ search.audienceType:
 
 # Power Automate desktop flow coding guidelines
 
-No matter how simple or complex a Power Automate desktop flow is, maintaining quality is critical as the flow grows more complex.
+Desktop flows enable anyone—from individual users to large enterprises—to automate rule-based tasks on their workstations. With Power Automate, users can create flows to interact with everyday tools like email and Excel, as well as both modern and legacy applications. As flows grow more complex, maintaining quality becomes increasingly important to ensure reliability, efficiency, and ease of maintenance. 
 
-These coding guidelines provide standards for building readable and maintainable desktop flows, optimizing end-to-end process performance, securing your data, and monitoring your automation processes.
+Follow these coding and design guidelines to build readable and maintainable desktop flows, optimize end-to-end process performance, secure your data, and monitor your automation processes.
 
 ## Next step
 

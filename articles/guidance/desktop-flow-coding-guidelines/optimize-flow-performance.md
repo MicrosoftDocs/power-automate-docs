@@ -5,7 +5,7 @@ description: Learn how to optimize workflows in Power Automate for faster execut
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/13/2025
+ms.date: 05/15/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
@@ -24,7 +24,7 @@ Optimizing the performance of flows in Power Automate is essential for creating 
 
 When looking for actions to automate your app or service, consider the following priorities, listed from most to least preferable:
 
-1. Cloud connector actions. Learn more about [Cloud Connectors as Power Automate for desktop actions](../../desktop-flows/actions-reference/cloudconnectors.md).
+1. Cloud connector actions. Learn more about [Cloud connectors as Power Automate for desktop actions](../../desktop-flows/actions-reference/cloudconnectors.md).
 
     :::image type="content" source="media/optimize-flow-performance/actions.png" alt-text="Screenshot showing SharePoint actions in Desktop flow designer." lightbox="media/optimize-flow-performance/actions.png":::
 
@@ -42,9 +42,7 @@ For more advanced scenarios, consider **Scripting** actions, like **Run VBScript
 
 ## Apply error handling
 
-Proper error handling is crucial for ensuring that your flows run smoothly and can recover from unexpected issues.
-
-- Identify potential points of failure within your flow and handle them with the in-product error handling functionality.
+Identify potential points of failure within your flow and handle them with the in-product error handling functionality.
 
 - Handle errors for individual actions through their **On error** parameters.
 
@@ -64,9 +62,7 @@ Learn more about [configuring error handling functionality](../../desktop-flows/
 
 Using wait actions and timeouts can help improve flow performance and reliability.
 
-- Use **Wait for …** actions and set a timeout.
-
-- Avoid using the generic **Wait** action because it can lead to inefficiencies.
+- Use **Wait for …** actions and set a timeout. (Avoid using the generic **Wait** action.)
 
     :::image type="content" source="media/optimize-flow-performance/wait-for.png" alt-text="Screenshot showing Wait for actions in flow designer." lightbox="media/optimize-flow-performance/wait-for.png":::
 

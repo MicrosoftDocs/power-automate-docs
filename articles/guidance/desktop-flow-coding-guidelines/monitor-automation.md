@@ -4,7 +4,7 @@ description: Learn how to monitor desktop flow action logs and troubleshoot issu
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/14/2025
+ms.date: 05/15/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
@@ -25,9 +25,9 @@ To monitor and troubleshoot your desktop flow runs, capture action logs. Action 
 
 - Configure the desktop flow action log version to **V2**. Logs V2 uses Elastic Tables, provides automatic data retention, and can scale up to gigabytes of action logs per run. Learn more about [Desktop flow action logs configuration](../../desktop-flows/configure-desktop-flow-logs.md).
 
-- Logs V2 provides near real-time updates of actions as your desktop flow runs. Learn more about [progressive action logging](../../desktop-flows/monitor-run-details.md#progressive-action-logging).
+    Logs V2 also provides near real-time updates of actions as your desktop flow runs. Learn more about [progressive action logging](../../desktop-flows/monitor-run-details.md#progressive-action-logging).
 
-:::image type="content" source="media/monitor-automation-processes/desktop-flow-run.png" alt-text="Screenshot from the Power Platform admin center showing the configuration of desktop flow run action logs." lightbox="media/monitor-automation-processes/desktop-flow-run.png":::
+    :::image type="content" source="media/monitor-automation-processes/desktop-flow-run.png" alt-text="Screenshot from the Power Platform admin center showing the configuration of desktop flow run action logs." lightbox="media/monitor-automation-processes/desktop-flow-run.png":::
 
 - Use the [**Log message** action](../../desktop-flows/actions-reference/logging.md) to log custom text messages with a severity level of Info, Warning, or Error in the flow run action details.
 
@@ -47,14 +47,11 @@ There are two types of reports: environment-level reports and tenant-level repor
 
 The [Automation center](../../automation-center-overview.md) in the Power Automate portal is a centralized hub to monitor and manage automation activity within an environment. It shows all automation-related data, including a process map, recommendations, execution logs, performance metrics, and an integrated copilot.
 
-Reports available in the Automation center include:
+Other out-of-the-box reports include:
 
 - **Cloud flow activity**: View a summary of daily cloud flow activity.
-
 - [**Desktop flow activity**](../../desktop-flows/desktop-flow-activity.md): Monitor and manage your desktop automations and machines.
-
 - [**Desktop flow runs**](../../desktop-flows/monitor-desktop-flow-runs.md): Troubleshoot issues using an overview of your desktop automations.
-
 - [**Capacity utilization**](../../desktop-flows/capacity-utilization.md): Get an overview of capacity utilization and recommendations to manage automations and desktop infrastructure efficiently.
 
 ### Tenant level reports
@@ -69,4 +66,4 @@ For more advanced or custom monitoring, reporting, and analysis, integrate with 
 
 :::image type="content" source="media/monitor-automation-processes/fabric.png" alt-text="Screenshot of Power Apps interface showing integration with Microsoft Fabric." lightbox="media/monitor-automation-processes/fabric.png":::
 
-Learn how to [generate automation-centric data analytics with Fabric](../../automation-analytics-with-fabric-introduction.md)and [create automation-related SQL queries](../../automation-analytics-with-fabric-queries.md) on the SQL Analytical Endpoint in Fabric.
+Learn how to [generate automation-centric data analytics with Fabric](../../automation-analytics-with-fabric-introduction.md) and [create automation-related SQL queries](../../automation-analytics-with-fabric-queries.md) on the SQL Analytical Endpoint in Fabric.

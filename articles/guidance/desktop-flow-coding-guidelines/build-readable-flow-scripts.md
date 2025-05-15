@@ -5,7 +5,7 @@ description: Learn how to build clear and manageable flow scripts to improve eff
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/13/2025
+ms.date: 05/15/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
@@ -43,7 +43,7 @@ Use the **Comment** action to add notes in the flow script:
 :::image type="content" source="media/build-flow-scripts/comments.png" alt-text="Screenshot showing how to add comments in a flow script." lightbox="media/build-flow-scripts/comments.png":::
 
 > [!NOTE]  
-> Get help adding comments using the [Summarize actions and subflows Copilot skill](../../desktop-flows/copilot-in-power-automate-for-desktop.md#use-copilot-to-summarize-actions-and-subflows).
+> Get help adding comments using the [Summarize actions & subflows Copilot skill](../../desktop-flows/copilot-in-power-automate-for-desktop.md#use-copilot-to-summarize-actions-and-subflows).
 
 ## Add regions
 
