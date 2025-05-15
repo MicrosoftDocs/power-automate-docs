@@ -26,10 +26,11 @@ When using you own custom Fabric workspace, data from Power Automate Process Min
 
 > [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-## Set up your workspace
+## Set up your workspace (pre-requisites)
 
 To connect the workspace to the process mining capability and then customize the default report (or create a new one) you need to:
 
+- Ensure that [Users can access data stored in OneLake with apps external to the Fabric](/fabric/admin/service-admin-portal-onelake#users-can-access-data-stored-in-onelake-with-apps-external-to-fabric) option is switched on in the OneLake tenant settings.
 - Create and set up your Fabric workspace
 - Assign admin access rights on the workspace to Process Insights service principal
 - Create a Fabric Lakehouse in the connected workspace
