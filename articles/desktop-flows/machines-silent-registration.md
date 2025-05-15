@@ -162,10 +162,5 @@ You have two options to provide a secure input:
         Get-Content <PathToSavedFile>\password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
         ```
   
-        For cmd prompt:
-  
-        ```CMD
-         grouppassword < pwd.txt
-        ```
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
