@@ -14,14 +14,14 @@ ms.topic: article
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-The savings feature provides a way to calculate how much time and/or money a cloud flow is saving to your organization. You can add each cloud flow to a user-defined saving rule, which generates savings at successful cloud flow runs.
+The savings feature provides a way to calculate how much time and/or money a cloud flow is saving to your organization. You can add a user-defined saving rule to each cloud flow, which generates savings at successful cloud flow runs.
 
 > [!IMPORTANT]
 >- This is a preview feature.
 >- Preview features aren’t meant for production use and have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 >- For more information, go to our [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520).
 >- This feature is rolling out and might not be available in your area yet.
->- To try it out today, you can either use an existing preview environment or create a new one. Learn how to create a preview environment in [Early release cycle environments](/power-platform/admin/early-release).
+>- To try it out today, you can either use an existing preview environment in the US region or create a new one (in the US region). Learn how to create a preview environment in [Early release cycle environments](/power-platform/admin/early-release).
 
 The savings feature adds two concepts to Power Automate, as indicated in the following table.
 
@@ -54,8 +54,8 @@ The money-savings generated are rounded and don't save decimals.
 
 For example:
 - You define a time-saving baseline of 1 hour and 15 minutes per successful run.
-- You define a money-saving rule with an hourly rate of 1$/hour.
-- The money-saving associated should be 1.25$ on a successful run but it is rounded to 1$.
+- You define a money-saving rule with an hourly rate of $1/hour.
+- The money-saving associated should be $1.25 on a successful run but it is rounded to $1.
 
 ## When savings are generated
 
