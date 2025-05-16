@@ -2,7 +2,7 @@
 title: Process, add, update and requeue work queue items
 description: Work queue processing options through Power Automate cloud flows, desktop flows and Dataverse API's.
 ms.topic: how-to
-ms.date: 03/10/2025
+ms.date: 05/16/2025
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -209,9 +209,8 @@ The simplest way to dequeue a work queue item and process it is as follows:
   | --------- | ----- | ------------------------------ |
   | **Table name** | Work Queues | The name of the work queue table. |
   | **Action name** | Dequeue | The action, which gets the next available item from the queue.|
-  | **Row ID** | *[Work Queue ID]* | The work queue ID (GUID) of the queue you'd like to dequeue from. You can get to this value by navigating to the work queue details page of your queue and opening the **Advanced details** panel. 
-  | **request** | request | FetchXML in stringified JSON format you want to apply on the Work Queue ID. Example: ```{  "query": "<fetch mapping=\"logical\" returntotalrecordcount=\"true\" page=\"1\" count=\"1\" no-lock=\"false\">\n<entity name=\"workqueueitem\">\n<filter type=\"and\">\n<condition attribute=\"workqueueid\" operator=\"eq\" value=\"38b14649-cb09-ee11-8f6e-00224804934a\"/>\n<condition attribute=\"statuscode\" operator=\"eq\" value=\"0\"/>\n</filter>\n</entity>\n</fetch>"}```  _Note: The workqueueid parameter in condition attribute is mandatory._|
-
+  | **Row ID** | *[Work Queue ID]* | The work queue ID (GUID) of the queue you'd like to dequeue from. You can get to this value by navigating to the work queue details page of your queue and opening the **Advanced details** panel.
+  | **request** | request | FetchXML in stringified JSON format you want to apply on the Work Queue ID. Example: </br> ```{  "query": "<fetch mapping=\"logical\" returntotalrecordcount=\"true\" page=\"1\" count=\"1\" no-lock=\"false\">\n<entity name=\"workqueueitem\">\n<filter type=\"and\">\n<condition attribute=\"workqueueid\" operator=\"eq\" value=\"38b14649-cb09-ee11-8f6e-00224804934a\"/>\n<condition attribute=\"statuscode\" operator=\"eq\" value=\"0\"/>\n</filter>\n</entity>\n</fetch>"}```  </br>Note: The workqueueid parameter in the condition attribute is mandatory. |
 
   :::image type="content" source="media/work-queues/work-queue-advanced-fields.png" alt-text="Screenshot of a work queue details page with the work queue ID highlighted in the browser URL bar." lightbox="media/work-queues/work-queue-advanced-fields.png":::
 
