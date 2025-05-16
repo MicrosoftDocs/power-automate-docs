@@ -5,7 +5,7 @@ author: PetrosFeleskouras
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 05/02/2025
+ms.date: 05/15/2025
 ms.author: pefelesk
 ms.reviewer: 
 contributors:
@@ -53,7 +53,7 @@ Configure how Power Automate for desktop interacts with a proxy server using the
 
 ### How to update proxy configuration files
 
-All proxy configuration files are stored in the installation folder and are listed in the following table. The default installation folder location is "*C:\Program Files (x86)\Power Automate Desktop\dotnet*".
+All proxy configuration files are stored in the installation folder and are listed in the following table. The default installation folder location is "*C:\Program Files (x86)\Power Automate Desktop*".
 
 | Proxy file | Related component | Description | Component type | Account type |
 |---|---|---|---|---|

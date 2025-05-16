@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 07/01/2024
 ms.service: power-automate
 ms.subservice: guidance
-ms.author: kathyos
+ms.author: mapichle
 ms.reviewer: angieandrews
 
 search.audienceType: 
@@ -43,7 +43,7 @@ To get started, we recommend that you [learn about the HEAT techniques](heat.md)
 
 ## Additional strategy resources
 
-- Building an RPA and Automation Center of Excellence (video): <https://aka.ms/autocoestrategy>
+- Building an RPA and Automation Center of Excellence (video): <https://aka.ms/autocoeblueprintvideo>
 - Customer presentations:
   - Coca-Cola HQ Webinar: <https://aka.ms/cocacolaautomationplatform>
   - Coca-Cola United: <https://aka.ms/cocacolaunitedrpa>

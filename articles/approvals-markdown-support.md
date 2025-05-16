@@ -2,7 +2,7 @@
 title: Use Markdown language to format Power Automate approvals
 description: Learn how to use markdown to format Power Automate approval requests.
 suite: flow
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
