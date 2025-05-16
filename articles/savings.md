@@ -21,7 +21,7 @@ The savings feature provides a way to calculate how much time and/or money a clo
 >- Preview features aren’t meant for production use and have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 >- For more information, go to our [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520).
 >- This feature is rolling out and might not be available in your area yet.
->- To try it out today, you can either use an existing preview environment in the US region or create a new one (in the US region). Learn how to create a preview environment in [Early release cycle environments](/power-platform/admin/early-release).
+>- To try it out today, you can either use an existing preview environment or create a new one. Only preview environments in the US region and not in developer-type are supporting the feature. Learn how to create a preview environment in [Early release cycle environments](/power-platform/admin/early-release).
 
 The savings feature adds two concepts to Power Automate, as indicated in the following table.
 
