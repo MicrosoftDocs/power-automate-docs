@@ -5,7 +5,7 @@ author: kenseongtan
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 02/03/2025
+ms.date: 05/19/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -144,19 +144,23 @@ Custom VM images must meet the following requirements:
 - Microsoft Edge version 80 or higher
 - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
-#### Use specific version of Power Automate Desktop 
+#### Use a specific version of Power Automate Desktop
 
-When using custom VM images, the latest version of Power Automate for desktop is automatically installed during hosted machine group provisioning. 
+When you use custom VM images, the latest version of Power Automate for desktop installs automatically during hosted machine group provisioning.
 
-To use a specific Power Automate for desktop version instead, follow these steps:
+To use a specific version of Power Automate for desktop, follow these steps:
 
-1. Install the desired Power Automate for desktop version and include it in your custom VM image.  
-1. Add the following registry key to the image:  
-   `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global`  
-   - Create a string value named `UseInstalledPADForHosted`  
-   - Set its value to `True` (not case-sensitive)
+1. Install the version of Power Automate for desktop you want and include it in your custom VM image. 
+1. Add the following registry key to the image:
 
-This ensures that your hosted machine group uses the desired Power Automate for desktop version that is included in your custom VM image.
+    | Hive | Key | Name | Type | Value |
+    |---|---|---|---|---|
+    | HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global | DisableOptionalUpdates | String | True |
+
+    > [!CAUTION]
+    > Modifying Windows registry settings incorrectly can cause serious problems that may prevent your computer from booting properly. Microsoft cannot guarantee that any problems resulting from the configuring of registry settings can be solved. Modification of these settings is at your own risk. We strongly recommend that you [back up your Windows registry](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692) before proceeding.
+
+This ensures your hosted machine group uses the version of Power Automate for desktop included in your custom VM image.
 
 ### Create an Azure compute gallery in Azure and add an image
 
