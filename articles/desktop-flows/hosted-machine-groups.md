@@ -155,7 +155,7 @@ To use a specific version of Power Automate for desktop, follow these steps:
 
     | Hive | Key | Name | Type | Value |
     |---|---|---|---|---|
-    | HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global | DisableOptionalUpdates | String | True |
+    | HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global | UseInstalledPADForHosted | String | True |
 
     > [!CAUTION]
     > Modifying Windows registry settings incorrectly can cause serious problems that may prevent your computer from booting properly. Microsoft cannot guarantee that any problems resulting from the configuring of registry settings can be solved. Modification of these settings is at your own risk. We strongly recommend that you [back up your Windows registry](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692) before proceeding.
