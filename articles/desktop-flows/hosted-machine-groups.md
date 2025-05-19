@@ -144,6 +144,19 @@ Custom VM images must meet the following requirements:
 - Microsoft Edge version 80 or higher
 - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
+#### Use specific version of Power Automate Desktop 
+
+When using custom VM images, the latest version of Power Automate Desktop (PAD) is automatically installed during hosted machine group provisioning. 
+
+To use a specific PAD version instead, follow these steps:
+
+1. Install the desired PAD version and include it in your custom VM image.  
+1. Add the following registry key to the image:  
+   `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global`  
+   - Create a string value named `UseInstalledPADForHosted`  
+   - Set its value to `True` (not case-sensitive)
+
+This ensures that your hosted machine group uses the desired PAD version that is included in your custom VM image.
 
 ### Create an Azure compute gallery in Azure and add an image
 
