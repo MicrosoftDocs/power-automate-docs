@@ -11,7 +11,7 @@ applies_to:
   - "Power Apps"
 ms.assetid: efe86ab3-430f-485a-b924-6ed82cfbb449
 caps.latest.revision: 39
-author: HeatherOrt
+author: kewaiss
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 

@@ -6,7 +6,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 06/02/2021
+ms.date: 05/12/2025
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -86,3 +86,6 @@ To use a variable in a selector, populate its name manually enclosed by percenta
 If you use a variable in the **Name** attribute of the Notepad example, the selector should be **:desktop > window[Name="%WindowName%"][Process="Notepad"]**.
 
 ![Screenshot of a variable in the Notepad selector .](media/build-custom-selectors/variable-notepad-selector.png)
+
+> [!NOTE]
+> Variables are only supported with the **Equal To** operator in the visual editor.
