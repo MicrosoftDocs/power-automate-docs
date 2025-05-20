@@ -1,6 +1,6 @@
 ---
-title: Static analysis (Preview) | Microsoft Docs
-description: Learn how to use the static analysis feature scans your code for errors, vulnerabilities, and coding standard violations, helping improve code quality without execution.
+title: Flow checker (Preview) | Microsoft Docs
+description: Learn how to use the Flow checker and the static analysis features to scan your code for errors, vulnerabilities, and coding standard violations, helping improve code quality without execution.
 author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
