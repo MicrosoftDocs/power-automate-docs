@@ -1,7 +1,7 @@
 ---
 title: Adopt automation with Copilot in Power Automate
 description: Discover how to use Copilot in Power Automate to streamline your automation processes with natural language instructions.
-author: HeatherOrt
+author: kewaiss
 contributors:
   - HeatherOrt
   - v-aangie

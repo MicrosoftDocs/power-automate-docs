@@ -1,7 +1,7 @@
 ---
 title: SharePoint 
 description: Learn about the available SharePoint actions.
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference

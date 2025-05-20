@@ -2,7 +2,7 @@
 title: Create an approval flow that requires everyone to approve
 description: Learn how to create an approval flow that requires everyone to approve or one person to reject a request.
 suite: flow
-author: HeatherOrt
+author: kewaiss
 contributors:
   - natalie-pienkowska
   - kartikraop
