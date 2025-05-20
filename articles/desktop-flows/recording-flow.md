@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 09/27/2022
+ms.date: 05/20/2025
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -52,16 +52,17 @@ To pause the recording process temporarily, select **Pause**. To add a comment t
 ![Screenshot of the comment button.](./media/recording-flow/comment-button.png "Screenshot of the comment button.")
 
 ### Choosing different capturing modes when recording desktop applications
-The recorder now supports capturing both UI Automation (UIA) and Microsoft Active Accessibility (MSAA) selectors. You can choose the appropriate selector type based on the application you're automating by opening the Capturing mode menu within the recorder and selecting either UIA or MSAA.
+
+The recorder now supports capturing both UI Automation (UIA) and Microsoft Active Accessibility (MSAA) selectors. Choose the appropriate selector type based on the application you're automating. Open the Capturing mode menu in the recorder, and select either UIA or MSAA.
 
 ![Screenshot of the recorder's capturing mode menu.](./media/recording-flow/recorder_capturing_mode_uia_msaa.png "Screenshot of the recorder's capturing mode menu.")
 
-- **UI Automation (UIA)** is the modern accessibility framework introduced by Microsoft to replace MSAA. It is the recommended technology for automating most Windows applications, especially those built with newer UI frameworks such as WPF, WinForms, and Universal Windows Platform (UWP). UIA offers more robust and detailed element information, improved hierarchy structures, and greater reliability in automation scenarios.
+- **UI Automation (UIA)** is the modern accessibility framework from Microsoft that replaces MSAA. It's the recommended technology for automating most Windows applications, especially those built with newer UI frameworks like WPF, WinForms, and Universal Windows Platform (UWP). UIA gives more detailed element information, improved hierarchy structures, and greater reliability in automation scenarios.
+
 Use UIA capturing mode whenever possible for better performance, maintainability, and support across modern desktop applications.
 
-- **Microsoft Active Accessibility (MSAA)** is an older accessibility technology that predates UIA. It is primarily used for legacy applications that do not expose UIA elements, such as older Windows applications built with technologies like VB6 or classic Win32. While MSAA provides less detail and structure than UIA, it is essential for enabling automation in environments where UIA is not available.
-Use MSAA capturing mode when targeting legacy or custom-built applications that do not expose their UI components through UIA.
-
+- **Microsoft Active Accessibility (MSAA)** is an older accessibility technology that comes before UIA. It's mainly used for legacy applications that don't expose UIA elements, like older Windows applications built with VB6 or classic Win32. MSAA gives less detail and structure than UIA, but it's essential for automation in environments where UIA isn't available.
+Use MSAA capturing mode when targeting legacy or custom-built applications that don't expose their UI components through UIA.
 
 ### Replicate drag and drop steps
 

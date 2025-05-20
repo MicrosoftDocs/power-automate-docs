@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 12/20/2023
+ms.date: 05/20/2025
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -31,10 +31,9 @@ Each one of these action groups accepts a different type of UI elements. UI auto
 To add a new UI element to your flow, add a new UI element through an action or the UI elements pane, highlight the respective element, and press **Ctrl + Left click**. When the selection is finished, select **Done**.
 
 :::image type="content" source="media/ui-elements/capturing-ui-elements1.png" alt-text="Screenshot of a highlighted element.":::
+
 > [!NOTE]
-> The UI element picker now supports capturing both UI Automation (UIA) and Microsoft Active Accessibility (MSAA) selectors when working with desktop UI elements. By default, the picker operates in UIA mode. You can
-> change the capturing mode using the menu located in the top-right corner of the UI element picker. Select MSAA to target legacy applications that do not expose UIA selectors. When MSAA mode is enabled, a banner will
-> appear in the UI element picker to indicate that you are capturing MSAA selectors. To better understand the difference between UIA and MSAA selectors you can find a description [here](#ui-elements-types)
+> The UI element picker now supports capturing both UI Automation (UIA) and Microsoft Active Accessibility (MSAA) selectors when working with desktop UI elements. By default, the picker operates in UIA mode. You can change the capturing mode using the menu located in the top-right corner of the UI element picker. Select MSAA to target legacy applications that don't expose UIA selectors. When MSAA mode is enabled, a banner appears in the UI element picker to indicate that you're capturing MSAA selectors. Learn more about the difference between UIA and MSAA selectors in [UI elements types](#ui-elements-types).
 
 Any captured UI elements will be added to the UI elements pane. To access the UI elements pane, select the UI elements tab on the right-hand side of the flow designer.
 
@@ -55,17 +54,20 @@ Desktop flows support two types of UI elements based on their source: desktop UI
 Desktop UI elements can be captured from any Windows application, including non-webpage components of browsers, such as the address bar. Within desktop UI elements, two types of selectors are now supported:
 
 - **UI Automation (UIA) selectors**
-UIA is the modern accessibility framework introduced by Microsoft to replace MSAA. It is the recommended technology for automating most Windows applications, especially those built with newer UI frameworks such as WPF, WinForms, and Universal Windows Platform (UWP). UIA offers more robust and detailed element information, improved hierarchy structures, and greater reliability in automation scenarios.
-Use UIA selectors whenever possible for better performance, maintainability, and support across modern desktop applications.
+
+    UIA is the modern accessibility framework introduced by Microsoft to replace MSAA. It's the recommended technology for automating most Windows applications, especially those built with newer UI frameworks such as WPF, WinForms, and Universal Windows Platform (UWP). UIA offers more robust and detailed element information, improved hierarchy structures, and greater reliability in automation scenarios.
+
+    Use UIA selectors whenever possible for better performance, maintainability, and support across modern desktop applications.
+
 - **Microsoft Active Accessibility (MSAA) selectors**
-MSAA is an older accessibility technology that predates UIA. It is primarily used for legacy applications that do not expose UIA elements, such as older Windows applications built with technologies like VB6 or classic Win32. While MSAA provides less detail and structure than UIA, it is essential for enabling automation in environments where UIA is not available.
-Use MSAA selectors when targeting legacy or custom-built applications that do not expose their UI components through UIA.
 
+    MSAA is an older accessibility technology that predates UIA. It's primarily used for legacy applications that don't expose UIA elements, such as older Windows applications built with technologies like VB6 or classic Win32. While MSAA provides less detail and structure than UIA, it's essential for enabling automation in environments where UIA isn't available.
 
-The UI element picker in UI automation actions allows you to capture only desktop UI elements. A new capturing mode menu in the top-right corner of the picker lets you select between UIA and MSAA modes. By default, the picker uses UIA, but you can switch to MSAA when automating legacy applications. A visible message in the picker will indicate when MSAA mode is active.
+    Use MSAA selectors when targeting legacy or custom-built applications that don't expose their UI components through UIA.
+
+The UI element picker in UI automation actions allows you to capture only desktop UI elements. A new capturing mode menu in the top-right corner of the picker lets you select between UIA and MSAA modes. By default, the picker uses UIA, but you can switch to MSAA when automating legacy applications. A visible message in the picker indicates when MSAA mode is active.
 
 Captured elements are displayed in the UI elements pane, with an indicator showing whether they were captured using UIA or MSAA, helping you identify the selector type used for each element in your flow.
-
 
 > [!IMPORTANT]
 > Users can capture elements from webpages through the UI element picker of UI automation actions. However, their selectors will represent desktop elements, not web elements.
@@ -82,14 +84,13 @@ To capture a UI element from a webpage, you need to install the appropriate brow
 
 ### Distinguish desktop from web UI elements
 
-The UI elements pane displays distinctive visual indications to help users quickly recognize between desktop and web UI elements.
+The UI elements pane shows distinctive visual indications to help users quickly recognize between desktop and web UI elements.
 
 :::image type="content" source="media/ui-elements/ui-element-type-visual-indication1.png" alt-text="Screenshot of the UI element type visual indications in the UI element pane.":::
 
-During capturing the desktop icon will appear when capturing desktop elements and the web icon will appear when capturing web elements, so you can confirm the type of an element before even saving it.
+When you capture a desktop element, the desktop icon appears. When you capture a web element, the web icon appears. This way, you confirm the element type before saving it.
 
 :::image type="content" source="media/ui-elements/ui-element-type-visual-indication-capturing.png" alt-text="Screenshot of a UI element type visual indication during capturing.":::
-
 
 Another method to check the type of a UI element is to review its selectors. Desktop UI elements usually have the desktop as their parent element, while web UI elements have a webpage as their root element.
 
