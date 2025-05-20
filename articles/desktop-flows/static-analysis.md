@@ -51,7 +51,7 @@ To manually trigger static analysis:
 > [!NOTE]
 > Static analysis is executed for all desktop flows included in a solution. You can identify which desktop flow triggered a specific rule violation by checking the Object name column in the results—this column contains the name of the corresponding desktop flow.
 
-:::image type="content" source="media\static-analysis\Static-analysis-solution-chekcer-results.png" alt-text="View results of an execution of static analysis for a solution in the Power Automate portal:::
+:::image type="content" source="media\static-analysis\Static-analysis-solution-chekcer-results.png" alt-text="View results of an execution of static analysis for a solution in the Power Automate portal":::
 
 ## Static analysis in the designer
 The Static Analysis is performed automatically, providing continuous inspection of your code without requiring manual intervention. As you add, remove, or edit actions within your flow, this feature is triggered 
