@@ -4,7 +4,7 @@ description: Learn how to configure automatic updates for Power Automate for des
 author: a-887178056
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.date: 05/19/2025
+ms.date: 05/21/2025
 ms.author: guco
 ms.topic: article
 ms.custom:
