@@ -48,6 +48,12 @@ Follow these steps to see the details for a desktop flow:
 
 :::image type="content" source="media/manage-desktop-flows/view-details.png" alt-text="Screenshot of the details of a desktop flow.":::
 
+### Change the screen resolution settings of a desktop flow for unattended runs
+To specify the screen resolution used when a flow runs in unattended mode, open the desktop flow’s details and select **Edit**. In the Flow properties panel, enable the **Display resolution for unattended runs** setting. You can then choose a resolution from the drop-down list or enter a specific resolution manually.
+
+> [!IMPORTANT]
+> If the **Display resolution for unattended runs** setting is enabled and the desktop flow calls other desktop flows, all flows will run using the resolution specified in the parent flow. Ensure that this resolution is supported across all flows to prevent potential issues.
+
 ## Generate flow description using Copilot (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
