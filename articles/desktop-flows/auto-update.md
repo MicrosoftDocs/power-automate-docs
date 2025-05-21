@@ -4,7 +4,7 @@ description: Learn how to configure automatic updates for Power Automate for des
 author: a-887178056
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.date: 05/19/2025
+ms.date: 05/21/2025
 ms.author: guco
 ms.topic: article
 ms.custom:
@@ -16,7 +16,7 @@ ms.custom:
 
 # Configure automatic updates for Power Automate for desktop
 
-Starting with the June 2025 (2.57) release of Power Automate for desktop, machines upgrade automatically to new versions in the background without requiring user interaction.
+Starting with the March 2025 (2.54) release of Power Automate for desktop, machines upgrade automatically to new versions in the background without requiring user interaction.
 
 > [!IMPORTANT]
 > - This article only applies to the MSI version of Power Automate for desktop. The store version's updates are managed by the Windows Store.
@@ -24,7 +24,7 @@ Starting with the June 2025 (2.57) release of Power Automate for desktop, machin
 There are two automatic update modes: regular and emergency.
 
 > [!NOTE]
-> Automatic updates are gradually enabled on a per-tenant basis. Expect some delay between enabling automatic updates and your tenant's machines starting to update.
+> Automatic updates are gradually enabled on a per-tenant basis, starting in June 2025. Expect some delay between enabling automatic updates and your tenant's machines starting to update.
 > If you want your tenant to be enabled early, contact support.
 
 ## Regular automatic updates
