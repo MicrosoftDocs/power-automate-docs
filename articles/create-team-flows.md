@@ -189,7 +189,7 @@ No. When a connection is configured to be **Provided by run-only user** then tha
 - [Training: Share a cloud flow with Power Automate (module)](/training/modules/share-cloud-flow/)
 - [Training: Share and collaborate with Power Automate (learning path)](/training/paths/share-collaborate-power-automate/)
 - [Guide to cloud flow sharing and permisssions](guide-to-cloud-flow-sharing-and-permissions.md)
-- [Guide to manage shared flows with users outside an environment](guide-to-manage-shared-cloud-flows.md)
+- [Manage shared flows with users outside an environment](manage-shared-flows-with-users-outside-an-environment.md)
 
  
 [!INCLUDE[footer-include](includes/footer-banner.md)]

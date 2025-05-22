@@ -77,8 +77,8 @@
           href: create-team-flows.md
         - name: Support for guest users
           href: share-guest-users.md
-        - name: Guide to manage shared flows with users outside an environment
-          href: guide-to-manage-shared-flows.md
+        - name: Manage shared flows with users outside an environment
+          href: manage-shared-flows-with-users-outside-an-environment.md
         - name: Support for service principal owned flows
           href: service-principal-support.md
         - name: Guide to cloud flow sharing and permisssions

@@ -127,5 +127,5 @@ By using security roles and groups in tandem, organizations can achieve a clear 
 
 ## Related information
 
-- [Guide to manage shared flows with users outside an environment](guide-to-manage-shared-flows.md)
+- [Manage shared flows with users outside an environment](manage-shared-flows-with-users-outside-an-environment.md)
 - [Share a cloud flow](create-team-flows.md)
