@@ -77,8 +77,12 @@
           href: create-team-flows.md
         - name: Support for guest users
           href: share-guest-users.md
+        - name: Guide to manage shared cloud flows with users outside an environment
+          href: guide-to-manage-shared-cloud-flows.md
         - name: Support for service principal owned flows
           href: service-principal-support.md
+        - name: Guide to cloud flow sharing and permisssions
+          href: guide-to-cloud-flow-sharing-and-permissions.md
         - name: Export and import a non-solution flow
           href: export-import-flow-non-solution.md
         - name: Save drafts and use versioning

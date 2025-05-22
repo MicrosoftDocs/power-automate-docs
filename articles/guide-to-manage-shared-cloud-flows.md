@@ -1,24 +1,34 @@
-# Comprehensive Guide to Managing Shared Flows in Power Automate
+---
+title: Guide to manage shared cloud flows with users outside an environment
+description: Use this guide to learn to manage flows shared with users outside an environment.
+author: DBEKI
+ms.date: 05/23/2025
+ms.custom: 
+ms.topic: concept-article
+ms.author: dbekirop
+ms.reviewer: angieandrews
+---
 
-## Introduction
+# Guide to manage shared cloud flows with users outside an environment
 
 Microsoft is rolling out an important change to Power Automate: users must be members of an environment to access flows in that environment. Starting June 2025, any flow shared with a user who is not an environment member will become inaccessible to that user. This change enhances security by enforcing environment boundaries. However, it impacts organizations that have flows shared across different environments (e.g. a flow owner adding someone outside the environment as a co-owner or run-only user).
 
-Power Platform administrators need to identify any flows shared with users outside their environment and adjust those flows’ sharing settings to comply with the new policy. This guide provides a structured approach to do so and offers best practices for governing shared flows. We will cover:
+Power Platform administrators need to identify any flows shared with users outside their environment and adjust those flows’ sharing settings to comply with the new policy. This guide provides a structured approach to do so. Use this guide to do the following:
 
-* Identifying flows shared with external users (users not in the flow’s environment).
-* Adjusting sharing and access for those flows to ensure continuity (e.g. adding proper users to environments, using run-only access).
-* Ongoing management best practices for shared flows in Power Automate (security roles, DLP policies, audits, etc.).
+* Identify flows shared with external users (users not in the flow's environment).
+* Adjust sharing and access for those flows to ensure continuity (for example, add proper users to environments, use run-only access).
 
-By following this guide, Power Platform admins can preemptively address sharing issues before the June 2025 enforcement, and establish governance to manage flow sharing securely going forward. Real examples and step-by-step instructions are included to illustrate key points.
+By following this guide, Power Platform admins can preemptively address sharing issues before the June 2025 enforcement, and establish governance to manage flow sharing securely going forward. To illustrate key points, this guide includes real examples and step-by-step instructions are.
+
+Learn best practices for managing shared flows in [Share a cloud flow](create-team-flows.md#best-practices-for-managing-shared-cloud-flows).
 
 ## 1. Identifying Flows Shared with Users Outside Their Environment
 
 The first step is to inventory all cloud flows and their shared users in each environment, then pinpoint which flows have shares with “outsiders” – i.e. users who are not members of that environment. Power Automate flows can be created in two ways: as normal (non-solution) flows or as solution-aware flows (part of a Dataverse solution). Both reside in an environment, and both need review. Here are methods to identify externally shared flows:
 
-### Power Platform Admin Center (GUI Method):
+### Power Platform Admin Center (GUI Method)
 
-Environment Admins can use the Power Platform Admin Center (PPAC) for a visual audit. In PPAC:
+Environment admins can use the Power Platform admin center for a visual audit. In Platform admin center:
 
 * Navigate to Environments > Your Environment > Resources > Flows. This lists all flows in the environment, along with an “Owner(s)” column.
 * For each flow, inspect the Owners. If a flow has multiple owners (creator plus co-owners), it’s been shared. Compare those owners against the known members of the environment (e.g. the security group or user list for that environment).
@@ -99,26 +109,18 @@ With the user now an environment member, adjust how the flow is shared with them
 * If the user needs full Owner permissions (co-authoring): After adding them to the environment, simply ensure they remain listed as an Owner on the flow. Technically, you might remove and re-add them to refresh permissions. But once they are in the environment, the share is kosher. You might also consider moving the flow into a Solution if two owners from different areas will maintain it long-term; solution flows are easier to transport to a dedicated environment if needed. In any case, double-check they appear under Owners and their role is Can Edit (owner) in the flow’s details.
 * Remove any redundant or unauthorized shares: During this process, take the opportunity to clean up. If someone was added “just in case” but never uses the flow, remove them. Principle of least privilege helps reduce oversight. Ensure each flow’s Owners list is limited to those who truly need design/edit access.
 
-### D. Communicate changes to affected users:
+### D. Communicate changes to affected users
 
 If you are removing someone’s access or altering how they invoke a flow, let them know. From the user perspective, running a flow via run-only access might be slightly different (they might get a share link or see the flow in Team Flows rather than My Flows). Explain that “to comply with new Power Automate policies, we’ve updated the sharing method for Flow X – you’ll continue to be able to run it via method Y, but it will no longer show under your direct ownership.” This prevents confusion.
 
-### E. Verify post-adjustment status:
+### E. Verify post-adjustment status
 
 After making changes, use PowerShell or Admin Center to double-check that no flows remain with external owners. For instance, run the identification script again and confirm it no longer flags those flows. Each flagged instance should be resolved by either removal or proper environment membership.
 
 By performing these adjustments, you ensure that when Microsoft flips the switch, those flows will continue to run for the intended users. Instead of an error saying “you do not have access to this flow,” the user will remain authorized because they are now an environment member in an appropriate capacity. Essentially, you are aligning your sharing practices with the platform’s governance model.
 
-## 3. Best Practices for Managing Shared Flows in Power Automate
+## Related information
 
-Going forward, administrators should implement best practices to avoid improper sharing and reduce the effort of compliance. Here are key recommendations to manage shared flows securely and efficiently:
+- [Guide to cloud flow sharing and permisssions](guide-to-cloud-flow-sharing-and-permissions.md)
+- [Share a cloud flow](create-team-flows.md)
 
-* 🔑 **Use Security Roles to Segment Duties:** Only grant Environment Maker role to users who genuinely need to create or edit flows in that environment. End-users who only run flows should stay as basic users. This principle limits who can share or modify flows. For example, if you have a group of users who just trigger flows (but shouldn’t create new ones), do not elevate them to makers. By keeping run-only users as basic environment members (or using run-only sharing without promotion), you prevent them from building or importing “rogue” flows. This segmentation creates a clear boundary: makers design, others consume. If an environment has no security group (open to all), you can still control maker privileges via roles – perhaps designate a “makers” Azure AD group and script assignment of Environment Maker role only to that group’s members. This way, even though everyone is in the environment, only approved makers can share or own flows, reducing accidental external shares.
-
-* ▶️ **Leverage Run-Only Access Instead of Co-Ownership:** When a flow needs to be used by many people (especially outside the core team), prefer providing Run-Only access over making them co-owners. Run-Only users can execute the flow (manually or via connectors like button, SharePoint, etc.) without seeing or altering the flow’s design. For instance, suppose a department builds an “Expense Approval” flow that managers in other departments will trigger. Rather than adding 10 managers as co-owners (which would cross environment bounds and pose governance issues), share the flow (or its trigger) with them as run-only users. They’ll be able to run it (e.g. via a button in Teams or a shared link) but cannot edit or view the flow in Power Automate. This protects the flow and confines full control to the creators. It also simplifies compliance: those managers don’t need environment maker access at all, just run permission. In summary, only designate co-owners when collaborative editing is needed; all other cases, use run-only or other indirect methods of interaction (such as embedding the flow in an app or using Power Apps to call the flow).
-
-* 🔒 **Enforce Data Loss Prevention (DLP) Policies:** DLP policies won’t directly stop sharing flows, but they mitigate risks if flows are broadly shared. By classifying connectors into “Business” vs “Non-Business” and creating DLP rules, you prevent flows (even those shared widely) from using connectors that could exfiltrate data. For example, if an external user somehow gets run access to a flow, a strict DLP policy ensures that flow cannot suddenly send data to an unauthorized service (like a social media or personal cloud drive connector). Also, if you suspect some flows might be shared externally, disallow custom connectors or HTTP connectors in certain environments unless necessary – this reduces what an external person could do even if they had edit access. Essentially, DLP acts as a safety net: even if sharing boundaries are stretched, the flow’s capabilities remain within acceptable limits. It’s a best practice to review DLP policies whenever expanding access to flows.
-
-* 📊 **Establish Regular Auditing and Monitoring:** Make it a routine to review flow sharing and ownership. For instance, monthly or quarterly audits of flows in each production environment. Use the PowerShell approach from Section 1 to generate a current list of all flows and owners. Identify any anomalies, such as flows with owners outside expected teams or any new guest owners. You can automate parts of this: e.g., an admin can set up a scheduled PowerShell script or a flow using the Power Platform for Admins connector to gather sharing data and send a report via email. Microsoft’s documentation encourages periodic entitlement reviews – ensure they align with current business needs and remove access for users who no longer require it. For example, if John was an external co-owner for a special project and that project ended, catch it in the next audit and clean it up. Monitoring tip: The Power Platform Admin Center analytics and the CoE Starter Kit dashboards can show trends, like how many flows each user runs or how many flows each environment has. Use these to detect if a particular flow is being widely used by unexpected users, indicating a possible unmanaged share.
-
-* ⚙️ **Consider Automation for Oversight:** Beyond reports, you can implement guardrails. For example, create a flow that alerts the admin when a new co-owner is added to a flow in a sensitive environment. This can be done via the Power Automate Management connectors (trigger on “When a flow is shared” event, if such exists, or periodically diff the owners list). Another idea is an admin script that flags flows whose Owner count > 1 and checks those owners against environment user lists automatically. If an

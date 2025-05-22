@@ -1,8 +1,19 @@
-# Power Automate Flow Sharing and Permissions Guide
+---
+title: Guide to cloud flow sharing and permisssions
+description: Use this guide to learn to manage flows shared with users outside an environment.
+author: DBEKI
+ms.date: 05/23/2025
+ms.custom: 
+ms.topic: concept-article
+ms.author: dbekirop
+ms.reviewer: angieandrews
+---
+
+# Guide to cloud flow sharing and permisssions
 
 This guide can assist in identifying suitable flow sharing scenarios and establishing permissions to manage user access and ensure security.
 
-## Managing Permissions and Roles in Power Automate Environments
+## Manage permissions and roles in Power Automate environments
 
 Managing who can create, edit, or merely execute flows is critical to maintaining a secure and orderly Power Automate environment. Power Automate’s security model operates on multiple levels of permissions:
 
@@ -10,7 +21,7 @@ Managing who can create, edit, or merely execute flows is critical to maintainin
 * Dataverse security roles (if the environment has a Dataverse database) – like Basic User, System Customizer, etc., which control access to data and entities. (For example, users typically need at least the Basic User role to run apps or flows that use Dataverse data).
 * Flow-level permissions – sharing settings on individual flows that make other users either co-owners (with edit rights) or run-only users.
 
-### Environment Roles and Security
+### Environment roles and security
 
 In each environment, only users with the appropriate roles can create or manage resources:
 
@@ -113,3 +124,8 @@ A critical governance decision is determining which users should be makers (with
 Finally, it’s worth mentioning that all these measures should be revisited periodically. As business needs change, someone who was just a consumer might need to become a maker (e.g., a power user emerges in a new team), or vice versa. The governance model should be flexible enough to accommodate this with proper approvals. Document the criteria for being granted Environment Maker privileges and the process to request it, so there is transparency and consistency. Similarly, define what conditions would trigger revoking maker access (e.g., moving to a different department).
 
 By using security roles and groups in tandem, organizations can achieve a clear and maintainable separation between those who craft automation and those who use automation, thereby enhancing both security and productivity in Power Automate environments.
+
+## Related information
+
+- [Guide to manage shared cloud flows with users outside an environment](guide-to-manage-shared-cloud-flows.md)
+- [Share a cloud flow](create-team-flows.md)
