@@ -53,7 +53,7 @@ To specify the screen resolution used when a flow runs in unattended mode, open 
 
 > [!IMPORTANT]
 > - If the **Display resolution for unattended runs** setting is enabled and the desktop flow calls other desktop flows, all flows will run using the resolution specified in the parent flow. Ensure that this resolution is supported across all flows to prevent potential issues.
-> - If you're using the [Reuse Windows session for unattended runs](run-unattended-desktop-flows.md) functionality, the selected resolution will apply to the reused session as well. 
+> - If you're using the [Reuse Windows session for unattended runs](run-unattended-desktop-flows.md#reuse-a-windows-session-in-unattended-mode) functionality, the selected resolution will apply to the reused session as well. 
 
 
 ## Generate flow description using Copilot (preview)
