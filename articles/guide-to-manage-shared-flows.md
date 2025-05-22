@@ -1,6 +1,6 @@
 ---
-title: Guide to manage shared cloud flows with users outside an environment
-description: Use this guide to learn to manage flows shared with users outside an environment.
+title: Guide to manage shared flows with users outside an environment
+description: Use this guide to learn to manage shared flows with users outside an environment.
 author: DBEKI
 ms.date: 05/23/2025
 ms.custom: 
@@ -9,7 +9,7 @@ ms.author: dbekirop
 ms.reviewer: angieandrews
 ---
 
-# Guide to manage shared cloud flows with users outside an environment
+# Guide to manage shared flows with users outside an environment
 
 Microsoft is rolling out an important change to Power Automate: users must be members of an environment to access flows in that environment. Starting June 2025, any flow shared with a user who is not an environment member will become inaccessible to that user. This change enhances security by enforcing environment boundaries. However, it impacts organizations that have flows shared across different environments (e.g. a flow owner adding someone outside the environment as a co-owner or run-only user).
 
