@@ -889,6 +889,11 @@
       "source_path": "articles/glossary.md",
       "redirect_url": "../power-automate/flow-types",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/contextual-help-bot.md",
+      "redirect_url": "../power-automate/self-help",
+      "redirect_document_id": false
     }
   ]
 }
