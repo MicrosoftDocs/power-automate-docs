@@ -8,11 +8,11 @@ author: kathyos
 editor: ''
 ms.custom: guidance
 
-ms.topic: article
+ms.topic: concept-article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/25/2021
-ms.author: kathyos
+ms.author: mapichle
 ms.reviewer: angieandrews
 ---
 

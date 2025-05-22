@@ -4,10 +4,10 @@ description: When sending email notifications and Microsoft Teams messages, you 
 author: taiki-yoshida
 ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: best-practice
 ms.custom: guidance
 ms.date: 12/10/2020
-ms.author: tayoshi
+ms.author: mapichle
 ms.reviewer: kathyos
 
 ---

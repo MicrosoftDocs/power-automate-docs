@@ -1,7 +1,7 @@
 ---
 title: Share/export a desktop flow
 description: Share/export a desktop flow
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to

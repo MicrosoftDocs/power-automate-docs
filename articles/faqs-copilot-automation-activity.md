@@ -4,7 +4,7 @@ description: This FAQ discusses Copilot used in desktop flow activity and the ke
 ms.date: 01/21/2025
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: rpapostolis
 ms.author: appapaio
 ms.reviewer: angieandrews

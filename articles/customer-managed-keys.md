@@ -9,8 +9,8 @@ contributors:
   - v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 01/28/2025
+ms.topic: article
+ms.date: 05/21/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -38,9 +38,9 @@ Applying an encryption key is a gesture performed by Power Platform admins and i
 
 The CMK feature enables you to leverage the single enterprise policy created on the environment to secure Power Automate workflows. Learn more about CMK and the step-by-step instructions to enable CMKs in [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key).
 
-### Power Automate hosted robotic process automation (RPA) (preview)
+### Power Automate hosted robotic process automation (RPA)
 
-The hosted machine group capability of the [Introduction to the Power Automate hosted RPA](desktop-flows/hosted-rpa-overview.md) solution supports CMKs. After applying CMKs, you must reprovision existing hosted machine groups by selecting **Reprovision group** on the machine group details page. Once reprovisioned, the VM disks for the hosted machine group bots are encrypted with the CMK.
+The hosted machine group capability of the [Power Automate hosted RPA](desktop-flows/hosted-rpa-overview.md) solution supports CMKs. After applying CMKs, you must reprovision existing hosted machine groups by selecting **Reprovision group** on the machine group details page. Once reprovisioned, the VM disks for the hosted machine group bots are encrypted with the CMK.
 
 > [!NOTE]
 > CMK for the hosted machine capability isn't currently available.

@@ -4,10 +4,10 @@ description: You can use Power Automate to automate your manual and repetitive p
 author: taiki-yoshida
 ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: overview
 ms.custom: guidance
 ms.date: 12/10/2020
-ms.author: tayoshi
+ms.author: mapichle
 ms.reviewer: kathyos
 
 ---

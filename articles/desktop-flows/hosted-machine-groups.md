@@ -4,8 +4,8 @@ description: Learn how to create and use hosted machine groups to distribute you
 author: kenseongtan
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 02/03/2025
+ms.topic: article
+ms.date: 05/19/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -144,6 +144,23 @@ Custom VM images must meet the following requirements:
 - Microsoft Edge version 80 or higher
 - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
+#### Use a specific version of Power Automate Desktop
+
+When you use custom VM images, the latest version of Power Automate for desktop installs automatically during hosted machine group provisioning.
+
+To use a specific version of Power Automate for desktop, follow these steps:
+
+1. Install the version of Power Automate for desktop you want and include it in your custom VM image. 
+1. Add the following registry key to the image:
+
+    | Hive | Key | Name | Type | Value |
+    |---|---|---|---|---|
+    | HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global | UseInstalledPADForHosted | String | True |
+
+    > [!CAUTION]
+    > Modifying Windows registry settings incorrectly can cause serious problems that may prevent your computer from booting properly. Microsoft cannot guarantee that any problems resulting from the configuring of registry settings can be solved. Modification of these settings is at your own risk. We strongly recommend that you [back up your Windows registry](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692) before proceeding.
+
+This ensures your hosted machine group uses the version of Power Automate for desktop included in your custom VM image.
 
 ### Create an Azure compute gallery in Azure and add an image
 

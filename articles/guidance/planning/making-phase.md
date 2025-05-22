@@ -4,10 +4,10 @@ description: This article lists the relevant documentation to help you set up a 
 author: taiki-yoshida
 ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: guidance
 ms.date: 12/10/2020
-ms.author: tayoshi
+ms.author: mapichle
 ms.reviewer: kathyos
 
 ---

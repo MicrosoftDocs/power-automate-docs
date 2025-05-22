@@ -6,7 +6,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
+ms.date: 05/02/2025
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -31,6 +31,36 @@ Download files using the **Download file(s) from FTP** action. The following exa
 :::image type="content" source="media/ftp/download-files-ftp-example.png" alt-text="Screenshot of the Download files from FTP action.":::
 
 Upload files using the **Upload file(s) to FTP** action and specifying the file and the remote location.
+
+> [!IMPORTANT]
+> Starting from version 2.56, Power Automate for desktop no longer supports legacy cipher algorithms that are deprecated in Secure FTP (SFTP) actions. This update is intended to enhance security by removing outdated cryptographic methods.
+>
+> The following algorithms are no longer supported:
+> * blowfish-cbc
+> * twofish-cbc
+> * twofish192-cbc
+> * twofish128-cbc
+> * twofish256-cbc
+> * arcfour
+> * arcfour128
+> * arcfour256
+> * cast128-cbc
+> * hmac-sha2-512-96
+> * hmac-sha2-256-96
+> * hmac-sha1-96
+> * hmac-md5
+> * hmac-md5-96
+> * hmac-sha1-96-etm
+> * hmac-md5-etm
+> * hmac-md5-96-etm
+>
+> Users relying exclusively on deprecated cipher algorithms for their SFTP servers might experience failed flows when performing SFTP actions in version 2.56 of Power Automate for desktop because these servers aren't compatible with the updated library.
+>
+> To ensure a seamless experience and avoid workflow disruptions, follow these steps:
+> * Check which cipher algorithms your SFTP server supports. 
+> * If your server uses deprecated cipher algorithms, update it to support modern and secure cipher algorithms.
+> * Consult your IT team or SFTP server provider for guidance on upgrading your server's cryptographic capabilities.
+> * Avoid installing version 2.56 or later until your SFTP servers are migrated to a compatible version.
 
 ## <a name="openconnection"></a> Open FTP connection
 
