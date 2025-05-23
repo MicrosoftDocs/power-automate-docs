@@ -121,6 +121,6 @@ By performing these adjustments, you ensure that when Microsoft flips the switch
 
 ## Related information
 
-- [Guide to cloud flow sharing and permisssions](guide-to-cloud-flow-sharing-and-permissions.md)
+- [Guide to cloud flow sharing and permissions](guide-to-cloud-flow-sharing-and-permissions.md)
 - [Share a cloud flow](create-team-flows.md)
 
