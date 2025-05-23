@@ -99,10 +99,8 @@ The bulk cancel feature enables you to initiate the cancellation process for any
 
   > [!TIP]
   > - If a flow is turned off, pending canceled flows remain **Waiting**, and the queue doesn't clear until the flow is turned back on.
-  > - If the flow was throttled, allocate some [capacity](capacity-process.md#allocate-process-capacity-to-a-cloud-flow) or the queue remains stuck and doesn't clear. Contact your environment administrator to assign capacity to the environment, which can be applied to the flow.
+  > - If the flow was throttled, allocate some [capacity](desktop-flows/capacity-process.md#allocate-process-capacity-to-a-cloud-flow) or the queue remains stuck and doesn't clear. Contact your environment administrator to assign capacity to the environment, which can be applied to the flow.
   > - To expedite cancellation on flows with [concurrency](limits-and-config.md#concurrency-looping-and-debatching-limits) settings, adjust the setting to the maximum value (100) so erroneous queued runs can clear (100) at a time.
-
-Learn more in [Allocate process capacity to a cloud flow](desktop-flows/capacity-process.md#allocate-process-capacity-to-a-cloud-flow).
 
 ### Cancel flow runs in bulk on the flow 'Run history' page
 
