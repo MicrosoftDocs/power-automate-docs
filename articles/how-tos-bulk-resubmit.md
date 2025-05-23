@@ -6,7 +6,7 @@ author: DBEKI
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 02/19/2025
+ms.date: 05/23/2025
 ms.author: dbekirop
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -95,14 +95,14 @@ You can resubmit previous runs of a flow in bulk. To do this, follow these steps
 
 ## Cancel flow runs
 
-The bulk cancel feature enables users to initiate the cancellation process for any flows in the queue that are currently in the **Running** or **Waiting** state, without needing to select individual flow runs. This is particularly useful during incidents involving numerous erroneous flows. By using this feature, all flow runs in the queue will be immediately suspended and will no longer be processed. While suspended, their status will display as **Waiting** and will systematically transition to **Canceling** and finally to **Cancelled**.
+The bulk cancel feature enables you to initiate the cancellation process for any flows in the queue that are currently in the **Running** or **Waiting** state, without needing to select individual flow runs. This is useful during incidents involving numerous erroneous flows. By using this feature, all flow runs in the queue are immediately suspended and are no longer processed. While suspended, their status displays as **Waiting** and systematically transitions to **Canceling** and finally to **Cancelled**.
 
-  > [!Tip]
-  > - If a flow is turned off, any pending canceled flows will remain **Waiting**, and the queue will not clear until the flow is turned back on.
-  > - If the flow has been throttled, allocate some [capacity](capacity-process.md#allocate-process-capacity-to-a-cloud-flow) or the queue will remain stuck and not clear. Contact your environment administrator to assign capacity to the environment which can be applied to the flow.
-  > - To expedite cancellation on flows with [concurrency](limits-and-config.md#concurrency-looping-and-debatching-limits) settings, adjust the setting to the max value (100) so erroneous queued runs can clear (100) at a time.
+  > [!TIP]
+  > - If a flow is turned off, pending canceled flows remain **Waiting**, and the queue doesn't clear until the flow is turned back on.
+  > - If the flow was throttled, allocate some [capacity](capacity-process.md#allocate-process-capacity-to-a-cloud-flow) or the queue remains stuck and doesn't clear. Contact your environment administrator to assign capacity to the environment, which can be applied to the flow.
+  > - To expedite cancellation on flows with [concurrency](limits-and-config.md#concurrency-looping-and-debatching-limits) settings, adjust the setting to the maximum value (100) so erroneous queued runs can clear (100) at a time.
 
-capacity-process.md#allocate-process-capacity-to-a-cloud-flow
+Learn more in [Allocate process capacity to a cloud flow](desktop-flows/capacity-process.md#allocate-process-capacity-to-a-cloud-flow).
 
 ### Cancel flow runs in bulk on the flow 'Run history' page
 
@@ -115,7 +115,7 @@ capacity-process.md#allocate-process-capacity-to-a-cloud-flow
 
     To initiate the bulk cancellation feature instead, select **Cancel all flow runs** in the **Run history** menu at the top of the screen.
 
-1. After you select **Cancel all flows**, a message appears asking you to initiate the bulk utility. Select **Yes**. Optionally, you may choose to select the checkbox to stop your flow and address any underlying issues that are triggering faulty runs. Any queued flows will show as "Waiting" and will not clear until the flow is turned back on.
+1. After you select **Cancel all flows**, a message appears asking you to initiate the bulk utility. Select **Yes**. Optionally, you might choose to select the checkbox to stop your flow and address any underlying issues that are triggering faulty runs. Any queued flows show as **Waiting** and don't clear until the flow is turned back on.
 
 1. Get the updated status changes in the run history list by periodically refreshing your browser screen.
 
@@ -125,8 +125,7 @@ capacity-process.md#allocate-process-capacity-to-a-cloud-flow
     > - In this scenario, the flows are suspended, and no further actions are executed.
     > - If you select a flow run in the **Canceling** state, it might appear that the spinner near an action is in motion, but it's in a suspended state. When flows are actually running, a notification banner displays to indicate your flow is running. This isn't the case for suspended flows in the **Canceling** state.
 
-
-Flows that exceeded the [concurrency](limits-and-config.md#concurrency-looping-and-debatching-limits) setting might be visible in the **Waiting** state alongside other flow runs in the **Canceling** state. This is by design. Bulk cancelation can be sped up by adjusting concurrency limits to (100), otherwise it will slow the process down even further. The state changes to **Canceling** when their turn to be processed comes up in the queue.
+Flows that exceeded the [concurrency](limits-and-config.md#concurrency-looping-and-debatching-limits) setting might be visible in the **Waiting** state alongside other flow runs in the **Canceling** state. This is by design. Bulk cancelation can be sped up by adjusting concurrency limits to (100), otherwise it slows the process even further. The state changes to **Canceling** when their turn to be processed comes up in the queue.
 
 :::image type="content" source="media/cancel-resubmit-how-to/wait-cancel.png" alt-text="Screenshot of flow runs in states of 'Waiting' and 'Canceling'.":::
 
