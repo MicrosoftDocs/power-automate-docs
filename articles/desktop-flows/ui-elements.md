@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 05/20/2025
+ms.date: 05/23/2025
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -30,7 +30,7 @@ Each one of these action groups accepts a different type of UI elements. UI auto
 
 To add a new UI element to your flow, add a new UI element through an action or the UI elements pane, highlight the respective element, and press **Ctrl + Left click**. When the selection is finished, select **Done**.
 
-:::image type="content" source="media/ui-elements/capturing-ui-elements1.png" alt-text="Screenshot of a highlighted element.":::
+:::image type="content" source="media/ui-elements/capturing-ui-elements.png" alt-text="Screenshot of a highlighted element.":::
 
 > [!NOTE]
 > The UI element picker now supports capturing both UI Automation (UIA) and Microsoft Active Accessibility (MSAA) selectors when working with desktop UI elements. By default, the picker operates in UIA mode. You can change the capturing mode using the menu located in the top-right corner of the UI element picker. Select MSAA to target legacy applications that don't expose UIA selectors. When MSAA mode is enabled, a banner appears in the UI element picker to indicate that you're capturing MSAA selectors. Learn more about the difference between UIA and MSAA selectors in [UI elements types](#ui-elements-types).

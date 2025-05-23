@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 05/20/2025
+ms.date: 05/23/2025
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -145,7 +145,7 @@ To record flows using images:
 
 1. Select the dots icon on the right side of the recorder dialog, and then enable **Image recording**. After enabling this option, select **Record** to start recording actions using image recognition.
 
-    ![Screenshot of the Image recording button.](./media/recording-flow/image-recording-button1.png "Screenshot of the Image recording button.")
+    ![Screenshot of the Image recording button.](./media/recording-flow/image-recording-button.png "Screenshot of the Image recording button.")
 
      Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, hover, or select the **preview icon**.
 
