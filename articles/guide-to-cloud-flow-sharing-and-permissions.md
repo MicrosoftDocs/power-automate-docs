@@ -31,7 +31,7 @@ In each environment, only users with the appropriate roles can create or manage 
 
 - **Environment User (Basic User)**: In Dataverse-backed environments, regular end users must be given the Basic User security role (sometimes called Common Data Service User) to run apps or utilize flows that interact with Dataverse data. By default, adding a user to an environment, especially if the environment has a Dataverse database, might require explicitly assigning such a role. This ensures they can run the solutions, but with only basic privileges on data. In environments without Dataverse, if a user is being shared a flow for run-only, they might not appear in the environment user list unless manually added. Their permissions are solely through the flow sharing.
 
-### Flow-Level Sharing Permissions
+### Flow-level sharing permissions
 
 At the individual flow level, owners can share a cloud flow in two main ways: [add co-owner(s), or assign run-only user(s)](/power-automate/create-team-flows?tabs=new). It's essential to understand the difference.
 
@@ -88,7 +88,7 @@ To mitigate these risks, organizations should adopt a combination of policy, tec
 
     For example, if a flow sends customer data through email, a run-only user can trigger that email send but can't open the flow to get the customer details that were processed yesterday. This principle aligns with least privilege&mdash;give the minimum access needed for the user's role. Run-only sharing can often achieve the business requirement of letting someone trigger or utilize a flow without handing over control.
 
-- **Use Security Roles to Segment Duties**: Ensure that users who are meant to only run flows but not create them don't have the Environment Maker role. By keeping these users as basic environment users, or completely outside the environment with only run-only flow access, you reduce the chance that they can create or import rogue flows. Only designated makers should have maker privileges, whereas others might only consume the outputs of flows.
+- **Use security roles to segment duties**: Ensure that users who are meant to only run flows but not create them don't have the Environment Maker role. By keeping these users as basic environment users, or completely outside the environment with only run-only flow access, you reduce the chance that they can create or import rogue flows. Only designated makers should have maker privileges, whereas others might only consume the outputs of flows.
 
     Learn more in [Use security roles and groups: Manage makers versus run-only users](#use-security-roles-and-groups-manage-makers-versus-run-only-users).
 
@@ -126,7 +126,7 @@ A critical governance decision is to determine which users should be makers, who
 
 While there isn't an Environment Run-Only role, you can manage run-only permissions at scale using groups. When sharing a flow, owners can enter a group name instead of individual users for either co-owner or run-only access. This means you could create a security group like **Sales Reports Flow Users** and assign that group as a run-only user on relevant flows. All members of the group would then inherit run permission for those flows. Management becomes easier. To revoke access for a particular user, remove them from the group. They lose run access to all flows that group was assigned to. Likewise, to grant a new person run access to multiple flows, add them to the group. Security groups thus help simplify permission management by externalizing it.
 
-Power Automate flows don't need to list 50 users as run-only; they list one group, and your Azure AD or Microsoft 365 admin processes membership. 
+Power Automate flows don't need to list 50 users as run-only; they list one group, and your Azure AD or Microsoft 365 admin processes membership.
 
 > [!NOTE]
 > If the environment itself is locked down to a security group, the group used for flow sharing should either be the same or a subset. If you share a flow with a group that contains people outside the environment’s allowed users, they might not actually be able to run it, depending on environment settings. You should coordinate group usage with environment access policies.
