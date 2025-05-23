@@ -92,7 +92,7 @@ Copilot is designed to assist with the analysis of automation activity, work que
 
 This tab presents a consolidated view of cloud and desktop flow run data displayed in a hierarchical list view. The data is organized based on top-level flows. This view is useful in scenarios where individual flow session runs succeeded, but other dependent runs failed, ultimately resulting in the top-level flow's failure. By displaying these runs in connection to their parent, we're enhancing automation monitoring and efficient root cause analysis of exceptions.
 
-## Process map (preview) tab
+## Process map tab
 
 This tab is designed to make troubleshooting and monitoring in Power Automate more efficient and transparent. It provides a clear process-centric view of the main orchestrating flow and all its child flows that run during a process run. It also understands important structural details about the flows, like conditions, so it can show flows that are part of the process but didn't run because of certain conditional logic or errors. [Learn more](automation-center-process-map.md)
 
@@ -145,7 +145,7 @@ The following are current limitations of the automation center and its underlyin
   
 ## Related information
 
-- [Use process map (preview)](automation-center-process-map.md)
+- [Use process map](automation-center-process-map.md)
 - [Recommendations within automation center](automation-center-recommendations.md)
 - [Use Copilot in automation center](automation-center-copilot.md)
 - [Manage cloud flow run history in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata)

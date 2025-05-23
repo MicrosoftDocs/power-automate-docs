@@ -32,8 +32,6 @@
             href: triggers-introduction.md
           - name: Troubleshoot common issues with triggers
             href: triggers-troubleshoot.md
-        - name: Get help from the Microsoft Copilot Studio bot
-          href: contextual-help-bot.md
     - name: How to
       items:
       - name: Add an action
@@ -1162,7 +1160,7 @@
     items:
     - name: Overview
       href: automation-center-overview.md
-    - name: Process map (preview)
+    - name: Process map
       href: automation-center-process-map.md      
     - name: Recommendations
       href: automation-center-recommendations.md
@@ -1184,6 +1182,8 @@
       href: ./desktop-flows/capacity-utilization-process.md
     - name: How to use process capacity
       href: ./desktop-flows/capacity-process.md
+  - name: Savings (preview)
+    href: savings.md
 - name: Administration
   items:
   - name: Power Automate sign-up FAQ
