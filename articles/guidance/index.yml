@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: taiki-yoshida
   ms.author: tayoshi
-  ms.date: 06/20/2024
+  ms.date: 05/23/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -48,7 +48,7 @@ landingContent:
             url: desktop-flow-coding-guidelines/secure-your-data.md
           - text: Optimize end-to-end process performance
             url: desktop-flow-coding-guidelines/optimize-end-to-end-performance.md
-          - text: Monitor and troubleshoot your automation processes
+          - text: Monitor and troubleshoot automation processes
             url: desktop-flow-coding-guidelines/monitor-automation.md
 
   # Card 
