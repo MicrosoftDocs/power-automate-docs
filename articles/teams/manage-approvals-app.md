@@ -5,8 +5,9 @@ services: ''
 suite: flow
 documentationcenter: na
 author: v-aangie
+ms.service: power-automate
 ms.subservice: teams
-ms.topic: conceptual
+ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/30/2020

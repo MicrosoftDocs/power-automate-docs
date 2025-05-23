@@ -1,11 +1,12 @@
 ---
 title: Run desktop flow actions reference
 description: See how to use the Run desktop flow actions.
-author: mattp123
+author: kewaiss
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 01/31/2025
-ms.author: pefelesk
+ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
 - jpapadimitriou

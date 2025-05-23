@@ -4,7 +4,7 @@ description: Learn about UI elements collections in Power Automate desktop flows
 author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/12/2025
 ms.author: iomavrid
 ms.reviewer: dmartens

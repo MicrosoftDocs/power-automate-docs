@@ -2,9 +2,10 @@
 title: Create an Azure Key Vault credential 
 description: Learn how to create a credential with secret stored in Azure Key Vault.
 author: QuentinSele
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 03/21/2025
+ms.topic: how-to
+ms.date: 04/11/2025
 ms.author: quseleba
 ms.reviewer: 
 contributors:
@@ -111,24 +112,19 @@ In the last step of the wizard, select credential values. Depending on the locat
 
 You can now use your credential in a [desktop flow connections](desktop-flow-connections.md)
 
-## Use the credential in a desktop flow action (preview)
-
-> [!IMPORTANT]
->- Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
->- For more information, go to our [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520).
->- This action isn't available in sovereign clouds yet.
+## Use the credential in a desktop flow action
 
 1. Make sure you have a [registered machine](manage-machines.md) where your desktop flow runs. The credential is retrieved from this machine.  
 
     > [!NOTE]
     > The registered machine is required for credentials to work properly at runtime, even for local attended or debugging runs.
 
-1. In the desktop flow designer, select the **[Power Automate secret variables (preview)](actions-reference/powerautomatesecretvariables.md)** module and then select the **[Get credential (preview)](actions-reference/powerautomatesecretvariables.md#getcredentialaction)** action.
-1. Specify the credential to retrieve. You see only the credentials defined as usable in a desktop flow. In public preview, only credentials using Azure key vault or CyberArk as a vault are supported.
+1. In the desktop flow designer, select the **[Power Automate secret variables](actions-reference/powerautomatesecretvariables.md)** module and then select the **[Get credential](actions-reference/powerautomatesecretvariables.md#getcredentialaction)** action.
+1. Specify the credential to retrieve. You see only the credentials defined as usable in a desktop flow. Credentials using Azure key vault or CyberArk as a vault are supported.
 1. Define the name of the variable you create. This variable is marked as "sensitive" and can't be changed. This means the value of this variable isn't stored in the logs.
 
     > [!NOTE]
-    > Credential type variables are always enforced to be [sensitive](manage-variables.md#sensitive-variables), independently of how they're produced (Get credential (preview) action or reassigning a credential variable to a new one, which inherits the same variable type). The same applies to the 'Password' property of credential variables.
+    > Credential type variables are always enforced to be [sensitive](manage-variables.md#sensitive-variables), independently of how they're produced (**Get credential** action or reassigning a credential variable to a new one, which inherits the same variable type). The same applies to the 'Password' property of credential variables.
 
 1. After you select **Save**, use your credential in another action. All Power Automate actions can use credentials.
 1. In the action field, select the variable picker. In your flow variables list, find your credential and expand it. You can see the attributes **Username** and **Password**. Select the one you want to use in this action (double-click).

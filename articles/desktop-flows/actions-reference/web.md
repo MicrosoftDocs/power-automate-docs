@@ -1,12 +1,13 @@
 ---
 title: HTTP actions reference
-description: See all the available HTTP actions.
-author: jpapadimitriou
+description: Display the HTTP actions.
+author: kewaiss
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 01/20/2025
-ms.author: nimoutzo
-ms.reviewer: gtrantzas
+ms.author: kisubedi
+ms.reviewer: angieandrews
 contributors:
 - jpapadimitriou
 - Yiannismavridis

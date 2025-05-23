@@ -7,8 +7,9 @@ documentationcenter: na
 author: quseleba
 editor: ''
 tags: ''
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 02/11/2025

@@ -1,7 +1,7 @@
 ---
 title: Known limitations for work queues 
 description: Known limitations for work queues.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 03/10/2025
 ms.author: appapaio
 ms.reviewer: 

@@ -7,7 +7,7 @@ documentationcenter: na
 author: v-aangie
 editor: ''
 tags: ''
-ms.topic: article
+ms.topic: get-started
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/23/2022

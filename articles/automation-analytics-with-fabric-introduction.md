@@ -1,7 +1,7 @@
 ---
 title: Automation-centric data analytics with the Dataverse - Fabric integration
 description: Learn how to configure Dataverse shortcuts in Microsoft Fabric to build advanced automation-related queries, reports, and alerts at scale. 
-ms.topic: conceptual
+ms.topic: article
 ms.date: 12/19/2024
 ms.author: appapaio
 ms.reviewer: dmartens

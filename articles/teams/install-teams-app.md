@@ -7,8 +7,9 @@ documentationcenter: na
 author: v-aangie
 editor: ''
 tags: ''
+ms.service: power-automate
 ms.subservice: teams
-ms.topic: conceptual
+ms.topic: install-set-up-deploy
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/04/2020

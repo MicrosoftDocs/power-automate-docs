@@ -5,8 +5,9 @@ author: rosikm
 contributors:
   - rosikm
   - v-aangie 
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/17/2025
 ms.custom: bap-template
 ms.author: michalrosik

@@ -9,10 +9,11 @@ contributors:
   - puyush6889
   - natalie-pienkowska
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/14/2023
-ms.author: kapolepa
+ms.author: lali
 ms.reviewer: angieandrews
 search.audienceType:
   - flowmaker

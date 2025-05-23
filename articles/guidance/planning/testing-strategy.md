@@ -2,12 +2,12 @@
 title: Testing strategy for a Power Automate project | Microsoft Docs
 description: After you've completed your automation, the next step is for you to test it out. This article explains about the testing strategies you should consider.
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: guidance
 ms.date: 12/10/2020
-ms.author: tayoshi
+ms.author: mapichle
 ms.reviewer: kathyos
 
 ---

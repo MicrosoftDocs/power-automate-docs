@@ -6,8 +6,9 @@ contributors:
   - rosikm
   - donums
   - v-aangie 
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/22/2024
 ms.author: michalrosik
 ms.reviewer: angieandrews

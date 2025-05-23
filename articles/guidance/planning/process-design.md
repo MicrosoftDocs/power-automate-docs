@@ -2,12 +2,12 @@
 title: Design phase for planning a Power Automate project | Microsoft Docs
 description: When you design a process automation, the first step is to decide when and what to automate. This article explains different scenarios and the benefits you can realize.
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: guidance
 ms.date: 12/10/2020
-ms.author: tayoshi
+ms.author: mapichle
 ms.reviewer: kathyos
 
 ---

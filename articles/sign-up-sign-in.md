@@ -8,8 +8,9 @@ author: anjlic
 contributors:
   - natalie-pienkowska
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/17/2020
 ms.author: anjlic
 search.audienceType: 

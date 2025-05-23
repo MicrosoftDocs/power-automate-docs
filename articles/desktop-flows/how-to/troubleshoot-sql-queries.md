@@ -3,6 +3,7 @@ title: Troubleshoot SQL queries
 description: Troubleshoot SQL queries
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 09/06/2021

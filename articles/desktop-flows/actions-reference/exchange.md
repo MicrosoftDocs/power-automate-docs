@@ -3,6 +3,7 @@ title: Exchange Server actions reference
 description: See all the available Exchange Server actions.
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 10/24/2023
