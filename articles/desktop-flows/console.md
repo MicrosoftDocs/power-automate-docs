@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 04/11/2025
+ms.date: 05/22/2025
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
@@ -98,8 +98,15 @@ Additionally, the **Run URL** lets you run the flow through various sources, suc
 
 :::image type="content" source="media/console/desktop-flow-details-properties.png" alt-text="Screenshot of the details of a desktop flow.":::
 
-## Generate flow description using Copilot
+### Change the screen resolution settings of a desktop flow for unattended runs
 
+To set the screen resolution for unattended runs, open the desktop flow’s details and select **Edit**. In the Flow properties panel, turn on the **Display resolution for unattended runs** setting. Choose a resolution from the drop-down list or enter a specific resolution manually.
+
+> [!IMPORTANT]
+> - If the **Display resolution for unattended runs** setting is on and the desktop flow calls other desktop flows, all flows run using the resolution set in the parent flow. Make sure this resolution works for all flows to avoid issues.
+> - If you're using the [Reuse Windows session for unattended runs](run-unattended-desktop-flows.md#reuse-a-windows-session-in-unattended-mode) feature, the selected resolution applies to the reused session too.
+
+## Generate flow description using Copilot
 
 Generate a flow description for flows you own or co-own by pressing a button. Copilot analyzes the flow and generates a description. This feature is also available from the flow details in make.powerautomate.com. More information: [Manage desktop flows](manage.md)
 
