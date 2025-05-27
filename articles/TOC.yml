@@ -572,7 +572,7 @@
       href: ./desktop-flows/manage-ui-elements-collections.md
     - name: Use and update UI elements collections
       href: ./desktop-flows/use-update-ui-elements-collections.md
-    - name: Flow checker
+    - name: Flow checker (preview)
       href: ./desktop-flows/static-analysis.md
     - name: Troubleshooter
     href: ./desktop-flows/troubleshooter.md
