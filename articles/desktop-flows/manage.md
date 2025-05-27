@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 02/21/2025
+ms.date: 05/22/2025
 ms.author: appapaio
 ms.reviewer: matp
 contributor: yiannismavridis
@@ -47,6 +47,14 @@ Follow these steps to see the details for a desktop flow:
 1. Select any of your desktop flows.
 
 :::image type="content" source="media/manage-desktop-flows/view-details.png" alt-text="Screenshot of the details of a desktop flow.":::
+
+### Change the screen resolution settings of a desktop flow for unattended runs
+
+To set the screen resolution for unattended runs, open the desktop flow’s details and select **Edit**. In the Flow properties panel, turn on the **Display resolution for unattended runs** setting. Choose a resolution from the drop-down list or enter a specific resolution manually.
+
+> [!IMPORTANT]
+> - If the **Display resolution for unattended runs** setting is on and the desktop flow calls other desktop flows, all flows run using the resolution set in the parent flow. Make sure this resolution works for all flows to avoid issues.
+> - If you're using the [Reuse Windows session for unattended runs](run-unattended-desktop-flows.md#reuse-a-windows-session-in-unattended-mode) feature, the selected resolution applies to the reused session too.
 
 ## Generate flow description using Copilot (preview)
 
@@ -111,13 +119,13 @@ Follow these steps to share a desktop flow:
    > [!NOTE]
    >
    > You can also enter a Microsoft Dataverse team name instead of the name of the person. If you want to share with a Microsoft Entra group, you first need to create a Microsoft Entra Group team in Dataverse based on the Microsoft Entra Group. More information: [Microsoft Dataverse teams management](/power-platform/admin/manage-teams)
-   
-5. Select the user and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
+
+1. Select the user and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
 
     - **Co-owner**: This access level gives the co-owner full permissions to the desktop flow. They can edit, share, and delete the desktop flow.
     - **User**: This access level gives permission to only use that desktop flow in a cloud flow and run it locally with Power Automate for desktop. No edit, rename, delete, or share permissions are possible with this access. Alternatively, those users can create a copy of the desktop flow using the **Save as** option, and work independently.
 
-6. Select **Save**.
+1. Select **Save**.
 
    :::image type="content" source="media/manage-desktop-flows/sharing-ux.png" alt-text="Screenshot of the Share button.":::
 
