@@ -83,6 +83,8 @@ Each violation displays a tile with details, including the error's nature, recom
 
 ## Static analysis rules
 
+Static analysis rules are predefined guidelines that help ensure your flows are secure, maintainable, and performant. Each rule targets specific aspects of flow design, such as security, performance, and maintainability, and provides actionable feedback to improve your flow's quality. Below is a list of the rules, their descriptions, and suggested fixes.
+
 <a name="unsafepasswordsecurity"></a>
 ### Unsafe password security
 
@@ -129,7 +131,7 @@ Each violation displays a tile with details, including the error's nature, recom
 - **Suggested fix**: Ensure that the number of input and output variables in the flow doesn't exceed 25.
 
 <a name="emptyonblockerror"></a>
-### Empty On block error action
+### Empty on block error action
 
 - **Default severity**: Warning
 - **Type**: Best practices rules - Maintainability
