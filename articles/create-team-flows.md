@@ -166,10 +166,6 @@ Make it a routine to review flow sharing and ownership. For instance, do monthly
 > [!TIP]
 > The [Power Platform admin center](https://admin.powerplatform.microsoft.com/home) analytics and the [Power Platform Center of Excellence Starter Kit](/power-platform/guidance/coe/starter-kit) dashboards can show trends, like how many flows each user runs, or how many flows each environment has. Use these to detect if a particular flow is being widely used by unexpected users. This indicates a possible unmanaged share.
 
-### Consider automation for oversight
-
-Beyond reports, you can implement guardrails. For example, create a flow that alerts the admin when a new co-owner is added to a flow in a sensitive environment. This can be done with the Power Automate management connectors (trigger on **When a flow is shared** event, if such exists<!--please explain/spell "diff" in ()...or periodically diff the owners list)-->. Another idea is an admin script that flags flows whose **Owner** count is greater than 1 and checks those owners against environment user lists automatically. <!-- If an... Dimitri: original is cut off here. Please complete.-->
-
 ## FAQ
 
 ### Manage flows when the user who created a shared flow leaves the organization
