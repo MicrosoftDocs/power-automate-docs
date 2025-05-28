@@ -153,7 +153,7 @@ Follow these steps to send an email if the vacation request is approved:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-   :::image type="content" source="..articles/media/modern-approvals/yes-email-config.png" alt-text="Screenshot showing email configuration for approved requests in the classic designer.":::
+:::image type="content" source="media/modern-approvals/yes-email-config.png" alt-text="Screenshot showing email configuration for approved requests in the classic designer.":::
 
 ---
 
@@ -189,7 +189,7 @@ Follow these steps to send an email if the vacation request is rejected:
 
 [!INCLUDE [add-action-to-send-email-when-vacation-rejected](includes/add-action-to-send-email-when-vacation-rejected-new-designer.md)]
 
-   :::image type="content" source="./media/modern-approvals/configure-rejected-email-new-designer.png" alt-text="Screenshot showing configuration for rejected request emails in the new designer.":::
+    :::image type="content" source="media/modern-approvals/configure-rejected-email-new-designer.png" alt-text="Screenshot showing configuration for rejected request emails in the new designer.":::
 
 # [Classic designer](#tab/classic-designer)
 

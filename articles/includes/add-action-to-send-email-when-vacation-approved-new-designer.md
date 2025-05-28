@@ -6,7 +6,7 @@
 1. In the next field, select **is equal to** from the dropdown menu.
 1. In the other **choose a value** field, select the lightning bolt icon, and select **Approve**.
 
-    :::image type="content" source="../articles/media/modern-approvals/add-condition.png" alt-text="Screenshot showing how to add a new action after the condition in classic designer.":::
+    :::image type="content" source="media/modern-approvals/add-condition.png" alt-text="Screenshot showing how to add a condition in the new designer.":::
 
 1. Close the configuration pane.
 1. In the designer, select the plus sign under **True**.
@@ -26,8 +26,6 @@
     1. To insert the comments from the approver, place your cursor in the **Body** box at the location where you want the comments to appear, and then select the lightning bolt icon.
     1. Select a token from the dropdown menu. The following example uses the **Responses comments** token.
 
-        :::image type="content" source="../articles/media/modern-approvals/yes-email-config-new-designer.png" alt-text="Screenshot showing how to add a new action after the condition in classic designer.":::
-
-
+        :::image type="content" source="media/modern-approvals/yes-email-config-new-designer.png" alt-text="Screenshot showing how to configure an email in the new designer.":::
 
 
