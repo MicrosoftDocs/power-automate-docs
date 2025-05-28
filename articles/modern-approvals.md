@@ -13,7 +13,7 @@ ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 05/08/2025
+ms.date: 05/27/2025
 search.audienceType: 
   - flowmaker
   - enduser
@@ -28,9 +28,9 @@ Approvers can respond to requests from their email inbox, the approvals center i
 
 ## Create an approval flow
 
-Here's an overview of the flow you create and test:
+Here's an overview of the flow you create and test. In this example, you use SharePoint Online as the trigger, but you can use any other trigger to start your approval flow.
 
-   :::image type="content" source="./media/modern-approvals/create-flow-overview.png" alt-text="Screenshot of an approval flow overview."::: 
+   :::image type="content" source="./media/modern-approvals/create-flow-overview.png" alt-text="Screenshot of an approval flow overview.":::
 
 The flow performs the following steps:
 
@@ -80,7 +80,7 @@ Follow these steps to add a trigger to your flow:
 
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
-&nbsp;&nbsp;&nbsp;The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
+&nbsp;&nbsp;&nbsp;The **Site Address** and the **List Name** are the items you created in the SharePoint online list in the  [Prerequisites](#prerequisites) section.
 
 &nbsp;&nbsp;&nbsp;:::image type="content" source="./media/modern-approvals/select-sharepoint-site-info-new-designer.png" alt-text="Screenshot showing SharePoint site information selection in the new designer.":::
 
@@ -88,7 +88,7 @@ Follow these steps to add a trigger to your flow:
 
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
-   The **Site Address** and the **List Name** are the items you noted earlier in this walkthrough.
+   The **Site Address** and the **List Name** are the items you created in the SharePoint online list in the  [Prerequisites](#prerequisites) section.
 
    :::image type="content" source="./media/modern-approvals/select-sharepoint-site-info.png" alt-text="Screenshot showing SharePoint site information selection in the classic designer.":::
 
@@ -147,15 +147,13 @@ Follow these steps to send an email if the vacation request is approved:
 
 # [New designer](#tab/new-designer)
 
-[!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved-new-designer.md)]
-
-   :::image type="content" source="./media/modern-approvals/yes-email-config-new-designer.png" alt-text="Screenshot showing email configuration for approved requests in the new designer.":::
+[!INCLUDE [add-action-to-send-email-when-vacation-approved-new-designer](includes/add-action-to-send-email-when-vacation-approved-new-designer.md)]
 
 # [Classic designer](#tab/classic-designer)
 
 [!INCLUDE [add-action-to-send-email-when-vacation-approved](includes/add-action-to-send-email-when-vacation-approved.md)]
 
-   :::image type="content" source="./media/modern-approvals/yes-email-config.png" alt-text="Screenshot showing email configuration for approved requests in the classic designer.":::
+   :::image type="content" source="..articles/media/modern-approvals/yes-email-config.png" alt-text="Screenshot showing email configuration for approved requests in the classic designer.":::
 
 ---
 
@@ -221,7 +219,6 @@ Follow these steps to update actions for rejected requests:
    :::image type="content" source="./media/modern-approvals/completed-flow-new-designer.png" alt-text="Screenshot showing the completed flow in the new designer.":::
 
    Now that you created the flow, it's time to test it!
-
 
 # [Classic designer](#tab/classic-designer)
 
