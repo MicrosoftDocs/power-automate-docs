@@ -13,7 +13,7 @@ ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 05/27/2025
+ms.date: 05/28/2025
 search.audienceType: 
   - flowmaker
   - enduser
@@ -247,23 +247,25 @@ Follow these steps to update actions for rejected requests:
 
 If your flow might run for more than 30 days, store your approvals in Microsoft Dataverse. This lets you create flows that act on responses to approval requests, even after the original flow run times out.
 
-To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action. Learn more about [long running approvals](/business-applications-release-notes/april19/microsoft-flow/increased-run-duration).
+To do this, use two flows, one to send an approval request, and the other to run business logic on the responses to the approval request, based on the **Create an approval (v2)** action.
 
 > [!TIP]
 > If you use modern email clients, you don't have to wonder if a request is still required because Power Automate automatically updates the email to indicate that the approval request is completed.
 
 ## Cancel an approval request
 
-Sometimes you might want to cancel an approval request that you sent. Possibly you made a mistake in the request, or it’s no longer relevant. In either case, the person who sent the request can cancel it by following these steps:
+Sometimes you might want to cancel an approval request that you sent. Possibly you made a mistake in the request, or it's no longer relevant. The person who sent the request can cancel it by following these steps.
 
-1. Select the approval
-1. Select **Cancel approval** in the side pane.
+The cancel feature is supported on the **Create an approval (v2)** action.
+
+1. On the navigation pane to the left, select **Approvals**.
+1. In the **Sent** tab, find and select your approval request.
+1. At the top of the page, select **Cancel**.
+
+    You might be prompted to confirm that you want to cancel the request.
 
 > [!TIP]
-> You can always select the **History** tab to view the approval requests that you canceled.
-
-> [!NOTE]
-> The cancel feature is supported on the **Create an approval (v2)** action.
+> You can select the **History** tab to view the approval requests that you canceled.
 
 ## Request approvals from guest users
 
