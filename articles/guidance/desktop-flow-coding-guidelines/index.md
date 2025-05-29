@@ -6,7 +6,7 @@ author: PetrosFeleskouras
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 05/23/2025
+ms.date: 05/29/2025
 ms.author: pefelesk
 ms.reviewer: jhaskett-msft
 search.audienceType: 

@@ -5,7 +5,7 @@ description: Secure your Power Automate workflows by managing credentials, sensi
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/15/2025
+ms.date: 05/29/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:

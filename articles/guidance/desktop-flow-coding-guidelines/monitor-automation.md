@@ -5,7 +5,7 @@ description: Learn how to monitor desktop flow action logs and troubleshoot issu
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/15/2025
+ms.date: 05/29/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
@@ -68,3 +68,7 @@ For more advanced or custom monitoring, reporting, and analysis, integrate with 
 :::image type="content" source="media/monitor-automation-processes/fabric.png" alt-text="Screenshot of Power Apps interface showing integration with Microsoft Fabric." lightbox="media/monitor-automation-processes/fabric.png":::
 
 Learn how to [generate automation-centric data analytics with Fabric](../../automation-analytics-with-fabric-introduction.md) and [create automation-related SQL queries](../../automation-analytics-with-fabric-queries.md) on the SQL Analytical Endpoint in Fabric.
+
+## Related information
+
+- [Run static analysis in the portal](/power-automate/desktop-flows/static-analysis#run-static-analysis-in-the-portal)

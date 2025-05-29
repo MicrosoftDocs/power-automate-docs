@@ -5,7 +5,7 @@ description: Learn how to distribute workloads dynamically using machine groups 
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/15/2025
+ms.date: 05/29/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
