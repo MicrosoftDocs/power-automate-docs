@@ -166,7 +166,7 @@ To copy and paste an action, follow these steps.
 
     :::image type="content" source="media/flows-designer/copy-action.png" alt-text="Screenshot highlights copying an action.":::
 
-1. On the canvas, select **+** on the canvas to add an action, and then select **Paste an action**.
+1. On the canvas, right click on **+** on the canvas, and then select **Paste an action**.
 
     You can copy and paste actions across different parts of your flow, or in between flows.
 
