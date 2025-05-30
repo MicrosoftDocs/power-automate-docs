@@ -43,7 +43,7 @@ To configure static analysis rules:
 > [!NOTE]
 > - If the environment is part of an environment group with a defined configuration, the rule settings are inherited and can't be edited individually.
 Learn more about solution checker in [Solution checker](/power-apps/maker/data-platform/use-powerapps-checker) and [Solution checker enforcement in Managed Environments](/power-platform/admin/managed-environment-solution-checker).
-> - Power Platform administrators should assign the following privilege to any roles that require access to the feature: prvReadmsdyn_analysisoverride (Its friendly name is 'Analysis Override (Read)'.
+> - Power Platform administrators should assign the following privilege to any roles that require access to the feature: prvReadmsdyn_analysisoverride (Its friendly name is 'Analysis Override (Read)').
 
 ## Run static analysis in the portal
 
