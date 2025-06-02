@@ -6,7 +6,7 @@
 
 1. Configure the **Start and wait for an approval** card to suit your needs.
 
-     >[!NOTE] 
+     > [!NOTE]
      > The **Approval type**,  **Title** and **Assigned To** fields are required.
      > You can use [Markdown](../approvals-markdown-support.md) to format the **Details** field.
      > 
