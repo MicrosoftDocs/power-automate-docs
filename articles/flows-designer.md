@@ -10,7 +10,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 05/13/2025
+ms.date: 05/29/2025
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -162,11 +162,11 @@ You can copy actions to the clipboard whether they're atomic actions or containe
 
 To copy and paste an action, follow these steps.
 
-1. Right-click on any action (or trigger) you want to copy.
+1. Right-click on any action (or trigger) you want to copy, and select **Copy Action**.
 
     :::image type="content" source="media/flows-designer/copy-action.png" alt-text="Screenshot highlights copying an action.":::
 
-1. On the canvas, select **+** on the canvas to add an action, and then select **Paste an action**.
+1. On the canvas, right-click on **+**, and then select **Paste an action**.
 
     You can copy and paste actions across different parts of your flow, or in between flows.
 
