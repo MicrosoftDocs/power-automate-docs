@@ -45,7 +45,7 @@ Create flows so that you can easily run repetitive tasks from any place, at any 
 
     - **Post message**
 
-        - **Group ID:** Aelect the group to post a message to.
+        - **Group ID:** Select the group to post a message to.
 
 
     :::image type="content" source="../media/mobile/flow-template.png" alt-text="<alt text>":::
