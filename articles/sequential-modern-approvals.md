@@ -78,7 +78,6 @@ Make  note of the name and URL of the SharePoint Online list. We use these items
 
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
-1. On the **When an item is created** card, select the **Site Address** and the **List Name** for the SharePoint list that you created earlier.
 
 ## Get the manager for the person who created the vacation request
 
@@ -115,7 +114,7 @@ This action sends the pre-approval request to the email address in the **Assigne
 ## Get the pre-approver's manager
 
 1. Use the [Get the manager for the person who created the vacation request](sequential-modern-approvals.md#get-the-manager-for-the-person-who-created-the-vacation-request) steps we did earlier to add, and then configure another **Get manager** action. This time we get the pre-approver's manager.
-2. The **Get manager 2** card should resemble this image when you're finished. Be sure to use the **Email** token from the **Get manager** category on the **Add dynamic content from the apps and services used in this flow** card.
+2. The **Get manager 2** card should resemble this image when you're finished. Be sure to use the **Email** token from the **Get manager** category on the **Add dynamic content from the apps and services** used in this flow card.
 
    ![get pre-approver's manager.](includes/media/modern-approvals/get-pre-approver-manager.png)
 
@@ -150,7 +149,7 @@ Repeat the steps from [add a condition](sequential-modern-approvals.md#add-a-con
 
    ![configuration for rejected requests.](./media/sequential-modern-approvals/configure-rejected-email.png)
 
-This action must be added to the **IF NO, DO NOTHING** branch below the **Condition** card.
+This action must be added to the **False** branch in new designer or **If no** branch in classic designer below the **Condition** card.
 
 ## Update SharePoint with pre-approval rejection
 
@@ -162,7 +161,7 @@ This action must be added to the **IF NO, DO NOTHING** branch below the **Condit
 
 1. Use the steps from [Send email with pre-approval rejection](sequential-modern-approvals.md#send-email-with-pre-approval-rejection) to add, and then configure an action that sends an email when the vacation request is rejected by the final approver.
 
-    This action must be added to the **IF NO, DO NOTHING** branch below the **Condition 2** card.
+    This action must be added to the **False** branch in new designer or **If no** branch in classic designer below the **Condition 2** card.
 
 1. When you're finished, the card should resemble this image:
 
@@ -193,6 +192,7 @@ Your request should resemble this image:
 ## View pending approval requests
 
 [!INCLUDE [view-pending-approvals](includes/view-pending-approvals.md)]
+Note: if you can't see Approvals, click **More** on the left-side navigation pane, then pin it to show directly on the left-side navigation pane.
 
 ## Pre-approve a request
 
