@@ -80,7 +80,7 @@ Provide a name for your flow, and then select **Save** to save the work we've do
 ## Insert a parallel branch approval action for the sales team
 
 1. Select the down arrow that's located between the **Get manager (v2)** and the **Start and wait for an approval** cards.
-1. Select the plus sign that shows up on the down arrow after you select it.
+1. Right click the plus sign that shows up on the down arrow after you select it, more options are displayed.
 1. Select **Add a parallel branch**.
 
     ![get manager config.](./media/parallel-modern-approvals/add-parallel-branch.png)
@@ -137,7 +137,7 @@ Let's continue:
    > [!NOTE]
    > This condition checks the response from the **Start an approval** action that goes to the employee's manager.
 
-1. Repeat the preceding steps on the **Start an approval 2** (the approval request to sales) and **Start an approval 3** (the approval request to human resources) branches.
+1. Repeat the preceding steps on the **Start an approval 2** (the approval request to Sales team) and **Start an approval 3** (the approval request to Human Resources team) branches.
 
 ## Add email actions to each branch
 
@@ -151,9 +151,16 @@ Perform the following steps on the **IF YES** side of the **Condition** branch.
 
 To send an email when a request is rejected, use the **IF NO** side of the **Condition** branch, and then repeat the preceding steps to add a template for the rejection email.
 
-Repeat the preceding steps on the **Start and wait for an approval 2** (the approval request to sales) and **Start and wait for an approval 3** (the approval request to human resources) branches.
+Repeat the preceding steps on the **Start and wait for an approval 2** (the approval request to Sales team) and **Start and wait for an approval 3** (the approval request to Human Resources team) branches.
 
-## Update the vacation request with the decision
+## Send email notification to the employee with status changes
+
+1. Select **+New step**
+1. Use the steps provided previously to send an email that summarizes the results of each approval. Send this email to the employee who requested vacation. Your card may resemble this example:
+
+    ![A screenshot of the filled out flow details.](./media/parallel-modern-approvals/final-email-card.png)
+
+## Update the vacation request with the decision to complete the flow
 
 Perform the following steps to update SharePoint when decisions are made.
 
@@ -165,12 +172,7 @@ Perform the following steps to update SharePoint when decisions are made.
 
 Repeat the preceding steps on the **Start an approval 2** and **Start an approval 3** branches.
 
-## Complete the flow
-
-1. Select **+New step**
-1. Use the steps provided previously to send an email that summarizes the results of each approval. Send this email to the employee who requested vacation. Your card may resemble this example:
-
-    ![A screenshot of the filled out flow details.](./media/parallel-modern-approvals/final-email-card.png)
+On the **IF NO** sides of the branch, repeat the preceding steps and configure the **Update item** card to suite your needs accordingly.
 
 ## Learn more about modern approvals
 
