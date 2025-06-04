@@ -5,7 +5,7 @@ author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 05/08/2025
+ms.date: 06/04/2025
 ms.author: nimoutzo
 ms.reviewer: danamartens
 contributors:
@@ -41,9 +41,9 @@ To configure static analysis rules:
 1. In the **Solution checker enforcement** section, configure which rules should be excluded for the selected environment.
 
 > [!NOTE]
-> - If the environment is part of an environment group with a defined configuration, the rule settings are inherited and can't be edited individually.
-Learn more about solution checker in [Solution checker](/power-apps/maker/data-platform/use-powerapps-checker) and [Solution checker enforcement in Managed Environments](/power-platform/admin/managed-environment-solution-checker).
-> - Power Platform administrators should assign the following privilege to any roles that require access to the feature: prvReadmsdyn_analysisoverride (Its friendly name is 'Analysis Override (Read)').
+>
+> - If the environment is part of an environment group with a defined configuration, the rule settings are inherited and can't be edited individually. Learn more about solution checker in [Solution checker](/power-apps/maker/data-platform/use-powerapps-checker) and [Solution checker enforcement in Managed Environments](/power-platform/admin/managed-environment-solution-checker).
+> - Power Platform administrators should assign the following privilege to any roles that require access to the feature: `prvReadmsdyn_analysisoverride` (friendly name is 'Analysis Override (Read)').
 
 ## Run static analysis in the portal
 
@@ -115,7 +115,7 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 <a name="variabledefaultvalues"></a>
 ### Input variable default values
 
-- **Feverity**: Warning
+- **Severity**: Warning
 - **Type**: Maintainability
 - **Error details**: Input/output variables aren't using default values.
 - **Description**: This rule verifies if Input/Output variables are using default values, ensuring that they're properly configured for the flow.
