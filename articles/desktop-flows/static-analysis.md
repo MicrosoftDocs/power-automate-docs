@@ -5,7 +5,7 @@ author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 05/08/2025
+ms.date: 06/04/2025
 ms.author: nimoutzo
 ms.reviewer: danamartens
 contributors:
@@ -41,9 +41,9 @@ To configure static analysis rules:
 1. In the **Solution checker enforcement** section, configure which rules should be excluded for the selected environment.
 
 > [!NOTE]
-> If the environment is part of an environment group with a defined configuration, the rule settings are inherited and can't be edited individually.
-
-Learn more about solution checker in [Solution checker](/power-apps/maker/data-platform/use-powerapps-checker) and [Solution checker enforcement in Managed Environments](/power-platform/admin/managed-environment-solution-checker).
+>
+> - If the environment is part of an environment group with a defined configuration, the rule settings are inherited and can't be edited individually. Learn more about solution checker in [Solution checker](/power-apps/maker/data-platform/use-powerapps-checker) and [Solution checker enforcement in Managed Environments](/power-platform/admin/managed-environment-solution-checker).
+> - Power Platform administrators should assign the following privilege to any roles that require access to the feature: `prvReadmsdyn_analysisoverride` (friendly name is 'Analysis Override (Read)').
 
 ## Run static analysis in the portal
 
@@ -88,8 +88,8 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 <a name="unsafepasswordsecurity"></a>
 ### Unsafe password security
 
-- **Default severity**: Warning
-- **Type**: Security rules - Security
+- **Severity**: Warning
+- **Type**: Security
 - **Error details**: Passwords are managed insecurely in the flow.
 - **Description**: This rule checks if passwords are managed insecurely in a desktop flow to ensure they're not exposed or mishandled during execution.
 - **Suggested fix**: Ensure all password-related inputs are handled appropriately by using the password features of Power Automate for desktop. Use "Direct encrypted text input" for maximum security through machine-based encryption. For flows used on different machines, choose "Password input as variable" and mark the corresponding variable as sensitive to enhance security. Also, use secure credential management features like the "Get Credential" action, which integrates with CyberArk credentials.
@@ -97,8 +97,8 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 <a name="recursionsubflows"></a>
 ### Recursion between two subflows
 
-- **Default severity**: Warning
-- **Type**: Best practices rules - Performance
+- **Severity**: Warning
+- **Type**: Performance
 - **Error details**: Recursive calls detected between subflows, potentially causing an infinite loop.
 - **Description**: This rule checks for recursive calls between two or more subflows, ensuring that the flow doesn't enter an infinite loop.
 - **Suggested fix**: Remove any recursive calls between the subflows.
@@ -106,8 +106,8 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 <a name="variablelength"></a>
 ### Variable length exceeded
 
-- **Default severity**: Warning
-- **Type**: Variable rules - Maintainability
+- **Severity**: Warning
+- **Type**: Maintainability
 - **Error details**: Variable name exceeds the 25-character limit.
 - **Description**: This rule verifies if the name of each variable defined in the flow exceeds a specified number of characters. The default limit is 25 characters.
 - **Suggested fix**: Rename any variables that exceed the specified character limit to ensure their names are shorter than 25 characters.
@@ -115,8 +115,8 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 <a name="variabledefaultvalues"></a>
 ### Input variable default values
 
-- **Default severity**: Warning
-- **Type**: Variable rules - Maintainability
+- **Severity**: Warning
+- **Type**: Maintainability
 - **Error details**: Input/output variables aren't using default values.
 - **Description**: This rule verifies if Input/Output variables are using default values, ensuring that they're properly configured for the flow.
 - **Suggested fix**: Assign default values to all input and output variables in the flow.
@@ -124,17 +124,17 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 <a name="thresholdvariablesnumber"></a>
 ### Threshold on number of input and output variables
 
-- **Default severity**: Warning
-- **Type**: Best practices rules - Maintainability
+- **Severity**: Warning
+- **Type**: Maintainability
 - **Error details**: Total input/output variables exceed the 25-variable limit.
-- **Description**: This rule verifies if the total number of input/output variables in the flow exceeds a specified threshold. The default limit is 25 variables.
+- **Description**: This rule verifies if the total number of input/output variables in the flow exceeds a specified threshold. The limit is 25 variables.
 - **Suggested fix**: Ensure that the number of input and output variables in the flow doesn't exceed 25.
 
 <a name="emptyonblockerror"></a>
 ### Empty on block error action
 
 - **Default severity**: Warning
-- **Type**: Best practices rules - Maintainability
+- **Type**: Maintainability
 - **Error details**: "On block error" action is empty and not handling errors.
 - **Description**: This rule checks whether the "On block error" actions in your flow are set up correctly to handle errors, making sure that errors are thrown and managed as expected.
 - **Suggested fix**: To manage potential errors, set up the **On block error** actions in the flow.
@@ -142,8 +142,8 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 <a name="nestedifclauses"></a>
 ### Nested if clauses
 
-- **Default severity**: Warning
-- **Type**: Ease of maintenance rules - Maintainability
+- **Severity**: Warning
+- **Type**: Maintainability
 - **Error details**: Nested If clauses exceed five levels.
 - **Description**: This rule checks if there are nested if statements with more than five levels, ensuring that the flow remains manageable and readable.
 - **Suggested fix**: Refactor the flow to reduce nested if statements to no more than five levels.
@@ -151,8 +151,8 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 <a name="incompleteif"></a>
 ### Incomplete if
 
-- **Default severity**: Warning
-- **Type**: Ease of maintenance rules - Maintainability
+- **Severity**: Warning
+- **Type**: Maintainability
 - **Error details**: Incomplete If action detected, lacking content or only containing actions in the Else branch.
 - **Description**: This rule detects If actions that lack content or only contain actions in the Else branch, ensuring that conditional statements are effectively implemented.
 - **Suggested fix**: Go through the flow and review each "If" condition to ensure that it includes meaningful actions in both the "If", "Else if", and "Else" branches.
@@ -160,8 +160,8 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 <a name="infiniteloop"></a>
 ### Infinite loop
 
-- **Default severity**: Warning
-- **Type**: Reliability rules - Performance
+- **Severity**: Warning
+- **Type**: Performance
 - **Error details**: Infinite loop detected in the flow, potentially causing it to run indefinitely.
 - **Description**: This rule checks if there are any infinite loops in the flow, helping to identify and prevent scenarios where the flow might run indefinitely.
 - **Suggested fix**: Make sure each loop has a clearly defined and achievable termination condition. The condition can be based on a counter, a specific value, or the completion of a task. Add checks or failsafe conditions to break the loop if it runs longer than expected. For example, set a maximum iteration count or include a timeout.
@@ -169,20 +169,21 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 <a name="misusuwaitaction"></a>
 ### Misuse of wait actions
 
-- **Default severity**: Warning
-- **Type**: Performance rules - Performance
+- **Severity**: Warning
+- **Type**: Performance
 - **Error details**: Misuse of wait actions detected, with more than 10 wait actions causing potential bottlenecks.
-- **Description**: This rule checks if the flow contains an excessive number of wait actions—by default, more than 10—to help identify and minimize potential bottlenecks caused by prolonged delays.
+- **Description**: This rule checks if the flow contains an excessive number of wait actions—more than 10—to help identify and minimize potential bottlenecks caused by prolonged delays.
 - **Suggested fix**: Review the flow to identify all wait actions and check if they're essential for the flow's logic. Remove unnecessary waits or combine them where possible.
 
 <a name="immensewaitactions"></a>
 ### Immense wait time
 
-- **Default severity**: Warning
-- **Type**: Performance rules - Performance
+- **Severity**: Warning
+- **Type**: Performance
 - **Error details**: Immense wait time detected, exceeding the 600-second limit for hardcoded wait actions.
-- **Description**: This rule checks if the hardcoded wait actions in the flow exceed a specified amount of time, with the default limit set to 600 seconds.
+- **Description**: This rule checks if the hardcoded wait actions in the flow exceed a specified amount of time, with the limit set to 600 seconds.
 - **Suggested fix**: Review the flow to find wait actions that exceed the 600-second limit. Check if these long wait times are necessary and adjust their duration to the shortest time needed for the flow to work correctly. If a long wait is required, break it into shorter intervals and add checks or conditions between them. Whenever possible, replace long wait actions with event-driven triggers.
+
 
 ## Known limitations
 
