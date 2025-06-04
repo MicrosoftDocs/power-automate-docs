@@ -5,7 +5,7 @@ author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/07/2023
+ms.date: 06/04/2025
 ms.author: quseleba
 ms.reviewer: quseleba
 contributors:
@@ -152,13 +152,13 @@ You have two options to provide a secure input:
   
    - Redirect file:
   
-     1. Create a txt file that contains the password and save it on your machine.
+     1. Create a text (.txt) file that contains the password and save it on your machine.
 
      1. Use the following command:
   
         For PowerShell:
 
-        ```CMD
+        ```powershell
         Get-Content <PathToSavedFile>\password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
         ```
 
