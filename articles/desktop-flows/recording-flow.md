@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 09/27/2022
+ms.date: 06/05/2025
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -60,7 +60,6 @@ Use UIA capturing mode whenever possible for better performance, maintainability
 - **Microsoft Active Accessibility (MSAA)**
 is an older accessibility technology that predates UIA. It is primarily used for legacy applications that do not expose UIA elements, such as older Windows applications built with technologies like VB6 or classic Win32. While MSAA provides less detail and structure than UIA, it is essential for enabling automation in environments where UIA is not available.
 Use MSAA capturing mode when targeting legacy or custom-built applications that do not expose their UI components through UIA.
-
 
 ### Replicate drag and drop steps
 

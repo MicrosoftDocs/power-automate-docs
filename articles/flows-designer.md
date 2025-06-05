@@ -4,14 +4,13 @@ description: Learn about the components in the cloud flows designer.
 suite: flow
 author: kisubedi
 contributors:
- - lanlanlee2008
  - kisubedi
  - v-aangie
  - EllenWehrle
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 04/01/2025
+ms.date: 05/29/2025
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -163,11 +162,11 @@ You can copy actions to the clipboard whether they're atomic actions or containe
 
 To copy and paste an action, follow these steps.
 
-1. Right-click on any action (or trigger) you want to copy.
+1. Right-click on any action (or trigger) you want to copy, and select **Copy Action**.
 
     :::image type="content" source="media/flows-designer/copy-action.png" alt-text="Screenshot highlights copying an action.":::
 
-1. On the canvas, select **+** on the canvas to add an action, and then select **Paste an action**.
+1. On the canvas, right-click on **+**, and then select **Paste an action**.
 
     You can copy and paste actions across different parts of your flow, or in between flows.
 
@@ -282,13 +281,13 @@ You might notice that some functionalities that were in the classic designer are
   - These are legacy flows, probably created a long time ago when Open API support wasn't available.
   - We plan to migrate them to Open API format. In the meantime, if you want to work with the latest functionalities in the new designer Copilot experience, consider recreating the flow in the new designer until we announce the migration plan.
 - Some hybrid triggers:
-  - When a flow is run from business process flow (Dataverse)
-  - Microsoft 365 Compliance Connector
-- A comment
-- Power Pages connector
-- Power Apps v1 trigger
-- Perform a changeset request action (Dataverse)
-- A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference instead.
+  - When a flow is run from business process flow (Dataverse).
+  - Microsoft 365 Compliance Connector.
+- A comment. We recommend that you use Action _notes_ until the support is available.
+- Power Pages connector.
+- Power Apps v1 trigger. We recommend that you use V2 trigger instead.
+- Perform a changeset request action (Dataverse).
+- A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference as a proper application lifecycle management (ALM) practice instead.
 
 As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is becoming the primary interface.
 
@@ -297,7 +296,7 @@ If you prefer to access features not yet available in the new designer, or encou
 :::image type="content" source="media/flows-designer/designer-toggle.png" alt-text="Screenshot of the 'New designer' toggle.":::
 
 > [!NOTE]
-> The Power Automate cloud flows designer isn't yet available in integration surfaces such as Power Apps, Teams, and others.
+> The new cloud flows designer isn't yet available in integration surfaces such as Solution Explorer, Power Apps, Teams, and others.
 
 If a flow is saved too soon on load, it might be saved without advanced parameters if those parameters weren't fetched yet. As a workaround, you can avoid saving a flow too soon on load. Alternatively, use the classic designer.
 
@@ -327,5 +326,4 @@ Learn how to work with Copilot in cloud flows. You can get started with these ar
 
 - [Get started with Copilot in cloud flows](get-started-with-copilot.md)
 - [FAQ for Copilot expression assistant](faqs-copilot-expression-assistant.md)
-
 

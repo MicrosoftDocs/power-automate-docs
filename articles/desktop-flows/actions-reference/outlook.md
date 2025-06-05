@@ -1,12 +1,12 @@
 ---
 title: Outlook actions reference
-description: See all the available Outlook actions.
+description: Display the Outlook actions.
 author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 01/11/2024
-ms.author: dipapa
+ms.author: iomavrid
 ms.reviewer: matp
 contributors:
 - jpapadimitriou
