@@ -198,7 +198,7 @@ The following table describes the limits on the number of characters in expressi
 | Name | Limit | Notes |
 |------|-------|-------|
 | Expression evaluation limit | 131,072 characters | The `@concat()`, `@base64()`, and `@string()` expressions can't be longer than this limit. |
-| Request URL character limit | 16,384 characters |
+| Request URL character limit | 16,384 characters | n/a |
 
 ### Retry policy
 
