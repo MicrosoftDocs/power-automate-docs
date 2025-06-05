@@ -35,7 +35,7 @@ To record a flow that automates desktop and/or web applications:
     The recorder keeps track of mouse and keyboard activity in relation to UI elements, and it records each action separately. During each recording session, the recorder can generate both UI and browser automation actions.
 
     > [!NOTE]
-    > When you perform a left or right click on a UI element during the recording, the highlighter displays a **Wait for action** message, instructing you to wait for the recorder to record and insert the action.
+    > When you perform a left or right-click on a UI element during the recording, the highlighter displays a **Wait for action** message, instructing you to wait for the recorder to record and insert the action.
 
     ![Screenshot of some recorded steps.](./media/recording-flow/recorded-steps.png "Screenshot of some recorded steps.")
 
@@ -55,11 +55,11 @@ To pause the recording process temporarily, select **Pause**. To add a comment t
 The recorder now supports capturing both UI Automation (UIA) and Microsoft Active Accessibility (MSAA) selectors. You can choose the appropriate selector type based on the application you're automating by opening the Capturing mode menu within the recorder and selecting either UIA or MSAA.
 ![Screenshot of the recorder's capturing menu options.](./media/recording-flow/recorder_capturing_mode_uia_msaa.png "Screenshot of the recorder's capturing menu options.")
 - **UI Automation (UIA)** 
-is the modern accessibility framework introduced by Microsoft to replace MSAA. It is the recommended technology for automating most Windows applications, especially those built with newer UI frameworks such as WPF, WinForms, and Universal Windows Platform (UWP). UIA offers more robust and detailed element information, improved hierarchy structures, and greater reliability in automation scenarios.
+is the modern accessibility framework introduced by Microsoft to replace MSAA. It's the recommended technology for automating most Windows applications, especially those built with newer UI frameworks such as WPF, WinForms, and Universal Windows Platform (UWP). UIA offers more robust and detailed element information, improved hierarchy structures, and greater reliability in automation scenarios.
 Use UIA capturing mode whenever possible for better performance, maintainability, and support across modern desktop applications.
 - **Microsoft Active Accessibility (MSAA)**
-is an older accessibility technology that predates UIA. It is primarily used for legacy applications that do not expose UIA elements, such as older Windows applications built with technologies like VB6 or classic Win32. While MSAA provides less detail and structure than UIA, it is essential for enabling automation in environments where UIA is not available.
-Use MSAA capturing mode when targeting legacy or custom-built applications that do not expose their UI components through UIA.
+is an older accessibility technology that predates UIA. It's primarily used for legacy applications that don't expose UIA elements, such as older Windows applications built with technologies like VB6 or classic Win32. While MSAA provides less detail and structure than UIA, it's essential for enabling automation in environments where UIA isn't available.
+Use MSAA capturing mode when targeting legacy or custom-built applications that don't expose their UI components through UIA.
 
 ### Replicate drag and drop steps
 
@@ -67,7 +67,7 @@ The recorder supports steps related to dragging and dropping the mouse pointer; 
 
 ### Handle drop-down lists
 
-While automating desktop and web applications using the recorder, you may need to handle drop-down lists.
+While automating desktop and web applications using the recorder, you might need to handle drop-down lists.
 
 The Power Automate recorder displays a custom screen every time you select a drop-down list, and it helps you choose the desired values. This custom screen allows you to choose one or more values depending on whether the drop-down list is multi-select.
 
@@ -81,13 +81,13 @@ To launch a web browser instance while recording web flows, you can use three di
 
 The first method is to select the dots icon on the right side of the recorder dialog and then **Launch new web browser**. You can choose between Microsoft Edge, Google Chrome, Mozilla Firefox, and Microsoft Internet Explorer.
 
-After you've selected the proper browser, the recorder will detect the loaded web page automatically and configure the launching browsing step accordingly.
+After you've selected the proper browser, the recorder detects the loaded web page automatically and configures the launching browsing step accordingly.
 
 ![Screenshot of the Launch new web browser option.](./media/recording-flow/launch-new-web-browser-option1.png "Screenshot of the Launch new web browser option.")
 
-An alternative way to launch a browser is to start recording in an already open web browser. The recorder will automatically detect the loaded page and will create a launching browser action.
+An alternative way to launch a browser is to start recording in an already open web browser. The recorder automatically detects the loaded page and creates a launching browser action.
 
-The last method to launch a browser is to manually launch it through its shortcut on the desktop, the start menu, the taskbar, or a folder. If you implement this approach, the recorder will generate UI automation actions that click the browser shortcut and launch it.
+The last method to launch a browser is to manually launch it through its shortcut on the desktop, the start menu, the taskbar, or a folder. If you implement this approach, the recorder generates UI automation actions that select the browser shortcut and launch it.
 
 ### Handle date and color pickers on web pages
 
@@ -129,7 +129,7 @@ Power Automate for desktop supports the use of IMEs during the flow recording pr
 
 ## Image-based recording
 
-In some cases, the recorder may not record actions in specific applications that don't meet the appropriate technical requirements. These applications may not expose their accessibility API or have other technical limitations that block the recording process.
+In some cases, the recorder might not record actions in specific applications that don't meet the appropriate technical requirements. These applications might not expose their accessibility API or have other technical limitations that block the recording process.
 
 As an alternative way to record flows, Power Automate for desktop provides image-based recording. The image-based recording uses image recognition and OCR to locate specific elements on the screen and extract text.
 
@@ -141,7 +141,7 @@ To record flows using images:
 
 1. Select the dots icon on the right side of the recorder dialog, and then enable **Image recording**. After enabling this option, select **Record** to start recording actions using image recognition.
 
-    ![Screenshot of the Image recording button.](./media/recording-flow/image-recording-button1.png "Screenshot of the Image recording button.")
+    ![Screenshot of the Image recording button.](./media/recording-flow/image-recording-button.png "Screenshot of the Image recording button.")
 
      Upon clicking on an element, an image is captured automatically and saved with a default editable name. To preview the captured image, hover, or select the **preview icon**.
 
@@ -155,7 +155,7 @@ To extract a text value while using image recording:
 
     ![Screenshot of the Extract text from image option.](./media/recording-flow/extract-text-from-image-option.png "Screenshot of the Extract text from image option.")
 
-1. Wait for a popup message that will prompt you to select a text area.
+1. Wait for a popup message that prompts you to select a text area.
 
     ![Screenshot of the message that prompts user to select a text area.](./media/recording-flow/text-area-message.png "Screenshot of the message that prompts user to select a text area.")
 
@@ -163,7 +163,7 @@ To extract a text value while using image recording:
 
     ![Screenshot of a selected text area.](./media/recording-flow/text-area.png "Screenshot of a selected text area.")
 
-1. Wait for a popup message that will prompt you to select an anchor area.
+1. Wait for a popup message that prompts you to select an anchor area.
 
     ![Screenshot of the message that prompts user to select an anchor area.](./media/recording-flow/anchor-area-message.png "Screenshot of the message that prompts user to select an anchor area.")
 
@@ -176,19 +176,19 @@ To extract a text value while using image recording:
 You can edit manually any actions created through the recorder once the recording is finished. Use the recorder in a desktop flow that's already under development to add the recorded steps to it.
 
 > [!NOTE]
-> Use the recorder to create the backbone of your flow. Certain simple tasks may require no further editing; however, most recorded tasks should be modified to achieve optimal results. Certain types of actions, like conditionals and loops, can't be recorded. Also, there may be redundant actions in a recording that should be removed.
+> Use the recorder to create the backbone of your flow. Certain simple tasks might require no further editing; however, most recorded tasks should be modified to achieve optimal results. Certain types of actions, like conditionals and loops, can't be recorded. Also, there might be redundant actions in a recording that should be removed.
 
 ## Known issues and limitations
 
-- **Issue**: The recorder may not record all steps from the Windows Start menu or system tray.
+- **Issue**: The recorder might not record all steps from the Windows Start menu or system tray.
 
   **Workarounds**: None
 
-- **Issue**: While running a flow created through image-based recording, the click may be sent to the wrong place.
+- **Issue**: While running a flow created through image-based recording, the click might be sent to the wrong place.
 
-  **Workarounds**: Edit the auto-generated action **Move mouse to image** through the flow designer and decrease the tolerance parameter in the advanced settings.
+  **Workarounds**: Edit the autogenerated action **Move mouse to image** through the flow designer and decrease the tolerance parameter in the advanced settings.
 
-- **Issue**: The **Extract text from image** popup that appears after sending a right-click using the recorder may hide behind the popup of the application.
+- **Issue**: The **Extract text from image** popup that appears after sending a right-click using the recorder might hide behind the popup of the application.
 
   **Workarounds**: Send the right-click to another place on the screen.
 
