@@ -4,13 +4,15 @@ description: Learn about the components in the cloud flows designer.
 suite: flow
 author: kisubedi
 contributors:
+ - QuentinSele
+ - AndreasTouly
  - kisubedi
  - v-aangie
  - EllenWehrle
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 05/29/2025
+ms.date: 06/05/2025
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -143,7 +145,7 @@ On the **Settings** tab, you can set the action time-out, network retry policy, 
 | Setting | Description |
 |---------|-------------|
 | General | In the **Action Timeout** field, set the maximum duration between retries and asynchronous responses for the selected action. This setting doesn't change the request time-out of a single request. |
-| Networking | In the **Retry Policy** field, select a retry policy for intermittent failures. The default setting is an exponential interval policy that is set to retry 2 times for low profiles, 8 for medium/high profiles without premium connectors and 12 for medium/high profiles with premium connectors. You can also set your own exponential or fixed interval settings, or choose none at all. |
+| Networking | In the **Retry Policy** field, select a retry policy for intermittent failures. The default setting is an exponential interval policy that is set to retry two (2) times for low profiles, eight (8) for medium/high profiles without premium connectors, and 12 for medium/high profiles with premium connectors. You can also set your own exponential or fixed interval settings, or choose none at all. |
 | Run After | In the **Run After** field, configure how an action should run after the execution of any of the preceding flow actions. For example, you can choose to run an action after the preceding action runs successfully, times out, skips, or fails. |
 | Security | Use the **Secure inputs** and **Secure outputs** toggles to turn the operations, and references of output properties, on or off. |
 | Tracking | Set the key and value of tracked properties.|
