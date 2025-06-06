@@ -206,14 +206,14 @@ Legend:
 
 ### Expression editor and token picker
 
-The expression editor in the designer is multi-line, which allows you to easily create and edit long, complex expressions. A *gripper* allows you to temporarily expand the box by one or two (1-2) lines, as needed. If that's not enough, you can expand the popup to a full page view. A search box allows you to search for tokens and functions, both in the **Dynamic content** view and **Function** view.
+The expression editor in the designer is multi-line, which allows you to easily create and edit long, complex expressions. A *gripper* allows you to temporarily expand the box by one or two (1 or 2) lines, as needed. If that's not enough, you can expand the popup to a full page view. A search box allows you to search for tokens and functions, both in the **Dynamic content** view and **Function** view.
 
-:::image type="content" source="media/flows-designer/expression-editor.png" alt-text="Screenshot highlights the expression editor.":::
+:::image type="content" source="media/flows-designer/token-picker.png" alt-text="Screenshot of the gripper and the 'Dynamic content' and 'Function' tabs.":::
 
 > [!TIP]
 > You can use a forward slash ( / ) keyboard shortcut to invoke the token picker/expression editor popup when you're on an action field.
 
-Learn how to use the expression editor in [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md).
+If you have access to Copilot, you can learn to use it to create expressions in [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md).
 
 ### Disable an action or enable static results on an action
 
