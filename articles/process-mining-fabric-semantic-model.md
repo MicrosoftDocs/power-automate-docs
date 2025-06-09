@@ -42,9 +42,9 @@ Relationships necessary for filtering and interconnectivity of visuals are prede
 
 From a logical perspective, the data model consists of many entity subsets as depicted in the first paragraph of this section.
 
-- **Process Data**: All process-related data without filtering and calculated measures.
-- **Visuals data**: Entities providing precalculated data necessary for process mining custom visuals to display.
-- **Helping entities**: Other entities needed by Power BI.
+- **Process Data**: All process-related data without filtering and calculated measures
+- **Visuals data**: Entities providing precalculated data necessary for process mining custom visuals to display
+- **Helping entities**: Other entities needed by Power BI
 
 Following is the brief description of the subsets and included entities.
 
