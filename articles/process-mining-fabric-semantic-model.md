@@ -109,4 +109,5 @@ For large datasets, data refresh of underlying tables in OneLake might take long
 
 Before you update this screen, you need to take ownership of the semantic model by selecting **Take over** at the top of the **Settings** screen.
 
-[![Screenshot of the 'Take over' button and Keep your Direct Lake data up to date option in the semantic model Settings screen.](media/process-mining-fabric-semantic-model/FabricSemanticModelSettings.png)](media/process-mining-fabric-semantic-model/FabricSemanticModelSettings.png#lightbox)
+:::image type="content" source="media/process-mining-fabric-semantic-model/FabricSemanticModelSettings.png" alt-text="Screenshot of the 'Take over' button and Keep your Direct Lake data up to date option in the semantic model Settings screen.":::
+
