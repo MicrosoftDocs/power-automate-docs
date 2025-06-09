@@ -10,7 +10,6 @@ contributors:
   - v-aangie 
 ms.custom: bap-template
 ms.author: michalrosik
-
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
 ---
