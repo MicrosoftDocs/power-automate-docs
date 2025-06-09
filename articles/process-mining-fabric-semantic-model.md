@@ -97,7 +97,7 @@ We recommend that you use the Power BI composite model on top of the semantic mo
 - You need to create more custom DAX (Data Analysis Expressions) queries
 
 > [!IMPORTANT]
-> The semantic model is created in DirectLake access mode, but its option is set to *Automatic*. This setting means that using a nonoptimal DAX queries or incorrectly setting a composite model might result in fallback to DirectQuery mode. This means that your report won't break, but you might experience lower performance.
+> The semantic model is created in DirectLake access mode, but its option is set to *Automatic*. This setting means that using nonoptimal DAX queries or incorrectly setting a composite model might result in fallback to DirectQuery mode. This means that your report won't break, but you might experience lower performance.
 
 To learn more about creating Power BI composite data models on top of DirectLake semantic models, go to: [Building a composite models on a semantic model or model](/power-bi/transform-model/desktop-composite-models#building-a-composite-model-on-a-semantic-model-or-model).
 
