@@ -49,9 +49,9 @@ When you share a process with others, the option to send an email invitation is 
 
 The share action is available on the **Processes** screen for the following:
 
-- Each process where you're an owner.
-- The system administrator in the environment.
-- Any security role that has share permissions on the process mining system entities.
+- Each process where you're an owner
+- The system administrator in the environment
+- Any security role that has share permissions on the process mining system entities
 
 The share action is also available on the process details page with the same conditions. For process mining, only the co-owner and viewer roles are available for sharing with others.
 
@@ -59,18 +59,18 @@ The share action is also available on the process details page with the same con
 
 Adding a co-owner to the process allows the owner to include other people who can help manage the process. A co-owner can perform the following actions.
 
-- View and edit process details.
-- [View the process analytics](process-mining-visualize.md).
-- Share the process with other co-owners and viewers.
+- View and edit process details
+- [View the process analytics](process-mining-visualize.md)
+- Share the process with other co-owners and viewers
 
 ## Share a process with a viewer
 
   Adding a viewer to a process shares analytics and insights with other people. A viewer can perform the following actions:
 
-- View the process details.
-- [View the process analytics](process-mining-visualize.md).
+- View the process details
+- [View the process analytics](process-mining-visualize.md)
 
-### Reassign a process to a different owner
+## Reassign a process to a different owner
 
 When a process owner's account is disabled, the co-owner of the process doesn't automatically become a new process owner.
 
@@ -80,19 +80,21 @@ The administrator should perform the following steps.
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments).
 1. Select the environment where the process is located.
-1. Go to the **Settings/Users** of the environment.
+1. On the command bar, select **Settings**.
+1. Under **Users + permissions**, select **Users**.
 1. Select the leaving user.
 1. On the command bar, select **Reassign records**.
-1. Assign all the records to either the administrator or another user.
+1. In the **Assign to** field, use the dropdown menu to assign all the records to either the administrator or another user.
+1. Select **Reassign**.
 
-    Re-assignment requirement: The target user should have the appropriate privileges on the different entities associated with the transferred records. For process mining process, giving the **Environment Maker** role is sufficient.
+    Reassignment requirement: The target user should have the appropriate privileges on the different entities associated with the transferred records. For process mining process, giving the **Environment Maker** role is sufficient.
 
 ## Limitations
 
 The following is a list of important sharing limitations.
 
-- If a user is an admin in an environment, they already have access to all the processes. Therefore, if that user is added as a **Co-owner** or a **Viewer**, they won't show up in the list of co-owners or viewers even if they're successfully assigned either of those roles.
+- If a user is an admin in an environment, they already have access to all the processes. Therefore, if that user is added as a **Co-owner** or a **Viewer**, they don't show up in the list of co-owners or viewers even if they're successfully assigned either of those roles.
 - Removing all process roles from a user, such as viewer, doesn't remove that process from the user's process list view. They can't perform any actions on the process.
-- Process mining currently doesn't support sharing for Azure Active Directory (AAD) groups.
+- Process mining currently doesn't support sharing for Microsoft Entra groups.
 - Co-owners don't have access to the power query editor and can't modify a dataflow.
 
