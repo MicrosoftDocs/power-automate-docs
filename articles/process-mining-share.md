@@ -93,7 +93,13 @@ When, for example, an employee is leaving the company, the administrator should 
 
 The administrator should:
 1. Go to the [Power Platform Admin portal (PPAC)](https://admin.powerplatform.microsoft.com/environments)
+
+1. Click on the environment, where the process is located
+
 1. Go to the **Settings/Users** of the environment.
+
 1. Select the leaving user and click **Reassign records** button in the top bar.
+
 1. Assign all the records to either the administrator or another user.
-  1. Re-assignment requirement: The target user should have the appropriate privileges on the different entities associated with the transferred records. For process mining process, giving the **Environment Maker** role is sufficient."
+
+    1. *Re-assignment requirement*: The target user should have the appropriate privileges on the different entities associated with the transferred records. For process mining process, giving the **Environment Maker** role is sufficient."
