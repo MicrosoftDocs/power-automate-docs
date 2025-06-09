@@ -10,7 +10,8 @@ ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
 ms.date: 12/02/2024
-ms.author: janpidych
+ms.author: michalrosik
+
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.audienceType:

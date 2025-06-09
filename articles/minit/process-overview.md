@@ -9,7 +9,8 @@ ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 03/31/2025
-ms.author: janpidych
+ms.author: michalrosik
+
 ms.reviewer: angieandrews
 ms.custom: bap-template
 search.audienceType:
