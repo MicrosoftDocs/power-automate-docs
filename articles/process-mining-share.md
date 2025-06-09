@@ -76,6 +76,8 @@ Adding a co-owner to the process allows the owner to include other people who ca
 
 - [View the process analytics](process-mining-visualize.md).
 
+## Sharing limitations
+
 > [!IMPORTANT]
 >
 >- If a user is an admin in an environment, they already have access to all the processes. Therefore, if that user is added as a Co-owner or a Viewer, they won't show up in the list of co-owners or viewers even if they are successfully assigned either of those roles.
@@ -83,3 +85,15 @@ Adding a co-owner to the process allows the owner to include other people who ca
 >- Removing all process roles from a user (such as viewer) doesn't remove that process from the user's process list view. They can't perform any actions on the process.
 >- Process mining currently does not support sharing for AAD groups.
 >- Co-owners don't have access to the power query editor and can't modify a dataflow.
+
+### Reassigning process to a different owner
+
+In the case process owner's account is disabled, co-owner of the process does not automatically become a new process owner.
+When, for example, an employee is leaving the company, the administrator should assign a new owner for the leaving employee Dataverse records.
+
+The administrator should:
+1. Go to the [Power Platform Admin portal (PPAC)](https://admin.powerplatform.microsoft.com/environments)
+1. Go to the **Settings/Users** of the environment.
+1. Select the leaving user and click **Reassign records** button in the top bar.
+1. Assign all the records to either the administrator or another user.
+  1. Re-assignment requirement: The target user should have the appropriate privileges on the different entities associated with the transferred records. For process mining process, giving the **Environment Maker** role is sufficient."
