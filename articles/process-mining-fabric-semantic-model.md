@@ -100,3 +100,11 @@ We recommend that you use the Power BI composite model on top of the semantic mo
 > The semantic model is created in DirectLake access mode, but its option is set to *Automatic*. This setting means that using a nonoptimal DAX queries or incorrectly setting a composite model might result in fallback to DirectQuery mode—this means that your report will not break, but you might experience lower performance.
 
 To learn more about creating Power BI composite data models on top of DirectLake semantic models, go to: [Building a composite models on a semantic model or model](/power-bi/transform-model/desktop-composite-models#building-a-composite-model-on-a-semantic-model-or-model).
+
+## Semantic model refresh
+
+By default, the semantic model provided by Power Automate Process Mining is set to be automatically kept up to date.
+
+In case of large datasets, data refresh of underlying tables in OneLake might take longer and this can cause potential inconsistencies in the report. Although there is eventual consistency at the end of data refresh (semantic model is explicitely refreshed), you might want to remove the potential intermediate inconsistencies, by turning off ‘Keep your Direct Lake data up to date’ flag in the **Settings** screen of the semantic model. Ownership of the semantic model must be taken over using the **Take over** button at the top of the **Settings** screen, before updating this option.
+
+[![Take over button and Keep your Direct Lake data up to date option in the semantic model Settings screen.](media/process-mining-fabric-semantic-model/FabricSemanticModelSettings.png)](media/process-mining-fabric-semantic-model/FabricSemanticModelSettings.png#lightbox)
