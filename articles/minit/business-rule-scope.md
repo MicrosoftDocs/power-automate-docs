@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 07/18/2023
+ms.date: 06/10/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -33,9 +33,9 @@ Edge scope is the same as event scope, except that results are provided per edge
 
 ## Case scope
 
-Case scope provides result for each case in the business rule data set. The data element over which the formula is calculated is cases. The default output is 1 (True) if the case fits into the business rule data set.
+Case scope provides the result for each case in the business rule data set. The data element over which the formula is calculated is cases. The default output is 1 (True) if the case fits into the business rule data set.
 
-The calculation result displays in the **Statistics** screen. 
+The calculation result displays in the **Statistics** screen.
 
 ## Process scope
 
