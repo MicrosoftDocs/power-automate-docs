@@ -2,10 +2,13 @@
 title: Manage shared flows with users outside an environment
 description: Learn how to manage shared flows with users outside an environment.
 author: DBEKI
-ms.date: 05/23/2025
+ms.contributors:
+  - tatianas
+  - evsung
+ms.date: 06/10/2025
 ms.custom: 
 ms.topic: concept-article
-ms.author: dbekirop
+ms.author: tatianas
 ms.reviewer: angieandrews
 ---
 
@@ -76,7 +79,7 @@ Centralized, visual reporting that might already be aggregating environment data
 
 #### Cons of Center of Excellence (CoE) Toolkit&mdash;dashboard method
 
-Requires the CoE Starter Kit to be deployed and kept up-to-date. Data might not be real-time (usually it's refreshed on a schedule). Also, setting up custom filters, like identifying external domain users, might require tweaking the CoE components.
+Requires the CoE Starter Kit to be deployed and kept up-to-date. Data might not be real-time (usually it is refreshed on a schedule). Also, setting up custom filters, like identifying external domain users, might require tweaking the CoE components.
 
 ### Identification methods comparison
 
@@ -100,7 +103,7 @@ For each flagged flow, discuss with the flow's owner or relevant business team w
 - **Action**: Remove them from the **Owners** list and instead share the flow with them as a run-only user (if applicable), after ensuring they have environment access. This provides the needed capability to run the flow without making them an owner. Learn more in the [Add necessary users to the environment](#add-necessary-users-to-the-environment) section in this article.
 - **Scenario 2: User truly collaborates in building or maintaining the flow**: For example, two departments jointly develop a flow, so a user from Dept B was made co-owner in Dept A's environment.
 - **Action**: Onboard that user into the environment as an owner properly with appropriate role, or consider moving the flow to a neutral environment if multiple org units should co-own it. In the short term, adding the user to the environment's allowed users list and giving them an appropriate role (Environment Maker if they need edit rights) resolves access issues.
-- **Scenario 3: The share is no longer needed**: Sometimes users were added temporarily or have left the project.
+- **Scenario 3: The share is no longer needed**: Sometimes users were added temporarily or left the project.
 - **Action**: Remove the outside user from the flow's share. This is the simplest fix when applicable. If nobody outside the environment needs the flow, un-share it with them. The flow is then compliant, and only internal owners remain.
 - **Scenario 4: Cross-tenant or guest user shares**: For example, a flow was shared with a guest (external tenant) account. This is blocked after enforcement.
 - **Action**: Determine if that guest absolutely needs access. If yes, one option is to officially add that guest as an Azure AD guest in your tenant and into the environment's security group. This makes them an environment member. This is rare. Alternatively, work towards transferring ownership to an internal user who can act on the guest's behalf, or use a different mechanism, like expose the flow through a secure HTTP trigger rather than direct share. We recommend removing direct guest shares because even if added as environment member, cross-tenant issues might arise.

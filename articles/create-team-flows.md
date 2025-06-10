@@ -6,11 +6,14 @@ contributors:
   - DBEKI
   - ChrisGarty
   - v-aangie
+ms.contributors:
+  - tatianas
+  - evsung
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 05/23/2025
-ms.author: cgarty
+ms.date: 06/10/2025
+ms.author: tatianas
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -173,7 +176,7 @@ Make it a routine to review flow sharing and ownership. For instance, do monthly
 If the shared flow still has an active owner, the flow continues to run.
 
 > [!NOTE]
-> If the flow uses any active or embedded connections that belong to the user who has left the organization, those specific actions might fail. To fix this, follow the steps in [Modify a connection](#modify-a-connection), earlier in this article to update the credentials.
+> If the flow uses any active or embedded connections that belong to the user who left the organization, those specific actions might fail. To fix this, follow the steps in [Modify a connection](#modify-a-connection), earlier in this article to update the credentials.
 
  If there's no active owner for a flow, you should change the owner. To change the owner of a flow, make a copy of the flow, and then let the intended owner create the flow from the copy.
 
@@ -183,7 +186,7 @@ If the shared flow still has an active owner, the flow continues to run.
 
 ### Change the owner of a non-solution-aware cloud flow
 
-To change the ownership of a non-solution-aware cloud flow, you must create a new flow via export/import, **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows is not available because the owner is part of the flow identity. 
+To change the ownership of a non-solution-aware cloud flow, you must create a new flow via export/import, **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows isn't available because the owner is part of the flow identity. 
 
 ### Share ownership of a solution-aware cloud flow with a user who isn't in Dataverse
 When you share ownership of a solution-aware cloud flow with a user who isn't in Dataverse, that user gets added into Dataverse automatically to facilitate sharing. In a default environment, Microsoft Entra ID (Microsoft Entra ID) users have the EnvironmentMaker role. In a non-default environment, Microsoft Entra users and groups are added into Dataverse but they aren't assigned the EnvironmentMaker role automatically. Therefore, they might only be able to run the flow until an administrator assigns them a role. If the user doesn't have an appropriate role, they receive a detailed error message.

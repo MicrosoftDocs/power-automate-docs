@@ -2,10 +2,13 @@
 title: Guide to cloud flow sharing and permissions
 description: Use this guide for assistance to identify suitable flow sharing scenarios and establish permissions to manage user access and ensure security.
 author: DBEKI
-ms.date: 05/23/2025
+ms.contributors:
+  - tatianas
+  - evsung
+ms.date: 06/10/2025
 ms.custom: 
 ms.topic: concept-article
-ms.author: dbekirop
+ms.author: tatianas
 ms.reviewer: angieandrews
 ---
 
@@ -92,7 +95,7 @@ To mitigate these risks, organizations should adopt a combination of policy, tec
 
     Learn more in [Use security roles and groups: Manage makers versus run-only users](#use-security-roles-and-groups-manage-makers-versus-run-only-users).
 
-- **Implement data loss prevention (DLP) policies**: Although DLP policies are more about controlling connector usage, they indirectly help mitigate risk by preventing shared flows from using banned connectors. For instance, if an outsider is given run-only access to a flow, a strict DLP policy ensures that flow can't suddenly start pushing data to an unauthorized service. DLP won't stop the sharing itself, but it limits the potential damage if a flow is accidentally or intentionally misused. As a best practice, classify connectors into *Business* versus *Non-business* categories, and block any dangerous combinations. This way, even if flows are shared broadly, they aren't going to leak data to unapproved endpoints.
+- **Implement data loss prevention (DLP) policies**: Although DLP policies are more about controlling connector usage, they indirectly help mitigate risk by preventing shared flows from using banned connectors. For instance, if an outsider is given run-only access to a flow, a strict DLP policy ensures that flow can't suddenly start pushing data to an unauthorized service. DLP doesn't stop the sharing itself, but it limits the potential damage if a flow is accidentally or intentionally misused. As a best practice, classify connectors into *Business* versus *Non-business* categories, and block any dangerous combinations. This way, even if flows are shared broadly, they aren't going to leak data to unapproved endpoints.
 
 - **Regular auditing and monitoring**: Establish a routine (for example, monthly or quarterly) to audit flow permissions. As part of this review, identify any flows that have unusual sharing, especially any with external owners or large run-only user lists. Review them if they're still needed. Microsoft documentation encourages periodic reviews of permissions to ensure they align with current business needs and to remove access for users who no longer require it.
 
