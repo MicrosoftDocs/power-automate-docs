@@ -6,7 +6,7 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 006/10/2025
+ms.date: 06/10/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
