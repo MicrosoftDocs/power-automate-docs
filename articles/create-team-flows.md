@@ -164,7 +164,7 @@ DLP policies don't directly stop sharing flows, but they mitigate risks if flows
 
 ### Establish regular auditing and monitoring
 
-Make it a routine to review flow sharing and ownership. For instance, do monthly or quarterly audits of flows in each production environment. Use the PowerShell approach from [Identify flows shared with users outside their environment](manage-shared-flows-with-users-outside-an-environment.md#identify-flows-shared-with-users-outside-their-environment) to generate a current list of all flows and owners. Identify anomalies such as flows with owners outside expected teams or any new guest owners. You can automate parts of this. For example, an admin can set up a scheduled PowerShell script or a flow using the Power Platform for Admins connector to gather sharing data and send a report through email. Microsoft's documentation encourages periodic entitlement reviews. Ensure they align with current business needs and remove access for users who no longer require it. For example, if Terry was an external co-owner for a special project and that project ended, catch it in the next audit and clean it up.
+Make it a routine to review flow sharing and ownership. For instance, do monthly or quarterly audits of flows in each production environment. Use the PowerShell approach from [Identify flows shared with users outside their environment](manage-shared-flows-with-users-outside-environment.md#identify-flows-shared-with-users-outside-their-environment) to generate a current list of all flows and owners. Identify anomalies such as flows with owners outside expected teams or any new guest owners. You can automate parts of this. For example, an admin can set up a scheduled PowerShell script or a flow using the Power Platform for Admins connector to gather sharing data and send a report through email. Microsoft's documentation encourages periodic entitlement reviews. Ensure they align with current business needs and remove access for users who no longer require it. For example, if Terry was an external co-owner for a special project and that project ended, catch it in the next audit and clean it up.
 
 > [!TIP]
 > The [Power Platform admin center](https://admin.powerplatform.microsoft.com/home) analytics and the [Power Platform Center of Excellence Starter Kit](/power-platform/guidance/coe/starter-kit) dashboards can show trends, like how many flows each user runs, or how many flows each environment has. Use these to detect if a particular flow is being widely used by unexpected users. This indicates a possible unmanaged share.
@@ -201,8 +201,8 @@ No. When a connection is configured to be **Provided by run-only user** then tha
 
 - [Training: Share a cloud flow with Power Automate (module)](/training/modules/share-cloud-flow/)
 - [Training: Share and collaborate with Power Automate (learning path)](/training/paths/share-collaborate-power-automate/)
-- [Guide to cloud flow sharing and permissions](guide-to-cloud-flow-sharing-and-permissions.md)
-- [Manage shared flows with users outside an environment](manage-shared-flows-with-users-outside-an-environment.md)
+- [Guide to cloud flow sharing and permissions](guide-to-cloud-flow-sharing-permissions.md)
+- [Manage shared flows with users outside an environment](manage-shared-flows-with-users-outside-environment.md)
 
  
 [!INCLUDE[footer-include](includes/footer-banner.md)]
