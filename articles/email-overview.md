@@ -12,7 +12,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/10/2022
+ms.date: 06/10/2025
 ms.author: angieandrews
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -31,16 +31,13 @@ If you're using a work or school email account, use the Office 365 Outlook conne
 
 A *trigger* is an event that starts a cloud flow. For example, **When a new email arrives (V3)** is a trigger that starts a cloud flow when an email arrives into an inbox. You can also trigger flows based on the properties of an email. More information: [Trigger a cloud flow based on email properties](./email-triggers.md).
  
-The following screenshot shows a partial list of the Office 365 Outlook triggers. For the full list of triggers you can use to start flows, go to [Office 365 Outlook triggers](/connectors/office365/#triggers).
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot of a partial of the Office 365 Outlook triggers.](./media/email/email-triggers.png "Partial list of the Office 365 Outlook triggers")
+ For the full list of triggers you can use to start flows, go to [Office 365 Outlook triggers](/connectors/office365/#triggers).
 
 ## Actions
 
 *Actions* are the events you want the flow to do after the trigger event takes place. An example of an action is, "when someone sends me an email, save it to OneDrive."
 
-The following screenshot shows a partial list of Office 365 Outlook actions. For the full list of actions you can use in your flows, go to [Office 365 Outlook actions](/connectors/office365/#actions).
+For the full list of actions you can use in your flows, go to [Office 365 Outlook actions](/connectors/office365/#actions).
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of a partial list of Office 365 Outlook actions.](./media/email/email-actions.png "Partial list of the Office 365 Outlook actions")
