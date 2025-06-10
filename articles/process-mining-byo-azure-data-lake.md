@@ -9,7 +9,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 01/17/2025
+ms.date: 06/10/2025
 ms.custom: bap-template
 ms.author: michalrosik
 ms.reviewer: angieandrews
