@@ -4,13 +4,15 @@ description: Learn about the components in the cloud flows designer.
 suite: flow
 author: kisubedi
 contributors:
+ - QuentinSele
+ - AndreasTouly
  - kisubedi
  - v-aangie
  - EllenWehrle
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 05/13/2025
+ms.date: 06/05/2025
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -143,7 +145,7 @@ On the **Settings** tab, you can set the action time-out, network retry policy, 
 | Setting | Description |
 |---------|-------------|
 | General | In the **Action Timeout** field, set the maximum duration between retries and asynchronous responses for the selected action. This setting doesn't change the request time-out of a single request. |
-| Networking | In the **Retry Policy** field, select a retry policy for intermittent failures. The default setting is an exponential interval policy that is set to retry four times. You can also set your own exponential or fixed interval settings, or choose none at all. |
+| Networking | In the **Retry Policy** field, select a retry policy for intermittent failures. The default setting is an exponential interval policy that is set to retry two (2) times for low profiles, eight (8) for medium/high profiles without premium connectors, and 12 for medium/high profiles with premium connectors. You can also set your own exponential or fixed interval settings, or choose none at all. |
 | Run After | In the **Run After** field, configure how an action should run after the execution of any of the preceding flow actions. For example, you can choose to run an action after the preceding action runs successfully, times out, skips, or fails. |
 | Security | Use the **Secure inputs** and **Secure outputs** toggles to turn the operations, and references of output properties, on or off. |
 | Tracking | Set the key and value of tracked properties.|
@@ -162,11 +164,11 @@ You can copy actions to the clipboard whether they're atomic actions or containe
 
 To copy and paste an action, follow these steps.
 
-1. Right-click on any action (or trigger) you want to copy.
+1. Right-click on any action (or trigger) you want to copy, and select **Copy Action**.
 
     :::image type="content" source="media/flows-designer/copy-action.png" alt-text="Screenshot highlights copying an action.":::
 
-1. On the canvas, select **+** on the canvas to add an action, and then select **Paste an action**.
+1. On the canvas, right-click on **+**, and then select **Paste an action**.
 
     You can copy and paste actions across different parts of your flow, or in between flows.
 
@@ -204,14 +206,14 @@ Legend:
 
 ### Expression editor and token picker
 
-The expression editor in the designer is multi-line, which allows you to easily create and edit long, complex expressions. A *gripper* allows you to temporarily expand the box by one or two (1-2) lines, as needed. If that's not enough, you can expand the popup to a full page view. A search box allows you to search for tokens and functions, both in the **Dynamic content** view and **Function** view.
+The expression editor in the designer is multi-line, which allows you to easily create and edit long, complex expressions. A *gripper* allows you to temporarily expand the box by one or two (1 or 2) lines, as needed. If that's not enough, you can expand the popup to a full page view. A search box allows you to search for tokens and functions, both in the **Dynamic content** view and **Function** view.
 
-:::image type="content" source="media/flows-designer/expression-editor.png" alt-text="Screenshot highlights the expression editor.":::
+:::image type="content" source="media/flows-designer/token-picker.png" alt-text="Screenshot of the gripper and the 'Dynamic content' and 'Function' tabs.":::
 
 > [!TIP]
 > You can use a forward slash ( / ) keyboard shortcut to invoke the token picker/expression editor popup when you're on an action field.
 
-Learn how to use the expression editor in [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md).
+If you have access to Copilot, you can learn to use it to create expressions in [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md).
 
 ### Disable an action or enable static results on an action
 
