@@ -1,12 +1,12 @@
 ---
 title: Use expressions in conditions in Power Automate
-description: Use advanced expressions such as "and", "or", "empty", "less", and "greater" in Power Automate Conditions.
+description: Use expressions such as 'and', 'or', 'empty', 'less', and 'greater' in Power Automate Conditions.
 suite: flow
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 03/20/2025
+ms.date: 006/10/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
@@ -16,9 +16,9 @@ search.audienceType:
 ---
 # Use expressions in conditions to check multiple values
 
-In this tutorial, you learn to use expressions and *conditions* to compare multiple values in **Advanced mode**.
+In this tutorial, you learn to use expressions and *conditions* to compare multiple values.
 
-When you create a cloud flow, you can use the [**Condition**](add-condition.md#add-a-condition) card in basic mode to quickly compare a single value with another value. However, there are times when you need to compare multiple values. For example, you might want to check the value of a few columns in a spreadsheet or database table.
+When you create a cloud flow, you can use the [**Condition**](add-condition.md#add-a-condition) action to quickly compare a single value with another value. However, there are times when you need to compare multiple values. For example, you might want to check the value of a few columns in a spreadsheet or database table.
 
 You can use any combination of the following logical expressions in your conditions.
 
@@ -37,85 +37,80 @@ Expression|Description|Example
 
 ## Prerequisites
 
-Here's what you need to complete this walkthrough.
+Here's what you need to complete this tutorial.
 
 * Access to Power Automate.
-* Your own spreadsheet with the tables described later in this walkthrough. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Power Automate can access it.
+* Your own spreadsheet with the tables described later in this tutorial. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Power Automate can access it.
 * Microsoft 365 Outlook (While we use Outlook here, you can use any supported email service in your flows.)
 
 ## Use the 'or' expression
 
-Sometimes your workflow needs to take an action if the value of an item is valueA *or* valueB. For example, you might be tracking the status of tasks in a spreadsheet table. Assume that the table has a column named **Status** and the possible values in this column are:
+Sometimes your workflow needs to take an action if the value of an item is `valueA` *or* `valueB`. For example, you might be tracking the status of tasks in a spreadsheet table. Assume that the table has a column named **Status** and the possible values in this column are:
 
-* **completed**
-* **blocked**
-* **unnecessary**
-* **not started**
+* `completed`
+* `blocked`
+* `unnecessary`
+* `not started`
 
 Here's an example of what the spreadsheet might look like:
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table.png" alt-text="Screenshot of a sample spreadsheet with a Status column.":::
 
-Given the preceding spreadsheet, you want to use Power Automate to remove all rows with a **Status** column that is set to **completed** or **unnecessary**.
+Given the preceding spreadsheet, you want to use Power Automate to remove all rows with a **Status** column that is set to `completed` or `unnecessary`.
 
-Let's create the flow.
+## Create the cloud flow
 
-### Start with a blank flow
+[!INCLUDE[copilot-tab-experience](./includes/copilot-tab-experience.md)]
 
-1. Sign into [Power Automate](https://make.powerautomate.com).
+# [Using copilot](#tab/using-copilot)
 
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. Ask Copilot to create a flow for you. Copy the following prompt and paste it the in Copilot field:
+
+    ```copilot-prompt
+    Every week, list rows in an Excel table, and if the Status column equals Succeeded or claim manager's email is jake@contoso.com, delete Excel row.
+    ```
+
+1. Select **Generate**.
+
+    After you generate the prompt, Copilot creates the flow for you. You need to fill in details for the flow to work, such as parameters for various actions added by Copilot.
+
+1. Select **Keep it and continue**.
+1. Review the connections. If your data sources are connected properly, a green checkmark appears next to the app or service. If a green checkmark doesn't appear, select the app or service and follow the instructions.
+1. After your connections are set, select **Create flow**. The designer screen opens.
+
+# [Without copilot](#tab/without-copilot)
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the left pane, select **My flows**.
-
 1. Select **New flow** > **Scheduled cloud flow**.
-
-### Add a trigger to your flow
-
 1. Give your flow a name.
-
 1. Set the schedule to run the flow once daily.
+1. Select the **Create** button to open the designer.
+---
 
-1. Select the **Create** button to go to the next step.
+Once you create your cloud flow, you need to configure the actions in the designer. The following sections describe how to do the following configuration tasks.
+
+- [Select the spreadsheet and get all rows](#select-the-spreadsheet-and-get-all-rows)
+- [Check the status column of each row](#check-the-status-column-of-each-row)
+- [Delete matching rows from the spreadsheet](#delete-matching-rows-from-the-spreadsheet)
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
-### Select the spreadsheet and get all rows
+## Select the spreadsheet and get all rows
 
 # [New designer](#tab/new-designer)
 
-You can use Copilot to create the flow for you, or create it manually.
-
-#### Create a flow with Copilot
-
-1. Ask Copilot to create a flow for you. Type the following prompt in Copilot:
-
-    **Every week, list rows in an Excel table, and if the Status column equals Succeeded or claim manager's email is jake@contoso.com, delete Excel row.**
-
-1. Select **Submit** ![Screenshot of the Submit button.](./media/use-expressions-in-conditions/submit.png).
-
-    After you submit the prompt, Copilot creates the flow for you. You need to fill in details for the flow to work, such as parameters for various actions added by Copilot.
-
-#### Create a flow manually
-
-Alternatively, you can perform the following procedure to create the same flow manually:
-
-1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
-1. Search for **rows** > **Excel Online (Business)** > the **Get a row** action that corresponds to the spreadsheet that you're using.
-
-    For example, if you're using *Google Sheets*, select **Google Sheets - Get rows**.
-
-1. Select the **List rows present in a table** action.
-
-    :::image type="content" source="./media/use-expressions-in-conditions/add-an-action-test.png" alt-text="Screenshot of listing rows in a table in Copilot.":::
-
-1. Select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
+1. In the designer, select the **List rows present in a table** action card.
+1. In the **Parameters** tab, select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
 
     :::image type="content" source="./media/use-expressions-in-conditions/table-parameters.png" alt-text="Screenshot of the parameters for list rows present in a table in Copilot.":::
 
+1. Collapse the configuration pane by selecting (**<<**) in the upper-right corner of the configuration pane.
+
 # [Classic designer](#tab/classic-designer)
 
-In the classic designer, you can create the flow manually. Copilot isn't an option.
-
-1. Select **New step**.
+1. In the designer, select **New step**.
 
 1. Search for **rows**, and then select **Excel Online (Business)**.
 
@@ -139,7 +134,7 @@ In the classic designer, you can create the flow manually. Copilot isn't an opti
 
 1. On the **Add an action** screen, search for **apply to each**, and then select the **Apply to each** under **Control**.
 
-1. Add the **value** token to the **Select an output from previous steps** box by selecting the lightning rod icon.
+1. Add the **value** token to the **Select an output from previous steps** box by selecting inside the field and then selecting the lightning bolt icon.
 
     :::image type="content" source="./media/use-expressions-in-conditions/lightning-rod.png" alt-text="Screenshot selecting the value from the previous step.":::
 
@@ -179,7 +174,7 @@ In the classic designer, you can create the flow manually. Copilot isn't an opti
 
 ---
 
-### Delete matching rows from the spreadsheet
+## Delete matching rows from the spreadsheet
 
 # [New designer](#tab/new-designer)
 
@@ -267,7 +262,7 @@ Notice extra lines are removed from the table.
 
 ## Use the 'greater' expression
 
-Imagine you bought baseball tickets for your coworkers and you use a spreadsheet to ensure you get reimbursed by each person. You can quickly create a cloud flow that sends a daily email to each person who didn't paid the full amount.
+Imagine you bought baseball tickets for your coworkers and you use a spreadsheet to ensure you get reimbursed by each person. You can quickly create a cloud flow that sends a daily email to each person who didn't pay the full amount.
 
 Use the **greater** expression to identify the employees who didn't pay the full amount. You can then automatically send a reminder email to them.
 

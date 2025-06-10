@@ -1,4 +1,4 @@
-Each scenario includes a step-by-step guide to help you create the flow. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you don't have access to Copilot, select the **Without copilot** tab.
+Each scenario includes a step-by-step guide to help you create the cloud flow. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you don't have access to Copilot, select the **Without copilot** tab.
 
 After you create a cloud flow, you can configure it in the *designer*. The designer is where you can add, remove, and edit actions in your flow.
 
