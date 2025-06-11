@@ -7,8 +7,9 @@ contributors:
  - ChrisGarty
  - kisubedi
  - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 03/01/2024
 ms.author: cgarty
 search.audienceType: 

@@ -1,29 +1,27 @@
 ---
-title: Create a simulation scenario (preview)
+title: Create a simulation scenario
 description: Learn about general settings, workforce management, and activity modification for process simulations in the Process Mining desktop app.
 author: janPidych
 contributors:
   - janPidych
   - v-aangie  
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 09/30/2024
-ms.author: janpidych
+ms.topic: how-to
+ms.date: 03/19/2025
+ms.author: michalrosik
+
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Create a simulation scenario (preview)
-
-[!INCLUDE[cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
+# Create a simulation scenario
 
 A *simulation scenario* is a named set of modifications over an existing process model. By default, a simulation scenario creates the scenario based on actual process view data. You don’t need to define the entire scenario from the scratch. The simulation scenario creates only modifications to an existing statistical process model snapshot.
 
 The modifications applied in the simulation scenario have no effect on process data. They don't change the output of process model or process analysis.
-
-[!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 To run simulation, you need to create a simulation scenario first. To create a simulation scenario, follow these steps:
 
@@ -137,3 +135,4 @@ The status of the simulation scenario is indicated below the scenario’s tile. 
 ## Next step
 
 [Run a simulation and generate results](process-mining-simulations-run-results.md)
+

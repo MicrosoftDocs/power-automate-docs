@@ -2,8 +2,9 @@
 title: Flow designer
 description: Introduction to Power Automate flow designer
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/20/2024
 ms.author: matp
 ms.reviewer: matp

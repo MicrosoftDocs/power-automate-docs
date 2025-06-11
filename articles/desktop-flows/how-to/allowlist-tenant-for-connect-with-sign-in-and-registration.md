@@ -1,6 +1,7 @@
 ---
 title: Allowlist tenants for registration and connect with sign-in connections
 description: Learn how to allowlist tenant IDs to allow connect with sign-in connections and registration on AD-joined machines.
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 08/21/2024

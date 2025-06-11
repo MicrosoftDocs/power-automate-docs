@@ -2,19 +2,19 @@
 title: Types of process automation to consider for a Power Automate project | Microsoft Docs
 description: There are two main types of automation available in Power Automate, API-based digital process automation (DPA) and UI-based robotic process automation (RPA).
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: guidance
 ms.date: 12/10/2020
-ms.author: tayoshi
+ms.author: mapichle
 ms.reviewer: kathyos
 ---
 
 # Types of process automation
 
 This video provides a quick overview of process automation with Power Automate
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4G4jU]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=4400df21-c4c8-446b-8e05-921d7ad0c85a]
 
 There are two main types of automation available in Power Automate:
 

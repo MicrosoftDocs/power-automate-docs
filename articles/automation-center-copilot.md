@@ -1,8 +1,8 @@
 ---
-title: Use Copilot in automation center (preview)
+title: Use Copilot in automation center
 description: Use Copilot to analyze flow runs, work queues, and ask general product questions in natural language. 
-ms.topic: conceptual
-ms.date: 05/20/2024
+ms.topic: how-to
+ms.date: 01/29/2025
 ms.author: appapaio
 ms.reviewer: dmartens
 contributors:
@@ -15,9 +15,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use Copilot to analyze automation activity and ask product questions (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+# Use Copilot to analyze automation activity and ask product questions
 
 Understanding automation activity and performance are key to achieving operational excellence and reliability goals, regardless of the size of the automation estate, team, or role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
 
@@ -25,17 +23,14 @@ Understanding automation activity and performance are key to achieving operation
 
 > [!IMPORTANT]
 >
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
-> - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
-> - Read the [responsible AI FAQs for Copilot in automation center (preview)](faqs-copilot-automation-center.md) to learn more about this new Copilot experience.
+> - Copilot is a new technology that is still being developed. It's optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
+> - Read the [responsible AI FAQs for Copilot in automation center](faqs-copilot-automation-center.md) to learn more about this new Copilot experience.
 > - More FAQs: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md), [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 ## Prerequisites
 
 - A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) located in the United States.
-- During initial preview, you must have an environment in the United States region to use this feature. If you don’t have access to an environment based in the United States, you can ask your administrator to [create a new environment in Power Platform admin center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
 - Check [known limitations](#known-issues-and-limitations) for more information.
 
 ## How does it work?
@@ -47,13 +42,13 @@ Copilot in automation center is able to answer questions about the following fou
 | 1 | Cloud flow run logs | Cloud flow run status, trigger type, run duration, failure rate. |
 | 2 | Desktop flow run logs | Desktop flow run status, used machine, run mode, failure rate. |
 | 3 | Work queue data | Work queue items statuses, service level agreement (SLA) attainment, processor counts. |
-| 4 | Documentation (generative answers) | General Power Automate feature questions such as *how to analyze activity with Copilot*. |
+| 4 | Documentation (generative answers - preview) | General Power Automate feature questions such as *how to analyze activity with Copilot*. |
 
-The first three skills in the above table translate natural language queries (questions) entered by users into Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) query syntax. This translation allows users to easily retrieve information about their automation data by asking questions in natural language. Additionally, Copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and information to the user.
+The first three skills in the prior table translate natural language queries (questions) entered by users into Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) query syntax. This translation allows users to easily retrieve information about their automation data by asking questions in natural language. Additionally, Copilot determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and information to the user.
 
 ### Copilot skill selector
 
-When Copilot opens (per session) the first time, the "cloud flow" skill is preselected. You can modify the skill by choosing the dropdown next to the phrase **Questions about** and selecting your preferred skill. During the initial preview phase, the conversation history is reset each time you change the skill.
+When Copilot opens (per session) the first time, the "cloud flow" skill is preselected. You can modify the skill by choosing the dropdown next to the phrase **Questions about** and selecting your preferred skill. The conversation history is reset each time you change the skill.
 
 :::image type="content" source="media/automation-center/copilot-skill-chooser.png" alt-text="Screenshot of an experience in Copilot where users can select from a list of skills." lightbox="media/automation-center/copilot-skill-chooser.png":::
 
@@ -70,12 +65,12 @@ Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-
 ## Prompt best-practices
 
 - Be specific:
-    - The more specific you are with your prompt, the better the AI understands and responds. 
-    - If the AI isn't producing the desired output, don't worry. Try again by adjusting your prompt.
+  - The more specific you are with your prompt, the better the AI understands and responds.
+  - If the AI isn't producing the desired output, don't worry. Try again by adjusting your prompt.
 - Experiment with prompts:
-    - If you're not getting the results you were expecting, try rephrasing your prompt or provide more context.
+  - If you're not getting the results you were expecting, try rephrasing your prompt or provide more context.
 - Provide feedback:
-    - If the AI produced great or unsatisfactory responses, let us know by selecting the thumbs up or down with an option to provide more feedback via the **Tell Microsoft what you liked about this feature** link that appears underneath.
+  - If the AI produced great or unsatisfactory responses, let us know by selecting the thumbs up or down with an option to provide more feedback via the **Tell Microsoft what you liked about this feature** link that appears underneath.
 
 ## Prompt examples
 
@@ -85,7 +80,7 @@ This section provides example prompts you can use as a starter prompt for your o
 
 > [!NOTE]  
 >
-> [Cloud flow run history in Dataverse](dataverse/cloud-flow-run-metadata.md), which is built on the new [Elastic Table](/power-apps/maker/data-platform/create-edit-elastic-tables) feature, has different known limitations for querying and aggregating data compared to the desktop flow run history. These differences may impact the responses from Copilot. You can find out more about these known limitation [here](/power-apps/maker/data-platform/create-edit-elastic-tables#features-currently-not-supported-with-elastic-tables).  
+> [Cloud flow run history in Dataverse](dataverse/cloud-flow-run-metadata.md), which is built on the new [Elastic Table](/power-apps/maker/data-platform/create-edit-elastic-tables) feature, has different known limitations for querying and aggregating data compared to the desktop flow run history. These differences might impact the responses from Copilot. You can find out more about these known limitations [here](/power-apps/maker/data-platform/create-edit-elastic-tables#features-currently-not-supported-with-elastic-tables).  
 
 - How many runs last month were triggered by another cloud flow?  
 - Who initiated flow runs during the last month?  
@@ -121,7 +116,7 @@ This section provides example prompts you can use as a starter prompt for your o
 - Who were the top 10 users running flows last month?
 - When and by whom were desktop flows modified last week?
 
-### Documentation (generative answers)
+### Documentation (generative answers - preview)
 
 - How can I add a condition in Power Automate desktop?
 - Can cloud flows handle approvals and decision-making processes?
@@ -133,8 +128,8 @@ In the context of AI, *multi-turn* prompts allow you to have an ongoing conversa
 
 > [!NOTE]
 >
-> - Generative answers (documentation skill) does not support multi-turn conversations yet.
-> - When engaging in a multi-turn conversation, Copilot keeps track of the ten most recent questions only. This means that Copilot starts clearing the prompts that were entered first and only keeps the latest ten. To improve response quality, we suggest limiting your follow-up questions or more frequently restart the chat. For more information, see [Clear previous prompt context to start over](#clear-previous-prompt-context-to-start-over).
+> - Generative answers (documentation skill - preview) doesn't support multi-turn conversations yet.
+> - When engaging in a multi-turn conversation, Copilot keeps track of the 10 most recent questions only. This means that Copilot starts clearing the prompts that were entered first and only keeps the latest 10. To improve response quality, we suggest limiting your follow-up questions or more frequently restart the chat. For more information, see [Clear previous prompt context to start over](#clear-previous-prompt-context-to-start-over).
 
 #### Example
 
@@ -160,8 +155,6 @@ You can influence Copilot's output format by asking for explicit output types li
 ### Clear previous prompt context to start over
 
 If you wish to reset the conversation with Copilot, select the three dots `...` next to the copilot name, and then select **New chat**.
-
-:::image type="content" source="media/automation-center/copilot-new-chat.png" alt-text="Screenshot of the New chat option in Copilot to reset a conversation." lightbox="media/automation-center/copilot-new-chat.png":::
 
 ### Edit and rerun FetchXML queries returned by Copilot
 
@@ -275,16 +268,16 @@ The following list contains known limitations of Copilot in automation center.
 - Copilot is a new technology that is still being developed. It's optimized for use with English language and support with other languages is limited. As such, parts of it might appear in English rather than your preferred language.
 - Copilot is currently only available in Dataverse environments based in the United States.
 - Copilot might return wrong or incomplete data and FetchXML queries.
-- Copilot is initially only capable to answer questions about desktop flow activity, cloud flow activity, work queues and general product feature questions of Power Automate.
+- Copilot is initially only capable to answer questions about desktop flow activity, cloud flow activity, work queues, and general product feature questions of Power Automate.
 - In multi-turn conversations, Copilot keeps context of the last 10 question only. If you encounter wrong or incomplete results, consider [resetting the conversation](#clear-previous-prompt-context-to-start-over).
-- Multi-turn conversations aren't supported for generative answers (documentation skill).
+- Multi-turn conversations aren't supported for generative answers (documentation skill -preview).
 - For queries that return large result-sets, Copilot might not be able return or render the result.
 
 ## Related information
 
 - [Get started with Copilot in cloud flows](get-started-with-copilot.md)
-- [FAQs for Copilot in automation center (preview)](faqs-copilot-automation-center.md)
-- [FAQ for Copilot in desktop flow activity (preview)](faqs-copilot-automation-activity.md)
+- [FAQs for Copilot in automation center](faqs-copilot-automation-center.md)
+- [FAQ for Copilot in desktop flow activity](faqs-copilot-automation-activity.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)

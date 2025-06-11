@@ -1,29 +1,30 @@
 ---
-title: Process capacity utilization 
-description: Process capacity utilization 
+title: Process capacity utilization
+description: Understand how Process and Unattended RPA capacity is utilized in your environment and learn to manage allocations effectively.
 author: cvassallo
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.date: 03/20/2024
+ms.date: 04/23/2025
 ms.author: cvassallo
-ms.reviewer: matp
+ms.reviewer: angieandrews
 contributors:
-- DanaMartens
-ms.topic: conceptual
+  - DanaMartens
+ms.topic: article
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/23/2025
 ---
 
-# Process and unattended RPA capacity utilization (preview)
+# Process and Unattended RPA capacity utilization
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
+The Process and Unattended RPA capacity utilization page provides you with insights into how your Process capacity or legacy Unattended RPA capacity is being used within your environment. As a reminder, within the Power Automate portal each Process capacity is based on a purchased [Process license](/power-platform/admin/power-automate-licensing/types) and each legacy Unattended RPA capacity is based on an [Unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on). Those capacities are [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) by the admin.
 
-The Process and Unattended RPA capacity utilization page provides you with insights into how your process capacity or legacy unattended RPA capacity is being used within your environment. As a reminder, within the Power Automate portal each Process capacity is based on a purchased [process license](/power-platform/admin/power-automate-licensing/types) and each legacy Unattended RPA capacity is based on an [unattended RPA add-on](/power-platform/admin/power-automate-licensing/add-ons#unattended-rpa-add-on). Those capacities are [assigned to the environment](/power-platform/admin/capacity-add-on#allocate-or-change-capacity-in-an-environment) by the admin.
-
-[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
-
-Process capacity or legacy unattended RPA capacity can be allocated to a machine or to a cloud flow. When allocated to a machine, it becomes an unattended bot. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform. When allocated to a cloud flow, it becomes a Process plan based on which the cloud flow is licensed to run premium actions independently from the user license.
+Process capacity or legacy Unattended RPA capacity can be allocated to a machine or to a cloud flow. When allocated to a machine, it becomes an unattended bot. Each unattended bot on a machine can carry one unattended desktop flow run at a time. So if a machine needs to execute multiple unattended runs simultaneously, it needs as many unattended bots as it has simultaneous unattended runs to perform. When allocated to a cloud flow, it becomes a Process plan based on which the cloud flow is licensed to run premium actions independently from the user license.
 
 |Before allocation|Consuming object|After allocation|Description|Allocation mode|
 |----|--------------------|----|----|----|
-|Process capacity|[Machine](manage-machines.md)|Unattended bot|Every unattended bot on a machine allows it to carry out an additional unattended desktop flow run simultaneously.|Capacity is auto-allocated to the machine at unattended desktop flow runtime or can be manually allocated by the user.|
+|Process capacity|[Machine](manage-machines.md)|Unattended bot|Every unattended bot on a machine allows it to carry out an additional unattended desktop flow run simultaneously.|Capacity is auto-allocated to the machine at unattended desktop flow runtime, or the user can  manually allocate it.|
 |Process capacity|Cloud flow|Process plan|Every Process plan allocated to a cloud flow allows it to run premium actions independently from the user license.|Capacity is manually allocated to the cloud flow by the user.|
 
 > [!NOTE]
@@ -77,8 +78,8 @@ Capacity overage in an environment occurs when the capacity utilized by the unat
 
 > [!NOTE]
 >
-> - Process capacity overage is only possible in an environment where some process capacity or unattended RPA capacity has been allocated
-> - Process capacity overage is also possible in an environment where some hosted RPA capacity has been allocated
+> - Process capacity overage is only possible in an environment where some Process capacity or Unattended RPA capacity has been allocated
+> - Process capacity overage is also possible in an environment where some Hosted RPA capacity has been allocated
 
 ### Machine in overage
 
@@ -122,4 +123,4 @@ To view and edit capacity allocation, you need a security role with privileges t
 
 ## Related information
 
-[Capacity utilization within Power Automate (preview)](capacity-utilization.md)
+[Capacity utilization within Power Automate](capacity-utilization.md)

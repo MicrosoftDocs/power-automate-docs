@@ -3,7 +3,7 @@ title: Prerequisites and limitations
 description: Learn about the prerequisites and limitations of Power Automate for desktop.
 author: mattp123
 ms.topic: overview
-ms.date: 07/30/2024
+ms.date: 01/03/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -92,6 +92,14 @@ To monitor the performance of individual user sessions:
 1. Open Task Manager.
 1. Select the **Users** tab.
 1. Review the RAM and CPU usage for each session.
+
+## Considerations when setting up Power Automate for desktop using VM images
+
+When setting up Power Automate for desktop in your organization, don't preinstall Power Automate for desktop as a part of a base VM image. This approach can lead to unexpected behavior due to the machine registration information that might still be retained in the cloned VM image.
+
+Instead, install Power Automate for desktop individually on each machine after the imaging process. This method ensures that the installation is tailored to the specific environment.
+
+For automated deployments, use deployment tools and scripts to install and configure Power Automate for desktop post-imaging. This method provides greater flexibility and control over the installation process, allowing for a more consistent and error-free deployment.
 
 ## Supported languages
 

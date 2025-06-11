@@ -2,9 +2,10 @@
 title: Hosted machine groups
 description: Learn how to create and use hosted machine groups to distribute your automation workload.
 author: kenseongtan
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 09/16/2024
+ms.topic: article
+ms.date: 05/19/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -47,14 +48,16 @@ This section presents all the prerequisites to create and use hosted machine gro
 
 ### Get access to the default VM image
 
-To create a hosted machine group, you need access to the default VM image that is part of your environment. You can view the default image in **Monitor** > **Machines** > **VM images**.
-
-:::image type="content" source="media/hosted-machine-groups/vm-images-preview.png" alt-text="Screenshot of the VM images tab in the Power Automate portal.":::
-
 > [!NOTE]
->
-> - Users need either the **System Administrator** or **Desktop Flow Machine Image Admin** role to see and manage the default image.
-> - For other users, the **System Administrator** or **Desktop Flow Machine Image Admin** has to share the default image with them before they can use it.
+> - The default VM image provided by Power Automate with Microsoft Edge preinstalled is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration, or security constraints, use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine-groups) capability.
+
+The default VM image is available to all users in the environment. If you can't see the default VM image, your admin disabled sharing of default VM images to users. In this case:
+- Users need either the **System Administrator** or **Desktop Flows Machine Configuration Admin** role to see and manage the default image.
+- For other users, the **System Administrator** or **Desktop Flows Machine Configuration Admin** has to share the default image with them before they can use it.
+
+View the default image in **Monitors** > **Machines** > **VM images**.
+
+:::image type="content" source="media/hosted-machines/default-vm-image.png" alt-text="Screenshot of the default VM image in the VM images list.":::
 
 ### Share the default image
 
@@ -109,7 +112,7 @@ To create a hosted machine group:
 
     - Select the **VM image** to use for your hosted machine group. A proposed default Windows 11 image called **Default Windows Desktop Image** is available. If you don't see it, make sure you followed the steps described in [Prerequisites](#prerequisites).
 
-    - Select the **network connection (preview) (optional)** to use for your hosted machine group.
+    - Select the **Network connection (optional)** to use for your hosted machine group.
 
     - Select how you would like to **access** your hosted machine group. You can use your [work or school account](#use-your-work-or-school-account) or use a local admin account you want created. This account is used to run your automations by the bots.
 
@@ -136,12 +139,28 @@ You can personalize your hosted machine groups by providing your own Windows ima
 Custom VM images must meet the following requirements:
 
 - Generation 2 images
-- Generalized VM image
+- Generalized VM image. Learn more in [generalize VM image](/azure/virtual-machines/generalize).
 - 127-GB limit on VM image size
 - Microsoft Edge version 80 or higher
 - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
-Learn how to create a generalized VM image in Azure in [Upload a generalized Windows VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed).
+#### Use a specific version of Power Automate Desktop
+
+When you use custom VM images, the latest version of Power Automate for desktop installs automatically during hosted machine group provisioning.
+
+To use a specific version of Power Automate for desktop, follow these steps:
+
+1. Install the version of Power Automate for desktop you want and include it in your custom VM image. 
+1. Add the following registry key to the image:
+
+    | Hive | Key | Name | Type | Value |
+    |---|---|---|---|---|
+    | HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global | UseInstalledPADForHosted | String | True |
+
+    > [!CAUTION]
+    > Modifying Windows registry settings incorrectly can cause serious problems that may prevent your computer from booting properly. Microsoft cannot guarantee that any problems resulting from the configuring of registry settings can be solved. Modification of these settings is at your own risk. We strongly recommend that you [back up your Windows registry](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692) before proceeding.
+
+This ensures your hosted machine group uses the version of Power Automate for desktop included in your custom VM image.
 
 ### Create an Azure compute gallery in Azure and add an image
 
@@ -164,8 +183,8 @@ Learn how to create a generalized VM image in Azure in [Upload a generalized Win
     - Japan: Japan East
     - Korea: Korea Central
     - Norway: Norway East
-    - South Africa - South Africa North
-    - Southeast Asia - Singapore
+    - South Africa: South Africa North
+    - Singapore: Southeast Asia (Allowlisted tenants only)
     - Switzerland: Switzerland North
     - United Arab Emirates: UAE North
     - United Kingdom: UK South
@@ -248,28 +267,18 @@ The last step before using your image in Power Automate is to share the image wi
 > [!NOTE]
 > When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You'll be notified in the **Manage access** section of the image if it's shared with deactivated users. In this situation, remove access to them.
 
-## Use a custom virtual network for your hosted machine groups (preview)
-
-[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
+## Use a custom virtual network for your hosted machine groups
 
 You can connect to your own virtual network with your hosted machine groups to securely communicate with each other, the Internet, and on-premises networks. Providing your own virtual network from your Azure subscription allows your hosted machine groups to be provisioned with your virtual network automatically.
 
-[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
-
 > [!NOTE]
 > You can have up to 30 custom virtual networks configured per tenant.
-
-### Known issues
-
-- **Issue:** When using a hosted machine group with a custom network connection, the network connection field in the hosted machine group details page might show as blank. This is a cosmetic issue. Functionality of the hosted machine group is not affected.
-
-    **Workaround:** In the machines page on the Power Automate portal, go to the network connections tab. Select the network connection that you created. From the network connection details page, you can see the hosted machine groups that are using the network connection.
 
 ### General network requirements
 
 To use your own network and provision Microsoft Entra joined hosted machine groups, you must meet the following requirements:
 
-- You must have a virtual network in your Azure subscription in the same region where you created the hosted machines.
+- You must have a virtual network in your Azure subscription in the same region where you created the hosted machine groups.
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
 - A subnet within the virtual network and available IP address space.
 - [Allow network connectivity](/power-automate/ip-address-configuration#desktop-flows-services-required-for-runtime) to required services.
@@ -281,14 +290,49 @@ The virtual network needs to be created in the same location as your hosted mach
 - Brazil: Brazil South
 - Canada: Canada Central
 - Europe: North Europe
+- France: France Central
+- Germany: Germany West Central
 - India: Central India
 - Japan: Japan East
-- United States: East US
+- Korea: Korea Central
+- Norway: Norway East
+- South Africa: South Africa North
+- Singapore: Southeast Asia (Allowlisted tenants only)
+- Switzerland: Switzerland North
+- United Arab Emirates: UAE North
 - United Kingdom: UK South
+- United States: East US
 
+### Additional requirements for Microsoft Entra hybrid joined hosted machines groups (preview)
 
-> [!NOTE]
-> We are continuing to roll out support to more Power Platform geographies. Please send your request to hostedrpa@microsoft.com if you have a specific request.
+[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
+
+Microsoft Entra hybrid join using custom virtual networks (VNETs) with hosted machine groups lets your hosted machine group bots enroll in both your on-premises Active Directory (AD) and Microsoft Entra ID. This feature is useful when automation requires authentication using an AD account or when devices need to be managed using Group Policy (GPO).
+
+[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
+
+To use your own network and provision Microsoft Entra hybrid joined machines, you must meet the following requirements:
+
+#### Domain requirements
+
+- Configure your infrastructure to automatically Microsoft Entra hybrid join any devices that domain joins to the on-premises Active Directory. [configuration lets them be recognized and managed in the cloud](/azure/active-directory/devices/overview).
+- Microsoft Entra hybrid joined hosted machines need periodic network line of sight to your on-premises domain controllers. Without this connection, devices become unusable. Learn more in [Plan your Microsoft Entra hybrid join deployment](/azure/active-directory/devices/hybrid-join-plan).
+- If you specify an organizational unit, ensure it exists and is valid.
+- Ensure an Active Directory user account has sufficient permissions to join the computer into the specified organizational unit within the Active Directory domain. If you don't specify an organizational unit, ensure the user account has sufficient permissions to join the computer to the Active Directory domain.
+- User accounts that create hosted machines must have a synced identity available in both Active Directory and Microsoft Entra ID.
+
+#### Role and identity requirements
+
+Hosted machine groups users must be configured with [hybrid identities](/azure/active-directory/hybrid/whatis-hybrid-identity) so that they can authenticate with resources both on-premises and in the cloud.
+
+#### DNS requirements
+
+As part of the Microsoft Entra hybrid join requirements, ensure your hosted machine groups can join on-premises Active Directory. To achieve this requirement, the hosted machine groups must resolve DNS records for your on-premises AD environment.
+Configure your Azure Virtual Network where the hosted machine groups are provisioned as follows:
+
+1. Ensure your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
+1. From the Azure Virtual Network's Settings, select **DNS Servers** and then choose **Custom**.
+1. Enter the IP address of DNS servers that can resolve your Active Directory Domain Services domain.
 
 ### Share the virtual network with Power Automate Hosted Machine Groups service principal
 
@@ -349,13 +393,21 @@ The last step before being able to reference your virtual network from Power Aut
 
     - **Network connection name:** A unique name to identify the network connection.
     - **Description:** An optional description for the network connection.
-    - **Use with:** Select the hosted machine group (preview).
+    - **Use with:** Select hosted machine group (preview).
 
 1. Select one of the **Azure virtual network** available in Azure that meets the network requirements.
 
 1. Select the **Subnet** the hosted machine groups use.
 
-    :::image type="content" source="media/hosted-machine-groups/create-custom-vnet-hmg.png" alt-text="Screenshot of selecting the subnet in a new network connection.":::
+1. Select the **Domain join type** for the machine.
+
+1. If you select **'Microsoft Entra hybrid join (preview)'**, provide the following information:
+   - **DNS domain name** : The DNS name of the Active Directory domain used for connecting and provisioning hosted machines. For example, corp.contoso.com.
+   - **Organizational unit (optional)** : An organizational unit (OU) is a container within an Active Directory domain that can hold users, groups, and computers. Ensure this OU syncs with Microsoft Entra Connect. Provisioning fails if this OU isn't syncing.
+   - **Network credential** : Stored as an [Azure Key Vault credential](create-azurekeyvault-credential.md). The user principal name (UPN) and its password connect the hosted machine groups to your Active Directory domain. For example, svcDomainJoin@corp.contoso.com. This service account must have permission to join computers to the domain and, if set, the target OU.
+
+    > [!NOTE]
+    > Provisioning a new network connection with Microsoft Entra hybrid join domain join type takes 10-15 minutes.
 
 ### Share the network connection
 
@@ -551,24 +603,31 @@ By default, users with the **Environment Maker** role can create hosted machine 
 - Flow Machine
 - Flow Machine Group
 - Flow Machine Image
+- Flow Machine Network (if using custom virtual network for your hosted machine groups)
 
 :::image type="content" source="media/hosted-machine-groups/environment-maker-role.png" alt-text="Screenshot of the permissions for the Environment Maker role.":::
 
-Environment Maker role can [create and share custom VM images](#use-custom-vm-images-for-your-hosted-machine-groups), as this functionality requires create and append privileges on the **Flow Machine Image**.
+The Environment Maker role can [create and share custom VM images](#use-custom-vm-images-for-your-hosted-machine-groups) because this functionality requires create and append privileges on the Flow Machine Image.
 
-Admins can also use the roles provided as part of Desktop Flows. You can find more information about desktop flow security roles in [Manage Machines](manage-machines.md#update-permissions-based-on-security-role).
+The Environment Maker role can [create and share custom virtual networks](#use-a-custom-virtual-network-for-your-hosted-machine-groups) because these actions require create and append privileges on the Flow Machine Network.
+
+Admins can also use the roles provided as part of desktop flows. Learn more about desktop flow security roles in [Manage Machines](manage-machines.md#update-permissions-based-on-security-role).
 
 ### Desktop Flows Machine Owner role
 
-By default, **Desktop Flows Machine** owners can create hosted machine groups but can't create custom VM images. They can only use previously shared [custom VM images](#use-custom-vm-images-for-your-hosted-machine-groups) in their own hosted machine groups.
+By default, **Desktop Flows Machine Owners** can create hosted machine groups but can't create custom VM images. They can only use previously shared [custom VM images](#use-custom-vm-images-for-your-hosted-machine-groups) in their own hosted machine groups.
 
 :::image type="content" source="media/hosted-machine-groups/desktop-flows-machine-owner-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Owner role.":::
 
 ### Desktop Flows Machine Configuration Admin role
 
-The **Desktop Flows Machine Image Admin** role only brings full privileges on the **Flow Machine Image** entity. In particular, it allows users with this role to share/unshare VM images to be used for created hosted machine group in their environment. You can find more information about sharing pre-provisioned VM Images in [Create hosted machine groups](#create-hosted-machine-groups).
+The **Desktop Flows Machine Configuration Admin** role  brings full privileges on the **Flow Machine Image** entity and **Flow Machine Network** entities.. In particular, it allows users with this role to share/unshare VM images to be used for created hosted machine group in their environment. You can find more information about sharing pre-provisioned VM Images in [Create hosted machine groups](#create-hosted-machine-groups).
 
 :::image type="content" source="media/hosted-machine-groups/desktop-flow-machine-configuration-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Configuration Admin role.":::
+
+### Custom virtual network permissions
+
+The [custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machine-groups) feature requires permissions to the  **Flow Machine Network** table. You can grant or deny privileges to this table to control which user can create and share custom virtual networks.
 
 ## Use your work or school account
 
@@ -634,7 +693,7 @@ The following list displays all the supported geographies in the public clouds:
 - Korea
 - Norway
 - South Africa
-- Southeast Asia
+- Singapore (Allowlisted tenants only)
 - Switzerland
 - United Arab Emirates
 - United Kingdom
@@ -649,6 +708,36 @@ The following list displays all supported sovereign clouds:
 Hosted machine groups aren't yet available in the following sovereign cloud:
 
 - China
+
+### Default VM image deprecation for Windows 11 Enterprise 22H2
+
+Windows versions are supported for a limited time to provide the latest security updates, performance improvements, and features. The default VM image on Windows 11 Enterprise 22H2 is deprecated and replaced by Windows 11 Enterprise 24H2.
+
+> [!NOTE]
+> This deprecation doesn't affect Windows version used in custom VM images.
+
+Image scheduled for deprecation:
+
+| Name | Description | Reference | Deprecation date (0:00 UTC) | End of support date (0:00 UTC) |
+|------|-------------|-----------|-----------------------------|--------------------------------|
+| Default Windows 11 Enterprise 22H2 Image | Default Windows Desktop Image for use in Microsoft Desktop Flows. Windows 11 Enterprise 22H2 with Microsoft Edge. | `MicrosoftWindowsDesktop:windows-ent-cpc:win11-22h2-ent-cpc-os` | February 28, 2025 | May 31, 2025 |
+
+Recommended alternative image:
+
+| Name | Description | Reference |
+|------|-------------|-----------|
+| Default VM image – Windows 11 Enterprise 24H2 | Default Windows Desktop Image for use in Microsoft Desktop Flows. Windows 11 Enterprise 24H2 with Microsoft Edge. | `MicrosoftWindowsDesktop:windows-ent-cpc:win11-24h2-ent-cpc` |
+
+Impact:
+
+- After the deprecation date, you can't deploy new hosted machine groups with the deprecated image.
+- If you don't take action by the end of support, affected hosted machine groups are automatically reprovisioned to the recommended default image.
+
+Action:
+
+1. Review all affected hosted machine groups by navigating to the **VM images** tab under the **Machines** page in the Power Automate Portal.
+1. To ensure compatibility, test your desktop flows with the recommended alternative image in a nonproduction environment.
+1. After validation, use the [update VM image](#update-vm-image-used-by-the-hosted-machine-group) to reprovision the hosted machine groups to the recommended alternative default image.
 
 ### Sovereign clouds limitations for hosted machine groups
 

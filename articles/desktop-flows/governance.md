@@ -1,10 +1,10 @@
 ---
 title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
-author: mattp123
-ms.topic: conceptual
-ms.date: 09/25/2024
-ms.author: iomavrid
+author: NikosMoutzourakis
+ms.topic: article
+ms.date: 04/22/2025
+ms.author: nimoutzo
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
 contributors:
@@ -37,6 +37,18 @@ You can use the following registry entry to keep users from manually updating Po
 ***Value***
 
 - **1**: Users can't manually update Power Automate for desktop.
+
+## Prevent users from manually configuring Power Automate for desktop to start automatically
+
+Use the following registry entry to prevent users from manually configuring Power Automate for desktop to start automatically. This key only applies to installer (MSI) versions.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_CURRENT_USER | SOFTWARE\Microsoft\Power Automate Desktop | DisableAutoStartConfiguration | DWORD |
+
+***Value***
+
+- **1**: Users can't manually select to automatically start Power Automate for desktop.
 
 ## Prevent users accessing Power Automate for desktop using certain kinds of accounts
 
@@ -333,6 +345,18 @@ You can use the following registry entry to enforce the confirmation dialog or d
 - **1**: Power Automate for desktop always displays a confirmation dialog when invoking flows using a URL or desktop shortcut. Users aren't allowed to change this option through the console settings.
 - **2**: Users aren't allowed to invoke flows using a URL or desktop shortcut.
 
+## Configure Power Automate for desktop to disable the security check to run shared flows if the author is not trusted
+
+A security check does not allow users to run shared flows if they have not trusted the author. You can use the following registry entry to disable this security check.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_CURRENT_USER | SOFTWARE\Microsoft\Power Automate Desktop | DisableAskBeforeRunningASharedFlow | DWORD |
+
+***Value***
+
+- **1**: Power Automate for desktop doesn't display a dialog to confirm running a shared flow, when the author is not trusted.
+
 ## Configure Power Automate for desktop to keep the flow run details
 
 You can use the following registry entry to configure Power Automate for desktop to keep the flow run detail logs in a local folder.
@@ -437,6 +461,23 @@ You can use the following registry entry to allow switching machine registration
 ***Value***
 
 - **1**: Machine registration can switch to another tenant.
+
+## Configuring Power Automate for Desktop to disable UNC paths in action inputs
+
+> [!NOTE]
+> This registry entry applies to Power Automate desktop version 2.55 and later.
+
+IT admins can enhance security by setting the following registry key to disable UNC paths in module actions.
+
+This configuration causes any action that contains a UNC path to result in a runtime error.
+
+ | Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | DisableUNCPaths | DWORD |
+
+***Value***
+
+- **1**: Disables the support of UNC paths in Power Automate for desktop.
 
 ## Prevent users from using the copilot's generative answers capability
 

@@ -2,9 +2,10 @@
 title: Browser automation actions reference
 description: See all the available browser automation actions.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/23/2024
+ms.date: 12/04/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -604,7 +605,10 @@ This action doesn't produce any variables.
 
 ## <a name="clickdownloadlink"></a> Click download link on web page
 
-Click on a link in a web page that results in downloading a file.
+Select a link in a web page that results in downloading a file.
+
+> [!IMPORTANT]
+> The **Click download link on web page** action only works in Internet Explorer, which has reached the end of its lifecycle. We recommend using [HTTP actions](web.md#downloadfromweb) instead.
 
 ### Input parameters
 

@@ -7,6 +7,7 @@ documentationcenter: na
 author: v-aangie
 editor: ''
 tags: ''
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.tgt_pltfrm: na
@@ -46,8 +47,9 @@ The following screenshot shows a partial list of Office 365 Outlook actions. For
 
 ## Related information
 
-[Create flows for popular email scenarios](email-top-scenarios.md)  
-[Create flows to manage email](create-email-flows.md)  
-[Customize email in flows](email-customization.md)
+- [Create flows for popular email scenarios](email-top-scenarios.md)
+- [Create flows to manage email](create-email-flows.md)
+- [Customize email in flows](email-customization.md)
+- [Training: Enhance productivity with Power Automate and the Office 365 Outlook Connector (module)](/training/modules/enhance-productivity/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

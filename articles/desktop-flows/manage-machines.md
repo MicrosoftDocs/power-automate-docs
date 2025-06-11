@@ -2,12 +2,14 @@
 title: Manage machines
 description: Manage machines
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 03/20/2024
+ms.topic: how-to
+ms.date: 01/14/2025
 ms.author: kenseongtan
 ms.reviewer: matp
 contributors:
+- rpapostolis
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
@@ -59,7 +61,7 @@ Your machine is automatically registered on the currently selected environment i
 
 > [!NOTE]
 >
-> - To successfully register a machine, ensure the services specified in [Desktop flow services required for runtime](../ip-address-configuration.md#services-required-for-desktop-flows-runtime) are accessible.
+> - To successfully register a machine, ensure the services specified in [Desktop flow services required for runtime](../ip-address-configuration.md#allow-machines--users-on-your-network-to-access-power-automate-desktop-services) are accessible.
 > - You need an **Environment Maker** or **Desktop Flow Machine Owner** role to register machines. Before registering a machine, ensure you have the required permissions and an available environment to register the new machine.
 > - In the case of a virtual machine, don't clone the virtual machine after installing Power Automate machine runtime.
 > - Machines aren't affected by changes in the Power Automate for desktop organization.
@@ -183,6 +185,27 @@ You can share a machine with other users in your organization and give those use
 
 > [!NOTE]
 > When a user isn't part of an environment anymore, you'll continue seeing the user as deactivated. You'll be notified in the **Manage access** section of the machine if it's shared with deactivated users. In this situation, remove access to them.
+
+## Receive user session related recommendations (preview)
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+The **Receive user session related recommendations (preview)** setting sends orchestration-based notifications when an **unattended** desktop flow run is queued but can't start due to a locked or disconnected user session of the same user on the machine. When turned on, users receive an [Automation Center recommendation](../automation-center-recommendations.md) titled "Desktop flows not running" that details all affected desktop flow runs, allowing you to take corrective actions within a 10-minute timeout window.
+
+:::image type="content" source="media/manage-machines/user-orchestration-recommendation.png" alt-text="Screenshot of an orchestration-related recommendation in Automation center showing a user session disconnect request." lightbox="media/manage-machines/user-orchestration-recommendation.png":::
+
+### Supported actions
+
+|Action|Details|
+|-------|---|
+| Disconnect users | Disconnect the users of the selected active runs. |
+| Flow details | Opens the flow details page of the desktop flow listed on the the selected run. |
+| Run details | Opens the desktop flow run details page of the desktop flow listed on the selected run. |
+| Refresh | Refreshes the active run list. |
+
+### Who receives user-session based recommendations
+
+To receive user orchestration recommendations in the Automation Center, you must own the desktop flow connection that created and assigned the desktop flow connection within a cloud flow.
 
 ## Delete a machine
 

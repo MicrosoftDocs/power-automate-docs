@@ -3,6 +3,7 @@ title: Perform OCR on multilingual documents
 description: Perform OCR on multilingual documents
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/08/2021

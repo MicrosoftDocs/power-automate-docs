@@ -5,8 +5,9 @@ author: donums
 contributors:
   - donums
   - v-aangie 
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: article
 ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
@@ -21,7 +22,7 @@ When you create a process in the process mining capability, only you can see it.
 
 Here's a short video on how to share a process.<br>
 </br>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6PP]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=0998b545-3c11-417b-b46b-f4c67139b230]
 
 There are two primary ways to share a process:
 

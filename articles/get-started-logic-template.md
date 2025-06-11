@@ -10,8 +10,9 @@ contributors:
   - v-aangie
 ms.author: jamiller
 ms.reviewer: angieandrews
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: get-started
 ms.date: 05/12/2022
 search.audienceType: 
   - flowmaker
@@ -25,7 +26,7 @@ A good way to get started is to use a template that is suited to your organizati
 
 The following video gives insights into using templates to create your flows.
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKZQv]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=b8ff0396-8bfb-44a7-821a-a9bc2e136bb0]
 
 You can tweak templates by adding, editing, or removing triggers and actions to create your own flows. You can [copy paste actions](/business-applications-release-notes/april19/microsoft-flow/copy-paste-actions) in the same flow or across flows to speed up the your tweaks.
 

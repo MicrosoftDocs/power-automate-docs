@@ -4,7 +4,7 @@ description: Learn how to set up out of office and delegation.
 documentationcenter: na
 author: Grant-Archibald-MS
 ms.custom: guidance
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 11/15/2023
 ms.author: grarchib
 ms.reviewer: angieandrews

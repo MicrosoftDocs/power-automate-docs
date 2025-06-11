@@ -8,8 +8,9 @@ contributors:
   - JimDaly
 ms.reviewer: angieandrews
 ms.date: 10/29/2024
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.author: cgarty
 audience: Power user
 ---
@@ -338,7 +339,7 @@ Content-Type: application/json
 ```http
 HTTP/1.1 204 No Content
 OData-Version: 4.0
-OData-EntityId: [Organization URI]/api/data/v9.2/workflows(7b177b96-f9ed-ed11-8849-000d3a993550)
+OData-EntityId: [Organization URI]/api/data/v9.2/workflows(00aa00aa-bb11-cc22-dd33-44ee44ee44ee)
 ```
 
 > [!NOTE]

@@ -7,9 +7,10 @@ contributors:
   - samathur
   - ChrisGarty
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 11/15/2024
+ms.topic: article
+ms.date: 05/21/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -30,16 +31,16 @@ Consider the following scenarios when applying the CMK enterprise policy to your
 - When the CMK enterprise policy is applied, cloud flows and their data with CMK are automatically protected. Some flows might continue to be protected by MMKs. Admins can identify these flows using [PowerShell commands](#powershell-commands).  
 - Creation and updates of flows are blocked during migration. Run history isn't carried forward. You can request it through a [support ticket](#get-run-history-by-support-ticket) up to 30 days after migration.
 - Currently, CMKs aren't leveraged to encrypt non-OAuth connections. These non-Microsoft Entra based connections continue to be encrypted at rest using MMKs.
-- To enable incoming and outgoing network traffic from CMK protected infrastructure, [update your firewall configuration](#update-firewall-configuration) to ensure your flows continue to work.  
+- To enable incoming and outgoing network traffic from CMK protected infrastructure, [update your firewall configuration](#update-firewall-configuration) to ensure your flows continue to work.
 - If you plan to protect more than 25 environments in your tenant using CMK, create a support ticket. The default limit of CMK enabled Power Automate environments per tenant is 25. This number can be extended by engaging the Support team.
 
 Applying an encryption key is a gesture performed by Power Platform admins and is invisible to users. Users can create, save, and execute Power Automate workflows exactly the same way as if MMKs encrypted the data.
 
 The CMK feature enables you to leverage the single enterprise policy created on the environment to secure Power Automate workflows. Learn more about CMK and the step-by-step instructions to enable CMKs in [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key).
 
-### Power Automate hosted robotic process automation (RPA) (preview)
+### Power Automate hosted robotic process automation (RPA)
 
-The hosted machine group capability of the [Introduction to the Power Automate hosted RPA](desktop-flows/hosted-rpa-overview.md) solution supports CMKs. After applying CMKs, you must reprovision existing hosted machine groups by selecting **Reprovision group** on the machine group details page. Once reprovisioned, the VM disks for the hosted machine group bots are encrypted with the CMK.
+The hosted machine group capability of the [Power Automate hosted RPA](desktop-flows/hosted-rpa-overview.md) solution supports CMKs. After applying CMKs, you must reprovision existing hosted machine groups by selecting **Reprovision group** on the machine group details page. Once reprovisioned, the VM disks for the hosted machine group bots are encrypted with the CMK.
 
 > [!NOTE]
 > CMK for the hosted machine capability isn't currently available.
@@ -70,6 +71,7 @@ The following categories of flows continue to be protected by MMK after applying
 |Power App v1 trigger flows that aren't in a solution     | **Option 1 (Recommended)**</br>Update the flow to use V2 trigger *before* applying CMK.</br></br>**Option 2**</br>*Post CMK application*, use **Save as** to create a copy of the flow. Update calling Power Apps to use the new copy of the flow.   |
 |HTTP trigger flows and Teams trigger flows     | *Post enterprise policy application*, use **Save as** to create a copy of the flow. Update calling system to use the URL of the new flow.</br></br>This category of flows isn't automatically protected, as a new flow URL is created in the CMK protected infrastructure. Customers might be leveraging the URL in their invoking systems.   |
 |Parents of flows that can't be automatically migrated     | If a flow can't be migrated, then dependent flows are also not migrated to ensure there’s no business disruption. |
+|Flows using the List flows as Admin (v1) connector action     | Flows referencing this legacy action should either be deleted or updated to use the [List Flows as Admin (V2)](/connectors/flowmanagement/#list-flows-as-admin-(v2)) action.   |
 
 ## PowerShell commands
 
@@ -110,29 +112,13 @@ If you want to view input/output data, you can use the run history (**All Runs**
 
 We provide a summary view for all runs from both existing and new flow runs post CMK application. This view contains summary information such as run id, start time, duration, and fail/successs. It doesn't contain input/output data.
 
-## Known limitations
+## Protect flows in environments that are already protected by CMK
 
-Limitations include limitations for features using analytics pipeline and for non-solution cloud flows triggered by Power Apps, as described in this section.
+For environments that are already protected by CMK, protecting flows using CMK can be requested by a Support Ticket.
 
-### Limitations on features applying analytics pipeline
-
-When an environment is enabled for customer-managed keys, then Power Automate data can't be sent to the analytics pipeline for a range of scenarios:
-
-- [Tenant-wide reporting in Power Platform admin center](/power-platform/admin/power-automate-analytics-reports)
-- [Data export to Data Lake](/power-platform/admin/self-service-analytics-schema-definition#power-automate-folder-structure)
-- [Cloud flow run history](/power-automate/dataverse/cloud-flow-run-metadata) (for [automation center](/power-automate/automation-center-overview))
-- [Power Automate mobile app](/power-automate/mobile/overview-mobile), [notifications page](/power-automate/mobile/notifications)
-- Cloud flow activity page
-- Flow failure e-mail
-- Flow failure digest e-mail
-
-### Limitation on non-solution cloud flows triggered by Power Apps
+## Limitation on non-solution cloud flows triggered by Power Apps
 
 Non-solution cloud flows using the Power Apps trigger and are created in CMK-protected environments can't be referenced from an app. An error results when attempting to register the flow from Power Apps. Only solution cloud flows can be referenced from an app in CMK-protected environments. To avoid this situation, [flows should first be added into a Dataverse solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution) so they can be successfully referenced. To prevent this situation, the environment setting to [automatically create flows in Dataverse solutions](/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature) should be enabled in CMK-protected environments. This setting ensures new flows are solution cloud flows.
-
-### Limitation of invoking Copilot Skills trigger flows
-
-The scenarios where a cloud flow is invoked through the Copilot Skills trigger applying the invoking Copilot user's connection as opposed to an embedded connection isn't supported for CMK protected cloud flows. Learn more about using flows as plugins from Copilot in [Run flows from Copilot for Microsoft 365](flow-plugins-m365.md#run-flows-from-microsoft-365-copilot).
 
 ## Related information
 

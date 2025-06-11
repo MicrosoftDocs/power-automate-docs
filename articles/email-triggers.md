@@ -2,15 +2,16 @@
 title: Trigger a cloud flow based on email properties in Power Automate
 description: Learn how to start a cloud flow based on properties of an email such as the subject, sender's address, or recipient's address - When a new email arrives (V3), On new email.
 suite: flow
-author: hamenon
+author: kewaiss
 contributors:
   - hamenon
   - v-aangie
-ms.author: hamenon
+ms.author: dbekirop
 ms.reviewer: angieandrews
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 10/09/2024
+ms.topic: how-to
+ms.date: 04/01/2025
 search.audienceType: 
   - flowmaker
   - enduser
@@ -56,6 +57,17 @@ Although this tutorial sends a push notification, you're free to use any other a
 
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
+# [New designer](#tab/new-designer)
+
+1. Simply ask Copilot to create your flow by typing the following prompt:
+
+    **When I receive an email that contains the word 'lottery' in the subject, send me a push notification and mark the email as Read.**
+
+    :::image type="content" source="./media/email-triggers/copilot-lottery.png" alt-text="Screenshot of triggering a cloud flow based on an email's subject in Copilot.":::
+
+1. Review the connections and parameters on the designer.
+1. Save the flow.
+
 # [Classic designer](#tab/classic-designer)
 
 1. Select the folder that you'd like the flow to monitor for incoming emails, and then select **Show advanced options**.
@@ -80,22 +92,22 @@ Although this tutorial sends a push notification, you're free to use any other a
 
 Congratulations! You now receive a push notification each time you receive an email that contains the word "lottery" in the subject.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-1. Simply ask Copilot to create your flow by typing the following prompt:
-
-    **When I receive an email that contains the word 'lottery' in the subject, send me a push notification and mark the email as Read.**
-
-    :::image type="content" source="./media/email-triggers/copilot-lottery.png" alt-text="Screenshot of triggering a cloud flow based on an email's subject in Copilot.":::
-
-1. Review the connections and parameters on the designer.
-1. Save the flow.
-
 ---
 
 ## Trigger a cloud flow based on an email's sender
 
 In this tutorial, you create a cloud flow that sends a push notification to your mobile phone if any new email arrives from a specific sender (email address). The flow also marks any such email as Read.
+
+# [New designer](#tab/new-designer)
+
+1. Simply ask Copilot to create your flow by typing the following prompt:
+
+    **When I receive an email from jake@contoso.com, send me a push notification and mark the email as Read.**
+
+    :::image type="content" source="./media/email-triggers/copilot-email.png" alt-text="Screenshot of triggering a cloud flow based on an email's sender in Copilot.":::
+
+1. Review the connections and parameters on the designer.
+1. Save the flow.
 
 # [Classic designer](#tab/classic-designer)
 
@@ -115,17 +127,6 @@ In this tutorial, you create a cloud flow that sends a push notification to your
 
 4. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-1. Simply ask Copilot to create your flow by typing the following prompt:
-
-    **When I receive an email from jake@contoso.com, send me a push notification and mark the email as Read.**
-
-    :::image type="content" source="./media/email-triggers/copilot-email.png" alt-text="Screenshot of triggering a cloud flow based on an email's sender in Copilot.":::
-
-1. Review the connections and parameters on the designer.
-1. Save the flow.
-
 ---
 
 ## Trigger a cloud flow when emails arrive in a specific folder
@@ -134,6 +135,21 @@ If you have rules that route emails to different folders based on certain proper
 
 > [!NOTE]
 > If you don't already have a rule that routes email to a folder other than your inbox, create such a rule and confirm it works by sending a test email.
+
+# [New designer](#tab/new-designer)
+
+1. Simply ask Copilot to create your flow by typing :
+
+    **When I receive an email in Sync Issues folder, send me a push notification and mark the email as Read.**
+
+    :::image type="content" source="./media/email-triggers/copilot-folder.png" alt-text="Screenshot of triggering a cloud flow when emails arrive in a specific folder in Copilot.":::
+
+1. Make sure the folder is selected in email trigger, if it isn't already applied by Copilot.
+
+    :::image type="content" source="./media/email-triggers/copilot-parameters-folder.png" alt-text="Screenshot of a selected folder in Copilot.":::
+
+1. Your flow is ready to be used. Simply save the flow and your automation is running.
+1. Test your flow by sending an email to the folder you specified.
 
 # [Classic designer](#tab/classic-designer)
 
@@ -154,21 +170,6 @@ If you have rules that route emails to different folders based on certain proper
 4. Give your flow a name, and then save it by selecting **Create flow** at the top of the page.
 
 Test the flow by sending an email that gets routed to the folder you selected earlier in this tutorial.
-
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-1. Simply ask Copilot to create your flow by typing :
-
-    **When I receive an email in Sync Issues folder, send me a push notification and mark the email as Read.**
-
-    :::image type="content" source="./media/email-triggers/copilot-folder.png" alt-text="Screenshot of triggering a cloud flow when emails arrive in a specific folder in Copilot.":::
-
-1. Make sure the folder is selected in email trigger, if it isn't already applied by Copilot.
-
-    :::image type="content" source="./media/email-triggers/copilot-parameters-folder.png" alt-text="Screenshot of a selected folder in Copilot.":::
-
-1. Your flow is ready to be used. Simply save the flow and your automation is running.
-1. Test your flow by sending an email to the folder you specified.
 
 ---
 

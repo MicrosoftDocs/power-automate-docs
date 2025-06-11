@@ -6,9 +6,10 @@ contributors:
   - HeatherOrt
   - rosikm
   - v-aangie 
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 11/22/2024
+ms.topic: how-to
+ms.date: 06/10/2025
 ms.custom: bap-template
 ms.author: michalrosik
 ms.reviewer: angieandrews
@@ -18,11 +19,13 @@ ms.reviewer: angieandrews
 
 Power Automate Process Mining gives you the option to store and read event log data directly from [Azure Data Lake Storage Gen2](/azure/storage/blobs/data-lake-storage-introduction). This feature simplifies extract, transform, load (ETL) management by connecting directly to your storage account.
 
+[!INCLUDE [data-lake-storage](./includes/data-lake-storage.md)]
+
 ## Prerequisites
 
 - The Data Lake Storage account must be Gen2. You can check this out from the Azure portal. Azure Data Lake Gen1 storage accounts aren't supported.
 - The Data Lake Storage account must have [hierarchical namespace](/azure/storage/blobs/data-lake-storage-namespace) enabled.
-- The **Owner** role must be attributed to the user performing the initial container setup for the environment for the following users in the same environment. These users are connecting to the same container and must have these assignments:
+- The **Owner** role (on a storage account level) must be attributed to the user performing the initial container setup for the environment for the following users in the same environment. These users are connecting to the same container and must have these assignments:
     - **Storage Blob Data Reader** or **Storage Blob Data Contributor** role assigned
     - Azure Resource Manager **Reader** role assigned, at minimum.
 
@@ -35,7 +38,7 @@ Power Automate Process Mining gives you the option to store and read event log d
 
         :::image type="content" source="media/process-mining-byo-azure-data-lake/CORS.png" alt-text="Screenshot of the example of CORS setting screen.":::
 
--   Data in your Data Lake Storage should meet the following CSV file format requirements:
+- CSV data in your Data Lake Storage should meet the following CSV file format requirements:
     - **Compression type:** None
     - **Column delimiter:** Comma (,)
     - **Row delimiter:** Default and encoding. For example, Default (\r,\n, or \r\n) 

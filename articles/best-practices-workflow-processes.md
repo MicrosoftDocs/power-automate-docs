@@ -5,8 +5,9 @@ ms.custom: ""
 ms.date: 07/27/2020
 ms.suite: ""
 ms.tgt_pltfrm: ""
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: "article"
+ms.topic: best-practice
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"

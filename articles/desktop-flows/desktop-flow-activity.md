@@ -2,8 +2,9 @@
 title: Desktop flow activity 
 description: Learn to use the Desktop flow activity in the Power Automate portal.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 08/29/2023
 ms.author: quseleba
 ms.reviewer: matp
@@ -104,9 +105,7 @@ By selecting **Auto refresh**, all the cards will be refreshed automatically.
 > [!NOTE]
 > Limitations: **Target** for run queue table doesn't display information for standalone machines.
 
-## Monitor desktop flow activity with Power BI desktop (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+## Monitor desktop flow activity with Power BI desktop 
 
 Power Automate enables you to download a Power BI template to monitor desktop flow activity from the Power BI desktop application. [Learn more about Power BI desktop](/power-bi/fundamentals/desktop-what-is-desktop).
 
@@ -127,13 +126,9 @@ Additionally, you can:
 
 To download the template:
 
-1. Navigate to the **Desktop flow activity** page, and select **Open in Power BI (preview)**.
-
-    :::image type="content" source="media/desktop-flow-activity/open-powerbi.png" alt-text="The option to open the graphs in the Power BI desktop application.":::
+1. Navigate to the **Desktop flow activity** page, and select **Open in Power BI**.
 
 1. Select **Get template** on the pop-up window and save the template locally on your machine.
-
-    :::image type="content" source="media/desktop-flow-activity/get-powerbi-template.png" alt-text="The option to download the Power BI template.":::
 
 1. Once the template has been downloaded, open it in the Power BI desktop application.
 

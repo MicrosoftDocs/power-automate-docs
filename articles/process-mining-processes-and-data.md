@@ -6,8 +6,9 @@ contributors:
   - rosikm
   - donums
   - v-aangie 
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/22/2024
 ms.author: michalrosik
 ms.reviewer: angieandrews
@@ -26,7 +27,7 @@ Before you can use the process mining capability in Power Automate effectively, 
 
 Here's a short video on how to upload data for use with the process mining capability:<br>
 </br>
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE5b4UA]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=e51bfefa-2e88-4c2b-a29f-95d7e65c362d]
 
 ## Data requirements
 
@@ -144,4 +145,3 @@ The Dataverse connector isn't supported in Microsoft Power Platform. You need to
 1. Expand the **OData** folder. You should see all the Dataverse tables in that environment. As an example, the **Activities** table is called *activitypointers*.
 
 1. Select the checkbox next to the table you want to import, and then select **Next**.
-

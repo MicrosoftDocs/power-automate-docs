@@ -7,8 +7,9 @@ documentationcenter: na
 author: v-aangie
 editor: ''
 tags: ''
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/16/2022
@@ -25,7 +26,7 @@ Use a *condition* to specify that a cloud flow performs one or more tasks only i
 
 Here's a video tutorial about conditions.
 
->[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWKUx0]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=88a0f2a6-9ce6-4c8a-85dd-f00318da92b5]
 ## Prerequisites
 
 [Create a cloud flow](get-started-logic-template.md) from a template. This tutorial [uses this template](https://make.microsoft.com/galleries/public/templates/e78571e5c70e4806a18eeacba5a897c8/) as the example.

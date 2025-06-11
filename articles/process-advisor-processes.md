@@ -5,8 +5,9 @@ author: donums
 contributors:
   - donums
   - v-aangie 
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
@@ -26,7 +27,7 @@ Before you can use the task mining capability to visualize and analyze your proc
 
 Learn more about processes in the following video.<br>
 </br>
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RWKx7r]
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=190d8810-345c-4728-9253-31ae0b4db505]
 
 ## Create a process
 
@@ -127,7 +128,7 @@ Ensure that any sensitive information is removed from the recording before analy
 
 Here's a short video on how to prepare a recording for analysis.</br>
 </br>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWN6PQ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=b0fbddee-acc5-4236-8087-ce954c2a73e3]
 
 ### Grouping actions into activities
 

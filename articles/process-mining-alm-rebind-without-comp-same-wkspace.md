@@ -8,10 +8,11 @@ contributors:
   - hamenon-ms
   - donums
   - v-aangie  
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 08/12/2024
-ms.author: janpidych
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -20,16 +21,20 @@ search.audienceType:
 
 # Rebind reports without using a composite model (same workspace)
 
-If you linked your process in your Test environment to a workspace (for example, WkSpace A) that's the same as the one used for the process in your Dev environment (for example, WkSpace A), follow the steps in this article.
+If your process in the Test environment is connected to the same workspace (for example, WkSpace A) as the one used in your Dev environment (for example, WkSpace A), follow the steps in this article.
 
 ## Attach a workspace to your process
 
 [!INCLUDE[alm-attach-workspace](./includes/alm-attach-workspace.md)]
 
-4. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
-
+4. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 7.
+1. Select the type of workspace to be used: Power BI workspace or Fabric workspace
+    1. The dialog informs you whether you originally exported the process to Power BI or Fabric workspace.
+    2. Select the same type of workspace.
+    3. Select **Continue**.
 1. Select the *same workspace* for this process by following these steps:
-    1. In the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
+    1. For Power BI workspace—in the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
+    1. For Fabric workspace—in the **Fabric workspace** dropdown menu, select the *same workspace* as the previous workspace, in the **Lakehouse** dropdown menu, select the same Lakehouse.
     1. In the **Report Name** field, enter a *different* report name from your previous report name.
 
         > [!IMPORTANT]

@@ -2,12 +2,12 @@
 title: Making phase for Power Automate projects | Microsoft Docs
 description: This article lists the relevant documentation to help you set up a Power Automate cloud or desktop automation.
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: guidance
 ms.date: 12/10/2020
-ms.author: tayoshi
+ms.author: mapichle
 ms.reviewer: kathyos
 
 ---
@@ -28,7 +28,7 @@ The next step is to set up the automation.
 
 3.  [Add actions](../../multi-step-logic-flow.md) and [conditions](../../add-condition.md).
 
-More information: [Create a cloud flow in Power Automate](../../overview-cloud.md), [Create a flow from a template in Power Automate](../../get-started-logic-template.md)
+More information: [Overview of cloud flows](../../overview-cloud.md), [Create a flow from a template in Power Automate](../../get-started-logic-template.md)
 
 ## Basic steps for desktop flows
 

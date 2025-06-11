@@ -2,12 +2,12 @@
 title: Attended and unattended scenarios for process automation | Microsoft Docs
 description: With any of the automation methods you use, the automation is going to be either attended or unattended. This article explains the scenarios for each type.
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: guidance
-ms.date: 12/10/2020
-ms.author: tayoshi
+ms.date: 01/28/2025
+ms.author: mapichle
 ms.reviewer: kathyos
 
 ---
@@ -46,8 +46,7 @@ The following table summarizes the two types of automation scenarios.
 | Manually triggered               | Automatically triggered                                     |
 | Sign-in isn't required because the automation assumes that the system is already signed in. | Windows Sign-in is automated with predefined user credentials |
 
-You can use a combination of attended and unattended automation in your
-solution.
+You can use a combination of attended and unattended automation in your solution. However, since attended automation requires an active session and unattended automation requires users to be signed out or have a disconnected session, don't mix attended and unattended automation on the same machine or machine group.
 
 In the expense report example, the approval process can be automated with
 unattended automation. The cash reimbursement process might be better suited to attended
@@ -60,6 +59,5 @@ as a final confirmation.
 
 > [!div class="nextstepaction"]
 > [Next step: Separate flows into smaller automated processes](separate-flows.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -5,9 +5,10 @@ author: rosikm
 contributors:
   - rosikm
   - v-aangie
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 07/18/2023
+ms.topic: article
+ms.date: 03/10/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -18,6 +19,8 @@ search.audienceType:
 # List of data types for custom metrics
 
 The following table lists the data types for custom metrics.
+
+[!INCLUDE [papm-operations-note](../includes/papm-operations-note.md)]
 
 | Data type | Description | Allowed value range |
 | - | - | - |

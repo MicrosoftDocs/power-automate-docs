@@ -5,9 +5,10 @@ author: rosikm
 contributors:
   - rosikm
   - v-aangie
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 07/18/2023
+ms.topic: article
+ms.date: 03/10/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -19,6 +20,8 @@ search.audienceType:
 # List of calculation context
 
 In aggregation functions, the calculation context defines the data scope that's used as the source for the aggregation. The Power Automate Process Mining desktop app provides several data calculation modes, which are described in [Requirements for application](requirements-for-application.md).
+
+[!INCLUDE [papm-operations-note](../includes/papm-operations-note.md)]
 
 Custom metrics can include nested aggregations, or aggregations used in an expression. For example, the expression `AVG(DURATION()/AVG(AllInView, DURATION()))` returns the ratio of the average duration of certain activities or edges to the average duration of all activities or edges.
 

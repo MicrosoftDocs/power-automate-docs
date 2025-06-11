@@ -5,8 +5,9 @@ author: donums
 contributors:
   - donums
   - v-aangie 
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
@@ -42,7 +43,7 @@ To begin analyzing your process, start by checking the status of your recordings
 
 Here's a short video on how to view analytics:<br>
 </br>
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWMYVy ]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=cc81da71-f071-4d12-80f4-e806464a4788 ]
 
 ## View your recording status
 

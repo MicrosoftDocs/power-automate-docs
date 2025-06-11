@@ -1,10 +1,10 @@
 ---
-title: FAQ for Copilot in automation center (preview)
-description: This FAQ discusses Copilot in automation center (preview) and the key considerations for making use of this technology responsibly.
-ms.date: 09/10/2024
+title: FAQ for Copilot in automation center 
+description: This FAQ discusses Copilot in automation center and the key considerations for making use of this technology responsibly.
+ms.date: 01/21/2025
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: rpapostolis
 ms.author: appapaio
 ms.reviewer: dmartens
@@ -13,7 +13,7 @@ contributors:
 ms.collection: bap-ai-copilot
 ---
 
-# FAQ for Copilot in automation center (preview)
+# FAQ for Copilot in automation center
 
 Copilot in automation center enables makers, business analysts, and members of the CoE team to easily retrieve information about past flow runs, work queue performance, and general Power Automate product features (referred to as generative answers) by asking questions in natural language. For example, users can ask about the number of flows that ran yesterday, which machine ran the most flows, or how many flows are currently queued. In response, Copilot generates outputs that provide insights and answers to the questions asked.
 
@@ -60,15 +60,14 @@ One of the limitations of Copilot in automation center is that it currently only
 
 ## What are the limitations of Copilot in automation center's generative answers? How can users minimize the impact of Copilot's generative answers's limitations when using the system?
   
-- This feature is currently in preview for environments located in the United States and only supports English.
 - The generative answers capability can only answer to product related features. It can't answer general questions or anything unrelated to the product.
 - There's a limit of 200 characters to describe the question.
 
 ## Related information
 
-- [Use Copilot in automation center (preview)](automation-center-copilot.md)
-- [Use Copilot to analyze desktop flow activity (preview)](./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)
-- [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
+- [Use Copilot in automation center](automation-center-copilot.md)
+- [Use Copilot to analyze desktop flow activity](./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)
+- [Get started with Copilot in cloud flows](get-started-with-copilot.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)

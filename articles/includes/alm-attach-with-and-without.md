@@ -1,7 +1,17 @@
-4. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
+4. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 7.
+
+1. Select the type of workspace to be used - Power BI workspace or Fabric workspace
+    1. The dialog informs you whether you originally exported the process to Power BI or Fabric workspace
+    2. In this step you can decide to change the destination to not match the original setup
+  
+        > [!IMPORTANT]
+        > The semantic model structure is different for Power BI workspace and for Fabric workspace. This might potentially result in problems in your report visualizations, that must be resolved manually.
+
+    3. Select **Continue**
 
 1. Select a new workspace for this process by following these steps:
-    1. In the **Power BI workspace** dropdown menu, select a *different workspace*, which you'll use in the **Test** environment.
+    1. For Power BI workspace - in the **Power BI workspace** dropdown menu, select a *different workspace*, which you'll use in the **Test** environment.
+    1. For Fabric workspace - in the **Fabric workspace** dropdown menu, select a *different workspace*, which you'll use in the **Test** environment, in the **Lakehouse** dropdown menu select the destination Lakehouse.
     1. In the **Report Name** field, enter the *same report name* as your previous report.
 
         > [!IMPORTANT]

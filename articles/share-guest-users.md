@@ -2,9 +2,9 @@
 title: Support for guest users
 description: Learn support scenarios for guest users, including how to create, share, and approve flows.
 author: natalie-pienkowska
-ms.date: 07/09/2023
+ms.date: 03/07/2025
 ms.custom: 
-ms.topic: conceptual
+ms.topic: article
 ms.author: lali
 ms.reviewer: angieandrews
 ---
@@ -42,7 +42,7 @@ If a guest user needs to only run a flow, they need to have the **Sharing-Run On
 
 ### Approvals
 
-A guest user can be assigned an approval, receive an approval email, and be routed to the **Approvals** page in the guest tenant to approve or reject. They can also view and interact with the approval email body in the same way as a nonguest user.
+A guest user can be assigned an approval, receive an approval email, and be routed to the **Approvals** page in the guest tenant to approve or reject.
 
 Guest users can't see the approvals from their guest tenant while they're in their original tenant, or from their original tenant while they're in their guest tenant.  
 

@@ -8,11 +8,11 @@ author: kathyos
 editor: ''
 ms.custom: guidance
 
-ms.topic: article
+ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/01/2021
-ms.author: kathyos
+ms.author: mapichle
 ms.reviewer: angieandrews
 ---
 
@@ -26,7 +26,7 @@ Many of these of organizations use SAP to manage their finance, supply chain, pr
 
 Here's an introductory video for the series of automating SAP GUI-based applications with Power Automate Desktop:
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWJE53]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=a6204d2c-d98b-4e43-915a-4ad14f70cd45]
 
 ## Lifecycle of a typical enterprise RPA bot
 

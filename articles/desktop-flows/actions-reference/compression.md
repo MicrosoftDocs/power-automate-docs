@@ -1,12 +1,12 @@
 ---
 title: Compression actions reference
 description: See all the available compression actions.
-author: mattp123
-
+author: kewaiss
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 11/23/2022
-ms.author: matp
+ms.author: samathur
 ms.reviewer: matp
 contributors:
 - Yiannismavridis

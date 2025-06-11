@@ -1,22 +1,17 @@
 ---
 title: Manage connections in Power Automate
 description: Add or manage connections to SharePoint, SQL Server, OneDrive for Business, Salesforce, Microsoft 365, OneDrive, Dropbox, Twitter, Google Drive, and more.
-services: ''
 suite: flow
-documentationcenter: na
-author: Jopanchal
+author: kewaiss
 contributors:
   - Jopanchal
   - schabungbam
   - v-aangie
-editor: ''
-tags: ''
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: how-to
 ms.date: 02/10/2023
-ms.author: Jopanchal
+ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -29,7 +24,7 @@ Power Automate uses *connections* to make it easy for you to access your data wh
 
 Here's a quick video on managing connections.
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWKZQq]
+> [!VIDEO https://learn-video.azurefd.net/vod/player?id=9d210b7d-5449-4da2-9ee8-62d049617cbd]
 
 You can use connections to perform these tasks:
 
@@ -159,5 +154,9 @@ If you don't know what authentication option was used on the Power Automate Mana
 #### Deprecation of the Power Automate Management connector's legacy default authentication option
 
 The [default](/connectors/flowmanagement/#default-deprecated) authentication option was also deprecated in June 2020, however, it was immediately hidden so that it couldn't be used from that date. All connections with the authentication of [default](/connectors/flowmanagement/#default-deprecated) were created prior to June 2020. Those connections should also be replaced. If you use the [Get Connections as admin](/connectors/powerappsforadmins/#get-connections-as-admin) action, those connections will have id="shared_flowmanagement" and properties.connectionParametersSet.name="".
+
+## Related information
+
+[Training: Streamline SharePoint processes with Power Automate (module)](/training/modules/streamline-processes/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

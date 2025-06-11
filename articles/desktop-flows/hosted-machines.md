@@ -2,9 +2,10 @@
 title: Hosted machines
 description: See how to create and use Power Automate hosted machines.
 author: kenseongtan
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 10/15/2024
+ms.topic: article
+ms.date: 03/10/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -52,8 +53,10 @@ To evaluate hosted machines, you need one of the following trial licensing optio
 
     The Power Automate Hosted Process license has trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home) and assign Power Automate Hosted Process capacity to the targeted environment.
 
-
 - Use the **90-days self-assisted premium trial.**
+
+  > [!NOTE]
+  > This trial licensing option for hosted machines is suspended until further notice.
 
     Trial users are granted the capacity of one hosted machine per tenant. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
 
@@ -112,11 +115,17 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 
 ### Get access to the default VM image
 
-To create hosted machines, you need access to the default image that is part of your environment. You can view the default image in **Monitors** > **Machines** > **VM images**.
+> [!NOTE]
+> - The default VM image provided by Power Automate with Microsoft Edge preinstalled is based on the [Windows 365 Cloud PC image template: Windows 11 Enterprise Cloud PC 24H2](https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows-ent-cpc). If you have specific software, configuration, or security constraints, use the [custom VM image](#use-custom-vm-images-for-your-hosted-machine) capability.
+
+The default VM image is available to all users in the environment. If you can't see the default VM image, your admin disabled sharing of default VM images with users. In this case:
+
+- Users need either the **System Administrator** or **Desktop Flows Machine Configuration Admin** role to see and manage the default image.
+- For other users, the **System Administrator** or **Desktop Flows Machine Configuration Admin** must share the default image with them before they can use it.
+
+View the default image in **Monitors** > **Machines** > **VM images**.
 
 :::image type="content" source="media/hosted-machines/default-vm-image.png" alt-text="Screenshot of the default VM image in the VM images list.":::
-
-Users need either the **System Administrator** or **Desktop Flow Machine Image Admin** role to see and manage the default image. For other users, the **System Administrator** or **Desktop Flow Machine Image Admin** needs to [share the default image](#share-the-default-image) with them before they can use it.
 
 ### Share the default image
 
@@ -214,6 +223,7 @@ You can personalize your hosted machines by providing your own Windows image dir
 - Japan: Japan East
 - Korea: Korea Central
 - Norway: Norway East
+- Singapore: Southeast Asia (Allowlisted tenants only)
 - Switzerland: Switzerland North
 - United Arab Emirates: UAE North
 - United Kingdom: UK South
@@ -226,7 +236,7 @@ Custom VM images must meet the following requirements:
 - Windows 10 Enterprise version 20H2 or later
 - Windows 11 Enterprise 21H2 or later
 - Generation 2 image
-- Generalized VM image
+- Generalized VM image. Learn more in [generalize VM image](/azure/virtual-machines/generalize).
 - Single Session VM images (multi-session isn’t supported)
 - No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition)
 - Default 64-GB OS disk size. The OS disk size is automatically adjusted to 256 GB
@@ -329,6 +339,7 @@ The virtual network needs to be created in the same location as your hosted mach
 - Japan: Japan East
 - Korea: Korea Central
 - Norway: Norway East
+- Singapore: Southeast Asia (Allowlisted tenants only)
 - Switzerland: Switzerland North
 - United Arab Emirates: UAE North
 - United Kingdom: UK South
@@ -357,7 +368,7 @@ Configure your Azure Virtual Network where the hosted machines are provisioned a
 
 1. Make sure your Azure Virtual Network has network connectivity to DNS servers that can resolve your Active Directory domain.
 1. From the Azure Virtual Network's Settings, select DNS Servers and then choose Custom.
-1. Enter the IP address of DNS servers that environment that can resolve your AD DS domain.
+1. Enter the IP address of DNS servers that environment that can resolve your Active Directory Domain Services domain.
 
 ### Share the virtual network with Windows 365 service principal
 
@@ -366,6 +377,9 @@ To use your virtual network for hosted machines, you need to grant Windows 365 s
 - Reader permission on the Azure subscription
 - Windows 365 Network Interface Contributor permission on the specified resource group
 - Windows 365 Network User permission on the virtual network
+
+> [!NOTE]
+> Ensure the resources have the specified role requirements assigned to the Windows 365 service principal, even if other roles with the same or higher permissions are already assigned.
 
 > [!NOTE]
 > For virtual networks created before November 26, 2023, the Network Contributor role is used to apply permissions on both the resource group and virtual network. The new RBAC roles have more specific permissions. To manually remove the existing roles and add the new roles, refer to the following table for the existing roles used on each Azure resource. Before removing the existing roles, make sure that the updated roles are assigned.
@@ -406,6 +420,7 @@ The last step before being able to reference your virtual network from Power Aut
 
     - **Network connection name:** A unique name to identify the network connection.
     - **Description:** An optional description for the network connection.
+    - **Use with:** Select hosted machine.
 
 1. Select one of the **Azure virtual network** available in Azure that meets the network requirements.
 
@@ -569,6 +584,10 @@ The **Desktop Flows Machine Configuration Admin role** role only brings full pri
 
 :::image type="content" source="media/hosted-machines/desktop-flow-machine-configuration-admin-role.png" alt-text="Screenshot of the permissions for the Desktop Flows Machine Configuration Admin role.":::
 
+#### Custom virtual network permissions
+
+The [custom virtual network](#use-a-custom-virtual-network-for-your-hosted-machines) feature requires permissions to the  **Flow Machine Network** table. You can grant or deny privileges to this table to control which user can create and share custom virtual networks.
+
 ## Hosted machines limitations
 
 This section presents the limitations of hosted machines.
@@ -588,6 +607,7 @@ The following list displays all the supported Power Platform geographies in the 
 - Japan 
 - Korea
 - Norway
+- Singapore (Allowlisted tenants only)
 - Switzerland
 - United Arab Emirates
 - United Kingdom

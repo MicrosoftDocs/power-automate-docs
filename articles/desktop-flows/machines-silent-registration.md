@@ -2,9 +2,10 @@
 title: Silent registration for machines
 description: This article describes how to use a mass deployment tool that allows you to easily install Power Automate on multiple machines.
 author: QuentinSele
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 09/07/2023
+ms.topic: article
+ms.date: 06/04/2025
 ms.author: quseleba
 ms.reviewer: quseleba
 contributors:
@@ -151,20 +152,21 @@ You have two options to provide a secure input:
   
    - Redirect file:
   
-     1. Create a TXT file that contains your password and save it in a Power Automate folder (you'll need admin privileges).
+     1. Create a text (.txt) file that contains the password and save it on your machine.
 
      1. Use the following command:
   
-        For cmd prompt:
-  
-        ```CMD
-         grouppassword < pwd.txt
-        ```
-
         For PowerShell:
 
-        ```CMD
-        Get-Content password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
+        ```powershell
+        Get-Content <PathToSavedFile>\password.txt | .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword
         ```
+
+        For CMD Prompt:
+        
+        ```CMD
+        .\PAD.MachineRegistration.Silent.exe -joinmachinegroup -groupid groupid -grouppassword < c:\myfolder\password.txt
+        ```
+        
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,6 +2,7 @@
 title: Change the timeout configuration for the UI/Browser automation
 description: Change the timeout configuration for the UI and Browser automation actions.
 author: NikosMoutzourakis
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 07/09/2024
@@ -73,17 +74,13 @@ Each XML configuration item follows these rules:
     - `AutomationServerEndpoint.ExtractDataFromWeb.CallTimeout`: The timeout period for the `ExtractDataFromWeb` module to send and receive messages through the connection established with the Automation Server. This setting might be useful during the design time when trying to capture the data to be extracted at design time but the elements aren't captured without any specific error.
   - `SAP Bridge`: This is the Power Automate for desktop module where several UI automation modules communicate with SAP bridge to perform various operations related to SAP applications:
     - `Sap.Bridge.Client.OpenTimeout`: The timeout period for a Power Automate for desktop client module (designer, robot, recorder) to open a connection with the SAP bridge. This setting might be useful during runtime or design time, when an error that indicates that a connection couldn't be successfully established at a specific period of time with the SAP bridge is shown. Increasing the default timeout value of this setting might resolve the issue.
-    - `Sap.Bridge.Client.CloseTimeout`: The timeout period for a Power Automate for desktop client module (designer, robot, recorder) to close a connection with the SAP bridge. This setting might be useful during runtime or design time. when an error that indicates that a connection couldn't be successfully closed at a specific period of time with the SAP bridge is shown. Increasing the default timeout value of this setting might resolve the issue.
     - `Sap.Bridge.Client.SendTimeout`: The timeout period for a Power Automate for desktop client module (designer, robot, recorder) to send a message over a connection established with the SAP bridge. This setting might be useful during runtime or design time, when an error that indicates that a message couldn't be sent at a specific period of time to the SAP bridge is shown. Increasing the default timeout value of this setting might resolve the issue.
-    - `Sap.Bridge.Client.ReceiveTimeout`: The timeout period for a Power Automate for desktop client module (designer, robot, recorder) to receive a message over a connection established with the SAP bridge. This setting might be useful during runtime or design time, when an error that indicates that a response couldn't be received at a specific period of time from the SAP bridge is shown. Increasing the default timeout value of this setting might resolve the issue.
   - **`Java Bridge`: This is the Power Automate for desktop module where several UI automation modules communicate with the Java bridge to perform various operations related to Java applications.
     - `Java.Bridge.Client.ConnectTimeout`: The timeout period for a Power Automate for desktop client module (designer, robot, recorder) to connect with the Java bridge. This setting might be useful during runtime or design time when an error that indicates a connection couldn't be successfully established at a specific period of time with the Java bridge is shown. Increasing the default timeout value of this setting might resolve the issue.
     - `Java.Bridge.Client.ReadWriteTimeout`: The timeout period for a Power Automate for desktop client module (designer, robot, recorder) to send or receive messages through a connection established with the Java bridge. This setting might be useful during runtime or design time, when an error that indicates that a message couldn't be sent, or a response couldn't be received at a specific period of time when communicating with the Java bridge is shown. Increasing the default timeout value of this setting might resolve the issue.
   - `Web Extensions Message Proxy`:
     - `WebExtensionsMessageProxy.OpenTimeout`: The timeout period for Power Automate for desktop to open a connection with the browser web extension message host. This setting might be useful during runtime or design time, when an error is shown indicating that a connection couldn't be successfully established at a specific period of time with the browser native message host. Increasing the default timeout value of this setting might resolve the issue.
-    - `Host.WebExtensionsMessageProxy.CloseTimeout`: The timeout period for Power Automate for desktop to close an established connection with the browser web extension message host. This setting might be useful during runtime or design time when an error that indicates that a connection couldn't be successfully closed at a specific period of time with the browser native message host. Increasing the default timeout value of this setting might resolve the issue.
     - `WebExtensionsMessageProxy.SendTimeout`: The timeout period for Power Automate for desktop to send a message through an established connection with the browser web extension message host. This setting might be useful during runtime or design time when an error that indicates that a message couldn't be sent at a specific period of time to browser native message host. Increasing the default timeout value of this setting might resolve the issue.
-    - `WebExtensionsMessageProxy.ReceiveTimeOut`: The timeout period for Power Automate for desktop to send a message through an established connection with the browser web extension message host. This setting might be useful during runtime or design time when an error that indicates that a response could not be received at a specific period of time from the browser native message host is shown.
   - `RDP.Client.ConnectTimeOut`: The timeout period for a Power Automate for desktop client module, running on the host, such as the designer or robot, to establish a connection with the Remote Desktop agent that is running on the remote machine. This setting might be useful in case a Remote Desktop automation is performed and an error that indicates that a connection with the Remote Desktop Agent couldn't be established for a specific period of time. Increasing the default timeout value of this setting might resolve the issue.
   - `RDP.Client.CallTimeOut`: The timeout period for a Power Automate for desktop client module, running on the host, such as the designer or robot, to send or receive messages through a connection with the Remote Desktop agent that is running on the remote machine. This setting might be useful in case a Remote Desktop automation is performed and an error that indicates a connection with the Remote Desktop Agent that a message couldn't be sent or received for a specific period of time. Increasing the default timeout value of this setting might resolve the issue.
   - `Recorder.LaunchBrowserTimeout`: The timeout period for the launch browser option inside the recorder. Increasing this might avoid issues with extension installation popup windows appearing when choosing the option in the recorder.
@@ -128,11 +125,7 @@ Each XML configuration item follows these rules:
 
             <add key="Sap.Bridge.Client.SendTimeout" value="00:10:00"/> 
 
-            <add key="Sap.Bridge.Client.ReceiveTimeout" value="00:10:00"/> 
-
             <add key="Sap.Bridge.Client.OpenTimeout" value="00:01:00"/> 
-
-            <add key="Sap.Bridge.Client.CloseTimeout" value="00:01:00"/> 
 
   
 
@@ -148,11 +141,7 @@ Each XML configuration item follows these rules:
 
             <add key="WebExtensionsMessageProxy.SendTimeout" value="00:01:00"/> 
 
-            <add key="WebExtensionsMessageProxy.ReceiveTimeOut" value="00:01:00"/> 
-
             <add key="WebExtensionsMessageProxy.OpenTimeout" value="00:01:00" /> 
-
-            <add key="WebExtensionsMessageProxy.CloseTimeout" value="00:01:00" /> 
 
   
 

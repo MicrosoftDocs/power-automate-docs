@@ -8,8 +8,9 @@ author: mattp123
 editor: ''
 tags: ''
 
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/20/2024

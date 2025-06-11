@@ -5,10 +5,11 @@ author: rosikm
 contributors:
   - rosikm
   - v-aangie
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 07/18/2023
-ms.author: michalrosik
+ms.topic: article
+ms.date: 03/10/2025
+ms.author: lali
 ms.reviewer: angieandrews
 search.audienceType:
 - flowmaker
@@ -18,6 +19,8 @@ search.audienceType:
 # List of string operations
 
 Following are the string operations that you can use in the Power Automate Process Mining desktop app.
+
+[!INCLUDE [papm-operations-note](../includes/papm-operations-note.md)]
 
 ## CONCAT([string1],...,[stringN])
 

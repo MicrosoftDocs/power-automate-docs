@@ -4,8 +4,9 @@ description: Troubleshoot common issues with Outlook email or mail notifications
 services: ''
 suite: flow
 author: v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: troubleshooting-general
 ms.date: 10/09/2024
 ms.author: angieandrews
 ms.reviewer: angieandrews

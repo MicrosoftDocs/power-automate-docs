@@ -1,13 +1,13 @@
 ---
 title: HTTP actions reference
-description: See all the available HTTP actions.
-author: jpapadimitriou
-
+description: Display the HTTP actions.
+author: kewaiss
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 09/15/2023
-ms.author: dipapa
-ms.reviewer: matp
+ms.date: 01/20/2025
+ms.author: kisubedi
+ms.reviewer: angieandrews
 contributors:
 - jpapadimitriou
 - Yiannismavridis
@@ -46,8 +46,12 @@ If the web server requires authentication, populate your credentials in the appr
 
 A variable named **WebPageText** stores the downloaded text is stored. If you use this action to download files, you can select to save them locally on your desktop.
 
-> [!NOTE]
-> Apart from the HTTP actions, Power Automate enables users to interact with web application through the browser automation actions. To find more information about browser automation actions, go to [Browser automation](webautomation.md).
+Users can download a file from the web using the **Click download link on web page** action in the **Browser automation** group.
+
+> [!IMPORTANT]
+> The **Click download link on web page** action only works in the Internet Explorer web browser, which has reached the end of its product lifecycle. To find more information about the **Click download link on web page** action, go to [Click download link on web page](webautomation.md).
+
+Besides HTTP actions, Power Automate lets users interact with web applications through browser automation actions. Learn more about browser automation actions in [Browser automation](webautomation.md).
 
 ## <a name="downloadfromweb"></a> Download from web
 
@@ -113,17 +117,18 @@ Invokes a method from a SOAP web service.
 |HTTP Authentication|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the web server requires HTTP authentication (that is, the browser displays a popup window asking for a username and password)
 |User name|No|[Text value](../variable-data-types.md#text-value)||The user name for the web server
 |Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the web server
+|Trim whitespaces|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Enable this option to trim the whitespace at the end of the request body of the web service response|
 
 ### <a name="invokesoapserviceaction_builder"></a> Request Builder Parameters
 
 |Argument|Accepts|Description|
 |-----|-----|-----|
-|WSDL|[File](../variable-data-types.md#files-and-folders)|The Web Services Description Language (WSDL) document to build the request with
-|Service|[Text value](../variable-data-types.md#text-value)|The service to invoke
-|Port|[Text value](../variable-data-types.md#text-value)|The port to invoke the service
-|SOAP version|[Text value](../variable-data-types.md#text-value)|The version of the SOAP service
-|Operation|[Text value](../variable-data-types.md#text-value)|The operation to invoke the service
-|Request envelope|[Text value](../variable-data-types.md#text-value)|The envelope to send in the request to invoke the service
+|WSDL|[File](../variable-data-types.md#files-and-folders)|The Web Services Description Language (WSDL) document to build the request with|
+|Service|[Text value](../variable-data-types.md#text-value)|The service to invoke|
+|Port|[Text value](../variable-data-types.md#text-value)|The port to invoke the service|
+|SOAP version|[Text value](../variable-data-types.md#text-value)|The version of the SOAP service|
+|Operation|[Text value](../variable-data-types.md#text-value)|The operation to invoke the service|
+|Request envelope|[Text value](../variable-data-types.md#text-value)|The envelope to send in the request to invoke the service|
 
 ### Variables produced
 
@@ -145,7 +150,7 @@ Invokes a method from a SOAP web service.
 
 ## <a name="invokewebservicebase"></a> Invoke web service
 
-Invokes a web service by sending data and retrieves the response from the web service.
+Invokes a web service by sending data and stores the response text.
 
 ### Input parameters
 
@@ -154,9 +159,12 @@ Invokes a web service by sending data and retrieves the response from the web se
 |URL|No|[Text value](../variable-data-types.md#text-value)||The web service's URL|
 |Method|N/A|GET, POST, CONNECT, HEAD, PUT, DELETE, OPTIONS, TRACE, PATCH|GET|The HTTP method to be used to invoke the web service|
 |Accept|Yes|[Text value](../variable-data-types.md#text-value)|application/xml|The acceptable content type for the response of the web service|
-|Content type|Yes|[Text value](../variable-data-types.md#text-value)|application/xml|The content type of the request that will be sent to the web service|
 |Custom headers|Yes|[Text value](../variable-data-types.md#text-value)||The custom headers to be included in the request that will be sent to the web service|
+|Upload attachments|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the web service will include files to upload|
+|Content type|Yes|[Text value](../variable-data-types.md#text-value)|application/xml|The content type of the request that will be sent to the web service|
 |Request body|Yes|[Text value](../variable-data-types.md#text-value)||The body of the request that will be sent to the web service|
+|Attachments|N/A|Attachments|No attachments selected|Select the attachments that will be added to the web request. You can only choose one of the two attachment types (File or Binary).|
+|Attach|N/A|File, Binary|File|The type of the attachments that will be sent by the web service|
 |Save response|N/A|Get text into variable (for web pages), Save to disk (for files)|Get text into variable (for web pages)|Specify how the returned data will be saved|
 |File name|N/A|Keep original file name (specify only destination folder), Specify full path (destination folder + custom file name)|Keep original file name (specify only destination folder)|Specify whether to keep the original file name of the downloaded file or specify a new name|
 |Destination folder|No|[Folder](../variable-data-types.md#files-and-folders)||The folder where the file returned by the web service will be saved|
@@ -172,6 +180,17 @@ Invokes a web service by sending data and retrieves the response from the web se
 |HTTP Authentication|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the web server requires authentication. This property refers to HTTP authentication (that is, when the browser displays a popup window asking for user name and password)|
 |User name|No|[Text value](../variable-data-types.md#text-value)||The user name for the web server|
 |Password|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The password for the web server|
+|Trim whitespaces|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Enable this to trim the whitespaces at the end of the request body of the web service response|
+
+### <a name="invokewebservicebase_attachments"></a> Attachments Parameters
+
+Configures the attachments to be added to the web service request. The attachments option is only available for POST and PUT requests, and only when the 'Upload attachments' toggle parameter is enabled.
+
+|Argument|Accepts|Description|
+|-----|-----|-----|
+|Name|[Text value](../variable-data-types.md#text-value)|The name of the attachment
+|Attachment|[File](../variable-data-types.md#files-and-folders)|The file to be attached
+|Type|File, Name|The attachment type
 
 ### Variables produced
 
@@ -191,6 +210,7 @@ Invokes a web service by sending data and retrieves the response from the web se
 |Invalid header in custom headers|Indicates that some custom headers were invalid|
 
 ### Known issues
+
 - NTLM Authentication is currently not supported for web requests in Power Automate for desktop.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

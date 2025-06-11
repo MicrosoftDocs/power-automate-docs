@@ -1,14 +1,15 @@
 ---
-title: Get started with Power Automate
+title: Explore the Power Automate home page
 description: Learn how to navigate the Power Automate home page.
 author: kisubedi
 contributors:
   - kisubedi
   - jamiemwork
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 11/06/2024
+ms.topic: get-started
+ms.date: 04/01/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -19,17 +20,15 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Get started with Power Automate
+# Explore the Power Automate home page
 
-Power Automate allows you to optimize your business processes across your organization and automate repetitive tasks. This service helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more. It does this with the help of with task mining and process mining.
-
-## Get started from the home page
+Power Automate allows you to optimize your business processes across your organization and automate repetitive tasks. This service helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data, and more.
 
 The Power Automate home page offers you various options for creating your own flows and learning about the key features for Power Automate. You can get a quick sense of what's possible and how Power Automate can help your business.
 
-If your organization has AI enabled, then it also includes the new Copilot features.
+If your organization has AI enabled, then it also includes Copilot features.
 
-To learn more, select the following links.
+To learn more, select the links following the screenshot.
 
 :::image type="content" source="media/getting-started/home-full-numbers.png" alt-text="Screenshot of the new look of the home screen.":::
 
@@ -136,7 +135,7 @@ Environments where you have either system administrator and/or system customizer
 > - To view the environment list in the environment switcher in Power Automate, you must have the Environment Maker, System Customizer, or System Administrator security role in the environment. For information about predefined security roles, see [Predefined security roles](/power-platform/admin/database-security#predefined-security-roles) in the Microsoft Power Platform admin guide.
 > - Make sure that you're in the correct environment *before* you create a flow, an app, or a similar component. You can't easily move components from one environment to another.
 > - Every member in an organization can access the [default environment](/power-platform/admin/environments-overview#the-default-environment). Like any environment, users can see flows where they have sufficient privileges to access a flow.
-> - When you create a flow in one environment, you won't be able to see it from another environment. 
+> - When you create a flow in one environment, you aren't able to see it from another environment.
 
 Learn more in [Environments overview](/power-platform/admin/environments-overview).
 
@@ -146,9 +145,9 @@ Learn more in [Environments overview](/power-platform/admin/environments-overvi
 
 Power Automate and Power Apps both show environments with administrator access and environment maker access.
 
-Power Apps shows environments with app contributor access, when users without a maker-level security role assigned but with edit permission to at least one canvas app in the environment.Learn more in [Choose an environment in Power Apps](/power-apps/maker/canvas-apps/sign-in-to-power-apps#choose-an-environment).
+Power Apps shows environments with app contributor access, when users without a maker-level security role assigned but with edit permission to at least one canvas app in the environment. Learn more in [Choose an environment in Power Apps](/power-apps/maker/canvas-apps/sign-in-to-power-apps#choose-an-environment).
 
-Power Automate shows environments user can approve approvals. Users are granted read access to environments thats have approvals.
+Power Automate shows environments user can approve approvals. Users are granted read access to environments that have approvals.
 
 Since approvals are frequently used in Power Automate, users could have read access to many environments.
 
@@ -217,6 +216,7 @@ Get contextual help while building your flow using the Power Platform virtual ag
 
 ## Related information
 
+- [Get started with Power Automate: tutorial](get-started-tutorial.md)
 - [Training: Get started with Power Automate (module)](/training/modules/get-started-flows/)
 - [Training: Automate a business process using Power Automate (learning path)](/training/paths/automate-process-power-automate/)
 
