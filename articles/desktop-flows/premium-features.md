@@ -1,17 +1,19 @@
 ---
 title: Premium RPA features
 description: Premium robotic process automation (RPA) features
-author: jpapadimitriou
+author: kewaiss
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 02/20/2025
-ms.author: dipapa
+ms.topic: article
+ms.date: 04/22/2025
+ms.author: mustlaz
 ms.reviewer: angieandrews
 contributors:
 - jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskourass
+- cvassallo
 search.audienceType: 
   - flowmaker
   - enduser
@@ -19,7 +21,7 @@ search.audienceType:
 
 # Premium RPA features
 
-This article lists the premium robotic process automation (RPA) features and benefits that are included in the Power Automate Premium plan (previously Power Automate per user with attended RPA) and are available to [organization premium accounts](getting-started-org.md).
+This article lists the premium robotic process automation (RPA) features and benefits that are included in the [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) user license and are available to [organization premium accounts](getting-started-org.md).
 
 ## Premium feature list
 
@@ -32,7 +34,7 @@ This article lists the premium robotic process automation (RPA) features and ben
 |Access to premium and custom connectors|Access all premium cloud connectors and create custom connectors.|[Learn about premium connectors](/connectors/connector-reference/connector-reference-premium-connectors)<br>[Learn about custom connectors](/connectors/custom-connectors)|
 |AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder.|[Learn about AI Builder](/ai-builder)|
 |Access to process mining |Visualize and analyze your business processes with process mining.|[Learn about process mining](/power-automate/process-advisor-overview)|
-|Access to cloud connectors from desktop flows|Use cloud connectors directly in desktop flows.|[Learn how to invoke the SharePoint cloud connector from desktop flows](actions-reference/sharepoint.md)|
+|Access to cloud connectors from desktop flows|Use cloud connectors directly in desktop flows.|[Learn how to use cloud connectors in desktop flows](actions-reference/cloudconnectors.md)|
 |Custom actions|Ability to use custom developed automation actions in desktop flows|[Learn how to create and use custom actions in desktop flows](custom-actions.md)|
 |UI elements collections |Ability to create, share, and use groups of predefined UI elements in multiple desktop flows|[Learn how to create and use UI elements collections in desktop flows](ui-elements-collections.md)|
 |Sharing and collaboration|Share flows between team members and select access levels such as co-owner or user. View and manage the flows shared with you.|[Learn how to share desktop flows](manage.md#share-desktop-flows)|
@@ -44,23 +46,26 @@ This article lists the premium robotic process automation (RPA) features and ben
 |Desktop flow analytics|Access analytics for desktop flows in the Microsoft Power Platform admin center.|[Learn about analytics](/power-platform/admin/analytics-ui-flow)|
 |Customer support|Receive prompt technical assistance from a Microsoft support professional.|[Power Automate support](https://make.powerautomate.com/support/)|
 |Work queues|Use work queues to store, prioritize, distribute, and process work items.| [Learn more about work queues](work-queues.md)|
+|Credentials|Retrieve and use credentials in desktop flows| [Learn more about credentials](create-AzureKeyVault-credential.md)|
 
 > [!IMPORTANT]
 >
 > - Unattended desktop flow executions require the Power Automate Process plan (previously named Power Automate per flow).
 > - AI Builder is licensed as an add-on for existing subscription plans. A certain number of AI Builder credits are included in the Power Automate Premium plan (previously Power Automate per user with attended RPA).
 
-## Plans that provide entitlements for the premium RPA features
+## Licenses that provide entitlements for the premium RPA features
 
-### Trial plan
+Compare license entitlements in [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-process%2Cconnector-types).
 
-The Power Automate for desktop free trial plan is available for 90 days. Free users in an organization can sign up for this trial through the **Start trial** option found within the **Go premium** section of Power Automate for desktop or the **desktop flows** sections of the Power Automate portal. Free users are also prompted to start a trial while they attempt to add the **Run a flow built with Power Automate for desktop** action in a cloud flow.
+### Trial license
 
-### Standalone plan
+The [Power Automate Trial](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-trial-license) user license lasts for 90 days. Free users in an organization can sign up for this trial through the **Start trial** option in the **Go premium** section of Power Automate for desktop or the **desktop flows** section of the Power Automate portal. Free users are prompted to start a trial when they try to add the **Run a flow built with Power Automate for desktop** action in a cloud flow.
 
-The Power Automate Premium plan (paid or trial, previously Power Automate per user with attended RPA) gives full access to all RPA premium features and benefits. Both Power Platform admins and individual users and makers can purchase licenses for Power Automate. You can find more information about purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
+### Power Automate Premium license
 
-### Pay-as-you-go plan
+The [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) license lets you access all RPA premium features, except unattended RPA and hosted RPA. Both Power Platform admins, individual users, and makers can buy licenses for Power Automate. Learn more about purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
+
+### Pay-as-you-go
 
 Pay-as-you-go is a new way to pay for Power Automate using an Azure subscription. This allows you to get started building and sharing flows without any license commitment or upfront purchasing. Desktop flow users in a pay-as-you-go-enabled environment have access to most of the premium features listed above in the scope of that specific environment. You can find more information regarding the pay-as-you-go plan in [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview).
 

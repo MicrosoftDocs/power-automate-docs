@@ -8,8 +8,9 @@ author: v-aangie
 contributors:
   - kewaiss
   - v-aangie
+ms.service: power-automate
 ms.subservice: teams
-ms.topic: conceptual
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/30/2020

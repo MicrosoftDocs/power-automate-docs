@@ -1,23 +1,28 @@
 ---
 title: Troubleshoot a cloud flow
 description: Learn how to resolve some of the most common reasons why flows fail.
-services: ''
 suite: flow
 author: DBEKI
+contributors:
+  - HeaterOrt
+  - DBEKI
+  - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 10/09/2024
-ms.author: dbekirop
+ms.topic: troubleshooting-general
+ms.date: 04/16/2025
+ms.author: heortaol
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
-ms.collection: bap-ai-copilot 
+ms.collection: bap-ai-copilot
+ms.custom: DevRelAdv
 ---
 
 # Troubleshoot a cloud flow
 
-This article contains tips and tricks for troubleshooting cloud flows.
+This article contains tips and tricks for troubleshooting cloud flows. With the new designer, you can easily find and fix errors using Copilot. Check out the video in this article in the [Troubleshoot in Copilot](#troubleshoot-in-copilot) section.
 
 ## Identify specific flow runs
 
@@ -90,12 +95,17 @@ In many cases, flows fail because of an authentication error. If you have this t
 
 ## Troubleshoot in Copilot
 
-The new troubleshoot in Copilot feature in Power Automate can assist you in identifying and resolving errors that might occur during the testing of cloud flows or when reviewing flow run history. You can use this Copilot feature when the new designer experience is enabled.
+The troubleshoot in Copilot feature in Power Automate can assist you in identifying and resolving errors that might occur during the testing of cloud flows or when reviewing flow run history. You can use this Copilot feature when the new designer experience is enabled.
 
-Troubleshooting in Copilot provides a human-readable summary of the error and, when possible, attempts to provide a solution to correct the error. This can greatly enhance your experience by reducing the time and effort required to troubleshoot and resolve issues.
+Learn how to troubleshoot cloud flow errors with Copilot in this quick video:</br>
+</br>
+
+> [!VIDEO 040bad79-4775-4fd7-90d9-bc13368d0473]
+
+The troubleshoot in Copilot feature provides a human-readable summary of the error and, when possible, attempts to provide a solution to correct the error. This can greatly enhance your experience by reducing the time and effort required to troubleshoot and resolve issues.
 
 > [!NOTE]
-> The troubleshooting in Copilot feature might not work in all scenarios. The good news is, it’s continuously learning and improving over time, which means its ability to assist users and resolve issues only gets better. This is a great example of how AI and machine learning can be leveraged to improve your experience and productivity.
+> The troubleshoot in Copilot feature might not work in all scenarios. It’s continuously learning and improving over time, which means its ability to assist users and resolve issues only gets better. This is a great example of how AI and machine learning can be leveraged to improve your experience and productivity.
 
 :::image type="content" source="./media/fix-flow-failures/troubleshoot-copilot.png" alt-text="Screenshot of a troubleshooting in Copilot suggestion for fixing a failed flow run.":::
 
@@ -112,30 +122,6 @@ The error details should specify how to correct the failure. To update the confi
 ## Other failures
 
 If the error code **500** or **502** appears, the failure is temporary or transient. To try the flow again, select **Resubmit**.
-
-## Get help from support or the community
-
-When you need help, you can use our **Self Help** options, or you can **Ask for help** from others.
-
-### Self help
-
-The Power Automate Support site offers you several self help options.
-
-1. Go to [Power Automate Support](https://make.powerautomate.com/support/).
-1. In the **Self Help** category, select **Learn**, **Samples**, or **Documentation**.
-
-### Ask for help from others
-
-1. Go to [Power Automate Support](https://make.powerautomate.com/support/).
-1. In the **Ask for help** section, select **Contact support**.
-1. Type or select the environment to help identify the issue.
-1. To search recommended solutions, complete the **Tell us what you need help with** field, and then select the right arrow next to the field.
-1. If you found your solution, select **Yes** in the **Were these solutions helpful** field.
-1. If you don't find a solution, select **Ask virtual agent**.
-1. In the **Virtual Agent** screen, type your message, and then select **Send**.
-1. If you need more help from others, return to the [Power Automate Support](https://make.powerautomate.com/support/), and select [Community](https://go.microsoft.com/fwlink/?LinkID=787467).
-
-    On the **Microsoft Power Automate Community** page, you can customize your search and get answers and tips directly from other Power Automate users.
 
 ## Related information
 

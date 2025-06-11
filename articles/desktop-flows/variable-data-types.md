@@ -1,11 +1,12 @@
 ---
 title: Variable data types
-description: See all the available variable data types in desktop flows.
+description: Display the variable data types in desktop flows.
 author: jpapadimitriou
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/29/2024
-ms.author: dipapa
+ms.author: chrisj
 ms.reviewer: matp
 contributors:
 - Yiannismavridis

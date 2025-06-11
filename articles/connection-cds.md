@@ -10,8 +10,9 @@ contributors:
   - Radioblazer
   - ChrisGarty
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/24/2024
 ms.author: matow
 ms.reviewer: angieandrews

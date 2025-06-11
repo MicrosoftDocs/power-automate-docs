@@ -3,6 +3,7 @@ title: Convert Base64 text to hexadecimal format
 description: Convert Base64 text to hexadecimal format
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 07/13/2021

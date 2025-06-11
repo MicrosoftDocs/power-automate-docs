@@ -2,8 +2,9 @@
 title: Repair a selector
 description: Repair a selector
 author: nikosmoutzourakis
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 05/05/2023
 ms.author: nimoutzo
 ms.reviewer: ndoelman, matp, angieandrews

@@ -3,8 +3,9 @@ title: Get started with Power Automate approvals
 description: Learn about the permissions and general details about Power Automate approvals.
 suite: flow
 author: donums
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: get-started
 ms.date: 10/21/2024
 ms.author: derahonuorah
 ms.reviewer: angieandrews

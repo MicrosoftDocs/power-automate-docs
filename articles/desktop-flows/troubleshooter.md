@@ -2,8 +2,9 @@
 title: Troubleshooter
 description: Troubleshooter application for Power Automate for desktop.
 author: YiannisMavridis
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: troubleshooting
+ms.topic: troubleshooting-general
 ms.date: 02/19/2025
 ms.author: iomavrid
 ms.reviewer: matp

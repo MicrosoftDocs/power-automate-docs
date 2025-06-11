@@ -2,8 +2,9 @@
 title: Manage machines
 description: Manage machines
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/14/2025
 ms.author: kenseongtan
 ms.reviewer: matp
@@ -60,7 +61,7 @@ Your machine is automatically registered on the currently selected environment i
 
 > [!NOTE]
 >
-> - To successfully register a machine, ensure the services specified in [Desktop flow services required for runtime](../ip-address-configuration.md#services-required-for-desktop-flows-runtime) are accessible.
+> - To successfully register a machine, ensure the services specified in [Desktop flow services required for runtime](../ip-address-configuration.md#allow-machines--users-on-your-network-to-access-power-automate-desktop-services) are accessible.
 > - You need an **Environment Maker** or **Desktop Flow Machine Owner** role to register machines. Before registering a machine, ensure you have the required permissions and an available environment to register the new machine.
 > - In the case of a virtual machine, don't clone the virtual machine after installing Power Automate machine runtime.
 > - Machines aren't affected by changes in the Power Automate for desktop organization.

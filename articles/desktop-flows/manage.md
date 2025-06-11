@@ -2,12 +2,13 @@
 title: Manage desktop flows
 description: Learn how to manage desktop flows in the Power Automate portal.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 08/29/2024
+ms.topic: how-to
+ms.date: 05/22/2025
 ms.author: appapaio
 ms.reviewer: matp
-contributor:
+contributor: yiannismavridis
 search.audienceType: 
   - flowmaker
   - enduser
@@ -46,6 +47,14 @@ Follow these steps to see the details for a desktop flow:
 1. Select any of your desktop flows.
 
 :::image type="content" source="media/manage-desktop-flows/view-details.png" alt-text="Screenshot of the details of a desktop flow.":::
+
+### Change the screen resolution settings of a desktop flow for unattended runs
+
+To set the screen resolution for unattended runs, open the desktop flow’s details and select **Edit**. In the Flow properties panel, turn on the **Display resolution for unattended runs** setting. Choose a resolution from the drop-down list or enter a specific resolution manually.
+
+> [!IMPORTANT]
+> - If the **Display resolution for unattended runs** setting is on and the desktop flow calls other desktop flows, all flows run using the resolution set in the parent flow. Make sure this resolution works for all flows to avoid issues.
+> - If you're using the [Reuse Windows session for unattended runs](run-unattended-desktop-flows.md#reuse-a-windows-session-in-unattended-mode) feature, the selected resolution applies to the reused session too.
 
 ## Generate flow description using Copilot (preview)
 
@@ -110,19 +119,19 @@ Follow these steps to share a desktop flow:
    > [!NOTE]
    >
    > You can also enter a Microsoft Dataverse team name instead of the name of the person. If you want to share with a Microsoft Entra group, you first need to create a Microsoft Entra Group team in Dataverse based on the Microsoft Entra Group. More information: [Microsoft Dataverse teams management](/power-platform/admin/manage-teams)
-   
-5. Select the user and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
+
+1. Select the user and then select either **User** or **Co-owner** as the permission for the person with whom you share the flow.
 
     - **Co-owner**: This access level gives the co-owner full permissions to the desktop flow. They can edit, share, and delete the desktop flow.
     - **User**: This access level gives permission to only use that desktop flow in a cloud flow and run it locally with Power Automate for desktop. No edit, rename, delete, or share permissions are possible with this access. Alternatively, those users can create a copy of the desktop flow using the **Save as** option, and work independently.
 
-6. Select **Save**.
+1. Select **Save**.
 
    :::image type="content" source="media/manage-desktop-flows/sharing-ux.png" alt-text="Screenshot of the Share button.":::
 
 > [!NOTE]
 >
-> Once a desktop flow has been shared, owners and co-owners can change the access of each user by selecting **Manage access** on the desktop flow details page.
+> Once a desktop flow is shared, owners and co-owners can change the access of each user by selecting **Manage access** on the desktop flow details page.
 > If someone shares a desktop flow with you, select the refresh button to see it in the **Shared with me** flows list.
 > After you share a desktop flow with new co-owners, the co-owners see all the desktop runs that happen in the future. However those co-owners don't see the desktop flows already completed before sharing.
 
@@ -173,9 +182,11 @@ In this page, you can:
 
 > [!NOTE]
 >
-> - Users of an environment with a Dataverse security role that grants them **Read** access to **all records** in the **Process** table (where different types of flows are stored), will be listed as **Co-owners** of **any desktop flows** created in that environment. They can't be removed as co-owners unless you change privileges and access level in the underlying security role.
-> - The **System Customizer** role is an example of a security role with environment-wide **Read** privileges for desktop flows. This role has **Read** permission set to **Organization** on the **Process** table, allowing users with this role to view all desktop flows in the environment and be marked as co-owners. It is highly recommended to review each security role before assigning it to users to ensure that the privilege set and access level are appropriate for the intended use case.
-> - Starting from version 2.46 of Power Automate for desktop, if a message appears indicating that the user does not have sufficient permissions in an environment using schema V2, **Read** access must be provided to their respective security role on the **Solution** entity in Dataverse.
+> - Users of an environment with a Dataverse security role that grants them **Read** access to **all records** in the **Process** table (where different types of flows are stored), are listed as **Co-owners** of **any desktop flows** created in that environment. They can't be removed as co-owners unless you change privileges and access level in the underlying security role.
+> - The **System Customizer** role is an example of a security role with environment-wide **Read** privileges for desktop flows. This role has **Read** permission set to **Organization** on the **Process** table, allowing users with this role to view all desktop flows in the environment and be marked as co-owners. It's highly recommended to review each security role before assigning it to users to ensure that the privilege set and access level are appropriate for the intended use case.
+> - Starting with version 2.46 of Power Automate for desktop, if a message indicates that the user doesn't have sufficient permissions in an environment using schema V2, **Read** access is required for their respective security role on the **Solution** table in Dataverse.
+> - If a message appears indicating that the user doesn't have sufficient permissions in an environment, **Read** access must be provided to their respective security role on the **Team** table in Dataverse.
+> - Starting from version 2.55 of Power Automate for desktop, if a message appears in the console, indicating that the user doesn't have sufficient permissions to view or create flows in an environment, **Read** access must be provided to their respective security role on the **Tag** and **Tagged Process** tables in Dataverse.
 > - When a user isn't part of an environment anymore, you can continue to see it as a deactivated user. You're notified in the **Manage access** section of the desktop flow if this flow is shared with deactivated users. In this situation, remove access to them.
 
 ## Learn more

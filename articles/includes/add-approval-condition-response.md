@@ -5,7 +5,7 @@
    
 1. Select **Responses Approver response** from the list of dynamic values.
   
-    ![select response token.](media/modern-approvals/search-for-response.png)
+    ![select response dynamic value.](media/modern-approvals/search-for-response.png)
 1. Select the **Choose a value** box on the right, and then enter **Approve** into the box.
 
    > [!NOTE]

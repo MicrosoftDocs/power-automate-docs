@@ -3,6 +3,7 @@ title: Automate browser prompts
 description: Automate browser prompts
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 09/06/2021

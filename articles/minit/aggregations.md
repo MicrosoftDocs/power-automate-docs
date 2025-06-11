@@ -6,9 +6,10 @@ contributors:
   - janPidych
   - rosikm
   - v-aangie
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 04/22/2024
+ms.topic: article
+ms.date: 03/10/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -20,6 +21,8 @@ search.audienceType:
 # List of aggregations
 
 This article describes the aggregations you can use in custom metrics.
+
+[!INCLUDE [papm-operations-note](../includes/papm-operations-note.md)]
 
 ## AVG([context],[value])
 

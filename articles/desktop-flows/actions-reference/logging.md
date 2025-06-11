@@ -3,6 +3,7 @@ title: Logging actions reference
 description: See all the available logging actions.
 author: PetrosFeleskouras
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 07/24/2023

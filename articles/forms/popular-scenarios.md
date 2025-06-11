@@ -3,8 +3,8 @@ title: Common ways to use a form in a flow
 description: Learn some of the most popular ways to use a form in an automated flow.
 suite: flow
 author: kisubedi
-ms.topic: conceptual
-ms.date: 09/04/2024
+ms.topic: article
+ms.date: 04/01/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
@@ -29,6 +29,22 @@ You can turn on email notifications for the form's owners in your form settings.
 
 [!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
 
+# [New designer](#tab/new-designer)
+
+1. Ask Copilot to create your flow by typing the following prompt:
+
+    **when a new MS Forms response is submitted, send an email**
+
+      Power Automate returns a suggested flow that corresponds to what you've entered.
+
+    :::image type="content" source="../media/forms/copilot-ms-forms.png" alt-text="Screenshot of a prompt to send an email in Copilot.":::
+
+1. Select **Next**.
+1. Review the connections and select **Create flow** to land on the designer.
+1. On the designer, provide the missing fields in the *Send an email** action if Copilot didn't automatically populate it for you.
+
+    :::image type="content" source="../media/forms/copilot-missing-fields.png" alt-text="Screenshot of populating fields to send an email action in Copilot.":::
+
 # [Classic designer](#tab/classic-designer)
 
 We start with a prebuilt template and customize it to help our managers plan for employees' summer vacations.
@@ -50,35 +66,13 @@ We start with a prebuilt template and customize it to help our managers plan for
 1. Select the flow name at the top of the Power Automate canvas and change it as you like.
 1. Save and test your flow.
 
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-1. Ask Copilot to create your flow by typing the following prompt:
-
-    **when a new MS Forms response is submitted, send an email**
-
-      Power Automate returns a suggested flow that corresponds to what you've entered.
-
-    :::image type="content" source="../media/forms/copilot-ms-forms.png" alt-text="Screenshot of a prompt to send an email in Copilot.":::
-
-1. Select **Next**.
-1. Review the connections and select **Create flow** to land on the designer.
-1. On the designer, provide the missing fields in the *Send an email** action if Copilot didn't automatically populate it for you.
-
-    :::image type="content" source="../media/forms/copilot-missing-fields.png" alt-text="Screenshot of populating fields to send an email action in Copilot.":::
-
 ---
 
 ## Send an email to the form responder
 
 You can turn on email receipts for respondents in your form settings. If you want to customize the email they receive, use Power Automate.
 
-# [Classic designer](#tab/classic-designer)
-
-Follow the steps to [send an email when there's a new form response](#send-an-email-when-theres-a-new-form-response), but send the email to the responder.
-
-:::image type="content" source="../media/forms/responder-email-flow.png" alt-text="Screenshot of an Outlook send email action in a flow under construction, with the responder's email address highlighted.":::
-
-# [Edit with Copilot](#tab/edit-with-copilot)
+# [New designer](#tab/new-designer)
 
 1. Ask Copilot to create your flow by typing the following prompt:
 
@@ -94,11 +88,39 @@ Follow the steps to [send an email when there's a new form response](#send-an-em
 
 1. Save the flow.
 
+# [Classic designer](#tab/classic-designer)
+
+Follow the steps to [send an email when there's a new form response](#send-an-email-when-theres-a-new-form-response), but send the email to the responder.
+
+:::image type="content" source="../media/forms/responder-email-flow.png" alt-text="Screenshot of an Outlook send email action in a flow under construction, with the responder's email address highlighted.":::
+
 ---
 
 ## Send an approval request with the form details
 
 In this example, we'll start with another prebuilt template and customize it to create a vacation approval request.
+
+# [New designer](#tab/new-designer)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+1. Search for **Microsoft Forms** in the [Power Automate template gallery](https://make.powerautomate.com/templates/) and select the template named **Send form responses for approval**.
+1. Sign in to or create the connectors, as needed, and select **Continue**.
+1. Ask Copilot to create your flow by typing the following prompt:
+
+    **when a new response is submitted, start an approval with megan@contoso.com and if it succeeds, send email to the responder**
+
+    Power Automate returns a suggested flow that corresponds to what you've entered.
+
+    :::image type="content" source="../media/forms/copilot-approval.png" alt-text="Screenshot of a flow to start an approval request with Copilot.":::
+
+1. Select **Next**.
+1. Review the connections and select **Create flow** to land on the designer.
+1. On the designer, provide the forms ID, approver's email, and configure the email action.
+
+    :::image type="content" source="../media/forms/copilot-approval-parameters.png" alt-text="Screenshot of configuring the email action with Copilot.":::
+
+1. Save your flow.
 
 # [Classic designer](#tab/classic-designer)
 
@@ -135,33 +157,27 @@ In this example, we'll start with another prebuilt template and customize it to 
 
 For more examples of approval flows, go to [Manage sequential approvals](../sequential-modern-approvals.md).
 
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
-
-1. Search for **Microsoft Forms** in the [Power Automate template gallery](https://make.powerautomate.com/templates/) and select the template named **Send form responses for approval**.
-1. Sign in to or create the connectors, as needed, and select **Continue**.
-1. Ask Copilot to create your flow by typing the following prompt:
-
-    **when a new response is submitted, start an approval with megan@contoso.com and if it succeeds, send email to the responder**
-
-    Power Automate returns a suggested flow that corresponds to what you've entered.
-
-    :::image type="content" source="../media/forms/copilot-approval.png" alt-text="Screenshot of a flow to start an approval request with Copilot.":::
-
-1. Select **Next**.
-1. Review the connections and select **Create flow** to land on the designer.
-1. On the designer, provide the forms ID, approver's email, and configure the email action.
-
-    :::image type="content" source="../media/forms/copilot-approval-parameters.png" alt-text="Screenshot of configuring the email action with Copilot.":::
-
-1. Save your flow.
-
 ---
 
 ## Add form responses to an Excel worksheet
 
 In this example, you create a flow from blank. Continuing with the scenario from our earlier examples, we'll use the flow to record employees' names and vacation dates in an Excel table when they submit their summer vacation form.
+
+# [New designer](#tab/new-designer)
+
+1. Create an Excel sheet if it doesn't already exist.
+1. From within the designer, simply ask copilot to create your flow by typing the the following prompt:
+
+    **If approved, add the forms response to excel sheet**
+
+    Power Automate returns a suggested flow that corresponds to what you've entered.
+
+    :::image type="content" source="../media/forms/copilot-pane-approval.png" alt-text="Screenshot of a prompt to create an approval request in Copilot.":::
+
+1. Choose the Excel sheet of your choice.
+1. In the respective column fields, choose the response token from MS forms trigger.
+
+    For example, choose the **vacation start** token in the **Vacation start** field of the Excel action.
 
 # [Classic designer](#tab/classic-designer)
 
@@ -195,22 +211,6 @@ In this example, you create a flow from blank. Continuing with the scenario from
     :::image type="content" source="../media/forms/excel-flow-table-after.png" alt-text="Screenshot of an Excel table with Name, Vacation Start, and Return columns filled with form data.":::
 
 You can use a template to [add an approval step before a form response is added to the Excel table](https://make.powerautomate.com/galleries/public/templates/66f56b919fd64aeabec37245ed927c47/approve-a-microsoft-forms-response-to-add-a-row-to-an-excel-spreadsheet/).
-
-# [Edit with Copilot](#tab/edit-with-copilot)
-
-1. Create an Excel sheet if it doesn't already exist.
-1. From within the designer, simply ask copilot to create your flow by typing the the following prompt:
-
-    **If approved, add the forms response to excel sheet**
-
-    Power Automate returns a suggested flow that corresponds to what you've entered.
-
-    :::image type="content" source="../media/forms/copilot-pane-approval.png" alt-text="Screenshot of a prompt to create an approval request in Copilot.":::
-
-1. Choose the Excel sheet of your choice.
-1. In the respective column fields, choose the response token from MS forms trigger.
-
-    For example, choose the **vacation start** token in the **Vacation start** field of the Excel action.
 
 ---
 

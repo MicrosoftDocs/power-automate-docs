@@ -2,9 +2,10 @@
 title: Database actions reference
 description: See all the available database actions.
 author: cochamos
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 08/29/2024
+ms.date: 02/21/2025
 ms.author: cochamos
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
@@ -35,7 +36,7 @@ Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\myFolder\myAccessFile.accdb; Pe
 ```
 
 > [!NOTE]
-> Power Automate for desktop is a 64-bit application, only 64-bit installed drivers are available for selection in the **Open SQL connection** action.
+> Power Automate for desktop is a 64-bit application. Only 64-bit installed drivers are available for selection in the **Open SQL connection** action.
 
 ## Configure a connection string manually
 

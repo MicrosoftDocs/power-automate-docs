@@ -1,7 +1,7 @@
 ---
 title: Trigger work queues processing
 description: Work queue triggering options.
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/28/2023
 ms.author: appapaio
 ms.reviewer: 

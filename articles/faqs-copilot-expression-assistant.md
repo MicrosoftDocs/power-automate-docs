@@ -4,7 +4,7 @@ description: This FAQ provides information about the AI technology used in Power
 ms.date: 12/12/2024
 ms.custom:
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: ksubedi
 ms.author: kisubedi
 ms.reviewer: angieandrews
@@ -40,10 +40,10 @@ It needs a descriptive name when you want to reference dynamic content in the ex
 
 - Ensure that your prompt is clear and descriptive.
 - Ensure that your prompt isn't too long.
-- Always review and test before applying copilot generated expression to your flow and running in production. 
+- Always review and test before applying copilot generated expression to your flow and running in production.
 
 ## Related information
 
-[Create, update, and fix your expressions with Copilot expression assistant (preview)](flows-designer.md#create-update-and-fix-your-expressions-with-copilot-expression-assistant-preview)
+[Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md)
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]

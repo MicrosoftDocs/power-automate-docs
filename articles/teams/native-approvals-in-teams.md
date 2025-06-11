@@ -8,6 +8,7 @@ author: v-aangie
 contributors:
   - kewaiss
   - v-aangie
+ms.service: power-automate
 ms.subservice: teams
 ms.topic: article
 ms.tgt_pltfrm: na

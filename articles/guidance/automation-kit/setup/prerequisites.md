@@ -8,11 +8,11 @@ contributors:
   - Grant-Archibald-MS
   - v-aangie
 ms.custom: guidance
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/21/2023
-ms.author: grarchib
+ms.author: macarrer
 ms.reviewer: angieandrews
 ---
 
