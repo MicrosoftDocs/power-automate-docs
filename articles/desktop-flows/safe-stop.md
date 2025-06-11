@@ -19,8 +19,7 @@ search.audienceType:
 The Safe stop feature in Power Automate for Desktop enables users to halt the execution of a desktop flow in a controlled and secure manner. Unlike abrupt terminations, Safe stop ensures that the flow completes its current action and executes a predefined set of cleanup steps before stopping. This helps maintain data 
 integrity and avoids leaving systems in an inconsistent state.
 
-
-# How It Works
+## How It Works
 To use Safe Stop, two components must be configured:
 - Triggering Safe Stop:
   - Safe Stop can be initiated in two ways:
@@ -34,11 +33,11 @@ To use Safe Stop, two components must be configured:
       - If set to false, the user must explicitly insert a Stop Flow action to terminate execution.
   - This allows flexibility in defining what should happen when a Safe Stop is triggered—such as saving files, closing connections, or logging status—before the flow ends.
 
-# Best Practices
+## Best Practices
 - Place the If safe stop is requested action at logical checkpoints in your flow where cleanup or rollback might be necessary.
 - Use the Stop the flow parameter thoughtfully to control whether the flow should end immediately or continue after handling the stop request.
 - Consider using Safe Stop during development and testing to safely interrupt flows without losing context or corrupting data.
 
-# Limitations
+## Limitations
 - Safe Stop must be triggered before the If safe stop is requested action is reached in the flow. If the action is bypassed or not yet executed, the stop request will not take effect until the next checkpoint.
 - This feature is not a pause or resume mechanism. Once triggered and executed, the flow will stop as defined.
