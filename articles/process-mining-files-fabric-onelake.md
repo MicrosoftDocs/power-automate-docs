@@ -26,6 +26,7 @@ Power Automate Process Mining gives you the option to store and read event log d
 
 ## Prerequisites
 
+- Ensure that [Users can access data stored in OneLake with apps external to the Fabric](/fabric/admin/service-admin-portal-onelake#users-can-access-data-stored-in-onelake-with-apps-external-to-fabric) option is switched on in the OneLake tenant settings.
 - A Fabric workspace that's different from the default **My workspace**.
 - The **Admin** role must be attributed to the user performing the initial workspace setup for the environment for the other users in the same environment.
 - The Fabric workspace needs to be shared to the **Process Insight Prod service principal with an Admin role**. To register the Process Insights Prod service principal, follow the steps in [Install Azure tools](/power-automate/process-mining-pbi-workspace#install-azure-tools).
