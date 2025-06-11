@@ -580,6 +580,8 @@
     href: ./desktop-flows/static-analysis.md
   - name: Troubleshooter
     href: ./desktop-flows/troubleshooter.md
+  - name: Safe stop
+    href: ./desktop-flows/safe-stop.md
   - name: How to
     items:
     - name: Handle and manipulate variables
