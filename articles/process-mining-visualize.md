@@ -32,7 +32,7 @@ For **Power BI workspace**:
 
 For **Fabric workspace (preview)**:
 
-- [Connect your Fabric workspace to the process mining capability](process-mining-fabric-workspace.md#set-up-your-workspace)
+- [Connect your Fabric workspace to the process mining capability](process-mining-fabric-workspace.md#set-up-your-workspace-prerequisites)
 - [Create your own custom Fabric workspace](process-mining-fabric-workspace.md#create-your-own-custom-fabric-workspace)
 - [Load your process analytics in Fabric](process-mining-fabric-workspace.md#load-your-process-analytics-in-fabric)
   
