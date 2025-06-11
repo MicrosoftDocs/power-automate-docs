@@ -19,6 +19,7 @@ search.audienceType:
 The Safe stop feature in Power Automate for Desktop enables users to halt the execution of a desktop flow in a controlled and secure manner. Unlike abrupt terminations, Safe stop ensures that the flow completes its current action and executes a predefined set of cleanup steps before stopping. This helps maintain data 
 integrity and avoids leaving systems in an inconsistent state.
 
+
 # How It Works
 To use Safe Stop, two components must be configured:
 - Triggering Safe Stop:
