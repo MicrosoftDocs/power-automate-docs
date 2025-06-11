@@ -152,7 +152,7 @@ You successfully customized your Power BI workspace. Every time you refresh your
 
 Once this step is done, you see the report in your Power BI workspace with the report name that you entered. You can edit and save it. Your report is updated with the changes that you made with Power BI.
 
-If you encounter issues or error messages, go to [Issues with your own Power BI workspace](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace).
+Learn how to resolve issues or error messages in [Issues with your own Power BI workspace](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace).
 
 ## Related information
 
