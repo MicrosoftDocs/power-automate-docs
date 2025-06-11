@@ -23,8 +23,8 @@ integrity and avoids leaving systems in an inconsistent state.
 To use Safe Stop, two components must be configured:
 - Triggering Safe Stop:
   - Safe Stop can be initiated in two ways:
-    - From the Power Automate portal: Navigate to the Run Details page of a running desktop flow and click the Safe Stop button.
-    - From the PAD Designer: Use the dropdown on the Stop button and select Safe Stop.
+    - From the Power Automate portal: Navigate to the Run Details page of a running desktop flow and click the Safe Stop button. :::image type="content" source="media/safe-stop/safe-stop-portal.png" alt-text="Screenshot of button to safe stop a desktop flow execution through the Power Automate portal.":::
+    - From the PAD Designer: Use the dropdown on the Stop button and select Safe Stop. :::image type="content" source="media/safe-stop/safe-stop-designer.png" alt-text="Screenshot of button to safe stop a desktop flow execution through the Power Automate for desktop designer.":::
       - This option is especially useful during debugging or when a flow needs to be halted gracefully in the designer without disrupting the environment.
 - Handling Safe Stop in the Flow:
   - Within the desktop flow, insert the If safe stop is requested action (found under the Flow Control module). This action checks whether a Safe Stop has been requested. If so, it executes the block of actions defined within it.
