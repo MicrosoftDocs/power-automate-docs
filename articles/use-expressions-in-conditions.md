@@ -6,10 +6,11 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 06/10/2025
+ms.date: 06/12/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
+ms.custom: copilot-scenario-highlight
 search.audienceType: 
   - flowmaker
   - enduser
@@ -60,7 +61,7 @@ Given the preceding spreadsheet, you want to use Power Automate to remove all ro
 
 ## Create the cloud flow
 
-[!INCLUDE[copilot-tab-experience](./includes/copilot-tab-experience.md)]
+Each scenario includes a step-by-step guide to help you create the cloud flow. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you don't have access to Copilot, select the **Without copilot** tab.
 
 # [Using copilot](#tab/using-copilot)
 
@@ -98,6 +99,10 @@ Once you create your cloud flow, you need to configure the actions in the design
 [!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
 ## Select the spreadsheet and get all rows
+
+After you create a cloud flow, you can configure it in the *designer*. The designer is where you can add, remove, and edit actions in your flow.
+
+You can configure your cloud flow in either the *new designer* or the *classic designer*. The default designer is the [new designer](flows-designer.md), which is available to all users if enabled. The classic designer is available to users who prefer the classic experience, or whose admin disabled the new designer feature.
 
 # [New designer](#tab/new-designer)
 
