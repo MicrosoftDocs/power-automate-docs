@@ -4,7 +4,7 @@ description: Learn support scenarios for guest users, including how to create, s
 author: natalie-pienkowska
 ms.date: 03/07/2025
 ms.custom: 
-ms.topic: conceptual
+ms.topic: article
 ms.author: lali
 ms.reviewer: angieandrews
 ---

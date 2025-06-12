@@ -3,9 +3,10 @@ title: Create a connection with a service principal
 description: This article describes how to create a connection for a desktop flow by using a service principal
 author: nvigne
 ms.author: nvigne
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.reviewer: matp
-ms.date: 01/24/2025
+ms.date: 03/18/2025
 ms.topic: overview
 ---
 
@@ -82,7 +83,7 @@ The above example contains placeholders:
 - `ENVIRONMENT_ID_URL`: The environment ID, with all separators removed, and the last two characters separated by a period. (Example: *37520647-dbdf-49fa-ba01-6134c14680c4 -> 37520647dbdf49faba016134c14680.c4*).
 - `ENVIRONMENT_ID`: The environment ID.
 - CONNECTION_ID: The connection ID used to create the connection. It needs to be a valid GUID. (You can use the `New-Guid` PowerShell command to get this).
-- `MACHINE_ACCOUNT`: The username of the account used to open a Windows session.
+- `MACHINE_ACCOUNT`: The username of the account used to open a Windows session. For a local account, use `<MACHINENAME\\User>` or `<local\\User>`. For a Microsoft Entra ID account, use `<DOMAIN\\User>` or `<username@domain.com>`. Note that backslashes need to be escaped, for example, `CONTOSO\\accountName`.
 - `MACHINE_PASSWORD`: The password for the account.
 - `GROUP_ID`: The group ID you want to create the connection for. More information: [Get the group ID of the machine or group](#get-the-group-id-of-the-machine-or-group)
 

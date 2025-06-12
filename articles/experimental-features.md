@@ -3,8 +3,9 @@ title: Enable experimental features in Power Automate | Microsoft Docs
 description: Experimental features provide you early access to functionalities and updates in Power Automate before they are available worldwide.
 author: kisubedi 
 
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 09/07/2022
 ms.author: angieandrews
 ms.reviewer: angieandrews

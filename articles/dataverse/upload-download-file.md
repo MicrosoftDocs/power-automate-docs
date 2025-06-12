@@ -1,18 +1,13 @@
 ---
-title: Upload or download image and file content| Microsoft Docs
-description: "Learn how upload or download image and file content in Microsoft Dataverse with flows."
+title: Upload or download image and file content
+description: Learn how upload or download image and file content in Microsoft Dataverse with flows.
 services: ''
 suite: flow
 documentationcenter: na
-author: v-aangie
-ms.author: Matow
+author: kewaiss
+ms.author: matow
 ms.reviewer: angieandrews
-editor: ''
-tags: ''
-
-ms.topic: article
-ms.tgt_pltfrm: na
-ms.workload: na
+ms.topic: how-to
 ms.date: 03/06/2021
 search.audienceType: 
   - maker

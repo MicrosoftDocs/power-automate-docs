@@ -1,15 +1,16 @@
 ---
 title: Overview of process mining and task mining in Power Automate
 description: Get an overview of process mining and task mining in Power Automate.
-author: donums
+author: janPidych
 contributors:
   - donums
   - v-aangie  
   - tatn
+ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 08/01/2023
-ms.author: derahonuorah
+ms.date: 03/14/2025
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

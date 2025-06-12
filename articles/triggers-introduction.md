@@ -6,14 +6,17 @@ contributors:
   - samathur
   - kisubedi
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 10/14/2024
+ms.topic: get-started
+ms.date: 04/16/2025
 ms.author: samathur
 ms.reviewer: angieandrews
 ms.collection:
   - get-started
   - bap-ai-copilot
+  - DevRelAdv
+  - CXT
 ---
 
 # Get started with triggers
@@ -22,9 +25,14 @@ A *trigger* is an event that starts a cloud flow. For example, you want to get a
 
 Power Automate offers connectors to services such as SharePoint and Outlook. Most connectors offer prebuilt triggers that you can use to start your flows. Here's a partial look at the triggers that Office 365 Outlook connector provides by default.
 
-:::image type="content" source="./media/triggers-introduction/outlook-triggers.png" alt-text="Screenshot of some of the Office 365 Outlook triggers.":::
+:::image type="content" source="./media/triggers-introduction/outlook-triggers-new-designer.png" alt-text="Screenshot of some of the Office 365 Outlook triggers.":::
 
-## Choose the right trigger 
+Learn more about triggers in this quick video:</br>
+</br>
+
+> [!VIDEO 523050f3-8402-4a8a-ad86-108a1c6d2518]
+
+## Choose the right trigger
 
 Triggers can be started instantly or manually, on a schedule, or automatically when an external event occurs, such as when an email arrives. The following table lists some common trigger scenarios and the type of flow you should create.
 
@@ -32,12 +40,22 @@ Triggers can be started instantly or manually, on a schedule, or automatically w
 |Trigger scenario |Flow type |
 |---------|---------|
 |Run a cloud flow with a tap of a button on your mobile device to remind your team to join the daily team meeting. You can trigger these flows manually from any device.  | Instant/manual   |
-|Run a cloud flow on a schedule, for example, to send a weekly project report. Choose when (date and time) and frequency (monthly/daily/hourly, and more). More information: [Run flows on a schedule](./run-scheduled-tasks.md)     | Scheduled   |
-|Create a cloud flow that performs tasks automatically after an event occurs, for example, a cloud flow that notifies you by email when someone tweets with a keyword you specify. More information: [Create a cloud flow from scratch](get-started-logic-flow.md)   | Automated   |
+|Run a cloud flow on a schedule, for example, to send a weekly project report. Choose when (date and time) and frequency (monthly/daily/hourly, and more). Learn more in [Run flows on a schedule](./run-scheduled-tasks.md).     | Scheduled   |
+|Create a cloud flow that performs tasks automatically after an event occurs, for example, a cloud flow that notifies you by email when someone tweets with a keyword you specify. Learn more in [Create a cloud flow from scratch](get-started-logic-flow.md).   | Automated   |
 
 ## Add a trigger to an existing flow
 
 When you edit a trigger in an existing flow, the new trigger must be the first step of the flow.
+
+# [New designer](#tab/new-designer)
+
+1. Edit the flow and delete the existing trigger.
+1. After you delete the trigger, Power Automate prompts you to select a new trigger.
+1. Search for the connector and then select the app icon. The following screenshot shows the results if you search for **Sharepoint**.
+
+    :::image type="content" source="./media/triggers-introduction/connectors-new-designer.png" alt-text="A screenshot that shows a search for a connector.":::
+
+# [Classic designer](#tab/classic-designer)
 
 1. Edit the flow and delete the existing trigger.
 1. After you delete the trigger, Power Automate prompts you to select a new trigger.
@@ -47,9 +65,11 @@ When you edit a trigger in an existing flow, the new trigger must be the first s
 
 1. When you select the app icon, the corresponding triggers and actions are listed. Select the trigger that best suits your needs.
 
+---
+
 ## Licensing for premium connectors
 
-You need a standalone [Power Automate license](https://make.powerautomate.com/pricing/) to access all premium, on-premises, and custom connectors. For flows that are in-context of an app built in Power Apps, you can leverage [Power Apps license](https://powerapps.microsoft.com/pricing/). Microsoft 365 plan licenses can use standard connectors but can't use premium connectors. To learn more about licensing, go to the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+You need a standalone [Power Automate license](https://make.powerautomate.com/pricing/) to access all premium, on-premises, and custom connectors. For flows within an app built in Power Apps, you can use a [Power Apps license](https://powerapps.microsoft.com/pricing/). Microsoft 365 plan licenses let you use standard connectors but not premium connectors. Learn more in the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
 To find your license, do the following steps.
 
@@ -61,6 +81,11 @@ To find your license, do the following steps.
 ## Customize a trigger by adding conditions
 
 Sometimes, you might need to customize a trigger so that it fires only when certain conditions are met. For example, you might be using SharePoint's **When an item is created or modified** trigger in Power Automate. This trigger fires for every change to SharePoint items. However, you might want the flow to only trigger when an item is created or the status is marked as *Approved*. While you can filter other events by adding conditions to the flow, the flow still runs and the calls are counted as an API request. This causes you to reach your API request limits faster. To avoid it, you can write [expressions](./use-expressions-in-conditions.md) in trigger conditions, avoiding a *run* if the condition in trigger isn't met.
+
+Learn more about conditions in this quick video:</br>
+</br>
+
+> [!VIDEO fd4468f4-6d56-499e-98d0-4d98086cf9d5]
 
 ## Use trigger conditions to reduce flow runs  
 
@@ -76,22 +101,20 @@ This is especially important in pay-as-you-go environments, where every flow run
 
 # [New designer](#tab/new-designer)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
 To set a trigger condition:
 
 1. Select the trigger of the flow.
 1. Select **Settings**.  
 1. Next to **Trigger conditions**, select **Add**.
 
-     :::image type="content" source="./media/triggers-introduction/copilot-trigger-add.png" alt-text="Screenshot that shows trigger site in Copilot.":::
+     :::image type="content" source="./media/triggers-introduction/copilot-trigger-add-new-designer.png" alt-text="Screenshot that shows trigger site in Copilot.":::
 
 1. Add an expression.
 
     > [!NOTE]
     > Every trigger condition must start with a the **@** symbol.
 
-     :::image type="content" source="./media/triggers-introduction/copilot-trigger-example.png" alt-text="Screenshot that shows an expression example in Copilot.":::
+     :::image type="content" source="./media/triggers-introduction/copilot-trigger-example-new-designer.png" alt-text="Screenshot that shows an expression example in Copilot.":::
 
     As an alternative, follow the instructions in [Easily create expressions](#easily-create-expressions).
 
@@ -153,5 +176,3 @@ Your flow can generate expressions for you.
 - [Training: Streamline SharePoint processes with Power Automate (module)](/training/modules/streamline-processes/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
-
-

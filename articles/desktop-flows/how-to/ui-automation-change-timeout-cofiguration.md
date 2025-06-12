@@ -2,6 +2,7 @@
 title: Change the timeout configuration for the UI/Browser automation
 description: Change the timeout configuration for the UI and Browser automation actions.
 author: NikosMoutzourakis
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 07/09/2024

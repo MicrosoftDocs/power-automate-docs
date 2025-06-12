@@ -1,10 +1,10 @@
 ---
 title: FAQ for Copilot in Power Automate desktop
 description: This FAQ discusses Copilot in Power Automate desktop and the key considerations for making use of this technology responsibly.
-ms.date: 12/17/2024
+ms.date: 04/01/2025
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: conceptual
+ms.topic: faq
 author: cochamos
 ms.author: cochamos
 ms.reviewer: dmartens

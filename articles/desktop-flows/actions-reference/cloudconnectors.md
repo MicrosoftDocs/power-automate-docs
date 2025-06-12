@@ -2,9 +2,10 @@
 title: Cloud Connectors in Power Automate for desktop 
 description: Learn about the available Cloud Connector operations in Power Automate for desktop.
 author: jpapadimitriou
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 02/19/2025
+ms.date: 03/21/2025
 ms.author: iomavrid
 ms.reviewer: 
 contributors:
@@ -22,13 +23,11 @@ search.audienceType:
 ## Prerequisites and limitations
 
 - You need an Attended RPA license.
-- Specific endpoints must be included in the allowlist for desktop flows containing cloud connector actions to work properly. More information: [Desktop flow services required for runtime](../../ip-address-configuration.md#services-required-for-desktop-flows-runtime)
+- Specific endpoints must be included in the allowlist for desktop flows containing cloud connector actions to work properly. More information: [Desktop flow services required for runtime](../../ip-address-configuration.md#allow-machines--users-on-your-network-to-access-power-automate-desktop-services)
 - For **Office 365 Outlook** actions, if you're using an EWS application access policy, ensure that the following user-agents are allowed (on top of the user agents listed [here](/connectors/office365/#common-errors)) for successful desktop flow execution: PowerAutomateLocal/*, PowerAutomateCloud/*
-- Dynamic output schema isn't fully supported for cloud connector actions in desktop flows. Refrain from using variables in the respective dropdown fields (Site address/ List name/ Select file etc.) while configuring a cloud connector action.
 - Sharing desktop flows with cloud connector actions is currently supported with certain requirements. Learn more in [Share desktop flows that contain connector actions](../how-to/share-desktop-flows-that-contain-connector-actions.md). Learn about connector actions and their association with connections and connection references in [Use connector actions](../how-to/use-connector-actions.md).
 - To enable attended or unattended runs (cloud-initiated runs), make sure your desktop flow uses the [Power Automate v2 schema](../schema.md) and all connection references are marked as embedded.
-- Connection reference embedding is only available for co-owners. Users (run-only) can execute flows shared with them only via Power Automate for desktop's console using their own connections.
-- Desktop flows with embedded connection references don't currently support application lifecycle management (ALM) capabilities.
+- Connection reference embedding is only available for co-owners. Users (run-only) can run flows shared with them only via Power Automate for desktop's console using their own connections.
 - The [Microsoft Dataverse](/connectors/commondataserviceforapps) connector supports the option *Current* in the *Environment* parameter of its operations in desktop flows. This option allows dynamic resolution based on the environment. This connector also has the following limitations:
   - The following actions are currently supported in desktop flows:
     - [Add a new row to selected environment](/connectors/commondataserviceforapps/#add-a-new-row-to-selected-environment)
@@ -105,10 +104,10 @@ You can add the rest of the (non-custom) Power Automate cloud connectors to a de
 
 ### Known limitations
 
-- Create an Oauth connection for a connector in desktop flows through the sign-in dialog. If an error occurs, create the connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
+- Create a connection for a connector in desktop flows through the sign-in dialog. If an error occurs, create the connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
 
     :::image type="content" source="media/cloudconnectors/connector-banner-warning-to-create-connection-in-portal.png" alt-text="Screenshot of the sign in dialog in connector actions including a banner message" border="false":::
 
-- Creating non-OAuth connections through Power Automate for desktop isn't supported. For these connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
+- Not all connection types are supported to be created through Power Automate for desktop. For these connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
 
     :::image type="content" source="media/cloudconnectors/connector-banner-prompt-to-create-connection-in-portal.png" alt-text="Screenshot of the connector actions including a banner message that prompts to create a connection through the portal" border="false":::

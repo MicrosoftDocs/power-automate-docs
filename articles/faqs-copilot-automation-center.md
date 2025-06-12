@@ -4,7 +4,7 @@ description: This FAQ discusses Copilot in automation center and the key conside
 ms.date: 01/21/2025
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: rpapostolis
 ms.author: appapaio
 ms.reviewer: dmartens

@@ -1,17 +1,23 @@
 ---
 title: Customize email in flows with Power Automate
-description: Learn how to use email in flows with Microsoft 365, email, or mail notification.
+description: Learn to enhance your email flows in Power Automate with HTML formatting, cloud-hosted images, and dynamic group email actions.
 suite: flow
 author: kisubedi
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 10/09/2024
+ms.topic: how-to
+ms.date: 03/28/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
-search.audienceType: 
+search.audienceType:
   - flowmaker
   - enduser
 ms.collection: bap-ai-copilot
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:03/28/2025
+  - DevRelAdv
 ---
 
 # Customize email in flows
@@ -19,7 +25,7 @@ ms.collection: bap-ai-copilot
 Here are the top how-to scenarios for email in Microsoft Power Automate, with examples of how to achieve them.
 
 1. Send a [beautifully formatted email](#send-a-beautifully-formatted-email).
-1. [Add an image](#add-an-image-to-your-email) to your email.
+1. [Add an image](#add-an-image-to-your-email) to your email (includes video).
 1. Send [email to a distribution list](#send-email-to-a-distribution-list).
 1. Send automatic replies from a [shared mailbox](#send-automatic-replies-from-a-shared-mailbox).
 1. Change the [date and time format](#change-the-date-and-time-format-of-an-email) of an email.
@@ -71,10 +77,10 @@ Alternatively, if you don't know&mdash;or don't feel like playing with&mdash;HTM
 
 ## Add an image to your email
 
-Outlook takes the image you included in your email and converts it to plain text. Instead of copying/pasting the plain text into Power Automate, follow these steps: 
+Outlook takes the image you included in your email and converts it to plain text. Instead of copying/pasting the plain text into Power Automate, follow these steps:
 
 1. Upload the image to cloud-based storage, such as Google Drive or OneDrive for Business.
-1. Get the anonymous visitor URL to the image. 
+1. Get the anonymous visitor URL to the image.
 1. In the Power Automate **Send an email** action, do the following:
     1. Go to the HTML section of the rich text editor.
     1. Look for **\<image src=** in the HTML.
@@ -84,6 +90,11 @@ Outlook takes the image you included in your email and converts it to plain text
 
    > [!IMPORTANT]
    > Inline images are limited to a size of 100 KB. This might affect the quality of the image.
+
+Learn more about how to include an image from OneDrive in this quick video:</br>
+</br>
+
+> [!VIDEO b5c93ea2-c39a-4903-bba8-65ad22fa390d]
 
 ## Send email to a distribution list
 
@@ -118,6 +129,5 @@ By default, the email you receive shows the Coordinated Universal Time (UTC) tim
 - [Create flows to manage email](create-email-flows.md)
 - [Create flows for popular email scenarios](email-top-scenarios.md)
 - [Training: Create flows to manage email (module)](create-email-flows.md)
-
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

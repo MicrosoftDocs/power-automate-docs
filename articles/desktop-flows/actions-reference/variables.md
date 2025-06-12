@@ -2,9 +2,10 @@
 title: Variables actions reference
 description: See all the available variables actions.
 author: kenseongtan
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 06/18/2024
+ms.date: 04/11/2024
 ms.author: kenseongtan
 ms.reviewer: dipapa
 contributors:
@@ -321,6 +322,7 @@ In addition, multiple filters are applied together via AND and/or OR rules. AND 
 |-----|-----|-----|-----|-----|
 |Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. The specified variable must be defined through an action that generates a data table variable.|
 |Filters to apply|No|Filtering rules as defined by the user|N/A|Filtering rules applied to the defined columns|
+|Match case|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to search for case-sensitive data. Applies only in filters: Equal to, Not equal to, Contains, Does not contain, Starts with, Does not start with, Ends with, Does not end with.|
 
 ### Variables produced
 

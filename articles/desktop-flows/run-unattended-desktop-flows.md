@@ -2,8 +2,9 @@
 title: Run unattended desktop flows
 description: See how to run unattended desktop flows on your device.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 02/10/2025
 ms.author: pefelesk
 ms.reviewer: matp

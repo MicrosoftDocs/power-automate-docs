@@ -5,8 +5,9 @@ ms.custom: ""
 ms.date: 08/02/2018
 ms.suite: ""
 ms.tgt_pltfrm: ""
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: article
 applies_to: 
   - "Dynamics 365 (online)"
   - "Dynamics 365 Version 9.x"

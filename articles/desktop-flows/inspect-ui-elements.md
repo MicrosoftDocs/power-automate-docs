@@ -2,8 +2,9 @@
 title: Inspect a UI element
 description: Inspect a UI element in Power Automate for desktop that allows you to explore the hierarchy tree of all UI elements on your screen.
 author: nikosmoutzourakis
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/19/2023
 ms.author: nimoutzo
 ms.reviewer: ndoelman, matp, angieandrews

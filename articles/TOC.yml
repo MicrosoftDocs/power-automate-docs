@@ -12,8 +12,10 @@
   items: 
     - name: Sign up
       href: sign-up-sign-in.md
-    - name: Get started with Power Automate
+    - name: Explore the Power Automate home page
       href: getting-started.md
+    - name: Get Started with Power Automate tutorial
+      href: get-started-tutorial.md
 - name: Cloud flows
   items:
     - name: Overview
@@ -24,10 +26,12 @@
           href: get-started-with-copilot.md
         - name: Explore the cloud flows designer
           href: flows-designer.md
-        - name: Get started with triggers
-          href: triggers-introduction.md
-        - name: Get help from the Microsoft Copilot Studio bot
-          href: contextual-help-bot.md
+        - name: Start a cloud flow with a trigger
+          items:
+          - name: Get started with triggers
+            href: triggers-introduction.md
+          - name: Troubleshoot common issues with triggers
+            href: triggers-troubleshoot.md
     - name: How to
       items:
       - name: Add an action
@@ -47,6 +51,8 @@
         href: convert-time-zone.md
       - name: Use expressions in conditions
         href: use-expressions-in-conditions.md
+      - name: Create and edit expressions with Copilot expression assistant (preview)
+        href: expressions-copilot.md
       - name: Store and manage values in variables
         href: create-variable-store-values.md
       - name: Manage sensitive input like passwords
@@ -65,12 +71,18 @@
         href: format-data-by-examples.md
     - name: Manage cloud flows
       items: 
+        - name: Management overview
+          href: overview-manage-cloud-flows.md
         - name: Share a flow
           href: create-team-flows.md
         - name: Support for guest users
           href: share-guest-users.md
+        - name: Manage shared flows with users outside an environment
+          href: manage-shared-flows-with-users-outside-environment.md
         - name: Support for service principal owned flows
           href: service-principal-support.md
+        - name: Guide to cloud flow sharing and permissions
+          href: guide-to-cloud-flow-sharing-permissions.md
         - name: Export and import a non-solution flow
           href: export-import-flow-non-solution.md
         - name: Save drafts and use versioning
@@ -100,12 +112,8 @@
             href: edit-solution-aware-flow.md
           - name: Remove a solution-aware flow
             href: remove-solution-aware-flow.md
-          - name: Set up Application Insights with Power Automate
-            href: /power-platform/admin/app-insights-cloud-flow.md
     - name: Troubleshoot
       items:
-      - name: Troubleshoot common issues with triggers
-        href: triggers-troubleshoot.md
       - name: Watch a cloud flow
         href: see-a-flow-run.md
         displayName: Monitor flow activity on mobile devices
@@ -113,7 +121,7 @@
         href: fix-flow-failures.md
       - name: Find and fix errors with the error checker
         href: error-checker.md
-    - name: Automated flows
+    - name: Automated cloud flows
       items:
       - name: Create a cloud flow from a template
         href: get-started-logic-template.md
@@ -127,12 +135,16 @@
         href: odata-filters.md
       - name: Run your flows with bttns
         href: bttn-button-flows.md
-    - name: Scheduled flows
+    - name: Scheduled cloud flows
       items:
       - name: Run a cloud flow on a schedule
         href: run-scheduled-tasks.md
       - name: Process a list of items
         href: apply-to-each.md
+    - name: Analyze Power Automate telemetry using Application Insights
+      href: /power-platform/admin/app-insights-cloud-flow
+    - name: Limits and configuration
+      href: limits-and-config.md
     - name: Power Automate mobile app
       items:
       - name: Overview
@@ -337,7 +349,7 @@
         href: ./dataverse/data-retention-flow.md
       - name: Create a cloud flow with Microsoft Dataverse (legacy) connector
         href: connection-cds.md
-      - name: Manage cloud flow run history in Dataverse (preview)
+      - name: Manage cloud flow run history in Dataverse
         href: ./dataverse/cloud-flow-run-metadata.md
 - name: Desktop flows
   items:
@@ -445,7 +457,7 @@
       href: ./desktop-flows/create-azurekeyvault-credential.md
     - name: CyberArk credentials
       href: ./desktop-flows/create-cyberark-credential.md
-    - name: Certificate-based authentication (preview)
+    - name: Certificate-based authentication
       href: ./desktop-flows/configure-certificate-based-auth.md
     - name: Machine mapping (preview)
       href: ./desktop-flows/create-machine-mapping.md
@@ -483,6 +495,8 @@
     href: ./desktop-flows/data-loss-prevention.md
   - name: Power Automate console
     href: ./desktop-flows/console.md
+  - name: Tags in desktop flows (preview)
+    href: ./desktop-flows/tags.md
   - name: Desktop flow designer
     href: ./desktop-flows/flow-designer.md
     items:
@@ -562,8 +576,12 @@
       href: ./desktop-flows/manage-ui-elements-collections.md
     - name: Use and update UI elements collections
       href: ./desktop-flows/use-update-ui-elements-collections.md
+  - name: Flow checker (preview)
+    href: ./desktop-flows/static-analysis.md
   - name: Troubleshooter
     href: ./desktop-flows/troubleshooter.md
+  - name: Safe stop
+    href: ./desktop-flows/safe-stop.md
   - name: How to
     items:
     - name: Handle and manipulate variables
@@ -809,7 +827,7 @@
       href: ./desktop-flows/actions-reference/cloudconnectors.md
     - name: SAP automation
       href: ./desktop-flows/actions-reference/sap.md
-    - name: Power Automate secret variables actions (preview)
+    - name: Power Automate secret variables actions
       href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
   - name: Troubleshoot desktop flows runtime
     href: ./desktop-flows/troubleshoot.md
@@ -1059,7 +1077,7 @@
           href: ./minit/business-rules-process-map.md
         - name: Business rules statistics
           href: ./minit/business-rules-statistics.md
-    - name: Process simulations (preview)
+    - name: Process simulations
       items:
       - name: Overview
         href: ./minit/process-mining-simulations-overview.md
@@ -1097,9 +1115,6 @@
     - name: Known issues
       href: process-advisor-issues.md
       displayName: Known issues in process mining
-  - name: Glossary
-    href: process-advisor-glossary.md
-    displayName: Process mining glossary
   - name: Troubleshoot issues
     href: process-mining-troubleshoot.md
 - name: Connect to data
@@ -1145,6 +1160,8 @@
     items:
     - name: Overview
       href: automation-center-overview.md
+    - name: Process map
+      href: automation-center-process-map.md      
     - name: Recommendations
       href: automation-center-recommendations.md
     - name: Copilot
@@ -1165,6 +1182,8 @@
       href: ./desktop-flows/capacity-utilization-process.md
     - name: How to use process capacity
       href: ./desktop-flows/capacity-process.md
+  - name: Savings (preview)
+    href: savings.md
 - name: Administration
   items:
   - name: Power Automate sign-up FAQ
@@ -1222,52 +1241,46 @@
       href: privacy-dsr-accountclose-msa.md
   - name: Power Automate US Government
     href: us-govt.md
-- name: Reference
+  - name: Use Power Automate within the EU Data Boundary
+    href: flow-eudb.md
+- name: Regions overview
+  href: regions-overview.md
+- name: Common questions about Power Automate
+  href: frequently-asked-questions.yml
+- name: Classic Dataverse
   items:
-  - name: Regions overview
-    href: regions-overview.md
-  - name: Limits and configuration
-    href: limits-and-config.md
-  - name: Frequently asked questions
-    href: frequently-asked-questions.yml
-  - name: Power Automate glossary
-    href: glossary.md
-  - name: Classic Dataverse
+  - name: Classic Dataverse workflows
     items:
-    - name: Classic Dataverse workflows
-      items:
-      - name: Overview
-        href: workflow-processes.md
-      - name: Configure background workflow stages and steps
-        href: configure-workflow-steps.md
-      - name: Monitor and manage background workflow processes
-        href: monitor-manage-processes.md
-      - name: Best practices for background workflow processes
-        href: best-practices-workflow-processes.md
-      - name: Replace background workflows with flows
-        href: replace-workflows-with-flows.md
-    - name: Classic Dataverse task flows
-      items:
-      - name: Create mobile task flows
-        href: create-mobile-task-flow.md
-    - name: Classic Dataverse dialogs
-      items:
-      - name: Use classic Dataverse dialogs
-        href: use-cds-for-apps-dialogs.md
-      - name: Replace classic Dataverse dialogs
-        href: replace-dialogs.md
-- name: Resources
+    - name: Overview
+      href: workflow-processes.md
+    - name: Configure background workflow stages and steps
+      href: configure-workflow-steps.md
+    - name: Monitor and manage background workflow processes
+      href: monitor-manage-processes.md
+    - name: Best practices for background workflow processes
+      href: best-practices-workflow-processes.md
+    - name: Replace background workflows with flows
+      href: replace-workflows-with-flows.md
+  - name: Classic Dataverse task flows
+    items:
+    - name: Create mobile task flows
+      href: create-mobile-task-flow.md
+  - name: Classic Dataverse dialogs
+    items:
+    - name: Use classic Dataverse dialogs
+      href: use-cds-for-apps-dialogs.md
+    - name: Replace classic Dataverse dialogs
+      href: replace-dialogs.md
+- name: Find help and support
   items:
-  - name: Microsoft Credentials for Power Platform
-    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl
-  - name: Webinars
-    href: webinars.md
+  - name: Get online help
+    href: self-help.md
   - name: Blog
     href: https://make.powerautomate.com/blog/
   - name: Forums
     href: https://powerusers.microsoft.com/t5/Microsoft-Flow-Community/ct-p/FlowCommunity
-  - name: Support
-    href: https://make.powerautomate.com/support/
+  - name: Learn new Power Platform skills
+    href: /credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl    
 - name: Responsible AI
   items:
   - name: Overview

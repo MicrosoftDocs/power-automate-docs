@@ -1,21 +1,21 @@
 ### YamlMime:FAQ
 metadata:
-  title: Frequently asked questions | Microsoft Docs
-  description: Answers to several common questions about Power Automate
-  author: v-aangie
+  title: Common questions about Power Automate
+  description: Get answers to many common questions about Power Automate.
+  author: kewaiss
   ms.subservice: cloud-flow
   ms.tgt_pltfrm: na
   ms.workload: na
   ms.date: 03/08/2022
   ms.topic: faq
-  ms.author: angieandrews
+  ms.author: ralinga
   ms.reviewer: angieandrews
   search.app: 
     - Flow
   search.audienceType: 
     - flowmaker
     - enduser
-title: Frequently asked questions
+title: Common questions about Power Automate
 summary: |
 
 
@@ -76,8 +76,7 @@ sections:
       - question: |
          Which email addresses are supported?
         answer: |
-             Power Automate supports email addresses that end with anything except .gov and .mil.  
-
+             Until July 27, 2025, Power Automate supports email addresses that end with anything except .gov and .mil. After July 27, 2025, Power Automate will no longer support personal email accounts, such as gmail.com or outlook.com.
       - question: |
          Is Power Automate available on-premises?
         answer: |
@@ -86,7 +85,7 @@ sections:
       - question: |
          What services can Power Automate connect to?
         answer: |
-              Power Automate connects to more than 100 data sources out of the box, and we’re adding more all the time. Some examples of data sources and services include the following:
+              Power Automate connects to more than 100 data sources out of the box, and we're adding more all the time. Some examples of data sources and services include the following:
           
               * SharePoint
               * Dynamics 365

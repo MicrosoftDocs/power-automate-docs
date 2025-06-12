@@ -2,8 +2,9 @@
 title: Introduction to desktop flows
 description: Introduction to desktop flows
 author: Mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 06/20/2024
 ms.collection: get-started
 ms.author: dipapa
