@@ -12,7 +12,7 @@ ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.date: 06/05/2025
+ms.date: 06/13/2025
 ms.topic: how-to
 ---
 
@@ -34,8 +34,8 @@ The scenarios in this article use a cloud flow to notify a channel or a group ch
 
     Notice that the trigger card says *Invalid parameters* in red. This is because you need to configure it.
 
-1. Drag the trigger card to the right side of the designer screen, and then select it.
-1. In the panel to the left, configure your trigger by selecting a **Site Address** and **Library Name** for the SharePoint site.
+1. In the designer, select the **When a file is created (properties only)** card to open the configuration pane to the left.
+1. In the configuration pane, configure your trigger by selecting a site address and library name for the SharePoint site from the **Site Address** and **Library Name** dropdown menus.
 
     :::image type="content" source="../media/send-a-message-in-teams/flow-trigger-new-designer.png" alt-text="Screenshot showing the When a file is created (properties only) trigger in Power Automate.":::
 
@@ -44,7 +44,7 @@ The scenarios in this article use a cloud flow to notify a channel or a group ch
     Notice that the *Invalid parameters* message is now gone.
 
 1. To add an action to this flow, select the plus sign (**+**).
-1. Search for and select the **Post a message in a chat or channel** action.
+1. Search for the **Post a message in a chat or channel** action, and then select it under the **Microsoft Teams** connector.
 
 ## Message sender options
 
@@ -65,7 +65,7 @@ To send a message as the Flow bot in a Teams channel:
 
     After you select these options, more dynamic inputs appear.
 
-1. In the **Teams** dropdown menu, select the team where you want to send the message.
+1. In the **Team** dropdown menu, select the team where you want to send the message.
 1. In the **Channel** dropdown menu, select the channel where you want to send the message.
 1. In the **Message** field, enter the message you want to send. To add a dynamic value to the message, do the following:
     1. Place the cursor where the input should appear.
