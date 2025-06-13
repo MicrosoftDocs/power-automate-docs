@@ -1,16 +1,19 @@
 ---
-title: Trigger approvals from a SharePoint document library in Power Automate | Microsoft Docs
+title: Trigger approvals from a SharePoint document library in Power Automate
 description: Learn how to create an approval flow that triggers when new files are added to a SharePoint library in Power Automate.
-services: ''
 suite: flow
-author: v-aangie
-editor: ''
-tags: ''
+author: HeatherOrt
+contributors:
+  - HeatherOrt
+  - elaizabenitez
+  - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
-ms.date: 06/16/2022
-ms.author: angieandrews
+ms.topic: how-to
+ms.date: 03/26/2025
+ms.author: heortaol
 ms.reviewer: angieandrews
+ms.custom: DevRelAdv
 search.audienceType: 
   - flowmaker
   - enduser
@@ -18,126 +21,144 @@ search.audienceType:
 
 # Trigger approvals from a SharePoint document library
 
-This article shows you how to create an approval flow for new documents (invoices) when they are added to a SharePoint document library and how to attach the document to the approval request.  
+This article shows you how to create an approval flow for new documents (invoices) when they're added to a SharePoint document library. Once they're added, you can attach documents to the approval request.  
   
-In the approval process, every time a new invoice is added to a SharePoint library, a request is sent for somebody to reviews its contents. If the request is approved, the invoice files are then moved to a folder.
+In the approval process, every time a new invoice is added to a SharePoint library, a request is sent for someone to review its contents. If they approve the request, the invoice files are moved to a folder.
 
-Follow these steps to complete this tutorial.
+To learn how to trigger approvals from a SharePoint document library, check out this short video:
 
-1. Create two folders, for example: **Incoming Invoices** and **Reviewed Invoices**.
+> [!VIDEO 551bee92-5535-4783-802e-7d2ff9a808d9]
 
-   ![Incoming and reviewed invoices folders.](media/trigger-sharepoint-library/incoming.png)
+For more detailed instructions, follow the procedures in this article.
 
-1. Go to the [Start an approval for new file to move it to a different folder](https://make.powerautomate.com/galleries/public/templates/d0ffe4d14c9c418e8f8ad49c3a6afcf6/start-an-approval-for-new-file-to-move-it-to-a-different-folder/) template. This template provides us a flow that's configured to setup an approval process for a SharePoint document library. Confirm that all the connections listed have a green check, and then select continue.  
+## Create a flow from a template
+
+Before you start, you need to create some folders in Sharepoint. Then, you can create a flow from a template in Power Automate.
+
+1. On the navigation pane in SharePoint, select **Documents**.
+1. Create two folders, such as **Incoming Invoices** and **Reviewed Invoices**.
+1. On the navigation pane in [Power Automate](https://make.powerautomate.com), select **Templates**.
+1. In the **Search templates** field, begin typing **Start an approval for new file to move it to a different folder**. When the template appears in the search results, select it.
+
+    This template provides us with a flow that is configured to set up an approval process for a SharePoint document library.
+
+1. Confirm that all the connections listed have a green checkmark, and then select **Continue**. A cloud flow is created.
+
+    You might need to sign in or create to see the green checkmarks.
+
+    :::image type="content" source="media/trigger-sharepoint-library/approvals-template.png" alt-text="Screenshot of the 'Start an approval for new file to move it to a different folder' template in Power Automate.":::
+
+## Update the trigger parameters
+
+Continue by updating the trigger input parameters.
+
+1. Select the trigger card.
+1. In the **Site Address** field, select the SharePoint site that contains your list.
+
+    If the SharePoint site doesn’t appear on the list, type in your SharePoint site URL.
+
+1. In the **Library Name** field, select the library in your SharePoint site where the folders reside.
+1. Under **Advanced parameters**, select **Show all** to display the **Folder** input parameter.
+1. In the **Folder** field, select the folder icon, and then select the folder where you'll upload the incoming files to be reviewed through an approval request.
+1. Close the **Parameters** panel.
+
+## Add an action
+
+Add an action that allows you to retrieve the content of the file.
+
+1. Select the plus sign (**+**) below the trigger.
+1. In the **Search for an action or connector** field, enter **sharepoint get file content**.
+1. Scroll down to find and select the **Get File Content** action.
+
+## Configure your flow
+
+1. In the **Get File Content** action screen, **Parameters** tab, update the following input
+parameters:
+
+    1. In the **Site Address** field, select the same SharePoint site that contains your
+  list.
+
+        If the SharePoint site doesn’t appear on the list, type in your SharePoint site URL.
+
+    1. In the **File Identifier** field, type a forward slash (**/**) and select the thunderbolt icon to load the dynamic content picker.
+    1. In the dynamic content picker **Search** field, start typing **identifier**. When it appears in the list, select **Identifier**.
+
+1. In the designer, select the **Start and wait for an approval** action and update the following input parameters:
+
+    1. In the **Title** field, enter a title for the approval request, such as *A new
+  file needs your view and approval*.
+    1. In the **Assigned to** field, select a user to be the approver of the approval request, such as yourself.
+    1. In the **Details** field, enter details for the approval request for the approver, such as *Please approve this file -* .
   
-   ![Document approval template.](media/trigger-sharepoint-library/template.png)
+        You can also include the file name including the extension by selecting the **File name with extension** property from the trigger using the dynamic content picker.
 
-1. Once the flow is created, configure these items.
+    1. In the **Item link** field, use the dynamic content picker to find and select the **Link to
+  item** property from the trigger.
+    1. In the **Item link description** field, use the dynamic content picker to find and select the **Name** property from the trigger.
 
-   - **Site address** - On the trigger card, select the SharePoint site that contains your list. If the SharePoint site doesn’t appear on the list, just write in your SharePoint site URL. 
-   
-   - **Folder id:** - Select the folder where you will put the incoming files to be reviewed with an approval.
+1. In the designer, select the **Apply to each** action. This action loops through each response of the approvers for the approval request. In this example, only one approver was added, so the flow processes only one response.
 
-   - On the **Create file** card enter the same **Site address** as before, and then select the folder where you would like the files to be moved once they have been approved.
+    :::image type="content" source="media/trigger-sharepoint-library/apply-to-each.png" alt-text="Screenshot of the 'Apply to each' action in the designer.":::
 
-   - On the **Delete file** card, enter the same **Site address** as before. This action will delete the file from the first folder once it has been approved and copied to the new folder.
+1. In the designer, select the **Condition** action. This action checks whether the **Approver Response** value from the first responder equals `Approve`.
 
-     ![Configure the template.](media/trigger-sharepoint-library/template2.png)
+    The condition action has two branches that represent a set of actions to be executed if the condition is met (**True**) or not met (**False**). When the file is approved, the **True** branch processes the two actions, which creates the file in the second folder, and deletes the existing file in the original folder. Otherwise, if the file is rejected, the **False** branch processes with no further automation.
 
-1. Replace the **Start an approval** action with another approval action that will let you attach files to it.
+     :::image type="content" source="media/trigger-sharepoint-library/condition.png" alt-text="Screenshot of the 'Condition' action in the designer.":::
 
-   - Delete the **Start an approval** action from the flow. 
+1. In the designer, select the **Create file** action and update the following input parameters:
+    1. In the **Site Address** field, select the SharePoint site that contains your list. If the SharePoint site doesn’t appear on the list, type your SharePoint site URL.
+    1. In the **Folder** **Path** field, select the folder where you plan to put the incoming files to be reviewed with an approval.
+    1. In the **File Name** field, use the dynamic content picker to find and select the **File name with extension property** from the trigger.
+    1. In the **File Content** field, use the dynamic content picker to find and select the **File Content** property from the **Get File Content** action.
 
-        ![Delete the approval action.](media/trigger-sharepoint-library/delete-action.png)
+1. In the designer, select the **Delete file** action and update the following input parameters.
+    1. In the **Site Address** field, select the SharePoint site that contains your list.
+  If the SharePoint site doesn’t appear on the list, type in your SharePoint site URL.
+    1. In the **File Identifier** field, use the dynamic content picker to select the **File Identifier** property from the trigger.
 
-   - Where the approval action used to be, select the vertical line to add a new action.
+## Test your flow
 
-       ![Insert an action.](media/trigger-sharepoint-library/insert-action.png)
+You're done configuring the flow. You can now test it.
 
-   - Search for, and then select **Start and wait for an approval**.
+1. On the menu bar, select **Save**. You might get a warning message from the Flow checker. You can dismiss it.
+1. Once the flow is saved, select **Test**.
+1. Select **Manually** > **Test**.
 
-       ![Select the action to insert.](media/trigger-sharepoint-library/select-action.png)
+    Power Automate indicates to you when the flow is in test mode.
 
-   - Select **Approve/Reject – First to respond** as the approval type. 
-      
-       ![Approval type.](media/trigger-sharepoint-library/approval-type.png)
+1. When it's in test mode, upload a new file to the **Incoming Invoices** folder in the SharePoint document library that you specified earlier.
 
-   - Give the approval request a title, and then assign it to the approver. The approver can even be you!
+    The flow continues to run the test.
 
-       ![Title for the approval request.](media/trigger-sharepoint-library/approval-title.png)
+## Respond to the approval request
 
-   - Select **Show advanced options**, and then select **Attachment Name – 1**. 
-   
-      A floating panel opens on the right where you will see all the data you can get from the SharePoint trigger. 
-   
-   - Select **File name**.
-       
-       ![The file name.](media/trigger-sharepoint-library/file-name.png)
+The person to whom you assigned the approval now receives the approval request in various places where they can approve or reject it. The file to review is provided as a hyperlink for easy reference.
 
-   - Select **Attachments Content – 1**, and then select **File Content**.  
-      
-       ![The file contents.](media/trigger-sharepoint-library/file-content.png)
+### By email  
 
-1. Expand the **Condition** card, and on the left text box, select **Outcome**. 
+The email looks like the following screenshot with a hyperlink to the file in SharePoint.
 
-   This way if the approver approves the request, the action to copy the file to the second folder runs.  
-  
-   ![Approval outcome.](media/trigger-sharepoint-library/outcome.png)
+If the email doesn't display correctly, make sure you have the latest updates in your Outlook app, or use the web version of Outlook.
 
-We’re done configuring the flow. Now let’s test it. 
+:::image type="content" source="media/trigger-sharepoint-library/email.png" alt-text="Screenshot of the 'Approvals' screen in Power Automate.":::
 
-1. Select the **Save** button on the top right. 
-   
-   You might get a warning message from the Flow checker. It is safe to dismiss it.  
-  
-   ![Save button.](media/trigger-sharepoint-library/save.png)
+### In Power Automate maker portal, in the Approvals section
 
-1. Once the flow is saved, select the **Test** button.
-  
-   ![Test button.](media/trigger-sharepoint-library/test.png)
+The approver gets a list of their approval requests in the **Received** tab. When the request is selected, the **Respond** panel appears where the approver can review the request, including select the link which loads the SharePoint file to review in a new browser tab.
 
-1. Select, **I’ll select the trigger action**, and then select **Save and test**.  
+1. Scroll down the **Respond** panel and in the **Choose your response** dropdown list, select **Approve**.
+1. Select **Confirm**.
 
-   ![Save and test.](media/trigger-sharepoint-library/save-test.png)
+    :::image type="content" source="media/trigger-sharepoint-library/response.png" alt-text="Screenshot of the 'Respond' panel in Power Automate.":::
 
-1. Power Automate indicates to you when the flow is in test mode. When it is, add a new file to the incoming files folder in the SharePoint document library that you specified earlier.  
-  
-   ![Add a new file.](media/trigger-sharepoint-library/new-file.png)
+    Once the request is approved or rejected, the flow test run continues. If the request was approved, the **True** branch processes. Otherwise, the **False** branch processes.
 
-1. Now, you can see the flow is running.
+    Since the request in this example was approved, the file uploaded in the original folder was deleted and created in the other folder.
 
-   ![See the flow run.](media/trigger-sharepoint-library/run.png)
+## Related information
 
-The person to whom you have assigned the approval now receives the approval request in various places where they can approve or reject it. The file to review is attached to the approval request for easy reference.
-
-**By email**  
-  
-   ![Approval email.](media/trigger-sharepoint-library/email.png)
-
-If you are not seeing the email displayed correctly, make sure you have the latest updates in your Outlook app or use the web version of Outlook.
-
-**In Power Automate, on the Action items Approvals section**  
-  
-   ![Approval requests in Power Automate.](media/trigger-sharepoint-library/portal.png)
-
-Once the request is approved or rejected, the flow execution continues. If the request was approved, the file you put in the incoming folder will be moved to the other folder.
-
-   ![The flow continues.](media/trigger-sharepoint-library/continue.png)
-
-Congratulations! You have successfully run your flow with approval capabilities. Now that you know the basics, you can build on top of this flow to tailor it to your specific business needs.
-
-
-
-## Next steps
-
-- Create [approval flows](modern-approvals.md)
-
-
-
-
-
-
- 
+[Create and test an approval workflow with Power Automate](modern-approvals.md)
 
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]

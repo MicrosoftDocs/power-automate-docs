@@ -14,8 +14,8 @@
       "source_path": "articles/web-api.md",
       "redirect_url": "manage-flows-with-code",
       "redirect_document_id": "false"
-    }, 
-   {
+    },
+    {
       "source_path": "articles/gdpr-dsr-accountclose-msa.md",
       "redirect_url": "privacy-dsr-accountclose-msa",
       "redirect_document_id": "false"
@@ -883,6 +883,16 @@
     {
       "source_path": "articles/webinars.md",
       "redirect_url": "https://learn.microsoft.com/en-us/credentials/browse/?products=power-platform&wt.mc_id=appliedskills_AppliedSkillsPowerPlatformProductDoc_webpage_wwl",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/glossary.md",
+      "redirect_url": "../power-automate/flow-types",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/contextual-help-bot.md",
+      "redirect_url": "../power-automate/self-help",
       "redirect_document_id": false
     }
   ]

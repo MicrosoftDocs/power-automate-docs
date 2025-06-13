@@ -2,8 +2,9 @@
 title: Configure actions and the actions pane
 description: This section shows how to use the actions pane to deploy actions in the flow designer.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 02/21/2025
 ms.author: iomavrid
 ms.reviewer: matp
@@ -24,6 +25,17 @@ To find a specific action, populate its name in the search bar at the top of the
 
 :::image type="content" source="media/actions-pane/actions-search.png" alt-text="Screenshot of the search field in the actions pane.":::
 
+## Mark actions as favorites
+
+By default, all your available actions are shown under the **All** section.
+
+To bookmark your preferred or most frequently used actions in a separate area, select the star icon on the right of each action to mark it as a favorite. The action then appears under the **Favorites** section. The same actions tree structure is kept for your favorite actions. To remove an action from the favorites list, select the star icon again.
+
+:::image type="content" source="media/actions-pane/favorite-actions.png" alt-text="Screenshot of actions marked as favorite in the actions pane.":::
+
+> [!NOTE]
+> Favorite actions are saved and appear across all the user's flows on their machine.
+
 ## Add actions to the workspace
 
 To develop a desktop flow, find the action you want to deploy, and double-click on it or drag it into the workspace.
@@ -34,7 +46,7 @@ After the deployment, the modal of the action opens and displays the available p
 
 :::image type="content" source="media/adding-actions/action-properties.png" alt-text="Screenshot of the modal of an action.":::
 
-### Adding actions from the suggested actions panel (preview)
+### Adding actions from the suggested actions panel
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -42,16 +54,37 @@ In addition to adding actions from the actions panel, you can also use the sugge
 
 > [!IMPORTANT]
 >
-> - This feature is in preview. Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - To understand the capabilities and limitations of this feature, go to [FAQ for Power Automate for desktop suggested actions](../faqs-action-suggestions-power-automate-desktop.md).
 
 ### Availability by region
 
-Currently, the suggested actions functionality in Power Automate for desktop is only available in environments located in the United States.
+The suggested next best action is available in environments located in the following countries/regions:
+
+  - Asia Pacific
+  - Australia
+  - Brazil
+  - Canada
+  - Europe
+  - France
+  - Germany
+  - India
+  - Japan
+  - Norway
+  - Singapore
+  - Sweden
+  - South Africa
+  - South Korea
+  - Switzerland
+  - United Arab Emirates
+  - United Kingdom
+  - United States
 
 ### Availability by account type
 
-Currently, the suggested actions functionality in Power Automate for desktop is only available for users with a work or school account.
+Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
+
+> [!NOTE]
+> If your environment is in a supported region, you are signed in with a work or school account, and you still can't see Copilot in the Power Automate for desktop experience, contact your Power Platform administrator.
 
 ### Using suggested actions in your flows
 
@@ -63,7 +96,7 @@ Once the **Suggested actions** panel appears, double-click the action that you w
 
 ### Disabling the suggested actions functionality
 
-To disable the suggested actions functionality, Power Platform admins contact Microsoft support. More information: [Get Help + Support](/power-platform/admin/get-help-support)
+To disable Copilot's suggested actions functionality, Power Platform admins can contact Microsoft support. More information: [Get Help + Support](/power-platform/admin/get-help-support)
 
 ### Help us improve this feature
 
@@ -72,14 +105,11 @@ You can send feedback by selecting the thumb up or thumb down icon underneath th
 :::image type="content" source="media/pad_generative_answers/feedback_dialog1.png" alt-text="Image that shows where you can send your feedback about copilot in Power Automate for desktop.":::
 
 > [!NOTE]
-> If you can't see the dialog box, your Power Platform admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
+> If you can't see the dialog box, your Power Platform admin might have turned it off. More information: [Turn off user feedback functionality](#turn-off-user-feedback-functionality)
 
-### Disabling the user feedback functionality
+### Turn off user feedback functionality
 
-As a Power Platform admin you can prevent users from sending feedback to Microsoft by disabling the **disableSurveyFeedback** tenant setting. More information:
-
-- [List tenant settings (preview)](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
-- [Set TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings)
+As a [Power Platform admin](/power-platform/admin/use-service-admin-role-manage-tenant#power-platform-administrator), prevent users from sending Copilot feedback to Microsoft by using the "Copilot feedback" [tenant setting](/power-platform/admin/tenant-settings).
 
 ### Data subject rights requests on user feedback
 

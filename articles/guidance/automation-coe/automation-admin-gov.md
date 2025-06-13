@@ -4,10 +4,11 @@ description: Key considerations for planning, deploying, and managing an Automat
 author: kathyos
 
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 12/9/2021
+ms.service: power-automate
 ms.subservice: guidance
-ms.author: kathyos
+ms.author: mapichle
 ms.reviewer: angieandrews
 search.audienceType: 
   - admin

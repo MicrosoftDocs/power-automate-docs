@@ -1,15 +1,16 @@
 ---
 title: Connect to SAP ERP from process mining (preview)
 description: Learn how to extract data from your SAP system and invoke RFC and BAPI functions using an on-premises data gateway.
-author: HeatherOrt
+author: kewaiss
 contributors:
   - HeatherOrt
   - v-aangie 
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/27/2023
 ms.custom: bap-template
-ms.author: heortaol
+ms.author: michalrosik
 ms.reviewer: angieandrews
 ---
 

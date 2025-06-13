@@ -3,6 +3,7 @@ title: Keep flow configuration generic
 description: Improve security and simplify management of Power Automate flows using environment variables and service principals.
 #customer intent: As a Power Automate user, I want to keep flow configurations generic so that I can improve security and simplify management.
 author: manuelap-msft
+ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 02/18/2025

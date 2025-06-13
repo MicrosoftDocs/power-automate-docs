@@ -1,6 +1,6 @@
 ---
 title: Rebind reports using a composite model - same workspace
-description: Learn how to rebind reports using a composite model with the same workspace.
+description: Learn how to rebind Process Mining reports using a composite model if your Test and Dev workspaces are linked.
 author: janPidych
 contributors:
   - janPidych
@@ -8,27 +8,36 @@ contributors:
   - hamenon-ms
   - donums
   - v-aangie  
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 08/12/2024
-ms.author: janpidych
-ms.reviewer: angieandrews
+ms.topic: how-to
+ms.date: 04/03/2025
+ms.author: michalrosik
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - flowmaker
   - enduser
+#customer intent: As a business process analyst, I want to learn how to rebind my Process Mining reports using a composite model with the same workspace so that the report customizations appear where I need them.
 ---
 
 # Rebind reports using a composite model (same workspace)
 
-If you linked your process in your Test environment to a workspace (for example, WkSpace B) that's the same as the one used for the process in your Dev environment (for example, WkSpace A), follow the steps in this article.
+If your process in the Test environment is connected to the same workspace (for example, WkSpace B) as the one in your Dev environment (for example, WkSpace A), follow the steps in this article.
 
 ## Attach a workspace to your process
 
+Take these steps to attach a workspace to your process:
+
 [!INCLUDE[alm-attach-workspace](./includes/alm-attach-workspace.md)]
 
-4. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 6.
+4. If you newly imported the process, continue to step 5. If you didn't newly import the process, go to step 7.
+1. Select the type of workspace to be used—Power BI workspace or Fabric workspace
+    1. The dialog informs you whether you originally exported the process to Power BI or Fabric workspace.
+    2. Select the same type of workspace.
+    3. Select **Continue**.
 1. Select the same workspace for this process by following these steps:
-    1. In the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
+    1. For Power BI workspace—in the **Power BI workspace** dropdown menu, select the *same workspace* as the previous workspace.
+    1. For Fabric workspace—in the **Fabric workspace** dropdown menu, select the *same workspace*, in the **Lakehouse** dropdown menu select the same destination Lakehouse.
     1. In the **Report Name** field, enter a *different report name* from your previous report name.
 
         > [!IMPORTANT]
@@ -71,16 +80,18 @@ The numbering corresponds with the numbering of entities in the following screen
 
 There are three (3) entities titled 'Report A'. You can differentiate them using their icons and their **Refreshed** timestamps:
 
-- The icon with the yellow bars represents the reports and the other icon is that of the composite model or semantic model.
+- The icon with yellow bars represents the reports and the other icon is that of the composite model or semantic model.
 - The report with the same **Refreshed** timestamp as the composite model is the report of the composite model.
 
-    :::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-a-same.png" alt-text="Screenshot of entities and refreshed timestamps.":::
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-a-same.png" alt-text="Highlights a report showing entities and refreshed timestamps.":::
 
 Your lineage view should look like the following screenshot:
 
-:::image type="content" source="media/process-mining-alm-rebind-with-comp/wkspace-a-semantic-same.png" alt-text="Screenshot of the lineage view of the semantic model.":::
+:::image type="content" source="media/process-mining-alm-rebind-with-comp/wkspace-a-semantic-same.png" alt-text="Highlights the lineage view of the semantic model.":::
 
-### Rebind the report in Power BI
+## Rebind the report in Power BI
+
+Take these steps to rebind the report in Power BI:
 
 [!INCLUDE[alm-rebind-in-power-bi](./includes/alm-rebind-in-power-bi.md)]
 
@@ -90,7 +101,7 @@ Your lineage view should look like the following screenshot:
 8. Search for and select the semantic model of the process that's in your Test environment. The semantic model is **Report B_Dataset_206…** and it should be in your **WkSpace A**.
 9. Select **Create**.
 
-    :::image type="content" source="media/process-mining-alm-rebind-with-comp/select-dataset-to-create-report-same.png" alt-text="Screenshot of the dataset to create a report using the same workspace.":::
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/select-dataset-to-create-report-same.png" alt-text="Shows selecting a dataset to create a report using the same workspace.":::
 
 10. When the **Connect to your data** message appears, select relevant tables, and then select **Submit**.
 11. When the query changes are applied, select **Close**.
@@ -101,12 +112,11 @@ Your lineage view should look like the following screenshot:
 
     The lineage view now shows the composite model.
 
-    :::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-a-same-lineage.png" alt-text="Screenshot of the composit model lineage view.":::
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/state-of-workspace-a-same-lineage.png" alt-text="The lineage view now highlights the composite model.":::
 
 16. Select the **Report B** that the composite model points to. It's the second red box in the previous image.
 17. Select **Open report**.
 
     The report looks like that of the composite model from **WkSpace A** with the **Self Loop** percentage in the report.
 
-    :::image type="content" source="media/process-mining-alm-rebind-with-comp/self-loop-b.png" alt-text="Screenshot of the composite model with the 'Self Loop' percentage.":::
-
+    :::image type="content" source="media/process-mining-alm-rebind-with-comp/self-loop-b.png" alt-text="Shows the composite model highlighting the 'Self Loop' percentage.":::

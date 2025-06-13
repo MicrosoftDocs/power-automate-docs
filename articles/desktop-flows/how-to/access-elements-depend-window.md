@@ -3,6 +3,7 @@ title: Access elements that depend on how the window appears on the screen
 description: Access elements that depend on how the window appears on the screen	
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/24/2021

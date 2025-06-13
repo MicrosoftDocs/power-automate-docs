@@ -13,8 +13,9 @@ ms.author: jamiller
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 01/26/2023

@@ -6,10 +6,11 @@ contributors:
   - donums
   - v-aangie  
   - tatn
+ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 03/14/2025
-ms.author: janpidych
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

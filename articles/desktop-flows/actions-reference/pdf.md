@@ -1,20 +1,24 @@
 ---
 title: PDF actions reference
-description: See all the available PDF actions.
+description: Explore Power Automate's PDF actions to extract data, manage files, and streamline document processing with ease.
 author: mattp123
-
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/20/2023
+ms.date: 04/30/2025
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
-- Yiannismavridis
-- NikosMoutzourakis
-- PetrosFeleskouras
-search.audienceType: 
+  - Yiannismavridis
+  - NikosMoutzourakis
+  - PetrosFeleskouras
+search.audienceType:
   - flowmaker
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/30/2025
 ---
 
 # PDF actions
@@ -46,7 +50,7 @@ The following example selects a combination of specific pages and a range of pag
 
 ## <a name="extracttextfrompdfaction"></a> Extract text from PDF
 
-You can extract text from a PDF file by using the "Extract text from PDF" action. In the action properties you can define the source PDF file and the pages that text should be extracted from. Under the advanced action properties you can define a password in case the PDF file is protected and if the engine should optimize for structured data or not. 
+You can extract text from a PDF file by using the "Extract text from PDF" action. In the action properties you can define the source PDF file and the pages that text should be extracted from. Under the advanced action properties you can define a password in case the PDF file is protected and if the engine should optimize for structured data or not.
 
 ### Input parameters
 
@@ -194,5 +198,8 @@ You can use the **Merge PDF files** action to take two or more PDF files and mer
 |PDF file doesn't exist|File doesn't exist on the given path|
 |Invalid password|The given password is invalid|
 |Failed to merge PDF files|Indicates that an error occurred while merging the files|
+
+> [!NOTE]
+> When you use the "Merge PDF Files" action, don't set the destination for the merged PDF as one of the original files being merged. This can cause the action to fail and might delete the original file. To protect your original documents, always choose a new file location or an existing one that isn't among the original files being merged for the merged PDF output.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

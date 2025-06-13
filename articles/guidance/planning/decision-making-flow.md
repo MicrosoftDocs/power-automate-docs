@@ -2,12 +2,12 @@
 title: Flowchart to help you decide how to design your automation in Power Automate | Microsoft Docs
 description: This article shows a flowchart that you can use to determine how to architect your automation.
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: guidance
 ms.date: 12/10/2020
-ms.author: tayoshi
+ms.author: mapichle
 ms.reviewer: kathyos
 
 ---

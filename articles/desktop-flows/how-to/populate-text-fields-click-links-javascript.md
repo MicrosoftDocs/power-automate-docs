@@ -3,6 +3,7 @@ title: Populate text fields and click on links using JavaScript
 description: Populate text fields and click on links using JavaScript
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 07/01/2021

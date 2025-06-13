@@ -6,9 +6,10 @@ contributors:
   - rosikm
   - nvigne
   - v-aangie 
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 04/04/2025
+ms.topic: how-to
+ms.date: 06/11/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -47,7 +48,7 @@ If you didn't do this yet, install the Azure tools.
 1. Validate that you're signed in.
 1. Register the process mining service principal by typing this command:
 
-    **New-AzureADServicePrincipal -AppId dad3c6de-ed58-42ef-989f-9c0303aaeedc -DisplayName ‘Process Insights Prod’**
+    **New-AzureADServicePrincipal -AppId dad3c6de-ed58-42ef-989f-9c0303aaeedc -DisplayName 'Process Insights Prod'**
 
 1. Sign in to [Microsoft Power BI](https://powerbi.microsoft.com/).
 1. Select the ellipsis (**...**) > **Settings** > **Admin portal**.
@@ -77,9 +78,15 @@ Now that you connected your Power BI workspace to the process mining capability 
    > [!IMPORTANT]
    > It is required that the service principal gets added as an admin. If you skip this step, the feature doesn't work.
 
+### Use an existing custom Power BI workspace
+
+If you decide to use an already existing Power BI workspace, make sure you're added to it with at least a **Contributor** role assigned.
+
+Only a workspace admin can [assign users access to Power BI workspace](/power-bi/collaborate-share/service-give-access-new-workspaces). 
+
 ## Load your process analytics in Power BI
 
-Load your process analytics in Power BI to start customizing your report.
+To start customizing your report, load your process analytics in Power BI.
 
 1. After analyzing a process, go to the process **Details** page by selecting the name of the process in the breadcrumbs.
 1. On the **Details** card, select **Edit**.
@@ -141,11 +148,11 @@ After completing these steps, return to the analytics page of your process in th
 
     After the report is successfully published, you can open it from the pop-out window.
 
-You successfully customized your Power BI workspace. Every time you refresh your process and reopen your Power BI report, your metrics and customizations are updated. Try out Power BI and customize your reports to learn how they can help you analyze your process effectively.
+You successfully customized your Power BI workspace. Every time you refresh your process and reopen your Power BI report, your metrics and customizations are updated. To learn how customizing reports can help you analyze your process effectively, try out Power BI and customize your reports.
 
 Once this step is done, you see the report in your Power BI workspace with the report name that you entered. You can edit and save it. Your report is updated with the changes that you made with Power BI.
 
-If you encounter issues or error messages, go to [Issues with your own Power BI workspace](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace).
+Learn how to resolve issues or error messages in [Issues with your own Power BI workspace](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace).
 
 ## Related information
 

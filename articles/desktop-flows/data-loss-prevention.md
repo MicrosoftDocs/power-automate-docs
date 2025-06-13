@@ -3,9 +3,10 @@ title: Data loss prevention (DLP) policies
 description: Data loss prevention (DLP) policies 
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 06/30/2023
+ms.topic: article
+ms.date: 04/30/2025
 ms.author: quseleba
 ms.reviewer: matp
 contributors:
@@ -16,7 +17,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Data loss prevention (DLP) policies 
+# Data loss prevention (DLP) policies
 
 Power Automate offers to administrators the option to create and enforce policies that classify desktop flows action groups as business or non-business and mark actions or action groups as blocked. That way a non-business action can't be combined with an action that has been marked as business so that to avoid data exposure outside the organization. For more details on how to form a data loss prevention (DLP) policy, visit the [respective topic](../prevent-data-loss.md) under the Administer Power Platform documentation.
 
@@ -69,7 +70,13 @@ To be able to launch the desktop flow from a cloud flow, edit the desktop flow i
 >[!IMPORTANT]
 > In case a data loss prevention (DLP) policy rule is set to a desktop flow after it has been used in a cloud flow, there won't be any notification and the cloud flow will error out at that step. In case a desktop flow violates any rules and you correct it you will need to go back to the cloud flow and reselect it from the list.
 
-### More info
+## Endpoint filtering in desktop flows
 
-* [Learn more about Power Automate DLP](../prevent-data-loss.md)
-* [Learn more about DLP policies](/power-platform/admin/wp-data-loss-prevention)
+The browser automation endpoint filtering feature in Power Automate for desktop improves control and security of desktop flows by specifying which web pages can or can't be accessed. This functionality is essential for maintaining compliance with organizational policies and reducing the risk of accessing unwanted or harmful content during a flow's execution. Endpoint filtering is implemented in the "Launch Web Browser" and "Go to web page" actions. It validates each web page request against predefined endpoint criteria before a desktop flow proceeds with browser interactions.
+
+Learn more about browser automation endpoint filtering in [Connector endpoint filtering](/power-platform/admin/connector-endpoint-filtering#desktopflow---browser-automation).
+
+### Related information
+
+- [Learn more about Power Automate DLP](../prevent-data-loss.md)
+- [Learn more about DLP policies](/power-platform/admin/wp-data-loss-prevention)

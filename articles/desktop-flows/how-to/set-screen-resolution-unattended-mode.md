@@ -2,6 +2,7 @@
 title: Set screen resolution on unattended mode
 description: Set screen resolution on unattended mode
 author: fredgGitHub
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 04/01/2025

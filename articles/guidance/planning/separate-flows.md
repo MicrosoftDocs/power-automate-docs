@@ -2,12 +2,12 @@
 title: Separate flows into smaller automated processes in a Power Automate project | Microsoft Docs
 description: This article gives tips and examples for architecting your flows into smaller, separate automated processes. 
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
+ms.topic: concept-article
 ms.custom: guidance
 ms.date: 12/10/2020
-ms.author: tayoshi
+ms.author: mapichle
 ms.reviewer: kathyos
 
 ---
