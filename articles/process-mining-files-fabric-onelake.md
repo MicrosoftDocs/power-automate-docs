@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 01/17/2025
+ms.date: 06/13/2025
 ms.custom: bap-template
 ms.author: michalrosik
 ms.reviewer: angieandrews
@@ -43,9 +43,9 @@ Power Automate Process Mining gives you the option to store and read event log d
 > - Delta tables in Lakehouse.
 
 - CSV data in your Lakehouse should meet the following CSV file format requirements:
-    - **Compression type:** None
-    - **Column delimiter:** Comma (,)
-    - **Row delimiter:** Default and encoding. For example, Default (\r,\n, or \r\n) 
+    - **Compression type**: None
+    - **Column delimiter**: Comma (,)
+    - **Row delimiter**: Default and encoding. For example, Default (\r,\n, or \r\n) 
 
     :::image type="content" source="media/process-mining-byo-azure-data-lake/csv.png" alt-text="Screenshot of the File format settings screen.":::
 
@@ -53,7 +53,7 @@ Power Automate Process Mining gives you the option to store and read event log d
 - The size (width) of the header row is currently limited to 1 MB.
 
 > [!IMPORTANT]
-> Ensure that time stamp represented in your CSV file follows the ISO 8601 standard format (for example, `YYYY-MM-DD HH:MM:SS.sss` or `YYYY-MM-DDTHH:MM:SS.sss`).
+> Ensure that the time stamp represented in your CSV file follows the ISO 8601 standard format (for example, `YYYY-MM-DD HH:MM:SS.sss` or `YYYY-MM-DDTHH:MM:SS.sss`).
 
 ## Connect to Fabric OneLake
 
@@ -65,10 +65,10 @@ Power Automate Process Mining gives you the option to store and read event log d
 
 1. Select an optional Power BI workspace or select **Skip**.
 1. On the **Connection setup** screen, select your **Fabric Workspace** from the dropdown menu. This populates the **Lakehouse** dropdown menu. From the menu, select the lakehouse that contains your data files and select **Next**.
-
 1. Browse the **Lakehouse** folder structure and select the file or folder containing the event log data.
 
     You can either select a single file or a folder with multiple files. All files must have the same headers and format.
+
 1. Select **Next**.
 1. On the **Map your data** screen, map your data to the required schema.
 
