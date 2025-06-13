@@ -34,6 +34,11 @@ The scenarios in this article use a cloud flow to notify a channel or a group ch
 
     Notice that the trigger card says *Invalid parameters* in red. This is because you need to configure it.
 
+    > [!NOTE]
+    > The screenshots of the designer might look different from your screen. This is because Power Automate allows you to use either the modern [new designer](flows-designer.md) or the [classic designer](flows-designer.md). The screenshots use the new designer, but the steps are similar in the classic designer.
+    >
+    > Learn more about the designer in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+
 1. In the designer, select the **When a file is created (properties only)** card to open the configuration pane to the left.
 1. In the configuration pane, configure your trigger by selecting a site address and library name for the SharePoint site from the **Site Address** and **Library Name** dropdown menus.
 
