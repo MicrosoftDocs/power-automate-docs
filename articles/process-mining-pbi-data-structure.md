@@ -7,8 +7,8 @@ contributors:
   - v-aangie 
 ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: how-to
-ms.date: 04/16/2024
+ms.topic: conceptual
+ms.date: 03/14/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -16,32 +16,28 @@ search.audienceType:
   - enduser
 ---
 
-# Use the optimized data structure in a Power BI report (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Use the optimized data structure in a Power BI report
 
 The new optimized data structure leads to faster and more memory efficient analysis of processes. By saving on memory, customers can analyze larger processes and save on costs by using smaller Power BI capacities to perform analysis.
 
 In addition, a more intuitive Power BI model data structure is used, which allows customers to dig deeper into their insights with less time and effort. To learn more about this data model, go to the [Power BI data model structure](#power-bi-data-model-structure) section this article.
 
-> [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-
 ## Previous optimized structure to deprecate soon
 
 The new optimized data structure replaces the previous structure completely and the previous data structure will be deprecated. To find out the date and necessary steps, go to the banner in the process **Details** page.
 
-The new optimized data structure takes place in the background, so you'll see it only in the resulting model as described in the following section.
+The new optimized data structure takes place in the background, so it displays only in the resulting model, as described in the following section.
   
 ## Enable XMLA read/write setting
 
-To use the optimized data structure, the XMLA endpoint property must be enabled for read-write. By default, Premium capacity or Premium Per User semantic model workloads have the XMLA endpoint property setting enabled for read-only.
+To use the optimized data structure, the XMLA endpoint property must be enabled for read-write. By default, Premium capacity, Fabric capacity, or Premium Per User semantic model workloads have the XMLA endpoint property setting enabled for read-only.
 
    > [!IMPORTANT]
    > Enabling XMLA can only be done by the capacity admin.
 
 ### Enable read-write for a Premium capacity semantic model workload
 
-1. Sign in to [Power BI](https://msit.powerbi.com/).
+1. Sign in to [Power BI](https://app.powerbi.com/).
 1. Select **Settings** > **Admin portal**.
 1. In the Power BI **Admin portal**, select **Capacity settings** > **Power BI Premium** > *capacity name*.
 1. Expand **Power BI Workloads**.
@@ -49,19 +45,31 @@ To use the optimized data structure, the XMLA endpoint property must be enabled 
 
     The **XMLA Endpoint** setting applies to all workspaces and semantic models assigned to the capacity.
 
-    :::image type="content" source="media/process-mining-pbi-data-structure/XMLAEndpoint.svg" alt-text="Screenshot of the XMLA endpoint settings.":::
+    :::image type="content" source="media/process-mining-pbi-data-structure/XMLAEndpoint.svg" alt-text="Screenshot of the XMLA endpoint settings for a Premium capacity semantic model workload.":::
 
 ### Enable read-write for a Premium Per User semantic model workload
 
-1. Sign in to [Power BI](https://msit.powerbi.com/).
+1. Sign in to [Power BI](https://app.powerbi.com/).
 1. Select **Settings** > **Admin portal**.
 1. In the Power BI **Admin portal**, select **Premium Per User**.
 1. Expand **Semantic model workload** settings.
 1. In the **XMLA Endpoint** setting, select **Read Write**.
 
+### Enable read-write for a Fabric capacity semantic model workload
+
+1. Sign in to [Power BI](https://app.powerbi.com/).
+1. Select **Settings** > **Admin portal**.
+1. In the Power BI **Admin portal**, select **Capacity settings** > **Fabric Capacity** > *capacity name*.
+1. Expand **Power BI Workloads**.
+1. In the **XMLA Endpoint** setting, select **Read Write**.
+
+    The **XMLA Endpoint** setting applies to all workspaces and semantic models assigned to the capacity.
+
+    :::image type="content" source="media/process-mining-pbi-data-structure/XMLAEndpoint.svg" alt-text="Screenshot of the XMLA endpoint settings for a Premium Per User semantic model workload.":::
+
 ### Enable using the optimized data structure
 
-For new processes that use a custom workspace, the optimized data structure is set to **true** by default. To enable it or confirm it is enabled, perform the following steps.
+For new processes that use a custom workspace, the optimized data structure is set to **true** by default. To enable it or confirm that it is enabled, perform the following steps.
 
 1. Go to the process details page and select **Edit**.
 
@@ -74,7 +82,7 @@ For new processes that use a custom workspace, the optimized data structure is s
 
 1. To save the changes, select **Save** if the button is enabled.
 
-    If it's not enabled, that means the value of the **Use optimized data structure** field was already set to **On**, thus you can skip this step.
+    If it isn't enabled, that means the value of the **Use optimized data structure** field was already set to **On**, thus you can skip this step.
 
 ## Power BI data model structure
 
@@ -124,12 +132,12 @@ The content of view data entities changes in the following scenarios.
 - When a user changes the filtering definition in any process view.
 - When a new custom metric is created.
 
-View data entities allows you to access process data influenced by the applied filters and accesses the measures calculated based on the applied filters. As both case and event level filters can be used in the definition of a process view, it is recommended to work with view data entities, as the influence on the resulting dataset might be significant.
+View data entities allows you to access process data influenced by the applied filters and accesses the measures calculated based on the applied filters. As both case and event level filters can be used in the definition of a process view, we recommend to work with view data entities, as the influence on the resulting dataset might be significant.
 
 |Entity|Description|
 |------|-----------|
 |ViewCases|Entity holds information on which cases are included in which view. In addition, it includes the information for which variant the case is following and precalculated measures for the case. If a case is included in several views, the entity holds a record for each case-view combination. This is important, as some of the values of calculated case measures depend on the filtering criteria set in the view. It also holds any precalculated custom metric values (if defined in process context and valid on case level). The case record is uniquely identified by the **Index** column.|
-|ViewEvents|Entity holds information on which events are included in which view and which case they are connected to (event level process view filters might modify the events included in the case). In addition, it includes precalculated measures for the event. If an event is included in several views, the entity holds a record for each event-view combination. This is important, as some of the values of calculated event measures depend on the filtering criteria set in the view. It also holds any precalculated custom metric values (if defined in process context and valid on event level). The event record is uniquely identified by the **Index** column.|
+|ViewEvents|Entity holds information on which events are included in which view and which case they're connected to (event level process view filters might modify the events included in the case). In addition, it includes precalculated measures for the event. If an event is included in several views, the entity holds a record for each event-view combination. This is important, as some of the values of calculated event measures depend on the filtering criteria set in the view. It also holds any precalculated custom metric values (if defined in process context and valid on event level). The event record is uniquely identified by the **Index** column.|
 |ViewTransitions|Entity holds information on which transitions are included in which view. In addition, it includes precalculated measures for the transition. If a transition is included in several views, the entity holds a record for each transition-view combination. This is important, as some of the values of calculated transition measures depend on the filtering criteria set in the view. It also holds any precalculated custom metric values (if defined in process context and valid on transition / edge level). The transition record is uniquely identified by the **Index** column. |
 |ViewParallelTransitions|Entity holds a record for a combination of transition and case, when that transition is considered parallel in that case in a particular view.|
 |Variants|Entity holds the relations between variants and process views. A record is included if a particular variant is included in a view after the filtering criteria are taken into account.|
