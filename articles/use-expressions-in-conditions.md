@@ -6,7 +6,7 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 06/12/2025
+ms.date: 06/16/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
@@ -42,7 +42,7 @@ Here's what you need to complete this tutorial.
 
 * Access to Power Automate.
 * Your own spreadsheet with the tables described later in this tutorial. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Power Automate can access it.
-* Microsoft 365 Outlook (While we use Outlook here, you can use any supported email service in your flows.)
+* Microsoft 365 Outlook (While we use Outlook in this tutorial, you can use any supported email service in your flows.)
 
 ## Use the 'or' expression
 
@@ -59,9 +59,9 @@ Here's an example of what the spreadsheet might look like:
 
 Given the preceding spreadsheet, you want to use Power Automate to remove all rows with a **Status** column that is set to `completed` or `unnecessary`.
 
-## Create the cloud flow
+## Create a cloud flow
 
-Each scenario includes a step-by-step guide to help you create the cloud flow. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you don't have access to Copilot, select the **Without copilot** tab.
+You can create a cloud flow using natural language in Copilot. You can also create a flow using classic Power Automate functionality. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you don't have access to Copilot, select the **Without copilot** tab.
 
 # [Using copilot](#tab/using-copilot)
 
@@ -73,12 +73,11 @@ Each scenario includes a step-by-step guide to help you create the cloud flow. I
     ```
 
 1. Select **Generate**.
-
-    After you generate the prompt, Copilot creates the flow for you. You need to fill in details for the flow to work, such as parameters for various actions added by Copilot.
-
 1. Select **Keep it and continue**.
 1. Review the connections. If your data sources are connected properly, a green checkmark appears next to the app or service. If a green checkmark doesn't appear, select the app or service and follow the instructions.
-1. After your connections are set, select **Create flow**. The designer screen opens.
+1. After your connections are set, select **Create flow**. The designer screen opens. This is where you can configure your cloud flow.
+
+You can configure your cloud flow in either the modern [new designer](flows-designer.md) or the classic designer. The default designer is the new designer, which is available to all users if it is enabled. The classic designer is available to users who prefer the classic experience, or whose admin disabled the new designer feature. Learn more about the designer in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
 
 # [Without copilot](#tab/without-copilot)
 
@@ -86,28 +85,20 @@ Each scenario includes a step-by-step guide to help you create the cloud flow. I
 1. On the left pane, select **My flows**.
 1. Select **New flow** > **Scheduled cloud flow**.
 1. Give your flow a name.
-1. Set the schedule to run the flow once daily.
+1. In the **Repeats every** field dropdown menu, select **Day** to set the schedule to run the cloud flow once daily.
 1. Select the **Create** button to open the designer.
+
+You can configure your cloud flow in either the modern [new designer](flows-designer.md) or the classic designer. The default designer is the new designer, which is available to all users if it is enabled. The classic designer is available to users who prefer the classic experience, or whose admin disabled the new designer feature. Learn more about the designer in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+
 ---
-
-Once you create your cloud flow, you need to configure the actions in the designer. The following sections describe how to do the following configuration tasks.
-
-- [Select the spreadsheet and get all rows](#select-the-spreadsheet-and-get-all-rows)
-- [Check the status column of each row](#check-the-status-column-of-each-row)
-- [Delete matching rows from the spreadsheet](#delete-matching-rows-from-the-spreadsheet)
-
-[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
 
 ## Select the spreadsheet and get all rows
 
-After you create a cloud flow, you can configure it in the *designer*. The designer is where you can add, remove, and edit actions in your flow.
-
-You can configure your cloud flow in either the *new designer* or the *classic designer*. The default designer is the [new designer](flows-designer.md), which is available to all users if enabled. The classic designer is available to users who prefer the classic experience, or whose admin disabled the new designer feature.
-
 # [New designer](#tab/new-designer)
 
+1. [Create a cloud flow](#create-a-cloud-flow) by following the procedure in the previous section.
 1. In the designer, select the **List rows present in a table** action card.
-1. In the **Parameters** tab, select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
+1. In the **Parameters** tab, select the **Location**, **Document Library**, **File**, and **Table**.
 
     :::image type="content" source="./media/use-expressions-in-conditions/table-parameters.png" alt-text="Screenshot of the parameters for list rows present in a table in Copilot.":::
 
@@ -115,19 +106,30 @@ You can configure your cloud flow in either the *new designer* or the *classic d
 
 # [Classic designer](#tab/classic-designer)
 
+1. [Create a cloud flow](#create-a-cloud-flow) by following the procedure in the previous section.
 1. In the designer, select **New step**.
+1. In the **Search connectors and actions** field, type **rows**.
+1. In the list of icons, select **Excel Online (Business)**.
 
-1. Search for **rows**, and then select **Excel Online (Business)**.
+    In the **Actions** tab, select the action that corresponds to the spreadsheet that you're using. For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
 
-    Select the *get a row* action that corresponds to the spreadsheet that you're using. For example, if you're using Google Sheets, select **Google Sheets - Get rows**.
-
-1. Select the **List rows present in a table** action.
+1. In the **Actions** tab, select **List rows present in a table (Excel Online Business)**.
 
     :::image type="content" source="includes/media/new-step/get-excel-rows.png" alt-text="Screenshot of listing rows in a table.":::
 
-1. Select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
+1. In the **List rows present in a table**, select the **Location**, **Document Library**, **File**, and **Table** that contain your data.
 
     :::image type="content" source="includes/media/new-step/select-table-to-search.png" alt-text="Screenshot of Location, Document Library, File, and Table fields in the List rows present in a table card.":::
+
+---
+
+### Save and test your cloud flow
+
+1. Select **Save**. A green message appears that says **Your flow is ready to go. We recommend you test it**.
+1. Select **Test** to run the flow.
+1. In the **Test flow** panel, select **Manually** > **Test**.
+1. 1. In the **Run flow** panel, select **Run flow**. If your flow is set up correctly, a message appears that says **Your flow run successfully started. To monitor it, go to the Flow Runs Page**.
+1. To close the **Run flow** panel, select **Done**.
 
 ---
 
@@ -135,10 +137,9 @@ You can configure your cloud flow in either the *new designer* or the *classic d
 
 # [New designer](#tab/new-designer)
 
+1. [Create a cloud flow](#create-a-cloud-flow) by following the procedure in the previous section.
 1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
-
 1. On the **Add an action** screen, search for **apply to each**, and then select the **Apply to each** under **Control**.
-
 1. Add the **value** token to the **Select an output from previous steps** box by selecting inside the field and then selecting the lightning bolt icon.
 
     :::image type="content" source="./media/use-expressions-in-conditions/lightning-rod.png" alt-text="Screenshot selecting the value from the previous step.":::
@@ -146,9 +147,7 @@ You can configure your cloud flow in either the *new designer* or the *classic d
    This **value** token represents the spreadsheet table and all of its data.
 
 1. On the **Apply to each** card, add a new step by selecting the plus sign (**+**) > **Add an action**.
-
 1. Search for **condition**, and then select the **Condition** control.
-
 1. Add the following **OR** expression. This **OR** expression checks the value of each row in the table.
 
     If the value of the **Status** column is *completed* **Or** *unnecessary*, the **OR** expression evaluates to **true**.
@@ -159,18 +158,14 @@ You can configure your cloud flow in either the *new designer* or the *classic d
 
 # [Classic designer](#tab/classic-designer)
 
-1. Select **New step**.
-
+1. [Create a cloud flow](#create-a-cloud-flow) by following the procedure in the previous section.1. Select **New step**.
 1. Search for **apply to each**, and then select the **Apply to each - Control**.
-
 1. Add the **value** token to the **Select an output from previous steps** box.
 
    This **value** token represents the spreadsheet table and all of its data.
 
 1. Select **Add an action** on the **Apply to each** card.
-
 1. Search for **condition**, and then select the **Condition** control.
-
 1. Add the following **Or** expression. This **Or** expression checks the value of each row in the table. If the value of the **Status** column is *completed* **Or** *unnecessary*, the **Or** expression evaluates to "true".
 
     Here's an example of a **Condition** card.
@@ -183,6 +178,7 @@ You can configure your cloud flow in either the *new designer* or the *classic d
 
 # [New designer](#tab/new-designer)
 
+1. [Create a cloud flow](#create-a-cloud-flow) by following the procedure in the previous section.
 1. Select the plus sign (**+**) to add an action on the **True** branch of the condition.
 
     The **True** branch runs if the **Or** condition evaluates to **true**.
@@ -201,6 +197,7 @@ You can configure your cloud flow in either the *new designer* or the *classic d
 
 # [Classic designer](#tab/classic-designer)
 
+1. [Create a cloud flow](#create-a-cloud-flow) by following the procedure in the previous section.
 1. Select **Add an action** on the **If yes** branch of the condition.
 
     The **If yes** branch runs if the **OR** condition evaluates to **true**.
@@ -261,7 +258,7 @@ Your **Condition** card should look similar to the following screenshot.
 
 After your flow runs, the spreadsheet should look similar to the following screenshot.
 
-:::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-after-empty-expression-runs.png" alt-text="SScreenshot of the spreadsheet after 'empty' runs.":::
+:::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-after-empty-expression-runs.png" alt-text="Screenshot of the spreadsheet after 'empty' runs.":::
 
 Notice extra lines are removed from the table.
 
