@@ -2,11 +2,11 @@
 title: Overview of using Outlook and Power Automate
 description: Get an overview of using Outlook and Power Automate.
 suite: flow
-author: v-kewaiss
+author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 06//2025
+ms.date: 06/16/2025
 ms.author: kewaiss
 ms.reviewer: angieandrews
 search.audienceType: 
