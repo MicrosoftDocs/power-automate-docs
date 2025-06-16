@@ -17,24 +17,9 @@ search.audienceType:
 ---
 # Use expressions in conditions to check multiple values
 
-In this tutorial, you learn to use expressions and *conditions* to compare multiple values.
+When you create a cloud flow, you can use the [Condition](add-condition.md#add-a-condition) action to quickly compare a single value with another value. However, there are times when you need to compare multiple values. For example, you might want to check the value of a few columns in a spreadsheet or database table.
 
-When you create a cloud flow, you can use the [**Condition**](add-condition.md#add-a-condition) action to quickly compare a single value with another value. However, there are times when you need to compare multiple values. For example, you might want to check the value of a few columns in a spreadsheet or database table.
-
-You can use any combination of the following logical expressions in your conditions.
-
-Expression|Description|Example
---------|-----------|-------
-|[and](#use-the-and-expression)|Takes two arguments and returns true if both values are true.<br><b>Note</b>: Both arguments must be Booleans.|This expression returns false: <br>`and(greater(1,10),equals(0,0))`
-|[or](#use-the-or-expression)|Takes two arguments and returns true if either argument is true. <br><b>Note</b>: Both arguments must be Booleans.|This expression returns true:<br>`or(greater(1,10),equals(0,0))`
-|equals|Returns true if two values are equal.|For example, if parameter1 is someValue, this expression returns true:<br>`equals(parameters('parameter1'), 'someValue')`
-|[less](#use-the-less-expression)|Takes two arguments and returns true if the first argument is less than the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This expression returns true:<br>`less(10,100)`
-|lessOrEquals|Takes two arguments and returns true if the first argument is less than or equal to the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This expression returns true:<br>`lessOrEquals(10,10)`
-|[greater](#use-the-greater-expression)|Takes two arguments and returns true if the first argument is greater than the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This expression returns false:<br>`greater(10,10)`
-|greaterOrEquals|Takes two arguments and returns true if the first argument is greater than or equal to the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This expression returns false:<br>`greaterOrEquals(10,100)`
-|[empty](#use-the-empty-expression)|Returns true if the object, array, or string is empty.|This expression returns true:<br>`empty('')`
-|not|Returns the opposite of a boolean value. |This expression returns true:<br>`not(contains('200 Success','Fail'))`
-|if|Returns a specific value if the expression results in true or false.|This expression returns "yes":<br>`if(equals(1, 1), 'yes', 'no')`
+In this tutorial, you create a cloud flow and use the `or` condition. In the [Scenarios for other common expressions](#scenarios-for-other-common-expressions) section, you learn how to use other expressions such as `and`, `empty`, `greater`, and `less` in conditions.
 
 ## Prerequisites
 
@@ -43,21 +28,6 @@ Here's what you need to complete this tutorial.
 * Access to Power Automate.
 * Your own spreadsheet with the tables described later in this tutorial. Be sure to save your spreadsheet in a location such as Dropbox or Microsoft OneDrive so that Power Automate can access it.
 * Microsoft 365 Outlook (While we use Outlook in this tutorial, you can use any supported email service in your flows.)
-
-## Use the 'or' expression
-
-Sometimes your workflow needs to take an action if the value of an item is `valueA` *or* `valueB`. For example, you might be tracking the status of tasks in a spreadsheet table. Assume that the table has a column named **Status** and the possible values in this column are:
-
-* `completed`
-* `blocked`
-* `unnecessary`
-* `not started`
-
-Here's an example of what the spreadsheet might look like:
-
-:::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table.png" alt-text="Screenshot of a sample spreadsheet with a Status column.":::
-
-Given the preceding spreadsheet, you want to use Power Automate to remove all rows with a **Status** column that is set to `completed` or `unnecessary`.
 
 ## Create a cloud flow
 
@@ -75,9 +45,9 @@ You can create a cloud flow using natural language in Copilot. You can also crea
 1. Select **Generate**.
 1. Select **Keep it and continue**.
 1. Review the connections. If your data sources are connected properly, a green checkmark appears next to the app or service. If a green checkmark doesn't appear, select the app or service and follow the instructions.
-1. After your connections are set, select **Create flow**. The designer screen opens. This is where you can configure your cloud flow.
+1. After your connections are set, select **Create flow**. The *designer* screen opens. This is where you can configure your cloud flow.
 
-You can configure your cloud flow in either the modern [new designer](flows-designer.md) or the classic designer. The default designer is the new designer, which is available to all users if it is enabled. The classic designer is available to users who prefer the classic experience, or whose admin disabled the new designer feature. Learn more about the designer in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+    You can configure your cloud flow in either the modern [new designer](flows-designer.md) or the classic designer. The default designer is the new designer, which is available to all users if enabled. The classic designer is available to users who prefer the classic experience, or whose admin disabled the new designer feature. Learn more about the designer in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
 
 # [Without copilot](#tab/without-copilot)
 
@@ -86,17 +56,31 @@ You can configure your cloud flow in either the modern [new designer](flows-desi
 1. Select **New flow** > **Scheduled cloud flow**.
 1. Give your flow a name.
 1. In the **Repeats every** field dropdown menu, select **Day** to set the schedule to run the cloud flow once daily.
-1. Select the **Create** button to open the designer.
+1. Select the **Create** button to open the *designer*.
 
-You can configure your cloud flow in either the modern [new designer](flows-designer.md) or the classic designer. The default designer is the new designer, which is available to all users if it is enabled. The classic designer is available to users who prefer the classic experience, or whose admin disabled the new designer feature. Learn more about the designer in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+    You can configure your cloud flow in either the modern [new designer](flows-designer.md) or the classic designer. The default designer is the new designer, which is available to all users if enabled. The classic designer is available to users who prefer the classic experience, or whose admin disabled the new designer feature. Learn more about the designer in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
 
 ---
 
 ## Select the spreadsheet and get all rows
 
+Aftter you [create a cloud flow](#create-a-cloud-flow), you need to get a spreadsheet table that has a **Status** column. The possible values in the **Status** column are:
+
+Sometimes your workflow needs to take an action if the value of an item is `valueA` *or* `valueB`. For example, you might be tracking the status of tasks in a spreadsheet table. Assume that the table has a column named **Status** and the possible values in this column are:
+
+* `completed`
+* `blocked`
+* `unnecessary`
+* `not started`
+
+Here's an example of what the spreadsheet might look like:
+
+:::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table.png" alt-text="Screenshot of a sample spreadsheet with a Status column.":::
+
+To work with your spreadsheet, begin in the designer.
+
 # [New designer](#tab/new-designer)
 
-1. [Create a cloud flow](#create-a-cloud-flow) by following the procedure in the previous section.
 1. In the designer, select the **List rows present in a table** action card.
 1. In the **Parameters** tab, select the **Location**, **Document Library**, **File**, and **Table**.
 
@@ -106,7 +90,6 @@ You can configure your cloud flow in either the modern [new designer](flows-desi
 
 # [Classic designer](#tab/classic-designer)
 
-1. [Create a cloud flow](#create-a-cloud-flow) by following the procedure in the previous section.
 1. In the designer, select **New step**.
 1. In the **Search connectors and actions** field, type **rows**.
 1. In the list of icons, select **Excel Online (Business)**.
@@ -125,20 +108,24 @@ You can configure your cloud flow in either the modern [new designer](flows-desi
 
 ### Save and test your cloud flow
 
-1. Select **Save**. A green message appears that says **Your flow is ready to go. We recommend you test it**.
+1. In the designer, select **Save**. A green message appears that says **Your flow is ready to go. We recommend you test it**.
 1. Select **Test** to run the flow.
 1. In the **Test flow** panel, select **Manually** > **Test**.
-1. 1. In the **Run flow** panel, select **Run flow**. If your flow is set up correctly, a message appears that says **Your flow run successfully started. To monitor it, go to the Flow Runs Page**.
+1. In the **Run flow** panel, select **Run flow**. If your flow is set up correctly, a message appears that says **Your flow run successfully started. To monitor it, go to the Flow Runs Page**.
 1. To close the **Run flow** panel, select **Done**.
 
 ---
 
-## Check the status column of each row
+## Add a condition
+
+Before you can add a condition to check the value of the **Status** column in each row of the spreadsheet table, make sure you performed the following procedures in this article:
+
+- [Create a cloud flow](#create-a-cloud-flow)
+- [Select the spreadsheet and get all rows](#select-the-spreadsheet-and-get-all-rows)
 
 # [New designer](#tab/new-designer)
 
-1. [Create a cloud flow](#create-a-cloud-flow) by following the procedure in the previous section.
-1. Add a new step by selecting the plus sign (**+**) > **Add an action**.
+1. In the designer, add a new step by selecting the plus sign (**+**) > **Add an action**.
 1. On the **Add an action** screen, search for **apply to each**, and then select the **Apply to each** under **Control**.
 1. Add the **value** token to the **Select an output from previous steps** box by selecting inside the field and then selecting the lightning bolt icon.
 
@@ -158,8 +145,7 @@ You can configure your cloud flow in either the modern [new designer](flows-desi
 
 # [Classic designer](#tab/classic-designer)
 
-1. [Create a cloud flow](#create-a-cloud-flow) by following the procedure in the previous section.1. Select **New step**.
-1. Search for **apply to each**, and then select the **Apply to each - Control**.
+1. In the designer, search for **apply to each**, and then select the **Apply to each - Control**.
 1. Add the **value** token to the **Select an output from previous steps** box.
 
    This **value** token represents the spreadsheet table and all of its data.
@@ -176,10 +162,17 @@ You can configure your cloud flow in either the modern [new designer](flows-desi
 
 ## Delete matching rows from the spreadsheet
 
+In this tutorial, you use the **Or** condition to delete rows with a value of `completed` or `unnecessary` from the spreadsheet.
+
+Before you can add the **Delete a row** action, make sure you performed the following procedures in this article:
+
+- [Create a cloud flow](#create-a-cloud-flow)
+- [Select the spreadsheet and get all rows](#select-the-spreadsheet-and-get-all-rows)
+- [Add a condition](#add-a-condition)
+
 # [New designer](#tab/new-designer)
 
-1. [Create a cloud flow](#create-a-cloud-flow) by following the procedure in the previous section.
-1. Select the plus sign (**+**) to add an action on the **True** branch of the condition.
+1. In the designer, select the plus sign (**+**) to add an action on the **True** branch of the condition.
 
     The **True** branch runs if the **Or** condition evaluates to **true**.
 
@@ -197,8 +190,7 @@ You can configure your cloud flow in either the modern [new designer](flows-desi
 
 # [Classic designer](#tab/classic-designer)
 
-1. [Create a cloud flow](#create-a-cloud-flow) by following the procedure in the previous section.
-1. Select **Add an action** on the **If yes** branch of the condition.
+1. In the designer, select **Add an action** on the **If yes** branch of the condition.
 
     The **If yes** branch runs if the **OR** condition evaluates to **true**.
 
@@ -216,17 +208,38 @@ You can configure your cloud flow in either the modern [new designer](flows-desi
 
 ---
 
-## Run the flow with the 'or' expression
-
-The flow runs after you save it. If you created the spreadsheet shown earlier in this tutorial, here's what it looks like after the run completes.
+Congratulations! You created a cloud flow that deletes rows from a spreadsheet table if the **Status** column's value is either `completed` or `unnecessary`. Here's what how your spreadsheet displays after the run completes.
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-after-or-expression-runs.png" alt-text="Screenshot of the spreadsheet when the 'OR'expression completes.":::
 
 Notice all data from rows that had **completed** or **unnecessary** in the **Status** column were deleted.
 
-## Use the 'and' expression
+## Scenarios for other common expressions
 
-Assume you have a spreadsheet table with two columns. The column names are **Status** and **Assigned**. Assume also that you want to delete all rows if the **Status** column's value is **blocked** and the **Assigned** column's value is **John Wonder**. To accomplish this task, follow all steps earlier in this tutorial, but when you edit the **Condition** card in advanced mode, use the **and** expression shown here.
+In this section, you learn how to use other expressions in conditions. In each scenario, make sure you performed the following procedures in this article:
+
+- [Create a cloud flow](#create-a-cloud-flow)
+- [Select the spreadsheet and get all rows](#select-the-spreadsheet-and-get-all-rows)
+- [Add a condition](#add-a-condition): In this procedure, apply the expression from this section that you want to use in the **Condition** card.
+
+You can use any combination of the following logical expressions in your conditions.
+
+Expression|Description|Example
+--------|-----------|-------
+|[and](#use-the-and-expression)|Takes two arguments and returns true if both values are true.<br><b>Note</b>: Both arguments must be Booleans.|This expression returns false: <br>`and(greater(1,10),equals(0,0))`
+|[or](#use-the-or-expression)|Takes two arguments and returns true if either argument is true. <br><b>Note</b>: Both arguments must be Booleans.|This expression returns true:<br>`or(greater(1,10),equals(0,0))`
+|equals|Returns true if two values are equal.|For example, if parameter1 is someValue, this expression returns true:<br>`equals(parameters('parameter1'), 'someValue')`
+|[less](#use-the-less-expression)|Takes two arguments and returns true if the first argument is less than the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This expression returns true:<br>`less(10,100)`
+|lessOrEquals|Takes two arguments and returns true if the first argument is less than or equal to the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This expression returns true:<br>`lessOrEquals(10,10)`
+|[greater](#use-the-greater-expression)|Takes two arguments and returns true if the first argument is greater than the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This expression returns false:<br>`greater(10,10)`
+|greaterOrEquals|Takes two arguments and returns true if the first argument is greater than or equal to the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This expression returns false:<br>`greaterOrEquals(10,100)`
+|[empty](#use-the-empty-expression)|Returns true if the object, array, or string is empty.|This expression returns true:<br>`empty('')`
+|not|Returns the opposite of a boolean value. |This expression returns true:<br>`not(contains('200 Success','Fail'))`
+|if|Returns a specific value if the expression results in true or false.|This expression returns "yes":<br>`if(equals(1, 1), 'yes', 'no')`
+
+### Use the 'and' expression
+
+Assume you have a spreadsheet table with two columns. The column names are **Status** and **Assigned**. Assume also that you want to delete all rows if the **Status** column's value is **blocked** and the **Assigned** column's value is **John Wonder**. To accomplish this task, when you edit the **Condition** card in [Add a condition](#add-a-condition), use the **and** expression shown here.
 
 ````@and(equals(item()?['Status'], 'blocked'), equals(item()?['Assigned'], 'John Wonder'))````
 
@@ -234,9 +247,9 @@ Here's an example of a **Condition** card.
 
 :::image type="content" source="./media/use-expressions-in-conditions/and-expression.png" alt-text="Screenshot of the 'and' expression.":::
 
-## Run the flow with the 'and' expression
+#### Run the flow with the 'and' expression
 
-If you followed the steps in this tutorial, your spreadsheet should look similar to the following screenshot.
+If you followed the steps in this section, your spreadsheet should look similar to the following screenshot.
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-before-and-expression-runs.png" alt-text="Screenshot of the spreadsheet before your flow runs.":::
 
@@ -244,11 +257,11 @@ After your flow runs, your spreadsheet should look similar to the following scre
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-after-and-expression-runs.png" alt-text="Screenshot of the spreadsheet after your flow runs.":::
 
-## Use the 'empty' expression
+### Use the 'empty' expression
 
 Notice that there are several empty rows in the spreadsheet now. To remove them, use the **empty** expression to identify all rows that don't have text in the **Assigned** and **Status** columns.
 
-To accomplish this task, follow all steps listed in the [Use the 'and' expression](#use-the-and-expression) section earlier in this tutorial. When you edit the **Condition** card in advanced mode, use the following **empty** expression.
+To accomplish this task, follow all steps listed in the [Use the 'and' expression](#use-the-and-expression) section in this tutorial. When you edit the **Condition** card in advanced mode, use the following **empty** expression.
 
 ````@and(empty(item()?['Status']), empty(item()?['Assigned']))````
 
@@ -301,7 +314,9 @@ Here's the implementation of the **and** expression that identifies all employee
 
 ## Use functions in expressions
 
-Some expressions get their values from runtime actions that might not yet exist when a cloud flow starts to run. To reference or work with these values in expressions, you can use functions that the Workflow Definition Language provides. More information. To learn more, go to [Reference guide to workflow expression functions in Azure Logic Apps and Power Automate](/azure/logic-apps/workflow-definition-language-functions-reference).
+Some expressions get their values from runtime actions that might not yet exist when a cloud flow starts to run. To reference or work with these values in expressions, you can use functions that the Workflow Definition Language provides.
+
+Learn more in [Reference guide to workflow expression functions in Azure Logic Apps and Power Automate](/azure/logic-apps/workflow-definition-language-functions-reference).
 
 ## Related information
 
