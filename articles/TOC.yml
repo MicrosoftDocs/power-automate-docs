@@ -401,6 +401,8 @@
       href: ./desktop-flows/getting-started-org.md
   - name: Create desktop flows
     href: ./desktop-flows/create-flow.md
+  - name: Test desktop flows
+    href: ./desktop-flows/test-desktop-flows.md
   - name: Get started with Copilot in Power Automate for desktop (preview)
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
   - name: Create desktop flows using Record with Copilot (preview)
