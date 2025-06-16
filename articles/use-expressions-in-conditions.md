@@ -208,7 +208,7 @@ Before you can add the **Delete a row** action, make sure you performed the foll
 
 ---
 
-Congratulations! You created a cloud flow that deletes rows from a spreadsheet table if the **Status** column's value is either `completed` or `unnecessary`. Here's what how your spreadsheet displays after the run completes.
+Congratulations! You created a cloud flow that deletes rows from a spreadsheet table if the **Status** column's value is either `completed` or `unnecessary`. Here's what your spreadsheet should look like after the run completes.
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table-after-or-expression-runs.png" alt-text="Screenshot of the spreadsheet when the 'OR'expression completes.":::
 
