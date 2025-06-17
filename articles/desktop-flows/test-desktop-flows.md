@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/17/2025
-ms.author: QuentinSele
+ms.author: quseleba
 ms.reviewer: null
 contributors:
   - Flow

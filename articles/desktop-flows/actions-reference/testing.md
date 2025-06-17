@@ -1,11 +1,12 @@
 ---
 title: Testing actions
 description: Enhance desktop flow reliability with structured test cases and validation tools in Power Automate for desktop.
+author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 06/17/2025
-ms.author: QuentinSele
+ms.author: quseleba
 ms.reviewer: dmartens
 contributors: null
 search.audienceType:
