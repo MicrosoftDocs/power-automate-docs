@@ -22,9 +22,9 @@ Connectors represent the service to which you want to connect. For example, you 
 
 If you're using a work or school email account, use the Office 365 Outlook connector. If you're using a personal account (Microsoft account), use the Outlook.com connector. In this article, we refer only to the Office 365 Outlook [triggers](/connectors/office365/#triggers) and [actions](/connectors/office365/#actions). You can also use the same techniques for the Outlook.com connector.
 
-##  Find Outlook triggers
+## Find Outlook triggers
 
-A *trigger* is an event that starts a cloud flow. For example, **When an email is flagged (V3)** is a trigger that starts a flow.
+A *trigger* is an event that starts a cloud flow. For example, **When an email is flagged (V3)** is a trigger.
 
 Use the **Search** field to find triggers by entering keywords. For example, if you want to find triggers related to email, type **email** in the search box.
 
@@ -55,7 +55,7 @@ To help you find triggers or actions quickly, use the shortcuts in the following
 |Shortcut  |How to use  |
 |---------|---------|
 |Display all triggers or actions  |     When you search for actions or triggers, a condensed list within each category displays. If you want all options to display, select **See more** at the top of the category.    |
-|Display your most often used triggers or actions at the top  | Select the **Favorite** icon (the star) next to a category name or the trigger or action name. Next time you open the pane, your triggers and actions you marked as favorite appear at the top of the pane.  |
+|Display your most often used triggers or actions at the top  | Select the **Favorite** icon (the star) next to a category name or the trigger or action name. Next time you open the pane, your triggers or actions you marked as favorite appear at the top of the pane.  |
 
 ## Related information
 
