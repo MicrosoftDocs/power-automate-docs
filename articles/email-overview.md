@@ -38,13 +38,13 @@ Get the full list of triggers you can use in your cloud flows in [Office 365 Out
 
 *Actions* are the events you want the flow to do after the trigger event takes place. An example of an action for the **When an email is flagged (V3)** trigger is **Create event (V4)**.
 
-:::image type="content" source="./media/email/trigger-action.png" alt-text="Screenshot of a list of Office 365 Outlook triggers.":::
+:::image type="content" source="./media/email/trigger-action.png" alt-text="Screenshot of a trigger and an action in a cloud flow.":::
 
 You can use the **Search** field to find actions by entering keywords. For example, if you want to find actions related to calendar, type **calendar** in the search box.
 
-Tutorials for how to use actions in your cloud flows are available in [Create flows to manage email](./create-email-flows.md) and [Customize email in flows](./email-customization.md).
+Tutorials for how to use actions in your cloud flows are available in [Create flows for popular email scenarios](email-top-scenarios.md) and [Customize email in flows](./email-customization.md).
 
-:::image type="content" source="./media/email/email-actions.png" alt-text="Screenshot of a partial list of Office 365 Outlook actions.":::
+:::image type="content" source="./media/email/email-actions.png" alt-text="Screenshot of a list of Office 365 Outlook actions.":::
 
 Get the full list of actions you can use in your cloud flows in [Office 365 Outlook actions](/connectors/office365/#actions).
 
