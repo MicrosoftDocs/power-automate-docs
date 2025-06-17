@@ -54,12 +54,14 @@ A test case for desktop flows follows the "Given" "When" "Then" structure:
 ### Core actions
 
 - **Test a desktop flow**
-  Executes a specified desktop flow and captures its output. You need to select the same flow you defined in the create window.
 
-- **Assert**  
-  Validates the output against expected results using operators like `equals`, `contains`, or `greater than`.
+    Executes a specified desktop flow and captures its output. You need to select the same flow you defined in the create window.
 
-  Example: In the Assert expression, verify that the output of your desktop flow equals the expected value: `%OutputResult=ExpectedResult%`.
+- **Assert**
+
+    Validates the output against expected results using operators like `equals`, `contains`, or `greater than`.
+
+    Example: In the Assert expression, verify that the output of your desktop flow equals the expected value: `%OutputResult=ExpectedResult%`.
 
 ## Related information
 
