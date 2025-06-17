@@ -1,5 +1,5 @@
 ---
-title: Test desktop flows
+title: Create and manage test cases for desktop flows
 description: Learn to test desktop flows in Power Automate. Create structured test cases, validate outputs, and debug results for seamless automation.
 author: QuentinSele
 ms.service: power-automate
@@ -19,15 +19,11 @@ ms.custom:
   - ai-seo-date:06/17/2025
 ---
 
-# Create and manage test cases for desktop flows in Power Automate
+# Create and manage test cases for desktop flows
 
 With the introduction of "Tests" in Power Automate for desktop, makers create, manage, and run test cases directly within the Power Automate for desktop console. This capability enhances the reliability of desktop flows by enabling structured validation and integration into automated pipelines.
 
 ## Desktop flow test cases
-
-Test cases are essential for desktop flow development. They let you validate automation across scenarios, ensure consistent behavior after changes, and catch issues before deployment. This section covers how to create and execute test cases, understand their structure, and leverage assertions to validate your flow's outputs.
-
-### What is a Test Case?
 
 A test case in the Power Automate desktop app is a flow that:
 
