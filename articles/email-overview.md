@@ -26,25 +26,27 @@ If you're using a work or school email account, use the Office 365 Outlook conne
 
 A *trigger* is an event that starts a cloud flow. For example, **When an email is flagged (V3)** is a trigger.
 
-Use the **Search** field to find triggers by entering keywords. For example, if you want to find triggers related to email, type **email** in the search box.
-
-Tutorials for how to use triggers in your cloud flows are available in [Trigger a cloud flow based on email properties](./email-triggers.md).
+Use the **Search** field to find triggers by entering keywords. For example, if you want to find triggers related to Outlook, type **outlook** in the search box.
 
 :::image type="content" source="./media/email/email-triggers.png" alt-text="Screenshot of a list of Office 365 Outlook triggers.":::
+
+
+Tutorials for how to use triggers in your cloud flows are available in [Trigger a cloud flow based on email properties](./email-triggers.md).
 
 Get the full list of triggers you can use in your cloud flows in [Office 365 Outlook triggers](/connectors/office365/#triggers).
 
 ## Find Outlook actions
 
-*Actions* are the events you want the flow to do after the trigger event takes place. An example of an action for the **When an email is flagged (V3)** trigger is **Create event (V4)**.
+*Actions* are the events you want the flow to do after the trigger event takes place. An example of an action for the **When an email is flagged (V3)** trigger is **Create contact (V2)**.
 
 :::image type="content" source="./media/email/trigger-action.png" alt-text="Screenshot of a trigger and an action in a cloud flow.":::
 
-You can use the **Search** field to find actions by entering keywords. For example, if you want to find actions related to calendar, type **calendar** in the search box.
-
-Tutorials for how to use actions in your cloud flows are available in [Create flows for popular email scenarios](email-top-scenarios.md) and [Customize email in flows](./email-customization.md).
+You can use the **Search** field to find actions by entering keywords. For example, if you want to find actions related to Outlook, type **outlook** in the search box.
 
 :::image type="content" source="./media/email/email-actions.png" alt-text="Screenshot of a list of Office 365 Outlook actions.":::
+
+
+Tutorials for how to use actions in your cloud flows are available in [Create flows for popular email scenarios](email-top-scenarios.md) and [Customize email in flows](./email-customization.md).
 
 Get the full list of actions you can use in your cloud flows in [Office 365 Outlook actions](/connectors/office365/#actions).
 
