@@ -34,7 +34,7 @@ Tutorials for how to use triggers in your cloud flows are available in [Trigger 
 
 Get the full list of triggers you can use in your cloud flows in [Office 365 Outlook triggers](/connectors/office365/#triggers).
 
-## Fund Outlook actions
+## Find Outlook actions
 
 *Actions* are the events you want the flow to do after the trigger event takes place. An example of an action for the **When an email is flagged (V3)** trigger is **Create event (V4)**.
 
