@@ -98,7 +98,7 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 ### Recursion between two subflows
 
 - **Severity**: Warning
-- **Type**: Performance
+- **Type**: Design
 - **Error details**: Recursive calls detected between subflows, potentially causing an infinite loop.
 - **Description**: This rule checks for recursive calls between two or more subflows, ensuring that the flow doesn't enter an infinite loop.
 - **Suggested fix**: Remove any recursive calls between the subflows.
@@ -134,7 +134,7 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 ### Empty on block error action
 
 - **Default severity**: Warning
-- **Type**: Maintainability
+- **Type**: Design
 - **Error details**: "On block error" action is empty and not handling errors.
 - **Description**: This rule checks whether the "On block error" actions in your flow are set up correctly to handle errors, making sure that errors are thrown and managed as expected.
 - **Suggested fix**: To manage potential errors, set up the **On block error** actions in the flow.
@@ -152,7 +152,7 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 ### Incomplete if
 
 - **Severity**: Warning
-- **Type**: Maintainability
+- **Type**: Design
 - **Error details**: Incomplete If action detected, lacking content or only containing actions in the Else branch.
 - **Description**: This rule detects If actions that lack content or only contain actions in the Else branch, ensuring that conditional statements are effectively implemented.
 - **Suggested fix**: Go through the flow and review each "If" condition to ensure that it includes meaningful actions in both the "If", "Else if", and "Else" branches.
@@ -161,7 +161,7 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 ### Infinite loop
 
 - **Severity**: Warning
-- **Type**: Performance
+- **Type**: Design
 - **Error details**: Infinite loop detected in the flow, potentially causing it to run indefinitely.
 - **Description**: This rule checks if there are any infinite loops in the flow, helping to identify and prevent scenarios where the flow might run indefinitely.
 - **Suggested fix**: Make sure each loop has a clearly defined and achievable termination condition. The condition can be based on a counter, a specific value, or the completion of a task. Add checks or failsafe conditions to break the loop if it runs longer than expected. For example, set a maximum iteration count or include a timeout.
