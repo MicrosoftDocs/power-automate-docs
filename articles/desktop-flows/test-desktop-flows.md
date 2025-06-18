@@ -38,8 +38,12 @@ A test case in the Power Automate desktop app is a flow that:
 
 ### Create a new test
 
-- In the left bar of the console, select the **Tests** section, then select **New test case** from the command bar.
-- Enter a case name, choose the flow to validate, and select **Create**.
+To create a new test case:
+
+1. Open Power Automate for desktop.
+1. In the left navigation, select **Tests**.
+1. In the command bar, select **+ New** > **Test case**.
+1. Enter a test case name, choose the flow to validate, and select **Create**.
 
 A test case for desktop flows follows the "Given" "When" "Then" structure:
 
@@ -47,7 +51,9 @@ A test case for desktop flows follows the "Given" "When" "Then" structure:
 - **When**: The desktop flow runs
 - **Then**: Assertions are made on the output
 
-### Core actions
+#### Add testing actions
+
+The following are core testing actions to use in a test case:
 
 - **Test a desktop flow**
 
