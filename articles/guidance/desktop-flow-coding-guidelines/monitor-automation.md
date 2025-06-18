@@ -72,3 +72,4 @@ Learn how to [generate automation-centric data analytics with Fabric](../../auto
 ## Related information
 
 - [Run static analysis in the portal](/power-automate/desktop-flows/static-analysis#run-static-analysis-in-the-portal)
+- [Automation-centric data analytics with Fabric](/power-automate/automation-analytics-with-fabric-introduction)
