@@ -148,7 +148,7 @@ After your flow is created, you can make changes to the trigger and actions usin
 
     :::image type="content" source="media/getting-started-tutorial/success-message.png" alt-text="Screenshot of a green message at the top of the screen indicating the flow was saved successfully.":::
 
-1. Go to [Test your flow](#test-your-flow).
+1. Go to [Test your cloud flow](#test-your-cloud-flow).
 
 # [Without copilot](#tab/without-copilot)
 
@@ -167,11 +167,11 @@ You can make changes to your cloud flow manually in the *designer*. You can do t
 
     :::image type="content" source="media/getting-started-tutorial/success-message.png" alt-text="Screenshot of a green message at the top of the screen indicating the flow was saved successfully.":::
 
-1. Go to [Test your flow](#test-your-flow).
+1. Go to [Test your cloud flow](#test-your-cloud-flow).
 
 ---
 
-## Test your flow
+## Test your cloud flow
 
 To make sure your flow works as expected, you should test it.
 
