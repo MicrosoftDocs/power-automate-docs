@@ -110,7 +110,7 @@ You can create a cloud flow using natural language in Copilot. You can also crea
     |---------|---------|
     | :::image type="content" source="media/getting-started-tutorial/create-flow-without-copilot-new.png" alt-text="Screenshot of the scheduled cloud flow in the new designer.":::    | :::image type="content" source="media/getting-started-tutorial/create-flow-without-copilot-classic.png" alt-text="Screenshot of the scheduled cloud flow in the classic designer.":::         |
 
-    Once you create a flow, we recommend that you test it. You [test your cloud-flow](#test-your-cloud-flow) later in this tutorial.
+    Once you create a flow, we recommend that you test it. You [test your cloud flow](#test-your-cloud-flow) later in this tutorial.
 
 1. Go to [Make changes to your cloud flow](#make-changes-to-your-cloud-flow).
 
