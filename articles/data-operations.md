@@ -20,9 +20,10 @@ Data operations allow you to manipulate data as you build your cloud flows. You 
 
 This article explains how you can use data operations such as compose to create a single output from multiple inputs, including expressions. You can also use data operations to join or select data, filter arrays, create tables, and parse JSON. In this article, each section provides a brief description of the data operation, followed by a step-by-step procedure to help you use it in your cloud flow.
 
-The screenshots might look different from your screen. This is because Power Automate allows you to use either the [new designer](flows-designer.md) or the [classic designer](flows-designer.md). The screenshots use the new designer, but the steps are similar in the classic designer.
-
-Learn more about the designer in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+> [!NOTE]
+> The screenshots in this article might look different from your screen. This is because Power Automate allows you to use either the [new designer](flows-designer.md) or the classic designer. The screenshots use the new designer, but the steps are similar in the classic designer.
+>
+> Learn more about the designer in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
 
 <!--Here's a quick video about data operations.
 
