@@ -61,9 +61,9 @@ For Java versions greater than 8, Power Automate desktop loads its Java automati
 If the attach mechanism for Java automation doesn't work, add the following arguments when starting the Java application:
 
 - 64-bit Java
-  - -javaagent:"C:\Program Files (x86)\Power Automate Desktop\java-support\PAD.JavaBridge.jar" -Djava.library.path="${env_var:PATH};C:\Program Files (x86)\Power Automate Desktop\java-support\x64"
+  - -javaagent:"C:\Program Files (x86)\Power Automate Desktop\dotnet\java-support\PAD.JavaBridge.jar" -Djava.library.path="${env_var:PATH};C:\Program Files (x86)\Power Automate Desktop\dotnet\java-support\x64"
 - 32-bit Java
-  - -javaagent:"C:\Program Files (x86)\Power Automate Desktop\java-support\PAD.JavaBridge.jar" -Djava.library.path="${env_var:PATH};C:\Program Files (x86)\Power Automate Desktop\java-support\x86"
+  - -javaagent:"C:\Program Files (x86)\Power Automate Desktop\dotnet\java-support\PAD.JavaBridge.jar" -Djava.library.path="${env_var:PATH};C:\Program Files (x86)\Power Automate Desktop\dotnet\ava-support\x86"
 
 The paths use the Power Automate Desktop installation location. Adjust the paths if you install Power Automate Desktop in a different location.
 
