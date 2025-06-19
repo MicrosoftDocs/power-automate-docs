@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 10/23/2024
+ms.date: 06/19/2025
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 ---
@@ -78,5 +78,6 @@ You can rename actions as you wish. You can also add other actions and subsequen
 
 :::image type="content" source="media/set-up-sequential-approvals/renamed-actions.png" alt-text="Screenshot of a flow with renamed actions and an email action at the end.":::
 
-## Limitations
-1. You cannot assign the same approver to different steps of your approval.
+## Limitation
+
+1. You can't assign the same approver to different steps of your approval.
