@@ -80,4 +80,4 @@ You can rename actions as you wish. You can also add other actions and subsequen
 
 ## Limitation
 
-1. You can't assign the same approver to different steps of your approval.
+You can't assign the same approver to different steps of your approval.
