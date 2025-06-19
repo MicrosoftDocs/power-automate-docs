@@ -122,7 +122,7 @@ If the agent for virtual desktops can't communicate with Power Automate for desk
 1. Navigate to the appropriate directory using the following command:
 
     ``` PowerShell
-    cd "C:\Program Files (x86)\Power Automate Desktop\RDP\DVCPlugin\x64"
+    cd "C:\Program Files (x86)\Power Automate Desktop\dotnet\RDP\DVCPlugin\x64"
     ```
 
 1. Run the following two commands:
