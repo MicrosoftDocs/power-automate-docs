@@ -38,7 +38,6 @@ Hosted machine groups use Microsoft hosted infrastructure running in Azure and o
 - **Dynamic load balancing**: Flows are allocated dynamically based on the workload.
 - **Maintenance-free**: Microsoft manages the infrastructure, including updates and maintenance, freeing up IT resources.
 - **High availability**: Hosted machine groups are designed to be highly available, ensuring automations run smoothly without interruptions.
-- **Redundancy**: Built-in redundancy helps prevent downtime and ensures continuous operation.
 - **Reduced overhead**: Operational costs are lower due to reduced need for hardware and maintenance.
 
 :::image type="content" source="media/optimize-e2e/hosted-machine.png" alt-text="Screenshot of a page in a wizard to create a new hosted machine group." lightbox="media/optimize-e2e/hosted-machine.png":::
@@ -54,6 +53,9 @@ To ensure that your machines are used effectively, consider the following best p
 - [Run multiple desktop flows concurrently](../../desktop-flows/run-desktop-flows-concurrently.md) on a single Windows Server machine.
 
 - [Reuse the Windows session of unattended desktop flows](../../desktop-flows/run-unattended-desktop-flows.md#reuse-a-windows-session-in-unattended-mode) so the flows don't sign out and sign in again for every run.
+
+    > [!NOTE]
+    > Reuse the session only if there is no need to separate sessions per run for compliance or machine state reasons.
 
 - For attended scenarios, [run desktop flows in picture-in-picture](../../desktop-flows/run-desktop-flows-pip.md) so that you can continue working on your machine while the automation runs in parallel.
 
