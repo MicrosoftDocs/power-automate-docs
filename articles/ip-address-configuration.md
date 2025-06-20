@@ -20,7 +20,22 @@ This article describes the required configuration for:
 - Power Automate to connect to services in your network by inbound firewall configuration, and
 - Your makers and users to access Power Automate to build and use experiences by outbound firewall configuration.
 
-For configuration details in this article, use the links in the following table.
+## High-level recommendation for IP address configuration
+
+The simplest mechanism to configure a firewall to allow Power Automate cloud flows to call external services through [connectors](/connectors/overview) is to use [Azure service tags](/azure/virtual-network/service-tags-overview). The primary service tag for Logic Apps connectors is **AzureConnectors**, as described in [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
+
+## Monitor IP ranges
+
+Depending on the firewall you're using, you don't need to monitor and manually update IP ranges, The following table describes the recommended  tracking method for each firewall type.
+
+|Firewall  |Tracking method  |
+|---------|---------|
+|Azure     | Use [Azure service tags](/azure/virtual-network/service-tags-overview). By using service tags in your network security group rules, you don't need to constantly monitor and manually update IP ranges for each service.        |
+|On-premises    | Use the [Service Tags with an on-premises firewall](/azure/virtual-network/service-tags-overview#service-tags-on-premises) so you don't need to monitor and manually update IP ranges. The [Service Tag Discovery API](/azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api) provides access to the latest IP address ranges associated with each service tag, enabling you to stay current with changes.        |
+
+## Configuration details
+
+For configuration details, use the links in the following table.
 
 |For details in this category  |Select from these links |
 |---------|---------|
@@ -172,20 +187,6 @@ Learn more about approvals email routing in [Power Automate approval email deliv
 ### Azure SQL database
 
 If you need to authorize IP addresses for your Azure SQL database, use the [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
-
-## FAQ
-
-### There are lots of details here&mdash;what's the high level recommendation for IP address configuration?
-
-The simplest mechanism to configure a firewall to allow Power Automate cloud flows to call external services through [connectors](/connectors/overview) is to use [Azure service tags](/azure/virtual-network/service-tags-overview). The primary service tag for Logic Apps connectors is **AzureConnectors**, as described in [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
-
-### If I'm using Azure firewall, do I need to keep track of individual IP addresses?
-
-You should use [Azure service tags](/azure/virtual-network/service-tags-overview). By using service tags in your network security group rules, you don't need to constantly monitor and manually update IP ranges for each service.
-
-### If I'm using on-premises firewall, do I need to keep track of individual IP addresses?
-
-You should use the [Service Tags with an on-premises firewall](/azure/virtual-network/service-tags-overview#service-tags-on-premises) so you don't need to monitor and manually update IP ranges. The [Service Tag Discovery API](/azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api) provides access to the latest IP address ranges associated with each service tag, enabling you to stay current with changes.
 
 ## Related information
 
