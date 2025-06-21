@@ -242,15 +242,18 @@ To unpin an action, you have two options:
 - Right-click the action on the canvas and select **Unpin action**.
 - Select the **Pin** icon on the action pane.
 
-## Identify differences between the classic designer and the new cloud flows designer
+## Identify differences between the new designer and the classic designer
 
-To quickly identify which designer version you're using, ask yourself the following questions:
+The new cloud designer has smaller cards to facilitate easy navigation. To display the configuration data for a card, you need to select it to open a configuration pane on the left. To compare, the classic designer has larger cards, and each card contains the related configuration data. To display the configuration data, you need to select each card to expand it.
 
-- Are the action cards on the flow small or large?
-- Is the action configuration pane inline or in a separate pane?
 
-> [!NOTE]
-> The new cloud flows designer has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
+|New designer  |Classic designer  |
+|---------|---------|
+|:::image type="content" source="media/flows-designer/designer-differences-new.png" alt-text="Screenshot of a cloud flow and the configuration pane in the new designer.":::    | :::image type="content" source="media/flows-designer/designer-differences-classic.png" alt-text="Screenshot of an expanded action card in a cloud flow in the classic designer.":::        |
+
+
+
+In either the configuration pane or the expanded card, you can edit the configuration data.
 
 ## Designer resiliency and save flow with errors
 

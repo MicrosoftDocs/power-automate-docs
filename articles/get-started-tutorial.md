@@ -22,7 +22,7 @@ ms.collection:
 
 # Get started with Power Automate tutorial
 
-This article provides a tutorial for you to create a cloud flow, make changes to it, and then test your new cloud flow. The completed flow sends an email weekly to a customer with an overdue account.
+This article provides a tutorial for you to create a cloud flow and then test it. The completed flow sends a monthly newsletter to an email address.
 
 ## Create a cloud flow
 
@@ -37,12 +37,12 @@ You can create a cloud flow using natural language in Copilot. You can also crea
    Copy the following prompt and paste it into the Copilot field:
 
    ```copilot-prompt
-   Create a flow that runs Monday every week starting 04/28/2025 which sends an email to contoso@gmail.com that their payment is overdue. If they pay by May 31, they can avoid a late fee.
+    Create a flow that runs on the first of every month starting in June 2025 at 12:00 AM, Pacific Time. Send it to contoso@gmail.com and the title should be, "The Contoso Cadence Newsletter".
    ```
     Once you paste the prompt, replace the `contoso@gmail.com` email address with your own email address.
 1. Select **Generate**.
 
-   :::image type="content" source="media/getting-started-tutorial/copilot-prompt-overdue-notification.png" alt-text="Screenshot of the Copilot interface showing the 'Generate' button.":::
+   :::image type="content" source="media/getting-started-tutorial/copilot-generate-newsletter.png" alt-text="Screenshot of the Copilot interface showing the 'Generate' button.":::
 
    Based on the description, Copilot begins to create a suggested *trigger* and *actions* for your flow. A trigger is an event that starts a cloud flow. Actions are the events you want the flow to do after the trigger event takes place.
 
@@ -54,15 +54,30 @@ You can create a cloud flow using natural language in Copilot. You can also crea
 
 1. Review your connected apps and services. A green checkmark indicates that the connection is valid. In this example, the connection is **Office 365 Outlook**.
 
+    Some connections ask you to sign in. If you aren't signed in already, select **Sign in** and provide your credentials.
+
+    Learn more about connections and how to troubleshoot them in [Manage connections in Power Automate](add-manage-connections.md).
+
 1. Select **Create flow**.
 
     This flow consists of the **Recurrence** trigger and **Send an email** action based on your prompt.
 
    :::image type="content" source="media/getting-started-tutorial/create-flow-copilot.png" alt-text="Screenshot of the designer after the flow is created with the Copilot panel.":::
 
-    Once you create a flow, we recommend that you test it. You [test your cloud flow](#test-your-cloud-flow) later in this tutorial.
+### Fix invalid parameters
 
-1. Go to [Make changes to your cloud flow](#make-changes-to-your-cloud-flow).
+If you see a red message in your flow that says **Invalid parameters**, you need to fix them before you can continue. The flow can't run until you enter the required parameters.
+
+1. Select the **Send an email** action card to open the configuration pane.
+1. In the **Body** field, copy the following text and paste it into the field:
+
+    ```copilot-prompt
+    Welcome to the monthly Contoso Cadence newletter! In this email, you'll find important dates for training sessions and talks. We'll also showcase some demos, and list the frequently asked questions for the month.
+    ```
+
+1. Select **<<** in the upper-right corner of the configuration pane to close it.
+
+    Notice that the **Invalid parameters** message is gone.
 
 # [Without copilot](#tab/without-copilot)
 
@@ -72,12 +87,9 @@ You can create a cloud flow using natural language in Copilot. You can also crea
 
    :::image type="content" source="media/getting-started-tutorial/start-from-blank.png" alt-text="Screenshot of the Copilot interface showing the 'Keep it and continue' button.":::
 
-1. In the **Flow name** field, enter a name for your flow. The name used in this tutorial is *Overdue payment notification*.
-1. In the **Starting** field, select the calendar icon and then select **04/28/2025** at **08:00 AM**.
-1. In the **Repeat every** field, enter **1** and then select **Week** from the dropdown menu.
-1. Under **On these days**, deselect **S**, **T**, **W**, **T**, **F** and **S** (for Sunday, Tuesday, Wednesday, Thursday, Friday, and Saturday).
-
-    Only **M** remains selected to indicate the flow runs on Monday every week.
+1. In the **Flow name** field, enter a name for your flow. The name used in this tutorial is *Newsletter*.
+1. In the **Starting** field, select the calendar icon and then select **6/1/25** at **12:00 AM**.
+1. In the **Repeat every** field, enter **1** and then select **Month** from the dropdown menu.
 
     :::image type="content" source="media/getting-started-tutorial/scheduled-cloud-flow.png" alt-text="Screenshot of the 'Build a scheduled cloud flow' screen.":::
 
@@ -85,7 +97,11 @@ You can create a cloud flow using natural language in Copilot. You can also crea
 
     The designer opens with the **Recurrence** *trigger*. Now you need to add an *action*. A trigger is an event that starts a cloud flow. Actions are the events you want the flow to do after the trigger event takes place.
 
-   Complete creating your flow in the *designer*. Power Automate uses either the new designer with Copilot capabilities or the classic cloud flows designer. If you're not sure which designer you're using, learn how to identify the difference in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+---
+
+### Complete creating your cloud flow
+
+Complete creating your cloud flow in the *designer*. Power Automate uses either the new designer or the classic designer. If you're not sure which designer you're using, learn how to identify the differences in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
 
 1. Select the location for your new action in your cloud flow:
     - New designer: Select (**+**) below the **Recurrence** trigger.
@@ -94,15 +110,18 @@ You can create a cloud flow using natural language in Copilot. You can also crea
     - New designer: In the **Add an action** search field, type **Send an email (V2)** and then select the **Send an email (V2)** action.
     - Classic designer: In the **Choose an operation** search field, type **Send an email (V2)** and then select the **Send an email (V2)** action.
 1. Enter the following information:
-    1. In the **To** field, start typing your email address. When it appears in the list, select it.
-    1. In the **Subject** field, enter **Payment Overdue Notification**.
+    1. In the **To** field, enter your email address.
+
+        If you were doing this in a real life scenario, you would enter the email of the person you want to send the newsletter to. In this tutorial, use your own email so that you can see the results of the flow.
+
+    1. In the **Subject** field, enter **The Contoso Cadence Newsletter**.
     1. In the **Body** field, enter the following text:
 
-        ```
-        Your account is overdue. If you pay by May 31, you can avoid a late fee.
+        ```copilot-prompt
+        Welcome to the monthly Contoso Cadence newletter! In this email, you'll find important dates for training sessions and talks. We'll also showcase some demos, and list the frequently asked questions for the month.
         ```
 
-    1. (in the new designer) Select **<<** in the upper-right corner of the panel to collapse the configuration pane.
+    1. (In the new designer) Select (**<<**) in the upper-right corner of the panel to collapse the configuration pane.
 
     This flow consists of the **Recurrence** trigger and **Send an email (V2)** action that contains the parameters you set in this procedure.
 
@@ -110,71 +129,24 @@ You can create a cloud flow using natural language in Copilot. You can also crea
     |---------|---------|
     | :::image type="content" source="media/getting-started-tutorial/create-flow-without-copilot-new.png" alt-text="Screenshot of the scheduled cloud flow in the new designer.":::    | :::image type="content" source="media/getting-started-tutorial/create-flow-without-copilot-classic.png" alt-text="Screenshot of the scheduled cloud flow in the classic designer.":::         |
 
-    Once you create a flow, we recommend that you test it. You [test your cloud flow](#test-your-cloud-flow) later in this tutorial.
-
-1. Go to [Make changes to your cloud flow](#make-changes-to-your-cloud-flow).
-
----
-
-## Make changes to your cloud flow
-
-After your flow is created, you can make changes to the trigger and actions using Copilot to assist you, or you can do it manually. In this section, change the subject for your email from **Payment Overdue Notification** to **Your account is overdue**.
-
-# [Using copilot](#tab/using-copilot)
-
-1. Make sure you completed [Create a cloud flow](#create-a-cloud-flow).
-1. In the designer, select **Send an email (V2)**. Notice that in the configuration pane to the left, the subject is **Payment Overdue Notification**.
-
-   :::image type="content" source="media/getting-started-tutorial/subject-overdue.png" alt-text="Screenshot of the subject 'Payment Overdue Notification.":::
-
-1. Close the configuration pane by selecting (**<<**) in the top-right corner.
-1. In the command bar, select **Copilot**. The Copilot pane opens on the right side of the screen.
-1. Copy the following prompt and paste it into the **Copilot** pane:  
-
-   ```copilot-prompt
-   Change the subject of the email to "Your account is overdue".
-   ```
-
-1. Select **Submit**. Copilot updates the action in the designer.
-
-1. In the **Send an email (V2)** action card in the designer, select the bubble icon to display the updated subject, **Your account is overdue**.
-
-    :::image type="content" source="media/getting-started-tutorial/send-email-action.png" alt-text="Screenshot of the Copilot pane confirming the 'Send an email' action was changed.":::
-
-1. In the **Copilot** panel, select **Save this flow**.
+1. Save your cloud flow by selecting **Save** in the command bar.
 
     A green message appears at the top of the screen, indicating that your flow was saved successfully.
 
     :::image type="content" source="media/getting-started-tutorial/success-message.png" alt-text="Screenshot of a green message at the top of the screen indicating the flow was saved successfully.":::
 
-1. Go to [Test your cloud flow](#test-your-cloud-flow).
+    Once you create a flow, we recommend that you test it. Go to [test your cloud flow](#test-your-cloud-flow).
 
-# [Without copilot](#tab/without-copilot)
+> [!NOTE]
+> Make sure a human reviews AI-generated content to verify that it is accurate and appropriate. Learn more in [Human review for automation with a prompt](/ai-builder/azure-openai-human-review).
 
-You can make changes to your cloud flow manually in the *designer*. You can do this using either the [new designer](flows-designer.md) with Copilot capabilities, or the classic designer. If you're not sure which designer you're using, learn how to identify the differences in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
-
-1. Make sure you completed [Create a cloud flow](#create-a-cloud-flow).
-
-1. In the designer, notice that the subject is **Payment Overdue Notification**.
-
-    If you're using the new designer, select the **Send an email V2)** action card first.
-
-1. In the **Subject**, type  **Your account is overdue**.
-1. On the command bar at the top of the screen, select **Save**.
-
-    A green message appears at the top of the screen, indicating that your flow was saved successfully.
-
-    :::image type="content" source="media/getting-started-tutorial/success-message.png" alt-text="Screenshot of a green message at the top of the screen indicating the flow was saved successfully.":::
-
-1. Go to [Test your cloud flow](#test-your-cloud-flow).
-
----
+1. Go to [Test your cloud flow](#test-your-cloud-flow)
 
 ## Test your cloud flow
 
 To make sure your flow works as expected, you should test it.
 
-1. Make sure you completed [Create a cloud flow](#create-a-cloud-flow) and [Make changes to your cloud flow](#make-changes-to-your-cloud-flow).
+1. Make sure you completed [Create a cloud flow](#create-a-cloud-flow).
 
     This procedure also works with any cloud flow you want to test.
 
@@ -185,12 +157,19 @@ To make sure your flow works as expected, you should test it.
 
     :::image type="content" source="media/getting-started-tutorial/successful-run.png" alt-text="Screenshot of the message that you flow ran successfully.":::
 
-    When your flow is finished running, the message, **Your flow ran successfully** appears in a green message at the top. Your flow is now listed in **My flows**.
+    When your flow is finished running, the message, **Your flow ran successfully** appears in a green message at the top.
 
-1. To display your flow, leave the designer by selecting **Back** (arrow pointing left) in the top-left corner.
-1. On the navigation menu to the left, select **My flows**. Your new flow is at the top of the list.
+1. To display your flow, leave the designer by selecting **Back** (arrow pointing left) in the top-left corner next to your flow name (not the **Back** button in the address bar).
+
+    The details screen displays the flow you created. The details screen shows the flow's name, description, and other information about the flow
+
+    :::image type="content" source="media/getting-started-tutorial/details.png" alt-text="Screenshot of the details screen for your new cloud flow.":::
+
+1. Your flow is now in the **My flows** list. To find it, select **My flows** on the navigation menu to the left. Your new flow is at the top of the list.
 
     :::image type="content" source="media/getting-started-tutorial/my-flows.png" alt-text="Screenshot of the list of cloud flows in the main Power Automate screen.":::
+
+When your flow runs, it sends an email to the address you specified in the **To** field. In this tutorial, you used your own email. Check your email inbox to see the results of your flow.
 
 Congratulations! You successfully created a cloud flow using Copilot and tested it!
 
