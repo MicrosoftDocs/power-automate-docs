@@ -101,7 +101,7 @@ If you see a red message in your flow that says **Invalid parameters**, you need
 
 ### Complete creating your cloud flow
 
-Complete creating your cloud flow in the *designer*. Power Automate uses either the new designer or the classic designer. If you're not sure which designer you're using, learn how to identify the differences in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+Complete creating your cloud flow in the *designer*. Power Automate uses either the new designer or the classic designer. If you're not sure which designer you're using, learn how to identify the differences in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
 
 1. Select the location for your new action in your cloud flow:
     - New designer: Select (**+**) below the **Recurrence** trigger.
