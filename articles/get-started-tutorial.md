@@ -26,20 +26,28 @@ This article provides a tutorial for you to create a cloud flow and then test it
 
 ## Create a cloud flow
 
-You can create a cloud flow using natural language in Copilot. You can also create a cloud flow using classic Power Automate functionality. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you don't have access to Copilot, select the **Without copilot** tab.
+You can create a cloud flow using natural language in Copilot, or create it from scratch. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you want to create a cloud flow from scratch, select the **Without copilot** tab.
 
 # [Using copilot](#tab/using-copilot)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
-1. In the Copilot field, describe what kind of flow you want to create. Use natural language and be as specific as possible.
+1. On the navigation pane to the left, make sure **Home** is selected.
+1. In the **Create your automation with Copilot** field, describe what kind of flow you want to create. Use natural language and be as specific as possible.
 
    Copy the following prompt and paste it into the Copilot field:
 
    ```copilot-prompt
-    Create a flow that runs on the first of every month starting in June 2025 at 12:00 AM, Pacific Time. Send it to contoso@gmail.com and the title should be, "The Contoso Cadence Newsletter".
+    Create a flow that runs on the first of every month starting in June 2025 at 12:00 AM, Pacific Time. Send it to contoso@gmail.com and the title should be, "The Contoso Cadence Newsletter". The body for the email is, "Welcome to the monthly Contoso Cadence newsletter! In this email, you'll find important dates for training sessions and talks. We'll also showcase demos and list the frequently asked questions for the month."
+
    ```
-    Once you paste the prompt, replace the `contoso@gmail.com` email address with your own email address.
+
+    Your prompt tells Copilot how to set up the recurrence of the email, who the recipient is, and the contents of the email's subject and body&mdash;all the information you need to create a working cloud flow.
+
+1. Once you paste the prompt, replace the `contoso@gmail.com` email address with your own email address.
+
+    If you were doing this in a real life scenario, you would enter the email of the person you want to send the newsletter to. In this tutorial, use your own email so that you can see the results of the flow. You can also send it to multiple people by separating the email addresses with a semicolon (;) in the **To** field.
+
 1. Select **Generate**.
 
    :::image type="content" source="media/getting-started-tutorial/copilot-generate-newsletter.png" alt-text="Screenshot of the Copilot interface showing the 'Generate' button.":::
@@ -64,33 +72,16 @@ You can create a cloud flow using natural language in Copilot. You can also crea
 
    :::image type="content" source="media/getting-started-tutorial/create-flow-copilot.png" alt-text="Screenshot of the designer after the flow is created with the Copilot panel.":::
 
-### Fix invalid parameters
-
-If you see a red message in your flow that says **Invalid parameters**, you need to fix them before you can continue. The flow can't run until you enter the required parameters.
-
-1. Select the **Send an email** action card to open the configuration pane.
-1. In the **Body** field, copy the following text and paste it into the field:
-
-    ```copilot-prompt
-    Welcome to the monthly Contoso Cadence newletter! In this email, you'll find important dates for training sessions and talks. We'll also showcase some demos, and list the frequently asked questions for the month.
-    ```
-
-1. Select **<<** in the upper-right corner of the configuration pane to close it.
-
-    Notice that the **Invalid parameters** message is gone.
-
 1. Save your cloud flow by selecting **Save** in the command bar.
 
-    A green message appears at the top of the screen, indicating that your flow was saved successfully.
+    A green message appears at the top of the screen, indicating that your flow is now saved.
 
-    :::image type="content" source="media/getting-started-tutorial/success-message.png" alt-text="Screenshot of a green message at the top of the screen indicating the flow was saved successfully.":::
-
-    Once you create a flow, we recommend that you test it. Go to [test your cloud flow](#test-your-cloud-flow).
+    :::image type="content" source="media/getting-started-tutorial/success-message.png" alt-text="Screenshot of a green message at the top of the screen indicating your flow is now saved.":::
 
     > [!NOTE]
-    > Make sure a human reviews AI-generated content to verify that it is accurate and appropriate. Learn more in [Human review for automation with a prompt](/ai-builder/azure-openai-human-review).
+    > Make sure a human reviews AI-generated content to verify that it's accurate and appropriate. Learn more in [Human review for automation with a prompt](/ai-builder/azure-openai-human-review).
 
-1. Go to [Test your cloud flow](#test-your-cloud-flow).
+1. Once you create a flow, we recommend that you test it. Go to [Test your cloud flow](#test-your-cloud-flow).
 
 # [Without copilot](#tab/without-copilot)
 
@@ -102,7 +93,7 @@ If you see a red message in your flow that says **Invalid parameters**, you need
 
 1. In the **Flow name** field, enter a name for your flow. The name used in this tutorial is *Newsletter*.
 1. In the **Starting** field, select the calendar icon and then select **6/1/25** at **12:00 AM**.
-1. In the **Repeat every** field, enter **1** and then select **Month** from the dropdown menu.
+1. In the **Repeat every** field, enter **1**, and then select **Month** from the dropdown menu.
 
     :::image type="content" source="media/getting-started-tutorial/scheduled-cloud-flow.png" alt-text="Screenshot of the 'Build a scheduled cloud flow' screen.":::
 
@@ -118,18 +109,18 @@ Complete creating your cloud flow in the *designer*. Power Automate uses either 
     - New designer: Select (**+**) below the **Recurrence** trigger.
     - Classic designer: Select **+ New step**.
 1. Add an action to your cloud flow:
-    - New designer: In the **Add an action** search field, type **Send an email (V2)** and then select the **Send an email (V2)** action.
-    - Classic designer: In the **Choose an operation** search field, type **Send an email (V2)** and then select the **Send an email (V2)** action.
+    - New designer: In the **Add an action** search field, type **Send an email (V2)** and then select the **Send an email (V2)** action under **Microsoft 365 Outlook**.
+    - Classic designer: In the **Choose an operation** search field, type **Send an email (V2)** and then select the **Send an email (V2) Microsoft 365 Outlook** action.
 1. Enter the following information:
     1. In the **To** field, enter your email address.
 
-        If you were doing this in a real life scenario, you would enter the email of the person you want to send the newsletter to. In this tutorial, use your own email so that you can see the results of the flow.
+        If you were doing this in a real life scenario, you would enter the email of the person you want to send the newsletter to. In this tutorial, use your own email so that you can see the results of the flow. You can also send it to multiple people by separating the email addresses with a semicolon (;) in the **To** field.
 
     1. In the **Subject** field, enter **The Contoso Cadence Newsletter**.
     1. In the **Body** field, enter the following text:
 
         ```copilot-prompt
-        Welcome to the monthly Contoso Cadence newletter! In this email, you'll find important dates for training sessions and talks. We'll also showcase some demos, and list the frequently asked questions for the month.
+        Welcome to the monthly Contoso Cadence newsletter! In this email, you'll find important dates for training sessions and talks. We'll also showcase demos, and list the frequently asked questions for the month.
         ```
 
     1. (In the new designer) Select (**<<**) in the upper-right corner of the panel to collapse the configuration pane.
@@ -142,16 +133,11 @@ Complete creating your cloud flow in the *designer*. Power Automate uses either 
 
 1. Save your cloud flow by selecting **Save** in the command bar.
 
-    A green message appears at the top of the screen, indicating that your flow was saved successfully.
+    A green message appears at the top of the screen, indicating that your flow is now saved.
 
-    :::image type="content" source="media/getting-started-tutorial/success-message.png" alt-text="Screenshot of a green message at the top of the screen indicating the flow was saved successfully.":::
+    :::image type="content" source="media/getting-started-tutorial/success-message.png" alt-text="Screenshot of a green message at the top of the screen indicating your flow is saved.":::
 
-    Once you create a flow, we recommend that you test it. Go to [test your cloud flow](#test-your-cloud-flow).
-
-    > [!NOTE]
-    > Make sure a human reviews AI-generated content to verify that it is accurate and appropriate. Learn more in [Human review for automation with a prompt](/ai-builder/azure-openai-human-review).
-
-1. Go to [Test your cloud flow](#test-your-cloud-flow).
+1. Once you create a flow, we recommend that you test it. Go to [Test your cloud flow](#test-your-cloud-flow).
 
 ---
 
@@ -174,17 +160,30 @@ To make sure your flow works as expected, you should test it.
 
 1. To display your flow, leave the designer by selecting **Back** (arrow pointing left) in the top-left corner next to your flow name (not the **Back** button in the address bar).
 
-    The details screen displays the flow you created. The details screen shows the flow's name, description, and other information about the flow
+    The screen that appears shows the details of the flow you created, including the flow's name, description, and other information about the flow.
+
+    Under the **28-day run history** panel, you can check if your flow ran successfully, failed, or is still running.
 
     :::image type="content" source="media/getting-started-tutorial/details.png" alt-text="Screenshot of the details screen for your new cloud flow.":::
 
-1. Your flow is now in the **My flows** list. To find it, select **My flows** on the navigation menu to the left. Your new flow is at the top of the list.
+1. Go to [Run your cloud flow](#run-your-cloud-flow) to run your flow.
 
-    :::image type="content" source="media/getting-started-tutorial/my-flows.png" alt-text="Screenshot of the list of cloud flows in the main Power Automate screen.":::
+## Run your cloud flow
 
-When your flow runs, it sends an email to the address you specified in the **To** field. In this tutorial, you used your own email. Check your email inbox to see the results of your flow.
+When your cloud flow runs successfully, it's listed in the **My flows** screen. This is where you can run it.
 
-Congratulations! You successfully created a cloud flow and tested it!
+1. On the navigation menu to the left, select **My flows**. Your cloud flow is at the top of the list.
+
+1. Select the **Run** icon next to your flow (the first icon, which is a triangle pointing to the right).
+
+    :::image type="content" source="media/getting-started-tutorial/run-flow.png" alt-text="Screenshot of the 'Run' icon next to your cloud flow.":::
+
+1. In the **Run flow** pane, select **Run flow**.
+1. When the flow run starts successfully (indicated by a green checkmark), select **Done**.
+    A message appears at the top of the screen, indicating that your flow is running.
+When your flow finishes running, it sends an email to the address you specified in the **To** field. In this tutorial, you used your own email. Check your email inbox to see the results of your flow.
+
+Congratulations! You successfully created a cloud flow, tested it, and ran it!
 
 ## Related information
 
