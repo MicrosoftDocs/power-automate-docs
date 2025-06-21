@@ -79,6 +79,19 @@ If you see a red message in your flow that says **Invalid parameters**, you need
 
     Notice that the **Invalid parameters** message is gone.
 
+1. Save your cloud flow by selecting **Save** in the command bar.
+
+    A green message appears at the top of the screen, indicating that your flow was saved successfully.
+
+    :::image type="content" source="media/getting-started-tutorial/success-message.png" alt-text="Screenshot of a green message at the top of the screen indicating the flow was saved successfully.":::
+
+    Once you create a flow, we recommend that you test it. Go to [test your cloud flow](#test-your-cloud-flow).
+
+    > [!NOTE]
+    > Make sure a human reviews AI-generated content to verify that it is accurate and appropriate. Learn more in [Human review for automation with a prompt](/ai-builder/azure-openai-human-review).
+
+1. Go to [Test your cloud flow](#test-your-cloud-flow).
+
 # [Without copilot](#tab/without-copilot)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
@@ -96,8 +109,6 @@ If you see a red message in your flow that says **Invalid parameters**, you need
 1. Select **Create**.
 
     The designer opens with the **Recurrence** *trigger*. Now you need to add an *action*. A trigger is an event that starts a cloud flow. Actions are the events you want the flow to do after the trigger event takes place.
-
----
 
 ### Complete creating your cloud flow
 
@@ -137,10 +148,12 @@ Complete creating your cloud flow in the *designer*. Power Automate uses either 
 
     Once you create a flow, we recommend that you test it. Go to [test your cloud flow](#test-your-cloud-flow).
 
-> [!NOTE]
-> Make sure a human reviews AI-generated content to verify that it is accurate and appropriate. Learn more in [Human review for automation with a prompt](/ai-builder/azure-openai-human-review).
+    > [!NOTE]
+    > Make sure a human reviews AI-generated content to verify that it is accurate and appropriate. Learn more in [Human review for automation with a prompt](/ai-builder/azure-openai-human-review).
 
-1. Go to [Test your cloud flow](#test-your-cloud-flow)
+1. Go to [Test your cloud flow](#test-your-cloud-flow).
+
+---
 
 ## Test your cloud flow
 
@@ -171,7 +184,7 @@ To make sure your flow works as expected, you should test it.
 
 When your flow runs, it sends an email to the address you specified in the **To** field. In this tutorial, you used your own email. Check your email inbox to see the results of your flow.
 
-Congratulations! You successfully created a cloud flow using Copilot and tested it!
+Congratulations! You successfully created a cloud flow and tested it!
 
 ## Related information
 
