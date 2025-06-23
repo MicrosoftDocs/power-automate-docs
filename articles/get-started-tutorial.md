@@ -22,7 +22,7 @@ ms.collection:
 
 # Tutorial-Get started with Power Automate
 
-In this tutorial, you create a cloud flow, test it, and then run it. The completed cloud flow sends a monthly newsletter to an email address. To give you the full experience, you send the email to your own address so you can see the results of the cloud flow.
+In this tutorial, you create a cloud flow, test it, and then run it. The completed cloud flow sends a monthly newsletter to an email address. To give you the full experience, you send the email to your own address so you can receive the results of the cloud flow in your inbox.
 
 ## Create a cloud flow
 
