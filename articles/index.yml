@@ -50,10 +50,10 @@ additionalContent:
           url: sign-up-sign-in.md
         - text: Buy Power Automate
           url: /power-automate/organization-q-and-a#how-can-people-gain-access-to-the-paid-features-of-power-automate
+        - text: "Tutorial: Get started with Power Automate"
+          url: get-started-tutorial.md  
     - title: Create flows
       links:
-        - text: Tutorial-Get started with Power Automate
-          url: get-started-tutorial.md
         - text: Create automated flows
           url: ./get-started-logic-flow.md
         - text: Create scheduled flows
