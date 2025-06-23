@@ -1,5 +1,5 @@
 ---
-title: Get started with Power Automate tutorial
+title: Tutorial-Get started with Power Automate
 description: Learn how to build a cloud flow with Copilot with a tutorial.
 author: HeatherOrt
 contributors:
@@ -20,9 +20,9 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Get started with Power Automate tutorial
+# Tutorial-Get started with Power Automate
 
-This article provides a tutorial for you to create a cloud flow, test it, and then run it. The completed flow sends a monthly newsletter to an email address.
+In this tutorial, you create a cloud flow, test it, and then run it. The completed cloud flow sends a monthly newsletter to an email address. To give you the full experience, you send the email to your own address so you can see the results of the cloud flow.
 
 ## Create a cloud flow
 
