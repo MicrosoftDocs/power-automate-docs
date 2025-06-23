@@ -80,7 +80,7 @@ If the issue involves coding and other professional development features, simpli
 
 You might try different configurations to eliminate possible causes. Mention these configurations in the support request. This inclusion helps others understand the issue better and avoid repeating the same steps.
 
-## Submitting a Power Apps support request
+## Submitting a Power Automate support request
 
 
 ## See also
