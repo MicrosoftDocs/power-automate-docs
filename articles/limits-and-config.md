@@ -2,7 +2,7 @@
 title: Limits of automated, scheduled, and instant flows
 description: Learn about the limits that apply to automated, scheduled, and instant flows in Microsoft Power Automate.
 author: samathur
-ms.author: quseleba
+ms.author: matow
 ms.reviewer: angieandrews
 Contributors:
   - QuentinSele
@@ -15,7 +15,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
 suite: flow
-ms.date: 06/05/2025
+ms.date: 06/25/2025
 search.audienceType: 
   - flowmaker
   - enduser
@@ -93,7 +93,7 @@ The following table describes the limits on how long flows remain turned on befo
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
 | Flows with errors    | 14 days |  A cloud flow that has a trigger or actions that fail continuously will be turned off.
-| Flows without trigger activity | 90 days | A cloud flows that is not triggered within a 90 day period may be turned off. Flows owned by users with premium licenses or assigned capacity licenses (Power Automate Process, per flow) are not subject to this suspension. Flow owners and co-owners are notified 30 days prior to suspension, and can turn the flow back on for it to continue operating. |
+| Flows without trigger activity | 90 days | A cloud flows that isn't triggered within a 90 day period might be turned off. Flows owned by users with premium licenses or assigned capacity licenses (Power Automate Process, per flow) aren't subject to this suspension. Flow owners and co-owners are notified 30 days prior to suspension, and can turn the flow back on for it to continue operating. |
 | Consistently throttled flows | 14 days | A cloud flow that is consistently throttled will be turned off. Assign Power Automate Process licenses to the flow to dedicate capacity and avoid throttling.|
 
 ## Concurrency, looping, and debatching limits
@@ -114,7 +114,7 @@ The following table describes the concurrency, looping, and debatching limits fo
 
 The following sections describe the time-bound limits for a single version of a cloud flow definition. These limits apply across all runs of the flow version and are calculated on sliding windows.
 
-If a cloud flow exceeds one of the limits, flow activity is slowed. It automatically resumes when the sliding window has activity below the limit. However, if a cloud flow [consistently remains above the limits](#duration-and-retention-limits) for 14 days, it's turned off. Be sure to monitor email for notifications about such flows. If a cloud flow consistently exceeds the limits, you need to revise it to remain below the limits to prevent it from being turned off.
+If a cloud flow exceeds one of the limits, flow activity is slowed. It automatically resumes when the sliding window has activity below the limit. However, if a cloud flow [consistently remains above the limits](#duration-and-retention-limits) for 14 days, it is turned off. Be sure to monitor email for notifications about such flows. If a cloud flow consistently exceeds the limits, you need to revise it to remain below the limits to prevent it from being turned off.
 
 > [!TIP]
 > Because these limits are for a single version, if you update your flow, it resets the limits.
