@@ -4,13 +4,12 @@ description: Add or manage connections to SharePoint, SQL Server, OneDrive for B
 suite: flow
 author: kewaiss
 contributors:
-  - Jopanchal
   - schabungbam
   - v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 02/10/2023
+ms.date: 06/25/2025
 ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 

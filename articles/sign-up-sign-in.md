@@ -11,7 +11,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 11/17/2020
+ms.date: 06/25/2025
 ms.author: anjlic
 search.audienceType: 
   - flowmaker
@@ -25,7 +25,7 @@ Starting with Power Automate, as an individual, is easy! Before you can create a
 
 ## Sign up free
 
-If you haven't used other online Microsoft products, you'll need to sign up.
+If you haven't used other online Microsoft products, you need to sign up.
 
 1. In [Power Automate](https://make.powerautomate.com), select **Try free** in the upper-right corner.
 2. Enter your email address.
@@ -33,7 +33,7 @@ If you haven't used other online Microsoft products, you'll need to sign up.
 
 ## Sign in
 
-If you've used other Microsoft online products, either for work or yourself, all you need to do is sign in.
+If you used other Microsoft online products, either for work or yourself, all you need to do is sign in.
 
 1. In [Power Automate](https://make.powerautomate.com), select **Sign in** in the upper-right corner.
 
