@@ -5,7 +5,7 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 10/09/2024
+ms.date: 06/25/2025
 ms.author: ralinga
 ms.reviewer: angieandrews
 ms.custom: bap-template
