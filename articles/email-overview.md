@@ -1,49 +1,63 @@
 ---
-title: Overview of using Outlook and Power Automate | Microsoft Docs
-description: Overview of using Outlook and Power Automate.
-services: ''
+title: Overview of using Outlook and Power Automate
+description: Get an overview of using Outlook and Power Automate.
 suite: flow
-documentationcenter: na
-author: v-aangie
-editor: ''
-tags: ''
+author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 05/10/2022
-ms.author: angieandrews
+ms.date: 06/17/2025
+ms.author: kewaiss
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
+
 # Overview of using Outlook and Power Automate
 
-Connectors represent the service to which you want to connect. For example, you can use the OneDrive, SharePoint, or Twitter connectors to use those services. Two of the most popular connectors used in flows to send or receive email are the [Outlook.com](/connectors/outlook/) connector and the [Office 365 Outlook](/connectors/office365/#connector-in-depth) connector. Both connectors offer similar operations that you can use to manage your mail, calendars, and contacts. You can perform actions such as send mail, schedule meetings, add contacts, and more with either of these connectors.
+Connectors represent the service to which you want to connect. For example, you can use the OneDrive, SharePoint, or Twitter (now X) connectors to use those services. Two of the most popular connectors used in cloud flows to send or receive email are the [Outlook.com](/connectors/outlook/) connector and the [Office 365 Outlook](/connectors/office365/#connector-in-depth) connector. Both connectors offer similar operations that you can use to manage your mail, calendars, and contacts. You can perform actions such as send mail, schedule meetings, add contacts, and more with either of these connectors.
 
-## Outlook.com or Office 365 Outlook: Which connector should I use?
+## When to use the Outlook.com or Office 365 Outlook connector
 
 If you're using a work or school email account, use the Office 365 Outlook connector. If you're using a personal account (Microsoft account), use the Outlook.com connector. In this article, we refer only to the Office 365 Outlook [triggers](/connectors/office365/#triggers) and [actions](/connectors/office365/#actions). You can also use the same techniques for the Outlook.com connector.
 
-## Triggers
+## Find Outlook triggers
 
-A *trigger* is an event that starts a cloud flow. For example, **When a new email arrives (V3)** is a trigger that starts a cloud flow when an email arrives into an inbox. You can also trigger flows based on the properties of an email. More information: [Trigger a cloud flow based on email properties](./email-triggers.md).
- 
-The following screenshot shows a partial list of the Office 365 Outlook triggers. For the full list of triggers you can use to start flows, go to [Office 365 Outlook triggers](/connectors/office365/#triggers).
+A *trigger* is an event that starts a cloud flow. For example, **When an email is flagged (V3)** is a trigger.
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of a partial of the Office 365 Outlook triggers.](./media/email/email-triggers.png "Partial list of the Office 365 Outlook triggers")
+Use the **Search** field to find triggers by entering keywords. For example, if you want to find triggers related to Outlook, type **outlook** in the search box.
 
-## Actions
+:::image type="content" source="./media/email/email-triggers.png" alt-text="Screenshot of a list of Office 365 Outlook triggers.":::
 
-*Actions* are the events you want the flow to do after the trigger event takes place. An example of an action is, "when someone sends me an email, save it to OneDrive."
 
-The following screenshot shows a partial list of Office 365 Outlook actions. For the full list of actions you can use in your flows, go to [Office 365 Outlook actions](/connectors/office365/#actions).
+Tutorials for how to use triggers in your cloud flows are available in [Trigger a cloud flow based on email properties](./email-triggers.md).
 
-> [!div class="mx-imgBorder"]
-> ![Screenshot of a partial list of Office 365 Outlook actions.](./media/email/email-actions.png "Partial list of the Office 365 Outlook actions")
+Get the full list of triggers you can use in your cloud flows in [Office 365 Outlook triggers](/connectors/office365/#triggers).
+
+## Find Outlook actions
+
+*Actions* are the events you want the flow to do after the trigger event takes place. An example of an action for the **When an email is flagged (V3)** trigger is **Create contact (V2)**.
+
+:::image type="content" source="./media/email/trigger-action.png" alt-text="Screenshot of a trigger and an action in a cloud flow.":::
+
+You can use the **Search** field to find actions by entering keywords. For example, if you want to find actions related to Outlook, type **outlook** in the search box.
+
+:::image type="content" source="./media/email/email-actions.png" alt-text="Screenshot of a list of Office 365 Outlook actions.":::
+
+
+Tutorials for how to use actions in your cloud flows are available in [Create flows for popular email scenarios](email-top-scenarios.md) and [Customize email in flows](./email-customization.md).
+
+Get the full list of actions you can use in your cloud flows in [Office 365 Outlook actions](/connectors/office365/#actions).
+
+## Shortcuts to find triggers and actions
+
+To help you find triggers or actions quickly, use the shortcuts in the following table.
+
+|Shortcut  |How to use  |
+|---------|---------|
+|Display all triggers or actions  |     When you search for actions or triggers, a condensed list within each category displays. If you want all options to display, select **See more** at the top of the category.    |
+|Display your most often used triggers or actions at the top  | Select the **Favorite** icon (the star) next to a category name or the trigger or action name. Next time you open the pane, your triggers or actions you marked as favorite appear at the top of the pane.  |
 
 ## Related information
 

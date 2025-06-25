@@ -2,9 +2,11 @@
 title: Limits of automated, scheduled, and instant flows
 description: Learn about the limits that apply to automated, scheduled, and instant flows in Microsoft Power Automate.
 author: samathur
-ms.author: lali
+ms.author: matow
 ms.reviewer: angieandrews
 Contributors:
+  - QuentinSele
+  - AndreasTouly
   - samathur
   - ChrisGarty
   - Radioblazer
@@ -13,7 +15,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
 suite: flow
-ms.date: 02/11/2025
+ms.date: 06/25/2025
 search.audienceType: 
   - flowmaker
   - enduser
@@ -35,7 +37,7 @@ A flow's *performance profile* determines its Power Platform request limits. The
 | Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials <br>- Dynamics 365 Team Member<br>- Microsoft Power Apps for Developer | 
 | Medium              | - Power Apps triggered flows, manual flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate Premium (previously Power Automate per user), Power Automate Premium plans (previously Power Automate per user with Attended RPA plans) <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses)|
 | High                | Power Automate Process plan, Power Automate per flow plan |
-| Unlimited Extended  | Pay-as-you-go flows, Dynamics in context flows running under service principal  
+| Unlimited Extended  | Pay-as-you-go flows, Dynamics in context flows running under service principal |
 
 If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow has the performance profile of the higher of the plans. For the exact set of plans that include Power Automate, refer to the [Power Platform licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
@@ -53,12 +55,12 @@ The following table describes the limits for a single flow definition.
 | ---- | ----- | ----- |
 | Actions per workflow | 500 | Flows with a large number of actions might encounter performance issues while you edit them, even if they have fewer than 500. Consider using child flows to reduce the number of actions in a single flow or if you need more than 500. |
 | Allowed nesting depth for actions | 8 | Add child flows if you need more than eight levels of nesting. |
-| Switch scope cases limit | 25 | |
-| Variables per workflow | 250 | |
-| Length of `action` or `trigger` name | 80 characters | |
-| Characters per expression | 8,192 | |
-| Length of `description` | 256 characters | |
-| Maximum size of `trackedProperties` | 16,000 characters | |
+| Switch scope cases limit | 25 | n/a |
+| Variables per workflow | 250 | n/a |
+| Length of `action` or `trigger` name | 80 characters | n/a |
+| Characters per expression | 8,192 | n/a |
+| Length of `description` | 256 characters | n/a |
+| Maximum size of `trackedProperties` | 16,000 characters | n/a |
 
 ## My flows limit
 
@@ -80,9 +82,9 @@ The following table describes the duration limits for a single flow run.
 |------|-------|-------|
 | Run duration | 30 days | Run duration is calculated using a run's start time and includes flows with pending steps like approvals. After 30 days, any pending steps time out.|
 | Run retention in storage | 30 days | Run retention is calculated using a run's start time. |
-| Minimum recurrence interval | 60 seconds |
-| Maximum recurrence interval | 500 days |
-| Minimum postpone interval | 5 seconds for Low, 1 second for all other performance profiles |
+| Minimum recurrence interval | 60 seconds |  n/a |
+| Maximum recurrence interval | 500 days | n/a |
+| Minimum postpone interval | Five (5) seconds for Low, one (1) second for all other performance profiles | n/a |
 
 ### Retention limits
 
@@ -90,10 +92,9 @@ The following table describes the limits on how long flows remain turned on befo
 
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
-| Flows with errors    | 14 days |  A cloud flow that has a trigger or actions that fail continuously is turned off. Fix your trigger or actions and turn on the flow. These flows have FlowSuspensionReason=AlwaysFailingDetected. |
-| Not triggered (dormant) flows | 90 days for free, trial, community, and Microsoft 365 Plans. No expiration limit for all others. | A cloud flow that has no successful triggers expires and is turned off. After 90 days of inactivity, the flow creator and co-owners receive an email. If no action is taken in next 30 days, the flow is systematically turned off, and the creator and co-owners are notified in an email. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed on [Power Automate pricing](https://make.powerautomate.com/pricing) to ensure your flow isn’t turned off due to inactivity. You can turn your cloud flows back on anytime. These flows have FlowSuspensionReason=NeverTriggeringDetected. |
-| Consistently throttled flows | 14 days |A cloud flow that's consistently throttled for 14 days is turned off. The flow creator and co-creators get an email when the flow starts throttling and when the flow is turned off. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed on [Power Automate pricing](https://make.powerautomate.com/pricing) to get higher action limits. You can turn your cloud flows back on anytime.|
-|Premium flows without premium licenses| 14 days | Flows that were created with premium features (premium connectors, custom connectors, HTTP connectors, on premises gateway, and business process flows) but don't have a premium Power Automate license are turned off after 14 days. This situation happens if the original owner leaves the organization, or if they have an expired trial or premium license. The flow owner and co-owners get an email when the trial or premium license expires, or when the owner isn't found in Microsoft Entra ID (Microsoft Entra ID). The flow continues to work for 14 days. If a premium license isn't assigned to the flow within 14 days, the flow is automatically turned off, and the owner and co-owners are notified through email. Newly created or edited premium flows without a premium license are saved but turned off. Once a premium Power Automate license is assigned to the owner or flow, you can turn on the flow. Admins can [find these flows](/power-platform/admin/power-automate-licensing/faqs#how-can-i-identify-flows-that-need-premium-licenses-to-avoid-interruptions). Assign a Power Automate Process license or a per user license to the owner to keep the flow running.|
+| Flows with errors    | 14 days |  A cloud flow that has a trigger or actions that fail continuously will be turned off.
+| Flows without trigger activity | 90 days | A cloud flows that isn't triggered within a 90 day period might be turned off. Flows owned by users with premium licenses or assigned capacity licenses (Power Automate Process, per flow) aren't subject to this suspension. Flow owners and co-owners are notified 30 days prior to suspension, and can turn the flow back on for it to continue operating. |
+| Consistently throttled flows | 14 days | A cloud flow that is consistently throttled will be turned off. Assign Power Automate Process licenses to the flow to dedicate capacity and avoid throttling.|
 
 ## Concurrency, looping, and debatching limits
 
@@ -106,14 +107,14 @@ The following table describes the concurrency, looping, and debatching limits fo
 | Apply to each array item | 5,000 for Low, 100,000 for all others | This limit describes the highest number of array items that an "apply to each" loop can process. <br />To filter larger arrays, you can use the query action. |
 | Apply to each concurrency | 1 is the default limit. You can change the default to a value between 1 and 50 inclusively. | This limit is highest number of "apply to each" loop iterations that can run at the same time, or in parallel. |
 | Split on items | - 5,000 for Low without trigger concurrency  <br />- 100,000 for all others without trigger concurrency <br />- 100 with trigger concurrency | For triggers that return an array, you can specify an expression that uses a 'SplitOn' property that splits or debatches array items into multiple workflow instances for processing, rather than use a "Foreach" loop. This expression references the array to use for creating and running a workflow instance for each array item. <br />**Note**: When concurrency is turned on, the Split on limit is reduced to 100 items. |
-| Until iterations | - Default: 60 <br />- Maximum: 5,000 | |
+| Until iterations | - Default: 60 <br />- Maximum: 5,000 | n/a |
 | Paginated items | 5,000 for Low, 100,000 for all others | To process more items, trigger multiple flow runs over your data. |
 
 ## Throughput limits
 
 The following sections describe the time-bound limits for a single version of a cloud flow definition. These limits apply across all runs of the flow version and are calculated on sliding windows.
 
-If a cloud flow exceeds one of the limits, flow activity is slowed. It automatically resumes when the sliding window has activity below the limit. However, if a cloud flow [consistently remains above the limits](#duration-and-retention-limits) for 14 days, it's turned off. Be sure to monitor email for notifications about such flows. If a cloud flow consistently exceeds the limits, you need to revise it to remain below the limits to prevent it from being turned off.
+If a cloud flow exceeds one of the limits, flow activity is slowed. It automatically resumes when the sliding window has activity below the limit. However, if a cloud flow [consistently remains above the limits](#duration-and-retention-limits) for 14 days, it is turned off. Be sure to monitor email for notifications about such flows. If a cloud flow consistently exceeds the limits, you need to revise it to remain below the limits to prevent it from being turned off.
 
 > [!TIP]
 > Because these limits are for a single version, if you update your flow, it resets the limits.
@@ -175,7 +176,7 @@ The following table describes the timeout limits.
 | Name | Limit | Notes |
 |------|-------|-------|
 | Outbound synchronous request | 120 seconds (2 minutes) | Examples of outbound requests include calls made by HTTP triggers.<br/>**Tip**: For longer-running operations, use an asynchronous polling pattern or an "Until" loop. To work around timeout limits when you call another flow that has a callable endpoint, use the built-in action instead, which you can find in the connector picker under **Built-in**. |
-| Outbound asynchronous request | Configurable up to 30 days |  |
+| Outbound asynchronous request | Configurable up to 30 days | n/a |
 | Inbound request | 120 seconds (2 minutes) | Examples of inbound requests include requests to trigger instant flows and flows with the **HTTP Request** trigger.<br/>Flows that contain a response action including **Respond to Copilot**, **HTTP Response**, and **Respond to a PowerApp or flow** always returns a response within this limit.<br/>Child flows that are started before the response action continue running separately, and actions after the response action continue running beyond this limit, enabling a flow to respond and continue running other operations. |
 
 If you test a cloud flow that runs for longer than 10 minutes, you might get a timeout message in Power Automate, even though the flow continues to run in the background. If this happens, reopen the view to receive the current status.
@@ -196,7 +197,7 @@ The following table describes the limits on the number of characters in expressi
 | Name | Limit | Notes |
 |------|-------|-------|
 | Expression evaluation limit | 131,072 characters | The `@concat()`, `@base64()`, and `@string()` expressions can't be longer than this limit. |
-| Request URL character limit | 16,384 characters |
+| Request URL character limit | 16,384 characters | n/a |
 
 ### Retry policy
 
@@ -209,7 +210,7 @@ The following table describes the default retry limits.
 | Performance profile | Description |
 | ------------------- | ----------- |
 | Low | This policy sends up to two retries at *exponentially increasing* intervals, which scale by 5 minutes up to an interval of approximately 10 minutes for the last retry. |
-| Medium, High | This policy sends up to eight retries at *exponentially increasing* intervals, which scale by 7 seconds up to an interval of approximately 15 minutes for the last retry. |
+| Medium, High | This policy sends up to 12 retries at *exponentially increasing* intervals, which scale by seven (7) seconds up to an interval of approximately 1 hour for the last retry. |
 
 #### Retry setting limits
 
@@ -220,8 +221,8 @@ To change the default settings, use the retry policy parameter.
 | Name | Limit |
 | ---- | ----- |
 | Retry attempts | 90 |
-| Retry maximum delay | 1 day |
-| Retry minimum delay | 5 seconds |
+| Retry maximum delay | One (1) day |
+| Retry minimum delay | Five (5) seconds |
 
 [Learn more about retry policies](/azure/logic-apps/logic-apps-exception-handling#retry-policies).
 

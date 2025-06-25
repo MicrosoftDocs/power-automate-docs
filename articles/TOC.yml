@@ -77,8 +77,12 @@
           href: create-team-flows.md
         - name: Support for guest users
           href: share-guest-users.md
+        - name: Manage shared flows with users outside an environment
+          href: manage-shared-flows-with-users-outside-environment.md
         - name: Support for service principal owned flows
           href: service-principal-support.md
+        - name: Guide to cloud flow sharing and permissions
+          href: guide-to-cloud-flow-sharing-permissions.md
         - name: Export and import a non-solution flow
           href: export-import-flow-non-solution.md
         - name: Save drafts and use versioning
@@ -576,6 +580,8 @@
     href: ./desktop-flows/static-analysis.md
   - name: Troubleshooter
     href: ./desktop-flows/troubleshooter.md
+  - name: Safe stop
+    href: ./desktop-flows/safe-stop.md
   - name: How to
     items:
     - name: Handle and manipulate variables

@@ -12,7 +12,7 @@ ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
 ms.date: 04/03/2025
-ms.author: janpidych
+ms.author: michalrosik
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - flowmaker
