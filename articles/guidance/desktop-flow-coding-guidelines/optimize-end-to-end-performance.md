@@ -1,15 +1,16 @@
 ---
 title: Optimize end-to-end process performance
 description: Learn how to distribute workloads dynamically using machine groups and hosted machine groups in Power Automate for improved automation efficiency.
-# customer intent: As a Power Automate user, I want to distribute workloads dynamically using machine groups so that I can improve automation efficiency.
+# customer intent: As a Power Automate maker, I want to distribute workloads dynamically using machine groups so that I can improve automation efficiency.
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/29/2025
+ms.date: 06/25/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
+  - flowmaker
 ---
 
 # Optimize end-to-end process performance

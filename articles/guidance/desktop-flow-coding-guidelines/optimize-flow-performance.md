@@ -1,15 +1,16 @@
 ---
 title: Optimize flow performance
 description: Learn how to optimize workflows in Power Automate for faster execution and fewer errors with these best practices.
-#customer intent: As a Power Automate user, I want to optimize flow performance so that my workflows execute faster and with fewer errors.  
+#customer intent: As a Power Automate maker, I want to optimize flow performance so that my workflows execute faster and with fewer errors.  
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/29/2025
+ms.date: 06/25/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
+  - flowmaker
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

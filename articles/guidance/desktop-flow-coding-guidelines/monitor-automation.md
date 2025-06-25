@@ -1,15 +1,16 @@
 ---
 title: Monitor and troubleshoot automation processes
 description: Learn how to monitor desktop flow action logs and troubleshoot issues effectively to ensure smooth automation processes in Power Automate.
-#customer intent: As a Power Automate user, I want to capture detailed logs of my automation runs so that I can troubleshoot errors efficiently.
+#customer intent: As a Power Automate maker, I want to capture detailed logs of my automation runs so that I can troubleshoot errors efficiently.
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/29/2025
+ms.date: 06/25/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
+  - flowmaker
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

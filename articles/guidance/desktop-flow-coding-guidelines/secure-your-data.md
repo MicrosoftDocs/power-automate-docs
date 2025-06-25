@@ -1,15 +1,16 @@
 ---
 title: Secure your data
 description: Secure your Power Automate workflows by managing credentials, sensitive variables, and access to desktop flows.
-#customer intent: As a Power Automate user, I want to secure my workflows so that I can protect sensitive data and ensure compliance with security standards.  
+#customer intent: As a Power Automate maker, I want to secure my workflows so that I can protect sensitive data and ensure compliance with security standards.  
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/29/2025
+ms.date: 06/25/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
+  - flowmaker
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

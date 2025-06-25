@@ -1,15 +1,16 @@
 ---
 title: Build readable and maintainable flow scripts
 description: Learn how to build clear and manageable flow scripts to improve efficiency, teamwork, and troubleshooting in Power Automate.
-# customer intent: As a Power Automate user, I want to organize flow scripts clearly so that I can improve development efficiency and troubleshooting.
+# customer intent: As a Power Automate maker, I want to organize flow scripts clearly so that I can improve development efficiency and troubleshooting.
 author: PetrosFeleskouras
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/29/2025
+ms.date: 06/25/2025
 ms.author: pefelesk
 ms.reviewer: pankajsharma2087
 search.audienceType:
   - admin
+  - flowmaker
 ---
 
 # Build readable and maintainable flow scripts

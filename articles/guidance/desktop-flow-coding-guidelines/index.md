@@ -1,12 +1,12 @@
 ---
 title: Power Automate coding guidelines for desktop flows
 description: Learn best practices for building Power Automate desktop flows for building, optimizing, securing, and monitoring your Power Automate desktop flows.
-#customer intent: As a Power Automate user, I want to learn best practices for building and maintaining efficient desktop flows.
+#customer intent: As a Power Automate maker, I want to learn best practices for building and maintaining efficient desktop flows.
 author: PetrosFeleskouras
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 05/29/2025
+ms.date: 06/25/2025
 ms.author: pefelesk
 ms.reviewer: jhaskett-msft
 search.audienceType: 
