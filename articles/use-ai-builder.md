@@ -6,8 +6,8 @@ author: v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 10/09/2024
-ms.author: angieandrews
+ms.date: 06/25/2025
+ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.collection:
   - get-started
