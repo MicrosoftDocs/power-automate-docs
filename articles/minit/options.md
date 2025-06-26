@@ -38,7 +38,7 @@ To choose this option, follow these steps:
 1. Select **Save**.
 1. Restart the application as prompted.
 
-:::image type="content" source="media/options/options-download-checkmarked-GA.png" alt-text="Screenshot of the 'Options' screen with 'Keep process model in cloud option' checked.":::
+:::image type="content" source="media/options/options-download-checkmarked-ga.png" alt-text="Screenshot of the 'Options' screen with 'Keep process model in cloud option' checked.":::
 
 When you check the option, the following sections are made hidden and not relevant after the application restart:
 
