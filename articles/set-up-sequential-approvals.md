@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 10/23/2024
+ms.date: 06/19/2025
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 ---
@@ -77,3 +77,7 @@ Now, when the flow runs, it first goes to the level 1 manager. If that person ap
 You can rename actions as you wish. You can also add other actions and subsequent actions after the approval, such as an email that sends the approval decision to the requestor. The following screenshot shows what your flow might look like with renamed actions and an email action at the end.
 
 :::image type="content" source="media/set-up-sequential-approvals/renamed-actions.png" alt-text="Screenshot of a flow with renamed actions and an email action at the end.":::
+
+## Limitation
+
+You can't assign the same approver to different steps of your approval.

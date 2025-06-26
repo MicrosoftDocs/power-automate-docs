@@ -6,7 +6,7 @@ author: kisubedi
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 04/17/2025
+ms.date: 06/25/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -28,7 +28,7 @@ The look and feel of your designer might look different from the screenshots in 
 > - The cards in the flow are small.
 > - The standalone action configuration pane appears on the left when you select a card.
 >
-> More information: [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer)
+> More information: [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer)
 
 If you're using the classic designer, you can switch to the new designer by selecting **New designer** in the top-right corner of the screen.
 
