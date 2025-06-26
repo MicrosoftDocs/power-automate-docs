@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 12/17/2024
+ms.date: 06/26/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -28,21 +28,17 @@ You can change the application settings in the **Options** tab.
 
 - **Change process animation settings:** In the **Animation** tab, change settings for process animation. These settings are used as default, whenever you create a new process view.
 
-## Keep and analyze process model in cloud (preview)
-
-[!INCLUDE[cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
+## Keep and analyze process model in cloud
 
 You can decide if the desktop application downloads the process model to your client computer and analyzes it locally, or keeps and analyzes it in the cloud. The second option allows you to eliminate limitations on your local hardware resources. It also allows you to analyze process models that are beyond your local computer capacity.
 
-[!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
 To choose this option, follow these steps:
 
-1. In the checkbox next to **Keep process model in the cloud (preview)**, place a checkmark.
+1. In the checkbox next to **Keep process model in the cloud**, place a checkmark.
 1. Select **Save**.
 1. Restart the application as prompted.
 
-:::image type="content" source="media/options/options-download-checkmarked.png" alt-text="Screenshot of the 'Options' screen with 'Keep process model in cloud option' checked.":::
+:::image type="content" source="media/options/options-download-checkmarked-ga.png" alt-text="Screenshot of the 'Options' screen with 'Keep process model in cloud option' checked.":::
 
 When you check the option, the following sections are made hidden and not relevant after the application restart:
 
