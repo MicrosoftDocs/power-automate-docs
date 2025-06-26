@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: tutorial
-ms.date: 06/23/2025
+ms.date: 06/26/2025
 ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.custom: copilot-scenario-highlight
@@ -23,12 +23,6 @@ ms.collection:
 # Tutorial: Get started with Power Automate
 
 In this tutorial, you create a cloud flow, test it, and then run it. The completed cloud flow sends a monthly newsletter to an email address. To give you the full experience, you send the email to your own address so you can receive the results of the cloud flow in your inbox.
-
-In this tutorial, you:
-
-- Create a cloud flow
-- Test your cloud flow
-- Run your cloud flow
 
 ## Create a cloud flow
 
@@ -112,7 +106,7 @@ You can create a cloud flow using natural language in Copilot, or create it from
 
 ### Complete creating your cloud flow
 
-Complete creating your cloud flow in the *designer*. Power Automate uses either the new designer or the classic designer. If you're not sure which designer you're using, learn how to identify the differences in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
+Complete creating your cloud flow in the *designer*. Power Automate allows you to use either the [new designer](flows-designer.md) or the classic designer to configure your cloud flow. The steps are similar in both designers. Learn more (with examples) in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
 
 1. Select the location for your new action in your cloud flow:
     - New designer: Select (**+**) below the **Recurrence** trigger.
