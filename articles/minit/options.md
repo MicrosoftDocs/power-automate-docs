@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 12/17/2024
+ms.date: 06/26/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
