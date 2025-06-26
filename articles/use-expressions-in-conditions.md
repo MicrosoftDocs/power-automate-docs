@@ -6,7 +6,7 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 06/16/2025
+ms.date: 06/27/2025
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
@@ -31,7 +31,7 @@ Here's what you need to complete this tutorial.
 
 ## Create a cloud flow
 
-You can create a cloud flow using natural language in Copilot. You can also create a flow using classic Power Automate functionality. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you don't have access to Copilot, select the **Without copilot** tab.
+You can create a cloud flow using natural language in Copilot, or create it from scratch. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you don't have access to Copilot, select the **Without copilot** tab.
 
 # [Using copilot](#tab/using-copilot)
 
@@ -45,9 +45,8 @@ You can create a cloud flow using natural language in Copilot. You can also crea
 1. Select **Generate**.
 1. Select **Keep it and continue**.
 1. Review the connections. If your data sources are connected properly, a green checkmark appears next to the app or service. If a green checkmark doesn't appear, select the app or service and follow the instructions.
-1. After your connections are set, select **Create flow**. The *designer* screen opens. This is where you can configure your cloud flow.
-
-    You can configure your cloud flow in either the modern [new designer](flows-designer.md) or the classic designer. The default designer is the new designer, which is available to all users if enabled. The classic designer is available to users who prefer the classic experience, or whose admin disabled the new designer feature. Learn more about the designer in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+1. After your connections are set, select **Create flow**. The *designer* screen opens. This is where you can configure your cloud flow, if necessary.
+1. Go to [Select the spreadsheet and get all rows](#select-the-spreadsheet-and-get-all-rows).
 
 # [Without copilot](#tab/without-copilot)
 
@@ -58,13 +57,15 @@ You can create a cloud flow using natural language in Copilot. You can also crea
 1. In the **Repeats every** field dropdown menu, select **Day** to set the schedule to run the cloud flow once daily.
 1. Select the **Create** button to open the *designer*.
 
-    You can configure your cloud flow in either the modern [new designer](flows-designer.md) or the classic designer. The default designer is the new designer, which is available to all users if enabled. The classic designer is available to users who prefer the classic experience, or whose admin disabled the new designer feature. Learn more about the designer in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+    You can configure your cloud flow in either the [new designer](flows-designer.md) or the classic designer. The steps are similar in both designers. Learn more (with examples) in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
+
+1. Go to [Select the spreadsheet and get all rows](#select-the-spreadsheet-and-get-all-rows).
 
 ---
 
 ## Select the spreadsheet and get all rows
 
-Aftter you [create a cloud flow](#create-a-cloud-flow), you need to get a spreadsheet table that has a **Status** column. The possible values in the **Status** column are:
+After you [create a cloud flow](#create-a-cloud-flow), get a spreadsheet table that has a **Status** column. The possible values in the **Status** column are:
 
 Sometimes your workflow needs to take an action if the value of an item is `valueA` *or* `valueB`. For example, you might be tracking the status of tasks in a spreadsheet table. Assume that the table has a column named **Status** and the possible values in this column are:
 
@@ -77,19 +78,22 @@ Here's an example of what the spreadsheet might look like:
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table.png" alt-text="Screenshot of a sample spreadsheet with a Status column.":::
 
-To work with your spreadsheet, begin in the designer.
+To work with your spreadsheet, begin in the designer. Do this in either the [new designer](flows-designer.md) or the classic designer. The steps are similar in both designers. Learn more (with examples) in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
 
 # [New designer](#tab/new-designer)
 
+1. [Create a cloud flow](#create-a-cloud-flow) or select one from the list of your existing cloud flows by selecting **My flows** on the left navigation pane > **Edit**.
 1. In the designer, select the **List rows present in a table** action card.
 1. In the **Parameters** tab, select the **Location**, **Document Library**, **File**, and **Table**.
 
     :::image type="content" source="./media/use-expressions-in-conditions/table-parameters.png" alt-text="Screenshot of the parameters for list rows present in a table in Copilot.":::
 
 1. Collapse the configuration pane by selecting (**<<**) in the upper-right corner of the configuration pane.
+1. Go to [Add a condition](#add-a-condition).
 
 # [Classic designer](#tab/classic-designer)
 
+1. [Create a cloud flow](#create-a-cloud-flow) or select one from the list of your existing cloud flows by selecting **My flows** on the left navigation pane > **Edit**.
 1. In the designer, select **New step**.
 1. In the **Search connectors and actions** field, type **rows**.
 1. In the list of icons, select **Excel Online (Business)**.
@@ -104,15 +108,7 @@ To work with your spreadsheet, begin in the designer.
 
     :::image type="content" source="includes/media/new-step/select-table-to-search.png" alt-text="Screenshot of Location, Document Library, File, and Table fields in the List rows present in a table card.":::
 
----
-
-### Save and test your cloud flow
-
-1. In the designer, select **Save**. A green message appears that says **Your flow is ready to go. We recommend you test it**.
-1. Select **Test** to run the flow.
-1. In the **Test flow** panel, select **Manually** > **Test**.
-1. In the **Run flow** panel, select **Run flow**. If your flow is set up correctly, a message appears that says **Your flow run successfully started. To monitor it, go to the Flow Runs Page**.
-1. To close the **Run flow** panel, select **Done**.
+1. Go to [Add a condition](#add-a-condition).
 
 ---
 
@@ -120,7 +116,8 @@ To work with your spreadsheet, begin in the designer.
 
 Before you can add a condition to check the value of the **Status** column in each row of the spreadsheet table, make sure you performed the following procedures in this article:
 
-- [Create a cloud flow](#create-a-cloud-flow)
+- [Create a cloud flow](#create-a-cloud-flow).
+    - Alternatively, select one from the list of your existing cloud flows by selecting **My flows** on the left navigation pane > **Edit**.
 - [Select the spreadsheet and get all rows](#select-the-spreadsheet-and-get-all-rows)
 
 # [New designer](#tab/new-designer)
@@ -143,6 +140,8 @@ Before you can add a condition to check the value of the **Status** column in ea
 
     :::image type="content" source="./media/use-expressions-in-conditions/condition-card.png" alt-text="Screenshot of selecting the value from the previous step.":::
 
+1. Go to [Delete matching rows from the spreadsheet](#delete-matching-rows-from-the-spreadsheet).
+
 # [Classic designer](#tab/classic-designer)
 
 1. In the designer, search for **apply to each**, and then select the **Apply to each - Control**.
@@ -158,6 +157,8 @@ Before you can add a condition to check the value of the **Status** column in ea
 
     :::image type="content" source="./media/use-expressions-in-conditions/or-expression.png" alt-text="Screenshot of an 'or' expression.":::
 
+Go to [Delete matching rows from the spreadsheet](#delete-matching-rows-from-the-spreadsheet).
+
 ---
 
 ## Delete matching rows from the spreadsheet
@@ -166,7 +167,8 @@ In this tutorial, you use the **Or** condition to delete rows with a value of `c
 
 Before you can add the **Delete a row** action, make sure you performed the following procedures in this article:
 
-- [Create a cloud flow](#create-a-cloud-flow)
+- [Create a cloud flow](#create-a-cloud-flow).
+    - Alternatively, select one from the list of your existing cloud flows by selecting **My flows** on the left navigation pane > **Edit**.
 - [Select the spreadsheet and get all rows](#select-the-spreadsheet-and-get-all-rows)
 - [Add a condition](#add-a-condition)
 
@@ -181,12 +183,9 @@ Before you can add the **Delete a row** action, make sure you performed the foll
     :::image type="content" source="./media/use-expressions-in-conditions/delete-a-row.png" alt-text="Screenshot of deleting a row.":::
 
 1. On the **Delete a row** panel, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
-
 1. In the **Key Column** dropdown list, select **\_PowerAppsId_**.
-
 1. In the **Key Value** field, insert the **\_PowerAppsId_** dynamic value.
-
-1. Save your flow.
+1. Go to [Save and test your cloud flow](#save-and-test-your-cloud-flow).
 
 # [Classic designer](#tab/classic-designer)
 
@@ -199,14 +198,19 @@ Before you can add the **Delete a row** action, make sure you performed the foll
     :::image type="content" source="./media/use-expressions-in-conditions/delete-a-row-test.png" alt-text="Screenshot of deleting a row.":::
 
 1. On the **Delete a row** card, set the **Location**, **Document Library**, **File**, and **Table** boxes exactly as you set these boxes on the **List rows present in a table** card earlier in this tutorial.
-
 1. In the **Key Column** dropdown list, select **\_PowerAppsId_**.
-
 1. In the **Key Value** field, insert the **\_PowerAppsId_** dynamic value.
-
-1. Save your flow.
+1. Go to [Save and test your cloud flow](#save-and-test-your-cloud-flow).
 
 ---
+
+## Save and test your cloud flow
+
+1. In the designer, select **Save**. A green message appears that says **Your flow is ready to go. We recommend you test it**.
+1. Select **Test** to run the flow.
+1. In the **Test flow** panel, select **Manually** > **Test**.
+1. In the **Run flow** panel, select **Run flow**. If your flow is set up correctly, a message appears that says **Your flow run successfully started. To monitor it, go to the Flow Runs Page**.
+1. To close the **Run flow** panel, select **Done**.
 
 Congratulations! You created a cloud flow that deletes rows from a spreadsheet table if the **Status** column's value is either `completed` or `unnecessary`. Here's what your spreadsheet should look like after the run completes.
 
@@ -218,7 +222,8 @@ Notice all data from rows that had **completed** or **unnecessary** in the **Sta
 
 In this section, you learn how to use other expressions in conditions. In each scenario, make sure you performed the following procedures in this article:
 
-- [Create a cloud flow](#create-a-cloud-flow)
+- [Create a cloud flow](#create-a-cloud-flow).
+    - Alternatively, select one from the list of your existing cloud flows by selecting **My flows** on the left navitation pane > **Edit**.
 - [Select the spreadsheet and get all rows](#select-the-spreadsheet-and-get-all-rows)
 - [Add a condition](#add-a-condition): In this procedure, apply the expression from this section that you want to use in the **Condition** card.
 
@@ -275,7 +280,7 @@ After your flow runs, the spreadsheet should look similar to the following scree
 
 Notice extra lines are removed from the table.
 
-## Use the 'greater' expression
+### Use the 'greater' expression
 
 Imagine you bought baseball tickets for your coworkers and you use a spreadsheet to ensure you get reimbursed by each person. You can quickly create a cloud flow that sends a daily email to each person who didn't pay the full amount.
 
@@ -289,7 +294,7 @@ Here's the implementation of the **greater** expression that identifies all pers
 
 ````@greater(item()?['Due'], item()?['Paid'])````
 
-## Use the 'less' expression
+### Use the 'less' expression
 
 Imagine you bought baseball tickets for your coworkers, and you use a spreadsheet to ensure you get reimbursed by each person by the date to which everyone agreed. You can create a cloud flow that sends a reminder email to each person who didn't pay the full amount if the current date is less than one day before the due date.
 
@@ -300,7 +305,7 @@ Use the **and** expression with the **less** expression since there are two cond
 |   Has the full amount due been paid?    |      greater      |   `@greater(item()?['Due'], item()?['Paid'])`    |
 | Is the due date less than one day away? |       less        | `@less(item()?['DueDate'], addDays(utcNow(),1))` |
 
-## Combine the 'greater' and 'less' expressions in an 'and' expression
+### Combine the 'greater' and 'less' expressions in an 'and' expression
 
 Use the **greater** expression to identify the employees who paid less than the full amount due and use the **less** expression to determine if the payment due date is less than one day away from the current date. You can then use the **Send an email** action to send reminder emails to those employees who didn't pay in full and the due date is less than one day away.
 
@@ -314,7 +319,7 @@ Here's the implementation of the **and** expression that identifies all employee
 
 ## Use functions in expressions
 
-Some expressions get their values from runtime actions that might not yet exist when a cloud flow starts to run. To reference or work with these values in expressions, you can use functions that the Workflow Definition Language provides.
+Some expressions get their values from runtime actions that might not yet exist when a cloud flow starts to run. To reference or work with these values in expressions, you can use functions that the *Workflow Definition Language* provides.
 
 Learn more in [Reference guide to workflow expression functions in Azure Logic Apps and Power Automate](/azure/logic-apps/workflow-definition-language-functions-reference).
 
