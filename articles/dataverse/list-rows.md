@@ -19,7 +19,7 @@ Use the **List rows** action to retrieve multiple rows at once from Microsoft Da
 
 Follow these steps to add the **List rows** action to your flow to return [up to 5,000 accounts](/powerapps/developer/common-data-service/webapi/query-data-web-api) from the **Accounts** table in Dataverse.
 
-[!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](../includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 
