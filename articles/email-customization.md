@@ -121,7 +121,7 @@ You can do this in the web version of Outlook.
 
 ### Change the date and time format of an email
 
-By default, the email you receive shows the Coordinated Universal Time (UTC) time zone. However, your users might want to change it to their local time zone. For instructions, go to  [Converting time zone in Microsoft Power Automate](https://support.microsoft.com/help/4557244/converting-time-zone-in-microsoft-power-automate) to convert the time zone.
+By default, the email you receive shows the Coordinated Universal Time (UTC) time zone. However, your users might want to change it to their local time zone. Learn more in [Convert a time zone](convert-time-zone.md).
 
 ## Related information
 
