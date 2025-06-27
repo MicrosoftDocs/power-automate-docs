@@ -27,7 +27,7 @@ If you're not sure where to start, these are some of the most common ways people
 
 You can turn on email notifications for the form's owners in your form settings. If you want someone else to be notified when a response is submitted, create a custom email notification with Power Automate.
 
-[!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](../includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 
