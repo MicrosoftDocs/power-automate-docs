@@ -31,7 +31,7 @@ Here's what you need to complete this tutorial.
 
 ## Create a cloud flow
 
-You can create a cloud flow using natural language in Copilot, or create it from scratch. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you don't have access to Copilot, select the **Without copilot** tab.
+[!INCLUDE[copilot-tab-experience](./includes/copilot-tab-experience.md)]
 
 # [Using copilot](#tab/using-copilot)
 
@@ -78,7 +78,7 @@ Here's an example of what the spreadsheet might look like:
 
 :::image type="content" source="./media/use-expressions-in-conditions/spreadsheet-table.png" alt-text="Screenshot of a sample spreadsheet with a Status column.":::
 
-To work with your spreadsheet, begin in the designer. Do this in either the [new designer](flows-designer.md) or the classic designer. The steps are similar in both designers. Learn more (with examples) in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
+To work with your spreadsheet, begin in the *designer*. Do this in either the [new designer](flows-designer.md) or the classic designer. The steps are similar in both designers. Learn more (with examples) in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
 
 # [New designer](#tab/new-designer)
 
@@ -114,9 +114,9 @@ To work with your spreadsheet, begin in the designer. Do this in either the [new
 
 ## Add a condition
 
-Before you can add a condition to check the value of the **Status** column in each row of the spreadsheet table, make sure you performed the following procedures in this article:
+Before you can add a condition to check the value of the **Status** column in each row of the spreadsheet table, make sure you performed the following procedures in this tutorial:
 
-- [Create a cloud flow](#create-a-cloud-flow).
+- [Create a cloud flow](#create-a-cloud-flow)
     - Alternatively, select one from the list of your existing cloud flows by selecting **My flows** on the left navigation pane > **Edit**.
 - [Select the spreadsheet and get all rows](#select-the-spreadsheet-and-get-all-rows)
 
@@ -157,17 +157,15 @@ Before you can add a condition to check the value of the **Status** column in ea
 
     :::image type="content" source="./media/use-expressions-in-conditions/or-expression.png" alt-text="Screenshot of an 'or' expression.":::
 
-Go to [Delete matching rows from the spreadsheet](#delete-matching-rows-from-the-spreadsheet).
+1. Go to [Delete matching rows from the spreadsheet](#delete-matching-rows-from-the-spreadsheet).
 
 ---
 
 ## Delete matching rows from the spreadsheet
 
-In this tutorial, you use the **Or** condition to delete rows with a value of `completed` or `unnecessary` from the spreadsheet.
+In this tutorial, you use the **Or** condition to delete rows with a value of `completed` or `unnecessary` from the spreadsheet. Before you can add the **Delete a row** action, make sure you performed the following procedures:
 
-Before you can add the **Delete a row** action, make sure you performed the following procedures in this article:
-
-- [Create a cloud flow](#create-a-cloud-flow).
+- [Create a cloud flow](#create-a-cloud-flow)
     - Alternatively, select one from the list of your existing cloud flows by selecting **My flows** on the left navigation pane > **Edit**.
 - [Select the spreadsheet and get all rows](#select-the-spreadsheet-and-get-all-rows)
 - [Add a condition](#add-a-condition)
@@ -220,19 +218,20 @@ Notice all data from rows that had **completed** or **unnecessary** in the **Sta
 
 ## Scenarios for other common expressions
 
-In this section, you learn how to use other expressions in conditions. In each scenario, make sure you performed the following procedures in this article:
+In this section, you learn how to use other expressions in conditions. In each scenario, make sure you performed the following procedures in the tutorial:
 
-- [Create a cloud flow](#create-a-cloud-flow).
-    - Alternatively, select one from the list of your existing cloud flows by selecting **My flows** on the left navitation pane > **Edit**.
+- [Create a cloud flow](#create-a-cloud-flow)
+    - Alternatively, select one from the list of your existing cloud flows by selecting **My flows** on the left navigation pane > **Edit**.
 - [Select the spreadsheet and get all rows](#select-the-spreadsheet-and-get-all-rows)
-- [Add a condition](#add-a-condition): In this procedure, apply the expression from this section that you want to use in the **Condition** card.
+- [Add a condition](#add-a-condition)
+    - In the **Add a condition** procedure, apply the expression from this section that you want to use in the **Condition** card.
 
 You can use any combination of the following logical expressions in your conditions.
 
 Expression|Description|Example
 --------|-----------|-------
 |[and](#use-the-and-expression)|Takes two arguments and returns true if both values are true.<br><b>Note</b>: Both arguments must be Booleans.|This expression returns false: <br>`and(greater(1,10),equals(0,0))`
-|[or](#use-the-or-expression)|Takes two arguments and returns true if either argument is true. <br><b>Note</b>: Both arguments must be Booleans.|This expression returns true:<br>`or(greater(1,10),equals(0,0))`
+|[or](#add-a-condition) |Takes two arguments and returns true if either argument is true. <br><b>Note</b>: Both arguments must be Booleans.|This expression returns true:<br>`or(greater(1,10),equals(0,0))`
 |equals|Returns true if two values are equal.|For example, if parameter1 is someValue, this expression returns true:<br>`equals(parameters('parameter1'), 'someValue')`
 |[less](#use-the-less-expression)|Takes two arguments and returns true if the first argument is less than the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This expression returns true:<br>`less(10,100)`
 |lessOrEquals|Takes two arguments and returns true if the first argument is less than or equal to the second argument. <br><b>Note</b>: The supported types are integer, float, and string.|This expression returns true:<br>`lessOrEquals(10,10)`
