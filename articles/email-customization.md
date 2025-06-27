@@ -34,7 +34,7 @@ Here are the top how-to scenarios for email in Microsoft Power Automate, with ex
 
 You can use HTML to beautify your email. Following are two options that you can use to beautify your messages with HTML.
 
-[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 
