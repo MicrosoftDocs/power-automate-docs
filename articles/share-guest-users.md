@@ -44,7 +44,7 @@ If a guest user needs to only run a flow, they need to have the **Sharing-Run On
 
 A guest user can be assigned an approval, receive an approval email, and be routed to the **Approvals** page in the guest tenant to approve or reject.
 
-Guest users can't see the approvals from their guest tenant while they're in their original tenant, or from their original tenant while they're in their guest tenant.  
+Guest users can't see the approvals from their guest tenant while they're in their original tenant, or from their original tenant while they're in their guest tenant. Furthermore, actionable approval mails in Outlook are not supported for guest users in a tenant. Guest users will need to go to the Power Automate portal in order to act on an approval.
 
 ### Widgets
 
