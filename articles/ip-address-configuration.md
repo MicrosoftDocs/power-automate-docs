@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 05/08/2025
+ms.date: 06/23/2025
 ms.author: cgarty
 ms.reviewer: angieandrews
 ---
@@ -20,13 +20,28 @@ This article describes the required configuration for:
 - Power Automate to connect to services in your network by inbound firewall configuration, and
 - Your makers and users to access Power Automate to build and use experiences by outbound firewall configuration.
 
-For configuration details in this article, use the links in the following table.
+## High-level recommendation for IP address configuration
+
+The simplest mechanism to configure a firewall to allow Power Automate cloud flows to call external services through [connectors](/connectors/overview) is to use [Azure service tags](/azure/virtual-network/service-tags-overview). The primary service tag for Logic Apps connectors is **AzureConnectors**, as described in [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
+
+## Monitor IP ranges
+
+Depending on the firewall you're using, you don't need to monitor and manually update IP ranges, The following table describes the recommended  tracking method for each firewall type.
+
+|Firewall  |Tracking method  |
+|---------|---------|
+|Azure     | Use [Azure service tags](/azure/virtual-network/service-tags-overview). By using service tags in your network security group rules, you don't need to constantly monitor and manually update IP ranges for each service.        |
+|On-premises    | Use the [Service Tags with an on-premises firewall](/azure/virtual-network/service-tags-overview#service-tags-on-premises) so you don't need to monitor and manually update IP ranges. The [Service Tag Discovery API](/azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api) provides access to the latest IP address ranges associated with each service tag, enabling you to stay current with changes.        |
+
+## Configuration details
+
+For configuration details, use the links in the following table.
 
 |For details in this category  |Select from these links |
 |---------|---------|
 |[Allow flows to call your services](#allow-flows-to-call-your-services)     | </li><li>[Allow connector calls to your services](#allow-connector-calls-to-your-services)<br/></li><li>[Allowlist 'HTTP' and 'HTTP + Swagger' calls to your services](#allowlist-http-and-http--swagger-calls-to-your-services)        |
 |[Allow users on your network to use Power Automate](#allow-users-on-your-network-to-use-power-automate)     | </li><li>[Use the Power Automate web portal](#use-the-power-automate-web-portal)<br/></li><li>[Allow users on your network to use Power Automate mobile app](#allow-users-on-your-network-to-use-power-automate-mobile-app)<br/></li><li>[Allow users on your network to use "When an HTTP request is received" trigger](#allow-users-on-your-network-to-use-when-an-http-request-is-received-trigger)<br/></li><li>[Allow machines & users on your network to access Power Automate desktop services](#allow-machines--users-on-your-network-to-access-power-automate-desktop-services)<br/></li><li>[Global endpoints for desktop flows runtime](#global-endpoints-for-desktop-flows-runtime)<br/></li><li>[Global endpoints for Power Automate for desktop MSI installer](#global-endpoints-for-power-automate-for-desktop-msi-installer)<br/></li><li>[Public endpoints for desktop flows runtime](#public-endpoints-for-desktop-flows-runtime)<br/></li><li>[US Government endpoints for desktop flows runtime](#us-government-endpoints-for-desktop-flows-runtime)<br/></li><li>[21Vianet endpoints (China) for desktop flows runtime](#21vianet-endpoints-china-for-desktop-flows-runtime)       |
-|[Other IP address articles and FAQ](#other-ip-address-articles)     | </li><li>[Approval email delivery](#approval-email-delivery)<br/></li><li>[Azure SQL database](#azure-sql-database)</li><li>[There are lots of details here&mdash;what's the high level recommendation for IP address configuration?](#there-are-lots-of-details-herewhats-the-high-level-recommendation-for-ip-address-configuration)<br/></li><li>[If I'm using Azure firewall, do I need to keep track of individual IP addresses?](#if-im-using-azure-firewall-do-i-need-to-keep-track-of-individual-ip-addresses)<br/></li><li>[If I'm using on-premises firewall, do I need to keep track of individual IP addresses?](#if-im-using-on-premises-firewall-do-i-need-to-keep-track-of-individual-ip-addresses)        |
+|[Other IP address articles](#other-ip-address-articles)     | </li><li>[Approval email delivery](#approval-email-delivery)<br/></li><li>[Azure SQL database](#azure-sql-database)     |
 
 ## Allow flows to call your services
 
@@ -167,25 +182,11 @@ The following table lists endpoint data requirements for connectivity from a use
 
 ### Approval email delivery
 
-Learn more about approvals email routing in [Power Automate approval email delivery information](https://go.microsoft.com/fwlink/?linkid=2128304).
+Learn more about approvals email routing in [Power Automate approval email delivery information](/troubleshoot/power-platform/power-automate/approvals/power-automate-approval-email-information).
 
 ### Azure SQL database
 
 If you need to authorize IP addresses for your Azure SQL database, use the [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
-
-## FAQ
-
-### There are lots of details here&mdash;what's the high level recommendation for IP address configuration?
-
-The simplest mechanism to configure a firewall to allow Power Automate cloud flows to call external services through [connectors](/connectors/overview) is to use [Azure service tags](/azure/virtual-network/service-tags-overview). The primary service tag for Logic Apps connectors is **AzureConnectors**, as described in [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
-
-### If I'm using Azure firewall, do I need to keep track of individual IP addresses?
-
-You should use [Azure service tags](/azure/virtual-network/service-tags-overview). By using service tags in your network security group rules, you don't need to constantly monitor and manually update IP ranges for each service.
-
-### If I'm using on-premises firewall, do I need to keep track of individual IP addresses?
-
-You should use the [Service Tags with an on-premises firewall](/azure/virtual-network/service-tags-overview#service-tags-on-premises) so you don't need to monitor and manually update IP ranges. The [Service Tag Discovery API](/azure/virtual-network/service-tags-overview#use-the-service-tag-discovery-api) provides access to the latest IP address ranges associated with each service tag, enabling you to stay current with changes.
 
 ## Related information
 
