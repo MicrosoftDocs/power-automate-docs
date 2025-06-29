@@ -46,14 +46,14 @@ To create a new cloud flow, follow these steps.
 
     :::image type="content" source="./media/data-operations/start-from-blank.png" alt-text="Screenshot of the 'Start from blank' tiles.":::
 
-1. For **Automated cloud flow**, **Instant cloud flow**, and **Scheduled cloud flow**, follow the instructions and select **Submit**.
+1. For **Automated cloud flow**, **Instant cloud flow**, and **Scheduled cloud flow**, follow the instructions and select **Create**.
 
 1. For **Describe it to design it**:
     1. Enter a description of the flow you want to create and select **Submit**, or select from the AI-generated suggested flow descriptions.
-    1. If you're satisfied with the suggested flow, select **Keep it and continue**. 
-    1. Review your connected apps and services, and then select **Continue to create flow**.
+    1. If you're satisfied with the suggested flow, select **Keep it and continue**.
+    1. Review your connected apps and services, and then select **Create flow**.
 
-    The flow opens in the designer.
+        The flow opens in the designer.
 
 ### Select an existing cloud flow
 
