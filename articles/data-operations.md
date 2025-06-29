@@ -6,7 +6,7 @@ author: kisubedi
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 06/12/2025
+ms.date: 06/27/2025
 ms.author: kewaiss
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -20,19 +20,51 @@ Data operations allow you to manipulate data as you build your cloud flows. You 
 
 This article explains how you can use data operations such as compose to create a single output from multiple inputs, including expressions. You can also use data operations to join or select data, filter arrays, create tables, and parse JSON. In this article, each section provides a brief description of the data operation, followed by a step-by-step procedure to help you use it in your cloud flow.
 
-> [!NOTE]
-> The screenshots in this article might look different from your screen. This is because Power Automate allows you to use either the [new designer](flows-designer.md) or the classic designer. The screenshots use the new designer, but the steps are similar in the classic designer.
->
-> Learn more about the designer in [Identify differences between the classic designer and the new cloud flows designer](flows-designer.md#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
-
 <!--Here's a quick video about data operations.
 
->[!VIDEO https://learn-video.azurefd.net/vod/player?id=4eb588b9-6468-4e0f-b07b-8af41f31f6ea]
--->
+>[!VIDEO https://learn-video.azurefd.net/vod/player?id=4eb588b9-6468-4e0f-b07b-8af41f31f6ea]-->
+
 ## Prerequisites
 
 - Access to [Power Automate](https://make.powerautomate.com).
 - A tool to send HTTP POST requests with a JSON array to your flow.
+- A new or existing cloud flow to which you can add data operations.
+
+## Display a cloud flow in the designer
+
+To use the data operations described in this article, you need to have the designer open with your new or existing cloud flow.
+
+Power Automate allows you to use either the [new designer](flows-designer.md) or the classic designer to configure your cloud flow. The screenshots in this article use the new designer, but the steps are similar in both designers. Learn more (with examples) in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
+
+### Create a new cloud flow
+
+To create a new cloud flow, follow these steps.
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. On the navigation pane to the left, select **Create**.
+1. Select one of the [types of cloud flows](overview-cloud.md#types-of-cloud-flows) in **Start from Blank**: **Automated cloud flow**, **Instant cloud flow**, **Scheduled cloud flow**, or **Describe it to design it**.
+
+    :::image type="content" source="./media/data-operations/start-from-blank.png" alt-text="Screenshot of the 'Start from blank' tiles.":::
+
+1. For **Automated cloud flow**, **Instant cloud flow**, and **Scheduled cloud flow**, follow the instructions and select **Submit**.
+
+1. For **Describe it to design it**:
+    1. Enter a description of the flow you want to create and select **Submit**, or select from the AI-generated suggested flow descriptions.
+    1. If you're satisfied with the suggested flow, select **Keep it and continue**. 
+    1. Review your connected apps and services, and then select **Continue to create flow**.
+
+    The flow opens in the designer.
+
+### Select an existing cloud flow
+
+To select an existing cloud flow, follow these steps.
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. On the navigation pane to the left, select **My flows**.
+1. In the **Cloud flows** tab, select the flow you want to open. 
+1. On the command bar at the top, select **Edit**.
+
+    The flow opens in the designer.
 
 ## Use the compose action
 
@@ -40,6 +72,7 @@ Use the **Data Operation - Compose** action to save yourself from having to ente
 
 ### Add the compose action
 
+1. [Display a cloud flow in the designer](#display-a-cloud-flow-in-the-designer).
 1. In your flow, add an action be selecting the plus sign (**+**).
 1. In the **Add an action** search field, typ **compose**.
 1. Under **Data Operation**, select **Compose**.
@@ -59,6 +92,7 @@ Use the **Data Operation - Compose** action to save yourself from having to ente
 
 Use the contents of the compose action you created in this section in a new action. In this example, you use the outputs from the compose action in a **Data Operation - Join** action. The join action takes an array and joins it into a single string with a separator of your choice.
 
+1. [Display a cloud flow in the designer](#display-a-cloud-flow-in-the-designer).
 1. In your flow, add an action be selecting the plus sign (**+**).
 1. In the **Add an action** search field, type **join**.
 1. Under **Data Operation**, select **Join**.
@@ -73,17 +107,18 @@ Use the contents of the compose action you created in this section in a new acti
 
 Use the **Data Operation - Join** action to delimit an array with the separator of your choice. For example, your flow receives a web request that includes the following array of email addresses: `["d@example.com", "k@example.com", "dal@example.com"]`. However, your email program requires addresses to be formatted in a single string, separated with semicolons. You use the **Data Operation - Join** action to change the comma delimiter (,) to a semicolon (;) by following these steps:
 
+1. [Display a cloud flow in the designer](#display-a-cloud-flow-in-the-designer).
 1. Add a new action, search for **Join**, and then select **Data Operation - Join**.
 
     :::image type="content" source="./media/data-operations/use-compose-output-2-join-new-designer.png" alt-text="Join action.":::
 
-2. In the **From** box, enter the array, and in the **Join with** box, enter a semicolon (**;**).
+1. In the **From** field, enter the array, and in the **Join with** box, enter a semicolon (**;**).
 
     :::image type="content" source="./media/data-operations/add-array-join-2-new-designer.png" alt-text="Configure the Join action.":::
 
-3. Save your flow, and then run it.
+1. Save your flow, and then run it.
 
-4. After your flow runs, the output of the **Data Operation – Join** action is a string with the addresses joined by semicolons, as shown in the following screenshot.
+1. After your flow runs, the output of the **Data Operation – Join** action is a string with the addresses joined by semicolons, as shown in the following screenshot.
 
     :::image type="content" source="./media/data-operations/join-output-2-new-designer.png" alt-text="Screenshot of input of addresses separated by commas, a Join with value of semicolon, and output of those addresses separated by semicolons.":::
 
@@ -108,7 +143,9 @@ You want to reshape the incoming data by renaming `first` to `FirstName` and `la
 
 To do this:
 
-1. Add the **When an HTTP request is received** trigger to your flow.
+1. [Display a cloud flow in the designer](#display-a-cloud-flow-in-the-designer).
+1. Delete the existing trigger by either right-clicking the trigger and selecting **Delete**, or by selecting the vertical ellipsis (**&vellip;**) in the configuration pane, and then selecting **Delete**.
+1. 1. Add the **When an HTTP request is received** trigger to your flow.
 1. Select **Use sample payload to generate schema**.
 
     :::image type="content" source="./media/data-operations/request-trigger-new-designer.png" alt-text="Screenshot of selecting the sample payload.":::
@@ -139,6 +176,7 @@ In this example, you use the filter array action on this array:
 
 This example creates a new array containing only objects where `first` is set to **Eugenia**.
 
+1. [Display a cloud flow in the designer](#display-a-cloud-flow-in-the-designer).
 1. Find, and then add, the **Filter array** action to your flow.
 1. In the **Filter Query** section, configure the filter array action. Following the example in this section, select `first` > **is equal to** > **Eugenia**.
 
@@ -154,11 +192,12 @@ Use the **Data Operation - Create CSV table** action to change a JSON array inpu
 [ { "first": "Eugenia", "last": "Lopez" }, { "first": "Elizabeth", "last": "Moore" } ]
 ```
 
+1. [Display a cloud flow in the designer](#display-a-cloud-flow-in-the-designer).
 1. Find, add, and then configure the **Data Operation - Create CSV table** action to resemble the following image.
 
-    :::image type="content" source="./media/data-operations/create-csv-table-2-new-designer.png" alt-text="Screenshot of Configuring the Create CSV table action. From is set to Body, and Columns is set to Automatic.":::
+    :::image type="content" source="./media/data-operations/create-csv-table-2-new-designer.png" alt-text="Screenshot of Configuring the Create CSV table action. 'From' is set to 'Body', and 'Columns' is set to 'Automatic'.":::
 
-    The **Body** token in this image comes from a **When a HTTP request is received** action; however, you can get the input for the **Create CSV table** action from the output of any previous action in your flow, or you can enter it directly in the **From** box.
+    The **Body** token in this image comes from a **When an HTTP request is received** action; however, you can get the input for the **Create CSV table** action from the output of any previous action in your flow, or you can enter it directly in the **From** box.
 1. Save, and then run your flow.
 
     When your flow runs, the **Create CSV table** action displays the output shown in the following screenshot.
