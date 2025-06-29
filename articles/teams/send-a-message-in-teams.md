@@ -12,7 +12,7 @@ ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.date: 06/25/2025
+ms.date: 06/27/2025
 ms.topic: how-to
 ---
 
@@ -32,7 +32,7 @@ The scenarios in this article use a cloud flow to notify a channel or a group ch
 1. In the **Search all triggers** field, start typing **When a file is created (properties only) - SharePoint** and select it as your trigger when it appears in the list.
 1. Select **Create**. This creates a new cloud flow with the **When a file is created (properties only)** trigger card in the center of the *designer* screen. The trigger card might show *Invalid parameters* in red. This is because you need to configure it.
 
-  The screenshots for the designer in this article might look different from your screen. This is because Power Automate allows you to use either the modern [new designer](../flows-designer.md) or the classic designer. The screenshots use the new designer, but the steps are similar in the classic designer. Learn more about the designer in [Identify differences between the new designer and the classic designer](../flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
+    Power Automate allows you to use either the [new designer](flows-designer.md) or the classic designer to configure your cloud flow. The screenshots in this article use the new designer, but the steps are similar in both designers. Learn more (with examples) in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
 
 1. In the designer, select the **When a file is created (properties only)** card to open the configuration pane to the left.
 1. Configure your trigger by selecting a site address and library name for the SharePoint site from the **Site Address** and **Library Name** dropdown menus.
@@ -58,8 +58,9 @@ The **Post as** and **Post in** options within the action control the combinatio
 
 ## Post a message as the Flow bot in a Teams channel
 
-To send a message as the Flow bot in a Teams channel:
+To send a message as the Flow bot in a Teams channel, follow these steps.
 
+1. Perform the procedure in [Cloud flow setup](#cloud-flow-setup).
 1. In the **Post as** dropdown menu, select **Flow bot**.
 1. In the **Post in** dropdown menu, select **Channel**.
 
@@ -76,8 +77,9 @@ To send a message as the Flow bot in a Teams channel:
 
 ## Post a message as the Flow bot in an existing named group chat
 
-To send a message as the Flow bot in a group chat:
+To send a message as the Flow bot in a group chat, follow these steps.
 
+1. Perform the procedure in [Cloud flow setup](#cloud-flow-setup).
 1. In the **Post as** dropdown menu, select **Flow bot**.
 1. In the **Post in** dropdown menu, select **Group chat**.
 1. In the **Group chat** dropdown menu, select a group chat to post the message in.
@@ -96,8 +98,9 @@ To send a message as the Flow bot in a group chat:
 
 The **Post message in a chat or channel** action can be combined with the **Create a chat** action to create a new group chat and post a message to it. This is useful in scenarios where a chat might not already exist for this topic and one needs to be created.
 
-To create a new group chat:
+To create a new group chat, follow these steps.
 
+1. Perform the procedure in [Cloud flow setup](#cloud-flow-setup).
 1. Select the (**+**) *above* the **Post a message in a chat or channel** action.
 1. In the **Add an action** field, search for and select the **Create a chat** action.
 1. In the **Members to add** field, add the members who need to be in the chat using their emails. Separate emails with a semi-colon.
@@ -115,6 +118,7 @@ To create a new group chat:
 
 When you send a message as the Flow bot, you have the added option of posting directly to a user. This is useful in notification scenarios where you want to contact an individual user using the Flow bot.
 
+1. Perform the procedure in [Cloud flow setup](#cloud-flow-setup).
 1. In the designer, select the **Post a message in a chat or channel** action to configure it.
 1. In the **Post as** dropdown menu, select **Flow bot**.
 1. In the **Post in** dropdown menu, select **Chat with Flow bot**.
@@ -128,8 +132,9 @@ When you send a message as the Flow bot, you have the added option of posting di
 
 ## Post a message as the user in a Teams Channel
 
-To send a message as the user in a Teams channel:
+To send a message as the user in a Teams channel, follow these steps.
 
+1. Perform the procedure in [Cloud flow setup](#cloud-flow-setup).
 1. In the **Post as** dropdown menu, select **User**
 1. In the **Post in** dropdown menu, select  **Channel**.
 
@@ -139,7 +144,9 @@ To send a message as the user in a Teams channel:
 
 ## Post a message as the user in an existing named group chat
 
-To send a message as the user in a Group chat:
+To send a message as the user in a Group chat, follow these steps.
+
+1. Perform the procedure in [Cloud flow setup](#cloud-flow-setup).
 1. In the **Post as** dropdown menu, select **User**.
 1. In the **Post in** dropdown menu, select **Group chat**.
 1. In the **Group chat** field, select the group chat to post the message in.
@@ -156,6 +163,7 @@ By default, Teams only lists the 50 most recent **named** group chats in the dro
 
 The **Post message in a chat or channel** action can be combined with the **Create a chat** action to create a new group chat and post a message to it. This is useful in scenarios where a chat might not already exist for this topic and one needs to be created.
 
+1. Perform the procedure in [Cloud flow setup](#cloud-flow-setup).
 1. Select the plus sign (**+**) *above* the **Post a message in a chat or channel** action.
 1. In the **Add an action** field, search for and select the **Create a chat** action.
 1. In the **Members to add** field, add the members who need to be in the chat using their emails. Separate emails with a semi-colon.
@@ -172,6 +180,7 @@ The **Post message in a chat or channel** action can be combined with the **Crea
 
 Mentions are a great way to get the attention of a user in Teams. You can combine any of the previous actions and add a mention in the message to a user or channel.
 
+1. Perform the procedure in [Cloud flow setup](#cloud-flow-setup).
 1. Select the plus sign (**+**) *above* the **Post a message in a chat or channel** action.
 1. In the **Add an action** field, search for and select the **Get an @mention token for a user** action.
 1. In the **User** field, specify the email of the user you want to mention in the **User** field. This action generates a dynamic value that can be used in the message field of the **Post a message in chat or channel** action.
