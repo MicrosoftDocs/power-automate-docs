@@ -32,7 +32,7 @@ The scenarios in this article use a cloud flow to notify a channel or a group ch
 1. In the **Search all triggers** field, start typing **When a file is created (properties only) - SharePoint** and select it as your trigger when it appears in the list.
 1. Select **Create**. This creates a new cloud flow with the **When a file is created (properties only)** trigger card in the center of the *designer* screen. The trigger card might show *Invalid parameters* in red. This is because you need to configure it.
 
-    Power Automate allows you to use either the [new designer](flows-designer.md) or the classic designer to configure your cloud flow. The screenshots in this article use the new designer, but the steps are similar in both designers. Learn more (with examples) in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
+    Power Automate allows you to use either the [new designer](../flows-designer.md) or the classic designer to configure your cloud flow. The screenshots in this article use the new designer, but the steps are similar in both designers. Learn more (with examples) in [Identify differences between the new designer and the classic designer](../flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
 
 1. In the designer, select the **When a file is created (properties only)** card to open the configuration pane to the left.
 1. Configure your trigger by selecting a site address and library name for the SharePoint site from the **Site Address** and **Library Name** dropdown menus.
