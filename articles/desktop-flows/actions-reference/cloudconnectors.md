@@ -72,14 +72,14 @@ After you confirm your selection, the connection reference is embedded in the de
 > [!IMPORTANT]
 > To enable attended or unattended runs (cloud-initiated runs), make sure that your desktop flow uses the Power Automate v2 schema and all connection references are marked as embedded, in case your flow is shared.
 
-## Bring your own connection
+## Bring your own connection in console runs
 
-All co-owners and run-only users are required to bring your own connection (BYOC) during console executions for connection references that aren't embedded.
+As co-owners, you are required to bring your own connection (BYOC) in console runs for connection references that aren't embedded. As run-only users, you are required to bring your own connection independently of whether the connection references are embedded or not.
 
 :::image type="content" source="media/cloudconnectors/bring_your_own_connection.png" alt-text="Screenshot of the bring your own connection dialog for console runs" border="false":::
 
 > [!NOTE]
-> BYOC is available for both co-owners and run-only makers. BYOC is only available for console initiated flow executions.
+> The BYOC window is available for both co-owners and run-only makers. BYOC is only available for console initiated flow executions.
 
 ## List of cloud connectors
 
