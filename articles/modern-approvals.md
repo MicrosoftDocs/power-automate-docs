@@ -42,7 +42,7 @@ The flow performs the following steps:
 
 1. Updates the SharePoint Online list with the approver's decision comments.
 
-Learn more about using SharePoint with Power Automate in the [SharePoint documentation](/sharepoint/dev/business-apps/power-automate/sharepoint-integration).
+Learn more about using SharePoint with Power Automate in the [SharePoint documentation](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers).
 
 > [!IMPORTANT]
 > Always follow the [best practices for SharePoint security](/microsoft-365/community/permission-model-differences) and your organization's best practices to ensure your environment is secure. Security is outside the scope of this article.
@@ -75,11 +75,13 @@ Follow these steps to create an automated cloud flow.
 1. On the command bar, select **New flow** > **Automated cloud flow**.
 1. Give your flow a name.
 1. Under **Choose your flow's trigger**, select **When an item is created - SharePoint**, and then select **Create**.
+1. Go to [Configure the flow trigger](#configure-the-flow-trigger).
 
 ## Configure the flow trigger
 
 When you create a flow, the first step is to configure the trigger. The trigger starts your flow when a specific event occurs. [!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
+1. Make sure you [created an automated cloud flow](#create-an-automated-cloud-flow).
 1. New designer: Open the configuration pane on the left by selecting the **When an item is created** card.
 
    Classic designer: Expand the **When an item is created** card by selecting the **When an item is created** card.
@@ -100,7 +102,7 @@ Follow these steps to add a profile action to your flow. This action retrieves t
 
 # [New designer](#tab/new-designer)
 
-1. Make sure you [created an approval flow](#create-an-approval-flow) and [configured the flow trigger](#configure-the-flow-trigger).
+1. Make sure you [created an automated cloud flow](#create-an-automated-cloud-flow) and [configured the flow trigger](#configure-the-flow-trigger).
 1. Select **+**, and then type **Profile** in the **Add an action** search field.
 1. Under **Office 365 Users**, select **Get my profile (V2)**.
 
@@ -118,7 +120,7 @@ Follow these steps to add a profile action to your flow. This action retrieves t
 
 # [Classic designer](#tab/classic-designer)
 
-1. Make sure you [created an approval flow](#create-an-approval-flow) and [configured the flow trigger](#configure-the-flow-trigger).
+1. Make sure you [created an automated cloud flow](#create-an-automated-cloud-flow) and [configured the flow trigger](#configure-the-flow-trigger).
 1. Select **New step**, and then type **Profile** into the **Choose an operation** search field.
 1. Select the **Office 365 Users** icon.
 1. Find, and then select the **Get my profile (V2)** action.
@@ -166,10 +168,10 @@ Follow these steps to add an approval action to your flow.
     1. Select the lightning bolt icon, and then select the value for the start date of the vacation request.
     1. In the **Details** field next to the value you just inserted, enter *until*.
     1. Select the lightning bolt icon, and then select the value for the end date of the vacation request.
-    
+
           The **Details** field should look similar to this example: `<requestor>` wants to go on vacation from `<start date>` until `<end date>`.
 
-          (Optional) You can use [Markdown](../approvals-markdown-support.md) to format the **Details** field.
+          (Optional) You can use [Markdown](approvals-markdown-support.md) to format the **Details** field.
 
     :::image type="content" source="media/modern-approvals/provide-approval-config-info-new-designer.png" alt-text="Screenshot showing how to configure the Start and wait for an approval card in the new designer.":::
 
@@ -206,10 +208,10 @@ Follow these steps to add an approval action to your flow.
     1. Select the lightning bolt icon, and then select the value for the start date of the vacation request.
     1. In the **Details** field next to the value you just inserted, enter *until*.
     1. Select the lightning bolt icon, and then select the value for the end date of the vacation request.
-    
+
           The **Details** field should look similar to this example: `<requestor>` wants to go on vacation from `<start date>` until `<end date>`.
 
-          (Optional) You can use [Markdown](../approvals-markdown-support.md) to format the **Details** field.
+          (Optional) You can use [Markdown](approvals-markdown-support.md) to format the **Details** field.
 
     :::image type="content" source="media/modern-approvals/provide-approval-config-info.png" alt-text="Screenshot showing how to configure the Start and wait for an approval card in the classic designer.":::
 
@@ -299,6 +301,7 @@ Follow these steps to update actions for approved requests.
 1. Under **SharePoint**, select **Update item**.
 
     :::image type="content" source="media/modern-approvals/select-update-item-yes-new-designer.png" alt-text="Screenshot showing how to select the SharePoint update item action if true in the new designer.":::
+
 1. Configure the **Update item** card to suit your needs.
 
     The **Site Address**, **List Name**, **Id**, and **Title** fields are required.
