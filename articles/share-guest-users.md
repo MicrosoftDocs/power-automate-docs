@@ -1,11 +1,11 @@
 ---
 title: Support for guest users
 description: Learn support scenarios for guest users, including how to create, share, and approve flows.
-author: natalie-pienkowska
-ms.date: 03/07/2025
+author: donums
+ms.date: 06/30/2025
 ms.custom: 
 ms.topic: article
-ms.author: lali
+ms.author: derahonuorah
 ms.reviewer: angieandrews
 ---
 
@@ -13,7 +13,7 @@ ms.reviewer: angieandrews
 
 The Power Automate experience for guest users is the same as it is for nonguest users, with some stipulations. A guest user can be a vendor or customer in a tenant of their own organization who needs access to a tenant in another organization. Guest users have the same experience in both the Power Automate portal and the Power Automate mobile app. They're sometimes referred to as external users.
 
-This article should help you understand the scenarios that are supported for guest users.
+This article helps you understand the scenarios that are supported for guest users.
 
 > [!NOTE]
 > Guest users aren't currently supported in Process Mining.
@@ -44,7 +44,7 @@ If a guest user needs to only run a flow, they need to have the **Sharing-Run On
 
 A guest user can be assigned an approval, receive an approval email, and be routed to the **Approvals** page in the guest tenant to approve or reject.
 
-Guest users can't see the approvals from their guest tenant while they're in their original tenant, or from their original tenant while they're in their guest tenant.  
+Guest users can't see the approvals from their guest tenant while they're in their original tenant, or from their original tenant while they're in their guest tenant. Furthermore, actionable approval mails in Outlook aren't supported for guest users in a tenant. Guest users need to go to the Power Automate portal in order to act on an approval.
 
 ### Widgets
 
