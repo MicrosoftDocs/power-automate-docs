@@ -79,7 +79,14 @@ As co-owners, you are required to bring your own connection (BYOC) in console ru
 :::image type="content" source="media/cloudconnectors/bring_your_own_connection.png" alt-text="Screenshot of the bring your own connection dialog for console runs" border="false":::
 
 > [!NOTE]
-> The BYOC window is available for both co-owners and run-only makers. BYOC is only available for console initiated flow executions.
+> The BYOC window is generally displayed during console initiated flow runs to owners, co-owners and run-only makers.
+
+> [!IMPORTANT]
+> The BYOC window is suppressed and not displayed, if
+>  * There are only user own connections for each connector used in the flow, and/or
+>  * There are also embedded connections that are owned by the user running the flow, and
+>  * All the available connections for each connector correspond to the same email account, and
+>  * There are valid connections that can be used for all connectors.
 
 ## List of cloud connectors
 
@@ -111,3 +118,5 @@ You can add the rest of the (non-custom) Power Automate cloud connectors to a de
 - Not all connection types are supported to be created through Power Automate for desktop. For these connectors, create a connection through the corresponding [portal page](../../add-manage-connections.md#add-a-connection).
 
     :::image type="content" source="media/cloudconnectors/connector-banner-prompt-to-create-connection-in-portal.png" alt-text="Screenshot of the connector actions including a banner message that prompts to create a connection through the portal" border="false":::
+
+- Creating a connection requires
