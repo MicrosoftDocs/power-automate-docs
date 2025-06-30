@@ -37,7 +37,7 @@ The following information is required to use the **When a row is added, modified
 - Table name
 - Scope
 
-[!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](../includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 

@@ -1,0 +1,1 @@
+Power Automate allows you to use either the [new designer](../flows-designer.md) or the classic designer to configure your cloud flow. The steps are similar in both designers. Learn more (with examples) in [Identify differences between the new designer and the classic designer](../flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).

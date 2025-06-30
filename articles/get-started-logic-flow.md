@@ -30,7 +30,7 @@ Create a cloud flow that performs one or more tasks automatically after it's tri
 - An X account
 - Office 365 credentials
 
-[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 

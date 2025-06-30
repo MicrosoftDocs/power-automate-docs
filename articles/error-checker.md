@@ -27,7 +27,7 @@ While designing your flow, you can select **Flow Checker** to open the checker t
 
 The checker also opens automatically when you save the flow if there are errors or warnings. Once the checker opens, it shows all errors and warnings in your flow. In each section, the checker calls out the actions where the error or warning occurs. 
 
-[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 
