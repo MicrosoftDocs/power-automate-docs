@@ -35,13 +35,15 @@ You can create a scheduled cloud flow using natural language in Copilot, or crea
 
 # [Using copilot](#tab/using-copilot)
 
-You can ask Copilot to create a scheduled cloud flow. For example, you can ask by typing the following prompt:
+You can ask Copilot to create a scheduled cloud flow.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the navigation pane to the left, make sure that **Home** is selected.
 1. In the **Create your automation with Copilot** field, type the following prompt:
 
-    **Create a flow that runs Monday every week starting 04/14/2025 which sends an email to contoso@gmail.com that their MPR doc is due.**
+    ```copilot-prompt
+    Create a flow that runs Monday every week starting 04/14/2025 which sends an email to contoso@gmail.com that their MPR doc is due.**
+    ```
 
 1. Select **Generate**.
 
@@ -65,7 +67,7 @@ After Copilot generates a response, it confirms that it made the update successf
 
 :::image type="content" source="./media/run-scheduled-tasks/copilot-designer-prompt.png" alt-text="Screenshot of a prompt to create a scheduled flow in the Copilot pane.":::
 
-If you're not using Copilot to configure your actions, go to [Configure cloud flow triggers and actions](#configure-advanced-options).
+If you're not using Copilot to configure your actions, go to 1. Go to [Configure cloud flow triggers and actions](#configure-cloud-flow-triggers-and-actions).
 
 # [Without copilot](#tab/without-copilot)  
 
@@ -77,7 +79,7 @@ If you're not using Copilot to configure your actions, go to [Configure cloud fl
 
     :::image type="content" source="media/run-scheduled-tasks/select-recurrence-aa.png" alt-text="Screenshot of the options to set up a scheduled flow.":::
 
-1. Go to [Configure cloud flow triggers and actions](#configure-advanced-options).
+1. Go to [Configure cloud flow triggers and actions](#configure-cloud-flow-triggers-and-actions).
 
 ---
 
