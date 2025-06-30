@@ -93,7 +93,7 @@ When you create a flow, the first step is to configure the trigger. The trigger 
     |---------|---------|
     |:::image type="content" source="./media/modern-approvals/select-sharepoint-site-info-new-designer.png" alt-text="Screenshot showing SharePoint site information selection in the new designer.":::    | :::image type="content" source="./media/modern-approvals/select-sharepoint-site-info.png" alt-text="Screenshot showing SharePoint site information selection in the classic designer.":::        |
 
-1. Close the configuration pane by selecting (**>>**) in the upper-right corner of the pane.
+1. Close the configuration pane by selecting (**<<**) in the upper-right corner of the pane.
 1. Go to [Add a profile action](#add-a-profile-action).
 
 ## Add a profile action
@@ -108,14 +108,14 @@ Follow these steps to add a profile action to your flow. This action retrieves t
 
     :::image type="content" source="./media/modern-approvals/search-for-profile-new-designer.png" alt-text="Screenshot showing how to search for profile action in the new designer.":::
 
-1. In the **Advanced parameters** dropdown list, place a check in the **Select fields** checkbox, and then select a blank area of the pane.
+1. In the **Advanced parameters** dropdown menu, place a check in the **Select fields** checkbox, and then select a blank area of the pane.
 1. Select the **Select fields** field, and then select the lightning bolt icon.
 1. Select a field from your profile to include in your flow.
 
     If your field doesn't display what you're looking for, select **See more** to view additional fields.
 
 1. To add more fields from your profile, repeat the previous two steps.
-1. Close the configuration pane by selecting (**>>**) in the upper-right corner of the pane.
+1. Close the configuration pane by selecting (**<<**) in the upper-right corner of the pane.
 1. Go to [Add an approval action](#add-an-approval-action).
 
 # [Classic designer](#tab/classic-designer)
@@ -150,7 +150,7 @@ Follow these steps to add an approval action to your flow.
 1. Under **Standard approvals**, select the **Start and wait for an approval** action.
     :::image type="content" source="media/modern-approvals/select-approvals-new-designer.png" alt-text="Screenshot showing how to select the approvals action in the new designer.":::
 
-1. In the **Approval type** dropdown list, select a value.
+1. In the **Approval type** dropdown menu, select a value.
 
     You can also create your own by selecting **Enter custom value**.
 
@@ -175,7 +175,7 @@ Follow these steps to add an approval action to your flow.
 
     :::image type="content" source="media/modern-approvals/provide-approval-config-info-new-designer.png" alt-text="Screenshot showing how to configure the Start and wait for an approval card in the new designer.":::
 
-1. Close the configuration pane by selecting (**>>**) in the upper-right corner of the pane.
+1. Close the configuration pane by selecting (**<<**) in the upper-right corner of the pane.
 1. Go to [Add an email action for approvals](#add-an-email-action-for-approvals).
 
 # [Classic designer](#tab/classic-designer)
@@ -190,7 +190,7 @@ Follow these steps to add an approval action to your flow.
 
     :::image type="content" source="media/modern-approvals/select-approvals.png" alt-text="Screenshot showing how to select the approvals action in the classic designer.":::
 
-1. In the **Approval type** dropdown list, select a value.
+1. In the **Approval type** dropdown menu, select a value.
 
     You can also create your own by selecting **Enter custom value**.
 
@@ -243,7 +243,7 @@ Follow these steps to send an email if the vacation request is approved.
 
     :::image type="content" source="media/modern-approvals/add-condition.png" alt-text="Screenshot showing how to add a condition in the new designer.":::
 
-1. Close the configuration pane by selecting (**>>**) in the upper-right corner of the pane.
+1. Close the configuration pane by selecting (**<<**) in the upper-right corner of the pane.
 1. In the designer, select the plus sign in the **True** branch.
 1. In the **Add an action** search field, type **send email**.
 1. Under **Office 365 Outlook**, select **Send an email (V2)**.
@@ -256,7 +256,7 @@ Follow these steps to send an email if the vacation request is approved.
     1. Type the standard text you want to appear in the email, such as *Your vacation request has been approved by*.
     1. To insert the name of the person who approved the vacation request:
         1. Place your cursor in the **Body** field at the location where you want the name to appear, and then select the lightning bolt icon.
-        1. Select a dynamic value from the dropdown menu. The following example uses the **Responses Approver name** dynamic value.
+        1. From the dropdown menu, select a dynamic value. The following example uses the **Responses Approver name** dynamic value.
     1. (Optional) To insert the comments from the approver:
         1. Type *Approver's comments*.
         1. Place your cursor in the **Body** field at the location where you want the comments to appear, and then select the lightning bolt icon.
@@ -264,7 +264,7 @@ Follow these steps to send an email if the vacation request is approved.
 
         :::image type="content" source="media/modern-approvals/yes-email-config-new-designer.png" alt-text="Screenshot showing how to configure an email in the new designer.":::
 
-1. Close the configuration pane by selecting (**>>**) in the upper-right corner of the pane.
+1. Close the configuration pane by selecting (**<<**) in the upper-right corner of the pane.
 1. Go to [Add an update action for approved requests](#add-an-update-action-for-approved-requests).
 
 # [Classic designer](#tab/classic-designer)
@@ -421,11 +421,11 @@ Follow these steps to update actions for rejected requests.
 
    :::image type="content" source="./media/modern-approvals/completed-flow.png" alt-text="Screenshot showing the completed flow in the classic designer.":::
 
-   Now that you created the flow, it's time to test it. Go to [Test your flow that requests and approval](#test-your-flow-that-requests-and-approval).
+   Now that you created the flow, it's time to test it. Go to [Test your flow that requests an approval](#test-your-flow-that-requests-an-approval).
 
 ---
 
-## Test your flow that requests and approval
+## Test your flow that requests an approval
 
 After you complete the sections in this tutorial, you created a flow that requests an approval for a vacation request. Now you can test your flow to make sure it works as expected.
 
