@@ -5,7 +5,7 @@ author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 06/17/2025
+ms.date: 06/30/2025
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors: null
