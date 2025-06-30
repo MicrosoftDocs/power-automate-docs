@@ -395,7 +395,7 @@ Follow these steps to update actions for rejected requests.
 
    :::image type="content" source="./media/modern-approvals/completed-flow-new-designer.png" alt-text="Screenshot showing the completed flow in the new designer.":::
 
-   Now that you created the flow, it's time to test it!
+1. Now that you created the flow, it's time to test it. Go to [Test your flow that requests an approval](#test-your-flow-that-requests-an-approval).
 
 # [Classic designer](#tab/classic-designer)
 
@@ -407,7 +407,6 @@ Follow these steps to update actions for rejected requests.
    - [Add an email action for approvals](#add-an-email-action-for-approvals)
    - [Add an update action for approved requests](#add-an-update-action-for-approved-requests)
    - [Add an email action for rejections](#add-an-email-action-for-rejections)
-
 
 [!INCLUDE [add-action-to-update-sharepoint-with-rejection](includes/add-action-to-update-sharepoint-with-rejection.md)]
 
@@ -421,7 +420,7 @@ Follow these steps to update actions for rejected requests.
 
    :::image type="content" source="./media/modern-approvals/completed-flow.png" alt-text="Screenshot showing the completed flow in the classic designer.":::
 
-   Now that you created the flow, it's time to test it. Go to [Test your flow that requests an approval](#test-your-flow-that-requests-an-approval).
+1. Now that you created the flow, it's time to test it. Go to [Test your flow that requests an approval](#test-your-flow-that-requests-an-approval).
 
 ---
 
