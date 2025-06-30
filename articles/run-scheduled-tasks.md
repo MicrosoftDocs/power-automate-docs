@@ -6,7 +6,6 @@ author: kewaiss
 contributors:
   - puneet-singh1
   - kisubedi
-  - natalie-pienkowska
   - kartikraop
   - v-aangie
 ms.author: matow
@@ -61,13 +60,18 @@ You can ask Copilot to create a scheduled cloud flow.
 
 ### Use Copilot to configure actions
 
-You can ask Copilot to make changes to your scheduled flow using the Copilot panel in the designer.
+1. In the designer, select **Copilot**.
+1. In the Copilot panel, ask Copilot to make changes to your scheduled flow. For example, you can enter the following prompt:
 
-After Copilot generates a response, it confirms that it made the update successfully. If you change your mind, you can select **Undo** to revert the changes.
+    ```copilot-prompt
+    Change the interval from every week to 2 weeks.
+    ```
 
-:::image type="content" source="./media/run-scheduled-tasks/copilot-designer-prompt.png" alt-text="Screenshot of a prompt to create a scheduled flow in the Copilot pane.":::
+    After Copilot generates a response, it confirms that it made the update successfully. If you change your mind, you can select **Undo** to revert the changes.
 
-If you're not using Copilot to configure your actions, go to 1. Go to [Configure cloud flow triggers and actions](#configure-cloud-flow-triggers-and-actions).
+    :::image type="content" source="./media/run-scheduled-tasks/copilot-designer-prompt.png" alt-text="Screenshot of a prompt to create a scheduled flow in the Copilot pane.":::
+
+1. If you're not using Copilot to configure your actions, go to [Configure cloud flow triggers and actions](#configure-cloud-flow-triggers-and-actions).
 
 # [Without copilot](#tab/without-copilot)  
 
