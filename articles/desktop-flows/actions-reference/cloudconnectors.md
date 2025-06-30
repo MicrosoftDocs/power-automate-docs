@@ -86,7 +86,7 @@ As co-owners, you are required to bring your own connection (BYOC) in console ru
 >  * There are only user own connections for each connector used in the flow, and/or
 >  * There are also embedded connections that are owned by the user running the flow, and
 >  * All the available connections for each connector correspond to the same email account, and
->  * There are valid connections that can be used for all connectors.
+>  * There are currently valid connections that can be used for all connectors.
 
 ## List of cloud connectors
 
@@ -119,4 +119,4 @@ You can add the rest of the (non-custom) Power Automate cloud connectors to a de
 
     :::image type="content" source="media/cloudconnectors/connector-banner-prompt-to-create-connection-in-portal.png" alt-text="Screenshot of the connector actions including a banner message that prompts to create a connection through the portal" border="false":::
 
-- Creating a connection requires
+- Creating a connection through Power Automate for desktop requires WebView2 to be installed on your machine.
