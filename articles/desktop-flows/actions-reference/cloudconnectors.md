@@ -5,7 +5,7 @@ author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 06/30/2025
+ms.date: 07/01/2025
 ms.author: iomavrid
 ms.reviewer: 
 contributors:
@@ -74,7 +74,7 @@ After you confirm your selection, the connection reference is embedded in the de
 
 ## Bring your own connection in console runs
 
-As co-owners, you are required to bring your own connection (BYOC) in console runs for connection references that aren't embedded. As run-only users, you are required to bring your own connection independently of whether the connection references are embedded or not.
+If you're a co-owner, you need to bring your own connection (BYOC) in console runs for connection references that aren't embedded. If you're a run-only user, you need to bring your own connection, even if the connection references are embedded.
 
 :::image type="content" source="media/cloudconnectors/bring_your_own_connection.png" alt-text="Screenshot of the bring your own connection dialog for console runs" border="false":::
 
@@ -82,11 +82,11 @@ As co-owners, you are required to bring your own connection (BYOC) in console ru
 > The BYOC window is generally displayed during console initiated flow runs to owners, co-owners and run-only makers.
 
 > [!IMPORTANT]
-> The BYOC window is suppressed and not displayed, if
->  * There are only user own connections for each connector used in the flow, and/or
->  * There are also embedded connections that are owned by the user running the flow, and
->  * All the available connections for each connector correspond to the same email account, and
->  * There are currently valid connections that can be used for all connectors.
+> The BYOC window is suppressed and isn't displayed if:
+>  * Only user-owned connections exist for each connector used in the flow, and/or
+>  * Embedded connections are also owned by the user running the flow, and
+>  * All available connections for each connector correspond to the same email account, and
+>  * Valid connections are available for all connectors.
 
 ## List of cloud connectors
 
@@ -119,4 +119,4 @@ You can add the rest of the (non-custom) Power Automate cloud connectors to a de
 
     :::image type="content" source="media/cloudconnectors/connector-banner-prompt-to-create-connection-in-portal.png" alt-text="Screenshot of the connector actions including a banner message that prompts to create a connection through the portal" border="false":::
 
-- Creating a connection through Power Automate for desktop requires WebView2 to be installed on your machine.
+- To create a connection in Power Automate for desktop, install WebView2 on your machine.

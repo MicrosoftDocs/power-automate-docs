@@ -36,7 +36,7 @@ You can share a desktop flow that uses connections with:
 
 Makers with user access on a shared desktop flow must always bring their own connections when they run the flow. They can only perform attended console initiated runs.
 
-Once you run a shared desktop flow that contains connector actions through the console, a prompt appears for you to provide a valid connection to be used. This prompt will be suppressed and not appear, if there's only one available valid connection per connector (or more connections corresponding to the same email account).
+Once you run a shared desktop flow that contains connector actions through the console, a prompt appears for you to provide a valid connection to be used. If there's only one available valid connection per connector (or more connections corresponding to the same email account), this prompt is suppressed and doesn't appear.
 
 :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/bring-your-own-connection.png" alt-text="Screenshot of the dialog for you to add a connection." border="false":::
 
@@ -57,7 +57,7 @@ Co-owners have the ability to modify shared desktop flows in addition to running
 To successfully invoke a desktop flow containing connector actions from a cloud flow, it must meet the following two requirements:
 
 - The desktop flow must use the [Power Automate v2 schema](../schema.md).
-- All of its connection references must be marked as embedded, if you are a co-owner of the flow.
+- If you're a co-owner of the flow, all of its connection references must be marked as embedded.
 
 To embed a connection reference to a flow that you have access to as a co-owner:
 
@@ -81,4 +81,4 @@ When importing a desktop flow with embedded connection references in a solution,
 
 ### Console runs
 
-Similar to the user use-case, when you run a shared desktop flow with connector actions through the console, a prompt appears for you to provide a valid connection to be used. This prompt will be suppressed and not appear, if there's only one available valid connection per connector (or more connections corresponding to the same email account).
+Similar to the user use-case, when you run a shared desktop flow with connector actions through the console, a prompt appears for you to provide a valid connection to be used. If there's only one available valid connection per connector (or more connections corresponding to the same email account), this prompt is suppressed and doesn't appear.

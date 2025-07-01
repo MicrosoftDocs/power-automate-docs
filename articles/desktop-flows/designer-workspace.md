@@ -30,7 +30,7 @@ Drag actions to rearrange them and change the order in which they run. Right-cli
 
 Copy and paste any selected actions in the workspace. You can copy and paste actions within the same subflow, among different subflows, or other open instances of flow designer.
 
-## Setting up subflows
+## Set up subflows
 
 Subflows are groups of actions, which can be referenced as a group within a desktop flow.
 
@@ -46,13 +46,13 @@ Subflows are shown in tabs, directly over the main workspace. To add a new subfl
 
 Select a subflow tab to edit the respective subflow.
 
-### Organizing subflows
+### Organize subflows
 
 When there are dozens of subflows within your flow, you might need to reorganize or reorder your subflows in an order that makes more sense to you for flow navigation purposes.
 
-The default sorting option follows the subflows creation original ascending order. Alternatively, you can switch to desceding order, or you can instead sort by name, so that your subflows are sorted alphabetically (in ascending or descending order).
+The default sorting option follows the subflows creation original ascending order. Alternatively, you can switch to descending order, or you can instead sort by name, so that your subflows are sorted alphabetically (in ascending or descending order).
 
-You also have the option to use a custom order for your subflows, manually reordering them in any order you'd like. Keep in mind that the **Main** subflow always remains on top of your subflows list and can't be moved.
+You can use a custom order for your subflows, manually reordering them in any order you'd like. Keep in mind that the **Main** subflow always remains on top of your subflows list and can't be moved.
 
 ## Saving flows
 
