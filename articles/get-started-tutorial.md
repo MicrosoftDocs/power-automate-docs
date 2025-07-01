@@ -120,9 +120,9 @@ Complete creating your cloud flow in the *designer*. Power Automate allows you t
         If you were doing this in a real life scenario, you would enter the email of the person you want to send the newsletter to. In this tutorial, you're sending it to yourself so that you can get the email sent by your cloud flow when you run it later in this tutorial. You can also send it to multiple people in the **To** field.
 
     1. In the **Subject** field, enter **The Contoso Cadence Newsletter**.
-    1. In the **Body** field, enter the following text:
+    1. In the **Body** field, copy and paste the following text:
 
-        ```copilot-prompt
+        ```
         Welcome to the monthly Contoso Cadence newsletter! In this email, you'll find important dates for training sessions and talks. We'll also showcase demos, and list the frequently asked questions for the month.
         ```
 
