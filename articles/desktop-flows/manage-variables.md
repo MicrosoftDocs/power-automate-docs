@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 04/11/2025
+ms.date: 07/01/2025
 ms.author: dbekirop
 ms.reviewer: matp
 contributors:
@@ -75,10 +75,10 @@ To create an input variable:
 1. When the **New input variable** dialog appears, populate the following fields:
 
     - **Variable name**: The name of the variable in the desktop flow.
-    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list), [datatable](variable-data-types.md#datatable), or [instance](variable-data-types.md#instances).
+    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list), [datatable](variable-data-types.md#datatable), [instance](variable-data-types.md#instances), or session.
     - **Default value**: The default value when the flow runs through the flow designer or console. When you create a custom object, list, or datatable input variable, Power Automate allows you to construct the default value through a visual or JSON editor.
         ![Screenshot of a custom object input variable in the visual editor.](media\input-output-variables\custom-object-input-variable.png)
-    - **Data subtype**: The exact type of the instance (available only when **Instance** is previously selected as data type): Terminal, Browser, Excel, Word, Outlook, or Access.
+    - **Data subtype**: The exact type of the instance (available only when **Instance** or **Session** is previously selected as data type): Browser, Excel, Word, Outlook, Access, or Terminal respectively.
     - **External name**: The external name is the name that appears in the cloud flow designer and the flow inputs dialog when calling the flow from the console.
     - **Description**: The description of the variable that appears in the cloud and desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](#sensitive-variables).
@@ -86,7 +86,7 @@ To create an input variable:
 
     > [!NOTE]
     > - The **Variable name**, **Data type**, and **External name** fields are required to create an input variable.
-    > - Input variables of instance type (Terminal, Browser, Excel, Word, Outlook, or Access) don't support default values. Flows with these inputs can run through the 'Run desktop flow' action of another desktop flow or through the designer for testing or debugging. In designer runs, instance input variables can be temporarily initialized by using them as the produced variables of the respective Launch or Attach actions.
+    > - Input variables of instance or session type (Browser, Excel, Word, Outlook, Access, or Terminal) don't support default values. Flows with these inputs can run through the 'Run desktop flow' action of another desktop flow or through the designer for testing or debugging. In designer runs, instance and session input variables can be temporarily initialized by using them as the produced variables of the respective Launch, Open, or Attach actions.
     > - Edge, Chrome, and Firefox are supported as browser instances for input variables.
 
     > [!IMPORTANT]
@@ -109,8 +109,8 @@ To create an output variable:
 1. When the **New output variable** dialog appears, populate the following fields:
 
     - **Variable name**: The name of the variable in the desktop flow.
-    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list), [datatable](variable-data-types.md#datatable), or [instance](variable-data-types.md#instances).
-    - **Data subtype**: The exact type of the instance (available only when **Instance** is previously selected as data type): Terminal, Browser, Excel, Word, Outlook, or Access.
+    - **Data type**: The type of the variable: [text](variable-data-types.md#text-value), [number](variable-data-types.md#numeric-value), [boolean](variable-data-types.md#boolean-value), [custom object](variable-data-types.md#custom-object), [list](variable-data-types.md#list), [datatable](variable-data-types.md#datatable), [instance](variable-data-types.md#instances), or session.
+    - **Data subtype**: The exact type of the instance (available only when **Instance** or **Session** is previously selected as data type): Browser, Excel, Word, Outlook, Access, or Terminal respectively.
     - **External name**: The external name is the name that appears in the cloud flow designer.
     - **Description**: The description of the variable that appears in the cloud or desktop flow designer while calling the flow.
     - **Mark as sensitive**: Defines whether to mark the variable as sensitive or not. You can find information regarding sensitive variables in [Sensitive variables](#sensitive-variables).
