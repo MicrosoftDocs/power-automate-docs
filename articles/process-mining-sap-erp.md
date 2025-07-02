@@ -35,9 +35,8 @@ Enabling SAP ERP connector requires several prerequisites to be completed. All p
 
 The following installers must exist in the desktop or virtual machine before using the connector.
 
-1. Go to [SAP Connector for Microsoft .NET](https://support.sap.com/en/product/connectors/msnet.html) to download and install the NCo 3.0 for 64 bit.
+1. Go to [SAP Connector for Microsoft .NET](https://support.sap.com/en/product/connectors/msnet.html) to download and install the NCo 3.1 for 64 bit.
 
-    - Don't install NCo 3.1, as this version is not yet supported.
     - Access to the download requires a valid S-user. You might need to contact your SAP team.
     - Choose the 64 bit version. The 32 bit version won't work.
     - During installation, in the optional setup steps screen, select **Install assemblies to GAC**.
