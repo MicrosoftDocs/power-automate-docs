@@ -119,7 +119,7 @@ There are two types of navigation properties that you can use in **Expand Query*
 
    1. *Collection-valued* navigation properties correspond to one-to-many or many-to-many relationships.
 
-If you include only the name of the navigation property, you’ll receive all the properties for the related rows. To learn more, see [Retrieve related table rows with a query](/powerapps/developer/data-platform/webapi/retrieve-related-entities-query).
+If you include only the name of the navigation property, you’ll receive all the properties for the related rows. To learn more, see [Retrieve related table rows with a query]developer/data-platform/webapi/retrieve-related-entities-query).
 
 To use it in a flow step, enter this Odata expression in the **Expand Query** field: `primarycontactid(contactid,fullname)`. This is how to get the *contactid* and *fullname* columns for the *primarycontactid* of each *account*.
 
@@ -134,6 +134,9 @@ Use to indicate the specific number of rows for Dataverse to return. Here's an e
 # [New designer](#tab/new-designer)
 
 Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML.
+
+>[!IMPORTANT]
+>[Pagination setting](#turn-on-pagination-to-request-more-than-5000-rows) does not support FetchXml queries. You will need to manage [paging directly with the FetchXml](/powerapps/developer/data-platform/fetchxml/page-results) query to request more than 5,000 rows.
 
 Example FetchXML query for the Account table:
 
