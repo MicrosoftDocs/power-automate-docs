@@ -56,7 +56,7 @@ Follow these steps to analyze the process with Copilot. You can analyze your pro
 
 
 1. In Power Automate in the left navigation pane, select **Process mining**.
-2. In the **Environments** field in th titlebar, select your process mining environment with an imported process.
+2. In the **Environments** field in the title bar, select your process mining environment with an imported process.
 3. Open the imported process.
 
     :::image type="content" source="media/process-mining-copilot-in-process-analytics/copilot-web.png" alt-text="Screenshot of the opened process.":::
