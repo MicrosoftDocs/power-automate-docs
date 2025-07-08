@@ -49,11 +49,11 @@ The following table summarizes the Power Automate resources that may contain the
 | Process Mining processes | Processes analyzed with the Process Mining capability in Power Automate. [Learn more](./process-mining-overview.md). |
 
 ## Step 2: Find personal data for the user in other Power Platform services
-Personal data subject to the request may be present in Power Platform services if the user has interacted with other Power Platform features. For guidance on how to discover personal data stored in the PowerApps service, Microsoft Copilot Studio service or Dataverse, see [About privacy](https://learn.microsoft.com/en-us/power-platform/admin/about-privacy).
+Personal data subject to the request may be present in Power Platform services if the user has interacted with other Power Platform features. For guidance on how to discover personal data stored in the PowerApps service, Microsoft Copilot Studio service or Dataverse, see [About privacy](https://learn.microsoft.com/power-platform/admin/about-privacy).
 
 ## Step 3: Find personal data for the user in the Microsoft 365 admin center
 Some feedback mechanisms in Power Automate are integrated with the Microsoft 365 admin center.
 
-For guidance on how to discover feedback data stored by the Microsoft 365 admin center, see [How can I see my user's feedback?](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#how-can-i-see-my-users-feedback).
+For guidance on how to discover feedback data stored by the Microsoft 365 admin center, see [How can I see my user's feedback?](https://learn.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#how-can-i-see-my-users-feedback).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
