@@ -54,6 +54,9 @@ The following table summarizes where to find and delete a user's personal data i
 | Custom connector | Power Automate maker portal | | |
 | Custom connector permissions | Power Automate maker portal | | |
 | Approval history | Power Apps maker portal\* | | |
+| Desktop Flows | Power Automate maker portal |  |  |
+| Machines and Machine groups | Power Automate maker portal |  |  |
+| Process Mining processes | Power Automate maker portal |  |  |
 
 \* For environments that include a Dataverse database, environment permissions and model-driven app permissions are stored as records in Dataverse. [Learn more about running data requests against Dataverse customer data.](/power-platform/admin/common-data-service-gdpr-dsr-guide)
 
@@ -74,6 +77,9 @@ The following table summarizes where to find and delete a user's personal data i
 1. [Delete gateway settings.](#delete-gateway-settings)
 1. [Delete the user's details.](#delete-the-users-details)
 1. [Delete the user from Microsoft Entra ID.](#delete-the-user-from-microsoft-entra-id)
+1. [Delete desktop flows.](#delete-desktop-flows)
+1. [Delete machines and machine groups.](#delete-machines-and-machine-groups)
+1. [Delete process mining processes.](#delete-process-mining-processes)
 
 ### Reassign and copy the user's flows
 
@@ -218,6 +224,30 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-Ad
 
 > [!NOTE]
 > Owner role assignments can't be deleted unless the connection resource is deleted first.
+
+### Delete desktop flows
+
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+1. On the left navigation pane, select **Desktop flows**.
+1. In the list of desktop flows created by the user, select the vertical ellipsis (**⋮**) for each flow, and then select **Delete**.
+1. Select **Delete** again when you're prompted.
+
+### Delete machines and machine groups
+
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+1. On the left navigation pane, select **Machines**.
+1. Select the **Machine groups** tab.
+1. In the list of machine groups created by the user, select the vertical ellipsis (**⋮**) for each group, and then select **Delete**.
+1. Select **Delete** again when you're prompted.
+1. Select the **Machines** tab and follow the same instructions to delete the user's machines.
+
+### Delete process mining processes
+
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+1. On the left navigation pane, select **Process mining**.
+1. On the Process Mining page, select **All processes**.
+1. In the list of processes analyzed by the user, select the vertical ellipsis (**⋮**) for each process, and then select **Delete**.
+1. Select **Delete** again when you're prompted.
 
 ### Delete or reassign environments created by the user
 

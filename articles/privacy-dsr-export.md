@@ -29,7 +29,7 @@ The following table summarizes where to find and export the personal data of a u
 |---|---|---|
 | System-generated logs | [Office 365 Service Trust Portal](https://servicetrust.microsoft.com/) |
 | Run history | Power Automate maker portal | |
-| Flows | Power Automate maker portal | |
+| Cloud Flows | Power Automate maker portal | |
 | Flow permissions | Power Automate maker portal and Power Automate admin center | |
 | User details | | Power Apps cmdlets |
 | Connections | Power Automate maker portal | Power Apps cmdlets |
@@ -38,6 +38,10 @@ The following table summarizes where to find and export the personal data of a u
 | Custom connector permissions | Power Automate maker portal | Power Apps cmdlets |
 | Gateway | Power Automate maker portal | On-premises data gateway PowerShell cmdlets |
 | Gateway permissions | Power Automate maker portal | On-premises data gateway PowerShell cmdlets |
+| Desktop Flows | Power Automate maker portal |  |
+| Machine and Machine groups | Power Automate maker portal |  |
+| Hosted machines | Power Automate maker portal |  |
+| Process Mining processes | Power Automate maker portal |  |
 
 ## Export a cloud flow
 
@@ -163,6 +167,21 @@ Add-PowerAppsAccount
 
 Get-AdminFlowUserDetails -UserId {userID}
 ```
+
+## Export desktop flows
+
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+1. On the left navigation pane, select **Desktop flows**.
+1. Copy the list of desktop flows and paste it into a document editor such as Microsoft Word.
+
+## Export machines and machine groups
+
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+1. On the left navigation pane, select **Machines**.
+1. Select the **Machine groups** tab.
+1. You can then manually copy machine group details for machine groups owned by the user.
+1. Select the **Machines** tab.
+1. You can then manually copy machine details for machines owned by the user.
 
 ## Export gateway settings
 
