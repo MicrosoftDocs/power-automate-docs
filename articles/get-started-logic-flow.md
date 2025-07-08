@@ -1,6 +1,6 @@
 ---
 title: Create a cloud flow in Power Automate
-description: Learn how to create a cloud flow that automatically performs one or more actions, such as sending email, when events like someone adding a row to a SharePoint list occur.
+description: Learn how to create a cloud flow that automatically performs one or more actions when an event occurs.
 suite: flow
 author: kisubedi
 contributors:
@@ -32,7 +32,7 @@ Create a cloud flow that performs one or more tasks automatically after an event
 - An X account
 - Office 365 credentials
 
-## Create a cloud flow when someone posts a tweet
+## Create a cloud flow
 
 [!INCLUDE[copilot-tab-experience](./includes/copilot-tab-experience.md)]
 
@@ -49,17 +49,16 @@ With Copilot, you can create a cloud flow using natural language. Copilot genera
 
 1. Select **Generate**.
 
-   Copilot suggests a flow based on your prompt:
+    Based on the description, Copilot begins to create a suggested *trigger* and *actions* for your flow. A trigger is an event that starts a cloud flow. Actions are the events you want the flow to do after the trigger event takes place.
 
-   :::image type="content" source="./media/get-started-logic-flow/copilot-natural-language-new-designer.png" alt-text="Screenshot of a prompt that uses natural language in Copilot.":::
+    In this example, the trigger is **When a new tweet is posted** and the actions are **Get user** and **Send an email**.
+
+    :::image type="content" source="./media/get-started-logic-flow/copilot-natural-language-new-designer.png" alt-text="Screenshot of a prompt that uses natural language in Copilot.":::
 
 1. Select **Keep it and continue**.
 
 1. Review your connected apps and services to X and Outlook. A green checkmark indicates that the connection is valid.
 1. Select **Next**. Your flow appears on the designer.
-
-   The new flow contains the **When a new tweet is posted** trigger and the **Send an email (V2)** action.
-
 1. Save the flow and it's ready to use.
 
    Your flow triggers when new tweets mentioning the key phrase *Contoso Company* are posted. It also sends an email to the specified email address in the **Send an email** action.
@@ -85,7 +84,7 @@ With Copilot, you can create a cloud flow using natural language. Copilot genera
    > [!TIP]
    > Connectors support multiple types of authentication. For example, SQL Server supports Microsoft Entra ID, SQL Server authentication, Windows authentication, and SQL connection string. Choose which type of authentication you want to use when configuring a connector.
 
-1. Go to [Configure your cloud flow](#configure-your-cloud-flow).
+1. Go to [Configure your cloud flow in the designer](#configure-your-cloud-flow-in-the-designer).
 
 ---
 
@@ -100,8 +99,10 @@ With Copilot, you can create a cloud flow using natural language. Copilot genera
 1. In the **Search for an action or connector** field, enter **send email**.
 1. Under **Office 365 Outlook**, select **Send an email (V2)**. The configuration pane opens.
 1. In the configuration pane, enter your email address in the **To** field.
-1. In the **Subject** box, enter **New tweet from:**, and then type a space.
+1. In the **Subject** field, enter **New tweet from:**, and then type a space.
 1. Select the lightning bolt to the right and select **Tweeted by** to add a placeholder for it.
+
+    If you don't see the **Tweeted by** dynamic content, select **See more** at the top of the list.
 
     :::image type="content" source="./media/get-started-logic-flow/add-parameter-new-designer.png" alt-text="Screenshot of adding the 'Tweeted by dynamic content in the new designer.":::
 
@@ -117,10 +118,10 @@ With Copilot, you can create a cloud flow using natural language. Copilot genera
 
 1. Make sure you completed the steps in [Create a cloud flow](#create-a-cloud-flow).
 1. Select **+ New step**.
-1. In the **Choose an operation** field, enter **send email**
-1. In the **Actions** list, select **Send an email (v2) - Office 365 Outlook**.
+1. In the **Choose an operation** field, enter **send email**.
+1. In the **Actions** list, select **Send an email (V2) - Office 365 Outlook**.
 1. In the **To** field, enter your email address.
-1. In the **Subject** box, enter **New tweet from:**, and then type a space.
+1. In the **Subject** field, enter **New tweet from:**, and then type a space.
 1. In the **Dynamic content** list, select **Tweeted by** to add a placeholder for it.
 
     :::image type="content" source="./media/get-started-logic-flow/add-parameter-classic-designer.png" alt-text="Screenshot of adding the Tweeted by dynamic content.":::
@@ -136,12 +137,12 @@ With Copilot, you can create a cloud flow using natural language. Copilot genera
 
 ## Test your flow
 
-Send a tweet with the keyword that you indicated, or wait for someone else to post such a tweet.
+After you [create a cloud flow](#create-a-cloud-flow) and save it, send a tweet with the keyword that you indicated, or wait for someone else to post such a tweet.
 
 In about a minute after the tweet is posted, an email message notifies you of the new tweet.
 
 > [!TIP]
-> Use the **Send email (V2)** action to format email in which you customize the font, use bold, italic or underline, customize the color and highlight, and create lists or links, and more.
+> Use the **Send email (V2)** action to format email in which you customize the font, use bold, italic, or underline, customize the color and highlight, create lists or links, and more.
 
 ## Manage a cloud flow
 
@@ -151,7 +152,7 @@ You can have up to 600 flows in your account. If you already have 600 flows, del
 
 1. On the navigation pane to the left, select **My flows**.
 
-1. In the list of flows, do any of the following:
+1. Select the vertical ellipsis (**&vellip;**) next to the flow you want to manage, and then do any of the following:
 
    * To pause a cloud flow, select **Turn off**.
 
@@ -159,7 +160,7 @@ You can have up to 600 flows in your account. If you already have 600 flows, del
 
    * To resume a cloud flow, select **Turn on**.
 
-   * To edit a cloud flow, select **Edit**, the pencil icon, that corresponds to the flow you want to edit.
+   * To edit a cloud flow, select **Edit** (or the pencil icon) that corresponds to the flow you want to edit.
 
    * To delete a cloud flow, **Delete**, and then select **Delete** on the message box that appears.
 
