@@ -38,6 +38,10 @@ Even if Flow Checker doesn't show any issues, it's a good idea to test your flow
 
 The **Test Flow** pane in the Power Automate designer allows you to test a flow either manually or automatically. You must save your flow before you can test it, and you must test it manually at least once before you can use the automatic testing option.
 
+Select **Test** from the cloud flow designer to test your flow.
+
+ :::image type="content" source="media/test-cloud-flows1.png" alt-text="Screenshot of the cloud flow designer shwoing the Test button." lightbox="media/test-cloud-flows.png":::
+
 - **To manually test the flow**, perform the action that triggers the flow.
 
 - **To test the flow automatically**, use a recently used trigger or repeat a previous test run.

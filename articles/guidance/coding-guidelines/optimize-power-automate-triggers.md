@@ -53,7 +53,12 @@ Now let's add a trigger condition on the **When a row is added, modified, or del
 :::image type="content" source="media/trigger-condition.png" alt-text="Screenshot of the Power Automate designer showing an approval flow that uses a trigger condition to run only for eligible expenses." lightbox="media/trigger-condition.png":::
 
 > [!TIP]
-> Use the OData filter property to define precise conditions for when a flow should be triggered based on changes in Dataverse data. You can specify a condition and the names of the columns on which the flow can trigger, optimizing flow performance and ensuring that flows run only when necessary. Learn more in [Flow of the Week: Filtering Data with OData](https://www.microsoft.com/power-platform/blog/power-automate/advanced-flow-of-the-week-filtering-with-odata/).
+> Use the OData filter property to define precise conditions for when a flow should be triggered based on changes in Dataverse data. You can specify a condition and the names of the columns on which the flow can trigger, optimizing flow performance and ensuring that flows run only when necessary. 
+> 
+> Learn more:
+>
+> - [Flow of the Week: Filtering Data with OData](https://www.microsoft.com/power-platform/blog/power-automate/advanced-flow-of-the-week-filtering-with-odata/)
+> - [Filter rows using OData](/power-apps/developer/data-platform/webapi/query/filter-rows)
 
 ## Use trigger concurrency control
 

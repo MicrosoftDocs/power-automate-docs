@@ -22,6 +22,15 @@ A *scope* is a container that groups actions together, making it easier to organ
 
 :::image type="content" source="media/use-scope.png" alt-text="Screenshot of actions within a scope." lightbox="media/use-scope.png":::
 
+## Create a scope
+
+1. Open your cloud flow.
+1. Select **+** to add an action.
+1. Search for **Scope**.
+1. Add the **Scope** control.
+    :::image type="content" source="media/use-scope1.png" alt-text="Screenshot of the add an action pane showing the Scope control." lightbox="media/use-scope1.png":::
+1. You can now add actions within the scope, or drag existing actions into the scope.
+
 ## Best practices for using scopes
 
 - **Group related actions**. When you have a set of actions that are logically related, group them into a scope. This helps keep related tasks together and makes it easier to understand the purpose of each section.
