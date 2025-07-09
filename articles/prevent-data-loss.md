@@ -61,7 +61,7 @@ When your tenant is opted into the user experience in the Power Platform, your a
 
 ### Govern desktop flows outside of DLP
 
-Granular control over the use of desktop flows on all machines as described in the previous sections applies only to Managed Environments. You have other options to govern desktop flows.
+You have other options to govern desktop flows.
 
 - **Ability to govern desktop flow orchestration**: The desktop flow connector can be governed in your policies like any other connector in all environments.
 
