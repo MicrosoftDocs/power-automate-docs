@@ -11,7 +11,7 @@ metadata:
   author: v-aangie #Required; your GitHub user alias, with correct capitalization.
   ms.author: angieandrews #Required; microsoft alias of author; optional team alias.
   ms.reviewer: angieandrews
-  ms.date: 06/20/2024 #Required; mm/dd/yyyy format.
+  ms.date: 06/25/2025 #Required; mm/dd/yyyy format.
   ms.custom: bap-template
   hide_bc: true
 
@@ -50,6 +50,8 @@ additionalContent:
           url: sign-up-sign-in.md
         - text: Buy Power Automate
           url: /power-automate/organization-q-and-a#how-can-people-gain-access-to-the-paid-features-of-power-automate
+        - text: "Tutorial: Get started with Power Automate"
+          url: get-started-tutorial.md  
     - title: Create flows
       links:
         - text: Create automated flows

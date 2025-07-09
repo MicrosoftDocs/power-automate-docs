@@ -4,13 +4,15 @@ description: Learn about the components in the cloud flows designer.
 suite: flow
 author: kisubedi
 contributors:
+ - QuentinSele
+ - AndreasTouly
  - kisubedi
  - v-aangie
  - EllenWehrle
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 05/13/2025
+ms.date: 06/05/2025
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -29,7 +31,7 @@ You can create, configure, and customize your cloud flows with the classic desig
 > - The cards in the flow are small.
 > - The standalone action configuration pane appears on the left when you select a card.
 >
-> More information: [Identify differences between the classic designer and the new cloud flows designer](#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer)
+> More information: [Identify differences between the new designer and the classic designer](#identify-differences-between-the-new-designer-and-the-classic-designer)
 
 Following is a screenshot of the AI-powered cloud flows designer's features. To give you more context, refer to the legend.
 
@@ -46,7 +48,7 @@ Legend:
 1. [**Test button**](#test-button): Test your flow to make sure that it works as you intended.
 1. **Publish button**: Publish your flow so that your flow runs when the trigger event is performed.
 1. [**Copilot button**](get-started-with-copilot.md): Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
-1. **New designer toggle**: Switch between the classic designer and the new cloud flows designer. Learn more in [Identify differences between the classic designer and the new cloud flows designer](#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+1. **New designer toggle**: Switch between the classic designer and the new cloud flows designer. Learn more in [Identify differences between the new designer and the classic designer](#identify-differences-between-the-new-designer-and-the-classic-designer).
 1. **Action/trigger name**: The action or trigger card that is selected in your flow in the center of the page (the [*canvas*](#canvas)).
 1. [**More commands button**](#more-commands): Add a note to the selected card, *pin* an action, or delete the card. There are two ways to pin an action. Learn more in [View two action panes simultaneously](#view-two-action-panes-simultaneously).
 1. **Collapse button**: Hide the pane. When the pane is collapsed, the **Expand** button (**\>\>**) appears in the upper-left corner. Select it to show the pane again.
@@ -143,7 +145,7 @@ On the **Settings** tab, you can set the action time-out, network retry policy, 
 | Setting | Description |
 |---------|-------------|
 | General | In the **Action Timeout** field, set the maximum duration between retries and asynchronous responses for the selected action. This setting doesn't change the request time-out of a single request. |
-| Networking | In the **Retry Policy** field, select a retry policy for intermittent failures. The default setting is an exponential interval policy that is set to retry four times. You can also set your own exponential or fixed interval settings, or choose none at all. |
+| Networking | In the **Retry Policy** field, select a retry policy for intermittent failures. The default setting is an exponential interval policy that is set to retry two (2) times for low profiles, eight (8) for medium/high profiles without premium connectors, and 12 for medium/high profiles with premium connectors. You can also set your own exponential or fixed interval settings, or choose none at all. |
 | Run After | In the **Run After** field, configure how an action should run after the execution of any of the preceding flow actions. For example, you can choose to run an action after the preceding action runs successfully, times out, skips, or fails. |
 | Security | Use the **Secure inputs** and **Secure outputs** toggles to turn the operations, and references of output properties, on or off. |
 | Tracking | Set the key and value of tracked properties.|
@@ -162,11 +164,11 @@ You can copy actions to the clipboard whether they're atomic actions or containe
 
 To copy and paste an action, follow these steps.
 
-1. Right-click on any action (or trigger) you want to copy.
+1. Right-click on any action (or trigger) you want to copy, and select **Copy Action**.
 
     :::image type="content" source="media/flows-designer/copy-action.png" alt-text="Screenshot highlights copying an action.":::
 
-1. On the canvas, select **+** on the canvas to add an action, and then select **Paste an action**.
+1. On the canvas, right-click on **+**, and then select **Paste an action**.
 
     You can copy and paste actions across different parts of your flow, or in between flows.
 
@@ -204,14 +206,14 @@ Legend:
 
 ### Expression editor and token picker
 
-The expression editor in the designer is multi-line, which allows you to easily create and edit long, complex expressions. A *gripper* allows you to temporarily expand the box by one or two (1-2) lines, as needed. If that's not enough, you can expand the popup to a full page view. A search box allows you to search for tokens and functions, both in the **Dynamic content** view and **Function** view.
+The expression editor in the designer is multi-line, which allows you to easily create and edit long, complex expressions. A *gripper* allows you to temporarily expand the box by one or two (1 or 2) lines, as needed. If that's not enough, you can expand the popup to a full page view. A search box allows you to search for tokens and functions, both in the **Dynamic content** view and **Function** view.
 
-:::image type="content" source="media/flows-designer/expression-editor.png" alt-text="Screenshot highlights the expression editor.":::
+:::image type="content" source="media/flows-designer/token-picker.png" alt-text="Screenshot of the gripper and the 'Dynamic content' and 'Function' tabs.":::
 
 > [!TIP]
 > You can use a forward slash ( / ) keyboard shortcut to invoke the token picker/expression editor popup when you're on an action field.
 
-Learn how to use the expression editor in [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md).
+If you have access to Copilot, you can learn to use it to create expressions in [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md).
 
 ### Disable an action or enable static results on an action
 
@@ -240,15 +242,18 @@ To unpin an action, you have two options:
 - Right-click the action on the canvas and select **Unpin action**.
 - Select the **Pin** icon on the action pane.
 
-## Identify differences between the classic designer and the new cloud flows designer
+## Identify differences between the new designer and the classic designer
 
-To quickly identify which designer version you're using, ask yourself the following questions:
+The new cloud designer has smaller cards to facilitate easy navigation. To display the configuration data for a card, you need to select it to open a configuration pane on the left. To compare, the classic designer has larger cards, and each card contains the related configuration data. To display the configuration data, you need to select each card to expand it.
 
-- Are the action cards on the flow small or large?
-- Is the action configuration pane inline or in a separate pane?
 
-> [!NOTE]
-> The new cloud flows designer has smaller cards to facilitate easy navigation. It also has a standalone action configuration pane on the left.
+|New designer  |Classic designer  |
+|---------|---------|
+|:::image type="content" source="media/flows-designer/designer-differences-new.png" alt-text="Screenshot of a cloud flow and the configuration pane in the new designer.":::    | :::image type="content" source="media/flows-designer/designer-differences-classic.png" alt-text="Screenshot of an expanded action card in a cloud flow in the classic designer.":::        |
+
+
+
+In either the configuration pane or the expanded card, you can edit the configuration data.
 
 ## Designer resiliency and save flow with errors
 

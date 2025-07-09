@@ -1,12 +1,12 @@
 ---
-title: Power Automate coding guidelines
-description: Learn best practices for building Power Automate flows that are consistent, perform well, and easier to maintain.
+title: Power Automate coding guidelines for cloud flows
+description: Learn best practices for building Power Automate cloud flows with coding guidelines. Improve consistency, performance, and maintainability.
 #customer intent: As a Power Automate user, I want to learn best practices for building and maintaining efficient cloud flows.
 author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: overview
-ms.date: 05/15/2025
+ms.date: 05/23/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 search.audienceType: 
@@ -14,7 +14,7 @@ search.audienceType:
   - flowmaker
 ---
 
-# Power Automate coding guidelines
+# Power Automate coding guidelines: Cloud flows
 
 The articles in this section provide standards and best practices for developing Power Automate flows that are consistent, perform well, and can be maintained more easily. They include guidelines for naming actions, variables, and connectors, structuring your flows, optimizing performance, and troubleshooting. They also provide guidance on how to make sure your flows and the data that they handle are secure.
 

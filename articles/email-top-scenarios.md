@@ -1,11 +1,11 @@
 ---
 title: Create flows for popular email scenarios in Power Automate
 description: Learn about top scenarios where you can use Power Automate to manage your email.
-author: HeatherOrt
+author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 10/09/2024
+ms.date: 06/25/2025
 ms.author: ralinga
 ms.reviewer: angieandrews
 ms.custom: bap-template

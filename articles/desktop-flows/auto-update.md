@@ -4,7 +4,7 @@ description: Learn how to configure automatic updates for Power Automate for des
 author: a-887178056
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.date: 02/19/2025
+ms.date: 06/17/2025
 ms.author: guco
 ms.topic: article
 ms.custom:
@@ -16,7 +16,7 @@ ms.custom:
 
 # Configure automatic updates for Power Automate for desktop
 
-Starting with the April 2025 (2.54) release of Power Automate for desktop, machines upgrade automatically to new versions in the background without requiring user interaction.
+Starting with the March 2025 (2.54) release of Power Automate for desktop, machines upgrade automatically to new versions in the background without requiring user interaction.
 
 > [!IMPORTANT]
 > - This article only applies to the MSI version of Power Automate for desktop. The store version's updates are managed by the Windows Store.
@@ -24,7 +24,7 @@ Starting with the April 2025 (2.54) release of Power Automate for desktop, machi
 There are two automatic update modes: regular and emergency.
 
 > [!NOTE]
-> Automatic updates are gradually enabled on a per-tenant basis. Expect some delay between enabling automatic updates and your tenant's machines starting to update.
+> Automatic updates are gradually enabled on a per-tenant basis, starting in June 2025. Expect some delay between enabling automatic updates and your tenant's machines starting to update.
 > If you want your tenant to be enabled early, contact support.
 
 ## Regular automatic updates
@@ -37,7 +37,7 @@ Automatic updates are disabled by default. Enable them using the registry. Learn
 
 Use this update mode to receive critical security patches and major regression fixes to Power Automate for desktop machines.
 
-When a patch is available, machines upgrade to the patched minor version (2.XX.Y to 2.XX.Z) or to the latest version with the patch, but only when not in use.
+When a patch is available, machines upgrade to the patched minor version (2.XX.Y to 2.XX.Z) or the latest version with the patch, which might include a minor version update (2.X to 2.Y). Machines upgrade only when Power Automate for desktop isn't in use.
 
 Emergency automatic updates are enabled by default but can be disabled using the registry. Learn more in [configuring automatic updates](#configuring-automatic-updates).
 
@@ -45,7 +45,7 @@ Emergency automatic updates are enabled by default but can be disabled using the
 
 By default, regular automatic updates are disabled, but emergency automatic updates are enabled.
 
-To change the default behavior, create the following registry values. You need admin rights.
+To configure automatic updates, use the Windows registry. You need administrator rights to make changes. To modify the default behavior, create the following registry values.
 
 | Key | Name | Type | Value |
 |---|---|---|---|

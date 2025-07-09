@@ -1,7 +1,7 @@
 ---
 title: Add OAuth authentication for HTTP request triggers
 description: Learn about authentication parameters for HTTP request triggers.
-author: HeatherOrt
+author: kewaiss
 contributors:
   - rakrish84
   - v-aangie
@@ -63,7 +63,7 @@ The following table shows the audience values across different clouds:
 
 Depending on your designer version, parameters appear in different locations.
 
-[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 

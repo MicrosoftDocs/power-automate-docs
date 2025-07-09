@@ -2,11 +2,11 @@
 title: Trigger a cloud flow based on email properties in Power Automate
 description: Learn how to start a cloud flow based on properties of an email such as the subject, sender's address, or recipient's address - When a new email arrives (V3), On new email.
 suite: flow
-author: HeatherOrt
+author: kewaiss
 contributors:
   - hamenon
   - v-aangie
-ms.author: dbekirop
+ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
@@ -55,7 +55,7 @@ Although this tutorial sends a push notification, you're free to use any other a
 
 [!INCLUDE [sign-in-use-blank-select-email-trigger-and-inbox-folder](includes/sign-in-use-blank-select-email-trigger-and-inbox-folder.md)]
 
-[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 

@@ -2,7 +2,7 @@
 title: Create approval flows with custom responses
 description: Learn how to create approval flows with custom responses.
 suite: flow
-author: HeatherOrt
+author: kewaiss
 contributors:
   - natalie-pienkowska
   - kartikraop

@@ -14,7 +14,7 @@
       href: sign-up-sign-in.md
     - name: Explore the Power Automate home page
       href: getting-started.md
-    - name: Get Started with Power Automate tutorial
+    - name: "Tutorial: Get Started with Power Automate"
       href: get-started-tutorial.md
 - name: Cloud flows
   items:
@@ -32,8 +32,6 @@
             href: triggers-introduction.md
           - name: Troubleshoot common issues with triggers
             href: triggers-troubleshoot.md
-        - name: Get help from the Microsoft Copilot Studio bot
-          href: contextual-help-bot.md
     - name: How to
       items:
       - name: Add an action
@@ -79,8 +77,12 @@
           href: create-team-flows.md
         - name: Support for guest users
           href: share-guest-users.md
+        - name: Manage shared flows with users outside an environment
+          href: manage-shared-flows-with-users-outside-environment.md
         - name: Support for service principal owned flows
           href: service-principal-support.md
+        - name: Guide to cloud flow sharing and permissions
+          href: guide-to-cloud-flow-sharing-permissions.md
         - name: Export and import a non-solution flow
           href: export-import-flow-non-solution.md
         - name: Save drafts and use versioning
@@ -399,6 +401,8 @@
       href: ./desktop-flows/getting-started-org.md
   - name: Create desktop flows
     href: ./desktop-flows/create-flow.md
+  - name: Test desktop flows
+    href: ./desktop-flows/test-desktop-flows.md
   - name: Get started with Copilot in Power Automate for desktop (preview)
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
   - name: Create desktop flows using Record with Copilot (preview)
@@ -574,8 +578,12 @@
       href: ./desktop-flows/manage-ui-elements-collections.md
     - name: Use and update UI elements collections
       href: ./desktop-flows/use-update-ui-elements-collections.md
+  - name: Flow checker (preview)
+    href: ./desktop-flows/static-analysis.md
   - name: Troubleshooter
     href: ./desktop-flows/troubleshooter.md
+  - name: Safe stop
+    href: ./desktop-flows/safe-stop.md
   - name: How to
     items:
     - name: Handle and manipulate variables
@@ -821,6 +829,8 @@
       href: ./desktop-flows/actions-reference/cloudconnectors.md
     - name: SAP automation
       href: ./desktop-flows/actions-reference/sap.md
+    - name: Testing
+      href: desktop-flows/actions-reference/testing.md
     - name: Power Automate secret variables actions
       href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
   - name: Troubleshoot desktop flows runtime
@@ -1162,7 +1172,7 @@
     items:
     - name: Overview
       href: automation-center-overview.md
-    - name: Process map (preview)
+    - name: Process map
       href: automation-center-process-map.md      
     - name: Recommendations
       href: automation-center-recommendations.md
@@ -1184,6 +1194,8 @@
       href: ./desktop-flows/capacity-utilization-process.md
     - name: How to use process capacity
       href: ./desktop-flows/capacity-process.md
+  - name: Savings (preview)
+    href: savings.md
 - name: Administration
   items:
   - name: Power Automate sign-up FAQ
