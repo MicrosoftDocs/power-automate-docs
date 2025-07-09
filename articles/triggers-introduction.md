@@ -57,20 +57,19 @@ You work with triggers in the *designer*. [!INCLUDE[designer-tab-experience](./i
     1. Select the flow that you want to edit.
     1. On the command bar at the top of the page, select **Edit**.
 1. In the flow designer, select the trigger that you want to replace.
-1. Edit the flow and delete the existing trigger.
 1. At the top of the configuration pane, select the vertical ellipsis (**&vellip;**) and then select **Delete**.
 
     To confirm the deletion, select **OK** in the dialog box that appears.
 
-1. After you delete the trigger, Power Automate repaces the current trigger with the **Add a trigger** card.
+1. After you delete the trigger, Power Automate replaces the current trigger with the **Add a trigger** card.
 1. Select the **Add a trigger** card. The **Add a trigger** pane opens.
-1. Search for the connector or trigger you want to use. The **Add a trigger** pane is organized in the same way as the **Add an action** pane. You can search for a specific trigger or browse through the categories of triggers. Learn more in [Explore the cloud flows designer](flows-designer.md#action-configuration-pane).
+1. Search for the connector or trigger you want to use. You can search for a specific trigger by typing a name in the search field, or by selecting the right arrow (**>**) next to an option in a trigger category.
 
-    If you can't find the trigger you want in the list, select **See all** next to each category.
+    The **Add a trigger** pane is organized in the same way as the **Add an action** pane. Learn more in [Explore the cloud flows designer](flows-designer.md#action-configuration-pane).
 
 1. Select the trigger that you want to use. The configuration pane opens to allow you to configure the trigger.
-1. Configure the trigger settings as needed.
-1. To close the configuration panel, select **<<** to return to the flow designer.
+1. Configure the trigger settings, if needed.
+1. Close the configuration panel and return to the flow designer by selecting **<<**.
 
     The new trigger is now the first step in your flow.
 
@@ -84,7 +83,7 @@ You work with triggers in the *designer*. [!INCLUDE[designer-tab-experience](./i
     1. On the navigation pane to the left, select **My flows**.
     1. Select the flow that you want to edit.
     1. On the command bar at the top of the page, select **Edit**.
-1. In the trigger card, select the ellipsis (**…**) and then select **Delete**.
+1. On the trigger card, select the ellipsis (**…**) and then select **Delete**.
 
     To confirm the deletion, select **OK** in the dialog box that appears.
 
@@ -105,7 +104,7 @@ You work with triggers in the *designer*. [!INCLUDE[designer-tab-experience](./i
 
 You need a standalone [Power Automate license](https://make.powerautomate.com/pricing/) to access all premium, on-premises, and custom connectors. For flows within an app built in Power Apps, you can use a [Power Apps license](https://powerapps.microsoft.com/pricing/). Microsoft 365 plan licenses let you use standard connectors but not premium connectors. Learn more in the [Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
 
-To find your license, do the following steps.
+To find your license:
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select **My flows**.
