@@ -28,7 +28,7 @@ Consider implementing the following DLP best practices to help protect sensitive
 
 - Block or isolate nonbusiness connectors, especially in default environments.
 
-- Block high-risk operations such as HTTP, HTTP with Microsoft Entra ID, and SharePoint URLs in environments with many makers.
+- Block high-risk operations such as HTTP, HTTP with Microsoft Entra ID, and SharePoint URLs to sites that contain sensitive and confidential data in environments with many makers.
 
 - Using endpoint filtering to make sure that only expected endpoints can be reached.
 
