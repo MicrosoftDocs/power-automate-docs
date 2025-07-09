@@ -2,6 +2,7 @@
 title: Get started with Copilot in cloud flows
 description: Learn how to access and use Copilot in cloud flows.
 ms.date: 04/28/2025
+ms.update-cycle: 180-days
 ms.custom: 
   - bap-template
   - copilot-learning-hub

@@ -14,6 +14,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
 ms.date: 01/28/2025
+ms.update-cycle: 180-days
 ms.collection: 
   - bap-ai-copilot
 ---

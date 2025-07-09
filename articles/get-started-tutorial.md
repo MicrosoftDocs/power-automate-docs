@@ -9,6 +9,7 @@ contributors:
 ms.subservice: cloud-flow
 ms.topic: tutorial
 ms.date: 06/26/2025
+ms.update-cycle: 180-days
 ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.custom: copilot-scenario-highlight

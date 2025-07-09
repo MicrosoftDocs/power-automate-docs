@@ -10,6 +10,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
 ms.date: 07/08/2025
+ms.update-cycle: 180-days
 ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.collection:
