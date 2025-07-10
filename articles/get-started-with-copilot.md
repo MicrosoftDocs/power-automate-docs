@@ -15,7 +15,7 @@ contributors:
   - kisubedi
   - janPidych
   - v-aangie
-ms.author: lali
+ms.author: matow
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot 
 ---
