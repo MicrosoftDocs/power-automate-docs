@@ -1,7 +1,7 @@
 ---
-title: Get started with Copilot in cloud flows
-description: Learn how to access and use Copilot in cloud flows.
-ms.date: 04/28/2025
+title: Create your first cloud flow using Copilot
+description: Learn how to access and use Copilot to create a cloud flow.
+ms.date: 07/10/2025
 ms.update-cycle: 180-days
 ms.custom: 
   - bap-template
@@ -20,11 +20,11 @@ ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot 
 ---
 
-# Get started with Copilot in cloud flows
+# Create your first cloud flow using Copilot
 
 Copilot in cloud flows allows you to create automation that helps streamline your workflow through quick and easy natural language expressions. You can create a flow by describing what you need through multiple steps of conversation.
 
-The cloud flows copilot can perform the following actions:
+The cloud flows Copilot can perform the following actions:
 
 - Understand your intent, and create a flow based on the scenario prompt you provide.
 - Auto-set up connections on your behalf to get you to a working automation as soon as possible.
@@ -72,7 +72,7 @@ Follow these steps to create a flow using the cloud flows designer with Copilot.
 
    If you manually enter a prompt and it's vague, Copilot assists you in building it to completion. You can use this stage of the flow building process to ask questions, or further describe what you would like to achieve with your automation.
 
-     :::image type="content" source="./media/get-started-with-copilot/vague.png" alt-text="Screenshot of the vague prompt experience, where you can continue building your flow with Copilot.":::
+     :::image type="content" source="./media/create-cloud-flow-using-copilot/vague.png" alt-text="Screenshot of the vague prompt experience, where you can continue building your flow with Copilot.":::
 
 1. Copilot begins to depict the structure of the flow, which it generates based on your prompts. Select **Next** to proceed and verify any connections that are part of the flow are configured correctly.
 
@@ -81,7 +81,7 @@ Follow these steps to create a flow using the cloud flows designer with Copilot.
 
     The cloud flows designer with Copilot opens with your flow.
 
-    :::image type="content" source="./media/get-started-with-copilot/designer-with-copilot.png" alt-text="Screenshot of the cloud flows designer with Copilot that shows your flow.":::
+    :::image type="content" source="./media/create-cloud-flow-using-copilot/designer-with-copilot.png" alt-text="Screenshot of the cloud flows designer with Copilot that shows your flow.":::
 
 1. On the panel to the right, follow the Copilot suggestions to complete the flow setup, ask questions, or make edits to your flow using **Edit with Copilot**.
 
@@ -148,7 +148,7 @@ Use this section to find answers to frequently asked questions.
 
 ### How do I enable Copilot?
 
-If you're not in the region listed in the table in the [Availability by region](#availability-by-region) section where Copilot is enabled by default, your admin can enable Copilot for an environment from the Power Platform admin center by consenting to data movement. To learn more, go to [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
+If you're not in the region listed in the table in the [Availability by region](#availability-by-region) section where Copilot is enabled by default, your admin can enable Copilot for an environment from the Power Platform admin center by consenting to data movement. Learn more in [Enable copilots and generative AI features](/power-platform/admin/geographical-availability-copilot).
 
 ### How do I disable Copilot in the cloud flows designer?
 
@@ -196,7 +196,7 @@ As we continue to innovate, we're introducing a new designer alongside our class
 
 If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. To do this, turn off the **New designer** toggle on the menu in the cloud flows designer.
 
-:::image type="content" source="./media/get-started-with-copilot/designer-toggle.svg" alt-text="Screenshot of the 'New designer' toggle.":::
+:::image type="content" source="./media/create-cloud-flow-using-copilot/designer-toggle.png" alt-text="Screenshot of the 'New designer' toggle.":::
 
 ### Why do I get this error "O.split(...).at is not a function" when signing in?
 

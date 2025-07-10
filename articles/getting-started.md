@@ -215,10 +215,15 @@ Here's the list of the main categories:
 
 Get contextual help while building your flow using the Power Platform virtual agent. To learn more, go to [Get contextual help with flows from the Microsoft Copilot Studio bot](contextual-help-bot.md).
 
-## Related information
+## Optional training
 
-- [Get started with Power Automate: tutorial](get-started-tutorial.md)
+
 - [Training: Get started with Power Automate (module)](/training/modules/get-started-flows/)
 - [Training: Automate a business process using Power Automate (learning path)](/training/paths/automate-process-power-automate/)
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
