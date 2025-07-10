@@ -28,7 +28,7 @@ Make sure you aren't trying to make a form do something it can't. For informatio
 
 ## Known issues
 
-### My flow doesn’t work or has stopped working
+### My flow doesn’t work or stopped working
 
 Make sure that your form still exists in the same location.
 
@@ -38,7 +38,7 @@ You might have reached a limit for the connector or for the product. For the Mic
 
 Verify the throttling limits for all connectors in your flow. You can find the throttling limits for each connector in the reference documentation for that connector. For example, the reference documentation for the [SharePoint connector](/connectors/sharepointonline/#general-limits) is available.
 
-Temporarily turn off your browser plug-ins, such as the Privacy Badger, that may block the cookies that Power Automate uses.
+Temporarily turn off your browser plug-ins, such as the Privacy Badger, that might block the cookies that Power Automate uses.
 
 ### When the email sends form responses, the files are corrupt
 
@@ -52,15 +52,15 @@ One common reason this happens is that a user entered more than 255 characters i
 
 Check whether the form is listed in the Microsoft Forms **Shared with me** tab.
 
-You can also check the [transfer ownership of the form](https://support.microsoft.com/office/transfer-ownership-of-a-form-921a6361-a4e5-44ea-bce9-c4ed63aa54b4), especially if members of the team will leave the company.
+You can also check the [transfer ownership of the form](https://support.microsoft.com/office/transfer-ownership-of-a-form-921a6361-a4e5-44ea-bce9-c4ed63aa54b4), especially if members of the team leave the company.
 
 ### The Form Id field lists duplicate form names
 
-The Form Id list picks up forms that you have deleted but which are still in the Recycle Bin. In Microsoft Forms, delete forms you no longer need, and then empty the recycle bin.
+The Form Id list picks up forms that you deleted but that are still in the Recycle Bin. In Microsoft Forms, delete forms you no longer need, and then empty the recycle bin.
 
 ### Unable to find the correct Form Id
 
-Go to your form. copy the Form Id from the URL of the form, and then add it as a custom value.
+Go to your form. Copy the Form Id from the URL of the form, and then add it as a custom value.
 
 ### I don’t get an attachment for some of my approvals
 
