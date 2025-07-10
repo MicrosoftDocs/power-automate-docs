@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/13/2025
+ms.date: 07/10/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -40,13 +40,13 @@ The **Test Flow** pane in the Power Automate designer allows you to test a flow 
 
 Select **Test** from the cloud flow designer to test your flow.
 
- :::image type="content" source="media/test-cloud-flows1.png" alt-text="Screenshot of the cloud flow designer shwoing the Test button." lightbox="media/test-cloud-flows.png":::
+ :::image type="content" source="media/test-cloud-flows-designer.png" alt-text="Screenshot of the cloud flow designer showing the Test button.":::
 
 - **To manually test the flow**, perform the action that triggers the flow.
 
 - **To test the flow automatically**, use a recently used trigger or repeat a previous test run.
 
-:::image type="content" source="media/test-cloud-flows-test-flow-pane.png" alt-text="Screenshot of the Test Flow pane in the Power Automate designer showing manual and automatic testing options." lightbox="media/test-cloud-flows.png":::
+:::image type="content" source="media/test-cloud-flows-test-flow-pane.png" alt-text="Screenshot of the Test Flow pane in the Power Automate designer showing manual and automatic testing options.":::
 
 Learn more in [Test button](../../flows-designer.md#test-button) in the article [What is the cloud flows designer?](../../flows-designer.md).
 

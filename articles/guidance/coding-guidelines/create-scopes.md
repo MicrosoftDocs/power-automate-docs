@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/12/2025
+ms.date: 07/10/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -28,7 +28,7 @@ A *scope* is a container that groups actions together, making it easier to organ
 1. Select **+** to add an action.
 1. Search for **Scope**.
 1. Add the **Scope** control.
-    :::image type="content" source="media/use-scope1.png" alt-text="Screenshot of the add an action pane showing the Scope control." lightbox="media/use-scope1.png":::
+    :::image type="content" source="media/use-scope-add.png" alt-text="Screenshot of the add an action pane showing the Scope control." lightbox="media/use-scope-add.png":::
 1. You can now add actions within the scope, or drag existing actions into the scope.
 
 ## Best practices for using scopes
