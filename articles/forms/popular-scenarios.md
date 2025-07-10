@@ -5,6 +5,7 @@ suite: flow
 author: kisubedi
 ms.topic: article
 ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot

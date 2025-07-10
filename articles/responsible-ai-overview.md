@@ -2,6 +2,7 @@
 title: Responsible AI FAQs for Power Automate
 description: Responsible AI FAQs discusses AI technology in Power Automate and the key considerations for making use of this technology responsibly.
 ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: faq
