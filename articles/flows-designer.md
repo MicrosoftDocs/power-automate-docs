@@ -13,6 +13,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.date: 06/05/2025
+ms.update-cycle: 180-days
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
