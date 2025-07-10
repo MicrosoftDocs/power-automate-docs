@@ -6,6 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 03/21/2025
+ms.update-cycle: 180-days
 ms.author: cochamos
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot

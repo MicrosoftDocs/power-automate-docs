@@ -3,6 +3,7 @@ title: Use copilot to analyze desktop flow activity
 description: Use copilot to analyze flow runs, errors, machines, and more by asking questions in natural language. 
 ms.topic: how-to
 ms.date: 04/24/2025
+ms.update-cycle: 180-days
 ms.author: appapaio
 ms.reviewer: 
 contributors:

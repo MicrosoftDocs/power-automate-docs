@@ -14,6 +14,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
 ms.date: 11/08/2024
+ms.update-cycle: 180-days
 search.audienceType: 
   - flowmaker
   - enduser

@@ -2,6 +2,7 @@
 title: FAQ for Copilot in automation center 
 description: This FAQ discusses Copilot in automation center and the key considerations for making use of this technology responsibly.
 ms.date: 01/21/2025
+ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: faq
