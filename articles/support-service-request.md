@@ -21,19 +21,88 @@ ms.author: angieandrews
 
 In this article, you'll learn what you should consider when creating a support service request to reach Microsoft support. An effective support service request with information that explains clearly the problem symptoms or the behavior provides a better context for faster problem resolution. You'll learn the differences between examples of problems with individual flows and how they differ with the problems related to the Power Automate product and relevant services. You'll also learn about what additional information you can provide to help expedite the problem investigation, narrow down the scope of the problem through clear steps to reproduce the issue that helps support team reach a resolution faster.
 
+## Who Can Help with Different Issue Types
+
+Depending on the nature of the problem, different people or organisations may be best suited to help you:
+
+Flow configuration issues (issues with your flow): For problems isolated to a specific flow that you or your team built (e.g. logic errors or misconfigured actions), the creators or owners of the flow (possibly you or your Power Platform team) and your environment administrators should troubleshoot first. They understand the flow’s design and the context in which it runs.
+
+Power Automate service issues (platform bugs): If the issue appears to be a bug in the Power Automate platform itself or in a Microsoft-provided connector (meaning the problem is not specific to one flow and could affect any flow under certain conditions), then Microsoft Support is the right place to get help.
+
+External system or integration issues: If your flow’s problem stems from an external service or data source that the flow integrates with (e.g. a third-party API or a SharePoint server), then the support team for that external system is most appropriate.
+
+
 ## Differences between issues with a flow and issues with the Power Automate product
+
+Not every flow failure is due to a bug in Power Automate itself. It’s important to distinguish between an issue in your specific flow vs. a potential platform bug. Here are some signs to help tell them apart:
+
+| **Flow Issue (issue with one flow)** | **Power Automate Bug (platform issue)** |
+|--------------------------------------|------------------------------------------|
+| The problem can be reproduced only in one specific flow (just your problematic flow). | You can create a new, simple flow to reproduce the same issue, suggesting it’s not tied to just one complex workflow. |
+| It requires specific data, connectors, or context to trigger the issue (e.g., it only fails with a certain file or in one particular SharePoint site). | Any comparable data or connector usage reproduces the issue. The same error occurs with any similar data or in any SharePoint list, indicating a broader bug. |
+| It affects only one environment or tenant (other environments aren’t experiencing this problem). | It potentially affects multiple environments or organisations. You suspect others could encounter this bug in their flows as well. |
+| The flow is complex with many steps, some not directly related to the failing part. (This complexity might obscure the root cause.) | A minimal flow with just the essential steps can demonstrate the issue. The problem persists even when the flow is stripped down to a simple scenario. |
+| The error involves custom code or unusual configurations (e.g., a custom script in a desktop flow or a very unique API call specific to your business). | The error involves a standard Power Automate feature or action (e.g., the built-in “Filter array” action) behaving unexpectedly. |
+| There is no Microsoft documentation covering the particular scenario that’s failing (because it’s unique to your implementation). | Microsoft documentation exists for the feature, and the behaviour you observe clearly contradicts the expected behaviour described in the docs. |
 
 
 
 ## Examples of issues with a flow
 
 
+#### • Flow fails to send an email when a SharePoint item is created
+
+- **Scenario**: You have a cloud flow that triggers “When an item is created” in a SharePoint list, then sends an email.
+- **Steps to reproduce**: Create a new item in the specified SharePoint list.
+- **Expected behaviour**: An email is sent out with the item details.
+- **Actual behaviour**: No email is sent – the flow either doesn’t run at all, or it runs but skips the email step without error.
+
+> This might be due to a misconfiguration (e.g., incorrect trigger condition or expired Outlook connection). Since it only happens on that specific list and flow, it’s likely a configuration issue. The flow’s owner should check the run history and connections. There’s no evidence of a platform bug, as similar flows still work.
+
+---
+
+#### • A daily scheduled flow did not run on a particular day
+
+- **Scenario**: A scheduled cloud flow is supposed to run every day at 9:00 AM to perform a data update.
+- **Expected behaviour**: The flow should run each day at 9:00 AM.
+- **Actual behaviour**: On Tuesday, it didn’t run at all; there’s no run recorded.
+
+> This could be a one-time issue (e.g., service downtime or flow turned off) or something specific to that environment. If other scheduled flows ran on Tuesday, the issue is likely with this flow. Try re-saving the flow or checking if the schedule was paused. Only if multiple flows failed would you suspect a platform problem.
+
+---
+
+In both cases above, the problem is confined to one flow or one environment. The flow’s owner should begin troubleshooting, as these are likely not platform bugs.
+
+---
+
 
 ## Example of issues with the Power Automate product
 
+#### • The “Filter array” action returns no results when the filter text contains an asterisk (*)
+
+- **Scenario**: In a simple flow, you use the Filter array action to filter items in an array.
+- **Steps to reproduce**: Create a flow with an array like `["a", "*b"]`. Use Filter array to match `"*b"`.
+- **Expected behaviour**: The filter should return `"*b"`.
+- **Actual behaviour**: The filter returns an empty result set.
+
+> This issue is reproducible in any environment and involves a standard action misbehaving. It suggests a bug in how Power Automate handles special characters. In your support request, highlight that this is reproducible with a basic flow.
+
+---
+
+#### • Power Automate for Desktop recorder fails to capture keystrokes in one application
+
+- **Scenario**: Using the desktop recorder, keystrokes aren’t recorded for a specific legacy app, though they work in others.
+- **Steps to reproduce**: Open the legacy app, start recording, type into a text field, and stop recording.
+- **Expected behaviour**: The script should show a “Populate text field” action.
+- **Actual behaviour**: No action is recorded.
+
+> This happens across multiple machines and flows. Other apps work fine. This suggests a product bug or incompatibility with that app. In your support request, note that it’s reproducible on multiple devices.
 
 
 ## How to create an effective support service request for help with Power Automate?
+
+Once you’ve determined that you may need to contact Microsoft (or your support provider) about the issue, it’s time to write the support request. A good support request is detailed and frames the issue in a way that shows it could be a platform bug (if applicable), not just a user error. It should contain enough information that someone else can understand and reproduce the problem without a lot of back-and-forth. Follow these guidelines (where applicable) to craft an effective support ticket:
+
 
 
 ## Have a descriptive title
