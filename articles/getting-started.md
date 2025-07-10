@@ -9,7 +9,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
-ms.date: 04/01/2025
+ms.date: 07/11/2025
 ms.update-cycle: 180-days
 ms.author: kisubedi
 ms.reviewer: angieandrews
@@ -197,7 +197,7 @@ If your organization has AI enabled, then you see **Start building your flow w
 
 :::image type="content" source="media/getting-started/copilot.png" alt-text="Screenshot of Copilot field.":::
 
-To learn more, go to [Get started with Copilot in Power Automate (preview)](get-started-with-copilot.md).
+Learn more in [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md).
 
 ## 5 – Learning tools and more
 
@@ -224,6 +224,6 @@ Get contextual help while building your flow using the Power Platform virtual ag
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)
+> [Create your first cloud flow using Copilot](get-started-with-cloud-flows.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
