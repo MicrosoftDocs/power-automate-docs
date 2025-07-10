@@ -26,7 +26,7 @@ Where you find these features depends on whether you're using the new designer o
 
 In the classic designer, you can find all the features discussed in this article in the action menu, as shown in the following example.
 
-:::image type="content" source="media/pa-features-classic designer.png" alt-text="Screenshot of the action menu in the Power Automate classic designer.":::
+:::image type="content" source="media/pa-features-classic-designer.png" alt-text="Screenshot of the action menu in the Power Automate classic designer.":::
 
 The following sections describe where to find the features in the new designer.
 
