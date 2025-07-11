@@ -1,7 +1,7 @@
 ---
 title: FAQ for Copilot in desktop flow activity 
 description: This FAQ discusses Copilot used in desktop flow activity and the key considerations for making use of this technology responsibly.
-ms.date: 01/21/2025
+ms.date: 07/11/2025
 ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
@@ -41,7 +41,7 @@ Effective and responsible use of Copilot in desktop flow activity can be achieve
 ## Related information
 
 - [Use Copilot to analyze desktop flow activity](./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)
-- [Get started with Copilot in cloud flows](get-started-with-copilot.md)
+- [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
