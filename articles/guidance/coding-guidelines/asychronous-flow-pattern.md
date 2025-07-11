@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/12/2025
+ms.date: 07/10/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors:
@@ -33,13 +33,23 @@ When you configure a flow to respond asynchronously, it sends the following resp
 
 To configure a child flow to respond asynchronously, add a **Response** action to the flow. In the **Response** action, select **Settings**, and then turn on **Asynchronous response**.
 
+Follow these steps:
+
 1. Sign in to [Power Automate](https://make.powerautomate.com).
+
 1. Select **Create**.
+
 1. Select **Instant cloud flow**.
+
 1. Select **When an HTTP request is received** as the trigger.
+
 1. Add the required actions to your cloud flow.
+
 1. Add the **Response** action to your cloud flow.
+
     :::image type="content" source="media/async-1.png" alt-text="Screenshot of a cloud flow showing the Response action.":::
+
 1. Select the **Response** action, select **Settings**, and toggle **Asynchronous response** to on.
-    :::image type="content" source="media/async-2.png" alt-text="Screenshot of a cloud flow in the Power Automate designer showing the Response action settings with Asynchronous response turned on." lightbox="media/async-1.png":::
+
+    :::image type="content" source="media/async-2.png" alt-text="Screenshot of a cloud flow in the Power Automate designer showing the Response action settings with Asynchronous response turned on." lightbox="media/async-2.png":::
 

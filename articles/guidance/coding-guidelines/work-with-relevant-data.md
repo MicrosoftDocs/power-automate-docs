@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/13/2025
+ms.date: 07/11/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -28,11 +28,11 @@ You can limit the data that's processed at both the trigger and action levels.
 
 When you're working with data in Dataverse, use OData expressions at the trigger level to filter the data based on specific criteria, such as "city eq 'New York'" in the following example.
 
-:::image type="content" source="media/odata-filter.png" alt-text="Screenshot of a Dataverse trigger in a Power Automate flow, with Name and City columns selected and an OData filter applied to rows in the City column." lightbox="media/odata-filter.png":::
+:::image type="content" source="media/odata-filter.png" alt-text="Screenshot of a Dataverse trigger in a Power Automate flow, with Name and City columns selected and an OData filter applied to rows in the City column.":::
 
 Data sources like SharePoint allow you to specify views at the trigger level to select only relevant columns and records. In the trigger settings, select the view that contains the columns and filtered data your flow needs. In the following example, the "Issues grouped by priority" view controls what columns and records the flow can work with.
 
-:::image type="content" source="media/sharepoint-filter-view.png" alt-text="Screenshot of a SharePoint trigger in a Power Automate flow, with 'Issues grouped by Priority' selected in the Limit Columns By View option." lightbox="media/sharepoint-filter-view.png":::
+:::image type="content" source="media/sharepoint-filter-view.png" alt-text="Screenshot of a SharePoint trigger in a Power Automate flow, with 'Issues grouped by Priority' selected in the Limit Columns By View option.":::
 
 ## Limit data at the action level
 
@@ -44,7 +44,7 @@ When you're working with data in Dataverse, use the following options alone or i
 
 - **Row count**: Limit the number of records that the action returns, especially when you're dealing with large datasets. For example, set a row count of 100 to ensure that only the first 100 records that meet your criteria are processed.
 
-:::image type="content" source="media/dataverse-limit.png" alt-text="Screenshot of a Dataverse action in a cloud flow that specifies Select Column, Filter Row, and Row Count settings." lightbox="media/dataverse-limit.png":::
+:::image type="content" source="media/dataverse-limit.png" alt-text="Screenshot of a Dataverse action in a cloud flow that specifies Select Column, Filter Row, and Row Count settings.":::
 
 Data sources like SharePoint offer similar options:
 
@@ -54,7 +54,7 @@ Data sources like SharePoint offer similar options:
 
 - **Limit columns by view**: Return only the columns that are defined in a specific view.
 
-:::image type="content" source="media/sharepoint-filter-action.png" alt-text="Screenshot of a SharePoint action in a cloud flow, with the Filter Query, Top Count, and Limit Columns By View options highlighted." lightbox="media/sharepoint-filter-action.png":::
+:::image type="content" source="media/sharepoint-filter-action.png" alt-text="Screenshot of a SharePoint action in a cloud flow, with the Filter Query, Top Count, and Limit Columns By View options highlighted.":::
 
 ## Related content
 

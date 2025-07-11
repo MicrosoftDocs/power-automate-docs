@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/12/2025
+ms.date: 07/10/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -38,7 +38,7 @@ Here are some use cases for parallel execution:
 
 - Initialize multiple variables in parallel to avoid sequential execution delays.
 
-  :::image type="content" source="media/parallel-branch.png" alt-text="Screenshot of the Power Automate designer showing a cloud flow with parallel branches." lightbox="media/parallel-branch.png":::
+  :::image type="content" source="media/parallel-branch.png" alt-text="Screenshot of the Power Automate designer showing a cloud flow with parallel branches.":::
 
 ### Minimize skipped actions
 
@@ -54,7 +54,7 @@ Call child flows from the switch branch instead of adding many individual action
 
 Keep in mind that dividing the work, queuing extra threads, and delays from the endpoint being called add overhead. And a high number (for example, 50) might not necessarily make things go faster.
 
-:::image type="content" source="media/concurrency-control.png" alt-text="Screenshot of the Power Automate designer showing the concurrency control in an Apply to Each action." lightbox="media/concurrency-control.png":::
+:::image type="content" source="media/concurrency-control.png" alt-text="Screenshot of the Power Automate designer showing the concurrency control in an Apply to Each action.":::
 
 Here are some examples of when to use concurrency:
 

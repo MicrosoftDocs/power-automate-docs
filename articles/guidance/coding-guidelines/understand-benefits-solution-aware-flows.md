@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/13/2025
+ms.date: 07/11/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors:
@@ -55,7 +55,7 @@ Connections are used in non-solution cloud flows. Connection references are used
 
 Makers of solution-aware cloud flows can create drafts of flows as they evolve the flow logic. [Flow versioning](/power-automate/drafts-versioning) allows the flow maker to keep track of changes and revert to a previous version if necessary. Versioning is available only for solution cloud flows.
 
-:::image type="content" source="media/flow-versioning.png" alt-text="Screenshot of the Power Automate flow designer, showing the flow's version history." lightbox="media/flow-versioning.png":::
+:::image type="content" source="media/flow-versioning.png" alt-text="Screenshot of the Power Automate flow designer, showing the flow's version history.":::
 
 ## Environment variables
 

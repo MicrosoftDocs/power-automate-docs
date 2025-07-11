@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/13/2025
+ms.date: 07/11/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors:
@@ -58,7 +58,7 @@ The following example shows a process mining report for a cloud flow in Power Au
 
 The **# of Runs and Actions** section of the report includes the number of actions that executed during a run, helping you understand if your flow might run into daily action bursts throttling limits.
 
-:::image type="content" source="media/process-mining-runs.png" alt-text="Screenshot of a process mining report focusing on a pop-up detail in the Runs and Actions section." lightbox="media/process-mining-runs.png":::
+:::image type="content" source="media/process-mining-runs.png" alt-text="Screenshot of a process mining report focusing on a pop-up detail in the Runs and Actions section.":::
 
 The process mining report is available on your flow's details page. In the **Process insights** card, select **Improve your flow**. Learn more in [Improve cloud flows with process insights](/power-automate/process-mining-cloud-flow-process-insights).
 

@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/13/2025
+ms.date: 07/11/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -48,7 +48,7 @@ Another way to protect sensitive data in your flows is the secure inputs and sec
 
 1. Under **Security**, select the **Secure inputs** and **Secure outputs** toggles.
 
-    :::image type="content" source="media/secure-inputs.png" alt-text="Screenshot of the Secure inputs and Secure outputs toggles in an action's settings in the Power Automate new designer." lightbox="media/secure-inputs.png":::
+    :::image type="content" source="media/secure-inputs.png" alt-text="Screenshot of the Secure inputs and Secure outputs toggles in an action's settings in the Power Automate new designer.":::
 
 ### Turn on secure inputs and secure outputs (classic designer)
 
@@ -66,6 +66,6 @@ The **When an HTTP request is received** trigger lets you initiate a workflow by
 
 - **Use a Microsoft Entra ID token:** Configure your flow to require a Microsoft Entra ID token for authentication. Configure the token to restrict access to any user in the tenant or to specific users or principals in the tenant. Learn more in [Add OAuth authentication for HTTP request triggers](/power-automate/oauth-authentication).
 
-    :::image type="content" source="media/when-http.png" alt-text="Screenshot of trigger settings in a Power Automate flow showing the selection of who can trigger the flow." lightbox="media/when-http.png":::
+    :::image type="content" source="media/when-http.png" alt-text="Screenshot of trigger settings in a Power Automate flow showing the selection of who can trigger the flow.":::
 
 - **Use IP pinning:** Environment admins can configure a set or range of IP addresses that are permitted to interact with Power Platform resources. Setting up an IP firewall ensures that only requests from allowed IP addresses can trigger the workflow. Learn more in [IP firewall in Power Platform environments](/power-platform/admin/ip-firewall).

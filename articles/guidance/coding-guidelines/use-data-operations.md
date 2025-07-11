@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/13/2025
+ms.date: 07/11/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 search.audienceType:
@@ -28,7 +28,7 @@ The following data operations are available in Power Automate:
 - **Create HTML table**: Convert an array into an HTML table format for easy presentation.
 - **Create CSV table**: Convert an array into a CSV table format for easy export or sharing.
 
-:::image type="content" source="media/data-operations.png" alt-text="Screenshot of data operations available when building a flow in Power Automate." lightbox="media/data-operations.png":::
+:::image type="content" source="media/data-operations.png" alt-text="Screenshot of data operations available when building a flow in Power Automate.":::
 
 ## Advantages of using data operations
 
@@ -101,7 +101,7 @@ When you're working with a set of variables that are updated within the same log
 
 Using separate variables for each value requires multiple actions: two **Initialize variable** actions and two **Set variable** actions, adding steps in the flow.
 
-:::image type="content" source="media/var-individual.png" alt-text="Screenshot showing actions to initialize and set two separate variables in a Power Automate flow." lightbox="media/var-individual.png":::
+:::image type="content" source="media/var-individual.png" alt-text="Screenshot showing actions to initialize and set two separate variables in a Power Automate flow.":::
 
 Using a single object variable in JSON format requires one **Initialize variable** action and one **Set variable** action, reducing the number of steps in the flow.
 

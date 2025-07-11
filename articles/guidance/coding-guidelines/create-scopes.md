@@ -20,7 +20,7 @@ search.audienceType:
 
 A *scope* is a container that groups actions together, making it easier to organize and visualize the parts of your workflow. When a workflow becomes larger and more intricate, scopes help keep things organized and simplify troubleshooting. This article explains how to use scopes effectively in Power Automate.
 
-:::image type="content" source="media/use-scope.png" alt-text="Screenshot of actions within a scope." lightbox="media/use-scope.png":::
+:::image type="content" source="media/use-scope.png" alt-text="Screenshot of actions within a scope.":::
 
 ## Create a scope
 
@@ -46,4 +46,4 @@ A *scope* is a container that groups actions together, making it easier to organ
 > [!TIP]
 > To make your flows more readable, add comments or notes in the scope.
 >
-> :::image type="content" source="media/use-scope-note.png" alt-text="Screenshot of a note within a scope." lightbox="media/use-scope-note.png":::
+> :::image type="content" source="media/use-scope-note.png" alt-text="Screenshot of a note within a scope.":::

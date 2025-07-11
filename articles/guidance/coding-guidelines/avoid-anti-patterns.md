@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/12/2025
+ms.date: 07/10/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -101,7 +101,7 @@ To use bulk operations, you have two options:
 
 In the following example, we use the **CreateMultiple** Web API to process 100 records in JSON format with just one action, instead of using 100 **Create Row** actions in Dataverse. First, we prepare the records in JSON format using the **Select** action.
 
-:::image type="content" source="media/prepare-json.png" alt-text="Screenshot of a flow in the Power Automate designer showing the use of a Select action to prepare the content for the bulk request." lightbox="media/prepare-json.png" :::
+:::image type="content" source="media/prepare-json.png" alt-text="Screenshot of a flow in the Power Automate designer showing the use of a Select action to prepare the content for the bulk request.":::
 
 Then we use HTTP with Microsoft Entra ID to post the request using the **CreateMultiple** Web API.
 

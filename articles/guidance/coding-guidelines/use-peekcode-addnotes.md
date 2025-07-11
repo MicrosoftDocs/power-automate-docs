@@ -10,7 +10,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/13/2025
+ms.date: 07/11/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 search.audienceType: 
@@ -38,7 +38,7 @@ Peek code (classic designer) or code view (new designer) allows you to view the 
 
 In the new designer, select an action, and then select **Code view**.
 
-:::image type="content" source="media/trigger-codeview.png" alt-text="Screenshot of the code view of a Dataverse trigger in a Power Automate flow, with the trigger type and conditions highlighted." lightbox="media/codeview.png":::
+:::image type="content" source="media/trigger-codeview.png" alt-text="Screenshot of the code view of a Dataverse trigger in a Power Automate flow, with the trigger type and conditions highlighted.":::
 
 ### Peek code (classic designer)
 
@@ -70,7 +70,7 @@ Notes in Power Automate cloud flows are like comments in code&mdash;they're a he
 
     The note appears under the action name.
 
-    :::image type="content" source="media/add-note-done.png" alt-text="Screenshot of an action with a note in the Power Automate classic designer." lightbox="media/add-note-done.png":::
+    :::image type="content" source="media/add-note-done.png" alt-text="Screenshot of an action with a note in the Power Automate classic designer.":::
 
 ## Copy and paste actions
 

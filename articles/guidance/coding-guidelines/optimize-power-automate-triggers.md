@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 07/10/2025
+ms.date: 07/11/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors:
@@ -68,7 +68,7 @@ Similarly, if your flow reads a record and then updates it but the update fails,
 
 Trigger concurrency control can help you avoid both situations. Concurrency control is turned off by default. Select your flow's trigger and turn on the **Concurrency control** option in the trigger settings. You can then specify the maximum number of concurrent runs, or the *degree of parallelism*, for the trigger.
 
-:::image type="content" source="media/trigger-concurrency-control.png" alt-text="Screenshot of trigger settings in the Power Automate designer showing concurrency control turned on and the degree of parallelism set to 20." lightbox="media/trigger-concurrency-control.png":::
+:::image type="content" source="media/trigger-concurrency-control.png" alt-text="Screenshot of trigger settings in the Power Automate designer showing concurrency control turned on and the degree of parallelism set to 20.":::
 
 By default, the degree of parallelism is set to 1, meaning that only one instance of the flow can run at a time. This setting is useful when you're working with a single record or when you need to ensure that actions are performed in a specific order.
 

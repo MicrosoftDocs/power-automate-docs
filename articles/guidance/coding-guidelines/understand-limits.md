@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/13/2025
+ms.date: 07/11/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 search.audienceType: 
@@ -22,7 +22,7 @@ To design scalable flows, it helps to understand the limits that Power Automate 
 
 Some platform and API limits depend on your license plan. In Power Automate, the easiest way to identify your licenses and capabilities is to select **Settings** > **View My Licenses**.
 
-:::image type="content" source="media/view-my-license.png" alt-text="Screenshot of the View My Licenses option in Power Automate settings." lightbox="media/view-my-license.png":::
+:::image type="content" source="media/view-my-license.png" alt-text="Screenshot of the View My Licenses option in Power Automate settings.":::
 
 To dig deeper into the details of your license plan, press **Ctrl+Alt+A** in the Power Automate portal.
 

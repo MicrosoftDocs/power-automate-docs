@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/12/2025
+ms.date: 07/11/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -32,7 +32,7 @@ Access Flow Checker in the editor in Power Automate.
 
 **Detailed explanations**: Each error and warning includes a detailed explanation and guidance on how to resolve it. The extra detail makes it easier to understand and fix the problem.
 
-:::image type="content" source="media/flow-checker-result.png" alt-text="Screenshot of a Flow Checker result displaying two errors in a Power Automate flow." lightbox="media/flow-checker-result.png":::
+:::image type="content" source="media/flow-checker-result.png" alt-text="Screenshot of a Flow Checker result displaying two errors in a Power Automate flow.":::
 
 ## Related content
 

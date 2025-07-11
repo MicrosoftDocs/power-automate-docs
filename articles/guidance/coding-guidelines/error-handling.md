@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 05/12/2025
+ms.date: 07/10/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -141,7 +141,7 @@ An exponential retry policy starts with a short retry interval and gradually inc
 
 Configure the retry policy in the settings of the action you want to apply it to. Set the initial interval, or the time before the first retry, and the maximum retry count, or the maximum number of times the action will be retried. Monitor the performance of your flow and adjust the retry settings as needed.
 
-:::image type="content" source="media/retry-policy.png" alt-text="Screenshot of the Power Automate designer showing Retry policy settings." lightbox="media/retry-policy.png":::
+:::image type="content" source="media/retry-policy.png" alt-text="Screenshot of the Power Automate designer showing Retry policy settings.":::
 
 Learn more in [Recommendations for handling transient faults](/power-platform/well-architected/reliability/handle-transient-faults).
 
