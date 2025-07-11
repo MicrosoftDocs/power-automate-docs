@@ -33,7 +33,7 @@ The checker also opens automatically when you save the flow if there are errors 
 
 The Flow Checker shows you errors or warnings in your flow. It also provides help to fix the errors and warnings in red on both the action panel and the flow card.
 
-1. To run the checker, select **Flow Checker**.
+1. To run the checker, select the **Flow Checker** icon (the stethoscope icon on the command bar).
 
     :::image type="content" source="./media/checker/checker-in-new-designer.png" alt-text="Screenshot of Flow Checker in new designer.":::
 
