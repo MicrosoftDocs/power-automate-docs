@@ -183,6 +183,10 @@ Get-AdminFlowUserDetails -UserId {userID}
 1. Select the **Machines** tab.
 1. You can then manually copy machine details for machines owned by the user.
 
+## Export Process Mining processes
+
+Refer to [Export process data](./minit/export.md) to learn how to export Process Mining processes. You can then analyze the results to look for personal data for the user.
+
 ## Export gateway settings
 
 [Learn more about responding to data export requests for on-premises data gateways.](/power-bi/service-gateway-onprem#tenant-level-administration)
