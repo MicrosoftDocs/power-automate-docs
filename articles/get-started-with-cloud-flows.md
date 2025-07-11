@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 07/10/2025
+ms.date: 07/11/2025
 ms.update-cycle: 180-days
 ms.author: kewaiss
 ms.reviewer: angieandrews
@@ -188,6 +188,11 @@ When your cloud flow runs successfully, it's listed in the **My flows** screen. 
 1. Check your email inbox for the email your cloud flow sent you.
 
 Congratulations! You successfully created a cloud flow, tested it, and ran it!
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)
 
 ## Related information
 

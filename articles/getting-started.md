@@ -217,13 +217,12 @@ Get contextual help while building your flow using the Power Platform virtual ag
 
 ## Optional training
 
-
 - [Training: Get started with Power Automate (module)](/training/modules/get-started-flows/)
 - [Training: Automate a business process using Power Automate (learning path)](/training/paths/automate-process-power-automate/)
 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Create your first cloud flow using Copilot](get-started-with-cloud-flows.md)
+> [Get started with cloud flows](get-started-with-cloud-flows.md)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
