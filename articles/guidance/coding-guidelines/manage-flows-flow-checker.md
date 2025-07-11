@@ -34,6 +34,6 @@ Access Flow Checker in the editor in Power Automate.
 
 :::image type="content" source="media/flow-checker-result.png" alt-text="Screenshot of a Flow Checker result displaying two errors in a Power Automate flow.":::
 
-## Related content
+## Related information
 
 - [Find and fix errors with Flow Checker](/power-automate/error-checker)

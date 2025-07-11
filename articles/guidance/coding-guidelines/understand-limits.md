@@ -74,6 +74,6 @@ To stay under this limit, distribute the load between multiple flows using child
 
 You might encounter limits on the complexity of a flow that are defined at the design and definition level. Consider redesigning your flow if you encounter them. Learn more in [Flow definition limits](/power-automate/limits-and-config#flow-definition-limits).
 
-## Related content
+## Related information
 
-[List of all Power Automate connectors](/connectors/connector-reference/connector-reference-powerautomate-connectors)
+- [List of all Power Automate connectors](/connectors/connector-reference/connector-reference-powerautomate-connectors)

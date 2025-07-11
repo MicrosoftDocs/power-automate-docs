@@ -107,7 +107,7 @@ Then we use HTTP with Microsoft Entra ID to post the request using the **CreateM
 
 :::image type="content" source="media/createmultiple.png" alt-text="Screenshot of the Power Automate designer showing invoking an HTTP request to perform a bulk operation.":::
 
-## Related content
+## Related information
 
 - [Make batch requests with the REST APIs](/sharepoint/dev/sp-add-ins/make-batch-requests-with-the-rest-apis)
 - [Execute batch operations using the Web API](/power-apps/developer/data-platform/webapi/execute-batch-operations-using-web-api)

@@ -56,7 +56,7 @@ Data sources like SharePoint offer similar options:
 
 :::image type="content" source="media/sharepoint-filter-action.png" alt-text="Screenshot of a SharePoint action in a cloud flow, with the Filter Query, Top Count, and Limit Columns By View options highlighted.":::
 
-## Related content
+## Related information
 
 - [Work with data operations](./use-data-operations.md)
 - [Optimize Power Automate triggers](./optimize-power-automate-triggers.md)

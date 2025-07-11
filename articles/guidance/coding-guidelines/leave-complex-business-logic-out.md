@@ -32,6 +32,6 @@ Instead of embedding complex business logic in Power Automate flows, consider th
 
 - **Dataflows**: When you're working with large-scale data transformations, consider whether the task should be handled as an extract, transform, load (ETL) process. For example, instead of using a cloud flow to read data from a large Excel workbook, format and validate the data, and then write it into Dataverse, use an ETL dataflow. Learn more in [Create and use dataflows in Microsoft Power Platform](/power-query/dataflows/create-use).
 
-## Related content
+## Related information
 
 - [Avoid large numbers of data transformation operations](avoid-anti-patterns.md#avoid-large-numbers-of-data-transformation-operations)
