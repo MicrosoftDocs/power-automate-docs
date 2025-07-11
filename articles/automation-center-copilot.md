@@ -276,7 +276,7 @@ The following list contains known limitations of Copilot in automation center.
 
 ## Related information
 
-- [Get started with Copilot in cloud flows](get-started-with-copilot.md)
+- [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)
 - [FAQs for Copilot in automation center](faqs-copilot-automation-center.md)
 - [FAQ for Copilot in desktop flow activity](faqs-copilot-automation-activity.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
