@@ -158,9 +158,11 @@ To make sure your flow works as expected, you should test it.
 
     :::image type="content" source="media/get-started-with-cloud-flows/successful-run.png" alt-text="Screenshot of the message that you flow ran successfully.":::
 
-    When your flow is finished running, the message, **Your flow ran successfully** appears in a green message at the top. 
+    When your flow is finished running, the message, **Your flow ran successfully** appears in a green message at the top.
 
- 1. To display your flow, leave the designer by selecting **Back** (arrow pointing left) in the top-left corner below the **Power Automate** title bar (not the **Back** button in the address bar).
+    If your flow encounters an error, a red message appears instead. You can select the **Flow Checker** icon (the stethoscope icon on the command bar) for details about the error. Learn how to correct the errors in [Find and fix errors with Flow Checker](error-checker.md).
+
+1. To display your flow, leave the designer by selecting **Back** (arrow pointing left) in the top-left corner below the **Power Automate** title bar (not the **Back** button in the address bar).
 
     The screen that appears shows the details of the flow you created, including the owner, create date, type of flow, connections, and other information about the flow.
 
@@ -194,8 +196,3 @@ Congratulations! You successfully created a cloud flow, tested it, and ran it!
 > [!div class="nextstepaction"]
 > [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)
 
-## Related information
-
-- [Explore the Power Automate home page](getting-started.md)
-- [Human review for automation with a prompt](/ai-builder/azure-openai-human-review)  
-- [Find and fix errors with Flow Checker](error-checker.md)
