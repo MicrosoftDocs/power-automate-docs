@@ -4,6 +4,7 @@ description: Get an overview of cloud flows.
 suite: flow
 author: kisubedi
 contributors:
+  - kewaiss
   - HeatherOrt
   - jamiemwork
   - v-aangie
@@ -11,8 +12,8 @@ ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 07/11/2025
-ms.author: heortaol
+ms.date: 07/14/2025
+ms.author: kewaiss
 search.audienceType: 
   - flowmaker
   - enduser
@@ -20,9 +21,34 @@ search.audienceType:
 
 # Overview of cloud flows
 
-You can choose from three cloud flow options depending on what you want to automate. An *automated cloud flow* creates an automation that is triggered by an event such as the  arrival of an email from a specific person, or a mention of your company in social media. An *instant cloud flow* starts an automation with the selection of a button. A *scheduled cloud flow* starts a scheduled automation such as daily data upload to SharePoint or a database.
+Cloud flows are automated workflows that connect your apps and services to help you automate tasks and processes. They can be triggered by events, such as the arrival of an email, or a specific time of day, and can perform actions across multiple services.
+
+## Ways to create cloud flows
+
+Power Automate provides two ways to create cloud flows: using Copilot or from scratch.
+
+You can use Copilot to create cloud flows by describing what you want to automate in natural language (also referred to as a prompt). Copilot then suggests actions and helps you build the flow based on your prompt. Copilot is turned on by default, but your admin can disable it if needed.
+
+Learn more in [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md).
+
+You can also create cloud flows from scratch using the **Create** button in Power Automate. This method allows you to start from a blank flow or use a template and modify it in the *designer*. Power Automate provides two designers: the new designer and the classic designer. The new designer is the default experience, but you can switch to the classic designer. Create your flow from scratch if you prefer a more hands-on approach to building your flows, or don't have access to Copilot.
+
+Learn more in [Explore the cloud flows designer](flows-designer.md).
+
+Copilot is available only in the new designer. Use this table to help decide how you want to create your cloud flow.
+
+| Method  | Available in new designer? | Available in classic designer?
+|---------|:---------:|:---------:|
+| Copilot     |    Yes     |   No      |
+| From scratch     |   Yes      |   Yes      |
 
 ## Types of cloud flows
+
+If you're creating a cloud flow from scratch, you can choose from three cloud flow options depending on what you want to automate.
+
+If you're using Copilot, your prompt determines the cloud flow option you should use.
+
+An *automated cloud flow* creates an automation that is triggered by an event such as the  arrival of an email from a specific person, or a mention of your company in social media. An *instant cloud flow* starts an automation with the selection of a button. A *scheduled cloud flow* starts a scheduled automation such as daily data upload to SharePoint or a database.
 
 The following table describes the three types of cloud flows, when to use them, examples, and benefits.
 

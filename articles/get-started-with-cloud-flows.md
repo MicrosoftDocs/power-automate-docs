@@ -1,5 +1,5 @@
 ---
-title: Get started with cloud flows
+title: "Tutorial: Get started with cloud flows"
 description: In this tutorial, learn how to create a cloud flow, test it, and run it.
 author: kewaiss
 contributors:
@@ -21,7 +21,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Get started with cloud flows
+# Tutorial: Get started with cloud flows
 
 In this article, you create a cloud flow, test it, and then run it. The completed cloud flow sends a monthly newsletter to an email address. To give you the full experience, you send the email to your own address so you can receive the results of the cloud flow in your inbox.
 
@@ -158,9 +158,7 @@ To make sure your flow works as expected, you should test it.
 
     :::image type="content" source="media/get-started-with-cloud-flows/successful-run.png" alt-text="Screenshot of the message that you flow ran successfully.":::
 
-    When your flow is finished running, the message, **Your flow ran successfully** appears in a green message at the top.
-
-    If your flow encounters an error, a red message appears instead. You can select the **Flow Checker** icon (the stethoscope icon on the command bar) for details about the error. Learn how to correct the errors in [Find and fix errors with Flow Checker](error-checker.md).
+    When your flow is finished running, the message, **Your flow ran successfully** appears in a green message at the top.<!--Ask Kishor - Is this the place for flow checker, or should we stick with history, as in step 6? Maybe show it in the designer how you check your inputs &  outputs to see where it failed-per Kelli, would be very helpful. We don't have anything like that. Here's my new line: If your flow encounters an error, a red message appears instead. You can select the **Flow Checker** icon (the stethoscope icon on the command bar) for details about the error. Learn how to correct the errors in [Find and fix errors with Flow Checker](error-checker.md).-->
 
 1. To display your flow, leave the designer by selecting **Back** (arrow pointing left) in the top-left corner below the **Power Automate** title bar (not the **Back** button in the address bar).
 
@@ -169,6 +167,9 @@ To make sure your flow works as expected, you should test it.
     Under the **28-day run history** panel, you can check if your flow ran successfully, failed, or is still running.
 
     :::image type="content" source="media/get-started-with-cloud-flows/details.png" alt-text="Screenshot of the details screen for your new cloud flow.":::
+
+    > [!NOTE]
+    > If the status shows that your flow run failed, you can find help in [Troubleshoot a cloud flow](fix-flow-failures.md).
 
 1. Go to [Run your cloud flow](#run-your-cloud-flow).
 
@@ -194,5 +195,5 @@ Congratulations! You successfully created a cloud flow, tested it, and ran it!
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)
+> [Explore the cloud flows designer](flows-designer.md)
 
