@@ -23,6 +23,8 @@
       items:
         - name: Create your first cloud flow using Copilot
           href: create-cloud-flow-using-copilot.md
+        - name: Create your first cloud flow without Copilot
+          href: create-cloud-flow-without-copilot.md
         - name: "Tutorial: Get Started with cloud flows"
           href: get-started-with-cloud-flows.md
         - name: Explore the cloud flows designer
@@ -78,6 +80,8 @@
           href: overview-manage-cloud-flows.md
         - name: Share a flow
           href: create-team-flows.md
+        - name: Find a saved cloud flow
+          href: find-saved-cloud-flow.md
         - name: Support for guest users
           href: share-guest-users.md
         - name: Manage shared flows with users outside an environment
@@ -98,11 +102,10 @@
           href: change-cloud-flow-owner.md
         - name: Restore deleted flows
           href: how-tos-restore-deleted-flow.md
-        - name: Export and import solution-aware flows for ALM
+        - name: Solution-aware cloud flows
           items:
           - name: Overview
             href: overview-solution-flows.md
-            displayName: Use solutions for ALM of flows
           - name: Create a cloud flow in a solution
             href: create-flow-solution.md
           - name: Create child flows
@@ -122,7 +125,7 @@
         displayName: Monitor flow activity on mobile devices
       - name: Troubleshoot a cloud flow
         href: fix-flow-failures.md
-      - name: Find and fix errors with Flow Checker
+      - name: Find and fix errors with flow checker
         href: error-checker.md
     - name: Automated cloud flows
       items:
@@ -1260,7 +1263,7 @@
     href: flow-eudb.md
 - name: Regions overview
   href: regions-overview.md
-- name: Common questions about Power Automate
+- name: FAQ about Power Automate
   href: frequently-asked-questions.yml
 - name: Classic Dataverse
   items:

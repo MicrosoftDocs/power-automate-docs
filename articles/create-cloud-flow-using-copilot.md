@@ -1,7 +1,7 @@
 ---
 title: Create your first cloud flow using Copilot
 description: Learn how to access and use Copilot to create a cloud flow.
-ms.date: 07/10/2025
+ms.date: 07/14/2025
 ms.update-cycle: 180-days
 ms.custom: 
   - bap-template
@@ -38,26 +38,9 @@ The cloud flows Copilot can perform the following actions:
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
 > - More information: [Responsible AI FAQs for Power Automate](responsible-ai-overview.md), [Responsible AI FAQ for Copilot in cloud flows](faqs-copilot.md), [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
-## Availability by region
+## Create a cloud flow using Copilot
 
-You need a Power Platform environment in the following regions to use Copilot in Power Automate cloud flows.
-
-| Region | Copilot availability |
-| ------------- | ------------- |
-| Preview region | Copilot is enabled by default at the beginning of October 2023, unless [an admin turns it off](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
-| Regions with copilot GPUs (United States, Australia, United Kingdom, India)  | Copilot is enabled by default, unless [an admin turns it off](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
-| Europe and all other regions, including France and Canada | Copilot is enabled in the Europe region (using Sweden and Switzerland GPUs) by default, unless admins manually opt out of cross-geo data sharing settings from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). More information: [Turn on copilots and generative AI features](/power-platform/admin/geographical-availability-copilot#turn-on-copilots-and-generative-ai-features-1)
-| Personal Microsoft service account (MSA) users | There's no access for MSA users to Copilot features. You need to use an organization ID and in a non-Sovereign cloud region. |
-|Sovereign clouds for US government (GCC)  | Copilot is enabled by default unless [an admin turns it off](#how-do-i-disable-copilot-in-the-cloud-flows-designer).  |
-
-> [!NOTE]
-> If your environment is in the region previously listed and you still don’t see the Copilot in cloud flows experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center. In some geographic regions outside the United States, Australia, United Kingdom, an admin needs to turn the cross geo calls on to enable Copilot.
->
-> More information: [Availability by region](#availability-by-region)
-
-## Create a flow using the cloud flows designer with Copilot
-
-Follow these steps to create a flow using the cloud flows designer with Copilot.
+Follow these steps to create a flow with Copilot.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the navigation menu to the left, select **Home** and begin to describe your scenario.
@@ -87,13 +70,7 @@ Follow these steps to create a flow using the cloud flows designer with Copilot.
 
 1. When your flow is complete, select **Save this flow**.
 
-1. Once your flow is saved, we recommend that you test it. Do this by selecting **Test** in the upper-right corner.
-
-## Troubleshoot in Copilot
-
-The new troubleshoot in Copilot feature can assist you in identifying and resolving errors that might occur during testing of cloud flows or when reviewing flow run history. You can use this Copilot feature when the new designer experience is enabled.
-
-To learn more, go to [Troubleshoot in Copilot](fix-flow-failures.md#troubleshoot-in-copilot).
+1. Once your flow is saved, we recommend that you test it. Learn how to test your flow in [Test your cloud flow](get-started-with-cloud-flows.md#test-your-cloud-flow).
 
 ## How to write a good prompt
 
@@ -118,9 +95,9 @@ This section describes some example scenarios of how you can interact with Copil
 > [!TIP]
 > For more examples you can try out, go to the prompt library in the [Sample Solutions Gallery](https://aka.ms/prompts/powerautomate-copilot).
 
-## Edit a flow using the designer with copilot capabilities
+## Edit a flow using copilot capabilities
 
-In addition to using Copilot to create a starting flow, you can also change or complete your existing flows.
+In addition to using Copilot to create a flow, you can also use it to configure existing flows. Copilot is available only in the new designer. Learn more in [Overview of cloud flows](overview-cloud.md).
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the left navigation pane, select **My flows**.
@@ -136,6 +113,12 @@ In addition to using Copilot to create a starting flow, you can also change or c
    1. Instead of email, I want to post message on Teams channel.
    1. Check if each of the SharePoint items being returned has a title that equals 'USB', and if so, send an email.
 
+## Troubleshoot in Copilot
+
+The troubleshoot in Copilot feature can assist you in identifying and resolving errors that might occur during testing of cloud flows or when reviewing flow run history. You can use this Copilot feature when the new designer experience is enabled.
+
+Learn more about troubleshooting and watch a video in [Troubleshoot in Copilot](fix-flow-failures.md#troubleshoot-in-copilot).
+
 ## Next step
 
 > [!div class="nextstepaction"]
@@ -143,6 +126,7 @@ In addition to using Copilot to create a starting flow, you can also change or c
 
 ## Related information
 
+- [Region availability for Power Automate cloud flows with Copilot](regions-overview.md#region-availability-for-power-automate-cloud-flows-with-copilot)
 - [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)

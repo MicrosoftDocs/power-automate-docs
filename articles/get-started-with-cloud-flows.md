@@ -27,7 +27,7 @@ In this article, you create a cloud flow, test it, and then run it. The complete
 
 ## Create a cloud flow
 
-You can create a cloud flow using natural language in Copilot, or create it from scratch. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you want to create a cloud flow from scratch, select the **Without copilot** tab.
+You can [create a cloud flow](overview-cloud.md#options-to-create-cloud-flows) using natural language in Copilot, or create it from scratch. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you want to create a cloud flow from scratch, select the **Without copilot** tab.
 
 # [Using copilot](#tab/using-copilot)
 

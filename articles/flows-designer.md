@@ -12,7 +12,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 07/11/2025
+ms.date: 07/14/2025
 ms.update-cycle: 180-days
 ms.author: kisubedi
 search.audienceType: 
@@ -24,17 +24,11 @@ ms.collection: bap-ai-copilot
 
 # Explore the cloud flows designer
 
-You can create, configure, and customize your cloud flows with the classic designer or the cloud flows designer. For a description of the types of cloud flows, go to [Overview of cloud flows](overview-cloud.md).
+You can create and configure your cloud flows with the new designer or the classic designer. Learn how to determine the designer you're using in [Identify differences between the new designer and the classic designer](#identify-differences-between-the-new-designer-and-the-classic-designer).
 
-> [!NOTE]
-> Here are some visual cues that tell you that you're using the new cloud flows designer (not the classic designer):
->
-> - The cards in the flow are small.
-> - The standalone action configuration pane appears on the left when you select a card.
->
-> More information: [Identify differences between the new designer and the classic designer](#identify-differences-between-the-new-designer-and-the-classic-designer)
+This article provides an overview of the designer's features and capabilities. Learn more in [Overview of cloud flows](overview-cloud.md).
 
-Following is a screenshot of the AI-powered cloud flows designer's features. To give you more context, refer to the legend.
+Following is a screenshot of the designer's features. To give you more context, refer to the legend.
 
 :::image type="content" source="media/flows-designer/designer-overview-numbers-borders.png" alt-text="Screenshot of the cloud flows designer with Copilot.":::
 
@@ -42,20 +36,20 @@ Legend:
 
 1. **Left arrow button**: Return to the previous page.
 1. [**Undo and Redo buttons**](#undo-and-redo): Reverse or reinstate modifications you made to the flow.
-1. [**Send feedback button**](#send-feedback): Send us feedback about your flow creation experience or general comments about the AI-powered designer.
-1. **Version history button**: Track and manage changes made to your flows over time. It records every modification, enabling you to view previous versions, compare changes, and, if necessary, revert to an earlier version. Learn more in [Drafts and versioning for cloud flows](drafts-versioning.md).
+1. [**Send feedback button**](#send-feedback): *(New designer only)* Send us feedback about your flow creation experience or general comments about the AI-powered designer.
+1. **Version history button**: *(New designer only)* Track and manage changes made to your flows over time. It records every modification, enabling you to view previous versions, compare changes, and, if necessary, revert to an earlier version. Learn more in [Drafts and versioning for cloud flows](drafts-versioning.md).
 1. **Flow checker button**: Check your flow for errors.
-1. [**Save draft button**](#save-draft-button): Save a draft of your flow.
+1. [**Save button**](#save-button): Save your flow.
 1. [**Test button**](#test-button): Test your flow to make sure that it works as you intended.
-1. **Publish button**: Publish your flow so that your flow runs when the trigger event is performed.
-1. [**Copilot button**](create-cloud-flow-using-copilot.md): Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
-1. **New designer toggle**: Switch between the classic designer and the new cloud flows designer. Learn more in [Identify differences between the new designer and the classic designer](#identify-differences-between-the-new-designer-and-the-classic-designer).
-1. **Action/trigger name**: The action or trigger card that is selected in your flow in the center of the page (the [*canvas*](#canvas)).
-1. [**More commands button**](#more-commands): Add a note to the selected card, *pin* an action, or delete the card. There are two ways to pin an action. Learn more in [View two action panes simultaneously](#view-two-action-panes-simultaneously).
-1. **Collapse button**: Hide the pane. When the pane is collapsed, the **Expand** button (**\>\>**) appears in the upper-left corner. Select it to show the pane again.
-1. [**Action configuration pane**](#action-configuration-pane): After you select an action card to configure on the canvas, the action configuration pane opens on the left side of the AI-powered designer.
+1. **Publish button**: *(New designer only)* Publish your flow so that your flow runs when the trigger event is performed.
+1. [**Copilot button**](create-cloud-flow-using-copilot.md): *(New designer only)* Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
+1. **New designer toggle**: Switch between the new designer and the classic designer. Learn more in [Identify differences between the new designer and the classic designer](#identify-differences-between-the-new-designer-and-the-classic-designer).
+1. **Action/trigger name**: *(New designer only)* The action or trigger card that is selected in your flow in the center of the page (the [*canvas*](#canvas)).
+1. [**More commands button**](#more-commands): *(New designer only)* Add a note to the selected card, *pin* an action, or delete the card. There are two ways to pin an action. Learn more in [View two action panes simultaneously](#view-two-action-panes-simultaneously).
+1. **Collapse button**: *(New designer only)* Hide the pane. When the pane is collapsed, the **Expand** button (**>>**) appears in the upper-left corner. Select it to show the pane again.
+1. [**Action configuration pane**](#action-configuration-pane): *(New designer only)* After you select an action card to configure on the canvas, the action configuration pane opens on the left side of the AI-powered designer.
 1. [**Canvas**](#canvas): The canvas is where you build your flow. It's free-flowing and therefore allows for easier navigation.
-1. [**Copilot pane**](create-cloud-flow-using-copilot.md): Copilot stays with you during your flow editing and fit-and-finish journey. It can help you update and make changes to your flow, based on your conversational-style prompt. It can also help answer flow-related and product-related questions.
+1. [**Copilot pane**](create-cloud-flow-using-copilot.md): *(New designer only)* Copilot stays with you during your flow editing and fit-and-finish journey. It can help you update and make changes to your flow, based on your conversational-style prompt. It can also help answer flow-related and product-related questions.
 
 ## Undo and Redo
 
@@ -65,11 +59,11 @@ To reverse or reinstate modifications you made to the flow, you can use the **Un
 
 ## Send feedback
 
-We want to hear from you to help us measure and improve our impact. To provide your feedback, select **Send Feedback**, answer the three questions in the feedback form that opens, and then select **Submit**.
+*(New designer only)* We want to hear from you to help us measure and improve our impact. To provide your feedback, select **Send Feedback**, answer the three questions in the feedback form that opens, and then select **Submit**.
 
 :::image type="content" source="media/flows-designer/feedback.png" alt-text="Screenshot of the options available on the feedback form.":::
 
-## Save draft button
+## Save button
 
 Select **Save draft** to save a draft of your flow. If there are no errors, the message, *"Your flow is ready to go. We recommend you test it"* appears in the upper left with a green check.
 
@@ -101,7 +95,7 @@ Testing is part of the planning for a Power Automate project. To learn more, go 
 
 ## More commands
 
-Select the **More commands** (**&vellip;**) button to add a note to the selected card in your flow, pin an action, or to delete the card.
+*(New designer only)* Select the **More commands** (**&vellip;**) button to add a note to the selected card in your flow, pin an action, or to delete the card.
 
 Select **Add a note** to describe the purpose of the card in your flow. After you add a note, a note symbol appears in the lower right of the card. To view the note, hover over this symbol.
 
@@ -111,7 +105,7 @@ Select **Pin action** to pin the action card to the top of the action configurat
 
 ## Action configuration pane
 
-When you select the plus (+) icon on the canvas, the _Add action_ view for adding actions to your flow appears (for example, **Send email**, **Get Dataverse rows**, **Initialize variable**, and more).
+*(New designer only)* When you select the plus (+) icon on the canvas, the _Add action_ view for adding actions to your flow appears (for example, **Send email**, **Get Dataverse rows**, **Initialize variable**, and more).
 
 :::image type="content" source="media/flows-designer/add-action.png" alt-text="Screenshot of the 'Add an action' pane.":::
 
@@ -264,15 +258,15 @@ A banner appears on the designer notifying you when designer can save the flow c
 
 :::image type="content" source="media/flows-designer/designer-info-banner.png" alt-text="Screenshot of the info banner above the flow.":::
 
-Upon revisiting the flow on the designer, the previously saved version loads on the designer by default. The unsaved copy is recoverable through the 'Recover' button on the banner.
+Upon revisiting the flow on the designer, the previously saved version loads on the designer by default. The unsaved copy is recoverable through the **Recover flow** command bar button.
 
 :::image type="content" source="media/flows-designer/designer-recover.png" alt-text="Screenshot of the Recover flow button in flow designer.":::
 
-When you select **Recover**, the unsaved browser copy of the flow is loaded on the designer, on top of which you can make updates.
+When you select **Recover flow**, the unsaved browser copy of the flow is loaded on the designer, on top of which you can make updates.
 
 :::image type="content" source="media/flows-designer/recover.png" alt-text="Screenshot of the unsaved copy of the flow in flow designer.":::
 
-You can now fix errors on this copy of the flow and save it. If you don't save this copy, the previously saved version of the flow is still accessible upon reloading the tab.
+You can now fix errors on this copy of the flow and save it. If you don't save this copy, the previously saved version of the flow is still accessible when you reload the tab.
 
 > [!WARNING]
 > - Saving this copy overrides the previously saved version of the flow. It also clears the browser storage, as there are no unsaved changes on the flow.
