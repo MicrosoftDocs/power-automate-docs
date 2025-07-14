@@ -31,7 +31,6 @@ Use the following sections to learn how to use Copilot features in Power Automat
 Copilot in cloud flows allows you to create automation that helps streamline your workflow through quick and easy natural language expressions. You can create a flow by describing what you need through multiple steps of conversation.
 
 - [Create a cloud flow using Copilot](create-cloud-flow-using-copilot.md#create-a-cloud-flow-using-copilot)
-- [Create a flow using the cloud flows designer with Copilot](create-cloud-flow-using-copilot.md#create-a-flow-using-the-cloud-flows-designer-with-copilot)
 - [Get contextual help with flows from the Microsoft Copilot Studio bot](contextual-help-bot.md)
 - [Use flows as plugins in Copilot for Microsoft 365 (preview)](flow-plugins-m365.md)
 
