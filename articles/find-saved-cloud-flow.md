@@ -38,7 +38,7 @@ If you can't find your cloud flow, try one of the solutions in the following tab
 |Scenario  |Solution  |
 |---------|---------|
 |The cloud flow might be in a different environment.      | Learn how to change environments in [Environment information and settings](getting-started.md#3--environment-information-and-settings).      |
-|The cloud flow was shared.   | Check the **Shared with me** tab in **My Flows** menu option. (For an example, refer to the screenshot in [Find your cloud flows easily](#find-your-cloud-flows-easily) in this article.)       |
+|The cloud flow was shared.   | Check the **Shared with me** tab in **My Flows** menu option. (For an example, refer to the screenshot in [Find cloud flows easily](#find-cloud-flows-easily)(#find-your-cloud-flows-easily) in this article.)       |
 | You were possibly removed as an owner of the cloud flow.    |  Contact the flow owner to be re-added. Learn how to find out if you’re an owner of the cloud flow in [Remove an owner](create-team-flows.md#remove-an-owner).       |
 | The flow was possibly deleted.     | Learn how to restore the flow in [Restore deleted flows](how-tos-restore-deleted-flow.md).        |
 

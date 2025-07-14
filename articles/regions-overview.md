@@ -57,11 +57,11 @@ You need a Power Platform environment in the following regions to use Copilot in
 
 | Region | Copilot availability |
 | ------------- | ------------- |
-| Preview region | Copilot is enabled by default at the beginning of October 2023, unless [an admin turns it off](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
-| Regions with copilot GPUs (United States, Australia, United Kingdom, India)  | Copilot is enabled by default, unless [an admin turns it off](#how-do-i-disable-copilot-in-the-cloud-flows-designer). |
+| Preview region | Copilot is enabled by default at the beginning of October 2023, unless an [admin turns it off](faq-copilot-cloud-flows.yml). |
+| Regions with copilot GPUs (United States, Australia, United Kingdom, India)  | Copilot is enabled by default, unless an [admin turns it off](faq-copilot-cloud-flows.yml). |
 | Europe and all other regions, including France and Canada | Copilot is enabled in the Europe region (using Sweden and Switzerland GPUs) by default, unless admins manually opt out of cross-geo data sharing settings from the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). More information: [Turn on copilots and generative AI features](/power-platform/admin/geographical-availability-copilot#turn-on-copilots-and-generative-ai-features-1)
 | Personal Microsoft service account (MSA) users | There's no access for MSA users to Copilot features. You need to use an organization ID and in a non-Sovereign cloud region. |
-|Sovereign clouds for US government (GCC)  | Copilot is enabled by default unless [an admin turns it off](#how-do-i-disable-copilot-in-the-cloud-flows-designer).  |
+|Sovereign clouds for US government (GCC)  | Copilot is enabled by default unless [admin turns it off](faq-copilot-cloud-flows.yml).  |
 
 > [!NOTE]
 > If your environment is in the region previously listed and you still don’t see the Copilot in cloud flows experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center. In some geographic regions outside the United States, Australia, United Kingdom, an admin needs to turn the cross geo calls on to enable Copilot.

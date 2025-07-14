@@ -42,7 +42,7 @@ You need a Power Platform environment for Copilot in Process Mining.
 
 > [!NOTE]
 > - If you still don’t see the Copilot experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center.
-> - In some geographic regions outside United States, Australia, and United Kingdom, an admin needs to turn on the cross geo calls to enable Copilot. More information: [Copilot availability by region](create-cloud-flow-using-copilot.md#availability-by-region).
+> - In some geographic regions outside United States, Australia, and United Kingdom, an admin needs to turn on the cross geo calls to enable Copilot. More information: [Region availability for Power Automate cloud flows with Copilot](regions-overview.md#region-availability-for-power-automate-cloud-flows-with-copilot).
 
 ## Ingest Data with Copilot
 
