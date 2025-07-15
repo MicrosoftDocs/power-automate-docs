@@ -2,7 +2,7 @@
 title: Configure desktop flow logs behavior
 description: Configure desktop flow log verbosity and storage destination in Power Platform Admin Center.
 ms.topic: how-to
-ms.date: 04/01/2025
+ms.date: 07/15/2025
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -106,17 +106,15 @@ The following table shows sample Dataverse log storage consumption estimates per
 
 ## Action logs verbosity
 
-Desktop Flow Logs V2 introduces configurable verbosity levels to help balance observability and storage efficiency. Each level determines the granularity of logs captured during flow execution:
+Desktop Flow Logs V2 lets you set verbosity levels to balance observability and storage efficiency. Each level controls how much detail logs show during flow execution.
 
 | **Verbosity Level** | **Description**                                                                                     | **Includes**                                                                                   | **Notes**                                                                                      |
 |---------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| Full                | Captures all logs, including built-in system actions.                                               | Condition, Loop, and all other system-generated logs.                                         | Default setting. Most comprehensive but can be very storage-intensive.                        |
+| Full                | Captures all logs, including built-in system actions.                                               | Condition, loop, and all other system-generated logs.                                         | Default setting. It's the most comprehensive, but can use more storage.                        |
 | Debug               | Focuses on action results.                                                                           | Outputs and results of each action executed in the flow.                                      | Useful for detailed troubleshooting without full system noise.                                |
-| Custom              | Logs user-defined messages and all warnings/errors.                                                 | Explicit `Log Message` actions by the user, plus all warnings and errors.                    | Allows users to control what gets logged. Can be used to fine-tune verbosity.                 |
-| Warning             | Captures only warning and error messages.                                                           | Any runtime warnings or errors encountered during flow execution.                            | Helps reduce noise while still surfacing potential issues.                                    |
-| Error               | Logs only error messages.                                                                            | Critical failures that prevent flow execution or cause incorrect behavior.                   | Minimal logging for performance-sensitive environments.                                       |
-
- 
+| Custom              | Logs user-defined messages and all warnings and errors.                                                 | Explicit `Log Message` actions by the user, plus all warnings and errors.                    | Allows users to control what gets logged. Can be used to fine-tune verbosity.                 |
+| Warning             | Captures only warning and error messages.                                                           | Any runtime warnings or errors during flow execution.                            | Helps reduce noise while still surfacing potential issues.                                    |
+| Error               | Logs only error messages.                                                                            | Critical failures that stop flow execution or cause incorrect behavior.                   | Minimal logging for performance-sensitive environments.                                       |
 
 ## Querying logs V2 data
 
