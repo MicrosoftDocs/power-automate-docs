@@ -104,6 +104,20 @@ The following table shows sample Dataverse log storage consumption estimates per
 > [!IMPORTANT]
 > The figures shown in the above table are just estimates and the actual storage consumption can vary significantly. The exact storage demand depends on the specific details and complexity of each action log. Therefore, these numbers should be used as a rough guide for understanding the potential storage demand and planning your storage requirements accordingly.
 
+## Action logs verbosity
+
+Desktop Flow Logs V2 introduces configurable verbosity levels to help balance observability and storage efficiency. Each level determines the granularity of logs captured during flow execution:
+
+| **Verbosity Level** | **Description**                                                                                     | **Includes**                                                                                   | **Notes**                                                                                      |
+|---------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| Full                | Captures all logs, including built-in system actions.                                               | Condition, Loop, and all other system-generated logs.                                         | Default setting. Most comprehensive but can be very storage-intensive.                        |
+| Debug               | Focuses on action results.                                                                           | Outputs and results of each action executed in the flow.                                      | Useful for detailed troubleshooting without full system noise.                                |
+| Custom              | Logs user-defined messages and all warnings/errors.                                                 | Explicit `Log Message` actions by the user, plus all warnings and errors.                    | Allows users to control what gets logged. Can be used to fine-tune verbosity.                 |
+| Warning             | Captures only warning and error messages.                                                           | Any runtime warnings or errors encountered during flow execution.                            | Helps reduce noise while still surfacing potential issues.                                    |
+| Error               | Logs only error messages.                                                                            | Critical failures that prevent flow execution or cause incorrect behavior.                   | Minimal logging for performance-sensitive environments.                                       |
+
+ 
+
 ## Querying logs V2 data
 
 Accessing desktop flow action logs data can be achieved by making an API call to the Dataverse backend, either using the traditional API call syntax or using the new [ExecuteCosmosSqlQuery](/power-apps/developer/data-platform/webapi/reference/executecosmossqlquery) method. This method allows you to execute a SQL query against Dataverse, enabling the retrieval and filtering of data.
