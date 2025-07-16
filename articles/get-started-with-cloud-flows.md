@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 07/11/2025
+ms.date: 07/16/2025
 ms.update-cycle: 180-days
 ms.author: kewaiss
 ms.reviewer: angieandrews
@@ -27,7 +27,9 @@ In this article, you create a cloud flow, test it, and then run it. The complete
 
 ## Create a cloud flow
 
-You can [create a cloud flow](overview-cloud.md#options-to-create-cloud-flows) using natural language in Copilot, or create it from scratch. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you want to create a cloud flow from scratch, select the **Without copilot** tab.
+You can [create a cloud flow](overview-cloud.md#options-to-create-cloud-flows) using natural language in Copilot, or create it without Copilot. If you have access to Copilot, select the **Using copilot** tab to create your flow. If you want to create a cloud flow without Copilot, select the **Without copilot** tab.
+
+The example in this tutorial creates a scheduled flow. You can use similar steps to create other types of flows. Learn about the types of cloud flows, when to use them, examples, and benefits in [Types of cloud flows](overview-cloud.md#types-of-cloud-flows).
 
 # [Using copilot](#tab/using-copilot)
 
@@ -175,7 +177,7 @@ To make sure your flow works as expected, you should test it.
 
 ## Run your cloud flow
 
-When your cloud flow runs successfully, it's listed in the **My flows** screen. This is where you can run it.
+When your cloud flow runs successfully, it's in the **My flows** list. This is where you can run it.
 
 1. On the navigation menu to the left, select **My flows**. Your cloud flow is at the top of the list.
 

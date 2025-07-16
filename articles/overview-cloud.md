@@ -40,7 +40,7 @@ Copilot is available only in the new designer. To help you decide which option t
 | Option  | Available in new designer? | Available in classic designer?
 |---------|:---------:|:---------:|
 | Use Copilot     |    Yes     |   No      |
-| From scratch     |   Yes      |   Yes      |
+| Without Copilot |   Yes      |   Yes      |
 
 Get answers to frequently asked questions about Copilot in cloud flows in [FAQ about Copilot in cloud flows](faq-copilot-cloud-flows.yml).
 

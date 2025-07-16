@@ -21,7 +21,7 @@ search.audienceType:
 
 # Create your first cloud flow without Copilot
 
-If you're creating a cloud flow from scratch (without Copilot), you can choose from three cloud flow types depending on what you want to automate:
+If you're creating a cloud flow without Copilot, you can choose from three cloud flow types depending on what you want to automate:
 
 - **Automated cloud flow**: Create an automation that is triggered by an event such as the arrival of an email from a specific person, or a mention of your company in social media.
 - **Instant cloud flow**: Start an automation with the selection of a button.
@@ -31,9 +31,9 @@ Learn more about the types of cloud flows, when to use them, examples, and benef
 
 Create your flow from scratch if you prefer a more hands-on approach to building your flows, or don't have access to Copilot.
 
-## Create a cloud flow from scratch
+## Create a cloud flow without Copilot
 
-The main steps to create a cloud flow without Copilot are the same. This section uses a scheduled cloud flow as an example. Each screen in the create process guides you with instructions throughout.
+The main steps to create a cloud flow without Copilot are the same for any of the cloud flow types. This section uses a scheduled cloud flow as an example. Each screen in the create process guides you with instructions throughout.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the navigation menu to the left, select **Create**.

@@ -35,7 +35,7 @@
             href: triggers-introduction.md
           - name: Troubleshoot common issues with triggers
             href: triggers-troubleshoot.md
-        - name: FAQ about Copilot in cloud flows
+        - name: Copilot in cloud flows FAQ
           href: faq-copilot-cloud-flows.yml
     - name: How to
       items:
@@ -1263,7 +1263,7 @@
     href: flow-eudb.md
 - name: Regions overview
   href: regions-overview.md
-- name: FAQ about Power Automate
+- name: Power Automate FAQ
   href: frequently-asked-questions.yml
 - name: Classic Dataverse
   items:
