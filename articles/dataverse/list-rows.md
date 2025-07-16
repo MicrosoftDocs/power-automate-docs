@@ -6,6 +6,7 @@ ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: how-to
 ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.collection: bap-ai-copilot
 search.audienceType: 
   - maker

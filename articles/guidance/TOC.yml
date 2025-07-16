@@ -14,11 +14,11 @@
                   href: coding-guidelines/use-consistent-naming-conventions.md
                 - name: Understand benefits of solution-aware flows
                   href: coding-guidelines/understand-benefits-solution-aware-flows.md
-                - name: Use and create scopes
+                - name: Organize your flows with scopes
                   href: coding-guidelines/create-scopes.md
                 - name: Offload complex business logic
                   href: coding-guidelines/leave-complex-business-logic-out.md
-                - name: Create reusable code
+                - name: Create reusable code with child flows
                   href: coding-guidelines/create-reusable-code.md
                 - name: Implement parallel execution and concurrency
                   href: coding-guidelines/implement-parallel-execution.md
@@ -30,7 +30,7 @@
                   href: coding-guidelines/work-with-relevant-data.md
                 - name: Avoid anti-patterns
                   href: coding-guidelines/avoid-anti-patterns.md
-                - name: Use asynchronous flow patterns
+                - name: Use asynchronous responses
                   href: coding-guidelines/asychronous-flow-pattern.md
                 - name: Use environment variables
                   href: coding-guidelines/use-environment-variables.md
@@ -42,9 +42,9 @@
                   href: coding-guidelines/test-cloud-flows.md
                 - name: Leverage Power Automate features
                   href: coding-guidelines/use-peekcode-addnotes.md
-                - name: Troubleshooting tips
+                - name: Troubleshoot cloud flows
                   href: coding-guidelines/troubleshoot-cloud-flows.md
-                - name: Understand limits
+                - name: Understand platform limits
                   href: coding-guidelines/understand-limits.md
             - name: Design secure cloud flows
               items:
@@ -52,17 +52,17 @@
                   href: coding-guidelines/use-secure-inputs-outputs-triggers.md
                 - name: Keep flow configuration generic
                   href: coding-guidelines/keep-flow-configuration-generic.md
-                - name: Understand access to flows
+                - name: Understand flow ownership and access
                   href: coding-guidelines/understand-access-to-flows.md
                 - name: Use auditing in Dataverse and Microsoft Purview
                   href: coding-guidelines/use-auditing-dataverse.md
-                - name: Prevent data exfiltration
+                - name: Prevent unauthorized transfer of data
                   href: coding-guidelines/prevent-data-exfiltration.md
-                - name: Consider customer-managed keys
+                - name: Use customer-managed keys
                   href: coding-guidelines/use-cmk-for-cloud-flows.md
-            - name: Integrating cloud flows with Power Apps
+            - name: Integrate cloud flows with Power Apps
               href: coding-guidelines/integrating-cloud-flows-power-apps.md
-            - name: Monitoring and alerting
+            - name: Monitor your flows
               href: coding-guidelines/monitoring-and-alerting.md
         - name: Best practices for building desktop flows
           items:
