@@ -10,7 +10,7 @@ ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 04/14/2023
+ms.date: 07/15/2025
 ---
 
 # Respond to personal data deletion requests (Microsoft Entra ID)
@@ -54,8 +54,8 @@ The following table summarizes where to find and delete a user's personal data i
 | Custom connector | Power Automate maker portal | | |
 | Custom connector permissions | Power Automate maker portal | | |
 | Approval history | Power Apps maker portal\* | | |
-| Desktop Flows | Power Automate maker portal |  |  |
-| Machines and Machine groups | Power Automate maker portal |  |  |
+| Desktop flows | Power Automate maker portal |  |  |
+| Machines and machine groups | Power Automate maker portal |  |  |
 | Process Mining processes | Power Automate maker portal |  |  |
 
 \* For environments that include a Dataverse database, environment permissions and model-driven app permissions are stored as records in Dataverse. [Learn more about running data requests against Dataverse customer data.](/power-platform/admin/common-data-service-gdpr-dsr-guide)
@@ -245,7 +245,7 @@ Get-AdminConnectorRoleAssignment -PrincipalObjectId $deleteDsrUserId | Remove-Ad
 
 1. Sign in to [Power Automate](https://make.powerautomate.com/).
 1. On the left navigation pane, select **Process mining**.
-1. On the Process Mining page, select **All processes**.
+1. On the **Process Mining** page, select **All processes**.
 1. In the list of processes analyzed by the user, select the vertical ellipsis (**⋮**) for each process, and then select **Delete**.
 1. Select **Delete** again when you're prompted.
 
