@@ -14,6 +14,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
 ms.date: 06/30/2025
+ms.update-cycle: 180-days
 ms.custom: copilot-scenario-highlight
 ms.collection: bap-ai-copilot
 search.audienceType: 

@@ -2,6 +2,7 @@
 title: FAQ for Repair with Copilot at runtime in Power Automate desktop
 description: This FAQ discusses Repair with Copilot at runtime in Power Automate desktop and key considerations for making use of this technology responsibly.
 ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.custom:
   - responsible-ai-faqs
 ms.topic: faq

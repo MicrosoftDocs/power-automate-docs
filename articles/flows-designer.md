@@ -12,7 +12,8 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 06/05/2025
+ms.date: 07/11/2025
+ms.update-cycle: 180-days
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -47,14 +48,14 @@ Legend:
 1. [**Save draft button**](#save-draft-button): Save a draft of your flow.
 1. [**Test button**](#test-button): Test your flow to make sure that it works as you intended.
 1. **Publish button**: Publish your flow so that your flow runs when the trigger event is performed.
-1. [**Copilot button**](get-started-with-copilot.md): Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
+1. [**Copilot button**](create-cloud-flow-using-copilot.md): Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
 1. **New designer toggle**: Switch between the classic designer and the new cloud flows designer. Learn more in [Identify differences between the new designer and the classic designer](#identify-differences-between-the-new-designer-and-the-classic-designer).
 1. **Action/trigger name**: The action or trigger card that is selected in your flow in the center of the page (the [*canvas*](#canvas)).
 1. [**More commands button**](#more-commands): Add a note to the selected card, *pin* an action, or delete the card. There are two ways to pin an action. Learn more in [View two action panes simultaneously](#view-two-action-panes-simultaneously).
 1. **Collapse button**: Hide the pane. When the pane is collapsed, the **Expand** button (**\>\>**) appears in the upper-left corner. Select it to show the pane again.
 1. [**Action configuration pane**](#action-configuration-pane): After you select an action card to configure on the canvas, the action configuration pane opens on the left side of the AI-powered designer.
 1. [**Canvas**](#canvas): The canvas is where you build your flow. It's free-flowing and therefore allows for easier navigation.
-1. [**Copilot pane**](get-started-with-copilot.md): Copilot stays with you during your flow editing and fit-and-finish journey. It can help you update and make changes to your flow, based on your conversational-style prompt. It can also help answer flow-related and product-related questions.
+1. [**Copilot pane**](create-cloud-flow-using-copilot.md): Copilot stays with you during your flow editing and fit-and-finish journey. It can help you update and make changes to your flow, based on your conversational-style prompt. It can also help answer flow-related and product-related questions.
 
 ## Undo and Redo
 
@@ -329,6 +330,6 @@ Yes, once the issues noted here are resolved and the new cloud flows designer ca
 
 Learn how to work with Copilot in cloud flows. You can get started with these articles:
 
-- [Get started with Copilot in cloud flows](get-started-with-copilot.md)
+- [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)
 - [FAQ for Copilot expression assistant](faqs-copilot-expression-assistant.md)
 

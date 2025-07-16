@@ -1,12 +1,12 @@
 ---
-title: Use customer managed keys for cloud flows
-description: Learn how to use customer managed keys (CMK) for cloud flows in Power Automate to enhance data security and meet compliance requirements.
-#customer intent: As a Power Automate user, I want to use customer managed keys for cloud flows so that I can meet compliance policies for data security and privacy.
+title: Use customer-managed keys for cloud flows
+description: Learn how to use customer-managed keys for your cloud flows in Power Automate to enhance data security and meet compliance requirements.
+#customer intent: As a Power Automate user, I want to use customer-managed keys for cloud flows so that I can meet compliance policies for data security and privacy.
 author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/18/2025
+ms.date: 07/11/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 search.audienceType:
@@ -14,29 +14,26 @@ search.audienceType:
   - flowmaker
 ---
 
-# Use customer managed keys for cloud flows
+# Use customer-managed keys for cloud flows
 
-Customer managed keys (CMK) within the context of cloud flows in Power Automate enable organizations to use their own encryption keys to encrypt and protect data within their flows. CMK provides enhanced control over the encryption keys and meets compliance requirements for data security and privacy. 
+Typically, Microsoft or a service provider manages the encryption keys that secure a customer's data. Customer-managed keys allow organizations to use their own encryption keys. The keys are usually stored in a secure key management system such as Azure Key Vault. This approach provides organizations with greater control over their data security and compliance with regulatory requirements.
 
-## What is CMK
+In the context of Power Automate, you can use customer-managed keys to encrypt and protect data in your cloud flows. This article explains how to use customer-managed keys in Power Automate and the benefits they provide.
 
-Customer managed keys (CMK) enable organizations to manage their own encryption keys, typically using a key management service such as Azure Key Vault. By using CMK, organizations can:
+## Benefits of customer-managed keys
 
-- Gain greater control over the encryption keys used to protect their data.
-- Meet regulatory and compliance requirements that mandate customer-controlled encryption.
-- Revoke access to data by disabling or deleting keys.
+Using customer-managed keys with your cloud flows provides several benefits:
 
-## How CMK works in Power Automate
+- **Greater control**: Using customer-managed keys gives you more control over the encryption keys that protect your data.
 
-This added protective layer provides:
+- **Regulatory compliance**: Customer-managed keys meet regulatory and compliance requirements that mandate customer-controlled encryption.
 
-- **Encryption at rest**: CMK allows you to encrypt the data stored by Power Automate at rest using your own keys.
+- **Data access management**: You can easily revoke access to data by disabling or deleting the encryption keys.
+
+- **Encryption at rest**: Customer-managed keys allow you to encrypt the data that's stored in Power Automate at rest using your own keys.
 
 - **Azure Key Vault security**: The keys are typically stored and managed in Azure Key Vault, which provides secure key management capabilities.
 
-- **Key rotation and management**: You have the ability to rotate, revoke, and audit the keys, providing enhanced control over the encryption lifecycle.
+- **Key rotation and management**: You have the ability to rotate, revoke, and audit the keys, providing enhanced control over the encryption life cycle.
 
-Learn more:
-
-- [Support for customer-managed keys in Power Automate](/power-automate/customer-managed-keys)
-- [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key) 
+Learn more in [Support for customer-managed keys](/power-automate/customer-managed-keys) and [Manage your customer-managed encryption key](/power-platform/admin/customer-managed-key).

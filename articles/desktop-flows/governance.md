@@ -4,6 +4,7 @@ description: Learn how to configure Power Automate for desktop using Windows reg
 author: NikosMoutzourakis
 ms.topic: article
 ms.date: 04/22/2025
+ms.update-cycle: 180-days
 ms.author: nimoutzo
 ms.reviewer: matp
 ms.collection: bap-ai-copilot
