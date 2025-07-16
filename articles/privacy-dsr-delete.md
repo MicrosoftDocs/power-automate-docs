@@ -5,7 +5,7 @@ author: hamenon-ms
 contributors:
   - hamenon-ms
   - v-aangie
-ms.author: hamenon
+ms.author: padib
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow

@@ -56,6 +56,6 @@ Personal data subject to the request might be present in Power Platform services
 
 Some feedback mechanisms in Power Automate are integrated with the Microsoft 365 admin center.
 
-For guidance on how to discover feedback data stored by the Microsoft 365 admin center, go to [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#how-can-i-see-my-users-feedback).
+For guidance on how to discover feedback data stored by the Microsoft 365 admin center, go to [How can I see my user's feedback?](/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#how-can-i-see-my-users-feedback&preserve-view=true).
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
