@@ -70,7 +70,7 @@ If you [install the Power Automate mobile app on your phone](mobile/overview-mob
 
 Learn more in [Power Automate mobile app overview](mobile/overview-mobile.md).
 
-# Next step
+## Next step
 
 - [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)
 - [Create your first cloud flow without Copilot](create-cloud-flow-without-copilot.md)

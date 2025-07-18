@@ -58,7 +58,7 @@ Legend:
 
 When you work with [solution-aware flows](overview-solution-flows.md), there are two more buttons added to the toolbar: **Save draft** and **Publish**.
 
-:::image type="content" source="media/flows-designer/solutions-toolbar.png" alt-text="Screenshot highlighting the appearance of the green check mark for successful test results.":::
+:::image type="content" source="media/flows-designer/solutions-toolbar.png" alt-text="Screenshot of the solution-aware cloud flows toolbar with the 'Save draft' and 'Publish' buttons.":::
 
 When you [create a solution-aware flow](create-flow-solution.md), you can save it as a draft, even with errors. This allows you to continue working on it without publishing it immediately. To do this, select [Save draft](drafts-versioning.md#save-drafts) at any time.
 
