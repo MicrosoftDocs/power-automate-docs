@@ -12,7 +12,7 @@ ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
-ms.date: 07/14/2025
+ms.date: 07/18/2025
 ms.author: kewaiss
 search.audienceType: 
   - flowmaker
@@ -23,17 +23,17 @@ search.audienceType:
 
 If you're creating a cloud flow without Copilot, you can choose from three cloud flow types depending on what you want to automate:
 
-- **Automated cloud flow**: Create an automation that is triggered by an event such as the arrival of an email from a specific person, or a mention of your company in social media.
+- **Automated cloud flow**: Create an automation that's triggered by an event such as the arrival of an email from a specific person, or a mention of your company in social media.
 - **Instant cloud flow**: Start an automation with the selection of a button.
 - **Scheduled cloud flow**: Start a scheduled automation such as daily data upload to SharePoint or a database.
 
 Learn more about the types of cloud flows, when to use them, examples, and benefits in [Types of cloud flows](overview-cloud.md#types-of-cloud-flows).
 
-Create your flow from scratch if you prefer a more hands-on approach to building your flows, or don't have access to Copilot.
+Create your flow without Copilot if you prefer a more hands-on approach to building your flows, or don't have access to Copilot.
 
 ## Create a cloud flow without Copilot
 
-The main steps to create a cloud flow without Copilot are the same for any of the cloud flow types. This section uses a scheduled cloud flow as an example. Each screen in the create process guides you with instructions throughout.
+The main steps to create a cloud flow without Copilot are the same for any of the cloud flow types. This section uses a scheduled cloud flow as an example. Each screen in the create process guides you with instructions.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the navigation menu to the left, select **Create**.
@@ -53,10 +53,10 @@ The main steps to create a cloud flow without Copilot are the same for any of th
 
 ## Configure your cloud flow
 
-Complete creating your cloud flow in the *designer*. Power Automate provides two designers for you to choose from: the new designer and the classic designer. The *new designer* is the default experience, but you can switch to the *classic designer*. The steps are similar in both designers. Learn more (with examples) in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
+Complete creating your cloud flow in the *designer*. Power Automate provides two designers for you to choose from: the *new designer* and the *classic designer*. The new designer is the default experience, but you can switch to the classic designer. The steps are similar in both designers. Learn more and get examples in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
 
 1. Select the location for your new action in your cloud flow:
-    - New designer: Select (**+**) below the **Recurrence** trigger.
+    - New designer: Below the **Recurrence** trigger, select (**+**).
     - Classic designer: Select **+ New step**.
 1. Add an action to your cloud flow:
     - New designer: In the **Add an action** search field, type **Send an email (V2)** and then select the **Send an email (V2)** action under **Microsoft 365 Outlook**.
@@ -64,7 +64,7 @@ Complete creating your cloud flow in the *designer*. Power Automate provides two
 1. Enter the following information:
     1. In the **To** field, enter your email address.
 
-        If you were doing this in a real life scenario, you would enter the email of the person you want to send the newsletter to. In this tutorial, you're sending it to yourself so that you can get the email sent by your cloud flow when you run it later in this tutorial. You can also send it to multiple people in the **To** field.
+        If you were doing this in a real life scenario, you would enter the email of the person you want to send the newsletter to. In this example, you're sending it to yourself so that you can get the email sent by your cloud flow when you run it later. You can also send it to multiple people in the **To** field.
 
     1. In the **Subject** field, enter **The Contoso Cadence Newsletter**.
     1. In the **Body** field, copy and paste the following text:
@@ -75,7 +75,7 @@ Complete creating your cloud flow in the *designer*. Power Automate provides two
 
     1. New designer: Select (**<<**) in the upper-right corner of the panel to collapse the configuration pane.
 
-    This flow consists of the **Recurrence** trigger and **Send an email (V2)** action that contains the parameters you set in this procedure.
+    This flow consists of the **Recurrence** trigger and **Send an email (V2)** action that contain the parameters you set in this procedure.
 
     |New designer  |Classic designer  |
     |---------|---------|
@@ -83,6 +83,11 @@ Complete creating your cloud flow in the *designer*. Power Automate provides two
 
 1. Save your cloud flow by selecting **Save** on the command bar.
 
-    A green message appears below the **Power Automate** title bar, indicating that your flow is now saved.
+    A green message appears below the **Power Automate** title bar indicating that your flow is now saved.
 
-1. Once you save your flow, we recommend that you test it. Learn how to test your flow in [Test your cloud flow](get-started-with-cloud-flows.md#test-your-cloud-flow).
+1. Once you save your flow, we recommend that you [test it](get-started-with-cloud-flows.md#test-your-cloud-flow).
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Explore the cloud flows designer](flows-designer.md)

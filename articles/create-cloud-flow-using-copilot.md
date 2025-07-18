@@ -1,7 +1,7 @@
 ---
 title: Create your first cloud flow using Copilot
 description: Learn how to access and use Copilot to create a cloud flow.
-ms.date: 07/14/2025
+ms.date: 07/18/2025
 ms.update-cycle: 180-days
 ms.custom: 
   - bap-template
@@ -27,7 +27,7 @@ Copilot in cloud flows allows you to create automation that helps streamline you
 The cloud flows Copilot can perform the following actions:
 
 - Understand your intent, and create a flow based on the scenario prompt you provide.
-- Auto-set up connections on your behalf to get you to a working automation as soon as possible.
+- Automatically set up connections on your behalf to get you to a working automation as soon as possible.
 - Apply the necessary parameters in the flow based on your prompt.
 - Respond to your requests to make changes to your flow, such as update actions and replace actions.
 - Answer questions about your flow and product. For example, you can ask Copilot questions about your flow like, *What does my flow do?* to get a summary of what the flow does. You can also ask Copilot product questions like, *How do I access child flows?* and *How do I access licenses?*.
@@ -43,34 +43,40 @@ The cloud flows Copilot can perform the following actions:
 Follow these steps to create a flow with Copilot.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. On the navigation menu to the left, select **Home** and begin to describe your scenario.
+1. On the navigation menu to the left, make sure **Home** is selected.
+1. In the **Create your automation with Copilot** field, describe in detail how you want your automation to work using natural language.
 
-    *Conversation first* (preview) provides a new way to interact with Copilot in Power Automate. You can go to this experience from the home page by selecting **Chat with Copilot about my idea**, or any of the predefined items above the input field.<!--Kishor, does this belong here?-->
+    <!--Kishor, does this belong here?*Conversation first* (preview) provides a new way to interact with Copilot in Power Automate. You can go to this experience from the home page by selecting **Chat with Copilot about my idea**, or any of the predefined items above the input field.-->
 
-1. Alternatively, you can continue to interact with Copilot by typing what you want your flow to do. You can also select one of the AI generated suggested flow descriptions based on your manual prompt entry.
+    Learn more in [How to write a good prompt](#how-to-write-a-good-prompt).
 
-    To learn how to write a good prompt, go to [How to write a good prompt](#how-to-write-a-good-prompt) in this article.
+1. When you're satisfied with your prompt, select **Generate**.
 
-1. When you're ready to proceed, select **Generate**.
+     :::image type="content" source="./media/create-cloud-flow-using-copilot/describe-in-detail.png" alt-text="Screenshot of the vague prompt experience, where you can continue building your flow with Copilot.":::
 
-   If you manually enter a prompt and it's vague, Copilot assists you in building it to completion. You can use this stage of the flow building process to ask questions, or further describe what you would like to achieve with your automation.
+    As you type, Copilot suggests prompts to help you refine your request. If you select one of the suggestions, you're taken to the screen described in the next step.
 
-     :::image type="content" source="./media/create-cloud-flow-using-copilot/vague.png" alt-text="Screenshot of the vague prompt experience, where you can continue building your flow with Copilot.":::
+1. Copilot generates the structure for your flow based on your description. The structure contains a suggested *trigger* and one or more *actions* for your flow. A trigger is an event that starts a flow. Actions are the events you want the flow to do after the trigger event takes place.
 
-1. Copilot begins to depict the structure of the flow, which it generates based on your prompts. Select **Next** to proceed and verify any connections that are part of the flow are configured correctly.
+    If you're satisfied with the suggested flow, select **Keep it and continue**.
 
-1. To finalize your flow, configure the required settings.
+    If you want to modify the suggested flow, enter more information in the **Add more details for Copilot to work with** field and select the right arrow. The suggested flow regenerates based on the new information.
+
+1. After you select **Keep it and continue**, verify that the connections that are part of the flow are configured correctly. Connections that are configured correctly are marked with a green check mark. Connections that need attention are marked with a red exclamation mark.
+
+    If a connection needs attention, select it and follow the instructions to configure it.
+
 1. Select **Create flow**.
 
-    The cloud flows designer with Copilot opens with your flow.
+    The designer opens with your flow, and the Copilot pane appears on the right.
 
     :::image type="content" source="./media/create-cloud-flow-using-copilot/designer-with-copilot.png" alt-text="Screenshot of the cloud flows designer with Copilot that shows your flow.":::
 
-1. On the panel to the right, follow the Copilot suggestions to complete the flow setup, ask questions, or make edits to your flow using **Edit with Copilot**.
+1. In the Copilot pane, follow the Copilot suggestions to complete the flow setup (if any), ask questions, or make edits to your flow.
 
-1. When your flow is complete, select **Save this flow**.
+1. When your flow is complete, select **Save** on the command bar.
 
-1. Once your flow is saved, we recommend that you test it. Learn how to test your flow in [Test your cloud flow](get-started-with-cloud-flows.md#test-your-cloud-flow).
+1. Once your flow is saved, we recommend that you [test it](get-started-with-cloud-flows.md#test-your-cloud-flow).
 
 ## How to write a good prompt
 
@@ -97,18 +103,17 @@ This section describes some example scenarios of how you can interact with Copil
 
 ## Edit a flow using copilot capabilities
 
-In addition to using Copilot to create a flow, you can also use it to configure existing flows. Copilot is available only in the new designer. Learn more in [Overview of cloud flows](overview-cloud.md).
+In addition to using Copilot to create a flow, you can also use it to configure existing flows in the designer. Copilot is available only in the new designer and not the classic designer. Learn more in [Overview of cloud flows](overview-cloud.md).
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the left navigation pane, select **My flows**.
 1. Find your flow, select the vertical ellipses (**&vellip;**), and then select **Edit**.
   
+    Alternatively, access the cloud flows designer with copilot capabilities from the flow **Details** page of your existing flow by selecting the flow name from **My flows** > **Edit** in the command bar.
 
-    Alternatively, access the cloud flows designer with copilot capabilities from the flow **Details** page of your existing flow by selecting the flow name from **My flows** > **Edit**.
+    Your flow opens with the **Copilot** pane on the right. You can now edit your flow by using the designer with copilot capabilities. Try typing the following prompts:
 
-    Your flow opens with the **Copilot** pane on the side. You can now edit your flow by using the cloud flows designer with copilot capabilities. Try typing the following prompts:
-
-   1. Delete action *X*
+   1. Delete action \<*action name*\>.
    1. I want to send an email at the end of the flow with subject equal to the SharePoint file name.
    1. Instead of email, I want to post message on Teams channel.
    1. Check if each of the SharePoint items being returned has a title that equals 'USB', and if so, send an email.

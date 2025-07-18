@@ -12,7 +12,7 @@ ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 07/14/2025
+ms.date: 07/18/2025
 ms.author: kewaiss
 search.audienceType: 
   - flowmaker
@@ -42,17 +42,19 @@ Copilot is available only in the new designer. To help you decide which option t
 | Use Copilot     |    Yes     |   No      |
 | Without Copilot |   Yes      |   Yes      |
 
-Get answers to frequently asked questions about Copilot in cloud flows in [FAQ about Copilot in cloud flows](faq-copilot-cloud-flows.yml).
+Get answers to frequently asked questions about Copilot in cloud flows in [Copilot in cloud flows FAQ](faq-copilot-cloud-flows.yml).
 
-Get answers to frequently asked questions about Power Automate in general in [FAQ about Power Automate](frequently-asked-questions.yml).
+Get answers to frequently asked questions about Power Automate in general in [Power Automate FAQ](frequently-asked-questions.yml).
 
 ## Types of cloud flows
 
-If you're creating a cloud flow without Copilot, you can choose from three cloud flow types depending on what you want to automate.
+If you're creating a cloud flow without Copilot, you can choose from three cloud flow types depending on what you want to automate:
+
+- **Automated cloud flow**: Create an automation that is triggered by an event such as the arrival of an email from a specific person, or a mention of your company in social media.
+- **Instant cloud flow**: Start an automation with the selection of a button.
+- **Scheduled cloud flow**: Start a scheduled automation such as daily data upload to SharePoint or a database.
 
 If you're using Copilot, your prompt determines the cloud flow type you should use&mdash;you don't need to figure this out for yourself.
-
-An *automated cloud flow* creates an automation that is triggered by an event such as the arrival of an email from a specific person, or a mention of your company in social media. An *instant cloud flow* starts an automation with the selection of a button. A *scheduled cloud flow* starts a scheduled automation such as daily data upload to SharePoint or a database.
 
 The following table describes the three types of cloud flows, when to use them, examples, and benefits.
 
