@@ -30,7 +30,7 @@ This article provides an overview of the designer's features and capabilities. L
 
 Following is a screenshot of the designer's features. To give you more context, refer to the legend.
 
-:::image type="content" source="media/flows-designer/designer-overview-numbers-borders.png" alt-text="Screenshot of the cloud flows designer with Copilot.":::
+:::image type="content" source="media/flows-designer/designer-overview-numbers-borders.png" alt-text="Screenshot of the cloud flows designer with Copilot." lightbox="media/flows-designer/designer-overview-numbers-borders.png":::
 
 Legend:
 
@@ -53,6 +53,18 @@ Legend:
 1. [**Configuration pane**](#configuration-pane): *(New designer only)* After you select a card to configure on the [canvas](#canvas), the configuration pane opens on the left side of the AI-powered designer.
 1. [**Canvas**](#canvas): The canvas is where you build your flow.
 1. [**Copilot pane**](create-cloud-flow-using-copilot.md): *(New designer only)* Copilot stays with you during your entire editing journey. It can help you update and make changes to your flow based on your conversational-style prompt. It can also help answer flow-related and product-related questions.
+
+## Save a solution-aware flow draft and then publish it
+
+When you work with [solution-aware flows](overview-solution-flows.md), there are two more buttons added to the toolbar: **Save draft** and **Publish**.
+
+:::image type="content" source="media/flows-designer/solutions-toolbar.png" alt-text="Screenshot highlighting the appearance of the green check mark for successful test results.":::
+
+When you [create a solution-aware flow](create-flow-solution.md), you can save it as a draft, even with errors. This allows you to continue working on it without publishing it immediately. To do this, select [Save draft](drafts-versioning.md#save-drafts) at any time.
+
+When your draft is ready for production, select [Publish](drafts-versioning.md#publish-a-cloud-flow) to make it available for use.
+
+Learn more about drafts and publishing in [Drafts and versioning for solution-aware cloud flows](drafts-versioning.md).
 
 ## Undo and Redo
 

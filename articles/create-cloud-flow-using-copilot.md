@@ -122,7 +122,7 @@ In addition to using Copilot to create a flow, you can also use it to configure 
 
 The troubleshoot in Copilot feature can assist you in identifying and resolving errors that might occur during testing of cloud flows or when reviewing flow run history. You can use this Copilot feature when the new designer experience is enabled.
 
-Learn more about troubleshooting and watch a video in [Troubleshoot in Copilot](fix-flow-failures.md#troubleshoot-in-copilot).
+Learn more about troubleshooting and *watch a video* in [Troubleshoot in Copilot](fix-flow-failures.md#troubleshoot-in-copilot).
 
 ## Next step
 
