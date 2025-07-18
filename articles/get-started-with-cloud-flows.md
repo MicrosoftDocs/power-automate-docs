@@ -41,8 +41,10 @@ The example in this tutorial creates a scheduled flow. You can use similar steps
    Copy the following prompt and paste it into the Copilot field:
 
    ```copilot-prompt
-    Create a flow that runs on the first of every month starting in June 2025 at 12:00 AM, Pacific Time. Send it to contoso@gmail.com and the title should be, "The Contoso Cadence Newsletter". The body for the email is, "Welcome to the monthly Contoso Cadence newsletter! In this email, you'll find important dates for training sessions and talks. We'll also showcase demos and list the frequently asked questions for the month."
-
+    Create a flow that runs on the first of every month starting in June 2025 at 12:00 AM, Pacific Time. 
+    Send it to contoso@gmail.com and the title should be, "The Contoso Cadence Newsletter". 
+    The body for the email is:
+    "Welcome to the monthly Contoso Cadence newsletter! In this email, you'll find important dates for training sessions and talks. We'll also showcase demos and list the frequently asked questions for the month."
    ```
 
     Your prompt tells Copilot how to set up the recurrence of the email, who the recipient is, and the contents of the email's subject and body&mdash;all the information you need to create a working cloud flow.

@@ -38,15 +38,19 @@ Legend:
 1. **Flow name**: The name of your flow, which you can edit at any time. To do this, select the flow name, enter a new name, and then select **Save** on the command bar.
 1. [**Undo and Redo buttons**](#undo-and-redo): Reverse or reinstate modifications you made to the flow.
 1. [**Send feedback button**](#send-feedback): *(New designer only)* Send us feedback about your flow creation experience or general comments about the AI-powered designer.
+
+    (*Classic designer only*) Select the smiley face icon in the title bar.
+
 1. **Flow checker button**: Check your flow for errors.
+1. **Version history button**: *(New designer only)* Track and manage changes made to your flows over time. It records every modification, enabling you to view previous versions, compare changes, and, if necessary, revert to an earlier version.
 1. [**Save button**](#save-button): Save your flow.
 1. [**Test button**](#test-button): Test your flow to make sure that it works as you intended.
 1. [**Copilot button**](create-cloud-flow-using-copilot.md): *(New designer only)* Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
 1. **New designer toggle**: Switch between the new designer and the classic designer. Learn more in [Identify differences between the new designer and the classic designer](#identify-differences-between-the-new-designer-and-the-classic-designer).
-1. **Action/trigger name**: *(New designer only)* The action or trigger card that is selected in your flow in the center of the page (the [*canvas*](#canvas)).
+1. **Action/trigger name**: *(New designer only)* The action or trigger card that is selected in your flow in the center of the page (the [canvas](#canvas)).
 1. [**More commands button**](#more-commands): *(New designer only)* Add a note to the selected card, *pin* an action, or delete the card. There are two ways to pin an action. Learn more in [View two action panes simultaneously](#view-two-action-panes-simultaneously).
 1. **Collapse button**: *(New designer only)* Hide the pane. When the pane is collapsed, the **Expand** button (**>>**) appears in the upper-right corner. Select it to show the pane again.
-1. [**Configuration pane**](#configuration-pane): *(New designer only)* After you select a card to configure on the canvas, the configuration pane opens on the left side of the AI-powered designer.
+1. [**Configuration pane**](#configuration-pane): *(New designer only)* After you select a card to configure on the [canvas](#canvas), the configuration pane opens on the left side of the AI-powered designer.
 1. [**Canvas**](#canvas): The canvas is where you build your flow.
 1. [**Copilot pane**](create-cloud-flow-using-copilot.md): *(New designer only)* Copilot stays with you during your entire editing journey. It can help you update and make changes to your flow based on your conversational-style prompt. It can also help answer flow-related and product-related questions.
 
@@ -104,7 +108,7 @@ Select **Pin action** to pin the card to the top of the configuration pane. This
 
 ## Configuration pane
 
-*(New designer only)* When you select the plus (+) icon on the canvas, the _Add action_ view for adding actions to your flow appears (for example, **Send email**, **Get Dataverse rows**, **Initialize variable**, and more).
+*(New designer only)* When you select the plus (+) icon on the [canvas](#canvas), the _Add action_ view for adding actions to your flow appears (for example, **Send email**, **Get Dataverse rows**, **Initialize variable**, and more).
 
 :::image type="content" source="media/flows-designer/add-action.png" alt-text="Screenshot of the 'Add an action' pane.":::
 
@@ -146,7 +150,7 @@ On the **Settings** tab, you can set the action timeout, network retry policy, h
 
 ### Code View
 
-To view the code behind any card in your flow, select the card on the canvas, and then select **Code View** in the configuration pane. As you customize the code on the [Parameters](#parameters) tab, you can view the new code on the **Code View** tab.
+To view the code behind any card in your flow, select the card on the [canvas](#canvas), and then select **Code View** in the configuration pane. As you customize the code on the [Parameters](#parameters) tab, you can view the new code on the **Code View** tab.
 
 The following screenshot shows an example of the code for the **Compose** action card.
 
@@ -162,7 +166,7 @@ To copy and paste an action, follow these steps.
 
     :::image type="content" source="media/flows-designer/copy-action.png" alt-text="Screenshot highlights copying an action.":::
 
-1. On the canvas, right-click on **+**, and then select **Paste an action**.
+1. On the [canvas](#canvas), right-click on **+**, and then select **Paste an action**.
 
     You can copy and paste actions across different parts of your flow, or in between flows.
 
@@ -180,13 +184,13 @@ For easy navigation, you can drag your flow on the canvas. You configure the act
 
 ### Drop zones
 
-The canvas contains AI-powered designer drop zones to help you easily drag cloud flow actions. Blue dashed lines represent the drop zones.
+The [canvas](#canvas) contains AI-powered designer drop zones to help you easily drag cloud flow actions. Blue dashed lines represent the drop zones.
 
 :::image type="content" source="media/flows-designer/drop-zone.png" alt-text="Screenshot of an action card and a drop-zone.":::
 
 ### Change how your flow displays
 
-Depending on the size and complexity of your cloud flow, you might want to adjust how it displays to make it easier to work with. The buttons appear at the bottom-left corner of the canvas when the configuration pane is closed.
+Depending on the size and complexity of your cloud flow, you might want to adjust how it displays to make it easier to work with. The buttons appear at the bottom-left corner of the [canvas](#canvas) when the configuration pane is closed.
 
 :::image type="content" source="media/flows-designer/tools-numbers.png" alt-text="Screenshot highlights the buttons that allow you to adjust how your flow displays on the canvas.":::
 
@@ -223,17 +227,17 @@ When static outputs are disabled, the toggle label is **Enable Static Result**. 
 
 One the new designer, you can pin an action pane so that you can open a second action pane next to it. This can be useful to compare two similar actions, or copy values across two actions.
 
-To pin an action, you can either right-click the action on the canvas and select **Pin action**. Alternatively, in the configuration pane, you can select **Pin action** in the **More commands** dropdown menu.
+To pin an action, you can either right-click the action on the [canvas](#canvas) and select **Pin action**. Alternatively, in the configuration pane, you can select **Pin action** in the **More commands** dropdown menu.
 
 :::image type="content" source="media/flows-designer/pin-option.png" alt-text="Screenshot of the 'Pin action' menu option.":::
 
 Once you pin an action, any other selected action panes are placed to the right of the pinned action pane.
 
-:::image type="content" source="media/flows-designer/pin-result.png" alt-text="Screenshot of a pinned action next to the open action pane.":::
+:::image type="content" source="media/flows-designer/pin-result.png" alt-text="Screenshot of a pinned action next to the open configuration pane.":::
 
 To unpin an action, you have two options:
 
-- Right-click the action on the canvas and select **Unpin action**.
+- Right-click the action on the [canvas](#canvas) and select **Unpin action**.
 - Select the **Pin** icon on the configuration pane.
 
 ## Identify differences between the new designer and the classic designer
@@ -272,7 +276,7 @@ You can now fix errors on this copy of the flow and save it. If you don't save t
 > - Clearing the browser cache deletes the saved copy of the flow from the browser.
 > - If you still need access to the unsaved flow copy, *don't* clear cache or cookies from the browser.
 
-## Limitations and known issues
+## Limitations and known issues in the new designer
 
 You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following items:
 
@@ -290,7 +294,7 @@ You might notice that some functionalities that were in the classic designer are
 
 As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is becoming the primary interface.
 
-If you prefer to access features not yet available in the new designer, or encounter any limitations or known issues, you can temporarily revert to the classic designer. To do this, turn off the **New designer** toggle on the menu in the cloud flows designer.
+If you prefer to access features not yet available in the new designer, or encounter any [limitations or known issues](#limitations-and-known-issues-in-the-new-designer), you can temporarily revert to the classic designer. To do this, turn off the **New designer** toggle on the menu in the cloud flows designer.
 
 > [!NOTE]
 > The new cloud flows designer isn't yet available in integration surfaces such as Solution Explorer, Power Apps, Teams, and others.
