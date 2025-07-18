@@ -14,13 +14,15 @@ ms.date: 07/07/2025
 ms.update-cycle: 180-days
 ms.author: kisubedi
 ms.reviewer: angieandrews
-ms.custom: copilot-scenario-highlight
 search.audienceType: 
   - flowmaker
   - enduser
 ms.collection:
   - get-started
   - bap-ai-copilot
+ms.custom:
+  - copilot-scenario-highlight
+  - sfi-image-nochange
 ---
 
 # Create a cloud flow in Power Automate

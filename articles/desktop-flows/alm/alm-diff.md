@@ -8,6 +8,7 @@ ms.subservice: desktop-flow
 ms.reviewer: matp
 ms.date: 01/06/2025
 ms.topic: how-to
+ms.custom: sfi-image-nochange
 ---
 
 # Compare your desktop flow changes

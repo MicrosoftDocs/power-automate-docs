@@ -14,6 +14,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Cloud Connectors as Power Automate for desktop actions
