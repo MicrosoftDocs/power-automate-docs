@@ -278,7 +278,7 @@ You can now fix errors on this copy of the flow and save it. If you don't save t
 
 ## Limitations and known issues in the new designer
 
-You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the designer doesn't support the following items:
+You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the new designer doesn't support the following items:
 
 - Non-Open API flows (If there's Peek code on an action and if you see the API Connection value instead of Open API Connection in Kind field, it's a non-Open API flow.)
   - These are legacy flows, probably created a long time ago when Open API support wasn't available.
