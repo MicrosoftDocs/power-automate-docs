@@ -9,6 +9,7 @@ ms.date: 03/10/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
+ms.custom: sfi-image-blocked
 - DanaMartens
 ---
 

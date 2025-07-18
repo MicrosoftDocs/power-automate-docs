@@ -19,6 +19,7 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
   - ai-seo-date:01/14/2025
+  - sfi-image-nochange
 ---
 
 # Troubleshoot desktop flows runtime

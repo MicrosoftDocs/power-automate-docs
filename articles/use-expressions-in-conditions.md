@@ -11,10 +11,12 @@ ms.update-cycle: 180-days
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
-ms.custom: copilot-scenario-highlight
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom:
+  - copilot-scenario-highlight
+  - sfi-image-nochange
 ---
 # Use expressions in conditions to check multiple values
 

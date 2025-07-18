@@ -14,6 +14,9 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 # Create an Azure Key Vault credential
 

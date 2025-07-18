@@ -5,7 +5,6 @@ suite: flow
 documentationcenter: na
 author: kathyos
 editor: ''
-ms.custom: guidance
 
 ms.topic: overview
 ms.tgt_pltfrm: na
@@ -13,6 +12,9 @@ ms.workload: na
 ms.date: 06/01/2021
 ms.author: mapichle
 ms.reviewer: angieandrews
+ms.custom:
+  - guidance
+  - sfi-image-nochange
 ---
 
 # Use no-code RPA with SAP GUI in Power Automate Desktop
