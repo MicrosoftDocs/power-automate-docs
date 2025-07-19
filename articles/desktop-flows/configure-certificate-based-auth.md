@@ -14,6 +14,7 @@ search.audienceType:
   - flowmaker
   - envadmin
 ms.custom:
+  - sfi-image-nochange
 - ai-gen-docs-bap
 - ai-gen-description
 - ai-seo-date:11/05/2024

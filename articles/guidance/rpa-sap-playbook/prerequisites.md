@@ -4,13 +4,15 @@ description: These prerequisites need to be met before you can start automating 
 suite: flow
 documentationcenter: na
 author: kathyos
-ms.custom: guidance
 ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/01/2021
 ms.author: mapichle
 ms.reviewer: angieandrews
+ms.custom:
+  - guidance
+  - sfi-image-nochange
 ---
 
 # Prerequisites for automating SAP GUI-based workloads

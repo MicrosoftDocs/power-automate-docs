@@ -10,6 +10,7 @@ ms.update-cycle: 180-days
 ms.collection: bap-ai-copilot
 search.audienceType: 
   - maker
+ms.custom: sfi-image-nochange
 ---
 
 # Use lists of rows in flows

@@ -19,6 +19,7 @@ search.audienceType:
 ms.collection:
   - get-started
   - bap-ai-copilot
+ms.custom: sfi-image-nochange
 ---
 
 # Explore the Power Automate home page
