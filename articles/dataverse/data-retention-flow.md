@@ -6,7 +6,9 @@ ms.author: matow
 ms.service: powerapps
 ms.topic: how-to 
 ms.date: 09/25/2024
-ms.custom: template-how-to 
+ms.custom:
+  - template-how-to
+  - sfi-image-nochange
 ---
 # Create a cloud flow to view Dataverse long term retained data
 

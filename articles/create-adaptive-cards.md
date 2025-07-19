@@ -14,6 +14,7 @@ ms.topic: how-to
 ms.date: 06/25/2025
 ms.author: ralinga
 ms.reviewer: angieandrews
+ms.custom: sfi-image-nochange
 ---
 
 # Create your first adaptive card

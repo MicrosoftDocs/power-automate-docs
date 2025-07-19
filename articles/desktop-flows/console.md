@@ -19,6 +19,7 @@ search.audienceType:
   - enduser
 ms.collection: 
     - bap-ai-copilot
+ms.custom: sfi-image-nochange
 ---
 
 # Power Automate console

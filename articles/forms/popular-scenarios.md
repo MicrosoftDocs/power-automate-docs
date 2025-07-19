@@ -12,6 +12,7 @@ ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Common ways to use a form in a flow

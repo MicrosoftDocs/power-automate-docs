@@ -18,7 +18,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ms.collection: bap-ai-copilot
-ms.custom: DevRelAdv
+ms.custom:
+  - DevRelAdv
+  - sfi-image-nochange
 ---
 
 # Troubleshoot a cloud flow

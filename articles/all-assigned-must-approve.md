@@ -16,6 +16,7 @@ ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 # Create an approval flow that requires everyone to approve
 

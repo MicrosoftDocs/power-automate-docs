@@ -17,6 +17,7 @@ ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Rebind reports without using a composite model (same workspace)

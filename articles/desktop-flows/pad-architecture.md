@@ -15,6 +15,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-ropc-nochange
 ---
 
 # Power Automate for desktop architecture
