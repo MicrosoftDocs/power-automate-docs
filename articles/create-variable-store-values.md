@@ -7,6 +7,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
 ms.date: 04/04/2025
+ms.update-cycle: 180-days
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -39,7 +40,7 @@ Before you can add actions for creating and working with variables, your flow mu
 - A cloud flow in which you want to create the variable.
 - If you're new to Power Automate, review [Get started with Power Automate](getting-started.md) and [Overview of cloud flows](overview-cloud.md).
 
-[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
 ## Initialize a variable
 

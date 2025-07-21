@@ -20,6 +20,7 @@ search.app:
   - Powerplatform
 search.audienceType: 
   - admin
+ms.custom: sfi-ga-nochange
 ---
 
 # Respond to personal data requests (Microsoft Entra ID)

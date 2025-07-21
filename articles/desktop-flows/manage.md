@@ -6,6 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 05/22/2025
+ms.update-cycle: 180-days
 ms.author: appapaio
 ms.reviewer: matp
 contributor: yiannismavridis

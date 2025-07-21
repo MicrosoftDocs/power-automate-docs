@@ -6,7 +6,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 08/27/2024
+ms.date: 07/01/2025
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -45,6 +45,14 @@ Subflows are shown in tabs, directly over the main workspace. To add a new subfl
 ![Screenshot of the populated Run subflow action.](./media/setting-subflows/add-new-subflow.png)
 
 Select a subflow tab to edit the respective subflow.
+
+### Organizing subflows
+
+When there are dozens of subflows within your flow, you might need to reorganize or reorder your subflows in an order that makes more sense to you for flow navigation purposes.
+
+The default sorting option follows the subflows creation original ascending order. Alternatively, you can switch to descending order, or you can instead sort by name, so that your subflows are sorted alphabetically (in ascending or descending order).
+
+You can use a custom order for your subflows, manually reordering them in any order you'd like. Keep in mind that the **Main** subflow always remains on top of your subflows list and can't be moved.
 
 ## Saving flows
 

@@ -10,6 +10,9 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # Use RPA with Dynamics 365 Finance

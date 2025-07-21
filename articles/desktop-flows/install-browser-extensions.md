@@ -13,7 +13,9 @@ search.audienceType:
   - enduser
 ms.subservice: desktop-flow
 ms.service: power-automate
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Install Power Automate browser extensions

@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 01/14/2025
+ms.date: 06/21/2025
 ms.author: kenseongtan
 ms.reviewer: matp
 contributors:
@@ -274,5 +274,5 @@ Environment admins can also restrict machine registration to a specific set of u
 |Name|Limit|
 |---|---|
 |Maximum number of machines in a group |50|
-|Maximum amount of time a desktop flow can run |24 hours|
+|Maximum amount of time a desktop flow can run |Unlimited|
 |Maximum amount of time a desktop flow can be queued |Six hours|

@@ -11,6 +11,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: troubleshooting-general
 ms.date: 02/06/2025
+ms.update-cycle: 180-days
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
@@ -34,7 +35,7 @@ Sometimes, you might need to [Identify specific flow runs](./fix-flow-failures.m
 
    If your flow violates a DLP policy, it is suspended, causing the trigger to not fire. To know if your flow is suspended, try to edit the flow and save it. The flow checker reports it if the flow violates a DLP policy. Your admin can change the DLP policy.
 
-1. The trigger might be failing. 
+1. The trigger might be failing.
    Follow these steps to confirm:
 
    1. Sign in to [Power Automate](https://make.powerautomate.com).
@@ -47,15 +48,15 @@ Sometimes, you might need to [Identify specific flow runs](./fix-flow-failures.m
 
    One of the common reasons for this failure is that the Power Automate service endpoints aren't part of the allow list. To fix it, confirm that your IT department added these endpoints to the allow list.
 
-   Here's the list of [IP addresses](/power-apps/limits-and-config#ip-addresses) and [domains](https://support.microsoft.com/help/4557620/client-request-aborted-or-failed-to-fetch-error-in-power-automate) that need to be added to your allow list.
+   Here's the list of [IP addresses and domains](ip-address-configuration.md) that need to be added to your allow list.
 
-   Refer to this [support article](https://support.microsoft.com/help/4540228/there-is-a-problem-with-the-flow-s-trigger) to learn more about how to fix issues with triggers.
+   Learn more about how to fix issues with triggers in [There is a problem with the flow's trigger](/troubleshoot/power-platform/power-automate/flow-run-issues/there-is-a-problem-with-the-flows-trigger).
 
 After the problem is resolved, modify the flow and then save it. You can then change it back to its original state, and then save it again. The flow becomes aware that its configuration changed, and it tries to register its trigger again.
 
 ### Verify connections
 
-With the default settings, users only need to sign in to a connection once. They can then use that connection until an admin revokes it. A possible scenario is that the password for the connection can expire or there might be a policy in your organization which sets the connector’s authentication token to expire after a specific amount of time. Token lifetime policies are configured on Microsoft Entra ID. For more information, review this [Azure article](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
+With the default settings, users only need to sign in to a connection once. They can then use that connection until an admin revokes it. A possible scenario is that the password for the connection can expire or there might be a policy in your organization, which sets the connector’s authentication token to expire after a specific amount of time. Token lifetime policies are configured on Microsoft Entra ID. For more information, review this [Azure article](/azure/active-directory/develop/active-directory-configurable-token-lifetimes).
 
 Follow these steps to verify if your connections are broken:
 
@@ -98,7 +99,7 @@ If you expect the flow to run but it didn’t run, see if it shows the trigger c
 
 Sometimes, the inputs and trigger conditions might cause failures. Follow these steps to verify your inputs and conditions.
 
-[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 
@@ -164,7 +165,7 @@ If everything looks good but your flow is still not triggering, verify if your f
 
 There are two types of triggers&mdash;polling triggers and Webhook triggers.
 
-If you turned off your flow and then turned it back on, depending on your trigger type, your old triggers may be processed.
+If you turned off your flow and then turned it back on, depending on your trigger type, your old triggers might be processed.
 
 A polling trigger periodically makes a call to your service to look for new data, whereas a Webhook trigger responds to a push of new data from the service.
 
@@ -179,7 +180,7 @@ Follow these steps to determine the type of trigger that your flow uses.
 
 # [New designer](#tab/new-designer)
 
-1. In the action configfuration pane to the left, select **Code View**.
+1. In the action configuration pane to the left, select **Code View**.
 1. Find the `recurrence` section with an interval `frequency` element. If this section is available, the trigger is a *polling* trigger.
 
     :::image type="content" source="./media/triggers-introduction/copilot-recurrence.png" alt-text="Screenshot of the recurrence section in Copilot.":::
@@ -198,7 +199,7 @@ Follow these steps to determine the type of trigger that your flow uses.
 
 ## My flow is triggered multiple times or some of my actions run multiple times
 
-You may encounter a scenario where a single flow run has some (or all) of its actions duplicated. While the UI doesn't show this problem, you might see the results of the flow being duplicated. For example, duplicate emails sent, or duplicate list items created.
+You might encounter a scenario where a single flow run has some (or all) of its actions duplicated. While the UI doesn't show this problem, you might see the results of the flow being duplicated. For example, duplicate emails sent, or duplicate list items created.
 
 One of the reasons this might happen is because of the "at-least-once" design of Azure Logic Apps.
 
@@ -210,15 +211,15 @@ Another possibility is for flow triggering multiple times might be having copies
 
 ## My recurrence trigger runs ahead of schedule
 
-Confirm that you've set the **Start time** on the **Recurrence** card to ensure it runs only at the time that you need. For example, set **Start time** to '2022-10-10T10:00:00Z' to start your trigger at 10:00 AM.
+Confirm that you set the **Start time** on the **Recurrence** card to ensure it runs only at the time that you need. For example, set **Start time** to '2022-10-10T10:00:00Z' to start your trigger at 10:00 AM.
 
 ## There's a delay before my trigger fires
 
-If the trigger is a polling trigger, it wakes up periodically to check if any new events have occurred. The wake-up time depends on the license plan on which the flow runs.
+If the trigger is a polling trigger, it wakes up periodically to check if new events occurred. The wake-up time depends on the license plan on which the flow runs.
 
-For example, your flows may run every 15 minutes if you’re on the **Free** license plan. On the **Free** plan, if a cloud flow is triggered less than 15 minutes after its last run, it’s queued until 15 minutes have elapsed.
+For example, your flows might run every 15 minutes if you’re on the **Free** license plan. On the **Free** plan, if a cloud flow is triggered less than 15 minutes after its last run, it’s queued until 15 minutes have elapsed.
 
-And, if your license is the **Flow for Office 365** plan (from your Enterprise license E3, E5, etc.) or the **Flow for Dynamics 365** plan, your flow won't run again until five minutes have elapsed. So, it may be a few minutes between the time the triggering event occurs and the time the flow begins.
+And, if your license is the **Flow for Office 365** plan (from your Enterprise license E3, E5, etc.) or the **Flow for Dynamics 365** plan, your flow won't run again until five minutes have elapsed. So, it might be a few minutes between the time the triggering event occurs and the time the flow begins.
 
 Follow these steps to check the trigger wake up frequency.
 
@@ -264,7 +265,7 @@ If it's taking much longer than expected for your flow to trigger, here are the 
 
 Unable to rename actions in a cloud flow – This is a known issue for flows that use Power Apps triggers. As a workaround to rename actions, remove the trigger. Rename the actions, add your Power Apps trigger, and then configure variables wherever needed.
 
-After an app is published, make copies of the flows used by that app to make any updates. Any update to a cloud flow that's referenced by a published app can break existing users. Don't delete or turn off existing flows until all users have been upgraded to the new published version of the app.
+After an app is published, make copies of the flows used by that app to make any updates. Any update to a cloud flow that's referenced by a published app can break existing users. Don't delete or turn off existing flows until all users are upgraded to the new published version of the app.
 
 ## SharePoint trigger issues
 
@@ -280,9 +281,9 @@ You can try one of the following:
 
 1. Confirm the user has the appropriate license for the connections in the flow.
 
-   A Power Automate license is required for the user to perform any actions like save, turn off, and more. A Power Apps, Dynamics 365, or Microsoft 365 license isn't sufficient. Users with whom flows that use premium connectors are shared will each need a Power Automate Premium (previously Power Automate per user) or Power Automate Process license (previously Power Automate per flow) license to edit or manually trigger the flow. If the user was previously able to save or modify the flow, it's possible that their license has expired.
+   A Power Automate license is required for the user to perform any actions like save, turn off, and more. A Power Apps, Dynamics 365, or Microsoft 365 license isn't sufficient. Users with whom flows that use premium connectors are shared will each need a Power Automate Premium (previously Power Automate per user) or Power Automate Process license (previously Power Automate per flow) license to edit or manually trigger the flow. If the user was previously able to save or modify the flow, it's possible that their license expired.
 
-   Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you need a paid plan to run or edit flows that use premium connectors. You can find more information in the [licensing page](https://make.powerautomate.com/pricing) or this [support article](https://support.microsoft.com/help/4552636/error-user-does-not-have-a-service-plan-adequate-for-the-non-standard).
+   Alternatively, you can start a trial for the **Per User** plan for 90 days, after which you need a paid plan to run or edit flows that use premium connectors. Learn more in the [licensing page](https://make.powerautomate.com/pricing) and [Power Automate support](https://www.microsoft.com/en-us/power-platform/products/power-automate/).
 
 ### My flows don't trigger after I change the environment URL
 

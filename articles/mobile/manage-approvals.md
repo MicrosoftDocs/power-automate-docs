@@ -15,6 +15,7 @@ ms.topic: how-to
 ms.date: 06/05/2023
 ms.author: jamiller
 ms.reviewer: angieandrews
+ms.custom: sfi-image-nochange
 ---
 
 # Manage approvals

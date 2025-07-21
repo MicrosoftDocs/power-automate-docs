@@ -9,6 +9,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
 ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -63,7 +64,7 @@ The following table shows the audience values across different clouds:
 
 Depending on your designer version, parameters appear in different locations.
 
-[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 

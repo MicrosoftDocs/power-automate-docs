@@ -2,66 +2,82 @@
   items:
     - name: Power Automate guidance documentation
       href: index.yml
-    - name: Best practices for building cloud flows
+    - name: Best practices
       items:
-        - name: Overview
-          href: coding-guidelines/index.md
-        - name: Coding guidelines
-          items: 
-            - name: Use consistent naming conventions 
-              href: coding-guidelines/use-consistent-naming-conventions.md
-            - name: Understand benefits of solution-aware flows
-              href: coding-guidelines/understand-benefits-solution-aware-flows.md
-            - name: Use and create scopes
-              href: coding-guidelines/create-scopes.md
-            - name: Offload complex business logic
-              href: coding-guidelines/leave-complex-business-logic-out.md
-            - name: Create reusable code
-              href: coding-guidelines/create-reusable-code.md
-            - name: Implement parallel execution and concurrency
-              href: coding-guidelines/implement-parallel-execution.md
-            - name: Work with data operations
-              href: coding-guidelines/use-data-operations.md
-            - name: Optimize Power Automate triggers
-              href: coding-guidelines/optimize-power-automate-triggers.md
-            - name: Work only with relevant data
-              href: coding-guidelines/work-with-relevant-data.md
-            - name: Avoid anti-patterns
-              href: coding-guidelines/avoid-anti-patterns.md
-            - name: Use asynchronous flow patterns
-              href: coding-guidelines/asychronous-flow-pattern.md
-            - name: Use environment variables
-              href: coding-guidelines/use-environment-variables.md
-            - name: Employ robust error handling
-              href: coding-guidelines/error-handling.md
-            - name: Manage flow behavior with Flow Checker
-              href: coding-guidelines/manage-flows-flow-checker.md
-            - name: Test cloud flows
-              href: coding-guidelines/test-cloud-flows.md
-            - name: Leverage Power Automate features
-              href: coding-guidelines/use-peekcode-addnotes.md
-            - name: Troubleshooting tips
-              href: coding-guidelines/troubleshoot-cloud-flows.md
-            - name: Understand limits
-              href: coding-guidelines/understand-limits.md
-        - name: Design secure cloud flows
-          items: 
-            - name: Secure data used in cloud flows
-              href: coding-guidelines/use-secure-inputs-outputs-triggers.md
-            - name: Keep flow configuration generic
-              href: coding-guidelines/keep-flow-configuration-generic.md
-            - name: Understand access to flows
-              href: coding-guidelines/understand-access-to-flows.md
-            - name: Use auditing in Dataverse and Microsoft Purview
-              href: coding-guidelines/use-auditing-dataverse.md
-            - name: Prevent data exfiltration
-              href: coding-guidelines/prevent-data-exfiltration.md
-            - name: Consider customer-managed keys
-              href: coding-guidelines/use-cmk-for-cloud-flows.md
-        - name: Integrating cloud flows with Power Apps 
-          href: coding-guidelines/integrating-cloud-flows-power-apps.md
-        - name: Monitoring and alerting
-          href: coding-guidelines/monitoring-and-alerting.md
+        - name: Best practices for building cloud flows
+          items:
+            - name: Overview
+              href: coding-guidelines/index.md
+            - name: Coding guidelines
+              items:
+                - name: Use consistent naming conventions
+                  href: coding-guidelines/use-consistent-naming-conventions.md
+                - name: Understand benefits of solution-aware flows
+                  href: coding-guidelines/understand-benefits-solution-aware-flows.md
+                - name: Organize your flows with scopes
+                  href: coding-guidelines/create-scopes.md
+                - name: Offload complex business logic
+                  href: coding-guidelines/leave-complex-business-logic-out.md
+                - name: Create reusable code with child flows
+                  href: coding-guidelines/create-reusable-code.md
+                - name: Implement parallel execution and concurrency
+                  href: coding-guidelines/implement-parallel-execution.md
+                - name: Work with data operations
+                  href: coding-guidelines/use-data-operations.md
+                - name: Optimize Power Automate triggers
+                  href: coding-guidelines/optimize-power-automate-triggers.md
+                - name: Work only with relevant data
+                  href: coding-guidelines/work-with-relevant-data.md
+                - name: Avoid anti-patterns
+                  href: coding-guidelines/avoid-anti-patterns.md
+                - name: Use asynchronous responses
+                  href: coding-guidelines/asychronous-flow-pattern.md
+                - name: Use environment variables
+                  href: coding-guidelines/use-environment-variables.md
+                - name: Employ robust error handling
+                  href: coding-guidelines/error-handling.md
+                - name: Manage flow behavior with Flow Checker
+                  href: coding-guidelines/manage-flows-flow-checker.md
+                - name: Test cloud flows
+                  href: coding-guidelines/test-cloud-flows.md
+                - name: Leverage Power Automate features
+                  href: coding-guidelines/use-peekcode-addnotes.md
+                - name: Troubleshoot cloud flows
+                  href: coding-guidelines/troubleshoot-cloud-flows.md
+                - name: Understand platform limits
+                  href: coding-guidelines/understand-limits.md
+            - name: Design secure cloud flows
+              items:
+                - name: Secure data used in cloud flows
+                  href: coding-guidelines/use-secure-inputs-outputs-triggers.md
+                - name: Keep flow configuration generic
+                  href: coding-guidelines/keep-flow-configuration-generic.md
+                - name: Understand flow ownership and access
+                  href: coding-guidelines/understand-access-to-flows.md
+                - name: Use auditing in Dataverse and Microsoft Purview
+                  href: coding-guidelines/use-auditing-dataverse.md
+                - name: Prevent unauthorized transfer of data
+                  href: coding-guidelines/prevent-data-exfiltration.md
+                - name: Use customer-managed keys
+                  href: coding-guidelines/use-cmk-for-cloud-flows.md
+            - name: Integrate cloud flows with Power Apps
+              href: coding-guidelines/integrating-cloud-flows-power-apps.md
+            - name: Monitor your flows
+              href: coding-guidelines/monitoring-and-alerting.md
+        - name: Best practices for building desktop flows
+          items:
+            - name: Overview
+              href: desktop-flow-coding-guidelines/index.md
+            - name: Build readable and maintainable flow scripts
+              href: desktop-flow-coding-guidelines/build-readable-flow-scripts.md
+            - name: Optimize flow performance
+              href: desktop-flow-coding-guidelines/optimize-flow-performance.md
+            - name: Secure your data
+              href: desktop-flow-coding-guidelines/secure-your-data.md
+            - name: Optimize end-to-end process performance
+              href: desktop-flow-coding-guidelines/optimize-end-to-end-performance.md
+            - name: Monitor and troubleshoot automation processes
+              href: desktop-flow-coding-guidelines/monitor-automation.md
     - name: Plan a Power Automate project
       items:
         - name: Introduction

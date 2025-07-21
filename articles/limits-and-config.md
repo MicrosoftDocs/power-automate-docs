@@ -2,7 +2,7 @@
 title: Limits of automated, scheduled, and instant flows
 description: Learn about the limits that apply to automated, scheduled, and instant flows in Microsoft Power Automate.
 author: samathur
-ms.author: quseleba
+ms.author: matow
 ms.reviewer: angieandrews
 Contributors:
   - QuentinSele
@@ -15,7 +15,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
 suite: flow
-ms.date: 06/05/2025
+ms.date: 06/25/2025
 search.audienceType: 
   - flowmaker
   - enduser
@@ -92,10 +92,9 @@ The following table describes the limits on how long flows remain turned on befo
 
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
-| Flows with errors    | 14 days |  A cloud flow that has a trigger or actions that fail continuously is turned off. Fix your trigger or actions and turn on the flow. These flows have FlowSuspensionReason=AlwaysFailingDetected. |
-| Not triggered (dormant) flows | 90 days for free, trial, community, and Microsoft 365 Plans. No expiration limit for all others. | A cloud flow that has no successful triggers expires and is turned off. After 90 days of inactivity, the flow creator and co-owners receive an email. If no action is taken in next 30 days, the flow is systematically turned off, and the creator and co-owners are notified in an email. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed on [Power Automate pricing](https://make.powerautomate.com/pricing) to ensure your flow isn’t turned off due to inactivity. You can turn your cloud flows back on anytime. These flows have FlowSuspensionReason=NeverTriggeringDetected. |
-| Consistently throttled flows | 14 days |A cloud flow that's consistently throttled for 14 days is turned off. The flow creator and co-creators get an email when the flow starts throttling and when the flow is turned off. For enterprise scenarios, we recommend you buy a standalone Power Automate license listed on [Power Automate pricing](https://make.powerautomate.com/pricing) to get higher action limits. You can turn your cloud flows back on anytime.|
-|Premium flows without premium licenses| 14 days | Flows that were created with premium features (premium connectors, custom connectors, HTTP connectors, on premises gateway, and business process flows) but don't have a premium Power Automate license are turned off after 14 days. This situation happens if the original owner leaves the organization, or if they have an expired trial or premium license. The flow owner and co-owners get an email when the trial or premium license expires, or when the owner isn't found in Microsoft Entra ID (Microsoft Entra ID). The flow continues to work for 14 days. If a premium license isn't assigned to the flow within 14 days, the flow is automatically turned off, and the owner and co-owners are notified through email. Newly created or edited premium flows without a premium license are saved but turned off. Once a premium Power Automate license is assigned to the owner or flow, you can turn on the flow. Admins can [find these flows](/power-platform/admin/power-automate-licensing/faqs#how-can-i-identify-flows-that-need-premium-licenses-to-avoid-interruptions). Assign a Power Automate Process license or a per user license to the owner to keep the flow running.|
+| Flows with errors    | 14 days |  A cloud flow that has a trigger or actions that fail continuously will be turned off.
+| Flows without trigger activity | 90 days | A cloud flows that isn't triggered within a 90 day period might be turned off. Flows owned by users with premium licenses or assigned capacity licenses (Power Automate Process, per flow) aren't subject to this suspension. Flow owners and co-owners are notified 30 days prior to suspension, and can turn the flow back on for it to continue operating. |
+| Consistently throttled flows | 14 days | A cloud flow that is consistently throttled will be turned off. Assign Power Automate Process licenses to the flow to dedicate capacity and avoid throttling.|
 
 ## Concurrency, looping, and debatching limits
 
@@ -115,7 +114,7 @@ The following table describes the concurrency, looping, and debatching limits fo
 
 The following sections describe the time-bound limits for a single version of a cloud flow definition. These limits apply across all runs of the flow version and are calculated on sliding windows.
 
-If a cloud flow exceeds one of the limits, flow activity is slowed. It automatically resumes when the sliding window has activity below the limit. However, if a cloud flow [consistently remains above the limits](#duration-and-retention-limits) for 14 days, it's turned off. Be sure to monitor email for notifications about such flows. If a cloud flow consistently exceeds the limits, you need to revise it to remain below the limits to prevent it from being turned off.
+If a cloud flow exceeds one of the limits, flow activity is slowed. It automatically resumes when the sliding window has activity below the limit. However, if a cloud flow [consistently remains above the limits](#duration-and-retention-limits) for 14 days, it is turned off. Be sure to monitor email for notifications about such flows. If a cloud flow consistently exceeds the limits, you need to revise it to remain below the limits to prevent it from being turned off.
 
 > [!TIP]
 > Because these limits are for a single version, if you update your flow, it resets the limits.

@@ -11,7 +11,7 @@ ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 04/02/2025
+ms.date: 07/11/2025
 ms.author: heortaol
 search.audienceType: 
   - flowmaker
@@ -46,7 +46,7 @@ You can use Copilot to create cloud flows. Copilot is an AI-powered assistant th
 
 Copilot in cloud flows allows you to create automation that helps streamline your workflow through quick and easy natural language expressions. You can create a flow by describing what you need through multiple steps of conversation.
 
-Learn more in [Get started with Copilot in cloud flows](get-started-with-copilot.md).
+Learn more in [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md).
 
 ## Create and use cloud flows from your phone
 

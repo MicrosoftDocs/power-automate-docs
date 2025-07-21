@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: taiki-yoshida
   ms.author: tayoshi
-  ms.date: 06/20/2024
+  ms.date: 05/23/2025
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -32,9 +32,25 @@ landingContent:
             url: coding-guidelines/use-secure-inputs-outputs-triggers.md
           - text: Integrate cloud flows with Power Apps
             url: coding-guidelines/integrating-cloud-flows-power-apps.md
-          - text: Monitoring and alerting
+          - text: Monitor your flows
             url: coding-guidelines/monitoring-and-alerting.md
-  
+  - title: Best practices for building desktop flows
+    linkLists:
+       - linkListType: how-to-guide
+         links:
+          - text: Overview
+            url: desktop-flow-coding-guidelines/index.md
+          - text: Build readable and maintainable flow scripts
+            url: desktop-flow-coding-guidelines/build-readable-flow-scripts.md
+          - text: Optimize flow performance
+            url: desktop-flow-coding-guidelines/optimize-flow-performance.md
+          - text: Secure your data
+            url: desktop-flow-coding-guidelines/secure-your-data.md
+          - text: Optimize end-to-end process performance
+            url: desktop-flow-coding-guidelines/optimize-end-to-end-performance.md
+          - text: Monitor and troubleshoot automation processes
+            url: desktop-flow-coding-guidelines/monitor-automation.md
+
   # Card 
   - title: Planning a Power Automate project
     linkLists:

@@ -11,6 +11,7 @@ ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: how-to
 ms.date: 04/18/2025
+ms.update-cycle: 180-days
 ms.collection: bap-ai-copilot
 search.app: 
   - Flow
@@ -37,7 +38,7 @@ The following information is required to use the **When a row is added, modified
 - Table name
 - Scope
 
-[!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](../includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 
