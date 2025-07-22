@@ -10,6 +10,7 @@ ms.reviewer: angieandrews
 ms.topic: how-to
 ms.date: 04/04/2024
 ms.custom:
+  - sfi-image-nochange
 ---
 
 # Support for service principal owned flows

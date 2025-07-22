@@ -53,4 +53,5 @@ Follow these steps to get started with change sets.
 
 - The only supported actions in a changeset scope are **Add a new row**, **Delete a row**, and **Update a row**. For example, the **Apply to each** action isn't supported in a changeset.
 - You can't reference an output of a previous action in the changeset scope.
-- Perform a changeset request action (Dataverse) isn't supported yet in the [AI-powered cloud flows designer](../flows-designer.md#limitations-and-known-issues).
+- Perform a changeset request action (Dataverse) isn't supported yet in the [AI-powered cloud flows designer](../flows-designer.md#limitations-and-known-issues-in the-new-designer).
+

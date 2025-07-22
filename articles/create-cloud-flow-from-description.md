@@ -13,7 +13,8 @@ ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 11/08/2024
+ms.date: 07/11/2025
+ms.update-cycle: 180-days
 search.audienceType: 
   - flowmaker
   - enduser
@@ -45,7 +46,7 @@ In the following example, you build an automated cloud flow that sends a notific
 
     :::image type="content" source="media/easy-flow/describe-it-main.png" alt-text="Screenshot of the Describe it to design it (preview) tile.":::
 
-   A screen opens where you can enter a description of what you want to automate. You also get an example you can use for inspiration and try it out right away. As an alternate, you can also go to **Home** and start describing your requirement. Learn more in [Create a flow using Copilot](get-started-with-copilot.md).
+   A screen opens where you can enter a description of what you want to automate. You also get an example you can use for inspiration and try it out right away. As an alternative, you can go to **Home** and start describing your requirement. Learn more in [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md).
 
 1. For this example, enter **Every time someone responds to a Microsoft Forms survey, post a message to Teams and send an email**.
 

@@ -11,6 +11,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: troubleshooting-general
 ms.date: 07/22/2025
+ms.update-cycle: 180-days
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot

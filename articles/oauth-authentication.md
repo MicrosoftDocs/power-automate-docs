@@ -9,6 +9,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
 ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template

@@ -8,11 +8,13 @@ Contributors:
   - Grant-Archibald-MS
   - v-aangie
 editor: ''
-ms.custom: guidance
 ms.topic: how-to
 ms.date: 04/21/2023
 ms.author: macarrer
 ms.reviewer: angieandrews
+ms.custom:
+  - guidance
+  - sfi-image-nochange
 ---
 
 # Configure automation kit environment variables

@@ -12,6 +12,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Run Power Automate with elevated rights

@@ -10,6 +10,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
 ms.date: 07/08/2025
+ms.update-cycle: 180-days
 ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.collection:
@@ -65,11 +66,11 @@ You work with triggers in the *designer*. [!INCLUDE[designer-tab-experience](./i
 1. Select the **Add a trigger** card. The **Add a trigger** pane opens.
 1. Search for the connector or trigger you want to use. You can search for a specific trigger by typing a name in the search field, or by selecting the right arrow (**>**) next to an option in a trigger category.
 
-    The **Add a trigger** pane is organized in the same way as the **Add an action** pane. Learn more in [Explore the cloud flows designer](flows-designer.md#action-configuration-pane).
+    The **Add a trigger** pane is organized in the same way as the **Add an action** pane. Learn more in [Explore the cloud flows designer](flows-designer.md#configuration-pane).
 
 1. Select the trigger that you want to use. The configuration pane opens to allow you to configure the trigger.
 1. Configure the trigger settings, if needed.
-1. Close the configuration panel and return to the flow designer by selecting **<<**.
+1. Close the configuration pane and return to the flow designer by selecting **<<**.
 
     The new trigger is now the first step in your flow.
 
