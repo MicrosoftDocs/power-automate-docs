@@ -56,7 +56,7 @@ After the problem is resolved, modify the flow and then save it. You can then ch
 
 ### Verify connections
 
-With the default settings, users only need to sign in to a connection once. They can then use that connection until an admin revokes it. A possible scenario is that the password for the connection can expire or there might be a policy in your organization, which sets the connector's authentication token to expire after a specific amount of time. Token lifetime policies are configured on Microsoft Entra ID. Learn more in [Configurable token lifetimes in the Microsoft identity platform (preview)](https://entra.microsoft.com/configurable-token-lifetimes).
+With the default settings, users only need to sign in to a connection once. They can then use that connection until an admin revokes it. A possible scenario is that the password for the connection can expire or there might be a policy in your organization, which sets the connector's authentication token to expire after a specific amount of time. Token lifetime policies are configured on Microsoft Entra ID. Learn more in [Configurable token lifetimes in the Microsoft identity platform (preview)](/entra/identity-platform/configurable-token-lifetimes).
 
 Follow these steps to verify if your connections are broken:
 
