@@ -39,7 +39,7 @@ Sometimes, you might need to [Identify specific flow runs](./fix-flow-failures.m
    Follow these steps to confirm:
 
    1. Sign in to [Power Automate](https://make.powerautomate.com).
-   1. On the navigation pane to the left, select **My flows**, and then select your flow.
+   1. On the navigation menu to the left, select **My flows**, and then select your flow.
    1. Review the details page. Do you see the following error in the **Details**?
 
        :::image type="content" source="./media/triggers-introduction/fix-trigger.png" alt-text="Screenshot of an error message about the flow's trigger.":::
@@ -89,7 +89,7 @@ Follow these steps to view the type of license that you have:
 
 You just completed an event. For example, you added a new list item or sent an email that should have triggered the flow, but the flow didn't run.
 
-1. On the navigation pane to the left, select **My flows**, and then select the flow.
+1. On the navigation menu to the left, select **My flows**, and then select the flow.
 1. In the **28-day run history**, select **All runs**.
 
     :::image type="content" source="./media/triggers-introduction/all-runs.png" alt-text="Screenshot showing all runs.":::
@@ -105,7 +105,7 @@ Sometimes, the inputs and trigger conditions might cause failures. Follow these 
 # [New designer](#tab/new-designer)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. On the navigation pane to the left, select **My flows**, and then select a flow.
+1. On the navigation menu to the left, select **My flows**, and then select a flow.
 1. On the command bar, select **Edit**.
 1. Select the first card to see what folders, sites, mailboxes, and others are used in the trigger in the configuration pane.
 
@@ -123,7 +123,7 @@ Sometimes, the inputs and trigger conditions might cause failures. Follow these 
 # [Classic designer](#tab/classic-designer)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. On the navigation pane to the left, select **My flows**, and then select a flow.
+1. On the navigation menu to the left, select **My flows**, and then select a flow.
 1. On the command bar, select **Edit**.
 1. Expand the first card to see what folders, sites, mailboxes, and others are used in the trigger.
 1. On the card, select the ellipsis (**…**) > **Settings**.
@@ -233,7 +233,7 @@ Follow these steps to check the trigger wake-up frequency.
 # [New designer](#tab/new-designer)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. On the navigation pane to the left, select **My flows**, and then select a flow.
+1. On the navigation menu to the left, select **My flows**, and then select a flow.
 1. On the command bar, select **Edit**.
 1. On your flow, select your flow trigger.
 1. In the configuration tab, select the **Code view** tab.
@@ -244,7 +244,7 @@ Follow these steps to check the trigger wake-up frequency.
 # [Classic designer](#tab/classic-designer)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. On the navigation pane to the left, select **My flows**, and then select a flow.
+1. On the navigation menu to the left, select **My flows**, and then select a flow.
 1. On the command bar, select **Edit**.
 1. On your flow trigger, select the ellipsis (**...**) > **Peek code**.
 
