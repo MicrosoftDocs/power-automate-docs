@@ -1,5 +1,5 @@
 ---
-title: Drafts and versioning for cloud flows
+title: Drafts and versioning for solution-awarecloud flows
 description: Learn about drafts and versioning feature set for cloud flows.
 suite: flow
 author: ChrisGarty
@@ -9,23 +9,29 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 02/28/2025
-ms.author: cgarty
+ms.date: 07/18/2025
+ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Drafts and versioning for cloud flows
+# Drafts and versioning for solution-aware cloud flows
 
-When you're authoring a solution cloud flow, you can save drafts in Microsoft Dataverse before the flow is complete. Then, the flow can be published when you're ready to run the flow. As you're evolving the flow, a version history is built up in Dataverse and can be accessed on the version history panel.
+When you're authoring a [solution-aware cloud flow](overview-solution-flows.md), you can save drafts in Microsoft Dataverse before the flow is complete. Then, the flow can be published when you're ready to run the flow. As you're evolving the flow, a version history is built up in Dataverse and can be accessed on the version history panel.
+
+When a solution-aware flow is open in the designer, you can:
+
+- Display new versions being published when saved
+- Review previous versions
+- [Publish](#publish-a-cloud-flow) solution-aware cloud flow versions
 
 ## Availability
 
-The flow drafts and versioning feature set is available only for [solution cloud flows](/power-automate/create-flow-solution). Solution cloud flows can be [created directly in a solution](/power-automate/create-flow-solution#create-a-solution-aware-cloud-flow), [added into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution), or created by default if the [Create in Dataverse solutions environment setting](/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature) is enabled.
+The drafts and versioning feature set is available only for [solution-aware cloud flows](/power-automate/create-flow-solution). Solution-aware cloud flows can be [created directly in a solution](/power-automate/create-flow-solution#create-a-solution-aware-cloud-flow), [added into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution), or created by default if the [Create in Dataverse solutions environment setting](/power-apps/maker/canvas-apps/add-app-solution-default#enable-the-feature) is enabled.
 
-The flow drafts and versioning feature set has been available in all regions since February 7, 2025.
+The flow drafts and versioning feature set was made available to all regions on February 7, 2025.
 
 ## Save drafts
 
@@ -43,7 +49,7 @@ Save a draft of a flow whenever you want, even with errors. Make changes to your
 
 The state of the flow (*Draft* or *Published*) shows beside the flow title to indicate if that version of the flow was published, or if the flow has draft changes.
 
-## Publish a flow
+## Publish a cloud flow
 
 When you're ready for changes to a flow to have an effect at runtime, the flow can be published.
 
@@ -85,7 +91,7 @@ Dataverse is the storage used for drafts that aren't published. It's also the st
 
 ### Why is the drafts and versioning feature set available only in the new designer?
 
-Drafts and versioning capabilities are available in the [new cloud flows designer](/power-automate/flows-designer#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer). Rather than adding drafts and versioning support in the classic designer, we're investing in additional drafts and versioning capabilities for the [new cloud flows designer](/power-automate/flows-designer#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
+Drafts and versioning capabilities are available in the [new cloud flows designer](/power-automate/flows-designer#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer). Rather than adding drafts and versioning support in the classic designer, we're investing in more drafts and versioning capabilities for the [new cloud flows designer](/power-automate/flows-designer#identify-differences-between-the-classic-designer-and-the-new-cloud-flows-designer).
 
 ### How do I change a non-solution cloud flow into a solution cloud flow?
 
@@ -137,7 +143,7 @@ Dataverse is the storage used for drafts and version history. Solution cloud flo
 
 ## Known issues
 
-**Changing flow URL**: When a solution cloud flow is first published, the URL contains the `workflowUniqueId` and this changes with each version. If the published flow is subsequently opened from the My Flows experience, then the `FlowId` is used in the URL and it doesn't change.  If the published flow is subsequently opened from the Solution Explorer experience, then the `workflowUniqueId` is used in the URL and it does change. We're planning to update the Solution Explorer experience to provide a static URL. In the interim, if you need a static URL reference, then open the flow from the My Flows experience.
+**Changing flow URL**: When a solution cloud flow is first published, the URL contains the `workflowUniqueId` and this changes with each version. If the published flow is later opened from the My Flows experience, then the `FlowId` is used in the URL and it doesn't change. If the published flow is later opened from the Solution Explorer experience, then the `workflowUniqueId` is used in the URL and it does change. We're planning to update the Solution Explorer experience to provide a static URL. In the interim, if you need a static URL reference, then open the flow from the My Flows experience.
 
 ## Related information
 
