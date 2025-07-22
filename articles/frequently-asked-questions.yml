@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
-  title: Common questions about Power Automate
-  description: Get answers to many common questions about Power Automate.
+  title: Power Automate FAQ
+  description: Get answers to many frequently asked questions about Power Automate.
   author: kewaiss
   ms.subservice: cloud-flow
   ms.tgt_pltfrm: na
@@ -15,7 +15,7 @@ metadata:
   search.audienceType: 
     - flowmaker
     - enduser
-title: Common questions about Power Automate
+title: Power Automate FAQ
 summary: |
 
 
@@ -25,23 +25,23 @@ sections:
       - question: |
          What is Power Automate?
         answer: |
-             Power Automate is a cloud-based service that makes it practical and simple for line-of-business users to build workflows that automate time-consuming business tasks and processes across applications and services.
+             Power Automate is a cloud-based service that makes it practical and simple for you to build workflows that automate time-consuming business tasks and processes across applications and services. Learn more in [What is Power Automate?](flow-types.md).
 
       - question: |
          Who is the intended audience for Power Automate?
         answer: |
               Power Automate has two distinct audiences:
           
-              * Line-of-business “Citizen Integrators” in enterprise organizations who partner with IT to move responsibility for business solutions closer to the business itself.
+              * Line-of-business 'Citizen Integrators' in enterprise organizations who partner with IT to move responsibility for business solutions closer to the business itself.
               * IT decision makers who want to empower line-of-business partners to create their own solutions so IT professionals and integration specialists can focus their expertise on more advanced integration tools, such as Azure Logic Apps.
           
       - question: |
          How do Power Automate and Logic Apps relate to each other?
         answer: |
-              Power Automate provides features that help line-of-business users create automated workflows. Logic Apps is an Azure service that provides the same great features of Power Automate, plus features such as integration with Azure Resource Manager and the Azure Portal, PowerShell and xPlat CLI, Visual Studio, and additional connectors. [Learn more about Logic Apps](https://azure.microsoft.com/services/app-service/logic/).
+              Power Automate provides features that help line-of-business users create automated workflows. Logic Apps is an Azure service that provides the same great features of Power Automate, plus features such as integration with Azure Resource Manager and the Azure portal, PowerShell and xPlat CLI, Visual Studio, and additional connectors. [Learn more about Logic Apps](https://azure.microsoft.com/services/app-service/logic/).
           
       - question: |
-         How does Power Automate fit in Microsoft’s overall business application platform strategy?
+         How does Power Automate fit in Microsoft's overall business application platform strategy?
         answer: |
              Power Automate is part of a powerful and adaptable business application platform that includes Power Apps, Microsoft Dataverse, Dynamics 365, and Office 365. This platform allows our customers, our partners, and our ISV partners to create purpose-built solutions for their own companies, their industry, for functional roles or even for specific geographies. Line-of-business users, who understand their business needs best, can now easily analyze, compose, and streamline data and processes. Professional developers can easily extend the automation, analytics and apps line-of-business to leverage Azure services like Functions, App Service, and Logic Apps. API connectors, gateways, and Microsoft Dataverse make it possible to get more value out of services or data already in use, either in the cloud or on-premises.
 
@@ -51,7 +51,12 @@ sections:
       - question: |
          What do I need to use Power Automate?
         answer: |
-             To use Power Automate, all you need is a web browser and an email address.
+             To use Power Automate, all you need are a web browser and an email address. Supported email addresses are described in the next question.
+          
+      - question: |
+         Which email addresses are supported?
+        answer: |
+             Until July 27, 2025, Power Automate supports work or school email addresses, or anything that doesn't end in .gov and .mil. After July 27, 2025, you're required to sign in with a Microsoft work or school email address. Power Automate will no longer support personal email accounts, such as gmail.com or outlook.com.
 
       - question: |
          What browsers and devices can I use with Power Automate?
@@ -61,7 +66,7 @@ sections:
       - question: |
          Supported devices
         answer: |
-              Power Automate runs great on modern devices. If you need to manage Power Automate from a mobile device, try the Power Automate mobile app that's available on [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8), [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow), and [Windows Phone](https://www.microsoft.com/p/microsoft-flow/9nkn0p5l9n84?rtc=1#activetab=pivot:overviewtab).
+              Power Automate runs great on modern devices. If you need to manage Power Automate from a mobile device, try the Power Automate mobile app that's available on [iPhone](https://itunes.apple.com/app/microsoft-flow/id1094928825?ls=1&mt=8) or [Android](https://play.google.com/store/apps/details?id=com.microsoft.flow).
           
       - question: |
          Supported browsers
@@ -72,11 +77,7 @@ sections:
           * Safari
           * Chrome
           * Firefox
-          
-      - question: |
-         Which email addresses are supported?
-        answer: |
-             Until July 27, 2025, Power Automate supports email addresses that end with anything except .gov and .mil. After July 27, 2025, Power Automate will no longer support personal email accounts, such as gmail.com or outlook.com.
+
       - question: |
          Is Power Automate available on-premises?
         answer: |
@@ -108,7 +109,7 @@ sections:
       - question: |
          What are templates?
         answer: |
-             Templates are pre-built flows for popular and common scenarios. Using a template only requires you to have access to the services in the template and to fill out any required settings.
+             Templates are prebuilt flows for popular and common scenarios. Using a template only requires you to have access to the services in the template and to fill out any required settings.
 
       - question: |
          What data sources will I be able to connect to?
@@ -139,15 +140,13 @@ sections:
               You can create an unlimited number of flows, depending on the [type of license](https://make.powerautomate.com/pricing) you hold.
           
       - question: |
-         Where do I get started with Power Automate?
+         Where can I find other resources for Power Automate?
         answer: |
-          Get started with the following resources:
+          These resources provide current information and community discussions about Power Automate:
           
-          * [Blog](https://make.powerautomate.com)
-          * [YouTube channel](https://youtube.com/playlist?list=PL8nfc9haGeb55I9wL9QnWyHp3ctU2_ThF)
-          * [Topic](getting-started.md)
-          * [Community](https://powerusers.microsoft.com)
-          
+          - [Blog](https://www.microsoft.com/power-platform/blog/power-automate/?msockid=1f9daafa48b366b40ce2beb2490967ab)
+          - [Community](https://community.powerplatform.com/forums/thread/?groupid=46ce02a3-e1a7-4176-81fc-d93a4001d287)
+
       - question: |
          What operating systems does the mobile app for Power Automate support?
         answer: |
@@ -196,7 +195,7 @@ sections:
       - question: |
          Will Power Automate still have a free or trial option?
         answer: |
-             Yes. You can use our free offering, which has limited user rights, or you can sign up for a free 90-day trial of Power Automate. You can activate your subscription at any time during your trial.
+         Yes. You can use our free offering, which has limited user rights, or you can sign up for a free 90-day trial of Power Automate. You can activate your subscription at any time during your trial.
 
       - question: |
          What pricing plans do you offer?
@@ -206,7 +205,7 @@ sections:
       - question: |
          Learn more
         answer: |
-              * Take a [guided learning tour](/training/paths/automate-process-using-flow) of Power Automate
-              * Learn the basics of Power Automate in the [getting started guide](getting-started.md)
+         - Take a [guided learning tour](/training/paths/automate-process-using-flow) of Power Automate
+         - Learn the basics of Power Automate in [What is Power Automate?](flow-types.md)
           
               [!INCLUDE[footer-include](includes/footer-banner.md)]
