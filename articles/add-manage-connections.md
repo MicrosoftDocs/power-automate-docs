@@ -15,6 +15,7 @@ ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Manage connections in Power Automate

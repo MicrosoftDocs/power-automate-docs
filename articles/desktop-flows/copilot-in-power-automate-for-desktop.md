@@ -8,6 +8,7 @@ author: cochamos
 ms.author: cochamos
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
+ms.custom: sfi-ropc-nochange
 ---
 
 # Get started with Copilot in Power Automate for desktop
