@@ -16,6 +16,7 @@ ms.reviewer: angieandrews
 ms.collection:
   - get-started
   - bap-ai-copilot
+ms.custom:
   - DevRelAdv
   - CXT
 ---
