@@ -32,7 +32,7 @@ Power Automate Process Mining gives you the option to store and read event log d
 - A Fabric Lakehouse must be created in this workspace with the data in supported formats
 
 > [!IMPORTANT]
-> The following items aren't currently supported:
+> The following item isn't currently supported:
 > - Fabric Lakehouses with Schema support enabled.
 
 - CSV data in your Lakehouse should meet the following CSV file format requirements:
@@ -52,9 +52,9 @@ Power Automate Process Mining gives you the option to store and read event log d
 
 1. On the navigation pane to the left, select **Process mining** > **Start here**.
 1. In the **Process name** field, enter a name for your process.
-1. Under the **Data source** heading, select **Import data** > **OneLake (preview)** > **Continue**.
+1. Under the **Data source** heading, select **Import data** > **OneLake** > **Continue**.
 
-    :::image type="content" source="media/process-mining-files-fabric-onelake/create-process.png" alt-text="Screenshot of the 'Create a new process' step.":::
+    :::image type="content" source="media/process-mining-files-fabric-onelake/create-process-ga.png" alt-text="Screenshot of the 'Create a new process' step.":::
 
 1. Select an optional Power BI workspace or select **Skip**.
 1. On the **Connection setup** screen, select your **Fabric Workspace** from the dropdown menu. This populates the **Lakehouse** dropdown menu. From the menu, select the lakehouse that contains your data and select **Next**.
