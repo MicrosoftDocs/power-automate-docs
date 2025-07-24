@@ -69,6 +69,8 @@ This article presents all the prerequisites and limitations you should consider 
 - A supported keyboard attached
 
 - An active connection to the Internet
+  
+- When running in unattended mode, please review the requirements to [run unattended desktop flows](run-unattended-desktop-flows.md).
 
 ### Prerequisites for multi-user session enabled Windows operating system (high density)
 
