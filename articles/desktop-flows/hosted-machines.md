@@ -54,14 +54,6 @@ To evaluate hosted machines, you need one of the following trial licensing optio
 
     The Power Automate Hosted Process license has trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home) and assign Power Automate Hosted Process capacity to the targeted environment.
 
-- Use the **90-days self-assisted premium trial.**
-
-  > [!NOTE]
-  > This trial licensing option for hosted machines is suspended until further notice.
-
-    Trial users are granted the capacity of one hosted machine per tenant. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
-
-
 ## Prerequisites
 
 This section presents all the prerequisites to create and use hosted machines.
