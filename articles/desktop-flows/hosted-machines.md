@@ -106,6 +106,12 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 
     Follow the same instruction as for creating the Windows 365 application to check and create the service principals.
 
+
+### Other requirements
+
+- When running in unattended mode, please review the requirements to [run unattended desktop flows](run-unattended-desktop-flows.md)
+
+
 ### Get access to the default VM image
 
 > [!NOTE]
