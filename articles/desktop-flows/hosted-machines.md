@@ -5,12 +5,12 @@ author: kenseongtan
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 03/10/2025
+ms.date: 07/24/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
-ms.custom: sfi-image-blocked
 - DanaMartens
+ms.custom: sfi-image-blocked
 ---
 
 # Hosted machines
@@ -106,11 +106,9 @@ To find more information about the Microsoft Entra and Intune requirements, go t
 
     Follow the same instruction as for creating the Windows 365 application to check and create the service principals.
 
-
 ### Other requirements
 
-- When running in unattended mode, please review the requirements to [run unattended desktop flows](run-unattended-desktop-flows.md)
-
+If you use unattended mode, review the requirements to [run unattended desktop flows](run-unattended-desktop-flows.md)
 
 ### Get access to the default VM image
 
@@ -241,13 +239,13 @@ Custom VM images must meet the following requirements:
 - Default 64-GB OS disk size. The OS disk size is automatically adjusted to 256 GB
 - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
 
-#### Use a specific version of Power Automate Desktop
+#### Use a specific version of Power Automate for desktop
 
 When you use custom VM images, the latest version of Power Automate for desktop installs automatically during hosted machine provisioning.
 
-To use a specific version of Power Automate for desktop, follow these steps:
+To use a specific version of Power Automate for desktop:
 
-1. Install the version of Power Automate for desktop you want and include it in your custom VM image. 
+1. Install the version of Power Automate for desktop you want, and include it in your custom VM image.
 1. Add the following registry key to the image:
 
     | Hive | Key | Name | Type | Value |
@@ -255,9 +253,9 @@ To use a specific version of Power Automate for desktop, follow these steps:
     | HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global | UseInstalledPADForHosted | String | True |
 
     > [!CAUTION]
-    > Modifying Windows registry settings incorrectly can cause serious problems that may prevent your computer from booting properly. Microsoft cannot guarantee that any problems resulting from the configuring of registry settings can be solved. Modification of these settings is at your own risk. We strongly recommend that you [back up your Windows registry](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692) before proceeding.
+    > Modifying Windows registry settings incorrectly can cause serious problems that might prevent your computer from booting properly. Microsoft can't guarantee that any problems resulting from the configuring of registry settings can be solved. Modification of these settings is at your own risk. We strongly recommend that you [back up your Windows registry](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692) before proceeding.
 
-This ensures your hosted machine uses the version of Power Automate for desktop included in your custom VM image.
+This configuration ensures that your hosted machine uses the version of Power Automate for desktop included in your custom VM image.
 
 ### Share the reader permission on Azure subscription with Windows 365 service principal
 
