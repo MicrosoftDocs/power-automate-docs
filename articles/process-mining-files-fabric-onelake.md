@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 06/13/2025
+ms.date: 07/25/2025
 ms.custom: bap-template
 ms.author: michalrosik
 ms.reviewer: angieandrews
@@ -16,7 +16,7 @@ ms.reviewer: angieandrews
 
 # Ingest data from Fabric OneLake
 
-Power Automate Process Mining gives you the option to store and read event log data directly from [Fabric OneLake](/fabric/onelake/onelake-overview) via [Fabric Lakehouse](/fabric/data-engineering/lakehouse-overview). This feature simplifies extract, transform, load (ETL) management by connecting directly to your OneLake.
+Power Automate Process Mining gives you the option to store and read event log data directly from [Fabric OneLake](/fabric/onelake/onelake-overview) through [Fabric Lakehouse](/fabric/data-engineering/lakehouse-overview). This feature simplifies extract, transform, load (ETL) management by connecting directly to your OneLake.
 
 [!INCLUDE [data-lake-storage](./includes/data-lake-storage.md)]
 
@@ -25,20 +25,19 @@ Power Automate Process Mining gives you the option to store and read event log d
 - Ensure that [Users can access data stored in OneLake with apps external to the Fabric](/fabric/admin/service-admin-portal-onelake#users-can-access-data-stored-in-onelake-with-apps-external-to-fabric) option is switched on in the OneLake tenant settings.
 - A Fabric workspace that's different from the default **My workspace**.
 - The **Admin** role must be attributed to the user performing the initial workspace setup for the environment for the other users in the same environment.
-- The Fabric workspace needs to be shared to the **Process Insight Prod service principal with an Member role**. To register the Process Insights Prod service principal, follow the steps in [Install Azure tools](/power-automate/process-mining-pbi-workspace#install-azure-tools).
+- The Fabric workspace needs to be shared to the **Process Insight Prod service principal with a Member role**. To register the Process Insights Prod service principal, follow the steps in [Install Azure tools](/power-automate/process-mining-pbi-workspace#install-azure-tools).
 
   :::image type="content" source="media/process-mining-files-fabric-onelake/one-lake-sp.png" alt-text="Screenshot of the Fabric workspace settings with sharing to Process Insights service principal.":::
 
-- A Fabric Lakehouse must be created in this workspace with the data in supported formats
+- A Fabric Lakehouse must be created in this workspace with the data in supported formats.
 
 > [!IMPORTANT]
-> The following item isn't currently supported:
-> - Fabric Lakehouses with Schema support enabled.
+> The following item isn't currently supported: Fabric Lakehouses with Schema support enabled.
 
 - CSV data in your Lakehouse should meet the following CSV file format requirements:
     - **Compression type**: None
     - **Column delimiter**: Comma (,)
-    - **Row delimiter**: Default and encoding. For example, Default (\r,\n, or \r\n) 
+    - **Row delimiter**: Default and encoding. For example, Default (\r,\n, or \r\n)
 
     :::image type="content" source="media/process-mining-byo-azure-data-lake/csv.png" alt-text="Screenshot of the File format settings screen.":::
 
@@ -58,9 +57,9 @@ Power Automate Process Mining gives you the option to store and read event log d
 
 1. Select an optional Power BI workspace or select **Skip**.
 1. On the **Connection setup** screen, select your **Fabric Workspace** from the dropdown menu. This populates the **Lakehouse** dropdown menu. From the menu, select the lakehouse that contains your data and select **Next**.
-1. Browse the **Lakehouse** folder structure and select the Delta table, file or folder containing the event log data.
+1. Browse the **Lakehouse** folder structure and select the Delta table, file, or folder containing the event log data.
 
-    You can either select a single Delta table, a single file or a folder with multiple files. All files must have the same headers and format.
+    You can either select a single Delta table, a single file, or a folder with multiple files. All files must have the same headers and format.
 
 1. Select **Next**.
 1. On the **Map your data** screen, map your data to the required schema.
