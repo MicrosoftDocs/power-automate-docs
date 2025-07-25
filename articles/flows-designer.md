@@ -42,7 +42,6 @@ Legend:
     (*Classic designer only*) Select the smiley face icon in the title bar.
 
 1. **Flow checker button**: Check your flow for errors.
-1. **Version history button**: *(New designer only)* Track and manage changes made to your flows over time. It records every modification, enabling you to view previous versions, compare changes, and, if necessary, revert to an earlier version.
 1. [**Save button**](#save-button): Save your flow.
 1. [**Test button**](#test-button): Test your flow to make sure that it works as you intended.
 1. [**Copilot button**](create-cloud-flow-using-copilot.md): *(New designer only)* Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
