@@ -75,7 +75,7 @@ In some scenarios it is required to run a data refresh based on external trigger
 3. Use the following configuration for the bound action:
 -  Table name: **PM Inferred Tasks**
 -  Action name: **Analyze**
--  Row ID: **GUID of the process** - this can be found in the URL of the process after the *processes* keyword: https://make.powerautomate.com/environments/00000000-0000-0000-0000-000000000000/processadvisor/processes/**00000000-0000-0000-0000-000000000000**
+-  Row ID: **GUID of the process** - this can be found in the URL of the process after the *processes* keyword: ```https://make.powerautomate.com/environments/00000000-0000-0000-0000-000000000000/processadvisor/processes/00000000-0000-0000-0000-000000000000```
 -  Advanced parameters - Item/version: **"1"** (including the quotes)
 
 :::image type="content" source="media/process-mining-data-source/bound-action.png" alt-text="Screenshot of the Bound action settings.":::
