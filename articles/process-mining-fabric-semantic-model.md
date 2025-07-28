@@ -39,10 +39,10 @@ Select the **magnifying glass** in the lower-right corner of the image to enlarg
 ### Column naming
 
 Naming of semantic model columns corresponds to the naming of the columns in your ingested dataset including spaces and other special characters (subject to Power BI semantic model limitations). The limitations of naming in the Fabric Lakehouse delta tables, however, are larger (e.g. spaces are not allowed) and thus Power Automate Process Mining does validation and sanitization before the export to Fabric workspace is triggered. Allowed characters include:
-```a-z``` → lowercase English letters
-```A-Z``` → uppercase English letters
-```0-9``` → digits
-```_``` → underscore
+- ```a-z``` → lowercase English letters
+- ```A-Z``` → uppercase English letters
+- ```0-9``` → digits
+- ```_``` → underscore
 
 All other characters are replaced with underscore (_) as part of the sanitization process.
 This might result in rare situations where export is not successful as the ingested data source included two columns, that will result in identical name after sanitization - *"Customer_Name"* and *"Customer Name"*. The export will be interrupted and user will be notified with specific error message.
