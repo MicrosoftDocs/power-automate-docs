@@ -56,6 +56,32 @@ To keep your data updated, you can use the schedule refresh feature. Select **Sc
 
 Once schedule refresh is configured, you will see the details in the Data Source card, including the next scheduled refresh date and time.
 
+## Incremental data refresh
+
+For larger data volumes, Power Automate Process Mining allows to schedule an incremental data refresh. This allows to ingest only newly added data instead of full event log.
+
+You can find more information on how to setup the incremental data refresh on the individual pages related to the ingestion type:
+- [Incremental data refresh from Azure Data Lake Storage Gen 2](process-mining-byo-azure-data-lake#define-incremental-data-refresh-settings)
+- [Incremental data refresh from Fabric OneLake](process-mining-files-fabric-onelake#define-incremental-data-refresh-settings)
+
+## Custom trigger data refresh
+
+In some scenarios it is required to run a data refresh based on external trigger (e.g. a data pipeline execution is finished, an event is fired in an external system) rather than on a scheduled basis. To achieve this, it is possible to an ad hoc refresh using a triggered flow:
+
+1. Create a Power Automate cloud flow based on your desired trigger mechanism - to learn how to create triggered cloud flows see [Overview of cloud flows](/power-automate/overview-cloud)
+
+2. Include a Dataverse bound action - to learn how to use a bound action see [Perform bound actions or unbound actions](/power-automate/dataverse/bound-unbound)
+
+3. Use the following configuration for the bound action:
+-  Table name: **PM Inferred Tasks**
+-  Action name: **Analyze**
+-  Row ID: **GUID of the process** - this can be found in the URL of the process after the *processes* keyword: https://make.powerautomate.com/environments/00000000-0000-0000-0000-000000000000/processadvisor/processes/**00000000-0000-0000-0000-000000000000**
+-  Advanced parameters - Item/version: **"1"** (including the quotes)
+
+:::image type="content" source="media/process-mining-data-source/bound-action.png" alt-text="Screenshot of the Bound action settings.":::
+
+4. Test and run the flow. You can check the success of the execution in the *Flow history* or on the *Process details* page by checking the *Analyzed* datetime field.
+
 ## Disconnect data
 
 If you want to change the data source for your process, you can easily do this. For example, you might have been using a CSV file before, but now you want to connect to a transactional data source instead. To disconnect your current data source, select **Disconnect data** on the right side of the Data Source card. Once you have disconnected, select **Setup** again to connect to your new data source.
