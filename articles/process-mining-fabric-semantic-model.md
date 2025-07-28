@@ -36,6 +36,8 @@ Select the **magnifying glass** in the lower-right corner of the image to enlarg
 
 [![Screenshot of Power BI Direct Lake semantic model structure.](media/process-mining-fabric-semantic-model/FabricSemanticModel.png)](media/process-mining-fabric-semantic-model/FabricSemanticModel.png#lightbox)
 
+### Column naming
+
 Naming of semantic model columns corresponds to the naming of the columns in your ingested dataset including spaces and other special characters (subject to Power BI semantic model limitations). The limitations of naming in the Fabric Lakehouse delta tables, however, are larger (e.g. spaces are not allowed) and thus Power Automate Process Mining does validation and sanitization before the export to Fabric workspace is triggered. The sanitization includes:
 - replacing spaces with underscore (_)
 - replacing not allowed special characters (,;{}()\n\t=) with underscore (_)
