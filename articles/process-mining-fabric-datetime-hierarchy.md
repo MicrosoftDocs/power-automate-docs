@@ -59,3 +59,114 @@ Datetime hierarchies only work with the date portion of a column, not time value
 For example:
 
 :::image type="content" source="media/process-mining-fabric-datetime-hierarchy/6 Create column.png" alt-text="Screenshot of date column DAX query example.":::
+
+## Create Date Dimension Table  
+
+As a next step, create a date dimension table, which contains the definition of the all the date hierarchy related columns. From the Date column created in the previous step, find out the minimum and maximum value of the date to figure out the date range that the table will support. 
+In the Power BI desktop, make sure that TMDL is enabled. Follow this article to enable it: [Use Tabular Model Definition Language (TMDL) view in Power BI Desktop (preview)](/power-bi/transform-model/desktop-tmdl-view)
+
+Create a new Date Dimension table using the below mentioned TMDL script:
+
+```
+createOrReplace
+
+    table DateDimensionTable
+        lineageTag: 9627fbc7-c42d-4acb-854a-b39ff7f902c3
+
+        column Date
+            isHidden
+            formatString: General Date
+            lineageTag: 39fe40c8-736c-42d4-b2aa-6342000a2287
+            summarizeBy: none
+            isNameInferred
+            sourceColumn: [Date]
+
+            annotation SummarizationSetBy = Automatic
+
+        column Year = YEAR([Date])
+            isHidden
+            formatString: 0
+            lineageTag: 87f03e1f-a735-406c-be76-dbcd26b92298
+            summarizeBy: none
+
+            annotation SummarizationSetBy = User
+
+        column MonthNo = MONTH([Date])
+            isHidden
+            formatString: 0
+            lineageTag: cd07e9b9-7bf5-4b47-b5b0-e3db151ff584
+            summarizeBy: none
+
+            annotation SummarizationSetBy = User
+
+        column Month = FORMAT([Date], "MMMM")
+            isHidden
+            lineageTag: ddadcb87-cf94-4ceb-9274-b21ba3a3c94f
+            summarizeBy: none
+            sortByColumn: MonthNo
+
+            annotation SummarizationSetBy = Automatic
+
+        column Day = DAY([Date])
+            isHidden
+            formatString: 0
+            lineageTag: a53cad7c-133a-4126-a9e8-432f1038c1d0
+            summarizeBy: none
+
+            annotation SummarizationSetBy = User
+
+        hierarchy 'Date Hierarchy'
+            lineageTag: 88573fde-2f98-4d95-b9e5-526d1e99e9bd
+
+            level Year
+                lineageTag: 1ca15d6d-c5b7-40f1-80fe-0cd0e6f81177
+                column: Year
+
+            level Month
+                lineageTag: e4a8f91f-f17d-44f0-a820-b096efaab124
+                column: Month
+
+            level Day
+                lineageTag: b84594ad-151b-48e0-a145-491859d6ade3
+                column: Day
+
+        partition DateDimensionTable = calculated
+            mode: import
+            source =
+                    VAR startDateYear = YEAR(MIN(TableName[ColumnName]))
+                    VAR endDateYear = YEAR(MAX(TableName[ColumnName]))
+                    RETURN CALENDAR(Date(startDateYear, 1, 1), Date(endDateYear, 12, 31))
+```
+
+The *lineageTag* is optional and can be removed. They are unique GUIDs and should be replaced if used. Read more about lineageTag and how to use them in [Lineage tags for Power BI semantic models](h/analysis-services/tom/lineage-tags-for-power-bi-semantic-models?view=asallproducts-allversions)
+
+Make sure to replace the values of *TableName* and *ColumnName*:
+**TableName** – name of the table containing the datetime column for which date hierarchy is to be enabled.
+**ColumnName** – name of the datetime column for which date hierarchy is to be enabled.  
+
+You can also rename the newly created table by replacing the *DateDimensionTable* with your custom name.
+
+The date hierarchy here contains *year*, *month* and *day* but this can be extended to add more elements. If you want to create even more detailed date dimension table, learn more in this article: [DAX Date table in TMDL](https://www.datazoe.blog/post/dax-date-table-in-tmdl)
+
+Once created, the datetime dimension table will look like this:
+
+:::image type="content" source="media/process-mining-fabric-datetime-hierarchy/7 Dimension table.png" alt-text="Screenshot of newly created date dimension table.":::
+
+## Create Relationship between the Date column and Date Dimension Table
+
+1. Create a new relationship between the Date column in the date dimension table and the Date column created in the first step by navigating to the data model view and drag and dropping the date column in the first step to the date column in the date dimension table.
+
+:::image type="content" source="media/process-mining-fabric-datetime-hierarchy/8 Relationship.png" alt-text="Screenshot of creating a relationship between date column and date dimension table.":::
+
+2. Set the properties and save the relationship
+
+## (Optional) Mark the Date Dimension table as Date table
+
+This is an optional step only for report visuals. You can mark the date dimension table as Date table.
+Right-click on the *DateDimensionTable* and click on **Mark as date table**
+
+## Save and publish the report
+
+You can now use the newly created datetime hierarchy in your report visuals.
+Save and publish your report after you finished all changes.
+
