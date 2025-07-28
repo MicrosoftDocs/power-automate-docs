@@ -28,11 +28,20 @@ In addition, a more intuitive Power BI semantic model data structure is used, wh
 
 ## Semantic model description
 
-When a process is published to Fabric workspace, it creates a new semantic model and a corresponding report. This screenshot is an example of a semantic model structure published to Fabric.
+When a process is published to Fabric workspace, it creates a new semantic model and a corresponding report. The semantic model is created on top of Fabric Lakehouse delta tables.
+
+This screenshot is an example of a semantic model structure published to Fabric.
 
 Select the **magnifying glass** in the lower-right corner of the image to enlarge it.
 
 [![Screenshot of Power BI Direct Lake semantic model structure.](media/process-mining-fabric-semantic-model/FabricSemanticModel.png)](media/process-mining-fabric-semantic-model/FabricSemanticModel.png#lightbox)
+
+Naming of semantic model columns corresponds to the naming of the columns in your ingested dataset including spaces and other special characters (subject to Power BI semantic model limitations). The limitations of naming in the Fabric Lakehouse delta tables, however, are larger (e.g. spaces are not allowed) and thus Power Automate Process Mining does validation and sanitization before the export to Fabric workspace is triggered. The sanitization includes:
+- replacing spaces with underscore (_)
+- replacing not allowed special characters (,;{}()\n\t=) with underscore (_)
+- this might result in rare situations where export is not successful as the ingested data source included two columns, that will result in identical name after sanitization - *"Customer_Name"* and *"Customer Name"*. The export will be interrupted and you will be notified with specific error message.
+
+Lakehouse delta table columns therefore use the sanitized column names, whereas semantic model columns use the original column names.
 
 ### Relationships
 
