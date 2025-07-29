@@ -22,7 +22,7 @@ ms.custom:
 
 To automate web-related tasks, Power Automate provides a built-in Automation browser that's set up for you and works out of the box.
 
-Power Automate also supports the four most popular browsers: Microsoft Edge, Internet Explorer, Google Chrome, and Mozilla Firefox. These browsers need extra setup and extensions to work with Power Automate.
+Power Automate also supports the four most popular browsers: Microsoft Edge, Internet Explorer, Google Chrome, and Mozilla Firefox. These browsers need extra setup and extensions or WebDrivers to work with Power Automate for desktop.
 
 ## Install browser extensions
 
@@ -75,7 +75,7 @@ After Power Automate for desktop version 2.27, the Microsoft Edge, Google Chrome
 
 Alternatively, you can launch Mozilla Firefox and drag the extension file to the browser window.
 
-# Set up up WebDrivers 
+# Set up WebDrivers 
 Web automation can also be performed using WebDriver as an alternative to browser extensions. To use this method, you need to manually install the appropriate WebDriver for your browser and ensure it matches the browser version. This section provides setup instructions for each supported browser.
 
 >[!Important]
