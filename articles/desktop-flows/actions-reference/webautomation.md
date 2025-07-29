@@ -24,7 +24,6 @@ To perform web automation, you first need to create a new browser instance using
 
 > [!NOTE]
 > - To launch a browser on a virtual desktop, first capture at least one UI element within that desktop. This element needs to be available in the UI element repository of your flow.
-> - WebDriver is not supported for Internet Explorer — only the browser extension can be used with this browser.
 
 ## WebDriver-based browser automation (preview)
 
@@ -43,9 +42,9 @@ WebDriver support introduces new capabilities but also comes with specific limit
 1.	Attach to browser limitations: WebDriver-based automation can only attach to browser instances launched from within the same flow. Manually opened browsers are not supported. When using the “Attach to browser” action, the Title and URL fields will not auto-populate for WebDriver-launched instances.
 2.	Parallel execution issues: Running web automation in parallel across parent and child flows using different browsers may cause issues. Because physical browser interactions require the window to be active and in the foreground, multiple concurrent browser automations may result in erratic behavior or failures.
 3.	Wait for page delays: If the web server being automated is slow to respond, WebDriver-based automation may not respect the configured timeout in the “Wait for web page to load” action. The action could hang until the server responds.
-4.	Child flow restrictions: To automate a browser in a child flow, the browser instance must be passed from the parent flow as an input. WebDriver instances launched in the parent flow cannot be attached to directly in a child flow without passing the instance as input.
+4.	Child flow restrictions: Browser instances launched using the WebDriver interaction method in the parent flow cannot be attached to directly from a child flow without passing the instance as input.
 5.	Organizational sign-in policies: WebDriver-based automation will not function if the browser is configured to force user sign-in as a policy requirement.
-6.	Web automation using WebDriver as the browser interaction method is not supported in Internet Explorer..
+6.	Web automation using WebDriver as the browser interaction method is not supported in Internet Explorer.
 
 ## Adding UI elements
 
