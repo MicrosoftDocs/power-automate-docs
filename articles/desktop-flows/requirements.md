@@ -3,7 +3,7 @@ title: Prerequisites and limitations
 description: Learn about the prerequisites and limitations of Power Automate for desktop.
 author: mattp123
 ms.topic: overview
-ms.date: 01/03/2025
+ms.date: 07/24/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -69,6 +69,8 @@ This article presents all the prerequisites and limitations you should consider 
 - A supported keyboard attached
 
 - An active connection to the Internet
+  
+- If you use unattended mode, review the requirements to [run unattended desktop flows](run-unattended-desktop-flows.md)
 
 ### Prerequisites for multi-user session enabled Windows operating system (high density)
 

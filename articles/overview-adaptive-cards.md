@@ -12,7 +12,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ms.reviewer: angieandrews
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Overview of adaptive cards for Microsoft Teams

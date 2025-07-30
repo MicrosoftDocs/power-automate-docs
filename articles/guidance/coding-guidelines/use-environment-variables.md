@@ -1,51 +1,52 @@
 ---
 title: Use environment variables
-description: Learn how to use environment variables in Power Automate to enhance workflow flexibility and maintainability across different environments.
-#customer intent: As a Power Automate user, I want to use environment variables in Power Automate so that I can manage configuration settings without modifying flow logic.
+description: Learn how to use environment variables in Power Automate to separate configuration from logic, making your workflows modular and easier to manage.
 author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/18/2025
+ms.date: 07/11/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
-search.audienceType: 
+search.audienceType:
   - admin
   - flowmaker
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/03/2025
 ---
 
 # Use environment variables
 
-Environment variables in Power Automate cloud flows enhance the flexibility and maintainability of your workflows, especially in development, testing, and production environments. 
+Environment variables in Power Automate cloud flows enhance the flexibility and maintainability of your workflows, especially in development, testing, and production environments. This article provides best practices for using environment variables effectively in your flows.
 
 ## Why use environment variables?
 
-Environment variables are parameters that can be used to store configuration settings and other values that can be easily changed without modifying the actual flow logic. Reference these variables within flows to manage environment-specific settings like URLs, API keys, connection strings, or other configuration data.
+Environment variables are parameters that can store configuration settings like URLs, API keys, and connection strings. They can be easily changed without modifying the actual flow logic, which is helpful when you move your flows between environments that require different configurations.
 
-Benefits of using environment variables include:
+Environment variables:
 
-- **Separation of configuration and logic**: By using environment variables, you separate the configuration data from the flow logic. This approach makes the flows more modular and easier to manage.
-- **Easier deployment**: Environment variables simplify the deployment process across different environments (development, testing, production) by allowing you to change configurations without editing the flows.
-- **Maintainability**: Environment variables make it easier to update and maintain flows. When a configuration value needs to change, you can update the environment variable without editing each individual flow.
+- Separate configuration and logic, making flows more modular and easier to manage.
+
+- Simplify deployment across different environments, such as development, testing, and production, by allowing you to change configurations without editing the flows.
+
+- Make flows easier to update and maintain. When a configuration value needs to change, you can update the environment variable without editing each individual flow.
+
+For example, imagine your flow connects to an API endpoint that's different in each of your development, testing, and production environments. Instead of hardcoding the URL in your flow, store it in an environment variable called `API_Base_URL`. You can easily change the URL in the environment variable settings without modifying the flow itself.
+
+- In the development environment, set `API_Base_URL` to the default value `https://api.dev.example.com`.
+- In the testing environment, change the value to `https://api.test.example.com`.
+- In the production environment, change the value to `https://api.example.com`.
+
+Then, in the HTTP action in your flow, set the URL to `@{variables('API_Base_URL')}`.
 
 ## Best practices for using environment variables
 
-Follow these best practices when using environment variables:
+- **Use consistent naming conventions**: Use clear and consistent naming conventions for your environment variables to ensure that they're easily identifiable and understandable.
 
-- **Use consistent naming conventions**: Use clear and consistent naming conventions for your environment variables to ensure they're easily identifiable and understandable.
 - **Use default values wisely**: Set meaningful default values that can be used as fallbacks in case the current value isn't set.
-- **Document variables**: Document the purpose and usage of each environment variable to ensure that team members understand what each variable is for and how to configure it. Add a description when creating an environment variable.
-- **Limit sensitive data**: Avoid storing highly sensitive data directly in environment variables. Consider using secure mechanisms for sensitive configurations (for example, Azure Key Vault).
 
-## Example scenario
+- **Document your variables**: Document the purpose and usage of each environment variable to ensure that team members understand what each variable is for and how to configure it. Add a description when creating an environment variable.
 
-Imagine you have a flow that connects to an API endpoint that differs across development, testing, and production environments.
-
-1.  **Create environment variable**:
-    -   API_Base_URL with default value `https://api.dev.example.com` for development.
-    -   Change the value to `https://api.test.example.com` in the testing environment.
-    -   Change the value to `https://api.example.com` in the production environment.
-2.  **Reference in flow**:
-    -   In the HTTP action within your flow, set the URL to `@{variables('API_Base_URL')}`.
-
-By using an environment variable, you only need to update the environment variable values when you promote your solution from development to testing and production. You don't have to alter the flow logic, ensuring consistency, reduce the chance of errors, and simplify management.
+- **Limit sensitive data**: Avoid storing highly sensitive data directly in environment variables. Consider using secure mechanisms for sensitive configurations, such as Azure Key Vault.

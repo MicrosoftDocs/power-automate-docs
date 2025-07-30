@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 02/21/2025
+ms.date: 07/22/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -14,6 +14,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Trigger desktop flows from cloud flows
@@ -81,7 +82,6 @@ To trigger a desktop flow from a cloud flow:
    >
    > - If an input variable contains sensitive data, you may want to obfuscate or omit it from the logs. To find more information regarding sensitive text inputs, go to [Manage sensitive input like passwords](../how-tos-use-sensitive-input.md).
    > - The limit of the input size for a desktop flow is 2 MB (1 MB for China regions).
-   > - The size limit for a cloud-triggered desktop flow and its dependencies is 16 MB.
 
     :::image type="content" source="media/trigger-desktop-flows/run-desktop-flow-v2-action-properties-2.png" alt-text="Screenshot of the input variables in the Run a flow built with Power Automate for desktop action.":::
 
