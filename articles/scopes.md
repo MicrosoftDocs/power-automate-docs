@@ -31,6 +31,16 @@ Consider using scopes when you need to group similar steps, especially in longer
 - Divide business logic, error management, data transformation, or notification processes.
 - Implement try/catch structures for better error control.
 
+## Prerequisites
+
+Before you can use complete the procedures in [Add a scope to your flow](#add-a-scope-to-your-flow), ensure you have the following:
+
+- A valid Power Automate account
+- Access to Microsoft Outlook
+- Access to SharePoint
+
+If you want to use actions other than the ones in the procedures, ensure you have the necessary permissions to use those actions in your flow.
+
 ## Add a scope to your flow
 
 [!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
