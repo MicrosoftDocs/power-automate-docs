@@ -39,7 +39,7 @@ Before you can use complete the procedures in [Add a scope to your flow](#add-a-
 - Access to Microsoft Outlook
 - Access to SharePoint
 
-If you want to use actions other than the ones in the procedures, ensure you have the necessary permissions to use those actions in your flow.
+If you want to use actions other than the ones in the procedures (Outlook and SharePoint), ensure you have the necessary permissions to use those actions in your flow.
 
 ## Add a scope to your flow
 
