@@ -949,7 +949,7 @@
         href: process-mining-byo-azure-data-lake.md
       - name: Bring your own network isolated Azure Data Lake Storage Gen2
         href: process-mining-byo-azure-data-lake-private.md    
-    - name: Ingest files from Fabric OneLake (preview)
+    - name: Ingest data from Fabric OneLake
       href: process-mining-files-fabric-onelake.md
     - name: Edit and refresh processes
       href: process-mining-data-source.md
