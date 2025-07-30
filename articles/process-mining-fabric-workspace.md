@@ -1,5 +1,5 @@
 ---
-title: Customize a report with your own Fabric workspace (preview)
+title: Customize a report with your own Fabric workspace
 description: Learn how to use your own custom Fabric workspace and leverage a higher capacity to analyze processes with the process mining capability.
 author: rosikm
 contributors:
@@ -17,15 +17,11 @@ search.audienceType:
 #customer intent: As a business process analyst, I want to customize a report with my own Fabric workspace so that I can leverage a higher capacity to analyze processes with a lot more data.
 ---
 
-# Customize a report with your own Fabric workspace (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# Customize a report with your own Fabric workspace
 
 You can use your own custom Fabric workspace and leverage a higher capacity to analyze processes with a lot more data. You're also able to customize the look and feel of the report.
 
 When using you own custom Fabric workspace, data from Power Automate Process Mining is first stored in Fabric Lakehouse where they're transformed into delta tables. A semantic model is automatically created on top of the tables to power the default report. The Power BI report connects to the data using [Direct Lake mode](/fabric/fundamentals/direct-lake-overview).
-
-> [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Set up your workspace prerequisites
 
