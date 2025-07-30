@@ -1,5 +1,5 @@
 ---
-title: Structure of semantic model in Fabric workspace (preview)
+title: Structure of semantic model in Fabric workspace
 description: Learn about the benefits of the DirectLake semantic model you can create in your Fabric workspace and how it is structured.
 author: rosikm
 contributors:
@@ -17,14 +17,10 @@ search.audienceType:
 #customer intent: As a business process analyst, I want learn more about the DirectLake semantic model and how I can use it so that I can analyze larger processes and save on costs by using smaller Fabric capacities to perform analysis.
 ---
 
-# Structure of semantic model in Fabric workspace (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Structure of semantic model in Fabric workspace
 
 The new optimized DirectLake semantic model leads to faster and more memory-efficient analysis of processes. By saving on memory, you can analyze larger processes and save on costs by using smaller Fabric capacities to perform analysis.
 In addition, a more intuitive Power BI semantic model data structure is used, which allows you to dig deeper into insights with less time and effort.
-
-> [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Semantic model description
 
