@@ -149,7 +149,7 @@ createOrReplace
                     RETURN CALENDAR(Date(startDateYear, 1, 1), Date(endDateYear, 12, 31))
 ```
 
-    The *lineageTag* is optional and can be removed. They're unique GUIDs and should be replaced if used. Read more about lineageTag and how to use them in [Lineage tags for Power BI semantic models](h/analysis-services/tom/lineage-tags-for-power-bi-semantic-models?view=asallproducts-allversions).
+The *lineageTag* is optional and can be removed. They're unique GUIDs and should be replaced if used. Read more about lineageTag and how to use them in [Lineage tags for Power BI semantic models](h/analysis-services/tom/lineage-tags-for-power-bi-semantic-models?view=asallproducts-allversions).
 
 1. Make sure to replace the values of *TableName* and *ColumnName*:
 
