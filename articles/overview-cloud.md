@@ -61,7 +61,7 @@ The following table describes the three types of cloud flows, when to use them, 
 | Type   | When to use   | Examples    | Benefits    |
 |-------------|---------------|-------------|------------------|
 | [Automated cloud flows](get-started-logic-flow.md)    | Trigger an event. | Arrival of an email or a mention of your company in social media.          |  [Connectors](/connectors/) for cloud or on-premises services connect your accounts and enable them to talk to each other. |
-| [Instant cloud flows]((mobile/mobile-create-flow.md))      | Start a repetitive task. | Send a reminder to the team or an approval in Teams or SharePoint.    |  Flows run instantly with the selection of a button or control.    |
+| [Instant cloud flows](mobile/mobile-create-flow.md)      | Start a repetitive task. | Send a reminder to the team or an approval in Teams or SharePoint.    |  Flows run instantly with the selection of a button or control.    |
 | [Scheduled cloud flows](run-scheduled-tasks.md)       | Schedule an automation task. | Daily data upload to SharePoint or a database.     | Predictable tasks can be automated only once; you don't need to create a cloud flow for every run.  |
 
 ## Create and use cloud flows from your phone
