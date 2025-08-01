@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/04/2024
+ms.date: 08/01/2025
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -20,31 +20,32 @@ search.audienceType:
 
 Browser automation actions enable users to interact with web applications and components through UI elements. Web UI elements, also called Web elements, describe uniquely the web components that the action is going to handle.
 
-To perform web automation, you first need to create a new browser instance using one of the Launch Browser actions, which support Microsoft Edge, Google Chrome, Mozilla Firefox, and Internet Explorer. For web automation to function correctly, you must have either the appropriate browser extension or a compatible WebDriver installed, depending on the selected interaction method. You can also specify whether the browser should launch on your local desktop or within a virtual desktop environment.
+To perform web automation, you first need to create a new browser instance by using one of the **Launch Browser** actions. These actions support Microsoft Edge, Google Chrome, Mozilla Firefox, and Internet Explorer. For web automation to function correctly, you must have either the appropriate browser extension or a compatible WebDriver installed, depending on the interaction method you select. You can also specify whether the browser should launch on your local desktop or within a virtual desktop environment.
 
 > [!NOTE]
 > - To launch a browser on a virtual desktop, first capture at least one UI element within that desktop. This element needs to be available in the UI element repository of your flow.
 
 ## WebDriver-based browser automation (preview)
 
-Power Automate for desktop now supports web automation using WebDriver as a method of interacting with a web browser. This new capability provides an alternative to the existing browser extension method for automating web applications. Each Launch Browser action includes a new drop-down menu labeled Browser interaction method, where users can choose between:
+Power Automate for desktop now supports web automation by using WebDriver as a method of interacting with a web browser. This new capability provides an alternative to the existing browser extension method for automating web applications. Each **Launch Browser** action includes a new drop-down menu labeled **Browser interaction method**, where you can choose between:
 - Browser extension (default)
 - WebDriver
 
-When WebDriver is selected, users must ensure that the corresponding WebDriver executable is set up and matches the version of the browser being automated. WebDrivers must be placed in the following directory on the machine running the automation: %LocalAppData%\Microsoft\Power Automate Desktop\WebDrivers
+When you select WebDriver, make sure that you set up the corresponding WebDriver executable and that it matches the version of the browser you're automating. Place WebDrivers in the following directory on the machine running the automation: %LocalAppData%\Microsoft\Power Automate Desktop\WebDrivers
 
-> [!NOTE] 
-> For step-by-step instructions on how to download and configure WebDrivers for supported browsers, refer to [Setting up WebDriver for browser automation](../install-browser-extensions.md).
+> [!NOTE]
+> For step-by-step instructions on how to download and configure WebDrivers for supported browsers, see [Setting up WebDriver for browser automation](../install-browser-extensions.md).
 
 ### WebDriver limitations
+
 WebDriver support introduces new capabilities but also comes with specific limitations:
 
-1.	Attach to browser limitations: WebDriver-based automation can only attach to browser instances launched from within the same flow. Manually opened browsers are not supported. When using the “Attach to browser” action, the Title and URL fields will not auto-populate for WebDriver-launched instances.
-2.	Parallel execution issues: Running web automation in parallel across parent and child flows using different browsers may cause issues. Because physical browser interactions require the window to be active and in the foreground, multiple concurrent browser automations may result in erratic behavior or failures.
-3.	Wait for page delays: If the web server being automated is slow to respond, WebDriver-based automation may not respect the configured timeout in the “Wait for web page to load” action. The action could hang until the server responds.
-4.	Child flow restrictions: Browser instances launched using the WebDriver interaction method in the parent flow cannot be attached to directly from a child flow without passing the instance as input.
-5.	Organizational sign-in policies: WebDriver-based automation will not function if the browser is configured to force user sign-in as a policy requirement.
-6.	Web automation using WebDriver as the browser interaction method is not supported in Internet Explorer.
+1. **Attach to browser limitations:** WebDriver-based automation can only attach to browser instances that the flow launches. It doesn't support manually opened browsers. When you use the **Attach to browser** action, the **Title** and **URL** fields don't auto-populate for WebDriver-launched instances.
+1. **Parallel execution issues:** Running web automation in parallel across parent and child flows by using different browsers might cause issues. Because physical browser interactions require the window to be active and in the foreground, multiple concurrent browser automations might result in erratic behavior or failures.
+1. **Wait for page delays:** If the web server you're automating is slow to respond, WebDriver-based automation might not respect the configured timeout in the **Wait for web page to load** action. The action could hang until the server responds.
+1. **Child flow restrictions:** You can't attach directly from a child flow to browser instances that the parent flow launches by using the WebDriver interaction method without passing the instance as input.
+1. **Organizational sign-in policies:** WebDriver-based automation doesn't function if the browser is configured to force user sign-in as a policy requirement.
+1. **Internet Explorer:** You can't use WebDriver as the browser interaction method for web automation in Internet Explorer.
 
 ## Adding UI elements
 
