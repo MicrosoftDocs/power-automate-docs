@@ -75,7 +75,7 @@ After Power Automate for desktop version 2.27, the Microsoft Edge, Google Chrome
 
 Alternatively, you can launch Mozilla Firefox and drag the extension file to the browser window.
 
-# Set up WebDrivers
+## Set up WebDrivers
 
 You can perform web automation with WebDriver as an alternative to browser extensions. To use this method, manually install the appropriate WebDriver for your browser and ensure it matches the browser version. This section provides setup instructions for each supported browser.
 
@@ -83,7 +83,7 @@ You can perform web automation with WebDriver as an alternative to browser exten
 > - Power Automate for desktop detects WebDrivers placed in the folder: `%LocalAppData%\Microsoft\Power Automate Desktop\WebDrivers`. Make sure you don't rename the executable and don't nest it inside additional subfolders.
 > - Only WebDrivers built for the x64 architecture are supported.
 
-## Set up WebDriver for Mozilla Firefox
+### Set up WebDriver for Mozilla Firefox
 
 To use WebDriver with Mozilla Firefox, set up the geckodriver utility:
 
@@ -101,7 +101,7 @@ To use WebDriver with Mozilla Firefox, set up the geckodriver utility:
     1. Create a new folder named **WebDrivers** under the following directory: **AppData\Local\Microsoft\Power Automate Desktop**
     1. Copy the Geckodriver.exe file into the folder you created: "AppData\Local\Microsoft\Power Automate Desktop\WebDrivers"
 
-## Set up WebDriver for Google Chrome
+### Set up WebDriver for Google Chrome
 
 To use WebDriver with Google Chrome, set up a ChromeDriver version that matches your browser version.
 
@@ -119,7 +119,7 @@ To use WebDriver with Google Chrome, set up a ChromeDriver version that matches 
     1. Create a new folder named **WebDrivers** in the following directory: `AppData\Local\Microsoft\Power Automate Desktop`.
     1. Copy the `chromedriver.exe` file into the folder you just created: `AppData\Local\Microsoft\Power Automate Desktop\WebDrivers`.
 
-## Set up the WebDriver for Microsoft Edge
+### Set up the WebDriver for Microsoft Edge
 
 To use WebDriver as the browser interaction method for Microsoft Edge, you must install the Microsoft Edge WebDriver that matches your browser version:
 
@@ -136,7 +136,7 @@ To use WebDriver as the browser interaction method for Microsoft Edge, you must 
     1. Create a new folder named **WebDrivers** under the following directory: **AppData\Local\Microsoft\Power Automate Desktop**
     1. Copy the **msedgedriver.exe** file into the following folder on your machine: **AppData\Local\Microsoft\Power Automate Desktop\WebDrivers**
 
-# Set up browsers
+## Set up browsers
 
 To make sure that your browser works as expected with Power Automate, you'll need to turn off a couple of features.
 
