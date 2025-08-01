@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: concept-article
-ms.date: 06/09/2025
+ms.date: 08/01/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -26,22 +26,24 @@ In addition, a more intuitive Power BI semantic model data structure is used, wh
 
 When a process is published to Fabric workspace, it creates a new semantic model and a corresponding report. The semantic model is created on top of Fabric Lakehouse delta tables.
 
-This screenshot is an example of a semantic model structure published to Fabric.
-
-Select the **magnifying glass** in the lower-right corner of the image to enlarge it.
+The following screenshot is an example of a semantic model structure published to Fabric.
 
 [![Screenshot of Power BI Direct Lake semantic model structure.](media/process-mining-fabric-semantic-model/FabricSemanticModel.png)](media/process-mining-fabric-semantic-model/FabricSemanticModel.png#lightbox)
 
 ### Column naming
 
-Naming of semantic model columns corresponds to the naming of the columns in your ingested dataset including spaces and other special characters (subject to Power BI semantic model limitations). The limitations of naming in the Fabric Lakehouse delta tables, however, are larger (e.g. spaces are not allowed) and thus Power Automate Process Mining does validation and sanitization before the export to Fabric workspace is triggered. Allowed characters include:
+Naming of semantic model columns corresponds to the naming of the columns in your ingested dataset, including spaces and other special characters. The naming is subject to Power BI semantic model limitations. The limitations of naming in the Fabric Lakehouse delta tables, however, are larger (for example, spaces aren't allowed) and thus, Power Automate Process Mining does validation and sanitization before the export to Fabric workspace is triggered.
+
+Allowed characters include:
+
 - ```a-z``` → lowercase English letters
 - ```A-Z``` → uppercase English letters
 - ```0-9``` → digits
 - ```_``` → underscore
 
 All other characters are replaced with underscore (_) as part of the sanitization process.
-This might result in rare situations where export is not successful as the ingested data source included two columns, that will result in identical name after sanitization - *"Customer_Name"* and *"Customer Name"*. The export will be interrupted and user will be notified with specific error message.
+
+This might result in rare situations where export isn't successful, as the ingested data source includes two columns that result in identical names after sanitization&mdash;**Customer_Name** and **Customer Name**. The export will be interrupted and user will be notified with specific error message.
 
 Lakehouse delta table columns therefore use the sanitized column names, whereas semantic model columns use the original column names.
 
@@ -108,7 +110,7 @@ We recommend that you use the Power BI composite model on top of the semantic mo
 - You need to create more custom DAX (Data Analysis Expressions) queries
 
 > [!IMPORTANT]
-> The semantic model is created in DirectLake access mode, but its option is set to *Automatic*. This setting means that using nonoptimal DAX queries or incorrectly setting a composite model might result in fallback to DirectQuery mode. This means that your report won't break, but you might experience lower performance.
+> The semantic model is created in DirectLake access mode, but its option is set to **Automatic**. This setting means that using nonoptimal DAX queries or incorrectly setting a composite model might result in fallback to DirectQuery mode. This means that your report doesn't break, but you might experience lower performance.
 
 To learn more about creating Power BI composite data models on top of DirectLake semantic models, go to: [Building a composite models on a semantic model or model](/power-bi/transform-model/desktop-composite-models#building-a-composite-model-on-a-semantic-model-or-model).
 
