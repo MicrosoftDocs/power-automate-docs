@@ -25,7 +25,7 @@ This article explains how to use triggers with various cloud flow types.
 
 A trigger is an event that starts a cloud flow. It defines the conditions under which your flow runs. For example, you can create a flow that sends you a notification in Microsoft Teams when someone sends you an email. In this case, receiving an email is the trigger that starts this flow.
 
-- Learn more about the cloud flow types in [Overview of cloud flows](overview-cloud.md).
+- Learn more about the types in [Types of cloud flows](overview-cloud.md#types-of-cloud-flows).
 - Learn more about triggers in [Triggers overview](triggers-introduction.md).
 
 If you're using Copilot to create your flow, Copilot automatically chooses the appropriate cloud flow type and trigger for you based on your description. If you're creating a flow without Copilot, you need to make these choices on your own.
@@ -124,7 +124,7 @@ You work with triggers in the *designer*. [!INCLUDE[designer-tab-experience](./i
 
     The new trigger is now the first step in your flow.
 
-1. On the command bar at the top of the page, select **Save** to save your changes.
+1. If you want to save your flow, you need to [add at least one action](#add-actions-to-your-cloud-flow). Then, you can select **Save** on the command bar at the top of the page.
 
 # [Classic designer](#tab/classic-designer)
 
@@ -146,13 +146,13 @@ You work with triggers in the *designer*. [!INCLUDE[designer-tab-experience](./i
     Both methods return a list of triggers that you can use in your flow. If you can't find the trigger you want in the list, select **See more**.
 
 1. Select the trigger that you want to use. You return to the designer, where you can configure the trigger.
-1. On the command bar at the top of the page, select **Save** to save your changes.
+1. 1. If you want to save your flow, you need to [add at least one action](#add-actions-to-your-cloud-flow). Then, you can select **Save** on the command bar at the top of the page.
 
 ---
 
 ## Add actions to your cloud flow
 
-*Actions* are the events you want the flow to do after the trigger event takes place.
+*Actions* are the events you want the flow to do after the trigger event takes place. To save a cloud flow, it must have at least a trigger and one action.
 
 You work with actions in the *designer*. Power Automate allows you to use either the [new designer](flows-designer.md) or the [classic designer](flows-designer.md#classic-designer) to add actions to your cloud flow. The steps are similar in both designers. Learn more (with examples) in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
 
@@ -168,6 +168,8 @@ You work with actions in the *designer*. Power Automate allows you to use either
 
     If the action you want to add isn't in the list, select **See more** to display more actions.
 
+1. On the command bar at the top of the screen, select **Save**.
+
 # [Classic designer](#tab/classic-designer)
 
 1. Hover over the down arrow below the trigger or action where you want the new action to appear until a plus sign (**+**) appears.
@@ -179,9 +181,11 @@ You work with actions in the *designer*. Power Automate allows you to use either
 
     If the action you want to add isn't in the list, select **See more** to display more actions.
 
+1. On the command bar at the top of the screen, select **Save**.
+
 ---
 
 ## Related information
 
-- [Triggers overview](triggers-introduction.md#use-trigger-conditions-to-reduce-flow-runs)
+- [Customize your triggers with conditions](customize-triggers.md)
 - [Troubleshoot common issues with triggers](triggers-troubleshoot.md)

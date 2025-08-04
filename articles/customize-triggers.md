@@ -128,3 +128,6 @@ Your flow can generate expressions for you.
 ---
 
 ## Related information
+
+- [Triggers overview](triggers-introduction.md)
+- [Use expressions in conditions to check multiple values](use-expressions-in-conditions.md)
