@@ -5,10 +5,10 @@ author: samathur
 contributors:
   - samathur
   - v-aangie
-ms.author: samathur
+ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.topic: how-to
-ms.date: 04/04/2024
+ms.date: 08/04/2025
 ms.custom:
   - sfi-image-nochange
 ---
@@ -32,7 +32,9 @@ We recommend that the flow runs under the service principal in the cases listed 
 
 Since a service principal application user is a [non-interactive user](/power-platform/admin/create-users#create-a-non-interactive-user-account) without a user license, it's subject to [non-licensed user limits](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits) and has special [licensing and request limit implications](/power-platform/admin/power-automate-licensing/types#can-i-use-service-principal-in-flows-and-does-it-count-against-my-request-limits).
 
-The flow [connections need to be shared](/power-apps/maker/canvas-apps/share-app-resources#connections) with the service principal application user in order for them to successfully run the flow. 
+The flow [connections need to be shared](/power-apps/maker/canvas-apps/share-app-resources#connections) with the service principal application user in order for them to successfully run the flow.
+
+Sharing connections with the service principal application user isn't required only if the user is trying to make the service principal the owner of a [solution flow](overview-solution-flows.md). Sharing is still be required if the user is trying to make the service principal the owner of a non-solution flow.
 
 ## Prerequisites
 
@@ -40,6 +42,9 @@ To have a service principal own and run a flow, follow these steps.
 
 1. [Create a service principal application user](/power-platform/admin/create-users#create-an-application-user) representing the Microsoft Entra ID service principal.
 1. [Share connections](/power-apps/maker/canvas-apps/share-app-resources#connections) with the service principal application user.
+
+    Sharing connections with the service principal application user isn't required only if the user is trying to make the service principal the owner of a [solution flow](overview-solution-flows.md). Sharing is still be required if the user is trying to make the service principal the owner of a non-solution flow.
+
 1. Change the owner of the flow to the service principal application user using these steps:
 
     1. On Power Automate portal, open a flow.
