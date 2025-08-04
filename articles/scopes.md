@@ -60,9 +60,9 @@ The examples in the following instructions use actions to create an email and up
 1. In the **Add an action** search field, enter **scope**.
 1. Under the **Control** heading, select **Scope**.
 1. To add the first action you want to include in the scope, select the plus sign (**+**) inside the scope in the designer.
-1. In the configuration pane, type *send an email*, and then select the **Send an email notification (V3)** action under the **Mail** heading.
+1. In the configuration pane, enter *send an email*, and then select the **Send an email notification (V3)** action under the **Mail** heading.
 1. To add another action to the scope, select the plus sign (**+**) below the **Send an email notification (V3)** card inside the scope in the designer.
-1. In the configuration pane, type **update file**, and then select **Update file** under the **SharePoint** heading.
+1. In the configuration pane, enter **update file**, and then select **Update file** under the **SharePoint** heading.
 
     :::image type="content" source="media/scopes/scope-new.png" alt-text="<Screenshot of a scope in the new designer with two actions inside it: Send an email and Update file.>":::
 
@@ -87,5 +87,15 @@ The examples in the following instructions use actions to create an email and up
 
 ---
 
+## Known issues and limitations
 
+- Power Automate supports a maximum of eight (8) nested levels of actions, including scopes, conditions, switch cases, and apply-to-each loops. Flows exceeding this depth don't save or run.
+- When a scope fails, it reports a single **Failed** status for the entire scope. To identify which specific action caused the failure, you must expand the scope.
+- Flows with a high number of actions or deeply nested scopes might experience slower performance in both the flow designer and during execution.
+- Triggers and response actions should remain outside of scopes. To improve clarity and maintain proper flow behavior, keep entry and exit points separate.
+
+
+## Related information
+
+[Best practices for using scopes](guidance/coding-guidelines/create-scopes.md#best-practices-for-using-scopes)
 
