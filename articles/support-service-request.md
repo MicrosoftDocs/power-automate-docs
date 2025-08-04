@@ -114,18 +114,35 @@ The title should mention:
 1. The conditions that cause the bug to happen
 
 Example of a bad title: 
+ “Flow is broken.” (Too vague – it doesn’t indicate which part of Power Automate or what error) 
 
 Example of a good title: 
+“SharePoint trigger fails to start flow when item has attachments larger than 50 MB.” This title specifies the component (SharePoint trigger), the problem (fails to start), and the condition (when an item has large attachments)
+
 
 ## Add a simplified exported flow to the support service request
 
-
+ Whenever feasible, try to recreate the issue with the simplest possible flow. Rather than using your full production flow (which might be very complex), build a small test flow that contains only the components necessary to reproduce the bug.
 
 ## Attach a network trace to the support service request
+ For issues that might be related to network calls or API interactions, consider capturing a network trace during the failure.You can use the browser’s developer tools (for cloud flows), or a tool like Fiddler to capture a network trace.Start recording the trace just before reproducing the issue and stop right after – this ensures the trace focuses only on the failure.
 
 
 
 ## Provide detailed steps to reproduce the issue
+ In the description, list out step-by-step instructions so that someone else can follow them to see the problem. If possible, base this on a simple example (see next point). 
+ For example: 
+ 
+		1. Create a new flow with trigger X. 
+		2. Add action Y with parameters A, B, C. 
+		3. Run the flow by doing Z.
+  
+Expected result: … (What should happen after the above steps?)
+
+Actual result: … (What does happen instead?)
+
+Be precise and include only the relevant steps needed to demonstrate the issue. Including both the observed behaviour and the expected behaviour clarifies the discrepancy.
+
 
 
 ## Provide screenshots or videos
@@ -145,12 +162,49 @@ If the issue involves coding and other professional development features, simpli
 ## Provide system info
 
 
+Some issues occur only under specific conditions, so it’s important to share detailed information about your setup. Please include the following:
+
+- **Environment ID or Name**  
+  Example: `Environment: ContosoProd (ID: 12345abc-cd67-…)`  
+  You can find the environment ID in the URL when you're in Power Automate (it appears as a GUID).
+
+- **Region**  
+  Example: `Europe West` or `United States`  
+  This is often tied to the environment, but stating it explicitly helps identify region-specific issues.
+
+- **Tenant or Organization ID**  
+  Provide the GUID of your Azure AD tenant and, if possible, the tenant name.  
+  If a specific user is relevant (e.g., flow owner or affected user), include their **User ID** or **email address**.
+
+- **Flow Identifiers**  
+  Include the **flow name** and **flow ID**.  
+  The flow ID can be found in the URL after `/flows/` in Power Automate.  
+  This helps Microsoft support locate backend logs more easily.
+
+- **Run Identifiers**  
+  If a specific run failed, include the **Run ID** or a **direct link** to the run.  
+  The Run ID is visible in the URL when viewing run details.  
+  Also include any **Correlation ID** or **Client Request ID** shown in error messages.
+
+- **Browser and OS**  
+  If the issue involves the Power Automate web portal or designer, specify the browser and version.  
+  Example: `Chrome v112 on Windows 10`  
+  For desktop flow issues, include the OS version.  
+  Example: `Windows 11 Pro, version 21H2`
+
+- **Power Automate for Desktop Version**  
+  If applicable, mention the exact version number of the Power Automate Desktop app.  
+  You can find this in the desktop app under **Help > About**.
+
+
+
+
 ## Add notes from your investigation
 
 You might try different configurations to eliminate possible causes. Mention these configurations in the support request. This inclusion helps others understand the issue better and avoid repeating the same steps.
 
 ## Submitting a Power Automate support request
-
+Before submitting a support request, [check if the bug is a known issue](https://learn.microsoft.com/en-us/power-platform/admin/view-known-issues) If the bug isn't already known, you can [create a support request](https://learn.microsoft.com/en-us/power-platform/admin/get-help-support) to report the bug.
 
 ## See also
 
