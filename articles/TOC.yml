@@ -46,6 +46,8 @@
         href: generative-actions-overview.md
       - name: Add a condition
         href: add-condition.md
+      - name: Create environment variables
+        href: environment-variables.md
       - name: Associate flows to apps
         href: associate-flow-to-app.md
       - name: Use data operations
