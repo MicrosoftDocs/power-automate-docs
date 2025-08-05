@@ -906,7 +906,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "power-automate/triggers-troubleshoot.md",
+      "source_path": "articles/triggers-troubleshoot.md",
       "redirect_url": "/troubleshoot/power-platform/power-automate/flow-run-issues/triggers-troubleshoot"
     }
   ]
