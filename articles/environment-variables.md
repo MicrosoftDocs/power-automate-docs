@@ -10,11 +10,11 @@ ms.topic: how-to
 
 # Create environment variables
 
-Environment variables store values&mdash;such as email addresses, connection strings, or URLs&mdash;that can be reused across flows and solutions. Environment variables are useful when you need to change values based on the environment (like Development, Test, or Production). They allow you to update values without modifying the flow logic itself. 
+Environment variables store values&mdash;such as email addresses, connection strings, or URLs&mdash;that can be reused across flows and solutions. Environment variables are useful when you need to change values based on the environment (like Development, Test, or Production). They allow you to update values without modifying the flow logic itself.
 
-For example, you might have an environment variable for a SharePoint site URL that is used in multiple flows. If the URL changes, you need to update only the environment variable instead of each individual flow.
+For example, you might have an environment variable for a SharePoint site URL that's used in multiple flows. If the URL changes, you need to update only the environment variable instead of each individual flow.
 
-This article shows you how to create environment variables, use them in your flows, and update them across different environments.
+This article shows you how to create environment variables, use them in your flows, and deploy them across different environments.
 
 ## Use cases for environment variables
 
@@ -22,7 +22,7 @@ Environment variables can be used in various scenarios. Here are some common use
 
 | **Use case**        | **Environment variable** | **Example**   |
 |---------------------|--------------------------|---------------|
-| API integration     | API_Base_URL             | Used in an HTTP action to call https://dev.api.com or https://prod.api.com |
+| API integration     | API_Base_URL             | Used in an HTTP action to call `https://dev.api.com` or `https://prod.api.com` |
 | Email notifications | SupportEmail             | Used in a `Send an email` action to route messages to the correct team    |
 | SharePoint          | SP_Site_URL              | Used in SharePoint actions to dynamically set the site URL                |
 
@@ -36,11 +36,11 @@ Create environment variables to help you avoid hardcoding values and make your f
 1. Open an existing solution or create a new one.
 
     - To open an existing solution, select it from the list.
-    - To create a new solution, select **+ New solution**, fill in the required fields, and then select **Create**. Learn more in [Create a solution-aware cloud flow](create-flow-solution.md##create-a-solution-aware-cloud-flow).
+    - To create a new solution, select **+ New solution**, fill in the required fields, and then select **Create**. Learn more in [Create a solution-aware cloud flow](create-flow-solution.md#create-a-solution-aware-cloud-flow).
 
 1. Select **+ New** > **More** > **Environment variable**.
 
-    :::image type="content" source="media/environment-variables/new-environment-variable.png" alt-text="Screenshot of selecting an environment variable in a cloud flow action.":::
+    :::image type="content" source="media/environment-variables/new-environment-variable.png" alt-text="Screenshot of selecting the 'New environment variable' pane.":::
 
 1. Fill in the fields:
 
@@ -62,7 +62,7 @@ Once created, you can reference environment variables in your cloud flows in a [
 1. On the navigation pane to the left, select **Solutions**.
 1. Open an existing solution or create a new one.
     - To open an existing solution, select it from the list.
-    - To create a new solution, select **+ New solution**, fill in the required fields, and then select **Create**. Learn more in [Create a solution-aware cloud flow](create-flow-solution.md##create-a-solution-aware-cloud-flow).
+    - To create a new solution, select **+ New solution**, fill in the required fields, and then select **Create**. Learn more in [Create a solution-aware cloud flow](create-flow-solution.md#create-a-solution-aware-cloud-flow).
 1. In your solution, [create](create-flow-solution.md#create-a-solution-aware-cloud-flow) or [open a cloud flow](create-flow-solution.md#add-an-existing-cloud-flow-into-a-solution).
 1. Select or add an action that will use the environment variable.
 1. Select field where you want to insert the environment variable, and then select the lightning bolt icon to show the dynamic content list.
@@ -82,7 +82,7 @@ Once created, you can reference environment variables in your cloud flows in a [
 To use an environment variable in a different environment, you need to export your solution. When you import the solution into another environment, the environment variable is included.
 
 - Learn how to [export a solution](export-flow-solution.md).
-- Learn how to [import a solution](import--flowsolution.md).
+- Learn how to [import a solution](import-flow-solution.md).
 
 When you import the solution, you can set the environment variable's value for that environment. This allows you to customize the variable for different environments without changing the flow logic.
 
