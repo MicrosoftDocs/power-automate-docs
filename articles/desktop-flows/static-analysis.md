@@ -184,6 +184,14 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 - **Description**: This rule checks if the hardcoded wait actions in the flow exceed a specified amount of time, with the limit set to 600 seconds.
 - **Suggested fix**: Review the flow to find wait actions that exceed the 600-second limit. Check if these long wait times are necessary and adjust their duration to the shortest time needed for the flow to work correctly. If a long wait is required, break it into shorter intervals and add checks or conditions between them. Whenever possible, replace long wait actions with event-driven triggers.
 
+<a name="unreachedactions"></a>
+### Unreached actions
+
+- **Severity**: Warning
+- **Type**: Maintainability
+- **Error details**: One or more actions in the flow are unreachable and will not be executed under any circumstances.
+- **Description**: This rule checks whether there are any actions in the flow that are logically unreachable. These may result from incorrect branching, misplaced conditions, or disconnected segments, and can indicate flaws in the flow’s logic or structure.
+- **Suggested fix**: Review the flow to identify actions that are not connected to any execution path. Ensure all actions are reachable through valid logic branches or loops. Remove or reposition unreachable actions to maintain a clean and efficient flow.
 
 ## Known limitations
 
