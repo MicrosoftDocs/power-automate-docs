@@ -5,7 +5,7 @@ author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 06/11/2025
+ms.date: 08/05/2025
 ms.author: nimoutzo
 ms.reviewer: danamartens
 contributors:
@@ -24,8 +24,9 @@ The safe stop feature in Power Automate for desktop enables users to halt the ex
 To use safe stop, two components must be configured:
 
 - Safe stop trigger:
-  - Safe stop can be initiated in two ways:
+  - Safe stop can be initiated in three ways:
     - From the Power Automate portal: Navigate to the **Run Details** page of a running desktop flow and select **Safe Stop**. :::image type="content" source="media/safe-stop/safe-stop-portal.png" alt-text="Screenshot of button to safe stop a desktop flow execution through the Power Automate portal.":::
+    - From the Power Automate for desktop console: Locate the running desktop flow, then either click the dropdown next to the **Stop** button and select **Safe stop**, or right-click the flow and choose **Safe stop** from the context menu.
     - From the Power Automate for desktop designer: Use the dropdown on the **Stop** button and then select **Safe stop**. 
       - This option is especially useful during debugging or when a flow needs to be halted gracefully in the designer without disrupting the environment. :::image type="content" source="media/safe-stop/safe-stop-designer.png" alt-text="Screenshot of button to safe stop a desktop flow execution through the Power Automate for desktop designer.":::
 - Safe stop in the flow:
