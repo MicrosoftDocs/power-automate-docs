@@ -5,7 +5,7 @@ author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 03/07/2025
+ms.date: 08/05/2025
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -235,12 +235,13 @@ Interacts through click action on any UI element of an SAP window.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
-|Element type|No|Basic SAP element, Checkbox, Label, Drop-down list|Basic SAP element|Select the SAP element type that you need to interact with. The ‘Click SAP element’ option performs a click action on any SAP element as buttons, radio buttons, tabs, text fields, trees.|
+|Element type|No|Basic SAP element, Checkbox, Label, Drop-down list, Grid element|Basic SAP element|Select the SAP element type that you need to interact with. The ‘Click SAP element’ option performs a click action on any SAP element as buttons, radio buttons, tabs, text fields, trees.|
+|SAP element ID|No|Numeric||The SAP element’s ID. This parameter determines the UI element in SAP that action interacts with. You can use the below button for indication the SAP UI element in the SAP screen or insert the value manually.|
 |SAP element ID|No|Numeric||The SAP element’s ID. This parameter determines the UI element in SAP that action interacts with. You can use the below button for indication the SAP UI element in the SAP screen or insert the value manually.|
 |Set SAP checkbox state to|Yes|Checked, Unchecked|Checked|Specify whether the checkbox becomes checked or unchecked.|
-|SAP element ID|No|Numeric||The SAP element’s ID. This parameter determines the UI element in SAP that action interacts with. You can use the below button for indication the SAP UI element in the SAP screen or insert the value manually.|
 |SAP label operation|Yes|Expand, Collapse, Choose|Expand|Specify whether to expand or collapse the SAP label.|
 |Drop-down option value|Yes|[Text value](../variable-data-types.md#text-value)||Specify the drop-down option is selected.|
+|SAP grid element|Yes|Cell, Row, Header, List, Button, Toolbar Button, Checkbox, Radio Button|Cell|Select the SAP grid element type that you need to interact with.|
 
 ### Variables produced
 
