@@ -5,7 +5,7 @@ author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 06/18/2025
+ms.date: 08/05/2025
 ms.author: nimoutzo
 ms.reviewer: danamartens
 contributors:
@@ -69,15 +69,15 @@ Static analysis runs automatically, continuously inspecting your code without re
 
 :::image type="content" source="media\static-analysis\static-analysis-pad-button.png" alt-text="Screenshot of the button in Power Automate for Desktop designer that opens the static analysis pane.":::
 
-Each analysis generates a percentage score that shows the proportion of rules successfully followed. A higher score means fewer violations and better code quality.
+Each analysis generates a percentage score that shows the proportion of rules successfully followed. A higher score means fewer violations and better code quality. 
 
 This score is recalculated every time a change is made to the flow, providing immediate feedback and promoting good development practices.
 
 :::image type="content" source="media\static-analysis\static-analysis-pad-score.png" alt-text="Screenshot showing the static analysis score and a summary of any violated rules.":::
 
-If rules are violated, the static analysis report shows a clear summary. It lists rule names and the number of actions or variables in your flow that violate each rule. Selecting a rule highlights the corresponding action and provides a detailed error explanation. For variable-related violations, the system navigates to the variable pane, making corrections easy.
+If rules are violated, the static analysis report shows a clear summary. It lists rule names and the number of actions or variables in your flow that violate each rule. Selecting a rule highlights the corresponding action and provides a detailed error explanation. For variable-related violations, the system navigates to the variable pane, making corrections easy. Moreover, the Flow checker pane includes search functionality and supports filtering by subflow, making it easier to locate specific issues.
 
-Each violation displays a tile with details, including the error's nature, recommended fixes, and a link to documentation. Use the slider in the rule’s header to navigate between occurrences of the same violation. This guidance helps developers address issues quickly and effectively.
+Each violation displays a tile with details, including the error's nature, recommended fixes, and a link to documentation. Use the slider in the rule’s header to navigate between occurrences of the same violation. This guidance helps developers address issues quickly and effectively. Actions with Flow checker error violations display an in-line indicator and a popup with additional details. Warnings are also shown in-line within the designer workspace, just like errors. It also displays diagnostic statuses—such as warnings and errors—directly on subflow tabs, and includes a button that lets you navigate to the component requiring attention. 
 
 :::image type="content" source="media\static-analysis\static-analysis-pad-details.png" alt-text="Screenshot showing the details of a static analysis rule.":::
 
@@ -108,9 +108,9 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 
 - **Severity**: Warning
 - **Type**: Maintainability
-- **Error details**: Variable name exceeds the 25-character limit.
-- **Description**: This rule verifies if the name of each variable defined in the flow exceeds a specified number of characters. The default limit is 25 characters.
-- **Suggested fix**: Rename any variables that exceed the specified character limit to ensure their names are shorter than 25 characters.
+- **Error details**: Variable name exceeds the 40-character limit.
+- **Description**: This rule verifies if the name of each variable defined in the flow exceeds a specified number of characters. The default limit is 40 characters.
+- **Suggested fix**: Rename any variables that exceed the specified character limit to ensure their names are shorter than 40 characters.
 
 <a name="variabledefaultvalues"></a>
 ### Input variable default values
