@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 07/10/2025
+ms.date: 08/05/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -22,20 +22,11 @@ A *scope* is a container that groups actions together, making it easier to organ
 
 :::image type="content" source="media/use-scope.png" alt-text="Screenshot of actions within a scope.":::
 
-## Create a scope
-
-1. Open your cloud flow.
-1. Select **+** to add an action.
-1. Search for **Scope**.
-1. Add the **Scope** control.
-    :::image type="content" source="media/use-scope-add.png" alt-text="Screenshot of the add an action pane showing the Scope control." lightbox="media/use-scope-add.png":::
-1. You can now add actions within the scope, or drag existing actions into the scope.
-
 ## Best practices for using scopes
 
-- **Group related actions**. When you have a set of actions that are logically related, group them into a scope. This helps keep related tasks together and makes it easier to understand the purpose of each section.
+- **Group related actions**. When you have a set of actions that are logically related, group them into a scope. This approach keeps related tasks together and makes it easier to understand the purpose of each section.
 
-- **Organize your flow**. Scopes can create a hierarchical structure within your flow. You can nest scopes to break down your workflow into smaller, more manageable sections. A hierarchical organization makes it easier to understand and manage complex workflows.
+- **Organize your flow**. Scopes create a hierarchical structure within your flow. You can nest scopes to break down your workflow into smaller, more manageable sections. A hierarchical organization makes it easier to understand and manage complex workflows.
 
 - **Implement error handling**. You can configure scopes to catch and handle errors that occur in the actions they contain. Using a catch scope makes it easier to troubleshoot and fix issues in your workflow. Learn more in [Employ robust error handling](error-handling.md).
 
@@ -47,3 +38,7 @@ A *scope* is a container that groups actions together, making it easier to organ
 > To make your flows more readable, add comments or notes in the scope.
 >
 > :::image type="content" source="media/use-scope-note.png" alt-text="Screenshot of a note within a scope.":::
+
+## Related information
+
+- [Use scopes to organize actions in cloud flows](../../scopes.md)

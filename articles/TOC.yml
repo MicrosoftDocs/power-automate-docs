@@ -33,8 +33,6 @@
           items:
           - name: Get started with triggers
             href: triggers-introduction.md
-          - name: Troubleshoot common issues with triggers
-            href: triggers-troubleshoot.md
         - name: Copilot in cloud flows FAQ
           href: faq-copilot-cloud-flows.yml
     - name: How to
@@ -50,6 +48,8 @@
         href: associate-flow-to-app.md
       - name: Use data operations
         href: data-operations.md
+      - name: Use scopes to organize actions
+        href: scopes.md
       - name: Customize or format date and time values in a flow
         href: date-time-values.md
       - name: Convert a time zone
