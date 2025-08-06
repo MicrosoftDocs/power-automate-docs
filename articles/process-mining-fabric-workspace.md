@@ -1,5 +1,5 @@
 ---
-title: Customize a report with your own Fabric workspace (preview)
+title: Customize a report with your own Fabric workspace
 description: Learn how to use your own custom Fabric workspace and leverage a higher capacity to analyze processes with the process mining capability.
 author: rosikm
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 04/03/2025
+ms.date: 08/06/2025
 ms.author: michalrosik
 ms.reviewer: ellenwehrle
 search.audienceType: 
@@ -17,19 +17,15 @@ search.audienceType:
 #customer intent: As a business process analyst, I want to customize a report with my own Fabric workspace so that I can leverage a higher capacity to analyze processes with a lot more data.
 ---
 
-# Customize a report with your own Fabric workspace (preview)
-
-[!INCLUDE[cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+# Customize a report with your own Fabric workspace
 
 You can use your own custom Fabric workspace and leverage a higher capacity to analyze processes with a lot more data. You're also able to customize the look and feel of the report.
 
-When using you own custom Fabric workspace, data from Power Automate Process Mining is first stored in Fabric Lakehouse where they're transformed into delta tables. A semantic model is automatically created on top of the tables to power the default report. The Power BI report connects to the data using [Direct Lake mode](/fabric/fundamentals/direct-lake-overview).
-
-> [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+When you use your own custom Fabric workspace, data from Power Automate Process Mining is first stored in Fabric Lakehouse where they're transformed into delta tables. A semantic model is automatically created on top of the tables to power the default report. The Power BI report connects to the data using [Direct Lake mode](/fabric/fundamentals/direct-lake-overview).
 
 ## Set up your workspace prerequisites
 
-To connect the workspace to the process mining capability and then customize the default report (or create a new one) you need to:
+To connect the workspace to the process mining capability and then customize the default report (or create a new one), you need to:
 
 - Ensure that [Users can access data stored in OneLake with apps external to the Fabric](/fabric/admin/service-admin-portal-onelake#users-can-access-data-stored-in-onelake-with-apps-external-to-fabric) option is switched on in the OneLake tenant settings.
 - Create and set up your Fabric workspace.
@@ -38,22 +34,26 @@ To connect the workspace to the process mining capability and then customize the
 
 The following sections in this article walk you through how to set up your workspace.
 
-### Check the App registration settings in AAD
+### Check the 'Users can register applications' settings in Entra ID
+
+Microsoft Azure Active Directory is now called Microsoft Entra ID.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
-1. Search for **azure active directory** in the search bar and select **Microsoft Entra ID**.
+1. Search for **azure active directory** in the search bar and select **Azure active directory**.
 1. Under **Manage**, select **Users**.
-1. Select **User settings** and review the **App registrations** selection.
+1. Select **User settings** and review the **Users can register applications** selection.
 
-    - If **App registrations** is **Yes**, any user can register the process mining capability as an app.
-    - If **App registrations** is **No**,  only admins can register apps. If you're an admin, you can choose to turn this on to allow others to register the process mining capability as an app.
+    - If **Users can register applications** is **Yes**, any user can register the process mining capability as an app.
+    - If **Users can register applications** is **No**,  only admins can register apps. If you're an admin, you can choose to turn this on to allow others to register the process mining capability as an app.
 
 1. On the Windows taskbar, select **Search**.
 1. Type **powershell**, and then select **Run as Administrator**.
 
-### Install Azure tools and register a Process Insights service principal in AAD
+### Install Azure tools and register a Process Insights service principal in Microsoft Entra ID
 
 If you didn't do this yet, install the Azure tools.
+
+Microsoft Azure Active Directory is now called Microsoft Entra ID.
 
 1. On the **Administrator: Windows PowerShell** screen, type **Install-Module AzureAD**, and then select **Enter**.
 1. When prompted to confirm installation, enter **Y**, and then select **Enter**.
@@ -87,7 +87,7 @@ Now that you connected to the process mining capability and installed the Micros
 1. Assign it **admin access**.
 
    > [!IMPORTANT]
-   > It's required that the service principal gets added as an admin. If you skip this step, the feature doesn't work.
+   > It's a requirement that the service principal gets added as an admin. If you skip this step, the feature doesn't work.
 
 ### Use existing Fabric workspace
 
@@ -142,7 +142,7 @@ After completing these steps, return to the analytics page of your process in th
     :::image type="content" source="media/process-mining-pbi-workspace/download-file.png" alt-text="Screenshot of the 'Download this file' dropdown menu option.":::
 
 1. To download a report with a live connection., select **A copy of your report with a live connection to data online (.pbix)**.
-1. Open the downloaded report in Power BI for desktop. Ensure you have the latest Power BI for desktop version and the preview feature [Enable PBIR format is switched on](/power-bi/developer/projects/projects-report#enable-pbir-format-preview-feature).
+1. Open the downloaded report in Power BI Desktop. Ensure you have the latest Power BI Desktop version and the preview feature [Enable PBIR format is switched on](/power-bi/developer/projects/projects-report#enable-pbir-format-preview-feature).
 1. Move the cards that hold the donuts (blue circles) for the **Variants**, **Cases**, and **Activities** metrics to the right by selecting and dragging each card.
 1. On the **Visualizations** pane, select the *card element*.
 1. A new card appears. Resize it, and then drag it to the left of the **Variants** donut (blue circle).
@@ -163,7 +163,7 @@ You successfully customized your Power BI report. Every time you refresh your pr
 
 Once this step is done, the report in your Fabric workspace displays with the report name that you entered. You can edit and save it. Your report is updated with the changes that you made with Power BI.
 
-If you encounter issues or error messages, go to [Troubleshooting](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace).
+Learn about issues and error messages in [Issues with your own Power BI workspace](process-mining-troubleshoot.md#issues-with-your-own-power-bi-workspace).
 
 ## Related information
 
