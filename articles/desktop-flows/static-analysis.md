@@ -5,7 +5,7 @@ author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 08/05/2025
+ms.date: 08/06/2025
 ms.author: nimoutzo
 ms.reviewer: danamartens
 contributors:
@@ -65,7 +65,7 @@ To manually trigger static analysis:
 
 ## Static analysis in the designer
 
-Static analysis runs automatically, continuously inspecting your code without requiring manual intervention. When you add, remove, or modify actions in your flow, this feature activates to assess the changes and refresh the analysis. This process makes development seamless and efficient.
+Static analysis runs automatically, continuously inspecting your code without requiring manual intervention. When you add, remove, or modify actions in your flow, this feature activates to assess the changes and refresh the analysis. This process makes development seamless and efficient. On the right side of the designer, you'll find a dedicated Flow Checker button. The number displayed on it represents the total violations detected in the desktop flow. Clicking the button opens the Flow Checker pane, where you can explore detailed insights into the specific rules being violated.
 
 :::image type="content" source="media\static-analysis\static-analysis-pad-button.png" alt-text="Screenshot of the button in Power Automate for Desktop designer that opens the static analysis pane.":::
 
