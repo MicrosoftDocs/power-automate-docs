@@ -16,7 +16,6 @@ search.audienceType:
   - enduser
 ms.collection:
   - get-started
-  - bap-ai-copilot
 ---
 
 # Customize your triggers with conditions
@@ -58,13 +57,13 @@ This is especially important in pay-as-you-go environments, where every flow run
     1. Select **Settings**.  
     1. Next to **Trigger conditions**, select **+ Add**.
 
-        :::image type="content" source="./media/triggers-introduction/copilot-trigger-add-new-designer.png" alt-text="Screenshot that shows trigger site in Copilot.":::
+        :::image type="content" source="./media/triggers-introduction/copilot-trigger-add-new-designer.png" alt-text="Screenshot of the 'Settings' tab to add a trigger.":::
 
 1. Add an expression. Learn how to use expressions in [Use expressions in conditions to check multiple values](use-expressions-in-conditions.md). Learn more in [Create, update, and fix expressions with Copilot expression assistant](expressions-copilot.md).
 
     Every trigger condition must start with the **@** symbol.
 
-     :::image type="content" source="./media/triggers-introduction/copilot-trigger-example-new-designer.png" alt-text="Screenshot that shows an expression example in Copilot.":::
+     :::image type="content" source="./media/triggers-introduction/copilot-trigger-example-new-designer.png" alt-text="Screenshot that shows an expression example.":::
 
     Alternatively, follow the instructions in [Easily create expressions](#easily-create-expressions).
 
@@ -131,3 +130,4 @@ Your flow can generate expressions for you.
 
 - [Triggers overview](triggers-introduction.md)
 - [Use expressions in conditions to check multiple values](use-expressions-in-conditions.md)
+- [Troubleshoot common issues with triggers](/troubleshoot/power-platform/power-automate/flow-run-issues/triggers-troubleshoot?tabs=new-designer)
