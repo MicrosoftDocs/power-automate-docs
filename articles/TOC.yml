@@ -33,8 +33,6 @@
           items:
           - name: Get started with triggers
             href: triggers-introduction.md
-          - name: Troubleshoot common issues with triggers
-            href: triggers-troubleshoot.md
         - name: Copilot in cloud flows FAQ
           href: faq-copilot-cloud-flows.yml
     - name: How to
