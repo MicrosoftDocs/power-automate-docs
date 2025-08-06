@@ -5,7 +5,7 @@ author: kewaiss
 contributors:
   - kewaiss
   - v-aangie
-ms.date: 05/08/2025
+ms.date: 08/06/2025
 ms.topic: how-to
 ms.service: power-automate
 ms.subservice: cloud-flow
@@ -188,4 +188,4 @@ You work with actions in the *designer*. Power Automate allows you to use either
 ## Related information
 
 - [Customize your triggers with conditions](customize-triggers.md)
-- [Troubleshoot common issues with triggers](triggers-troubleshoot.md)
+- [Troubleshoot common issues with triggers](/troubleshoot/power-platform/power-automate/flow-run-issues/triggers-troubleshoot?tabs=new-designer)
