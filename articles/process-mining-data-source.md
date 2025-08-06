@@ -61,8 +61,8 @@ For larger data volumes, Power Automate Process Mining allows you to schedule an
 
 Learn how to set up the incremental data refresh in the articles related to the ingestion type:
 
-- [Incremental data refresh from Azure Data Lake Storage Gen 2](process-mining-byo-azure-data-lake#define-incremental-data-refresh-settings.md)
-- [Incremental data refresh from Fabric OneLake](process-mining-files-fabric-onelake#define-incremental-data-refresh-settings.md)
+- [Incremental data refresh from Azure Data Lake Storage Gen 2](process-mining-byo-azure-data-lake.md#define-incremental-data-refresh-settings)
+- [Incremental data refresh from Fabric OneLake](process-mining-files-fabric-onelake.md#define-incremental-data-refresh-settings)
 
 ## Custom trigger data refresh
 
