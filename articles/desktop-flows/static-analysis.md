@@ -65,7 +65,7 @@ To manually trigger static analysis:
 
 ## Static analysis in the designer
 
-Static analysis runs automatically, continuously inspecting your code without requiring manual intervention. When you add, remove, or modify actions in your flow, this feature activates to assess the changes and refresh the analysis. This process makes development seamless and efficient. On the right side of the designer, you'll find a dedicated Flow Checker button. The number displayed on it represents the total violations detected in the desktop flow. Clicking the button opens the Flow Checker pane, where you can explore detailed insights into the specific rules being violated.
+Static analysis runs automatically, continuously inspecting your code without requiring manual intervention. When you add, remove, or modify actions in your flow, this feature activates to assess the changes and refresh the analysis. This process makes development seamless and efficient. On the right side of the designer, you see a dedicated Flow Checker button. The number on the button shows the total violations in the desktop flow. Select the button to open the **Flow Checker** pane and view detailed insights about the specific rules that are violated.
 
 :::image type="content" source="media\static-analysis\static-analysis-pad-button.png" alt-text="Screenshot of the button in Power Automate for Desktop designer that opens the static analysis pane.":::
 
@@ -75,14 +75,16 @@ This score is recalculated every time a change is made to the flow, providing im
 
 :::image type="content" source="media\static-analysis\static-analysis-pad-score.png" alt-text="Screenshot showing the static analysis score and a summary of any violated rules.":::
 
-If rules are violated, the static analysis report shows a clear summary. It lists rule names and the number of actions or variables in your flow that violate each rule. Selecting a rule highlights the corresponding action and provides a detailed error explanation. For variable-related violations, the system navigates to the variable pane, making corrections easy. Moreover, the Flow checker pane includes search functionality and supports filtering by subflow, making it easier to locate specific issues.
+If rules are violated, the static analysis report shows a clear summary. It lists rule names and the number of actions or variables in your flow that violate each rule. Selecting a rule highlights the corresponding action and provides a detailed error explanation. For variable-related violations, the system navigates to the variable pane, making corrections easy. The Flow checker pane includes search functionality and lets you filter by subflow, so you can quickly find specific issues.
 
-Each violation displays a tile with details, including the error's nature, recommended fixes, and a link to documentation. Use the slider in the rule’s header to navigate between occurrences of the same violation. This guidance helps developers address issues quickly and effectively. Actions with Flow checker error violations display an in-line indicator and a popup with additional details. Warnings are also shown in-line within the designer workspace, just like errors. It also displays diagnostic statuses—such as warnings and errors—directly on subflow tabs, and includes a button that lets you navigate to the component requiring attention. 
+Each violation displays a tile with details, including the error's nature, recommended fixes, and a link to documentation. Use the slider in the rule’s header to navigate between occurrences of the same violation. This guidance helps developers address issues quickly and effectively. Flow checker error violations show an inline indicator and a popup with more details. Warnings also appear inline in the designer workspace, like errors. The designer shows diagnostic statuses such as warnings and errors on subflow tabs, and includes a button that lets you go to the component that needs attention.
 
 :::image type="content" source="media\static-analysis\static-analysis-pad-details.png" alt-text="Screenshot showing the details of a static analysis rule.":::
+
 Legend
+
 1. Occurences of the specific rule violation
-1. Navigate to the respective action that violates the rule
+1. Navigate to the action that violates the rule
 1. Link to documentation
 
 ## Static analysis rules
@@ -193,9 +195,9 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 
 - **Severity**: Warning
 - **Type**: Maintainability
-- **Error details**: One or more actions in the flow are unreachable and will not be executed under any circumstances.
-- **Description**: This rule checks whether there are any actions in the flow that are logically unreachable. These may result from incorrect branching, misplaced conditions, or disconnected segments, and can indicate flaws in the flow’s logic or structure.
-- **Suggested fix**: Review the flow to identify actions that are not connected to any execution path. Ensure all actions are reachable through valid logic branches or loops. Remove or reposition unreachable actions to maintain a clean and efficient flow.
+- **Error details**: One or more actions in the flow are unreachable and won't be executed under any circumstances.
+- **Description**: This rule checks for actions in the flow that are logically unreachable. Unreachable actions can result from incorrect branching, misplaced conditions, or disconnected segments, and might indicate flaws in the flow's logic or structure.
+- **Suggested fix**: Review the flow to find actions that aren't connected to an execution path. Ensure each actions is reachable through a valid logic branch or loop. Remove or move unreachable actions to keep the flow clean and efficient.
 
 ## Known limitations
 
