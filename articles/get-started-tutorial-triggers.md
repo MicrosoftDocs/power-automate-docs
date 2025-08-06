@@ -5,7 +5,7 @@ author: kewaiss
 contributors:
   - kewaiss
   - v-aangie
-ms.date: 08/06/2025
+ms.date: 08/07/2025
 ms.topic: how-to
 ms.service: power-automate
 ms.subservice: cloud-flow
@@ -29,6 +29,8 @@ A trigger is an event that starts a cloud flow. It defines the conditions under 
 - Learn more about triggers in [Triggers overview](triggers-introduction.md).
 
 If you're using Copilot to create your flow, Copilot automatically chooses the appropriate cloud flow type and trigger for you based on your description. If you're creating a flow without Copilot, you need to make these choices on your own.
+
+In this article, you'll learn how to start a flow in three ways: automatically using predefined triggers, manually as determined by you, and scheduled based on a specified date and time. After you create a trigger, you'll learn how to replace it in an existing flow, and add actions to your flow to tell the trigger what to do after it starts.
 
 ## Select a trigger to start a flow when a designated event happens
 

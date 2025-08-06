@@ -5,7 +5,7 @@ author: kewaiss
 contributors:
   - kewaiss
   - v-aangie
-ms.date: 08/05/2025
+ms.date: 08/07/2025
 ms.topic: how-to
 ms.service: power-automate
 ms.subservice: cloud-flow
@@ -16,6 +16,7 @@ search.audienceType:
   - enduser
 ms.collection:
   - get-started
+  - CXT
 ---
 
 # Customize your triggers with conditions
