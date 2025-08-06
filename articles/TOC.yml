@@ -33,8 +33,6 @@
           items:
           - name: Get started with triggers
             href: triggers-introduction.md
-          - name: Troubleshoot common issues with triggers
-            href: triggers-troubleshoot.md
         - name: Copilot in cloud flows FAQ
           href: faq-copilot-cloud-flows.yml
     - name: How to
@@ -908,9 +906,9 @@
         href: process-mining-pbi-workspace.md
       - name: Use optimized data structure in Power BI report
         href: process-mining-pbi-data-structure.md
-      - name: Customize a report with your own Fabric workspace (preview)
+      - name: Customize a report with your own Fabric workspace
         href: process-mining-fabric-workspace.md
-      - name: Structure of semantic model in Fabric workspace (preview)
+      - name: Structure of semantic model in Fabric workspace
         href: process-mining-fabric-semantic-model.md
     - name: Application lifecycle management (ALM)
       items:
