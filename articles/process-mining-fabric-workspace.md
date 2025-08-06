@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 08/01/2025
+ms.date: 08/06/2025
 ms.author: michalrosik
 ms.reviewer: ellenwehrle
 search.audienceType: 
@@ -34,15 +34,17 @@ To connect the workspace to the process mining capability and then customize the
 
 The following sections in this article walk you through how to set up your workspace.
 
-### Check the App registration settings in Microsoft Entra ID
+### Check the 'Users can register applications' settings in Entra ID
+
+Microsoft Azure Active Directory is now called Microsoft Entra ID.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
-1. Search for **azure active directory** in the search bar and select **Microsoft Entra ID**.
+1. Search for **azure active directory** in the search bar and select **Azure active directory**.
 1. Under **Manage**, select **Users**.
-1. Select **User settings** and review the **App registrations** selection.
+1. Select **User settings** and review the **Users can register applications** selection.
 
-    - If **App registrations** is **Yes**, any user can register the process mining capability as an app.
-    - If **App registrations** is **No**,  only admins can register apps. If you're an admin, you can choose to turn this on to allow others to register the process mining capability as an app.
+    - If **Users can register applications** is **Yes**, any user can register the process mining capability as an app.
+    - If **Users can register applications** is **No**,  only admins can register apps. If you're an admin, you can choose to turn this on to allow others to register the process mining capability as an app.
 
 1. On the Windows taskbar, select **Search**.
 1. Type **powershell**, and then select **Run as Administrator**.
@@ -50,6 +52,8 @@ The following sections in this article walk you through how to set up your works
 ### Install Azure tools and register a Process Insights service principal in Microsoft Entra ID
 
 If you didn't do this yet, install the Azure tools.
+
+Microsoft Azure Active Directory is now called Microsoft Entra ID.
 
 1. On the **Administrator: Windows PowerShell** screen, type **Install-Module AzureAD**, and then select **Enter**.
 1. When prompted to confirm installation, enter **Y**, and then select **Enter**.
