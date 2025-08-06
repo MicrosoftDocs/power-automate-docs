@@ -159,7 +159,7 @@ For issues with professional development features, provide a link to the documen
 
 If the issue involves coding and other professional development features, simplify the code first. Verify the issue occurs and attach a snippet of the problematic code.
 
-## Provide system info
+## Provide system info 
 
 
 Some issues occur only under specific conditions, so it’s important to share detailed information about your setup. Please include the following:
@@ -192,11 +192,29 @@ Some issues occur only under specific conditions, so it’s important to share d
   For desktop flow issues, include the OS version.  
   Example: `Windows 11 Pro, version 21H2`
 
+
+  ## Information Required for Power Automate Desktop Flows
+
+Issues with Power Automate for desktop may require additional details in your support request. When creating a support request for a desktop flow problem, please include the following information:
+
 - **Power Automate for Desktop Version**  
-  If applicable, mention the exact version number of the Power Automate Desktop app.  
-  You can find this in the desktop app under **Help > About**.
+  Specify the exact version number of the Power Automate Desktop application you are using.  
+  You can find this by opening the desktop app and clicking **Help > About**.
 
+- **Operating System Details**  
+  Provide the edition and version of Windows in use.
 
+- **Run Type: Local or Cloud**  
+  Indicate whether the flow was executed by a cloud flow (attended/unattended run) or from the Console (local run).
+
+- **Run Mode**  
+  If the issue involves a desktop flow running from the cloud, specify whether it was an **Attended** or **Unattended** run.
+
+- **Network Configuration (Proxy/Firewall)**  
+  If the machine is on a corporate network, mention whether it’s behind a proxy server or a strict firewall.
+
+- **Machine Logs**
+  Please refer the steps to [collect the machine logs](https://learn.microsoft.com/en-us/power-automate/desktop-flows/troubleshoot#collect-machine-)
 
 
 ## Add notes from your investigation
@@ -207,5 +225,5 @@ You might try different configurations to eliminate possible causes. Mention the
 Before submitting a support request, [check if the bug is a known issue](https://learn.microsoft.com/en-us/power-platform/admin/view-known-issues) If the bug isn't already known, you can [create a support request](https://learn.microsoft.com/en-us/power-platform/admin/get-help-support) to report the bug.
 
 ## See also
-
+[Power Automate Troubleshooting](https://learn.microsoft.com/en-us/troubleshoot/power-platform/power-automate/welcome-power-automate)
 
