@@ -2,13 +2,16 @@
 title: Authentication and security for planning a Power Automate project | Microsoft Docs
 description: Different automation scenarios require Power Automate to use different authentication methods. This article explains them.
 author: taiki-yoshida
-
+ms.service: power-automate
 ms.subservice: guidance
-ms.topic: conceptual
-ms.custom: guidance
+ms.topic: concept-article
 ms.date: 12/10/2020
-ms.author: tayoshi
+ms.author: mapichle
 ms.reviewer: kathyos
+ms.custom:
+  - guidance
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 
 ---
 

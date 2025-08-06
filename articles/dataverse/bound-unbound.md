@@ -2,10 +2,10 @@
 title: Use a flow to perform bound and unbound actions in Dataverse
 description: Learn how to use flows to perform bound and unbound actions in Microsoft Dataverse.
 suite: flow
-author: v-aangie
-ms.author: Matow
+author: kewaiss
+ms.author: cgarty
 ms.reviewer: angieandrews
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/09/2024
 search.audienceType: 
   - maker

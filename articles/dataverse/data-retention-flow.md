@@ -1,12 +1,14 @@
 ---
 title: Create a cloud flow to view Dataverse long term retained data
 description: This article explains how you can create a cloud flow to view Microsoft Dataverse long term retained data.
-author: Mattp123
-ms.author: angieandrews
+author: radioblazer
+ms.author: matow
 ms.service: powerapps
 ms.topic: how-to 
 ms.date: 09/25/2024
-ms.custom: template-how-to 
+ms.custom:
+  - template-how-to
+  - sfi-image-nochange
 ---
 # Create a cloud flow to view Dataverse long term retained data
 

@@ -9,8 +9,9 @@ ms.author: angieandrews
 ms.reviewer: angieandrews
 editor: ''
 tags: ''
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/14/2023
@@ -19,6 +20,7 @@ search.app:
   - Powerplatform
 search.audienceType: 
   - admin
+ms.custom: sfi-ga-nochange
 ---
 
 # Respond to personal data requests (Microsoft Entra ID)

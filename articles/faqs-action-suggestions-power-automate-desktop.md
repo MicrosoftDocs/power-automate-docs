@@ -1,10 +1,11 @@
 ---
 title: FAQ for suggested actions in Power Automate for desktop
 description: This FAQ discusses suggested actions in Power Automate for desktop and the key considerations for making use of this technology responsibly.
-ms.date: 12/17/2024
+ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: Cochamos
 ms.author: cochamos
 ms.reviewer: angieandrews

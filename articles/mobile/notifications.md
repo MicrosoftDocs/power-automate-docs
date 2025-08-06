@@ -11,8 +11,9 @@ contributors:
   - v-aangie
 editor: ''
 tags: ''
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: article
 ms.date: 06/05/2023
 ms.author: jamiller
 ms.reviewer: angieandrews

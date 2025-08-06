@@ -2,9 +2,10 @@
 title: Trigger desktop flows from cloud flows
 description: See how to trigger Power Automate desktop flows from cloud flows.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 06/25/2024
+ms.topic: how-to
+ms.date: 07/22/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -13,6 +14,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Trigger desktop flows from cloud flows

@@ -5,9 +5,11 @@ author: rosikm
 contributors:
   - rosikm
   - v-aangie
+ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 07/18/2023
+ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template

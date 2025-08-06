@@ -2,15 +2,17 @@
 title: Handle errors in desktop flows
 description: See how to handle errors and warnings in your desktop flows
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 04/13/2023
+ms.topic: article
+ms.date: 01/20/2025
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Handle errors in desktop flows
@@ -101,9 +103,16 @@ If different errors require different error handling functionality, select **Adv
 
 Some scenarios may require you to implement the same error-handling functionality for several actions in your desktop flows.
 
-Instead of configuring each action separately, you can deploy the **On block error** action and configure error-handling for all the actions inside the block.
+Instead of configuring each action separately, deploy the **On block error** action and configure a common error handling behavior for all the actions inside the block.
 
-This action offers almost the same options as the **On error** settings of single actions but also allows you to capture unexpected logic errors, such as trying to access a list item from an out-of-bounds position.
+This action offers the same options as the **On error** settings of single actions but also lets you capture unexpected logic errors, such as trying to access a list item from an out-of-bounds position. Other options include providing a name for this block, as well as selecting to continue the flow run from the beginning or the end of the block, after an error occurs.
+
+> [!NOTE]
+> If a retry policy is set and an error occurs, retrying will take place from the beginning of the block.
+> 
+> If all block retries fail, then the actions specified in block's 'Exception handling mode' will apply.
+> 
+> Individual error handling/retries from actions within the error block take precedence from block error retries.
 
 :::image type="content" source="media/errors/on-block-error-action.png" alt-text="Screenshot of the On block error action.":::
 

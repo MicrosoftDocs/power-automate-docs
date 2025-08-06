@@ -2,8 +2,9 @@
 title: Import a solution
 description: Learn how to import a solution.
 author: ChrisGarty
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/09/2024
 ms.author: cgarty
 ms.reviewer: angieandrews

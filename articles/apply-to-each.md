@@ -7,9 +7,11 @@ contributors:
   - kisubedi
   - kartikraop
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 10/09/2024
+ms.topic: how-to
+ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -52,9 +54,30 @@ Here are the requirements for successfully performing the steps in this tutorial
 
 For detailed information about using SharePoint with Power Automate, go to the [SharePoint documentation](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers).
 
-[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
 ## Create a cloud flow
+
+# [New designer](#tab/new-designer)
+
+[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
+
+1. Try asking Copilot to create a flow by typing this prompt:
+
+    **Every 15 minutes, Get top 10 unread emails and get my manager. If the email is from my manager OR the email is Important and subject contains 'meet now', send me a push notification to my phone.**
+
+    Copilot suggests a flow based on your prompt:
+
+    :::image type="content" source="./media/apply-to-each/copilot-apply-to-each-prompt.png" alt-text="Screenshot of a flow suggestion from Copilot.":::
+
+1. Select **Next** and review the connections.
+1. Select **Next** and your flow appears on the designer.
+
+    The flow is preconfigured with all the required fields in the designer.
+
+    :::image type="content" source="./media/apply-to-each/copilot-configured-flow.png" alt-text="Screenshot of a flow created by Copilot based on your prompt.":::
+
+1. Save the flow and it's ready to use.
 
 # [Classic designer](#tab/classic-designer)
 
@@ -85,27 +108,6 @@ For detailed information about using SharePoint with Power Automate, go to the [
     :::image type="content" source="./media/apply-to-each/foreach-5.png" alt-text="Screenshot of a configured email card.":::
 
 So far, you've created a simple flow that gets some emails from your inbox. These emails will be returned in an array. The **Apply to each** action requires an array, so this is exactly what's needed.
-
-# [Edit with Copilot (preview)](#tab/edit-with-copilot-preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](./includes/cc-beta-prerelease-disclaimer.md)]
-
-1. Try asking Copilot to create a flow by typing this prompt: 
-
-    **Every 15 minutes, Get top 10 unread emails and get my manager. If the email is from my manager OR the email is Important and subject contains 'meet now', send me a push notification to my phone.**
-
-    Copilot suggests a flow based on your prompt:
-
-    :::image type="content" source="./media/apply-to-each/copilot-apply-to-each-prompt.png" alt-text="Screenshot of a flow suggestion from Copilot.":::
-
-1. Select **Next** and review the connections.
-1. Select **Next** and your flow appears on the designer.
-
-    The flow is preconfigured with all the required fields in the designer.
-
-    :::image type="content" source="./media/apply-to-each/copilot-configured-flow.png" alt-text="Screenshot of a flow created by Copilot based on your prompt.":::
-
-1. Save the flow and it's ready to use.
 
 ---
 

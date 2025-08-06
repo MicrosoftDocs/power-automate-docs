@@ -2,8 +2,9 @@
 title: Power Automate for desktop architecture
 description: Power Automate for desktop architecture
 author: Mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/20/2024
 ms.author: matp
 ms.reviewer: matp
@@ -14,6 +15,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-ropc-nochange
 ---
 
 # Power Automate for desktop architecture
@@ -61,7 +63,7 @@ The details about this data flow are documented in [Adjust communication setting
 
 ## Other Power Automate outgoing web requests 
 
-Power Automate makes some additional outgoing web requests at runtime, which are documented in [Desktop flow services required for runtime](../ip-address-configuration.md#services-required-for-desktop-flows-runtime).
+Power Automate makes some additional outgoing web requests at runtime, which are documented in [Desktop flow services required for runtime](../ip-address-configuration.md#allow-machines--users-on-your-network-to-access-power-automate-desktop-services).
 
 The CRL endpoints are only required if you use the on-premises data gateway. They use HTTP over port 80 and are initiated by the **UIFlowService**. 
 

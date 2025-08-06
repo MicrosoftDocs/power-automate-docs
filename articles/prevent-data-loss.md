@@ -1,9 +1,10 @@
 ---
 title: Data loss prevention (DLP) policy creation
 description: Learn about data loss prevention policies for Power Automate.
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 01/14/2025
+ms.date: 07/30/2025
 ms.author: cgarty
 author: ChrisGarty
 contributors:
@@ -11,6 +12,8 @@ contributors:
   - v-aangie
 ms.reviewer: angieandrews
 ms.custom: bap-template
+ms.contributors:
+ - dominiquelee-ms 
 ---
 
 # Data loss prevention (DLP) policy creation
@@ -60,7 +63,7 @@ When your tenant is opted into the user experience in the Power Platform, your a
 
 ### Govern desktop flows outside of DLP
 
-Granular control over the use of desktop flows on all machines as described in the previous sections applies only to Managed Environments. You have other options to govern desktop flows.
+You have other options to govern desktop flows.
 
 - **Ability to govern desktop flow orchestration**: The desktop flow connector can be governed in your policies like any other connector in all environments.
 

@@ -7,11 +7,13 @@ contributors:
   - kewaiss
   - v-aangie
 ms.collection: get-started
+ms.service: power-automate
 ms.subservice: teams
-ms.topic: conceptual
+ms.topic: article
 ms.date: 10/27/2023
 ms.author: kewaiss
 ms.reviewer: angieandrews
+ms.custom: sfi-image-blocked
 ---
 
 # Manage flows in Microsoft Teams

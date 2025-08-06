@@ -2,17 +2,20 @@
 title: Share desktop flows that contain connector actions
 description: Learn how to share desktop flows that contain connector actions.
 author: jpapadimitriou
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/12/2024
+ms.date: 07/01/2025
 ms.author: dipapa
 ms.reviewer: 
 contributors:
 - jpapadimitriou
 - DanaMartens
+- yiannismavridis
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Share desktop flows that contain connector actions
@@ -34,7 +37,7 @@ You can share a desktop flow that uses connections with:
 
 Makers with user access on a shared desktop flow must always bring their own connections when they run the flow. They can only perform attended console initiated runs.
 
-Once you run a shared desktop flow that contains connector actions through the console, a prompt appears for you to provide a valid connection to be used.
+Once you run a shared desktop flow that contains connector actions through the console, a prompt appears for you to provide a valid connection to be used. If there's only one available valid connection per connector (or more connections corresponding to the same email account), this prompt is suppressed and doesn't appear.
 
 :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/bring-your-own-connection.png" alt-text="Screenshot of the dialog for you to add a connection." border="false":::
 
@@ -42,7 +45,7 @@ If there are compatible existing connections available, the first one is selecte
 
 ## Run a shared desktop flow that contains connector actions as a co-owner
 
-Co-owners have the ability to modify shared desktop flows in addition to running them. Co-owners have the ability to *embed* (preview) the connection references (and as a result their underlying connections) to the desktop flows they have access to. By embedding a connection reference to a desktop flow, you allow other co-owners to have access to the underlying data provided by it, for both modifying as well as running the desktop flow.
+Co-owners have the ability to modify shared desktop flows in addition to running them. Co-owners have the ability to *embed* the connection references (and as a result their underlying connections) to the desktop flows they have access to. By embedding a connection reference to a desktop flow, you allow other co-owners to have access to the underlying data provided by it, for both modifying as well as running the desktop flow.
 
 > [!NOTE]
 > You can only embed or remove connection references that you own from a desktop flow. Connection references added by other co-owners can only be managed by them.
@@ -55,19 +58,19 @@ Co-owners have the ability to modify shared desktop flows in addition to running
 To successfully invoke a desktop flow containing connector actions from a cloud flow, it must meet the following two requirements:
 
 - The desktop flow must use the [Power Automate v2 schema](../schema.md).
-- All of its connection references must be marked as embedded.
+- If you're a co-owner of the flow, all of its connection references must be marked as embedded.
 
 To embed a connection reference to a flow that you have access to as a co-owner:
 
 1. Select the desktop flow in [Power Automate](https://make.powerautomate.com) and then select **Details**.
 1. In the **Connection references** section, select **Manage.**
 
-    :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/manage-connection-references-button.png" alt-text="Screenshot of the Manage Connections button." border="false":::
+    :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/manage_connection_references_button.png" alt-text="Screenshot of the Manage Connections button." border="false":::
 
     In the **Connection references** screen, all of the connection references used in a flow are displayed.
-1. Set the **Embed in desktop flow** option to **Yes** to enable it.
+1. Set the **Embedded in desktop flow** option to **Yes** to enable it.
 
-    :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/embed-connection-reference-to-a-flow.png" alt-text="Screenshot of the Manage Connections menu." border="false":::
+    :::image type="content" source="media/share-desktop-flows-that-contain-connector-actions/embed_a_connection_reference_to_a_flow.png" alt-text="Screenshot of the Manage Connections menu." border="false":::
 
 1. After you confirm your selection, the connection reference is embedded in the desktop flow.
 
@@ -79,4 +82,4 @@ When importing a desktop flow with embedded connection references in a solution,
 
 ### Console runs
 
-Similar to the user use-case, when you run a shared desktop flow with connector actions through the console, a prompt appears for you to provide a valid connection to be used.
+Similar to the user use-case, when you run a shared desktop flow with connector actions through the console, a prompt appears for you to provide a valid connection to be used. If there's only one available valid connection per connector (or more connections corresponding to the same email account), this prompt is suppressed and doesn't appear.

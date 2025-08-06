@@ -5,10 +5,11 @@ author: rosikm
 contributors:
   - rosikm
   - v-aangie
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 07/18/2023
-ms.author: michalrosik
+ms.topic: article
+ms.date: 03/10/2025
+ms.author: dbekirop
 ms.reviewer: angieandrews
 search.audienceType:
 - flowmaker
@@ -16,6 +17,8 @@ search.audienceType:
 ---
 
 # List of date and time operations
+
+[!INCLUDE [papm-operations-note](../includes/papm-operations-note.md)]
 
 ## TODATE([year],[month],[day])
 

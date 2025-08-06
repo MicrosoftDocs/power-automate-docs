@@ -8,9 +8,10 @@ author: ChrisGarty
 contributors:
   - ChrisGarty
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 06/05/2023
+ms.topic: how-to
+ms.date: 06/25/2025
 ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 

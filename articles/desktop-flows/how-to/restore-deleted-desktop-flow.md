@@ -2,14 +2,16 @@
 title: Restore a deleted desktop flow
 description: Learn how to restore a deleted desktop flow.
 author: PetrosFeleskouras
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 08/22/2024
+ms.date: 03/05/2025
 ms.author: pefelesk
 ms.reviewer: 
 contributors:
 - PetrosFeleskouras
 - DanaMartens
+- YiannisMavridis
 search.audienceType: 
   - flowmaker
   - admin
@@ -19,7 +21,7 @@ search.audienceType:
 This article provides solutions and workarounds to fully or partially recover a deleted desktop flow.
 
 > [!NOTE]
-> The solutions and workarounds provided in this article apply to users who sign in with [work or school accounts, or organization premium accounts](/power-automate/desktop-flows/requirements#sign-in-account-comparison).
+> The solutions and workarounds provided first in this article apply to users who sign in with [work or school accounts, or organization premium accounts](/power-automate/desktop-flows/requirements#sign-in-account-comparison). The last solution applies to users who sign in with [Microsoft accounts](/power-automate/desktop-flows/getting-started-msa).
 
 ## Fully restore a deleted desktop flow
 
@@ -92,3 +94,9 @@ To recover the actions of the deleted flow:
 1. Select the **Delete** event to open the record.
 1. Copy the **Definition** field to a text editor and replace all the `\r\n` characters with new lines. Create a new line for each set of `\r\n` characters.
 1. Follow the same steps as described in [Restore from local run data](#restore-from-local-flow-run-data) starting from step #2.
+
+## Fully restore a deleted desktop flow using a Microsoft personal account
+
+When you have signed in with a Microsoft personal account, your desktop flows are stored in OneDrive, under the path *'OneDrive\Apps\Power Automate Desktop For Windows'*.
+
+You can follow the instructions in this [article](https://support.microsoft.com/office/restore-deleted-files-or-folders-in-onedrive-949ada80-0026-4db3-a953-c99083e6a84f), to restore deleted desktop flows from your OneDrive's recycle bin.

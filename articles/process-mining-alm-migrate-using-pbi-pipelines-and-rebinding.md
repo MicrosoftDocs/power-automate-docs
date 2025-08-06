@@ -8,10 +8,11 @@ contributors:
   - hamenon-ms
   - donums
   - v-aangie  
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: upgrade-and-migration-article
 ms.date: 08/12/2024
-ms.author: janpidych
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

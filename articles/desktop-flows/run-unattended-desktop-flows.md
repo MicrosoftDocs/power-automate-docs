@@ -2,9 +2,10 @@
 title: Run unattended desktop flows
 description: See how to run unattended desktop flows on your device.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 11/26/2024
+ms.topic: how-to
+ms.date: 02/10/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -12,6 +13,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-ropc-nochange
 ---
 # Run unattended desktop flows
 
@@ -43,6 +45,7 @@ When running desktop flows in unattended mode, keep in mind that:
 > - Unattended desktop flows require an available machine with all users signed out.
 > - Locked Windows user sessions will prevent unattended desktop flows from running.
 > - Unattended desktop flows can't run with elevated privileges.
+> - Logging into a machine during an unattended flow execution isn't supported and might cause the flow to fail.
 
 ## Reuse a Windows session in unattended mode
 
@@ -67,13 +70,9 @@ To allow reusing Windows session:
 > [!NOTE]
 > When you add machines to machine groups, they inherit the settings of the group. When you remove machines from machine groups, they keep the settings defined at the group level.
 
-## Admin consent for unattended runs using CBA or sign-in credentials with NLA (preview)
-
-[!INCLUDE [cc-preview-features-definition](../includes/cc-beta-prerelease-disclaimer.md)]
+## Admin consent for unattended runs using CBA or sign-in credentials with NLA
 
 To perform unattended runs with Microsoft Entra ID using certificate-based authentication (CBA) or sign-in credentials with Network Level Authentication (NLA), follow these steps:
-
-[!INCLUDE [preview-tags](../includes/cc-preview-features-definition.md)]
 
 ### Step 1 - Enable Microsoft Entra authentication for RDP
 

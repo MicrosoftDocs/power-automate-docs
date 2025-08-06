@@ -2,9 +2,10 @@
 title: Hosted RPA Best Practices and FAQ
 description: Discover best practices and FAQs for hosted RPA solutions. Learn about configuration, maintenance, custom VM images, access, and security.
 author: kenseongtan
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 01/03/2025
+ms.topic: best-practice
+ms.date: 03/10/2025
 ms.author: kenseongtan
 ms.reviewer: 
 contributors:
@@ -24,8 +25,8 @@ This section provides an overview of the best practices and frequently asked que
 |----------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Description**                          | Hosted machines offer developers an easy setup to build, test, and deploy desktop flows, enabling both attended and unattended modes, with scalability through machine groups for robust automation. | Hosted machine groups provide scalable, unattended automation by dynamically provisioning virtual machines to handle spikes in demand, optimizing resource allocation, and reducing costs by balancing bot capacity across multiple processes based on real-time needs. |
 | **Custom VM image via Azure Compute Gallery** | Supported                                                                                                                           | Supported                                                                                                                                                                          |
-| **Custom VNET via Azure Virtual Network** | Supported                                                                                                                           | Supported (preview)                                                                                                                                                               |
-| **Device join types**                    | • Microsoft Entra join<br> • Microsoft Entra Hybrid join                                                                                                | • Microsoft Entra Join                                                                                                                                                                       |
+| **Custom VNET via Azure Virtual Network** | Supported                                                                                                                           | Supported                                                                                                                                                               |
+| **Device join types**                    | • Microsoft Entra join<br> • Microsoft Entra Hybrid join                                                                                                | • Microsoft Entra join<br> • Microsoft Entra Hybrid join (preview)                                                                                                                                                                       |
 | **User accounts**                        | • Work or school account                                                                                                            | • Work or school account<br> • Local account                                                                                                                                       |
 | **Device management**                    | • Intune<br> • Active Directory (AD)-based Group Policy (GPO) if using Microsoft Entra Hybrid join<br> • Conditional access policy             | • Conditional access policy                                                                                                                                                        |
 
@@ -76,7 +77,7 @@ Use a custom VM image for hosted virtual machines to create a consistent and tai
 
 A custom network connection connects hosted virtual machines to your virtual network. It enables secure communication among hosted machines, the Internet, and on-premises networks, providing full control over traffic.
 
-- **Create custom network connections**: Follow the instructions and requirements for creating custom network connections for [hosted machines](hosted-machines.md#use-a-custom-virtual-network-for-your-hosted-machines) and [hosted machine groups](hosted-machine-groups.md#use-a-custom-virtual-network-for-your-hosted-machine-groups-preview).
+- **Create custom network connections**: Follow the instructions and requirements for creating custom network connections for [hosted machines](hosted-machines.md#use-a-custom-virtual-network-for-your-hosted-machines) and [hosted machine groups](hosted-machine-groups.md#use-a-custom-virtual-network-for-your-hosted-machine-groups).
 
 > [!NOTE]
 > Ensure access to the required service endpoints:

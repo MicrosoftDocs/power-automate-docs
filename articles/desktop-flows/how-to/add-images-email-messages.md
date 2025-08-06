@@ -3,6 +3,7 @@ title: Add images to email messages
 description: Add images to email messages
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 06/03/2021

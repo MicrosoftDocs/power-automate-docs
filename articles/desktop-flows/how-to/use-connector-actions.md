@@ -3,6 +3,7 @@ title: Use connector actions
 description: Learn how to use connector actions in desktop flows.
 author: jpapadimitriou
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 07/23/2024
@@ -14,6 +15,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Use connector actions in desktop flows

@@ -5,13 +5,15 @@ suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
 editor: ''
-ms.custom: guidance
-ms.topic: article
+ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
-ms.author: grarchib
+ms.author: macarrer
 ms.reviewer: angieandrews
+ms.custom:
+  - guidance
+  - sfi-image-nochange
 ---
 
 # Flow exception rules framework

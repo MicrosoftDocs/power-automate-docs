@@ -2,6 +2,7 @@
 title: UI automation actions reference
 description: See all the available UI automation actions.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 10/14/2024

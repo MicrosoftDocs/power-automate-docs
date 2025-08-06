@@ -1,31 +1,35 @@
 ---
 title: Introduction to desktop flows
-description: Introduction to desktop flows
+description: Power Automate desktop flows let you automate repetitive tasks on your computer. Learn how to save time and boost productivity with easy automation.
 author: Mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 06/20/2024
+ms.topic: concept-article
+ms.date: 06/27/2025
 ms.collection: get-started
 ms.author: dipapa
 ms.reviewer: matp
 contributors:
-- jpapadimitriou
-- Yiannismavridis
-- NikosMoutzourakis
-- PetrosFeleskouras
-- search.app: 
+  - jpapadimitriou
+  - Yiannismavridis
+  - NikosMoutzourakis
+  - PetrosFeleskouras
+search.app:
   - Flow
-search.audienceType: 
+search.audienceType:
   - flowmaker
   - enduser
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:06/27/2025
 ---
 
 # Introduction to desktop flows
 
+Desktop flows broaden the existing robotic process automation (RPA) capabilities in Power Automate and enable you to automate all repetitive desktop processes. Automating is quicker and easier than ever with the new intuitive Power Automate desktop flow designer using the prebuilt drag-and-drop actions or recording your own desktop flows to run later.
 
-Desktop flows broaden the existing robotic process automation (RPA) capabilities in Power Automate and enable you to automate all repetitive desktop processes. Automating is quicker and easier than ever with the new intuitive Power Automate desktop flow designer using the prebuilt drag-and-drop actions or recording your own desktop flows to run later. 
-
-Desktop flows are addressed to essentially everyone who is performing simple or complex rule-based tasks on their workstations. Users at home, small businesses, enterprises, or larger companies can leverage automation capabilities in Power Automate to create flows, interact with everyday tools like email and Excel, or work with modern and legacy applications. Examples of simple and complex tasks you can automate are:  
+Desktop flows are addressed to essentially everyone who is performing simple or complex rule-based tasks on their workstations. Users at home, small businesses, enterprises, or larger companies can use automation capabilities in Power Automate to create flows, interact with everyday tools like email and Excel, or work with modern and legacy applications. Examples of simple and complex tasks you can automate are:  
 
 - Quickly organize your documents using dedicated files and folders actions 
 - Accurately extract data from websites and store them in Excel files using web and Excel automation
@@ -35,7 +39,7 @@ If you're a home user who is accessing a weather website to see tomorrow's forec
 
 It allows you to automate both legacy applications, such as terminal emulators, modern web and desktop applications, Excel files, and folders. You can interact with the machine using application UI elements, images, or coordinates.
 
-Sign in to Power Automate Windows application using one of the following accounts and automate your tedious tasks: 
+Sign in to Power Automate Windows application using one of the following accounts and automate your tedious tasks:
 
 - [Getting started with a Microsoft account](getting-started-msa.md)
 - [Getting started with a work or school account](getting-started-freeorg.md)

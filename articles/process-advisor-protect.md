@@ -6,14 +6,16 @@ contributors:
   - donums
   - v-aangie 
   - tatn
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 07/18/2023
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-blocked
 ---
 
 # Protect your data

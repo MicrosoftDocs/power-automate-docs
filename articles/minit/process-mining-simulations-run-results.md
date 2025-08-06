@@ -1,27 +1,24 @@
 ---
-title: Run a simulation and generate results (preview)
+title: Run a simulation and generate results
 description: Learn how to generate results and modify a process simulation in the Process Mining desktop app.
 author: janPidych
 contributors:
   - janPidych
   - v-aangie  
+ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
-ms.date: 09/30/2024
-ms.author: janpidych
+ms.topic: how-to
+ms.date: 03/19/2025
+ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Run a simulation and generate results (preview)
-
-[!INCLUDE[cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
+# Run a simulation and generate results
 
 After you [create a simulation scenario](process-mining-simulations-scenario.md), you can run it and generate results. This article shows you how to run a simulation scenario and get detailed results, including global Key Performance Indicators (KPIs).
-
-[!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 ## Start the simulation
 
@@ -31,10 +28,10 @@ Run the simulation scenario and generate results.
 
     The status of the simulation scenario appears at bottom of the scenario’s tile. Examples of status are **Queued for start** and **Completed**. There are other descriptions depending on the simulation scenario.
 
-    When Simulation is finished, simulation tile shows 2 global KPI results:
+    When simulation is finished, the simulation tile shows two (2) global KPI results:
 
     - **Average case cost difference**: Can be zero, when no financial attributes are selected.
-    - **Average case duration difference**: This KPI is allways calculated.
+    - **Average case duration difference**: This KPI is always calculated.
 
 1. View the simulation results.
 

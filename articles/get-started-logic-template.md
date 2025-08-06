@@ -10,8 +10,9 @@ contributors:
   - v-aangie
 ms.author: jamiller
 ms.reviewer: angieandrews
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: article
+ms.topic: get-started
 ms.date: 05/12/2022
 search.audienceType: 
   - flowmaker

@@ -1,11 +1,12 @@
 ---
 title: Flow control actions reference
 description: Learn about the available flow control actions in desktop flows.
-author: mattp123
+author: kewaiss
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 08/27/2024
-ms.author: matp
+ms.date: 06/11/2025
+ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
@@ -17,6 +18,8 @@ search.audienceType:
 # Flow control actions
 
 Flow control is the act of controlling the order in which actions and subflows run. Power Automate enables you to implement flow control through the flow control actions.
+
+The **If safe stop is requested** action is used in conjunction with the safe stop capability available in the Power Automate portal, where it can be triggered from the desktop flow run details page, or be triggered directly within the flow designer, for debugging purposes, to enable controlled termination of a running flow. More information: [Safe stop](../safe-stop.md)
 
 **Labels** are used to create points of reference for the **Go to** action that changes the running point of the desktop flow. The following example directs the flow to a label earlier in the flow to repeat a series of actions.
 
@@ -34,6 +37,24 @@ You can only use the **Region** and **End region** actions as pairs, and they mu
 
 > [!NOTE]
 > If you create multiple regions in a subflow, there's no predetermined mapping between specific **Region** and **End region** actions. Instead, the last **Region** action will try to form a pair with the first available **End region** action that follows.
+
+## <a name="ifsafestopaction"></a> If safe stop requested
+
+Checks whether safe stop is requested for the specific flow.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Stop the flow|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Indicates whether the flow's execution should be terminated after the completion of the specific block of actions or if the execution should continue. Note that if you choose to continue execution, you need to manually add a **Stop Flow** action to terminate the flow.|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="comment_onerror"></a> Exceptions
+
+This action doesn't include any exceptions.
 
 ## <a name="comment"></a> Comment
 
@@ -168,6 +189,7 @@ Marks the beginning of a block to handle actions errors.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Name|No|[Text value](../variable-data-types.md#text-value)||The name of the Exception Block for Visual purposes only.|
+|Retry policy|N/A|None, Fixed, Exponential|None|The rules based on which retries are performed. Delays are estimated in seconds.|
 |Capture unexpected logic errors|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Expand the scope of error handling, also capturing logical errors in the flow, for example, dividing a number by zero or trying to access an item from an out of bounds position.|
 
 ### Variables produced

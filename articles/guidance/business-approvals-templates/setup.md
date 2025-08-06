@@ -3,11 +3,13 @@ title: Setup of the business approvals kit
 description: Setup of the business approvals kit and templates.
 documentationcenter: na
 author: Grant-Archibald-MS
-ms.custom: guidance
-ms.topic: article
+ms.topic: install-set-up-deploy
 ms.date: 11/20/2023
 ms.author: grarchib
 ms.reviewer: angieandrews
+ms.custom:
+  - guidance
+  - sfi-image-nochange
 ---
 
 # Business approvals kit manual setup

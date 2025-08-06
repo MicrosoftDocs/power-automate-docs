@@ -1,19 +1,23 @@
 ---
-title: Create desktop flow connections
-description: See how to create connections to trigger desktop flows from cloud flows.
+title: Manage desktop flow connections
+description: See how to manage connections to trigger desktop flows from cloud flows.
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 01/08/2025
+ms.topic: how-to
+ms.date: 01/27/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
-# Create desktop flow connections
+# Manage desktop flow connections
 
 > [!IMPORTANT]
 > Before using a machine to run desktop flows from the cloud, ensure that the machine is secured and the machine's admins are trusted.
@@ -31,7 +35,7 @@ Before using the **Run desktop flow** action in your cloud flow to trigger a des
 
 There are two different methods to connect Power Automate with your machines (or groups).
 
-## Connect with username and password
+## Create a connection: Connect with username and password
 
 With this option, you need to provide the machine information and device credentials:
 
@@ -56,7 +60,7 @@ With this option, you need to provide the machine information and device credent
 
   :::image type="content" source="media/desktop-flows-setup/credentials-screen.png" alt-text="Screenshot that shows where to enter the credentials for the connection.":::
 
-## Connect with sign-in for attended runs
+## Create a connection: Connect with sign-in for attended runs
 
 With this option, you don't need to provide session credentials. This option might be helpful when your organization doesn't allow username and password for user sessions.
 
@@ -98,3 +102,41 @@ The desktop flow connection is automatically created.
 > If you consistently encounter issues when creating a connection on a new machine, first try to remove it, and then [register it](/power-automate/desktop-flows/manage-machines#register-a-new-machine) again.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
+## Share a desktop flow connection (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+You can share a connection with other Service Principal users in your organization and give those Service Principal users specific permissions to access it.
+
+[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+To share a desktop flow connection:
+
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+1. Go to **Monitor** > **Connection**.
+1. Select your connection from the list, and then select the **Share** button.
+1. Enter the name of the service principal user in your organization with whom you want to share the connection.
+1. Select the permissions they can access the connection with:
+    - Can use
+    - Can edit
+1. Select **Save**.
+
+### Limitations
+
+- You can only share desktop flows with a specified run owner identity. Learn more in [Select a run owner](#select-a-run-owner).
+- Recipients of desktop flow connection sharing are limited to service principal users.
+- You can't share a desktop flow connection with the "Can Share" permission (only "Can use" or "Can edit").
+
+## Select a run owner
+
+A run owner of a desktop flow is the user whose permissions are checked during the flow execution.
+
+By default, connections created using the Power Automate portal use the connection's creator as the run owner.
+
+You can select a specific identity as the run owner. Learn more in [Set a run owner on a desktop flow connection](/power-automate/desktop-flows/how-to/set-runowner-desktopflowconnection).
+
+## Desktop flow connection audit
+
+You can see the desktop flow run owner on the run status page. Learn more in [Run status](/power-automate/desktop-flows/monitor-run-details#run-status).
+You can also see the summary of desktop flow run owner usage on the Desktop Flow activity page. Learn more in [Desktop flow activity](/power-automate/desktop-flows/desktop-flow-activity).

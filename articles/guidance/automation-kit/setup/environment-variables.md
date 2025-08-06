@@ -8,11 +8,13 @@ Contributors:
   - Grant-Archibald-MS
   - v-aangie
 editor: ''
-ms.custom: guidance
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 04/21/2023
-ms.author: grarchib
+ms.author: macarrer
 ms.reviewer: angieandrews
+ms.custom:
+  - guidance
+  - sfi-image-nochange
 ---
 
 # Configure automation kit environment variables
@@ -40,7 +42,7 @@ The Azure Key Vault secrets are using the environment variable type. These envir
 
 To get the format, follow these steps:
 
-1. Sign in to [Azure](https://portal.azure.com/home).
+1. Sign in to [Azure](https://portal.azure.com/#home).
 
 1. Under **Security**, open your Key Vault with the secrets for your app registration.
 

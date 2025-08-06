@@ -2,9 +2,10 @@
 title: Troubleshoot desktop flows runtime
 description: Learn how to resolve common Power Automate desktop flows runtime problems effectively.
 author: PetrosFeleskouras
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: troubleshooting
-ms.date: 01/14/2025
+ms.topic: troubleshooting-general
+ms.date: 07/21/2025
 ms.author: pefelesk
 ms.reviewer: tapanm
 contributors:
@@ -18,6 +19,7 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
   - ai-seo-date:01/14/2025
+  - sfi-image-nochange
 ---
 
 # Troubleshoot desktop flows runtime
@@ -121,7 +123,7 @@ If the agent for virtual desktops can't communicate with Power Automate for desk
 1. Navigate to the appropriate directory using the following command:
 
     ``` PowerShell
-    cd "C:\Program Files (x86)\Power Automate Desktop\RDP\DVCPlugin\x64"
+    cd "C:\Program Files (x86)\Power Automate Desktop\dotnet\RDP\DVCPlugin\x64"
     ```
 
 1. Run the following two commands:

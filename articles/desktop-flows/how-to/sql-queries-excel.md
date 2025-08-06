@@ -3,6 +3,7 @@ title: Run SQL queries on Excel files
 description: Run SQL queries on Excel files
 author: mattp123
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 11/17/2022
@@ -15,6 +16,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Run SQL queries on Excel files

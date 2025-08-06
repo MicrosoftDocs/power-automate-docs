@@ -3,9 +3,11 @@ title: Create desktop flows using Record with Copilot (preview)
 description: Create desktop flows effortlessly with Record with Copilot in Power Automate desktop by sharing your screen and narrating tasks to automate.
 author: JoeFernandezMS
 
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
-ms.date: 10/14/2024
+ms.topic: how-to
+ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.author: jofernan
 ms.reviewer: dmartens
 contributors:
@@ -17,6 +19,8 @@ ms.custom:
   - ai-gen-docs-bap
   - ai-gen-desc
   - ai-seo-date:08/23/2024
+ms.collection: 
+  - bap-ai-copilot
 ---
 
 # Create desktop flows using Record with Copilot (preview)
@@ -138,6 +142,10 @@ The recordings aren't used for training the AI model.
 When you start a recording, you can choose which screen to record and which microphone to use. A colored border shows around the screen being recorded. To avoid capturing sensitive information, make sure it isn't shown during the recording. If you accidentally record something you don't want to include, you can restart the recording or close the recorder. In these cases, the recordings aren't sent to the cloud for processing.
 
 The recorder captures a video of the selected screen, audio from the chosen microphone, and necessary UI metadata to build the desktop flow.
+
+## Can you turn off Record with Copilot?
+
+You can turn off Copilot for Power Automate, which also turns off Record with Copilot. Learn more in [Enable or disable Copilot in Power Automate](../copilot-overview.md#enable-or-disable-copilot-in-power-automate).
 
 ## Share your feedback
 

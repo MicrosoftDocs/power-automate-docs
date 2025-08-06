@@ -1,8 +1,9 @@
 ---
-title: Use copilot to analyze desktop flow activity (preview)
-description: Use copilot to analyze flow runs, errors, machines and more by asking questions in natural language. 
-ms.topic: conceptual
-ms.date: 08/29/2024
+title: Use copilot to analyze desktop flow activity
+description: Use copilot to analyze flow runs, errors, machines, and more by asking questions in natural language. 
+ms.topic: how-to
+ms.date: 04/24/2025
+ms.update-cycle: 180-days
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -14,15 +15,13 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Use copilot to analyze desktop flow activity (preview)
+# Use copilot to analyze desktop flow activity
 
 [This article is prerelease documentation and is subject to change.]
 
-Understanding automation performance is key to achieving operational excellence and reliability goals, regardless of the size of the automation estate, team or role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
+Understanding automation performance is key to achieving operational excellence and reliability goals, regardless of the size of the automation estate, team, or role within the organization. To reach those goals requires advanced and dynamic monitoring capabilities that provide you with valuable insights that highlight areas of success and identify potential bottlenecks, trends and areas for improvement. Having more detailed insights allows you to make informed decisions that optimize your automation processes, leading to increased efficiency and effectiveness.
 
 :::image type="content" source="media/analyze-automation-activity-copilot/copilot-overview.png" alt-text="Screenshot of a copilot experience as part of desktop flow activity page." lightbox="media/analyze-automation-activity-copilot/copilot-overview.png":::
-
-[!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
 
 The latest advancements in AI provide us with unprecedented opportunities to explore new automation health monitoring use-cases that could include anything from simple data exploration to anomaly detection, smart recommendations, and even self-healing bots.
 
@@ -31,29 +30,28 @@ With copilot now able to analyze desktop flow activity we're taking the first st
 > [!IMPORTANT]
 >
 > - This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
-> - Copilot is a new technology that is still being developed. It is optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
-> - Read the [responsible AI FAQs for copilot in desktop flow activity (preview)](../faqs-copilot-automation-activity.md) to learn more about this new copilot experience.
+> - Copilot is a new technology that is still being developed. It's optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
+> - Read the [responsible AI FAQs for copilot in desktop flow activity](../faqs-copilot-automation-activity.md) to learn more about this new copilot experience.
 > - More FAQs: [Responsible AI FAQs for Power Automate](../responsible-ai-overview.md),[FAQ for copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 ## Prerequisites
 
 - A work or school account with access to a Power Automate [environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) that's based in the United States.
-- During initial preview, you must have an environment in the United States region to use this feature. If you don’t have access to an environment that's based in the United States, you can ask your administrator to [create a new environment in Power Platform admin center and select United States](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) as its region.
 - Check [known limitations](#known-issues-and-limitations) for more information.
 
 ## How does it work?
 
-This copilot experience is powered by the [Azure Open AI](/azure/ai-services/openai/overview) service and is capable of translating user prompts into valid [Dataverse FetchXML queries](#what-are-fetchxml-queries). Initially, these queries are focused on and optimized for desktop flow activity, such as runs, flows, errors, and machines.
+This copilot experience is powered by the [Azure OpenAI](/azure/ai-services/openai/overview) service and is capable of translating user prompts into valid [Dataverse FetchXML queries](#what-are-fetchxml-queries). Initially, these queries are focused on and optimized for desktop flow activity, such as runs, flows, errors, and machines.
 
 ### High-level process
 
 1. Once the user inputs a valid prompt, copilot generates a valid [FetchXML](#what-are-fetchxml-queries) query based on the input.
-2. If the generated FetchXML is valid, the query is then executed against the Dataverse backend under the current user's security context to retrieve matching data. This ensures that users only see data that they're already authorized to access.
-3. Copilot then determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and data to the user.
+1. If the generated FetchXML is valid, the query is then executed against the Dataverse backend under the current user's security context to retrieve matching data. This ensures that users only see data that they're already authorized to access.
+1. Copilot then determines the most suitable output visualization, such as a table, pie chart, bar chart, or line chart, to effectively present the insights and data to the user.
 
 ### What are FetchXML queries?
 
-Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) is a language used for retrieving data from a Dataverse database. It's designed to be easy to create, use and understand. For example, you might want to ask Dataverse to give you a list of all flow runs for a specific flow. The FetchXML query is the way you phrase that question so the database understands it and can give you the right results.
+Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) is a language used for retrieving data from a Dataverse database. It's designed to be easy to create, use, and understand. For example, you might want to ask Dataverse to give you a list of all flow runs for a specific flow. The FetchXML query is the way you phrase that question so the database understands it and can give you the right results.
 
 ## Prompting best-practices
 
@@ -94,7 +92,7 @@ Examples of prompts that can be used as starter prompt for your own use-cases ar
 In the context of AI, *multi-turn* prompts allow you to have an ongoing conversation with the copilot, where it remembers the context of the previous messages in the conversation. It's not just answering one-off questions; it's engaging in a dialogue with you, where each response is based on what's been said before.
 
 > [!NOTE]
-> When engaging in a multi-turn conversations, note that copilot keeps track of the five most recent questions only. This means that copilot starts clearing the prompts that were entered first and only keeps the latest five. To improve response quality, we suggest limiting your follow-up questions to four and then restart the chat. More information: [Clearing previous prompt context to start over](#clearing-previous-prompt-context-to-start-over).
+> When engaging in a multi-turn conversation, copilot keeps track of the five most recent questions only. This means that copilot starts clearing the prompts that were entered first and only keeps the latest five. To improve response quality, we suggest limiting your follow-up questions to four and then restart the chat. More information: [Clearing previous prompt context to start over](#clearing-previous-prompt-context-to-start-over).
 
 #### Example
 
@@ -181,18 +179,17 @@ This table shows default responses that are returned when the copilot is unable 
 | **Copilot reply** | **Details**
 |-------------------------|-------------------------|
 | *Sorry, something went wrong. Please try again.* |  Indicates that an unexpected error occurred. Rephrase your question and try again. |
-| *Sorry, I couldn’t understand your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#use-copilot-to-analyze-desktop-flow-activity-preview).* |  Indicates that your question couldn't be translated into a valid FetchXML query. Rephrase your question and try again. |
+| *Sorry, I couldn’t understand your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#use-copilot-to-analyze-desktop-flow-activity).* |  Indicates that your question couldn't be translated into a valid FetchXML query. Rephrase your question and try again. |
 | *Sorry, Copilot is at capacity and temporarily unavailable — please try again in a little while.* |  Indicates there are resource constraints on the backend. Retry your question after a short time. |
 | *Sorry, your message contains potentially harmful content. Please ensure your input is appropriate and try again.* |  Indicates that your question might include potentially harmful content and has been blocked by the backend service. Remove any potentially harmful content from your question and try again. |
-| *Sorry, I was not able to generate a valid answer based on your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#use-copilot-to-analyze-desktop-flow-activity-preview).* |  Indicates that the generated FetchXML is invalid or that the query failed when copilot tried to execute it. Rephrase your question and try again. |
-| *Sorry, your search includes too many results. Please refine your query and try again. For examples on how to limit search results returned by the copilot, visit our [documentation page](#use-copilot-to-analyze-desktop-flow-activity-preview).* |  Indicates that the filter(s) applied to your query exceed current aggregation [limits in FetchXML](/power-apps/developer/data-platform/use-fetchxml-aggregation#limitations). Add more appropriate filters such as asking for *yesterday's* or *last month's* data to your query to ensure that it returns data within those limits. |
+| *Sorry, I was not able to generate a valid answer based on your question. Please rephrase it and try again. I’m able to answer questions that are about the data on this page. For more examples of prompts that you can ask the copilot, you can visit the [prompt example section](#prompt-examples) on our [documentation page](#use-copilot-to-analyze-desktop-flow-activity).* |  Indicates that the generated FetchXML is invalid or that the query failed when copilot tried to execute it. Rephrase your question and try again. |
+| *Sorry, your search includes too many results. Please refine your query and try again. For examples on how to limit search results returned by the copilot, visit our [documentation page](#use-copilot-to-analyze-desktop-flow-activity).* |  Indicates that the filter(s) applied to your query exceed current aggregation [limits in FetchXML](/power-apps/developer/data-platform/use-fetchxml-aggregation#limitations). Add more appropriate filters such as asking for *yesterday's* or *last month's* data to your query to ensure that it returns data within those limits. |
 
 ## Known issues and limitations
 
 The following list contains known limitations of the copilot in desktop flow activity.
 
 - Copilot is a new technology that is still being developed. It's optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
-- Copilot is currently only available in Dataverse environments based in the United States.
 - Copilot might return wrong or incomplete data and FetchXML queries.
 - Copilot is initially only capable to answer questions about desktop flow activity such as errors, machines, and past and current runs.
 - In multi-turn conversations, copilot keeps context of the last five question only. If you encounter wrong or incomplete results, consider resetting the conversation. More information: [Clearing previous prompt context to start over](#clearing-previous-prompt-context-to-start-over).
@@ -200,11 +197,10 @@ The following list contains known limitations of the copilot in desktop flow act
 
 ## Related information
 
-- [Get started with Copilot in cloud flows (preview)](../get-started-with-copilot.md)
-- [FAQ for Copilot in desktop flow activity (preview)](../faqs-copilot-automation-activity.md)
+- [Create your first cloud flow using Copilot](../create-cloud-flow-using-copilot.md)
+- [FAQ for Copilot in desktop flow activity](../faqs-copilot-automation-activity.md)
 - [FAQ for Copilot in cloud flows](../faqs-copilot.md)
 - [FAQ for Copilot in Power Automate Process Mining](../faqs-copilot-in-process-mining.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
- 

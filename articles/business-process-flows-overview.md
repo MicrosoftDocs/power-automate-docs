@@ -1,13 +1,15 @@
 ---
 title: Business process flows overview
 description: Get an overview of business process flows in Power Automate.
-ms.date: 09/25/2024
+ms.date: 06/02/2025
 author: radioblazer
 contributors:
   - radioblazer
   - v-aangie
+  - Mattp123
 ms.suite: ""
 ms.tgt_pltfrm: ""
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
 applies_to: 
@@ -47,7 +49,7 @@ You can make a step *required* so that people must enter data for a correspondin
 Business process flows appear relatively simple compared to other types of processes because they don't provide any conditional business logic or automation beyond providing the streamlined experience for data entry and controlling entry into stages. However, when you combine them with other processes and customizations, they can play an important role in saving people time, reducing training costs, and increasing user adoption.  
 
 > [!NOTE]
-> If any stage, including the current stage, has required columns (except hidden columns), you must fill in the columns on those stages *before* you save the form or move to a new stage. Disabled columns will still block stage navigation if they are empty and required. Required steps bound to a Two Option (Yes/No) column must have **Yes** (true) as their value, otherwise they are considered empty and block stage navigation. Note that this behavior is different than how business required fields are handled on a form, where **No** is not considered an empty value.
+> If any stage, including the current stage, has required columns (except hidden columns), you must fill in the columns on those stages *before* you save the form or move to a new stage. Disabled columns will still block stage navigation if they are empty and required. Required steps bound to a Two Option (Yes/No) column must have **Yes** (true) as their value, otherwise they're considered empty and block stage navigation. Note that this behavior is different than how business required fields are handled on a form, where **No** isn't considered an empty value.
 
 ### Business process flows integrated with other customizations
 
@@ -133,10 +135,10 @@ All custom tables can use business process flows. The following standard tables 
 - Task  
 - Team  
 
-To enable a custom table for business process flows, select the **Business process flows (columns will be created)** check box in the table definition. You can’t undo this action.  
+To enable a custom table for business process flows, select the **Business process flows (fields will be created)** check box in the table definition. You can’t undo this action.  
   
 > [!NOTE]
-> If you navigate to the business process flow stage that contains the `Social Activity` table and choose the **Next Stage** button, you’ll see the **Create** option. When you choose **Create**, the **Social Activity** form loads. However, because `Social Activity` isn’t valid for `Create` from the app user interface, you won’t be able to save the form and you’ll see the error message: “Unexpected error.”  
+> If you navigate to the business process flow stage that contains the `Social Activity` table and choose the **Next Stage** button, you see the **Create** option. When you choose **Create**, the **Social Activity** form loads. However, because `Social Activity` isn’t valid for `Create` from the app user interface, you won’t be able to save the form and you see the error message: “Unexpected error.”  
 
 ### Maximum number of processes, stages, and steps
 
@@ -154,11 +156,11 @@ Business process flow tables can appear in the system so that table row data can
 
 With business process flows available as a table, you can use advanced finds, views, charts, and dashboards sourced from business process flow data for a given table, such as a lead or opportunity. System administrators and customizers can create custom business process flow grids, views, charts, and dashboards similar to those created with any other table.
 
-To access a default business process flow view, go to [Power Apps](https://make.powerapps.com), select **Solutions**, open the solution you want, select **Objects** > **Tables**, and open the process table that you want, such as **Lead To Opportunity Sales Process** table. Select **Views**, and then select the view that you want.
+To access a default business process flow view, go to [Power Apps](https://make.powerapps.com), select **Solutions**, open the solution you want, select **Tables** on the left navigation pane, and open the process table that you want, such as **Lead To Opportunity Sales Process** table. Select **Views**, and then select the view that you want.
 
 Several default views are available that you can view as a chart, such as the **Active Opportunity Sales Process** view.
 
-![Active Opportunity Sales Process view.](media/bpf-default-view.png)
+:::image type="content" source="media/bpf-default-view.png" alt-text="Active Opportunity Sales Process view." lightbox="media/bpf-default-view.png":::
 
 ### Interact with the business process flow table from a workflow
 
@@ -187,7 +189,7 @@ Recent rows are visible in a lookup column for a model-driven app. To prevent th
 
    ![A screenshot how to disable the most recently used items.](./media/bpf-disable-mru.png)
 
-1. Save and then publish.
+1. Save and publish.
 
 ### Limitations of using business process flow tables
 

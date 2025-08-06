@@ -1,20 +1,18 @@
 ---
-title: Manage sensitive input like passwords in Power Automate | Microsoft Docs
+title: Manage sensitive input like passwords in Power Automate
 description: Learn how to manage sensitive input like passwords in Power Automate.
-services: ''
 suite: flow
-documentationcenter: na
-author: v-aangie
-editor: ''
-tags: ''
+author: kewaiss
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 06/13/2022
-ms.author: angieandrews
+ms.author: cgarty
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Manage sensitive input like passwords

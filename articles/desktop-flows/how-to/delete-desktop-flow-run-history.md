@@ -3,6 +3,7 @@ title: Delete desktop flow run history data
 description: Delete desktop flow run history data using bulk-delete feature of Microsoft Dataverse
 author: rpapostolis
 
+ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 04/10/2023
@@ -12,6 +13,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Delete desktop flow run history data  

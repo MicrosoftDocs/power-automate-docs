@@ -2,7 +2,7 @@
 title: Use RPA with Dynamics 365 Finance 
 description: Automate end-of-cycle reporting on Dynamics 365 Finance with Robotic Process Automation
 author: mattp123
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 11/16/2022
 ms.author: matp
 ms.reviewer: matp
@@ -10,6 +10,9 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # Use RPA with Dynamics 365 Finance

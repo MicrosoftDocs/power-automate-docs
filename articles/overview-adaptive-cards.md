@@ -3,6 +3,7 @@ title: Overview of adaptive cards for Teams
 description: Learn to use adaptive cards with Microsoft Teams.
 suite: flow
 author: v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.date: 09/08/2023
@@ -11,7 +12,9 @@ search.audienceType:
   - flowmaker
   - enduser
 ms.reviewer: angieandrews
-ms.custom: bap-template
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Overview of adaptive cards for Microsoft Teams

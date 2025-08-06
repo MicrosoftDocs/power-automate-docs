@@ -2,8 +2,9 @@
 title: Process migrator for Softomotive products (preview)
 description: Process migrator for Softomotive products (preview)
 author: mattp123
+ms.service: power-automate
 ms.subservice: desktop-flow
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 12/16/2020
 ms.author: matp
 ms.reviewer: matp
@@ -14,6 +15,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 # Process migrator for Softomotive products (preview)
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]

@@ -3,10 +3,11 @@ title: Use AI Builder in Power Automate
 description: Use AI Builder in Power Automate.
 suite: flow
 author: v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 10/09/2024
-ms.author: angieandrews
+ms.topic: article
+ms.date: 06/25/2025
+ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.collection:
   - get-started

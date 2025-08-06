@@ -3,16 +3,18 @@ title: Create flows that post adaptive cards to Microsoft Teams
 description: Learn how to create flows that post richly formatted content with adaptive cards to Microsoft Teams.
 services: ''
 suite: flow
-author: natalie-pienkowska
+author: kewaiss
 contributors:
   - kewaiss
   - kartikraop
   - v-aangie
+ms.service: power-automate
 ms.subservice: cloud-flow
-ms.topic: conceptual
-ms.date: 01/13/2023
-ms.author: kewaiss
+ms.topic: how-to
+ms.date: 06/25/2025
+ms.author: ralinga
 ms.reviewer: angieandrews
+ms.custom: sfi-image-nochange
 ---
 
 # Create your first adaptive card
@@ -26,11 +28,11 @@ In either case, you'll need to sketch out which datasets you'll share, and/or wh
 
 ## Prerequisites
 
-Microsoft Teams with the Workflows app installed.
+Microsoft Teams with Workflows app installed.
 
 ## Add an action
 
-In this procedure, you’ll add an action that will use the data from previous actions in the flow to post information to a Microsoft Teams channel.
+In this procedure, you add an action that uses the data from previous actions in the flow to post information to a Microsoft Teams channel.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select **My flows** in the top navigation bar.
@@ -117,8 +119,8 @@ In this procedure, you’ll add an action that will use the data from previous a
 
 1. Make the following replacements in the JSON.
 
-    >[!IMPORTANT]
-    >Do not remove any quotation marks when you do the replacements. You can revise the car choices to suit your needs:
+    > [!IMPORTANT]
+    > Don't remove any quotation marks when you do the replacements. You can revise the car choices to suit your needs:
 
     Text to change | New text
     ------|------

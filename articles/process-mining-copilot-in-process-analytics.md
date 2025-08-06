@@ -1,14 +1,15 @@
-﻿---
+---
 title: Copilot in Process Mining process analytics (preview)
 description: Learn how to surface insights on your process and get recommended solutions with Copilot.
-ms.date: 12/18/2023
-ms.topic: conceptual
+ms.date: 07/11/2025
+ms.update-cycle: 180-days
+ms.topic: article
 author: janPidych
 contributors:
   - janPidych
   - v-aangie
 ms.custom: bap-template
-ms.author: janpidych
+ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
 ---
@@ -34,7 +35,7 @@ You need a Power Platform environment for Copilot in Process Mining.
 
 > [!NOTE]
 > - If you still don’t see the Copilot experience, contact your admin. An admin can turn the Copilot feature off or on in the Power Platform admin center.
-> - In some geographic regions outside United States, Australia, and United Kingdom, an admin needs to turn on the cross geo calls to enable Copilot. More information: [Copilot availability by region](get-started-with-copilot.md#availability-by-region).
+> - In some geographic regions outside United States, Australia, and United Kingdom, an admin needs to turn on the cross geo calls to enable Copilot. More information: [Region availability for Power Automate cloud flows with Copilot](regions-overview.md#region-availability-for-power-automate-cloud-flows-with-copilot).
 
 ## Copilot in Process Mining analysis
 
@@ -53,11 +54,9 @@ Follow these steps to analyze the process with Copilot. You can analyze your pro
 
 ### Analyze your process in the Power Automate Process Mining web page
 
-
-
 1. In Power Automate in the left navigation pane, select **Process mining**.
-2. In the **Environments** field in th titlebar, select your process mining environment with an imported process.
-3. Open the imported process.
+1. In the **Environments** field in th titlebar, select your process mining environment with an imported process.
+1. Open the imported process.
 
     :::image type="content" source="media/process-mining-copilot-in-process-analytics/copilot-web.png" alt-text="Screenshot of the opened process.":::
 
@@ -100,7 +99,7 @@ Copilot in the Process Mining desktop app leverages knowledge of the open proces
 
 For more general information about writing prompts with generative AI, go to [The art of the prompt: How to get the best out of generative AI](https://news.microsoft.com/source/features/ai/the-art-of-the-prompt-how-to-get-the-best-out-of-generative-ai/).
 
-For general information about writing prompts in Power Automate, go to [How to write a good prompt](get-started-with-copilot.md#how-to-write-a-good-prompt).
+For general information about writing prompts in Power Automate, go to [How to write a good prompt](create-cloud-flow-using-copilot.md#how-to-write-a-good-prompt).
 
 Copilot in the Process Mining desktop app has access to process statistics for top items for activities, edges, and variants. You can ask questions related to your statistics and Copilot can answer with correct data. When asking about statistical properties, Copilot has access to information about frequency (activity, edge counts, and case counts), durations (total and average), and rework statistics.
 

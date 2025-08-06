@@ -1,10 +1,11 @@
 ---
 title: Responsible AI FAQs for Power Automate
 description: Responsible AI FAQs discusses AI technology in Power Automate and the key considerations for making use of this technology responsibly.
-ms.date: 09/10/2024
+ms.date: 07/11/2025
+ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
-ms.topic: article
+ms.topic: faq
 author: kisubedi
 ms.author: kisubedi
 ms.reviewer: angieandrews
@@ -17,18 +18,12 @@ ms.collection: bap-ai-copilot
 
 [!INCLUDE[responsible-ai-features](./includes/responsible-ai-features.md)]
 
-- [Get started with Copilot in cloud flows (preview)](get-started-with-copilot.md)
+- [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-- [Create, update, and fix your expressions with Copilot expression assistant (preview)](flows-designer.md#create-update-and-fix-your-expressions-with-copilot-expression-assistant-preview)
+- [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md)
 - [FAQ for Copilot expression assistant](faqs-copilot-expression-assistant.md)
 - [Create generative actions in cloud flows (preview)](create-generative-actions.md)
 - [FAQ for generative actions in cloud flows](faqs-generative-actions.md)
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 - [Copilot in Process Mining ingestion (preview)](process-mining-copilot-in-ingestion.md)
 - [Copilot in Process Mining process analytics (preview)](process-mining-copilot-in-process-analytics.md)
 - [FAQ for Copilot in Power Automate Process Mining](faqs-copilot-in-process-mining.md)
