@@ -80,6 +80,10 @@ If rules are violated, the static analysis report shows a clear summary. It list
 Each violation displays a tile with details, including the error's nature, recommended fixes, and a link to documentation. Use the slider in the rule’s header to navigate between occurrences of the same violation. This guidance helps developers address issues quickly and effectively. Actions with Flow checker error violations display an in-line indicator and a popup with additional details. Warnings are also shown in-line within the designer workspace, just like errors. It also displays diagnostic statuses—such as warnings and errors—directly on subflow tabs, and includes a button that lets you navigate to the component requiring attention. 
 
 :::image type="content" source="media\static-analysis\static-analysis-pad-details.png" alt-text="Screenshot showing the details of a static analysis rule.":::
+Legend
+1. Occurences of the specific rule violation
+1. Navigate to the respective action that violates the rule
+1. Link to documentation
 
 ## Static analysis rules
 
