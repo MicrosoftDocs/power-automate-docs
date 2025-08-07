@@ -23,10 +23,6 @@ Starting with the March 2025 (2.54) release of Power Automate for desktop, machi
 
 There are two automatic update modes: regular and emergency.
 
-> [!NOTE]
-> Automatic updates are gradually enabled on a per-tenant basis, starting in June 2025. Expect some delay between enabling automatic updates and your tenant's machines starting to update.
-> If you want your tenant to be enabled early, contact support.
-
 ## Regular automatic updates
 
 When a new Power Automate for desktop release is available, the `Power Automate update service` downloads and installs it automatically in the background when the machine is idle.
@@ -56,6 +52,7 @@ To configure automatic updates, use the Windows registry. You need administrator
 
 Automatic updates don't run when:
 
+- The machine is not registered.
 - The Power Automate service is running as a custom account. Learn more in [change the on-premises service account](./troubleshoot.md#change-the-on-premises-service-account).
 - A local or cloud-orchestrated desktop flow run is executing on the machine.
 - The Power Automate for desktop designer, runtime application, installer, or troubleshooter is running.
