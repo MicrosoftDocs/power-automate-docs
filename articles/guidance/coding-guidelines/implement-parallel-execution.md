@@ -1,12 +1,12 @@
 ---
-title: Implement parallel execution and concurrency
+title: Optimize flows with parallel execution and concurrency
 description: Learn how to implement parallel execution and concurrency in Power Automate to optimize your workflows and reduce execution time.
 #customer intent: As a Power Automate user, I want to implement parallel execution and concurrency in Power Automate so that I can optimize workflow efficiency.
 author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/18/2025
+ms.date: 07/10/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
 contributors: 
@@ -16,67 +16,60 @@ search.audienceType:
   - flowmaker
 ---
 
-# Implement parallel execution and concurrency
+# Optimize flows with parallel execution and concurrency
 
-Optimizing workflow execution is crucial for efficiency and productivity. Power Automate offers robust features for parallel execution and concurrency, enabling you to run multiple actions simultaneously and significantly reduce execution time.
+Optimizing the execution of your workflows is crucial for making them efficient. Parallel execution and concurrency allow you to run multiple actions simultaneously, significantly reducing execution time.
 
-## Parallel execution
+## Execute in parallel
 
-Power Automate supports parallel execution, allowing flows to run two or more steps simultaneously. The workflow continues only after all parallel steps are complete. This capability enables more efficient processing, especially for asynchronous tasks.
+In parallel execution, flows run two or more steps simultaneously. The workflow continues only after all parallel steps are complete. This capability makes processing more efficient, especially for asynchronous tasks.
 
-Running multiple actions simultaneously reduces the overall execution time of your flow. Parallel execution is useful for tasks that don't depend on each other and can be processed independently.
+Consider parallel execution for tasks that don't depend on each other and can be processed independently, and for those that take more than five seconds to execute. This approach optimizes the flow's performance without overwhelming the system.
 
-### Parallel branches
+Here are some use cases for parallel execution:
 
-Use parallel branches for actions that take more than 5 seconds to execute. This approach optimizes the flow's performance without overwhelming the system.
+- Send approval requests that don't block other actions.
 
-:::image type="content" source="media/parallel-branch.png" alt-text="Screenshot of a cloud flow with parallel branches." lightbox="media/parallel-branch.png":::
+- Create quorum-based approval processes, where a decision is made based on the most responses.
 
-Use cases for parallel branches:
+- Create or update records in multiple systems simultaneously.
 
-- **Sending nonblocking approval requests**: Use parallel branches to send approval requests that don't block other actions. 
-- **Creating quorum-based approvals**: Implement quorum-based approval processes where a decision is made based on most responses.
-- **Creating or updating records in multiple systems**: Ensure data consistency and reduce processing time by simultaneously creating or updating records across different systems.
-- **Consolidating data from multiple sources**: Retrieve data from various sources in parallel and consolidate it into a single dataset for further processing.
+- Retrieve data from multiple sources simultaneously and consolidate it into a single dataset for further processing.
 
-## Reducing scheduling overhead
+- Initialize multiple variables in parallel to avoid sequential execution delays.
 
-A straight line of actions can run sequentially in the engine. Parallel structuring helps organize the flow better and saves time. Initializing multiple variables in parallel can save time.
+  :::image type="content" source="media/parallel-branch.png" alt-text="Screenshot of the Power Automate designer showing a cloud flow with parallel branches.":::
 
-It's important to minimize the number of skipped actions in your flows. Wide switch statements with numerous actions in each branch, or parallel branches where the less frequently used path has more actions, can negatively affect the readability and maintainability of your flow.
+### Minimize skipped actions
 
-Instead of having many skipped actions within a switch branch, call child flows from the switch branch. This way, you skip the irrelevant child flows rather than a large number of individual actions. This approach simplifies your main flow and makes it easier to maintain.
+When using parallel execution, be cautious about skipped actions. Skipped actions occur when a condition isn't met and the action isn't executed. Skipped actions can lead to confusion and make it difficult to understand the flow's logic. They can also cause performance issues, because they still consume resources even if they don't execute.
 
-Reducing the number of actions within each branch makes your flow more readable and easier to understand. Child flows let you manage and update specific parts of your workflow independently, simplifying the overall maintenance process.
+Skipped actions often occur in switch branches. A switch branch is a way to define different actions for multiple possible values of a single variable or expression. If you have many actions in each branch, it can lead to a lot of skipped actions.
 
-## Concurrency control
+Call child flows from the switch branch instead of adding many individual actions. Skipping irrelevant child flows rather than a large number of individual actions simplifies your main flow and makes it easier to maintain.
 
-Concurrency enables parallel execution in an **Apply to each** loop. By default, **Apply to each** loops execute sequentially, which can take a long time when processing large data. If the items in the loop don't need to run sequentially, concurrency enables X items to process at once. Users can set the degree of parallelism between 1 and 50.
+## Control concurrency
 
-Consider a scenario where the status field of 100 records needs to be updated. Instead of updating one record after another, concurrency control enables up to 50 records to be updated simultaneously.
+**Apply to each** loops execute sequentially by default. If the items in the loop don't need to run sequentially, concurrency allows multiple items to process at the same time. The maker sets the degree of concurrency, or parallelism, from 1 to 50.
 
-Be mindful of the degree of parallelism to set:
+Keep in mind that dividing the work, queuing extra threads, and delays from the endpoint being called add overhead. And a high number (for example, 50) might not necessarily make things go faster.
 
-- There's overhead in dividing the work, queueing up extra threads, and delays from the endpoint being called.
-- High number (for example, 50) might not necessarily make things go faster.
+:::image type="content" source="media/concurrency-control.png" alt-text="Screenshot of the Power Automate designer showing the concurrency control in an Apply to Each action.":::
 
-:::image type="content" source="media/concurrency-control.png" alt-text="Screenshot of configuring the concurrency control in an Apply to each action." lightbox="media/concurrency-control.png":::
+Here are some examples of when to use concurrency:
 
-Some other real-world scenarios where this approach might apply:​
+- Sending individual emails to many recipients​.
+- Updating records in Dataverse, SharePoint Lists, and SQL​.
+- Creating users in Microsoft Entra ID in bulk.
+- Creating parallelized approvals.
 
-- Sending individual emails to many recipients​
-- Updating records in Dataverse, SharePoint Lists, SQL​
-- Creating users in Microsoft Entra ID in bulk
-- Creating parallelized approvals
+The following table compares the effect of concurrency control on array processing in an **Apply to each** loop.
 
-Here's a comparison of the impact of concurrency control on array processing within a **For each** loop.
+| Array length | Degree of parallelism | Time to run loop |
+|--------------|-----------------------|------------------|
+| **4**        | Off                   | 21 seconds       |
+| **4**        | 2                     | 11 seconds       |
+| **4**        | 4                     | 6 seconds        |
+| **4**        | 6                     | 6 seconds        |
 
-| **Array length ​** | **Degree of parallelism ​** | **Time taken to run loop ​** |
-|-------------------|----------------------------|-----------------------------|
-| **4 ​**            | Off ​                       | 21 seconds ​                 |
-| **4 ​**            | 2 ​                         | 11 seconds ​                 |
-| **4 ​**            | 4 ​                         | 6 seconds ​                  |
-| **4 ​**            | 6 ​                         | 6 seconds ​                  |
-
-Concurrency controls for **Apply to each** actions only take effect on the highest level in the cloud flow. When you nest **Apply to each** actions, the inner actions always execute serially.
-<!-- Many links in this doc, which pointed to flow.microsoft.com/blog/*, did not resolve and were thus removed. -->
+Concurrency controls for **Apply to each** actions take effect only on the highest level in the cloud flow. When you nest **Apply to each** actions, the inner actions always execute sequentially.

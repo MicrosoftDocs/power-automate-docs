@@ -5,7 +5,7 @@ author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: concept-article
-ms.date: 10/29/2024
+ms.date: 06/27/2025
 ms.author: chrisj
 ms.reviewer: matp
 contributors:
@@ -38,9 +38,9 @@ To create a **Text value** variable, use the **Set variable** action and populat
 
 ### Numeric value
 
-Numeric is the type applied to numbers. Only this data type can be used in mathematical operations. 
+Numeric is the type applied to numbers. Only this data type can be used in mathematical operations.
 
-Τo create a **Numeric value** variable, use the **Set variable** action and populate the input parameter with a number without any notation. 
+Τo create a **Numeric value** variable, use the **Set variable** action and populate the input parameter with a number without any notation.
 
 Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. For more information about mathematical expressions, go to [Use variables and the % notation](variable-manipulation.md).
 
@@ -48,9 +48,9 @@ Except for hardcoded numeric values, you can use mathematical expressions with v
 
 ### Boolean value
 
-The value can be either **True** or **False**. 
+The value can be either **True** or **False**.
   
-Τo create a **Boolean value** variable, use the **Set variable** action and populate the input parameter with the expressions **%True%** or  **%False%**. 
+Τo create a **Boolean value** variable, use the **Set variable** action and populate the input parameter with the expressions **%True%** or  **%False%**.
 
 Additionally, you can create complex expressions using logical operators, variables, and the percentage notation. For more information about logical expressions, go to [Use variables and the % notation](variable-manipulation.md).
 
@@ -62,7 +62,7 @@ Advanced data types represent complex data structures. They function as collecti
 
 ### List
 
-Lists are collections of items. Depending on the types of the individual list items, there can be lists of text values, lists of numerical values, and so on. The list data type is the equivalent of a single-dimension array in programming terms. 
+Lists are collections of items. Depending on the types of the individual list items, there can be lists of text values, lists of numerical values, and so on. The list data type is the equivalent of a single-dimension array in programming terms.
 
 You can create a list through the **Create new list** action and add an item to that list through the **Add item to list** action.  
 
@@ -72,7 +72,7 @@ You can also create a list through actions that generate lists as output. For ex
 
 To retrieve a specific item in a list, use the following notation: **%VariableName\[ItemNumber\]%**
 
-In the example below, the flow stores the first number of the previously displayed list to a new variable. Keep in mind that the index should be 0 for the first item of the list.
+In the following example, the flow stores the first number of the previously displayed list to a new variable. Keep in mind that the index should be 0 for the first item of the list.
 
 ![Screenshot of an expression that accesses the first item of a list.](media\lists\list-first-item.png)
 
@@ -102,7 +102,7 @@ Additionally, you can create a datatable using the **Set variable** action and t
 
 ![Screenshot of Set variable action that creates a datatable.](media\data-tables\create-data-table-variable.png)
 
-If you want to add column headers while creating a new datatable using the array notation, use the **^['ColumnName1', 'ColumnName2']** expression for the first row. 
+If you want to add column headers while creating a new datatable using the array notation, use the **^['ColumnName1', 'ColumnName2']** expression for the first row.
 
 ![Screenshot of a Set variable action that creates a new datatable with column headers.](media\data-tables\set-variable-action-datatable-column-headers.png)
 
@@ -114,7 +114,7 @@ Besides inserting rows into datatables, desktop flows offer various actions that
 
 To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
-For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the first cell on the second row of the retrieved table, use the expression displayed below. 
+For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the first cell on the second row of the retrieved table, use the expression displayed below.
 
 ![Screenshot of an expression that accesses the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
 
@@ -123,17 +123,17 @@ For example, suppose that a flow retrieves the content of an Excel worksheet and
 
 If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']%** notation.
 
-If you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is considered to be a datarow. 
+If you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is considered to be a datarow.
 
 Similarly to lists, you use the **%VariableName[StartRow:StopRow]%** notation to access a specific part of a datatable. The expression retrieves only the rows defined by the two indexes, while the **StopRow** position is the boundary of the slicing and doesn't get retrieved.
 
-To slice a datatable from the first row to a specific row, don't use a **StartRow** value, for example, **%Datatable[:4]%**. Likewise, to slice a datatable from a specific row to the end, don't use a **StopRow** value, for example, **%Datatable[2:]**%. 
+To slice a datatable from the first row to a specific row, don't use a **StartRow** value, for example, **%Datatable[:4]%**. Likewise, to slice a datatable from a specific row to the end, don't use a **StopRow** value, for example, **%Datatable[2:]**%.
 
-[Datatable data type properties](datatype-properties.md#datatables) 
+[Datatable data type properties](datatype-properties.md#datatables)
 
 ### Datarow
 
-A datarow contains the values of a single row of a datatable. When you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is a datarow. 
+A datarow contains the values of a single row of a datatable. When you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is a datarow.
 
 To retrieve a specific item of a datarow, use the following notation: **%VariableName[ItemNumber]%**
 
@@ -152,7 +152,7 @@ To create a new empty **Custom object**, use the **Set variable** action and pop
 ![Screenshot of Set variable action that creates a new custom object.](media\variable-data-types\create-custom-object-variable.png)
 
 > [!IMPORTANT]
-> Reserved keywords can't be used as custom object properties. For the full list of reserved keywords go to [Reserved keywords in desktop flows](reserved-keywords.md).
+> Reserved keywords can't be used as custom object properties. For the full list of reserved keywords, go to [Reserved keywords in desktop flows](reserved-keywords.md).
 
 To update the value of an existing property or add a new one, deploy a **Set variable** action, populate the property's name in the **Set** field, and enter its value in the **To** field.
 
@@ -193,22 +193,22 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 
 ### Known issues and limitations
 
-- **Issue**: When a datatable or datarow cell contains a multiline entry, the variable viewer displays only the first line of it. 
+- **Issue**: When a datatable or datarow cell contains a multiline entry, the variable viewer displays only the first line of it.
 - **Workarounds**: None.
 
 ## Instances
 
-- **Web browser instance** – Contains a browser instance created through the **Launch new Internet Explorer** or other browser launching actions. 
+- **Web browser instance** – Contains a browser instance created through the **Launch new Internet Explorer** or other browser launching actions.
 
   [Web browser instance data type properties](datatype-properties.md#web-browser-instance)
 
 - **Window instance** – Contains a window instance created through the **Get window** action.
 
-  [Window instance data type properties](datatype-properties.md#window-instance) 
+  [Window instance data type properties](datatype-properties.md#window-instance)
 
 - **Excel instance** – Contains an Excel instance created through the **Launch Excel** action.
 
-  [Excel instance data type properties](datatype-properties.md#excel-instance) 
+  [Excel instance data type properties](datatype-properties.md#excel-instance)
 
 - **Outlook instance** – Contains an Outlook instance created through the **Launch Outlook** action.
 
@@ -224,7 +224,7 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 
 - **FTP connection** – Contains an FTP connection created through the **Open FTP connection** and **Open secure FTP connection** actions.
 
-  [FTP connection data type properties](datatype-properties.md#ftp-connection) 
+  [FTP connection data type properties](datatype-properties.md#ftp-connection)
 
 ## Others
 
@@ -232,7 +232,7 @@ This section presents all the available data types that don't belong to any of t
 
 ### General value
 
-- **General value** – This data type is used during design time when Power Automate can't define the data type of a variable or an input parameter. General values get converted to other data types during runtime based on their data. 
+- **General value** – This data type is used during design time when Power Automate can't define the data type of a variable or an input parameter. General values get converted to other data types during runtime based on their data.
 
 ### Active Directory
 
@@ -332,22 +332,24 @@ This section presents all the available data types that don't belong to any of t
 
 - **Outlook mail message** – Represents an email Outlook message. The **Retrieve email messages from Outlook** action populates these variables.
 
-[Outlook data type properties](datatype-properties.md#outlook-mail-messages) 
+[Outlook data type properties](datatype-properties.md#outlook-mail-messages)
 
 ### Terminal
 
 - **Terminal session** – Contains a terminal session created through the **Open terminal session** action.
 
-[Terminal data type properties](datatype-properties.md#terminal-session) 
+[Terminal data type properties](datatype-properties.md#terminal-session)
 
-### XML 
+### XML
+
 - **XML node** – Contains the content of an XML document. The **Read XML from file** action populates these variables.
 
-[XML data type properties](datatype-properties.md#xml-node) 
+[XML data type properties](datatype-properties.md#xml-node)
 
 ### Error
+
 - **Error** – Contains information about the last occurred error in the desktop flow. The **Get last error** action creates this type of variable.
 
-[Error properties](datatype-properties.md#error) 
+[Error properties](datatype-properties.md#error)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

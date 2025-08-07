@@ -2,6 +2,7 @@
 title: FAQ for Power Automate for desktop natural language to code in scripting actions
 description: This FAQ discusses Power Automate for desktop natural language to code in scripting actions and the key considerations for making use of this technology responsibly.
 ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: faq

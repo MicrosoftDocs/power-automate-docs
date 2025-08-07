@@ -5,7 +5,6 @@ suite: flow
 documentationcenter: na
 author: Grant-Archibald-MS
 editor: ''
-ms.custom: guidance
 
 ms.topic: faq
 ms.tgt_pltfrm: na
@@ -13,6 +12,9 @@ ms.workload: na
 ms.date: 08/18/2022
 ms.author: macarrer
 ms.reviewer: angieandrews
+ms.custom:
+  - guidance
+  - sfi-image-nochange
 ---
 
 # Frequently asked questions about the automation kit setup guidance

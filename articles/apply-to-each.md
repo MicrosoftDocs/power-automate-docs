@@ -11,6 +11,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
 ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -53,7 +54,7 @@ Here are the requirements for successfully performing the steps in this tutorial
 
 For detailed information about using SharePoint with Power Automate, go to the [SharePoint documentation](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers).
 
-[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
 ## Create a cloud flow
 

@@ -14,24 +14,27 @@
       href: sign-up-sign-in.md
     - name: Explore the Power Automate home page
       href: getting-started.md
-    - name: Get Started with Power Automate tutorial
-      href: get-started-tutorial.md
+
 - name: Cloud flows
   items:
     - name: Overview
       href: overview-cloud.md
     - name: Get started with cloud flows
       items:
-        - name: Get started with Copilot in cloud flows
-          href: get-started-with-copilot.md
+        - name: Create your first cloud flow using Copilot
+          href: create-cloud-flow-using-copilot.md
+        - name: Create your first cloud flow without Copilot
+          href: create-cloud-flow-without-copilot.md
         - name: Explore the cloud flows designer
           href: flows-designer.md
+        - name: "Tutorial: Get Started with cloud flows"
+          href: get-started-with-cloud-flows.md
         - name: Start a cloud flow with a trigger
           items:
           - name: Get started with triggers
             href: triggers-introduction.md
-          - name: Troubleshoot common issues with triggers
-            href: triggers-troubleshoot.md
+        - name: Copilot in cloud flows FAQ
+          href: faq-copilot-cloud-flows.yml
     - name: How to
       items:
       - name: Add an action
@@ -45,6 +48,8 @@
         href: associate-flow-to-app.md
       - name: Use data operations
         href: data-operations.md
+      - name: Use scopes to organize actions
+        href: scopes.md
       - name: Customize or format date and time values in a flow
         href: date-time-values.md
       - name: Convert a time zone
@@ -75,6 +80,8 @@
           href: overview-manage-cloud-flows.md
         - name: Share a flow
           href: create-team-flows.md
+        - name: Find a saved cloud flow
+          href: find-saved-cloud-flow.md
         - name: Support for guest users
           href: share-guest-users.md
         - name: Manage shared flows with users outside an environment
@@ -95,11 +102,10 @@
           href: change-cloud-flow-owner.md
         - name: Restore deleted flows
           href: how-tos-restore-deleted-flow.md
-        - name: Export and import solution-aware flows for ALM
+        - name: Solution-aware cloud flows
           items:
           - name: Overview
             href: overview-solution-flows.md
-            displayName: Use solutions for ALM of flows
           - name: Create a cloud flow in a solution
             href: create-flow-solution.md
           - name: Create child flows
@@ -119,7 +125,7 @@
         displayName: Monitor flow activity on mobile devices
       - name: Troubleshoot a cloud flow
         href: fix-flow-failures.md
-      - name: Find and fix errors with the error checker
+      - name: Find and fix errors with flow checker
         href: error-checker.md
     - name: Automated cloud flows
       items:
@@ -401,6 +407,8 @@
       href: ./desktop-flows/getting-started-org.md
   - name: Create desktop flows
     href: ./desktop-flows/create-flow.md
+  - name: Test desktop flows
+    href: ./desktop-flows/test-desktop-flows.md
   - name: Get started with Copilot in Power Automate for desktop (preview)
     href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
   - name: Create desktop flows using Record with Copilot (preview)
@@ -827,6 +835,8 @@
       href: ./desktop-flows/actions-reference/cloudconnectors.md
     - name: SAP automation
       href: ./desktop-flows/actions-reference/sap.md
+    - name: Testing
+      href: desktop-flows/actions-reference/testing.md
     - name: Power Automate secret variables actions
       href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
   - name: Troubleshoot desktop flows runtime
@@ -896,9 +906,9 @@
         href: process-mining-pbi-workspace.md
       - name: Use optimized data structure in Power BI report
         href: process-mining-pbi-data-structure.md
-      - name: Customize a report with your own Fabric workspace (preview)
+      - name: Customize a report with your own Fabric workspace
         href: process-mining-fabric-workspace.md
-      - name: Structure of semantic model in Fabric workspace (preview)
+      - name: Structure of semantic model in Fabric workspace
         href: process-mining-fabric-semantic-model.md
     - name: Application lifecycle management (ALM)
       items:
@@ -937,7 +947,7 @@
         href: process-mining-byo-azure-data-lake.md
       - name: Bring your own network isolated Azure Data Lake Storage Gen2
         href: process-mining-byo-azure-data-lake-private.md    
-    - name: Ingest files from Fabric OneLake (preview)
+    - name: Ingest data from Fabric OneLake
       href: process-mining-files-fabric-onelake.md
     - name: Edit and refresh processes
       href: process-mining-data-source.md
@@ -1253,7 +1263,7 @@
     href: flow-eudb.md
 - name: Regions overview
   href: regions-overview.md
-- name: Common questions about Power Automate
+- name: Power Automate FAQ
   href: frequently-asked-questions.yml
 - name: Classic Dataverse
   items:

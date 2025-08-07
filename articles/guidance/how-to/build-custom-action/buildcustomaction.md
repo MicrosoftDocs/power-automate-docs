@@ -13,6 +13,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 # How to build custom actions in Power Automate for desktop
 

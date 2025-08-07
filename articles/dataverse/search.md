@@ -9,6 +9,7 @@ ms.topic: article
 ms.date: 10/04/2021
 search.audienceType: 
   - maker
+ms.custom: sfi-image-nochange
 ---
 
 # Use Dataverse search to retrieve rows

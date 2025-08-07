@@ -15,6 +15,7 @@ ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 # Approve requests on your mobile device by using Power Automate
 

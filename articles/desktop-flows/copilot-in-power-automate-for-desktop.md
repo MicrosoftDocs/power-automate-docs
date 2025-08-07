@@ -2,11 +2,13 @@
 title: Get started with Copilot in Power Automate for desktop
 description: Learn how to access and use Copilot in Power Automate for desktop.
 ms.date: 03/21/2025
+ms.update-cycle: 180-days
 ms.topic: how-to
 author: cochamos
 ms.author: cochamos
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
+ms.custom: sfi-ropc-nochange
 ---
 
 # Get started with Copilot in Power Automate for desktop

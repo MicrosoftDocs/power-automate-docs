@@ -17,6 +17,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Active Directory actions

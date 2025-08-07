@@ -5,12 +5,14 @@ suite: flow
 author: kisubedi
 ms.topic: article
 ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Common ways to use a form in a flow
@@ -27,7 +29,7 @@ If you're not sure where to start, these are some of the most common ways people
 
 You can turn on email notifications for the form's owners in your form settings. If you want someone else to be notified when a response is submitted, create a custom email notification with Power Automate.
 
-[!INCLUDE[copilot-designer-note](../includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](../includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 

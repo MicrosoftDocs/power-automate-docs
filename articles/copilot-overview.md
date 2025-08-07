@@ -7,8 +7,9 @@ contributors:
   - v-aangie
   - jhaskett-msft
 ms.topic: overview
-ms.date: 02/18/2025
-ms.author: lali
+ms.date: 07/11/2025
+ms.update-cycle: 180-days
+ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.contributors:
   - appapaio
@@ -29,7 +30,7 @@ Use the following sections to learn how to use Copilot features in Power Automat
 
 Copilot in cloud flows allows you to create automation that helps streamline your workflow through quick and easy natural language expressions. You can create a flow by describing what you need through multiple steps of conversation.
 
-- [Create a flow using the cloud flows designer with Copilot](get-started-with-copilot.md#create-a-flow-using-the-cloud-flows-designer-with-copilot)
+- [Create a cloud flow using Copilot](create-cloud-flow-using-copilot.md#create-a-cloud-flow-using-copilot)
 - [Get contextual help with flows from the Microsoft Copilot Studio bot](contextual-help-bot.md)
 - [Use flows as plugins in Copilot for Microsoft 365 (preview)](flow-plugins-m365.md)
 
@@ -62,7 +63,7 @@ Copilot in automation center enables makers, business analysts, and members of t
 
 If a region has GPUs (UK, Australia, US, India), we turn on Copilot by default. In this scenario, an admin needs to contact support and they use a PowerShell script to turn it off only at tenant level. Environment level support isn't available. If a region doesn't have GPUs (everywhere else except sovereign clouds), we turn on Copilot by default by toggling on the cross-geo data sharing. In this scenario, if you want to disable Copilot, you can toggle off the cross-geo data sharing in Power Platform admin center at the tenant level.
 
-To learn more, go to [Availability by region](get-started-with-copilot.md#availability-by-region).
+Learn more in [Availability by region](regions-overview.md#region-availability-for-power-automate-cloud-flows-with-copilot).
 
 ## Related information
 

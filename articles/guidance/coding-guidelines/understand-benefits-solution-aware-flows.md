@@ -1,154 +1,116 @@
 ---
 title: Understand the benefits of using solution-aware cloud flows
-description: Learn how solution-aware cloud flows enhance portability and management. Explore their role in robust ALM practices.
+description: Learn how solution-aware cloud flows in Power Automate enhance portability, management, and deployment for a seamless flow development experience.
 #customer intent: As a Power Automate user, I want to understand the benefits of using solution-aware versus non-solution cloud flows so that I can enhance flow portability and management.
 author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 02/18/2025
+ms.date: 07/11/2025
 ms.author: rachaudh
 ms.reviewer: pankajsharma2087
-contributors: 
+contributors:
   - manuelap-msft
-search.audienceType: 
+search.audienceType:
   - admin
   - flowmaker
+ms.custom:
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:04/01/2025
 ---
 
 # Understand the benefits of using solution-aware cloud flows
 
-Cloud flows that are created within or added to a [solution](/power-platform/alm/solution-concepts-alm) are known as solution-aware cloud flows, or simply solution cloud flows. These flows are designed to be portable and manageable and easy to move between environments. This capability supports robust Application Lifecycle Management (ALM) practices. Additionally, you can add multiple flows to a single solution, enhancing organization and management.
+Solution-aware cloud flows offer important advantages over non-solution cloud flows, especially in terms of portability, management, and deployment. This article describes the benefits of using solution-aware cloud flows and how they can enhance your flow development experience.
 
-Non-solution cloud flows are flows that are created outside the solutions. Their deployment needs to be managed individually.
+## Cloud flows in solutions
 
-Learn more:
+In the context of Power Automate, a [*solution*](/power-platform/alm/solution-concepts-alm) is essentially a package that contains all the parts that are needed to build and run a flow. It includes the flow itself, any connections to other services (like SharePoint or SQL), and any other components that are necessary for the flow to work properly. Solutions help organize and manage these components in a way that makes it easier to develop, test, and deploy the flow. They're also the mechanism for implementing application lifecycle management (ALM).
 
-- [Create a cloud flow in a solution](../../create-flow-solution.md)
-- [Known limitations](/power-apps/maker/data-platform/solutions-overview#known-limitations) 
+Cloud flows that are created in or added to a solution are known as *solution-aware cloud flows*, or simply *solution cloud flows*. These flows are designed to be easy to move between environments, which supports robust ALM practices. You can add multiple flows to a solution. Learn more in [Create a cloud flow in a solution](../../create-flow-solution.md).
 
+Non-solution cloud flows are flows that aren't part of a solution.
 
-## Connection references vs connections
+## Connections vs connection references
 
-*Connection references* and *connections* refer to different aspects of how flows interact with external services and data sources. Understanding the distinction between these two terms is important for effectively managing and deploying flows, particularly within the context of solution-aware and non-solution-aware cloud flows.
+*Connection references* and *connections* refer to different aspects of how flows interact with external services and data sources. To manage and deploy flows effectively, especially in the context of solution-aware and non-solution cloud flows, you should understand the distinction between these terms.
 
-### Connections (non-solution cloud flows)
+- **Connections** establish a direct link between Power Automate and external services such as Office 365 and SharePoint to allow flows to perform actions on behalf of a user. If you change a connection in a cloud flow, every action that's associated with that connection needs to be updated.
 
-Connections are configurations that establish a link between Power Automate and external services, such as Office 365, SharePoint, Dynamics 365, SQL, or any other connector. A connection includes authentication details (like API keys, OAuth tokens, or user credentials) required to access the external service.
+  :::image type="content" source="media/flow-connections.png" alt-text="Screenshot of the Flow Details page in Power Automate, with three connections highlighted." lightbox="media/flow-connections.png":::
 
-When you create a flow, you need to create or select a connection to the service you want to interact with. Connections are user specific, meaning they're tied to the credentials of the user who creates them.
+- **Connection references** are placeholders or shortcuts for connections. They make it easier to manage and move flows between environments (like development, testing, and production) by separating the flow's design from specific user connections. If you change a connection, you don't need to update every action in the flow. Instead, you update the connection reference, and everything stays connected.
 
-:::image type="content" source="media/flow-connections.png" alt-text="Screenshot of flow connections on the Flow Details page." lightbox="media/flow-connections.png":::
+  :::image type="content" source="media/flow-connectionreference.png" alt-text="Screenshot of the Flow Details page in Power Automate, with two connection references highlighted." lightbox="media/flow-connectionreference.png":::
 
-If you change a connection for a cloud flow, every action associated with the connection needs to be updated.
+  Consider keeping parent and child flows together in one solution, because they can use the same connection reference.
 
-### Connection references (solution-aware cloud flows)
+Connections are used in non-solution cloud flows. Connection references are used in solution-aware cloud flows. This distinction is important because connection references allow solution-aware cloud flows to be more portable and easier to manage across different environments.
 
-Connection references are pointers used within flows to refer to specific connections. They allow flows to be more portable and manageable, especially when moving flows between different environments.
+> [!TIP]
+> Connections include authentication details that are required for access to the external service. [Azure Key Vault](/azure/key-vault/) securely stores sensitive information like secrets, keys, and certificates. Integrating Azure Key Vault with Power Automate allows your flows to access secrets directly from Azure Key Vault, reducing the risk of exposure and enhancing your organization's overall security posture.
 
-Connection references are an abstraction layer that simplifies the management of connections within a Power Platform solution. They act as placeholders or pointers to actual connections, making it easier to manage and update connections in solution-aware scenarios.
+## Flow versioning
 
-:::image type="content" source="media/flow-connectionreference.png" alt-text="Screenshot of flow connection references on the Flow Details page." lightbox="media/flow-connectionreference.png":::
+Makers of solution-aware cloud flows can create drafts of flows as they evolve the flow logic. [Flow versioning](/power-automate/drafts-versioning) allows the flow maker to keep track of changes and revert to a previous version if necessary. Versioning is available only for solution cloud flows.
 
-Connection references are used in solution-aware cloud flows, which are part of a broader Power Platform solution; for example, solutions integrated with Power Apps, Dataverse, or other components. They enable the separation of the flow's design from the specific user connections, facilitating easier deployment and updates across different environments (development, testing, production).
+:::image type="content" source="media/flow-versioning.png" alt-text="Screenshot of the Power Automate flow designer, showing the flow's version history.":::
 
-Because connection references are a wrapper for connections, when you need to update a connection for actions within a solution aware cloud flow, only the connection reference needs to be updated. All the actions within the flow automatically refer to the updated connection in the connection reference.
+## Environment variables
 
-## Other benefits of solution-aware cloud flows
+[Environment variables](/power-apps/maker/data-platform/environmentvariables) in solution-aware cloud flows act as placeholders for values that can change between environments (like development, testing, and production). They allow you to define values that are specific to a particular environment, such as connections and API keys. When you move a solution from one environment to another, you can update the environment variables to reflect the new environment's settings without needing to modify the flow itself.
 
-Solution-aware cloud flows offer distinct benefits that enhance portability, management, and deployment of flows across different environments.
+Only solution-aware cloud flows support the use of environment variables.
 
-### Flow versioning
+## Unlimited flow ownership
 
-[Flow versioning](/power-automate/drafts-versioning) is available only to solution-aware cloud flows. Users can create drafts of flows as they evolve the flow logic and publish once complete. Versioning information, such as metadata of a flow, is stored in Dataverse.
+You can own any number of solution-aware cloud flows. However, you can own a maximum of 600 non-solution flows. Learn more in [Limits of automated, scheduled, and instant flows](../../limits-and-config.md).
 
-Versioning allows the flow maker to keep track of changes, revert to previous versions if necessary, and ensure that flows are stable and reliable.
+## Cloud flow run history in Dataverse
 
-:::image type="content" source="media/flow-versioning.png" alt-text="Screenshot of a cloud flow version history." lightbox="media/flow-versioning.png":::
+The run history of solution-aware cloud flows is stored in the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) table in [Dataverse](/power-apps/maker/data-platform/). This feature allows you to track the execution history of your cloud flows, including details about each run, such as start and end times, status, and any errors that occurred. This information is helpful for monitoring and troubleshooting your flows. It's also useful for auditing purposes, because it provides a record of all the runs that have occurred for a particular flow.
 
-### Environment variable support
+Cloud flow run history is available only for solution-aware cloud flows.
 
-Only solution aware cloud flows (ALM-friendly) support the use of environment variables.
+By default, flow run data is stored for 28 days, or 2,419,200 seconds. To change how long executions are stored, update [`FlowRunTimeToLiveInSeconds`](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) in the `Organization` table.
 
-[Environment variables](/power-apps/maker/data-platform/environmentvariables) enable the basic application lifecycle management (ALM) scenario of moving a cloud flow between Power Platform environments. In this scenario, the cloud flow stays exactly the same except for a few key external references (such as tables, connections, and keys) that are different between the source environment and the destination environment. The cloud flow requires the structure of the tables or connections to be exactly the same between the source and the destination environments, with some differences. Environment variables allow you to specify which of these different external references should be updated as the cloud flow is moved across environments.
+The [automation center](/power-automate/automation-center-overview) uses cloud flow run history in Dataverse to provide comprehensive monitoring and troubleshooting across Power Automate.
 
-### No limit on the number of flows owned by a user
+Learn more in [Manage cloud flow run history in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata).
 
-With non-solution cloud flows, a user can own a maximum of 600 flows. This limit doesn't apply to flows created within solutions.
+## Pipeline support for deployment
 
-Learn more: [Limits and configuration](../../limits-and-config.md)
+[Pipelines in Power Platform](/power-platform/alm/pipelines) make it easy to deploy solutions and solution-aware cloud flows to test and production environments. Once pipelines are in place, makers can initiate deployments directly from their development environments.
 
-### Cloud flow run history in Dataverse
+Pipelines automate the deployment process, reducing the risk of human error, ensuring that all necessary components are included, and making deployments faster and more reliable. Pipelines also help enforce best practices by ensuring that all deployments follow a consistent process. This consistency is especially important in larger organizations where multiple teams might be working on different solutions and flows. Learn more in [Overview of pipelines in Power Platform](/power-platform/alm/pipelines).
 
-With cloud flow run history in Dataverse, you can apply the extensibility of [Dataverse](/power-apps/maker/data-platform/) to track the results of your cloud flow executions at scale.
+You can customize pipelines to meet the unique needs of your organization. Here are some ways to extend pipelines:
 
-Only solution aware cloud flows, with their definitions in Dataverse, can have their run history stored in Dataverse.
+- **Custom approvals**: Add custom approval steps to make sure that deployments meet specific business requirements before proceeding.
 
-Each cloud flow execution has an entry in the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) table. This feature uses Dataverse's nonrelational database, [elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables), to store the cloud flow run history.
+- **Service principal deployments**: Use service principals for deployments to maintain security and control, allowing makers to request deployments without needing elevated access in target environments.
 
-Cloud flow run history in Dataverse is used by the [Automation center](/power-automate/automation-center-overview) to provide comprehensive monitoring and troubleshooting experiences for automation processes across Power Automate.
+- **Integration with DevOps tools**: Enhance your continuous integration/continuous delivery processes by integrating pipelines with tools like Azure DevOps Services and GitHub.
 
-By default, flow run data is stored for 28 days (2,419,200 seconds). You can modify how long executions are stored by updating the [Time to live (in seconds) for the flow run in the Organization table](/power-apps/developer/data-platform/reference/entities/organization#BKMK_FlowRunTimeToLiveInSeconds) in a Dataverse environment. Depending on your environment's storage capacity, you can adjust the length of storage for these run records.
+- **Custom business logic**: Execute specific business logic by inserting custom steps in the pipeline progression, such as pre-export validation or predeployment checks.
 
-Learn more: [Manage cloud flow run history in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata)
+Learn more in [Extend pipelines in Power Platform](/power-platform/alm/extend-pipelines).
 
-### Pipeline support for deployment
+## ALM and managed and unmanaged solutions
 
-[Pipelines in Power Platform](/power-platform/alm/pipelines) enable you to easily deploy solutions to test and production environments. Once pipelines are in place, makers can initiate deployments directly from their development environments. 
+Solutions are either *managed* or *unmanaged*. The distinction between the two is important for understanding how to work with them effectively.
 
-## ALM best practices for Power Automate
+- **Unmanaged solutions** are used for development and testing. They allow you to make changes to the components within the solution, such as adding or modifying flows and connections. Unmanaged solutions are typically used in development environments where you need to iterate on your designs.
 
-Application Lifecycle Management enables organizations to safely move artifacts within a solution across environments such as development, test, and production.
+- **Managed solutions** don't allow any modifications after they're deployed to an environment.
 
-Note these key differences when working with solutions in Power Automate:
+Here are some ALM best practices for using solutions in your deployments:
 
-- **Unmanaged solutions** are fully editable and allow developers to modify and customize the components within a solution. 
+- To prevent unmanaged customizations in test and production environments, deploy only managed solutions.
 
-- **Managed solutions** are sealed and don't allow any modifications once deployed to target environments. 
+- Edit flows only in a development environment, then move them to test and production environments.
 
-The rest of this section describes best practices for moving solutions and cloud flows across different environments.
+- In production environments, make sure that service principals own all flows.
 
-### Solutions best practices
-
-Solutions can be used as a logical boundary to keep related flows together. Consider keeping parent and child flows together in one solution, as they can use the same connection reference. 
-
-Environment variables allow you to dynamically change configurations across different environments (for example, development, staging, production) without modifying the code. These variables act as placeholders for data that can be set or updated externally, making it easier to manage and deploy the application.
-
-[Azure Key Vault](/azure/key-vault/) securely stores sensitive information like secrets, keys, and certificates. Integrating Azure Key Vault with Power Automate ensures that sensitive data is stored and retrieved securely. This integration allows Power Automate to access the secrets directly from Azure Key Vault, reducing the risk of exposure and enhancing the overall security posture of the application.
-
-### Deployment best practices
-
-Ensure safe ALM by not allowing any unmanaged customizations in the test and production environments by deploying only managed solutions. 
-
-Edit flows only in a development environment, then move them to test and production environments. In production environments, ensure that service principals own flows.
-
-Ensure all changes to production environments go through ALM processes.
-
-### Use pipelines for deployment
-
-[Pipelines](/power-platform/alm/pipelines) offer numerous advantages for managing and deploying solutions within your organization:
-
-- **Streamlined Application Lifecycle Management**: Pipelines automate and simplify the ALM process, making it easier to manage solution development, testing, and deployment. Pipelines reduce the effort and domain knowledge required to implement effective ALM practices.
-
-- **Centralized management**: Administrators can centrally govern both citizen-led and pro-dev-led projects, ensuring consistent and secure deployment practices across the organization. This centralized approach helps maintain control and oversight. 
-
-- **Improved productivity**: By automating deployment processes, pipelines significantly enhance productivity for makers, developers, and admins. Solutions can be delivered faster and with higher quality.
-
-- **Cost efficiency**: Pipelines reduce the total cost of ownership by minimizing the manual effort required for deployment and ongoing maintenance, leading to cost savings and more efficient resource utilization.
-
-- **Enhanced compliance and security**: Pipelines support secure production environments with approval-based delegated deployments. They also provide out-of-the-box analytics and audit logs, ensuring compliance and security throughout the deployment process.
-
-Additionally, pipelines can be customized to meet the unique needs of your organization. Here are some ways to extend pipelines:
-
-- **Custom approvals**: Ensure that deployments meet specific business requirements before proceeding by adding custom approval steps to your pipelines.
-
-- **Service principal deployments**: Use service principals for deployments to maintain security and control, allowing makers to request deployments without needing elevated access within target environments.
-
-- **Integration with DevOps tools**: Enhance your continuous integration/continuous delivery (CI/CD) processes by integrating pipelines with tools like Azure DevOps and GitHub. This integration allows seamless management and deployment of solutions.
-
-- **Custom business logic**: Execute specific business logic by inserting custom steps into the pipeline progression, such as pre-export validation, predeployment checks, and other custom actions.
-
-Learn more: 
-
-- [Overview of pipelines in Power Platform](/power-platform/alm/pipelines)
-- [Extend pipelines in Power Platform](/power-platform/alm/extend-pipelines)
+- Make sure that all changes to production environments go through ALM processes.

@@ -15,6 +15,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 # Set screen resolution on unattended mode
 

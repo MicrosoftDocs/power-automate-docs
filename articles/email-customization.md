@@ -7,6 +7,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
 ms.date: 03/28/2025
+ms.update-cycle: 180-days
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType:
@@ -34,7 +35,7 @@ Here are the top how-to scenarios for email in Microsoft Power Automate, with ex
 
 You can use HTML to beautify your email. Following are two options that you can use to beautify your messages with HTML.
 
-[!INCLUDE[copilot-designer-note](./includes/copilot-designer-note.md)]
+[!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 
@@ -121,7 +122,7 @@ You can do this in the web version of Outlook.
 
 ### Change the date and time format of an email
 
-By default, the email you receive shows the Coordinated Universal Time (UTC) time zone. However, your users might want to change it to their local time zone. For instructions, go to  [Converting time zone in Microsoft Power Automate](https://support.microsoft.com/help/4557244/converting-time-zone-in-microsoft-power-automate) to convert the time zone.
+By default, the email you receive shows the Coordinated Universal Time (UTC) time zone. However, your users might want to change it to their local time zone. Learn more in [Convert a time zone](convert-time-zone.md).
 
 ## Related information
 
