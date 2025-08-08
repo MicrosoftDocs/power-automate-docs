@@ -1,11 +1,11 @@
 ---
-title: "Tutorial: Get started with triggers"
+title: Work with triggers
 description: Learn how to use triggers in Power Automate to streamline your workflows.
 author: kewaiss
 contributors:
   - kewaiss
   - v-aangie
-ms.date: 08/07/2025
+ms.date: 08/08/2025
 ms.topic: how-to
 ms.service: power-automate
 ms.subservice: cloud-flow
@@ -19,7 +19,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Tutorial: Get started with triggers
+# Work with triggers
 
 This article explains how to use triggers with various cloud flow types.
 
@@ -30,7 +30,7 @@ A trigger is an event that starts a cloud flow. It defines the conditions under 
 
 If you're using Copilot to create your flow, Copilot automatically chooses the appropriate cloud flow type and trigger for you based on your description. If you're creating a flow without Copilot, you need to make these choices on your own.
 
-In this article, you'll learn how to start a flow in three ways: automatically using predefined triggers, manually as determined by you, and scheduled based on a specified date and time. After you create a trigger, you'll learn how to replace it in an existing flow, and add actions to your flow to tell the trigger what to do after it starts.
+In this article, you'll learn how to trigger a flow in three ways: automatically using predefined triggers, scheduled based on a specified date and time, and manually, as determined by you. After you create a trigger, you'll learn how to replace it in an existing flow, and add actions to your flow to tell the trigger what to do after it starts.
 
 ## Select a trigger to start a flow when a designated event happens
 
@@ -46,33 +46,15 @@ An [automated cloud flow](overview-cloud.md#types-of-cloud-flows) is triggered b
 
     Scroll through the list of triggers or use the search box to find the one you want. If you want to display more triggers, select **Show more**.
 
-    :::image type="content" source="media/get-started-tutorial-triggers/triggers-automated.png" alt-text="Screenshot of some of the triggers available for automated cloud flows.":::
+    :::image type="content" source="media/work-with-triggers/triggers-automated.png" alt-text="Screenshot of some of the triggers available for automated cloud flows.":::
 
 1. Select **Create**. Your trigger appears in the designer.
 
-    :::image type="content" source="media/get-started-tutorial-triggers/triggers-automated-designer.png" alt-text="Screenshot of the trigger in the designer for an automated cloud flow.":::
+    :::image type="content" source="media/work-with-triggers/triggers-automated-designer.png" alt-text="Screenshot of the trigger in the designer for an automated cloud flow.":::
 
-1. After you create a trigger, your next step is to add the actions that will take place once your trigger starts the cloud flow. Learn how to add an action in [Add actions to your cloud flow](#add-actions-to-your-cloud-flow).
+1. After you create a trigger, your next step is to add the actions that will take place once your trigger starts the cloud flow. When you save your flow, it runs automatically when the trigger condition is met. For example, if you selected the *When a new email arrives* trigger, your flow runs automatically every time you receive a new email.
 
-## Select a trigger to start a flow manually
-
-An instant cloud flow is triggered manually, such as when you select a button in Power Automate or in a mobile app.
-
-1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. On the navigation pane, select **Create**.
-1. Under **Start from blank**, select **Instant cloud flow**.
-1. On the **Build an instant cloud flow** screen, enter a name for your flow.
-1. In the **Choose how to trigger this flow** field, search for and select the trigger you want to use.
-
-    There are many triggers to start your flow. For example, you can trigger it manually with the click of a button, when a Dataverse row is selected, or for a selected Team message.
-
-    :::image type="content" source="media/get-started-tutorial-triggers/triggers-instant.png" alt-text="Screenshot of some of the triggers available for instant cloud flows.":::
-
-1. Select **Create**. Your trigger appears in the designer.
-
-    :::image type="content" source="media/get-started-tutorial-triggers/triggers-instant-designer.png" alt-text="Screenshot of the trigger in the designer for an instant cloud flow.":::
-
-1. After you create a trigger, your next step is to add the actions that will take place once your trigger starts the cloud flow. Learn how to add an action in [Add actions to your cloud flow](#add-actions-to-your-cloud-flow).
+    Learn how to add an action in [Add actions to your cloud flow](#add-actions-to-your-cloud-flow).
 
 ## Run a cloud flow on a schedule
 
@@ -88,13 +70,37 @@ When you create a scheduled cloud flow, Power Automate automatically assigns the
 1. In the **at** dropdown menu, select the time to start the flow.
 1. In the **Repeat every** field and the recurrence dropdown menu, select the recurrence pattern, such as every day, every week, or every month.
 
-    :::image type="content" source="media/get-started-tutorial-triggers/triggers-scheduled.png" alt-text="Screenshot of the 'Build a scheduled cloud flow' screen.":::
+    :::image type="content" source="media/work-with-triggers/triggers-scheduled.png" alt-text="Screenshot of the 'Build a scheduled cloud flow' screen.":::
 
 1. Select **Create**. Your trigger appears in the designer.
 
-    :::image type="content" source="media/get-started-tutorial-triggers/triggers-scheduled-designer.png" alt-text="Screenshot of the 'Recurrence'trigger in the designer for a scheduled cloud flow.":::
+    :::image type="content" source="media/work-with-triggers/triggers-scheduled-designer.png" alt-text="Screenshot of the 'Recurrence' trigger in the designer for a scheduled cloud flow.":::
 
-1. After you create a trigger, your next step is to add the actions that will take place once your trigger starts the cloud flow. Learn how to add an action in [Add actions to your cloud flow](#add-actions-to-your-cloud-flow).
+1. After you create a trigger, your next step is to add the actions that will take place once your trigger starts the cloud flow. When you save your flow, it runs automatically at the specified time, or on the specified schedule. For example, if you set the recurrence to run every day at 10:00 AM, your flow runs automatically every day at that time.
+
+    Learn how to add an action in [Add actions to your cloud flow](#add-actions-to-your-cloud-flow).
+
+## Select a trigger to start a flow manually
+
+An instant cloud flow is triggered manually, such as when you select a button in Power Automate or in a mobile app.
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. On the navigation pane, select **Create**.
+1. Under **Start from blank**, select **Instant cloud flow**.
+1. On the **Build an instant cloud flow** screen, enter a name for your flow.
+1. In the **Choose how to trigger this flow** field, search for and select the trigger you want to use.
+
+    There are many triggers to start your flow. For example, you can trigger it manually with the click of a button, when a Dataverse row is selected, or for a selected Team message.
+
+    :::image type="content" source="media/work-with-triggers/triggers-instant.png" alt-text="Screenshot of some of the triggers available for instant cloud flows.":::
+
+1. Select **Create**. Your trigger appears in the designer.
+
+    :::image type="content" source="media/work-with-triggers/triggers-instant-designer.png" alt-text="Screenshot of the trigger in the designer for an instant cloud flow.":::
+
+1. After you create a trigger, your next step is to add the actions that will take place once your trigger starts the cloud flow. When you save your flow, you can start it in either the portal or on your mobile phone. Unlike an automatic flow and a scheduled flow, you need to start an instant flow *manually*. After you activate the flow, you can check if the actions you added are executed as expected.
+
+    Learn how to add an action in [Add actions to your cloud flow](#add-actions-to-your-cloud-flow).
 
 ## Replace the trigger in an existing cloud flow
 
@@ -166,7 +172,7 @@ You work with actions in the *designer*. Power Automate allows you to use either
 
     If you want a list of actions to choose from instead, you can select from four categories in the **Add an action** pane: **Favorites**, **AI capabilities**, **Built-in tools**, and **By connector**. Learn how to quickly find the action you need in [Configuration pane](flows-designer.md#configuration-pane).
 
-    :::image type="content" source="media/get-started-tutorial-triggers/add-action-new.png" alt-text="Screenshot of the 'Add an actions' pane.":::
+    :::image type="content" source="media/work-with-triggers/add-action-new.png" alt-text="Screenshot of the 'Add an actions' pane.":::
 
     If the action you want to add isn't in the list, select **See more** to display more actions.
 
@@ -179,7 +185,7 @@ You work with actions in the *designer*. Power Automate allows you to use either
 1. In the **Choose an operation** search field, enter a keyword or phrase to find the action you want to add. For example, you can enter *send an email* to find the **Send an email (V2)** action.
 1. In the **Actions** list, select the action you want to add. The action is added to your flow.
 
-    :::image type="content" source="media/get-started-tutorial-triggers/add-action-classic.png" alt-text="Screenshot of the 'Actions' list in the 'Choose an operation' card.":::
+    :::image type="content" source="media/work-with-triggers/add-action-classic.png" alt-text="Screenshot of the 'Actions' list in the 'Choose an operation' card.":::
 
     If the action you want to add isn't in the list, select **See more** to display more actions.
 

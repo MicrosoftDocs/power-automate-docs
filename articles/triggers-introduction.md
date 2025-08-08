@@ -57,7 +57,7 @@ To find your license:
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Tutorial: Get started with triggers](get-started-tutorial-triggers.md)
+> [Work with triggers](work-with-triggers.md)
 
 ## Related information
 

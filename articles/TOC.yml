@@ -33,8 +33,8 @@
           items:
           - name: Triggers overview
             href: triggers-introduction.md
-          - name: "Tutorial: Get started with triggers"
-            href: get-started-tutorial-triggers.md
+          - name: Work with triggers
+            href: work-with-triggers.md
           - name: Customize your triggers with conditions
             href: customize-triggers.md
         - name: Copilot in cloud flows FAQ
