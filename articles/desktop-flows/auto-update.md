@@ -4,7 +4,7 @@ description: Learn how to configure automatic updates for Power Automate for des
 author: a-887178056
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.date: 06/17/2025
+ms.date: 08/08/2025
 ms.author: guco
 ms.topic: article
 ms.custom:
@@ -52,7 +52,7 @@ To configure automatic updates, use the Windows registry. You need administrator
 
 Automatic updates don't run when:
 
-- The machine is not registered.
+- The machine isn't registered.
 - The Power Automate service is running as a custom account. Learn more in [change the on-premises service account](./troubleshoot.md#change-the-on-premises-service-account).
 - A local or cloud-orchestrated desktop flow run is executing on the machine.
 - The Power Automate for desktop designer, runtime application, installer, or troubleshooter is running.
