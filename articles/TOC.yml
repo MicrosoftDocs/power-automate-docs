@@ -31,8 +31,12 @@
           href: get-started-with-cloud-flows.md
         - name: Start a cloud flow with a trigger
           items:
-          - name: Get started with triggers
+          - name: Triggers overview
             href: triggers-introduction.md
+          - name: Work with triggers
+            href: work-with-triggers.md
+          - name: Customize your triggers with conditions
+            href: customize-triggers.md
         - name: Copilot in cloud flows FAQ
           href: faq-copilot-cloud-flows.yml
     - name: How to
