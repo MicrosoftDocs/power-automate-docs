@@ -5,7 +5,7 @@ author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 06/18/2025
+ms.date: 08/06/2025
 ms.author: nimoutzo
 ms.reviewer: danamartens
 contributors:
@@ -65,21 +65,27 @@ To manually trigger static analysis:
 
 ## Static analysis in the designer
 
-Static analysis runs automatically, continuously inspecting your code without requiring manual intervention. When you add, remove, or modify actions in your flow, this feature activates to assess the changes and refresh the analysis. This process makes development seamless and efficient.
+Static analysis runs automatically, continuously inspecting your code without requiring manual intervention. When you add, remove, or modify actions in your flow, this feature activates to assess the changes and refresh the analysis. This process makes development seamless and efficient. On the right side of the designer, you see a dedicated Flow Checker button. The number on the button shows the total violations in the desktop flow. Select the button to open the **Flow Checker** pane and view detailed insights about the specific rules that are violated.
 
 :::image type="content" source="media\static-analysis\static-analysis-pad-button.png" alt-text="Screenshot of the button in Power Automate for Desktop designer that opens the static analysis pane.":::
 
-Each analysis generates a percentage score that shows the proportion of rules successfully followed. A higher score means fewer violations and better code quality.
+Each analysis generates a percentage score that shows the proportion of rules successfully followed. A higher score means fewer violations and better code quality. 
 
 This score is recalculated every time a change is made to the flow, providing immediate feedback and promoting good development practices.
 
 :::image type="content" source="media\static-analysis\static-analysis-pad-score.png" alt-text="Screenshot showing the static analysis score and a summary of any violated rules.":::
 
-If rules are violated, the static analysis report shows a clear summary. It lists rule names and the number of actions or variables in your flow that violate each rule. Selecting a rule highlights the corresponding action and provides a detailed error explanation. For variable-related violations, the system navigates to the variable pane, making corrections easy.
+If rules are violated, the static analysis report shows a clear summary. It lists rule names and the number of actions or variables in your flow that violate each rule. Selecting a rule highlights the corresponding action and provides a detailed error explanation. For variable-related violations, the system navigates to the variable pane, making corrections easy. The Flow checker pane includes search functionality and lets you filter by subflow, so you can quickly find specific issues.
 
-Each violation displays a tile with details, including the error's nature, recommended fixes, and a link to documentation. Use the slider in the rule’s header to navigate between occurrences of the same violation. This guidance helps developers address issues quickly and effectively.
+Each violation displays a tile with details, including the error's nature, recommended fixes, and a link to documentation. Use the slider in the rule’s header to navigate between occurrences of the same violation. This guidance helps developers address issues quickly and effectively. Flow checker error violations show an inline indicator and a popup with more details. Warnings also appear inline in the designer workspace, like errors. The designer shows diagnostic statuses such as warnings and errors on subflow tabs, and includes a button that lets you go to the component that needs attention.
 
 :::image type="content" source="media\static-analysis\static-analysis-pad-details.png" alt-text="Screenshot showing the details of a static analysis rule.":::
+
+Legend
+
+1. Occurences of the specific rule violation
+1. Navigate to the action that violates the rule
+1. Link to documentation
 
 ## Static analysis rules
 
@@ -108,9 +114,9 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 
 - **Severity**: Warning
 - **Type**: Maintainability
-- **Error details**: Variable name exceeds the 25-character limit.
-- **Description**: This rule verifies if the name of each variable defined in the flow exceeds a specified number of characters. The default limit is 25 characters.
-- **Suggested fix**: Rename any variables that exceed the specified character limit to ensure their names are shorter than 25 characters.
+- **Error details**: Variable name exceeds the 40-character limit.
+- **Description**: This rule verifies if the name of each variable defined in the flow exceeds a specified number of characters. The default limit is 40 characters.
+- **Suggested fix**: Rename any variables that exceed the specified character limit to ensure their names are shorter than 40 characters.
 
 <a name="variabledefaultvalues"></a>
 ### Input variable default values
@@ -184,6 +190,14 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 - **Description**: This rule checks if the hardcoded wait actions in the flow exceed a specified amount of time, with the limit set to 600 seconds.
 - **Suggested fix**: Review the flow to find wait actions that exceed the 600-second limit. Check if these long wait times are necessary and adjust their duration to the shortest time needed for the flow to work correctly. If a long wait is required, break it into shorter intervals and add checks or conditions between them. Whenever possible, replace long wait actions with event-driven triggers.
 
+<a name="unreachedactions"></a>
+### Unreached actions
+
+- **Severity**: Warning
+- **Type**: Maintainability
+- **Error details**: One or more actions in the flow are unreachable and won't be executed under any circumstances.
+- **Description**: This rule checks for actions in the flow that are logically unreachable. Unreachable actions can result from incorrect branching, misplaced conditions, or disconnected segments, and might indicate flaws in the flow's logic or structure.
+- **Suggested fix**: Review the flow to find actions that aren't connected to an execution path. Ensure each actions is reachable through a valid logic branch or loop. Remove or move unreachable actions to keep the flow clean and efficient.
 
 ## Known limitations
 
