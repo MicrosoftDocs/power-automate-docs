@@ -41,7 +41,7 @@ Legend:
 
     (*Classic designer only*) Select the smiley face icon in the title bar.
 
-1. **Flow checker button**: Check your flow for errors.
+1. [**Flow checker button**](error-checker.md): Check your flow for errors.
 1. [**Save button**](#save-button): Save your flow.
 1. [**Test button**](#test-button): Test your flow to make sure that it works as you intended.
 1. [**Copilot button**](create-cloud-flow-using-copilot.md): *(New designer only)* Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
