@@ -7,23 +7,23 @@ ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 08/08/2025
+ms.date: 08/11/2025
 ms.author: angieandrews
 ---
 
 # Create an effective Power Automate support request
 
-In this article, you'll learn what you should consider when creating a support service request to reach Microsoft support. An effective support service request with information that explains clearly the problem symptoms or the behavior provides a better context for faster problem resolution. You'll learn the differences between examples of problems with individual flows and how they differ with the problems related to the Power Automate product and relevant services. You'll also learn about what additional information you can provide to help expedite the problem investigation, narrow down the scope of the problem through clear steps to reproduce the issue that helps support team reach a resolution faster.
+In this article, you'll learn what you should consider when creating a support service request to reach Microsoft support. An effective support service request with information that explains clearly the problem symptoms or the behavior provides a better context for faster problem resolution. You'll learn the differences between examples of problems with individual flows and how they differ with the problems related to the Power Automate product and relevant services. You'll also learn about what additional information you can provide to help expedite the problem investigation. This will help narrow down the scope of the problem through clear steps to reproduce the issue that helps the support team reach a resolution faster.
 
 ## Who can help with different issue types
 
 Depending on the nature of the problem, different people or organizations might be best suited to help you:
 
-Flow configuration issues (issues with your flow): For problems isolated to a specific flow that you or your team built (for example, logic errors or misconfigured actions), the creators or owners of the flow (possibly you or your Power Platform team) and your environment administrators should troubleshoot first. They understand the flow’s design and the context in which it runs.
+- **Flow configuration issues (issues with your flow)**: For problems isolated to a specific flow that you or your team built (for example, logic errors or misconfigured actions), the creators or owners of the flow (possibly you or your Power Platform team) and your environment administrators should troubleshoot first. They understand the flow’s design and the context in which it runs.
 
-Power Automate service issues (platform bugs): If the issue appears to be a bug in the Power Automate platform itself or in a Microsoft-provided connector (meaning the problem isn't specific to one flow and could affect any flow under certain conditions), then Microsoft Support is the right place to get help.
+- **Power Automate service issues (platform bugs)**: If the issue appears to be a bug in the Power Automate platform or in a Microsoft-provided connector (meaning the problem isn't specific to one flow and could affect any flow under certain conditions), then Microsoft Support is the right place to get help.
 
-External system or integration issues: If your flow’s problem stems from an external service or data source that the flow integrates with (for example, a third-party API or a SharePoint server), then the support team for that external system is most appropriate.
+- **External system or integration issues**: If your flow’s problem stems from an external service or data source that the flow integrates with (for example, a third-party API or a SharePoint server), then the support team for that external system is most appropriate.
 
 ## Differences between issues with a flow and issues with the Power Automate product
 
@@ -42,10 +42,10 @@ Not every flow failure is due to a bug in Power Automate itself. It’s importan
 
 ### Flow fails to send an email when a SharePoint item is created
 
-- **Scenario**: You have a cloud flow that triggers “When an item is created” in a SharePoint list, then sends an email.
+- **Scenario**: You have a cloud flow that triggers `When an item is created` in a SharePoint list, then sends an email.
 - **Steps to reproduce**: Create a new item in the specified SharePoint list.
-- **Expected behavior**: An email is sent out with the item details.
-- **Actual behavior**: No email is sent – the flow either doesn’t run at all, or it runs but skips the email step without error.
+- **Expected behavior**: An email is sent with the item details.
+- **Actual behavior**: No email is sent. The flow either doesn’t run, or it runs but skips the email step without error.
 
 This might be due to a misconfiguration (for example, incorrect trigger condition or expired Outlook connection). Since it only happens on that specific list and flow, it’s likely a configuration issue. The flow’s owner should check the run history and connections. There’s no evidence of a platform bug, as similar flows still work.
 
@@ -61,7 +61,7 @@ In both of the previous cases, the problem is confined to one flow or one enviro
 
 ## Example of issues with the Power Automate product
 
-### The 'filter array'action returns no results when the filter text contains an asterisk (*)
+### The 'filter array' action returns no results when the filter text contains an asterisk (*)
 
 - **Scenario**: In a simple flow, you use the `filter array` action to filter items in an array.
 - **Steps to reproduce**: Create a flow with an array like `["a", "*b"]`. Use `flter array` to match `"*b"`.
@@ -179,9 +179,9 @@ Issues with Power Automate for desktop might require more details in your suppor
 - **Network configuration (proxy/firewall)**: If the machine is on a corporate network, mention if it’s behind a proxy server or a strict firewall.
 
 - **Machine logs**: Refer the steps to [collect the machine logs](desktop-flows/troubleshoot.md#collect-machine-logs)
-- **Installation type**: This is needed to determine whether the Power Automate Desktop installed in your machine is the Microsoft Store version or the MSI version. To do this, go to Start Menu > Add or remove programs. Then search for "Power Automate". If Power Automate for desktop is in the list, it's the MSI version. Power Automate is the Microsoft Store version.
-- **Troubleshooter Reports**: The troubleshooter provides very useful insights regarding certain issues in Power Automate Deskop application, especially around misconfiguration. For more information on generating the reports, please refer [troubleshooter](https://learn.microsoft.com/en-us/power-automate/desktop-flows/troubleshooter)
-- **Session ID, Client ID & Correlation ID**: This information can be found in the Power Automate for Desktop console by clicking on **Help > About**.
+- **Installation type**: This is needed to determine whether the Power Automate for desktop installed in your machine is the Microsoft Store version or the MSI version. To do this, go to the **Start** menu > **Add or remove programs**. Then search for **Power Automate**. If Power Automate for desktop is in the list, it's the MSI version. Power Automate is the Microsoft Store version.
+- **Troubleshooter Reports**: The troubleshooter provides insights regarding certain issues in Power Automate for desktop, especially around misconfiguration. Learn about generating the reports in [Troubleshooter](desktop-flows/troubleshooter.md).
+- **Session ID, Client ID & Correlation ID**: Find information in the Power Automate for Desktop console by selecting **Help** > **About**.
 
 ## Add notes from your investigation
 
@@ -193,5 +193,4 @@ Before you submit a support request, [check if the bug is a known issue](/power-
 
 ## Related information
 
-[Power Automate troubleshooting](/troubleshoot/power-platform/power-automate/welcome-power-automate)
-
+[Power Automate troubleshooting](/troubleshoot/power-platform/power-automate/welcome-power-automate?branch=main&branchFallbackFrom=pr-en-us-3421)
