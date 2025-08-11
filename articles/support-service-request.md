@@ -179,6 +179,9 @@ Issues with Power Automate for desktop might require more details in your suppor
 - **Network configuration (proxy/firewall)**: If the machine is on a corporate network, mention if it’s behind a proxy server or a strict firewall.
 
 - **Machine logs**: Refer the steps to [collect the machine logs](desktop-flows/troubleshoot.md#collect-machine-logs)
+- **Installation type**: This is needed to determine whether the Power Automate Desktop installed in your machine is the Microsoft Store version or the MSI version. To do this, go to Start Menu > Add or remove programs. Then search for "Power Automate". If Power Automate for desktop is in the list, it's the MSI version. Power Automate is the Microsoft Store version.
+- **Troubleshooter Reports**: The troubleshooter provides very useful insights regarding certain issues in Power Automate Deskop application, especially around misconfiguration. For more information on generating the reports, please refer [troubleshooter](https://learn.microsoft.com/en-us/power-automate/desktop-flows/troubleshooter)
+- **Session ID, Client ID & Correlation ID**: This information can be found in the Power Automate for Desktop console by clicking on **Help > About**.
 
 ## Add notes from your investigation
 
