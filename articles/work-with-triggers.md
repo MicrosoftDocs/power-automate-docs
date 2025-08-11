@@ -154,7 +154,7 @@ You work with triggers in the *designer*. [!INCLUDE[designer-tab-experience](./i
     Both methods return a list of triggers that you can use in your flow. If you can't find the trigger you want in the list, select **See more**.
 
 1. Select the trigger that you want to use. You return to the designer, where you can configure the trigger.
-1. 1. If you want to save your flow, you need to [add at least one action](#add-actions-to-your-cloud-flow). Then, you can select **Save** on the command bar at the top of the page.
+1. If you want to save your flow, you need to [add at least one action](#add-actions-to-your-cloud-flow). Then, you can select **Save** on the command bar at the top of the page.
 
 ---
 
