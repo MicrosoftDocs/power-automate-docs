@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: concept-article
-ms.date: 08/01/2025
+ms.date: 08/12/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -31,7 +31,7 @@ To enable datetime hierarchies for the relevant datetime columns, perform the fo
 
 ## Create a custom model on top of the semantic model
 
-1. In Power BI Desktop<!--please provide link-->, navigate to the report created in the Fabric workspace, and then download and open it.<!--please either say how to do this or if an article already exists, link to it. Users might get stuck with no direction. Also, when do you see the following screenshot? I have PBI Desktop open and I don't know what to do.-->
+1. In the Fabric workspace, open the created report, download it, and open it in Power BI Desktop on your local computer. To do this, select **File** > **Download this file**, as shown in the following screenshot.
 
     :::image type="content" source="media/process-mining-fabric-datetime-hierarchy/1-download.png" alt-text="Screenshot of downloading the report.":::
 
@@ -149,7 +149,7 @@ createOrReplace
                     RETURN CALENDAR(Date(startDateYear, 1, 1), Date(endDateYear, 12, 31))
 ```
 
-The *lineageTag* is optional and can be removed. They're unique GUIDs and should be replaced if used. Read more about lineageTag and how to use them in [Lineage tags for Power BI semantic models](h/analysis-services/tom/lineage-tags-for-power-bi-semantic-models?view=asallproducts-allversions).
+The *lineageTag* is optional and can be removed. They're unique GUIDs and should be replaced if used. Learn more about lineageTag and how to use them in [Lineage tags for Power BI semantic models](/analysis-services/tom/lineage-tags-for-power-bi-semantic-models.md).
 
 1. Make sure to replace the values of *TableName* and *ColumnName*:
 
@@ -160,7 +160,7 @@ The *lineageTag* is optional and can be removed. They're unique GUIDs and should
 
 1. The date hierarchy here contains *year*, *month*, and *day*, but this can be extended to add more elements. If you want to create even more detailed date dimension table, learn more in [DAX Date table in TMDL](https://www.datazoe.blog/post/dax-date-table-in-tmdl).
 
-    Once you create it, the datetime dimension table looks like this:<!--This say datetime dimension; the alt-text says date dimension; the screenshot title says DateDimensionTable. Which is correct?-->
+    Once you create it, the date dimension table looks like this:
 
     :::image type="content" source="media/process-mining-fabric-datetime-hierarchy/7-dimension-table.png" alt-text="Screenshot of a newly created date dimension table.":::
 
@@ -168,14 +168,14 @@ The *lineageTag* is optional and can be removed. They're unique GUIDs and should
 
 ## Create a relationship between the Date column and date dimension table
 
-Create a new relationship between the **Date** column in the date dimension table and the **Date** column created in the first step<!--please use a link instead of 'first step'; or, type in the name of the heading and I'll add the link>.
+Create a new relationship between the **Date** column in the date dimension table and the **Date** column created in the first step.
 
 1. Navigate to the data model view.
-1. Drag and drop the date column in the first step to the **Date** column in the date dimension table.<!--please use a link instead of 'first step'; or, type in the name of the heading and I'll add the link>.
+1. Drag and drop the date column in the first step to the **Date** column in the date dimension table.
 
     :::image type="content" source="media/process-mining-fabric-datetime-hierarchy/8-relationship.png" alt-text="Screenshot of creating a relationship between date column and date dimension table.":::
 
-1. Set the properties and save the relationship.<!--provide a link to the article that explains how to do this, or explain it here.-->
+1. Set the properties as in the previous screenshot in this section, and then save the relationship.
 
 1. Go to [(Optional) Mark the date dimension table as the Date table](#optional-mark-the-date-dimension-table-as-the-date-table).
 
@@ -183,7 +183,7 @@ Create a new relationship between the **Date** column in the date dimension tabl
 
 This step is optional, and is only for report visuals. You can mark the date dimension table as the **Date** table.
 
-1. Right-click on the *DateDimensionTable* and select **Mark as date table**.<!--Say where you are, such as 'On the...', do this. Also, can you select other than right-click? we can't assume everyone uses a mouse - it's not inclusive.-->
+1. In the Data panel on the right, right-click on the **DateDimensionTable** or open a context menu by selecting the ellipses (**...**) next to the table name, and then select **Mark as date table**.
 
 1. Go to [Save and publish the report](#save-and-publish-the-report).
 
