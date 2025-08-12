@@ -5,7 +5,7 @@ author: radioblazer
 ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: how-to
-ms.date: 04/01/2025
+ms.date: 08/12/2025
 ms.update-cycle: 180-days
 ms.collection: bap-ai-copilot
 search.audienceType: 
@@ -26,7 +26,7 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 # [New designer](#tab/new-designer)
 
 1. Select the plus sign (**+**) > **Add an action**.
-1. On the **Add an action** sceen, enter **list rows** in the **Search** field.
+1. On the **Add an action** screen, enter **list rows** in the **Search** field.
 1. Under **Microsoft Dataverse**, select **List rows (Preview)**.
 1. On the **Parameters** tab to the left, select **Accounts** in the **Table Name** dropdown menu.
 1. Close the screen by selecting (**<<**).
@@ -46,7 +46,7 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 
 To get more than 5,000 rows from a query automatically, turn on the **Pagination** feature from **Settings**.
 
-When pagination is set and the amount of rows exceeds that number of the threshold configured, the response won't include the **_@odata.nextLink_** parameter to request the next set of rows. Turn pagination off so that the response includes the **_@odata.nextLink_** parameter that can be used to request the next set of rows. Go to [Skip token](#skip-token) to learn how to use it.
+When pagination is set and the number of rows exceeds that number of the threshold configured, the response won't include the **_@odata.nextLink_** parameter to request the next set of rows. Turn off pagination so that the response includes the **_@odata.nextLink_** parameter that can be used to request the next set of rows. Go to [Skip token](#skip-token) to learn how to use it.
 
 [Content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) apply to ensure general service guarantees.
 
@@ -54,7 +54,7 @@ When pagination is set and the amount of rows exceeds that number of the thresho
 
 1. Select the **List rows** card.
 1. On the pane to the left, select the **Settings** tab > **Networking**.
-1. Move the **Pagination** slider to the **On** position if it's not already turned on.
+1. Move the **Pagination** slider to the **On** position if not already turned on.
 1. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000.
 
     Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
@@ -63,7 +63,7 @@ When pagination is set and the amount of rows exceeds that number of the thresho
 
 1. In the upper-right corner of the **List rows** card, select the menu (...).
 1. Select **Settings**.
-1. Move the **Pagination** slider to the **On** position if it's not already turned on.
+1. Move the **Pagination** slider to the **On** position if not already turned on.
 1. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000.
 
     Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
@@ -76,7 +76,7 @@ The advanced options for the **List Rows** action allow you to sort, filter, arr
 
 # [New designer](#tab/new-designer)
 
-You can set options inthe action configuration pane.
+You can set options in the action configuration pane.
 
 1. To see the options, select the **List rows** card.
 1. In the **Parameters** tab, select an advanced option in the **Add new parameters** dropdown menu.
@@ -121,7 +121,7 @@ There are two types of navigation properties that you can use in **Expand Query*
 
    1. *Collection-valued* navigation properties correspond to one-to-many or many-to-many relationships.
 
-If you include only the name of the navigation property, you’ll receive all the properties for the related rows. To learn more, see [Retrieve related table rows with a query](/powerapps/developer/data-platform/webapi/retrieve-related-entities-query).
+    If you include only the name of the navigation property, you receive all the properties for the related rows. Learn more in [Retrieve related table rows with a query](/powerapps/developer/data-platform/webapi/retrieve-related-entities-query).
 
 To use it in a flow step, enter this Odata expression in the **Expand Query** field: `primarycontactid(contactid,fullname)`. This is how to get the *contactid* and *fullname* columns for the *primarycontactid* of each *account*.
 
@@ -136,6 +136,9 @@ Use to indicate the specific number of rows for Dataverse to return. Here's an e
 # [New designer](#tab/new-designer)
 
 Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML.
+
+> [!IMPORTANT]
+> Pagination setting doesn't support FetchXml queries. To request more than 5,000 rows, you need to manage [paging directly with the FetchXml](/powerapps/developer/data-platform/fetchxml/page-results) query.
 
 Example FetchXML query for the Account table:
 
@@ -177,7 +180,7 @@ Because Power Automate applies [content throughput limits](../limits-and-config.
 
 The default page limit of 5,000 rows applies if you don't use pagination.
 
-To use it, implement a loop to parse the *\@odata.nextLink* value in the JSON response, extract the **skip token**, and then send another request until you've listed the number of rows that you need.
+To use it, implement a loop to parse the *\@odata.nextLink* value in the JSON response, extract the **skip token**, and then send another request until you listed the number of rows that you need.
 
 ```json
 HTTP/1.1 200 OK  
