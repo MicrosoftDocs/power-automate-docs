@@ -121,7 +121,7 @@ There are two types of navigation properties that you can use in **Expand Query*
 
    1. *Collection-valued* navigation properties correspond to one-to-many or many-to-many relationships.
 
-    If you include only the name of the navigation property, you receive all the properties for the related rows. Learn more in [Retrieve related table rows with a query](/powerapps/developer/data-platform/webapi/retrieve-related-entities-query).
+If you include only the name of the navigation property, you receive all the properties for the related rows. Learn more in [Retrieve related table rows with a query](/powerapps/developer/data-platform/webapi/retrieve-related-entities-query).
 
 To use it in a flow step, enter this Odata expression in the **Expand Query** field: `primarycontactid(contactid,fullname)`. This is how to get the *contactid* and *fullname* columns for the *primarycontactid* of each *account*.
 
