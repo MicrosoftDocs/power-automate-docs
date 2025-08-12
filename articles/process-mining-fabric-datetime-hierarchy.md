@@ -168,10 +168,10 @@ The *lineageTag* is optional and can be removed. They're unique GUIDs and should
 
 ## Create a relationship between the Date column and date dimension table
 
-Create a new relationship between the **Date** column in the date dimension table and the **Date** column created in the first step.
+Create a new relationship between the **Date** column in the date dimension table and the **Date** column created in the [Create a Derived Date column for the Datetime column](#create-a-derived-date-column-for-the-datetime-column) section.
 
 1. Navigate to the data model view.
-1. Drag and drop the date column in the first step to the **Date** column in the date dimension table.
+1. Drag and drop the date column created in the [Create a Derived Date column for the Datetime column](#create-a-derived-date-column-for-the-datetime-column) section to the **Date** column in the date dimension table.
 
     :::image type="content" source="media/process-mining-fabric-datetime-hierarchy/8-relationship.png" alt-text="Screenshot of creating a relationship between date column and date dimension table.":::
 
