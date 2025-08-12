@@ -164,7 +164,7 @@ The *lineageTag* is optional and can be removed. They're unique GUIDs and should
 
     :::image type="content" source="media/process-mining-fabric-datetime-hierarchy/7-dimension-table.png" alt-text="Screenshot of a newly created date dimension table.":::
 
-1. Go to [Create a relationship between the Date column and date dimension table](#create-a-relationship-between-the-date-column-and-date-dimension-table)
+1. Go to [Create a relationship between the Date column and date dimension table](#create-a-relationship-between-the-date-column-and-date-dimension-table).
 
 ## Create a relationship between the Date column and date dimension table
 
