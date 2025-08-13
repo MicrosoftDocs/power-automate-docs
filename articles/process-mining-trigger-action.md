@@ -18,7 +18,7 @@ search.audienceType:
 
 # Triggering actions using business rules and flows (preview)
 
-[!INCLUDE[cc-preview-features-definition](../includes/cc-preview-features-top-note.md)]
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
 Business rules in Power Automate Process Mining allow you to define and evaluate specific behavioral patterns or KPIs in your process. Business rules are re-evaluated with each data refresh. Using the **Process mining trigger** in Power Automate flow definition allows you to model and execute custom actions after each data refresh, based on the result of business rules evaluation.
 
@@ -26,7 +26,7 @@ To achieve this, it is necessary to:
 1. Create a case scope business rule in Power Automate Process Mining
 2. Create an automated cloud flow triggered by a process mining trigger in Power Automate
 
-[!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Creating a case scope business rule
 
