@@ -84,9 +84,9 @@ To execute an action on top of business rule evaluation, you need to create an a
 4. The Power Automate editor will open, with the flow in *Edit* mode
 5. The step at the top of the flow is the trigger. If the trigger is not correctly configured, you will be visually notified with a warning icon and text **Invalid parameters**. Click on the step
 6. In the configuration panel, setup the connection to Process Mining and set the manadatory parameters
-    a) Select your **process**
-    b) Select the **process view** to which the business rule will be applied (learn more about views in [Manage views](/power-automate/minit/process-hub#manage-views))
-    c) Select your newly created **business rule**
+    - Select your **process**
+    - Select the **process view** to which the business rule will be applied (learn more about views in [Manage views](/power-automate/minit/process-hub#manage-views))
+    - Select your newly created **business rule**
 
 :::image type="content" source="media/process-mining-trigger-action/flow-trigger-config.png" alt-text="Screenshot showing the correctly configured trigger action and configuration panel.":::
 
