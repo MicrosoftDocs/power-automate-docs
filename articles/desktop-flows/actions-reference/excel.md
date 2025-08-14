@@ -28,6 +28,8 @@ To read and extract data from an Excel document, use the **Read from Excel works
 
 :::image type="content" source="media\excel\read-from-excel-action-properties.png" alt-text="Screenshot of the Read from Excel worksheet action.":::
 
+
+
 The “Get cell(s) contents as” parameter determines how the value from an Excel cell is interpreted and returned in Power Automate for desktop. You can choose from the following options:
 - Typed values
   - Interprets the cell’s data type (e.g., DateTime, numeric, Boolean) and returns the value using the same type. This ensures consistency with how Excel internally stores the data.
@@ -773,7 +775,7 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 |Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The cell row (single cell's Value) or first row number|
 |End column|No|[Text value](../variable-data-types.md#text-value)||The last column as a numeric value or a letter|
 |End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number|
-|Get cell contents as text|N/A|[Typed values,Plain text,Formatted text values]|Typed values|Specify whether to retrieve the content of the cells purely as text or as the closest matching type such as Date Time for dates, Numeric for numbers, and so on|
+|Get cell contents as text|N/A|[Typed values,Plain text,Formatted text values]|Typed values|Specify whether to retrieve the content of the cell(s) as the closest matching type such as Date Time for dates, Numeric for numbers and so on, purely as text, or as formatted cell text.|
 |First line of range contains column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to consider the first row as column names. In this case, the names won't be read as data into the table and later actions can search the data by column names.|
 
 ### Variables produced
@@ -1157,4 +1159,5 @@ When the **Get cell contents as text** option is enabled in the **Read from Exce
 To avoid this, use the **Resize columns/rows** action. If the **Get cell contents as text** option is not used, the data fetched is the raw cell values, regardless of how they are displayed or formatted in the worksheet. This means there is no need to use the **Resize columns/rows** action. For date values, the time will be appended because the date data type includes time.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 
