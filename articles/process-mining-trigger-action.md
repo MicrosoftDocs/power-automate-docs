@@ -33,7 +33,7 @@ To achieve this, you need to do the following:
 
 *Case scope business rule* is a rule evaluated in the scope of a case (process instance identified by a unique case ID). For each case that meets the criteria specified by the rule, there's an evaluation result and an associated severity.
 
-Learn more about business rules and steps for how to create a case scope business rule in [Business rules](/minit/business-rules).
+Learn more about business rules and steps for how to create a case scope business rule in [Business rules](minit/business-rules.md).
 
 From the best practice perspective, there are two recommended approaches to creating a case scope business rule&mdash;behavior deviation and KPI based approach. For the description of both approaches, this article uses an example from invoice approval process.
 
@@ -96,12 +96,12 @@ To execute an action on top of business rule evaluation, you need to create an a
 1. Select the card.
 1. In the configuration panel, set up the connection to Process Mining and set the mandatory parameters:
     1. Select your **process**.
-    1. Select the **process view** to which the business rule will be applied. Learn more about views in [Manage views](minit/process-hub#manage-views).
+    1. Select the **process view** to which the business rule will be applied. Learn more about views in [Manage views](minit/process-hub.md#manage-views).
     1. Select your newly created **business rule**.
 
     :::image type="content" source="media/process-mining-trigger-action/flow-trigger-config.png" alt-text="Screenshot showing the correctly configured trigger action and configuration panel.":::
 
-1. To further configure your cloud flow, follow the procedure in [Configure your cloud flow in the designer](get-started-logic-flow?tabs=without-copilot%2Cnew-designer#configure-your-cloud-flow-in-the-designer).
+1. To further configure your cloud flow, follow the procedure in [Configure your cloud flow in the designer](get-started-logic-flow?tabs=without-copilot%2Cnew-designer.md#configure-your-cloud-flow-in-the-designer).
 1. When you want to access the data supplied to the flow from Process Mining, select the lightning bolt icon to the right. This shows you the available options.
 
     The options are contextually filtered to show the ones relevant for the context of the action you're configuring. Select **Show more** to see all options.
@@ -111,7 +111,7 @@ To execute an action on top of business rule evaluation, you need to create an a
 > [!NOTE]
 > If you select a data field from the case details, the Power Automate flow editor automatically encapsulates the activity into a `For-Each` activity to iterate over all the cases in the dataset.
 
-The Process Mining trigger fires with each data refresh, no matter if it's [manual, scheduled, or custom triggered refresh](process-mining-data-source?branch=main#refresh-data).
+The Process Mining trigger fires with each data refresh, no matter if it's [manual, scheduled, or custom triggered refresh](process-mining-data-source.md#refresh-data).
 There are two sets of data structures available to you related to the left and right sides of the screen.
 
 **body/businessRuleSummaryStatistics**: Summary of the business rule evaluation outcome (summary on left side)
