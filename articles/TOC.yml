@@ -918,9 +918,7 @@
         href: process-mining-fabric-semantic-model.md
       - name: Datetime hierarchy in semantic model in Fabric workspace
         href: process-mining-fabric-datetime-hierarchy.md
-    - name: Actionable insights
-      items:
-      - name: Triggering actions using business rules and flows (preview)
+    - name: Trigger actions with business rules and flows (preview)
         href: process-mining-trigger-action.md
     - name: Application lifecycle management (ALM)
       items:
