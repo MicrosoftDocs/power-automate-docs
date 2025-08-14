@@ -89,9 +89,8 @@ To execute an action on top of business rule evaluation, you need to create an a
 1. Create an automated cloud flow. Learn how to do this in [Create a cloud flow in Power Automate](get-started-logic-flow.md).
 1. When selecting a trigger, search for **process mining**.
 1. Select the **When a Process data is refreshed** trigger subtitled **Process Mining**.
-1. The Power Automate editor opens with the flow in edit mode.
 
-    The card at the top of the flow is the trigger. If the trigger isn't correctly configured or is incomplete, a warning icon displays along with the message, **Invalid parameters**.
+    The Power Automate editor opens with the flow in edit mode. The card at the top of the flow is the trigger. If the trigger isn't correctly configured or is incomplete, a warning icon displays along with the message, **Invalid parameters**.
 
 1. Select the card.
 1. In the configuration panel, set up the connection to Process Mining and set the mandatory parameters:
@@ -101,7 +100,8 @@ To execute an action on top of business rule evaluation, you need to create an a
 
     :::image type="content" source="media/process-mining-trigger-action/flow-trigger-config.png" alt-text="Screenshot showing the correctly configured trigger action and configuration panel.":::
 
-1. To further configure your cloud flow, follow the procedure in [Configure your cloud flow in the designer](get-started-logic-flow?tabs=without-copilot%2Cnew-designer.md#configure-your-cloud-flow-in-the-designer).
+1. To further configure your cloud flow, follow the procedure in [Configure your cloud flow in the designer](get-started-logic-flow.md#configure-your-cloud-flow-in-the-designer).
+
 1. When you want to access the data supplied to the flow from Process Mining, select the lightning bolt icon to the right. This shows you the available options.
 
     The options are contextually filtered to show the ones relevant for the context of the action you're configuring. Select **Show more** to see all options.
