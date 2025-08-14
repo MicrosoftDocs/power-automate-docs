@@ -52,11 +52,14 @@ Select **Show advanced options** to set more properties that further define the 
 
 The advanced options are:
 
+- Return Full Metadata
 - Select columns
 - Expand Query
 - Partition Id
 
-![Unique column names.](../media/dataverse-how-tos/get-row-by-id-action-complete-show-advanced-options.png "Unique column names")
+### Return Full Metadata
+
+This setting controls whether to load all columns from the table or just the essential ones for better performance. If you don’t set it, full metadata will still be returned automatically if your flow uses dynamic content or expressions that need it.
 
 ### Select columns
 
