@@ -5,12 +5,14 @@ suite: flow
 author: kisubedi
 ms.topic: article
 ms.date: 04/01/2025
+ms.update-cycle: 180-days
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Common ways to use a form in a flow

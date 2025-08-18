@@ -11,6 +11,7 @@ ms.reviewer: matp
 contributors:
 search.audienceType: 
   - admin
+ms.custom: sfi-image-nochange
 ---
 
 # Machine group certificate renewal for admins

@@ -894,6 +894,20 @@
       "source_path": "articles/contextual-help-bot.md",
       "redirect_url": "../power-automate/self-help",
       "redirect_document_id": false
+  },
+    {
+      "source_path": "articles/get-started-tutorial.md",
+      "redirect_url": "../power-automate/get-started-with-cloud-flows",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/get-started-with-copilot.md",
+      "redirect_url": "../create-cloud-flow-using-copilot",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/triggers-troubleshoot.md",
+      "redirect_url": "/troubleshoot/power-platform/power-automate/flow-run-issues/triggers-troubleshoot"
     }
   ]
 }

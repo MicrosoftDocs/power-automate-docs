@@ -16,6 +16,9 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom:
+  - sfi-image-nochange
+  - sfi-ropc-nochange
 ---
 
 # HTTP actions

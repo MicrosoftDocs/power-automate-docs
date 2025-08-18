@@ -4,8 +4,8 @@ description: Learn how to run desktop flows in picture-in-picture mode.
 author: nikosmoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
+ms.date: 08/07/2025
 ms.topic: how-to
-ms.date: 09/30/2024
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -15,6 +15,7 @@ search.app:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-ropc-nochange
 ---
 
 # Run desktop flows in picture-in-picture
@@ -143,6 +144,9 @@ When set to **Custom**, you can enter a custom user data folder to be used by th
 - The default timeout to start a process in a picture-in-picture is 120 seconds. If the sign in takes longer than that, a timeout error is thrown.
 - Picture-in-picture asks for credentials every time it starts in case the following Windows policy is set to *Disabled*:
   - `Local Group Policy\Computer Configuration\Administrative Templates\System\Credential Delegation\Allow delegating default credentials`
+  - Certain Windows policies and configurations might not let picture-in-picture automatically connect without asking for credentials. To work around this issue, don't close the picture-in-picture session after every flow run. Use the same session for consecutive flow runs to avoid entering credentials every time. Asking for credentials is expected behavior for picture-in-picture and complies with the local security policies of the machine.
+- If the picture-in-picture functionality doesn't work, troubleshoot by checking whether you can use Remote Desktop to connect to the machine running Power Automate for desktop from another machine and connect from the local machine to other machines.
+- Issues might occur when several VPN clients are used in a picture-in-picture session. The identified issues are related to app sign out, and the VPN client identified so far is Zscaler.
 - If smartcard is used to sign in to Windows, the following policy should be set to *Not Configured* or *Disabled*:
   - `Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection\Do not allow smart card device redirection`
 
