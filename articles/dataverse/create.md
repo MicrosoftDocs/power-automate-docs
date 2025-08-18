@@ -46,3 +46,9 @@ Follow these steps to add a new account in Dataverse when you receive an email t
 >You can use outputs from previous triggers and actions in the **Dynamic content** selector, as shown in the following image, or modify them by building an expression as outlined in [Use expressions in flow actions](https://make.powerautomate.com/blog/use-expressions-in-actions/).<!-- Edit note: Try to avoid use of en-us. -->
 
    ![Dynamic content.](../media/add-row/dynamic-content.png "Dynamic content")
+
+## Advanced options
+
+### Return Full Metadata
+
+This setting controls whether to load all columns from the table or just the essential ones for better performance. If you don’t set it, full metadata will still be returned automatically if your flow uses dynamic content or expressions that need it.
