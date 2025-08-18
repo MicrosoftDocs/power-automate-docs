@@ -91,6 +91,10 @@ You can set advanced options directly on the **List rows** card. To see the opti
 
 ---
 
+### Return Full Metadata
+
+This setting controls whether to load all columns from the table or just the essential ones for better performance. If you don’t set it, full metadata will still be returned automatically if your flow uses dynamic content or expressions that need it.
+
 ### Select columns
 
 Enter a comma-separated list of columns to return, such as "name,createdon,preferredcontactmethodcode,emailaddress1,telephone1" for the Account table.

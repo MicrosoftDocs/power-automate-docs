@@ -112,7 +112,8 @@ To execute an action on top of business rule evaluation, you need to create an a
 > If you select a data field from the case details, the Power Automate flow editor automatically encapsulates the activity into a `For-Each` activity to iterate over all the cases in the dataset.
 
 The Process Mining trigger fires with each data refresh, no matter if it's [manual, scheduled, or custom triggered refresh](process-mining-data-source.md#refresh-data).
-There are two sets of data structures available to you related to the left and right sides of the screen.
+
+There are two sets of data structures available to you related to the left and right sides of the screen as described in the [Check the business rule result](#check-the-business-rule-result) section of this article.
 
 **body/businessRuleSummaryStatistics**: Summary of the business rule evaluation outcome (summary on left side)
 
