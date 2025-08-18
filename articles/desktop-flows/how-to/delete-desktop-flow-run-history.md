@@ -13,6 +13,7 @@ contributors:
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom: sfi-image-nochange
 ---
 
 # Delete desktop flow run history data  

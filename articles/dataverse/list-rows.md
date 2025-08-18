@@ -5,10 +5,12 @@ author: radioblazer
 ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: how-to
-ms.date: 04/01/2025
+ms.date: 08/12/2025
+ms.update-cycle: 180-days
 ms.collection: bap-ai-copilot
 search.audienceType: 
   - maker
+ms.custom: sfi-image-nochange
 ---
 
 # Use lists of rows in flows
@@ -17,14 +19,14 @@ Use the **List rows** action to retrieve multiple rows at once from Microsoft Da
 
 ## Get a list of rows
 
-Follow these steps to add the **List rows** action to your flow to return [up to 5,000 accounts](/powerapps/developer/common-data-service/webapi/query-data-web-api) from the **Accounts** table in Dataverse.
+Follow these steps to add the **List rows** action to your flow to return [up to 5,000 accounts](/power-apps/developer/data-platform/webapi/query/overview) from the **Accounts** table in Dataverse.
 
 [!INCLUDE[designer-tab-experience](../includes/designer-tab-experience.md)]
 
 # [New designer](#tab/new-designer)
 
 1. Select the plus sign (**+**) > **Add an action**.
-1. On the **Add an action** sceen, enter **list rows** in the **Search** field.
+1. On the **Add an action** screen, enter **list rows** in the **Search** field.
 1. Under **Microsoft Dataverse**, select **List rows (Preview)**.
 1. On the **Parameters** tab to the left, select **Accounts** in the **Table Name** dropdown menu.
 1. Close the screen by selecting (**<<**).
@@ -44,7 +46,7 @@ Follow these steps to add the **List rows** action to your flow to return [up to
 
 To get more than 5,000 rows from a query automatically, turn on the **Pagination** feature from **Settings**.
 
-When pagination is set and the amount of rows exceeds that number of the threshold configured, the response won't include the **_@odata.nextLink_** parameter to request the next set of rows. Turn pagination off so that the response includes the **_@odata.nextLink_** parameter that can be used to request the next set of rows. Go to [Skip token](#skip-token) to learn how to use it.
+When pagination is set and the number of rows exceeds that number of the threshold configured, the response won't include the **_@odata.nextLink_** parameter to request the next set of rows. Turn off pagination so that the response includes the **_@odata.nextLink_** parameter that can be used to request the next set of rows. Go to [Skip token](#skip-token) to learn how to use it.
 
 [Content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) apply to ensure general service guarantees.
 
@@ -52,7 +54,7 @@ When pagination is set and the amount of rows exceeds that number of the thresho
 
 1. Select the **List rows** card.
 1. On the pane to the left, select the **Settings** tab > **Networking**.
-1. Move the **Pagination** slider to the **On** position if it's not already turned on.
+1. Move the **Pagination** slider to the **On** position if not already turned on.
 1. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000.
 
     Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
@@ -61,7 +63,7 @@ When pagination is set and the amount of rows exceeds that number of the thresho
 
 1. In the upper-right corner of the **List rows** card, select the menu (...).
 1. Select **Settings**.
-1. Move the **Pagination** slider to the **On** position if it's not already turned on.
+1. Move the **Pagination** slider to the **On** position if not already turned on.
 1. In **Threshold**, enter the maximum number of rows requested. The maximum configurable threshold is 100,000.
 
     Internally, this number is rounded off in increments of the default page size. For example, if that page size is 5,000, and you enter 7,000, the number of rows returned is 10,000.
@@ -74,7 +76,7 @@ The advanced options for the **List Rows** action allow you to sort, filter, arr
 
 # [New designer](#tab/new-designer)
 
-You can set options inthe action configuration pane.
+You can set options in the action configuration pane.
 
 1. To see the options, select the **List rows** card.
 1. In the **Parameters** tab, select an advanced option in the **Add new parameters** dropdown menu.
@@ -101,10 +103,9 @@ Enter a comma-separated list of columns to return, such as "name,createdon,prefe
 
 Use to define an OData-style filter expression to narrow down the set of rows that Dataverse returns, such as "createdon ge 2021-01-01T00:00:00-00:00" for rows with **createdon** greater than or equal to the year 2021.
 
-Learn how to use [standard filter operators](/powerapps/developer/data-platform/webapi/query-data-web-api#standard-filter-operators) and [query functions](/powerapps/developer/data-platform/webapi/query-data-web-api#standard-query-functions)
-to construct **Filter Query** expressions.
+Learn how to [filter rows](/power-apps/developer/data-platform/webapi/query/filter-rows) to construct **Filter Query** expressions.
 
-Certain characters, such as **&**, **#**, and **+** need to be replaced with their URL-encoded equivalent. More information: [URL encode special characters](/powerapps/developer/data-platform/webapi/query-data-web-api#url-encode-special-characters)
+Certain characters, such as **&**, **#**, and **+** need to be replaced with their URL-encoded equivalent. More information: [URL encode special characters](/power-apps/developer/data-platform/webapi/query/filter-rows#url-encode-special-characters)
 
 > [!IMPORTANT]
 > Filter expressions can't contain this string, **\$filter=**, because it only applies when you use the APIs directly.
@@ -123,7 +124,7 @@ There are two types of navigation properties that you can use in **Expand Query*
 
    1. *Collection-valued* navigation properties correspond to one-to-many or many-to-many relationships.
 
-If you include only the name of the navigation property, you’ll receive all the properties for the related rows. To learn more, see [Retrieve related table rows with a query](/powerapps/developer/data-platform/webapi/retrieve-related-entities-query).
+If you include only the name of the navigation property, you receive all the properties for the related rows. Learn more in [Join tables using OData](/power-apps/developer/data-platform/webapi/query/join-tables).
 
 To use it in a flow step, enter this Odata expression in the **Expand Query** field: `primarycontactid(contactid,fullname)`. This is how to get the *contactid* and *fullname* columns for the *primarycontactid* of each *account*.
 
@@ -133,53 +134,56 @@ Use to indicate the specific number of rows for Dataverse to return. Here's an e
 
 ### Fetch Xml Query
 
-[Aggregation queries](/powerapps/developer/data-platform/use-fetchxml-aggregation) aren't currently supported when using the **List rows** action with FetchXML queries. However, the distinct operator is supported.
+[Aggregation queries](/power-apps/developer/data-platform/fetchxml/aggregate-data) aren't currently supported when using the **List rows** action with FetchXML queries. However, the distinct operator is supported.
 
 # [New designer](#tab/new-designer)
 
-Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML.
+Use a [Dataverse-style FetchXML query](/power-apps/developer/data-platform/fetchxml/overview), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML.
+
+> [!IMPORTANT]
+> Pagination setting doesn't support FetchXml queries. To request more than 5,000 rows, you need to manage [paging directly with the FetchXml](/power-apps/developer/data-platform/fetchxml/page-results?tabs=webapi) query.
 
 Example FetchXML query for the Account table:
 
 ```xml
 <fetch count="10">
-	<entity name="account">
-		<attribute name="name" />
-		<attribute name="preferredcontactmethodcode" />
-		<attribute name="emailaddress1" />
-		<attribute name="telephone1" />
-   		<link-entity name="contact" to="primarycontactid" from="contactid">
-      			<attribute name="fullname" />
-		</link-entity>
-		<filter> 
-			<condition attribute="createdon" operator="ge" value="2021-01-01T00:00:00-00:00" />
-		</filter>
-		<order attribute="name" descending="true" />
-	</entity>
+   <entity name="account">
+      <attribute name="name" />
+      <attribute name="preferredcontactmethodcode" />
+      <attribute name="emailaddress1" />
+      <attribute name="telephone1" />
+         <link-entity name="contact" to="primarycontactid" from="contactid">
+               <attribute name="fullname" />
+      </link-entity>
+      <filter> 
+         <condition attribute="createdon" operator="ge" value="2021-01-01T00:00:00-00:00" />
+      </filter>
+      <order attribute="name" descending="true" />
+   </entity>
 </fetch>
 ```
 
-As the distinct operator isn't currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](../data-operations.md#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](../create-variable-store-values.md#initialize-a-variable) with the expression *union(body(‘Select’),body(‘Select’))* to get an array with distinct rows.
+As the `distinct` operator isn't currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](../data-operations.md#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](../create-variable-store-values.md#initialize-a-variable) with the expression *union(body('Select'),body('Select'))* to get an array with distinct rows.
 
 # [Classic designer](#tab/classic-designer)
 
-Use a [Dataverse-style FetchXML query](/powerapps/developer/common-data-service/use-fetchxml-construct-query), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML.
+Use a [Dataverse-style FetchXML query](/power-apps/developer/data-platform/fetchxml/overview), which allows more flexibility in building custom queries. These queries can be useful when you work with a table that has multiple related tables, or handling pagination. The following screenshot shows how to use FetchXML.
 
 Type the following in the **Fetch Xml Query** field.
 
 ![List accounts example with FetchXML.](../media/list-rows/fetch-sml-example.png)
 
-As the distinct operator isn't currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](../data-operations.md#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](../create-variable-store-values.md#initialize-a-variable) with the expression *union(body(‘Select’),body(‘Select’))* to get an array with distinct rows.
+As the distinct operator isn't currently supported directly in FetchXML queries from the List rows action, the [union function](/azure/logic-apps/workflow-definition-language-functions-reference#union) can be used to remove duplicate rows. For example, you can use the [Select action](../data-operations.md#use-the-select-action) to transform the response of the List rows connection to the specific array format you need, then create a [variable](../create-variable-store-values.md#initialize-a-variable) with the expression *union(body('Select'),body('Select'))* to get an array with distinct rows.
 
 ---
 
 ### Skip token
 
-Because Power Automate applies [content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) to ensure general service guarantees, it's often useful to use *pagination* to return a smaller number of rows in a batch, rather than the default [limits on number of table rows returned](/power-apps/developer/data-platform/webapi/query-data-web-api#limits-on-number-of-table-rows-entities-returned).
+Because Power Automate applies [content throughput limits](../limits-and-config.md#content-throughput-limits) and [message size limits](../limits-and-config.md#message-size) to ensure general service guarantees, it's often useful to use *pagination* to return a smaller number of rows in a batch, rather than the default [limits on number of table rows returned](/power-apps/developer/data-platform/webapi/query/overview#limit-the-number-of-rows).
 
 The default page limit of 5,000 rows applies if you don't use pagination.
 
-To use it, implement a loop to parse the *\@odata.nextLink* value in the JSON response, extract the **skip token**, and then send another request until you've listed the number of rows that you need.
+To use it, implement a loop to parse the *\@odata.nextLink* value in the JSON response, extract the **skip token**, and then send another request until you listed the number of rows that you need.
 
 ```json
 HTTP/1.1 200 OK  
@@ -213,7 +217,7 @@ Preference-Applied: odata.maxpagesize=3
 
 ### Partition ID
 
-An option to specify the partitionId while retrieving data for NoSQL tables. To learn more, see [Improve performance using storage partitions when accessing table data](/powerapps/developer/data-platform/org-service/azure-storage-partitioning-sdk).
+An option to specify the `partitionId` while retrieving data for elastic tables. To learn more, see [Partitioning and horizontal scaling for elastic tables](/power-apps/developer/data-platform/elastic-tables#partitioning-and-horizontal-scaling).
 
 ## Related information
 

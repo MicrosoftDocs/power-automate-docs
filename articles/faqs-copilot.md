@@ -1,7 +1,8 @@
 ---
 title: FAQ for Copilot in cloud flows
 description: This FAQ discusses copilot in cloud flows and the key considerations for making use of this technology responsibly.
-ms.date: 04/04/2025
+ms.date: 07/11/2025
+ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: faq
@@ -65,7 +66,7 @@ If you're using the new designer, all changes done by copilot should be reviewed
 
 ## Related information
 
-- [Get started with Copilot in cloud flows](get-started-with-copilot.md)
+- [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)
 - [Use Copilot to analyze desktop flow activity (preview)](./desktop-flows/use-copilot-to-analyze-desktopflow-activity.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 

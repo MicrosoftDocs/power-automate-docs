@@ -12,10 +12,12 @@ ms.topic: troubleshooting-general
 ms.date: 06/11/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
-ms.custom: bap-template
 search.audienceType: 
   - flowmaker
   - enduser
+ms.custom:
+  - bap-template
+  - sfi-image-nochange
 ---
 
 # Troubleshoot issues in the process mining capability

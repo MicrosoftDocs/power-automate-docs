@@ -5,11 +5,12 @@ author: kenseongtan
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 03/10/2025
+ms.date: 07/24/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
 - DanaMartens
+ms.custom: sfi-image-blocked
 ---
 
 # Hosted machines
@@ -52,14 +53,6 @@ To evaluate hosted machines, you need one of the following trial licensing optio
 - Use the **Power Automate Hosted Process** license
 
     The Power Automate Hosted Process license has trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home) and assign Power Automate Hosted Process capacity to the targeted environment.
-
-- Use the **90-days self-assisted premium trial.**
-
-  > [!NOTE]
-  > This trial licensing option for hosted machines is suspended until further notice.
-
-    Trial users are granted the capacity of one hosted machine per tenant. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
-
 
 ## Prerequisites
 
@@ -112,6 +105,10 @@ To find more information about the Microsoft Entra and Intune requirements, go t
     | Azure Virtual Desktop ARM Provider | 50e95039-b200-4007-bc97-8d5790743a63 |
 
     Follow the same instruction as for creating the Windows 365 application to check and create the service principals.
+
+### Other requirements
+
+If you use unattended mode, review the requirements to [run unattended desktop flows](run-unattended-desktop-flows.md)
 
 ### Get access to the default VM image
 
@@ -241,6 +238,24 @@ Custom VM images must meet the following requirements:
 - No recovery partition. To find more information about how to remove a recovery partition, go to [Windows Server command: delete partition](/windows-server/administration/windows-commands/delete-partition)
 - Default 64-GB OS disk size. The OS disk size is automatically adjusted to 256 GB
 - The image definition must have [trusted launch enabled as the security type](/azure/virtual-machines/trusted-launch)
+
+#### Use a specific version of Power Automate for desktop
+
+When you use custom VM images, the latest version of Power Automate for desktop installs automatically during hosted machine provisioning.
+
+To use a specific version of Power Automate for desktop:
+
+1. Install the version of Power Automate for desktop you want, and include it in your custom VM image.
+1. Add the following registry key to the image:
+
+    | Hive | Key | Name | Type | Value |
+    |---|---|---|---|---|
+    | HKEY_LOCAL_MACHINE | SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global | UseInstalledPADForHosted | String | True |
+
+    > [!CAUTION]
+    > Modifying Windows registry settings incorrectly can cause serious problems that might prevent your computer from booting properly. Microsoft can't guarantee that any problems resulting from the configuring of registry settings can be solved. Modification of these settings is at your own risk. We strongly recommend that you [back up your Windows registry](https://support.microsoft.com/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692) before proceeding.
+
+This configuration ensures that your hosted machine uses the version of Power Automate for desktop included in your custom VM image.
 
 ### Share the reader permission on Azure subscription with Windows 365 service principal
 
