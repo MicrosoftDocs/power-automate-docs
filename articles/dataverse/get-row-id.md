@@ -42,7 +42,7 @@ Follow these steps to use **Row ID** to get a row from the Accounts table.
    ![Completed Get row by ID card.](../media/dataverse-how-tos/get-row-by-id-action-complete.png "Completed Get row by ID card")
 
    >[!NOTE]
-   >The **Row ID** column is the unique ID of the row that you are retrieving, as shown in the following image. You can get the row Id by using a query in the actions in your flow before you need to use the row id.
+   >The **Row ID** column is the unique ID of the row that you are retrieving, as shown in the following image. You get the row ID by using a query in the actions in your flow before you need to use the row ID.
 
 ## Advanced options
 
@@ -55,15 +55,15 @@ The advanced options are:
 - Return Full Metadata
 - Select columns
 - Expand Query
-- Partition Id
+- Partition ID
 
 ### Return Full Metadata
 
-This setting controls whether to load all columns from the table or just the essential ones for better performance. If you don’t set it, full metadata will still be returned automatically if your flow uses dynamic content or expressions that need it.
+This setting controls whether to load all columns from the table or just the essential ones for better performance. If you don't set it, full metadata still returns automatically if your flow uses dynamic content or expressions that need it.
 
 ### Select columns
 
-Sometimes it's necessary to optimize the amount of data retrieved in a flow, especially if you're performing this step inside a loop. Instead of retrieving all columns, you can specify which ones you want to retrieve by entering unique names of those columns. Separate columns with a comma.
+Sometimes it's necessary to optimize the amount of data retrieved in a flow, especially if you're performing this step inside a loop. Instead of retrieving all columns, specify which ones you want to retrieve by entering unique names of those columns. Separate columns with a comma.
 
 ### Expand Query
 
@@ -75,8 +75,8 @@ Use **Expand Query** to specify an OData-style expression that defines which dat
 - *Collection-valued* navigation properties correspond to one-to-many or
     many-to-many relationships.
 
-If you include only the name of the navigation property, you’ll receive all the properties for the related rows. To learn more, see [Retrieve related table rows with a query](/powerapps/developer/data-platform/webapi/query-data-web-api#retrieve-related-tables-with-query).
+If you include only the name of the navigation property, you get all the properties for the related rows. To learn more, see [Retrieve related table rows with a query](/powerapps/developer/data-platform/webapi/query-data-web-api#retrieve-related-tables-with-query).
 
-To use the **Expand Query** box in a flow step, enter an Odata expression as shown in the following image. This example shows how to get the *contactid* and *fullname* columns for the *primarycontactid* of the *account*.
+To use the **Expand Query** box in a flow step, enter an OData expression as shown in the following image. This example shows how to get the `contactid` and `fullname` columns for the`primarycontactid` of the *account*.
 
 ![Example of Expand Query expression.](../media/dataverse-how-tos/get-row-by-id-action-expand-query.png "Example of Expand Query expression")
