@@ -48,6 +48,10 @@ If you opted for the public preview, the **Desktop flow actions in DLP** setting
 
 You can now classify desktop flow action groups when you create a data policy.
 
+> [!IMPORTANT]
+>
+> - If you began using DLP for Desktop flows prior to 2022, you might notice that the tenant setting appears as 'false' in PowerShell even though it's enabled in the Power Platform Admin Center (PPAC) and DLP connectors are active within your DLP policies.
+
 ### Create a DLP policy with desktop flow restrictions
 
 When admins edit or create a policy, desktop flow action groups are added to the default group, and the policy is applied after it's saved. The policy is suspended if the default group is set to **Blocked** and the desktop flows are running in the target environments.
