@@ -4,7 +4,7 @@ description: Learn how your Power Automate cloud flows can generate savings to t
 author: cvassallo
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.date: 05/19/2025
+ms.date: 08/20/2025
 ms.author: cvassallo
 ms.reviewer: angieandrews
 ms.topic: article
