@@ -83,7 +83,7 @@ You will need a solution with two flows.
 1. Pick the child flow that you created earlier.
 
    > [!NOTE]
-   > You only see the flows to which you have access and are located in a solution. Child flows must also have one of the three triggers mentioned previously.
+   > You only see the flows to which you have access and are located in a solution. Child flows must also have **Manually trigger a flow** trigger.
 
    ![Select the child flow to run.](./media/call-child-flow/select-child-flow.png "Select the child flow to run")
 
