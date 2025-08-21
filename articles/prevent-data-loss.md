@@ -4,8 +4,8 @@ description: Learn about data loss prevention policies for Power Automate.
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 07/30/2025
-ms.author: cgarty
+ms.date: 08/21/2025
+ms.author: trdehove
 author: ChrisGarty
 contributors:
   - ChrisGarty
@@ -46,6 +46,12 @@ By default, desktop flow action groups don't appear when you're creating a DLP p
 
 You can now classify desktop flow action groups when you create a data policy.
 
+> [!IMPORTANT]
+>
+> If you began using DLP for desktop flows before 2022, you might notice the following:
+>- The tenant setting appears as 'false' in PowerShell even though it's enabled in the Power Platform admin center, *and*
+>- DLP connectors are active within your DLP policies.
+
 ### Create a DLP policy with desktop flow restrictions
 
 When admins edit or create a policy, desktop flow action groups are added to the default group, and the policy is applied after it's saved. The policy is suspended if the default group is set to **Blocked** and the desktop flows are running in the target environments.
@@ -57,7 +63,7 @@ When your tenant is opted into the user experience in the Power Platform, your a
 :::image type="content" source="media/prevent-data-loss/prevent-dlp.png" alt-text="Screenshot of a DLP policy under construction in the Power Platform admin center.":::
 
 > [!WARNING]
-> When desktop flow modules are added to DLP policies, your tenant's desktop flows are evaluated against them and they're suspended if they're non-compliant. If your administrator creates or updates the DLP policy without noticing the new modules, desktop flows can be unexpectedly suspended.
+> When desktop flow modules are added to DLP policies, your tenant's desktop flows are evaluated against them, and they're suspended if they're non-compliant. If your administrator creates or updates the DLP policy without noticing the new modules, desktop flows can be unexpectedly suspended.
 
 ### Govern desktop flows outside of DLP
 
