@@ -212,7 +212,7 @@ Makers who have the latest Power Automate for desktop can't debug, run, or save 
 
 ### DLP reactivation
 
-If the DLP enforcement background job finds a desktop flow that no longer violates any DLP policy, then the background job automatically removes the suspension. Active cloud flows that were suspended in the previous 7 days will be re-activated automatically if they no longer violate any DLP policy.
+If the DLP enforcement background job finds a desktop flow that no longer violates any DLP policy, then the background job automatically removes the suspension. Active cloud flows that were suspended in the previous seven (7) days are re-activated automatically if they no longer violate any DLP policy.
 
 ## DLP enforcement change process
 
