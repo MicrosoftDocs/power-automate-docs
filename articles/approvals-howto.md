@@ -75,7 +75,7 @@ And here's how the approvers see it in a nicely formatted email in Outlook.
 
 ## Display approval date in my timezone  
   
-By default, approval emails display the **Date Created** field in GMT. There no way to change this field.  
+By default, approval emails display the **Date Created** field in GMT. There is no way to change this field.  
   
    ![GMT time displayed by default.](media/approvals-howto/gmt-time.png)
 
