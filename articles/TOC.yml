@@ -1216,6 +1216,8 @@
   items:
   - name: Power Automate sign-up FAQ
     href: organization-q-and-a.md
+  - name: Enable self-service disaster recovery
+    href: enable-self-service-disaster-recovery.md
   - name: Enable experimental features
     href: experimental-features.md
   - name: Pricing and billing
