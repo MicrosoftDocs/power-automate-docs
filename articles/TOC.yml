@@ -78,7 +78,7 @@
         href: publish-a-template.md
       - name: Turn a cloud flow on or off
         href: disable-flow.md
-      - name: Format data by examples
+      - name: Format data by examples [DEPRECATED]
         href: format-data-by-examples.md
     - name: Manage cloud flows
       items: 
