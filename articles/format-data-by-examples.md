@@ -88,6 +88,6 @@ Just provide an example and Power Automate suggests the right expression to achi
 
 ## Related information
 
-[Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md)
-
+- [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md)
+- [Deprecation of the format data by examples feature in Power Automate](/power-platform/important-changes-coming.md#deprecation-of-the-format-data-by-examples-feature-in-power-automate)
 
