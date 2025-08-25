@@ -7,7 +7,7 @@ ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 08/11/2025
+ms.date: 08/25/2025
 ms.author: angieandrews
 ---
 
@@ -193,4 +193,4 @@ Before you submit a support request, [check if the bug is a known issue](/power-
 
 ## Related information
 
-[Power Automate troubleshooting](/troubleshoot/power-platform/power-automate/welcome-power-automate?branch=main&branchFallbackFrom=pr-en-us-3421)
+[Power Automate troubleshooting](/troubleshoot/power-platform/power-automate/welcome-power-automate)
