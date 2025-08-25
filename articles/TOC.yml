@@ -1301,6 +1301,8 @@
       href: replace-dialogs.md
 - name: Find help and support
   items:
+  - name: Create an effective Power Automate support request
+    href: support-service-request.md
   - name: Get online help
     href: self-help.md
   - name: Blog
