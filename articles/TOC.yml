@@ -78,7 +78,7 @@
         href: publish-a-template.md
       - name: Turn a cloud flow on or off
         href: disable-flow.md
-      - name: Format data by examples
+      - name: Format data by examples [DEPRECATED]
         href: format-data-by-examples.md
     - name: Manage cloud flows
       items: 
@@ -916,6 +916,10 @@
         href: process-mining-fabric-workspace.md
       - name: Structure of semantic model in Fabric workspace
         href: process-mining-fabric-semantic-model.md
+      - name: Datetime hierarchy in semantic model in Fabric workspace
+        href: process-mining-fabric-datetime-hierarchy.md
+    - name: Trigger actions with business rules and flows (preview)
+      href: process-mining-trigger-action.md
     - name: Application lifecycle management (ALM)
       items:
       - name: ALM overview

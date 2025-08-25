@@ -4,8 +4,8 @@ description: Learn about data loss prevention policies for Power Automate.
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 07/30/2025
-ms.author: cgarty
+ms.date: 08/21/2025
+ms.author: trdehove
 author: ChrisGarty
 contributors:
   - ChrisGarty
@@ -35,9 +35,7 @@ Power Automate allows you to create and enforce DLP policies that classify deskt
 
 ### View desktop flow action groups
 
-By default, desktop flow action groups don't appear when you're creating a DLP policy. You need to turn on the **Show desktop flow actions in DLP policies** setting in your tenant settings.
-
-If you opted for the public preview, the **Desktop flow actions in DLP** setting is already enabled and can't be changed.
+By default, desktop flow action groups don't appear when you're creating a DLP policy. You need to turn on the **Show desktop flow actions in DLP policies** setting in your tenant settings. After this setting is enabled, it can't be changed.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. On the left side panel, select **Settings**.
@@ -47,6 +45,12 @@ If you opted for the public preview, the **Desktop flow actions in DLP** setting
     :::image type="content" source="media/prevent-data-loss/dlp-desktop-flows.png" alt-text="Screenshot of the DLP for desktop flows setting in the Power Platform admin center.":::
 
 You can now classify desktop flow action groups when you create a data policy.
+
+> [!IMPORTANT]
+>
+> If you began using DLP for desktop flows before 2022, you might notice the following:
+>- The tenant setting appears as 'false' in PowerShell even though it's enabled in the Power Platform admin center, *and*
+>- DLP connectors are active within your DLP policies.
 
 ### Create a DLP policy with desktop flow restrictions
 
@@ -59,7 +63,7 @@ When your tenant is opted into the user experience in the Power Platform, your a
 :::image type="content" source="media/prevent-data-loss/prevent-dlp.png" alt-text="Screenshot of a DLP policy under construction in the Power Platform admin center.":::
 
 > [!WARNING]
-> When desktop flow modules are added to DLP policies, your tenant's desktop flows are evaluated against them and they're suspended if they're non-compliant. If your administrator creates or updates the DLP policy without noticing the new modules, desktop flows can be unexpectedly suspended.
+> When desktop flow modules are added to DLP policies, your tenant's desktop flows are evaluated against them, and they're suspended if they're non-compliant. If your administrator creates or updates the DLP policy without noticing the new modules, desktop flows can be unexpectedly suspended.
 
 ### Govern desktop flows outside of DLP
 
@@ -206,7 +210,7 @@ Makers who have the latest Power Automate for desktop can't debug, run, or save 
 
 ### DLP reactivation
 
-If the DLP enforcement background job finds a desktop flow that no longer violates any DLP policy, then the background job automatically removes the suspension. However, the DLP enforcement background job doesn't automatically unsuspend cloud flows.
+If the DLP enforcement background job finds a desktop flow that no longer violates any DLP policy, then the background job automatically removes the suspension. Active cloud flows that were suspended in the previous seven (7) days are re-activated automatically if they no longer violate any DLP policy.
 
 ## DLP enforcement change process
 
