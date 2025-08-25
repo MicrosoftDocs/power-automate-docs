@@ -2,13 +2,16 @@
 title: Create an effective Power Automate support request
 description: Learn how to write a clear Power Automate support request so Microsoft support can help you quickly.
 suite: flow
-author: v-aangie
+author: akshetty
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 08/25/2025
-ms.author: angieandrews
+ms.author: akshetty
+ms.contributors:
+  - akshetty
+  - nansari
 ---
 
 # Create an effective Power Automate support request
