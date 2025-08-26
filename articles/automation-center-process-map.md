@@ -121,7 +121,7 @@ Enable advanced insights to unlock enterprise‑grade analytics powered by Proce
 
 | Issue | Resolution |
 |-------|------------|
-| I just clicked on or enabled advanced insights but don't see data | Make sure you've set the right date filter for your scenario. Also, if your flow runs are less than 48 hours old, they aren’t considered for the analysis yet. Metrics and data will appear only after the runs are older than 48 hours. |
+| I just clicked on insights view or enabled advanced insights but don't see data | Make sure you've set the right date filter for your scenario. Also, if your flow runs are less than 48 hours old, they aren’t considered for the analysis yet. Metrics and data will appear only after the runs are older than 48 hours. |
 | Can’t enable advanced insights | You likely lack Process Mining permissions or capacity. Ask your admin to grant access and ensure capacity is available in the environment |
 | Problems with advanced analytics panel | If you **accidentally** changed the process mining process within the Process Mining suite that now causes issues in the process map’s advanced analytics panel, you could delete the project in Process Mining and re-enable advanced insights. Do this **only if the changes weren’t intentional**, as deleting the project **removes all modifications you've done**. |
 
