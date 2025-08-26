@@ -50,15 +50,18 @@ Insights (preview) surface the health and performance of your end‑to‑end pro
 
 ### Prerequisites
 
+#### General
+
+- Power Automate Premium license with access to an environment.
+
 #### Basic insights (default)
 
 - A process map has been created for the top‑level cloud flow.
 - The environment stores run history in Dataverse (Automation Center data).
 - You have permission to view runs for the flows included in the process (for shared/admin scenarios some flow names may appear masked).
 
-#### Advanced insights prerequisites (Process Mining)
+#### Advanced insights prerequisites (using process mining)
 
-- Power Automate Premium license
 - Process Mining capacity of at least 50MB is available in the environment.
 - You have the required permissions to manually create new Process Mining projects in the environment.
 
