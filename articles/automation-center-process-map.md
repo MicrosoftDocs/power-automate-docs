@@ -57,7 +57,7 @@ Insights (preview) surface the health and performance of your end‑to‑end pro
 #### Basic insights (default)
 
 - A process map has been created for the top‑level cloud flow.
-- The environment stores run history in Dataverse (Automation Center data).
+- The environment stores run history in Dataverse (Automation Center).
 - You have permission to view runs for the flows included in the process (for shared/admin scenarios some flow names may appear masked).
 
 #### Advanced insights prerequisites (using process mining)
@@ -98,23 +98,32 @@ Basic insights have a single Overview tab scoped to the selected time range.
 
 Enable advanced insights to unlock enterprise‑grade analytics powered by Process Mining without the need for manual exports or lengthy data preparations. To enable advanced insights, select the Insights (preview) button on top and in the side-panel select Enable advanced insights. What you get with advanced insights:
 
-| Capability | Description |
-|------------|-------------|
-| Route (variant) analysis | Compare common paths vs. outliers to understand behavioral differences |
-| Bottlenecks & wait times | Identify delays across steps and variants to target hotspots |
-| Health trends | Track reliability over time and by route |
-| Performance–health correlations | Explore how duration correlates with error rate, connectors, or environment factors |
+| Metric | Description |
+|--------|-------------|
+| Runs | Total number of process runs in range |
+| Routes | Distinct process routes (variants) observed in range |
+| Avg run time | Average end‑to‑end duration per run |
+| Errors | Number of runs that ended in error |
+| Error rate | Percentage of runs that ended in error |
+
+#### Advanced panels
+
+| Panel | What it shows |
+|-------|----------------|
+| Process runs error trend | Error rate overlaid with run volume across time to reveal spikes and patterns |
+| Top flows by error volume | Flows ranked by number of error outcomes; use View all to expand the list |
+| Top error details | Clusters failures by error code/reason with percent of impacted runs and counts. Expand an error to see details such as most impacted route that will show on the process map and also see error first/last seen timestamps |
 
 > [!NOTE]
 > In high‑volume environments, preparing insights for large run sets can take longer. Also make sure you have enough Process mining capacity assigned in the environment.
 
 ### Troubleshooting
 
-| Issue | Resolution / Issue|
+| Issue | Resolution |
 |-------|------------|
 | I just clicked on or enabled advanced insights but don't see data | Make sure you've set the right date filter for your scenario. Also, if your flow runs are less than 48 hours old, they aren’t considered for the analysis yet. Metrics and data will appear only after the runs are older than 48 hours. |
 | Can’t enable advanced insights | You likely lack Process Mining permissions or capacity. Ask your admin to grant access and ensure capacity is available in the environment |
-| Problems with advanced analytics panel | If you **accidentally** changed the process mining process within the Process Mining suite that now causes issues in the process map’s advanced analytics panel, you can delete the project in Process Mining and re-enable advanced insights. Do this **only if the changes weren’t intentional**, as deleting the project **removes all modifications**. |
+| Problems with advanced analytics panel | If you **accidentally** changed the process mining process within the Process Mining suite that now causes issues in the process map’s advanced analytics panel, you could delete the project in Process Mining and re-enable advanced insights. Do this **only if the changes weren’t intentional**, as deleting the project **removes all modifications you've done**. |
 
 ## Create or view a process map
 
