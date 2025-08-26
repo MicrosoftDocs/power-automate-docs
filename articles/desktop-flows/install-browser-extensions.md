@@ -3,7 +3,7 @@ title: Install Power Automate browser extensions
 description: Learn how to install Power Automate for desktop browser extensions.
 author: mattp123
 ms.topic: how-to
-ms.date: 02/02/2023
+ms.date: 08/01/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -22,7 +22,7 @@ ms.custom:
 
 To automate web-related tasks, Power Automate provides a built-in Automation browser that's set up for you and works out of the box.
 
-Power Automate also supports the four most popular browsers: Microsoft Edge, Internet Explorer, Google Chrome, and Mozilla Firefox. These browsers need extra setup and extensions to work with Power Automate.
+Power Automate also supports the four most popular browsers: Microsoft Edge, Internet Explorer, Google Chrome, and Mozilla Firefox. These browsers need extra setup and extensions or WebDrivers to work with Power Automate for desktop.
 
 ## Install browser extensions
 
@@ -74,6 +74,67 @@ After Power Automate for desktop version 2.27, the Microsoft Edge, Google Chrome
 1. Select **Open**, and then select **Add**.
 
 Alternatively, you can launch Mozilla Firefox and drag the extension file to the browser window.
+
+## Set up WebDrivers
+
+You can perform web automation with WebDriver as an alternative to browser extensions. To use this method, manually install the appropriate WebDriver for your browser and ensure it matches the browser version. This section provides setup instructions for each supported browser.
+
+> [!IMPORTANT]
+> - Power Automate for desktop detects WebDrivers placed in the folder: `%LocalAppData%\Microsoft\Power Automate Desktop\WebDrivers`. Make sure you don't rename the executable and don't nest it inside additional subfolders.
+> - Only WebDrivers built for the x64 architecture are supported.
+
+### Set up WebDriver for Mozilla Firefox
+
+To use WebDriver with Mozilla Firefox, set up the geckodriver utility:
+
+1. Check your Firefox version
+    1. Open Firefox and go to `about:support` in the address bar.
+    1. Look for the **Version** value under the **Application Basics** section.
+
+1. Download the matching Geckodriver
+    1. Go to the official page for geckodriver: [https://firefox-source-docs.mozilla.org/testing/geckodriver/index.html](https://firefox-source-docs.mozilla.org/testing/geckodriver/index.html)
+    1. Find a version that supports your Firefox version (typically, the latest Geckodriver supports recent versions of Firefox).
+    1. Select the appropriate Geckodriver download link that's for the win-x64 architecture.
+
+1. Set up the Geckodriver
+    1. Extract the contents of the archive.
+    1. Create a new folder named **WebDrivers** under the following directory: **AppData\Local\Microsoft\Power Automate Desktop**
+    1. Copy the Geckodriver.exe file into the folder you created: "AppData\Local\Microsoft\Power Automate Desktop\WebDrivers"
+
+### Set up WebDriver for Google Chrome
+
+To use WebDriver with Google Chrome, set up a ChromeDriver version that matches your browser version.
+
+1. Check your Google Chrome version
+    1. Open Chrome and go to `chrome://settings/help` in the address bar.
+    1. Note the version number (for example, 138.0.7204.169).
+
+1. Download the matching ChromeDriver
+    1. Go to the official ChromeDriver page: [https://developer.chrome.com/docs/chromedriver](https://developer.chrome.com/docs/chromedriver).
+    1. On the downloads page, select the version that matches the version of your Chrome browser (typically the first three numbers of the version must match).
+    1. Select the appropriate ChromeDriver download link that is for the win-x64 architecture.
+
+1. Set up the ChromeDriver
+    1. After downloading the ZIP file, extract it.
+    1. Create a new folder named **WebDrivers** in the following directory: `AppData\Local\Microsoft\Power Automate Desktop`.
+    1. Copy the `chromedriver.exe` file into the folder you just created: `AppData\Local\Microsoft\Power Automate Desktop\WebDrivers`.
+
+### Set up the WebDriver for Microsoft Edge
+
+To use WebDriver as the browser interaction method for Microsoft Edge, you must install the Microsoft Edge WebDriver that matches your browser version:
+
+1. Check your Microsoft Edge version
+    1. Open Microsoft Edge and go to `edge://settings/help` in the address bar.
+    1. Note the four-part version number of your browser (for example, 138.0.3351.109).
+    1. Download the matching WebDriver
+    1. Go to the official Microsoft Edge WebDriver download page: [https://developer.microsoft.com/microsoft-edge/tools/webdriver/](https://developer.microsoft.com/microsoft-edge/tools/webdriver/)
+    1. In the Downloads section, find the version number that matches your Edge version (typically the first three numbers of the version must match).
+    1. Select the appropriate WebDriver download link for the win-x64 architecture
+    1. If you need an older version, select **go to full directory** under the Recent versions section to browse and download older releases.
+1. Set up the WebDriver
+    1. After downloading the WebDriver, extract the contents of the ZIP file.
+    1. Create a new folder named **WebDrivers** under the following directory: **AppData\Local\Microsoft\Power Automate Desktop**
+    1. Copy the **msedgedriver.exe** file into the following folder on your machine: **AppData\Local\Microsoft\Power Automate Desktop\WebDrivers**
 
 ## Set up browsers
 
