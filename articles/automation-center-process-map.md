@@ -102,7 +102,7 @@ Enable advanced insights to unlock enterprise‑grade analytics powered by Proce
 |------------|-------------|
 | Route (variant) analysis | Compare common paths vs. outliers to understand behavioral differences |
 | Bottlenecks & wait times | Identify delays across steps and variants to target hotspots |
-| Health trends (for example, MTBF) | Track reliability over time and by route |
+| Health trends | Track reliability over time and by route |
 | Performance–health correlations | Explore how duration correlates with error rate, connectors, or environment factors |
 
 > [!NOTE]
