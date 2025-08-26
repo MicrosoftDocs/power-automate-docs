@@ -40,21 +40,20 @@ The **Runs view** displays the process map for a specific flow run. It highlight
 
 ## Overview view
 
-The **Overview view** presents the overall process map, aggregating all possible paths and steps for the flow. This view is useful for understanding the full scope of the process, regardless of individual run status.
+The **Overview view** presents the overall process map, aggregating all possible paths, and steps for the flow. This view is useful for understanding the full scope of the process, regardless of individual run status.
 
 ## Insights (preview) view
 
 Insights (preview) surface the health and performance of your end‑to‑end process directly in the process map. Use them to quickly spot failure spikes, find bottlenecks, and understand which routes (variants) matter most. Insights are read‑only and don’t modify your flows.
 
-> [!IMPORTANT]
-> This capability is in preview and subject to change. Availability may vary by region or tenant. Preview features are provided without an SLA and aren’t recommended for production workloads.
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ### Prerequisites
 
 #### Basic insights (default)
 
 - A process map has been created for the top‑level cloud flow.
-- The environment stores run telemetry in Dataverse (Automation Center data).
+- The environment stores run history in Dataverse (Automation Center data).
 - You have permission to view runs for the flows included in the process (for shared/admin scenarios some flow names may appear masked).
 
 #### Advanced insights prerequisites (Process Mining)
@@ -67,7 +66,7 @@ Insights (preview) surface the health and performance of your end‑to‑end pro
 
 Open insights by selecting the Insights (preview) toggle on the process map. Insights are organized into two tiers:
 
-1. **Basic insights**(enabled by default) – built‑in reliability and performance views computed from run telemetry.
+1. **Basic insights**(enabled by default) – built‑in reliability and performance views computed from run history.
 2. **Advanced process insights** (opt-in) – one‑click integration with [Process Mining](/power-automate/process-mining) for deeper route/variant, bottleneck, and correlation analysis.
 
 #### Basic insights
@@ -83,7 +82,7 @@ Basic insights have a single Overview tab scoped to the selected time range.
 | Mean time between failures (MTBF) | Average time between failed runs |
 
 > [!TIP]
-> MTBF is the average time between failed runs within the selected time range. It uses run end times and shows — until there are at least two failures. MTBF may appear as — for sparse data or very short ranges. Expand the time range or check back after more runs complete.
+> MTBF is the average time between failed runs within the selected time range. It uses run end times and shows until there are at least two failures. MTBF may appear as — for sparse data or short ranges. Expand the time range or check back after more runs complete.
 
 ##### Panels
 
@@ -100,11 +99,11 @@ Enable advanced insights to unlock enterprise‑grade analytics powered by Proce
 |------------|-------------|
 | Route (variant) analysis | Compare common paths vs. outliers to understand behavioral differences |
 | Bottlenecks & wait times | Identify delays across steps and variants to target hotspots |
-| Health trends (e.g., MTBF) | Track reliability over time and by route |
+| Health trends (for example, MTBF) | Track reliability over time and by route |
 | Performance–health correlations | Explore how duration correlates with error rate, connectors, or environment factors |
 
 > [!NOTE]
-> In high‑volume environments, preparing insights for very large run sets can take longer. Also make sure you have enough Process mining capacity assigned in the environment.
+> In high‑volume environments, preparing insights for large run sets can take longer. Also make sure you have enough Process mining capacity assigned in the environment.
 
 ### Troubleshooting
 
@@ -112,7 +111,7 @@ Enable advanced insights to unlock enterprise‑grade analytics powered by Proce
 |-------|------------|
 | I just clicked on or enabled advanced insights but don't see data | Make sure you've set the right date filter for your scenario. Also, if your flow runs are less than 48 hours old, they aren’t considered for the analysis yet. Metrics and data will appear only after the runs are older than 48 hours. |
 | Can’t enable advanced insights | You likely lack Process Mining permissions or capacity. Ask your admin to grant access and ensure capacity is available in the environment |
-| Problems with advanced analytics panel | If you **accidentally** changed the process mining process within the Process Mining suite that now cause issues in the process map’s advanced analytics panel, you can delete the project in Process Mining and re-enable advanced insights. Do this **only if the changes weren’t intentional**, as deleting the project **removes all modifications**. |
+| Problems with advanced analytics panel | If you **accidentally** changed the process mining process within the Process Mining suite that now causes issues in the process map’s advanced analytics panel, you can delete the project in Process Mining and re-enable advanced insights. Do this **only if the changes weren’t intentional**, as deleting the project **removes all modifications**. |
 
 ## Create or view a process map
 
@@ -162,7 +161,7 @@ To rename or delete a process in Power Automate, follow these steps:
 ## Known issues and limitations
 
 - Creating and viewing process maps requires users to have the Environment Maker or similar roles with sufficient privileges on the business process table.  
-- Runs for co-owned or shared flows aren't supported yet, which means users don't see runs for flows shared with them.  
+- Runs for coowned or shared flows aren't supported yet, which means users don't see runs for flows shared with them.  
 - Users with broader access (like admins or CoE teams) might see 'Unknown flow' as the flow name. This happens if the flow isn't explicitly shared with them or it's deleted.  
 - Process maps for top-level desktop-flows aren't supported yet.
 - Parallelization features (for example, cloud flow 'Apply each' with concurrency or 'RunAfter' customizations) aren't visually represented. Such child runs appear in the order they were defined.  
