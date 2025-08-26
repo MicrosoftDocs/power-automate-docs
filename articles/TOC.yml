@@ -31,10 +31,12 @@
           href: get-started-with-cloud-flows.md
         - name: Start a cloud flow with a trigger
           items:
-          - name: Get started with triggers
+          - name: Triggers overview
             href: triggers-introduction.md
-          - name: Troubleshoot common issues with triggers
-            href: triggers-troubleshoot.md
+          - name: Work with triggers
+            href: work-with-triggers.md
+          - name: Customize your triggers with conditions
+            href: customize-triggers.md
         - name: Copilot in cloud flows FAQ
           href: faq-copilot-cloud-flows.yml
     - name: How to
@@ -46,10 +48,14 @@
         href: generative-actions-overview.md
       - name: Add a condition
         href: add-condition.md
+      - name: Create environment variables
+        href: environment-variables.md
       - name: Associate flows to apps
         href: associate-flow-to-app.md
       - name: Use data operations
         href: data-operations.md
+      - name: Use scopes to organize actions
+        href: scopes.md
       - name: Customize or format date and time values in a flow
         href: date-time-values.md
       - name: Convert a time zone
@@ -72,7 +78,7 @@
         href: publish-a-template.md
       - name: Turn a cloud flow on or off
         href: disable-flow.md
-      - name: Format data by examples
+      - name: Format data by examples [DEPRECATED]
         href: format-data-by-examples.md
     - name: Manage cloud flows
       items: 
@@ -906,10 +912,14 @@
         href: process-mining-pbi-workspace.md
       - name: Use optimized data structure in Power BI report
         href: process-mining-pbi-data-structure.md
-      - name: Customize a report with your own Fabric workspace (preview)
+      - name: Customize a report with your own Fabric workspace
         href: process-mining-fabric-workspace.md
-      - name: Structure of semantic model in Fabric workspace (preview)
+      - name: Structure of semantic model in Fabric workspace
         href: process-mining-fabric-semantic-model.md
+      - name: Datetime hierarchy in semantic model in Fabric workspace
+        href: process-mining-fabric-datetime-hierarchy.md
+    - name: Trigger actions with business rules and flows (preview)
+      href: process-mining-trigger-action.md
     - name: Application lifecycle management (ALM)
       items:
       - name: ALM overview
@@ -1206,6 +1216,8 @@
   items:
   - name: Power Automate sign-up FAQ
     href: organization-q-and-a.md
+  - name: Enable self-service disaster recovery
+    href: enable-self-service-disaster-recovery.md
   - name: Enable experimental features
     href: experimental-features.md
   - name: Pricing and billing
@@ -1291,6 +1303,8 @@
       href: replace-dialogs.md
 - name: Find help and support
   items:
+  - name: Create an effective Power Automate support request
+    href: support-service-request.md
   - name: Get online help
     href: self-help.md
   - name: Blog
