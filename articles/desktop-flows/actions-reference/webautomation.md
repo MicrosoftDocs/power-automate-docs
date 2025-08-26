@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 12/04/2024
+ms.date: 08/01/2025
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -20,10 +20,34 @@ search.audienceType:
 
 Browser automation actions enable users to interact with web applications and components through UI elements. Web UI elements, also called Web elements, describe uniquely the web components that the action is going to handle.
 
-To perform web automation, you first need to create a new browser instance. You can achieve this using the Launch Browser actions, which support Microsoft Edge, Google Chrome, Mozilla Firefox, and Internet Explorer. With the Launch Browser actions, you can also specify whether the web page should be launched on your local desktop or in a virtual desktop environment.
+To perform web automation, you first need to create a new browser instance by using one of the **Launch Browser** actions. These actions support Microsoft Edge, Google Chrome, Mozilla Firefox, and Internet Explorer. For web automation to function correctly, you must have either the appropriate browser extension or a compatible WebDriver installed, depending on the interaction method you select. You can also specify whether the browser should launch on your local desktop or within a virtual desktop environment.
 
 > [!NOTE]
-> To launch a browser on a virtual desktop, first capture at least one UI element within that desktop. This element needs to be available in the UI element repository of your flow.
+> - To launch a browser on a virtual desktop, first capture at least one UI element within that desktop. This element needs to be available in the UI element repository of your flow.
+
+## WebDriver-based browser automation (preview)
+
+Power Automate for desktop now supports web automation by using WebDriver as a method of interacting with a web browser. This new capability provides an alternative to the existing browser extension method for automating web applications. Each **Launch Browser** action includes a new drop-down menu labeled **Browser interaction method**, where you can choose between:
+- Browser extension (default)
+- WebDriver
+
+When you select WebDriver, make sure that you set up the corresponding WebDriver executable and that it matches the version of the browser you're automating. Place WebDrivers in the following directory on the machine running the automation: %LocalAppData%\Microsoft\Power Automate Desktop\WebDrivers
+
+> [!NOTE]
+> For step-by-step instructions on how to download and configure WebDrivers for supported browsers, see [Setting up WebDriver for browser automation](../install-browser-extensions.md).
+
+### WebDriver limitations
+
+WebDriver support introduces new capabilities but also comes with specific limitations:
+
+1. **Attach to browser limitations:** WebDriver-based automation can only attach to browser instances that the flow launches. It doesn't support manually opened browsers. When you use the **Attach to browser** action, the **Title** and **URL** fields don't auto-populate for WebDriver-launched instances.
+1. **Parallel execution issues:** Running web automation in parallel across parent and child flows by using different browsers might cause issues. Because physical browser interactions require the window to be active and in the foreground, multiple concurrent browser automations might result in erratic behavior or failures.
+1. **Wait for page delays:** If the web server you're automating is slow to respond, WebDriver-based automation might not respect the configured timeout in the **Wait for web page to load** action. The action could hang until the server responds.
+1. **Child flow restrictions:** You can't attach directly from a child flow to browser instances that the parent flow launches by using the WebDriver interaction method without passing the instance as input.
+1. **Organizational sign-in policies:** WebDriver-based automation doesn't function if the browser is configured to force user sign-in as a policy requirement.
+1. **Internet Explorer:** You can't use WebDriver as the browser interaction method for web automation in Internet Explorer.
+
+## Adding UI elements
 
 To add a new UI element, select **Add UI element** through the deployed browser automation action or the UI elements pane of the flow designer.
 
@@ -421,6 +445,7 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Firefox tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
 |Target desktop|N/A|Local computer, Any virtual desktop that is either currently connected or has at least one UI element captured|Local computer|Set the connection string of the target desktop that the browser launches|
+|Browser interaction method|N/A|Browser extension, WebDriver|Browser extension|Set how Power Automate for desktop will communicate with the browser during web automation|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
@@ -459,6 +484,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Chrome tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
 |Target desktop|N/A|Local computer, Any virtual desktop that is either currently connected or has at least one UI element captured|Local computer|Set the connection string of the target desktop that the browser launches|
+|Browser interaction method|N/A|Browser extension, WebDriver|Browser extension|Set how Power Automate for desktop will communicate with the browser during web automation|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
@@ -497,6 +523,7 @@ Launch a new instance or attach to a running instance of Microsoft Edge for auto
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Microsoft Edge tab to attach to|
 |Window state|N/A|Normal, Maximized, Minimized|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state|
 |Target desktop|N/A|Local computer, Any virtual desktop that is either currently connected or has at least one UI element captured|Local computer|Set the connection string of the target desktop that the browser launches|
+|Browser interaction method|N/A|Browser extension, WebDriver|Browser extension|Set how Power Automate for desktop will communicate with the browser during web automation|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding|
