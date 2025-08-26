@@ -44,18 +44,15 @@ The **Overview view** presents the overall process map, aggregating all possible
 
 ## Insights (preview) view
 
-Insights (preview) surface the health and performance of your end‑to‑end process directly in the process map. Use them to quickly spot failure spikes, find bottlenecks, and understand which routes (variants) matter most. Insights are read‑only and don’t modify your flows.
+Insights (preview) gives you a process‑level view of reliability and performance key metrics, visualizing error clusters, trends, and enabling a one‑click integration with Process Mining to deep dive into advanced insights such as variant (route), bottleneck, and deeper route analysis, all integrated within the process map experience. It helps you spot trends and issues faster, prioritize fixes, and share a consistent view across makers, operators and CoE teams.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
+The following sections list the prerequisites for viewing and using process-centric insights in the process map. If you only need basic insights, review the first prerequisites section. For using advanced insights, make sure you also meet the requirements in the advanced insights section.
+
 ### Prerequisites
 
-#### General
-
 - Power Automate Premium license with access to an environment.
-
-#### Basic insights (default)
-
 - A process map has been created for the top‑level cloud flow.
 - The environment stores run history in Dataverse (Automation Center).
 - You have permission to view runs for the flows included in the process (for shared/admin scenarios some flow names may appear masked).
@@ -64,6 +61,9 @@ Insights (preview) surface the health and performance of your end‑to‑end pro
 
 - Process Mining capacity of at least 50MB is available in the environment.
 - You have the required permissions to manually create new Process Mining projects in the environment.
+
+> [!NOTE]
+> Advanced insights use Power Automate’s [Process Mining](/power-automate/process-mining) feature and consume from your available Process Mining capacity available in the tenant. Make sure sufficient capacity is available before enabling advanced insights across the organization.
 
 ### View Insights (preview)
 
