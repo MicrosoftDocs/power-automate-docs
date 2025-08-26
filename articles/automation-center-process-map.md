@@ -34,11 +34,85 @@ When you select a flow box on the map, its side panel opens, providing detailed 
 > [!IMPORTANT]
 > Process map is considered a premium capability. Any flows that are part of a process map are considered premium flows and require an appropriate license. Learn more in [Power Automate licensing](/power-platform/admin/power-automate-licensing/types?tabs=power-automate-premium%2Cpower-automate-process%2Cconnector-types).
 
-### Runs vs overview
+## Runs view
 
-The **Runs** view provides a comprehensive look at the entire process by displaying both the main flow run and its child runs. This feature helps you track and understand how each part of the process is executed, identify issues or bottlenecks, and ensure that all steps are completed successfully. It enhances visibility into complex workflows, making them easier to manage and optimize.
+The **Runs view** displays the process map for a specific flow run. It highlights the exact path taken during that run and shows the status of each step, helping you analyze what happened in detail.
 
-The **Overview** view presents the design-time process structure, including all connected children. This view is ideal for quickly understanding the various subprocesses within the process, even if there are no runs yet.
+## Overview view
+
+The **Overview view** presents the overall process map, aggregating all possible paths and steps for the flow. This view is useful for understanding the full scope of the process, regardless of individual run status.
+
+## Insights (preview) view
+
+Insights (preview) surface the health and performance of your end‑to‑end process directly in the process map. Use them to quickly spot failure spikes, find bottlenecks, and understand which routes (variants) matter most. Insights are read‑only and don’t modify your flows.
+
+> [!IMPORTANT]
+> This capability is in preview and subject to change. Availability may vary by region or tenant. Preview features are provided without an SLA and aren’t recommended for production workloads.
+
+### Prerequisites
+
+#### Basic insights (default)
+
+- A process map has been created for the top‑level cloud flow.
+- The environment stores run telemetry in Dataverse (Automation Center data).
+- You have permission to view runs for the flows included in the process (for shared/admin scenarios some flow names may appear masked).
+
+#### Advanced insights prerequisites (Process Mining)
+
+- Power Automate Premium license
+- Process Mining capacity of at least 50MB is available in the environment.
+- You have the required permissions to manually create new Process Mining projects in the environment.
+
+### View Insights (preview)
+
+Open insights by selecting the Insights (preview) toggle on the process map. Insights are organized into two tiers:
+
+1. **Basic insights**(enabled by default) – built‑in reliability and performance views computed from run telemetry.
+2. **Advanced process insights** (opt-in) – one‑click integration with [Process Mining](/power-automate/process-mining) for deeper route/variant, bottleneck, and correlation analysis.
+
+#### Basic insights
+
+Basic insights have a single Overview tab scoped to the selected time range.
+
+| Metric | Description |
+|--------|-------------|
+| Runs | Total number of process runs in range |
+| Failed runs | Number of runs that ended in failure |
+| Failure rate | Percentage of runs that failed |
+| Average run duration | Mean end‑to‑end duration per run |
+| Mean time between failures (MTBF) | Average time between failed runs |
+
+> [!TIP]
+> MTBF is the average time between failed runs within the selected time range. It uses run end times and shows — until there are at least two failures. MTBF may appear as — for sparse data or very short ranges. Expand the time range or check back after more runs complete.
+
+##### Panels
+
+| Panel | What it shows |
+|-------|--------------|
+| Flow runs error trend | Error rate overlaid with run volume across time to reveal spikes and patterns |
+| Top flow error codes | Most frequent error codes with counts to accelerate root‑cause analysis |
+
+### Advanced process insights (Process Mining)
+
+Enable advanced insights to unlock enterprise‑grade analytics powered by Process Mining without the need for manual exports or lengthy data preparations. To enable advanced insights, select the Insights (preview) button on top and in the side-panel select Enable advanced insights. What you get with advanced insights:
+
+| Capability | Description |
+|------------|-------------|
+| Route (variant) analysis | Compare common paths vs. outliers to understand behavioral differences |
+| Bottlenecks & wait times | Identify delays across steps and variants to target hotspots |
+| Health trends (e.g., MTBF) | Track reliability over time and by route |
+| Performance–health correlations | Explore how duration correlates with error rate, connectors, or environment factors |
+
+> [!NOTE]
+> In high‑volume environments, preparing insights for very large run sets can take longer. Also make sure you have enough Process mining capacity assigned in the environment.
+
+### Troubleshooting
+
+| Issue | Resolution / Issue|
+|-------|------------|
+| I just clicked on or enabled advanced insights but don't see data | Make sure you've set the right date filter for your scenario. Also, if your flow runs are less than 48 hours old, they aren’t considered for the analysis yet. Metrics and data will appear only after the runs are older than 48 hours. |
+| Can’t enable advanced insights | You likely lack Process Mining permissions or capacity. Ask your admin to grant access and ensure capacity is available in the environment |
+| Problems with advanced analytics panel | If you **accidentally** changed the process mining process within the Process Mining suite that now cause issues in the process map’s advanced analytics panel, you can delete the project in Process Mining and re-enable advanced insights. Do this **only if the changes weren’t intentional**, as deleting the project **removes all modifications**. |
 
 ## Create or view a process map
 
