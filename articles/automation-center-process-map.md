@@ -60,10 +60,10 @@ The following sections list the prerequisites for viewing and using process-cent
 #### Advanced insights prerequisites (using process mining)
 
 - Process Mining capacity of at least 50MB is available in the environment.
-- You have the required permissions to manually create new Process Mining projects in the environment.
+- You have the required permissions to manually create new Process Mining processes in the environment.
 
 > [!NOTE]
-> Advanced insights use Power Automate’s [Process Mining](/power-automate/process-mining) feature and consume from your available Process Mining capacity in the tenant. Make sure sufficient capacity is available before enabling advanced insights across the organization.
+> Advanced insights use Power Automate’s [Process Mining](/power-automate/process-mining) capabilities and consume from your available Process Mining capacity in the tenant. Make sure sufficient capacity is available before enabling advanced insights across the organization.
 
 ### View Insights (preview)
 
