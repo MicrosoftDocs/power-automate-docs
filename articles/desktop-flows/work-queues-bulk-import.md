@@ -153,6 +153,7 @@ This tutorial showcases both mentioned [Dataverse bulk-import options](/power-ap
 18. In the **Column mapping** section, under **Primary key** select **workqueueitemid**.
 > [!NOTE]
 > The **Primary key** option is only visible when the Import method is **Merge**.
+
 19. and set the following mapping:
   
     | Source column | Destination column |
