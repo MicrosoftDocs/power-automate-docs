@@ -82,7 +82,7 @@ Basic insights have a single Overview tab scoped to the selected time range.
 | Failed runs | Number of runs that ended in failure |
 | Failure rate | Percentage of runs that failed |
 | Average run duration | Mean end‑to‑end duration per run |
-| Mean time between failures (MTBF) | Average time between failed runs within the selected time range. |
+| Mean time between failures (MTBF) | Average time between two failures; for example, if your flow ran for total 100 hours in the selected timeframe and had 5 failures, the MTBF is 100 / 5 = 20 hours. |
 
 ##### Panels
 
