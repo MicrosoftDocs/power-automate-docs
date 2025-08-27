@@ -82,10 +82,7 @@ Basic insights have a single Overview tab scoped to the selected time range.
 | Failed runs | Number of runs that ended in failure |
 | Failure rate | Percentage of runs that failed |
 | Average run duration | Mean end‑to‑end duration per run |
-| Mean time between failures (MTBF) | Average time between failed runs |
-
-> [!TIP]
-> MTBF is the average time between failed runs within the selected time range. It uses run end times and shows until there are at least two failures. MTBF may appear as — for sparse data or short ranges. Expand the time range or check back after more runs complete.
+| Mean time between failures (MTBF) | Average time between failed runs within the selected time range. |
 
 ##### Panels
 
@@ -115,13 +112,15 @@ Enable advanced insights to unlock enterprise‑grade analytics powered by Proce
 | Top error details | Clusters failures by error code/reason with percent of impacted runs and counts. Expand an error to see details such as most impacted route that will show on the process map and also see error first/last seen timestamps |
 
 > [!NOTE]
-> In high‑volume environments, preparing insights for large run sets can take longer. Also make sure you have enough Process mining capacity assigned in the environment.
+>
+> - In high‑volume environments, preparing insights for large run sets can take longer. Also make sure you have enough Process mining capacity assigned in the environment.
+> - To disable Insights (preview) for an environment, turn off **Enable production-ready preview features** for Power Automate Automation center in the [Power Platform admin center](https://aka.ms/ppac). Please note that this setting disables all other Automation Center preview features as well.
 
 ### Troubleshooting
 
 | Issue | Resolution |
 |-------|------------|
-| I just clicked on insights view or enabled advanced insights but don't see data | Make sure you've set the right date filter for your scenario. Also, if your flow runs are less than 48 hours old, they aren’t considered for the analysis yet. Metrics and data will appear only after the runs are older than 48 hours. |
+| I just clicked on insights view or enabled advanced insights but don't see and metrics data | Make sure you've set the right date filter for your scenario. Also, if your flow runs are less than 48 hours old, they aren’t considered for the analysis yet. Metrics and data will appear only after the runs are older than 48 hours. |
 | Can’t enable advanced insights | You likely lack Process Mining permissions or capacity. Ask your admin to grant access and ensure capacity is available in the environment |
 | Problems with advanced analytics panel | If you **accidentally** changed the process mining process within the Process Mining suite that now causes issues in the process map’s advanced analytics panel, you could delete the project in Process Mining and re-enable advanced insights. Do this **only if the changes weren’t intentional**, as deleting the project **removes all modifications you've done**. |
 
