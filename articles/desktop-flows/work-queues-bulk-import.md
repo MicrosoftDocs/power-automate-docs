@@ -111,17 +111,14 @@ This tutorial showcases both mentioned [Dataverse bulk-import options](/power-ap
 1. Next, go to <https://make.powerapps.com> and sign-in with your credentials.
 2. Confirm that you're in the correct environment and select **Tables** in the side-menu.
 3. Select the **All** tab.
-   :::image type="content" source="media/work-queues/work-queue-import-table.png" alt-text="Screenshot of Power Apps portal showing Tables and the all tab area selected." lightbox="media/work-queues/work-queue-import-table.png":::
 4. Search for **Work Queue** table and open its details page.
 5. In the toolbar, select **Import** and then select **Import data from Excel**.
-    :::image type="content" source="media/work-queues/work-queue-import-csv.png" alt-text="Screenshot of the Work Queue table details and a selected menu entry called 'Import data from Excel'." lightbox="media/work-queues/work-queue-import-csv.png":::
 6. Select **Upload** and choose the **vendor-invoice-queue.csv** file.
     :::image type="content" source="media/work-queues/work-queue-import-csv-confirm.png" alt-text="Screenshot of Excel import dialog with an upload and mapping validation option." lightbox="media/work-queues/work-queue-import-csv-confirm.png":::
 7. Confirm that the automapping was successful, or if needed adjust it by selecting **Map columns**.
     :::image type="content" source="media/work-queues/work-queue-import-csv-mapping.png" alt-text="Screenshot of a field mapping dialog as part of the data import experience." lightbox="media/work-queues/work-queue-import-csv-mapping.png":::
 8. Select **Import**.
 9. Depending on your data volume, this might take some time to complete. Once complete, navigate to the work queue list page and confirm that vendor invoice queue has been added.
-    :::image type="content" source="media/work-queues/work-queue-list-page.png" alt-text="Screenshot of the work queue list page, confirming that the work queue record has been imported" lightbox="media/work-queues/work-queue-list-page.png":::
 
 #### Phase 3/3: Import work queue items
 
@@ -131,22 +128,16 @@ This tutorial showcases both mentioned [Dataverse bulk-import options](/power-ap
 4. Search for **Work Queue Item** table and open its details page.
 5. In the toolbar, select **Import** and then **Import data**.
 6. In the **Power Query** dialog that opens, select the **Text/CSV** option.
-   :::image type="content" source="media/work-queues/work-queue-import-powerquery.png" alt-text="Screenshot of Power Apps portal showing Power Query dialog." lightbox="media/work-queues/work-queue-import-powerquery.png":::
 7. Next, select **Upload file (Preview)** and then **Browse...** for the **vendor-invoice-items.csv** file.
-    :::image type="content" source="media/work-queues/work-queue-import-powerquery-connect-csv.png" alt-text="Screenshot of Power Apps portal showing Power Query dialog to upload a text or csv file." lightbox="media/work-queues/work-queue-import-powerquery-connect-csv.png":::
 8. If needed, establish a connection to your OneDrive for Business folder.
-    :::image type="content" source="media/work-queues/work-queue-import-workqueue-file.png" alt-text="Screenshot of Power Query dialog with an upload confirmation for the vendor invoice work queue csv file." lightbox="media/work-queues/work-queue-import-workqueue-file.png":::
 9. Select **Next** and confirm that you see the work queue item records and that **Comma** is selected as delimiter.
-    :::image type="content" source="media/work-queues/work-queue-import-workqueue-file-preview.png" alt-text="Screenshot of Power Query preview file data dialog showing the list of work queue items included in the source file." lightbox="media/work-queues/work-queue-import-workqueue-file-preview.png":::
 10. Select **Next**.
 
   > [!NOTE]
   > The next few steps are not required if all you want to do is import basic, already formatted values into the work queue items table. However, if you're looking to reshape the source data before you import it, then the following Power Query transformations might come in handy for your future use-cases.
 
 11. In the Power Query transformation window, select the **Add column** tab on the ribbon toolbar and then select **Custom column**.
-    :::image type="content" source="media/work-queues/work-queue-powerquery-transformation.png" alt-text="Screenshot of Power Query transformation window with instruction on how to add a new column to a table." lightbox="media/work-queues/work-queue-powerquery-transformation.png":::
 12. In the Custom column dialog box, enter **Input** as the new column name and **Text.FromBinary(Json.FromValue(_))** in the custom column formula field.
-    :::image type="content" source="media/work-queues/work-queue-powerquery-formula.png" alt-text="Screenshot of a custom column dialog expecting name and the following formula input: Text.FromBinary(Json.FromValue(_))." lightbox="media/work-queues/work-queue-powerquery-formula.png":::
 
     Here's what the formula does:
     * **Json.FromValue(_)**: This part of the expression takes the input value (that is, a row of the table) and converts it into a JSON-formatted text.
@@ -156,10 +147,13 @@ This tutorial showcases both mentioned [Dataverse bulk-import options](/power-ap
 
 13. Select **Ok**.
 14. Select **Next**.
-15. On the mapping under the **Load settings** section, select **Load to existing table**.
+15. In the **Load settings** section, select **Load to existing table**.
 16. Under **Destination table**, select **workqueueitem**.
-17. Under **Select key (optional)** select **workqueueitemid**.
-18. In the **Column mapping** section set the following mapping:
+17. In the **Import method** section select the option **Merge**.
+18. In the **Column mapping** section, under **Primary key** select **workqueueitemid**.
+> [!NOTE]
+> The **Primary key** option is only visible when the Import method is **Merge**.
+19. and set the following mapping:
   
     | Source column | Destination column |
     | --------- | ------------------------------ |
@@ -169,13 +163,10 @@ This tutorial showcases both mentioned [Dataverse bulk-import options](/power-ap
     | OverwriteTime | workqueueid.OverwriteTime |
     | WorkQueueKey | workqueueid.workqueuekey |
 
-    :::image type="content" source="media/work-queues/work-queue-import-item-col-mapping.png" alt-text="Screenshot of the work queue item column mapping to load data into the exiting workqueueitem table." lightbox="media/work-queues/work-queue-import-item-col-mapping.png":::
-19. Select **Next** and then select **Publish**.
-20. Go to the [Power Apps maker portal](https://make.powerapps.com) and select **Dataflows** from the left-menu (you might have to select **More** first to get to the Dataflows menu).
-21. Confirm that you see a new dataflow entry and that both icons show success once the import is complete.
-    :::image type="content" source="media/work-queues/work-queue-import-inprogress.png" alt-text="Screenshot of the Dataflows list showing dataflows that are complete and still refreshing." lightbox="media/work-queues/work-queue-import-inprogress.png":::
-22. Once complete, navigate to the work queue details page of the vendor invoice queue and confirm that the work queue items have been added.
-    :::image type="content" source="media/work-queues/work-queue-details-after-import.png" alt-text="Screenshot of the work queue list page showing the newly created work queue record." lightbox="media/work-queues/work-queue-details-after-import.png":::
+21. Select **Next** and then select **Publish**.
+22. Go to the [Power Apps maker portal](https://make.powerapps.com) and select **Dataflows** from the left-menu (you might have to select **More** first to get to the Dataflows menu).
+23. Confirm that you see a new dataflow entry and that both icons show success once the import is complete.
+24. Once complete, navigate to the work queue details page of the vendor invoice queue and confirm that the work queue items have been added.
 
 ## Next steps
 
