@@ -1,11 +1,13 @@
 ---
 title: Improve automation monitoring with process map
-description: Enhance your automation's observability and troubleshooting efficiency story with the Automation Center's new process map
+description: Enhance your automation's observability and troubleshooting efficiency story with the Automation Center's new process map.
 ms.topic: how-to
 ms.date: 08/29/2025
 ms.author: appapaio
 ms.reviewer: angieandrews
 contributors:
+  - appapaio
+  - v-aandrews
   - DanaMartens
 author: rpapostolis
 ms.collection: conceptual
@@ -50,7 +52,7 @@ The **Overview view** presents the overall process map, aggregating all possible
 
 Insights (preview) gives you a process‑level view of reliability and performance key metrics, visualizing error clusters, trends, and enabling a one‑click integration with Process Mining. This allows you to deep dive into advanced insights such as variant (route), bottleneck, and deeper route analysis, all integrated within the process map experience. It helps you spot trends and issues faster, prioritize fixes, and share a consistent view across makers, operators, and Center of Excellence (CoE) teams.
 
-The following sections list the prerequisites for viewing and using process-centric insights in the process map. If you only need basic insights, review the [Prerequisites](prerequisites) section. For using advanced insights, make sure you also meet the requirements in the [Advanced insights prerequisites (using process mining)](#advanced-insights-prerequisites-using-process-mining) section.
+The following sections list the prerequisites for viewing and using process-centric insights in the process map. If you only need basic insights, review the [Prerequisites](#prerequisites) section. For using advanced insights, make sure you also meet the requirements in the [Advanced insights prerequisites (using process mining)](#advanced-insights-prerequisites-using-process-mining) section.
 
 ### Prerequisites
 
@@ -65,14 +67,14 @@ The following sections list the prerequisites for viewing and using process-cent
 - You have the required permissions to manually create new Process Mining processes in the environment.
 
 > [!NOTE]
-> Advanced insights use Power Automate’s [Process Mining](/power-automate/process-mining) capabilities and consume from your Process Mining capacity in the tenant. Before you enable advanced insights across the organization, make sure sufficient capacity is available.
+> Advanced insights use Power Automate's [Process Mining](process-mining-overview.md) capabilities and consume from your Process Mining capacity in the tenant. Before you enable advanced insights across the organization, make sure sufficient capacity is available.
 
 ## View Insights (preview)
 
 Open insights by selecting the **Insights (preview)** toggle on the process map. Insights are organized into two tiers:
 
 - **Basic insights**: Enabled by default. Built‑in reliability and performance views computed from run history.
-- **Advanced process insights**: Opt-in. One‑click integration with [Process Mining](/power-automate/process-mining) for deeper route/variant, bottleneck, and correlation analysis.
+- **Advanced process insights**: Opt-in. One‑click integration with [Process Mining](process-mining-overview.md) for deeper route/variant, bottleneck, and correlation analysis.
 
 ## Basic insights
 
@@ -188,7 +190,7 @@ To rename or delete a process in Power Automate, follow these steps:
 
 - Creating and viewing process maps requires users to have the Environment Maker or similar roles with sufficient privileges on the business process table.  
 - Runs for co-owned or shared flows aren't supported yet, which means flows shared with users don't display for them.  
-- Users with broader access (like admins or CoE teams) might see 'Unknown flow' as the flow name. This happens if the flow isn't explicitly shared with them or it's deleted.  
+- Users with broader access (like admins or CoE teams) might see 'Unknown flow' as the flow name. This happens if the flow isn't explicitly shared with them or is deleted.  
 - Process maps for top-level desktop-flows aren't supported yet.
 - Parallelization features (for example, cloud flow 'Apply each' with concurrency or 'RunAfter' customizations) aren't visually represented. Such child runs appear in the order they were defined.  
 - Dynamic flow selection using a formula (instead of the standard picker) isn't supported. Such child flows are ignored.  

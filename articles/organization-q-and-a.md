@@ -2,7 +2,7 @@
 title: Power Automate sign-up FAQ
 description: Get answers to common questions about licenses, administration, and how users can sign up to use Power Automate in your Microsoft 365 tenant.
 author: PriyaKodukula
-ms.author: prkoduku
+ms.author: angieandrews
 ms.reviewer: angieandrews
 contributors:
   - PriyaKodukula
@@ -125,10 +125,7 @@ First, join the tenant. Then, promote yourself to the admin role, if it hasn't a
 1. Select the app launcher icon in the upper-left corner of the page, and then select **Admin**.
 1. Read the instructions on the **Become the admin** page, and then select **Yes, I want to be the admin**.
 
-   If this option doesn't appear, a Microsoft 365 administrator is already in place.
-
-       > [!TIP]
-       > If this option doesn’t appear, an Office 365 administrator is already in place.
+   If this option doesn't appear, a Microsoft 365 administrator is already in place. An Office 365 administrator is already in place.
 
 ### If I have multiple domains, can I control the Microsoft 365 tenant that users are added to?
 
@@ -143,9 +140,7 @@ If you want all users to be in the same tenant regardless of their email domain,
 
 Power Automate allows you to create data zones for business and nonbusiness data, as shown in the following screenshot. After you implement these [data loss prevention policies](prevent-data-loss.md), users can't design or run Power Automate flows that combine business and nonbusiness data.
 
-:::image type="content" source="media/organization-q-and-a/data-loss-prevention-policy.png" alt-text="Screenshot of an organization's data loss prevention policy.":::
-
-> There isn't a supported automated way to move users across tenants. To learn about adding domains to a single Office 365 tenant, go to [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
+There isn't a supported automated way to move users across tenants. To learn about adding domains to a single Office 365 tenant, go to [Add your users and domain to Office 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
 
 ## Manage Power Automate RPA licenses
 
@@ -212,7 +207,7 @@ Only admins can assign unattended trial capacity. Assign add-on capacity to each
 
 ### Assign Power Automate Process plan (previously Power Automate process flow) capacity to an environment
 
-Before you can assign capacity, such as trial licenses, you must [get the Process licences](#how-to-start-an-unattended-trial).
+Before you can assign capacity, such as trial licenses, you must [get the Process licences](#how-can-i-start-an-unattended-trial).
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
@@ -220,7 +215,7 @@ Before you can assign capacity, such as trial licenses, you must [get the Proces
 
    ![Display the manage add-ons screen.](./media/rpa-license/manage-add-ons.png)
 
-1. Select the environment to which you want to assign the Power Automate Process licenses, assign the capacity, and then select **Save**. 
+1. Select the environment to which you want to assign the Power Automate Process licenses, assign the capacity, and then select **Save**.
 
    ![Assign unattended license to environment.](./media/rpa-license/assign-process-license-environment.png)
 
