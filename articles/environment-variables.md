@@ -88,6 +88,7 @@ When you import the solution, you can set the environment variable's value for t
 
 ## Related information
 
+- [Environment variables for Power Platform overview](/power-apps/maker/data-platform/environmentvariables)
 - [Why use environment variables?](guidance/coding-guidelines/use-environment-variables.md#why-use-environment-variables)
 - [Best practices for using environment variables](guidance/coding-guidelines/use-environment-variables.md#best-practices-for-using-environment-variables)
 

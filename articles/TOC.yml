@@ -78,7 +78,7 @@
         href: publish-a-template.md
       - name: Turn a cloud flow on or off
         href: disable-flow.md
-      - name: Format data by examples
+      - name: Format data by examples [DEPRECATED]
         href: format-data-by-examples.md
     - name: Manage cloud flows
       items: 
@@ -1216,6 +1216,8 @@
   items:
   - name: Power Automate sign-up FAQ
     href: organization-q-and-a.md
+  - name: Enable self-service disaster recovery
+    href: enable-self-service-disaster-recovery.md
   - name: Enable experimental features
     href: experimental-features.md
   - name: Pricing and billing
@@ -1301,6 +1303,8 @@
       href: replace-dialogs.md
 - name: Find help and support
   items:
+  - name: Create an effective Power Automate support request
+    href: support-service-request.md
   - name: Get online help
     href: self-help.md
   - name: Blog
