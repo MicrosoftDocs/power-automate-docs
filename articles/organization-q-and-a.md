@@ -121,7 +121,7 @@ First, join the tenant. Then, promote yourself to the admin role, if it hasn't a
 
     For example, if Microsoft created the contoso.com tenant, then join the tenant with an email address that ends with @contoso.com.
 
-1. Go to [https://admin.microsoft.com](https://admin.microsoft.com/Start?sku=flow_free).
+1. Go to https://admin.microsoft.com.
 1. Select the app launcher icon in the upper-left corner of the page, and then select **Admin**.
 1. Read the instructions on the **Become the admin** page, and then select **Yes, I want to be the admin**.
 
