@@ -80,9 +80,9 @@ This feature improves control and security by specifying which web pages can or 
 Learn more about browser automation endpoint filtering in [Connector endpoint filtering](/power-platform/admin/connector-endpoint-filtering#desktopflow---browser-automation).
 
 ### Desktop UI Automation filtering
-This capability allows you to define which applications and screens a desktop flow can interact with. Endpoints are specified using the application’s process name, and if the process name is not unique, the window display name is used instead. Wildcards are supported for flexible matching. Validation occurs during any action within the UI automation group, before the flow interacts with the screen. It checks the Process and/or Name attributes in the selector of the targeted UI elements to determine if the interaction is permitted.
+This feature allows you to specify which applications and screens a desktop flow can interact with in Power Automate for Desktop. Endpoints are defined using the application's process name. For processes named 'ApplicationFrameHost', 'java', or 'javaw'—which typically represent UWP or Java applications where multiple instances may share the same name—Power Automate for Desktop uses both the process name and the window display name to ensure precise targeting. Wildcards are supported for flexible matching. Validation is performed on any action within the UI automation group by checking the Process and/or Name attributes in the selector of the targeted screen, which is usually the parent of the relevant UI element, to determine whether interaction is permitted.
 
-Learn more about browser automation endpoint filtering in [Connector endpoint filtering](/power-platform/admin/connector-endpoint-filtering#desktopflow---UI-automation).
+Learn more about UI automation endpoint filtering in [Connector endpoint filtering](/power-platform/admin/connector-endpoint-filtering#desktopflow---UI-automation).
 
 ### Related information
 
