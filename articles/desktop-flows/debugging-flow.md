@@ -69,7 +69,7 @@ These options are only enabled when the flow is either not currently executing o
 - The step out option is applied during a subflow execution except for the Main subflow.
 
 ### Behavior of the step over option
-The step over command allows users to execute actions one at a time while maintaining control over the flow’s progression. When used before a 'Run subflow' action, it executes the entire subflow and then pauses at the next action following it. For all other actions, Step over simply runs the current action and pauses at the next one.
+The step over command allows users to execute actions one at a time while maintaining control over the flow’s progression. When used before a 'Run subflow' action, it executes the entire subflow and then pauses at the next action following it. For all other actions, step over simply runs the current action and pauses at the next one.
 
 ### Behavior of the step out option
 The step out command is used to exit an executing subflow and return to its caller. If applied during a subflow, it completes that subflow and pauses after the corresponding 'Run subflow' action in the parent flow. When used in the Main subflow, step out behaves like the standard 'Run' command, allowing execution to continue uninterrupted.
