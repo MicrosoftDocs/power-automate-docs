@@ -6,8 +6,8 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: concept-article
-ms.date: 09/22/2020
-ms.author: matp
+ms.date: 08/28/2025
+ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
@@ -28,6 +28,7 @@ It is common to have to debug flows in case there are any changes in the system 
 Debug a desktop flow using the following tools:
 * [Errors Pane](errors.md)
 * [Breakpoints](#adding-breakpoints)
+* [Stepping mode](#step-over-and-step-out)
 * [Run flow action by action](#run-a-desktop-flow-by-action)
 * [Set the Run delay](#the-status-bar)
 
@@ -46,6 +47,32 @@ Click to the left of the running order number in the workspace to place a breakp
 ## Run a desktop flow by action
 
 The **Run next action** button runs the flow action by action. After each action is completed, the flow is paused. Open the variables pane to check the value of any variable at the point where it's paused. This feature is useful for debugging.
+
+## Step over and step out
+Power Automate for Desktop provides two additional debugging options—step over and step out—to improve control and visibility during flow execution.
+
+To utilize these new debugging features, users must first enable stepping mode. This is done by navigating to the Debug menu located in the designer toolbar. 
+
+![Screenshot of Stepping mode.](media/step-over-step-out/enable_stepping_mode.png)
+
+Once stepping mode is activated, two additional options become available within the flow designer:
+- Step over, which can be triggered using the keyboard shortcut F11.
+- Step out, which can be triggered using the keyboard shortcut Shift+F11.
+
+![Screenshot of step over and step out options in designer.](media/step-over-step-out/options_in_designer.png)
+
+These options are only enabled when the flow is either not currently executing or is in a paused state. A flow enters a paused state under the following circumstances:
+- The user manually selects a pause option.
+- The user selects 'Run next action' option.
+- Execution reaches a predefined breakpoint.
+- The step over option is applied during execution.
+- The step out option is applied during a subflow execution except for the Main subflow.
+
+### Behavior of the step over option
+The step over command allows users to execute actions one at a time while maintaining control over the flow’s progression. When used before a 'Run subflow' action, it executes the entire subflow and then pauses at the next action following it. For all other actions, Step over simply runs the current action and pauses at the next one.
+
+### Behavior of the step out option
+The step out command is used to exit an executing subflow and return to its caller. If applied during a subflow, it completes that subflow and pauses after the corresponding 'Run subflow' action in the parent flow. When used in the Main subflow, step out behaves like the standard 'Run' command, allowing execution to continue uninterrupted.
 
 ## The status bar
 
