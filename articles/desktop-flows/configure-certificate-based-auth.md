@@ -15,9 +15,9 @@ search.audienceType:
   - envadmin
 ms.custom:
   - sfi-image-nochange
-- ai-gen-docs-bap
-- ai-gen-description
-- ai-seo-date:11/05/2024
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/05/2024
 ---
 
 # Configure certificate-based authentication 
@@ -63,7 +63,7 @@ After completing these steps, [create your Azure key vault credential](create-Az
 
 ## Admin consent for unattended runs
 
-Admin consent is required for unattended runs with certificate credentials on a Microsoft Entra ID joined device. Learn more at [Admin consent for unattended runs](run-unattended-desktop-flows.md#admin-consent-for-unattended-runs-using-cba-or-sign-in-credentials-with-nla-preview).
+Admin consent is required for unattended runs with certificate credentials on a Microsoft Entra ID joined device. Learn more at [Admin consent for unattended runs](run-unattended-desktop-flows.md#admin-consent-for-unattended-runs-using-cba-or-sign-in-credentials-with-nla).
 
 ## Limitations and minimal requirements
 
