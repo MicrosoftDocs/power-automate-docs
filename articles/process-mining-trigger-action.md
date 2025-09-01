@@ -127,6 +127,9 @@ There are two sets of data structures available to you related to the left and r
 
 **Business Rule Items**: Detailed evaluation for each case fitting the business rule (table on right side). Consists of list of **Item Detail** structures, each holding the following data fields.
 
+> [!NOTE]
+> This section is limited to returning maximum of 5000 cases.
+
 |Data field|Description|
 |----------|-----------|
 |Name|Item name (CaseID)|
