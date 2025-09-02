@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 08/15/2025
+ms.date: 09/02/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -41,7 +41,7 @@ The customer defined that the business goal is to approve and process any invoic
 
 ### Behavior deviation approach
 
-In *Behavior deviation approach*, the customer defines behavior of the process considered as deviating from the business goal and the business rule returns only cases that are considered deviating according to the definition. All other cases are considered as non-deviating. The action is then taken only for the deviating cases.
+In *Behavior deviation approach*, the customer defines behavior of the process considered as deviating from the business goal and the business rule returns only cases that are considered deviating according to the definition. All other cases are considered as nondeviating. The action is then taken only for the deviating cases.
 
 For the previous example:
 
@@ -55,7 +55,7 @@ This means that any invoice in US region with case duration greater than 48 hour
 
 ### KPI based approach
 
-*KPI based approach* allows the customer to also define behavior of the process considered as deviating from the business goal, in a way, that it's looking at all cases meeting defined filtering criteria, but the threshold KPI is calculated for all such cases. The resulting KPI values can then be categorized on a more granular level into several severity buckets. This allows the customer to define which cases are considered already deviating, which are considered to be deviating soon, and which are non-deviating. This allows you to take different actions for different severity categories.
+*KPI based approach* allows the customer to also define behavior of the process considered as deviating from the business goal, in a way, that it's looking at all cases meeting defined filtering criteria, but the threshold KPI is calculated for all such cases. The resulting KPI values can then be categorized on a more granular level into several severity buckets. This allows the customer to define which cases are considered already deviating, which are considered to be deviating soon, and which are nondeviating. This allows you to take different actions for different severity categories.
 
 For the previous example:
 
@@ -95,7 +95,7 @@ To execute an action on top of business rule evaluation, you need to create an a
 1. Select the card.
 1. In the configuration panel, set up the connection to Process Mining and set the mandatory parameters:
     1. Select your **process**.
-    1. Select the **process view** to which the business rule will be applied. Learn more about views in [Manage views](minit/process-hub.md#manage-views).
+    1. Select the **process view** to which the business rule will apply. Learn more about views in [Manage views](minit/process-hub.md#manage-views).
     1. Select your newly created **business rule**.
 
     :::image type="content" source="media/process-mining-trigger-action/flow-trigger-config.png" alt-text="Screenshot showing the correctly configured trigger action and configuration panel.":::
@@ -126,6 +126,9 @@ There are two sets of data structures available to you related to the left and r
 |Undefined Count|Number of cases not fitting the `Error`, `Warning`, or `Ok` severity condition|
 
 **Business Rule Items**: Detailed evaluation for each case fitting the business rule (table on right side). Consists of list of **Item Detail** structures, each holding the following data fields.
+
+> [!NOTE]
+> This section is limited to returning maximum of 5,000 cases.
 
 |Data field|Description|
 |----------|-----------|
