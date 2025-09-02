@@ -20,7 +20,7 @@ This article presents the best practices for running Power Automate desktop flow
 
 ## Avoid time-outs and distribute load across machines
 
-Desktop flows queue for up to six hours until a machine is available. Adopt one of the recommended strategies to distribute the workload and ensure that all desktop flows run successfully without overloading the target machines.
+Desktop flows queue for up to twelve hours until a machine is available. Adopt one of the recommended strategies to distribute the workload and ensure that all desktop flows run successfully without overloading the target machines.
 
 - Spread the load over time by planning your desktop flows to run at different times. This practice works best if you have a limited set of machines and can control the triggers that start your desktop flows.
 
@@ -32,7 +32,7 @@ All the presented strategies prevent desktop flows from competing to run on the 
 
 > [!NOTE]
 >
-> If a target device goes offline due to a restart or connectivity issues, desktop flows wait up to six hours before failing. This wait time allows for transient machine states and lets you run automation successfully even if the devices go through restart or update cycles.
+> If a target device goes offline due to a restart or connectivity issues, desktop flows wait up to twelve hours before failing. This wait time allows for transient machine states and lets you run automation successfully even if the devices go through restart or update cycles.
 
 ## Support long-running desktop flows
 
