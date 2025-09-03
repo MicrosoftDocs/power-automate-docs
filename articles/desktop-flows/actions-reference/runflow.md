@@ -26,7 +26,7 @@ You can disable the toggle property 'Wait for flow to complete', which is enable
 >[!IMPORTANT]
 >
 > - Up to six parallel flows in total can run at this time concurrently with the root flow, shifting the previous limit of just one parallel flow.
-> - Child flows can also run other child flows in parallel, consuming from the available pool of six parallel flows. Parallel flow runs are no longer limited to being invoked directly from the parent (root) flow, as was previously the case.
+> - Child flows can also run other child flows in parallel (no error is thrown in such cases anymore), consuming from the available pool of six parallel flows. Parallel flow runs are no longer limited to being invoked directly from the parent (root) flow, as was previously the case.
 > - If a child flow runs in parallel, its output variables are ignored. The variables produced from the 'Run desktop flow' action aren't shown in the action modal.
 > - When a parent flow completes its run, it also stops (cancels) its invoked parallel child flows that may still run.
 
