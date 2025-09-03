@@ -5,7 +5,7 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 01/31/2025
+ms.date: 09/03/2025
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -21,13 +21,14 @@ search.audienceType:
 
 The **Run desktop flow** action enables you to call other desktop flows while running a specific desktop flow. To use the action, add it to the workspace and select the desktop flow you want to call. If the called flow contains input variables, the action will prompt you to enter their values.
 
-You can disable the toggle property 'Wait for flow to complete', which is enabled by default. If disabled, the invoked desktop flow runs concurrently with the parent flow. This configuration is useful for scenarios where unexpected popups in the target application block the parent flow. By running a child flow in parallel, you can monitor and manage these popups, ensuring the parent flow continues smoothly. This improvement provides a workaround given the current concurrency policy, which allows only one flow per machine at a time.
+You can disable the toggle property 'Wait for flow to complete', which is enabled by default. If disabled, the invoked desktop flow runs concurrently with the parent flow. This configuration is useful for scenarios where unexpected popups in the target application block the parent flow. By running a child flow in parallel, you can monitor and manage these popups, ensuring the parent flow continues smoothly. This improvement provides a workaround given the current concurrency policy, which allows only one flow to run per machine at a time.
 
 >[!IMPORTANT]
 >
-> - Only one parallel flow can run at this time. If a second child flow runs in parallel, an error occurs during runtime.
+> - Up to six parallel flows in total can run at this time concurrently with the root flow, shifting the previous limit of just one parallel flow.
+> - Child flows can also run other child flows in parallel, consuming from the available pool of six parallel flows. Parallel flow runs are no longer limited to being invoked directly from the parent (root) flow, as was previously the case.
 > - If a child flow runs in parallel, its output variables are ignored. The variables produced from the 'Run desktop flow' action aren't shown in the action modal.
-> - Child flows can't run another child flow in parallel. A parallel flow run is allowed only if invoked directly from the parent (root) flow.
+> - When a parent flow completes its run, it also stops (cancels) its invoked parallel child flows that may still run.
 
 To find more information about how to use the **Run desktop flow** action, go to [Run desktop flow from other desktop flows](../how-to/run-desktop-flow-action.md).
 
@@ -35,7 +36,7 @@ To find more information about how to use the **Run desktop flow** action, go to
 >
 > - A flow's dependencies can't be more than 150 other flows.
 > - Two flows can't directly or indirectly call one-another as this causes a recursion.
-> - In org tenants, the flows must be under the same environment.
+> - In organization tenants, the flows must be under the same environment.
 
 :::image type="content" source="media/runflow/run-desktop-flow-action-with-parallel-run-toggle.png" alt-text="Screenshot of the Run desktop flow action.":::
 
