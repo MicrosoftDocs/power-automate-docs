@@ -1,2 +1,2 @@
 > [!TIP] 
-> For detailed information about using SharePoint with Power Automate, go to the [SharePoint documentation](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers).
+> Learn about using SharePoint with Power Automate in the [SharePoint documentation](/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers).
