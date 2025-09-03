@@ -44,6 +44,8 @@ Select the **Filters** button in the console, and then select **Tags** to filter
 
 Select **Clear** to reset the selected tags quickly.
 
+Alternatively, you can also use the search field in the console, to type a certain tag and filter the flows it's applied to.
+
 ## Delete a tag from your environment
 
 Tags are solution-aware components, so you manage them in your environment's Default solution in the Power Automate portal. Go to the Power Automate portal, select the **Solutions** page, and then select the solution called *Default Solution*. In the list of objects on the left that displays the solution's contents, select the **Tag** component to see all tags available in the current environment (if you have the default *Environment Maker* role with the required permissions).
