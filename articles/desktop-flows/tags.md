@@ -1,11 +1,11 @@
 ---
-title: Tags in desktop flows (preview)
+title: Tags in desktop flows
 description: Learn about tags in Power Automate desktop flows.
 author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 07/01/2025
+ms.date: 09/03/2025
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
@@ -16,15 +16,11 @@ search.audienceType:
   - enduser
 ---
 
-# Tags in desktop flows (preview)
+# Tags in desktop flows
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+Tags are available in the Power Automate for desktop console to help you categorize and group desktop flows. Tags are custom text labels that let you organize your flows and manage them efficiently.
 
-Tags are available (in preview) in the Power Automate for desktop console to help you categorize and group desktop flows. Tags are custom text labels that let you organize your flows and manage them efficiently.
-
-[!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
-
-The **Tags (Preview)** column displays all the tags that are associated with a desktop flow. To manage tags, such as adding or removing them for a flow, select **Manage tags (Preview)** in its context menu in the console. Alternatively, open the **Flow properties** pane and go to the **Tags (preview)** section.
+The **Tags** column displays all the tags that are associated with a desktop flow. To manage tags, such as adding or removing them for a flow, select **Manage tags** in its context menu in the console. Alternatively, open the **Flow properties** pane and go to the **Tags** section.
 
 In this section, add your preferred tags to the selected flow by selecting a tag from the list or creating a new text label. As you type, the list of tags in your environment automatically filters to help you choose an existing tag or create a new one. From the same pane, you can remove any tags previously associated with your flow. Select **Save** in the flow properties for the tag changes to take effect.
 
@@ -34,19 +30,21 @@ In this section, add your preferred tags to the selected flow by selecting a tag
 
 ## Update tags for multiple flows
 
-Select multiple desktop flows and update their tags at the same time by selecting the common context option **Manage tags (Preview)**. A dialog appears, displaying only the tags already associated with all the selected flows. Remove common tags or add new ones associated with all selected flows.
+Select multiple desktop flows and update their tags at the same time by selecting the common context option **Manage tags**. A dialog appears, displaying only the tags already associated with all the selected flows. Remove common tags or add new ones associated with all selected flows.
 
 > [!NOTE]
 > Tags associated with only a subset of the selected flows aren't displayed in this dialog and can't be removed this way.
 
 ## Filter flows based on tags
 
-Select the **Filters** button in the console, and then select **Tags (Preview)** to filter your flows based on the tags you choose from the list. If you select two or more tags, there are two filtering modes:
+Select the **Filters** button in the console, and then select **Tags** to filter your flows based on the tags you choose from the list. If you select two or more tags, there are two filtering modes:
 
 - **Or**: Shows all flows that contain at least one of the selected tags.
 - **And**: Shows only flows that contain all the selected tags.
 
 Select **Clear** to reset the selected tags quickly.
+
+Alternatively, you can also use the search field in the console, to type a certain tag and filter the flows it's applied to.
 
 ## Delete a tag from your environment
 
