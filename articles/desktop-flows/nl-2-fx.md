@@ -1,0 +1,57 @@
+---
+title: Natural language in PowerFx (preview)
+description: Learn about using Power Fx for creating expressions in desktop flows.
+author: nikosmoutzourakis
+ms.service: power-automate
+ms.subservice: desktop-flow
+ms.topic: article
+ms.date: 09/08/2025
+ms.author: nimoutzo
+ms.reviewer: dmartens
+contributors: 
+- DanaMartens
+search.audienceType: 
+  - flowmaker
+  - enduser
+---
+
+
+# Natural Language to PowerFx  (preview)
+[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+This feature uses Copilot to suggest the appropriate PowerFx expression. Users simply need to review and approve Copilot's suggestions by inserting them in the flow.
+
+> [!IMPORTANT]
+> - This is a preview feature.
+> - Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - Copilot is a new technology that's still being developed. It's optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
+
+## Prerequisites
+
+### Availability by region
+
+Copilot in Power Automate for desktop offers different capabilities, which are available in environments located in the following countries/regions:
+
+- United States
+
+### Availability by account type
+
+Currently, Copilot in Power Automate for desktop is only available for users with a work or school account.
+
+## Natural Language to PowerFx (NL2Fx)
+The Natural Language to PowerFx feature in Power Automate for Desktop empowers users to generate PowerFx expressions using plain language prompts. This enhancement simplifies the process of creating expressions, especially for users who may not be familiar with PowerFx syntax.
+
+> [!NOTE]
+> This feature is available only in desktop flows where PowerFx is enabled.
+
+To use the NL2Fx feature, the user begins by clicking the Copilot button next to any input parameter that supports PowerFx expressions. This action opens the NL2Fx pop-up window. 
+
+:::image type="content" source="media/power-fx/nl2fx_open_textbox.png" alt-text="Open the NL2Fx pop up window":::
+
+In the window, the user types a prompt in natural language describing the desired logic or transformation. Once the prompt is entered, the user clicks the Generate button to initiate the creation of a PowerFx expression. 
+While Copilot is generating the expression, the user has the option to cancel the operation by clicking the Stop generating button. 
+
+When Copilot returns a suggestion, the user can choose to insert it directly into the parameter’s value (1). If the suggestion is not satisfactory, the user can ask Copilot to regenerate it (2). 
+:::image type="content" source="media/power-fx/nl2fx_handle_output.png" alt-text="Handle Copilot's suggestion":::
+
+In cases where Copilot cannot generate a suggestion, the user may either retry with the same prompt or enter a new one to refine the request.
