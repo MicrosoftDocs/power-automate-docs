@@ -6,7 +6,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 01/20/2025
+ms.date: 09/08/2025
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -32,8 +32,9 @@ When the action runs, depending on the state of the 'Wait for flow to complete' 
 
 >[!IMPORTANT]
 >
-> - Only one parallel flow is allowed to run at this time. If a second child flow is set to run in parallel, an error occurs during runtime.
-> - Child flows aren't allowed to run another child flow in parallel. A parallel flow run is only allowed, if invoked directly from the parent (root) flow.
+> - Up to six parallel flows in total can run concurrently with the root flow, shifting the previous limit of just one parallel flow.
+> - Child flows can also run other child flows in parallel (no error is thrown in such cases anymore), consuming from the available pool of six parallel flows. Parallel flow runs are no longer limited to being invoked directly from the parent (root) flow, as was previously the case.
+> - When a parent flow completes its run or is stopped, it also stops (cancels) its invoked parallel child flows that might still run.
 
 > [!NOTE]
 > You can find more information regarding input and output variables in [Input and output variables](../manage-variables.md#input-and-output-variables).
