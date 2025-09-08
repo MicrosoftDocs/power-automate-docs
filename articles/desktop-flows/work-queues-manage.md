@@ -2,7 +2,7 @@
 title: Manage work queues
 description: Manage work queues in Power Automate.
 ms.topic: how-to
-ms.date: 12/05/2024
+ms.date: 09/08/2025
 ms.author: appapaio
 ms.reviewer: 
 contributors:
