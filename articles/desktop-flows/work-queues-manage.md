@@ -160,9 +160,6 @@ Status transitions rules have been established in order to optimize the lifecycl
 
 ## Work queues SLA
 
-> [!NOTE]
-> The Work Queues SLA capability is currently being deployed across all supported Power Automate geographies. It might take a few weeks for the feature to become available in all regions.
-
 Work Queues SLA lets organizations define, monitor, and manage service level expectations for items processed through work queues. By setting time-to-live (TTL), SLA violation, and at-risk thresholds, you ensure timely handling of queued work and proactively address delays. This capability improves operational efficiency, helps you stay compliant with business policies, and gives you better visibility into automation adherence to SLA requirements.
 
 Work Queues SLA is configured when [creating](#create-a-work-queue) or [editing](#edit-a-work-queue) your work queue, and can be managed on the work queue list page, work queue details page, and [automation center](../automation-center-overview.md#work-queues-tab).
