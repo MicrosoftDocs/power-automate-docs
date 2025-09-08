@@ -566,6 +566,8 @@
       href: ./desktop-flows/power-fx.md
     - name: Formula reference - desktop flows
       href: /power-platform/power-fx/formula-reference-desktop-flows
+    - name: Natural Language to PowerFx
+      href: ./desktop-flows/nl-2-fx.md
   - name: Custom actions
     items:
     - name: Custom actions
