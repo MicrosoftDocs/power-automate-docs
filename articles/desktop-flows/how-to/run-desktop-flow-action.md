@@ -36,6 +36,10 @@ When the action runs, depending on the state of the 'Wait for flow to complete' 
 > - Child flows can also run other child flows in parallel (no error is thrown in such cases anymore), consuming from the available pool of six parallel flows. Parallel flow runs are no longer limited to being invoked directly from the parent (root) flow, as was previously the case.
 > - When a parent flow completes its run or is stopped, it also stops (cancels) its invoked parallel child flows that might still run.
 
+Sometimes, in a parallel run scenario where a parent flow invokes a child flow, there could be some cases where the run logs of the child flow might be completely or partially missing. This is an expected behaviour that occurs because, in a parallel run setup, the parent flow cancels any running child flows once it completes. This cancellation happens only if the child flow is configured to run in parallel with the “Wait for completion” option set to false.
+
+As a result, the child flow may not have enough time to complete all its actions before being terminated. This leads to incomplete or missing logs, depending on how far the child flow progressed before cancellation.
+
 > [!NOTE]
 > You can find more information regarding input and output variables in [Input and output variables](../manage-variables.md#input-and-output-variables).
 
