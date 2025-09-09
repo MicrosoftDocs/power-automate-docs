@@ -6,8 +6,8 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 04/30/2025
-ms.author: quseleba
+ms.date: 08/28/2025
+ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
 - Yiannismavridis
@@ -72,9 +72,19 @@ To be able to launch the desktop flow from a cloud flow, edit the desktop flow i
 
 ## Endpoint filtering in desktop flows
 
-The browser automation endpoint filtering feature in Power Automate for desktop improves control and security of desktop flows by specifying which web pages can or can't be accessed. This functionality is essential for maintaining compliance with organizational policies and reducing the risk of accessing unwanted or harmful content during a flow's execution. Endpoint filtering is implemented in the "Launch Web Browser" and "Go to web page" actions. It validates each web page request against predefined endpoint criteria before a desktop flow proceeds with browser interactions.
+Power Automate for desktop supports endpoint filtering for both browser automation and desktop UI automation, enhancing control, security, and compliance across desktop flows.
+
+### Browser automation endpoint filtering
+
+This feature improves control and security by specifying which web pages a desktop flow can access during execution. It's implemented in the **Launch Web Browser** and **Go to web page** actions. Each web page request is validated against predefined endpoint criteria before the flow proceeds with browser interactions. You define endpoints by using a URL format or web page name, and wildcards are supported for dynamic matching. This feature helps maintain compliance with organizational policies and reduces the risk of accessing unwanted or harmful content.
 
 Learn more about browser automation endpoint filtering in [Connector endpoint filtering](/power-platform/admin/connector-endpoint-filtering#desktopflow---browser-automation).
+
+### Desktop UI automation filtering
+
+This feature lets you specify which applications and screens a desktop flow can interact with in Power Automate for desktop. You define endpoints by using the application's process name. For processes named `ApplicationFrameHost`, `java`, or `javaw`, which typically represent UWP or Java applications where multiple instances can share the same name, Power Automate for desktop uses both the process name and the window display name to ensure precise targeting. Wildcards are supported for flexible matching. Validation is performed on any action within the UI automation group by checking the Process and/or Name attributes in the selector of the targeted screen, which is usually the parent of the relevant UI element, to determine whether interaction is permitted.
+
+Learn more about UI automation endpoint filtering in [Connector endpoint filtering](/power-platform/admin/connector-endpoint-filtering#desktopflow---UI-automation).
 
 ### Related information
 
