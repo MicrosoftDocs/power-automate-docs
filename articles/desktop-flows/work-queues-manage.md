@@ -2,7 +2,7 @@
 title: Manage work queues
 description: Manage work queues in Power Automate.
 ms.topic: how-to
-ms.date: 12/05/2024
+ms.date: 09/08/2025
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -159,9 +159,6 @@ Status transitions rules have been established in order to optimize the lifecycl
 | **On hold**    | A business or IT user has picked an item to review, assess, and potentially remediate issues.     | Queued              |
 
 ## Work queues SLA
-
-> [!NOTE]
-> The Work Queues SLA capability is currently being deployed across all supported Power Automate geographies. It might take a few weeks for the feature to become available in all regions.
 
 Work Queues SLA lets organizations define, monitor, and manage service level expectations for items processed through work queues. By setting time-to-live (TTL), SLA violation, and at-risk thresholds, you ensure timely handling of queued work and proactively address delays. This capability improves operational efficiency, helps you stay compliant with business policies, and gives you better visibility into automation adherence to SLA requirements.
 
