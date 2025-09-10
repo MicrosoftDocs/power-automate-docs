@@ -1,11 +1,11 @@
 ---
 title: Natural language to Power Fx (preview)
-description: Learn about using Power Fx for creating expressions in desktop flows.
+description: Learn how to use Copilot to create Power Fx expressions from plain language prompts in desktop flows. A powerful tool for users of all skill levels.
 author: nikosmoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/08/2025
+ms.date: 09/11/2025
 ms.author: nimoutzo
 ms.reviewer: dmartens
 contributors: 
@@ -14,6 +14,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
+
 
 
 # Natural language to Power Fx (preview)
@@ -46,17 +47,21 @@ The natural language to Power Fx feature in Power Automate for desktop lets user
 > [!NOTE]
 > This feature is available only in desktop flows where Power Fx is enabled.
 
-To use the natural language to Power Fx feature, select the Copilot button next to any input parameter that supports Power Fx expressions. This action opens the natural language to Power Fx pop-up window. 
+To use the natural language to Power Fx feature:
 
-:::image type="content" source="media\natural-language-powerfx\open-draft-formula-button.png" alt-text="Screenshot of the Set variable dialog highlighting the button for opening the Draft formula window.":::
+1. Select the Copilot button next to any input parameter that supports Power Fx expressions. This action opens the natural language to Power Fx pop-up window. 
 
-In the window, type a prompt in natural language that describes the desired logic or transformation. When you finish entering the prompt, select **Generate** to create a Power Fx expression. While Copilot is generating the expression, you can cancel the operation by selecting **Stop generating**. 
+    :::image type="content" source="media\natural-language-powerfx\open-draft-formula-button.png" alt-text="Screenshot of the Set variable dialog highlighting the button for opening the Draft formula window.":::
 
-When Copilot returns a suggestion, you can insert it directly into the parameter’s value (1). If the suggestion isn't satisfactory, you can ask Copilot to regenerate it (2). 
+1. In the window, type a prompt in natural language that describes the desired logic or transformation. 
 
-:::image type="content" source="media\natural-language-powerfx\insert-reset-buttons.png" alt-text="Screenshot of the Draft formula dialog with the Insert and reset buttons highlighted.":::
+1. When you finish entering the prompt, select **Generate** to create a Power Fx expression. While Copilot is generating the expression, you can cancel the operation by selecting **Stop generating**. 
 
-If Copilot can't generate a suggestion, you can either retry with the same prompt or enter a new one to refine the request.
+1. When Copilot returns a suggestion, you can insert it directly into the parameter’s value (1). If the suggestion isn't satisfactory, you can ask Copilot to regenerate it (2). 
+
+    :::image type="content" source="media\natural-language-powerfx\insert-reset-buttons.png" alt-text="Screenshot of the Draft formula dialog with the Insert and reset buttons highlighted.":::
+
+1. If Copilot can't generate a suggestion, you can either retry with the same prompt or enter a new one to refine the request.
 
 ## Help us improve this feature
 
