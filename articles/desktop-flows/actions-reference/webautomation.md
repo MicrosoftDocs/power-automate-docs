@@ -436,11 +436,7 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 
 
 > [!NOTE]
-> When “Launch mode” parameter is set to “Attach to running instance” option, and it is attached to an URL, it first attempts an exact URL match for half the configured timeout. If unsuccessful, it switches to a partial match for the remaining time.
-> Example: With a 30s timeout and target URL 'www.microsoft.com', Power Automate for desktop tries:
-> 15s for an exact match (www.microsoft.com)
-> 15s for a partial match (e.g., www.microsoft.com/en/microsoft-365?market=af)
-> The higher the timeout, the longer it searches before falling back to partial matching.
+> When “Launch mode” parameter is set to “Attach to running instance” option, and it is attached to an URL, it first attempts an exact URL match for half the configured timeout. If unsuccessful, it switches to a partial match for the remaining time. For example,with a 30s timeout and target URL 'www.microsoft.com', Power Automate for desktop tries initially for 15s for an exact match (www.microsoft.com). If it fails, then it tries for 15s for a partial match (e.g., www.microsoft.com/en/microsoft-365?market=af). The higher the timeout, the longer it searches before falling back to partial matching.
 
 ### Input parameters
 
@@ -483,11 +479,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 
 
 > [!NOTE]
-> When “Launch mode” parameter is set to “Attach to running instance” option, and it is attached to an URL, it first attempts an exact URL match for half the configured timeout. If unsuccessful, it switches to a partial match for the remaining time.
-> Example: With a 30s timeout and target URL 'www.microsoft.com', Power Automate for desktop tries:
-> 15s for an exact match (www.microsoft.com)
-> 15s for a partial match (e.g., www.microsoft.com/en/microsoft-365?market=af)
-> The higher the timeout, the longer it searches before falling back to partial matching.
+> When “Launch mode” parameter is set to “Attach to running instance” option, and it is attached to an URL, it first attempts an exact URL match for half the configured timeout. If unsuccessful, it switches to a partial match for the remaining time. For example,with a 30s timeout and target URL 'www.microsoft.com', Power Automate for desktop tries initially for 15s for an exact match (www.microsoft.com). If it fails, then it tries for 15s for a partial match (e.g., www.microsoft.com/en/microsoft-365?market=af). The higher the timeout, the longer it searches before falling back to partial matching.
 
 
 ### Input parameters
@@ -531,11 +523,7 @@ Launch a new instance or attach to a running instance of Microsoft Edge for auto
 
 
 > [!NOTE]
-> When “Launch mode” parameter is set to “Attach to running instance” option, and it is attached to an URL, it first attempts an exact URL match for half the configured timeout. If unsuccessful, it switches to a partial match for the remaining time.
-> Example: With a 30s timeout and target URL 'www.microsoft.com', Power Automate for desktop tries:
-> 15s for an exact match (www.microsoft.com)
-> 15s for a partial match (e.g., www.microsoft.com/en/microsoft-365?market=af)
-> The higher the timeout, the longer it searches before falling back to partial matching.
+> When “Launch mode” parameter is set to “Attach to running instance” option, and it is attached to an URL, it first attempts an exact URL match for half the configured timeout. If unsuccessful, it switches to a partial match for the remaining time. For example,with a 30s timeout and target URL 'www.microsoft.com', Power Automate for desktop tries initially for 15s for an exact match (www.microsoft.com). If it fails, then it tries for 15s for a partial match (e.g., www.microsoft.com/en/microsoft-365?market=af). The higher the timeout, the longer it searches before falling back to partial matching.
 
 
 ### Input parameters
@@ -754,4 +742,5 @@ This action doesn't produce any variables.
 |Failed to close the web browser|Indicates a problem closing the web browser|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 
