@@ -473,7 +473,7 @@
       href: ./desktop-flows/create-cyberark-credential.md
     - name: Certificate-based authentication
       href: ./desktop-flows/configure-certificate-based-auth.md
-    - name: Machine mapping (preview)
+    - name: Machine mapping
       href: ./desktop-flows/create-machine-mapping.md
   - name: Create desktop flow connections
     href: ./desktop-flows/desktop-flow-connections.md
@@ -566,6 +566,8 @@
       href: ./desktop-flows/power-fx.md
     - name: Formula reference - desktop flows
       href: /power-platform/power-fx/formula-reference-desktop-flows
+    - name: Natural language to Power Fx (preview)
+      href: ./desktop-flows/natural-language-powerfx.md
   - name: Custom actions
     items:
     - name: Custom actions
