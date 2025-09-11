@@ -473,7 +473,7 @@
       href: ./desktop-flows/create-cyberark-credential.md
     - name: Certificate-based authentication
       href: ./desktop-flows/configure-certificate-based-auth.md
-    - name: Machine mapping (preview)
+    - name: Machine mapping
       href: ./desktop-flows/create-machine-mapping.md
   - name: Create desktop flow connections
     href: ./desktop-flows/desktop-flow-connections.md
