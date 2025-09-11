@@ -21,6 +21,8 @@ ms.custom:
 
 # Create a machine mapping credential 
 
+This feature lets you map user account credentials to your robotic process automation (RPA) machines.
+
 ## How a machine mapping works
 
 A machine mapping is a type of credential that can be used in desktop flow connections to use specific credentials depending on the machine assigned.
