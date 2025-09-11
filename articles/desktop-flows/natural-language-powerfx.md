@@ -62,18 +62,3 @@ To use the natural language to Power Fx feature:
     :::image type="content" source="media\natural-language-powerfx\insert-reset-buttons.png" alt-text="Screenshot of the Draft formula dialog with the Insert and reset buttons highlighted.":::
 
 1. If Copilot can't generate a suggestion, you can either retry with the same prompt or enter a new one to refine the request.
-
-## Help us improve this feature
-
-To send feedback, select the thumbs up or thumbs down icon under the AI-generated content. A feedback dialog appears, allowing you to submit feedback to Microsoft. Learn more about how this data is used and your rights in [Microsoft feedback for your organization](/microsoft-365/admin/misc/feedback-user-control).
-
-> [!NOTE]
-> If you can't see the feedback dialog, check if your tenant admin [turned it off](#turn-off-user-feedback-functionality).
-
-### Turn off user feedback functionality
-
-As a Power Platform admin, you can prevent users from sending feedback to Microsoft by disabling the `disableSurveyFeedback` tenant setting. Learn more about viewing and setting tenant settings at [Get-TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/get-tenantsettings) and [Set-TenantSettings](/powershell/module/microsoft.powerapps.administration.powershell/set-tenantsettings).
-
-### Data subject rights requests on user feedback
-
-Admins can view, export, and delete feedback from users by signing in to the [Microsoft 365 admin center](https://admin.microsoft.com) and selecting **Health** > **Product feedback**.
