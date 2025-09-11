@@ -509,7 +509,7 @@
     href: ./desktop-flows/data-loss-prevention.md
   - name: Power Automate console
     href: ./desktop-flows/console.md
-  - name: Tags in desktop flows (preview)
+  - name: Tags in desktop flows
     href: ./desktop-flows/tags.md
   - name: Desktop flow designer
     href: ./desktop-flows/flow-designer.md
