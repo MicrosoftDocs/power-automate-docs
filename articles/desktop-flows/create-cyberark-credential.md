@@ -121,10 +121,8 @@ Now that you complete all the prerequisites steps, you can create your CyberArk 
 1. In the wizard, define a credential name and a brief description, then select **Next**.
 1. When creating a credential in Power Automate, specify where this credential is used. You can use a credential for two types of usage:
     - **Connection**: These are the credentials of the user session on which the desktop flow runs.
-    - **Desktop flows (preview)**: These are credentials that you want to use in a desktop flow. For example, SAP credential, SharePoint credential, Excel password, etc.
+    - **Desktop flows**: These are credentials that you want to use in a desktop flow. For example, SAP credential, SharePoint credential, Excel password, etc.
 
-        > [!NOTE]
-        > For public preview, credentials used in desktop flow actions require CyberArk.
 
 1. Select CyberArk CCP as the type of credential store.
 1. If you already defined a CyberArk store, you can select it from the dropdown. Otherwise, select **Create new**.
