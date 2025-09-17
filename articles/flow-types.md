@@ -43,7 +43,7 @@ Your Power Automate license gives you rights to create and manage flows in Power
 
 If you already have a Power Automate cloud flow that does what you want, you can convert it to an agent flow. Converting it allows you to manage the flow in Copilot Studio and consume Copilot Studio capacity instead of Power Automate billing. You can still access the flow from Power Automate.
 
-Learn more in [Convert a Power Automate flow to an agent flow](/microsoft-copilot-studio/flows-overview.md#convert-a-power-automate-flow-to-an-agent-flow).
+Learn more in [Convert a Power Automate flow to an agent flow](/microsoft-copilot-studio/flows-overview#convert-a-power-automate-flow-to-an-agent-flow).
 
 ## Related information
 
