@@ -136,7 +136,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
 | aka.ms|https| Used to determine the latest version of the .NET 8 installer. |
-| *.builds.dotnet.microsoft.com|https| Downloads the .NET 8 runtime if it isn't already installed on the machine. |
+| builds.dotnet.microsoft.com|https| Downloads the .NET 8 runtime if it isn't already installed on the machine. |
 
 #### Public endpoints for desktop flows runtime
 
@@ -148,6 +148,11 @@ The following table lists endpoint data requirements for connectivity from a use
 | emea.events.data.microsoft.com|https| Handles telemetry for EMEA users.|
 | *.api.powerplatform.com | https | Access to several Power Platform APIs (mandatory for cloud connectors utilization in desktop flows). |
 | *.dynamics.com | https | Access to Dataverse tables (mandatory for custom actions in desktop flows)(also valid for GCC). |
+
+#### Public endpoints for Hosted Machine and Hosted Machine groups
+| Domains | Protocols | Uses |
+| ------- |  -------- | ---- |
+| go.microsoft.com | https | Required for downloading the Power Automate Desktop installer during provisioning. |
 
 > [!NOTE]
 > If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. Learn more about namespace endpoints in [Allowlist of namespaces endpoints required for desktop flows runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-desktop-flows-runtime).
