@@ -10,7 +10,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 03/01/2024
+ms.date: 09/23/2025
 ms.author: kisubedi
 search.audienceType: 
   - flowmaker
@@ -22,9 +22,9 @@ ms.reviewer: angieandrews
 
 The flow owner plays a vital role in the management, control, and maintenance of Power Automate flows. They have the authority to make changes, assign permissions, monitor performance, and ensure the flow meets the organization's requirements. When a flow is created, the creator is automatically set as the flow owner.
 
-The flow owner responsibilities include the following:
+The following list includes flow owner responsibilities:
 
-- **Flow management:** Full control over the flow, including the ability to edit, manage, and delete it. They can make necessary modifications to the flow, update its triggers and actions, or troubleshoot any issues that may arise.
+- **Flow management:** Full control over the flow, including the ability to edit, manage, and delete it. They can make necessary modifications to the flow, update its triggers and actions, or troubleshoot any issues that might arise.
 - **Permissions and sharing:** Determines who can access and use the flow. They can share the flow with other users or teams within the organization.
 - **Monitoring and troubleshooting:** Monitoring their flow's performance, reviewing run history, and addressing errors or exceptions.
 - **Licensing:** The licenses associated with the owner can have an effect on the flow.
@@ -32,7 +32,7 @@ The flow owner responsibilities include the following:
 In cases where ownership needs to be transferred, such as when a flow owner leaves the organization or changes roles, providing a new flow owner ensures a smooth transition. The previous flow owner can transfer ownership to another user to maintain continuity and avoid disruptions in flow management.
 
 If an administrator wants to make changes to a flow, they must first make themselves an owner or co-owner.
-Flows are usually owned by [regular users](/power-platform/admin/create-users#user-types), but if you need to change the owner to a Service Principal application user instead, go to [Change the owner of a cloud flow to a Service Principal application user](#change-the-owner-of-a-cloud-flow-to-a-service-principal-application-user).
+[Regular users](/power-platform/admin/create-users#user-types) usually own flows, but if you need to change the owner to a Service Principal application user instead, go to [Change the owner of a cloud flow to a Service Principal application user](#change-the-owner-of-a-cloud-flow-to-a-service-principal-application-user).
 
 ## Change the owner of a solution-aware cloud flow
 
@@ -47,7 +47,6 @@ Follow these steps to change the owner of a flow.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the menu to the left, either select **My flows**, or select **Solutions** and locate a solution the flow is referenced by.
-non-
 1. Select the flow for which you're changing the owner.
 1. In the **Details** section, select **Edit**.
 
