@@ -1,7 +1,7 @@
 ---
 title: FAQ for Copilot in Power Automate Process Mining
 description: This FAQ discusses Copilot in Process Mining and the key considerations for making use of this technology responsibly.
-ms.date: 04/01/2025
+ms.date: 09/23/2025
 ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
@@ -53,6 +53,6 @@ Copilot is only available in the Azure Data Lake ingestion experience and within
 
 ## Related information
 
-- [Copilot in Process Mining ingestion (preview)](process-mining-copilot-in-ingestion.md)
-- [Copilot in Process Mining process analytics (preview)](process-mining-copilot-in-process-analytics.md)
+- [Copilot in Process Mining ingestion](process-mining-copilot-in-ingestion.md)
+- [Copilot in Process Mining process analytics](process-mining-copilot-in-process-analytics.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
