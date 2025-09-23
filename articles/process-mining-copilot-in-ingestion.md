@@ -1,11 +1,12 @@
 ---
-title: Copilot in Process Mining ingestion (preview)
+title: Copilot in Process Mining ingestion
 description: Learn how to identify your process during data ingestion and auto map your data to the required data schema.
 ms.date: 07/11/2025
 ms.update-cycle: 180-days
 ms.topic: article
 author: HeatherOrt
 contributors:
+  - rosikm
   - janPidych
   - HeatherOrt
   - v-aangie 
@@ -15,9 +16,7 @@ ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
 ---
 
-# Copilot in Process Mining ingestion (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Copilot in Process Mining ingestion
 
 Copilot in Process Mining ingestion navigates you through the ingestion experience in Process Mining. With Copilot in Process Mining ingestion, you can identify your process during data ingestion and automap your data to the required data schema.
 
@@ -27,14 +26,6 @@ Copilot can perform the following actions:
 - Give automapping recommendations to required data schema.
 - Answer your questions about your process data.
 - Answer your general questions about processes.
-
-
-> [!IMPORTANT]
->- This feature is generally available only in the United States region, and is in preview for all other regions.
->- Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
->- For more information, go to our [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520).
->- This capability is powered by [Azure OpenAI Service](/azure/cognitive-services/openai/overview).
->- More information: [FAQ for Copilot data security and privacy in Power Platform](/power-platform/faqs-copilot-data-security-privacy)
 
 ## Prerequisite
 
