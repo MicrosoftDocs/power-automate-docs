@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 04/30/2025
+ms.date: 09/08/2025
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
@@ -200,6 +200,10 @@ You can use the **Merge PDF files** action to take two or more PDF files and mer
 |Failed to merge PDF files|Indicates that an error occurred while merging the files|
 
 > [!NOTE]
-> When you use the "Merge PDF Files" action, don't set the destination for the merged PDF as one of the original files being merged. This can cause the action to fail and might delete the original file. To protect your original documents, always choose a new file location or an existing one that isn't among the original files being merged for the merged PDF output.
+> When you use the **Merge PDF Files** action, don't set the destination for the merged PDF as one of the original files being merged. This can cause the action to fail and might delete the original file. To protect your original documents, always choose a new file location or an existing one that isn't among the original files being merged for the merged PDF output.
+>
+> When using the **Merge PDF files** action, any bookmarks contained in the original PDF files aren't included in the resulting merged PDF. This means that while the document content is successfully combined, navigation bookmarks are lost.
+>
+> Currently, there is no built-in workaround within the product. If bookmarks are required, re-create them manually in the merged PDF, or use an appropriate library in the Run .NET script action.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 06/23/2025
+ms.date: 09/05/2025
 ms.author: cgarty
 ms.reviewer: angieandrews
 ---
@@ -135,6 +135,7 @@ The following table lists endpoint data requirements for connectivity from a use
 
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
+| aka.ms|https| Used to determine the latest version of the .NET 8 installer. |
 | *.builds.dotnet.microsoft.com|https| Downloads the .NET 8 runtime if it isn't already installed on the machine. |
 
 #### Public endpoints for desktop flows runtime

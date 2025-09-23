@@ -33,22 +33,22 @@ Set the screen resolution for unattended flows using the Windows registry. This 
 
 1. This task explains how to modify the Windows registry. We recommend that you first back up any registry keys you modify, such as the Power Automate Desktop key. More information: [How to back up and restore the registry in Windows](https://support.microsoft.com/en-us/topic/how-to-back-up-and-restore-the-registry-in-windows-855140ad-e318-2a13-2829-d428a2ab0692#ID0EBD=Windows_11)
 1. Open the registry editor (Windows key + R, and type 'regedit') and expand the **HKEY_LOCAL_MACHINE** hive.
-1. Locate the **Screen** key in _SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global_. If it doesn't exist, create it: right-click the **Global** key, select **New** > **Key**, type **Screen**, and press Enter.
-1. Locate the following values in _SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen_ and set the corresponding values. If the value names don’t exist, create them. To create them, right-click the **Screen** key, select **New** > **DWORD (32-bit) Value**, type *ScreenResolutionEnabled*, and press Enter. Double-click **ScreenResolutionEnabled**, enter *1*, select **Decimal**, and then select **OK**. Repeat these steps for each value in the following table.
+1. Locate the **Screen** key in :::no-loc text="SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global":::. If it doesn't exist, create it: right-click the **Global** key, select **New** > **Key**, type **Screen**, and press Enter.
+1. Locate the following values in :::no-loc text="SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen"::: and set the corresponding values. If the value names don’t exist, create them. To create them, right-click the **Screen** key, select **New** > **DWORD (32-bit) Value**, type *ScreenResolutionEnabled*, and press Enter. Double-click **ScreenResolutionEnabled**, enter *1*, select **Decimal**, and then select **OK**. Repeat these steps for each value in the following table.
 
    When editing DWORD values, be sure to select the **Decimal** base (hexadecimal is selected by default), to avoid having your values interpreted as hexadecimal which results in incorrect resolution settings.
 
    ![Screenshot of the registry DWORD edit window with decimal base selected.](media/set-screen-resolution-unattended-mode/WidthRegDwordDecimalBase.png)
 
 > [!IMPORTANT]
-> The registry keys are in the 32-bit registry because the Power Automate installer writes its registry settings there. However, if the screen resolution keys are set in the 64-bit registry (for example, SOFTWARE\Microsoft\Power Automate Desktop\Global\Screen), they take precedence. If the settings don't work as expected, check both locations and use only one.
+> The registry keys are in the 32-bit registry because the Power Automate installer writes its registry settings there. However, if the screen resolution keys are set in the 64-bit registry (for example, :::no-loc text="SOFTWARE\Microsoft\Power Automate Desktop\Global\Screen":::), they take precedence. If the settings don't work as expected, check both locations and use only one.
 
 | Key | Name | Type | Value |
 |---|---|---|---|
-| SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | ScreenResolutionEnabled | DWORD | If set to '1', will enable the custom resolution settings. |
-| SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | Width | DWORD | Set the screen resolution width, such as 1920. |
-| SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | Height | DWORD | Set the screen resolution height, such as 1080. |
-| SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen | Scale | DWORD | Set the screen resolution scale, such as 100. |
+| :::no-loc text="SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen"::: | ScreenResolutionEnabled | DWORD | If set to '1', will enable the custom resolution settings. |
+| :::no-loc text="SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen"::: | Width | DWORD | Set the screen resolution width, such as 1920. |
+| :::no-loc text="SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen"::: | Height | DWORD | Set the screen resolution height, such as 1080. |
+| :::no-loc text="SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global\Screen"::: | Scale | DWORD | Set the screen resolution scale, such as 100. |
 
 ## With UIFlowService.exe.config file (deprecated)
 
