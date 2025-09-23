@@ -23,7 +23,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Create desktop flows using Record with Copilot (preview) - TO BE DEPRECATED
+# Create desktop flows using Record with Copilot (preview) - DEPRECATED
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
