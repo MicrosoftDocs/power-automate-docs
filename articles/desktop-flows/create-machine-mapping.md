@@ -1,11 +1,11 @@
 ---
-title: Create a machine-credential mapping (preview)
+title: Create a machine-credential mapping 
 description: Learn how to create a machine-credential mapping for your desktop flow connection.
 author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 02/19/2025
+ms.date: 09/11/2025
 ms.author: quseleba
 ms.reviewer: dmartens
 contributors:
@@ -19,17 +19,9 @@ ms.custom:
   - ai-seo-date:01/16/2025
 ---
 
-# Create a machine mapping credential (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Create a machine mapping credential 
 
 This feature lets you map user account credentials to your robotic process automation (RPA) machines.
-
-> [!IMPORTANT]
->
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is gradually rolling out across regions and might not be available in your region.
 
 ## How a machine mapping works
 
