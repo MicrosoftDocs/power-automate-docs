@@ -6,7 +6,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: concept-article
-ms.date: 08/28/2025
+ms.date: 09/23/2025
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -36,43 +36,46 @@ Debug a desktop flow using the following tools:
 
 Select **Run** or press **F5** to run the flow. When the flow runs, **Run** becomes **Pause**. Select **Pause** or press **Ctrl + Pause** while the flow is running to pause and inspect any changes up to that point. Select **Run** while the flow is paused to resume it. The **Run next action** button and the **F10** shortcut run the flow action by action and pause it after each action completes. The **Stop** button and the **Shift + F5** shortcut stop the flow completely.
 
-![Screenshot of the toolbar.](media/run-stop-pause/toolbar.png)
+:::image type="content" source="media/run-stop-pause/toolbar.png" alt-text="Screenshot of the toolbar.":::
 
 ## Adding breakpoints
 
 Click to the left of the running order number in the workspace to place a breakpoint in the flow, which appears as a red dot. Add a breakpoint to specify at which action to pause the flow. Resume running the flow by selecting **Run** or **Run next action**. Select the breakpoint to remove it.
 
-![Screenshot of an added breakpoint.](media/adding-breakpoints/add-breakpoint.png)
+:::image type="content" source="media/adding-breakpoints/add-breakpoint.png" alt-text="Screenshot of an added breakpoint.":::
 
 ## Run a desktop flow by action
 
 The **Run next action** button runs the flow action by action. After each action is completed, the flow is paused. Open the variables pane to check the value of any variable at the point where it's paused. This feature is useful for debugging.
 
 ## Step over and step out
-Power Automate for Desktop provides two additional debugging options—step over and step out—to improve control and visibility during flow execution.
 
-To utilize these new debugging features, users must first enable stepping mode. This is done by navigating to the Debug menu located in the designer toolbar. 
+Power Automate for desktop provides two additional debugging options: step over and step out. These features give you more control and visibility during flow execution.
 
-![Screenshot of Stepping mode.](media/step-over-step-out/enable_stepping_mode.png)
+To use these debugging features, you first need to enable stepping mode. Go to the **Debug** menu in the designer toolbar and turn on the **Stepping Mode** toggle.  
 
-Once stepping mode is activated, two additional options become available within the flow designer:
-- Step over, which can be triggered using the keyboard shortcut F11.
-- Step out, which can be triggered using the keyboard shortcut Shift+F11.
+:::image type="content" source="media/step-over-step-out/enable-stepping-mode.png" alt-text="Screenshot of stepping mode.":::
 
-![Screenshot of step over and step out options in designer.](media/step-over-step-out/options_in_designer.png)
+When you activate stepping mode, you get two extra options in the flow designer:
+- Step over, which you can trigger with the keyboard shortcut <kbd>F11</kbd>.
+- Step out, which you can trigger with the keyboard shortcut <kbd>Shift</kbd>+<kbd>F11</kbd>.
 
-These options are only enabled when the flow is either not currently executing or is in a paused state. A flow enters a paused state under the following circumstances:
-- The user manually selects a pause option.
-- The user selects 'Run next action' option.
+:::image type="content" source="media/step-over-step-out/designer-options.png" alt-text="Screenshot of step over and step out options in designer.":::
+
+These options are only available when the flow isn't running or is paused. A flow pauses in the following situations:
+- You manually select a pause option.
+- You select the **Run next action** option.
 - Execution reaches a predefined breakpoint.
-- The step over option is applied during execution.
-- The step out option is applied during a subflow execution except for the Main subflow.
+- You apply the step over option during execution.
+- You apply the step out option during a subflow execution, except for the main subflow.
 
-### Behavior of the step over option
-The step over command allows users to execute actions one at a time while maintaining control over the flow’s progression. When used before a 'Run subflow' action, it executes the entire subflow and then pauses at the next action following it. For all other actions, step over simply runs the current action and pauses at the next one.
+### Step over
 
-### Behavior of the step out option
-The step out command is used to exit an executing subflow and return to its caller. If applied during a subflow, it completes that subflow and pauses after the corresponding 'Run subflow' action in the parent flow. When used in the Main subflow, step out behaves like the standard 'Run' command, allowing execution to continue uninterrupted.
+The step over command lets you execute actions one at a time while keeping control over the flow’s progression. When you use it before a **Run subflow** action, it runs the entire subflow and then pauses at the next action. For all other actions, step over runs the current actions and pauses at the next one.
+
+### Step out
+
+The step out command exits an executing subflow and returns to its caller. If you apply it during a subflow, it completes that subflow and pauses after the corresponding **Run subflow** action in the parent flow. When you use it in the main subflow, step out works like the standard **Run** command and lets execution continue without interruption.
 
 ## The status bar
 
@@ -84,13 +87,13 @@ The status bar also displays the number of errors, if any are present. Select th
 
 If you search inside the flow, the status bar shows an additional field containing the number of the results. Select this field to pop up the **Find in code** pane.
 
-![Screenshot of the status bar.](media/status-bar/status-bar.png)
+:::image type="content" source="media/status-bar/status-bar.png" alt-text="Screenshot of the status bar.":::
 
 ## Run from here
 
 To run the flow starting from a specific action, right-click the action and select **Run from here**. This ignores all previous actions and runs the flow from the selected action onwards.
 
-![Screenshot of the Run from here option.](media/run-stop-pause/run-from-here.png)
+:::image type="content" source="media/run-stop-pause/run-from-here.png" alt-text="Screenshot of the Run from here option.":::
 
 ## Power Automate reserved keywords
 
