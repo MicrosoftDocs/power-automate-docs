@@ -11,7 +11,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 03/28/2025
+ms.date: 09/23/2025
 ms.author: cgarty
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -120,7 +120,7 @@ The following table contains a list of [FlowEvent.EventCode](/power-apps/develop
 |IngestionRateDataLoss|Some of the run history for cloud flows might be missing due to high volume of runs in this environment.|
 |FlowRunsEventLoadingFailed|Unable to load the events for cloud flow runs in your current environment. As a result, some historical cloud flow run data might not be available.|
 |FlowRunsTTlSettingFailedMessage|Unable to retrieve your environment's TTL (time-to-live) setting for cloud flow runs. As a result, some historical cloud flow run data might not be available.|
-|ElasticTableNoRoleForUser|A user who owns one or more flows doesn't have read permissions to the FlowRun table in Dataverse, so some cloud flow run history isn't saved in Dataverse. The reason is because that user can't be set as the owner.|
+|ElasticTableNoRoleForUser|A user who owns one or more flows doesn't have read permissions to the FlowRun table in Dataverse, so some cloud flow run history isn't saved in Dataverse. The reason is that the user can't be set as the owner.|
 
 ## Known limitations
 
@@ -128,6 +128,7 @@ The following table contains a list of [FlowEvent.EventCode](/power-apps/develop
 - Flow owners need at least read access to the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) table to store their run records in Dataverse. The system writes [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records into the table and then ownership is assigned to the primary owner of the flow. If the primary owner of the flow doesn't have read permission to the FlowRun table then the FlowRun record isn't stored and a [FlowEvent.EventCode](/power-apps/developer/data-platform/reference/entities/flowevent#BKMK_eventcode) of *ElasticTableNoRoleForUser* is seen in the [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) table. To fix this situation, ensure that flow owners have FlowRun table read permission.
 - Currently, there's a limit of 20 GB per partition within elastic tables. Further run record insertions, only for that specific user, would fail once the limit is reached.
 - [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) records might be throttled and skipped if a user has many flows with high run rates. When throttling occurs, an entry is created in the [FlowEvent](/power-apps/developer/data-platform/reference/entities/flowevent) table to signal that runs were skipped and the data set is incomplete.
+- We don't recommend using the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) and [FlowLog](/power-apps/developer/data-platform/reference/entities/flowlog) entities as targets of the **When a row is added, modified or deleted** flow trigger. This causes an infinite loop, as records are created in these tables every time a flow runs.
 
 > [!NOTE]
 > The underlying data stream used for powering the cloud flow run record insertions isn't transactional, and hence isn't 100 percent lossless. Small data losses on this data stream might happen due to temporary, non-repeating service issues. Those missing records aren't represented by FlowEvent. Flow execution history within flow details in the Power Automate portal is transactional, and therefore provides a lossless view of runs.
