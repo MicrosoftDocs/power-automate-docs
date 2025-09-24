@@ -153,14 +153,16 @@ The following table lists endpoint data requirements for connectivity from a use
 > If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. Learn more about namespace endpoints in [Allowlist of namespaces endpoints required for desktop flows runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-desktop-flows-runtime).
 
 #### Public endpoints for hosted machines and hosted machine groups
+
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
 | go.microsoft.com | https | Required for downloading the Power Automate for desktop installer during provisioning. |
-| enterpriseregistration.windows.net | https | Required for joining machines to Entra. |
-| device.login.microsoftonline.com | https | Required for joining machines to Entra. |
-| login.microsoftonline.com | https | Required for joining machines to Entra. |
+| enterpriseregistration.windows.net | https | Required for joining machines to Microsoft Entra. |
+| device.login.microsoftonline.com | https | Required for joining machines to Microsoft Entra. |
+| login.microsoftonline.com | https | Required for joining machines to Microsoft Entra. |
+
 > [!NOTE]
-> These required endpoints come in addition to all the endpoints listed in the Desktop Flows runtime and desktop MSI installer.
+> You must also configure all endpoints listed in the [desktop flows runtime](#public-endpoints-for-desktop-flows-runtime) and [desktop MSI installer](#global-endpoints-for-power-automate-for-desktop-msi-installer) sections in addition to these endpoints.
 
 #### US Government endpoints for desktop flows runtime
 
