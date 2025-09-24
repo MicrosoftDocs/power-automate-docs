@@ -23,7 +23,7 @@
       items:
         - name: Triggers overview
           href: triggers-introduction.md
-        - name: Actions-overview
+        - name: Actions overview
           href: actions-introduction.md  
         - name: Work with triggers and actions
           href: work-with-triggers-actions.md
