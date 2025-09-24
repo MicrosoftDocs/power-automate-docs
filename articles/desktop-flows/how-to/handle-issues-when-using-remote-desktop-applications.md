@@ -1,22 +1,23 @@
 ---
-title: Handle ssues with Power Automate for desktop when using remote desktop applications
+title: Using Power Automate for desktop with remote desktop applications
 description: Provides a resolution for the issues that Power Automate for desktop faces when using remote desktop applications.
-ms.reviewer: iomavrid
+author: yiannismavridis
+ms.author: iomavrid
+ms.reviewer: matp
+ms.topic: conceptual
 ms.date: 09/23/2025
 ms.custom: sap:Desktop flows\Working with Power Automate for desktop
 ---
-# Handle issues with Power Automate for desktop when using remote desktop applications
+# Using Power Automate for desktop with remote desktop applications
 
-This article provides insights for issues occurring when using remote desktop applications with Power Automate for desktop.
+This article provides the policy when issues occur when you use certain remote desktop applications with Power Automate for desktop.
 
-You may have run into the following scenario:
-* Power Automate for desktop becomes unresponsive or appears to freeze when accessed via remote desktop applications.
-* The issue is often observed when using third-party remote access tools such as TeamViewer or Quick Assist.
+You might experience an issue where Power Automate for desktop becomes unresponsive or appears to freeze when accessed through certain remote desktop applications.
 
-This happens because injecting third-party libraries into Power Automate for desktop is not a supported scenario. Remote desktop software that relies on such techniques may interfere with Power Automate’s normal operation, leading to performance issues or application freezes.
+The issue can occur when using third-party remote access tools such as TeamViewer or Quick Assist. This happens because injecting non-Microsoft libraries into Power Automate for desktop isn't supported. Remote desktop software that relies on such techniques can interfere with Power Automate’s normal operation, leading to performance issues or application freezes.
 
 Example of injected library from TeamViewer:
 
-:::image type="content" source="media/handle-issues-when-using-remote-desktop-applications/teamviewer-injected-library.png" alt-text="Injected library from TeamViewer.":::
+:::image type="content" source="media/using-remote-desktop-applications/teamviewer-injected-library.png" alt-text="Injected library from TeamViewer.":::
 
-To overcome this issue, avoid using remote desktop solutions that inject libraries into the target system. Instead, use alternative remote access tools that do not interfere with Power Automate’s runtime environment. This helps ensure stable and responsive behavior when working remotely.
+To resolve this issue, avoid using remote desktop solutions that inject libraries into the target system. Instead, use alternative remote access tools that don't interfere with Power Automate’s runtime environment. This helps ensure stable and responsive behavior when you work remotely. <!-- What about Remote Desktop Services? Can we suggest that as a remote access tool?-->
