@@ -32,11 +32,7 @@ To use hosted machine group, you need the **Power Automate Hosted Process** lice
 
 ### Trial licenses for evaluation
 
-To evaluate the hosted machine group, you need one of the following trial licensing options:
-
-- Use the **Power Automate Hosted Process** license
-
-    The Power Automate Hosted Process license has trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home) and assign Power Automate Hosted Process capacity to the targeted environment.
+To evaluate the hosted machine group, you have the following trial licensing option:
 
 - Use the 90-days self-assisted premium trial.
 
