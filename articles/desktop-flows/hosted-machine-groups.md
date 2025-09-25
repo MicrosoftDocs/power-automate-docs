@@ -5,7 +5,7 @@ author: kenseongtan
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 05/19/2025
+ms.date: 09/25/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
