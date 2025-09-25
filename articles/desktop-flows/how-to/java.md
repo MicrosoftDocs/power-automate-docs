@@ -31,7 +31,7 @@ OpenJ9 editions of the Java runtime aren't supported.
 
 In order to automate Java applications, particular settings must be in place. 
 
-To install the Java configuration manually, after Power Automate for desktop has been installed, navigate to the installation folder (**C:\Program Files (x86)\Power Automate Desktop**) and run the **PAD.Java.Installer.exe** as an administrator. 
+To install the Java configuration manually, after Power Automate for desktop has been installed, navigate to the installation folder (**C:\Program Files (x86)\Power Automate Desktop**) and run the **PAD.Java.Installer.Host.exe** as an administrator. 
 
 Logs for Java automation with Power Automate for desktop can be found in the **%temp%/ java_automation_log** folder (for example, **C:\Users\username\AppData\Local\Temp\java_automation_log**). 
 
