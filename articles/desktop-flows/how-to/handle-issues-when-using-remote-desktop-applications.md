@@ -20,4 +20,4 @@ Example of injected library from TeamViewer:
 
 :::image type="content" source="media/using-remote-desktop-applications/remote-access-injected-library.png" alt-text="Injected library from TeamViewer.":::
 
-To resolve this issue, avoid using remote desktop solutions that inject libraries into the target system. Instead, use alternative remote access tools that don't interfere with Power Automate’s runtime environment. This helps ensure stable and responsive behavior when you work remotely. <!-- What about Remote Desktop Services? Can we suggest that as a remote access tool?-->
+To resolve this issue, avoid using remote desktop solutions that inject libraries into the target system. Instead, use alternative remote access tools, like Remote Desktop Connection, which don't interfere with Power Automate’s runtime environment. This helps ensure stable and responsive behavior when you work remotely. <!-- What about Remote Desktop Services? Can we suggest that as a remote access tool?-->
