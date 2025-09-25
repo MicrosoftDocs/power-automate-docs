@@ -80,7 +80,7 @@ Here are the detailed steps to create the flow.
 
 1. Enter the **Site Address** and then select the **List Name** on the **When an item is created or modified** card.
 
-1. Provide the **Site Address** and **List Name** for the SharePoint list your flow monitors for new or updated items.
+   The previous step provides the **Site Address** and **List Name** for the SharePoint list your flow monitors for new or updated items.
 
 ## Search the destination for the new or changed item
 
@@ -174,7 +174,7 @@ If the item exists in the destination, update it with the changes.
 
 1. Add the **SQL Server - Update row** action to the **If no** branch of the **Condition**.
 
-1. Follow the steps in the [create the item](odata-filters.md#create-the-item-in-the-destination) section of this document to populate the columns of the table.
+1. Reference the steps in the [create the item in the destination](odata-filters.md#create-the-item-in-the-destination) section of this document to populate the columns of the table.
 
     :::image type="content" alt-text="Screenshot of the destination items." source="media/odata-filters/update-row.png":::
 
