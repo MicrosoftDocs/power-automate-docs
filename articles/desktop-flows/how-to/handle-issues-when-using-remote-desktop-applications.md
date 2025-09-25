@@ -14,7 +14,7 @@ This article provides the policy when issues occur when you use certain remote d
 
 You might experience an issue where Power Automate for desktop becomes unresponsive or appears to freeze when accessed through certain remote desktop applications.
 
-The issue can occur when using third-party remote access tools such as TeamViewer or Quick Assist. This happens because injecting non-Microsoft libraries into Power Automate for desktop isn't supported. Remote desktop software that relies on such techniques can interfere with Power Automate’s normal operation, leading to performance issues or application freezes.
+The issue can occur when using certain remote access tools such as TeamViewer or Quick Assist. This happens because injecting non-Microsoft libraries into Power Automate for desktop isn't supported. Remote desktop software that relies on such techniques can interfere with Power Automate’s normal operation, leading to performance issues or application freezes.
 
 Example of injected library from TeamViewer:
 
