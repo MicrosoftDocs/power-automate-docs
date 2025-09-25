@@ -32,11 +32,7 @@ To use hosted machine group, you need the **Power Automate Hosted Process** lice
 
 ### Trial licenses for evaluation
 
-To evaluate the hosted machine group, you have the following trial licensing option:
-
-- Use the 90-days self-assisted premium trial.
-
-    Trial users can create up to 10 hosted machine groups and have up to two bots running in parallel in a given environment. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
+To evaluate the hosted machine group, use the 90-days self-assisted premium trial. Trial users can create up to 10 hosted machine groups and have up to two bots running in parallel in a given environment. To start a trial, select **Try free** under **Power Automate Premium** in the [Power Automate pricing page](https://powerautomate.microsoft.com/pricing/) or the desktop flow page of the [Power Automate portal](https://make.powerautomate.com/).
 
 ## Prerequisites
 
