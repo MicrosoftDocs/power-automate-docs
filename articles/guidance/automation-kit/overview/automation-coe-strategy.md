@@ -99,7 +99,7 @@ The Automation Kit and components of the CoE Starter Kit, including the ALM Acce
 
 #### ALM components
 
-- **Code Review**: Reviews for solutions in Azure DevOps with the ALM Accelerator. The ALM Accelerator Azure DevOp extensions allow the solution to be unpacked and the script definition from the exported solution versions to be compared for changes side by side.
+- **Code Review**: Reviews for solutions in Azure DevOps with the ALM Accelerator. The ALM Accelerator Azure DevOps extensions allow the solution to be unpacked and the script definition from the exported solution versions to be compared for changes side by side.
 - **Monitoring**: The Automation Kit provides a near real-time tracking process to measure the impact of deployed solutions.
 - **Data Loss Prevention**: Determine the impact of DLP rules on deployed desktop flows using the Automation Kit.
 - **Dashboard and Data ETL**: Synchronize data from multiple environments to a centralized dashboard to monitor the impact of deployed solutions.
