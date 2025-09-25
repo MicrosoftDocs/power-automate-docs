@@ -25,7 +25,7 @@ By analyzing recorded user actions, the task mining capability in Power Automate
 
 ## Benefits of the task mining capability
 
-The task mining capability helps busunesses to: 
+The task mining capability helps businesses to: 
 
 - Streamline workflows.
 - Identify inefficiencies and bottlenecks in workflows.
