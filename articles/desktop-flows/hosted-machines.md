@@ -39,9 +39,7 @@ Key capabilities:
 
 ## Licensing requirements
 
-To use hosted machines, you need the **Power Automate Hosted Process** license (previously Power Automate hosted RPA add-on). Assign to your environment as much capacity as the number of hosted machines you want to run in your environment.
-
-You also need the following prerequisite licenses: Windows, Intune, Microsoft Entra ID.
+To use hosted machines, you need the **Power Automate Hosted Process** license (previously Power Automate hosted RPA add-on). You also need the following prerequisite licenses: Windows, Intune, Microsoft Entra ID.
 
 > [!NOTE]
 > The Hosted Process licenses the machines and not the user. The Premium user plan is required to run attended RPA, and for RPA developers to build and manage desktop flows on the Power Automate portal. To learn more about the Premium RPA features that come with the Premium user plan, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
