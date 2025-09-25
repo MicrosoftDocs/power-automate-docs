@@ -571,9 +571,19 @@ Example:
 ```PowerShell
 .\makeCabFile.ps1 "C:\Users\Username\source\repos\MyCustomModule\bin\Release\net472" "C:\Users\Username\MyCustomActions" MyCustomActions.cab
 ```
+
+## Signing the cab file
+
+Sign the .cab file using a trusted certificate by running the following command in a Developer Command Prompt for Visual Studio:
+
+```
+Signtool sign /fdws /f {path to your certificate}.pfx /p {your password for exporting the certificate} {path to the .cab you want to sign}.cab
+```
+
+
 > [!NOTE]
 > - Make sure that the the actual custom actions .dll file is in the root level of the targetted path when creating the .cab file and not in a subfolder.
-> - The .cab file must also be signed. Unsigned .cab files and/or unsigned .dlls contained in them will not be usable in desktop flows and will result in error during inclusion.
+> - Unsigned .cab files and/or unsigned .dlls contained in them will not be usable in desktop flows and will result in error during inclusion.
 
 ## Next steps
 
