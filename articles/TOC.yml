@@ -727,7 +727,9 @@
     - name: Timeout configuration for UI/browser automation
       href: ./desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md
     - name: Configure the open terminal session action
-      href: ./desktop-flows/how-to/terminal-emulation-open-new-session.md  
+      href: ./desktop-flows/how-to/terminal-emulation-open-new-session.md
+    - name:  Using remote desktop applications
+      href: ./desktop-flows/how-to/handle-issues-when-using-remote-desktop-applications.md
   - name: ALM for desktop flows
     items:
     - name: Overview for configuring ALM for desktop flows
