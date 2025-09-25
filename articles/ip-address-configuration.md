@@ -136,7 +136,7 @@ The following table lists endpoint data requirements for connectivity from a use
 | Domains | Protocols | Uses |
 | ------- |  -------- | ---- |
 | aka.ms|https| Used to determine the latest version of the .NET 8 installer. |
-| *.builds.dotnet.microsoft.com|https| Downloads the .NET 8 runtime if it isn't already installed on the machine. |
+| builds.dotnet.microsoft.com|https| Downloads the .NET 8 runtime if it isn't already installed on the machine. |
 
 #### Public endpoints for desktop flows runtime
 
@@ -151,6 +151,18 @@ The following table lists endpoint data requirements for connectivity from a use
 
 > [!NOTE]
 > If you don’t want to allow the public endpoint **\*.servicebus.windows.net**, you can allow the list of namespaces individually. Learn more about namespace endpoints in [Allowlist of namespaces endpoints required for desktop flows runtime](limits-and-config.md#allowlist-of-namespaces-endpoints-required-for-desktop-flows-runtime).
+
+#### Public endpoints for hosted machines and hosted machine groups
+
+| Domains | Protocols | Uses |
+| ------- |  -------- | ---- |
+| go.microsoft.com | https | Required for downloading the Power Automate for desktop installer during provisioning. |
+| enterpriseregistration.windows.net | https | Required for joining machines to Microsoft Entra. |
+| device.login.microsoftonline.com | https | Required for joining machines to Microsoft Entra. |
+| login.microsoftonline.com | https | Required for joining machines to Microsoft Entra. |
+
+> [!NOTE]
+> You must also configure all endpoints listed in the [desktop flows runtime](#public-endpoints-for-desktop-flows-runtime) and [desktop MSI installer](#global-endpoints-for-power-automate-for-desktop-msi-installer) sections in addition to these endpoints.
 
 #### US Government endpoints for desktop flows runtime
 
