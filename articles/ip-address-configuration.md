@@ -8,8 +8,8 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 09/05/2025
-ms.author: cgarty
+ms.date: 09/26/2025
+ms.author: cponath
 ms.reviewer: angieandrews
 ---
 
@@ -97,6 +97,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.api.high.powerplatform.microsoft.us <br> *.high.api.bap.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
 | *.api.appsplatform.us <br> *.api.bap.appsplatform.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
 | *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn <br> *.logic.azure.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
+| *.safelink.emails.azure.net | https | Links in emails from Power Automate. |
 
 ### Allow users on your network to use Power Automate mobile app
 
