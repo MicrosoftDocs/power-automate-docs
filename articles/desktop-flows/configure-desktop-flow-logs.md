@@ -159,5 +159,6 @@ Learn more about [querying JSON columns in elastic tables](/power-apps/developer
 - Bulk-delete jobs aren't currently supported for the **Flow Log** table.
 - Flow log records can't yet be viewed in the Table section of the maker portal (make.powerapps.com).
 - Changing action log version doesn't migrate previous desktop flow action logs to the new log storage type.
+- It is not recommended to use the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) and [FlowLog](/power-apps/developer/data-platform/reference/entities/flowlog) entities as targets of the "When a row is added, modified or deleted" Flow trigger. This would cause an infinite loop, as records are created in these tables every time a flow is run.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
