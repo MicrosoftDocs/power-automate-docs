@@ -23,9 +23,12 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Create desktop flows using Record with Copilot (preview)
+# Create desktop flows using Record with Copilot (preview) - DEPRECATED
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+
+## Note
+The functionality to **Record with Copilot** will be deprecated soon. To create a flow, [describe it with natural language using Copilot](copilot-in-power-automate-for-desktop.md#create-a-desktop-flow-using-copilot-preview) in combination with using the [recorder](recording-flow.md).
 
 ## Introduction
 
