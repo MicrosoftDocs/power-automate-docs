@@ -335,7 +335,7 @@ Yes, once the issues noted here are resolved and the new cloud flows designer ca
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Tutorial: Get started with cloud flows](get-started-with-cloud-flows.md)
+> [Triggers overview](triggers-introduction.md)
 
 ## Related information
 

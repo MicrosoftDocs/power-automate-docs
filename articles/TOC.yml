@@ -31,12 +31,12 @@
           href: customize-triggers.md
     - name: Create cloud flows
       items:
+        - name: Explore the cloud flows designer
+          href: flows-designer.md
         - name: Create your first cloud flow using Copilot
           href: create-cloud-flow-using-copilot.md
         - name: Create your first cloud flow without Copilot
           href: create-cloud-flow-without-copilot.md
-        - name: Explore the cloud flows designer
-          href: flows-designer.md
         - name: "Tutorial: Get Started with cloud flows"
           href: get-started-with-cloud-flows.md
         - name: Copilot in cloud flows FAQ

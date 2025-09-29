@@ -5,8 +5,9 @@ author: kewaiss
 contributors:
   - kewaiss
   - v-aangie
-ms.date: 08/08/2025
-ms.topic: how-to
+ms.date: 10/01/2025
+ms.topic: article
+ms.update-cycle: 180-days
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.author: kewaiss
@@ -33,7 +34,7 @@ A *trigger* is an event that starts a cloud flow. It defines the conditions unde
 
 If you're using Copilot to create your flow, Copilot automatically chooses the appropriate cloud flow type and trigger for you based on your description. If you're creating a flow without Copilot, you need to make these choices on your own.
 
-In this article, you'll learn how to trigger a flow in three ways: automatically using predefined triggers, scheduled based on a specified date and time, and manually, as determined by you. After you create a trigger, you'll learn how to replace it in an existing flow, and add actions to your flow to tell the trigger what to do after it starts.
+In this article, you'll learn how to trigger a flow in three ways: automatically using predefined triggers, scheduled based on a specified date and time, and manually, as determined by you. After you create a trigger, you'll learn how to replace it in an existing flow, and then add actions to your flow to tell the trigger what to do after it starts.
 
 ## Select a trigger to start a flow when a designated event happens
 
@@ -49,11 +50,11 @@ An [automated cloud flow](overview-cloud.md#types-of-cloud-flows) is triggered b
 
     Scroll through the list of triggers or use the search box to find the one you want. If you want to display more triggers, select **Show more**.
 
-    :::image type="content" source="media/work-with-triggers/triggers-automated.png" alt-text="Screenshot of some of the triggers available for automated cloud flows.":::
+    :::image type="content" source="media/work-with-triggers-actions/triggers-automated.png" alt-text="Screenshot of some of the triggers available for automated cloud flows.":::
 
 1. Select **Create**. Your trigger appears in the designer.
 
-    :::image type="content" source="media/work-with-triggers/triggers-automated-designer.png" alt-text="Screenshot of the trigger in the designer for an automated cloud flow.":::
+    :::image type="content" source="media/work-with-triggers-actions/triggers-automated-designer.png" alt-text="Screenshot of the trigger in the designer for an automated cloud flow.":::
 
 1. After you create a trigger, your next step is to add the actions that will take place once your trigger starts the cloud flow. When you save your flow, it runs automatically when the trigger condition is met. For example, if you selected the *When a new email arrives* trigger, your flow runs automatically every time you receive a new email.
 
@@ -73,7 +74,7 @@ When you create a scheduled cloud flow, Power Automate automatically assigns the
 1. In the **at** dropdown menu, select the time to start the flow.
 1. In the **Repeat every** field and the recurrence dropdown menu, select the recurrence pattern, such as every day, every week, or every month.
 
-    :::image type="content" source="media/work-with-triggers/triggers-scheduled.png" alt-text="Screenshot of the 'Build a scheduled cloud flow' screen.":::
+    :::image type="content" source="media/work-with-triggers-actions/triggers-scheduled.png" alt-text="Screenshot of the 'Build a scheduled cloud flow' screen.":::
 
 1. Select **Create**. Your trigger appears in the designer.
 
@@ -95,7 +96,7 @@ An instant cloud flow is triggered manually, such as when you select a button in
 
     There are many triggers to start your flow. For example, you can trigger it manually with the click of a button, when a Dataverse row is selected, or for a selected Team message.
 
-    :::image type="content" source="media/work-with-triggers/triggers-instant.png" alt-text="Screenshot of some of the triggers available for instant cloud flows.":::
+    :::image type="content" source="media/work-with-triggers-actions/triggers-instant.png" alt-text="Screenshot of some of the triggers available for instant cloud flows.":::
 
 1. Select **Create**. Your trigger appears in the designer.
 
@@ -173,7 +174,7 @@ You work with actions in the *designer*. Power Automate allows you to use either
 
     If you want a list of actions to choose from instead, you can select from four categories in the **Add an action** pane: **Favorites**, **AI capabilities**, **Built-in tools**, and **By connector**. Learn how to quickly find the action you need in [Configuration pane](flows-designer.md#configuration-pane).
 
-    :::image type="content" source="media/work-with-triggers/add-action-new.png" alt-text="Screenshot of the 'Add an actions' pane.":::
+    :::image type="content" source="media/work-with-triggers-actions/add-action-new.png" alt-text="Screenshot of the 'Add an actions' pane.":::
 
     If the action you want to add isn't in the list, select **See more** to display more actions.
 
@@ -186,13 +187,60 @@ You work with actions in the *designer*. Power Automate allows you to use either
 1. In the **Choose an operation** search field, enter a keyword or phrase to find the action you want to add. For example, you can enter *send an email* to find the **Send an email (V2)** action.
 1. In the **Actions** list, select the action you want to add. The action is added to your flow.
 
-    :::image type="content" source="media/work-with-triggers/add-action-classic.png" alt-text="Screenshot of the 'Actions' list in the 'Choose an operation' card.":::
+    :::image type="content" source="media/work-with-triggers-actions/add-action-classic.png" alt-text="Screenshot of the 'Actions' list in the 'Choose an operation' card.":::
 
     If the action you want to add isn't in the list, select **See more** to display more actions.
 
 1. On the command bar at the top of the screen, select **Save**.
 
 ---
+
+## Add another action
+
+In this procedure, you add an action in the middle of the flow. This action saves a file in your Dropbox, archiving the item in the list.
+
+1. Sign into [Power Automate](https://make.powerautomate.com).
+1. On the left navigation pane, select **My flows**.
+1. In the list of flows, select the **Edit** icon next to the flow you want to edit.
+1. Select **New step**, enter **dropbox** in the search field, and select **Create file - Dropdown** in the **Actions** list.
+
+    :::image type="content" source="media/work-with-triggers-actions/create-file-search.png" alt-text="Screenshot of creating a Dropbox file.":::
+
+1. If prompted, provide your Dropbox credentials.
+1. Select the folder icon on the right side of the **Folder path** box.
+1. Select **>**, and then choose the folder in which you want to place the new file.
+1. Enter the name of the new file into the **File name** box. Be sure to append an extension, such as ".txt", to the file name. Here, let's use the **TweetId** in the file's name to ensure uniqueness of the files. You might have to select **See more** to find the **TweetId** token.
+1. Add the text that you want the file to contain by typing into the **File content** box. You can also add tokens into the **File content** box.
+
+    If the file name you enter matches an existing file's name in the selected folder, the existing file is overwritten.
+
+1. Save your flow.
+1. Send a tweet that contains the keyword you specified.
+
+     In about a minute, a file is created in your Dropbox account.
+
+## Reorder or delete an action
+
+To receive email after the file is created in Dropbox, move the Dropbox action by dragging its title bar above the email action. Release the Dropbox action over the arrow between the trigger (**When a new tweet is posted**) and the email action. (The cursor indicates whether the action is positioned correctly.)
+  
+> [!NOTE]
+> You can't move a step before another if you're using any outputs from that step.
+
+To delete an action, select **...** (the ellipsis) near the right edge of the title bar for the action you want to delete, select **Delete**, and then select **OK**.
+
+> [!NOTE]  
+> You can't delete an action if you're using any outputs from it anywhere in the flow. First, remove those outputs from the fields, and then you can delete the action.
+
+## Copy and paste actions
+
+If you want to duplicate actions while designing a cloud flow, you can copy and paste them. For example, if you're building a condition and want similar actions in the **If yes/true** side and the **If no/false** side, you can build the first action in one side and then copy it to the other side. This is an alternative to creating both actions from scratch.
+
+1. On the action menu heading, select **...** (the ellipses).
+1. Select **Copy to my clipboard**.
+1. Select **New step** where you want your action to go.
+
+     Notice the **My clipboard** tab that lets you choose from all of the actions that you copied.
+1. Select the item you want to paste.
 
 ## Related information
 

@@ -9,7 +9,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
-ms.date: 08/07/2025
+ms.date: 10/01/2025
 ms.update-cycle: 180-days
 ms.author: kewaiss
 ms.reviewer: angieandrews
@@ -37,7 +37,6 @@ Learn more about triggers in this quick video:</br>
 
 Triggers can be started instantly or manually, on a schedule, or automatically when an external event occurs, such as when an email arrives. The following table lists some common trigger scenarios and the type of flow you should create.
 
-
 |Trigger scenario |Flow type |
 |---------|---------|
 |Run a cloud flow with a tap of a button on your mobile device to remind your team to join the daily team meeting. You can trigger these flows manually from any device.  | Instant/manual   |
@@ -58,7 +57,7 @@ To find your license:
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Work with triggers](work-with-triggers.md)
+> [Actions overview](actions-introduction.md)
 
 ## Related information
 
