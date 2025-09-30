@@ -78,7 +78,7 @@ When you create a scheduled cloud flow, Power Automate automatically assigns the
 
 1. Select **Create**. Your trigger appears in the designer.
 
-    :::image type="content" source="media/work-with-triggers/triggers-scheduled-designer.png" alt-text="Screenshot of the 'Recurrence' trigger in the designer for a scheduled cloud flow.":::
+    :::image type="content" source="media/work-with-triggers-actions/triggers-scheduled-designer.png" alt-text="Screenshot of the 'Recurrence' trigger in the designer for a scheduled cloud flow.":::
 
 1. After you create a trigger, your next step is to add the actions that will take place once your trigger starts the cloud flow. When you save your flow, it runs automatically at the specified time, or on the specified schedule. For example, if you set the recurrence to run every day at 10:00 AM, your flow runs automatically every day at that time.
 
@@ -94,13 +94,13 @@ An instant cloud flow is triggered manually, such as when you select a button in
 1. On the **Build an instant cloud flow** screen, enter a name for your flow.
 1. In the **Choose how to trigger this flow** field, search for and select the trigger you want to use.
 
-    There are many triggers to start your flow. For example, you can trigger it manually with the click of a button, when a Dataverse row is selected, or for a selected Team message.
+    There are many triggers to start your flow. For example, you can trigger it manually with the click of a button, when a Dataverse row is selected, or for a selected Team message.work-with-triggers-actions.md
 
     :::image type="content" source="media/work-with-triggers-actions/triggers-instant.png" alt-text="Screenshot of some of the triggers available for instant cloud flows.":::
 
 1. Select **Create**. Your trigger appears in the designer.
 
-    :::image type="content" source="media/work-with-triggers/triggers-instant-designer.png" alt-text="Screenshot of the trigger in the designer for an instant cloud flow.":::
+    :::image type="content" source="media/work-with-triggers-actions/triggers-instant-designer.png" alt-text="Screenshot of the trigger in the designer for an instant cloud flow.":::
 
 1. After you create a trigger, your next step is to add the actions that will take place once your trigger starts the cloud flow. When you save your flow, you can start it in either the portal or on your mobile phone. Unlike an automatic flow and a scheduled flow, you need to start an instant flow *manually*. After you activate the flow, you can check if the actions you added are executed as expected.
 
@@ -241,6 +241,11 @@ If you want to duplicate actions while designing a cloud flow, you can copy and 
 
      Notice the **My clipboard** tab that lets you choose from all of the actions that you copied.
 1. Select the item you want to paste.
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Explore the cloud flows designer](flows-designer.md)
 
 ## Related information
 

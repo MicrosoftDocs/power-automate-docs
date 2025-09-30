@@ -1,5 +1,5 @@
 ---
-title: Add an advanced option and multiple actions in Power Automate
+title: Add advanced options to actions in a cloud flow
 description: Expand a cloud flow to include an advanced option, such as how to add collaboration comments to actions and triggers, set email to high priority, and add another action for the same event.
 suite: flow
 author: v-aangie
@@ -15,7 +15,7 @@ search.audienceType:
 ms.custom: sfi-image-nochange
 ---
 
-# Add multiple actions and advanced options to a cloud flow
+# Add advanced options to actions in a cloud flow
 
 Customize a cloud flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced option that sends an email message as high priority. In addition to sending mail when an item is added to a list created in Microsoft Lists, create a file in Dropbox that contains the same information.
 
@@ -23,7 +23,7 @@ Customize a cloud flow by adding one or more advanced options and multiple actio
 
 ## Prerequisites
 
-[Create a cloud flow](get-started-logic-flow.md)
+[Create a cloud flow](get-started-with-cloud-flows.md)
 
 ## Add advanced options
 
@@ -31,7 +31,7 @@ Start with a cloud flow that has a **Send an email (V2)** action.
 
 1. On the bottom of the **Send an email (V2)** card, select **Show advanced options**.
 
-     You see the advanced options for sending an email. The word **Show** changes to **Hide** so that you can toggle the advanced options.
+     The advanced options for sending an email appear. The word **Show** changes to **Hide** so that you can toggle the advanced options.
 
     > [!div class="mx-imgBorder"]
     >![Screenshot of showing advanced options.](./media/multi-step-logic-flow/advanced.png "Show/hide advanced options")
