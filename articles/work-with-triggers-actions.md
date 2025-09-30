@@ -235,9 +235,9 @@ To delete an action, select **...** (the ellipsis) near the right edge of the ti
 
 If you want to duplicate actions while designing a cloud flow, you can copy and paste them. For example, if you're building a condition and want similar actions in the **If yes/true** side and the **If no/false** side, you can build the first action in one side and then copy it to the other side. This is an alternative to creating both actions from scratch.
 
-1. On the action menu heading, select **...** (the ellipses).
+1. On the action menu heading, select **...** (the ellipsis).
 1. Select **Copy to my clipboard**.
-1. Select **New step** where you want your action to go.
+1. Select **New step** where you want your action to be located.
 
      Notice the **My clipboard** tab that lets you choose from all of the actions that you copied.
 1. Select the item you want to paste.
