@@ -1,3 +1,21 @@
+---
+title: Ingest Object-centric Event Log (preview)
+description: Learn how to ingest an object-centric event log.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie
+ms.service: power-automate
+ms.subservice: process-advisor
+ms.topic: overview
+ms.date: 10/01/2025
+ms.author: michalrosik
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.audienceType:
+- enduser
+---
+
 # Ingest Object-centric Event Log (preview)
 
 To access OCPM analysis in Power Automate Process Mining it is first necessary to create a process model by ingesting the object-centric event log. 
