@@ -1,3 +1,21 @@
+---
+title: OCPM Process Overview (preview)
+description: Learn how to analyze process in object-centric process mining.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie
+ms.service: power-automate
+ms.subservice: process-advisor
+ms.topic: overview
+ms.date: 10/01/2025
+ms.author: michalrosik
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.audienceType:
+- enduser
+---
+
 # OCPM Process Overview (preview)
 This article describes the key elements of the **Process Overview** page generated after ingesting an Object-Centric Event Log (OCEL). The page provides a high-level visualization and analysis of the end-to-end process based on objects such as purchase orders, requisitions, quotations, goods receipts, invoices, payments, and materials.
 
