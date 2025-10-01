@@ -29,7 +29,7 @@ OCPM in Power Automate Process Mining supports the following filter types:
 ## Managing Filters
 Filters are managed in the filter tollbar at the top of the active tab. Filters are applied to all visuals and widgets in the active tab.
 
-:::image type="content" source="/media/object-centric-process-mining/ocpm-filter-toolbar.png" alt-text="Screenshot of the filter toolbar in Process Intelligence Studio for OCPM.":::
+:::image type="content" source="media/object-centric-process-mining/ocpm-filter-toolbar.png" alt-text="Screenshot of the filter toolbar in Process Intelligence Studio for OCPM.":::
 
 ### Adding a filter
 To add a filter, navigate to the **Add filter** button in the toolbar and select the desired filter type. A configuration panel for the selected filter will open. Click **Apply** to confirm the filter criteria.
@@ -49,7 +49,7 @@ To remove all currently set filters at once, click the **Clear filters** button 
 ## Object Type Filter
 Object Type filters allow you to select which specific object types to include or exclude from your analysis, enabling you to focus on particular entities within your process ecosystem. For example, in an order-to-cash process, you might filter to show only "Orders" and "Customers" while temporarily excluding "Items" to simplify the process view and concentrate on customer-level behavior.
 
-:::image type="content" source="/media/object-centric-process-mining/ocpm-filter-object-type.png" alt-text="Screenshot of the OCPM object type filter configuration panel.":::
+:::image type="content" source="media/object-centric-process-mining/ocpm-filter-object-type.png" alt-text="Screenshot of the OCPM object type filter configuration panel.":::
 
 In the configuration panel, select (or search and select):
 - **Object Type** - checked object types will be included into the analysis
@@ -62,7 +62,7 @@ Proximity level used in the filter defines the degree of separation between obje
 - 2 levels - directly connected objects (via common events) including the objects of the same object type
 - 3 and more levels - recursively adding indirectly connected objects related to the objects identified in the previous level
 
-:::image type="content" source="/media/object-centric-process-mining/ocpm-filter-object-proximity.png" alt-text="Screenshot of the OCPM object proximity filter configuration panel.":::
+:::image type="content" source="media/object-centric-process-mining/ocpm-filter-object-proximity.png" alt-text="Screenshot of the OCPM object proximity filter configuration panel.":::
 
 In the configuration panel, select (or search and select):
 - **Object Type** - values for the selected object type will be loaded
@@ -72,7 +72,7 @@ In the configuration panel, select (or search and select):
 ## Object Attribute Filter
 Object Attribute filters allow you to select objects based on specific characteristics or properties, such as customer region, order value, product category, or any other attribute associated with an object type. By filtering on attributes, you can segment your analysis to compare different cohorts, investigate specific scenarios (e.g., high-value orders or premium customers), or isolate cases that meet particular business criteria relevant to your analysis goals.
 
-:::image type="content" source="/media/object-centric-process-mining/ocpm-filter-object-attribute.png" alt-text="Screenshot of the OCPM object attribute filter configuration panel.":::
+:::image type="content" source="media/object-centric-process-mining/ocpm-filter-object-attribute.png" alt-text="Screenshot of the OCPM object attribute filter configuration panel.":::
 
 In the configuration panel, select (or search and select):
 - **Object Type** - attributes for the selected object type will be loaded
@@ -83,7 +83,7 @@ In the configuration panel, select (or search and select):
 ## Timeframe Filter
 Timeframe filters enable you to restrict your analysis to objects active within a specific time period, such as a particular quarter, month, or custom date range. This is essential for comparing process performance across different periods, analyzing seasonal trends, focusing on recent data for operational monitoring, or excluding historical data that may no longer reflect current process behavior.
 
-:::image type="content" source="/media/object-centric-process-mining/ocpm-filter-timeframe.png" alt-text="Screenshot of the OCPM timeframe filter configuration panel.":::
+:::image type="content" source="media/object-centric-process-mining/ocpm-filter-timeframe.png" alt-text="Screenshot of the OCPM timeframe filter configuration panel.":::
 
 In the configuration panel, select (or search and select):
 - **Object Type** - objects of the selected object type will be analyzed whether they are active in the selected timeframe
