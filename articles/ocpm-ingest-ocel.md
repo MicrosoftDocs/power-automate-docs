@@ -32,7 +32,7 @@ To prepare the object-centric evenet log please follow the guidelines in [How to
 
 4. Under the **Data source** heading, **Azure Data Lake** or **OneLake** and click **Continue**.
 
-   :::image type="content" source="/media/object-centric-process-mining/ocpm-create-process.png" alt-text="Screenshot of the 'Create a new process' step.":::
+   :::image type="content" source="media/object-centric-process-mining/ocpm-create-process.png" alt-text="Screenshot of the 'Create a new process' step.":::
 
 6. The subsequent steps on the **Connection setup** screen, differ for Azure Data Lake or OneLake, please follow the respective documentation until you reach the attribute mapping screen:
 
@@ -50,12 +50,12 @@ To prepare the object-centric evenet log please follow the guidelines in [How to
      * **Event level attribute** is bound to the event itself, so even if the event is referencing several objects of different object types, the attribute is bound to the event in all of the referenced objects.
      * **Object level attribute** is bound to the object of a particular referenced object type. The values is taken from the last or first event referencing that object type. To define the object level attribute first select the **Object Level Attribute (first or last event)**  and in the selection next to it, select the **Object type** to which the object level attribute is connected.
 
-   :::image type="content" source="/media/object-centric-process-mining/ocpm-map-data.png" alt-text="Screenshot of the 'Map your data' step.":::
+   :::image type="content" source="media/object-centric-process-mining/ocpm-map-data.png" alt-text="Screenshot of the 'Map your data' step.":::
 
 9. Click **Save and Analyze**
 
 10. After the ingestion is finished you should be navigated to the **Process Intelligence Studio for OCPM** with **Process overview** tab active.
 
-   :::image type="content" source="/media/object-centric-process-mining/ocpm-process-overview.png" alt-text="Screenshot of the 'Process overview' tab in Process Intelligence Studio for OCPM.":::
+   :::image type="content" source="media/object-centric-process-mining/ocpm-process-overview.png" alt-text="Screenshot of the 'Process overview' tab in Process Intelligence Studio for OCPM.":::
 
    Learn more about [Process Intelligence Studio for OCPM - Process overview.](ocpm-process-overview.md)
