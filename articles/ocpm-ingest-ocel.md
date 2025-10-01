@@ -20,7 +20,7 @@ search.audienceType:
 
 To access OCPM analysis in Power Automate Process Mining it is first necessary to create a process model by ingesting the object-centric event log. 
 
-To prepare the object-centric evenet log please follow the guidelines in [How to Create an Object‑Centric Event Log (OCEL)](), and store the resulting file in a CSV format in either Azure Data Lake Gen2 or OneLake.
+To prepare the object-centric evenet log please follow the guidelines in [How to Create an Object‑Centric Event Log (OCEL)](ocpm-create-ocel.md), and store the resulting file in a CSV format in either Azure Data Lake Gen2 or OneLake.
 
 ## Ingesting the data
 
@@ -58,4 +58,4 @@ To prepare the object-centric evenet log please follow the guidelines in [How to
 
    ![Screenshot of the 'Process overview' tab in Process Intelligence Studio for OCPM.](/media/object-centric-process-mining/ocpm-process-overview.png)
 
-   Learn more about [Process Intelligence Studio for OCPM - Process overview.]()
+   Learn more about [Process Intelligence Studio for OCPM - Process overview.](ocpm-process-overview.md)
