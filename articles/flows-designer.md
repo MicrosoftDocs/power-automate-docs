@@ -335,7 +335,7 @@ Yes, once the issues noted here are resolved and the new cloud flows designer ca
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Triggers overview](triggers-introduction.md)
+> [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)<br/>Or<br/>[Create your first cloud flow without Copilot](create-cloud-flow-without-copilot.md)
 
 ## Related information
 

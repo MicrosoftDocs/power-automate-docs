@@ -57,7 +57,7 @@ To find your license:
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Actions overview](actions-introduction.md)
+> [Actions](actions-introduction.md)
 
 ## Related information
 

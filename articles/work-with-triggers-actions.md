@@ -245,7 +245,7 @@ If you want to duplicate actions while designing a cloud flow, you can copy and 
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Explore the cloud flows designer](flows-designer.md)
+> [Customize your triggers with conditions](customize-triggers.md)
 
 ## Related information
 

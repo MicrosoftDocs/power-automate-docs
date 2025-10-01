@@ -56,7 +56,7 @@ Here are some scenarios that require multiple actions and examples of actions yo
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Work with triggers and actions](work-with-triggers-actions.md)
+> [Explore the cloud flows designer](flows-designer.md)
 
 ## Related information
 
