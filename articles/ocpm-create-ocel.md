@@ -1,3 +1,21 @@
+---
+title: Creating an Object‑Centric Event Log (preview)
+description: Learn how to create an object-centric event log.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie
+ms.service: power-automate
+ms.subservice: process-advisor
+ms.topic: overview
+ms.date: 10/01/2025
+ms.author: michalrosik
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.audienceType:
+- enduser
+---
+
 # Creating an Object‑Centric Event Log (preview)
 
 Creating an object‑centric event log (OCEL) is about translating a real‑world process into a structured dataset that accurately reflects the relationships between events and business objects. Unlike traditional case‑centric logs, this approach captures the complexity of scenarios where multiple objects interact within the same event. The goal is to produce a clean, consistent, and analysis‑ready log that supports object‑centric process mining without unnecessary complexity. The following sections outline best practices and a practical workflow to help you build such a log efficiently.
