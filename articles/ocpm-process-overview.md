@@ -17,9 +17,14 @@ search.audienceType:
 ---
 
 # OCPM Process Overview (preview)
+
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+
 This article describes the key elements of the **Process Overview** page generated after ingesting an Object-Centric Event Log (OCEL). The page provides a high-level visualization and analysis of the end-to-end process based on objects such as purchase orders, requisitions, quotations, goods receipts, invoices, payments, and materials.
 
    :::image type="content" source="media/object-centric-process-mining/ocpm-process-overview.png" alt-text="Screenshot of the 'Process overview' tab in Process Intelligence Studio for OCPM.":::
+
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Page Header
 - **Process Name & Path**: Shows the name of the process and navigation breadcrumbs.
