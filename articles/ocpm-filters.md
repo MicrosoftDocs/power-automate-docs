@@ -1,4 +1,23 @@
+---
+title: Using Filters in OCPM Analysis (preview)
+description: Learn how to apply filters in OCPM analysis.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie
+ms.service: power-automate
+ms.subservice: process-advisor
+ms.topic: overview
+ms.date: 10/01/2025
+ms.author: michalrosik
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.audienceType:
+- enduser
+---
+
 # Using Filters in OCPM Analysis (preview)
+
 Filters are essential tools in object-centric process mining that allow analysts to focus on specific subsets of data by narrowing down events, objects, or object types based on defined criteria. Unlike case-centric event log filtering, object-centric filters must account for multiple interconnected object types and their relationships, enabling more nuanced analysis of complex business processes. By applying filters strategically, you can isolate bottlenecks, compare different process paths, analyze specific customer segments, or exclude outliers—ultimately transforming large, unwieldy datasets into meaningful insights. 
 
 OCPM in Power Automate Process Mining supports the following filter types:
