@@ -19,7 +19,7 @@ search.audienceType:
 # OCPM Process Overview (preview)
 This article describes the key elements of the **Process Overview** page generated after ingesting an Object-Centric Event Log (OCEL). The page provides a high-level visualization and analysis of the end-to-end process based on objects such as purchase orders, requisitions, quotations, goods receipts, invoices, payments, and materials.
 
-   :::image type="content" source="/media/object-centric-process-mining/ocpm-process-overview.png" alt-text="Screenshot of the 'Process overview' tab in Process Intelligence Studio for OCPM.":::
+   :::image type="content" source="media/object-centric-process-mining/ocpm-process-overview.png" alt-text="Screenshot of the 'Process overview' tab in Process Intelligence Studio for OCPM.":::
 
 ## Page Header
 - **Process Name & Path**: Shows the name of the process and navigation breadcrumbs.
@@ -38,20 +38,20 @@ A central visualization showing the process flow across multiple objects:
 
 - **Nodes (Activities)**: Represent process steps such as creating purchase requisition, order approval, issuing goods receipt, invoice creation, and payment execution. Some activities, so called *object touchpoints* are related to more than one object type. They are depicted with several object type touch points on the left side of the node.
 
-  :::image type="content" source="/media/object-centric-process-mining/ocpm-activity-node.png" alt-text="Screenshot of the detail of an activity.":::
+  :::image type="content" source="media/object-centric-process-mining/ocpm-activity-node.png" alt-text="Screenshot of the detail of an activity.":::
 
 - **Edges (Relations)**: Show dependencies between activities and the control flow per object type (e.g., Create purchase order leading to a Approve purchase order). The edges are color coded per object type.
 
-  :::image type="content" source="/media/object-centric-process-mining/ocpm-edge.png" alt-text="Screenshot of the detail of an edge.":::
+  :::image type="content" source="media/object-centric-process-mining/ocpm-edge.png" alt-text="Screenshot of the detail of an edge.":::
 
 - **Color Coding by Object Type**: Each object type is represented with a distinct color (e.g., purchase order, requisition, quotation, material, goods receipt, invoice, payment).
 - **Object Creation/Disposal nodes**: artificially added nodes that show the start and end of the object type existence or involvment in the process.
 
-  :::image type="content" source="/media/object-centric-process-mining/ocpm-object-create-dispose.png" alt-text="Screenshot of the detail of a creation and disposal node.":::
+  :::image type="content" source="media/object-centric-process-mining/ocpm-object-create-dispose.png" alt-text="Screenshot of the detail of a creation and disposal node.":::
 
 - **Labels on Activities and Edges**: Indicate selected metric value of edge or activity, e.g. how many times a certain activity occured in the process. Color coding per object type is used to  identify the relation of the metric to a specific object type.
 
-  :::image type="content" source="/media/object-centric-process-mining/ocpm-activity-node.png" alt-text="Screenshot of the detail of an activity with frequency metrics displayed.":::
+  :::image type="content" source="media/object-centric-process-mining/ocpm-activity-node.png" alt-text="Screenshot of the detail of an activity with frequency metrics displayed.":::
 
 The toolbar in the bottom left corner of the process map allows to:
 - **Zoom the map in and out** (you can use mouse scroll wheel or touchpade two finger swipe to do the same)
@@ -61,14 +61,14 @@ The toolbar in the bottom left corner of the process map allows to:
 ### Process Map customization
 Selecting the **Settings** icon in the top right corner of the process map visual opens a panel, where you can modify the map configuration.
 
-:::image type="content" source="/media/object-centric-process-mining/ocpm-process-map-settings.png" alt-text="Screenshot of the Settings panel of a Process Map visual.":::
+:::image type="content" source="media/object-centric-process-mining/ocpm-process-map-settings.png" alt-text="Screenshot of the Settings panel of a Process Map visual.":::
 
 - **Selected metric** allows you to change the metric visualized at the activities and edges
 - **Activities** slider allows you to increase or decrease the complexity of the process map by showing or hiding the activity nodes based on their frequency in the process.
 - **Paths** slider allows you to increase or decrease the complexity of the process map by showing or hiding the edges based on their frequency in the process.
 - Activities and Paths can be configured using a common slider which is valid for all object types in the map, or using **detailed set of sliders** which allow to set individual settings per object type. You can access these by selecting the left pointing arrow icon next to **Activities settings** and **Paths settings**
 
-  :::image type="content" source="/media/object-centric-process-mining/ocpm-process-map-settings-expanded.png" alt-text="Screenshot of the detail view of Settings panel of a Process Map visual with detailed sliders.":::
+  :::image type="content" source="media/object-centric-process-mining/ocpm-process-map-settings-expanded.png" alt-text="Screenshot of the detail view of Settings panel of a Process Map visual with detailed sliders.":::
   
 Click **Apply** button to confirm the configuration.
 
@@ -96,7 +96,7 @@ Widget gives insight into process cycle time variability.
 ### Process Analysis customization
 Selecting the **Settings** icon in the top right corner of the widget opens a panel, where you can configure the widget.
 
-:::image type="content" source="/media/object-centric-process-mining/ocpm-process-analysis-settings.png" alt-text="Screenshot of the Settings panel of a Process Analysis widget.":::
+:::image type="content" source="media/object-centric-process-mining/ocpm-process-analysis-settings.png" alt-text="Screenshot of the Settings panel of a Process Analysis widget.":::
 
 - **Leading object** allows you to select a different object type for process analysis perspective (process execution identification)
 - Selecting **Add path** button allows you to define specific **From** and To **activities** in the process. For each you need to define if you want to analyze **first** or **last occurence** of that activity.
