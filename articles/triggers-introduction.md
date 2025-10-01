@@ -1,5 +1,5 @@
 ---
-title: Triggers overview
+title: Triggers
 description: Learn about triggers in Power Automate.
 author: samathur
 contributors:
@@ -20,7 +20,7 @@ ms.custom:
   - DevRelAdv
 ---
 
-# Triggers overview
+# Triggers
 
 A *trigger* is an event that starts a cloud flow. For example, you want to get a notification in Microsoft Teams when someone sends you an email. In this case, receiving an email is the trigger that starts this flow.
 

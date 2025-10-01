@@ -1,5 +1,5 @@
 ---
-title: Actions overview
+title: Actions
 description: Learn about actions in Power Automate.
 author: kewaiss
 contributors:
@@ -17,7 +17,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Actions overview
+# Actions
 
 *Actions* are the events or operations you want the flow to do after the [trigger](triggers-introduction.md) event takes place. Examples of actions are: send emails, update records, or post messages. Actions can interact with a wide variety of services and applications, which helps you automate repetitive tasks and streamline business processes without the need for manual intervention.
 

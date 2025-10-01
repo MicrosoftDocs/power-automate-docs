@@ -19,16 +19,12 @@
   items:
     - name: Overview
       href: overview-cloud.md
-    - name: Parts of a cloud flow
+    - name: Components of cloud flows
       items:
-        - name: Triggers overview
+        - name: Triggers
           href: triggers-introduction.md
-        - name: Actions overview
+        - name: Actions
           href: actions-introduction.md  
-        - name: Work with triggers and actions
-          href: work-with-triggers-actions.md
-        - name: Customize your triggers with conditions
-          href: customize-triggers.md
     - name: Create cloud flows
       items:
         - name: Explore the cloud flows designer
@@ -38,9 +34,13 @@
         - name: Create your first cloud flow without Copilot
           href: create-cloud-flow-without-copilot.md
         - name: "Tutorial: Get Started with cloud flows"
-          href: get-started-with-cloud-flows.md
-        - name: Copilot in cloud flows FAQ
-          href: faq-copilot-cloud-flows.yml
+          href: get-started-with-cloud-flows.md    
+    - name: Work with triggers and actions
+      href: work-with-triggers-actions.md
+    - name: Customize your triggers with conditions
+      href: customize-triggers.md
+    - name: Copilot in cloud flows FAQ
+      href: faq-copilot-cloud-flows.yml
     - name: How to
       items:
       - name: Add advanced options to actions
