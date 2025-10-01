@@ -24,7 +24,8 @@ search.audienceType:
 
 Real business processes rarely flow as a single, linear “instance.” Events routinely touch **several objects of different types at the same time** (for example, creating an invoice for a specific order, or shipping a package that contains items from multiple orders). OCPM models that reality directly by recording events that relate to **many objects and object types** in one process, preserving their relationships end‑to‑end.
 
-> **Key idea:** Instead of “one case → one sequence of activities,” OCPM lets **one event** belong to **multiple objects** (and object types), keeping the full context intact.
+   > [!NOTE]
+   > **Key idea:** Instead of “one case → one sequence of activities,” OCPM lets **one event** belong to **multiple objects** (and object types), keeping the full context intact.
 
 ## The example we’ll use throughout
 
