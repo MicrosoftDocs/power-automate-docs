@@ -62,7 +62,7 @@ Proximity level used in the filter defines the degree of separation between obje
 - 2 levels - directly connected objects (via common events) including the objects of the same object type
 - 3 and more levels - recursively adding indirectly connected objects related to the objects identified in the previous level
 
-:::image type="content" source="/media/object-centric-process-mining/ocpm-filter-object-proximity.pn" alt-text="Screenshot of the OCPM object proximity filter configuration panel.":::
+:::image type="content" source="/media/object-centric-process-mining/ocpm-filter-object-proximity.png" alt-text="Screenshot of the OCPM object proximity filter configuration panel.":::
 
 In the configuration panel, select (or search and select):
 - **Object Type** - values for the selected object type will be loaded
