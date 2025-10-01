@@ -1,3 +1,21 @@
+---
+title: Overview of Object‑Centric Process Mining (preview)
+description: Learn about object-centric process mining and comparison to case-centric process mining.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie
+ms.service: power-automate
+ms.subservice: process-advisor
+ms.topic: overview
+ms.date: 10/01/2025
+ms.author: michalrosik
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.audienceType:
+- enduser
+---
+
 # Overview of Object‑Centric Process Mining (preview)
 
 **Object‑centric process mining (OCPM)** analyzes processes by following the *real objects that interact*—such as orders, deliveries, invoices, and payments—rather than forcing every event into a single “case ID.” It lets you see the true web of interactions across multiple objects and lifecycles, so you can uncover bottlenecks and dependencies that case‑centric process mining often hides.
