@@ -18,10 +18,14 @@ search.audienceType:
 
 # Creating an Object‑Centric Event Log (preview)
 
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+
 Creating an object‑centric event log (OCEL) is about translating a real‑world process into a structured dataset that accurately reflects the relationships between events and business objects. Unlike traditional case‑centric logs, this approach captures the complexity of scenarios where multiple objects interact within the same event. The goal is to produce a clean, consistent, and analysis‑ready log that supports object‑centric process mining without unnecessary complexity. The following sections outline best practices and a practical workflow to help you build such a log efficiently.
 
    > [!NOTE]
    > The current **preview version** supports data ingestion **only from a CSV file stored in Azure Data Lake or OneLake**. Ensure your final log is exported to one of these locations before proceeding with ingestion.
+
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Target CSV Schema
 
