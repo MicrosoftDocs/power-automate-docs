@@ -967,6 +967,18 @@
       href: process-mining-data-source.md
     - name: Set up millisecond support when ingesting data with dataflows
       href: import-with-milliseconds.md
+  - name: Object-centric Process Mining (preview)
+    items:
+    - name: Overview
+      href: ocpm-overview.md
+    - name: Creating an Object‑Centric Event Log
+      href: ocpm-create-ocel.md
+    - name: Ingest Object-centric Event Log
+      href: ocpm-ingest-ocel.md
+    - name: OCPM Process Overview
+      href: ocpm-process-overview.md
+    - name: Using Filters in OCPM Analysis
+      href: ocpm-filters.md
   - name: Process Mining desktop app
     items:
     - name: Overview
