@@ -67,7 +67,7 @@ A central visualization showing the process flow across multiple objects:
 The toolbar in the bottom left corner of the process map allows to:
 - **Zoom the map in and out** (you can use mouse scroll wheel or touchpade two finger swipe to do the same)
 - **Fit the map to screen**
-- **Toggle a minimap** (helpful to orient better in complex maps with high zoom level)
+- **Toggle a minimap** (helpful to navigate better in complex maps with high zoom level)
 
 ### Process Map customization
 Selecting the **Settings** icon in the top right corner of the process map visual opens a panel, where you can modify the map configuration.
