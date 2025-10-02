@@ -972,9 +972,9 @@
     - name: Overview
       href: object-centric-overview.md
     - name: Creating an Object‑Centric Event Log
-      href: object-centric-create-ocel.md
+      href: object-centric-create-event-log.md
     - name: Ingest Object-centric Event Log
-      href: object-centric-ingest-ocel.md
+      href: object-centric-ingest-event-log.md
     - name: OCPM Process Overview
       href: object-centric-process-overview.md
     - name: Using Filters in OCPM Analysis
