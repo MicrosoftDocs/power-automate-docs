@@ -22,7 +22,7 @@ search.audienceType:
 
 This article describes the key elements of the **Process Overview** page generated after ingesting an Object-Centric Event Log (OCEL). The page provides a high-level visualization and analysis of the end-to-end process based on objects such as purchase orders, requisitions, quotations, goods receipts, invoices, payments, and materials.
 
-   :::image type="content" source="media/object-centric-process-mining/ocpm-process-overview.png" alt-text="Screenshot of the 'Process overview' tab in Process Intelligence Studio for OCPM.":::
+   :::image type="content" source="media/object-centric-process-mining/object-centric-process-overview.png" alt-text="Screenshot of the 'Process overview' tab in Process Intelligence Studio for OCPM.":::
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
@@ -49,20 +49,20 @@ A central visualization showing the process flow across multiple objects:
 
 - **Nodes (Activities)**: Represent process steps such as creating purchase requisition, order approval, issuing goods receipt, invoice creation, and payment execution. Some activities, so called *object touchpoints* are related to more than one object type. They are depicted with several object type touch points on the left side of the node.
 
-  :::image type="content" source="media/object-centric-process-mining/ocpm-activity-node.png" alt-text="Screenshot of the detail of an activity.":::
+  :::image type="content" source="media/object-centric-process-mining/object-centric-activity-node.png" alt-text="Screenshot of the detail of an activity.":::
 
 - **Edges (Relations)**: Show dependencies between activities and the control flow per object type (e.g., Create purchase order leading to a Approve purchase order). The edges are color coded per object type.
 
-  :::image type="content" source="media/object-centric-process-mining/ocpm-edge.png" alt-text="Screenshot of the detail of an edge.":::
+  :::image type="content" source="media/object-centric-process-mining/object-centric-edge.png" alt-text="Screenshot of the detail of an edge.":::
 
 - **Color Coding by Object Type**: Each object type is represented with a distinct color (e.g., purchase order, requisition, quotation, material, goods receipt, invoice, payment).
 - **Object Creation/Disposal nodes**: artificially added nodes that show the start and end of the object type existence or involvment in the process.
 
-  :::image type="content" source="media/object-centric-process-mining/ocpm-object-create-dispose.png" alt-text="Screenshot of the detail of a creation and disposal node.":::
+  :::image type="content" source="media/object-centric-process-mining/object-centric-object-create-dispose.png" alt-text="Screenshot of the detail of a creation and disposal node.":::
 
 - **Labels on Activities and Edges**: Indicate selected metric value of edge or activity, e.g. how many times a certain activity occured in the process. Color coding per object type is used to  identify the relation of the metric to a specific object type.
 
-  :::image type="content" source="media/object-centric-process-mining/ocpm-activity-node.png" alt-text="Screenshot of the detail of an activity with frequency metrics displayed.":::
+  :::image type="content" source="media/object-centric-process-mining/object-centric-activity-node.png" alt-text="Screenshot of the detail of an activity with frequency metrics displayed.":::
 
 The toolbar in the bottom left corner of the process map allows to:
 - **Zoom the map in and out** (you can use mouse scroll wheel or touchpade two finger swipe to do the same)
@@ -72,7 +72,7 @@ The toolbar in the bottom left corner of the process map allows to:
 ### Process Map customization
 Selecting the **Settings** icon in the top right corner of the process map visual opens a panel, where you can modify the map configuration.
 
-:::image type="content" source="media/object-centric-process-mining/ocpm-process-map-settings.png" alt-text="Screenshot of the Settings panel of a Process Map visual.":::
+:::image type="content" source="media/object-centric-process-mining/object-centric-process-map-settings.png" alt-text="Screenshot of the Settings panel of a Process Map visual.":::
 
 - **Selected metric** allows you to change the metric visualized at the activities and edges
 - **Activities** slider allows you to increase or decrease the complexity of the process map by showing or hiding the activity nodes based on their frequency in the process.
@@ -82,7 +82,7 @@ Selecting the **Settings** icon in the top right corner of the process map visua
 > [!NOTE]
 > The process map shows the backbone of the process by default, meaning that both Activities and Paths sliders are set to minimum.
 
-  :::image type="content" source="media/object-centric-process-mining/ocpm-process-map-settings-expanded.png" alt-text="Screenshot of the detail view of Settings panel of a Process Map visual with detailed sliders.":::
+  :::image type="content" source="media/object-centric-process-mining/object-centric-process-map-settings-expanded.png" alt-text="Screenshot of the detail view of Settings panel of a Process Map visual with detailed sliders.":::
   
 Click **Apply** button to confirm the configuration.
 
@@ -113,7 +113,7 @@ Widget gives insight into process cycle time variability.
 ### Process Analysis customization
 Selecting the **Settings** icon in the top right corner of the widget opens a panel, where you can configure the widget.
 
-:::image type="content" source="media/object-centric-process-mining/ocpm-process-analysis-settings.png" alt-text="Screenshot of the Settings panel of a Process Analysis widget.":::
+:::image type="content" source="media/object-centric-process-mining/object-centric-process-analysis-settings.png" alt-text="Screenshot of the Settings panel of a Process Analysis widget.":::
 
 - **Leading object** allows you to select a different object type for process analysis perspective (process execution identification)
 - Selecting **Add path** button allows you to define specific **From** and To **activities** in the process. For each you need to define if you want to analyze **first** or **last occurence** of that activity.
