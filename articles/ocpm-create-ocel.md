@@ -33,7 +33,7 @@ Creating an object‑centric event log (OCEL) is about translating a real‑worl
 
 - `Activity` — human‑readable event name (e.g., *Create Order*, *Pay Invoice*).
 - `Timestamp` — event time in `yyyy-MM-dd HH:mm:ss` (24h) or ISO‑8601.
-- `Resource` — person/system executing the event.
+- `Actor` — person/system executing the event.
 - **One column per object type** used in your process (e.g., `Order`, `Invoice`, `Payment`, …).
   - If an event touches **multiple** objects of the same type, separate with `|` (e.g., `O1|O2`).
 - **Object‑type attributes (optional but recommended)** — columns that hold attributes of an object referenced by the event (e.g., `PaymentAmount` for a `Payment` present in the row).
@@ -54,7 +54,7 @@ Creating an object‑centric event log (OCEL) is about translating a real‑worl
    Choose the minimal set of object types (e.g., `Order`, `Invoice`, `Payment`; optionally `SupplierOrder`).
 2. **Inventory source events**
    Identify upstream event sources (tables/logs/status changes) and map each source record to
-   `Activity`, `Timestamp`, `Resource`, target object columns, and any needed attributes.
+   `Activity`, `Timestamp`, `Actor`, target object columns, and any needed attributes.
 3. **Map objects to events**
    Populate object IDs for each event; use `|` when an event touches multiple same‑type objects.
 4. **Normalize attributes**
@@ -120,7 +120,7 @@ Concatenate all event rows, **retain the shared column set**. Below are three va
 #### D.1 Minimal variant (objects: Order, Invoice, Payment)
 
 ```CSV
-Activity,Timestamp,Resource,Order,Invoice,Payment,PaymentAmount
+Activity,Timestamp,Actor,Order,Invoice,Payment,PaymentAmount
 
 Create Order,2025-01-01 12:35:00,John,O1,,,
 
@@ -146,7 +146,7 @@ Ship Order,2025-01-01 12:39:00,LogOps,O2,,,
 If one invoice references both orders, record both Order IDs with `|`:
 
 ```CSV
-Activity,Timestamp,Resource,Order,Invoice,Payment,PaymentAmount
+Activity,Timestamp,Actor,Order,Invoice,Payment,PaymentAmount
 
 Create Order,2025-01-01 12:35:00,John,O1,,,
 
@@ -166,7 +166,7 @@ Ship Order,2025-01-01 12:39:00,LogOps,O2,,,
 (Add a `SupplierOrder` column to the header.)
 
 ```CSV
-Activity,Timestamp,Resource,Order,Invoice,Payment,PaymentAmount,SupplierOrder
+Activity,Timestamp,Actor,Order,Invoice,Payment,PaymentAmount,SupplierOrder
 
 Create Order,2025-01-01 12:35:00,John,O1,,,, 
 
@@ -204,4 +204,4 @@ Ship Order,2025-01-01 12:39:00,LogOps,O1|O2,,,,
 - **Object‑level attribute**
   An attribute that describes an object (e.g., *PaymentAmount* for *Payment `P1`*). You can repeat these at event time when the event references that object.
 - **Event‑level attribute**
-  An attribute that describes the event itself (e.g., *Activity*, *Timestamp*, *Resource*).
+  An attribute that describes the event itself (e.g., *Activity*, *Timestamp*, *Actor*).
