@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 02/15/2023
+ms.date: 10/02/2025
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
@@ -29,7 +29,7 @@ You can [view the state of the queues in real time](monitor-desktop-flow-queues.
 
 > [!IMPORTANT]
 >
-> - A time-out occurs when desktop flows don’t run within twelve hours after being requested.
+> - A time-out occurs when desktop flows don’t run within 12 hours after being requested.
 > - The presented orchestration rules apply to desktop flow runs scheduled by any user on the same device.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
