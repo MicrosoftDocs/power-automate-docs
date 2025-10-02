@@ -42,7 +42,7 @@ This article describes the key elements of the **Process Overview** page generat
 > [!NOTE]
 > In the preview of this feature, only the **Default** view is available.
 
-- **Add Filter / Clear Filters**: Options to refine the analysis by applying filters. All visuals in the Process overview react to the selected filter criteria. Learn more on  [available filters and their usage]().
+- **Add Filter / Clear Filters**: Options to refine the analysis by applying filters. All visuals in the Process overview react to the selected filter criteria. Learn more on  [available filters and their usage](object-centric-filters.md).
 
 ## Process Map (Left Section)
 A central visualization showing the process flow across multiple objects:
