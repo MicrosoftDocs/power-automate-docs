@@ -121,25 +121,14 @@ Concatenate all event rows, **retain the shared column set**. Below are three va
 
 ```CSV
 Activity,Timestamp,Actor,Order,Invoice,Payment,PaymentAmount
-
 Create Order,2025-01-01 12:35:00,John,O1,,,
-
 Create Order,2025-01-01 12:36:00,Anna,O2,,,
-
 Issue Invoice,2025-01-01 12:37:00,Mary,O1,I1,,
-
 Issue Invoice,2025-01-01 12:37:30,Mary,O2,I2,,
-
 Update Invoice,2025-01-01 12:37:45,Mary,,I2,,
-
 Receive Payment,2025-01-01 12:38:00,John,,I1,P1,1000
-
 Ship Order,2025-01-01 12:39:00,LogOps,O2,,,
-
-
 ```
-
-
 
 #### D.2 Alternate variant demonstrating **multi‑order invoice**
 
@@ -147,19 +136,12 @@ If one invoice references both orders, record both Order IDs with `|`:
 
 ```CSV
 Activity,Timestamp,Actor,Order,Invoice,Payment,PaymentAmount
-
 Create Order,2025-01-01 12:35:00,John,O1,,,
-
 Create Order,2025-01-01 12:36:00,Anna,O2,,,
-
 Receive Invoice,2025-01-01 12:37:00,Mary,O1|O2,I1,,
-
 Receive Payment,2025-01-01 12:38:00,John,,I1,P1,1000
-
 Ship Order,2025-01-01 12:39:00,LogOps,O2,,,
 ```
-
-
 
 #### D.3 Extended variant including **SupplierOrder**, single payment for both invoices and shipment of both orders in one go
 
@@ -167,32 +149,18 @@ Ship Order,2025-01-01 12:39:00,LogOps,O2,,,
 
 ```CSV
 Activity,Timestamp,Actor,Order,Invoice,Payment,PaymentAmount,SupplierOrder
-
 Create Order,2025-01-01 12:35:00,John,O1,,,, 
-
 Create Order,2025-01-01 12:36:00,Anna,O2,,,, 
-
 Raise Supplier Order,2025-01-01 12:36:30,ProcBot,,,,,,SO1
-
 Raise Supplier Order,2025-01-01 12:36:45,ProcBot,,,,,,SO2
-
 Receive Supplier Order,2025-01-01 12:37:10,Warehouse,,,,,,SO1
-
 Unpack Supplier Order,2025-01-01 12:37:20,Warehouse,,,,,,SO1
-
 Update Supplier Order,2025-01-01 12:37:25,ProcBot,,,,,,SO2
-
 Issue Invoice,2025-01-01 12:37:30,Mary,O1,I1,,, 
-
 Issue Invoice,2025-01-01 12:37:40,Mary,O2,I2,,, 
-
 Update Invoice,2025-01-01 12:37:45,Mary,,I2,,, 
-
 Receive Payment,2025-01-01 12:38:00,John,,I1|I2,P1,1000, 
-
 Ship Order,2025-01-01 12:39:00,LogOps,O1|O2,,,, 
-
-
 ```
 
 ## Glossary
