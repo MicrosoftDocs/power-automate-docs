@@ -102,6 +102,7 @@ In OCPM, you’ll work with **object‑centric event data** where each row is an
 - **Object / Object type:** The business entity (e.g., an **Order**) and its category (e.g., *orders*, *invoices*, *payments*).
 - **Object creation / disposal nodes:** Markers that denote an object’s lifecycle start/end on an OCPM map.
 - **Object‑flow edge:** A connection showing how objects of a given type typically move between activities (often color‑coded by object type).
+- **Process execution**: Subgraph in interrelated objects using algorithm that starts from a single instance of a leading object and recursively looks at other objects related in multi-object-type events. The recursion is stopped when either another instance of a leading object type is identified or another instance of already investigated object type is identified and the distance from the leading object type instance is longer than the previously identified one.
 
 ## Summary
 
