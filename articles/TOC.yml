@@ -970,15 +970,15 @@
   - name: Object-centric Process Mining (preview)
     items:
     - name: Overview
-      href: ocpm-overview.md
+      href: object-centric-overview.md
     - name: Creating an Object‑Centric Event Log
-      href: ocpm-create-ocel.md
+      href: object-centric-create-ocel.md
     - name: Ingest Object-centric Event Log
-      href: ocpm-ingest-ocel.md
+      href: object-centric-ingest-ocel.md
     - name: OCPM Process Overview
-      href: ocpm-process-overview.md
+      href: object-centric-process-overview.md
     - name: Using Filters in OCPM Analysis
-      href: ocpm-filters.md
+      href: object-centric-filters.md
   - name: Process Mining desktop app
     items:
     - name: Overview
