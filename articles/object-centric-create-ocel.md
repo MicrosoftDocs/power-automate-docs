@@ -40,13 +40,13 @@ Creating an object‑centric event log (OCEL) is about translating a real‑worl
 
 ## Modeling Rules & Naming Conventions
 
-1. **One row = one event**, even if it relates to multiple objects.
-2. **Stable, opaque object IDs** across the log (e.g., `O1`, `I1`, `P1`); do not reuse IDs.
-3. **Multi‑object delimiter**: use `|` inside object columns (e.g., `O1|O2`).
-4. **Avoid attribute duplication**: keep object attributes (e.g., `PaymentAmount`) once per event row if that object is present. If multiple same‑type objects must carry different attribute values, prefer splitting into separate events.
-5. **Activity labels**: concise, consistent, and controlled. Avoid embedding high‑cardinality details directly in `Activity`; keep them as attributes.
-6. **Timestamps**: single time zone or UTC; ensure logical ordering across lifecycle events.
-7. **Sparsity is fine**: leave object columns blank when not relevant to the event.
+- **One row = one event**, even if it relates to multiple objects.
+- **Stable, opaque object IDs** across the log (e.g., `O1`, `I1`, `P1`); do not reuse IDs.
+- **Multi‑object delimiter**: use `|` inside object columns (e.g., `O1|O2`).
+- **Avoid attribute duplication**: keep object attributes (e.g., `PaymentAmount`) once per event row if that object is present. If multiple same‑type objects must carry different attribute values, prefer splitting into separate events.
+- **Activity labels**: concise, consistent, and controlled. Avoid embedding high‑cardinality details directly in `Activity`; keep them as attributes.
+- **Timestamps**: single time zone or UTC; ensure logical ordering across lifecycle events.
+- **Sparsity is fine**: leave object columns blank when not relevant to the event.
 
 ## General Step‑by‑Step Construction Workflow
 
@@ -64,7 +64,7 @@ Creating an object‑centric event log (OCEL) is about translating a real‑worl
 
 ## Example of Event Log Construction
 
-**Process narrative** (as provided on the previous page)
+**Process narrative**
 
 1. A customer places **two orders** (`O1`, `O2`).
 2. The store raises **two supplier orders** (`SO1`, `SO2`) to restock items.
@@ -73,7 +73,7 @@ Creating an object‑centric event log (OCEL) is about translating a real‑worl
 5. Policy says **“ship the second customer order only after invoices are paid.”**
 6. After **payment** (`P1`) is received, the second order is shipped.
 
-### A) Identify object types
+### 1. Identify object types
 
 - **Order** (customer orders): `O1`, `O2`
 - **SupplierOrder** (stock replenishment): `SO1`, `SO2`
@@ -83,7 +83,7 @@ Creating an object‑centric event log (OCEL) is about translating a real‑worl
    > [!NOTE]
    > Keep this minimal; extend only if additional objects materially change your analysis.
 
-### B) For each object, gather relevant events (event streams before merging)
+### 2. For each object, gather relevant events (event streams before merging)
 
 - **Order**
   - `Create Order` (`O1`), `Create Order` (`O2`)
@@ -101,7 +101,7 @@ Creating an object‑centric event log (OCEL) is about translating a real‑worl
 
 > At this stage you can keep each stream separate (one CSV per object type) or in staging tables/views.
 
-### C) Identify **cross‑object** events and update object references
+### 3. Identify **cross‑object** events and update object references
 
 Some events naturally touch **multiple objects**:
 
@@ -113,11 +113,11 @@ Some events naturally touch **multiple objects**:
 
 Update the event rows so that the **object columns** reflect these relationships (use `|` if an event touches multiple same‑type objects).
 
-### D) Merge the event streams into final log
+### 4. Merge the event streams into final log
 
 Concatenate all event rows, **retain the shared column set**. Below are three variants:
 
-#### D.1 Minimal variant (objects: Order, Invoice, Payment)
+#### 4.1 Minimal variant (objects: Order, Invoice, Payment)
 
 ```CSV
 Activity,Timestamp,Actor,Order,Invoice,Payment,PaymentAmount
@@ -130,7 +130,7 @@ Receive Payment,2025-01-01 12:38:00,John,,I1,P1,1000
 Ship Order,2025-01-01 12:39:00,LogOps,O2,,,
 ```
 
-#### D.2 Alternate variant demonstrating **multi‑order invoice**
+#### 4.2 Alternate variant demonstrating **multi‑order invoice**
 
 If one invoice references both orders, record both Order IDs with `|`:
 
@@ -143,7 +143,7 @@ Receive Payment,2025-01-01 12:38:00,John,,I1,P1,1000
 Ship Order,2025-01-01 12:39:00,LogOps,O2,,,
 ```
 
-#### D.3 Extended variant including **SupplierOrder**, single payment for both invoices and shipment of both orders in one go
+#### 4.3 Extended variant including **SupplierOrder**, single payment for both invoices and shipment of both orders in one go
 
 (Add a `SupplierOrder` column to the header.)
 
