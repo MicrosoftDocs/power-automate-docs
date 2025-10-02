@@ -34,13 +34,13 @@ This article describes the key elements of the **Process Overview** page generat
 ## Tabs and Filter bar
 - **Process Overview (Preview)**: Denotes that the current tab is showing the overview of the process.
 
-   > [!NOTE]
-   > In the preview of this feature, only the **Process overview** tab is available.
+> [!NOTE]
+> In the preview of this feature, only the **Process overview** tab is available.
 
 - **View Selector**: Allows switching between different saved process views.
 
-   > [!NOTE]
-   > In the preview of this feature, only the **Default** view is available.
+> [!NOTE]
+> In the preview of this feature, only the **Default** view is available.
 
 - **Add Filter / Clear Filters**: Options to refine the analysis by applying filters. All visuals in the Process overview react to the selected filter criteria. Learn more on  [available filters and their usage]().
 
@@ -79,6 +79,9 @@ Selecting the **Settings** icon in the top right corner of the process map visua
 - **Paths** slider allows you to increase or decrease the complexity of the process map by showing or hiding the edges based on their frequency in the process.
 - Activities and Paths can be configured using a common slider which is valid for all object types in the map, or using **detailed set of sliders** which allow to set individual settings per object type. You can access these by selecting the left pointing arrow icon next to **Activities settings** and **Paths settings**
 
+> [!NOTE]
+> The process map shows the backbone of the process by default, meaning that both Activities and Paths sliders are set to minimum.
+
   :::image type="content" source="media/object-centric-process-mining/ocpm-process-map-settings-expanded.png" alt-text="Screenshot of the detail view of Settings panel of a Process Map visual with detailed sliders.":::
   
 Click **Apply** button to confirm the configuration.
@@ -97,8 +100,8 @@ Provides detailed statistical analysis based on the leading object and an option
 - **Leading Object**: Defines which object type is used as the main reference point = from the viewpoint of which object a process execution is identified (e.g., purchase order).
 - **Process Executions**: Total number of end-to-end process instances from a viewpoint of a leading object.
 
-   > [!IMPORTANT]
-   > A **process execution** is defined as a subgraph in interrelated objects using algorithm that starts from a single instance of a leading object and recursively looks at other objects related in multi-object-type events. The recursion is stopped when either another instance of a leading object type is identified or another instance of already investigated object type is identified and the distance from the leading object type instance is longer than the previously identified one.
+> [!IMPORTANT]
+> A **process execution** is defined as a subgraph in interrelated objects using algorithm that starts from a single instance of a leading object and recursively looks at other objects related in multi-object-type events. The recursion is stopped when either another instance of a leading object type is identified or another instance of already investigated object type is identified and the distance from the leading object type instance is longer than the previously identified one.
   
 - **Duration Metrics**:
   - Minimum Duration
@@ -115,8 +118,8 @@ Selecting the **Settings** icon in the top right corner of the widget opens a pa
 - **Leading object** allows you to select a different object type for process analysis perspective (process execution identification)
 - Selecting **Add path** button allows you to define specific **From** and To **activities** in the process. For each you need to define if you want to analyze **first** or **last occurence** of that activity.
   
-   > [!IMPORTANT]
-   > If a path is added, the duration metrics show the thrughput time between those activities. If a path is not added, the duration metrics depict the throughput time for whole process executions.   
+> [!IMPORTANT]
+> If a path is added, the duration metrics show the thrughput time between those activities. If a path is not added, the duration metrics depict the throughput time for whole process executions.   
 
 - Select **Remove path** to focus back on the complete process execution.
   
