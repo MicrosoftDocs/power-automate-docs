@@ -339,11 +339,5 @@ Yes, once the issues noted here are resolved and the new cloud flows designer ca
 > <br/>Or<br/>
 > [Create your first cloud flow without Copilot](create-cloud-flow-without-copilot.md)
 
-## Related information
 
-Learn how to work with Copilot in cloud flows. You can get started with these articles:
-
-- [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)
-- [Create your first cloud flow without using Copilot](create-cloud-flow-without-copilot.md)
-- [FAQ for Copilot expression assistant](faqs-copilot-expression-assistant.md)
 
