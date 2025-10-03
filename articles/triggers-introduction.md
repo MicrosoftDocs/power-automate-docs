@@ -24,7 +24,7 @@ ms.custom:
 
 A *trigger* is an event that starts a cloud flow. For example, you want to get a notification in Microsoft Teams when someone sends you an email. In this case, receiving an email is the trigger that starts this flow.
 
-Power Automate offers connectors to services such as SharePoint and Outlook. Most connectors offer prebuilt triggers that you can use to start your flows. Here's a partial look at the triggers that Office 365 Outlook connector provides by default.
+Power Automate offers connectors to services such as SharePoint and Outlook. Most connectors offer prebuilt triggers that you can use to start your flows. Here's a partial list of the triggers the Office 365 Outlook connector provides.
 
 :::image type="content" source="./media/triggers-introduction/outlook-triggers-new-designer.png" alt-text="Screenshot of some of the Office 365 Outlook triggers.":::
 
@@ -35,11 +35,11 @@ Learn more about triggers in this quick video:</br>
 
 ## Choose the right trigger
 
-Triggers can be started instantly or manually, on a schedule, or automatically when an external event occurs, such as when an email arrives. The following table lists some common trigger scenarios and the type of flow you should create.
+Triggers can be started automatically, instantly or manually, or on a schedule. The following table lists some common trigger scenarios and the type of flow you should create.
 
 |Trigger scenario |Flow type |
 |---------|---------|
-|Create a cloud flow that performs tasks automatically after an event occurs, for example, a cloud flow that notifies you by email when someone tweets with a keyword you specify. Learn more in [Create a cloud flow from scratch](get-started-logic-flow.md).   | Automated   |
+|Create a cloud flow that performs tasks automatically after an event occurs. For example, a cloud flow can notify you by email when someone tweets with a keyword you specify. Learn more in [Create a cloud flow from scratch](get-started-logic-flow.md).   | Automated   |
 |Run a cloud flow with a tap of a button on your mobile device to remind your team to join the daily team meeting. You can trigger these flows manually from any device. Learn more in [Create flows from your phone](mobile/mobile-create-flow.md).  | Instant/manual   |
 |Run a cloud flow on a schedule, for example, to send a weekly project report. Choose when (date and time) and frequency (monthly/daily/hourly, and more). Learn more in [Run flows on a schedule](./run-scheduled-tasks.md).     | Scheduled   |
 
