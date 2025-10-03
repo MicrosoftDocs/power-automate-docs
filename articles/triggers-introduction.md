@@ -40,7 +40,7 @@ Triggers can be started instantly or manually, on a schedule, or automatically w
 |Trigger scenario |Flow type |
 |---------|---------|
 |Create a cloud flow that performs tasks automatically after an event occurs, for example, a cloud flow that notifies you by email when someone tweets with a keyword you specify. Learn more in [Create a cloud flow from scratch](get-started-logic-flow.md).   | Automated   |
-|Run a cloud flow with a tap of a button on your mobile device to remind your team to join the daily team meeting. You can trigger these flows manually from any device.  | Instant/manual   |
+|Run a cloud flow with a tap of a button on your mobile device to remind your team to join the daily team meeting. You can trigger these flows manually from any device. Learn more in [Create flows from your phone](mobile/mobile-create-flow.md).  | Instant/manual   |
 |Run a cloud flow on a schedule, for example, to send a weekly project report. Choose when (date and time) and frequency (monthly/daily/hourly, and more). Learn more in [Run flows on a schedule](./run-scheduled-tasks.md).     | Scheduled   |
 
 ## Examples of triggers

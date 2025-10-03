@@ -24,9 +24,7 @@ ms.collection:
 
 This article explains how to use triggers and actions with various cloud flow types.
 
-A *trigger* is an event that starts a cloud flow. It defines the conditions under which your flow runs. For example, you can create a flow that sends you a notification in Microsoft Teams when someone sends you an email. In this case, receiving an email is the trigger that starts this flow.
-
-*Actions* are the events you want the flow to do after the trigger event takes place. To save a cloud flow, it must have at least a trigger and one action.
+A *trigger* is an event that starts a cloud flow. It defines the conditions under which your flow runs. *Actions* are the events you want the flow to do after the trigger event takes place. For example, you can create a flow that sends you a notification in Microsoft Teams (the action) when someone sends you an email (the trigger). To save a cloud flow, it must have at least a trigger and one action.
 
 - Learn more about the [types of cloud flows](overview-cloud.md#types-of-cloud-flows)
 - Learn more about [triggers](triggers-introduction.md)

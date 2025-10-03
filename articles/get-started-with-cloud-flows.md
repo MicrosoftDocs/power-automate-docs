@@ -8,7 +8,7 @@ contributors:
   - v-aangie
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 07/18/2025
+ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.author: kewaiss
 ms.reviewer: angieandrews
@@ -162,7 +162,7 @@ To make sure your flow works as expected, you should test it.
 
     :::image type="content" source="media/get-started-with-cloud-flows/successful-run.png" alt-text="Screenshot of the message that you flow ran successfully.":::
 
-    When your flow is finished running, the message, **Your flow ran successfully** appears in a green message at the top.<!--Ask Kishor - Is this the place for flow checker, or should we stick with history, as in step 6? Maybe show it in the designer how you check your inputs &  outputs to see where it failed-per Kelli, would be very helpful. We don't have anything like that. Here's my new line: If your flow encounters an error, a red message appears instead. You can select the **Flow Checker** icon (the stethoscope icon on the command bar) for details about the error. Learn how to correct the errors in [Find and fix errors with Flow Checker](error-checker.md).-->
+    When your flow is finished running, the message, **Your flow ran successfully** appears in a green message at the top.
 
 1. To display your flow, leave the designer by selecting **Back** (arrow pointing left) in the top-left corner below the **Power Automate** title bar (not the **Back** button in the address bar).
 
@@ -199,5 +199,5 @@ Congratulations! You successfully created a cloud flow, tested it, and ran it!
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Explore the cloud flows designer](flows-designer.md)
+> [Work with triggers and actions](work-with-triggers-actions.md)
 

@@ -169,7 +169,7 @@ Select the gear icon to perform tasks such as identify your Power Automate licen
 
 - **View all Power Automate Settings**: View or update your language and time settings, notifications, or access directories.
 
-- **View My Licenses**: View your licenses. To learn more, go to [Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus).
+- **View My Licenses**: View your licenses. Learn more in [Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus).
 
 - **Themes**: From the list of themes, select a theme for your organization.
 
