@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
-ms.date: 10/01/2025
+ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.author: kewaiss
 ms.reviewer: angieandrews
@@ -31,7 +31,7 @@ Here's a screenshot of a partial list of actions:
 
 :::image type="content" source="./media/actions-introduction/actions-examples.png" alt-text="Screenshot of some actions.":::
 
-- **AI Capabilities**: (*Need better definition and/or give example*) Uplevel AI capabilities in this standalone section.
+- **AI Capabilities**: Uplevel AI capabilities in this standalone section.
 - **Built-in tools**: Building blocks to your flow if you want to store values in a variable, insert a loop, and more.
 - **By connector**: Connect to services such as SharePoint and Outlook. Most connectors offer prebuilt actions that you can use in your flows.
 

@@ -25,7 +25,7 @@ Here are some of the most frequently used ways to create flows to manage your em
 1. **Tweak a template:** If you find a template that's similar to your scenario, but it doesn't do exactly what you want, you can create a cloud flow from that template and then tweak the flow to your liking. You can extend a cloud flow that you created from a template by adding, editing, or removing triggers and actions.
 
     > [!TIP]
-    > You can [copy and paste](work-with-triggers-actions.md#copy-and-paste-actions) actions in the same flow or across flows to speed up the process.
+    > You can [copy and paste](multi-step-logic-flow.md#copy-and-paste-actions) actions in the same flow or across flows to speed up the process.
 
 1. **Create a cloud flow from scratch**: If you can't find a template that's similar to your scenario, you can [create a cloud flow from scratch](./get-started-logic-flow.md) and then connect the services you want.
 

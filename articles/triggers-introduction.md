@@ -9,7 +9,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
-ms.date: 10/01/2025
+ms.date: 10/06/2025
 ms.update-cycle: 180-days
 ms.author: kewaiss
 ms.reviewer: angieandrews
@@ -49,7 +49,7 @@ After you decide which type of flow you want to create, you can add a trigger to
 
 ### A trigger that starts an automated flow
 
-When you create an automated cloud flow, you start by choosing your flow'strigger. The following example shows the **When a new email arrives (V3)** trigger from the Office 365 Outlook connector.
+When you create an automated cloud flow, you start by choosing your flow's trigger. The following example shows the **When a new email arrives (V3)** trigger from the Office 365 Outlook connector.
 
 :::image type="content" source="media/triggers-introduction/triggers-automated.png" alt-text="Screenshot of some of the triggers available for automated cloud flows.":::
 
