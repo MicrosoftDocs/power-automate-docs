@@ -1,5 +1,5 @@
 ---
-title: Add advanced options to actions in a cloud flow
+title: Move, delete, and add options to actions in a cloud flow
 description: Expand a cloud flow to include an advanced option, such as how to add collaboration comments to actions and triggers, set email to high priority, and add another action for the same event.
 suite: flow
 author: v-aangie
@@ -15,17 +15,41 @@ search.audienceType:
 ms.custom: sfi-image-nochange
 ---
 
-# Add advanced options to actions in a cloud flow
+# Move, delete, and add options to actions in a cloud flow
+
+This article explains how to reorder or delete an action, copy and paste actions, add advanced options, and other related tasks.
+
+You can customize a cloud flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced option that sends an email message as high priority. In addition to sending mail when an item is added to a list created in Microsoft Lists, create a file in Dropbox that contains the same information.
+
+## Reorder or delete an action
+
+To receive email after the file is created in Dropbox, move the Dropbox action by dragging its title bar above the email action. Release the Dropbox action over the arrow between the trigger (**When a new tweet is posted**) and the email action. (The cursor indicates whether the action is positioned correctly.)
+  
+You can't move a step before another if you're using any outputs from that step.
+
+To delete an action, select **...** (the ellipsis) near the right edge of the title bar for the action you want to delete, select **Delete**, and then select **OK**.
+
+You can't delete an action if you're using any outputs from it anywhere in the flow. First, remove those outputs from the fields, and then you can delete the action.
+
+## Copy and paste actions
+
+If you want to duplicate actions while designing a cloud flow, you can copy and paste them. For example, if you're building a condition and want similar actions in the **If yes/true** side and the **If no/false** side, you can build the first action in one side and then copy it to the other side. This is an alternative to creating both actions from scratch.
+
+1. On the action menu heading, select **...** (the ellipsis).
+1. Select **Copy to my clipboard**.
+1. Select **New step** where you want your action to be located.
+
+     Notice the **My clipboard** tab that lets you choose from all of the actions that you copied.
+1. Select the item you want to paste.
+
 
 Customize a cloud flow by adding one or more advanced options and multiple actions for the same trigger. For example, add an advanced option that sends an email message as high priority. In addition to sending mail when an item is added to a list created in Microsoft Lists, create a file in Dropbox that contains the same information.
 
 [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
-## Prerequisites
-
-[Create a cloud flow](get-started-with-cloud-flows.md)
-
 ## Add advanced options
+
+Advanced options are options that appear beyond the basic options in an action. For example, in the **Send an email (V2)** action, you can set the importance of the email to high by using the advanced options.
 
 Start with a cloud flow that has a **Send an email (V2)** action.
 
@@ -49,10 +73,14 @@ Power Automate displays the list of other makers who are editing a flow simultan
 
 ## Add comments to actions and triggers
 
-Makers can have threaded comments with colleagues as they build their flows. They can add or edit comments, reply to comment threads, and resolve and delete comment threads. It's possible to have multiple comment threads for both actions and triggers.
+If you're using the classic designer, you can have threaded comments with colleagues as you build your flows. You can add or edit comments, reply to comment threads, and resolve and delete comment threads. It's possible to have multiple comment threads for both actions and triggers.
 
->[!IMPORTANT]
->Comments are supported for environments that have a Dataverse database.
+Comments are supported for environments that have a Dataverse database.
+
+> [!NOTE]
+> A variation of this feature is available in the new designer, but it doesn't support threaded comments. You can add a comment (referred to as a **Note**) to an action or trigger, but you can't reply to notes or resolve them. Learn how to use the **Notes** feature in [More commands](flows-designer.md#more-commands).
+>
+> Learn how to determine the designer you're using in [Identify differences between the new designer and the classic designer](flows-designer.md#identify-differences-between-the-new-designer-and-the-classic-designer).
 
 Follow these steps to add a comment to any action or trigger in your flow.
 

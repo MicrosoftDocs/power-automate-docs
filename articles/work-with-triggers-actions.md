@@ -28,83 +28,11 @@ A *trigger* is an event that starts a cloud flow. It defines the conditions unde
 
 *Actions* are the events you want the flow to do after the trigger event takes place. To save a cloud flow, it must have at least a trigger and one action.
 
-- Learn more about the types in [Types of cloud flows](overview-cloud.md#types-of-cloud-flows).
-- Learn more about triggers in [Triggers overview](triggers-introduction.md).
-- Learn more about actions in [Actions overview](actions-introduction.md).
+- Learn more about the [types of cloud flows](overview-cloud.md#types-of-cloud-flows)
+- Learn more about [triggers](triggers-introduction.md)
+- Learn more about [actions](actions-introduction.md)
 
 If you're using Copilot to create your flow, Copilot automatically chooses the appropriate cloud flow type and trigger for you based on your description. If you're creating a flow without Copilot, you need to make these choices on your own.
-
-In this article, you'll learn how to trigger a flow in three ways: automatically using predefined triggers, scheduled based on a specified date and time, and manually, as determined by you. After you create a trigger, you'll learn how to replace it in an existing flow, and then add actions to your flow to tell the trigger what to do after it starts.
-
-## Select a trigger to start a flow when a designated event happens
-
-An [automated cloud flow](overview-cloud.md#types-of-cloud-flows) is triggered by a designated event, such as receiving an email or a new item being added to a SharePoint list.
-
-1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. On the navigation pane, select **Create**.
-1. Under **Start from blank**, select **Automated cloud flow**.
-1. On the **Build an automated cloud flow** screen, enter a name for your flow.
-1. In the **Choose your flow's trigger** field, search for and select the trigger you want to use. For example, you can enter, *When a new email arrives* to trigger the flow when you receive a new email.
-
-    There are many triggers available, depending on the connectors you have access to. For example, you can use triggers from Microsoft 365, SharePoint, Dynamics 365, and many other services.
-
-    Scroll through the list of triggers or use the search box to find the one you want. If you want to display more triggers, select **Show more**.
-
-    :::image type="content" source="media/work-with-triggers-actions/triggers-automated.png" alt-text="Screenshot of some of the triggers available for automated cloud flows.":::
-
-1. Select **Create**. Your trigger appears in the designer.
-
-    :::image type="content" source="media/work-with-triggers-actions/triggers-automated-designer.png" alt-text="Screenshot of the trigger in the designer for an automated cloud flow.":::
-
-1. After you create a trigger, your next step is to add the actions that will take place once your trigger starts the cloud flow. When you save your flow, it runs automatically when the trigger condition is met. For example, if you selected the *When a new email arrives* trigger, your flow runs automatically every time you receive a new email.
-
-    Learn how to add an action in [Add actions to your cloud flow](#add-actions-to-your-cloud-flow).
-
-## Run a cloud flow on a schedule
-
-[A scheduled cloud flow](overview-cloud.md#types-of-cloud-flows) runs at a specific time or on a recurring schedule, such as every day at 10:00 AM or every Monday at 9:00 AM.
-
-When you create a scheduled cloud flow, Power Automate automatically assigns the **Recurrence** trigger.
-
-1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. On the navigation pane, select **Create**.
-1. Under **Start from blank**, select **Scheduled cloud flow**.
-1. On the **Build a scheduled cloud flow** screen, enter a name for your flow.
-1. Under **Run this flow**, select the calendar icon and select the start date for your flow.
-1. In the **at** dropdown menu, select the time to start the flow.
-1. In the **Repeat every** field and the recurrence dropdown menu, select the recurrence pattern, such as every day, every week, or every month.
-
-    :::image type="content" source="media/work-with-triggers-actions/triggers-scheduled.png" alt-text="Screenshot of the 'Build a scheduled cloud flow' screen.":::
-
-1. Select **Create**. Your trigger appears in the designer.
-
-    :::image type="content" source="media/work-with-triggers-actions/triggers-scheduled-designer.png" alt-text="Screenshot of the 'Recurrence' trigger in the designer for a scheduled cloud flow.":::
-
-1. After you create a trigger, your next step is to add the actions that will take place once your trigger starts the cloud flow. When you save your flow, it runs automatically at the specified time, or on the specified schedule. For example, if you set the recurrence to run every day at 10:00 AM, your flow runs automatically every day at that time.
-
-    Learn how to add an action in [Add actions to your cloud flow](#add-actions-to-your-cloud-flow).
-
-## Select a trigger to start a flow manually
-
-An instant cloud flow is triggered manually, such as when you select a button in Power Automate or in a mobile app.
-
-1. Sign in to [Power Automate](https://make.powerautomate.com).
-1. On the navigation pane, select **Create**.
-1. Under **Start from blank**, select **Instant cloud flow**.
-1. On the **Build an instant cloud flow** screen, enter a name for your flow.
-1. In the **Choose how to trigger this flow** field, search for and select the trigger you want to use.
-
-    There are many triggers to start your flow. For example, you can trigger it manually with the click of a button, when a Dataverse row is selected, or for a selected Team message.work-with-triggers-actions.md
-
-    :::image type="content" source="media/work-with-triggers-actions/triggers-instant.png" alt-text="Screenshot of some of the triggers available for instant cloud flows.":::
-
-1. Select **Create**. Your trigger appears in the designer.
-
-    :::image type="content" source="media/work-with-triggers-actions/triggers-instant-designer.png" alt-text="Screenshot of the trigger in the designer for an instant cloud flow.":::
-
-1. After you create a trigger, your next step is to add the actions that will take place once your trigger starts the cloud flow. When you save your flow, you can start it in either the portal or on your mobile phone. Unlike an automatic flow and a scheduled flow, you need to start an instant flow *manually*. After you activate the flow, you can check if the actions you added are executed as expected.
-
-    Learn how to add an action in [Add actions to your cloud flow](#add-actions-to-your-cloud-flow).
 
 ## Replace the trigger in an existing cloud flow
 
@@ -218,29 +146,6 @@ In this procedure, you add an action in the middle of the flow. This action save
 1. Send a tweet that contains the keyword you specified.
 
      In about a minute, a file is created in your Dropbox account.
-
-## Reorder or delete an action
-
-To receive email after the file is created in Dropbox, move the Dropbox action by dragging its title bar above the email action. Release the Dropbox action over the arrow between the trigger (**When a new tweet is posted**) and the email action. (The cursor indicates whether the action is positioned correctly.)
-  
-> [!NOTE]
-> You can't move a step before another if you're using any outputs from that step.
-
-To delete an action, select **...** (the ellipsis) near the right edge of the title bar for the action you want to delete, select **Delete**, and then select **OK**.
-
-> [!NOTE]  
-> You can't delete an action if you're using any outputs from it anywhere in the flow. First, remove those outputs from the fields, and then you can delete the action.
-
-## Copy and paste actions
-
-If you want to duplicate actions while designing a cloud flow, you can copy and paste them. For example, if you're building a condition and want similar actions in the **If yes/true** side and the **If no/false** side, you can build the first action in one side and then copy it to the other side. This is an alternative to creating both actions from scratch.
-
-1. On the action menu heading, select **...** (the ellipsis).
-1. Select **Copy to my clipboard**.
-1. Select **New step** where you want your action to be located.
-
-     Notice the **My clipboard** tab that lets you choose from all of the actions that you copied.
-1. Select the item you want to paste.
 
 ## Next step
 

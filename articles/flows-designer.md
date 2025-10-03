@@ -264,7 +264,7 @@ In either the configuration pane or the expanded card, you can edit the configur
 
 ## Designer resiliency and save flow with errors
 
-The new designer automatically saves a copy of the flow to browser storage upon failed save, even with errors. This capability comes in handy on two occasions: 1) When the underlying service is going through an outage and when you need to avoid losing your unsaved changes by exiting out of your flow, or 2) For non-solution flows, which lack the 'Save draft' functionality, you can exit out of your flow with errors and come back at a later time to fix the errors and save the flow.<!--Kishor, where's Save draft functionality? It's not a button anymore.-->
+The new designer automatically saves a copy of the flow to browser storage upon failed save, even with errors. This capability comes in handy on two occasions: 1) When the underlying service is going through an outage and when you need to avoid losing your unsaved changes by exiting out of your flow, or 2) For non-solution flows, which lack the 'Save draft' functionality, you can exit out of your flow with errors and come back at a later time to fix the errors and save the flow.
 
 When you have unsaved changes on the flow, the **Save** button is disabled. If you try to exit out of the flow, a prompt appears asking if you want to save your changes. If you select **Yes**, the designer saves a copy of the flow to browser storage.
 
@@ -339,5 +339,9 @@ Yes, once the issues noted here are resolved and the new cloud flows designer ca
 > <br/>Or<br/>
 > [Create your first cloud flow without Copilot](create-cloud-flow-without-copilot.md)
 
+## Related information
 
+- [Work with triggers and actions](work-with-triggers-actions.md)
+- [Customize your triggers with conditions](customize-triggers.md)
+- [Add advanced options to actions in a cloud flow](multi-step-logic-flow.md)
 

@@ -37,6 +37,11 @@ Select one of the following types for an overview of what it can do:
 
 Your Power Automate license gives you rights to create and manage flows in Power Apps. For example, after you sign in to Power Apps, you can select **Flows** on the left navigation pane. You can also create and manage flows through the [Power Automate pane](/powerapps/maker/canvas-apps/working-with-flows) within Power Apps Studio.
 
+## Next step
+
+> [!div class="nextstepaction"]
+> [Adopt automation with Copilot](copilot-overview.md)
+
 ## Related information
 
 - [Determine which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
