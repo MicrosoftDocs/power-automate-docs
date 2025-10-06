@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/06/2025
+ms.date: 10/07/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -25,6 +25,8 @@ Creating an object‑centric event log (OCEL) is about translating a real‑worl
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 The following sections outline best practices and a practical workflow to help you build such a log efficiently.
+
+Object‑centric process mining (OCPM) uses some general terms. If you're unfamiliar with a term, check out the [Glossary](#glossary) section in this article.
 
 > [!NOTE]
 > The current preview version supports data ingestion *only from a CSV file stored in Azure Data Lake or OneLake*. Ensure your final log is exported to one of these locations before proceeding with ingestion.
@@ -79,7 +81,11 @@ The following steps outline the process narrative:
 5. Policy says, "ship the second customer order only after invoices are paid."
 6. After *payment* (`P1`) is received, the second order is shipped.
 
-### 1. Identify object types
+### Steps in the process
+
+The following steps 1 through 4 are the steps in the process.
+
+#### 1. Identify object types
 
 - **Order** (customer orders): `O1`, `O2`
 - **SupplierOrder** (stock replenishment): `SO1`, `SO2`
@@ -88,7 +94,7 @@ The following steps outline the process narrative:
 
 Keep this minimal. Extend only if additional objects materially change your analysis.
 
-### 2. For each object, gather relevant events (event streams before merging)
+#### 2. For each object, gather relevant events (event streams before merging)
 
 - **Order**
   - `Create Order` (`O1`), `Create Order` (`O2`)
@@ -106,7 +112,7 @@ Keep this minimal. Extend only if additional objects materially change your anal
 
 > At this stage you can keep each stream separate (one CSV per object type) or in staging tables/views.
 
-### 3. Identify cross‑object events and update object references
+#### 3. Identify cross‑object events and update object references
 
 Some events naturally touch **multiple objects**:
 
@@ -118,7 +124,7 @@ Some events naturally touch **multiple objects**:
 
 Update the event rows so that the **object columns** reflect these relationships (use `|` if an event touches multiple same‑type objects).
 
-### 4. Merge the event streams into final log
+#### 4. Merge the event streams into final log
 
 Concatenate all event rows, **retain the shared column set**. Following are three variants:
 

@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/06/2025
+ms.date: 10/07/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -55,7 +55,7 @@ To remove the filter, select **X** on the specific filter button.
 
 To remove all currently set filters at once, select **Clear filters** in the filter toolbar.
 
-## Object Type filter
+## Object type filter
 
 Object Type filters allow you to select which specific object types to include or exclude from your analysis, enabling you to focus on particular entities within your process ecosystem. For example, in an order-to-cash process, you might filter to show only "Orders" and "Customers" while temporarily excluding "Items" to simplify the process view and concentrate on customer-level behavior.
 
@@ -65,9 +65,9 @@ In the configuration panel, select (or search and select):
 
 **Object Type**: Checked object types are included into the analysis.
 
-## Object Proximity filter
+## Object proximity filter
 
-Object Proximity filters enable you to analyze events based on the distance or degree of separation between different objects in the process. This allows you to focus on directly related objects (for example, orders that contain specific items) or expand your view to include indirectly connected objects (for example, customers linked through shared products), helping you understand the ripple effects and dependencies across your object-centric process network.
+Object proximity filters enable you to analyze events based on the distance or degree of separation between different objects in the process. This allows you to focus on directly related objects (for example, orders that contain specific items) or expand your view to include indirectly connected objects (for example, customers linked through shared products), helping you understand the ripple effects and dependencies across your object-centric process network.
 
 Proximity level used in the filter defines the degree of separation between objects:
 
@@ -83,9 +83,9 @@ In the configuration panel, select (or search and select):
 - **Objects**: Checked objects are included in the analysis.
 - **Proximity level**: Choose the separation level for filtering.
 
-## Object Attribute filter
+## Object attribute filter
 
-Object Attribute filters allow you to select objects based on specific characteristics or properties, such as customer region, order value, product category, or any other attribute associated with an object type. By filtering on attributes, you can segment your analysis to compare different cohorts, investigate specific scenarios (for example, high-value orders or premium customers), or isolate cases that meet particular business criteria relevant to your analysis goals.
+Object attribute filters allow you to select objects based on specific characteristics or properties, such as customer region, order value, product category, or any other attribute associated with an object type. By filtering on attributes, you can segment your analysis to compare different cohorts, investigate specific scenarios (for example, high-value orders or premium customers), or isolate cases that meet particular business criteria relevant to your analysis goals.
 
 :::image type="content" source="media/object-centric-filters/object-centric-filter-object-attribute.png" alt-text="Screenshot of the OCPM object attribute filter configuration panel.":::
 

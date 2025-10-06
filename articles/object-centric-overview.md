@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/06/2025
+ms.date: 10/07/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -24,23 +24,25 @@ search.audienceType:
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
+OCPM uses some general terms. If you're unfamiliar with a term, check out the [Glossary](#glossary) section in this article.
+
 ## Importance of object‑centric process mining
 
-Real business processes rarely flow as a single, linear instance. Events routinely touch *several objects of different types at the same time* (for example, creating an invoice for a specific order, or shipping a package that contains items from multiple orders). OCPM models that reality directly by recording events that relate to **many objects and object types** in one process, preserving their relationships end‑to‑end.
+Real business processes rarely flow as a single, linear instance. Events routinely touch *several objects of different types at the same time* (for example, creating an invoice for a specific order, or shipping a package that contains items from multiple orders). OCPM models that reality by recording events that relate to **many objects and object types** in one process, preserving their relationships end‑to‑end.
 
    > [!NOTE]
-   > **Key idea:** Instead of “one case → one sequence of activities,” OCPM lets **one event** belong to **multiple objects** (and object types), keeping the full context intact.
+   > **Key idea:** Instead of "one case means one sequence of events," OCPM lets **one event** belong to *multiple objects* (and object types), keeping the full context intact.
 
 ## Business process example
 
 Consider a simple retail scenario:
 
 1. A customer places **two orders** (O1, O2).
-2. The store raises **two supplier orders** (SO1, SO2) to restock items.
-3. One supplier order arrives and is unpacked; the other requires an update.
-4. The store issues **two invoices** (I1, I2). One invoice is updated.
-5. The store policy says **“ship the second customer order only after invoices are paid.”**
-6. After **payment (P1)** is received, the second order is shipped.
+1. The store raises **two supplier orders** (SO1, SO2) to restock items.
+1. One supplier order arrives and is unpacked; the other requires an update.
+1. The store issues **two invoices** (I1, I2). One invoice is updated.
+1. The store policy says **“ship the second customer order only after invoices are paid.”**
+1. After **payment (P1)** is received, the second order is shipped.
 
 We’ll use this same flow to compare OCPM with case‑centric process mining.
 
@@ -52,7 +54,7 @@ With OCPM, each **event** (for example, *Create invoice*, *Receive goods*, *Ship
 - **Activity nodes**, which can belong to one or multiple object types
 - **Object‑flow edges** between activities, often color‑coded by object type, so you can follow the *Order* flow and, on the same map, see how *Invoice* and *Payment* flows intersect with it.
 
-This preserves the critical dependency&mdash;*"ship O2 only after invoices are paid"*&mdash;because the *Ship order* event is explicitly related to **Order O2** and **Payment P1** through the invoice(s), all on the same map.
+This preserves the critical dependency&mdash;*"ship O2 only after invoices are paid"*&mdash;because the *Ship order* event is explicitly related to **Order O2** and **Payment P1** through the invoices, all on the same map.
 
 ## How case‑centric process mining models the same process
 
@@ -80,7 +82,7 @@ The following list contains some of the key benefits of OCPM:
 - **Multi‑object bottleneck analysis:** See where delays occur when flows converge (for example, *Order* waiting on *Invoice* or *Supplier Order*).
 - **Clear governance and compliance checks across objects:** Validate policies that inherently span multiple entities (for example, financial clearance before shipping).
 
-## When to use OCPM vs. case‑centric
+## When to use OCPM versus case‑centric
 
 Use OCPM in the following scenarios:
 

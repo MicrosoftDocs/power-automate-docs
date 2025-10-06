@@ -971,7 +971,7 @@
     items:
     - name: Overview
       href: object-centric-overview.md
-    - name: Create an object‑centric event log
+    - name: Create an object-centric event log
       href: object-centric-create-event-log.md
     - name: Ingest an object-centric event log
       href: object-centric-ingest-event-log.md
