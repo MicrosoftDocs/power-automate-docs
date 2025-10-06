@@ -106,6 +106,3 @@ In OCPM, you work with **object‑centric event data** where each row is an *eve
 - **Object‑flow edge:** A connection showing how objects of a given type typically move between activities (often color‑coded by object type).
 - **Process execution**: Subgraph in interrelated objects using algorithm that starts from a single instance of a leading object and recursively looks at other objects related in multi-object-type events. The recursion is stopped when either another instance of a leading object type is identified or another instance of already investigated object type is identified and the distance from the leading object type instance is longer than the previously identified one.
 
-## Summary
-
-OCPM gives you a **faithful picture of complex processes** by following the actual objects that interact. In the one example above, OCPM makes it obvious that **shipping O2 depends on payment**, while case‑centric views must choose a single case notion and risk losing that cross‑object dependency. Use OCPM whenever **multi‑object interactions** define success, and use case‑centric views when a **single case** tells the story best.
