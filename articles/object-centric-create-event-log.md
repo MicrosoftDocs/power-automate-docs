@@ -1,5 +1,5 @@
 ---
-title: Creating an Object‑Centric Event Log (preview)
+title: Create an Object‑centric event log (preview)
 description: Learn how to create an object-centric event log.
 author: rosikm
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/01/2025
+ms.date: 10/06/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,62 +16,68 @@ search.audienceType:
 - enduser
 ---
 
-# Creating an Object‑Centric Event Log (preview)
+# Create an object‑centric event log (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-Creating an object‑centric event log (OCEL) is about translating a real‑world process into a structured dataset that accurately reflects the relationships between events and business objects. Unlike traditional case‑centric logs, this approach captures the complexity of scenarios where multiple objects interact within the same event. The goal is to produce a clean, consistent, and analysis‑ready log that supports object‑centric process mining without unnecessary complexity. The following sections outline best practices and a practical workflow to help you build such a log efficiently.
-
-   > [!NOTE]
-   > The current **preview version** supports data ingestion **only from a CSV file stored in Azure Data Lake or OneLake**. Ensure your final log is exported to one of these locations before proceeding with ingestion.
+Creating an object‑centric event log (OCEL) is about translating a real‑world process into a structured dataset that accurately reflects the relationships between events and business objects. Unlike traditional case‑centric logs, this approach captures the complexity of scenarios where multiple objects interact within the same event. The goal is to produce a clean, consistent, and analysis‑ready log that supports object‑centric process mining without unnecessary complexity.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-## Target CSV Schema
+The following sections outline best practices and a practical workflow to help you build such a log efficiently.
 
-**Required columns**
+> [!NOTE]
+> The current preview version supports data ingestion *only from a CSV file stored in Azure Data Lake or OneLake*. Ensure your final log is exported to one of these locations before proceeding with ingestion.
 
-- `Activity` — human‑readable event name (e.g., *Create Order*, *Pay Invoice*).
-- `Timestamp` — event time in `yyyy-MM-dd HH:mm:ss` (24h) or ISO‑8601.
-- `Actor` — person/system executing the event.
-- **One column per object type** used in your process (e.g., `Order`, `Invoice`, `Payment`, …).
-  - If an event touches **multiple** objects of the same type, separate with `|` (e.g., `O1|O2`).
-- **Object‑type attributes (optional but recommended)** — columns that hold attributes of an object referenced by the event (e.g., `PaymentAmount` for a `Payment` present in the row).
+## Target CSV schema
 
-## Modeling Rules & Naming Conventions
+The following columns are required:
+
+- `Activity`: Human‑readable event name (for example, *Create Order*, *Pay Invoice*).
+- `Timestamp`: Event time in `yyyy-MM-dd HH:mm:ss` (24h) or ISO‑8601.
+- `Actor`: Person/system executing the event.
+- **One column per object type** used in your process (for example, `Order`, `Invoice`, `Payment`, …).
+  - If an event touches *multiple* objects of the same type, separate it with `|` (for example, `O1|O2`).
+- **Object‑type attributes (optional but recommended)**: Columns that hold attributes of an object referenced by the event (for example, `PaymentAmount` for a `Payment` present in the row).
+
+## Modeling rules and naming conventions
+
+The OECL uses the following modeling rules and naming conventions:
 
 - **One row = one event**, even if it relates to multiple objects.
-- **Stable, opaque object IDs** across the log (e.g., `O1`, `I1`, `P1`); do not reuse IDs.
-- **Multi‑object delimiter**: use `|` inside object columns (e.g., `O1|O2`).
-- **Avoid attribute duplication**: keep object attributes (e.g., `PaymentAmount`) once per event row if that object is present. If multiple same‑type objects must carry different attribute values, prefer splitting into separate events.
-- **Activity labels**: concise, consistent, and controlled. Avoid embedding high‑cardinality details directly in `Activity`; keep them as attributes.
-- **Timestamps**: single time zone or UTC; ensure logical ordering across lifecycle events.
-- **Sparsity is fine**: leave object columns blank when not relevant to the event.
+- **Stable, opaque object IDs** across the log (for example, `O1`, `I1`, `P1`); do not reuse IDs.
+- **Multi‑object delimiter**: Use `|` inside object columns (for example, `O1|O2`).
+- **Avoid attribute duplication**: Keep object attributes (for example, `PaymentAmount`) once per event row if that object is present. If multiple same‑type objects must carry different attribute values, we prefer that you split them into separate events.
+- **Activity labels**: Concise, consistent, and controlled. Avoid embedding high‑cardinality details directly in `Activity`; keep them as attributes.
+- **Timestamps**: Single time zone or UTC; ensure logical ordering across lifecycle events.
+- **Sparsity is fine**: Leave object columns blank when not relevant to the event.
 
-## General Step‑by‑Step Construction Workflow
+## General step‑by‑step construction workflow
 
-1. **Define scope & object types**
-   Choose the minimal set of object types (e.g., `Order`, `Invoice`, `Payment`; optionally `SupplierOrder`).
-2. **Inventory source events**
+Use the following steps to create your OECL:
+
+1. **Define scope and object types**<br>
+   Choose the minimal set of object types (for example, `Order`, `Invoice`, `Payment`; optionally `SupplierOrder`).
+2. **Inventory source events**<br>
    Identify upstream event sources (tables/logs/status changes) and map each source record to
    `Activity`, `Timestamp`, `Actor`, target object columns, and any needed attributes.
-3. **Map objects to events**
+3. **Map objects to events**<br>
    Populate object IDs for each event; use `|` when an event touches multiple same‑type objects.
-4. **Normalize attributes**
+4. **Normalize attributes**<br>
    Standardize timestamps, user IDs, currencies/units; keep attributes only if they’re analytically useful.
-5. **Emit CSV**
+5. **Emit CSV**<br>
    Use a stable column order (see header template), UTF‑8 encoding, and quote fields containing commas.
 
-## Example of Event Log Construction
+## Example of event log construction
 
-**Process narrative**
+The following steps outline the process narrative:
 
-1. A customer places **two orders** (`O1`, `O2`).
-2. The store raises **two supplier orders** (`SO1`, `SO2`) to restock items.
+1. A customer places *two orders* (`O1`, `O2`).
+2. The store raises *two supplier orders* (`SO1`, `SO2`) to restock items.
 3. One supplier order arrives and is unpacked; the other requires an update.
-4. The store issues **two invoices** (`I1`, `I2`). One invoice is updated.
-5. Policy says **“ship the second customer order only after invoices are paid.”**
-6. After **payment** (`P1`) is received, the second order is shipped.
+4. The store issues *two invoices* (`I1`, `I2`). One invoice is updated.
+5. Policy says, "ship the second customer order only after invoices are paid."
+6. After *payment* (`P1`) is received, the second order is shipped.
 
 ### 1. Identify object types
 
@@ -80,8 +86,7 @@ Creating an object‑centric event log (OCEL) is about translating a real‑worl
 - **Invoice** (billing): `I1`, `I2`
 - **Payment**: `P1`
 
-   > [!NOTE]
-   > Keep this minimal; extend only if additional objects materially change your analysis.
+Keep this minimal. Extend only if additional objects materially change your analysis.
 
 ### 2. For each object, gather relevant events (event streams before merging)
 
@@ -101,7 +106,7 @@ Creating an object‑centric event log (OCEL) is about translating a real‑worl
 
 > At this stage you can keep each stream separate (one CSV per object type) or in staging tables/views.
 
-### 3. Identify **cross‑object** events and update object references
+### 3. Identify cross‑object events and update object references
 
 Some events naturally touch **multiple objects**:
 
@@ -115,7 +120,7 @@ Update the event rows so that the **object columns** reflect these relationships
 
 ### 4. Merge the event streams into final log
 
-Concatenate all event rows, **retain the shared column set**. Below are three variants:
+Concatenate all event rows, **retain the shared column set**. Following are three variants:
 
 #### 4.1 Minimal variant (objects: Order, Invoice, Payment)
 
@@ -165,11 +170,9 @@ Ship Order,2025-01-01 12:39:00,LogOps,O1|O2,,,,
 
 ## Glossary
 
-- **Object type**
-  A category/class of business entities (e.g., *Order*, *Invoice*, *Payment*, *SupplierOrder*).
-- **Object**
-  A specific instance of an object type (e.g., *Order `O1`*).
-- **Object‑level attribute**
-  An attribute that describes an object (e.g., *PaymentAmount* for *Payment `P1`*). You can repeat these at event time when the event references that object.
-- **Event‑level attribute**
-  An attribute that describes the event itself (e.g., *Activity*, *Timestamp*, *Actor*).
+- **Event‑level attribute**: An attribute that describes the event itself (for example, *Activity*, *Timestamp*, *Actor*).
+- **Object**: A specific instance of an object type (for example, *Order `O1`*).
+- **Object‑level attribute**: An attribute that describes an object (for example, *PaymentAmount* for *Payment `P1`*). You can repeat these at event time when the event references that object.
+- **Object type**: A category/class of business entities (for example, *Order*, *Invoice*, *Payment*, *SupplierOrder*).
+
+
