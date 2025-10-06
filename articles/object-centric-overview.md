@@ -67,10 +67,10 @@ In short, **forcing a single case type can hide or distort multi‑object relati
 
 | Question                                                     | Case‑centric (case = order)                                  | Object‑centric (OCPM)                                        |
 | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Can I see which **invoice(s)** and **payment(s)** gated shipping of O2? | Possible, but requires joins/flattening and can double‑count or lose context. | **Yes.** Events link to Order, Invoice, Payment simultaneously; gating logic is evident on one map. |
-| How do I analyze **supplier restocking** vs. customer orders on one canvas? | You’d switch case notions (Order vs. Supplier Order) or merge views offline. | **Native.** Show both object types (Order, Supplier Order) and their touchpoints on the same model. |
-| What about **policy rules** that span objects (for example, "ship only after payment")? | Harder to verify end‑to‑end without stitching logs.          | **First‑class.** Cross‑object dependencies are visible where flows intersect. |
-| Data shape                                                   | One case per instance; events must fit that case.            | **Events can belong to multiple objects/types** (object‑centric event data). |
+| Can I see which invoices and payments gated shipping of O2? | Possible, but requires joins/flattening and can double‑count or lose context. | Yes. Events link to Order, Invoice, Payment simultaneously; gating logic is evident on one map. |
+| How do I analyze supplier restocking vs. customer orders on one canvas? | You’d switch case notions (Order vs. Supplier Order) or merge views offline. | Native. Show both object types (Order, Supplier Order) and their touchpoints on the same model. |
+| What about policy rules that span objects (for example, "ship only after payment")? | Harder to verify end‑to‑end without stitching logs.          | First‑class. Cross‑object dependencies are visible where flows intersect. |
+| Data shape                                                   | One case per instance; events must fit that case.            | Events can belong to multiple objects/types (object‑centric event data). |
 
 ## Benefits of OCPM
 
