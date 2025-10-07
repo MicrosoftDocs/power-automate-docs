@@ -1,11 +1,12 @@
 ---
-title: Copilot in Process Mining process analytics (preview)
+title: Copilot in Process Mining process analytics
 description: Learn how to surface insights on your process and get recommended solutions with Copilot.
-ms.date: 07/11/2025
+ms.date: 09/23/2025
 ms.update-cycle: 180-days
 ms.topic: article
 author: janPidych
 contributors:
+  - rosikm
   - janPidych
   - v-aangie
 ms.custom: bap-template
@@ -14,9 +15,7 @@ ms.reviewer: angieandrews
 ms.collection: bap-ai-copilot
 ---
 
-# Copilot in Process Mining process analytics (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Copilot in Process Mining process analytics
 
 Copilot in Process Mining process analytics provides process insights through quick and easy natural language expression. Copilot can surface insights on your process and recommend solutions in power automate process mining.
 
@@ -26,8 +25,6 @@ Copilot can perform the following actions:
 - Offer recommendations on automation.
 - Answer your questions about your process data.
 - Answer your general questions about process mining.
-
-[!INCLUDE[cc_preview_features_definition_copilot_process_mining](./includes/cc-preview-features-definition-copilot-process-mining.md)]
 
 ## Prerequisite
 
@@ -66,9 +63,6 @@ Follow these steps to analyze the process with Copilot. You can analyze your pro
     - After steps 1 and 2, you see the Process Mining environment home page. Processes display as tiles. Select a process tile, or select the **All processes** link to list all processes. To open a process, select its name.
 
 ### Analyze your process in the Process Mining desktop app
-
-> [!IMPORTANT]
-> This feature is generally available only in the United States region, and is in preview for all other regions.
 
 1. Open the Process Mining desktop app:
    1. On the taskbar, select the  Windows **Start** icon.
@@ -125,8 +119,6 @@ Use this section to find answers to frequently asked questions.
 
 1. Go to Create a Power Platform environment.
 1. [Create a Power Platform environment](/power-platform/admin/create-environment#create-an-environment-without-a-database).
-
-    If you need help with creating a preview environment, ask your Power Platform admin.
 
 ### Why don't I see Copilot?
 

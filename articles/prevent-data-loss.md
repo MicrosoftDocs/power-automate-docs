@@ -4,7 +4,7 @@ description: Learn about data loss prevention policies for Power Automate.
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 08/21/2025
+ms.date: 09/30/2025
 ms.author: trdehove
 author: ChrisGarty
 contributors:
@@ -240,7 +240,7 @@ The following table lists DLP enforcement changes and the date the changes were 
 | May 2022 | Request apiConnection trigger enforcement | DLP policies weren't enforced correctly for some triggers. The affected triggers have **type=Request** and **kind=apiConnection**. Many of the affected triggers are instant triggers, which are used in instant, or manually triggered, flows. The affected triggers include the following.<br/>- [Power BI](/connectors/powerbi/): Power BI button clicked<br/>- [Teams](/connectors/teams/): From the compose box (V2)<br/>- [OneDrive for Business](/connectors/onedriveforbusiness/): For a selected file<br/>- [Dataverse](/connectors/commondataserviceforapps/): When a flow step is run from a business process flow<br/>- [Dataverse (legacy)](/connectors/commondataservice/): When a record is selected<br/>- [Excel Online (Business)](/connectors/excelonlinebusiness/): For a selected row<br/>- [SharePoint](/connectors/sharepointonline/): For a selected item<br/>- Microsoft Copilot Studio: When Copilot Studio calls a flow (V2) | Full | June 2, 2022 | August 25, 2022 |
 | July 2022 | Enforce DLP policies on child flows | Enable the enforcement of DLP policies to include child flows. If a violation is found anywhere in the flow tree, the parent flow is suspended. After the child flow is edited and saved to remove the violation, the parent flows can be resaved or reactivated to run the DLP policy evaluation again. A change to no longer block child flows when the HTTP connector is blocked will roll out along with full enforcement of DLP policies on child flows. Once full enforcement is available, the enforcement includes child desktop flows. | Full | February 14, 2023 | March 2023 |
 | January 2023 | Enforce DLP policies on child desktop flows | Enable the enforcement of DLP policies to include child desktop flows. If a violation is found anywhere in the flow tree, the desktop parent flow is suspended. After the child desktop flow is edited and saved to remove the violation, the parent desktop flows are automatically reactivated. | Full | - | August 2023 |
-| October 2024 | Enforce [connector action control](/power-platform/admin/connector-action-control) on triggers and internal actions | Expand enforcement of [connector action control](/power-platform/admin/connector-action-control) to ensure that triggers and internal actions are covered. List them in Power Platform admin center and enforce blocking them if individually referenced in DLP policies or if the DLP policy doesn't include them as allowed. | Learning | January 27, 2025 | February 10, 2025 |
+| October 2024 | Enforce [connector action control](/power-platform/admin/connector-action-control) on triggers and internal actions | Expand enforcement of [connector action control](/power-platform/admin/connector-action-control) to ensure that triggers and internal actions are covered. List them in Power Platform admin center and enforce blocking them if individually referenced in DLP policies or if the DLP policy doesn't include them as allowed. | Full | January 27, 2025 | February 10, 2025 |
 
 *Availability schedule might change and depends on the rollout.
 

@@ -5,7 +5,7 @@ author: kenseongtan
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 07/24/2025
+ms.date: 09/25/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -45,14 +45,6 @@ You also need the following prerequisite licenses: Windows, Intune, Microsoft En
 
 > [!NOTE]
 > The Hosted Process licenses the machines and not the user. The Premium user plan is required to run attended RPA, and for RPA developers to build and manage desktop flows on the Power Automate portal. To learn more about the Premium RPA features that come with the Premium user plan, go to [Premium RPA features](/power-automate/desktop-flows/premium-features).
-
-### Trial licenses for evaluation
-
-To evaluate hosted machines, you need one of the following trial licensing options:
-
-- Use the **Power Automate Hosted Process** license
-
-    The Power Automate Hosted Process license has trial versions that last 30 days and can be extended once to a total of 60 days. Organization admins can obtain up to 25 seats from [Microsoft 365 admin center](https://admin.microsoft.com/adminportal/home) and assign Power Automate Hosted Process capacity to the targeted environment.
 
 ## Prerequisites
 
