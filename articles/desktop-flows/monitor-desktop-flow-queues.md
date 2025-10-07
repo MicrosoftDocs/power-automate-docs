@@ -12,7 +12,7 @@ ms.subservice: desktop-flow
 ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 10/07/2024
+ms.date: 10/07/2025
 ms.author: kenseongtan
 ms.reviewer: matp
 contributors:
