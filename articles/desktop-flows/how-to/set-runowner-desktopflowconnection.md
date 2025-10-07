@@ -1,7 +1,7 @@
 ---
-title: Set a run owner on a desktop flow connection (preview)
-description: Learn how to set a run owner on a desktop flow connection using a service principal identity in Power Automate (preview).
-author: iriverain
+title: Set a run owner on a desktop flow connection 
+description: Learn how to set a run owner on a desktop flow connection using a service principal identity in Power Automate.
+author: iriverain, quseleba
 ms.topic: how-to
 ms.date: 03/18/2025
 ms.author: iriverain
@@ -17,9 +17,8 @@ ms.custom:
   - ai-seo-date:01/24/2025
 ---
 
-# Set a run owner on a desktop flow connection (preview)
+# Set a run owner on a desktop flow connection 
 
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 When a connection is shared, the recipient can execute scripts, retrieve script IDs, and CloudConnector IDs, potentially performing unauthorized actions on behalf of the connection owner. This reason is why desktop flow connection sharing wasn't available.
 
@@ -27,9 +26,6 @@ To enable Application Lifecycle Management (ALM) with a pipeline owned by a serv
 
 > [!IMPORTANT]
 >
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - This feature is gradually rolling out across regions and might not be available in your region.
 > - A run owner of a desktop flow is the user whose permissions are checked during the flow execution.
 > - Connections created using the Power Automate portal use the connection's creator (the user who creates the connection) as the run owner.
 
