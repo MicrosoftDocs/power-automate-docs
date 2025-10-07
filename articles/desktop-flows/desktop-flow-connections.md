@@ -103,13 +103,9 @@ The desktop flow connection is automatically created.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
 
-## Share a desktop flow connection (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+## Share a desktop flow connection 
 
 You can share a connection with other Service Principal users in your organization and give those Service Principal users specific permissions to access it.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 To share a desktop flow connection:
 
