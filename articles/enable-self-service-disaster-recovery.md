@@ -7,9 +7,10 @@ ms.reviewer: angieandrews
 ms.date: 10/09/2025
 ms.topic: concept-article
 ms.service: power-automate
+#customer intent: I want to enable SSDR to prepare my environment for disaster recovery.
 ---
 
-# Enable self-service disaster recovery
+# Enable self-service disaster recovery (preview)
 
 [!INCLUDE[cc-preview-features-definition](includes/cc-preview-features-top-note.md)]
 
