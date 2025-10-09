@@ -15,6 +15,8 @@ If you want to use Self service disaster recovery (SSDR) for Power Automate on a
 
 For a newly created environment, opening a ticket isn't required. You can enable disaster recovery at any time.
 
+Self-service disaster recovery is currently in PREVIEW for Power Automate. See the https://azure.microsoft.com/support/legal/preview-supplemental-terms/ 
+
 ## Restrictions
 
 Like with CMK (customer managed keys), with SSDR, certain flows aren't protected by SSDR. You can follow the same instructions to protect them for SSDR.
