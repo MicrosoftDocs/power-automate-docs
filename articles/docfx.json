@@ -70,7 +70,6 @@
       },
       "searchScope": {
         "**.*": [
-          "Power Platform",
           "Power Automate"
         ]
       },
