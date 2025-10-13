@@ -708,6 +708,8 @@
       href: ./desktop-flows/how-to/handle-custom-forms.md
     - name: Share/export a desktop flow
       href: ./desktop-flows/how-to/share-export-desktop-flows.md
+    - name: Set a run owner on a desktop flow connection
+      href: ./desktop-flows/how-to/set-runowner-desktopflowconnection.md
     - name: Run desktop flow from other desktop flows
       href: ./desktop-flows/how-to/run-desktop-flow-action.md
     - name: Use connector actions
@@ -1220,7 +1222,7 @@
   items:
   - name: Power Automate sign-up FAQ
     href: organization-q-and-a.md
-  - name: Enable self-service disaster recovery
+  - name: Enable self-service disaster recovery (preview)
     href: enable-self-service-disaster-recovery.md
   - name: Enable experimental features
     href: experimental-features.md
