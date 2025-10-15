@@ -99,4 +99,4 @@ Do any of the following tasks:
 
 ## Related information
 
-[RPA CLI for the Automation Kit](https://aka.ms/rpaclie)
+[RPA CLI for the Automation Kit](https://aka.ms/rpacli)
