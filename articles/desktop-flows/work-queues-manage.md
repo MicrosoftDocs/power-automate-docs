@@ -2,7 +2,7 @@
 title: Manage work queues
 description: Manage work queues in Power Automate.
 ms.topic: how-to
-ms.date: 09/08/2025
+ms.date: 10/15/2025
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -34,10 +34,10 @@ To create a work queue:
 1. In the **New work queue** side panel, enter a **work queue name** for the queue.
 1. (Optional) Enter a **description** for the work queue.
 1. (Optional) Enter a **work queue key** for the work queue. When provided, the value must be unique within this queue. If left empty, a unique value is automatically provided by the system.
-1. (Optional) Turn on the SLA strategy to enable [Work queues SLA](#work-queues-sla). Select the default time-to-live (TTL), and set the default SLA violation in the **SLA violated after** field. Then, set the **SLA considered at risk after (preview)** value. The slider value is a percentage based on the **SLA violation after** setting.
+1. (Optional) Turn on the SLA strategy to enable [Work queues SLA](#work-queues-sla). Select the default time-to-live (TTL), and set the default SLA violation in the **SLA violated after** field. Then, set the **SLA considered at risk after** value. The slider value is a percentage based on the **SLA violation after** setting.
    > [!NOTE]
    > - When you set an *SLA violated after* value for a work queue, any item added without an explicit expiration date expires when the entered *SLA violated after* elapses. For exmaple, if you set the *SLA violated after* to 5 hours, an item added at 2:00 PM will be considered in violation and expire at 7:00 PM.
-   >  - When you set an *SLA considered at risk after (preview)* value for a work queue, any item added to the work queue will have *SLA considered at risk after (preview)* calculated based on percentage that you have configured that is applied on the *SLA violated after* configuration. For example, if you set the *SLA considered at risk after (preview)* to 80% and *SLA violated after* value to 5 hours, an item added at 2:00 PM will reach SLA at risk 6:00 PM, and in volation and expire at 7:00 PM.
+   >  - When you set an *SLA considered at risk after* value for a work queue, any item added to the work queue will have *SLA considered at risk after* calculated based on percentage that you have configured that is applied on the *SLA violated after* configuration. For example, if you set the *SLA considered at risk after* to 80% and *SLA violated after* value to 5 hours, an item added at 2:00 PM will reach SLA at risk 6:00 PM, and in volation and expire at 7:00 PM.
 1. (Optional) Select either JSON or XSD as the schema type for work queue item input validation to ensure that input data conforms to the defined schema. Next, select **Add schema** to enter or paste the desired schema.
    > [!NOTE]
    > - Once a schema is added to a work queue, it can't be changed to avoid data inconsistencies and processing failures.
@@ -56,7 +56,7 @@ To edit a work queue:
 1. Select **Edit work queue** on the toolbar and update the values in the update pane.
 1. (Optional) Enter a **Description** for the work queue.
 1. (Optional) Enter a **Work queue key** for the work queue. When provided, the value must be unique within this queue. If left empty, a unique value is automatically provided by the system.
-1. (Optional) Activate SLA strategy to enable [Work queues SLA](#work-queues-sla). Select the default time-to-live (TTL), and set the default SLA violation in the **SLA violated after** field. Then, set the **SLA considered at risk after (preview)** configuration.
+1. (Optional) Activate SLA strategy to enable [Work queues SLA](#work-queues-sla). Select the default time-to-live (TTL), and set the default SLA violation in the **SLA violated after** field. Then, set the **SLA considered at risk after** configuration.
 1. (Optional) Check if you want to enable **Auto-retry on IT exception**.
 1. (Optional) Check if you want to **Allow update item input while in processing**.
 1. Select **Save**.
