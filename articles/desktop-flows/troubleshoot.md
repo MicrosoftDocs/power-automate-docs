@@ -94,6 +94,9 @@ Example:
 
 The tool also provides other functionality such as getting the name of the account that the service is currently running as, resetting it to run as the default virtual account, or simply restarting the service. For more information on all supported commands, simply run the TroubleshootingTool.Console.exe with no arguments.
 
+>[!NOTE]
+>Changing the service account is not supported for [Hosted Machines](hosted-machines.md).
+
 ## Troubleshoot desktop flow runs
 
 If your desktop flow run fails, go to [Errors when running attended or unattended desktop flows](/troubleshoot/power-platform/power-automate/desktop-flows/troubleshoot-errors-running-attended-or-unattended-desktop-flows) and find mitigation steps for different error codes.

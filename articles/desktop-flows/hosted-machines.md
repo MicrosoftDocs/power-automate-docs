@@ -654,6 +654,10 @@ For environments without the Power Automate Hosted Process license, we clean unu
 > [!NOTE]
 > You need to delete the inactive hosted machine and recreate a new one to continue using the hosted machines feature. You need to reconfigure the connections associated with your cloud flows.
 
+### Service account change
+
+[Changing the Service account](troubleshoot.md#change-the-on-premises-service-account) (NT SERVICE\\UIFlowService) is not supported on Hosted Machines.
+
 ## Troubleshoot hosted machines
 
 To find information on how to troubleshoot hosted machines, go to [Troubleshoot hosted machines](troubleshoot.md#troubleshoot-hosted-machines).
