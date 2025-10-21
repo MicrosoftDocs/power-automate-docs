@@ -5,7 +5,7 @@ author: kenseongtan
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/25/2025
+ms.date: 10/21/2025
 ms.author: kenseongtan
 ms.reviewer: angieandrews
 contributors:
@@ -656,7 +656,7 @@ For environments without the Power Automate Hosted Process license, we clean unu
 
 ### Service account change
 
-[Changing the Service account](troubleshoot.md#change-the-on-premises-service-account) (NT SERVICE\\UIFlowService) is not supported on Hosted Machines.
+[Changing the service account](troubleshoot.md#change-the-on-premises-service-account) (NT SERVICE\\UIFlowService) isn't supported on hosted machines.
 
 ## Troubleshoot hosted machines
 
