@@ -1,24 +1,40 @@
 ---
-title: Enable self-service disaster recovery (preview)
-description: Learn how and when to prepare your environment for disaster recovery.
+title: Enable self-service disaster recovery for Power Automate Cloud flows(preview)
+description: Learn how and when to prepare your environment for disaster recovery for Power Automate Cloud flows.
 author: kisubedi
 ms.author: kisubedi
 ms.reviewer: angieandrews
 ms.date: 10/09/2025
 ms.topic: concept-article
 ms.service: power-automate
-#customer intent: I want to enable SSDR to prepare my environment for disaster recovery.
+#customer intent: I want to enable SSDR to prepare my Power Autoamte environment for disaster recovery.
 ---
 
-# Enable self-service disaster recovery (preview)
+Self-service disaster recovery (SSDR) is a capability in Power Platform that allows organizations to replicate production environments across geographically distant regions and initiate failover themselves. Unlike built-in in-region resilience, which automatically handles zone-level failures, SSDR provides cross-region protection for large-scale disasters. It gives customers control to trigger failover and run disaster recovery drills without relying on Microsoft support. This approach enhances business continuity by reducing downtime, ensuring data availability even during regional outages, and allowing proactive testing of recovery plans. Ultimately, SSDR empowers businesses with greater autonomy, faster recovery, and improved resilience for mission-critical applications.
 
-[!INCLUDE[cc-preview-features-definition](includes/cc-preview-features-top-note.md)]
+Here are the key benefits of Self-Service Disaster Recovery (SSDR):
 
-If you want to use Self service disaster recovery (SSDR) for Power Automate on an existing environment, you must open a support ticket/ICM (Incident Management) before turning on the feature in Power Platform admin center to prepare your environment for disaster recovery. The process of preparing the environment could take a while. There's no SLA (Service Level Agreement) for completion of this process; times can vary depending on the resource demands within a region and other factors. Once the ICM is resolved, you can follow normal SSDR steps.
+**Cross-region protection**: Keeps a copy of your production environment in a secondary region for large-scale disaster resilience.
+
+**Customer-controlled failover**: You can initiate failover operations without waiting for Microsoft support.
+
+**Proactive testing**: Enables running disaster recovery drills to validate business continuity plans.
+
+**Reduced downtime**: Faster recovery compared to traditional manual processes.
+
+**Improved autonomy**: Gives organizations more control over their disaster recovery strategy.
+
+# Enable self-service disaster recovery in existing environments
+
+If you want to enable Self service disaster recovery (SSDR) for Power Automate on an existing environment, you can sign up for a limited preview through this [Form](https://forms.office.com/r/Pe9DqSwxV9).
+
+
+# Enable self-service disaster recovery in new environments
+
+For a newly created environment, submitting the form isn't required. You can enable disaster recovery at any time through PPAC. More details [here](https://learn.microsoft.com/en-us/power-platform/admin/business-continuity-disaster-recovery?tabs=new 
+).
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-
-For a newly created environment, opening a ticket isn't required. You can enable disaster recovery at any time.
 
 ## Restrictions
 
@@ -26,3 +42,7 @@ Like with CMK (customer managed keys), with SSDR, certain flows aren't protected
 
 More information: [Power Automate CMK application warning messages](customer-managed-keys.md#power-automate-cmk-application-warning-messages)
 
+# Notes:
+Since this is a limited preview at this time, we suggest you don't use features in preview with production workloads.
+
+To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-overview). For more information about managed environments, go to [Managed Environments](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview).
