@@ -28,9 +28,9 @@ Here are the key benefits of Self-Service Disaster Recovery (SSDR):
 
 You can find documentation on SSDR [here](https://learn.microsoft.com/en-us/power-platform/admin/business-continuity-disaster-recovery?tabs=new).
 
-# Enable self-service disaster recovery in existing and new environments for Power Automate Cloud Flows
+# Enable self-service disaster recovery for Power Automate Cloud Flows
 
-If you want to enable Self service disaster recovery (SSDR) for Power Automate on an existing environment, you can sign up for a limited preview through this [Form](https://forms.office.com/r/Pe9DqSwxV9).
+If you want to enable Self service disaster recovery (SSDR) for Power Automate on an environment, you can sign up for a limited preview through this [Form](https://forms.office.com/r/Pe9DqSwxV9).
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
