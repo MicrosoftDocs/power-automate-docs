@@ -12,7 +12,7 @@ ms.service: power-automate
 
 # What is Self service disaster recovery
 
-Self-service disaster recovery (SSDR) is a capability in Power Platform that allows organizations to replicate production environments across geographically distant regions and initiate failover themselves. Unlike built-in in-region resilience, which automatically handles zone-level failures, SSDR provides cross-region protection for large-scale disasters. It gives customers control to trigger failover and run disaster recovery drills without relying on Microsoft support. This approach enhances business continuity by reducing downtime, ensuring data availability even during regional outages, and allowing proactive testing of recovery plans. Ultimately, SSDR empowers businesses with greater autonomy, faster recovery, and improved resilience for mission-critical applications.
+Self-service disaster recovery (SSDR) is a capability in Power Platform that allows organizations to replicate production environments across geographically distant regions and initiate failover themselves. Unlike built-in in-region resilience, which automatically handles zone-level failures, SSDR provides a way to mitigate large scale disasters or outages. It gives customers control to trigger failover and failback once primary region is restored without relying on Microsoft support. This approach enhances business continuity by reducing downtime, ensuring data availability even during regional outages, and allowing proactive testing of recovery plans. Ultimately, SSDR empowers businesses with greater autonomy, faster recovery, and improved resilience for mission-critical applications.
 
 Here are the key benefits of Self-Service Disaster Recovery (SSDR):
 
@@ -30,9 +30,13 @@ You can find documentation on SSDR [here](https://learn.microsoft.com/en-us/powe
 
 # Enable self-service disaster recovery for Power Automate Cloud Flows
 
-If you want to enable Self service disaster recovery (SSDR) for Power Automate on an environment, you can sign up for a limited preview through this [Form](https://forms.office.com/r/Pe9DqSwxV9).
+We encourage you to enable Self service disaster recovery (SSDR) for Power Automate on an environment, by signing up for a limited preview through this [Form](https://forms.office.com/r/Pe9DqSwxV9).
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
+Since this is a limited preview at this time, we suggest you either enable in sandbox environment or if in production environment, don't use with production workloads.
+
+To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-overview). For more information about managed environments, go to [Managed Environments](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview).
 
 ## Restrictions
 
@@ -41,6 +45,5 @@ Like with CMK (customer managed keys), with SSDR, certain flows aren't protected
 More information: [Power Automate CMK application warning messages](customer-managed-keys.md#power-automate-cmk-application-warning-messages)
 
 # Notes:
-Since this is a limited preview at this time, we suggest you don't use features in preview with production workloads.
 
-To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-overview). For more information about managed environments, go to [Managed Environments](https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview).
+Desktop flows are already fully supported and covered by SSDR toggle in PPAC.
