@@ -18,7 +18,7 @@ This article explains what Self Service Disaster Recovery (SSDR) is, its benefit
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-# What is Self Service Disaster Recovery (SSDR)
+## What is Self Service Disaster Recovery (SSDR)
 
 SSDR is a capability in Power Platform that allows organizations to replicate production environments across geographically distant regions and initiate failover themselves. Unlike built-in in-region resilience, which automatically handles zone-level failures, SSDR provides a way to mitigate large scale disasters or outages. It gives customers control to trigger failover and failback once primary region is restored without relying on Microsoft support. This approach enhances business continuity by reducing downtime, ensuring data availability even during regional outages, and allowing proactive testing of recovery plans. Ultimately, SSDR empowers businesses with greater autonomy, faster recovery, and improved resilience for mission-critical applications.
 
@@ -32,7 +32,7 @@ Here are the key benefits of SSDR:
 - **Reduced downtime**: Faster recovery compared to traditional manual processes.
 - **Improved autonomy**: Gives organizations more control over their disaster recovery strategy.
 
-Learn more about SSDR in [Business continuity and disaster recovery](/power-platform/admin/business-continuity-disaster-recovery?tabs=new).
+Learn more about SSDR in [Business continuity and disaster recovery](/power-platform/admin/business-continuity-disaster-recovery).
 
 ## Enable Self Service Disaster Recovery (SSDR) in an environment
 
