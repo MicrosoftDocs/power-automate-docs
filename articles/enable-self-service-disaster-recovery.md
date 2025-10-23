@@ -50,3 +50,4 @@ More information: [Power Automate CMK application warning messages](customer-man
 
 > [!NOTE]
 > Desktop flows are already fully supported and covered by SSDR toggle in Power Platform admin center.
+
