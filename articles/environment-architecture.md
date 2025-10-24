@@ -11,7 +11,7 @@ ms.topic: concept-article
 
 # Power Automate environments move to new architecture
 
-Power Automate is upgrading environments to new architecture&mdash;SelfHost Multitenant&mdash;for better performance and feature support. To access faster runtimes and new features like [express mode](/microsoft-copilot-studio/agent-flow-express-mode), your environment needs to be on the new architecture.
+Power Automate is upgrading environments to new architecture&mdash;SelfHost Multitenant&mdash;for better performance and feature support. To access faster runtimes and new features like [express mode](/microsoft-copilot-studio/agent-flow-express-mode), your environment needs to be on SelfHost Multitenant architecture.
 
 To check your environment:
 
