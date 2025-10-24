@@ -1230,6 +1230,8 @@
     href: admin-center-introduction.md
   - name: Administer environments
     href: environments-overview-admin.md
+  - name: Power Automate environment upgrade
+    href: environment-architecture.md
   - name: IP address configuration
     href: ip-address-configuration.md
   - name: Support for customer-managed keys
