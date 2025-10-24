@@ -908,6 +908,16 @@
     {
       "source_path": "articles/triggers-troubleshoot.md",
       "redirect_url": "/troubleshoot/power-platform/power-automate/flow-run-issues/triggers-troubleshoot"
+    },
+    {
+      "source_path": "articles/flow-plugins-m365.md",
+      "redirect_url": "/microsoft-copilot-studio/advanced-flow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/use-chatgpt-plugin.md",
+      "redirect_url": "/microsoft-copilot-studio/advanced-flow",
+      "redirect_document_id": false
     }
   ]
 }
