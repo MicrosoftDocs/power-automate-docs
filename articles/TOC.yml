@@ -173,10 +173,6 @@
         href: ./mobile/notifications.md
     - name: Use flows in other apps
       items:
-      - name: Use the Power Automate plugin for ChatGPT
-        href: ./use-chatgpt-plugin.md
-      - name: Use flows as plugins in Copilot for Microsoft 365 (preview)
-        href: flow-plugins-m365.md  
       - name: Use flows with approvals
         items:
         - name: Get started with approvals
