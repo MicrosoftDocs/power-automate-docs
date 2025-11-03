@@ -41,9 +41,8 @@ The saving rule can be defined on the cloud flow details page by selecting **Sav
 
 > [!NOTE]
 >
-> - Period-based saving rules (every hour/day/week) have been deprecated before the General Availability of the savings feature and can't be created anymore.
-> - Any pre-existing period-based rule will stop collecting savings data and should be updated to use the ‘per successful run’ basis.
-
+> - Period-based saving rules (every hour/day/week) were deprecated before the General Availability of the savings feature and can't be created anymore.
+> - Any pre-existing period-based rule will stop collecting savings data and should be updated to use the 'per successful run' basis.
 
 ### Money-saving rule based on hourly rate
 
