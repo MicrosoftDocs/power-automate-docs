@@ -1212,7 +1212,7 @@
       href: ./desktop-flows/capacity-utilization-process.md
     - name: How to use process capacity
       href: ./desktop-flows/capacity-process.md
-  - name: Savings (preview)
+  - name: Savings
     href: savings.md
 - name: Administration
   items:
