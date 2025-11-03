@@ -173,10 +173,6 @@
         href: ./mobile/notifications.md
     - name: Use flows in other apps
       items:
-      - name: Use the Power Automate plugin for ChatGPT
-        href: ./use-chatgpt-plugin.md
-      - name: Use flows as plugins in Copilot for Microsoft 365 (preview)
-        href: flow-plugins-m365.md  
       - name: Use flows with approvals
         items:
         - name: Get started with approvals
@@ -708,6 +704,8 @@
       href: ./desktop-flows/how-to/handle-custom-forms.md
     - name: Share/export a desktop flow
       href: ./desktop-flows/how-to/share-export-desktop-flows.md
+    - name: Set a run owner on a desktop flow connection
+      href: ./desktop-flows/how-to/set-runowner-desktopflowconnection.md
     - name: Run desktop flow from other desktop flows
       href: ./desktop-flows/how-to/run-desktop-flow-action.md
     - name: Use connector actions
@@ -1232,7 +1230,7 @@
   items:
   - name: Power Automate sign-up FAQ
     href: organization-q-and-a.md
-  - name: Enable self-service disaster recovery
+  - name: Enable Self Service Disaster Recovery (preview)
     href: enable-self-service-disaster-recovery.md
   - name: Enable experimental features
     href: experimental-features.md
@@ -1244,6 +1242,8 @@
     href: admin-center-introduction.md
   - name: Administer environments
     href: environments-overview-admin.md
+  - name: Power Automate environment upgrade
+    href: environment-architecture.md
   - name: IP address configuration
     href: ip-address-configuration.md
   - name: Support for customer-managed keys
