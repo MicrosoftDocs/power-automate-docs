@@ -1,5 +1,5 @@
 ---
-title: Savings in Power Automate (preview)
+title: Savings in Power Automate
 description: Learn how your Power Automate cloud flows can generate savings to track the impact of your automation in terms of time and money saved.
 author: cvassallo
 ms.service: power-automate
@@ -10,16 +10,9 @@ ms.reviewer: angieandrews
 ms.topic: article
 ---
 
-# Savings in Power Automate (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Savings in Power Automate
 
 The savings feature provides a way to calculate how much time and/or money a cloud flow is saving to your organization. You can add a user-defined saving rule to each cloud flow, which generates savings at successful cloud flow runs.
-
-> [!IMPORTANT]
->- This is a preview feature.
->- Preview features aren’t meant for production use and have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
->- For more information, go to our [preview terms](https://go.microsoft.com/fwlink/?linkid=2189520).
 
 The savings feature adds two concepts to Power Automate, as indicated in the following table.
 
@@ -42,9 +35,15 @@ The saving rule can be defined on the cloud flow details page by selecting **Sav
 
 |Saving rule|Definition|
 |----|-------------------------------------------|
-|Time-saving rule|Define the manual processing time it usually takes to manually perform the actions being automated. The saving can be generated either on every successful run, or once every hour/day/week if a successful run happened in that period.|
+|Time-saving rule|Define the manual processing time it usually takes to manually perform the actions being automated. The saving is generated on every successful run.|
 |Money-saving rule based on hourly rate|The money-saving rule can be based on an hourly rate converting time-savings in money-savings. This mode is only available if the time-saving rule is enabled.|
-|Money-saving rule with user-defined baseline|Define the amount of money saved by the actions being automated. The saving can also be generated either on every successful run or once every hour/day/week if a successful run happened in that period.|
+|Money-saving rule with user-defined baseline|Define the amount of money saved by the actions being automated. The saving is generated on every successful run.|
+
+> [!NOTE]
+>
+> - Period-based saving rules (every hour/day/week) have been deprecated before the General Availability of the savings feature and can't be created anymore.
+> - Any pre-existing period-based rule will stop collecting savings data and should be updated to use the ‘per successful run’ basis.
+
 
 ### Money-saving rule based on hourly rate
 
