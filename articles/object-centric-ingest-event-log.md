@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/07/2025
+ms.date: 11/03/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,7 +16,7 @@ search.audienceType:
 - enduser
 ---
 
-# Ingest Object-centric Event Log (preview)
+# Ingest Object-centric event log (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 

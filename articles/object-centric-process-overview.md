@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/07/2025
+ms.date: 11/03/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template

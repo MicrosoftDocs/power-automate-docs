@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/07/2025
+ms.date: 11/03/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -28,10 +28,10 @@ OCPM uses some general terms. If you're unfamiliar with a term, check out the [G
 
 ## Importance of object‑centric process mining
 
-Real business processes rarely flow as a single, linear instance. Events routinely touch *several objects of different types at the same time* (for example, creating an invoice for a specific order, or shipping a package that contains items from multiple orders). OCPM models that reality by recording events that relate to **many objects and object types** in one process, preserving their relationships end‑to‑end.
+Real business processes rarely flow as a single, linear instance. Events routinely touch *several objects of different types at the same time* (for example, creating an invoice for a specific order, or shipping a package that contains items from multiple orders). OCPM models that reality by recording events that relate to *many objects and object types* in one process, preserving their relationships end‑to‑end.
 
    > [!NOTE]
-   > **Key idea:** Instead of "one case means one sequence of events," OCPM lets **one event** belong to *multiple objects* (and object types), keeping the full context intact.
+   > Key idea: Instead of "one case means one sequence of events," OCPM lets *one event* belong to *multiple objects* (and object types), keeping the full context intact.
 
 ## Business process example
 
@@ -41,10 +41,10 @@ Consider a simple retail scenario:
 1. The store raises **two supplier orders** (SO1, SO2) to restock items.
 1. One supplier order arrives and is unpacked; the other requires an update.
 1. The store issues **two invoices** (I1, I2). One invoice is updated.
-1. The store policy says **“ship the second customer order only after invoices are paid.”**
+1. The store policy says **"ship the second customer order only after invoices are paid."**
 1. After **payment (P1)** is received, the second order is shipped.
 
-We’ll use this same flow to compare OCPM with case‑centric process mining.
+We'll use this same flow to compare OCPM with case‑centric process mining.
 
 ## How OCPM models this process
 

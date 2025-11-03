@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/07/2025
+ms.date: 11/03/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -47,7 +47,7 @@ The following columns are required:
 The OECL uses the following modeling rules and naming conventions:
 
 - **One row = one event**, even if it relates to multiple objects.
-- **Stable, opaque object IDs** across the log (for example, `O1`, `I1`, `P1`); do not reuse IDs.
+- **Stable, opaque object IDs** across the log (for example, `O1`, `I1`, `P1`); don't reuse IDs.
 - **Multi‑object delimiter**: Use `|` inside object columns (for example, `O1|O2`).
 - **Avoid attribute duplication**: Keep object attributes (for example, `PaymentAmount`) once per event row if that object is present. If multiple same‑type objects must carry different attribute values, we prefer that you split them into separate events.
 - **Activity labels**: Concise, consistent, and controlled. Avoid embedding high‑cardinality details directly in `Activity`; keep them as attributes.
@@ -92,7 +92,7 @@ The following steps 1 through 4 are the steps in the process.
 - **Invoice** (billing): `I1`, `I2`
 - **Payment**: `P1`
 
-Keep this minimal. Extend only if additional objects materially change your analysis.
+Keep this minimal. Extend only if more objects materially change your analysis.
 
 #### 2. For each object, gather relevant events (event streams before merging)
 
