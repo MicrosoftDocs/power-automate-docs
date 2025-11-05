@@ -292,8 +292,8 @@ The new Power Automate designer is the recommended way to author cloud flows, wi
 
 - Flows with the following triggers:
   - **When a flow is run from business process flow** in the Microsoft Dataverse connector
-  - [Microsoft 365 Compliance connector triggers](https://learn.microsoft.com/connectors/microsoft365compliance/#triggers).
-  - [When Power Pages calls a flow](https://learn.microsoft.com/power-pages/configure/cloud-flow-integration)
+  - [Microsoft 365 Compliance connector triggers](/connectors/microsoft365compliance/#triggers).
+  - [When Power Pages calls a flow](/power-pages/configure/cloud-flow-integration)
   - Power Apps v1 trigger. Use PowerAppsV2 instead.
 - Comments. For new flows, we recommend that you use Action _notes_ until comments are supported in the new designer.
 - **Perform a changeset request** action group in the Microsoft Dataverse connector
