@@ -24,34 +24,32 @@ ms.collection: bap-ai-copilot
 
 # Explore the cloud flows designer
 
-You can create and configure your cloud flows with the new designer or the classic designer. Learn how to determine the designer you're using in [Identify differences between the new designer and the classic designer](#identify-differences-between-the-new-designer-and-the-classic-designer).
+The [cloud flows](overview-cloud.md) designer is where you build and test cloud flows. This article provides an overview of the designer's features and capabilities.
 
-This article provides an overview of the designer's features and capabilities. Learn more in [Overview of cloud flows](overview-cloud.md).
-
-Following is a screenshot of the designer's features. To give you more context, refer to the legend.
+Here's an annotated screenshot of the designer to help you get started. 
 
 :::image type="content" source="media/flows-designer/designer-overview-numbers-borders.png" alt-text="Screenshot of the cloud flows designer with Copilot." lightbox="media/flows-designer/designer-overview-numbers-borders.png":::
 
 Legend:
 
 1. **Left arrow button**: Go back to the previous page.
-1. **Flow name**: The name of your flow, which you can edit at any time. To do this, select the flow name, enter a new name, and then select **Save** on the command bar.
-1. [**Undo and Redo buttons**](#undo-and-redo): Reverse or reinstate modifications you made to the flow.
-1. [**Send feedback button**](#send-feedback): *(New designer only)* Send us feedback about your flow creation experience or general comments about the AI-powered designer.
+2. **Flow name**: The name of your flow, which you can edit at any time. To do this, select the flow name, enter a new name, and then select **Save** on the command bar.
+3. [**Undo and Redo buttons**](#undo-and-redo): Reverse or reinstate modifications you made to the flow.
+4. [**Send feedback button**](#send-feedback): *(New designer only)* Send us feedback about your flow creation experience or general comments about the AI-powered designer.
 
     (*Classic designer only*) Select the smiley face icon in the title bar.
 
-1. [**Flow checker button**](error-checker.md): Check your flow for errors.
-1. [**Save button**](#save-button): Save your flow.
-1. [**Test button**](#test-button): Test your flow to make sure that it works as you intended.
-1. [**Copilot button**](create-cloud-flow-using-copilot.md): *(New designer only)* Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
-1. **New designer toggle**: Switch between the new designer and the classic designer. Learn more in [Identify differences between the new designer and the classic designer](#identify-differences-between-the-new-designer-and-the-classic-designer).
-1. **Action/trigger name**: *(New designer only)* The action or trigger card that is selected in your flow in the center of the page (the [canvas](#canvas)).
-1. [**More commands button**](#more-commands): *(New designer only)* Add a note to the selected card, *pin* an action, or delete the card. There are two ways to pin an action. Learn more in [View two action panes simultaneously](#view-two-action-panes-simultaneously).
-1. **Collapse button**: *(New designer only)* Hide the pane. When the pane is collapsed, the **Expand** button (**>>**) appears in the upper-right corner. Select it to show the pane again.
-1. [**Configuration pane**](#configuration-pane): *(New designer only)* After you select a card to configure on the [canvas](#canvas), the configuration pane opens on the left side of the AI-powered designer.
-1. [**Canvas**](#canvas): The canvas is where you build your flow.
-1. [**Copilot pane**](create-cloud-flow-using-copilot.md): *(New designer only)* Copilot stays with you during your entire editing journey. It can help you update and make changes to your flow based on your conversational-style prompt. It can also help answer flow-related and product-related questions.
+5. [**Flow checker button**](error-checker.md): Check your flow for errors.
+6. [**Save button**](#save-button): Save your flow.
+7. [**Test button**](#test-button): Test your flow to make sure that it works as you intended.
+8. [**Copilot button**](create-cloud-flow-using-copilot.md): *(New designer only)* Show or hide the Copilot pane. The Copilot pane appears by default when the AI-powered designer opens.
+9. **New designer toggle**: Switch between the new designer and the classic designer. Learn more in [Identify differences between the new designer and the classic designer](#identify-differences-between-the-new-designer-and-the-classic-designer).
+10. **Action/trigger name**: *(New designer only)* The action or trigger card that is selected in your flow in the center of the page (the [canvas](#canvas)).
+11. [**More commands button**](#more-commands): *(New designer only)* Add a note to the selected card, *pin* an action, or delete the card. There are two ways to pin an action. Learn more in [View two action panes simultaneously](#view-two-action-panes-simultaneously).
+12. **Collapse button**: *(New designer only)* Hide the pane. When the pane is collapsed, the **Expand** button (**>>**) appears in the upper-right corner. Select it to show the pane again.
+13. [**Configuration pane**](#configuration-pane): *(New designer only)* After you select a card to configure on the [canvas](#canvas), the configuration pane opens on the left side of the AI-powered designer.
+14. [**Canvas**](#canvas): The canvas is where you build your flow.
+15. [**Copilot pane**](create-cloud-flow-using-copilot.md): *(New designer only)* Copilot stays with you during your entire editing journey. It can help you update and make changes to your flow based on your conversational-style prompt. It can also help answer flow-related and product-related questions.
 
 ## Save a solution-aware flow draft and then publish it
 
@@ -289,28 +287,26 @@ You can now fix errors on this copy of the flow and save it. If you don't save t
 
 ## Limitations and known issues in the new designer
 
-You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the new designer doesn't support the following items:
+The new Power Automate designer is the recommended way to author cloud flows, with major improvements including [versioning](drafts-versioning.md) and Copilot assistance. However, some flows cannot yet be opened in the new designer.
 
-- Non-Open API flows (If there's Peek code on an action and if you see the API Connection value instead of Open API Connection in Kind field, it's a non-Open API flow.)
-  - These are legacy flows, probably created a long time ago when Open API support wasn't available.
-  - We plan to migrate them to Open API format. In the meantime, if you want to work with the latest functionalities in the new designer Copilot experience, consider recreating the flow in the new designer until we announce the migration plan.
-- Some hybrid triggers:
-  - When a flow is run from business process flow (Dataverse).
-  - Microsoft 365 Compliance Connector.
-- A comment. We recommend that you use Action _notes_ until the support is available.
-- Power Pages connector.
-- Power Apps v1 trigger. We recommend that you use V2 trigger instead.
-- Perform a changeset request action (Dataverse).
-- A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference as a proper application lifecycle management (ALM) practice instead.
 
-As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is becoming the primary interface.
+- Flows with the following triggers: 
+  - **When a flow is run from business process flow** in the Microsoft Dataverse connector
+  - [Microsoft 365 Compliance connector triggers](https://learn.microsoft.com/connectors/microsoft365compliance/#triggers). 
+  - [When Power Pages calls a flow](https://learn.microsoft.com/power-pages/configure/cloud-flow-integration)
+  - Power Apps v1 trigger. Use PowerAppsV2 instead. 
+- Comments. For new flows, we recommend that you use Action _notes_ until comments are supported inthe new designer. 
+- **Perform a changeset request** action group in the Microsoft Dataverse connector
+- A solution flow using connections instead of connection reference isn't supported. Export the flow in an unmanaged solution and re-import it to update it to use connection references. 
+- Flows using the older non-Open API format for connection. 
+  - To check if a flow is non-OpenAPI, select **Peek code** on an action in the flow and check if there is a parameter named "method". These flows currently need to be re-created in a new flow if you wish to edit them in the new designer, or can continue to be edited in the classic designer. 
+  
+The classic designer will be continue to be supported alongside the new designer while these compatibilities and other improvements are addressed.
 
-If you prefer to access features not yet available in the new designer, or encounter any [limitations or known issues](#limitations-and-known-issues-in-the-new-designer), you can temporarily revert to the classic designer. To do this, turn off the **New designer** toggle on the menu in the cloud flows designer.
+You can switch to the classic designer at any time by turning off the **New designer** toggle at the top right of the designer. 
 
 > [!NOTE]
-> The new cloud flows designer isn't yet available in integration surfaces such as Solution Explorer, Power Apps, Teams, and others.
-
-If a flow is saved too soon on load, it might be saved without advanced parameters if those parameters weren't fetched yet. As a workaround, you can avoid saving a flow too soon on load. Alternatively, use the classic designer.
+> The new cloud flows designer isn't yet available in integration surfaces such as Solution Explorer, Power Apps, Teams, and others. Open these flows from their detail page or the Power Automate portal to use the new designer.
 
 ## FAQ
 
