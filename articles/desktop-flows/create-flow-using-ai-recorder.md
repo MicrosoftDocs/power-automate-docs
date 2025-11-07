@@ -28,7 +28,7 @@ ms.collection:
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 ## Note
-The **Record with Copilot** feature is deprecated. To create a flow, [describe it with natural language using Copilot](copilot-in-power-automate-for-desktop.md#create-a-desktop-flow-using-copilot-preview) and use the [recorder](recording-flow.md) as needed. You can also create an agent in **Copilot Studio** with [computer use](https://learn.microsoft.com/microsoft-copilot-studio/computer-use), which lets you automate tasks on a computer by simply describing what you want it to do in natural language.
+The **Record with Copilot** feature is deprecated. To create a flow, [describe it with natural language using Copilot](copilot-in-power-automate-for-desktop.md#create-a-desktop-flow-using-copilot-preview) and use the [recorder](recording-flow.md) as needed. You can also create an agent in **Copilot Studio** with [computer use](/microsoft-copilot-studio/computer-use), which lets you automate tasks on a computer by simply describing what you want it to do in natural language.
 
 ## Introduction
 
