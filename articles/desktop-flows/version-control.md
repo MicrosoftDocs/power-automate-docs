@@ -27,6 +27,7 @@ enabled, every draft and published version of a flow is stored in Dataverse. You
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and might have restricted functionality.
+> - The rollout of this feature will be gradual and may take several weeks to complete across all environments. Availability might vary depending on your region and tenant.
 
 ## Prerequisites
 - CDS Environment 9.2.25102 or newer
