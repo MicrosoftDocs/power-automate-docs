@@ -22,7 +22,7 @@ search.audienceType:
 
 Version control in Power Automate for Desktop introduces a structured way to manage changes to your desktop flows throughout their lifecycle. Instead of relying on manual backups or duplicate flows, you can now save drafts, 
 publish stable versions, and restore previous versions, all backed by Microsoft Dataverse. This feature helps improve governance, collaboration, and risk mitigation for enterprise automation projects. When version control is 
-enabled, every draft and published version of a flow is stored in Dataverse. You can access these versions through the Version History panel in the designer, making it easy to track changes and revert when necessary.
+enabled, every draft and published version of a flow is stored in Dataverse. You can access these versions through the version history panel in the designer, making it easy to track changes and revert when necessary.
 
 > [!IMPORTANT]
 > - This is a preview feature.
