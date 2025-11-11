@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 03/10/2025
+ms.date: 11/11/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -48,29 +48,77 @@ Returns the event/case attribute value.
 
 If the attribute contains space in the name, it isn't possible to write it directly as part of the custom metric expression. In such cases, use the operator GetValue to access the value of a given attribute.
 
-## IF([condition],[valueIfTrue],[valueIfFalse])
+## IF([condition1], [thenResult1], [condition2], [thenResult2], ..., [defaultResult])
 
-Returns the first or second value based on the condition.
+Evaluates one or more conditions in sequence and returns the corresponding result for the first condition that evaluates to `TRUE`. If none of the conditions are met, the function returns the `defaultResult`.
 
 **Parameters:**
 
-- ***[condition]*** - boolean value or expression
+- ***[condition]*** - Boolean value or expression to evaluate.  
+  
+    Data type: BOOL
 
-   Data type: BOOL
+- ***[thenResult]*** - Value returned if the associated condition is TRUE.  
+  
+    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
-- ***[valueIfTrue]*** - value to be matched in input string
+- ***[defaultResult]*** - Value returned if no conditions are met.  
+  
+    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
-   Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
+**Output Data Type**: BOOL, INT, FLOAT, STRING, DATE, TIME (based on returned value)
 
-- ***[valueIfFalse]*** - returned value if condition is not met
+**Examples:**
 
-   Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
+1. **Single condition:**
+`IF(EventCount() > 10, "Complex", "Simple")`
 
-**Output Data Type**: BOOL, INT, FLOAT, STRING, DATE, TIME
+If the case contains more than 10 events, returns `"Complex"`, otherwise `"Simple"`.
 
-**Example**: `IF(EventCount() > 10, "Complex", "Simple")`
+1. **Multiple conditions:**
+`IF(EventCount() > 20, "Very Complex", EventCount() > 10, "Complex", "Simple")`
 
-Metric applicable on case overview statistics screen. If the case contains more than 10 events, the returned value is "Complex", otherwise "Simple".
+- Returns `"Very Complex"` if event count > 20  
+- Returns `"Complex"` if event count > 10  
+- Returns `"Simple"` otherwise  
+
+**Usage:**
+Applicable on the case overview statistics screen for dynamic classification based on multiple thresholds or conditions.
+
+## SWITCH([value], [match1], [result1], [match2], [result2], ..., [defaultResult])
+
+Compares an input `value` against a series of specified matches and returns the corresponding result for the first match found. If no matches are found, the function returns the `defaultResult`.
+
+**Parameters:**
+
+- ***[value]*** - The expression or value to evaluate.  
+  
+    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
+
+- ***[match]*** - A value to compare against the input `value`.  
+  
+    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
+
+- ***[result]*** - Value returned if the corresponding `match` equals the input `value`.  
+  
+    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
+
+- ***[defaultResult]*** - Value returned if no matches are found.  
+  
+    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
+
+**Output Data Type:** BOOL, INT, FLOAT, STRING, DATE, TIME (based on returned value)
+
+**Example:**
+
+`SWITCH(Activity, "A", 50, "B", 100, 0)`
+
+- Returns `50` if `Activity` = `"A"`  
+- Returns `100` if `Activity` = `"B"`  
+- Returns `0` if `Activity` does not match any specified value  
+
+**Usage:**
+Ideal for mapping discrete values to specific outcomes without nested IF statements, improving readability and maintainability.
 
 ## SOURCE([operation])
 
