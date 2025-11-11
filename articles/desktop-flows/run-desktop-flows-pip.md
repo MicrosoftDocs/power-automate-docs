@@ -4,7 +4,7 @@ description: Learn how to run desktop flows in picture-in-picture mode.
 author: nikosmoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.date: 08/07/2025
+ms.date: 11/11/2025
 ms.topic: how-to
 ms.author: nimoutzo
 ms.reviewer: matp
@@ -149,7 +149,7 @@ When set to **Custom**, you can enter a custom user data folder to be used by th
 - Issues might occur when several VPN clients are used in a picture-in-picture session. The identified issues are related to app sign out, and the VPN client identified so far is Zscaler.
 - If smartcard is used to sign in to Windows, the following policy should be set to *Not Configured* or *Disabled*:
   - `Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection\Do not allow smart card device redirection`
-- Picture-in-Picture is currently not supported on Azure AD joined cloud machines.
-- If the error "Windows cannot access the specified device, path, or file. You may not have the appropriate permissions to access the item." appears after launching the picture-in-picture session, it may be caused by the Mobile Devices service. This service is not compatible with child sessions and can block flow execution. Disabling it resolves the issue.
+- Picture-in-Picture currently isn't supported on Azure AD joined cloud machines.
+- If the error "Windows cannot access the specified device, path, or file. You may not have the appropriate permissions to access the item." appears after launching the picture-in-picture session, it might be caused by the Mobile Devices service. This service isn't compatible with child sessions and can block flow execution. Disabling it resolves the issue.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
