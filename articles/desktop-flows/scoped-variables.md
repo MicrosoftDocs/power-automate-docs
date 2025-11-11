@@ -20,8 +20,6 @@ Power Automate for desktop now supports scoped variables, allowing you to declar
 ## Understanding variables scope
 Variables in Power Automate for desktop are categorized as either global or local. Global variables are created in global subflows and accessible throughout the entire desktop flow, while local variables are restricted to the local subflow where they were created. The variables panel has been updated to reflect this distinction, featuring two tabs at the top, Global and Local, so you can easily manage and distinguish between variables based on their scope.
 
-![Screenshot of the variables pane.](media\scoped-vars\variables_pane_empty.png)
-
 ### Creating local subflows and variables
 The scope of a subflow is established at the time of its creation. A designated scope field is now available, allowing you to specify the intended scope for the newly created subflow, as illustrated in the image below:
 
@@ -33,7 +31,6 @@ The scope of a subflow is established at the time of its creation. A designated 
 
 To work with local variables, start by adding a new subflow from the subflows menu and selecting “Local” in the scope field. 
 
-![Screenshot that shows the add new subflow dialog with the local scope selected.](media\scoped-vars\add_new_local_subflow.png)
 
 Once the subflow is created, the variables panel will automatically switch to the local variables tab, displaying only the variables defined within that subflow. 
 
@@ -61,7 +58,6 @@ Each individual local subflow maintains its own distinct input and output variab
 
 To declare input and output variables in local subflows, go to your chosen local subflow, click the + icon at the upper right of the variables panel, and then add the variables as you normally would.
 
-![Screenshot that shows the variables panel of a local subflow with the create Input or Output variable menue open.](media\scoped-vars\local_IO_variables.png)
 
 Once you have created any input or output variables, you will be able to see them in the variables pane under the local subflow local tab that you created them from
 
