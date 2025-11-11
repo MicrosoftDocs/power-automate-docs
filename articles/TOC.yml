@@ -526,6 +526,8 @@
       href: ./desktop-flows/datatype-properties.md
     - name: Use variables and the % notation
       href: ./desktop-flows/variable-manipulation.md
+    - name: Working with scoped variables
+      href: ./desktop-flows/scoped-variables.md
     - name: Automate using UI elements
       href: ./desktop-flows/ui-elements.md
     - name: Inspect a UI element (preview)
