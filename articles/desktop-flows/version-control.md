@@ -47,36 +47,36 @@ To configure version control:
 
 ## Use version control
 
-The following key features are available with version control:
+Version control offers the following key features:
 
-1. **Save draft**
-    - Save your latest changes without releasing them as the official version. This step creates the latest version of the flow.
-    - Allows makers to save incremental changes without making them official.
-    - Encourages iterative development and experimentation without disrupting production.
-1. **Publish**
-    - Set a version as official so it runs from the console or cloud. This step creates the published version of the flow.
-    - Ensures only validated, stable flows are deployed, reducing operational risk.
-1. **Version history pane**
-    - Select the version history button to view all saved and published versions.
-    - See timestamps and user details for each version.
-    - Helps with transparency and auditing.
+1. **Save draft**: Save your latest changes without releasing them as the official version. This action:
+    - Creates the latest version of the flow
+    - Saves incremental changes without making them official
+    - Encourages iterative development and experimentation without disrupting production
+1. **Publish**: Set a version as official so it runs from the console or cloud. This action:
+    - Creates the published version of the flow
+    - Ensures only validated, stable flows are deployed, reducing operational risk
+1. **Version history pane**: View all saved and published versions of your flow. This feature:
+    - Shows timestamps and user details for each version
+    - Provides transparency and auditing capabilities
+    - Allows you to track changes over time
 
-:::image type="content" source="media/version-control/version-control-options.png" alt-text="The options of version control.":::
+:::image type="content" source="media/version-control/version-control-options.png" alt-text="Screenshot showing version control features including Save draft, Publish, and a button to open the version history pane." lightbox="media/version-control/version-control-options.png":::
  
 > [!NOTE]
 > The **Publish** option is disabled until you add and enable at least one action in the workspace. When you add an enabled action, the **Publish** option becomes available.
 
 ## Version history pane
 
-In the version history pane, you can find all available versions of a specific desktop flow. The entries include:
-- Date and timestamp
-- User who performed the action
-- Flags:
-  - Latest version for the most recent draft
-  - Published for official versions
-  - Previously published for older published versions
+The version history pane displays all available versions of a specific desktop flow. The following information is included:
+- **Date and timestamp**: When the version was created
+- **User**: The user who performed the action
+- **Version flags**:
+  - **Latest version**: The most recent draft
+  - **Published**: The current official version
+  - **Previously published**: Older published versions that are no longer current
  
-:::image type="content" source="media/version-control/version-control-flags.png" alt-text="The flags of versions in version history pane.":::  
+:::image type="content" source="media/version-control/version-control-flags.png" alt-text="Screenshot of the version history pane showing version flags for latest, published, and previously published versions.":::
 
 ## Context menu options
 
@@ -86,7 +86,7 @@ When you open the context menu for one of the versions in the version history pa
 - **Restore**
     - Saves the selected version as draft and flags it as the latest version.
 
-:::image type="content" source="media/version-control/context-options.png" alt-text="The options of the context menu of a version.":::  
+:::image type="content" source="media/version-control/context-options.png" alt-text="Screenshot of a context menu showing View and Restore options.":::
 
 > [!NOTE]
 > Designer in view mode is read-only. You can't add, remove, or edit actions, UI elements, or images.
