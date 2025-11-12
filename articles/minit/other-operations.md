@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 11/11/2025
+ms.date: 11/12/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType:
@@ -30,7 +30,7 @@ Returns the event/case attribute value.
 
 **Example**: `MAX(eventCost)`
 
-Metric applicable on process map calculates the maximum cost of the event per activity. Attribute name - eventCost - is case insensitive, valid formats are also for example EVENTCost, eventcost, or EventCOST.
+Metric applicable on process map calculates the maximum cost of the event per activity. Attribute name - eventCost - is case insensitive, valid formats are also, for example, EVENTCost, eventcost, or EventCOST.
 
 ## GETVALUE([attributeName])
 
@@ -115,7 +115,7 @@ Compares an input `value` against a series of specified matches and returns the 
 
 - Returns `50` if `Activity` = `"A"`  
 - Returns `100` if `Activity` = `"B"`  
-- Returns `0` if `Activity` does not match any specified value  
+- Returns `0` if `Activity` doesn't match any specified value  
 
 **Usage:**
 Ideal for mapping discrete values to specific outcomes without nested IF statements, improving readability and maintainability.
@@ -230,7 +230,7 @@ Metric applicable for any custom metric usage within the application. Returns to
 
 ## IN([operation], value1, value2, value3, ...., valueN)
 
-returns TRUE if the operation is equal to any of given values. It is a shortened version of the logical operation OR.
+Returns TRUE if the operation is equal to any of given values. It's a shortened version of the logical operation OR.
 
 **Parameters:**
 
@@ -260,7 +260,7 @@ Returns the value of the next event in the case. If the next event doesn't exist
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
-- ***[default]*** - default value to be returned if there is no next event in the actual case.
+- ***[default]*** - default value to be returned if there's no next event in the actual case.
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
@@ -272,21 +272,21 @@ Metric applicable on filter metrics. Returns event cost of the next event in the
 
 ## NEXTIF([condition], [value], [default])
 
-Returns the value of the first next event in the case which met the condition. If no such next event exists, returns default value.
+Returns the value of the first next event in the case that met the condition. If no such next event exists, returns default value.
 
 **Supported context:** case (implicit)
 
 **Parameters:**
 
-- ***[condition]*** - the condition which needs to be met for the event selection
+- ***[condition]*** - the condition that needs to be met for the event selection
 
    Data type: BOOL
 
-- ***[value]*** - value to be calculated in the context of the first next event which matches the [condition] within the actual case
+- ***[value]*** - value to be calculated in the context of the first next event that matches the [condition] within the actual case
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
-- ***[default]*** - default value to be returned if there is no next event in the actual case which matches the condition
+- ***[default]*** - default value to be returned if there's no next event in the actual case that matches the condition
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
@@ -308,7 +308,7 @@ Returns value of the previous event in the case. If previous event doesn't exist
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
-- ***[default]*** - default value to be returned if there is no previous event in the actual case.
+- ***[default]*** - default value to be returned if there's no previous event in the actual case.
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
@@ -316,25 +316,25 @@ Returns value of the previous event in the case. If previous event doesn't exist
 
 **Example**: `PREVIOUS(userName, "n/a")`
 
-Metric applicable on metrics filter. Returns value of userName attribute for the previous event in the case. If the previous event does not exist (for example, for the first event in case), it returns "n/a".
+Metric applicable on metrics filter. Returns value of userName attribute for the previous event in the case. If the previous event doesn't exist (for example, for the first event in case), it returns "n/a".
 
 ## PREVIOUSIF([condition], [value], [default])
 
-Returns value of the first previous event in the case which met the condition. If no such previous event exists, returns the default value.
+Returns value of the first previous event in the case that met the condition. If no such previous event exists, returns the default value.
 
 **Supported context:** case (implicit)
 
 **Parameters:**
 
-- ***[condition]*** - the condition which needs to be met for the event selection
+- ***[condition]*** - the condition that needs to be met for the event selection
 
    Data type: BOOL
 
-- ***[value]*** - value to be calculated in the context of the first previous event which matches the [condition] within the actual case
+- ***[value]*** - value to be calculated in the context of the first previous event that matches the [condition] within the actual case
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
-- ***[default]*** - default value to be returned if there is no previous event in the actual case which matches the condition
+- ***[default]*** - default value to be returned if there's no previous event in the actual case that matches the condition
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
@@ -346,7 +346,7 @@ Metric applicable on metrics filter. Returns value of userName attribute for the
 
 ## MOVE([offset], [value], [default])
 
-Returns the value of the event in the case retrieved by the offset. Offset 1 means next event, offset -1 previous, offset 0 current. If the event does not exist on the given offset, it returns the default value.
+Returns the value of the event in the case retrieved by the offset. Offset 1 means next event, offset -1 previous, offset 0 current. If the event doesn't exist on the given offset, it returns the default value.
 
 **Supported context:** case (implicit)
 
@@ -360,7 +360,7 @@ Returns the value of the event in the case retrieved by the offset. Offset 1 mea
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
-- ***[default]*** - default value to be returned if there is no such event in the actual case
+- ***[default]*** - default value to be returned if there's no such event in the actual case
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
@@ -382,7 +382,7 @@ Returns the value of the event satisfying the condition retrieved by the offset.
 
    Data type: INT
 
-- ***[condition]*** - the condition which needs to be met for the event selection
+- ***[condition]*** - the condition that needs to be met for the event selection
 
    Data type: BOOL
 
@@ -390,7 +390,7 @@ Returns the value of the event satisfying the condition retrieved by the offset.
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
-- ***[default]*** - default value to be returned if there is no such event in the actual case
+- ***[default]*** - default value to be returned if there's no such event in the actual case
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
@@ -398,4 +398,4 @@ Returns the value of the event satisfying the condition retrieved by the offset.
 
 **Example**: `MOVEIF(3, userName == "Laura", eventCost, 0)`
 
-Metric applicable on metrics filter. Returns event cost for the third next event which was done by the user "Laura" in the current case.
+Metric applicable on metrics filter. Returns event cost for the third next event that was done by the user "Laura" in the current case.
