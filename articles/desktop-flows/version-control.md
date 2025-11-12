@@ -29,15 +29,21 @@ Version control in Power Automate for desktop introduces a structured way to man
 
 ## Prerequisites
 
-- CDS Environment 9.2.25102 or newer
 - The environment and flow use the [v2 schema](schema.md)
 - Optional: ComponentChangesetVersion read and write permissions (included by default for [Environment Maker role](/power-platform/admin/database-security))
 
 ## Configuration
 
-To enable version control, configure the following settings in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/):
-- **Enable version control of desktop flows**: Grants users in this environment access to view and manage all available versions of desktop flows through the version history pane.
-- **Desktop flows version control enabled by default**: Ensures version history is enabled by default for all desktop flows in this environment.
+To configure version control:
+
+1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). 
+1. Select **Manage**.
+1. Select **Environments** and select the environment.
+1. Select **Settings**, expand **Product**, and select **Features**. 
+1. Locate the **Desktop flow version control** section and configure the following options :
+
+    - **Enable version control of desktop flows**: Grants users in this environment access to view and manage all available versions of desktop flows through the version history pane.
+    - **Desktop flows version control enabled by default**: Ensures version history is enabled by default for all desktop flows in this environment.
 
 ## Use version control
 
