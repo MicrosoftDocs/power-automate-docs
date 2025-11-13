@@ -912,6 +912,13 @@
     {
       "source_path": "articles/work-with-triggers.md",
       "redirect_url": "/power-automate/work-with-triggers-actions",
+      "source_path": "articles/flow-plugins-m365.md",
+      "redirect_url": "/microsoft-copilot-studio/advanced-flow",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/use-chatgpt-plugin.md",
+      "redirect_url": "/microsoft-copilot-studio/advanced-flow",
       "redirect_document_id": false
     }
   ]

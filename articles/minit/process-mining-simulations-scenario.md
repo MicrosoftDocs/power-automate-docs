@@ -43,7 +43,7 @@ This section explains some of the settings for your simulation scenario in the *
 1. In the **Description** field, enter a description for the simulation scenario.
 1. In the **Currency** dropdown menu, select the currency used for financial KPIs.
 1. In the **Arrival time** section, define the settings that determine the arrival of cases in simulation.
-    - In the **Instances** field, select the instance number.
+    - In the **Cases** field, select the number of process instances that will be created during the simulation.
     - In the **Scenario start at** field, select the date on the calendar to represent when the simulation scenario starts.
     - In the **Exclude at the start** and **Exclude from the end** fields, select the up or down arrow to exclude cases from the start and end of simulation when there's increasing and decreasing inflow of new cases. Exclusions filter out periods when there's no full workload or inflow from the simulated cases.
 

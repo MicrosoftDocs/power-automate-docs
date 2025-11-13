@@ -5,7 +5,7 @@ author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 04/11/2025
+ms.date: 10/07/2025
 ms.author: quseleba
 ms.reviewer: 
 contributors:
@@ -22,7 +22,7 @@ ms.custom:
 
 The **Credentials** page in Power Automate allows you to create, edit, and share sign in credentials using Azure Key Vault and use them in desktop flows or desktop flow connections.
 
-You can also [create credentials with CyberArk® (preview)](create-cyberark-credential.md).
+You can also [create credentials with CyberArk](create-cyberark-credential.md).
 
 > [!IMPORTANT]
 > - Currently, this feature isn't available for US Government Clouds.
@@ -41,7 +41,7 @@ In short, the admin needs to ensure:
 
 To configure Azure Key Vault, follow the steps described in [Configure Azure Key Vault](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets#configure-azure-key-vault).
 
-### Certificate-based authentication (preview)
+### Certificate-based authentication
 
 Microsoft Entra ID certificate-based authentication is a single factor authentication that lets you meet multifactor authentication (MFA) requirements.
 Instead of using password-based authentication, use certificate-based authentication (CBA), which verifies your identity based on digital certificates.
