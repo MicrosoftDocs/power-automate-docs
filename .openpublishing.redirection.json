@@ -912,6 +912,9 @@
     {
       "source_path": "articles/work-with-triggers.md",
       "redirect_url": "/power-automate/work-with-triggers-actions",
+      "redirect_document_id": false      
+    },
+    {
       "source_path": "articles/flow-plugins-m365.md",
       "redirect_url": "/microsoft-copilot-studio/advanced-flow",
       "redirect_document_id": false
