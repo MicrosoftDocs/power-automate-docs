@@ -5,7 +5,7 @@ author: PetrosFeleskouras
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: troubleshooting-general
-ms.date: 07/21/2025
+ms.date: 10/21/2025
 ms.author: pefelesk
 ms.reviewer: tapanm
 contributors:
@@ -93,6 +93,9 @@ Example:
 `TroubleshootingTool.Console.exe ChangeUIFlowServiceAccount mydomain\myuser < tempfilethatcontainspassword.txt`
 
 The tool also provides other functionality such as getting the name of the account that the service is currently running as, resetting it to run as the default virtual account, or simply restarting the service. For more information on all supported commands, simply run the TroubleshootingTool.Console.exe with no arguments.
+
+>[!NOTE]
+>Changing the service account isn't supported for [hosted machines](hosted-machines.md).
 
 ## Troubleshoot desktop flow runs
 
