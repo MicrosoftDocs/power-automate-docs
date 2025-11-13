@@ -35,12 +35,14 @@
           href: create-cloud-flow-without-copilot.md
         - name: "Tutorial: Get Started with cloud flows"
           href: get-started-with-cloud-flows.md    
-    - name: Work with triggers and actions
-      href: work-with-triggers-actions.md
-    - name: Customize your triggers with conditions
-      href: customize-triggers.md
-    - name: Move, delete, and add options to actions
-      href: multi-step-logic-flow.md    
+    - name: More trigger and action capabilities
+      items:
+        - name: Work with triggers and actions
+          href: work-with-triggers-actions.md
+        - name: Customize your triggers with conditions
+          href: customize-triggers.md
+        - name: Move, delete, and add options to actions
+          href: multi-step-logic-flow.md    
     - name: Copilot in cloud flows FAQ
       href: faq-copilot-cloud-flows.yml
     - name: How to
