@@ -100,15 +100,5 @@ When you open the context menu for one of the versions in the version history pa
 
 ## Known issues
 
-- Error when saving a desktop flow
-  - You might see an error saying:
-    - “You are attempting to do a published update of a component in an unmodified context when there is an unpublished active row.”
-  - This error usually happens when:
-    - You create or edit the flow by using a newer version of Power Automate for Desktop, but your device runs an older version.
-    - The newer version is still rolling out and isn't yet available on your device.
-        - You switch environments, and one of them doesn't have version control enabled.
-  - How to fix it?
-    - Use the same version that you last used to create or edit the flow, or upgrade to a newer version.
-    - If the newer version isn't available yet, wait until it finishes rolling out.
-- When a desktop flow with version control has its latest version saved as a draft, self-healing can't repair UI elements during each run.
+When a desktop flow with version control has its latest version saved as a draft, self-healing can't repair UI elements during each run.
 
