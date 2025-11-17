@@ -1228,6 +1228,8 @@
       href: ./desktop-flows/capacity-utilization-process.md
     - name: How to use process capacity
       href: ./desktop-flows/capacity-process.md
+  - name: Operator role
+    href: operator-role.md
   - name: Savings
     href: savings.md
 - name: Administration
