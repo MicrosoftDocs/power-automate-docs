@@ -477,6 +477,8 @@
     href: ./desktop-flows/how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
+  - name: Version control (preview)
+    href: ./desktop-flows/version-control.md
   - name: Work queues
     items:
     - name: Overview
