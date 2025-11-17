@@ -42,8 +42,8 @@ To configure version control:
 1. Select **Settings**, expand **Product**, and select **Features**. 
 1. Locate the **Desktop flow version control** section and configure the following options :
 
-    - **Enable version control of desktop flows**: Grants users in this environment access to view and manage all available versions of desktop flows through the version history pane.
-    - **Desktop flows version control enabled by default**: Ensures version history is enabled by default for all desktop flows in this environment.
+    - **Enable version control of desktop flows**: Determines if version control is enabled for this environment.
+    - **Desktop flows version control enabled by default**: Controls participation in rollout before global availability. If enabled, the environment will automatically switch Enable version control of desktop flows to True as soon as the feature becomes available.
 
 ## Use version control
 
