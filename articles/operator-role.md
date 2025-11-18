@@ -2,7 +2,7 @@
 title: Operator role for Power Automate
 description: Assign an operator role for robust monitoring capabilities without granting full administrative or maker permissions.
 ms.topic: article
-ms.date: 11/17/2025
+ms.date: 11/18/2025
 ms.author: quseleba
 ms.reviewer: angieandrews
 contributors:
@@ -54,10 +54,11 @@ To assign the Operator role (or any Dataverse security role) to a user:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane to the left, select **Manage**.
-1. In the **Environment** column, select the name where you want to assign the role.
-1. On the command bar at the top, select **Settings** > **Users + Permissions** > **Users**.
-1. Select the user and then select **Manage roles**.
-1. Select **Power Automate Operator** and save.
+1. In the **Environment** column, select the environment name for which you want to assign the role.
+1. On the command bar at the top, select **Settings**.
+1. On the **Settings** page, select **Users + permissions** > **Users**.
+1. Select the user, and then select the **Manage security roles** tab.
+1. Select **Power Automate Operator** > **Save**.
 
 ## Implications for monitoring
 `
