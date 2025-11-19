@@ -10,7 +10,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 09/17/2025
+ms.date: 11/19/2025
 ms.author: kewaiss
 ms.reviewer: angieandrews
 ---
@@ -32,18 +32,6 @@ Select one of the following types for an overview of what it can do:
 - [Cloud flows](overview-cloud.md): Create a cloud flow when you want your automation to be triggered either automatically, instantly, or via a schedule.
 - [Desktop flows](./desktop-flows/introduction.md): Use desktop flows to automate tasks on the web or the desktop.
 - [Generative actions (preview)](generative-actions-overview.md): Use generative actions in your flow if you want to specify only the *intent* of the action and then have the AI choose the right set of actions in the right order based on your input, context, and intent.
-
-## Create and manage flows in Power Platform
-
-Power Automate flows can be used with other Power Platform products and capabilities including [connectors](/connectors/), [AI Builder](/ai-builder/), [Dataverse](/power-apps/maker/data-platform/), and [SAP](/power-platform/sap/).
-
-Your Power Automate license gives you rights to create and manage flows in Power Apps. For example, after you sign in to Power Apps, you can select **Flows** on the left navigation pane. You can also create and manage flows through the [Power Automate pane](/powerapps/maker/canvas-apps/working-with-flows) within Power Apps Studio.
-
-## Manage flows in Microsoft Copilot Studio
-
-If you already have a Power Automate cloud flow that does what you want, you can convert it to an agent flow. Converting it allows you to manage the flow in Copilot Studio and consume Copilot Studio capacity instead of Power Automate billing. You can still access the flow from Power Automate.
-
-Learn more in [Convert a Power Automate flow to an agent flow](/microsoft-copilot-studio/flows-overview#convert-a-power-automate-flow-to-an-agent-flow).
 
 ## Related information
 
