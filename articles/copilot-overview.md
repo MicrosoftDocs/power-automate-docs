@@ -38,8 +38,8 @@ Copilot in cloud flows allows you to create automation that helps streamline you
 
 Copilot in Process Mining *ingestion* navigates you through the ingestion experience in Process Mining. Copilot in Process Mining process *analytics* helps you generate process insights through natural language. Copilot can then take the data you collected and easily summarize findings from it quantitatively and qualitatively.
 
-- [Copilot in Process Mining ingestion (preview)](process-mining-copilot-in-ingestion.md)
-- [Copilot in Process Mining process analytics (preview)](process-mining-copilot-in-process-analytics.md)
+- [Copilot in Process Mining ingestion](process-mining-copilot-in-ingestion.md)
+- [Copilot in Process Mining process analytics](process-mining-copilot-in-process-analytics.md)
 
 ## Copilot in desktop flows
 

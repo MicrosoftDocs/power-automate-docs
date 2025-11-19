@@ -2,7 +2,7 @@
 title: Configure desktop flow logs behavior
 description: Configure desktop flow log verbosity and storage destination in Power Platform Admin Center.
 ms.topic: how-to
-ms.date: 07/15/2025
+ms.date: 10/06/2025
 ms.author: appapaio
 ms.reviewer: 
 contributors:
@@ -159,5 +159,6 @@ Learn more about [querying JSON columns in elastic tables](/power-apps/developer
 - Bulk-delete jobs aren't currently supported for the **Flow Log** table.
 - Flow log records can't yet be viewed in the Table section of the maker portal (make.powerapps.com).
 - Changing action log version doesn't migrate previous desktop flow action logs to the new log storage type.
+- Don't use the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) and [FlowLog](/power-apps/developer/data-platform/reference/entities/flowlog) entities as targets for the "When a row is added, modified or deleted" Flow trigger. Doing so might cause an infinite loop because the system creates records in these tables every time a flow runs.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
