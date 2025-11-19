@@ -59,6 +59,7 @@ For flows consisting of actions including 'HTTP' and 'HTTP + Swagger' actions, a
 |----------| :-------------: |
 | **LogicApps** | yes |
 |**PowerPlatformPlex** | yes |
+|**PowerPlatformInfra** | yes |
 
 :::image type="content" source="media/ip-address-configuration/http.png" alt-text="screenshot of HTTP actions.":::
 
