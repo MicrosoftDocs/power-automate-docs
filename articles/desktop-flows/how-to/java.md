@@ -56,7 +56,7 @@ To uninstall the Java configuration (revert all changes applied to the machine b
 
 1. Launch the Command Line tool (cmd)
 
-1. Run the following command in the PAD installation folder [path]:
+1. Run the following command in the PAD installation folder C:\Program Files (x86)\Power Automate Desktop (default):
 
     ``` CMD
     PAD.Java.Installer.Host.exe -u 
