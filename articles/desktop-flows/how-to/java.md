@@ -29,11 +29,19 @@ OpenJ9 editions of the Java runtime aren't supported.
 
 ### Install Java configuration
 
-In order to automate Java applications, particular settings must be in place. 
+To automate Java applications, you need to enable specific settings during installation or by using the troubleshooter.
 
-To install the Java configuration manually, after Power Automate for desktop has been installed, navigate to the installation folder (**C:\Program Files (x86)\Power Automate Desktop**) and run the **PAD.Java.Installer.exe** as an administrator. 
+When you install Power Automate for desktop, select **Install files for enabling UI automation in Java applets**.  
+This option installs the files required for Java automation. Close all running Java applications before you select **Install**.
 
-Logs for Java automation with Power Automate for desktop can be found in the **%temp%/ java_automation_log** folder (for example, **C:\Users\username\AppData\Local\Temp\java_automation_log**). 
+If you already installed Power Automate for desktop, you can enable Java automation by running the troubleshooter. This applies to both the standard and Microsoft Store versions.
+
+1. Open **Power Automate for desktop**.
+2. Select **Help** > **Troubleshooter**.
+3. Run the troubleshooter and choose **Troubleshoot UI/Web automation issues**.
+
+The troubleshooter detects your Java installation and installs the required agent files in the correct folders.  
+If it reports an issue with Java automation, select **Fix**. The troubleshooter may request administrator rights.
 
 ### Utilization of the default UI automation instead of Java UI automation
 
@@ -48,26 +56,11 @@ To uninstall the Java configuration (revert all changes applied to the machine b
 
 1. Launch the Command Line tool (cmd)
 
-1. Run the following command:
+1. Run the following command in the PAD installation folder [path]:
 
     ``` CMD
-    PAD.Java.Installer.exe -u 
+    PAD.Java.Installer.Host.exe -u 
     ```
-
-### Java automation attach mechanism
-
-For Java versions greater than 8, Power Automate desktop loads its Java automation agent via the JNI attach mechanism. Ensure that the Attach API is enabled on the JVM.
-
-If the attach mechanism for Java automation doesn't work, add the following arguments when starting the Java application:
-
-- 64-bit Java
-  - -javaagent:"C:\Program Files (x86)\Power Automate Desktop\dotnet\java-support\PAD.JavaBridge.jar" -Djava.library.path="${env_var:PATH};C:\Program Files (x86)\Power Automate Desktop\dotnet\java-support\x64"
-- 32-bit Java
-  - -javaagent:"C:\Program Files (x86)\Power Automate Desktop\dotnet\java-support\PAD.JavaBridge.jar" -Djava.library.path="${env_var:PATH};C:\Program Files (x86)\Power Automate Desktop\dotnet\java-support\x86"
-
-The paths use the Power Automate Desktop installation location. Adjust the paths if you install Power Automate Desktop in a different location.
-
-If you can't modify the startup arguments of the Java application, set a new environment variable named JDK_JAVA_OPTIONS with the appropriate value based on the architecture of the JDK. This loads the Power Automate Desktop Java automation agent at the startup of every Java application that uses the Java JDK.
 
 ### Troubleshooting
 
