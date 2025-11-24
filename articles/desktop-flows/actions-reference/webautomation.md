@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 08/01/2025
+ms.date: 11/24/2025
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -436,7 +436,7 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 
 
 > [!NOTE]
-> When “Launch mode” parameter is set to “Attach to running instance” option, and it is to be attached to an URL, it first attempts an exact URL match for half the configured timeout. If unsuccessful, it switches to a partial match for the remaining time. For example,with a 30s timeout and target URL 'www.microsoft.com', Power Automate for desktop tries initially for 15s for an exact match ('www.microsoft.com'). If it fails, then it tries for 15s for a partial match (e.g., 'www.microsoft.com/en/microsoft-365?market=af'). The higher the timeout, the longer it searches before falling back to partial matching.
+> When “Launch mode” parameter is set to “Attach to running instance” option, and it's to be attached to a URL, it first attempts an exact URL match for half the configured timeout. If unsuccessful, it switches to a partial match for the remaining time. For example, with a 30s timeout and target URL 'www.microsoft.com', Power Automate for desktop tries initially for 15s for an exact match ('www.microsoft.com'). If it fails, then it tries for 15s for a partial match (for example, 'www.microsoft.com/en/microsoft-365?market=af'). The higher the timeout, the longer it searches before falling back to partial matching.
 
 ### Input parameters
 
