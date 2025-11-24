@@ -1,6 +1,6 @@
 ---
-title: Configure certificate-based authentication 
-description: Configure certificate-based authentication (CBA) in Power Automate. Learn how to set up and use CBA credentials to meet MFA requirements.
+title: "Configure certificate-based authentication"
+description: "Configure certificate-based authentication (CBA) in Power Automate."
 author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -15,16 +15,14 @@ search.audienceType:
   - envadmin
 ms.custom:
   - sfi-image-nochange
-- ai-gen-docs-bap
-- ai-gen-description
-- ai-seo-date:11/05/2024
+  - ai-gen-docs-bap
+  - ai-gen-description
+  - ai-seo-date:11/05/2024
 ---
 
-# Configure certificate-based authentication 
-
+# Configure certificate-based authentication
 
 Power Automate lets you [create credentials](create-AzureKeyVault-credential.md) using certificate-based authentication (CBA). Microsoft Entra ID certificate-based authentication helps meet multifactor authentication (MFA) requirements.
-
 
 ## How CBA credentials work in Power Automate
 
@@ -63,7 +61,7 @@ After completing these steps, [create your Azure key vault credential](create-Az
 
 ## Admin consent for unattended runs
 
-Admin consent is required for unattended runs with certificate credentials on a Microsoft Entra ID joined device. Learn more at [Admin consent for unattended runs](run-unattended-desktop-flows.md#admin-consent-for-unattended-runs-using-cba-or-sign-in-credentials-with-nla-preview).
+Admin consent is required for unattended runs with certificate credentials on a Microsoft Entra ID joined device. Learn more in [Admin consent for unattended runs](run-unattended-desktop-flows.md#admin-consent-for-unattended-runs-using-cba-or-sign-in-credentials-with-nla).
 
 ## Limitations and minimal requirements
 

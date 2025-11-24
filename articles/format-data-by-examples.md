@@ -1,23 +1,29 @@
 ---
-title: Use format data by examples to change the format of data with Power Automate
+title: Format data by examples [DEPRECATED]
 description: Learn how to use format data by examples to create expressions automatically, based on the output you want.
 suite: flow
 author: JoeFernandezMS
 contributors:
+  - kisubedi
   - JoeFernandezMS
   - v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 02/19/2025
-ms.author: jofernan
+ms.date: 08/21/2025
+ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Format data by examples
+# Format data by examples [DEPRECATED]
+
+> [!IMPORTANT]
+> - "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+> - As a replacement to the *format data by example feature*, we recommend using the *expression assistant* feature in the expression editor.
+> - Learn how to use the expression assistant feature (including a video) in [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md).
 
 [Expressions](./use-expressions-in-conditions.md) in Power Automate is a powerful way to perform operations over data. You can use the *Format data by examples* feature to access these expressions without knowing the different functions and corresponding syntax that is needed to create the expressions that you want. To format text, dates, and numbers, you can just provide examples of the output format that you want the flow to produce, and Power Automate automatically generates the expression formula to use.
 
@@ -82,4 +88,6 @@ Just provide an example and Power Automate suggests the right expression to achi
 
 ## Related information
 
-[PROSE](https://www.microsoft.com/research/project/prose-framework/), a technology that enables programming by example, powers format data by examples.
+- [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md)
+- [Deprecation of the format data by examples feature in Power Automate](/power-platform/important-changes-coming#deprecation-of-the-format-data-by-examples-feature-in-power-automate)
+

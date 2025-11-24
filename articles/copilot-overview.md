@@ -1,5 +1,5 @@
 ---
-title: Adopt automation with Copilot in Power Automate
+title: Copilot in Power Automate
 description: Discover how to use Copilot in Power Automate to streamline your automation processes with natural language instructions.
 author: kewaiss
 contributors:
@@ -7,7 +7,7 @@ contributors:
   - v-aangie
   - jhaskett-msft
 ms.topic: overview
-ms.date: 07/11/2025
+ms.date: 11/19/2025
 ms.update-cycle: 180-days
 ms.author: kewaiss
 ms.reviewer: angieandrews
@@ -20,7 +20,7 @@ ms.custom: bap-template
 ms.collection: bap-ai-copilot
 ---
 
-# Adopt automation with Copilot in Power Automate
+# Copilot in Power Automate
 
 Copilot in Power Automate accelerates your journey to adopting automation and transforming your processes. It enhances these scenarios by using the instructions you give Copilot written in natural language to surface possible solutions that can achieve desired results. Copilot stays with you all the way during creation to guide you through your entire process.
 
@@ -38,8 +38,8 @@ Copilot in cloud flows allows you to create automation that helps streamline you
 
 Copilot in Process Mining *ingestion* navigates you through the ingestion experience in Process Mining. Copilot in Process Mining process *analytics* helps you generate process insights through natural language. Copilot can then take the data you collected and easily summarize findings from it quantitatively and qualitatively.
 
-- [Copilot in Process Mining ingestion (preview)](process-mining-copilot-in-ingestion.md)
-- [Copilot in Process Mining process analytics (preview)](process-mining-copilot-in-process-analytics.md)
+- [Copilot in Process Mining ingestion](process-mining-copilot-in-ingestion.md)
+- [Copilot in Process Mining process analytics](process-mining-copilot-in-process-analytics.md)
 
 ## Copilot in desktop flows
 

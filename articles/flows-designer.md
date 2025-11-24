@@ -4,6 +4,7 @@ description: Learn about the components in the cloud flows designer.
 suite: flow
 author: kisubedi
 contributors:
+ - radioblazer
  - QuentinSele
  - AndreasTouly
  - kisubedi
@@ -12,9 +13,9 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 07/18/2025
+ms.date: 11/05/2025
 ms.update-cycle: 180-days
-ms.author: kisubedi
+ms.author: matow
 search.audienceType: 
   - flowmaker
   - enduser
@@ -24,11 +25,9 @@ ms.collection: bap-ai-copilot
 
 # Explore the cloud flows designer
 
-You can create and configure your cloud flows with the new designer or the classic designer. Learn how to determine the designer you're using in [Identify differences between the new designer and the classic designer](#identify-differences-between-the-new-designer-and-the-classic-designer).
+The [cloud flows](overview-cloud.md) designer is where you build and test cloud flows. This article provides an overview of the designer's features and capabilities.
 
-This article provides an overview of the designer's features and capabilities. Learn more in [Overview of cloud flows](overview-cloud.md).
-
-Following is a screenshot of the designer's features. To give you more context, refer to the legend.
+Here's an annotated screenshot of the designer to help you get started.
 
 :::image type="content" source="media/flows-designer/designer-overview-numbers-borders.png" alt-text="Screenshot of the cloud flows designer with Copilot." lightbox="media/flows-designer/designer-overview-numbers-borders.png":::
 
@@ -289,32 +288,29 @@ You can now fix errors on this copy of the flow and save it. If you don't save t
 
 ## Limitations and known issues in the new designer
 
-You might notice that some functionalities that were in the classic designer aren't available in the cloud flows designer yet. Currently, the new designer doesn't support the following items:
+The new Power Automate designer is the recommended way to author cloud flows, with major improvements including [versioning](drafts-versioning.md) and Copilot assistance. However, some flows can't yet be opened in the new designer.
 
-- Non-Open API flows (If there's Peek code on an action and if you see the API Connection value instead of Open API Connection in Kind field, it's a non-Open API flow.)
-  - These are legacy flows, probably created a long time ago when Open API support wasn't available.
-  - We plan to migrate them to Open API format. In the meantime, if you want to work with the latest functionalities in the new designer Copilot experience, consider recreating the flow in the new designer until we announce the migration plan.
-- Some hybrid triggers:
-  - When a flow is run from business process flow (Dataverse).
-  - Microsoft 365 Compliance Connector.
-- A comment. We recommend that you use Action _notes_ until the support is available.
-- Power Pages connector.
-- Power Apps v1 trigger. We recommend that you use V2 trigger instead.
-- Perform a changeset request action (Dataverse).
-- A solution flow using connections instead of connection reference isn't supported. We recommend that you use connection reference as a proper application lifecycle management (ALM) practice instead.
+- Flows with the following triggers:
+  - **When a flow is run from business process flow** in the Microsoft Dataverse connector
+  - [Microsoft 365 Compliance connector triggers](/connectors/microsoft365compliance/#triggers).
+  - [When Power Pages calls a flow](/power-pages/configure/cloud-flow-integration)
+  - Power Apps v1 trigger. Use PowerAppsV2 instead.
+- Comments. For new flows, we recommend that you use Action _notes_ until comments are supported in the new designer.
+- **Perform a changeset request** action group in the Microsoft Dataverse connector
+- A solution flow using connections instead of connection reference isn't supported. Export the flow in an unmanaged solution and re-import it to update it to use connection references.
+- Flows using the older non-Open API format for connection.
+  - To check if a flow is non-OpenAPI, select **Peek code** on an action in the flow and check if there's a parameter named "method". These flows currently need to be re-created in a new flow if you wish to edit them in the new designer, or can continue to be edited in the classic designer.
+  
+The classic designer will continue to be supported alongside the new designer while these compatibilities and other improvements are addressed.
 
-As we continue to innovate, we're introducing a new designer alongside our classic designer. While the classic designer remains valuable, the new designer is our future direction. While the classic designer isn't supported indefinitely, the new designer is becoming the primary interface.
-
-If you prefer to access features not yet available in the new designer, or encounter any [limitations or known issues](#limitations-and-known-issues-in-the-new-designer), you can temporarily revert to the classic designer. To do this, turn off the **New designer** toggle on the menu in the cloud flows designer.
+You can switch to the classic designer at any time by turning off the **New designer** toggle at the top right of the designer.
 
 > [!NOTE]
-> The new cloud flows designer isn't yet available in integration surfaces such as Solution Explorer, Power Apps, Teams, and others.
-
-If a flow is saved too soon on load, it might be saved without advanced parameters if those parameters weren't fetched yet. As a workaround, you can avoid saving a flow too soon on load. Alternatively, use the classic designer.
+> The new cloud flows designer isn't yet available in integration surfaces such as Solution Explorer, Power Apps, Teams, and others. Open these flows from their detail page or the Power Automate portal to use the new designer.
 
 ## FAQ
 
-This section highlights some of the most frequently asked questions about working with Power Automate classic designer and cloud flows designer. <!--Kishor, is this up to date?-->
+This section highlights some of the most frequently asked questions about working with Power Automate classic designer and cloud flows designer.
 
 ### Why do I get this error "O.split(...).at is not a function" when signing in?
 

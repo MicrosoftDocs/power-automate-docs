@@ -1,5 +1,5 @@
 ---
-title: Process overview (preview)
+title: Process overview
 description: Learn about the process overview for an imported process in Power Automate Process Mining.
 author: janpidych
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 03/31/2025
+ms.date: 09/02/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,13 +16,9 @@ search.audienceType:
 - enduser
 ---
 
-# Process overview (preview)
+# Process overview
 
-[!INCLUDE[cc-preview-features-definition](../includes/cc-preview-features-top-note.md)]
-
-After you import process data, the **Process overview (preview)** tab displays. This tab contains metrics and visuals to gain insights from process analysis.
-
-[!INCLUDE[cc_preview_features_definition](../includes/cc-preview-features-definition.md)]
+After you import process data, the **Process overview** tab displays. This tab contains metrics and visuals to gain insights from process analysis.
 
  :::image type="content" source="media/process-overview/process-overview.png" alt-text="Screenshot of the process 'Overview' tab.":::
 
@@ -84,7 +80,7 @@ The topmost part of the **Process overview (preview)** tab contains a filter pan
 
 ## Embedded Power BI tabs
 
-As part of process import, a Power BI report is generated with the process insights. This report is accessible through tabs next to **Process overview (preview)**. Generation of a Power BI report represents the last step, so it's usually available later than the **Process overview (preview)** tab.
+As part of process import, a Power BI report is generated with the process insights. This report is accessible through tabs next to **Process overview**. Generation of a Power BI report represents the last step, so it's usually available later than the **Process overview** tab.
 
 :::image type="content" source="media/process-overview/process-overview-pbi.png" alt-text="Screenshot of the default Power BI tab embedded in process page.":::
 

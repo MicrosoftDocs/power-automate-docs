@@ -4,7 +4,7 @@
   items: 
     - name: What is Power Automate?
       href: flow-types.md
-    - name: Adopt automation with Copilot in Power Automate
+    - name: Copilot in Power Automate
       href: copilot-overview.md
     - name: What's new
       href: whats-new.md
@@ -78,7 +78,7 @@
         href: publish-a-template.md
       - name: Turn a cloud flow on or off
         href: disable-flow.md
-      - name: Format data by examples
+      - name: Format data by examples [DEPRECATED]
         href: format-data-by-examples.md
     - name: Manage cloud flows
       items: 
@@ -173,10 +173,6 @@
         href: ./mobile/notifications.md
     - name: Use flows in other apps
       items:
-      - name: Use the Power Automate plugin for ChatGPT
-        href: ./use-chatgpt-plugin.md
-      - name: Use flows as plugins in Copilot for Microsoft 365 (preview)
-        href: flow-plugins-m365.md  
       - name: Use flows with approvals
         items:
         - name: Get started with approvals
@@ -473,7 +469,7 @@
       href: ./desktop-flows/create-cyberark-credential.md
     - name: Certificate-based authentication
       href: ./desktop-flows/configure-certificate-based-auth.md
-    - name: Machine mapping (preview)
+    - name: Machine mapping
       href: ./desktop-flows/create-machine-mapping.md
   - name: Create desktop flow connections
     href: ./desktop-flows/desktop-flow-connections.md
@@ -481,6 +477,8 @@
     href: ./desktop-flows/how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
+  - name: Version control (preview)
+    href: ./desktop-flows/version-control.md
   - name: Work queues
     items:
     - name: Overview
@@ -509,7 +507,7 @@
     href: ./desktop-flows/data-loss-prevention.md
   - name: Power Automate console
     href: ./desktop-flows/console.md
-  - name: Tags in desktop flows (preview)
+  - name: Tags in desktop flows
     href: ./desktop-flows/tags.md
   - name: Desktop flow designer
     href: ./desktop-flows/flow-designer.md
@@ -530,6 +528,8 @@
       href: ./desktop-flows/datatype-properties.md
     - name: Use variables and the % notation
       href: ./desktop-flows/variable-manipulation.md
+    - name: Work with scoped variables
+      href: ./desktop-flows/scoped-variables.md
     - name: Automate using UI elements
       href: ./desktop-flows/ui-elements.md
     - name: Inspect a UI element (preview)
@@ -566,6 +566,8 @@
       href: ./desktop-flows/power-fx.md
     - name: Formula reference - desktop flows
       href: /power-platform/power-fx/formula-reference-desktop-flows
+    - name: Natural language to Power Fx (preview)
+      href: ./desktop-flows/natural-language-powerfx.md
   - name: Custom actions
     items:
     - name: Custom actions
@@ -706,6 +708,8 @@
       href: ./desktop-flows/how-to/handle-custom-forms.md
     - name: Share/export a desktop flow
       href: ./desktop-flows/how-to/share-export-desktop-flows.md
+    - name: Set a run owner on a desktop flow connection
+      href: ./desktop-flows/how-to/set-runowner-desktopflowconnection.md
     - name: Run desktop flow from other desktop flows
       href: ./desktop-flows/how-to/run-desktop-flow-action.md
     - name: Use connector actions
@@ -725,7 +729,9 @@
     - name: Timeout configuration for UI/browser automation
       href: ./desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md
     - name: Configure the open terminal session action
-      href: ./desktop-flows/how-to/terminal-emulation-open-new-session.md  
+      href: ./desktop-flows/how-to/terminal-emulation-open-new-session.md
+    - name:  Using remote desktop applications
+      href: ./desktop-flows/how-to/handle-issues-when-using-remote-desktop-applications.md
   - name: ALM for desktop flows
     items:
     - name: Overview for configuring ALM for desktop flows
@@ -894,9 +900,9 @@
         href: process-mining-templates.md
     - name: Prepare processes and data
       href: process-mining-processes-and-data.md
-    - name: Copilot in Process Mining ingestion (preview) 
+    - name: Copilot in Process Mining ingestion 
       href: process-mining-copilot-in-ingestion.md
-    - name: Copilot in Process Mining process analytics (preview) 
+    - name: Copilot in Process Mining process analytics 
       href: process-mining-copilot-in-process-analytics.md   
     - name: Connect to SAP ERP from process mining (preview)
       href: process-mining-sap-erp.md    
@@ -904,7 +910,7 @@
       href: process-mining-transform.md
     - name: Visualize and gain insights in Power BI
       items:
-      - name: Process overview (preview)
+      - name: Process overview
         href: ./minit/process-overview.md
       - name: Visualize and gain insights from processes
         href: process-mining-visualize.md
@@ -963,6 +969,18 @@
       href: process-mining-data-source.md
     - name: Set up millisecond support when ingesting data with dataflows
       href: import-with-milliseconds.md
+  - name: Object-centric process mining (preview)
+    items:
+    - name: Overview
+      href: object-centric-overview.md
+    - name: Create an object-centric event log
+      href: object-centric-create-event-log.md
+    - name: Ingest an object-centric event log
+      href: object-centric-ingest-event-log.md
+    - name: OCPM process overview
+      href: object-centric-process-overview.md
+    - name: Use filters in OCPM analysis
+      href: object-centric-filters.md
   - name: Process Mining desktop app
     items:
     - name: Overview
@@ -1210,12 +1228,16 @@
       href: ./desktop-flows/capacity-utilization-process.md
     - name: How to use process capacity
       href: ./desktop-flows/capacity-process.md
-  - name: Savings (preview)
+  - name: Operator role
+    href: operator-role.md
+  - name: Savings
     href: savings.md
 - name: Administration
   items:
   - name: Power Automate sign-up FAQ
     href: organization-q-and-a.md
+  - name: Enable Self Service Disaster Recovery (preview)
+    href: enable-self-service-disaster-recovery.md
   - name: Enable experimental features
     href: experimental-features.md
   - name: Pricing and billing
@@ -1226,6 +1248,8 @@
     href: admin-center-introduction.md
   - name: Administer environments
     href: environments-overview-admin.md
+  - name: Power Automate environment upgrade
+    href: environment-architecture.md
   - name: IP address configuration
     href: ip-address-configuration.md
   - name: Support for customer-managed keys
@@ -1301,6 +1325,8 @@
       href: replace-dialogs.md
 - name: Find help and support
   items:
+  - name: Create an effective Power Automate support request
+    href: support-service-request.md
   - name: Get online help
     href: self-help.md
   - name: Blog
