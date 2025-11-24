@@ -10,7 +10,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 09/25/2025
+ms.date: 11/19/2025
 ms.author: kewaiss
 ms.reviewer: angieandrews
 ---
