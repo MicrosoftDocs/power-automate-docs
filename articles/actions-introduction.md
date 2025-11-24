@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
-ms.date: 10/06/2025
+ms.date: 11/24/2025
 ms.update-cycle: 180-days
 ms.author: kewaiss
 ms.reviewer: angieandrews
@@ -21,19 +21,29 @@ ms.collection:
 
 *Actions* are the events or operations you want the flow to do after the [trigger](triggers-introduction.md) event takes place. Examples of actions are: send emails, update records, or post messages. Actions can interact with a wide variety of services and applications, which helps you automate repetitive tasks and streamline business processes without the need for manual intervention.
 
-Power Automate offers various actions that you can use in your cloud flows. There are three main categories:
+To add your first action to your flow, select the plus sign (**+**) below the trigger in the cloud flows designer. The configuration panel opens on the left side, where you can search for and select the action you want to add.
 
-- AI capabilities
-- Built-in tools
-- By connector
+The following screenshot shows the configuration panel, which is organized in four sections:
 
-Here's a screenshot of a partial list of actions:
+- **Favorites**
+- **AI capabilities**
+- **Built-in tools**
+- **By connector**
+
+Here's a screenshot of the configuration panel:
 
 :::image type="content" source="./media/actions-introduction/actions-examples.png" alt-text="Screenshot of some actions.":::
 
-- **AI Capabilities**: Uplevel AI capabilities in this standalone section.
-- **Built-in tools**: Building blocks to your flow if you want to store values in a variable, insert a loop, and more.
-- **By connector**: Connect to services such as SharePoint and Outlook. Most connectors offer prebuilt actions that you can use in your flows.
+- **Favorites**: When you favorite an action, category, or connector using the star icon, these items show in the **Favorites** section for quick retrieval. The star icon appears when you hover over it in the configuration pane.
+- **AI Capabilities**: All AI capabilities are uplevelled in this standalone section.
+- **Built-in tools**: These tools are the building blocks to your flow if you want to store values in a variable, insert a loop, and more.
+- **By connector**: Shows a list of all connectors. At the top of the list are your most frequently used 20 connectors.
+
+After you select an action for your trigger, the configuration panel updates to show the required fields and options for that action. You can fill in the necessary information, such as specifying the recipient's email address or selecting a file to attach.
+
+Continue adding actions as needed to build your flow. To add more actions, select the plus sign (**+**) below the action where you want the new action to take place. The configuration panel opens again, allowing you to search for and select another action.
+
+Learn more about adding actions in [Work with triggers and actions](work-with-triggers-actions.md).
 
 ## Choose the right actions
 
@@ -47,10 +57,10 @@ Here are some scenarios that require multiple actions and examples of actions yo
 
 |Scenario |Examples |
 |---------|---------|
-| Automate multi-step processes in your workflow. | When a new item is added to a SharePoint list, you might want to:</li><li>Send an email notification to the team.</li><li>Create a task in Microsoft Planner.</li><li>Update a database record.</li> |
+| Automate multi-step processes in your workflow. | When a new item is added to a SharePoint list, you might want to:<li style="margin-left:30px;">Send an email notification to the team.<li style="margin-left:30px;">Create a task in Microsoft Planner.<li style="margin-left:30px;">Update a database record. |
 | Add decisions using conditional logic and branching in your flow. | If a value meets certain criteria, you might send an approval request; otherwise, you update a record. This requires multiple actions organized with conditions, switches, or scopes. |
 | Build error handling in your flow. | Group actions into [scopes](scopes.md) for organization and clarity, and use run-after conditions to make your flows more reliable. |
-| Perform tasks to make your flow run faster and more efficiently. | Choose these actions to run simultaneously rather than sequentially: </li><li>Retrieve data from multiple sources.</li><li>Send multiple notifications. |
+| Perform tasks to make your flow run faster and more efficiently. | Choose these actions to run simultaneously rather than sequentially:<li style="margin-left:30px;">Retrieve data from multiple sources.<li style="margin-left:30px;">Send multiple notifications. |
 | Transform, merge, or aggregate data from different sources. | Merge multiple PDF files into one document that requires several actions to collect, process, and output the result. |
 
 ## Next step
