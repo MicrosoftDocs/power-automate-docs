@@ -61,5 +61,3 @@ Confirm with your SAP team that the `S_SCR` authorization is assigned to each us
 
 - [Introduction to SAP GUI–based RPA in Power Automate Desktop](/power-automate/guidance/rpa-sap-playbook/introduction)
 - [Power Automate for desktop actions reference](/power-automate/desktop-flows/actions-reference)
-
-[!INCLUDE [Third-party disclaimer](../../../../includes/third-party-disclaimer.md)]
