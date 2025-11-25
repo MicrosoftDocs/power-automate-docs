@@ -1,10 +1,16 @@
 ---
 title: Configure SAP GUI scripting for Power Automate for desktop
 description: How to enable and verify SAP GUI scripting so Power Automate for desktop can automate SAP dialogs. Includes steps for RZ11, RZ10, and using the PAD troubleshooter.
-ms.reviewer: ststravri, nimoutzo
-ms.author: iomimtso
-ms.custom: sap:Desktop flows\SAP automation
+ms.service: power-automate
+ms.subservice: desktop-flow
+ms.topic: how-to
 ms.date: 2025-11-19
+ms.author: iomimtso
+ms.reviewer: ststravri, nimoutzo
+contributors:
+search.audienceType: 
+  - flowmaker
+  - enduser
 ---
 # Configure SAP GUI scripting for Power Automate for desktop
 
