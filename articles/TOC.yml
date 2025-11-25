@@ -4,7 +4,7 @@
   items: 
     - name: What is Power Automate?
       href: flow-types.md
-    - name: Adopt automation with Copilot in Power Automate
+    - name: Copilot in Power Automate
       href: copilot-overview.md
     - name: What's new
       href: whats-new.md
@@ -480,6 +480,8 @@
     href: ./desktop-flows/how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
+  - name: Version control (preview)
+    href: ./desktop-flows/version-control.md
   - name: Work queues
     items:
     - name: Overview
@@ -529,6 +531,8 @@
       href: ./desktop-flows/datatype-properties.md
     - name: Use variables and the % notation
       href: ./desktop-flows/variable-manipulation.md
+    - name: Work with scoped variables
+      href: ./desktop-flows/scoped-variables.md
     - name: Automate using UI elements
       href: ./desktop-flows/ui-elements.md
     - name: Inspect a UI element (preview)
@@ -1227,6 +1231,8 @@
       href: ./desktop-flows/capacity-utilization-process.md
     - name: How to use process capacity
       href: ./desktop-flows/capacity-process.md
+  - name: Operator role
+    href: operator-role.md
   - name: Savings
     href: savings.md
 - name: Administration
