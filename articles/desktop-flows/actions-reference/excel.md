@@ -5,7 +5,7 @@ author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 02/10/2025
+ms.date: 11/24/2025
 ms.author: iomavrid
 ms.reviewer: matp
 contributors:
@@ -748,6 +748,21 @@ Attaches to an Excel document that's already open.
 
 Reads the value of a cell or a range of cells from the active worksheet of an Excel instance.
 
+The “Get cell(s) contents as” parameter determines how the value from an Excel cell is interpreted and returned in Power Automate for desktop. You can choose from the following options:
+- Typed values
+  - Interprets the cell’s data type (for example, DateTime, numeric, Boolean) and returns the value using the same type. This option ensures consistency with how Excel internally stores the data.
+- Plain text
+  - Returns exactly what is written in the cell, without interpreting its type or formatting. Use this option when you want the raw text as seen in Excel.
+- Formatted text values
+  - Similar to Typed values, but the result is returned as a string that reflects the cell’s formatting (for example, date format, currency symbols). Use this option when you want to preserve the visual representation of the value.
+
+Example
+
+A cell contains the value '8/13/2025 11:43:45 AM' and is formatted as Long Date. In Excel, the visible content in the cell is 'Thursday, August 13, 2025', while the full value (including time) is visible only in the formula bar. This formatting can be customized by the user. Depending on the selected option:
+- Typed values: The result is "8/13/2505 11:43:45 AM" and type in Power Automate for desktop is DateTime.
+- Plain text: The result is "Thursday, August 13, 2025" and type in Power Automate for desktop is Text.
+- Formatted text values: The result is "8/13/2505 11:43:45 AM" and type in Power Automate for desktop is Text.
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
@@ -758,7 +773,7 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 |Start row|No|[Numeric value](../variable-data-types.md#numeric-value)||The cell row (single cell's Value) or first row number|
 |End column|No|[Text value](../variable-data-types.md#text-value)||The last column as a numeric value or a letter|
 |End row|No|[Numeric value](../variable-data-types.md#numeric-value)||The last row number|
-|Get cell contents as text|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to retrieve the content of the cells purely as text or as the closest matching type such as Date Time for dates, Numeric for numbers, and so on|
+|Get cell contents as text|N/A|Typed values,Plain text,Formatted text values|Typed values|Specify whether to retrieve the content of the cells as the closest matching type, such as Date Time for dates or Numeric for numbers, purely as text, or as formatted cell text.|
 |First line of range contains column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to consider the first row as column names. In this case, the names won't be read as data into the table and later actions can search the data by column names.|
 
 ### Variables produced
@@ -1142,3 +1157,6 @@ When the **Get cell contents as text** option is enabled in the **Read from Exce
 To avoid this, use the **Resize columns/rows** action. If the **Get cell contents as text** option is not used, the data fetched is the raw cell values, regardless of how they are displayed or formatted in the worksheet. This means there is no need to use the **Resize columns/rows** action. For date values, the time will be appended because the date data type includes time.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
+
+
