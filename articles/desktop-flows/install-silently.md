@@ -56,7 +56,7 @@ Setup.Microsoft.PowerAutomate.exe -HELP
 | -DISABLETURNONRDP |Doesn't turn on Remote Desktop on the machine.|
 | -ACCEPTEULA |Accepts the end user license agreement needed for the installation.|
 | -RESTOREDEFAULTCONFIG |Restores to the default installation settings during an upgrade.|
-| -DONOTINSTALLPAD |Doesn't install Power Automate for desktop.|
+| -DONOTINSTALLPAD |Doesn't create a shortcut for Power Automate for desktop.|
 | -DONOTINSTALLMACHINERUNTIME |Doesn't install Power Automate machine-runtime app.|
 | -SKIPINSTALLINGJAVAAUTOMATION |Doesn't install files that are required for enabling UI automation in Java applets.| 
 | -SKIPENABLEPIPMODE |Doesn't enable Picture-in-Picture run mode on the machine.|
