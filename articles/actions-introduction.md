@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
-ms.date: 11/24/2025
+ms.date: 11/26/2025
 ms.update-cycle: 180-days
 ms.author: kewaiss
 ms.reviewer: angieandrews
@@ -57,10 +57,10 @@ Here are some scenarios that require multiple actions and examples of actions yo
 
 |Scenario |Examples |
 |---------|---------|
-| Automate multi-step processes in your workflow. | When a new item is added to a SharePoint list, you might want to:<li style="margin-left:30px;">Send an email notification to the team.<li style="margin-left:30px;">Create a task in Microsoft Planner.<li style="margin-left:30px;">Update a database record. |
-| Add decisions using conditional logic and branching in your flow. | If a value meets certain criteria, you might send an approval request; otherwise, you update a record. This requires multiple actions organized with conditions, switches, or scopes. |
-| Build error handling in your flow. | Group actions into [scopes](scopes.md) for organization and clarity, and use run-after conditions to make your flows more reliable. |
-| Perform tasks to make your flow run faster and more efficiently. | Choose these actions to run simultaneously rather than sequentially:<li style="margin-left:30px;">Retrieve data from multiple sources.<li style="margin-left:30px;">Send multiple notifications. |
+| Automate multi-step processes in your workflow. | When a new item is added to a SharePoint list, you might want to:<li>Send an email notification to the team.<li>Create a task in Microsoft Planner.<li>Update a database record. |
+| Add decisions using conditional logic and branching in your flow. | If a value meets certain criteria, you might send an approval request; otherwise, you update a record. This requires multiple actions organized with [conditions](add-condition.md), switches, or [scopes](scopes.md). |
+| Build error handling in your flow. | Group actions into [scopes](scopes.md) for organization and clarity, and use run-after [conditions](add-condition.md) to make your flows more reliable. |
+| Perform tasks to make your flow run faster and more efficiently. | Choose these actions to run simultaneously rather than sequentially:<li>Retrieve data from multiple sources.<li>Send multiple notifications. |
 | Transform, merge, or aggregate data from different sources. | Merge multiple PDF files into one document that requires several actions to collect, process, and output the result. |
 
 ## Next step
