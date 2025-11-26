@@ -1,5 +1,5 @@
 ---
-title: Flow Checker (preview)
+title: Flow Checker
 description: Learn how to use the static analysis feature to scan your code for errors, security issues, and coding standard violations—helping you improve code quality.
 author: NikosMoutzourakis
 ms.service: power-automate
@@ -15,13 +15,9 @@ search.audienceType:
   - enduser
 ---
 
-# Flow checker (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Flow checker
 
 Improve your development workflow with the static analysis feature in [solution checker](/power-apps/maker/data-platform/use-powerapps-checker). This tool supports best practices in robotic process automation (RPA) and meets critical flow requirements by automatically evaluating your flows to ensure optimal performance. Static analysis is available in the **Flow checker** section of the designer. It enforces key guidelines and provides real-time feedback and early code inspection. It integrates directly into your workflow, improves code quality, and lays the foundation for a more efficient and productive development experience.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Rule management
 
@@ -198,6 +194,15 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 - **Error details**: One or more actions in the flow are unreachable and won't be executed under any circumstances.
 - **Description**: This rule checks for actions in the flow that are logically unreachable. Unreachable actions can result from incorrect branching, misplaced conditions, or disconnected segments, and might indicate flaws in the flow's logic or structure.
 - **Suggested fix**: Review the flow to find actions that aren't connected to an execution path. Ensure each actions is reachable through a valid logic branch or loop. Remove or move unreachable actions to keep the flow clean and efficient.
+
+<a name="notneededsubflow"></a>
+### Not needed subflow
+
+- **Severity**: Warning
+- **Type**: Maintainability
+- **Error details**: A subflow has been detected that either contains no actions, only disabled actions, or includes too few actions to justify its separation. Such subflows may not contribute meaningfully to the flow’s execution and can reduce clarity.
+- **Description**: This rule checks for subflows that are either empty or overly minimal – typically containing fewer than 5 actions. While subflows are useful for modularity and reuse, those that lack meaningful content or abstraction may indicate incomplete development, unnecessary fragmentation, or misconfiguration. These patterns can lead to confusion and hinder maintainability.
+- **Suggested fix**: Review the identified subflow to determine whether it serves a clear and valuable purpose. If it does not, consider removing it or merging it into a related logic block. If the subflow is intended for future use, add a placeholder action to clarify its role and prevent misinterpretation.
 
 ## Known limitations
 
