@@ -19,31 +19,34 @@
   items:
     - name: Overview
       href: overview-cloud.md
-    - name: Get started with cloud flows
+    - name: Components of cloud flows
       items:
+        - name: Triggers
+          href: triggers-introduction.md
+        - name: Actions
+          href: actions-introduction.md  
+    - name: Create cloud flows
+      items:
+        - name: Explore the cloud flows designer
+          href: flows-designer.md
         - name: Create your first cloud flow using Copilot
           href: create-cloud-flow-using-copilot.md
         - name: Create your first cloud flow without Copilot
           href: create-cloud-flow-without-copilot.md
-        - name: Explore the cloud flows designer
-          href: flows-designer.md
         - name: "Tutorial: Get Started with cloud flows"
-          href: get-started-with-cloud-flows.md
-        - name: Start a cloud flow with a trigger
-          items:
-          - name: Triggers overview
-            href: triggers-introduction.md
-          - name: Work with triggers
-            href: work-with-triggers.md
-          - name: Customize your triggers with conditions
-            href: customize-triggers.md
-        - name: Copilot in cloud flows FAQ
-          href: faq-copilot-cloud-flows.yml
+          href: get-started-with-cloud-flows.md    
+    - name: More trigger and action capabilities
+      items:
+        - name: Work with triggers and actions
+          href: work-with-triggers-actions.md
+        - name: Customize your triggers with conditions
+          href: customize-triggers.md
+        - name: Move, delete, and add options to actions
+          href: multi-step-logic-flow.md    
+    - name: Copilot in cloud flows FAQ
+      href: faq-copilot-cloud-flows.yml
     - name: How to
       items:
-      - name: Add an action
-        href: multi-step-logic-flow.md
-        displayName: Copy and paste actions
       - name: Use generative actions (preview)
         href: generative-actions-overview.md
       - name: Add a condition

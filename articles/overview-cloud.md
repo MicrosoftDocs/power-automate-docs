@@ -72,8 +72,8 @@ Learn more in [Power Automate mobile app overview](mobile/overview-mobile.md).
 
 ## Next step
 
-- [Create your first cloud flow using Copilot](create-cloud-flow-using-copilot.md)
-- [Create your first cloud flow without Copilot](create-cloud-flow-without-copilot.md)
+> [!div class="nextstepaction"]
+> [Triggers](triggers-introduction.md)
 
 ## Related information
 
