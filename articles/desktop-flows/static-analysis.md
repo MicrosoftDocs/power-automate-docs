@@ -1,5 +1,5 @@
 ---
-title: Flow Checker (preview)
+title: Flow Checker
 description: Learn how to use the static analysis feature to scan your code for errors, security issues, and coding standard violations—helping you improve code quality.
 author: NikosMoutzourakis
 ms.service: power-automate
@@ -15,13 +15,9 @@ search.audienceType:
   - enduser
 ---
 
-# Flow checker (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Flow checker
 
 Improve your development workflow with the static analysis feature in [solution checker](/power-apps/maker/data-platform/use-powerapps-checker). This tool supports best practices in robotic process automation (RPA) and meets critical flow requirements by automatically evaluating your flows to ensure optimal performance. Static analysis is available in the **Flow checker** section of the designer. It enforces key guidelines and provides real-time feedback and early code inspection. It integrates directly into your workflow, improves code quality, and lays the foundation for a more efficient and productive development experience.
-
-[!INCLUDE [preview-note](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Rule management
 
