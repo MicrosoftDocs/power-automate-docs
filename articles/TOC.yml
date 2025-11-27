@@ -535,7 +535,7 @@
       href: ./desktop-flows/scoped-variables.md
     - name: Automate using UI elements
       href: ./desktop-flows/ui-elements.md
-    - name: Inspect a UI element (preview)
+    - name: Inspect a UI element
       href: ./desktop-flows/inspect-ui-elements.md  
     - name: Automate using images
       href: ./desktop-flows/images.md
