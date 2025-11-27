@@ -169,7 +169,7 @@ Select the gear icon to perform tasks such as identify your Power Automate licen
 
 - **View all Power Automate Settings**: View or update your language and time settings, notifications, or access directories.
 
-- **View My Licenses**: View your licenses. To learn more, go to [Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus).
+- **View My Licenses**: View your licenses. Learn more in [Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus).
 
 - **Themes**: From the list of themes, select a theme for your organization.
 
@@ -215,11 +215,6 @@ Here's the list of the main categories:
 ## 6 - Ask a chatbot
 
 Get contextual help while building your flow using the Power Platform virtual agent. To learn more, go to [Get contextual help with flows from the Microsoft Copilot Studio bot](contextual-help-bot.md).
-
-## Next step
-
-> [!div class="nextstepaction"]
-> [Tutorial: Get started with cloud flows](get-started-with-cloud-flows.md)
 
 ## Related information
 

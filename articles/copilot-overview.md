@@ -65,8 +65,13 @@ If a region has GPUs (UK, Australia, US, India), we turn on Copilot by default. 
 
 Learn more in [Availability by region](regions-overview.md#region-availability-for-power-automate-cloud-flows-with-copilot).
 
+## Next step
+
+> [!div class="nextstepaction"]
+> [Explore the Power Automate home page](getting-started.md)
+
 ## Related information
 
 - [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
-- [Understand the cloud flows designer](flows-designer.md)
+- [Explore the cloud flows designer](flows-designer.md)
 - [Troubleshoot in Copilot](fix-flow-failures.md#troubleshoot-in-copilot)

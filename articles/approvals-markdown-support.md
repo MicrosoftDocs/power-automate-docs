@@ -6,7 +6,7 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 02/27/2023
+ms.date: 11/25/2025
 ms.author: derahonuorah
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -52,11 +52,11 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 **Example:**  
 ```Markdown
-# This is a H1 header
-## This is a H2 header
-### This is a H3 header
-#### This is a H4 header
-##### This is a H5 header
+# This is an H1 header
+## This is an H2 header
+### This is an H3 header
+#### This is an H4 header
+##### This is an H5 header
 ```
 
 **Result:**  
@@ -74,7 +74,7 @@ Now text will appear on the next line.
 
 **Result:**
 This is line 1.  
-Now text will appear on the next line. 
+Now text will appear on the next line.
 
 **Example 2**
 ```Markdown
