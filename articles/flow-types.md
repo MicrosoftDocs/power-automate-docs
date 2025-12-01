@@ -33,6 +33,15 @@ Select one of the following types for an overview of what it can do:
 - [Desktop flows](./desktop-flows/introduction.md): Use desktop flows to automate tasks on the web or the desktop.
 - [Generative actions (preview)](generative-actions-overview.md): Use generative actions in your flow if you want to specify only the *intent* of the action and then have the AI choose the right set of actions in the right order based on your input, context, and intent.
 
+## Create and manage flows in Power Apps
+
+Your Power Automate license gives you rights to create and manage flows in Power Apps. For example, after you sign in to Power Apps, you can select **Flows** on the left navigation pane. You can also create and manage flows through the [Power Automate pane](/powerapps/maker/canvas-apps/working-with-flows) within Power Apps Studio.
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Adopt automation with Copilot](copilot-overview.md)
+
 ## Related information
 
 - [Determine which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
