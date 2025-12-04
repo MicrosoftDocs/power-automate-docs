@@ -155,8 +155,8 @@ Repeat the steps from [add a condition](sequential-modern-approvals.md#add-a-con
 
 4. Add this action to your workflow below the condition card using one of the following steps, depending on your designer:
 
- - **New designer**: Add the action to the **False** branch.
- - **Classic designer**: Add the action to the **If no** branch.
+    - **New designer**: Add the action to the **False** branch.
+    - **Classic designer**: Add the action to the **If no** branch.
 
 ## Update SharePoint with pre-approval rejection
 
@@ -170,8 +170,8 @@ Repeat the steps from [add a condition](sequential-modern-approvals.md#add-a-con
 
 1. Add this action to your workflow below the **Condition 2** card, depending on your designer:
 
-- **New designer**: Add the action to the **False** branch.
-- **Classic designer**: Add the action to the **If no** branch.
+    - **New designer**: Add the action to the **False** branch.
+    - **Classic designer**: Add the action to the **If no** branch.
 
 3. When you're finished, the card should resemble this image:
 
