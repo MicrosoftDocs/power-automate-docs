@@ -9,8 +9,8 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 11/19/2025
-ms.author: kisubedi
+ms.date: 12/05/2025
+ms.author: kewaiss
 ms.reviewer: angieandrews
 ---
 
@@ -84,9 +84,12 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.flow.microsoft.com <br> *.logic.azure.com | https | Access to the Power Automate site. |
 | *.powerautomate.com | https | Access to Power Automate site. |
 | *.powerapps.com | https | Access to the Power Apps site. |
-| *.azureedge.net | https | Access to Power Automate CDN. |
-| *.azurefd.net | https | Access to Power Automate CDN. |
-| *.microsoftcloud.com | https | Access to NPS (Net Promoter Score). |
+| *.azureedge.net | https | Access to Power Automate CDN (Content Delivery Network). |
+| *.azurefd.net | https | Access to Power Automate CDN (Content Delivery Network). |
+| *.microsoftcloud.com | https | Access to NPS (net promoter score). |
+| *.ces.microsoftcloud.com<br/>config.centro.core.microsoft<br/>admin.microsoft.com<br/>petrol.office.microsoft.com<br/>oness.microsoft.com  | https  | Access to NPS (net promoter score).  |
+| config.edge.skype.com  |  https  | Retrieve feature flags for Power Automate.  |
+| res.cdn.office.net  |  https  |  Provide stock images to use in your app.  |
 | webshell.suite.office.com | https | Access to Office for header and search. Learn more in [Office 365 URLs and ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#microsoft-365-common-and-office-online&preserve-view=true). |
 | *.dynamics.com | https | Access to Dataverse tables. |
 |go.microsoft.com|https|Access to the Power Automate to check for updates.|
