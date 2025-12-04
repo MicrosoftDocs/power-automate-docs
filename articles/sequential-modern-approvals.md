@@ -77,7 +77,11 @@ Make  note of the name and URL of the SharePoint Online list. We use these items
 
 [!INCLUDE [sign-in-and-create-flow-from-blank-template](includes/sign-in-and-create-flow-from-blank-template.md)]
 
-[!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
+4. Give your flow a name.
+
+5. Under **Choose your flow's trigger**, select **When an item is created - SharePoint**, and then select **Create**.
+
+6. On the **When an item is created** card, select the **Site Address** and the **List Name** for the SharePoint list that you created earlier.
 
 ## Get the manager for the person who created the vacation request
 
@@ -149,7 +153,7 @@ Repeat the steps from [add a condition](sequential-modern-approvals.md#add-a-con
 
    ![configuration for rejected requests.](./media/sequential-modern-approvals/configure-rejected-email.png)
 
-1. Add this action to your workflow below the condition card using one of the following steps, depending on your designer:
+4. Add this action to your workflow below the condition card using one of the following steps, depending on your designer:
 
  - **New designer**: Add the action to the **False** branch.
  - **Classic designer**: Add the action to the **If no** branch.
@@ -166,10 +170,10 @@ Repeat the steps from [add a condition](sequential-modern-approvals.md#add-a-con
 
 1. Add this action to your workflow below the **Condition 2** card, depending on your designer:
 
-**New designer**: Add the action to the **False** branch.
-**Classic designer**: Add the action to the **If no** branch.
+- **New designer**: Add the action to the **False** branch.
+- **Classic designer**: Add the action to the **If no** branch.
 
-1. When you're finished, the card should resemble this image:
+3. When you're finished, the card should resemble this image:
 
    ![Screenshot of the configuration for rejected requests.](./media/sequential-modern-approvals/final-rejection-email-card.png)
 
