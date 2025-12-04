@@ -12,6 +12,7 @@ ms.topic: article
 ms.date: 12/05/2025
 ms.author: kewaiss
 ms.reviewer: angieandrews
+#customer intent: As an IT professional, I want to allow Power Automate flows to connect to external services so that users can automate workflows seamlessly.
 ---
 
 # IP address configuration for Power Automate
