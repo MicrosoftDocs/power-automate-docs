@@ -9,19 +9,20 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 10/21/2024
-ms.author: derahonuorah
+ms.date: 12/04/2025
+ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.collection:
   - get-started
 search.audienceType: 
   - flowmaker
   - enduser
+#customer intent: As a Power Automate user, I want to create a sequential approval workflow so that I can manage multi-step approval processes efficiently.
 ---
 
 # Manage sequential approvals with Power Automate
 
-Some workflows require pre-approval before the final approver is required to sign off. For example, a company may have a sequential approval policy that requires pre-approval for invoices over $1000.00 before they're approved by the Finance department.
+Some workflows require pre-approval before the final approver is required to sign off. For example, a company might have a sequential approval policy that requires pre-approval for invoices over $1000.00 before the Finance department can approve them.
 
 Learn how to quickly and easily set up sequential approvals in [Set up sequential approvals](set-up-sequential-approvals.md).
 
@@ -78,8 +79,6 @@ Make  note of the name and URL of the SharePoint Online list. We use these items
 
 [!INCLUDE [add-trigger-when-sharepoint-item-created](includes/add-trigger-when-sharepoint-item-created.md)]
 
-1. On the **When an item is created** card, select the **Site Address** and the **List Name** for the SharePoint list that you created earlier.
-
 ## Get the manager for the person who created the vacation request
 
 [!INCLUDE [add-get-manager-action](includes/add-get-manager-action.md)]
@@ -115,7 +114,7 @@ This action sends the pre-approval request to the email address in the **Assigne
 ## Get the pre-approver's manager
 
 1. Use the [Get the manager for the person who created the vacation request](sequential-modern-approvals.md#get-the-manager-for-the-person-who-created-the-vacation-request) steps we did earlier to add, and then configure another **Get manager** action. This time we get the pre-approver's manager.
-2. The **Get manager 2** card should resemble this image when you're finished. Be sure to use the **Email** token from the **Get manager** category on the **Add dynamic content from the apps and services used in this flow** card.
+2. The **Get manager 2** card should resemble this image when you're finished. Be sure to use the **Email** token from the **Get manager** category on the **Add dynamic content** from the apps and services used in this flow card.
 
    ![get pre-approver's manager.](includes/media/modern-approvals/get-pre-approver-manager.png)
 
@@ -140,7 +139,7 @@ Repeat the steps from [add a condition](sequential-modern-approvals.md#add-a-con
 ## Update SharePoint with approval
 
 1. Use the steps from [Add an update action for pre-approved requests](sequential-modern-approvals.md#add-an-update-action-for-pre-approved-requests) to add, and then configure an action that updates SharePoint when the vacation request is approved.
-2. When you're finished, the card should resemble this image:
+1. When you're finished, the card should resemble this image:
    
     ![update item configuration card.](./media/sequential-modern-approvals/configure-update-item-approved.png)
 
@@ -150,7 +149,10 @@ Repeat the steps from [add a condition](sequential-modern-approvals.md#add-a-con
 
    ![configuration for rejected requests.](./media/sequential-modern-approvals/configure-rejected-email.png)
 
-This action must be added to the **IF NO, DO NOTHING** branch below the **Condition** card.
+1. Add this action to your workflow below the condition card using one of the following steps, depending on your designer:
+
+ - **New designer**: Add the action to the **False** branch.
+ - **Classic designer**: Add the action to the **If no** branch.
 
 ## Update SharePoint with pre-approval rejection
 
@@ -160,9 +162,12 @@ This action must be added to the **IF NO, DO NOTHING** branch below the **Condit
 
 ## Send email with final rejection
 
-1. Use the steps from [Send email with pre-approval rejection](sequential-modern-approvals.md#send-email-with-pre-approval-rejection) to add, and then configure an action that sends an email when the vacation request is rejected by the final approver.
+1. Use the steps from [Send email with pre-approval rejection](sequential-modern-approvals.md#send-email-with-pre-approval-rejection) to add, and then configure an action that sends an email when the final approver rejects the vacation request.
 
-    This action must be added to the **IF NO, DO NOTHING** branch below the **Condition 2** card.
+1. Add this action to your workflow below the **Condition 2** card, depending on your designer:
+
+**New designer**: Add the action to the **False** branch.
+**Classic designer**: Add the action to the **If no** branch.
 
 1. When you're finished, the card should resemble this image:
 
@@ -174,13 +179,13 @@ This action must be added to the **IF NO, DO NOTHING** branch below the **Condit
 1. When you're finished, the card should resemble this image:
 
    ![update item card.](./media/sequential-modern-approvals/final-rejection-update-sharepoint.png)
-1. Select **Update flow** to save the work we've done.
+1. Select **Update flow** to save your work.
 
-If you've followed along, your flow should resemble this image:
+If you followed along, your flow should resemble this image:
 
 ![overview of flow.](./media/sequential-modern-approvals/completed-flow.png)
 
-Now that you've created the flow, let's see it in action.
+Now that created the flow, let's see it in action.
 
 ## Request an approval
 
@@ -194,6 +199,9 @@ Your request should resemble this image:
 
 [!INCLUDE [view-pending-approvals](includes/view-pending-approvals.md)]
 
+> [!NOTE]
+> If **Approvals** doesn't appear, select **More** on the left-side navigation pane, and then select the pin icon. This places it permanently on the navigation pane (until you remove it).
+
 ## Pre-approve a request
 
 [!INCLUDE [approve-request-from-different-locations](includes/approve-request-from-different-locations.md)]
@@ -202,7 +210,7 @@ Your request should resemble this image:
 
 The steps to approve a request are identical to the steps to [pre-approve a request](sequential-modern-approvals.md#pre-approve-a-request)
 
-The final approver gets the vacation request only after the request has been pre-approved.
+The final approver gets the vacation request only after the request is pre-approved.
 
 ## Reject a request
 
