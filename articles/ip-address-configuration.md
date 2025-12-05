@@ -88,7 +88,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.azureedge.net | https | Access to Power Automate CDN (Content Delivery Network). |
 | *.azurefd.net | https | Access to Power Automate CDN (Content Delivery Network). |
 | *.microsoftcloud.com | https | Access to NPS (net promoter score). |
-| *.ces.microsoftcloud.com<br/>config.centro.core.microsoft<br/>admin.microsoft.com<br/>petrol.office.microsoft.com<br/>oness.microsoft.com  | https  | Access to NPS (net promoter score).  |
+| *.ces.microsoftcloud.com<br/>config.centro.core.microsoft<br/>admin.microsoft.com<br/>petrol.office.microsoft.com<br/>oness.microsoft.com  | https  | Access to NPS (net promoter score) and surveys.  |
 | config.edge.skype.com  |  https  | Retrieve feature flags for Power Automate.  |
 | res.cdn.office.net  |  https  |  Provide stock images to use in your app.  |
 | webshell.suite.office.com | https | Access to Office for header and search. Learn more in [Office 365 URLs and ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#microsoft-365-common-and-office-online&preserve-view=true). |
