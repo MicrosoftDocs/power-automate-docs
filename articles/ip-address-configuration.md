@@ -111,7 +111,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 
 The following table lists the endpoints that Power Automate uses.
 
-|Cloud  |Portal URL  |RP URL  |
+|Cloud  |Portal URL  |Resource provider URL  |
 |---------|---------|---------|
 |Local | `https://local.flow.microsoft.com:44300/`	| `https://tip2.api.flow.microsoft.com/`	|
 |Test	| 	`https://make.test.powerautomate.com/`	| 	`https://tip2.api.flow.microsoft.com/`	| 
