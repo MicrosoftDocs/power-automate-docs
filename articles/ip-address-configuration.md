@@ -9,18 +9,34 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 12/05/2025
+ms.date: 12/09/2025
 ms.author: kewaiss
 ms.reviewer: angieandrews
-#customer intent: As an IT professional, I want to allow Power Automate flows to connect to external services so that users can automate workflows seamlessly.
+#customer intent: As an IT professional, I want to allow Power Automate flows to connect to external services so that users can automate workflows seamlessly. I also wanta list of endpoints that Power Automate uses.
 ---
 
 # IP address configuration for Power Automate
 
-This article describes the required configuration for:
+This article provides a list of endpoints that Power Automate uses. It also describes the required configuration for:
 
 - Power Automate to connect to services in your network by inbound firewall configuration, and
 - Your makers and users to access Power Automate to build and use experiences by outbound firewall configuration.
+
+## Endpoints that Power Automate uses
+
+|Cloud  |Portal URL  |RP URL  |
+|---------|---------|---------|
+|Local |	https://local.flow.microsoft.com:44300/	| https://tip2.api.flow.microsoft.com/	| 
+|Test	| 	https://make.test.powerautomate.com/	| 	https://tip2.api.flow.microsoft.com/	| 
+| Preprod	| 	https://make.preprod.powerautomate.com/	| 	https://tip1.api.flow.microsoft.com/	|
+|Prod	| https://make.powerautomate.com/	| https://*.api.flow.microsoft.com/	|
+|GCC	| https://make.gov.powerautomate.us	| https://gov.api.flow.microsoft.us/	|
+|GCC High	| https://make.high.powerautomate.us	| https://high.api.flow.microsoft.us/	|
+|DoD	| https://make.powerautomate.appsplatform.us	| https://api.flow.appsplatform.us/	|
+|Mooncake	| https://make.powerautomate.cn	| https://api.powerautomate.cn	|
+|USSec (rx)	| https://make.powerautomate.microsoft.scloud	| https://api.flow.microsoft.scloud	|
+|USNat (ex)	| https://make.powerautomate.eaglex.ic.gov	| https://api.flow.eaglex.ic.gov	|
+
 
 ## High-level recommendation for IP address configuration
 
