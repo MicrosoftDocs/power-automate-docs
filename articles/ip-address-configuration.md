@@ -9,7 +9,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 12/09/2025
+ms.date: 12/10/2025
 ms.author: kewaiss
 ms.reviewer: angieandrews
 #customer intent: As an IT professional, I want to allow Power Automate flows to connect to external services so that users can automate workflows seamlessly. I also want a list of endpoints that Power Automate uses.
@@ -111,18 +111,18 @@ The following table lists the services to which Power Automate connects. Ensure 
 
 The following table lists the endpoints that Power Automate uses.
 
-|Cloud  |Portal URL  |Resource provider URL  |
+|Domains  |Portals  |Resource provider URL  |
 |---------|---------|---------|
-|Local | `https://local.flow.microsoft.com:44300/`	| `https://tip2.api.flow.microsoft.com/`	|
-|Test	| 	`https://make.test.powerautomate.com/`	| 	`https://tip2.api.flow.microsoft.com/`	| 
-| Preprod	| 	`https://make.preprod.powerautomate.com/`	| 	`https://tip1.api.flow.microsoft.com/`	|
-|Prod	| `https://make.powerautomate.com/`	| `https://*.api.flow.microsoft.com/`	|
-|GCC	| `https://make.gov.powerautomate.us`	| `https://gov.api.flow.microsoft.us/`	|
-|GCC High	| `https://make.high.powerautomate.us`	| `https://high.api.flow.microsoft.us/`	|
-|DoD	| `https://make.powerautomate.appsplatform.us`	| `https://api.flow.appsplatform.us/`	|
-|Mooncake	| `https://make.powerautomate.cn`	| `https://api.powerautomate.cn`	|
-|USSec (rx)	| `https://make.powerautomate.microsoft.scloud`	| `https://api.flow.microsoft.scloud`	|
-|USNat (ex)	| `https://make.powerautomate.eaglex.ic.gov`	| `https://api.flow.eaglex.ic.gov`	|
+|tip2.api.flow.microsoft.com | HTTPS |Endpoint used for local engineering builds and internal debugging of flow services.	|
+|tip2.api.flow.microsoft.com	|	HTTPS | Handles API traffic for early integration and validation in the Test environment.| 
+|tip1.api.flow.microsoft.com	|	HTTPS | Supports pre-production workloads for final verification before global release.	|
+|*.api.flow.microsoft.com	|	HTTPS | Primary API surface serving commercial Power Automate users worldwide.|
+|gov.api.flow.microsoft.us	|	HTTPS | Provides API access within the GCC sovereign cloud boundary.|
+|high.api.flow.microsoft.us	|	HTTPS | Processes backend operations designed to meet DoD and ITAR compliance.	|
+|api.flow.appsplatform.us	|	HTTPS | Enables API calls in the isolated DoD cloud used by defense agencies.	|
+|api.powerautomate.cn	|	HTTPS | Hosts all Power Automate API operations in the China sovereign cloud.	|
+|api.flow.microsoft.scloud	|	HTTPS | Used for API traffic in the U.S. Secret (Secure) cloud environment.|
+|api.flow.eaglex.ic.gov	|	HTTPS | Supports backend operations in the U.S. National (Top Secret/IC) cloud.	|
 
 ### Allow users on your network to use Power Automate mobile app
 
