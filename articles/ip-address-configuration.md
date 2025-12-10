@@ -12,7 +12,7 @@ ms.topic: article
 ms.date: 12/10/2025
 ms.author: kewaiss
 ms.reviewer: angieandrews
-#customer intent: As an IT professional, I want to allow Power Automate flows to connect to external services so that users can automate workflows seamlessly. I also want a list of endpoints that Power Automate uses.
+#customer intent: As an IT professional, I want to allow Power Automate flows to connect to external services so that users can automate workflows seamlessly.
 ---
 
 # IP address configuration for Power Automate
@@ -21,8 +21,6 @@ This article describes the required configuration for:
 
 - Power Automate to connect to services in your network by inbound firewall configuration, and
 - Your makers and users to access Power Automate to build and use experiences by outbound firewall configuration.
-
-It also provides a list of endpoints that Power Automate uses.
 
 ## High-level recommendation for IP address configuration
 
@@ -106,23 +104,6 @@ The following table lists the services to which Power Automate connects. Ensure 
 | *.api.appsplatform.us <br> *.api.bap.appsplatform.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
 | *.api.powerplatform.partner.microsoftonline.cn <br> *.api.bap.partner.microsoftonline.cn <br> *.logic.azure.cn | https | Access to several Power Platform APIs (21Vianet - China only). |
 | *.safelink.emails.azure.net | https | Links in emails from Power Automate. |
-
-### Endpoints that Power Automate uses
-
-The following table lists the endpoints that Power Automate uses.
-
-|Domains  |Portals  |Resource provider URL  |
-|---------|---------|---------|
-|tip2.api.flow.microsoft.com | HTTPS |Endpoint used for local engineering builds and internal debugging of flow services.	|
-|tip2.api.flow.microsoft.com	|	HTTPS | Handles API traffic for early integration and validation in the Test environment.| 
-|tip1.api.flow.microsoft.com	|	HTTPS | Supports pre-production workloads for final verification before global release.	|
-|*.api.flow.microsoft.com	|	HTTPS | Primary API surface serving commercial Power Automate users worldwide.|
-|gov.api.flow.microsoft.us	|	HTTPS | Provides API access within the GCC sovereign cloud boundary.|
-|high.api.flow.microsoft.us	|	HTTPS | Processes backend operations designed to meet DoD and ITAR compliance.	|
-|api.flow.appsplatform.us	|	HTTPS | Enables API calls in the isolated DoD cloud used by defense agencies.	|
-|api.powerautomate.cn	|	HTTPS | Hosts all Power Automate API operations in the China sovereign cloud.	|
-|api.flow.microsoft.scloud	|	HTTPS | Used for API traffic in the U.S. Secret (Secure) cloud environment.|
-|api.flow.eaglex.ic.gov	|	HTTPS | Supports backend operations in the U.S. National (Top Secret/IC) cloud.	|
 
 ### Allow users on your network to use Power Automate mobile app
 
