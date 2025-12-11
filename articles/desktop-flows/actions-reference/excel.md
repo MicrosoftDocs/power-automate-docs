@@ -5,9 +5,9 @@ author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/24/2025
+ms.date: 12/11/2025
 ms.author: iomavrid
-ms.reviewer: matp
+ms.reviewer: ellenwehrle
 contributors:
 - jpapadimitriou
 - Yiannismavridis
@@ -750,12 +750,9 @@ Reads the value of a cell or a range of cells from the active worksheet of an Ex
 
 The “Get cell(s) contents as” parameter determines how the value from an Excel cell is interpreted and returned in Power Automate for desktop. You can choose from the following options:
 
-- **Typed values**
-  - Interprets the cell’s data type (for example, DateTime, numeric, Boolean) and returns the value using the same type. This option ensures consistency with how Excel internally stores the data.
-- **Plain text**
-  - Returns exactly what is written in the cell, without interpreting its type or formatting. Use this option when you want the raw text as seen in Excel.
-- **Formatted text values**
-  - Similar to Typed values, but the result is returned as a string that reflects the cell’s formatting (for example, date format, currency symbols). Use this option when you want to preserve the visual representation of the value.
+- **Typed values**: Interprets the cell’s data type (for example, DateTime, numeric, Boolean) and returns the value using the same type. This option ensures consistency with how Excel internally stores the data.
+- **Plain text**: Returns exactly what is written in the cell, without interpreting its type or formatting. Use this option when you want the raw text as seen in Excel.
+- **Formatted text values**: Similar to Typed values, but returns as a string that reflects the cell’s formatting (for example, date format, currency symbols). Use this option when you want to preserve the visual representation of the value.
 
 > [!NOTE]
 >
@@ -766,9 +763,9 @@ Example
 
 A cell contains the value '8/13/2025 11:43:45 AM' and is formatted as Long Date. In Excel, the visible content in the cell is 'Thursday, August 13, 2025', while the full value (including time) is visible only in the formula bar. This formatting can be customized by the user. Depending on the selected option:
 
-- Typed values: The result is "8/13/2505 11:43:45 AM" and type in Power Automate for desktop is DateTime.
-- Plain text: The result is "Thursday, August 13, 2025" and type in Power Automate for desktop is Text.
-- Formatted text values: The result is "8/13/2505 11:43:45 AM" and type in Power Automate for desktop is Text when read as a part of a larger range, otherwise its result will be of type DateTime when read as a single cell.
+- **Typed values**: The result is "8/13/2505 11:43:45 AM" and type in Power Automate for desktop is DateTime.
+- **Plain text**: The result is "Thursday, August 13, 2025" and type in Power Automate for desktop is Text.
+- **Formatted text values**: The result is "8/13/2505 11:43:45 AM" and type in Power Automate for desktop is Text when read as a part of a larger range, otherwise its result will be of type DateTime when read as a single cell.
 
 ### Input parameters
 
@@ -1042,16 +1039,16 @@ This action doesn't produce any variables.
 
 ## <a name="filtercellsfromexcel"></a> Filter cells in Excel worksheet
 
-**Filter cells in Excel worksheet** allows makers to create and apply a filter in the active sheet, table, or range on the values of a specified column. To filter multiple columns in an active sheet/table/range, multiple **Filter cells in Excel worksheet** actions must be used, each one applying the respective filter.
+The **Filter cells in Excel worksheet** allows makers to create and apply a filter in the active sheet, table, or range on the values of a specified column. To filter multiple columns in an active sheet/table/range, multiple **Filter cells in Excel worksheet** actions must be used, each one applying the respective filter.
 
 >[!IMPORTANT]
 >To apply multiple filters in a specific active sheet/table/range, make sure that all **Filter cells in Excel worksheet** actions used target the same source (active sheet/table/range).
 
 When using the **Filter cells in Excel worksheet** in an active sheet/range with already existing/applied filters:
 
-* If the targeted range is the same as the one the previous filters were applied on, all filters are applied.
-* If the targeted range isn't the same as the range previous filters were applied on, previous filters are cleared, and only the latest filter is applied.
-* If the targeted range is a table, all filters are applied.
+- If the targeted range is the same as the one the previous filters were applied on, all filters are applied.
+- If the targeted range isn't the same as the range previous filters were applied on, previous filters are cleared, and only the latest filter is applied.
+- If the targeted range is a table, all filters are applied.
 
 ### Input parameters
 
@@ -1143,9 +1140,9 @@ For this reason, when you try to open an Excel file stored under a OneDrive or S
 
 #### Workaround 1
 
-* Make a local copy of the respective Excel file.
-* Modify the local copy of the Excel file using Power Automate for desktop's Excel automation actions.
-* Override the Excel file copy synchronized through OneDrive/ Sharepoint with the local copy that includes the latest changes.
+- Make a local copy of the respective Excel file.
+- Modify the local copy of the Excel file using Power Automate for desktop's Excel automation actions.
+- Override the Excel file copy synchronized through OneDrive/ Sharepoint with the local copy that includes the latest changes.
 
 #### Workaround 2
 
@@ -1159,11 +1156,12 @@ For this reason, when you try to open an Excel file stored under a OneDrive or S
 
 When the **Get cell contents as text** option is enabled in the **Read from Excel worksheet** action, the data is retrieved exactly as it appears in the Excel worksheet. This means that if the column width is too narrow and the data is displayed as ### in Excel, these symbols will also appear in the result.
 
-**Workaround:**
+#### Workaround
 
 To avoid this, use the **Resize columns/rows** action. If the **Get cell contents as text** option is not used, the data fetched is the raw cell values, regardless of how they are displayed or formatted in the worksheet. This means there is no need to use the **Resize columns/rows** action. For date values, the time will be appended because the date data type includes time.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 
 
 
