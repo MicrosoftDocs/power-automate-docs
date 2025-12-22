@@ -4,7 +4,7 @@ description: Provides a resolution for the issues that Power Automate for deskto
 author: yiannismavridis
 ms.author: iomavrid
 ms.reviewer: matp
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 09/23/2025
 ms.custom: sap:Desktop flows\Working with Power Automate for desktop
 ---

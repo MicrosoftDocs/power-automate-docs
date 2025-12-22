@@ -7,7 +7,7 @@ contributors:
   - v-aangie 
 ms.service: power-automate
 ms.subservice: process-advisor
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 03/14/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews

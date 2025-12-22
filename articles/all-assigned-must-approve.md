@@ -10,8 +10,8 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 01/12/2023
-ms.author: derahonuorah
+ms.date: 10/01/2025
+ms.author: kewaiss
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -36,16 +36,16 @@ Here's a quick video tutorial about approvals.
 * Access to [Power Automate](https://make.powerautomate.com), Microsoft Office 365 Outlook, and Microsoft Office 365 Users.
 * A SharePoint [list](https://support.office.com/article/SharePoint-lists-I-An-introduction-f11cd5fe-bc87-4f9e-9bfe-bbd87a22a194).
 
-    This tutorial assumes you've created a SharePoint list that's used to request vacations. See the [parallel approvals](parallel-modern-approvals.md) walkthrough for an in-depth example that details what your SharePoint list might look like.
+    This tutorial assumes you've created a SharePoint list that's used to request vacations. See the [parallel approvals](parallel-modern-approvals.md) tutorial for an in-depth example that details what your SharePoint list might look like.
 
     [!INCLUDE [sharepoint-detailed-docs](includes/sharepoint-detailed-docs.md)]
 
 * Familiarity with the basics of creating flows.
 
-    You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-condition.md). The following steps assume that you know how to perform these actions.
+    You can review how to add [actions, triggers](work-with-triggers-actions.md), and [conditions](add-condition.md). The following steps assume that you know how to perform these actions.
 
 > [!NOTE]
-> While we use SharePoint and Office 365 Outlook in this walkthrough, you can use other services such as Zendesk, Salesforce, Gmail, or any of the more than [200 services](https://make.powerautomate.com/connectors/) that Power Automate supports.
+> While we use SharePoint and Office 365 Outlook in this tutorial, you can use other services such as Zendesk, Salesforce, Gmail, or any of the more than [200 services](https://make.powerautomate.com/connectors/) that Power Automate supports.
 
 ## Create the flow
 

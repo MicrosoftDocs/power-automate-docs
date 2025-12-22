@@ -127,7 +127,7 @@ Learn more about troubleshooting and *watch a video* in [Troubleshoot in Copilot
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Explore the cloud flows designer](flows-designer.md)
+> [Work with triggers and actions](work-with-triggers-actions.md)
 
 ## Related information
 
