@@ -4,12 +4,13 @@ description: Learn how to run desktop flows in picture-in-picture mode.
 author: nikosmoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.date: 08/07/2025
+ms.date: 12/22/2025
 ms.topic: how-to
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
   - DanaMartens
+  - sokopa
 search.app: 
   - Flow 
 search.audienceType: 
@@ -149,5 +150,8 @@ When set to **Custom**, you can enter a custom user data folder to be used by th
 - Issues might occur when several VPN clients are used in a picture-in-picture session. The identified issues are related to app sign out, and the VPN client identified so far is Zscaler.
 - If smartcard is used to sign in to Windows, the following policy should be set to *Not Configured* or *Disabled*:
   - `Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection\Do not allow smart card device redirection`
+- Picture-in-Picture currently isn't supported on Microsoft Entra joined cloud machines.
+- If the error "Windows cannot access the specified device, path, or file. You may not have the appropriate permissions to access the item." appears after launching the picture-in-picture session, it might be caused by the Mobile Devices service. This service isn't compatible with child sessions and can block flow execution. Disabling it resolves the issue.
+- Ensure that you can connect to localhost via RDP. Picture-in-picture relies on Child Sessions technology, which itself depends on RDP. If a certificate validation error occurs during the RDP connection to localhost, picture-in-picture will not work. If your environment uses FQDN certificates, ensure that the entire certificate chain is properly validated by the machine. This includes adding all intermediate certificates to the trusted certificate authorities on the local machine.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

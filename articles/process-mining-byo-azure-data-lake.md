@@ -3,13 +3,14 @@ title: Bring your own Azure Data Lake Storage Gen2
 description: Learn how to store and read event log data directly from Azure Data Lake Storage Gen2.
 author: HeatherOrt
 contributors:
+  - mathisGilliott
   - HeatherOrt
   - rosikm
   - v-aangie 
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 06/10/2025
+ms.date: 12/17/2025
 ms.custom: bap-template
 ms.author: michalrosik
 ms.reviewer: angieandrews
@@ -30,7 +31,7 @@ Power Automate Process Mining gives you the option to store and read event log d
     - Azure Resource Manager **Reader** role assigned, at minimum.
 
 - **Resource Sharing (CORS)** rule to your storage account should be established to share with Power Automate Process Mining.
-    - Allowed origins must be set to `https://make.powerautomate.com` and `https://make.powerapps.com`.
+    - Allowed origins must be set to `https://make.*.powerautomate.com` and `https://make.*.powerapps.com`.
     - Allowed methods must include: `get`, `options`, `put`, `post`.
     - Allowed headers should be as flexible as possible. We recommend defining them as `*`.
     - Exposed headers should be as flexible as possible. We recommend defining them as `*`.

@@ -70,6 +70,10 @@ Power Automate offers built-in analytics that provide insights into flow executi
 
 The analytics dashboard is available on your flow's details page. In the menu at the top of the page, select **Analytics**.
 
+
+> [!NOTE]
+> This feature is not available in government and sovereign clouds at the moment.
+
 ### View analytics at the environment level
 
 Environment admins can view Power Automate analytics at the environment level in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/analytics/flow). These reports provide information about runs, usage, errors, connectors, and sharing for all automated flows, button flows, scheduled flows, approval flows, and business process flows in a Power Platform environment. The analytics include:
