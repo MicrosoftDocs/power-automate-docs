@@ -1,27 +1,33 @@
 ---
 title: Run the Power Automate Desktop troubleshooter in unattended mode
 description: Learn how to run the Power Automate Desktop troubleshooter from a desktop flow when an unattended run fails; capture a screenshot of the troubleshooter output for diagnostics.
-ms.reviewer: iopanag, nimoutzo
+author: iomimtso
+reviewer: EllenWehrle
 ms.author: iomimtso
+ms.contributors:
+  - iopanag
+  - nimoutzo
+ms.reviewer: ellenwehrle
 ms.service: power-automate
 ms.subservice: desktop-flow
+ms.topic: how-to
 ms.date: 2025-11-28
 search.audienceType: 
   - flowmaker
   - enduser
-contributors: iomimtso
 ---
 
 # Run the Power Automate Desktop troubleshooter in unattended mode
 
-Use this method when an unattended desktop flow fails and you cannot retrieve troubleshooter logs (for example, on hosted machines). Run the troubleshooter from the flow and capture a screenshot of its output. The screenshot helps you identify what went wrong during the unattended run.
+Use this method when an unattended desktop flow fails and you can't retrieve troubleshooter logs (for example, on hosted machines). Run the troubleshooter from the flow and capture a screenshot of its output. The screenshot helps you identify what went wrong during the unattended run.
 
-## When to use this
+## When to use this method
 
-- Use this when an action (for example, Launch Edge) fails on an unattended machine.
-- Use this when you cannot access standard troubleshooter logs from the device.
+- Use this method when an action (for example, `Launch Edge`) fails on an unattended machine.
+- Use this method when you can't access standard troubleshooter logs from the device.
 
 ## Example flow script
+
 The following example shows how to run the troubleshooter when `Launch Edge` fails. The script launches the troubleshooter executable, focuses its window, sends keystrokes to start diagnostics, and exits the flow with an error so the flow's screenshot-on-error captures the troubleshooter output.
 
 ```text
@@ -41,4 +47,4 @@ END
 ## Important notes
 
 - Enable the flow option to capture a screenshot on error so you can review the troubleshooter output after the run.
-- If you use the Microsoft Store version, the `PAD.Troubleshooter.exe` location may differ. Run the troubleshooter and use Task Manager to find the executable path.
+- If you use the Microsoft Store version, the `PAD.Troubleshooter.exe` location might differ. Run the troubleshooter and use Task Manager to find the executable path.
