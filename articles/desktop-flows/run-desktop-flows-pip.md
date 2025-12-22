@@ -4,7 +4,7 @@ description: Learn how to run desktop flows in picture-in-picture mode.
 author: nikosmoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.date: 11/11/2025
+ms.date: 12/22/2025
 ms.topic: how-to
 ms.author: nimoutzo
 ms.reviewer: matp
