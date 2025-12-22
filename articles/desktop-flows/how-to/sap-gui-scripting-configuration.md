@@ -4,10 +4,12 @@ description: How to enable and verify SAP GUI scripting so Power Automate for de
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 2025-11-19
+ms.date: 12/22/2025
 ms.author: iomimtso
-ms.reviewer: ststravri, nimoutzo
+ms.reviewer: EllenWehrle
 contributors:
+  - ststravri
+  - nimoutzo
 search.audienceType: 
   - flowmaker
   - enduser
