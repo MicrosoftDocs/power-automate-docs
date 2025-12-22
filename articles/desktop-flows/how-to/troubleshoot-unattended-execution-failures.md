@@ -1,6 +1,7 @@
 ---
 title: Troubleshoot unattended desktop flow execution failures
 description: Learn how to diagnose and resolve common problems when running Power Automate desktop flows in unattended mode.
+author: iomimtso
 ms.reviewer: EllenWehrle
 ms.author: iomimtso
 ms.service: power-automate
@@ -144,7 +145,7 @@ Selectors can be affected by:
 ### Guidance for selectors
 
 - Add multiple selectors for the element to enable fallback behavior.
-- [Build custom selectors](../build-custom-selectors) with static attributes. Use the [inspect UI element tool](../inspect-ui-elements.md) to explore the hierarchy tree of all UI elements on your screen.
+- [Build custom selectors](../build-custom-selectors.md) with static attributes. Use the [inspect UI element tool](../inspect-ui-elements.md) to explore the hierarchy tree of all UI elements on your screen.
 - Use [image fallback](../ui-elements-fallback-mechanism.md) when appropriate.
 - Add a retry policy in error handling of the action.
 - Use the appropriate action type per element: [browser automation for web elements, UI automation for desktop elements](../ui-elements.md).
