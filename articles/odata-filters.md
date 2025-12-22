@@ -1,25 +1,19 @@
 ---
 title: Filter and copy data
 description: Learn how to filter and copy data from a source to a destination with Power Automate
-services: ''
 suite: flow
-documentationcenter: na
 author: natalie-pienkowska
 contributors:
   - natalie-pienkowska
   - kartikraop
   - radioblazer
   - v-aangie
-ms.author: jamiller
+ms.author: kewaiss
 ms.reviewer: angieandrews
-editor: ''
-tags: ''
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.tgt_pltfrm: na
-ms.workload: na
-ms.date: 01/26/2023
+ms.date: 10/01/2025
 search.audienceType: 
   - flowmaker
   - enduser
@@ -40,7 +34,7 @@ While this tutorial copies data from a Microsoft SharePoint [list](https://suppo
 
 - A basic understanding of how your data is stored.
 
-- Familiarity with the basics of creating flows. You can review how to add [actions, triggers](multi-step-logic-flow.md#add-another-action), and [conditions](add-condition.md). The following steps assume that you know how to perform these actions.
+- Familiarity with the basics of creating flows. You can review how to add [actions, triggers](work-with-triggers-actions.md), and [conditions](add-condition.md). The following steps assume that you know how to perform these actions.
 
 > [!TIP]
 > Every column name in the source and destination doesn't need to match. However, you must provide data for all *required* columns when you insert or update an item. Power Automate identifies the required fields for you.
