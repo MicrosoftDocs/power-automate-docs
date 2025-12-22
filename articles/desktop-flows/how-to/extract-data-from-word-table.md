@@ -1,13 +1,14 @@
 ---
 title: Extract data from a Word table
 description: Learn how to extract data from tables in Word documents by converting them to PDF format and using PDF extraction actions in Power Automate for desktop.
-author: mattp123
-
+author: iomimtso
+reviewer: EllenWehrle
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 11/26/2025
+ms.date: 12/22/2025
 ms.author: iomimtso
+ms.reviewer: ellenwehrle
 contributors:
 - iomimtso
 search.audienceType: 
