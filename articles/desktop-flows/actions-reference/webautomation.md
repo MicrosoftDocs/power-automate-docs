@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 08/01/2025
+ms.date: 11/24/2025
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -434,6 +434,10 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 
 Launch a new instance or attach to a running instance of Firefox for automating websites and web applications.
 
+
+> [!NOTE]
+> When you set the **Launch mode** parameter to **Attach to running instance** and specify a URL to attach to, Power Automate for desktop first tries to find an exact URL match for half the configured timeout. If it can't find an exact match, it switches to a partial match for the remaining time. For example, with a 30-second timeout and target URL `www.microsoft.com`, Power Automate for desktop tries for 15 seconds to find an exact match (`www.microsoft.com`). If it can't find an exact match, it tries for 15 seconds to find a partial match (for example, `www.microsoft.com/en/microsoft-365?market=af`). The higher the timeout, the longer it searches before falling back to partial matching.
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
@@ -473,6 +477,11 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 
 Launch a new instance or attach to a running instance of Chrome for automating websites and web applications.
 
+
+> [!NOTE]
+> When you set the **Launch mode** parameter to **Attach to running instance** and specify a URL to attach to, Power Automate for desktop first tries to find an exact URL match for half the configured timeout. If it can't find an exact match, it switches to a partial match for the remaining time. For example, with a 30-second timeout and target URL `www.microsoft.com`, Power Automate for desktop tries for 15 seconds to find an exact match (`www.microsoft.com`). If it can't find an exact match, it tries for 15 seconds to find a partial match (for example, `www.microsoft.com/en/microsoft-365?market=af`). The higher the timeout, the longer it searches before falling back to partial matching.
+
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
@@ -511,6 +520,10 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 ## Launch new Microsoft Edge
 
 Launch a new instance or attach to a running instance of Microsoft Edge for automating websites and web applications.
+
+> [!NOTE]
+> When you set the **Launch mode** parameter to **Attach to running instance** and specify a URL to attach to, Power Automate for desktop first tries to find an exact URL match for half the configured timeout. If it can't find an exact match, it switches to a partial match for the remaining time. For example, with a 30-second timeout and target URL `www.microsoft.com`, Power Automate for desktop tries for 15 seconds to find an exact match (`www.microsoft.com`). If it can't find an exact match, it tries for 15 seconds to find a partial match (for example, `www.microsoft.com/en/microsoft-365?market=af`). The higher the timeout, the longer it searches before falling back to partial matching.
+
 
 ### Input parameters
 

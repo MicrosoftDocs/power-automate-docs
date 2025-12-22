@@ -90,4 +90,4 @@ Complete creating your cloud flow in the *designer*. Power Automate provides two
 ## Next step
 
 > [!div class="nextstepaction"]
-> [Explore the cloud flows designer](flows-designer.md)
+> [Work with triggers and actions](work-with-triggers-actions.md)

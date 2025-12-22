@@ -894,7 +894,7 @@
       "source_path": "articles/contextual-help-bot.md",
       "redirect_url": "../power-automate/self-help",
       "redirect_document_id": false
-  },
+    },
     {
       "source_path": "articles/get-started-tutorial.md",
       "redirect_url": "../power-automate/get-started-with-cloud-flows",
@@ -908,6 +908,11 @@
     {
       "source_path": "articles/triggers-troubleshoot.md",
       "redirect_url": "/troubleshoot/power-platform/power-automate/flow-run-issues/triggers-troubleshoot"
+    },
+    {
+      "source_path": "articles/work-with-triggers.md",
+      "redirect_url": "/power-automate/work-with-triggers-actions",
+      "redirect_document_id": false      
     },
     {
       "source_path": "articles/flow-plugins-m365.md",

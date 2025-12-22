@@ -57,10 +57,13 @@ In many cases, you can register for Power Automate by following the process desc
 | **Self-service signup disabled**<br><br>You receive a message like the following during signup:<br>*We can't finish signing you up. Your IT department turned off signup for Power Automate. Contact them to complete signup.* <br>or<br> *We can't finish signing you up. It looks like Microsoft Power Automate isn't currently available for your work or school.* |     You selected **Sign up** instead of of **Sign in**. If you select **Sign in** in the top of the home page, you're able to access Power Automate.  |
 |**Email address is not an Office 365 ID**<br><br>You receive a message like the following during signup:<br>*We can't find you at contoso.com. Do you use a different ID at work or school? Try signing in with a Microsoft work or school email address, and if it doesn't work, contact your IT department.*   | Your organization uses IDs to sign in to Office 365 and other Microsoft services, and those IDs differ from your Microsoft work or school email address. For example, your email address might be Nancy.Smith@contoso.com, but your ID might be nancys@contoso.com. To complete signup, use your Microsoft work or school email address. |
 
-## Next steps
+## Next step
 
-- [Start with a template](get-started-logic-template.md), which is a prebuilt flow that's set up for you.
-- [Start from blank](get-started-logic-flow.md), if you already have a process in mind and can't find a template for it.
+> [!div class="nextstepaction"]
+> [Explore the Power Automate home page](getting-started.md)
+
+## Related information
+
 - Get help planning your [cloud flow project](./guidance/planning/introduction.md).
 
 
