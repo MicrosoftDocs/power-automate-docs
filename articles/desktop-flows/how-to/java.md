@@ -1,13 +1,13 @@
 ---
 title: Automate Java applications
 description: Automate Java applications 
-author: mariosleon
+author: iomimtso
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 07/21/2025
+ms.date: 12/22/2025
 ms.author: nimoutzo
-ms.reviewer: matp
+ms.reviewer: EllenWehrle
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
