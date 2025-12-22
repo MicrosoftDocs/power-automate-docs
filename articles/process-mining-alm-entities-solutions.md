@@ -9,7 +9,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: upgrade-and-migration-article
-ms.date: 04/04/2025
+ms.date: 12/19/2025
 ms.author: michalrosik
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -27,9 +27,6 @@ The source and target of your process mining artifacts determine which environme
 - **Test environment**: The environment *to* which you want to port artifacts.
 
 ## Create and export your solution
-
-> [!NOTE]
-> The created solution includes the process context state at the time of the last analysis (data refresh). To include custom metrics, business rules, and other changes done to the process context after the last analysis, you should re-analyze the process using **Refresh data** on the process details page before creating the solution.
 
 Create and export your process solution in the Dev environment.
 

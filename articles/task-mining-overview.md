@@ -9,23 +9,24 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: concept-article
-ms.date: 07/18/2023
-ms.author: derahonuorah
+ms.date: 12/04/2025
+ms.author: maruma
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
+#customer-intent: As a business analyst or new user, I want to understand how task mining works so that I can identify opportunities to optimize workflows.
 ---
 
 # Overview of task mining
 
 Task mining is a technology that enables organizations to capture detailed steps for tasks performed on users' desktops, either independently or collaboratively with colleagues.
 
-By analyzing recorded user actions, the task mining capability in Power Automate allows organizations to gain insights into how they perform tasks, identify common mistakes made during task performance, and pinpoint tasks that can be automated, all of which can help optimize their business processes.
+By analyzing recorded user actions, the task mining capability in Power Automate allows organizations to gain insights into how they perform tasks, identify common mistakes made during task performance, and pinpoint tasks that can be automated. These insights can help optimize their business processes.
 
 ## Benefits of the task mining capability
 
-The task mining capability helps busunesses to: 
+The task mining capability helps businesses to:
 
 - Streamline workflows.
 - Identify inefficiencies and bottlenecks in workflows.
@@ -36,7 +37,7 @@ The task mining capability helps busunesses to:
 
 A retail company can use the task mining capability to analyze the order fulfillment process. By recording and analyzing user actions, the organization can gain insights into how orders are processed, identify inefficiencies and bottlenecks, and pinpoint tasks that can be automated.
 
-The task mining capability can automatically produce a process map that visualizes the order fulfillment process, allowing the organization to identify which activities take the longest, how many variations of the order fulfillment process exist, and which variations and actions take the most time.
+The task mining capability can automatically produce a process map that visualizes the order fulfillment process. This map allows the organization to identify which activities take the longest, how many variations of the order fulfillment process exist, and which variations and actions take the most time.
 
 In addition, the application analytics report can show which applications teams spend the most time in and which activities can be optimized. With this information, the organization can create flows with automation recommendations that reveal which connectors to use based on the analysis done with task mining.
 

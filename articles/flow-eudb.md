@@ -5,7 +5,7 @@ suite: flow
 author: radioblazer
 ms.author: matow
 ms.reviewer: angieandrews
-ms.topic: conceptual
+ms.topic: concept-article
 ms.contributors:
   - alankhedairy
   - izzyhood

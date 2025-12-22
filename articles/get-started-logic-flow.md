@@ -31,7 +31,7 @@ Create a cloud flow that performs one or more tasks automatically after an event
 
 ## Prerequisites
 
-- An account on [Power Automate](https://make.powerautomate.com)
+- An account for [Power Automate](https://make.powerautomate.com)
 - An X account
 - Office 365 credentials
 

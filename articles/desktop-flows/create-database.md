@@ -2,7 +2,7 @@
 title: Create a Microsoft Dataverse database
 description: Learn how to create a Microsoft Dataverse database in Power Automate.
 author: mattp123
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 01/05/2023
 ms.author: matp
 ms.reviewer: matp

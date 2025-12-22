@@ -10,7 +10,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 09/25/2025
+ms.date: 11/19/2025
 ms.author: kewaiss
 ms.reviewer: angieandrews
 ---
@@ -36,6 +36,11 @@ Select one of the following types for an overview of what it can do:
 ## Create and manage flows in Power Apps
 
 Your Power Automate license gives you rights to create and manage flows in Power Apps. For example, after you sign in to Power Apps, you can select **Flows** on the left navigation pane. You can also create and manage flows through the [Power Automate pane](/powerapps/maker/canvas-apps/working-with-flows) within Power Apps Studio.
+
+## Next step
+
+> [!div class="nextstepaction"]
+> [Adopt automation with Copilot](copilot-overview.md)
 
 ## Related information
 
