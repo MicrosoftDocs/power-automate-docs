@@ -5,11 +5,12 @@ author: kenseongtan
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/25/2025
+ms.date: 01/06/2026
 ms.author: kenseongtan
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 contributors:
 - DanaMartens
+- pihouchaMs
 ---
 
 # Hosted machine group
@@ -274,6 +275,7 @@ To use your own network and provision Microsoft Entra joined hosted machine grou
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
 - A subnet within the virtual network and available IP address space.
 - [Allow network connectivity](/power-automate/ip-address-configuration#desktop-flows-services-required-for-runtime) to required services.
+- The network **must** have [explicit connectivity to the public internet](/azure/load-balancer/load-balancer-outbound-connections#scenarios).
 
 The virtual network needs to be created in the same location as your hosted machine groups. Following are the currently supported Power Platfrom geographies and their region mapping:
 
