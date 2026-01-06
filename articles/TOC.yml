@@ -736,7 +736,7 @@
     - name: Delete desktop flow run history data
       href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
     - name: Timeout configuration for UI/browser automation
-      href: ./desktop-flows/how-to/ui-automation-change-timeout-configuration.md
+      href: ./desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md
     - name: Configure the open terminal session action
       href: ./desktop-flows/how-to/terminal-emulation-open-new-session.md
     - name:  Using remote desktop applications
