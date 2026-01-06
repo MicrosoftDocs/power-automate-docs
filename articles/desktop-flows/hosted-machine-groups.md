@@ -274,6 +274,7 @@ To use your own network and provision Microsoft Entra joined hosted machine grou
 - Follow [Azure’s Network guidelines](/windows-server/remote/remote-desktop-services/network-guidance).
 - A subnet within the virtual network and available IP address space.
 - [Allow network connectivity](/power-automate/ip-address-configuration#desktop-flows-services-required-for-runtime) to required services.
+- The network **must** have [explicit connectivity to the public internet](/azure/load-balancer/load-balancer-outbound-connections#scenarios).
 
 The virtual network needs to be created in the same location as your hosted machine groups. Following are the currently supported Power Platfrom geographies and their region mapping:
 
