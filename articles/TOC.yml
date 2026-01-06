@@ -721,16 +721,22 @@
       href: ./desktop-flows/how-to/share-desktop-flows-that-contain-connector-actions.md
     - name: Set screen resolution on unattended mode
       href: ./desktop-flows/how-to/set-screen-resolution-unattended-mode.md
+    - name: Run troubleshooter in unattended mode
+      href: ./desktop-flows/how-to/run-troubleshooter-unattended.md
+    - name: Troubleshoot unattended execution failures
+      href: ./desktop-flows/how-to/troubleshoot-unattended-execution-failures.md
     - name: Run Power Automate with elevated rights
       href: ./desktop-flows/how-to/run-power-automate-elevated-rights.md
     - name: Extract text from a Word document using VBScript
       href: ./desktop-flows/how-to/extract-text-word-document.md
+    - name: Extract data from a Word table
+      href: ./desktop-flows/how-to/extract-data-from-word-table.md
     - name: Pass a datatable from a cloud flow to a desktop flow
       href: ./desktop-flows/how-to/passing-datatable.md
     - name: Delete desktop flow run history data
       href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
     - name: Timeout configuration for UI/browser automation
-      href: ./desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md
+      href: ./desktop-flows/how-to/ui-automation-change-timeout-configuration.md
     - name: Configure the open terminal session action
       href: ./desktop-flows/how-to/terminal-emulation-open-new-session.md
     - name:  Using remote desktop applications

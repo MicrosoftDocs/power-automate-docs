@@ -2,12 +2,12 @@
 title: Troubleshoot unattended desktop flow execution failures
 description: Learn how to diagnose and resolve common problems when running Power Automate desktop flows in unattended mode.
 author: iomimtso
-ms.reviewer: EllenWehrle
+ms.reviewer: ellenwehrle
 ms.author: iomimtso
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 12/22/2025
+ms.date: 01/05/2026
 search.audienceType: 
   - flowmaker
   - enduser
@@ -54,7 +54,7 @@ You can:
 
 - Set DPI at 100% for both design time and runtime.
 - [Build a custom selector](../build-custom-selectors.md) using attributes that don't change between attended and unattended sessions.
-- Disable DPI virtualization for the application to allow it to render at its native resolution.
+- Disable DPI virtualization for the application to render at its native resolution.
 
 ### OS version
 
@@ -67,11 +67,11 @@ Ensure you meet all [prerequisites for multi-user sessions](../requirements.md#p
 > [!NOTE]
 > These prerequisites cover Power Automate for desktop-specific requirements. When you configure a machine, also account for resource needs of other applications and system processes.
 
-Ensure the same user isn't signed in to multiple sessions on the same machine.
+Ensure the same user doesn't sign in to multiple sessions on the same machine.
 
 ### Installation conflicts
 
-Installing both MSI and Microsoft Store versions of Power Automate for desktop on the same machine isn't supported. Installing both causes confusion about which components load during runtime.
+You can't install both MSI and Microsoft Store versions of Power Automate for desktop on the same machine. Installing both versions causes confusion about which components load during runtime.
 
 Make sure you install only the version you need.
 
