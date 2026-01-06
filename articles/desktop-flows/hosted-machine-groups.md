@@ -10,6 +10,7 @@ ms.author: kenseongtan
 ms.reviewer: ellenwehrle
 contributors:
 - DanaMartens
+- pihouchaMs
 ---
 
 # Hosted machine group
