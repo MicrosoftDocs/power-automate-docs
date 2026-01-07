@@ -71,8 +71,7 @@ Ensure the same user doesn't sign in to multiple sessions on the same machine.
 
 ### Installation conflicts
 
-You can't install both MSI and Microsoft Store versions of Power Automate for desktop on the same machine. Installing both versions causes confusion about which components load during runtime.
-
+Installing both MSI and Microsoft Store versions of Power Automate for desktop on the same machine isn't supported. Installing both versions on the same machine causes confusion about which components load during runtime.
 Make sure you install only the version you need.
 
 ## Handle UIPI problems
