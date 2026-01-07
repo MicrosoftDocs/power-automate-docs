@@ -902,7 +902,7 @@
     },
     {
       "source_path": "articles/get-started-with-copilot.md",
-      "redirect_url": "../create-cloud-flow-using-copilot",
+      "redirect_url": "../power-automate/create-cloud-flow-using-copilot",
       "redirect_document_id": false
     },
     {
