@@ -20,7 +20,7 @@ When you install the managed Power Platform control center solution, make sure y
 
 1. Ensure the Power Apps component framework is enabled by following the steps in [Enable the Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature").
 
-1. Install the [Creator Kit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1) from App Source into the target environment.
+1. Install the [Creator Kit](https://marketplace.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1) from App Source into the target environment.
 
 1. In the **Assets** section in the latest GitHub release of the [automation kit](https://github.com/microsoft/powercat-automation-kit/releases) file, download **AutomationKitControlCenter_*_managed.zip** by selecting it.
 
