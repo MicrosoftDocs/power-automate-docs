@@ -156,6 +156,8 @@ Steps
 
 5. Save your changes.
 
+> [!NOTE]
+> You can also configure verbosity level from Power Automate destop app (PAD).
 
 ## Querying logs V2 data
 
