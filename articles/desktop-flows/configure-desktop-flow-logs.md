@@ -7,6 +7,7 @@ ms.author: appapaio
 ms.reviewer: 
 contributors:
   - DanaMartens
+  - QuentinSele
 author: rpapostolis
 ms.collection: conceptual
 search.audienceType: 
@@ -16,7 +17,7 @@ search.audienceType:
 
 # Desktop flow action logs configuration
 
-This page provides configuration guidance for desktop flow logs, located under the environment's feature section in the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+This page provides configuration guidance for desktop flow logs, located under the environment's feature section in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and in Power Automate for verbosity configuration of specific flows.
 
 > [!IMPORTANT]
 >
@@ -107,6 +108,9 @@ The following table shows sample Dataverse log storage consumption estimates per
 ## Action logs verbosity
 
 Desktop Flow Logs V2 lets you set verbosity levels to balance observability and storage efficiency. Each level controls how much detail logs show during flow execution.
+This section describes the available verbosity levels for desktop flow action logs, how to configure them at the environment level (PPAC, admin‑only), and how to configure them for individual desktop flows.
+
+### Verbosity levels in desktop flow action logs
 
 | **Verbosity Level** | **Description**                                                                                     | **Includes**                                                                                   | **Notes**                                                                                      |
 |---------------------|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -115,6 +119,43 @@ Desktop Flow Logs V2 lets you set verbosity levels to balance observability and 
 | Custom              | Logs user-defined messages and all warnings and errors.                                                 | Explicit `Log Message` actions by the user, plus all warnings and errors.                    | Allows users to control what gets logged. Can be used to fine-tune verbosity.                 |
 | Warning             | Captures only warning and error messages.                                                           | Any runtime warnings or errors during flow execution.                            | Helps reduce noise while still surfacing potential issues.                                    |
 | Error               | Logs only error messages.                                                                            | Critical failures that stop flow execution or cause incorrect behavior.                   | Minimal logging for performance-sensitive environments.                                       |
+
+### Configure Action Log Verbosity in the Power Platform Admin Center (Admin only)
+
+Admins can define the **default verbosity level** for an entire environment. This setting applies to all desktop flows unless overridden at the flow level.
+
+1. Open the Power Platform Admin Center (PPAC): https://admin.powerplatform.microsoft.com
+2. Go to Manage, then select the environment where your desktop flows run.
+3. Select Settings → Features.
+4. Locate the Action logs verbosity setting under **Desktop flow run action logs configuration** section.
+5. Choose your default level: Error, Warning, Custom, Debug or Full.
+6. Select Save to apply the configuration.
+
+> [!NOTE]
+> This setting acts as the default for the whole environment.
+> Makers can override it for specific flows (see next section).
+> Changes may take a few minutes to propagate.
+
+### Configuring Action Log Verbosity for a specific desktop flow
+
+Makers can configure verbosity per desktop flow from the Power Automate portal. This local setting overrides the admin default.
+
+When to Override the Environment Setting: 
+- Debugging a specific desktop flow without increasing logs for the entire environment.
+- Temporarily increasing verbosity during testing or troubleshooting.
+
+Steps 
+1. Go to Power Automate: https://make.powerautomate.com
+2. Open the flow details page of the desktop flow you want to configure.
+3. In the command bar, select settings and locate the Action logs verbosity section .
+4. Select the desired verbosity level for this specific flow
+
+> [!IMPORTANT]
+> When a maker changes the verbosity level for an individual desktop flow, they can only select a verbosity level that is equal to or higher than the environment’s default value. For example, if the environment is configured at Debug, the maker cannot choose Custom, Warning, or Error levels.
+> If administrators later change the environment’s verbosity level after a flow was configured individually, the logs generated will always follow the highest value between the environment setting and the desktop flow’s own configuration.
+
+5. Save your changes.
+
 
 ## Querying logs V2 data
 
