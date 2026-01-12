@@ -147,7 +147,7 @@ When to Override the Environment Setting:
 Steps 
 1. Go to Power Automate: https://make.powerautomate.com
 2. Open the flow details page of the desktop flow you want to configure.
-3. In the command bar, select settings and locate the Action logs verbosity section .
+3. Select **Edit** and locate the Action logs verbosity section .
 4. Select the desired verbosity level for this specific flow
 
 > [!IMPORTANT]
