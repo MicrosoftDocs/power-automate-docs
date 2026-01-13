@@ -159,6 +159,7 @@ Follow these steps to configure action log verbosity for a specific desktop flow
 
   > [!IMPORTANT]
   > When a maker changes the verbosity level for an individual desktop flow, they can only select a verbosity level that is equal to or higher than the environment's default value. For example, if the environment is configured at Debug, the maker can't choose Custom, Warning, or Error levels.
+  >
   > If administrators later change the environment's verbosity level after a flow is configured individually, the logs generated always follow the highest value between the environment setting and the desktop flow's own configuration.
 
 1. Save your changes.
