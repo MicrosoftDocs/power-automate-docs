@@ -108,7 +108,7 @@ The following table shows sample Dataverse log storage consumption estimates per
 ## Action logs verbosity
 
 Desktop Flow Logs V2 lets you set verbosity levels to balance observability and storage efficiency. Each level controls how much detail logs show during flow execution.
-This section describes the available verbosity levels for desktop flow action logs, how to configure them at the environment level (PPAC, admin‑only), and how to configure them for individual desktop flows.
+This section describes the available verbosity levels for desktop flow action logs, how  to configure them at the environment level in Power Platform Admin Center (admins only), and how to configure them for individual desktop flows.
 
 ### Verbosity levels in desktop flow action logs
 
@@ -129,14 +129,18 @@ Admins can set the **default verbosity level** for an entire environment. This s
 1. In the Manage section, select **Environments** and then select the environment where your desktop flows run.
 1. Select **Settings**.
 1. Expand **Product** and select **Features**.
-1. Locate the Action logs verbosity setting under the **Desktop flow run action logs configuration** section.
+1. Locate the **Action logs verbosity** setting in the **Desktop flow run action logs configuration** section.
 1. Choose your default level: Error, Warning, Custom, Debug, or Full.
 1. Select **Save** to apply the configuration.
 
+    :::image type="content" source="media/configure-desktop-flow-logs/desktop-flows-verbosity-setting.png" alt-text="Locate the action logs verbosity setting in the environment's feature setting page.":::    
 > [!NOTE]
+>
 > This setting acts as the default for the whole environment.
-> Makers can override it for specific flows (see [next section](#configure-action-log-verbosity-for-a-specific-desktop-flow).
-> Allow a few minutes for changes to take effect.
+>
+> Makers can override the setting for specific flows (see [next section](#configure-action-log-verbosity-for-a-specific-desktop-flow)).
+>
+> Allow a few minutes for setting changes to take effect.
 
 ### Configure action log verbosity for a specific desktop flow
 
@@ -162,11 +166,11 @@ Follow these steps to configure action log verbosity for a specific desktop flow
 > [!NOTE]
 > You can also configure verbosity level from Power Automate desktop app (PAD).
 
-## Querying logs V2 data
+## Query data logs V2
 
 You can access desktop flow action logs data by making an API call to the Dataverse backend. You can use the traditional API call syntax or the new [ExecuteCosmosSqlQuery](/power-apps/developer/data-platform/webapi/reference/executecosmossqlquery) method. By using this method, you can execute a SQL query against Dataverse, which enables you to retrieve and filter data.
 
-The data model of logs V2 is based on a parent-child relationship between the Flow Session and Flow Log tables. Every record inherits permissions from its parent flow session record. To query action logs of a specific desktop flow run, use the following query syntax.
+The data logs model V2 is based on a parent-child relationship between the flow session and flow log tables. Every record inherits permissions from its parent flow session record. To query action logs of a specific desktop flow run, use the following query syntax.
 
 ### Traditional Dataverse API call syntax
 
