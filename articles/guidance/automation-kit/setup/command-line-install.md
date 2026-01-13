@@ -19,7 +19,7 @@ To install the latest version of the automation kit using the command line, foll
 
 1. Ensure that you have [enabled the Power Apps component framework feature](/power-apps/developer/component-framework/component-framework-for-canvas-apps#enable-the-power-apps-component-framework-feature) in the environments that you want to install the automation kit for both main and satellite environments.
 
-1. Ensure that the [Creator Kit](https://appsource.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Reviews) is installed into the target environment
+1. Ensure that the [Creator Kit](https://marketplace.microsoft.com/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Reviews) is installed into the target environment
 
 1. Open the latest release from the [automation kit](https://github.com/microsoft/powercat-automation-kit/releases) GitHub releases.
 

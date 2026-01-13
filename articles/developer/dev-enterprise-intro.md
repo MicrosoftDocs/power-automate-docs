@@ -35,13 +35,13 @@ As a Microsoft partner or Independent Software Vendor (ISV), accelerate customer
 | Phase | Step | When needed? |
 | --- | --- | --- |
 | Development | 1. Build a custom connector to your data | If you want to expose your own ISV data to Power Apps or Power Automate |
-| Development | 2. Add support for your application to authenticate users with Microsoft Entra ID | If you want to embed the Power Automate UI, integrate with desktop flows or list in Microsoft AppSource |
+| Development | 2. Add support for your application to authenticate users with Microsoft Entra ID | If you want to embed the Power Automate UI, integrate with desktop flows or list in Microsoft Marketplace |
 | Development | 3. Embed the Power Automate UI into your application using our web-based IFrame | If you want to include flow creation or management in your application |
 | Development | 4. Integrate with desktop flow APIs | If you want to include desktop flow (RPA) capabilities programmatically within your applications |
 | Development | 5. Create and publish flow templates | If you want to pre-build flows for your customers |
 | Development | 6. Add application logic to programmatically deploy flows | If you want to automatically deploy your pre-built flows for your customers |
 | Distribution | 7. Grant your customers licenses to Microsoft Flow through the Microsoft Cloud Solution Provider program | If your customers don’t have Office 365 or Dynamics 365 licenses |
-| Distribution | 8. List your solution on Microsoft AppSource | It's recommended to increase the visibility of your ISV solution |
+| Distribution | 8. List your solution on Microsoft Marketplace | It's recommended to increase the visibility of your ISV solution |
 
 ### 1. Connecting to your APIs OR Enabling customers to connect to your APIs
 
@@ -80,8 +80,8 @@ We offer the [Microsoft Cloud Solution Provider](https://partner.microsoft.com/c
 
 See also: [Overview of Power Automate licensing](/power-platform/admin/power-automate-licensing/overview)
 
-### 8. List on AppSource
+### 8. List on Marketplace
 
-Once you have integrated Power Automate into your application, you can list it on AppSource. With AppSource, you can generate new leads for your business by building an app and publishing it to AppSource for new customers to test-drive. [Learn more](dev-appsource-test-drive.md)
+Once you have integrated Power Automate into your application, you can list it on Marketplace. With Marketplace, you can generate new leads for your business by building an app and publishing it to Marketplace for new customers to test-drive. [Learn more](dev-appsource-test-drive.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
