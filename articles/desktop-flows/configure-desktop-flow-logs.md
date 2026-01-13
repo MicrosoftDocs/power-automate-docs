@@ -2,9 +2,9 @@
 title: Configure desktop flow logs behavior
 description: Configure desktop flow log verbosity and storage destination in Power Platform Admin Center.
 ms.topic: how-to
-ms.date: 10/06/2025
+ms.date: 01/13/2026
 ms.author: appapaio
-ms.reviewer: 
+ms.reviewer: ellenwehrle
 contributors:
   - DanaMartens
   - QuentinSele
@@ -120,44 +120,47 @@ This section describes the available verbosity levels for desktop flow action lo
 | Warning             | Captures only warning and error messages.                                                           | Any runtime warnings or errors during flow execution.                            | Helps reduce noise while still surfacing potential issues.                                    |
 | Error               | Logs only error messages.                                                                            | Critical failures that stop flow execution or cause incorrect behavior.                   | Minimal logging for performance-sensitive environments.                                       |
 
-### Configure Action Log Verbosity in the Power Platform Admin Center (Admin only)
+### Configure action log verbosity in the Power Platform Admin Center (Admin only)
 
 Admins can define the **default verbosity level** for an entire environment. This setting applies to all desktop flows unless overridden at the flow level.
 
-1. Open the Power Platform Admin Center (PPAC): https://admin.powerplatform.microsoft.com
-2. Go to Manage, then select the environment where your desktop flows run.
-3. Select Settings → Features.
-4. Locate the Action logs verbosity setting under **Desktop flow run action logs configuration** section.
-5. Choose your default level: Error, Warning, Custom, Debug or Full.
-6. Select Save to apply the configuration.
+1. Sign in to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com).
+1. In the navigation pane, select **Manage**.
+1. In the Manage section, select **Environments** and then select the environment where your desktop flows run.
+1. Select **Settings**.
+1. Expand **Product** and select **Features**.
+1. Locate the Action logs verbosity setting under **Desktop flow run action logs configuration** section.
+1. Choose your default level: Error, Warning, Custom, Debug or Full.
+1. Select **Save** to apply the configuration.
 
 > [!NOTE]
 > This setting acts as the default for the whole environment.
-> Makers can override it for specific flows (see next section).
-> Changes may take a few minutes to propagate.
+> Makers can override it for specific flows (see [next section](#configure-action-log-verbosity-for-a-specific-desktop-flow).
+> Allow a few minutes for changes to take effect.
 
-### Configuring Action Log Verbosity for a specific desktop flow
+### Configure action log verbosity for a specific desktop flow
 
 Makers can configure verbosity per desktop flow from the Power Automate portal. This local setting overrides the admin default.
 
-When to Override the Environment Setting: 
+When to override the environment setting: 
 - Debugging a specific desktop flow without increasing logs for the entire environment.
 - Temporarily increasing verbosity during testing or troubleshooting.
 
-Steps 
-1. Go to Power Automate: https://make.powerautomate.com
-2. Open the flow details page of the desktop flow you want to configure.
-3. Select **Edit** and locate the Action logs verbosity section .
-4. Select the desired verbosity level for this specific flow
+Take these steps to configure action log verbosity for a specific desktop flow:
 
-> [!IMPORTANT]
-> When a maker changes the verbosity level for an individual desktop flow, they can only select a verbosity level that is equal to or higher than the environment’s default value. For example, if the environment is configured at Debug, the maker cannot choose Custom, Warning, or Error levels.
-> If administrators later change the environment’s verbosity level after a flow was configured individually, the logs generated will always follow the highest value between the environment setting and the desktop flow’s own configuration.
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. Open the flow details page of the desktop flow you want to configure.
+1. Select **Edit** and locate the Action logs verbosity section.
+1. Select the desired verbosity level for this specific flow.
 
-5. Save your changes.
+  > [!IMPORTANT]
+  > When a maker changes the verbosity level for an individual desktop flow, they can only select a verbosity level that is equal to or higher than the environment’s default value. For example, if the environment is configured at Debug, the maker cannot choose Custom, Warning, or Error levels.
+  > If administrators later change the environment’s verbosity level after a flow was configured individually, the logs generated will always follow the highest value between the environment setting and the desktop flow’s own configuration.
+
+1. Save your changes.
 
 > [!NOTE]
-> You can also configure verbosity level from Power Automate destop app (PAD).
+> You can also configure verbosity level from Power Automate desktop app (PAD).
 
 ## Querying logs V2 data
 
@@ -189,9 +192,9 @@ Learn more about [querying JSON columns in elastic tables](/power-apps/developer
 ### Breaking down the call into individual pieces
 
 - The base URL (https://[my org].api.crm[my region].dynamics.com/api/data/v9.2/) is the endpoint for the Dataverse Web API.
-- ExecuteCosmosSqlQuery is the method being called. This method allows the execution of a SQL query against Dataverse.
-- The parameters for the ExecuteCosmosSqlQuery method are provided in parentheses following the method name:
-  - `QueryText=@p1`: The SQL query to be executed. In this case, the query selects various properties from a table where the *type* is 100000001 (desktop flow action log type) and orders the results by the startTime property in descending order.
+- `ExecuteCosmosSqlQuery` is the method being called. This method allows the execution of a SQL query against Dataverse.
+- The parameters for the `ExecuteCosmosSqlQuery` method are provided in parentheses following the method name:
+  - `QueryText=@p1`: The SQL query to be executed. In this case, the query selects various properties from a table where the *type* is 100000001 (desktop flow action log type) and orders the results by the `startTime` property in descending order.
   - `EntityLogicalName=@p2`: This section is the logical name of the table (`flowlog`) that stores the action logs.
   - `QueryParameters=@p3`: This section is a JSON object specifying parameters for the query. In the previous example, it's specifying a key-value pair where the keys are `@referencingParentId` and `@referencingParentLogicalName` with values of `flowsessionid` (GUID) and type of the table `flowsession`.
   - `PageSize=p4`: This section is the query page size.
@@ -200,8 +203,8 @@ Learn more about [querying JSON columns in elastic tables](/power-apps/developer
   
 - Logs V2 are only available for desktop flow runs that are launched from a cloud flow through the desktop flow connector action.
 - Bulk-delete jobs aren't currently supported for the **Flow Log** table.
-- Flow log records can't yet be viewed in the Table section of the maker portal (make.powerapps.com).
+- Flow log records can't be viewed yet in the *Table* section of the [Power Apps maker portal](make.powerapps.com).
 - Changing action log version doesn't migrate previous desktop flow action logs to the new log storage type.
-- Don't use the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) and [FlowLog](/power-apps/developer/data-platform/reference/entities/flowlog) entities as targets for the "When a row is added, modified or deleted" Flow trigger. Doing so might cause an infinite loop because the system creates records in these tables every time a flow runs.
+- Don't use the [FlowRun](/power-apps/developer/data-platform/reference/entities/flowrun) and [FlowLog](/power-apps/developer/data-platform/reference/entities/flowlog) entities as targets for the *When a row is added, modified or deleted* flow trigger. Using these entities as targets might cause an infinite loop because the system creates records in these tables every time a flow runs.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
