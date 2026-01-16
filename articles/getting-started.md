@@ -3,15 +3,16 @@ title: Explore the Power Automate home page
 description: Learn how to navigate the Power Automate home page.
 author: kisubedi
 contributors:
+  - kewaiss
   - kisubedi
   - jamiemwork
   - v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
-ms.date: 07/11/2025
+ms.date: 01/16/2026
 ms.update-cycle: 180-days
-ms.author: kisubedi
+ms.author: kewaiss
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -122,7 +123,7 @@ With the environment selector, environments are grouped into two categories: **
 Environments where you have either system administrator and/or system customizer security role membership appear under **Build flows.** The **Other environments** list displays environments where you have read-only permissions, and can access approvals.
 
 > [!TIP]
-> Hover over an environment in the list to view the details of the environment.
+> To view the details of the environment, hover over an environment in the list.
 
 **Filter environments by role**
 
@@ -134,7 +135,7 @@ Environments where you have either system administrator and/or system customizer
 | Run only user | User without maker-level access |
 
 > [!NOTE]
-> - To view the environment list in the environment switcher in Power Automate, you must have the Environment Maker, System Customizer, or System Administrator security role in the environment. For information about predefined security roles, see [Predefined security roles](/power-platform/admin/database-security#predefined-security-roles) in the Microsoft Power Platform admin guide.
+> - Learn about predefined security roles in [Predefined security roles](/power-platform/admin/database-security#predefined-security-roles) in the Microsoft Power Platform admin guide.
 > - Make sure that you're in the correct environment *before* you create a flow, an app, or a similar component. You can't easily move components from one environment to another.
 > - Every member in an organization can access the [default environment](/power-platform/admin/environments-overview#the-default-environment). Like any environment, users can see flows where they have sufficient privileges to access a flow.
 > - When you create a flow in one environment, you aren't able to see it from another environment.
