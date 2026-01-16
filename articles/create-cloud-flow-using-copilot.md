@@ -1,7 +1,7 @@
 ---
 title: Create your first cloud flow using Copilot
 description: Learn how to access and use Copilot to create a cloud flow.
-ms.date: 07/18/2025
+ms.date: 01/16/2026
 ms.update-cycle: 180-days
 ms.custom: 
   - bap-template
