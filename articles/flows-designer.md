@@ -13,7 +13,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 11/05/2025
+ms.date: 01/16/2026
 ms.update-cycle: 180-days
 ms.author: matow
 search.audienceType: 

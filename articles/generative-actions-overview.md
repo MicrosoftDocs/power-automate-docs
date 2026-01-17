@@ -1,7 +1,7 @@
 ---
 title: Use generative actions in cloud flows (preview)
 description: Learn how to use generative actions in Power Automate to simplify automation with AI-generated suggestions.
-ms.date: 04/01/2025
+ms.date: 01/16/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: HeatherOrt

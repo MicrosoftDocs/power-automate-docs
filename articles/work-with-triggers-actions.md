@@ -5,7 +5,7 @@ author: kewaiss
 contributors:
   - kewaiss
   - v-aangie
-ms.date: 10/06/2025
+ms.date: 01/16/2026
 ms.topic: article
 ms.update-cycle: 180-days
 ms.service: power-automate
