@@ -7,7 +7,7 @@ ms.subservice: desktop-flow
 ms.topic: reference
 ms.date: 01/20/2026
 ms.author: iomavrid
-ms.reviewer: 
+ms.reviewer: ellenwehrle
 contributors:
   - DanaMartens
   - dipapa
@@ -23,7 +23,7 @@ ms.custom: sfi-image-nochange
 
 ## Prerequisites and limitations
 
-- You need an Attended RPA license to use Premium connectors. Standard connectors are also accessible by free work or school accounts.
+- You need an Attended RPA license to use premium connectors. If you have a free work or school account, you can access standard connectors.
 - Specific endpoints must be included in the allowlist for desktop flows containing cloud connector actions to work properly. More information: [Desktop flow services required for runtime](../../ip-address-configuration.md#allow-machines--users-on-your-network-to-access-power-automate-desktop-services)
 - For **Office 365 Outlook** actions, if you're using an EWS application access policy, ensure that the following user-agents are allowed (on top of the user agents listed [here](/connectors/office365/#common-errors)) for successful desktop flow execution: PowerAutomateLocal/*, PowerAutomateCloud/*
 - Sharing desktop flows with cloud connector actions is currently supported with certain requirements. Learn more in [Share desktop flows that contain connector actions](../how-to/share-desktop-flows-that-contain-connector-actions.md). Learn about connector actions and their association with connections and connection references in [Use connector actions](../how-to/use-connector-actions.md).
