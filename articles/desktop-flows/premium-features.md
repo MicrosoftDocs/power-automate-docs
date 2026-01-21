@@ -5,9 +5,9 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 01/16/2026
+ms.date: 01/21/2026
 ms.author: mustlaz
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 contributors:
 - jpapadimitriou
 - Yiannismavridis
