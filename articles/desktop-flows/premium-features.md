@@ -5,9 +5,9 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 04/22/2025
+ms.date: 01/21/2026
 ms.author: mustlaz
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 contributors:
 - jpapadimitriou
 - Yiannismavridis
@@ -21,20 +21,16 @@ search.audienceType:
 
 # Premium RPA features
 
-This article lists the premium robotic process automation (RPA) features and benefits that are included in the [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) user license and are available to [organization premium accounts](getting-started-org.md).
+This article lists the premium robotic process automation (RPA) features and benefits that the [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) user license includes and that [organization premium accounts](getting-started-org.md) can access.
 
 ## Premium feature list
 
 |Feature/Benefit | Description|Additional information|
 |----------------|------------|----------------------|
 |Automatic triggering/scheduling and integration with cloud flows|Trigger/schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger desktop flows from cloud flows](trigger-desktop-flows.md)|
-|Flow triggering via desktop shortcut|Trigger local attended desktop flows through their desktop shortcuts.|[Learn how to trigger a desktop flow via shortcut](run-desktop-flows-url-shortcuts.md)|
-|Flow triggering via URL|Trigger local attended desktop flows through their run URLs from anywhere on your machine.|[Learn how to trigger a desktop flow via URL](run-desktop-flows-url-shortcuts.md)|
-|Flow triggering in Picture-in-Picture|Trigger attended desktop flows within a virtual window.|[Learn how to trigger a desktop in Picture-in-Picture](run-desktop-flows-pip.md)|
 |Access to premium and custom connectors|Access all premium cloud connectors and create custom connectors.|[Learn about premium connectors](/connectors/connector-reference/connector-reference-premium-connectors)<br>[Learn about custom connectors](/connectors/custom-connectors)|
 |AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder.|[Learn about AI Builder](/ai-builder)|
 |Access to process mining |Visualize and analyze your business processes with process mining.|[Learn about process mining](/power-automate/process-advisor-overview)|
-|Access to cloud connectors from desktop flows|Use cloud connectors directly in desktop flows.|[Learn how to use cloud connectors in desktop flows](actions-reference/cloudconnectors.md)|
 |Custom actions|Ability to use custom developed automation actions in desktop flows|[Learn how to create and use custom actions in desktop flows](custom-actions.md)|
 |UI elements collections |Ability to create, share, and use groups of predefined UI elements in multiple desktop flows|[Learn how to create and use UI elements collections in desktop flows](ui-elements-collections.md)|
 |Sharing and collaboration|Share flows between team members and select access levels such as co-owner or user. View and manage the flows shared with you.|[Learn how to share desktop flows](manage.md#share-desktop-flows)|
@@ -59,15 +55,15 @@ Compare license entitlements in [Types of Power Automate licenses](/power-platfo
 
 ### Trial license
 
-The [Power Automate Trial](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-trial-license) user license lasts for 90 days. Free users in an organization can sign up for this trial through the **Start trial** option in the **Go premium** section of Power Automate for desktop or the **desktop flows** section of the Power Automate portal. Free users are prompted to start a trial when they try to add the **Run a flow built with Power Automate for desktop** action in a cloud flow.
+The [Power Automate Trial](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-trial-license) user license is valid for 90 days. Free users in an organization can sign up for this trial through the **Start trial** option in the **Go premium** section of Power Automate for desktop or the **desktop flows** section of the Power Automate portal. When free users try to add the **Run a flow built with Power Automate for desktop** action in a cloud flow, they're prompted to start a trial.
 
 ### Power Automate Premium license
 
-The [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) license lets you access all RPA premium features, except unattended RPA and hosted RPA. Both Power Platform admins, individual users, and makers can buy licenses for Power Automate. Learn more about purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
+The [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) license provides access to all RPA premium features, except unattended RPA and hosted RPA. Power Platform admins, individual users, and makers can buy licenses for Power Automate. For more information about purchasing Power Automate licenses, see [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
 
 ### Pay-as-you-go
 
-Pay-as-you-go is a new way to pay for Power Automate using an Azure subscription. This allows you to get started building and sharing flows without any license commitment or upfront purchasing. Desktop flow users in a pay-as-you-go-enabled environment have access to most of the premium features listed above in the scope of that specific environment. You can find more information regarding the pay-as-you-go plan in [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview).
+Pay-as-you-go is a new way to pay for Power Automate by using an Azure subscription. By using this payment option, you can get started building and sharing flows without any license commitment or upfront purchasing. Desktop flow users in a pay-as-you-go-enabled environment have access to most of the premium features listed earlier in the scope of that specific environment. For more information about the pay-as-you-go plan, see [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview).
 
 ## More information about Power Automate licensing
 
