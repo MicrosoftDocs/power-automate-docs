@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 09/23/2025
+ms.date: 01/16/2026
 ms.update-cycle: 180-days
 ms.author: michalrosik
 ms.reviewer: angieandrews

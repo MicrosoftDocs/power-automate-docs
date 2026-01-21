@@ -1,7 +1,7 @@
 ---
 title: FAQ for Copilot in desktop flow activity 
 description: This FAQ discusses Copilot used in desktop flow activity and the key considerations for making use of this technology responsibly.
-ms.date: 07/11/2025
+ms.date: 01/16/2026
 ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
