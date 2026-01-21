@@ -21,7 +21,7 @@ search.audienceType:
 
 # Premium RPA features
 
-This article lists the premium robotic process automation (RPA) features and benefits that are included in the [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) user license and are available to [organization premium accounts](getting-started-org.md).
+This article lists the premium robotic process automation (RPA) features and benefits that the [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) user license includes and that [organization premium accounts](getting-started-org.md) can access.
 
 ## Premium feature list
 
@@ -55,15 +55,15 @@ Compare license entitlements in [Types of Power Automate licenses](/power-platfo
 
 ### Trial license
 
-The [Power Automate Trial](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-trial-license) user license lasts for 90 days. Free users in an organization can sign up for this trial through the **Start trial** option in the **Go premium** section of Power Automate for desktop or the **desktop flows** section of the Power Automate portal. Free users are prompted to start a trial when they try to add the **Run a flow built with Power Automate for desktop** action in a cloud flow.
+The [Power Automate Trial](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-trial-license) user license is valid for 90 days. Free users in an organization can sign up for this trial through the **Start trial** option in the **Go premium** section of Power Automate for desktop or the **desktop flows** section of the Power Automate portal. When free users try to add the **Run a flow built with Power Automate for desktop** action in a cloud flow, they're prompted to start a trial.
 
 ### Power Automate Premium license
 
-The [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) license lets you access all RPA premium features, except unattended RPA and hosted RPA. Both Power Platform admins, individual users, and makers can buy licenses for Power Automate. Learn more about purchasing Power Automate licenses in [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
+The [Power Automate Premium](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) license provides access to all RPA premium features, except unattended RPA and hosted RPA. Power Platform admins, individual users, and makers can buy licenses for Power Automate. For more information about purchasing Power Automate licenses, see [Buy Power Automate licenses](/power-platform/admin/power-automate-licensing/buy-licenses).
 
 ### Pay-as-you-go
 
-Pay-as-you-go is a new way to pay for Power Automate using an Azure subscription. This allows you to get started building and sharing flows without any license commitment or upfront purchasing. Desktop flow users in a pay-as-you-go-enabled environment have access to most of the premium features listed above in the scope of that specific environment. You can find more information regarding the pay-as-you-go plan in [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview).
+Pay-as-you-go is a new way to pay for Power Automate by using an Azure subscription. By using this payment option, you can get started building and sharing flows without any license commitment or upfront purchasing. Desktop flow users in a pay-as-you-go-enabled environment have access to most of the premium features listed earlier in the scope of that specific environment. For more information about the pay-as-you-go plan, see [Pay-as-you-go plan](/power-platform/admin/pay-as-you-go-overview).
 
 ## More information about Power Automate licensing
 
