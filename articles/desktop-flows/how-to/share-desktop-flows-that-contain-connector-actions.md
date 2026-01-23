@@ -5,13 +5,14 @@ author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/01/2025
+ms.date: 01/01/2026
 ms.author: dipapa
 ms.reviewer: 
 contributors:
 - jpapadimitriou
 - DanaMartens
 - yiannismavridis
+- k-voulgaris
 search.audienceType: 
   - flowmaker
   - enduser
