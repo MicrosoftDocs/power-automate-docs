@@ -1,7 +1,7 @@
 ---
 title: FAQ for copilot generative answers in Power Automate for desktop
 description: This FAQ discusses copilot generative answers in Power Automate for desktop and the key considerations for making use of this technology responsibly.
-ms.date: 02/21/2025
+ms.date: 01/16/2026
 ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
