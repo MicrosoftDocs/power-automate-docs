@@ -5,11 +5,12 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 06/11/2025
+ms.date: 01/26/2026
 ms.author: nimoutzo
-ms.reviewer: matp
+ms.reviewer: ellenwehrle
 contributors:
 - Yiannismavridis
+- cochamos
 search.audienceType: 
   - flowmaker
   - enduser
@@ -19,11 +20,11 @@ search.audienceType:
 
 Flow control is the act of controlling the order in which actions and subflows run. Power Automate enables you to implement flow control through the flow control actions.
 
-The **If safe stop is requested** action is used in conjunction with the safe stop capability available in the Power Automate portal, where it can be triggered from the desktop flow run details page, or be triggered directly within the flow designer, for debugging purposes, to enable controlled termination of a running flow. More information: [Safe stop](../safe-stop.md)
+In conjunction with the safe stop capability available in the Power Automate portal, you can trigger the **If safe stop is requested** action in the desktop flow run details page or directly within the flow designer for debugging purposes. This action enables controlled termination of a running flow. For more information, see [Safe stop](../safe-stop.md).
 
-The **Throw custom error** action enables makers to intentionally raise user‑defined errors during a desktop flow’s execution, allowing those errors to be caught and handled through the **On block error** action.
+You can intentionally raise user-defined errors during a desktop flow's execution by using the **Throw custom error** action. This approach allows the **On block error** action to catch and handle those errors.
 
-**Labels** are used to create points of reference for the **Go to** action that changes the running point of the desktop flow. The following example directs the flow to a label earlier in the flow to repeat a series of actions.
+You can use **Labels** to create points of reference for the **Go to** action that changes the running point of the desktop flow. The following example directs the flow to a label earlier in the flow to repeat a series of actions.
 
 :::image type="content" source="media/flowcontrol/label-example.png" alt-text="Screenshot of a deployed Label action.":::
 
@@ -37,10 +38,10 @@ These actions don't have any functional effect, but they help group and organize
 
 You can only use the **Region** and **End region** actions as pairs, and they must belong to the same scope to interlock correctly. If one of the two actions belongs to another group of actions, such as a loop or a conditional, the actions can't form a proper region.
 
-The **Throw custom error** action is used to define a custom error that can be handled by the **On block error** action.
+The **Throw custom error** action is used to define a custom error that the **On block error** action can handle.
 
 > [!NOTE]
-> If you create multiple regions in a subflow, there's no predetermined mapping between specific **Region** and **End region** actions. Instead, the last **Region** action will try to form a pair with the first available **End region** action that follows.
+> If you create multiple regions in a subflow, there's no predetermined mapping between specific **Region** and **End region** actions. Instead, the last **Region** action tries to form a pair with the first available **End region** action that follows.
 
 ## <a name="ifsafestopaction"></a> If safe stop requested
 
@@ -134,7 +135,7 @@ Retrieves the last error that occurred in the flow.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Clear error|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|After the error is stored in the variable, it's cleared so that next time the error is retrieved, it won't retrieve the same error value|
+|Clear error|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|After the action stores the error in the variable, it clears the error so that the next time the action retrieves an error, it doesn't retrieve the same error value|
 
 ### Variables produced
 
@@ -168,7 +169,7 @@ This action doesn't include any exceptions.
 
 Acts as the destination of a 'go to' statement.
 
-From version 2.46 and on, labels can also be used in a different scope than the corresponding **Go to** action (for example, in a conditional block), except error blocks, loops, and/or other subflows.
+From version 2.46 and later, you can use labels in a different scope than the corresponding **Go to** action (for example, in a conditional block), except error blocks, loops, and other subflows.
 
 ### Input parameters
 
@@ -185,7 +186,7 @@ This action doesn't produce any variables.
 This action doesn't include any exceptions.
 
 ## Throw custom error
-Raises a user‑defined error using a specified error name and message, allowing the flow to intentionally trigger a custom exception during runtime. This action must be placed inside an **On block error** action, where its corresponding custom error entry is configured and handled appropriately.
+Raises a user-defined error by using a specified error name and message. By using this action, the flow can intentionally trigger a custom exception during runtime. You must place this action inside an **On block error** action, where you configure and handle its corresponding custom error entry.
 ### Input parameters
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
@@ -199,7 +200,7 @@ This action doesn't produce any variables.
 Marks the beginning of a block to handle actions errors.
 
 ### Handle custom errors raised by the Throw custom error action
-In the error handling section of the **On block error** action properties, press the **+ Custom error** button to add a new entry that corresponds to the error name defined in **Throw custom error** action. Provide the handling rule you want (set a variable, run a subflow, continue the flow run, or stop execution). The block evaluates custom error entries from top to bottom and executes the first rule whose error name matches the raised custom error. If none of the custom entries match, the block applies **All errors (default)** as the fallback error handling logic.
+In the error handling section of the **On block error** action properties, select the **+ Custom error** button to add a new entry that corresponds to the error name defined in **Throw custom error** action. Provide the handling rule you want (set a variable, run a subflow, continue the flow run, or stop execution). The block evaluates custom error entries from top to bottom and executes the first rule whose error name matches the raised custom error. If none of the custom entries match, the block applies **All errors (default)** as the fallback error handling logic.
 
 ### Input parameters
 
@@ -207,7 +208,7 @@ In the error handling section of the **On block error** action properties, press
 |-----|-----|-----|-----|-----|
 |Name|No|[Text value](../variable-data-types.md#text-value)||The name of the Exception Block for Visual purposes only.|
 |Retry policy|N/A|None, Fixed, Exponential|None|The rules based on which retries are performed. Delays are estimated in seconds.|
-|Handle flow terminating errors|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Expand the scope of error handling, also capturing logical errors in the flow, for example, dividing a number by zero or trying to access an item from an out of bounds position.|
+|Handle flow terminating errors|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Expand the scope of error handling, also capturing logical errors in the flow, such as dividing a number by zero or trying to access an item from an out of bounds position.|
 
 ### Variables produced
 
@@ -237,14 +238,14 @@ This action doesn't include any exceptions.
 
 ## <a name="callfunction"></a> Run subflow
 
-Run a subflow specifying any required arguments.
+Runs a subflow and specifies any required arguments.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Subflow name|No|[Subflow](../designer-workspace.md#setting-up-subflows)||The name of the subflow to call|
-|Input as expression|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Define whether the input should be handled as an expression. If enabled, variables and expressions can be used to dynamically determine the subflow during runtime.|
+|Input as expression|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Define whether the input should be handled as an expression. If enabled, use variables and expressions to dynamically determine the subflow during runtime.|
 
 ### Variables produced
 
