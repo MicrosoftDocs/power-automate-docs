@@ -22,9 +22,9 @@ Flow control is the act of controlling the order in which actions and subflows r
 
 In conjunction with the safe stop capability available in the Power Automate portal, you can trigger the **If safe stop is requested** action in the desktop flow run details page or directly within the flow designer for debugging purposes. This action enables controlled termination of a running flow. For more information, see [Safe stop](../safe-stop.md).
 
-You can intentionally raise user-defined errors during a desktop flow's execution by using the **Throw custom error** action. This approach allows the **On block error** action to catch and handle those errors.
+To intentionally raise user-defined errors during a desktop flow's execution, you can use the **Throw custom error** action. This approach allows the **On block error** action to catch and handle those errors.
 
-You can use **Labels** to create points of reference for the **Go to** action that changes the running point of the desktop flow. The following example directs the flow to a label earlier in the flow to repeat a series of actions.
+To create points of reference for the **Go to** action that changes the running point of the desktop flow, you can use **Labels**. The following example directs the flow to a label earlier in the flow to repeat a series of actions.
 
 :::image type="content" source="media/flowcontrol/label-example.png" alt-text="Screenshot of a deployed Label action.":::
 
