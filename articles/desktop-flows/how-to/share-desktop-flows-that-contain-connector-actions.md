@@ -5,13 +5,14 @@ author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 07/01/2025
+ms.date: 01/01/2026
 ms.author: dipapa
-ms.reviewer: 
+ms.reviewer: ellenwehrle
 contributors:
 - jpapadimitriou
 - DanaMartens
 - yiannismavridis
+- k-voulgaris
 search.audienceType: 
   - flowmaker
   - enduser
@@ -48,7 +49,7 @@ If there are compatible existing connections available, the first one is selecte
 Co-owners have the ability to modify shared desktop flows in addition to running them. Co-owners have the ability to *embed* the connection references (and as a result their underlying connections) to the desktop flows they have access to. By embedding a connection reference to a desktop flow, you allow other co-owners to have access to the underlying data provided by it, for both modifying as well as running the desktop flow.
 
 > [!NOTE]
-> You can only embed or remove connection references that you own from a desktop flow. Connection references added by other co-owners can only be managed by them.
+> You can only embed or remove connection references from a desktop flow if you own the underlying connection. Connection references added by other co-owners can only be managed by them.
 
 > [!IMPORTANT]
 > Embedded connection references are only available to other co-owners in the scope of the shared desktop flow.
