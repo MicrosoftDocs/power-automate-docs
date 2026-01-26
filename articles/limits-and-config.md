@@ -271,10 +271,13 @@ By default, administrators need to authorize endpoints, including **\*.servicebu
 | prodkoreasouthmmrns-1-o7ut2fobjmj7k.servicebus.windows.net                | Korea                |  No |
 | prdkoreacentralmmrns-V2-2-7oogvhdpr45v1f7q2deylnb9.servicebus.windows.net | Korea                |  No |
 | prdkoreasouthmmrns-V2-2-7jvgkvkqli22srx9w3epmrdq8j.servicebus.windows.net | Korea                |  No |
+| prdkoreacentralmmrns-V2-3-k8szwes4vwamjfmcqosezmt2.servicebus.windows.net   | Korea                |  No |
+| prdkoreasouthmmrns-V2-3-v08vujv6umgt9xdf1a2sarcs7q.servicebus.windows.net   | Korea                |  No |
 | prdnzammrns-1-8vyvi02tfal5rjlmfsqvqs7dtx9ph4xegxxh.servicebus.windows.net | South Africa         |  No |
 | prdsouthafricawestmmrns-V2-2-vm94ckkkxsacbvjis6shh.servicebus.windows.net | South Africa         |  No |
 | prdnzammrns-1-8vyvi02tfal5rjlmfsqvqs7dtx9ph4xegxxh.servicebus.windows.net | South Africa         |  No |
 | prdsouthafricanorthmmrns-V2-2-h4fi6ckdkb13ngd42ov2.servicebus.windows.net | South Africa         |  No |
+| prdnzammrns-1-oqy5jh1vwobriyl4u6ameplcssg308bohfwd.servicebus.windows.net   | South Africa         |  No |
 | prdeusmmrns-3-gh4xbnrswp4annlprgyqmdwyziat22jn2hmt.servicebus.windows.net | United States        | Yes |
 | prdeusmmrns-3-ju5nmbisb8h7216w1o1md66mv77e0uh0gbqt.servicebus.windows.net | United States        | Yes |
 | previeweastusmmrns-1-fmkqes4e4ximc.servicebus.windows.net                 | United States        | Yes |
@@ -423,6 +426,49 @@ By default, administrators need to authorize endpoints, including **\*.servicebu
 | prdeastusmmrns-V2-57-6tnrtyh5tvl593c33fe8rq4j9surl.servicebus.windows.net | United States        |  No |
 | prdeastusmmrns-V2-49-bv9at1w8ykynukqwbrx4ltmrpyd3v.servicebus.windows.net | United States        |  No |
 | prdeastusmmrns-V2-50-c9toid8pj41qyr0brftpypow5ep83.servicebus.windows.net | United States        |  No |
+| prdcentralusmmrns-V2-1-cxvuidfly1xgen02e2st7b25tyc.servicebus.windows.net   | United States        | Yes |
+| prdcentralusmmrns-V2-1-d4g75omqv2zufufg1lakwveljlt.servicebus.windows.net   | United States        |  No |
+| prdcentralusmmrns-V2-2-v2vcjkghcm5zp7996ecbbgiqknk.servicebus.windows.net   | United States        |  No |
+| prdcentralusmmrns-V2-3-lprhijzhs5k2odktkfipj1pk5pz.servicebus.windows.net   | United States        |  No |
+| prdcentralusmmrns-V2-4-uz9aggdfey0bwkzfukz3odngv78.servicebus.windows.net   | United States        |  No |
+| prdeastus2mmrns-V2-1-q36yo85k88jef73dqarbn2l3ecutr.servicebus.windows.net   | United States        |  No |
+| prdeastus2mmrns-V2-1-rddtpao55gtpq0rlgowmeuq9wqvga.servicebus.windows.net   | United States        | Yes |
+| prdeastus2mmrns-V2-2-zumpkq2mmy4e70ramux3zv6krs9kp.servicebus.windows.net   | United States        |  No |
+| prdeastus2mmrns-V2-3-okhmwjcdpd2z24dmx2kw1t4hrxbcu.servicebus.windows.net   | United States        |  No |
+| prdeastus2mmrns-V2-4-3h5qtnj2r4t3u0uz50m4h0xz5no1q.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-69-5kc2w3u1naxr6jldmjgbdjmprhp6g.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-7-dldo3brab01xfqatrkq4nihq4m2dy3.servicebus.windows.net   | United States        | Yes |
+| prdeastusmmrns-V2-70-jj3xi8my602zjrkb8vfp4fxxp5ygb.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-71-9emj8ui9r53pcx9ss77kjvz5dq88n.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-72-bhdsiupe4euv67gm3ibrzjqnws5tk.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-73-t9h94y7kjb5iwkks7ihajbiw5irhj.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-74-c69crcttpg0zh7j8urvqbhnmc9zon.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-75-bbvdrhk4iwqrgpo00v1hlm0u4qcpu.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-76-xpyo2soi0768y8l3dpqbw4d3jmrie.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-77-9hl9rvgtuqyh2ja5s6lsz69g11gv8.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-78-aac0arepgh2tsi2oao63aqnhwhf6r.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-79-8sjoskd4w0lhpy3riqr3b6c78ft42.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-8-wll4txhrlam2br5uzpqwji387xqoxi.servicebus.windows.net   | United States        | Yes |
+| prdeastusmmrns-V2-80-fmhu2r84ogy83bn9xluvui29uzvns.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-81-2s1oy659ok9qqmzxtocxfyubvtgti.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-82-oa3rcqzy9d0kxp5u3qm5slxdwhzvd.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-83-mq8tfdefyx0pmfmu1k8p2bvae0oay.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-84-t3kx1bx57jeuvjxdqxqr0wxuch4bm.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-85-qwivrx0jhgrlz0k494io35v02eiw6.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-86-lzshl4rlh1z8iqg3tjgjftir1ua51.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-87-eezxzp8fmt3x55ddednfnk6w0oesi.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-88-n49p6bxdih4l5tgvt651t0zk9mebe.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-89-qwpwofoid5vep567bptwnv5zqcnjh.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-9-6pp13kajblcwygtaiwgxys9i1ayy1b.servicebus.windows.net   | United States        | Yes |
+| prdeastusmmrns-V2-90-x70xjkb70omzgaz6r1fv8xk56b6ip.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-91-4kj1jwtfxq827hvmvboili2xbdv4b.servicebus.windows.net   | United States        |  No |
+| prdeastusmmrns-V2-92-ec92tavxpcz9j7vyjlwybrgkdcavg.servicebus.windows.net   | United States        |  No |
+| prdwestusmmrns-V2-7-j1fiz0tr9wdaac6jqxtvyxwxxd2sof.servicebus.windows.net   | United States        | Yes |
+| prdwestusmmrns-V2-72-djskli0fka2at8vqndyvy0m5yxbbz.servicebus.windows.net   | United States        |  No |
+| prdwestusmmrns-V2-73-fq5xb4qqtinyo66xn1nvxu0rf8ht2.servicebus.windows.net   | United States        |  No |
+| prdwestusmmrns-V2-8-z32xx16c9w36c1uehaaxefapjpyi5l.servicebus.windows.net   | United States        | Yes |
+| prdwestusmmrns-V2-80-tzvsak6vdc2yqy34mfp0i0ao5ntu7.servicebus.windows.net   | United States        |  No |
+| prdwestusmmrns-V2-9-ng97rt3ck8ag8w71fytmkwokdfmthp.servicebus.windows.net   | United States        | Yes |
 | prdwukmmrns-2-655eda4qyw2sv8yoh48rvypa4cgywlbwcqhv.servicebus.windows.net | United Kingdom       |  No |
 | prdwukmmrns-2-vn35h7uhxr3nriaunptdudd0avl6nzhnglhr.servicebus.windows.net | United Kingdom       |  No |
 | produksouthmmrns-1-cx4kejh3frvae.servicebus.windows.net                   | United Kingdom       |  No |
@@ -431,6 +477,10 @@ By default, administrators need to authorize endpoints, including **\*.servicebu
 | prduksouthmmrns-V2-3-mnju2mj25hyj4ig3gp5uqpedwdo8h.servicebus.windows.net | United Kingdom       |  No |
 | prdukwestmmrns-V2-4-c07nmhjdwly1mqqyy4mfsw4eomli4x.servicebus.windows.net | United Kingdom       |  No |
 | prduksouthmmrns-V2-4-uagkjreb03usrqw5clyadknb5q529.servicebus.windows.net | United Kingdom       |  No |
+| prduksouthmmrns-V2-5-cdcqyrwngswx6w66r75iip96l4mrb.servicebus.windows.net   | United Kingdom       |  No |
+| prduksouthmmrns-V2-6-sibwlbq0tj1b7sbmi5st534iwg07t.servicebus.windows.net   | United Kingdom       |  No |
+| prdukwestmmrns-V2-5-zs3alslcbl2c4k5cqhz7msev6yfz9f.servicebus.windows.net   | United Kingdom       |  No |
+| prdukwestmmrns-V2-6-91snhe9nbi5ycz76iea1jd5mk1u9e7.servicebus.windows.net   | United Kingdom       |  No |
 | prodjapaneastmmrns-1-nafowbv7uqqzi.servicebus.windows.net                 | Japan                |  No |
 | prodjapanwestmmrns-1-7fhv7yfs3b7oo.servicebus.windows.net                 | Japan                |  No |
 | prdwjpmmrns-5-alkrfltpxcxxjdgdvullh28wv064it08xh7p.servicebus.windows.net | Japan                |  No |
@@ -475,6 +525,26 @@ By default, administrators need to authorize endpoints, including **\*.servicebu
 | prdjapanwestmmrns-V2-19-xyvjl78qwp2jp572yqxpx8hckb.servicebus.windows.net | Japan                |  No |
 | prdjapanwestmmrns-V2-20-asapau6qmt86l1vw8ov5onqvtc.servicebus.windows.net | Japan                |  No |
 | prdjapanwestmmrns-V2-21-3y18tudg2lxt46v7flp1enxdmx.servicebus.windows.net | Japan                |  No |
+| prdjapaneastmmrns-V2-23-jzic9lad0oj17vp0b08ghaz1tc.servicebus.windows.net   | Japan                |  No |
+| prdjapaneastmmrns-V2-24-ddy4i6jhvvkn6pbvyarad5p22s.servicebus.windows.net   | Japan                |  No |
+| prdjapaneastmmrns-V2-25-swl4tqjbchzrh6y6uty2h6sm2u.servicebus.windows.net   | Japan                |  No |
+| prdjapaneastmmrns-V2-26-tuhuys30tnlej6wafcmpju2eep.servicebus.windows.net   | Japan                |  No |
+| prdjapaneastmmrns-V2-27-gjog6xnl7ws8jmdcqiv7ygqnno.servicebus.windows.net   | Japan                |  No |
+| prdjapaneastmmrns-V2-28-pdt4zer4jg7v7u4dkol07z4ymc.servicebus.windows.net   | Japan                |  No |
+| prdjapaneastmmrns-V2-29-tbsjd6uktlvvmpie7x1202hmed.servicebus.windows.net   | Japan                |  No |
+| prdjapaneastmmrns-V2-30-5u4apu2eskedp9ffyvnzwifj1a.servicebus.windows.net   | Japan                |  No |
+| prdjapaneastmmrns-V2-31-zgvo43hv3r4swk0mr73tuhwn4t.servicebus.windows.net   | Japan                |  No |
+| prdjapaneastmmrns-V2-32-z3v0vqp7nycde4ykn73xkik0gf.servicebus.windows.net   | Japan                |  No |
+| prdjapanwestmmrns-V2-23-piz5guoijcwhehfh13x97433r5.servicebus.windows.net   | Japan                |  No |
+| prdjapanwestmmrns-V2-24-y0a30omy6x3gydbrxu0e42yesn.servicebus.windows.net   | Japan                |  No |
+| prdjapanwestmmrns-V2-25-jif6lfnta1idirlnqhtkcasuzm.servicebus.windows.net   | Japan                |  No |
+| prdjapanwestmmrns-V2-26-cgjpyeqj73p9j9fr6u6orefu85.servicebus.windows.net   | Japan                |  No |
+| prdjapanwestmmrns-V2-27-th6xnuudsfktsoztn4p4p6nd1a.servicebus.windows.net   | Japan                |  No |
+| prdjapanwestmmrns-V2-28-436nun6tdjb01zo60saa2n8waa.servicebus.windows.net   | Japan                |  No |
+| prdjapanwestmmrns-V2-29-uxp93nikojziaxhq67oiamtu1k.servicebus.windows.net   | Japan                |  No |
+| prdjapanwestmmrns-V2-30-tyokzuqfxuyqz457n6dwic6aze.servicebus.windows.net   | Japan                |  No |
+| prdjapanwestmmrns-V2-31-kr99qlyb8vb06ngapqlj7btyo0.servicebus.windows.net   | Japan                |  No |
+| prdjapanwestmmrns-V2-32-gsrdufnxeadj882jo6qxxviz0r.servicebus.windows.net   | Japan                |  No |
 | prdsinmmrns-2-yg3uf3bg2tx76131363l5twjngscb68cdztl.servicebus.windows.net | India                |  No |
 | prdcinmmrns-3-wnn89ixhem8i605q4edtwo9r8r0t2796kx3d.servicebus.windows.net | India                |  No |
 | prdsinmmrns-2-rdf8f0ew8d30vxdo2y9l17npmi44q7s6w7z9.servicebus.windows.net | India                |  No |
@@ -487,10 +557,15 @@ By default, administrators need to authorize endpoints, including **\*.servicebu
 | prdsouthindiammrns-V2-4-e41a018a0nkeypn3wmmo4tc7hg.servicebus.windows.net | India                |  No |
 | prdsouthindiammrns-V2-5-csu0sz9mtazr236ey7adgfpfrv.servicebus.windows.net | India                |  No |
 | prdsouthindiammrns-V2-6-p0cf9pk42vxyzri7tmo2bcxue0.servicebus.windows.net | India                |  No |
+| prdcentralindiammrns-V2-7-0wgor8igjvw2zjvmobpa8mej.servicebus.windows.net   | India                |  No |
+| prdcentralindiammrns-V2-8-559czovxw065m2hq9aj1fewc.servicebus.windows.net   | India                |  No |
+| prdsouthindiammrns-V2-7-6g5aetl6yv41vxrwd765hgbd67.servicebus.windows.net   | India                |  No |
+| prdsouthindiammrns-V2-8-c0q83cf801phzyhmq0ul5t4lf7.servicebus.windows.net   | India                |  No |
 | prodfrancecentralmmrns-1-xzhxhbzl7vhc6.servicebus.windows.net             | France               |  No |
 | prodfrancesouthmmrns-1-xorsknhtb2lm2.servicebus.windows.net               | France               |  No |
 | prdfrancecentralmmrns-V2-2-ey8pb34ahkh5lww22p4fbjy.servicebus.windows.net | France               |  No |
 | prdfrancesouthmmrns-V2-2-mpm8f0c4822ei4rs4lop2y3vi.servicebus.windows.net | France               |  No |
+| prdfrancecentralmmrns-V2-3-mgi7a7okthm7z4e5c4roy5x.servicebus.windows.net   | France               |  No |
 | prdweummrns-26-ldz8cnwwyocr0ejev8xvyhiezuxmdq1yxqk.servicebus.windows.net | Europe               |  No |
 | prdweummrns-6-715t9odrb0d5xqu9mcvl95tl3vss0h4ywvql.servicebus.windows.net | Europe               |  No |
 | prdweummrns-6-k903fojp2zajhe9m2uy026gmd8o92j7egocc.servicebus.windows.net | Europe               |  No |
@@ -581,12 +656,40 @@ By default, administrators need to authorize endpoints, including **\*.servicebu
 | prdnortheuropemmrns-V2-28-gwhxf94sdepv464u9sf4e2r5.servicebus.windows.net | Europe               |  No |
 | prdnortheuropemmrns-V2-29-cjwdz6e4eyw0tuvmu29fv4v5.servicebus.windows.net | Europe               |  No |
 | prdnortheuropemmrns-V2-30-8d8fsnxlukj5kj0i72k7c97y.servicebus.windows.net | Europe               |  No |
+| prdnortheuropemmrns-V2-45-c6ypbngmqcowup5m6qywfq3k.servicebus.windows.net   | Europe               |  No |
+| prdnortheuropemmrns-V2-47-n2vbuax43zps5j4fynxabmre.servicebus.windows.net   | Europe               |  No |
+| prdnortheuropemmrns-V2-50-kc8iumd0sunwcdvct8baitkn.servicebus.windows.net   | Europe               |  No |
+| prdnortheuropemmrns-V2-51-e3fu1m8tizze66eodumcsjg7.servicebus.windows.net   | Europe               |  No |
+| prdnortheuropemmrns-V2-52-sz8tzl1yus5aoapuzzniiveu.servicebus.windows.net   | Europe               |  No |
+| prdnortheuropemmrns-V2-54-wuzqz8erfi6jjqi6oyth330m.servicebus.windows.net   | Europe               |  No |
+| prdnortheuropemmrns-V2-55-10glx8ifn8439sos1gw6agqc.servicebus.windows.net   | Europe               |  No |
+| prdnortheuropemmrns-V2-56-so4njs034ydz2bepkhyn6trz.servicebus.windows.net   | Europe               |  No |
+| prdnortheuropemmrns-V2-57-7ydgjgugiw49t9kdh2dnh3g6.servicebus.windows.net   | Europe               |  No |
+| prdnortheuropemmrns-V2-58-33gyb3wwj2oa435beaivnlmy.servicebus.windows.net   | Europe               |  No |
+| prdnortheuropemmrns-V2-59-ymhb30g0nicr5o8i1ji9ujht.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-45-6arvbsz32q7tsg9hyatft31nh.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-46-z4mqgd0g5r6z1uenm9acgqrlk.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-47-ok55bls40dfszpj4wfb5un72d.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-48-wfgl9c72q5gjnsrh925t9xsgw.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-49-pp2z4gyxq8gcpwd41kstjbifp.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-50-70cj33g9m0ybdqaewzoni5usk.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-51-azschh3x3vnsq9ztfdno1utos.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-52-6x3ymig92so0clddwc2719zgg.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-53-1jhmfjcfozp00rpgkhv6cpyk8.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-54-myonnrw7cj7jvu903rfrin644.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-55-zrpwbjdl2rb1s46uhk47bsvof.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-56-wcnub9dynztu7kvwf3m9921l6.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-57-rhumwoao3me5pdytamaoqblh9.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-58-w4kb0hvrxl8sd2wf3ian8gl8x.servicebus.windows.net   | Europe               |  No |
+| prdwesteuropemmrns-V2-59-3zd8ckogxf1uim8q5abvb3zht.servicebus.windows.net   | Europe               |  No |
 | prdndemmrns-2-go7xeqf077mt2vuq4dyth0gwfm9s2aemmjm9.servicebus.windows.net | Germany              |  No |
 | prdndemmrns-2-yqlb2eueujjpuxauq3us19ia6pboepamtmdh.servicebus.windows.net | Germany              |  No |
 | prodgermanynorthmmrns-1-q7unzu7nsvdxg.servicebus.windows.net              | Germany              |  No |
 | prodgermanywestcentralmmrns-1-zqcmawxslzfbi.servicebus.windows.net        | Germany              |  No |
 | prdgermanynorthmmrns-V2-3-nx19493gwmdkl77m937j6hzi.servicebus.windows.net | Germany              |  No |
 | prdgermanywestcentralmmrns-V2-3-kqsb9hxeyg46m8n14r.servicebus.windows.net | Germany              |  No |
+| prdgermanynorthmmrns-V2-4-2qkgofexq7rjrvdw7w1vtxhu.servicebus.windows.net   | Germany              |  No |
+| prdgermanywestcentralmmrns-V2-4-r134yohh1tt2r0fs3n.servicebus.windows.net   | Germany              |  No |
 | prdnchmmrns-2-6aufi5bwfag8r54td32bjj8bpl845eagkz2y.servicebus.windows.net | Switzerland          |  No |
 | prdnchmmrns-2-d8hfqw2v8niumsl2jaqjrqq4lhp10rvjnjc9.servicebus.windows.net | Switzerland          |  No |
 | prodswitzerlandnorthmmrns-1-2d2uums4njavc.servicebus.windows.net          | Switzerland          |  No |
@@ -607,6 +710,8 @@ By default, administrators need to authorize endpoints, including **\*.servicebu
 | prdcanadaeastmmrns-V2-3-j5vwggt3rb5dbv39942w21uh6i.servicebus.windows.net | Canada               | Yes |
 | prdcanadaeastmmrns-V2-4-0iq6u9cwlu138ef5i67sjykca9.servicebus.windows.net | Canada               | Yes |
 | prdcanadaeastmmrns-V2-5-70iiq4ryuvmy6l3jyacmyj6k1d.servicebus.windows.net | Canada               | Yes |
+| prdcanadacentralmmrns-V2-7-49yw523e3yw7fftq3ii2oq5.servicebus.windows.net   | Canada               |  No |
+| prdcanadaeastmmrns-V2-7-73nkkbhbtxiiv0jov6wc77dxp2.servicebus.windows.net   | Canada               |  No |
 | prdsbrmmrns-2-69n5a3ojd4crv4qpj93l0vi9xwul5qygykqu.servicebus.windows.net | South America        |  No |
 | prdsbrmmrns-2-gh3flzhrf9ax9glm87xs23dxrykcuoakpics.servicebus.windows.net | South America        |  No |
 | prdsbrmmrns-3-4ex758s96an2i2hfd1ypws4s59qre3fruvb5.servicebus.windows.net | South America        |  No |
@@ -617,6 +722,11 @@ By default, administrators need to authorize endpoints, including **\*.servicebu
 | prdbrazilsoutheastmmrns-V2-5-2zrb3wwtelahcjumgb63m.servicebus.windows.net | South America        |  No |
 | prdbrazilsouthmmrns-V2-4-kvwoyt51n45knkl8fiigga5sl.servicebus.windows.net | South America        |  No |
 | prdbrazilsouthmmrns-V2-5-etonhht5qkuj13txix4zdull3.servicebus.windows.net | South America        |  No |
+| prdbrazilsoutheastmmrns-V2-6-od31ct6aar57jsgc6mnvr.servicebus.windows.net   | South America        |  No |
+| prdbrazilsoutheastmmrns-V2-7-fs5kaelasnkqdl4ile672.servicebus.windows.net   | South America        |  No |
+| prdbrazilsouthmmrns-V2-6-hyc5bdt06sixjrwflk5b1orir.servicebus.windows.net   | South America        |  No |
+| prdbrazilsouthmmrns-V2-7-aj6lrifztzah8o4wzltchlice.servicebus.windows.net   | South America        |  No |
+| prdbrazilsouthmmrns-V2-8-rjhdx6juukgm5fg8s8piz6jxc.servicebus.windows.net   | South America        |  No |
 | prdeaummrns-2-if84st2om5meh741f8vanxwcz07mnq6vgpgz.servicebus.windows.net | Australia            |  No |
 | prdeaummrns-2-z1cqmm14ao5gt1nqpqx9llazq1vd0dg8418w.servicebus.windows.net | Australia            |  No |
 | prdseaummrns-3-5gveu7rksy51oh4rfx54fbc4qt5qc8502bh.servicebus.windows.net | Australia            |  No |
@@ -629,6 +739,10 @@ By default, administrators need to authorize endpoints, including **\*.servicebu
 | prdaustraliaeastmmrns-V2-5-o70p1sirgcvbjjwfx821wih.servicebus.windows.net | Australia            |  No |
 | prdaustraliasoutheastmmrns-V2-4-gk4psheqriftcd9c7y.servicebus.windows.net | Australia            |  No |
 | prdaustraliasoutheastmmrns-V2-5-4kp3u28uu4godpvvfz.servicebus.windows.net | Australia            |  No |
+| prdaustraliaeastmmrns-V2-6-bixntgmbykocom7eisjq4t3.servicebus.windows.net   | Australia            |  No |
+| prdaustraliaeastmmrns-V2-7-n8jncqgsrcm1zoxdzkvm7mx.servicebus.windows.net   | Australia            |  No |
+| prdaustraliasoutheastmmrns-V2-6-ecaax40woskk00g5i1.servicebus.windows.net   | Australia            |  No |
+| prdaustraliasoutheastmmrns-V2-7-70286id1r4eduyhi0z.servicebus.windows.net   | Australia            |  No |
 | prdeasmmrns-2-1lngpyk311cxsmgr513wlgj053ezi6lj2eks.servicebus.windows.net | Asia                 |  No |
 | prdeasmmrns-2-bmrbhomvn76odohg3wy43lmaj8i3y2lyfdif.servicebus.windows.net | Asia                 |  No |
 | prdeasmmrns-6-dy3qfh1dr2jlqy20o7q5jpgx8i5f7f4lutsv.servicebus.windows.net | Asia                 |  No |
@@ -653,6 +767,74 @@ By default, administrators need to authorize endpoints, including **\*.servicebu
 | prdeastasiammrns-V2-12-mex8iew1ulesrikd5719fkabs5o.servicebus.windows.net | Asia                 |  No |
 | prdeastasiammrns-V2-8-2jwmci9cif6gd9asvgac6w4l3pma.servicebus.windows.net | Asia                 |  No |
 | prdeastasiammrns-V2-9-qkow6tk3o2itnbwr3ikwnxvi13r8.servicebus.windows.net | Asia                 |  No |
+| prdeastasiammrns-V2-13-1iue9pa1nfws6ujltgkzvjm7ewd.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-14-nz9oxrgsxz36phacgl1x4urrcm5.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-15-by0qy1h8agdzfipt6e3w9s8yjhs.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-17-a44ktwwgzuios49hev0jkgspflp.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-18-fovdgxcupq0lzmwn70u0t4ygrz0.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-20-illrx8s3rk4suvkj6a7xegpv4qk.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-23-fpb573q5tfzjq6rmm7oicpmcetm.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-24-ynjj9vak1r062dzeu9u5ua4qem7.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-25-lj5p24ipcqofd81m8eebkfsiqhn.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-26-t19he5u67kryq64nx9lfs4wlp18.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-28-65ijkw4o5a4ebupiznokngg7han.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-29-jrwcet1a6hdja80njeod76tge4b.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-30-i2ifgucccl6s7x814qzv5v4fymo.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-31-bi1fkeegi4l92kkunl9fqb0j5jo.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-32-p2wngjsa9q0ckdpqn71hefjfwuj.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-33-nobxa816mfbbdd9hfj56xzm1x3j.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-34-h5d3qzhdqgki7rwp4ss8smghxps.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-35-mvreorj0wjf1yml8ku7sjv97k3r.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-36-o4cv30i38st4rqf5yb7xc0gycpb.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-38-u2beobco3zbasw1azkx4h79s6xl.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-39-qunx4g687vbywshx90w0jd2naf9.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-40-xq2avfraqoposdvkha4xct7sy04.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-41-ygolvretqinis8w1n7g48ma15yk.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-42-6fjqdrfb0ezlucl5hnzako4ed7t.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-43-484prs9kldf448sdsj34ymdcsyj.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-44-hp6bhpylb276u4wltndzspcz1ln.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-45-fbrghfc3lktcflmrrvbc63a50hd.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-46-8zqhk2fo0s78q1s34htbeo3ewtc.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-47-1mghsuwkemvmrim2uj3078kvqvj.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-48-6tzmlckf25q5mwv1cr26vuq8whz.servicebus.windows.net   | Asia                 |  No |
+| prdeastasiammrns-V2-49-ls4qgh1x7ua0mdrel8mfv5622ho.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-13-928wawkyqkofzpl6qozhj5.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-14-msrfykjvrcw44a60gbo0i6.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-15-38815ntztanfnskkoziax4.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-16-34k9b5l1jnsm8p5w8e1apy.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-17-678wtnjpjfrtnhj0cccuyo.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-18-r0dxwt8yhwvyz8cxvevgse.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-19-ept9edob6pm5igjpzp2n64.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-20-b293hf1h0as9amka2ol2dt.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-21-g5ja3uegrsjix0v4u6ewq9.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-22-n6ad5bxdlvnhn79tomw3qg.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-23-1x7s8ojbzbaqetb1lr97u8.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-24-vq8davm665n3l6hszxfkaj.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-25-51l5xy4vf00jlc94v7w943.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-26-d1vo8xljrcyl3uysbq55nd.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-27-4far0f3gpynvc47wesu52f.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-28-sivxxpyy69hoe4sv10nhgs.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-29-uwszemrzylb6seb1b1edcx.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-30-espj6mrxo13r905ldoc4fv.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-31-1low4au20chq4nlgdtypj8.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-32-3uz6z7kr56utwxa6vj5mpg.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-33-82xpxdw1bi2743qqpe1xby.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-34-db5zoz9lhmglcgpns9nj9g.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-35-7wyllgbzmdl7gdgy3jukah.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-36-e5iszkv501ijc0xx92v4vj.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-37-vlnp30bfqj4lshvs2xh04x.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-38-ha1vfjambfcizepl8divyv.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-39-smwof4vue4xj1xodfq442p.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-40-ekdlrrfhouduri2x9p4o1i.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-41-aao8lrtkda44zzednuqasn.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-42-pycz233oi23gk0inygan1m.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-43-vax0lkavdj8conxwi1kf32.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-44-q0ngg83msqes6xdkjcp8g2.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-45-3tt352xhs08apxopriljs2.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-46-utvf7nrcv1grmendke6wbi.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-47-lyip65vqnati9al2saaoo9.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-48-2a2k0nhwcjnn5t3fkg79l6.servicebus.windows.net   | Asia                 |  No |
+| prdsoutheastasiammrns-V2-49-0sf1v92xrsnf795qmv4uoe.servicebus.windows.net   | Asia                 |  No |
 | produaecentralmmrns-1-6v46fkb43e56k.servicebus.windows.net                | United Arab Emirates |  No |
 | produaenorthmmrns-1-6rlrfzdyg6y2s.servicebus.windows.net                  | United Arab Emirates |  No |
 | prduaecentralmmrns-V2-2-gvau95gf8stxbizt653fwqkp9a.servicebus.windows.net | United Arab Emirates |  No |
