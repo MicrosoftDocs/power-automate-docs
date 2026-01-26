@@ -21,6 +21,8 @@ Flow control is the act of controlling the order in which actions and subflows r
 
 The **If safe stop is requested** action is used in conjunction with the safe stop capability available in the Power Automate portal, where it can be triggered from the desktop flow run details page, or be triggered directly within the flow designer, for debugging purposes, to enable controlled termination of a running flow. More information: [Safe stop](../safe-stop.md)
 
+The **Throw custom error** action enables makers to intentionally raise user‑defined errors during a desktop flow’s execution, allowing those errors to be caught and handled through the **On block error** action.
+
 **Labels** are used to create points of reference for the **Go to** action that changes the running point of the desktop flow. The following example directs the flow to a label earlier in the flow to repeat a series of actions.
 
 :::image type="content" source="media/flowcontrol/label-example.png" alt-text="Screenshot of a deployed Label action.":::
@@ -34,6 +36,8 @@ To visually organize your actions into groups for easier management, enclose the
 These actions don't have any functional effect, but they help group and organize actions for maintenance and readability purposes. For example, you can collapse and expand a region to help focus attention where needed.
 
 You can only use the **Region** and **End region** actions as pairs, and they must belong to the same scope to interlock correctly. If one of the two actions belongs to another group of actions, such as a loop or a conditional, the actions can't form a proper region.
+
+The **Throw custom error** action is used to define a custom error that can be handled by the **On block error** action.
 
 > [!NOTE]
 > If you create multiple regions in a subflow, there's no predetermined mapping between specific **Region** and **End region** actions. Instead, the last **Region** action will try to form a pair with the first available **End region** action that follows.
@@ -180,9 +184,22 @@ This action doesn't produce any variables.
 
 This action doesn't include any exceptions.
 
-## <a name="block"></a> On block error
+## Throw custom error
+Raises a user‑defined error using a specified error name and message, allowing the flow to intentionally trigger a custom exception during runtime. This action must be placed inside an **On block error** action, where its corresponding custom error entry is configured and handled appropriately.
+### Input parameters
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Error name|No|[Text value](../variable-data-types.md#text-value)|None|The name of the custom error.|
+|Error message|No|[Text value](../variable-data-types.md#text-value)|None|The description of the custom error.|
+### Variables produced
+This action doesn't produce any variables.
 
+
+## <a name="block"></a> On block error
 Marks the beginning of a block to handle actions errors.
+
+### Handle custom errors raised by the Throw custom error action
+In the error handling section of the **On block error** action properties, press the **+ Custom error** button to add a new entry that corresponds to the error name defined in **Throw custom error** action. Provide the handling rule you want (set a variable, run a subflow, continue the flow run, or stop execution). The block evaluates custom error entries from top to bottom and executes the first rule whose error name matches the raised custom error. If none of the custom entries match, the block applies **All errors (default)** as the fallback error handling logic.
 
 ### Input parameters
 
@@ -190,7 +207,7 @@ Marks the beginning of a block to handle actions errors.
 |-----|-----|-----|-----|-----|
 |Name|No|[Text value](../variable-data-types.md#text-value)||The name of the Exception Block for Visual purposes only.|
 |Retry policy|N/A|None, Fixed, Exponential|None|The rules based on which retries are performed. Delays are estimated in seconds.|
-|Capture unexpected logic errors|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Expand the scope of error handling, also capturing logical errors in the flow, for example, dividing a number by zero or trying to access an item from an out of bounds position.|
+|Handle flow terminating errors|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Expand the scope of error handling, also capturing logical errors in the flow, for example, dividing a number by zero or trying to access an item from an out of bounds position.|
 
 ### Variables produced
 
@@ -275,3 +292,4 @@ This action doesn't produce any variables.
 This action doesn't include any exceptions.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
