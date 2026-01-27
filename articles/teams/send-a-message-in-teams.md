@@ -12,7 +12,7 @@ ms.author: kewaiss
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.date: 06/27/2025
+ms.date: 01/27/2026
 ms.topic: how-to
 ---
 
@@ -198,6 +198,7 @@ Mentions are a great way to get the attention of a user in Teams. You can combin
 - By default, Teams only lists the 50 most recent group chats in the drop-down list.
 - The **Get an @mention token for a user** is only for mentioning users. Mentioning channels or teams isn't supported.
 - Sending a message in private channels isn't supported.
+- You can't mark a Teams message as **Urgent** or **Important** when using the **Post a message in a chat or channel** action.
 
 ## Related information
 
