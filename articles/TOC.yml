@@ -917,6 +917,48 @@
       href: process-mining-sap-erp.md    
     - name: Transform and map data
       href: process-mining-transform.md
+    - name: Process Intelligence Studio (preview)
+      items:
+      - name: Overview
+        href: process-mining-studio-overview.md
+      - name: Tab management
+        href: process-mining-studio-tab-management.md
+      - name: Dynamic layouting
+        href: process-mining-studio-dynamic-layouting.md
+      - name: Filtering and interactions
+        href:
+        items:
+        - name: Overview
+          href: process-mining-studio-filtering-overview.md
+        - name: Attribute filter
+          href: process-mining-studio-attribute-filter.md        
+        - name: Timeframe filter
+          href: process-mining-studio-timeframe-filter.md
+        - name: Variant filter
+          href: process-mining-studio-variant-filter.md
+        - name: Edge filter
+          href: process-mining-studio-edge-filter.md
+      - name: Cards
+        href:
+        items:
+        - name: Overview
+          href: process-mining-studio-tiles-overview.md
+        - name: KPI
+          href: process-mining-studio-kpi-card.md    
+        - name: Process map
+          href: process-mining-studio-quick-start-guide.md
+        - name: Variant DNA
+          href: process-mining-studio-variant-dna.md
+        - name: Horizontal bar chart
+          href: process-mining-studio-horizontal-bar-chart.md
+        - name: Vertical bar chart
+          href: process-mining-studio-vertical-bar-chart.md
+        - name: Donut chart
+          href: process-mining-studio-donut-chart.md      
+        - name: Line chart
+          href: process-mining-studio-line-chart.md
+        - name: Statistical grid
+          href: process-mining-studio-statistical-grid.md
     - name: Visualize and gain insights in Power BI
       items:
       - name: Process overview
