@@ -985,7 +985,7 @@
     - name: Tab management
       href: process-mining-studio-tab-management.md
     - name: Dynamic layouting
-      href: process-mining-studio-dynamic-layouting.md
+      href: process-mining-studio-dynamic-layout.md
     - name: Filtering and interactions
       href:
       items:
