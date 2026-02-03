@@ -1,14 +1,32 @@
-# Tiles overview
+---
+title: Visualization cards overview in Process Intelligence Studio
+description: Learn about the different types of visualization cards available in Process Intelligence Studio including KPI cards, charts, process maps, and statistical grids.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie
+ms.service: power-automate
+ms.subservice: process-advisor
+ms.topic: overview
+ms.date: 02/03/2026
+ms.author: michalrosik
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.audienceType:
+- enduser
+---
 
-## What are tiles?
+# Cards overview
 
-Tiles, also called cards, are visualization components that display process analytics data on your dashboard. Each tile type is designed to present specific types of insights, from key performance indicators to complex process flows. You can add multiple tiles to a dashboard and arrange them to create a comprehensive view of your process performance.
+## What are cards?
+
+Cards, also called tiles, are visualization components that display process analytics data on your dashboard. Each card type is designed to present specific types of insights, from key performance indicators to complex process flows. You can add multiple cards to a dashboard and arrange them to create a comprehensive view of your process performance.
 
 ## Card types
 
 ### KPI
 
-Displays a single key performance indicator with a numeric value. Use KPI cards to highlight critical metrics such as case counts, average throughput time, or rework rates. These cards provide at-a-glance insights into your most important process measures.
+Displays a single key performance indicator value or a combination of primary and secondary indicator values. Use KPI cards to highlight critical metrics such as case counts, average throughput time, or rework rates. These cards provide at-a-glance insights into your most important process measures.
 
 ### Donut chart
 
@@ -42,13 +60,13 @@ Visualizes process variants in a compact, DNA-like pattern that shows the sequen
 
 To add a card to your dashboard:
 
-1. Click the "Add card" button or panel on your dashboard
-2. Select the card type you want to add from the list of 8 available options
-3. The card will be added to your dashboard in an uncustomized state
-4. Click "Customize card" to configure the card with your specific data and visualization settings
-5. Arrange cards on your dashboard using drag-and-drop to create your preferred layout
+1. Click the **Add card** button on your dashboard in Edit mode
+1. Select the card type you want to add from the list of 8 available options
+1. The card will be added to your dashboard in an uncustomized state
+1. Click "Customize card" to configure the card with your specific data and visualization settings
+1. Arrange cards on your dashboard using drag-and-drop to create your preferred layout
 
-Each card requires customization after being added to display meaningful data. The customization panel allows you to select metrics, apply filters, and configure visualization-specific settings.
+Each card requires customization after being added to display meaningful data. The customization panel allows you to select attributes, metrics and configure visualization-specific settings.
 
 ## Next steps
 

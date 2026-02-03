@@ -1,6 +1,24 @@
+---
+title: Filter by variant in Process Intelligence Studio
+description: Learn how to use the variant filter in Process Intelligence Studio to select and analyze specific process variants in your process mining data.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie
+ms.service: power-automate
+ms.subservice: process-advisor
+ms.topic: overview
+ms.date: 02/03/2026
+ms.author: michalrosik
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.audienceType:
+- enduser
+---
+
 # Filter by Variant
 
-![Variant filter settings panel](media/process-mining-studio/variant-filter-settings.png)
+:::image type="content" source="media/process-mining-studio/variant-filter-settings.png" alt-text="Screenshot of the variant filter settings panel.":::
 
 The variant filter allows you to select specific variants to include in your view or analysis.
 
@@ -18,6 +36,9 @@ Two quick action buttons are available above the variant list:
 
 - **Select all**: Checks all variants in the list, selecting them for filtering
 - **Clear all**: Unchecks all variants, removing all selections
+
+> [!NOTE]
+> Select all is available only on a list with a maximum of 100 values. If the list is longer, use the search functionality to limit the list of values.
 
 ## Checkbox Selection
 

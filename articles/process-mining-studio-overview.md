@@ -1,3 +1,21 @@
+---
+title: Process Intelligence Studio overview
+description: Learn about Process Intelligence Studio, the next-generation interface for process analysis in Power Automate Process Mining with customizable dashboards and interactive visualizations.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie
+ms.service: power-automate
+ms.subservice: process-advisor
+ms.topic: overview
+ms.date: 02/03/2026
+ms.author: michalrosik
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.audienceType:
+- enduser
+---
+
 # Process Intelligence Studio
 
 ## Overview
@@ -8,7 +26,7 @@ Process Intelligence Studio is the next-generation interface for process analysi
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-![Process Intelligence Studio Main Interface](media/process-mining-studio/pi-studio-main.png)
+:::image type="content" source="media/process-mining-studio/pi-studio-main.png" alt-text="Screenshot of the Process Intelligence Studio main interface.":::
 
 As shown in the screenshot above, Process Intelligence Studio provides a comprehensive analytical workspace with multiple components working together to deliver powerful process insights.
 
@@ -26,7 +44,11 @@ Unlike the previous Process Overview, Process Intelligence Studio gives you comp
 
 ## Key Components of the Interface
 
-The main interface (visible in pi-studio-main.png) consists of several key areas:
+The main interface consists of several key areas:
+
+### Active process view
+
+Name of the process and the selected process view. Process views can be defined in the Process Mining desktop application. You can have an independent set of analytical tabs per view. Default view is provided automatically after the creation of the process.
 
 ### Tab Bar
 
@@ -48,30 +70,10 @@ Positioned below the tab bar, the filter bar enables data refinement:
 
 The main canvas displays multiple cards arranged in a grid layout:
 
-**Left Column - KPI Cards:**
-- Cases: 5 / 5330
-- Events: 119 / 66074
-- AVG Throughput Time: 28d 13:21:32
-- MED Throughput Time: 26d 06:17:04
-- Rework Cases: 100.00%
-- Resources Involved: 19
-
-**Center Column - Analytical Cards:**
-- Countries bar chart showing "Falkland Islands" data
-- Variants horizontal bar chart displaying process variants with execution counts
-- Rework Distribution by Resource donut chart with a value of 83
-- Activity by Rework combination chart showing main duration and rework cases
-
-**Right Column - Process Map:**
-- Visual flow diagram showing the complete process structure
-- Circular nodes representing activities
-- Connecting lines showing process paths and transitions
-- Interactive visualization for exploring process flows
-
 ### Control Bar
 
 The top-right section provides key controls:
-- "Last updated November 4 at 12:08 AM" timestamp
+- "Timestamp of the last data refresh
 - "Refresh data" button to update with latest process data
 - "Edit tabs" button for tab management
 - "Edit layout" button to enter customization mode
@@ -81,23 +83,24 @@ The top-right section provides key controls:
 Process Intelligence Studio improves upon the traditional Process Overview by:
 
 1. **Flexibility**: Create multiple tabs with different card configurations instead of a single fixed view
-2. **Personalization**: Arrange and size cards to match your specific analysis workflow
-3. **Organization**: Group related metrics and visualizations together logically
-4. **Efficiency**: Switch between pre-configured analytical perspectives instantly
-5. **Collaboration**: Share specific tabs or entire dashboard configurations with team members
+1. **Personalization**: Arrange and size cards to match your specific analysis workflow
+1. **Organization**: Group related metrics and visualizations together logically
+1. **Efficiency**: Switch between pre-configured analytical perspectives instantly
+1. **Collaboration**: Share specific tabs or entire dashboard configurations with team members
 
 ## Getting Started
 
 To begin using Process Intelligence Studio:
 
 1. Navigate to your process in Power Automate Process Mining
-2. Select the "Process Intelligence Studio" view
-3. Explore the default tabs and cards provided
-4. Use "Edit layout" to customize card arrangements
-5. Create new tabs for specific analytical scenarios
-6. Apply filters to focus on particular process segments
+1. Select the "Process Intelligence Studio" view
+1. Explore the default tabs and cards provided
+1. Use "Edit layout" to customize card arrangements
+1. Create new tabs for specific analytical scenarios
+1. Apply filters to focus on particular process segments
 
 For detailed information on specific features, see:
 - [Tab Management](process-mining-studio-tab-management.md) - Creating and organizing tabs
 - [Dynamic Layouting](process-mining-studio-dynamic-layouting.md) - Customizing card layouts
 - [Filtering Overview](process-mining-studio-filtering-overview.md) - Applying and managing filters
+- [Cards](process-mining-studio-tiles-overview.md) - Cards for visualizing process insights and their configuration options

@@ -1,3 +1,21 @@
+---
+title: Customize layouts in Process Intelligence Studio
+description: Learn how to arrange, resize, and organize visualization cards in Process Intelligence Studio to create customized dashboard layouts for your analytical workflows.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie
+ms.service: power-automate
+ms.subservice: process-advisor
+ms.topic: overview
+ms.date: 02/03/2026
+ms.author: michalrosik
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.audienceType:
+- enduser
+---
+
 # Dynamic Layouting
 
 ## Overview
@@ -9,13 +27,13 @@ Dynamic layouting is the feature that enables you to customize how cards are arr
 To begin customizing your layout:
 
 1. Click the "Edit layout" button in the top-right corner of the interface
-2. The interface enters edit mode, making cards moveable and resizable
-3. The "Add card" panel becomes accessible
-4. Card resize handles become visible on selected cards
+1. The interface enters edit mode, making cards moveable and resizable
+1. The "Add card" panel becomes accessible
+1. Card resize handles become visible on selected cards
 
 ## Adding Cards to Your Layout
 
-![Add Card Panel](media/process-mining-studio/add-card.png)
+:::image type="content" source="media/process-mining-studio/add-card.png" alt-text="Screenshot of the Add Card panel in Process Intelligence Studio.":::
 
 ### Opening the Add Card Panel
 
@@ -26,31 +44,26 @@ In edit layout mode, the Add card panel appears on the right side of the interfa
 The Add card panel shows eight card type options:
 
 1. **KPI**: Display key performance indicators with large numeric values
-2. **Donut chart**: Show proportional data in a circular, segmented format
-3. **Process map**: Visualize the process flow with activities and connections
-4. **Vertical bar chart**: Compare values across categories using vertical bars
-5. **Horizontal bar chart**: Compare values using horizontal bars
-6. **Line chart**: Display trends and changes over time
-7. **Statistical grid**: Present detailed data in a tabular format
-8. **Variant DNA**: Analyze process variant patterns and characteristics
-
-Each card type is represented by:
-- A colored icon depicting the visualization type
-- A text label with the card name
-- A clickable tile area
+1. **Donut chart**: Show proportional data in a circular, segmented format
+1. **Process map**: Visualize the process flow with activities and connections
+1. **Vertical bar chart**: Compare values across categories using vertical bars
+1. **Horizontal bar chart**: Compare values using horizontal bars
+1. **Line chart**: Display trends and changes over time
+1. **Statistical grid**: Present detailed data in a tabular format
+1. **Variant DNA**: Analyze process variant patterns and characteristics
 
 ### Adding a Card
 
 To add a card to your layout:
 
 1. Click on any card type tile in the Add card panel
-2. The card is immediately added to your dashboard
-3. The new card appears in an uncustomized state
-4. You can then configure the card's data and appearance
+1. The card is immediately added to your dashboard
+1. The new card appears in an uncustomized state
+1. You can then configure the card's data and appearance
 
 ## Drag and Drop Positioning
 
-![Drag and Drop Layouting](media/process-mining-studio/drag-and-drop-layouting.png)
+:::image type="content" source="media/process-mining-studio/drag-and-drop-layouting.png" alt-text="Screenshot of drag and drop positioning in edit mode.":::
 
 The screenshot above demonstrates the drag and drop capabilities in edit mode. Notice how:
 
@@ -64,16 +77,16 @@ The screenshot above demonstrates the drag and drop capabilities in edit mode. N
 To reposition a card:
 
 1. In edit layout mode, hover over a card
-2. Click and hold on the card's header or body area
-3. Drag the card to your desired position on the canvas
-4. As you drag, other cards automatically adjust to make room
-5. Release the mouse button to drop the card in its new location
+1. Click and hold on the card's header area
+1. Drag the card to your desired position on the canvas
+1. As you drag, other cards automatically adjust to make room
+1. Release the mouse button to drop the card in its new location
 
 The layout system uses a grid-based arrangement, so cards snap to alignment positions as you move them, ensuring a clean, organized appearance.
 
 ## Resizing Cards
 
-![Card Resize Handles](media/process-mining-studio/card-resize-handles.png)
+:::image type="content" source="media/process-mining-studio/card-resize-handles.png" alt-text="Screenshot of card resize handles in Process Intelligence Studio.":::
 
 ### Understanding Resize Handles
 
@@ -89,23 +102,17 @@ In the screenshot, you can see a "Line chart" card with bright blue circular han
 To change a card's size:
 
 1. Select the card by clicking on it (blue border appears with handles)
-2. Click and hold on any resize handle
-3. Drag the handle to expand or contract the card:
+1. Click and hold on any resize handle
+1. Drag the handle to expand or contract the card:
    - **Corner handles**: Resize both width and height simultaneously
    - **Edge handles**: Resize in one dimension only
-4. Release to apply the new size
+1. Release to apply the new size
 
 Cards have minimum and maximum size constraints to ensure content remains readable and the layout stays functional.
 
 ## Uncustomized Card State
 
-When you first add a card or haven't yet configured it, the card displays in an uncustomized state. Both the drag-and-drop-layouting.png and card-resize-handles.png screenshots show this state, which includes:
-
-- **Illustration**: Colorful chart icons with a magnifying glass
-- **Heading**: "Customize card"
-- **Description**: "Card is not customized yet. Use the customization panel to customize the card and view your data"
-- **Action button**: Blue "Customize card" button
-
+When you first add a card or haven't yet configured it, the card displays in an uncustomized state.
 Click the "Customize card" button to open the configuration panel where you can select data sources, choose metrics, and configure visualization settings specific to that card type.
 
 ## Edit Mode Controls
@@ -113,7 +120,7 @@ Click the "Customize card" button to open the configuration panel where you can 
 While in edit layout mode, you'll see additional controls:
 
 - **Add card panel**: Right-side panel for selecting new cards to add
-- **Add persistent filters**: Button to create filters that apply across all tabs (visible in drag-and-drop-layouting.png)
+- **Add persistent filters**: Button to create filters that apply across all cards and are saved with the tab layout and cannot be removed when viewing the tab 
 - **Card context menus**: Three-dot menus on each card for additional options
 - **Save/Exit controls**: Options to save your layout changes or exit edit mode
 
@@ -127,7 +134,7 @@ While in edit layout mode, you'll see additional controls:
 
 ## Saving Your Layout
 
-Changes made in edit layout mode are typically saved automatically or when you exit edit mode. The exact save behavior depends on your Process Intelligence Studio configuration.
+Changes made in edit layout mode are saved by clicking on the **Save** button when exiting edit mode.
 
 For information about configuring individual card types, see the specific card documentation:
 - [KPI Card](process-mining-studio-kpi-card.md)

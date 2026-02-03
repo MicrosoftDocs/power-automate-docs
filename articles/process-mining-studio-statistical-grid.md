@@ -1,6 +1,24 @@
+---
+title: Use statistical grids in Process Intelligence Studio
+description: Learn how to configure and use statistical grids in Process Intelligence Studio to display process statistics and metrics in a structured tabular format.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie
+ms.service: power-automate
+ms.subservice: process-advisor
+ms.topic: overview
+ms.date: 02/03/2026
+ms.author: michalrosik
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.audienceType:
+- enduser
+---
+
 # Statistical grid
 
-![Statistical grid customization panel](media/process-mining-studio/statistical-grid-customization.png)
+:::image type="content" source="media/process-mining-studio/statistical-grid-customization.png" alt-text="Screenshot of the statistical grid customization panel.":::
 
 The statistical grid displays tabular data in a structured format, making it useful for presenting process statistics and metrics.
 

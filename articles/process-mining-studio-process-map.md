@@ -1,12 +1,30 @@
+---
+title: Use process maps in Process Intelligence Studio
+description: Learn how to configure and use process map visualizations in Process Intelligence Studio to display your process flow with activities, transitions, and performance metrics.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie
+ms.service: power-automate
+ms.subservice: process-advisor
+ms.topic: overview
+ms.date: 02/03/2026
+ms.author: michalrosik
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.audienceType:
+- enduser
+---
+
 # Process map
 
-![Process map customization panel](media/process-mining-studio/process-map-customization.png)
+:::image type="content" source="media/process-mining-studio/process-map-customization.png" alt-text="Screenshot of the process map customization panel.":::
 
 The process map visualizes your process as a flow diagram with activities (nodes) and transitions (edges).
 
 ## Customize a process map
 
-To customize a process map, select the card menu and choose **Customize card**.
+To customize a process map, select the card context menu and choose **Customize card**.
 
 ### Chart type
 

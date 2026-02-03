@@ -1,3 +1,21 @@
+---
+title: Filtering overview in Process Intelligence Studio
+description: Learn how to use persistent and temporary filters in Process Intelligence Studio to narrow down and focus on specific process data during analysis.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie
+ms.service: power-automate
+ms.subservice: process-advisor
+ms.topic: overview
+ms.date: 02/03/2026
+ms.author: michalrosik
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.audienceType:
+- enduser
+---
+
 # Filtering Overview
 
 ## What are Filters?
@@ -51,16 +69,17 @@ When multiple values are selected for a single filter type, they are displayed t
 Dashboard users can add temporary filters to further refine their analysis:
 
 1. Click the **Add Filters** button in the filter bar
-2. Select from the available filter types:
+1. Select from the available filter types:
    - **Timeframe** - Filter by date or time range
    - **Attribute** - Filter by case or event attributes
    - **Variant** - Filter by specific process variants
    - **Edge** - Filter by specific paths or connections in the process
-3. Configure the filter criteria based on the selected type
+1. Configure the filter criteria based on the selected type
 
 Once added, the filter appears as a **blue chip** in the filter bar and is immediately applied to your analysis. This temporary filter works in combination with any existing persistent filters.
 
-**Note**: Temporary filters are not saved and will be lost when your session expires.
+> [!NOTE]
+> Temporary filters are not saved and will be lost when your session expires.
 
 ## How to Remove Temporary Filters
 
@@ -70,4 +89,5 @@ To remove a temporary filter:
 
 The filter is immediately removed, and the analysis view updates accordingly.
 
-**Note**: Only temporary filters (blue chips) can be removed by users. Persistent filters (grey chips) are part of the dashboard design and cannot be removed during analysis. To modify persistent filters, you must edit the dashboard layout.
+> [!NOTE]
+> Only temporary filters (blue chips) can be removed by users. Persistent filters (grey chips) are part of the dashboard design and cannot be removed during analysis. To modify persistent filters, you must edit the dashboard layout.

@@ -1,3 +1,21 @@
+---
+title: Manage tabs in Process Intelligence Studio
+description: Learn how to create, organize, and manage tabs in Process Intelligence Studio to create multiple specialized analytical views within a single process.
+author: rosikm
+contributors:
+  - rosikm
+  - v-aangie
+ms.service: power-automate
+ms.subservice: process-advisor
+ms.topic: overview
+ms.date: 02/03/2026
+ms.author: michalrosik
+ms.reviewer: angieandrews
+ms.custom: bap-template
+search.audienceType:
+- enduser
+---
+
 # Tab Management
 
 ## Overview
@@ -6,12 +24,12 @@ Tabs are the organizational backbone of Process Intelligence Studio, allowing yo
 
 ## The Tab Bar
 
-![Tab Bar](media/process-mining-studio/tabs.png)
+:::image type="content" source="media/process-mining-studio/tabs.png" alt-text="Screenshot of the tab bar in Process Intelligence Studio.":::
 
 The tab bar is located at the top of the Process Intelligence Studio interface, just below the navigation breadcrumb. As shown in the screenshot above, it displays:
 
 - **Tab names**: "Overview", "Case Duration", "Variant Analysis", "Top 3 Countries"
-- **Person icons**: Each tab shows a small person icon indicating visibility settings
+- **Indicator of private/public tab**: Each tab shows a small person icon indicating visibility settings
 - **Active tab indicator**: The currently selected tab (in this case, "Top 3 Countries") is highlighted with a blue underline
 - **Add button**: A "+" button on the far right for creating new tabs
 
@@ -21,15 +39,15 @@ Click any tab name to switch to that view and see its configured cards and visua
 
 ### Using the "+" Button
 
-![Add Tab Dialog](media/process-mining-studio/add-tab-dialog.png)
+:::image type="content" source="media/process-mining-studio/add-tab-dialog.png" alt-text="Screenshot of the Add tab dialog in Process Intelligence Studio.":::
 
 To create a new tab:
 
 1. Click the "+" button at the end of the tab bar
-2. The "Add tab" dialog opens (shown in screenshot above)
-3. Enter a descriptive name in the text field (e.g., "High Throughput Time")
-4. Click the blue "Add tab" button to create the tab
-5. Or click "Cancel" to dismiss the dialog without creating a tab
+1. The "Add tab" dialog opens (shown in screenshot above)
+1. Enter a descriptive name in the text field (e.g., "High Throughput Time")
+1. Click the blue "Add tab" button to create the tab
+1. Or click "Cancel" to dismiss the dialog without creating a tab
 
 The text field includes an X button on the right side to quickly clear your entered text if needed.
 
@@ -37,31 +55,30 @@ Once created, the new tab appears in the tab bar and becomes the active tab, dis
 
 ## Managing Tabs with the Edit Menu
 
-![Tab Context Menu](media/process-mining-studio/tab-context-menu.png)
+:::image type="content" source="media/process-mining-studio/tab-context-menu.png" alt-text="Screenshot of the Edit tabs menu in Process Intelligence Studio.":::
 
 The "Edit tabs" menu provides comprehensive tab management capabilities. Access it by clicking the gear icon button labeled "Edit tabs" in the top-right area of the interface.
 
-### The Edit Tabs Panel
+### The Edit Tabs Context Menu
 
-When opened, the Edit tabs panel displays:
+When opened, the Edit tabs context menu displays:
 
-- **Header**: "Edit tabs" with a gear icon and dropdown arrow
 - **Tab count**: "Tabs (4)" showing the total number of tabs
 - **Tab list**: All tabs in your dashboard with management controls
 - **Add tab button**: "+ Add tab" option at the bottom
 
 ### Tab Context Menu Options
 
-![Tab Context Menu Options](media/process-mining-studio/tab-context-menu.png)
+:::image type="content" source="media/process-mining-studio/tab-context-menu.png" alt-text="Screenshot of the tab context menu options in Process Intelligence Studio.":::
 
 Each tab in the list has a three-dot menu button that opens a context menu with the following options:
 
 1. **Rename tab**: Change the tab's name
-2. **Duplicate tab**: Create a copy of the tab with all its cards and layout
-3. **Delete tab**: Remove the tab from the dashboard
-4. **Make public**: Share the tab with other users (indicated by person icon with lock)
-5. **Move up**: Shift the tab one position to the left in the tab bar
-6. **Move down**: Shift the tab one position to the right in the tab bar
+1. **Duplicate tab**: Create a copy of the tab with all its cards and layout
+1. **Delete tab**: Remove the tab from the dashboard
+1. **Make public**: Share the tab with other users (indicated by person icon with lock)
+1. **Move up**: Shift the tab one position to the left in the tab bar
+1. **Move down**: Shift the tab one position to the right in the tab bar
 
 The context menu appears as a white panel overlaying the tab list, with each option shown with an icon and label.
 
@@ -71,14 +88,14 @@ Tabs can be reordered in two ways:
 
 **Using Move Commands:**
 1. Open the tab's context menu (three dots)
-2. Select "Move up" to move the tab left
-3. Or select "Move down" to move the tab right
+1. Select "Move up" to move the tab left
+1. Or select "Move down" to move the tab right
 
 **Using Drag Handles:**
 1. Locate the six-dot drag handle icon on the left side of any tab in the list
-2. Click and hold the drag handle
-3. Drag the tab to your desired position
-4. Release to drop it in place
+1. Click and hold the drag handle
+1. Drag the tab to your desired position
+1. Release to drop it in place
 
 The tab order in this management panel directly corresponds to the order displayed in the tab bar.
 
@@ -92,7 +109,7 @@ In the tab list, you'll see:
 
 ## Empty Tab State
 
-![Empty Tab](media/process-mining-studio/empty-tab.png)
+:::image type="content" source="media/process-mining-studio/empty-tab.png" alt-text="Screenshot of an empty tab state in Process Intelligence Studio.":::
 
 When you create a new tab or navigate to a tab without any content, Process Intelligence Studio displays an empty state (shown in the screenshot above). This state includes:
 
