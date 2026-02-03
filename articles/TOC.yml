@@ -1007,7 +1007,7 @@
       - name: KPI
         href: process-mining-studio-kpi-card.md    
       - name: Process map
-        href: process-mining-studio-quick-start-guide.md
+        href: process-mining-studio-process-map.md
       - name: Variant DNA
         href: process-mining-studio-variant-dna.md
       - name: Horizontal bar chart
