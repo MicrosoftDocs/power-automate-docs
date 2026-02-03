@@ -101,6 +101,6 @@ To begin using Process Intelligence Studio:
 
 For detailed information on specific features, see:
 - [Tab Management](process-mining-studio-tab-management.md) - Creating and organizing tabs
-- [Dynamic Layouting](process-mining-studio-dynamic-layouting.md) - Customizing card layouts
+- [Dynamic Layouting](process-mining-studio-dynamic-layout.md) - Customizing card layouts
 - [Filtering Overview](process-mining-studio-filtering-overview.md) - Applying and managing filters
 - [Cards](process-mining-studio-tiles-overview.md) - Cards for visualizing process insights and their configuration options
