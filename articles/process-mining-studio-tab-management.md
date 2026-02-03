@@ -120,7 +120,7 @@ When you create a new tab or navigate to a tab without any content, Process Inte
 
 The empty tab screenshot shows the tab bar at the top with tabs "Overview", "Case Duration", "Variant Analysis", "Top 3 Countries", and the newly created "High Throughput Time" tab (which is active and empty).
 
-Click the "Edit layout" button to enter customization mode and begin adding cards to populate your tab. See [Dynamic Layouting](process-mining-studio-dynamic-layouting.md) for details on adding and arranging cards.
+Click the "Edit layout" button to enter customization mode and begin adding cards to populate your tab. See [Dynamic Layouting](process-mining-studio-dynamic-layout.md) for details on adding and arranging cards.
 
 ## Best Practices
 
