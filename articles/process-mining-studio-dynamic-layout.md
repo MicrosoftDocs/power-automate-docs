@@ -63,7 +63,7 @@ To add a card to your layout:
 
 ## Drag and Drop Positioning
 
-:::image type="content" source="media/process-mining-studio/drag-and-drop-layouting.png" alt-text="Screenshot of drag and drop positioning in edit mode.":::
+:::image type="content" source="media/process-mining-studio/drag-and-drop-layout.png" alt-text="Screenshot of drag and drop positioning in edit mode.":::
 
 The screenshot above demonstrates the drag and drop capabilities in edit mode. Notice how:
 
