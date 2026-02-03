@@ -18,7 +18,7 @@ search.audienceType:
 
 # Donut chart
 
-:::image type="content" source="media/process-mining-studio/donut-chart-cuztomization.png" alt-text="Screenshot of the donut chart customization panel.":::
+:::image type="content" source="media/process-mining-studio/donut-chart-customization.png" alt-text="Screenshot of the donut chart customization panel.":::
 
 ## Label
 
