@@ -2,7 +2,11 @@
 
 ## Overview
 
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+
 Process Intelligence Studio is the next-generation interface for process analysis in Power Automate Process Mining. It replaces and enhances the previous Process Overview by providing a fully customizable, tab-based dashboard that enables you to visualize, analyze, and monitor your business processes through interactive cards and visualizations.
+
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ![Process Intelligence Studio Main Interface](media/process-mining-studio/pi-studio-main.png)
 
