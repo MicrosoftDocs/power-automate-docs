@@ -17,6 +17,8 @@ search.audienceType:
 # Scoped variables in Power Automate for desktop
 
 Power Automate for desktop now supports scoped variables. You can declare variables that are accessible only within the specific local subflow where you create them. This enhancement makes desktop flows more modular and improves the maintainability, debugging, and updating processes.
+> [!NOTE]
+> Scoped variables are not supported in desktop flows with PowerFX syntax.
 
 ## Variable scope
 
