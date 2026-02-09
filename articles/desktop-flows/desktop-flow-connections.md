@@ -52,6 +52,12 @@ With this option, you need to provide the machine information and device credent
 
 :::image type="content" source="./media/manage-machines/select-credential.png" alt-text="Select credential.":::
 
+#### Limitations
+
+- When creating a **credential-based connection** from the **Connection** page, the credential picker may not display all available credentials. Workaround: Create the connection **directly from the Power Automate designer** instead of the Connection page and use the **search bar in the credential picker** within the designer to locate and select the desired credential.
+
+
+
 ### Option 2: Enter username and password 
 
 - **Domain and username**: Provide your device account. To use a local account, populate the name of the user (for example, `<MACHINENAME\User>` or `<local\User>`) or a Microsoft Entra ID account, such as `<DOMAIN\User>` or `<username@domain.com>`.
