@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/03/2026
+ms.date: 02/17/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,9 +16,11 @@ search.audienceType:
 - enduser
 ---
 
-# Line chart
+# Use line charts in Process Intelligence Studio
 
-:::image type="content" source="media/process-mining-studio/line-chart-customization.png" alt-text="Screenshot of the line chart customization panel.":::
+Configure and use line charts in Process Intelligence Studio to display process metric trends and changes over time with connected data points.
+
+:::image type="content" source="media/process-mining-studio-line-chart/line-chart-customization.png" alt-text="Screenshot of the line chart customization panel.":::
 
 ## Label
 
@@ -26,13 +28,11 @@ Enter a label for the chart.
 
 ## Data
 
-**The line represent (Y-Axis)**
-Select the metric to display on the Y-axis from the dropdown.
+From the dropdown menu in **The line represent (Y-Axis)** field, select the metric to display on the Y-axis.
 
 ## Customizations
 
-**Limit records to show**
-Enter the number of records to display (default: 100).
+In the **Limit records to show** field, enter the number of records to display. The default is 100.
 
 > [!NOTE]
 > Maximum allowed granularity for the line chart is 1000.
