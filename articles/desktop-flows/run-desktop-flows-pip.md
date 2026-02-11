@@ -21,8 +21,8 @@ ms.custom: sfi-ropc-nochange
 
 # Run desktop flows in picture-in-picture
 
-Power Automate for desktop enables you to run attended desktop flows in Picture‑in‑Picture (PiP) mode. Picture‑in‑Picture runs your automation in a separate desktop environment, allowing you to continue working on your main desktop while the automation runs in parallel.
-Power Automate for desktop supports two Picture‑in‑Picture modes:
+Power Automate for desktop enables you to run attended desktop flows in picture‑in‑picture (PiP) mode. This runs your automation in a separate desktop environment, allowing you to continue working on your main desktop while the automation runs in parallel.
+Power Automate for desktop supports two PiP modes:
 - Child session: Runs the automation in a child session window that mirrors your desktop. This uses the [Child Sessions](/windows/win32/termserv/child-sessions) technology. 
 - Virtual desktop: Runs the automation in a fully isolated virtual desktop environment for improved security and separation.
 
@@ -77,7 +77,7 @@ For virtual desktop session, you may open the virtual desktop by clicking on the
 
 :::image type="content" source="media/run-flow-pip/open-virtual-desktop.png" alt-text="Open the virtual desktop.":::
 
-You may return to the main desktop by clicking the respective button in the virtual desktop. At any moment, you may close the connection to the virtual desktop by clicking the close (X) button, but note that execution will continue unless it ends or you stop it manually.
+You may return to the main desktop by clicking the respective button in the virtual desktop. At any moment, you may close the connection to the virtual desktop by clicking the close (X) button, but note that execution will continue in the virtual desktop unless it is completed or you stop it manually.
 
 > [!TIP]
 > When running multiple flows in picture-in-picture mode one after the other, it's recommended to keep the picture-in-picture window open. This ensures faster flow execution, as user authentication and session loading will only happen once.
@@ -92,7 +92,7 @@ You can trigger a desktop flow in picture-in-picture mode from a cloud flow.
 >
 > - Running flows in picture-in-picture is available only for attended runs.
 
-To trigger a desktop flow in Picture-in-Picture, open the action configuration pane of the **Run a flow built with Power Automate for desktop** cloud action. Set the **Run Mode** field to **Attended**, and in the Advanced parameters section, set the **Attended Mode** field to **Picture-in-picture**.
+To trigger a desktop flow in picture-in-picture, open the action configuration pane of the **Run a flow built with Power Automate for desktop** cloud action. Set the **Run Mode** field to **Attended**, and in the Advanced parameters section, set the **Attended Mode** field to **Picture-in-picture**.
 
 :::image type="content" source="media/run-flow-pip/cloud-pip-parameter.png" alt-text="Set Attended Mode parameter in Run a flow built with Power Automate for desktop cloud action.":::
 
@@ -104,51 +104,51 @@ You can debug a desktop flow in a picture-in-picture session directly through th
 
 To enable the picture-in-picture run mode in the designer, select **Debug** > **Enable picture-in-picture mode** > The mode that you desire.
 
-:::image type="content" source="media/run-flow-pip/designer-run-in-pip.png" alt-text="Enable the Picture-in-Picture mode in the Power Automate designer.":::
+:::image type="content" source="media/run-flow-pip/designer-run-in-pip.png" alt-text="Enable the picture-in-picture mode in the Power Automate designer.":::
 
-## Choosing the right Picture‑in‑Picture mode
+## Choosing the right picture‑in‑picture mode
 
-Power Automate for desktop offers two Picture‑in‑Picture modes that serve different automation needs. Choosing the right mode depends on whether your flow relies on physical UI interaction or prioritizes stability, isolation, and reliability.
+Power Automate for desktop offers two picture‑in‑picture modes that serve different automation needs. Choosing the right mode depends on whether your flow relies on physical UI interaction or prioritizes stability, isolation, and reliability.
 
-### When to use Picture‑in‑Picture child session
-Picture‑in‑Picture child session runs the automation in a full secondary Windows session with its own UI, processes, and application state. This mode behaves like a separate logged‑in desktop and supports mouse, keyboard, selectors, and visible UI interaction.
+### When to use picture‑in‑picture child session
+Picture‑in‑picture child session runs the automation in a full secondary Windows session with its own UI, processes, and application state. This mode behaves like a separate logged‑in desktop and supports mouse, keyboard, selectors, and visible UI interaction.
 
-Use this mode when your flow:
+**Use this mode when your flow:**
 - Relies on physical UI automation (mouse clicks, keyboard input).
 - Automates Office applications, PDFs, or legacy Win32 apps.
 - Depends on the visible state of the application UI.
 - Requires interactive debugging or step‑by‑step validation.
 - Is UI‑heavy or tightly coupled to how apps render on screen.
 
-Why this mode works best:
+**Why this mode works best:**
 - Child session provides the most complete desktop experience, making it ideal for automations that need to “act like a user” and interact directly with applications as they appear on screen.
 
-Things to keep in mind:
+**Things to keep in mind:**
 - Some applications can’t run twice across sessions.
 - Browser profiles must be isolated.
 - Authentication policies may block startup.
 - Applications configured to start automatically with Windows may launch in both sessions.
 
-### When to use Picture‑in‑Picture virtual desktop
-Picture‑in‑Picture virtual desktop runs automation in a virtual desktop within the same user session. Each run starts in a clean, controlled environment that doesn’t depend on the state of the user’s main desktop.
+### When to use picture‑in‑picture virtual desktop
+Picture‑in‑picture virtual desktop runs automation in a virtual desktop within the same user session. Each run starts in a clean, controlled environment that doesn’t depend on the state of the user’s main desktop.
 
-Use this mode when your flow:
+**Use this mode when your flow:**
 - Prioritizes stability, predictability, and compliance.
 - Should not be affected by apps already open on the user’s desktop.
 - Needs a clean environment per run.
 - Uses UI Automation (UIA) or selectors, not physical mouse or keyboard input.
 - Must avoid collisions with applications running in the main session
 
-Why this mode works best:
+**Why this mode works best:**
 - Virtual desktop removes dependency on the user’s desktop state, making runs more consistent and less fragile. This is especially valuable for sensitive, regulated, or reliability‑focused scenarios.
 
-Things to keep in mind:
+**Things to keep in mind:**
 - Physical UI automation isn’t supported.
 - Screenshots and image‑based actions don’t work.
-- Office applications can’t run in both machines, local and virtual.
+- Office applications can’t run simultaneously in both the main session and the picture‑in‑picture virtual desktop.
 - Some identity methods (such as PIN sign‑in or Azure AD join) may not be supported.
 
-## Limitations of Browser automation in picture-in-picture with child session mode
+## Browser automation limitations in picture‑in‑picture child session
 
 Two instances of a web browser (Chrome, Firefox, or Microsoft Edge) can't open concurrently with the same user data folder in both main and picture-in-picture sessions.
 
@@ -200,9 +200,8 @@ When set to **Custom**, you can enter a custom user data folder to be used by th
 - Issues might occur when several VPN clients are used in a picture-in-picture session. The identified issues are related to app sign out, and the VPN client identified so far is Zscaler.
 - If smartcard is used to sign in to Windows, the following policy should be set to *Not Configured* or *Disabled*:
   - `Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection\Do not allow smart card device redirection`
-- Picture-in-Picture currently isn't supported on Microsoft Entra joined cloud machines.
-- Issues may occur on Azure AD joined machines.
+- Picture-in-picture currently isn't supported on Microsoft Entra joined cloud machines.
 - If the error "Windows cannot access the specified device, path, or file. You may not have the appropriate permissions to access the item." appears after launching the picture-in-picture session, it might be caused by the Mobile Devices service. This service isn't compatible with child sessions and can block flow execution. Disabling it resolves the issue.
-- Ensure that you can connect to localhost via RDP. Picture-in-picture relies on Child Sessions technology, which itself depends on RDP. If a certificate validation error occurs during the RDP connection to localhost, picture-in-picture will not work. Ensure that the entire certificate chain is properly validated by the machine. This includes adding all intermediate certificates to the trusted certificate authorities on the local machine.
+- Ensure that you can connect to localhost via RDP. Picture-in-picture relies on child sessions technology, which itself depends on RDP. If a certificate validation error occurs during the RDP connection to localhost, picture-in-picture will not work. Ensure that the entire certificate chain is properly validated by the machine. This includes adding all intermediate certificates to the trusted certificate authorities on the local machine.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
