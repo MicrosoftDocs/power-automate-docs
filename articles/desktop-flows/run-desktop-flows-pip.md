@@ -75,7 +75,7 @@ Enable options **View only** to block user input, and **Always on top** to alway
 
 For virtual desktop session, you may open the virtual desktop by clicking on the button 'Open virtual desktop'.
 
-:::image type="content" source="media/run-flow-pip/open-virtual-desktop.png" alt-text="Enable the picture-in-picture flow property.":::
+:::image type="content" source="media/run-flow-pip/open-virtual-desktop.png" alt-text="Open the virtual desktop.":::
 
 You may return to the main desktop by clicking the respective button in the virtual desktop. At any moment, you may close the connection to the virtual desktop by clicking the close (X) button, but note that execution will continue unless it ends or you stop it manually.
 
@@ -145,7 +145,7 @@ Why this mode works best:
 Things to keep in mind:
 - Physical UI automation isn’t supported.
 - Screenshots and image‑based actions don’t work.
-- Office applications can’t run in both environments.
+- Office applications can’t run in both machines, local and virtual.
 - Some identity methods (such as PIN sign‑in or Azure AD join) may not be supported.
 
 ## Limitations of Browser automation in picture-in-picture with child session mode
