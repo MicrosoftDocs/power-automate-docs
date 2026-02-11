@@ -32,29 +32,16 @@ When a flow uses a Dataverse trigger, Dataverse must notify Power Automate when 
 
 ## Flow and Callback Registration relationship
 
-Each Dataverse trigger in a flow creates **exactly one** Callback Registration record. This record acts as the subscription that tells Dataverse when and how to call Power Automate.
+- Each Dataverse trigger in a flow creates **exactly one** Callback Registration record. This record acts as the subscription that tells Dataverse when and how to call Power Automate.
+- The Callback Registration record is stored in Dataverse as a CallbackRegistration entity and contains metadata about the trigger configuration. This metadata allows Dataverse to subscribe to table events and call the correct flow with the appropriate context.
 
-<!--
-```mermaid
-flowchart LR
-    A[Power Automate Flow] -->|Creates| B[Callback Registration Record]
-    B -->|Monitored by| C[Dataverse Event Pipeline]
-    C -->|Triggers| D[Async Service]
-    D -->|Invokes| E[Power Automate Endpoint]
-```
--->
-![Screenshot that shows power automate flow and cbr relationship.](../media/powerautomate-cbr-flow/flow-cbr-relationship.png)
+![Screenshot that shows power automate flow and cbr relationship.](./media/powerautomate-cbr-flow/flow-cbr-relationship.png)
 
 ### Callback Registration lifecycle
 
 - **Saving or turning on a flow** creates the Callback Registration record.
 - **Turning off or deleting a flow** removes the Callback Registration record.
 - If the Callback Registration is missing or invalid, the flow will not trigger.
-
-## Callback Registration record structure
-
-The Callback Registration record is stored in Dataverse as a `CallbackRegistration` entity and contains metadata about the trigger configuration. This metadata allows Dataverse to subscribe to table events and call the correct flow with the appropriate context.
-
 
 ## Asynchronous execution model
 
@@ -65,19 +52,7 @@ Dataverse triggers run **asynchronously** through the Dataverse async service, n
 - The user's operation completes before the flow executes.
 - Flow execution happens separately in Power Automate's infrastructure.
 
-<!--
-```mermaid
-flowchart TB
-    A[User Action in Dataverse] --> B[Sync Plugin: Create Async Job]
-    B --> C[User Transaction Completes]
-    B --> D[Async Service Processes Job]
-    D --> E{Validation Successful?}
-    E -->|Yes| F[Flow Triggered in Power Automate]
-    E -->|No| G[Job Completes Without Trigger]
-    C -.Independent execution.-> F
-```
--->
-![Screenshot that shows async execution model.](../media/powerautomate-cbr-flow/async-exec-model.png)
+![Screenshot that shows async execution model.](./media/powerautomate-cbr-flow/async-exec-model.png)
 
 ## Monitoring flow execution with System Jobs
 
@@ -104,22 +79,7 @@ If no system job exists for an expected trigger, the Callback Registration may b
 
 ### System Job monitoring diagram
 
-<!--
-```mermaid
-flowchart TB
-    A[Dataverse Event Occurs] --> B[System Job Created]
-    B --> C{Check System Job Status}
-    C -->|Succeeded| D[Flow Triggered Successfully]
-    C -->|Failed| E[Review Error Details]
-    C -->|Not Found| F[Check CBR Configuration]
-    E --> G[Verify CBR owner is active]
-    E --> H[Check filtering attributes]
-    E --> I[Review filter expression]
-    F --> J[Verify flow is turned on]
-    F --> K[Verify CBR record exists]
-```
--->
-![Screenshot that shows power automate flow possible issues.](../media/powerautomate-cbr-flow/flow-possible-issues.png)
+![Screenshot that shows power automate flow possible issues.](./media/powerautomate-cbr-flow/flow-possible-issues.png)
 
 ## Summary
 
