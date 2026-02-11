@@ -26,9 +26,6 @@ Power Automate for desktop supports two Picture‑in‑Picture modes:
 - Child session: Runs the automation in a child session window that mirrors your desktop. This uses the [Child Sessions](/windows/win32/termserv/child-sessions) technology. 
 - Virtual desktop: Runs the automation in a fully isolated virtual desktop environment for improved security and separation.
 
-Picture‑in‑Picture modes overview
-
-
 ## Prerequisites
 
 - Power Automate for desktop needs to be installed on the machine.
@@ -183,19 +180,14 @@ When set to **Custom**, you can enter a custom user data folder to be used by th
 ## Known issues and limitations
 
 ### Limitations of virtual desktop mode
-- UI/Browser automation: Actions requiring direct mouse or keyboard input aren’t supported. Use simulate actions where available.
-- Screenshots: Capturing screenshots isn’t supported. 
-- Image-based automation: Image-based automation actions aren’t supported.
+- Actions of UI/Browser automation requiring direct mouse or keyboard input aren’t supported. Use simulate actions where available.
+- Capturing screenshots in the virtual machine isn’t supported. 
+- Image-based automation actions aren’t supported.
 
 ### Limitations of child session mode
-- Office apps: Office applications can’t be open simultaneously in both parent and child sessions.
-- Credential delegation: Delegating credentials and PIN authentication isn’t supported.
-- Permissions: Some permissions may be unknown or not fully supported.
-- Azure AD joined devices: Issues may occur on Azure AD joined machines.
-
-### General limitations
 - If you're using a PIN to sign in to Windows, PIN authentication only works the first time the picture-in-picture session is opened. After that, it can only be authenticated with username and password.
 - Applications that start on Windows startup are automatically opened within the picture-in-picture session as well. This might cause a conflict between the two sessions, as two instances of an application are running concurrently. To avoid this issue, don't set the applications to start automatically on Windows startup. To resolve this issue, it might be required to sign out and sign in again or restart the machine.
+- Office applications can’t be open simultaneously in both parent and child sessions.
 - Windows Home editions aren't supported.
 - The machine can't be restarted or shut down while the picture-in-picture session is open.
 - The clipboard is shared between the picture-in-picture session and the main session.
@@ -209,6 +201,7 @@ When set to **Custom**, you can enter a custom user data folder to be used by th
 - If smartcard is used to sign in to Windows, the following policy should be set to *Not Configured* or *Disabled*:
   - `Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection\Do not allow smart card device redirection`
 - Picture-in-Picture currently isn't supported on Microsoft Entra joined cloud machines.
+- Issues may occur on Azure AD joined machines.
 - If the error "Windows cannot access the specified device, path, or file. You may not have the appropriate permissions to access the item." appears after launching the picture-in-picture session, it might be caused by the Mobile Devices service. This service isn't compatible with child sessions and can block flow execution. Disabling it resolves the issue.
 - Ensure that you can connect to localhost via RDP. Picture-in-picture relies on Child Sessions technology, which itself depends on RDP. If a certificate validation error occurs during the RDP connection to localhost, picture-in-picture will not work. Ensure that the entire certificate chain is properly validated by the machine. This includes adding all intermediate certificates to the trusted certificate authorities on the local machine.
 
