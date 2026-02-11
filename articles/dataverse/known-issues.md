@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot known issues with Microsoft Dataverse | Microsoft Docs
-description: See a list of known issues and limitations and possible workarounds for Dataverse.  
+description: See a list of known issues and limitations and possible workarounds for Dataverse.
 services: ''
 suite: flow
 documentationcenter: na
@@ -14,7 +14,7 @@ ms.topic: troubleshooting-known-issue
 ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 10/07/2021
-search.audienceType: 
+search.audienceType:
   - maker
 ---
 
@@ -22,14 +22,73 @@ search.audienceType:
 
 Here's a list of known issues with Microsoft Dataverse and Microsoft Power Automate.
 
-- **Localization of metadata** – When you change the Power Automate language and regional locale settings, there's no change to metadata like table and column names. There is no change in the metadata because they display in the language and regional locale settings of your Microsoft Dataverse environment. See [Languages](/powerapps/user/set-personal-options#languages-tab-options) to view your Dataverse settings.
+- **Localization of metadata** – When you change the Power Automate language and regional locale settings, there's no change to metadata like table and column names. There is no change in the metadata because they display in the language and regional locale settings of your Microsoft Dataverse environment. See [Languages](/powerapps/user/set-personal-options#languages-tab-options) to view your Dataverse settings.
 
-- **Working with lookup fields** – When working with the [Add a new row](./create.md) and [Update a row](./update.md) actions, you must enter lookup fields in the following syntax – **entity_unique_name(Item_ID)**.
+- **Working with lookup fields** – When working with the [Add a new row](./create.md) and [Update a row](./update.md) actions, you must enter lookup fields in the following syntax – **entity_unique_name(Item_ID)**.
 
-- **Working with multi-select fields** – When working with the [[Add a new row](./create.md) and [Update a row](./update.md) actions, the user interface allows you to select only one option. To select multiple options, you must switch the input method to **custom**, and then enter a unique name for each option, separating each name with a comma.
+- **Working with multi-select fields** – When working with the [[Add a new row](./create.md) and [Update a row](./update.md) actions, the user interface allows you to select only one option. To select multiple options, you must switch the input method to **custom**, and then enter a unique name for each option, separating each name with a comma.
 
-- **Adding a row with attachments to the Notes table**– When you use an attachment from the dynamic output of a non-Dataverse step, you must use an expression to convert it to a string. For example, when you add a row inside an **Apply to each** loop over the output from the **When a new email arrives** trigger, use *string(triggerOutputs()?['body/attachments'])* instead of *items('Apply_to_each')?['contentBytes']*, as shown in the following image.
+- **Adding a row with attachments to the Notes table**– When you use an attachment from the dynamic output of a non-Dataverse step, you must use an expression to convert it to a string. For example, when you add a row inside an **Apply to each** loop over the output from the **When a new email arrives** trigger, use *string(triggerOutputs()?['body/attachments'])* instead of *items('Apply_to_each')?['contentBytes']*, as shown in the following image.
 
    ![Screenshot that shows a string expression being used.](../media/known-issues-dataverse/string-expression.png)
 
 - **SharePoint and OneDrive document tables don't display inputs when you create a flow** - When you create a flow that triggers on the Dataverse SharePoint documents table or the OneDrive documents table, no data from these tables is passed to the editor and the flow inputs array is empty. This behavior occurs because these tables are virtual and their data isn't stored in Dataverse.
+
+## Flow not triggering
+
+If your Dataverse trigger flow isn't executing when expected, verify the following conditions:
+
+- **Background processing is enabled** – Ensure that background processing is enabled in your environment and that admin-only mode is disabled. Flows depend on the Dataverse asynchronous service, which requires background processing to be active. If admin-only mode is enabled, disable it to allow background operations to run.
+
+- **Filtering attributes are present in the update** – When a Dataverse trigger is configured with filtering attributes (specific columns to monitor), the record update must include at least one of those attributes for the flow to trigger. If the update doesn't modify any of the specified columns, the flow won't execute.
+
+- **Record passes the filter expression** – If your trigger includes a filter expression (row filter conditions), verify that the record meets the criteria. You can check System Jobs in the Power Platform Admin Center to see if the validation failed. Adjust the filter expression or the record data to ensure the condition evaluates to true.
+
+- **Flow is enabled and licensed** – Verify that the flow is turned on and that the owner has the necessary licenses. If a flow has been disabled or the owner's license has expired, the flow won't trigger. Ensure the flow is active and properly licensed.
+
+- **Callback Registration record exists** – Each Dataverse trigger creates a Callback Registration record in Dataverse. If this record is missing or has been deleted, the flow won't trigger.
+
+  To verify that a Callback Registration record exists for your flow, you can query the Dataverse API:
+
+  ```http
+  GET [Organization URI]/api/data/v9.2/callbackregistrations?$select=callbackregistrationid,name,entityname,sdkmessagename,filteringattributes,scope,runas,logicappsversion,createdon,softdeletestatus&$filter=entityname eq '[table_name]' and softdeletestatus eq 0
+  ```
+
+  Replace `[Organization URI]` with your Dataverse organization URL and `[table_name]` with the target table name (for example, `account` or `contact`). If no records are returned, the Callback Registration is missing. Turn the flow off and back on to recreate the Callback Registration record.
+
+## Flow triggering multiple times
+
+If your flow is triggering multiple times for a single record change, investigate the following causes:
+
+- **Duplicate Callback Registration records** – Multiple Callback Registration records for the same flow can cause duplicate triggering. This can occur if the flow was turned off and on multiple times, or if there were errors during the registration process.
+
+  To check for duplicate Callback Registration records, you can query the Dataverse API using the following request:
+
+  ```http
+  GET [Organization URI]/api/data/v9.2/callbackregistrations?$select=callbackregistrationid,name,entityname,sdkmessagename,filteringattributes,scope,runas,logicappsversion,createdon,softdeletestatus&$filter=entityname eq '[table_name]' and softdeletestatus eq 0
+  ```
+
+  Replace `[Organization URI]` with your Dataverse organization URL and `[table_name]` with the target table name (for example, `account` or `contact`).
+
+  To resolve this issue, identify and remove duplicate Callback Registration records. You can delete extra records using the Dataverse API or by turning the flow off and back on, which recreates the registration.
+
+- **Multiple updates to the same record** – If a record is updated multiple times in quick succession, each update can trigger the flow separately. Review the audit history of the record to identify what process or user is causing the multiple updates. Consider implementing logic in your flow to handle duplicate triggers, or adjust the upstream process to reduce unnecessary updates.
+
+## Flow triggering with delays
+
+If your flow triggers correctly but with significant delays, consider the following factors:
+
+- **Normal asynchronous processing delays** – Dataverse triggers run through the asynchronous service, which typically processes jobs within seconds to a few minutes. Some delay is expected and normal.
+
+- **Abnormal delays** – If you experience delays longer than five minutes, check System Jobs in the Power Platform Admin Center to see if there are multiple jobs in a waiting state or if there's a backlog. A backlog indicates high load on the async service, which can be caused by:
+  - High volume of operations in your environment
+  - Other processes consuming async service resources
+  - Temporary platform issues
+
+  Most delays due to backlog are transient and resolve as the async service processes the queue. If delays persist or worsen, contact Microsoft support for assistance.
+
+## Related information
+
+- [Trigger flows when a row is added, modified, or deleted](create-update-delete-trigger.md)
+- [Understanding Callback Registration for Dataverse triggers](powerautomate-cbr-flow.md)
+- [Overview of how to integrate flows with Dataverse](overview.md)
