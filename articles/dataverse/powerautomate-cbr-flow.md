@@ -4,7 +4,7 @@ description: Learn how Callback Registration works with Power Automate Dataverse
 services: ''
 suite: flow
 documentationcenter: na
-author: shivamarora
+author: arorashivam96
 ms.author: shivamarora
 ms.reviewer: angieandrews
 editor: ''
@@ -71,7 +71,7 @@ Because Dataverse triggers run through the asynchronous service, each trigger ex
 
 ### How to check system jobs
 
-1. Open **Power Platform admin center**.
+1. Open [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. Select your **Environment**.
 1. Go to **Settings** > **System Jobs**.
 1. Filter by:

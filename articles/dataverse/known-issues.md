@@ -16,6 +16,9 @@ ms.workload: na
 ms.date: 02/11/2026
 search.audienceType:
   - maker
+contributors:
+  - arorashivam96
+
 ---
 
 # Troubleshoot known issues with Dataverse
@@ -49,15 +52,15 @@ If your Dataverse trigger flow isn't executing when expected, verify the followi
    > [!NOTE]
    > See [Settings](../getting-started.md#settings) to view the user's licences. [Learn more about types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types)
 
-- **Callback Registration record exists** – Each Dataverse trigger creates a [Callback Registration](/power-apps/developer/data-platform/reference/entities/callbackregistration) record in Dataverse. If this record is missing or deleted, the flow doesn't trigger.
+- **Callback registration record exists** – Each Dataverse trigger creates a [Callback Registration](/power-apps/developer/data-platform/reference/entities/callbackregistration) record in Dataverse. If this record is missing or deleted, the flow doesn't trigger.
 
-  To verify that a Callback Registration record exists for your flow, you can query the Dataverse API:
+  To verify that a callback registration record exists for your flow, you can query the Dataverse API:
 
   ```http
   GET [Organization URI]/api/data/v9.2/callbackregistrations?$select=callbackregistrationid,name,entityname,sdkmessagename,filteringattributes,scope,runas,logicappsversion,createdon,softdeletestatus&$filter=entityname eq '[table_name]' and softdeletestatus eq 0
   ```
 
-  Replace `[Organization URI]` with your Dataverse organization URL and `[table_name]` with the target table name (for example, `account` or `contact`). If no records are returned, the Callback Registration is missing. Turn the flow off and back on to recreate the Callback Registration record.
+  Replace `[Organization URI]` with your Dataverse organization URL and `[table_name]` with the target table name (for example, `account` or `contact`). If no records are returned, the callback registration is missing. Turn the flow off and back on to recreate the callback registration record.
 
   > [!NOTE]
   > You can send `GET` requests by using the URL in your browser and view the results. For better experiences, try:
@@ -70,9 +73,9 @@ If your Dataverse trigger flow isn't executing when expected, verify the followi
 
 If your flow triggers multiple times for a single record change, investigate the following causes:
 
-- **Duplicate Callback Registration records** – Multiple Callback Registration records for the same flow can cause duplicate triggering. This problem can occur if you turn the flow off and on multiple times, or if errors occur during the registration process.
+- **Duplicate callback registration records** – Multiple callback registration records for the same flow can cause duplicate triggering. This problem can occur if you turn the flow off and on multiple times, or if errors occur during the registration process.
 
-  To check for duplicate Callback Registration records, you can query the Dataverse API using the following request:
+  To check for duplicate callback registration records, you can query the Dataverse API using the following request:
 
   ```http
   GET [Organization URI]/api/data/v9.2/callbackregistrations?$select=callbackregistrationid,name,entityname,sdkmessagename,filteringattributes,scope,runas,logicappsversion,createdon,softdeletestatus&$filter=entityname eq '[table_name]' and softdeletestatus eq 0
@@ -80,7 +83,7 @@ If your flow triggers multiple times for a single record change, investigate the
 
   Replace `[Organization URI]` with your Dataverse organization URL and `[table_name]` with the target table name (for example, `account` or `contact`).
 
-  To resolve this problem, identify and remove duplicate Callback Registration records. You can delete extra records by using the Dataverse API or by turning the flow off and back on, which recreates the registration.
+  To resolve this problem, identify and remove duplicate callback registration records. You can delete extra records by using the Dataverse API or by turning the flow off and back on, which recreates the registration.
 
 - **Multiple updates to the same record** – If a record is updated multiple times in quick succession, each update can trigger the flow separately. Review the audit history of the record to identify what process or user causes the multiple updates. Consider implementing logic in your flow to handle duplicate triggers, or adjust the upstream process to reduce unnecessary updates.
 
