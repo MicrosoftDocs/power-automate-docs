@@ -1,5 +1,5 @@
 ---
-title: Use process maps in Process Intelligence Studio
+title: Use process maps in Process Intelligence Studio (preview)
 description: Learn how to configure and use process map visualizations in Process Intelligence Studio to display your process flow with activities, transitions, and performance metrics.
 author: rosikm
 contributors:
@@ -16,9 +16,13 @@ search.audienceType:
 - enduser
 ---
 
-# Use process maps in Process Intelligence Studio
+# Use process maps in Process Intelligence Studio (preview)
+
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
 Configure and use process map visualizations in Process Intelligence Studio to display your process flow with activities, transitions, and performance metrics.
+
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 :::image type="content" source="media/process-mining-studio-process-map/process-map-customization.png" alt-text="Screenshot of the process map customization panel.":::
 

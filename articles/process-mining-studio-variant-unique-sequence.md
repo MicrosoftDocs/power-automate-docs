@@ -1,5 +1,5 @@
 ---
-title: Use Variant DNA in Process Intelligence Studio
+title: Use Variant DNA in Process Intelligence Studio (preview)
 description: Learn how to configure and use Variant DNA visualizations in Process Intelligence Studio to analyze process variants in a compact, DNA-like pattern showing activity sequences.
 author: rosikm
 contributors:
@@ -18,7 +18,11 @@ search.audienceType:
 
 # Use Variant DNA in Process Intelligence Studio
 
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+
 Configure and use Variant DNA visualizations in Process Intelligence Studio to analyze process variants in a compact, DNA-like pattern showing activity sequences.
+
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 :::image type="content" source="media/process-mining-studio-variant-unique-sequence/variant-unique-sequence-customization.png" alt-text="Screenshot of the Variant DNA customization panel.":::
 

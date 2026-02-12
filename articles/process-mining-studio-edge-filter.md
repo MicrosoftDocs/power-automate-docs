@@ -1,5 +1,5 @@
 ---
-title: Filter by edge in Process Intelligence Studio
+title: Filter by edge in Process Intelligence Studio (preview)
 description: Learn how to use the edge filter in Process Intelligence Studio to filter cases based on specific transitions between activities in your process flow.
 author: rosikm
 contributors:
@@ -16,9 +16,13 @@ search.audienceType:
 - enduser
 ---
 
-# Filter by edge in Process Intelligence Studio
+# Filter by edge in Process Intelligence Studio (preview)
+
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
 Use the edge filter in Process Intelligence Studio to filter cases based on specific transitions between activities in your process flow.
+
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 :::image type="content" source="media/process-mining-studio-edge-filter/edge-filter-settings.png" alt-text="Screenshot of the edge filter settings panel.":::
 

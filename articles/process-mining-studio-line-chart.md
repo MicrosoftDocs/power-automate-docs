@@ -1,5 +1,5 @@
 ---
-title: Use line charts in Process Intelligence Studio
+title: Use line charts in Process Intelligence Studio (preview)
 description: Learn how to configure and use line charts in Process Intelligence Studio to display process metric trends and changes over time with connected data points.
 author: rosikm
 contributors:
@@ -16,9 +16,13 @@ search.audienceType:
 - enduser
 ---
 
-# Use line charts in Process Intelligence Studio
+# Use line charts in Process Intelligence Studio (preview)
+
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
 Configure and use line charts in Process Intelligence Studio to display process metric trends and changes over time with connected data points.
+
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 :::image type="content" source="media/process-mining-studio-line-chart/line-chart-customization.png" alt-text="Screenshot of the line chart customization panel.":::
 

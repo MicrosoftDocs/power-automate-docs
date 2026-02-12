@@ -984,7 +984,7 @@
       href: process-mining-studio-overview.md
     - name: Tab management
       href: process-mining-studio-tab-management.md
-    - name: Dynamic layouting
+    - name: Dynamic layout mode
       href: process-mining-studio-dynamic-layout.md
     - name: Filtering and interactions
       href:
@@ -1009,7 +1009,7 @@
       - name: Process map
         href: process-mining-studio-process-map.md
       - name: Variant DNA
-        href: process-mining-studio-variant-dna.md
+        href: process-mining-studio-variant-unique-sequence.md
       - name: Horizontal bar chart
         href: process-mining-studio-horizontal-bar-chart.md
       - name: Vertical bar chart

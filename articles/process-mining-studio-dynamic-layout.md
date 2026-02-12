@@ -1,6 +1,6 @@
 ---
-title: Customize layouts in process intelligence studio
-description: Learn how to arrange, resize, and organize visualization cards in process intelligence studio to create customized dashboard layouts for your analytical workflows.
+title: Customize layouts in Process Intelligence Studio (preview)
+description: Learn how to arrange, resize, and organize visualization cards in Process Intelligence Studio to create customized dashboard layouts for your analytical workflows.
 author: rosikm
 contributors:
   - rosikm
@@ -16,11 +16,13 @@ search.audienceType:
 - enduser
 ---
 
-# Customize layouts in process intelligence studio
+# Customize layouts in Process Intelligence Studio (preview)
 
-## Overview
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-Dynamic layout mode is the feature that enables you to customize how cards are arranged, sized, and organized within each tab of *process intelligence studio*. In edit layout mode, you have complete control over your dashboard's visual structure, allowing you to create layouts optimized for specific analytical workflows.
+Dynamic layout mode is the feature that enables you to customize how cards are arranged, sized, and organized within each tab of Process Intelligence Studio. In edit layout mode, you have complete control over your dashboard's visual structure, allowing you to create layouts optimized for specific analytical workflows.
+
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Enter edit layout mode
 
@@ -151,4 +153,4 @@ Learn about configuring individual card types in the following specific card art
 - [Horizontal bar chart](process-mining-studio-horizontal-bar-chart.md)
 - [Line chart](process-mining-studio-line-chart.md)
 - [Statistical grid](process-mining-studio-statistical-grid.md)
-- [Variant DNA](process-mining-studio-variant-dna.md)
+- [Variant DNA](process-mining-studio-variant-unique-sequence.md)

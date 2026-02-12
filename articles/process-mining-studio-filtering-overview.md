@@ -1,5 +1,5 @@
 ---
-title: Filtering overview in Process Intelligence Studio
+title: Filtering overview in Process Intelligence Studio (preview)
 description: Learn how to use persistent and temporary filters in Process Intelligence Studio to narrow down and focus on specific process data during analysis.
 author: rosikm
 contributors:
@@ -16,11 +16,13 @@ search.audienceType:
 - enduser
 ---
 
-# Filtering Overview
+# Filtering Overview (preview)
 
-## What are Filters?
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
 Filters allow you to narrow down and focus on specific data within your process analysis. By applying filters, you can view only the cases, events, and process paths that match your selected criteria.
+
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Types of Filters
 

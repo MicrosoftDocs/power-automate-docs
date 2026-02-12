@@ -1,5 +1,5 @@
 ---
-title: Process Intelligence Studio overview
+title: Process Intelligence Studio overview (preview)
 description: Learn about Process Intelligence Studio, the next-generation interface for process analysis in Power Automate Process Mining with customizable dashboards and interactive visualizations.
 author: rosikm
 contributors:
@@ -16,7 +16,7 @@ search.audienceType:
 - enduser
 ---
 
-# Process Intelligence Studio overview
+# Process Intelligence Studio overview (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 

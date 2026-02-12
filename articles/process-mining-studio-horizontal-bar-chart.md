@@ -1,5 +1,5 @@
 ---
-title: Use horizontal bar charts in Process Intelligence Studio
+title: Use horizontal bar charts in Process Intelligence Studio (preview    )
 description: Learn how to configure and use horizontal bar charts in Process Intelligence Studio to compare process metrics across different categories with horizontal orientation.
 author: rosikm
 contributors:
@@ -16,9 +16,13 @@ search.audienceType:
 - enduser
 ---
 
-# Use horizontal bar charts in Process Intelligence Studio
+# Use horizontal bar charts in Process Intelligence Studio (preview)
+
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
 Configure and use horizontal bar charts in Process Intelligence Studio to compare process metrics across different categories with horizontal orientation.
+
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 :::image type="content" source="media/process-mining-studio-horizontal-bar-chart/horizontal-bar-chart-customization.png" alt-text="Screenshot of the horizontal bar chart customization panel.":::
 
