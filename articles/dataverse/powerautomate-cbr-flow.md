@@ -1,6 +1,6 @@
 ---
 title: Understanding Callback Registration for Dataverse triggers
-description: Learn how Callback Registration works with Power Automate Dataverse triggers and how to monitor flow execution using System Jobs.
+description: Learn how Callback Registration works with Power Automate Dataverse triggers and how to monitor flow execution using system jobs.
 services: ''
 suite: flow
 documentationcenter: na
@@ -18,80 +18,97 @@ search.audienceType:
   - maker
 ---
 
-# Understanding Callback Registration for Dataverse triggers
+# Understanding callback registration for Dataverse triggers
 
-Power Automate flows that use the **Dataverse trigger** (When a row is added, modified, or deleted) rely on the **Callback Registration (CBR)** mechanism in Microsoft Dataverse. This article explains how Dataverse triggers work internally, the relationship between flows and Callback Registration records, and how to monitor flow execution using System Jobs in the Power Platform Admin Center (PPAC).
+Power Automate flows that use the **[When a row is added, modified or deleted](create-update-delete-trigger.md)** trigger rely on the [**Callback Registration (CallbackRegistration)**](/power-apps/developer/data-platform/reference/entities/callbackregistration) table in Microsoft Dataverse. This article explains:
+
+- How Dataverse triggers work internally
+- The relationship between flows and callback registration records
+- How to monitor flow execution using system jobs in the Power Platform admin center.
 
 ## How Dataverse triggers work
 
-When a flow uses a Dataverse trigger, Dataverse must notify Power Automate when a data event occurs. To enable this communication, Dataverse creates a **Callback Registration (CBR)** record that acts as a webhook subscription stored in Dataverse.
+When a flow uses the Dataverse **When a row is added, modified or deleted** trigger, Dataverse must notify Power Automate when a data event occurs. To enable this communication, Dataverse creates a callback registration record that acts as a webhook subscription stored in Dataverse.
 
-### Key concept
+## Flow and callback registration relationship
 
-> A Dataverse trigger is implemented as a **webhook subscription** stored in the Dataverse `CallbackRegistration` table.
+Each Dataverse **When a row is added, modified or deleted** trigger in a flow creates **exactly one** callback registration record. This record acts as the subscription that tells Dataverse when and how to call Power Automate. It contains metadata about the trigger configuration. This metadata allows Dataverse to subscribe to table events and call the correct flow with the appropriate context.
 
-## Flow and Callback Registration relationship
+<!-- 
 
-- Each Dataverse trigger in a flow creates **exactly one** Callback Registration record. This record acts as the subscription that tells Dataverse when and how to call Power Automate.
-- The Callback Registration record is stored in Dataverse as a CallbackRegistration entity and contains metadata about the trigger configuration. This metadata allows Dataverse to subscribe to table events and call the correct flow with the appropriate context.
+TODO: Add mermaid text for diagram in this comment
 
-![Screenshot that shows power automate flow and cbr relationship.](./media/powerautomate-cbr-flow/flow-cbr-relationship.png)
+ -->
 
-### Callback Registration lifecycle
+:::image type="content" source="./media/powerautomate-cbr-flow/flow-cbr-relationship.png" alt-text="Power Automate flow and callback registration relationship diagram.":::
 
-- **Saving or turning on a flow** creates the Callback Registration record.
-- **Turning off or deleting a flow** removes the Callback Registration record.
-- If the Callback Registration is missing or invalid, the flow will not trigger.
+### callback registration lifecycle
+
+- **Saving or turning on a flow** creates the callback registration record.
+- **Turning off or deleting a flow** removes the callback registration record.
+- If the callback registration is missing or invalid, the flow doesn't trigger.
 
 ## Asynchronous execution model
 
-Dataverse triggers run **asynchronously** through the Dataverse async service, not inside the database transaction. This asynchronous model has important implications:
+Dataverse triggers run in the background (asynchronously) through the Dataverse [asynchronous service](/power-apps/developer/data-platform/asynchronous-service), not inside the database transaction. This model has important implications:
 
-- Flow failures **do not roll back** data changes in Dataverse.
-- Trigger execution depends on the async service health and availability.
-- The user's operation completes before the flow executes.
+- Flow failures **don't roll back** data changes in Dataverse.
+- Trigger execution depends on the asynchronous service health and availability.
+- The user's operation finishes before the flow executes.
 - Flow execution happens separately in Power Automate's infrastructure.
 
-![Screenshot that shows async execution model.](./media/powerautomate-cbr-flow/async-exec-model.png)
+<!-- 
 
-## Monitoring flow execution with System Jobs
+TODO: Add mermaid text for diagram in this comment
 
-Because Dataverse triggers run via the async service, each trigger execution creates a **System Job** that can be monitored in the Power Platform Admin Center.
+ -->
 
-### How to check System Jobs
+:::image type="content" source="./media/powerautomate-cbr-flow/async-exec-model.png" alt-text="Asynchronous execution model diagram.":::
 
-1. Open **Power Platform Admin Center**.
-2. Select your **Environment**.
-3. Go to **Settings** > **System Jobs**.
-4. Filter by:
+## Monitoring flow execution by using system jobs
+
+Because Dataverse triggers run through the asynchronous service, each trigger execution creates a **system job** that you can monitor in the Power Platform admin center.
+
+### How to check system jobs
+
+1. Open **Power Platform admin center**.
+1. Select your **Environment**.
+1. Go to **Settings** > **System Jobs**.
+1. Filter by:
    - **Type:** *Callback Registration*
    - **Status:** *Succeeded* or *Failed*
 
-### Why System Jobs matter
+### Why system jobs matter
 
-System Jobs provide the most reliable way to confirm:
+System jobs provide the most reliable way to confirm:
 
 - Whether Dataverse attempted to trigger the flow
 - Whether the trigger failed before reaching Power Automate
 - Details about validation failures or errors
 
-If no system job exists for an expected trigger, the Callback Registration may be missing, invalid, or the event may not have matched the trigger criteria.
+If no system job exists for an expected trigger, the callback registration might be missing or invalid, or the event might not match the trigger criteria.
 
-### System Job monitoring diagram
+### System job monitoring diagram
 
-![Screenshot that shows power automate flow possible issues.](./media/powerautomate-cbr-flow/flow-possible-issues.png)
+<!-- 
+
+TODO: Add mermaid text for diagram in this comment
+
+ -->
+
+:::image type="content" source="./media/powerautomate-cbr-flow/flow-possible-issues.png" alt-text="System job monitoring diagram.":::
 
 ## Summary
 
-The following table summarizes the key concepts of Callback Registration in Power Automate:
+The following table summarizes the key concepts of callback registration in Power Automate:
 
 | Concept | Description |
 | ------- | ----------- |
-| Dataverse trigger | Implemented using Callback Registration webhook subscription |
-| Flow ↔ CBR relationship | **One flow trigger = One CBR record** |
-| Execution model | Asynchronous via Dataverse async service |
-| Transaction isolation | Flow failures do not roll back data changes |
-| Monitoring | Use **System Jobs** in PPAC to verify trigger execution |
+| Dataverse trigger | Implemented using callback registration webhook subscription |
+| Flow ↔ callback registration relationship | **One flow trigger = One callback registration record** |
+| Execution model | In the background via Dataverse asynchronous service |
+| Transaction isolation | Flow failures don't roll back data changes |
+| Monitoring | Use **system jobs** in Power Platform admin center to verify trigger execution |
 
 ## Related information
 
