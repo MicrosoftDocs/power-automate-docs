@@ -42,7 +42,7 @@ TODO: Add mermaid text for diagram in this comment
 
 :::image type="content" source="./media/powerautomate-cbr-flow/flow-cbr-relationship.png" alt-text="Power Automate flow and callback registration relationship diagram.":::
 
-### callback registration lifecycle
+### Callback registration lifecycle
 
 - **Saving or turning on a flow** creates the callback registration record.
 - **Turning off or deleting a flow** removes the callback registration record.
