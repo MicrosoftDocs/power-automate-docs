@@ -1018,8 +1018,8 @@
         href: process-mining-studio-line-chart.md
       - name: Statistical grid
         href: process-mining-studio-statistical-grid.md
-  - name: Process overview
-    href: ./minit/process-overview.md
+    - name: Process overview
+      href: ./minit/process-overview.md
   - name: Object-centric process mining (preview)
     items:
     - name: Overview
