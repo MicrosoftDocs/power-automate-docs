@@ -22,9 +22,13 @@ ms.custom: sfi-ropc-nochange
 # Run desktop flows in picture-in-picture
 
 Power Automate for desktop enables you to run attended desktop flows in picture‑in‑picture (PiP) mode. This runs your automation in a separate desktop environment, allowing you to continue working on your main desktop while the automation runs in parallel.
+
 Power Automate for desktop supports two PiP modes:
 - Child session: Runs the automation in a child session window that mirrors your desktop. This uses the [Child Sessions](/windows/win32/termserv/child-sessions) technology. 
-- Virtual desktop: Runs the automation in a fully isolated virtual desktop environment for improved security and separation.
+- Virtual desktop (Preview): Runs the automation in a fully isolated virtual desktop environment for improved security and separation.
+
+> [!IMPORTANT]
+> Virtual desktop mode is currently in preview.
 
 ## Prerequisites
 
@@ -91,6 +95,7 @@ You can trigger a desktop flow in picture-in-picture mode from a cloud flow.
 > [!IMPORTANT]
 >
 > - Running flows in picture-in-picture is available only for attended runs.
+> - Trigger a desktop flow from a cloud flow in picture-in-picture supports currently only the child session mode.
 
 To trigger a desktop flow in picture-in-picture, open the action configuration pane of the **Run a flow built with Power Automate for desktop** cloud action. Set the **Run Mode** field to **Attended**, and in the Advanced parameters section, set the **Attended Mode** field to **Picture-in-picture**.
 
