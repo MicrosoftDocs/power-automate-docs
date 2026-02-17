@@ -34,13 +34,7 @@ When a flow uses the Dataverse **When a row is added, modified or deleted** trig
 
 Each Dataverse **When a row is added, modified or deleted** trigger in a flow creates **exactly one** callback registration record. This record acts as the subscription that tells Dataverse when and how to call Power Automate. It contains metadata about the trigger configuration. This metadata allows Dataverse to subscribe to table events and call the correct flow with the appropriate context.
 
-<!-- 
-
-TODO: Add mermaid text for diagram in this comment
-
- -->
-
-:::image type="content" source="./media/powerautomate-cbr-flow/flow-cbr-relationship.png" alt-text="Power Automate flow and callback registration relationship diagram.":::
+:::image type="content" source="./media/powerautomate-callbackregistration-flow/flow-callbackregistration-relationship.png" alt-text="Power Automate flow and callback registration relationship diagram.":::
 
 ### Callback registration lifecycle
 
@@ -57,13 +51,7 @@ Dataverse triggers run in the background (asynchronously) through the Dataverse 
 - The user's operation finishes before the flow executes.
 - Flow execution happens separately in Power Automate's infrastructure.
 
-<!-- 
-
-TODO: Add mermaid text for diagram in this comment
-
- -->
-
-:::image type="content" source="./media/powerautomate-cbr-flow/async-exec-model.png" alt-text="Asynchronous execution model diagram.":::
+:::image type="content" source="./media/powerautomate-callbackregistration-flow/async-exec-model.png" alt-text="Asynchronous execution model diagram.":::
 
 ## Monitoring flow execution by using system jobs
 
@@ -90,13 +78,7 @@ If no system job exists for an expected trigger, the callback registration might
 
 ### System job monitoring diagram
 
-<!-- 
-
-TODO: Add mermaid text for diagram in this comment
-
- -->
-
-:::image type="content" source="./media/powerautomate-cbr-flow/flow-possible-issues.png" alt-text="System job monitoring diagram.":::
+:::image type="content" source="./media/powerautomate-callbackregistration-flow/flow-possible-issues.png" alt-text="System job monitoring diagram.":::
 
 ## Summary
 

@@ -41,7 +41,10 @@ Here's a list of known issues with Microsoft Dataverse and Microsoft Power Autom
 
 If your Dataverse trigger flow isn't executing when expected, verify the following conditions:
 
-- **Background processing is enabled** – Ensure that background processing is enabled in your environment and that admin-only mode is disabled. Flows depend on the Dataverse asynchronous service, which requires background processing to be active. If admin-only mode is enabled, disable it to allow background operations to run.
+- **Background processing is enabled** – Ensure that background processing is enabled in your environment and that administration mode is disabled. Flows depend on the Dataverse asynchronous service, which requires background processing to be active. If administration mode is enabled, disable it to allow background operations to run.
+
+   > [!NOTE]
+   > See [Administration mode](https://learn.microsoft.com/en-us/power-platform/admin/admin-mode) to see how to disable/enable background processing and administration mode.
 
 - **Filtering attributes are present in the update** – When the **[When a row is added, modified or deleted](create-update-delete-trigger.md)** trigger is configured with [filtering columns](create-update-delete-trigger.md#filter-columns), the record update must include a value from at least one of those columns for the flow to trigger. If the update doesn't modify any of the specified columns, the flow doesn't execute.
 
@@ -56,11 +59,22 @@ If your Dataverse trigger flow isn't executing when expected, verify the followi
 
   To verify that a callback registration record exists for your flow, you can query the Dataverse API:
 
-  ```http
-  GET [Organization URI]/api/data/v9.2/callbackregistrations?$select=callbackregistrationid,name,entityname,sdkmessagename,filteringattributes,scope,runas,logicappsversion,createdon,softdeletestatus&$filter=entityname eq '[table_name]' and softdeletestatus eq 0
+    ```http
+  GET [Organization URI]/api/data/v9.2/callbackregistrations?$select=callbackregistrationid,name,entityname,sdkmessagename,filteringattributes,scope,createdon,softdeletestatus&$filter=entityname eq '[table_name]' and softdeletestatus eq 0
   ```
 
   Replace `[Organization URI]` with your Dataverse organization URL and `[table_name]` with the target table name (for example, `account` or `contact`). If no records are returned, the callback registration is missing. Turn the flow off and back on to recreate the callback registration record.
+
+  **Column descriptions**
+
+  - **callbackregistrationid** – Unique identifier of the callback registration record.
+  - **name** – Name of the callback registration (typically derived from the Power Automate flow name).
+  - **entityname** – The Dataverse table being monitored (for example, account, contact).
+  - **sdkmessagename** – The event that triggers the flow, such as Create, Update, or Delete.
+  - **filteringattributes** – The specific columns that must change for the trigger to fire (if configured).
+  - **scope** – Defines whose changes trigger the flow (User, Business Unit, or Organization).
+  - **createdon** – Date and time when the callback registration was created.
+  - **softdeletestatus** – Indicates whether the callback registration is inactive (soft-deleted). Only records with value 0 are active.
 
   > [!NOTE]
   > You can send `GET` requests by using the URL in your browser and view the results. For better experiences, try:
@@ -75,21 +89,15 @@ If your flow triggers multiple times for a single record change, investigate the
 
 - **Duplicate callback registration records** – Multiple callback registration records for the same flow can cause duplicate triggering. This problem can occur if you turn the flow off and on multiple times, or if errors occur during the registration process.
 
-  To check for duplicate callback registration records, you can query the Dataverse API using the following request:
-
-  ```http
-  GET [Organization URI]/api/data/v9.2/callbackregistrations?$select=callbackregistrationid,name,entityname,sdkmessagename,filteringattributes,scope,runas,logicappsversion,createdon,softdeletestatus&$filter=entityname eq '[table_name]' and softdeletestatus eq 0
-  ```
-
-  Replace `[Organization URI]` with your Dataverse organization URL and `[table_name]` with the target table name (for example, `account` or `contact`).
+  To check for duplicate callback registration records, you can query the Dataverse API using the same method described in the [Callback registration record exists](#callback-registration-record-exists) section.
 
   To resolve this problem, identify and remove duplicate callback registration records. You can delete extra records by using the Dataverse API or by turning the flow off and back on, which recreates the registration.
 
-- **Multiple updates to the same record** – If a record is updated multiple times in quick succession, each update can trigger the flow separately. Review the audit history of the record to identify what process or user causes the multiple updates. Consider implementing logic in your flow to handle duplicate triggers, or adjust the upstream process to reduce unnecessary updates.
+- **Multiple updates to the same record** – If a record is updated multiple times in quick succession, each update can trigger the flow separately. [Review the audit history](/power-platform/admin/manage-dataverse-auditing#use-the-audit-history-in-a-model-driven-app) of the record to identify what process or user causes the multiple updates. Consider implementing logic in your flow to handle duplicate triggers, or adjust the upstream process to reduce unnecessary updates.
 
 ## Flow triggering with delays
 
-If your flow triggers correctly but with significant delays, consider the following factors:
+This delay represents the time between when a Dataverse row is created or updated and when the asynchronous service processes the event and notifies Power Automate to start the flow. If your flow triggers correctly but with significant delays, consider the following factors:
 
 - **Normal asynchronous processing delays** – Dataverse triggers run through the [asynchronous service](/power-apps/developer/data-platform/asynchronous-service), which typically processes jobs within seconds to a few minutes. Some delay is expected and normal.
 
