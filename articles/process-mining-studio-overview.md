@@ -52,7 +52,7 @@ Name of the process and the selected process view. Process views can be defined 
 
 The tab bar organizes your analytical views. It's located at the top of the interface.
 
-- Multiple tabs such as **Overview**, **Case Duration**, **Variant Analysis**, and **Top 3 Countries**.
+- Multiple tabs such as **Overview**, **Case Duration**, **Variant Analysis**, and **Top 3 Countries/Regions**.
 - Each tab can display a different set of cards and visualizations.
 - A (**+**) button on the right allows you to create more tabs.
 - **Edit tabs** button in the top-right corner provides tab management capabilities.

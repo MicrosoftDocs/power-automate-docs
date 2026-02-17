@@ -32,9 +32,9 @@ The tab bar is located at the top of the Process Intelligence Studio interface. 
 
  The tab bar displays the following features:
 
-- **Tab names**: **Overview**, **Case Duration**, **Variant Analysis**, **Top 3 Countries**.
+- **Tab names**: **Overview**, **Case Duration**, **Variant Analysis**, **Top 3 Countries/Regions**.
 - **Indicator of private/public tab**: Each tab shows a small person icon indicating visibility settings.
-- **Active tab indicator**: The currently selected tab (in this case, **Top 3 Countries**) is highlighted with a blue underline.
+- **Active tab indicator**: The currently selected tab (in this case, **Top 3 Countries/Regions**) is highlighted with a blue underline.
 - **Add button**: A (**+**) button on the right for creating new tabs.
 
 Select a tab name to switch to that view and show its configured cards and visualizations.
@@ -132,13 +132,13 @@ This state includes:
 - **Instructions**: "To get started, add a few cards and customize your dashboard layout in edit mode."
 - **Edit layout button**: A blue button to enter edit mode.
 
-The empty tab screenshot shows the tab bar at the top with tabs **Overview**, **Case Duration**, **Variant Analysis**, **Top 3 Countries**, and the newly created **High Throughput Time** tab. The new tab is active and empty.
+The empty tab screenshot shows the tab bar at the top with tabs **Overview**, **Case Duration**, **Variant Analysis**, **Top 3 Countries/Regions**, and the newly created **High Throughput Time** tab. The new tab is active and empty.
 
 To enter customization mode and begin adding cards to populate your tab, select **Edit layout**. Learn more about adding and arranging cards in [Customize layouts in process intelligence studio (preview)](process-mining-studio-dynamic-layout.md).
 
 ## Best practices
 
-- **Name tabs descriptively**: Use clear names that indicate the analytical purpose (for example, *Top 3 Countries*, *High Throughput Time*).
+- **Name tabs descriptively**: Use clear names that indicate the analytical purpose (for example, *Top 3 Countries/Regions*, *High Throughput Time*).
 - **Organize by audience**: Create separate tabs for different stakeholders (executives, analysts, operations).
 - **Group related metrics**: Keep logically connected visualizations on the same tab.
 - **Use duplication**: Start from an existing tab and modify it rather than building from scratch.
