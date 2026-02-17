@@ -95,10 +95,10 @@ To begin using Process Intelligence Studio, do the following steps.
 
 1. Navigate to your process in Power Automate Process Mining.
 1. Select the Process Intelligence Studio view.
-1. Explore the default tabs and cards provided.
-1. Use Edit layout to customize card arrangements.
-1. Create new tabs for specific analytical scenarios.
-1. Apply filters to focus on particular process segments.
+1. Explore the default [tabs](process-mining-studio-tab-management.md) and [cards](process-mining-studio-tiles-overview.md) provided.
+1. Use [Edit layout](process-mining-studio-dynamic-layout.md) to customize card arrangements.
+1. [Create new tabs](process-mining-studio-tab-management.md#create-new-tabs) for specific analytical scenarios.
+1. [Apply filters](process-mining-studio-filtering-overview.md) to focus on particular process segments.
 
 ## Related information
 
