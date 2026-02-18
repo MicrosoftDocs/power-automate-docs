@@ -144,8 +144,6 @@ Save changes made in edit layout mode by selecting **Save** when exiting edit mo
 
 ## Related information
 
-Learn about configuring individual card types in the following specific card articles:
-
 - [KPI card](process-mining-studio-kpi-card.md)
 - [Process map](process-mining-studio-process-map.md)
 - [Donut chart](process-mining-studio-donut-chart.md)

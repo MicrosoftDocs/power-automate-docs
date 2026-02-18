@@ -1,6 +1,6 @@
 ---
-title: Use Variant DNA in the process intelligence experience (preview)
-description: Learn how to configure and use Variant DNA visualizations in the process intelligence experience to analyze process variants in a compact, DNA-like pattern showing activity sequences.
+title: Use variant DNA in the process intelligence experience (preview)
+description: Learn how to configure and use variant DNA visualizations in the process intelligence experience to analyze process variants in a compact, DNA-like pattern showing activity sequences.
 author: rosikm
 contributors:
   - rosikm
@@ -16,15 +16,15 @@ search.audienceType:
 - enduser
 ---
 
-# Use Variant DNA in the process intelligence experience
+# Use variant DNA in the process intelligence experience (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-Configure and use Variant DNA visualizations in the process intelligence experience to analyze process variants in a compact, DNA-like pattern showing activity sequences.
+Configure and use variant DNA visualizations in the process intelligence experience to analyze process variants in a compact, DNA-like pattern showing activity sequences.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-:::image type="content" source="media/process-mining-studio-variant-unique-sequence/variant-unique-sequence-customization.png" alt-text="Screenshot of the Variant DNA customization panel.":::
+:::image type="content" source="media/process-mining-studio-variant-unique-sequence/variant-unique-sequence-customization.png" alt-text="Screenshot of the 'Variant DNA' customization panel.":::
 
 ## Label
 

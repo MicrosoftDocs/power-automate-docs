@@ -109,7 +109,7 @@ To begin using the process intelligence experience, do the following steps.
 
 ## Related information
 
-- [Tab management](process-mining-studio-tab-management.md): Create and organize tabs
-- [Dynamic layout mode](process-mining-studio-dynamic-layout.md): Customize card layouts
-- [Filtering overview](process-mining-studio-filtering-overview.md): Apply and manage filters
-- [Cards](process-mining-studio-tiles-overview.md): Visualize process insights and configure cards
+- [Create and organize tabs](process-mining-studio-tab-management.md)
+- [Customize card layouts](process-mining-studio-dynamic-layout.md)
+- [Apply and manage filters](process-mining-studio-filtering-overview.md)
+- [Visualize process insights and configure cards](process-mining-studio-tiles-overview.md)
