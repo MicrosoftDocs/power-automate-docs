@@ -1,24 +1,21 @@
 ---
-title: Understanding Callback Registration for Dataverse triggers
-description: Learn how Callback Registration works with Power Automate Dataverse triggers and how to monitor flow execution using system jobs.
-services: ''
+title: Understand callback registration for Dataverse triggers
+description: Learn how callback registration works with Power Automate Dataverse connector triggers and how to monitor flow execution using system jobs.
+#customer intent: As an administrator, I need to understand how the callback registration system works in order to monitor and troubleshoot Dataverse connector triggers.
 suite: flow
 documentationcenter: na
 author: arorashivam96
 ms.author: shivamarora
 ms.reviewer: angieandrews
-editor: ''
-tags: ''
-
 ms.topic: conceptual
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/11/2026
+ms.date: 02/18/2026
 search.audienceType:
   - maker
 ---
 
-# Understanding callback registration for Dataverse triggers
+# Understand callback registration for Dataverse triggers
 
 Power Automate flows that use the **[When a row is added, modified or deleted](create-update-delete-trigger.md)** trigger rely on the [**Callback Registration (CallbackRegistration)**](/power-apps/developer/data-platform/reference/entities/callbackregistration) table in Microsoft Dataverse. This article explains:
 

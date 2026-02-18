@@ -1,41 +1,40 @@
 ---
 title: Troubleshoot known issues with Microsoft Dataverse | Microsoft Docs
 description: See a list of known issues and limitations and possible workarounds for Dataverse.
-services: ''
+#customer intent: As an administrator, I need to understand known issues and possible workarounds when working with the Dataverse connector.
 suite: flow
 documentationcenter: na
 author: v-aangie
 ms.author: Matow
 ms.reviewer: angieandrews
-editor: ''
-tags: ''
-
 ms.topic: troubleshooting-known-issue
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/11/2026
+ms.date: 02/18/2026
 search.audienceType:
   - maker
 contributors:
   - arorashivam96
-
 ---
-
 # Troubleshoot known issues with Dataverse
 
 Here's a list of known issues with Microsoft Dataverse and Microsoft Power Automate.
 
-- **Localization of metadata** – When you change the Power Automate language and regional locale settings, metadata like table and column names don't change. The metadata always displays in the language and regional locale settings of your Microsoft Dataverse environment. See [Languages](/power-apps/user/set-personal-options#languages-tab-options) to view your Dataverse settings.
+## Localization of metadata
 
-- **Working with lookup fields** – When working with the [Add a new row](./create.md) and [Update a row](./update.md) actions, enter lookup fields in the following syntax – **entity_unique_name(Item_ID)**.
+When you change the Power Automate language and regional locale settings, metadata like table and column names don't change. The metadata always displays in the language and regional locale settings of your Microsoft Dataverse environment. See [Languages](/power-apps/user/set-personal-options#languages-tab-options) to view your Dataverse settings.
 
-- **Working with multiselect fields** – When working with the [Add a new row](./create.md) and [Update a row](./update.md) actions, the user interface allows you to select only one option. To select multiple options, switch the input method to **custom**, and then enter a unique name for each option, separating each name with a comma.
+[!INCLUDE [set-complex-fields](includes/set-complex-fields.md)]
 
-- **Adding a row with attachments to the Notes table**– When you use an attachment from the dynamic output of a non-Dataverse step, you must use an expression to convert it to a string. For example, when you add a row inside an **Apply to each** loop over the output from the **When a new email arrives** trigger, use *string(triggerOutputs()?['body/attachments'])* instead of *items('Apply_to_each')?['contentBytes']*, as shown in the following image.
+## Adding a row with attachments to the Notes table
+
+When you use an attachment from the dynamic output of a non-Dataverse step, you must use an expression to convert it to a string. For example, when you add a row inside an **Apply to each** loop over the output from the **When a new email arrives** trigger, use *string(triggerOutputs()?['body/attachments'])* instead of *items('Apply_to_each')?['contentBytes']*, as shown in the following image.
 
    ![Screenshot that shows a string expression being used.](../media/known-issues-dataverse/string-expression.png)
 
-- **SharePoint and OneDrive document tables don't display inputs when you create a flow** - When you create a flow that triggers on the Dataverse SharePoint documents table or the OneDrive documents table, no data from these tables is passed to the editor and the flow inputs array is empty. This behavior occurs because these tables are virtual and their data isn't stored in Dataverse.
+## SharePoint and OneDrive document tables don't display inputs when you create a flow
+
+When you create a flow that triggers on the Dataverse SharePoint documents table or the OneDrive documents table, no data from these tables is passed to the editor and the flow inputs array is empty. This behavior occurs because these tables are virtual and their data isn't stored in Dataverse.
 
 ## Flow not triggering
 
@@ -111,5 +110,5 @@ This delay represents the time between when a Dataverse row is created or update
 ## Related information
 
 - [Trigger flows when a row is added, modified, or deleted](create-update-delete-trigger.md)
-- [Understanding Callback Registration for Dataverse triggers](powerautomate-cbr-flow.md)
+- [Understand callback registration for Dataverse triggers](powerautomate-callbackregistration-flow.md)
 - [Overview of how to integrate flows with Dataverse](overview.md)
