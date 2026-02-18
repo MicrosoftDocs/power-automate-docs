@@ -43,7 +43,7 @@ If your Dataverse trigger flow isn't executing when expected, verify the followi
 - **Background processing is enabled** – Ensure that background processing is enabled in your environment and that administration mode is disabled. Flows depend on the Dataverse asynchronous service, which requires background processing to be active. If administration mode is enabled, disable it to allow background operations to run.
 
    > [!NOTE]
-   > See [Administration mode](https://learn.microsoft.com/en-us/power-platform/admin/admin-mode) to see how to disable/enable background processing and administration mode.
+   > See [Administration mode](/power-platform/admin/admin-mode) to see how to disable or enable background processing and administration mode.
 
 - **Filtering attributes are present in the update** – When the **[When a row is added, modified or deleted](create-update-delete-trigger.md)** trigger is configured with [filtering columns](create-update-delete-trigger.md#filter-columns), the record update must include a value from at least one of those columns for the flow to trigger. If the update doesn't modify any of the specified columns, the flow doesn't execute.
 
@@ -88,11 +88,11 @@ If your flow triggers multiple times for a single record change, investigate the
 
 - **Duplicate callback registration records** – Multiple callback registration records for the same flow can cause duplicate triggering. This problem can occur if you turn the flow off and on multiple times, or if errors occur during the registration process.
 
-  To check for duplicate callback registration records, you can query the Dataverse API using the same method described in the [Callback registration record exists](#callback-registration-record-exists) section.
+  To check for duplicate callback registration records, query the Dataverse API by using the same method described in the [Flow not triggering](#flow-not-triggering) section.
 
   To resolve this problem, identify and remove duplicate callback registration records. You can delete extra records by using the Dataverse API or by turning the flow off and back on, which recreates the registration.
 
-- **Multiple updates to the same record** – If a record is updated multiple times in quick succession, each update can trigger the flow separately. [Review the audit history](/power-platform/admin/manage-dataverse-auditing#use-the-audit-history-in-a-model-driven-app) of the record to identify what process or user causes the multiple updates. Consider implementing logic in your flow to handle duplicate triggers, or adjust the upstream process to reduce unnecessary updates.
+- **Multiple updates to the same record** – If you update a record multiple times in quick succession, each update triggers the flow separately. [Review the audit history](/power-platform/admin/manage-dataverse-auditing#use-the-audit-history-in-a-model-driven-app) of the record to identify what process or user causes the multiple updates. Consider implementing logic in your flow to handle duplicate triggers, or adjust the upstream process to reduce unnecessary updates.
 
 ## Flow triggering with delays
 
