@@ -26,7 +26,7 @@ By using this method, you can always get the correct entity set name.
 
 #### View all entity set names
 
-Another way to quickly check entity set names is to use your browser to navigate to `[Organization URI]/api/data/v9.2/`, where `[Organization URI]` represents the URL for your environment. This URL returns a list of all the entity set names. In the results, use <kbd>Ctrl</kbd>+<kbd>F</kbd> to search for the name you expect to confirm it exists.
+Another way to quickly check entity set names is to use your browser to navigate to `[Organization URI]/api/data/v9.2/`, where `[Organization URI]` represents the URL for your environment. You can find this **Web API endpoint** URL in [**Developer resources** in Power Apps](/power-apps/developer/data-platform/view-download-developer-resources). This URL returns a list of all the entity set names. In the results, use <kbd>Ctrl</kbd>+<kbd>F</kbd> to search for the name you expect to confirm it exists.
 
 ```json
 {
