@@ -1,6 +1,6 @@
 ---
-title: Manage tabs in Process Intelligence Studio (preview)
-description: Learn how to create, organize, and manage tabs in Process Intelligence Studio to create multiple specialized analytical views within a single process.
+title: Manage tabs in the process intelligence experience (preview)
+description: Learn how to create, organize, and manage tabs in the process intelligence experience to create multiple specialized analytical views within a single process.
 author: rosikm
 contributors:
   - rosikm
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/17/2026
+ms.date: 02/18/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,19 +16,19 @@ search.audienceType:
 - enduser
 ---
 
-# Manage tabs in Process Intelligence Studio (preview)
+# Manage tabs in the process intelligence experience (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-Tabs are the organizational backbone of Process Intelligence Studio. They allow you to create multiple specialized views within a single process. Each tab maintains its own collection of cards, visualizations, and layout configuration, making it easy to switch between different analytical perspectives without losing your work.
+Tabs are the organizational backbone of the process intelligence experience. They allow you to create multiple specialized views within a single process. Each tab maintains its own collection of cards, visualizations, and layout configuration, making it easy to switch between different analytical perspectives without losing your work.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Tab bar features
 
-The tab bar is located at the top of the Process Intelligence Studio interface. It's immediately below the navigation breadcrumb.
+The tab bar is located at the top of the process intelligence experiencecess intelligence experience process intelligence experience interface. It's immediately below the navigation breadcrumb.
 
-:::image type="content" source="media/process-mining-studio-tab-management/tabs.png" alt-text="Screenshot of the tab bar in Process Intelligence Studio.":::
+:::image type="content" source="media/process-mining-studio-tab-management/tabs.png" alt-text="Screenshot of the tab bar in the process intelligence experience.":::
 
  The tab bar displays the following features:
 
@@ -45,7 +45,7 @@ Create a new tab you want to appear in the tab bar. It becomes the active tab. T
 
 ### Use the (+) button
 
-:::image type="content" source="media/process-mining-studio-tab-management/add-tab-dialog.png" alt-text="Screenshot of the Add tab dialog in Process Intelligence Studio.":::
+:::image type="content" source="media/process-mining-studio-tab-management/add-tab-dialog.png" alt-text="Screenshot of the Add tab dialog in the process intelligence experience.":::
 
 To create a new tab:
 
@@ -65,7 +65,7 @@ To create a new tab:
 
 The **Edit tabs** menu provides comprehensive tab management capabilities. Access it by selecting the gear icon labeled **Edit tabs** in the top-right area of the interface.
 
-:::image type="content" source="media/process-mining-studio-tab-management/tab-management-menu.png" alt-text="Screenshot of the Edit tabs menu in Process Intelligence Studio.":::
+:::image type="content" source="media/process-mining-studio-tab-management/tab-management-menu.png" alt-text="Screenshot of the Edit tabs menu in the process intelligence experience.":::
 
 ### The Edit tabs context menu
 
@@ -79,7 +79,7 @@ The **Edit tabs** context menu displays:
 
 The context menu appears as a white panel overlaying the tab list. Each option shows an icon next to the label.
 
-:::image type="content" source="media/process-mining-studio-tab-management/tab-context-menu.png" alt-text="Screenshot of the tab context menu options in Process Intelligence Studio.":::
+:::image type="content" source="media/process-mining-studio-tab-management/tab-context-menu.png" alt-text="Screenshot of the tab context menu options in the process intelligence experience.":::
 
 Each tab in the list has an ellipsis (**...**) that opens a context menu with the following options:
 
@@ -121,9 +121,9 @@ In the tab list, the following displays:
 
 ## Empty tab state
 
-When you create a new tab or navigate to a tab without any content, Process Intelligence Studio displays an empty state.
+When you create a new tab or navigate to a tab without any content, the process intelligence experience displays an empty state.
 
-:::image type="content" source="media/process-mining-studio-tab-management/empty-tab.png" alt-text="Screenshot of an empty tab state in Process Intelligence Studio.":::
+:::image type="content" source="media/process-mining-studio-tab-management/empty-tab.png" alt-text="Screenshot of an empty tab state in the process intelligence experience.":::
 
 This state includes:
 

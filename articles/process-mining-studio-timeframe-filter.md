@@ -1,6 +1,6 @@
 ---
-title: Filter by timeframe in Process Intelligence Studio (preview)
-description: Learn how to use the timeframe filter in Process Intelligence Studio to filter process data by date and time ranges using preset or custom time periods.
+title: Filter by timeframe in the process intelligence experience (preview)
+description: Learn how to use the timeframe filter in the process intelligence experience to filter process data by date and time ranges using preset or custom time periods.
 author: rosikm
 contributors:
   - rosikm
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/17/2026
+ms.date: 02/18/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,7 +16,7 @@ search.audienceType:
 - enduser
 ---
 
-# Filter by timeframe in Process Intelligence Studio (preview)
+# Filter by timeframe in the process intelligence experience (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 

@@ -1,6 +1,6 @@
 ---
-title: Process Intelligence Studio overview (preview)
-description: Learn about Process Intelligence Studio, the next-generation interface for process analysis in Power Automate Process Mining with customizable dashboards and interactive visualizations.
+title: Process intelligence experience overview (preview)
+description: Learn about the process intelligence experience, the next-generation interface for process analysis in Power Automate Process Mining with customizable dashboards and interactive visualizations.
 author: rosikm
 contributors:
   - rosikm
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/17/2026
+ms.date: 02/18/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,21 +16,21 @@ search.audienceType:
 - enduser
 ---
 
-# Process Intelligence Studio overview (preview)
+# Process intelligence experience overview (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-Process Intelligence Studio is the next-generation interface for process analysis in Power Automate Process Mining. It provides a fully customizable, tab-based dashboard that enables you to visualize, analyze, and monitor your business processes through interactive cards and visualizations. It extends and enhances the previous Process overview.
+The new *process intelligence experience* is the next-generation interface for process analysis in Power Automate Process Mining. It delivers a comprehensive, customizable dashboard for exploring process intelligence insights. The new experience enhances the previous process overview.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
-As shown in the following screenshot, Process Intelligence Studio provides a comprehensive analytical workspace with multiple components working together to deliver powerful process insights.
+As shown in the following screenshot, the process intelligence experience provides a comprehensive analytical workspace with multiple components working together.
 
-:::image type="content" source="media/process-mining-studio-overview/process-intelligence-studio-main.png" alt-text="Screenshot of the Process Intelligence Studio main interface.":::
+:::image type="content" source="media/process-mining-studio-overview/process-intelligence-studio-main.png" alt-text="Screenshot of the process intelligence experience main interface.":::
 
-## Benefits of Process Intelligence Studio
+## Benefits of the process intelligence experience
 
-Process Intelligence Studio transforms how you interact with process mining data by offering:
+The process intelligence experience transforms how you interact with process mining data by offering:
 
 - A flexible, card-based dashboard system that adapts to your analysis needs
 - Multiple tabs for organizing different analytical perspectives
@@ -38,7 +38,7 @@ Process Intelligence Studio transforms how you interact with process mining data
 - Real-time data refresh to ensure you're working with current information
 - Customizable layouts where you can arrange, resize, and configure cards
 
-Unlike the previous Process Overview, Process Intelligence Studio gives you complete control over what you see and how you see it, enabling you to create personalized analytical workspaces for different stakeholders and use cases.
+Unlike the previous process overview, the process intelligence experience gives you complete control over what you see and how you see it, enabling you to create personalized analytical workspaces for different stakeholders and use cases.
 
 ## Key components of the interface
 
@@ -79,9 +79,9 @@ The top-right section provides key controls.
 - **Edit tabs** button for tab management.
 - **Edit layout** button to enter customization mode.
 
-## How Process Intelligence Studio enhances process analysis
+## How the process intelligence experience enhances process analysis
 
-Process Intelligence Studio improves upon the traditional process overview with these key enhancements:
+The process intelligence experience improves upon the traditional process overview with these key enhancements:
 
 - **Flexibility**: Create multiple tabs with different card configurations instead of a single fixed view.
 - **Personalization**: Arrange and size cards to match your specific analysis workflow.
@@ -91,7 +91,7 @@ Process Intelligence Studio improves upon the traditional process overview with 
 
 ## Get started
 
-To begin using Process Intelligence Studio, do the following steps.
+To begin using the process intelligence experience, do the following steps.
 
 1. Navigate to your process in Power Automate Process Mining:
    1. Sign in to [Power Automate](https://make.powerautomate.com/).
@@ -100,7 +100,7 @@ To begin using Process Intelligence Studio, do the following steps.
 
         If your process doesn't appear, select **All processes** and select a process from the list.
 
-        :::image type="content" source="media/process-mining-studio-overview/all-processes.png" alt-text="Screenshot of the Process Intelligence Studio main interface.":::
+        :::image type="content" source="media/process-mining-studio-overview/all-processes.png" alt-text="Screenshot of how to select your process with the process intelligence experience.":::
 
 1. Explore the default [tabs](process-mining-studio-tab-management.md) and [cards](process-mining-studio-tiles-overview.md) provided.
 1. Use [Edit layout](process-mining-studio-dynamic-layout.md) to customize card arrangements.

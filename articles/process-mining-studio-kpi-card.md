@@ -1,6 +1,6 @@
 ---
-title: Use KPI (key performance indicator) cards in Process Intelligence Studio (preview)
-description: Learn how to configure and use KPI cards in Process Intelligence Studio to display key performance indicators with large numeric values and optional secondary metrics.
+title: Use KPI (key performance indicator) cards in the process intelligence experience (preview)
+description: Learn how to configure and use KPI cards in the process intelligence experience to display key performance indicators with large numeric values and optional secondary metrics.
 author: rosikm
 contributors:
   - rosikm
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/17/2026
+ms.date: 02/18/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,11 +16,11 @@ search.audienceType:
 - enduser
 ---
 
-# Use KPI (key performance indicator) cards in Process Intelligence Studio (preview)
+# Use KPI (key performance indicator) cards in the process intelligence experience (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-Configure and use KPI (key perforemance indicator) cards in Process Intelligence Studio to display key performance indicators with large numeric values and optional secondary metrics.
+Configure and use KPI (key perforemance indicator) cards in the process intelligence experience to display key performance indicators with large numeric values and optional secondary metrics.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 

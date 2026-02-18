@@ -1,6 +1,6 @@
 ---
-title: Use Variant DNA in Process Intelligence Studio (preview)
-description: Learn how to configure and use Variant DNA visualizations in Process Intelligence Studio to analyze process variants in a compact, DNA-like pattern showing activity sequences.
+title: Use Variant DNA in the process intelligence experience (preview)
+description: Learn how to configure and use Variant DNA visualizations in the process intelligence experience to analyze process variants in a compact, DNA-like pattern showing activity sequences.
 author: rosikm
 contributors:
   - rosikm
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/17/2026
+ms.date: 02/18/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,11 +16,11 @@ search.audienceType:
 - enduser
 ---
 
-# Use Variant DNA in Process Intelligence Studio
+# Use Variant DNA in the process intelligence experience
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-Configure and use Variant DNA visualizations in Process Intelligence Studio to analyze process variants in a compact, DNA-like pattern showing activity sequences.
+Configure and use Variant DNA visualizations in the process intelligence experience to analyze process variants in a compact, DNA-like pattern showing activity sequences.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 

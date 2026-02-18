@@ -1,6 +1,6 @@
 ---
-title: Filter by edge in Process Intelligence Studio (preview)
-description: Learn how to use the edge filter in Process Intelligence Studio to filter cases based on specific transitions between activities in your process flow.
+title: Filter by edge in the process intelligence experience (preview)
+description: Learn how to use the edge filter in the process intelligence experience to filter cases based on specific transitions between activities in your process flow.
 author: rosikm
 contributors:
   - rosikm
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/17/2026
+ms.date: 02/18/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,11 +16,11 @@ search.audienceType:
 - enduser
 ---
 
-# Filter by edge in Process Intelligence Studio (preview)
+# Filter by edge in the process intelligence experience (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-Use the edge filter in Process Intelligence Studio to filter cases based on specific transitions between activities in your process flow.
+Use the edge filter in the process intelligence experience to filter cases based on specific transitions between activities in your process flow.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 

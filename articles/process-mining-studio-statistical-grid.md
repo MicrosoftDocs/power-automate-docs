@@ -1,6 +1,6 @@
 ---
-title: Use statistical grids in Process Intelligence Studio (preview)
-description: Learn how to configure and use statistical grids in Process Intelligence Studio to display process statistics and metrics in a structured tabular format.
+title: Use statistical grids in the process intelligence experience (preview)
+description: Learn how to configure and use statistical grids in the process intelligence experience to display process statistics and metrics in a structured tabular format.
 author: rosikm
 contributors:
   - rosikm
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/17/2026
+ms.date: 02/18/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,11 +16,11 @@ search.audienceType:
 - enduser
 ---
 
-# Use statistical grids in Process Intelligence Studio (preview)
+# Use statistical grids in the process intelligence experience (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-Configure and use statistical grids in Process Intelligence Studio to display process statistics and metrics in a structured tabular format.
+Configure and use statistical grids in the process intelligence experience to display process statistics and metrics in a structured tabular format.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 

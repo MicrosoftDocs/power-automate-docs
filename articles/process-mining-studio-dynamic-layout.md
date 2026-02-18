@@ -1,6 +1,6 @@
 ---
-title: Customize layouts in Process Intelligence Studio (preview)
-description: Learn how to arrange, resize, and organize visualization cards in Process Intelligence Studio to create customized dashboard layouts for your analytical workflows.
+title: Customize layouts in the process intelligence experience (preview)
+description: Learn how to arrange, resize, and organize visualization cards in the process intelligence experience to create customized dashboard layouts for your analytical workflows.
 author: rosikm
 contributors:
   - rosikm
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/17/2026
+ms.date: 02/18/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,11 +16,11 @@ search.audienceType:
 - enduser
 ---
 
-# Customize layouts in Process Intelligence Studio (preview)
+# Customize layouts in the process intelligence experience (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-Dynamic layout mode is the feature that enables you to customize how cards are arranged, sized, and organized within each tab of Process Intelligence Studio. In edit layout mode, you have complete control over your dashboard's visual structure, allowing you to create layouts optimized for specific analytical workflows.
+Dynamic layout mode is the feature that enables you to customize how cards are arranged, sized, and organized within each tab of the process intelligence experience. In edit layout mode, you have complete control over your dashboard's visual structure, allowing you to create layouts optimized for specific analytical workflows.
 
 [!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
@@ -37,7 +37,7 @@ In edit layout mode, the **Add card** panel appears on the right side of the int
 
 The following screenshot is an example of the **Add card** panel.
 
-:::image type="content" source="media/process-mining-studio-dynamic-layout/add-card.png" alt-text="Screenshot of the Add Card panel in Process Intelligence Studio.":::
+:::image type="content" source="media/process-mining-studio-dynamic-layout/add-card.png" alt-text="Screenshot of the Add Card panel in the process intelligence experience.":::
 
 ### Card types
 
@@ -93,7 +93,7 @@ To reposition a card:
 
 When you select a card in edit mode, it displays a blue border with circular *resize handles*, as shown in the following screenshot.
 
-:::image type="content" source="media/process-mining-studio-dynamic-layout/card-resize-handles.png" alt-text="Screenshot of card resize handles in Process Intelligence Studio.":::
+:::image type="content" source="media/process-mining-studio-dynamic-layout/card-resize-handles.png" alt-text="Screenshot of card resize handles in the process intelligence experience.":::
 
 The resize handles appear in the following positions around the card's perimeter:
 

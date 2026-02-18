@@ -42,7 +42,7 @@ The sequence filter doesn't take the waiting time into account. It takes into ac
 
     If you leave the setting as **[the same/different]**, this condition won't be taken into consideration.
 
-1. From the the **values of attribute** dropdown menu, select which event attribute should have the same/different value.
+1. From the **values of attribute** dropdown menu, select which event attribute should have the same/different value.
 
 1. From the **and the time between the events is** dropdown menu, select the time span between the first and second event.
 

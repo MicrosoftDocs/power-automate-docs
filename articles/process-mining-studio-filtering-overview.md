@@ -1,6 +1,6 @@
 ---
-title: Filtering overview in Process Intelligence Studio (preview)
-description: Learn how to use persistent and temporary filters in Process Intelligence Studio to narrow down and focus on specific process data during analysis.
+title: Filtering overview in the process intelligence experience (preview)
+description: Learn how to use persistent and temporary filters in the process intelligence experience to narrow down and focus on specific process data during analysis.
 author: rosikm
 contributors:
   - rosikm
@@ -26,7 +26,7 @@ Filters allow you to narrow down and focus on specific data within your process 
 
 ## Types of filters
 
-There are two types of filters in Process Intelligence Studio:
+There are two types of filters in the process intelligence experience:
 
 ### Persistent filters (grey)
 

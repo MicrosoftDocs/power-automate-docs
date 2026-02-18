@@ -1,6 +1,6 @@
 ---
-title: Visualization cards overview in Process Intelligence Studio (preview)
-description: Learn about the different types of visualization cards available in Process Intelligence Studio including KPI cards, charts, process maps, and statistical grids.
+title: Visualization cards overview in the process intelligence experience (preview)
+description: Learn about the different types of visualization cards available in the process intelligence experience including KPI cards, charts, process maps, and statistical grids.
 author: rosikm
 contributors:
   - rosikm
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/17/2026
+ms.date: 02/18/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,7 +16,7 @@ search.audienceType:
 - enduser
 ---
 
-# Visualization cards overview in Process Intelligence Studio (preview)
+# Visualization cards overview in the process intelligence experience (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 

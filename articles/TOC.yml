@@ -976,7 +976,7 @@
       href: process-mining-data-source.md
     - name: Set up millisecond support when ingesting data with dataflows
       href: import-with-milliseconds.md
-  - name: Process Intelligence Studio (preview)
+  - name: Process intelligence experience (preview)
     items:
     - name: Overview
       href: process-mining-studio-overview.md
