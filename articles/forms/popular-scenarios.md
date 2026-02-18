@@ -168,7 +168,7 @@ In this example, you create a flow from blank. Continuing with the scenario from
 # [New designer](#tab/new-designer)
 
 1. Create an Excel sheet if it doesn't already exist.
-1. From within the designer, simply ask copilot to create your flow by typing the the following prompt:
+1. From within the designer, simply ask copilot to create your flow by typing the following prompt:
 
     **If approved, add the forms response to excel sheet**
 
