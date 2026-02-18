@@ -46,7 +46,7 @@ This article presents all the prerequisites and limitations you should consider 
   - GPU acceleration
   - .NET Framework 4.7.2 or later
 
-- A device that runs Windows 10 (Home, Pro, Enterprise), Windows 11 (Home, Pro, Enterprise), Windows Server 2016, Windows Server 2019, or Windows Server 2022 (devices with ARM processors aren't supported)
+- A device that runs Windows 10 (Home, Pro, Enterprise), Windows 11 (Home, Pro, Enterprise), Windows Server 2016, Windows Server 2019, Windows Server 2022, or Windows Server 2025 (devices with ARM processors aren't supported)
 
     If your device runs Windows 10 Home or Windows 11 Home, you can use Power Automate to create desktop flows and monitor them on the [Power Automate portal](https://make.powerautomate.com). However, you can't trigger desktop flows from the cloud.
   
