@@ -46,6 +46,8 @@ To use safe stop, two components must be configured:
 
 - Safe Stop must be triggered before the **If safe stop is requested** action is reached in the flow. If the action is bypassed or not yet executed, the stop request doesn't take effect until the next checkpoint.
 - This feature isn't a pause or resume mechanism. Once triggered and executed, the flow stops as defined.
+- You can only use Safe Stop in the parent desktop flows. If you attempt to request a Safe Stop from a child desktop flow, you will get an error indicating that the run was not found.
+- The user must have permissions to run a flow to be able to request a Safe Stop.
 
 ## Related articles
 
