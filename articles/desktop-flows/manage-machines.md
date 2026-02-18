@@ -199,7 +199,7 @@ The **Receive user session related recommendations (preview)** setting sends orc
 |Action|Details|
 |-------|---|
 | Disconnect users | Disconnect the users of the selected active runs. |
-| Flow details | Opens the flow details page of the desktop flow listed on the the selected run. |
+| Flow details | Opens the flow details page of the desktop flow listed on the selected run. |
 | Run details | Opens the desktop flow run details page of the desktop flow listed on the selected run. |
 | Refresh | Refreshes the active run list. |
 
