@@ -16,7 +16,7 @@ search.audienceType:
 
 # Use Markdown language in Power Automate approval requests
 
-This article shows you how to use [Markdown](https://en.wikipedia.org/wiki/Markdown syntax to add rich formatting to your approval requests.
+This article shows you how to use [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax to add rich formatting to your approval requests.
 
 > [!IMPORTANT]
 >
