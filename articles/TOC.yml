@@ -322,6 +322,8 @@
         displayName: Use flows with Microsoft Dataverse
       - name: Trigger flows when a row changes
         href: ./dataverse/create-update-delete-trigger.md
+      - name: Understand callback registration for Dataverse triggers
+        href: ./dataverse/powerautomate-callbackregistration-flow.md
       - name: Trigger flows with actions
         href: ./dataverse/action-trigger.md
       - name: Use a flow to add a row
