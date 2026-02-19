@@ -13,7 +13,7 @@ tags: ''
 ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 03/06/2021
+ms.date: 02/18/2026
 search.audienceType: 
   - maker
 ---
@@ -47,8 +47,10 @@ Follow these steps to add a new account in Dataverse when you receive an email t
 
    ![Dynamic content.](../media/add-row/dynamic-content.png "Dynamic content")
 
+[!INCLUDE [set-complex-fields](includes/set-complex-fields.md)]
+
 ## Advanced options
 
 ### Return Full Metadata
 
-This setting controls whether to load all columns from the table or just the essential ones for better performance. If you don’t set it, full metadata will still be returned automatically if your flow uses dynamic content or expressions that need it.
+This setting controls whether to load all columns from the table or just the essential ones for better performance. If you don't set it, full metadata will still be returned automatically if your flow uses dynamic content or expressions that need it.
