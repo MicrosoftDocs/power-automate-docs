@@ -5,7 +5,7 @@ author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: concept-article
-ms.date: 06/27/2025
+ms.date: 02/19/2026
 ms.author: chrisj
 ms.reviewer: matp
 contributors:
@@ -274,7 +274,7 @@ This section presents all the available data types that don't belong to any of t
 
 ### Credentials
 
-- **Credential** – Contains a credential retrieved through the **Get credential (preview)** action.
+- **Credential** – Contains a credential retrieved through the **Get credential** action.
 
 [Credential data type properties](datatype-properties.md#credential)
 
