@@ -13,7 +13,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
 ms.date: 07/18/2025
-ms.author: kewaiss
+ms.author: matow
 search.audienceType: 
   - flowmaker
   - enduser
