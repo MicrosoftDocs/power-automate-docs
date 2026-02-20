@@ -12,7 +12,7 @@ ms.subservice: cloud-flow
 ms.topic: get-started
 ms.date: 01/16/2026
 ms.update-cycle: 180-days
-ms.author: kewaiss
+ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

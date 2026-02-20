@@ -12,7 +12,7 @@ ms.service: power-automate
 ms.subservice: teams
 ms.topic: how-to
 ms.date: 11/30/2020
-ms.author: kewaiss
+ms.author: matow
 ms.reviewer: angieandrews
 ---
 
