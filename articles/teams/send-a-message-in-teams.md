@@ -1,6 +1,6 @@
 ---
 title: Send a message in Teams using Power Automate
-description: Learn the different ways in which you can send a message in Microsoft Teams
+description: Learn the different ways in which you can send a message in Microsoft Teams.
 author: kisubedi
 contributors:
   - kisubedi
@@ -12,7 +12,7 @@ ms.author: matow
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.date: 01/27/2026
+ms.date: 02/23/2026
 ms.topic: how-to
 ---
 
@@ -75,6 +75,26 @@ To send a message as the Flow bot in a Teams channel, follow these steps.
 
     :::image type="content" source="../media/send-a-message-in-teams/flow-bot-channel-new-designer.png" alt-text="Screenshot showing 'Post a message in a chat or channel as the Flow bot.":::
 
+## Post a message as a Microsoft Copilot Studio agent directly to a user
+
+When using a Microsoft Copilot Studio agent, you can send a message directly to a user on Teams through that agent. This is useful in scenarios where you want to act as the agent sending information to the user, such as in notification scenarios.
+
+1. Perform the procedure in [Cloud flow setup](#cloud-flow-setup).
+1. In the designer, select the **Post a message in a chat or channel** action to configure it.
+1. In the **Post as** dropdown menu, select **Microsoft Copilot Studio agent**.
+1. In the **Post in** dropdown menu, select **Chat with agent**.
+1. In the **Recipient** field, specify the user you want to message and the specific message you want to send.
+1. In the **Message** field, enter the message you want to send.
+1. To add a dynamic value to the message, do the following:
+
+    1. Place the cursor where the input should appear.
+    1. To the right of the message field, select the lightning bolt.
+    1. Select an input from the list.
+
+        If you don't see the input you want, select **See more** to expand the list.
+
+        :::image type="content" source="../media/send-a-message-in-teams/copilot-studio-agent.png" alt-text="Screenshot showing a Copilot Studio agent message in the 'Post message in a chat or channel' action.":::
+
 ## Post a message as the Flow bot in an existing named group chat
 
 To send a message as the Flow bot in a group chat, follow these steps.
@@ -84,11 +104,12 @@ To send a message as the Flow bot in a group chat, follow these steps.
 1. In the **Post in** dropdown menu, select **Group chat**.
 1. In the **Group chat** dropdown menu, select a group chat to post the message in.
 1. In the **Message** field, enter the message you want to send. To add a dynamic value to the message, do the following:
+  
     1. Place the cursor where the input should appear.
-    1. Select the lightning bolt to the right of the message field.
+    1. To the right of the message field, select the lightning bolt.
     1. Select an input from the list. If you don't see the input you want, select **See more** to expand the list.
 
-    :::image type="content" source="../media/send-a-message-in-teams/flow-bot-group-chat-new-designer.png" alt-text="Screenshot showing Post a message in group chat.":::
+    :::image type="content" source="../media/send-a-message-in-teams/flow-bot-group-chat-new-designer.png" alt-text="Screenshot showing a Post a message in group chat.":::
 
     By default, Teams lists only the 50 most recent group chats in the dropdown menu. If you want to send a message to a new group chat, use the option in [Create a new group chat and post a message to it as the Flow bot](#create-a-new-group-chat-and-post-a-message-to-it-as-the-flow-bot).
 
