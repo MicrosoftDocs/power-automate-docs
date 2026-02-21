@@ -10,7 +10,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
 ms.date: 12/10/2025
-ms.author: kewaiss
+ms.author: matow
 ms.reviewer: angieandrews
 #customer intent: As an IT professional, I want to allow Power Automate flows to connect to external services so that users can automate workflows seamlessly.
 ---
