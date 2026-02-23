@@ -1,0 +1,5 @@
+flowchart LR
+    A[Power Automate Flow] -->|Creates| B[Callback Registration Record]
+    B -->|Monitored by| C[Dataverse Event Pipeline]
+    C -->|Triggers| D[Async Service]
+    D -->|Invokes| E[Power Automate Endpoint]

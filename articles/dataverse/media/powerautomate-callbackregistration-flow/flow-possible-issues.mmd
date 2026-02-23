@@ -1,0 +1,11 @@
+flowchart TB
+    A[Dataverse Event Occurs] --> B[System Job Created]
+    B --> C{Check System Job Status}
+    C -->|Succeeded| D[Flow Triggered Successfully]
+    C -->|Failed| E[Review Error Details]
+    C -->|Not Found| F[Check CBR Configuration]
+    E --> G[Verify CBR owner is active]
+    E --> H[Check filtering attributes]
+    E --> I[Review filter expression]
+    F --> J[Verify flow is turned on]
+    F --> K[Verify CBR record exists]
