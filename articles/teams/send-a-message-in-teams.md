@@ -3,12 +3,13 @@ title: Send a message in Teams using Power Automate
 description: Learn the different ways in which you can send a message in Microsoft Teams.
 author: kisubedi
 contributors:
+  - michaelkovar
   - kisubedi
   - kewaiss
   - kartikraop
   - hamenon-ms
   - v-aangie
-ms.author: matow
+ms.author: michaelkovar
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
@@ -48,11 +49,13 @@ The scenarios in this article use a cloud flow to notify a channel or a group ch
 
 ## Message sender options
 
-The **Post a message in a chat or channel** action can send a message in the following two ways:
+The **Post a message in a chat or channel** action can send a message using the following options:
 
-- **As the Flow bot:** In this method, the message gets sent as the Flow bot instead of any individual users. Use this sender option if you don't want to tie the message to any specific user and want to use a generic sender instead.
+- **As the Flow bot:** The message gets sent as the Flow bot instead of any individual users. Use this sender option if you don't want to tie the message to any specific user and want to use a generic sender instead.
 
-- **As a User:** In this method, the message gets sent as the user who is signed in to the Teams connector in the Flow (generally the Flow owner). This method can be used when the message needs to get sent as a regular user.
+- **As a User:** The message gets sent as the user who is signed in to the Teams connector in the Flow (generally the Flow owner). This method can be used when the message needs to get sent as a regular user.
+
+- **As a Microsoft Copilot Studio agent**. The message gets sent as the specified Copilot Studio agent instead of any individual users. Use this sender option if you don't want to tie the message to any specific user and want to use a specific Copilot Studio agent.
 
 The **Post as** and **Post in** options within the action control the combinations of how messages can be posted in Teams.
 
@@ -75,9 +78,9 @@ To send a message as the Flow bot in a Teams channel, follow these steps.
 
     :::image type="content" source="../media/send-a-message-in-teams/flow-bot-channel-new-designer.png" alt-text="Screenshot showing 'Post a message in a chat or channel as the Flow bot.":::
 
-## Post a message as a Microsoft Copilot Studio agent directly to a user
+## Post a message as a Copilot Studio agent directly to a user
 
-When using a Microsoft Copilot Studio agent, you can send a message directly to a user on Teams through that agent. This is useful in scenarios where you want to act as the agent sending information to the user, such as in notification scenarios.
+When using a Copilot Studio agent, you can send a message directly to a user on Teams through that agent. This is useful in scenarios where you want to act as the agent sending information to the user, such as in notification scenarios.
 
 1. Perform the procedure in [Cloud flow setup](#cloud-flow-setup).
 1. In the designer, select the **Post a message in a chat or channel** action to configure it.
@@ -85,7 +88,7 @@ When using a Microsoft Copilot Studio agent, you can send a message directly to 
 1. In the **Post in** dropdown menu, select **Chat with agent**.
 1. In the **Recipient** field, specify the user you want to message and the specific message you want to send.
 1. In the **Message** field, enter the message you want to send.
-1. To add a dynamic value to the message, do the following:
+1. To add a dynamic value to the message, do the following steps:
 
     1. Place the cursor where the input should appear.
     1. To the right of the message field, select the lightning bolt.
@@ -103,7 +106,7 @@ To send a message as the Flow bot in a group chat, follow these steps.
 1. In the **Post as** dropdown menu, select **Flow bot**.
 1. In the **Post in** dropdown menu, select **Group chat**.
 1. In the **Group chat** dropdown menu, select a group chat to post the message in.
-1. In the **Message** field, enter the message you want to send. To add a dynamic value to the message, do the following:
+1. In the **Message** field, enter the message you want to send. To add a dynamic value to the message, do the following steps:
   
     1. Place the cursor where the input should appear.
     1. To the right of the message field, select the lightning bolt.
@@ -144,7 +147,7 @@ When you send a message as the Flow bot, you have the added option of posting di
 1. In the **Post as** dropdown menu, select **Flow bot**.
 1. In the **Post in** dropdown menu, select **Chat with Flow bot**.
 1. In the **Recipient** field, specify the user you want to message and the specific message you want to send.
-1. In the **Message** field, enter the message you want to send. To add a dynamic value to the message, do the following:
+1. In the **Message** field, enter the message you want to send. To add a dynamic value to the message, do the following steps:
     1. Place the cursor where the input should appear.
     1. Select the lightning bolt to the right of the message field.
     1. Select an input from the list. If you don't see the input you want, select **See more** to expand the list.
@@ -171,7 +174,7 @@ To send a message as the user in a Group chat, follow these steps.
 1. In the **Post as** dropdown menu, select **User**.
 1. In the **Post in** dropdown menu, select **Group chat**.
 1. In the **Group chat** field, select the group chat to post the message in.
-1. In the **Message** field, enter the message you want to send. To add a dynamic value to the message, do the following:
+1. In the **Message** field, enter the message you want to send. To add a dynamic value to the message, do the following steps:
     1. Place the cursor where the input should appear.
     1. Select the lightning bolt to the right of the message field.
     1. Select an input from the list. If you don't see the input you want, select **See more** to expand the list.
@@ -223,4 +226,5 @@ Mentions are a great way to get the attention of a user in Teams. You can combin
 
 ## Related information
 
-[Training: Use the Teams connector in Power Automate (module)](/training/modules/use-teams-connector/?source=recommendations)
+- [Send proactive Microsoft Teams messages](/microsoft-copilot-studio/advanced-proactive-message)
+- [Training: Use the Teams connector in Power Automate (module)](/training/modules/use-teams-connector/?source=recommendations)
