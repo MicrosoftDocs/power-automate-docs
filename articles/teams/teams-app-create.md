@@ -11,7 +11,7 @@ ms.service: power-automate
 ms.subservice: teams
 ms.topic: how-to
 ms.date: 10/09/2024
-ms.author: kewaiss
+ms.author: matow
 ms.reviewer: angieandrews
 ---
 

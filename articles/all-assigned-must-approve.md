@@ -10,8 +10,8 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 10/01/2025
-ms.author: kewaiss
+ms.date: 02/20/2026
+ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker

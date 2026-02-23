@@ -10,7 +10,7 @@ ms.topic: article
 ms.update-cycle: 180-days
 ms.service: power-automate
 ms.subservice: cloud-flow
-ms.author: kewaiss
+ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType:
   - flowmaker
