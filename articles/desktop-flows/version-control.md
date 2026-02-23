@@ -5,9 +5,9 @@ author: nikosmoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 02/16/2026
+ms.date: 02/23/2026
 ms.author: nimoutzo
-ms.reviewer: dmartens
+ms.reviewer: ellenwehrle
 contributors:
 - NikosMoutzourakis
 search.app: 
@@ -25,7 +25,7 @@ Version control in Power Automate for desktop introduces a structured way to man
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren't meant for production use and might have restricted functionality.
-> - Starting with the November release (v2.62), Power Automate for desktop supports version control. The rollout of the **Version control for desktop flows** feature is gradual and when an environment receives the version control feature as part of the gradual rollout, the feature is enabled for all installed versions of Power Automate for desktop that support it.
+> - Starting with the November 2025 release (v2.62), Power Automate for desktop supports version control. The rollout of the **Version control for desktop flows** feature is gradual and when an environment receives the version control feature as part of the gradual rollout, the feature is enabled for all installed versions of Power Automate for desktop that support it.
 > - There is no limit on the number of versions that can be stored for a desktop flow. Versions are stored in Microsoft Dataverse in a compressed format and consume negligible capacity. The maximum number of stored versions can't be configured. Versions are retained for 12 months. Any version older than 12 months is automatically deleted, except for the latest published version.
 
 ## Prerequisites
