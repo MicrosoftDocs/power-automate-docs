@@ -240,6 +240,8 @@ This action doesn't include any exceptions.
 
 Runs a subflow and specifies any required arguments.
 
+In the context menu of the **Run subflow** action, the option ‘Go to subflow’ allows you to quickly navigate to the selected subflow tab in the flow designer.
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
@@ -293,4 +295,5 @@ This action doesn't produce any variables.
 This action doesn't include any exceptions.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 
