@@ -334,6 +334,10 @@ This section presents all the available data types that don't belong to any of t
 
 [Outlook data type properties](datatype-properties.md#outlook-mail-messages)
 
+### Sensitive values
+
+- **SensitiveValue** – Contains a text value that is enforced to be sensitive. A secret environment variable or the Password property of a credential variable are of SensitiveValue type.
+
 ### Terminal
 
 - **Terminal session** – Contains a terminal session created through the **Open terminal session** action.
