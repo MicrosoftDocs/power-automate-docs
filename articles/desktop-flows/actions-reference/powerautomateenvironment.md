@@ -23,7 +23,7 @@ ms.custom:
 
 In this module, you find actions that allow you to retrieve environment variables that are available in your environment, offering direct integration with the corresponding components.
 
-You can retrieve environment variables of the following types: Text values, numeric values, Boolean values, JSON as text values, and secrets as text values that are enforced to be sensitive. The secret values are only retrieved at runtime and aren't logged.
+You can retrieve environment variables of the following types: Text values, numeric values, Boolean values, JSON as text values, and secrets as sensitive values (text values that are enforced to be sensitive). The secret values are only retrieved at runtime and aren't logged.
 
 ## <a name="retrieveenvironmentvariable"></a> Retrieve environment variable
 
