@@ -185,6 +185,19 @@ This property applies to the **Update** condition only. **Create** and **Delete*
 
 This property isn't supported on virtual tables.
 
+> [!NOTE]
+> In Dynamics 365 environments—especially when working with standard tables like `account`, `contact`, or other entities part of managed solutions—the **Select columns** property may not behave as expected. 
+> 
+> Even if only non-specified columns are modified, the trigger may still fire under certain conditions. This can happen when:
+> 
+> - Server-side components (such as plugins, workflows, or business rules) update or touch the monitored columns in the background.
+> - The platform includes the monitored columns in the update payload even if their values have not changed.
+> - Model-driven app forms resubmit additional fields automatically on save, including those listed in **Select columns**.
+
+For example, if **Select columns** is set to `mobilephone`, but a user modifies only `emailaddress1`, the flow may still run if a plugin or background process also updates `mobilephone`, or if the system includes `mobilephone` in the update request automatically.
+
+As a result, **the trigger may execute even if only unrelated columns were explicitly changed by the user**. This can lead to unnecessary flow runs, increased API consumption, and incorrect logic branching. To mitigate this, it's recommended to include condition checks within the flow to confirm that meaningful changes have occurred before proceeding.
+
 ### Filter expression
 
 The filter expression provides a way for you to define an OData style filter expression to help you to define the trigger conditions even more precisely. The flow runs only when the expression evaluates to *true* after the change is saved in Dataverse. In the following examples, the flow triggers when `firstname` is updated to *John*.
