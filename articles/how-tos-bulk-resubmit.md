@@ -36,8 +36,12 @@ There are two options to enable flow run resubmission for flows initiated by ins
 ### Power Platform admin center
 
 1. Sign in to your Power Platform admin center account.
-1. Select **Settings** and then search for **Power Automate flow run resubmission**.
+1. Click the cog icon on the top right, select **Power Platform settings** and then search for **Power Automate flow run resubmission**.
 1. Choose whether to enable or disable the functionality using the toggle.
+
+> [!Note]
+> This setting is valid for both [Managed and Unmanaged](/power-platform/admin/managed-environment-overview) environments.
+
 
 ### Apply tenant setting using PowerShell prerequisites
 
