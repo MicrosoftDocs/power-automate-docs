@@ -5,7 +5,7 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 11/28/2023
+ms.date: 02/25/2026
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors: yiannismavridis
@@ -28,6 +28,9 @@ By default, Power Automate always prompts you to confirm the triggering of a des
 > Disabling the confirmation dialog poses security threats because you could run without notice a questionable flow shared by a malicious actor.
 
 :::image type="content" source="media/run-flow-url/console-run-url-console-settings.png" alt-text="Screenshot of the Display confirmation dialog when invoking flows externally option in the console settings.":::
+
+> [!Note]
+> Only one flow can run in local attended mode at a time.
 
 ## Prerequisites
 
