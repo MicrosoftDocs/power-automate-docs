@@ -66,7 +66,7 @@ Example image with a link and size:
 Example image with base64 (clipped for readability) and the `alt` attribute:
 
 ```html
-\<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABzCAMAAA......" alt="SomeImage" />
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHMAAABzCAMAAA......" alt="SomeImage" />
 ```
 
 ### Resources
