@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: concept-article
 ms.date: 02/19/2026
-ms.author: chrisj
+ms.author: iomavrid
 ms.reviewer: matp
 contributors:
 - Yiannismavridis

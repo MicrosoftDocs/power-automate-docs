@@ -55,8 +55,9 @@ Example approach: Add a Display message action with Yes - No buttons to require 
 
 >[!Note]
 > To enable the **AI Builder (Preview)** module in the actions pane, the following requirements need to be in place:
-> * Copilot is enabled in the Power Platform Admin Center
-> * The flag *powerappsmakerbotenabled* is true at the organization level: [PowerAppsMakerBotEnabled](https://learn.microsoft.com/power-apps/developer/data-platform/reference/entities/organization#BKMK_PowerAppsMakerBotEnabled)
+>
+> - Copilot is enabled in the Power Platform Admin Center.
+> - The flag `powerappsmakerbotenabled` is true at the organization level:[PowerAppsMakerBotEnabled](/power-apps/developer/data-platform/reference/entities/organization#BKMK_PowerAppsMakerBotEnabled)
 
 ## <a name="callgpt"></a> Create text with GPT (preview)
 
