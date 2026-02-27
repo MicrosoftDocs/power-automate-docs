@@ -862,8 +862,10 @@
       href: ./desktop-flows/actions-reference/sap.md
     - name: Testing
       href: desktop-flows/actions-reference/testing.md
-    - name: Power Automate secret variables actions
+    - name: Power Automate secret variables
       href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
+    - name: Power Automate environment
+      href: ./desktop-flows/actions-reference/powerautomateenvironment.md
   - name: Troubleshoot desktop flows runtime
     href: ./desktop-flows/troubleshoot.md
   - name: Process migrator for Softomotive products (preview)
