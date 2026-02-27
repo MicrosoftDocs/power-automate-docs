@@ -446,6 +446,8 @@
         href: ./desktop-flows/runtime-notifications.md
     - name: Run desktop flows in picture-in-picture
       href: ./desktop-flows/run-desktop-flows-pip.md
+  - name: Run-only user role
+    href: ./desktop-flows/run-only-user-role.md
   - name: Manage machines and machine groups
     items:
     - name: Manage machines
