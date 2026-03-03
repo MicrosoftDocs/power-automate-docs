@@ -52,7 +52,7 @@ The information displayed on the **Overview**, **Runs** and **Process map (previ
 > - Data under the **Work queues** tab is a premium feature, which requires a Power Automate Premium license.
 > - Recommendations is a premium feature, which requires a [Managed Environment](/power-platform/admin/managed-environment-enable).
 > - When you navigate between tabs, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
-> - Desktop flow related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata).
+> - Desktop flow related activities like desktop flow runs and work queues etc. have always been available in Dataverse, however cloud flow run history has only recently been introduced in Dataverse. [Learn more](dataverse/cloud-flow-run-metadata.md).
 > - Cloud flow run history shown on the overview and runs tab might take up to an hour to be available in Dataverse and the automation center.
 > - By default, visualizations are based on top-level cloud flow runs only. By using filters, you can also see visualizations for child flows.
 
@@ -66,8 +66,8 @@ Here are the main tables used in the Automation Center:
 |---|---|---|
 | Process | `prvReadWorkflow` | Stores desktop flows and solution-aware cloud flows. |
 | Flow Session | `prvReadflowsession` | Stores desktop flow run data. |
-| Flow Run | `prvReadflowrun` | Stores cloud flow run data ingested through the feature [Manage cloud flow run history in Dataverse](dataverse/cloud-flow-run-metadata). |
-| Flow Log | `prvReadflowlog` | Stores atomic logs such as Power Automate desktop flow run action logs (requires [logs V2 enablement](desktop-flows/configure-desktop-flow-logs)), machine run logs, etc. |
+| Flow Run | `prvReadflowrun` | Stores cloud flow run data ingested through the feature [Manage cloud flow run history in Dataverse](dataverse/cloud-flow-run-metadata.md). |
+| Flow Log | `prvReadflowlog` | Stores atomic logs such as Power Automate desktop flow run action logs (requires [logs V2 enablement](desktop-flows/configure-desktop-flow-logs.md)), machine run logs, etc. |
 | Flow Event | `prvReadflowevent` | Stores recommendation-related data and more. |
 | Work Queue | `prvReadworkqueue` | Stores work queue data. |
 | Work Queue Item | `prvReadworkqueueitem` | Stores work queue item data belonging to a particular work queue. |
