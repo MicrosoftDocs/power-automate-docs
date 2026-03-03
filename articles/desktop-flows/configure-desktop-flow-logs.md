@@ -70,6 +70,13 @@ The **FlowLogs entity time to live in minutes** value determines how long action
 | 365 days | 525,600 minutes |
 | Forever | 0 (zero) minutes |
 
+> [!IMPORTANT]
+> The time-to-live (TTL) setting only applies to log records created **after** the configuration change. Existing log records retain their original TTL value and are not affected by subsequent changes to this setting.
+>
+> For example, if you initially set the retention period to 90 days and later reduce it to 7 days, logs created before the change will still be retained for their original 90 days. Only new logs created after the change will use the 7-day retention period.
+>
+> If you need to remove existing logs immediately, you must delete them manually or wait for their original TTL to expire.
+
 > [!NOTE]
 > Before enabling logs V2, make sure you have sufficient Dataverse log capacity that supports the data retention settings and aligns with your capacity planning and entitlement. Adjust as necessary. See the [Sample Dataverse capacity demand calculations for logs V2](#dataverse-capacity-demand-calculations-for-logs-v2) section for sizing examples.
 
