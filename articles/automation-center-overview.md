@@ -164,10 +164,18 @@ The Machines page allows you to monitor your machines and machine groups. These 
 
 | Visual | Description |
 |---|---|
+| **Machines with warning** | Displays the number of machines that currently have warnings or require attention. This real-time metric helps you quickly identify machines that may need troubleshooting. |
+| **Groups with warning** | Displays the number of machine groups that currently have warnings or require attention. This real-time metric helps you monitor the health of your machine groups. |
+| **Machines** | Provides a breakdown of machine counts by type, including standard machines, hosted machines, machine groups, and hosted machine groups. This helps you understand your machine infrastructure composition. |
 | **Connection status** | Displays the connection status of your machines (connected, disconnected, action needed). If you want to see machines that are disconnected, select **See more**. In the pane, you can see all the machines per connection status. You can select the machine name to reach its details page. |
-| **Versions on machines** | Displays for each version of Power Automate for desktop, the number of machines that use this version. This feature is useful to understand which machines require updates (you should update your application regularly). From filters, you can select a dedicated version and see machines that are using this version. |
-| **Machines** | Displays the 10 last modified machines (name, description, version, status). Select **See all** to view the full list of items, if you have more than 10 machines. |
-| **Machine groups** | Displays the 10 last modified machine groups (name, description, version, status). Select **See all** to view the full list of items, if you have more than 10 groups. |
+| **Power Automate app versions on machines** | Displays for each version of Power Automate for desktop, the number of machines that use this version. This feature is useful to understand which machines require updates (you should update your application regularly). From filters, you can select a dedicated version and see machines that are using this version. |
+| **Total machines usage** | Shows the aggregated usage metrics across all machines, helping you understand overall machine utilization in your environment. |
+| **Average machines usage** | Displays the average usage metrics across all machines, providing insights into typical machine utilization patterns. |
+| **Top used machines** | Lists the machines with the highest usage levels based on run activity. This helps identify which machines are most actively processing automation workloads. |
+| **Top machines by error rate** | Displays machines ranked by the frequency of errors occurring during desktop flow runs. Use this to identify machines that may need troubleshooting or maintenance. |
+| **Top machine groups by error rate** | Shows machine groups ranked by error frequency, helping you identify groups that may have configuration or performance issues. |
+| **Top machines by CPU usage** | Displays machines with the highest CPU utilization, helping you identify resource-intensive workloads and potential performance bottlenecks. |
+| **Top machines by RAM usage** | Shows machines with the highest memory utilization, allowing you to monitor memory consumption and optimize resource allocation. |
 
 > [!NOTE]
 > There is a limit of 40 connection statuses displayed at one time. If you have more machines in your environment, use the filters to reduce the current selection.
@@ -181,10 +189,13 @@ By default, this page displays the desktop flow run errors for the last seven da
 | Visual | Description |
 |---|---|
 | **Top errors** | Displays the errors that occur most frequently during your desktop flow runs. If you can't see a specific error in the card, select the **All errors** filter, and then choose the error that you want to see. |
+| **Error trends** | Displays daily trends for errors in desktop flow runs. These trends can help you to identify if an error started to appear recently or several days ago. In addition to trends per error, the chart can display trends per desktop flow and machine. Select the dropdown menu of the table to display the type of pivot you prefer. |
+| **Top failed cloud flows** | Displays the cloud flows that failed the most in your environment. You can select each cloud flow to display its details page. |
 | **Top failed desktop flows** | Displays the desktop flows that failed the most in your environment. You can select each desktop flow to display its details page. |
 | **Top cloud flows with failed desktop flows** | Provides a list of cloud flows that are the most impacted by failures in desktop flows. For example, if a cloud flow contains two desktop flows and these desktop flows failed two times each, you'll see this cloud flows with a count of four errors. |
 | **Top machine failures** | Displays information about the machines on which desktop flow runs failed most frequently. You can select each machine name to display its details page. |
-| **Error trends** | Displays daily trends for errors in desktop flow runs. These trends can help you to identify if an error started to appear recently or several days ago. In addition to trends per error, the chart can display trends per desktop flow and machine. Select the dropdown menu of the table to display the type of pivot you prefer. |
+| **Top machine group failures** | Displays information about the machines group on which desktop flow runs failed most frequently. You can select each machine group name to display its details page. |
+
 
 ## AI Builder activity page
 
@@ -196,7 +207,7 @@ The Savings page, located in the Value section, helps you quantify the return on
 
 ## Capacity utilization page
 
-The Capacity utilization page provides insights into how effectively your automation resources are being used, helping you optimize resource allocation and plan for future capacity needs. For more information, see [Capacity utilization within Power Automate](/power-automate/desktop-flows/capacity-utilization.md)
+The Capacity utilization page provides insights into how effectively your automation resources are being used, helping you optimize resource allocation and plan for future capacity needs. For more information, see [Capacity utilization within Power Automate](desktop-flows/capacity-utilization.md)
 
 ## Copilot
 
