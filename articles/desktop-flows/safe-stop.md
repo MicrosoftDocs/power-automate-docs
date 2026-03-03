@@ -5,9 +5,9 @@ author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 08/06/2025
+ms.date: 02/23/2026
 ms.author: nimoutzo
-ms.reviewer: danamartens
+ms.reviewer: ellenwehrle
 contributors:
 - NikosMoutzourakis
 search.audienceType: 
@@ -25,7 +25,7 @@ To use safe stop, two components must be configured:
 
 - Safe stop trigger:
   - Safe stop can be initiated in three ways:
-    - From the Power Automate portal: Navigate to the **Run Details** page of a running desktop flow and select **Safe Stop**. :::image type="content" source="media/safe-stop/safe-stop-portal.png" alt-text="Screenshot of button to safe stop a desktop flow execution through the Power Automate portal.":::
+    - From the Power Automate portal: Navigate to the **Run Details** page of a running desktop flow and select **Safe stop**. :::image type="content" source="media/safe-stop/safe-stop-portal.png" alt-text="Screenshot of button to safe stop a desktop flow execution through the Power Automate portal.":::
     - From the Power Automate for desktop console: Locate the running desktop flow. Select the dropdown next to the **Stop** button, and then select **Safe stop**. Or, right-click the flow and select **Safe stop** from the context menu.
     - From the Power Automate for desktop designer: Use the dropdown on the **Stop** button and then select **Safe stop**.
       - This option is especially useful during debugging or when a flow needs to be halted gracefully in the designer without disrupting the environment. :::image type="content" source="media/safe-stop/safe-stop-designer.png" alt-text="Screenshot of button to safe stop a desktop flow execution through the Power Automate for desktop designer.":::
@@ -46,6 +46,8 @@ To use safe stop, two components must be configured:
 
 - Safe Stop must be triggered before the **If safe stop is requested** action is reached in the flow. If the action is bypassed or not yet executed, the stop request doesn't take effect until the next checkpoint.
 - This feature isn't a pause or resume mechanism. Once triggered and executed, the flow stops as defined.
+- You can only use safe stop in the parent desktop flows. If you attempt to request a safe stop from a child desktop flow, you'll get an error indicating that the run was not found.
+- The user must have permissions to run a flow to be able to request a safe stop.
 
 ## Related articles
 

@@ -5,11 +5,12 @@ author: Mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/19/2023
+ms.date: 02/25/2026
 ms.author: matp
 ms.reviewer: cochamos
 contributors:
   - jpapadimitriou
+  - yiannismavridis
 search.audienceType: 
   - flowmaker
   - enduser
@@ -51,6 +52,12 @@ Learn more about the Text generation model (preview) in [the Text generation mod
 Example approach: Add a Display message action with Yes - No buttons to require a human review of the generated content. An error appears when this action doesn't exist. Learn more about the Display message action in [Message boxes actions](display.md).
 
 :::image type="content" source="media/aibuilder/display-message.png" alt-text="Screenshot of the Display message action that prompts users to review the generated content.":::
+
+>[!Note]
+> To enable the **AI Builder (Preview)** module in the actions pane, the following requirements need to be in place:
+>
+> - Copilot is enabled in the Power Platform Admin Center.
+> - The flag `powerappsmakerbotenabled` is true at the organization level:[PowerAppsMakerBotEnabled](/power-apps/developer/data-platform/reference/entities/organization#BKMK_PowerAppsMakerBotEnabled)
 
 ## <a name="callgpt"></a> Create text with GPT (preview)
 

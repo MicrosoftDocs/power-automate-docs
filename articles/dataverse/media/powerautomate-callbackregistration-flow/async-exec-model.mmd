@@ -1,0 +1,8 @@
+flowchart TB
+    A[User Action in Dataverse] --> B[Sync Plugin: Create Async Job]
+    B --> C[User Transaction Completes]
+    B --> D[Async Service Processes Job]
+    D --> E{Validation Successful?}
+    E -->|Yes| F[Flow Triggered in Power Automate]
+    E -->|No| G[Job Completes Without Trigger]
+    C -.Independent execution.-> F

@@ -5,9 +5,9 @@ author: nikosmoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 11/10/2025
+ms.date: 02/23/2026
 ms.author: nimoutzo
-ms.reviewer: dmartens
+ms.reviewer: ellenwehrle
 contributors:
 - NikosMoutzourakis
 search.app: 
@@ -25,12 +25,16 @@ Version control in Power Automate for desktop introduces a structured way to man
 > [!IMPORTANT]
 > - This is a preview feature.
 > - Preview features aren't meant for production use and might have restricted functionality.
-> - The rollout of this feature will be gradual and may take several weeks to complete across all environments. Availability might vary depending on your region and tenant.
+> - Starting with the November 2025 release (v2.62), Power Automate for desktop supports version control. The rollout of the **Version control for desktop flows** feature is gradual and when an environment receives the version control feature as part of the gradual rollout, the feature is enabled for all installed versions of Power Automate for desktop that support it.
+> - There is no limit on the number of versions that can be stored for a desktop flow. Versions are stored in Microsoft Dataverse in a compressed format and consume negligible capacity. The maximum number of stored versions can't be configured. Versions are retained for 12 months. Any version older than 12 months is automatically deleted, except for the latest published version.
 
 ## Prerequisites
 
 - The environment and flow use the [v2 schema](schema.md)
-- Optional: ComponentChangesetVersion read and write permissions (included by default for [Environment Maker role](/power-platform/admin/database-security))
+- Required permissions for version control scenarios include the `prvReadcomponentchangesetpayload` privilege. This permission is required to view and restore versions. If a user lacks this privilege, viewing or restoring a version will fail.
+- Optional: `ComponentChangesetVersion` read and write permissions (included by default for [Environment Maker role](/power-platform/admin/database-security)).
+- If your organization uses custom security roles with minimal permissions, ensure these roles are updated accordingly. Custom security roles should be periodically reviewed as new features are introduced.
+
 
 ## Configuration
 
@@ -44,22 +48,25 @@ To configure version control:
 
     - **Enable version control of desktop flows**: Determines if version control is enabled for this environment.
     - **Desktop flows version control enabled by default**: Controls participation in rollout before global availability. If enabled, the environment automatically switches "Enable version control of desktop flows" to "True" when the feature becomes available.
+  
+> [!NOTE]
+> Once an environment receives this feature, version control can't be disabled. This behavior is by design for now.
 
 ## Use version control
 
 Version control offers the following key features:
 
 1. **Save draft**: Save your latest changes without releasing them as the official version. This action:
-    - Creates the latest version of the flow
-    - Saves incremental changes without making them official
-    - Encourages iterative development and experimentation without disrupting production
+    - Creates the latest version of the flow.
+    - Saves incremental changes without making them official.
+    - Encourages iterative development and experimentation without disrupting production.
 1. **Publish**: Set a version as official so it runs from the console or cloud. This action:
-    - Creates the published version of the flow
-    - Ensures only validated, stable flows are deployed, reducing operational risk
+    - Creates the published version of the flow.
+    - Ensures only validated, stable flows are deployed, reducing operational risk.
 1. **Version history pane**: View all saved and published versions of your flow. This feature:
-    - Shows timestamps and user details for each version
-    - Provides transparency and auditing capabilities
-    - Allows you to track changes over time
+    - Shows timestamps and user details for each version.
+    - Provides transparency and auditing capabilities.
+    - Allows you to track changes over time.
 
 :::image type="content" source="media/version-control/version-control-options.png" alt-text="Screenshot showing version control features including Save draft, Publish, and a button to open the version history pane." lightbox="media/version-control/version-control-options.png":::
  
@@ -68,7 +75,7 @@ Version control offers the following key features:
 
 ## Version history pane
 
-The version history pane displays all available versions of a specific desktop flow. The following information is included:
+The version history pane displays all available versions of a specific desktop flow and includes the following information:
 - **Date and timestamp**: When the version was created
 - **User**: The user who performed the action
 - **Version flags**:
@@ -81,10 +88,8 @@ The version history pane displays all available versions of a specific desktop f
 ## Context menu options
 
 When you open the context menu for one of the versions in the version history pane, you see the following options:
-- **View**
-    - Opens the version in read-only mode (no edits allowed).
-- **Restore**
-    - Saves the selected version as draft and flags it as the latest version.
+- **View** opens the version in read-only mode (no edits allowed).
+- **Restore** saves the selected version as draft and flags it as the latest version.
 
 :::image type="content" source="media/version-control/context-options.png" alt-text="Screenshot of a context menu showing View and Restore options.":::
 
@@ -100,5 +105,7 @@ When you open the context menu for one of the versions in the version history pa
 
 ## Known issues
 
-When a desktop flow with version control has its latest version saved as a draft, self-healing can't repair UI elements during each run.
+- When a desktop flow with version control has its latest version saved as a draft, self-healing can't repair UI elements during each run.
+- Importing a published desktop flow might fail if the target environment contains an unpublished draft of the same flow. In this scenario, the following error can occur: "You are attempting to do a published update of a publishable component in an unmodified active context when there exists an unpublished active row." To avoid this issue, ensure there are no unpublished drafts in the target environment before importing a published version of a desktop flow.
+
 

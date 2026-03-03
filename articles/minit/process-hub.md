@@ -27,7 +27,7 @@ Although Power Automate Process Mining is a desktop app, it's connected to Power
 
 Open the Process Mining desktop app and sign in with your work account.
 
-:::image type="content" alt-text="Screenshot of the the home page in the Process Mining desktop app." source="media/processes-screen.png":::
+:::image type="content" alt-text="Screenshot of the home page in the Process Mining desktop app." source="media/processes-screen.png":::
 
 ## Select an environment
 

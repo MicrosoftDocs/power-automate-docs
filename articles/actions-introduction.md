@@ -8,9 +8,9 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
-ms.date: 11/26/2025
+ms.date: 02/20/2026
 ms.update-cycle: 180-days
-ms.author: kewaiss
+ms.author: matow
 ms.reviewer: angieandrews
 ms.collection:
   - get-started

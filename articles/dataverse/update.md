@@ -4,7 +4,7 @@ description: "Learn how to update rows in Microsoft Dataverse with flows."
 services: ''
 suite: flow
 documentationcenter: na
-author: kewaiss
+author: radioblazer
 ms.author: matow
 ms.reviewer: angieandrews
 editor: ''
@@ -13,7 +13,7 @@ tags: ''
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/18/2025
+ms.date: 02/18/2026
 search.audienceType: 
   - maker
 ---
@@ -34,6 +34,8 @@ For example, you can create a flow that updates an **Account** in Dataverse when
 After you select a table, the action card displays a list of inputs for the row ID that's related to the columns in the table to update. An asterisk (\*) marks the mandatory columns. The **Row ID** column is the unique ID for the row that's being updated. If you provide a row ID that doesn't exist or generate one with the **guid()** expression, the action performs an update or insert (upsert) operation, creating a new row with the ID you provide.
 
 If you don't see a column, select **Show advanced options** at the bottom of the card. The update skips columns you leave blank, unless a null value is provided explicitly.
+
+[!INCLUDE [set-complex-fields](includes/set-complex-fields.md)]
 
 ## Advanced options
 
