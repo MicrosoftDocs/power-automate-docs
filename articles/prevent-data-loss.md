@@ -54,7 +54,7 @@ You can now classify desktop flow action groups when you create a data policy.
 
 ### Create a DLP policy with desktop flow restrictions
 
-When admins edit or create a policy, desktop flow action groups are added to the default group, and the policy is applied after it's saved. The policy is suspended if the default group is set to **Blocked** and the desktop flows are running in the target environments.
+When admins edit or create a policy, desktop flow action groups are added to the default group, and the policy is applied after it's saved. However, only desktop flow modules that are explicitly classified in a policy group (**Business**, **Non-business**, or **Blocked**) are enforced during DLP evaluation. Desktop flow modules that aren't explicitly added to any group are not subject to the default group classification and aren't blocked, even if the default group is set to **Blocked**. To enforce DLP restrictions on specific desktop flow modules, you must explicitly move them into the desired policy group.
 
 You can manage your DLP policies for desktop flows the same way you manage cloud flow connectors and actions. Desktop flow modules are groups of similar actions as displayed in the Power Automate for desktop user interface. A module is similar to connectors that are used in cloud flows. You can define a DLP policy that manages both desktop flow modules and cloud flow connectors. Some basic modules, such as **Variables**, can't be managed in the scope of DLP policy because almost all desktop flows need to use them. [Learn more about the fundamentals of DLP policies and how to create them](/power-platform/admin/wp-data-loss-prevention).
 
