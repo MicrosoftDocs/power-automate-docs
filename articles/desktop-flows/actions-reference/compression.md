@@ -5,7 +5,7 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
+ms.date: 03/09/2025
 ms.author: samathur
 ms.reviewer: matp
 contributors:
@@ -62,6 +62,9 @@ Compress one or more files or folders into a ZIP archive.
 
 Uncompress one or more files or folders contained in a ZIP archive.
 
+> [!NOTE]
+> Starting with PAD v2.67, unzipping an archive that will result to its contents being placed in a folder that is not a child of the defined Destination folder will throw an "Archive isn't a valid ZIP file" error.
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
@@ -82,7 +85,7 @@ This action doesn't produce any variables.
 |-----|-----|
 |Can't create destination folder|Indicates that the destination folder couldn't be created|
 |Archive not found|Indicates that the archive doesn't exist|
-|Archive isn't a valid ZIP file|Indicates that the archive isn't a valid ZIP file|
+|Archive isn't a valid ZIP file|Indicates that the archive isn't a valid ZIP file, or an attempt was made to extract to a path outside of target destination folder|
 |Failed to unzip files|Indicates a problem unzipping the files|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
