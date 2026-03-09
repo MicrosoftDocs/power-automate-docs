@@ -50,11 +50,11 @@ The information displayed on the **Overview**, **Runs**, and **Process map (prev
 > [!NOTE]
 > - Some filters might not be available for some tabs because of the nature of the presented data.
 > - Data under the **Work queues** tab is a premium feature, which requires a Power Automate Premium license.
-> - Recommendations is a premium feature, which requires a [Managed Environment](/power-platform/admin/managed-environment-enable).
+> - *Recommendations* is a premium feature, which requires a [Managed Environment](/power-platform/admin/managed-environment-enable).
 > - When you navigate between tabs, the tab keeps the active filtering selection. Select **Clear filters** to reset the applied filters.
 > - Desktop flow related activities like desktop flow runs and work queues and others were available in Dataverse; however, cloud flow run history was only recently introduced in Dataverse. Learn more in [Manage cloud flow run history in Dataverse](dataverse/cloud-flow-run-metadata.md).
 > - Cloud flow run history shown on the **Overview** and **Runs** tabs might take up to an hour to be available in Dataverse and the automation center.
-> - By default, visualizations are based on top-level cloud flow runs only. By using filters, you can also disiplay visualizations for child flows.
+> - By default, visualizations are based on top-level cloud flow runs only. By using filters, you can also display visualizations for child flows.
 
 ## Required permissions
 
@@ -74,12 +74,12 @@ Here are the main tables used in the automation center:
 
 > [!NOTE]
 > - In Dataverse for Teams environments, users must be members of the Dataverse for Teams environment to access the automation center. Learn more in [How does security and governance differ between Dataverse and Microsoft Dataverse for Teams?](/power-apps/teams/data-platform-faqs#how-does-security-and-governance-differ-between-dataverse-and-microsoft-dataverse-for-teams)
-    > - For more granular control over privileges and additional features, consider upgrading your environment.
+    > - For more granular control over privileges and more features, consider upgrading your environment.
 > - The **Work Queue** tab isn't available in Dataverse for Teams environments.
 
 ## Runs page
 
-The Runs page, located in the Monitor section, presents a consolidated view of cloud and desktop flow run data displayed in a hierarchical list view. The data is organized based on top-level flows. This view is useful in scenarios where individual flow session runs succeeded, but other dependent runs failed, ultimately resulting in the top-level flow's failure. By displaying these runs in connection to their parent, we're enhancing automation monitoring and efficient root cause analysis of exceptions.
+The **Runs** page, located in the Monitor section, presents a consolidated view of cloud and desktop flow run data displayed in a hierarchical list view. The data is organized based on top-level flows. This view is useful in scenarios where individual flow session runs succeeded, but other dependent runs failed, ultimately resulting in the top-level flow's failure. By displaying these runs in connection to their parent, we're enhancing automation monitoring and efficient root cause analysis of exceptions.
 
 ### Overview tab
 
@@ -108,7 +108,7 @@ The recommendations section offers both proactive and reactive insights, along w
 
 ### Run history tab
 
-The Run history tab shows detailed execution history for all flows in your environment, allowing you to drill down into specific run details and troubleshoot issues.
+The **Run history** tab shows detailed execution history for all flows in your environment, allowing you to drill down into specific run details and troubleshoot issues.
 
 ### Current desktop flow runs tab
 
@@ -129,7 +129,7 @@ When you select **Auto refresh**, all the cards are refreshed automatically.
 
 ## Process map page
 
-The Process map page is designed to make troubleshooting and monitoring in Power Automate more efficient and transparent. It provides a clear process-centric view of the main orchestrating flow and all its child flows that run during a process run. It also understands important structural details about the flows, like conditions, so it can show flows that are part of the process but didn't run because of certain conditional logic or errors. [Learn more](automation-center-process-map.md)
+The **Process map** page is designed to make troubleshooting and monitoring in Power Automate more efficient and transparent. It provides a clear process-centric view of the main orchestrating flow and all its child flows that run during a process run. It also understands important structural details about the flows, like conditions, so it can show flows that are part of the process but didn't run because of certain conditional logic or errors. [Learn more](automation-center-process-map.md)
 
 ## Work queues page
 
@@ -143,7 +143,7 @@ The **Work queues** page provides metrics to monitor the health status of work q
 | Work queue SLA status (preview) | Shows the number of work queues items for each SLA status, such as **In**, **At risk**, **Out**, and **Not Set**. |
 | Work queue volumes by status | Shows the number of work queue items categorized by their processing status, with a breakdown of exception types (available when hovering over the exception category). |
 | Work queue throughput | Shows the number of items successfully processed in a work queue within a specific time unit, along with their error rate and trend. |
-| Work queue item error distribution | Shows the distribution of work queue items per error state, such as "Business exception," "IT exception," and "Processing timeout". |
+| Work queue item error distribution | Shows the distribution of work queue items per error state, such as **Business exception**, **IT exception**, and **Processing timeout**. |
 | Work queue requeue rate | Shows how often work queue items are being requeued for further processing or manual handling. |
 | Average handling time trend | Shows the trend of average handling time for work queue items over time. |
 | Top work queues by average handling time | Shows the top five work queues with the highest average handling time in descending order. |
@@ -154,14 +154,14 @@ The **Work queues** page provides metrics to monitor the health status of work q
 
 ### Items tab
 
-The Items tab displays individual work queue items with detailed information about their status, priority, enqueue date, completion date, and assigned processors. You can filter items by various criteria including queue name, status, priority, SLA status, and user.
+The **Items** tab displays individual work queue items with detailed information about their status, priority, enqueue date, completion date, and assigned processors. You can filter items by various criteria including queue name, status, priority, SLA status, and user.
 
 > [!NOTE]
 > If you filter work queue items by a specific item status, such as **Business exception**, any matching item that already expired isn't considered in the results. This is because expired items are deemed unprocessable unless their expiration date is extended first, which takes precedence over lower-level exception type searches.
 
 ## Machines page
 
-The Machines page allows you to monitor your machines and machine groups. These pivot tables provide information about the number of machines, groups, connection status, Power Automate for desktop versions installed on machines, and lists of machines and machine groups.
+The **Machines** page allows you to monitor your machines and machine groups. These pivot tables provide information about the number of machines, groups, connection status, Power Automate for desktop versions installed on machines, and lists of machines and machine groups.
 
 | Visual | Description |
 |---|---|
@@ -199,11 +199,11 @@ By default, this page displays the desktop flow run errors for the last seven da
 
 ## AI Builder activity page
 
-The AI Builder activity page tracks the usage and performance of AI Builder models integrated with your flows, helping you understand how AI capabilities are being utilized in your automation environment.
+The **AI Builder activity** page tracks the usage and performance of AI Builder models integrated with your flows, helping you understand how AI capabilities are being utilized in your automation environment.
 
 ## Savings page
 
-The Savings page, located in the Value section, helps you quantify the return on investment (ROI) from your automation efforts by tracking cost savings, time saved, and efficiency gains. Learn how to enable savings tracking in your environment in [Savings in Power Automate](savings.md).
+The **Savings** page, located in the Value section, helps you quantify the return on investment (ROI) from your automation efforts by tracking cost savings, time saved, and efficiency gains. Learn how to enable savings tracking in your environment in [Savings in Power Automate](savings.md).
 
 ## Capacity utilization page
 
