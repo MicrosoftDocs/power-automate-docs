@@ -10,13 +10,9 @@ ms.service: power-automate
 #customer intent: I want to enable SSDR to prepare my Power Autoamte environment for disaster recovery.
 ---
 
-# Enable Self Service Disaster Recovery for Power Automate cloud flows (preview)
-
-[!INCLUDE[c-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Enable Self Service Disaster Recovery for Power Automate cloud flows
 
 This article explains what Self Service Disaster Recovery (SSDR) is, its benefits, and how to enable it for Power Automate cloud flows in your environment.
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## What is Self Service Disaster Recovery (SSDR)
 
@@ -36,9 +32,9 @@ Learn more about SSDR in [Business continuity and disaster recovery](/power-plat
 
 ## Enable Self Service Disaster Recovery (SSDR) in an environment
 
-We encourage you to enable SSDR for Power Automate on an environment, by signing up for a limited preview through this [form](https://forms.office.com/r/Pe9DqSwxV9).
+We encourage you to enable SSDR for Power Automate on an environment, by navigating to the environment in Power Platform Admin center.
 
-Since SSDR is in a limited preview at this time, we suggest you either enable in a sandbox environment, or if in production environment, don't use with production workloads.
+<img width="2636" height="323" alt="image" src="https://github.com/user-attachments/assets/d916f478-ebb0-4d9c-9fcc-0f5ddeaadf39" />
 
 To turn on SSDR, make sure your environment is managed and linked to a [pay-as-you-go billing plan](/power-platform/admin/pay-as-you-go-overview). Learn more about managed environments in [Managed environments overview](/power-platform/admin/managed-environment-overview).
 
@@ -49,5 +45,5 @@ Like with CMK (customer managed keys), with SSDR, certain flows aren't protected
 More information: [Power Automate CMK application warning messages](customer-managed-keys.md#power-automate-cmk-application-warning-messages)
 
 > [!NOTE]
-> Desktop flows are already fully supported and covered by SSDR toggle in Power Platform admin center.
+> Desktop flows are also already fully supported and covered by SSDR toggle in Power Platform admin center.
 
