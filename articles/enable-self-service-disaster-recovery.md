@@ -4,7 +4,7 @@ description: Learn how and when to prepare your environment for disaster recover
 author: kisubedi
 ms.author: kisubedi
 ms.reviewer: angieandrews
-ms.date: 10/23/2025
+ms.date: 03/12/2026
 ms.topic: concept-article
 ms.service: power-automate
 #customer intent: I want to enable SSDR to prepare my Power Autoamte environment for disaster recovery.
@@ -32,9 +32,9 @@ Learn more about SSDR in [Business continuity and disaster recovery](/power-plat
 
 ## Enable Self Service Disaster Recovery (SSDR) in an environment
 
-We encourage you to enable SSDR for Power Automate on an environment, by navigating to the environment in Power Platform Admin center.
+We encourage you to enable SSDR for Power Automate on an environment. To do this, open [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and then select **Manage** > **Environments**.
 
-<img width="2636" height="323" alt="image" src="https://github.com/user-attachments/assets/d916f478-ebb0-4d9c-9fcc-0f5ddeaadf39" />
+:::image type="content" source="media/enable-self-service-disaster-recovery-for-power-automate-cloud-flows/environment.png" alt-text="Screenshot of the environment in Power Platform admin center.":::
 
 To turn on SSDR, make sure your environment is managed and linked to a [pay-as-you-go billing plan](/power-platform/admin/pay-as-you-go-overview). Learn more about managed environments in [Managed environments overview](/power-platform/admin/managed-environment-overview).
 
