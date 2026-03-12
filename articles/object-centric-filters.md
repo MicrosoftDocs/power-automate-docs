@@ -35,7 +35,7 @@ OCPM in Power Automate Process Mining supports the following filter types:
 
 Filters are managed in the filter toolbar at the top of the active tab. Filters are applied to all visuals and widgets in the active tab.
 
-:::image type="content" source="media/object-centric-filters/object-centric-filter-toolbar.png" alt-text="Screenshot of the filter toolbar in Process Intelligence Studio for OCPM.":::
+:::image type="content" source="media/object-centric-filters/object-centric-filter-toolbar.png" alt-text="Screenshot of the filter toolbar in the process intelligence experience for OCPM.":::
 
 ### Add a filter
 

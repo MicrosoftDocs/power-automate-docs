@@ -8,7 +8,7 @@ contributors:
   - kartikraop
   - radioblazer
   - v-aangie
-ms.author: kewaiss
+ms.author: matow
 ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow

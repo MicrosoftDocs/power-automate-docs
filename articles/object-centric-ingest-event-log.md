@@ -54,9 +54,9 @@ To prepare the OCEL, follow the guidelines in [How to create an object‑centric
 
 1. Select **Save and Analyze**.
 
-    After the ingestion is finished, you should be navigated to the **Process Intelligence Studio for OCPM** with **Process overview** tab active.
+    After the ingestion is finished, you should be navigated to the process intelligence experience for OCPM with **Process overview** tab active.
 
-   :::image type="content" source="media/object-centric-ingest-event-log/object-centric-process-overview.png" alt-text="Screenshot of the 'Process overview' tab in Process Intelligence Studio for OCPM.":::
+   :::image type="content" source="media/object-centric-ingest-event-log/object-centric-process-overview.png" alt-text="Screenshot of the 'Process overview' tab in process intelligence experience for OCPM.":::
 
 ## Related information
 

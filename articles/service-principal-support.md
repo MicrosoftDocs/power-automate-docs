@@ -5,7 +5,7 @@ author: samathur
 contributors:
   - samathur
   - v-aangie
-ms.author: kewaiss
+ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: how-to
 ms.date: 08/04/2025

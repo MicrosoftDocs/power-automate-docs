@@ -11,7 +11,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
 ms.date: 05/05/2025
-ms.author: kewaiss
+ms.author: matow
 search.audienceType: 
   - flowmaker
   - enduser

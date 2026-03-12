@@ -11,7 +11,7 @@ ms.service: power-automate
 ms.subservice: teams
 ms.topic: article
 ms.date: 10/27/2023
-ms.author: kewaiss
+ms.author: matow
 ms.reviewer: angieandrews
 ms.custom: sfi-image-blocked
 ---
