@@ -4,16 +4,15 @@ description: Learn about data loss prevention policies for Power Automate.
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 09/30/2025
-ms.author: trdehove
+ms.date: 03/13/2026
+ms.author: domlee
 author: ChrisGarty
 contributors:
+  - DominiqueLee-MS
   - ChrisGarty
   - v-aangie
 ms.reviewer: angieandrews
 ms.custom: bap-template
-ms.contributors:
- - dominiquelee-ms 
 ---
 
 # Data loss prevention (DLP) policy creation
@@ -54,7 +53,7 @@ You can now classify desktop flow action groups when you create a data policy.
 
 ### Create a DLP policy with desktop flow restrictions
 
-When admins edit or create a policy, desktop flow action groups are added to the default group, and the policy is applied after it's saved. However, only desktop flow modules that are explicitly classified in a policy group (**Business**, **Non-business**, or **Blocked**) are enforced during DLP evaluation. Desktop flow modules that aren't explicitly added to any group are not subject to the default group classification and aren't blocked, even if the default group is set to **Blocked**. To enforce DLP restrictions on specific desktop flow modules, you must explicitly move them into the desired policy group.
+When admins edit or create a policy, desktop flow action groups are added to the default group, and the policy is applied after it's saved. However, only desktop flow modules that are explicitly classified in a policy group (**Business**, **Non-business**, or **Blocked**) are enforced during DLP evaluation. Desktop flow modules that aren't explicitly added to any group aren't subject to the default group classification and aren't blocked, even if the default group is set to **Blocked**. To enforce DLP restrictions on specific desktop flow modules, you must explicitly move them into the desired policy group.
 
 You can manage your DLP policies for desktop flows the same way you manage cloud flow connectors and actions. Desktop flow modules are groups of similar actions as displayed in the Power Automate for desktop user interface. A module is similar to connectors that are used in cloud flows. You can define a DLP policy that manages both desktop flow modules and cloud flow connectors. Some basic modules, such as **Variables**, can't be managed in the scope of DLP policy because almost all desktop flows need to use them. [Learn more about the fundamentals of DLP policies and how to create them](/power-platform/admin/wp-data-loss-prevention).
 
@@ -63,7 +62,7 @@ When your tenant is opted into the user experience in the Power Platform, your a
 :::image type="content" source="media/prevent-data-loss/prevent-dlp.png" alt-text="Screenshot of a DLP policy under construction in the Power Platform admin center.":::
 
 > [!WARNING]
-> When desktop flow modules are added to DLP policies, your tenant's desktop flows are evaluated against them, and they're suspended if they're non-compliant. If your administrator creates or updates the DLP policy without noticing the new modules, desktop flows can be unexpectedly suspended.
+> When desktop flow modules are added to DLP policies, your tenant's desktop flows are evaluated against them, and they're suspended if they're noncompliant. If your administrator creates or updates the DLP policy without noticing the new modules, desktop flows can be unexpectedly suspended.
 
 ### Govern desktop flows outside of DLP
 
@@ -218,11 +217,13 @@ Periodically, DLP enforcement needs to change because new DLP capabilities or a 
 
 1. **Investigating**: Confirm the need for a DLP enforcement change and investigate the specifics of the change.
 
-1. **Learning**: Implement the change and gather data about the breadth of the effects of the change. Document DLP enforcement changes to explain the scope of the change. If the data suggests that customers will be greatly affected, then a communication might be sent to those customers to let them know that a change is coming. If the change has a broad impact on existing flows, then at a later stage in the learning phase, when the background DLP enforcement job finds a violation in an existing flow, Power Automate notifies the flow owners that the flow will be suspended, so that they have more time to respond.
+1. **Learning**: Implement the change and gather data about the breadth of the effects of the change. Document DLP enforcement changes to explain the scope of the change. If the data suggests that customers will be greatly affected, then a communication might be sent to those customers to let them know that a change is coming.
+
+    If the change has a broad impact on existing flows, then at a later stage in the learning phase, when the background DLP enforcement job finds a violation in an existing flow, Power Automate notifies the flow owners that the flow will be suspended. This is done so the flow owners have more time to respond.
 
 1. **Notify only**: Turn on email notifications only for DLP violations so owners of existing flows get notified about the upcoming DLP enforcement change. When the background DLP enforcement job finds a violation in an existing flow, notify the flow owners that the flow will be suspended. This mechanism runs weekly.
 
-1. **Design-time enforcement**: Turn on design-time enforcement of DLP violations so that owners of existing flows get notified about the upcoming DLP enforcement change, but any flows that are changed get a full DLP policy evaluation at design time. This is also known as *soft enforcement*.
+1. **Design-time enforcement**: Turn on design-time enforcement of DLP violations so that owners of existing flows get notified about the upcoming DLP enforcement. Flows that are changed get a full DLP policy evaluation at design time. This is also known as *soft enforcement*.
 
     - **Design-time**: When a flow is updated and saved, use the updated DLP enforcement and suspend the flow if needed so the maker is immediately aware of the enforcement.
 
