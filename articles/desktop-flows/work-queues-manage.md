@@ -152,17 +152,17 @@ Status transitions rules have been established in order to optimize the lifecycl
 
 | Status      | Details                                                                                           | Allowed transitions |
 |-------------|--------------------------------------------------------------------------------------------------|--------------------|
-| **Queued**      | This is the default state when items enter the work queue, and the only state under which work queue item dequeuing is allowed. | Processing          |
-| **Processing**  | Indicating that the item is currently being processed.                                       | Processed, Exception|
-| **Processed**   | Indicating that the item is currently processing.                                             | Queued, On hold     |
-| **Exception**   | An exception has been raised during work item processing. Depending on your exception scenarios, you have the option to choose between **Generic**, **IT**, and **Business** **exceptions**.                                 | Queued, On hold     |
-| **On hold**    | A business or IT user has picked an item to review, assess, and potentially remediate issues.     | Queued              |
+| Queued      | This is the default state when items enter the work queue, and the only state under which work queue item dequeuing is allowed. | Processing          |
+| Processing  | Indicating that the item is currently being processed.                                       | Processed, Exception|
+| Processed   | Indicating that the item is currently processing.                                             | Queued, On hold     |
+| Exception   | An exception has been raised during work item processing. Depending on your exception scenarios, you have the option to choose between **Generic**, **IT**, and **Business** exceptions.                                 | Queued, On hold     |
+| On hold    | A business or IT user has picked an item to review, assess, and potentially remediate issues.     | Queued              |
 
 ## Work queues SLA
 
 Work Queues SLA lets organizations define, monitor, and manage service level expectations for items processed through work queues. By setting time-to-live (TTL), SLA violation, and at-risk thresholds, you ensure timely handling of queued work and proactively address delays. This capability improves operational efficiency, helps you stay compliant with business policies, and gives you better visibility into automation adherence to SLA requirements.
 
-Work Queues SLA is configured when [creating](#create-a-work-queue) or [editing](#edit-a-work-queue) your work queue, and can be managed on the work queue list page, work queue details page, and [automation center](../automation-center-overview.md#work-queues-tab).
+Work Queues SLA is configured when [creating](#create-a-work-queue) or [editing](#edit-a-work-queue) your work queue, and can be managed on the work queue list page, work queue details page, and [automation center](../automation-center-overview.md#work-queues-page).
 
 ### Example of a work queue SLA use case
 

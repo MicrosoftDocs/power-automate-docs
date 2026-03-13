@@ -84,8 +84,6 @@ Environment admins can view Power Automate analytics at the environment level in
 - Number of failed runs (no information about which flows failed)
 - The last 28 days of run history
 
-:::image type="content" source="media/ppac-flow-analytics.png" alt-text="Screenshot of flow analytics in the Power Platform admin center." lightbox="media/ppac-flow-analytics.png":::
-
 Learn more in [View analytics for cloud flows](/power-platform/admin/analytics-flow).
 
 ## Retrieve flow data programmatically with a connector
