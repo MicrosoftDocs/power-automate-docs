@@ -1,12 +1,12 @@
 ---
 title: Configure Power Automate for desktop proxy settings
 description: Configure the proxy settings of Power Automate for desktop to enable PAD components to access the Microsoft cloud services.
-author: PetrosFeleskouras
+author: NicholasRallakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 03/16/2026
-ms.author: pefelesk
+ms.author: nrallakis
 ms.reviewer: 
 contributors:
 - PetrosFeleskouras
