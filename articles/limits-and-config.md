@@ -26,6 +26,55 @@ ms.custom: bap-template
 
 This article contains information about the limits that apply to automated, scheduled, and instant flows, depending on which [Power Automate license](https://make.powerautomate.com/pricing) you have.
 
+## Find your limits quickly
+
+Use this table to find the limits that apply to your license. If you're not sure which license you have, go to [make.powerautomate.com](https://make.powerautomate.com) > **Settings** (gear icon) > **View my licenses**.
+
+| What you have | Daily action limit | Daily API requests | Concurrent runs | Flow duration |
+|---|---|---|---|---|
+| **Microsoft 365 / free** (seeded) | 6,000 actions/day | 6,000/day | 25 per flow | 30 days |
+| **Power Automate Premium** (per user) | 40,000 actions/day | 40,000/day | 500 per flow | 30 days |
+| **Power Automate Process** (per flow) | 250,000 actions/day | 250,000/day | 500 per flow | 30 days |
+| **Pay-as-you-go** | No daily cap (billed per action) | Based on usage | 500 per flow | 30 days |
+
+> [!NOTE]
+> These limits are per user or per flow depending on your license type. For the complete breakdown, see the detailed tables below. For licensing details, see [Power Automate licensing types](/power-platform/admin/power-automate-licensing/types).
+
+## Common questions about limits
+
+### What counts as an action?
+
+Each operation that runs inside your flow counts as one action. This includes triggers, conditions, loops (each iteration counts), and every connector call. A flow with a trigger, a condition, and two actions that runs once uses four actions. If that flow has a loop that iterates 10 times over one action, that single run uses 14 actions (trigger + condition + 10 loop iterations + 2 other actions).
+
+For more details, see [Action request limits](#action-request-limits).
+
+### What happens when I hit my limit?
+
+When you reach your daily action limit:
+
+- **Your flows are not deleted or disabled.** They are throttled for the remainder of the 24-hour window.
+- **Queued actions resume** the next day when the limit resets (midnight UTC).
+- **Critical flows keep running** but may experience delays.
+
+If you consistently hit limits, consider upgrading to a higher-tier license or optimizing your flows to use fewer actions. See [Optimize your flows to use fewer actions](/power-automate/guidance/planning/optimizing-flows).
+
+### How do I check my current usage?
+
+Admins can view action usage in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) under **Analytics** > **Power Automate**. Individual makers can see per-flow run history at [make.powerautomate.com](https://make.powerautomate.com) by selecting a flow and viewing **Run history**.
+
+> [!TIP]
+> If you see "Request was throttled" errors in your flow run history, you've hit a request limit. Check which limit applies to your license in the table above.
+
+### Does each flow get its own limit, or is it shared?
+
+For **per-user licenses** (Microsoft 365, Power Automate Premium): The limit is shared across all flows that run under your account in a 24-hour period.
+
+For **per-flow licenses** (Power Automate Process): Each licensed flow gets its own dedicated limit of 250,000 actions/day, independent of other flows.
+
+### What is the difference between actions and API requests?
+
+In most cases, one action equals one API request. However, some actions (like composing a variable or using a condition) are internal and don't make an API call but still count toward your action limit. Connector-specific throttling (for example, SharePoint limiting 600 requests per minute) is separate from your license limit.
+
 ## Performance profiles
 
 A flow's *performance profile* determines its Power Platform request limits. The following table describes the plans that are associated with each of the four performance profiles.
@@ -231,6 +280,9 @@ To change the default settings, use the retry policy parameter.
 When you turn off a cloud flow, no new runs are started. All in-progress and pending runs continue until they finish.
 
 When you delete a cloud flow, no new runs are started. All in-progress and pending runs are canceled. If you have thousands of runs, cancellation might take significant time to complete.
+
+> [!TIP]
+> **Is my connector standard or premium?** Go to [Power Automate connectors](https://make.powerautomate.com/connectors) and search for your connector. Premium connectors show a diamond icon. Common premium connectors include: SQL Server, HTTP (with Microsoft Entra ID), Dataverse, SAP, Salesforce, and Adobe. Common standard connectors include: SharePoint, Outlook, Teams, OneDrive, Excel, and Approvals.
 
 ## Custom connector limits
 
