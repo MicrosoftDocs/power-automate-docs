@@ -99,13 +99,11 @@ Desktop flows offer two more error handling options. Select **New rule** to:
 
 If different errors require different error handling functionality, select **Advanced** and configure each possible error separately.
 
-#### Self-healing for UI and browser automation (preview)
+#### Self-healing (preview) for UI and browser automation
 
 Self-healing in Power Automate for desktop is an AI-powered capability, which helps desktop flows recover from UI and browser automation failures caused by missing or changed UI elements. Instead of stopping the flow when an element can’t be found, Self-healing can attempt to identify the most likely correct element at runtime and continue the flow run.
 
-> [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and might have restricted functionality.
+You can find more information about Self-healing (preview) in this [article](./self-healing.md).
 
 ### Handle errors of group of actions
 
