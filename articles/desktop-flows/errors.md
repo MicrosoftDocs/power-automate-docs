@@ -103,7 +103,7 @@ If different errors require different error handling functionality, select **Adv
 
 Self-healing in Power Automate for desktop is an AI-powered capability, which helps desktop flows recover from UI and browser automation failures caused by missing or changed UI elements. Instead of stopping the flow when an element can’t be found, Self-healing can attempt to identify the most likely correct element at runtime and continue the flow run.
 
-You can find more information about Self-healing (preview) in this [article](./self-healing.md).
+Self-healing (preview) is currently available only for specific UI and browser automation actions that interact with a single UI element, and applies only to *Element not found* errors. You can find more information about Self-healing (preview) in this [article](./self-healing.md).
 
 ### Handle errors of group of actions
 
