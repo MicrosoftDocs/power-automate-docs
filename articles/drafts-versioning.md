@@ -9,7 +9,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 07/18/2025
+ms.date: 03/20/2026
 ms.author: kisubedi
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -61,7 +61,9 @@ When you're ready for changes to a flow to have an effect at runtime, the flow c
 
 ## Version history
 
-Review a flow's version history list to understand how it evolved. View flow versions grouped by day with indicators for *Latest version*, *Published*, and *Past published*.
+To understand a flow's version history, review the list to see how it evolved. View flow versions grouped by day with indicators for *Latest version*, *Published*, and *Past published*.
+
+Draft records expire after six (6) months, and published records expire after 12 months.
 
 1. Open the flow in the designer.
 1. Select **Version history**.
