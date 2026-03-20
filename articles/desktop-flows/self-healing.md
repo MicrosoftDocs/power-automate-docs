@@ -1,7 +1,7 @@
 ---
 title: Self-healing (preview)
 description: AI‑powered self‑healing when UI or web actions fail at runtime, allowing flows to continue instead of stopping on errors 
-ms.date: 03/19/2026
+ms.date: 03/20/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: yiannismavridis
