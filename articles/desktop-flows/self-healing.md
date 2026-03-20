@@ -60,9 +60,9 @@ Currently, Self-healing (preview):
 * Applies only to *Element not found* errors.
 * Doesn’t apply to window handling, screen handling, or actions that interact with multiple elements.
 
-### How to turn on the feature
+## How to turn on the feature
 
-#### Required admin configuration
+### Required admin configuration
 
 Self-healing relies on generative AI models and requires all of the following settings to be enabled:
 
@@ -70,13 +70,16 @@ Self-healing relies on generative AI models and requires all of the following se
 > [!NOTE]
 > - Microsoft enables Anthropic models by default for most customers in commercial cloud (excluding EU/EFTA and UK).
 > - Anthropic models aren't currently available for use in government clouds (GCC, GCC High, DoD) or sovereign clouds.
+
 * In Power Platform admin center, navigate to [Copilot > Settings](https://admin.powerplatform.microsoft.com/copilot/settings), then under the Power Platform section expand **External models** and enable **Anthropic** as a subprocessor at environment or environment group level. You can learn more about external language models in this [article](https://learn.microsoft.com/power-platform/admin/allow-llm-generative-responses).
+
 * In Power Platform admin center, navigate to [Manage > Environments](https://admin.powerplatform.microsoft.com/manage/environments). Select your environment so that its details are displayed, then in the **Generative AI features** card, select Edit. The Generative AI features pane is displayed; review the terms of use and select the **Move data across regions** checkbox. You can learn more about cross-region data movement in this [article](https://learn.microsoft.com/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features).
 > [!NOTE]
 > - The **Move data across regions** checkbox isn't displayed or needed for US cloud regions.
-* 
 
-#### Required configuration in Power Automate for desktop
+* In Power Platform admin center, navigate to [Manage > Environments](https://admin.powerplatform.microsoft.com/manage/environments). Select your environment so that its details are displayed, then select **Settings**, expand the **Product** section and select **Features**. Under Copilot, enable the **Copilot features** toggle.
+
+### Required configuration in Power Automate for desktop
 - You need version 2.66 or higher for Power Automate for desktop.
 - For repairing with Copilot, ensure the Copilot setting in the Power Platform Admin Center is turned on.
 - Turn on the use of AI for self-healing issues. The **Repair at runtime** setting for the desired run mode (`attended` and `unattended`) can be found under the **Desktop flow repair at runtime configuration** setting in the Power Platform admin center.
