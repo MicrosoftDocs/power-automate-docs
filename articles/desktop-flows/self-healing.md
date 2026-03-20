@@ -31,7 +31,7 @@ Copilot in Power Automate for desktop offers different capabilities, which are a
 
 ### Availability by account type
 
-Currently, Self-healing (preview) in Power Automate for desktop is available for premium or trial organization users and is provided at no additional cost. Usage may be sunject to service limits or changes.
+Currently, Self-healing (preview) in Power Automate for desktop is available for organization premium accounts and is provided at no additional cost. Usage may be sunject to service limits or changes.
 
 ## Self-healing (preview) for UI and browser automation actions at runtime
 
@@ -40,7 +40,7 @@ UI and web automation flows can fail when:
 * Desktop apps or web pages change underlying element identifiers.
 * UI elements remain visually similar, but their selectors no longer match.
 
-Traditional error handling relies on deterministic retries and can’t adapt to these changes. Self-healing (preview) introduces an AI-powered fallback that attempts to recover automatically from 'Element not found' errors, improving flow resilience and reducing manual intervention.
+Traditional error handling relies on deterministic retries and can’t adapt to these changes. Self-healing (preview) introduces an AI-powered fallback that attempts to recover automatically from 'Element not found' errors, improving flow resilience and reducing flow error rates, before a manual intervention takes place later for the required flow adjustments.
 
 When a supported UI or browser automation action fails with an 'Element not found' error at runtime, Power Automate for desktop evaluates error handling for individual actions in the following order:
 
@@ -62,10 +62,18 @@ Currently, Self-healing (preview):
 * Applies only to *Element not found* errors.
 * Doesn’t apply to window handling, screen handling, or actions that interact with multiple elements.
 
-
 ### How to turn on the feature
 
-- You need Power Automate desktop version 2.51 (11.2412.xxx.y) or higher. Learn how to download the latest version at [Install Power Automate](https://aka.ms/DownloadPAD48).
+#### Required admin configuration
+
+Self-healing relies on generative AI models and requires all of the following settings to be enabled:
+
+* In Microsoft 365 admin center, navigate to [Copilot > Settings](https://admin.cloud.microsoft/?#/copilot/settings/ViewAll), then select **AI providers operating as Microsoft subprocessors**. Enable **Anthropic** provider as a subprocessor for your organization. You can learn more about AI subprocessors in this [article](https://learn.microsoft.com/copilot/microsoft-365/connect-to-ai-subprocessor). Microsoft enables Anthropic models by default for most customers in commercial cloud (excluding EU/EFTA and UK).
+* In Power Platform admin center, navigate to [Copilot > Settings](https://admin.powerplatform.microsoft.com/copilot/settings), then under the Power Platform section expand External models and enable Anthropic as a subprocessor at environment or environment group level. You can learn more about external language models in this [article](https://learn.microsoft.com/power-platform/admin/allow-llm-generative-responses).
+* 
+
+#### Required configuration in Power Automate for desktop
+- You need version 2.66 or higher for Power Automate for desktop.
 - For repairing with Copilot, ensure the Copilot setting in the Power Platform Admin Center is turned on.
 - Turn on the use of AI for self-healing issues. The **Repair at runtime** setting for the desired run mode (`attended` and `unattended`) can be found under the **Desktop flow repair at runtime configuration** setting in the Power Platform admin center.
 
@@ -78,10 +86,6 @@ Currently, Self-healing (preview):
   - **Repair**: This option turns on manual issue resolution, requiring you to specify the UI element on the screen at the moment of failure during runtime.
 
 :::image type="content" source="media/repair-with-copilot/repair_flow_properties.png" alt-text="Screenshot for turning on the feature in flow properties.":::
-
-
-
-
 
 
 
