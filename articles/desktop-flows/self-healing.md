@@ -82,17 +82,20 @@ Self-healing relies on generative AI models and requires all of the following se
 ### Required configuration in Power Automate for desktop
 - You need version 2.66 or higher for Power Automate for desktop.
 - Self-healing is enabled per action:
-  - Select a supported UI or browser automation action in the flow designer.
+  - Select a supported UI or browser automation action in the flow designer. If Self-healing is available for that action, the respective visual indicator will appear upon action hover in the workspace.
+    
+    :::image type="content" source="media/self-healing/self-healing-availability-indicator.png" alt-text="Screenshot of self-healing availability indicator.":::
   - Open the **Error handling** settings.
   - Turn on **Self-healing (Preview)**.
+    
+    :::image type="content" source="media/self-healing/self-healing-toggle-enabled.png" alt-text="Screenshot of self-healing toggle in error handling":::
   
   When enabled, the action can automatically retry using AI when the element isn’t found at runtime.
 
+  :::image type="content" source="media/self-healing/self-healing-enabled-indicator.png" alt-text="Screenshot of enabled self-healing icon":::
+
 > [!NOTE]
 > Because Self-healing uses generative AI, it might occasionally identify an unintended UI element
-
-    :::image type="content" source="media/repair-with-copilot/repair-with-copilot-ppac-setting.png" alt-text="Screenshot of repair at runtime setting for the respective run mode." lightbox="media/repair-with-copilot/repair-with-copilot-ppac-setting.png":::
-
 
 ## Known limitations
 
