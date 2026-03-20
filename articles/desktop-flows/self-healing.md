@@ -25,9 +25,7 @@ Self-healing (preview) in Power Automate for desktop is an AI-powered capability
 
 ### Availability by region
 
-Copilot in Power Automate for desktop offers different capabilities, which are available in environments located in the following countries/regions:
-
-- United States
+Self-healing isn't currently available for use in government clouds (GCC, GCC High, DoD) or sovereign clouds.
 
 ### Availability by account type
 
@@ -68,8 +66,14 @@ Currently, Self-healing (preview):
 
 Self-healing relies on generative AI models and requires all of the following settings to be enabled:
 
-* In Microsoft 365 admin center, navigate to [Copilot > Settings](https://admin.cloud.microsoft/?#/copilot/settings/ViewAll), then select **AI providers operating as Microsoft subprocessors**. Enable **Anthropic** provider as a subprocessor for your organization. You can learn more about AI subprocessors in this [article](https://learn.microsoft.com/copilot/microsoft-365/connect-to-ai-subprocessor). Microsoft enables Anthropic models by default for most customers in commercial cloud (excluding EU/EFTA and UK).
-* In Power Platform admin center, navigate to [Copilot > Settings](https://admin.powerplatform.microsoft.com/copilot/settings), then under the Power Platform section expand External models and enable Anthropic as a subprocessor at environment or environment group level. You can learn more about external language models in this [article](https://learn.microsoft.com/power-platform/admin/allow-llm-generative-responses).
+* In Microsoft 365 admin center, navigate to [Copilot > Settings](https://admin.cloud.microsoft/?#/copilot/settings/ViewAll), then select **AI providers operating as Microsoft subprocessors**. Enable **Anthropic** provider as a subprocessor for your organization. You can learn more about AI subprocessors in this [article](https://learn.microsoft.com/copilot/microsoft-365/connect-to-ai-subprocessor).
+> [!NOTE]
+> - Microsoft enables Anthropic models by default for most customers in commercial cloud (excluding EU/EFTA and UK).
+> - Anthropic models aren't currently available for use in government clouds (GCC, GCC High, DoD) or sovereign clouds.
+* In Power Platform admin center, navigate to [Copilot > Settings](https://admin.powerplatform.microsoft.com/copilot/settings), then under the Power Platform section expand **External models** and enable **Anthropic** as a subprocessor at environment or environment group level. You can learn more about external language models in this [article](https://learn.microsoft.com/power-platform/admin/allow-llm-generative-responses).
+* In Power Platform admin center, navigate to [Manage > Environments](https://admin.powerplatform.microsoft.com/manage/environments). Select your environment so that its details are displayed, then in the **Generative AI features** card, select Edit. The Generative AI features pane is displayed; review the terms of use and select the **Move data across regions** checkbox. You can learn more about cross-region data movement in this [article](https://learn.microsoft.com/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features).
+> [!NOTE]
+> - The **Move data across regions** checkbox isn't displayed or needed for US cloud regions.
 * 
 
 #### Required configuration in Power Automate for desktop
