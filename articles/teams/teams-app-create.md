@@ -133,3 +133,4 @@ If you target individual applications in your CA policy and the requirements dif
 - [Training: Create apps, copilots, flows, and more with Microsoft Dataverse and Teams (learning path)](/training/paths/work-power-platform-teams/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

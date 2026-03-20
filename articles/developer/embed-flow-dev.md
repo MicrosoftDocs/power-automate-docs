@@ -263,8 +263,6 @@ Applies to ApprovalCenter widgets.
 | `showSimpleEmptyPage`| Optional | Shows an empty page when there are no approvals | 
 | `hideInfoPaneCloseButton` | Optional | Hides the info-pane Close button (or the host already has a Close button) | 
 
-<!-- why isn't this: hideInfoPaneCloseButton listed in the approvalCenterSettings? call since other optionals are there -->
-
 ## Widget events
 
 The Power Automate widget supports events that let the host listen to widget life-cycle events. The Power Automate widget supports two types of events: one-way notification events (for example, Widget\_Ready) and events raised from the widget to fetch data from the host (Get\_Access\_Token). The host needs to use the widget.listen() method to listen to specific events raised from the widget.

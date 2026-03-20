@@ -98,3 +98,4 @@ The stacked entitlement is shared by the flow, its child flows, and any cloud fl
 - [Power Automate action limits and allocations](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate)
 - [Power Platform request reports in the admin center](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview)
 - [Process license stacking FAQ](/power-platform/admin/power-automate-licensing/faqs#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow)
+ 

@@ -82,3 +82,4 @@ If your organization uses Conditional Access policies (MFA, Terms of Use, or dev
 - [Training: Integrate SharePoint and Power Automate (learning path)](/training/paths/integrate-power-automate/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
+
