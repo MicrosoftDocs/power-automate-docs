@@ -1,12 +1,12 @@
 ---
-title: Integrate Power Automate with websites and apps | Microsoft Docs
+title: Integrate Power Automate with websites and apps
 description: Embed the Power Automate experiences into your website or app.
-author: v-aangie
+author: radioblazer
 ms.service: power-automate
 ms.subservice: developer
 ms.topic: how-to
-ms.date: 10/10/2024
-ms.author: angieandrews
+ms.date: 03/20/2026
+ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
   - developer
@@ -15,7 +15,7 @@ search.audienceType:
 
 Embed Power Automate into your app or website using *flow widgets* to give your users a simple way to automate their personal or professional tasks.
 
-Flow widgets are iframes located in a host document. This document points to a page in the Power Automate designer. These widgets integrate specific Power Automate functionality into the third-party application.
+Flow widgets are iframes located in a host document. This document points to a page in the Power Automate designer. These widgets integrate specific Power Automate functionality into the non-Microsoft application.
 
 Widgets can be simple. For example, a widget that renders a list of templates with no communication between the host and iframe. Widgets can also be complex. For example, a widget that provisions a cloud flow from a template and then triggers the flow via two-way communication between the host and the widget.
 
@@ -25,9 +25,11 @@ Widgets can be simple. For example, a widget that renders a list of templates wi
 - A work or school account
 
 ## Use the unauthenticated widget
-To use the unauthenticated templates widget, embed it directly into the host application using an iframe. You don't need the JS SDK or an access token. 
+
+To use the unauthenticated templates widget, embed it directly into the host application using an iframe. You don't need the JS SDK or an access token.
 
 ### Show templates for your scenarios
+
 To start, add this code to show the Power Automate templates on your website:
 
 ```html
@@ -46,7 +48,7 @@ To start, add this code to show the Power Automate templates on your website:
 
 If the destination parameter is `new`, the Power Automate designer opens when users select a template. Users can then create a cloud flow in the designer. See the next section if you want to have the full experience from the widget.
 
-### Passing additional parameters to the flow template
+### Passing more parameters to the flow template
 
 If the user is in a specific context in your website or app, you might want to pass that context to the flow. For example, a user might open a template for *When an item is created* while looking at a certain list in SharePoint. Follow these steps to pass in the list ID as a *parameter* to the flow:
 
@@ -63,7 +65,7 @@ To show the top four SharePoint templates in German and to start the user with *
 
 ## Use the authenticated flow widgets
 
-The following table shows the list of Power Automate widgets that support the full experience within the widget using user authentication access token. You will need to use Power Automate's JavaScript Software Developer Kit (JS SDK) to embed the widgets and provide the required user access token.
+The following table shows the list of Power Automate widgets that support the full experience within the widget using user authentication access token. You need to use Power Automate's JavaScript Software Developer Kit (JS SDK) to embed the widgets and provide the required user access token.
 
 | Widget type    | Supported feature                                                                                                                  | 
 |----------------|------------------------------------------------------------------------------------------------------------------------------------| 
@@ -73,10 +75,10 @@ The following table shows the list of Power Automate widgets that support the fu
 | approvalCenter | Embeds approval requests and sent approvals.                                                                                        | 
 | templates      | Shows a list of templates. The user chooses one to create a new flow.                                                                         | 
 
-Use the authenticated Flow SDK to allow users to create and manage flows directly from your website or app (instead of navigating to  Power Automate). You'll need to sign the user in with their Microsoft Account or Microsoft Entra to use the authenticated SDK.
+Use the authenticated Flow SDK to allow users to create and manage flows directly from your website or app (instead of navigating to  Power Automate). You need to sign the user in with their Microsoft Account or Microsoft Entra to use the authenticated SDK.
 
 > [!NOTE]
-> There is no way to hide the Power Automate branding when you use widgets.
+> There's no way to hide the Power Automate branding when you use widgets.
 
 ## Widget architecture
 
@@ -86,7 +88,7 @@ Power Automate widgets work by embedding an iframe that references Power Automat
 
 ### JS SDK details
 
-The Power Automate team provides the JS SDK to facilitate integrating Flow widgets in third-party applications. The Flow JS SDK is available as a public link in the Flow service and lets the host application handle events from the widget and interact with the Flow application by sending actions to the widget. Widget events and actions are specific to the widget type.
+The Power Automate team provides the JS SDK to facilitate integrating Flow widgets in non-Microsoft applications. The Flow JS SDK is available as a public link in the Flow service and lets the host application handle events from the widget and interact with the Flow application by sending actions to the widget. Widget events and actions are specific to the widget type.
 
 ### Widget initialization
 
@@ -97,7 +99,7 @@ The Flow JS SDK reference needs to be added to the host application before initi
 ```
 
 > [!NOTE]
-> - The recommended way to include the Flow JS SDK in your application is using the above reference. Adding a local copy of the Flow JS SDK to your application or web page can result in you using an older unsupported version of the SDK over time causing breaks in functionality.
+> - The recommended way to include the Flow JS SDK in your application is using the previous reference. Adding a local copy of the Flow JS SDK to your application or web page can result in you using an older unsupported version of the SDK over time causing breaks in functionality.
 > - Power Automate stores some data such as user identity and preferences locally leveraging your browsers capabilities. Problems occur if the browser blocks storage of such local data, or third-party cookies set by Power Automate. Users need to enable third party cookies in their browser in order for the widget to load correctly.
 
 Create a JS SDK instance by passing optional hostName and locale values in a JSON object.
@@ -160,7 +162,7 @@ These are the parameters for `renderWidget()`:
 
 ### Access tokens
 
-After the JS SDK `renderWidget()` runs, the JS SDK initializes an iframe which points to the Power Automate widget URL. This URL contains all the settings in the query string parameters. The host application needs to get a Power Automate access token for the user (Microsoft Entra ID JWT token with audience `https://service.flow.microsoft.com`) before it initializes the widget. The widget raises a `GET_ACCESS_TOKEN` event to request an access token from the host. The host needs to handle the event and pass the token to the widget:
+After the JS SDK `renderWidget()` runs, the JS SDK initializes an iframe, which points to the Power Automate widget URL. This URL contains all the settings in the query string parameters. The host application needs to get a Power Automate access token for the user (Microsoft Entra ID JWT token with audience `https://service.flow.microsoft.com`) before it initializes the widget. The widget raises a `GET_ACCESS_TOKEN` event to request an access token from the host. The host needs to handle the event and pass the token to the widget:
 
 ```javascript
 widget.listen("GET_ACCESS_TOKEN", function(requestParam, widgetDoneCallback) {
@@ -171,6 +173,20 @@ widget.listen("GET_ACCESS_TOKEN", function(requestParam, widgetDoneCallback) {
 ```
 
 The host application is responsible for maintaining the token and passing it with a valid expiry date to the widget when requested. If the widget is open for longer periods, the host should check if the token is expired and refresh the token if it's needed before passing it to the widget.
+
+### Conditional Access requirements for embedded widgets
+
+If your organization uses Conditional Access policies (MFA, Terms of Use, or device compliance), the host application that embeds the Power Automate widget must have consistent Conditional Access requirements with Power Automate.
+
+When the widget loads, the host application exchanges its authentication token for a Microsoft Flow Service token. If the Conditional Access policies for the host application and Power Automate have different requirements, this exchange fails and the widget displays an authentication error. Terms of Use policies are especially problematic because the widget can't present the acceptance page during a silent token exchange.
+
+To avoid this issue:
+
+- Target the **Office 365** app or **All cloud apps** in your Conditional Access policy for consistent enforcement.
+- If you must target individual apps, ensure **Microsoft Flow Service** (Application ID: `7df0a125-d3be-4c96-aa54-591f83ff541c`) is included alongside the host application with matching requirements.
+- If your policy includes Terms of Use, exclude service accounts and flow connection owners&mdash;connections refresh tokens silently and can't accept Terms of Use interactively.
+
+Learn more in [Conditional Access and multifactor authentication in Power Automate](/troubleshoot/power-platform/power-automate/administration/conditional-access-and-multi-factor-authentication-in-flow).
 
 ### Detecting if the widget is ready
 
@@ -185,7 +201,7 @@ widget.listen("WIDGET_READY", function() {
 
 ## Widget settings
 
-### FlowsSettings 
+### FlowsSettings
 
 FlowsSettings can be used to customize the functionality of the Power Automate widget.
 
@@ -242,7 +258,7 @@ Applies to ApprovalCenter widgets.
 | Parameter | Required/Optional | Description | 
 |------------|-------------------|--------------| 
 | `hideLink`| Optional | When set to `true`, the widget hides the received and the sent approval links | 
-| `approvalsFilter`| Optional | The approval widget will apply the specified approval filter when listing the approvals, for example:    The approval widget will apply the specified approval filter when listing the approvals, for example: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
+| `approvalsFilter`| Optional | The approval widget applies the specified approval filter when listing the approvals, for example:    The approval widget applies the specified approval filter when listing the approvals, for example: <br/> ``` approvalsFilter: 'properties/itemlink eq \'https://microsoft.sharepoint.com/teams/ProcessSimple/_layouts/15/listform.aspx?PageType=4&ListId=737e30a6-5bc4-4e9c-bcdc-d34c5c57d938&ID=3&ContentTypeID=0x010010B708969A9C16408696FD23801531C6\'' ```  <br/> <br/>``` approvalsFilter: 'properties/itemlinkencoded eq \'{Your base64 encoded item link url} \'' ```|
 | `tab`| Optional | Default active tab to show in the Flow widget. <br/> Valid values : 'receivedApprovals', 'sentApprovals' | 
 | `showSimpleEmptyPage`| Optional | Shows an empty page when there are no approvals | 
 | `hideInfoPaneCloseButton` | Optional | Hides the info-pane Close button (or the host already has a Close button) | 
@@ -332,7 +348,7 @@ widget.notify('<WIDGET_ACTION>', parameterMatchingParameterInterface)
     .catch(error => console.log(error))
  ```
 
-### Example 
+### Example
 
 Invoke a cloud flow by sending the following command to a runtime widget 
 
@@ -363,9 +379,9 @@ widget.notify('triggerFlow', { flowName: flowName, implicitData:implicitData });
 |----------------|---------------------------------------------------|----------------------| 
 | `closeInfoPane`  | Closes the info-pane displaying approval details  | N/A                  | 
 
-## Configuring your client application
+## Configure your client application
 
-You will need to configure your client application with Flow Service Scopes (Delegated Permissions). If the Microsoft Entra (Microsoft Entra ID) app used for the widget integration uses a 'code grant' authorization flow, the Microsoft Entra app needs to be preconfigured with delegated permissions that are supported by Power Automate. This provides delegated permissions that let the application:
+You need to configure your client application with Flow Service Scopes (Delegated Permissions). If the Microsoft Entra (Microsoft Entra ID) app used for the widget integration uses a 'code grant' authorization flow, the Microsoft Entra app needs to be preconfigured with delegated permissions that are supported by Power Automate. This provides delegated permissions that let the application:
 
 -   Manage approvals
 -   Read approvals
@@ -376,56 +392,57 @@ You will need to configure your client application with Flow Service Scopes (Del
 Follow these steps to select one or more delegated permissions:
 
 1.  Go to https://portal.azure.com 
-2.  Select **Microsoft Entra ID**.
-3.  Select **App registrations** under **Manage**.
-4.  Enter the third-party application to be configured for Flow service scopes.
-5.  Select **Settings**.
+1.  Select **Microsoft Entra ID**.
+1.  Select **App registrations** under **Manage**.
+1.  Enter the non-Microsoft application to be configured for Flow service scopes.
+1.  Select **Settings**.
       ![Screenshot locating the settings icon for the application.](../media/embed-flow-dev/Microsoft Entra ID-App-Settings.png)
-6. Select **Required permissions** under **API access**/
-7. Select **Add**.
-8. Choose **Select an API**.
+1. Select **Required permissions** under **API access**/
+1. Select **Add**.
+1. Choose **Select an API**.
       ![Screenshot locating required permissions, add, and select an A P I.](../media/embed-flow-dev/Microsoft Entra ID-App-Select-an-API.png)
-9. Search for **Power Automate service** and select it. Note: Before you can see Power Automate service, your tenant needs to  have at least one Microsoft Entra user signed into the Flow portal (<https://make.powerautomate.com>)
-10. Choose the required Flow scopes for your application then select **Save**.
+1. Search for **Power Automate service** and select it. Note: Before you can see Power Automate service, your tenant needs to  have at least one Microsoft Entra user signed into the Flow portal (<https://make.powerautomate.com>)
+1. Choose the required Flow scopes for your application then select **Save**.
       ![Screenshot showing the delegated permissions.](../media/embed-flow-dev/Microsoft Entra ID-App-DelegatedPermissions.png)
 
-Your application will now get a Flow Service token that contains delegated permissions in the \'scp' claim in the JWT token.
+Your application now gets a Flow Service token that contains delegated permissions in the \'scp' claim in the JWT token.
 
-## Sample application embedding flow widgets 
+## Sample application embedding flow widgets
 
 A sample JavaScript Single Page Application (SPA) is provided in the resources section so you can experiment with embedding flow widgets in a host page. Using the sample application requires registering a Microsoft Entra application with implicit grant flow enabled.
 
 ### Registering a Microsoft Entra app
 
-1.  Sign in to the [Azure portal](https://portal.azure.com/).
-2.  In the left navigation pane, select **Microsoft Entra**, then select **App registrations** (Preview) \> New registration.
-3.  When the **Register an application** page appears, enter a name for your application.
-4.  Under **Supported account types**, select **Accounts** in any organizational directory.
-5.  Under the **Redirect URL** section, select the web platform and set the value to the application\'s URL based on your web server.  Configure this value to http://localhost:30662/ to run the sample app.
-6.  Select **Register**.
-7.  On the app **Overview** page, note the application (client) ID value.
-8.  The sample requires [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) to be enabled. In the left navigation pane of the registered application, select **Authentication**.
-9.  In **Advanced settings**, under **Implicit grant**, enable both **ID tokens** and **Access tokens** checkboxes. ID tokens and access
-    tokens are required since this app needs to sign in users and call Flow API.
-10. Select **Save**.
+1. Sign in to the [Azure portal](https://portal.azure.com/).
+1. In the left navigation pane, select **Microsoft Entra**, then select **App registrations** (Preview) \> New registration.
+1. When the **Register an application** page appears, enter a name for your application.
+1. Under **Supported account types**, select **Accounts** in any organizational directory.
+1. Under the **Redirect URL** section, select the web platform and set the value to the application's URL based on your web server. Configure this value to http://localhost:30662/ to run the sample app.
+1. Select **Register**.
+1. On the app **Overview** page, note the application (client) ID value.
+1. The sample requires [implicit grant flow](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow) to be enabled. In the left navigation pane of the registered application, select **Authentication**.
+1. In **Advanced settings**, under **Implicit grant**, enable both **ID tokens** and **Access tokens** checkboxes. ID tokens and access tokens are required since this app needs to sign in users and call Flow API.
+1. Select **Save**.
 
-### Running the sample
-<!-- todo where should I download from? -->
-1.  Download the sample and copy it to a local folder on your device.
-2.  Open the index.html file under the FlowSDKSample folder and modify the `applicationConfig` to update the `clientID` to the application ID you registered earlier.
+### Run the sample
+
+1. Download the sample and copy it to a local folder on your device.
+1. Open the index.html file under the FlowSDKSample folder and modify the `applicationConfig` to update the `clientID` to the application ID you registered earlier.
     ![Screenshot of the index dot h t m l file locating the client I D.](../media/embed-flow-dev/SampleApp-ApplicationConfig.png)
-3.  The sample app is configured to use Flow scopes **Flows.Read.All** and **Flow.Manage.All.** You can configure additional scopes by updating the **flowScopes** property in **applicationConfig** object.
-4.  Run these commands to install the dependency and run the sample app:
+1. The sample app is configured to use Flow scopes **Flows.Read.All** and **Flow.Manage.All.** You can configure more scopes by updating the **flowScopes** property in **applicationConfig** object.
+1. Run these commands to install the dependency and run the sample app:
     > \> npm install 
     > \> node server.js
-5. Open the browser and then enter http://localhost:30662
-6. Select the **Sign in** button to authenticate to Microsoft Entra and acquire a cloud flow access token.
-7. The **Access Token** text box contains the access token.
+1. Open the browser and then enter http://localhost:30662
+1. Select the **Sign in** button to authenticate to Microsoft Entra and acquire a cloud flow access token.
+1. The **Access Token** text box contains the access token.
     ![Screenshot showing the access token box containing an access token.](../media/embed-flow-dev/SampleApp-AccessToken.png)
-8. Select **Load Flows widget** or **Load Templates widget** to embed the corresponding widgets.
+1. Select **Load Flows widget** or **Load Templates widget** to embed the corresponding widgets.
     ![Screenshot showing buttons to embed the Load Flows widget or the Load Templates widget.](../media/embed-flow-dev/SampleApp-TemplatesWidget.png)
 
 ## Resources
+
+The following resources include widget test pages and supported widget locales.
 
 ### Widget test pages
 
@@ -439,49 +456,49 @@ Find out more about widget integration and settings:
 
 ### Supported widget locales
 
-If the initialized locale isn't listed, Flow will default to the closest supported locale.
+If the initialized locale isn't listed, Flow defaults to the closest supported locale.
 
-| Locale     | Language                   | 
-|------------|----------------------------| 
-| bg-bg      | Bulgarian (Bulgaria)       | 
-| ca-es      | Catalan (Catalan)            | 
-| cs-cz      | Czech (Czech Republic)     | 
-| da-dk      | Danish (Denmark)           | 
-| de-de      | German (Germany)           | 
-| el-gr      | Greek (Greece)             | 
-| en-Us      | English (United States)    | 
-| es-es      | Spanish (Castilian)        | 
-| et-ee      | Estonian (Estonia)         | 
-| eu-es      | Basque (Basque)             | 
-| fi-fi      | Finnish (Finland)          | 
-| fr-fr      | French (France)            | 
-| gl-es      | Galician (Galician)           | 
-| hi-HU      | Hungarian (Hungary)        | 
-| hi-in      | Hindi (India)              | 
-| hr-hr      | Croatian (Croatia)         | 
-| id-Id      | Indonesian (Indonesia)     | 
-| it-It      | Italian (Italy)            | 
-| jp-Jp      | Japanese (Japan)           | 
-| kk-kz      | Kazakh (Kazakhstan)        | 
-| ko-kr      | Korean (Korea)             | 
-| lt-LT      | Lithuanian (Lithuania)     | 
-| lv-lv      | Latvian (Latvia)           | 
-| ms-my      | Malay (Malaysia)           | 
-| nb-no      | Norwegian (Bokmål)         | 
-| nl-nl      | Dutch (Netherlands)        | 
-| pl-pl      | Polish (Poland)            | 
-| pt-br      | Portuguese (Brazil)        | 
-| pt-pt      | Portuguese (Portugal)      | 
-| ro-ro      | Romanian (Romania)         | 
-| ru-ru      | Russian (Russia)           | 
-| sk-sk      | Slovak (Slovakia)          | 
-| sl-si      | Slovenian (Slovenia)       | 
-| sr-cyrl-rs | Serbian (Cyrillic, Serbia) | 
-| sr-latn-rs | Serbian (Latin, Serbia)    | 
-| sv-se      | Swedish (Sweden)           | 
-| th-th      | Thai (Thailand)            | 
-| tr-tr      | Turkish (Türkiye)           | 
-| uk-ua      | Ukrainian (Ukraine)        | 
+| Locale     | Language                   |
+|------------|----------------------------|
+| bg-bg      | Bulgarian (Bulgaria)       |
+| ca-es      | Catalan (Catalan)            |
+| cs-cz      | Czech (Czech Republic)     |
+| da-dk      | Danish (Denmark)           |
+| de-de      | German (Germany)           |
+| el-gr      | Greek (Greece)             |
+| en-Us      | English (United States)    |
+| es-es      | Spanish (Castilian)        |
+| et-ee      | Estonian (Estonia)         |
+| eu-es      | Basque (Basque)             |
+| fi-fi      | Finnish (Finland)          |
+| fr-fr      | French (France)            |
+| gl-es      | Galician (Galician)           |
+| hi-HU      | Hungarian (Hungary)        |
+| hi-in      | Hindi (India)              |
+| hr-hr      | Croatian (Croatia)         |
+| id-Id      | Indonesian (Indonesia)     |
+| it-It      | Italian (Italy)            |
+| jp-Jp      | Japanese (Japan)           |
+| kk-kz      | Kazakh (Kazakhstan)        |
+| ko-kr      | Korean (Korea)             |
+| lt-LT      | Lithuanian (Lithuania)     |
+| lv-lv      | Latvian (Latvia)           |
+| ms-my      | Malay (Malaysia)           |
+| nb-no      | Norwegian (Bokmål)         |
+| nl-nl      | Dutch (Netherlands)        |
+| pl-pl      | Polish (Poland)            |
+| pt-br      | Portuguese (Brazil)        |
+| pt-pt      | Portuguese (Portugal)      |
+| ro-ro      | Romanian (Romania)         |
+| ru-ru      | Russian (Russia)           |
+| sk-sk      | Slovak (Slovakia)          |
+| sl-si      | Slovenian (Slovenia)       |
+| sr-cyrl-rs | Serbian (Cyrillic, Serbia) |
+| sr-latn-rs | Serbian (Latin, Serbia)    |
+| sv-se      | Swedish (Sweden)           |
+| th-th      | Thai (Thailand)            |
+| tr-tr      | Turkish (Türkiye)           |
+| uk-ua      | Ukrainian (Ukraine)        |
 | vi-vn      | Vietnamese (Viet Nam)      |
 
 Use of the Power Automate Embed SDK is covered under [the Microsoft Software License Terms](https://go.microsoft.com/fwlink/?linkid=2108407).

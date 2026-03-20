@@ -15,7 +15,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
 suite: flow
-ms.date: 06/25/2025
+ms.date: 03/20/2026
 search.audienceType: 
   - flowmaker
   - enduser
@@ -38,6 +38,8 @@ A flow's *performance profile* determines its Power Platform request limits. The
 | Medium              | - Power Apps triggered flows, manual flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate Premium (previously Power Automate per user), Power Automate Premium plans (previously Power Automate per user with Attended RPA plans) <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses)|
 | High                | Power Automate Process plan, Power Automate per flow plan |
 | Unlimited Extended  | Pay-as-you-go flows, Dynamics in context flows running under service principal |
+
+For cloud flows with a Process license, multiple Process licenses can be [stacked on a single cloud flow](/power-automate/desktop-flows/capacity-process#stack-multiple-process-licenses-on-a-cloud-flow) to increase its daily action entitlement. Each additional license adds 250,000 actions per day.
 
 If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow has the performance profile of the higher of the plans. For the exact set of plans that include Power Automate, refer to the [Power Platform licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
@@ -125,7 +127,7 @@ As of October 2019, there are limits on the number of [Power Platform requests](
 
 These requests are counted for all types of actions, including connector actions, HTTP actions, and built-in actions, from initializing variables to a simple compose action. Both successful and failed actions count toward the limits. Retries and requests from pagination also count as action runs.
 
-To view the number of actions your flow has run, select **Analytics** on the flow details page and check the **Actions** tab.
+To view the number of actions your flow ran, select **Analytics** on the flow details page and check the **Actions** tab.
 
 The following table describes the limits on requests.
 
