@@ -4,10 +4,11 @@ description: Learn how to allocate process capacity in Power Automate to machine
 author: cvassallo
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.date: 04/23/2025
-ms.author: cvassallo
+ms.date: 03/20/2026
+ms.author: matow
 ms.reviewer: angieandrews
 contributors:
+  - radioblazer
   - DanaMartens
 ms.topic: how-to
 ms.custom:
@@ -19,7 +20,7 @@ ms.custom:
 # How to use process capacity
 
 > [!NOTE]  
-> Process capacity and Unattended RPA capacity have been combined in a single capacity pool and can be used interchangeably within the Power Automate platform. They have exactly the same value and role.
+> Process capacity and Unattended RPA (robotic process automation) capacity are combined in a single capacity pool and can be used interchangeably within the Power Automate platform. They have exactly the same value and role.
 
 Within the Power Automate portal:
 
@@ -50,7 +51,7 @@ You now have a machine that can perform unattended RPA.
 
 ## Allocate process capacity to a cloud flow
 
-When a process capacity is allocated to a cloud flow, it becomes a *Process plan*. This plan licenses the cloud flow to run premium actions independently from the user license, with a daily limit of 250,000 [Power Platform requests](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate).
+When a process capacity is allocated to a cloud flow, it becomes a *Process plan*. This plan licenses the cloud flow to run premium actions independently from the user license, with a daily entitlement of 250,000 actions (shown as [Power Platform Requests](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) in admin center reports). Every trigger, connector call, built-in action, and each iteration of an Apply to Each loop counts as one action.
 
 To allocate process capacity to a cloud flow, go to the cloud flow details page and select **Edit**.
 
@@ -65,10 +66,36 @@ Change the plan used by the flow to **Process plan** and save.
 
 The cloud flow is now independent from the user license.
 
+> [!IMPORTANT]
+> Only [solution flows](/power-automate/create-flow-solution) (flows that are in a Dataverse solution) can have Process capacity assigned or stacked. To add an existing flow to a solution, go to **Solutions** > select a solution > **Add existing** > **Automation** > **Cloud flow**. Admins can [add flows in bulk via PowerShell](/power-platform/admin/powerapps-powershell#Add-flows-into-Dataverse-solutions).
+
+## Stack multiple Process licenses on a cloud flow
+
+Multiple Process licenses can be allocated to a single cloud flow to increase its daily action entitlement. Each additional Process license adds 250,000 actions per day.
+
+| Process licenses | Daily action entitlement |
+|:----------------:|------------------------:|
+| 1 | 250,000 |
+| 2 | 500,000 |
+| 3 | 750,000 |
+| 5 | 1,250,000 |
+| 10 | 2,500,000 |
+| 10+ | N × 250,000 |
+
+Stacking above 10 licenses is available in all regions.
+
+The stacked entitlement is shared by the flow, its child flows, and any cloud flows associated to it.
+
+**Estimate your daily usage**: (actions per run) × (runs per day) = daily actions. If this exceeds 250,000, stack additional Process licenses to match your expected volume. In the Power Platform admin center, the **Consumed Quantity** column in [Power Platform request reports](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview) shows each flow's actual daily action count.
+
 > [!NOTE]
-> - Only solution flows (flows that are in a solution) can become process flows.
-> - Stacking multiple process capacities on a single cloud flow isn't enabled yet.
+> Some older environments in the Europe region might have capacity limitations that reduce the effectiveness of stacking above three (3) licenses. If you encounter this, consider creating a new environment.
 
 ## Related information
 
-[Process capacity utilization](capacity-utilization-process.md)
+- [Process capacity utilization](capacity-utilization-process.md)
+- [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types)
+- [Power Automate action limits and allocations](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate)
+- [Power Platform request reports in the admin center](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview)
+- [Process license stacking FAQ](/power-platform/admin/power-automate-licensing/faqs#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow)
+ 
