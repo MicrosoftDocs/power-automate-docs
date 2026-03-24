@@ -4,7 +4,7 @@ description: Learn how to allocate process capacity in Power Automate to machine
 author: cvassallo
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.date: 03/20/2026
+ms.date: 03/24/2026
 ms.author: matow
 ms.reviewer: angieandrews
 contributors:
@@ -20,7 +20,7 @@ ms.custom:
 # How to use process capacity
 
 > [!NOTE]  
-> Process capacity and Unattended RPA (robotic process automation) capacity are combined in a single capacity pool and can be used interchangeably within the Power Automate platform. They have exactly the same value and role.
+> Process capacity and Unattended RPA capacity have been combined in a single capacity pool and can be used interchangeably within the Power Automate platform. They have exactly the same value and role.
 
 Within the Power Automate portal:
 
@@ -51,7 +51,7 @@ You now have a machine that can perform unattended RPA.
 
 ## Allocate process capacity to a cloud flow
 
-When a process capacity is allocated to a cloud flow, it becomes a *Process plan*. This plan licenses the cloud flow to run premium actions independently from the user license, with a daily entitlement of 250,000 actions (shown as [Power Platform Requests](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) in admin center reports). Every trigger, connector call, built-in action, and each iteration of an Apply to Each loop counts as one action.
+When a Process license is allocated to a cloud flow, the flow's plan changes to *Process plan* in the portal. This licenses the cloud flow to run premium actions independently from the user license, with a daily entitlement of 250,000 actions (shown as [Power Platform Requests](/power-platform/admin/api-request-limits-allocations#Request-limits-in-power-automate) in admin center reports). Every trigger and action execution counts as one action. Actions inside a loop run once per iteration, so loops multiply your action count.
 
 To allocate process capacity to a cloud flow, go to the cloud flow details page and select **Edit**.
 
@@ -82,14 +82,15 @@ Multiple Process licenses can be allocated to a single cloud flow to increase it
 | 10 | 2,500,000 |
 | 10+ | N × 250,000 |
 
-Stacking above 10 licenses is available in all regions.
+Up to 10 Process licenses can be stacked on a single cloud flow.
 
-The stacked entitlement is shared by the flow, its child flows, and any cloud flows associated to it.
+Currently, each Process license must be directly assigned to the flow that uses it. Flow groups (sharing a single pool of Process capacity across multiple related flows) and automatic capacity inheritance from parent flows are planned but not yet available.
 
-**Estimate your daily usage**: (actions per run) × (runs per day) = daily actions. If this exceeds 250,000, stack additional Process licenses to match your expected volume. In the Power Platform admin center, the **Consumed Quantity** column in [Power Platform request reports](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview) shows each flow's actual daily action count.
+**Estimate your daily usage**: (actions per run) × (runs per day) = daily actions. If this exceeds 250,000, stack additional Process licenses to match your expected daily volume.
 
 > [!NOTE]
-> Some older environments in the Europe region might have capacity limitations that reduce the effectiveness of stacking above three (3) licenses. If you encounter this, consider creating a new environment.
+> - Some older environments in the Europe region might have capacity limitations that reduce the effectiveness of stacking above 3 licenses. If you encounter this, consider creating a new environment.
+> - To try Process licenses before purchasing, admins can provision a free 30-day [admin-managed trial](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#admin-managed-trial-licenses) from the Microsoft 365 admin center. Trial Process licenses have the same entitlements as paid licenses and can be stacked.
 
 ## Related information
 
