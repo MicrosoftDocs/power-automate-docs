@@ -29,7 +29,7 @@ Self-healing isn't currently available for use in government clouds (GCC, GCC Hi
 
 ### Availability by account type
 
-Currently, Self-healing in Power Automate for desktop is available for organization premium accounts and is provided at no additional cost. Usage may be sunject to service limits or changes.
+Currently, Self-healing in Power Automate for desktop is available for organization premium accounts and is provided at no additional cost. Usage may be subject to service limits or changes.
 
 ## Self-healing for UI and browser automation actions at runtime
 
