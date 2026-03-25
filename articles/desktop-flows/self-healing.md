@@ -16,7 +16,7 @@ ms.custom:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
-Self-healing (Preview) in Power Automate for desktop is an AI-powered capability that helps desktop flows recover from UI and browser automation failures caused by missing or changed UI elements. Instead of stopping the flow when an element can't be found, self-healing (preview) can attempt to identify the most likely correct element at runtime and continue the flow run.
+Self-healing (preview) in Power Automate for desktop is an AI-powered capability that helps desktop flows recover from UI and browser automation failures caused by missing or changed UI elements. Instead of stopping the flow when an element can't be found, self-healing (preview) can attempt to identify the most likely correct element at runtime and continue the flow run.
 
 > [!IMPORTANT]
 > This is a preview feature.
