@@ -8,7 +8,7 @@ ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: reference
 ms.date: 03/23/2026
-ms.author: praveenkumar-ak
+ms.author: praak
 ms.reviewer: angieandrews
 search.audienceType:
   - processanalyst
@@ -33,7 +33,7 @@ The Process Mining MCP server is a specialized implementation of the Model Conte
 **Architecture:**
 - **Server-side component**: Integrates with Power Platform and Dataverse
 - **Authentication**: Azure AD-based with environment context
-- **Connector**: Available as a prebuilt [Process Mining connector](https://learn.microsoft.com/en-us/connectors/processmining/) in the Power Platform connectors catalog
+- **Connector**: Available as a prebuilt [Process Mining connector](/connectors/processmining/) in the Power Platform connectors catalog
 - **Protocol**: Model Context Protocol (MCP) standard
 
 > [!NOTE]
@@ -42,7 +42,7 @@ The Process Mining MCP server is a specialized implementation of the Model Conte
 > - Active Process Mining license
 > - Process Mining environment configured in Power Platform with at least one ingested process
 > - Azure AD authentication
-> - MCP-compatible client (e.g., Copilot Studio) with the [Process Mining connector](https://learn.microsoft.com/en-us/connectors/processmining/) configured
+> - MCP-compatible client (e.g., Copilot Studio) with the [Process Mining connector](/connectors/processmining/) configured
 
 
 ## Available MCP tools
@@ -863,10 +863,10 @@ Correlation analysis is computationally intensive. Apply filters first to reduce
 
 ## Related information
 
-- [Process Mining connector reference](https://learn.microsoft.com/en-us/connectors/processmining/) - Connector details, authentication, and throttling limits
-- [Create a Copilot Studio agent with Process Mining](process-mining-mcp-create-CPS-agent.md) - Step-by-step implementation guide
-- [Add tools to custom agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-connectors) - How to add the connector tool in Copilot Studio
-- [MCP server connectors catalog](https://learn.microsoft.com/en-us/connectors/connector-reference/connector-reference-mcpserver-connectors) - Full list of available MCP connectors
-- [Process Mining overview](https://learn.microsoft.com/en-us/power-automate/process-mining-overview) - Overview of Process Mining capabilities
+- [Process Mining connector reference](/connectors/processmining/) - Connector details, authentication, and throttling limits
+- [Create a Copilot Studio agent with Process Mining](process-mining-mcp-create-cps-agent.md) - Step-by-step implementation guide
+- [Add tools to custom agents](/microsoft-copilot-studio/advanced-connectors) - How to add the connector tool in Copilot Studio
+- [MCP server connectors catalog](/connectors/connector-reference/connector-reference-mcpserver-connectors) - Full list of available MCP connectors
+- [Process Mining overview](process-mining-overview.md) - Overview of Process Mining capabilities
 - [Model Context Protocol specification](https://modelcontextprotocol.io/specification) - MCP standard details
 

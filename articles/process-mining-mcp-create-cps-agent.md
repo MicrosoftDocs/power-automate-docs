@@ -8,7 +8,7 @@ ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
 ms.date: 03/23/2026
-ms.author: praveenkumar-ak
+ms.author: praak
 ms.reviewer: angieandrews
 search.audienceType:
   - processanalyst
@@ -46,7 +46,7 @@ Before you begin, ensure you have the following:
 >
 > **Prerequisites:**
 > - **Completed setup**:
->   - Process Mining environment with at least one ingested process (see [Process Mining overview](https://learn.microsoft.com/en-us/power-automate/process-mining-overview))
+>   - Process Mining environment with at least one ingested process (see [Process Mining overview](process-mining-overview.md))
 >   - Active Power Platform environment
 >   - Process Mining connector connection configured (see setup options below)
 > - **Permissions**:
@@ -62,12 +62,12 @@ Before you begin, ensure you have the following:
 > [!IMPORTANT]
 >
 > **Critical requirements before proceeding:**
-> 1. You must have **at least one process ingested** and available in [Process Mining](https://learn.microsoft.com/en-us/power-automate/process-mining-overview)
+> 1. You must have **at least one process ingested** and available in [Process Mining](process-mining-overview.md)
 > 2. You need access to **Copilot Studio web app** at https://copilotstudio.microsoft.com
 
 ### Set up the Process Mining connection
 
-The [Process Mining connector](https://learn.microsoft.com/en-us/connectors/processmining/) is a prebuilt Power Platform connector that provides Model Context Protocol (MCP) access to Process Mining data. It is listed in the [MCP server connectors catalog](https://learn.microsoft.com/en-us/connectors/connector-reference/connector-reference-mcpserver-connectors) and available in all regions.
+The [Process Mining connector](/connectors/processmining/) is a prebuilt Power Platform connector that provides Model Context Protocol (MCP) access to Process Mining data. It is listed in the [MCP server connectors catalog](/connectors/connector-reference/connector-reference-mcpserver-connectors) and available in all regions.
 
 You have two options to set up the connection:
 
@@ -80,7 +80,7 @@ You have two options to set up the connection:
 1. Search for **Process Mining** in the search box and select the connector
 1. Follow the authentication prompts to create the connection
 
-For more information, see [Add and manage connections in Power Automate](https://learn.microsoft.com/en-us/power-automate/add-manage-connections).
+For more information, see [Add and manage connections in Power Automate](add-manage-connections.md).
 
 **Option B: Create the connection when adding the tool in Copilot Studio**
 
@@ -278,7 +278,7 @@ RESPONSE FORMATTING
 
 ### Step 5a: Add the Process Mining connector tool
 
-Add the Process Mining MCP tool to your agent using the prebuilt [Process Mining connector](https://learn.microsoft.com/en-us/connectors/processmining/). For general guidance on adding connector tools, see [Add tools to custom agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-connectors).
+Add the Process Mining MCP tool to your agent using the prebuilt [Process Mining connector](/connectors/processmining/). For general guidance on adding connector tools, see [Add tools to custom agents](/microsoft-copilot-studio/advanced-connectors).
 
 1. **Open your agent**
    - Select **Agents** in the left navigation pane and select your **Process Analyst Assistant** agent
@@ -305,7 +305,7 @@ Add the Process Mining MCP tool to your agent using the prebuilt [Process Mining
 
    > [!NOTE]
    >
-   > The connection uses your user credentials by default. Each user who interacts with the agent must have Process Mining Contributor or Viewer access. For more information about credential options, see [Use connectors with agent author's credentials](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-connectors#use-connectors-with-agent-authors-credentials).
+   > The connection uses your user credentials by default. Each user who interacts with the agent must have Process Mining Contributor or Viewer access. For more information about credential options, see [Use connectors with agent author's credentials](/microsoft-copilot-studio/advanced-connectors#use-connectors-with-agent-authors-credentials).
 
 1. **Submit the connection**
    - Select **Submit** or **Create** as applicable
@@ -933,12 +933,12 @@ Enable context retention for multi-turn analysis sessions.
 ## Related information
 
 - [Process Mining MCP Server Reference](process-mining-mcp-server-reference.md) - Complete tool and filter reference
-- [Process Mining connector reference](https://learn.microsoft.com/en-us/connectors/processmining/) - Connector details and throttling limits
-- [Add tools to custom agents](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-connectors) - General connector tool guidance for Copilot Studio
-- [MCP server connectors](https://learn.microsoft.com/en-us/connectors/connector-reference/connector-reference-mcpserver-connectors) - Full list of available MCP connectors
-- [Copilot Studio documentation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/) - General Copilot Studio guidance
-- [Orchestrate agent behavior with generative AI](https://learn.microsoft.com/en-us/microsoft-copilot-studio/advanced-generative-actions) - How generative orchestration works
-- [Automate testing with agent evaluation](https://learn.microsoft.com/en-us/microsoft-copilot-studio/analytics-agent-evaluation-overview) - Test set creation and evaluation methods
-- [Process Mining overview](https://learn.microsoft.com/en-us/power-automate/process-mining-overview) - Understanding process mining concepts
-- [Add and manage connections in Power Automate](https://learn.microsoft.com/en-us/power-automate/add-manage-connections) - Connection setup and management
+- [Process Mining connector reference](/connectors/processmining/) - Connector details and throttling limits
+- [Add tools to custom agents](/microsoft-copilot-studio/advanced-connectors) - General connector tool guidance for Copilot Studio
+- [MCP server connectors](/connectors/connector-reference/connector-reference-mcpserver-connectors) - Full list of available MCP connectors
+- [Copilot Studio documentation](/microsoft-copilot-studio/) - General Copilot Studio guidance
+- [Orchestrate agent behavior with generative AI](/microsoft-copilot-studio/advanced-generative-actions) - How generative orchestration works
+- [Automate testing with agent evaluation](/microsoft-copilot-studio/analytics-agent-evaluation-overview) - Test set creation and evaluation methods
+- [Process Mining overview](process-mining-overview.md) - Understanding process mining concepts
+- [Add and manage connections in Power Automate](add-manage-connections.md) - Connection setup and management
 
