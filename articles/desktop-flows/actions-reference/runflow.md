@@ -5,9 +5,9 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 09/04/2025
+ms.date: 03/25/2026
 ms.author: nimoutzo
-ms.reviewer: matp
+ms.reviewer: JoshuaPartlow
 contributors:
 - jpapadimitriou
 - Yiannismavridis
@@ -19,17 +19,17 @@ search.audienceType:
 
 # Run desktop flow action
 
-The **Run desktop flow** action enables you to call other desktop flows while running a specific desktop flow. To use the action, add it to the workspace and select the desktop flow you want to call. If the called flow contains input variables, the action will prompt you to enter their values.
+The *Run desktop flow* action enables you to call other desktop flows while running a specific desktop flow. To use the action, add it to the workspace and select the desktop flow you want to call. If the called flow contains input variables, the action will prompt you to enter their values.
 
-In the context menu of the **Run desktop flow** action, the option ‘Go to flow’, allows you to quickly launch the designer of the selected flow and avoid navigating to the flows list in the console.
+In the context menu of the **Run desktop flow** action, the option **Go to flow**, allows you to quickly launch the designer of the selected flow and avoid navigating to the flows list in the console.
 
-You can disable the toggle property 'Wait for flow to complete', which is enabled by default. If disabled, the invoked desktop flow runs concurrently with the parent flow. This configuration is useful for scenarios where unexpected popups in the target application block the parent flow. By running a child flow in parallel, you can monitor and manage these popups, ensuring the parent flow continues smoothly. This improvement provides a workaround given the current concurrency policy, which allows only one flow to run per machine at a time.
+You can disable the toggle property **Wait for flow to complete**, which is enabled by default. If disabled, the invoked desktop flow runs concurrently with the parent flow. This configuration is useful for scenarios where unexpected popups in the target application block the parent flow. By running a child flow in parallel, you can monitor and manage these popups, ensuring the parent flow continues smoothly. This improvement provides a workaround given the current concurrency policy, which allows only one flow to run per machine at a time.
 
 >[!IMPORTANT]
 >
 > - Up to six parallel flows in total can run concurrently with the root flow, shifting the previous limit of just one parallel flow.
 > - Child flows can also run other child flows in parallel (no error is thrown in such cases anymore), consuming from the available pool of six parallel flows. Parallel flow runs are no longer limited to being invoked directly from the parent (root) flow, as was previously the case.
-> - If a child flow runs in parallel, its output variables are ignored. The variables produced from the 'Run desktop flow' action aren't shown in the action modal.
+> - If a child flow runs in parallel, its output variables are ignored. The variables produced from the *Run desktop flow* action aren't shown in the action modal.
 > - When a parent flow completes its run or is stopped, it also stops (cancels) its invoked parallel child flows that might still run.
 
 To find more information about how to use the **Run desktop flow** action, go to [Run desktop flow from other desktop flows](../how-to/run-desktop-flow-action.md).
@@ -44,7 +44,7 @@ To find more information about how to use the **Run desktop flow** action, go to
 
 ## Known limitations
 
-The output variables of a 'Run desktop flow' action don't keep their type during authoring and appear as 'General values' in the variables pane. Their proper variable type is resolved during runtime. As a result, output variables of instance type aren't automatically loaded in the lists of the corresponding actions' instance parameters, so you need to type or paste them into the parameters.
+The output variables of a *Run desktop flow* action don't keep their type during authoring and appear as *General values* in the variables pane. Their proper variable type is resolved during runtime. As a result, output variables of instance type aren't automatically loaded in the lists of the corresponding actions' instance parameters, so you need to type or paste them into the parameters.
 
 ## <a name="runflow"></a> Run desktop flow
 
