@@ -335,7 +335,7 @@ ms.subservice: cloud-flow
 
 **Expression**: `empty(variables('input'))`
 
-**Example**: `empty('')` returns `true`. `empty(null)` returns `true`. `empty('hello')` returns `false`. `empty(createArray())` returns `true`.
+**Example**: `empty('')` returns `true`. `empty(null)` returns `true`. `empty('hello')` returns `false`.
 
 > [!IMPORTANT]
 > `empty()` doesn't work on numbers. `empty(0)` throws an error. For numbers, use `equals(variables('num'), null)` or check the type first.
