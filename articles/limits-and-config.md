@@ -15,7 +15,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
 suite: flow
-ms.date: 06/25/2025
+ms.date: 03/24/2026
 search.audienceType: 
   - flowmaker
   - enduser
@@ -36,8 +36,10 @@ A flow's *performance profile* determines its Power Platform request limits. The
 |---------------------|-------|
 | Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials <br>- Dynamics 365 Team Member<br>- Microsoft Power Apps for Developer | 
 | Medium              | - Power Apps triggered flows, manual flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate Premium (previously Power Automate per user), Power Automate Premium plans (previously Power Automate per user with Attended RPA plans) <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses)|
-| High                | Power Automate Process plan, Power Automate per flow plan |
+| High                | Power Automate Process license, Power Automate per flow plan |
 | Unlimited Extended  | Pay-as-you-go flows, Dynamics in context flows running under service principal |
+
+For cloud flows with a Process license, multiple Process licenses can be [stacked on a single cloud flow](/power-automate/desktop-flows/capacity-process#stack-multiple-process-licenses-on-a-cloud-flow) to increase its daily action entitlement. Each additional license adds 250,000 actions per day.
 
 If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow has the performance profile of the higher of the plans. For the exact set of plans that include Power Automate, refer to the [Power Platform licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
@@ -862,3 +864,4 @@ The following items are the FlowSuspensionReason values for runtime limits:
 - NeverTriggeringDetected
 
 [!INCLUDE [footer-include](includes/footer-banner.md)]
+

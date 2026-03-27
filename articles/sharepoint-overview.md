@@ -6,8 +6,8 @@ author: HeatherOrt
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 06/25/2025
-ms.author: heortaol
+ms.date: 03/20/2026
+ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -61,6 +61,15 @@ As soon as your flow starts, you can use any of the more than [40 *actions*](/sh
 > [!div class="mx-imgBorder"]
 > ![A screenshot that shows some SharePoint actions such as "Add attachment" and "Check in file."](./media/overview-sharepoint/sharepoint-actions.png "Some SharePoint actions such as Add attachment and Check in file")
 
+## Authentication requirements for SharePoint and Power Automate
+
+When users view or run Power Automate flows from SharePoint lists and libraries, SharePoint performs a token exchange with the Power Automate service on behalf of the user. This token exchange requires consistent Conditional Access policies between SharePoint and Power Automate.
+
+If your organization uses Conditional Access policies (MFA, Terms of Use, or device compliance), ensure your policy targets the **Office 365** app or **All cloud apps** so that SharePoint and Power Automate have consistent requirements. If you target individual applications and the requirements differ, users see an authentication error when they try to access flows from SharePoint.
+
+> [!TIP]
+> If you must target individual apps, ensure **Microsoft Flow Service** (Application ID: `7df0a125-d3be-4c96-aa54-591f83ff541c`) is included alongside SharePoint with matching requirements. If your policy includes Terms of Use, exclude service accounts and flow connection owners&mdash;flow connections refresh tokens silently and can't present the acceptance page. For detailed guidance, see [Conditional access and multifactor authentication in Power Automate](/troubleshoot/power-platform/power-automate/administration/conditional-access-and-multi-factor-authentication-in-flow).
+
 ## Migrate from workflows to Power Automate
 
 -  Migrate from [classic workflows to Power Automate flows](/sharepoint/dev/business-apps/power-automate/guidance/migrate-from-classic-workflows-to-power-automate-flows) in SharePoint.
@@ -73,3 +82,4 @@ As soon as your flow starts, you can use any of the more than [40 *actions*](/sh
 - [Training: Integrate SharePoint and Power Automate (learning path)](/training/paths/integrate-power-automate/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
+
