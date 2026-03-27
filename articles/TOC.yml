@@ -134,6 +134,8 @@
       - name: Watch a cloud flow
         href: see-a-flow-run.md
         displayName: Monitor flow activity on mobile devices
+      - name: Understand flow failure notifications
+        href: understand-flow-failure-notifications.md
       - name: Troubleshoot a cloud flow
         href: fix-flow-failures.md
       - name: Find and fix errors with flow checker
