@@ -28,7 +28,8 @@ These errors occur when you save, validate, or publish a flow.
 
 - Unmatched parentheses or quotes in an expression
 - Referencing an action output that doesn't exist (typo in action name)
-- Using a function with the wrong number of arguments
+- Using a function with the wrong number of arguments (for example, `createArray()` with no args)
+- Type mismatch in a constant expression (for example, `int('abc')` or `div(100, 0)`) — the engine validates these at save time
 - Copy-pasting expressions from documentation that includes invisible Unicode characters
 
 **How to fix**:
@@ -106,14 +107,17 @@ These errors occur when a flow runs and an expression can't be evaluated.
 
 ### ExpressionEvaluationFailed
 
-**What it means**: An expression failed to evaluate at runtime, usually due to unexpected data types or null values.
+**What it means**: An expression failed to evaluate at runtime because the actual data didn't match what the expression expected. This error only occurs when the expression uses **dynamic values** (variables, trigger body, action outputs) that can't be checked at save time.
+
+> [!NOTE]
+> If an expression uses only constant values (like `int('abc')` or `div(100, 0)`), the flow engine catches the error at save time as [InvalidTemplate](#invalidtemplate) instead.
 
 **Common causes**:
 
-- Calling `int()` on a string that isn't a number (for example, `int('abc')`)
+- Calling `int()` on a variable that contains a non-numeric string at runtime
 - Accessing a property on a null object (`outputs('Get_item')?['body/title']` when Get_item returned nothing)
-- Date format mismatch in `formatDateTime()` or `parseDateTime()`
-- Division by zero
+- Date format mismatch in `formatDateTime()` or `parseDateTime()` when the format comes from a variable
+- Division by zero when the divisor is a dynamic value that happens to be 0
 
 **How to fix**:
 

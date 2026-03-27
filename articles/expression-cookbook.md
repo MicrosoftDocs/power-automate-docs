@@ -292,7 +292,7 @@ ms.subservice: cloud-flow
 **Example**: `int('42')` returns `42`. `float('3.14')` returns `3.14`. `string(42)` returns `'42'`.
 
 > [!IMPORTANT]
-> `int('3.14')` throws an error. It won't truncate a decimal string. Use `float()` first, then convert: `int(float('3.14'))` if you need an integer from a decimal string.
+> `int()` on a decimal string throws an error — it doesn't truncate. If a variable might contain a decimal, use `float()` first: `int(float(variables('input')))`. Note that with constant values like `int('3.14')`, the error is caught at save time (InvalidTemplate), not at runtime.
 
 ### 25. Calculate percentage
 
