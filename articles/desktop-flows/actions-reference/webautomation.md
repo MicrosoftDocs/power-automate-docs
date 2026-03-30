@@ -704,19 +704,19 @@ Run a JavaScript function on the web page and get the returned result.
 | Argument | Optional | Accepts | Default value | Description |
 |-----|-----|-----|-----|-----|
 | Web browser instance | No | [Web browser instance](../variable-data-types.md#instances) | | Enter or choose the variable that contains the web browser instance to work with. |
-|JavaScript function|Yes|[Text value](../variable-data-types.md#text-value)|function `ExecuteScript`() { /*your code here, return something (optionally); */ }|Enter the JavaScript function to run on the web page.|
+|JavaScript function|Yes|[Text value](../variable-data-types.md#text-value)|function `ExecuteScript`() { /*your code here, return something (optionally); */ }|Enter the :::no-loc text="JavaScript"::: function to run on the web page.|
 
 ### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
-|`Result`|[Text value](../variable-data-types.md#text-value)|The result of the JavaScript function that ran.|
+|`Result`|[Text value](../variable-data-types.md#text-value)|The result of the :::no-loc text="JavaScript"::: function that ran.|
 
 ### <a name="executejavascript_onerror"></a> Exceptions
 
 | Exception | Description |
 |-----|-----|
-|Failed to run JavaScript.|Indicates a problem running JavaScript.|
+|Failed to run :::no-loc text="JavaScript":::.|Indicates a problem running :::no-loc text="JavaScript":::.|
 
 ## <a name="hoveroverelement"></a> Hover mouse over element on web page
 
