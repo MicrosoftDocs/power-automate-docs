@@ -18,16 +18,16 @@ search.audienceType:
 
 # AI Builder actions (preview)
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](includes/cc-beta-prerelease-disclaimer.md)]
+[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
 The AI Builder group contains the **Create text with GPT (preview)** action that creates text using the GPT language model.
 
 > [!IMPORTANT]
 > - This is a preview feature.
-> - Preview features aren’t meant for production use and may have restricted functionality.
+> - Preview features aren't meant for production use and may have restricted functionality.
 > - These features are available before an official release so that customers can get early access and provide feedback.
 >
-> Further strengthening our commitment to [responsible AI](https://www.microsoft.com/en-us/ai/responsible-ai) we're introducing some updates related to the utilization of **Create text with GPT (preview)** action in the Power Automate for desktop October 2023 update.
+> Further strengthening our commitment to [responsible AI](https://www.microsoft.com/ai/responsible-ai) we're introducing some updates related to the utilization of **Create text with GPT (preview)** action in the Power Automate for desktop October 2023 update.
 > Specifically: 
 > - A **Display input dialog** action or **Display message** action must accompany each use of the **Create text with GPT** action
 > - The **Display input dialog** action or **Display message** action must contain the response from the **Create text with GPT** action in its body so it is clearly presented to the user
@@ -54,7 +54,7 @@ Example approach: Add a Display message action with Yes - No buttons to require 
 :::image type="content" source="media/aibuilder/display-message.png" alt-text="Screenshot of the Display message action that prompts users to review the generated content.":::
 
 >[!Note]
-> To enable the **AI Builder (Preview)** module in the actions pane, the following requirements need to be in place:
+> To enable the **AI Builder (preview)** module in the actions pane, the following requirements need to be in place:
 >
 > - Copilot is enabled in the Power Platform Admin Center.
 > - The flag `powerappsmakerbotenabled` is true at the organization level:[PowerAppsMakerBotEnabled](/power-apps/developer/data-platform/reference/entities/organization#BKMK_PowerAppsMakerBotEnabled)
