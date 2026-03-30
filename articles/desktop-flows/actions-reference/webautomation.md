@@ -397,11 +397,19 @@ Launch a new instance or attach to a running instance of Internet Explorer for a
 
 ### Deprecation notice: Automation browser
 The Automation browser option is planned for deprecation and will be removed in a future release of Power Automate for desktop.
-To ensure long-term compatibility, use one of the following alternatives:
-- Microsoft Edge in Internet Explorer (IE) mode by selecting Launch new Microsoft Edge
-- Internet Explorer by selecting Launch new Internet Explorer
 
-Desktop flows that rely on Automation browser should be updated to use one of the supported options above to avoid future issues.
+Existing desktop flows that use Automation browser will continue to work during the deprecation period. However, this option should no longer be used for new automations, and customers are strongly encouraged to begin migrating existing flows to supported alternatives as soon as possible. Over time, Automation browser will be removed from the product, and flows that have not been updated may stop working once the option is no longer available.
+
+To ensure long-term compatibility, use one of the following alternatives:
+- Microsoft Edge in Internet Explorer (IE) mode, by selecting Launch new Microsoft Edge. This is the recommended option for automating legacy web applications that require Internet Explorer compatibility.
+- Internet Explorer, by selecting Launch new Internet Explorer, where still applicable and supported in your environment.
+
+#### Deprecation timeline (planned)
+The deprecation of Automation browser is expected to occur over the next 12–18 months, following a phased approach:
+- Now: Automation browser is marked for deprecation. New use is discouraged, and documentation and in‑product messaging will guide users toward supported alternatives.
+- During the deprecation period: Users should actively migrate existing desktop flows to Microsoft Edge (IE mode) or Internet Explorer.
+- Future release (12–18 months): Automation browser will be removed from Power Automate for desktop. At that point, it will no longer be available for use in desktop flows.
+The exact timing of removal may change based on customer feedback and platform considerations.
 
 ### Input parameters
 
