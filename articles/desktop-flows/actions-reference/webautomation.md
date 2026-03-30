@@ -395,6 +395,14 @@ This action doesn't produce any variables.
 
 Launch a new instance or attach to a running instance of Internet Explorer for automating websites and web applications.
 
+### Deprecation notice: Automation browser
+The Automation browser option is planned for deprecation and will be removed in a future release of Power Automate for desktop.
+To ensure long-term compatibility, use one of the following alternatives:
+- Microsoft Edge in Internet Explorer (IE) mode by selecting Launch new Microsoft Edge
+- Internet Explorer by selecting Launch new Internet Explorer
+
+Desktop flows that rely on Automation browser should be updated to use one of the supported options above to avoid future issues.
+
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
