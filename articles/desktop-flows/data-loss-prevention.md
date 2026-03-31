@@ -1,6 +1,6 @@
 ---
-title: Data loss prevention (DLP) policies 
-description: Data loss prevention (DLP) policies 
+title: Desktop Flow Data loss prevention (DLP) policies 
+description: Data loss prevention (DLP) policies for desktop flows
 author: mattp123
 
 ms.service: power-automate
