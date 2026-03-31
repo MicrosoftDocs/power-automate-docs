@@ -49,8 +49,6 @@ After the deployment, the modal of the action opens and displays the available p
 
 ### Adding actions from the suggested actions panel
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
-
 In addition to adding actions from the actions panel, you can also use the suggested actions panel.
 
 > [!IMPORTANT]

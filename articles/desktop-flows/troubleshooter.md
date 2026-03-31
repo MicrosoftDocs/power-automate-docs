@@ -17,8 +17,6 @@ search.audienceType:
 
 # Troubleshooter
 
-[!INCLUDE [cc-beta-prerelease-disclaimer](actions-reference/includes/cc-beta-prerelease-disclaimer.md)]
-
 The troubleshooter in Power Automate for desktop is a component that allows you to diagnose, and in certain cases, troubleshoot, potential issues that you might face in the desktop application of Power Automate.
 
 :::image type="content" source="media/troubleshooter/troubleshooter-window-four-categories.png" alt-text="Troubleshooter main screen" border="false":::
@@ -70,7 +68,7 @@ If one step fails with an error, the following steps aren't checked at all, as t
 > [!NOTE]
 > In case of one or more errors, the respective details are displayed in the troubleshooter screen, after expanding the corresponding error.
 
-After a category is checked for issues end to end, there’s always the option to generate the report of that check, which includes all the detailed steps that were followed therein. The report is produced in CSV format and is available independently of whether the check was successful or had errors.
+After a category is checked for issues end to end, there's always the option to generate the report of that check, which includes all the detailed steps that were followed therein. The report is produced in CSV format and is available independently of whether the check was successful or had errors.
 
 Τhere can be relevant connectivity errors while using Power Automate for desktop. In those cases, you're prompted to launch the troubleshooter directly, through a link in the error dialog. Doing so automatically opens and runs the connectivity issues category.
 
@@ -105,7 +103,7 @@ This category diagnoses and troubleshoots potential issues around four different
 
 Apart from the various diagnostics, the troubleshooter also hosts the verbose logging functionality. As per the respective description in the troubleshooter app, the toggle button can be turned on and off, forcing the Power Automate desktop application to function in a verbose logging state. This means that any action taken from you, from that point on, is logged with verbose details in local files. The log files are generated in the default path mentioned in the description (**PowerAutomateVerbose** subfolder in your **Documents** folder).
 
-Because of this feature’s nature, we recommend that you not leave verbose logging on permanently as there might be slower performance and capacity issues. While verbose logging is enabled, Power Automate constantly produces files with verbose logs, which might eventually consume a larger disk capacity. So enable this mode only for the purposes of reproducing the issue faced and capturing the respective logs, before turning it off again.
+Because of this feature's nature, we recommend that you not leave verbose logging on permanently as there might be slower performance and capacity issues. While verbose logging is enabled, Power Automate constantly produces files with verbose logs, which might eventually consume a larger disk capacity. So enable this mode only for the purposes of reproducing the issue faced and capturing the respective logs, before turning it off again.
 
 There are two registry entries related to verbose logging, as explained in [Improve troubleshooting of the Power Automate troubleshooter](governance.md#improve-troubleshooting-of-the-power-automate-troubleshooter) and [Turn on verbose logging state in Power Automate for desktop](governance.md#turn-on-verbose-logging-state-in-power-automate-for-desktop).
 
@@ -123,7 +121,7 @@ When you turn off verbose logging, the **Export logs** button becomes available 
 
 ### Known issues and limitations
 
-When **Export logs** is used when at least one flow designer is open, not all files can be saved in the .zip file, as some of them are used in the designer process. Those files can’t be automatically deleted.
+When **Export logs** is used when at least one flow designer is open, not all files can be saved in the .zip file, as some of them are used in the designer process. Those files can't be automatically deleted.
 
 ## Related information
 
