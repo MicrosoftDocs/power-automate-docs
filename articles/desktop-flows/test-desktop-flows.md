@@ -21,50 +21,84 @@ ms.custom:
 
 # Create and manage test cases for desktop flows
 
-With the introduction of "Tests" in Power Automate for desktop, makers create, manage, and run test cases directly within the Power Automate for desktop console. This capability enhances the reliability of desktop flows by enabling structured validation and integration into automated pipelines.
+Test cases help you verify that your desktop flows work correctly. Instead of manually running a flow and checking results every time you make changes, you can create a test case that automatically runs your flow and checks if the output matches what you expect.
 
-## Desktop flow test cases
+## Prerequisites
 
-A test case in the Power Automate desktop app is a flow that:
+- Power Automate for desktop version 2.54 or later
+- A Power Automate Premium license
 
-- Runs a target desktop flow
-- Validates output with assertions
-- Logs results for review and debugging
+## Create a test case
 
-### Prerequisites
-
-- You need Power Automate desktop version 2.54 or greater.
-- Tests are a premium feature that require a Power Automate premium license.
-
-### Create a new test
-
-To create a new test case:
+A test case validates a single desktop flow. To create one:
 
 1. Open Power Automate for desktop.
 1. In the left navigation, select **Tests**.
-1. In the command bar, select **+ New** > **Test case**.
-1. Enter a test case name, choose the flow to validate, and select **Create**.
+1. Select **+ New** > **Test case**.
+1. Enter a name for your test case.
+1. Select the desktop flow you want to test.
+1. Select **Create**.
 
-A test case for desktop flows follows the "Given" "When" "Then" structure:
+The test case opens in the designer, where you can add actions to run your flow and validate results.
 
-- **Given**: Input parameters are defined
-- **When**: The desktop flow runs
-- **Then**: Assertions are made on the output
+## Add actions to your test case
 
-#### Add testing actions
+Every test case uses two actions: one to run your flow, and one to check the results.
 
-The following are core testing actions to use in a test case:
+### Test a desktop flow
 
-- **Test a desktop flow**
+This action runs the desktop flow you selected when creating the test case.
 
-    Executes a specified desktop flow and captures its output. You need to select the same flow you defined in the create window.
+- If your flow requires **input values**, enter them in the action's parameters.
+- When the flow runs, any **output variables** it produces become available for you to validate.
 
-- **Assert**
+### Assert
 
-    Validates the output against expected results using operators like `equals`, `contains`, or `greater than`.
+The **Assert** action checks if a value matches what you expect. If the check fails, the test fails.
 
-    Example: In the Assert expression, verify that the output of your desktop flow equals the expected value: `%OutputResult=ExpectedResult%`.
+To add an assertion:
+
+1. In the Actions pane, under **Testing**, drag the **Assert** action into your test case.
+1. In **Assert expression**, enter a condition to validate. For example:
+   - `%Sum = 25%` checks if Sum equals 25
+   - `%Total > 0%` checks if Total is greater than zero
+   - `%Status contains 'Success'%` checks if Status contains the word "Success"
+1. In **Assert message**, enter a message that explains what went wrong if the test fails, such as "Expected Sum to equal 25".
+
+> [!TIP]
+> You can add multiple Assert actions to validate different outputs from your flow.
+
+For the full list of parameters, see [Testing actions reference](actions-reference/testing.md).
+
+## Run a test case
+
+You can run tests in two ways:
+
+**From the Tests console:**
+
+1. Select **Tests** in the left navigation.
+1. Select the test case you want to run.
+1. Select **Run** in the toolbar.
+
+**From the designer:**
+
+1. Open your test case.
+1. Select **Run** in the toolbar.
+
+## View test results
+
+After running a test, the **Status** column in the Tests console shows the result:
+
+| Status | Description |
+|--------|-------------|
+| **Passed** | All assertions succeeded. Your flow works as expected. |
+| **Failed** | One or more assertions failed. Review the assertion message to understand what went wrong. |
+
+When a test fails, you might need to:
+
+- Fix an issue in your desktop flow
+- Update the expected values in your Assert actions if requirements changed
 
 ## Related information
 
-[Testing actions reference](actions-reference/testing.md)
+- [Testing actions reference](actions-reference/testing.md)
