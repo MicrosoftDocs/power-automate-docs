@@ -424,8 +424,6 @@
     href: ./desktop-flows/create-flow-using-ai-recorder.md
   - name: Repair flow automation errors (preview)
     href: ./desktop-flows/repair-at-runtime.md
-  - name: Self-healing (preview)
-    href: ./desktop-flows/self-healing.md
   - name: Run desktop flows
     items:
     - name: Run unattended and attended desktop flows from the cloud
@@ -1042,6 +1040,12 @@
       href: object-centric-process-overview.md
     - name: Use filters in OCPM analysis
       href: object-centric-filters.md
+  - name: Process Mining model context protocol (preview)
+    items:
+    - name: MCP server reference
+      href: process-mining-mcp-server-reference.md
+    - name: Create a Copilot Studio agent with process mining
+      href: process-mining-mcp-create-cps-agent.md
   - name: Process Mining desktop app
     items:
     - name: Overview
