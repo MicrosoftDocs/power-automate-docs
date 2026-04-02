@@ -1,5 +1,5 @@
 ---
-title: Create a Copilot Studio agent with process mining
+title: Create a Copilot Studio agent with process mining (preview)
 description: Step-by-step guide to creating an AI agent in Copilot Studio that analyzes process mining data using the MCP connector.
 author: praak
 contributors:
@@ -7,7 +7,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 03/23/2026
+ms.date: 04/01/2026
 ms.author: praak
 ms.reviewer: angieandrews
 search.audienceType:
@@ -16,12 +16,12 @@ search.audienceType:
   - enduser
 ---
 
+# Create a Copilot Studio agent with process mining (preview)
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
-# Create a Copilot Studio agent with process mining
+Create an intelligent *Process Analyst Assistant* agent in Microsoft Copilot Studio that helps users analyze process performance, identify bottlenecks, and gain insights from process mining data through natural language conversations.
 
-## Overview
-
-Create an intelligent "Process Analyst Assistant" agent in Microsoft Copilot Studio that helps users analyze process performance, identify bottlenecks, and gain insights from process mining data through natural language conversations.
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 **What you'll build:**
 - An AI agent that understands process mining concepts
@@ -37,82 +37,77 @@ Create an intelligent "Process Analyst Assistant" agent in Microsoft Copilot Stu
 
 **Time to complete**: 30-45 minutes
 
-
 ## Prerequisites
 
 Before you begin, ensure you have the following:
 
-> [!NOTE]
->
-> **Prerequisites:**
-> - **Completed setup**:
->   - Process Mining environment with at least one ingested process (see [Process Mining overview](process-mining-overview.md))
->   - Active Power Platform environment
->   - Process Mining connector connection configured (see setup options below)
-> - **Permissions**:
->   - Copilot Studio account with agent creator permissions
->   - Process Mining contributor or viewer access
->   - Power Platform environment maker role
->   - Microsoft Entra ID authentication enabled for your tenant
-> - **Knowledge**:
->   - Basic familiarity with Copilot Studio
->   - Understanding of process mining concepts (activities, cases, variants)
->   - Your process schema (attribute names, custom metrics)
+- Completed setup
+   - Process Mining environment with at least one ingested process. More information: [Process Mining overview](process-mining-overview.md)
+   - Active Power Platform environment
+   - Process Mining connector connection is configured (review the following setup options)
+- Permissions
+   - Copilot Studio account with agent creator permissions
+   - Process Mining contributor or viewer access
+   - Power Platform environment maker role
+   - Microsoft Entra ID authentication enabled for your tenant
+- Knowledge
+   - Basic familiarity with [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
+   - Understanding of process mining concepts (activities, cases, variants)
+   - Your process schema (attribute names, custom metrics)
 
 > [!IMPORTANT]
 >
-> **Critical requirements before proceeding:**
-> 1. You must have **at least one process ingested** and available in [Process Mining](process-mining-overview.md)
-> 2. You need access to **Copilot Studio web app** at https://copilotstudio.microsoft.com
+> Critical requirements before proceeding:
+> - You must have *at least one process ingested* and available in [Process Mining](process-mining-overview.md)
+> - You need access to [Copilot Studio web app](https://copilotstudio.microsoft.com)
 
 ### Set up the Process Mining connection
 
-The [Process Mining connector](/connectors/processmining/) is a prebuilt Power Platform connector that provides Model Context Protocol (MCP) access to Process Mining data. It is listed in the [MCP server connectors catalog](/connectors/connector-reference/connector-reference-mcpserver-connectors) and available in all regions.
+The [Process Mining connector](/connectors/processmining/) is a prebuilt Power Platform connector that provides Model Context Protocol (MCP) access to Process Mining data. It's listed in the [MCP server connectors catalog](/connectors/connector-reference/connector-reference-mcpserver-connectors) and available in all regions.
 
 You have two options to set up the connection:
 
 **Option A: Pre-create the connection in Power Automate**
 
-1. Sign in to [Power Automate](https://make.powerautomate.com/)
-1. Select the **same environment** as your Copilot Studio environment using the environment picker
-1. In the left navigation pane, select **Data** > **Connections**
-1. Select **+ New connection**
-1. Search for **Process Mining** in the search box and select the connector
-1. Follow the authentication prompts to create the connection
+1. Sign in to [Power Automate](https://make.powerautomate.com/).
+1. Select the **same environment** as your Copilot Studio environment using the environment picker.
+1. In the left navigation pane, select **Data** > **Connections**.
+1. Select **+ New connection**.
+1. Search for **Process Mining** in the search box and select the connector.
+1. Follow the authentication prompts to create the connection.
 
 For more information, see [Add and manage connections in Power Automate](add-manage-connections.md).
-
-**Option B: Create the connection when adding the tool in Copilot Studio**
-
-You can skip this step and create the connection directly when adding the Process Mining tool to your agent in Step 5. If no connection exists, Copilot Studio prompts you to create one inline.
 
 > [!TIP]
 >
 > Option A is recommended if you want to verify the connection is working before configuring your agent, or if you plan to reuse the same connection across multiple agents.
 
+**Option B: Create the connection when adding the tool in Copilot Studio**
+
+You can skip this step and create the connection directly when adding the Process Mining tool to your agent in Step 5. If no connection exists, Copilot Studio prompts you to create one inline.
 
 ## Step 1: Create the agent
 
-1. **Sign in to Copilot Studio**
+1. Sign in to Copilot Studio.
    - Navigate to https://copilotstudio.microsoft.com
    - Sign in with your organizational account
    - Verify you are in the correct environment by checking the **Environment** selector in the top navigation bar
    - Select the environment where Process Mining MCP is enabled
 
-1. **Create a new agent from scratch**
+1. Create a new agent from scratch.
    - On the **Home** page, locate the **Start building from scratch** section
    - Select **Create an agent**
 
    > [!NOTE]
    >
-   > Do not use the "Quick start: Create and deploy an agent" option or the description-based creation at the top of the page. Select **Create an agent** under "Start building from scratch" for full control over the agent configuration.
+   > Don't use the "Quick start: Create and deploy an agent" option or the description-based creation at the top of the page. Select **Create an agent** under "Start building from scratch" for full control over the agent configuration.
 
-1. **Wait for agent provisioning**
+1. Wait for agent provisioning.
    - Copilot Studio provisions your new agent
    - This typically takes 10-30 seconds
    - Once complete, the agent **Overview** page appears
 
-1. **Familiarize yourself with the Overview page**
+1. Familiarize yourself with the Overview page.
    - The Overview page is your central hub for configuring the agent. It contains the following sections:
      - **Details**: Agent name, icon, and description
      - **Instructions**: System prompt that guides agent behavior (up to 8,000 characters)
@@ -122,66 +117,65 @@ You can skip this step and create the connection directly when adding the Proces
    - The top navigation includes additional tabs:
      - **Overview** | **Knowledge** | **Tools** | **Agents** | **Topics** | **Activity** | **Evaluation** | **Analytics** | **Channels**
 
-:::image type="content" source="media/process-mining-mcp/copilot-studio-home-page.png" alt-text="Copilot Studio home page.":::
-
+   :::image type="content" source="media/process-mining-mcp-create-cps-agent/copilot-studio-home-page.png" alt-text="Screenshot of the Copilot Studio home page.":::
 
 ## Step 2: Edit agent details
 
-1. **Edit the agent name and description**
-   - In the **Details** section on the Overview page, select **Edit**
+1. Edit the agent name and description.
+   - In the **Details** section on the Overview page, select **Edit**.
    - **Name**: `Process Analyst Assistant`
      - Maximum 42 characters
      - No angle brackets allowed
    - **Description**: `Helps users analyze process performance, identify bottlenecks, and discover insights from process mining data through natural language conversations.`
-   - Optionally select **Change icon** to set a custom icon (PNG format, less than 30 KB)
-   - Select **Save**
-
-
+   - (Optionally) Select **Change icon** to set a custom icon (PNG format, less than 30 KB).
+   - Select **Save**.
 
 ## Step 3: Select the AI model
 
-1. **Choose the reasoning model**
-   - On the Overview page, locate the **Model** section
-   - Select the model dropdown
-   - The dropdown displays available models with the current default pre-selected
+1. Choose the reasoning model.
+   - On the Overview page, locate the **Model** section.
+   - Select the model dropdown menu.
+   - The dropdown menu displays available models with the current default preselected.
 
-1. **Model selection guidance**
+1. Model selection guidance: Recommended approach for model selection:
 
-   > [!TIP]
-   >
-   > **Recommended approach for model selection:**
-   > 1. **Start with the best available model** &mdash; Select the most advanced model in the dropdown. This gives you the highest accuracy baseline for process mining analysis, which requires precise tool selection and complex parameter construction.
-   > 2. **Test thoroughly with the best model** &mdash; Use the Test chat panel and Evaluation test sets (Steps 6a and 6b) to validate accuracy across all process mining scenarios (bottleneck analysis, filtering, correlation, variant analysis).
-   > 3. **Systematically test with less advanced models** &mdash; Once you have a quality baseline, try the next model down. Re-run the same test sets and compare scores.
-   > 4. **Find the balance between cost and performance** &mdash; Select the least expensive model that still meets your accuracy requirements. Process mining queries require reliable tool selection and correct filter construction, so prioritize accuracy over cost savings.
-   >
-   > For process mining agents specifically, the model must reliably:
-   > - Select the correct MCP tool based on user intent (e.g., `get_bottleneck_analysis` for bottleneck questions)
-   > - Construct valid filter JSON from natural language descriptions
-   > - Distinguish between case-level and event-level attributes for correlation analysis
-   > - Handle multi-turn conversations with context retention
+   - **Start with the best available model**: Select the most advanced model in the dropdown. This gives you the highest accuracy baseline for process mining analysis, which requires precise tool selection and complex parameter construction.
+   - **Test thoroughly with the best model**: Use the Test chat panel and Evaluation test sets (Steps 6a and 6b) to validate accuracy across all process mining scenarios (bottleneck analysis, filtering, correlation, variant analysis).
+   - **Systematically test with less advanced models**: Once you have a quality baseline, try the next model down. Re-run the same test sets and compare scores.
+   - **Find the balance between cost and performance**: Select the least expensive model that still meets your accuracy requirements. Process mining queries require reliable tool selection and correct filter construction, so prioritize accuracy over cost savings.
+
+   For process mining agents specifically, the model must reliably:
+    - Select the correct MCP tool based on user intent (for example, `get_bottleneck_analysis` for bottleneck questions).
+    - Construct valid filter JSON from natural language descriptions.
+    - Distinguish between case-level and event-level attributes for correlation analysis.
+    - Handle multi-turn conversations with context retention.
 
    > [!NOTE]
-   >
    > Experimental models are subject to preview terms. For production agents, prefer generally available models.
-
-
 
 ## Step 4: Configure the system prompt (Instructions)
 
 The Instructions field defines how the agent behaves, what data it uses, and how it responds. This is the most critical configuration for a process mining agent.
 
-1. **Open the Instructions editor**
-   - In the **Instructions** section on the Overview page, select **Edit**
+1. Open the Instructions editor.
 
-1. **Paste the system prompt**
-   - Replace any auto-generated instructions with the following template
-   - Maximum length: **8,000 characters**
-   - Select **Save** when done
+    In the **Instructions** section on the Overview page, select **Edit**.
 
-1. **System prompt template**
+1. Paste the system prompt.
+   1. Replace any autogenerated instructions with the following template.
 
-   Copy and customize the following prompt:
+   1. Maximum length: **8,000 characters**
+
+   > [!TIP]
+   > To optimize the prompt for the 8,000 character limit:
+   > - Remove example process names/attributes if your actual data fills the space
+   > - Keep the TOOL USAGE GUIDELINES section&mdash;it's critical for correct tool selection.
+   > - The BEHAVIOR AND TONE section can be shortened if needed
+   > - Always keep the DATA SOURCES section&mdash;it enables the agent to interpret MCP tool responses correctly.
+
+   c. When done, select **Save**.
+
+1. System prompt template: Copy and customize the following prompt:
 
 ```
 ROLE DEFINITION
@@ -260,67 +254,64 @@ RESPONSE FORMATTING
 ```
 
 > [!NOTE]
->
 > The sections marked [CUSTOMIZE] must be updated with your actual process IDs and attributes before the agent will work effectively. Use the Test panel (Step 6a) to discover this information, then return here to update the instructions.
 
-> [!TIP]
->
-> **Optimizing the prompt for the 8,000 character limit:**
-> - Remove example process names/attributes if your actual data fills the space
-> - Keep the TOOL USAGE GUIDELINES section &mdash; it is critical for correct tool selection
-> - The BEHAVIOR AND TONE section can be shortened if needed
-> - Always keep the DATA SOURCES section &mdash; it enables the agent to interpret MCP tool responses correctly
-
-:::image type="content" source="media/process-mining-mcp/agent-builder-overview.png" alt-text="Agent builder overview page.":::
-
+:::image type="content" source="media/process-mining-mcp-create-cps-agent/agent-builder-overview.png" alt-text="Screenshot of the Agent builder overview page.":::
 
 ## Step 5: Add the Process Mining MCP connector and tools
+
+To complete this step, you add the Process Mining connector to your agent and enable the available MCP tools.
 
 ### Step 5a: Add the Process Mining connector tool
 
 Add the Process Mining MCP tool to your agent using the prebuilt [Process Mining connector](/connectors/processmining/). For general guidance on adding connector tools, see [Add tools to custom agents](/microsoft-copilot-studio/advanced-connectors).
 
-1. **Open your agent**
-   - Select **Agents** in the left navigation pane and select your **Process Analyst Assistant** agent
+1. Open your agent.
+    1. In the left navigation pane, select **Agents**.
 
-1. **Go to the Tools page**
-   - Select the **Tools** tab and select **Add a tool**
+    1. Select your **Process Analyst Assistant** agent.
 
-1. **Select Connector**
-   - In the **Add tool** pane, select **Connector**
-   - The available services with connectors are displayed
+1. Go to the Tools page.
+    1. Select the **Tools** tab.
 
-1. **Search for Process Mining**
-   - In the search box, type **Process Mining**
-   - Select the **Process Mining** connector from the results
-   - A list of tools available for the connector is displayed
+    1. Select **Add a tool**.
 
-1. **Select the MCP tool**
-   - Select the Process Mining MCP tool from the list
-   - The **Add tool** pane opens with the tool details
+1. In the **Add tool** pane, select **Connector**.
 
-1. **Connect to the Process Mining service**
-   - If you pre-created a connection in Power Automate (see Prerequisites > Option A), select the existing connection
-   - If the connection doesn't already exist, select **Create new connection** and follow the authentication prompts to sign in with your organizational account
+    The available services with connectors display.
+
+1. Search for Process Mining.
+   1. In the search box, type **Process Mining**.
+
+   1. From the results, select the **Process Mining** connector.
+
+        A list of tools available for the connector displays.
+
+1. From the list, select the Process Mining MCP tool.
+
+    The **Add tool** pane opens with the tool details.
+
+1. Connect to the Process Mining service.
+   - If you precreated a connection in Power Automate (see Prerequisites > Option A), select the existing connection.
+
+   - If the connection doesn't already exist, select **Create new connection** and follow the authentication prompts to sign in with your organizational account.
 
    > [!NOTE]
-   >
-   > The connection uses your user credentials by default. Each user who interacts with the agent must have Process Mining Contributor or Viewer access. For more information about credential options, see [Use connectors with agent author's credentials](/microsoft-copilot-studio/advanced-connectors#use-connectors-with-agent-authors-credentials).
+   > The connection uses your user credentials by default. Each user who interacts with the agent must have Process Mining Contributor or Viewer access. Learn more about credential options in [Use connectors with agent author's credentials](/microsoft-copilot-studio/advanced-connectors#use-connectors-with-agent-authors-credentials).
 
-1. **Submit the connection**
-   - Select **Submit** or **Create** as applicable
+1. To submit the connection, select **Submit** or **Create** as applicable.
 
-1. **Add and configure the tool**
-   - Select **Add and configure**
-   - The configuration page for the new tool opens, showing the tool and its details
+1. To add and configure the tool, select **Add and configure**.
 
-:::image type="content" source="media/process-mining-mcp/tool-connector-selection.png" alt-text="Tool connector selection dialog.":::
+    The configuration page for the new tool opens, showing the tool and its details.
+
+    :::image type="content" source="media/process-mining-mcp-create-cps-agent/tool-connector-selection.png" alt-text="Screenshot of the tool connector selection dialog.":::
 
 ### Step 5b: Enable individual MCP tools
 
-1. **Verify tool discovery**
-   - After adding the connector, Copilot Studio discovers the available tools
-   - Confirm that **9 tools** are listed:
+1. Verify tool discovery.
+
+    After you add the connector, Copilot Studio discovers the available tools. Confirm that nine (9) tools are listed.
 
    | Tool | Purpose |
    |------|---------|
@@ -334,26 +325,28 @@ Add the Process Mining MCP tool to your agent using the prebuilt [Process Mining
    | `get_process_overall_metrics` | Returns aggregated process-level metrics |
    | `get_correlation` | Calculates attribute influence on process metrics (case-level attributes only) |
 
-1. **Enable all tools**
-   - Ensure all 9 tools are enabled (toggled on)
-   - Review tool descriptions to verify they match the expected capabilities
-   - Keep all tools enabled for full process mining functionality
+1. Enable all tools.
+   1. Ensure all 9 tools are enabled (toggled on).
 
-1. **Verify tool descriptions**
-   - Good tool descriptions help generative orchestration select the right tool for each user query
-   - The MCP server provides pre-configured descriptions for each tool
-   - If descriptions appear generic, update them to be more specific about process mining use cases
+   1. To verify they match the expected capabilities, review tool descriptions.
+
+   1. Keep all tools enabled for full process mining functionality.
+
+1. Verify tool descriptions.
+   - Good tool descriptions help generative orchestration select the right tool for each user.
+   - The MCP server provides preconfigured descriptions for each.
+   - If descriptions appear generic, update them to be more specific about process mining use cases.
 
 > [!NOTE]
 >
-> If fewer than 9 tools are discovered, verify:
-> 1. The Process Mining connector connection is active (check **Data** > **Connections** in [Power Automate](https://make.powerautomate.com/))
-> 2. Process Mining has at least one ingested process in your environment
-> 3. Your user account has Process Mining Contributor or Viewer access
-> If the issue persists, see the Troubleshooting section at the end of this document.
+> If fewer than nine (9) tools are discovered, verify:
+> 1. The Process Mining connector connection is active (check **Data** > **Connections** in [Power Automate](https://make.powerautomate.com/)).
+> 1. Process Mining has at least one ingested process in your environment.
+> 1. Your user account has Process Mining Contributor or Viewer access.
+>
+>If the issue persists, you can find more information in the [Troubleshooting](#troubleshooting) section in this article.
 
-:::image type="content" source="media/process-mining-mcp/tool-selection-activation.png" alt-text="Tool selection and activation.":::
-
+:::image type="content" source="media/process-mining-mcp-create-cps-agent/tool-selection-activation.png" alt-text="Screenshot of tool selection and activation.":::
 
 ## Step 6: Test the agent
 
@@ -363,71 +356,74 @@ Use both the interactive Test chat and the automated Evaluation system to valida
 
 The Test chat panel allows you to interact with your agent in real time and verify tool invocations.
 
-1. **Open the Test panel**
-   - Select the **Test your agent** panel (typically in the bottom-right corner of the Copilot Studio canvas)
-   - The panel opens as a chat interface
+1. Open the Test panel.
 
-1. **Run basic functionality tests**
+    Select the **Test your agent** panel (typically in the bottom-right corner of the Copilot Studio canvas).
 
-   **Test 1: Process discovery**
+    The panel opens as a chat interface.
+
+1. Run basic functionality tests.
+
+   **Test 1**: Process discovery
    - Type: `What processes are available?`
-   - **Expected**: Agent calls `get_processes` and returns a list of process names with IDs
-   - **Verify**: Process list matches your Process Mining environment
+   - **Expected**: Agent calls `get_processes` and returns a list of process names with IDs.
+   - **Verify**: Process list matches your Process Mining environment.
 
-   **Test 2: Process details**
+   **Test 2**: Process details
    - Type: `Tell me about the Order-to-Cash process attributes`
-   - **Expected**: Agent calls `get_process_details` and returns categorized attributes (case-level and event-level)
-   - **Verify**: All process attributes are listed and correctly categorized
+   - **Expected**: Agent calls `get_process_details` and returns categorized attributes (case-level and event-level).
+   - **Verify**: All process attributes are listed and correctly categorized.
 
-   **Test 3: Bottleneck analysis**
+   **Test 3**: Bottleneck analysis
    - Type: `What are the top 3 bottlenecks in Order-to-Cash?`
-   - **Expected**: Agent calls `get_bottleneck_analysis` with processId and itemsPerPage=3
-   - **Verify**: Activities are returned with durations and business interpretation
+   - **Expected**: Agent calls `get_bottleneck_analysis` with processId and itemsPerPage=3.
+   - **Verify**: Activities are returned with durations and business interpretation.
 
-   **Test 4: Filtering**
+   **Test 4**: Filtering
    - Type: `Show me bottlenecks in the Sales department only`
-   - **Expected**: Agent calls `get_bottleneck_analysis` with an AttributeValueFilter for Department=Sales
-   - **Verify**: Results are specific to Sales department; agent explains the filtering applied
+   - **Expected**: Agent calls `get_bottleneck_analysis` with an AttributeValueFilter for Department=Sales.
+   - **Verify**: Results are specific to Sales department; agent explains the filtering applied.
 
-   **Test 5: Correlation analysis**
+   **Test 5**: Correlation analysis
    - Type: `Does department influence process duration?`
-   - **Expected**: Agent calls `get_correlation` with attributeName="Department" and influenceFormula="DurationInfluence"
-   - **Verify**: Influence values are returned and interpreted (high/moderate/low)
+   - **Expected**: Agent calls `get_correlation` with attributeName="Department" and influenceFormula="DurationInfluence".
+   - **Verify**: Influence values are returned and interpreted (high/moderate/low).
 
-   **Test 6: Error handling**
+   **Test 6**: Error handling
    - Type: `Analyze correlation for Activity attribute`
-   - **Expected**: Agent receives an error (Activity is event-level, not case-level) and explains the limitation to the user with alternative suggestions
-   - **Verify**: Agent does not crash; provides a user-friendly error message
+   - **Expected**: Agent receives an error (Activity is event-level, not case-level) and explains the limitation to the user with alternative suggestions.
+   - **Verify**: Agent doesn't crash; provides a user-friendly error message.
 
-1. **Review the Activity map**
-   - After each test, select the **Activity map** tab in the test panel
-   - Verify:
-     - The correct tool was selected for each query
-     - Parameters are correct (processId, filters, pagination)
-     - Response was parsed successfully
+1. Review the Activity map.
+    1. After each test, select the **Activity map** tab in the test panel
+    1. Verify:
+     - The correct tool was selected for each query.
+     - Parameters are correct (processId, filters, pagination).
+     - Response was parsed successfully.
 
 > [!TIP]
 >
 > After running Tests 1-2, use the discovered process IDs and attribute names to update the [CUSTOMIZE] sections in your Instructions (Step 4). Then re-run Tests 3-6 with the updated instructions for better accuracy.
 
-:::image type="content" source="media/process-mining-mcp/test-panel-tool-invocation.png" alt-text="Test panel showing tool invocation.":::
+:::image type="content" source="media/process-mining-mcp-create-cps-agent/test-panel-tool-invocation.png" alt-text="Screenshot of Test panel showing tool invocation.":::
 
 ### Step 6b: Evaluate with test sets
 
 Agent evaluation provides automated, repeatable testing using test sets with up to 100 test cases.
 
-1. **Navigate to the Evaluation tab**
-   - Select the **Evaluation** tab from the top navigation
+1. Navigate to the Evaluation tab.
 
-1. **Create a new evaluation**
-   - Select **+ New evaluation**
-   - Choose **Or, write some questions yourself** to manually create test cases for process mining scenarios
+    From the top navigation, select the **Evaluation** tab.
 
-1. **Add process mining test cases**
+1. Create a new evaluation.
+    1. Select **+ New evaluation**.
+    1. Select **Or, write some questions yourself** to manually create test cases for process mining scenarios.
+
+1. Add process mining test cases.
 
    Create test cases covering key scenarios. Example test set:
 
-   | Question | Expected Response | Test Method |
+   | Question | Expected response | Test method |
    |----------|-------------------|-------------|
    | What processes are available? | Lists process names with IDs | General quality |
    | What are the bottlenecks in Order-to-Cash? | Lists top activities by duration with insights | Tool use (get_bottleneck_analysis) |
@@ -440,58 +436,62 @@ Agent evaluation provides automated, repeatable testing using test sets with up 
    | Show transitions in Order-to-Cash | Edge list with from/to activities and frequencies | Tool use (get_edges_with_metrics) |
    | What departments exist in the process? | List of department values | Tool use (get_attribute_values) |
 
-1. **Select test methods**
-   - Select **Add test method** and choose the methods relevant to your test cases:
+1. Select test methods.
 
-   | Test Method | Use For | Scoring |
+    1. Select **Add test method**.
+    1. Select the methods relevant to your test cases.
+
+   | Test method | Use for | Scoring |
    |-------------|---------|---------|
-   | **General quality** | Overall response quality assessment | Scored out of 100% |
-   | **Tool use** | Verifying the agent calls the correct MCP tools | Pass/fail |
-   | **Keyword match** | Checking responses contain expected terms (e.g., "bottleneck", "duration") | Pass/fail |
-   | **Compare meaning** | Comparing response meaning to expected answer | Scored out of 100% |
+   | General quality | Overall response quality assessment | Scored out of 100% |
+   | Tool use | Verifying the agent calls the correct MCP tools | Pass/fail |
+   | Keyword match | Checking responses contain expected terms (for example, "bottleneck", "duration") | Pass/fail |
+   | Compare meaning | Comparing response meaning to expected answer | Scored out of 100% |
 
    > [!TIP]
-   >
    > For process mining agents, the **Tool use** method is particularly valuable. It verifies that the agent selects the correct MCP tool for each question, which is the most critical behavior for accurate process analysis.
 
-1. **Configure the user profile**
-   - Select **User profile** and choose an account that has:
+1. Configure the user profile.
+
+    Select **User profile** and choose an account that has:
      - Access to the Process Mining MCP connector
      - Viewer or Contributor permissions on the process mining data
-   - This ensures the evaluation can authenticate to the MCP tools
 
-1. **Run the evaluation**
-   - Select **Evaluate** to run the test set immediately
-   - Or select **Save** to save and run later
-   - Review the results:
+    This ensures the evaluation can authenticate to the MCP tools.
+
+1. Run the evaluation.
+    1. Select **Evaluate** to run the test set immediately.
+      
+        Or
+
+        Select **Save** to save and run later
+    1. Review the results:
      - **Aggregate score**: Overall pass/fail rate and quality scores
      - **Individual test cases**: Drill into each case to see the agent's response, tool invocations, and scoring details
      - **Activity map**: Review which tools were called for each test case
 
-1. **Iterate based on results**
-   - If tool selection accuracy is low: Refine the TOOL USAGE GUIDELINES in your Instructions
-   - If response quality is low: Add more specific examples to Instructions
-   - If filter construction fails: Add filter examples to Instructions
-   - If a different model scores higher: Update the model selection (Step 3)
+1. Iterate based on results.
+   - If tool selection accuracy is low: Refine the TOOL USAGE GUIDELINES in your Instructions.
+   - If response quality is low: Add more specific examples to Instructions.
+   - If filter construction fails: Add filter examples to Instructions.
+   - If a different model scores higher: Update the model selection (Step 3).
 
 > [!IMPORTANT]
->
-> Test results are available in Copilot Studio for 89 days. To save results longer, export them to a CSV file from the evaluation results page.
-
-
+>> Test results are available in Copilot Studio for 89 days. To save results longer, export them to a CSV file from the evaluation results page.
 
 ## Step 7: Add starter prompts
 
 Starter prompts suggest common questions to users when they begin a conversation, helping them discover the agent's capabilities.
 
-1. **Navigate to the Overview page**
-   - Select the **Overview** tab to return to the agent overview
+1. Navigate to the Overview page.
 
-1. **Add starter prompts**
-   - In the **Starter prompts** section, select **+ Add starter prompts**
-   - Add the following (example) process mining starter prompts:
+    Select the **Overview** tab to return to the agent overview.
 
-   | Starter Prompt |
+1. Add starter prompts.
+   1. In the **Starter prompts** section, select **+ Add starter prompts**.
+   1. Add the following (example) process mining starter prompts:
+
+   | Starter prompt |
    |---------------|
    | What are the bottlenecks in our Order-to-Cash process? |
    | Show me cases that took longer than 5 days |
@@ -500,90 +500,108 @@ Starter prompts suggest common questions to users when they begin a conversation
    | What are the most common process variants? |
 
    > [!TIP]
-   >
    > Customize these prompts to match your actual process names and common analysis scenarios. Starter prompts appear in Microsoft Teams and Microsoft 365 Copilot channels, helping users understand what questions they can ask.
 
-1. **Save the starter prompts**
-   - Select **Save** to apply the changes
+1. To save the starter prompts, select **Save** to apply the changes.
 
-:::image type="content" source="media/process-mining-mcp/suggested-prompts.png" alt-text="Suggested prompts configuration.":::
-
+    :::image type="content" source="media/process-mining-mcp-create-cps-agent/suggested-prompts.png" alt-text="Screenshot of suggested prompts configuration.":::
 
 ## Step 8: Publish and deploy the agent
 
+In this section, you publish the agent, and then deploy it to Microsoft Teams and Microsoft 365 Copilot.
+
 ### Step 8a: Publish the agent
 
-1. **Review before publishing**
-   - Verify all configuration is complete:
-     - ✓ Agent name and description set (Step 2)
-     - ✓ AI model selected (Step 3)
-     - ✓ Instructions configured with process-specific details (Step 4)
-     - ✓ All 9 MCP tools connected and enabled (Step 5)
-     - ✓ Test chat passes key scenarios (Step 6a)
-     - ✓ Evaluation test set results are acceptable (Step 6b)
-     - ✓ Starter prompts added (Step 7)
+1. Review before publishing.
 
-1. **Publish the agent**
-   - Select the **Publish** button in the top-right corner of the page
-   - Review the publish summary:
-     - Agent name and description
-     - Connected tools (Process Mining MCP - 9 tools)
-     - Enabled channels
-   - Select **Publish** to confirm
+    Verify all configuration is complete:
+
+     ✓ [Agent name and description set](#step-2-edit-agent-details) (Step 2)
+
+     ✓ [AI model selected](#step-3-select-the-ai-model) (Step 3)
+
+     ✓ [Instructions configured with process-specific details](#step-4-configure-the-system-prompt-instructions) (Step 4)
+
+     ✓ [All nine (9) MCP tools connected and enabled](#step-5-add-the-process-mining-mcp-connector-and-tools) (Step 5)
+
+     ✓ [Test chat passes key scenarios](#step-6a-test-locally-with-the-test-chat-panel) (Step 6a)
+
+     ✓ [Evaluation test set results are acceptable](#step-6b-evaluate-with-test-sets) (Step 6b)
+
+     ✓ [Starter prompts added](#step-7-add-starter-prompts) (Step 7)
+
+1. Publish the agent.
+
+    1. Select the **Publish** button in the top-right corner of the page.
+
+    1. Review the publish summary:
+        - Agent name and description
+        - Connected tools (Process Mining MCP - 9 tools)
+        - Enabled channels
+
+    1. To confirm, select **Publish**.
 
 > [!NOTE]
->
 > Publishing makes your agent available on all configured channels. You can continue to edit and republish the agent at any time. Each publish creates a new version.
 
 ### Step 8b: Deploy to Microsoft Teams and Microsoft 365 Copilot
 
-1. **Navigate to the Channels tab**
-   - Select the **Channels** tab from the top navigation
+1. Navigate to the Channels tab.
 
-1. **Enable Microsoft Teams**
-   - Select **Microsoft Teams** from the available channels
-   - Configure availability:
-     - **Personal app**: Users can chat with the agent directly in Teams
-     - **Team or group chat**: Agent can be added to team conversations
-   - Set permissions:
-     - **Everyone in my organization** (recommended for internal use)
-     - **Only specific people or groups** (for pilot testing)
+    Select the **Channels** tab from the top navigation.
 
-1. **Enable Microsoft 365 Copilot**
-   - Under **Turn on Microsoft 365**, select **Make agent available in Microsoft 365 Copilot**
-   - Select **Add channel**
-   - Edit details to customize:
+1. Enable Microsoft Teams.
+   1. Select **Microsoft Teams** from the available channels.
+
+   1. Configure availability:
+     - **Personal app**: Users can chat with the agent directly in Teams.
+     - **Team or group chat**: Agent can be added to team conversations.
+
+1. Set permissions.
+     - **Everyone in my organization** (recommended for internal use).
+
+        Or
+
+     - **Only specific people or groups** (for pilot testing).
+
+1. Enable Microsoft 365 Copilot.
+
+    1. Under **Turn on Microsoft 365**, select **Make agent available in Microsoft 365 Copilot**.
+
+   1. Select **Add channel**.
+
+   1. Edit details to customize:
      - Agent icon (follow Teams app icon format guidelines)
      - Accent color
      - Short and long descriptions (visible in the Teams app store and About tab)
 
-1. **Share with users**
-   - After configuring channels, share the agent link with your target users
-   - For Teams: Users can find the agent in the Teams app store or through a direct link
-   - For Microsoft 365 Copilot: The agent appears as an available extension in Copilot
+1. Share with users.
+   
+   After configuring channels, share the agent link with your target users.
 
-:::image type="content" source="media/process-mining-mcp/teams-microsoft-365-channels.png" alt-text="Teams and Microsoft 365 channels configuration.":::
+   - For Teams: Users can find the agent in the Teams app store or through a direct link.
+   - For Microsoft 365 Copilot: The agent appears as an available extension in Copilot.
 
+    :::image type="content" source="media/process-mining-mcp-create-cps-agent/teams-microsoft-365-channels.png" alt-text="Screenshot of Teams and Microsoft 365 channels configuration.":::
 
 ## Step 9: Monitor analytics
 
 After deployment, monitor your agent's performance to identify improvement opportunities.
 
-1. **Navigate to the Analytics tab**
-   - Select the **Analytics** tab from the top navigation
+1. From the top navigation, select the **Analytics** tab.
 
-1. **Review key metrics**
+1. Review key metrics.
 
-   | Metric | What to Look For | Action if Needed |
+   | Metric | What to look for | Action if needed |
    |--------|------------------|------------------|
-   | **Session count** | Steady or growing usage over time | Low usage: Promote agent, improve discoverability, add starter prompts |
-   | **Average session length** | 3-5 interactions optimal for process mining | Too short (<2): Users not finding value. Too long (>8): Simplify responses |
-   | **Resolution rate** | >80% ideal for successful conversations | <80%: Review unresolved conversations, improve instructions |
-   | **Tool invocation frequency** | Balanced usage across MCP tools | Unused tools: Review tool descriptions. Overused: Add specialized topics |
-   | **Error rate** | <5% acceptable for failed tool calls | >5%: Review error logs, fix filter syntax issues, check MCP connection |
+   | Session count | Steady or growing usage over time | Low usage: Promote agent, improve discoverability, add starter prompts |
+   | Average session length | 3-5 interactions optimal for process mining | Too short (<2): Users not finding value. Too long (>8): Simplify responses |
+   | Resolution rate | >80% ideal for successful conversations | <80%: Review unresolved conversations, improve instructions |
+   | Tool invocation frequency | Balanced usage across MCP tools | Unused tools: Review tool descriptions. Overused: Add specialized topics |
+   | Error rate | <5% acceptable for failed tool calls | >5%: Review error logs, fix filter syntax issues, check MCP connection |
 
-1. **Analyze themes (preview)**
-   - In the Analytics tab, review the **Themes** section
+1. Analyze themes (preview).
+   - In the Analytics tab, review the **Themes** section.
    - Themes group user questions by topic, showing:
      - Total questions per theme
      - Answered percentage
@@ -594,19 +612,18 @@ After deployment, monitor your agent's performance to identify improvement oppor
      - New process mining scenarios to add to instructions
      - Opportunities for creating evaluation test sets from production data
 
-1. **Create test sets from themes**
-   - When you identify a theme with low response quality, select **Evaluate** next to the theme
-   - This creates a test set from real user questions
-   - Run the evaluation to measure improvement after instruction updates
+1. Create test sets from themes.
+    1. When you identify a theme with low response quality, select **Evaluate** next to the theme.
 
-1. **Continuous improvement cycle**
+       This creates a test set from real user questions.
+
+    1. Run the evaluation to measure improvement after instruction updates
+
+1. Perform continuous improvement cycle:
    - Review analytics weekly during initial deployment
    - Update agent instructions based on common failure patterns
    - Re-run evaluation test sets after instruction changes to measure improvement
    - Adjust model selection if accuracy drops or costs are too high
-
-
-
 
 ## Example scenarios
 
@@ -614,7 +631,7 @@ These scenarios demonstrate common use cases for the Process Analyst Assistant.
 
 ### Scenario 1: Business user queries bottlenecks
 
-**Persona**: Business analyst investigating process delays
+**Persona**: Business analyst investigating process delays.
 
 **User query**: "What activities are causing delays in our Order-to-Cash process?"
 
@@ -797,8 +814,7 @@ I've analyzed process variants in the Order-to-Cash process:
 1. Evaluate expanding the rush process (Variant 3) to more eligible cases
 ```
 
-
-## Enhance the agent (optional)
+## (Optional) Enhance the agent
 
 These optional enhancements can improve the agent experience for advanced scenarios.
 
@@ -806,19 +822,18 @@ These optional enhancements can improve the agent experience for advanced scenar
 
 Optionally add Process Mining documentation as a knowledge source to help the agent understand process mining terminology.
 
-1. **Navigate to the Knowledge tab**
-   - Select the **Knowledge** tab from the top navigation
-   - Select **+ Add knowledge**
+1. Navigate to the **Knowledge** tab.
+   1. From the top navigation, select the **Knowledge** tab.
+   1. Select **+ Add knowledge**.
 
-1. **Add public website**
-   - Choose **Public websites**
-   - Enter URL: `https://learn.microsoft.com/power-automate/process-mining-overview`
-   - **Name**: `Process Mining Documentation`
-   - **Description**: `Official Process Mining documentation for concept reference`
-   - Select **Add**
+1. Add public website.
+   1. Select **Public websites**.
+   1. Enter URL: `https://learn.microsoft.com/power-automate/process-mining-overview`
+   1. **Name**: `Process Mining Documentation`
+   1. **Description**: `Official Process Mining documentation for concept reference`
+   1. Select **Add**.
 
 > [!NOTE]
->
 > This knowledge source is optional. The MCP tools and system prompt provide the primary analytical capabilities. The knowledge source adds terminology context for edge cases.
 
 ### Create custom topics
@@ -827,43 +842,43 @@ For frequently asked questions that benefit from a guided flow, create custom to
 
 #### Bottleneck analysis topic
 
-1. **Navigate to Topics tab**
-   - Select the **Topics** tab
-   - Select **+ Add topic** > **From description**
+1. Navigate to the **Topics** tab.
+   1. From the top navigation, select the **Topics** tab.
+   1. Select **+ Add topic** > **From description**.
 
-1. **Configure the topic**
-   - **Name**: `Bottleneck Analysis`
-   - **Description**: `User asks about bottlenecks, delays, or slowest activities in a process`
-   - **Trigger phrases** (for classic orchestration) or **Description** (for generative orchestration):
-     - "What are the bottlenecks?"
-     - "Show me delays"
-     - "Which activities are slowest?"
+1. Configure the topic.
+   1. **Name**: `Bottleneck Analysis`
+   1. **Description**: `User asks about bottlenecks, delays, or slowest activities in a process`
+   1. **Trigger phrases** (for classic orchestration) or **Description** (for generative orchestration):
+       - "What are the bottlenecks?"
+       - "Show me delays"
+       - "Which activities are slowest?"
 
-1. **Add topic logic**
-   - Add a Question node: "Which process would you like to analyze?"
-   - Add an Action node: Call `get_bottleneck_analysis` with processId
-   - Add a Message node: Format and present results
+1. Add topic logic.
+   1. Add a Question node: "Which process would you like to analyze?"
+   1. Add an Action node: Call `get_bottleneck_analysis` with processId
+   1. Add a Message node: Format and present results
 
 ### Configure conversation memory
 
 Enable context retention for multi-turn analysis sessions.
 
-1. **Use global variables**
-   - Create variables to store current process context:
+1. Use global variables.
+   
+    Create variables to store current process context:
      - `Global_CurrentProcessId`: Currently analyzed process
      - `Global_CurrentProcessName`: Process name for display
      - `Global_CurrentFilters`: Active filters as JSON
 
-1. **Reference in follow-up queries**
-   - "Show me bottlenecks" → Sets process context
-   - "Now filter by Sales department" → Uses stored processId, adds filter
-   - "What about correlation?" → Uses stored processId and filters
+1. Reference in follow-up queries.
+   - "Show me bottlenecks": Sets process context.
+   - "Now filter by Sales department": Uses stored processId, adds filter.
+   - "What about correlation?": Uses stored processId and filters.
 
-1. **Create a reset topic**
+1. Create a reset topic.
    - **Trigger**: "Start over", "New analysis", "Reset"
    - **Action**: Clear all global variables
    - **Message**: "I've cleared the current analysis context. What would you like to analyze?"
-
 
 ## Troubleshooting
 
@@ -871,20 +886,20 @@ Enable context retention for multi-turn analysis sessions.
 
 | Issue | Symptoms | Resolution |
 |-------|----------|------------|
-| **Connection failed** | "Unable to connect to server" error | Verify the Process Mining connector connection is active in [Power Automate](https://make.powerautomate.com/) > **Data** > **Connections**. If the connection shows an error, select **Fix connection** or recreate it. |
-| **No tools discovered** | Tool count shows 0 after adding connector | Verify Process Mining has at least one ingested process. Check that the connector connection is in the same environment as your Copilot Studio agent. |
-| **Authentication errors** | 401 Unauthorized or 403 Forbidden | Verify your user account has Process Mining Contributor or Viewer access. If the connection has expired, recreate it in Power Automate > **Data** > **Connections**. |
-| **Tool calls timeout** | Requests hang or timeout | Check if processes are loaded in Process Mining, verify network connectivity, set appropriate client timeout values (recommend 60+ seconds) |
-| **Empty responses** | Tools return empty results | Ensure at least one process is ingested, check process has data, verify filters aren't too restrictive, confirm date ranges are valid |
+| Connection failed | "Unable to connect to server" error | Verify the Process Mining connector connection is active in [Power Automate](https://make.powerautomate.com/) > **Data** > **Connections**. If the connection shows an error, select **Fix connection** or recreate it. |
+| No tools discovered | Tool count shows 0 after adding connector | Verify Process Mining has at least one ingested process. Check that the connector connection is in the same environment as your Copilot Studio agent. |
+| Authentication errors | 401 Unauthorized or 403 Forbidden | Verify your user account has Process Mining Contributor or Viewer access. If the connection is expired, recreate it in Power Automate > **Data** > **Connections**. |
+| Tool calls timeout | Requests hang or timeout | Check if processes are loaded in Process Mining, verify network connectivity, set appropriate client timeout values (recommend 60+ seconds). |
+| Empty responses | Tools return empty results | Ensure at least one process is ingested, check process has data, verify filters aren't too restrictive, confirm date ranges are valid. |
 
 ### Agent behavior issues
 
 | Issue | Symptoms | Resolution |
 |-------|----------|------------|
-| **Wrong tool selected** | Agent calls incorrect MCP tool | Refine Instructions &mdash; add more specific TOOL USAGE GUIDELINES with examples |
-| **Filter construction fails** | Invalid filter errors | Add filter JSON examples to Instructions, verify attribute names match process schema (case-sensitive) |
-| **Correlation errors** | "Non case-level attribute" error | Verify attribute is case-level using get_process_details before correlation |
-| **Slow responses** | Timeout or long wait times | Reduce itemsPerPage, apply filters to reduce data volume, check MCP server health |
+| Wrong tool selected | Agent calls incorrect MCP tool | Refine Instructions&mdash;add more specific TOOL USAGE GUIDELINES with examples |
+| Filter construction fails | Invalid filter errors | Add filter JSON examples to Instructions, verify attribute names match process schema (case-sensitive) |
+| Correlation errors | "Non case-level attribute" error | Verify attribute is case-level using get_process_details before correlation |
+| Slow responses | Timeout or long wait times | Reduce itemsPerPage, apply filters to reduce data volume, check MCP server health |
 
 ### Tool invocation errors
 
@@ -901,27 +916,27 @@ Enable context retention for multi-turn analysis sessions.
 
 | Symptom | Cause | Resolution |
 |---------|-------|------------|
-| `"Correlation cannot be calculated for non case-level attributes"` | Attempting correlation on event-level attribute (e.g., Activity) | Call `get_process_details` to identify case-level attributes. Use only case-level attributes for correlation. |
-| `"Invalid filter syntax"` or `"Attribute not found"` | Filter references non-existent attribute or has syntax errors | Verify attribute names match process schema exactly (case-sensitive). Check filter JSON structure. |
+| `"Correlation cannot be calculated for non case-level attributes"` | Attempting correlation on event-level attribute (for example, Activity) | Call `get_process_details` to identify case-level attributes. Use only case-level attributes for correlation. |
+| `"Invalid filter syntax"` or `"Attribute not found"` | Filter references nonexistent attribute or has syntax errors | Verify attribute names match process schema exactly (case-sensitive). Check filter JSON structure. |
 | `"StartDate must be before EndDate"` | TimeframeFilter has invalid date range | Verify startDate is before endDate in ISO 8601 format. |
 
 **InternalError:**
 
 | Symptom | Cause | Resolution |
 |---------|-------|------------|
-| `"Operation failed"` or `"Invalid response type received"` | Server-side processing issue | Retry the operation (may be transient). Check Process Mining service health. Contact support with correlation ID if issue persists. |
+| `"Operation failed"` or `"Invalid response type received"` | Server-side processing issue | Retry the operation (might be transient). Check Process Mining service health. Contact support with correlation ID if issue persists. |
 
 ### Enable diagnostic logging
 
-1. In the Test chat panel, select the **Activity map** to view tool invocations
-1. For connection-level tracing, go to **Settings** > **Diagnostics** and enable **Connection tracing**
-1. Set log level to **Verbose** for detailed request/response payloads
-1. Review logs in **Monitor** > **Connection logs**, filtering by correlation ID and connection name
-1. Save correlation IDs when errors occur &mdash; these are essential for support investigations
+1. In the Test chat panel, select the **Activity map** to view tool invocations.
+1. For connection-level tracing, go to **Settings** > **Diagnostics** and enable **Connection tracing**.
+1. Set log level to **Verbose** for detailed request/response payloads.
+1. Review logs in **Monitor** > **Connection logs**, filtering by correlation ID and connection name.
+1. Save correlation IDs when errors occur&mdash;these are essential for support investigations.
 
 **Common HTTP status codes in logs:**
 
-| HTTP Status | Meaning | Action |
+| HTTP status | Meaning | Action |
 |-------------|---------|--------|
 | 401 Unauthorized | Authentication failed | Check AAD token, verify credentials |
 | 403 Forbidden | Permission denied | Verify managed identity has Process Mining permissions |
@@ -929,16 +944,15 @@ Enable context retention for multi-turn analysis sessions.
 | 500 Internal Server Error | Server-side error | Retry; check Process Mining health; contact support |
 | 504 Gateway Timeout | Long-running operation not completing | Reduce query complexity; apply filters; increase timeout |
 
-
 ## Related information
 
-- [Process Mining MCP Server Reference](process-mining-mcp-server-reference.md) - Complete tool and filter reference
-- [Process Mining connector reference](/connectors/processmining/) - Connector details and throttling limits
-- [Add tools to custom agents](/microsoft-copilot-studio/advanced-connectors) - General connector tool guidance for Copilot Studio
-- [MCP server connectors](/connectors/connector-reference/connector-reference-mcpserver-connectors) - Full list of available MCP connectors
-- [Copilot Studio documentation](/microsoft-copilot-studio/) - General Copilot Studio guidance
-- [Orchestrate agent behavior with generative AI](/microsoft-copilot-studio/advanced-generative-actions) - How generative orchestration works
-- [Automate testing with agent evaluation](/microsoft-copilot-studio/analytics-agent-evaluation-overview) - Test set creation and evaluation methods
-- [Process Mining overview](process-mining-overview.md) - Understanding process mining concepts
-- [Add and manage connections in Power Automate](add-manage-connections.md) - Connection setup and management
+- [Process Mining MCP Server Reference](process-mining-mcp-server-reference.md): Complete tool and filter reference
+- [Process Mining connector reference](/connectors/processmining/): Connector details and throttling limits
+- [Add tools to custom agents](/microsoft-copilot-studio/advanced-connectors): General connector tool guidance for Copilot Studio
+- [MCP server connectors](/connectors/connector-reference/connector-reference-mcpserver-connectors): Full list of available MCP connectors
+- [Copilot Studio documentation](/microsoft-copilot-studio/): General Copilot Studio guidance
+- [Orchestrate agent behavior with generative AI](/microsoft-copilot-studio/advanced-generative-actions): How generative orchestration works
+- [Automate testing with agent evaluation](/microsoft-copilot-studio/analytics-agent-evaluation-overview): Test set creation and evaluation methods
+- [Process Mining overview](process-mining-overview.md): Understand process mining concepts
+- [Add and manage connections in Power Automate](add-manage-connections.md): Connection setup and management
 

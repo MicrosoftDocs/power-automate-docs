@@ -1,5 +1,5 @@
 ---
-title: Process Mining MCP server reference
+title: Process Mining Model Context Protocol (MCP) server reference (preview)
 description: Technical reference for the Process Mining Model Context Protocol (MCP) server tools, request/response structures, and filtering capabilities.
 author: praak
 contributors:
@@ -7,7 +7,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: reference
-ms.date: 03/23/2026
+ms.date: 04/01/2026
 ms.author: praak
 ms.reviewer: angieandrews
 search.audienceType:
@@ -16,12 +16,12 @@ search.audienceType:
   - enduser
 ---
 
-
-# Process Mining MCP server reference
-
-## What is the Process Mining MCP server?
+# Process Mining Model Context Protocol (MCP) server reference (preview)
+[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
 The Process Mining MCP server is a specialized implementation of the Model Context Protocol that exposes Process Mining analytics capabilities to AI agents and conversational applications. It provides programmatic access to process mining data, enabling natural language interactions with process analytics through MCP-compatible clients like Microsoft Copilot Studio.
+
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 **Key capabilities:**
 - **Process discovery**: List and explore available processes and their metadata
@@ -36,18 +36,18 @@ The Process Mining MCP server is a specialized implementation of the Model Conte
 - **Connector**: Available as a prebuilt [Process Mining connector](/connectors/processmining/) in the Power Platform connectors catalog
 - **Protocol**: Model Context Protocol (MCP) standard
 
-> [!NOTE]
->
-> Prerequisites for using the Process Mining MCP server:
-> - Active Process Mining license
-> - Process Mining environment configured in Power Platform with at least one ingested process
-> - Azure AD authentication
-> - MCP-compatible client (e.g., Copilot Studio) with the [Process Mining connector](/connectors/processmining/) configured
+## Prerequisites
 
+The following list contains the prerequisites for using the Process Mining MCP server.
+
+- Active Process Mining license
+- Process Mining environment configured in Power Platform with at least one ingested process
+- Azure AD authentication
+- MCP-compatible client (for example, Copilot Studio) with the [Process Mining connector](/connectors/processmining/) configured
 
 ## Available MCP tools
 
-The server exposes 9 tools organized by purpose. Each tool accepts specific parameters and returns structured analytics data.
+The server exposes nine (9) tools organized by purpose. Each tool accepts specific parameters and returns structured analytics data.
 
 ### Process discovery tools
 
@@ -148,7 +148,6 @@ Response: List of department values (Sales, Finance, Warehouse)
 - Exploring attribute distributions
 - Building dynamic filter UIs
 
-
 ### Analytics and metrics tools
 
 Use these tools to analyze process performance, identify bottlenecks, and retrieve metrics.
@@ -214,7 +213,7 @@ Analyzes activities and returns them sorted by duration (descending) to identify
   - Additional metrics as requested
 
 **Special behavior:**
-- Pre-configured to analyze "Activity" attribute
+- Preconfigured to analyze "Activity" attribute
 - Automatically includes Duration and Value metrics
 - Sorted by Duration in descending order
 
@@ -340,7 +339,6 @@ Response: List of cases exceeding 5 days with details
 - Root cause analysis for specific cases
 - Exporting case data for further analysis
 
-
 ### Correlation analysis tools
 
 Use this tool to identify how attributes influence process metrics.
@@ -394,8 +392,9 @@ Response: Sales: 0.75 (high), Finance: 0.42 (moderate), Warehouse: 0.18 (low)
 >
 > The get_correlation tool only works with **case-level attributes**. Using event-level attributes (like Activity) will result in an error: "Correlation cannot be calculated for non case-level attributes."
 
-
 ## Request and response structures
+
+The following sections describe the common request parameters and response structures.
 
 ### Common request parameters
 
@@ -411,6 +410,8 @@ Most tools accept these standard parameters for pagination and sorting.
 | filterOptions | McpFilterOptions | null | Complex filtering options (see Filter Options section) |
 
 ### Response structure
+
+The following sections provide details for the response structures.
 
 #### McpAnalyticsListResult
 
@@ -438,7 +439,7 @@ Standard response format for list-based queries.
 
 **Fields:**
 - **items**: Array of dictionaries containing metric key-value pairs
-  - Keys are metric names (e.g., "Duration", "Value", "CaseCount")
+  - Keys are metric names (for example, "Duration", "Value", "CaseCount")
   - Values are metric values (strings, numbers, dates)
 - **offset**: Current pagination offset (equals itemsToSkip parameter)
 - **limit**: Page size (equals itemsPerPage parameter)
@@ -454,11 +455,11 @@ Continue while offset + limit < totalCount
 
 ### Long-running operations
 
-Complex queries may require additional processing time. The MCP server handles these operations asynchronously with server-side polling, streaming progress updates to the client.
+Complex queries might require additional processing time. The MCP server handles these operations asynchronously with server-side polling, streaming progress updates to the client.
 
 **Operation flow:**
 1. **Initial request**: Client sends tool invocation request to the MCP server
-1. **Server-side processing**: The API handles polling internally &mdash; the server waits for the analytics engine to complete the query. No client-side polling is required.
+1. **Server-side processing**: The API handles polling internally&mdash;the server waits for the analytics engine to complete the query. No client-side polling is required.
 1. **Progress notifications**: The server streams progress updates to the client automatically via Server-Sent Events (SSE). Progress notifications are sent approximately every 5 seconds during processing.
 1. **Completion**: The server returns the final result with status Succeeded, FailedClientError, or FailedAnalyticsError
 
@@ -476,7 +477,6 @@ Complex queries may require additional processing time. The MCP server handles t
 > [!NOTE]
 >
 > The server handles all polling internally. Clients receive progress notifications automatically through the SSE transport without needing to implement polling logic. This approach is compatible with MCP's Streamable HTTP transport.
-
 
 ## Filter options reference
 
@@ -500,7 +500,7 @@ MetricConditionFilters: [Duration > 5 days]
 
 ### AttributeValueFilter
 
-Filters based on specific attribute values (e.g., department, user, activity name).
+Filters based on specific attribute values (for example, department, user, activity name).
 
 **Properties:**
 
@@ -573,7 +573,7 @@ Filters based on date/time ranges for case or event timestamps.
 
 ### MetricConditionFilter
 
-Filters based on metric value thresholds (e.g., duration > 5 days, event count < 10).
+Filters based on metric value thresholds (for example, duration > 5 days, event count < 10).
 
 **Properties:**
 
@@ -634,7 +634,7 @@ Filters based on metric value thresholds (e.g., duration > 5 days, event count <
 **Use cases:**
 - Identify cases exceeding SLA thresholds
 - Filter to high-value or low-value cases
-- Analyze cases with specific characteristics (e.g., high rework count)
+- Analyze cases with specific characteristics (for example, high rework count)
 
 **Validation rules:**
 - CustomMetricId required when metric is CustomMetric
@@ -693,7 +693,7 @@ Filters by activity sequences with specific relationship types (directly followe
 
 **Relation types:**
 - **DirectlyFollowed**: Reference activity directly followed by relative activity (no activities in between)
-- **EventuallyFollowed**: Reference activity eventually followed by relative activity (other activities may be in between)
+- **EventuallyFollowed**: Reference activity eventually followed by relative activity (other activities might be in between)
 
 **Example JSON:**
 ```json
@@ -719,8 +719,9 @@ Filters by activity sequences with specific relationship types (directly followe
 - attributeName must not be empty
 - referenceAttributeValues and relativeAttributeValues must each contain at least one value
 
-
 ## Error handling
+
+The following sections describe the common error codes, validation errors, and response format that can help you resolve issues.
 
 ### Error codes
 
@@ -756,13 +757,13 @@ The MCP server uses three primary error codes:
 
 #### Missing custom metric ID
 **Error**: "CustomMetricId is required when metric is CustomMetric."
-**Cause**: metric is CustomMetric but customMetricId is not provided
+**Cause**: metric is CustomMetric but customMetricId isn't provided
 **Resolution**: Provide the GUID of the custom metric
 
 #### Non-case-level attribute in correlation
 **Error**: "Correlation cannot be calculated for non case-level attributes."
-**Cause**: Attempting get_correlation with event-level attribute (e.g., "Activity")
-**Resolution**: Use case-level attributes only (e.g., "Department", "Customer"); call get_process_details to identify case-level attributes
+**Cause**: Attempting get_correlation with event-level attribute (for example, "Activity")
+**Resolution**: Use case-level attributes only (for example, "Department", "Customer"); call get_process_details to identify case-level attributes
 
 ### Error response format
 
@@ -775,10 +776,11 @@ The MCP server uses three primary error codes:
 }
 ```
 
-
 ## Best practices
 
-### 1. Always retrieve process details first
+The following best practices can help you effectively use the Process Mining MCP server.
+
+### Always retrieve process details first
 
 Use get_process_details to discover available attributes, metrics, and business rules before constructing queries.
 
@@ -790,7 +792,7 @@ Step 2: get_process_details with processId → Discover attributes
 Step 3: Use discovered attributes in filters and queries
 ```
 
-### 2. Implement pagination for large datasets
+### Implement pagination for large datasets
 
 Use itemsPerPage and itemsToSkip for all list operations. Monitor totalCount to determine if more pages exist.
 
@@ -811,16 +813,16 @@ do {
 } while (offset < response.totalCount);
 ```
 
-### 3. Use filtering to reduce data volume
+### Use filtering to reduce data volume
 
-Apply AttributeValueFilter and TimeframeFilter early in your query chain to reduce processing time and response payload size.
+To reduce processing time and response payload size, apply AttributeValueFilter and TimeframeFilter early in your query chain.
 
 **Filter priority:**
 1. TimeframeFilter (reduces dataset quickly)
 1. AttributeValueFilter (narrows to specific segments)
 1. MetricConditionFilter (further refines results)
 
-### 4. Handle long-running operations
+### Handle long-running operations
 
 Long-running operations are handled automatically by the server. The API uses server-side polling internally and streams progress updates to the client via Server-Sent Events (SSE). No client-side polling implementation is required.
 
@@ -830,7 +832,7 @@ Long-running operations are handled automatically by the server. The API uses se
 1. The final result is returned when processing completes
 1. Display the final results to the user when received
 
-### 5. Cache process metadata
+### Cache process metadata
 
 Process details (attributes, metrics, business rules) change infrequently. Cache get_process_details response to reduce API calls.
 
@@ -839,7 +841,7 @@ Process details (attributes, metrics, business rules) change infrequently. Cache
 - Configuration changes
 - User-initiated refresh
 
-### 6. Validate filters client-side
+### Validate filters client-side
 
 Check date ranges, attribute names, and required fields before sending requests to reduce round-trip errors.
 
@@ -850,7 +852,7 @@ Check date ranges, attribute names, and required fields before sending requests 
 - [ ] MetricConditionFilter: customMetricId provided if metric is CustomMetric
 - [ ] Attribute names match process schema
 
-### 7. Use correlation strategically
+### Use correlation strategically
 
 Correlation analysis is computationally intensive. Apply filters first to reduce dataset before running correlation.
 
@@ -860,13 +862,12 @@ Correlation analysis is computationally intensive. Apply filters first to reduce
 - Use for hypothesis testing, not exploration
 - Cache results for specific segments
 
-
 ## Related information
 
-- [Process Mining connector reference](/connectors/processmining/) - Connector details, authentication, and throttling limits
-- [Create a Copilot Studio agent with Process Mining](process-mining-mcp-create-cps-agent.md) - Step-by-step implementation guide
-- [Add tools to custom agents](/microsoft-copilot-studio/advanced-connectors) - How to add the connector tool in Copilot Studio
-- [MCP server connectors catalog](/connectors/connector-reference/connector-reference-mcpserver-connectors) - Full list of available MCP connectors
-- [Process Mining overview](process-mining-overview.md) - Overview of Process Mining capabilities
-- [Model Context Protocol specification](https://modelcontextprotocol.io/specification) - MCP standard details
+- [Process Mining connector reference](/connectors/processmining/): Connector details, authentication, and throttling limits
+- [Create a Copilot Studio agent with Process Mining](process-mining-mcp-create-cps-agent.md): Step-by-step implementation guide
+- [Add tools to custom agents](/microsoft-copilot-studio/advanced-connectors): How to add the connector tool in Copilot Studio
+- [MCP server connectors catalog](/connectors/connector-reference/connector-reference-mcpserver-connectors): Full list of available MCP connectors
+- [Process Mining overview](process-mining-overview.md): Overview of Process Mining capabilities
+- [Model Context Protocol specification](https://modelcontextprotocol.io/specification): MCP standard details
 
