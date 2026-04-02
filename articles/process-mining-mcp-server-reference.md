@@ -17,6 +17,7 @@ search.audienceType:
 ---
 
 # Process Mining Model Context Protocol (MCP) server reference (preview)
+
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
 The Process Mining MCP server is a specialized implementation of the Model Context Protocol that exposes Process Mining analytics capabilities to AI agents and conversational applications. It provides programmatic access to process mining data, enabling natural language interactions with process analytics through MCP-compatible clients like Microsoft Copilot Studio.

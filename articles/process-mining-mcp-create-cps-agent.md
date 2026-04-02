@@ -17,6 +17,7 @@ search.audienceType:
 ---
 
 # Create a Copilot Studio agent with process mining (preview)
+
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
 Create an intelligent *Process Analyst Assistant* agent in Microsoft Copilot Studio that helps users analyze process performance, identify bottlenecks, and gain insights from process mining data through natural language conversations.
