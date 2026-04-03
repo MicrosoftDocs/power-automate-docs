@@ -102,6 +102,4 @@ If you expected an alert email but didn't receive one, check the following:
 
 ## Related information
 
-- [Watch your flows in action](see-a-flow-run.md)
-- [Fix connection failures in cloud flows](fix-connection-failures.md)
-- [Troubleshoot cloud flow errors](troubleshoot-flow-errors.md)
+[Watch your flows in action](see-a-flow-run.md)
