@@ -22,6 +22,70 @@ ms.custom: sfi-image-nochange
 
 Power Automate uses *connections* to make it easy for you to access your data while building flows. Power Automate includes commonly used connections, including SharePoint, SQL Server, Microsoft 365, OneDrive for Business, Salesforce, Excel, Dropbox, Twitter, and more. Connections are shared with Power Apps, so when you create a connection in one service, the connection shows up in the other service.
 
+## Fix a broken connection
+
+If your flow stopped working because of a connection error, start here.
+
+### Quick diagnosis
+
+| Error or symptom | Likely cause | Fix |
+|---|---|---|
+| **401 Unauthorized** or "invalid credentials" | Your password changed, MFA was updated, or the token expired | [Re-authenticate the connection](#re-authenticate-a-connection) |
+| **403 Forbidden** | A DLP policy blocks this connector, or you lack permissions to the data source | [Check DLP policies](#check-dlp-policies) |
+| **Connection not found** or "connection was deleted" | Someone removed the connection, or it was cleaned up by an admin | [Create a new connection](#add-a-connection) and update the flow |
+| **Gateway offline** or "gateway unreachable" | The on-premises data gateway service is stopped or unreachable | [Troubleshoot the gateway](/data-integration/gateway/service-gateway-tshoot) |
+| **The connection works in the portal but the flow still fails** | The flow uses a different connection than the one you fixed | [Verify which connection the flow uses](#verify-flow-connections) |
+
+### Re-authenticate a connection
+
+This is the most common fix. Connections use OAuth tokens that expire when your password changes, your MFA enrollment changes, or the token's lifetime expires (typically 90 days for some connectors).
+
+1. Go to [make.powerautomate.com](https://make.powerautomate.com) > **Connections** (left navigation, under **Data**).
+2. Find the broken connection. It shows a warning icon or **Error** status.
+3. Select the three dots (**...**) next to the connection, then select **Fix connection** or **Edit**.
+4. Sign in again with your credentials. Complete any MFA prompts.
+5. After re-authenticating, go back to your flow and select **Test** > **Manually** to verify it runs.
+
+> [!TIP]
+> If you re-authenticated but the flow still fails, open the flow in the designer and check the **Flow checker** (top right). It highlights any steps that still reference a broken or different connection.
+
+### Check DLP policies
+
+Data Loss Prevention (DLP) policies set by your admin can block specific connectors or prevent connectors in different groups from being used together in the same flow.
+
+1. If you see a 403 error mentioning policy, contact your Power Platform admin.
+2. Admins can check DLP policies in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) > **Policies** > **Data policies**.
+3. Look for policies that classify your connector in a different group than the other connectors in your flow.
+
+For more information, see [Data loss prevention policies](/power-platform/admin/wp-data-loss-prevention).
+
+### Verify flow connections
+
+A flow can have multiple connections, and each step can use a different one. To check which connection a specific step uses:
+
+1. Open the flow in the designer.
+2. Select the step that is failing.
+3. In the step details, look for the **Connection** field. It shows the connection name and the account it is signed in as.
+4. If the connection shows a warning, select **Fix connection** and re-authenticate.
+
+## Prevent connection failures
+
+### Use service principal connections for production flows
+
+Personal connections break when the user changes their password, leaves the organization, or has their account disabled. For flows that run in production, use a [service principal connection](/power-automate/connect-with-service-principal) instead. Service principals:
+
+- Don't depend on a specific person's credentials
+- Don't expire when someone changes their password
+- Can be managed centrally by IT
+- Support certificate-based authentication (no passwords to rotate)
+
+### Monitor connection health
+
+Set up a scheduled flow that runs daily and checks the status of your critical connections using the [Power Automate Management connector](/connectors/connector-reference/connector-reference-powerautomate-management). If a connection enters an error state, the flow can send a notification before your production flows start failing.
+
+> [!TIP]
+> For organizations with many flows, the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) provides a **Connections** view where admins can see all connections in an environment, including their status and owner.
+
 Here's a quick video on managing connections.
 
 > [!VIDEO https://learn-video.azurefd.net/vod/player?id=9d210b7d-5449-4da2-9ee8-62d049617cbd]
@@ -154,6 +218,18 @@ If you don't know what authentication option was used on the Power Automate Mana
 #### Deprecation of the Power Automate Management connector's legacy default authentication option
 
 The [default](/connectors/flowmanagement/#default-deprecated) authentication option was also deprecated in June 2020, however, it was immediately hidden so that it couldn't be used from that date. All connections with the authentication of [default](/connectors/flowmanagement/#default-deprecated) were created prior to June 2020. Those connections should also be replaced. If you use the [Get Connections as admin](/connectors/powerappsforadmins/#get-connections-as-admin) action, those connections will have id="shared_flowmanagement" and properties.connectionParametersSet.name="".
+
+## Common connection errors reference
+
+| Error code or message | Connector types affected | Cause | Resolution |
+|---|---|---|---|
+| **401 Unauthorized** | All OAuth connectors | Token expired, password changed, MFA enrollment changed | Re-authenticate: **Connections** > select connection > **Fix connection** |
+| **403 Forbidden** | All connectors | DLP policy violation, insufficient permissions on the data source, or the app registration was disabled in Entra ID | Check DLP policies; verify user has access to the underlying data source |
+| **404 Connection not found** | All connectors | Connection was deleted by user or admin, or was part of a removed solution | Create a new connection and update the flow to use it |
+| **409 Conflict** | SharePoint, Dataverse | Concurrent connection modifications, or connection reference mismatch after solution import | Re-import the solution and remap connection references during import |
+| **Gateway unreachable** | SQL Server, File System, SAP, Oracle, and other on-premises connectors | On-premises data gateway service stopped, machine offline, or network connectivity lost | Restart the gateway service on the gateway machine; verify the machine can reach `*.servicebus.windows.net` on port 443 |
+| **"Connection not configured for this service"** | Custom connectors, Dataverse | Connection reference in a solution flow points to a connection that doesn't exist in this environment | Create the required connection, then update the connection reference in **Solutions** > your solution > **Connection References** |
+| **AADSTS700024 or "client assertion is not within its valid time range"** | Service principal connections | Certificate used by the service principal has expired | Upload a new certificate to the app registration in Entra ID, then update the connection |
 
 ## Related information
 

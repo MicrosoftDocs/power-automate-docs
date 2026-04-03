@@ -29,6 +29,8 @@
       items:
         - name: Explore the cloud flows designer
           href: flows-designer.md
+        - name: Classic designer vs. modern designer
+          href: classic-vs-modern-designer.md
         - name: Create your first cloud flow using Copilot
           href: create-cloud-flow-using-copilot.md
         - name: Create your first cloud flow without Copilot
@@ -45,6 +47,8 @@
           href: multi-step-logic-flow.md    
     - name: Copilot in cloud flows FAQ
       href: faq-copilot-cloud-flows.yml
+    - name: Get the most from Copilot in the designer
+      href: copilot-in-cloud-flows-tips.md
     - name: How to
       items:
       - name: Use generative actions (preview)
@@ -67,6 +71,8 @@
         href: use-expressions-in-conditions.md
       - name: Create and edit expressions with Copilot expression assistant (preview)
         href: expressions-copilot.md
+      - name: Expression cookbook for cloud flows
+        href: expression-cookbook.md
       - name: Store and manage values in variables
         href: create-variable-store-values.md
       - name: Manage sensitive input like passwords
@@ -136,6 +142,12 @@
         displayName: Monitor flow activity on mobile devices
       - name: Troubleshoot a cloud flow
         href: fix-flow-failures.md
+      - name: Troubleshoot cloud flow errors
+        href: troubleshoot-flow-errors.md
+      - name: Fix connection failures in cloud flows
+        href: fix-connection-failures.md
+      - name: Cloud flow error code reference
+        href: error-reference.md
       - name: Find and fix errors with flow checker
         href: error-checker.md
     - name: Automated cloud flows

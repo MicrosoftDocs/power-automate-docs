@@ -33,6 +33,19 @@ Share a cloud flow with others in your organization and guest users so they can 
 - You must have either a [Power Automate license (except the free license)](https://make.powerautomate.com/pricing/) or a seeded license (Office 365, Dynamics 365 Enterprise plans, Dynamics 365 Professional plans, Dynamics 365 Team Member, Power Apps (Canvas and Model driven Apps)- Per App plans, Power Apps per user plan, Power Apps Plan 1 (exempted), Power Apps Plan 2 (exempted), Windows licenses) to share a cloud flow.
 - You must be the creator or owner to add or remove owners from a cloud flow.
 
+## Choose your sharing scenario
+
+How you share a flow depends on who needs access and where the flow needs to run.
+
+| Scenario | Method | Who can edit | Who can run |
+|---|---|---|---|
+| **Share with a co-worker** (same environment) | Add as co-owner | Both of you | Both of you, plus anyone with run-only access |
+| **Share with a team** (Microsoft 365 group or security group) | Add group as co-owner | All group members | All group members |
+| **Share across environments** (dev to production) | Export as solution, import in target | Anyone with access in target environment | Configured at import |
+
+> [!IMPORTANT]
+> When you share a flow, the connections in the flow **do not transfer automatically**. Connections are tied to the person who created them. Each co-owner must set up their own connections, or the flow must use a shared service account or service principal. This is the most common reason a shared flow stops working. See [Common issues after sharing](#common-issues-after-sharing).
+
 ### About embedded and other connections
 
 Connections used in a cloud flow fall into two categories:
@@ -197,6 +210,38 @@ Yes. When a connection is configured to be **Provided by run-only user**, then t
 
 ### Can a connection provided by run-only user be used by another user?
 No. When a connection is configured to be **Provided by run-only user** then that connection is provided by the user that runs (or "invokes") the flow. Embedded connections are used by all users of the flow, but connections provided by a run-only user are used only by the user that provides them. When the flow connects to a service via a connector, then the **Provided by run-only user** connections allow the flow to act as the run-only user and access the data that the user has access to. If the flow is exported, then the **Provided by run-only user** connections have a **RuntimeSource** value of **invoker**.
+
+## Common issues after sharing
+
+### The shared user can't see the flow
+
+- **Check the "Shared with me" tab**: Co-owners find shared flows under **My flows** > **Shared with me**, not under **My flows** > **Cloud flows**.
+- **Check permissions**: If the user was added via a group, verify they are a member of that group in Microsoft Entra ID.
+- **Check the environment**: The shared user must be in the same Power Platform environment as the flow. If they have a different default environment, they need to switch environments in the Power Automate portal (environment picker in the top right).
+
+### The flow fails after sharing (connection errors)
+
+This is the most common issue. Connections in Power Automate are **personal** -- they are tied to the account that created them.
+
+When a flow runs, it uses the connections of the person who set them up. If the original owner's credentials expire, the connection breaks for everyone.
+
+**To fix this:**
+
+1. Each co-owner should open the flow and go to the **Connections** section (or the flow checker warnings).
+2. For each connection that shows a warning, select it and sign in with their own credentials.
+3. Alternatively, set up a **service principal connection** or a **shared service account** that doesn't depend on an individual's credentials.
+
+> [!TIP]
+> For production flows, use [service principal connections](/power-automate/connect-with-service-principal) instead of personal connections. Service principals don't expire when someone leaves the organization or changes their password.
+
+### The flow runs under the wrong account
+
+Power Automate flows run differently depending on the trigger type:
+
+- **Automated triggers** (when an item is created, when an email arrives): The flow runs using the **connections configured in the flow**, regardless of who triggered the event.
+- **Instant (manual) triggers**: The flow runs in the context of the person who clicked **Run**, but still uses the configured connections for data access.
+
+If the flow is performing actions as the wrong person (for example, sending emails from the original owner instead of the person who triggered the flow), check the connection configuration. You may need to set up **run-only connections** that prompt each user to authenticate with their own account. See [Share a cloud flow with run-only permissions](#share-a-cloud-flow-with-run-only-permissions).
 
 ## Related information
 
