@@ -1044,6 +1044,12 @@
       href: object-centric-process-overview.md
     - name: Use filters in OCPM analysis
       href: object-centric-filters.md
+  - name: Process Mining model context protocol (preview)
+    items:
+    - name: MCP server reference
+      href: process-mining-mcp-server-reference.md
+    - name: Create a Copilot Studio agent with process mining
+      href: process-mining-mcp-create-cps-agent.md
   - name: Process Mining desktop app
     items:
     - name: Overview
