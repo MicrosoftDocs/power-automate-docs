@@ -30,7 +30,7 @@ Test cases help you verify that your desktop flows work correctly. Instead of ma
 
 ## Create a test case
 
-A test case validates a single desktop flow. To create one:
+A test case validates a single desktop flow. Take the following steps to create a new test case:
 
 1. Open Power Automate for desktop.
 1. In the left navigation, select **Tests**.
@@ -39,7 +39,7 @@ A test case validates a single desktop flow. To create one:
 1. Select the desktop flow you want to test.
 1. Select **Create**.
 
-The test case opens in the designer, where you can add actions to run your flow and validate results.
+The test case opens in the designer, where you see the *Actions* pane and can add actions to run your flow and validate the results.
 
 ## Add actions to your test case
 
@@ -47,7 +47,7 @@ Every test case uses two actions: one to run your flow, and one to check the res
 
 ### Test a desktop flow
 
-This action runs the desktop flow you selected when creating the test case.
+The *Test a desktop flow* action runs the desktop flow you selected when creating the test case.
 
 - If your flow requires **input values**, enter them in the action's parameters.
 - When the flow runs, any **output variables** it produces become available for you to validate.
