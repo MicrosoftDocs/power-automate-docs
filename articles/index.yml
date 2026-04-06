@@ -40,8 +40,61 @@ highlightedContent:
       url: /troubleshoot/power-platform/power-automate/welcome-power-automate
 
 
-additionalContent: 
+additionalContent:
   sections:
+  # Common tasks - quick links
+  - title: Common tasks
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Create your first cloud flow
+            url: getting-started.md
+          - text: Create a flow from a template
+            url: get-started-logic-template.md
+          - text: Share a flow with your team
+            url: create-team-flows.md
+          - text: Monitor your flow runs
+            url: monitor-manage-processes.md
+          - text: Connect to your data
+            url: add-manage-connections.md
+          - text: Use expressions in conditions
+            url: use-expressions-in-conditions.md
+  # Troubleshoot and fix
+  - title: Troubleshoot and fix
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Fix flow errors and failures
+            url: fix-flow-failures.md
+          - text: Troubleshoot broken connections
+            url: add-manage-connections.md#fix-a-broken-connection
+          - text: Expression reference and examples
+            url: /azure/logic-apps/workflow-definition-language-functions-reference
+          - text: Error code reference
+            url: error-code-reference.md
+          - text: Limits and configuration
+            url: limits-and-config.md
+      - linkListType: reference
+        links:
+          - text: What's free vs. premium
+            url: /power-platform/admin/power-automate-licensing/types
+          - text: Known issues
+            url: /power-automate/known-issues
+          - text: Power Automate community forums
+            url: https://powerusers.microsoft.com/t5/Microsoft-Power-Automate/ct-p/MPACommunity
+  # Licensing and limits
+  - title: Licensing and limits
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Power Automate licensing overview
+            url: /power-platform/admin/power-automate-licensing/types
+          - text: Limits and configuration reference
+            url: limits-and-config.md
+          - text: Request limits and throttling
+            url: limits-and-config.md#request-limits
+          - text: Change or transfer flow ownership
+            url: change-cloud-flow-owner.md
   - title: Create and design
     items:
     - title: Try/Buy

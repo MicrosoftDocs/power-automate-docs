@@ -22,6 +22,33 @@ This article describes the required configuration for:
 - Power Automate to connect to services in your network by inbound firewall configuration, and
 - Your makers and users to access Power Automate to build and use experiences by outbound firewall configuration.
 
+## Find the IP ranges for your scenario
+
+Use this table to find which IP ranges you need to allowlist. Select your scenario to jump to the relevant section.
+
+| I need to allowlist IPs for... | What to allowlist | Section |
+|---|---|---|
+| **Cloud flows calling my API or service** | Power Automate outbound IPs (varies by Azure region where your environment is hosted) | [Outbound IP addresses](#allow-connector-calls-to-your-services) |
+| **My firewall to allow cloud flow connectors** | Connector outbound IPs (the connector makes calls from these addresses) | [Connector outbound IP addresses](#allow-connector-calls-to-your-services) |
+| **Desktop flows through a proxy or firewall** | Desktop flow service endpoints | [Desktop flow services required for runtime](#allow-machines--users-on-your-network-to-access-power-automate-desktop-services) |
+| **On-premises data gateway** | Gateway relay endpoints and outbound IPs | [On-premises data gateway](#other-ip-address-articles) |
+| **Power Automate portal access** | Generally not needed (standard HTTPS). If required by strict firewall, allow `*.powerautomate.com` and `*.flow.microsoft.com` | N/A |
+
+> [!IMPORTANT]
+> IP ranges can change. Always verify against the **Azure IP Ranges and Service Tags** JSON file for the most current list: [Download Azure IP Ranges](https://www.microsoft.com/download/details.aspx?id=56519). This JSON file is updated weekly. New ranges that appear in the file don't take effect in Azure for at least one week.
+
+## Determine your environment's Azure region
+
+The IP ranges you need depend on the Azure region where your Power Platform environment is hosted. To find your region:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+2. Select **Environments** in the left navigation.
+3. Select your environment.
+4. On the environment details page, find the **Region** field (for example, "United States", "Europe", "Asia Pacific").
+
+> [!TIP]
+> If your organization has environments in multiple regions, you need to allowlist the IP ranges for each region where flows run. If you're unsure, start with the region of your default environment.
+
 ## High-level recommendation for IP address configuration
 
 The simplest mechanism to configure a firewall to allow Power Automate cloud flows to call external services through [connectors](/connectors/overview) is to use [Azure service tags](/azure/virtual-network/service-tags-overview). The primary service tag for Logic Apps connectors is **AzureConnectors**, as described in [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
@@ -207,6 +234,31 @@ Learn more about approvals email routing in [Power Automate approval email deliv
 ### Azure SQL database
 
 If you need to authorize IP addresses for your Azure SQL database, use the [Power Platform outbound IP addresses](/connectors/common/outbound-ip-addresses#power-platform).
+
+## Common issues with IP allowlisting
+
+### My flow fails with a connection timeout after I configured the firewall
+
+- Verify you allowlisted the **outbound** IPs (the IPs Power Automate calls FROM), not the inbound IPs.
+- Check that you included IP ranges for the correct Azure region. If you recently migrated your environment, the region may have changed.
+- Some connectors use their own IP ranges separate from the general Power Automate ranges. See [Allow connector calls to your services](#allow-connector-calls-to-your-services).
+
+### I allowlisted the IPs but they changed
+
+Azure IP ranges are updated weekly. Subscribe to the [Azure IP Ranges and Service Tags change notifications](https://www.microsoft.com/download/details.aspx?id=56519) to be notified of updates. When possible, use **Azure Service Tags** instead of individual IP addresses in your firewall rules -- service tags are updated automatically.
+
+Available service tags for Power Automate:
+- `PowerPlatformInfra` -- Power Platform infrastructure (recommended for broad allowlisting)
+- `AzureConnectors` -- Managed connector outbound IPs
+
+### Desktop flows fail through our proxy server
+
+Desktop flow agents need to reach several Microsoft endpoints over HTTPS (port 443). Ensure your proxy allows traffic to:
+- `*.servicebus.windows.net` (agent communication relay)
+- `*.powerautomate.com` (flow service)
+- `*.microsoftonline.com` (authentication)
+
+If your proxy performs TLS inspection, you may need to add exceptions for these endpoints. See [Allow machines & users on your network to access Power Automate desktop services](#allow-machines--users-on-your-network-to-access-power-automate-desktop-services) for the complete list.
 
 ## Related information
 
