@@ -89,7 +89,7 @@ Copilot doesn't know what is wrong. It can't see errors, and "fix" could mean an
 
 > "Debug this error: 'The requested operation is invalid.'"
 
-Copilot has no access to run history or error logs. For debugging, see [When to use external AI](#when-to-use-external-ai-chatgpt-claude-gemini) later in this article.
+Copilot has no access to run history or error logs from the designer, though it can assist in troubleshoting flow runs from the flow runs page. For debugging, see [When to use external AI](#when-to-use-external-ai) later in this article.
 
 ### Multi-step instructions in one message
 
@@ -105,11 +105,11 @@ Break this into individual requests. Give one instruction, confirm the result, t
 
 Copilot can't query your data sources. Check your data directly, then tell Copilot the exact field names to use.
 
-## When to use external AI (ChatGPT, Claude, Gemini)
+## When to use external AI
 
 For some tasks, general-purpose AI tools are more effective today. This will change as Copilot gains more context, but for now:
 
-**Use external AI for debugging error messages.** Copy the full error message from your failed run and paste it into ChatGPT, Claude, or Gemini. Include:
+**Use external AI for debugging error messages.** Copy the full error message from your failed run and paste it into Copilot, GitHub Copilot, or other tools. Include:
 
 - The error message and status code
 - The action type that failed (HTTP, SharePoint, SQL, and similar)
