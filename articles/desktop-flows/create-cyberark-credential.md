@@ -112,6 +112,35 @@ If you want to run a desktop flow on a machine or a group using CyberArk credent
 
       :::image type="content" source="./media/manage-machines/add-cyberark-app.png" alt-text="Screenshot of configure CyberArk on machine group":::
 
+> [!NOTE]
+> If you create a CyberArk application with the same Application ID as an existing one on the machine or group, the existing application is automatically replaced. This includes the certificate, certificate password, and related configuration.
+
+## Configure CyberArk for multiple machines or groups
+
+If you need to configure the same CyberArk application across multiple machines or groups, you can use the centralized configuration wizard instead of configuring each machine individually.
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. From the left navigation, select **Machines**.
+1. Select the **CyberArk** tab.
+1. Select **New CyberArk application**.
+1. In the **Select CyberArk application** step, provide the following information:
+    - **Application Id**: Enter the Application ID as registered in your CyberArk CCP.
+    - **Select certificate**: Upload the certificate file (.pfx or .p12) used to authenticate with CyberArk.
+    - **Certificate password**: Enter the password for the certificate file.
+    - **Description** (optional): Add a description for this configuration.
+1. Select **Next**.
+1. In the **Select machine group(s)** step, select the machines and/or machine groups that should use this CyberArk application.
+    - Use **Select all** or **Clear all** for bulk selection.
+    - Use the search box to find specific machines or groups.
+1. Select **Next**.
+1. In the **Review and create** step, verify your configuration:
+    - Application ID
+    - List of machines and groups that will use this application
+1. Select **Create**.
+
+> [!TIP]
+> We recommend using one unique CyberArk configuration for each machine group to simplify management.
+
 ## Create a CyberArk credential
 
 Now that you complete all the prerequisites steps, you can create your CyberArk credentials.
