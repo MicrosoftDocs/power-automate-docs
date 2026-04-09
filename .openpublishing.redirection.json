@@ -923,6 +923,11 @@
       "source_path": "articles/use-chatgpt-plugin.md",
       "redirect_url": "/microsoft-copilot-studio/advanced-flow",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/desktop-flows/prerequisites.md",
+      "redirect_url": "articles/desktop-flows/requirements.md",
+      "redirect_document_id": false
     }
   ]
 }
