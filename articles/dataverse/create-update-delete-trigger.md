@@ -85,6 +85,9 @@ This property applies to the **Update** condition only. **Create** and **Delete*
 
 This property isn't supported on virtual tables.
 
+> [!IMPORTANT]
+> Lookup columns (columns that store references to other table rows) aren't supported in the **Select columns** filter. If you specify a lookup column, changes to that column don't trigger the flow. Use only scalar column types such as text, number, date/time, and choice columns.
+
 ### Filter expression
 
 The filter expression provides a way for you to define an OData style filter expression to help you to define the trigger conditions even more precisely. The flow runs only when the expression evaluates to *true* after the change is saved in Dataverse. In the following examples, the flow triggers when `firstname` is updated to *John*.
@@ -184,6 +187,9 @@ Use the **Select columns** box to define the specific columns of the row that sh
 This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
 
 This property isn't supported on virtual tables.
+
+> [!IMPORTANT]
+> Lookup columns (columns that store references to other table rows) aren't supported in the **Select columns** filter. If you specify a lookup column, changes to that column don't trigger the flow. Use only scalar column types such as text, number, date/time, and choice columns.
 
 ### Filter expression
 
