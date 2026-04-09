@@ -1,9 +1,9 @@
 ---
-title: Classic designer vs. modern designer for cloud flows - Power Automate
+title: "Classic designer vs. modern designer for cloud flows - Power Automate"
 description: Compare the classic and new flow designers, learn when to use each, and find workarounds for known issues.
-author: matow
+author: radioblazer
 ms.author: matow
-ms.reviewer:angieandrews
+ms.reviewer: angieandrews
 ms.topic: conceptual
 ms.date: 04/09/2026
 ms.subservice: cloud-flow
@@ -81,7 +81,7 @@ These are issues we hear about most frequently. We continue to work on fixes.
 **Workaround**: After selecting **Save**, wait for the explicit save confirmation message (a green banner or notification). If the message doesn't appear, try saving again. If the browser becomes unresponsive, wait rather than closing the tab. Closing might lose your changes.
 
 > [!TIP]
-> For critical edits, copy your expression text to a separate text file before saving. If the save fails, you can re-enter it without rewriting from memory. If the saves consistently fail on a specific flow, try opening it in the classic designer and saving there, then returning to the new designer. Learn more in [How to switch between the classic and new designer](#how-to-switch-between-the-classic-and-new-designer).
+> For critical edits, copy your expression text to a separate text file before saving. If the save fails, you can re-enter it without rewriting from memory. If the saves consistently fail on a specific flow, try opening it in the classic designer and saving there, then returning to the new designer. Learn more in [How to switch between the classic and new designer](#switch-between-the-classic-and-new-designer).
 
 ### Expression editor can be slow on large flows
 

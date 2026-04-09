@@ -1,7 +1,7 @@
 ---
 title: Get the most from Copilot in Power Automate designer - Power Automate
 description: Learn what Copilot can and can't do in the flow designer, with prompt patterns that work and tips for better results.
-author: matow
+author: radioblazer
 ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: how-to
