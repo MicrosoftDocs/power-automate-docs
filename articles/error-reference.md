@@ -1,20 +1,20 @@
 ---
 title: Cloud flow error code reference - Power Automate
-description: Troubleshoot the top 20 Power Automate cloud flow errors with causes, fixes, and quick reference table.
+description: Troubleshoot the top Power Automate cloud flow errors with causes, fixes, and quick reference table.
 author: matow
 ms.author: matow
-ms.reviewer:
+ms.reviewer: angieandrews
 ms.topic: reference
-ms.date: 03/19/2026
+ms.date: 04/09/2026
 ms.subservice: cloud-flow
 ---
 
 # Cloud flow error code reference
 
-Troubleshoot the most common errors in Power Automate cloud flows. Each entry explains what the error means, why it happens, and how to fix it.
+Use this article to troubleshoot the most common errors in Power Automate cloud flows. Each entry explains what the error means, why it happens, and how to fix it.
 
 > [!NOTE]
-> This reference applies to all Power Automate cloud flow license tiers. For errors specific to desktop flows, see [Troubleshoot desktop flow errors](/power-automate/desktop-flows/troubleshoot).
+> This reference applies to all Power Automate cloud flow license tiers. Learn about errors specific to desktop flows in [Troubleshoot desktop flow errors](/power-automate/desktop-flows/troubleshoot).
 
 ## Design-time errors
 
@@ -28,8 +28,8 @@ These errors occur when you save, validate, or publish a flow.
 
 - Unmatched parentheses or quotes in an expression
 - Referencing an action output that doesn't exist (typo in action name)
-- Using a function with the wrong number of arguments (for example, `createArray()` with no args)
-- Type mismatch in a constant expression (for example, `int('abc')` or `div(100, 0)`) — the engine validates these at save time
+- Using a function with the wrong number of arguments (for example, `createArray()` with no arguments)
+- Type mismatch in a constant expression (for example, `int('abc')` or `div(100, 0)`)&mdash;the engine validates these at save time
 - Copy-pasting expressions from documentation that includes invisible Unicode characters
 
 **How to fix**:
@@ -42,7 +42,7 @@ These errors occur when you save, validate, or publish a flow.
 > [!TIP]
 > Action names in expressions use underscores instead of spaces. If your action is named "Get item", the expression reference is `outputs('Get_item')`.
 
-**Related**: [ExpressionEvaluationFailed](#expressionevaluationfailed), [FlowCheckerError](#flowcheckererror)
+Related information: [ExpressionEvaluationFailed](#expressionevaluationfailed), [FlowCheckerError](#flowcheckererror)
 
 ### FlowCheckerError
 
@@ -57,12 +57,12 @@ These errors occur when you save, validate, or publish a flow.
 
 **How to fix**:
 
-1. Select the error banner at the top of the designer to see the full list of issues.
+1. Select the error banner at the top of the designer to display the full list of issues.
 1. Select each error to navigate to the affected action.
 1. Fill in required fields, fix broken expressions, and select connections.
 1. Save again. The checker runs automatically on save.
 
-**Related**: [InvalidTemplate](#invalidtemplate), [MissingRequiredProperty](#missingrequiredproperty)
+Related information: [InvalidTemplate](#invalidtemplate), [MissingRequiredProperty](#missingrequiredproperty)
 
 ### DuplicateActionName
 
@@ -76,11 +76,11 @@ These errors occur when you save, validate, or publish a flow.
 
 **How to fix**:
 
-1. Search the flow for actions with identical names (check inside Apply to Each and Scope containers too).
+1. Search the flow for actions with identical names (check inside `Apply to Each` and `Scope` containers too).
 1. Rename one of the duplicates. Select the **...** menu on the action, then select **Rename**.
 1. Update any expressions that reference the renamed action: `outputs('Old_Name')` to `outputs('New_Name')`.
 
-**Related**: [InvalidTemplate](#invalidtemplate)
+Related information: [InvalidTemplate](#invalidtemplate)
 
 ### MissingRequiredProperty
 
@@ -99,7 +99,7 @@ These errors occur when you save, validate, or publish a flow.
 1. Fill in the required value, either with static text or a dynamic content token.
 1. For solution flows, check that all environment variables have values in the target environment.
 
-**Related**: [FlowCheckerError](#flowcheckererror)
+Related information: [FlowCheckerError](#flowcheckererror)
 
 ## Runtime expression errors
 
@@ -107,7 +107,9 @@ These errors occur when a flow runs and an expression can't be evaluated.
 
 ### ExpressionEvaluationFailed
 
-**What it means**: An expression failed to evaluate at runtime because the actual data didn't match what the expression expected. This error only occurs when the expression uses **dynamic values** (variables, trigger body, action outputs) that can't be checked at save time.
+**What it means**:
+
+ An expression failed to evaluate at runtime because the actual data didn't match what the expression expected. This error only occurs when the expression uses **dynamic values** (variables, trigger body, action outputs) that can't be checked at save time.
 
 > [!NOTE]
 > If an expression uses only constant values (like `int('abc')` or `div(100, 0)`), the flow engine catches the error at save time as [InvalidTemplate](#invalidtemplate) instead.
@@ -121,15 +123,15 @@ These errors occur when a flow runs and an expression can't be evaluated.
 
 **How to fix**:
 
-1. Open the failed run and select the failed action to see the expression and input values.
+1. Open the failed run and select the failed action to display the expression and input values.
 1. Wrap risky expressions with null checks: `if(empty(triggerBody()?['value']), 'default', triggerBody()?['value'])`.
 1. Use `coalesce()` to provide fallback values: `coalesce(outputs('Get_item')?['body/title'], 'Untitled')`.
 1. Validate data types before conversion: `if(isInt(variables('input')), int(variables('input')), 0)`.
 
 > [!TIP]
-> For a library of ready-to-use expression patterns with null-safe handling, see [Expression cookbook for cloud flows](expression-cookbook.md).
+> Learn about a library of ready-to-use expression patterns with null-safe handling in [Expression cookbook for cloud flows](expression-cookbook.md).
 
-**Related**: [InvalidTemplate](#invalidtemplate), [ContentConversionFailed](#contentconversionfailed)
+Related information: [InvalidTemplate](#invalidtemplate), [ContentConversionFailed](#contentconversionfailed)
 
 ### ContentConversionFailed
 
@@ -149,7 +151,7 @@ These errors occur when a flow runs and an expression can't be evaluated.
 1. For dates, use `parseDateTime()` with an explicit locale or `formatDateTime()` to normalize before passing.
 1. For arrays, use `first()` to extract a single item if the downstream action expects one value.
 
-**Related**: [ExpressionEvaluationFailed](#expressionevaluationfailed)
+Related information: [ExpressionEvaluationFailed](#expressionevaluationfailed)
 
 ## Connection and authentication errors
 
@@ -176,25 +178,26 @@ These errors occur when the flow can't authenticate to a connected service.
 > [!IMPORTANT]
 > For production flows, consider using service principal connections instead of personal user connections. Service principal connections don't expire when a user changes their password or leaves the organization.
 
-**Related**: [ConnectionNotConfigured](#connectionnotconfigured), [ConnectionAuthorizationFailed](#connectionauthorizationfailed)
+Related information: [ConnectionNotConfigured](#connectionnotconfigured), [ConnectionAuthorizationFailed](#connectionauthorizationfailed)
 
 ### ConnectionNotConfigured
 
-**What it means**: An action requires a connection but none has been selected.
+**What it means**: An action requires a connection but none was selected.
 
 **Common causes**:
 
 - Flow was imported from a solution and connection references weren't mapped
-- A new action was added but the connection step was skipped
+- A new action was added, but the connection step was skipped
 - The connection reference points to an environment variable with no value
 
 **How to fix**:
 
 1. Open the flow in edit mode and find the action with the connection warning.
 1. Select an existing connection from the dropdown, or create a new one.
-1. For solution flows, go to **Solutions** > **Default Solution** > **Connection References** and set the connection for each reference.
+1. For solution flows, go to **Solutions** > **Default Solution** > **Connection References**.
+1. Set the connection for each reference.
 
-**Related**: [InvalidConnection](#invalidconnection)
+Related information: [InvalidConnection](#invalidconnection)
 
 ### Unauthorized (401)
 
@@ -214,7 +217,7 @@ These errors occur when the flow can't authenticate to a connected service.
 1. For service principal connections, rotate the secret in Microsoft Entra ID and update the connection.
 1. Check Microsoft Entra ID sign-in logs for Conditional Access blocks: **Azure portal** > **Microsoft Entra ID** > **Sign-in logs**, filter by the app name.
 
-**Related**: [Forbidden (403)](#forbidden-403), [ConnectionAuthorizationFailed](#connectionauthorizationfailed)
+Related information: [Forbidden (403)](#forbidden-403), [ConnectionAuthorizationFailed](#connectionauthorizationfailed)
 
 ### Forbidden (403)
 
@@ -231,10 +234,10 @@ These errors occur when the flow can't authenticate to a connected service.
 
 1. Check DLP policies: **Power Platform admin center** > **Data policies**. Look for policies that block the connector in your environment's group.
 1. Verify the connection user has the right permissions on the target service (SharePoint site permissions, Dataverse security roles, and similar).
-1. If it's a premium connector issue, verify the flow owner or caller has a Power Automate Premium license. For more information, see [What's free vs. what's premium](../power-platform/admin/power-automate-licensing/free-vs-premium.md).
+1. If it's a premium connector issue, verify the flow owner or caller has a Power Automate Premium license.
 1. Contact your admin if a DLP policy needs to be modified.
 
-**Related**: [Unauthorized (401)](#unauthorized-401), [DirectApiAuthorizationRequired](#directapiauthorizationrequired)
+Related information: [Unauthorized (401)](#unauthorized-401), [DirectApiAuthorizationRequired](#directapiauthorizationrequired)
 
 ### ConnectionAuthorizationFailed
 
@@ -249,15 +252,16 @@ These errors occur when the flow can't authenticate to a connected service.
 
 **How to fix**:
 
-1. Open **Power Automate** > **Connections**, find the affected connection.
-1. Select the connection, then select **Fix connection** to re-authenticate.
+1. Open **Power Automate** > **Connections**.
+1. Find the affected connection.
+1. Select the connection, and then select **Fix connection** to re-authenticate.
 1. If using a shared connection, ask the connection owner to re-share it.
 1. For service accounts, set a calendar reminder to rotate credentials before they expire.
 
 > [!TIP]
-> For a detailed walkthrough of connection issues by connector (SharePoint, Outlook, SQL Server, Dataverse, HTTP), see [Fix connection failures in cloud flows](fix-connection-failures.md).
+> Find a detailed tutorial of connection issues by connector (SharePoint, Outlook, SQL Server, Dataverse, HTTP) in [Fix connection failures in cloud flows](fix-connection-failures.md).
 
-**Related**: [InvalidConnection](#invalidconnection), [Unauthorized (401)](#unauthorized-401)
+Related information: [InvalidConnection](#invalidconnection), [Unauthorized (401)](#unauthorized-401)
 
 ## Connector and API errors
 
@@ -277,11 +281,11 @@ These errors come from the downstream service the flow is calling.
 **How to fix**:
 
 1. Open the failed run and select the failed action.
-1. Expand **Outputs** to see the actual error message and status code from the API.
-1. Fix the underlying issue based on the specific API error (see the 400, 401, 403, and 404 entries in this reference).
+1. Expand **Outputs** to display the actual error message and status code from the API.
+1. Fix the underlying issue based on the specific API error (review the 400, 401, 403, and 404 entries in this reference).
 1. If the action should run even when prior actions fail, check its **Configure run after** settings.
 
-**Related**: [BadRequest (400)](#badrequest-400), [NotFound (404)](#notfound-404)
+Related information: [BadRequest (400)](#badrequest-400), [NotFound (404)](#notfound-404)
 
 ### BadRequest (400)
 
@@ -296,12 +300,12 @@ These errors come from the downstream service the flow is calling.
 
 **How to fix**:
 
-1. Open the failed action in run history and look at the **Inputs** section to see exactly what was sent.
+1. Open the failed action in run history and look at the **Inputs** section to display exactly what was sent.
 1. Compare the inputs to the API's expected schema (check the connector documentation).
 1. Sanitize user input with `replace()` to strip invalid characters before passing to the action.
 1. Use `substring()` or `take()` to truncate long values to the field's max length.
 
-**Related**: [ActionFailed](#actionfailed), [ContentConversionFailed](#contentconversionfailed)
+Related information: [ActionFailed](#actionfailed), [ContentConversionFailed](#contentconversionfailed)
 
 ### NotFound (404)
 
@@ -321,7 +325,7 @@ These errors come from the downstream service the flow is calling.
 1. Replace hardcoded IDs with dynamic lookups where possible (for example, "Get items" with a filter instead of "Get item" with a static ID).
 1. Add error handling: configure the next action to **Run after** > **has failed** and handle the 404 gracefully.
 
-**Related**: [ActionFailed](#actionfailed)
+Related information: [ActionFailed](#actionfailed)
 
 ## Trigger errors
 
@@ -340,11 +344,11 @@ These errors relate to flow triggers not firing or failing.
 **How to fix**:
 
 1. Go to the trigger's **Settings** and review the trigger condition expression.
-1. Test the condition against a known event payload. Use **Peek code** on the trigger to see the raw schema.
+1. Test the condition against a known event payload. Use **Peek code** on the trigger to display the raw schema.
 1. Temporarily remove the condition, trigger the flow manually, and inspect the trigger output to verify field names and values.
 1. Fix the expression and re-enable the condition.
 
-**Related**: [ExpressionEvaluationFailed](#expressionevaluationfailed)
+Related information: [ExpressionEvaluationFailed](#expressionevaluationfailed)
 
 ## Timeout and throttling errors
 
@@ -352,7 +356,7 @@ These errors occur when the flow or an action exceeds time or rate limits.
 
 ### ActionTimedOut
 
-**What it means**: A single action exceeded its configured timeout and was cancelled.
+**What it means**: A single action exceeded its configured timeout and was canceled.
 
 **Common causes**:
 
@@ -368,7 +372,7 @@ These errors occur when the flow or an action exceeds time or rate limits.
 1. For Dataverse, add `$filter` and `$top` to reduce the result set.
 1. For approvals, set a reasonable expiration and add a timeout branch to handle non-responses.
 
-**Related**: [OperationTimedOut](#operationtimedout)
+Related information: [OperationTimedOut](#operationtimedout)
 
 ### OperationTimedOut
 
@@ -386,12 +390,12 @@ These errors occur when the flow or an action exceeds time or rate limits.
 1. Always set explicit timeouts on webhook and approval actions.
 1. For HTTP webhook actions, implement a timeout branch with **Configure run after** > **has timed out**.
 1. Break long waits into shorter segments using a loop with daily checks.
-1. For the 30-day run limit, redesign long-running processes to use a "relay" pattern: end the current run and start a new one with state passed via Dataverse or a file.
+1. For the 30-day run limit, redesign long-running processes to use a "relay" pattern: End the current run and start a new one with state passed via Dataverse or a file.
 
 > [!IMPORTANT]
 > Cloud flows have a maximum run duration of 30 days. For processes that take longer, split them into multiple flow runs with shared state.
 
-**Related**: [ActionTimedOut](#actiontimedout)
+Related information: [ActionTimedOut](#actiontimedout)
 
 ### WorkflowRunActionRepetitionQuotaExceeded
 
@@ -400,17 +404,17 @@ These errors occur when the flow or an action exceeds time or rate limits.
 **Common causes**:
 
 - Processing a large SharePoint list or Dataverse table without filtering first
-- Nested Apply to Each loops multiplying iteration counts (100 x 100 = 10,000)
-- A "Get items" action returning all rows instead of a filtered subset
+- Nested `Apply to Each` loops multiplying iteration counts (100 x 100 = 10,000)
+- A `Get items` action returning all rows instead of a filtered subset
 
 **How to fix**:
 
 1. Add filters to the data source action to reduce the number of items before the loop.
-1. Use OData `$filter` and `$top` on "Get items" actions instead of filtering inside the loop.
+1. Use OData `$filter` and `$top` on **Get items** actions instead of filtering inside the loop.
 1. For large datasets, batch the work across multiple flow runs using pagination tokens or date ranges.
-1. Consider using "Select" or "Filter array" actions instead of Apply to Each when you only need to transform or filter data.
+1. Consider using `Select` or `Filter array` actions instead of `Apply to Each` when you only need to transform or filter data.
 
-**Related**: [FlowRunQuotaExceeded](#flowrunquotaexceeded)
+Related information: [FlowRunQuotaExceeded](#flowrunquotaexceeded)
 
 ### FlowRunQuotaExceeded
 
@@ -431,9 +435,9 @@ These errors occur when the flow or an action exceeds time or rate limits.
 1. Spread workloads across multiple flows or schedule high-volume runs during off-peak hours.
 
 > [!NOTE]
-> For details on daily action limits by license tier, see [Power Automate limits and configuration](/power-automate/limits-and-config).
+> Learn more about daily action limits by license tier in [Power Automate limits and configuration](/power-automate/limits-and-config).
 
-**Related**: [WorkflowRunActionRepetitionQuotaExceeded](#workflowrunactionrepetitionquotaexceeded), [DirectApiAuthorizationRequired](#directapiauthorizationrequired)
+Related information: [WorkflowRunActionRepetitionQuotaExceeded](#workflowrunactionrepetitionquotaexceeded), [DirectApiAuthorizationRequired](#directapiauthorizationrequired)
 
 ## Licensing errors
 
@@ -443,7 +447,7 @@ These errors occur when the flow or an action exceeds time or rate limits.
 
 **Common causes**:
 
-- A flow with premium connectors (HTTP, SQL Server, Dataverse, custom connectors) is run by a user on a seeded M365 license
+- A flow with premium connectors (HTTP, SQL Server, Dataverse, custom connectors) is run by a user on a seeded Microsoft 365 license
 - The flow owner has premium but the triggering user doesn't (the caller's license matters, not the owner's)
 - A scheduled flow's owner lost their premium license
 - An in-context flow was disassociated from its Power App, making it out-of-context
@@ -455,10 +459,7 @@ These errors occur when the flow or an action exceeds time or rate limits.
 1. For scheduled or automated flows, ensure the flow owner has a premium license.
 1. Consider whether a Process license (per-flow) is more cost-effective for high-volume shared flows.
 
-> [!TIP]
-> For a complete breakdown of what's included in each license tier, see [What's free vs. what's premium in Power Automate](../power-platform/admin/power-automate-licensing/free-vs-premium.md).
-
-**Related**: [Forbidden (403)](#forbidden-403), [FlowRunQuotaExceeded](#flowrunquotaexceeded)
+Related information: [Forbidden (403)](#forbidden-403), [FlowRunQuotaExceeded](#flowrunquotaexceeded)
 
 ## Quick reference table
 
@@ -485,7 +486,7 @@ These errors occur when the flow or an action exceeds time or rate limits.
 | ConnectionAuthorizationFailed | Connection | Fix connection, re-authenticate |
 | OperationTimedOut | Timeout | Set explicit timeouts, use relay pattern |
 
-## See also
+## Related information
 
 - [Expression cookbook for cloud flows](expression-cookbook.md)
 - [Fix connection failures in cloud flows](fix-connection-failures.md)

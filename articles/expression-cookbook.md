@@ -1,20 +1,20 @@
 ---
 title: Expression cookbook for cloud flows - Power Automate
-description: 30 ready-to-use expression patterns for text, dates, arrays, JSON, math, and logic in Power Automate cloud flows.
+description: Learn about ready-to-use expression patterns for text, dates, arrays, JSON, math, and logic in Power Automate cloud flows.
 author: matow
 ms.author: matow
-ms.reviewer:
+ms.reviewer: angieandrews
 ms.topic: reference
-ms.date: 03/19/2026
+ms.date: 04/09/2026
 ms.subservice: cloud-flow
 ---
 
 # Expression cookbook for cloud flows
 
-30 ready-to-use expression patterns for common scenarios in Power Automate cloud flows. Copy, adapt, and use these patterns in your flows.
+This article explains 30 ready-to-use expression patterns for common scenarios in Power Automate cloud flows. You can copy, adapt, and use these patterns in your flows.
 
 > [!NOTE]
-> These expressions work in all Power Automate cloud flow license tiers. For the full function reference, see [Workflow expression functions](/azure/logic-apps/workflow-definition-language-functions-reference).
+> These expressions work in all Power Automate cloud flow license tiers. Find the full function reference in [Workflow expression functions](/azure/logic-apps/workflow-definition-language-functions-reference).
 
 ## Text operations
 
@@ -121,7 +121,7 @@ ms.subservice: cloud-flow
 **Example**: `parseDateTime('03/18/2026', 'en-US')` returns a proper datetime value.
 
 > [!IMPORTANT]
-> Without the locale parameter, parsing depends on the flow's regional settings and can swap month/day. Always specify the locale explicitly to avoid `03/04/2026` being interpreted as April 3rd vs. March 4th.
+> Without the locale parameter, parsing depends on the flow's regional settings and can swap month/day. Always specify the locale explicitly to avoid `03/04/2026` being interpreted as April 3 vs. March 4.
 
 ### 10. Get day of week
 
@@ -292,7 +292,7 @@ ms.subservice: cloud-flow
 **Example**: `int('42')` returns `42`. `float('3.14')` returns `3.14`. `string(42)` returns `'42'`.
 
 > [!IMPORTANT]
-> `int()` on a decimal string throws an error — it doesn't truncate. If a variable might contain a decimal, use `float()` first: `int(float(variables('input')))`. Note that with constant values like `int('3.14')`, the error is caught at save time (InvalidTemplate), not at runtime.
+> `int()` on a decimal string throws an error; it doesn't truncate. If a variable might contain a decimal, use `float()` first: `int(float(variables('input')))`. With constant values like `int('3.14')`, the error is caught at save time (InvalidTemplate), not at runtime.
 
 ### 25. Calculate percentage
 
@@ -342,7 +342,7 @@ ms.subservice: cloud-flow
 
 ### 29. Compare dates (is date A after date B?)
 
-**Scenario**: Check if a deadline has passed, or if one event happened before another.
+**Scenario**: Check if a deadline passed, or if one event happened before another.
 
 **Expression**: `greater(ticks(variables('dateA')), ticks(variables('dateB')))`
 
@@ -391,7 +391,7 @@ ms.subservice: cloud-flow
 | AND | `and(condA, condB)` |
 | OR | `or(condA, condB)` |
 
-## See also
+## Related information
 
 - [Cloud flow error code reference](error-reference.md)
 - [Troubleshoot cloud flow errors](troubleshoot-flow-errors.md)
