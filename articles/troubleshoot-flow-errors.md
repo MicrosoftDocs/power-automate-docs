@@ -135,3 +135,5 @@ The following table contains quick references for error messages you might encou
 - [Get the most from Copilot in Power Automate designer](copilot-cloud-flows-tips.md)
 - [Expression cookbook for cloud flows](expression-cookbook.md)
 - [Power Automate Community Forums](https://powerusers.microsoft.com/t5/Building-Flows/bd-p/BuildingFlows)
+
+ **Note**: The author created this article with assistance from AI. [Learn more](/principles-for-ai-generated-content)
