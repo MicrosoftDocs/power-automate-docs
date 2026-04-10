@@ -156,7 +156,9 @@ The following table describes what features are available for different account 
 
 - Power Automate applies the proxy configuration specified in Windows proxy settings. If the proxy server requires authentication, the administrator must exclude Power Automate from using it or use another server that doesn't require authentication. Learn more about [configuring Power Automate to bypass a corporate proxy server](governance.md#configure-power-automate-for-desktop-to-bypass-a-corporate-proxy-server).
 
-- The number of actions that can be logged in a single desktop flow run is limited to 10,000. Extra actions are performed but aren't logged.
+- The number of actions that can be logged in a single desktop flow run is limited depending on the logging configuration. Extra actions are performed but aren't logged. [Learn more about logs version](https://learn.microsoft.com/en-gb/power-automate/desktop-flows/configure-desktop-flow-logs)
+   - Logging V1 in AdditionalContext support up to 32MB of data, or roughly 50,000 to 80,000 actions.
+   - Logging V2 in FlowLogs table supports a minimum 100K actions, but can go up to 10M actions depending on the actions generated and the duration of execution.
 
 - Power Automate for desktop is fully backwards compatible. However, forward compatibility isn't guaranteed. Each update might introduce action upgrades that change their signature (properties or values of an action) and/or a change in the engine powering runtime and authoring. Attempting to run or edit a desktop flow created with a newer version of Power Automate for desktop might result in the following error message:
 
