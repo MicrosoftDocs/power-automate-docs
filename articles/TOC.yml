@@ -34,7 +34,11 @@
         - name: Create your first cloud flow without Copilot
           href: create-cloud-flow-without-copilot.md
         - name: "Tutorial: Get Started with cloud flows"
-          href: get-started-with-cloud-flows.md    
+          href: get-started-with-cloud-flows.md
+        - name: Classic designer vs. modern designer
+          href: classic-vs-modern-designer.md
+        - name: Get the most from Copilot in the designer
+          href: copilot-cloud-flows-tips.md    
     - name: More trigger and action capabilities
       items:
         - name: Work with triggers and actions
@@ -63,6 +67,8 @@
         href: date-time-values.md
       - name: Convert a time zone
         href: convert-time-zone.md
+      - name: Expression cookbook
+        href: expression-cookbook.md
       - name: Use expressions in conditions
         href: use-expressions-in-conditions.md
       - name: Create and edit expressions with Copilot expression assistant (preview)
@@ -140,6 +146,12 @@
         href: fix-flow-failures.md
       - name: Find and fix errors with flow checker
         href: error-checker.md
+      - name: Error code reference
+        href: error-reference.md
+      - name: Troubleshoot errors
+        href: troubleshoot-flow-errors.md
+      - name: Fix connection failures
+        href: fix-connection-failures.md
     - name: Automated cloud flows
       items:
       - name: Create a cloud flow from a template

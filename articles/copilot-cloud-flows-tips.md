@@ -157,3 +157,5 @@ External AI tools have broad knowledge of API error codes and can often identify
 - [Troubleshoot cloud flow errors](troubleshoot-flow-errors.md)
 - [Cloud flow error code reference](error-reference.md)
 - [Classic designer vs. modern designer](classic-vs-modern-designer.md)
+
+**Note**: The author created this article with assistance from AI. [Learn more](/principles-for-ai-generated-content)

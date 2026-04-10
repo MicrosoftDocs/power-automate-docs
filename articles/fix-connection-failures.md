@@ -173,3 +173,5 @@ Service principal connections don't rely on a user's OAuth token. They don't exp
 - [Cloud flow error code reference](error-reference.md)
 - [Get the most from Copilot in Power Automate designer](copilot-cloud-flows-tips.md)
 - [Power Automate IP address configuration](/power-automate/ip-address-configuration)
+
+ **Note**: The author created this article with assistance from AI. [Learn more](/principles-for-ai-generated-content)
