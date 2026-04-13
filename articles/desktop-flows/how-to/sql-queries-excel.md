@@ -40,7 +40,7 @@ Now, deploy the **Open SQL connection** action and populate the following connec
 **Provider=Microsoft.ACE.OLEDB.12.0;Data Source=%Excel_File_Path%;Extended Properties="Excel 12.0 Xml;HDR=YES";**
 
 > [!NOTE]
-> To use the presented connection string successfully, [download and install Microsoft 365 Access Runtime](https://support.microsoft.com/office/download-and-install-microsoft-365-access-runtime-185c5a32-8ba9-491e-ac76-91cbe3ea09c9).
+> In order to use the connection string successfully, you must [download and install Microsoft 365 Access Runtime](https://support.microsoft.com/office/download-and-install-microsoft-365-access-runtime-185c5a32-8ba9-491e-ac76-91cbe3ea09c9).
 
 ![Screenshot of the Open SQL connection action.](media/sql-queries-excel/open-sql-connection-action.png)
 
