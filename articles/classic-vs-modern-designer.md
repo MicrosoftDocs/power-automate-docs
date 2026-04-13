@@ -132,3 +132,5 @@ If the classic designer works for you today, you don't need to switch immediatel
 - [Troubleshoot cloud flow errors](troubleshoot-flow-errors.md)
 - [Expression cookbook for cloud flows](expression-cookbook.md)
 - [Cloud flow designer overview](/power-automate/flows-designer)
+
+ **Note**: The author created this article with assistance from AI. [Learn more](/principles-for-ai-generated-content)

@@ -398,3 +398,5 @@ This article explains 30 ready-to-use expression patterns for common scenarios i
 - [Use expressions in conditions](/power-automate/use-expressions-in-conditions)
 - [Workflow expression functions reference](/azure/logic-apps/workflow-definition-language-functions-reference)
 - [Power Automate limits and configuration](/power-automate/limits-and-config)
+
+ **Note**: The author created this article with assistance from AI. [Learn more](/principles-for-ai-generated-content)
