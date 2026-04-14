@@ -4,14 +4,15 @@ description: Learn how to create an approval flow that requires everyone to appr
 suite: flow
 author: kewaiss
 contributors:
+  - ishanpakuwal
   - natalie-pienkowska
   - kartikraop
   - v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 02/20/2026
-ms.author: matow
+ms.date: 04/14/2026
+ms.author: ishanpakuwal
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -132,7 +133,7 @@ Here's an example of the approval request that's sent to each approver.
 
 ![approval request.](media/all-assigned-must-approve/approval-request.png)
 
-Here's an example of what a response and a response summary may look like after your flow runs.
+Here's an example of what a response and a response summary might look like after your flow runs.
 
 ![response tokens.](media/all-assigned-must-approve/response-output.png)
 
@@ -145,4 +146,3 @@ Here's an example of what a response and a response summary may look like after 
 * [Approve requests on the go](mobile-approvals.md)
 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
