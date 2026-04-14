@@ -4,13 +4,14 @@ description: Learn how to trigger flows by using the When a row is added, modifi
 suite: flow
 author: radioblazer
 contributors:
+  - ishanpakuwal
   - HeatherOrt
   - radioblazer
   - v-aangie
-ms.author: matow
+ms.author: ishanpakuwal
 ms.reviewer: angieandrews
 ms.topic: how-to
-ms.date: 01/16/2026
+ms.date: 04/14/2026
 ms.update-cycle: 180-days
 ms.collection: bap-ai-copilot
 search.app: 
