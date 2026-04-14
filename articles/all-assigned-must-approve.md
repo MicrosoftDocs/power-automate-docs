@@ -131,11 +131,11 @@ Now, whenever an item is added to your SharePoint list, or if an item changes, y
 
 Here's an example of the approval request that's sent to each approver.
 
-:::image type="content" source="media/all-assigned-must-approve/approval-request.png" alt-text="Screenshot of an approvak request.":::
+:::image type="content" source="media/all-assigned-must-approve/approval-request.png" alt-text="Screenshot of an approval request.":::
 
 Here's an example of what a response and a response summary might look like after your flow runs.
 
-:::image type="content" source="media/all-assigned-must-approve/response-output.png" alt-text="Screenshot of an approvak request.":::
+:::image type="content" source="media/all-assigned-must-approve/response-output.png" alt-text="Screenshot of rsponse tokens.":::
 
 ## Related information
 
