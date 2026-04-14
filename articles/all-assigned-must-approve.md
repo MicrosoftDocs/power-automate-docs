@@ -144,5 +144,3 @@ Here's an example of what a response and a response summary might look like afte
 * [Parallel modern approvals](parallel-modern-approvals.md)
 * [Approvals and Dataverse](common-data-model-approve.md)
 * [Approve requests on the go](mobile-approvals.md)
-
-
