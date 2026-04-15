@@ -14,7 +14,7 @@ search.audienceType:
   - flowmaker
   - enduser
 ms.custom:
-  - ai-gen-docs-bap
+  - ai-assisted
   - ai-gen-description
   - ai-seo-date:06/17/2025
 ---
@@ -113,6 +113,4 @@ When a test fails, you might need to:
 
 - [Testing actions reference](actions-reference/testing.md)
 
-> [!NOTE]
-> This author created this article with the assistance of AI. [Learn more](/principles-for-ai-generated-content)
 
