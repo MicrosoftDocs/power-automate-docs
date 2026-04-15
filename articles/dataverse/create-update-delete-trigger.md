@@ -4,13 +4,14 @@ description: Learn how to trigger flows by using the When a row is added, modifi
 suite: flow
 author: radioblazer
 contributors:
+  - ishanpakuwal
   - HeatherOrt
   - radioblazer
   - v-aangie
-ms.author: matow
+ms.author: ishanpakuwal
 ms.reviewer: angieandrews
 ms.topic: how-to
-ms.date: 01/16/2026
+ms.date: 04/14/2026
 ms.update-cycle: 180-days
 ms.collection: bap-ai-copilot
 search.app: 
@@ -84,6 +85,9 @@ Use the **Select columns** box to define the specific columns of the row that sh
 This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
 
 This property isn't supported on virtual tables.
+
+> [!IMPORTANT]
+> Lookup columns (columns that store references to other table rows) aren't supported in the **Select columns** filter. If you specify a lookup column, changes to that column don't trigger the flow. Use only scalar column types such as text, number, date/time, and choice columns.
 
 ### Filter expression
 
@@ -184,6 +188,9 @@ Use the **Select columns** box to define the specific columns of the row that sh
 This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
 
 This property isn't supported on virtual tables.
+
+> [!IMPORTANT]
+> Lookup columns (columns that store references to other table rows) aren't supported in the **Select columns** filter. If you specify a lookup column, changes to that column don't trigger the flow. Use only scalar column types such as text, number, date/time, and choice columns.
 
 ### Filter expression
 
