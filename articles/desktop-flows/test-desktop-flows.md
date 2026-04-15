@@ -26,7 +26,7 @@ Test cases help you verify that your desktop flows work correctly. Instead of ma
 ## Prerequisites
 
 - Power Automate for desktop version 2.54 or later
-- A Power Automate Premium license
+- [A Power Automate Premium license](/power-platform/admin/power-automate-licensing)
 
 ## Create a test case
 
@@ -55,7 +55,7 @@ To test a desktop flow:
 1. If your flow requires **input values**, enter them in the action's parameters.
 1. When the flow runs, you can validate any **output variables** it produces.
 
-:::image type="content" source="media/test-desktop-flows/test-desktop-flow-action.png" alt-text="Drag Test a desktop flow action to main designer pane." lightbox="media/test-desktop-flows/test-desktop-flow-action.png":::
+  :::image type="content" source="media/test-desktop-flows/test-desktop-flow-action.png" alt-text="Drag Test a desktop flow action to main designer pane." lightbox="media/test-desktop-flows/test-desktop-flow-action.png":::
 ### Assert
 
 The **Assert** action checks if a value matches what you expect. If the check fails, the test fails.
@@ -64,15 +64,15 @@ To add an assertion:
 
 1. In the Actions pane, expand **Testing**, and then drag the **Assert** action into your test case on the designer pane.
 1. In **Assert expression**, enter a condition to validate. For example:
-   - `%Sum = 25%` checks if Sum equals 25
-   - `%Total > 0%` checks if Total is greater than zero
-   - `%Status contains 'Success'%` checks if Status contains the word "Success"
-1. In **Assert message**, enter a message that explains what went wrong if the test fails, such as "Expected Sum to equal 25".
+   - `%Sum = 25%` checks if Sum equals 25.
+   - `%Total > 0%` checks if Total is greater than zero.
+   - `%Status contains 'Success'%` checks if Status contains the word "Success."
+1. In **Assert message**, enter a message that explains what went wrong if the test fails, such as "Expected Sum to equal 25."
 
-> [!TIP]
-> Add multiple Assert actions to validate different outputs from your flow.
+  > [!TIP]
+  > Add multiple Assert actions to validate different outputs from your flow.
 
-:::image type="content" source="media/test-desktop-flows/assert-action-test-edit.png" alt-text="Drag Assert action to main designer pane." lightbox="media/test-desktop-flows/assert-action-test-edit.png":::
+  :::image type="content" source="media/test-desktop-flows/assert-action-test-edit.png" alt-text="Drag Assert action to main designer pane." lightbox="media/test-desktop-flows/assert-action-test-edit.png":::
 
 For the full list of parameters, see [Testing actions reference](actions-reference/testing.md).
 
