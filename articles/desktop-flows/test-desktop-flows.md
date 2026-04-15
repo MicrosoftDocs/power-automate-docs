@@ -13,10 +13,7 @@ contributors:
 search.audienceType:
   - flowmaker
   - enduser
-ms.custom:
-  - ai-assisted
-  - ai-gen-description
-  - ai-seo-date:06/17/2025
+ai-usage: ai-assisted
 ---
 
 # Create and manage test cases for desktop flows
