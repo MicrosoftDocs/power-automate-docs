@@ -5,7 +5,7 @@ author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 04/06/2025
+ms.date: 04/15/2026
 ms.author: quseleba
 ms.reviewer: ellenwehrle
 contributors:
@@ -112,3 +112,7 @@ When a test fails, you might need to:
 ## Related information
 
 - [Testing actions reference](actions-reference/testing.md)
+
+> [!NOTE]
+> This author created this article with the assistance of AI. [Learn more](/principles-for-ai-generated-content)
+
