@@ -392,7 +392,7 @@
     href: ./desktop-flows/pad-architecture.md
   - name: Premium RPA features
     href: ./desktop-flows/premium-features.md
-  - name: Setup Power Automate
+  - name: Set up Power Automate
     items:
     - name: Prerequisites and limitations
       href: ./desktop-flows/requirements.md
@@ -498,7 +498,7 @@
       href: ./desktop-flows/create-machine-mapping.md
   - name: Create desktop flow connections
     href: ./desktop-flows/desktop-flow-connections.md
-  - name: Allowlist tenants for connect with sign-in connections
+  - name: Allow list tenants for connect with sign-in connections
     href: ./desktop-flows/how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
@@ -758,7 +758,7 @@
     - name: Delete desktop flow run history data
       href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
     - name: Timeout configuration for UI/browser automation
-      href: ./desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md
+      href: ./desktop-flows/how-to/ui-automation-change-timeout-configuration.md
     - name: Configure the open terminal session action
       href: ./desktop-flows/how-to/terminal-emulation-open-new-session.md
     - name:  Using remote desktop applications
