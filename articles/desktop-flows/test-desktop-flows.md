@@ -5,7 +5,7 @@ author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 04/15/2026
+ms.date: 04/16/2026
 ms.author: quseleba
 ms.reviewer: ellenwehrle
 contributors:
@@ -23,7 +23,7 @@ Test cases help you verify that your desktop flows work correctly. Instead of ma
 ## Prerequisites
 
 - Power Automate for desktop version 2.54 or later
-- [A Power Automate Premium license](/power-platform/admin/power-automate-licensing)
+- [A Power Automate Premium license](/power-platform/admin/power-automate-licensing/types)
 
 ## Create a test case
 
