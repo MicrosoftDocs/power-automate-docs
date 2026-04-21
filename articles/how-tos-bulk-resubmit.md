@@ -6,7 +6,7 @@ author: DBEKI
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 04/16/2026
+ms.date: 04/21/2026
 ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -30,9 +30,9 @@ You can enable flow run resubmission for instant triggers through the Power Plat
 
 ### Power Platform admin center
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Settings** and then search for **Power Automate flow run resubmission**.
-1. Select the toggle to enable or disable the functionality.
+1. To enable or disable the functionality, select the toggle.
 
 ### Apply tenant setting using PowerShell
 
@@ -93,8 +93,9 @@ Bulk cancel lets you cancel all flow runs in the **Running** or **Waiting** stat
 
 ### Cancel flow runs from the Run history page
 
-1. Sign in to [Power Automate](https://make.powerautomate.com) and select **My flows**.
-1. Next to the flow, select the ellipses (...) > **Run history**.
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. Select **My flows**.
+1. Next to the flow, select the ellipses (**...**) > **Run history**.
 
     Alternatively, you can select the flow name > **All runs** from the **28-day run history** list.
 
@@ -111,9 +112,9 @@ Bulk cancel lets you cancel all flow runs in the **Running** or **Waiting** stat
     > - This process can take up to 24 hours.
     > - In this scenario, the flows are suspended, and no further actions are executed.
     > - If a flow is turned off, pending canceled flows remain **Waiting**, and the queue doesn't clear until the flow is turned back on.
-    > - If the flow was throttled, the queue remains stuck until you assign one or more [Power Automate Process licenses](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) to give the flow additional capacity. Each Process license adds 250,000 actions per day, and up to 10 can be [stacked on a single cloud flow](desktop-flows/capacity-process.md#stack-multiple-process-licenses-on-a-cloud-flow). Contact your environment administrator to [allocate Process capacity to the environment](/power-platform/admin/power-automate-licensing/buy-licenses#manage-licenses) first, then [assign it to the flow](desktop-flows/capacity-process.md#allocate-process-capacity-to-a-cloud-flow).
+    > - If the flow was throttled, the queue remains stuck until you assign one or more [Power Automate Process licenses](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license#power-automate-process-license) to give the flow additional capacity. Each Process license adds 250,000 actions per day, and up to 10 can be [stacked on a single cloud flow](desktop-flows/capacity-process.md#stack-multiple-process-licenses-on-a-cloud-flow). Contact your environment administrator to [allocate process capacity to the environment](/power-platform/admin/power-automate-licensing/buy-licenses#manage-licenses) first, then [assign it to the flow](desktop-flows/capacity-process.md#allocate-process-capacity-to-a-cloud-flow).
 
-Flow runs that exceeded the [concurrency](limits-and-config.md#concurrency-looping-and-debatching-limits) limit may remain in the **Waiting** state alongside flow runs in the **Canceling** state. This is expected — they transition to **Canceling** when their turn in the queue arrives.
+Flow runs that exceeded the [concurrency](limits-and-config.md#concurrency-looping-and-debatching-limits) limit might remain in the **Waiting** state alongside flow runs in the **Canceling** state. This is expected&mdash;they transition to **Canceling** when their turn in the queue arrives.
 
 :::image type="content" source="media/cancel-resubmit-how-to/wait-cancel.png" alt-text="Screenshot of flow runs in states of 'Waiting' and 'Canceling'.":::
 
@@ -128,4 +129,3 @@ After the bulk cancel completes, verify that all flow runs previously in the **R
 - [Types of Power Automate licenses](/power-platform/admin/power-automate-licensing/types)
 - [Power Automate licensing FAQ](/power-platform/admin/power-automate-licensing/faqs)
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
