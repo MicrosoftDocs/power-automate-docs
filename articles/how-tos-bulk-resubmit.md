@@ -52,12 +52,12 @@ To run the following cmdlets, you need one of these prerequisites:
   ```powershell
    Add-PowerAppsAccount -Endpoint "prod" -TenantID <Tenant_ID>
    ```
-1. Retrieve and store your tenant settings in TenantSettings:
+2. Retrieve and store your tenant settings in TenantSettings:
    
   ```powershell
    $tenantSettings = Get-TenantSettings
    ```
-1. Set the `powerPlatform.powerAutomate.disableFlowRunResubmission` flag to **False**, to allow flow run resubmissions for cloud flows initialized by instant triggers.
+3. Set the `powerPlatform.powerAutomate.disableFlowRunResubmission` flag to **False**, to allow flow run resubmissions for cloud flows initialized by instant triggers.
 
   ```powershell
    $tenantSettings.powerPlatform.powerAutomate.disableFlowRunResubmission= $False
