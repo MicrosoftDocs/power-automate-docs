@@ -926,12 +926,12 @@
     },
     {
       "source_path": "articles/desktop-flows/prerequisites.md",
-      "redirect_url": "articles/desktop-flows/requirements.md",
+      "redirect_url": "/power-automate/desktop-flows/requirements",
       "redirect_document_id": false
           },
     {
       "source_path": "articles/desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md",
-      "redirect_url": "articles/desktop-flows/how-to/ui-automation-change-timeout-configuration.md",
+      "redirect_url": "/power-automate/desktop-flows/how-to/ui-automation-change-timeout-configuration",
       "redirect_document_id": false
     }
   ]
