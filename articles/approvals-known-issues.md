@@ -19,7 +19,15 @@ search.audienceType:
 ## Work with guest users
 
 If you assign a guest user to an approval, that user can't view or act on the approval by default. The guest user must be assigned a valid Power Automate license (per user license or Microsoft 365-based user license) to view or respond to the approval.
-  
+
+### Approval emails not sent to pending guest users
+
+Approval email notifications aren't sent to guest users who haven't yet accepted the B2B tenant invitation. The approval might be created, but the pending guest doesn't receive the email notification. If all assigned approvers are guest users with pending invitations, the approval creation fails with an error.
+
+To resolve this issue, ensure all guest approvers have accepted their tenant invitations before assigning approvals to them. You can check a guest user's invitation status in the [Microsoft Entra admin center](https://entra.microsoft.com) under **Users** > **All users** > select the guest > **Profile** > **Invitation status**.
+
+To learn more, see [Support for guest users](share-guest-users.md#approvals).
+
 ## Adaptive cards mismatch in Microsoft Teams
 
 There are multiple ways in which you can notify an approver when a flow runs. By default, all flows that handle approvals send an email notification. You can also send an adaptive card with the approval to users in Microsoft Teams. If the approver responds through the email notification or through the approval action center, the card in Microsoft Teams won't auto-update. This can lead to situations where there's a mismatch between the status shown on the adaptive card and that of the flow.
