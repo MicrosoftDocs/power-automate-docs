@@ -23,7 +23,7 @@ This article helps you understand the scenarios that are supported for guest use
 A guest user must meet the following criteria:
 
 - Have a Power Automate license assigned through either the tenant that hosts the flow, or the home tenant of the guest user. To learn more about licensing implications, go to [FAQs about licenses](/power-platform/admin/power-automate-licensing/faqs#do-guest-users-not-from-your-tenant-need-a-license-to-use-power-automate).  
-- Accept the B2B tenant invitation. Guest users in a **pending acceptance** state can't receive approval notifications or participate in approval workflows. The invitation must be accepted before the guest user can use approvals.
+- Accept the B2B tenant invitation. Guest users who haven't accepted the invitation are removed from the approval assignee list and can't participate in approval workflows.
 - Sign in and consent to Power Automate.
 
 ## Licensing requirements
@@ -46,7 +46,7 @@ If a guest user needs to only run a flow, they need to have the **Sharing-Run On
 A guest user can be assigned an approval, receive an approval email, and be routed to the **Approvals** page in the guest tenant to approve or reject.
 
 > [!IMPORTANT]
-> The guest user must have **accepted the B2B tenant invitation** before they can receive approval emails or respond to approvals. Approval email notifications aren't sent to guest users whose invitation is still pending. If all assignees on an approval are guests with pending invitations, the approval creation fails. To learn more, see [Common errors creating and assigning flow approvals](/troubleshoot/power-platform/power-automate/approvals/common-errors-creating-and-assigning-flow-approvals).
+> Guest users who haven't accepted the B2B tenant invitation are **removed from the approval assignee list**. These users won't receive approval emails and can't respond to approvals. If all assignees are removed because they're all pending guests, the approval creation fails. To learn more, see [Common errors creating and assigning flow approvals](/troubleshoot/power-platform/power-automate/approvals/common-errors-creating-and-assigning-flow-approvals).
 
 Guest users can't see the approvals from their guest tenant while they're in their original tenant, or from their original tenant while they're in their guest tenant. Furthermore, actionable approval mails in Outlook aren't supported for guest users in a tenant. Guest users need to go to the Power Automate portal in order to act on an approval.
 

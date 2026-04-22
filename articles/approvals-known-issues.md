@@ -22,7 +22,7 @@ If you assign a guest user to an approval, that user can't view or act on the ap
 
 ### Approval emails not sent to pending guest users
 
-Approval email notifications aren't sent to guest users who haven't yet accepted the B2B tenant invitation. The approval might be created, but the pending guest doesn't receive the email notification. If all assigned approvers are guest users with pending invitations, the approval creation fails with an error.
+Guest users who haven't accepted the B2B tenant invitation are removed from the approval assignee list. They won't be included as approvers and won't receive the approval email notification. If all assigned approvers are guests with pending invitations, all are removed and the approval creation fails with an error.
 
 To resolve this issue, ensure all guest approvers have accepted their tenant invitations before assigning approvals to them. You can check a guest user's invitation status in the [Microsoft Entra admin center](https://entra.microsoft.com) under **Users** > **All users** > select the guest > **Profile** > **Invitation status**.
 

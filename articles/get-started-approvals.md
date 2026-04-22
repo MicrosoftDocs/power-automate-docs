@@ -101,7 +101,7 @@ Use one of the following options to get started creating approval flows.
 You can assign approvals to users&mdash;including guest users and Microsoft 365 groups&mdash;in your current Dataverse environment or your Microsoft Entra tenant.
 
 > [!NOTE]
-> Guest users must have accepted the B2B tenant invitation before they can receive approval notifications or respond to approvals. To learn more, see [Support for guest users](share-guest-users.md).
+> Guest users who haven't accepted the B2B tenant invitation are removed from the approval assignee list and won't participate in the approval. To learn more, see [Support for guest users](share-guest-users.md).
 
 When you assign an approval to users who aren't in your environment, they're automatically given the *Approvals User* Dataverse security role. Users need this role for their responses to be processed and persisted in their approvals history.
 
