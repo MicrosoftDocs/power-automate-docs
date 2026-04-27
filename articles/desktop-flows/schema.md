@@ -135,5 +135,5 @@ The minimum access level for each privilege is basic (user). More information: [
 
 :::image type="content" source="media/schema/desktopflowbinary-permissions.png" alt-text="Privilege and access level required for desktop flow binaries with v2 schema":::
 
-> [!Important]
-> Assigning only the privileges listed above may not be sufficient if other required Dataverse or Power Platform permissions - normally granted by Basic User or Environment Maker — are missing.
+> [!IMPORTANT]
+> Assigning only the privileges listed in [Roles and priileges](#roles-and-privileges) may not be sufficient if other required Dataverse or Power Platform permissions normally granted by *Basic User* or *Environment Maker* are missing.
