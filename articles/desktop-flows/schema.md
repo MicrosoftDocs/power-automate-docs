@@ -5,7 +5,7 @@ author: nvigne
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 07/01/2025
+ms.date: 04/27/2026
 ms.author: nvigne
 ms.reviewer: matp
 contributors:
@@ -112,9 +112,12 @@ The number of desktop flow binaries might vary depending on the size of the desk
 
 ## Roles and privileges
 
-With the v2 schema, the desktop flow binary table is used. For desktop flows to work as expected, you need additional privileges. If you're using the default security roles `Environment Maker` and `Basic User`, there's no change needed.
+With the v2 schema, the desktop flow binary table is used. For desktop flows to work as expected, you need additional privileges. If you're using the default security roles `Environment Maker` and `Basic User`,  no additional configuration is required for desktop flows to work as expected. These built-in roles already include all required permissions for creating, running, and managing desktop flows using the v2 schema.
 
-If you use custom security roles to manage the access to your desktop flow, Power Platform admins need to add the following list of privileges to the role:
+If you use custom security roles to manage access to desktop flows, it's recommended that these roles include all privileges from the built-in Basic User and Environment Maker roles, in addition to the desktop‑flow‑specific privileges listed below.
+Custom roles should effectively inherit or mirror the permissions of these built-in roles and be reviewed and updated periodically, as built-in roles may change over time. This ensures continued compatibility and prevents unexpected failures when platform permissions evolve.
+
+In addition to the permissions provided by the Basic User and Environment Maker roles, the following privileges are required for desktop flows when using custom security roles:
 
 - `prvCreatedesktopflowbinary`
 - `prvReaddesktopflowbinary`
@@ -131,3 +134,6 @@ If you use custom security roles to manage the access to your desktop flow, Powe
 The minimum access level for each privilege is basic (user). More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
 
 :::image type="content" source="media/schema/desktopflowbinary-permissions.png" alt-text="Privilege and access level required for desktop flow binaries with v2 schema":::
+
+> [!Important]
+> Assigning only the privileges listed above may not be sufficient if other required Dataverse or Power Platform permissions - normally granted by Basic User or Environment Maker — are missing.
