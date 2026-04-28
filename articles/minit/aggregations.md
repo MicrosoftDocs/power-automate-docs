@@ -9,7 +9,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 03/10/2025
+ms.date: 04/28/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -386,7 +386,7 @@ Returns the first [value] that meets the [condition], grouped according to the [
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
-- **[default]**: Value to be returned, when condition is not met
+- **[default]**: Value to be returned, when condition isn't met
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
@@ -418,7 +418,7 @@ Returns the last value that meets the [condition], grouped according to the [con
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
-- **[default]**: Value to be returned, when condition is not met
+- **[default]**: Value to be returned, when condition isn't met
 
    Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
