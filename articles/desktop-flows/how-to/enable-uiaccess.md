@@ -30,7 +30,7 @@ UI Access is disabled by default. If you want to enable it, you can set the foll
 
 ***Value***
 
-- **1**: UI Access is enabled Power Automate.
+- **1**: UI Access is enabled for Power Automate.
 
 ## How to disable UI Access
 
