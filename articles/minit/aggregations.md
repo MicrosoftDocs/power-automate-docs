@@ -368,9 +368,9 @@ Returns the first [value], grouped according to the [context].
 
 - **[value]**: An attribute name, nested operation, or expression
 
-   Data type: INT, FLOAT, TIME
+   Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
-**Output data type**: FLOAT, TIME
+**Output data type**: BOOL, INT, FLOAT, STRING, DATE, TIME
 
 ## FIRSTIF([context],[condition],[value],[default])
 
@@ -384,7 +384,7 @@ Returns the first [value] that meets the [condition], grouped according to the [
 
 - **[value]**: An attribute name, nested operation, or expression
 
-   Data type: INT, FLOAT, TIME, STRING
+   Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
 - **[default]**: Value to be returned, when condition is not met
 
@@ -400,9 +400,9 @@ Returns the last [value], grouped according to the [context].
 
 - **[value]**: An attribute name, nested operation, or expression
 
-   Data type: INT, FLOAT, TIME
+   Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
-**Output data type**: FLOAT, TIME
+**Output data type**: BOOL, INT, FLOAT, STRING, DATE, TIME
 
 ## LASTIF([context],[condition],[value],[default])
 
@@ -416,7 +416,7 @@ Returns the last value that meets the [condition], grouped according to the [con
 
 - **[value]**: An attribute name, nested operation, or expression
 
-   Data type: INT, FLOAT, TIME
+   Data type: BOOL, INT, FLOAT, STRING, DATE, TIME
 
 - **[default]**: Value to be returned, when condition is not met
 
