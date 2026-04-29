@@ -1,14 +1,15 @@
 ---
-title: Known issues and limitations
-description: Known issues and limitations when working with approvals.
+title: Known issues
+description: Learn about known issues when working with approvals.
 suite: flow
-author: kewaiss 
+author: radioblazer 
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: troubleshooting-known-issue
-ms.date: 10/05/2022
-ms.author: derahonuorah
+ms.date: 04/29/2026
+ms.author: matow
 ms.reviewer: angieandrews
+ai-usage: ai-assisted
 search.audienceType: 
   - flowmaker
   - enduser
@@ -16,21 +17,23 @@ search.audienceType:
 
 # Known issues
 
+Use this article to learn about known issues when working with approvals.
+
 ## Work with guest users
 
 If you assign a guest user to an approval, that user can't view or act on the approval by default. The guest user must be assigned a valid Power Automate license (per user license or Microsoft 365-based user license) to view or respond to the approval.
 
 ### Approval emails not sent to pending guest users
 
-Guest users who haven't accepted the B2B tenant invitation are removed from the approval assignee list. They won't be included as approvers and won't receive the approval email notification. If all assigned approvers are guests with pending invitations, all are removed and the approval creation fails with an error.
+Guest users who didn't accept the B2B tenant invitation are removed from the approval assignee list. They aren't included as approvers and don't receive the approval email notification. If all assigned approvers are guests with pending invitations, all are removed and the approval creation fails with an error.
 
-To resolve this issue, ensure all guest approvers have accepted their tenant invitations before assigning approvals to them. You can check a guest user's invitation status in the [Microsoft Entra admin center](https://entra.microsoft.com) under **Users** > **All users** > select the guest > **Profile** > **Invitation status**.
+To resolve this issue, ensure all guest approvers accepted their tenant invitations before assigning approvals to them. You can check a guest user's invitation status in the [Microsoft Entra admin center](https://entra.microsoft.com) under **Users** > **All users** > select the guest > **Profile** > **Invitation status**.
 
-To learn more, see [Support for guest users](share-guest-users.md#approvals).
+Learn more in [Support for guest users](share-guest-users.md#approvals).
 
 ## Adaptive cards mismatch in Microsoft Teams
 
-There are multiple ways in which you can notify an approver when a flow runs. By default, all flows that handle approvals send an email notification. You can also send an adaptive card with the approval to users in Microsoft Teams. If the approver responds through the email notification or through the approval action center, the card in Microsoft Teams won't auto-update. This can lead to situations where there's a mismatch between the status shown on the adaptive card and that of the flow.
+There are multiple ways in which you can notify an approver when a flow runs. By default, all flows that handle approvals send an email notification. You can also send an adaptive card with the approval to users in Microsoft Teams. If the approver responds through the email notification or through the approval action center, the card in Microsoft Teams doesn't auto-update. This can lead to situations where there's a mismatch between the status shown on the adaptive card and that of the flow.
 
 To avoid this, you can disable the default notification email sent to the user as part of approval creation.
 
@@ -56,7 +59,7 @@ Approvals that rely on custom responses can fail if they're sent to many users w
 
 The Power Apps (V2) trigger supports both embedded and invoker connections. When you update the connections in your Power Apps (V2) trigger to invoker connections, you must refresh or remove and re-add the flow in the app and save the app.
 
-To learn more, go to [Known issues with Power Apps (V2) trigger](/troubleshoot/power-platform/power-automate/known-issues-power-apps-v2-trigger).
+Learn more in [Known issues with Power Apps (V2) trigger](/troubleshoot/power-platform/power-automate/known-issues-power-apps-v2-trigger).
 
 ## Split create and wait actions
 
@@ -70,7 +73,6 @@ When you use approvals with *do until* loops, users need to account for all poss
 
 To view details of an approval, select an individual approval to open it. Formerly, you could also view the details in the **Details** column on the **Received** tab of the Approvals list view, but this column is now removed.
 
-
 ## Issues with email notifications
 
 Here's an explanation of the process for sending an approval email notification, and a description of the possible email notification statuses and troubleshooting.
@@ -82,7 +84,7 @@ Sending approval email notifications is a two-step process:
 
 ### Reply to an approval email
 
-When you reply to an approval email notification, you must add your intended recipient(s) to the **To:** line. Previously, the person who sent you the approval request would be automatically added to the **To:** line when you selected **Reply**, but now it must be done manually.
+When you reply to an approval email notification, you must add your intended recipients to the **To:** line. Previously, the person who sent you the approval request would be automatically added to the **To:** line when you selected **Reply**, but now you must do it manually.
 
 ### Email status definitions
 
@@ -99,7 +101,7 @@ If the status of your email notification is **Sent** but you don't see the email
 
 - Refresh your inbox and verify that you have an active Internet connection.
 - Confirm that the email address is correct for the intended recipient.
-- Review your email settings and verify if there are any filters or blocked addresses that may prevent you from seeing the notification.
+- Review your email settings and verify if there are any filters or blocked addresses that might prevent you from seeing the notification.
 - Check your spam or promotions folder.
 
 ### Troubleshoot failed requests
