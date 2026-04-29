@@ -1,14 +1,14 @@
 ---
 title: Add OAuth authentication for HTTP request triggers
 description: Learn about authentication parameters for HTTP request triggers.
-author: kewaiss
+author: radioblazer
 contributors:
   - rakrish84
   - v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 01/16/2026
+ms.date: 04/29/2026
 ms.update-cycle: 180-days
 ms.author: kisubedi
 ms.reviewer: angieandrews
@@ -20,7 +20,7 @@ search.audienceType:
 
 # Add OAuth authentication for HTTP request triggers
 
-You can use the **When an HTTP request is received** trigger to trigger workflows by sending a request to an HTTP request to the endpoint generated from the flow. You can restrict what users can trigger in this workflow by ensuring that only authenticated users can trigger this workflow.
+Use the **When an HTTP request is received** trigger to start workflows by sending a request to the HTTP request endpoint generated from the flow. You can restrict who can trigger this workflow by ensuring that only authenticated users can trigger this workflow.
 
 > [!NOTE]
 > This feature is being rolled out and might not be available in your region yet.
@@ -29,8 +29,8 @@ You can use the **When an HTTP request is received** trigger to trigger workflow
 
 The trigger has three modes for the authentication parameter:
 
-1. **Any user in my tenant**: Ensures that any user in the same tenant as the maker is able to trigger this workflow. This is the default setting for any new flows.
-1. **Specific users in my tenant**: Ensures that only specific user IDs from the same tenant can only trigger this workflow. You can provide email addresses of the specific users in the **Allowed users** field. You can also provide object IDs of service principal users if you intend to use this flow to be triggered only by SPN (service principal name) users.
+1. **Any user in my tenant**: Ensures that any user in the same tenant as the maker can trigger this workflow. This setting is the default for any new flows.
+1. **Specific users in my tenant**: Ensures that only specific user IDs from the same tenant can trigger this workflow. Enter email addresses of the specific users in the **Allowed users** field. You can also enter object IDs of service principal users if you intend to use this flow to be triggered only by SPN (service principal name) users.
 1. **Anyone**: Legacy setting for this trigger that has open access without any additional authentication support. Anyone can trigger this workflow if they have access to the URL and the associated JSON schema.
 
 > [!NOTE]
@@ -38,19 +38,18 @@ The trigger has three modes for the authentication parameter:
 
 ## Choose the claims for your HTTP request
 
-If you're restricting the workflow to be triggered only by authenticated users, you need to ensure that the HTTP request contains the correct claims. The required claims are in the following list:
+If you restrict the workflow to be triggered only by authenticated users, ensure that the HTTP request contains the correct claims. The required claims are in the following list:
 
 - `"aud":` \<audience of the flow service>. This is where you find the audience values across different clouds. More information: [Audience values](#audience-values)
 - `"iss":` \<Issuer of the requestor>
 - `"tid":` \<tenant id of the requestor>
-- `"oid":` \<object id of the requestor>. Optional. This field is required only if you have configured the trigger to restrict to specific users within the tenant.
+- `"oid":` \<object id of the requestor>. Optional. This field is required only if you configured the trigger to restrict to specific users within the tenant.
 
 You can check the claims of your request by pasting the bearer token within the authorization header at https://jwt.io. For more information on extracting the tokens programmatically, go to the [Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview).
 
 ### Audience values
 
-The following table shows the audience values across different clouds:
-
+The following table shows the audience values across different clouds. Audience values must be an exact match, including trailing slashes.
 
 |Cloud type  |Audience value  |
 |---------|---------|
