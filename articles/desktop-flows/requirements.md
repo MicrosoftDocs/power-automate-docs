@@ -3,12 +3,13 @@ title: Prerequisites and limitations
 description: Learn about the prerequisites and limitations of Power Automate for desktop.
 author: mattp123
 ms.topic: overview
-ms.date: 02/23/2026
+ms.date: 03/24/2026
 ms.author: pefelesk
 ms.reviewer: ellenwehrle
 contributors:
 - jpapadimitriou
 - DanaMartens
+- cochamos
 search.audienceType: 
   - flowmaker
   - enduser
@@ -43,7 +44,6 @@ This article presents all the prerequisites and limitations you should consider 
   - Processor: 1.60 GHz or faster with two or more cores. For unattended mode, four or more cores are needed.
   - Storage: 2 GB
   - RAM: 4 GB
-  - GPU acceleration
   - .NET Framework 4.7.2 or later
 
 - A device that runs Windows 10 (Home, Pro, Enterprise), Windows 11 (Home, Pro, Enterprise), Windows Server 2016, Windows Server 2019, Windows Server 2022, or Windows Server 2025 (devices with ARM processors aren't supported)

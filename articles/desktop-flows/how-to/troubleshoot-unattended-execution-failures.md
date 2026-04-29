@@ -106,7 +106,7 @@ Check Event Viewer logs for errors or unusual behavior related to:
 
 If you encounter timeout problems, increase timeout values for UI and browser automation actions.
 
-Learn how to [change the timeout configuration for UI and browser automation](ui-automation-change-timeout-cofiguration.md).
+Learn how to [change the timeout configuration for UI and browser automation](ui-automation-change-timeout-configuration.md).
 
 ## Ensure consistent window mode
 

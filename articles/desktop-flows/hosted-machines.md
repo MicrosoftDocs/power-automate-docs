@@ -654,6 +654,9 @@ For environments without the Power Automate Hosted Process license, we clean unu
 > [!NOTE]
 > You need to delete the inactive hosted machine and recreate a new one to continue using the hosted machines feature. You need to reconfigure the connections associated with your cloud flows.
 
+> [!NOTE]
+> When a hosted machine is deleted, its data is retained for a grace period of 15 days. During this period, the data might be recoverable by contacting [Microsoft support](https://support.microsoft.com). After the grace period expires, the machine and its data are permanently removed.
+
 ### Service account change
 
 [Changing the service account](troubleshoot.md#change-the-on-premises-service-account) (NT SERVICE\\UIFlowService) isn't supported on hosted machines.

@@ -4,15 +4,16 @@ description: Learn how to resolve some of the most common reasons why flows fail
 suite: flow
 author: DBEKI
 contributors:
+  - radioblazer
   - HeaterOrt
   - DBEKI
   - v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: troubleshooting-general
-ms.date: 01/16/2026
+ms.date: 03/20/2026
 ms.update-cycle: 180-days
-ms.author: heortaol
+ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -96,6 +97,35 @@ In many cases, flows fail because of an authentication error. If you have this t
 
     The flow should now run as expected.
 
+## Conditional Access and embedded flow authentication errors
+
+If your flow works from the Power Automate portal but fails with an authentication error when users access it from SharePoint, Microsoft Teams, or Excel, the issue might be a Conditional Access (CA) policy mismatch.
+
+### Symptoms
+
+- Users see an authentication error when they try to view or run a flow from a SharePoint list, a Teams channel, or an Excel workbook.
+- The same flow works correctly when accessed directly from [make.powerautomate.com](https://make.powerautomate.com).
+- Your organization has Conditional Access policies that require multifactor authentication (MFA), Terms of Use acceptance, or device compliance.
+
+### Cause
+
+When a flow is embedded in another Microsoft 365 application, the host application performs a token exchange with **Microsoft Flow Service** to authenticate API calls. If your CA policies have different requirements (MFA, Terms of Use, or device compliance) for the host application and Power Automate, the token exchange fails.
+
+This typically happens when CA policies target individual applications with different requirements, rather than using the **Office 365** app or **All cloud apps** target.
+
+Additionally, if a CA policy includes a [Terms of Use](/entra/identity/conditional-access/terms-of-use) grant control, existing flow connections can break retroactively because the silent token refresh can't present the Terms of Use acceptance page.
+
+### Resolution
+
+1. In the [Microsoft Entra admin center](https://entra.microsoft.com/), go to **Protection** > **Conditional Access** > **Policies**.
+2. Switch your policy to target the **Office 365** app or **All cloud apps**. This ensures consistent requirements across Power Automate and the apps that embed it.
+3. If you must target individual apps, verify that **Microsoft Flow Service** (Application ID: `7df0a125-d3be-4c96-aa54-591f83ff541c`) is included alongside the host applications (SharePoint, Teams, Excel) with matching requirements.
+4. If your policy includes Terms of Use, [exclude service accounts and dedicated flow connection owners](/entra/identity/conditional-access/terms-of-use) from that policy. Flow connections refresh tokens silently and can't accept Terms of Use interactively.
+
+After updating policies, affected users must sign out and sign back in for the changes to take effect.
+
+For more information, see [Conditional Access and multifactor authentication in Power Automate](/troubleshoot/power-platform/power-automate/administration/conditional-access-and-multi-factor-authentication-in-flow).
+
 ## Troubleshoot in Copilot
 
 The troubleshoot in Copilot feature in Power Automate can assist you in identifying and resolving errors that might occur during the testing of cloud flows or when reviewing flow run history. You can use this Copilot feature when the new designer experience is enabled.
@@ -131,3 +161,4 @@ If the error code **500** or **502** appears, the failure is temporary or transi
 [Training: Best practices for error handling in Power Automate flows (module)](/training/modules/error-handling/)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
+
