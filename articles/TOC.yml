@@ -680,7 +680,7 @@
       - name: Automate Java applications
         href: ./desktop-flows/how-to/java.md
       - name: Enable UI Access to automate elevated applications
-        href: ./desktop-flows/how-to/enable-ui-access.md
+        href: ./desktop-flows/how-to/enable-uiaccess.md
     - name: Automate web applications and web pages
       items:
       - name: Handle links that open new tabs

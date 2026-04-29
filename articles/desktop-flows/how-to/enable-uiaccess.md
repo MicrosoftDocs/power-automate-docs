@@ -38,7 +38,7 @@ To disable UI Access, follow the same registry instructions and set the value to
 
 ## Limitations
 
-When UI Access is enabled, capturing UI Elements by hovering and Ctrl+Click isn't working as expected when the application is elevated. In order to capture UI Elements in such application use the [Inspect](/desktop-flows/inspect-ui-elements.md) instead.
+When UI Access is enabled, capturing UI Elements by hovering and Ctrl+Click isn't working as expected when the application is elevated. In order to capture UI Elements in such application use the [Inspect](../inspect-ui-elements.md) instead.
 
 ## Security considerations
 
