@@ -84,4 +84,3 @@ The parameter shows on the card.
 - [Overview of the Microsoft Authentication Library (MSAL)](/azure/active-directory/develop/msal-overview)
 - [Regenerate the SAS key used in HTTP trigger flows](regenerate-sas-key.md)
 
-
