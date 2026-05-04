@@ -5,9 +5,9 @@ author: nvigne
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 07/01/2025
+ms.date: 04/28/2026
 ms.author: nvigne
-ms.reviewer: matp
+ms.reviewer: ellenwehrle
 contributors:
   - DanaMartens
   - yiannismavridis
@@ -26,27 +26,27 @@ This functionality enables you to use features like solutions for Application Li
 
 Thus, a new storage schema for desktop flows in Dataverse (v2) is available. It makes working with Dataverse APIs easier and enables future product enhancements with desktop flows. The new storage schema is publicly available along with Power Automate for desktop (v2.29).
 
-## Enable the v2 schema
+## Access v2 schema setting in Power Platform admin center
 
 The v2 schema effectively reduces Dataverse database consumption for paid license users. Also, it offloads components of your desktop flows into your [Dataverse for Apps File Capacity](/power-platform/admin/capacity-storage#licenses-for-the-new-storage-model), which is part of your current subscription.
 
-There's no immediate need to act, although we recommend you to enable future product enhancements. Before enabling the new schema, ensure that users and unattended runtime machines have been updated to the appropriate Power Automate for desktop version.
+To effectively use the new schema, ensure that users and unattended runtime machines are updated to the appropriate Power Automate for desktop version.
 
-Power Platform administrators can choose when to enable the v2 storage schema. To enable it, go to the [Power Platform Admin Center](https://admin.powerplatform.microsoft.com) > **Environments** > **Settings** > **Product** > **Features** > **Enable storage of desktop flow files into v2 schema**. This setting applies at the environment level.
+As a Power Platform administrator, you can access the v2 storage schema setting, called *Enhanced desktop flow schema*, for desktop flows in your environments by following these steps:
 
-:::image type="content" source="media/schema/schema-v2-on.png" alt-text="The option in the Power Platform Admin Center to enable the new schema.":::
-
-Convert desktop flows stored in the v1 schema to the v2 schema by end of 2024, as then the v1 schema will be deprecated. You need Power Automate for desktop v2.29 or later to author and run desktop flows using environments where the v2 schema is enabled. This requirement ensures desktop flow makers and attended and unattended users can take advantage of the new functionality.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com)
+1. On the navigation pane, select **Manage**.
+1. On the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select the environment you want to configure.
+1. On the command bar, select **Settings**.
+1. Expand **Product**, and then select **Features**.
+1. On the **Features** page, navigate to **Enhanced desktop flow schema**. This setting applies at the environment level.
 
 ## Schema v2 enabled by default
 
-Starting January 2024, v2 schema is automatically enabled for all environments. Although not recommended, the option to opt-out of the autoenablement is available in the Power Platform admin center. Turning on the opt-out delays the enablement of v2 schema on this particular environment.
+As of October 1st, 2024, the v1 schema is deprecated and the v2 schema is **enabled by default** in all Public regions of the Power Platform. You need Power Automate for desktop v2.29 or later to author and run desktop flows using environments where the v2 schema is enabled. This requirement ensures desktop flow makers and attended and unattended users can take advantage of the new functionality.
 
-:::image type="content" source="media/schema/schema-v2-off.png" alt-text="The option in the Power Platform Admin Center to opt-out of schema v2 enabled by default.":::
-
-Later in 2024, v2 schema will be turned on for all environments without the option to disable the feature and the option won't be visible in Power Platform admin center. As a best practice, we recommend that you enable the feature in advance so users can benefit from the product enhancements, which come with it.
-
-As of October 1st, 2024, the v2 schema is enabled by default in all Public regions of the Power Platform.
+:::image type="content" source="media/schema/schema-v2-default.png" alt-text="The option in the Power Platform Admin Center to opt-out of schema v2 enabled by default.":::
 
 ## Manage desktop flows in environments with the v2 schema enabled
 
@@ -112,7 +112,7 @@ The number of desktop flow binaries might vary depending on the size of the desk
 
 ## Roles and privileges
 
-With the v2 schema, the desktop flow binary table is used. For desktop flows to work as expected, you need additional privileges. If you're using the default security roles `Environment Maker` and `Basic User`, there's no change needed.
+With the v2 schema, the desktop flow binary table is used. For desktop flows to work as expected, you need additional privileges. If you're using the default security roles `Environment Maker` and `Basic User`, no additional configuration is required for desktop flows to work as expected. These built-in roles already include all required permissions for creating, running, and managing flows in the v2 schema.
 
 If you use custom security roles to manage the access to your desktop flow, Power Platform admins need to add the following list of privileges to the role:
 
@@ -131,3 +131,7 @@ If you use custom security roles to manage the access to your desktop flow, Powe
 The minimum access level for each privilege is basic (user). More information: [Security roles and privileges](/power-platform/admin/security-roles-privileges)
 
 :::image type="content" source="media/schema/desktopflowbinary-permissions.png" alt-text="Privilege and access level required for desktop flow binaries with v2 schema":::
+
+> [!IMPORTANT]
+> Assigning only the privileges listed in [Roles and privileges](#roles-and-privileges) may not be sufficient if other required Dataverse or Power Platform permissions normally granted by *Basic User* or *Environment Maker* are missing.
+

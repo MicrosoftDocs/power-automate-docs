@@ -34,7 +34,11 @@
         - name: Create your first cloud flow without Copilot
           href: create-cloud-flow-without-copilot.md
         - name: "Tutorial: Get Started with cloud flows"
-          href: get-started-with-cloud-flows.md    
+          href: get-started-with-cloud-flows.md
+        - name: Classic designer vs. new designer
+          href: classic-vs-modern-designer.md
+        - name: Get the most from Copilot in the designer
+          href: copilot-cloud-flows-tips.md    
     - name: More trigger and action capabilities
       items:
         - name: Work with triggers and actions
@@ -63,6 +67,8 @@
         href: date-time-values.md
       - name: Convert a time zone
         href: convert-time-zone.md
+      - name: Expression cookbook
+        href: expression-cookbook.md
       - name: Use expressions in conditions
         href: use-expressions-in-conditions.md
       - name: Create and edit expressions with Copilot expression assistant (preview)
@@ -140,6 +146,12 @@
         href: fix-flow-failures.md
       - name: Find and fix errors with flow checker
         href: error-checker.md
+      - name: Error code reference
+        href: error-reference.md
+      - name: Troubleshoot errors
+        href: troubleshoot-flow-errors.md
+      - name: Fix connection failures
+        href: fix-connection-failures.md
     - name: Automated cloud flows
       items:
       - name: Create a cloud flow from a template
@@ -216,7 +228,7 @@
           href: approvals-markdown-support.md
         - name: Custom approval response options
           href: create-approval-response-options.md
-        - name: Known issues and limitations
+        - name: Known issues
           href: approvals-known-issues.md
       - name: Use flows with Microsoft 365 Outlook email
         items:
@@ -380,7 +392,7 @@
     href: ./desktop-flows/pad-architecture.md
   - name: Premium RPA features
     href: ./desktop-flows/premium-features.md
-  - name: Setup Power Automate
+  - name: Set up Power Automate
     items:
     - name: Prerequisites and limitations
       href: ./desktop-flows/requirements.md
@@ -486,7 +498,7 @@
       href: ./desktop-flows/create-machine-mapping.md
   - name: Create desktop flow connections
     href: ./desktop-flows/desktop-flow-connections.md
-  - name: Allowlist tenants for connect with sign-in connections
+  - name: Allow list tenants for connect with sign-in connections
     href: ./desktop-flows/how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
@@ -746,7 +758,7 @@
     - name: Delete desktop flow run history data
       href: ./desktop-flows/how-to/delete-desktop-flow-run-history.md
     - name: Timeout configuration for UI/browser automation
-      href: ./desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md
+      href: ./desktop-flows/how-to/ui-automation-change-timeout-configuration.md
     - name: Configure the open terminal session action
       href: ./desktop-flows/how-to/terminal-emulation-open-new-session.md
     - name:  Using remote desktop applications
