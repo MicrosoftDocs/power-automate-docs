@@ -5,7 +5,7 @@ author: nvigne
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 04/28/2026
+ms.date: 05/04/2026
 ms.author: nvigne
 ms.reviewer: ellenwehrle
 contributors:
@@ -114,7 +114,7 @@ The number of desktop flow binaries might vary depending on the size of the desk
 
 With the v2 schema, the desktop flow binary table is used. For desktop flows to work as expected, you need additional privileges. If you're using the default security roles `Environment Maker` and `Basic User`, no additional configuration is required for desktop flows to work as expected. These built-in roles already include all required permissions for creating, running, and managing flows in the v2 schema.
 
-If you use custom security roles to manage the access to your desktop flow, Power Platform admins need to add the following list of privileges to the role:
+In addition to the permissions provided by the Basic User and Environment Maker roles, the following privileges are required for desktop flows when using custom security roles:
 
 - `prvCreatedesktopflowbinary`
 - `prvReaddesktopflowbinary`
