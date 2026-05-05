@@ -7,12 +7,13 @@ ms.author: iomimtso
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 01/05/2026
+ms.date: 05/05/2026
 search.audienceType: 
   - flowmaker
   - enduser
 contributors:
   - iomimtso
+  - cochamos
 ---
 
 # Troubleshoot unattended desktop flow execution failures
@@ -27,6 +28,7 @@ Start by examining the execution logs to identify the root cause of failures.
 1. Review the error message to determine whether the issue relates to:
    - **Web automation**: Browser automation action failed.
    - **Desktop automation**: UI automation action failed.
+1. If available, review the [video logs](../trigger-desktop-flows.md) captured during the unattended run.
 1. If available, review the screenshot captured at the time of failure to understand the machine and application state.
 
 If you didn't enable screenshots:
