@@ -5,8 +5,8 @@ author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 04/16/2026
-ms.author: quseleba
+ms.date: 05/05/2026
+ms.author: nimoutzo
 ms.reviewer: ellenwehrle
 contributors:
   - Flow
@@ -18,7 +18,7 @@ ai-usage: ai-assisted
 
 # Create and manage test cases for desktop flows
 
-Test cases help you verify that your desktop flows work correctly. Instead of manually running a flow and checking results every time you make changes, create a test case that automatically runs your flow and checks if the output matches what you expect.
+Test cases help you verify that your desktop flows work correctly. Instead of manually running a flow and checking results every time you make changes, create a test case that automatically runs your flow or its subflows and checks if the output matches what you expect.
 
 ## Prerequisites
 
@@ -36,11 +36,11 @@ A test case validates a single desktop flow. Take the following steps to create 
 1. Select the desktop flow you want to test.
 1. Select **Create**.
 
-The test case opens in the designer, where you see the *Actions* pane and can add actions to run your flow and validate the results.
+The test case opens in the designer, where you see the *Actions* pane and can add actions to run your flow or its subflows and validate the results.
 
 ## Add actions to your test case
 
-Every test case uses two actions: one to run your flow, and one to check the results.
+Every test case uses two actions: one to run your flow or its subflows , and one to check the results.
 
 ### Test a desktop flow
 
@@ -53,6 +53,22 @@ To test a desktop flow:
 1. When the flow runs, you can validate any **output variables** it produces.
 
   :::image type="content" source="media/test-desktop-flows/test-desktop-flow-action.png" alt-text="Drag Test a desktop flow action to main designer pane." lightbox="media/test-desktop-flows/test-desktop-flow-action.png":::
+
+### Test a subflow of a desktop flow
+The Test a subflow of a desktop flow action runs a specific subflow within a desktop flow.
+
+To test a subflow:
+1. In the Actions pane, expand Testing, and then select and drag the Test a subflow of a desktop flow action into your test case on the designer pane.
+2. Select the desktop flow that contains the subflow.
+3. Select the subflow you want to test (only local subflows are supported).
+4. If the subflow requires input values, enter them in the action's parameters.
+5. When the subflow runs, you can validate any output variables it produces.
+
+:::image type="content" source="media/test-desktop-flows/Test-subflow-action.png" alt-text="Drag Test a subflow of a desktop flow action to main designer pane." lightbox="media/test-desktop-flows/Test-subflow-action.png":::
+
+> [!NOTE]
+> Only local subflows are supported. Global subflows aren’t supported.
+
 ### Assert
 
 The **Assert** action checks if a value matches what you expect. If the check fails, the test fails.
