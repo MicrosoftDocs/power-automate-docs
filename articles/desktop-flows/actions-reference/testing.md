@@ -5,8 +5,8 @@ author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 06/30/2025
-ms.author: quseleba
+ms.date: 05/05/2026
+ms.author: nimoutzo
 ms.reviewer: dmartens
 contributors: null
 search.audienceType:
@@ -35,6 +35,24 @@ Test a desktop flow that receives input variables and might produce output varia
 ### Variables produced
 
 This action shows the output variables of the selected flow.
+
+## <a name="runtestsubflow"></a> Test a subflow of a desktop flow
+
+Tests a subflow of a desktop flow which can receive input variables and may produce output variables. The parent flow run will be paused until the called desktop flow completes.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Desktop flow|No|Desktop flow||Select the desktop flow to run within this flow. The called flow runs in the same Windows session as the parent flow.|
+|Subflow|No|Subflow||Select the subflow of the desktop flow to be tested.|
+
+### Variables produced
+
+This action shows the output variables of the selected flow.
+
+> [!NOTE]
+> Only local subflows are supported. Global subflows aren’t supported.
 
 ## <a name="assertaction"></a> Assert
 
