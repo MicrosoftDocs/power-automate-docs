@@ -1,11 +1,11 @@
 ---
-title: Version control in Power Automate for desktop (preview)
+title: Version control in Power Automate for desktop
 description: Learn how to enable and use version control in Power Automate for desktop to manage flow changes with drafts, publishing, and restore options.
 author: nikosmoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 02/23/2026
+ms.date: 05/06/2026
 ms.author: nimoutzo
 ms.reviewer: ellenwehrle
 contributors:
@@ -16,15 +16,11 @@ search.audienceType:
   - flowmaker
   - enduser
 ---
-# Version control in Power Automate for desktop (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Version control in Power Automate for desktop
 
 Version control in Power Automate for desktop introduces a structured way to manage changes to your desktop flows throughout their lifecycle. Instead of relying on manual backups or duplicate flows, you can now save drafts, publish stable versions, and restore previous versions, all backed by Microsoft Dataverse. This feature helps improve governance, collaboration, and risk mitigation for enterprise automation projects. When version control is enabled, every draft and published version of a flow is stored in Dataverse. You can access these versions through the version history pane in the designer, making it easy to track changes and revert when necessary.
 
 > [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren't meant for production use and might have restricted functionality.
 > - Starting with the November 2025 release (v2.62), Power Automate for desktop supports version control. The rollout of the **Version control for desktop flows** feature is gradual and when an environment receives the version control feature as part of the gradual rollout, the feature is enabled for all installed versions of Power Automate for desktop that support it.
 > - There is no limit on the number of versions that can be stored for a desktop flow. Versions are stored in Microsoft Dataverse in a compressed format and consume negligible capacity. The maximum number of stored versions can't be configured. Versions are retained for 12 months. Any version older than 12 months is automatically deleted, except for the latest published version.
 
@@ -89,12 +85,61 @@ The version history pane displays all available versions of a specific desktop f
 
 When you open the context menu for one of the versions in the version history pane, you see the following options:
 - **View** opens the version in read-only mode (no edits allowed).
+- **Compare this version** which flags the specific version for comparison.
 - **Restore** saves the selected version as draft and flags it as the latest version.
-
-:::image type="content" source="media/version-control/context-options.png" alt-text="Screenshot of a context menu showing View and Restore options.":::
 
 > [!NOTE]
 > Designer in view mode is read-only. You can't add, remove, or edit actions, UI elements, or images.
+
+## Version comparison
+
+Version comparison allows you to identify and understand the differences between two saved versions of a desktop flow. It provides a read-only view where all changes are surfaced consistently across the flow structure and its components, enabling you to review what was added, removed, or modified between versions.
+
+### Start a comparison
+
+You can compare any two saved versions from the version history. Versions that contain unsaved changes are not supported for comparison.
+
+To start a comparison, you select the first version from the version history using the **Compare this version** option (1). You may view any version flagged for comparison with the respective icon (2). You then select the second version in the same way. Once both versions are selected, the comparison opens automatically in a dedicated window.
+
+:::image type="content" source="media/version-control/launch-version-comparison.png" alt-text="Select versions to compare":::
+
+### Comparison experience
+
+The comparison is displayed in a separate window. While this window is open, the flow designer becomes read-only, preventing any edits during the review process. The comparison view consolidates all detected differences between the two selected versions. Changes are identified across all major parts of the flow, including subflows, actions, variables, UI elements, and images. The system evaluates differences using the latest version (based on timestamp) as the reference point. As a result, items that appear as added, removed, or edited are determined relative to that version. The right pane acts as a navigation and filtering surface for changes. It indicated which components contain modifications and allows you to move directly to the relevant area of the flow. By default, the comparison focuses on changes in actions. 
+
+:::image type="content" source="media/version-control/Version-comparison-overview.png" alt-text="An overview of the version comparison window":::
+
+Changes are visualized directly in the workspace so that you can understand how the flow evolved without switching context. Each change type is identified with a consistent indicator:
+- Indicator (1) represents elements that were added.
+- Indicator (2) represents elements that were removed.
+- Indicator (3) represents elements that were edited.
+
+These indicators appear next to actions and other entities directly in the flow, allowing you to quickly identify the nature of each change.
+
+### Exploring subflow changes
+
+Subflow-level changes are exposed through the subflows view in the comparison window. From there, you can detect whether subflows were added, removed, or renamed. Selecting a subflow allows you to inspect its internal changes. The actions pane dynamically updates to display only the actions that belong to the selected subflow, making it easier to isolate and review changes within a specific part of the flow.
+
+### Exploring action changes
+
+Action-level changes are presented both inline in the workspace and through a dedicated list in the right pane. This allows you to review structural changes and configuration changes together. Selecting an action from the list reveals additional details about what changed. From there, you can:
+- Inspect the action configuration, by displaying the differences in parameters.
+- Navigate between changed actions using navigation controls.
+- Locate the action in the workspace using a dedicated option that highlights it within the flow.
+
+:::image type="content" source="media/version-control/Actions-changed-details.png" alt-text="View changes in actions.":::
+
+### Exploring variable changes
+
+Variable changes are grouped in the variables section of the right pane. From there, you can identify which variables were added, removed, or modified between the two versions. Each variable entry provides enough context to understand the type of change, allowing you to quickly validate updates to flow data handling.
+
+### Exploring UI element changes
+
+Changes to UI elements are also surfaced in the right pane. Each element reflects whether it was added, removed, or edited. You can open an element to review its details by double click it and inspect the underlying configuration differences, such as renaming, selector updates and other. Navigation controls allow you to move across UI element changes without leaving the comparison context.
+
+### Exploring image changes
+
+Image assets used within the flow are tracked in the images section of the comparison view. This allows you to identify whether images were introduced, removed, or modified between versions. Clicking on an image provides access to its details, including a preview, so you can validate visual assets as part of the overall flow changes.
 
 ## Best practices
 
