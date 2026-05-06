@@ -1,5 +1,5 @@
 ---
-title: Known issues
+title: Known issues in the process mining capability
 description: Learn about the known issues in the process mining capability.
 author: donums
 contributors:
