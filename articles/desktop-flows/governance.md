@@ -495,6 +495,23 @@ As a Power Platform admin you can prevent users from sending feedback to Microso
 
 To prevent your users from using any copilot capability contact Microsoft Customer Support to disable all copilot functionality in your tenant. More information: [Get Help + Support](/power-platform/admin/get-help-support)
 
+## Enable UI Access
+
+> [!NOTE]
+> This registry entry applies to Power Automate desktop version 2.68 and later.
+
+To enable UI Access, set the following value in the Windows registry of the machine that needs to automate applications that need
+elevated rights:
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Wow6432Node\Microsoft\Power Automate Desktop\Global | UseUIAccessAutomationServer | DWORD |
+
+***Value***
+
+- **0**: UI Access is disabled for Power Automate for destkop.
+- **1**: UI Access is enabled for Power Automate for destkop.
+
 ## Related information
 
 - [Create Power Automate desktop flows](create-flow.md).
