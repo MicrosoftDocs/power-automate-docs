@@ -85,7 +85,7 @@ The version history pane displays all available versions of a specific desktop f
 
 When you open the context menu for one of the versions in the version history pane, you see the following options:
 - **View** opens the version in read-only mode (no edits allowed).
-- **Compare this version** which flags the specific version for comparison.
+- **Compare this version** flags the specific version for comparison.
 - **Restore** saves the selected version as draft and flags it as the latest version.
 
 > [!NOTE]
@@ -101,11 +101,11 @@ You can compare any two saved versions from the version history. Versions that c
 
 To start a comparison, you select the first version from the version history using the **Compare this version** option (1). You may view any version flagged for comparison with the respective icon (2). You then select the second version in the same way. Once both versions are selected, the comparison opens automatically in a dedicated window.
 
-:::image type="content" source="media/version-control/launch-version-comparison.png" alt-text="Select versions to compare":::
+:::image type="content" source="media/version-control/launch-version-comparison.png" alt-text="Steps to select versions to compare":::
 
 ### Comparison experience
 
-The comparison is displayed in a separate window. While this window is open, the flow designer becomes read-only, preventing any edits during the review process. The comparison view consolidates all detected differences between the two selected versions. Changes are identified across all major parts of the flow, including subflows, actions, variables, UI elements, and images. The system evaluates differences using the latest version (based on timestamp) as the reference point. As a result, items that appear as added, removed, or edited are determined relative to that version. The right pane acts as a navigation and filtering surface for changes. It indicated which components contain modifications and allows you to move directly to the relevant area of the flow. By default, the comparison focuses on changes in actions. 
+The comparison is displayed in a separate window. While this window is open, the flow designer becomes read-only, preventing any edits during the review process. The comparison view consolidates all detected differences between the two selected versions. Changes are identified across all major parts of the flow, including subflows, actions, variables, UI elements, and images. The system evaluates differences using the latest version (based on timestamp) as the reference point. As a result, items that appear as added, removed, or edited are determined relative to that version. The right pane acts as a navigation and filtering surface for changes. It indicates which components contain modifications and allows you to move directly to the relevant area of the flow. By default, the comparison focuses on changes in actions. 
 
 :::image type="content" source="media/version-control/Version-comparison-overview.png" alt-text="An overview of the version comparison window":::
 
@@ -135,7 +135,7 @@ Variable changes are grouped in the variables section of the right pane. From th
 
 ### Exploring UI element changes
 
-Changes to UI elements are also surfaced in the right pane. Each element reflects whether it was added, removed, or edited. You can open an element to review its details by double click it and inspect the underlying configuration differences, such as renaming, selector updates and other. Navigation controls allow you to move across UI element changes without leaving the comparison context.
+Changes to UI elements are also surfaced in the right pane. Each element reflects whether it was added, removed, or edited. You can open an element to review its details by double clicking it and inspect the underlying configuration differences, such as renaming, selector updates and other. Navigation controls allow you to move across UI element changes without leaving the comparison context.
 
 ### Exploring image changes
 
