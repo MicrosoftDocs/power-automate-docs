@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: NikosMoutzourakis
 ms.topic: article
-ms.date: 04/22/2025
+ms.date: 05/05/2026
 ms.update-cycle: 180-days
 ms.author: nimoutzo
 ms.reviewer: matp
@@ -13,6 +13,7 @@ contributors:
 - Yiannismavridis
 - PetrosFeleskouras
 - DanaMartens
+- cochamos
 search.audienceType: 
   - flowmaker
   - enduser
@@ -494,6 +495,56 @@ As a Power Platform admin you can prevent users from sending feedback to Microso
 ## Prevent your users from using any copilot capability
 
 To prevent your users from using any copilot capability contact Microsoft Customer Support to disable all copilot functionality in your tenant. More information: [Get Help + Support](/power-platform/admin/get-help-support)
+
+
+## Video logs
+
+> [!NOTE]
+> The video logs registry entries apply to Power Automate desktop version 2.66 and later.
+
+### Enable / disable video logs generation
+
+ | Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Global | VideoLoggerModeOverride | DWORD |
+
+***Value***
+
+- **0**: Disable video logs generation
+- **1**: Enable video logs generation
+
+### Enable / disable subtitles generation
+
+ | Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Global | VideoLoggerDisableSubtitles  | DWORD |
+
+***Value***
+
+- **0**: Disable video subtitles
+- **1**: Enable video subtitles
+
+### Configure video duration
+
+ | Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Global | VideoLogDurationInSeconds   | DWORD |
+
+***Value***
+
+- **Default**: 60 seconds
+- **Dword**: Custom video duration in seconds
+
+### Configure video output path
+
+ | Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Global | VideoLogOutputPath | STRING |
+
+***Value***
+
+- **String**: Custom path where videos and subtitles will be saved
+
 
 ## Enable UI Access
 
