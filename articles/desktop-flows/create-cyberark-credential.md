@@ -5,9 +5,9 @@ author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 05/04/2026
+ms.date: 05/11/2026
 ms.author: quseleba
-ms.reviewer: dmartens
+ms.reviewer: ellenwehrle
 contributors:
   - DanaMartens
   - iomavrid
