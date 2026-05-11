@@ -4,7 +4,7 @@ description: Compare the classic and new flow designers, learn when to use each,
 author: radioblazer
 ms.author: matow
 ms.reviewer: angieandrews
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/09/2026
 ms.subservice: cloud-flow
 ---
