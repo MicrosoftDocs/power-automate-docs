@@ -882,6 +882,8 @@
       href: desktop-flows/actions-reference/testing.md
     - name: Power Automate secret variables
       href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
+    - name: Power Platform
+      href: ./desktop-flows/actions-reference/powerplatform.md
     - name: Power Automate environment
       href: ./desktop-flows/actions-reference/powerautomateenvironment.md
   - name: Troubleshoot desktop flows runtime
