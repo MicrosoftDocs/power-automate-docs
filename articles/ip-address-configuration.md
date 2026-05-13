@@ -1,16 +1,17 @@
 ---
 title: IP address configuration
 description: Learn about IP address configuration required to use Power Automate, the services that Power Automate connects to, various endpoints, and more.
-author: samathur
+author: radioblazer
 contributors:
+  - vibhutinair23
   - kisubedi
   - samathur
   - v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 12/10/2025
-ms.author: matow
+ms.date: 05/13/2026
+ms.author: vibhutinair
 ms.reviewer: angieandrews
 #customer intent: As an IT professional, I want to allow Power Automate flows to connect to external services so that users can automate workflows seamlessly.
 ---
@@ -99,6 +100,7 @@ The following table lists the services to which Power Automate connects. Ensure 
 |s2s.config.skype.com<br>use.config.skype.com<br>config.edge.skype.com|https|Access to preview features managed through flighting and configuration endpoints.|
 |s2s.config.ecs.infra.gov.teams.microsoft.us|https|Access to preview features managed through flighting and configuration endpoints for US government cloud.|
 | \*.api.powerplatform.com <br> \*.api.powerplatformusercontent.com <br> *.api.bap.microsoft.com <br> *.logic.azure.com | https | Access to several Power Platform APIs. |
+| api.bap.microsoft.com | https | Access to Power Platform APIs. |
 | *.api.gov.powerplatform.microsoft.us <br> *.gov.api.bap.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC only). |
 | *.api.high.powerplatform.microsoft.us <br> *.high.api.bap.microsoft.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - GCC High only). |
 | *.api.appsplatform.us <br> *.api.bap.appsplatform.us <br> *.logic.azure.us | https | Access to several Power Platform APIs (U.S. Government - DoD only). |
