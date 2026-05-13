@@ -3,6 +3,7 @@ title: Power Platform actions
 description: Create interactive automation experiences by using Power Platform actions to integrate desktop flows with Power Apps.
 author: cochamos
 ms.author: cochamos
+ms.reviewer: ellenwehrle
 ms.date: 05/13/2026
 ms.topic: how-to
 ms.service: power-automate
@@ -12,9 +13,9 @@ search.audienceType:
   - enduser
 ---
 
-# Run Power Apps (preview)
+# Run Power App (preview)
 
-The **Run Power Apps** action launches an app directly from a desktop flow and establishes a communication channel between the two. By using this integration, desktop flows can natively call Power App experiences, pass inputs, and receive outputs. This approach enables rich native integration for attended automation scenarios instead of relying on UI-based automation.
+The **Run Power App** action launches an app directly from a desktop flow and establishes a communication channel between the two. By using this integration, desktop flows can natively call Power App experiences, pass inputs, and receive outputs. This approach enables rich native integration for attended automation scenarios instead of relying on UI-based automation.
 
 With this capability, you can:
 
@@ -68,12 +69,12 @@ Before you start, make sure you have:
 
 To expose your subflows in Power Apps Studio (so they appear as functions you can call), open the app through the PAD authoring bridge.
 
-1. Add the **Run Power Apps (Preview)** action to your desktop flow.
+1. Add the **Run Power App (Preview)** action to your desktop flow.
 1. In the action properties, either:
    - Select an existing app, or
    - Create a new app
 
-> [!Note]
+> [!NOTE]
 > If you create a new app: 
 > - The **Power Automate for desktop bridge page opens automatically** in your default browser.
 > - Save and publish the app in Power Apps designer.
@@ -158,7 +159,6 @@ If you need to return complex values (custom objects or lists), return them as o
 Set(parsedValue, ParseJSON(globalVariable.out_customer_data))
 ```
 
-
 > [!NOTE]
 > Power Automate for desktop returns all values as strings. Before using these values in the app, cast them to the appropriate type (for example, use `Value` or `Boolean`).
 
@@ -185,15 +185,14 @@ Invoke subflows from action-capable properties, such as:
 - A button's **:::no-loc text="OnSelect":::**.
 - A control's event property (for example, **:::no-loc text="OnChange":::**) when appropriate for your app design.
 
-
 ## Runtime behavior
 
-When the desktop flow runs and execution reaches **Run Power Apps**:
+When the desktop flow runs and execution reaches **Run Power App**:
 
 1. The app launches.
 1. The app automatically establishes a communication channel.
 
-The **Run Power Apps** action finishes when the user closes the Power Apps window or stops the flow manually.
+The **Run Power App** action finishes when the user closes the Power Apps window or stops the flow manually.
 
 ## Limitations and considerations
 
@@ -212,12 +211,10 @@ The **Run Power Apps** action finishes when the user closes the Power Apps windo
 
 - Reopen the app through **Run Power Apps > Open app > Open Designer** so the schema refreshes.
 
-
 #### Changes to the Power App aren't reflected when running from Power Automate for desktop
 
 - Make sure you **publish** your latest changes in Power Apps.  
-- After publishing, wait a short period of time before running the app again, as updates might take some time to propagate and become available when launched from Power Automate for desktop. If you don't want to wait, you can relaunch the app by using the **Run Power Apps** action to immediately load the latest version.
-
+- After publishing, wait a short period of time before running the app again, as updates might take some time to propagate and become available when launched from Power Automate for desktop. If you don't want to wait, you can relaunch the app by using the **Run Power App** action to immediately load the latest version.
 
 #### The app doesn't appear during runtime
 
