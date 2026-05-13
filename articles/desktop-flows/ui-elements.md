@@ -52,7 +52,7 @@ To find where a specific UI element is being used in the flow, right-click on it
 
 Desktop flows support two types of UI elements based on their source: desktop UI elements and web UI elements.
 
-Desktop UI elements can be captured from any Windows application, including non-webpage components of browsers, such as the address bar. Within desktop UI elements, two types of selectors are now supported:
+Desktop UI elements can be captured from any Windows application, including non-webpage components of browsers, such as the address bar. Within desktop UI elements, three types of selectors are now supported:
 
 - **UI Automation (UIA) selectors**
 
@@ -66,9 +66,17 @@ Desktop UI elements can be captured from any Windows application, including non-
 
     Use MSAA selectors when targeting legacy or custom-built applications that don't expose their UI components through UIA.
 
-The UI element picker in UI automation actions allows you to capture only desktop UI elements. A new capturing mode menu in the top-right corner of the picker lets you select between UIA and MSAA modes. By default, the picker uses UIA, but you can switch to MSAA when automating legacy applications. A visible message in the picker indicates when MSAA mode is active.
+- **UIA3 Raw selectors**
 
-Captured elements are displayed in the UI elements pane, with an indicator showing whether they were captured using UIA or MSAA, helping you identify the selector type used for each element in your flow.
+    UIA3 Raw is an advanced UI Automation–based capturing mode that uses the UIA3 framework to access the raw, unfiltered UI element tree. Unlike standard UIA selectors, which rely on a refined control view of the application, UIA3 Raw exposes all elements in the UI hierarchy, including intermediate, non-interactive, and framework-level components.
+
+    This mode is particularly useful for automating applications with complex or non-standard UI structures, such as custom-rendered controls, Electron-based apps, or cases where elements aren't accessible through standard UIA selectors. UIA3 Raw can reveal additional hierarchy layers and properties that aren't otherwise available, enabling more precise targeting in challenging scenarios.
+  
+    Use UIA3 Raw selectors when UIA selectors can't reliably capture or identify elements, or when deeper access to the application's UI structure is required.
+
+The UI element picker in UI automation actions allows you to capture only desktop UI elements. A capturing mode menu in the top-right corner of the picker lets you select between UIA, UIA3 Raw, and MSAA modes. By default, the picker uses UIA, but you can switch to UIA3 Raw for advanced scenarios or MSAA when automating legacy applications. A visible message in the picker indicates when a non-default mode is active.
+
+Captured elements are displayed in the UI elements pane, with an indicator showing whether they were captured using UIA, UIA3 Raw, or MSAA, helping you identify the selector type used for each element in your flow.
 
 > [!IMPORTANT]
 > Users can capture elements from webpages through the UI element picker of UI automation actions. However, their selectors will represent desktop elements, not web elements.
