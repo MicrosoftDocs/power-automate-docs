@@ -5,9 +5,9 @@ author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 04/14/2025
+ms.date: 05/13/2026
 ms.author: dipapa
-ms.reviewer: tapanm
+ms.reviewer: ellenwehrle
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -34,9 +34,9 @@ Select on any of the action groups and the list of actions appear along with the
 |[Cloud connectors](actions-reference/cloudconnectors.md)|[Flow control](actions-reference/flowcontrol.md)|[OCR](actions-reference/ocr.md)|[UI automation](actions-reference/uiautomation.md)|
 |[CMD session](actions-reference/cmd.md)|[Folder](actions-reference/folder.md)|[Outlook](actions-reference/outlook.md)|[Variables](actions-reference/variables.md)|
 |[Compression](actions-reference/compression.md)|[FTP](actions-reference/ftp.md)|[Power Automate secret variables](actions-reference/powerautomatesecretvariables.md)|[Windows services](actions-reference/services.md)|
-|[Conditionals](actions-reference/conditionals.md)|[Google Cognitive](actions-reference/googlecognitive.md)|[PDF](actions-reference/pdf.md)|[Workstation](actions-reference/workstation.md)|
-|[Custom actions](actions-reference/custommodule.md)|[HTTP](actions-reference/web.md)|[Run flow](actions-reference/runflow.md)|[Workqueues](actions-reference/workqueues.md)|
-|[Cryptography](actions-reference/cryptography.md)|||[XML](actions-reference/xml.md)|
+|[Conditionals](actions-reference/conditionals.md)|[Google Cognitive](actions-reference/googlecognitive.md)|[Power Platform](actions-reference/power-platform.md)|[Workstation](actions-reference/workstation.md)|
+|[Custom actions](actions-reference/custommodule.md)|[HTTP](actions-reference/web.md)|[PDF](actions-reference/pdf.md)|[Workqueues](actions-reference/workqueues.md)|
+|[Cryptography](actions-reference/cryptography.md)||[Run flow](actions-reference/runflow.md)|[XML](actions-reference/xml.md)|
 |[CyberArk](actions-reference/cyberark.md)|||[Word](actions-reference/word.md)|
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
