@@ -1,7 +1,7 @@
 ---
 title: IP address configuration
 description: Learn about IP address configuration required to use Power Automate, the services that Power Automate connects to, various endpoints, and more.
-author: samathur
+author: radioblazer
 contributors:
   - vibhutinair23
   - kisubedi
