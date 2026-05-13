@@ -502,7 +502,7 @@
     href: ./desktop-flows/how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
-  - name: Version control (preview)
+  - name: Version control
     href: ./desktop-flows/version-control.md
   - name: Work queues
     items:
@@ -882,6 +882,8 @@
       href: desktop-flows/actions-reference/testing.md
     - name: Power Automate secret variables
       href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
+    - name: Power Platform
+      href: ./desktop-flows/actions-reference/power-platform.md
     - name: Power Automate environment
       href: ./desktop-flows/actions-reference/powerautomateenvironment.md
   - name: Troubleshoot desktop flows runtime
