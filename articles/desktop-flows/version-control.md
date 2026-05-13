@@ -5,7 +5,7 @@ author: nikosmoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 05/06/2026
+ms.date: 05/13/2026
 ms.author: nimoutzo
 ms.reviewer: ellenwehrle
 contributors:
