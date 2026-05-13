@@ -29,6 +29,7 @@ Version control in Power Automate for desktop introduces a structured way to man
 - The environment and flow use the [v2 schema](schema.md).
 - Required permissions for version control scenarios include the `prvReadcomponentchangesetpayload` privilege. This privilege is required to view and restore versions. If a user lacks this privilege, viewing or restoring a version fails.
 - Optional: `ComponentChangesetVersion` read and write permissions (included by default for [Environment Maker role](/power-platform/admin/database-security)).
+- If your organization uses custom security roles with minimal permissions, ensure these roles are updated accordingly. Periodically review custom security roles as new features are introduced.
 
 
 ## Configuration
@@ -39,7 +40,7 @@ To configure version control:
 1. Select **Manage**.
 1. Select **Environments** and select the environment.
 1. Select **Settings**, expand **Product**, and select **Features**. 
-1. Locate the **Desktop flow version control** section and configure the following options :
+1. Locate the **Desktop flow version control** section and configure the following options:
 
     - **Enable version control of desktop flows**: Determines if version control is enabled for this environment.
     - **Desktop flows version control enabled by default**: Controls participation in rollout before global availability. If enabled, the environment automatically switches "Enable version control of desktop flows" to "True" when the feature becomes available.
@@ -106,7 +107,7 @@ To start a comparison, select the first version from the version history by usin
 
 The comparison displays in a separate window. While this window is open, the flow designer becomes read-only, preventing any edits during the review process. The comparison view consolidates all detected differences between the two selected versions. It identifies changes across all major parts of the flow, including subflows, actions, variables, UI elements, and images. The system evaluates differences by using the latest version (based on timestamp) as the reference point. As a result, the comparison determines which items are added, removed, or edited relative to that version. The right pane acts as a navigation and filtering surface for changes. It indicates which components contain modifications and you can move directly to the relevant area of the flow. By default, the comparison focuses on changes in actions. 
 
-:::image type="content" source="media/version-control/Version-comparison-overview.png" alt-text="An overview of the version comparison window":::
+:::image type="content" source="media/version-control/version-comparison-overview.png" alt-text="An overview of the version comparison window":::
 
 You can see changes directly in the workspace, so you can understand how the flow evolved without switching context. Each change type has a consistent indicator:
 - Indicator (1) represents elements that you added.
@@ -126,7 +127,7 @@ You can see action-level changes both inline in the workspace and through a dedi
 - Use navigation controls to move between changed actions.
 - Use a dedicated option to highlight the action within the flow and locate it in the workspace.
 
-:::image type="content" source="media/version-control/Actions-changed-details.png" alt-text="View changes in actions.":::
+:::image type="content" source="media/version-control/actions-changed-details.png" alt-text="View changes in actions.":::
 
 ### Exploring variable changes
 
