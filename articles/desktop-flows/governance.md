@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: NikosMoutzourakis
 ms.topic: article
-ms.date: 05/05/2026
+ms.date: 05/13/2026
 ms.update-cycle: 180-days
 ms.author: nimoutzo
 ms.reviewer: matp
@@ -394,6 +394,21 @@ You can use the following registry entry to disable the execution of flows conta
 ***Value***
 
 - **1**: The machine can't run desktop flows containing cloud connectors. An error message informs users about the limitation.
+
+## Configure Power Automate for desktop to hide certain or all example categories
+
+You can use the following registry entry to govern which example categories are visible, addressing the security concern of examples not being governed by DLP rules.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop\Global | DisableExamples | Multi-String Value |
+
+***Value***
+
+- **All**: Disables all examples and hides the Examples tab completely.
+- **Excel Automation, Web Automation, Desktop Automation, Datetime Handling, PDF Automation, Text Manipulation, Scripting, Flow Control**: Hides specific categories.
+
+Multiple values can be set to hide multiple categories.
 
 ## Improve troubleshooting of the Power Automate troubleshooter
 
