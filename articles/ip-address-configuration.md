@@ -3,14 +3,15 @@ title: IP address configuration
 description: Learn about IP address configuration required to use Power Automate, the services that Power Automate connects to, various endpoints, and more.
 author: samathur
 contributors:
+  - vibhutinair23
   - kisubedi
   - samathur
   - v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 12/10/2025
-ms.author: matow
+ms.date: 05/13/2026
+ms.author: vibhutinair
 ms.reviewer: angieandrews
 #customer intent: As an IT professional, I want to allow Power Automate flows to connect to external services so that users can automate workflows seamlessly.
 ---
