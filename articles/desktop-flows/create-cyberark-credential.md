@@ -5,9 +5,9 @@ author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 10/07/2025
+ms.date: 05/11/2026
 ms.author: quseleba
-ms.reviewer: dmartens
+ms.reviewer: ellenwehrle
 contributors:
   - DanaMartens
   - iomavrid
@@ -18,7 +18,7 @@ search.audienceType:
 
 # Create a CyberArk credential
 
-This feature allows users to create a Power Automate credential that retrieves CCP CyberArk secrets from vault during runtime.
+This feature enables you to create a Power Automate credential that retrieves CCP CyberArk secrets from the vault during runtime.
 
 ## Availability
 
@@ -30,33 +30,33 @@ Currently, this feature isn't available for US Government Clouds.
 
 If your CyberArk Central Credential Provider (CCP) isn't set up, complete the following actions:
 
-1. Install the Central Credential Provider (CCP). Learn more at <https://docs.cyberark.com/credential-providers/latest/en/Content/CCP/CCP-Installation.htm>.
+1. Install the Central Credential Provider (CCP). To learn more, see [CCP Installation](https://docs.cyberark.com/credential-providers/latest/en/Content/CCP/CCP-Installation.htm).
 1. Ensure that your machines can communicate with the CyberArk server.
 1. Allow https connections to contact the CCP AIMWebService.
 
-### Create an application with client certification authentication from PVWA
+### Create an application with client certificate authentication from PVWA.
 
-A signed certificate enables the application authentication with a certificate serial number.
+When you use a signed certificate, the application authenticates by using the certificate serial number.
 
 To add a signed certificate:
 
-1. Sign-in to CyberArk’s Password Vault Web Access (PVWA).
-1. From the left navigation, select the **Applications** tab and then select **Add Application**.
+1. Sign-in to CyberArk's Password Vault Web Access (PVWA).
+1. From the left navigation, select the **Applications** tab, and then select **Add Application**.
 
     :::image type="content" source="./media/manage-machines/create-application.png" alt-text="Screenshot of CyberArk application.":::
 
 1. Provide the information in the Application window (at least a name) and select **Add**.
 1. In the details of the application, select **Add** on the **Authentication** tab.
-1. Select **Certificate serial number** and enter the value. Learn more in [Application authentication methods](https://docs.cyberark.com/credential-providers/Latest/en/Content/CP%20and%20ASCP/Application-Authentication-Methods-general.htm#ClientCert).
+1. Select **Certificate serial number** and enter the value. For more information, see [Application authentication methods](https://docs.cyberark.com/credential-providers/Latest/en/Content/CP%20and%20ASCP/Application-Authentication-Methods-general.htm#ClientCert).
 
-### Set up a CyberArk safe that contains their user accounts
+### Set up a CyberArk safe that contains your user accounts
 
-(Optional) If you don’t have a safe yet, you can create a Safe from PVWA:
+(Optional) If you don't have a safe yet, you can create a Safe from PVWA:
 
 1. From the left navigation, select **Policies** and then select **Safes**.
 1. Select **Create Safe**.
 1. Enter a safe name and select **PasswordManager**.
-1. Enter Safe members and Access then select **Create Safe**.
+1. Enter *Safe members* and *Access*, and then select **Create Safe**.
 
     From PVWA, you can then add your machine accounts.
 
@@ -84,15 +84,15 @@ To add a signed certificate:
 
     - Retrieve accounts
 
-## Add a CyberArk application to machine / group
+## Add a CyberArk application to machine or group
 
 > [!IMPORTANT]
 >
-> It isn't currently possible for users to associate a CyberArk application with machines or groups that are shared with other users.
+> You can't currently associate a CyberArk application with machines or groups that you share with other users.
 
-If you want to run a desktop flow on a machine or a group using CyberArk credentials, you need to add your CyberArk application information in the Power Automate portal.
+To run a desktop flow on a machine or a group by using CyberArk credentials, add your CyberArk application information in the Power Automate portal.
 
-1. Sign-in to [Power Automate](https://make.powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. From the left navigation, select **Machines**, and then select the machine or the group.
 1. In the Machine details, select **Configure CyberArk**.
 
@@ -106,64 +106,93 @@ If you want to run a desktop flow on a machine or a group using CyberArk credent
 1. Enter the certificate file password that is used to open the certificate file.
 
       > [!NOTE]
-      > The password is not stored. The certificate is opened and encrypted with the public key of the machine group so it is only readable from the registered machines.
+      > The password isn't stored. The certificate is opened and encrypted by using the public key of the machine group so it's only readable from the registered machines.
 
 1. Enter a description (optional) and then select **Save**.
 
       :::image type="content" source="./media/manage-machines/add-cyberark-app.png" alt-text="Screenshot of configure CyberArk on machine group":::
 
+> [!NOTE]
+> If you create a CyberArk application with the same Application ID as an existing one on the machine or group, this action automatically replaces the existing application. This replacement includes the certificate, certificate password, and related configuration.
+
+## Configure CyberArk for multiple machines or groups
+
+If you need to configure the same CyberArk application across multiple machines or groups, use the centralized configuration wizard instead of configuring each machine individually.
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. From the left navigation, select **Machines**.
+1. Select the **CyberArk** tab.
+1. Select **New CyberArk application**.
+1. In the **Select CyberArk application** step, provide the following information:
+    - **Application Id**: Enter the Application ID as registered in your CyberArk CCP.
+    - **Select certificate**: Upload the certificate file (.pfx or .p12) used to authenticate with CyberArk.
+    - **Certificate password**: Enter the password for the certificate file.
+    - **Description** (optional): Add a description for this configuration.
+1. Select **Next**.
+1. In the **Select machine groups** step, select the machines and machine groups that should use this CyberArk application.
+    - Use **Select all** or **Clear all** for bulk selection.
+    - Use the search box to find specific machines or groups.
+1. Select **Next**.
+1. In the **Review and create** step, verify your configuration:
+    - Application ID
+    - List of machines and groups that use this application
+1. Select **Create**.
+
+> [!TIP]
+> Use one unique CyberArk configuration for each machine group to simplify management.
+
 ## Create a CyberArk credential
 
-Now that you complete all the prerequisites steps, you can create your CyberArk credentials.
+After you complete all the prerequisite steps, create your CyberArk credentials.
 
 1. From the left navigation, select **Credentials**.
 1. Select **New credential**.
-1. In the wizard, define a credential name and a brief description, then select **Next**.
-1. When creating a credential in Power Automate, specify where this credential is used. You can use a credential for two types of usage:
-    - **Connection**: These are the credentials of the user session on which the desktop flow runs.
-    - **Desktop flows**: These are credentials that you want to use in a desktop flow. For example, SAP credential, SharePoint credential, Excel password, etc.
+1. In the wizard, enter a credential name and a brief description, and then select **Next**.
+1. When you create a credential in Power Automate, specify where to use this credential. You can use a credential for two types of usage:
+    - **Connection**: These credentials belong to the user session on which the desktop flow runs.
+    - **Desktop flows**: These credentials are for use in a desktop flow. For example, SAP credential, SharePoint credential, Excel password, and so on.
 
 
 1. Select CyberArk CCP as the type of credential store.
-1. If you already defined a CyberArk store, you can select it from the dropdown. Otherwise, select **Create new**.
+1. If you already defined a CyberArk store, select it from the dropdown. Otherwise, select **Create new**.
 
-    - **Display name**: Provide a name for your CyberArk store.
-    - **Server address**: The server address is the Central Credential Provider URL. For example, `https://svc.skytap.com:8992`.
+    - **Display name**: Enter a name for your CyberArk store.
+    - **Server address**: Enter the server address, which is the Central Credential Provider URL. For example, `https://svc.skytap.com:8992`.
 
       > [!NOTE]
-      > Versions below the August release don't support a server address ending with a "/".
+      > Versions before the August release don't support a server address ending with a "/".
 
     - **Application Id**: To find the Application ID, open CyberArk PVWA (Password Vault Web Access) on a web browser and navigate to the Applications tab.
-    - **Safe**: Populate the name of the safe displayed in CyberArk PVWA.
-    - **Folder** (optional): Populate the folder name where your credentials are stored. By default, credentials are stored in the "Root" folder.
+    - **Safe**: Enter the name of the safe displayed in CyberArk PVWA.
+    - **Folder** (optional): Enter the folder name where your credentials are stored. By default, credentials are stored in the **Root** folder.
 
     :::image type="content" source="./media/manage-machines/select-credential-store.png" alt-text="Screenshot of create new credential store.":::
 
-1. In the last step of the wizard, you need to provide the information about the user account:
+1. In the last step of the wizard, provide the information about the user account:
 
-    - **Username**: Select a username from your text environment variables or create a new one by selecting new.
+    - **Username**: Select a username from your text environment variables or create a new one by selecting **new**.
 
-        If you create a CyberArk credential to be used in a desktop flow connection, provide your device account. Populate the name of the user (for example, `<MACHINENAME\User>` or `<local\User>`) or a Microsoft Entra ID account, such as `<DOMAIN\User>` or `<username@domain.com>`.
+        If you create a CyberArk credential to use in a desktop flow connection, provide your device account. Enter the name of the user (for example, `<MACHINENAME\User>` or `<local\User>`) or a Microsoft Entra ID account, such as `<DOMAIN\User>` or `<username@domain.com>`.
 
     - **Object name**: The object name corresponds to the CyberArk object name store in the CyberArk safe. This value is also called account name in PVWA.
   
 ## Use the credential in a desktop flow connection
 
-Your credential is now created. You can use it in a desktop flow connection to [run desktop flows from cloud flows](desktop-flow-connections.md).
+You created the credential. Use it in a desktop flow connection to [run desktop flows from cloud flows](desktop-flow-connections.md).
 
 ## Use the credential in a desktop flow action
 
-1. Ensure you have a [registered machine](manage-machines.md) where your desktop flow is executed. The credential is retrieved from this machine.
+1. Ensure you have a [registered machine](manage-machines.md) where you execute your desktop flow. The credential is retrieved from this machine.
 
     > [!NOTE]
     > The registered machine is required for credentials to work properly at runtime, even for local attended or debugging runs.
 
 1. In the desktop flow designer, select the **[Power Automate secret variables](actions-reference/powerautomatesecretvariables.md)** module and then select the **[Get credential](actions-reference/powerautomatesecretvariables.md#getcredentialaction)** action.
-1. Specify which credential to retrieve. You see only the credentials defined as usable in a desktop flow. Credentials using Azure Key Vault or CyberArk as a vault are supported.
-1. Define the name of your produced variable. This variable is marked as "sensitive" and can't be modified. This means the value of this variable isn't stored in the logs.
+1. Specify which credential to retrieve. You see only the credentials defined as usable in a desktop flow. Credentials that use Azure Key Vault or CyberArk as a vault are supported.
+1. Define the name of your produced variable. This variable is marked as *sensitive* and can't be modified. This restriction means the value of this variable isn't stored in the logs.
 
     > [!NOTE]
-    > Credential type variables are always enforced to be [sensitive](manage-variables.md#sensitive-variables), independently of how they are produced (**Get credential** action or reassigning a credential variable to a new one, which inherits the same variable type). The same applies to the 'Password' property of credential variables.
+    > Credential type variables are always enforced as [sensitive](manage-variables.md#sensitive-variables), independently of how they're produced (**Get credential** action or reassigning a credential variable to a new one, which inherits the same variable type). The same rule applies to the 'Password' property of credential variables.
 
 1. After you select **Save**, use your credential in another action. All Power Automate actions can use credentials.
 1. In the action field, select the variable picker. In your flow variables list, find your credential and expand it. You can see the attributes **Username** and **Password**. Select the one you want to use in this action (double-click).
