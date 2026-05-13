@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 05/23/2025
+ms.date: 05/13/2026
 ms.author: nimoutzo
 ms.reviewer: matp
 contributors:
@@ -34,7 +34,7 @@ To add a new UI element to your flow, add a new UI element through an action or 
 :::image type="content" source="media/ui-elements/capturing-ui-elements.png" alt-text="Screenshot of a highlighted element.":::
 
 > [!NOTE]
-> The UI element picker now supports capturing both UI Automation (UIA) and Microsoft Active Accessibility (MSAA) selectors when working with desktop UI elements. By default, the picker operates in UIA mode. You can change the capturing mode using the menu located in the top-right corner of the UI element picker. Select MSAA to target legacy applications that don't expose UIA selectors. When MSAA mode is enabled, a banner appears in the UI element picker to indicate that you're capturing MSAA selectors. Learn more about the difference between UIA and MSAA selectors in [UI elements types](#ui-elements-types).
+> The UI element picker supports capturing UI Automation (UIA), Raw view of UI Automation v3 (UIA3 Raw), and Microsoft Active Accessibility (MSAA) selectors when working with desktop UI elements. By default, the picker operates in UIA mode. You can change the capturing mode using the menu located in the top-right corner of the UI element picker. Select MSAA to target legacy applications that don't expose UIA selectors, or UIA3 Raw when you need to expose and capture all intermediate layers in the Raw automation tree. When MSAA or UIA3 Raw mode is enabled, a banner appears in the UI element picker to indicate that you're capturing MSAA or UIA3 Raw selectors respectively. Learn more about the difference between UIA, UIA3 Raw, and MSAA selectors in [UI elements types](#ui-elements-types).
 
 Any captured UI elements will be added to the UI elements pane. To access the UI elements pane, select the UI elements tab on the right-hand side of the flow designer.
 
