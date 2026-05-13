@@ -2,7 +2,7 @@
 title: Configure desktop flow logs behavior
 description: Configure desktop flow log verbosity and storage destination in Power Platform Admin Center.
 ms.topic: how-to
-ms.date: 03/03/2026
+ms.date: 05/07/2026
 ms.author: appapaio
 ms.reviewer: ellenwehrle
 contributors:
@@ -19,9 +19,9 @@ search.audienceType:
 
 This article provides configuration guidance for desktop flow logs, located under the environment's feature section in the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and in Power Automate for verbosity configuration of specific flows.
 
-> [!IMPORTANT]
+> [!NOTE]
 >
-> - This feature only applies to desktop flows that are launched from a cloud flow. It's not available yet for local attended runs from Power Automate desktop.
+> This feature applies to both desktop flows launched from a cloud flow and local attended runs from Power Automate for desktop.
 
 The **Activation status of run action logs** setting defines when desktop flow run action logs should be captured and even allows you to turn them off completely.
 
