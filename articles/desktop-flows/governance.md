@@ -6,7 +6,7 @@ ms.topic: article
 ms.date: 05/14/2026
 ms.update-cycle: 180-days
 ms.author: nimoutzo
-ms.reviewer: matp
+ms.reviewer: ellenwehrle
 ms.collection: bap-ai-copilot
 contributors:
 - jpapadimitriou
@@ -53,12 +53,12 @@ Use the following registry entry to prevent users from manually configuring Powe
 
 - **1**: Users can't manually select to automatically start Power Automate for desktop.
 
-## Prevent users accessing Power Automate for desktop using certain kinds of accounts
+## Prevent user access to Power Automate for desktop with specific types of accounts
 
 > [!NOTE]
 > Setting any value other than 1, or not setting a value at all, in the following registry keys allows users to sign in to Power Automate for desktop. If all the following registry keys are set to 1, users can't sign in to Power Automate for desktop using any type of account.
 
-### Prevent users accessing Power Automate for desktop using their Microsoft accounts
+### Prevent user access to Power Automate for desktop using Microsoft accounts
 
 Use the following registry entry to keep users from signing in to Power Automate for desktop using a Microsoft account.
 
@@ -70,7 +70,7 @@ Use the following registry entry to keep users from signing in to Power Automate
 
 - **1**: Users can't sign in to Power Automate using their Microsoft account.
 
-### Prevent users from accessing Power Automate for desktop by using their work or school accounts
+### Prevent user access to Power Automate for desktop using work or school accounts
 
 Use the following registry entry to prevent users from signing in to Power Automate for desktop by using their work or school account without a per-user plan with attended RPA license.
 
@@ -82,7 +82,7 @@ Use the following registry entry to prevent users from signing in to Power Autom
 
 - **1**: Users can't sign in to Power Automate by using their work or school account without a per-user plan with attended RPA license.
 
-### Prevent users from accessing Power Automate for desktop by using their work or school accounts or organization premium accounts
+### Prevent user access to Power Automate for desktop using work or school accounts or organization premium accounts
 
 Use the following registry entry to prevent users from signing in to Power Automate for desktop by using their work or school accounts or organization premium accounts.
 
@@ -98,14 +98,14 @@ Use the following registry entry to prevent users from signing in to Power Autom
 
 To restrict access to Power Automate for desktop on a workstation with Windows 10 or Windows 11, use [App locker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
 
-## Configure Power Automate for desktop to use the Web Account Manager (WAM) as a fallback sign in method
+## Configure Power Automate for desktop to use the Web Account Manager (WAM) as a fallback sign-in method
 
 By default, Power Automate for desktop uses the Web Account Manager (WAM) for user authentication. If any sign in errors occur, it uses an Internet Explorer client as a fallback method.
 
-Use the following registry entry to set Power Automate for desktop to sign in by using the Windows Web Account Manager (WAM) as a fallback sign in method.
+Use the following registry entry to set Power Automate for desktop to sign in by using the Windows Web Account Manager (WAM) as a fallback sign-in method.
 
 > [!NOTE]
-> For older versions of Power Automate for desktop prior to version 2.41, this registry entry configures Power Automate for desktop to sign in by using the Web Account Manager (WAM) as the primary sign in method.
+> For older versions of Power Automate for desktop prior to version 2.41, this registry entry configures Power Automate for desktop to sign in by using the Web Account Manager (WAM) as the primary sign-in method.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -113,7 +113,7 @@ Use the following registry entry to set Power Automate for desktop to sign in by
 
 ***Values***
 
-- **1**: Power Automate for desktop authenticates users by using the WAM functionality as a fallback sign in method.
+- **1**: Power Automate for desktop authenticates users by using the WAM functionality as a fallback sign-in method.
 
 ## Configure Power Automate for desktop to check for revoked certificates
 
