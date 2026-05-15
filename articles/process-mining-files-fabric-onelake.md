@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 07/25/2025
+ms.date: 05/15/2026
 ms.custom: bap-template
 ms.author: michalrosik
 ms.reviewer: angieandrews
@@ -30,9 +30,6 @@ Power Automate Process Mining gives you the option to store and read event log d
   :::image type="content" source="media/process-mining-files-fabric-onelake/one-lake-sp.png" alt-text="Screenshot of the Fabric workspace settings with sharing to Process Insights service principal.":::
 
 - A Fabric Lakehouse must be created in this workspace with the data in supported formats.
-
-> [!IMPORTANT]
-> The following item isn't currently supported: Fabric Lakehouses with Schema support enabled.
 
 - CSV data in your Lakehouse should meet the following CSV file format requirements:
     - **Compression type**: None
