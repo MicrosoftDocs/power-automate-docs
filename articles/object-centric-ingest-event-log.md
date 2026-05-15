@@ -37,7 +37,7 @@ To prepare the OCEL, follow the guidelines in [How to create an object‑centric
 
 1. In the **Choose where to export** step, choose **Continue** to setup the export of OCPM semantic model in your Fabric workspace or **Skip export**
 
-   :::image type="content" source="media/object-centric-ingest-event-log/export-fabric-workspace.png" alt-text="Screenshot of optional "Export to Fabric workspace" step.":::
+   :::image type="content" source="media/object-centric-ingest-event-log/export-fabric-workspace.png" alt-text="Screenshot of optional 'Export to Fabric workspace' step.":::
 
 1. To setup the Fabric workspace
 
