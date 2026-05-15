@@ -6,7 +6,10 @@ ms.date: 05/15/2026
 author: rosikm
 ms.author: michalrosik
 ms.topic: article
+ms.service: power-automate
 ms.subservice: process-advisor
+search.audienceType:
+- enduser
 ---
 
 # Export OCPM semantic model into Fabric workspace

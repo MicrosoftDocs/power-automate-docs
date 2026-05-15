@@ -1,4 +1,3 @@
-
 ---
 title: Ingest object-centric event log (preview)
 description: Learn how to ingest an object-centric event log.
