@@ -47,12 +47,12 @@ Power Automate Process Mining gives you the option to store and read event log d
 ## Connect to Fabric OneLake
 
 1. On the navigation pane to the left, select **Process mining** > **Start here**.
-1. In the **Process name** field, enter a name for your process.
-1. Under the **Data source** heading, select **Import data** > **OneLake** > **Continue**.
+1. In the **Process name** field, select the process type and enter a name for your process.
+1. Under the **Data source** heading, select **OneLake** > **Continue**.
 
     :::image type="content" source="media/process-mining-files-fabric-onelake/create-process-ga.png" alt-text="Screenshot of the 'Create a new process' step.":::
 
-1. Select an optional Power BI workspace or select **Skip**.
+1. Select an optional Power BI or Fabric workspace or select **Skip**.
 1. On the **Connection setup** screen, select your **Fabric Workspace** from the dropdown menu. This populates the **Lakehouse** dropdown menu. From the menu, select the lakehouse that contains your data and select **Next**.
 1. Browse the **Lakehouse** folder structure and select the Delta table, file, or folder containing the event log data.
 
