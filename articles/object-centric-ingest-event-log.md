@@ -1,3 +1,4 @@
+
 ---
 title: Ingest object-centric event log (preview)
 description: Learn how to ingest an object-centric event log.
@@ -8,7 +9,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/03/2025
+ms.date: 05/15/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -34,6 +35,17 @@ To prepare the OCEL, follow the guidelines in [How to create an object‑centric
 1. Under the **Data source** heading, **Azure Data Lake** or **OneLake** and select **Continue**.
 
    :::image type="content" source="media/object-centric-ingest-event-log/object-centric-create-process.png" alt-text="Screenshot of the 'Create a new process' step.":::
+
+1. In the **Choose where to export** step, choose **Continue** to setup the export of OCPM semantic model in your Fabric workspace or **Skip export**
+
+   :::image type="content" source="media/object-centric-ingest-event-log/export-fabric-workspace.png" alt-text="Screenshot of optional "Export to Fabric workspace" step.":::
+
+1. To setup the Fabric workspace
+
+   * Choose from the list of available Fabric workspaces
+   * Choose a Fabric Lakehouse in the workspace
+   * Choose a name for the default report that will be created for the resulting semantic model
+   * Learn more about [Export OCPM semantic model into Fabric workspace](object-centric-semantic-model.md)
 
 1. The subsequent steps on the **Connection setup** screen, differ for Azure Data Lake or OneLake. Follow the respective documentation until you reach the attribute mapping screen:
 
@@ -61,3 +73,4 @@ To prepare the OCEL, follow the guidelines in [How to create an object‑centric
 ## Related information
 
 [OCPM process overview (preview)](object-centric-process-overview.md)
+[Export OCPM semantic model into Fabric workspace](object-centric-semantic-model.md)
