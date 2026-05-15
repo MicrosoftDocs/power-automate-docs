@@ -44,7 +44,7 @@ To prepare the OCEL, follow the guidelines in [How to create an object‑centric
    * Choose from the list of available Fabric workspaces
    * Choose a Fabric Lakehouse in the workspace
    * Choose a name for the default report that will be created for the resulting semantic model
-   * Learn more about [Export OCPM semantic model into Fabric workspace](object-centric-semantic-model.md)
+   * Learn more about [Export OCPM semantic model into Fabric workspace (preview)](object-centric-semantic-model.md)
 
 1. The subsequent steps on the **Connection setup** screen, differ for Azure Data Lake or OneLake. Follow the respective documentation until you reach the attribute mapping screen:
 
@@ -72,4 +72,4 @@ To prepare the OCEL, follow the guidelines in [How to create an object‑centric
 ## Related information
 
 [OCPM process overview (preview)](object-centric-process-overview.md)
-[Export OCPM semantic model into Fabric workspace](object-centric-semantic-model.md)
+[Export OCPM semantic model into Fabric workspace (preview)](object-centric-semantic-model.md)
