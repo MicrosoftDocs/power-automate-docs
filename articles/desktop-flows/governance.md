@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: NikosMoutzourakis
 ms.topic: article
-ms.date: 05/14/2026
+ms.date: 05/20/2026
 ms.update-cycle: 180-days
 ms.author: nimoutzo
 ms.reviewer: ellenwehrle
@@ -14,6 +14,8 @@ contributors:
 - PetrosFeleskouras
 - DanaMartens
 - cochamos
+- iopanag
+- rack82
 search.audienceType: 
   - flowmaker
   - enduser
@@ -117,7 +119,7 @@ Use the following registry entry to set Power Automate for desktop to sign in by
 
 ## Configure Power Automate for desktop to check for revoked certificates
 
-Certificates ensure the security of your connections to online data sources. Use the following registry entry to configure the level of certificate check, based on the certificates' revocation information status.
+Certificates ensure the security of your connections to online data sources. You can use the following registry entry to configure the level of certificate check, based on the certificates' revocation information status.
 
 > [!NOTE]
 > The default configuration when you don't set a registry entry is **Basic check**.
@@ -226,7 +228,7 @@ IT administrators can set the following registry key to configure how Power Auto
 IT administrators can set the following registry key to configure Power Automate to use a generic credential from Windows Credential Manager to authenticate to a corporate proxy server. 
 
 > [!NOTE]
-> To use this registry key, first configure the proxy server's address and port through the `ProxyServer` registry key.  
+> Before you can use this registry key, you need to first configure the proxy server's address and port through the **:::no-loc text="ProxyServer":::** registry key. 
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -241,7 +243,7 @@ IT administrators can set the following registry key to configure Power Automate
 IT administrators can set the following registry key to configure a list of IP addresses that are bypassed while Power Automate interacts with a corporate proxy server. 
 
 > [!NOTE]
-> To use this registry key, first configure the proxy server's address and port through the `ProxyServer` registry key. 
+> Before you can use this registry key, you need to first configure the proxy server's address and port through the **:::no-loc text="ProxyServer":::** registry key.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -561,6 +563,23 @@ To prevent your users from using any copilot capability contact Microsoft Custom
 
 - **String**: Custom path where videos and subtitles will be saved
 
+
+## Enable UI Access
+
+> [!NOTE]
+> This registry entry applies to Power Automate desktop version 2.68 and later.
+
+To enable UI Access, set the following value in the Windows registry of the machine that needs to automate applications that need
+elevated rights:
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| `HKEY_LOCAL_MACHINE` | `SOFTWARE\Wow6432Node\Microsoft\Power Automate Desktop\Global` | `UseUIAccessAutomationServer` | DWORD |
+
+***Value***
+
+- **0**: UI Access is disabled for Power Automate for desktop.
+- **1**: UI Access is enabled for Power Automate for desktop.
 
 ## Related information
 
