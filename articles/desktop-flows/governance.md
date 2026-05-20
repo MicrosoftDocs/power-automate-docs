@@ -225,10 +225,10 @@ IT administrators can set the following registry key to configure how Power Auto
 
 ## Configure Power Automate for desktop to authenticate to a corporate proxy server by using Windows credentials
 
-IT administrators can set the following registry key to configure Power Automate to use a generic credential from Windows' Credential Manager to authenticate to a corporate proxy server. 
+IT administrators can set the following registry key to configure Power Automate to use a generic credential from Windows Credential Manager to authenticate to a corporate proxy server. 
 
 > [!NOTE]
-> To use this registry key, it's a prerequisite to first configure the proxy server's address and port through the **ProxyServer** registry key. 
+> Before you can use this registry key, you need to first configure the proxy server's address and port through the **:::no-loc text="ProxyServer":::** registry key. 
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -243,7 +243,7 @@ IT administrators can set the following registry key to configure Power Automate
 IT administrators can set the following registry key to configure a list of IP addresses that are bypassed while Power Automate interacts with a corporate proxy server. 
 
 > [!NOTE]
-> To use this registry key, it's a prerequisite to first configure the proxy server's address and port through the **ProxyServer** registry key.
+> Before you can use this registry key, you need to first configure the proxy server's address and port through the **:::no-loc text="ProxyServer":::** registry key.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
@@ -574,12 +574,12 @@ elevated rights:
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
-| HKEY_LOCAL_MACHINE | SOFTWARE\Wow6432Node\Microsoft\Power Automate Desktop\Global | UseUIAccessAutomationServer | DWORD |
+| `HKEY_LOCAL_MACHINE` | `SOFTWARE\Wow6432Node\Microsoft\Power Automate Desktop\Global` | `UseUIAccessAutomationServer` | DWORD |
 
 ***Value***
 
-- **0**: UI Access is disabled for Power Automate for destkop.
-- **1**: UI Access is enabled for Power Automate for destkop.
+- **0**: UI Access is disabled for Power Automate for desktop.
+- **1**: UI Access is enabled for Power Automate for desktop.
 
 ## Related information
 
