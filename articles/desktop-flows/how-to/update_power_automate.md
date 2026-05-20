@@ -26,7 +26,7 @@ This article provides guidance on updating or rolling back Power Automate for de
 
 Learn how to [install Power Automate](../install.md), including options for [silent installation](../install-silently.md). You can [manage manual updates and update notifications](../console.md#update-power-automate-for-desktop) through the [Power Automate for desktop console](../console.md) and the machine-runtime app.
 
-To prevent users from manually updating Power Automate and receiving update notifications, a registry key is available. Learn more in [Prevent users manually updating Power Automate for desktop](../governance.md#prevent-users-manually-updating-power-automate-for-desktop).
+To prevent users from manually updating Power Automate and receiving update notifications, a registry key is available. Learn more in [Prevent users from manually updating Power Automate for desktop](../governance.md#prevent-users-from-manually-updating-power-automate-for-desktop).
 
 ### Backward compatibility
 
