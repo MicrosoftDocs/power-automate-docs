@@ -88,7 +88,7 @@ To use natural language to flow, follow these steps:
 
      :::image type="content" source="media/easy-flow/nl2flow.png" alt-text="Screenshot of sample flows in the Workflows flow builder.":::
 
-1. In the empty filed, type your prompt.
+1. In the empty field, type your prompt.
 
     The AI suggests a list of flows based on your prompt.
 
