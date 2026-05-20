@@ -1,5 +1,5 @@
 ---
-title: Design flows with Microsoft Visio in Power Automate | Microsoft Docs
+title: Design flows with Microsoft Visio in Power Automate [DEPRECATED] | Microsoft Docs
 description: Lean how to use your organization's Visio expertise to build common models as a starting point to create flows.
 services: ''
 suite: flow
@@ -21,7 +21,14 @@ search.audienceType:
   - enduser
 ---
 
-# Design flows with Microsoft Visio
+# Design flows with Microsoft Visio [DEPRECATED]
+
+> [!IMPORTANT]
+> **Deprecated:** Effective July 14, 2026, the ability to export Power Automate flows from Visio is deprecated and will be removed. Existing BPMN diagrams and previously exported flows are not affected.
+>
+> To create new flows, use the Power Automate designer at [make.powerautomate.com](https://make.powerautomate.com). For more information, see [Create a cloud flow in Power Automate](/power-automate/get-started-logic-flow).
+>
+> For details on this deprecation, see [Important changes (deprecations) coming in Power Platform](/power-platform/important-changes-coming#deprecation-of-power-automate-export-from-microsoft-visio).
 
 The Power Automate designer is a rich tool in which you can configure every detail of your logic. However, sometimes you may want to just sketch your flow logic before you start building your flow. To do this, use Microsoft Visio directly from within Power Automate.
 
