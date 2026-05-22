@@ -1,11 +1,12 @@
 ---
-title: Design flows with Microsoft Visio in Power Automate | Microsoft Docs
+title: Design flows with Microsoft Visio in Power Automate [DEPRECATED] | Microsoft Docs
 description: Lean how to use your organization's Visio expertise to build common models as a starting point to create flows.
 services: ''
 suite: flow
 documentationcenter: na
-author: thomasjeffries11
+author: radioblazer
 contributors:
+  - radioblazer
   - thomasjeffries11
   - v-aangie
 editor: ''
@@ -13,23 +14,27 @@ tags: ''
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 06/16/2022
-ms.author: thjeffri
+ms.date: 05/22/2026
+ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Design flows with Microsoft Visio
+# Design flows with Microsoft Visio [DEPRECATED]
+
+> [!IMPORTANT]
+> - Effective July 14, 2026, the ability to export Power Automate flows from Visio is *deprecated* and will be removed. Existing BPMN diagrams and previously exported flows aren't affected.
+> - *Deprecated* means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+> - To create new flows, use the Power Automate designer in [Power Automate](https://make.powerautomate.com). Learn more in [Create a cloud flow in Power Automate](/power-automate/get-started-logic-flow).
+> - Find details for this deprecation in [Important changes (deprecations) coming in Power Platform](/power-platform/important-changes-coming#deprecation-of-power-automate-export-from-microsoft-visio).
 
 The Power Automate designer is a rich tool in which you can configure every detail of your logic. However, sometimes you may want to just sketch your flow logic before you start building your flow. To do this, use Microsoft Visio directly from within Power Automate.
 
->[!TIP]
-> Many processes share a common model but have minor variations throughout an organization. You can save time within your organization by using Visio to create a master workflow model that others will then adjust with specialized parameters.
+Many processes share a common model but have minor variations throughout an organization. You can save time within your organization by using Visio to create a master workflow model that others will then adjust with specialized parameters.
 
->[!NOTE]
-> This feature isn't available for GCC (Government Community Cloud), GCC High, or DoD (Department of Defense) customers.
+This feature isn't available for GCC (Government Community Cloud), GCC High, or DoD (Department of Defense) customers.
 
 ## Prerequisites
 
@@ -107,5 +112,6 @@ You can now run or make edits to your flow from the Power Automate designer, jus
 - [Get started with Power Automate](getting-started.md) 
 - [Build multi-step flows](multi-step-logic-flow.md)
 - [Design a cloud flow with Microsoft Visio](https://support.office.com/article/design-a-microsoft-flow-in-visio-35f0c9a9-912b-486d-88f7-4fc68013ad1a)
+- [Design flows with Microsoft Visio [DEPRECATED]](/power-platform/important-changes-coming?branch=main)
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
