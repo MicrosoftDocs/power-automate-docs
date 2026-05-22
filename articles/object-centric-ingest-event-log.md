@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/03/2025
+ms.date: 05/22/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -39,6 +39,10 @@ To prepare the OCEL, follow the guidelines in [How to create an object‑centric
 
    - Azure Data Lake - [Bring your own Azure Data Lake Storage Gen2](/power-automate/process-mining-byo-azure-data-lake)
    - OneLake -  [Ingest data from Fabric OneLake](/power-automate/process-mining-files-fabric-onelake)
+  
+    > [!IMPORTANT]
+    > The following item isn't currently supported: Fabric Lakehouses with Schema support enabled.
+
 1. On the **Map your data** screen, map your data columns to appropriate attributes.
 
    * One attribute of type **Activity** must be mapped
