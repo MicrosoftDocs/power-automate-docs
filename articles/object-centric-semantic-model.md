@@ -2,7 +2,7 @@
 title: Export OCPM Semantic Model to Fabric Workspace (preview)
 description: Learn how to export object-centric process mining (OCPM) data into a Fabric workspace and build powerful Power BI reports on DirectLake semantic model.
 #customer intent: As a business analyst, I want to understand the predefined relationships in the OCPM semantic model, so that I can use them correctly when building visuals.
-ms.date: 05/15/2026
+ms.date: 05/29/2026
 author: rosikm
 ms.author: michalrosik
 ms.topic: article
@@ -26,7 +26,7 @@ When a process is published to Fabric workspace, it creates a new Directlake sem
 
 The following screenshot is an example of a semantic model structure published to Fabric.
 
-:::image type="content" source="media/object-centric-semantic-model/ocpm-semantic-model.png" alt-text="Screenshot of OCPM Directlake semantic model structure." lightbox="media/object-centric-semantic-model/ocpm-semantic-model.png":::
+:::image type="content" source="media/object-centric-semantic-model/object-centric-semantic-model.png" alt-text="Screenshot of OCPM Directlake semantic model structure." lightbox="media/object-centric-semantic-model/object-centric-semantic-model.png":::
 
 ### Column naming
 
@@ -34,32 +34,32 @@ Naming of semantic model columns corresponds to the naming of the columns in you
 
 Allowed characters include:
 
-- ```a-z``` → lowercase English letters
-- ```A-Z``` → uppercase English letters
-- ```0-9``` → digits
-- ```_``` → underscore
+- `a-z`: lowercase English letters
+- `A-Z`: uppercase English letters
+- `0-9`: digits
+- `_`:  underscore
 
 All other characters are replaced with underscore (_) as part of the sanitization process.
 
-This might result in rare situations where export isn't successful, as the ingested data source includes two columns that result in identical names after sanitization&mdash;**Customer_Name** and **Customer Name**. The export will be interrupted and user will be notified with specific error message.
+This might result in rare situations where export isn't successful, as the ingested data source includes two columns that result in identical names after sanitization&mdash;**Customer_Name** and **Customer Name**. The export is interrupted and user is notified with the specific error message.
 
 Lakehouse delta table columns therefore use the sanitized column names, whereas semantic model columns use the original column names.
 
 ### Relationships
 
-Relationships necessary for filtering and interconnectivity of visuals are predefined in the published data model. There isn't a need to manually create more relationships unless other data sources are connected. For such as scenario, use the Power BI composite semantic model and build relationships on top of that model.
+Relationships necessary for filtering and interconnectivity of visuals are predefined in the published data model. There isn't a need to manually create more relationships unless other data sources are connected. For such a scenario, use the Power BI composite semantic model and build relationships on top of that model.
 
-As visible in the model, some realtionships are hidden - this is due to the limitations of smenatic models, where only a single relationship between the same two tables can be active. It is however possible to use the inactive relationships, if needed, using the corresponding DAX functions. 
+As visible in the model, some realtionships are hidden. This is due to the limitations of smenatic models, where only a single relationship between the same two tables can be active. It's possible to use the inactive relationships, if needed, using the corresponding DAX functions.
 
 ### Data model summary
 
-From a logical perspective, the data model consists of
+From a logical perspective, the data model consists of:
 
-- **Object and Event Data**: Data related to objects and events
-- **Visuals data**: Data related to summarizing items derived from objects and events, usually used for visualization purposes
-- **Process execution data**: Data related to identified process executions (process instances) based on a leading object
+- **Object and Event Data**: Data related to objects and events.
+- **Visuals data**: Data related to summarizing items derived from objects and events, usually used for visualization purposes.
+- **Process execution data**: Data related to identified process executions (process instances) based on a leading object.
 
-Following is the brief description of the subsets and included entities.
+Following is the description of the subsets and included entities.
 
 #### Object and Event Data
 
@@ -67,11 +67,11 @@ The content of process data entities changes when process model data is refreshe
 
 Working with these entities allows you to:
 
-- Access the raw process data
-- Access the measures calculated based on the process data
+- Access the raw process data.
+- Access the measures calculated based on the process data.
 
-| Entity               | Description                                                  |
-|----------------------|--------------------------------------------------------------|
+| Entity        | Description        |
+|---------------|--------------------|
 | Object Types         | List of all types of objects in the process.                 |
 | Objects              | List of all objects in the process with reference to object type, lifecycle of the object and relevant object level attributes as additional columns (when ingested). |
 | Events               | Entity holds list of all events in the process with reference to particular node in the `Nodes` table and ingested event level attributes as additional columns. |
@@ -108,13 +108,13 @@ We recommend that you use the Power BI composite model on top of the semantic mo
 > [!IMPORTANT]
 > The semantic model is created in DirectLake access mode, but its option is set to **Automatic**. This setting means that using nonoptimal DAX queries or incorrectly setting a composite model might result in fallback to DirectQuery mode. This means that your report doesn't break, but you might experience lower performance.
 
-To learn more about creating Power BI composite data models on top of DirectLake semantic models, go to: [Building a composite models on a semantic model or model](/power-bi/transform-model/desktop-composite-models#building-a-composite-model-on-a-semantic-model-or-model).
+Learn more about creating Power BI composite data models on top of DirectLake semantic models in [Building a composite models on a semantic model or model](/power-bi/transform-model/desktop-composite-models#building-a-composite-model-on-a-semantic-model-or-model).
 
 ## Semantic model refresh
 
 By default, the semantic model provided by Power Automate Process Mining automatically kept up to date.
 
-For large datasets, data refresh of underlying tables in OneLake might take longer. This can cause potential inconsistencies in the report. Although there's eventual consistency at the end of data refresh (semantic model is explicitly refreshed), you might want to remove the potential intermediate inconsistencies by turning off **Keep your Direct Lake data up to date** flag in the **Settings** screen of the semantic model.
+For large datasets, data refresh of underlying tables in OneLake might take longer. This can cause potential inconsistencies in the report. Although there's eventual consistency at the end of data refresh (semantic model is explicitly refreshed), you might want to remove the potential intermediate inconsistencies by turning off the **Keep your Direct Lake data up to date** flag in the **Settings** screen of the semantic model.
 
 Before you update this screen, you need to take ownership of the semantic model by selecting **Take over** at the top of the **Settings** screen.
 
