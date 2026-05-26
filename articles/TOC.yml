@@ -502,7 +502,7 @@
     href: ./desktop-flows/how-to/allowlist-tenant-for-connect-with-sign-in-and-registration.md
   - name: Manage desktop flows
     href: ./desktop-flows/manage.md
-  - name: Version control (preview)
+  - name: Version control
     href: ./desktop-flows/version-control.md
   - name: Work queues
     items:
@@ -679,6 +679,8 @@
         href: ./desktop-flows/how-to/access-elements-depend-window.md
       - name: Automate Java applications
         href: ./desktop-flows/how-to/java.md
+      - name: Enable UI Access to automate elevated applications
+        href: ./desktop-flows/how-to/enable-ui-access.md
     - name: Automate web applications and web pages
       items:
       - name: Handle links that open new tabs
@@ -882,6 +884,8 @@
       href: desktop-flows/actions-reference/testing.md
     - name: Power Automate secret variables
       href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
+    - name: Power Platform
+      href: ./desktop-flows/actions-reference/power-platform.md
     - name: Power Automate environment
       href: ./desktop-flows/actions-reference/powerautomateenvironment.md
   - name: Troubleshoot desktop flows runtime
