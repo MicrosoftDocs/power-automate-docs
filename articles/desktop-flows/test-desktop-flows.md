@@ -5,8 +5,8 @@ author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 04/16/2026
-ms.author: quseleba
+ms.date: 05/13/2026
+ms.author: nimoutzo
 ms.reviewer: ellenwehrle
 contributors:
   - Flow
@@ -18,7 +18,7 @@ ai-usage: ai-assisted
 
 # Create and manage test cases for desktop flows
 
-Test cases help you verify that your desktop flows work correctly. Instead of manually running a flow and checking results every time you make changes, create a test case that automatically runs your flow and checks if the output matches what you expect.
+Test cases help you verify that your desktop flows work correctly. Instead of manually running a flow and checking results every time you make changes, create a test case that automatically runs your flow or its subflows and checks if the output matches what you expect.
 
 ## Prerequisites
 
@@ -36,11 +36,11 @@ A test case validates a single desktop flow. Take the following steps to create 
 1. Select the desktop flow you want to test.
 1. Select **Create**.
 
-The test case opens in the designer, where you see the *Actions* pane and can add actions to run your flow and validate the results.
+The test case opens in the designer, where you see the *Actions* pane and can add actions to run your flow or its subflows and validate the results.
 
 ## Add actions to your test case
 
-Every test case uses two actions: one to run your flow, and one to check the results.
+Every test case uses two actions: one to run your flow or its subflows , and one to check the results.
 
 ### Test a desktop flow
 
@@ -48,23 +48,39 @@ The *Test a desktop flow* action runs the desktop flow you selected when creatin
 
 To test a desktop flow:
 
-1. In the Actions pane, expand **Testing**, and then select and drag the **Test a desktop flow** action into your test case on the designer pane.
+1. In the **Actions** pane, expand **Testing**, and then select and drag the **Test a desktop flow** action into your test case on the designer pane.
 1. If your flow requires **input values**, enter them in the action's parameters.
 1. When the flow runs, you can validate any **output variables** it produces.
 
   :::image type="content" source="media/test-desktop-flows/test-desktop-flow-action.png" alt-text="Drag Test a desktop flow action to main designer pane." lightbox="media/test-desktop-flows/test-desktop-flow-action.png":::
+
+### Test a subflow of a desktop flow
+The *Test a subflow of a desktop flow* action runs a specific subflow within a desktop flow.
+
+To test a subflow:
+1. In the **Actions** pane, expand **Testing**, and then select and drag the *Test a subflow of a desktop flow* action into your test case on the designer pane.
+1. Select the desktop flow that contains the subflow.
+1. Select the subflow you want to test (only local subflows are supported).
+1. If the subflow requires input values, enter them in the action's parameters.
+1. When the subflow runs, you can validate any output variables it produces.
+
+:::image type="content" source="media/test-desktop-flows/test-subflow-action.png" alt-text="Drag Test a subflow of a desktop flow action to main designer pane." lightbox="media/test-desktop-flows/test-subflow-action.png":::
+
+> [!NOTE]
+> Only local subflows are supported. Global subflows aren't supported.
+
 ### Assert
 
 The **Assert** action checks if a value matches what you expect. If the check fails, the test fails.
 
 To add an assertion:
 
-1. In the Actions pane, expand **Testing**, and then drag the **Assert** action into your test case on the designer pane.
+1. In the **Actions** pane, expand **Testing**, and then drag the **Assert** action into your test case on the designer pane.
 1. In **Assert expression**, enter a condition to validate. For example:
    - `%Sum = 25%` checks if Sum equals 25.
    - `%Total > 0%` checks if Total is greater than zero.
    - `%Status contains 'Success'%` checks if Status contains the word "Success."
-1. In **Assert message**, enter a message that explains what went wrong if the test fails, such as "Expected Sum to equal 25."
+1. In **Assert message**, enter a message that explains what went wrong if the test fails, such as *Expected Sum to equal 25*.
 
   > [!TIP]
   > Add multiple Assert actions to validate different outputs from your flow.
@@ -79,7 +95,7 @@ You can run a test case either from the Tests console or from the designer.
 
 ### Run a test case from the Tests console
 
-Take the following steps to run a test case from the Tests console:
+To run a test case from the Tests console, follow these steps:
 
 1. Select **Tests** in the left navigation.
 1. Select the test case you want to run.
@@ -87,7 +103,7 @@ Take the following steps to run a test case from the Tests console:
 
 ### Run a test case from the designer
 
-Take the following steps to run a test case from the designer:
+To run a test case from the designer, follow these steps:
 
 1. Open your test case.
 1. Select **Run** in the toolbar.
