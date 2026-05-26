@@ -5,9 +5,9 @@ author: QuentinSele
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 05/05/2026
+ms.date: 05/013/2026
 ms.author: nimoutzo
-ms.reviewer: dmartens
+ms.reviewer: ellenwehrle
 contributors: null
 search.audienceType:
   - flowmaker
@@ -38,7 +38,7 @@ This action shows the output variables of the selected flow.
 
 ## <a name="runtestsubflow"></a> Test a subflow of a desktop flow
 
-Tests a subflow of a desktop flow which can receive input variables and may produce output variables. The parent flow run will be paused until the called desktop flow completes.
+Tests a subflow of a desktop flow which can receive input variables and may produce output variables. The parent flow run pauses until the called desktop flow completes.
 
 ### Input parameters
 
@@ -52,11 +52,11 @@ Tests a subflow of a desktop flow which can receive input variables and may prod
 This action shows the output variables of the selected flow.
 
 > [!NOTE]
-> Only local subflows are supported. Global subflows aren’t supported.
+> Only local subflows are supported. Global subflows aren't supported.
 
 ## <a name="assertaction"></a> Assert
 
-Validates output against expected results using operators like equals, contains, or greater than.
+Validates output against expected results by using operators like equals, contains, or greater than.
 
 ### Input parameters
 
