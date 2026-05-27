@@ -42,7 +42,7 @@ To prepare the OCEL, follow the guidelines in [How to create an object‑centric
 1. On the **Map your data** screen, map your data columns to appropriate attributes.
 
     > [!IMPORTANT]
-    > The following item isn't currently supported: Fabric Lakehouses with Schema support enabled
+    > The following item isn't currently supported: Fabric Lakehouses with Schema support enabled.
 
    * One attribute of type **Activity** must be mapped
    * One attribute of type **Start event** must be mapped
