@@ -54,12 +54,15 @@ To prepare the OCEL, follow the guidelines in [How to create an object‑centric
 
 1. On the **Map your data** screen, map your data columns to appropriate attributes.
 
-   * One attribute of type **Activity** must be mapped.
-   * One attribute of type **Start event** must be mapped.
-   * **End event** attribute is optional.
-   * **Resource** attribute is optional.
-   * At least two attributes of type **Object type** must be mapped.
-   * Event and Object level attributes (including financial) are optional, but highly recommended for more detailed analysis.
+    > [!IMPORTANT]
+    > The following item isn't currently supported: Fabric Lakehouses with Schema support enabled.
+
+   * One attribute of type **Activity** must be mapped
+   * One attribute of type **Start event** must be mapped
+   * **End event** attribute is optional
+   * **Resource** attribute is optional
+   * At least two attributes of type **Object type** must be mapped
+   * Event and Object level attributes (including financial) are optional but highly recommended for more detailed analysis
      * **Event level attribute** is bound to the event itself, so even if the event is referencing several objects of different object types, the attribute is bound to the event in all of the referenced objects.
      * **Object level attribute** is bound to the object of a particular referenced object type. The value is taken from the last or first event referencing that object type. To define the object level attribute, first select the **Object Level Attribute (first or last event)**. Then, in the selection next to it, select the **Object type** to which the object level attribute is connected.
 
