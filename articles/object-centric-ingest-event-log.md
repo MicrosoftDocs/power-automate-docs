@@ -1,5 +1,5 @@
 ---
-title: Ingest object-centric event log (preview)
+title: Ingest an object-centric event log (preview)
 description: Learn how to ingest an object-centric event log.
 author: rosikm
 contributors:
@@ -16,7 +16,7 @@ search.audienceType:
 - enduser
 ---
 
-# Ingest Object-centric event log (preview)
+# Ingest an object-centric event log (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
