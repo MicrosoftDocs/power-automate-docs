@@ -80,7 +80,7 @@ Use filter conditions to set conditions for when to trigger flows.
 
 ### Filter columns
 
-Use the **Select columns** box to define the specific columns of the row that should cause the flow to run when included in the request, as a comma-separated list of unique column names. Only include columns with changed values in update requests. The flow runs when the values included are the same as existing values.
+Use the **Select columns** box to define the specific columns of the row that should cause the flow to run when included in the request, as a comma-separated list of unique column names. Only include columns with changed values in update requests. Note: the flow runs even when the values included are the same as existing values.
 
 This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
 
@@ -88,6 +88,9 @@ This property isn't supported on virtual tables.
 
 > [!IMPORTANT]
 > Lookup columns (columns that store references to other table rows) aren't supported in the **Select columns** filter. If you specify a lookup column, changes to that column don't trigger the flow. Use only scalar column types such as text, number, date/time, and choice columns.
+
+> [!IMPORTANT]
+> The flow triggers when any column in the **Select columns** is included as part of the update, regardless if data changed in that column. Do not include columns that always exist on update (like the primary key of the entity) as this can cause all updates to trigger the flow
 
 ### Filter expression
 
