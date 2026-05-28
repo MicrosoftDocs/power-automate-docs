@@ -35,12 +35,12 @@ To prepare the OCEL, follow the guidelines in [How to create an object‑centric
 
    :::image type="content" source="media/object-centric-ingest-event-log/object-centric-create-process.png" alt-text="Screenshot of the 'Create a new process' step.":::
 
+    > [!IMPORTANT]
+    > The following item isn't currently supported: Fabric Lakehouses with Schema support enabled.
+
 1. In the **Choose where to export** step, select **Continue** to set up the export of OCPM semantic model in your Fabric workspace, or **Skip export**.
 
    :::image type="content" source="media/object-centric-ingest-event-log/export-fabric-workspace.png" alt-text="Screenshot of optional 'Export to Fabric workspace' step.":::
-
-    > [!IMPORTANT]
-    > The following item isn't currently supported: Fabric Lakehouses with Schema support enabled.
 
 1. To setup the Fabric workspace:
 
