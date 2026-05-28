@@ -33,10 +33,10 @@ To prepare the OCEL, follow the guidelines in [How to create an object‑centric
 1. In the **Process name** field, enter a name for your process.
 1. Under the **Data source** heading, **Azure Data Lake** or **OneLake** and select **Continue**.
 
-   :::image type="content" source="media/object-centric-ingest-event-log/object-centric-create-process.png" alt-text="Screenshot of the 'Create a new process' step.":::
-
     > [!IMPORTANT]
     > The following item isn't currently supported: Fabric Lakehouses with Schema support enabled.
+
+   :::image type="content" source="media/object-centric-ingest-event-log/object-centric-create-process.png" alt-text="Screenshot of the 'Create a new process' step.":::
 
 1. In the **Choose where to export** step, select **Continue** to set up the export of OCPM semantic model in your Fabric workspace, or **Skip export**.
 
