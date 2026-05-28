@@ -4,7 +4,7 @@ description: Learn how Power Automate notifies you when a cloud flow fails, whic
 author: matow
 ms.author: matow
 ms.reviewer: angieandrews
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/03/2026
 ms.subservice: cloud-flow
 ---
