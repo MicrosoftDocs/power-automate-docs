@@ -4,14 +4,15 @@ description: Learn how to trigger flows by using the When a row is added, modifi
 suite: flow
 author: radioblazer
 contributors:
+  - legunter
   - ishanpakuwal
   - HeatherOrt
   - radioblazer
   - v-aangie
-ms.author: ishanpakuwal
+ms.author: legunter
 ms.reviewer: angieandrews
 ms.topic: how-to
-ms.date: 04/14/2026
+ms.date: 05/29/2026
 ms.update-cycle: 180-days
 ms.collection: bap-ai-copilot
 search.app: 
@@ -80,14 +81,18 @@ Use filter conditions to set conditions for when to trigger flows.
 
 ### Filter columns
 
-Use the **Select columns** box to define the specific columns of the row that should cause the flow to run when included in the request, as a comma-separated list of unique column names. Only include columns with changed values in update requests. The flow runs when the values included are the same as existing values.
+Use the **Select columns** box to define the specific columns of the row that should cause the flow to run when included in the request, as a comma-separated list of unique column names. Only include columns with changed values in update requests. 
+
+> [!NOTE]
+> The flow runs even when the values included are the same as existing values.
 
 This property applies to the **Update** condition only. **Create** and **Delete** apply to all columns of a row.
 
 This property isn't supported on virtual tables.
 
 > [!IMPORTANT]
-> Lookup columns (columns that store references to other table rows) aren't supported in the **Select columns** filter. If you specify a lookup column, changes to that column don't trigger the flow. Use only scalar column types such as text, number, date/time, and choice columns.
+> - Lookup columns (columns that store references to other table rows) aren't supported in the **Select columns** filter. If you specify a lookup column, changes to that column don't trigger the flow. Use only scalar column types such as text, number, date/time, and choice columns.
+> - The flow triggers when any column in the **Select columns** is included as part of the update, regardless if data changed in that column. Don't include columns that always exist on update, like the primary key of the entity. This can cause all updates to trigger the flow.
 
 ### Filter expression
 
@@ -139,7 +144,7 @@ Here’s what each scope means:
 
 ## Advanced options
 
-You can set additional properties to define more precisely when the flow runs and the user profile it uses.
+You can set other properties to define more precisely when the flow runs and the user profile it uses.
 
 # [New designer](#tab/new-designer)
 
