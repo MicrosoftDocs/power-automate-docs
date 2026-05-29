@@ -8,6 +8,7 @@ ms.author: michalrosik
 ms.topic: article
 ms.service: power-automate
 ms.subservice: process-advisor
+ai-usage: ai-assisted
 search.audienceType:
 - enduser
 ---

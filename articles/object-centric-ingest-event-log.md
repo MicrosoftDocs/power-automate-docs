@@ -12,6 +12,7 @@ ms.date: 05/29/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
+ai-usage: ai-assisted
 search.audienceType:
 - enduser
 ---
