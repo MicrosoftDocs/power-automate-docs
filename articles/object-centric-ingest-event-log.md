@@ -1,5 +1,5 @@
 ---
-title: Ingest object-centric event log (preview)
+title: Ingest an object-centric event log (preview)
 description: Learn how to ingest an object-centric event log.
 author: rosikm
 contributors:
@@ -8,15 +8,16 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 05/27/2026
+ms.date: 05/29/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
+ai-usage: ai-assisted
 search.audienceType:
 - enduser
 ---
 
-# Ingest Object-centric event log (preview)
+# Ingest an object-centric event log (preview)
 
 [!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
 
@@ -33,16 +34,29 @@ To prepare the OCEL, follow the guidelines in [How to create an object‑centric
 1. In the **Process name** field, enter a name for your process.
 1. Under the **Data source** heading, **Azure Data Lake** or **OneLake** and select **Continue**.
 
-   :::image type="content" source="media/object-centric-ingest-event-log/object-centric-create-process.png" alt-text="Screenshot of the 'Create a new process' step.":::
-
-1. The subsequent steps on the **Connection setup** screen, differ for Azure Data Lake or OneLake. Follow the respective documentation until you reach the attribute mapping screen:
-
-   - Azure Data Lake - [Bring your own Azure Data Lake Storage Gen2](/power-automate/process-mining-byo-azure-data-lake)
-   - OneLake -  [Ingest data from Fabric OneLake](/power-automate/process-mining-files-fabric-onelake)
-1. On the **Map your data** screen, map your data columns to appropriate attributes.
-
     > [!IMPORTANT]
     > The following item isn't currently supported: Fabric Lakehouses with Schema support enabled.
+
+   :::image type="content" source="media/object-centric-ingest-event-log/object-centric-create-process.png" alt-text="Screenshot of the 'Create a new process' step.":::
+
+1. In the **Choose where to export** step, select **Continue** to set up the export of OCPM semantic model in your Fabric workspace, or **Skip export**.
+
+   :::image type="content" source="media/object-centric-ingest-event-log/export-fabric-workspace.png" alt-text="Screenshot of optional 'Export to Fabric workspace' step.":::
+
+1. To setup the Fabric workspace:
+
+    1. Select from the list of available Fabric workspaces.
+    1. Select a Fabric Lakehouse in the workspace.
+    1. Select a name for the default report that will be created for the resulting semantic model.
+
+    Learn more in [Export OCPM semantic model into Fabric workspace (preview)](object-centric-semantic-model.md).
+
+1. The subsequent steps on the **Connection setup** screen differ for Azure Data Lake or OneLake. Follow the respective documentation until you reach the attribute mapping screen:
+
+   - Azure Data Lake: [Bring your own Azure Data Lake Storage Gen2](/power-automate/process-mining-byo-azure-data-lake)
+   - OneLake: [Ingest data from Fabric OneLake](/power-automate/process-mining-files-fabric-onelake)
+
+1. On the **Map your data** screen, map your data columns to appropriate attributes.
 
    * One attribute of type **Activity** must be mapped
    * One attribute of type **Start event** must be mapped
@@ -57,10 +71,11 @@ To prepare the OCEL, follow the guidelines in [How to create an object‑centric
 
 1. Select **Save and Analyze**.
 
-    After the ingestion is finished, you should be navigated to the process intelligence experience for OCPM with **Process overview** tab active.
+    After the ingestion is finished, you're navigated to the process intelligence experience for OCPM with the **Process overview** tab active.
 
    :::image type="content" source="media/object-centric-ingest-event-log/object-centric-process-overview.png" alt-text="Screenshot of the 'Process overview' tab in process intelligence experience for OCPM.":::
 
 ## Related information
 
-[OCPM process overview (preview)](object-centric-process-overview.md)
+- [OCPM process overview (preview)](object-centric-process-overview.md)
+- [Export OCPM semantic model into Fabric workspace (preview)](object-centric-semantic-model.md)
