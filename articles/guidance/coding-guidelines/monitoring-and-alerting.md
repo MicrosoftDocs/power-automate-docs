@@ -70,9 +70,11 @@ Power Automate offers built-in analytics that provide insights into flow executi
 
 The analytics dashboard is available on your flow's details page. In the menu at the top of the page, select **Analytics**.
 
+#### Known limitations
 
-> [!NOTE]
-> This feature is not available in government and sovereign clouds at the moment.
+- This feature is not available in government and sovereign clouds at the moment.
+
+- Data refresh cycle: Reports refresh approximately every 24 hours; real-time data isn't available.
 
 ### View analytics at the environment level
 
