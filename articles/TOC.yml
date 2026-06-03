@@ -997,6 +997,12 @@
               href: process-mining-byo-azure-data-lake-private.md
         - name: Ingest data from Fabric OneLake
           href: process-mining-files-fabric-onelake.md
+        - name: Ingest data using normalized schema (preview)
+          items:
+            - name: Create a Process from Normalized Schema
+              href: process-mining-normalized-import-ux-guide.md
+            - name: Normalized Schema JSON Authoring Guide
+              href: process-mining-normalized-import-authoring-guide.md
         - name: Edit and refresh processes
           href: process-mining-data-source.md
         - name: Set up millisecond support when ingesting data with dataflows
