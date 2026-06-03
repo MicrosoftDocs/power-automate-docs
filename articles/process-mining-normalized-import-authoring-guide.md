@@ -26,11 +26,11 @@ This guide walks you through writing the JSON file that drives that ingestion. I
 
 1. [When to use normalized import](#1-when-to-use-normalized-import)
 1. [How the JSON is organized](#2-how-the-json-is-organized)
-1. [Your first config — minimal CSV example](#3-your-first-config-minimal-csv-example)
+1. [Your first config — minimal CSV example](#3-your-first-config--minimal-csv-example)
 1. [Adding a case table](#4-adding-a-case-table)
 1. [Adding lookup (dimension) tables](#5-adding-lookup-dimension-tables)
 1. [Adding finance metrics and custom attributes](#6-adding-finance-metrics-and-custom-attributes)
-1. [Switching the data source — OneLake/Fabric and Delta tables](#7-switching-the-data-source-onelakefabric-and-delta-tables)
+1. [Switching the data source — OneLake/Fabric and Delta tables](#7-switching-the-data-source--onelakefabric-and-delta-tables)
 1. [Field reference](#8-field-reference)
 1. [Enum reference](#9-enum-reference)
 1. [Validation checklist](#10-validation-checklist)
@@ -44,7 +44,7 @@ Use **normalized import** when your source data already lives as multiple relate
 
 Use the **standard (denormalized) import** (the in-product UI) when you have a single wide CSV export where every event row already carries its case attributes and dimension values.
 
-|              | Standard                                           | Normalized                                                 |
+| Option       | Standard                                           | Normalized                                                 |
 |--------------|----------------------------------------------------|------------------------------------------------------------|
 | Authoring    | In-product UI                                      | JSON config                                                |
 | Layout       | One flat table                                     | Event + (optional) Case + N lookup tables, joined by FK/PK |
@@ -96,7 +96,7 @@ The next sections build up an example using all three.
 
 Let's start with the simplest possible normalized config: a single Event table, no joins, stored as CSV in ADLS Gen2. (This intentionally looks a lot like a standard import — once it works, we'll add normalization piece by piece.)
 
-The way you build up the JSON is the **same for Fabric / OneLake sources** — only the `dataSource` connection block and the dataset `Path` values differ. See [Switching the data source — OneLake/Fabric and Delta tables](#7-switching-the-data-source-onelakefabric-and-delta-tables) for those differences.
+The way you build up the JSON is the **same for Fabric / OneLake sources** — only the `dataSource` connection block and the dataset `Path` values differ. See [Switching the data source — OneLake/Fabric and Delta tables](#7-switching-the-data-source--onelakefabric-and-delta-tables) for those differences.
 
 ### The data
 
