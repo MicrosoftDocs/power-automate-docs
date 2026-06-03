@@ -56,6 +56,9 @@ The resulting Process Mining model is identical regardless of which import path 
 
 ---
 
+> [!WARNING]
+> The JSON examples in the following chapters use comments for explanation purposes, please be sure to remove them before using the JSON artifact as comments are not supported.
+
 ## 2. How the JSON is organized
 
 Every normalized config has two cooperating halves wrapped in a single `inputDataBinding`:
@@ -129,7 +132,7 @@ CaseID,Activity,StartTimestamp,EndTimestamp
         {
           "Kind": 0,                    // 0 = Event
           "Name": "Events",
-          "Path": "events",             // folder under the container root
+          "Path": "events/events.csv",             // folder under the container root or a specific file
           "Columns": [
             { "Name": "CaseID" },
             { "Name": "Activity" },
@@ -159,7 +162,9 @@ CaseID,Activity,StartTimestamp,EndTimestamp
 - **`dataSourceSchemaType: 1`** tells the service to use the normalized parser. This is always `1` here.
 - **`dataSourceType: 1`** + **`azureDataLakeConnectionSetupProperties`** point to a customer-owned ADLS Gen2 container. (We'll switch to OneLake in §7.)
 - **`dataSourceFileType: 0`** says these are CSV files.
-- The `datasets` array has one entry of `Kind: 0` (Event) at the folder `events/`. Process Mining reads every CSV in that folder (alphabetical order, all files must share the same header).
+- The `datasets` array has one entry of `Kind: 0` (Event) defined using `Path`:
+    - this can be a folder `events`. In this case Power Automate Process Mining reads every CSV in that folder (alphabetical order, all files must share the same header).
+    - this can be a specific file `events/events.csv`
 - `Columns[]` lists every physical column we want to surface to the mining model.
 - `Join: null` — the property is required, but here there are no joins yet.
 - Each `Attributes[]` entry maps one physical column name to a logical role:
@@ -216,7 +221,7 @@ Add a second dataset of `Kind: 1` (Case), and add a join from the Event dataset 
   {
     "Kind": 0,
     "Name": "Events",
-    "Path": "events",
+    "Path": "events/events.csv",
     "Columns": [
       { "Name": "Activity" },
       { "Name": "StartTimestamp" },
@@ -234,7 +239,7 @@ Add a second dataset of `Kind: 1` (Case), and add a join from the Event dataset 
   {
     "Kind": 1,                              // Case dataset
     "Name": "Cases",
-    "Path": "cases",
+    "Path": "cases/cases.csv",
     "Columns": [
       { "Name": "CaseID" },
       { "Name": "CustomerSegment" }
@@ -302,7 +307,7 @@ Each lookup table becomes a dataset of `Kind: 2` (Join). The Event dataset gets 
   {
     "Kind": 0,
     "Name": "Events",
-    "Path": "events",
+    "Path": "events/events.csv",
     "Columns": [
       { "Name": "StartTimestamp" },
       { "Name": "EndTimestamp" }
@@ -332,7 +337,7 @@ Each lookup table becomes a dataset of `Kind: 2` (Join). The Event dataset gets 
   {
     "Kind": 1,
     "Name": "Cases",
-    "Path": "cases",
+    "Path": "cases/cases.csv",
     "Columns": [
       { "Name": "CaseID" },
       { "Name": "CustomerSegment" }
@@ -342,14 +347,14 @@ Each lookup table becomes a dataset of `Kind: 2` (Join). The Event dataset gets 
   {
     "Kind": 2,                              // Lookup
     "Name": "Activity",
-    "Path": "activity",
+    "Path": "activity/activity.csv",
     "Columns": [ { "Name": "Activity" } ],
     "Join": null
   },
   {
     "Kind": 2,
     "Name": "Resource",
-    "Path": "resource",
+    "Path": "resource/resource.csv",
     "Columns": [ { "Name": "Resource" } ],
     "Join": null
   }
