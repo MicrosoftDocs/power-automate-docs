@@ -999,9 +999,9 @@
           href: process-mining-files-fabric-onelake.md
         - name: Ingest data using normalized schema (preview)
           items:
-            - name: Create a Process from Normalized Schema
+            - name: Create a process from normalized schema
               href: process-mining-normalized-import-ux-guide.md
-            - name: Normalized Schema JSON Authoring Guide
+            - name: Normalized schema JSON Authoring
               href: process-mining-normalized-import-authoring-guide.md
         - name: Edit and refresh processes
           href: process-mining-data-source.md
