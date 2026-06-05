@@ -59,7 +59,7 @@ Perform the steps in this section in the **New Process** window.
 
 The service parses the JSON and runs the normalized-schema validator end-to-end before continuing. This takes a few seconds.
 
-If the JSON fails to load, fix the JSON locally, browse the corrected file again, and select **Continue**. The full validation checklist is in the [authoring guide](process-mining-normalized-import-authoring-guide.md#10-validation-checklist).
+If the JSON fails to load, fix the JSON locally, browse the corrected file again, and select **Continue**. The full validation checklist is in [Normalized schema JSON authoring](process-mining-normalized-import-authoring-guide.md#validation-checklist).
 
 ## Step 3: Review and adjust the attribute mapping
 

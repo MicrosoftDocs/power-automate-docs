@@ -1001,7 +1001,7 @@
           items:
             - name: Create a process from normalized schema
               href: process-mining-normalized-import-ux-guide.md
-            - name: Normalized schema JSON Authoring
+            - name: Normalized schema JSON authoring
               href: process-mining-normalized-import-authoring-guide.md
         - name: Edit and refresh processes
           href: process-mining-data-source.md

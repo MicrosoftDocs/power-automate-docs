@@ -15,6 +15,8 @@ ms.topic: concept-article
 
 Power Automate Process Mining can ingest event data that is *not* stored as a single wide table. Instead of asking you to flatten everything in your lakehouse into one CSV, you can point Process Mining directly at a *star schema*&mdash;a thin event table plus optional case and lookup tables, linked by foreign keys.
 
+[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
+
 This article walks you through writing the JSON file that drives that ingestion. It starts with the simplest working example and grows from there.
 
 > [!NOTE]
@@ -81,7 +83,7 @@ The next sections build up an example using all three.
 
 Let's start with the simplest possible normalized configuration: a single Event table, no joins, stored as CSV in ADLS Gen2. This intentionally looks like a standard import. Once it works, we'll add normalization piece by piece.
 
-The way you build up the JSON is the **same for Fabric / OneLake sources**&mdash;only the `dataSource` connection block and the dataset `Path` values differ. Learn the differences in [Switch the data source&mdash;OneLake/Fabric and Delta tables](switch-the-data-source--onelakefabric-and-delta-tables).
+The way you build up the JSON is the **same for Fabric / OneLake sources**&mdash;only the `dataSource` connection block and the dataset `Path` values differ. Learn the differences in [Switch the data source: OneLake/Fabric and Delta tables](#switch-the-data-source-onelakefabric-and-delta-tables).
 
 ### The data: minimal CSV example
 
@@ -466,7 +468,7 @@ Point each dataset's `Path` at the **table root** (the folder that contains `_de
 "dataSourceFileType": 1,                    // 1 = Parquet (loose .parquet files only)
 ```
 
-Use this *only* when the dataset folder contains plain `.parquet` files. *Never* use `1` for a Delta table. More information: [Common pitfalls](#11-common-pitfalls)
+Use this *only* when the dataset folder contains plain `.parquet` files. *Never* use `1` for a Delta table. More information: [Common pitfalls](#common-pitfalls)
 
 ### Worked OneLake + Delta example
 
