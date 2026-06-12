@@ -1,5 +1,5 @@
 ---
-title: Visualization cards overview in the process intelligence experience (preview)
+title: Visualization cards overview in the process intelligence experience
 description: Learn about the different types of visualization cards available in the process intelligence experience including KPI cards, charts, process maps, and statistical grids.
 author: rosikm
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/18/2026
+ms.date: 06/12/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,13 +16,9 @@ search.audienceType:
 - enduser
 ---
 
-# Visualization cards overview in the process intelligence experience (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Visualization cards overview in the process intelligence experience
 
 Cards, also called tiles, are visualization components that display process analytics data on your dashboard. Each card type is designed to present specific types of insights, from key performance indicators to complex process flows. You can add multiple cards to a dashboard and arrange them to create a comprehensive view of your process performance.
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Card types
 

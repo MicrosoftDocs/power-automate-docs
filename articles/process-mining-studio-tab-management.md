@@ -1,5 +1,5 @@
 ---
-title: Manage tabs in the process intelligence experience (preview)
+title: Manage tabs in the process intelligence experience
 description: Learn how to create, organize, and manage tabs in the process intelligence experience to create multiple specialized analytical views within a single process.
 author: rosikm
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/18/2026
+ms.date: 06/12/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,13 +16,9 @@ search.audienceType:
 - enduser
 ---
 
-# Manage tabs in the process intelligence experience (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Manage tabs in the process intelligence experience
 
 Tabs are the organizational backbone of the process intelligence experience. They allow you to create multiple specialized views within a single process. Each tab maintains its own collection of cards, visualizations, and layout configuration, making it easy to switch between different analytical perspectives without losing your work.
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Tab bar features
 

@@ -1,5 +1,5 @@
 ---
-title: Filtering overview in the process intelligence experience (preview)
+title: Filtering overview in the process intelligence experience
 description: Learn how to use persistent and temporary filters in the process intelligence experience to narrow down and focus on specific process data during analysis.
 author: rosikm
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/03/2026
+ms.date: 06/12/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,13 +16,9 @@ search.audienceType:
 - enduser
 ---
 
-# Filtering overview (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Filtering overview
 
 Filters allow you to narrow down and focus on specific data within your process analysis. By applying filters, you can view only the cases, events, and process paths that match your selected criteria.
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Types of filters
 

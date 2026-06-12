@@ -1,5 +1,5 @@
 ---
-title: Process intelligence experience overview (preview)
+title: Process intelligence experience overview
 description: Learn about the process intelligence experience, the next-generation interface for process analysis in Power Automate Process Mining with customizable dashboards and interactive visualizations.
 author: rosikm
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/18/2026
+ms.date: 06/12/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,13 +16,9 @@ search.audienceType:
 - enduser
 ---
 
-# Process intelligence experience overview (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Process intelligence experience overview
 
 The new *process intelligence experience* is the next-generation interface for process analysis in Power Automate Process Mining. It delivers a comprehensive, customizable dashboard for exploring process intelligence insights. The new experience enhances the previous process overview.
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 As shown in the following screenshot, the process intelligence experience provides a comprehensive analytical workspace with multiple components working together.
 

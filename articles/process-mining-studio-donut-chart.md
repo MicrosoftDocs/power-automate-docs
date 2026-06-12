@@ -1,5 +1,5 @@
 ---
-title: Use donut charts in the process intelligence experience (preview)
+title: Use donut charts in the process intelligence experience
 description: Learn how to configure and use donut charts in Process intelligence studio to visualize proportional process data in a circular format with segmented categories.
 author: rosikm
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/18/2026
+ms.date: 06/12/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,13 +16,9 @@ search.audienceType:
 - enduser
 ---
 
-# Use donut charts in the process intelligence experience (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Use donut charts in the process intelligence experience
 
 Donut charts in the process intelligence experience allow you to visualize proportional process data in a circular format with segmented categories.
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 :::image type="content" source="media/process-mining-studio-donut-chart/donut-chart-customization.png" alt-text="Screenshot of the donut chart customization panel.":::
 

@@ -1,5 +1,5 @@
 ---
-title: Customize layouts in the process intelligence experience (preview)
+title: Customize layouts in the process intelligence experience
 description: Learn how to arrange, resize, and organize visualization cards in the process intelligence experience to create customized dashboard layouts for your analytical workflows.
 author: rosikm
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/18/2026
+ms.date: 06/12/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,13 +16,9 @@ search.audienceType:
 - enduser
 ---
 
-# Customize layouts in the process intelligence experience (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Customize layouts in the process intelligence experience
 
 Dynamic layout mode is the feature that enables you to customize how cards are arranged, sized, and organized within each tab of the process intelligence experience. In edit layout mode, you have complete control over your dashboard's visual structure, allowing you to create layouts optimized for specific analytical workflows.
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Enter edit layout mode
 
