@@ -1,5 +1,5 @@
 ---
-title: Use horizontal bar charts in the process intelligence experience (preview    )
+title: Use horizontal bar charts in the process intelligence experience
 description: Learn how to configure and use horizontal bar charts in the process intelligence experience to compare process metrics across different categories with horizontal orientation.
 author: rosikm
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/18/2026
+ms.date: 06/12/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,17 +16,14 @@ search.audienceType:
 - enduser
 ---
 
-# Use horizontal bar charts in the process intelligence experience (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Use horizontal bar charts in the process intelligence experience
 
 Configure and use horizontal bar charts in the process intelligence experience to compare process metrics across different categories with horizontal orientation.
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 :::image type="content" source="media/process-mining-studio-horizontal-bar-chart/horizontal-bar-chart-customization.png" alt-text="Screenshot of the horizontal bar chart customization panel.":::
 
 ## Label
+
 Enter a label for the chart.
 
 ## Data

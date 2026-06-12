@@ -1,5 +1,5 @@
 ---
-title: Filter by attribute values in the process intelligence experience (preview)
+title: Filter by attribute values in the process intelligence experience
 description: Learn how to use the attribute filter in the process intelligence experience to filter process data by selecting specific values from case or event attributes.
 author: rosikm
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/18/2026
+ms.date: 06/12/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,13 +16,9 @@ search.audienceType:
 - enduser
 ---
 
-# Filter by attribute values in the process intelligence experience (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Filter by attribute values in the process intelligence experience
 
 The attribute filter in the process intelligence experience allows you to filter data by selecting specific values from an attribute.
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 :::image type="content" source="media/process-mining-studio-attribute-filter/attribute-filter-settings.png" alt-text="Screenshot of the attribute filter settings panel.":::
 
@@ -63,4 +59,3 @@ Once you make your selections, select one of the following options:
     Changes take effect only when you select **Apply**.
 
 - **Cancel**: Closes the dialog without applying any changes to your variant filter.
-

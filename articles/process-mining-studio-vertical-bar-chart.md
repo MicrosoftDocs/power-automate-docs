@@ -1,5 +1,5 @@
 ---
-title: Use vertical bar charts in the process intelligence experience (preview)
+title: Use vertical bar charts in the process intelligence experience
 description: Learn how to configure and use vertical bar charts in the process intelligence experience to compare process metrics across categories with optional overlapping line charts.
 author: rosikm
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 02/18/2026
+ms.date: 06/12/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,13 +16,9 @@ search.audienceType:
 - enduser
 ---
 
-# Use vertical bar charts in the process intelligence experience (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Use vertical bar charts in the process intelligence experience
 
 Configure and use vertical bar charts in the process intelligence experience to compare process metrics across categories with optional overlapping line charts.
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 :::image type="content" source="media/process-mining-studio-vertical-bar-chart/vertical-bar-chart-customization.png" alt-text="Screenshot of the vertical bar chart customization panel.":::
 

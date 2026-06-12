@@ -1,5 +1,5 @@
 ---
-title: Export OCPM Semantic Model to Fabric Workspace (preview)
+title: Export OCPM semantic model into Fabric workspace (preview)
 description: Learn how to export object-centric process mining (OCPM) data into a Fabric workspace and build powerful Power BI reports on DirectLake semantic model.
 #customer intent: As a business analyst, I want to understand the predefined relationships in the OCPM semantic model, so that I can use them correctly when building visuals.
 ms.date: 05/29/2026
