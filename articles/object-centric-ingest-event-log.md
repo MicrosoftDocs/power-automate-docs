@@ -1,5 +1,5 @@
 ---
-title: Ingest an object-centric event log (preview)
+title: Ingest an object-centric event log
 description: Learn how to ingest an object-centric event log.
 author: rosikm
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 05/29/2026
+ms.date: 06/12/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -17,15 +17,11 @@ search.audienceType:
 - enduser
 ---
 
-# Ingest an object-centric event log (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Ingest an object-centric event log
 
 To access OCPM (object-centric process mining) in Power Automate Process Mining, it's first necessary to create a process model by ingesting the object-centric event log (OCEL).
 
 To prepare the OCEL, follow the guidelines in [How to create an object‑centric event log (OCEL)](object-centric-create-event-log.md). Then, store the resulting file in a CSV format in either Azure Data Lake Gen2 or OneLake.
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Ingest the data
 

@@ -1,5 +1,5 @@
 ---
-title: OCPM process overview (preview)
+title: OCPM process overview
 description: Learn how to analyze process in object-centric process mining.
 author: rosikm
 contributors:
@@ -8,7 +8,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 11/03/2025
+ms.date: 06/12/2026
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.custom: bap-template
@@ -16,15 +16,11 @@ search.audienceType:
 - enduser
 ---
 
-# OCPM process overview (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# OCPM process overview
 
 This article describes the key elements of the **Process Overview** page generated after ingesting an object-centric event log (OCEL). The page provides a high-level visualization and analysis of the end-to-end process based on objects such as purchase orders, requisitions, quotations, goods receipts, invoices, payments, and materials.
 
 :::image type="content" source="media/object-centric-ingest-event-log/object-centric-process-overview.png" alt-text="Screenshot of the 'Process overview' tab.":::
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Page header
 
@@ -151,3 +147,4 @@ To confirm the configuration, select **Apply**.
 - Indicates delays between dependent process steps.
 - Uses object type color coding and is ordered by average duration descending.
 - Helps pinpoint inefficiencies and potential improvement opportunities.
+

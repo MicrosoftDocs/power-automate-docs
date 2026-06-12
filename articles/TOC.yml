@@ -1051,7 +1051,7 @@
               href: process-mining-studio-statistical-grid.md
         - name: Process overview
           href: ./minit/process-overview.md
-    - name: Object-centric process mining (preview)
+    - name: Object-centric process mining
       items:
         - name: Overview
           href: object-centric-overview.md
@@ -1063,7 +1063,7 @@
           href: object-centric-process-overview.md
         - name: Use filters in OCPM analysis
           href: object-centric-filters.md
-        - name: Export OCPM semantic model to Fabric
+        - name: Export OCPM semantic model into Fabric workspace (preview)
           href: object-centric-semantic-model.md
     - name: Process Mining model context protocol (preview)
       items:
