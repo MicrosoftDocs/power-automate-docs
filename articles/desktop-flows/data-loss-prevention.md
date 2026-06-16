@@ -84,7 +84,7 @@ This feature lets you specify which applications and screens a desktop flow can 
 For more information about UI automation endpoint filtering, see [Connector endpoint filtering](/power-platform/admin/connector-endpoint-filtering#desktopflow---UI-automation).
 
 ### HTTP filtering
-This feature improves control and security by specifying which endpoints a desktop flow can access when using HTTP actions during execution. Each HTTP request is validated against predefined endpoint criteria before the flow proceeds. Endpoints are defined using a URL format, and wildcards are supported for dynamic matching. Validation occurs at runtime when an HTTP action is executed. This feature helps maintain compliance with organizational policies and reduces the risk of sending requests to unauthorized or harmful endpoints. Learn more about endpoint filtering in [Connector endpoint filtering](/power-platform/admin/connector-endpoint-filtering#desktopflow---HTTP).
+This feature improves control and security by specifying which endpoints a desktop flow can access when using HTTP actions during execution. Each HTTP request is validated against predefined endpoint and URL criteria before the flow proceeds. Endpoints are defined using a URL format, and wildcards are supported for dynamic matching. This feature helps maintain compliance with organizational policies and reduces the risk of sending requests to unauthorized or harmful endpoints. Learn more about endpoint filtering in [Connector endpoint filtering](/power-platform/admin/connector-endpoint-filtering#desktopflow---HTTP).
 
 ### Related information
 
