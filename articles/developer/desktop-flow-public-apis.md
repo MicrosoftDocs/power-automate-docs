@@ -37,6 +37,19 @@ Accept: application/json
 GET https://[Organization URI]/api/data/v9.2/workflows?$filter=category+eq+6&$select=name,workflowid&$orderby=name HTTP/1.1  
 ```
 
+> [!NOTE]
+> By default, this request returns only published desktop flows. To include unpublished (Draft) desktop flows in the response, add the `MSCRM.IncludeUnpublished` request header with the value `true`.
+
+### Request to get desktop flows including unpublished (Draft) flows
+
+```http
+Authorization: Bearer eyJ0eXAiOi...
+Accept: application/json
+MSCRM.IncludeUnpublished: true
+
+GET https://[Organization URI]/api/data/v9.2/workflows?$filter=category+eq+6&$select=name,workflowid&$orderby=name HTTP/1.1  
+```
+
 ### Response to the request to get desktop flows
 
 ```json
