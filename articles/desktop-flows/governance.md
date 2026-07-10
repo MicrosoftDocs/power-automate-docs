@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: NikosMoutzourakis
 ms.topic: article
-ms.date: 05/20/2026
+ms.date: 07/03/2026
 ms.update-cycle: 180-days
 ms.author: nimoutzo
 ms.reviewer: ellenwehrle
@@ -436,6 +436,28 @@ You can use the following registry entry to turn on the verbose logging state fo
 ***Value***
 
 - **1**: The verbose logging state is turned on for Power Automate for desktop.
+
+## Preserve custom UIFlowService accounts in Machine Runtime app across MSI upgrades
+
+> [!NOTE]
+> This registry entry applies to Power Automate desktop version 2.69 and later.
+
+You can use the following registry entry to preserve custom UIFlowService accounts in the Troubleshoot tab of the Power Automate machine runtime app across MSI upgrades.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| `HKEY_LOCAL_MACHINE` | `SOFTWARE\Microsoft\Power Automate Desktop\Global` | `PreserveCustomServiceAccount` | DWORD or String |
+
+***Value***
+
+- **1**: Your custom UIFlowService account will be preserved across MSI upgrades.
+
+> [!NOTE]
+> The first upgrade from an older version will NOT preserve the custom account - MSI versions older than 2.69 delete the account info during the upgrade. You must reconfigure the registry value after the first upgrade to v2.69.
+> 
+> Subsequent upgrades (new to newer) WILL preserve the custom account, as long as the value is set to 1.
+> 
+> If the key is removed or the value is set to 0 after being 1, the next upgrade will reset to the default account NT SERVICE\UIFlowService.
 
 ## Allow users to register their machine to a different tenant in Power Automate machine-runtime app
 

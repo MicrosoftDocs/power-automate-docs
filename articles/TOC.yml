@@ -439,6 +439,8 @@
       href: ./desktop-flows/repair-at-runtime.md
     - name: Self-healing (preview)
       href: ./desktop-flows/self-healing.md
+    - name: AI-assisted UI automation repair (preview)
+      href: ./desktop-flows/ai-assisted-ui-automation-repair.md
     - name: Run desktop flows
       items:
         - name: Run unattended and attended desktop flows from the cloud
@@ -869,6 +871,8 @@
           href: ./desktop-flows/actions-reference/sharepoint.md
         - name: Office 365 Outlook
           href: ./desktop-flows/actions-reference/office365outlook.md
+        - name: Triggers
+          href: ./desktop-flows/actions-reference/triggers.md
         - name: Work queues
           href: ./desktop-flows/actions-reference/workqueues.md
         - name: Custom actions
@@ -878,13 +882,13 @@
         - name: SAP automation
           href: ./desktop-flows/actions-reference/sap.md
         - name: Testing
-          href: desktop-flows/actions-reference/testing.md
+          href: ./desktop-flows/actions-reference/testing.md
+        - name: Power Automate environment
+          href: ./desktop-flows/actions-reference/powerautomateenvironment.md
         - name: Power Automate secret variables
           href: ./desktop-flows/actions-reference/powerautomatesecretvariables.md
         - name: Power Platform
           href: ./desktop-flows/actions-reference/power-platform.md
-        - name: Power Automate environment
-          href: ./desktop-flows/actions-reference/powerautomateenvironment.md
     - name: Troubleshoot desktop flows runtime
       href: ./desktop-flows/troubleshoot.md
     - name: Process migrator for Softomotive products (preview)
