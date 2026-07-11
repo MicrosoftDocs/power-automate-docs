@@ -1,7 +1,7 @@
 ---
 title: Self-healing (preview)
 description: AI‑powered self‑healing when UI or web actions fail at runtime, allowing flows to continue instead of stopping on errors 
-ms.date: 03/25/2026
+ms.date: 06/30/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: yiannismavridis
@@ -60,8 +60,8 @@ If the repair succeeds, the flow continues. If it fails, normal error handling r
 Currently, Self-healing:
 
 - Is available only for specific UI and browser automation actions that interact with a single UI element (for example, clicking a button or selecting a checkbox).
-- Applies only to *Element not found* errors.
-- Doesn't apply to window handling, screen handling, or actions that interact with multiple elements.
+- Applies only to *Element not found* and *Window not found* errors. *Element not found* errors are captured in both primary and secondary screens, while *Window not found* errors are only captured when the window is found in the main screen.
+- Doesn't apply to window/screen handling actions, or actions that interact with multiple elements like 'Drag and drop UI element in window'.
 
 ## How to turn on the feature
 
@@ -82,7 +82,7 @@ Self-healing relies on generative AI models and requires all of the following se
   > [!NOTE]
   > The **Move data across regions** checkbox isn't displayed or needed for US cloud regions.
 
-- In Power Platform admin center, go to [Manage > Environments](https://admin.powerplatform.microsoft.com/manage/environments). Select your environment so that you can see its details. Select **Settings**, expand the **Product** section, and select **Features**. Under Copilot, enable the **Copilot features** toggle.
+- In Power Platform admin center, go to [Copilot > Settings](https://admin.powerplatform.microsoft.com/copilot/settings). Under the Power Automate section, select **Copilot in Power Automate**, then enable the **On** check box in the displayed pane.
 
 ### Required configuration in Power Automate for desktop
 
@@ -106,4 +106,6 @@ Self-healing relies on generative AI models and requires all of the following se
 
 ## Known limitations
 
-- The Power Automate portal doesn't currently surface additional self-healing details in the action logs of the flow runs where self-healing was invoked. As a workaround, you can use this [registry setting](/power-automate/desktop-flows/governance#configure-power-automate-for-desktop-to-prevent-cleanup-of-flow-run-action-details) when needed, to easily retrieve action logs, including the self-healing activity, through local log files on the machine that hosted the flow run. In the action logs, a new property called `repairWithAIInfo` displays if a repair attempt was made, whether it was successful or failed, and the AI-generated selector that was used at runtime.
+- The Power Automate portal doesn't currently surface self-healing details in the action-level logs of the flow runs where self-healing was invoked. In the desktop flow run page, you can find a summary of the self-healing activity that corresponds to that specific run, including details from up to three successful self-healing attempts.
+
+  Alternatively, you can use this [registry setting](/power-automate/desktop-flows/governance#configure-power-automate-for-desktop-to-prevent-cleanup-of-flow-run-action-details) when needed, to easily retrieve action logs, including the self-healing activity, through local log files on the machine that hosted the flow run. In the action logs, a new property called `repairWithAIInfo` displays if a repair attempt was made, whether it was successful or failed, and the AI-generated selector that was used at runtime.
