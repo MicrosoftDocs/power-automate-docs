@@ -843,6 +843,8 @@
           href: ./desktop-flows/actions-reference/ocr.md
         - name: Cryptography
           href: ./desktop-flows/actions-reference/cryptography.md
+        - name: PGP Cryptography
+          href: ./desktop-flows/actions-reference/pgp.md
         - name: Windows services
           href: ./desktop-flows/actions-reference/services.md
         - name: XML
