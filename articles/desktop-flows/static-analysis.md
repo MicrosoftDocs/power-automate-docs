@@ -5,9 +5,9 @@ author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 08/06/2025
+ms.date: 07/16/2026
 ms.author: nimoutzo
-ms.reviewer: danamartens
+ms.reviewer: ellenwehrle
 contributors:
 - NikosMoutzourakis
 search.audienceType: 
@@ -21,11 +21,18 @@ Improve your development workflow with the static analysis feature in [solution 
 
 ## Rule management
 
-Rules are defined and managed through solution checker in the Power Platform admin center. Admins can:
+Define and manage rules through Solution checker in the Power Platform admin center and Flow checker configuration in the Power Automate portal.
+
+Administrators and users with the appropriate permissions can:
 
 - Enable or disable rules.
 - Configure severity levels (error, warning, info).
-- Apply rules to specific environments or environment groups ([Managed Environments](/power-platform/admin/managed-environment-overview) only).
+- Configure custom values for rules that support parameters, such as thresholds and limits (Power Automate portal only).
+- Apply rules to specific environments or environment groups ([Managed Environments](/power-platform/admin/managed-environment-overview), Power Platform admin center only). 
+
+Flow checker configuration applies at the environment level and affects all desktop flows within the selected environment.
+
+Solution checker enforcement settings that you configure in the Power Platform admin center take precedence over Flow checker configuration settings in the Power Automate portal. You can't modify rules that are restricted through Solution checker enforcement in the Power Automate portal.
 
 ### Configuration in the admin center
 
@@ -36,10 +43,31 @@ To configure static analysis rules:
 1. Select **Edit managed environments**.
 1. In the **Solution checker enforcement** section, configure which rules should be excluded for the selected environment.
 
+### Configuration in the Power Automate portal
+
+To configure Flow checker rules for an environment:
+
+1. Go to the **Desktop flows** page in the Power Automate portal.
+1. Select **Flow checker**.
+1. In the **Flow checker configuration** pane, configure the desired rules. For each rule, you can:
+   
+    - Enable or disable the rule.
+    - Select a severity level.
+    - Specify a custom value for rules that support parameters.
+1. Select **Save**.
+
+:::image type="content" source="media\static-analysis\flow-checker-config-portal.png" alt-text="Screenshot of the configuration for Static analysis rules in the Power Automate portal.":::
+
+Configuration changes are applied at the environment level and affect all desktop flows in the selected environment. For desktop flows that are already open in the designer, reopen the flow for configuration changes to take effect.
+
 > [!NOTE]
->
+> - Solution checker enforcement settings in the Power Platform admin center take precedence over Flow checker configuration settings in the Power Automate portal.
 > - If the environment is part of an environment group with a defined configuration, the rule settings are inherited and can't be edited individually. Learn more about solution checker in [Solution checker](/power-apps/maker/data-platform/use-powerapps-checker) and [Solution checker enforcement in Managed Environments](/power-platform/admin/managed-environment-solution-checker).
-> - Power Platform administrators should assign the following privilege to any roles that require access to the feature: `prvReadmsdyn_analysisoverride` (friendly name is 'Analysis Override (Read)').
+> - Only rules that support parameterization display configurable values. Depending on the rule, the configured value can represent either a minimum or maximum threshold used during analysis.
+> - Power Platform administrators should assign the appropriate Analysis Override privileges to any roles that require access to the feature:
+>   - prvReadmsdyn_analysisoverride (Analysis Override - Read) to view the current configuration.
+>   - prvWritemsdyn_analysisoverride (Analysis Override - Write) to modify rule settings, including severity levels, parameter values, and rule enablement.
+>   - prvCreatemsdyn_analysisoverride (Analysis Override - Create) to create new rule overrides.
 
 ## Run static analysis in the portal
 
@@ -73,7 +101,7 @@ This score is recalculated every time a change is made to the flow, providing im
 
 If rules are violated, the static analysis report shows a clear summary. It lists rule names and the number of actions or variables in your flow that violate each rule. Selecting a rule highlights the corresponding action and provides a detailed error explanation. For variable-related violations, the system navigates to the variable pane, making corrections easy. The Flow checker pane includes search functionality and lets you filter by subflow, so you can quickly find specific issues.
 
-Each violation displays a tile with details, including the error's nature, recommended fixes, and a link to documentation. Use the slider in the rule’s header to navigate between occurrences of the same violation. This guidance helps developers address issues quickly and effectively. Flow checker error violations show an inline indicator and a popup with more details. Warnings also appear inline in the designer workspace, like errors. The designer shows diagnostic statuses such as warnings and errors on subflow tabs, and includes a button that lets you go to the component that needs attention.
+Each violation displays a tile with details, including the error's nature, recommended fixes, and a link to documentation. Use the slider in the rule's header to navigate between occurrences of the same violation. This guidance helps developers address issues quickly and effectively. Flow checker error violations show an inline indicator and a popup with more details. Warnings also appear inline in the designer workspace, like errors. The designer shows diagnostic statuses such as warnings and errors on subflow tabs, and includes a button that lets you go to the component that needs attention.
 
 :::image type="content" source="media\static-analysis\static-analysis-pad-details.png" alt-text="Screenshot showing the details of a static analysis rule.":::
 
@@ -200,7 +228,7 @@ Static analysis rules are predefined guidelines that help ensure your flows are 
 
 - **Severity**: Warning
 - **Type**: Maintainability
-- **Error details**: A subflow has been detected that either contains no actions, only disabled actions, or includes too few actions to justify its separation. Such subflows may not contribute meaningfully to the flow’s execution and can reduce clarity.
+- **Error details**: The rule detected a subflow that either contains no actions, only disabled actions, or includes too few actions to justify its separation. Such subflows might not contribute meaningfully to the flow's execution and can reduce clarity.
 - **Description**: This rule checks for subflows that are either empty or overly minimal – typically containing fewer than 5 actions. While subflows are useful for modularity and reuse, those that lack meaningful content or abstraction may indicate incomplete development, unnecessary fragmentation, or misconfiguration. These patterns can lead to confusion and hinder maintainability.
 - **Suggested fix**: Review the identified subflow to determine whether it serves a clear and valuable purpose. If it does not, consider removing it or merging it into a related logic block. If the subflow is intended for future use, add a placeholder action to clarify its role and prevent misinterpretation.
 
