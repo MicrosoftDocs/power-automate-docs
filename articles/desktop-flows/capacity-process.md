@@ -4,7 +4,7 @@ description: Learn how to allocate process capacity in Power Automate to machine
 author: cvassallo
 ms.service: power-automate
 ms.subservice: desktop-flow
-ms.date: 03/24/2026
+ms.date: 07/17/2026
 ms.author: matow
 ms.reviewer: angieandrews
 contributors:
@@ -84,7 +84,7 @@ Multiple Process licenses can be allocated to a single cloud flow to increase it
 
 Up to 10 Process licenses can be stacked on a single cloud flow.
 
-Currently, each Process license must be directly assigned to the flow that uses it. Flow groups (sharing a single pool of Process capacity across multiple related flows) and automatic capacity inheritance from parent flows are planned but not yet available.
+Currently, you must directly assign each Process license to the flow that uses it, or to a [flow group](../create-flow-group.md) that the flow belongs to. When you use a flow group, one Process license is shared across up to 25 flows. You must explicitly add child flows to the group - they don't automatically inherit capacity from the parent. For details, see [Share Process license capacity with flow groups](../flow-groups.md).
 
 **Estimate your daily usage**: (actions per run) × (runs per day) = daily actions. If this exceeds 250,000, stack additional Process licenses to match your expected daily volume.
 

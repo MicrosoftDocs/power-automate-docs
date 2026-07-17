@@ -8,7 +8,7 @@ contributors:
 ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: how-to
-ms.date: 08/04/2025
+ms.date: 07/17/2026
 ms.custom:
   - sfi-image-nochange
 ---
@@ -59,7 +59,7 @@ To have a service principal own and run a flow, follow these steps.
 
 ## Licensing requirements
 
-A service principal application user is a [non-interactive user](/power-platform/admin/create-users#create-a-non-interactive-user-account), so it can't have a user license associated with it. Premium service principal application user-owned flows need a Power Automate Process/Power Automate per-flow license. However, if a flow doesn't utilize premium connectors, or is used exclusively [within the context](/power-platform/admin/power-automate-licensing/faqs#what-power-automate-capabilities-are-included-in-dynamics-365-licenses) of a Dynamics 365 application, it's exempted from the need for a Power Automate process or Power Automate per-flow license.
+A service principal application user is a [non-interactive user](/power-platform/admin/create-users#create-a-non-interactive-user-account), so it can't have a user license associated with it. Premium service principal application user-owned flows need a Power Automate Process or Power Automate per-flow license (or membership in a [flow group](/power-automate/flow-groups) that has a Process license assigned). However, if a flow doesn't utilize premium connectors, or is used exclusively [within the context](/power-platform/admin/power-automate-licensing/faqs#what-power-automate-capabilities-are-included-in-dynamics-365-licenses) of a Dynamics 365 application, it's exempted from the need for a Power Automate process or Power Automate per-flow license.
 
 ## Power Platform request limits
 
