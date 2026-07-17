@@ -4,6 +4,7 @@ description: Learn about the components in the cloud flows designer.
 suite: flow
 author: kisubedi
 contributors:
+ - JoeFernandezMS
  - radioblazer
  - QuentinSele
  - AndreasTouly
@@ -13,9 +14,9 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 01/16/2026
+ms.date: 07/16/2026
 ms.update-cycle: 180-days
-ms.author: matow
+ms.author: jofernan
 search.audienceType: 
   - flowmaker
   - enduser
@@ -54,11 +55,11 @@ Legend:
 
 ## Save a solution-aware flow draft and then publish it
 
-When you work with [solution-aware flows](overview-solution-flows.md), there are two more buttons added to the toolbar: **Save draft** and **Publish**.
+When you work with [solution-aware flows](overview-solution-flows.md), the toolbar includes two extra buttons: **Save draft** and **Publish**.
 
 :::image type="content" source="media/flows-designer/solutions-toolbar.png" alt-text="Screenshot of the solution-aware cloud flows toolbar with the 'Save draft' and 'Publish' buttons.":::
 
-When you [create a solution-aware flow](create-flow-solution.md), you can save it as a draft, even with errors. This allows you to continue working on it without publishing it immediately. To do this, select [Save draft](drafts-versioning.md#save-drafts) at any time.
+When you [create a solution-aware flow](create-flow-solution.md), you can save it as a draft, even if it has errors. This option lets you continue working on the flow without publishing it right away. Select [Save draft](drafts-versioning.md#save-drafts) at any time.
 
 When your draft is ready for production, select [Publish](drafts-versioning.md#publish-a-cloud-flow) to make it available for use.
 
@@ -66,7 +67,7 @@ Learn more about drafts and publishing in [Drafts and versioning for solution-aw
 
 ## Undo and Redo
 
-To reverse or reinstate modifications you made to the flow, you can use the **Undo** and **Redo** command bar buttons. For example, if you added or configured an action, or made significant adjustments to the flow, these features allow you to conveniently revert to a previous state or redo changes you previously canceled.
+To reverse or reinstate modifications you made to the flow, use the **Undo** and **Redo** command bar buttons. For example, if you added or configured an action, or made significant adjustments to the flow, these features help you revert to a previous state or redo changes you previously canceled.
 
 :::image type="content" source="media/flows-designer/undo-redo.png" alt-text="Screenshot of the 'Undo' and 'Redo' buttons in the command bar.":::
 
@@ -108,7 +109,7 @@ Testing is part of the planning for a Power Automate project. Learn more in [Int
 
 ## More commands
 
-*(New designer only)* Select the **More commands** (**&vellip;**) button to add a note to the selected card in your flow, pin an action, or to delete the card.
+*(New designer only)* Select the **More commands** (**&vellip;**) button to add a note to the selected card in your flow, pin an action, or delete the card.
 
 Select **Add a note** to describe the purpose of the card in your flow. After you add a note, a note symbol appears in the lower right of the card. To view the note, hover over this symbol.
 
@@ -126,15 +127,15 @@ This view by default is organized into four (4) sections:
 
 - **Favorites**: When you favorite a connector or an action using the star icon, these connectors show in the **Favorites** section for quick retrieval. The star icon appears when you hover over it in the **Add an action** pane.
 - **AI Capabilities**: All AI capabilities are uplevelled in this standalone section.
-- **Built-in tools**: These are the building blocks to your flow if you want to store values in a variable, insert a loop, and more.
-- **By connector**: Below the three sections is a list of all connectors. At the top of the list are the top used 20 connectors.
+- **Built-in tools**: These tools are the building blocks for your flow if you want to store values in a variable, insert a loop, and more.
+- **By connector**: Below the three sections is a list of all connectors. At the top of the list are the top 20 most used connectors.
 
 After you select an action from the **Add an action** pane, it's time to configure it. The same pane view refreshes to let you customize the action. This pane is referred to as the *configuration pane*.
 Use the configuration pane to customize parameters, settings, and code for the selected card in your flow.
 
 ### Parameters
 
-On the **Parameters** tab, you can use the blue lightning bolt and ***fx*** buttons next to the **Inputs** field to quickly enter values for the selected action card.
+On the **Parameters** tab, use the blue lightning bolt and ***fx*** buttons next to the **Inputs** field to quickly enter values for the selected action card.
 
 :::image type="content" source="media/flows-designer/skittles.png" alt-text="Screenshot of the Insert dynamic content and Insert expression buttons on the Parameters tab in the configuration pane.":::
 
@@ -142,13 +143,13 @@ To insert a dynamic value into the **Inputs** field, select the **Inputs** field
 
 To insert an expression into the **Inputs** field, select the **Inputs** field and then select the ***fx*** button. In the pop-up screen, select a function to start your expression. To complete your expression, place the cursor in the function, and then select **Dynamic content**. Search for or select the dynamic content to add, and then select **Add**. Your expression appears in the **Inputs** field.
 
-To learn more about expressions, go to [Reference guide to workflow expression functions](/azure/logic-apps/workflow-definition-language-functions-reference).
+Learn more about expressions in [Reference guide to workflow expression functions](/azure/logic-apps/workflow-definition-language-functions-reference).
 
 Alternatively, enter a slash (**/**) in the **Inputs** field, and then select **Insert dynamic content** or **Insert expression**.
 
 ### Settings
 
-On the **Settings** tab, you can set the action timeout, network retry policy, how an action should run, security input and output, and tracking properties. The following table provides a description of the settings.
+On the **Settings** tab, set the action timeout, network retry policy, how an action should run, security input and output, and tracking properties. The following table provides a description of the settings.
 
 | Setting | Description |
 |---------|-------------|
@@ -190,7 +191,7 @@ If you don't have access to a mouse, you can use your keyboard. To copy, press *
 
 ## Canvas
 
-For easy navigation, you can drag your flow on the canvas. You configure the actions of each card in the configuration pane on the left. The cards on the canvas are compact to allow for easy visibility and navigation, especially in large flows.
+For easy navigation, drag your flow on the canvas. Depending on the selected layout, you can configure action properties inline on expanded cards or in the configuration pane on the left. The panel layout keeps cards compact for easier visibility and navigation, especially in large flows.
 
 ### Drop zones
 
@@ -211,6 +212,7 @@ Legend:
 1. **Fit view**: Resize the view to fit the entire flow on the canvas.
 1. **Minimap**: Navigate to a specific section of a large flow.
 1. **Search**: Look for an operation in your flow.
+1. **Layout**: Switch between inline and panel layouts. The inline layout displays an action's properties in an expanded card on the canvas. The panel layout displays the properties in the configuration pane on the left and keeps the action cards compact.
 
 ### Expression and dynamic content editor
 
@@ -219,9 +221,9 @@ The expression editor in the designer is multi-line, which allows you to easily 
 :::image type="content" source="media/flows-designer/token-picker.png" alt-text="Screenshot of the gripper and the 'Dynamic content' and 'Function' tabs.":::
 
 > [!TIP]
-> You can use a forward slash ( / ) keyboard shortcut to invoke the dynamic content/expression editor popup when you're on an action field.
+> Use the forward slash ( / ) keyboard shortcut to open the dynamic content and expression editor popup when you're on an action field.
 
-If you have access to Copilot, you can learn to use it to create expressions in [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md).
+If you have access to Copilot, you can learn how to use it to create expressions in [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md).
 
 ### Disable an action or enable static results on an action
 
@@ -235,43 +237,43 @@ When static outputs are disabled, the toggle label is **Enable Static Result**. 
 
 ### View two action panes simultaneously
 
-One the new designer, you can pin an action pane so that you can open a second action pane next to it. This can be useful to compare two similar actions, or copy values across two actions.
+On the new designer, you can pin an action pane so that you can open a second action pane next to it. This feature is useful when you want to compare two similar actions, or copy values across two actions.
 
-To pin an action, you can either right-click the action on the [canvas](#canvas) and select **Pin action**. Alternatively, in the configuration pane, you can select **Pin action** in the **More commands** dropdown menu.
+To pin an action, right-click the action on the [canvas](#canvas) and select **Pin action**. Alternatively, in the configuration pane, select **Pin action** in the **More commands** dropdown menu.
 
 :::image type="content" source="media/flows-designer/pin-option.png" alt-text="Screenshot of the 'Pin action' menu option.":::
 
-Once you pin an action, any other selected action panes are placed to the right of the pinned action pane.
+When you pin an action, any other selected action panes appear to the right of the pinned action pane.
 
 :::image type="content" source="media/flows-designer/pin-result.png" alt-text="Screenshot of a pinned action next to the open configuration pane.":::
 
-To unpin an action, you have two options:
+To unpin an action, use either of these options:
 
 - Right-click the action on the [canvas](#canvas) and select **Unpin action**.
 - Select the **Pin** icon on the configuration pane.
 
 ## Identify differences between the new designer and the classic designer
 
-The new cloud designer has smaller cards to facilitate easy navigation. To display the configuration data for a card, you need to select it to open a configuration pane on the left. To compare, the classic designer has larger cards, and each card contains the related configuration data. To display the configuration data, you need to select the title of a card to expand it.
+The new cloud designer uses smaller cards to make navigation easier. To display the configuration data for a card, select the card to open a configuration pane on the left. For comparison, the classic designer uses larger cards, and each card contains the related configuration data. To display the configuration data, select the title of a card to expand it.
 
 
 |New designer  |Classic designer  |
 |---------|---------|
 |:::image type="content" source="media/flows-designer/designer-differences-new.png" alt-text="Screenshot of a cloud flow and the configuration pane in the new designer.":::    | :::image type="content" source="media/flows-designer/designer-differences-classic.png" alt-text="Screenshot of an expanded action card in a cloud flow in the classic designer.":::        |
 
-In either the configuration pane or the expanded card, you can edit the configuration data.
+You can edit the configuration data in either the configuration pane or the expanded card.
 
 ## Designer resiliency and save flow with errors
 
 The new designer automatically saves a copy of the flow to browser storage upon failed save, even with errors. This capability comes in handy on two occasions: 1) When the underlying service is going through an outage and when you need to avoid losing your unsaved changes by exiting out of your flow, or 2) For non-solution flows, which lack the 'Save draft' functionality, you can exit out of your flow with errors and come back at a later time to fix the errors and save the flow.
 
-When you have unsaved changes on the flow, the **Save** button is disabled. If you try to exit out of the flow, a prompt appears asking if you want to save your changes. If you select **Yes**, the designer saves a copy of the flow to browser storage.
+When you have unsaved changes on the flow, the **Save** button is disabled. If you try to exit the flow, a prompt appears asking if you want to save your changes. If you select **Yes**, the designer saves a copy of the flow to browser storage.
 
-A banner appears on the designer notifying you when designer can save the flow copy to browser's storage. You can now exit out of your flow.
+A banner appears on the designer notifying you when the designer can save the flow copy to the browser's storage. You can now exit your flow.
 
 :::image type="content" source="media/flows-designer/designer-info-banner.png" alt-text="Screenshot of the info banner above the flow.":::
 
-Upon revisiting the flow on the designer, the previously saved version loads on the designer by default. The unsaved copy is recoverable through the **Recover flow** command bar button.
+When you revisit the flow in the designer, the previously saved version loads by default. You can recover the unsaved copy through the **Recover flow** command bar button.
 
 :::image type="content" source="media/flows-designer/designer-recover.png" alt-text="Screenshot of the Recover flow button in flow designer.":::
 
@@ -288,20 +290,20 @@ You can now fix errors on this copy of the flow and save it. If you don't save t
 
 ## Limitations and known issues in the new designer
 
-The new Power Automate designer is the recommended way to author cloud flows, with major improvements including [versioning](drafts-versioning.md) and Copilot assistance. However, some flows can't yet be opened in the new designer.
+The new Power Automate designer is the recommended way to author cloud flows. It includes major improvements such as [versioning](drafts-versioning.md) and Copilot assistance. However, you can't yet open some flows in the new designer.
 
 - Flows with the following triggers:
   - **When a flow is run from business process flow** in the Microsoft Dataverse connector
   - [Microsoft 365 Compliance connector triggers](/connectors/microsoft365compliance/#triggers).
   - [When Power Pages calls a flow](/power-pages/configure/cloud-flow-integration)
   - Power Apps v1 trigger. Use PowerAppsV2 instead.
-- Comments. For new flows, we recommend that you use Action _notes_ until comments are supported in the new designer.
+- Comments. For new flows, use Action _notes_ until the new designer supports comments.
 - **Perform a changeset request** action group in the Microsoft Dataverse connector
 - A solution flow using connections instead of connection reference isn't supported. Export the flow in an unmanaged solution and re-import it to update it to use connection references.
 - Flows using the older non-Open API format for connection.
-  - To check if a flow is non-OpenAPI, select **Peek code** on an action in the flow and check if there's a parameter named "method". These flows currently need to be re-created in a new flow if you wish to edit them in the new designer, or can continue to be edited in the classic designer.
+  - To check if a flow is non-OpenAPI, select **Peek code** on an action in the flow and check if there's a parameter named `method`. To edit these flows in the new designer, you need to re-create them in a new flow. You can continue to edit them in the classic designer.
   
-The classic designer will continue to be supported alongside the new designer while these compatibilities and other improvements are addressed.
+The classic designer continues to be supported alongside the new designer while these compatibilities and other improvements are addressed.
 
 You can switch to the classic designer at any time by turning off the **New designer** toggle at the top right of the designer.
 
@@ -318,13 +320,13 @@ Power Automate designer doesn't support browsers that are more than two (2) year
 
 ### Why do I get this error "The provided flow name contains invalid characters" when importing a flow in a new tenant?
 
-This error is a temporary gap, which you can work around by adding a query parameter `v3=false` in your URL.
+This error is a temporary gap. To work around it, add the query parameter `v3=false` in your URL.
 
 ### Why don't I see new or updated SharePoint or Excel column values in my flow?
 
-Power Automate designer requires a flow action to be re-added in order to pick up new entities of the underlying action. For example, if you have a SharePoint *Get item* action in your flow and Sharepoint item has four (4) columns, the flow allows you to access all four column values of the SharePoint item. Now, if you navigate to SharePoint, add a fifth column, and come back to the flow, you can't access the fifth column unless you delete the *Get item* action and re-add it again to force the designer to pick up the latest changes. The same behavior applies in Excel columns, Dataverse, OneDrive folder/files, and others.
+Power Automate designer requires you to re-add a flow action to pick up new entities of the underlying action. For example, if you have a SharePoint *Get item* action in your flow and SharePoint item has four columns, the flow allows you to access all four column values of the SharePoint item. Now, if you go to SharePoint, add a fifth column, and come back to the flow, you can't access the fifth column unless you delete the *Get item* action and re-add it. This process forces the designer to pick up the latest changes. The same behavior applies in Excel columns, Dataverse, OneDrive folder and files, and other services.
 
-### Will the new cloud flows designer eventually replace the classic designer fully?
+### Will the new cloud flows designer eventually replace the classic designer?
 
 Yes, once the issues noted here are resolved and the new cloud flows designer can cover most, if not all, of the classic designer scenarios. At this time, the classic designer will be fully replaced.
 

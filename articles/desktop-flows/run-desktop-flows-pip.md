@@ -36,8 +36,6 @@ Power Automate for desktop supports two PiP modes:
 
 - The user must be signed in to use Power Automate.
 
-- The user needs a Power Automate Premium plan or access to a pay-as-you-go environment.
-
 - The user running flows in picture-in-picture should be part of the following Windows policies:
   - `Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment\Allow Log On Locally`
   - `Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment\Access this computer from the network`
