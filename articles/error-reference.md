@@ -457,7 +457,7 @@ Related information: [WorkflowRunActionRepetitionQuotaExceeded](#workflowrunacti
 1. Identify which connector requires premium. The error message usually names it.
 1. Assign a Power Automate Premium license to the user who triggers or runs the flow.
 1. For scheduled or automated flows, ensure the flow owner has a premium license.
-1. Consider whether a Process license (per-flow) is more cost-effective for high-volume shared flows.
+1. Consider whether a Process license (per-flow) is more cost-effective for high-volume shared flows. You can also [share a single Process license across up to 25 flows with a flow group](/power-automate/flow-groups).
 
 Related information: [Forbidden (403)](#forbidden-403), [FlowRunQuotaExceeded](#flowrunquotaexceeded)
 
