@@ -8,12 +8,14 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 08/12/2025
+ms.date: 07/24/2026
 ms.author: matow
 ms.reviewer: angieandrews
 ---
 
 # Create flows from your phone
+
+[!INCLUDE [mobile-deprecation](../includes/mobile-deprecation.md)]
 
 There are many repetitive tasks that we all wish we could run with just a tap of a button. For example, you might need to quickly email your team to remind them to join the daily team sync. Or, you might want to start a new Visual Studio Codespaces build of your code base after you're notified that there are no more checkins planned for the day. Flows allow you to accomplish these and many other tasks simply by tapping a button on your mobile device.
 

@@ -51,7 +51,7 @@ To create a new Seller account, follow these steps:
 
 1. If you have an existing developer account in Partner Center, use those same credentials to access Partner Center.
 
-    If you don't have an account, then follow the steps in [Create a Microsoft AI Cloud Partner Program account in Partner Center](/partner-center/mpn-create-a-partner-center-account).
+    If you don't have an account, follow the steps in [Create a Microsoft AI Cloud Partner Program account in Partner Center](/partner-center/enroll/partner-center-enroll-overview).
 
 1. Ensure you have the valid email address configured in your Entra ID account. To configure the email ID, follow the steps in [Manage user profile info](/entra/fundamentals/how-to-manage-user-profile-info).
 

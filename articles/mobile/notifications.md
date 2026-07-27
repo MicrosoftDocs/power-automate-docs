@@ -14,12 +14,14 @@ tags: ''
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 06/05/2023
-ms.author: jamiller
+ms.date: 07/24/2026
+ms.author: matow
 ms.reviewer: angieandrews
 ---
 
 # Receive notifications
+
+[!INCLUDE [mobile-deprecation](../includes/mobile-deprecation.md)]
 
 The Power Automate mobile app allows you to receive notifications on your mobile device. You'll get a notification whenever you run a flow that uses either the Microsoft [Notifications](/connectors/flowpush/) connector or the [Approvals](/connectors/approvals/) connector. You'll also get a notification when a flow encounters a run error.
 
@@ -35,7 +37,7 @@ A timestamp indicates how long ago the notification arrived. For instance, **5 m
 
 :::image type="content" source="../media/mobile/notifications.png" alt-text="Screenshot of notifications in the Power Automate mobile app.":::
 
-The **Notifications** screen shows notifications from the current environment only. To view notifications from a different environment, [select the environment](overview-mobile.md#change-environments).
+The **Notifications** screen shows notifications from the current environment only.
 
 ## Filter your notifications
 
