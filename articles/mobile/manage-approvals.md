@@ -12,13 +12,15 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 06/05/2023
-ms.author: jamiller
+ms.date: 07/24/2026
+ms.author: matow
 ms.reviewer: angieandrews
 ms.custom: sfi-image-nochange
 ---
 
 # Manage approvals
+
+[!INCLUDE [mobile-deprecation](../includes/mobile-deprecation.md)]
 
 Manage your approval requests on your mobile device when you're away from your desk.
 

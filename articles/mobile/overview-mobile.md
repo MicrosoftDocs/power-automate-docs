@@ -12,53 +12,34 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 06/05/2023
-ms.author: jamiller
+ms.date: 07/24/2026
+ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Power Automate mobile app overview
+# Power Automate mobile app (deprecated)
 
-This article provides an overview of the Microsoft Power Automate mobile app, including installation, changing environments, and limitations of the app.
+[!INCLUDE [mobile-deprecation](../includes/mobile-deprecation.md)]
 
-Experience the familiar look and feel of Power Automate on the go with the Power Automate mobile app, where you can:
+## Alternatives
 
-- [Create flows](mobile-create-flow.md)
-- [Manage cloud flows](manage-cloud-flows.md)
-- [Create widgets](widgets.md)
-- [Manage approvals](manage-approvals.md)
-- [Receive notifications](notifications.md)
+Existing cloud flows aren't affected. Automated, scheduled, and instant flows continue to run normally.
 
-&mdash;all from your mobile device.
+| What you use the app for | Where to go instead |
+|---|---|
+| Approvals (view, respond, track) | [Approvals app in Microsoft Teams](/power-automate/teams/native-approvals-in-teams) |
+| View and manage your flows | [Power Automate portal](https://make.powerautomate.com) (works in mobile browsers) |
+| Run instant/button flows | Power Automate portal, or run from a Power App in [Power Apps mobile](/power-apps/mobile/run-powerapps-on-mobile) |
+| Receive push notifications | Update the flow to notify via Teams or email |
+| Turn flows on/off, edit, or delete | [Power Automate portal](https://make.powerautomate.com) |
 
-## Install the Power Automate mobile app
+## Known limitations of alternatives
 
-If you haven't tried Power Automate yet, [sign up for free](../sign-up-sign-in.md). Then scan one of the QR codes below with your mobile device. As an alternative, you can use the **Google Play** link or the **App store** link to install the Power Automate mobile app.
-
-| Android | iOS  |
-| :---:   | :---:  |
-| :::image type="content" source="../media/mobile/google-play.png" alt-text="Screenshot of the Download the Power Automate mobile app for Android from Google Play button.":::  | :::image type="content" source="../media/mobile/app-store.png" alt-text="Screenshot of the Download the Power Automate mobile app for iOS from the Apple App store button."::: |
-| :::image type="content" source="../media/mobile/android-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for Android QR code.":::  | :::image type="content" source="../media/mobile/ios-mobile-qrcode.png" alt-text="Screenshot of the Power Automate mobile app for iOS QR code.":::    |
-
-> [!NOTE]
->
-> If you're installing the Power Automate mobile app, you'll need version 3.x.x or later to get the functionality that's described in the articles in this section.
-
-## Change environments
-
-You might have different environments to work in depending on the purpose of your work (for example, testing, projects, and customers). You can easily change your environment to access your flows, approvals, notifications, and more when you're working on your mobile device.
-
-1. Open the Power Automate mobile app and sign in with either Microsoft Entra ID or your Microsoft account.
-
-1. Select the environment icon, and then select the environment you want to access. A check mark appears next to the selected environment.
-
-    :::image type="content" source="../media/mobile/environment.png" alt-text="Screenshot of an environment selected with the environment icon highlighted.":::
-
-## Limitations
-
-Power Automate mobile app doesn't support geofencing (using location-based triggers).
+- **Home-screen widget**: The iOS and Android widget to run a flow from the home screen has no direct equivalent. Users can pin a Power App to their home screen as a partial workaround.
+- **Push notifications on flow failure**: These require the maker to add an explicit Teams or email notification action in the flow (using a "Run after" configuration on the preceding action set to "has failed").
+- **Flow editing on mobile**: The Power Automate designer isn't optimized for small screens. Complex editing is best done on a desktop or tablet.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

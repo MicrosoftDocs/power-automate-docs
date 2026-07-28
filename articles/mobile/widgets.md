@@ -14,12 +14,14 @@ tags: ''
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 06/05/2023
-ms.author: jamiller
+ms.date: 07/24/2026
+ms.author: matow
 ms.reviewer: angieandrews
 ---
 
 # Create widgets for flows
+
+[!INCLUDE [mobile-deprecation](../includes/mobile-deprecation.md)]
 
 For quick and easy access to your flows, create a widget. Widgets make running flows effortless. You can run a flow from the home screen of your mobile device, without having to open the Power Automate app.
 
