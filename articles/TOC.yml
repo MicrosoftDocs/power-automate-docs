@@ -94,6 +94,12 @@
       items:
         - name: Management overview
           href: overview-manage-cloud-flows.md
+        - name: Flow groups
+          items:
+            - name: Share Process license capacity with flow groups
+              href: flow-groups.md
+            - name: Create and manage a flow group
+              href: create-flow-group.md
         - name: Share a flow
           href: create-team-flows.md
         - name: Find a saved cloud flow
