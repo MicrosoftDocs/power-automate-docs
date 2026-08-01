@@ -5,7 +5,7 @@ author: kewaiss
 conttributors:
   - ChrisGarty
   - v-aangie
-ms.date: 08/27/2025
+ms.date: 07/31/2026
 ms.assetid: 6e6d3c34-b209-ea11-a811-000d3a4f1cdd
 ms.service: power-automate
 ms.subservice: cloud-flow
@@ -17,20 +17,23 @@ ms.custom: sfi-image-nochange
 ---
 # Create child flows
 
-Today, people are building flows that need dozens or hundreds of steps; however, if you try to put all of these actions into a *single* flow, it can be difficult to navigate and maintain that flow.
+Today, people build flows that need dozens or hundreds of steps. However, if you try to put all of these actions into a *single* flow, it can be difficult to navigate and maintain that flow.
 
-You can use child flows to easily manage flows, avoiding flows with hundreds of steps. This approach is especially beneficial if you want to reuse tasks in multiple places in a cloud flow, or even across multiple flows.
+Use child flows to easily manage flows and avoid flows with hundreds of steps. This approach is especially beneficial if you want to reuse tasks in multiple places in a cloud flow, or even across multiple flows.
 
 Here's an example where you have a child flow that you want to create or update a contact in Dataverse based on that contact's name.
 
 You need a solution with two flows.
 
-- **Child flow**: This is the flow that's nested inside the *parent* flow and contains the smaller tasks you want to run. You can have multiple child flows inside a parent flow.
+- **Child flow**: This flow is nested inside the *parent* flow and contains the smaller tasks you want to run. You can have multiple child flows inside a parent flow.
 - **Parent flow**: This flow can have any type of trigger and calls into the child flow.
+
+> [!IMPORTANT]
+> A child flow doesn't inherit Process license capacity from a parent flow's [flow group](flow-groups.md). To use the same shared capacity, explicitly add both the parent and child flow to the same flow group. Each flow counts separately toward the 25-flow limit.
 
 ## Create the child flow in a solution
 
-1. Sign into [Power Automate](https://make.powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the navigation pane, select **Solutions**, and then select an existing solution.
 
    Alternatively, you can create a solution if you don't want to use an existing solution.
@@ -39,7 +42,7 @@ You need a solution with two flows.
 
    The **Build an instant cloud flow** screen appears.
 
-1. Give your flow a name so that you can easily identify it later.
+1. Enter a name for your flow so that you can easily identify it later.
 1. Select the **Manually trigger a flow** trigger.
 1. Select **Create**.
 1. Select **Add an input**.
@@ -63,7 +66,7 @@ You need a solution with two flows.
 
 1. Lastly, if your flow uses anything other than built-in actions or the Microsoft Dataverse connector, you need to update the flow to use the connections **embedded** in the flow. To do this, go to the child flow's properties page, and then select **Edit** in the **Run only users** tile.
 
-1. In the pane that appears, for each connection used in the flow, you need to select **Use this connection (<_connection name>_)** instead of **Provided by run-only user**.
+1. In the pane that appears, for each connection used in the flow, select **Use this connection (<_connection name>_)** instead of **Provided by run-only user**.
 
 1. Select **Save**.
 
@@ -72,11 +75,11 @@ You need a solution with two flows.
 
 ## Create the parent flow in a solution
 
-1. Build the parent flow in the same solution in which you created the child flow.
+1. Build the parent flow in the same solution where you created the child flow.
 
    Alternatively, you can bring an existing flow into that solution. The parent flow can have any type of trigger.
 
-1. Find the place in your *parent flow* from which you want to call the child flow and then add the **Run a Child Flow** action, which is located under the **Flows** connector on the **Built-in** tab.
+1. Find the place in your *parent flow* from which you want to call the child flow. Then, add the **Run a Child Flow** action, which is located under the **Flows** connector on the **Built-in** tab.
 
 1. Pick the child flow that you created earlier.
 
@@ -85,7 +88,7 @@ You need a solution with two flows.
 
    ![Select the child flow to run.](./media/call-child-flow/select-child-flow.png "Select the child flow to run")
 
-1. After you select your child flow, you see the _inputs_ that you defined in the child flow. After the child flow action, you're able to use any of the _outputs_ from that child flow.
+1. After you select your child flow, you see the _inputs_ that you defined in the child flow. After the child flow action, you can use any of the _outputs_ from that child flow.
 
    ![Inputs.](./media/call-child-flow/view-child-flow-input.png "Inputs")
 

@@ -4,7 +4,7 @@ description: Create a flow group, assign a Process license, and add cloud flows 
 author: radioblazer
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 07/17/2026
+ms.date: 07/31/2026
 ms.author: matow
 ms.reviewer: angieandrews
 ai-usage: ai-assisted
@@ -59,6 +59,9 @@ You can also bring an existing group definition into the environment with **Impo
 
 The flow now draws on the group's shared capacity. To manage the group later, select **Manage flow group**.
 
+> [!IMPORTANT]
+> Adding a parent flow to a flow group doesn't add its child flows. Add each child flow to the same group separately if it should use the group's shared Process capacity. Each parent and child flow counts separately toward the 25-flow limit.
+
 ## Add or remove flows from the flow group page
 
 You can also manage group membership directly from the flow group page instead of navigating to each flow individually.
@@ -68,7 +71,7 @@ You can also manage group membership directly from the flow group page instead o
 1. Open the **Flow groups** page (**More** > **Flow groups** in the left navigation).
 1. Select the flow group you want to manage.
 1. Select **Add flow**.
-1. Search for or browse the available solution-aware cloud flows in the environment.
+1. Search for or browse the available solution-aware cloud flows in the environment, including any child flows that should use the group's capacity.
 1. Select one or more flows, and then confirm.
 
 ### Remove flows
@@ -99,7 +102,7 @@ Flow group membership and Process license assignments are **environment-specific
 After deploying flows to a target environment:
 
 1. Create (or verify) the flow group in the target environment.
-1. Add each deployed flow to the group&mdash;either from the flow group page (**Add flow**) or from each flow's details page (**Shared Process license (flow group)**).
+1. Add each deployed parent and child flow to the group&mdash;either from the flow group page (**Add flow**) or from each flow's details page (**Shared Process license (flow group)**).
 1. Assign the Process license to the group.
 1. Confirm each flow is turned on and licensed.
 
