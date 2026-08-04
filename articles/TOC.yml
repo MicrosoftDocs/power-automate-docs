@@ -439,7 +439,7 @@
       href: ./desktop-flows/test-desktop-flows.md
     - name: Get started with Copilot in Power Automate for desktop (preview)
       href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
-    - name: Create desktop flows using Record with Copilot (preview)
+    - name: Create desktop flows using Record with Copilot (deprecated)
       href: ./desktop-flows/create-flow-using-ai-recorder.md
     - name: Repair flow automation errors (preview)
       href: ./desktop-flows/repair-at-runtime.md
