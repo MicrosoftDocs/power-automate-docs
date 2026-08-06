@@ -7,7 +7,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
 ms.date: 11/25/2025
-ms.author: derahonuorah
+ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -16,7 +16,7 @@ search.audienceType:
 
 # Use Markdown language in Power Automate approval requests
 
-This article shows you how to use [Markdown](https://en.wikipedia.org/wiki/Markdown syntax to add rich formatting to your approval requests.
+This article shows you how to use [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax to add rich formatting to your approval requests.
 
 > [!IMPORTANT]
 >
@@ -26,7 +26,7 @@ This article shows you how to use [Markdown](https://en.wikipedia.org/wiki/Markd
 
 ## Client Support
 
-Markdown support among clients is inconsistent. The Power Automate team works to address these inconsistencies, however, inconsistencies remain. The following table lays out the known limitations among the supported clients.
+Markdown support among clients is inconsistent. The Power Automate team works to address these inconsistencies, but some inconsistencies remain. The following table lays out the known limitations among the supported clients.
 
 | Feature | Power Automate | Power Automate mobile app | Outlook | Outlook Web | Teams | Teams mobile app | Approvals Teams App |   
 |---------|--------|---------------|-----------------|-------------|-------|--------------|--------------|
@@ -48,7 +48,7 @@ Markdown support among clients is inconsistent. The Power Automate team works to
 
 Structure your comments using headers. Headers segment longer comments, making them easier to read.
 
-Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with additional hash characters, for example `####`. Up to six levels of headings are supported.
+Start a line with a hash character `#` to set a heading. Organize your remarks with subheadings by starting a line with additional hash characters, such as `####`. You can use up to six levels of headings.
 
 **Example:**  
 ```Markdown
@@ -64,17 +64,17 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 
 ## Paragraphs and line breaks
 
-Make your text easier to read by breaking it up with paragraphs or line breaks. Enter two spaces prior to the line break to force most clients to start a new line.  
+Make your text easier to read by breaking it up with paragraphs or line breaks. Enter two spaces before the line break to force most clients to start a new line.  
 
 **Example:**  
 ```Markdown
 This is line 1.(space)
-Now text will appear on the next line.
+Now text appears on the next line.
 ```
 
 **Result:**
 This is line 1.  
-Now text will appear on the next line.
+Now text appears on the next line.
 
 **Example 2**
 ```Markdown
@@ -106,7 +106,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 **Result:**  
 1. First item.
-2. Second item.
+1. Second item.
 3. Third item.
 
 ### Bullet lists
@@ -146,7 +146,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
     - Item 1
     - Item 2
     - Item 3
-2. Second item.
+1. Second item.
     - Nested item 1
     - Nested item 2
     - Nested item 3
@@ -156,7 +156,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 Use HTTPS links, which are rendered as links in all clients. Non-HTTPS links (for example, FTP, HTTP, and mail) can be rendered as regular text.
 
-You can set text hyperlinks for your URL using the standard markdown link syntax:
+Set text hyperlinks for your URL by using the standard markdown link syntax:
 
 ```Markdown
 [Link Text](Link URL)
@@ -174,11 +174,11 @@ You can set text hyperlinks for your URL using the standard markdown link syntax
 
 Organize structured data with tables. 
 
-- Place each table row on its own line 
-- Separate table cells using the pipe character `|` 
-- The first two lines of a table set the column headers and the alignment of elements in the table
-- Make sure to end each row with a CR or LF. 
-- Aligning text within a table element is currently not supported.
+- Place each table row on its own line. 
+- Separate table cells by using the pipe character `|`. 
+- The first two lines of a table set the column headers and the alignment of elements in the table.
+- Make sure to end each row with a carriage return (CR) or line feed (LF). 
+- Aligning text within a table element isn't currently supported.
 
 **Example:**  
 ```Markdown
@@ -201,9 +201,9 @@ Organize structured data with tables.
 
 You can emphasize text by applying bold, italics, or strikethrough to characters.
 
-- To apply italics: surround the text with an asterisk `*` or underscore `_`
-- To apply bold: surround the text with double asterisks `**`.    
-- To apply strikethrough: surround the text with double tilde characters `~~`.
+- To apply italics, surround the text with an asterisk `*` or underscore `_`.
+- To apply bold, surround the text with double asterisks `**`.    
+- To apply strikethrough, surround the text with double tilde characters `~~`.
 
 Combine these elements to apply multiple emphases to text.    
 
@@ -232,7 +232,7 @@ Use _emphasis_ in comments to express **strong** opinions and point out <s>corre
 
 <tr>
 <td>
-<p>To insert one of the following characters, prefix with a backslash:</p>
+<p>To insert one of the following characters, prefix it with a backslash:</p>
 
 ```\   backslash ```
 
