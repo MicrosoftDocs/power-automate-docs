@@ -11,9 +11,9 @@ ms.custom: guidance
 ms.topic: overview
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/01/2021
+ms.date: 08/11/2026
 ms.author: mapichle
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Introduction to SAP GUI–based RPA in Power Automate Desktop

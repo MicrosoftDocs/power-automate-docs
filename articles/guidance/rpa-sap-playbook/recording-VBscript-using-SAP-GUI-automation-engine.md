@@ -10,9 +10,9 @@ ms.custom: guidance
 ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 06/25/2021
+ms.date: 08/11/2026
 ms.author: mapichle
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Use SAP GUI automation engine to record VBScript
