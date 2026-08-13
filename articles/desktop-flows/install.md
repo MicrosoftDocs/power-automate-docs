@@ -3,10 +3,12 @@ title: Install Power Automate
 description: Learn how to install Power Automate for desktop on your device.
 author: johndund
 ms.topic: how-to
-ms.date: 08/06/2026
-ms.author: kdeepika
-ms.reviewer: ellenwehrle
+ms.date: 08/13/2026
+ms.author: nimoutzo
+ms.reviewer: angieandrews
 contributors:
+  - radioblazer
+  - NikosMoutzourakis
   - DanaMartens
   - v-aangie
 search.audienceType: 
@@ -21,7 +23,16 @@ ai-usage: ai-assisted
 
 Before you install Power Automate on your device, make sure that it meets the [system requirements](requirements.md).
 
-Download and install Power Automate [using an MSI installer](#install-power-automate-using-the-msi-installer) or [from Microsoft Store](#install-power-automate-from-microsoft-store). The following table compares the two installation methods:
+Download and install Power Automate [using an MSI installer](#install-power-automate-using-the-msi-installer) or [from Microsoft Store](#install-power-automate-from-microsoft-store). Use the following table to choose the method that fits your scenario.
+
+| Consideration | MSI installer | Microsoft Store |
+|---|---|---|
+| Admin rights | Required | Not required |
+| Updates | Manual, with [automatic updates](./auto-update.md) available in supported versions | Automatic |
+| Machine-runtime app | Included as an installable option, which allows you to [manage machines from the Power Automate portal](manage-machines.md) | Not included |
+| Typical scenario | Managed or enterprise devices that connect machines to the Power Automate portal | Individual devices without admin rights |
+
+You can use the Power Automate for desktop store installation in conjunction with the runtime application, which you can install from the MSI.
 
 | Feature | MSI installer | Microsoft Store |
 |---|---|---|
@@ -60,7 +71,14 @@ By default, Power Automate for desktop honors the proxy settings specified in Wi
 
 1. Select the **check box** to agree to the terms of use, and then select **Install**.
 
-If the installation fails, go to the [troubleshooting guide](/troubleshoot/power-platform/power-automate/desktop-flows/power-automate-desktop-installation-issues) for help. For common issues and solutions, go to the [Troubleshoot common installation issues](#troubleshoot-common-installation-issues) section in this article.
+### If the installation fails
+
+If the installation stops with a message such as "There's a problem installing," stops partway through, returns an MSI error code, or ends without displaying an error, go to the [installation troubleshooting guide](/troubleshoot/power-platform/power-automate/desktop-flows/power-automate-desktop-installation-issues) for help.
+
+
+If you're installing on a virtual desktop such as VDI, Azure Virtual Desktop, or a multisesion Windows operating system, review [system requirements](requirements.md) for the considerations that apply to VM images and mult-user session enabled Windows operating systems before you retry.
+
+For scripted or enterprise-wide deployment, go to [Install Power Automate silently](install-silently.md).
 
 > [!NOTE]
 > There's only one Power Automate installer for both 32-bit and 64-bit computers. It automatically identifies the architecture of your operating system and proceeds to install the suitable version of the files accordingly.
@@ -74,7 +92,10 @@ Starting with version 2.69, Power Automate for desktop requires the [.NET 10 run
 
 Power Automate for desktop uses the .NET 10 runtime to bring you the best and latest UI experience. The x86 package is required even on x64 operating systems because some automation modules within Power Automate are only available in 32-bit mode.
 
-If you receive an error indicating that the .NET 10 runtime failed to install, try these steps:
+If you receive an error indicating that a .NET 8 runtime failed to install, it might be because your computer can't connect to these URLs or one of the packages didn't install. To fix this issue, install these runtime packages manually on the machine. After installation, future versions of Power Automate don't download the .NET 8 runtime.
+
+> [!NOTE]
+> The runtime version required can differ depending on your Power Automate for desktop version. If a post-installation message refers to a .NET version that isn't documented here, go to the [installation troubleshooting guide](/troubleshoot/power-platform/power-automate/desktop-flows/power-automate-desktop-installation-issues) and confirm you're using the latest release of Power Automate for desktop.
 
 1. Check that your computer can connect to both URLs listed earlier. Corporate firewalls or proxy servers might block these connections.
 1. Download both runtime packages manually from the URLs and install them on the machine.
@@ -101,8 +122,9 @@ If you receive an error indicating that the .NET 10 runtime failed to install, t
 
 If you already have Power Automate installed on your machine but didn't install it, check whether it's the Microsoft Store version or the MSI version:
 
-1. Go to **Start Menu** > **Add or remove programs**.
-1. Search for **Power Automate**.
+By default, Power Automate for desktop notifies you when a new version is available. Select **Update** to download the latest installer for your region. Depending on your version, the download can start in your browser. When the download finishes, run the downloaded installer and follow the setup instructions to complete the update. You must have admin permissions on your local computer to perform the update. To get the latest features and bug fixes, update to the latest version.
+
+If you don't have admin rights on your device, you can't complete the MSI update yourself. Contact your IT administrator to run the update, or use the [Microsoft Store installation](#install-power-automate-from-microsoft-store), which updates automatically and doesn't require admin rights.
 
 - If **Power Automate for desktop** appears in the list, it's the MSI version.
 - If **Power Automate** (without "for desktop") appears, it's the Microsoft Store version.
@@ -153,9 +175,6 @@ If you need the same version of Power Automate across multiple machines (for exa
 ## Uninstall Power Automate
 
 1. Open the **Start** menu > **Settings** > **Apps**.
-
 1. Search for **Power Automate**, and then select it.
-
 1. Select **Uninstall**.
 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
