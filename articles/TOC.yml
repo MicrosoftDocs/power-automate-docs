@@ -110,6 +110,8 @@
           href: manage-shared-flows-with-users-outside-environment.md
         - name: Support for service principal owned flows
           href: service-principal-support.md
+        - name: Assign a user license to a service principal owned flow
+          href: assign-user-license-service-principal-flow.md
         - name: Guide to cloud flow sharing and permissions
           href: guide-to-cloud-flow-sharing-permissions.md
         - name: Export and import a non-solution flow
