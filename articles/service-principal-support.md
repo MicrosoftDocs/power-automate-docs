@@ -8,26 +8,27 @@ contributors:
 ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: how-to
-ms.date: 07/17/2026
+ms.date: 08/14/2026
 ms.custom:
   - sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 # Support for service principal owned flows
 
-Power Automate has the ability for service principal application users to own and run flows to provide flexibility and stability in how organizations administer Power Automate flows.
+Power Automate supports service principal application users owning and running flows. This approach gives organizations flexibility and stability in administering Power Automate flows.
 
 ## Service principal application users
 
-[A service principal](/entra/identity-platform/app-objects-and-service-principals?tabs=browser) is a non-human security identity that represents an application or service that can own and manage resources within Azure and the Power Platform. To use a service principal in the Power Platform, a service principal application user needs to be created that represents the service principal [through the portal](/power-platform/admin/create-users#create-an-application-user) or [through API](/power-platform/admin/manage-application-users). An application user can have connections shared with them and own resources such as flows.
+[A service principal](/entra/identity-platform/app-objects-and-service-principals?tabs=browser) is a non-human security identity that represents an application or service. It can own and manage resources within Azure and the Power Platform. To use a service principal in the Power Platform, create a service principal application user that represents the service principal [through the portal](/power-platform/admin/create-users#create-an-application-user) or [through API](/power-platform/admin/manage-application-users). An application user can have connections shared with them and own resources such as flows.
 
 ## When to use service principal application user
 
-We recommend that the flow runs under the service principal in the cases listed in this section.
+Use a service principal to run the flow in the following cases:
 
-- Mission critical flows that service departmental or enterprise-wide scenarios. This insulates the flow ownership from the lifecycle of the owner and prevents issues when:
+- Mission critical flows that service departmental or enterprise-wide scenarios. This approach insulates the flow ownership from the lifecycle of the owner and prevents issues when:
     - The owner of the flow leaves the organization or their role changes.
-    - Premium license of the flow owner were to be unassigned and their flow utilizes premium capabilities.
+    - The flow owner premium license is unassigned and their flow uses premium capabilities.
 - If the organization uses DevOps pipelines to deploy the flow across Dev, Test, and Production environments.
 
 Since a service principal application user is a [non-interactive user](/power-platform/admin/create-users#create-a-non-interactive-user-account) without a user license, it's subject to [non-licensed user limits](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits) and has special [licensing and request limit implications](/power-platform/admin/power-automate-licensing/types#can-i-use-service-principal-in-flows-and-does-it-count-against-my-request-limits).
@@ -36,12 +37,12 @@ The flow [connections need to be shared](/power-apps/maker/canvas-apps/share-ap
 
 ## Prerequisites
 
-To have a service principal own and run a flow, follow these steps.
+To have a service principal own and run a flow, follow these steps:
 
-1. [Create a service principal application user](/power-platform/admin/create-users#create-an-application-user) representing the Microsoft Entra ID service principal.
-1. For a non-solution flow, [share connections](/power-apps/maker/canvas-apps/share-app-resources#connections) with the service principal application user. This step isn't required for a [solution flow](overview-solution-flows.md).
+1. [Create a service principal application user](/power-platform/admin/create-users#create-an-application-user) that represents the Microsoft Entra ID service principal.
+1. For a non-solution flow, [share connections](/power-apps/maker/canvas-apps/share-app-resources#connections) with the service principal application user. You don't need to complete this step for a [solution flow](overview-solution-flows.md).
 
-1. Change the owner of the flow to the service principal application user using these steps:
+1. Change the owner of the flow to the service principal application user by using these steps:
 
     1. On Power Automate portal, open a flow.
     1. On the **Details** section, select **Edit**.
@@ -53,13 +54,19 @@ To have a service principal own and run a flow, follow these steps.
          :::image type="content" source="media/service-principal-support/owner.png" alt-text="Screenshot of a computer description automatically generated.":::
 
         > [!NOTE]
-        > A service principal application user can't be made a co-owner of a flow. You can't find a service principal application user in the **Owners** edit dialog.
+        > You can't make a service principal application user a co-owner of a flow. You can't find a service principal application user in the **Owners** edit dialog.
 
 1. [Turn on the flow](disable-flow.md) so it's ready to run.
 
 ## Licensing requirements
 
-A service principal application user is a [non-interactive user](/power-platform/admin/create-users#create-a-non-interactive-user-account), so it can't have a user license associated with it. Premium service principal application user-owned flows need a Power Automate Process or Power Automate per-flow license (or membership in a [flow group](/power-automate/flow-groups) that has a Process license assigned). However, if a flow doesn't utilize premium connectors, or is used exclusively [within the context](/power-platform/admin/power-automate-licensing/faqs#what-power-automate-capabilities-are-included-in-dynamics-365-licenses) of a Dynamics 365 application, it's exempted from the need for a Power Automate process or Power Automate per-flow license.
+A service principal application user is a [non-interactive user](/power-platform/admin/create-users#create-a-non-interactive-user-account), so you can't assign a license to the service principal itself. Premium service principal application user-owned flows need one of the following:
+
+- A Power Automate Process or Power Automate per-flow license assigned to the flow.
+- Membership in a [flow group](/power-automate/flow-groups) that has a Process license assigned.
+- A [designated licensed user](assign-user-license-service-principal-flow.md), so the flow runs under that user's Power Automate entitlement.
+
+However, if a flow doesn't use premium connectors, or is used exclusively [within the context](/power-platform/admin/power-automate-licensing/faqs#what-power-automate-capabilities-are-included-in-dynamics-365-licenses) of a Dynamics 365 application, it's exempted from the need for a Power Automate process or Power Automate per-flow license.
 
 ## Power Platform request limits
 
