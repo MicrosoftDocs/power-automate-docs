@@ -13,7 +13,7 @@ ms.reviewer: angieandrews
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 06/27/2025
+ms.date: 08/19/2026
 search.audienceType: 
   - flowmaker
   - enduser
@@ -473,4 +473,3 @@ Now that you created and tested your flow, be sure to let others know how to use
 - [Training: Build approval flows with Power Automate (module)](/training/modules/build-approval-flows/)
 - [Training: Automate an approval process in Power Automate (module)](/training/modules/approvals-power-automate/)
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]

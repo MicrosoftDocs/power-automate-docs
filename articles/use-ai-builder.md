@@ -6,7 +6,7 @@ author: v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 06/25/2025
+ms.date: 08/19/2026
 ms.author: matow
 ms.reviewer: angieandrews
 ms.collection:
@@ -30,4 +30,3 @@ Use your AI Builder models in your flows to add intelligence to your organizatio
 
 [Training: Use AI Builder in Power Automate (module)](/training/modules/ai-builder-power-automate/)
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]

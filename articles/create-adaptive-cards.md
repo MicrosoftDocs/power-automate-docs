@@ -11,8 +11,8 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 06/25/2025
-ms.author: ralinga
+ms.date: 08/19/2026
+ms.author: matow
 ms.reviewer: angieandrews
 ms.custom: sfi-image-nochange
 ---
@@ -175,7 +175,7 @@ The most common problems that you will encounter when creating adaptive cards ar
 
     - Improperly formatted JSON – This is not usually as complex as one might expect. These are most often just situations where:
 
-        - There are curly quotes, or missing quotes, around values within the JSON. Always check the JSON to ensure all text values are enclosed within double quotes, and that numbers are enclosed in quotation marks. All quotation marks should be straight and not curly.
+        - There are curly quotes, or missing quotes, around values within the JSON. Always check the JSON to ensure all text values are enclosed within double quotes, and that numbers aren enclosed in quotation marks. All quotation marks should be straight and not curly.
 
         - You can validate the format of your JSON by pasting the JSON into the [Card Payload Editor](https://adaptivecards.io/designer/).
 
@@ -199,5 +199,3 @@ Truncated screenshot of the Adaptive Card Viewer extension installed in Visual S
 
     - Attempting to submit the card more than once. Each Adaptive Card can be submitted only once, after which all further submissions will be ignored.
 
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]

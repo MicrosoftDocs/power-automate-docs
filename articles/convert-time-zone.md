@@ -6,10 +6,10 @@ contributors:
   - anaggar
   - aartig13
   - v-aangie
-ms.author: kisubedi
+ms.author: matow
 ms.reviewer: angieandrews
 ms.topic: how-to
-ms.date: 06/25/2025
+ms.date: 08/19/2026
 ms.service: power-automate
 ms.subservice: cloud-flow
 ---
@@ -41,11 +41,9 @@ Power Automate has a built-in operation called **Convert time zone**.
 
    For ways to find the current time zone, go to the [Common format scenarios](#common-format-scenarios) section in this article.
 
-## Convert a time zone using an expression
+## Convert a time zone by using an expression
 
-Power Automate has an expression function `convertTimeZone` that converts a timestamp from the source time zone to the target time zone.
-
-
+Power Automate has an expression function, `convertTimeZone`, that converts a timestamp from the source time zone to the target time zone.
 
 :::image type="content" source="media/convert-time-zone/expression.png" alt-text="Screenshot shows that Power Automate has an expression function for converting the time zone.":::
 
@@ -57,10 +55,10 @@ convertTimeZone(timestamp: string, sourceTimeZone: string, destinationTimeZone: 
 
 The function takes the following parameters:
 
-- `timestamp`: The datetime you wish to convert.
+- `timestamp`: The datetime you want to convert.
 - `sourceTimeZone`: The time zone the datetime is currently in.
 - `destinationTimeZone`: The time zone you want to convert your date to.
-- `format` (optional): The format of the time zone you wish to convert your date to.
+- `format` (optional): The format of the time zone you want to convert your date to.
 
 ### Example: Convert a time zone
 
@@ -74,15 +72,15 @@ It returns the result: `Monday, January 1, 2018`.
 
 ### Example: Use dynamic content
 
- This is an example of using dynamic content in the expression. Here, the `triggerBody()?['Date']` timestamp is the dynamic content you want to format. The source time zone is `UTC`. The destination time zone is `Eastern Standard Time`. The format is the custom format string `HH:mm`.
+ This example shows how to use dynamic content in the expression. The `triggerBody()?['Date']` timestamp is the dynamic content you want to format. The source time zone is `UTC`. The destination time zone is `Eastern Standard Time`. The format is the custom format string `HH:mm`.
 
 ```console
 convertTimeZone(triggerBody()?['Date'],'UTC','Eastern Standard Time','HH:mm')
 ```
 
-To learn more about this expression function, go to [convertTimeZone](/azure/logic-apps/workflow-definition-language-functions-reference#convertTimeZone).
+Learn more about this expression function in [convertTimeZone](/azure/logic-apps/workflow-definition-language-functions-reference#convertTimeZone).
 
-To learn more about the format string parameter, go to [standard date and time format strings](/dotnet/standard/base-types/standard-date-and-time-format-strings) and [custom date and time format strings](/dotnet/standard/base-types/custom-date-and-time-format-strings).
+Learn more about the format string parameter in [standard date and time format strings](/dotnet/standard/base-types/standard-date-and-time-format-strings) and [custom date and time format strings](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
 ## Common format scenarios
 
@@ -98,7 +96,7 @@ This section covers various scenarios and how to apply the appropriate format.
 
     **Example**: 'The date time string must match ISO8601 format.'
 
-    To learn more about how to correctly format your datetime string, go to [convertTimeZone](/azure/logic-apps/workflow-definition-language-functions-reference).
+Learn more about how to correctly format your datetime string in [convertTimeZone](/azure/logic-apps/workflow-definition-language-functions-reference).
 
 #### Check the time zone of an output
 
@@ -116,7 +114,7 @@ To convert a timestamp from the source time zone to UTC, or from UTC to the targ
 
 ## Limitations
 
-There might be limitations in some connectors for how the time zone displays. To learn more about each connector, go to [Connector reference overview](/connectors/connector-reference/).
+Some connectors have limitations in how the time zone displays. To learn more about each connector, see [Connector reference overview](/connectors/connector-reference/).
 
 ## Related information
 

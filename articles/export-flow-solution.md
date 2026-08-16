@@ -1,9 +1,7 @@
 ---
 title: Export a solution
 description: Learn how to export solution-aware flows.
-services: ''
 suite: flow
-documentationcenter: na
 author: ChrisGarty
 contributors:
   - ChrisGarty
@@ -11,8 +9,8 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 06/25/2025
-ms.author: cgarty
+ms.date: 08/19/2026
+ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -57,7 +55,7 @@ Follow these steps to move your solution and its dependencies to a new environme
 
 ## Export a specific solution cloud flow
 
-[Solution cloud flows](/power-automate/overview-solution-flows) are exported and moved between environments in a [solution](/power-apps/maker/data-platform/solutions-overview). The solution should contain all the solution components that the flow uses, such as [connection references](/power-apps/maker/data-platform/create-connection-reference), [environment variables](/en-us/power-apps/maker/data-platform/environmentvariables), and [tables](/power-apps/maker/data-platform/entity-overview). Depending on the desired scenario, the solution could also contain solution components that reference the flow, such as [apps](/power-apps/maker/canvas-apps/add-app-solution) and [bots](/microsoft-copilot-studio/advanced-flow). 
+[Solution cloud flows](/power-automate/overview-solution-flows) are exported and moved between environments in a [solution](/power-apps/maker/data-platform/solutions-overview). The solution should contain all the solution components that the flow uses, such as [connection references](/power-apps/maker/data-platform/create-connection-reference), [environment variables](/power-apps/maker/data-platform/environmentvariables), and [tables](/power-apps/maker/data-platform/entity-overview). Depending on the desired scenario, the solution could also contain solution components that reference the flow, such as [apps](/power-apps/maker/canvas-apps/add-app-solution) and [bots](/microsoft-copilot-studio/advanced-flow). 
 
 The flow details page contains a *Solutions* card that lists all the solutions that reference a flow. If the flow is only in the default solution (the "all solution components" view), then either [add the flow into an existing solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution), or [create a new solution](/power-automate/overview-solution-flows#create-a-solution).
 
@@ -78,5 +76,3 @@ The flow details page contains a *Solutions* card that lists all the solutions t
 - [Import a solution](./import-flow-solution.md)
 - [Edit a solution-aware flow](./edit-solution-aware-flow.md)
 - [Environment variables overview](/powerapps/maker/data-platform/environmentvariables)
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
