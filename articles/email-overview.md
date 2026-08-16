@@ -6,7 +6,7 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 06/17/2025
+ms.date: 08/19/2026
 ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -41,7 +41,7 @@ Get the full list of triggers you can use in your cloud flows in [Office 365 Out
 
 :::image type="content" source="./media/email/trigger-action.png" alt-text="Screenshot of a trigger and an action in a cloud flow.":::
 
-You can use the **Search** field to find actions by entering keywords. For example, if you want to find actions related to Outlook, type **outlook** in the search box.
+Use the **Search** field to find actions by entering keywords. For example, if you want to find actions related to Outlook, type **outlook** in the search box.
 
 :::image type="content" source="./media/email/email-actions.png" alt-text="Screenshot of a list of Office 365 Outlook actions.":::
 
@@ -66,4 +66,4 @@ To help you find triggers or actions quickly, use the shortcuts in the following
 - [Customize email in flows](email-customization.md)
 - [Training: Enhance productivity with Power Automate and the Office 365 Outlook Connector (module)](/training/modules/enhance-productivity/)
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]
+

@@ -5,11 +5,11 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 06/25/2025
-ms.author: ralinga
+ms.date: 08/19/2026
+ms.author: matow
 ms.reviewer: angieandrews
 ms.custom: bap-template
-search.audienceType: Y
+search.audienceType:
   - flowmaker
   - enduser
 ---
@@ -79,6 +79,4 @@ You can further format the data by using expressions. In following example, the 
 - [Overview of using Outlook and Power Automate](email-overview.md)  
 - [Create flows to manage email](create-email-flows.md)  
 - [Customize email in flows](email-customization.md)
-- [Training: Create flows to manage email (module)](create-email-flows.md) 
 
-[!INCLUDE[footer-include](includes/footer-banner.md)]

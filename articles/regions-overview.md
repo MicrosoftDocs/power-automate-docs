@@ -6,8 +6,8 @@ author: ChrisGarty
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 10/08/2024
-ms.author: cgarty
+ms.date: 08/19/2026
+ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
   - flowmaker
@@ -87,7 +87,4 @@ Learn about outbound IP addresses in each region in [Power Automate IP address c
 ### Can region be changed?
 
 A [support case](/power-platform/admin/get-help-support) is needed to change environment region.
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
-
 

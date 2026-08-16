@@ -8,7 +8,7 @@ author: v-aangie
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
-ms.date: 06/25/2025
+ms.date: 08/19/2026
 ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -47,5 +47,3 @@ There are four main steps for using a gateway.
 
 - [Install the on-premises data gateway](/data-integration/gateway/service-gateway-install)
 
-
-[!INCLUDE[footer-include](includes/footer-banner.md)]
