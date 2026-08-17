@@ -50,6 +50,8 @@
       href: faq-copilot-cloud-flows.yml
     - name: How to
       items:
+        - name: Call Microsoft Copilot Studio agents
+          href: call-copilot-studio-agent.md
         - name: Use generative actions (preview)
           href: generative-actions-overview.md
         - name: Add a condition
@@ -1465,3 +1467,4 @@
       href: faqs-action-suggestions-power-automate-desktop.md
     - name: FAQ for generating flow descriptions using Copilot in desktop flows
       href: faqs-copilot-generate-description-from-flow-properties.md
+      
