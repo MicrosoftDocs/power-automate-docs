@@ -2,22 +2,19 @@
 title: Normalized schema JSON authoring
 description: Learn how to author a normalized schema JSON configuration for Process Mining ingestion. Walk through event, case, and lookup tables with working CSV and Delta examples.
 #customer intent: As a data engineer, I want to ingest event data from multiple related tables so that I can use Process Mining without flattening everything into one wide table.
-ms.date: 06/05/2026
+ms.date: 08/17/2026
 author: rosikm
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 
 # Normalized schema JSON authoring
 
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+Power Automate Process Mining can ingest event data that isn't stored as a single wide table. Instead of flattening everything in your lakehouse into one CSV, you can point Process Mining directly at a *star schema*&mdash;a thin event table plus optional case and lookup tables, linked by foreign keys.
 
-Power Automate Process Mining can ingest event data that is *not* stored as a single wide table. Instead of asking you to flatten everything in your lakehouse into one CSV, you can point Process Mining directly at a *star schema*&mdash;a thin event table plus optional case and lookup tables, linked by foreign keys.
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
-
-This article walks you through writing the JSON file that drives that ingestion. It starts with the simplest working example and grows from there.
+This article guides you through writing the JSON file that drives that ingestion. It starts with the simplest working example and grows from there.
 
 > [!NOTE]
 > Normalized import is *JSON-only today*&mdash;there's no in-product editor yet. You author one file and upload it to the service.
@@ -41,7 +38,7 @@ Use the **standard (denormalized) import** (the in-product UI) when you have a s
 The resulting Process Mining model is identical regardless of which import path fed it.
 
 > [!WARNING]
-> The JSON examples in the following sections use comments for explanation purposes. Be sure to remove them before using the JSON artifact, as comments aren't supported.
+> The JSON examples in the following sections use comments for explanation purposes. Remove them before using the JSON artifact, as comments aren't supported.
 
 ## How the JSON is organized
 
@@ -58,10 +55,10 @@ Every normalized configuration has two cooperating halves wrapped in a single `i
 }
 ```
 
-- **`dataSource`** answers *"where is the data and what does it look like on disk?"*
-  It declares the storage backend (ADLS Gen2 or OneLake), the file format (CSV / Parquet / Delta-Parquet), and a list of **datasets**. Each dataset is one physical table.
-- **`miningMetadata.ImportConfiguration.Attributes`** answers *"what does each column mean to Process Mining?"*
-  It maps physical columns (or joined columns from lookup tables) to logical roles: case id, activity, start timestamp, end timestamp, resource, finance metric, custom dimension, and more.
+- **`dataSource`** answers *"Where is the data and what does it look like on disk?"*
+  It declares the storage backend (ADLS Gen2 or OneLake), the file format (CSV, Parquet, or Delta-Parquet), and a list of **datasets**. Each dataset is one physical table.
+- **`miningMetadata.ImportConfiguration.Attributes`** answers *"What does each column mean to Process Mining?"*
+  It maps physical columns (or joined columns from lookup tables) to logical roles: case ID, activity, start timestamp, end timestamp, resource, finance metric, custom dimension, and more.
 
 Every logical attribute name must trace back to a physical column produced by some dataset (either directly in `Columns`, or via a join's `ExportName`). If it doesn't, validation fails before any data is read.
 
@@ -73,7 +70,7 @@ Process Mining recognizes exactly three kinds of tables in your star schema:
 |---|---|---|
 | `0`&mdash;**Event** | The fact table. One row per event, with timestamps and foreign keys to the other tables. | Exactly **1** required |
 | `1`&mdash;**Case** | One row per case, carrying case-level attributes (customer, invoice total, segment, and more). | At most **1** allowed |
-| `2`&mdash;**Join** | Lookup/dimension table (activity dictionary, resource directory, and more). | Any number |
+| `2`&mdash;**Join** | Lookup or dimension table (activity dictionary, resource directory, and more). | Any number |
 
 The next sections build up an example using all three.
 
@@ -81,7 +78,7 @@ The next sections build up an example using all three.
 
 ## Your first configuration: minimal CSV example
 
-Let's start with the simplest possible normalized configuration: a single Event table, no joins, stored as CSV in ADLS Gen2. This intentionally looks like a standard import. Once it works, we'll add normalization piece by piece.
+Let's start with the simplest possible normalized configuration: a single Event table, no joins, stored as CSV in ADLS Gen2. This configuration intentionally looks like a standard import. Once it works, add normalization piece by piece.
 
 The way you build up the JSON is the **same for Fabric / OneLake sources**&mdash;only the `dataSource` connection block and the dataset `Path` values differ. Learn the differences in [Switch the data source: OneLake/Fabric and Delta tables](#switch-the-data-source-onelakefabric-and-delta-tables).
 
@@ -143,39 +140,39 @@ CaseID,Activity,StartTimestamp,EndTimestamp
 
 ### What's going on: minimal CSV example
 
-- **`dataSourceSchemaType: 1`** tells the service to use the normalized parser. This is always `1` here.
-- **`dataSourceType: 1`** + **`azureDataLakeConnectionSetupProperties`** point to a customer-owned ADLS Gen2 container. (We switch to OneLake in [Switch the data source: OneLake/Fabric and Delta tables](#switch-the-data-source-onelakefabric-and-delta-tables).)
+- **`dataSourceSchemaType: 1`** tells the service to use the normalized parser. This value is always `1`.
+- **`dataSourceType: 1`** + **`azureDataLakeConnectionSetupProperties`** point to a customer-owned ADLS Gen2 container. (Switch to OneLake in [Switch the data source: OneLake/Fabric and Delta tables](#switch-the-data-source-onelakefabric-and-delta-tables).)
 - **`dataSourceFileType: 0`** says these are CSV files.
 - The `datasets` array has one entry of `Kind: 0` (Event) defined using `Path`:
-    - this can be a folder `events`. In this case, Power Automate Process Mining reads every CSV in that folder (alphabetical order, all files must share the same header).
-    - this can be a specific file `events/events.csv`
-- `Columns[]` lists every physical column we want to surface to the mining model.
+    - this entry can be a folder `events`. In this case, Power Automate Process Mining reads every CSV in that folder (alphabetical order, all files must share the same header).
+    - this entry can be a specific file `events/events.csv`.
+- `Columns[]` lists every physical column you want to surface to the mining model.
 - `Join: null`&mdash;the property is required, but here there are no joins yet.
 - Each `Attributes[]` entry maps one physical column name to a logical role:
-  - exactly **one** column is the `Case` (case id),
+  - exactly **one** column is the `Case` (case ID),
   - exactly **one** is the `Activity` (activity name),
   - `Start` and `End` mark the timestamps, and they must live on the Event dataset.
 
 ### CSV file requirements
 
-CSV reader options are fixed and can't be changed from the configuration:
+You can't change the CSV reader options from the configuration. The fixed options are:
 
 | Setting | Value |
 |---|---|
 | Delimiter | comma `,` |
 | Quote character | double quote `"` |
 | Header row | required&mdash;first row is the column header |
-| Encoding | auto-detected (UTF-8 with/without BOM, UTF-16 LE/BE, and more). UTF-8 recommended. |
+| Encoding | auto-detected (UTF-8 with/without BOM, UTF-16 LE/BE, and more). Use UTF-8. |
 | Line endings | CRLF or LF |
 | Date format | parsed using the workspace culture |
 
-If a dataset folder holds multiple CSV files (for example, monthly partitions), they're processed in alphabetical order and *must share the same header*.
+If a dataset folder holds multiple CSV files (for example, monthly partitions), the system processes them in alphabetical order and *they must share the same header*.
 
 ---
 
 ## Add a case table
 
-So far every event row had to repeat its case attributes. Let's move case-level data into its own table.
+So far, every event row repeated its case attributes. Move case-level data into its own table.
 
 ### The data: add a case table
 
@@ -233,7 +230,7 @@ Add a second dataset of `Kind: 1` (Case), and add a join from the Event dataset 
 ]
 ```
 
-And in the attributes list, mark `CustomerSegment` as a case-level attribute:
+In the attributes list, mark `CustomerSegment` as a case-level attribute:
 
 ```json
 { "Name": "CustomerSegment", "SourceDataType": "String", "ImportType": "Other", "Level": "Case", "FinanceImportType": "None" }
@@ -241,8 +238,8 @@ And in the attributes list, mark `CustomerSegment` as a case-level attribute:
 
 ### Rules to keep in mind: add a case table
 
-- The `CaseID` column lives on the **Case** dataset (it's the PK there), not on the Event dataset. The Event dataset reaches it through the join.
-- A column must not appear in both `Columns` and a `Join.SourceColumnName` of the same dataset$mdash;that's why `CaseID` is removed from `Events.Columns` in this version.
+- The `CaseID` column is on the **Case** dataset (it's the primary key there), not on the Event dataset. The Event dataset reaches it through the join.
+- A column must not appear in both `Columns` and a `Join.SourceColumnName` of the same dataset. That's why this version removes `CaseID` from `Events.Columns`.
 - `JoinKeyType` is either `"Integer"` or `"String"`. The physical column type must match.
 - Use `Level: "Case"` for attributes that have a single value per case (like `CustomerSegment`). Use `Level: "Event"` for attributes that can vary per row.
 
@@ -250,7 +247,7 @@ And in the attributes list, mark `CustomerSegment` as a case-level attribute:
 
 ## Add lookup (dimension) tables
 
-Now let's normalize `Activity` and `Resource` into their own dictionary tables&mdash;the typical lakehouse shape.
+Now normalize `Activity` and `Resource` into their own dictionary tables. This structure is the typical lakehouse shape.
 
 ### The data: add lookup (dimension) tables
 
@@ -375,7 +372,7 @@ Use `ExportName` whenever:
 | The Event dataset can join to **at most one Case** dataset, plus any number of Join lookups. | A process has one case context. |
 | The Event dataset can't self-reference or join to another Event. | Avoids cycles. |
 | The Case dataset can join only to **Join** lookups (not to Event, not to another Case). | Avoids cycles. |
-| A **Join** (lookup) dataset can't itself contain joins. Set its `Join` to `null`. | No nested/chained joins. |
+| A **Join** (lookup) dataset can't itself contain joins. Set its `Join` to `null`. | No nested or chained joins. |
 | `TargetDatasetName` must match a real dataset entry's `Name`. | Catches typos. |
 | The physical type of the FK and the PK columns must match the declared `JoinKeyType`. | Catches type mismatches. |
 | Don't put the same column in both `Columns` and a `Join.SourceColumnName` of the same dataset. Use the join's `ExportName` if you need to expose the FK. | The validator rejects this. |
@@ -388,7 +385,7 @@ Numeric columns can be flagged as finance metrics so Process Mining treats them 
 
 ### Custom dimension
 
-A custom dimension is any column you want to keep around for filtering and analysis. Use `ImportType: "Other"`:
+A custom dimension is any column you want to keep for filtering and analysis. Use `ImportType: "Other"`:
 
 ```json
 { "Name": "Department", "SourceDataType": "String", "ImportType": "Other", "Level": "Event", "FinanceImportType": "None" }
@@ -437,9 +434,9 @@ By default, every value must be present. To allow nulls on a specific attribute,
 
 ## Switch the data source: OneLake/Fabric and Delta tables
 
-Everything in the previous sections used CSV in ADLS Gen2. To read from OneLake/Fabric or to use Parquet / Delta-Parquet instead, you only change three fields in `dataSource` (the `datasets` and `Attributes` arrays stay the same).
+Everything in the previous sections used CSV in ADLS Gen2. To read from OneLake/Fabric or to use Parquet or Delta-Parquet instead, change three fields in `dataSource`. The `datasets` and `Attributes` arrays stay the same.
 
-### OneLake / Fabric instead of ADLS Gen2
+### OneLake/Fabric instead of ADLS Gen2
 
 ```json
 "dataSourceType": 2,                        // 2 = OneLake
@@ -449,10 +446,10 @@ Everything in the previous sections used CSV in ADLS Gen2. To read from OneLake/
 }
 ```
 
-Replace the `azureDataLakeConnectionSetupProperties` block from [Your first configuration: minimal CSV example](#your-first-configuration-minimal-csv-example) with the OneLake block in this section. Then in each dataset, point `Path` at the lakehouse location:
+Replace the `azureDataLakeConnectionSetupProperties` block from [Your first configuration: minimal CSV example](#your-first-configuration-minimal-csv-example) with the OneLake block in this section. Then, in each dataset, point `Path` at the lakehouse location:
 
 - For a **managed Delta table:** `/<lakehouseId>/Tables/<schema>/<table>` (Fabric uses `dbo` as the default schema)
-- For **loose files** under the Files area: `/<lakehouseId>/Files/<your-folder>/<dataset-folder>`
+- For **loose files** under the Files area: `/<lakehouseId>/Files/<your-folder>/<dataset-folder>`.
 
 ### Delta-Parquet (recommended for lakehouse data)
 
@@ -572,8 +569,8 @@ Use this *only* when the dataset folder contains plain `.parquet` files. *Never*
 
 | Field | Type | Required |
 |---|---|---|
-| `workspaceId` | GUID | yes&mdash;Fabric workspace id |
-| `lakehouseId` | GUID (string) | yes&mdash;Lakehouse id |
+| `workspaceId` | GUID | yes&mdash;Fabric workspace ID |
+| `lakehouseId` | GUID (string) | yes&mdash;Lakehouse ID |
 
 ### `datasets[]`
 
@@ -644,7 +641,7 @@ Use this *only* when the dataset folder contains plain `.parquet` files. *Never*
 | Value | Name | Role |
 |---|---|---|
 | `0` | Event | Activity fact table. Exactly one required. |
-| `1` | Case | Case-level attributes (1 row per case). At most one. |
+| `1` | Case | Case-level attributes (one row per case). At most one. |
 | `2` | Join | Lookup table joined via FK/PK. Can't have nested joins. |
 
 ### `JoinKeyType`
@@ -671,10 +668,10 @@ Only these two values are accepted today.
 | Value | Meaning |
 |---|---|
 | `Activity` | Activity name. Exactly one attribute. |
-| `Case` | Case id. Exactly one attribute. |
+| `Case` | Case ID. Exactly one attribute. |
 | `Start` | Event start timestamp. Must be a direct column of the Event dataset. |
 | `End` | Event end timestamp. Must be a direct column of the Event dataset. |
-| `Resource` | Resource / actor. |
+| `Resource` | Resource or actor. |
 | `Other` | Any custom dimension or metric. |
 
 ### `Level`
@@ -698,7 +695,7 @@ Only `Integer` and `Float` attributes can use a non-`None` finance type.
 
 ## Validation checklist
 
-Before submitting your configuration, go this list. The server runs every check before opening a single byte of data.
+Before submitting your configuration, review this list. The server runs every check before opening a single byte of data.
 
 - [ ] Dataset `Name` values are unique.
 - [ ] `Columns[].Name` values are unique across all datasets.
@@ -722,21 +719,21 @@ Before submitting your configuration, go this list. The server runs every check 
 
 ### Use `dataSourceFileType = 1` (Parquet) for a Delta Lake table
 
-This is the most frequent authoring mistake. With `dataSourceFileType: 1`, the importer recursively lists every `.parquet` file under the dataset path&mdash;including `_delta_log/00000000000000000000.checkpoint.parquet`. Because `_` sorts before `p`, the checkpoint file becomes the alphabetically first file, and the schema validator reads *its* schema instead of your real data's. You see `"column not found in physical columns list"` errors for your real attributes, while the reported "physical columns" contain Delta internals like `modificationTime`, `deltaVersion`, `numRecords`.
+This mistake is the most frequent authoring mistake. By using `dataSourceFileType: 1`, the importer recursively lists every `.parquet` file under the dataset path&mdash;including `_delta_log/00000000000000000000.checkpoint.parquet`. Because `_` sorts before `p`, the checkpoint file becomes the alphabetically first file. The schema validator reads *its* schema instead of your real data's. You see `"column not found in physical columns list"` errors for your real attributes, while the reported "physical columns" contain Delta internals like `modificationTime`, `deltaVersion`, `numRecords`.
 
 **Fix:** For any Delta Lake table, set `dataSourceFileType: 2` (DeltaParquet) and point `Path` at the table root (for example, `Tables/<schema>/<table>`).
 
 ### Expose an FK column twice
 
-If the same physical column needs to be both joined on and used as a custom attribute, expose it *only* through the join's `ExportName`. Putting the same name in both `Columns` and `Join.SourceColumnName` of the same dataset is rejected by the validator.
+If the same physical column needs to be both joined on and used as a custom attribute, expose it *only* through the join's `ExportName`. The validator rejects using the same name in both `Columns` and `Join.SourceColumnName` of the same dataset.
 
 ### Finance attribute on a non-numeric type
 
-`FinanceImportType` set to anything other than `None` requires `SourceDataType` to be `Integer` or `Float`. Other types don't pass the validation.
+Setting `FinanceImportType` to anything other than `None` requires `SourceDataType` to be `Integer` or `Float`. Other types don't pass the validation.
 
 ### OneLake path conventions
 
-For a managed Delta table on OneLake, the `Path` looks like `/<lakehouseId>/Tables/<schema>/<table>` (`dbo` is the Fabric default schema). Pointing at a deeper file, or at `_delta_log/`, will fail.
+For a managed Delta table on OneLake, the `Path` looks like `/<lakehouseId>/Tables/<schema>/<table>` (`dbo` is the Fabric default schema). Pointing at a deeper file, or at `_delta_log/`, fails.
 
 ### Timestamps not on the Event dataset
 
