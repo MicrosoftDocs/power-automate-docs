@@ -1,21 +1,18 @@
 ---
-title: Create a process from normalized schema (preview)
+title: Create a process from normalized schema
 description: Create a Process Mining process using normalized schema ingestion in Power Automate. Discover how to import event logs with a JSON config and map attributes easily.
 #customer intent: As a process analyst, I want to start a new process from a normalized schema config file, so that I can ingest event logs that are already laid out across multiple tables.
-ms.date: 06/05/2026
+ms.date: 08/17/2026
 author: rosikm
 ms.author: michalrosik
 ms.reviewer: angieandrews
 ms.topic: how-to
+ai-usage: ai-assisted
 ---
 
-# Create a process from normalized schema (preview)
-
-[!INCLUDE[cc-preview-features-top-note](./includes/cc-preview-features-top-note.md)]
+# Create a process from normalized schema
 
 This article walks you through importing event data laid out as a **star schema** (one Event table + optional Case table + lookup tables) into Power Automate Process Mining, from the UX side. You can find details about authoring the JSON configuration that drives the ingestion in [Normalized schema JSON authoring](process-mining-normalized-import-authoring-guide.md).
-
-[!INCLUDE[cc_preview_features_definition](includes/cc-preview-features-definition.md)]
 
 ## Prerequisites
 
@@ -25,10 +22,10 @@ Make sure you have:
 - Respective prerequisites are met:
   - **OneLake**: Learn more in [Ingest data from Fabric OneLake](process-mining-files-fabric-onelake.md#prerequisites)
   - **ADLS Gen2**: Learn more in [Bring your own Azure Data Lake Storage Gen2](process-mining-byo-azure-data-lake.md#prerequisites) or [Bring your own network isolated Azure Data Lake Storage Gen2](process-mining-byo-azure-data-lake-private.md#prerequisites)
-- Your event data is already published as tables/files in one of the supported sources:
-  - **OneLake / Microsoft Fabric**: A lakehouse with managed Delta tables, or loose Parquet/CSV files under the `Files/` area.
+- Your event data is already published as tables or files in one of the supported sources:
+  - **OneLake / Microsoft Fabric**: A lakehouse with managed Delta tables, or loose Parquet or CSV files under the `Files/` area.
   - **Azure Data Lake Storage Gen2**: A container with CSV, Parquet, or Delta-Parquet folders.
-- A **JSON config file** describing your tables and how they map to Process Mining attributes. See the [authoring guide](process-mining-normalized-import-authoring-guide.md) for how to write it
+- A **JSON config file** describing your tables and how they map to Process Mining attributes. Learn how to write it in [authoring guide](process-mining-normalized-import-authoring-guide.md).
 
   The JSON also carries the storage backend details (workspace/lakehouse IDs for OneLake, or subscription/resource group/storage account/container for ADLS Gen2). You don't pick the backend in the UI&mdash;it's read from the JSON.
 
@@ -57,20 +54,20 @@ Perform the steps in this section in the **New Process** window.
 1. (Optional) **Description**: Short context about what this process tracks.
 1. Select **Continue**.
 
-The service parses the JSON and runs the normalized-schema validator end-to-end before continuing. This takes a few seconds.
+The service parses the JSON and runs the normalized-schema validator end-to-end before continuing. This step takes a few seconds.
 
 If the JSON fails to load, fix the JSON locally, browse the corrected file again, and select **Continue**. The full validation checklist is in [Normalized schema JSON authoring](process-mining-normalized-import-authoring-guide.md#validation-checklist).
 
 ## Step 3: Review and adjust the attribute mapping
 
-When the JSON passes validation, the **Mapping** screen opens. It's pre-populated from your JSON&mdash;every entry in `miningMetadata.ImportConfiguration.Attributes` becomes a row here, already paired with its physical column (either a direct column or one surfaced through a join's `ExportName`).
+When the JSON passes validation, the **Mapping** screen opens. It's prepopulated from your JSON&mdash;every entry in `miningMetadata.ImportConfiguration.Attributes` becomes a row here, already paired with its physical column (either a direct column or one surfaced through a join's `ExportName`).
 
 Use this screen to **review and adjust** the mapping.
 
-If you find something that can't be fixed here, cancel out, fix the JSON, and restart from [Step 1: Open Process Mining and start a new process](#step-1-open-process-mining-and-start-a-new-process).
+If you find something that you can't fix here, cancel out, fix the JSON, and restart from [Step 1: Open Process Mining and start a new process](#step-1-open-process-mining-and-start-a-new-process).
 
 ## Step 4: Save and analyze
 
 When the mapping looks correct, select **Save and analyze**.
 
-For detail on any field or error, go to the corresponding section of [Normalized schema JSON authoring](process-mining-normalized-import-authoring-guide.md).
+Get details on a field or error in the corresponding section of [Normalized schema JSON authoring](process-mining-normalized-import-authoring-guide.md).

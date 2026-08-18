@@ -7,9 +7,9 @@ contributors:
   - v-aangie
   - jhaskett-msft
 ms.topic: overview
-ms.date: 01/16/2026
+ms.date: 08/17/2026
 ms.update-cycle: 180-days
-ms.author: matow
+ms.author: jofernan
 ms.reviewer: angieandrews
 ms.contributors:
   - appapaio
@@ -18,25 +18,27 @@ ms.contributors:
   - kisubedi
 ms.custom: bap-template
 ms.collection: bap-ai-copilot
+ai-usage: ai-assisted
 ---
 
 # Copilot in Power Automate
 
-Copilot in Power Automate accelerates your journey to adopting automation and transforming your processes. It enhances these scenarios by using the instructions you give Copilot written in natural language to surface possible solutions that can achieve desired results. Copilot stays with you all the way during creation to guide you through your entire process.
+Copilot in Power Automate helps you adopt automation and transform your processes. It uses the instructions you give in natural language to suggest solutions that achieve your goals. Copilot guides you through the entire creation process.
 
 Use the following sections to learn how to use Copilot features in Power Automate.
 
 ## Copilot in cloud flows
 
-Copilot in cloud flows allows you to create automation that helps streamline your workflow through quick and easy natural language expressions. You can create a flow by describing what you need through multiple steps of conversation.
+Copilot in cloud flows helps you create automation that streamlines your workflow. Use natural language to describe what you need through multiple steps of conversation.
 
 - [Create a cloud flow using Copilot](create-cloud-flow-using-copilot.md#create-a-cloud-flow-using-copilot)
+- [Call Microsoft Copilot Studio agents from Power Automate](call-copilot-studio-agent.md)
 - [Get contextual help with flows from the Microsoft Copilot Studio bot](contextual-help-bot.md)
 - [Use flows as plugins in Copilot for Microsoft 365 (preview)](flow-plugins-m365.md)
 
 ## Copilot in Process Mining
 
-Copilot in Process Mining *ingestion* navigates you through the ingestion experience in Process Mining. Copilot in Process Mining process *analytics* helps you generate process insights through natural language. Copilot can then take the data you collected and easily summarize findings from it quantitatively and qualitatively.
+Copilot in Process Mining *ingestion* guides you through the ingestion experience in Process Mining. Copilot in Process Mining process *analytics* helps you generate process insights through natural language. Copilot can take the data you collected and summarize findings from it quantitatively and qualitatively.
 
 - [Copilot in Process Mining ingestion](process-mining-copilot-in-ingestion.md)
 - [Copilot in Process Mining process analytics](process-mining-copilot-in-process-analytics.md)
@@ -61,7 +63,7 @@ Copilot in automation center enables makers, business analysts, and members of t
 
 ## Enable or disable Copilot in Power Automate
 
-If a region has GPUs (UK, Australia, US, India), we turn on Copilot by default. In this scenario, an admin needs to contact support and they use a PowerShell script to turn it off only at tenant level. Environment level support isn't available. If a region doesn't have GPUs (everywhere else except sovereign clouds), we turn on Copilot by default by toggling on the cross-geo data sharing. In this scenario, if you want to disable Copilot, you can toggle off the cross-geo data sharing in Power Platform admin center at the tenant level.
+If a region has GPUs (UK, Australia, US, India), Microsoft turns on Copilot by default. In this scenario, an admin needs to contact support and they use a PowerShell script to turn it off only at tenant level. Environment level support isn't available. If a region doesn't have GPUs (everywhere else except sovereign clouds), Microsoft turns on Copilot by default by toggling on the cross-geo data sharing. In this scenario, if you want to disable Copilot, you can toggle off the cross-geo data sharing in Power Platform admin center at the tenant level.
 
 Learn more in [Availability by region](regions-overview.md#region-availability-for-power-automate-cloud-flows-with-copilot).
 
