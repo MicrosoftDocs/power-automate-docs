@@ -34,7 +34,7 @@ Overall, custom actions in Power Automate for desktop provide a powerful way to 
 
 ## Prerequisites
 
-- Latest version of Power Automate for desktop – [Install Power Automate](../../../desktop-flows/install.md#install-power-automate-using-the-msi-installer)
+- Latest version of Power Automate for desktop – [Install Power Automate](../../../desktop-flows/install.md#install-power-automate-by-using-the-msi-installer)
 - C# authoring tool such as [Visual Studio Community/Professional/Enterprise 2022](https://visualstudio.microsoft.com/vs/) with the .NET desktop development workload
 - Custom actions SDK – [NuGet Gallery | Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK](https://www.nuget.org/packages/Microsoft.PowerPlatform.PowerAutomate.Desktop.Actions.SDK/)
 - Digital certificate:
