@@ -53,7 +53,7 @@ The **clientversion** property in the **Metadata** column shows the last Power A
 
 ## Roll back Power Automate  
 
-Rolling back Power Automate isn't supported. The latest version is always installed when you download using an [MSI installer](../install.md#install-power-automate-using-the-msi-installer) or from [Microsoft Store](../install.md#install-power-automate-from-microsoft-store).
+Rolling back Power Automate isn't supported. The latest version is always installed when you download using an [MSI installer](../install.md#install-power-automate-by-using-the-msi-installer) or from [Microsoft Store](../install.md#install-power-automate-from-microsoft-store).
 
 > [!IMPORTANT]
 > - If you require access to an older version for business continuity purposes, contact Microsoft Support.
