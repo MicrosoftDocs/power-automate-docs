@@ -137,4 +137,3 @@ The minimum access level for each privilege is basic (user). More information: [
 
 > [!IMPORTANT]
 > Assigning only the privileges listed in [Roles and privileges](#roles-and-privileges) may not be sufficient if other required Dataverse or Power Platform permissions normally granted by *Basic User* or *Environment Maker* are missing.
-
