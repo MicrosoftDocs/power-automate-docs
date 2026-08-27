@@ -52,24 +52,6 @@ landingContent:
             url: desktop-flow-coding-guidelines/monitor-automation.md
 
   # Card 
-  - title: Planning a Power Automate project
-    linkLists:
-       - linkListType: get-started
-         links:
-          - text: Introduction
-            url: planning/introduction.md       
-          - text: Planning phase
-            url: planning/planning-phase.md
-          - text: Designing phase
-            url: planning/process-design.md
-          - text: Making phase
-            url: planning/making-phase.md
-          - text: Testing phase
-            url: planning/testing-strategy.md
-          - text: Deploying and refining phase
-            url: planning/deploy-to-production.md
-  
-  # Card 
   - title: Robotic Process Automation with SAP
     linkLists:
        - linkListType: overview

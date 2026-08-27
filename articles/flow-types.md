@@ -44,7 +44,7 @@ Your Power Automate license gives you rights to create and manage flows in Power
 
 ## Related information
 
-- [Determine which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
+- [Determine which automation method (flow type) to use](/power-apps/maker/plan-designer/plan-designer)
 - [Overview of cloud flows](overview-cloud.md)
 - [Introduction to desktop flows](./desktop-flows/introduction.md)
 - [Add canvas apps and cloud flows to a solution in Power Apps](/power-apps/maker/canvas-apps/add-app-solution-default)

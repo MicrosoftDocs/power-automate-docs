@@ -933,6 +933,111 @@
       "source_path": "articles/desktop-flows/how-to/ui-automation-change-timeout-cofiguration.md",
       "redirect_url": "/power-automate/desktop-flows/how-to/ui-automation-change-timeout-configuration",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/adding-analytical-data.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/analyze-and-assess.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/application-lifecycle-management.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/attended-unattended.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/authentication-security.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/decision-making-flow.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/define-input-output.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/deploy-to-production.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/determine-automation-methods.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/discover-performance-issues.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/formalizing-messages-alerts.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/introduction.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/making-phase.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/planning-phase.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/process-design.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/reducing-risk.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/separate-flows.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/testing-strategy.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/tools-and-settings.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/transforming-formatting-data.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/planning/various-types-process-automation.md",
+      "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
+      "redirect_document_id": false
     }
   ]
 }
