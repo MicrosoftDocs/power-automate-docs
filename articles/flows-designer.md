@@ -105,7 +105,6 @@ To test your flow, follow the instructions. In this example, you must send an em
 
 :::image type="content" source="media/flows-designer/test-result.png" alt-text="Screenshot highlighting the appearance of the green check mark for successful test results.":::
 
-Testing is part of the planning for a Power Automate project. Learn more in [Introduction: Planning a Power Automate project](guidance/planning/introduction.md).
 
 ## More commands
 

@@ -95,7 +95,7 @@ additionalContent:
     - title: Best practices guidance
       links:
         - text: Plan a Power Automate project
-          url: ./guidance/planning/introduction.md
+          url: /power-apps/maker/plan-designer/plan-designer
         - text: Manage, govern, and scale adoption with the Automation Kit
           url: ./guidance/automation-kit/overview/introduction.md
         - text: Apply best practices for automation adoption

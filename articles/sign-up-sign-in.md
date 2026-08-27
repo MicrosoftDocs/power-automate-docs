@@ -64,7 +64,7 @@ In many cases, you can register for Power Automate by following the process desc
 
 ## Related information
 
-- Get help planning your [cloud flow project](./guidance/planning/introduction.md).
+- Get help planning your [cloud flow project](/power-apps/maker/plan-designer/plan-designer).
 
 
 
