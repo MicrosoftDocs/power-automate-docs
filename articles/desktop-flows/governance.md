@@ -1,9 +1,9 @@
----
+﻿---
 title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: NikosMoutzourakis
 ms.topic: article
-ms.date: 04/22/2025
+ms.date: 08/28/2026
 ms.update-cycle: 180-days
 ms.author: nimoutzo
 ms.reviewer: matp
@@ -95,6 +95,18 @@ You can use the following registry entry to keep users from logging into Power A
 ## Restrict access to Power Automate for desktop
 
 To restrict access to Power Automate for desktop on a workstation with Windows 10 or Windows 11, use [App locker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
+
+## Prevent users from accessing Developer tools
+
+Use the following registry entry to prevent users from accessing Developer tools in Power Automate for desktop.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| HKEY_LOCAL_MACHINE | SOFTWARE\Microsoft\Power Automate Desktop | DisableDevTools | DWORD |
+
+***Value***
+
+- **1**: Users can't access Developer tools in Power Automate for desktop.
 
 ## Configure Power Automate for desktop to use the Web Account Manager (WAM) as a fallback sign in method
 
@@ -498,7 +510,6 @@ To prevent your users from using any copilot capability contact Microsoft Custom
 ## Related information
 
 - [Create Power Automate desktop flows](create-flow.md).
-- [Run desktop flows](run-desktop-flow.md).
 - [Manage desktop flows](manage.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
