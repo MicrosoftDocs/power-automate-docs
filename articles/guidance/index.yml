@@ -1,19 +1,19 @@
 ### YamlMime:Landing
 
 title: Power Automate guidance documentation
-summary: Power Automate guidance documentation provides best practice information from the team that works with our enterprise customers. We regularly add and update the guidance content. 
+summary: Explore Power Automate guidance and best practices from the team that works with enterprise customers. Learn how to build, secure, monitor, and govern automation.
 
 metadata:
-  title: Power Automate guidance documentation
-  description: Provides best practice guidance information for Power Automate.
+  title: Power Automate Guidance and Best Practices
+  description: Explore Power Automate guidance and best practices for building, securing, monitoring, and governing enterprise cloud and desktop flows.
   services: service
   
   ms.subservice: guidance
   ms.topic: landing-page 
   ms.collection: collection
-  author: taiki-yoshida
-  ms.author: tayoshi
-  ms.date: 05/23/2025
+  author: erikadoyle
+  ms.author: edoyle
+  ms.date: 08/27/2026
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -26,9 +26,9 @@ landingContent:
          links:
           - text: Overview
             url: coding-guidelines/index.md
-          - text: Coding guidelines
+          - text: Use consistent naming conventions
             url: coding-guidelines/use-consistent-naming-conventions.md
-          - text: Design secure cloud flows
+          - text: Secure data used in cloud flows
             url: coding-guidelines/use-secure-inputs-outputs-triggers.md
           - text: Integrate cloud flows with Power Apps
             url: coding-guidelines/integrating-cloud-flows-power-apps.md
@@ -52,7 +52,7 @@ landingContent:
             url: desktop-flow-coding-guidelines/monitor-automation.md
 
   # Card 
-  - title: Robotic Process Automation with SAP
+  - title: Robotic process automation with SAP
     linkLists:
        - linkListType: overview
          links:
@@ -64,8 +64,8 @@ landingContent:
             url: rpa-sap-playbook/action-based-sap-gui-automation-manually-overview.md
           - text: Use no-code RPA with SAP GUI
             url: rpa-sap-playbook/action-based-sap-gui-automation-recorder-overview.md
-          - text: Conclusion
-            url: rpa-sap-playbook/conclusion.md
+          - text: Prerequisites
+            url: rpa-sap-playbook/prerequisites.md
 
   # Card 
   - title: Automation Kit for Power Platform
@@ -74,8 +74,12 @@ landingContent:
          links:
           - text: Overview
             url: automation-kit/overview/introduction.md       
-          - text: Setup
-            url: automation-kit/setup/main.md
+          - text: Setup checklist
+            url: automation-kit/setup/setup-checklist.md
+          - text: Configure the Automation Kit
+            url: automation-kit/configure-automation-kit.md
+          - text: Control Center overview
+            url: automation-kit/control-center-overview.md
           - text: Use the Automation kit
             url: automation-kit/use-automation-kit.md
 
@@ -94,8 +98,8 @@ landingContent:
          links:
           - text: Automation admin and governance
             url: ./automation-coe/automation-admin-gov.md
-          - text: Automation Kit for Power Platform
-            url: ./automation-kit/overview/introduction.md
+          - text: Automation adoption strategy
+            url: ./automation-coe/strategy.md
           - text: Manage Power Automate for desktop on Windows
             url: ./automation-coe/manage-pad-on-windows.md  
           - text: Building custom action for Power Automate for desktop

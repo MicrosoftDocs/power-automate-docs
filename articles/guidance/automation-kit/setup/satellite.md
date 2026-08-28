@@ -14,10 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/21/2023
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Set up the automation kit satellite components
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 This article includes the manual install process for the Satellite solution of the automation kit. There's an automated [command line installer](./command-line-install.md) that will also guide you through this process.
 

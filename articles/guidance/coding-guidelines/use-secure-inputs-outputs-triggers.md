@@ -8,7 +8,7 @@ ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 07/30/2026
 ms.author: stc
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 contributors: 
   - llistephanie
   - manuelap-msft

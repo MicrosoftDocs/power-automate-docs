@@ -7,7 +7,7 @@ ms.date: 11/20/2023
 ms.service: power-automate
 ms.subservice: guidance
 ms.author: jaypadimiti
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 contributors: 
   - jpad5
 search.audienceType: 

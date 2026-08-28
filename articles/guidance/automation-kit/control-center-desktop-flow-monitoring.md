@@ -9,12 +9,14 @@ ms.custom: guidance
 ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/08/2023
+ms.date: 08/27/2026
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Control Center desktop flow monitoring
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 In the Automation Kit, the Control Center offers comprehensive desktop flow monitoring capabilities, allowing users to check the health of all running processes. This monitoring feature provides users with the option to view the overall status of processes at a general level and the ability to drill down to individual process details.
 

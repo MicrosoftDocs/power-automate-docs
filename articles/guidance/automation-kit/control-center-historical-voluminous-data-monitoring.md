@@ -9,12 +9,14 @@ ms.custom: guidance
 ms.topic: concept-article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/04/2023
+ms.date: 08/27/2026
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Automation Kit Control Center - Historical Voluminous Data Monitoring
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 The Automation Kit Control Center offers two powerful options for historical data monitoring: "Historical Analytics Dashboard using Data Warehouse Approach" and "TDS Desktop Flows Monitoring." These options are suitable when monitoring Desktop flows at scale for large volumes of transactional logs.
 

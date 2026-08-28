@@ -10,10 +10,12 @@ ms.custom: guidance
 ms.topic: install-set-up-deploy
 ms.date: 07/01/2024
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Install the automation kit using the command line
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 To install the latest version of the automation kit using the command line, follow the steps in this article. If you're unable to use the command line tools, you can use the manual steps  in [Set up the automation kit](./main.md) and [Set up satellites](./satellite.md).
 

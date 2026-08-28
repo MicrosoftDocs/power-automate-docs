@@ -11,10 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/04/2023
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Set up the automation kit control center
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 When you install the managed Power Platform control center solution, make sure you follow these required steps.
 

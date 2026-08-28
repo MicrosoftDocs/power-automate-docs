@@ -8,7 +8,7 @@ ms.date: 09/28/2022
 ms.service: power-automate
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 search.audienceType: 
   - admin
 ---

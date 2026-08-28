@@ -2,12 +2,12 @@
 title: Optimize flow performance
 description: Learn how to optimize workflows in Power Automate for faster execution and fewer errors with these best practices.
 #customer intent: As a Power Automate maker, I want to optimize flow performance so that my workflows execute faster and with fewer errors.  
-author: PetrosFeleskouras
+author: yiannismavridis
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 06/25/2025
-ms.author: pefelesk
-ms.reviewer: jhaskett-msft
+ms.date: 08/27/2026
+ms.author: iomavrid
+ms.reviewer: edoyle
 search.audienceType:
   - admin
   - flowmaker
@@ -51,7 +51,7 @@ Identify potential points of failure within your flow and handle them with the i
 
 - Handle errors for groups of actions with the **On block error** action.
 
-- Retrieve the latest occurred error and use it in later actions with the **Get last error** action.
+- Retrieve the latest error and use it in later actions with the **Get last error** action.
 
 - Use the **Stop flow** action to stop the flow gracefully.
 
@@ -67,7 +67,7 @@ Using wait actions and timeouts can help improve flow performance and reliabilit
 
     :::image type="content" source="media/optimize-flow-performance/wait-for.png" alt-text="Screenshot showing Wait for actions in flow designer." lightbox="media/optimize-flow-performance/wait-for.png":::
 
-- Configure the **Flow timeout** property to specify the maximum allowed time that the flow is allowed to run.
+- Configure the **Flow timeout** property to specify the maximum allowed time that the flow can run.
 
     :::image type="content" source="media/optimize-flow-performance/flow-timeout.png" alt-text="Screenshot of the Flow properties dialog highlighting Flow timeout configuration." lightbox="media/optimize-flow-performance/flow-timeout.png":::
 
