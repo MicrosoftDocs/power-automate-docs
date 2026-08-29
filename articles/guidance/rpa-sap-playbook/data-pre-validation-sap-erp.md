@@ -11,7 +11,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 06/01/2021
 ms.author: mapichle
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ms.custom:
   - guidance
   - sfi-image-nochange
@@ -23,7 +23,7 @@ ms.custom:
 >This is an optional step.
 
 
-This is an optional topic that covers the [certified](https://www.sap.com/dmc/exp/2013_09_adpd/enEN/#/solutions?id=s:d0dcda07-de96-4870-bcad-dac797207da5) [SAP ERP connector](/connectors/saperp/) which allows automation developers to connect to SAP through Business API (BAPI) and remote function calls (RFCs). The prerequisites you'll need to meet before performing this check are [described in a blog post](https://powerapps.microsoft.com/blog/introducing-the-sap-erp-connector/).
+This is an optional topic that covers the certified [SAP ERP connector](/connectors/saperp/), which allows automation developers to connect to SAP through Business API (BAPI) and remote function calls (RFCs). The prerequisites you'll need to meet before performing this check are [described in a blog post](https://powerapps.microsoft.com/blog/introducing-the-sap-erp-connector/).
 
 Let's extend our current scenario to include a validation check that uses the SAP ERP connector to check whether the personnel number supplied to the flow is valid and that the employee is in an active employment state. Depending on the results of this check, we'll decide whether the flow ends.
 

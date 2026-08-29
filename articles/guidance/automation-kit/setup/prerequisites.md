@@ -13,10 +13,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/21/2023
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Prerequisites to install and use the automation kit
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 The following prerequisites are required to install and use the automation kit.
 

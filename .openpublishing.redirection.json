@@ -1038,6 +1038,66 @@
       "source_path": "articles/guidance/planning/various-types-process-automation.md",
       "redirect_url": "/power-apps/maker/plan-designer/plan-designer",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/business-approvals-templates/approvals-kit-comparison.md",
+      "redirect_url": "/power-automate/approvals-howto",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/business-approvals-templates/configure-preset-approvals.md",
+      "redirect_url": "/power-automate/approvals-howto",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/business-approvals-templates/content.md",
+      "redirect_url": "/power-automate/approvals-howto",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/business-approvals-templates/frequently-asked-questions.md",
+      "redirect_url": "/power-automate/approvals-howto",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/business-approvals-templates/introduction.md",
+      "redirect_url": "/power-automate/approvals-howto",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/business-approvals-templates/limitations.md",
+      "redirect_url": "/power-automate/approvals-howto",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/business-approvals-templates/nurture.md",
+      "redirect_url": "/power-automate/approvals-howto",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/business-approvals-templates/process-approval-requests.md",
+      "redirect_url": "/power-automate/approvals-howto",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/business-approvals-templates/setup.md",
+      "redirect_url": "/power-automate/approvals-howto",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/business-approvals-templates/setup-out-of-office-and-delegation.md",
+      "redirect_url": "/power-automate/approvals-howto",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/business-approvals-templates/trigger-approvals.md",
+      "redirect_url": "/power-automate/approvals-howto",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "articles/guidance/business-approvals-templates/user-journey.md",
+      "redirect_url": "/power-automate/approvals-howto",
+      "redirect_document_id": false
     }
   ]
 }

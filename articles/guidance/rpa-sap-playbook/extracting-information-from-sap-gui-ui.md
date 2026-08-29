@@ -118,7 +118,7 @@ If you want to see the contents of the VBScriptOutput, you can use a display mes
 
 The low-code approach uses actions and custom selectors to extract newly generated record IDs or other status messages that are important for downstream flow processing.
 
-The following steps won't go into detail about how to record or use manual action design to create a new SAP PM Notification record. Please review [Low-code](action-based-sap-gui-automation-manually-overview.md) or [No-code RPA with SAP GUI in Power Automate Desktop](action-based-SAP-GUI-automation-recorder-overview.md) if you need a refresher on how to do that.<!--note from editor: These links correspond to "section 6 or 7" in the Word doc, perhaps they're the right ones?-->
+The following steps won't go into detail about how to record or use manual action design to create a new SAP PM Notification record. Please review [Low-code](action-based-sap-gui-automation-manually-overview.md) or [No-code RPA with SAP GUI in Power Automate Desktop](action-based-sap-gui-automation-recorder-overview.md) if you need a refresher on how to do that.<!--note from editor: These links correspond to "section 6 or 7" in the Word doc, perhaps they're the right ones?-->
 <!--confirm the numbers for the sections-->
 
 Follow these steps for a low-code approach:

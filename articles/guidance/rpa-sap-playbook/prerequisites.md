@@ -29,13 +29,13 @@ To build RPA solutions with Power Automate, you'll need one or more of the follo
 
 ## Software requirements
 
-Before you can use your device to create desktop flows and Power Automate Desktop processes, you'll need to ensure that it meets the requirements outlined in [Set up Power Automate Desktop](../../desktop-flows/setup.md).
+Before you can use your device to create desktop flows and Power Automate Desktop processes, ensure that it meets the [system requirements](../../desktop-flows/requirements.md).
 
 The following software components are required on Windows 10 Pro devices:
 
 - [The latest version of .NET Framework](https://dotnet.microsoft.com/download/dotnet-framework)(a reboot might be required)
 
-- [The latest version of desktop flows](../../desktop-flows/setup.md), which includes Power Automate Desktop and browser extensions (make sure you've enabled the browser extensions)
+- [The latest version of Power Automate](../../desktop-flows/install.md), which includes Power Automate for desktop and browser extensions (make sure you've enabled the browser extensions)
 
 - [Microsoft Edge](https://www.microsoft.com/edge/) or Google Chrome browser
 
@@ -73,7 +73,7 @@ Before you can use the SAP scripting engine, configure or confirm the following:
      >[!TIP]
      >You can select **Allow** as **Default Action** to avoid a security dialog appearing during file save operations.
 
-5. **Gather use-case reference test data**: Search for an active employee in your SAP system and make a note of their **Personnel number**. Also make a note of a valid **Info subtype** (for example, **2 = Temporary address**). 
+5. **Gather use-case reference test data**: Search for an active employee in your SAP system and make a note of their **Personnel number**. Also make a note of a valid **Info subtype** (for example, **2 = Temporary address**).
 
    >[!NOTE]
    >The address format we're using in the sample use case is based on US requirements. Depending on your requirements, the field list and mandatory fields might be different, so make sure you select controls that are relevant to your setup.

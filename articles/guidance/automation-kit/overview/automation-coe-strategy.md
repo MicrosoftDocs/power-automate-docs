@@ -12,10 +12,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Automation Center of Excellence strategy with the Automation Kit
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 The Automation Kit, along with the [ALM Accelerator](/power-platform/guidance/coe/almacceleratorpowerplatform-components) from the [Power Platform CoE Kit](/power-platform/guidance/coe/starter-kit), supports your Automation Center of Excellence strategy.
 

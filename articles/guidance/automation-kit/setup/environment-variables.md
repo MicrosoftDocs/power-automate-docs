@@ -11,13 +11,15 @@ editor: ''
 ms.topic: how-to
 ms.date: 04/21/2023
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ms.custom:
   - guidance
   - sfi-image-nochange
 ---
 
 # Configure automation kit environment variables
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 In this article, you'll learn how to configure the automation kit environment variables. To get the information for the environment variables, open a new tab.
 

@@ -2,12 +2,12 @@
 title: Secure your data
 description: Secure your Power Automate workflows by managing credentials, sensitive variables, and access to desktop flows.
 #customer intent: As a Power Automate maker, I want to secure my workflows so that I can protect sensitive data and ensure compliance with security standards.  
-author: PetrosFeleskouras
+author: yiannismavridis
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 06/25/2025
-ms.author: pefelesk
-ms.reviewer: jhaskett-msft
+ms.date: 08/27/2026
+ms.author: iomavrid
+ms.reviewer: edoyle
 search.audienceType:
   - admin
   - flowmaker
@@ -23,7 +23,7 @@ Protecting sensitive data is critical when automating processes with Power Autom
 
 ## Set up Power Automate credentials
 
-Create, edit, and share Power Automate credentials using [Azure Key Vault](../../desktop-flows/create-AzureKeyVault-credential.md) or [CyberArk](../../desktop-flows/create-cyberark-credential.md). Use them in desktop flow connections, desktop flows, or network connections.
+Create, edit, and share Power Automate credentials by using [Azure Key Vault](../../desktop-flows/create-AzureKeyVault-credential.md) or [CyberArk](../../desktop-flows/create-cyberark-credential.md). Use them in desktop flow connections, desktop flows, or network connections.
 
 :::image type="content" source="media/secure-your-data/credentials.png" alt-text="Screenshot of the Power Automate credentials setup screen.":::
 
@@ -38,11 +38,11 @@ Create, edit, and share Power Automate credentials using [Azure Key Vault](../..
 
 > [!TIP]
 > - In desktop flows, use the **Get credential** action to retrieve sensitive values instead of passing them as input variables. This practice ensures credential variables are marked as sensitive by default and aren't stored in the flow run logs.
-> - Another way to retrieve application or file credentials is through environment variables, using the Dataverse connector's action **Perform an unbound action in selected environment** in desktop flows. Make sure to mark the output of that action as sensitive. Learn more about [using environment variables for Azure Key Vault secrets](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets).
+> - Another way to retrieve application or file credentials is through environment variables, by using the Dataverse connector's action **Perform an unbound action in selected environment** in desktop flows. Ensure to mark the output of that action as sensitive. Learn more about [using environment variables for Azure Key Vault secrets](/power-apps/maker/data-platform/environmentvariables-azure-key-vault-secrets).
 
 ## Use sensitive variables
 
-The values of sensitive variables are masked during debugging in the flow designer, and they aren't stored in flow run logs.
+The flow designer masks the values of sensitive variables during debugging, and it doesn't store them in flow run logs.
 
 - Mark as sensitive all variables that store and use sensitive data, including input, output, and flow variables.
 
@@ -69,11 +69,11 @@ Learn more about [managing desktop flows access](../../desktop-flows/manage.md#m
 
 ## Manage access to the desktop flow's related components
 
-While sharing a desktop flow that references other Power Platform components, ensure that end users have appropriate access to the connectors as well.
+When you share a desktop flow that references other Power Platform components, ensure that end users have appropriate access to the connectors.
 
-Access is managed either through the dedicated page of each component in the Power Automate Portal or through a Dataverse security role that grants access to the records in the component's table.
+Manage access through the dedicated page of each component in the Power Automate portal or through a Dataverse security role that grants access to the records in the component's table.
 
-The following table lists the most common components that may be referenced by a desktop flow, how to reference them through the flow, the location of their access management settings, and their respective Dataverse tables.
+The following table lists the most common components that a desktop flow might reference, how to reference them through the flow, the location of their access management settings, and their respective Dataverse tables.
 
 | **Component**           | **How to reference component in  designer**                                       | **Access management settings**                                                                                                                                                                                                        | **Dataverse table**                                                                                                                                                                                                           |
 |--------------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -82,7 +82,7 @@ The following table lists the most common components that may be referenced by a
 | Credentials              | Use the **Get credential** action                                                | [Share a credential](../../desktop-flows/create-AzureKeyVault-credential.md#share-a-credential)                                                                                                                                | [Credential](/power-apps/developer/data-platform/reference/entities/credential)                                                                                                                                               |
 | UI elements collections  | Open **Assets Library** and add the collection                                   | [Share a UI elements collection](../../desktop-flows/manage-ui-elements-collections.md#share-a-ui-elements-collection)                                                                                                         | [Desktop Flow Module](/power-apps/developer/data-platform/reference/entities/desktopflowmodule)                                                                                                                               |
 | Custom actions           | Open **Assets Library** and add the custom action                                | [Share custom actions](../../desktop-flows/upload-custom-actions.md#share-custom-actions)                                                                                                                                      | [Desktop Flow Module](/power-apps/developer/data-platform/reference/entities/desktopflowmodule)                                                                                                                               |
-| Connection references    | Add a cloud connector action and manage through **Connection references** | Access is managed through desktop flow sharing. Learn how to [share desktop flows that contain connector actions](../../desktop-flows/how-to/share-desktop-flows-that-contain-connector-actions.md).                             | [Connection Reference](/power-apps/developer/data-platform/reference/entities/connectionreference)                                                                                                                            |
+| Connection references    | Add a cloud connector action and manage through **Connection references** | Manage access through desktop flow sharing. Learn how to [share desktop flows that contain connector actions](../../desktop-flows/how-to/share-desktop-flows-that-contain-connector-actions.md).                             | [Connection Reference](/power-apps/developer/data-platform/reference/entities/connectionreference)                                                                                                                            |
 > [!TIP]
 > Review the list of additional [automation-related tables](/power-automate/automation-analytics-with-fabric-queries#list-of-automation-related-tables) frequently used for reporting and observability.
 
@@ -90,9 +90,9 @@ The following table lists the most common components that may be referenced by a
 
 Protect your business data by creating and enforcing policies that classify the desktop flow's action groups as **Business** or **Non-business** and to mark actions or action groups as **Blocked**.
 
-:::image type="content" source="media/secure-your-data/data-privacy.png" alt-text="Screenshot of the interface for settting up a new security policy to assign a connector to Business, Non-business, or Blocked." lightbox="media/secure-your-data/data-privacy.png":::
+:::image type="content" source="media/secure-your-data/data-privacy.png" alt-text="Screenshot of the interface for setting up a new security policy to assign a connector to Business, Non-business, or Blocked." lightbox="media/secure-your-data/data-privacy.png":::
 
-For more fine-grained control, select **More actions \>** **Configure connector \> Connector actions** to allow or block individual actions within a given group. Set the **Default connector action settings** to allow or block any new connector actions added to the connector in the future.
+For more fine-grained control, select **More actions** > **Configure connector** > **Connector actions** to allow or block individual actions within a given group. Set the **Default connector action settings** to allow or block any new connector actions added to the connector in the future.
 
 :::image type="content" source="media/secure-your-data/more-actions.png" alt-text="Screenshot of the interface for configuring the default connector action settings to Allow." lightbox="media/secure-your-data/more-actions.png":::
 

@@ -7,7 +7,7 @@ ms.subservice: guidance
 ms.topic: concept-article
 ms.date: 07/01/2024
 ms.author: ashwinrajuk
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 search.audienceType: 
   - admin
 ---
@@ -62,7 +62,7 @@ The detailed Automation Maturity Model captures goals, indicators, and required 
 ## Resources for rolling out an automation program
 
 - [Automation CoE Blueprint](https://aka.ms/autocoeblueprint)
-- [Automation CoE Strategy](https://aka.ms/autocoestrategy)
+- [Automation CoE Strategy](strategy.md)
 - [HEAT](https://aka.ms/rpapnp)
 - [HEAT video series](https://aka.ms/rpapnpvideo)
 - [Admin and Governance Whitepaper](https://aka.ms/autocoeadminwhitepaper)
@@ -73,7 +73,6 @@ The detailed Automation Maturity Model captures goals, indicators, and required 
 
 - [Coca-Cola](https://aka.ms/cocacolaautomationplatform)
 - [Coca-Cola United](https://aka.ms/cocacolaunitedrpa)
-- [TC Energy Bot Wars](https://aka.ms/Bot-Wars)
 - [Inter Pipeline Botwars](https://youtu.be/bzN3CkOt_go?t=1773)
 - [Chemours](https://www.youtube.com/watch?v=ZnSsixwJDQ0)
 - [Customer stories collection](https://aka.ms/powerautomatestories)
