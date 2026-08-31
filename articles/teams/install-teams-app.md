@@ -12,9 +12,9 @@ ms.subservice: teams
 ms.topic: install-set-up-deploy
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 05/04/2020
+ms.date: 08/31/2026
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # Install the Workflows app in Microsoft Teams
@@ -25,7 +25,7 @@ The Workflows app lets you automate your Microsoft Teams activities or and conne
 > The Power Automate app in Teams is now called Workflows. If you still see the Power Automate app, you might need to update the app manually to get the latest changes. To learn how to do this, go to [Update an app in Microsoft Teams](https://support.microsoft.com/office/update-an-app-in-microsoft-teams-3d53d136-5c5d-4dfa-9602-01e6fdd8015b).
 
 1. Sign in to [Microsoft Teams](https://teams.microsoft.com).
-1. Select **View more apps** (**...**), and then search for the **workflows** app.
+1. Select **View more apps** (**...**), and then search for "workflows."
 1. In the search results list, select the **Workflows** app.
 
     :::image type="content" source="media/install-teams-app/install-workflows.png" alt-text="Screenshot of searching for the Workflows app in Teams.":::

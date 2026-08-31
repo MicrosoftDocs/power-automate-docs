@@ -7,12 +7,13 @@ contributors:
   - donums
   - v-aangie  
   - tatn
+  - cyrilanderson
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: overview
-ms.date: 10/30/2024
+ms.date: 08/28/2026
 ms.author: michalrosik
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 search.audienceType: 
   - flowmaker
   - enduser
@@ -20,7 +21,7 @@ search.audienceType:
 
 # Overview of process mining
 
-Process mining is a research area and technology that helps businesses understand their real processes, how they're operated, and identify opportunities for improvement, automation, and digitalization.
+Process mining is a research area and technology that helps businesses understand their real processes, how they operate, and identify opportunities for improvement, automation, and digitalization.
 
 The process mining capability in Power Automate works with the existing Microsoft platform and ecosystem to provide end-to-end solutions and enable faster business decisions. By extracting event data from your system of records, it visualizes the processes happening in your organization, allowing you to customize your process mining reports, compare processes, determine the root cause of inefficiencies, and monitor KPIs.
 
@@ -28,47 +29,51 @@ Overall, the process mining capability is a valuable tool for businesses seeking
 
 ## Benefits of the process mining capability
 
-The business value of the process mining capability lies in its ability to help organizations gain insights into their operational processes and identify areas for improvement. By analyzing event data from various sources, the process mining capability provides a clear view of how processes are actually being executed in practice. This helps businesses to:
+The business value of the process mining capability lies in its ability to help organizations gain insights into their operational processes and identify areas for improvement. By analyzing event data from various sources, the process mining capability provides a clear view of how processes are actually being executed in practice. This view helps businesses to:
 
 - **Improve operational efficiency**: Process mining can help identify bottlenecks and inefficiencies in processes, allowing organizations to streamline their operations and improve productivity.
 - **Enhance customer experience**: By identifying process pain points and eliminating them, organizations can improve the customer experience and increase satisfaction.
 - **Optimize resources**: Process mining enables businesses to identify opportunities for automation, reducing the need for manual intervention and allowing resources to be allocated more effectively.
-- **Ensure compliance**: Process mining can help organizations to identify noncompliant processes and take corrective action to avoid legal and financial risks.
-- **Improve supply chain management processes**: Create processes that help warehouse and operations managers gain insights into the material flow in the warehouse. This can help improve the performance of the warehouse. To learn more, go to [Analyze warehouse material movement through process mining (preview)](/dynamics365/supply-chain/warehousing/warehouse-material-movement-analysis).
+- **Ensure compliance**: Process mining can help organizations identify noncompliant processes and take corrective action to avoid legal and financial risks.
+- **Improve supply chain management processes**: Create processes that help warehouse and operations managers gain insights into the material flow in the warehouse. This insight can help improve the performance of the warehouse. To learn more, see [Analyze warehouse material movement through process mining (preview)](/dynamics365/supply-chain/warehousing/warehouse-material-movement-analysis).
 
 ## Business examples
 
-Overall, process mining provides valuable insights that can help organizations improve their operations, enhance customer satisfaction, and stay competitive in a rapidly changing business landscape.
+Overall, process mining provides valuable insights that help organizations improve their operations, enhance customer satisfaction, and stay competitive in a rapidly changing business landscape.
 
 - **Telecommunications**
-    - Streamline the activation process to reduce wait times.
-    -  Simplify business operations to reduce costs and complexity.
-    - Manage high-volume content analytics.
+
+  - Streamline the activation process to reduce wait times.
+  - Simplify business operations to reduce costs and complexity.
+  - Manage high-volume content analytics.
 
 - **Financial services**
-    - Accelerate the time to value for small and medium-sized businesses.
-    - Ensure compliance by keeping up with regulatory changes and mitigating risks.
-    - Address competition from fintech challengers.
+
+  - Accelerate the time to value for small and medium-sized businesses.
+  - Ensure compliance by keeping up with regulatory changes and mitigating risks.
+  - Address competition from fintech challengers.
 
 - **Manufacturing**
-    - Address supply chain disruptions to ensure timely delivery of products.
-    - Adopt new automations to improve efficiency and productivity.
+
+  - Address supply chain disruptions to ensure timely delivery of products.
+  - Adopt new automations to improve efficiency and productivity.
 
 - **Automotive**
-    - Accelerate transformation to mobility providers to stay competitive in the market.
-    - Identify inefficiencies in production processes, such as long cycle times and frequent downtime.
-    - Identify and address quality issues early, reducing the likelihood of costly recalls or warranty claims.
+
+  - Accelerate transformation to mobility providers to stay competitive in the market.
+  - Identify inefficiencies in production processes, such as long cycle times and frequent downtime.
+  - Identify and address quality issues early, reducing the likelihood of costly recalls or warranty claims.
 
 - **Customer service desk**
 
-    - Identify opportunities for standardization to reduce rework and eliminate pending cases.
-    - Analyze reasons for returns and improve customer satisfaction by monitoring performance.
+  - Identify opportunities for standardization to reduce rework and eliminate pending cases.
+  - Analyze reasons for returns and improve customer satisfaction by monitoring performance.
 
 These areas represent key challenges and opportunities for businesses to improve their operations, stay competitive, and meet the needs of their customers.
 
 ## Components
 
-Following are the main components for the process mining capability:
+The process mining capability includes the following main components:
 
 - [Data requirements](process-mining-processes-and-data.md#data-requirements)
 - [Transform and map data](process-mining-transform.md)
@@ -76,5 +81,3 @@ Following are the main components for the process mining capability:
 - [Use KPIs and visualizations for analytics](process-mining-visualize.md#use-kpis-and-visualizations-for-analytics)
 - [Edit and refresh processes](process-mining-data-source.md)
 - [Share processes](process-mining-share.md)
-
-
