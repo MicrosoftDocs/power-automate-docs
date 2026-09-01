@@ -5,9 +5,9 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 01/16/2024
+ms.date: 08/31/2026
 ms.author: dipapa
-ms.reviewer: matp
+ms.reviewer: smurkute
 contributors:
 - jpapadimitriou
 - Yiannismavridis

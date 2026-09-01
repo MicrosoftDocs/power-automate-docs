@@ -5,9 +5,9 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 09/22/2020
+ms.date: 08/31/2026
 ms.author: nimoutzo
-ms.reviewer: matp
+ms.reviewer: smurkute
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis

@@ -5,9 +5,9 @@ author: nikosmoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 10/19/2023
+ms.date: 08/31/2026
 ms.author: nimoutzo
-ms.reviewer: ndoelman, matp, angieandrews
+ms.reviewer: smurkute
 contributors:
 - NikosMoutzourakis
 search.app: 
@@ -78,4 +78,3 @@ While the inspect UI elements tool is opened, the Power Automate for desktop hig
 [Build a custom selector](build-custom-selectors.md)
 
 [Automate on virtual desktops](virtual-desktops.md)
-

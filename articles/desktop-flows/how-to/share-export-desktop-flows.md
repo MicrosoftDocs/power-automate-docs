@@ -5,9 +5,9 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 07/29/2024
+ms.date: 08/31/2026
 ms.author: nimoutzo
-ms.reviewer: matp
+ms.reviewer: smurkute
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -26,15 +26,15 @@ The copied text can be sent directly to others users or saved to a text file for
 > [!NOTE]
 > When copying actions, all their parameters, images, and UI elements are copied as well. Only one subflow can be copied at a time. If there are more than one subflows, repeat the procedure for each one individually or save the actions into separate text files.
 
-If you signed in with an organization premium account, you can also choose one of the following methods:
+For a desktop flow stored in your organization's Power Platform environment, owners and co-owners can use one of the following methods, subject to environment permissions and governance settings:
 
 1. Share the desktop flow directly through the Power Automate portal.
 
-    To share a desktop flow with other users in your organization, give them specific permissions to access the flow. Learn more about sharing flows through the Power Automate portal at [Share desktop flows](../manage.md#share-desktop-flows) and [Share desktop flows that contain connector actions](../how-to/share-desktop-flows-that-contain-connector-actions.md).
+     To share a desktop flow with other users in your organization, give them specific permissions to access the flow. To learn more about sharing flows through the Power Automate portal, see [Share desktop flows](../manage.md#share-desktop-flows) and [Share desktop flows that contain connector actions](share-desktop-flows-that-contain-connector-actions.md).
 
 1. Export a solution that contains the desktop flow.
 
-    To move a desktop flow from one environment to another, host it in a solution. For more information about importing flows into solutions and building solution-aware flows, see [Overview of solution-aware flows](../../overview-solution-flows.md).
+    To move a desktop flow from one environment to another, host it in a solution. For more information, go to [Introduction to ALM for desktop flows](../alm/alm-intro.md), [Add a desktop flow and connection references to a solution](../alm/alm-solution.md), and [ALM for Power Automate v2 schema](../alm-schema.md).
 
     > [!NOTE]
     > If the solution fails to export because of its size, learn how to [Reduce the size of desktop flows in a solution](../how-to/reduce-flow-size.md).
