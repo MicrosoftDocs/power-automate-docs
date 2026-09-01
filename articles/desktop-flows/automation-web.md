@@ -5,9 +5,9 @@ author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 10/23/2024
+ms.date: 08/31/2026
 ms.author: nimoutzo
-ms.reviewer: matp
+ms.reviewer: smurkute
 contributors:
 - NikosMoutzourakis
 search.audienceType: 
