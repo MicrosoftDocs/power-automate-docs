@@ -5,12 +5,13 @@ author: rosikm
 contributors:
   - rosikm
   - v-aangie
+  - cyrilanderson
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: article
-ms.date: 03/10/2025
-ms.author: lali
-ms.reviewer: angieandrews
+ms.date: 08/28/2026
+ms.author: michalrosik
+ms.reviewer: cyanderson
 search.audienceType:
 - flowmaker
 - enduser
@@ -18,57 +19,57 @@ search.audienceType:
 
 # List of string operations
 
-Following are the string operations that you can use in the Power Automate Process Mining desktop app.
+The following string operations are available in the Power Automate Process Mining desktop app.
 
 [!INCLUDE [papm-operations-note](../includes/papm-operations-note.md)]
 
 ## CONCAT([string1],...,[stringN])
 
-Concatenates given strings.
+Concatenates the specified strings.
 
 **Parameters:**
 
 - **[string1]** - input string
 
-   Data type: STRING
+   Data type: `STRING`
 
 - **[stringN]** - last input string
 
-   Data type: STRING
+   Data type: `STRING`
 
 **Output Data Type**: STRING
 
 ## CONTAINS([string],[value])
 
-Returns TRUE if the string contains the given value, else returns FALSE.
+Returns `true` if the string contains the given value. Otherwise, returns `false`.
 
 **Parameters:**
 
 - **[string]** - input string
 
-   Data type: STRING
+   Data type: `STRING`
 
-- **[value]** - value to be matched in input string
+- **[value]** - value to match in the input string
 
-   Data type: STRING
+   Data type: `STRING`
 
-**Output Data Type**: BOOL
+**Output Data Type**: `BOOL`
 
 ## ENDSWITH([string],[value])
 
-Returns TRUE if string ends with the given value, else returns FALSE.
+Returns `TRUE` if the string ends with the specified value. Otherwise, returns `FALSE`.
 
 **Parameters:**
 
 - **[string]** - input string
 
-   Data type: STRING
+   Data type: `STRING`
 
-- **[value]** - value to match end of input string
+- **[value]** - value to match at the end of the input string
 
-   Data type: STRING
+   Data type: `STRING`
 
-**Output Data Type**: BOOL
+**Output Data Type**: `BOOL`
 
 ## LEFT([string],[count])
 
@@ -78,7 +79,7 @@ Extracts a given number of characters from the left side of a supplied text stri
 
 - **[string]** - input string
 
-   Data type: STRING
+   Data type: `STRING`
 
 - **[count]** - number of characters
 
@@ -94,19 +95,19 @@ Returns the length of the string.
 
 - **[string]** - input string
 
-   Data type: STRING
+   Data type: `STRING`
 
 **Output Data Type**: INT
 
 ## LOWER([string])
 
-Returns a lower-case version of a given text string.
+Returns a lowercase version of a given text string.
 
 **Parameters:**
 
 - **[string]** - input string
 
-   Data type: STRING
+   Data type: `STRING`
 
 **Output Data Type**: STRING
 
@@ -118,7 +119,7 @@ Removes whitespace from the beginning of the string.
 
 - **[string]** - input string
 
-   Data type: STRING
+   Data type: `STRING`
 
 **Output Data Type**: STRING
 
@@ -130,7 +131,7 @@ Extracts a given number of characters from the right side of a supplied text str
 
 - **[string]** - input string
 
-   Data type: STRING
+   Data type: `STRING`
 
 - **[count]** - number of characters
 
@@ -146,35 +147,35 @@ Removes whitespace from the end of the string.
 
 - **[string]** - input string
 
-   Data type: STRING
+   Data type: `STRING`
 
 **Output Data Type**: STRING
 
 ## STARTSWITH([string],[value])
 
-returns TRUE if string starts with the given value, else returns FALSE
+Returns `true` if the string starts with the given value. Otherwise, returns `false`.
 
 **Parameters:**
 
 - **[string]** - input string
 
-   Data type: STRING
+   Data type: `STRING`
 
-- **[value]** - value to be matched
+- **[value]** - value to match
 
-   Data type: STRING
+   Data type: `STRING`
 
-**Output Data Type**: BOOL
+**Output Data Type**: `BOOL`
 
 ## SUBSTRING([string],[start],[count])
 
-Returns substring from the specified start position and by the specified number of characters.
+Returns a substring that starts at the specified position and includes the specified number of characters.
 
 **Parameters:**
 
 - **[string]** - input string
 
-   Data type: STRING
+   Data type: `STRING`
 
 - **[start]** - start position of substring
 
@@ -188,13 +189,13 @@ Returns substring from the specified start position and by the specified number 
 
 ## TOINT([string],[default])
 
-Converts a string to an integer. Returns 0 or default value (optional) if conversion error. occurs
+Converts a string to an integer. Returns 0 or the default value if there's a conversion error.
 
 **Parameters:**
 
-- **[string]** - input string to be converted
+- **[string]** - input string to convert
 
-   Data type: STRING
+   Data type: `STRING`
 
 - **[default]** - default value
 
@@ -204,13 +205,13 @@ Converts a string to an integer. Returns 0 or default value (optional) if conver
 
 ## TOSTRING([int],[format]*)
 
-Converts an integer to a string according to the formatting string (if an optional parameter is specified).
+Converts an integer to a string according to the formatting string (if you specify this optional parameter).
 
 **Parameters:**
 
-- **[int]** - input int value
+- **[int]** - input integer value
 
-   Data type: STRING
+   Data type: `STRING`
 
 - **[format*]** - formatting string
 
@@ -222,7 +223,7 @@ Converts an integer to a string according to the formatting string (if an option
 
 ## TOSTRING([float],[format]*)
 
-Converts a float to a string according to the formatting string (if an optional parameter is specified).
+Converts a float to a string according to the formatting string (if you specify this optional parameter).
 
 **Parameters:**
 
@@ -234,13 +235,13 @@ Converts a float to a string according to the formatting string (if an optional 
 
   [Learn more about formatting strings](/dotnet/standard/base-types/formatting-types)
 
-   Data type: STRING (only fixed string in allowed)
+   Data type: STRING (only fixed string allowed)
 
 **Output Data Type**: STRING
 
 ## TOSTRING([bool])
 
-Converts boolean to a string - "True" or "False".
+Converts a boolean to a string - "True" or "False".
 
 **Parameters:**
 
@@ -252,13 +253,13 @@ Converts boolean to a string - "True" or "False".
 
 ## TOSTRING([date],[format]*)
 
-Converts a date to a string according to the formatting string (if an optional parameter is specified).
+Converts a date to a string according to the formatting string (if you specify this optional parameter).
 
 **Parameters:**
 
 - **[date]** - input date
 
-   Data type: STRING
+   Data type: `STRING`
 
 - **[format*]** - formatting string applied on date
 
@@ -270,13 +271,13 @@ Converts a date to a string according to the formatting string (if an optional p
 
 ## TOSTRING([time],[format]*)
 
-Converts a time to a string according to the formatting string (if an optional parameter is specified).
+Converts a time to a string according to the formatting string (if you specify the optional parameter).
 
 **Parameters:**
 
 - **[time]** - input time
 
-   Data type: STRING
+   Data type: `STRING`
 
 - **[format*]** - formatting string applied on time
 
@@ -294,18 +295,18 @@ Removes whitespace at the beginning and at the end of the string.
 
 - **[string]** - input string
 
-   Data type: STRING
+   Data type: `STRING`
 
 **Output Data Type**: STRING
 
 ## UPPER([string])
 
-Returns upper-case version of a given text string.
+Returns an uppercase version of a given text string.
 
 **Parameters:**
 
 - **[string]** - input string
 
-   Data type: STRING
+   Data type: `STRING`
 
 **Output Data Type**: STRING

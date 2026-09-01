@@ -5,12 +5,13 @@ author: donums
 contributors:
   - donums
   - v-aangie  
+  - cyrilanderson
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 06/19/2025
+ms.date: 08/31/2026
 ms.author: derahonuorah
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # Set up sequential approvals
@@ -35,10 +36,10 @@ Create a flow that triggers when a new response is submitted to a form.
 
 ## Get the manager for the person who created the vacation request
 
-After you create the flow, you need to get the manager for the person who created the vacation request.
+After you create the flow, get the manager for the person who created the vacation request.
 
 > [!NOTE]
-> It's a good idea to periodically save changes to your flow while you work.
+> Save changes to your flow periodically while you work.
 
 1. Select **New step**.
 1. In the **Choose an action** search field, type **get manager**.
@@ -48,7 +49,7 @@ After you create the flow, you need to get the manager for the person who create
 
 ## Get the manager of the requestor’s manager
 
-After you get the manager for the person who created the vacation request, you need to get the manager of the requestor’s manager.
+After you get the manager for the person who created the vacation request, get the manager of the requestor’s manager.
 
 1. Select **New step**.
 1. In the **Choose an action** search field, type **get manager**.
@@ -64,7 +65,7 @@ After you get the manager for the person who created the vacation request, you n
 1. Select the **Sequential Approval** type.
 1. Give the approval a title.
 
-    In this example, you add two (2) steps.
+    In this example, you add two steps.
 
 1. In **Assigned To – 1**, enter the **Mail** token from the **Get level 1 manager** approval action.
 1. To add an approval step, select **Add new item**.

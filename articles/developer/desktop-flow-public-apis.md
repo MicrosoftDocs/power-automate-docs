@@ -3,28 +3,28 @@ title: Work with desktop flows using code
 description: Developer guide to integrate desktop flows capabilities within their applications.
 author: benabbon
 ms.topic: how-to
-ms.date: 02/19/2024
+ms.date: 08/28/2026
 ms.author: nabena
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.service: power-automate
 ms.subservice: developer
 ---
 # Work with desktop flows using code
 
-Developers can add [desktop flows](/power-automate/desktop-flows/introduction) functionality to their applications, including programmatically triggering and canceling desktop flows. These capabilities are offered as part of the Microsoft Dataverse platform.
+Developers can add [desktop flows](/power-automate/desktop-flows/introduction) functionality to their applications, including programmatically triggering and canceling desktop flows. The Microsoft Dataverse platform offers these capabilities.
 
 ## Prerequisites
 
-1. Knowledge of [Dataverse Web API](/power-apps/developer/data-platform/webapi/perform-operations-web-api), [authentication with Dataverse](/power-apps/developer/data-platform/authentication) and [using OAuth with Dataverse](/power-apps/developer/data-platform/authenticate-oauth).
-1. Knowledge of Dataverse environment and organization notions, and [how to retrieve the organization URL](/power-apps/developer/data-platform/webapi/discover-url-organization-web-api) manually or programmatically.
-1. Knowledge of [desktop flows notions](/power-automate/desktop-flows/run-pad-flow) and of what [connections are and how to create them](/power-automate/desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials).
+1. Knowledge of [Dataverse Web API](/power-apps/developer/data-platform/webapi/perform-operations-web-api), [authentication with Dataverse](/power-apps/developer/data-platform/authentication), and [using OAuth with Dataverse](/power-apps/developer/data-platform/authenticate-oauth).
+1. Knowledge of Dataverse environment and organization concepts, and [how to retrieve the organization URL](/power-apps/developer/data-platform/webapi/discover-url-organization-web-api) manually or programmatically.
+1. Knowledge of [desktop flows concepts](/power-automate/desktop-flows/run-pad-flow) and of what [connections are and how to create them](/power-automate/desktop-flows/install#setup-desktop-flows-connections-and-machine-credentials).
 
 > [!IMPORTANT]
-> In this article, you must replace all squared brackets [...] in URLs and input/output data with values specific to your scenario.
+> In this article, replace all square brackets [...] in URLs and input/output data with values specific to your scenario.
 
 ## List available desktop flows
 
-All desktop flows scripts are in Dataverse as part of the [workflow entity](/power-apps/developer/data-platform/reference/entities/workflow).
+Dataverse stores all desktop flow scripts as part of the [workflow entity](/power-apps/developer/data-platform/reference/entities/workflow).
 
 Filter the list of workflows based on the category to identify desktop flows.
 
@@ -72,7 +72,7 @@ GET https://[Organization URI]/api/data/v9.2/workflows?$filter=category+eq+6&$se
 
 ## Get the schema for desktop flows
 
-If you need to retrieve the flow schema for inputs and/or outputs, you can use the clientData field for the target workflow.
+If you need to retrieve the flow schema for inputs or outputs, use the `clientData` field for the target workflow.
 
 ### Request inputs schema for desktop flows
 
@@ -176,7 +176,7 @@ GET https://[Organization URI]/api/data/v9.2/flowsessions([Flow session ID])?$se
 
 ## Get desktop flow outputs
 
-If the desktop flow has outputs, you can query the outputs field to retrieve them.
+If the desktop flow has outputs, query the `outputs` field to retrieve them.
 
 ### Request for desktop flow outputs
 
@@ -197,25 +197,25 @@ GET https://[Organization URI]/api/data/v9.2/flowsessions([Flow session ID])/out
 
 ## Trigger a desktop flow run
 
-By using Dataverse, you can add the functionality of triggering a desktop flow through your application. To implement this functionality, you need to use the [RunDesktopFlow action](/dynamics365/customer-engagement/web-api/rundesktopflow).
+By using Dataverse, you can add the functionality of triggering a desktop flow through your application. To implement this functionality, use the [RunDesktopFlow action](/dynamics365/customer-engagement/web-api/rundesktopflow).
 
-To call the action, you'll need the following information.
+To call the action, you need the following information.
 
-- The `ID` of the desktop flow that you want to run. You can get this ID via the API as the [List available desktop flows](#list-available-desktop-flows) section outlines earlier in this article.
+- The `ID` of the desktop flow that you want to run. Get this ID via the API as the [List available desktop flows](#list-available-desktop-flows) section outlines earlier in this article.
   
   >[!TIP]
-  > Alternatively, you can retrieve the ID manually from the desktop flow details URL in Power Automate. The URL format is: `https://make.powerautomate.com/manage/environments/[Environment ID]/uiflows/[Desktop Flow ID]/details`.
+  > Alternatively, retrieve the ID manually from the desktop flow details URL in Power Automate. The URL format is: `https://make.powerautomate.com/manage/environments/[Environment ID]/uiflows/[Desktop Flow ID]/details`.
   >
   > For more information, see [Manage desktop flows](/power-automate/desktop-flows/manage).
 
-- The `name` of the desktop flow connection (targeting a machine/machine group) to use to run your flow. The name can be retrieved from the URL of the same connection page in Power Automate. The URL format is:  
+- The `name` of the desktop flow connection (targeting a machine or machine group) to use to run your flow. Retrieve the name from the URL of the same connection page in Power Automate. The URL format is:  
 `https://make.powerautomate.com/manage/environments/[Environment ID]/connections?apiName=shared_uiflow&connectionName=[Connection Name]`.
   
   > [!NOTE]
   > For more information, see [Create desktop flow connections](../desktop-flows/desktop-flow-connections.md).
 
   >[!TIP]
-  > Alternatively, you can use a connection reference's logical name as the input of the connection instead of the connection name (usage example described below). The connection references are stored in the Dataverse table connectionreference and can be listed programmatically in the same way as desktop flows detailed in the [List available desktop flows](#list-available-desktop-flows) section.
+  > Alternatively, use a connection reference's logical name as the input of the connection instead of the connection name (usage example described in the following section). The connection references are stored in the Dataverse table `connectionreference` and you can list them programmatically in the same way as desktop flows detailed in the [List available desktop flows](#list-available-desktop-flows) section.
   >
   > For more information, see [Use a connection reference in a solution](/power-apps/maker/data-platform/create-connection-reference) and [connectionreference table/entity reference](/power-apps/developer/data-platform/reference/entities/connectionreference).
   
@@ -261,12 +261,12 @@ POST https://[Organization URI]/api/data/v9.2/workflows([Workflow ID])/Microsoft
 }
 ```
 
-The inputs of the script are viewable in the run details page on the Power Automate portal (in Preview).
+You can view the script inputs in the run details page on the Power Automate portal (in Preview).
 
 > [!WARNING]
-> When using the API, there are some limitations to be aware of:
+> When using the API, be aware of these limitations:
 >
-> - Triggering a desktop flow run with an account having "User" privileges will work. However, canceling the run and querying the status needs "Owner" privileges.
+> - Trigger a desktop flow run by using an account with **User** privileges. To cancel the run or query the status, you need **Owner** privileges.
 >
 > - Dataverse impersonation isn't supported.
 >
@@ -324,7 +324,7 @@ Requirements for the callback URL parameter
 
 ## Cancel a desktop flow run
 
-Similar to the [Trigger](#trigger-a-desktop-flow-run) functionality, you can also cancel a queued/running desktop flow. To cancel a desktop flow, use the [CancelDesktopFlowRun action](/dynamics365/customer-engagement/web-api/canceldesktopflowrun).
+Similar to the [Trigger](#trigger-a-desktop-flow-run) functionality, you can also cancel a queued or running desktop flow. To cancel a desktop flow, use the [CancelDesktopFlowRun action](/dynamics365/customer-engagement/web-api/canceldesktopflowrun).
 
 ### Request to cancel a desktop flow run
 
@@ -343,7 +343,7 @@ HTTP/1.1 204 No Content
 
 ### Errors
 
-When an error occurs, the response has a different format that matches Dataverse error messages. The http error code and the message should provide enough information to understand the issue.
+When an error occurs, the response has a different format that matches Dataverse error messages. The HTTP error code and the message provide enough information to understand the issue.
 
 ```http
 HTTP/1.1 403 Forbidden
@@ -358,6 +358,6 @@ HTTP/1.1 403 Forbidden
 
 ## Known limitations
 
-- We currently support up to 70 desktop flows runs per minute for every connection.
+- You can run up to 70 desktop flow runs per minute for each connection.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
