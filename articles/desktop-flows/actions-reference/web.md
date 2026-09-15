@@ -5,7 +5,7 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 01/20/2025
+ms.date: 09/15/2026
 ms.author: kisubedi
 ms.reviewer: angieandrews
 contributors:
@@ -215,5 +215,19 @@ Configures the attachments to be added to the web service request. The attachmen
 ### Known issues
 
 - NTLM Authentication is currently not supported for web requests in Power Automate for desktop.
+
+### Troubleshoot proxy errors when invoking a web service
+
+If **Invoke web service** fails with a proxy-related error, such as **407 Proxy Authentication Required**, but an equivalent request succeeds from another client on the same machine, compare the request settings, including **User agent**. Different clients can send different headers.
+
+The default **User agent** value includes `Firefox/3.6`. To check whether this value contributes to the failure, try the following steps in a test flow with your network administrator's approval:
+
+1. Open the **Invoke web service** action, expand **Advanced**, and record the current **User agent** value.
+1. Clear the **User agent** field and save the action. Keep the other request settings unchanged.
+1. Rerun a request that's safe to repeat. Check **StatusCode** and **WebServiceResponse** to confirm that the request returns the expected response, rather than relying only on the action completing.
+1. If the request succeeds, confirm the appropriate User-Agent configuration with your network administrator before using the change in production. If it still fails, restore the original value and continue investigating the proxy configuration and authentication requirements.
+
+> [!IMPORTANT]
+> Clearing **User agent** is a troubleshooting step, not a general fix for proxy errors or a replacement for required proxy credentials. Some services require a User-Agent value. Keep required proxy, authentication, and certificate-validation controls in place.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
