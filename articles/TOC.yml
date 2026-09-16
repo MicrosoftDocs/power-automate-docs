@@ -1293,6 +1293,8 @@
       href: get-started-flow-dev.md
     - name: Work with cloud flows using code
       href: manage-flows-with-code.md
+    - name: Create and edit cloud flows with the Power Automate plugin
+      href: power-automate-plugin-external-tools.md
     - name: Work with desktop flows using code
       href: ./developer/desktop-flow-public-apis.md
     - name: Build and certify custom connectors
