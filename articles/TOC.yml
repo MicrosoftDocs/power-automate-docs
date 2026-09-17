@@ -1287,6 +1287,8 @@
     items:
     - name: Overview
       href: automation-center-overview.md
+    - name: Scheduled triggers for desktop flows
+      href: schedule-desktop-flows.md
     - name: Process map
       href: automation-center-process-map.md      
     - name: Recommendations
