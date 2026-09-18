@@ -1,3 +1,11 @@
+title: Schedule desktop flows with scheduled triggers
+description: Scheduled triggers, allow you to schedule desktop flows directly.
+author: cochamos
+ms.author: cochamos
+ms.reviewer:
+ms.date: 09/18/2026
+ms.topic: feature-guide
+
 # Schedule desktop flows with scheduled triggers (preview)
 
 Scheduled triggers let you run desktop flows on a recurring schedule without creating a cloud flow as an intermediary. You can create and manage scheduled triggers in Automation center, select the desktop flow and execution connection, and review upcoming scheduled runs from a centralized experience.
@@ -128,7 +136,8 @@ Consider the following behavior:
 - For weekly schedules with multiple selected days, the start time specifies the earliest time at which the trigger can run.
 - Daylight saving time changes can cause some local start times to be invalid or ambiguous.
 
-For weekly schedules with multiple selected days, create the schedule at least seven days before the intended first occurrence. Otherwise, the first occurrence might be skipped.
+>[!Important]
+>For weekly schedules with one or more selected days, create the schedule at least seven days before the intended first occurrence. Otherwise, the first occurrence might be skipped.
 
 For more information about the underlying recurrence behavior, refer to the [Azure Logic Apps recurrence scheduling](https://learn.microsoft.com/azure/logic-apps/concepts-schedule-automated-recurring-tasks-workflows) article.
 
@@ -204,9 +213,5 @@ During preview, scheduled triggers aren't automatically synchronized when an env
 > [!IMPORTANT]
 > Before you restore an environment, disable all scheduled triggers in that environment. Re-enabling triggers after the restore doesn't prevent issues caused by leaving them enabled during the restore operation.
 
-After the restore completes:
-
-1. Review the scheduled triggers in the restored environment.
-1. Re-enable only the triggers that you want to run.
-1. If a trigger appears enabled but doesn't resume its schedule, disable it and then enable it again.
+After the restore completes, re-enable only the scheduled triggers that you want to run. If a trigger already appears enabled, disable it and then enable it again to re-establish its schedule.
 
