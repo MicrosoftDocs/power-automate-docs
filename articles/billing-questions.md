@@ -32,7 +32,9 @@ See this [subscription page](https://portal.office.com/account/#subscriptions).
 
 ## What happens if my usage exceeds the limits?
 
-Power Automate throttles your flow runs.
+Power Automate throttles your flow runs. Actions are delayed rather than dropped, so runs take longer to complete. A flow that stays above the limits for 14 consecutive days is suspended, and its owner is notified.
+
+To resolve throttling on a specific flow, assign a [Process license](/power-platform/admin/power-automate-licensing/types#capacity-licenses) to it, or reduce the number of requests it makes. Learn more in [Understand platform limits and avoid throttling](guidance/coding-guidelines/understand-limits.md#what-to-do-when-your-flow-is-throttled).
 
 ## Where can I find more information regarding the usage limits?
 
