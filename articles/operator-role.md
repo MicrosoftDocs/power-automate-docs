@@ -2,7 +2,7 @@
 title: Operator role for Power Automate
 description: Assign an operator role for robust monitoring capabilities without granting full administrative or maker permissions.
 ms.topic: article
-ms.date: 07/14/2026
+ms.date: 09/15/2026
 ms.author: quseleba
 ms.reviewer: angieandrews
 contributors:
@@ -88,7 +88,7 @@ Operators **can** see the following details for each run through the FlowRun tab
 - Parent and child flow relationship.
 
 > [!IMPORTANT]
-> To investigate the root cause of a cloud flow failure at the action level, the flow owner must share the flow with the operator as a **co-owner** or **run-only user**. Learn more at [Share a cloud flow](create-team-flows.md).
+> To investigate the root cause of a cloud flow failure at the action level, the flow owner must share the flow with the operator as a **co-owner**. Learn more at [Share a cloud flow](create-team-flows.md).
 
 ### Solution flows only
 
@@ -105,8 +105,9 @@ If your organization requires operators to have full cloud flow run detail acces
 | Approach | Trade-off |
 |----------|-----------|
 | Share specific flows as **co-owner** with the operator | Grants edit permissions, which reduces separation of duties. |
-| Share flows as **run-only user** | Grants run and view-run-history access without edit permissions. |
 | Use the **Power Automate Management connector** in a monitoring flow | Requires a Premium-licensed service account. Can export action-level details to a shared location. |
+
+Run-only sharing isn't an option here. Run-only users can't view a flow's run history, and run-only sharing applies only to instant flows. Learn more in [Guide to cloud flow sharing permissions](guide-to-cloud-flow-sharing-permissions.md).
 
 ## Related information
 
