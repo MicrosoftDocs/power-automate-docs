@@ -5,7 +5,7 @@ author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 08/31/2026
+ms.date: 09/24/2026
 ms.author: nimoutzo
 ms.reviewer: smurkute
 contributors:
@@ -159,6 +159,8 @@ Both the **GET** and **POST** methods can be used within this action. Files can 
 ### Access web APIs
 
 Use the **Invoke web service** action to access web APIs. Various methods are compatible with this action, which is fully customizable in order to accommodate virtually any API.
+
+If the action fails through a proxy while an equivalent request succeeds from another client on the same machine, see [Invoke web service action fails with a proxy authentication error](/troubleshoot/power-platform/power-automate/desktop-flows/invoke-web-service-proxy-authentication-error).
 
 > [!NOTE]
 > Before using the **Invoke web service** action, refer to the documentation page of the web service you want to use. The following example can't be applied to all scenarios, as each web service requires a different configuration and syntax.

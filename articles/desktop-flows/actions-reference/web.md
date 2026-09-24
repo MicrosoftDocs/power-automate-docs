@@ -5,9 +5,9 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 01/20/2025
+ms.date: 09/24/2026
 ms.author: kisubedi
-ms.reviewer: angieandrews
+ms.reviewer: smurkute
 contributors:
 - jpapadimitriou
 - Yiannismavridis
@@ -211,6 +211,10 @@ Configures the attachments to be added to the web service request. The attachmen
 |Invoke web service error|Indicates a problem invoking the web service|
 |Directory doesn't exist|Indicates that a required directory doesn't exist|
 |Invalid header in custom headers|Indicates that some custom headers were invalid|
+
+### Troubleshooting
+
+If **Invoke web service** returns a proxy-related error while the same request succeeds from another client on the same machine, see [Invoke web service action fails with a proxy authentication error](/troubleshoot/power-platform/power-automate/desktop-flows/invoke-web-service-proxy-authentication-error).
 
 ### Known issues
 
