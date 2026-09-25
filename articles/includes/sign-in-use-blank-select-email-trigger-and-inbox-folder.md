@@ -10,8 +10,8 @@
 
 1. Select **When a new email arrives (V3)** from the list of triggers. This trigger runs each time an email arrives.
 
-1. Select **Create**.
+1. Select **Create**. The designer opens with the **When a new email arrives (V3)** trigger added to your flow.
 
-1. Select the folder that you'd like the flow to monitor for incoming emails, and then select **Show advanced options**.
+1. Open the **When a new email arrives (V3)** trigger. Set the connection for the Microsoft Outlook connector, as needed.
 
-    To display all your email folders, select the **Show Picker** icon, which is located on the right side of the **Folder** box on the **When a new email arrives (V3)** card.
+1. Under **Folder**, select the folder that you'd like the flow to monitor for incoming emails.

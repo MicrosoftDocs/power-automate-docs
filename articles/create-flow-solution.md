@@ -8,6 +8,7 @@ author: ChrisGarty
 contributors:
   - ChrisGarty
   - v-aangie
+  - cyrilanderson
 editor: ''
 tags: ''
 ms.service: power-automate
@@ -15,9 +16,9 @@ ms.subservice: cloud-flow
 ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 02/06/2023
+ms.date: 09/21/2026
 ms.author: cgarty
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 search.audienceType: 
   - flowmaker
   - enduser
@@ -33,30 +34,30 @@ You need to have at least one solution before you can create a solution-aware fl
 
 ## Create a solution-aware cloud flow
 
-1. Sign into [Power Automate](https://make.powerautomate.com).
+1. Sign in to [Power Automate](https://make.powerautomate.com).
 
 1. On the menu to the left, select **Solutions**.
 
    :::image type="content" alt-text="Screenshot of the left navigation bar with the Solutions option highlighted." source="./media/create-flow-solution/select-solutions-from-left-nav.png":::
 
-1. Select the solution in which you'll create your flow.
+1. Select the solution where you'll create your flow.
 
 1. Select **New** > **Automation** > **Cloud flow** > **Automated**.
 
-   :::image type="content" alt-text="Screenshot of the different types of items that can be created with flow highlighted." source="./media/create-flow-solution/select-new-flow.png":::
+   :::image type="content" alt-text="Screenshot of the New menu with Automation, Cloud flow, and Automated options highlighted in a Power Automate solution." source="./media/create-flow-solution/select-new-flow.png":::
 
    >[!TIP]
-   >If an automated cloud flow doesn't meet your requirements, you can create any other [type of flow](./flow-types.md).
+   >If an automated cloud flow doesn't meet your requirements, create any other [type of flow](./flow-types.md).
 
    Power Automate opens.
 
 1. Use the available connectors and triggers to build your flow.
 
-   In this example, we'll build a flow that sends a notification when an email arrives in your inbox.
+   In this example, build a flow that sends a notification when an email arrives in your inbox.
 
-1. Give your flow a name.
+1. Enter a name for your flow.
 
-1. Search for, **new email** in the **Search all triggers** box.
+1. Search for **new email** in the **Search all triggers** box.
 
    :::image type="content" alt-text="Screenshot of the name of the flow and the search box with a search term entered." source="./media/create-flow-solution/search-trigger.png":::
 
@@ -76,7 +77,7 @@ You need to have at least one solution before you can create a solution-aware fl
 
    Your flow should look like the following screenshot.
 
-   :::image type="content" alt-text="Screenshot of the flow that's created." source="./media/create-flow-solution/new-email-notification-flow.png":::
+   :::image type="content" alt-text="Screenshot of the completed flow with the When a new email arrives trigger and the Send me a mobile notification action." source="./media/create-flow-solution/new-email-notification-flow.png":::
 
 1. Select **Solutions** to see your flow in the solution.
 
@@ -84,9 +85,9 @@ You need to have at least one solution before you can create a solution-aware fl
 
 ## Find a solution-aware cloud flow
 
-Solution-aware cloud flows can be found either in the **My flows** lists or in **Solutions** on the left navigation pane.
+You can find solution-aware cloud flows in the **My flows** lists or in **Solutions** on the left navigation pane.
 
-### Find a solution-aware cloud flow with 'My flows'
+### Find a solution-aware cloud flow with **My flows**
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 
@@ -95,7 +96,7 @@ Solution-aware cloud flows can be found either in the **My flows** lists or in *
 1. Find the flow that you want to edit.
 
    >[!TIP]
-   >Cloud flows you own are on the **Cloud flows** tab and flows for which you're a co-owner are on the **Shared with me** tab.
+   >Cloud flows you own are on the **Cloud flows** tab. Flows for which you're a co-owner are on the **Shared with me** tab.
 
     The **Shared with me** tab shows the following solution cloud flows.
 
@@ -103,9 +104,9 @@ Solution-aware cloud flows can be found either in the **My flows** lists or in *
 
     - Flows that are owned by a Dataverse team in which you're a member.
 
-    - Flows that are co-owned by a Dataverse team in which you're a member
+    - Flows that are co-owned by a Dataverse team in which you're a member.
 
-If you're the owner of a solution cloud flow, you can always find it on the **Cloud flows** tab. If you have the 'run only' permission to a flow, you'll only see that flow on the **My flows** tab if you're an owner or a co-owner too.
+If you're the owner of a solution cloud flow, you can always find it on the **Cloud flows** tab. If you have the run-only permission for a flow, you see that flow on the **My flows** tab only if you're an owner or a co-owner.
 
 ### Find a solution-aware cloud flow via Solutions
 
@@ -131,17 +132,17 @@ The **Objects** tab of a solution shows all the solution objects in the solution
 
 1. Select **Add existing** > **Automation** > **Cloud flow**.
 
-    Solution-aware cloud flows will be in the **From Dataverse** tab and non-solution cloud flows will be in the **Outside Dataverse** tab.
+    Solution-aware cloud flows appear in the **From Dataverse** tab. Non-solution cloud flows appear in the **Outside Dataverse** tab.
 
-1. Select the desired cloud flow. 
+1. Select the cloud flow you want.
 
-    Some non-solution cloud flows can't be added into a solution. To learn more, go to [known limitations](/power-apps/maker/data-platform/solutions-overview#known-limitations).
+    You can't add some non-solution cloud flows into a solution. To learn more, see [known limitations](/power-apps/maker/data-platform/solutions-overview#known-limitations).
 
 1. Select **Add**.
 
 ## Add many flows into Dataverse solutions using PowerShell
 
-Administrators can use PowerShell to quickly add many or all non-solution cloud flows into Dataverse solutions using the [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution) cmdlet. To learn more, go to [Add flows into Dataverse solutions via PowerShell](/power-platform/admin/powerapps-powershell#Add-flows-into-Dataverse-solutions).
+Administrators can use PowerShell to quickly add many or all non-solution cloud flows into Dataverse solutions by using the [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution) cmdlet. To learn more, see [Add flows into Dataverse solutions via PowerShell](/power-platform/admin/powerapps-powershell#Add-flows-into-Dataverse-solutions).
 
 ## Related information
 

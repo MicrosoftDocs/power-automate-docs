@@ -6,13 +6,14 @@ contributors:
   - samathur
   - kisubedi
   - v-aangie
+  - cyrilanderson
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
-ms.date: 01/16/2026
+ms.date: 09/18/2026
 ms.update-cycle: 180-days
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.collection:
   - get-started
   - bap-ai-copilot
@@ -20,9 +21,9 @@ ms.custom:
   - DevRelAdv
 ---
 
-# Triggers
+# Triggers in Power Automate cloud flows
 
-A *trigger* is an event that starts a cloud flow. For example, you want to get a notification in Microsoft Teams when someone sends you an email. In this case, receiving an email is the trigger that starts this flow.
+A _trigger_ is an event that starts a Power Automate cloud flow. For example, you want to get a notification in Microsoft Teams when someone sends you an email. In this case, receiving an email is the trigger that starts this flow.
 
 Power Automate offers connectors to services such as SharePoint and Outlook. Most connectors offer prebuilt triggers that you can use to start your flows. Here's a partial list of the triggers the Office 365 Outlook connector provides.
 
@@ -35,47 +36,47 @@ Learn more about triggers in this quick video:</br>
 
 ## Choose the right trigger
 
-Triggers can be started automatically, instantly or manually, or on a schedule. The following table lists some common trigger scenarios and the type of flow you should create.
+Start triggers automatically, instantly or manually, or on a schedule. The following table lists some common trigger scenarios and the type of flow you should create.
 
 |Trigger scenario |Flow type |
-|---------|---------|
+|-----------------|----------|
 |Create a cloud flow that performs tasks automatically after an event occurs. For example, a cloud flow can notify you by email when someone tweets with a keyword you specify. Learn more in [Create a cloud flow from scratch](get-started-logic-flow.md).   | Automated   |
 |Run a cloud flow with a tap of a button on your mobile device to remind your team to join the daily team meeting. You can trigger these flows manually from any device. Learn more in [Create flows from your phone](mobile/mobile-create-flow.md).  | Instant/manual   |
 |Run a cloud flow on a schedule, for example, to send a weekly project report. Choose when (date and time) and frequency (monthly/daily/hourly, and more). Learn more in [Run flows on a schedule](./run-scheduled-tasks.md).     | Scheduled   |
 
 ## Examples of triggers
 
-After you decide which type of flow you want to create, you can add a trigger to your flow.
+After you decide which type of flow you want to create, add a trigger to your flow.
 
 ### A trigger that starts an automated flow
 
-When you create an automated cloud flow, you start by choosing your flow's trigger. The following example shows the **When a new email arrives (V3)** trigger from the Office 365 Outlook connector.
+When you create an automated cloud flow, start by choosing your flow's trigger. The following example shows the **When a new email arrives (V3)** trigger from the Office 365 Outlook connector.
 
-:::image type="content" source="media/triggers-introduction/triggers-automated.png" alt-text="Screenshot of some of the triggers available for automated cloud flows.":::
+:::image type="content" source="media/triggers-introduction/triggers-automated.png" alt-text="Screenshot of the Build an automated cloud flow dialog with the When a new email arrives (V3) Office 365 Outlook trigger selected.":::
 
-When you select **Create**, the trigger is added to your flow.
+When you select **Create**, you add the trigger to your flow.
 
-:::image type="content" source="media/triggers-introduction/triggers-automated-designer.png" alt-text="Screenshot of the trigger in the designer for an automated cloud flow.":::
+:::image type="content" source="media/triggers-introduction/triggers-automated-designer.png" alt-text="Screenshot of the When a new email arrives (V3) trigger card on the automated cloud flow designer canvas.":::
 
 ### A trigger that starts an instant/manual flow
 
-An instant cloud flow is triggered manually, such as when you select a button in Power Automate or in a mobile app. The following example shows the **Manually trigger a flow** trigger.
+An instant cloud flow starts manually, such as when you select a button in Power Automate or in a mobile app. The following example shows the **Manually trigger a flow** trigger.
 
 :::image type="content" source="media/triggers-introduction/triggers-instant.png" alt-text="Screenshot of some of the triggers available for instant cloud flows.":::
 
-When you select **Create**, the trigger is added to your flow.
+When you select **Create**, you add the trigger to your flow.
 
 :::image type="content" source="media/triggers-introduction/triggers-instant-designer.png" alt-text="Screenshot of the trigger in the designer for an instant cloud flow.":::
 
 ### A trigger that starts a scheduled flow
 
-A scheduled cloud flow runs at a specific time or on a recurring schedule, such as every day at 10:00 AM or every Monday at 9:00 AM. Before your trigger is created, you need to define the schedule for when it will run, as in the following example.
+A scheduled cloud flow runs at a specific time or on a recurring schedule, such as every day at 10:00 AM or every Monday at 9:00 AM. Before you create your trigger, define the schedule for when it runs, as shown in the following example.
 
-:::image type="content" source="media/work-with-triggers-actions/triggers-scheduled.png" alt-text="Screenshot of the 'Build a scheduled cloud flow' screen.":::
+:::image type="content" source="media/work-with-triggers-actions/triggers-scheduled.png" alt-text="Screenshot of the Build a scheduled cloud flow screen.":::
 
-When you select **Create**, the **Recurrence** trigger is added to your flow.
+When you select **Create**, you add the **Recurrence** trigger to your flow.
 
-:::image type="content" source="media/work-with-triggers-actions/triggers-scheduled-designer.png" alt-text="Screenshot of the 'Recurrence' trigger in the designer for a scheduled cloud flow.":::
+:::image type="content" source="media/work-with-triggers-actions/triggers-scheduled-designer.png" alt-text="Screenshot of the Recurrence trigger in the designer for a scheduled cloud flow.":::
 
 ## Next step
 
