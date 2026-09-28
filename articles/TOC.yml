@@ -439,7 +439,7 @@
           href: ./desktop-flows/getting-started-org.md
     - name: Create desktop flows
       href: ./desktop-flows/create-flow.md
-    - name: Create desktop flow templates
+    - name: Create desktop flow templates 
       href: ./desktop-flows/create-desktop-flow-templates.md
     - name: Test desktop flows
       href: ./desktop-flows/test-desktop-flows.md
@@ -1318,6 +1318,8 @@
       items:
         - name: Overview
           href: automation-center-overview.md
+        - name: Scheduled triggers for desktop flows (preview)
+          href: schedule-desktop-flows.md
         - name: Process map
           href: automation-center-process-map.md
         - name: Recommendations
