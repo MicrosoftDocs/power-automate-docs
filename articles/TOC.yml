@@ -552,6 +552,8 @@
     - name: Desktop flow designer
       href: ./desktop-flows/flow-designer.md
       items:
+        - name: Create desktop flows in flowchart mode (preview)
+          href: ./desktop-flows/flowchart-flow-designer.md
         - name: Configure actions and the actions pane
           href: ./desktop-flows/actions-pane.md
         - name: Assets library
