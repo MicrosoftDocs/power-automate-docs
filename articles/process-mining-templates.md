@@ -9,9 +9,9 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 07/18/2023
+ms.date: 10/09/2026
 ms.author: derahonuorah
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 search.audienceType: 
   - flowmaker
   - enduser
@@ -32,6 +32,14 @@ The Desktop Flows template analyzes the run history of flows created using [robo
 By analyzing the run history of RPA flows, the Desktop Flows template can identify potential issues, such as errors or inefficiencies, and provide recommendations for improvement. This information can help organizations optimize their RPA workflows and improve overall performance. Additionally, the Desktop Flows template can help organizations ensure compliance with regulatory requirements by identifying potential violations and recommending corrective actions.
 
 Overall, the Desktop Flows template is a powerful tool that can help organizations maximize the value of their RPA workflows while minimizing risks and improving compliance.
+
+### Prerequisites
+
+To successfully analyze a desktop flow, ensure you meet the following prerequisites:
+
+1. The desktop flow is in the same environment where you use the analytical template.
+
+1. The desktop flow logging mechanism is [set to logging v1 or a combination of v1 and v2](desktop-flows/configure-desktop-flow-logs.md).
 
 ### Create and run the Desktop flows template
 
