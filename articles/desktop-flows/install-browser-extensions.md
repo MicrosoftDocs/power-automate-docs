@@ -3,9 +3,9 @@ title: Install Power Automate browser extensions
 description: Learn how to install Power Automate for desktop browser extensions.
 author: mattp123
 ms.topic: how-to
-ms.date: 08/01/2025
+ms.date: 10/12/2026
 ms.author: pefelesk
-ms.reviewer: matp
+ms.reviewer: shwetamurkute
 contributors:
 - NikosMoutzourakis
 search.audienceType: 
@@ -75,6 +75,12 @@ After Power Automate for desktop version 2.27, the Microsoft Edge, Google Chrome
 
 Alternatively, you can launch Mozilla Firefox and drag the extension file to the browser window.
 
+> [!NOTE]
+> You can download the latest extension files from the following direct links per browser:
+> - Edge: [extension](https://edge.microsoft.com/extensionwebstorebase/v1/crx?response=redirect&prod=chromiumcrx&prodchannel=&x=id%3Dkagpabjoboikccfdghpdlaaopmgpgfdc%26installsource%3Dondemand%26uc)
+> - Chrome: [extension](https://clients2.google.com/service/update2/crx?response=redirect&prod=chromium&prodchannel=unknown&prodversion=131.0.6778.205&acceptformat=crx2,crx3&x=id%3Dljglajjnnkapghbckkcmodicjhacbfhk%26installsource%3Dondemand%26uc)
+> - Firefox: [extension](https://addons.mozilla.org/firefox/downloads/latest/microsoft-power-automate/latest.xpi)
+
 ## Set up WebDrivers
 
 You can perform web automation with WebDriver as an alternative to browser extensions. To use this method, manually install the appropriate WebDriver for your browser and ensure it matches the browser version. This section provides setup instructions for each supported browser.
@@ -127,7 +133,7 @@ To use WebDriver as the browser interaction method for Microsoft Edge, you must 
     1. Open Microsoft Edge and go to `edge://settings/help` in the address bar.
     1. Note the four-part version number of your browser (for example, 138.0.3351.109).
     1. Download the matching WebDriver
-    1. Go to the official Microsoft Edge WebDriver download page: [https://developer.microsoft.com/microsoft-edge/tools/webdriver/](https://developer.microsoft.com/microsoft-edge/tools/webdriver/)
+    1. Go to the official Microsoft Edge WebDriver download page: [https://developer.microsoft.com/microsoft-edge/tools/webdriver/](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/?form=MA13LH&cs=3439373118).
     1. In the Downloads section, find the version number that matches your Edge version (typically the first three numbers of the version must match).
     1. Select the appropriate WebDriver download link for the win-x64 architecture
     1. If you need an older version, select **go to full directory** under the Recent versions section to browse and download older releases.
