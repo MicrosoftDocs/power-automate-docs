@@ -4,7 +4,7 @@ description: Create interactive automation experiences by using Power Platform a
 author: cochamos
 ms.author: cochamos
 ms.reviewer: ellenwehrle
-ms.date: 05/13/2026
+ms.date: 10/12/2026
 ms.topic: how-to
 ms.service: power-automate
 ms.subservice: desktop-flow
@@ -13,7 +13,7 @@ search.audienceType:
   - enduser
 ---
 
-# Run Power App (preview)
+# Run Power App
 
 The **Run Power App** action launches an app directly from a desktop flow and establishes a communication channel between the two. By using this integration, desktop flows can natively call Power App experiences, pass inputs, and receive outputs. This approach enables rich native integration for attended automation scenarios instead of relying on UI-based automation.
 
@@ -36,9 +36,6 @@ This enables scenarios, such as:
 
 - **Minimum Power Automate for desktop version:** 2.68 or later.
 - **Cloud availability:** Available only in **public clouds**.
-
-> [!NOTE]
-> This feature is in preview and might change before general availability.
 
 ## Prerequisites
 
@@ -69,7 +66,7 @@ Before you start, make sure you have:
 
 To expose your subflows in Power Apps Studio (so they appear as functions you can call), open the app through the PAD authoring bridge.
 
-1. Add the **Run Power App (Preview)** action to your desktop flow.
+1. Add the **Run Power App** action to your desktop flow.
 1. In the action properties, either:
    - Select an existing app, or
    - Create a new app
