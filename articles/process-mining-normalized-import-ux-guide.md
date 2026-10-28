@@ -5,7 +5,7 @@ description: Create a Process Mining process using normalized schema ingestion i
 ms.date: 08/17/2026
 author: rosikm
 ms.author: michalrosik
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.topic: how-to
 ai-usage: ai-assisted
 ---

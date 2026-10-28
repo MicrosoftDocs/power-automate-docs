@@ -3,7 +3,7 @@ title: "Classic designer vs. modern designer for cloud flows - Power Automate"
 description: Compare the classic and new flow designers, learn when to use each, and find workarounds for known issues.
 author: radioblazer
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.topic: article
 ms.date: 04/09/2026
 ms.subservice: cloud-flow

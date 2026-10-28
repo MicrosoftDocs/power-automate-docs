@@ -8,7 +8,7 @@ contributors:
   - HeatherOrt
   - jamiemwork
   - v-aangie
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview

@@ -3,7 +3,7 @@ title: Call Microsoft Copilot Studio agents from Power Automate
 description: Learn how to call Copilot Studio agents from Power Automate or use them in Copilot Studio workflows, based on the agent harness.
 author: JoeFernandezMS
 ms.author: jofernan
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to

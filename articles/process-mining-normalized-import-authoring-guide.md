@@ -5,7 +5,7 @@ description: Learn how to author a normalized schema JSON configuration for Proc
 ms.date: 08/17/2026
 author: rosikm
 ms.author: michalrosik
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---

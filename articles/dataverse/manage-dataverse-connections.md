@@ -4,7 +4,7 @@ description: Learn how to manage and maintain connections for the Microsoft Data
 suite: flow
 author: radioblazer
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.topic: how-to
 ms.date: 02/10/2025
 search.audienceType: 

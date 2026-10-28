@@ -7,7 +7,7 @@ ms.custom:
 ms.topic: faq
 author: HeatherOrt
 ms.author: heortaol
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # FAQ for generative actions in cloud flows

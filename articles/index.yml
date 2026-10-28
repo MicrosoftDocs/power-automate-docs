@@ -10,7 +10,7 @@ metadata:
   ms.topic: hub-page # Required
   author: v-aangie #Required; your GitHub user alias, with correct capitalization.
   ms.author: angieandrews #Required; microsoft alias of author; optional team alias.
-  ms.reviewer: angieandrews
+  ms.reviewer: cyanderson
   ms.date: 09/15/2026 #Required; mm/dd/yyyy format.
   ms.custom: bap-template
   hide_bc: true

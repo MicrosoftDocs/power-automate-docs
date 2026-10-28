@@ -6,7 +6,7 @@ contributors:
   - samathur
   - v-aangie
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.topic: how-to
 ms.date: 08/14/2026
 ms.custom:

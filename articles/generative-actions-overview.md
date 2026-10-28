@@ -9,7 +9,7 @@ contributors:
   - HeatherOrt
   - v-aangie
 ms.author: heortaol
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.collection: 
     - bap-ai-copilot
 ---

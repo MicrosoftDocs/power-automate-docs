@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 05/15/2026
 ms.custom: bap-template
 ms.author: michalrosik
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # Ingest data from Fabric OneLake

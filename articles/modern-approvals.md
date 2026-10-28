@@ -9,7 +9,7 @@ contributors:
   - kartikraop
   - v-aangie
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to

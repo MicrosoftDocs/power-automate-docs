@@ -4,7 +4,7 @@ description: Learn how to use the Microsoft Dataverse connector for actions and 
 suite: flow
 author: radioblazer
 ms.author: samathur
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.topic: how-to
 ms.date: 04/03/2025
 search.audienceType: 

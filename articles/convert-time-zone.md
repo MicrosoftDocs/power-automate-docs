@@ -7,7 +7,7 @@ contributors:
   - aartig13
   - v-aangie
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.topic: how-to
 ms.date: 08/19/2026
 ms.service: power-automate

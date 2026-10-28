@@ -12,7 +12,7 @@ ms.subservice: teams
 ms.topic: article
 ms.date: 10/27/2023
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.custom: sfi-image-blocked
 ---
 

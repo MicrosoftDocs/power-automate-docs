@@ -4,7 +4,7 @@ description: Assign an operator role for robust monitoring capabilities without 
 ms.topic: article
 ms.date: 09/15/2026
 ms.author: quseleba
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 contributors:
   - DanaMartens
 author: quseleba

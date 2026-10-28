@@ -9,7 +9,7 @@ ms.date: 06/10/2025
 ms.custom: 
 ms.topic: concept-article
 ms.author: tatianas
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # Guide to cloud flow sharing and permissions

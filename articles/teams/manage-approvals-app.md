@@ -12,7 +12,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/30/2020
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # Manage your approvals from the approvals app in Teams

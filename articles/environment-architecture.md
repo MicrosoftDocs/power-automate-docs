@@ -4,7 +4,7 @@ description: Learn how to ensure your environment is upgraded so that you can ac
 #customer intent: As a Power Automate user, I want to verify if my environment is on the most current architecture so that I can access faster runtimes and new features.
 author: kisubedi
 ms.author: kisubedi
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.date: 10/24/2025
 ms.topic: concept-article
 ---

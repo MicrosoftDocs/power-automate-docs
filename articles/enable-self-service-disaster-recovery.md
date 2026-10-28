@@ -3,7 +3,7 @@ title: Enable Self Service Disaster Recovery for Power Automate cloud flows (pre
 description: Learn how and when to prepare your environment for disaster recovery for Power Automate cloud flows.
 author: kisubedi
 ms.author: kisubedi
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.date: 03/12/2026
 ms.topic: concept-article
 ms.service: power-automate

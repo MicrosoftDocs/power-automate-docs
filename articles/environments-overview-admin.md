@@ -10,7 +10,7 @@ ms.subservice: cloud-flow
 ms.topic: overview
 ms.date: 05/26/2023
 ms.author: cgarty
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # Administer environments and Power Automate resources

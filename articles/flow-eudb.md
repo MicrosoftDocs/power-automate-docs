@@ -4,7 +4,7 @@ description: Learn how to use Power Automate within the EU Data Boundary.
 suite: flow
 author: radioblazer
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.topic: concept-article
 ms.contributors:
   - alankhedairy

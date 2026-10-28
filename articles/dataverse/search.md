@@ -4,7 +4,7 @@ description: Learn how to find and retrieve rows in Microsoft Dataverse by using
 suite: flow
 author: v-aangie
 ms.author: Matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.topic: article
 ms.date: 10/04/2021
 search.audienceType: 
