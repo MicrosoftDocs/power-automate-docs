@@ -7,7 +7,7 @@ ms.subservice: cloud-flow
 ms.topic: whats-new
 ms.date: 07/10/2025
 ms.author: angieandrews
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # What's new in Power Automate?

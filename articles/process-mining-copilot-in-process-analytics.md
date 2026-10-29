@@ -11,7 +11,7 @@ contributors:
   - v-aangie
 ms.custom: bap-template
 ms.author: michalrosik
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.collection: bap-ai-copilot
 ---
 

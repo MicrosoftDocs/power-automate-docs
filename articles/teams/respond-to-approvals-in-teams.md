@@ -15,7 +15,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 03/30/2022
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # Respond to an approval from a chat or channel

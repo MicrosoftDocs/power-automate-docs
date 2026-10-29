@@ -3,7 +3,7 @@ title: Create environment variables
 description: Create environment variables and use them across environments.
 author: v-aangie
 ms.author: angieandrews
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.date: 08/05/2025
 ms.topic: how-to
 ---

@@ -10,7 +10,7 @@ contributors:
   - radioblazer
   - v-aangie
 ms.author: legunter
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.topic: how-to
 ms.date: 05/29/2026
 ms.update-cycle: 180-days

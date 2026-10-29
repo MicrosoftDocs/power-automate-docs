@@ -7,7 +7,7 @@ ms.subservice: desktop-flow
 ms.topic: how-to
 ms.date: 08/03/2026
 ms.author: nrallakis
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 contributors:
   - Flow
 search.audienceType:

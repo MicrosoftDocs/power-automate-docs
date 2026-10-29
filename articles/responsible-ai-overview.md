@@ -8,7 +8,7 @@ ms.custom:
 ms.topic: faq
 author: kisubedi
 ms.author: kisubedi
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.collection: bap-ai-copilot
 ---
 

@@ -8,7 +8,7 @@ ms.custom:
 ms.topic: faq
 author: rpapostolis
 ms.author: appapaio
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 contributors:
   - DanaMartens
 ms.collection: bap-ai-copilot

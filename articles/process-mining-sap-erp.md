@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 07/27/2023
 ms.custom: bap-template
 ms.author: michalrosik
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # Connect to SAP ERP from process mining (preview)

@@ -4,7 +4,7 @@ ms.service: power-automate
 description: Learn how to use scope control actions to group related actions together in Power Automate cloud flows for better organization and error handling.
 author: sbasi19
 ms.author: ralinga
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.subservice: cloud-flow
 ms.topic: how-to
 ms.date: 08/04/2025

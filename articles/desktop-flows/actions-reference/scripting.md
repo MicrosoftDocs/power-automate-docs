@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 03/21/2025
 ms.update-cycle: 180-days
 ms.author: cochamos
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.collection: bap-ai-copilot
 contributors:
 - jpapadimitriou

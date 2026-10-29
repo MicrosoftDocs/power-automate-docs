@@ -13,7 +13,7 @@ ms.topic: how-to
 ms.date: 12/17/2025
 ms.custom: bap-template
 ms.author: michalrosik
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # Bring your own Azure Data Lake Storage Gen2

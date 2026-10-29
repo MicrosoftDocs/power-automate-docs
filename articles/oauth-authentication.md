@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 04/29/2026
 ms.update-cycle: 180-days
 ms.author: kisubedi
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.custom: bap-template
 ms.collection: bap-ai-copilot
 search.audienceType: 
