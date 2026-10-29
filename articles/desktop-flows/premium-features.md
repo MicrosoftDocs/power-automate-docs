@@ -7,13 +7,14 @@ ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 01/21/2026
 ms.author: mustlaz
-ms.reviewer: ellenwehrle
+ms.reviewer: smurkute
 contributors:
 - jpapadimitriou
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskourass
 - cvassallo
+- shwetamurkute
 search.audienceType: 
   - flowmaker
   - enduser
@@ -27,12 +28,12 @@ This article lists the premium robotic process automation (RPA) features and ben
 
 |Feature/Benefit | Description|Additional information|
 |----------------|------------|----------------------|
-|Automatic triggering/scheduling and integration with cloud flows|Trigger/schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger desktop flows from cloud flows](trigger-desktop-flows.md)|
+|Automatic triggering and scheduling, and integration with cloud flows|Trigger or schedule attended or unattended desktop flow runs from cloud flows. Integrate with cloud flows and connect to hundreds of cloud apps and services.|[Learn how to trigger desktop flows from cloud flows](trigger-desktop-flows.md)|
 |Access to premium and custom connectors|Access all premium cloud connectors and create custom connectors.|[Learn about premium connectors](/connectors/connector-reference/connector-reference-premium-connectors)<br>[Learn about custom connectors](/connectors/custom-connectors)|
 |AI Builder capacity|Infuse AI into your cloud flows through custom or prebuilt models with AI Builder.|[Learn about AI Builder](/ai-builder)|
 |Access to process mining |Visualize and analyze your business processes with process mining.|[Learn about process mining](/power-automate/process-advisor-overview)|
-|Custom actions|Ability to use custom developed automation actions in desktop flows|[Learn how to create and use custom actions in desktop flows](custom-actions.md)|
-|UI elements collections |Ability to create, share, and use groups of predefined UI elements in multiple desktop flows|[Learn how to create and use UI elements collections in desktop flows](ui-elements-collections.md)|
+|Custom actions|Use custom developed automation actions in desktop flows.|[Learn how to create and use custom actions in desktop flows](custom-actions.md)|
+|UI elements collections |Create, share, and use groups of predefined UI elements in multiple desktop flows.|[Learn how to create and use UI elements collections in desktop flows](ui-elements-collections.md)|
 |Sharing and collaboration|Share flows between team members and select access levels such as co-owner or user. View and manage the flows shared with you.|[Learn how to share desktop flows](manage.md#share-desktop-flows)|
 |Access to multiple environments|Organize, store, and manage flows across multiple environments, and benefit from environment isolation and role-based access.|[Learn about environments](/power-platform/admin/environments-overview)|
 |Centralized flow management and reporting|Manage desktop flows and view their detailed run logs centrally from the Power Automate portal.|[Learn how to manage desktop flows](manage.md)|
@@ -42,7 +43,7 @@ This article lists the premium robotic process automation (RPA) features and ben
 |Desktop flow analytics|Access analytics for desktop flows in the Microsoft Power Platform admin center.|[Learn about analytics](/power-platform/admin/analytics-ui-flow)|
 |Customer support|Receive prompt technical assistance from a Microsoft support professional.|[Power Automate support](https://make.powerautomate.com/support/)|
 |Work queues|Use work queues to store, prioritize, distribute, and process work items.| [Learn more about work queues](work-queues.md)|
-|Credentials|Retrieve and use credentials in desktop flows| [Learn more about credentials](create-AzureKeyVault-credential.md)|
+|Credentials|Retrieve and use credentials in desktop flows.| [Learn more about credentials](create-AzureKeyVault-credential.md)|
 
 > [!IMPORTANT]
 >

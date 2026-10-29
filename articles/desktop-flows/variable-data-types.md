@@ -5,13 +5,14 @@ author: jpapadimitriou
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: concept-article
-ms.date: 02/19/2026
+ms.date: 10/28/2026
 ms.author: iomavrid
-ms.reviewer: matp
+ms.reviewer: smurkute
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
+- shwetamurkute
 search.audienceType: 
   - flowmaker
   - enduser
@@ -28,11 +29,11 @@ Simple data types represent single values, such as texts and numbers. You can us
 
 ### Text value
 
-This is any kind of text, from email addresses to the text contents of a .txt file. 
+This data type represents any kind of text, from email addresses to the text contents of a .txt file. 
 
 [Text data type properties](datatype-properties.md#texts)
 
-To create a **Text value** variable, use the **Set variable** action and populate the input parameter with the desired text without any notation.
+To create a **Text value** variable, use the **Set variable** action and enter the desired text without any notation.
 
 ![Screenshot of a Set variable action that creates a Text value variable.](media\variable-data-types\create-text-variable.png)
 
@@ -40,9 +41,9 @@ To create a **Text value** variable, use the **Set variable** action and populat
 
 Numeric is the type applied to numbers. Only this data type can be used in mathematical operations.
 
-Τo create a **Numeric value** variable, use the **Set variable** action and populate the input parameter with a number without any notation.
+Τo create a **Numeric value** variable, use the **Set variable** action and enter a number without any notation.
 
-Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. For more information about mathematical expressions, go to [Use variables and the % notation](variable-manipulation.md).
+Except for hardcoded numeric values, you can use mathematical expressions with variables within percentage signs. For more information about mathematical expressions, see [Use variables and the % notation](variable-manipulation.md).
 
 ![Screenshot of a Set variable action that creates a Numeric value variable.](media\variable-data-types\create-numeric-variable.png)
 
@@ -50,9 +51,9 @@ Except for hardcoded numeric values, you can use mathematical expressions with v
 
 The value can be either **True** or **False**.
   
-Τo create a **Boolean value** variable, use the **Set variable** action and populate the input parameter with the expressions **%True%** or  **%False%**.
+To create a **Boolean value** variable, use the **Set variable** action and enter the expressions **%True%** or **%False%** in the input parameter.
 
-Additionally, you can create complex expressions using logical operators, variables, and the percentage notation. For more information about logical expressions, go to [Use variables and the % notation](variable-manipulation.md).
+You can also create complex expressions by using logical operators, variables, and the percentage notation. For more information about logical expressions, see [Use variables and the % notation](variable-manipulation.md).
 
 ![Screenshot of a Set variable action that creates a Boolean value variable.](media\variable-data-types\create-boolean-variable.png)
 
@@ -88,7 +89,7 @@ To slice a list from the start to a specific item, don't set a **StartIndex** va
 
 Datatables contain data in a tabular form and are the equivalent of two-dimensional arrays in programming terms. 
 
-A datatable contains rows and columns that describe the position of each item uniquely. Datatables can be considered as lists that contain datarows as items.
+A datatable contains rows and columns that describe the position of each item uniquely. You can consider datatables as lists that contain datarows as items.
 
 ![Screenshot of the contents of a datatable variable.](media\data-tables\create-data-table.png)
 
@@ -96,13 +97,13 @@ Power Automate provides the **Create new data table** action to generate new dat
 
 ![Screenshot of the visual builder of the Create new data table action.](media\data-tables\create-new-data-table-action-visual-builder.png)
 
-Apart from the **Create new data table** action, three more actions produce datatables to store extracted data: the **Read from Excel worksheet**, **Execute SQL statement**, and **Extract data from web page** actions.
+In addition to the **Create new data table** action, three more actions produce datatables to store extracted data: the **Read from Excel worksheet**, **Execute SQL statement**, and **Extract data from web page** actions.
 
-Additionally, you can create a datatable using the **Set variable** action and the programming array notation. This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
+You can also create a datatable by using the **Set variable** action and the programming array notation. This notation consists of multiple single-dimension arrays separated by commas and enclosed in curly brackets. The final expression must have the following form: **%{['Product1', '10 USD'], ['Product2', '20 USD']}%**.
 
 ![Screenshot of Set variable action that creates a datatable.](media\data-tables\create-data-table-variable.png)
 
-If you want to add column headers while creating a new datatable using the array notation, use the **^['ColumnName1', 'ColumnName2']** expression for the first row.
+If you want to add column headers while creating a new datatable by using the array notation, use the **^['ColumnName1', 'ColumnName2']** expression for the first row.
 
 ![Screenshot of a Set variable action that creates a new datatable with column headers.](media\data-tables\set-variable-action-datatable-column-headers.png)
 
@@ -110,24 +111,24 @@ To add a new row to an existing table, use the **Insert row into data table** ac
 
 ![Screenshot of a Set variable action that adds a new row to a datatable.](media\data-tables\set-variable-action-datatable-new-row.png)
 
-Besides inserting rows into datatables, desktop flows offer various actions that manipulate datatables. You can find a full list with these actions in the [variable actions reference](actions-reference/variables.md).
+Besides inserting rows into datatables, desktop flows offer various actions that manipulate datatables. You can find a full list of these actions in the [variable actions reference](actions-reference/variables.md).
 
-To retrieve a specific item of a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
+To retrieve a specific item from a datatable, use the following notation: **%VariableName\[RowNumber\]\[ColumnNumber\]%**. Keep in mind that the **RowNumber** and the **ColumnNumber** should be 0 for the first item (row or column).
 
-For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the first cell on the second row of the retrieved table, use the expression displayed below.
+For example, suppose that a flow retrieves the content of an Excel worksheet and stores it in the **ExcelData** variable. To access the first cell on the second row of the retrieved table, use the expression displayed in the following image.
 
 ![Screenshot of an expression that accesses the first row's second cell of a read Excel file.](media\data-tables\data-table-row-item.png)
 
 > [!NOTE]
-> The **ExcelData** variable contains a table of values extracted from an Excel worksheet using the **Read from Excel worksheet** action. It contains some values of a specific worksheet and not the whole Excel file.
+> The **ExcelData** variable contains a table of values extracted from an Excel worksheet by using the **Read from Excel worksheet** action. It contains some values of a specific worksheet and not the whole Excel file.
 
-If you want to access a specific column in a datable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']%** notation.
+If you want to access a specific column in a datatable that contains column headers, use the **%ExcelData[rowNumber]['ColumnName']%** notation.
 
-If you loop through a datatable with a **For Each** action, the variable that contains the current iteration’s data is considered to be a datarow.
+If you loop through a datatable by using a **For Each** action, the variable that contains the current iteration’s data is considered to be a datarow.
 
-Similarly to lists, you use the **%VariableName[StartRow:StopRow]%** notation to access a specific part of a datatable. The expression retrieves only the rows defined by the two indexes, while the **StopRow** position is the boundary of the slicing and doesn't get retrieved.
+Similar to lists, you use the **%VariableName[StartRow:StopRow]%** notation to access a specific part of a datatable. The expression retrieves only the rows defined by the two indexes, while the **StopRow** position is the boundary of the slicing and doesn't get retrieved.
 
-To slice a datatable from the first row to a specific row, don't use a **StartRow** value, for example, **%Datatable[:4]%**. Likewise, to slice a datatable from a specific row to the end, don't use a **StopRow** value, for example, **%Datatable[2:]**%.
+To slice a datatable from the first row to a specific row, don't use a **StartRow** value, for example, **%Datatable[:4]%**. Likewise, to slice a datatable from a specific row to the end, don't use a **StopRow** value, for example, **%Datatable[2:]%**.
 
 [Datatable data type properties](datatype-properties.md#datatables)
 
@@ -145,20 +146,20 @@ Alternatively, you can use the **%VariableName['ColumnName']%** notation. The na
 
 ### Custom object
 
-Contains pairs of properties and values, which can be easily converted to JSON format. 
+Contains pairs of properties and values, which you can easily convert to JSON format. 
 
-To create a new empty **Custom object**, use the **Set variable** action and populate the following expression **%{{ }}%**. To create a new **Custom object** and initialize it with properties and values, use an expression of the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**.
+To create a new empty **Custom object**, use the **Set variable** action and enter the expression **%{{ }}%**. To create a new **Custom object** and initialize it with properties and values, use an expression with the following structure: **%{ 'Property1': 'Value1', 'Property2': 'Value2', 'Property3': 'Value2' }%**.
 
 ![Screenshot of Set variable action that creates a new custom object.](media\variable-data-types\create-custom-object-variable.png)
 
 > [!IMPORTANT]
-> Reserved keywords can't be used as custom object properties. For the full list of reserved keywords, go to [Reserved keywords in desktop flows](reserved-keywords.md).
+> You can't use reserved keywords as custom object properties. For the full list of reserved keywords, see [Reserved keywords in desktop flows](reserved-keywords.md).
 
-To update the value of an existing property or add a new one, deploy a **Set variable** action, populate the property's name in the **Set** field, and enter its value in the **To** field.
+To update the value of an existing property or add a new one, add a **Set variable** action, enter the property's name in the **Set** field, and enter its value in the **To** field.
 
 ![Screenshot of a Set variable action that adds a new property to a custom object.](media\variable-data-types\add-property-custom-object.png)
 
-Apart from literal values, you can use variables to dynamically set the properties and values of custom objects. For example, the following flow uses two variables to add a new property to a new empty custom object.
+Besides literal values, you can use variables to dynamically set the properties and values of custom objects. For example, the following flow uses two variables to add a new property to a new empty custom object.
 
 ![Screenshot of a flow that uses variables to add a new property to a custom object.](media\variable-data-types\add-property-custom-object-dynamically.png)
 
@@ -170,20 +171,20 @@ Connector objects store information from cloud connectors and work similarly to 
 
 ### List of PDF table info
 
-A variable of this data type can be produced only through the **Extract tables from PDF** action.
+You can create a variable of this data type only through the **Extract tables from PDF** action.
 
 Each item on the list describes an extracted table and provides all the essential information about it. To access a specific datatable info item, use the **%VariableName[ItemNumber]%** notation.
 
 ![Screenshot of a List of PDF table info.](media\variable-data-types\list-pdf-table-info.png) 
 
-Every list item provides four properties that allow you to get a specific detail independently. The available properties are the following:
+Each list item provides four properties that you can use to get specific details. The available properties are the following:
 
 - **DataTable** – Returns the extracted table.
 - **TableStartingPage** – Returns the index of the file page that contains the start of the table.
 - **TableEndingPage** – Returns the index of the file page that contains the end of the table.
 - **TableOrderInPage** – Returns the order of the table on the page. 
 
-You can find more information regarding the properties of this data type in [Variables datatype properties](datatype-properties.md#pdf-table-info).
+For more information about the properties of this data type, see [Variables datatype properties](datatype-properties.md#pdf-table-info).
 
 ![Screenshot of the properties of a list of PDF table info.](media\variable-data-types\list-pdf-table-info-properties.png) 
 
@@ -193,7 +194,7 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 
 ### Known issues and limitations
 
-- **Issue**: When a datatable or datarow cell contains a multiline entry, the variable viewer displays only the first line of it.
+- **Issue**: When a datatable or datarow cell contains a multiline entry, the variable viewer displays only the first line.
 - **Workarounds**: None.
 
 ## Instances
@@ -226,13 +227,13 @@ To access the value of a specific property, use the **%VariableName[ItemNumber].
 
   [FTP connection data type properties](datatype-properties.md#ftp-connection)
 
-## Others
+## Other data types
 
 This section presents all the available data types that don't belong to any of the previous categories.
 
 ### General value
 
-- **General value** – This data type is used during design time when Power Automate can't define the data type of a variable or an input parameter. General values get converted to other data types during runtime based on their data.
+- **General value** – Use this data type during design time when Power Automate can't define the data type of a variable or an input parameter. General values get converted to other data types during runtime based on their data.
 
 ### Active Directory
 
@@ -280,7 +281,7 @@ This section presents all the available data types that don't belong to any of t
 
 ### Dates and time
 
-- **Datetime** – Contains date and time information. To create a datetime variable through the **Set Variable** action, populate the input parameter with the expressions **%d"yyyy-MM-dd HH:mm:ss.ff+zzz"%**, where:
+- **Datetime** – Contains date and time information. To create a datetime variable through the **Set Variable** action, enter the input parameter with the expressions **%d"yyyy-MM-dd HH:mm:ss.ff+zzz"%**, where:
 
   | Notation | Description |
   |----------|-------------|
@@ -293,7 +294,7 @@ This section presents all the available data types that don't belong to any of t
   | **ff**   | Milliseconds |
   | **zzz**  | UTC Offset	 |
 
-  For example, **%d"2022-03-25"%** assigns the 25th of March 2022 date to the target variable.
+  For example, **%d"2022-03-25"%** assigns the March 25, 2022 date to the target variable.
 
 [Dates and time data type properties](datatype-properties.md#dates)
 
@@ -320,7 +321,7 @@ This section presents all the available data types that don't belong to any of t
 ### FTP
 
 - **FTP file** – Represents an FTP file.
-- **FTP directory** – Represents an FTP directory
+- **FTP directory** – Represents an FTP directory.
 
 [FTP data type properties](datatype-properties.md#ftp-files)
 
@@ -336,7 +337,7 @@ This section presents all the available data types that don't belong to any of t
 
 ### Sensitive values
 
-- **SensitiveValue** – Contains a text value that is enforced to be sensitive. A secret environment variable or the Password property of a credential variable are of SensitiveValue type.
+- **SensitiveValue** – Contains a text value that's enforced to be sensitive. A secret environment variable or the Password property of a credential variable are of SensitiveValue type.
 
 ### Terminal
 

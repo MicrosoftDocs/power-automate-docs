@@ -1,14 +1,15 @@
 ---
 title: Self-healing (preview)
 description: AI‑powered self‑healing when UI or web actions fail at runtime, allowing flows to continue instead of stopping on errors 
-ms.date: 06/30/2026
+ms.date: 10/28/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: yiannismavridis
 ms.author: iomavrid
-ms.reviewer: JoshuaPartlow
+ms.reviewer: smurkute
 ms.collection: bap-ai-copilot
 contributors:
+- shwetamurkute
 ms.custom:
 ---
 
@@ -19,11 +20,11 @@ ms.custom:
 Self-healing (preview) in Power Automate for desktop is an AI-powered capability that helps desktop flows recover from UI and browser automation failures caused by missing or changed UI elements. Instead of stopping the flow when an element can't be found, self-healing (preview) can attempt to identify the most likely correct element at runtime and continue the flow run.
 
 > [!IMPORTANT]
-> This is a preview feature.
+> This feature is in preview.
 
 ## Prerequisites
 
-Self-healing is currently only available for certain account types in specific regions.
+Self-healing is currently available only for certain account types in specific regions.
 
 ### Availability by region
 
@@ -31,7 +32,7 @@ Self-healing in Power Automate for desktop isn't currently available for use in 
 
 ### Availability by account type
 
-Self-healing in Power Automate for desktop is currently available for organization premium accounts at no additional cost. Usage may be subject to service limits or changes.
+Self-healing in Power Automate for desktop is currently available for organization premium accounts at no extra cost. Usage might be subject to service limits or changes.
 
 ## Self-healing for UI and browser automation actions at runtime
 
@@ -61,7 +62,7 @@ Currently, Self-healing:
 
 - Is available only for specific UI and browser automation actions that interact with a single UI element (for example, clicking a button or selecting a checkbox).
 - Applies only to *Element not found* and *Window not found* errors. *Element not found* errors are captured in both primary and secondary screens, while *Window not found* errors are only captured when the window is found in the main screen.
-- Doesn't apply to window/screen handling actions, or actions that interact with multiple elements like 'Drag and drop UI element in window'.
+- Doesn't apply to window or screen handling actions, or actions that interact with multiple elements like 'Drag and drop UI element in window'.
 
 ## How to turn on the feature
 
@@ -77,7 +78,7 @@ Self-healing relies on generative AI models and requires all of the following se
 
 - In Power Platform admin center, go to [Copilot > Settings](https://admin.powerplatform.microsoft.com/copilot/settings), and then under the Power Platform section, expand **External models** and enable **Anthropic** as a subprocessor at environment or environment group level. To learn more about external language models, see the article [Allow external language models for generative responses](/power-platform/admin/allow-llm-generative-responses).
 
-- In Power Platform admin center, go to [**Manage** > **Environments**](https://admin.powerplatform.microsoft.com/manage/environments). Select your environment so that you can see its details. In the **Generative AI features** card, select **Edit**. The **Generative AI features** pane is displayed. Review the terms of use and select the **Move data across regions** checkbox. To learn more about cross-region data movement, see tne article [Move data across regions for Copilots, AI agents, and generative AI features](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features).
+- In Power Platform admin center, go to [**Manage** > **Environments**](https://admin.powerplatform.microsoft.com/manage/environments). Select your environment so that you can see its details. In the **Generative AI features** card, select **Edit**. The **Generative AI features** pane is displayed. Review the terms of use and select the **Move data across regions** checkbox. To learn more about cross-region data movement, see the article [Move data across regions for Copilots, AI agents, and generative AI features](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features).
 
   > [!NOTE]
   > The **Move data across regions** checkbox isn't displayed or needed for US cloud regions.
@@ -87,8 +88,8 @@ Self-healing relies on generative AI models and requires all of the following se
 ### Required configuration in Power Automate for desktop
 
 - You need version 2.66 or higher for Power Automate for desktop.
-- Self-healing is enabled per action:
-    * Select a supported UI or browser automation action in the flow designer. If self-healing is available for that action, the respective visual indicator appears when you hover over the action in the workspace.
+- Enable self-healing per action:
+    * Select a supported UI or browser automation action in the flow designer. If self-healing is available for that action, the visual indicator appears when you hover over the action in the workspace.
 
     :::image type="content" source="media/self-healing/self-healing-availability-indicator.png" alt-text="Screenshot of self-healing availability indicator.":::
 
