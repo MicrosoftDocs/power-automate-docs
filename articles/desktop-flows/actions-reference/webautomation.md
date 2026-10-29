@@ -5,13 +5,14 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 03/30/2026
+ms.date: 10/28/2026
 ms.author: nimoutzo
-ms.reviewer: ellenwehrle
+ms.reviewer: smurkute
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
+- shwetamurkute
 search.audienceType: 
   - flowmaker
   - enduser
@@ -23,7 +24,7 @@ Browser automation actions enable you to interact with web applications and comp
 To perform web automation, first create a new browser instance by using one of the **Launch Browser** actions. These actions support Microsoft Edge, Google Chrome, Mozilla Firefox, and Internet Explorer. For web automation to function correctly, you must have either the appropriate browser extension or a compatible WebDriver installed, depending on the interaction method you select. You can also specify whether the browser should launch on your local desktop or within a virtual desktop environment.
 
 > [!IMPORTANT]
-> - To launch a browser on a virtual desktop, first capture at least one UI element within that desktop. This element needs to be available in the UI element repository of your flow.
+> To launch a browser on a virtual desktop, first capture at least one UI element within that desktop. This element needs to be available in the UI element repository of your flow.
 
 ## WebDriver-based browser automation
 
@@ -54,13 +55,13 @@ To add a new UI element, select **Add UI element** through the deployed browser 
 
 :::image type="content" source="media/webautomation/create-ui-element.png" alt-text="Screenshot of the options to create a new UI element.":::
 
-All web-related UI elements are specified by one or more CSS selectors - web selectors - that pinpoint the hierarchical structure of the component on the page. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
+Specify all web-related UI elements by using one or more CSS selectors - web selectors - that pinpoint the hierarchical structure of the component on the page. Selectors use the **>** notation to indicate that each element is contained within the element on its left.
 
-Although web selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When you need a custom web selector, you can create your own by either editing an existing selector or building one from scratch.
+Although web selectors are created automatically when adding UI elements, some particular scenarios need manually created selectors. When you need a custom web selector, create your own by either editing an existing selector or building one from scratch.
 
 :::image type="content" source="media/webautomation/create-selector.png" alt-text="Screenshot of the options to edit and create selectors.":::
 
-To develop more dynamic web flows, replace the **Equals to** operators with other operators or regular expressions. Additionally, if the value of a web selector's attribute depends on the results of previous actions, use variables instead of hard-coded values.
+To develop more dynamic web flows, replace the **Equals to** operators with other operators or regular expressions. If the value of a web selector's attribute depends on the results of previous actions, use variables instead of hard-coded values.
 
 :::image type="content" source="media\webautomation\selector-operators.png" alt-text="Screenshot of the available operators in the selector builder.":::
 
@@ -81,12 +82,12 @@ For more information about how to use this action, see [Web data extraction](../
 |UI element|No|[UI element](../ui-elements.md)||Select the UI element on the web page to extract data from.|
 |Extraction parameters|No|[Datatable](../variable-data-types.md#datatable)||The parameters to use when extracting data. Depending on the extraction mode, this parameter accepts different data.|
 |Max web pages to process|No|[Numeric value](../variable-data-types.md#numeric-value)||This is the maximum number of web pages to process.|
-|Send physical click for next page|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to physically move the mouse cursor over the page prior to clicking. A physical click is required for cases where emulated clicks to the page don't perform the intentional action on the element. As this option requires the browser window to be focused, it automatically brings it to the foreground.|
+|Send physical click for next page|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to physically move the mouse cursor over the page before clicking. A physical click is required for cases where emulated clicks to the page don't perform the intentional action on the element. As this option requires the browser window to be focused, it automatically brings it to the foreground.|
 |Page CSS selector|No|[Text value](../variable-data-types.md#text-value)||This is the page CSS selector.|
 |Extraction mode|N/A|<ul><li>Undefined</li><li>Single value</li><li>Handpicked values</li><li>List</li><li>Table</li><li>Entire HTML table</li></ul>|Single value|Specify what to extract from the web page.|
 |Use paging|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to use paging.|
 |Get all web pages|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to get all web pages.|
-|Process data upon extraction|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to process extracted data to present them exactly as displayed in the webpage. Processing of extracted data includes displaying of the information nested in iframes and filtering through hidden or visible elements. For larger datasets, having this option enabled isn't recommended as it will increase the extraction time.|
+|Process data upon extraction|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to process extracted data to present them exactly as displayed in the webpage. Processing of extracted data includes displaying of the information nested in iframes and filtering through hidden or visible elements. For larger datasets, having this option enabled isn't recommended as it increases the extraction time.|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the extraction to complete before the action fails.|
 |Store data mode|N/A|<ul><li>Variable</li><li>Excel spreadsheet</li></ul>|Variable|Specify whether to store the extracted data in a variable or an Excel spreadsheet.|
 
@@ -301,9 +302,9 @@ Set or clear the selected options for a drop-down list in a web form.
 | Web browser instance | No | [Web browser instance](../variable-data-types.md#instances) | | Enter or choose the variable that contains the web browser instance to work with. |
 |UI element|No|[UI element](../ui-elements.md)||Select the drop-down list to set its value.|
 |Operation|N/A|<ul><li>Clear all options</li><li>Select options by name</li><li>Select options by index</li></ul>|Clear all options|Select whether to select a value or clear the selected value of the drop-down list.|
-|Option names|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||Enter an option or a list of options to be selected in the drop-down list. Multiple options make sense only when working with multi-selection lists. If the list is single-selection, then only the first option of the list specified is used.|
-|Use regular expressions|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the option names values to interpret as a regular expression.|
-|Option indices|No|[List](../variable-data-types.md#list) of [Numeric values](../variable-data-types.md#numeric-value)||Enter an index or a list of indices to be selected in the drop-down list. Multiple options make sense only when working with multi-selection lists. If the list is single-selection, then only the first option of the list specified is used.|
+|Option names|No|[List](../variable-data-types.md#list) of [Text values](../variable-data-types.md#text-value)||Enter an option or a list of options to select in the drop-down list. Multiple options make sense only when working with multi-selection lists. If the list is single-selection, then only the first option of the list specified is used.|
+|Use regular expressions|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to interpret the option names values as a regular expression.|
+|Option indices|No|[List](../variable-data-types.md#list) of [Numeric values](../variable-data-types.md#numeric-value)||Enter an index or a list of indices to select in the drop-down list. Multiple options make sense only when working with multi-selection lists. If the list is single-selection, then only the first option of the list specified is used.|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely after setting the drop-down list value.|
 |Timeout for webpage load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error.|
 |If a pop-up dialog appears|N/A|<ul><li>Close it</li><li>Press a button</li><li>Do nothing</li></ul>|Do nothing|Specify what to do if a pop-up dialog appears after setting the drop-down list value.|
@@ -397,16 +398,16 @@ This action doesn't produce any variables.
 Launch a new instance or attach to a running instance of Internet Explorer for automating websites and web applications.
 
 ### Deprecation notice: Automation browser
-The Automation browser option is planned for deprecation and will be removed in a future release of Power Automate for desktop.
+The Power Automate team plans to deprecate the Automation browser option and remove it in a future release of Power Automate for desktop.
 
-Existing desktop flows that use Automation browser continue to work during the deprecation period. However, don't use this option for new automations. Migrate existing flows to supported alternatives as soon as possible. Over time, Automation browser is removed from the product, and flows that aren't updated stop working once the option is no longer available.
+Existing desktop flows that use Automation browser continue to work during the deprecation period. However, don't use this option for new automations. Migrate existing flows to supported alternatives as soon as possible. Over time, the product removes Automation browser, and flows that aren't updated stop working once the option is no longer available.
 
 To ensure long-term compatibility, use one of the following alternatives:
 - Microsoft Edge in Internet Explorer (IE) mode, by selecting **Launch new Microsoft Edge**. This option automates legacy web applications that require Internet Explorer compatibility.
 - Internet Explorer, by selecting **Launch new Internet Explorer**, where still applicable and supported in your environment.
 
 #### Deprecation timeline (planned)
-The deprecation of Automation browser is expected to occur over the next 12–18 months, following a phased approach:
+The Power Automate team plans to deprecate Automation browser over the next 12–18 months, following a phased approach:
 
 - **Now**: Automation browser is marked for deprecation. New use is discouraged, and documentation and in‑product messaging guide users toward supported alternatives.
 - **During the deprecation period**: Migrate existing desktop flows to Microsoft Edge (IE mode) or Internet Explorer.
@@ -469,16 +470,16 @@ Launch a new instance or attach to a running instance of Firefox for automating 
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Firefox tab to attach to|
 |Window state|N/A|<ul><li>Normal</li><li>Maximized</li><li>Minimized</li></ul>|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state.|
 |Target desktop|N/A|<ul><li>Local computer</li><li>Any virtual desktop that is either currently connected or has at least one UI element captured</li></ul>|Local computer|Set the connection string of the target desktop that the browser launches.|
-|Browser interaction method|N/A|<ul><li>Browser extension</li><li>WebDriver</li></ul>|Browser extension|Set how Power Automate for desktop communicates with the browser during web automation|
+|Browser interaction method|N/A|<ul><li>Browser extension</li><li>WebDriver</li></ul>|Browser extension|Set how Power Automate for desktop communicates with the browser during web automation.|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it.|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it.|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding.|
 |Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error.|
 |If a pop-up dialog appears|N/A|<ul><li>Close it</li><li>Press a button</li><li>Do nothing</li></ul>|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page.|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears.|
-|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
-|User data folder|N/A|<ul><li>Picture-in-Picture default</li><li>Browser default</li><li>Custom</li></ul>|Picture-in-Picture default|Specify the user data folder the browser uses when the flow runs in Picture-in-Picture. If Browser default is selected, the browser can't be opened on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip.md#browser-automation-limitations-in-pictureinpicture-child-session)|
-|User data folder path|No|[Folder](../variable-data-types.md#files-and-folders)||Specify the path of the user data folder the browser uses when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip.md#browser-automation-limitations-in-pictureinpicture-child-session)|
+|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to launch before the action fails.|
+|User data folder|N/A|<ul><li>Picture-in-Picture default</li><li>Browser default</li><li>Custom</li></ul>|Picture-in-Picture default|Specify the user data folder the browser uses when the flow runs in Picture-in-Picture. If you select Browser default, you can't open the browser on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip.md#browser-automation-limitations-in-pictureinpicture-child-session).|
+|User data folder path|No|[Folder](../variable-data-types.md#files-and-folders)||Specify the path of the user data folder the browser uses when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip.md#browser-automation-limitations-in-pictureinpicture-child-session).|
 
 ### Variables produced
 
@@ -513,7 +514,7 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Chrome tab to attach to|
 |Window state|N/A|<ul><li>Normal</li><li>Maximized</li><li>Minimized</li></ul>|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state.|
 |Target desktop|N/A|<ul><li>Local computer</li><li>Any virtual desktop that is either currently connected or has at least one UI element captured</li></ul>|Local computer|Set the connection string of the target desktop that the browser launches.|
-|Browser interaction method|N/A|<ul><li>Browser extension</li><li>WebDriver</li></ul>|Browser extension|Set how Power Automate for desktop communicates with the browser during web automation|
+|Browser interaction method|N/A|<ul><li>Browser extension</li><li>WebDriver</li></ul>|Browser extension|Set how Power Automate for desktop communicates with the browser during web automation.|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it.|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it.|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding.|
@@ -521,8 +522,8 @@ Launch a new instance or attach to a running instance of Chrome for automating w
 |If a pop-up dialog appears|N/A|<ul><li>Close it</li><li>Press a button</li><li>Do nothing</li></ul>|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page.|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears.|
 |Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be opened before the action fails|
-|User data folder|N/A|<ul><li>Picture-in-Picture default</li><li>Browser default</li><li>Custom</li></ul>|Picture-in-Picture default|Specify the user data folder the browser uses when the flow runs in Picture-in-Picture. If Browser default is selected, the browser can't be opened on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip.md#browser-automation-limitations-in-pictureinpicture-child-session)|
-|User data folder path|No|[Folder](../variable-data-types.md#files-and-folders)||Specify the path of the user data folder the browser uses when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip.md#browser-automation-limitations-in-pictureinpicture-child-session)|
+|User data folder|N/A|<ul><li>Picture-in-Picture default</li><li>Browser default</li><li>Custom</li></ul>|Picture-in-Picture default|Specify the user data folder the browser uses when the flow runs in Picture-in-Picture. If you select Browser default, you can't open the browser on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip.md#browser-automation-limitations-in-pictureinpicture-child-session).|
+|User data folder path|No|[Folder](../variable-data-types.md#files-and-folders)||Specify the path of the user data folder the browser uses when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip.md#browser-automation-limitations-in-pictureinpicture-child-session).|
 
 ### Variables produced
 
@@ -549,29 +550,29 @@ Launch a new instance or attach to a running instance of Microsoft Edge for auto
 
 | Argument | Optional | Accepts | Default value | Description |
 |-----|-----|-----|-----|-----|
-|Launch mode|N/A|<ul><li>Launch new Instance</li><li>Attach to running instance</li></ul>|Launch new Instance|Specify whether to launch a new instance of Microsoft Edge or attach to an existing one|
-|Attach to Microsoft Edge tab|N/A|<ul><li>By title</li><li>By URL</li><li>Use foreground window</li></ul>|By title|Specify whether to attach to a Microsoft Edge tab by its title, URL, or attach to the active tab of Microsoft Edge running as the foreground window|
+|Launch mode|N/A|<ul><li>Launch new Instance</li><li>Attach to running instance</li></ul>|Launch new Instance|Specify whether to launch a new instance of Microsoft Edge or attach to an existing one.|
+|Attach to Microsoft Edge tab|N/A|<ul><li>By title</li><li>By URL</li><li>Use foreground window</li></ul>|By title|Specify whether to attach to a Microsoft Edge tab by its title, URL, or attach to the active tab of Microsoft Edge running as the foreground window.|
 |Initial URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL of the website to visit when the web browser launches.|
-|Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Microsoft Edge tab to attach to|
-|Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Microsoft Edge tab to attach to|
+|Tab title|No|[Text value](../variable-data-types.md#text-value)||Enter the title (or part of it) of the Microsoft Edge tab to attach to.|
+|Tab URL|No|[Text value](../variable-data-types.md#text-value)||Enter the URL (or part of it) of the Microsoft Edge tab to attach to.|
 |Window state|N/A|<ul><li>Normal</li><li>Maximized</li><li>Minimized</li></ul>|Normal|Specify whether to launch the browser window in normal, minimized, or maximized state.|
 |Target desktop|N/A|<ul><li>Local computer</li><li>Any virtual desktop that is either currently connected or has at least one UI element captured</li></ul>|Local computer|Set the connection string of the target desktop that the browser launches.|
-|Browser interaction method|N/A|<ul><li>Browser extension</li><li>WebDriver</li></ul>|Browser extension|Set how Power Automate for desktop communicates with the browser during web automation|
+|Browser interaction method|N/A|<ul><li>Browser extension</li><li>WebDriver</li></ul>|Browser extension|Set how Power Automate for desktop communicates with the browser during web automation.|
 |Clear cache|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear the entire cache of the web browser right after launching it.|
 |Clear cookies|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to clear all stored cookies in the web browser right after launching it.|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely before proceeding.|
 |Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error.|
 |If a pop-up dialog appears|N/A|<ul><li>Close it</li><li>Press a button</li><li>Do nothing</li></ul>|Do nothing|Specify what to do if a pop-up dialog appears while loading the initial web page.|
 |Dialog button to press|Yes|[Text value](../variable-data-types.md#text-value)|OK|Enter the dialog button to press if a pop-up dialog appears.|
-|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to be launched before the action fails|
-|User data folder|N/A|<ul><li>Picture-in-Picture default</li><li>Browser default</li><li>Custom</li></ul>|Picture-in-Picture default|Specify the user data folder the browser uses when the flow runs in Picture-in-Picture. If Browser default is selected, the browser can't be opened on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip.md#browser-automation-limitations-in-pictureinpicture-child-session)|
-|User data folder path|No|[Folder](../variable-data-types.md#files-and-folders)||Specify the path of the user data folder the browser uses when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip.md#browser-automation-limitations-in-pictureinpicture-child-session)|
+|Timeout|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds that you want to wait for the browser to launch before the action fails.|
+|User data folder|N/A|<ul><li>Picture-in-Picture default</li><li>Browser default</li><li>Custom</li></ul>|Picture-in-Picture default|Specify the user data folder the browser uses when the flow runs in Picture-in-Picture. If you select Browser default, you can't open the browser on both the desktop and in Picture-in-Picture at the same time. [Learn more](../run-desktop-flows-pip.md#browser-automation-limitations-in-pictureinpicture-child-session).|
+|User data folder path|No|[Folder](../variable-data-types.md#files-and-folders)||Specify the path of the user data folder the browser uses when the flow runs in Picture-in-Picture. [Learn more](../run-desktop-flows-pip.md#browser-automation-limitations-in-pictureinpicture-child-session).|
 
 ### Variables produced
 
 |Argument|Type|Description|
 |-----|-----|-----|
-|Browser|[Web browser instance](../variable-data-types.md#instances)|The Microsoft Edge instance to use with browser automation actions|
+|Browser|[Web browser instance](../variable-data-types.md#instances)|The Microsoft Edge instance to use with browser automation actions.|
 
 ### <a name="launchedgebase_onerror"></a> Exceptions
 
@@ -637,7 +638,7 @@ This action doesn't produce any variables.
 
 ## <a name="clickbase"></a> Click link on web page
 
-Click on a link or any other element of a web page.
+Click a link or any other element on a web page.
 
 ### Input parameters
 
@@ -646,7 +647,7 @@ Click on a link or any other element of a web page.
 | Web browser instance | No | [Web browser instance](../variable-data-types.md#instances) | | Enter or choose the variable that contains the web browser instance to work with. |
 |UI element|No|[UI element](../ui-elements.md)||Select the UI element on web page to click.|
 |Click type|N/A|<ul><li>Left click</li><li>Right click</li><li>Double click</li><li>Left button down</li><li>Left button up</li><li>Right button down</li><li>Right button up</li><li>Middle click</li></ul>|Left click|The kind of click to perform|
-|Send physical click|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to physically move the mouse cursor over the element prior to clicking. A physical click is required for cases where emulated clicks don't perform the intentional action on the element. As this option requires the browser window to be focused, it automatically brings it to the foreground.|
+|Send physical click|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to physically move the mouse cursor over the element before clicking. A physical click is required for cases where emulated clicks don't perform the intentional action on the element. As this option requires the browser window to be focused, it automatically brings it to the foreground.|
 |Wait for page to load|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to wait for the new web page to load completely after clicking the link|
 |Timeout for webpage to load|No|[Numeric value](../variable-data-types.md#numeric-value)|60|Set the time in seconds for page to load before the action throws an error.|
 |If a pop-up dialog appears|N/A|<ul><li>Close it</li><li>Press a button</li><li>Do nothing</li></ul>|Do nothing|Specify what to do if a pop-up dialog appears after clicking the link.|

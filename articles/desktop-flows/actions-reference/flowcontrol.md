@@ -5,12 +5,13 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 01/26/2026
+ms.date: 10/28/2026
 ms.author: nimoutzo
-ms.reviewer: ellenwehrle
+ms.reviewer: smurkute
 contributors:
 - Yiannismavridis
 - cochamos
+- shwetamurkute
 search.audienceType: 
   - flowmaker
   - enduser
@@ -22,9 +23,9 @@ Flow control is the act of controlling the order in which actions and subflows r
 
 In conjunction with the safe stop capability available in the Power Automate portal, you can trigger the **If safe stop is requested** action in the desktop flow run details page or directly within the flow designer for debugging purposes. This action enables controlled termination of a running flow. For more information, see [Safe stop](../safe-stop.md).
 
-To intentionally raise user-defined errors during a desktop flow's execution, you can use the **Throw custom error** action. This approach allows the **On block error** action to catch and handle those errors.
+To intentionally raise user-defined errors during a desktop flow's execution, use the **Throw custom error** action. This approach allows the **On block error** action to catch and handle those errors.
 
-To create points of reference for the **Go to** action that changes the running point of the desktop flow, you can use **Labels**. The following example directs the flow to a label earlier in the flow to repeat a series of actions.
+To create points of reference for the **Go to** action that changes the running point of the desktop flow, use **Labels**. The following example directs the flow to a label earlier in the flow to repeat a series of actions.
 
 :::image type="content" source="media/flowcontrol/label-example.png" alt-text="Screenshot of a deployed Label action.":::
 
@@ -51,7 +52,7 @@ Checks whether safe stop is requested for the specific flow.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Stop the flow|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Indicates whether the flow's execution should be terminated after the completion of the specific block of actions or if the execution should continue. Note that if you choose to continue execution, you need to manually add a **Stop Flow** action to terminate the flow.|
+|Stop the flow|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Indicates whether the flow's execution should be terminated after the completion of the specific block of actions or if the execution should continue. If you choose to continue execution, you need to manually add a **Stop Flow** action to terminate the flow.|
 
 ### Variables produced
 
@@ -167,9 +168,9 @@ This action doesn't include any exceptions.
 
 ## <a name="label"></a> Label
 
-Acts as the destination of a 'go to' statement.
+Acts as the destination of a **Go to** statement.
 
-From version 2.46 and later, you can use labels in a different scope than the corresponding **Go to** action (for example, in a conditional block), except error blocks, loops, and other subflows.
+Starting with version 2.46, you can use labels in a different scope than the corresponding **Go to** action (for example, in a conditional block), except error blocks, loops, and other subflows.
 
 ### Input parameters
 
@@ -240,7 +241,7 @@ This action doesn't include any exceptions.
 
 Runs a subflow and specifies any required arguments.
 
-In the context menu of the **Run subflow** action, the option ‘Go to subflow’ allows you to quickly navigate to the selected subflow tab in the flow designer.
+In the context menu of the **Run subflow** action, the option Go to subflow allows you to quickly navigate to the selected subflow tab in the flow designer.
 
 ### Input parameters
 

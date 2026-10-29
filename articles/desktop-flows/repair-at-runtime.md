@@ -1,15 +1,16 @@
 ---
 title: Repair Flow Automation Errors (preview)
 description: Users can automatically or manually fix errors in UI elements that aren't located during the execution of a UI or browser automation task.
-ms.date: 04/01/2025
+ms.date: 10/28/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: nikosmoutzourakis
 ms.author: nimoutzo
-ms.reviewer: null
+ms.reviewer: smurkute
 ms.collection: bap-ai-copilot
 contributors:
 - rpapostolis
+- shwetamurkute
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-title
@@ -24,8 +25,8 @@ This feature uses Copilot to find and repair the selectors of the required UI el
 Users simply need to review and approve Copilot's suggestions. Alternatively, users can manually indicate the UI elements on the screen, and Power Automate for Desktop adjusts the selectors accordingly.
 
 > [!IMPORTANT]
-> - This is a preview feature.
-> - Preview features aren’t meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
+> - This feature is in preview.
+> - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - Copilot is a new technology that's still being developed. It's optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
 
 ## Prerequisites
@@ -49,12 +50,12 @@ Currently, Copilot in Power Automate for desktop is only available for users wit
 
 - You need Power Automate desktop version 2.51 (11.2412.xxx.y) or higher. Learn how to download the latest version at [Install Power Automate](https://aka.ms/DownloadPAD48).
 - For repairing with Copilot, ensure the Copilot setting in the Power Platform Admin Center is turned on.
-- Turn on the use of AI for self-healing issues. The **Repair at runtime** setting for the desired run mode (`attended` and `unattended`) can be found under the **Desktop flow repair at runtime configuration** setting in the Power Platform admin center.
+- Turn on the use of AI for self-healing issues. Find the **Repair at runtime** setting for the desired run mode (`attended` and `unattended`) under the **Desktop flow repair at runtime configuration** setting in the Power Platform admin center.
 
     :::image type="content" source="media/repair-with-copilot/repair-with-copilot-ppac-setting.png" alt-text="Screenshot of repair at runtime setting for the respective run mode." lightbox="media/repair-with-copilot/repair-with-copilot-ppac-setting.png":::
 
 - For newly created flows, turn on the **Repair flow errors** option.
-- For existing flows, navigate to the respective desktop flow properties in the Power Automate for desktop console. Turn on the **Repair flow errors** property in the desktop flow's properties.
+- For existing flows, go to the respective desktop flow properties in the Power Automate for desktop console. Turn on the **Repair flow errors** property in the desktop flow's properties.
 
   - **Repair with Copilot**: This option allows for automated issue resolution with the assistance of Copilot.
   - **Repair**: This option turns on manual issue resolution, requiring you to specify the UI element on the screen at the moment of failure during runtime.
@@ -63,7 +64,7 @@ Currently, Copilot in Power Automate for desktop is only available for users wit
 
 ### Attended experience step-by-step
 
-The feature triggers when a cloud flow initiates a desktop flow that's on the verge of failing. This potential failure occurs because a UI or browser automation action encounters an error when the UI element intended for interaction isn't located using one or more preconfigured selectors. Next, a "Repair with Copilot" notification window appears on the screen. Copilot then attempts to find the necessary UI element by analyzing the UI elements present on the relevant screen or web page. Selecting Cancel stops the entire process and the action fails, which means that the desktop flow fails (or activates the error handling mechanism of the failed action). Select **Repair manually**, and you indicate the required UI element manually on the screen by capturing it.
+This feature triggers when a cloud flow initiates a desktop flow that's about to fail. This potential failure happens because a UI or browser automation action encounters an error when it can't find the UI element for interaction by using one or more preconfigured selectors. Next, a **Repair with Copilot** notification window appears on the screen. Copilot then tries to find the necessary UI element by analyzing the UI elements on the relevant screen or web page. Select **Cancel** to stop the entire process. The action fails, which means the desktop flow fails or activates the error handling mechanism for the failed action. Select **Repair manually**, and you manually indicate the required UI element on the screen by capturing it.
 
 :::image type="content" source="media/repair-with-copilot/repair_wait_for_copilot.png" alt-text="Copilot is trying to locate the UI element.":::
 
@@ -72,12 +73,12 @@ The feature triggers when a cloud flow initiates a desktop flow that's on the ve
 
 #### Repair with Copilot
 
-When Copilot locates the UI element successfully, the options are:
+When Copilot locates the UI element, you can:
 
-- **Apply for every run**: The newly identified selector is added to the selectors list for the UI element, positioned as the last in order. The desktop flow is updated with this new selector, ensuring that in future runs, the suggested selector is included in the list for this UI element.
-- **Apply Once**: The suggested selector is accepted for this run only. The new selector is added to the UI element's selector list and used for this execution, but isn't saved for future runs.
-- **Repair Manually**: You reject the Copilot suggestion and must manually identify and capture the required UI element on the screen.
-- **Cancel or Close**: You reject the suggestion, causing the desktop flow to fail or trigger the error handling mechanism for the failed action.
+- **Apply for every run**: Add the newly identified selector to the selectors list for the UI element as the last option. Update the desktop flow with this new selector, so future runs include the suggested selector in the list for this UI element.
+- **Apply once**: Accept the suggested selector for this run only. Add the new selector to the UI element's selector list and use it for this execution, but don't save it for future runs.
+- **Repair manually**: Reject the Copilot suggestion and manually identify and capture the required UI element on the screen.
+- **Cancel or close**: Reject the suggestion, causing the desktop flow to fail or trigger the error handling mechanism for the failed action.
 
 If you accept the suggestion, the notification window closes, and the action interacts successfully with the correct UI element.
 
@@ -85,28 +86,28 @@ Check the UI element suggested by Copilot by selecting the **Target** button on 
 
 :::image type="content" source="media/repair-with-copilot/repair_copilot_suggestion.png" alt-text="Screenshot showing Copilot located the UI element successfully.":::
 
-When the AI service can't locate the UI element successfully, you're prompted to locate the UI element manually. You can cancel the repair, and the desktop flow fails (or activates the error handling mechanism of the failed action).
+If the AI service can't locate the UI element, you're prompted to locate the UI element manually. You can cancel the repair, and the desktop flow fails or activates the error handling mechanism for the failed action.
 
 :::image type="content" source="media/repair-with-copilot/repair_copilot_cannot find.png" alt-text="Screenshot showing Copilot couldn't locate the UI element.":::
 
 ### Repair manually
 
-You can also repair the issue manually. Similar to the previous method, a notification window appears at runtime, prompting you to capture the UI element using Power Automate for Desktop's highlighter. To initiate this process, select the **Repair** button in the notification window, which turns on the highlighter. Next, hover over the necessary UI element on the screen and press "Ctrl" along with a left-click to capture it.
+You can also repair the issue manually. Similar to the previous method, a notification window appears at runtime, prompting you to capture the UI element by using Power Automate for Desktop's highlighter. To initiate this process, select the **Repair** button in the notification window, which turns on the highlighter. Next, hover over the necessary UI element on the screen and press `Ctrl` + left-click to capture it.
 
-The manual repair experience is also triggered if Copilot can't locate the UI element or if you select the **Repair manually** option from the notification window's drop-down menu.
+The manual repair experience also starts if Copilot can't locate the UI element or if you select the **Repair manually** option from the notification window's drop-down menu.
 
 :::image type="content" source="media/repair-with-copilot/repair_manual.png" alt-text="Screenshot of user capturing the required UI element manually.":::
 
 ### Unattended experience step-by-step
 
 > [!NOTE]
-> Repair with Copilot feature for unattended runs is only supported in [managed envrionments](/power-platform/admin/managed-environment-enable).
+> The Repair with Copilot feature for unattended runs supports only [managed environments](/power-platform/admin/managed-environment-enable).
 
-If you enabled repair at runtime for **unattended** runs in the Power Platform admin center, you receive repair requests directly under [Recommendations](/power-automate/automation-center-recommendations) within the [Automation Center](/power-automate/automation-center-overview) experience. The repair request will automatically time out after 10 minutes if no action is taken.
+If you enable repair at runtime for **unattended** runs in the Power Platform admin center, you receive repair requests directly under [Recommendations](/power-automate/automation-center-recommendations) within the [Automation Center](/power-automate/automation-center-overview) experience. The repair request automatically times out after 10 minutes if you don't take action.
 
 :::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco.png" alt-text="Screenshot of repair at runtime recommendation in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco.png":::
 
-Once you select the **Repair with Copilot** button, a side panel opens with the repair request details. This panel contains a list of desktop flow runs for which alternative UI selectors were identified to recover failing unattended runs.
+When you select the **Repair with Copilot** button, a side panel opens with the repair request details. This panel contains a list of desktop flow runs for which alternative UI selectors were identified to recover failing unattended runs.
 
 :::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details.png" alt-text="Screenshot of repair at runtime recommendation details panel in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details.png":::
 
@@ -114,13 +115,13 @@ As soon as you select a row in the recommendation list view, you can choose one 
 
 - **Repair with Copilot**: Opens a panel showing the problematic control along with the original and new selector identified by Copilot.
 - **Ignore and continue**: Ignores the repair request, likely causing the run to fail since the selector wasn't changed.
-- **Flow details**: Navigates to the flow details page for which the request was created.
-- **Run details**: Navigates to the desktop flow run details page for which the request was created.
+- **Flow details**: Goes to the flow details page for which the request was created.
+- **Run details**: Goes to the desktop flow run details page for which the request was created.
 - **Refresh**: Refreshes the list of repair recommendations.
 
 #### Repair with Copilot action
 
-On the panel that opens once you select **Repair with Copilot**, you see 2 main areas and an action list at the bottom. The upper part of the panel shows the problematic element together with script, location, and selector details.
+On the panel that opens when you select **Repair with Copilot**, you see two main areas and an action list at the bottom. The upper part of the panel shows the problematic element together with script, location, and selector details.
 
 :::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details-original.png" alt-text="Screenshot of repair at runtime recommendation details panel with actions bar in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details-original.png":::
 
@@ -128,7 +129,7 @@ In the lower part of the panel, you see a **Suggested fix** area displaying a vi
 
 :::image type="content" source="media/repair-with-copilot/repair-with-copilot-AC-reco-details-suggested.png" alt-text="Screenshot of repair at runtime recommendation details panel showing Copilot suggestion in the Automation center." lightbox="media/repair-with-copilot/repair-with-copilot-AC-reco-details-suggested.png":::
 
-On the bottom of the panel, you see a button menu labeled **Apply once** from which you can choose:
+At the bottom of the panel, you see a button menu labeled **Apply once** from which you can choose:
 
 - **Apply once**: Temporarily applies the selected fix for the current run.
 - **Ignore and continue**: Ignores the repair request, likely causing the run to fail since the selector wasn't changed.
@@ -151,7 +152,7 @@ If you choose **Apply once**, a confirmation message indicates whether the selec
 - The feature can't apply to selectors that contain one or more variables.
 - The unattended version of this feature doesn't yet support persisting a new selector in the desktop flow script during runtime.
 - Drag-and-drop actions aren't supported at this phase.
-- The **Apply for every run** option uses the user identity logged into the Power Automate for desktop console. If no user is signed into the console, the option isn't available.
+- The **Apply for every run** option uses the user identity signed in to the Power Automate for desktop console. If no user is signed in to the console, the option isn't available.
 
 ## Help us improve this feature
 

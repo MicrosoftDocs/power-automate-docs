@@ -3,10 +3,10 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: NikosMoutzourakis
 ms.topic: article
-ms.date: 07/03/2026
+ms.date: 10/28/2026
 ms.update-cycle: 180-days
 ms.author: nimoutzo
-ms.reviewer: ellenwehrle
+ms.reviewer: smurkute
 ms.collection: bap-ai-copilot
 contributors:
 - jpapadimitriou
@@ -16,6 +16,7 @@ contributors:
 - cochamos
 - iopanag
 - rack82
+- shwetamurkute
 search.audienceType: 
   - flowmaker
   - enduser
@@ -98,11 +99,11 @@ Use the following registry entry to prevent users from signing in to Power Autom
 
 ## Restrict access to Power Automate for desktop
 
-To restrict access to Power Automate for desktop on a workstation with Windows 10 or Windows 11, use [App locker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
+To restrict access to Power Automate for desktop on a workstation with Windows 10 or Windows 11, use [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview).
 
 ## Configure Power Automate for desktop to use the Web Account Manager (WAM) as a fallback sign-in method
 
-By default, Power Automate for desktop uses the Web Account Manager (WAM) for user authentication. If any sign in errors occur, it uses an Internet Explorer client as a fallback method.
+By default, Power Automate for desktop uses the Web Account Manager (WAM) for user authentication. If any sign-in errors occur, it uses an Internet Explorer client as a fallback method.
 
 Use the following registry entry to set Power Automate for desktop to sign in by using the Windows Web Account Manager (WAM) as a fallback sign-in method.
 
@@ -119,7 +120,7 @@ Use the following registry entry to set Power Automate for desktop to sign in by
 
 ## Configure Power Automate for desktop to check for revoked certificates
 
-Certificates ensure the security of your connections to online data sources. You can use the following registry entry to configure the level of certificate check, based on the certificates' revocation information status.
+Certificates ensure the security of your connections to online data sources. Use the following registry entry to configure the level of certificate check, based on the certificates' revocation information status.
 
 > [!NOTE]
 > The default configuration when you don't set a registry entry is **Basic check**.
@@ -148,7 +149,7 @@ Use the following registry entry to allow users to select the organization they 
 
 - **"isEnabled":0**: Signed-in users can't select the organization they prefer and the **Switch organization** option is disabled.
 
-- **"organizationList":[OrgID(s)]** (for example, `organizationList:["10z677m8-l4v6-9cm5-c6n6-r1747rp5338k","86d487j7-y1t2-9gk7-k7n2-x5079jq4619r"]`): The organizations with the specified IDs are available to connect during sign-in.
+- **"organizationList":[OrgID(s)]** (for example, `organizationList:["10z677m8-l4v6-9cm5-c6n6-r1747rp5338k","86d487j7-y1t2-9gk7-k7n2-x5079jq4619r"]`): The organizations with the specified IDs are available to connect to during sign-in.
 
 - **"selectOrganizationFromListIsEnabled":1**: Power Automate for desktop tries to connect to each of the organizations specified in the **organizationList** value, in order, during sign-in.
 
@@ -191,11 +192,11 @@ IT administrators can set the following registry key to configure how Power Auto
 
 ***Value***
 
-- **ProxyAddress:Port** (for example, `https://myproxy.com:3128`): The proxy server and port configured override the proxy server and port configured in Windows.
+- **ProxyAddress:Port** (for example, `https://myproxy.com:3128`): The proxy server and port you configure override the proxy server and port configured in Windows.
 
 ## Configure Power Automate for desktop to bypass a corporate proxy server
 
-IT administrators can set the following registry key to configure Power Automate's bypassing of a corporate proxy server.
+IT administrators can set the following registry key to configure Power Automate to bypass a corporate proxy server.
 
 > [!IMPORTANT]
 > Starting with Power Automate for desktop version 2.45, you can configure all proxy settings through the Power Automate proxy configuration files. For more information, see [Configure Power Automate for desktop proxy settings](./how-to/proxy-settings.md).
@@ -206,7 +207,7 @@ IT administrators can set the following registry key to configure Power Automate
 
 ***Value***
 
-- **1**: Power Automate for desktop doesn't honor the Windows Proxy settings and the proxy server is bypassed for Power Automate's traffic.
+- **1**: Power Automate for desktop doesn't honor the Windows Proxy settings and bypasses the proxy server for Power Automate's traffic.
 
 ## Configure Power Automate for desktop to authenticate to a corporate proxy server by using the current user's credentials
 
@@ -240,7 +241,7 @@ IT administrators can set the following registry key to configure Power Automate
 
 ## Configure Power Automate for desktop to bypass a set of addresses while interacting with a corporate proxy server
 
-IT administrators can set the following registry key to configure a list of IP addresses that are bypassed while Power Automate interacts with a corporate proxy server. 
+IT administrators can set the following registry key to configure a list of IP addresses that Power Automate bypasses while interacting with a corporate proxy server. 
 
 > [!NOTE]
 > Before you can use this registry key, you need to first configure the proxy server's address and port through the **:::no-loc text="ProxyServer":::** registry key.
@@ -294,12 +295,12 @@ Use the following registry entry to prevent Power Automate for desktop from uplo
 
 See [Desktop flow action logs configuration (preview)](configure-desktop-flow-logs.md).
 
-## Configure the generation of desktop flow action logs on the local machine for designer-based runs
+## Configure generation of desktop flow action logs on the local machine for designer-based runs
 
 Use the following registry entry to configure whether local Power Automate Desktop Designer runs store their action logs on the local machine. This option can be useful for debugging and troubleshooting scenarios, so you can examine the logs without checking each action's input and output individually.
 
 > [!NOTE]
-> This feature doesn't automatically clean up the logs generated during designer runs. Make sure you have sufficient local disk space to store the logs or manually clean up older run data.
+> This feature doesn't automatically clean up the logs generated during designer runs. Ensure you have sufficient local disk space to store the logs or manually clean up older run data.
 
 | Hive | Key | Name | Type |
 |---|---|---|---|
