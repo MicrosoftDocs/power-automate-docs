@@ -14,7 +14,7 @@ ms.subservice: teams
 ms.topic: article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/09/2020
+ms.date: 10/29/2026
 ms.author: matow
 ms.reviewer: cyanderson
 ---
@@ -37,7 +37,7 @@ Learn more about how to use approvals in Teams in the following video.
 
 1. Select **View more apps (...)**, search for "approvals," and then select the **Approvals** app.
 
-   ![Search for the app in Teams.](../media/native-approvals-in-teams/more-apps-approvals.png)
+   :::image type="content" source="../media/native-approvals-in-teams/more-apps-approvals.png" alt-text="Screenshot of searching for the Approvals app in Teams.":::
 
 >[!TIP]
 >
