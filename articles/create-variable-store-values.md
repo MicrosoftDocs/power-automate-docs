@@ -2,13 +2,13 @@
 title: Store and manage values in variables in Power Automate
 description: Learn how to store, manage, use, and pass values by using variables in your flows
 suite: flow
-author: kisubedi
+author: radioblazer
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 01/16/2026
+ms.date: 10/29/2026
 ms.update-cycle: 180-days
-ms.author: kisubedi
+ms.author: matow
 ms.reviewer: cyanderson
 ms.custom: bap-template
 ms.collection: bap-ai-copilot
@@ -16,7 +16,7 @@ ms.collection: bap-ai-copilot
 
 # Store and manage values in variables
 
-This article shows how to create and work with variables to store values in your cloud flows. For example, variables can help you track the number of times a loop runs. To iterate over an array or check an array for a specific item, you can use a variable to reference the index number 'apply to each' array item.
+This article shows how to create and work with variables to store values in your cloud flows. For example, variables can help you track the number of times a loop runs. To iterate over an array or check an array for a specific item, you can use a variable to reference the index number `apply to each` array item.
 
 You can create variables for data types such as integer, float, boolean, string, array, and object. After you create a variable, you can perform other tasks, for example:
 
@@ -25,12 +25,12 @@ You can create variables for data types such as integer, float, boolean, string,
 - Assign a different value to the variable.
 - Insert or *append* the variable's value as the last item in a string or array.
 
-Variables exist and are global only within the cloud flow that creates them. Also, they persist across any loop iterations inside the flow. 
+Variables exist and are global only within the cloud flow that creates them. Also, they persist across any loop iterations inside the flow.
 
 When you reference a variable, use the variable's name as the token, not the action's name, which is the usual way to reference an action's outputs.
 
 > [!WARNING]
-> By default, each iteration in the 'apply to each' loops run sequentially. You can run the loop iterations in parallel to improve performance. If you use variables in the 'apply to each' loops, you *must* run the loop iterations sequentially if it's important for your loop variables to return predictable results.
+> By default, each iteration in the `apply to each` loops run sequentially. You can run the loop iterations in parallel to improve performance. If you use variables in the `apply to each` loops, you *must* run the loop iterations sequentially if it's important for your loop variables to return predictable results.
 
 ## Prerequisites
 
@@ -45,7 +45,7 @@ If you're new to Power Automate, learn more in [Overview of cloud flows](overvie
 
 ## Initialize a variable
 
-You can create a variable and declare its data type and initial value all within one action in your flow in the *designer*. You can only declare variables at the global level, not within scopes, conditions, and loops.
+In the *designer*, you can create a variable and declare its data type and initial value in a single action. You can declare variables only at the global level, not within scopes, conditions, and loops.
 
 [!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
@@ -76,7 +76,7 @@ You can create a variable and declare its data type and initial value all within
    | Value | No | <*start-value*> | The initial value for your variable.<br/>**Tip**: Although optional, set this value as a best practice so you always know the start value for your variable. |
 
     Example:
-    :::image type="content" source="./media/create-variables-store-values/variable-values.png" alt-text="Screenshot of the variable parameters example.":::
+    :::image type="content" source="./media/create-variables-store-values/variable-values.png" alt-text="Screenshot of the Initialize variable action with Name set to count, Type set to Integer, and Value set to 0.":::
 
 1. Add the other actions that you want. When you're done, select **Save**.
 
@@ -99,7 +99,7 @@ Although the **Initialize variable** action has a `variable` section structured 
 1. In the search box under **Choose an operation**, enter **variable** as your filter.
 1. From the **Actions** list, select **Initialize variable - Variable**.
 
-    :::image type="content" source="./media/create-variables-store-values/select-initialize-variable-action.png" alt-text="Screenshot of the Initialize variable action.":::
+    :::image type="content" source="./media/create-variables-store-values/select-initialize-variable-action.png" alt-text="Screenshot of Choose an operation with variable in the search box and Initialize variable selected in the Actions list.":::
 
 1. Provide the following information about your variable.
 
@@ -121,7 +121,9 @@ Although the **Initialize variable** action has a `variable` section structured 
 
 ## Examples of other variable types
 
-*String variable*
+Here are some other examples of variable types.
+
+### String variable
 
 ```json
 
@@ -130,7 +132,7 @@ Although the **Initialize variable** action has a `variable` section structured 
    "value": "lorem ipsum"
 ```
 
-*Boolean variable*
+### Boolean variable
 
 ```json
    "name": "myBooleanVariable",
@@ -138,7 +140,7 @@ Although the **Initialize variable** action has a `variable` section structured 
    "value": false
 ```
 
-*Array with integers*
+### Array with integers
 
 ```json
    "name": "myArrayVariable",
@@ -146,7 +148,7 @@ Although the **Initialize variable** action has a `variable` section structured 
    "value": [1, 2, 3]
 ```
 
-*Array with strings*
+### Array with strings
 
 ```json
    "name": "myArrayVariable",
@@ -156,7 +158,7 @@ Although the **Initialize variable** action has a `variable` section structured 
 
 ## Get the variable's value
 
-To retrieve or reference a variable's contents, you can use the `variables()` function.
+To retrieve or reference a variable's contents, use the `variables()` function.
 
 For example, this expression gets the items from the array variable by using the `variables()` function. The `string()` function returns the variable's contents in string format: `"1, 2, 3, red"`
 
@@ -172,7 +174,7 @@ To increase or *increment* a variable by a constant value, add the **Increment v
 
 The **Increment variable** action works only with integer and float variables.
 
-# [New designer](#tab/new-designer)
+## [New designer](#tab/new-designer)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. [Create](get-started-with-cloud-flows.md#create-a-cloud-flow)  or open a cloud flow.
@@ -200,7 +202,7 @@ The **Increment variable** action works only with integer and float variables.
 
 1. When you're done, select **Save** on the designer command bar.
 
-# [Classic designer](#tab/classic-designer)
+## [Classic designer](#tab/classic-designer)
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. [Create](get-started-with-cloud-flows.md#create-a-cloud-flow) or open a cloud flow.
@@ -229,17 +231,17 @@ The **Increment variable** action works only with integer and float variables.
 
 ---
 
-## Example: Create loop counter
+## Example: Count email attachments with a loop counter variable
 
-Variables are commonly used for counting the number of times that a loop runs. This example shows how to create and use variables for this task by creating a loop that counts the attachments in an email in the *designer*.
+Use variables to count how many times a loop runs. This example shows how to create and use variables for this task by creating a loop that counts the attachments in an email in the *designer*.
 
 [!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
-# [New designer](#tab/new-designer)
+## [New designer](#tab/new-designer)
 
 1. [Create](get-started-with-cloud-flows.md#create-a-cloud-flow) a cloud flow and add a [trigger](triggers-introduction.md) that checks for new email and any attachments.
 
-   This example uses the Office 365 Outlook trigger for **When a new email arrives (V3)**. You can set up this trigger to fire only when the email has attachments. However, you can use any connector that checks for new emails with attachments, such as the Outlook.com connector.
+   This example uses the Office 365 Outlook trigger for **When a new email arrives (V3)**. Set up this trigger to fire only when the email has attachments. However, you can use any connector that checks for new emails with attachments, such as the Outlook.com connector.
 
 1. In the trigger, to check for attachments and pass those attachments into your flow, select **Yes** for these properties:
 
@@ -277,11 +279,11 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 1. On the designer command bar, select **Save**.
 
-# [Classic designer](#tab/classic-designer)
+## [Classic designer](#tab/classic-designer)
 
 1. [Create](get-started-with-cloud-flows.md#create-a-cloud-flow) a cloud flow and add a [trigger](triggers-introduction.md) that checks for new email and any attachments.
 
-   This example uses the Office 365 Outlook trigger for **When a new email arrives (V3)**. You can set up this trigger to fire only when the email has attachments. However, you can use any connector that checks for new emails with attachments, such as the Outlook.com connector.
+   This example uses the Office 365 Outlook trigger for **When a new email arrives (V3)**. Set up this trigger to fire only when the email has attachments. However, you can use any connector that checks for new emails with attachments, such as the Outlook.com connector.
 
 1. In the trigger, to check for attachments and pass those attachments into your flow, select **Yes** for these properties:
 
@@ -314,7 +316,7 @@ Variables are commonly used for counting the number of times that a loop runs. T
 
 1. Under the loop, add any action that sends you the number of attachments. In your action, include the value from the **Count** variable. For example, in the following screenshot, **Send an email (V2)** sends the number of attachments:
 
-    :::image type="content" source="./media/create-variables-store-values/send-email-results-classic-designer.png" alt-text="Screenshot of adding an action that sends results in Copilot.":::
+    :::image type="content" source="./media/create-variables-store-values/send-email-results-classic-designer.png" alt-text="Screenshot of the classic designer with a Send an email (V2) action that includes the count variable in the body.":::
 
 1. On the designer toolbar, select **Save**.
 
@@ -329,7 +331,7 @@ Here are the properties for the **Decrement variable** action:
 | Property | Required | Value |  Description |
 |----------|----------|-------|--------------|
 | **Name** | Yes | <*variable-name*> | The name for the variable to decrement | 
-| **Value** | No | <*increment-value*> | The value for decrementing the variable. The default value is one. <p><p>**Tip**: Although optional, set this value as a best practice so you always know the specific value for decrementing your variable. |
+| **Value** | No | <*decrement-value*> | The value for decrementing the variable. The default value is one. <p><p>**Tip**: Although optional, set this value as a best practice so you always know the specific value for decrementing your variable. |
 
 ## Set variable
 

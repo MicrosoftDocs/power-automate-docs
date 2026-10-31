@@ -1,11 +1,12 @@
 ---
 title: Customize your triggers with conditions
 description: Learn how to customize your triggers by adding conditions.
-author: kewaiss
+author: radioblazer
 contributors:
   - kewaiss
   - v-aangie
-ms.date: 09/04/2025
+  - cyrilanderson
+ms.date: 10/29/2026
 ms.topic: how-to
 ms.service: power-automate
 ms.subservice: cloud-flow
@@ -44,7 +45,7 @@ This is especially important in pay-as-you-go environments, where every flow run
 
 [!INCLUDE[designer-tab-experience](./includes/designer-tab-experience.md)]
 
-# [New designer](#tab/new-designer)
+## [New designer](#tab/new-designer)
 
 1. Open the cloud flow that you want to edit:
 
@@ -57,13 +58,14 @@ This is especially important in pay-as-you-go environments, where every flow run
     1. Select the trigger of the flow.
     1. Select **Settings**.  
     1. Next to **Trigger conditions**, select **+ Add**.
-        :::image type="content" source="./media/triggers-introduction/copilot-trigger-add-new-designer.png" alt-text="Screenshot of the 'Settings' tab to add a trigger.":::
+
+        :::image type="content" source="./media/triggers-introduction/copilot-trigger-add-new-designer.png" alt-text="Screenshot of the trigger Settings tab with the Add option under Trigger conditions highlighted.":::
 
 1. Add an expression. Learn how to use expressions in [Use expressions in conditions to check multiple values](use-expressions-in-conditions.md). Learn more in [Create, update, and fix expressions with Copilot expression assistant](expressions-copilot.md).
 
     Every trigger condition must start with the **@** symbol.
 
-     :::image type="content" source="./media/triggers-introduction/copilot-trigger-example-new-designer.png" alt-text="Screenshot that shows an expression example.":::
+     :::image type="content" source="./media/triggers-introduction/copilot-trigger-example-new-designer.png" alt-text="Screenshot of a trigger condition expression that checks whether the email subject equals 'invoice approved'.":::
 
     Alternatively, follow the instructions in [Easily create expressions](#easily-create-expressions).
 
@@ -83,7 +85,7 @@ Your flow can generate expressions for you.
 1. In the **Settings** tab, paste the expression into the trigger condition.
 1. Delete the **Filter array** action from your flow.
 
-# [Classic designer](#tab/classic-designer)
+## [Classic designer](#tab/classic-designer)
 
 1. Open the cloud flow that you want to edit:
 
@@ -97,7 +99,7 @@ Your flow can generate expressions for you.
     1. In the upper-right corner, select the ellipsis (**…**), and then select **Settings**.  
     1. Under **Trigger Conditions**, select **Add**.
 
-    :::image type="content" source="./media/triggers-introduction/add-trigger-condition.png" alt-text="Screenshot that shows where you add a trigger condition.":::
+    :::image type="content" source="./media/triggers-introduction/add-trigger-condition.png" alt-text="Screenshot showing the Add button highlighted under Trigger Conditions in the flow trigger settings.":::
 
 1. Add an expression and then select **Done**. Learn how to use expressions in [Use expressions in conditions to check multiple values](use-expressions-in-conditions.md). Learn more in [Create, update, and fix expressions with Copilot expression assistant](expressions-copilot.md).
 
@@ -107,7 +109,7 @@ Your flow can generate expressions for you.
 
     Alternatively, follow the instructions in [Easily create expressions](#easily-create-expressions).
 
-1. If you have multiple filter conditions to add, Select **+ Add** and add expressions.
+1. If you have multiple filter conditions to add, select **+ Add** and add expressions.
 
     By default, all conditions must be met for the condition to be true. If any condition is optional, you need **OR**, and then use the syntax  `@or (test1, test2,test3)`.
 
