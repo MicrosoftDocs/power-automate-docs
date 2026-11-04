@@ -11,7 +11,7 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 09/16/2026
+ms.date: 11/03/2026
 ms.author: matow
 search.audienceType: 
   - flowmaker
@@ -30,14 +30,14 @@ The following list includes flow owner responsibilities:
 - **Monitoring and troubleshooting:** Monitoring their flow's performance, reviewing run history, and addressing errors or exceptions.
 - **Licensing:** The licenses associated with the owner can affect the flow.
 
-In cases where ownership needs to be transferred, such as when a flow owner leaves the organization or changes roles, providing a new flow owner ensures a smooth transition. The previous flow owner can transfer ownership to another user to maintain continuity and avoid disruptions in flow management.
+When you need to change the ownership of a flow, such as when a flow owner leaves the organization or changes roles, provide a new flow owner to ensure a smooth transition. The previous flow owner can transfer ownership to another user to maintain continuity and avoid disruptions in flow management. The owner or co-owner transferring ownership needs to have a role containing the `prvChangeOwnerIdOfWorkflow` privilege to change the owner of the cloud flow.
 
 If an administrator wants to make changes to a flow, they must first make themselves an owner or co-owner.
 [Regular users](/power-platform/admin/create-users#user-types) usually own flows, but if you need to change the owner to a Service Principal application user instead, go to [Change the owner of a cloud flow to a Service Principal application user](#change-the-owner-of-a-cloud-flow-to-a-service-principal-application-user).
 
 ## Change the owner of a solution-aware cloud flow
 
-An owner, co-owner, or admin can change the owner of a solution-aware flow to another user to ensure business continuity. After the change of ownership completes, the original owner and the new owner become co-owners of the flow.
+An owner or co-owner who is an admin, or has a role that contains the `prvChangeOwnerIdOfWorkflow` privilege, can change the owner of a solution-aware flow to another user to ensure business continuity. After the change of ownership completes, the original owner and the new owner become co-owners of the flow.
 
 You can change the owner to an individual (not a distribution list) or a user account used as a service account. If the flow uses a service account, ensure it's licensed correctly to avoid [multiplexing](/power-platform/admin/power-automate-licensing/faqs#multiplexing).
 
