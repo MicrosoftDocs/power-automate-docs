@@ -15,7 +15,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
 suite: flow
-ms.date: 07/17/2026
+ms.date: 11/10/2026
 search.audienceType: 
   - flowmaker
   - enduser
@@ -30,18 +30,18 @@ This article provides information about the limits that apply to automated, sche
 
 A flow's *performance profile* determines its Power Platform request limits. The following table describes the plans that are associated with each of the four performance profiles.
 
- Learn more about how Power Automate consumes Power Platform requests in [Types of Power Automate licenses - Power Platform requests](/power-platform/admin/power-automate-licensing/types#power-platform-requests).
+ Learn more about how Power Automate consumes Power Platform requests in [What is a Microsoft Power Platform request?](/power-platform/admin/api-request-limits-allocations#what-is-a-microsoft-power-platform-request).
 
 | Performance profile | Plans |
 |---------------------|-------|
 | Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials <br>- Dynamics 365 Team Member<br>- Microsoft Power Apps for Developer | 
-| Medium              | - Power Apps triggered flows, manual flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate Premium (previously Power Automate per user), Power Automate Premium plans (previously Power Automate per user with Attended RPA plans) <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses)|
+| Medium              | - Power Apps triggered flows, manual flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate Premium (previously Power Automate per user), Power Automate Premium plans (previously Power Automate per user with Attended RPA plans) <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits)|
 | High                | Power Automate Process license, Power Automate per flow plan |
 | Unlimited Extended  | Pay-as-you-go flows, Dynamics in context flows running under service principal |
 
 For cloud flows with a Process license, you can [stack multiple Process licenses on a single cloud flow](/power-automate/desktop-flows/capacity-process#stack-multiple-process-licenses-on-a-cloud-flow) to increase its daily action entitlement. Each additional license adds 250,000 actions per day. Alternatively, you can share a single Process license across up to 25 flows by using a [flow group](flow-groups.md). Stacking isn't available for flow groups - if a workload needs more than 250,000 actions per day, assign Process licenses directly to the individual flow.
 
-If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow has the performance profile of the higher of the plans. For the exact set of plans that include Power Automate, refer to the [Power Platform licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+During the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period), if a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow has the performance profile of the higher of the plans. Learn more in [What happens to my action limits if I have multiple plans?](/power-platform/admin/power-automate-licensing/faqs#what-happens-to-my-action-limits-if-i-have-multiple-plans) For the exact set of plans that include Power Automate, refer to the [Power Platform licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 To determine which plan you have, select **Settings** on the Power Automate title bar, and then select **View My Licenses**.
 
@@ -123,18 +123,18 @@ If a cloud flow exceeds one of the limits, flow activity slows. It automatically
 
 ### Power Platform request limits
 
-As of October 2019, Microsoft enforces limits on the number of [Power Platform requests](/power-platform/admin/power-automate-licensing/types#power-platform-requests) an account can make across all its flows, Power Apps, and any applications that call Dataverse. Microsoft doesn't guarantee performance above these limits, although enforcement isn't as strict during the [licensing transition period](/power-platform/admin/power-automate-licensing/types#transition-period). [Learn more about request limits and allocations](/power-platform/admin/api-request-limits-allocations).
+As of October 2019, Microsoft enforces limits on the number of [Power Platform requests](/power-platform/admin/api-request-limits-allocations#what-is-a-microsoft-power-platform-request) an account can make across all its flows, Power Apps, and any applications that call Dataverse. Microsoft doesn't guarantee performance above these limits, although enforcement isn't as strict during the [licensing transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period), which ends for cloud flows that run under user licenses in a phased rollout starting April 2027. [Learn more about request limits and allocations](/power-platform/admin/api-request-limits-allocations).
 
-These requests are counted for all types of actions, including connector actions, HTTP actions, and built-in actions, from initializing variables to a simple compose action. Both successful and failed actions count toward the limits. Retries and requests from pagination also count as action runs.
+These requests are counted for all types of actions, including connector actions, HTTP actions, and built-in actions, from initializing variables to a simple compose action. Both successful and failed actions count toward the limits. Retries and requests from pagination also count as action runs. One action counts as one Power Platform request, so these limits are also called *action limits*.
 
-To view the number of actions your flow runs, select **Analytics** on the flow details page and check the **Actions** tab.
+To check a flow's daily action usage, select **Analytics** on the flow details page and review the **Actions** chart. Admins can see each user's total in **Licensing** > **Power Automate** > **Usage** in the Power Platform admin center. Learn more in [Check a flow's daily action usage](create-flow-group.md#check-a-flows-daily-action-usage).
 
 The following table describes the limits on requests.
 
 | Name | Transition period limit | Notes |
 | ---- | ----- |----- |
 | Power platform requests per 5 minutes | 100,000 | Distribute the workload across more than one flow as necessary. |
-| Power platform requests per 24 hours |10,000 for Low; 200,000 for Medium; 500,000 for High; 10,000,000 for Unlimited Extended | These limits represent approximations of how many requests are allowed daily. They aren't guarantees. Actual amounts might be smaller, but are greater than the [documented request limits and allocations](/power-platform/admin/api-request-limits-allocations) during the [licensing transition period](/power-platform/admin/power-automate-licensing/types#transition-period). The documented limits were substantially increased in late 2021. [View detailed Power Platform request usage information in the Power Platform admin center (preview)](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). Any potential enforcement of high usage based on the [documented limits](/power-platform/admin/api-request-limits-allocations) doesn't start until six months after reports are made generally available. Distribute the workload across more than one flow as necessary. |
+| Power platform requests per 24 hours |10,000 for Low; 200,000 for Medium; 500,000 for High; 10,000,000 for Unlimited Extended | These limits represent approximations of how many requests are allowed daily. They aren't guarantees. Actual amounts might be smaller, but are greater than the [documented request limits and allocations](/power-platform/admin/api-request-limits-allocations) during the [licensing transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period). [View detailed Power Platform request usage information in the Power Platform admin center (preview)](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). After the transition period ends, a user's flows share the user's action limit, so splitting a workload across more flows doesn't add capacity. To give a flow its own capacity, assign a Process license to the flow or to a [flow group](flow-groups.md) that contains it. |
 | Concurrent outbound calls | 500 for Low; 2,500 for all others | You can reduce the number of concurrent requests or reduce the duration as necessary. |
 
 > [!TIP]
