@@ -24,7 +24,7 @@ Microsoft Copilot Studio offers agents powered by different [agent harnesses](/m
 | Agent harness | Supported automation experience |
 | --- | --- |
 | Standard harness | Call the agent from a Power Automate cloud flow by using the [Microsoft Copilot Studio connector](/connectors/microsoftcopilotstudio/). |
-| GitHub Copilot harness | Use the agent node in a Copilot Studio workflow. You can't call this type of agent from a Power Automate cloud flow by using the Microsoft Copilot Studio connector. |
+| Microsoft Copilot harness | Use the agent node in a Copilot Studio workflow. You can't call this type of agent from a Power Automate cloud flow by using the Microsoft Copilot Studio connector. |
 
 ## Call a standard harness agent from a cloud flow
 
@@ -49,13 +49,15 @@ Use the **Microsoft Copilot Studio** connector to send a message to an agent pow
 > [!TIP]
 > If the flow doesn't need to wait for the agent's response, use the **Execute Agent** action instead. This action sends the message and returns the conversation ID.
 
-## Use a GitHub Copilot harness agent in an automation
+<a id="use-a-github-copilot-harness-agent-in-an-automation"></a>
 
-The Microsoft Copilot Studio connector in Power Automate doesn't support agents powered by the GitHub Copilot harness. To use one in an automation, create a workflow in Copilot Studio and call the agent from an agent node.
+## Use a Microsoft Copilot harness agent in an automation
+
+The Microsoft Copilot Studio connector in Power Automate doesn't support agents powered by the Microsoft Copilot harness. To use one in an automation, create a workflow in Copilot Studio and call the agent from an agent node.
 
 1. In Copilot Studio, go to **Workflows** and open an existing workflow, or create a new workflow.
 1. On the **Add** panel, select the **Agent** icon.
-1. Under **Agent**, select **An existing agent**, and then select the published GitHub Copilot harness agent that you want to call.
+1. Under **Agent**, select **An existing agent**, and then select the published Microsoft Copilot harness agent that you want to call.
 1. In **Message**, enter the instructions for this run. Add dynamic content from earlier workflow steps as needed.
 1. Add later workflow steps that use the agent response.
 1. Test the workflow before you publish it.
