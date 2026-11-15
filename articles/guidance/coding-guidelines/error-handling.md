@@ -56,6 +56,9 @@ The `workflow()` JSON schema is:
                 "flowDisplayName": {
                     "type": "string"
                 },
+                "licenseContextConfigName": {
+                    "type": "string"
+                },
                 "environmentName": {
                     "type": "string"
                 },
@@ -63,6 +66,12 @@ The `workflow()` JSON schema is:
                     "type": "string"
                 },
                 "environmentFlowSuspensionReason": {
+                    "type": "string"
+                },
+                "creationSource": {
+                    "type": "string"
+                },
+                "modifiedSources": {
                     "type": "string"
                 },
                 "state": {
@@ -78,6 +87,9 @@ The `workflow()` JSON schema is:
                     "type": "string"
                 },
                 "triggerType": {
+                    "type": "string"
+                },
+                "createdByUserId": {
                     "type": "string"
                 }
             }
@@ -96,7 +108,7 @@ The `workflow()` JSON schema is:
                 }
             }
         }
-    } 
+    }
 }
 ```
 
@@ -113,7 +125,7 @@ Use the **Compose** action to create a flow run URL. You can use it to directly 
 The following input in the **Compose** action creates the URL:
 
 ```http
-https://make.powerautomate.com/environments@{body('Parse_JSON')?['tags']?['environmentName']}/flows@{body('Parse_JSON')?['tags']?['logicAppName']}/runs@{body('Parse_JSON')?['run']}
+https://make.powerautomate.com/environments/@{body('Parse_JSON')?['tags']?['environmentName']}/flows/@{body('Parse_JSON')?['tags']?['logicAppName']}/runs/@{body('Parse_JSON')?['run']?['name']}
 ```
 
 > [!CAUTION]
