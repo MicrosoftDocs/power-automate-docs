@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 12/16/2020
+ms.date: 11/16/2026
 ms.author: matp
 ms.reviewer: matp
 contributors:
@@ -43,9 +43,7 @@ For Process migrator for Softomotive products (preview) to be able to install an
 After successfully [downloading the setup file](https://go.microsoft.com/fwlink/?linkid=2151571) of the Process migrator for Softomotive products (preview), run it to install it on your machine.  
 
 > [!NOTE]
-> - Make sure you are performing a clean installation of Process migrator for Softomotive products (preview). 
- Also, the migrator will only function as intended when migrating into an evironment with V1 schema enabled.  If the enviroment you are attempting to migrate into has V2 schema enabled, the migration utlity will not function as intended.  If you require an environment with V1 schema enabled, please contact your Power Platform administrator.
-  
+> - Make sure you are performing a clean installation of Process migrator for Softomotive products (preview). Also, the migrator will only function as intended when migrating into an environment with V1 schema enabled. If the environment you are attempting to migrate into has V2 schema enabled, the migration utility will not function as intended. If you require an environment with V1 schema enabled, please contact your Power Platform administrator.
 > - Uninstall any previous installations of the application. 
 > - Remove any previous installation residue (empty installation folders etc.) 
 > - Install the latest version of the application. 
