@@ -197,7 +197,7 @@ For those customers who implement network restrictions, ensure access to the fol
 * .crm9.dynamics.com
 * .powerautomate.us
 
-Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia to enable access to Dataverse instances that users and administrators may create within your Tenant. 
+To enable access to Dataverse instances that users and administrators might create within your tenant, refer to the [IP ranges](https://www.microsoft.com/en-us/download/details.aspx?id=57063) for AzureCloud.usgovtexas and AzureCloud.usgovvirginia.
 
 ### GCC High Customers:
 * .microsoft.us
@@ -212,7 +212,7 @@ Refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id
 * *.crm.appsplatform.us (DoD)
 * *.appsplatformportals.us (DoD)
 
-Also, refer to the [IP ranges](https://www.microsoft.com/download/confirmation.aspx?id=57063) to enable you to access other Dataverse environments that users and administrators may create within your tenant and other Azure services that the platform leverages, including:
+To access other Dataverse environments that users and administrators might create within your tenant, and to access other Azure services that the platform uses, see the [IP ranges](https://www.microsoft.com/en-us/download/details.aspx?id=57063). The list includes:
 
 - GCC and GCC High: Focus on AzureCloud.usgovtexas and AzureCloud.usgovvirginia.
 - DoD: Focus on USDoD East and USDoD Central. 
@@ -232,7 +232,7 @@ datacenters:
 
 
 Refer to the [Azure IP Ranges and Service Tags – US Government
-Cloud](https://www.microsoft.com/download/confirmation.aspx?id=57063) document,
+Cloud](https://www.microsoft.com/en-us/download/details.aspx?id=57063) document,
 focusing attention on AzureCloud.usgovtexas, and AzureCloud.usgovvirginia, and/or US DoD East, and US DoD Central as noted previously in this article. Also note that these are the IP ranges required for your end-users to have access to the service URLs.
 
 ## On-premises Data Gateway configuration
@@ -245,7 +245,7 @@ Formerly, US Government customers needed to contact support before configuring t
 
 ## Power Automate US Government feature limitations
 
-Microsoft strives to maintain functional parity between our commercially available service and those enabled through our US Government clouds. These services are referred to as Power Automate Government Community Cloud (GCC) and GCC High. Refer to the [Global Geographic Availability](https://dynamics.microsoft.com/geographic-availability/) tool to see where Power Automate is available throughout the world, including approximate availability timelines. 
+Microsoft strives to maintain functional parity between the commercially available service and the services enabled through the US Government clouds. These services are referred to as Power Automate Government Community Cloud (GCC) and GCC High. To see the supported geographies and clouds for Power Automate, refer to [Power Platform product availability](/dynamics365/get-started/product-availability#power-platform). 
 
 There are exceptions to the principle of maintaining product functional parity within the US Government clouds. For more information about feature availability, download this file: [Business Applications US Government - Availability Summary](https://aka.ms/BAPFunctionalParity).
 
