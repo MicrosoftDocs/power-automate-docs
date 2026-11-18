@@ -135,6 +135,5 @@ Learn more about troubleshooting and _watch a video_ in [Troubleshoot in Copilot
 - [Responsible AI FAQs for Power Automate](responsible-ai-overview.md)
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [FAQ for Copilot data security and privacy in Microsoft Power Platform](/power-platform/faqs-copilot-data-security-privacy)
-- [Language availability for Power Platform](https://dynamics.microsoft.com/availability-reports/languagereport/)
-- [Geographical availability for Power Platform](https://dynamics.microsoft.com/availability-reports/georeport/)
+- [Product availability for Power Platform](/dynamics365/get-started/product-availability#power-platform)
 - [Training: Use Copilot in Power Automate (module)](/training/modules/use-copilot-power-automate/)
