@@ -12,7 +12,7 @@ ms.contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 08/19/2026
+ms.date: 11/19/2026
 ms.author: matow
 ms.reviewer: cyanderson
 search.audienceType: 
@@ -30,7 +30,7 @@ Share a cloud flow with others in your organization and guest users so they can 
 
 ## Prerequisites
 
-- You must have either a [Power Automate license (except the free license)](https://make.powerautomate.com/pricing/) or a seeded license (Office 365, Dynamics 365 Enterprise plans, Dynamics 365 Professional plans, Dynamics 365 Team Member, Power Apps (Canvas and Model driven Apps)- Per App plans, Power Apps per user plan, Power Apps Plan 1 (exempted), Power Apps Plan 2 (exempted), Windows licenses) to share a cloud flow.
+- You must have a [Power Automate license that supports sharing or a qualifying seeded license](/power-platform/admin/power-automate-licensing/types). The Power Automate Free license doesn't include flow sharing.
 - You must be the creator or owner to add or remove owners from a cloud flow.
 
 ### About embedded and other connections
@@ -54,7 +54,7 @@ The most common way to share a cloud flow is by adding an owner. Any owner of a 
 - Add or remove other owners (but not the flow's creator), including guest users.
 - Delete the flow.
 
-If you're the creator or an owner of a cloud flow, you can find it listed on the **Team flows** tab in Power Automate.
+To find a cloud flow that you own or co-own, select **My flows** in Power Automate and check the **Cloud flows** and **Shared with me** tabs.
 
 > [!NOTE]
 > You can use shared connections *only* in the flow where you created them.
@@ -70,7 +70,17 @@ To add more owners to a cloud flow:
 
     The user or group you selected becomes an owner of the flow.
 
-You created your team flow.
+You shared your cloud flow.
+
+### Sharing for Planner portfolio sync flows
+
+In Microsoft Planner, when you add a premium plan to a portfolio and select **Connect**, Planner creates a scheduled cloud flow to keep the portfolio data up to date. Members of the portfolio become co-owners of that flow. Co-owners can view run history, edit the flow, and use its embedded **Portfolio and Roadmap** connection within that flow.
+
+The connection uses the permissions of the account used to create that connection. Those permissions can extend beyond the plan where you created the flow, including to private plans that account can access. Sharing the flow doesn't add members to those plans or give them the account's sign-in credentials.
+
+Add actions and connections only if they're appropriate for everyone who co-owns the flow. If an action uses data or a connection you don't intend to make available through the shared flow, keep that action in a separate flow with its own access settings.
+
+For more information about connecting plans to a portfolio, see [Manage multiple plans with portfolios in Microsoft Planner](https://support.microsoft.com/planner/manage-multiple-plans-with-portfolios-in-microsoft-planner).
 
 ## Add a list as a co-owner
 
@@ -130,6 +140,14 @@ To remove a run-only user:
 
 The user or group no longer has access to run this flow.
 
+### Flows used by canvas apps
+
+When you share a canvas app that includes a flow, users can run the flow through the app. Sharing the app doesn't by itself make those users co-owners of the flow or give them permission to edit it.
+
+Review the flow's connection settings before sharing the app. A connection configured as **Provided by run-only user** uses the invoking user's connection. An embedded connection uses the account associated with that connection, which might have access to data that app users can't access directly.
+
+For more information, see [Share resources used by canvas apps](/power-apps/maker/canvas-apps/share-app-resources#flows).
+
 ## Send a copy of a cloud flow
 
 You can send a copy of a cloud flow to another user, who can then use the definition of the flow as a template. This method provides a way to share the general structure of a cloud flow without sharing any connections. The recipient can modify their flow independently of yours, so they can make it fit their needs.
@@ -153,11 +171,11 @@ To avoid improper sharing and reduce the effort of compliance, administrators sh
 
 ### Use security roles to segment duties
 
-Grant the Environment Maker role only to users who genuinely need to create or edit flows in that environment. End users who only run flows should stay as basic users. This principle limits who can share or modify flows. For example, if you have a group of users who only trigger flows but shouldn't create new ones, don't elevate them to makers. By keeping run-only users as basic environment members, or using run-only sharing without promotion, you prevent them from building or importing rogue flows. This segmentation creates a clear boundary: makers design, others consume. If an environment has no security group (open to all), you can still control maker privileges through roles. You might designate a *makers* Azure AD group and script assignment of the Environment Maker role only to that group's members. This way, although everyone is in the environment, only approved makers can share or own flows. This approach reduces accidental external shares.
+Grant the Environment Maker role only to users who genuinely need to create or edit flows in that environment. End users who only run flows should stay as basic users. This principle limits who can share or modify flows. For example, if you have a group of users who only trigger flows but shouldn't create new ones, don't elevate them to makers. By keeping run-only users as basic environment members, or using run-only sharing without promotion, you prevent them from building or importing rogue flows. This segmentation creates a clear boundary: makers design, others consume. If an environment has no security group (open to all), you can still control maker privileges through roles. You might designate a *makers* Microsoft Entra group and script assignment of the Environment Maker role only to that group's members. This way, although everyone is in the environment, only approved makers can share or own flows. This approach reduces accidental external shares.
 
-### Leverage Run-Only access instead of co-ownership
+### Use run-only access instead of co-ownership
 
-When a flow needs to be used by many people, especially outside the core team, prefer providing Run-Only access over making them co-owners. Run-Only users can execute the flow manually or through connectors like button, SharePoint, and others, without seeing or altering the flow's design. For instance, suppose a department builds an **Expense Approval** flow that managers in other departments can trigger. Rather than adding 10 managers as co-owners, which crosses environment bounds and poses governance issues, share the flow or its trigger with them as run-only users. They're able to run it through a button in Teams or a shared link, but can't edit or view the flow in Power Automate. This approach protects the flow and confines full control to the creators. It also simplifies compliance. Those managers don't need Environment Maker access, just run permission. In summary, only designate co-owners when collaborative editing is needed. In all other cases, use run-only or other indirect methods of interaction, such as embedding the flow in an app or using Power Apps to call the flow.
+When an instant flow needs to be used by many people, especially outside the core team, prefer providing run-only access over making them co-owners. Run-only users can trigger the flow, for example by selecting an item in SharePoint, without editing its design. For instance, suppose a department builds an **Expense Approval** flow that managers in other departments can trigger. Rather than adding those managers as co-owners, share the flow with them as run-only users. Only designate co-owners when collaborative editing or management is needed.
 
 ### Enforce data loss prevention (DLP) policies
 
@@ -179,7 +197,7 @@ If the shared flow still has an active owner, the flow continues to run.
 > [!NOTE]
 > If the flow uses any active or embedded connections that belong to the user who left the organization, those specific actions might fail. To fix this problem, follow the steps in [Modify a connection](#modify-a-connection), earlier in this article to update the credentials.
 
- If there's no active owner for a flow, you should change the owner. To change the owner of a flow, make a copy of the flow, and then let the intended owner create the flow from the copy.
+If there's no active owner for a flow, ask an administrator to restore access by adding a co-owner. For more information, see [Manage orphaned flows](/troubleshoot/power-platform/power-automate/flow-management/manage-orphan-flow-when-owner-leaves-org). To replace the primary owner, follow [Change the owner of a cloud flow](change-cloud-flow-owner.md).
 
 ### Change the owner of a solution-aware cloud flow
 
@@ -187,10 +205,15 @@ If the shared flow still has an active owner, the flow continues to run.
 
 ### Change the owner of a non-solution-aware cloud flow
 
-To change the ownership of a non-solution-aware cloud flow, you must create a new flow via export/import, **Save as**, or **Send a copy**. In-place ownership change for non-solution-aware cloud flows isn't available because the owner is part of the flow identity. 
+If the environment has Dataverse, [add the flow to a solution](create-flow-solution.md), and then [change its owner](change-cloud-flow-owner.md).
 
-### Share ownership of a solution-aware cloud flow with a user who isn't in Dataverse
-When you share ownership of a solution-aware cloud flow with a user who isn't in Dataverse, the user is automatically added into Dataverse to facilitate sharing. In a default environment, Microsoft Entra ID users have the EnvironmentMaker role. In a non-default environment, Microsoft Entra users and groups are added into Dataverse but they aren't assigned the EnvironmentMaker role automatically. Therefore, they might only be able to run the flow until an administrator assigns them a role. If the user doesn't have an appropriate role, they receive a detailed error message.
+If the environment doesn't have Dataverse, have the intended owner create a new flow from the existing one. For example, [send them a copy](#send-a-copy-of-a-cloud-flow) to use as a template. This action creates a separate flow; it doesn't change the owner of the existing flow.
+
+### Share ownership of a solution-aware cloud flow with a user outside the environment
+
+Flow permissions and environment access are separate requirements. Before adding someone as a co-owner of a solution-aware cloud flow, ensure they can access the flow's environment and have an appropriate security role to edit the flow. If access to the environment is restricted by a security group, an administrator might need to add the user to that group first. Don't rely on sharing the flow alone to grant environment access.
+
+Follow [Manage shared flows with users outside an environment](manage-shared-flows-with-users-outside-environment.md#add-necessary-users-to-the-environment) to grant environment access and choose the appropriate role. Then [add the user as an owner of the flow](#add-an-owner-to-a-cloud-flow). For more information about environment membership and security roles, see [Add users to an environment](/power-platform/admin/add-users-to-environment).
 
 ### Can the user that runs the flow provide connections? 
 Yes. When you configure a connection as **Provided by run-only user**, the user that runs (or invokes) the flow provides that connection.
