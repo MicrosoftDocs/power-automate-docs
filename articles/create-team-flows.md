@@ -12,7 +12,7 @@ ms.contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 08/19/2026
+ms.date: 11/19/2026
 ms.author: matow
 ms.reviewer: cyanderson
 search.audienceType: 
@@ -71,6 +71,16 @@ To add more owners to a cloud flow:
     The user or group you selected becomes an owner of the flow.
 
 You created your team flow.
+
+### Sharing for Planner portfolio sync flows
+
+In Microsoft Planner, when you add a premium plan to a portfolio and select **Connect**, Planner creates a scheduled cloud flow to keep the portfolio data up to date. Members of the portfolio become co-owners of that flow. Co-owners can view run history, edit the flow, and use its embedded **Portfolio and Roadmap** connection within that flow.
+
+The connection uses the permissions of the account used to create that connection. Those permissions can extend beyond the plan where you created the flow, including to private plans that account can access. Sharing the flow doesn't add members to those plans or give them the account's sign-in credentials.
+
+Add actions and connections only if they're appropriate for everyone who co-owns the flow. If an action uses data or a connection you don't intend to make available through the shared flow, keep that action in a separate flow with its own access settings.
+
+For more information about connecting plans to a portfolio, see [Manage multiple plans with portfolios in Microsoft Planner](https://support.microsoft.com/planner/manage-multiple-plans-with-portfolios-in-microsoft-planner).
 
 ## Add a list as a co-owner
 
