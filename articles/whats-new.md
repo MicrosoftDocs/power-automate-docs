@@ -23,6 +23,6 @@ Find information about the features, fixes, and improvements from previous relea
 
 ## Roadmap
 
-Get familiar with upcoming features and plan your deployments by reading the [AI at work roadmap](https://www.microsoft.com/en-ca/microsoft-365/roadmap#Roadmap).
+Get familiar with upcoming features and plan your deployments by reading the [roadmap](https://aka.ms/AIatWorkroadmap).
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
