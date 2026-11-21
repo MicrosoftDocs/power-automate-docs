@@ -11,7 +11,7 @@ ms.topic: get-started
 ms.date: 02/20/2026
 ms.update-cycle: 180-days
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.collection:
   - get-started
   - bap-ai-copilot

@@ -10,12 +10,14 @@ ms.custom: guidance
 ms.topic: concept-article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/18/2022
+ms.date: 08/27/2026
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Limitations and resolutions for issues in the Automation Kit
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 This article contains some of the limitations in the Automation Kit.
 

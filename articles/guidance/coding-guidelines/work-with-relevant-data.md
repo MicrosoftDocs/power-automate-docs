@@ -8,7 +8,7 @@ ms.subservice: guidance
 ms.topic: best-practice
 ms.date: 07/11/2025
 ms.author: rachaudh
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 contributors: 
   - manuelap-msft
 search.audienceType: 

@@ -8,7 +8,7 @@ ms.custom:
 ms.topic: faq
 author: Cochamos
 ms.author: cochamos
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.collection: 
     - bap-ai-copilot
 ---

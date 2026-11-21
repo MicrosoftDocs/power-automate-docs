@@ -10,12 +10,14 @@ ms.custom: guidance
 ms.topic: install-set-up-deploy
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/18/2022
+ms.date: 08/27/2026
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Feedback and support
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 Although the underlying features and components used to build the Automation Kit (such as Microsoft Dataverse, admin APIs, and connectors) are fully supported, the kit itself represents sample implementations of these features. Our customers and community can use and customize these features to support an Automation CoE in their organizations.
 

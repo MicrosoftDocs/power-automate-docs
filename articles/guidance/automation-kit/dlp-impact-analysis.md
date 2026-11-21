@@ -10,12 +10,14 @@ ms.custom: guidance
 ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/18/2022
+ms.date: 08/27/2026
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # DLP impact analysis for desktop flows
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 ## Feature details
 

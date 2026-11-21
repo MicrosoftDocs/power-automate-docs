@@ -3,8 +3,8 @@ title: Understand flow failure notifications in Power Automate
 description: Learn how Power Automate notifies you when a cloud flow fails, which failures trigger an email, the 28-day cooldown period, and how to monitor all failures.
 author: matow
 ms.author: matow
-ms.reviewer: angieandrews
-ms.topic: conceptual
+ms.reviewer: cyanderson
+ms.topic: article
 ms.date: 04/03/2026
 ms.subservice: cloud-flow
 ---
@@ -102,4 +102,6 @@ If you expected an alert email but didn't receive one, check the following:
 
 ## Related information
 
-[Watch your flows in action](see-a-flow-run.md)
+- [Watch your flows in action](see-a-flow-run.md)
+- [Fix connection failures in cloud flows](fix-connection-failures.md)
+- [Troubleshoot cloud flow errors](troubleshoot-flow-errors.md)

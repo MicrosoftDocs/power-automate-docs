@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 01/16/2026
 ms.update-cycle: 180-days
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.custom: copilot-scenario-highlight
 search.audienceType:
   - flowmaker

@@ -5,11 +5,11 @@ author: kathyos
 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/6/2021
+ms.date: 08/27/2026
 ms.service: power-automate
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 search.audienceType: 
   - admin
 
@@ -18,12 +18,12 @@ search.audienceType:
 ---
 # Manage Power Automate for desktop on Windows
 
-If you’re managing Power Automate for desktop on Windows at scale throughout your organization, our PDF playbook and eight-episode YouTube video series introduce you to:
+If you’re managing Power Automate for desktop on Windows at scale throughout your organization, the PDF playbook and eight-episode YouTube video series introduce you to:
 
 - Concepts for managing the lifecycle for Power Automate on desktop.
 - Leveraging Microsoft Endpoint Manager tools such as Intune and System Center Configuration Manager (SCCM) and ring deployment techniques to deploy, monitor, and audit Power Automate for desktop.
 
-The whitepaper and video series include these topics:
+The whitepaper and video series include these articles:
 
 - Overview of managing Power Automate for desktop on Windows.
 - Create Intune Package for Power Automate for desktop.

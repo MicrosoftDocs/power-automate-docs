@@ -1,5 +1,5 @@
 ---
-title: Known issues
+title: Known issues in the process mining capability
 description: Learn about the known issues in the process mining capability.
 author: donums
 contributors:
@@ -10,7 +10,7 @@ ms.subservice: process-advisor
 ms.topic: troubleshooting-known-issue
 ms.date: 07/18/2023
 ms.author: derahonuorah
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 search.audienceType: 
   - flowmaker
   - enduser

@@ -7,12 +7,13 @@ contributors:
   - HeatherOrt
   - kartikraop
   - v-aangie
+  - cyrilanderson
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 11/19/2025
-ms.author: kewaiss
-ms.reviewer: angieandrews
+ms.date: 10/29/2026
+ms.author: matow
+ms.reviewer: cyanderson
 ---
 
 # What is Power Automate?
@@ -44,7 +45,7 @@ Your Power Automate license gives you rights to create and manage flows in Power
 
 ## Related information
 
-- [Determine which automation method (flow type) to use](./guidance/planning/determine-automation-methods.md)
+- [Determine which automation method (flow type) to use](/power-apps/maker/plan-designer/plan-designer)
 - [Overview of cloud flows](overview-cloud.md)
 - [Introduction to desktop flows](./desktop-flows/introduction.md)
 - [Add canvas apps and cloud flows to a solution in Power Apps](/power-apps/maker/canvas-apps/add-app-solution-default)

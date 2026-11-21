@@ -1,5 +1,5 @@
 ---
-title: Filtering overview
+title: Filter overview
 description: Learn how to adjust which cases will be included in the process analysis in Power Automate Process Mining.
 author: rosikm
 contributors:
@@ -10,13 +10,13 @@ ms.subservice: process-advisor
 ms.topic: overview
 ms.date: 07/18/2023
 ms.author: michalrosik
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 search.audienceType:
 - flowmaker
 - enduser
 ---
 
-# Filtering overview
+# Filter overview
 
 Use filters to adjust which cases will be included in the process analysis. For example, you can use filters to define only a certain time period, only specific resources or scenarios in the process, or modify cases by excluding activities that aren't important for the current analytical problem. Filtering can also be helpful in identifying and focusing on the problematic parts of the process.
 

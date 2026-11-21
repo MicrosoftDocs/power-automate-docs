@@ -12,10 +12,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Automation Kit setup checklist
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 The following checklist provides an overview of the key steps, to assist you in setting up the Automation Kit.
 

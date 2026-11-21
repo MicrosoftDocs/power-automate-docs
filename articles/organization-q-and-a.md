@@ -3,7 +3,7 @@ title: Power Automate sign-up FAQ
 description: Get answers to common questions about licenses, administration, and how users can sign up to use Power Automate in your Microsoft 365 tenant.
 author: PriyaKodukula
 ms.author: angieandrews
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 contributors:
   - PriyaKodukula
   - v-aangie

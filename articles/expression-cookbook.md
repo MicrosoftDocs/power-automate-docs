@@ -3,7 +3,7 @@ title: Expression cookbook for cloud flows - Power Automate
 description: Learn about ready-to-use expression patterns for text, dates, arrays, JSON, math, and logic in Power Automate cloud flows.
 author: radioblazer
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.topic: reference
 ms.date: 04/09/2026
 ms.subservice: cloud-flow

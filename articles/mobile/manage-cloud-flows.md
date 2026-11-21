@@ -10,15 +10,17 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 06/05/2023
-ms.author: jamiller
-ms.reviewer: angieandrews
+ms.date: 07/24/2026
+ms.author: matow
+ms.reviewer: cyanderson
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
 # Manage cloud flows
+
+[!INCLUDE [mobile-deprecation](../includes/mobile-deprecation.md)]
 
 Use the Power Automate mobile app to do the following tasks:
 

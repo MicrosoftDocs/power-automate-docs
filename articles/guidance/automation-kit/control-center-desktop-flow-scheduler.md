@@ -9,12 +9,14 @@ ms.custom: guidance
 ms.topic: how-to
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/04/2023
+ms.date: 08/27/2026
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Control Center desktop flow scheduler
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 In the Automation Kit, the Control Center offers comprehensive desktop flow scheduling capabilities, allowing users to check the Power Automate Desktop flows that are scheduled for execution triggered by a recurring Power Automate Cloud Flow. This scheduling feature provides users with the option to view the overall status of scheduled flows and restart either the cloud flow or desktop flow.
 
@@ -32,7 +34,7 @@ The scheduler page of the control center provides the following functionality:
 
 ## Cloud flows
 
-As noted only cloud flows that are included as part of a solution. The recent [https://powerautomate.microsoft.com/blog/more-manageable-cloud-flows-with-dataverse-solutions-by-default/](https://powerautomate.microsoft.com/vi-vn/blog/more-manageable-cloud-flows-with-dataverse-solutions-by-default/) includes information on how to use the new preview of "Dataverse solutions by default" to help ensure that cloud flows are included in solutions. Using this feature can assist users in ensuring the scheduled cloud flows that are created are visible in the scheduler.
+As noted only cloud flows that are included as part of a solution. The [More manageable cloud flows with Dataverse solutions by default](https://www.microsoft.com/power-platform/blog/power-automate/more-manageable-cloud-flows-with-dataverse-solutions-by-default/) article includes information on how to use the preview of "Dataverse solutions by default" to help ensure that cloud flows are included in solutions. Using this feature can assist users in ensuring the scheduled cloud flows that are created are visible in the scheduler.
 
 ## Calendar views
 
@@ -110,4 +112,3 @@ For the current release, the following notes apply:
 
 1. Only Power Automate Desktop and Power Automate solutions contained within a solution are displayed.
 1. At least one Power Automate Desktop has been registered and executed.
-

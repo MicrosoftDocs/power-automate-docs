@@ -5,9 +5,9 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 02/10/2025
+ms.date: 08/31/2026
 ms.author: pefelesk
-ms.reviewer: matp
+ms.reviewer: smurkute
 contributors:
   - iomavrid
 search.audienceType: 
@@ -20,7 +20,7 @@ ms.custom: sfi-ropc-nochange
 [Triggering desktop flows from cloud flows](trigger-desktop-flows.md) enables you to run desktop flows in unattended mode. Unattended desktop flows are ideal for automating tasks that don't need human supervision.
 
 > [!TIP]
-> For unattended desktop automation, you need the [Power Automate Process](https://powerautomate.microsoft.com/pricing/) plan. More information: [Allocate and assign the Process license](/power-platform/admin/power-automate-licensing/buy-licenses#assign-process-license)
+> For unattended desktop automation, you need the [Power Automate Process](https://powerautomate.microsoft.com/pricing/) plan. For more information, see [Allocate and assign the Process license](/power-platform/admin/power-automate-licensing/buy-licenses#assign-process-license).
 
 Power Automate uses the selected [desktop flow connection](desktop-flow-connections.md) to automatically sign in to your machine and run the unattended desktop flow. When the flow is complete, it signs out from the device and reports its activity.
 

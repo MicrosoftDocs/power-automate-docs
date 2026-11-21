@@ -9,12 +9,14 @@ ms.custom: guidance
 ms.topic: concept-article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/04/2023
+ms.date: 08/27/2026
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Overview of the Control Center
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 The Automation Kit control center has been designed to complement the existing [Monitor desktop flow runs](../../desktop-flows/monitor-desktop-flow-runs.md). The key focus of the control center is an orchestrator view for support analysts and organizations to monitor, take action and alert if necessary.
 

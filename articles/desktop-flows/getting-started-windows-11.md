@@ -6,10 +6,10 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: get-started
-ms.date: 12/01/2022
+ms.date: 08/31/2026
 ms.collection: get-started
 ms.author: matp
-ms.reviewer: matp
+ms.reviewer: smurkute
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -21,11 +21,11 @@ search.audienceType:
 
 # Get started with Power Automate in Windows 11
 
-Windows 11 allow users to create automations through the preinstalled Power Automate app. Power Automate is a low-code platform that enables home and business users to optimize their workflows and automate repetitive and time-consuming tasks.
+Windows 11 allows you to create automations through the preinstalled Power Automate for desktop app. Power Automate is a low-code platform that enables home and business users to optimize their workflows and automate repetitive and time-consuming tasks.
 
    ![Screenshot of the Windows 11 search menu.](media\getting-started-windows-11\launching.png)
 
-Any Windows user can build flows with little-to-no coding experience. A collection of more than 400 premade actions and a recorder that captures mouse and keyboard functions make robotic process automation (RPA) intuitive for both regular and power users.
+Any Windows user can build flows with little-to-no coding experience. A catalog of hundreds of prebuilt actions and a recorder that captures mouse and keyboard functions make robotic process automation (RPA) intuitive for both regular and power users.
 
 Using the available actions, you can automate virtually any Microsoft and third-party application on Windows and exchange data between different applications and webpages.
 

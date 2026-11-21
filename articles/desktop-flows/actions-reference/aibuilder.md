@@ -5,7 +5,7 @@ author: Mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 02/25/2026
+ms.date: 08/24/2026
 ms.author: matp
 ms.reviewer: cochamos
 contributors:
@@ -20,40 +20,40 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-The AI Builder group contains the **Create text with GPT (preview)** action that creates text using the GPT language model.
+The AI Builder group contains the **Create text with GPT (preview)** action that creates text using the GPT language model, as well as actions in preview to analyze text sentiment, detect the language of a text, or translate text.
 
 > [!IMPORTANT]
 > - This is a preview feature.
-> - Preview features aren't meant for production use and may have restricted functionality.
+> - Preview features aren't meant for production use and might have restricted functionality.
 > - These features are available before an official release so that customers can get early access and provide feedback.
 >
 > Further strengthening our commitment to [responsible AI](https://www.microsoft.com/ai/responsible-ai) we're introducing some updates related to the utilization of **Create text with GPT (preview)** action in the Power Automate for desktop October 2023 update.
 > Specifically: 
-> - A **Display input dialog** action or **Display message** action must accompany each use of the **Create text with GPT** action
-> - The **Display input dialog** action or **Display message** action must contain the response from the **Create text with GPT** action in its body so it is clearly presented to the user
+> - You must use a **Display input dialog** action or **Display message** action with each use of the **Create text with GPT** action.
+> - The **Display input dialog** action or **Display message** action must contain the response from the **Create text with GPT** action in its body so it is clearly presented to the user.
 >
-> Make sure that flows that utilize the **Create text with GPT (preview)** action check those two points. If either of those steps is omitted, the respective flow(s) will result in an error.
+> Ensure that flows that use the **Create text with GPT (preview)** action check those two points. If either step is omitted, the respective flow(s) will result in an error.
 >
 > Also note the following:
-> - This capability is in process of rolling out, and may not be available in your region yet.
-> - This capability may be subject to usage limits or capacity throttling.
+> - This capability is in process of rolling out and might not be available in your region yet.
+> - This capability might be subject to usage limits or capacity throttling.
 > - The GPT model might make mistakes or have biases and other undesirable content. Therefore, to ensure that the AI-generated content is accurate, appropriate, and free from bias, always have humans review it.
 > - This capability is under gated access. Apply for consideration to take part in the trial. To apply, go to [Limited preview request](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR2LogRPRiTJDo1Rd8KnmcFRUMzlLTDZVQlJKSzNIWkVCMzE0VDFYVzk2QS4u).
 
-After deploying the action, select **Create instructions** to open the instructions wizard. The wizard allows you to create instructions using existing templates or start from blank.
+After deploying the action, select **Create instructions** to open the instructions wizard. The wizard allows you to create instructions by using existing templates or start from blank.
 
 Learn more about the Text generation model (preview) in [the Text generation model overview (preview)](/ai-builder/prebuilt-azure-openai).
 
 :::image type="content" source="media/aibuilder/create-text-with-gpt.png" alt-text="Screenshot of the Create instructions button in the Create text with GPT action.":::
 
 >[!IMPORTANT]
->It's mandatory that you add either a **Display input dialog** or **Display message** action and pass either of the generated outputs of the **Create text with GPT (preview)** action (**PredictV2Response**, **PredictV2TextResponse**) in its body. This will require a human review of the generated messages.  If either of those steps is omitted, the respective flow(s) will result in an error.
+> You must add either a **Display input dialog** or **Display message** action and pass either of the generated outputs of the **Create text with GPT (preview)** action (**PredictV2Response**, **PredictV2TextResponse**) in its body. This will require a human review of the generated messages.  If either of those steps is omitted, the respective flow(s) will result in an error.
 
-Example approach: Add a Display message action with Yes - No buttons to require a human review of the generated content. An error appears when this action doesn't exist. Learn more about the Display message action in [Message boxes actions](display.md).
+Example approach: Add a **Display message** action with Yes - No buttons to require a human review of the generated content. An error appears when this action doesn't exist. Learn more about the **Display message** action in [Message boxes actions](display.md).
 
 :::image type="content" source="media/aibuilder/display-message.png" alt-text="Screenshot of the Display message action that prompts users to review the generated content.":::
 
->[!Note]
+>[!NOTE]
 > To enable the **AI Builder (preview)** module in the actions pane, the following requirements need to be in place:
 >
 > - Copilot is enabled in the Power Platform Admin Center.
@@ -77,6 +77,77 @@ Get a response generated by GPT.
 |PredictV2TextResponse|[Text](../variable-data-types.md#text-value)||
 
 ### <a name="callgpt_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Endpoint failure|Indicates an endpoint failure|
+
+## <a name="sentimentanalysis"></a> Analyze text sentiment (preview)
+
+Analyze the sentiment of text by using AI Builder.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Text|No|[Text value](../variable-data-types.md#text-value)||The text to analyze|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|SentimentAnalysisResponse|[Connector object](../variable-data-types.md#connector-object)||
+|SentimentAnalysisTextResponse|[Text](../variable-data-types.md#text-value)||
+
+### <a name="sentimentanalysis_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Endpoint failure|Indicates an endpoint failure|
+
+## <a name="languagedetection"></a> Detect language of text (preview)
+
+Detect the natural language of input text by using AI Builder.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Text|No|[Text value](../variable-data-types.md#text-value)||The text to analyze|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|LanguageDetectionResponse|[Connector object](../variable-data-types.md#connector-object)||
+|LanguageDetectionTextResponse|[Text](../variable-data-types.md#text-value)||
+
+### <a name="languagedetection_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Endpoint failure|Indicates an endpoint failure|
+
+## <a name="texttranslation"></a> Translate text (preview)
+
+Translate text to a specified language using AI Builder.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Text to translate|No|[Text value](../variable-data-types.md#text-value)||The text to translate|
+|Translate to|No|[Text value](../variable-data-types.md#text-value)||The BCP-47 language code of the target language (for example, en, fr, de)|
+|Translate from|Yes|[Text value](../variable-data-types.md#text-value)||The BCP-47 language code of the source language (for example, en, fr, de). Leave empty to detect it automatically|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|TextTranslationResponse|[Connector object](../variable-data-types.md#connector-object)||
+|TextTranslationTextResponse|[Text](../variable-data-types.md#text-value)||
+
+### <a name="texttranslation_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|

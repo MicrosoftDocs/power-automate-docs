@@ -11,7 +11,7 @@ ms.author: derahonuorah
 search.audienceType: 
   - flowmaker
   - enduser
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 # Create a poll sample
 

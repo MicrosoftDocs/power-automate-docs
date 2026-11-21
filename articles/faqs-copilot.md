@@ -12,7 +12,7 @@ contributors:
   - kisubedi
   - v-aangie
 ms.author: kisubedi
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.collection: bap-ai-copilot
 ---
 

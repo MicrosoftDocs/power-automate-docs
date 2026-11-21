@@ -5,9 +5,9 @@ author: NikosMoutzourakis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 08/06/2025
+ms.date: 07/16/2026
 ms.author: nimoutzo
-ms.reviewer: matp
+ms.reviewer: ellenwehrle
 contributors:
 - jpapadimitriou
 - Yiannismavridis
@@ -20,7 +20,7 @@ ms.custom: sfi-ropc-nochange
 ---
 # SAP automation actions
 
-Our group of actions for SAP automation provides a set of tools to help streamline and automate your SAP workflows. With these actions, you can easily launch the SAP GUI app, create new sessions, select menu items, start and end transactions, and more.
+The SAP automation actions provide a set of tools to help streamline and automate your SAP workflows. By using these actions, you can easily launch the SAP GUI app, create new sessions, select menu items, start and end transactions, and more.
 
 With the actions of the SAP automation group, you can easily interact with SAP UI elements by clicking on them, filling in text fields, and extracting their data. Just enter the SAP UI element ID attribute value. If you don't know the ID value, you can use the Power Automate for desktop UI element picker to capture the required SAP element and retrieve its ID value. When you capture an SAP UI element in this way, only the element's ID value is recovered, and no UI element is added to the desktop flow's UI element repository.
 
@@ -29,20 +29,26 @@ Our SAP automation actions can also be integrated seamlessly with other actions 
 > [!NOTE]
 > Power Automate for desktop supports automation with SAP GUI version 750 or later.
 
+## <a name="knownlimitations"></a> Known limitations
+
+### <a name="webdynpro"></a> SAP Web UIs
+
+UI or Web Automation actions or SAP actions don't work on SAP forms that open in SAP's embedded browser (Web Dynpro). One workaround for that limitation is to try to open that page directly to a standalone browser and automate it by using Web Automation actions.
+
 ## <a name="saplogin"></a> Launch SAP
 
 Open the SAP GUI application and connect to an SAP system.
 
-For connection mode:
+You have two connection mode options:
 
-- The server description option allows you to connect with an SAP system through the SAP name or IP address. To do this, you need the necessary login credentials and access permissions. The server description is a human-readable name or description of the SAP system.
-- The server connection string option allows you to connect with an SAP system through a connection string. The server connection string typically includes the server ‘s name or IP address, the instance number, and the system ID. The server connection string is a specific format for identifying and connecting to an SAP system.
+- Use the SAP name or IP address in the server description. To use this option, you need the necessary login credentials and access permissions. The server description is a human-readable name or description of the SAP system.
+- Use the server connection string. The server connection string typically includes the server's name or IP address, the instance number, and the system ID. The server connection string is a specific format for identifying and connecting to an SAP system.
 
-For multiple logon options:
+You have multiple logon options:
 
-- Terminate this logon option terminates the specific action’s login.
-- Continue this logon and end any other logons option replaces the existing SAP instance with the specific logon.
-- Continue this logon without ending any other logons in the system option creates a new SAP session.
+- **Terminate this logon**: This option terminates the specific action's logon.
+- **Continue this logon and end any other logons**: This option replaces the existing SAP instance with the specific logon.
+- **Continue this logon without ending any other logons in the system**: This option creates a new SAP session.
 
 > [!NOTE]
 > SAP GUI doesn't allow more than six active connections (sessions) to an SAP system.
@@ -83,8 +89,8 @@ Attach the running SAP GUI application to an SAP instance.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Attach mode|No|Foreground or last activated, Window title|Window title|Specifies the mode for attaching the SAP instance to a window. If Foreground or last activated option is selected, the SAP instance is attached to the SAP session in the foreground. If there's no SAP session in the foreground, it attaches to the last SAP session that was launched and isn't closed yet.|
-|Window title|Yes|Text||Specifies the title of the SAP window to which the instance is attached. The window title can be selected from the drop-down list of existing SAP sessions or entered manually.|
+|Attach mode|No|Foreground or last activated, Window title|Window title|Specifies the mode for attaching the SAP instance to a window. If you select the Foreground or last activated option, the SAP instance attaches to the SAP session in the foreground. If there's no SAP session in the foreground, it attaches to the last SAP session that you launched and isn't closed yet.|
+|Window title|Yes|Text||Specifies the title of the SAP window to which the instance is attached. You can select the window title from the drop-down list of existing SAP sessions or enter it manually.|
 
 ### Variables produced
 
@@ -109,7 +115,7 @@ Creates a new SAP session based on the same SAP instance.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. Define this variable in a previous SAP login action.|
 
 ### Variables produced
 
@@ -152,8 +158,8 @@ Select an SAP menu item in the window tool bar. Enter the name of the item in th
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
-|Menu item name|No|[Text value](../variable-data-types.md#text-value)||The name of the menu item in the toolbar to be selected, such as ‘Save’. Insert the name of the menu item as it's displayed in the machine’s SAP installation.|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. Define this variable in a previous SAP login action.|
+|Menu item name|No|[Text value](../variable-data-types.md#text-value)||The name of the menu item in the toolbar to be selected, such as 'Save'. Insert the name of the menu item as it's displayed in the machine's SAP installation.|
 
 ### Variables produced
 
@@ -167,13 +173,13 @@ This action doesn't produce any variables.
 
 ## <a name="closesapconnection"></a> Close SAP connection
 
-Close the SAP connection of the selected SAP instance. Note that all instances related to the specific connection will be terminated.  
+Closes the SAP connection for the selected SAP instance. When you close the connection, you terminate all instances related to that specific connection.  
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. Define this variable in a previous SAP login action.|
 
 ### Variables produced
 
@@ -187,14 +193,14 @@ This action doesn't produce any variables.
 
 ## <a name="starttransaction"></a> Start SAP transaction
 
-Opens a specific transaction code in existing session.
+Opens a specific transaction code in an existing session.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
-|Transaction code|No|[Text value](../variable-data-types.md#text-value)||The transaction code that you desire to execute.|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. Define this variable in a previous SAP login action.|
+|Transaction code|No|[Text value](../variable-data-types.md#text-value)||The transaction code that you want to execute.|
 
 ### Variables produced
 
@@ -208,13 +214,13 @@ This action doesn't produce any variables.
 
 ## <a name="endtransaction"></a> End SAP transaction
 
-Closes the SAP transaction in a specific SAP instance and returns to the SAP easy access menu. An SAP transaction must be started before for the specific SAP session.
+Closes the SAP transaction in a specific SAP instance and returns to the SAP easy access menu. You must start an SAP transaction before for the specific SAP session.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. Define this variable in a previous SAP login action.|
 
 ### Variables produced
 
@@ -234,10 +240,10 @@ Interacts through click action on any UI element of an SAP window.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
-|Element type|No|Basic SAP element, Checkbox, Label, Drop-down list, Grid element|Basic SAP element|Select the SAP element type you want to interact with. The ‘Click SAP element’ option performs a click action on any SAP element like buttons, radio buttons, tabs, text fields, or trees.|
-|SAP element ID|No|Numeric||The SAP element’s ID. This parameter determines the UI element in SAP that action interacts with. You can use the below button for indication the SAP UI element in the SAP screen or insert the value manually.|
-|SAP element ID|No|Numeric||The SAP element’s ID. This parameter determines the UI element in SAP that action interacts with. You can use the below button for indication the SAP UI element in the SAP screen or insert the value manually.|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. Define this variable in a previous SAP login action.|
+|Element type|No|Basic SAP element, Checkbox, Label, Drop-down list, Grid element|Basic SAP element|Select the SAP element type you want to interact with. The 'Click SAP element' option performs a click action on any SAP element like buttons, radio buttons, tabs, text fields, or trees.|
+|SAP element ID|No|Numeric||The SAP element's ID. This parameter determines the UI element in SAP that action interacts with. Use the following button to indicate the SAP UI element in the SAP screen or insert the value manually.|
+|SAP element ID|No|Numeric||The SAP element's ID. This parameter determines the UI element in SAP that action interacts with. Use the following button to indicate the SAP UI element in the SAP screen or insert the value manually.|
 |Set SAP checkbox state to|Yes|Checked, Unchecked|Checked|Specify whether the checkbox becomes checked or unchecked.|
 |SAP label operation|Yes|Expand, Collapse, Choose|Expand|Specify whether to expand or collapse the SAP label.|
 |Drop-down option value|Yes|[Text value](../variable-data-types.md#text-value)||Specify the drop-down option is selected.|
@@ -261,8 +267,8 @@ Gets the value of an SAP UI element's attribute in an SAP window.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
-|SAP element ID|No|Numeric||The SAP element’s ID. This parameter determines the UI element in SAP that action interacts with. You can use the below button for indication the SAP UI element in the SAP screen or insert the value manually.|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. Define this variable in a previous SAP login action.|
+|SAP element ID|No|Numeric||The SAP element's ID. This parameter determines the UI element in SAP that action interacts with. Use the following button to indicate the SAP UI element in the SAP screen or insert the value manually.|
 |Attribute name|No|[Text value](../variable-data-types.md#text-value)|Own text|The attribute whose value is retrieved.|
 
 ### Variables produced
@@ -285,8 +291,8 @@ Fills a text box in an SAP window with the specified text.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. This variable should be defined in a previous SAP login action.|
-|SAP element ID|No|Numeric||The SAP element’s ID. This parameter determines the UI element in SAP that action interacts with. You can use the below button for indication the SAP UI element in the SAP screen or insert the value manually.|
+|`SAPInstance`|No|SAP instance||Select the variable that holds the SAP instance you want to work with. Define this variable in a previous SAP login action.|
+|SAP element ID|No|Numeric||The SAP element's ID. This parameter determines the UI element in SAP that action interacts with. Use the following button to indicate the SAP UI element in the SAP screen or insert the value manually.|
 |Text to fill in|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The text to fill in the SAP text field|
 |If field isn't empty|Yes|Replace text, Append text|Replace text|Specify whether to replace existing content, or to append.|
 

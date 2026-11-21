@@ -11,7 +11,7 @@ ms.topic: overview
 ms.date: 01/16/2026
 ms.update-cycle: 180-days
 ms.author: michalrosik
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.custom: bap-template
 ms.collection: bap-ai-copilot
 search.audienceType:

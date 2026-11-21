@@ -12,10 +12,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Configure Automation Kit
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 ## Define configuration data for the Automation Kit
 

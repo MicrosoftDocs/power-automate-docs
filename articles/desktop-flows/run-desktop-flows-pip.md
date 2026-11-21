@@ -36,8 +36,6 @@ Power Automate for desktop supports two PiP modes:
 
 - The user must be signed in to use Power Automate.
 
-- The user needs a Power Automate Premium plan or access to a pay-as-you-go environment.
-
 - The user running flows in picture-in-picture should be part of the following Windows policies:
   - `Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment\Allow Log On Locally`
   - `Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment\Access this computer from the network`
@@ -55,7 +53,7 @@ To enable the picture-in-picture run mode on the machine, follow one of the meth
 |Method|Description|
 |----|----|
 | Manually | Run a desktop flow in picture-in-picture mode on the machine. You're asked to enable the feature. |
-| MSI installer | Install Power Automate with the [MSI installer](install.md#install-power-automate-using-the-msi-installer) and select the **Enable picture-in-picture mode** option during the installation process. |
+| MSI installer | Install Power Automate with the [MSI installer](install.md#install-power-automate-by-using-the-msi-installer) and select the **Enable picture-in-picture mode** option during the installation process. |
 | Silent installation | Install Power Automate with [silent installation](install-silently.md). During silent installation, picture-in-picture is enabled by default on the machine. To skip the enablement, add the **-SKIPENABLEPIPMODE** argument. More information: [Command line arguments](install-silently.md#command-line-arguments) |
 | Command | Update an existing installation and enable or disable the picture-in-picture run mode on the machine with a command. Open the **Start** menu, search for **Command Prompt**, right-click it, and then select **Run as administrator**. Go to the installation directory of Power Automate, by default ```cd C:\Program Files (x86)\Power Automate Desktop``` and run the command ```PAD.ChildSession.Installer.Host.exe``` to enable picture-in-picture or ```PAD.ChildSession.Installer.Host.exe -d``` to disable it. |
 

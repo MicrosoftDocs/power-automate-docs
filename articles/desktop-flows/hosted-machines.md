@@ -7,7 +7,7 @@ ms.subservice: desktop-flow
 ms.topic: article
 ms.date: 10/21/2025
 ms.author: kenseongtan
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 contributors:
 - DanaMartens
 ms.custom: sfi-image-blocked

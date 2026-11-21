@@ -8,7 +8,7 @@ ms.date: 07/01/2024
 ms.service: power-automate
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 
 search.audienceType: 
   - admin
@@ -47,7 +47,6 @@ To get started, we recommend that you [learn about the HEAT techniques](heat.md)
 - Customer presentations:
   - Coca-Cola HQ Webinar: <https://aka.ms/cocacolaautomationplatform>
   - Coca-Cola United: <https://aka.ms/cocacolaunitedrpa>
-  - TC Energy Bot Wars: <https://aka.ms/Bot-Wars>
 - Customer stories: <https://aka.ms/powerautomatestories>
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -14,10 +14,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 04/21/2023
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Set up the automation kit main component
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 This section includes the manual install process for the main solution of the automation kit. There's an automated [command line installer](./command-line-install.md) that will also guide you through this process.
 
@@ -60,7 +62,7 @@ Once the environment is created, enable the Power Apps component framework.
 
 1. Turn on **Allow publishing of canvas apps with code components**.
 
-16. Select **Save**.
+1. Select **Save**.
 
 ### Import the Creator Kit
 
@@ -144,7 +146,7 @@ To assign roles:
 
 1. Select your main environment.
 
-1.  Under **Security roles** on the **Access** card, select **See all**.
+1. Under **Security roles** on the **Access** card, select **See all**.
 
 1. Select the security role, and then add members to the security role.
 

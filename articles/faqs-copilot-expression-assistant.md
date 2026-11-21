@@ -7,7 +7,7 @@ ms.custom:
 ms.topic: faq
 author: ksubedi
 ms.author: kisubedi
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # FAQ for Copilot expression assistant

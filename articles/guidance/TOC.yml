@@ -78,56 +78,6 @@
               href: desktop-flow-coding-guidelines/optimize-end-to-end-performance.md
             - name: Monitor and troubleshoot automation processes
               href: desktop-flow-coding-guidelines/monitor-automation.md
-    - name: Plan a Power Automate project
-      items:
-        - name: Introduction
-          href: planning/introduction.md
-        - name: Various types of process automation
-          href: planning/various-types-process-automation.md
-        - name: Planning phase
-          href: planning/planning-phase.md
-        - name: Designing phase
-          items:
-            - name: Process design
-              href: planning/process-design.md
-            - name: Architectural design
-              items:
-                - name: Determining which automation method to use
-                  href: planning/determine-automation-methods.md
-                - name: Attended and unattended scenarios
-                  href: planning/attended-unattended.md
-                - name: Separate flows into smaller automated processes
-                  href: planning/separate-flows.md
-                - name: Authentication and security
-                  href: planning/authentication-security.md
-                - name: Defining inputs and outputs
-                  href: planning/define-input-output.md
-                - name: Transforming and formatting data
-                  href: planning/transforming-formatting-data.md
-                - name: Formalizing messages and alerts
-                  href: planning/formalizing-messages-alerts.md
-                - name: Reducing risk and planning for error handling
-                  href: planning/reducing-risk.md
-                - name: Adding analytical data to Microsoft Dataverse
-                  href: planning/adding-analytical-data.md
-                - name: Decision-making flowchart for your design
-                  href: planning/decision-making-flow.md
-        - name: Making phase
-          href: planning/making-phase.md
-        - name: Testing phase
-          items:
-            - name: Testing strategy
-              href: planning/testing-strategy.md
-            - name: Tools and settings to test your automation
-              href: planning/tools-and-settings.md
-        - name: Deploying and refining phase
-          items:
-            - name: Deploying your automation to production
-              href: planning/deploy-to-production.md
-            - name: Assessing the business impact
-              href: planning/analyze-and-assess.md
-            - name: Discovering performance issues
-              href: planning/discover-performance-issues.md
     - name: Robotic Process Automation (RPA) with SAP
       items:
         - name: Introduction to SAP GUI-based RPA in Power Automate
@@ -176,8 +126,6 @@
               href: rpa-sap-playbook/feature-highlights-per-approach.md
         - name: Conclusion
           href: rpa-sap-playbook/conclusion.md
-    - name: Application Lifecycle Management for automation projects
-      href: ./planning/application-lifecycle-management.md
     - name: Automation Kit for Power Platform
       items:
         - name: Introduction
@@ -246,8 +194,6 @@
           href: automation-coe/heat.md
         - name: Automation administration and governance
           href: automation-coe/automation-admin-gov.md
-        - name: Automation Kit for Power Platform
-          href: /power-automate/guidance/automation-kit/overview/introduction
         - name: Manage Power Automate for desktop on Windows
           href: automation-coe/manage-pad-on-windows.md
         - name: Automation Maturity Model overview
@@ -256,27 +202,3 @@
           href: automation-coe/automation-maturity-model-details.md
         - name: Build custom actions for Power Automate for desktop
           href: ./how-to/build-custom-action/buildcustomaction.md
-    - name: Business approvals templates (preview)
-      items:
-        - name: Introduction
-          href: ./business-approvals-templates/introduction.md
-        - name: User journey
-          href: ./business-approvals-templates/user-journey.md
-        - name: Comparison
-          href: ./business-approvals-templates/approvals-kit-comparison.md
-        - name: Setup
-          href: ./business-approvals-templates/setup.md
-        - name: Configure preset approvals
-          href: ./business-approvals-templates/configure-preset-approvals.md
-        - name: Setup out of office and delegation
-          href: ./business-approvals-templates/setup-out-of-office-and-delegation.md
-        - name: Process approval requests
-          href: ./business-approvals-templates/process-approval-requests.md
-        - name: Nurture
-          href: ./business-approvals-templates/nurture.md
-        - name: Frequently asked questions
-          href: ./business-approvals-templates/frequently-asked-questions.md
-        - name: Limitations
-          href: ./business-approvals-templates/limitations.md
-        - name: Content
-          href: ./business-approvals-templates/content.md

@@ -5,7 +5,7 @@ author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 09/03/2025
+ms.date: 06/29/2026
 ms.author: iomavrid
 ms.reviewer: dmartens
 contributors:
@@ -18,9 +18,9 @@ search.audienceType:
 
 # Tags in desktop flows
 
-Tags are available in the Power Automate for desktop console to help you categorize and group desktop flows. Tags are custom text labels that let you organize your flows and manage them efficiently.
+In the console of Power Automate for desktop and the portal view of desktop flows, use tags to categorize and group flows. Tags are custom text labels that you use to organize your flows and manage them efficiently.
 
-The **Tags** column displays all the tags that are associated with a desktop flow. To manage tags, such as adding or removing them for a flow, select **Manage tags** in its context menu in the console. Alternatively, open the **Flow properties** pane and go to the **Tags** section.
+The **Tags** column displays all the tags associated with a desktop flow. To manage tags, such as adding or removing them for a flow, select **Manage tags** in the flow's context menu in the desktop console or the portal of Power Automate. Alternatively, in the console, open the **Flow properties** pane and go to the **Tags** section.
 
 In this section, add your preferred tags to the selected flow by selecting a tag from the list or creating a new text label. As you type, the list of tags in your environment automatically filters to help you choose an existing tag or create a new one. From the same pane, you can remove any tags previously associated with your flow. Select **Save** in the flow properties for the tag changes to take effect.
 
@@ -28,7 +28,7 @@ In this section, add your preferred tags to the selected flow by selecting a tag
 > - Users with the Environment Maker role can access and use all tags within an environment by default, including tags created by others. Explicit sharing of tags with other users isn't needed. They can associate the required tags with flows they own or co-own, but they can't associate tags with flows shared with them as run-only users.
 > - In versions 2.55 and 2.56, if a message appears in the console indicating that a user with a custom role doesn't have sufficient permissions to view or create flows in an environment, Read access must be provided to their respective security role on the Tag and Tagged Process tables in Dataverse. Learn more at [Insufficient permissions to view or create flows in the environment in versions 2.55 and 2.56](https://community.powerplatform.com/forums/thread/details/?threadid=3ec33061-582b-f011-8c4d-7c1e5247028a). Starting with version 2.57, these permissions are optional, so users with custom roles can still view their flows.
 
-## Update tags for multiple flows
+## Update tags for multiple flows in the console of Power Automate for desktop
 
 Select multiple desktop flows and update their tags at the same time by selecting the common context option **Manage tags**. A dialog appears, displaying only the tags already associated with all the selected flows. Remove common tags or add new ones associated with all selected flows.
 
@@ -65,7 +65,6 @@ You can select one or more tags in the list and choose **Delete from this enviro
 ## Known limitations
 
 - Tags can't be renamed. You can delete them and create new ones instead.
-- Tags aren't visible in the desktop flows page of the Power Automate portal.
 
 ## Related information
 

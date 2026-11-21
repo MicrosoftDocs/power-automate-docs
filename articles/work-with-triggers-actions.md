@@ -11,7 +11,7 @@ ms.update-cycle: 180-days
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 search.audienceType:
   - flowmaker
   - enduser

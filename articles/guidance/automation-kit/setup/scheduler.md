@@ -11,10 +11,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/04/2023
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Set up the automation kit scheduler
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 The Automation Kit scheduler was included up to the May 2023 release.
 

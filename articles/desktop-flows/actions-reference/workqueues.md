@@ -2,9 +2,9 @@
 title: Work queues actions
 description: Use work queue actions in Power Automate desktop flows.
 ms.topic: how-to
-ms.date: 10/15/2024
-ms.author: dbekirop
-ms.reviewer: 
+ms.date: 08/31/2026
+ms.author: smurkute
+ms.reviewer: smurkute
 contributors:
  - DBEKI
  - tapanm-msft
@@ -51,7 +51,7 @@ The **Process work queue item action** action requires the following arguments.
 
   | Argument       | Type | Description     |
   |----------      |------|-----------------|
-  | **WorkQueueItem** |No   |Information stored in the work queue item being processed |
+  | **WorkQueueItem** |Work queue item |Information stored in the work queue item being processed |
 
 #### Exceptions
 
@@ -136,7 +136,7 @@ The **Add work queue item** action requires the following arguments.
 
   | Argument       | Type | Description     |
   |----------      |------|-----------------|
-  | **WorkQueueItem** |No   |Information stored for the work queue item being added |
+  | **WorkQueueItem** |Work queue item |Information stored for the work queue item being added |
 
 #### Exceptions
 
@@ -222,7 +222,7 @@ The **Requeue item with delay** action requires the following arguments.
 | Argument       | Optional | Accepts | Default Value | Description     |
   |----------      |----------|---------|---------------|-----------------|
   | **Work queue item** |No    |Work queue item |               |The work queue item to add the item into|
-| **Delay until** |No    |Datetime value| Normal |The datetime value applied to delay the queue item until|
+| **Delay until** |No    |Datetime value| |The datetime value applied to delay the queue item until|
 | **Expires** | Yes | Datetime value| | Custom expiration time for the item being requeued|
 | **Processing notes** | Yes | Text value, Numeric value| | Custom processing notes to be added to the new queue item|
 | **Clear processing notes** | Yes | Boolean| False | When enabled, hides and clears the processing notes field on this screen and removes any processing notes from the database that have been previously captured for this item |
@@ -283,14 +283,6 @@ The **Get work queue items by filter** action requires the following arguments.
   |----------      |------|------|-----------------|
   | **WorkQueueItems** |No   | Enabled | List of work queue items matching the filter expression. |
 
-#### Exceptions
-
-| Argument       | Description |
-|----------------|----------|
-| **Work queue** | The work queue to retrieve items from. |
-| **Filter rows** | The [FetchXML](#example-fetchxml-query) query expression used to retrieve items from the work queue. |
-| **Rows to return** | The maximum number of work queue items returned by the orchestrator (default is 5000). |
-
 ### What are FetchXML queries?
 
 Microsoft Dataverse [FetchXML](/power-apps/developer/data-platform/use-fetchxml-construct-query) is a language used for retrieving data from a Dataverse database. It's designed to be easy to create, use, and understand. For example, you might want to ask Dataverse to give you a list of all work queue items that are in `IT Exception` state.
@@ -349,7 +341,7 @@ The following example is a query expression for how to fetch several properties,
 | Queued                 | 0    | Item is queued                 |
 | Processing             | 1    | Item is being processed        |
 | Processed              | 2    | Item was processed        |
-| OnHold (Paused)        | 3    | Item is on hold (paused)       |
+| Paused                 | 3    | Item is paused or on hold          |
 | GenericException       | 4    | Item encountered a generic exception |
 | ITException            | 5    | Item encountered an IT exception |
 | BusinessException      | 6    | Item encountered a business exception |

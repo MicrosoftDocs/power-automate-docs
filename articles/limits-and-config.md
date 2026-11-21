@@ -3,7 +3,7 @@ title: Limits of automated, scheduled, and instant flows
 description: Learn about the limits that apply to automated, scheduled, and instant flows in Microsoft Power Automate.
 author: samathur
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 Contributors:
   - QuentinSele
   - AndreasTouly
@@ -15,7 +15,7 @@ ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: article
 suite: flow
-ms.date: 03/24/2026
+ms.date: 11/10/2026
 search.audienceType: 
   - flowmaker
   - enduser
@@ -24,24 +24,24 @@ ms.custom: bap-template
 
 # Limits of automated, scheduled, and instant flows
 
-This article contains information about the limits that apply to automated, scheduled, and instant flows, depending on which [Power Automate license](https://make.powerautomate.com/pricing) you have.
+This article provides information about the limits that apply to automated, scheduled, and instant flows, depending on which [Power Automate license](https://make.powerautomate.com/pricing) you have.
 
 ## Performance profiles
 
 A flow's *performance profile* determines its Power Platform request limits. The following table describes the plans that are associated with each of the four performance profiles.
 
- Learn more about how Power Automate consumes Power Platform requests in [Types of Power Automate licenses - Power Platform requests](/power-platform/admin/power-automate-licensing/types#power-platform-requests).
+ Learn more about how Power Automate consumes Power Platform requests in [What is a Microsoft Power Platform request?](/power-platform/admin/api-request-limits-allocations#what-is-a-microsoft-power-platform-request).
 
 | Performance profile | Plans |
 |---------------------|-------|
 | Low                 | - Free <br />- Microsoft 365 plans <br /> - Power Apps Plan 1, Per App plans <br /> - Power Automate Plan 1 <br /> - All license trials <br>- Dynamics 365 Team Member<br>- Microsoft Power Apps for Developer | 
-| Medium              | - Power Apps triggered flows, manual flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate Premium (previously Power Automate per user), Power Automate Premium plans (previously Power Automate per user with Attended RPA plans) <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-usersapplication-usersusers-with-special-free-licenses)|
+| Medium              | - Power Apps triggered flows, manual flows, child flows, Power Apps Plan 2, Power Apps per user plan <br />- Power Automate Plan 2, Power Automate Premium (previously Power Automate per user), Power Automate Premium plans (previously Power Automate per user with Attended RPA plans) <br /> Dynamics 365 Enterprise plans, Dynamics 365 Professional plans<br /> - [Dynamics 365 non-licensed users, application users, users with special free licenses](/power-platform/admin/api-request-limits-allocations#non-licensed-user-request-limits)|
 | High                | Power Automate Process license, Power Automate per flow plan |
 | Unlimited Extended  | Pay-as-you-go flows, Dynamics in context flows running under service principal |
 
-For cloud flows with a Process license, multiple Process licenses can be [stacked on a single cloud flow](/power-automate/desktop-flows/capacity-process#stack-multiple-process-licenses-on-a-cloud-flow) to increase its daily action entitlement. Each additional license adds 250,000 actions per day.
+For cloud flows with a Process license, you can [stack multiple Process licenses on a single cloud flow](/power-automate/desktop-flows/capacity-process#stack-multiple-process-licenses-on-a-cloud-flow) to increase its daily action entitlement. Each additional license adds 250,000 actions per day. Alternatively, you can share a single Process license across up to 25 flows by using a [flow group](flow-groups.md). Stacking isn't available for flow groups - if a workload needs more than 250,000 actions per day, assign Process licenses directly to the individual flow.
 
-If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow has the performance profile of the higher of the plans. For the exact set of plans that include Power Automate, refer to the [Power Platform licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
+During the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period), if a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow has the performance profile of the higher of the plans. Learn more in [What happens to my action limits if I have multiple plans?](/power-platform/admin/power-automate-licensing/faqs#what-happens-to-my-action-limits-if-i-have-multiple-plans) For the exact set of plans that include Power Automate, refer to the [Power Platform licensing guide](https://go.microsoft.com/fwlink/p/?linkid=2085130).
 
 To determine which plan you have, select **Settings** on the Power Automate title bar, and then select **View My Licenses**.
 
@@ -94,9 +94,9 @@ The following table describes the limits on how long flows remain turned on befo
 
 | Name                 | Limit   | Notes |
 |----------------------|---------|-------|
-| Flows with errors    | 14 days |  A cloud flow that has a trigger or actions that fail continuously will be turned off.
-| Flows without trigger activity | 90 days | A cloud flows that isn't triggered within a 90 day period might be turned off. Flows owned by users with premium licenses or assigned capacity licenses (Power Automate Process, per flow) aren't subject to this suspension. Flow owners and co-owners are notified 30 days prior to suspension, and can turn the flow back on for it to continue operating. |
-| Consistently throttled flows | 14 days | A cloud flow that is consistently throttled will be turned off. Assign Power Automate Process licenses to the flow to dedicate capacity and avoid throttling.|
+| Flows with errors    | 14 days |  A cloud flow that has a trigger or actions that fail continuously is turned off.
+| Flows without trigger activity | 90 days | A cloud flow that isn't triggered within a 90 day period might be turned off. Flows owned by users with premium licenses or assigned capacity licenses (Power Automate Process, per flow) aren't subject to this suspension. Flow owners and co-owners are notified 30 days prior to suspension, and can turn the flow back on for it to continue operating. |
+| Consistently throttled flows | 14 days | A cloud flow that is consistently throttled is turned off. Assign Power Automate Process licenses to the flow to dedicate capacity and avoid throttling.|
 
 ## Concurrency, looping, and debatching limits
 
@@ -116,29 +116,29 @@ The following table describes the concurrency, looping, and debatching limits fo
 
 The following sections describe the time-bound limits for a single version of a cloud flow definition. These limits apply across all runs of the flow version and are calculated on sliding windows.
 
-If a cloud flow exceeds one of the limits, flow activity is slowed. It automatically resumes when the sliding window has activity below the limit. However, if a cloud flow [consistently remains above the limits](#duration-and-retention-limits) for 14 days, it is turned off. Be sure to monitor email for notifications about such flows. If a cloud flow consistently exceeds the limits, you need to revise it to remain below the limits to prevent it from being turned off.
+If a cloud flow exceeds one of the limits, flow activity slows. It automatically resumes when the sliding window has activity below the limit. However, if a cloud flow [consistently remains above the limits](#duration-and-retention-limits) for 14 days, the system turns it off. Be sure to monitor email for notifications about such flows. If a cloud flow consistently exceeds the limits, you need to revise it to remain below the limits to prevent it from being turned off.
 
 > [!TIP]
 > Because these limits are for a single version, if you update your flow, it resets the limits.
 
 ### Power Platform request limits
 
-As of October 2019, there are limits on the number of [Power Platform requests](/power-platform/admin/power-automate-licensing/types#power-platform-requests) an account can make across all its flows, Power Apps, and any applications that call Dataverse. No performance is guaranteed above these limits, although enforcement of the limits isn't as strict during the [licensing transition period](/power-platform/admin/power-automate-licensing/types#transition-period). [Learn more about request limits and allocations](/power-platform/admin/api-request-limits-allocations).
+As of October 2019, Microsoft enforces limits on the number of [Power Platform requests](/power-platform/admin/api-request-limits-allocations#what-is-a-microsoft-power-platform-request) an account can make across all its flows, Power Apps, and any applications that call Dataverse. Microsoft doesn't guarantee performance above these limits, although enforcement isn't as strict during the [licensing transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period), which ends for cloud flows that run under user licenses in a phased rollout starting April 2027. [Learn more about request limits and allocations](/power-platform/admin/api-request-limits-allocations).
 
-These requests are counted for all types of actions, including connector actions, HTTP actions, and built-in actions, from initializing variables to a simple compose action. Both successful and failed actions count toward the limits. Retries and requests from pagination also count as action runs.
+These requests are counted for all types of actions, including connector actions, HTTP actions, and built-in actions, from initializing variables to a simple compose action. Both successful and failed actions count toward the limits. Retries and requests from pagination also count as action runs. One action counts as one Power Platform request, so these limits are also called *action limits*.
 
-To view the number of actions your flow has run, select **Analytics** on the flow details page and check the **Actions** tab.
+To check a flow's daily action usage, select **Analytics** on the flow details page and review the **Actions** chart. Admins can see each user's total in **Licensing** > **Power Automate** > **Usage** in the Power Platform admin center. Learn more in [Check a flow's daily action usage](create-flow-group.md#check-a-flows-daily-action-usage).
 
 The following table describes the limits on requests.
 
 | Name | Transition period limit | Notes |
 | ---- | ----- |----- |
 | Power platform requests per 5 minutes | 100,000 | Distribute the workload across more than one flow as necessary. |
-| Power platform requests per 24 hours |10,000 for Low; 200,000 for Medium; 500,000 for High; 10,000,000 for Unlimited Extended | These limits represent approximations of how many requests are allowed daily. They aren't guarantees. Actual amounts might be smaller, but are greater than the [documented request limits and allocations](/power-platform/admin/api-request-limits-allocations) during the [licensing transition period](/power-platform/admin/power-automate-licensing/types#transition-period). The documented limits were substantially increased in late 2021. [View detailed Power Platform request usage information in the Power Platform admin center (preview)](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). Any potential enforcement of high usage based on the [documented limits](/power-platform/admin/api-request-limits-allocations) doesn't start until six months after reports are made generally available. Distribute the workload across more than one flow as necessary. |
+| Power platform requests per 24 hours |10,000 for Low; 200,000 for Medium; 500,000 for High; 10,000,000 for Unlimited Extended | These limits represent approximations of how many requests are allowed daily. They aren't guarantees. Actual amounts might be smaller, but are greater than the [documented request limits and allocations](/power-platform/admin/api-request-limits-allocations) during the [licensing transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period). [View detailed Power Platform request usage information in the Power Platform admin center (preview)](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). After the transition period ends, a user's flows share the user's action limit, so splitting a workload across more flows doesn't add capacity. To give a flow its own capacity, assign a Process license to the flow or to a [flow group](flow-groups.md) that contains it. |
 | Concurrent outbound calls | 500 for Low; 2,500 for all others | You can reduce the number of concurrent requests or reduce the duration as necessary. |
 
 > [!TIP]
-> Individual connectors have their own limits, which often are reached before the limits mentioned previously. Be sure to check the [documentation for your connector](/connectors/).
+> Individual connectors have their own limits, which you often reach before the limits mentioned previously. Be sure to check the [documentation for your connector](/connectors/).
 
 ### Runtime endpoint request limits
 
@@ -179,7 +179,7 @@ The following table describes the timeout limits.
 |------|-------|-------|
 | Outbound synchronous request | 120 seconds (2 minutes) | Examples of outbound requests include calls made by HTTP triggers.<br/>**Tip**: For longer-running operations, use an asynchronous polling pattern or an "Until" loop. To work around timeout limits when you call another flow that has a callable endpoint, use the built-in action instead, which you can find in the connector picker under **Built-in**. |
 | Outbound asynchronous request | Configurable up to 30 days | n/a |
-| Inbound request | 120 seconds (2 minutes) | Examples of inbound requests include requests to trigger instant flows and flows with the **HTTP Request** trigger.<br/>Flows that contain a response action including **Respond to Copilot**, **HTTP Response**, and **Respond to a PowerApp or flow** always returns a response within this limit.<br/>Child flows that are started before the response action continue running separately, and actions after the response action continue running beyond this limit, enabling a flow to respond and continue running other operations. |
+| Inbound request | 120 seconds (2 minutes) | Examples of inbound requests include requests to trigger instant flows and flows with the **HTTP Request** trigger.<br/>Flows that contain a response action including **Respond to Copilot**, **HTTP Response**, and **Respond to a PowerApp or flow** always return a response within this limit.<br/>Child flows that start before the response action continue running separately, and actions after the response action continue running beyond this limit, enabling a flow to respond and continue running other operations. |
 
 If you test a cloud flow that runs for longer than 10 minutes, you might get a timeout message in Power Automate, even though the flow continues to run in the background. If this happens, reopen the view to receive the current status.
 
@@ -230,9 +230,9 @@ To change the default settings, use the retry policy parameter.
 
 ## Turn off or delete flows
 
-When you turn off a cloud flow, no new runs are started. All in-progress and pending runs continue until they finish.
+When you turn off a cloud flow, no new runs start. All in-progress and pending runs continue until they finish.
 
-When you delete a cloud flow, no new runs are started. All in-progress and pending runs are canceled. If you have thousands of runs, cancellation might take significant time to complete.
+When you delete a cloud flow, no new runs start. All in-progress and pending runs are canceled. If you have thousands of runs, cancellation might take significant time to complete.
 
 ## Custom connector limits
 
@@ -852,7 +852,7 @@ Learn more about how to permit access to automated, scheduled, and instant flows
 
 ## Flow suspension because of runtime limits
 
-Suspended flows are shown as suspended in the Power Automate maker portal and the Power Platform admin center. When a flow is returned through an API, PowerShell, or a [Power Automate Management connector list flows 'as Admin' action](/connectors/flowmanagement/#list-flows-as-admin), the flow has **State=Suspended** with appropriate **FlowSuspensionReason** and **FlowSuspensionTime** values.
+The Power Automate maker portal and the Power Platform admin center show suspended flows as suspended. When an API, PowerShell, or [Power Automate Management connector list flows 'as Admin' action](/connectors/flowmanagement/#list-flows-as-admin) returns a flow, the flow has **State=Suspended** with appropriate **FlowSuspensionReason** and **FlowSuspensionTime** values.
 
 The following items are the FlowSuspensionReason values for runtime limits:
 

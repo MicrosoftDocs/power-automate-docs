@@ -5,9 +5,9 @@ author: kenseongtan
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 04/11/2024
+ms.date: 10/28/2026
 ms.author: kenseongtan
-ms.reviewer: dipapa
+ms.reviewer: smurkute
 contributors:
 - jpapadimitriou
 - Yiannismavridis
@@ -17,19 +17,20 @@ ms.contributors:
  - kenseongtan
  - dipapa
  - DanaMartens
+ - shwetamurkute
 search.audienceType: 
   - flowmaker
   - enduser
 ---
 
-# Variables actions
+# Variable actions
 
 To manually create a variable in a desktop flow, deploy the **Set variable** action. This action requires you to provide a name and a value for the new variable.
 
 :::image type="content" source="media/variables/set-var-action-properties.png" alt-text="Screenshot of the Set variable action.":::
 
 > [!IMPORTANT]
-> Reserved keywords can't be used as variable names. For the full list of reserved keywords go to [Reserved keywords in desktop flows](../reserved-keywords.md).
+> You can't use reserved keywords as variable names. For the full list of reserved keywords, see [Reserved keywords in desktop flows](../reserved-keywords.md).
 
 To increase or decrease the value of a numeric variable, use the **Increase variable** and **Decrease variable** actions, respectively.
 
@@ -44,7 +45,7 @@ Similarly, the **Generate random number** action produces a random numeric value
 To add items to an existing list, deploy the **Add item to list** action, and populate a hard-coded value or a variable to define the item to add. Likewise, you can remove items from a list with the **Remove item from list** action.
 
 >[!NOTE]
->List indexes start from 0, meaning that the first item in the list always has an index of 0. Use the notation **%ListName[0]%** to refer to the first item in the list, **%ListName[1]%** to the second, and so on.
+> List indexes start from 0, meaning that the first item in the list always has an index of 0. Use the notation **%ListName[0]%** to refer to the first item in the list, **%ListName[1]%** to the second, and so on.
 
 If you want to create a data table variable, deploy the **Create new data table** action and specify the initial items of it using the visual builder.
 
@@ -80,10 +81,10 @@ Inserts a row at the end or before a specific index value.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must be previously specified by an action that produces a data table variable|
 |Into location|N/A|End of data table, Before row index|End of data table|Specify whether to insert the new row at the end of the data table or before a specified row index|
-|Row index|No|[Numeric value](../variable-data-types.md#numeric-value)||Insert the row index value to be used when before row index is specified as the into location parameter|
-|New value(s)|No|[List](../variable-data-types.md#list), [Datarow](../variable-data-types.md#datarow)||This parameter accepts a list or datarow variable where the column count should match the column count in the data table|
+|Row index|No|[Numeric value](../variable-data-types.md#numeric-value)||Insert the row index value to use when you specify `before row index` as the `into location` parameter|
+|New value(s)|No|[List](../variable-data-types.md#list), [Datarow](../variable-data-types.md#datarow)||Provide a list or datarow variable where the column count matches the column count in the data table|
 
 ### Variables produced
 
@@ -93,9 +94,9 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Item index is out of range|Indicates that the provided item index is out of range|
-|Invalid input arguments|Indicates that there's an invalid input parameter|
-|Incompatible type error|Indicates that an input parameter of an incompatible type is provided|
+|Item index is out of range|The provided item index is out of range.|
+|Invalid input arguments|An input parameter is invalid.|
+|Incompatible type error|An input parameter has an incompatible type.|
 
 ## <a name="deleterowfromdatatable"></a> Delete row from data table
 
@@ -116,7 +117,7 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Item index is out of range|Indicates that the specified data table item is out of range|
+|Item index is out of range|Indicates that the specified data table item is out of range.|
 
 ## <a name="modifydatatableitem"></a> Update data table item
 
@@ -139,10 +140,10 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Item index is out of range|Indicates that the specified data table item is out of range|
-|Column name doesn't exist|Indicates that the provided column name doesn't exist|
-|Column index is out of range|Indicates that the provided column index is out of range|
-|Incompatible type error|Indicates that an input parameter of an incompatible type was provided|
+|Item index is out of range|Indicates that the specified data table item is out of range.|
+|Column name doesn't exist|Indicates that the provided column name doesn't exist.|
+|Column index is out of range|The provided column index is out of range.|
+|Incompatible type error|Indicates that an input parameter of an incompatible type was provided.|
 
 ## <a name="findorreplaceindatatable"></a> Find or replace in data table
 
@@ -152,14 +153,14 @@ Finds and/or replaces data table values.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must be previously specified by an action that produces a data table variable|
 |Search mode|N/A|Find, Find and replace|Find|The mode to search with (find or find and replace)|
 |All matches|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to find or replace text in all the matching cells found or the first matching cell only|
 |Text to find|No|[Text value](../variable-data-types.md#text-value)||The text to find in the data table|
 |Find using a regular expression|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to use a regular expression to match the cell contents with the text to find|
 |Match case|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to search for case-sensitive data|
 |Match entire cell contents|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to search for cells that contain just the specified text|
-|Text to replace with|No|[Text value](../variable-data-types.md#text-value)||The text used to replace the matching cells|
+|Text to replace with|No|[Text value](../variable-data-types.md#text-value)||The text used to replace the matching cells.|
 |Search by|N/A|Everywhere, On column|Everywhere|The order in which to search for the text (everywhere, or on column)|
 |Column index or name|No|[Text value](../variable-data-types.md#text-value)||The column header or index value|
 
@@ -174,22 +175,22 @@ Finds and/or replaces data table values.
 |Exception|Description|
 |-----|-----|
 |Provided regular expression is invalid|Indicates that the provided regular expression is invalid|
-|Column name doesn't exist|Indicates that the provided column name doesn't exist|
-|Column index is out of range|Indicates that the provided column index is out of range|
-|Incompatible type error|Indicates that an input parameter of an incompatible type is provided|
+|Column name doesn't exist|Indicates that the provided column name doesn't exist.|
+|Column index is out of range|The provided column index is out of range.|
+|Incompatible type error|An input parameter has an incompatible type.|
 
 ## <a name="addcolumntodatatableaction"></a> Insert column into data table
 
-Inserts a column at the end or before a specific index value.
+Inserts a column at the end of a data table or before a specific index value.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must be specified by an action that produces a data table variable.|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. An action that produces a data table variable must specify this variable.|
 |Into location|N/A|End of data table, Before column index|End of data table|Specify whether to insert the new column at the end of the data table or before a specified column index.|
 |Column name|No|[Text value](../variable-data-types.md#text-value)||Specify the header of the new column.|
-|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||Specify the column index value that is utilized when the **Before column index** option is selected for the **Into location** parameter.|
+|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||Specify the column index value to use when you select the **Before column index** option for the **Into location** parameter.|
 
 ### Variables produced
 
@@ -199,21 +200,21 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Column index is out of range|Indicates that the provided column index is out of range.|
-|Duplicate column name|Indicates that the provided column name already exists.|
+|Column index is out of range|The provided column index is out of range.|
+|Duplicate column name|The provided column name already exists.|
 
 ## <a name="deletecolumnfromdatatableaction"></a> Delete column from data table
 
-Delete a data table column at the specified column index or column name.
+Deletes a data table column at the specified column index or column name.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must be specified by an action that produces a data table variable.|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. An action that produces a data table variable must specify this variable.|
 |Specify column with|N/A|Name, Index|Name|Specify whether to find the column by name or index.|
-|Column name|No|[Text value](../variable-data-types.md#text-value)||The name of the column that should be deleted.|
-|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the column that should be deleted. Column indexes start from 0.|
+|Column name|No|[Text value](../variable-data-types.md#text-value)||The name of the column to delete.|
+|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the column to delete. Column indexes start from 0.|
 
 ### Variables produced
 
@@ -223,18 +224,18 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Column name doesn't exist|Indicates that the provided column name doesn't exist|
-|Column index is out of range|Indicates that the provided column index is out of range|
+|Column name doesn't exist|Indicates that the provided column name doesn't exist.|
+|Column index is out of range|The provided column index is out of range.|
 
 ## <a name="deleteemptyrowsfromdatatableaction"></a> Delete empty rows from data table
 
-Deletes the rows of the data table that have all of their cells empty.
+Deletes the rows of the data table where all cells are empty.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must have been previously specified by an action that produces a data table variable|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. This variable must be previously specified by an action that produces a data table variable|
 
 ### Variables produced
 
@@ -246,13 +247,13 @@ This action doesn't include any exceptions.
 
 ## <a name="deleteduplicaterowsfromdatatableaction"></a> Delete duplicate rows from data table
 
-Deletes all the rows that are duplicate from the data table, if the values have the same data type in each column.
+Deletes all the duplicate rows from the data table if the values have the same data type in each column.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. The specified variable must be defined through an action that generates a data table variable.|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. Define the variable through an action that generates a data table variable.|
 
 ### Variables produced
 
@@ -262,17 +263,17 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Type mismatch in the cells of a column|​Indicates that two or more values in a single column are of different data type|
+|Type mismatch in the cells of a column|​Two or more values in a single column are of different data type.|
 
 ## <a name="cleardatatableaction"></a> Clear data table
 
-Deletes all the rows of the data table, keeping table headers unaffected.
+Deletes all the rows in the data table but keeps the table headers.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. The specified variable must be defined through an action that generates a data table variable.|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. Define the variable through an action that generates a data table variable.|
 
 ### Variables produced
 
@@ -290,10 +291,10 @@ Sorts the data table rows in ascending or descending order by the specified colu
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. The specified variable must be defined through an action that generates a data table variable.|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. Define the variable through an action that generates a data table variable.|
 |Specify column with|N/A|Name, Index|Name|Specify whether to find the column by name or index.|
-|Column name|No|[Text value](../variable-data-types.md#text-value)||The name of the column that should be sorted.|
-|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the column that should be sorted. Column indexes start from 0.|
+|Column name|No|[Text value](../variable-data-types.md#text-value)||The name of the column that you want to sort.|
+|Column index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index of the column that you want to sort. Column indexes start from 0.|
 |Order|N/A|Ascending, Descending|Ascending|The order to sort the data table.|
 
 ### Variables produced
@@ -304,23 +305,23 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Column name doesn't exist|​Indicates that the provided column name doesn't exist|
-|Column index is out of range|​Indicates that the provided column index is out of range|
-|Type mismatch in the cells of a column|​Indicates that two or more values in a single column are of different data type|
+|Column name doesn't exist|​The provided column name doesn't exist.|
+|Column index is out of range|​The provided column index is out of range.|
+|Type mismatch in the cells of a column|​Two or more values in a single column are of different data type.|
 
 ## <a name="filterdatatableaction"></a> Filter data table
 
 Filters the data table rows based on the applied rules.
 
-In the action's built-in wizard that helps you create the filters needed, you can apply multiple filters to different columns that are defined by name or index. Every filter is composed of a specific column it targets, an operator that is selected, and the value that is assigned to it.
+In the action's built-in wizard that helps you create the filters needed, you can apply multiple filters to different columns that you define by name or index. Each filter targets a specific column, includes an operator, and assigns a value.
 
-In addition, multiple filters are applied together via AND and/or OR rules. AND rules are resolved first in the resulting filter expression, followed by the OR rules.
+You can apply multiple filters together through **AND** and **OR** rules. **AND** rules are resolved first in the resulting filter expression, followed by the **OR** rules.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. The specified variable must be defined through an action that generates a data table variable.|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. Define the variable through an action that generates a data table variable.|
 |Filters to apply|No|Filtering rules as defined by the user|N/A|Filtering rules applied to the defined columns|
 |Match case|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specify whether to search for case-sensitive data. Applies only in filters: Equal to, Not equal to, Contains, Does not contain, Starts with, Does not start with, Ends with, Does not end with.|
 
@@ -334,21 +335,21 @@ In addition, multiple filters are applied together via AND and/or OR rules. AND 
 
 |Exception|Description|
 |-----|-----|
-|Column name doesn't exist|​Indicates that the provided column name doesn't exist|
-|Column index is out of range|​Indicates that the provided column index is out of range|
-|Type mismatch in the cells of a column|​Indicates that two or more values in a single column are of different data type|
+|Column name doesn't exist|​The provided column name doesn't exist.|
+|Column index is out of range|​The provided column index is out of range.|
+|Type mismatch in the cells of a column|​Two or more values in a single column are of different data type.|
 
 ## <a name="mergedatatablesaction"></a> Merge data tables
 
-Merges two data tables together, specifying the merging behavior in case their number of columns is different.
+Merges two data tables together. Specify the merging behavior when the number of columns is different.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|First data table|No|[Datatable](../variable-data-types.md#datatable)||The first data table variable to work with. This is also the action's produced variable that holds the merged data table|
-|Second data table|No|[Datatable](../variable-data-types.md#datatable)||The second data table that is merged into the first data table|
-|Merge mode|N/A|Add extra columns, Ignore extra columns, Error on extra columns|Add extra columns|The merging behavior that is applied when the tables don't have the same number of columns|
+|First data table|No|[Datatable](../variable-data-types.md#datatable)||The first data table variable to work with. This variable also holds the merged data table after the action completes.|
+|Second data table|No|[Datatable](../variable-data-types.md#datatable)||The second data table that merges into the first data table.|
+|Merge mode|N/A|Add extra columns, Ignore extra columns, Error on extra columns|Add extra columns|The merging behavior that applies when the tables don't have the same number of columns.|
 
 ### Variables produced
 
@@ -358,22 +359,22 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Missing Schema|​​Indicates that the data tables don't have the same number of columns|
+|Missing Schema|​​Indicates that the data tables don't have the same number of columns.|
 
 ## <a name="joindatatableaction"></a> Join data tables
 
 Joins two data tables based on the specified join rule.
 
-In the action's built-in wizard that helps you create the join rules needed, you can set multiple rules by specifying the column from the first and the second datatable accordingly, and the comparison operator that applies between them.
+In the action's built-in wizard that helps you create the join rules you need, you can set multiple rules by specifying the column from the first and the second data table, and the comparison operator that applies between them.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|First data table|No|[Datatable](../variable-data-types.md#datatable)||The first data table variable to work with. The specified variable must be defined through an action that generates a data table variable. |
-|Second data table|No|[Datatable](../variable-data-types.md#datatable)||The second data table variable to work with. The specified variable must be defined through an action that generates a data table variable. |
+|First data table|No|[Datatable](../variable-data-types.md#datatable)||The first data table variable to work with. Define the specified variable through an action that generates a data table variable. |
+|Second data table|No|[Datatable](../variable-data-types.md#datatable)||The second data table variable to work with. Define the specified variable through an action that generates a data table variable. |
 |Join operation|N/A|Inner, Left, Full|Inner|The join operation that is used to join the two tables|
-|Join rules|No|Join rules as defined by the user|N/A|Define the columns and the operation to be used for joining the two data tables|
+|Join rules|No|Join rules as defined by the user|N/A|Define the columns and the operation to use for joining the two data tables|
 
 ### Variables produced
 
@@ -385,8 +386,8 @@ In the action's built-in wizard that helps you create the join rules needed, you
 
 |Exception|Description|
 |-----|-----|
-|Column name doesn't exist|​Indicates that the provided column name doesn't exist|
-|Column index is out of range|​Indicates that the provided column index is out of range|
+|Column name doesn't exist|​The provided column name doesn't exist.|
+|Column index is out of range|​The provided column index is out of range.|
 
 ## <a name="generatedatatablefromcsv"></a> Read from CSV text variable
 
@@ -397,13 +398,13 @@ Generates a data table from a CSV text.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |CSV text|No|[Text value](../variable-data-types.md#text-value)||The CSV text variable to read.|
-|Trim fields|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to automatically trim off the leading and trailing whitespaces of the extracted cells.|
+|Trim fields|N/A|[Boolean value](../variable-data-types.md#boolean-value)|True|Specifies whether to automatically trim the leading and trailing whitespace from the extracted cells.|
 |First line contains column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use the first row of the CSV text to set the column names of the resulting data table. Enable this option to avoid reading the names as data into the table. Subsequent actions might access the data held by the data table using column names (instead of column numbers).|
 |Get CSV fields as text|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to retrieve the content of the CSV text fields purely as text or as the closest matching type. For example, Date Time for dates and Numeric for numbers.|
 |Columns separator|N/A|Predefined, Custom, Fixed Column Widths|Predefined|Specifies whether to use a predefined columns separator, a custom separator, or fixed column widths.|
-|Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column-separator to parse the CSV text.|
-|Custom separator|No|[Text value](../variable-data-types.md#text-value)||The custom column-separator to use for parsing the CSV text.|
-|Fixed column widths|No|[Text value](../variable-data-types.md#text-value)||The fixed column-widths to use for parsing the CSV text. Separate the widths using commas, spaces, tabs, or newlines.|
+|Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column separator to parse the CSV text.|
+|Custom separator|No|[Text value](../variable-data-types.md#text-value)||The custom column separator to use for parsing the CSV text.|
+|Fixed column widths|No|[Text value](../variable-data-types.md#text-value)||The fixed column widths to use for parsing the CSV text. Separate the widths using commas, spaces, tabs, or newlines.|
 
 ### Variables produced
 
@@ -425,7 +426,7 @@ Converts a data table to a CSV text.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. The specified variable must be defined through an action that generates a data table variable.|
+|Data table|No|[Datatable](../variable-data-types.md#datatable)||The data table variable to work with. Define the variable through an action that generates a data table variable.|
 |Include column names|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether the column names of the variant specified should become the first row of the CSV text.|
 |Use custom columns separator|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a custom column separator or a predefined column separator.|
 |Separator|N/A|System default, Comma, Semicolon, Tab|System default|The column separator to use in the specified CSV text.|
@@ -451,7 +452,7 @@ Get the integral or fractional digits of a numeric value, or round up the value 
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Number to truncate|No|[Numeric value](../variable-data-types.md#numeric-value)||The number or variable that holds the numeric value to truncate/round up|
+|Number to truncate|No|[Numeric value](../variable-data-types.md#numeric-value)||The number or variable that holds the numeric value to truncate or round up|
 |Operation|N/A|Get integer part, Get decimal part, Round number|Get integer part|Specifies the operation to perform on the given number|
 |Decimal places|Yes|[Numeric value](../variable-data-types.md#numeric-value)|3|The number of decimal places to round the given number up to. Enter 0 to return an integer as a result|
 
@@ -473,8 +474,8 @@ Generate a random number or a list of random numbers that fall between a minimum
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Minimum value|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|The lower boundary for the random number(s) to generate|
-|Maximum value|Yes|[Numeric value](../variable-data-types.md#numeric-value)|100|The upper boundary for the random number(s) to generate|
+|Minimum value|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|The lower boundary for the random numbers to generate|
+|Maximum value|Yes|[Numeric value](../variable-data-types.md#numeric-value)|100|The upper boundary for the random numbers to generate|
 |Generate multiple numbers|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to generate a single random number or a list of random numbers|
 |How many numbers|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specifies how many random numbers to generate|
 |Allow duplicates|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to permit or prevent the same number from appearing more than once in the random numbers list|
@@ -518,11 +519,11 @@ Remove one or multiple items from a list.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Remove item by|N/A|Index, Value|Index|Specifies whether to remove the item at a specified index or the item(s) with a specific value|
-|At index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index number of the item to remove|
-|With value|No|[General value](../variable-data-types.md#general-value)||The item to remove|
-|Remove all item occurrences|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Removes all the occurrences that match the item specified|
-|From list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The list with items to remove|
+|Remove item by|N/A|Index, Value|Index|Specifies whether to remove the item at a specified index or the items with a specific value.|
+|At index|No|[Numeric value](../variable-data-types.md#numeric-value)||The index number of the item to remove.|
+|With value|No|[General value](../variable-data-types.md#general-value)||The item to remove.|
+|Remove all item occurrences|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Removes all the occurrences that match the specified item.|
+|From list|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The list with items to remove.|
 
 ##### Variables produced
 
@@ -532,8 +533,8 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Item index is out of range|Indicates that item index is out of range|
-|Item not found|Indicates that item doesn't exist in the list|
+|Item index is out of range|Indicates that item index is out of range.|
+|Item not found|Indicates that item doesn't exist in the list.|
 
 ## <a name="sortlistbase"></a> Sort list
 
@@ -544,7 +545,7 @@ Sort the items of a list. Use items of the same type.
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |List to sort|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The variable that holds the list to sort|
-|Sort by list item's properties|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|If the list items are objects (such are files, folders, etc.), enable this option to sort the item by a specific property. Leave this option disabled to sort the elements by their default property (for example, file objects are sorted by their full path)|
+|Sort by list item's properties|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|If the list items are objects (such as files, folders, and so on), enable this option to sort the item by a specific property. Disable this option to sort the elements by their default property (for example, file objects are sorted by their full path)|
 |First property to sort by|Yes|[Text value](../variable-data-types.md#text-value)||The name of an item's property to sort the list by. Refer to the help file for the property names of each object|
 |Sort|N/A|Ascending, Descending|Ascending|Specifies whether to sort by the first property ascending or descending|
 |Second property to sort by|Yes|[Text value](../variable-data-types.md#text-value)||The name of a second property to sort the list by|
@@ -603,13 +604,13 @@ Merge two lists into one.
 
 ## <a name="reverselist"></a> Reverse list
 
-Reverse the order of the items of a list.
+Reverse the order of the items in a list.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|List to reverse|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The list whose items order to reverse|
+|List to reverse|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md)||The list whose items order to reverse|
 
 ##### Variables produced
 
@@ -621,14 +622,14 @@ This action doesn't include any exceptions.
 
 ## <a name="removeduplicateitemsfromlist"></a> Remove duplicate items from list
 
-Remove the multiple occurrences of items in a list, so that in the resulting list each item is unique.
+Remove multiple occurrences of items in a list so that each item in the resulting list is unique.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |List to remove duplicate items from|No|[List](../variable-data-types.md#list) of [General values](../variable-data-types.md#general-value)||The list variable to remove duplicate items from|
-|Ignore text case while searching for duplicate items|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to perform case insensitive comparison of text while searching for duplicate items (only applies to lists made of text items)|
+|Ignore text case while searching for duplicate items|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to perform case-insensitive comparison of text while searching for duplicate items. This setting only applies to lists made of text items.|
 
 ### Variables produced
 
@@ -830,25 +831,25 @@ This action doesn't include any exceptions.
 Runs the provided Power Fx expression.
 
 >[!NOTE]
->This action is only available for Power Fx enabled desktop flows (preview).
+> This action is only available for Power Fx enabled desktop flows (preview).
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Expression|No|*||The Power Fx expression to run|
+| Expression | No | * | | The Power Fx expression to run |
 
 ### Variables produced
 
 This action doesn't produce any variables.
 
-##### Exceptions
+### <a name="decreasevariable_onerror"></a> Exceptions
 
 This action doesn't include any exceptions.
 
 ## <a name="assign"></a> Set variable
 
-Set the value of a new or existing variable, create a new variable or overwrite a previously created variable.
+Set the value of a new or existing variable. You can create a new variable or overwrite an existing variable.
 
 ### Input parameters
 
@@ -863,8 +864,8 @@ Set the value of a new or existing variable, create a new variable or overwrite 
 |NewVar|*|The name of the variable to set|
 
 >[!NOTE]
-> Variable names must start with either a letter or an underscore (_). After the first character, variable names can contain letters, underscores, and digits (0-9). Names are not case-sensitive, meaning myVar, myvar, and MYVAR are considered the same variable.
-> The following reserved keywords cannot be used as variable names: if, then, else, switch, case, default, loop, from, to, step, foreach, in, while, next, exit, label, goto, call, output, function, block, end, error, wait, for, set, main, and, or, xor, not, true, false, yes, no, disable, on, repeat, times, throw, action, mod, global, input, import
+> Variable names must start with either a letter or an underscore (_). After the first character, variable names can contain letters, underscores, and digits (0-9). Names aren't case-sensitive, so `myVar`, `myvar`, and `MYVAR` are considered the same variable.
+> You can't use the following reserved keywords as variable names: `if`, `then`, `else`, `switch`, `case`, `default`, `loop`, `from`, `to`, `step`, `foreach`, `in`, `while`, `next`, `exit`, `label`, `goto`, `call`, `output`, `function`, `block`, `end`, `error`, `wait`, `for`, `set`, `main`, `and`, `or`, `xor`, `not`, `true`, `false`, `yes`, `no`, `disable`, `on`, `repeat`, `times`, `throw`, `action`, `mod`, `global`, `input`, and `import`.
 
 ##### <a name="assign_onerror"></a> Exceptions
 

@@ -1,0 +1,2 @@
+> [!IMPORTANT]
+> The standalone Power Automate mobile app for iOS and Android is reaching the end of support effective August 31, 2026, and will be deprecated. The app will be removed from the App Store and Google Play, and will no longer receive updates. Your existing cloud flows aren't affected. Learn about alternatives in [Deprecation of the Power Automate mobile app](/power-platform/important-changes-coming#deprecation-of-the-power-automate-mobile-app).

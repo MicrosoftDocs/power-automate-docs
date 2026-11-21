@@ -9,7 +9,7 @@ ms.date: 12/9/2021
 ms.service: power-automate
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 search.audienceType: 
   - admin
 

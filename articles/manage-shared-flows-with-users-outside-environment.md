@@ -9,7 +9,7 @@ ms.date: 06/10/2025
 ms.custom: 
 ms.topic: concept-article
 ms.author: tatianas
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # Manage shared flows with users outside an environment

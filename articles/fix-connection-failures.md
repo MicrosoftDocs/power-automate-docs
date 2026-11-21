@@ -3,7 +3,7 @@ title: Fix connection failures in cloud flows - Power Automate
 description: Learn how to diagnose and fix broken connections, expired tokens, and authentication errors in Power Automate cloud flows.
 author: radioblazer
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.topic: troubleshooting
 ms.date: 04/09/2026
 ms.subservice: cloud-flow

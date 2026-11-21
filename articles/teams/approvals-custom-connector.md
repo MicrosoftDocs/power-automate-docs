@@ -10,7 +10,7 @@ contributors:
   - kartikraop
   - v-aangie
 ms.author: derahonuorah
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.service: power-automate
 ms.subservice: teams
 ms.topic: how-to

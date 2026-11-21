@@ -6,7 +6,7 @@ ms.service: power-automate
 ms.subservice: desktop-flow
 ms.date: 04/23/2025
 ms.author: cvassallo
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 contributors:
   - DanaMartens
 ms.topic: article

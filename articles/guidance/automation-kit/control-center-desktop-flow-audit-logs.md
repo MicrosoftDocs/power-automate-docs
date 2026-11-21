@@ -9,12 +9,14 @@ ms.custom: guidance
 ms.topic: concept-article
 ms.tgt_pltfrm: na
 ms.workload: na
-ms.date: 08/04/2023
+ms.date: 08/27/2026
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Control Center desktop flow audit logs
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 The Control Center desktop flow audit logs feature allows you to retrieve audit data for Power Automate desktops. You can configure audit logs for specific Microsoft Dataverse tables. Doing this provides valuable insights into activities related to Power Automate desktop flows.
 

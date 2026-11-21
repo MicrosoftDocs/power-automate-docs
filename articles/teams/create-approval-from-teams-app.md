@@ -15,7 +15,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 11/30/2020
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ---
 
 # Create an approval from the approvals app

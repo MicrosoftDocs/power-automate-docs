@@ -10,7 +10,7 @@ ms.subservice: process-advisor
 ms.topic: how-to
 ms.date: 04/22/2024
 ms.author: michalrosik
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.custom:
   - bap-template
   - sfi-image-nochange

@@ -1,9 +1,12 @@
 This feature currently supports the ingestion of the following:
 
-**Tables**
+**Tables and views**
 
 - **Delta tables**
     - Single *Delta table* in Fabric Lakehouse.
+- **Materialized views**
+    - Single *Materialized view* in Fabric Lakehouse.
+
 
 **Files and folders**
 

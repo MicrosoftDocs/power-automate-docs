@@ -7,7 +7,7 @@ contributors:
   - samathur
   - v-aangie
 ms.author: samathur
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to

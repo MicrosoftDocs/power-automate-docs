@@ -11,7 +11,7 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 05/01/2022
 ms.author: mapichle
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ms.custom:
   - guidance
   - sfi-image-nochange

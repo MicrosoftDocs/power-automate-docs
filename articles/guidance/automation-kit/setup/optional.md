@@ -12,10 +12,12 @@ ms.tgt_pltfrm: na
 ms.workload: na
 ms.date: 08/18/2022
 ms.author: macarrer
-ms.reviewer: angieandrews
+ms.reviewer: edoyle
 ---
 
 # Disable syncing of desktop flows script (optional)
+
+[!INCLUDE [guidance-deprecate-automation-kit](~/includes/guidance-deprecate-automation-kit.md)]
 
 By default, the Desktop flows definition script is stored inside the **Desktop Flow Definition** table. This field could contain sensitive information.
 

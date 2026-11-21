@@ -9,7 +9,7 @@ contributors:
   - kisubedi
   - v-aangie
 ms.author: jamiller
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started

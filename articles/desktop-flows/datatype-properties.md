@@ -6,9 +6,9 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 10/29/2024
+ms.date: 08/31/2026
 ms.author: matp
-ms.reviewer: matp
+ms.reviewer: smurkute
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -43,7 +43,7 @@ The data types that have properties are displayed in the following lists.
 |isEmpty   |This property is true if the variable is empty or false if it contains some characters. |
 |ToUpper   |The text of the variable written in upper case characters.                              |
 |ToLower   |The text of the variable written in lower case characters.                              |
-|Trimmed   |The text of the variable written without white characters in the begging and the end.   |
+|Trimmed   |The text of the variable without whitespace characters at the beginning or end.          |
 
 ## Dates
 
@@ -52,7 +52,7 @@ The data types that have properties are displayed in the following lists.
 |Year      |The year part of the datetime value.                      |
 |Month     |The month part of the datetime value.                     |
 |Day       |The day part of the datetime value.                       |
-|DayOfWeek |The name of the day (Sunday, Monday etch).                |
+|DayOfWeek |The name of the day, for example, Sunday or Monday.       |
 |DayOfYear |The day of the year part of the datetime value (1-365/6). |
 |Hour      |The hour part of the datetime value.                      |
 |Minute    |The minute part of the datetime value.                    |
@@ -160,7 +160,7 @@ The data types that have properties are displayed in the following lists.
 |FullName             |The full path to the file.                                |
 |Directory            |The directory where the file is stored on the FTP Server. | 
 |Name                 |The name of the file, including the extension.            |
-|NameWithoutExtension |The name of the file without its extension.message.       |
+|NameWithoutExtension |The name of the file without its extension.               |
 |Extension            |The extension of the file.                                |
 |Size                 |The size of the file in bytes.                            |
 |LastModified         |The date when the file was last modified.                 |
@@ -201,8 +201,8 @@ The data types that have properties are displayed in the following lists.
 
 |Property                |Description                                                                |
 |------------------------|---------------------------------------------------------------------------|
-|DisplayRectangleX       |The position of the top-left corner of the window in the x axel.           |
-|DisplayRectangleY       |The position of the top-left corner of the window in the y axel.           |
+|DisplayRectangleX       |The x-axis position of the top-left corner of the window.                   |
+|DisplayRectangleY       |The y-axis position of the top-left corner of the window.                   |
 |Handle                  |The handle of the browser instance.                                        |
 |HtmlDialogs             |Contains the dialogs of the current page, if they exist.                   |
 |IsAlive                 |This property is true if the browser window is alive or false if it isn't. | 
@@ -224,7 +224,7 @@ The data types that have properties are displayed in the following lists.
 |Property                |Description                                                                   |
 |------------------------|------------------------------------------------------------------------------|
 |ConnectionString        |The connection string used for the database connection.                       |
-|IsClosed                |This property is true if the browser window is closed or false if it is open. |
+|IsClosed                |This property is true if the SQL connection is closed or false if it is open. |
 
 ## PDF table info
 

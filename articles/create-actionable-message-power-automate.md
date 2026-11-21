@@ -1,15 +1,15 @@
 ---
 title: Create an actionable message in Power Automate
 description: Learn how to create an actionable message in Power Automate.
-ms.date: 03/13/2026
+ms.date: 10/22/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
-author: kisubedi
+author: radioblazer
 contributors:
-  - kisubedi
   - v-aangie
-ms.author: kisubedi
-ms.reviewer: angieandrews
+  - cyrilanderson
+ms.author: matow
+ms.reviewer: cyanderson
 ms.collection: 
     - bap-ai-copilot
 ---
@@ -20,7 +20,7 @@ Authenticated actionable messages enable you to build secure, enterprise-grade w
 
 ## Create an actionable email
 
-1. Sign in to the [Actionable Email Developer Dashboard](https://outlook.office.com/connectors/oam/publish).
+1. Sign in to the [Actionable Email Developer Dashboard](https://outlook.cloud.microsoft/actionablemessage/oam/).
 
 1. Select a provider or create a new one. Learn more about actionable message providers in [Enable Microsoft Entra ID token for Actionable Messages](/outlook/actionable-messages/enable-entra-token-for-actionable-messages).
 
@@ -29,6 +29,9 @@ Authenticated actionable messages enable you to build secure, enterprise-grade w
     This sets the token type to `AadPfatToken (PFT + POP)` automatically.
 
 1. Target URLs should contain the URL of the HTTP trigger flow, which is to be called by the actionable email. You can use `Regex`.
+
+> [!IMPORTANT]
+> For this authenticated Power Automate scenario, don't add an `Authorization` entry with an empty value to the card's `Action.Http.headers` array. Let Outlook supply the authentication header. An empty override can cause the flow invocation to return HTTP 401 (Unauthorized).
 
 ## HTTP trigger flow configuration
 

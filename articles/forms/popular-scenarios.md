@@ -2,12 +2,12 @@
 title: Common ways to use a form in a flow
 description: Learn some of the most popular ways to use a form in an automated flow.
 suite: flow
-author: kisubedi
+author: radioblazer
 ms.topic: article
-ms.date: 01/16/2026
+ms.date: 09/21/2026
 ms.update-cycle: 180-days
-ms.author: kisubedi
-ms.reviewer: angieandrews
+ms.author: matow
+ms.reviewer: cyanderson
 ms.collection: bap-ai-copilot
 search.audienceType: 
   - flowmaker
@@ -27,7 +27,7 @@ If you're not sure where to start, these are some of the most common ways people
 
 ## Send an email when there's a new form response
 
-You can turn on email notifications for the form's owners in your form settings. If you want someone else to be notified when a response is submitted, create a custom email notification with Power Automate.
+Turn on email notifications for the form's owners in your form settings. If you want someone else to be notified when a response is submitted, create a custom email notification with Power Automate.
 
 [!INCLUDE[designer-tab-experience](../includes/designer-tab-experience.md)]
 
@@ -35,21 +35,21 @@ You can turn on email notifications for the form's owners in your form settings.
 
 1. Ask Copilot to create your flow by typing the following prompt:
 
-    **when a new MS Forms response is submitted, send an email**
+    "When a new MS Forms response is submitted, send an email"
 
-      Power Automate returns a suggested flow that corresponds to what you've entered.
+    Power Automate returns a suggested flow that corresponds to what you entered.
 
     :::image type="content" source="../media/forms/copilot-ms-forms.png" alt-text="Screenshot of a prompt to send an email in Copilot.":::
 
 1. Select **Next**.
 1. Review the connections and select **Create flow** to land on the designer.
-1. On the designer, provide the missing fields in the *Send an email** action if Copilot didn't automatically populate it for you.
+1. On the designer, provide the missing fields in the **Send an email** action if Copilot didn't automatically populate it for you.
 
     :::image type="content" source="../media/forms/copilot-missing-fields.png" alt-text="Screenshot of populating fields to send an email action in Copilot.":::
 
 # [Classic designer](#tab/classic-designer)
 
-We start with a prebuilt template and customize it to help our managers plan for employees' summer vacations.
+Start with a prebuilt template and customize it to help your managers plan for employees' summer vacations.
 
 1. Search for **Microsoft Forms** in the [Power Automate template gallery](https://make.powerautomate.com/templates/), and then select the template named **Notify me in Outlook when a student completes a quiz**.
 
@@ -72,7 +72,7 @@ We start with a prebuilt template and customize it to help our managers plan for
 
 ## Send an email to the form responder
 
-You can turn on email receipts for respondents in your form settings. If you want to customize the email they receive, use Power Automate.
+Turn on email receipts for respondents in your form settings. If you want to customize the email they receive, use Power Automate.
 
 # [New designer](#tab/new-designer)
 
@@ -82,7 +82,7 @@ You can turn on email receipts for respondents in your form settings. If you wan
 
     Copilot tries configuring most of the parameters in the email action, as in the following example:
 
-    :::image type="content" source="../media/forms/copilot-email-parameters.png" alt-text="Screenshot of an Outlook send email action 'Parameters' tab in Copilot.":::
+    :::image type="content" source="../media/forms/copilot-email-parameters.png" alt-text="Screenshot of an Outlook send email action Parameters tab in Copilot.":::
 
 1. Fill in the rest of the parameters in the email action (Email body).
 
@@ -100,7 +100,7 @@ Follow the steps to [send an email when there's a new form response](#send-an-em
 
 ## Send an approval request with the form details
 
-In this example, we'll start with another prebuilt template and customize it to create a vacation approval request.
+In this example, start with another prebuilt template and customize it to create a vacation approval request.
 
 # [New designer](#tab/new-designer)
 
@@ -112,13 +112,13 @@ In this example, we'll start with another prebuilt template and customize it to 
 
     **when a new response is submitted, start an approval with megan@contoso.com and if it succeeds, send email to the responder**
 
-    Power Automate returns a suggested flow that corresponds to what you've entered.
+    Power Automate returns a suggested flow that corresponds to what you entered.
 
     :::image type="content" source="../media/forms/copilot-approval.png" alt-text="Screenshot of a flow to start an approval request with Copilot.":::
 
 1. Select **Next**.
 1. Review the connections and select **Create flow** to land on the designer.
-1. On the designer, provide the forms ID, approver's email, and configure the email action.
+1. On the designer, provide the form ID, approver's email, and configure the email action.
 
     :::image type="content" source="../media/forms/copilot-approval-parameters.png" alt-text="Screenshot of configuring the email action with Copilot.":::
 
@@ -163,21 +163,21 @@ For more examples of approval flows, go to [Manage sequential approvals](../sequ
 
 ## Add form responses to an Excel worksheet
 
-In this example, you create a flow from blank. Continuing with the scenario from our earlier examples, we'll use the flow to record employees' names and vacation dates in an Excel table when they submit their summer vacation form.
+In this example, you create a flow from blank. Continuing with the scenario from our earlier examples, use the flow to record employees' names and vacation dates in an Excel table when they submit their summer vacation form.
 
 # [New designer](#tab/new-designer)
 
 1. Create an Excel sheet if it doesn't already exist.
-1. From within the designer, simply ask copilot to create your flow by typing the following prompt:
+1. From within the designer, ask copilot to create your flow by typing the following prompt:
 
     **If approved, add the forms response to excel sheet**
 
-    Power Automate returns a suggested flow that corresponds to what you've entered.
+    Power Automate returns a suggested flow that corresponds to what you entered.
 
     :::image type="content" source="../media/forms/copilot-pane-approval.png" alt-text="Screenshot of a prompt to create an approval request in Copilot.":::
 
-1. Choose the Excel sheet of your choice.
-1. In the respective column fields, choose the response token from MS forms trigger.
+1. Choose the Excel sheet that you want to use.
+1. In the respective column fields, choose the response token from the Microsoft Forms trigger.
 
     For example, choose the **vacation start** token in the **Vacation start** field of the Excel action.
 
@@ -196,7 +196,7 @@ In this example, you create a flow from blank. Continuing with the scenario from
 
     - Search for **profile** and select **Office 365 Users**.
     - Select **Get user profile (V2)**.
-    - In the **User (UPN)** box, select the dynamic content **Responders' Email**. This will look up the responder's name by the email address on the form.
+    - In the **User (UPN)** box, select the dynamic content **Responders' Email**. This action looks up the responder's name by the email address on the form.
 
 1. Add this step to your flow:
 
@@ -218,7 +218,7 @@ You can use a template to [add an approval step before a form response is added 
 
 ## Get an attachment from a form and send it in an email
 
-In this example, we'll create another flow from blank. We'll use the flow to create a share link for a file that's uploaded on our summer vacation form, and then email the link.
+In this example, you create a flow from blank. Use the flow to create a share link for a file that's uploaded on your summer vacation form, and then email the link.
 
 :::image type="content" source="../media/forms/attachment-flow-form-upload.png" alt-text="Screenshot of a file upload option on a form.":::
 
@@ -287,18 +287,18 @@ In this example, we'll create another flow from blank. We'll use the flow to cre
 
 ## Convert the URL to a clickable link
 
-To make the URL of the shared file a clickable link in the email, you'll need to use the HTML editor and an anchor tag:
+To make the URL of the shared file a clickable link in the email, use the HTML editor and an anchor tag:
 
 1. In the email body toolbar, select the **HTML view** icon (**</>**).
 1. Enclose the dynamic content **Web URL** and **name** in an anchor tag to turn them into a link and the link title, respectively.
 
-In this example, you entered the following HTML in the email body, where text in curly brackets indicates the dynamic content:
+In this example, you enter the following HTML in the email body, where text in curly brackets indicates the dynamic content:
 
 ```html
 <a href="{WebURL}">{name}</a>
 ```
 
-Here's an example:
+The following example shows how to specify a different owner:
 
 :::image type="content" source="../media/forms/attachment-flow-share-link-step-final2.png" alt-text="Screenshot of an Outlook send email action in a flow under construction, with custom information and dynamic content highlighted in HTML view.":::
 

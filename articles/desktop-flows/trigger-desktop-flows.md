@@ -5,12 +5,13 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 07/22/2025
+ms.date: 05/05/2026
 ms.author: pefelesk
 ms.reviewer: matp
 contributors:
   - rpapostolis
   - DanaMartens
+  - cochamos
 search.audienceType: 
   - flowmaker
   - enduser
@@ -89,5 +90,39 @@ To trigger a desktop flow from a cloud flow:
 
 - We currently support up to 70 desktop flows runs per minute for every connection.
 - Cancelling a parent cloud flow doesn't stop its child desktop flows if the **Asynchronous Pattern** is disabled under the 'Run a flow built with Power Automate for desktop' action settings.
+
+
+
+## Use video logs for troubleshooting unattended desktop flows
+Video logs provide visual context when an unattended desktop flow run fails. When enabled, Power Automate records the last 60 seconds of on-screen activity before the failure, includes optional closed captions (CC) aligned with the executed actions, and saves the video for review.
+This feature helps diagnose complex issues such as UI element detection failures, timing problems, or unexpected OS prompts that text logs alone can’t explain.
+
+### Prerequisites
+
+- Power Automate for desktop version 2.66 or later
+- A cloud flow that uses the Run a flow built with Power Automate for desktop connector
+- Run mode configured as Unattended
+
+### Enable video logs
+To enable video logging for unattended runs:
+
+Steps:
+- In Power Automate, create or edit your cloud flow.
+- Add the action: Run a flow built with Power Automate for desktop.
+- Under Run mode, select Unattended.
+- Expand Advanced parameters.
+- Turn on Video logs.
+
+### How video logging works
+- Records the last 60 seconds before a failure occurs during an unattended run.
+- Saves recordings locally
+- Optionally displays closed captions that map to flow actions currently being executed
+
+### Where videos are stored
+Default path: %localappdata%\Microsoft\Power Automate Desktop\VideoLogs
+
+> [!NOTE]
+> Storage location and other behaviors (e.g., disable/enable video generation, subtitles, and duration) can be customized using registry keys.
+> Refer to [Desktop flows governance](governance.md) for more info.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

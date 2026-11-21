@@ -6,12 +6,13 @@ contributors:
   - rosikm
   - donums
   - v-aangie  
+  - cyrilanderson
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: how-to
-ms.date: 02/10/2025
+ms.date: 08/28/2026
 ms.author: michalrosik
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 search.audienceType: 
   - flowmaker
   - enduser
@@ -19,7 +20,7 @@ search.audienceType:
 
 # Tutorial: Get started with the process mining capability
 
-This tutorial allows you to experience the process mining capability with sample data. In this tutorial, you create a process, import data, and then analyze it.
+This tutorial helps you experience the process mining capability with sample data. In this tutorial, you create a process, import data, and then analyze it.
 
 > [!NOTE]
 >
@@ -38,7 +39,7 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 > [!NOTE]
 >
-> If you encounter an error message while attempting to create and analyze a process, it may be due to a missing security role. To resolve this, please contact the administrator of your environment and request that they assign you the **Environment Maker** security role.
+> If you encounter an error message while attempting to create and analyze a process, it might be due to a missing security role. To resolve this issue, contact the administrator of your environment and request the **Environment Maker** security role.
 
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. Select your environment.
@@ -77,19 +78,19 @@ The sample data in this tutorial is for illustration only and is fictitious. No 
 
 ## Analyze a process
 
-Let's take the analysis of our process beyond KPIs. We use the Power Automate Process Mining desktop app, where you can edit and analyze your processes created in the process mining capability.
+Let's take the analysis of our process beyond KPIs. Use the Power Automate Process Mining desktop app, where you can edit and analyze your processes created in the process mining capability.
 
 1. From the command bar of the analytics report page, select **Download Process Mining app** to download it.
 1. On the toolbar, select the environment from the top right.
 1. Search for the process you created with the process mining capability in Power Automate (**AP Refunds Process**).
-1. To display the default view, select **Default**.
+1. Select **Default** to display the default view.
 
     Based on your settings, the process model is:
 
     - Downloaded to your local computer and analyzed locally
     - Kept and analyzed in the cloud (preview). You're notified about the availability of this option with message on top of your application.
 
-    :::image type="content" source="media/process-mining-tutorial/papm-desktop-message-marked.png" alt-text="Screenshot of the 'keep and analyze in cloud' message.":::
+    :::image type="content" source="media/process-mining-tutorial/papm-desktop-message-marked.png" alt-text="Screenshot of the keep and analyze in cloud message.":::
 
     Learn more about setting the new option in [Application settings](minit/options.md).
 
@@ -121,7 +122,7 @@ Let's take the analysis of our process beyond KPIs. We use the Power Automate Pr
 
 ## Compare paths with different views
 
-We want to compare the paths that have this **Refund With Special Voucher** step with the paths that don't have this step, but instead have another step called **Refund With Standard Voucher**. Let's filter for paths that have **Refund With Special Voucher** and *not* **Refund With Standard Voucher**. Let's also filter for paths *with* **Refund With Standard Voucher** and *without* **Refund With Special Voucher**.
+You want to compare the paths that have this **Refund With Special Voucher** step with the paths that don't have this step, but instead have another step called **Refund With Standard Voucher**. Filter for paths that have **Refund With Special Voucher** and *not* **Refund With Standard Voucher**. Also, filter for paths *with* **Refund With Standard Voucher** and *without* **Refund With Special Voucher**.
 
 ### Create the 'Refund With Special Voucher' view
 
@@ -129,7 +130,7 @@ We want to compare the paths that have this **Refund With Special Voucher** step
 
 1. On the command bar, select **Add filter** > **Attributes**. 
 
-1. This time, select **Does not include** from the **Filter result** dropdown menu.
+1. Select **Does not include** from the **Filter result** dropdown menu.
 
 1. On the **List** tab, select **Refund With Standard Voucher** to place it in the **holds any of the values** field.
 
@@ -191,26 +192,24 @@ Based on insights we derived from this analysis, let's summarize our findings, d
 
 - **Refund With Special Voucher**:
 
-    - Takes place only a few times in the process compared to other steps.
-
-    - Has a relatively low amount of money flowing through it.
-
-    - Significantly increases the mean duration of the entire process.
+  - Occurs only a few times in the process compared to other steps.
+  - Has a relatively low amount of money flowing through it.
+  - Significantly increases the mean duration of the entire process.
 
 - **Refund With Standard Voucher**:
 
-    - The cases with this step also have the invoices being subsequently rejected. This causes rework and adds some time to the mean duration of the process.
+  - The cases with this step also have the invoices being subsequently rejected. This rejection causes rework and adds time to the mean duration of the process.
 
 ### Considerations for choosing a special or standard voucher
 
-This organization has two ways to make refunds using vouchers: **Refund With Special Voucher** or **Refund With Standard Voucher**. The latter might sometimes cause some rework because some of those invoices are subsequently rejected. Alternatively, using the special voucher never causes invoice rejection. This might make it seem like using a special voucher should be the consistent course of action.
+This organization has two ways to make refunds by using vouchers: **Refund With Special Voucher** or **Refund With Standard Voucher**. The latter might sometimes cause rework because some of those invoices are subsequently rejected. Alternatively, using the special voucher never causes invoice rejection. This condition might make it seem like using a special voucher should be the consistent course of action.
 
-However, having the possibility of the invoice being rejected through a standard voucher saves the organization more time than using a special voucher. This never causes the invoice to be rejected&mdash;the difference in mean duration is approximately 13.79 hours.
+However, having the possibility of the invoice being rejected through a standard voucher saves the organization more time than using a special voucher. This condition never causes the invoice to be rejected&mdash;the difference in mean duration is approximately 13.79 hours.
 
 ### Recommendation
 
 An organization should focus on using standard vouchers versus special vouchers because just a few special vouchers can add much time to the process.
 
-An organization should do further analysis to determine why using the standard invoice often causes invoice rejection. If they're able to uncover a remedy for this, the organization can implement this to further improve the process.
+An organization should do further analysis to determine why using the standard invoice often causes invoice rejection. If they're able to uncover a remedy for this condition, the organization can implement this remedy to further improve the process.
 
 To learn more about how to take advantage of the advanced capabilities of Power Automate Process Mining, go to [Overview of Power Automate Process Mining](minit/minit-desktop-application-overview.md).

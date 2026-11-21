@@ -4,7 +4,7 @@ description: Learn how to use flows to perform bound and unbound actions in Micr
 suite: flow
 author: kewaiss
 ms.author: cgarty
-ms.reviewer: angieandrews
+ms.reviewer: cyanderson
 ms.topic: how-to
 ms.date: 10/09/2024
 search.audienceType: 
