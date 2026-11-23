@@ -1,16 +1,17 @@
 ---
 title: AI Builder actions reference
 description: Learn about the available AI Builder action.
-author: Mattp123
+author: cochamos
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 08/24/2026
-ms.author: matp
-ms.reviewer: cochamos
+ms.date: 11/23/2026
+ms.author: cochamos
+ms.reviewer: smurkute
 contributors:
   - jpapadimitriou
   - yiannismavridis
+  - shwetamurkute
 search.audienceType: 
   - flowmaker
   - enduser
@@ -20,7 +21,7 @@ search.audienceType:
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
 
-The AI Builder group contains the **Create text with GPT (preview)** action that creates text using the GPT language model, as well as actions in preview to analyze text sentiment, detect the language of a text, or translate text.
+The AI Builder group contains the **Create text with GPT (preview)** action that creates text using the GPT language model, as well as actions in preview to analyze text sentiment, detect the language of a text, or translate text. Other actions in preview include extracting standard entities, processing documents and recognizing text in an image or document.
 
 > [!IMPORTANT]
 > - This is a preview feature.
@@ -35,9 +36,9 @@ The AI Builder group contains the **Create text with GPT (preview)** action that
 > Ensure that flows that use the **Create text with GPT (preview)** action check those two points. If either step is omitted, the respective flow(s) will result in an error.
 >
 > Also note the following:
-> - This capability is in process of rolling out and might not be available in your region yet.
+> - This capability is rolling out and might not be available in your region yet.
 > - This capability might be subject to usage limits or capacity throttling.
-> - The GPT model might make mistakes or have biases and other undesirable content. Therefore, to ensure that the AI-generated content is accurate, appropriate, and free from bias, always have humans review it.
+> - The GPT model might make mistakes or have biases and other undesirable content. To ensure that the AI-generated content is accurate, appropriate, and free from bias, always have humans review it.
 > - This capability is under gated access. Apply for consideration to take part in the trial. To apply, go to [Limited preview request](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR2LogRPRiTJDo1Rd8KnmcFRUMzlLTDZVQlJKSzNIWkVCMzE0VDFYVzk2QS4u).
 
 After deploying the action, select **Create instructions** to open the instructions wizard. The wizard allows you to create instructions by using existing templates or start from blank.
@@ -47,7 +48,7 @@ Learn more about the Text generation model (preview) in [the Text generation mod
 :::image type="content" source="media/aibuilder/create-text-with-gpt.png" alt-text="Screenshot of the Create instructions button in the Create text with GPT action.":::
 
 >[!IMPORTANT]
-> You must add either a **Display input dialog** or **Display message** action and pass either of the generated outputs of the **Create text with GPT (preview)** action (**PredictV2Response**, **PredictV2TextResponse**) in its body. This will require a human review of the generated messages.  If either of those steps is omitted, the respective flow(s) will result in an error.
+> You must add either a **Display input dialog** or **Display message** action and pass either of the generated outputs of the **Create text with GPT (preview)** action (**PredictV2Response**, **PredictV2TextResponse**) in its body. This requirement ensures a human reviews the generated messages. If you omit either step, the flow results in an error.
 
 Example approach: Add a **Display message** action with Yes - No buttons to require a human review of the generated content. An error appears when this action doesn't exist. Learn more about the **Display message** action in [Message boxes actions](display.md).
 
@@ -96,8 +97,8 @@ Analyze the sentiment of text by using AI Builder.
 
 |Argument|Type|Description|
 |-----|-----|-----|
-|SentimentAnalysisResponse|[Connector object](../variable-data-types.md#connector-object)||
-|SentimentAnalysisTextResponse|[Text](../variable-data-types.md#text-value)||
+|SentimentAnalysisResponse|[Connector object](../variable-data-types.md#connector-object)|The full response from AI Builder in JSON format|
+|SentimentAnalysisTextResponse|[Text](../variable-data-types.md#text-value)|The predicted sentiment of the text (positive, negative, neutral, or mixed|
 
 ### <a name="sentimentanalysis_onerror"></a> Exceptions
 
@@ -119,10 +120,80 @@ Detect the natural language of input text by using AI Builder.
 
 |Argument|Type|Description|
 |-----|-----|-----|
-|LanguageDetectionResponse|[Connector object](../variable-data-types.md#connector-object)||
-|LanguageDetectionTextResponse|[Text](../variable-data-types.md#text-value)||
+|LanguageDetectionResponse|[Connector object](../variable-data-types.md#connector-object)|The full response from AI Builder in JSON format|
+|LanguageDetectionTextResponse|[Text](../variable-data-types.md#text-value)|The detected language code (e.g., en, fr)|
 
 ### <a name="languagedetection_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Endpoint failure|Indicates an endpoint failure|
+
+## <a name="entityextraction"></a> Extract standard entities (preview)
+
+Extract standard entities from text using AI Builder.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|Text to analyze|No|[Text value](../variable-data-types.md#text-value)||The text to extract standard entities from|
+|Language|No|[Text value](../variable-data-types.md#text-value)||The language code of the text to analyze, for example en or fr|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|EntityExtractionResponse|[Connector object](../variable-data-types.md#connector-object)|The full API response from the AI Builder entity extraction|
+
+### <a name="entityextraction_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Endpoint failure|Indicates an endpoint failure|
+
+## <a name="processdocuments"></a> Process documents (preview)
+
+Extract information from documents using an AI Builder document processing model.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|AI Builder model|N/A|[Text value](../variable-data-types.md#text-value)||The ID of the AI Builder document processing model|
+|Form type|N/A|JPEG Image, PDF Document, PNG Image||The MIME type of the form content, for example application/pdf|
+|Form|No|[Text value](../variable-data-types.md#text-value)||The base64-encoded content of the form to process|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|ProcessDocumentsResponse|[Connector object](../variable-data-types.md#connector-object)|The full API response from AI Builder document processing|
+
+### <a name="processdocuments_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Endpoint failure|Indicates an endpoint failure|
+
+## <a name="textrecognition"></a> Recognize text in image or document (preview)
+
+Recognize text in a base64-encoded image or document using AI Builder OCR.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+|File|No|[Text value](../variable-data-types.md#text-value)||The base64-encoded image or document content. The value must already be encoded as base64.|
+
+### Variables produced
+
+|Argument|Type|Description|
+|-----|-----|-----|
+|TextRecognitionResponse|[Connector object](../variable-data-types.md#connector-object)|The full API response from the AI Builder text recogntion|
+|TextRecognitionTextResponse|[Text](../variable-data-types.md#text-value)|The full text recognized in the image or document|
+
+### <a name="textrecognition_onerror"></a> Exceptions
 
 |Exception|Description|
 |-----|-----|
@@ -144,8 +215,8 @@ Translate text to a specified language using AI Builder.
 
 |Argument|Type|Description|
 |-----|-----|-----|
-|TextTranslationResponse|[Connector object](../variable-data-types.md#connector-object)||
-|TextTranslationTextResponse|[Text](../variable-data-types.md#text-value)||
+|TextTranslationResponse|[Connector object](../variable-data-types.md#connector-object)|The full response from AI Builder in JSON format|
+|TextTranslationTextResponse|[Text](../variable-data-types.md#text-value)|The translated text|
 
 ### <a name="texttranslation_onerror"></a> Exceptions
 

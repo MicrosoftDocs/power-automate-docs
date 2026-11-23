@@ -1,14 +1,14 @@
 ---
 title: Manage desktop flows
 description: Learn how to manage desktop flows in the Power Automate portal.
-author: mattp123
+author: shwetamurkute
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 08/23/2026
+ms.date: 11/23/2026
 ms.update-cycle: 180-days
 ms.author: appapaio
-ms.reviewer: joshuapa
+ms.reviewer: smurkute
 contributor: yiannismavridis
 search.audienceType: 
   - flowmaker
@@ -19,9 +19,9 @@ ms.collection:
 
 # Manage desktop flows
 
-After creating desktop flows, you might need to view, edit, or check their status. To achieve all these tasks, go to **My flows** > **Desktop flows** in the Power Automate portal.
+After you create desktop flows, you might need to view, edit, or check their status. To achieve all these tasks, go to **My flows** > **Desktop flows** in the Power Automate portal.
 
-## See a list with desktop flows
+## See a list of desktop flows
 
 1. Sign in to the [Power Automate portal](https://powerautomate.microsoft.com).
 
@@ -57,7 +57,7 @@ To set the screen resolution for unattended runs, open the desktop flow’s deta
 > - If the **Display resolution for unattended runs** setting is on and the desktop flow calls other desktop flows, all flows run using the resolution set in the parent flow. Ensure this resolution works for all flows to avoid issues.
 > - If you're using the [Reuse Windows session for unattended runs](run-unattended-desktop-flows.md#reuse-a-windows-session-in-unattended-mode) feature, the selected resolution applies to the reused session too.
 
-## Generate flow description using Copilot (preview)
+## Generate flow description by using Copilot (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
 
@@ -65,14 +65,14 @@ Generate a flow description for flows by selecting a button. Copilot analyzes th
 
 > [!IMPORTANT]
 >
-> - This is a preview feature.
+> - This feature is in preview.
 > - Preview features aren't meant for production use and might have restricted functionality. Microsoft releases these features before an official release so that customers can get early access and provide feedback.
 > - To understand the capabilities and limitations of this feature, go to [FAQ for generating a flow description using Copilot](../faqs-copilot-generate-description-from-flow-properties.md).
 
 ### Prerequisites
 
-- Currently, the generate flow description using Copilot functionality is only available in environments located in the United States.
-- Currently, the generate flow description using Copilot functionality is only available for users with a work or school account.
+- Currently, the generate flow description by using Copilot functionality is only available in environments located in the United States.
+- Currently, the generate flow description by using Copilot functionality is only available for users with a work or school account.
 
 ### Use Copilot to generate the description
 
@@ -80,12 +80,12 @@ To generate a flow description, go to the details of the flow where you want to 
 
 ### Help us improve this feature
 
-Send feedback by selecting the thumb up or thumb down icon underneath the AI-generated content. Once you do, a dialog box appears, which you can use to submit feedback to Microsoft.
+Send feedback by selecting the thumb up or thumb down icon under the AI-generated content. When you select the icon, a dialog box appears that you can use to submit feedback to Microsoft.
 
 :::image type="content" source="media/pad_generative_answers/feedback_dialog1.png" alt-text="Image that shows where you can send your feedback about copilot in Power Automate for desktop.":::
 
 > [!NOTE]
-> If you can't see the dialog box, your Power Platform admin might have turned it off. More information: [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality)
+> If you can't see the dialog box, your Power Platform admin might have turned it off. For more information, see [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality).
 
 ### Disabling the generate flow description using Copilot functionality
 
@@ -116,6 +116,12 @@ Follow these steps to share a desktop flow:
 1. Go to **My flows** > **Desktop flows**.
 1. Select the desktop flow you want to share, and then select **Share**.
 1. Select **Add people**, and then enter the name of the person in your organization with whom you want to share the desktop flow.
+
+Alternatively:
+1. Sign in to the console of Power Automate for desktop.
+1. Under the **Flows** tab, select a desktop flow from the list.
+1. Select that flow's context icon, and then select **Share**.
+1. In the text field for adding people, enter the name of the person in your organization with whom you want to share the desktop flow.
 
    > [!NOTE]
    >
