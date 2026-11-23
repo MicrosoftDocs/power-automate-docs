@@ -3,7 +3,7 @@ title: Governance in Power Automate for desktop
 description: Learn how to configure Power Automate for desktop using Windows registry keys.
 author: NikosMoutzourakis
 ms.topic: article
-ms.date: 10/28/2026
+ms.date: 11/23/2026
 ms.update-cycle: 180-days
 ms.author: nimoutzo
 ms.reviewer: smurkute
@@ -134,6 +134,22 @@ Certificates ensure the security of your connections to online data sources. Use
 - **0**: No check - Power Automate for desktop doesn't check the revocation information. All valid certificates are allowed through.
 - **1**: Basic check (default) - Power Automate for desktop rejects only certificates that are revoked. Certificates without revocation information are allowed through. This check is important for some organizations with corporate proxy services.
 - **2**: Comprehensive check – Power Automate for desktop rejects both certificates that are revoked and certificates without revocation information.
+
+## Enable cloud-attended and unattended mode to run actions that require elevated or admin rights in Power Automate for desktop
+
+Use the following registry entry to allow cloud-attended and unattended runs with elevated or admin rights in Power Automate for desktop.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| `HKEY_LOCAL_MACHINE` | `SOFTWARE\WOW6432Node\Microsoft\Power Automate Desktop\Global` | `LaunchAgentAsAdmin` | DWORD |
+
+***Value***
+
+- **0 (or absent)**: Disabled (default).
+- **1**: Enabled.
+
+> [!NOTE]
+> Elevation is applied at **agent launch**, so it's all or nothing. When you enable it, the **entire** agent process runs elevated, not just the action that needs it.
 
 ## Allow users to select an organization in Power Automate for desktop
 
@@ -387,6 +403,18 @@ You can use the following registry entry to configure the cleanup of local flow 
 
 - **1**: Flow run action details stored in the `Actions.log` file aren't deleted from the local disk after the run is completed.
 
+## Configure flow run action logs path for designer, console, and machine runtime runs in Power Automate for desktop
+
+You can use the following registry entry to relocate the `Actions.log` file for the designer, console, and machine runtime, through one machine-wide registry value. Run definitions, shipped definitions, binaries and resources remain in their original locations.
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| `HKEY_LOCAL_MACHINE` | `SOFTWARE\Microsoft\Power Automate Desktop` | `ExecutionLogsPath` | REG_SZ |
+
+***Value***
+
+- **An absolute directory path without surrounding quotes**: The `Actions.log` file is relocated to the provided path.
+
 ## Prevent Power Automate for desktop from running flows containing cloud connectors
 
 You can use the following registry entry to disable the execution of flows containing cloud connectors.
@@ -413,6 +441,19 @@ Use the following registry entry to govern which example categories are visible,
 - **Excel Automation, Web Automation, Desktop Automation, Datetime Handling, PDF Automation, Text Manipulation, Scripting, Flow Control**: Hides specific categories.
 
 Multiple values can be set to hide multiple categories.
+
+## Configure Power Automate for desktop to hide the Developer tools option
+
+Use the following registry entry to opt out from the Developer tools functionality, hiding the respective option in Power Automate for desktop
+
+| Hive | Key | Name | Type |
+|---|---|---|---|
+| `HKEY_LOCAL_MACHINE` | `SOFTWARE\Microsoft\Power Automate Desktop` | `DisableDevTools` | DWORD |
+
+***Value***
+
+- **0 (or absent)**: The Developer tools functionality is available in Power Automate for desktop.
+- **1**: The Developer tools functionality is hidden in Power Automate for desktop.
 
 ## Improve troubleshooting of the Power Automate troubleshooter
 

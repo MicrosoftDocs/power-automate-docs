@@ -1,19 +1,20 @@
 ---
 title: Power Automate console
 description: See the main functionality of the Power Automate console.
-author: mattp123
+author: yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: article
-ms.date: 08/23/2026
+ms.date: 11/23/2026
 ms.update-cycle: 180-days
 ms.author: iomavrid
-ms.reviewer: joshuapa
+ms.reviewer: smurkute
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
 - PetrosFeleskouras
 - DanaMartens
+- shwetamurkute
 search.audienceType: 
   - flowmaker
   - enduser
@@ -71,6 +72,8 @@ You can also set a hotkey combination to pause or resume a running flow, and ano
 
 By default, Power Automate prompts you to confirm triggering a desktop flow via URL or desktop shortcut. Use the **Display confirmation dialog when invoking flows externally** option to disable this functionality. You can find more information about external links in [Run desktop flows via URL or desktop shortcuts](run-desktop-flows-url-shortcuts.md).  
 
+Under the **Updates** tab, you can check whether there's a new version available or the latest version is already installed.
+
 To decide whether Microsoft collects diagnostic data to improve user experience, go to the **Data collection** settings tab.
 
 > [!IMPORTANT]
@@ -78,9 +81,9 @@ To decide whether Microsoft collects diagnostic data to improve user experience,
 
 ## Desktop flow properties
 
-To review the properties of a desktop flow, right-click it and select **Properties**, or choose the same option from the corresponding shortcut. In the **General** tab, you can edit the name and description of the flow, set up a keyboard shortcut to trigger the flow locally, manage the **Tags (preview)** associated with the flow, define the **On error** behavior of the flow run, and determine whether the desktop flow should **time out** after a set period.
+To review the properties of a desktop flow, right-click it and select **Properties**, or choose the same option from the corresponding shortcut. In the **General** tab, you can edit the name and description of the flow, set up a keyboard shortcut to trigger the flow locally, manage the **Tags** associated with the flow, define the **On error** behavior of the flow run, and determine whether the desktop flow should **time out** after a set period.
 
-[**Tags (preview)**](tags.md) are labels that you can apply to desktop flows to group and associate them together in an easy and straightforward way.
+[**Tags**](tags.md) are labels that you can apply to desktop flows to group and associate them together in an easy and straightforward way.
 
 If you enable the **Add screenshot to logs** option, the system captures a screenshot when a flow run fails and uploads it to the [flow run action details](monitor-run-details.md#actions-details).
 
@@ -89,8 +92,8 @@ The **Flow timeout** property is disabled by default. If you enable it, specify 
 > [!IMPORTANT]
 >
 > - Access to the flow run logs is a premium feature, which requires a [Power Automate subscription](https://powerautomate.microsoft.com/pricing/).
-> - The **Tags (preview)** functionality and the **Flow timeout** property are only available for users with a work or school account.
-> - The **Tags (preview)** functionality, as well as the **Add screenshot to logs** and **Flow timeout** properties, apply only to flows stored in [Power Automate v2 schema](schema.md).
+> - The **Tags** functionality and the **Flow timeout** property are only available for users with a work or school account.
+> - The **Tags** functionality, as well as the **Add screenshot to logs** and **Flow timeout** properties, apply only to flows stored in [Power Automate v2 schema](schema.md).
 
 In the **Details** tab, you can see the owner, the creation and last modification dates, the flow ID, and the flow’s storage schema version in Dataverse. Learn more about the enhanced desktop flows schema in [Power Automate v2 schema](schema.md).
 

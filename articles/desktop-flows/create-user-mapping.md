@@ -5,11 +5,12 @@ author: YiannisMavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 08/25/2026
+ms.date: 11/23/2026
 ms.author: iomavrid
-ms.reviewer: dmartens
+ms.reviewer: smurkute
 contributors:
   - DanaMartens
+  - shwetamurkute
 search.audienceType:
   - flowmaker
   - enduser
@@ -19,7 +20,7 @@ ms.custom:
   - ai-seo-date:08/24/2026
 ---
 
-# Create a user mapping credential (Preview)
+# Create a user mapping credential
 
 This feature lets you map user credentials to your applications used in robotic process automation (RPA) desktop flows.
 
@@ -50,7 +51,7 @@ To create a mapping between users and app credentials used in desktop flows, fol
 ## Create a user mapping
 
 1. From the left navigation, select **Credentials**. If this option isn't visible, select **More** > **Discover all**, and then select **Credentials** within the **Data** section.
-1. Select **New** > **Mapping** > **Mapping between user and application credential(s) (Preview)**.
+1. Select **New** > **Mapping** > **Mapping between user and application credential(s)**.
 1. In the wizard, enter a credential name and a brief description, and then select **Next**.
 1. Define the default value of your mapping that will be used when a user account doesn't have a mapped credential.
 1. For each user, select one credential to use in the desktop flow through the `Get credential` action to sign in to the flow's target application.

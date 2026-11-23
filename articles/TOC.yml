@@ -447,7 +447,7 @@
       href: ./desktop-flows/copilot-in-power-automate-for-desktop.md
     - name: Create desktop flows using Record with Copilot (deprecated)
       href: ./desktop-flows/create-flow-using-ai-recorder.md
-    - name: Repair flow automation errors (preview)
+    - name: Repair flow automation errors (to be deprecated)
       href: ./desktop-flows/repair-at-runtime.md
     - name: Self-healing (preview)
       href: ./desktop-flows/self-healing.md

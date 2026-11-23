@@ -1,7 +1,7 @@
 ---
 title: Self-healing (preview)
 description: AI‑powered self‑healing when UI or web actions fail at runtime, allowing flows to continue instead of stopping on errors 
-ms.date: 10/28/2026
+ms.date: 11/23/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: yiannismavridis
@@ -47,11 +47,11 @@ When a supported UI or browser automation action fails with an *Element not foun
 
 **Retry policy → Self-healing (preview) → 'Set variable / Run subflow' rules → Continue flow run / Throw error**
 
-If self-healing is enabled and invoked upon an error during runtime, Power Automate for desktop captures contextual information, including a screenshot of the missing UI element, the title of its parent window, and the full desktop image, so that it can identify the most likely intended element and recapture its selector.
+If self-healing is enabled and invoked upon an error during runtime, Power Automate for desktop captures contextual information, including a screenshot of the missing UI element, the title of its parent window, and an image of that window, so that it can identify the most likely intended element and recapture its selector.
 If the repair succeeds, the flow continues. If it fails, normal error handling resumes.
 
 > [!NOTE]
-> Two large language models are currently used in combination to power self-healing, GPT‑4.1 mini and Claude Sonnet 4.5.
+> Self-healing is powered by the GPT‑6 Luna model.
 
 > [!IMPORTANT]
 > Self-healing is a runtime-only capability. It applies to console and cloud (attended and unattended) runs and has no effect during designer runs.
@@ -68,15 +68,7 @@ Currently, Self-healing:
 
 ### Required admin configuration
 
-Self-healing relies on generative AI models and requires all of the following settings to be enabled:
-
-- In Microsoft 365 admin center, go to [Copilot > Settings](https://admin.cloud.microsoft/?#/copilot/settings/ViewAll), and then select **AI providers operating as Microsoft subprocessors**. Enable the **Anthropic** provider as a subprocessor for your organization. To learn more about AI subprocessors, see the article [Anthropic as a subprocessor for Microsoft Online Services](/copilot/microsoft-365/connect-to-ai-subprocessor).
-
-  > [!NOTE]
-  > * Microsoft enables Anthropic models by default for most customers in commercial cloud (excluding EU/EFTA and UK).
-  > * Anthropic models aren't currently available for use in government clouds (GCC, GCC High, DoD) or sovereign clouds.
-
-- In Power Platform admin center, go to [Copilot > Settings](https://admin.powerplatform.microsoft.com/copilot/settings), and then under the Power Platform section, expand **External models** and enable **Anthropic** as a subprocessor at environment or environment group level. To learn more about external language models, see the article [Allow external language models for generative responses](/power-platform/admin/allow-llm-generative-responses).
+Self-healing relies on generative AI and requires the following settings to be enabled:
 
 - In Power Platform admin center, go to [**Manage** > **Environments**](https://admin.powerplatform.microsoft.com/manage/environments). Select your environment so that you can see its details. In the **Generative AI features** card, select **Edit**. The **Generative AI features** pane is displayed. Review the terms of use and select the **Move data across regions** checkbox. To learn more about cross-region data movement, see the article [Move data across regions for Copilots, AI agents, and generative AI features](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features).
 
@@ -105,8 +97,7 @@ Self-healing relies on generative AI models and requires all of the following se
 > [!NOTE]
 > Because self-healing uses generative AI, it might occasionally identify an unintended UI element.
 
-## Known limitations
+## Self-healing logs
 
-- The Power Automate portal doesn't currently surface self-healing details in the action-level logs of the flow runs where self-healing was invoked. In the desktop flow run page, you can find a summary of the self-healing activity that corresponds to that specific run, including details from up to three successful self-healing attempts.
+The Power Automate portal surfaces self-healing details in the action-level logs of the flow runs where self-healing was invoked, mentioning the selector that was used per case in each successful self-healing attempt. In the desktop flow run page, you can also find a summary of the self-healing activity that corresponds to that specific run, including details from up to three successful self-healing attempts.
 
-  Alternatively, you can use this [registry setting](/power-automate/desktop-flows/governance#configure-power-automate-for-desktop-to-prevent-cleanup-of-flow-run-action-details) when needed, to easily retrieve action logs, including the self-healing activity, through local log files on the machine that hosted the flow run. In the action logs, a new property called `repairWithAIInfo` displays if a repair attempt was made, whether it was successful or failed, and the AI-generated selector that was used at runtime.
