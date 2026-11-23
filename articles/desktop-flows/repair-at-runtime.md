@@ -1,7 +1,7 @@
 ---
-title: Repair Flow Automation Errors (preview)
+title: Repair Flow Automation Errors (to be deprecated)
 description: Users can automatically or manually fix errors in UI elements that aren't located during the execution of a UI or browser automation task.
-ms.date: 10/28/2026
+ms.date: 11/19/2026
 ms.update-cycle: 180-days
 ms.topic: how-to
 author: nikosmoutzourakis
@@ -11,23 +11,20 @@ ms.collection: bap-ai-copilot
 contributors:
 - rpapostolis
 - shwetamurkute
+- yiannismavridis
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-title
   - ai-seo-date:12/12/2024
 ---
 
-# Repair flow automation errors (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+# Repair flow automation errors (to be deprecated)
 
 This feature uses Copilot to find and repair the selectors of the required UI elements on the screen.
 Users simply need to review and approve Copilot's suggestions. Alternatively, users can manually indicate the UI elements on the screen, and Power Automate for Desktop adjusts the selectors accordingly.
 
-> [!IMPORTANT]
-> - This feature is in preview.
-> - Preview features aren't meant for production use and might have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
-> - Copilot is a new technology that's still being developed. It's optimized for use with English language and has limited support with other languages. As such, parts of it might appear in English rather than your preferred language.
+> [!NOTE]
+> Repair flow automation errors will be deprecated and replaced by [self-healing](self-healing.md), which is currently in preview. We recommend exploring self-healing for new automations.
 
 ## Prerequisites
 

@@ -5,7 +5,7 @@ author: cochamos
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 10/28/2026
+ms.date: 11/23/2026
 ms.update-cycle: 180-days
 ms.author: cochamos
 ms.reviewer: smurkute
@@ -69,6 +69,7 @@ Open a new connection to a database.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
+|Connection type|N/A|OLE DB/ODBC, Microsoft SQL Server, Oracle|OLE DB/ODBC|The database provider to use when opening the connection|
 |Connection string|No|[Text value](../variable-data-types.md#text-value)||The connection string to use to connect to the database|
 
 ### Variables produced
@@ -83,6 +84,7 @@ Open a new connection to a database.
 |-----|-----|
 |Can't connect to data source|Indicates a problem connecting to the data source|
 |Invalid connection string|Indicates that the specified connection string is invalid|
+|Native database provider unavailable|Indicates that the configured native database provider is unavailable|
 
 ## <a name="executesqlstatement"></a> Execute SQL statement
 
@@ -90,14 +92,9 @@ Connect to a database and execute a SQL statement.
 
 To execute an SQL query, use the **Execute SQL statement** action. Begin by providing a valid connection to the respective database. Select the desired option in the **Get connection by** property. You can either provide an **SQL connection variable** (create one by using the **Open SQL connection** action) or provide the **Connection string**. Then enter the SQL query you want to execute in the **SQL statement** property. You can also modify the timeout seconds of the action or leave the default option (30 seconds).
 
-## Natural language to script powered by copilot (preview)
-
-[!INCLUDE [cc-beta-prerelease-disclaimer](../../includes/cc-beta-prerelease-disclaimer.md)]
+## Natural language to script powered by Copilot
 
 Natural language to script is a new copilot capability added in Power Automate for desktop. It quickly generates scripts used in the **Execute SQL statement** action by providing a description in natural language.
-
-> [!IMPORTANT]
-> [!INCLUDE [cc-preview-features-definition](../../includes/cc-preview-features-definition.md)]
 
 ### Availability by region
 
@@ -133,7 +130,7 @@ Send feedback by selecting the thumb up or thumb down icon under the AI-generate
 :::image type="content" source="media\scripting\feedback_dialog1.png" alt-text="Animated gif that shows the copilot answering a user's question from the designer.":::
 
 > [!NOTE]
-> If you can't see the dialog, your tenant admin might have turned it off. Learn more in[Disabling the user feedback functionality](#disabling-the-user-feedback-functionality).
+> If you can't see the dialog, your tenant admin might have turned it off. To learn more, see [Disabling the user feedback functionality](#disabling-the-user-feedback-functionality).
 
 ### Disabling the user feedback functionality
 
@@ -158,6 +155,7 @@ Tenant administrators can view, export, and delete the feedback their users prov
 |-----|-----|-----|-----|-----|
 |Get connection by|N/A|Connection string, [SQL connection variable]|SQL connection variable|Specifies whether to create a new connection from a given connection string or select an already open connection|
 |SQL connection|No|[SQL connection](../variable-data-types.md#connections)||The handle for the new SQL connection|
+|Connection type|N/A|OLE DB/ODBC, Microsoft SQL Server, Oracle|OLE DB/ODBC|The database provider to use when creating a connection from a connection string|
 |Connection string|No|[Text value](../variable-data-types.md#text-value)||The connection string to use to connect to the database|
 |SQL statement|No|[Text value](../variable-data-types.md#text-value)||The SQL statement to execute to the database|
 |Timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|30|The maximum amount of time to wait for a result from the database|
@@ -175,6 +173,7 @@ Tenant administrators can view, export, and delete the feedback their users prov
 |Can't connect to data source|Indicates a problem connecting to the data source|
 |Invalid connection string|Indicates that the specified connection string is invalid|
 |Error in SQL statement|Indicates there's an error in the given SQL statement|
+|Native database provider unavailable|Indicates that the configured native database provider is unavailable|
 
 ## <a name="close"></a> Close SQL connection
 

@@ -1,14 +1,13 @@
 ---
 title: Mouse and keyboard actions reference
 description: See all the available mouse and keyboard actions.
-author: mattp123
-
+author: Yiannismavridis
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: reference
-ms.date: 11/23/2022
-ms.author: matp
-ms.reviewer: matp
+ms.date: 11/23/2026
+ms.author: iomavrid
+ms.reviewer: smurkute
 contributors:
 - Yiannismavridis
 - NikosMoutzourakis
@@ -20,7 +19,7 @@ search.audienceType:
 
 # Mouse and keyboard actions
 
-Simulate keyboard activity with the **Send Keys** action. To insert special keys, such as the arrow keys and Caps Lock, and modifies, such as Shift and Control, select **Insert special key**.
+Simulate keyboard activity with the **Send Keys** action. To insert special keys, such as the arrow keys and Caps Lock, and modifiers, such as Shift and Control, select **Insert special key**.
 
 The following examples add a signature to an email message, starting with two line breaks. Then, the action sends **Ctrl + A** and **Ctrl + C** to select and copy the text to the clipboard.
 
@@ -37,16 +36,16 @@ Move the mouse to a specific image on the screen with the **Move mouse to image*
 
 :::image type="content" source="media\mousekeyboard\move-mouse-to-image-example.png" alt-text="Screenshot of the Move mouse to image action.":::
 
-In the **Advanced** section of the action, you can see that the action waits 30 seconds for the image to appear in the foreground window, and the mouse will point to the center of the image.
+In the **Advanced** section of the action, you can see that the action waits 30 seconds for the image to appear in the foreground window, and the mouse points to the center of the image.
 
 :::image type="content" source="media\mousekeyboard\move-mouse-to-image-advanced-example.png" alt-text="Screenshot of the Move mouse to image action advanced properties.":::
 
 ## <a name="blockinput"></a> Block Input
 
-Blocks user mouse and keyboard input, so that the flow can perform mouse and keyboard actions without interference from the user.
+Blocks user mouse and keyboard input, so the flow can perform mouse and keyboard actions without interference from the user.
 
 > [!IMPORTANT]
-> Because of its critical functionality, the **Block input** action requires elevated rights to run. Therefore, before using the action, ensure that Power Automate runs with administrator rights. To find more information regarding running Power Automate as an administrator, go to [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+> Because of its critical functionality, the **Block input** action requires elevated rights to run. Before using the action, ensure that Power Automate runs with administrator rights. To find more information about running Power Automate as an administrator, see [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
 ### Input parameters
 
@@ -62,8 +61,8 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Can't block/unblock user input in non interactive mode|Indicates a problem blocking/unblocking input in non-interactive mode|
-|Failed to block/unblock input|Indicates a problem blocking/unblocking input|
+|Can't block or unblock user input in non-interactive mode|Indicates a problem blocking or unblocking input in non-interactive mode|
+|Failed to block or unblock input|Indicates a problem blocking or unblocking input|
 
 ## <a name="getmouseposition"></a> Get mouse position
 
@@ -98,7 +97,7 @@ Moves the mouse to a specific position.
 |-----|-----|-----|-----|-----|
 |Position X|No|[Numeric value](../variable-data-types.md#numeric-value)||The horizontal (X) value of the position to send the mouse to|
 |Position Y|No|[Numeric value](../variable-data-types.md#numeric-value)||The vertical (Y) value of the position to send the mouse to|
-|Relative to|N/A|Screen, Active window, Current mouse position|Screen|Specify whether the new mouse position will be relative to the top left corner of the screen, the foremost window, or the current mouse position|
+|Relative to|N/A|Screen, Active window, Current mouse position|Screen|Specify whether the new mouse position is relative to the top left corner of the screen, the foremost window, or the current mouse position|
 |Move mouse from previous position|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|Specify how to move the mouse|
 
 ### Variables produced
@@ -120,8 +119,8 @@ Moves the mouse over an image found on screen or on the foreground window.
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Image to move mouse to|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The list of Images to move the mouse to|
-|Mouse movement style|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|Specify the style of movement in which the mouse will move from its previous position to the beginning of the recorded route (or to its final position)|
+|Image to move mouse to|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The list of images to move the mouse to|
+|Mouse movement style|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|Specify the style of movement in which the mouse moves from its previous position to the beginning of the recorded route (or to its final position)|
 |Occurrence|Yes|[Numeric value](../variable-data-types.md#numeric-value)|1|The occurrence of the image found to move the mouse to|
 |Send a click after moving mouse|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to send a click after the mouse is positioned over the image|
 |Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The mouse click to send to the image|
@@ -129,11 +128,11 @@ Moves the mouse over an image found on screen or on the foreground window.
 |Fail timeout|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|The fail timeout in seconds|
 |Seconds before click|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|The number of seconds to wait before sending the click|
 |Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
-|Mouse position relative to image|N/A|top left corner, top center, top right corner, middle left part, center, middle right part, bottom left corner, bottom center, bottom right corner|center|The section of the image the mouse will be moved to|
+|Mouse position relative to image|N/A|top left corner, top center, top right corner, middle left part, center, middle right part, bottom left corner, bottom center, bottom right corner|center|The section of the image the mouse moves to|
 |Offset X|No|[Text value](../variable-data-types.md#text-value)|0|The pixels to offset the mouse from the position to the right|
 |Offset Y|No|[Text value](../variable-data-types.md#text-value)|0|The pixels to offset the mouse from the position down|
 |Tolerance|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specify how much the specified image can differ from the originally chosen image|
-|Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Specify whether to search for the specified Image in the foremost window only, or the entire visible screen. Neither choice will find the image if it isn't clearly visible on the screen|
+|Search for image on|N/A|Entire screen, Foreground window only|Entire screen|Specify whether to search for the specified image in the foremost window only, or the entire visible screen. Neither choice finds the image if it isn't clearly visible on the screen|
 |Search mode|N/A|Search whole screen or foreground window, Search on specified subregion of screen or foreground window|Search whole screen or foreground window|Specify whether to scan the entire screen (or window) to find the supplied image or only a subregion of it|
 |X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The starting X of the subregion to search in|
 |Y1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The starting Y of the subregion to search in|
@@ -165,16 +164,16 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|OCR engine type|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a peconfigured OCR engine or set up a new one.|
+|OCR engine type|No|OCR engine variable, Tesseract engine|OCR engine variable|The OCR engine type to use. Select a preconfigured OCR engine or set up a new one.|
 |OCR engine variable|No|[OCREngineObject](../variable-data-types.md#ocr)||The OCR engine to search for the text with|
 |Text to find|No|[Text value](../variable-data-types.md#text-value)||The text to move the mouse over|
 |Is regular expression|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Whether to use a regular expression to look for the text on screen|
-|Occurrence|Yes|[Numeric value](../variable-data-types.md#numeric-value)|1|A positive number that will be used as the occurrence of the input text on screen|
-|Search for text on|N/A|Entire screen, Foreground window only|Entire screen|Whether to look for the specified text in the foremost window only or the entire visible screen. Neither choice will find the text if it isn't clearly visible on the screen|
-|Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|Whether to scan the entire screen (or window) to find the supplied text or only a narrows down subregion of it|
-|Image(s)|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The image(s) specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
+|Occurrence|Yes|[Numeric value](../variable-data-types.md#numeric-value)|1|A positive number that represents the occurrence of the input text on screen|
+|Search for text on|N/A|Entire screen, Foreground window only|Entire screen|Whether to look for the specified text in the foremost window only or the entire visible screen. Neither choice finds the text if it isn't clearly visible on the screen|
+|Search mode|N/A|Whole of specified source, Specific subregion only, Subregion relative to image|Whole of specified source|Whether to scan the entire screen (or window) to find the supplied text or only a narrowed down subregion of it|
+|Image(s)|No|[List](../variable-data-types.md#list) of [Images](../images.md)||The images specifying the subregion (relative to the top left corner of the image) to scan for the supplied text|
 |X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start X coordinate of the subregion to scan for the supplied text|
-|Tolerance|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specify how much the image(s) searched for can differ from the originally chosen image|
+|Tolerance|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specify how much the images searched for can differ from the originally chosen image|
 |Y1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start Y coordinate of the subregion to scan for the supplied text|
 |X1|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The start X coordinate of the subregion relative to the specified image to scan for the supplied text|
 |X2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end X coordinate of the subregion to scan for the supplied text|
@@ -182,7 +181,7 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Y2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end Y coordinate of the subregion to scan for the supplied text|
 |X2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end X coordinate of the subregion relative to the specified image to scan for the supplied text|
 |Y2|Yes|[Numeric value](../variable-data-types.md#numeric-value)||The end Y coordinate of the subregion relative to the specified image to scan for the supplied text|
-|Move mouse from previous position|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|The style of movement in which the mouse will move from its previous position to its final position|
+|Move mouse from previous position|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|The style of movement in which the mouse moves from its previous position to its final position|
 |Windows OCR language|N/A|Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, English, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Korean, Norwegian, Polish, Portuguese, Romanian, Russian, Serbian (Cyrillic), Serbian (Latin), Slovak, Spanish, Swedish, Turkish|English|The language of the text that the Windows OCR engine detects|
 |Use other language|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specifies whether to use a language not given in the 'Tesseract language' field|
 |Tesseract language|N/A|English, German, Spanish, French, Italian|English|The language of the text that the Tesseract engine detects|
@@ -195,13 +194,13 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 |Send a click after moving mouse|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether to send a click after the mouse is positioned over the text|
 |Click type|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|The mouse click type to send to the text|
 |Wait before clicking for|Yes|[Numeric value](../variable-data-types.md#numeric-value)|1|The number of seconds to wait before clicking|
-|Mouse position relative to text|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the text the mouse will be moved to|
+|Mouse position relative to text|N/A|Top left, Top center, Top right, Middle left, Middle center, Middle right, Bottom left, Bottom center, Bottom right|Middle center|Specify which section of the text the mouse moves to|
 |Offset X|No|[Text value](../variable-data-types.md#text-value)|0|Offset the mouse from the position by this many pixels to the right|
 |Offset Y|No|[Text value](../variable-data-types.md#text-value)|0|Offset the mouse from the position by this many pixels down|
 |Image matching algorithm|N/A|Basic, Advanced|Basic|Which image algorithm to use when searching for image|
 
 > [!NOTE]
-> Power Automate's regular expression engine is .NET. To find more information about regular expressions, go to [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
+> Power Automate's regular expression engine is .NET. To find more information about regular expressions, see [Regular Expression Language - Quick Reference](/dotnet/standard/base-types/regular-expression-language-quick-reference).
 
 ### Variables produced
 
@@ -230,19 +229,19 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 Sends a mouse click event.
 
 > [!IMPORTANT]
-> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send mouse click** action to interact with applications that run with elevated privileges, run Power Automate as administrator. You can find more information regarding running Power Automate as an administrator in [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send mouse click** action to interact with applications that run with elevated privileges, run Power Automate as administrator. For more information about running Power Automate as an administrator, see [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Mouse event to send|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|Specify what form of mouse event to send|
-|Wait|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|The time to delay before sending the mouse event in 1/1000 of a second|
-|Move mouse|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Move mouse|
-|X|No|[Numeric value](../variable-data-types.md#numeric-value)||The horizontal (X) position of the mouse in pixel coordinates|
-|Y|No|[Numeric value](../variable-data-types.md#numeric-value)||The vertical (Y) position of the mouse in pixel coordinates|
-|Relative to|N/A|Screen, Active window, Current mouse position|Screen|Specify whether the new mouse position will be relative to the top left corner of the screen, the foremost window, or the current mouse position|
-|Mouse movement style|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|The style of movement in which the mouse will move from its previous position to the beginning of the recorded route (or to its final position)|
+|Mouse event to send|N/A|Left click, Right click, Double click, Middle click, Left button down, Left button up, Right button down, Right button up|Left click|Specify the mouse event to send.|
+|Wait|Yes|[Numeric value](../variable-data-types.md#numeric-value)|0|Specify the time to delay before sending the mouse event in 1/1000 of a second.|
+|Move mouse|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Move mouse.|
+|X|No|[Numeric value](../variable-data-types.md#numeric-value)||Specify the horizontal (X) position of the mouse in pixel coordinates.|
+|Y|No|[Numeric value](../variable-data-types.md#numeric-value)||Specify the vertical (Y) position of the mouse in pixel coordinates.|
+|Relative to|N/A|Screen, Active window, Current mouse position|Screen|Specify whether the new mouse position is relative to the top left corner of the screen, the foremost window, or the current mouse position.|
+|Mouse movement style|N/A|Instant, With animation (low speed), With animation (normal speed), With animation (high speed)|Instant|Specify the style of movement in which the mouse moves from its previous position to the beginning of the recorded route (or to its final position).|
 
 ### Variables produced
 
@@ -252,25 +251,25 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Can't send mouse click in non interactive mode|Indicates a problem sending a mouse click in non-interactive mode|
-|Mouse click out of screen bounds|Indicates that the mouse click was out of the screen bounds|
-|Failed to send mouse click|Indicates a problem sending a mouse click|
+|Can't send mouse click in non interactive mode|Indicates a problem sending a mouse click in non-interactive mode.|
+|Mouse click out of screen bounds|Indicates that the mouse click was out of the screen bounds.|
+|Failed to send mouse click|Indicates a problem sending a mouse click.|
 
 ## <a name="sendkeys"></a> Send keys
 
 Sends keys to the application that is currently active.
 
 > [!IMPORTANT]
-> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send keys** action to interact with applications that run with elevated privileges, run Power Automate as administrator. To find more information regarding running Power Automate as an administrator, go to [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send keys** action to interact with applications that run with elevated privileges, run Power Automate as administrator. For more information about running Power Automate as an administrator, see [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Send keys to|N/A|Foreground window, By UI element, By window instance/handle, By title and/or class|Foreground window|Specify whether to send the keys to the foreground window or to a UI element or to a window instance or a combination of window title/class|
-|Text to send|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The text to send to the application|
-|Delay between keystrokes|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specify the delay in milliseconds between sending keystrokes to avoid input errors|
-|Send Text as hardware keys|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Emulate the actual keystrokes on keyboard when sending whole Text|
+|Send keys to|N/A|Foreground window, By UI element, By window instance/handle, By title and/or class|Foreground window|Specify whether to send the keys to the foreground window or to a UI element or to a window instance or a combination of window title/class.|
+|Text to send|No|Direct encrypted input or [Text value](../variable-data-types.md#text-value)||The text to send to the application.|
+|Delay between keystrokes|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|Specify the delay in milliseconds between sending keystrokes to avoid input errors.|
+|Send Text as hardware keys|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Emulate the actual keystrokes on keyboard when sending whole Text.|
 
 ### Variables produced
 
@@ -279,10 +278,10 @@ This action doesn't produce any variables.
 ### <a name="sendkeys_onerror"></a> Exceptions
 |Exception|Description|
 |-----|-----|
-|Can't send keystrokes in non interactive mode|Indicates a problem sending keystrokes in non-interactive mode|
-|Text to send doesn't represent valid keystrokes|Indicates that the text given doesn't represent valid keystrokes|
-|There isn't an active application to send keystrokes to|Indicates that there isn't an active application to send keystrokes to|
-|Failed to send keystrokes|Indicates a problem sending keystrokes|
+|Can't send keystrokes in non interactive mode|Indicates a problem sending keystrokes in non-interactive mode.|
+|Text to send doesn't represent valid keystrokes|Indicates that the text given doesn't represent valid keystrokes.|
+|There isn't an active application to send keystrokes to|Indicates that there isn't an active application to send keystrokes to.|
+|Failed to send keystrokes|Indicates a problem sending keystrokes.|
 
 > [!NOTE]
 > To simulate a physical key being pressed inside a **Send keys** action, use the curly brackets **{}** notation. To use a key as a modifier, use the curly brackets **{}** notation for both keys. The **Send keys** action accepts the [Virtual-Key Codes](/windows/win32/inputdev/virtual-key-codes).
@@ -310,19 +309,19 @@ This action doesn't produce any variables.
 |Function keys|F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, F13, F14, F15, F16, F17, F18, F19, F20, F21, F22, F23, F24|
 |Buttons|NumLock, Scroll, LShiftKey, RShiftKey, LControlKey, RControlKey, LMenu, RMenu, BrowserBack, BrowserForward, BrowserRefresh, BrowserStop|
 
-## <a name="pressreleasekey"></a> Press/release key
+## <a name="pressreleasekey"></a> Press or release key
 
-Presses (and holds) or releases one or more modifier keys (Alt, Control, or Shift).
+Presses and holds or releases one or more modifier keys (Alt, Control, or Shift).
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
 |Action to perform|N/A|Press, Release|Press|Specify whether to press or release keys with this action|
-|Control|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Ctrl key will be pressed/released or not|
-|Alt|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Alt key will be pressed/released or not|
-|Shift|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Shift key will be pressed/released or not|
-|Win|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Windows key will be pressed/released or not|
+|Control|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Ctrl key is pressed or released|
+|Alt|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Alt key is pressed or released|
+|Shift|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Shift key is pressed or released|
+|Win|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the Windows key is pressed or released|
 
 ### Variables produced
 
@@ -336,14 +335,14 @@ This action doesn't produce any variables.
 
 ## <a name="setkeystate"></a> Set key state
 
-Sets the state (on or off) for the keys Caps Lock, Num Lock or Scroll Lock
+Sets the state (on or off) for the keys Caps Lock, Num Lock, or Scroll Lock.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Key|N/A|Caps Lock, Num Lock, Scroll Lock|Caps Lock|Specify the key to set|
-|State|N/A|Off, On|On|Whether to set the key state to on or off|
+|Key|N/A|Caps Lock, Num Lock, Scroll Lock|Caps Lock|Specify the key to set.|
+|State|N/A|Off, On|On|Set the key state to on or off.|
 
 ### Variables produced
 
@@ -353,11 +352,11 @@ This action doesn't produce any variables.
 
 |Exception|Description|
 |-----|-----|
-|Can't set key state in non interactive mode|Indicates a problem setting the key state in non interactive mode|
+|Can't set key state in non interactive mode|Indicates a problem setting the key state in non interactive mode.|
 
 ## <a name="waitformouseaction"></a> Wait for mouse
 
-Suspends the execution of the flow until the mouse pointer changes, usually to or from the 'wait cursor' or hourglass.
+Suspends the execution of the flow until the mouse pointer changes, usually to or from the `wait cursor` or hourglass.
 
 ### Input parameters
 
@@ -396,15 +395,15 @@ This action doesn't require any input.
 
 ## <a name="waitforshortcutkeyaction"></a> Wait for shortcut key
 
-Pause the flow run until a specific shortcut key is pressed. Shortcut keys must contain at least one key or a key and one of (ctrl, alt, shift). Multiple shortcut keys can be defined.
+Pause the flow run until a specific shortcut key is pressed. Shortcut keys must contain at least one key or a key combined with **Ctrl**, **Alt**, or **Shift**. You can define multiple shortcut keys.
 
 ### Input parameters
 
 |Argument|Optional|Accepts|Default Value|Description|
 |-----|-----|-----|-----|-----|
-|Shortcut keys|N/A|Keys combination|Ctrl + A|Specify the shortcut keys to wait for. Shortcut keys must contain exactly one key or a key and a combination of (ctrl, alt, shift). To add more than one shortcut key, select 'New shortcut key'|
-|Continue flow run on timeout|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the flow run will continue anyway when the set period of time waiting for the shortcut key expires|
-|Continue after|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|The time in seconds before continuing the flow run|
+|Shortcut keys|N/A|Keys combination|Ctrl + A|Specify the shortcut keys to wait for. Shortcut keys must contain exactly one key or a key combined with **Ctrl**, **Alt**, or **Shift**. To add more than one shortcut key, select **New shortcut key**.|
+|Continue flow run on timeout|N/A|[Boolean value](../variable-data-types.md#boolean-value)|False|Specify whether the flow run continues when the set time waiting for the shortcut key expires.|
+|Continue after|Yes|[Numeric value](../variable-data-types.md#numeric-value)|10|The time in seconds before continuing the flow run.|
 
 ### Variables produced
 
@@ -417,5 +416,25 @@ Pause the flow run until a specific shortcut key is pressed. Shortcut keys must 
 |Exception|Description|
 |-----|-----|
 |Shortcut key failed to register|Indicates that a shortcut key failed to register.|
+
+## <a name="setkeyboardlayout"></a> Set keyboard identifier
+
+Sets the active keyboard identifier on the machine.
+
+### Input parameters
+
+|Argument|Optional|Accepts|Default Value|Description|
+|-----|-----|-----|-----|-----|
+||No|[Text value](../variable-data-types.md#text-value)||Select a keyboard layout from the dropdown, or enter a decimal identifier. Use the variable picker to insert a variable containing a decimal identifier.|
+
+### Variables produced
+
+This action doesn't produce any variables.
+
+### <a name="setkeyboardlayout_onerror"></a> Exceptions
+
+|Exception|Description|
+|-----|-----|
+|Keyboard identifier couldn't be set|Indicates an error while setting the keyboard identifier|
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
