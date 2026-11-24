@@ -10,10 +10,11 @@ contributors:
   - v-aangie
 ms.author: matow
 ms.reviewer: cyanderson
+ai-usage: ai-assisted
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 10/01/2025
+ms.date: 11/22/2026
 search.audienceType: 
   - flowmaker
   - enduser
@@ -74,7 +75,7 @@ Here are the detailed steps to create the flow.
 
 1. Enter the **Site Address** and then select the **List Name** on the **When an item is created or modified** card.
 
-1. Provide the **Site Address** and **List Name** for the SharePoint list your flow monitors for new or updated items.
+    These values identify the SharePoint list your flow monitors for new or updated items.
 
 ## Search the destination for the new or changed item
 
@@ -168,7 +169,7 @@ If the item exists in the destination, update it with the changes.
 
 1. Add the **SQL Server - Update row** action to the **If no** branch of the **Condition**.
 
-1. Follow the steps in the [create the item](odata-filters.md#create-the-item-in-the-destination) section of this document to populate the columns of the table.
+1. Refer to the steps in [Create the item in the destination](#create-the-item-in-the-destination) to populate the columns of the table.
 
     :::image type="content" alt-text="Screenshot of the destination items." source="media/odata-filters/update-row.png":::
 

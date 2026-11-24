@@ -11,12 +11,13 @@ contributors:
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 11/03/2026
+ms.date: 11/22/2026
 ms.author: matow
 search.audienceType: 
   - flowmaker
   - enduser
 ms.reviewer: cyanderson
+ai-usage: ai-assisted
 ---
 
 # Change the owner of a cloud flow
@@ -54,7 +55,7 @@ Follow these steps to change the owner of a flow.
     :::image type="content" source="media/change-cloud-flow-owner/details-edit.png" alt-text="Screenshot of the edit button in the details section.":::
 
 1. In the **Primary owner** section, remove the current owner.
-1. Enter the email address of the new owner.
+1. Enter the email address of the new primary owner.
 
     Once assigned, the new owner gets access to the run history and connection references. The new owner can update the flow or reassign it to other users.
 
@@ -102,7 +103,7 @@ Because a Service Principal application user is a [non-interactive user](/power-
 To change the owner of a flow to a Service Principal application user:
 
 1. Open the **Details** edit dialog.
-1. Replace the **Owner** with the name of the Service Principal application user.
+1. Replace the **Primary owner** with the name of the service principal application user.
 
     You can't make a Service Principal application user a co-owner of a flow. You won't find a Service Principal application user in the **Owners** edit dialog.
 
@@ -112,7 +113,7 @@ To have a Service Principal own and run a flow, follow these steps.
 
 1. [Create a service principal application user](/power-platform/admin/create-users#create-an-application-user) representing the Microsoft Entra service principal.
 1. [Share connections](/power-apps/maker/canvas-apps/share-app-resources#connections) with the service principal application user.
-1. Change the owner of the flow to the service principal application user by using the steps in this section: **Details** > **Edit** > **Owner**.
+1. Change the owner of the flow to the service principal application user by using the steps in this section: **Details** > **Edit** > **Primary owner**.
 1. [Turn on the flow](/power-automate/disable-flow) so it's ready to run.
 1. Adjust licensing to deal with [request limit implications](/power-platform/admin/power-automate-licensing/types#can-i-use-service-principal-in-flows-and-does-it-count-against-my-request-limits) as needed.
 

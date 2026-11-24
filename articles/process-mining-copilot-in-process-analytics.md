@@ -1,7 +1,7 @@
 ---
 title: Copilot in Process Mining process analytics
 description: Learn how to surface insights on your process and get recommended solutions with Copilot.
-ms.date: 01/16/2026
+ms.date: 11/22/2026
 ms.update-cycle: 180-days
 ms.topic: article
 author: janPidych
@@ -12,6 +12,7 @@ contributors:
 ms.custom: bap-template
 ms.author: michalrosik
 ms.reviewer: cyanderson
+ai-usage: ai-assisted
 ms.collection: bap-ai-copilot
 ---
 
@@ -52,7 +53,7 @@ Follow these steps to analyze the process with Copilot. You can analyze your pro
 ### Analyze your process in the Power Automate Process Mining web page
 
 1. In Power Automate in the left navigation pane, select **Process mining**.
-1. In the **Environments** field in th titlebar, select your process mining environment with an imported process.
+1. In the **Environments** field in the title bar, select your process mining environment with an imported process.
 1. Open the imported process.
 
     :::image type="content" source="media/process-mining-copilot-in-process-analytics/copilot-web.png" alt-text="Screenshot of the opened process.":::
