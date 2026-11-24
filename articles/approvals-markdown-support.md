@@ -6,7 +6,7 @@ author: kewaiss
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 11/25/2025
+ms.date: 11/17/2026
 ms.author: matow
 ms.reviewer: cyanderson
 search.audienceType: 
@@ -24,22 +24,22 @@ This article shows you how to use [Markdown](https://en.wikipedia.org/wiki/Markd
 > - All markdown renderers have implementation differences. For details, review the [Client Support](#client-support) section.
 > - Markdown isn't currently supported for the **Approvals** app on Microsoft Teams.
 
-## Client Support
+## Client support
 
 Markdown support among clients is inconsistent. The Power Automate team works to address these inconsistencies, but some inconsistencies remain. The following table lays out the known limitations among the supported clients.
 
-| Feature | Power Automate | Power Automate mobile app | Outlook | Outlook Web | Teams | Teams mobile app | Approvals Teams App |   
-|---------|--------|---------------|-----------------|-------------|-------|--------------|--------------|
-| **Headers** | Yes | Yes | Yes | Yes | No | No | No |
-| **Numbered Lists** | Yes | Yes | No | Yes | Yes | Yes | No |
-| **Nested Numbered Lists** | Yes | Yes | No | Yes | Yes | Yes | Yes |
-| **Tables** | Yes | Yes | Yes | Yes | No | No | No |
-| **Images** | No | No | No | No | No | No | No |
-| **Forced Line Breaks** | Yes* | Yes* | No (use a blank line instead) | Yes* | Yes* | Yes* | No |
-| **Blank Lines** | No | No | Yes | Yes | No | Yes | No |
-| **Emphasis** | Yes | Yes | Yes | Yes | No | No | No |
+| Feature | Power Automate | Outlook | Outlook Web | Teams | Teams mobile app | Approvals Teams App |
+|---------|--------|-----------------|-------------|-------|--------------|--------------|
+| **Headers** | Yes | Yes | Yes | No | No | No |
+| **Numbered lists** | Yes | No | Yes | Yes | Yes | No |
+| **Nested numbered lists** | Yes | No | Yes | Yes | Yes | Yes |
+| **Tables** | Yes | Yes | Yes | No | No | No |
+| **Images** | No | No | No | No | No | No |
+| **Forced line breaks** | Yes* | No (use a blank line instead) | Yes* | Yes* | Yes* | No |
+| **Blank lines** | No | Yes | Yes | No | Yes | No |
+| **Emphasis** | Yes | Yes | Yes | No | No | No |
 
-*Forced line breaks within table cells aren't supported for Power Automate, the Power Automate mobile app, Outlook Web, Teams, and the Teams mobile app.
+*Forced line breaks within table cells aren't supported for Power Automate,  Outlook Web, Teams, and the Teams mobile app.
 
 > [!NOTE]
 > For Outlook Mobile, the previous parameters can vary depending on the Outlook client app and version that you're using.
@@ -60,7 +60,8 @@ Start a line with a hash character `#` to set a heading. Organize your remarks w
 ```
 
 **Result:**  
-![Export flow.](./media/approvals-markdown-support/mrkdown-headers.png)
+
+:::image type="content" source="./media/approvals-markdown-support/mrkdown-headers.png" alt-text="Screenshot of Markdown headers from H1 through H5 rendered in an approval request.":::
 
 ## Paragraphs and line breaks
 
@@ -107,7 +108,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 **Result:**  
 1. First item.
 1. Second item.
-3. Third item.
+1. Third item.
 
 ### Bullet lists
 
@@ -154,7 +155,7 @@ Ordered lists start with a number followed by a period for each list item. Unord
 
 ## Links
 
-Use HTTPS links, which are rendered as links in all clients. Non-HTTPS links (for example, FTP, HTTP, and mail) can be rendered as regular text.
+Use HTTPS links, which all clients render as links. Clients can render non-HTTPS links (for example, FTP, HTTP, and mail) as regular text.
 
 Set text hyperlinks for your URL by using the standard markdown link syntax:
 
@@ -176,9 +177,9 @@ Organize structured data with tables.
 
 - Place each table row on its own line. 
 - Separate table cells by using the pipe character `|`. 
-- The first two lines of a table set the column headers and the alignment of elements in the table.
-- Make sure to end each row with a carriage return (CR) or line feed (LF). 
-- Aligning text within a table element isn't currently supported.
+- Use the first two lines of a table to set the column headers and the alignment of elements in the table.  
+- End each row with a carriage return (CR) or line feed (LF).  
+- You can't currently align text within a table element.  
 
 **Example:**  
 ```Markdown

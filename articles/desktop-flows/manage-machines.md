@@ -5,7 +5,7 @@ author: mattp123
 ms.service: power-automate
 ms.subservice: desktop-flow
 ms.topic: how-to
-ms.date: 10/02/2025
+ms.date: 11/16/2026
 ms.author: kenseongtan
 ms.reviewer: smurkute
 contributors:
@@ -31,16 +31,22 @@ Our direct connectivity is the easiest way to connect your machine to the cloud.
 >
 > - Direct connectivity is only available for Power Automate 2.8.73.21119 or later. If you currently use an earlier version, [update to the latest](https://go.microsoft.com/fwlink/?linkid=2102613).
 > - Direct connectivity isn't available for machines running Windows 10 Home or Windows 11 Home.
-> - To register your machine and use the machine management features, your Power Platform environment must have a version of the **MicrosoftFlowExtensionsCore** solution that's greater than or equal to 1.2.4.1.
+> - To trigger desktop flows from cloud flows, you need a [premium per-user plan with attended RPA](https://make.powerautomate.com/pricing/). To run desktop flows in unattended mode, you also need [process or unattended RPA capacity](capacity-process.md).
+> - You don't need to register a machine to install and try Power Automate for desktop on its own. Registration is required only to run desktop flows from the cloud.
+> - An environment is a space that stores and manages your organization's flows, data, and apps. Learn more in the [environments overview](/power-platform/admin/environments-overview).
+> - To register your machine and use the machine management features, your Power Platform environment must have a version of the **MicrosoftFlowExtensionsCore** solution that's greater than or equal to 1.2.4.1. Your environment admin checks this requirement, not end users.
+> - You need an **Environment Maker** or **Desktop Flow Machine Owner** role in the environment to register machines.
 > - Before registering a machine to [run desktop flows from cloud flows](trigger-desktop-flows.md), ensure the machine is secured and the machine's admins are trusted.
 
 ## Register a new machine
 
 Power Automate for desktop automatically registers your machine on the currently selected environment. If you don't have permission to register machines in that environment or want to use another environment, update the environment manually.
 
-1. [Install the latest version](install.md) of Power Automate on your device. If you already have the latest version, skip this step. During installation, ensure you select the **Install the machine-runtime app to connect to the Power Automate cloud portal** option.
+1. [Install the latest version](install.md) of Power Automate on your device. If you already have the latest version, skip this step. During installation with the MSI installer, ensure you select the **Machine-runtime app** feature. The Microsoft Store version of Power Automate for desktop doesn't include the machine runtime, so use the [MSI installer](install.md#install-power-automate-by-using-the-msi-installer) to get it. If **Power Automate machine runtime** doesn't appear in the Start menu after installation, rerun the MSI installer and select the **Machine-runtime app** feature.
 
     :::image type="content" source="./media/manage-machines/acceptterms.png" alt-text="Screenshot of the option to install the machine-runtime app.":::
+
+    Installing Power Automate for desktop doesn't open a pop-up to connect your machine. You register the machine by signing in to the separate Power Automate machine runtime app, as described in the following steps.
 
 1. Launch Power Automate machine runtime.
 
@@ -86,14 +92,14 @@ Power Automate enables you to trigger desktop flows from cloud flows using event
 
 1. Edit an existing cloud flow or [create a new cloud flow](../overview-cloud.md).
 
-1. Create a desktop flow connection using the instructions in [Create desktop flow connections](desktop-flow-connections.md).
+1. Create a desktop flow connection by using the instructions in [Create desktop flow connections](desktop-flow-connections.md). The current connection options are **Connect with username and password** and **Connect with sign-in for attended runs**.
 
 1. Follow the instructions in [Trigger desktop flows from cloud flows](trigger-desktop-flows.md) to trigger a desktop flow from your cloud flow.
 
 > [!IMPORTANT]
 >
-> - To apply this functionality, you need a [premium per-user plan with attended RPA](https://make.powerautomate.com/pricing/).
-> - When you create a desktop flow connection, you allow Power Automate to create a Windows session on your machine to run your desktop flows. Make sure you trust co-owners of your flows before using your connection in a flow.
+> - To use this functionality, you need a [premium per-user plan with attended RPA](https://make.powerautomate.com/pricing/).
+> - When you create a desktop flow connection, you allow Power Automate to create a Windows session on your machine to run your desktop flows. Ensure you trust co-owners of your flows before using your connection in a flow.
 > - If you consistently encounter issues when creating a connection on a new machine, first try to remove it, and then [register it](/power-automate/desktop-flows/manage-machines#register-a-new-machine) again.
 
 ## Enable your machine for unattended mode

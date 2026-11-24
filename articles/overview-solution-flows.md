@@ -5,10 +5,11 @@ author: ChrisGarty
 contributors:
   - ChrisGarty
   - v-aangie
+  - cyrilanderson
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: overview
-ms.date: 01/31/2023
+ms.date: 11/16/2026
 ms.author: cgarty
 ms.reviewer: cyanderson
 search.audienceType: 
@@ -41,27 +42,34 @@ Follow these steps to create a solution.
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the menu to the left, select **Solutions**.
 
-   ![Screen shot of the left nav with solutions highlighted](./media/overview-solution-flows/left-nav-solution.png)
+   :::image type="content" source="./media/overview-solution-flows/left-nav-solution.png" alt-text="Screenshot of the left navigation pane with Solutions highlighted.":::
 
 1. Select **New solution**.
 
-   ![Select a new solution.](./media/overview-solution-flows/select-new-solution.png "Screen showing select new solution")
+   :::image type="content" source="./media/overview-solution-flows/select-new-solution.png" alt-text="Screenshot of the Solutions page in Power Automate with the New solution button highlighted in the toolbar.":::
 
 1. Provide all required information for your new solution, including the **Display Name**,  **Name**, **Publisher**, and **Version**.
 
+   The publisher identifies who developed the solution. Create your own meaningful publisher instead of using the default one. To create one, select **New publisher** in the **New solution** pane. The publisher's customization prefix is added to the start of the names of components that you create in the solution. For more information, see [Solution publisher](/power-apps/maker/data-platform/create-solution#solution-publisher) and [Solution concepts](/power-platform/alm/solution-concepts-alm#solution-publisher).
+
 1. Select the **Create** button.
 
-   ![Screenshot displays the new solution screen.](./media/overview-solution-flows/new-solution.png "new solution properties screen")
+   :::image type="content" source="./media/overview-solution-flows/new-solution.png" alt-text="Screenshot of the New solution form with Display name, Name, Publisher, and Version fields and the Create button.":::
 
    Your new solution might appear like this image.
 
-   ![Displays the new solution.](./media/overview-solution-flows/new-solution-created.png "New solution showing on the *Solutions* screen")
+   :::image type="content" source="./media/overview-solution-flows/new-solution-created.png" alt-text="Screenshot of the new solution showing on the Solutions screen.":::
 
-Now that you've created your solution, it's time to [add your flows](./create-flow-solution.md) to it.
+Now that you created your solution, [add your flows](./create-flow-solution.md) to it.
 
 ## Known limitations
 
-There are certain limitations when using flows with solutions. For information about these limitations, see [Known limitations](/powerapps/maker/data-platform/solutions-overview#known-limitations) in the Power Apps docs.
+When you use flows with solutions, you might encounter the following limitations:
+
+- You can't add some non-solution cloud flows to a solution.
+- If a canvas app connects to flows that you deleted from the environment, publishing the app fails with an error. To fix this error, remove the deleted flows from the app, and then save and publish the app.
+
+For more information about these limitations, see [Known limitations](/power-apps/maker/data-platform/solutions-overview#known-limitations) in the Power Apps docs.
   
 ## Related information
 
