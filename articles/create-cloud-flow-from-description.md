@@ -10,10 +10,11 @@ contributors:
   - v-aangie
 ms.author: ralinga
 ms.reviewer: cyanderson
+ai-usage: ai-assisted
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 01/16/2026
+ms.date: 11/22/2026
 ms.update-cycle: 180-days
 search.audienceType: 
   - flowmaker
@@ -88,7 +89,7 @@ To use natural language to flow, follow these steps:
 
      :::image type="content" source="media/easy-flow/nl2flow.png" alt-text="Screenshot of sample flows in the Workflows flow builder.":::
 
-1. In the empty filed, type your prompt.
+1. In the empty field, type your prompt.
 
     The AI suggests a list of flows based on your prompt.
 

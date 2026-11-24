@@ -6,9 +6,10 @@ author: DBEKI
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 04/21/2026
+ms.date: 11/22/2026
 ms.author: matow
 ms.reviewer: cyanderson
+ai-usage: ai-assisted
 search.audienceType: 
   - flowmaker
   - enduser
@@ -31,7 +32,7 @@ You can enable flow run resubmission for instant triggers through the Power Plat
 ### Power Platform admin center
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select **Settings** and then search for **Power Automate flow run resubmission**.
+1. At the top right, select **Settings** (gear icon) > **Power Platform settings**, and then search for **Power Automate flow run resubmission**.
 1. To enable or disable the functionality, select the toggle.
 
 ### Apply tenant setting using PowerShell
