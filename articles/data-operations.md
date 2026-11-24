@@ -6,9 +6,10 @@ author: kisubedi
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 08/19/2026
+ms.date: 11/22/2026
 ms.author: matow
 ms.reviewer: cyanderson
+ai-usage: ai-assisted
 search.audienceType: 
   - flowmaker
   - enduser
@@ -179,6 +180,17 @@ This example creates a new array containing only objects where `first` is set to
     :::image type="content" source="./media/data-operations/add-configure-filter-array-2-new-designer.png" alt-text="Screenshot of in the From section, the first line is set to Body. In the second line, first is set equal to Eugenia.":::
 
 1. Save and run your flow.
+
+The **Filter array** action returns the following array in its body:
+
+```json
+[
+  {
+    "first": "Eugenia",
+    "last": "Lopez"
+  }
+]
+```
 
 ## Use the create CSV table action
 
