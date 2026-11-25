@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 07/10/2025
+ms.date: 11/16/2026
 ms.author: rachaudh
 ms.reviewer: edoyle
 contributors: 
@@ -38,7 +38,7 @@ Here are some use cases for parallel execution:
 
 - Initialize multiple variables in parallel to avoid sequential execution delays.
 
-  :::image type="content" source="media/parallel-branch.png" alt-text="Screenshot of the Power Automate designer showing a cloud flow with parallel branches.":::
+  :::image type="content" source="media/parallel-branch.png" alt-text="Screenshot of a Power Automate cloud flow with parallel branches that send emails to the submitter and the approver.":::
 
 ### Minimize skipped actions
 
@@ -48,7 +48,7 @@ Skipped actions often occur in switch branches. A switch branch is a way to defi
 
 Call child flows from the switch branch instead of adding many individual actions. Skipping irrelevant child flows rather than a large number of individual actions simplifies your main flow and makes it easier to maintain.
 
-## Control concurrency
+## Control concurrency in Apply to each loops
 
 **Apply to each** loops execute sequentially by default. If the items in the loop don't need to run sequentially, concurrency allows multiple items to process at the same time. The maker sets the degree of concurrency, or parallelism, from 1 to 50.
 

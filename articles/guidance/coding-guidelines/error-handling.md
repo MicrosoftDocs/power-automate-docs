@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.service: power-automate
 ms.subservice: guidance
 ms.topic: best-practice
-ms.date: 07/10/2025
+ms.date: 11/16/2026
 ms.author: rachaudh
 ms.reviewer: edoyle
 contributors: 
@@ -16,17 +16,17 @@ search.audienceType:
   - flowmaker
 ---
 
-# Employ robust error handling
+# Use robust error handling
 
-Handling errors efficiently is key to making sure that your automated workflows run reliably and work as you expect them to. This article offers strategies to identify and resolve issues quickly and efficiently.
+To ensure your automated workflows run reliably, handle errors efficiently. This article offers strategies to help you identify and resolve issues quickly.
 
 ## Configure Run after settings
 
-Use **Run after** settings to specify what should happen if an action fails, times out, is skipped, or is successful. For each action, you can set conditions to determine the next steps based on the outcome of the previous action. This approach allows you to create alternative paths for error handling. For example, if an action fails, you can send a notification or log the error details as the next action.
+Use **Run after** settings to specify what should happen if an action fails, times out, is skipped, or is successful. For each action, set conditions to determine the next steps based on the outcome of the previous action. This approach allows you to create alternative paths for error handling. For example, if an action fails, you can send a notification or log the error details as the next action.
 
 In the following example, the flow sends an email notification if it fails at the step **Update a row**:
 
-:::image type="content" source="media/run-after-settings.png" alt-text="Screenshot of the Power Automate designer showing settings to configure a Run after condition that sends an email when the Update a row action fails." lightbox="media/run-after-settings.png":::
+:::image type="content" source="media/run-after-settings.png" alt-text="Screenshot of Run after settings that send an email when the List rows from Contact table action fails." lightbox="media/run-after-settings.png":::
 
 ### Get information about the current flow run
 
@@ -139,7 +139,7 @@ A retry policy helps your workflows recover from transient failures that occur b
 
 An exponential retry policy starts with a short retry interval and gradually increases the interval between retries. This approach helps avoid overwhelming the system with frequent retries and allows more time for the issue to resolve. For example, in an exponential retry policy, the first retry might occur after one minute, the second after two minutes, the third after four minutes, and so on, until the action is successful.
 
-Configure the retry policy in the settings of the action you want to apply it to. Set the initial interval, or the time before the first retry, and the maximum retry count, or the maximum number of times the action will be retried. Monitor the performance of your flow and adjust the retry settings as needed.
+Configure the retry policy in the settings of the action you want to apply it to. Set the initial interval, or the time before the first retry, and the maximum retry count, or the maximum number of times the action retries. Monitor the performance of your flow and adjust the retry settings as needed.
 
 :::image type="content" source="media/retry-policy.png" alt-text="Screenshot of the Power Automate designer showing Retry policy settings.":::
 
