@@ -3,7 +3,7 @@ title: Install Power Automate
 description: Learn how to install Power Automate for desktop on your device.
 author: johndund
 ms.topic: how-to
-ms.date: 08/23/2026
+ms.date: 11/16/2026
 ms.author: nimoutzo
 ms.reviewer: joshuapa
 contributors:
@@ -23,7 +23,7 @@ ai-usage: ai-assisted
 
 Before you install Power Automate on your device, ensure that it meets the [system requirements](requirements.md).
 
-Download and install Power Automate [using an MSI installer](#install-power-automate-by-using-the-msi-installer) or [from Microsoft Store](#install-power-automate-from-microsoft-store). Use the following table to choose the method that fits your scenario.
+Download and install Power Automate [using an MSI installer](#install-power-automate-by-using-the-msi-installer) or [from Microsoft Store](#install-power-automate-from-microsoft-store). If you're installing on your own device without admin rights, use Microsoft Store. If you need the machine-runtime app or manage enterprise devices, use the MSI installer. Use the following table to compare the methods.
 
 | Consideration | MSI installer | Microsoft Store |
 |---|---|---|
@@ -55,7 +55,7 @@ By default, Power Automate for desktop uses the proxy settings specified in Wind
 > [!NOTE]
 > You need admin permissions on your local computer to install Power Automate for desktop by using the MSI installer.
 
-1. [Download the Power Automate installer](https://go.microsoft.com/fwlink/?linkid=2102613) and save the file, **Setup.Microsoft.PowerAutomate.exe**, to your desktop or **Downloads** folder. The download link always points to the latest version of the installer. If you need a specific version, contact your IT administrator.
+1. [Download the Power Automate installer](https://go.microsoft.com/fwlink/?linkid=2102613) and save the file, **Setup.Microsoft.PowerAutomate.exe**, to your desktop or **Downloads** folder. This file installs Power Automate for desktop (sometimes called Power Automate Desktop or PAD). The download link always points to the latest version of the installer. If you need a specific version, contact your IT administrator.
 
 1. Run the **Setup.Microsoft.PowerAutomate.exe** file. If your browser downloads a file with a different name or redirects you to the Microsoft Store, ensure you're using the [direct download link](https://go.microsoft.com/fwlink/?linkid=2102613) for the MSI installer.
 
@@ -70,6 +70,8 @@ By default, Power Automate for desktop uses the proxy settings specified in Wind
     - Install required files for UI automation in Java applets. Close all Java-related processes before you install these files.
 
 1. Select the **check box** to agree to the terms of use, and then select **Install**.
+
+1. To confirm that the machine-runtime app is installed, search for **Power Automate machine runtime** in the Windows **Start** menu. [Learn more about machine management](./manage-machines.md).
 
 ### If the installation fails
 
@@ -113,18 +115,14 @@ If you receive an error indicating that a .NET 8 runtime failed to install, it m
 
 - **Microsoft Store download**: Always automatically updates.
 - **MSI installer – version 2.54 or newer**: Automatically updates if you [configure automatic updates](./auto-update.md). To learn about managing Power Automate for desktop using System Center Configuration Manager, go to [Manage Power Automate for desktop on Windows](../guidance/automation-coe/manage-pad-on-windows.md). 
-- **MSI installer – versions older than 2.54**: You need to manually update. By default, Power Automate for desktop notifies you when a new version is available. Select **Update** to automatically download and open the latest installer for your region. You must have admin permissions on your local computer to perform the update. Updating to the latest version is recommended to have the latest features and bug fixes.
+- **MSI installer – versions older than 2.54**: You need to manually update. By default, Power Automate for desktop notifies you when a new version is available. Select **Download** in the notification. Your browser opens and downloads the latest installer for your region. Run the downloaded **Setup.Microsoft.PowerAutomate.exe** file to complete the update. You must have admin permissions on your local computer to perform the update. If you don't have admin rights, ask your IT administrator to run the update. To stop the notifications, clear **Show update notifications** in the console's [general settings](console.md#update-power-automate-for-desktop). Updating to the latest version is recommended to have the latest features and bug fixes.
 
 > [!NOTE]
 > New versions of Power Automate MSI installer are served from a URL beginning with https://download.microsoft.com.
 
 ## Determine which install you have on your computer
 
-If you already have Power Automate installed on your machine but didn't install it, check whether it's the Microsoft Store version or the MSI version:
-
-By default, Power Automate for desktop notifies you when a new version is available. Select **Update** to download the latest installer for your region. Depending on your version, the download can start in your browser. When the download finishes, run the downloaded installer and follow the setup instructions to complete the update. You must have admin permissions on your local computer to perform the update. To get the latest features and bug fixes, update to the latest version.
-
-If you don't have admin rights on your device, you can't complete the MSI update yourself. Contact your IT administrator to run the update, or use the [Microsoft Store installation](#install-power-automate-from-microsoft-store), which updates automatically and doesn't require admin rights.
+If you already have Power Automate installed on your machine but didn't install it, check whether it's the Microsoft Store version or the MSI version. Go to **Start** > **Settings** > **Apps** and search for Power Automate:
 
 - If **Power Automate for desktop** appears in the list, it's the MSI version.
 - If **Power Automate** (without "for desktop") appears, it's the Microsoft Store version.
@@ -162,7 +160,7 @@ If you installed Power Automate but can't find or launch it:
 1. Search for **Power Automate** in the **Start** menu.
 1. If it doesn't appear, check **Settings** > **Apps** to verify the installation completed.
 1. Ensure you can connect to the Power Automate cloud service. If you see a connection error, check your network settings and proxy configuration.
-1. Try signing out and signing back in to the application.
+1. If you can't sign in or get an error when you first use the app, go to [Can't sign in to Power Automate for desktop](/troubleshoot/power-platform/power-automate/desktop-flows/cannot-sign-in-to-power-automate-for-desktop).
 
 ### Version mismatch across environments
 

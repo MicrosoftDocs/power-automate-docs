@@ -6,9 +6,10 @@ contributors:
   - Kewaiss
   - HeatherOrt
   - v-aangie
+  - cyrilanderson
 ms.subservice: cloud-flow
 ms.topic: how-to
-ms.date: 01/16/2026
+ms.date: 11/16/2026
 ms.update-cycle: 180-days
 ms.author: matow
 ms.reviewer: cyanderson
@@ -31,79 +32,17 @@ You can [create a cloud flow](overview-cloud.md#options-to-create-cloud-flows) u
 
 The example in this tutorial creates a scheduled flow. You can use similar steps to create other types of flows. Learn about the types of cloud flows, when to use them, examples, and benefits in [Types of cloud flows](overview-cloud.md#types-of-cloud-flows).
 
-# [Using copilot](#tab/using-copilot)
-
-1. Sign in to [Power Automate](https://make.powerautomate.com).
-
-1. On the navigation pane to the left, make sure **Home** is selected.
-1. In the **Create your automation with Copilot** field, describe what kind of flow you want to create. Use natural language and be as specific as possible.
-
-   Copy the following prompt and paste it into the Copilot field:
-
-   ```copilot-prompt
-    Create a flow that runs on the first of every month starting in June 2025 at 12:00 AM, Pacific Time. 
-    Send it to contoso@gmail.com and the title should be, "The Contoso Cadence Newsletter". 
-    The body for the email is:
-    "Welcome to the monthly Contoso Cadence newsletter! In this email, you'll find important dates for training sessions and talks. We'll also showcase demos and list the frequently asked questions for the month."
-   ```
-
-    Your prompt tells Copilot how to set up the recurrence of the email, who the recipient is, and the contents of the email's subject and body&mdash;all the information you need to create a working cloud flow.
-
-1. Once you paste the prompt, replace the `contoso@gmail.com` email address with your own email address.
-
-    If you were doing this in a real life scenario, you would enter the email of the person you want to send the newsletter to. In this tutorial, use your own email so that you can see the results of the flow.
-
-1. Select **Generate**.
-
-   :::image type="content" source="media/get-started-with-cloud-flows/copilot-generate-newsletter.png" alt-text="Screenshot of the Copilot interface showing the 'Generate' button.":::
-
-   Based on the description, Copilot begins to create a suggested *trigger* and *actions* for your flow. A trigger is an event that starts a cloud flow. Actions are the events you want the flow to do after the trigger event takes place.
-
-    In this example, the trigger is **Recurrence** and the action is **Send an email**.
-
-1. Select **Keep it and continue**.
-
-   :::image type="content" source="media/get-started-with-cloud-flows/continue-copilot-prompt.png" alt-text="Screenshot of the Copilot interface showing the 'Keep it and continue' button.":::
-
-1. Review your connected apps and services. A green checkmark indicates that the connection is valid. In this tutorial, the connection is **Office 365 Outlook**.
-
-    Some connections ask you to sign in. If you aren't signed in already, select **Sign in** and provide your credentials.
-
-    Learn more about connections and how to troubleshoot them in [Manage connections in Power Automate](add-manage-connections.md).
-
-1. Select **Create flow**.
-
-    This flow consists of the **Recurrence** trigger and **Send an email** action based on your prompt.
-
-   :::image type="content" source="media/get-started-with-cloud-flows/create-flow-copilot.png" alt-text="Screenshot of the designer after the flow is created with the Copilot panel.":::
-
-    > [!NOTE]
-    > The prompt you generated in step 3 sends the email to only one person. You can send it to multiple people by selecting the **Send an email** action card to display the configuration pane. In the **To** field, enter multiple emails.
-
-1. Save your cloud flow by selecting **Save** in the command bar at the top of the screen.
-
-    A green message appears below the command bar, indicating that your flow is now saved.
-
-    :::image type="content" source="media/get-started-with-cloud-flows/success-message.png" alt-text="Screenshot of a green message at the top of the screen indicating your flow is now saved.":::
-
-    > [!NOTE]
-    > Make sure a human reviews AI-generated content to verify that it's accurate and appropriate. Learn more in [Human review for automation with a prompt](/ai-builder/azure-openai-human-review).
-
-1. Once you create a flow, we recommend that you test it. Go to [Test your cloud flow](#test-your-cloud-flow).
-
-# [Without copilot](#tab/without-copilot)
-
 1. Sign in to [Power Automate](https://make.powerautomate.com).
 1. On the navigation menu to the left, select **Create**.
 1. Under **Start from blank**, select **Scheduled cloud flow**.
 
-   :::image type="content" source="media/get-started-with-cloud-flows/start-from-blank.png" alt-text="Screenshot of the Copilot interface showing the 'Keep it and continue' button.":::
+   :::image type="content" source="media/get-started-with-cloud-flows/start-from-blank.png" alt-text="Screenshot of the Copilot interface showing the Keep it and continue button.":::
 
 1. In the **Flow name** field, enter a name for your flow. The name used in this tutorial is *Newsletter*.
 1. In the **Starting** field, select the calendar icon and then select **6/1/25** at **12:00 AM**.
 1. In the **Repeat every** field, enter **1**, and then select **Month** from the dropdown menu.
 
-    :::image type="content" source="media/get-started-with-cloud-flows/scheduled-cloud-flow.png" alt-text="Screenshot of the 'Build a scheduled cloud flow' screen.":::
+    :::image type="content" source="media/get-started-with-cloud-flows/scheduled-cloud-flow.png" alt-text="Screenshot of the Build a scheduled cloud flow screen.":::
 
 1. Select **Create**.
 
@@ -143,15 +82,13 @@ Complete creating your cloud flow in the *designer*. Power Automate allows you t
 
     A green message appears below the **Power Automate** title bar, indicating that your flow is now saved.
 
-1. Once you create a flow, we recommend that you test it. Go to [Test your cloud flow](#test-your-cloud-flow).
-
----
+1. Once you create a flow, test it. Go to [Test your cloud flow](#test-your-cloud-flow).
 
 ## Test your cloud flow
 
-To make sure your flow works as expected, you should test it.
+To ensure your flow works as expected, test it.
 
-1. Make sure you completed [Create a cloud flow](#create-a-cloud-flow).
+1. Ensure you completed [Create a cloud flow](#create-a-cloud-flow).
 
     This procedure also works with any cloud flow you want to test.
 
@@ -162,7 +99,7 @@ To make sure your flow works as expected, you should test it.
 
     :::image type="content" source="media/get-started-with-cloud-flows/successful-run.png" alt-text="Screenshot of the message that you flow ran successfully.":::
 
-    When your flow is finished running, the message, **Your flow ran successfully** appears in a green message at the top.
+    When your flow finishes running, the message **Your flow ran successfully** appears in a green message at the top.
 
 1. To display your flow, leave the designer by selecting **Back** (arrow pointing left) in the top-left corner below the **Power Automate** title bar (not the **Back** button in the address bar).
 
@@ -173,19 +110,19 @@ To make sure your flow works as expected, you should test it.
     :::image type="content" source="media/get-started-with-cloud-flows/details.png" alt-text="Screenshot of the details screen for your new cloud flow.":::
 
     > [!NOTE]
-    > If the status shows that your flow run failed, you can find help in [Troubleshoot a cloud flow](fix-flow-failures.md).
+    > If the status shows that your flow run failed, find help in [Troubleshoot a cloud flow](fix-flow-failures.md).
 
 1. Go to [Run your cloud flow](#run-your-cloud-flow).
 
 ## Run your cloud flow
 
-When your cloud flow runs successfully, it's in the **My flows** list. This is where you can run it.
+When your cloud flow runs successfully, it appears in the **My flows** list. You can run it from there.
 
 1. On the navigation menu to the left, select **My flows**. Your cloud flow is at the top of the list.
 
 1. Hover over your cloud flow, and then select the **Run** icon (the first icon, which is a triangle pointing to the right).
 
-    :::image type="content" source="media/get-started-with-cloud-flows/run-flow.png" alt-text="Screenshot of the 'Run' icon next to your cloud flow.":::
+    :::image type="content" source="media/get-started-with-cloud-flows/run-flow.png" alt-text="Screenshot of the Run icon next to your cloud flow.":::
 
 1. In the **Run flow** pane, select **Run flow**.
 1. When the flow run starts successfully (indicated by a green checkmark), select **Done**.

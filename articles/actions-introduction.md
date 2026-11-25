@@ -3,12 +3,13 @@ title: Actions
 description: Learn about actions in Power Automate.
 author: kewaiss
 contributors:
-  -kewaiss
-  -v-aangie
+  - kewaiss
+  - v-aangie
+  - cyrilanderson
 ms.service: power-automate
 ms.subservice: cloud-flow
 ms.topic: get-started
-ms.date: 02/20/2026
+ms.date: 11/16/2026
 ms.update-cycle: 180-days
 ms.author: matow
 ms.reviewer: cyanderson
@@ -17,7 +18,7 @@ ms.collection:
   - bap-ai-copilot
 ---
 
-# Actions
+# Actions in Power Automate cloud flows
 
 *Actions* are the events or operations you want the flow to do after the [trigger](triggers-introduction.md) event takes place. Examples of actions are: send emails, update records, or post messages. Actions can interact with a wide variety of services and applications, which helps you automate repetitive tasks and streamline business processes without the need for manual intervention.
 
@@ -32,12 +33,12 @@ The following screenshot shows the configuration panel, which is organized in fo
 
 Here's a screenshot of the configuration panel:
 
-:::image type="content" source="./media/actions-introduction/actions-examples.png" alt-text="Screenshot of some actions.":::
+:::image type="content" source="./media/actions-introduction/actions-examples.png" alt-text="Screenshot of the Add an action pane with Favorites, AI capabilities, Built-in tools, and By connector sections.":::
 
-- **Favorites**: When you favorite an action, category, or connector using the star icon, these items show in the **Favorites** section for quick retrieval. The star icon appears when you hover over it in the configuration pane.
-- **AI Capabilities**: All AI capabilities are uplevelled in this standalone section.
-- **Built-in tools**: These tools are the building blocks to your flow if you want to store values in a variable, insert a loop, and more.
-- **By connector**: Shows a list of all connectors. At the top of the list are your most frequently used 20 connectors.
+- **Favorites**: When you favorite an action, category, or connector by selecting the star icon, these items show in the **Favorites** section for quick retrieval. The star icon appears when you hover over it in the configuration pane.
+- **AI capabilities**: All AI capabilities appear in this standalone section. This section includes running agentic prompts, responding back to an agent that calls the flow, and various text and document processing tasks.
+- **Built-in tools**: These tools are the building blocks to your flow if you want to store values in a variable, loop over an array, add conditional processing, work with dates and times and format numbers, perform data operations, and more.
+- **By connector**: Shows a list of all available Power Platform and MCP connectors. At the top of the list are your most frequently used 20 connectors. A connector generally contains multiple actions you can select from. 
 
 After you select an action for your trigger, the configuration panel updates to show the required fields and options for that action. You can fill in the necessary information, such as specifying the recipient's email address or selecting a file to attach.
 
@@ -47,7 +48,7 @@ Learn more about adding actions in [Work with triggers and actions](work-with-tr
 
 ## Choose the right actions
 
-The hundreds of actions in Power Automate allow you to create complex workflows that respond to different scenarios and automate various tasks. Most cloud flows need more than one action when your automation requires many tasks to be completed either in sequence or in parallel. For example, you need multiple actions to do the following tasks:
+The hundreds of actions in Power Automate allow you to create complex workflows that respond to different scenarios and automate various tasks. Most cloud flows need more than one action when your automation requires many tasks to complete either in sequence or in parallel. For example, you need multiple actions to do the following tasks:
 
 - Add a condition to check if a value is true or false, and then add different actions based on the outcome.
 - If a new item is added to a SharePoint list, send an email notification.
