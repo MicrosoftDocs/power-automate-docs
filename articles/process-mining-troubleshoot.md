@@ -9,9 +9,10 @@ contributors:
 ms.service: power-automate
 ms.subservice: process-advisor
 ms.topic: troubleshooting-general
-ms.date: 06/11/2025
+ms.date: 11/22/2026
 ms.author: michalrosik
 ms.reviewer: cyanderson
+ai-usage: ai-assisted
 search.audienceType: 
   - flowmaker
   - enduser
@@ -181,6 +182,22 @@ This is the same as the previous issue, but the error occurred during process an
 ### Optimized data model isn't created
 
 Confirm the *Allow XMLA endpoints and Analyze in Excel with on-premises semantic mode* setting is enabled *(this setting is enabled by default)*. You can find this setting in **Power BI admin portal** > **Tenant-level settings** > **Integration Settings**. If an admin doesn't want to enable this setting for all users, it's necessary to add the **Process Insights service principal** to a security group where the setting is enabled.
+
+## Issues with installing the Process Mining desktop app
+
+### Symptom
+
+You can't open the `PowerAutomateProcessMining.appinstaller` file to install the Process Mining desktop app.
+
+### Cause
+
+The standard installation requires access to Microsoft Windows App Installer. App Installer might be missing or restricted by your administrator.
+
+### Resolution
+
+Contact your administrator to confirm that App Installer is available and allowed on your device, and then retry the [standard installation](minit/how-to-start-with-minit-desktop-application.md).
+
+If your organization doesn't allow App Installer, follow the [custom installation instructions](minit/process-mining-custom-install.md) instead.
 
 ## Issues with your own Azure Data Lake Storage Gen2 and incremental data refresh
 
