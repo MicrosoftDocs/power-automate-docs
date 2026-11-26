@@ -54,7 +54,7 @@ With a gateway, you can connect to on-premises data over the following connectio
 * A license that supports gateways. For more information, see the “Connectivity” section of the [pricing page](https://make.powerautomate.com/pricing/).
 
 > [!TIP]
-> You can create a gateway and an on-premises connection for [any environment](environments-overview-maker.md).
+> You can create a gateway and an on-premises connection for [any environment](environments-overview-admin.md).
 
 ## Install a gateway
 

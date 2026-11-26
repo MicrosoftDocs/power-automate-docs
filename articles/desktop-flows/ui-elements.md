@@ -89,7 +89,7 @@ For more information about desktop and web automation, see [Automate desktop flo
 
 ### UI elements for webpages
 
-To capture a UI element from a webpage, you need to install the appropriate browser extension. For more information about supported browsers and the required extension, see [Use browsers and manage extensions](using-browsers.md).
+To capture a UI element from a webpage, you need to install the appropriate browser extension. For more information about supported browsers and the required extension, see [Use browsers and manage extensions](install-browser-extensions.md).
 
 ### Distinguish desktop from web UI elements
 

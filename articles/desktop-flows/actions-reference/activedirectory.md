@@ -50,7 +50,7 @@ CN="Varga, Norbert",DC=contoso,DC=com
 
 Creates a group in the Active Directory.
 > [!IMPORTANT]
-> Make sure you that Power Automate for desktop is operating with elevated rights when executing a flow containing the **Create a group** action
+> Make sure that Power Automate for desktop is operating with elevated rights when executing a flow containing the **Create a group** action
 
 ### Input parameters
 
@@ -293,7 +293,7 @@ This action doesn't produce any variables.
 
 Creates a user in the Active Directory.
 > [!IMPORTANT]
-> Make sure you that Power Automate for desktop is operating with elevated rights when executing a flow containing the **Create user** action
+> Make sure that Power Automate for desktop is operating with elevated rights when executing a flow containing the **Create user** action
 
 ### Input parameters
 

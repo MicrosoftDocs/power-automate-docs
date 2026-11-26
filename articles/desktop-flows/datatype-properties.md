@@ -381,7 +381,7 @@ The data types that have properties are displayed in the following lists.
 |-------------------|--------------------------------------------|
 |CreationSourceId   |The creation source id of the snapshot.     |
 |CreationSourceType |The creation source type of the snapshot.   |
-|OperationSystem    |This operation system on the  the snapshot. |
+|OperationSystem    |This operation system on the snapshot. |
 |SizeInGB           |The size of the snapshot in GB.             |
 |StorageAccountType |This storage account type of the snapshot.  |
 |TimeCreated        |The creation time of the snapshot.          |

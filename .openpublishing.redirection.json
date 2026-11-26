@@ -137,7 +137,7 @@
     },
     {
       "source_path": "articles/environments-overview-maker.md",
-      "redirect_url": "/power-automate/articles/environments-overview-admin",
+      "redirect_url": "/power-automate/environments-overview-admin",
       "redirect_document_id": "false"
     },
     {

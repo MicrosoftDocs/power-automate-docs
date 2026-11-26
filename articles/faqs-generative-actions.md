@@ -58,6 +58,6 @@ In addition, we have classifiers that look at input to the system to detect harm
 
 ## Related information
 
-[Create generative actions in cloud flows (preview)](create-generative-actions.md)
+[Create generative actions in cloud flows (preview)](generative-actions-overview.md)
 
 [!INCLUDE[footer-include](./includes/footer-banner.md)]

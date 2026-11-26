@@ -45,7 +45,7 @@ In the **Advanced** section of the action, you can see that the action waits 30 
 Blocks user mouse and keyboard input, so the flow can perform mouse and keyboard actions without interference from the user.
 
 > [!IMPORTANT]
-> Because of its critical functionality, the **Block input** action requires elevated rights to run. Before using the action, ensure that Power Automate runs with administrator rights. To find more information about running Power Automate as an administrator, see [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+> Because of its critical functionality, the **Block input** action requires elevated rights to run. Before using the action, ensure that Power Automate runs with administrator rights. To find more information about running Power Automate as an administrator, see [Run Power Automate with elevated rights](../how-to/run-power-automate-elevated-rights.md).
 
 ### Input parameters
 
@@ -229,7 +229,7 @@ Moves the mouse over a text found on the screen or on the foreground window usin
 Sends a mouse click event.
 
 > [!IMPORTANT]
-> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send mouse click** action to interact with applications that run with elevated privileges, run Power Automate as administrator. For more information about running Power Automate as an administrator, see [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send mouse click** action to interact with applications that run with elevated privileges, run Power Automate as administrator. For more information about running Power Automate as an administrator, see [Run Power Automate with elevated rights](../how-to/run-power-automate-elevated-rights.md).
 
 ### Input parameters
 
@@ -260,7 +260,7 @@ This action doesn't produce any variables.
 Sends keys to the application that is currently active.
 
 > [!IMPORTANT]
-> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send keys** action to interact with applications that run with elevated privileges, run Power Automate as administrator. For more information about running Power Automate as an administrator, see [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+> To prevent unauthorized access, Power Automate needs to run with the same or higher privileges as the applications it automates. To use the **Send keys** action to interact with applications that run with elevated privileges, run Power Automate as administrator. For more information about running Power Automate as an administrator, see [Run Power Automate with elevated rights](../how-to/run-power-automate-elevated-rights.md).
 
 ### Input parameters
 

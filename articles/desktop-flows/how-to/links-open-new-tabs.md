@@ -29,7 +29,7 @@ The most straightforward approach is the use of the embedded automation browser 
 ![Screenshot of the launch automation browser option in the Launch new Internet Explorer action.](media/links-open-new-tabs/launch-automation-browser.png)
 
 > [!NOTE]
-> You can find more information about the features and limitations of the automation browser in [Use browsers and manage extensions](../using-browsers.md).
+> You can find more information about the features and limitations of the automation browser in [Use browsers and manage extensions](../install-browser-extensions.md).
 
 To navigate back to the previous page, you can use the **Go to web page** action.
 

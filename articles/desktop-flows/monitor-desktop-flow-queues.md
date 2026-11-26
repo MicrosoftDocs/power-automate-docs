@@ -50,7 +50,7 @@ Visit the details page for your machine or machine group, then select on the **R
 
 In order to see runs in this list, one of the following situations must be true:
 
-- You're [running an attended or unattended desktop flow](run-desktop-flow.md) in the current environment
+- You're [running an attended or unattended desktop flow](trigger-desktop-flows.md) in the current environment
 - Another user [shared their desktop flow](../create-team-flows.md#share-a-cloud-flow-with-run-only-permissions) with you, which ran in the current environment
 - You have [permission](/power-platform/admin/database-security) to see view all data in the environment
 

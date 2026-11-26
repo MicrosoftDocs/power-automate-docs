@@ -22,7 +22,7 @@ ms.collection: bap-ai-copilot
 - [FAQ for Copilot in cloud flows](faqs-copilot.md)
 - [Create, update, and fix expressions with Copilot expression assistant (preview)](expressions-copilot.md)
 - [FAQ for Copilot expression assistant](faqs-copilot-expression-assistant.md)
-- [Create generative actions in cloud flows (preview)](create-generative-actions.md)
+- [Create generative actions in cloud flows (preview)](generative-actions-overview.md)
 - [FAQ for generative actions in cloud flows](faqs-generative-actions.md)
 - [Copilot in Process Mining ingestion](process-mining-copilot-in-ingestion.md)
 - [Copilot in Process Mining process analytics](process-mining-copilot-in-process-analytics.md)
