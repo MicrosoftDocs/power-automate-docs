@@ -21,7 +21,7 @@ search.audienceType:
 # Folder actions
 
 > [!IMPORTANT]
-> To prevent unauthorized access, Windows require administrator rights to access protected folders. To access these resources using the folder actions, run Power Automate with administrator rights. For more information about running Power Automate as an administrator, go to [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+> To prevent unauthorized access, Windows require administrator rights to access protected folders. To access these resources using the folder actions, run Power Automate with administrator rights. For more information about running Power Automate as an administrator, go to [Run Power Automate with elevated rights](../how-to/run-power-automate-elevated-rights.md).
 
 Power Automate folder actions enable you to manipulate and organize folders.
 

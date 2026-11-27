@@ -91,7 +91,7 @@ This action doesn't produce any variables.
 Executes an application or opens a document by executing the associated application.
 
 > [!IMPORTANT]
-> Many applications with advanced functionality require elevated rights to prevent unauthorized access to system resources. To launch these applications using the **Run application** action, run Power Automate with administrator rights. To find more information regarding running Power Automate as an administrator, go to[Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+> Many applications with advanced functionality require elevated rights to prevent unauthorized access to system resources. To launch these applications using the **Run application** action, run Power Automate with administrator rights. To find more information regarding running Power Automate as an administrator, go to[Run Power Automate with elevated rights](../how-to/run-power-automate-elevated-rights.md).
 
 ### Input parameters
 

@@ -648,7 +648,7 @@ elevated rights:
 ## Related information
 
 - [Create Power Automate desktop flows](create-flow.md).
-- [Run desktop flows](run-desktop-flow.md).
+- [Run desktop flows](trigger-desktop-flows.md).
 - [Manage desktop flows](manage.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

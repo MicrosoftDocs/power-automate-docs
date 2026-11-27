@@ -47,7 +47,7 @@ To determine which plan you have, select **Settings** on the Power Automate titl
 
 :::image type="content" source="media/limits-and-config/my-licenses.png" alt-text="Screenshot of the 'View My Licenses' option in the 'Settings' menu.":::
 
-A cloud flow uses the plan of its owner. If a cloud flow is shared with multiple people, then generally the owner is the flow's creator. If you're unsure, you can use the [Web API](web-api.md) to change the owner. If the original owner leaves the organization, the flow reverts to the Low performance profile.
+A cloud flow uses the plan of its owner. If a cloud flow is shared with multiple people, then generally the owner is the flow's creator. If you're unsure, you can use the [Web API](manage-flows-with-code.md) to change the owner. If the original owner leaves the organization, the flow reverts to the Low performance profile.
 
 ## Flow definition limits
 

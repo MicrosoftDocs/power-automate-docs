@@ -42,7 +42,7 @@ From this page, you can view all your desktop flow runs for the current environm
 
 In order to see runs in this list, one of the following items must be true:
 
-- You [ran an attended or unattended desktop flow](run-desktop-flow.md) in the current environment
+- You [ran an attended or unattended desktop flow](trigger-desktop-flows.md) in the current environment
 - Another user [shared their desktop flow](../create-team-flows.md#share-a-cloud-flow-with-run-only-permissions) with you, which ran in the current environment
 - You have [permission](/power-platform/admin/database-security) to view all data in the environment
 

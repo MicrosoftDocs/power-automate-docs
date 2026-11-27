@@ -84,7 +84,7 @@ Following this example, it's possible to imagine a wide range of scenarios where
 
 ## Next steps
 
-* Learn how to [set up Power Automate](setup.md).
+* Learn how to [set up Power Automate](requirements.md).
 
 * Begin your journey in Power Automate by [creating a Power Automate desktop flow](create-flow.md).
 

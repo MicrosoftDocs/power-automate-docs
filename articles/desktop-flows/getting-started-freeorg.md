@@ -92,7 +92,7 @@ To create the desktop flow:
 
 ## Next Steps
 
-- Learn how to [set up Power Automate for desktop](setup.md).
+- Learn how to [set up Power Automate for desktop](requirements.md).
 
 - Begin your journey in Power Automate by [creating a Power Automate desktop flow](create-flow.md).
 

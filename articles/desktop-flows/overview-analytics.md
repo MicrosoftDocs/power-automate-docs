@@ -33,7 +33,7 @@ As an admin, you'll need to view the overall status of automation that runs in y
 ## Learn more
 
 - Analyze the [desktop flows risk assessment](/power-platform/guidance/coe/power-bi-govern#desktop-flows-risk-assessment) in your environment.
-- Run [desktop flows](run-desktop-flow.md).
+- Run [desktop flows](trigger-desktop-flows.md).
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

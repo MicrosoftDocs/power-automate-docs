@@ -530,7 +530,7 @@ You can share your hosted machines with other users so they can run desktop flow
 
 Power Automate enables you to trigger desktop flows on your hosted machines as you do on standard machines. To implement this functionality, you need a [desktop flow connection](desktop-flow-connections.md) to your hosted machine.
 
-To find more information about triggering desktop flows from cloud flows, go to [Trigger desktop flows from cloud flows](link-pad-flow-portal.md).
+To find more information about triggering desktop flows from cloud flows, go to [Trigger desktop flows from cloud flows](trigger-desktop-flows.md).
 
 > [!NOTE]
 > If you intend to run unattended desktop flows on your hosted machine using the default virtual machine (VM) image option, you need to [disable Network Level Authentication](/troubleshoot/power-platform/power-automate/ui-flows-run-failed-with-aadlogonfailure-error) on your machine.

@@ -21,7 +21,7 @@ search.audienceType:
 # Windows services actions
 
 > [!IMPORTANT]
-> To prevent unauthorized access, Windows require administrator rights to manage services. To handle services using the Windows services actions, run Power Automate with administrator rights. To find more information regarding running Power Automate as an administrator, go to [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+> To prevent unauthorized access, Windows require administrator rights to manage services. To handle services using the Windows services actions, run Power Automate with administrator rights. To find more information regarding running Power Automate as an administrator, go to [Run Power Automate with elevated rights](../how-to/run-power-automate-elevated-rights.md).
 
 Power Automate allows you to handle Windows services via the available Windows services actions. With these actions, you can maintain complete control of the operating system and limit the running services.
 

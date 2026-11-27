@@ -45,8 +45,8 @@ Sign in to Power Automate Windows application by using one of the following acco
 - [Getting started with a work or school account](getting-started-freeorg.md)
 - [Getting started with an Organization premium account](getting-started-org.md)
 
-You can find a full comparison of the features included in each account at [Sign-in account comparison](setup.md#sign-in-account-comparison).
+You can find a full comparison of the features included in each account at [Sign-in account comparison](requirements.md#sign-in-account-comparison).
 
-Here's a list of [Known issues and limitations](setup.md#known-issues-and-limitations) for Power Automate.
+Here's a list of [Known issues and limitations](requirements.md#known-issues-and-limitations) for Power Automate.
 
 

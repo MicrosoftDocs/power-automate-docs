@@ -353,7 +353,7 @@ By default, for a table that has multiple business process flows defined for it,
     - If no business process flow is available in a business app for the table or one that the user has access to then no business process flow is applied for the new table row.
 
 You can override the default logic of business process flows getting applied automatically to new table rows. To do so, set the **ProcessId** column of the table to one of the following values while creating a new table row:
-- Set to **Guid.Empty** to skip setting a business process flow for new table rows. You might want to do that if you are bulk creating table rows, but don't want business process flow to to be applied to them.
+- Set to **Guid.Empty** to skip setting a business process flow for new table rows. You might want to do that if you are bulk creating table rows, but don't want business process flow to be applied to them.
 - Set it to a specific business process flow table (as a table reference). In this case, the system will apply the specified business process flow instead of the default logic.
 
 If you do not set a value for the **ProcessId** column while creating a new table row, the system will apply the default logic as explained earlier.

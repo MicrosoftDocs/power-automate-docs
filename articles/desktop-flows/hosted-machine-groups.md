@@ -482,7 +482,7 @@ You can share your hosted machine groups with other users so they can create con
 
 Power Automate enables you to trigger desktop flows on your hosted machine groups as you do on standard machine groups. To implement this functionality, you need a [desktop flow connection](desktop-flow-connections.md) to your hosted machine group.
 
-To find more information about triggering desktop flows from cloud flows, go to [Trigger desktop flows from cloud flows](link-pad-flow-portal.md).
+To find more information about triggering desktop flows from cloud flows, go to [Trigger desktop flows from cloud flows](trigger-desktop-flows.md).
 
 > [!IMPORTANT]
 >

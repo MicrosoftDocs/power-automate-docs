@@ -25,7 +25,7 @@ search.audienceType:
 # Scripting actions
 
 > [!IMPORTANT]
-> To prevent unauthorized access, Windows requires administrator rights to access protected resources. To access protected resources (such as files) by using the scripting actions, run Power Automate with administrator rights. To find more information about running Power Automate as an administrator, see [Run Power Automate with elevated rights](../setup.md#run-power-automate-with-elevated-rights).
+> To prevent unauthorized access, Windows requires administrator rights to access protected resources. To access protected resources (such as files) by using the scripting actions, run Power Automate with administrator rights. To find more information about running Power Automate as an administrator, see [Run Power Automate with elevated rights](../how-to/run-power-automate-elevated-rights.md).
 
 Scripting actions enable you to run blocks of code and implement custom behavior in your desktop flows.
 
